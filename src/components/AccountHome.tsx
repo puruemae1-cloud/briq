@@ -1,0 +1,105 @@
+"use client";
+
+import Link from "next/link";
+import { AccountNav } from "@/components/AccountNav";
+import { formatKrw } from "@/data/products";
+import { useAuthStore } from "@/lib/auth-store";
+import { SHIPPING_STAGE_COPY } from "@/lib/orders";
+import { useOrderStore } from "@/lib/order-store";
+
+export function AccountHome() {
+  const user = useAuthStore((s) => s.currentUser());
+  const orders = useOrderStore((s) =>
+    user ? s.ordersForUser(user.id) : [],
+  );
+
+  if (!user) {
+    return (
+      <section className="section account-shell">
+        <div className="panel account-gate">
+          <p className="product-card__brand">Account</p>
+          <h1>마이페이지</h1>
+          <p>
+            로그인하면 장바구니, 주문·결제이력, 개인통관부호를 한곳에서 확인할 수
+            있습니다.
+          </p>
+          <div className="account-gate__actions">
+            <Link href="/account/login" className="btn btn-solid">
+              로그인
+            </Link>
+            <Link href="/account/signup" className="btn btn-outline">
+              회원가입
+            </Link>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  const latest = orders[0];
+  const hasCustoms = Boolean(user.profile?.customsCode);
+
+  return (
+    <section className="section account-shell">
+      <div className="account-layout">
+        <AccountNav />
+        <div className="account-main">
+          <header className="account-main__head">
+            <p className="product-card__brand">My Briq</p>
+            <h1>{user.name} 님, 환영합니다</h1>
+            <p className="account-main__email">{user.email}</p>
+          </header>
+
+          <div className="account-cards">
+            <Link href="/cart" className="account-card">
+              <p className="account-card__label">장바구니</p>
+              <p className="account-card__value">바로가기</p>
+              <p className="account-card__hint">담아둔 상품을 이어서 결제하세요</p>
+            </Link>
+            <Link href="/account/orders" className="account-card">
+              <p className="account-card__label">주문·결제</p>
+              <p className="account-card__value">{orders.length}건</p>
+              <p className="account-card__hint">
+                {latest
+                  ? `최근: ${SHIPPING_STAGE_COPY[latest.status].title}`
+                  : "아직 주문이 없습니다"}
+              </p>
+            </Link>
+            <Link href="/account/profile" className="account-card">
+              <p className="account-card__label">통관부호</p>
+              <p className="account-card__value">
+                {hasCustoms ? "저장됨" : "미등록"}
+              </p>
+              <p className="account-card__hint">
+                {hasCustoms
+                  ? "결제 시 자동으로 불러옵니다"
+                  : "한 번 저장하면 다음 결제부터 자동 입력"}
+              </p>
+            </Link>
+          </div>
+
+          {latest ? (
+            <div className="panel account-latest">
+              <p className="account-latest__label">최근 주문</p>
+              <p className="account-latest__id">{latest.id}</p>
+              <p>
+                {SHIPPING_STAGE_COPY[latest.status].title} ·{" "}
+                {formatKrw(latest.totalKrw)}
+              </p>
+              <Link href="/account/orders" className="btn btn-outline">
+                전체 주문 보기
+              </Link>
+            </div>
+          ) : (
+            <div className="panel account-latest">
+              <p>아직 주문 이력이 없습니다.</p>
+              <Link href="/shop" className="btn btn-solid">
+                쇼핑하러 가기
+              </Link>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}

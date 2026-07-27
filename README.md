@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Briq (브릭)
 
-## Getting Started
+British + Boutique / Unique — UK→KR 셀렉트 숍.
 
-First, run the development server:
+## 구성
+
+| 폴더 | 설명 |
+|------|------|
+| `/` (루트) | Next.js 반응형 웹 (PC + 모바일) |
+| `/mobile` | Expo iOS / Android 앱 |
+
+## 웹 실행
 
 ```bash
+export PATH="$HOME/.local/node/bin:$PATH"
+cd /Users/jeonghyunlee/Documents/briq
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 앱 실행 (iOS / Android)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+export PATH="$HOME/.local/node/bin:$PATH"
+cd /Users/jeonghyunlee/Documents/briq/mobile
+npm start
+```
 
-## Learn More
+- iOS: `i` 또는 Expo Go로 QR 스캔
+- Android: `a` 또는 Expo Go로 QR 스캔
+- 스토어 배포: Apple Developer / Google Play 계정 필요 (본인 등록)
 
-To learn more about Next.js, take a look at the following resources:
+## 결제 (추후)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. `(주)리치몬드인터내셔널`로 PG 계약 (토스페이먼츠 / 나이스 / 이니시스 등)
+2. 네이버페이 · 카카오페이 활성화
+3. `.env.example`을 `.env.local`로 복사 후 키 입력
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+cp .env.example .env.local
+```
 
-## Deploy on Vercel
+코드 자리: `src/lib/payments.ts`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 도메인
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+별도 확인 결과 요약은 프로젝트 안내 메시지 참고.

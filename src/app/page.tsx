@@ -1,103 +1,135 @@
-import Image from "next/image";
+import Link from "next/link";
+import { BestItems } from "@/components/BestItems";
+import {
+  Collection100,
+} from "@/components/Collection100";
+import { LookBannerBlock } from "@/components/LookBanner";
+import { ProductCard } from "@/components/ProductCard";
+import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
+import { navCategories } from "@/data/categories";
+import { getProductsByCategory } from "@/data/products";
+import { parseProductSort } from "@/lib/product-sort";
 
-export default function Home() {
+type Props = {
+  searchParams: Promise<{ csort?: string }>;
+};
+
+export default async function HomePage({ searchParams }: Props) {
+  const params = await searchParams;
+  const collectionSort = parseProductSort(params.csort);
+  const heroImage = pickRotating(heroImages);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="hero">
+        <div className="hero__stage">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="hero__bg" src={heroImage} alt="" aria-hidden />
+          <div className="hero__shade" aria-hidden />
+          <div className="hero__content">
+            <h1 className="hero__brand">Briq</h1>
+            <p className="hero__headline">British Boutique. Unique edit.</p>
+            <p className="hero__support">
+              영국 현지 기준의 까다로운 셀렉션,
+              <br className="br-mobile" /> 오직 당신만을 위한 직배송.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <div className="lookbook" aria-label="Briq lookbook">
+        {homeLookBanners.map((banner, i) => {
+          const category = navCategories.find((c) => c.id === banner.categoryId);
+          const products = banner.categoryId
+            ? getProductsByCategory(banner.categoryId).slice(0, 4)
+            : [];
+
+          return (
+            <div key={banner.id} className="lookbook__block">
+              <LookBannerBlock banner={banner} rotationOffset={i} />
+              {products.length > 0 ? (
+                <section className="section lookbook__rail">
+                  <div className="section__head">
+                    <div>
+                      <h2>{banner.titleKo}</h2>
+                      <p>Selection</p>
+                    </div>
+                    <Link href={banner.href}>전체 보기</Link>
+                  </div>
+                  {category?.children?.length ? (
+                    <div className="category-row category-row--sub">
+                      {category.children.map((child) => (
+                        <Link
+                          key={child.id}
+                          href={child.href}
+                          className="chip chip--sub"
+                        >
+                          {child.labelKo}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : null}
+                  <div className="product-grid">
+                    {products.map((p) => (
+                      <ProductCard key={p.id} product={p} />
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+
+              {banner.id === "watches" ? (
+                <section className="manifesto" aria-label="Briq manifesto">
+                  <div className="manifesto__inner">
+                    <p className="manifesto__mark">Briq</p>
+                    <div className="manifesto__rule" aria-hidden />
+                    <h2 className="manifesto__title">
+                      영국의 모든 감각을
+                      <br />
+                      하나의 공간에.
+                    </h2>
+                    <p className="manifesto__copy">
+                      그동안 유일무이했던 깊고 넓은 라인업을
+                      <br />
+                      오직 Briq에서 펼쳐냅니다.
+                    </p>
+                    <div
+                      className="manifesto__rule manifesto__rule--short"
+                      aria-hidden
+                    />
+                  </div>
+                </section>
+              ) : null}
+
+              {banner.id === "shoes" ? (
+                <section className="pricing-banner" aria-label="All-inclusive pricing">
+                  <div className="pricing-banner__inner">
+                    <p className="pricing-banner__mark">Transparency</p>
+                    <div className="pricing-banner__rule" aria-hidden />
+                    <h2 className="pricing-banner__title">
+                      All-Inclusive Pricing,
+                      <br />
+                      No Hidden Fees.
+                    </h2>
+                    <p className="pricing-banner__copy">
+                      Briq에서 안내하는 가격은 해외 항공 배송비와
+                      <br className="br-mobile" /> 관·부가세가
+                      <br className="br-desktop" /> 모두 포함된 최종 확정 금액입니다.
+                    </p>
+                    <div
+                      className="pricing-banner__rule pricing-banner__rule--short"
+                      aria-hidden
+                    />
+                  </div>
+                </section>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+
+      <BestItems />
+
+      <Collection100 sort={collectionSort} />
+    </>
   );
 }

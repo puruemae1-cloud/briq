@@ -1,0 +1,104 @@
+import Link from "next/link";
+import { removeFromCart, updateCartQty } from "@/app/cart/actions";
+import { ProductImage } from "@/components/ProductImage";
+import { formatKrw } from "@/data/products";
+import {
+  cartSubtotal,
+  getCartItems,
+  productHref,
+} from "@/lib/cart-server";
+import { resolveProductImage } from "@/lib/product-image";
+
+export default async function CartPage() {
+  const items = await getCartItems();
+  const total = cartSubtotal(items);
+
+  if (items.length === 0) {
+    return (
+      <section className="section">
+        <div className="panel">
+          <h2 style={{ marginTop: 0, fontFamily: "var(--font-display)" }}>Cart</h2>
+          <p>장바구니가 비어 있습니다.</p>
+          <Link href="/shop" className="btn btn-solid" style={{ marginTop: "1rem" }}>
+            쇼핑 계속하기
+          </Link>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="section">
+      <div className="section__head">
+        <div>
+          <h2>Cart</h2>
+          <p>{items.length} items</p>
+        </div>
+      </div>
+      <div className="panel cart-list">
+        {items.map(({ product, variant, qty }) => {
+          const unit = variant?.price ?? product.price;
+          const image = resolveProductImage(product.image, variant?.image);
+          const label = variant
+            ? `${product.nameKo} · ${variant.nameKo}`
+            : product.nameKo;
+          const href = productHref(product.id, variant?.id);
+
+          return (
+            <div
+              key={`${product.id}::${variant?.id ?? "default"}`}
+              className="cart-item"
+            >
+              <Link href={href} className="cart-item__media">
+                <ProductImage src={image} alt={label} tone="cart" />
+              </Link>
+              <div>
+                <Link href={href} className="cart-item__title">
+                  {label}
+                </Link>
+                <p className="product-card__en">{formatKrw(unit)}</p>
+                <div className="qty" style={{ marginTop: "0.5rem" }}>
+                  <form action={updateCartQty}>
+                    <input type="hidden" name="productId" value={product.id} />
+                    {variant ? (
+                      <input type="hidden" name="variantId" value={variant.id} />
+                    ) : null}
+                    <input type="hidden" name="qty" value={String(qty - 1)} />
+                    <button type="submit">−</button>
+                  </form>
+                  <span>{qty}</span>
+                  <form action={updateCartQty}>
+                    <input type="hidden" name="productId" value={product.id} />
+                    {variant ? (
+                      <input type="hidden" name="variantId" value={variant.id} />
+                    ) : null}
+                    <input type="hidden" name="qty" value={String(qty + 1)} />
+                    <button type="submit">+</button>
+                  </form>
+                </div>
+              </div>
+              <div style={{ textAlign: "right" }}>
+                <p style={{ margin: 0, fontWeight: 600 }}>{formatKrw(unit * qty)}</p>
+                <form action={removeFromCart}>
+                  <input type="hidden" name="productId" value={product.id} />
+                  {variant ? (
+                    <input type="hidden" name="variantId" value={variant.id} />
+                  ) : null}
+                  <button type="submit" className="icon-btn" style={{ marginLeft: "auto" }}>
+                    삭제
+                  </button>
+                </form>
+              </div>
+            </div>
+          );
+        })}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <strong>합계 {formatKrw(total)}</strong>
+          <Link href="/checkout" className="btn btn-solid">
+            결제하기
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
