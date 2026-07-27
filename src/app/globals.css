@@ -1381,6 +1381,8 @@ body:has(.nav-drawer-toggle:checked) {
   margin: 2rem 0 0;
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
   background: var(--paper);
+  /* Isolate paint so vertical page scroll past this block stays smooth */
+  contain: layout paint style;
 }
 
 .best-live__inner {
@@ -1388,10 +1390,7 @@ body:has(.nav-drawer-toggle:checked) {
   overflow: hidden;
   padding: clamp(2.75rem, 6vw, 4.25rem) 1.25rem;
   color: #f6f0f8;
-  background:
-    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(168, 132, 188, 0.28), transparent 50%),
-    radial-gradient(ellipse 60% 45% at 10% 90%, rgba(92, 48, 110, 0.45), transparent 55%),
-    linear-gradient(155deg, #1a1222 0%, #2c1e38 52%, #120e18 100%);
+  background: linear-gradient(155deg, #1a1222 0%, #2c1e38 52%, #120e18 100%);
 }
 
 .best-live__inner::before {
@@ -1406,6 +1405,10 @@ body:has(.nav-drawer-toggle:checked) {
 @media (min-width: 900px) {
   .best-live__inner {
     padding: clamp(3.25rem, 6vw, 4.75rem) 2.5rem;
+    background:
+      radial-gradient(ellipse 70% 55% at 85% 10%, rgba(168, 132, 188, 0.28), transparent 50%),
+      radial-gradient(ellipse 60% 45% at 10% 90%, rgba(92, 48, 110, 0.45), transparent 55%),
+      linear-gradient(155deg, #1a1222 0%, #2c1e38 52%, #120e18 100%);
   }
 
   .best-live__inner::before {
@@ -1461,18 +1464,35 @@ body:has(.nav-drawer-toggle:checked) {
   margin: 0 auto;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-snap-type: x mandatory;
+  /* proximity (not mandatory) — mandatory x-snap fights vertical page scroll */
+  scroll-snap-type: x proximity;
   scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
   scrollbar-width: none;
   container-type: inline-size;
   container-name: best-carousel;
+  touch-action: pan-x pan-y;
 }
 
 .best-carousel::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 899px) {
+  .best-carousel {
+    /* No snap on touch — vertical scroll past this rail stays continuous */
+    scroll-snap-type: none;
+    container-type: normal;
+  }
+
+  .best-carousel__item {
+    --item: 42%;
+    flex: 0 0 var(--item);
+    width: var(--item);
+    min-width: var(--item);
+  }
 }
 
 @media (min-width: 700px) {
@@ -1574,6 +1594,7 @@ body:has(.nav-drawer-toggle:checked) {
 
 .collection-100 {
   margin-top: 0;
+  contain: layout style;
 }
 
 .collection-100__banner {
@@ -1583,6 +1604,9 @@ body:has(.nav-drawer-toggle:checked) {
   color: #f7f4ec;
   display: grid;
   align-items: end;
+  /* Keep banner from animating during page scroll */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 18rem;
 }
 
 .collection-100__banner-img {
@@ -1597,7 +1621,8 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .collection-100__banner-img {
-    animation: hero-ken 22s ease-in-out infinite alternate;
+    /* Static cover — Ken Burns fought vertical scroll compositing here */
+    transform: none;
   }
 }
 
@@ -1682,6 +1707,11 @@ body:has(.nav-drawer-toggle:checked) {
 
 .collection-100__body {
   padding-top: 1.35rem;
+}
+
+.collection-100 .product-grid > * {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 22rem;
 }
 
 .collection-100__toolbar {
