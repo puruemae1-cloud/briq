@@ -70,6 +70,11 @@ export function AccountHome() {
 
           {admin ? (
             <div className="account-cards">
+              <Link href="/account/admin/orders" className="account-card">
+                <p className="account-card__label">주문 이력</p>
+                <p className="account-card__value">{allOrders.length}건</p>
+                <p className="account-card__hint">고객·배송·결제 정보 확인</p>
+              </Link>
               <Link href="/account/admin/qa" className="account-card">
                 <p className="account-card__label">Q&A 관리</p>
                 <p className="account-card__value">{pendingQa}건</p>
@@ -145,12 +150,17 @@ export function AccountHome() {
             <div className="panel account-latest">
               <p className="account-latest__label">Staff</p>
               <p>
-                고객 Q&A 답변은 관리자만 가능합니다. 일반 회원은 문의만 등록할 수
-                있습니다.
+                주문이 인입되면 주문 이력에서 고객·배송비·결제 정보를 확인할 수
+                있습니다. Q&A 답변은 관리자만 가능합니다.
               </p>
-              <Link href="/account/admin/qa" className="btn btn-solid">
-                미답변 확인하기
-              </Link>
+              <div className="account-gate__actions">
+                <Link href="/account/admin/orders" className="btn btn-solid">
+                  주문 이력 보기
+                </Link>
+                <Link href="/account/admin/qa" className="btn btn-outline">
+                  미답변 Q&A
+                </Link>
+              </div>
             </div>
           ) : null}
         </div>

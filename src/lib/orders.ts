@@ -44,6 +44,18 @@ export const SHIPPING_STAGE_COPY: Record<
   },
 };
 
+export const SHIPPING_STAGES: ShippingStage[] = [
+  "paid",
+  "waybill_issued",
+  "in_transit",
+  "customs_cleared",
+  "delivered",
+];
+
+/** Overseas air shipping + duties are included in the product price. */
+export const INCLUDED_SHIPPING_NOTE =
+  "해외 항공 배송비·관세 포함 (별도 청구 없음)";
+
 export type OrderRecord = {
   id: string;
   userId?: string;
@@ -55,8 +67,38 @@ export type OrderRecord = {
   customsCode: string;
   customerName: string;
   customerPhone: string;
+  customerEmail?: string;
+  /** Flattened shipping label for display / mail */
   address: string;
+  zonecode?: string;
+  addressBase?: string;
+  addressDetail?: string;
+  /** Goods subtotal before coupon */
+  subtotalKrw?: number;
+  /** Coupon discount applied at checkout */
+  discountKrw?: number;
+  /**
+   * Separate shipping charge. Briq prices include overseas shipping,
+   * so this is normally 0 with `shippingNote` explaining inclusion.
+   */
+  shippingFeeKrw?: number;
+  shippingNote?: string;
   totalKrw: number;
   createdAt: string;
   updatedAt: string;
+};
+
+export type OrderLine = {
+  productId: string;
+  variantId?: string;
+  nameKo: string;
+  qty: number;
+  unitPrice: number;
+  image: string;
+};
+
+export type MemberOrder = OrderRecord & {
+  lines: OrderLine[];
+  paymentMethod: string;
+  paymentId: string;
 };

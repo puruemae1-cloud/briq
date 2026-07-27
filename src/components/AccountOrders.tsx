@@ -82,6 +82,11 @@ export function AccountOrders() {
                   <div className="account-order__meta">
                     <p>결제 · {order.paymentMethod}</p>
                     <p>결제 ID · {order.paymentId}</p>
+                    {order.address ? <p>배송지 · {order.address}</p> : null}
+                    <p>
+                      배송비 · {formatKrw(order.shippingFeeKrw ?? 0)}
+                      {order.shippingNote ? ` (${order.shippingNote})` : ""}
+                    </p>
                     {order.trackingNumber ? (
                       <p>ACI EXPRESS · {order.trackingNumber}</p>
                     ) : (

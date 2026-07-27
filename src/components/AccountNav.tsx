@@ -15,6 +15,7 @@ const memberLinks = [
 
 const adminLinks = [
   { href: "/account", label: "마이페이지", exact: true },
+  { href: "/account/admin/orders", label: "주문 이력" },
   { href: "/account/admin/qa", label: "Q&A 관리" },
   { href: "/cart", label: "장바구니" },
 ];

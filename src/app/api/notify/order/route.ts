@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { mailDocument, sendMail } from "@/lib/email";
+import { INCLUDED_SHIPPING_NOTE } from "@/lib/orders";
 
 export const runtime = "nodejs";
 
@@ -21,7 +22,14 @@ type Body = {
   customerPhone?: string;
   customerEmail?: string;
   address?: string;
+  zonecode?: string;
+  addressBase?: string;
+  addressDetail?: string;
   customsCode?: string;
+  subtotalKrw?: number;
+  discountKrw?: number;
+  shippingFeeKrw?: number;
+  shippingNote?: string;
   totalKrw?: number;
   lines?: OrderLine[];
 };
@@ -55,16 +63,42 @@ export async function POST(req: Request) {
       })
       .join("\n") || "-";
 
+  const shippingFee = Number(body.shippingFeeKrw);
+  const shippingFeeLabel = Number.isFinite(shippingFee)
+    ? `${shippingFee.toLocaleString("ko-KR")}원`
+    : "0원";
+  const shippingNote = body.shippingNote?.trim() || INCLUDED_SHIPPING_NOTE;
+  const addressParts = [
+    body.zonecode?.trim() ? `[${body.zonecode.trim()}]` : "",
+    body.addressBase?.trim() || "",
+    body.addressDetail?.trim() || "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   const subject = `[Briq 결제완료] ${orderId} · ${totalKrw.toLocaleString("ko-KR")}원`;
   const rows = [
     { label: "주문번호", value: orderId },
     { label: "결제 ID", value: paymentId },
     { label: "결제수단", value: body.paymentMethod?.trim() || "-" },
+    {
+      label: "상품합계",
+      value: Number.isFinite(Number(body.subtotalKrw))
+        ? `${Number(body.subtotalKrw).toLocaleString("ko-KR")}원`
+        : "-",
+    },
+    {
+      label: "쿠폰할인",
+      value: Number.isFinite(Number(body.discountKrw))
+        ? `-${Number(body.discountKrw).toLocaleString("ko-KR")}원`
+        : "-",
+    },
+    { label: "배송비", value: `${shippingFeeLabel} · ${shippingNote}` },
     { label: "결제금액", value: `${totalKrw.toLocaleString("ko-KR")}원` },
     { label: "수취인", value: customerName },
     { label: "연락처", value: body.customerPhone?.trim() || "-" },
     { label: "이메일", value: body.customerEmail?.trim() || "-" },
-    { label: "배송지", value: body.address?.trim() || "-" },
+    { label: "배송지", value: addressParts || body.address?.trim() || "-" },
     { label: "개인통관부호", value: body.customsCode?.trim() || "-" },
     { label: "상품", value: linesText },
   ];

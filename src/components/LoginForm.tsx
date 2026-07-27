@@ -28,7 +28,7 @@ export function LoginForm() {
     const normalized = email.trim().toLowerCase();
     const next =
       params.get("next") ||
-      (normalized === ADMIN_EMAIL ? "/account/admin/qa" : "/account");
+      (normalized === ADMIN_EMAIL ? "/account/admin/orders" : "/account");
     router.push(next);
   }
 

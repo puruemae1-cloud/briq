@@ -21,7 +21,8 @@ import {
 } from "@/lib/checkout-profile";
 import { useAuthStore } from "@/lib/auth-store";
 import { useCouponStore } from "@/lib/coupon-store";
-import { useOrderStore } from "@/lib/order-store";
+import { recordOrder } from "@/lib/order-store";
+import { INCLUDED_SHIPPING_NOTE } from "@/lib/orders";
 
 type DaumPostcodeData = {
   zonecode: string;
@@ -90,7 +91,6 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
   const recordPurchase = usePurchases((s) => s.record);
   const user = useAuthStore((s) => s.currentUser());
   const updateProfile = useAuthStore((s) => s.updateProfile);
-  const addOrder = useOrderStore((s) => s.addOrder);
   const coupons = useCouponStore((s) => s.coupons);
   const markCouponUsed = useCouponStore((s) => s.markUsed);
   const detailRef = useRef<HTMLInputElement>(null);
@@ -302,45 +302,56 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
     saveCheckoutProfile(profile);
     if (user) {
       updateProfile({ ...profile, updatedAt: new Date().toISOString() });
-      addOrder({
-        id: orderId,
-        userId: user.id,
-        paymentId: result.paymentId,
-        status: "paid",
-        customsCode: code,
-        customerName,
-        customerPhone: fullPhone,
-        address,
-        totalKrw: total,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        paymentMethod:
-          paymentMethods.find((m) => m.id === method)?.label ?? method,
-        lines: items.map((i) => {
-          const baseName = i.variant
-            ? `${i.product.nameKo} · ${i.variant.nameKo}`
-            : i.product.nameKo;
-          const nameKo =
-            i.product.braceletResize && i.braceletCm
-              ? `${baseName} · ${formatBraceletLabel(i.braceletCm)}`
-              : baseName;
-          return {
-            productId: i.product.id,
-            variantId: i.variant?.id,
-            nameKo,
-            qty: i.qty,
-            unitPrice: cartUnitPrice(i.product, i.variant, i.braceletCm),
-            image: i.variant?.image ?? i.product.image,
-          };
-        }),
-      });
     }
+
+    const paymentLabel =
+      paymentMethods.find((m) => m.id === method)?.label ?? method;
+    const now = new Date().toISOString();
+    const lines = items.map((i) => {
+      const baseName = i.variant
+        ? `${i.product.nameKo} · ${i.variant.nameKo}`
+        : i.product.nameKo;
+      const nameKo =
+        i.product.braceletResize && i.braceletCm
+          ? `${baseName} · ${formatBraceletLabel(i.braceletCm)}`
+          : baseName;
+      return {
+        productId: i.product.id,
+        variantId: i.variant?.id,
+        nameKo,
+        qty: i.qty,
+        unitPrice: cartUnitPrice(i.product, i.variant, i.braceletCm),
+        image: i.variant?.image ?? i.product.image,
+      };
+    });
+
+    await recordOrder({
+      id: orderId,
+      userId: user?.id,
+      paymentId: result.paymentId,
+      status: "paid",
+      customsCode: code,
+      customerName,
+      customerPhone: fullPhone,
+      customerEmail: emailRaw || undefined,
+      address,
+      zonecode,
+      addressBase,
+      addressDetail: addressDetail.trim(),
+      subtotalKrw: subtotal,
+      discountKrw: discount,
+      shippingFeeKrw: 0,
+      shippingNote: INCLUDED_SHIPPING_NOTE,
+      totalKrw: total,
+      createdAt: now,
+      updatedAt: now,
+      paymentMethod: paymentLabel,
+      lines,
+    });
 
     recordPurchase(items.map((i) => ({ id: i.product.id, qty: i.qty })));
 
     // Best-effort support email — works once RESEND_API_KEY is configured
-    const paymentLabel =
-      paymentMethods.find((m) => m.id === method)?.label ?? method;
     void fetch("/api/notify/order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -352,22 +363,20 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
         customerPhone: fullPhone,
         customerEmail: emailRaw || undefined,
         address,
+        zonecode,
+        addressBase,
+        addressDetail: addressDetail.trim(),
         customsCode: code,
+        subtotalKrw: subtotal,
+        discountKrw: discount,
+        shippingFeeKrw: 0,
+        shippingNote: INCLUDED_SHIPPING_NOTE,
         totalKrw: total,
-        lines: items.map((i) => {
-          const baseName = i.variant
-            ? `${i.product.nameKo} · ${i.variant.nameKo}`
-            : i.product.nameKo;
-          const nameKo =
-            i.product.braceletResize && i.braceletCm
-              ? `${baseName} · ${formatBraceletLabel(i.braceletCm)}`
-              : baseName;
-          return {
-            nameKo,
-            qty: i.qty,
-            unitPrice: cartUnitPrice(i.product, i.variant, i.braceletCm),
-          };
-        }),
+        lines: lines.map((l) => ({
+          nameKo: l.nameKo,
+          qty: l.qty,
+          unitPrice: l.unitPrice,
+        })),
       }),
     }).catch(() => {
       /* never block checkout on mail failure */
