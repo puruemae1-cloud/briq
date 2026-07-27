@@ -1823,8 +1823,19 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .collection-edit-tier__head {
-  margin-bottom: 1rem;
-  max-width: 40rem;
+  margin: 0 0 1.15rem;
+  max-width: none;
+  padding: 0.85rem 1.1rem 0.9rem;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(232, 226, 214, 0.98) 0%,
+      rgba(236, 231, 220, 0.92) 55%,
+      rgba(228, 222, 210, 0.96) 100%
+    );
+  border: 1px solid rgba(11, 18, 16, 0.1);
+  border-left: 3px solid var(--ink);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .collection-edit-tier__eyebrow {
@@ -1839,7 +1850,7 @@ body:has(.nav-drawer-toggle:checked) {
 .collection-edit-tier__title {
   margin: 0;
   font-family: var(--font-classic), "Nanum Myeongjo", serif;
-  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-size: clamp(1.08rem, 2.5vw, 1.4rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.45;
