@@ -1,17 +1,22 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useAuthStore } from "@/lib/auth-store";
+import { ADMIN_EMAIL, useAuthStore } from "@/lib/auth-store";
 
 export function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
   const login = useAuthStore((s) => s.login);
+  const ensureAdminSeeded = useAuthStore((s) => s.ensureAdminSeeded);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    ensureAdminSeeded();
+  }, [ensureAdminSeeded]);
 
   function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -20,7 +25,10 @@ export function LoginForm() {
       setError(result.message);
       return;
     }
-    const next = params.get("next") || "/account";
+    const normalized = email.trim().toLowerCase();
+    const next =
+      params.get("next") ||
+      (normalized === ADMIN_EMAIL ? "/account/admin/qa" : "/account");
     router.push(next);
   }
 

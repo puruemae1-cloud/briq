@@ -2,12 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useAuthStore } from "@/lib/auth-store";
+import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 
-const links = [
+const memberLinks = [
   { href: "/account", label: "마이페이지", exact: true },
   { href: "/account/orders", label: "주문·배송" },
   { href: "/account/profile", label: "통관·배송정보" },
+  { href: "/cart", label: "장바구니" },
+];
+
+const adminLinks = [
+  { href: "/account", label: "마이페이지", exact: true },
+  { href: "/account/admin/qa", label: "Q&A 관리" },
   { href: "/cart", label: "장바구니" },
 ];
 
@@ -15,6 +21,7 @@ export function AccountNav() {
   const pathname = usePathname();
   const logout = useAuthStore((s) => s.logout);
   const user = useAuthStore((s) => s.currentUser());
+  const links = isAdminUser(user) ? adminLinks : memberLinks;
 
   return (
     <aside className="account-nav">
@@ -22,6 +29,9 @@ export function AccountNav() {
         {user ? (
           <>
             <strong>{user.name}</strong> 님
+            {isAdminUser(user) ? (
+              <span className="account-nav__role">Admin</span>
+            ) : null}
           </>
         ) : (
           "Account"

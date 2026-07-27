@@ -1,7 +1,9 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { Eye, EyeOff, Lock, MessageCircleQuestion } from "lucide-react";
+import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 import { useQaStore, type QaVisibility } from "@/lib/qa-store";
 
 export function ProductQA({
@@ -13,6 +15,11 @@ export function ProductQA({
 }) {
   const items = useQaStore((s) => s.items);
   const add = useQaStore((s) => s.add);
+  const answerQa = useQaStore((s) => s.answer);
+  const ensureAdminSeeded = useAuthStore((s) => s.ensureAdminSeeded);
+  const user = useAuthStore((s) => s.currentUser());
+  const isAdmin = isAdminUser(user);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -22,19 +29,34 @@ export function ProductQA({
   const [notice, setNotice] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
+  const [drafts, setDrafts] = useState<Record<string, string>>({});
+  const [replyingId, setReplyingId] = useState<string | null>(null);
+
+  useEffect(() => {
+    ensureAdminSeeded();
+  }, [ensureAdminSeeded]);
+
+  useEffect(() => {
+    if (user && !isAdmin) {
+      setName(user.name || "");
+      setEmail(user.email || "");
+      setPhone(user.phone || "");
+    }
+  }, [user, isAdmin]);
 
   const list = useMemo(() => {
-    const mineKey = email.trim().toLowerCase();
+    const mineKey = (email.trim() || user?.email || "").toLowerCase();
     return items
       .filter((i) => i.productId === productId)
       .filter((i) => {
+        if (isAdmin) return true;
         if (i.visibility === "public") return true;
         if (!mineKey) return false;
         return (i.authorEmail || "").toLowerCase() === mineKey;
       });
-  }, [items, productId, email]);
+  }, [items, productId, email, user?.email, isAdmin]);
 
-  async function onSubmit(e: FormEvent) {
+  function onSubmit(e: FormEvent) {
     e.preventDefault();
     setError(null);
     setNotice(null);
@@ -47,9 +69,8 @@ export function ProductQA({
     }
 
     setBusy(true);
-    const qaId = `qa-${Date.now()}`;
-    const item = {
-      id: qaId,
+    add({
+      id: `qa-${Date.now()}`,
       productId,
       productName,
       authorName,
@@ -58,27 +79,34 @@ export function ProductQA({
       question: q,
       visibility,
       createdAt: new Date().toISOString(),
-    };
-    add(item);
-
-    try {
-      await fetch("/api/notify/qa", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(item),
-      });
-    } catch {
-      // Local save already succeeded; mail can retry later.
-    }
+    });
 
     setQuestion("");
     setOpen(false);
     setBusy(false);
     setNotice(
       visibility === "private"
-        ? "비밀 질문이 등록되었습니다. 답변은 메일로 안내드립니다."
-        : "질문이 등록되었습니다. 빠른 시일 내에 답변드리겠습니다.",
+        ? "비밀 질문이 등록되었습니다. Briq 담당자가 확인 후 답변드립니다."
+        : "질문이 등록되었습니다. Briq 담당자가 확인 후 답변드립니다.",
     );
+  }
+
+  function onReply(e: FormEvent, qaId: string) {
+    e.preventDefault();
+    if (!isAdmin || !user) return;
+    setError(null);
+    const result = answerQa(qaId, drafts[qaId] || "", user.name);
+    if (!result.ok) {
+      setError(result.message);
+      return;
+    }
+    setDrafts((d) => {
+      const next = { ...d };
+      delete next[qaId];
+      return next;
+    });
+    setReplyingId(null);
+    setNotice("답변이 등록되었습니다.");
   }
 
   return (
@@ -87,20 +115,29 @@ export function ProductQA({
         <p className="engage-panel__count">
           <MessageCircleQuestion size={16} aria-hidden />
           등록된 문의 {list.length}
+          {isAdmin ? (
+            <Link href="/account/admin/qa" className="engage-admin-link">
+              관리 목록
+            </Link>
+          ) : null}
         </p>
-        <button
-          type="button"
-          className="btn btn-outline engage-panel__cta"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? "작성 닫기" : "문의 작성"}
-        </button>
+        {!isAdmin ? (
+          <button
+            type="button"
+            className="btn btn-outline engage-panel__cta"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? "작성 닫기" : "문의 작성"}
+          </button>
+        ) : (
+          <span className="engage-admin-badge">관리자 · 답변 모드</span>
+        )}
       </div>
 
       {notice ? <p className="engage-banner engage-banner--ok">{notice}</p> : null}
       {error ? <p className="engage-banner engage-banner--err">{error}</p> : null}
 
-      {open ? (
+      {open && !isAdmin ? (
         <form className="engage-form" onSubmit={onSubmit}>
           <div className="engage-visibility" role="radiogroup" aria-label="공개 설정">
             <button
@@ -124,8 +161,8 @@ export function ProductQA({
           </div>
           <p className="engage-form__hint">
             {visibility === "private"
-              ? "비밀글은 본인(동일 이메일)과 Briq 고객지원만 확인할 수 있습니다."
-              : "공개 문의는 상품 페이지에 노출됩니다. 개인정보는 남기지 마세요."}
+              ? "비밀글은 본인(동일 이메일)과 Briq 관리자만 확인할 수 있습니다. 일반 고객은 답글을 달 수 없습니다."
+              : "공개 문의는 상품 페이지에 노출됩니다. 답변은 Briq 관리자만 작성할 수 있습니다."}
           </p>
 
           <div className="engage-form__grid">
@@ -140,7 +177,7 @@ export function ProductQA({
               />
             </label>
             <label className="engage-field">
-              <span>이메일 (비밀글 확인·답변용)</span>
+              <span>이메일 (비밀글 확인용)</span>
               <input
                 type="email"
                 value={email}
@@ -185,7 +222,9 @@ export function ProductQA({
           list.map((item) => (
             <li key={item.id} className="engage-item">
               <div className="engage-item__meta">
-                <span className="engage-item__author">{maskName(item.authorName)}</span>
+                <span className="engage-item__author">
+                  {isAdmin ? item.authorName : maskName(item.authorName)}
+                </span>
                 <span className="engage-item__dot" aria-hidden>
                   ·
                 </span>
@@ -200,15 +239,72 @@ export function ProductQA({
                   <span className="engage-pill engage-pill--public">공개</span>
                 )}
               </div>
+              {isAdmin && (item.authorEmail || item.authorPhone) ? (
+                <p className="engage-item__contact">
+                  {[item.authorEmail, item.authorPhone].filter(Boolean).join(" · ")}
+                </p>
+              ) : null}
               <p className="engage-item__body">{item.question}</p>
               {item.answer ? (
                 <div className="engage-answer">
-                  <p className="engage-answer__label">Briq 답변</p>
+                  <p className="engage-answer__label">
+                    Briq 답변
+                    {item.answeredBy ? ` · ${item.answeredBy}` : ""}
+                  </p>
                   <p>{item.answer}</p>
+                  {isAdmin ? (
+                    <button
+                      type="button"
+                      className="engage-answer__edit"
+                      onClick={() => {
+                        setReplyingId(item.id);
+                        setDrafts((d) => ({
+                          ...d,
+                          [item.id]: item.answer || "",
+                        }));
+                      }}
+                    >
+                      답변 수정
+                    </button>
+                  ) : null}
                 </div>
               ) : (
                 <p className="engage-item__pending">답변 대기 중</p>
               )}
+
+              {isAdmin && (replyingId === item.id || !item.answer) ? (
+                <form
+                  className="engage-reply"
+                  onSubmit={(e) => onReply(e, item.id)}
+                >
+                  <label className="engage-field">
+                    <span>관리자 답변</span>
+                    <textarea
+                      value={drafts[item.id] || ""}
+                      onChange={(e) =>
+                        setDrafts((d) => ({ ...d, [item.id]: e.target.value }))
+                      }
+                      rows={3}
+                      required
+                      placeholder="고객에게 전달할 답변을 작성해 주세요."
+                    />
+                  </label>
+                  <div className="engage-reply__actions">
+                    <button type="submit" className="btn btn-solid">
+                      {item.answer ? "답변 저장" : "답변 등록"}
+                    </button>
+                    {item.answer ? (
+                      <button
+                        type="button"
+                        className="btn btn-outline"
+                        onClick={() => setReplyingId(null)}
+                      >
+                        취소
+                      </button>
+                    ) : null}
+                  </div>
+                </form>
+              ) : null}
             </li>
           ))
         )}

@@ -3,15 +3,17 @@
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
 import { formatKrw } from "@/data/products";
-import { useAuthStore } from "@/lib/auth-store";
+import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 import { SHIPPING_STAGE_COPY } from "@/lib/orders";
 import { useOrderStore } from "@/lib/order-store";
+import { useQaStore } from "@/lib/qa-store";
 
 export function AccountHome() {
   const user = useAuthStore((s) => s.currentUser());
   const orders = useOrderStore((s) =>
     user ? s.ordersForUser(user.id) : [],
   );
+  const pendingQa = useQaStore((s) => s.items.filter((i) => !i.answer).length);
 
   if (!user) {
     return (
@@ -38,6 +40,7 @@ export function AccountHome() {
 
   const latest = orders[0];
   const hasCustoms = Boolean(user.profile?.customsCode);
+  const admin = isAdminUser(user);
 
   return (
     <section className="section account-shell">
@@ -45,40 +48,60 @@ export function AccountHome() {
         <AccountNav />
         <div className="account-main">
           <header className="account-main__head">
-            <p className="product-card__brand">My Briq</p>
-            <h1>{user.name} 님, 환영합니다</h1>
+            <p className="product-card__brand">
+              {admin ? "Briq Admin" : "My Briq"}
+            </p>
+            <h1>
+              {user.name} 님, 환영합니다
+              {admin ? " · 관리자" : ""}
+            </h1>
             <p className="account-main__email">{user.email}</p>
           </header>
 
-          <div className="account-cards">
-            <Link href="/cart" className="account-card">
-              <p className="account-card__label">장바구니</p>
-              <p className="account-card__value">바로가기</p>
-              <p className="account-card__hint">담아둔 상품을 이어서 결제하세요</p>
-            </Link>
-            <Link href="/account/orders" className="account-card">
-              <p className="account-card__label">주문·결제</p>
-              <p className="account-card__value">{orders.length}건</p>
-              <p className="account-card__hint">
-                {latest
-                  ? `최근: ${SHIPPING_STAGE_COPY[latest.status].title}`
-                  : "아직 주문이 없습니다"}
-              </p>
-            </Link>
-            <Link href="/account/profile" className="account-card">
-              <p className="account-card__label">통관부호</p>
-              <p className="account-card__value">
-                {hasCustoms ? "저장됨" : "미등록"}
-              </p>
-              <p className="account-card__hint">
-                {hasCustoms
-                  ? "결제 시 자동으로 불러옵니다"
-                  : "한 번 저장하면 다음 결제부터 자동 입력"}
-              </p>
-            </Link>
-          </div>
+          {admin ? (
+            <div className="account-cards">
+              <Link href="/account/admin/qa" className="account-card">
+                <p className="account-card__label">Q&A 관리</p>
+                <p className="account-card__value">{pendingQa}건</p>
+                <p className="account-card__hint">미답변 고객 문의</p>
+              </Link>
+              <Link href="/shop" className="account-card">
+                <p className="account-card__label">상품</p>
+                <p className="account-card__value">바로가기</p>
+                <p className="account-card__hint">상품 페이지에서 바로 답변 가능</p>
+              </Link>
+            </div>
+          ) : (
+            <div className="account-cards">
+              <Link href="/cart" className="account-card">
+                <p className="account-card__label">장바구니</p>
+                <p className="account-card__value">바로가기</p>
+                <p className="account-card__hint">담아둔 상품을 이어서 결제하세요</p>
+              </Link>
+              <Link href="/account/orders" className="account-card">
+                <p className="account-card__label">주문·결제</p>
+                <p className="account-card__value">{orders.length}건</p>
+                <p className="account-card__hint">
+                  {latest
+                    ? `최근: ${SHIPPING_STAGE_COPY[latest.status].title}`
+                    : "아직 주문이 없습니다"}
+                </p>
+              </Link>
+              <Link href="/account/profile" className="account-card">
+                <p className="account-card__label">통관부호</p>
+                <p className="account-card__value">
+                  {hasCustoms ? "저장됨" : "미등록"}
+                </p>
+                <p className="account-card__hint">
+                  {hasCustoms
+                    ? "결제 시 자동으로 불러옵니다"
+                    : "한 번 저장하면 다음 결제부터 자동 입력"}
+                </p>
+              </Link>
+            </div>
+          )}
 
-          {latest ? (
+          {!admin && latest ? (
             <div className="panel account-latest">
               <p className="account-latest__label">최근 주문</p>
               <p className="account-latest__id">{latest.id}</p>
@@ -90,14 +113,29 @@ export function AccountHome() {
                 전체 주문 보기
               </Link>
             </div>
-          ) : (
+          ) : null}
+
+          {!admin && !latest ? (
             <div className="panel account-latest">
               <p>아직 주문 이력이 없습니다.</p>
               <Link href="/shop" className="btn btn-solid">
                 쇼핑하러 가기
               </Link>
             </div>
-          )}
+          ) : null}
+
+          {admin ? (
+            <div className="panel account-latest">
+              <p className="account-latest__label">Staff</p>
+              <p>
+                고객 Q&A 답변은 관리자만 가능합니다. 일반 회원은 문의만 등록할 수
+                있습니다.
+              </p>
+              <Link href="/account/admin/qa" className="btn btn-solid">
+                미답변 확인하기
+              </Link>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

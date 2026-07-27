@@ -2927,8 +2927,77 @@ body:has(.pdp-dock) .back-to-top {
   background: #f3f2ed;
 }
 
-.review-media__video {
-  aspect-ratio: 16 / 10;
+.engage-admin-badge {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  font-weight: 650;
+  color: var(--accent);
+  border: 1px solid rgba(31, 77, 58, 0.28);
+  padding: 0.4rem 0.65rem;
+}
+
+.engage-admin-link {
+  margin-left: 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.engage-item__contact {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  color: rgba(11, 18, 16, 0.55);
+}
+
+.engage-item__product {
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.engage-reply {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.engage-reply__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.engage-answer__edit {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  margin-top: 0.55rem;
+  padding: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.account-nav__role {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.12rem 0.4rem;
+  border: 1px solid rgba(183, 161, 106, 0.55);
+  color: var(--gold);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  vertical-align: middle;
 }
 
 .variant-block {
