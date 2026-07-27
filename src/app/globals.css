@@ -86,14 +86,18 @@ img {
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: clip;
 }
 
 .shell__main {
   flex: 1;
   min-width: 0;
   width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .site-header {
@@ -868,14 +872,22 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .lookbook,
-  .lookbook__block {
-    overflow-x: visible;
+  .lookbook__block,
+  .lookbook__rail {
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   /* content-visibility paint containment was clipping product grids + chip rails */
   .lookbook__block {
     content-visibility: visible;
     contain: none;
+  }
+
+  .shell,
+  .shell__main {
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   .back-to-top {
@@ -890,17 +902,43 @@ body:has(.nav-drawer-toggle:checked) {
   .product-card__img {
     transition: none !important;
   }
+
+  /* Keep 2-col catalog tiles fully inside the viewport */
+  .lookbook__rail.section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lookbook__rail .product-grid {
+    gap: 0.75rem;
+  }
+
+  .lookbook__rail .product-frame--card {
+    padding: var(--product-frame-pad-sm);
+  }
+
+  .lookbook__rail .product-card__body {
+    padding: 0.75rem 0.55rem 0.85rem;
+  }
+
+  .lookbook__rail .product-card__name {
+    font-size: 0.88rem;
+  }
 }
 
 .lookbook {
   display: grid;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
 }
 
 .lookbook__block {
   display: grid;
   min-width: 0;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .lookbook__rail {
@@ -908,6 +946,7 @@ body:has(.nav-drawer-toggle:checked) {
   padding-bottom: 1.25rem;
   min-width: 0;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .lookbook__rail .product-grid {
@@ -916,24 +955,12 @@ body:has(.nav-drawer-toggle:checked) {
   min-width: 0;
 }
 
-/* Edge-to-edge finger scroll for subcategory chips inside section padding */
+/* Chips scroll inside the section — never widen the page */
 .lookbook__rail .category-row {
-  margin-inline: -1.25rem;
-  padding-inline: 1.25rem;
-  padding-bottom: 0.55rem;
-  scroll-padding-inline: 1.25rem;
-  width: calc(100% + 2.5rem);
-  max-width: none;
-  touch-action: pan-x;
-}
-
-@media (min-width: 900px) {
-  .lookbook__rail .category-row {
-    margin-inline: -2rem;
-    padding-inline: 2rem;
-    scroll-padding-inline: 2rem;
-    width: calc(100% + 4rem);
-  }
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-inline-end: 0.35rem;
 }
 
 .look-banner {
@@ -1310,6 +1337,9 @@ body:has(.nav-drawer-toggle:checked) {
   max-width: 1240px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 @media (min-width: 900px) {
@@ -1735,6 +1765,7 @@ body:has(.nav-drawer-toggle:checked) {
   gap: 0.65rem;
   overflow-x: auto;
   max-width: 100%;
+  min-width: 0;
   padding-bottom: 0.35rem;
   margin-bottom: 1.5rem;
   scrollbar-width: none;
