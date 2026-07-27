@@ -1,0 +1,15 @@
+---
+description: New products must set registeredAt for 최신등록순 across all categories
+alwaysApply: true
+---
+
+# Product registration order
+
+Shop / Collection **최신등록순** sorts by `product.registeredAt` (ISO), newest first — every category and subcategory.
+
+When adding products:
+
+1. Set `registeredAt` to the registration time, e.g. `new Date().toISOString()` or an explicit ISO string.
+2. Prefer appending new SKUs to the hand-authored catalogue (or any data module), not relying on array reverse.
+3. Do not leave new products without `registeredAt` if they must appear above older stock.
+4. Collection filler SKUs (`briq-col-*`) keep older dates on purpose — do not give them “now” timestamps.

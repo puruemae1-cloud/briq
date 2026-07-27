@@ -66,6 +66,11 @@ export type Product = {
   };
   /** Long-form PDP story blocks (image + Korean copy). */
   storySections?: ProductStorySection[];
+  /**
+   * Catalogue registration time (ISO). Used by 최신등록순.
+   * Always set this when adding a product — newer timestamps rank first.
+   */
+  registeredAt?: string;
 };
 
 /** KRW = GBP × 2100 × 1.06 + 20,000 (internal pricing — not shown on PDP) */
@@ -204,7 +209,6 @@ const chinoCapVariants: ProductVariant[] = [
 const chinoCapMinPrice = Math.min(...chinoCapVariants.map((v) => v.price));
 
 export const products: Product[] = [
-  ...cwTwelvePicNMixProducts,
   {
     id: "prl-chino-cap",
     name: "The Iconic Cotton Chino Ball Cap",
@@ -589,7 +593,20 @@ export const products: Product[] = [
     image: "/products/pouch.svg",
     accent: "#314036",
   },
+  // Newest hand-authored products last in source order; explicit registeredAt still wins.
+  ...cwTwelvePicNMixProducts,
 ];
+
+/** Fill missing registeredAt so later catalogue rows rank as newer. */
+function stampMissingRegisteredAt(list: Product[], epochIso: string) {
+  const epoch = Date.parse(epochIso);
+  list.forEach((p, i) => {
+    if (p.registeredAt) return;
+    p.registeredAt = new Date(epoch + i * 86_400_000).toISOString();
+  });
+}
+
+stampMissingRegisteredAt(products, "2024-01-01T00:00:00.000Z");
 
 /** Extra catalogue rows so the homepage can show a full 100-piece edit. */
 const collectionSeeds: Array<{
@@ -668,6 +685,10 @@ function expandToTarget(base: Product[], target: number): Product[] {
       descriptionKo: "Briq 컬렉션 에디트.",
       image: seed.image,
       accent: accents[n % accents.length] ?? seed.accent,
+      // Keep fillers older than hand-authored SKUs so 최신등록순 stays meaningful.
+      registeredAt: new Date(
+        Date.parse("2023-01-01T00:00:00.000Z") + n * 86_400_000,
+      ).toISOString(),
     });
     n += 1;
   }

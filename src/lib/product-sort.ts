@@ -21,7 +21,21 @@ export function parseProductSort(value?: string | null): ProductSort {
   return "new";
 }
 
-/** Same ranking rules as the homepage 100 Collection. */
+function registeredAtMs(product: Product): number {
+  const raw = product.registeredAt;
+  if (!raw) return 0;
+  const ms = Date.parse(raw);
+  return Number.isFinite(ms) ? ms : 0;
+}
+
+/** Newest first by `registeredAt` (ISO). Missing dates sort last. */
+export function compareProductsByNewest(a: Product, b: Product): number {
+  const diff = registeredAtMs(b) - registeredAtMs(a);
+  if (diff !== 0) return diff;
+  return a.id.localeCompare(b.id);
+}
+
+/** Same ranking rules as the homepage 100 Collection / every shop category. */
 export function sortProducts(list: Product[], sort: ProductSort): Product[] {
   const copy = [...list];
   switch (sort) {
@@ -38,8 +52,7 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
       });
     case "new":
     default:
-      // Newest first: later catalogue entries are newer
-      return copy.reverse();
+      return copy.sort(compareProductsByNewest);
   }
 }
 

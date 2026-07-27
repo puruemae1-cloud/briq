@@ -143,7 +143,7 @@ function galleryFor(slug: string): string[] {
   );
 }
 
-export const cwTwelvePicNMixProducts = FLAVORS.map((f) => {
+export const cwTwelvePicNMixProducts = FLAVORS.map((f, index) => {
   const images = galleryFor(f.slug);
   return {
     id: `cw-twelve-picnmix-${f.slug}`,
@@ -162,6 +162,11 @@ export const cwTwelvePicNMixProducts = FLAVORS.map((f) => {
     sku: f.sku,
     sourceUrl: f.sourceUrl,
     inStock: true,
+    // Newest first within the set (first flavor ranks highest).
+    registeredAt: new Date(
+      Date.parse("2026-07-27T18:00:00.000Z") +
+        (FLAVORS.length - 1 - index) * 60_000,
+    ).toISOString(),
     braceletResize: {
       feeKrw: CW_BRACELET_RESIZE_FEE,
       sizesCm: [...CW_BRACELET_SIZES_CM],
