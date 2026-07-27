@@ -87,8 +87,16 @@ function withAdminSeed(users: BriqUser[]): BriqUser[] {
     return [buildAdminUser(), ...users];
   }
 
+  const current = users[existingIdx];
+  const alreadyOk =
+    current.id === "admin_briq" &&
+    current.email === ADMIN_EMAIL &&
+    current.role === "admin" &&
+    current.passwordHash === adminHash;
+
+  if (alreadyOk) return users;
+
   const next = [...users];
-  const current = next[existingIdx];
   next[existingIdx] = {
     ...current,
     id: "admin_briq",
@@ -107,7 +115,9 @@ export const useAuthStore = create<AuthState>()(
       sessionUserId: null,
 
       ensureAdminSeeded() {
-        set((s) => ({ users: withAdminSeed(s.users) }));
+        const { users } = get();
+        const next = withAdminSeed(users);
+        if (next !== users) set({ users: next });
       },
 
       currentUser() {

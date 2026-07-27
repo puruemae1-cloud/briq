@@ -1,11 +1,17 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { UserRound } from "lucide-react";
 import { useAuthStore } from "@/lib/auth-store";
 
 export function HeaderAccount() {
-  const user = useAuthStore((s) => s.currentUser());
+  const sessionUserId = useAuthStore((s) => s.sessionUserId);
+  const users = useAuthStore((s) => s.users);
+  const user = useMemo(
+    () => users.find((u) => u.id === sessionUserId) ?? null,
+    [users, sessionUserId],
+  );
 
   return (
     <Link

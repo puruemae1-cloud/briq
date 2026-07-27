@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
 import { formatKrw } from "@/data/products";
@@ -9,11 +10,20 @@ import { useOrderStore } from "@/lib/order-store";
 import { useQaStore } from "@/lib/qa-store";
 
 export function AccountHome() {
-  const user = useAuthStore((s) => s.currentUser());
-  const orders = useOrderStore((s) =>
-    user ? s.ordersForUser(user.id) : [],
+  const sessionUserId = useAuthStore((s) => s.sessionUserId);
+  const users = useAuthStore((s) => s.users);
+  const user = useMemo(
+    () => users.find((u) => u.id === sessionUserId) ?? null,
+    [users, sessionUserId],
   );
-  const pendingQa = useQaStore((s) => s.items.filter((i) => !i.answer).length);
+  const allOrders = useOrderStore((s) => s.orders);
+  const orders = useMemo(
+    () => (user ? allOrders.filter((o) => o.userId === user.id) : []),
+    [allOrders, user],
+  );
+  const pendingQa = useQaStore(
+    (s) => s.items.reduce((n, i) => (i.answer ? n : n + 1), 0),
+  );
 
   if (!user) {
     return (

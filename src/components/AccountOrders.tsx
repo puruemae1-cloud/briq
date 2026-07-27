@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
 import { formatKrw } from "@/data/products";
@@ -8,9 +9,16 @@ import { SHIPPING_STAGE_COPY } from "@/lib/orders";
 import { useOrderStore } from "@/lib/order-store";
 
 export function AccountOrders() {
-  const user = useAuthStore((s) => s.currentUser());
-  const orders = useOrderStore((s) =>
-    user ? s.ordersForUser(user.id) : [],
+  const sessionUserId = useAuthStore((s) => s.sessionUserId);
+  const users = useAuthStore((s) => s.users);
+  const user = useMemo(
+    () => users.find((u) => u.id === sessionUserId) ?? null,
+    [users, sessionUserId],
+  );
+  const allOrders = useOrderStore((s) => s.orders);
+  const orders = useMemo(
+    () => (user ? allOrders.filter((o) => o.userId === user.id) : []),
+    [allOrders, user],
   );
 
   if (!user) {

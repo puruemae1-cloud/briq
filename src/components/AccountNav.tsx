@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
@@ -21,7 +22,12 @@ const adminLinks = [
 export function AccountNav() {
   const pathname = usePathname();
   const logout = useAuthStore((s) => s.logout);
-  const user = useAuthStore((s) => s.currentUser());
+  const sessionUserId = useAuthStore((s) => s.sessionUserId);
+  const users = useAuthStore((s) => s.users);
+  const user = useMemo(
+    () => users.find((u) => u.id === sessionUserId) ?? null,
+    [users, sessionUserId],
+  );
   const links = isAdminUser(user) ? adminLinks : memberLinks;
 
   return (
