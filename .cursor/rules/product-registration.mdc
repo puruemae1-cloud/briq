@@ -1,5 +1,5 @@
 ---
-description: New products must set registeredAt and editTier for catalogue order / 100 Collection
+description: New products must set registeredAt; 100 Collection buckets by price / purchases / recency
 alwaysApply: true
 ---
 
@@ -12,6 +12,7 @@ Applies to:
 - Shop / Collection filters (every category and subcategory)
 - Homepage category rails under each lookbook banner (top-left = newest)
 - Any new product listing UI — always `sortProducts(list, "new")` before slicing
+- 100 Collection “신상품 큐레이션” and “하이엔드 컬렉션” (newest within each filter)
 
 When adding products:
 
@@ -19,8 +20,8 @@ When adding products:
 2. Prefer appending new SKUs to the hand-authored catalogue.
 3. Do not leave new products without `registeredAt` if they must appear above older stock.
 4. Collection filler SKUs (`briq-col-*`) keep older dates on purpose.
-5. Set `editTier` when the product should land in a specific 100 Collection bucket:
-   - `"signature"` — 하이엔드 / 100만 원 이상 대표 라인
-   - `"bestseller"` — 입문·데일리 / 첫 구매 전환 구간
-   - `"new"` — 신상품·시즌 기획
-   If omitted, the site infers from price / badge / recency (`src/lib/collection-edit.ts`).
+5. 100 Collection sections (see `src/lib/collection-edit.ts`):
+   - **하이엔드**: price ≥ 1,000,000 — newest first
+   - **첫 구매자 만족도 1위**: price 100,000–300,000 and ≥1 recorded payment
+   - **신상품 큐레이션**: most recently registered SKUs
+   Optional `editTier` is no longer required for these sections.

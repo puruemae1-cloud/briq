@@ -51,14 +51,6 @@ export function Collection100({
         <div className="collection-100__banner-content">
           <p className="collection-100__eyebrow">Briq Edit</p>
           <h2 className="collection-100__title">100 Collection</h2>
-          <p className="collection-100__lead">
-            프리미엄을 재정의하다 · 첫 구매자 만족도 1위 · 가장 먼저 만나는
-            신상품
-          </p>
-          <p className="collection-100__hint">
-            하이엔드 · 입문 베스트 · 시즌 신상을 한눈에.
-            <br className="br-mobile" /> 원하는 만큼만 더 펼쳐 보세요.
-          </p>
         </div>
       </div>
 
