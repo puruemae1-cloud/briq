@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   description:
     "Briq (브릭) — British + Boutique / Unique. 스포츠, 패션의류, 가방, 악세서리를 큐레이션한 셀렉트 숍.",
   applicationName: "Briq",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default async function RootLayout({
