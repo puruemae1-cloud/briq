@@ -33,9 +33,9 @@ export type Product = {
   variants?: ProductVariant[];
 };
 
-/** KRW = GBP × 2100 × 1.06 + 20,000 */
+/** KRW = GBP × 2100 × 1.05 + 200,000 */
 export function gbpToBriqKrw(gbp: number) {
-  return Math.round(gbp * 2100 * 1.06 + 20000);
+  return Math.round(gbp * 2100 * 1.05 + 200_000);
 }
 
 const chinoCapVariants: ProductVariant[] = [

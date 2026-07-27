@@ -22,12 +22,44 @@ export type SubcategoryId =
   | "cycling"
   | "tennis"
   | "christopher-ward"
+  | "cw-new-releases"
+  | "cw-bestsellers"
+  | "cw-hidden-gems"
+  | "cw-clearance"
+  | "cw-atelier"
+  | "cw-dive"
+  | "cw-integrated-sports"
+  | "cw-adventure-field"
+  | "cw-military"
+  | "cw-bel-canto"
+  | "cw-sealander"
+  | "cw-twelve"
+  | "cw-trident"
+  | "cw-moonphase"
   | "luxury-shoes"
   | "training-shoes"
   | "luxury-womens"
   | "luxury-mens"
   | "training-womens"
   | "training-mens";
+
+/** Christopher Ward leaf collections under the parent brand chip. */
+export const CW_COLLECTION_IDS: SubcategoryId[] = [
+  "cw-new-releases",
+  "cw-bestsellers",
+  "cw-hidden-gems",
+  "cw-clearance",
+  "cw-atelier",
+  "cw-dive",
+  "cw-integrated-sports",
+  "cw-adventure-field",
+  "cw-military",
+  "cw-bel-canto",
+  "cw-sealander",
+  "cw-twelve",
+  "cw-trident",
+  "cw-moonphase",
+];
 
 export type NavChild = {
   id: SubcategoryId;
@@ -47,6 +79,7 @@ export type NavCategory = {
 export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> = {
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
+  "christopher-ward": [...CW_COLLECTION_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -69,6 +102,78 @@ export const navCategories: NavCategory[] = [
         id: "christopher-ward",
         labelKo: "크리스토퍼와드",
         href: "/shop?category=watches&sub=christopher-ward",
+        children: [
+          {
+            id: "cw-new-releases",
+            labelKo: "New Releases",
+            href: "/shop?category=watches&sub=cw-new-releases",
+          },
+          {
+            id: "cw-bestsellers",
+            labelKo: "Bestsellers",
+            href: "/shop?category=watches&sub=cw-bestsellers",
+          },
+          {
+            id: "cw-hidden-gems",
+            labelKo: "Hidden Gems",
+            href: "/shop?category=watches&sub=cw-hidden-gems",
+          },
+          {
+            id: "cw-clearance",
+            labelKo: "Clearance",
+            href: "/shop?category=watches&sub=cw-clearance",
+          },
+          {
+            id: "cw-atelier",
+            labelKo: "Atelier",
+            href: "/shop?category=watches&sub=cw-atelier",
+          },
+          {
+            id: "cw-dive",
+            labelKo: "Dive",
+            href: "/shop?category=watches&sub=cw-dive",
+          },
+          {
+            id: "cw-integrated-sports",
+            labelKo: "Integrated Sports",
+            href: "/shop?category=watches&sub=cw-integrated-sports",
+          },
+          {
+            id: "cw-adventure-field",
+            labelKo: "Adventure & Field",
+            href: "/shop?category=watches&sub=cw-adventure-field",
+          },
+          {
+            id: "cw-military",
+            labelKo: "Military",
+            href: "/shop?category=watches&sub=cw-military",
+          },
+          {
+            id: "cw-bel-canto",
+            labelKo: "Bel Canto",
+            href: "/shop?category=watches&sub=cw-bel-canto",
+          },
+          {
+            id: "cw-sealander",
+            labelKo: "Sealander",
+            href: "/shop?category=watches&sub=cw-sealander",
+          },
+          {
+            id: "cw-twelve",
+            labelKo: "Twelve",
+            href: "/shop?category=watches&sub=cw-twelve",
+          },
+          {
+            id: "cw-trident",
+            labelKo: "Trident",
+            href: "/shop?category=watches&sub=cw-trident",
+          },
+          {
+            id: "cw-moonphase",
+            labelKo: "Moonphase",
+            href: "/shop?category=watches&sub=cw-moonphase",
+          },
+        ],
       },
     ],
   },

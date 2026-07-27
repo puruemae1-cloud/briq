@@ -2266,6 +2266,36 @@ body:has(.nav-drawer-toggle:checked) {
   color: #222;
 }
 
+.product-card__price--sale {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.55rem;
+}
+
+.product-card__price-now {
+  font-weight: 650;
+  color: #8a1f1f;
+}
+
+.product-card__price-was {
+  font-size: 0.86em;
+  color: rgba(11, 18, 16, 0.42);
+  text-decoration: line-through;
+}
+
+.product-card__price-pct {
+  font-size: 0.78em;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: #8a1f1f;
+}
+
+.product-card__badge--sale {
+  background: #8a1f1f;
+  color: #f7f4ec;
+}
+
 .product-card--sold-out .product-card__price {
   font-family: var(--font-display), serif;
   font-weight: 500;
@@ -2354,6 +2384,31 @@ body:has(.nav-drawer-toggle:checked) {
   font-size: 1.25rem;
   font-weight: 650;
   margin: 1rem 0;
+}
+
+.product-detail__price--sale {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.75rem;
+}
+
+.product-detail__price-now {
+  color: #8a1f1f;
+}
+
+.product-detail__price-was {
+  font-size: 0.88em;
+  font-weight: 500;
+  color: rgba(11, 18, 16, 0.42);
+  text-decoration: line-through;
+}
+
+.product-detail__price-pct {
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #8a1f1f;
 }
 
 .product-detail__stock {

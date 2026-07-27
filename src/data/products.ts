@@ -1,6 +1,6 @@
 import type { CategoryId, SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
-import { cwTwelvePicNMixProducts } from "@/data/cw-twelve-picnmix";
+import { cwProducts } from "@/data/cw/cw-products";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -31,9 +31,16 @@ export type Product = {
   name: string;
   nameKo: string;
   brand: string;
+  /** Selling price (KRW). When on sale this is the discounted amount. */
   price: number;
+  /** Pre-sale / list price (KRW). Shown struck-through when higher than `price`. */
+  compareAtPrice?: number;
   category: CategoryId;
   subcategory?: SubcategoryId;
+  /**
+   * Christopher Ward PLP memberships (a SKU can sit in New Releases + Twelve etc.).
+   */
+  cwCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -47,6 +54,8 @@ export type Product = {
   accent: string;
   badge?: string;
   gbpPrice?: number;
+  /** Original GBP list price when the CW site shows a reduction. */
+  gbpListPrice?: number;
   sku?: string;
   sourceUrl?: string;
   size?: string;
@@ -79,9 +88,16 @@ export type Product = {
   editTier?: "signature" | "bestseller" | "new";
 };
 
-/** KRW = GBP × 2100 × 1.06 + 20,000 (internal pricing — not shown on PDP) */
+/** KRW = GBP × 2100 × 1.05 + 200,000 */
 export function gbpToBriqKrw(gbp: number) {
-  return Math.round(gbp * 2100 * 1.06 + 20000);
+  return Math.round(gbp * 2100 * 1.05 + 200_000);
+}
+
+/** Sale discount percent from compareAt → price, or null if not on sale. */
+export function productSalePercent(product: Product) {
+  const was = product.compareAtPrice;
+  if (!was || was <= product.price) return null;
+  return Math.max(1, Math.round((1 - product.price / was) * 100));
 }
 
 /** True if the product (or any of its variants) can be purchased. */
@@ -303,21 +319,6 @@ export const products: Product[] = [
     descriptionKo: "데일리 필드 감성의 오토매틱 워치.",
     image: "/products/bottle.svg",
     accent: "#24302A",
-  },
-  {
-    id: "cw-c60-trident",
-    name: "C60 Trident Pro 300",
-    nameKo: "C60 트라이던트 프로 300",
-    brand: "Christopher Ward",
-    price: gbpToBriqKrw(895),
-    gbpPrice: 895,
-    category: "watches",
-    subcategory: "christopher-ward",
-    tags: ["dive", "british"],
-    descriptionKo: "영국 독립 워치메이커 크리스토퍼와드의 시그니처 다이버 워치.",
-    image: "/products/cap.svg",
-    accent: "#1A2A38",
-    badge: "Editor",
   },
   {
     id: "briq-run-jacket",
@@ -605,7 +606,7 @@ export const products: Product[] = [
     accent: "#314036",
   },
   // Newest hand-authored products last in source order; explicit registeredAt still wins.
-  ...cwTwelvePicNMixProducts,
+  ...cwProducts,
 ];
 
 /** Fill missing registeredAt so later catalogue rows rank as newer. */
@@ -635,8 +636,8 @@ const collectionSeeds: Array<{
   { name: "Mayfair Trouser", nameKo: "메이페어 트라우저", brand: "Briq Luxury", category: "luxury", subcategory: "womens", basePrice: 390000, image: "/products/knit.svg", accent: "#4A3A32" },
   { name: "Chelsea Dress", nameKo: "첼시 드레스", brand: "Briq Luxury", category: "luxury", subcategory: "womens", basePrice: 540000, image: "/products/knit.svg", accent: "#5C4A3A" },
   { name: "Savile Overcoat", nameKo: "새빌 오버코트", brand: "Briq Luxury", category: "luxury", subcategory: "mens", basePrice: 980000, image: "/products/wool-coat.svg", accent: "#2C2A28" },
-  { name: "C65 Aquitaine", nameKo: "C65 아키텐", brand: "Christopher Ward", category: "watches", subcategory: "christopher-ward", basePrice: gbpToBriqKrw(1495), image: "/products/cap.svg", accent: "#1A2A38" },
-  { name: "C60 Sealander", nameKo: "C60 실랜더", brand: "Christopher Ward", category: "watches", subcategory: "christopher-ward", basePrice: gbpToBriqKrw(795), image: "/products/bottle.svg", accent: "#24302A" },
+  { name: "C65 Aquitaine", nameKo: "C65 아키텐", brand: "Christopher Ward", category: "watches", subcategory: "cw-dive", basePrice: gbpToBriqKrw(1495), image: "/products/cap.svg", accent: "#1A2A38" },
+  { name: "C60 Sealander", nameKo: "C60 실랜더", brand: "Christopher Ward", category: "watches", subcategory: "cw-sealander", basePrice: gbpToBriqKrw(795), image: "/products/bottle.svg", accent: "#24302A" },
   { name: "Belgravia Chronograph", nameKo: "벨그레이비아 크로노그래프", brand: "Briq Horology", category: "watches", basePrice: 980000, image: "/products/cap.svg", accent: "#1A2428" },
   { name: "Fleet Field Watch", nameKo: "플리트 필드 워치", brand: "Briq Horology", category: "watches", basePrice: 620000, image: "/products/bottle.svg", accent: "#243447" },
   { name: "Camden Trench", nameKo: "캠든 트렌치", brand: "Briq Atelier", category: "clothing", subcategory: "womens", basePrice: 359000, image: "/products/wool-coat.svg", accent: "#2C2A28" },
@@ -737,9 +738,11 @@ export function getProductsByCategory(category?: string, sub?: string) {
   }
   const expanded = expandSubcategoryFilter(sub);
   if (expanded) {
-    list = list.filter(
-      (p) => p.subcategory && expanded.includes(p.subcategory),
-    );
+    list = list.filter((p) => {
+      if (p.subcategory && expanded.includes(p.subcategory)) return true;
+      if (p.cwCollections?.some((c) => expanded.includes(c))) return true;
+      return false;
+    });
   }
   return list;
 }

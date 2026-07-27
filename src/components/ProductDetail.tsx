@@ -14,6 +14,7 @@ import {
   formatKrw,
   isProductInStock,
   isVariantInStock,
+  productSalePercent,
 } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
@@ -90,6 +91,8 @@ export function ProductDetail({
       ? product.images
       : [primaryImage];
   const soldOut = !selectedAvailable;
+  const salePct = productSalePercent(product);
+  const onSale = Boolean(salePct && product.compareAtPrice);
 
   const hiddenFields = (
     <>
@@ -137,7 +140,23 @@ export function ProductDetail({
               <span className="product-detail__stock">Sold Out</span>
             </p>
           ) : null}
-          <p className="product-detail__price">{formatKrw(unitPrice)}</p>
+          <p className={`product-detail__price${onSale ? " product-detail__price--sale" : ""}`}>
+            {soldOut ? (
+              "Sold Out"
+            ) : onSale && product.compareAtPrice ? (
+              <>
+                <span className="product-detail__price-now">
+                  {formatKrw(unitPrice)}
+                </span>
+                <span className="product-detail__price-was">
+                  {formatKrw(product.compareAtPrice)}
+                </span>
+                <span className="product-detail__price-pct">{salePct}% OFF</span>
+              </>
+            ) : (
+              formatKrw(unitPrice)
+            )}
+          </p>
           {product.braceletResize && braceletCm !== "no" ? (
             <p className="product-detail__price-note">
               기본가 {formatKrw(selected?.price ?? product.price)} + 리사이즈{" "}
