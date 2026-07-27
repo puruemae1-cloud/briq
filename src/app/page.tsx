@@ -8,7 +8,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
 import { navCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
-import { parseProductSort } from "@/lib/product-sort";
+import { parseProductSort, sortProducts } from "@/lib/product-sort";
 
 type Props = {
   searchParams: Promise<{ csort?: string }>;
@@ -41,7 +41,10 @@ export default async function HomePage({ searchParams }: Props) {
         {homeLookBanners.map((banner, i) => {
           const category = navCategories.find((c) => c.id === banner.categoryId);
           const products = banner.categoryId
-            ? getProductsByCategory(banner.categoryId).slice(0, 4)
+            ? sortProducts(getProductsByCategory(banner.categoryId), "new").slice(
+                0,
+                4,
+              )
             : [];
 
           return (

@@ -2466,13 +2466,7 @@ body:has(.pdp-dock) .back-to-top {
 .purchase-notice__grid {
   display: grid;
   gap: 1rem;
-}
-
-@media (min-width: 900px) {
-  .purchase-notice__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
+  grid-template-columns: 1fr;
 }
 
 .purchase-notice__card {
@@ -4465,10 +4459,18 @@ body:has(.pdp-dock) .back-to-top {
 }
 
 /* —— Product story sections —— */
+/* Match product-detail horizontal inset (1.25rem / 2rem) on all story blocks. */
 .product-story {
   margin: 3.5rem 0 1rem;
+  padding: 0 1.25rem;
   display: grid;
   gap: 0;
+}
+
+@media (min-width: 900px) {
+  .product-story {
+    padding: 0 2rem;
+  }
 }
 
 .product-story__block {
