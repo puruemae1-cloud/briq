@@ -1,22 +1,28 @@
 import { cookies } from "next/headers";
 import { getProduct, type Product, type ProductVariant } from "@/data/products";
+import { cartUnitPrice } from "@/lib/cart-price";
 
 export const CART_COOKIE = "briq-cart";
 
 export type CartLine = {
   productId: string;
   variantId?: string;
+  /** "no" or wrist size like "18.0" */
+  braceletCm?: string;
   qty: number;
 };
 
 export type CartItem = {
   product: Product;
   variant?: ProductVariant;
+  braceletCm?: string;
   qty: number;
 };
 
-function lineKey(productId: string, variantId?: string) {
-  return variantId ? `${productId}::${variantId}` : productId;
+function lineKey(productId: string, variantId?: string, braceletCm?: string) {
+  const v = variantId ?? "";
+  const b = braceletCm ?? "";
+  return `${productId}::${v}::${b}`;
 }
 
 export async function readCartLines(): Promise<CartLine[]> {
@@ -34,8 +40,12 @@ export async function readCartLines(): Promise<CartLine[]> {
       const qty = typeof r.qty === "number" && r.qty > 0 ? Math.floor(r.qty) : 0;
       const variantId =
         typeof r.variantId === "string" && r.variantId ? r.variantId : undefined;
+      const braceletCm =
+        typeof r.braceletCm === "string" && r.braceletCm
+          ? r.braceletCm
+          : undefined;
       if (!productId || qty <= 0) continue;
-      lines.push({ productId, variantId, qty });
+      lines.push({ productId, variantId, braceletCm, qty });
     }
     return lines;
   } catch {
@@ -62,7 +72,12 @@ export function resolveCartItems(lines: CartLine[]): CartItem[] {
       ? product.variants?.find((v) => v.id === line.variantId)
       : undefined;
     if (line.variantId && !variant) continue;
-    items.push({ product, variant, qty: line.qty });
+    items.push({
+      product,
+      variant,
+      braceletCm: line.braceletCm,
+      qty: line.qty,
+    });
   }
   return items;
 }
@@ -78,7 +93,7 @@ export async function getCartCount(): Promise<number> {
 
 export function cartSubtotal(items: CartItem[]): number {
   return items.reduce((sum, item) => {
-    const unit = item.variant?.price ?? item.product.price;
+    const unit = cartUnitPrice(item.product, item.variant, item.braceletCm);
     return sum + unit * item.qty;
   }, 0);
 }
@@ -88,17 +103,20 @@ export function upsertCartLine(
   productId: string,
   qty: number,
   variantId?: string,
+  braceletCm?: string,
 ): CartLine[] {
-  const key = lineKey(productId, variantId);
-  const existing = lines.find((l) => lineKey(l.productId, l.variantId) === key);
+  const key = lineKey(productId, variantId, braceletCm);
+  const existing = lines.find(
+    (l) => lineKey(l.productId, l.variantId, l.braceletCm) === key,
+  );
   if (existing) {
     return lines.map((l) =>
-      lineKey(l.productId, l.variantId) === key
+      lineKey(l.productId, l.variantId, l.braceletCm) === key
         ? { ...l, qty: l.qty + qty }
         : l,
     );
   }
-  return [...lines, { productId, variantId, qty }];
+  return [...lines, { productId, variantId, braceletCm, qty }];
 }
 
 export function setCartLineQty(
@@ -106,13 +124,18 @@ export function setCartLineQty(
   productId: string,
   qty: number,
   variantId?: string,
+  braceletCm?: string,
 ): CartLine[] {
-  const key = lineKey(productId, variantId);
+  const key = lineKey(productId, variantId, braceletCm);
   if (qty <= 0) {
-    return lines.filter((l) => lineKey(l.productId, l.variantId) !== key);
+    return lines.filter(
+      (l) => lineKey(l.productId, l.variantId, l.braceletCm) !== key,
+    );
   }
   return lines.map((l) =>
-    lineKey(l.productId, l.variantId) === key ? { ...l, qty } : l,
+    lineKey(l.productId, l.variantId, l.braceletCm) === key
+      ? { ...l, qty }
+      : l,
   );
 }
 
@@ -120,9 +143,12 @@ export function removeCartLine(
   lines: CartLine[],
   productId: string,
   variantId?: string,
+  braceletCm?: string,
 ): CartLine[] {
-  const key = lineKey(productId, variantId);
-  return lines.filter((l) => lineKey(l.productId, l.variantId) !== key);
+  const key = lineKey(productId, variantId, braceletCm);
+  return lines.filter(
+    (l) => lineKey(l.productId, l.variantId, l.braceletCm) !== key,
+  );
 }
 
 export function productHref(productId: string, variantId?: string) {

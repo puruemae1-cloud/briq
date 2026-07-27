@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { clearCart } from "@/app/cart/actions";
 import { formatKrw } from "@/data/products";
 import type { CartItem } from "@/lib/cart-server";
+import { cartUnitPrice } from "@/lib/cart-price";
+import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";
 import { usePurchases } from "@/lib/purchase-store";
 import {
   paymentMethods,
@@ -93,7 +95,7 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
   const markCouponUsed = useCouponStore((s) => s.markUsed);
   const detailRef = useRef<HTMLInputElement>(null);
   const subtotal = items.reduce((sum, i) => {
-    const unit = i.variant?.price ?? i.product.price;
+    const unit = cartUnitPrice(i.product, i.variant, i.braceletCm);
     return sum + unit * i.qty;
   }, 0);
 
@@ -314,16 +316,23 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
         updatedAt: new Date().toISOString(),
         paymentMethod:
           paymentMethods.find((m) => m.id === method)?.label ?? method,
-        lines: items.map((i) => ({
-          productId: i.product.id,
-          variantId: i.variant?.id,
-          nameKo: i.variant
+        lines: items.map((i) => {
+          const baseName = i.variant
             ? `${i.product.nameKo} · ${i.variant.nameKo}`
-            : i.product.nameKo,
-          qty: i.qty,
-          unitPrice: i.variant?.price ?? i.product.price,
-          image: i.variant?.image ?? i.product.image,
-        })),
+            : i.product.nameKo;
+          const nameKo =
+            i.product.braceletResize && i.braceletCm
+              ? `${baseName} · ${formatBraceletLabel(i.braceletCm)}`
+              : baseName;
+          return {
+            productId: i.product.id,
+            variantId: i.variant?.id,
+            nameKo,
+            qty: i.qty,
+            unitPrice: cartUnitPrice(i.product, i.variant, i.braceletCm),
+            image: i.variant?.image ?? i.product.image,
+          };
+        }),
       });
     }
 
@@ -345,13 +354,20 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
         address,
         customsCode: code,
         totalKrw: total,
-        lines: items.map((i) => ({
-          nameKo: i.variant
+        lines: items.map((i) => {
+          const baseName = i.variant
             ? `${i.product.nameKo} · ${i.variant.nameKo}`
-            : i.product.nameKo,
-          qty: i.qty,
-          unitPrice: i.variant?.price ?? i.product.price,
-        })),
+            : i.product.nameKo;
+          const nameKo =
+            i.product.braceletResize && i.braceletCm
+              ? `${baseName} · ${formatBraceletLabel(i.braceletCm)}`
+              : baseName;
+          return {
+            nameKo,
+            qty: i.qty,
+            unitPrice: cartUnitPrice(i.product, i.variant, i.braceletCm),
+          };
+        }),
       }),
     }).catch(() => {
       /* never block checkout on mail failure */

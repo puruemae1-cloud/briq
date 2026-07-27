@@ -1,14 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { addToCart, buyNow } from "@/app/cart/actions";
+import { BraceletResizeControls } from "@/components/BraceletResizeControls";
 import { ProductEngagement } from "@/components/ProductEngagement";
+import { ProductGallery } from "@/components/ProductGallery";
 import { ProductImage } from "@/components/ProductImage";
 import { ProductPurchaseNotice } from "@/components/ProductPurchaseNotice";
+import { ProductStorySections } from "@/components/ProductStorySections";
 import type { Product, ProductVariant } from "@/data/products";
 import {
   formatKrw,
   isProductInStock,
   isVariantInStock,
 } from "@/data/products";
+import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
 
 function ColorSwatches({
@@ -51,10 +58,8 @@ function ColorSwatches({
 }
 
 /**
- * Server-rendered product detail. Each colour has its own URL
- * (`?color=<id>`), so switching colours works even before/without
- * client-side JavaScript. Add-to-cart / buy-now use Server Actions
- * for the same reason.
+ * Product detail with optional bracelet resize + multi-image gallery.
+ * Add-to-cart / buy-now use Server Actions.
  */
 export function ProductDetail({
   product,
@@ -77,8 +82,13 @@ export function ProductDetail({
     ? isVariantInStock(product, selected.id)
     : productAvailable;
 
-  const unitPrice = selected?.price ?? product.price;
-  const image = resolveProductImage(product.image, selected?.image);
+  const [braceletCm, setBraceletCm] = useState("no");
+  const unitPrice = cartUnitPrice(product, selected, braceletCm);
+  const primaryImage = resolveProductImage(product.image, selected?.image);
+  const galleryImages =
+    product.images && product.images.length > 0
+      ? product.images
+      : [primaryImage];
   const soldOut = !selectedAvailable;
 
   const hiddenFields = (
@@ -87,30 +97,30 @@ export function ProductDetail({
       {selected ? (
         <input type="hidden" name="variantId" value={selected.id} />
       ) : null}
+      {product.braceletResize ? (
+        <input type="hidden" name="braceletCm" value={braceletCm} />
+      ) : null}
       <input type="hidden" name="qty" value="1" />
     </>
   );
 
+  const braceletBlock = product.braceletResize ? (
+    <BraceletResizeControls
+      config={product.braceletResize}
+      value={braceletCm}
+      onChange={setBraceletCm}
+    />
+  ) : null;
+
   return (
     <div className={`product-page${soldOut ? " product-page--sold-out" : ""}`}>
       <article className="product-detail">
-        <div className="product-detail__gallery">
-          <ProductImage
-            src={image}
-            alt={`${product.nameKo} ${selected?.nameKo ?? ""}`}
-            tone="detail"
-            className={`product-detail__media${soldOut ? " is-sold-out" : ""}`}
-            loading="eager"
-          >
-            {soldOut ? (
-              <span className="product-sold-out product-sold-out--detail" aria-label="Sold Out">
-                Sold Out
-              </span>
-            ) : selected ? (
-              <p className="product-detail__media-badge">{selected.nameKo}</p>
-            ) : null}
-          </ProductImage>
-        </div>
+        <ProductGallery
+          images={galleryImages}
+          alt={`${product.nameKo} ${selected?.nameKo ?? ""}`}
+          soldOut={soldOut}
+          badge={selected?.nameKo}
+        />
 
         <div className="product-detail__info">
           <p className="product-card__brand">{product.brand}</p>
@@ -118,7 +128,9 @@ export function ProductDetail({
           {selected ? (
             <p className="product-detail__color-name">
               {selected.nameKo}
-              {soldOut ? <span className="product-detail__stock"> · Sold Out</span> : null}
+              {soldOut ? (
+                <span className="product-detail__stock"> · Sold Out</span>
+              ) : null}
             </p>
           ) : soldOut ? (
             <p className="product-detail__color-name">
@@ -126,6 +138,12 @@ export function ProductDetail({
             </p>
           ) : null}
           <p className="product-detail__price">{formatKrw(unitPrice)}</p>
+          {product.braceletResize && braceletCm !== "no" ? (
+            <p className="product-detail__price-note">
+              기본가 {formatKrw(selected?.price ?? product.price)} + 리사이즈{" "}
+              {formatKrw(product.braceletResize.feeKrw)}
+            </p>
+          ) : null}
 
           {product.descriptionKo ? (
             <p className="product-detail__desc">{product.descriptionKo}</p>
@@ -147,6 +165,8 @@ export function ProductDetail({
               />
             </div>
           ) : null}
+
+          {!soldOut ? braceletBlock : null}
 
           {soldOut ? (
             <div className="product-detail__sold-panel" role="status">
@@ -178,11 +198,14 @@ export function ProductDetail({
         </div>
       </article>
 
+      {product.storySections?.length ? (
+        <ProductStorySections sections={product.storySections} />
+      ) : null}
+
       <ProductPurchaseNotice />
 
       <ProductEngagement productId={product.id} productName={product.nameKo} />
 
-      {/* Sticky bottom dock — CSS-only options panel, works without client JS */}
       <div className="pdp-dock" aria-label="구매 옵션">
         <input
           type="checkbox"
@@ -210,9 +233,17 @@ export function ProductDetail({
                 selectedId={selected?.id}
                 idPrefix="dock"
               />
-            ) : (
+            ) : product.braceletResize ? null : (
               <p className="pdp-dock__empty">선택 가능한 옵션이 없습니다.</p>
             )}
+            {!soldOut && product.braceletResize ? (
+              <BraceletResizeControls
+                config={product.braceletResize}
+                value={braceletCm}
+                onChange={setBraceletCm}
+                idPrefix="dock-bracelet"
+              />
+            ) : null}
             <label htmlFor="pdp-dock-options" className="pdp-dock__close">
               닫기
             </label>
@@ -220,7 +251,7 @@ export function ProductDetail({
         </div>
 
         <div className="pdp-dock__bar">
-          {allVariants.length > 0 ? (
+          {allVariants.length > 0 || product.braceletResize ? (
             <label htmlFor="pdp-dock-options" className="pdp-dock__opt">
               옵션 선택
             </label>
@@ -231,6 +262,9 @@ export function ProductDetail({
             <p className="pdp-dock__name">{product.nameKo}</p>
             <p className="pdp-dock__meta">
               {selected ? <span>{selected.nameKo}</span> : null}
+              {product.braceletResize && braceletCm !== "no" ? (
+                <span>{braceletCm}cm</span>
+              ) : null}
               <strong>{soldOut ? "Sold Out" : formatKrw(unitPrice)}</strong>
             </p>
           </div>

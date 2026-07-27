@@ -1,5 +1,14 @@
 import type { CategoryId, SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
+import { cwTwelvePicNMixProducts } from "@/data/cw-twelve-picnmix";
+
+export type ProductStorySection = {
+  titleKo: string;
+  bodyKo: string;
+  image?: string;
+  imageAlt?: string;
+  reverse?: boolean;
+};
 
 export type ProductVariant = {
   id: string;
@@ -47,6 +56,16 @@ export type Product = {
    * With variants, availability is derived from `variant.inStock`.
    */
   inStock?: boolean;
+  /**
+   * Optional bracelet resize (Christopher Ward).
+   * Selecting any cm size adds `feeKrw`; "no" keeps base price.
+   */
+  braceletResize?: {
+    feeKrw: number;
+    sizesCm: string[];
+  };
+  /** Long-form PDP story blocks (image + Korean copy). */
+  storySections?: ProductStorySection[];
 };
 
 /** KRW = GBP × 2100 × 1.06 + 20,000 (internal pricing — not shown on PDP) */
@@ -185,6 +204,7 @@ const chinoCapVariants: ProductVariant[] = [
 const chinoCapMinPrice = Math.min(...chinoCapVariants.map((v) => v.price));
 
 export const products: Product[] = [
+  ...cwTwelvePicNMixProducts,
   {
     id: "prl-chino-cap",
     name: "The Iconic Cotton Chino Ball Cap",

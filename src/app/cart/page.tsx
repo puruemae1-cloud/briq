@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { removeFromCart, updateCartQty } from "@/app/cart/actions";
 import { ProductImage } from "@/components/ProductImage";
+import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";
 import { formatKrw } from "@/data/products";
 import {
   cartSubtotal,
   getCartItems,
   productHref,
 } from "@/lib/cart-server";
+import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
 
 export default async function CartPage() {
@@ -36,19 +38,17 @@ export default async function CartPage() {
         </div>
       </div>
       <div className="panel cart-list">
-        {items.map(({ product, variant, qty }) => {
-          const unit = variant?.price ?? product.price;
+        {items.map(({ product, variant, braceletCm, qty }) => {
+          const unit = cartUnitPrice(product, variant, braceletCm);
           const image = resolveProductImage(product.image, variant?.image);
           const label = variant
             ? `${product.nameKo} · ${variant.nameKo}`
             : product.nameKo;
           const href = productHref(product.id, variant?.id);
+          const lineKey = `${product.id}::${variant?.id ?? "default"}::${braceletCm ?? "none"}`;
 
           return (
-            <div
-              key={`${product.id}::${variant?.id ?? "default"}`}
-              className="cart-item"
-            >
+            <div key={lineKey} className="cart-item">
               <Link href={href} className="cart-item__media">
                 <ProductImage src={image} alt={label} tone="cart" />
               </Link>
@@ -56,12 +56,20 @@ export default async function CartPage() {
                 <Link href={href} className="cart-item__title">
                   {label}
                 </Link>
+                {product.braceletResize && braceletCm ? (
+                  <p className="product-card__en" style={{ marginTop: "0.2rem" }}>
+                    {formatBraceletLabel(braceletCm)}
+                  </p>
+                ) : null}
                 <p className="product-card__en">{formatKrw(unit)}</p>
                 <div className="qty" style={{ marginTop: "0.5rem" }}>
                   <form action={updateCartQty}>
                     <input type="hidden" name="productId" value={product.id} />
                     {variant ? (
                       <input type="hidden" name="variantId" value={variant.id} />
+                    ) : null}
+                    {braceletCm ? (
+                      <input type="hidden" name="braceletCm" value={braceletCm} />
                     ) : null}
                     <input type="hidden" name="qty" value={String(qty - 1)} />
                     <button type="submit">−</button>
@@ -71,6 +79,9 @@ export default async function CartPage() {
                     <input type="hidden" name="productId" value={product.id} />
                     {variant ? (
                       <input type="hidden" name="variantId" value={variant.id} />
+                    ) : null}
+                    {braceletCm ? (
+                      <input type="hidden" name="braceletCm" value={braceletCm} />
                     ) : null}
                     <input type="hidden" name="qty" value={String(qty + 1)} />
                     <button type="submit">+</button>
@@ -83,6 +94,9 @@ export default async function CartPage() {
                   <input type="hidden" name="productId" value={product.id} />
                   {variant ? (
                     <input type="hidden" name="variantId" value={variant.id} />
+                  ) : null}
+                  {braceletCm ? (
+                    <input type="hidden" name="braceletCm" value={braceletCm} />
                   ) : null}
                   <button type="submit" className="icon-btn" style={{ marginLeft: "auto" }}>
                     삭제
