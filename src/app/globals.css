@@ -1017,6 +1017,29 @@ body:has(.nav-drawer-toggle:checked) {
   padding-inline-end: 0.35rem;
 }
 
+@media (max-width: 899px) {
+  /* Accessories (and all lookbook chips): wrap — no horizontal page fight */
+  .lookbook__rail .category-row,
+  .lookbook__rail .category-row--sub {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+    gap: 0.45rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.15rem;
+    padding: 0;
+    touch-action: manipulation;
+  }
+
+  .lookbook__rail .chip--sub {
+    font-size: 0.78rem;
+    padding: 0.42rem 0.7rem;
+  }
+}
+
 .look-banner {
   position: relative;
   isolation: isolate;

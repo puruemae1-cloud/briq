@@ -84,9 +84,9 @@ export function Collection100({
         </div>
 
         {sort === "orders" ? (
-          <CollectionOrdersGrid key={sort} products={list} />
+          <CollectionOrdersGrid key={sort} products={list} sort={sort} />
         ) : (
-          <CollectionReveal key={sort} products={list} />
+          <CollectionReveal key={sort} products={list} sort={sort} />
         )}
       </div>
     </section>

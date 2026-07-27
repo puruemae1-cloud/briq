@@ -36,7 +36,7 @@ export function BestItems() {
     ...fallback.filter((p) => !seen.has(p.id)),
   ].slice(0, MAX_ITEMS);
 
-  // Soft autoplay on fine pointers only — mobile is finger-scroll only
+  // Autoplay: desktop (fine pointer) only — mobile is finger-scroll only
   useEffect(() => {
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");

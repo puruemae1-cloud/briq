@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
  * Swipeable sports carousel with scroll-snap.
- * Autoplay only on fine pointers so mobile page scroll stays smooth.
+ * Autoplay: desktop (fine pointer) only — mobile is finger swipe only.
  */
 export type CarouselSlide = {
   id: string;
