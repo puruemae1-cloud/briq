@@ -1,0 +1,16 @@
+---
+description: Always commit and push so Vercel deploys after Briq changes
+alwaysApply: true
+---
+
+# Auto deploy (commit + push)
+
+After finishing meaningful code or content changes in this repo:
+
+1. **Commit** with a clear message (follow the project's git commit protocol / HEREDOC).
+2. **Push** to `origin` on the current branch (`git push -u origin HEAD` if needed) so **Vercel production deploy** runs.
+3. Do this **without waiting** for the user to ask — treat deploy as part of "done".
+4. Skip only if there is nothing to commit, or the user explicitly says not to commit/push.
+5. Never force-push to main/master, never amend pushed commits, never update git config.
+
+This preference overrides the default "only commit when asked" habit for the Briq project.
