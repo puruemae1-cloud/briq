@@ -172,6 +172,7 @@ export const cwTwelvePicNMixProducts = FLAVORS.map((f, index) => {
       sizesCm: [...CW_BRACELET_SIZES_CM],
     },
     storySections: STORY.map((s) => ({ ...s })),
+    editTier: "signature" as const,
   };
 });
 

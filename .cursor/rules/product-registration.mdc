@@ -1,5 +1,5 @@
 ---
-description: New products must set registeredAt; homepage and shop show newest first
+description: New products must set registeredAt and editTier for catalogue order / 100 Collection
 alwaysApply: true
 ---
 
@@ -19,3 +19,8 @@ When adding products:
 2. Prefer appending new SKUs to the hand-authored catalogue.
 3. Do not leave new products without `registeredAt` if they must appear above older stock.
 4. Collection filler SKUs (`briq-col-*`) keep older dates on purpose.
+5. Set `editTier` when the product should land in a specific 100 Collection bucket:
+   - `"signature"` — 하이엔드 / 100만 원 이상 대표 라인
+   - `"bestseller"` — 입문·데일리 / 첫 구매 전환 구간
+   - `"new"` — 신상품·시즌 기획
+   If omitted, the site infers from price / badge / recency (`src/lib/collection-edit.ts`).

@@ -3,16 +3,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { CollectionReveal } from "@/components/CollectionReveal";
 import type { Product } from "@/data/products";
-import type { ProductSort } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
 
 /** Re-ranks by live purchase counts once client store hydrates. */
 export function CollectionOrdersGrid({
   products,
-  sort = "orders",
 }: {
   products: Product[];
-  sort?: ProductSort;
 }) {
   const counts = usePurchases((s) => s.counts);
   const [mounted, setMounted] = useState(false);
@@ -34,5 +31,5 @@ export function CollectionOrdersGrid({
     });
   }, [products, counts, mounted]);
 
-  return <CollectionReveal products={list} sort={sort} />;
+  return <CollectionReveal products={list} />;
 }

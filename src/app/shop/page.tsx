@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BannerImage } from "@/components/BannerImage";
 import { ProductCard } from "@/components/ProductCard";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import {
@@ -23,6 +24,13 @@ const NEW_ARRIVALS_HERO_IMAGES = [
   "/banners/rot-event-1.jpg",
   "/banners/rot-event-2.jpg",
   "/banners/rot-event-3.jpg",
+];
+
+const ALL_PRODUCTS_HERO_IMAGES = [
+  "/banners/rot-hero-1.jpg",
+  "/banners/rot-hero-2.jpg",
+  "/banners/rot-hero-3.jpg",
+  "/banners/rot-hero-4.jpg",
 ];
 
 type Props = {
@@ -77,19 +85,24 @@ export default async function ShopPage({ searchParams }: Props) {
     ? activeGroup(current.children, sub)
     : undefined;
 
-  const showHero = category !== "all" || isNewArrivals;
+  const isAllCatalogue =
+    category === "all" && !sub && !params.q?.trim() && !isNewArrivals;
   const heroImage = isNewArrivals
     ? pickRotating(NEW_ARRIVALS_HERO_IMAGES, 1)
-    : showHero
-      ? pickShopHero(category, sub)
-      : "";
+    : isAllCatalogue
+      ? pickRotating(ALL_PRODUCTS_HERO_IMAGES, 0)
+      : pickShopHero(category, sub);
   const heroEyebrow = isNewArrivals
     ? "New Season Edit"
-    : (subNode?.labelKo ?? current?.labelKo ?? "Shop");
+    : isAllCatalogue
+      ? "Briq Catalogue"
+      : (subNode?.labelKo ?? current?.labelKo ?? "Shop");
   const heroTitle = isNewArrivals ? "New Arrivals" : title;
   const heroSupport = isNewArrivals
     ? "지금 영국에서 가장 핫한 신상 · 최신등록순"
-    : null;
+    : isAllCatalogue
+      ? "시그니처부터 입문까지 — 영국 셀렉션 전체"
+      : null;
 
   const sortBase = {
     category,
@@ -99,20 +112,24 @@ export default async function ShopPage({ searchParams }: Props) {
 
   return (
     <>
-      {showHero ? (
-        <section className="shop-hero" aria-label={heroTitle}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="shop-hero__img" src={heroImage} alt="" aria-hidden />
-          <div className="shop-hero__shade" aria-hidden />
-          <div className="shop-hero__content">
-            <p className="shop-hero__eyebrow">{heroEyebrow}</p>
-            <h1 className="shop-hero__title">{heroTitle}</h1>
-            {heroSupport ? (
-              <p className="shop-hero__support">{heroSupport}</p>
-            ) : null}
-          </div>
-        </section>
-      ) : null}
+      <section className="shop-hero" aria-label={heroTitle}>
+        <BannerImage
+          className="shop-hero__img"
+          src={heroImage}
+          alt=""
+          aria-hidden
+          loading="eager"
+          fetchPriority="high"
+        />
+        <div className="shop-hero__shade" aria-hidden />
+        <div className="shop-hero__content">
+          <p className="shop-hero__eyebrow">{heroEyebrow}</p>
+          <h1 className="shop-hero__title">{heroTitle}</h1>
+          {heroSupport ? (
+            <p className="shop-hero__support">{heroSupport}</p>
+          ) : null}
+        </div>
+      </section>
 
       <section className="section shop-browse">
         <div className="section__head">

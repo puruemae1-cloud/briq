@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BannerCarousel } from "@/components/BannerCarousel";
+import { BannerImage } from "@/components/BannerImage";
 import { pickRotating, type LookBanner } from "@/data/home-banners";
 
 export function LookBannerBlock({
@@ -28,8 +29,7 @@ export function LookBannerBlock({
         <BannerCarousel slides={slides} />
       ) : (
         <div className="look-banner__media" aria-hidden>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <BannerImage
             className="look-banner__img"
             src={image}
             alt=""

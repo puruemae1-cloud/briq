@@ -71,6 +71,12 @@ export type Product = {
    * Always set this when adding a product — newer timestamps rank first.
    */
   registeredAt?: string;
+  /**
+   * 100 Collection / homepage edit bucket.
+   * Set when registering: "signature" | "bestseller" | "new".
+   * If omitted, inferred from price / badge / recency.
+   */
+  editTier?: "signature" | "bestseller" | "new";
 };
 
 /** KRW = GBP × 2100 × 1.06 + 20,000 (internal pricing — not shown on PDP) */
@@ -223,6 +229,7 @@ export const products: Product[] = [
     images: chinoCapVariants.map((v) => v.image),
     accent: "#1a1a1a",
     badge: "New",
+    editTier: "new",
     size: "One Size",
     sku: "PO252P011",
     sourceUrl: chinoCapVariants[0].sourceUrl,
@@ -241,6 +248,7 @@ export const products: Product[] = [
     image: "/products/wool-coat.svg",
     accent: "#2C241C",
     badge: "Editor",
+    editTier: "signature",
   },
   {
     id: "briq-cashmere-wrap",
@@ -268,6 +276,7 @@ export const products: Product[] = [
     image: "/products/wool-coat.svg",
     accent: "#1A2428",
     badge: "Editor",
+    editTier: "signature",
   },
   {
     id: "briq-dress-watch",
@@ -281,6 +290,7 @@ export const products: Product[] = [
     image: "/products/cap.svg",
     accent: "#1A2428",
     badge: "Editor",
+    editTier: "signature",
   },
   {
     id: "briq-field-watch",
@@ -464,6 +474,7 @@ export const products: Product[] = [
     image: "/products/crossbody.svg",
     accent: "#3D4A3A",
     badge: "Best",
+    editTier: "bestseller",
   },
   {
     id: "briq-cap",

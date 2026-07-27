@@ -954,6 +954,20 @@ body:has(.nav-drawer-toggle:checked) {
     min-height: 14rem;
   }
 
+  .shop-hero__img,
+  .hero__bg,
+  .look-banner__img,
+  .collection-100__banner-img,
+  .banner-slide img {
+    /* Prefer GPU decode path; avoid scroll-linked filter/animation cost */
+    image-rendering: auto;
+    will-change: auto;
+  }
+
+  .shop-hero {
+    min-height: 12.5rem;
+  }
+
   .collection-100 .product-grid > * {
     content-visibility: auto;
     contain-intrinsic-size: auto 18rem;
@@ -1787,6 +1801,51 @@ body:has(.nav-drawer-toggle:checked) {
   padding-top: 1.35rem;
 }
 
+.collection-edit-tier {
+  margin-bottom: 2.25rem;
+}
+
+.collection-edit-tier:last-of-type {
+  margin-bottom: 0;
+}
+
+.collection-edit-tier__head {
+  margin-bottom: 1rem;
+  max-width: 40rem;
+}
+
+.collection-edit-tier__eyebrow {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display), serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(11, 18, 16, 0.48);
+}
+
+.collection-edit-tier__title {
+  margin: 0;
+  font-family: var(--font-classic), "Nanum Myeongjo", serif;
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.collection-edit-tier__purpose {
+  margin: 0.45rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(11, 18, 16, 0.55);
+}
+
+.collection-edit-tier--more {
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
 .collection-100__sentinel {
   display: grid;
   place-items: center;
@@ -1794,7 +1853,10 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .collection-100__more-btn {
-  min-width: 12rem;
+  min-width: min(100%, 22rem);
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
 }
 
 .collection-100__toolbar {

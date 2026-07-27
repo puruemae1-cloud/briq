@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { BannerImage } from "@/components/BannerImage";
 
 /**
  * Swipeable sports carousel with scroll-snap.
@@ -119,14 +120,11 @@ export function BannerCarousel({
             aria-label={`${slide.labelKo} 카테고리로 이동`}
             draggable={false}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <BannerImage
               src={slide.image}
               alt={slide.labelKo}
               style={slide.focal ? { objectPosition: slide.focal } : undefined}
               loading={i === 0 ? "eager" : "lazy"}
-              decoding="async"
-              draggable={false}
             />
             <span className="banner-slide__label">{slide.labelKo}</span>
           </a>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BestItems } from "@/components/BestItems";
+import { BannerImage } from "@/components/BannerImage";
 import {
   Collection100,
 } from "@/components/Collection100";
@@ -23,14 +24,13 @@ export default async function HomePage({ searchParams }: Props) {
     <>
       <section className="hero">
         <div className="hero__stage">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <BannerImage
             className="hero__bg"
             src={heroImage}
             alt=""
             aria-hidden
             fetchPriority="high"
-            decoding="async"
+            loading="eager"
           />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">

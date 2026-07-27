@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BannerImage } from "@/components/BannerImage";
 import { pickRotating } from "@/data/home-banners";
 import { getCollection100 } from "@/data/products";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
@@ -39,27 +40,24 @@ export function Collection100({
   return (
     <section className="collection-100" id="collection-100" aria-label="Briq 100 컬렉션">
       <div className="collection-100__banner">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <BannerImage
           className="collection-100__banner-img"
           src={banner}
           alt=""
           aria-hidden
           loading="lazy"
-          decoding="async"
         />
         <div className="collection-100__banner-shade" aria-hidden />
         <div className="collection-100__banner-content">
           <p className="collection-100__eyebrow">Briq Edit</p>
           <h2 className="collection-100__title">100 Collection</h2>
           <p className="collection-100__lead">
-            맞춤형 필터를 통해 Briq의 100가지 감각적인
-            <br className="br-mobile" /> 컬렉션을 더 깊이 있게 만나보세요.
+            프리미엄을 재정의하다 · 첫 구매자 만족도 1위 · 가장 먼저 만나는
+            신상품
           </p>
           <p className="collection-100__hint">
-            Briq의 모든 컬렉션이 궁금하시다면
-            <br className="br-mobile" /> 상단{" "}
-            <Link href="/shop">[Shop - 전체상품]</Link>을 클릭해 보세요.
+            하이엔드 · 입문 베스트 · 시즌 신상을 한눈에.
+            <br className="br-mobile" /> 원하는 만큼만 더 펼쳐 보세요.
           </p>
         </div>
       </div>
@@ -84,9 +82,9 @@ export function Collection100({
         </div>
 
         {sort === "orders" ? (
-          <CollectionOrdersGrid key={sort} products={list} sort={sort} />
+          <CollectionOrdersGrid key={sort} products={list} />
         ) : (
-          <CollectionReveal key={sort} products={list} sort={sort} />
+          <CollectionReveal key={sort} products={list} />
         )}
       </div>
     </section>
