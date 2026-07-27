@@ -45,7 +45,8 @@ export function BestItems() {
             <p className="best-live__eyebrow">Briq Edit</p>
             <h2 className="best-live__title">실시간 주문상품 10선</h2>
             <p className="best-live__lead">
-              지금 이 순간 주문이 이어지고 있는 상품들을 만나보세요.
+              지금 이 순간 주문이 이어지고 있는
+              <br className="br-mobile" /> 상품들을 만나보세요.
             </p>
           </div>
 

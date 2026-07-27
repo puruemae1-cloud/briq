@@ -40,7 +40,7 @@ export function HeaderSearch() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="header-search__input"
-        placeholder="상품명, 브랜드 검색"
+        placeholder="검색"
         enterKeyHint="search"
         autoComplete="off"
         autoCorrect="off"

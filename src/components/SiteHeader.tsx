@@ -21,22 +21,49 @@ function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number
   );
 }
 
-function MobileLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number }) {
+/** Accordion branches — collapsed until tapped. */
+function MobileBranches({
+  items,
+  depth = 0,
+}: {
+  items: NavChild[];
+  depth?: number;
+}) {
   return (
     <>
-      {items.map((child) => (
-        <div key={child.id}>
+      {items.map((child) =>
+        child.children?.length ? (
+          <details
+            key={child.id}
+            className={`mobile-drawer__branch mobile-drawer__branch--d${depth}`}
+          >
+            <summary className="mobile-drawer__summary">
+              <span>{child.labelKo}</span>
+              <ChevronDown
+                className="mobile-drawer__chevron"
+                size={16}
+                aria-hidden
+              />
+            </summary>
+            <div className="mobile-drawer__branch-body">
+              <a href={child.href} className="mobile-drawer__all">
+                전체 보기
+              </a>
+              <MobileBranches items={child.children} depth={depth + 1} />
+            </div>
+          </details>
+        ) : (
           <a
+            key={child.id}
             href={child.href}
-            className={depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2"}
+            className={
+              depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2"
+            }
           >
             {child.labelKo}
           </a>
-          {child.children?.length ? (
-            <MobileLinks items={child.children} depth={depth + 1} />
-          ) : null}
-        </div>
-      ))}
+        ),
+      )}
     </>
   );
 }
@@ -117,15 +144,34 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
               <X size={22} />
             </label>
           </div>
-          {/* Plain <a> so navigation resets the checkbox even without JS */}
           <nav className="mobile-drawer__nav">
-            <a href="/shop">Shop (전체상품)</a>
-            {navCategories.map((c) => (
-              <div key={c.id} className="mobile-drawer__group">
-                <a href={c.href}>{c.labelKo}</a>
-                {c.children?.length ? <MobileLinks items={c.children} /> : null}
-              </div>
-            ))}
+            <a href="/shop" className="mobile-drawer__top-link">
+              Shop (전체상품)
+            </a>
+            {navCategories.map((c) =>
+              c.children?.length ? (
+                <details key={c.id} className="mobile-drawer__group">
+                  <summary className="mobile-drawer__summary">
+                    <span>{c.labelKo}</span>
+                    <ChevronDown
+                      className="mobile-drawer__chevron"
+                      size={18}
+                      aria-hidden
+                    />
+                  </summary>
+                  <div className="mobile-drawer__branch-body">
+                    <a href={c.href} className="mobile-drawer__all">
+                      전체 보기
+                    </a>
+                    <MobileBranches items={c.children} />
+                  </div>
+                </details>
+              ) : (
+                <a key={c.id} href={c.href} className="mobile-drawer__top-link">
+                  {c.labelKo}
+                </a>
+              ),
+            )}
           </nav>
         </div>
       </div>
