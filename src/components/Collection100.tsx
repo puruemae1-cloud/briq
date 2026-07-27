@@ -1,24 +1,7 @@
-import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
 import { pickRotating } from "@/data/home-banners";
 import { getCollection100 } from "@/data/products";
-import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import { CollectionReveal } from "@/components/CollectionReveal";
-import {
-  PRODUCT_SORTS,
-  sortProducts,
-  type ProductSort,
-} from "@/lib/product-sort";
-
-/** @deprecated use ProductSort from product-sort */
-export type CollectionSort = ProductSort;
-
-export function sortCollection(
-  list: ReturnType<typeof getCollection100>,
-  sort: ProductSort,
-) {
-  return sortProducts(list, sort);
-}
 
 const collectionBannerImages = [
   "/banners/rot-luxury-1.jpg",
@@ -29,13 +12,9 @@ const collectionBannerImages = [
   "/banners/rot-event-2.jpg",
 ];
 
-export function Collection100({
-  sort = "new",
-}: {
-  sort?: ProductSort;
-}) {
+export function Collection100() {
   const banner = pickRotating(collectionBannerImages, 3);
-  const list = sortProducts(getCollection100(), sort);
+  const list = getCollection100();
 
   return (
     <section className="collection-100" id="collection-100" aria-label="Briq 100 컬렉션">
@@ -58,29 +37,7 @@ export function Collection100({
       </div>
 
       <div className="section collection-100__body">
-        <div className="collection-100__toolbar">
-          <div className="collection-100__sort" role="list" aria-label="상품 정렬">
-            {PRODUCT_SORTS.map((option) => (
-              <Link
-                key={option.id}
-                href={`/?csort=${option.id}#collection-100`}
-                scroll={false}
-                role="listitem"
-                className={`collection-100__sort-btn ${
-                  sort === option.id ? "is-active" : ""
-                }`}
-              >
-                {option.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {sort === "orders" ? (
-          <CollectionOrdersGrid key={sort} products={list} />
-        ) : (
-          <CollectionReveal key={sort} products={list} />
-        )}
+        <CollectionReveal products={list} />
       </div>
     </section>
   );

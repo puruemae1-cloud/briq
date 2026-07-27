@@ -9,15 +9,9 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
 import { navCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
-import { parseProductSort, sortProducts } from "@/lib/product-sort";
+import { sortProducts } from "@/lib/product-sort";
 
-type Props = {
-  searchParams: Promise<{ csort?: string }>;
-};
-
-export default async function HomePage({ searchParams }: Props) {
-  const params = await searchParams;
-  const collectionSort = parseProductSort(params.csort);
+export default async function HomePage() {
   const heroImage = pickRotating(heroImages);
 
   return (
@@ -139,7 +133,7 @@ export default async function HomePage({ searchParams }: Props) {
 
       <BestItems />
 
-      <Collection100 sort={collectionSort} />
+      <Collection100 />
     </>
   );
 }
