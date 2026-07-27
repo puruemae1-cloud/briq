@@ -50,7 +50,10 @@ export function Collection100({
         <div className="collection-100__banner-shade" aria-hidden />
         <div className="collection-100__banner-content">
           <p className="collection-100__eyebrow">Briq Edit</p>
-          <h2 className="collection-100__title">100 Collection</h2>
+          <h2 className="collection-100__title">
+            가장 사랑받는 베스트셀러부터
+            <br className="br-mobile" /> 플래그십 모델까지
+          </h2>
         </div>
       </div>
 

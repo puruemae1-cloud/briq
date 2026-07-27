@@ -1768,10 +1768,23 @@ body:has(.nav-drawer-toggle:checked) {
 
 .collection-100__title {
   margin: 0;
-  font-family: var(--font-display), serif;
-  font-size: clamp(1.85rem, 4.2vw, 3rem);
+  max-width: 18em;
+  font-family: var(--font-classic), "Nanum Myeongjo", serif;
+  font-size: clamp(1.35rem, 3.4vw, 2.35rem);
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+@media (min-width: 700px) {
+  .collection-100__title {
+    max-width: 22em;
+  }
+
+  .collection-100__title .br-mobile {
+    display: none;
+  }
 }
 
 .collection-100__lead {
