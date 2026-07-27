@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ProductCard } from "@/components/ProductCard";
+import { CollectionReveal } from "@/components/CollectionReveal";
 import type { Product } from "@/data/products";
 import { usePurchases } from "@/lib/purchase-store";
 
@@ -27,11 +27,5 @@ export function CollectionOrdersGrid({ products }: { products: Product[] }) {
     });
   }, [products, counts, mounted]);
 
-  return (
-    <div className="product-grid">
-      {list.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </div>
-  );
+  return <CollectionReveal products={list} />;
 }

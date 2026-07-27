@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ProductCard } from "@/components/ProductCard";
 import { pickRotating } from "@/data/home-banners";
-import { getCollection100, type Product } from "@/data/products";
+import { getCollection100 } from "@/data/products";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
+import { CollectionReveal } from "@/components/CollectionReveal";
 import {
   PRODUCT_SORTS,
   sortProducts,
@@ -12,7 +12,10 @@ import {
 /** @deprecated use ProductSort from product-sort */
 export type CollectionSort = ProductSort;
 
-export function sortCollection(list: Product[], sort: ProductSort): Product[] {
+export function sortCollection(
+  list: ReturnType<typeof getCollection100>,
+  sort: ProductSort,
+) {
   return sortProducts(list, sort);
 }
 
@@ -42,6 +45,8 @@ export function Collection100({
           src={banner}
           alt=""
           aria-hidden
+          loading="lazy"
+          decoding="async"
         />
         <div className="collection-100__banner-shade" aria-hidden />
         <div className="collection-100__banner-content">
@@ -79,13 +84,9 @@ export function Collection100({
         </div>
 
         {sort === "orders" ? (
-          <CollectionOrdersGrid products={list} />
+          <CollectionOrdersGrid key={sort} products={list} />
         ) : (
-          <div className="product-grid">
-            {list.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <CollectionReveal key={sort} products={list} />
         )}
       </div>
     </section>

@@ -55,16 +55,20 @@ export function BannerCarousel({
       setActive(next);
     };
 
-    // Update dots after the gesture settles when possible
     const onScrollEnd = () => sync();
+    el.addEventListener("scrollend", onScrollEnd);
+
+    // Continuous scroll sync only on desktop — mobile keeps page scroll smooth
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
     let raf = 0;
     const onScroll = () => {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(sync);
     };
+    if (fine.matches) {
+      el.addEventListener("scroll", onScroll, { passive: true });
+    }
 
-    el.addEventListener("scrollend", onScrollEnd);
-    el.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       cancelAnimationFrame(raf);
       el.removeEventListener("scrollend", onScrollEnd);
@@ -107,7 +111,7 @@ export function BannerCarousel({
         onTouchStart={pause}
         onWheel={pause}
       >
-        {slides.map((slide) => (
+        {slides.map((slide, i) => (
           <a
             key={slide.id}
             href={slide.href}
@@ -120,7 +124,7 @@ export function BannerCarousel({
               src={slide.image}
               alt={slide.labelKo}
               style={slide.focal ? { objectPosition: slide.focal } : undefined}
-              loading="lazy"
+              loading={i === 0 ? "eager" : "lazy"}
               decoding="async"
               draggable={false}
             />

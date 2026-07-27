@@ -24,7 +24,14 @@ export default async function HomePage({ searchParams }: Props) {
       <section className="hero">
         <div className="hero__stage">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="hero__bg" src={heroImage} alt="" aria-hidden />
+          <img
+            className="hero__bg"
+            src={heroImage}
+            alt=""
+            aria-hidden
+            fetchPriority="high"
+            decoding="async"
+          />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">
             <h1 className="hero__brand">Briq</h1>

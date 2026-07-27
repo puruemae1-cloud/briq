@@ -898,6 +898,72 @@ body:has(.nav-drawer-toggle:checked) {
     transition: none !important;
   }
 
+  /* —— Mobile homepage scroll: cut paint / nested-scroll conflict —— */
+  .banner-carousel__viewport {
+    scroll-snap-type: none !important;
+    overscroll-behavior-y: auto;
+    touch-action: pan-x pan-y;
+  }
+
+  .banner-slide {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
+  .best-live {
+    contain: none;
+  }
+
+  .best-carousel {
+    touch-action: pan-x pan-y;
+    scroll-snap-type: none !important;
+  }
+
+  .category-row {
+    overscroll-behavior-y: auto;
+  }
+
+  /* Hide 3rd/4th lookbook tiles on mobile — half the decode work */
+  .lookbook__rail .product-grid > *:nth-child(n + 3) {
+    display: none !important;
+  }
+
+  .look-banner {
+    min-height: 40svh;
+    max-height: 420px;
+  }
+
+  .look-banner__img {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .product-card--sold-out .product-frame__img,
+  .product-detail__media.is-sold-out .product-frame__img,
+  .product-detail__media.is-sold-out img {
+    filter: none !important;
+    opacity: 0.7;
+  }
+
+  .manifesto__inner,
+  .pricing-banner__inner {
+    background: #f3f2ed !important;
+  }
+
+  .collection-100 {
+    contain: none;
+  }
+
+  .collection-100__banner {
+    content-visibility: visible;
+    min-height: 14rem;
+  }
+
+  .collection-100 .product-grid > * {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 18rem;
+  }
+
   /* Keep 2-col catalog tiles fully inside the viewport */
   .lookbook__rail.section {
     padding-left: 1rem;
@@ -1381,8 +1447,6 @@ body:has(.nav-drawer-toggle:checked) {
   margin: 2rem 0 0;
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
   background: var(--paper);
-  /* Isolate paint so vertical page scroll past this block stays smooth */
-  contain: layout paint style;
 }
 
 .best-live__inner {
@@ -1594,7 +1658,6 @@ body:has(.nav-drawer-toggle:checked) {
 
 .collection-100 {
   margin-top: 0;
-  contain: layout style;
 }
 
 .collection-100__banner {
@@ -1604,9 +1667,6 @@ body:has(.nav-drawer-toggle:checked) {
   color: #f7f4ec;
   display: grid;
   align-items: end;
-  /* Keep banner from animating during page scroll */
-  content-visibility: auto;
-  contain-intrinsic-size: auto 18rem;
 }
 
 .collection-100__banner-img {
@@ -1709,9 +1769,14 @@ body:has(.nav-drawer-toggle:checked) {
   padding-top: 1.35rem;
 }
 
-.collection-100 .product-grid > * {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 22rem;
+.collection-100__sentinel {
+  display: grid;
+  place-items: center;
+  padding: 1.75rem 0 0.5rem;
+}
+
+.collection-100__more-btn {
+  min-width: 12rem;
 }
 
 .collection-100__toolbar {
