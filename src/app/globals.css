@@ -2927,6 +2927,280 @@ body:has(.pdp-dock) .back-to-top {
   background: #f3f2ed;
 }
 
+.review-media__video {
+  aspect-ratio: 16 / 10;
+}
+
+.review-perk {
+  margin: 0 0 1.35rem;
+  padding: 1.35rem 1.15rem 1.25rem;
+  border: 1px solid rgba(183, 161, 106, 0.35);
+  background:
+    linear-gradient(145deg, rgba(255, 252, 245, 0.95) 0%, rgba(247, 248, 245, 0.72) 100%);
+}
+
+.review-perk__eyebrow {
+  margin: 0 0 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.review-perk__title {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.review-perk__lead {
+  margin: 0.55rem 0 1rem;
+  color: rgba(11, 18, 16, 0.68);
+  line-height: 1.65;
+  font-size: 0.92rem;
+  max-width: 36rem;
+}
+
+.review-perk__tiers {
+  display: grid;
+  gap: 0.65rem;
+}
+
+@media (min-width: 640px) {
+  .review-perk__tiers {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+}
+
+.review-perk__tier {
+  padding: 0.95rem 0.9rem 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.review-perk__tier--featured {
+  border-color: rgba(183, 161, 106, 0.55);
+  background: rgba(183, 161, 106, 0.1);
+}
+
+.review-perk__tier-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(11, 18, 16, 0.55);
+}
+
+.review-perk__tier-value {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.review-perk__tier-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(11, 18, 16, 0.55);
+}
+
+.review-perk__note {
+  margin: 0.95rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(11, 18, 16, 0.58);
+}
+
+.review-perk__note a {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  font-weight: 650;
+}
+
+.review-form-perk {
+  margin: 0;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(31, 77, 58, 0.22);
+  background: rgba(31, 77, 58, 0.06);
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.engage-form__grid--2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .engage-form__grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.checkout-coupon {
+  padding: 1rem 0 0.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.checkout-coupon__title {
+  margin: 0 0 0.65rem;
+  font-weight: 650;
+}
+
+.checkout-coupon__empty {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(11, 18, 16, 0.55);
+}
+
+.checkout-coupon__list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.checkout-coupon__option {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.checkout-coupon__option span {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.checkout-coupon__option small {
+  color: rgba(11, 18, 16, 0.5);
+  font-size: 0.78rem;
+}
+
+.checkout-totals {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.checkout-totals__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.checkout-totals__row--discount {
+  color: var(--accent);
+  font-weight: 650;
+}
+
+.checkout-totals__row--pay {
+  margin-top: 0.25rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+}
+
+.checkout-totals .btn {
+  margin-top: 0.65rem;
+  justify-self: end;
+}
+
+.coupon-wallet__hero {
+  margin-bottom: 1.15rem;
+  padding: 1.15rem 1.05rem;
+  border: 1px solid rgba(183, 161, 106, 0.35);
+  background: rgba(255, 252, 245, 0.9);
+}
+
+.coupon-wallet__hero-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.coupon-wallet__hero-copy {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(11, 18, 16, 0.7);
+  font-size: 0.92rem;
+}
+
+.coupon-wallet {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.coupon-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.05rem 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.coupon-card.is-used {
+  opacity: 0.55;
+}
+
+.coupon-card__amount {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.coupon-card__label {
+  margin: 0.2rem 0 0;
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+
+.coupon-card__meta {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(11, 18, 16, 0.52);
+}
+
+.coupon-card__side {
+  display: grid;
+  align-content: start;
+  justify-items: end;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: rgba(11, 18, 16, 0.5);
+}
+
+.coupon-card__status {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.coupon-card.is-used .coupon-card__status {
+  color: rgba(11, 18, 16, 0.45);
+}
+
 .engage-admin-badge {
   font-size: 0.78rem;
   letter-spacing: 0.06em;
