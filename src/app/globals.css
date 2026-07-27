@@ -945,11 +945,6 @@ body:has(.nav-drawer-toggle:checked) {
     opacity: 0.7;
   }
 
-  .manifesto__inner,
-  .pricing-banner__inner {
-    background: #f3f2ed !important;
-  }
-
   .collection-100 {
     contain: none;
   }
