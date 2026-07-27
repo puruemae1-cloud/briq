@@ -7,6 +7,7 @@ import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 const memberLinks = [
   { href: "/account", label: "마이페이지", exact: true },
   { href: "/account/orders", label: "주문·배송" },
+  { href: "/account/coupons", label: "쿠폰함" },
   { href: "/account/profile", label: "통관·배송정보" },
   { href: "/cart", label: "장바구니" },
 ];

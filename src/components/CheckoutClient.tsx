@@ -18,6 +18,7 @@ import {
   saveCheckoutProfile,
 } from "@/lib/checkout-profile";
 import { useAuthStore } from "@/lib/auth-store";
+import { useCouponStore } from "@/lib/coupon-store";
 import { useOrderStore } from "@/lib/order-store";
 
 type DaumPostcodeData = {
@@ -88,8 +89,10 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
   const user = useAuthStore((s) => s.currentUser());
   const updateProfile = useAuthStore((s) => s.updateProfile);
   const addOrder = useOrderStore((s) => s.addOrder);
+  const coupons = useCouponStore((s) => s.coupons);
+  const markCouponUsed = useCouponStore((s) => s.markUsed);
   const detailRef = useRef<HTMLInputElement>(null);
-  const total = items.reduce((sum, i) => {
+  const subtotal = items.reduce((sum, i) => {
     const unit = i.variant?.price ?? i.product.price;
     return sum + unit * i.qty;
   }, 0);
@@ -105,6 +108,7 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
   const [profileLoaded, setProfileLoaded] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [selectedCouponId, setSelectedCouponId] = useState<string>("");
 
   const orderId = useMemo(
     () => `BRIQ-${Date.now().toString(36).toUpperCase()}`,
@@ -116,6 +120,37 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
     name.trim().length > 0 &&
     PHONE_RE.test(`010-${formatPhoneTail(phoneTail)}`) &&
     isValidCustomsCode(customsCode);
+
+  const availableCoupons = useMemo(() => {
+    const key = email.trim().toLowerCase() || user?.email?.toLowerCase() || "";
+    return coupons
+      .filter((c) => c.status === "available")
+      .filter((c) => {
+        if (user?.id && c.userId === user.id) return true;
+        if (key && c.ownerEmail === key) return true;
+        return false;
+      })
+      .sort((a, b) => b.amountKrw - a.amountKrw);
+  }, [coupons, email, user?.email, user?.id]);
+
+  const selectedCoupon =
+    availableCoupons.find((c) => c.id === selectedCouponId) ?? null;
+  const discount = selectedCoupon
+    ? Math.min(selectedCoupon.amountKrw, subtotal)
+    : 0;
+  const total = Math.max(0, subtotal - discount);
+
+  useEffect(() => {
+    if (!selectedCouponId && availableCoupons[0]) {
+      setSelectedCouponId(availableCoupons[0].id);
+    }
+    if (
+      selectedCouponId &&
+      !availableCoupons.some((c) => c.id === selectedCouponId)
+    ) {
+      setSelectedCouponId(availableCoupons[0]?.id ?? "");
+    }
+  }, [availableCoupons, selectedCouponId]);
 
   useEffect(() => {
     loadDaumPostcode().catch(() => {
@@ -246,6 +281,10 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
       setBusy(false);
       setError(result.message);
       return;
+    }
+
+    if (selectedCoupon) {
+      markCouponUsed(selectedCoupon.id, orderId);
     }
 
     // Remember PCCC + shipping for the next checkout on this device
@@ -491,14 +530,57 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
           </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <strong>결제 금액 {formatKrw(total)}</strong>
+        <div className="checkout-coupon">
+          <p className="checkout-coupon__title">리뷰 쿠폰</p>
+          {availableCoupons.length === 0 ? (
+            <p className="checkout-coupon__empty">
+              사용 가능한 쿠폰이 없습니다. 리뷰 작성 시 텍스트 {formatKrw(3000)} /
+              포토·영상 {formatKrw(5000)} 쿠폰이 자동 지급됩니다.
+            </p>
+          ) : (
+            <div className="checkout-coupon__list">
+              <label className="checkout-coupon__option">
+                <input
+                  type="radio"
+                  name="coupon"
+                  checked={!selectedCouponId}
+                  onChange={() => setSelectedCouponId("")}
+                />
+                <span>쿠폰 사용 안 함</span>
+              </label>
+              {availableCoupons.map((c) => (
+                <label key={c.id} className="checkout-coupon__option">
+                  <input
+                    type="radio"
+                    name="coupon"
+                    checked={selectedCouponId === c.id}
+                    onChange={() => setSelectedCouponId(c.id)}
+                  />
+                  <span>
+                    <strong>{formatKrw(c.amountKrw)}</strong> · {c.label}
+                    <small>{c.productName}</small>
+                  </span>
+                </label>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="checkout-totals">
+          <div className="checkout-totals__row">
+            <span>상품 합계</span>
+            <span>{formatKrw(subtotal)}</span>
+          </div>
+          {discount > 0 ? (
+            <div className="checkout-totals__row checkout-totals__row--discount">
+              <span>쿠폰 할인</span>
+              <span>-{formatKrw(discount)}</span>
+            </div>
+          ) : null}
+          <div className="checkout-totals__row checkout-totals__row--pay">
+            <strong>결제 금액</strong>
+            <strong>{formatKrw(total)}</strong>
+          </div>
           <button type="submit" className="btn btn-solid" disabled={busy || !canPay}>
             {busy ? "처리 중…" : "결제하기"}
           </button>

@@ -15,10 +15,14 @@ export type ReviewItem = {
   productId: string;
   productName: string;
   authorName: string;
+  authorEmail?: string;
+  userId?: string;
   rating: number;
   body: string;
   media: ReviewMedia[];
   createdAt: string;
+  couponId?: string;
+  couponAmountKrw?: number;
 };
 
 type ReviewState = {

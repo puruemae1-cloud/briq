@@ -1,7 +1,15 @@
 "use client";
 
-import { FormEvent, useMemo, useRef, useState } from "react";
-import { ImagePlus, Star, Video } from "lucide-react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
+import { Gift, ImagePlus, Star, Video } from "lucide-react";
+import { formatKrw } from "@/data/products";
+import { useAuthStore } from "@/lib/auth-store";
+import {
+  REVIEW_COUPON_MEDIA,
+  REVIEW_COUPON_TEXT,
+  useCouponStore,
+} from "@/lib/coupon-store";
 import {
   readMediaFile,
   useReviewStore,
@@ -17,16 +25,26 @@ export function ProductReviews({
 }) {
   const items = useReviewStore((s) => s.items);
   const add = useReviewStore((s) => s.add);
+  const issueCoupon = useCouponStore((s) => s.issueForReview);
+  const user = useAuthStore((s) => s.currentUser());
   const fileRef = useRef<HTMLInputElement>(null);
 
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [rating, setRating] = useState(5);
   const [body, setBody] = useState("");
   const [media, setMedia] = useState<ReviewMedia[]>([]);
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (user) {
+      setName(user.name || "");
+      setEmail(user.email || "");
+    }
+  }, [user]);
 
   const list = useMemo(
     () => items.filter((i) => i.productId === productId),
@@ -37,6 +55,9 @@ export function ProductReviews({
     list.length === 0
       ? 0
       : list.reduce((sum, r) => sum + r.rating, 0) / list.length;
+
+  const previewAmount =
+    media.length > 0 ? REVIEW_COUPON_MEDIA : REVIEW_COUPON_TEXT;
 
   async function onPickFiles(files: FileList | null) {
     if (!files?.length) return;
@@ -71,25 +92,44 @@ export function ProductReviews({
     setNotice(null);
 
     const authorName = name.trim();
+    const authorEmail = email.trim().toLowerCase();
     const text = body.trim();
     if (!authorName || !text) {
       setError("이름과 리뷰 내용을 입력해 주세요.");
       return;
     }
+    if (!authorEmail || !authorEmail.includes("@")) {
+      setError("쿠폰 지급을 위해 이메일을 입력해 주세요.");
+      return;
+    }
 
     setBusy(true);
     const reviewId = `rv-${Date.now()}`;
-    const item = {
+    const hasMedia = media.length > 0;
+
+    const coupon = issueCoupon({
+      reviewId,
+      productId,
+      productName,
+      ownerEmail: authorEmail,
+      userId: user?.id,
+      hasMedia,
+    });
+
+    add({
       id: reviewId,
       productId,
       productName,
       authorName,
+      authorEmail,
+      userId: user?.id,
       rating,
       body: text,
       media,
       createdAt: new Date().toISOString(),
-    };
-    add(item);
+      couponId: coupon.id,
+      couponAmountKrw: coupon.amountKrw,
+    });
 
     try {
       await fetch("/api/notify/review", {
@@ -114,11 +154,51 @@ export function ProductReviews({
     setRating(5);
     setOpen(false);
     setBusy(false);
-    setNotice("리뷰가 등록되었습니다. 소중한 후기 감사합니다.");
+    setNotice(
+      `리뷰가 등록되었습니다. ${formatKrw(coupon.amountKrw)} 할인 쿠폰이 지급되었습니다. 다음 결제 시 자동으로 적용할 수 있습니다.`,
+    );
   }
 
   return (
     <div className="engage-panel">
+      <aside className="review-perk" aria-label="리뷰 혜택 안내">
+        <p className="review-perk__eyebrow">
+          <Gift size={14} aria-hidden /> Review Privilege
+        </p>
+        <h3 className="review-perk__title">리뷰 감사 쿠폰</h3>
+        <p className="review-perk__lead">
+          소중한 후기를 남겨 주시면, 다음 구매에 바로 쓸 수 있는 할인 쿠폰을
+          자동 지급해 드립니다.
+        </p>
+        <div className="review-perk__tiers">
+          <div className="review-perk__tier">
+            <p className="review-perk__tier-label">텍스트 리뷰</p>
+            <p className="review-perk__tier-value">
+              {formatKrw(REVIEW_COUPON_TEXT)}
+            </p>
+            <p className="review-perk__tier-hint">다음 결제 즉시 할인</p>
+          </div>
+          <div className="review-perk__tier review-perk__tier--featured">
+            <p className="review-perk__tier-label">포토 · 영상 리뷰</p>
+            <p className="review-perk__tier-value">
+              {formatKrw(REVIEW_COUPON_MEDIA)}
+            </p>
+            <p className="review-perk__tier-hint">사진 또는 동영상 첨부 시</p>
+          </div>
+        </div>
+        <p className="review-perk__note">
+          쿠폰은 리뷰에 입력하신 이메일(또는 로그인 계정)로 지급되며, 마이페이지
+          · 쿠폰함과 결제 단계에서 확인할 수 있습니다.
+          {!user ? (
+            <>
+              {" "}
+              <Link href="/account/login">로그인</Link>하시면 쿠폰 관리가 더
+              편리합니다.
+            </>
+          ) : null}
+        </p>
+      </aside>
+
       <div className="engage-panel__toolbar">
         <div className="review-summary">
           <p className="review-summary__score">
@@ -141,6 +221,11 @@ export function ProductReviews({
 
       {open ? (
         <form className="engage-form" onSubmit={onSubmit}>
+          <p className="review-form-perk">
+            이번 리뷰 예상 쿠폰 · <strong>{formatKrw(previewAmount)}</strong>
+            {media.length > 0 ? " (포토·영상)" : " (텍스트)"}
+          </p>
+
           <div className="review-stars" role="radiogroup" aria-label="별점">
             {[1, 2, 3, 4, 5].map((n) => (
               <button
@@ -156,16 +241,29 @@ export function ProductReviews({
             ))}
           </div>
 
-          <label className="engage-field">
-            <span>이름</span>
-            <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              placeholder="홍길동"
-              autoComplete="name"
-            />
-          </label>
+          <div className="engage-form__grid engage-form__grid--2">
+            <label className="engage-field">
+              <span>이름</span>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                placeholder="홍길동"
+                autoComplete="name"
+              />
+            </label>
+            <label className="engage-field">
+              <span>이메일 (쿠폰 지급)</span>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                placeholder="you@email.com"
+                autoComplete="email"
+              />
+            </label>
+          </div>
 
           <label className="engage-field">
             <span>리뷰</span>
@@ -197,7 +295,8 @@ export function ProductReviews({
               사진 · 동영상 첨부
             </button>
             <p className="engage-form__hint">
-              사진 최대 4장 · 동영상 1개(8MB 이하)
+              사진/영상 첨부 시 {formatKrw(REVIEW_COUPON_MEDIA)} 쿠폰 · 텍스트만
+              작성 시 {formatKrw(REVIEW_COUPON_TEXT)} 쿠폰
             </p>
           </div>
 
@@ -229,7 +328,9 @@ export function ProductReviews({
           ) : null}
 
           <button type="submit" className="btn btn-solid" disabled={busy}>
-            {busy ? "등록 중…" : "리뷰 등록"}
+            {busy
+              ? "등록 중…"
+              : `리뷰 등록 · ${formatKrw(previewAmount)} 쿠폰 받기`}
           </button>
         </form>
       ) : null}
@@ -258,6 +359,11 @@ export function ProductReviews({
                 <time dateTime={item.createdAt}>
                   {formatDate(item.createdAt)}
                 </time>
+                {item.media.length > 0 ? (
+                  <span className="engage-pill engage-pill--public">포토·영상</span>
+                ) : (
+                  <span className="engage-pill">텍스트</span>
+                )}
               </div>
               <p className="engage-item__body">{item.body}</p>
               {item.media.length > 0 ? (

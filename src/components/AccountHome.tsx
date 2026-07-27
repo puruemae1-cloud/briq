@@ -87,6 +87,13 @@ export function AccountHome() {
                     : "아직 주문이 없습니다"}
                 </p>
               </Link>
+              <Link href="/account/coupons" className="account-card">
+                <p className="account-card__label">쿠폰함</p>
+                <p className="account-card__value">리뷰 혜택</p>
+                <p className="account-card__hint">
+                  텍스트 3,000원 · 포토·영상 5,000원
+                </p>
+              </Link>
               <Link href="/account/profile" className="account-card">
                 <p className="account-card__label">통관부호</p>
                 <p className="account-card__value">
