@@ -39,6 +39,7 @@ html {
   scroll-behavior: auto;
   max-width: 100%;
   -webkit-text-size-adjust: 100%;
+  overscroll-behavior-x: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -53,10 +54,12 @@ body {
   width: 100%;
   max-width: 100%;
   /*
-    Do NOT set overflow-x on html/body. Pairing overflow-x:clip|hidden with
-    overflow-y:visible makes many engines promote body into a nested
-    scrollport — iOS then stutters when reversing scroll direction.
+    Do NOT set overflow-x:clip|hidden on shell/main alone.
+    One-axis clip forces the other axis to auto → nested scrollport,
+    and the page then pans freely in all directions on iOS.
+    Keep width ≤ 100vw instead, and only contain overscroll on X.
   */
+  overscroll-behavior-x: none;
   color: var(--ink);
   background: #f7f8f5;
   font-family: var(--font-body), sans-serif;
@@ -89,7 +92,6 @@ img {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  overflow-x: clip;
 }
 
 .shell__main {
@@ -97,7 +99,6 @@ img {
   min-width: 0;
   width: 100%;
   max-width: 100%;
-  overflow-x: clip;
 }
 
 .site-header {
@@ -874,20 +875,14 @@ body:has(.nav-drawer-toggle:checked) {
   .lookbook,
   .lookbook__block,
   .lookbook__rail {
-    overflow-x: clip;
     max-width: 100%;
+    min-width: 0;
   }
 
   /* content-visibility paint containment was clipping product grids + chip rails */
   .lookbook__block {
     content-visibility: visible;
     contain: none;
-  }
-
-  .shell,
-  .shell__main {
-    overflow-x: clip;
-    max-width: 100%;
   }
 
   .back-to-top {
@@ -931,14 +926,12 @@ body:has(.nav-drawer-toggle:checked) {
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  overflow-x: clip;
 }
 
 .lookbook__block {
   display: grid;
   min-width: 0;
   max-width: 100%;
-  overflow-x: clip;
 }
 
 .lookbook__rail {
@@ -1771,7 +1764,6 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  touch-action: pan-x;
 }
 
 .shop-browse__layout {
