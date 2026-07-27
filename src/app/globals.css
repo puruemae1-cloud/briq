@@ -872,9 +872,10 @@ body:has(.nav-drawer-toggle:checked) {
     overflow-x: visible;
   }
 
+  /* content-visibility paint containment was clipping product grids + chip rails */
   .lookbook__block {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 720px;
+    content-visibility: visible;
+    contain: none;
   }
 
   .back-to-top {
@@ -905,6 +906,34 @@ body:has(.nav-drawer-toggle:checked) {
 .lookbook__rail {
   padding-top: 1.75rem;
   padding-bottom: 1.25rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lookbook__rail .product-grid {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Edge-to-edge finger scroll for subcategory chips inside section padding */
+.lookbook__rail .category-row {
+  margin-inline: -1.25rem;
+  padding-inline: 1.25rem;
+  padding-bottom: 0.55rem;
+  scroll-padding-inline: 1.25rem;
+  width: calc(100% + 2.5rem);
+  max-width: none;
+  touch-action: pan-x;
+}
+
+@media (min-width: 900px) {
+  .lookbook__rail .category-row {
+    margin-inline: -2rem;
+    padding-inline: 2rem;
+    scroll-padding-inline: 2rem;
+    width: calc(100% + 4rem);
+  }
 }
 
 .look-banner {
@@ -1711,6 +1740,7 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  touch-action: pan-x;
 }
 
 .shop-browse__layout {
@@ -1823,6 +1853,10 @@ body:has(.nav-drawer-toggle:checked) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 @media (min-width: 760px) {
@@ -1844,6 +1878,8 @@ body:has(.nav-drawer-toggle:checked) {
   gap: 0;
   height: 100%;
   min-height: 100%;
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* Shared catalog photo frame — used by ProductImage on every surface */
@@ -3524,7 +3560,7 @@ body:has(.pdp-dock) .back-to-top {
 
 .customs-alert {
   margin-top: 0.35rem;
-  padding: 0.95rem 1rem;
+  padding: 0.9rem 0.85rem;
   border: 1px solid rgba(139, 46, 46, 0.22);
   background: rgba(139, 46, 46, 0.05);
   display: grid;
@@ -3533,16 +3569,31 @@ body:has(.pdp-dock) .back-to-top {
 
 .customs-alert__title {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--danger);
+  word-break: keep-all;
 }
 
 .customs-alert p {
   margin: 0;
-  font-size: 0.84rem;
-  line-height: 1.6;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
   color: rgba(11, 18, 16, 0.78);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+@media (min-width: 900px) {
+  .customs-alert {
+    padding: 0.95rem 1.05rem;
+  }
+
+  .customs-alert p {
+    font-size: 0.84rem;
+  }
 }
 
 .pay-methods {

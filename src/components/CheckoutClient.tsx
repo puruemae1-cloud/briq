@@ -528,12 +528,12 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
           <div className="customs-alert" role="note">
             <p className="customs-alert__title">[필독] 통관 정보 일치 안내</p>
             <p>
-              관세청 정책에 따라 수령인 성명, 전화번호, 개인통관고유부호의 명이 모두
-              동일해야 정상 통관이 가능합니다.
+              관세청 정책에 따라 수령인 성명·전화번호·개인통관고유부호의 명의가
+              모두 동일해야 정상 통관이 가능합니다.
             </p>
             <p>
-              정보가 불일치할 경우 통관 지연 및 추가 비용이 발생할 수 있으니, 명의가
-              일치하는지 반드시 확인해 주세요.
+              정보가 불일치할 경우 통관 지연 및 추가 비용이 발생할 수 있으니
+              명의 일치 여부를 반드시 확인해 주세요.
             </p>
           </div>
         </div>
