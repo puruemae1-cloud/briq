@@ -18,8 +18,8 @@ export const EDIT_TIER_COPY: Record<EditTier, { titleKo: string }> = {
 const SIGNATURE_MIN = 1_000_000;
 const BESTSELLER_MIN = 100_000;
 const BESTSELLER_MAX = 300_000;
-/** How many newest SKUs to surface in the new-arrivals edit. */
-const NEW_LIMIT = 12;
+/** Fixed grid size for every 100 Collection section. */
+export const SECTION_LIMIT = 20;
 
 /**
  * When true, bestseller requires ≥1 recorded payment.
@@ -36,6 +36,33 @@ function byNewest(a: Product, b: Product) {
   return registeredMs(b) - registeredMs(a) || b.price - a.price;
 }
 
+function takeExact(
+  preferred: Product[],
+  pool: Product[],
+  limit: number,
+): Product[] {
+  const out: Product[] = [];
+  const used = new Set<string>();
+
+  for (const p of preferred) {
+    if (out.length >= limit) break;
+    if (used.has(p.id)) continue;
+    used.add(p.id);
+    out.push(p);
+  }
+
+  if (out.length < limit) {
+    for (const p of [...pool].sort(byNewest)) {
+      if (out.length >= limit) break;
+      if (used.has(p.id)) continue;
+      used.add(p.id);
+      out.push(p);
+    }
+  }
+
+  return out;
+}
+
 export type CuratedEdit = {
   signature: Product[];
   bestseller: Product[];
@@ -43,10 +70,10 @@ export type CuratedEdit = {
 };
 
 /**
- * Build the three 100 Collection sections.
- * - signature: ≥100만 원, 최신등록순
+ * Build the three 100 Collection sections — each exactly SECTION_LIMIT (20).
+ * - signature: ≥100만 원, 최신등록순 (부족 시 전체에서 최신으로 채움)
  * - bestseller: 10~30만 원 (결제 조건은 BESTSELLER_REQUIRE_PURCHASE)
- * - new: catalogue-wide 최신등록순 (시그니처와 중복 허용 — 최신 CW 등이 맨 위)
+ * - new: catalogue-wide 최신등록순 (시그니처와 중복 허용)
  *
  * Always set `registeredAt` on new products so 신상품 큐레이션 stays correct.
  */
@@ -54,11 +81,11 @@ export function curateCollectionEdit(
   products: Product[],
   purchaseCounts: Record<string, number> = {},
 ): CuratedEdit {
-  const signature = products
+  const signaturePreferred = products
     .filter((p) => p.price >= SIGNATURE_MIN)
     .sort(byNewest);
 
-  const bestseller = products
+  const bestsellerPreferred = products
     .filter((p) => {
       if (p.price < BESTSELLER_MIN || p.price > BESTSELLER_MAX) return false;
       if (!BESTSELLER_REQUIRE_PURCHASE) return true;
@@ -73,8 +100,9 @@ export function curateCollectionEdit(
       return byNewest(a, b);
     });
 
-  // Independent of other sections — newest registered always rise to the top.
-  const newItems = [...products].sort(byNewest).slice(0, NEW_LIMIT);
+  const signature = takeExact(signaturePreferred, products, SECTION_LIMIT);
+  const bestseller = takeExact(bestsellerPreferred, products, SECTION_LIMIT);
+  const newItems = [...products].sort(byNewest).slice(0, SECTION_LIMIT);
 
   return { signature, bestseller, newItems };
 }
