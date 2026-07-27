@@ -3,9 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
- * Swipeable sports carousel with scroll-snap + soft autoplay.
- * Native horizontal scroll avoids continuous CSS transforms that
- * fight vertical page scrolling on mobile.
+ * Swipeable sports carousel with scroll-snap.
+ * Autoplay only on fine pointers so mobile page scroll stays smooth.
  */
 export type CarouselSlide = {
   id: string;
@@ -46,36 +45,43 @@ export function BannerCarousel({
     const el = viewportRef.current;
     if (!el) return;
 
+    const sync = () => {
+      const w = el.clientWidth;
+      if (!w) return;
+      const i = Math.round(el.scrollLeft / w);
+      const next = Math.max(0, Math.min(slides.length - 1, i));
+      if (next === activeRef.current) return;
+      activeRef.current = next;
+      setActive(next);
+    };
+
+    // Update dots after the gesture settles when possible
+    const onScrollEnd = () => sync();
     let raf = 0;
     const onScroll = () => {
       cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const w = el.clientWidth;
-        if (!w) return;
-        const i = Math.round(el.scrollLeft / w);
-        const next = Math.max(0, Math.min(slides.length - 1, i));
-        activeRef.current = next;
-        setActive(next);
-      });
+      raf = requestAnimationFrame(sync);
     };
 
+    el.addEventListener("scrollend", onScrollEnd);
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       cancelAnimationFrame(raf);
+      el.removeEventListener("scrollend", onScrollEnd);
       el.removeEventListener("scroll", onScroll);
     };
   }, [slides.length]);
 
   useEffect(() => {
     if (slides.length < 2) return;
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (reduce.matches) return;
+    if (!fine.matches || reduce.matches) return;
 
     const id = window.setInterval(() => {
       if (Date.now() < pausedUntil.current) return;
       const el = viewportRef.current;
       if (!el) return;
-      // Pause when off-screen — avoids compositor work while scrolling the page
       const rect = el.getBoundingClientRect();
       if (rect.bottom < 0 || rect.top > window.innerHeight) return;
 
@@ -114,7 +120,8 @@ export function BannerCarousel({
               src={slide.image}
               alt={slide.labelKo}
               style={slide.focal ? { objectPosition: slide.focal } : undefined}
-              loading="eager"
+              loading="lazy"
+              decoding="async"
               draggable={false}
             />
             <span className="banner-slide__label">{slide.labelKo}</span>

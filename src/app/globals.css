@@ -35,11 +35,9 @@
 }
 
 html {
-  /* Smooth scroll only on fine pointers — on touch it makes upward scroll stutter */
+  /* Never use smooth scrolling on touch — it stutters on direction changes */
   scroll-behavior: auto;
-  overflow-x: clip;
   max-width: 100%;
-  /* Prefer compositor-friendly vertical scrolling on iOS */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -54,17 +52,23 @@ body {
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
-  /* Avoid overflow-x:hidden on body — it makes iOS treat body as the
-     scrollport and upward momentum scrolling becomes choppy. */
-  overflow-x: clip;
-  overscroll-behavior-x: none;
-  overscroll-behavior-y: auto;
+  /*
+    Do NOT set overflow-x on html/body. Pairing overflow-x:clip|hidden with
+    overflow-y:visible makes many engines promote body into a nested
+    scrollport — iOS then stutters when reversing scroll direction.
+  */
   color: var(--ink);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(31, 77, 58, 0.12), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(183, 161, 106, 0.14), transparent 50%),
-    linear-gradient(180deg, #f7f8f5 0%, #eef1ec 100%);
+  background: #f7f8f5;
   font-family: var(--font-body), sans-serif;
+}
+
+@media (min-width: 900px) {
+  body {
+    background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(31, 77, 58, 0.12), transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, rgba(183, 161, 106, 0.14), transparent 50%),
+      linear-gradient(180deg, #f7f8f5 0%, #eef1ec 100%);
+  }
 }
 
 a {
@@ -93,16 +97,18 @@ img {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
+  /* Static on mobile — sticky is a primary cause of reverse-scroll jank on iOS */
+  position: relative;
+  top: auto;
   z-index: 50;
-  /* Solid paint on mobile — blur + sticky fights reverse-direction scroll */
   background: #f7f8f5;
   box-shadow: 0 1px 0 var(--line);
 }
 
 @media (min-width: 900px) {
   .site-header {
+    position: sticky;
+    top: 0;
     background: rgba(247, 248, 245, 0.92);
     backdrop-filter: blur(14px);
   }
@@ -755,9 +761,14 @@ body:has(.nav-drawer-toggle:checked) {
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  transform: scale(1.06);
-  animation: hero-ken 18s ease-in-out infinite alternate;
   pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  .hero__bg {
+    transform: scale(1.06);
+    animation: hero-ken 18s ease-in-out infinite alternate;
+  }
 }
 
 .hero__shade {
@@ -836,22 +847,47 @@ body:has(.nav-drawer-toggle:checked) {
   }
 }
 
-/* Continuous Ken Burns fights mobile scroll compositing — keep it desktop-only */
+/* Continuous Ken Burns / entrance motion fights mobile scroll compositing */
 @media (max-width: 899px) {
   .hero__bg,
-  .look-banner__img {
-    animation: none;
-    transform: none;
+  .look-banner__img,
+  .collection-100__banner-img {
+    animation: none !important;
+    transform: none !important;
   }
 
-  /* Entrance keyframes also thrash the compositor on direction changes */
   .hero,
   .hero__stage,
   .hero__eyebrow,
   .hero__title,
   .hero__support,
-  .hero__actions {
+  .hero__actions,
+  .hero__brand,
+  .hero__headline {
     animation: none !important;
+  }
+
+  .lookbook,
+  .lookbook__block {
+    overflow-x: visible;
+  }
+
+  .lookbook__block {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  /* Blur filters are expensive while scrolling product grids */
+  .product-card--sold-out .product-frame__img {
+    filter: brightness(0.92) saturate(0.9) !important;
+  }
+
+  .product-card__img {
+    transition: none !important;
   }
 }
 
@@ -859,13 +895,11 @@ body:has(.nav-drawer-toggle:checked) {
   display: grid;
   width: 100%;
   max-width: 100%;
-  overflow-x: clip;
 }
 
 .lookbook__block {
   display: grid;
   min-width: 0;
-  overflow-x: clip;
 }
 
 .lookbook__rail {
@@ -914,6 +948,7 @@ body:has(.nav-drawer-toggle:checked) {
   scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
   scrollbar-width: none;
 }
 
@@ -1052,8 +1087,10 @@ body:has(.nav-drawer-toggle:checked) {
   display: block;
 }
 
-.look-banner__img {
-  animation: look-ken 28s ease-in-out infinite alternate;
+@media (min-width: 900px) {
+  .look-banner__img {
+    animation: look-ken 28s ease-in-out infinite alternate;
+  }
 }
 
 @keyframes look-ken {
@@ -1376,6 +1413,7 @@ body:has(.nav-drawer-toggle:checked) {
   scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
   scrollbar-width: none;
   container-type: inline-size;
   container-name: best-carousel;
@@ -1503,7 +1541,12 @@ body:has(.nav-drawer-toggle:checked) {
   object-fit: cover;
   object-position: center 40%;
   display: block;
-  animation: hero-ken 22s ease-in-out infinite alternate;
+}
+
+@media (min-width: 900px) {
+  .collection-100__banner-img {
+    animation: hero-ken 22s ease-in-out infinite alternate;
+  }
 }
 
 .collection-100__banner-shade {
@@ -1667,6 +1710,7 @@ body:has(.nav-drawer-toggle:checked) {
   margin-bottom: 1.5rem;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
 }
 
 .shop-browse__layout {
@@ -1858,9 +1902,11 @@ body:has(.nav-drawer-toggle:checked) {
   transition: transform 0.55s ease;
 }
 
-.product-card:hover .product-card__img,
-.product-card:hover .product-frame--card .product-frame__img {
-  transform: scale(1.03);
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .product-card__img,
+  .product-card:hover .product-frame--card .product-frame__img {
+    transform: scale(1.03);
+  }
 }
 
 .product-card--sold-out:hover .product-card__img,
