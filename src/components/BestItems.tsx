@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { usePurchases } from "@/lib/purchase-store";
@@ -15,6 +15,8 @@ const fallback = [...products]
 export function BestItems() {
   const counts = usePurchases((s) => s.counts);
   const [mounted, setMounted] = useState(false);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const pausedUntil = useRef(0);
 
   useEffect(() => {
     setMounted(true);
@@ -34,8 +36,35 @@ export function BestItems() {
     ...fallback.filter((p) => !seen.has(p.id)),
   ].slice(0, MAX_ITEMS);
 
-  // Extra clones so the last steps still fill the viewport (PC shows 5).
-  const loop = [...list, ...list.slice(0, 5)];
+  // Soft autoplay on fine pointers only — mobile is finger-scroll only
+  useEffect(() => {
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (!fine.matches || reduce.matches) return;
+
+    const id = window.setInterval(() => {
+      if (Date.now() < pausedUntil.current) return;
+      const el = trackRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
+      const page = el.clientWidth * 0.92;
+      const max = el.scrollWidth - el.clientWidth;
+      if (max <= 0) return;
+      const next = el.scrollLeft + page;
+      el.scrollTo({
+        left: next >= max - 4 ? 0 : next,
+        behavior: "smooth",
+      });
+    }, 4500);
+
+    return () => clearInterval(id);
+  }, [list.length]);
+
+  const pause = () => {
+    pausedUntil.current = Date.now() + 10000;
+  };
 
   return (
     <section className="best-live" aria-label="실시간 주문상품 10선">
@@ -51,15 +80,16 @@ export function BestItems() {
           </div>
 
           <div
+            ref={trackRef}
             className="best-carousel"
             style={{ ["--slide-count" as string]: String(list.length) }}
+            onPointerDown={pause}
+            onTouchStart={pause}
+            onWheel={pause}
           >
             <div className="best-carousel__track">
-              {loop.map((product, i) => (
-                <div
-                  key={`${product.id}-${i}`}
-                  className="best-carousel__item"
-                >
+              {list.map((product) => (
+                <div key={product.id} className="best-carousel__item">
                   <ProductCard product={product} />
                 </div>
               ))}

@@ -1,6 +1,11 @@
+"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+
 /**
- * CSS-only sports carousel — works without client JavaScript
- * (secret/incognito + LAN IP where React hydration often fails).
+ * Swipeable sports carousel with scroll-snap + soft autoplay.
+ * Native horizontal scroll avoids continuous CSS transforms that
+ * fight vertical page scrolling on mobile.
  */
 export type CarouselSlide = {
   id: string;
@@ -12,11 +17,75 @@ export type CarouselSlide = {
 
 export function BannerCarousel({
   slides,
-  name = "sports-banner",
 }: {
   slides: CarouselSlide[];
   name?: string;
 }) {
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  const pausedUntil = useRef(0);
+  const activeRef = useRef(0);
+
+  const pause = useCallback(() => {
+    pausedUntil.current = Date.now() + 10000;
+  }, []);
+
+  const goTo = useCallback((index: number, behavior: ScrollBehavior = "smooth") => {
+    const el = viewportRef.current;
+    if (!el) return;
+    const w = el.clientWidth;
+    if (!w) return;
+    el.scrollTo({ left: w * index, behavior });
+  }, []);
+
+  useEffect(() => {
+    activeRef.current = active;
+  }, [active]);
+
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const w = el.clientWidth;
+        if (!w) return;
+        const i = Math.round(el.scrollLeft / w);
+        const next = Math.max(0, Math.min(slides.length - 1, i));
+        activeRef.current = next;
+        setActive(next);
+      });
+    };
+
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("scroll", onScroll);
+    };
+  }, [slides.length]);
+
+  useEffect(() => {
+    if (slides.length < 2) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reduce.matches) return;
+
+    const id = window.setInterval(() => {
+      if (Date.now() < pausedUntil.current) return;
+      const el = viewportRef.current;
+      if (!el) return;
+      // Pause when off-screen — avoids compositor work while scrolling the page
+      const rect = el.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+
+      const next = (activeRef.current + 1) % slides.length;
+      goTo(next);
+    }, 5000);
+
+    return () => clearInterval(id);
+  }, [slides.length, goTo]);
+
   if (slides.length === 0) return null;
 
   return (
@@ -25,50 +94,48 @@ export function BannerCarousel({
       data-slides={slides.length}
       style={{ ["--slide-count" as string]: String(slides.length) }}
     >
-      {slides.map((slide, i) => (
-        <input
-          key={`radio-${slide.id}`}
-          type="radio"
-          name={name}
-          id={`${name}-${i}`}
-          className="banner-radio"
-          aria-label={slide.labelKo}
-        />
-      ))}
-
-      <div className="banner-carousel__viewport">
-        <div className="banner-carousel__track">
-          {slides.map((slide) => (
-            <a
-              key={slide.id}
-              href={slide.href}
-              className="banner-slide"
-              aria-label={`${slide.labelKo} 카테고리로 이동`}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={slide.image}
-                alt={slide.labelKo}
-                style={slide.focal ? { objectPosition: slide.focal } : undefined}
-                loading="eager"
-                draggable={false}
-              />
-              <span className="banner-slide__label">{slide.labelKo}</span>
-            </a>
-          ))}
-        </div>
+      <div
+        ref={viewportRef}
+        className="banner-carousel__viewport"
+        onPointerDown={pause}
+        onTouchStart={pause}
+        onWheel={pause}
+      >
+        {slides.map((slide) => (
+          <a
+            key={slide.id}
+            href={slide.href}
+            className="banner-slide"
+            aria-label={`${slide.labelKo} 카테고리로 이동`}
+            draggable={false}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={slide.image}
+              alt={slide.labelKo}
+              style={slide.focal ? { objectPosition: slide.focal } : undefined}
+              loading="eager"
+              draggable={false}
+            />
+            <span className="banner-slide__label">{slide.labelKo}</span>
+          </a>
+        ))}
       </div>
 
       <div className="banner-carousel__dots" aria-label="스포츠 배너">
         {slides.map((slide, i) => (
-          <label
+          <button
             key={`dot-${slide.id}`}
-            htmlFor={`${name}-${i}`}
-            className="banner-dot"
-            title={slide.labelKo}
-          >
-            <span className="sr-only">{slide.labelKo}</span>
-          </label>
+            type="button"
+            className={`banner-dot${active === i ? " is-active" : ""}`}
+            aria-label={slide.labelKo}
+            aria-current={active === i ? "true" : undefined}
+            onClick={() => {
+              pause();
+              goTo(i);
+              setActive(i);
+            }}
+          />
         ))}
       </div>
     </div>

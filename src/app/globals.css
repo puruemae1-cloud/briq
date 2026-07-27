@@ -39,6 +39,8 @@ html {
   scroll-behavior: auto;
   overflow-x: clip;
   max-width: 100%;
+  /* Prefer compositor-friendly vertical scrolling on iOS */
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -56,6 +58,7 @@ body {
      scrollport and upward momentum scrolling becomes choppy. */
   overflow-x: clip;
   overscroll-behavior-x: none;
+  overscroll-behavior-y: auto;
   color: var(--ink);
   background:
     radial-gradient(1200px 600px at 10% -10%, rgba(31, 77, 58, 0.12), transparent 55%),
@@ -93,7 +96,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 248, 245, 0.96);
+  /* Solid paint on mobile — blur + sticky fights reverse-direction scroll */
+  background: #f7f8f5;
   box-shadow: 0 1px 0 var(--line);
 }
 
@@ -105,7 +109,7 @@ img {
 }
 
 .site-header.is-scrolled {
-  background: rgba(247, 248, 245, 0.96);
+  background: #f7f8f5;
   box-shadow: 0 1px 0 var(--line);
 }
 
@@ -837,7 +841,17 @@ body:has(.nav-drawer-toggle:checked) {
   .hero__bg,
   .look-banner__img {
     animation: none;
-    transform: scale(1.03);
+    transform: none;
+  }
+
+  /* Entrance keyframes also thrash the compositor on direction changes */
+  .hero,
+  .hero__stage,
+  .hero__eyebrow,
+  .hero__title,
+  .hero__support,
+  .hero__actions {
+    animation: none !important;
   }
 }
 
@@ -890,45 +904,32 @@ body:has(.nav-drawer-toggle:checked) {
   overflow: hidden;
 }
 
-.banner-radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
 .banner-carousel__viewport {
   position: absolute;
   inset: 0;
-  overflow: hidden;
-}
-
-.banner-carousel__track {
   display: flex;
-  height: 100%;
-  width: calc(100% * var(--slide-count, 5));
-  /* 5 slides × 5s = 25s loop — no JavaScript required */
-  animation: sports-banner-track 25s infinite;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
 }
 
-@media (min-width: 900px) {
-  .banner-carousel__track {
-    will-change: transform;
-  }
+.banner-carousel__viewport::-webkit-scrollbar {
+  display: none;
 }
 
 .banner-slide {
   position: relative;
-  flex: 0 0 calc(100% / var(--slide-count, 5));
-  width: calc(100% / var(--slide-count, 5));
-  min-width: calc(100% / var(--slide-count, 5));
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
   height: 100%;
   display: block;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .banner-slide img {
@@ -937,6 +938,9 @@ body:has(.nav-drawer-toggle:checked) {
   object-fit: cover;
   object-position: center 60%;
   display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .banner-slide::after {
@@ -958,12 +962,11 @@ body:has(.nav-drawer-toggle:checked) {
   bottom: 1.1rem;
   z-index: 2;
   padding: 0.45rem 0.85rem;
-  background: rgba(8, 12, 10, 0.55);
+  background: rgba(8, 12, 10, 0.72);
   border: 1px solid rgba(247, 244, 236, 0.45);
   color: #f7f4ec;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
-  backdrop-filter: blur(6px);
   pointer-events: none;
 }
 
@@ -972,6 +975,8 @@ body:has(.nav-drawer-toggle:checked) {
     right: 2.5rem;
     bottom: 2.25rem;
     font-size: 0.9rem;
+    backdrop-filter: blur(6px);
+    background: rgba(8, 12, 10, 0.55);
   }
 }
 
@@ -992,6 +997,7 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .banner-dot {
+  appearance: none;
   width: 0.7rem;
   height: 0.7rem;
   padding: 0;
@@ -1001,164 +1007,12 @@ body:has(.nav-drawer-toggle:checked) {
   cursor: pointer;
   display: block;
   box-sizing: border-box;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.banner-dot:nth-child(1) {
-  animation: sports-dot-1 25s infinite;
-}
-.banner-dot:nth-child(2) {
-  animation: sports-dot-2 25s infinite;
-}
-.banner-dot:nth-child(3) {
-  animation: sports-dot-3 25s infinite;
-}
-.banner-dot:nth-child(4) {
-  animation: sports-dot-4 25s infinite;
-}
-.banner-dot:nth-child(5) {
-  animation: sports-dot-5 25s infinite;
-}
-
-/* Manual select via radio — pause autoplay and jump */
-.banner-carousel:has(.banner-radio:checked) .banner-carousel__track,
-.banner-carousel:has(.banner-radio:checked) .banner-dot {
-  animation: none;
-}
-
-.banner-carousel:has(.banner-radio:nth-of-type(1):checked) .banner-carousel__track {
-  transform: translate3d(0, 0, 0);
-}
-.banner-carousel:has(.banner-radio:nth-of-type(2):checked) .banner-carousel__track {
-  transform: translate3d(-20%, 0, 0);
-}
-.banner-carousel:has(.banner-radio:nth-of-type(3):checked) .banner-carousel__track {
-  transform: translate3d(-40%, 0, 0);
-}
-.banner-carousel:has(.banner-radio:nth-of-type(4):checked) .banner-carousel__track {
-  transform: translate3d(-60%, 0, 0);
-}
-.banner-carousel:has(.banner-radio:nth-of-type(5):checked) .banner-carousel__track {
-  transform: translate3d(-80%, 0, 0);
-}
-
-.banner-carousel:has(.banner-radio:nth-of-type(1):checked) .banner-dot:nth-child(1),
-.banner-carousel:has(.banner-radio:nth-of-type(2):checked) .banner-dot:nth-child(2),
-.banner-carousel:has(.banner-radio:nth-of-type(3):checked) .banner-dot:nth-child(3),
-.banner-carousel:has(.banner-radio:nth-of-type(4):checked) .banner-dot:nth-child(4),
-.banner-carousel:has(.banner-radio:nth-of-type(5):checked) .banner-dot:nth-child(5) {
+.banner-dot.is-active {
   background: #f7f4ec;
   transform: scale(1.15);
-}
-
-/* 5 slides × 5s hold — each slot is 20% of the 25s cycle */
-@keyframes sports-banner-track {
-  0%,
-  16% {
-    transform: translate3d(0, 0, 0);
-  }
-  20%,
-  36% {
-    transform: translate3d(-20%, 0, 0);
-  }
-  40%,
-  56% {
-    transform: translate3d(-40%, 0, 0);
-  }
-  60%,
-  76% {
-    transform: translate3d(-60%, 0, 0);
-  }
-  80%,
-  96% {
-    transform: translate3d(-80%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes sports-dot-1 {
-  0%,
-  16% {
-    background: #f7f4ec;
-    transform: scale(1.15);
-  }
-  20%,
-  100% {
-    background: transparent;
-    transform: scale(1);
-  }
-}
-
-@keyframes sports-dot-2 {
-  0%,
-  16% {
-    background: transparent;
-    transform: scale(1);
-  }
-  20%,
-  36% {
-    background: #f7f4ec;
-    transform: scale(1.15);
-  }
-  40%,
-  100% {
-    background: transparent;
-    transform: scale(1);
-  }
-}
-
-@keyframes sports-dot-3 {
-  0%,
-  36% {
-    background: transparent;
-    transform: scale(1);
-  }
-  40%,
-  56% {
-    background: #f7f4ec;
-    transform: scale(1.15);
-  }
-  60%,
-  100% {
-    background: transparent;
-    transform: scale(1);
-  }
-}
-
-@keyframes sports-dot-4 {
-  0%,
-  56% {
-    background: transparent;
-    transform: scale(1);
-  }
-  60%,
-  76% {
-    background: #f7f4ec;
-    transform: scale(1.15);
-  }
-  80%,
-  100% {
-    background: transparent;
-    transform: scale(1);
-  }
-}
-
-@keyframes sports-dot-5 {
-  0%,
-  76% {
-    background: transparent;
-    transform: scale(1);
-  }
-  80%,
-  96% {
-    background: #f7f4ec;
-    transform: scale(1.15);
-  }
-  100% {
-    background: transparent;
-    transform: scale(1);
-  }
 }
 
 .look-banner--carousel .look-banner__content {
@@ -1183,9 +1037,8 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .banner-carousel__track,
-  .banner-dot {
-    animation: none !important;
+  .banner-carousel__viewport {
+    scroll-behavior: auto;
   }
 }
 
@@ -1514,12 +1367,22 @@ body:has(.nav-drawer-toggle:checked) {
   --gap: 0.9rem;
   /* Slightly fewer cards so the stage breathes inside the green panel */
   --visible: 2;
-  --item: calc((100% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
-  --page: calc(var(--visible) * (var(--item) + var(--gap)));
   position: relative;
-  overflow: hidden;
   max-width: 920px;
   margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  container-type: inline-size;
+  container-name: best-carousel;
+}
+
+.best-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 700px) {
@@ -1538,42 +1401,21 @@ body:has(.nav-drawer-toggle:checked) {
 .best-carousel__track {
   display: flex;
   gap: var(--gap);
-  width: 100%;
-  /* Mobile: 2 per page × 5 pages = 25s */
-  animation: best-live-pages-2 25s infinite;
-}
-
-@media (min-width: 900px) {
-  .best-carousel__track {
-    will-change: transform;
-  }
-}
-
-@media (min-width: 700px) {
-  .best-carousel__track {
-    /* Tablet: 3 per page — ~4 pages of 10 = 20s */
-    animation-name: best-live-pages-3;
-    animation-duration: 20s;
-  }
-}
-
-@media (min-width: 1100px) {
-  .best-carousel__track {
-    /* PC: 5 per page × 2 pages = 10s */
-    animation-name: best-live-pages-5;
-    animation-duration: 10s;
-  }
-}
-
-.best-carousel:hover .best-carousel__track {
-  animation-play-state: paused;
+  width: max-content;
+  min-width: 100%;
+  padding-bottom: 0.15rem;
 }
 
 .best-carousel__item {
+  --item: calc(
+    (100cqi - (var(--gap) * (var(--visible) - 1))) / var(--visible)
+  );
   flex: 0 0 var(--item);
   width: var(--item);
   min-width: var(--item);
   display: flex;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 .best-carousel__item .product-card {
@@ -1586,93 +1428,6 @@ body:has(.nav-drawer-toggle:checked) {
 .best-carousel__item .product-card__brand,
 .best-carousel__item .product-card__price {
   color: #222;
-}
-
-/* Hold ~4s, slide ~1s — advance a full page of products */
-@keyframes best-live-pages-2 {
-  0%,
-  16% {
-    transform: translate3d(0, 0, 0);
-  }
-  20%,
-  36% {
-    transform: translate3d(calc(-1 * var(--page)), 0, 0);
-  }
-  40%,
-  56% {
-    transform: translate3d(calc(-2 * var(--page)), 0, 0);
-  }
-  60%,
-  76% {
-    transform: translate3d(calc(-3 * var(--page)), 0, 0);
-  }
-  80%,
-  96% {
-    transform: translate3d(calc(-4 * var(--page)), 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes best-live-pages-3 {
-  0%,
-  20% {
-    transform: translate3d(0, 0, 0);
-  }
-  25%,
-  45% {
-    transform: translate3d(calc(-1 * var(--page)), 0, 0);
-  }
-  50%,
-  70% {
-    transform: translate3d(calc(-2 * var(--page)), 0, 0);
-  }
-  75%,
-  95% {
-    transform: translate3d(calc(-3 * var(--page)), 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes best-live-pages-4 {
-  0%,
-  26% {
-    transform: translate3d(0, 0, 0);
-  }
-  33%,
-  60% {
-    transform: translate3d(calc(-1 * var(--page)), 0, 0);
-  }
-  67%,
-  93% {
-    transform: translate3d(calc(-2 * var(--page)), 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes best-live-pages-5 {
-  0%,
-  40% {
-    transform: translate3d(0, 0, 0);
-  }
-  50%,
-  90% {
-    transform: translate3d(calc(-1 * var(--page)), 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .best-carousel__track {
-    animation: none;
-  }
 }
 
 .best-rail {
@@ -3308,6 +3063,17 @@ body:has(.pdp-dock) .back-to-top {
 
   .pricing-banner__copy {
     animation-delay: 0.2s;
+  }
+}
+
+@media (max-width: 899px) {
+  .manifesto__mark,
+  .manifesto__title,
+  .manifesto__copy,
+  .pricing-banner__mark,
+  .pricing-banner__title,
+  .pricing-banner__copy {
+    animation: none !important;
   }
 }
 
