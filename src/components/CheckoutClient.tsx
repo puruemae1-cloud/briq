@@ -289,6 +289,35 @@ export function CheckoutClient({ items }: { items: CartItem[] }) {
     }
 
     recordPurchase(items.map((i) => ({ id: i.product.id, qty: i.qty })));
+
+    // Best-effort support email — works once RESEND_API_KEY is configured
+    const paymentLabel =
+      paymentMethods.find((m) => m.id === method)?.label ?? method;
+    void fetch("/api/notify/order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        orderId,
+        paymentId: result.paymentId,
+        paymentMethod: paymentLabel,
+        customerName,
+        customerPhone: fullPhone,
+        customerEmail: emailRaw || undefined,
+        address,
+        customsCode: code,
+        totalKrw: total,
+        lines: items.map((i) => ({
+          nameKo: i.variant
+            ? `${i.product.nameKo} · ${i.variant.nameKo}`
+            : i.product.nameKo,
+          qty: i.qty,
+          unitPrice: i.variant?.price ?? i.product.price,
+        })),
+      }),
+    }).catch(() => {
+      /* never block checkout on mail failure */
+    });
+
     await clearCart();
     router.push(
       `/order/complete?orderId=${encodeURIComponent(orderId)}&paymentId=${encodeURIComponent(result.paymentId)}&msg=${encodeURIComponent(result.message)}`,

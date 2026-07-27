@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { addToCart, buyNow } from "@/app/cart/actions";
+import { ProductEngagement } from "@/components/ProductEngagement";
 import { ProductImage } from "@/components/ProductImage";
 import { ProductPurchaseNotice } from "@/components/ProductPurchaseNotice";
 import type { Product, ProductVariant } from "@/data/products";
@@ -178,6 +179,8 @@ export function ProductDetail({
       </article>
 
       <ProductPurchaseNotice />
+
+      <ProductEngagement productId={product.id} productName={product.nameKo} />
 
       {/* Sticky bottom dock — CSS-only options panel, works without client JS */}
       <div className="pdp-dock" aria-label="구매 옵션">
