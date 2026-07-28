@@ -148,6 +148,7 @@ export default async function ShopPage({ searchParams }: Props) {
             <div className="category-row">
               <Link
                 href="/shop"
+                scroll={false}
                 className={`chip ${category === "all" && !sub ? "is-active" : ""}`}
               >
                 Shop (전체상품)
@@ -159,6 +160,7 @@ export default async function ShopPage({ searchParams }: Props) {
                     category: c.id,
                     sort,
                   })}
+                  scroll={false}
                   className={`chip ${category === c.id && !sub ? "is-active" : ""}`}
                 >
                   {c.labelKo}
@@ -176,6 +178,7 @@ export default async function ShopPage({ searchParams }: Props) {
                       sub: child.id,
                       sort,
                     })}
+                    scroll={false}
                     className={`chip chip--sub ${
                       sub === child.id || pathIds.has(child.id) ? "is-active" : ""
                     }`}
@@ -199,6 +202,7 @@ export default async function ShopPage({ searchParams }: Props) {
                       sub: nested.id,
                       sort,
                     })}
+                    scroll={false}
                     className={chipClass(nested, sub, pathIds)}
                   >
                     {nested.labelKo}
@@ -225,6 +229,7 @@ export default async function ShopPage({ searchParams }: Props) {
                 <Link
                   key={option.id}
                   href={buildShopHref({ ...sortBase, sort: option.id })}
+                  scroll={false}
                   role="listitem"
                   className={`shop-browse__sort-btn ${
                     sort === option.id ? "is-active" : ""
