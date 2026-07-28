@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-28T15:15:34Z",
+  "scrapedAt": "2026-07-28T19:30:21Z",
   "products": {
     "C12-36AHC1-T00R0-B0R": {
       "sku": "C12-36AHC1-T00R0-B0R",
@@ -136,7 +136,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-36AHC1-T00P1-B0R": {
       "sku": "C12-36AHC1-T00P1-B0R",
@@ -273,7 +273,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-36AHC1-T00V1-B0R": {
       "sku": "C12-36AHC1-T00V1-B0R",
@@ -410,7 +410,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-36AHC1-T00O0-B0R": {
       "sku": "C12-36AHC1-T00O0-B0R",
@@ -547,7 +547,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-36AHC1-T00B1-B0R": {
       "sku": "C12-36AHC1-T00B1-B0R",
@@ -684,7 +684,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-36AHC1-T00K0-B0R": {
       "sku": "C12-36AHC1-T00K0-B0R",
@@ -821,7 +821,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-39ADA4-S00P0-B1": {
       "sku": "C63-39ADA4-S00P0-B1",
@@ -1086,7 +1086,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-36ADA4-S00V0-B0": {
       "nameEn": "C63 Sealander Automatic",
@@ -1351,7 +1351,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-36ADA4-S00V0-B0"
     },
     "C63-39AGM4-S00P0-B0": {
@@ -1618,7 +1618,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-39AGM4-S00P0-B0"
     },
     "C63-36AGM4-S00K0-RW": {
@@ -1877,7 +1877,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-36AGM4-S00P0-VK": {
       "sku": "C63-36AGM4-S00P0-VK",
@@ -2141,7 +2141,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-42AGM4-S00V0-B0": {
       "nameEn": "C63 Sealander GMT",
@@ -2407,7 +2407,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-42AGM4-S00V0-B0"
     },
     "C01-41APT4-T00W0-B1": {
@@ -2638,7 +2638,7 @@
         "cw-new-releases",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C01-41APT4-T00W0-B1"
     },
     "C01-41APT4-T00W0-RV": {
@@ -2870,7 +2870,7 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-42AGM4-S00P0-RW": {
       "sku": "C63-42AGM4-S00P0-RW",
@@ -3135,7 +3135,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C01-41APT3-T00O0-MW": {
       "sku": "C01-41APT3-T00O0-MW",
@@ -3361,7 +3361,7 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-new-releases"
     },
     "C01-41APT3-T00O0-B1": {
       "nameEn": "C1 Bel Canto Classic",
@@ -3585,7 +3585,7 @@
         "cw-new-releases",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C01-41APT3-T00O0-B1"
     },
     "C63-36AGM4-S00V0-RK": {
@@ -3847,7 +3847,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-42AGM4-S00W0-B0": {
       "nameEn": "C63 Sealander GMT",
@@ -4114,7 +4114,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-42AGM4-S00W0-B0"
     },
     "C63-36ADA4-S00K0-B0": {
@@ -4381,7 +4381,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-36ADA4-S00K0-B0"
     },
     "C63-39AGM4-S00V0-B1": {
@@ -4648,7 +4648,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-39ADA4-S00W0-VC": {
       "sku": "C63-39ADA4-S00W0-VC",
@@ -4912,7 +4912,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-36AGM4-S00B0-B0": {
       "nameEn": "C63 Sealander GMT",
@@ -5178,7 +5178,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-36AGM4-S00B0-B0"
     },
     "C63-36ADA4-S00P0-B1": {
@@ -5445,7 +5445,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-40APG3-S00W0-RO": {
       "sku": "C63-40APG3-S00W0-RO",
@@ -5629,7 +5629,7 @@
         "cw-new-releases",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-40APG3-S00K0-B0": {
       "nameEn": "C63 True GMT",
@@ -5816,7 +5816,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-40APG3-S00K0-B0"
     },
     "C63-40APG3-S00W0-B0": {
@@ -6004,7 +6004,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-40APG3-S00W0-B0"
     },
     "C63-40APG3-S00K0-RB": {
@@ -6189,7 +6189,7 @@
         "cw-new-releases",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C63-40APG3-S00K0-RB"
     },
     "C63-39AGM4-S00K0-RK": {
@@ -6454,7 +6454,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-39ADA4-S00B0-RK": {
       "sku": "C63-39ADA4-S00B0-RK",
@@ -6717,7 +6717,7 @@
         "cw-new-releases",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-39ADA4-S00V0-VK": {
       "sku": "C63-39ADA4-S00V0-VK",
@@ -6979,7 +6979,7 @@
         "cw-new-releases",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-new-releases"
     },
     "C12-41A5D1-SD0K0-B0": {
       "sku": "C12-41A5D1-SD0K0-B0",
@@ -7147,7 +7147,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-new-releases"
     },
     "C60-42ADA31S0KW3-B0": {
       "nameEn": "C60 Sapphire Edge",
@@ -7379,8 +7379,12 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwvar_C6787_WDialBezelColour=White&quantity=1",
       "derivedFrom": "C60-42ADA31-S0KW3-RBW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-dive",
+        "cw-trident"
+      ],
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-42ADA31S0KW3-B0"
     },
     "C60-42ADA31S0KW3-ROW": {
@@ -7612,8 +7616,11 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwopt_C60-42ADA31S0KW3-ROW_watchEngraving=no-watch-engraving&dwvar_C6787_WDialBezelColour=White&dwvar_C6787_WStrapColourMaterialType=Orange%20Aquaflex%20Rubber&pid=C60-42ADA31S0KW3-ROW&quantity=1",
       "derivedFrom": "C60-42ADA31-S0KW3-RBW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-dive"
+      ],
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-42ADA31S0KW3-ROW"
     },
     "C60-44ADC31B0KK0-VT1": {
@@ -7802,8 +7809,13 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-pro-300-bronze/C6014.html?dwopt_C60-42ADC31B0KK0-VT1_watchEngraving=no-watch-engraving&dwvar_C6014_WSize=42mm&dwvar_C6014_WStrapColourMaterialType=Distressed%20Brown%20Vintage%20Oak%20Leather&pid=C60-42ADC31B0KK0-VT1&quantity=1",
       "derivedFrom": "C60-42ADC31B0KK0-HK",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-bestsellers",
+        "cw-dive",
+        "cw-trident"
+      ],
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44ADC31B0KK0-VT1"
     },
     "C60-44AGM31S0KK0-B0": {
@@ -7988,7 +8000,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44AGM31S0KK0-B0"
     },
     "C60-44ADA31S0KW1-B0": {
@@ -8180,7 +8192,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44ADA31S0KW1-B0"
     },
     "C60-44ADA31S0KK1-B0": {
@@ -8372,7 +8384,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44ADA31S0KK1-B0"
     },
     "C60-44AGM31S0BW0-B0": {
@@ -8557,7 +8569,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44AGM31S0BW0-B0"
     },
     "C60-40AGM31S0KK0-B0": {
@@ -8762,7 +8774,7 @@
         "cw-new-releases",
         "cw-dive"
       ],
-      "primaryCollection": "cw-dive",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-40AGM31S0KK0-B0"
     },
     "C60-44ADA31S0BB1-B0": {
@@ -8954,7 +8966,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C60-44ADA31S0BB1-B0"
     },
     "C01-39AJH4-S00R0-B1": {
@@ -9245,7 +9257,7 @@
         "cw-new-releases",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier",
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C01-39AJH4-S00R0-B1"
     },
     "C63-39ADA4-S00V0-B0": {
@@ -9740,7 +9752,7 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-new-releases"
     },
     "C63-39AGM4-S00W0-B0": {
       "nameEn": "C63 Sealander GMT",
@@ -10005,7 +10017,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C63-39AGM4-S00W0-B0"
     },
     "C01-41APT3-T00B0-MB": {
@@ -10256,7 +10268,7 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-bestsellers"
     },
     "C60-41C3H31T0KK0-B0": {
       "nameEn": "C60 Trident Lumière",
@@ -10445,7 +10457,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-41C3H31T0KK0-B0"
     },
     "C63-39ADA4-S00B0-B0": {
@@ -10710,7 +10722,7 @@
         "cw-bestsellers",
         "cw-adventure-field"
       ],
-      "primaryCollection": "cw-adventure-field",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C63-39ADA4-S00B0-B0"
     },
     "C01-39AJH4-S00B0-B1": {
@@ -10996,8 +11008,12 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-jump-hour-mk-v/C139.html?dwvar_C139_WDialBezelColour=Noon&quantity=1",
       "derivedFrom": "C01-39AJH4-S00B0-B0",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-bestsellers",
+        "cw-atelier"
+      ],
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C01-39AJH4-S00B0-B1"
     },
     "C63-39AGM4-S00V0-B0": {
@@ -11528,7 +11544,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-bestsellers"
     },
     "C01-39AJH4-S00E0-B1": {
       "nameEn": "C1 Jump Hour Mk V",
@@ -11813,8 +11829,11 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-jump-hour-mk-v/C139.html?dwvar_C139_WDialBezelColour=Dawn&quantity=1",
       "derivedFrom": "C01-39AJH4-S00E0-B0",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-atelier"
+      ],
+      "primaryCollection": "cw-new-releases",
       "seedSku": "C01-39AJH4-S00E0-B1"
     },
     "C60-40AGM31S0BW0-B0": {
@@ -12024,7 +12043,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-40AGM31S0BW0-B0"
     },
     "C60-42ADC31B0KK0-VT1": {
@@ -12214,8 +12233,11 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-pro-300-bronze/C6014.html?dwopt_C60-42ADC31B0KK0-VT1_watchEngraving=no-watch-engraving&dwvar_C6014_WSize=42mm&dwvar_C6014_WStrapColourMaterialType=Distressed%20Brown%20Vintage%20Oak%20Leather&pid=C60-42ADC31B0KK0-VT1&quantity=1",
       "derivedFrom": "C60-42ADC31B0KK0-HK",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-bestsellers",
+        "cw-trident"
+      ],
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-42ADC31B0KK0-VT1"
     },
     "C60-42ADC31B0BB0-VT": {
@@ -12400,7 +12422,7 @@
         "cw-bestsellers",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-42ADC31B0BB0-VT"
     },
     "C01-40AMP2-S00B0-MB1": {
@@ -12577,7 +12599,7 @@
         "cw-atelier",
         "cw-moonphase"
       ],
-      "primaryCollection": "cw-moonphase"
+      "primaryCollection": "cw-bestsellers"
     },
     "C01-41APT3-T00G0-MB": {
       "sku": "C01-41APT3-T00G0-MB",
@@ -12804,16 +12826,16 @@
         "cw-bestsellers",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier"
+      "primaryCollection": "cw-bestsellers"
     },
     "C12-41H6D1-S00B0-B0": {
       "sku": "C12-41H6D1-S00B0-B0",
       "seedSku": "N12-41H6D1-S00B0-B0",
-      "nameEn": "The C12 Loco - Nearly New",
+      "nameEn": "The C12 Loco",
       "size": null,
       "colour": null,
       "strap": null,
-      "gbpPrice": 3320.0,
+      "gbpPrice": 4150.0,
       "gbpListPrice": 4150.0,
       "price": 7520000,
       "compareAtPrice": 9350000,
@@ -12925,12 +12947,15 @@
       "strapVariants": [],
       "braceletResize": true,
       "braceletResizeFeeKrw": 20000,
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/sale/the-c12-loco---nearly-new/N12-41H6D1-S00B0-B0.html?dwopt_N12-41H6D1-S00B0-B0_braceletResizing=no-resize&pid=N12-41H6D1-S00B0-B0&quantity=1",
       "collections": [
-        "cw-clearance"
+        "cw-bestsellers",
+        "cw-atelier",
+        "cw-integrated-sports",
+        "cw-twelve"
       ],
-      "primaryCollection": "cw-clearance"
+      "primaryCollection": "cw-bestsellers"
     },
     "C60-40AGM31S0KK0-B1": {
       "nameEn": "C60 Trident GMT 300",
@@ -13135,7 +13160,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-40AGM31S0KK0-B1"
     },
     "C63-42AGM4-S00B0-B0": {
@@ -13402,7 +13427,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C63-42AGM4-S00B0-B0"
     },
     "C60-40ADA31S0KK1-B0": {
@@ -13642,7 +13667,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-40ADA31S0KK1-B0"
     },
     "C01-41APT3-T00A0-MT": {
@@ -13871,16 +13896,16 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-bestsellers"
     },
     "C12-41H6D1-S00K0-B0": {
       "sku": "C12-41H6D1-S00K0-B0",
       "seedSku": "N12-41H6D1-S00K0-B0",
-      "nameEn": "The C12 Loco - Nearly New",
+      "nameEn": "The C12 Loco",
       "size": null,
       "colour": null,
       "strap": null,
-      "gbpPrice": 3320.0,
+      "gbpPrice": 4150.0,
       "gbpListPrice": 4150.0,
       "price": 7520000,
       "compareAtPrice": 9350000,
@@ -13995,9 +14020,12 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/sale/the-c12-loco---nearly-new/N12-41H6D1-S00K0-B0.html?dwopt_N12-41H6D1-S00K0-B0_braceletResizing=no-resize&pid=N12-41H6D1-S00K0-B0&quantity=1",
       "collections": [
-        "cw-clearance"
+        "cw-bestsellers",
+        "cw-atelier",
+        "cw-integrated-sports",
+        "cw-twelve"
       ],
-      "primaryCollection": "cw-clearance"
+      "primaryCollection": "cw-bestsellers"
     },
     "C12-40ADA1-S00B1-B0": {
       "nameEn": "The Twelve",
@@ -14187,7 +14215,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C12-40ADA1-S00B1-B0"
     },
     "C01-41APT3-T00V0-B1": {
@@ -14415,7 +14443,7 @@
         "cw-bestsellers",
         "cw-atelier"
       ],
-      "primaryCollection": "cw-atelier"
+      "primaryCollection": "cw-bestsellers"
     },
     "C60-42ADA31S0BB3-B0": {
       "nameEn": "C60 Sapphire Edge",
@@ -14648,8 +14676,12 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwvar_C6787_WDialBezelColour=Blue&quantity=1",
       "derivedFrom": "C60-42ADA31-S0BB3-ROW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-bestsellers",
+        "cw-dive",
+        "cw-trident"
+      ],
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-42ADA31S0BB3-B0"
     },
     "C63-41AGM4-S0KK0-B0": {
@@ -14905,7 +14937,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C63-41AGM4-S0KK0-B0"
     },
     "C60-41C3H31T0BB0-B0": {
@@ -15095,7 +15127,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C60-41C3H31T0BB0-B0"
     },
     "C01-41APT0-T00P0-VP": {
@@ -15368,7 +15400,7 @@
         "cw-atelier",
         "cw-bel-canto"
       ],
-      "primaryCollection": "cw-bel-canto"
+      "primaryCollection": "cw-bestsellers"
     },
     "C12-41H6D1-S00O0-RO": {
       "sku": "C12-41H6D1-S00O0-RO",
@@ -15613,7 +15645,7 @@
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-bestsellers"
     },
     "C63-36AGM4-S00W0-B0": {
       "nameEn": "C63 Sealander GMT",
@@ -15879,7 +15911,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander",
+      "primaryCollection": "cw-bestsellers",
       "seedSku": "C63-36AGM4-S00W0-B0"
     },
     "C65-38C3H4-B00V0-WC": {
@@ -16328,17 +16360,17 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-hidden-gems",
       "seedSku": "C60-40ADA31S00W1-B0"
     },
     "C12-41H6D1-S00W0-B0": {
       "sku": "C12-41H6D1-S00W0-B0",
       "seedSku": "N12-41H6D1-S00W0-B0",
-      "nameEn": "The C12 Loco - Nearly New",
+      "nameEn": "The C12 Loco",
       "size": null,
       "colour": null,
       "strap": null,
-      "gbpPrice": 3320.0,
+      "gbpPrice": 4150.0,
       "gbpListPrice": 4150.0,
       "price": 7520000,
       "compareAtPrice": 9350000,
@@ -16453,9 +16485,12 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/sale/the-c12-loco---nearly-new/N12-41H6D1-S00W0-B0.html?dwopt_N12-41H6D1-S00W0-B0_braceletResizing=no-resize&pid=N12-41H6D1-S00W0-B0&quantity=1",
       "collections": [
-        "cw-clearance"
+        "cw-bestsellers",
+        "cw-atelier",
+        "cw-integrated-sports",
+        "cw-twelve"
       ],
-      "primaryCollection": "cw-clearance"
+      "primaryCollection": "cw-bestsellers"
     },
     "C60-40ADA31S00B1-B0": {
       "nameEn": "C60 Atoll 300",
@@ -16649,7 +16684,7 @@
         "cw-dive",
         "cw-trident"
       ],
-      "primaryCollection": "cw-trident",
+      "primaryCollection": "cw-hidden-gems",
       "seedSku": "C60-40ADA31S00B1-B0"
     },
     "N12-41H6D1-S00K0-B0": {
@@ -17512,7 +17547,7 @@
         "cw-adventure-field",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-sealander"
+      "primaryCollection": "cw-hidden-gems"
     },
     "N12-41H6D1-S00W0-B0": {
       "sku": "C12-41H6D1-S00W0-B0",
@@ -18609,7 +18644,7 @@
         "cw-adventure-field",
         "cw-military"
       ],
-      "primaryCollection": "cw-adventure-field"
+      "primaryCollection": "cw-hidden-gems"
     },
     "N01-41APT0-T00B1-B0": {
       "nameEn": "C1 Bel Canto - Nearly New",
@@ -19084,7 +19119,7 @@
         "cw-hidden-gems",
         "cw-dive"
       ],
-      "primaryCollection": "cw-dive"
+      "primaryCollection": "cw-hidden-gems"
     },
     "C01-37AMP2-S00B0-MB": {
       "sku": "C01-37AMP2-S00B0-MB",
@@ -22928,8 +22963,11 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-moonglow/C115.html?dwvar_C115_WStrapColourMaterialType=Vacona%C2%AE%20leather&quantity=1",
       "derivedFrom": "C01-40AMP2-S00K0-B1",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-atelier",
+        "cw-moonphase"
+      ],
+      "primaryCollection": "cw-moonphase",
       "seedSku": "C01-40AMP2-S00K0-VK1"
     },
     "C01-41APT3-T00B0-B1": {
@@ -26270,7 +26308,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto/Z101.html?dwvar_Z101_WDialBezelColour=Cielo&quantity=1",
       "derivedFrom": "C01-41APT0-T00B1-VLB",
       "collections": [
@@ -28291,7 +28329,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto-classic/C118.html?dwvar_C118_WDialBezelColour=Azzurro&quantity=1",
       "derivedFrom": "C01-41APT3-T00B0-MB",
       "collections": [
@@ -28562,7 +28600,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto/Z101.html?dwvar_Z101_WDialBezelColour=Nero&quantity=1",
       "derivedFrom": "C01-41APT0-T00K0-VK",
       "collections": [
@@ -29906,7 +29944,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto-classic/C118.html?dwvar_C118_WDialBezelColour=Negroni&quantity=1",
       "derivedFrom": "C01-41APT3-T00O0-MW",
       "collections": [
@@ -30376,7 +30414,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto-classic/C118.html?dwvar_C118_WDialBezelColour=Verde&quantity=1",
       "derivedFrom": "C01-41APT3-T00V0-B1",
       "collections": [
@@ -31090,7 +31128,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto-classic/C118.html?dwvar_C118_WDialBezelColour=Argento&quantity=1",
       "derivedFrom": "C01-41APT3-T00G0-MB",
       "collections": [
@@ -33671,7 +33709,7 @@
           "size": null
         }
       ],
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto/Z101.html?dwvar_Z101_WDialBezelColour=Rosa&quantity=1",
       "derivedFrom": "C01-41APT0-T00A0-VT",
       "collections": [
@@ -42968,8 +43006,10 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwopt_C60-42ADA31S0KW3-RKW_watchEngraving=no-watch-engraving&dwvar_C6787_WDialBezelColour=White&dwvar_C6787_WStrapColourMaterialType=Black%20Aquaflex%20Rubber&pid=C60-42ADA31S0KW3-RKW&quantity=1",
       "derivedFrom": "C60-42ADA31-S0KW3-RBW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-dive"
+      ],
+      "primaryCollection": "cw-dive",
       "seedSku": "C60-42ADA31S0KW3-RKW"
     },
     "C60-41C3H31T0KK0-RKO": {
@@ -44512,8 +44552,10 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwopt_C60-42ADA31S0BB3-RBW_watchEngraving=no-watch-engraving&dwvar_C6787_WDialBezelColour=Blue&dwvar_C6787_WStrapColourMaterialType=Blue%20Aquaflex%20Rubber&pid=C60-42ADA31S0BB3-RBW&quantity=1",
       "derivedFrom": "C60-42ADA31-S0BB3-ROW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-dive"
+      ],
+      "primaryCollection": "cw-dive",
       "seedSku": "C60-42ADA31S0BB3-RBW"
     },
     "C60-44A3H31S0KK0-B0": {
@@ -63758,8 +63800,10 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-sapphire-edge/C6787.html?dwopt_C60-42ADA31S0BB3-RKW_watchEngraving=no-watch-engraving&dwvar_C6787_WDialBezelColour=Blue&dwvar_C6787_WStrapColourMaterialType=Black%20Aquaflex%20Rubber&pid=C60-42ADA31S0BB3-RKW&quantity=1",
       "derivedFrom": "C60-42ADA31-S0BB3-ROW",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-dive"
+      ],
+      "primaryCollection": "cw-dive",
       "seedSku": "C60-42ADA31S0BB3-RKW"
     },
     "C60-41A3H31S0KK0-RY": {
@@ -71549,8 +71593,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=39mm&quantity=1",
       "derivedFrom": "C63-39ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00P0-B0"
@@ -72026,8 +72069,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39ADA4-S00W0-RW&quantity=1",
       "derivedFrom": "C63-39ADA4-S00W0-VC",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00W0-RW"
@@ -72290,8 +72332,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00V0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36AGM4-S00V0-B1&quantity=1",
       "derivedFrom": "C63-36AGM4-S00V0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00V0-B1"
@@ -72554,8 +72595,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00P0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39ADA4-S00P0-RK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00P0-RK"
@@ -72814,8 +72854,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=36mm&quantity=1",
       "derivedFrom": "C63-36AGM4-S00K0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00K0-B0"
@@ -73080,8 +73119,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=42mm&quantity=1",
       "derivedFrom": "C63-42AGM4-S00P0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00P0-B0"
@@ -73342,8 +73380,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39AGM4-S00W0-RW&quantity=1",
       "derivedFrom": "C63-39AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00W0-RW"
@@ -73606,8 +73643,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00B0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00B0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00B0-RW"
@@ -73869,8 +73905,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00P0-VK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-39ADA4-S00P0-VK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00P0-VK"
@@ -74135,8 +74170,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00P0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39AGM4-S00P0-B1&quantity=1",
       "derivedFrom": "C63-39AGM4-S00P0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00P0-B1"
@@ -74396,8 +74430,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00V0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36AGM4-S00V0-RW&quantity=1",
       "derivedFrom": "C63-36AGM4-S00V0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00V0-RW"
@@ -74662,8 +74695,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00V0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-42AGM4-S00V0-B1&quantity=1",
       "derivedFrom": "C63-42AGM4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00V0-B1"
@@ -74927,8 +74959,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00V0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-42AGM4-S00V0-RW&quantity=1",
       "derivedFrom": "C63-42AGM4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00V0-RW"
@@ -75193,8 +75224,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00P0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-42AGM4-S00P0-B1&quantity=1",
       "derivedFrom": "C63-42AGM4-S00P0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00P0-B1"
@@ -75458,8 +75488,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00V0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36ADA4-S00V0-B1&quantity=1",
       "derivedFrom": "C63-36ADA4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00V0-B1"
@@ -75724,8 +75753,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=36mm&quantity=1",
       "derivedFrom": "C63-36AGM4-S00P0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00P0-B0"
@@ -75989,8 +76017,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00B0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-42AGM4-S00B0-RW&quantity=1",
       "derivedFrom": "C63-42AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00B0-RW"
@@ -76253,8 +76280,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00V0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00V0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00V0-RW"
@@ -76517,8 +76543,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00K0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39ADA4-S00K0-RW&quantity=1",
       "derivedFrom": "C63-39ADA4-S00K0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00K0-RW"
@@ -77228,8 +77253,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00W0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39AGM4-S00W0-B1&quantity=1",
       "derivedFrom": "C63-39AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00W0-B1"
@@ -77493,8 +77517,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=39mm&quantity=1",
       "derivedFrom": "C63-39ADA4-S00K0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00K0-B0"
@@ -77758,8 +77781,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=36mm&quantity=1",
       "derivedFrom": "C63-36ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00P0-B0"
@@ -78024,8 +78046,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00B0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-42AGM4-S00B0-B1&quantity=1",
       "derivedFrom": "C63-42AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00B0-B1"
@@ -78483,8 +78504,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=39mm&quantity=1",
       "derivedFrom": "C63-39AGM4-S00K0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00K0-B0"
@@ -78748,8 +78768,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=39mm&quantity=1",
       "derivedFrom": "C63-39ADA4-S00W0-VC",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00W0-B0"
@@ -79012,8 +79031,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00B0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36AGM4-S00B0-RW&quantity=1",
       "derivedFrom": "C63-36AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00B0-RW"
@@ -79203,8 +79221,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-40ADA1-S00B1-RLB_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Glacier%20Blue&dwvar_C1210_WSize=40mm&dwvar_C1210_WStrapColourMaterialType=Light%20Blue%20The%20Twelve%20Rubber&pid=C12-40ADA1-S00B1-RLB&quantity=1",
       "derivedFrom": "C12-40ADA1-S00B1-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADA1-S00B1-RLB"
@@ -79458,8 +79475,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KK0-NO_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Black&dwvar_C6341_WStrapColourMaterialType=Orange%20V-Strap%20-%20wrist%2015.5-18cm&pid=C63-41AGM4-S0KK0-NO&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KK0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KK0-NO"
@@ -79722,8 +79738,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00B0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39AGM4-S00B0-RW&quantity=1",
       "derivedFrom": "C63-39AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00B0-RW"
@@ -79988,8 +80003,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00P0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36AGM4-S00P0-B1&quantity=1",
       "derivedFrom": "C63-36AGM4-S00P0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00P0-B1"
@@ -80179,8 +80193,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-40-%28ti%29/C1202.html?dwopt_C12-40ADC1-T00B0-RK_watchEngraving=no-watch-engraving&dwvar_C1202_WDialBezelColour=Astral%20Blue&dwvar_C1202_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-40ADC1-T00B0-RK&quantity=1",
       "derivedFrom": "C12-40ADC1-T00B0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADC1-T00B0-RK"
@@ -80443,8 +80456,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00B0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00B0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00B0-RW"
@@ -80654,8 +80666,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00B1-RW_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Glacier%20Blue&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=White%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00B1-RW&quantity=1",
       "derivedFrom": "C12-38ADA1-S00B1-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-S00B1-RW"
@@ -80893,9 +80904,9 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-40ADA31S0KK1-HK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Black&dwvar_C632_WSize=40mm&dwvar_C632_WStrapColourMaterialType=Black%20Hybrid%20Rubber&pid=C60-40ADA31S0KK1-HK&quantity=1",
       "derivedFrom": "C60-40ADA31S0KK1-RK",
       "collections": [
-        "cw-dive"
+        "cw-trident"
       ],
-      "primaryCollection": "cw-dive",
+      "primaryCollection": "cw-trident",
       "seedSku": "C60-42ADA31S0KK1-HK"
     },
     "C63-36AGM4-S00K0-B1": {
@@ -81152,8 +81163,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00K0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36AGM4-S00K0-B1&quantity=1",
       "derivedFrom": "C63-36AGM4-S00K0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00K0-B1"
@@ -81562,8 +81572,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-660/C1266.html?dwopt_C12-38H2H1-SK0K0-RK_watchEngraving=no-watch-engraving&dwvar_C1266_WDialBezelColour=BLK&dwvar_C1266_WStrapColourMaterialType=Black%20Rubber&pid=C12-38H2H1-SK0K0-RK&quantity=1",
       "derivedFrom": "C12-38H2H1-SK0K0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38H2H1-SK0K0-RK"
@@ -81826,8 +81835,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00V0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-42AGM4-S00V0-VK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00V0-VK"
@@ -82288,8 +82296,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=36mm&quantity=1",
       "derivedFrom": "C63-36AGM4-S00V0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00V0-B0"
@@ -82727,8 +82734,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00K0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36AGM4-S00K0-VK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00K0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00K0-VK"
@@ -83176,8 +83182,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00W0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36AGM4-S00W0-B1&quantity=1",
       "derivedFrom": "C63-36AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00W0-B1"
@@ -83442,8 +83447,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00B0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39AGM4-S00B0-B1&quantity=1",
       "derivedFrom": "C63-39AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00B0-B1"
@@ -83705,8 +83709,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00B0-VK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-39ADA4-S00B0-VK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00B0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00B0-VK"
@@ -83970,8 +83973,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00K0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36ADA4-S00K0-B1&quantity=1",
       "derivedFrom": "C63-36ADA4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00K0-B1"
@@ -84233,8 +84235,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00V0-VK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36ADA4-S00V0-VK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00V0-VK"
@@ -84497,8 +84498,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00P0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39AGM4-S00P0-RW&quantity=1",
       "derivedFrom": "C63-39AGM4-S00P0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00P0-RW"
@@ -84752,8 +84752,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KV0-NO_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Khaki&dwvar_C6341_WStrapColourMaterialType=Orange%20V-Strap%20-%20wrist%2015.5-18cm&pid=C63-41AGM4-S0KV0-NO&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KV0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KV0-NO"
@@ -84940,8 +84939,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-40-%28ti%29/C1202.html?dwopt_C12-40ADC2-T00B1-RK_watchEngraving=no-watch-engraving&dwvar_C1202_WDialBezelColour=Glacier%20Blue&dwvar_C1202_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-40ADC2-T00B1-RK&quantity=1",
       "derivedFrom": "C12-40ADC2-T00B1-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADC2-T00B1-RK"
@@ -85206,8 +85204,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00W0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-42AGM4-S00W0-B1&quantity=1",
       "derivedFrom": "C63-42AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00W0-B1"
@@ -85470,8 +85467,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00P0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39ADA4-S00P0-RW&quantity=1",
       "derivedFrom": "C63-39ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00P0-RW"
@@ -85681,8 +85677,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=White&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00W0-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00W0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-S00W0-RK"
@@ -85894,8 +85889,7 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-42ADA31S0KW1-RO2_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=42mm&dwvar_C632_WStrapColourMaterialType=Orange%20Aquaflex%20Rubber&pid=C60-42ADA31S0KW1-RO2&quantity=1",
       "derivedFrom": "C60-42ADA31S0KW1-HK",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident",
       "seedSku": "C60-42ADA31S0KW1-RO2"
@@ -86159,8 +86153,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-42AGM4-S00W0-RW&quantity=1",
       "derivedFrom": "C63-42AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00W0-RW"
@@ -86334,8 +86327,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-midnight/C1225.html?dwvar_C1225_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&quantity=1",
       "derivedFrom": "C12-38ADA1-MXII-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-MXII-RK"
@@ -86512,8 +86504,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-660/C1266.html?dwopt_C12-38H2H1-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C1266_WDialBezelColour=WHT&dwvar_C1266_WStrapColourMaterialType=Black%20Rubber&pid=C12-38H2H1-S00W0-RK&quantity=1",
       "derivedFrom": "C12-38H2H1-S00W0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38H2H1-S00W0-RK"
@@ -87216,8 +87207,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00P0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00P0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00P0-RW"
@@ -87477,8 +87467,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00V0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36AGM4-S00V0-VK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00V0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00V0-VK"
@@ -87743,8 +87732,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00B0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36AGM4-S00B0-B1&quantity=1",
       "derivedFrom": "C63-36AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00B0-B1"
@@ -88007,8 +87995,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00W0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00W0-RW"
@@ -88198,8 +88185,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-40ADA1-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=White&dwvar_C1210_WSize=40mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-40ADA1-S00W0-RK&quantity=1",
       "derivedFrom": "C12-40ADA1-S00W0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADA1-S00W0-RK"
@@ -88463,8 +88449,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00K0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-42AGM4-S00K0-RW&quantity=1",
       "derivedFrom": "C63-42AGM4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00K0-RW"
@@ -88651,8 +88636,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-40-%28ti%29/C1202.html?dwopt_C12-40ADC2-T00B2-RK_watchEngraving=no-watch-engraving&dwvar_C1202_WDialBezelColour=Fjord%20Blue&dwvar_C1202_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-40ADC2-T00B2-RK&quantity=1",
       "derivedFrom": "C12-40ADC2-T00B2-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADC2-T00B2-RK"
@@ -88914,8 +88898,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00W0-VC_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36ADA4-S00W0-VC&quantity=1",
       "derivedFrom": "C63-36ADA4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00W0-VC"
@@ -89180,8 +89163,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00K0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-42AGM4-S00K0-B1&quantity=1",
       "derivedFrom": "C63-42AGM4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00K0-B1"
@@ -89369,8 +89351,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Nordic%20Blue&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00B0-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00B0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-S00B0-RK"
@@ -89633,8 +89614,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00P0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36AGM4-S00P0-RW&quantity=1",
       "derivedFrom": "C63-36AGM4-S00P0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00P0-RW"
@@ -89846,8 +89826,7 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-42ADA31S0BB1-HB_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Blue&dwvar_C632_WSize=42mm&dwvar_C632_WStrapColourMaterialType=Blue%20Hybrid%20Rubber&pid=C60-42ADA31S0BB1-HB&quantity=1",
       "derivedFrom": "C60-42ADA31S0BB1-RO2",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident",
       "seedSku": "C60-42ADA31S0BB1-HB"
@@ -90024,8 +90003,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-660/C1266.html?dwopt_C12-38H2H1-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C1266_WDialBezelColour=BLU&dwvar_C1266_WStrapColourMaterialType=Black%20Rubber&pid=C12-38H2H1-S00B0-RK&quantity=1",
       "derivedFrom": "C12-38H2H1-S00B0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38H2H1-S00B0-RK"
@@ -90490,8 +90468,7 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-38ADA31S0KW1-B1_braceletResizing=no-resize&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=38mm&dwvar_C632_WStrapColourMaterialType=Consort%20Bracelet&pid=C60-38ADA31S0KW1-B1&quantity=1",
       "derivedFrom": "C60-38ADA31S0KW1-RO",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident",
       "seedSku": "C60-38ADA31S0KW1-B1"
@@ -90754,8 +90731,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00P0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-42AGM4-S00P0-VK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00P0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00P0-VK"
@@ -91018,8 +90994,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00P0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36AGM4-S00P0-RK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00P0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00P0-RK"
@@ -91282,8 +91257,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00V0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39AGM4-S00V0-RW&quantity=1",
       "derivedFrom": "C63-39AGM4-S00V0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00V0-RW"
@@ -91546,8 +91520,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00V0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39ADA4-S00V0-RW&quantity=1",
       "derivedFrom": "C63-39ADA4-S00V0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00V0-RW"
@@ -91724,8 +91697,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-660/C1266.html?dwopt_C12-38H2H1-S00V0-RK_watchEngraving=no-watch-engraving&dwvar_C1266_WDialBezelColour=GRN&dwvar_C1266_WStrapColourMaterialType=Black%20Rubber&pid=C12-38H2H1-S00V0-RK&quantity=1",
       "derivedFrom": "C12-38H2H1-S00V0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38H2H1-S00V0-RK"
@@ -92218,8 +92190,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00B0-VK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36ADA4-S00B0-VK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00B0-VK"
@@ -92409,8 +92380,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve-40-%28ti%29/C1202.html?dwopt_C12-40ADC1-T00P0-RK_watchEngraving=no-watch-engraving&dwvar_C1202_WDialBezelColour=Nebula%20Purple&dwvar_C1202_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-40ADC1-T00P0-RK&quantity=1",
       "derivedFrom": "C12-40ADC1-T00P0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-40ADC1-T00P0-RK"
@@ -92672,8 +92642,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00K0-VC_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather&pid=C63-39ADA4-S00K0-VC&quantity=1",
       "derivedFrom": "C63-39ADA4-S00K0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00K0-VC"
@@ -92935,8 +92904,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00W0-VC_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather&pid=C63-39AGM4-S00W0-VC&quantity=1",
       "derivedFrom": "C63-39AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00W0-VC"
@@ -93199,8 +93167,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00V0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-39AGM4-S00V0-VK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00V0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00V0-VK"
@@ -93462,8 +93429,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00P0-VK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36ADA4-S00P0-VK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00P0-VK"
@@ -93726,8 +93692,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00B0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-42AGM4-S00B0-VK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00B0-VK"
@@ -93992,8 +93957,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00K0-B1_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39AGM4-S00K0-B1&quantity=1",
       "derivedFrom": "C63-39AGM4-S00K0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00K0-B1"
@@ -94257,8 +94221,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00W0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39ADA4-S00W0-B1&quantity=1",
       "derivedFrom": "C63-39ADA4-S00W0-VC",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00W0-B1"
@@ -94522,8 +94485,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00V0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39ADA4-S00V0-B1&quantity=1",
       "derivedFrom": "C63-39ADA4-S00V0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00V0-B1"
@@ -94786,8 +94748,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36AGM4-S00W0-RW&quantity=1",
       "derivedFrom": "C63-36AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00W0-RW"
@@ -95050,8 +95011,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00P0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39AGM4-S00P0-RK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00P0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00P0-RK"
@@ -95314,8 +95274,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00V0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36ADA4-S00V0-RK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00V0-RK"
@@ -95569,8 +95528,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KK0-NK_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Black&dwvar_C6341_WStrapColourMaterialType=Black%20V-Strap%20-%20wrist%2015.5-18cm&pid=C63-41AGM4-S0KK0-NK&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KK0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KK0-NK"
@@ -95780,8 +95738,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00B1-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Glacier%20Blue&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00B1-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00B1-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-S00B1-RK"
@@ -95994,8 +95951,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-42ADA31S0KK1-RK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Black&dwvar_C632_WSize=42mm&dwvar_C632_WStrapColourMaterialType=Black%20Aquaflex%20Rubber&pid=C60-42ADA31S0KK1-RK&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -96257,8 +96213,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00P0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-39AGM4-S00P0-VK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00P0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00P0-VK"
@@ -96522,8 +96477,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00V0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-42AGM4-S00V0-RK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00V0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00V0-RK"
@@ -97197,8 +97151,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-38ADA31S0KK1-RK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Black&dwvar_C632_WSize=38mm&dwvar_C632_WStrapColourMaterialType=Black%20Aquaflex%20Rubber&pid=C60-38ADA31S0KK1-RK&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -97454,8 +97407,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00K0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36AGM4-S00K0-RK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00K0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00K0-RK"
@@ -97851,8 +97803,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-valour/C6327.html?dwopt_C63-39QCC3-S00K0-B1_braceletResizing=no-resize&dwvar_C6327_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39QCC3-S00K0-B1&quantity=1",
       "derivedFrom": "C63-39QCC3-S00K0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39QCC3-S00K0-B1"
@@ -98115,8 +98066,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00K0-RW_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-39AGM4-S00K0-RW&quantity=1",
       "derivedFrom": "C63-39AGM4-S00K0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00K0-RW"
@@ -98379,8 +98329,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00W0-VC_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36AGM4-S00W0-VC&quantity=1",
       "derivedFrom": "C63-36AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00W0-VC"
@@ -98643,8 +98592,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00B0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather&pid=C63-39AGM4-S00B0-VK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00B0-VK"
@@ -98881,8 +98829,7 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-40ADA31S0KW1-HK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=40mm&dwvar_C632_WStrapColourMaterialType=Black%20Hybrid%20Rubber&pid=C60-40ADA31S0KW1-HK&quantity=1",
       "derivedFrom": "C60-40ADA31S0KW1-RO",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident",
       "seedSku": "C60-40ADA31S0KW1-HK"
@@ -99146,8 +99093,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00B0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-39ADA4-S00B0-B1&quantity=1",
       "derivedFrom": "C63-39ADA4-S00B0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00B0-B1"
@@ -99409,8 +99355,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00K0-VC_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36ADA4-S00K0-VC&quantity=1",
       "derivedFrom": "C63-36ADA4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00K0-VC"
@@ -99620,8 +99565,7 @@
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00W0-RW_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=White&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=White%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00W0-RW&quantity=1",
       "derivedFrom": "C12-38ADA1-S00W0-B0",
       "collections": [
-        "cw-twelve",
-        "cw-atelier"
+        "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
       "seedSku": "C12-38ADA1-S00W0-RW"
@@ -99875,8 +99819,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KV0-NOX_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Khaki&dwvar_C6341_WStrapColourMaterialType=Orange%20V-Strap%20XL%20-%20wrist%2017.5-21cm&pid=C63-41AGM4-S0KV0-NOX&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KV0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KV0-NOX"
@@ -100139,8 +100082,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00W0-VC_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather&pid=C63-42AGM4-S00W0-VC&quantity=1",
       "derivedFrom": "C63-42AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00W0-VC"
@@ -100352,8 +100294,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-42ADA31S0KW1-HK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=42mm&dwvar_C632_WStrapColourMaterialType=Black%20Hybrid%20Rubber&pid=C60-42ADA31S0KW1-HK&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -101056,8 +100997,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00P0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pink&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-42AGM4-S00P0-RK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00P0-RW",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00P0-RK"
@@ -101269,8 +101209,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-38ADA31S0BB1-HB_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Blue&dwvar_C632_WSize=38mm&dwvar_C632_WStrapColourMaterialType=Blue%20Hybrid%20Rubber&pid=C60-38ADA31S0BB1-HB&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -101481,8 +101420,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-40ADA31S0BB1-HB_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Blue&dwvar_C632_WSize=40mm&dwvar_C632_WStrapColourMaterialType=Blue%20Hybrid%20Rubber&pid=C60-40ADA31S0BB1-HB&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -101744,8 +101682,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00B0-VK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Vintage%20Oak%20Leather%20-%20XS&pid=C63-36AGM4-S00B0-VK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00B0-VK"
@@ -102009,8 +101946,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00W0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36ADA4-S00W0-B1&quantity=1",
       "derivedFrom": "C63-36ADA4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00W0-B1"
@@ -102222,8 +102158,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-42ADA31S0BB1-RO2_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Blue&dwvar_C632_WSize=42mm&dwvar_C632_WStrapColourMaterialType=Orange%20Aquaflex%20Rubber&pid=C60-42ADA31S0BB1-RO2&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -102485,8 +102420,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00K0-VC_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather&pid=C63-42AGM4-S00K0-VC&quantity=1",
       "derivedFrom": "C63-42AGM4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00K0-VC"
@@ -102951,8 +102885,7 @@
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-38ADA31S0KW1-HK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=38mm&dwvar_C632_WStrapColourMaterialType=Black%20Hybrid%20Rubber&pid=C60-38ADA31S0KW1-HK&quantity=1",
       "derivedFrom": "C60-38ADA31S0KW1-RO",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident",
       "seedSku": "C60-38ADA31S0KW1-HK"
@@ -103215,8 +103148,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00K0-RW_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=White%20Integrated%20Rubber&pid=C63-36ADA4-S00K0-RW&quantity=1",
       "derivedFrom": "C63-36ADA4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00K0-RW"
@@ -103711,8 +103643,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00B0-B1_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Consort%20Bracelet&pid=C63-36ADA4-S00B0-B1&quantity=1",
       "derivedFrom": "C63-36ADA4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00B0-B1"
@@ -103974,8 +103905,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39AGM4-S00W0-RK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00W0-RK"
@@ -104238,8 +104168,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00K0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39ADA4-S00K0-RK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00K0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00K0-RK"
@@ -104502,8 +104431,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00P0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pink&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36ADA4-S00P0-RK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00P0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00P0-RK"
@@ -104766,8 +104694,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00V0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Pistachio&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39AGM4-S00V0-RK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00V0-B1",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00V0-RK"
@@ -105031,8 +104958,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-42AGM4-S00B0-RK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00B0-RK"
@@ -105295,8 +105221,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00K0-VC_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Camel%20Vintage%20Oak%20Leather&pid=C63-39AGM4-S00K0-VC&quantity=1",
       "derivedFrom": "C63-39AGM4-S00K0-RK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00K0-VC"
@@ -105559,8 +105484,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39ADA4-S00W0-RK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00W0-VC",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00W0-RK"
@@ -105823,8 +105747,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-39ADA4-S00V0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Pistachio&dwvar_C6343_WSize=39mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39ADA4-S00V0-RK&quantity=1",
       "derivedFrom": "C63-39ADA4-S00V0-VK",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39ADA4-S00V0-RK"
@@ -106061,8 +105984,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-40ADA31S0KK1-RK_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=Black&dwvar_C632_WSize=40mm&dwvar_C632_WStrapColourMaterialType=Black%20Aquaflex%20Rubber&pid=C60-40ADA31S0KK1-RK&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -106315,8 +106237,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KK0-NOX_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Black&dwvar_C6341_WStrapColourMaterialType=Orange%20V-Strap%20XL%20-%20wrist%2017.5-21cm&pid=C63-41AGM4-S0KK0-NOX&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KK0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KK0-NOX"
@@ -106810,8 +106731,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36AGM4-S00W0-RK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00W0-RK"
@@ -107074,8 +106994,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-39AGM4-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=39mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-39AGM4-S00B0-RK&quantity=1",
       "derivedFrom": "C63-39AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-39AGM4-S00B0-RK"
@@ -107312,8 +107231,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-40ADA31S0KW1-RO_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=40mm&dwvar_C632_WStrapColourMaterialType=Orange%20Aquaflex%20Rubber&pid=C60-40ADA31S0KW1-RO&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -107575,8 +107493,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00K0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Black&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36ADA4-S00K0-RK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00K0-RK"
@@ -107830,8 +107747,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KV0-NK_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Khaki&dwvar_C6341_WStrapColourMaterialType=Black%20V-Strap%20-%20wrist%2015.5-18cm&pid=C63-41AGM4-S0KV0-NK&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KV0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KV0-NK"
@@ -108095,8 +108011,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=White&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-42AGM4-S00W0-RK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00W0-RK"
@@ -108590,8 +108505,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-36AGM4-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Sky%20Blue&dwvar_C6342_WSize=36mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36AGM4-S00B0-RK&quantity=1",
       "derivedFrom": "C63-36AGM4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36AGM4-S00B0-RK"
@@ -108854,8 +108768,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=White&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36ADA4-S00W0-RK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00W0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00W0-RK"
@@ -109350,8 +109263,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-gmt/C6342.html?dwopt_C63-42AGM4-S00K0-RK_watchEngraving=no-watch-engraving&dwvar_C6342_WDialBezelColour=Black&dwvar_C6342_WSize=42mm&dwvar_C6342_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-42AGM4-S00K0-RK&quantity=1",
       "derivedFrom": "C63-42AGM4-S00K0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-42AGM4-S00K0-RK"
@@ -109585,8 +109497,7 @@
       "inStock": true,
       "sourceUrl": "https://www.christopherward.com/c60-trident-pro-300---bundle/C632.html?dwopt_C60-38ADA31S0KW1-RO_watchEngraving=no-watch-engraving&dwvar_C632_WDialBezelColour=White%2FBlack&dwvar_C632_WSize=38mm&dwvar_C632_WStrapColourMaterialType=Orange%20Aquaflex%20Rubber&pid=C60-38ADA31S0KW1-RO&quantity=1",
       "collections": [
-        "cw-trident",
-        "cw-dive"
+        "cw-trident"
       ],
       "primaryCollection": "cw-trident"
     },
@@ -109848,8 +109759,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-automatic/C6343.html?dwopt_C63-36ADA4-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C6343_WDialBezelColour=Sky%20Blue&dwvar_C6343_WSize=36mm&dwvar_C6343_WStrapColourMaterialType=Black%20Integrated%20Rubber&pid=C63-36ADA4-S00B0-RK&quantity=1",
       "derivedFrom": "C63-36ADA4-S00B0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-36ADA4-S00B0-RK"
@@ -110459,8 +110369,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KK0-NKX_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Black&dwvar_C6341_WStrapColourMaterialType=Black%20V-Strap%20XL%20-%20wrist%2017.5-21cm&pid=C63-41AGM4-S0KK0-NKX&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KK0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KK0-NKX"
@@ -110714,8 +110623,7 @@
       "sourceUrl": "https://www.christopherward.com/c63-sealander-extreme-gmt/C6341.html?dwopt_C63-41AGM4-S0KV0-NKX_watchEngraving=no-watch-engraving&dwvar_C6341_WDialBezelColour=Khaki&dwvar_C6341_WStrapColourMaterialType=Black%20V-Strap%20XL%20-%20wrist%2017.5-21cm&pid=C63-41AGM4-S0KV0-NKX&quantity=1",
       "derivedFrom": "C63-41AGM4-S0KV0-B0",
       "collections": [
-        "cw-sealander",
-        "cw-adventure-field"
+        "cw-sealander"
       ],
       "primaryCollection": "cw-sealander",
       "seedSku": "C63-41AGM4-S0KV0-NKX"

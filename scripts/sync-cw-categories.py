@@ -10,7 +10,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/Users/jeonghyunlee/Documents/briq")
+ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/cw/cw-catalog-raw.json"
 UA = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",

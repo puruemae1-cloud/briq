@@ -5,7 +5,7 @@ from __future__ import annotations
 import json, re, html as H
 from pathlib import Path
 
-ROOT = Path("/Users/jeonghyunlee/Documents/briq")
+ROOT = Path(__file__).resolve().parents[1]
 RAW = json.loads((ROOT / "src/data/cw/cw-catalog-raw.json").read_text())
 RAW_BY_SKU = {p["sku"]: p for p in RAW["products"] if p.get("sku")}
 ENR_PATH = ROOT / "src/data/cw/cw-pdp-enriched.json"
@@ -747,7 +747,11 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "badge": badge,
             "sku": primary_sku,
             "sourceUrl": source_url,
-            "inStock": en.get("inStock", True),
+            "inStock": bool(
+                en["inStock"]
+                if "inStock" in en
+                else members[0].get("inStock", True)
+            ),
             "registeredAt": None,  # set below
             "editTier": "signature",
             "variants": variants if len(variants) > 1 else [],
