@@ -517,13 +517,70 @@ def color_from_tags_ordered(handle: str, tags: list[str]) -> str | None:
     return " ".join(present)
 
 
+HANDLE_PRODUCT_TOKENS = {
+    "waterproof",
+    "windproof",
+    "water",
+    "repellent",
+    "repellant",
+    "breathable",
+    "insulating",
+    "thermal",
+    "golf",
+    "jacket",
+    "vest",
+    "pants",
+    "trousers",
+    "shorts",
+    "shirt",
+    "skirt",
+    "hoodie",
+    "sweatshirt",
+    "mid",
+    "layer",
+    "base",
+    "top",
+    "bottom",
+    "hat",
+    "cap",
+    "visor",
+    "belt",
+    "gloves",
+    "neck",
+    "warmer",
+    "short",
+    "sleeve",
+    "sleeveless",
+    "long",
+    "half",
+    "full",
+    "zip",
+    "uv",
+    "protection",
+    "with",
+    "inner",
+    "and",
+    "for",
+}
+
+
+def clean_color_remainder(remainder: str) -> str | None:
+    parts = [p for p in remainder.split("-") if p]
+    color_parts = [p for p in parts if p not in HANDLE_PRODUCT_TOKENS]
+    if not color_parts:
+        return None
+    if not any(p in COLOR_WORDS for p in color_parts):
+        return None
+    return "-".join(color_parts)
+
+
 def color_from_handle_group(handles: list[str], handle: str, tags: list[str]) -> str:
-    if len(handles) == 1:
-        return (
-            color_from_handle_suffix(handle)
-            or color_from_tags_ordered(handle, tags)
-            or "Default"
-        )
+    tagged = color_from_tags_ordered(handle, tags)
+    suffix = color_from_handle_suffix(handle)
+
+    if len(handles) <= 1:
+        return suffix or tagged or "Default"
+
     prefix = longest_common_prefix(handles)
     while prefix and not prefix.endswith("-"):
         if all(len(h) > len(prefix) and h[len(prefix)] == "-" for h in handles):
@@ -539,13 +596,10 @@ def color_from_handle_group(handles: list[str], handle: str, tags: list[str]) ->
         else:
             remainder = ""
     remainder = remainder.strip("-")
-    if remainder:
-        return title_case_color(remainder)
-    return (
-        color_from_handle_suffix(handle)
-        or color_from_tags_ordered(handle, tags)
-        or "Default"
-    )
+    cleaned = clean_color_remainder(remainder) if remainder else None
+    if cleaned:
+        return title_case_color(cleaned)
+    return suffix or tagged or (title_case_color(remainder) if remainder else "Default")
 
 
 def ts_str(s: str) -> str:
