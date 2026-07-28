@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-28T15:15:55Z",
+  "scrapedAt": "2026-07-28T16:35:52Z",
   "models": {
     "c1-bel-canto-lumi%C3%A8re": {
       "modelKey": "c1-bel-canto-lumi%C3%A8re",
@@ -7,7 +7,7 @@
       "sections": [
         {
           "titleEn": "Night chime",
-          "bodyEn": "FS01 chiming movement Created by CW’s technical director Frank Seltzer, Calibre FS01 is an ingenious modified movement with Christopher Ward’s DNA in every cog and spring. With an inspired piece of lateral thinking, Frank realised that CW’s ‘jumping hour’ movement could be adapted to create a chiming sound on the hour, every hour. More than 60 new components form the striking mechanism module which sits atop a Sellita SW200-1 base movement which provides the 38-hour power reserve.",
+          "bodyEn": "Lume – and even more lume At its base lies an all-new dial, printed with multiple layers of Super-LumiNova® and arranged in a shimmering sunray pattern. On the Lumière Neon, the lower two sectors glow blue, while the upper area is a vivid green. With the Nova, the sunray-patterned dial has been printed with Super-LumiNova® White X1 for maximum impact.",
           "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/story-1.webp",
           "videoUrl": "https://player.vimeo.com/video/1136066198?h=b09a067933&badge=0&autopause=0&player_id=0&app_id=58479",
           "layout": "default",
@@ -15,7 +15,7 @@
         },
         {
           "titleEn": "FS01 chiming movement",
-          "bodyEn": "A Globolight® ring and tipped hands for nocturnal accuracy",
+          "bodyEn": "Sunray-patterned dial printed with Super-LumiNova® for after-dark illumination.",
           "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/story-2.webp",
           "videoUrl": null,
           "layout": "default",
@@ -24,22 +24,6 @@
         {
           "titleEn": "",
           "bodyEn": "Sunray-patterned dial printed with Super-LumiNova® for after-dark illumination.",
-          "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "A Globolight® ring and tipped hands for nocturnal accuracy",
-          "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "‘Songbird’ striking hammer hits the steel spring to achieve the ‘beautiful singing’ of the D note",
           "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -47,13 +31,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "The 41mm Light-catcher™ case is forged from Grade 5 titanium to amplify the sound of the chime",
+          "bodyEn": "A Globolight® ring and tipped hands for nocturnal accuracy",
           "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "‘Songbird’ striking hammer hits the steel spring to achieve the ‘beautiful singing’ of the D note",
+          "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-5.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "The 41mm Light-catcher™ case is forged from Grade 5 titanium to amplify the sound of the chime",
+          "image": "/products/cw-editorial/c1-bel-canto-lumi%C3%A8re/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "c63-sealander-automatic": {
       "modelKey": "c63-sealander-automatic",
@@ -78,22 +79,6 @@
         {
           "titleEn": "",
           "bodyEn": "Slimmer 10.9mm Light-catcher™ case",
-          "image": "/products/cw-editorial/c63-sealander-automatic/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "New conical crown without crown guards",
-          "image": "/products/cw-editorial/c63-sealander-automatic/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Diamond-polished, 4 faceted, tapered indexes",
           "image": "/products/cw-editorial/c63-sealander-automatic/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -101,7 +86,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Ingenious new iLink™ system",
+          "bodyEn": "New conical crown without crown guards",
           "image": "/products/cw-editorial/c63-sealander-automatic/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -109,13 +94,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Linear and circular brushed skeletonised rotor arm",
+          "bodyEn": "Diamond-polished, 4 faceted, tapered indexes",
           "image": "/products/cw-editorial/c63-sealander-automatic/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Ingenious new iLink™ system",
+          "image": "/products/cw-editorial/c63-sealander-automatic/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Linear and circular brushed skeletonised rotor arm",
+          "image": "/products/cw-editorial/c63-sealander-automatic/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c63-sealander-gmt": {
       "modelKey": "c63-sealander-gmt",
@@ -140,22 +142,6 @@
         {
           "titleEn": "",
           "bodyEn": "Re-proportioned bezel and slimmer Light-catcher™ case",
-          "image": "/products/cw-editorial/c63-sealander-gmt/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Diamond-polished applied date window",
-          "image": "/products/cw-editorial/c63-sealander-gmt/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "New conical crown with crown guards",
           "image": "/products/cw-editorial/c63-sealander-gmt/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -163,7 +149,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Bolder, fully painted GMT hand",
+          "bodyEn": "Diamond-polished applied date window",
           "image": "/products/cw-editorial/c63-sealander-gmt/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -171,7 +157,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Ingenious new iLink™ system",
+          "bodyEn": "New conical crown with crown guards",
           "image": "/products/cw-editorial/c63-sealander-gmt/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -179,13 +165,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Linear and circular brushed skeletonised rotor arm",
+          "bodyEn": "Bolder, fully painted GMT hand",
           "image": "/products/cw-editorial/c63-sealander-gmt/caption-6.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Ingenious new iLink™ system",
+          "image": "/products/cw-editorial/c63-sealander-gmt/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Linear and circular brushed skeletonised rotor arm",
+          "image": "/products/cw-editorial/c63-sealander-gmt/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "the-twelve-%28ti%29-pic%27n%27mix": {
       "modelKey": "the-twelve-%28ti%29-pic%27n%27mix",
@@ -195,7 +198,7 @@
           "titleEn": "Sweet dreams",
           "bodyEn": "Sellita SW300-1 COSC Automatic Launched in 2008, Sellita’s 25-jewel SW300-1 automatic movement is one of the most respected calibres in Swiss watchmaking. At 25.6mm in diameter and with a height of 3.6 mm (one millimetre less than the SW200-1), it has a frequency of 28,800 vibrations per hour (4 Hz) and boasts a power reserve of 56 hours. Seen as an alternative to ETA’s 2892-A2 calibre, the SW300-1 can be customised with various complications, including date, moonphase, and GMT functions.",
           "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/story-1.webp",
-          "videoUrl": null,
+          "videoUrl": "https://player.vimeo.com/video/1187335135?h=affe0ba918&badge=0&autopause=0&player_id=0&app_id=58479",
           "layout": "default",
           "reverse": true
         },
@@ -210,22 +213,6 @@
         {
           "titleEn": "",
           "bodyEn": "Crunchy, sugar-crystal dial in six high-calorie shades.",
-          "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Exhibition caseback with sweet Pic ’n’ Mix printing.",
-          "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Thirty-six millimetre, Grade 2 titanium case finished three ways.",
           "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -233,13 +220,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Each watch is packaged with a striped Pic ’n’ Mix paper bag.",
+          "bodyEn": "Exhibition caseback with sweet Pic ’n’ Mix printing.",
           "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Thirty-six millimetre, Grade 2 titanium case finished three ways.",
+          "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-5.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Each watch is packaged with a striped Pic ’n’ Mix paper bag.",
+          "image": "/products/cw-editorial/the-twelve-%28ti%29-pic%27n%27mix/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "c60-sapphire-edge": {
       "modelKey": "c60-sapphire-edge",
@@ -248,44 +252,45 @@
         {
           "titleEn": "Sapphire. Power. Lume",
           "bodyEn": "Sellita SW300 Automatic Powering the C60 Sapphire Edge is Sellita’s 25-jewel SW300 automatic movement, which boasts a power reserve of 56 hours. At 25.6mm in diameter and with a height of 3.6mm – one millimetre less than the SW200-1 – its thinner profile helped us reduce the case thickness and increase the watch’s wearability.",
-          "image": "/products/cw-editorial/c60-sapphire-edge/story-1.webp",
-          "videoUrl": null,
+          "image": "/products/cw-editorial/c60-sapphire-edge/story-1.png",
+          "videoUrl": "https://player.vimeo.com/video/1048848241?h=d79a2b7669",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Sellita SW300 Automatic",
           "bodyEn": "Sapphire The sapphire countdown bezel adds a refined sheen without compromising toughness. It’s engineered to provide the perfect ‘click’.",
-          "image": "/products/cw-editorial/c60-sapphire-edge/story-2.webp",
+          "image": "/products/cw-editorial/c60-sapphire-edge/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-sapphire-edge/caption-1.webp",
+          "titleEn": "Sapphire",
+          "bodyEn": "The sapphire countdown bezel adds a refined sheen without compromising toughness. It’s engineered to provide the perfect ‘click’.",
+          "image": "/products/cw-editorial/c60-sapphire-edge/caption-3.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-sapphire-edge/caption-2.webp",
+          "titleEn": "Power",
+          "bodyEn": "Sellita’s 25-jewel SW300 automatic movement isn’t just accurate, but also provides a power reserve of 56 hours.",
+          "image": "/products/cw-editorial/c60-sapphire-edge/caption-4.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
-          "image": "/products/cw-editorial/c60-sapphire-edge/caption-3.webp",
+          "titleEn": "Lume",
+          "bodyEn": "From the lume of the Aquaflex rubber strap to the Super-LumiNova-filled handset and indexes, the Edge places luminosity front and centre.",
+          "image": "/products/cw-editorial/c60-sapphire-edge/caption-5.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 5
     },
     "c63-true-gmt": {
       "modelKey": "c63-true-gmt",
@@ -310,22 +315,6 @@
         {
           "titleEn": "",
           "bodyEn": "The first True GMT calibre from a British brand, CW-002 is COSC-certified and joins the small, elite circle of GMT movements. Built on CW-001, it integrates a new GMT mechanism without increasing movement height.",
-          "image": "/products/cw-editorial/c63-true-gmt/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "40.5mm Light-catcher™ case with box-domed sapphire crystals front and back, alternating brushed and polished surfaces, and balanced proportions for everyday comfort.",
-          "image": "/products/cw-editorial/c63-true-gmt/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Diamond-polished hour, minute, and small seconds hands, all filled with Super-LumiNova® for low-light legibility; GMT hand and power-reserve indicator lacquered for contrast.",
           "image": "/products/cw-editorial/c63-true-gmt/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -333,7 +322,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Partially open and deliberately layered, the dial prioritises local time and home time while recessing secondary indicators. Small seconds, power reserve, date, and exposed GMT bridge add depth and utility.",
+          "bodyEn": "40.5mm Light-catcher™ case with box-domed sapphire crystals front and back, alternating brushed and polished surfaces, and balanced proportions for everyday comfort.",
           "image": "/products/cw-editorial/c63-true-gmt/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -341,7 +330,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Rhodium-plated movement with circular Côtes de Genève, visible twin barrels and balance wheel, and a tungsten rotor with sunray-polished and sandblasted surfaces.",
+          "bodyEn": "Diamond-polished hour, minute, and small seconds hands, all filled with Super-LumiNova® for low-light legibility; GMT hand and power-reserve indicator lacquered for contrast.",
           "image": "/products/cw-editorial/c63-true-gmt/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -349,13 +338,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Applied markers, polished and faceted, filled with Super-LumiNova® for clear visibility in all conditions.",
+          "bodyEn": "Partially open and deliberately layered, the dial prioritises local time and home time while recessing secondary indicators. Small seconds, power reserve, date, and exposed GMT bridge add depth and utility.",
           "image": "/products/cw-editorial/c63-true-gmt/caption-6.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Rhodium-plated movement with circular Côtes de Genève, visible twin barrels and balance wheel, and a tungsten rotor with sunray-polished and sandblasted surfaces.",
+          "image": "/products/cw-editorial/c63-true-gmt/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Applied markers, polished and faceted, filled with Super-LumiNova® for clear visibility in all conditions.",
+          "image": "/products/cw-editorial/c63-true-gmt/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c1-jump-hour-mk-v": {
       "modelKey": "c1-jump-hour-mk-v",
@@ -371,7 +377,7 @@
         },
         {
           "titleEn": "Calibre JJ01",
-          "bodyEn": "The four-tier dial creates extraordinary visual depth by day, and by night",
+          "bodyEn": "Mastery of sapphire – heavily box-domed crystal, and unique design sapphire minute hand",
           "image": "/products/cw-editorial/c1-jump-hour-mk-v/story-2.webp",
           "videoUrl": null,
           "layout": "default",
@@ -380,22 +386,6 @@
         {
           "titleEn": "",
           "bodyEn": "Mastery of sapphire – heavily box-domed crystal, and unique design sapphire minute hand",
-          "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "The four-tier dial creates extraordinary visual depth by day, and by night",
-          "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Dial ring and minute hand are undercoated with multiple layers of Super-LumiNova®",
           "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -403,7 +393,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Detailed caseback denoting the 12-hour stops of the jump hour wheel and the minutes between",
+          "bodyEn": "The four-tier dial creates extraordinary visual depth by day, and by night",
           "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -411,13 +401,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Low-light legibility in a truly original way our sapphire dial ring allows every concealed hour to charge, offering all-night time-telling",
+          "bodyEn": "Dial ring and minute hand are undercoated with multiple layers of Super-LumiNova®",
           "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Detailed caseback denoting the 12-hour stops of the jump hour wheel and the minutes between",
+          "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Low-light legibility in a truly original way our sapphire dial ring allows every concealed hour to charge, offering all-night time-telling",
+          "image": "/products/cw-editorial/c1-jump-hour-mk-v/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c1-bel-canto-classic": {
       "modelKey": "c1-bel-canto-classic",
@@ -427,75 +434,68 @@
           "titleEn": "How to mix yours",
           "bodyEn": "The Bel Canto Classic sits alongside the original, but brings something more complex, more traditional – more, well, classic. The box sapphire crystal delivers mid-century Italian charm, while the Roman numerals on the time-telling dial add the elegance of something that's never needed to shout. If the original Bel Canto was made for the awards ceremony, the Classic makes its mark at the invite-only aperitivo.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/story-1.webp",
-          "videoUrl": null,
+          "videoUrl": "https://player.vimeo.com/video/1023941379",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "FS01: the mechanism behind the music",
-          "bodyEn": "One note. Perfected. An extrapolation of our JJ01 ‘jumping hour’ module, Calibre FS01 creates a D-note chime thanks to a U-shaped gong that doubles back on itself around the rim of the face, and a bird-shaped hammer mechanism, where the beak indicates whether the complication is on or off, and the tail strikes to make the sound.",
+          "bodyEn": "",
           "image": "/products/cw-editorial/c1-bel-canto-classic/story-2.webp",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c1-bel-canto-classic/caption-1.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c1-bel-canto-classic/caption-2.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "One note. Perfected.",
+          "bodyEn": "An extrapolation of our JJ01 ‘jumping hour’ module, Calibre FS01 creates a D-note chime thanks to a U-shaped gong that doubles back on itself around the rim of the face, and a bird-shaped hammer mechanism, where the beak indicates whether the complication is on or off, and the tail strikes to make the sound.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/caption-3.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "The colour that moves",
+          "bodyEn": "Advanced ‘femto’ lasers render Bel Canto Classic's guilloché finish in three dimensions – a technique that creates greater detail and intricacy than traditional punched guilloché ever could. In Negroni, that shimmering effect becomes something else entirely. Deep scarlet in stillness. Warm amber on the move. The colour of Campari held up to the last light of the evening.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/caption-4.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Time flies",
+          "bodyEn": "With much of the face given up to key mechanical parts in a glorious open-worked style, Bel Canto relies for its time-telling on a smaller subdial that ‘floats’ over the platine, the base-layer disc a watch like this has in place of a traditional dial. It all gives a fascinating feeling of depth, while the elegant simplicity of Roman numerals and a new, restrained handset emphasise the Classic’s old-school refinement.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/caption-5.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Built to amplify",
+          "bodyEn": "Christopher Ward’s famous Light-catcher™ case has proved to be one of our most crucial, versatile signatures, and with Bel Canto it’s had a subtle makeover to help it best reverberate with sound. The first ever CW case to be made from Grade 5 titanium – less dense than steel, so it amplifies the chime – it’s been optimised inside and out to produce the most pleasing possible chime.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/caption-6.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "Architecture worth admiring",
+          "bodyEn": "Open-worked watches like Bel Canto feature fascinating multi-layered architecture, so some components exist below the coloured platine, while others are displayed proudly above it – not least the vital hammer, the gong, and the bridges that support them. All are, of course, exquisitely polished by some of Switzerland’s finest finishers.",
           "image": "/products/cw-editorial/c1-bel-canto-classic/caption-7.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
+        },
+        {
+          "titleEn": "The crystal that earns its place",
+          "bodyEn": "A box sapphire crystal, unique to the Bel Canto’s Classic, reproduces much of the charming look and feel of vintage acrylic crystals, while retaining all the scratch-resistance of sapphire. It even visually slims the watch slightly, too: win-win (and, indeed, win).",
+          "image": "/products/cw-editorial/c1-bel-canto-classic/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "twelve-x-black-shadow": {
       "modelKey": "twelve-x-black-shadow",
@@ -511,7 +511,7 @@
         },
         {
           "titleEn": "Calibre CW-001",
-          "bodyEn": "Domed sapphire crystals let you view every shining surface of CW-001.",
+          "bodyEn": "The multi-angled bridgework is made with the Elara NS CNC milling machine.",
           "image": "/products/cw-editorial/twelve-x-black-shadow/story-2.webp",
           "videoUrl": null,
           "layout": "default",
@@ -520,22 +520,6 @@
         {
           "titleEn": "",
           "bodyEn": "The multi-angled bridgework is made with the Elara NS CNC milling machine.",
-          "image": "/products/cw-editorial/twelve-x-black-shadow/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Domed sapphire crystals let you view every shining surface of CW-001.",
-          "image": "/products/cw-editorial/twelve-x-black-shadow/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Lume-filled rhodium minute ring and handset deliver luminosity after dark.",
           "image": "/products/cw-editorial/twelve-x-black-shadow/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -543,7 +527,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "The bracelet’s butterfly clasp has an adjustment mechanism – a first in The Twelve series – letting you change the length by up to 1.5mm per side - 3mm total.",
+          "bodyEn": "Domed sapphire crystals let you view every shining surface of CW-001.",
           "image": "/products/cw-editorial/twelve-x-black-shadow/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -551,7 +535,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "The watch’s matte-black DLC coating whispers its presence.",
+          "bodyEn": "Lume-filled rhodium minute ring and handset deliver luminosity after dark.",
           "image": "/products/cw-editorial/twelve-x-black-shadow/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -559,13 +543,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "CW-001 delivers chronometer accuracy with a five-day power reserve.",
+          "bodyEn": "The bracelet’s butterfly clasp has an adjustment mechanism – a first in The Twelve series – letting you change the length by up to 1.5mm per side - 3mm total.",
           "image": "/products/cw-editorial/twelve-x-black-shadow/caption-6.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "The watch’s matte-black DLC coating whispers its presence.",
+          "image": "/products/cw-editorial/twelve-x-black-shadow/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "CW-001 delivers chronometer accuracy with a five-day power reserve.",
+          "image": "/products/cw-editorial/twelve-x-black-shadow/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c60-pro-300-bronze": {
       "modelKey": "c60-pro-300-bronze",
@@ -575,7 +576,7 @@
           "titleEn": "Opulence, elegance and excellence",
           "bodyEn": "As with previous CW ‘ombré’ watches, the lacquered deep-brown dial gradually changes from light to dark toward the edge – without sacrificing legibility. The lume-filled handset delivers clarity and precision, while the ‘5N gold’ indexes – also filled with Super-LumiNova® – boast diamond-polished facets that catch the light. The date wheel at 6 o’clock is colour-matched to the dial, while the applied twin-flags logo – also in 5N gold – adds balance and depth.",
           "image": "/products/cw-editorial/c60-pro-300-bronze/story-1.webp",
-          "videoUrl": null,
+          "videoUrl": "https://player.vimeo.com/video/842555241?h=c8c811b313",
           "layout": "default",
           "reverse": true
         },
@@ -588,46 +589,47 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-pro-300-bronze/caption-1.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-pro-300-bronze/caption-2.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Lacquered, shaded, perfected",
+          "bodyEn": "Each dial is spun at high speed during the application of paint – a process which takes the shade from light to dark as you move away from the centre. Layers of lacquer are then applied to increase its lustre.",
           "image": "/products/cw-editorial/c60-pro-300-bronze/caption-3.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "The inside view",
+          "bodyEn": "If you like to see elite Swiss watchmaking up close, the chronometer-certified Sellita SW200 automatic movement, accurate to -4/+6 seconds per day, can be enjoyed through the clear caseback.",
           "image": "/products/cw-editorial/c60-pro-300-bronze/caption-4.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Bronze and beautiful",
+          "bodyEn": "Both the 42mm and 44mm bronze Light-catcher™ case has been designed to stand out, but thanks to its sculpted form, will sit close to your wrist. It’ll also develop a unique patina over time.",
           "image": "/products/cw-editorial/c60-pro-300-bronze/caption-5.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Clarity you can feel",
+          "bodyEn": "Engineered for pro-diving use, the unidirectional 120-click bezel is crafted from non-scratch ceramic, deep-filled with Super-LumiNova® Grade X1 BL C1 for visibility in low light.",
+          "image": "/products/cw-editorial/c60-pro-300-bronze/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "A case to fall in love with",
+          "bodyEn": "Both CW’s twin-flags logo, which represents the company’s English and Swiss arms, and the ‘5N gold’ indexes, have been applied to the dial – adding depth and balance.",
+          "image": "/products/cw-editorial/c60-pro-300-bronze/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c60-trident-gmt-300": {
       "modelKey": "c60-trident-gmt-300",
@@ -636,60 +638,61 @@
         {
           "titleEn": "The ultimate international timing device",
           "bodyEn": "Whichever model you choose, the perfectly chamfered hour indexes have been filled with even more Super-LumiNova® Grade X1 BL C1, while the twin-flags logo is applied – and carries a subtle brushed finish. The lume-filled handset makes telling the time a dream, while the fourth brightly-coloured GMT hand – also filled with lume – lets you monitor another time zone with accuracy, day or night.",
-          "image": "/products/cw-editorial/c60-trident-gmt-300/story-1.webp",
-          "videoUrl": null,
+          "image": "/products/cw-editorial/c60-trident-gmt-300/story-1.png",
+          "videoUrl": "https://player.vimeo.com/video/842555241?h=c8c811b313",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Sellita SW330-2 Automatic",
           "bodyEn": "Greenwich mean time The ‘GMT’ stands for Greenwich Mean Time – mean solar time at the Prime Meridian in Greenwich, London. It serves as a global time standard, often used to coordinate time across different regions – hence its use in aviation, and following this, as a horological complication.",
-          "image": "/products/cw-editorial/c60-trident-gmt-300/story-2.webp",
+          "image": "/products/cw-editorial/c60-trident-gmt-300/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-trident-gmt-300/caption-1.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-trident-gmt-300/caption-2.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Greenwich mean time",
+          "bodyEn": "The ‘GMT’ stands for Greenwich Mean Time – mean solar time at the Prime Meridian in Greenwich, London. It serves as a global time standard, often used to coordinate time across different regions – hence its use in aviation, and following this, as a horological complication.",
           "image": "/products/cw-editorial/c60-trident-gmt-300/caption-3.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Sellita SW330-2",
+          "bodyEn": "Sellita’s 25-jewel GMT calibre lets you monitor any of the world’s time zones, by bringing the GMT hand together with the 24-hour bezel. It also delivers a power reserve of up to 56 hours.",
           "image": "/products/cw-editorial/c60-trident-gmt-300/caption-4.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Bi-directional bezel",
+          "bodyEn": "The bi-directional ceramic bezel has been split into two colours to separate ‘night’ and ‘day’ sections on the 24-hour clock – with luminous numerals on the ‘day’ half. Using the bezel with the GMT hand allows you to monitor up to three time zones.",
           "image": "/products/cw-editorial/c60-trident-gmt-300/caption-5.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Polished performance",
+          "bodyEn": "Whether you choose the black or white model, the highly polished surface provides a perfect background for the handset, and a home for the date window and applied logo.",
+          "image": "/products/cw-editorial/c60-trident-gmt-300/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "24hr visibility",
+          "bodyEn": "If you’re a lume-lover – guilty! – then the larger indexes and handset are deep-filled with Super-LumiNova® Grade X1 BL C1 for timekeeping in the dark.",
+          "image": "/products/cw-editorial/c60-trident-gmt-300/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c60-trident-pro-300": {
       "modelKey": "c60-trident-pro-300",
@@ -705,53 +708,46 @@
         },
         {
           "titleEn": "Sellita SW200-1 automatic movement",
-          "bodyEn": "“The new Christopher Ward C60 Trident Pro 300 collection definitely has massive appeal. This series will be perfect for people looking for an affordable dive watch that has it all, from a set of great specs and modern looks to a variety of different color and strap options. And by affordable, I mean really affordable.” – Jorg Weppelink, Author",
-          "image": "/products/cw-editorial/c60-trident-pro-300/story-2.jpg",
+          "bodyEn": "“Christopher Ward’s reputation has skyrocketed because of its refusal to abide by the insane markup status quo of other high-end watchmakers. It also has the internet to thank, since the brand’s popularity on watch forums has helped it secure itself as a cult favorite as well.” – Ethan Brehm, Writer",
+          "image": null,
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
+          "titleEn": "A slimmer case",
+          "bodyEn": "The Light-catcher™ case – available in 38, 40, 42 and 44mm sizes – is waterproof to 300m, which has enabled our engineers to reduce its thickness by up to 1.9mm.",
           "image": "/products/cw-editorial/c60-trident-pro-300/caption-1.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "A logo to love",
+          "bodyEn": "Our twin-flags logo, which represents CW’s joint centres of England and Switzerland, is at 12 o’clock, while balance is provided by the date window, with self-coloured date disc, at 6.",
           "image": "/products/cw-editorial/c60-trident-pro-300/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Metal guru",
+          "bodyEn": "The redesigned bracelet, crafted in marine-grade stainless steel, boasts an increased taper – 16.5mm at the clasp – and an improved micro-adjustment mechanism. Plus, it now boasts screw links rather than pins.",
           "image": "/products/cw-editorial/c60-trident-pro-300/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "See it all",
+          "bodyEn": "If you like to see Swiss horology in the metal, the highly-finished Sellita SW200-1 automatic movement can be viewed through the transparent crystal case back.",
           "image": "/products/cw-editorial/c60-trident-pro-300/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
-          "image": "/products/cw-editorial/c60-trident-pro-300/caption-5.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "c1-moonphase-40": {
       "modelKey": "c1-moonphase-40",
@@ -761,87 +757,56 @@
           "titleEn": "Perpetual lunacy",
           "bodyEn": "Thanks to the genius of Calibre JJ04, our in-house modular movement, the moon is linked to the hour hand and is in constant motion, with the phases of the moon represented in a single smooth movement. If the watch is kept wound, JJ04 delivers accuracy for 128 years. And you can see the magic of mechanical watchmaking by turning the piece over and gazing through the sapphire case back at the movement.",
           "image": null,
-          "videoUrl": null,
-          "layout": "default",
-          "reverse": true
-        },
-        {
-          "titleEn": "Calibre JJ04 Automatic Moonphase",
-          "bodyEn": "Crazy about the details The dial is made from aventurine – a translucent glass invented on the island of Murano, Venice – infused with reflective flakes of copper oxide that resemble the night sky. The radically unadorned dial carries no markings apart from the words ‘Swiss Made’ at 6 o’clock, so you can experience both the beauty of the oversized moon, and the shimmer of aventurine as it plays with the light.",
-          "image": "/products/cw-editorial/c1-moonphase-40/story-2.jpg",
           "videoUrl": "https://player.vimeo.com/video/877511692?h=b9919fda1c",
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c1-moonphase-40/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "titleEn": "Calibre JJ04 Automatic Moonphase",
+          "bodyEn": "Unlike most moonphase complications that transition once per day, JJ04 offers a more dynamic approach. Using the Sellita SW220 as a base, the date wheel, along with its spring-loading assembly, have been stripped out and replaced by four further wheels to drive the moon disc, with two more required for the setting mechanism.",
+          "image": "/products/cw-editorial/c1-moonphase-40/story-1.jpg",
+          "videoUrl": "https://player.vimeo.com/video/877511692?h=b9919fda1c",
+          "layout": "default",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "Crazy about the details",
+          "bodyEn": "The dial is made from aventurine – a translucent glass invented on the island of Murano, Venice – infused with reflective flakes of copper oxide that resemble the night sky. The radically unadorned dial carries no markings apart from the words ‘Swiss Made’ at 6 o’clock, so you can experience both the beauty of the oversized moon, and the shimmer of aventurine as it plays with the light.",
           "image": "/products/cw-editorial/c1-moonphase-40/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "JJ04: perpetually brilliant",
+          "bodyEn": "The moonphase is powered by CW’s own modular movement, JJ04, which is able to follow the waxing (and waning) of the moon accurately for 128 years. This also allows the watch’s ‘moons’ to chart a continuous, uninterrupted journey across the dial.",
           "image": "/products/cw-editorial/c1-moonphase-40/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Dark side of the moon",
+          "bodyEn": "If you like to get close to the magic of traditional watchmaking, you can view the movement through the exhibition back. Note the decorated rotor, which transfers energy to the mainspring and powers the watch.",
           "image": "/products/cw-editorial/c1-moonphase-40/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Our best moon yet",
+          "bodyEn": "Constructed in Globolight, a ceramic-Super-LumiNova mix which allows for intricate sculpting, the moon – or moons, there are two in constant rotation – is 25 percent bigger than any previous CW ‘moon’. The increased aperture lets you view even more ‘moon’ than ever before.",
           "image": "/products/cw-editorial/c1-moonphase-40/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
-          "image": "/products/cw-editorial/c1-moonphase-40/caption-6.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
-          "image": "/products/cw-editorial/c1-moonphase-40/caption-7.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
-          "image": "/products/cw-editorial/c1-moonphase-40/caption-8.jpg",
-          "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "the-c12-loco": {
       "modelKey": "the-c12-loco",
-      "sourceUrl": "https://www.christopherward.com/the-c12-loco-watches/the-c12-loco/C12-41H6D1-S00B0-B0.html",
+      "sourceUrl": "https://www.christopherward.com/sports-watches/the-c12-loco/C12-41H6D1-S00W0-RB.html",
       "sections": [
         {
           "titleEn": "Poetry in motion",
@@ -853,85 +818,78 @@
         },
         {
           "titleEn": "Introducing Calibre CW-003",
-          "bodyEn": "Architecture and artistry For all its intricate, whirring elegance, you never for one moment forget that The C12 Loco is a sports watch, with everything that implies: technical ability; a crisp, clean contemporary confidence. It’s nothing less than the spiritual child of Louis Cartier and Le Corbusier working in unlikely but delightful harmony…",
-          "image": "/products/cw-editorial/the-c12-loco/story-2.jpg",
+          "bodyEn": "",
+          "image": "/products/cw-editorial/the-c12-loco/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/the-c12-loco/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/the-c12-loco/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Architecture and artistry",
+          "bodyEn": "For all its intricate, whirring elegance, you never for one moment forget that The C12 Loco is a sports watch, with everything that implies: technical ability; a crisp, clean contemporary confidence. It’s nothing less than the spiritual child of Louis Cartier and Le Corbusier working in unlikely but delightful harmony…",
           "image": "/products/cw-editorial/the-c12-loco/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Dialled up",
+          "bodyEn": "The C12 Loco’s dial is a thing of beauty, with three vertically stacked circles from twelve to six, held by strong horizontal lines: bridges supporting the floating balance, small toothed escapement, and a just-off-centre step to accommodate the time-telling dial. There’s depth and detail everywhere—from visible gears in the trench beneath the hands to the ‘ski-jump’ drop-off, above which a vertical brushed finish contrasts with the lightly grained grené surface below. The white has different hands and grené throughout.",
           "image": "/products/cw-editorial/the-c12-loco/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Your beating heart",
+          "bodyEn": "The C12 Loco’s brand new, custom-designed, free-sprung balance wheel and particularly fine 0.045mm hairspring (that’s less than the width of most human hairs) constantly oscillate before your eyes. Regulated by tiny screws (replacing traditional pins for extra precision), it oscillates at a frequency of 4Hz, which amounts to 28,800 vibrations (or beats) per hour.",
           "image": "/products/cw-editorial/the-c12-loco/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "The big finish",
+          "bodyEn": "From the large and incredibly clear time-telling dial at 12 o’clock – featuring generous amounts of lume on both hands and markers for maximum legibility – to the intricate, ever-moving floating balance just below it, The C12 Loco is a feast of just-so facets and endless delicate hand-polishing, creating a watch with such considered visual depth it’s a delight from every angle, (Hey, there’s over five hours of hand-finishing on the bridges alone.)",
           "image": "/products/cw-editorial/the-c12-loco/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "Case study",
+          "bodyEn": "The C12 Loco takes Christopher Ward’s Twelve case and re-invents it, with a redesigned mid-case and a steeper downturn from case into bracelet, helping the watch contour more closely to the natural curve of the wrist. Best of all, you can see right into the heart of the watch through a gorgeous 3.35mm high glass box sapphire crystal at the front, and another to the rear.",
           "image": "/products/cw-editorial/the-c12-loco/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
+          "titleEn": "Charm bracelet",
+          "bodyEn": "Think ‘integrated bracelet sports watch’ and you think, of course, of finely-finished metal bands – and have we got a doozy for you. The much-admired Twelve bracelet is presented here in a new slimmed-down form which, with its 16mm taper, wears beautifully and suits the watch to a tee.",
           "image": "/products/cw-editorial/the-c12-loco/caption-8.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 9",
+          "titleEn": "Strap battle",
+          "bodyEn": "The C12 Loco’s rubber FKM straps come with our Bader Buckle and offer a striking alternative look, in a range of colours to match or – dramatic! – contrast with your dial. There’s no bad combination here, quite frankly, and the joy of Christopher Ward’s quick release technology making switching between them a breeze, why wouldn’t you consider buying a handful…?",
           "image": "/products/cw-editorial/the-c12-loco/caption-9.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
+        },
+        {
+          "titleEn": "A revolution in motion",
+          "bodyEn": "The C12 Loco is Christopher Ward’s most ambitious watch to date – featuring a new in-house movement, the company’s highest-ever levels of finishing, and a dial design the watch world’s going to go mad for.",
+          "image": "/products/cw-editorial/the-c12-loco/caption-10.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 10
     },
     "c60-trident-lumi%C3%A8re": {
       "modelKey": "c60-trident-lumi%C3%A8re",
@@ -940,92 +898,77 @@
         {
           "titleEn": "The lightest, brightest Trident – ever",
           "bodyEn": "On the C60 Trident Lumière, the chamfered indexes are made entirely from Globolight XP©, as is the unmistakable ‘twin flags’ logo and most of the handset. In all, 17 specially-shaped blocks of Globolight XP© are used on the dial which contains five times the lume of any previous Trident (and which cost four times more to produce than a ‘regular’ dial). And because the dial comes in three extraordinary colour options – and whose ‘stippled grain’ surface adds extra texture – there’ll be a shade that’s right for you.",
-          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/story-1.jpg",
-          "videoUrl": null,
+          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/story-1.png",
+          "videoUrl": "https://player.vimeo.com/video/842555241?h=c8c811b313",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Sellita SW300-1 COSC Automatic",
           "bodyEn": "This chronometer version has been tested by the Contrôle Officiel Suisse des Chronomètres, in a number of positions and temperatures to ensure precision timekeeping.",
-          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/story-2.jpg",
+          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Lume first, second – and last",
+          "bodyEn": "The sculpted indexes, handset and ‘twin flags’ logo are all sculpted from blocks of Globolight XP© – a luminous ceramic created by Xenoprint, makers of Super-LumiNova® luminous paint. This means the luminosity of the Lumière is twice as bright as other Tridents.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "The metal with more mettle",
+          "bodyEn": "The C60 Trident Lumière is constructed in Grade 2 titanium, which has the highest strength-to-weight ratio of any metal, which is why the watch head weighs only 53g. Yet thanks to titanium’s durability, Lumière is able to cope with the most challenging conditions – on land or at sea.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "The super-slim sculpted case",
+          "bodyEn": "The 41mm brushed-and-polished Light-catcher™ case doesn’t just provide 300 metres of water-resistance, but is also our slimmest case ever with a height of 10.85mm. It’s been designed to sit flat and snug on the wrist, so you may forget you’re wearing it.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Accuracy: that’s Lumière",
+          "bodyEn": "Ultra-precise timekeeping is provided by a COSC-certified version of Sellita’s SW300-1 movement, which also gives you a power reserve of 56 hours. The movement’s height of just 3.6mm is what makes Lumière’s slim silhouette possible.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-6.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "The best bracelet yet",
+          "bodyEn": "Nothing demonstrates Lumière’s ambition better than its bracelet. Crafted in Grade 2 titanium, some facets are polished, others not, and the edges are beautifully chamfered. It boasts a taper to 16mm, and has a micro-adjustment mechanism – with a button marked ‘push’ – that lets you adjust the size by 6mm.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-7.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
+          "titleEn": "Release the pressure",
+          "bodyEn": "The helium release valve – integrated into the 41mm case – is activated during deep dives when the differential between the inside and outside pressure reaches a critical point, preventing the watch from cracking at depth.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-8.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 9",
+          "titleEn": "In search of light",
+          "bodyEn": "Crafted from Grade 2 titanium and featuring an advanced luminous ceramic, the C60 Trident Lumière is the luxury diving watch that shines brighter.",
           "image": "/products/cw-editorial/c60-trident-lumi%C3%A8re/caption-9.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 9
     },
     "c63-sealander-extreme-gmt": {
       "modelKey": "c63-sealander-extreme-gmt",
@@ -1050,22 +993,6 @@
         {
           "titleEn": "",
           "bodyEn": "41mm brushed marine-grade, steel case with Light-catcher™ design. Combined with our first ever Sandblasted bezel.",
-          "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "The bright orange GMT hand – painted with Super-LumiNova® – enables you to monitor any time zone around the world.",
-          "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "18 separate pieces of Globolight® luminous ceramic deliver maximum lume when lights are low.",
           "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -1073,7 +1000,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Deep-stamped steel backplate features a 20th century style globe motif.",
+          "bodyEn": "The bright orange GMT hand – painted with Super-LumiNova® – enables you to monitor any time zone around the world.",
           "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -1081,7 +1008,7 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "A new rubberised anti-shock holder keeps the movement secure. In case of impact, the mount absorbs and distributes energy.",
+          "bodyEn": "18 separate pieces of Globolight® luminous ceramic deliver maximum lume when lights are low.",
           "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -1089,13 +1016,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Our all-new V-Strap makes its debut on the Extreme. Military-grade Cordura® construction, quick-release Velcro® closing, logo-etched hardware.",
+          "bodyEn": "Deep-stamped steel backplate features a 20th century style globe motif.",
           "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-6.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "A new rubberised anti-shock holder keeps the movement secure. In case of impact, the mount absorbs and distributes energy.",
+          "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Our all-new V-Strap makes its debut on the Extreme. Military-grade Cordura® construction, quick-release Velcro® closing, logo-etched hardware.",
+          "image": "/products/cw-editorial/c63-sealander-extreme-gmt/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c60-atoll-300": {
       "modelKey": "c60-atoll-300",
@@ -1118,46 +1062,47 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-atoll-300/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-atoll-300/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Subtle and shaded",
+          "bodyEn": "Each dial has been carefully lacquered, which takes the colour gradually from light to dark as you travel from the centre. Meanwhile, the date wheel is colour-matched to the dial.",
           "image": "/products/cw-editorial/c60-atoll-300/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Applied with care",
+          "bodyEn": "Our twin-flags logo, which represents CW’s English/Swiss DNA, has been painstakingly applied to the dial by our in-house specialist.",
           "image": "/products/cw-editorial/c60-atoll-300/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "The inside view",
+          "bodyEn": "If you like to see Swiss horology in the metal, the Sellita SW200-1 automatic movement, complete with CW-branded rotor, can be viewed through the transparent case back.",
           "image": "/products/cw-editorial/c60-atoll-300/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Light up the night",
+          "bodyEn": "Love lume? The handset and indexes are filled with Super-LumiNova® Grade X1 BL C1 for timekeeping at night – or in the depths of the ocean.",
+          "image": "/products/cw-editorial/c60-atoll-300/caption-6.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Clarity you can feel",
+          "bodyEn": "Engineered for professional diving use, the unidirectional 120-click bezel combines a heavily sandblasted surface with polished numerals – providing texture, contrast and clarity.",
+          "image": "/products/cw-editorial/c60-atoll-300/caption-7.jpg",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c1-bel-canto": {
       "modelKey": "c1-bel-canto",
@@ -1165,53 +1110,46 @@
       "sections": [
         {
           "titleEn": "",
-          "bodyEn": "Detail 1",
+          "bodyEn": "The watch’s chime comes courtesy of a steel spring which is placed around the edge of the dial. It’s been tuned so the sound is a delight for the ears while being loud enough to be heard from the wrist.",
           "image": "/products/cw-editorial/c1-bel-canto/caption-1.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
           "titleEn": "",
-          "bodyEn": "Detail 2",
+          "bodyEn": "The time-telling subdial ‘floats’ over the sunray-finished Viola dial, giving the wearer a feeling of depth. The hands and indexes are filled with Super-LumiNova® for after-dark visibility.",
           "image": "/products/cw-editorial/c1-bel-canto/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
           "titleEn": "",
-          "bodyEn": "Detail 3",
+          "bodyEn": "The multi-layered architecture of the Bel Canto’s dial is enhanced by the exquisitely executed polishing of the hammer, spring and bridges – which together resemble a songbird. Crafted by hand (under microscope) by some of Switzerland’s finest artisans, finishing of this standard is usually the preserve of only the most exclusive and expensive brands.",
           "image": "/products/cw-editorial/c1-bel-canto/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
           "titleEn": "",
-          "bodyEn": "Detail 4",
+          "bodyEn": "Our Light-catcher™ case has had a subtle but sporty makeover. The first CW case made from Grade 5 titanium, the metal – which is less dense than steel – has been chosen for its ability to amplify sound. The internal architecture of the case has also been designed for the same reason.",
           "image": "/products/cw-editorial/c1-bel-canto/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
           "titleEn": "",
-          "bodyEn": "Detail 5",
+          "bodyEn": "By pressing the pusher at 4 o’clock on the side of the case, you can switch off the chime – something that’s shown in the movement of the red indicator on the dial.",
           "image": "/products/cw-editorial/c1-bel-canto/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
-          "image": "/products/cw-editorial/c1-bel-canto/caption-6.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 5
     },
     "the-twelve": {
       "modelKey": "the-twelve",
@@ -1220,7 +1158,7 @@
         {
           "titleEn": "A watch for the whole of your life",
           "bodyEn": "The Twelve brings the pleasures of such pieces with none of the downsides. Fittingly, it’s home to some of Christopher Ward’s boldest design moves. It has a twelve-sided bezel – dodecagonal, no less – which gives a subtle scalloped look. It features a heavily textured three-dimensional dial, built of little moguls referencing the ‘pluses’ of the twin-flags logo. And it has a remarkable combination of intriguing surface finishes on case, bracelet and bezel.",
-          "image": "/products/cw-editorial/the-twelve/story-1.jpg",
+          "image": null,
           "videoUrl": "https://player.vimeo.com/video/820462542?h=19849f8331",
           "layout": "default",
           "reverse": true
@@ -1228,76 +1166,77 @@
         {
           "titleEn": "Sellita SW200-1 Automatic",
           "bodyEn": "Brace with impact The Twelve’s bracelet is built from single links to deliver a taper that goes from 25mm to 17mm, while the satinised finish comes courtesy of a water-grinding process. The bracelet closes with a butterfly clasp – fitted with a micro-adjustment mechanism. This allows the wearer to adjust the length by up to 1.5mm per side – and 3mm in total.",
-          "image": "/products/cw-editorial/the-twelve/story-2.jpg",
+          "image": "/products/cw-editorial/the-twelve/story-1.jpg",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/the-twelve/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "Brace with impact",
+          "bodyEn": "The Twelve’s bracelet is built from single links to deliver a taper that goes from 25mm to 17mm, while the satinised finish comes courtesy of a water-grinding process. The bracelet closes with a butterfly clasp – fitted with a micro-adjustment mechanism. This allows the wearer to adjust the length by up to 1.5mm per side – and 3mm in total.",
           "image": "/products/cw-editorial/the-twelve/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "We took our time, we thought differently, we built beautifully.",
+          "bodyEn": "Will Brackfield - designer",
           "image": "/products/cw-editorial/the-twelve/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "A dial to make you smile",
+          "bodyEn": "The Twelve’s three-dimensional pyramid pattern slyly references the twin-flags of the company logo and catches the light endlessly as your wrist moves. It comes in six great colours too.",
           "image": "/products/cw-editorial/the-twelve/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Rear window",
+          "bodyEn": "An exhibition case back lets you admire the movement from the rear, while – in a playful tip of the hat to the Royal Oak – six large exposed screws hold down the 12-sided surround.",
           "image": "/products/cw-editorial/the-twelve/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Love triangles",
+          "bodyEn": "Even the hands and indices on the dial have been carefully reappraised, offering a riot of light-reflecting surfaces while using more understated and refined shapes than other Christopher Wards.",
           "image": "/products/cw-editorial/the-twelve/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
-          "image": "/products/cw-editorial/the-twelve/caption-7.jpg",
-          "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
-          "image": "/products/cw-editorial/the-twelve/caption-8.png",
+          "titleEn": "Detail is king",
+          "bodyEn": "The stealth luxury represented by The Twelve requires every detail be given the utmost consideration. Look closely and you’ll see three different finishes – sandblasting, polishing and linear brushing – on the bezel alone.",
+          "image": "/products/cw-editorial/the-twelve/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "The ‘Picasso’ of watchmaking",
+          "bodyEn": "Why the man behind Patek Philippe’s Nautilus and the Audemars Piguet Royal Oak is horology’s greatest designer.",
+          "image": "/products/cw-editorial/the-twelve/caption-8.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "The story of The Twelve",
+          "bodyEn": "Six years in the making. Endless experimentation. A pause until our team knew they could achieve their ambitions. Enjoy the story of our first integrated watch in 13 years.",
+          "image": "/products/cw-editorial/the-twelve/caption-9.png",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 10
     },
     "c65-dune-aeolian-bronze": {
       "modelKey": "c65-dune-aeolian-bronze",
@@ -1306,7 +1245,7 @@
         {
           "titleEn": "Handsome Devil",
           "bodyEn": "Sellita SW200 COSC The C65 Dune Aeolian Bronze is gorgeous on the outside, but just as impressive beneath its ever-changing case, where you’ll find the strong, durable Swiss-made Sellita SW200 COSC Automatic movement, officially designated a ‘chronometer’ by the Contrôle Officiel Suisse des Chronomètres, and therefore amongst the most accurate mechanical movements around.",
-          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/story-1.jpg",
+          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/story-1.png",
           "videoUrl": "https://player.vimeo.com/video/1048848241?h=d79a2b7669",
           "layout": "default",
           "reverse": true
@@ -1314,60 +1253,53 @@
         {
           "titleEn": "Sellita SW200 COSC",
           "bodyEn": "",
-          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/story-2.jpg",
+          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-2.png",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Muted swan",
+          "bodyEn": "Strong but sleek, robust but elegant, bronze is especially alive, a metal that naturally develops a unique patina over time, giving your Dune Bronze an intriguingly muted, antique feel – which pairs gorgeously, of course, with its dial’s rich colours and precisely polished indices. Hey, as everyone knows: opposites attract.",
           "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-3.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Dial up",
+          "bodyEn": "Dune’s new face is brought to life by a striking three-dimensional horizontal wave pattern, built of two dozen or so stamped peaks and troughs – and, unique to the Bronze, combining a matte finish with a gradient effect, so the dial is lighter in the centre and darker at the edges, giving remarkable depth and distinctive character.",
           "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-4.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Tough luxe",
+          "bodyEn": "Though it speaks of historic seafaring and ancient weapons, this most bewitching of case metals also brings the Bronze a subtle luxury that’s unique amongst the Dunes. The toughest, grandest and most evocative, all at once? We’d say so.",
           "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-5.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Case history",
+          "bodyEn": "Dune’s 38mm case is large enough to be easily read, yet small enough to neatly sidestep unwanted encounters with rocks and trees; even better, it looks great on any wrist.",
           "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-6.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "Detail counts",
+          "bodyEn": "Everywhere, you’ll find tiny improved details: these colours, those dials, and such small but telling design changes as the lack of a date window and the simplified seconds hand, without the Trident counterbalance. It all helps create a cleaner, less diluted, more harmonious design.",
+          "image": "/products/cw-editorial/c65-dune-aeolian-bronze/caption-7.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "the-c12-loco---nearly-new": {
       "modelKey": "the-c12-loco---nearly-new",
@@ -1383,7 +1315,7 @@
           "titleEn": "Precision under pressure",
           "bodyEn": "Inspired by the British Military’s quartz watches of the 1980s, the dial plays host to three subdials – controlled by pushers on the side of the case – which not only deliver a wealth of stopwatch options, but are dedicated to one of the Services through different coloured hands. And, in a first for a Military Collection, both the flat-polished numerals and logo have been applied for added depth.",
           "image": "/products/cw-editorial/c63-valour/story-1.jpg",
-          "videoUrl": null,
+          "videoUrl": "https://player.vimeo.com/video/792664776",
           "layout": "default",
           "reverse": true
         },
@@ -1396,46 +1328,47 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c63-valour/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c63-valour/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Dial of delights",
+          "bodyEn": "The reverse panda dial boasts three subdials – with the hand of each one coloured to a particular Service: red for the Army; dark blue for the Navy; light blue for the RAF.",
           "image": "/products/cw-editorial/c63-valour/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Paying our dues",
+          "bodyEn": "The caseback features the heraldic crest of the Army, Navy and RAF. We’ve used the versions with the ‘Queen’s crown’ as a mark of respect to Queen Elizabeth II.",
           "image": "/products/cw-editorial/c63-valour/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Ultimate quartz precision",
+          "bodyEn": "ETA G10.202 AD COSC quartz movement delivers not just incredible accuracy (+/- 10 seconds per year), but also a full range of stopwatch options.",
           "image": "/products/cw-editorial/c63-valour/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "A case you’ll love to wear",
+          "bodyEn": "The 39mm Light-catcher™ case isn’t just beautiful – check the way light bounces off its surfaces – but has also been designed to sit closer to your wrist.",
+          "image": "/products/cw-editorial/c63-valour/caption-6.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Your number’s up",
+          "bodyEn": "Inspired by the design of the British Military’s quartz watches of the 1980s, the large numerals are applied and polished, as is CW’s ‘twin flags’ logo.",
+          "image": "/products/cw-editorial/c63-valour/caption-7.jpg",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c65-sandhurst-series-2": {
       "modelKey": "c65-sandhurst-series-2",
@@ -1451,61 +1384,62 @@
         },
         {
           "titleEn": "Sellita SW200 COSC",
-          "bodyEn": "“Christopher Ward created their own version of the legendary military watch and made it more modern and legible.” – Marin Bilendzic",
-          "image": "/products/cw-editorial/c65-sandhurst-series-2/story-2.jpg",
+          "bodyEn": "“Each watch in the military collection sports some of the modern design touches from Christoper Ward.” – Thomas Calara",
+          "image": null,
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
+          "titleEn": "Approved by the MOD",
+          "bodyEn": "Inspired by the Smiths W10 field watch given to British soldiers in 1969, the improved C65 Sandhurst is a classic military timepiece. And like the W10, it’s been officially approved by the UK’s Ministry of Defence.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-1.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "Signs are good",
+          "bodyEn": "The C65 Sandhurst is the first Christopher Ward model authorised to carry the heraldic badge of the British Army. You’ll find it deep-stamped into the back.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "A bolder dial",
+          "bodyEn": "The textured black dial is an exercise in legibility, while the use of our twin-flags logo both harks back to the no-name military watches of the past and CW’s latest design language.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Strong case",
+          "bodyEn": "Our 38mm Light-catcher™ case boasts brushed and polished surfaces which reflect light beautifully. Its ingenious design means it also sits on the wrist lower than you’d expect.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Lume time",
+          "bodyEn": "The Arabic numerals are printed with Super-LumiNova® Grade X1 BL C1, while Old Radium Super-LumiNova® is applied to rectangular indexes located at each quarter-hour, along with five minute-positioned dots and a triangle at 12 o’clock.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Making the best better",
+          "bodyEn": "Christopher Ward’s Military Collection gets its first upgrade since its launch in 2019 – with a set of stunning retro-style watches named after the Services’ world-famous training academies.",
           "image": "/products/cw-editorial/c65-sandhurst-series-2/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c63-sealander-automatic---nearly-new": {
       "modelKey": "c63-sealander-automatic---nearly-new",
@@ -1525,7 +1459,7 @@
       "sections": [
         {
           "titleEn": "The ultimate Super Compressor",
-          "bodyEn": "Sellita SW300-1 COSC Automatic Launched in 2008, Sellita’s 25-jewel SW300-1 automatic movement is one of the most respected calibres in Swiss watchmaking. At 25.6mm in diameter and with a height of 3.6 mm (one millimetre less than the SW200-1), it has a frequency of 28,800 vibrations per hour (4 Hz) and boasts a power reserve of 56 hours. Seen as an alternative to ETA’s 2892-A2 calibre, the SW300-1 can be customised with various complications, including date, moonphase, and GMT functions.",
+          "bodyEn": "As with the original, the watch features a genuine super compressor mechanism – invented in the mid-1950s by case manufacturer Ervin Piquerez SA (EPSA) to allow divers to go deeper without their watch malfunctioning. An ultra-thin compression spring – just 300 microns wide – is placed around the perimeter of the case. When a diver descends, it uses water pressure to press the caseback against the O-ring gasket, increasing water-resistance.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/story-1.jpg",
           "videoUrl": "https://player.vimeo.com/video/981831172?h=ae6d6d70dc",
           "layout": "default",
@@ -1540,62 +1474,63 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c65-super-compressor-elite/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c65-super-compressor-elite/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Spring into the deep",
+          "bodyEn": "The ‘compression’ spring – the width of four human hairs – is key to the mechanics of the C65 Super Compressor Elite and enables the case to become more watertight as you descend. It’s placed within the compression ring and can be seen through the caseback.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Inside story",
+          "bodyEn": "The interior countdown bezel – controlled by the cross-hatched crown at 2 o’clock – makes the watch sleeker than a regular dive timepiece. This allows the Supercompressor Elite to be worn under a shirt cuff with ease and makes it the perfect ‘dress-dive’ timepiece.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Stamp of authority",
+          "bodyEn": "On the transparent caseback, you’ll find the ‘diving helmet’ emblem – the logo of the original super compressor manufacturer, Ervin Piquerez SA (EPSA) – stamped into a ‘coin’ that sits on top of the caseback.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "King of crowns",
+          "bodyEn": "Two crowns are on the side of the case. The first, at 2 o’clock, rotates the inner countdown bezel, while the lower crown, at 4 o’clock, controls the hands. Just like the crowns on the original super compressors, both have distinctive cross-hatching.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "The case for comfort",
+          "bodyEn": "When it comes to wearability, we don’t cut corners. This 41mm cushioned Light-catcher™ case has brushed and polished surfaces and, thanks to its slim profile, easily slides under your cuff.",
           "image": "/products/cw-editorial/c65-super-compressor-elite/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Dial up the style",
+          "bodyEn": "This is no ordinary dial. The decompression dial has been precision-printed so you can calculate stops at a glance. Meanwhile, the shades of orange and blue contrast beautifully without affecting legibility. Another retro touch is the authentic box-sapphire crystal.",
+          "image": "/products/cw-editorial/c65-super-compressor-elite/caption-8.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Chronometer accuracy",
+          "bodyEn": "On the C65 Super Compressor Elite, precision timekeeping is everything. That’s why the watch is powered by a chronometer version of the Sellita SW300 automatic calibre. This puts it in the top six percent of Swiss-made mechanical movements for accuracy.",
+          "image": "/products/cw-editorial/c65-super-compressor-elite/caption-9.jpg",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 9
     },
     "c1-bel-canto-classic---nearly-new": {
       "modelKey": "c1-bel-canto-classic---nearly-new",
@@ -1610,52 +1545,53 @@
         {
           "titleEn": "The maximum moon watch",
           "bodyEn": "Swiss perfection Unlike some moonphase complications that transition once per day, JJ04 offers a more dynamic approach. Using the Sellita SW220 as a base, the date wheel, along with its spring-loading assembly, have been stripped out and replaced by four further wheels to drive the moon disc, with two more required for the setting mechanism.",
-          "image": "/products/cw-editorial/c1-moonglow/story-1.jpg",
-          "videoUrl": null,
+          "image": null,
+          "videoUrl": "https://player.vimeo.com/video/792664776",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Swiss perfection",
           "bodyEn": "JJ04: perpetually brilliant The C1 Moonglow is powered by CW’s own modular movement, JJ04, which is able to follow the waxing (and waning) of the moon accurately for 128 years. This also allows the watch’s ‘moons’ to chart a continuous, uninterrupted journey across the dial.",
-          "image": "/products/cw-editorial/c1-moonglow/story-2.jpg",
+          "image": "/products/cw-editorial/c1-moonglow/story-1.jpg",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c1-moonglow/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "JJ04: perpetually brilliant",
+          "bodyEn": "The C1 Moonglow is powered by CW’s own modular movement, JJ04, which is able to follow the waxing (and waning) of the moon accurately for 128 years. This also allows the watch’s ‘moons’ to chart a continuous, uninterrupted journey across the dial.",
           "image": "/products/cw-editorial/c1-moonglow/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
-          "image": "/products/cw-editorial/c1-moonglow/caption-3.jpg",
-          "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "3D heaven",
+          "bodyEn": "The watch’s three-dimensional moons have increased amounts Grade X1 WL C1 Super-LumiNova® for an even better ‘moonglow’. While the precisely proportioned dial delivers more depth than found on the aventurine face of the C1 Moonphase.",
+          "image": "/products/cw-editorial/c1-moonglow/caption-3.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Perfect case",
+          "bodyEn": "The C1 Moonglow boasts a redesigned 40.5mm Light-catcher™ case, which makes it even more comfortable on the wrist, while the domed glass box crystal and polished facets on the lugs add a feeling of timeless luxury.",
           "image": "/products/cw-editorial/c1-moonglow/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Lord of the rings",
+          "bodyEn": "Replacing a conventional date window, a rotating ring – coated with Grade X1 WL C1 Super-LumiNova® – circles the dial and aligns with the current date on the outer-date ring.",
+          "image": "/products/cw-editorial/c1-moonglow/caption-5.jpg",
+          "videoUrl": null,
+          "layout": "caption",
           "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "twelve-x-%28ti%29": {
       "modelKey": "twelve-x-%28ti%29",
@@ -1671,77 +1607,54 @@
         },
         {
           "titleEn": "Calibre SH21",
-          "bodyEn": "Beauty and the bridges The multi-layered, multi-angled bridgework which supports the movement is only possible through the use of the Elara NS CNC milling machine, which uses a diamond cutter to achieve incredible accuracy. The work was undertaken by Paoluzzo, a maker of precision medical, aviation and horological parts.",
+          "bodyEn": "",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/story-2.jpg",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Beauty and the bridges",
+          "bodyEn": "The multi-layered, multi-angled bridgework which supports the movement is only possible through the use of the Elara NS CNC milling machine, which uses a diamond cutter to achieve incredible accuracy. The work was undertaken by Paoluzzo, a maker of precision medical, aviation and horological parts.",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Crystal clear",
+          "bodyEn": "Thanks to the domed sapphire crystals at both ends of the watch, you can view every part of SH21: from the twin barrels that deliver the famous five-day power reserve to the winding mechanism at 3 o’clock. The slim Super-LumiNova®-filled rhodium minute ring allows you to see more of the barrels and – another first – the escapement.",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Globolight© and rhodium dial ring",
+          "bodyEn": "The dial is framed by a rhodium ring round the outside, with an applied luminous Globolight© wedge at 12 o’clock.",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Taking titanium further",
+          "bodyEn": "Grade 5 titanium – an alloy of titanium, aluminium and vanadium – is found on the bezel and case back. The material – which is harder than its Grade 2 counterpart – allows for improved mirror polishing, and offers a greater contrast to the satin-brushed finish of the rest of the case. A key design detail.",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "A smooth, adjustable bracelet",
+          "bodyEn": "The Twelve X (Ti)’s bracelet is built from single links to deliver a taper that goes from 25mm to 17mm, while the satinised finish comes courtesy of a water-grinding process. The bracelet closes with a butterfly clasp – fitted with a micro-adjustment mechanism for the first time in The Twelve series. This allows the wearer to adjust the length by up to 1.5mm per side – and 3mm in total.",
           "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
-          "image": "/products/cw-editorial/twelve-x-%28ti%29/caption-8.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "c1-moonphase-37": {
       "modelKey": "c1-moonphase-37",
@@ -1764,68 +1677,61 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c1-moonphase-37/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c1-moonphase-37/caption-2.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Mad about the moon",
+          "bodyEn": "We’re so keen to bring the Moonphase to more people, we moved heaven and earth to design a new C1 case at a more compact and accessible 37mm, while still allowing space inside for the moon phase complication.",
           "image": "/products/cw-editorial/c1-moonphase-37/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
-          "image": "/products/cw-editorial/c1-moonphase-37/caption-4.png",
+          "titleEn": "Moon night",
+          "bodyEn": "With a spectacular dial made from aventurine – a special glass, invented on the island of Murano, that’s infused with reflective flakes of copper oxide – the Moonphase 37 represents the night sky with eerie accuracy. The beautifully stripped-back watch face carries nothing else (unless you count a tiny ‘Swiss Made’ legend) to ensure minimum distraction from your enjoyment of the lunar cycle.",
+          "image": "/products/cw-editorial/c1-moonphase-37/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Lovely moonchild",
+          "bodyEn": "Watching a great movement in action is one of the joys of traditional mechanical watchmaking, and with the Moonphase 37 you can do so effortlessly, thanks to a box sapphire exhibition back, upgraded from the flat glass of the 40.5mm version. The decorated rotor you’ll find here is the only place on the entire watch where the words ‘Christopher Ward’ appear.",
           "image": "/products/cw-editorial/c1-moonphase-37/caption-5.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
-          "image": "/products/cw-editorial/c1-moonphase-37/caption-6.jpg",
+          "titleEn": "Funky Gibbous",
+          "bodyEn": "We’re renowned for our full-blooded celebrations of the moon, so even on a more compact watch like the Moonphase 37, we’ve made certain to put our satellite front and centre, standing proud at 12 rather than hidden way at the bottom of the dial. Rarely has such an elegant piece been so glitteringly alive.",
+          "image": "/products/cw-editorial/c1-moonphase-37/caption-6.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "Moon bright",
+          "bodyEn": "Built of Globolight©, a ceramic/Super-LumiNova mix that encourages the most intricate sculpting, our moon – or moons, for there are actually two in constant rotation – are 25 percent bigger than most. Even better, the over-sized nature of the aperture you view them through allows you to see more ‘moon’ at any one time.",
           "image": "/products/cw-editorial/c1-moonphase-37/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
+        },
+        {
+          "titleEn": "Strap in for launch",
+          "bodyEn": "Crafted in a supple seta leather, the Moonphase 37 comes with a luxurious blue Mastrotto strap. With its taper improved to 16mm (from 20mm), redesigned stainless steel Bader clasp it provides maximum comfort and is the perfect companion for both the 37 and 40mm case sizes.",
+          "image": "/products/cw-editorial/c1-moonphase-37/caption-8.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "the-twelve-660": {
       "modelKey": "the-twelve-660",
       "sourceUrl": "https://www.christopherward.com/homage-watches/the-twelve-660/C12-38H2H1-SK0K0-B0.html",
       "sections": [],
-      "error": "no-long-desc"
+      "sectionCount": 0
     },
     "c60-trident-reef": {
       "modelKey": "c60-trident-reef",
@@ -1835,7 +1741,7 @@
           "titleEn": "The power of pure colour",
           "bodyEn": "The strap offering is also on point. There are size different coloured solid rubber straps to choose from, so you can match or contrast with your watch depending on your mood (there’s also a bracelet option if you prefer). And because each strap and bracelet is fitted with Christopher Ward’s quick-release system, you can swap in seconds.",
           "image": "/products/cw-editorial/c60-trident-reef/story-1.jpg",
-          "videoUrl": null,
+          "videoUrl": "https://player.vimeo.com/video/842555241?h=c8c811b313",
           "layout": "default",
           "reverse": true
         },
@@ -1848,78 +1754,63 @@
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c60-trident-reef/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c60-trident-reef/caption-2.webp",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "The art of coralogy",
+          "bodyEn": "Own the summer with the new C60 Trident Reef dive watch. Four tropical colours inspired by endangered coral reefs. Six interchangeable rubber straps. And a multi-layered case construction that delivers comfort, lightness – and even more colour.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-3.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
-          "image": "/products/cw-editorial/c60-trident-reef/caption-4.jpg",
+          "titleEn": "The case for colours",
+          "bodyEn": "Available in 41mm and 44mm, the Reef’s stainless steel case boasts a four-piece, sandwich-style construction, allowing designers to bring contrasting shades together in the same case. It also provides water resistance to 200m.",
+          "image": "/products/cw-editorial/c60-trident-reef/caption-4.webp",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "A dial like no other",
+          "bodyEn": "Riffing on the ultra-legible Trident display, the Reef dial places an inner ring around the edge for extra contrast with one of the five ‘coral’ colours. Meanwhile, the outer dive bezel adds further colour – and the timing reassurance you need on deep dives.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Why ‘Reef’?",
+          "bodyEn": "The C60 Trident Reef has been created with Blue Marine Foundation, an ocean preservation charity sponsored by Christopher Ward. Not only is every colour reef-themed, but for each Reef sold, we’ll donate 2 percent of proceeds to Blue Marine as it fights overfishing around the world.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "Ready. Set. Strap!",
+          "bodyEn": "Love to change up your straps? Reef is for you. Each watch comes with a sturdy solid rubber strap, available in various coral colours. And thanks to our quick-release system you can swap between straps in seconds.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
+          "titleEn": "Lume: at your service",
+          "bodyEn": "The Reef’s indexes and handset are deep-filled with Super-LumiNova® Grade X1 GL C1, which provides an ultra-legible glow when lights are low.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-8.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 9",
+          "titleEn": "You’re safer with Sellita",
+          "bodyEn": "When it comes to reliability and durability, the 26-jewel Sellita’s SW200-1 movement’s got your back. The 4hz frequency ensures a smooth sweep while the anti-shock system protects it from any knocks.",
           "image": "/products/cw-editorial/c60-trident-reef/caption-9.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 9
     },
     "the-twelve-40-%28ti%29": {
       "modelKey": "the-twelve-40-%28ti%29",
@@ -1928,92 +1819,85 @@
         {
           "titleEn": "Sports light",
           "bodyEn": "The Ti differs in other ways, too. The dial is here treated to a graduated tint, from dark charcoal at the edges to one of three exclusive colours at the centre. And inside lives a more sophisticated movement than the one in the standard steel model too. Sellita’s SW300-1 boasts chronometer certification and longer 56-hour power reserve, while its slimmer size allows for an even more wrist-hugging case. Indeed, it’s just 8.95mm tall, a full millimetre shorter than the steel version – just another remarkable stat about a remarkable watch.",
-          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/story-1.jpg",
+          "image": null,
           "videoUrl": "https://player.vimeo.com/video/820462542?h=19849f8331",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Sellita SW300-1 COSC Automatic",
-          "bodyEn": "Brace with impact The Twelve’s bracelet is built from single links to deliver a taper that goes from 25mm to 17mm, while the satinised finish comes courtesy of a water-grinding process. The bracelet closes with a butterfly clasp – fitted with a micro-adjustment mechanism. This allows the wearer to adjust the length by up to 1.5mm per side – and 3mm in total.",
-          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/story-2.jpg",
+          "bodyEn": "This chronometer version has been tested by the Contrôle Officiel Suisse des Chronomètres, in a number of positions and temperatures to ensure precision timekeeping.",
+          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/story-1.jpg",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "Brace with impact",
+          "bodyEn": "The Twelve’s bracelet is built from single links to deliver a taper that goes from 25mm to 17mm, while the satinised finish comes courtesy of a water-grinding process. The bracelet closes with a butterfly clasp – fitted with a micro-adjustment mechanism. This allows the wearer to adjust the length by up to 1.5mm per side – and 3mm in total.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "We took our time, we thought differently, we built beautifully.",
+          "bodyEn": "Will Brackfield - designer",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Moody blues",
+          "bodyEn": "And, indeed, purples. The Ti dial boasts the same fascinating pyramid pattern as the regular Twelve, but in three new shades, each fading from dark charcoal at the circumference to bright colour at the centre.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Look back",
+          "bodyEn": "This is one of those rare watches that’s almost as good-looking from the rear. In a playful tip of the hat to the Royal Oak, six large exposed screws hold down the 12-sided case back surround.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Love triangles",
+          "bodyEn": "Even the hands and indices on the dial have been carefully reappraised, offering a riot of light-reflecting surfaces while using more understated and refined shapes than other Christopher Wards.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
+          "layout": "caption",
+          "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 7",
+          "titleEn": "The last detail",
+          "bodyEn": "The luxury represented by The Twelve (Ti) requires every detail be given the utmost consideration, with transitions between surfaces particularly crucial. There are three finishes – sandblasting, polishing and linear brushing – on the bezel alone.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-7.jpg",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 8",
-          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-8.jpg",
-          "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 9",
+          "titleEn": "The ‘Picasso’ of watchmaking",
+          "bodyEn": "Why the man behind Patek Philippe’s Nautilus and the Audemars Piguet Royal Oak is horology’s greatest designer.",
+          "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-8.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "The story of The Twelve",
+          "bodyEn": "Six years in the making. Endless experimentation. A pause until our team knew they could achieve their ambitions. Enjoy the story of our first integrated watch in 13 years.",
           "image": "/products/cw-editorial/the-twelve-40-%28ti%29/caption-9.png",
           "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 10
     },
     "the-twelve-midnight": {
       "modelKey": "the-twelve-midnight",
@@ -2038,22 +1922,6 @@
         {
           "titleEn": "",
           "bodyEn": "A new, polished, lacquered dial in Midnight Black, with elevated date window",
-          "image": "/products/cw-editorial/the-twelve-midnight/caption-1.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Integrated bracelet with butterfly clasp for seamless removal",
-          "image": "/products/cw-editorial/the-twelve-midnight/caption-2.webp",
-          "videoUrl": null,
-          "layout": "caption",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Lume-filled ‘Twelve’ indexes and handset",
           "image": "/products/cw-editorial/the-twelve-midnight/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
@@ -2061,13 +1929,30 @@
         },
         {
           "titleEn": "",
-          "bodyEn": "Multi-angled bezel finished three ways for maximum light-play",
+          "bodyEn": "Integrated bracelet with butterfly clasp for seamless removal",
           "image": "/products/cw-editorial/the-twelve-midnight/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Lume-filled ‘Twelve’ indexes and handset",
+          "image": "/products/cw-editorial/the-twelve-midnight/caption-5.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Multi-angled bezel finished three ways for maximum light-play",
+          "image": "/products/cw-editorial/the-twelve-midnight/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 6
     },
     "c65-cranwell-series-2": {
       "modelKey": "c65-cranwell-series-2",
@@ -2084,60 +1969,61 @@
         {
           "titleEn": "Sellita SW200 COSC",
           "bodyEn": "“Each watch in the military collection sports some of the modern design touches from Christoper Ward.” – Thomas Calara",
-          "image": "/products/cw-editorial/c65-cranwell-series-2/story-2.png",
+          "image": null,
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
+          "titleEn": "Royal standard",
+          "bodyEn": "Licensed by the Ministry of Defence and approved by His Majesty’s Armed Forces, the second-gen C65 Cranwell is a precision-engineered update of Jaeger-LeCoultre and IWC’s ‘6B/346’ pilot’s watches.",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-1.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
+          "titleEn": "Stamp of approval",
+          "bodyEn": "The backplate has been deep-stamped with the Heraldic badge of the Royal Air Force – a reminder of the sacrifices its service men and women have made for us.",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-2.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "A dial with a story",
+          "bodyEn": "The completely redesigned dial now plays host to our two-flags logo, with oversized numerals that deliver instant legibility – a must for any military watch.",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-3.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Cool comfort",
+          "bodyEn": "With brushed/polished surfaces and contoured lines, the 38mm Light-catcher™ case is an exercise in engineered elegance. Its subtle sizing makes it ideal for any wrist.",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-4.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Lots of lume",
+          "bodyEn": "The large Arabic numerals are printed with Super-LumiNova® Grade X1 BL C1, while Old Radium Super-LumiNova® is applied to the quarter-hour indexes (which you’ll also find on the inverted triangle at 12 o’clock).",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-5.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "Making the best better",
+          "bodyEn": "Christopher Ward’s Military Collection gets its first upgrade since its launch in 2019 – with a set of stunning retro-style watches named after the Services’ world-famous training academies.",
           "image": "/products/cw-editorial/c65-cranwell-series-2/caption-6.jpg",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c60-lympstone": {
       "modelKey": "c60-lympstone",
@@ -2154,12 +2040,61 @@
         {
           "titleEn": "Sellita SW200 Automatic Chronometer",
           "bodyEn": "The movement boasts a 4Hz frequency (equating to a smooth eight ticks per second) and a 38-hour power reserve. It also has an in-built anti-shock system to maintain accuracy when faced with any sudden jolts.",
-          "image": "/products/cw-editorial/c60-lympstone/story-2.png",
+          "image": null,
           "videoUrl": null,
           "layout": "default",
           "reverse": true
+        },
+        {
+          "titleEn": "Find your way",
+          "bodyEn": "The C60 Lympstone is the first Christopher Ward watch to carry an inner-compass bezel. You can orientate yourself by using it in conjunction with the sun.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-1.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Wear it well",
+          "bodyEn": "The C60 Lympstone has the soul – and practicality – of a diving watch. Its outer bezel delivers a satisfying 120 clicks per circuit. So, when you mark your starting point with the pointer, you know it’ll stay in place.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-2.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Hard look story",
+          "bodyEn": "The watch boasts a dial made of forged carbon – an ultra-tough, mouldable material made from chopped carbon fibres and resin. It gives the dial a marbled, near-camouflage look.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-3.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Light fantastic",
+          "bodyEn": "The C60 Lympstone indexes, hands and bezel are filled with Super-LumiNova® Grade X1 GL C1, which delivers clarity in low light. Its potency is increased by exposing it to sunlight or artificial light, increasing the energy of its electrons.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-4.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Official approval",
+          "bodyEn": "Only when it had approved every part of the watch, did the Ministry of Defence allow the Marines’ official insignia to be laser-engraved into the caseback of the watch.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-5.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Complete control",
+          "bodyEn": "The marine-grade steel case has two crowns, one for rotating the compass, the other for winding the watch and moving the hands. Its gunmetal PVD coating ensures reflections – dangerous in combat – are kept to a minimum.",
+          "image": "/products/cw-editorial/c60-lympstone/caption-6.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
         }
-      ]
+      ],
+      "sectionCount": 8
     },
     "c65-dune-aeolian": {
       "modelKey": "c65-dune-aeolian",
@@ -2168,7 +2103,7 @@
         {
           "titleEn": "Lines in the Sand",
           "bodyEn": "Sellita SW200-1 Automatic A workhorse watch demands a workhorse to power it, and you’ll find few hardier movements than Dune’s Sellita SW200-1 Automatic. It’s Swiss-made, self-winding, and known for accuracy, reliability and a useful 38-hour power reserve – so you can leave it on the bedside table for more than a day and it won’t need rewinding.",
-          "image": "/products/cw-editorial/c65-dune-aeolian/story-1.jpg",
+          "image": "/products/cw-editorial/c65-dune-aeolian/story-1.png",
           "videoUrl": "https://player.vimeo.com/video/1048848241?h=d79a2b7669",
           "layout": "default",
           "reverse": true
@@ -2176,60 +2111,53 @@
         {
           "titleEn": "Sellita SW200-1 Automatic",
           "bodyEn": "",
-          "image": "/products/cw-editorial/c65-dune-aeolian/story-2.jpg",
+          "image": "/products/cw-editorial/c65-dune-aeolian/story-2.png",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 1",
-          "image": "/products/cw-editorial/c65-dune-aeolian/caption-1.jpg",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": false
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 2",
-          "image": "/products/cw-editorial/c65-dune-aeolian/caption-2.png",
-          "videoUrl": null,
-          "layout": "wide",
-          "reverse": true
-        },
-        {
-          "titleEn": "",
-          "bodyEn": "Detail 3",
+          "titleEn": "Ripple effect",
+          "bodyEn": "Dune’s fascinating sculpted three-dimensional wave pattern dial is ultra-legible whichever colour you pick: Eve (blue), Marram (green), Silica (grey) or Sand (white). Inspired by nature, they’re the sort of shades you might find on a 1950s Land Rover or ancient, sun-bleached hoodie. We’ve even dropped the date window, in the name of field watch purity.",
           "image": "/products/cw-editorial/c65-dune-aeolian/caption-3.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 4",
+          "titleEn": "Case history",
+          "bodyEn": "Dune’s 38mm case is one of the most versatile around. Large enough to be easily read, yet small enough to neatly sidestep unwanted encounters with rocks and trees, it reflects the ‘wrist footprint’ of classic field watches. It looks and feels great on virtually any wrist.",
           "image": "/products/cw-editorial/c65-dune-aeolian/caption-4.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 5",
+          "titleEn": "Crystal clear",
+          "bodyEn": "Much of the Dune’s retro joy comes from its glass box crystal, a super-strong, bang-up-to-date version of the charismatic crystals you’d find on a 1970s sports watch; happily, it delivers the same charming retro ‘wobble’ when seen from the side.",
           "image": "/products/cw-editorial/c65-dune-aeolian/caption-5.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": false
         },
         {
-          "titleEn": "",
-          "bodyEn": "Detail 6",
+          "titleEn": "The beauty inside",
+          "bodyEn": "That robust watches can be beautiful too is part of Dune’s raison d'être, which is why this is a rare field watch with an exhibition case back, allowing you to enjoy your Sellita movement with its elaboré-finished rotor any time you choose.",
           "image": "/products/cw-editorial/c65-dune-aeolian/caption-6.png",
           "videoUrl": null,
-          "layout": "wide",
+          "layout": "caption",
           "reverse": true
+        },
+        {
+          "titleEn": "Glow up",
+          "bodyEn": "Dune lives for the outdoors, and when it’s dark out, lume matters. That’s why the handset and hour markers – right down to that cool ‘lollipop’ seconds hand – have been deep-filled with bright-glowing Super-LumiNova® BL Grade X. Even better, each dial colour gets its own specific, complementary shade of lume – a first for the range.",
+          "image": "/products/cw-editorial/c65-dune-aeolian/caption-7.png",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     },
     "the-alliance-02": {
       "modelKey": "the-alliance-02",
@@ -2237,16 +2165,16 @@
       "sections": [
         {
           "titleEn": "Pickpocketing the Past",
-          "bodyEn": "Founded in 2020 by Mike France, Roger Smith and Alistair Audsley, the Alliance of British Watch and Clock Makers champions the entire British watch and clockmaking ecosystem - from education to apprenticeships to global promotion. Membership has grown from a few hundred to nearly 2,000, and collaborations like this directly fund the trade body’s work. The Alliance 02 is designed not just to be collected, but to help support the industry that created it. In short: not just a pocket watch. A pocket-sized banner for British horological ingenuity - with lume.",
-          "image": "/products/cw-editorial/the-alliance-02/story-1.webp",
-          "videoUrl": null,
+          "bodyEn": "And this time, the dial does more than steal the show - it lights it. A brass base dial is coated with seven layers of custom Super-LumiNova®, creating a bed of light that charges quickly and shines intensely. Above floats a 1.4mm sapphire disc printed with Roman numerals, dual branding, and a minute track - both appearing to hover in mid-air during the day, and illuminated from below at night. The whole construction forms a miniature architectural light sculpture: playful, technical, and beautifully Studio Underd0g.",
+          "image": null,
+          "videoUrl": "https://player.vimeo.com/video/1136066198?h=b09a067933&badge=0&autopause=0&player_id=0&app_id=58479",
           "layout": "default",
           "reverse": true
         },
         {
           "titleEn": "Calibre CW-001 (Formerly SH21)",
           "bodyEn": "Missed out? The good news is the next opportunity starts with membership. Alliance members get first dibs on limited editions like the Alliance 02, plus priority access to British Watchmakers' Day, a year's free subscription to Oracle Time magazine, watch discounts and honestly, the most coveted enamel pin in British watchmaking.",
-          "image": "/products/cw-editorial/the-alliance-02/story-2.webp",
+          "image": "/products/cw-editorial/the-alliance-02/story-1.webp",
           "videoUrl": null,
           "layout": "default",
           "reverse": true
@@ -2254,7 +2182,7 @@
         {
           "titleEn": "",
           "bodyEn": "Exhibition caseback showcasing the CW-001 chronometer-grade movement",
-          "image": "/products/cw-editorial/the-alliance-02/caption-1.webp",
+          "image": "/products/cw-editorial/the-alliance-02/caption-2.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": false
@@ -2262,7 +2190,7 @@
         {
           "titleEn": "",
           "bodyEn": "Floating 1.4 mm sapphire top dial featuring printed Roman numerals, paired with a five-day power reserve subdial",
-          "image": "/products/cw-editorial/the-alliance-02/caption-2.webp",
+          "image": "/products/cw-editorial/the-alliance-02/caption-3.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
@@ -2270,7 +2198,7 @@
         {
           "titleEn": "",
           "bodyEn": "Brass base dial with seven layers of custom Super-LumiNova®",
-          "image": "/products/cw-editorial/the-alliance-02/caption-3.webp",
+          "image": "/products/cw-editorial/the-alliance-02/caption-4.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": false
@@ -2278,7 +2206,7 @@
         {
           "titleEn": "",
           "bodyEn": "44mm Light-catcher™ case with oversized crown for satisfying winding",
-          "image": "/products/cw-editorial/the-alliance-02/caption-4.webp",
+          "image": "/products/cw-editorial/the-alliance-02/caption-5.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": true
@@ -2286,12 +2214,13 @@
         {
           "titleEn": "",
           "bodyEn": "Braided leather strap – a modern reinterpretation of the pocket-watch chain",
-          "image": "/products/cw-editorial/the-alliance-02/caption-5.webp",
+          "image": "/products/cw-editorial/the-alliance-02/caption-6.webp",
           "videoUrl": null,
           "layout": "caption",
           "reverse": false
         }
-      ]
+      ],
+      "sectionCount": 7
     }
   }
 }

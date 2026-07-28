@@ -57,11 +57,21 @@ export function ProductStorySections({
               </div>
             ) : null}
             <div className="product-story__copy">
-              {section.titleKo ? <h2>{section.titleKo}</h2> : null}
+              {section.titleKo ? (
+                layout === "caption" ? (
+                  <h3>{section.titleKo}</h3>
+                ) : (
+                  <h2>{section.titleKo}</h2>
+                )
+              ) : null}
               {section.bodyKo
-                ? section.bodyKo.split("\n\n").map((para) => (
-                    <p key={para.slice(0, 24)}>{para}</p>
-                  ))
+                ? section.bodyKo
+                    .split(/\n\n+/)
+                    .map((para) => para.trim())
+                    .filter(Boolean)
+                    .map((para) => (
+                      <p key={para.slice(0, 32)}>{para}</p>
+                    ))
                 : null}
             </div>
           </article>

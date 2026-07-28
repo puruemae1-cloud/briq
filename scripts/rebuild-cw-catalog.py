@@ -327,20 +327,31 @@ _TX_CACHE_PATH = ROOT / "src/data/cw/cw-translate-cache.json"
 _TX_CACHE = json.loads(_TX_CACHE_PATH.read_text()) if _TX_CACHE_PATH.exists() else {}
 
 
+def polish_ko(out: str) -> str:
+    out = out.replace("팔찌", "브레이슬릿").replace("검은 그림자", "블랙 섀도우")
+    out = out.replace("사파이어 가장자리", "사파이어 엣지").replace("청동", "브론즈")
+    out = out.replace("삼지창", "트라이던트").replace("물개", "실랜더")
+    out = out.replace("크리스토퍼 워드", "크리스토퍼와드")
+    out = out.replace("로꼬", "Loco").replace("로코", "Loco")
+    out = out.replace("크리스토퍼와드(Christopher Ward)", "크리스토퍼와드")
+    out = out.replace("Christopher Ward", "크리스토퍼와드")
+    return out
+
+
 def translate_en(text: str) -> str:
     """Google Translate (gtx) with CW term post-pass."""
     text = (text or "").strip()
     if not text:
         return ""
     if text in _TX_CACHE:
-        return _TX_CACHE[text]
+        return polish_ko(_TX_CACHE[text])
     # Protect model codes
     protected = {}
     def hold(m):
         k = f"⟦{len(protected)}⟧"
         protected[k] = m.group(0)
         return k
-    held = re.sub(r"\b(?:C\d{2}|C\d|N\d{2}|Mk\.?\s*[IVX]+|GMT|COSC|Ti)\b", hold, text)
+    held = re.sub(r"\b(?:C\d{2}|C\d|N\d{2}|Mk\.?\s*[IVX]+|GMT|COSC|Ti|Loco)\b", hold, text)
     try:
         import urllib.request, urllib.parse, json as _json
         q = urllib.parse.quote(held[:4500])
@@ -353,10 +364,7 @@ def translate_en(text: str) -> str:
         out = to_ko(text)
     for k, v in protected.items():
         out = out.replace(k, v)
-    # Prefer our lexicon for brand terms that gtx literalizes
-    out = out.replace("팔찌", "브레이슬릿").replace("검은 그림자", "블랙 섀도우")
-    out = out.replace("사파이어 가장자리", "사파이어 엣지").replace("청동", "브론즈")
-    out = out.replace("삼지창", "트라이던트").replace("물개", "실랜더")
+    out = polish_ko(out)
     _TX_CACHE[text] = out
     if len(_TX_CACHE) % 25 == 0:
         _TX_CACHE_PATH.write_text(json.dumps(_TX_CACHE, ensure_ascii=False, indent=2))
@@ -606,37 +614,65 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         for es in editorial:
             title_en = (es.get("titleEn") or "").strip()
             body_en = (es.get("bodyEn") or "").strip()
-            # Placeholder caption labels from scraper — show image only
+            # Placeholder caption labels from old scraper — drop empty shells
             if re.match(r"^Detail\s+\d+$", body_en, re.I) and not title_en:
-                body_en = ""
+                continue
             title_ko = translate_en(title_en) if title_en else ""
             body_ko = translate_en(body_en) if body_en else ""
-            # Keep distinctive English titles that are brand lines
-            if title_en == "Time to make the JJump":
-                title_ko = "Time to make the JJump"
-            elif title_en.startswith("Calibre JJ01") or title_en == "Calibre JJ01":
-                title_ko = "Calibre JJ01"
-            elif title_en.startswith("Introducing Calibre CW-003"):
-                title_ko = "칼리버 CW-003 소개"
-            elif title_en == "Poetry in motion":
-                title_ko = "움직이는 시"
+            # Keep distinctive English / brand titles
+            TITLE_KO = {
+                "Time to make the JJump": "Time to make the JJump",
+                "Calibre JJ01": "Calibre JJ01",
+                "Poetry in motion": "움직이는 시",
+                "Introducing Calibre CW-003": "칼리버 CW-003 소개",
+                "Architecture and artistry": "건축과 예술성",
+                "Dialled up": "다이얼의 완성",
+                "Your beating heart": "뛰는 심장",
+                "The big finish": "피니싱의 하이라이트",
+                "Case study": "케이스 스터디",
+                "Charm bracelet": "매혹의 브레이슬릿",
+                "Strap battle": "스트랩의 선택",
+                "A revolution in motion": "움직이는 혁명",
+            }
+            if title_en in TITLE_KO:
+                title_ko = TITLE_KO[title_en]
+            elif title_en.startswith("Calibre JJ01"):
+                title_ko = title_en
+            elif title_en.startswith("Introducing Calibre"):
+                title_ko = translate_en(title_en)
             img = es.get("image")
             if img and not existing_images([img]):
                 img = None
             if not body_ko and not img and not es.get("videoUrl"):
                 continue
+            layout = es.get("layout") or "default"
+            if layout == "wide" and (title_ko or body_ko):
+                layout = "caption"
+            if not title_ko and not body_ko and img:
+                layout = "wide"
             ed_sections.append(
                 {
                     "titleKo": title_ko,
                     "bodyKo": body_ko,
                     "image": img,
                     "videoUrl": es.get("videoUrl"),
-                    "layout": es.get("layout") or ("wide" if not title_ko and img else "default"),
+                    "layout": layout,
                     "reverse": bool(es.get("reverse")),
                 }
             )
         if ed_sections:
-            # Keep intro story first, then editorial, drop weak feature stubs that duplicate
+            # Drop consecutive duplicate bodies (keep first occurrence)
+            deduped = []
+            prev_body = ""
+            for es in ed_sections:
+                body = (es.get("bodyKo") or "").strip()
+                if body and body == prev_body:
+                    continue
+                deduped.append(es)
+                if body:
+                    prev_body = body
+            ed_sections = deduped
+            # Keep intro story first, then editorial
             intro = story[:1] if story else []
             story = intro + ed_sections
 
