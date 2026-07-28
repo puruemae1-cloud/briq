@@ -9,6 +9,7 @@ import { ProductGallery } from "@/components/ProductGallery";
 import { ProductImage } from "@/components/ProductImage";
 import { ProductPurchaseNotice } from "@/components/ProductPurchaseNotice";
 import { ProductStorySections } from "@/components/ProductStorySections";
+import { ProductTechSpecs } from "@/components/ProductTechSpecs";
 import type { Product, ProductVariant } from "@/data/products";
 import {
   formatKrw,
@@ -86,10 +87,17 @@ export function ProductDetail({
   const [braceletCm, setBraceletCm] = useState("no");
   const unitPrice = cartUnitPrice(product, selected, braceletCm);
   const primaryImage = resolveProductImage(product.image, selected?.image);
-  const galleryImages =
-    product.images && product.images.length > 0
-      ? product.images
-      : [primaryImage];
+  const galleryImages = (() => {
+    const variantGallery = selected?.images?.filter(Boolean) ?? [];
+    if (variantGallery.length > 0) return variantGallery;
+    const productGallery = product.images?.filter(Boolean) ?? [];
+    if (selected?.image) {
+      const rest = productGallery.filter((src) => src !== selected.image);
+      return [selected.image, ...rest];
+    }
+    if (productGallery.length > 0) return productGallery;
+    return [primaryImage];
+  })();
   const soldOut = !selectedAvailable;
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && product.compareAtPrice);
@@ -123,6 +131,7 @@ export function ProductDetail({
           alt={`${product.nameKo} ${selected?.nameKo ?? ""}`}
           soldOut={soldOut}
           badge={selected?.nameKo}
+          resetKey={selected?.id ?? product.id}
         />
 
         <div className="product-detail__info">
@@ -221,6 +230,8 @@ export function ProductDetail({
       {product.storySections?.length ? (
         <ProductStorySections sections={product.storySections} />
       ) : null}
+
+      <ProductTechSpecs specs={product.techSpecs} features={product.featuresKo} />
 
       <ProductPurchaseNotice />
 

@@ -21,10 +21,15 @@ export default function ProductScreen() {
     [product],
   );
   const [variantId, setVariantId] = useState<string | undefined>(undefined);
+  const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => {
     setVariantId(variants[0]?.id);
   }, [product?.id, variants]);
+
+  useEffect(() => {
+    setActiveImage(0);
+  }, [variantId, product?.id]);
 
   if (!product) {
     return (
@@ -37,22 +42,62 @@ export default function ProductScreen() {
   const selected: ProductVariant | undefined =
     variants.find((v) => v.id === variantId) ?? variants[0];
   const unitPrice = selected?.price ?? product.price;
-  const mainImage = selected?.image ?? product.image;
+  const gallery =
+    (selected?.images && selected.images.length > 0
+      ? selected.images
+      : selected?.image
+        ? [selected.image, ...(product.images ?? []).filter((i) => i !== selected.image)]
+        : product.images?.length
+          ? product.images
+          : [product.image]
+    ).filter(Boolean);
+  const mainImage = gallery[Math.min(activeImage, gallery.length - 1)] ?? product.image;
 
   return (
     <ScrollView contentContainerStyle={styles.page}>
       <View style={[styles.media, { backgroundColor: product.accent }]}>
         {mainImage != null ? (
-          <Image
-            key={selected?.id ?? product.id}
-            source={mainImage}
-            style={styles.mediaImage}
-            resizeMode="cover"
-          />
+          <Pressable
+            onPress={() =>
+              gallery.length > 1 &&
+              setActiveImage((i) => (i + 1) % gallery.length)
+            }
+            style={StyleSheet.absoluteFill}
+          >
+            <Image
+              key={`${selected?.id ?? product.id}-${activeImage}`}
+              source={mainImage}
+              style={styles.mediaImage}
+              resizeMode="contain"
+            />
+          </Pressable>
         ) : (
           <Text style={styles.mediaBrand}>Briq</Text>
         )}
+        {gallery.length > 1 ? (
+          <Text style={styles.mediaCount}>
+            {Math.min(activeImage, gallery.length - 1) + 1} / {gallery.length}
+          </Text>
+        ) : null}
       </View>
+
+      {gallery.length > 1 ? (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.thumbs}
+        >
+          {gallery.map((img, i) => (
+            <Pressable
+              key={`${img}-${i}`}
+              onPress={() => setActiveImage(i)}
+              style={[styles.thumb, i === activeImage && styles.thumbActive]}
+            >
+              <Image source={img} style={styles.thumbImage} resizeMode="contain" />
+            </Pressable>
+          ))}
+        </ScrollView>
+      ) : null}
 
       <View style={styles.body}>
         <Text style={styles.brand}>{product.brand}</Text>
@@ -62,7 +107,8 @@ export default function ProductScreen() {
         {variants.length > 0 ? (
           <View style={styles.variantBlock}>
             <Text style={styles.variantLabel}>
-              컬러 · <Text style={styles.variantStrong}>{selected?.nameKo}</Text>
+              {product.brand === "Christopher Ward" ? "스트랩 · " : "컬러 · "}
+              <Text style={styles.variantStrong}>{selected?.nameKo}</Text>
             </Text>
             <View style={styles.variantGrid}>
               {variants.map((v) => {
@@ -88,6 +134,29 @@ export default function ProductScreen() {
           <Text style={styles.desc}>{product.descriptionKo}</Text>
         ) : null}
 
+        {product.featuresKo?.length ? (
+          <View style={styles.techBlock}>
+            <Text style={styles.techTitle}>특징</Text>
+            {product.featuresKo.map((f) => (
+              <Text key={f} style={styles.techItem}>
+                · {f}
+              </Text>
+            ))}
+          </View>
+        ) : null}
+
+        {product.techSpecs?.length ? (
+          <View style={styles.techBlock}>
+            <Text style={styles.techTitle}>기술 사양</Text>
+            {product.techSpecs.map((s) => (
+              <View key={`${s.labelKo}-${s.valueKo}`} style={styles.specRow}>
+                <Text style={styles.specLabel}>{s.labelKo}</Text>
+                <Text style={styles.specValue}>{s.valueKo}</Text>
+              </View>
+            ))}
+          </View>
+        ) : null}
+
         <Pressable style={styles.btn} onPress={() => add(product, selected)}>
           <Text style={styles.btnText}>장바구니 담기</Text>
         </Pressable>
@@ -108,6 +177,7 @@ const styles = StyleSheet.create({
     aspectRatio: 4 / 5,
     justifyContent: "flex-end",
     overflow: "hidden",
+    backgroundColor: "#f4f4f2",
   },
   mediaImage: {
     position: "absolute",
@@ -119,65 +189,83 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   mediaBrand: {
-    color: "#f7f8f5",
-    fontSize: 42,
-    letterSpacing: 4,
-    fontWeight: "500",
-    padding: 20,
+    position: "absolute",
+    left: 16,
+    bottom: 16,
+    fontSize: 28,
+    fontWeight: "700",
   },
-  body: { padding: 20 },
-  brand: {
-    letterSpacing: 1.5,
-    textTransform: "uppercase",
-    color: "#6a736c",
-    fontSize: 12,
+  mediaCount: {
+    position: "absolute",
+    right: 12,
+    bottom: 12,
+    backgroundColor: "rgba(255,255,255,0.88)",
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    fontSize: 11,
+    fontWeight: "600",
+    overflow: "hidden",
   },
-  name: { fontSize: 28, fontWeight: "600", marginTop: 6 },
-  price: { fontSize: 20, fontWeight: "700", marginVertical: 14 },
-  desc: { lineHeight: 22, color: "#2a332e", marginTop: 8 },
-  variantBlock: { marginBottom: 8 },
-  variantLabel: { fontSize: 15, marginBottom: 10, color: "#2a332e" },
-  variantStrong: { fontWeight: "700" },
-  variantGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
+  thumbs: {
+    paddingHorizontal: 12,
+    paddingVertical: 10,
     gap: 8,
   },
-  swatch: {
-    width: "31%",
+  thumb: {
+    width: 64,
+    height: 80,
     borderWidth: 1,
     borderColor: "rgba(11,18,16,0.12)",
+    marginRight: 8,
     backgroundColor: "#fff",
-    padding: 6,
+    padding: 2,
   },
-  swatchActive: {
-    borderColor: "#1f4d3a",
-    borderWidth: 2,
+  thumbActive: { borderColor: "rgba(11,18,16,0.55)" },
+  thumbImage: { width: "100%", height: "100%" },
+  body: { padding: 16, gap: 10 },
+  brand: { fontSize: 12, letterSpacing: 1, color: "#666", textTransform: "uppercase" },
+  name: { fontSize: 22, fontWeight: "700", color: "#0b1210" },
+  price: { fontSize: 18, fontWeight: "650", marginBottom: 4 },
+  variantBlock: { marginTop: 8, gap: 8 },
+  variantLabel: { fontSize: 14, color: "#444" },
+  variantStrong: { fontWeight: "700", color: "#0b1210" },
+  variantGrid: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
+  swatch: {
+    width: "47%",
+    borderWidth: 1,
+    borderColor: "rgba(11,18,16,0.12)",
+    padding: 8,
+    gap: 6,
   },
-  swatchImage: {
-    width: "100%",
-    aspectRatio: 1,
-    backgroundColor: "#eee",
+  swatchActive: { borderColor: "rgba(11,18,16,0.55)" },
+  swatchImage: { width: "100%", aspectRatio: 4 / 5, backgroundColor: "#f4f4f2" },
+  swatchText: { fontSize: 12, color: "#222" },
+  desc: { marginTop: 8, fontSize: 14, lineHeight: 21, color: "#333" },
+  techBlock: { marginTop: 12, gap: 6 },
+  techTitle: { fontSize: 16, fontWeight: "700", marginBottom: 4 },
+  techItem: { fontSize: 13, lineHeight: 19, color: "#333" },
+  specRow: {
+    flexDirection: "row",
+    gap: 10,
+    paddingVertical: 8,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: "rgba(11,18,16,0.12)",
   },
-  swatchText: {
-    marginTop: 6,
-    fontSize: 11,
-    lineHeight: 14,
-    color: "#3a433d",
-  },
+  specLabel: { width: 110, fontSize: 11, color: "#777", textTransform: "uppercase" },
+  specValue: { flex: 1, fontSize: 13, color: "#222", fontWeight: "560" },
   btn: {
-    marginTop: 20,
-    backgroundColor: "#1f4d3a",
+    marginTop: 16,
+    backgroundColor: "#0b1210",
     paddingVertical: 14,
     alignItems: "center",
   },
   btnText: { color: "#fff", fontWeight: "700" },
   btnOutline: {
-    marginTop: 10,
+    marginTop: 8,
     borderWidth: 1,
-    borderColor: "rgba(11,18,16,0.15)",
+    borderColor: "#0b1210",
     paddingVertical: 14,
     alignItems: "center",
   },
-  btnOutlineText: { fontWeight: "600" },
+  btnOutlineText: { color: "#0b1210", fontWeight: "700" },
 });

@@ -22,8 +22,15 @@ export type ProductVariant = {
    * Use the shared 4:5 framing standard — see `src/lib/product-image.ts`.
    */
   image: string;
+  /** Optional multi-image gallery for this strap/colour option. */
+  images?: string[];
   sourceUrl: string;
   inStock: boolean;
+};
+
+export type ProductTechSpec = {
+  labelKo: string;
+  valueKo: string;
 };
 
 export type Product = {
@@ -75,6 +82,9 @@ export type Product = {
   };
   /** Long-form PDP story blocks (image + Korean copy). */
   storySections?: ProductStorySection[];
+  /** Tech specs & features (Christopher Ward PDP). */
+  techSpecs?: ProductTechSpec[];
+  featuresKo?: string[];
   /**
    * Catalogue registration time (ISO). Used by 최신등록순.
    * Always set this when adding a product — newer timestamps rank first.

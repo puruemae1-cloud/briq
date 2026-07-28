@@ -22,6 +22,7 @@ PHRASES = [
     (r"Full Lume", "풀 룸"),
     (r"Nearly New", "니얼리 뉴"),
     (r"Fine Italian", "파인 이탈리안"),
+    (r"Light Blue", "라이트 블루"),
 ]
 WORDS = [
     ("Trident", "트라이던트"),
@@ -58,6 +59,11 @@ WORDS = [
     ("Oak", "오크"),
     ("Camel", "카멜"),
     ("Tobacco", "토바코"),
+    ("Brown", "브라운"),
+    ("Sand", "샌드"),
+    ("Dawn", "던"),
+    ("Dusk", "더스크"),
+    ("Noon", "눈"),
     ("Black", "블랙"),
     ("White", "화이트"),
     ("Blue", "블루"),
@@ -73,7 +79,34 @@ WORDS = [
     ("Mulberry", "멀베리"),
     ("Pistachio", "피스타치오"),
     ("Alabaster", "알라바스터"),
+    ("Light", "라이트"),
 ]
+
+SPEC_LABELS = {
+    "Watch Model": "모델",
+    "Size": "사이즈",
+    "Dial Colour": "다이얼 컬러",
+    "Case Material": "케이스 소재",
+    "Case Colour": "케이스 컬러",
+    "Bezel Colour": "베젤 컬러",
+    "Height": "두께",
+    "Lug-to-Lug": "러그 투 러그",
+    "Case Weight": "케이스 무게",
+    "Weight inc. Strap": "스트랩 포함 무게",
+    "Water Resistance": "방수",
+    "Movement": "무브먼트",
+    "Power Reserve": "파워리저브",
+    "No of Jewels": "주얼 수",
+    "Complication Type": "컴플리케이션",
+    "Vibrations": "진동수",
+    "Timing Tolerance": "일오차",
+    "Lume": "루메",
+    "Strap SKU": "스트랩 SKU",
+    "Strap Material": "스트랩 소재",
+    "Strap Colour": "스트랩 컬러",
+    "Colour": "컬러",
+    "Range": "라인",
+}
 
 
 def to_ko(s: str) -> str:
@@ -111,6 +144,63 @@ def round_krw(gbp: float) -> int:
 
 def slugify(s: str) -> str:
     return re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
+
+
+def is_full_sku(sku: str) -> bool:
+    return bool(sku) and sku.count("-") >= 2 and len(sku) > 10
+
+
+def local_gallery(sku: str) -> list[str]:
+    folder = ROOT / "public/products/cw-pdp" / slugify(sku)
+    if not folder.exists():
+        return []
+    files = sorted(folder.glob("*.jpg"), key=lambda p: int(re.sub(r"\D", "", p.stem) or "0"))
+    return [f"/products/cw-pdp/{slugify(sku)}/{f.name}" for f in files]
+
+
+def resolve_variant_sku(v: dict, members: list, colour: str | None, primary_sku: str) -> str:
+    sku = (v.get("sku") or "").strip()
+    label = (v.get("labelEn") or "").strip().lower()
+    if is_full_sku(sku):
+        return sku
+    # Match raw catalogue members by strap keyword in subtitle/url
+    for m in members:
+        msku = m.get("sku") or ""
+        if not is_full_sku(msku):
+            continue
+        hay = f"{m.get('subtitle') or ''} {m.get('url') or ''} {msku}".lower()
+        tokens = [t for t in re.split(r"[^a-z0-9]+", label) if len(t) > 2]
+        if tokens and all(t in hay or t[:4] in hay for t in tokens[:2]):
+            return msku
+    # Same dial prefix as primary + strap code from label heuristics
+    if is_full_sku(primary_sku):
+        prefix = "-".join(primary_sku.split("-")[:-1])
+        # Prefer member with same dial prefix
+        same = [m["sku"] for m in members if (m.get("sku") or "").startswith(prefix + "-")]
+        for msku in same:
+            hay = msku.lower()
+            if "bracelet" in label and msku.upper().endswith(("B0", "B1", "B0R")):
+                return msku
+        # Last resort: keep primary when this is the selected strap image set
+        if v.get("images") and slugify(primary_sku) in (v.get("image") or ""):
+            return primary_sku
+    return sku
+
+
+def build_tech_specs(en: dict) -> list[dict]:
+    specs = []
+    for row in en.get("technicalsEn") or []:
+        label_en = row.get("labelEn") or ""
+        value_en = str(row.get("valueEn") or "")
+        if label_en in ("Strap SKU",):
+            continue
+        label_ko = SPEC_LABELS.get(label_en) or translate_en(label_en)
+        value_ko = to_ko(value_en) if re.search(r"[A-Za-z]{3,}", value_en) else value_en
+        # Prefer translate for longer values
+        if len(value_en) > 18 and re.search(r"[A-Za-z]", value_en):
+            value_ko = translate_en(value_en)
+        specs.append({"labelKo": label_ko, "valueKo": value_ko})
+    return specs
 
 
 _TX_CACHE_PATH = ROOT / "src/data/cw/cw-translate-cache.json"
@@ -240,8 +330,18 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     en = g["en"] or {}
     name_en = g["name_en"]
     members = g["raw_members"]
-    # primary enriched or first member
+    # primary enriched or first member — prefer full SKU
     primary_sku = en.get("sku") or members[0]["sku"]
+    if not is_full_sku(primary_sku):
+        primary_sku = next((m["sku"] for m in members if is_full_sku(m.get("sku") or "")), members[0]["sku"])
+    # If enrich collapsed to master, keep a full member SKU as primary
+    if en.get("seedSku") and is_full_sku(en["seedSku"]):
+        primary_sku = en["seedSku"]
+    elif not is_full_sku(str(en.get("sku") or "")):
+        for m in members:
+            if is_full_sku(m.get("sku") or ""):
+                primary_sku = m["sku"]
+                break
     gbp = en.get("gbpPrice") if en.get("gbpPrice") is not None else members[0].get("gbpPrice")
     if gbp is None:
         continue
@@ -249,21 +349,38 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
 
     # variants from strapVariants if present, else from group members with different straps
     variants = []
-    strap_vars = [v for v in (en.get("strapVariants") or []) if v.get("sku") and v.get("price")]
+    strap_vars = [v for v in (en.get("strapVariants") or []) if v.get("sku") and v.get("price") is not None]
+    if not strap_vars:
+        strap_vars = [v for v in (en.get("strapVariants") or []) if v.get("labelEn")]
     if strap_vars:
+        seen_vids = set()
         for v in strap_vars:
+            vsku = resolve_variant_sku(v, members, g.get("colour"), primary_sku)
+            if not vsku:
+                continue
+            vid = slugify(vsku)
+            if vid in seen_vids:
+                continue
+            seen_vids.add(vid)
+            vimgs = v.get("images") or local_gallery(vsku)
+            if not vimgs:
+                # Prefer PLP hero for this SKU
+                plp = f"/products/cw/{slugify(vsku)}.jpg"
+                if (ROOT / "public" / plp.lstrip("/")).exists():
+                    vimgs = [plp]
+                else:
+                    vimgs = local_gallery(primary_sku)[:1] or [en.get("image")]
+            vimgs = [x for x in vimgs if x]
             variants.append(
                 {
-                    "id": slugify(v["sku"]),
-                    "name": v.get("labelEn") or v["sku"],
-                    "nameKo": to_ko(v.get("labelEn") or v["sku"]),
-                    "sku": v["sku"],
+                    "id": vid,
+                    "name": v.get("labelEn") or vsku,
+                    "nameKo": to_ko(v.get("labelEn") or vsku),
+                    "sku": vsku,
                     "gbpPrice": v.get("gbpPrice") or gbp,
                     "price": v.get("price") or round_krw(v.get("gbpPrice") or gbp),
-                    "image": v.get("image")
-                    or (v.get("images") or [None])[0]
-                    or en.get("image")
-                    or f"/products/cw/{slugify(v['sku'])}.jpg",
+                    "image": vimgs[0],
+                    "images": vimgs,
                     "sourceUrl": v.get("sourceUrl") or members[0].get("url") or "",
                     "inStock": v.get("inStock", True),
                 }
@@ -274,23 +391,31 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             sub = clean_sub(m.get("subtitle") or "")
             label = sub.split("·")[-1].strip() if sub else m["sku"]
             mgbp = m.get("gbpPrice") or gbp
+            msku = m["sku"]
+            vimgs = local_gallery(msku) or [f"/products/cw/{slugify(msku)}.jpg"]
             variants.append(
                 {
-                    "id": slugify(m["sku"]),
+                    "id": slugify(msku),
                     "name": label,
                     "nameKo": to_ko(label),
-                    "sku": m["sku"],
+                    "sku": msku,
                     "gbpPrice": mgbp,
                     "price": round_krw(mgbp),
-                    "image": f"/products/cw/{slugify(m['sku'])}.jpg",
+                    "image": vimgs[0],
+                    "images": vimgs,
                     "sourceUrl": m.get("url") or "",
                     "inStock": True,
                 }
             )
 
-    images = en.get("images") or []
+    images = en.get("images") or local_gallery(primary_sku)
     if not images:
         images = [f"/products/cw/{slugify(primary_sku)}.jpg"]
+    # Prefer longest gallery among variants matching primary
+    for v in variants:
+        if v["sku"] == primary_sku and len(v.get("images") or []) > len(images):
+            images = v["images"]
+            break
 
     sub_bits = []
     if g.get("size"):
@@ -306,12 +431,17 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     price = round_krw(gbp)
     compare = round_krw(list_gbp) if list_gbp and list_gbp > gbp else None
 
+    story_src = en.get("shortDescriptionEn") or ""
+    if en.get("longDescriptionEn") and len(en["longDescriptionEn"]) > 40:
+        story_src = (story_src + "\n\n" + en["longDescriptionEn"]).strip()
     story = translate_story(
         name_en,
-        en.get("shortDescriptionEn") or "",
+        story_src,
         en.get("featuresEn") or [],
         images,
     )
+    tech_specs = build_tech_specs(en)
+    features_ko = [translate_en(f) for f in (en.get("featuresEn") or [])[:16]]
 
     # min price across variants for card
     if variants:
@@ -356,6 +486,8 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "braceletResize": bool(en.get("braceletResize")),
             "braceletResizeFeeKrw": en.get("braceletResizeFeeKrw") or 20000,
             "storySections": story,
+            "techSpecs": tech_specs,
+            "featuresKo": features_ko,
             "memberSkus": [m["sku"] for m in members],
         }
     )
@@ -421,6 +553,8 @@ for p in products_out:
             lines.append(f'        gbpPrice: {v["gbpPrice"]},')
             lines.append(f'        price: {v["price"]},')
             lines.append(f'        image: {json.dumps(v["image"])},')
+            if v.get("images") and len(v["images"]) > 1:
+                lines.append(f'        images: {json.dumps(v["images"])},')
             lines.append(f'        sourceUrl: {json.dumps(v["sourceUrl"])},')
             lines.append(f'        inStock: {str(v.get("inStock", True)).lower()},')
             lines.append("      },")
@@ -441,6 +575,18 @@ for p in products_out:
             if s.get("reverse"):
                 lines.append("        reverse: true,")
             lines.append("      },")
+        lines.append("    ],")
+    if p.get("featuresKo"):
+        lines.append(f'    featuresKo: {json.dumps(p["featuresKo"], ensure_ascii=False)},')
+    if p.get("techSpecs"):
+        lines.append("    techSpecs: [")
+        for s in p["techSpecs"]:
+            lines.append(
+                "      {"
+                f' labelKo: {json.dumps(s["labelKo"], ensure_ascii=False)},'
+                f' valueKo: {json.dumps(s["valueKo"], ensure_ascii=False)} '
+                "},"
+            )
         lines.append("    ],")
     lines.append("  },")
 

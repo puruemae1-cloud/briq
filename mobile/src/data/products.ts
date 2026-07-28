@@ -15,7 +15,8 @@ export type ProductVariant = {
   gbpPrice: number;
   price: number;
   /** Local require() asset or remote URI string */
-  image: number;
+  image: number | string;
+  images?: Array<number | string>;
   inStock: boolean;
 };
 
@@ -29,8 +30,11 @@ export type Product = {
   descriptionKo?: string;
   accent: string;
   badge?: string;
-  image?: number;
+  image?: number | string;
+  images?: Array<number | string>;
   variants?: ProductVariant[];
+  featuresKo?: string[];
+  techSpecs?: Array<{ labelKo: string; valueKo: string }>;
 };
 
 /** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
