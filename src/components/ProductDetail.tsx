@@ -171,7 +171,8 @@ export function ProductDetail({
           {allVariants.length > 0 ? (
             <div className="variant-block">
               <p className="variant-block__label">
-                컬러 · <strong>{selected?.nameKo}</strong>
+                {product.brand === "Christopher Ward" ? "스트랩 · " : "컬러 · "}
+                <strong>{selected?.nameKo}</strong>
                 {soldOut ? (
                   <span className="product-detail__stock"> · Sold Out</span>
                 ) : null}

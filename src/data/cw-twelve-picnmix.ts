@@ -1,5 +1,5 @@
-/** Bracelet resize: No = free; any cm size = +₩25,000 */
-export const CW_BRACELET_RESIZE_FEE = 25_000;
+/** Bracelet resize: No = free; any cm size = +₩20,000 (£10 addon, 만원 반올림) */
+export const CW_BRACELET_RESIZE_FEE = 20_000;
 
 export const CW_BRACELET_SIZES_CM: string[] = (() => {
   const sizes: string[] = [];

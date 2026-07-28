@@ -88,9 +88,14 @@ export type Product = {
   editTier?: "signature" | "bestseller" | "new";
 };
 
-/** KRW = GBP × 2100 × 1.05 + 200,000 */
+/** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
 export function gbpToBriqKrw(gbp: number) {
-  return Math.round(gbp * 2100 * 1.05 + 200_000);
+  return Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
+}
+
+/** Addon fees (bracelet resize etc.) — no +200,000 base, still 만원 rounding. */
+export function gbpToBriqAddonKrw(gbp: number) {
+  return Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
 }
 
 /** Sale discount percent from compareAt → price, or null if not on sale. */
@@ -728,7 +733,14 @@ export function getProduct(id: string) {
   if (id === "prl-chino-cap-old-royal") {
     return products.find((p) => p.id === "prl-chino-cap");
   }
-  return products.find((p) => p.id === id);
+  const direct = products.find((p) => p.id === id);
+  if (direct) return direct;
+  // CW strap variants share a parent product — resolve by variant id or sku slug.
+  return products.find(
+    (p) =>
+      p.sku === id ||
+      p.variants?.some((v) => v.id === id || `cw-${v.id}` === id || v.sku === id),
+  );
 }
 
 export function getProductsByCategory(category?: string, sub?: string) {
