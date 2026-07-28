@@ -9,6 +9,20 @@ ROOT = Path("/Users/jeonghyunlee/Documents/briq")
 RAW = json.loads((ROOT / "src/data/cw/cw-catalog-raw.json").read_text())
 ENR_PATH = ROOT / "src/data/cw/cw-pdp-enriched.json"
 ENR = json.loads(ENR_PATH.read_text())["products"] if ENR_PATH.exists() else {}
+ED_PATH = ROOT / "src/data/cw/cw-editorial.json"
+ED_MODELS = json.loads(ED_PATH.read_text()).get("models") if ED_PATH.exists() else {}
+
+
+def model_key_from_url(url: str) -> str | None:
+    if not url:
+        return None
+    path = re.sub(r"[?#].*$", "", url)
+    parts = [p for p in path.strip("/").split("/") if p]
+    if len(parts) >= 2 and parts[-1].endswith(".html"):
+        return parts[-2]
+    if parts:
+        return parts[-1].replace(".html", "")
+    return None
 
 PHRASES = [
     (r"Black Shadow", "블랙 섀도우"),
@@ -164,24 +178,24 @@ def resolve_variant_sku(v: dict, members: list, colour: str | None, primary_sku:
     if is_full_sku(sku):
         return sku
     # Match raw catalogue members by strap keyword in subtitle/url
+    best = None
+    tokens = [t for t in re.split(r"[^a-z0-9]+", label) if len(t) > 2]
     for m in members:
         msku = m.get("sku") or ""
         if not is_full_sku(msku):
             continue
         hay = f"{m.get('subtitle') or ''} {m.get('url') or ''} {msku}".lower()
-        tokens = [t for t in re.split(r"[^a-z0-9]+", label) if len(t) > 2]
-        if tokens and all(t in hay or t[:4] in hay for t in tokens[:2]):
-            return msku
-    # Same dial prefix as primary + strap code from label heuristics
+        score = sum(1 for t in tokens if t in hay)
+        if "bracelet" in label and msku.upper().endswith(("B1", "B1R", "B0", "B0R")):
+            score += 3
+            # Prefer B1 over B0 when both exist
+            if msku.upper().endswith(("B1", "B1R")):
+                score += 2
+        if score > 0 and (best is None or score > best[0]):
+            best = (score, msku)
+    if best:
+        return best[1]
     if is_full_sku(primary_sku):
-        prefix = "-".join(primary_sku.split("-")[:-1])
-        # Prefer member with same dial prefix
-        same = [m["sku"] for m in members if (m.get("sku") or "").startswith(prefix + "-")]
-        for msku in same:
-            hay = msku.lower()
-            if "bracelet" in label and msku.upper().endswith(("B0", "B1", "B0R")):
-                return msku
-        # Last resort: keep primary when this is the selected strap image set
         if v.get("images") and slugify(primary_sku) in (v.get("image") or ""):
             return primary_sku
     return sku
@@ -371,14 +385,29 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 else:
                     vimgs = local_gallery(primary_sku)[:1] or [en.get("image")]
             vimgs = [x for x in vimgs if x]
+            member_map = {m["sku"]: m for m in members}
+            raw_gbp = (member_map.get(vsku) or {}).get("gbpPrice")
+            vgbp = raw_gbp if raw_gbp is not None else (v.get("gbpPrice") or gbp)
+            # Bracelet options are often returned as a price *range* on the master pid —
+            # never undercut the raw catalogue price for that full SKU.
+            if "bracelet" in (v.get("labelEn") or "").lower() and raw_gbp is None:
+                # Prefer max among candidate member bracelet SKUs in this dial group
+                brace = [
+                    m.get("gbpPrice")
+                    for m in members
+                    if m.get("gbpPrice")
+                    and str(m.get("sku") or "").upper().endswith(("B0", "B1", "B0R", "B1R"))
+                ]
+                if brace:
+                    vgbp = max(brace)
             variants.append(
                 {
                     "id": vid,
                     "name": v.get("labelEn") or vsku,
                     "nameKo": to_ko(v.get("labelEn") or vsku),
                     "sku": vsku,
-                    "gbpPrice": v.get("gbpPrice") or gbp,
-                    "price": v.get("price") or round_krw(v.get("gbpPrice") or gbp),
+                    "gbpPrice": vgbp,
+                    "price": round_krw(vgbp),
                     "image": vimgs[0],
                     "images": vimgs,
                     "sourceUrl": v.get("sourceUrl") or members[0].get("url") or "",
@@ -440,6 +469,42 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         en.get("featuresEn") or [],
         images,
     )
+
+    # Merge official CW editorial long-description (video, JJ01, captions…)
+    editorial = (en.get("editorial") or {}).get("sections") or []
+    if not editorial:
+        mkey = model_key_from_url(en.get("sourceUrl") or members[0].get("url") or "")
+        if mkey and ED_MODELS.get(mkey):
+            editorial = ED_MODELS[mkey].get("sections") or []
+    if editorial:
+        ed_sections = []
+        for es in editorial:
+            title_en = (es.get("titleEn") or "").strip()
+            body_en = (es.get("bodyEn") or "").strip()
+            title_ko = translate_en(title_en) if title_en else ""
+            body_ko = translate_en(body_en) if body_en else ""
+            # Keep distinctive English titles that are brand lines
+            if title_en == "Time to make the JJump":
+                title_ko = "Time to make the JJump"
+            elif title_en.startswith("Calibre JJ01") or title_en == "Calibre JJ01":
+                title_ko = "Calibre JJ01"
+            if not body_ko and not es.get("image") and not es.get("videoUrl"):
+                continue
+            ed_sections.append(
+                {
+                    "titleKo": title_ko,
+                    "bodyKo": body_ko or title_ko,
+                    "image": es.get("image"),
+                    "videoUrl": es.get("videoUrl"),
+                    "layout": es.get("layout") or "default",
+                    "reverse": bool(es.get("reverse")),
+                }
+            )
+        if ed_sections:
+            # Keep intro story first, then editorial, drop weak feature stubs that duplicate
+            intro = story[:1] if story else []
+            story = intro + ed_sections
+
     tech_specs = build_tech_specs(en)
     features_ko = [translate_en(f) for f in (en.get("featuresEn") or [])[:16]]
 
@@ -572,6 +637,10 @@ for p in products_out:
             lines.append(f'        bodyKo: {json.dumps(s["bodyKo"], ensure_ascii=False)},')
             if s.get("image"):
                 lines.append(f'        image: {json.dumps(s["image"])},')
+            if s.get("videoUrl"):
+                lines.append(f'        videoUrl: {json.dumps(s["videoUrl"])},')
+            if s.get("layout") and s.get("layout") != "default":
+                lines.append(f'        layout: {json.dumps(s["layout"])},')
             if s.get("reverse"):
                 lines.append("        reverse: true,")
             lines.append("      },")

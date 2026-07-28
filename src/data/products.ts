@@ -8,6 +8,10 @@ export type ProductStorySection = {
   image?: string;
   imageAlt?: string;
   reverse?: boolean;
+  /** Optional embedded video (e.g. Vimeo). */
+  videoUrl?: string;
+  /** Full-bleed / caption-card presentation. */
+  layout?: "default" | "wide" | "caption";
 };
 
 export type ProductVariant = {
