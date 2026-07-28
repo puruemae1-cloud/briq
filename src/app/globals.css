@@ -366,7 +366,8 @@ img {
 
 /* Clearance — oxblood + champagne gold (PC + mobile app) */
 .chip--clearance,
-a.chip[href*="sub=cw-clearance"] {
+a.chip[href*="sub=cw-clearance"],
+a.chip[href*="sub=gg-sale"] {
   opacity: 1;
   border-color: rgba(183, 161, 106, 0.55);
   background:
@@ -380,7 +381,9 @@ a.chip[href*="sub=cw-clearance"] {
 .chip--clearance:hover,
 .chip--clearance.is-active,
 a.chip[href*="sub=cw-clearance"]:hover,
-a.chip[href*="sub=cw-clearance"].is-active {
+a.chip[href*="sub=cw-clearance"].is-active,
+a.chip[href*="sub=gg-sale"]:hover,
+a.chip[href*="sub=gg-sale"].is-active {
   background:
     linear-gradient(145deg, #6b2a36 0%, #4a1b24 50%, #3a151c 100%);
   border-color: #c4a574;
@@ -389,8 +392,10 @@ a.chip[href*="sub=cw-clearance"].is-active {
 
 .nav-link--clearance,
 .nav-dropdown a[href*="sub=cw-clearance"],
+.nav-dropdown a[href*="sub=gg-sale"],
 .mobile-drawer__sub2.nav-link--clearance,
-.mobile-drawer a[href*="sub=cw-clearance"] {
+.mobile-drawer a[href*="sub=cw-clearance"],
+.mobile-drawer a[href*="sub=gg-sale"] {
   display: inline-flex;
   align-items: center;
   width: fit-content;

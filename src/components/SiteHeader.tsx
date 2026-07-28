@@ -23,7 +23,9 @@ function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number
               href={child.href}
               className={[
                 hasKids ? "nav-dropdown__parent" : "",
-                child.id === "cw-clearance" ? "nav-link--clearance" : "",
+                child.id === "cw-clearance" || child.id === "gg-sale"
+                  ? "nav-link--clearance"
+                  : "",
               ]
                 .filter(Boolean)
                 .join(" ") || undefined}
@@ -79,7 +81,9 @@ function MobileBranches({
             href={child.href}
             className={[
               depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2",
-              child.id === "cw-clearance" ? "nav-link--clearance" : "",
+              child.id === "cw-clearance" || child.id === "gg-sale"
+                ? "nav-link--clearance"
+                : "",
             ]
               .filter(Boolean)
               .join(" ")}

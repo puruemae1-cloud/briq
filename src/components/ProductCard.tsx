@@ -13,8 +13,11 @@ export function ProductCard({ product }: { product: Product }) {
   const onSale = Boolean(salePct && product.compareAtPrice);
   const isClearance =
     product.subcategory === "cw-clearance" ||
+    product.subcategory === "gg-sale" ||
     product.cwCollections?.includes("cw-clearance") ||
-    product.badge === "Nearly New";
+    Boolean(product.ggCollections?.includes("gg-sale")) ||
+    product.badge === "Nearly New" ||
+    product.badge === "Sale";
 
   return (
     <Link

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scrape Galvin Green Shopify collections (New Arrivals + Bestsellers), download images, build catalog."""
+"""Scrape Galvin Green Shopify collections, download images, build catalog."""
 from __future__ import annotations
 
 import json
@@ -31,6 +31,10 @@ COLLECTIONS = [
     ("women-new", "gg-new-women"),
     ("our-bestsellers-men", "gg-bestsellers-men"),
     ("our-bestsellers-women", "gg-bestsellers-women"),
+    ("men", "gg-men"),
+    ("women", "gg-women"),
+    ("accessories", "gg-accessories"),
+    ("outlet", "gg-sale"),
 ]
 
 COLOR_TAGS = [
@@ -291,10 +295,28 @@ def normalize_product(raw: dict, collection: str) -> dict:
     }
 
 
-def gender_key(p: dict) -> str:
-    cols = p.get("collections") or [p.get("collection") or ""]
-    if any("women" in (c or "") for c in cols):
+def gender_from_tags(tags: list[str] | str | None) -> str | None:
+    if isinstance(tags, str):
+        tags = [t.strip() for t in tags.split(",") if t.strip()]
+    lower = {t.lower() for t in (tags or [])}
+    if "women" in lower or "women's" in lower:
         return "women"
+    if "men" in lower or "men's" in lower:
+        return "men"
+    return None
+
+
+def gender_key(p: dict) -> str:
+    cols = [c or "" for c in (p.get("collections") or [p.get("collection") or ""])]
+    if any(c in ("gg-new-women", "gg-bestsellers-women", "gg-women") or c.endswith("-women") for c in cols):
+        return "women"
+    if any(c in ("gg-new-men", "gg-bestsellers-men", "gg-men") or c.endswith("-men") for c in cols):
+        return "men"
+    tagged = gender_from_tags(p.get("tags"))
+    if tagged:
+        return tagged
+    if "gg-accessories" in cols:
+        return "accessories"
     return "men"
 
 
@@ -350,6 +372,10 @@ def download_images(products: list[dict]) -> tuple[int, int]:
     return saved, skipped
 
 
+def product_has_stock(raw: dict) -> bool:
+    return any(bool(v.get("available")) for v in (raw.get("variants") or []))
+
+
 def scrape_and_write() -> dict:
     by_handle: dict[str, dict] = {}
     collections_meta: dict[str, list[str]] = {}
@@ -358,7 +384,12 @@ def scrape_and_write() -> dict:
         print(f"Scraping {shopify_handle} → {briq_coll}")
         raw_list = paginate_collection(shopify_handle)
         handles = []
+        skipped_oos = 0
         for raw in raw_list:
+            # Match PLP filter.v.availability=1
+            if not product_has_stock(raw):
+                skipped_oos += 1
+                continue
             norm = normalize_product(raw, briq_coll)
             h = norm["handle"]
             handles.append(h)
@@ -381,7 +412,7 @@ def scrape_and_write() -> dict:
                 norm["collections"] = [briq_coll]
                 by_handle[h] = norm
         collections_meta[shopify_handle] = handles
-        print(f"  → {len(handles)} products")
+        print(f"  → {len(handles)} in-stock (skipped oos={skipped_oos})")
 
     all_products = list(by_handle.values())
     assign_colors(all_products)
@@ -404,6 +435,10 @@ def scrape_and_write() -> dict:
         "women_new": len(collections_meta.get("women-new") or []),
         "men_best": len(collections_meta.get("our-bestsellers-men") or []),
         "women_best": len(collections_meta.get("our-bestsellers-women") or []),
+        "men": len(collections_meta.get("men") or []),
+        "women": len(collections_meta.get("women") or []),
+        "accessories": len(collections_meta.get("accessories") or []),
+        "sale": len(collections_meta.get("outlet") or []),
         "total": len(all_products),
         "saved": saved,
         "skipped": skipped,
@@ -415,8 +450,10 @@ def main() -> None:
     print("Building gg-catalog.ts …")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/build-gg-catalog.py")], cwd=str(ROOT))
     print(
-        f"Done. new men/women={stats['men_new']}/{stats['women_new']} "
-        f"best men/women={stats['men_best']}/{stats['women_best']} "
+        f"Done. new={stats['men_new']}/{stats['women_new']} "
+        f"best={stats['men_best']}/{stats['women_best']} "
+        f"men/women={stats['men']}/{stats['women']} "
+        f"acc={stats['accessories']} sale={stats['sale']} "
         f"unique={stats['total']} images_new={stats['saved']}"
     )
 

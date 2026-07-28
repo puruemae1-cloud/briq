@@ -851,20 +851,39 @@ def member_collections(p: dict) -> list[str]:
     return [str(coll)] if coll else ["gg-new-men"]
 
 
-def gender_of_collections(cols: list[str]) -> str:
-    if any("women" in c for c in cols):
+def gender_of_collections(cols: list[str], tags: list[str] | None = None) -> str:
+    if any(
+        c in ("gg-new-women", "gg-bestsellers-women", "gg-women") or c.endswith("-women")
+        for c in cols
+    ):
         return "women"
+    if any(
+        c in ("gg-new-men", "gg-bestsellers-men", "gg-men") or c.endswith("-men")
+        for c in cols
+    ):
+        return "men"
+    if tags:
+        lower = {t.lower() for t in tags}
+        if "women" in lower or "women's" in lower:
+            return "women"
+        if "men" in lower or "men's" in lower:
+            return "men"
+    if "gg-accessories" in cols:
+        return "accessories"
     return "men"
 
 
 def primary_collection(cols: list[str]) -> str:
-    """Prefer New Arrivals leaf, else Bestsellers, else first."""
+    """Prefer New Arrivals → Bestsellers → Men/Women → Accessories → Sale."""
     for c in cols:
         if c.startswith("gg-new-"):
             return c
     for c in cols:
         if "bestsellers" in c:
             return c
+    for pref in ("gg-men", "gg-women", "gg-accessories", "gg-sale"):
+        if pref in cols:
+            return pref
     return cols[0]
 
 
@@ -884,7 +903,7 @@ def build() -> dict:
     for p in products:
         style = (p.get("styleName") or p.get("title", "").split(" - ")[0]).strip()
         cols = member_collections(p)
-        gender = gender_of_collections(cols)
+        gender = gender_of_collections(cols, p.get("tags") or [])
         groups[(style, gender)].append(p)
 
     briq_products: list[dict] = []
@@ -1071,15 +1090,19 @@ def build() -> dict:
 
         has_new = any(c.startswith("gg-new-") for c in all_cols)
         has_best = any("bestsellers" in c for c in all_cols)
+        has_sale = "gg-sale" in all_cols
         if has_new:
             badge = "New"
             edit_tier = "new"
         elif has_best:
             badge = "Best"
             edit_tier = "bestseller"
+        elif has_sale:
+            badge = "Sale"
+            edit_tier = "signature"
         else:
-            badge = "New"
-            edit_tier = "new"
+            badge = None
+            edit_tier = "signature"
 
         product = {
             "id": pid,
@@ -1142,7 +1165,8 @@ def build() -> dict:
             imgs_inner = ", ".join(ts_str(x) for x in p["images"])
             lines.append(f"    images: [{imgs_inner}],")
         lines.append(f"    accent: {ts_str(p['accent'])},")
-        lines.append(f"    badge: {ts_str(p['badge'])},")
+        if p.get("badge"):
+            lines.append(f"    badge: {ts_str(p['badge'])},")
         if p.get("gbpPrice") is not None:
             lines.append(f"    gbpPrice: {p['gbpPrice']},")
         if p.get("sku"):

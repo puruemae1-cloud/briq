@@ -40,6 +40,10 @@ export type SubcategoryId =
   | "gg-new-women"
   | "gg-bestsellers-men"
   | "gg-bestsellers-women"
+  | "gg-men"
+  | "gg-women"
+  | "gg-accessories"
+  | "gg-sale"
   | "galvin-green"
   | "gg-new-arrivals"
   | "gg-bestsellers"
@@ -78,9 +82,18 @@ export const GG_BESTSELLER_IDS: SubcategoryId[] = [
   "gg-bestsellers-women",
 ];
 
+/** Top-level Galvin Green shop chips (under the brand). */
+export const GG_BRAND_LEAF_IDS: SubcategoryId[] = [
+  "gg-men",
+  "gg-women",
+  "gg-accessories",
+  "gg-sale",
+];
+
 export const GG_COLLECTION_IDS: SubcategoryId[] = [
   ...GG_NEW_ARRIVAL_IDS,
   ...GG_BESTSELLER_IDS,
+  ...GG_BRAND_LEAF_IDS,
 ];
 
 export type NavChild = {
@@ -332,6 +345,26 @@ export const navCategories: NavCategory[] = [
                     href: "/shop?category=sports&sub=gg-bestsellers-women",
                   },
                 ],
+              },
+              {
+                id: "gg-men",
+                labelKo: "Men",
+                href: "/shop?category=sports&sub=gg-men",
+              },
+              {
+                id: "gg-women",
+                labelKo: "Women",
+                href: "/shop?category=sports&sub=gg-women",
+              },
+              {
+                id: "gg-accessories",
+                labelKo: "악세서리",
+                href: "/shop?category=sports&sub=gg-accessories",
+              },
+              {
+                id: "gg-sale",
+                labelKo: "Sale",
+                href: "/shop?category=sports&sub=gg-sale",
               },
             ],
           },

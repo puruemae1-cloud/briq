@@ -45,7 +45,8 @@ type Props = {
 
 function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>) {
   const active = sub === node.id || pathIds.has(node.id);
-  const clearance = node.id === "cw-clearance" ? " chip--clearance" : "";
+  const clearance =
+    node.id === "cw-clearance" || node.id === "gg-sale" ? " chip--clearance" : "";
   return `chip chip--sub chip--nested${clearance}${active ? " is-active" : ""}`;
 }
 
