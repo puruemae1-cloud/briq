@@ -5,6 +5,7 @@ import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import {
   categoryLabel,
   findCategory,
+  findNavPath,
   findSubcategory,
   navCategories,
   type NavChild,
@@ -42,14 +43,10 @@ type Props = {
   }>;
 };
 
-/** The group whose children should be revealed for the current selection. */
-function activeGroup(children: NavChild[], sub?: string) {
-  if (!sub) return undefined;
-  return children.find(
-    (child) =>
-      child.children?.length &&
-      (child.id === sub || child.children.some((nested) => nested.id === sub)),
-  );
+function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>) {
+  const active = sub === node.id || pathIds.has(node.id);
+  const clearance = node.id === "cw-clearance" ? " chip--clearance" : "";
+  return `chip chip--sub chip--nested${clearance}${active ? " is-active" : ""}`;
 }
 
 export default async function ShopPage({ searchParams }: Props) {
@@ -81,9 +78,17 @@ export default async function ShopPage({ searchParams }: Props) {
     ? `‘${params.q.trim()}’ 검색 결과`
     : baseTitle;
 
-  const openGroup = current?.children
-    ? activeGroup(current.children, sub)
-    : undefined;
+  const openPath =
+    current?.children && sub
+      ? findNavPath(current.children, sub)
+      : undefined;
+  const pathIds = new Set((openPath ?? []).map((n) => n.id));
+  const nestedRows: NavChild[][] = [];
+  if (openPath) {
+    for (const node of openPath) {
+      if (node.children?.length) nestedRows.push(node.children);
+    }
+  }
 
   const isAllCatalogue =
     category === "all" && !sub && !params.q?.trim() && !isNewArrivals;
@@ -171,7 +176,9 @@ export default async function ShopPage({ searchParams }: Props) {
                       sub: child.id,
                       sort,
                     })}
-                    className={`chip chip--sub ${sub === child.id ? "is-active" : ""}`}
+                    className={`chip chip--sub ${
+                      sub === child.id || pathIds.has(child.id) ? "is-active" : ""
+                    }`}
                   >
                     {child.labelKo}
                   </Link>
@@ -179,9 +186,12 @@ export default async function ShopPage({ searchParams }: Props) {
               </div>
             ) : null}
 
-            {openGroup?.children ? (
-              <div className="category-row category-row--sub category-row--nested">
-                {openGroup.children.map((nested) => (
+            {nestedRows.map((row, rowIndex) => (
+              <div
+                key={`nested-${rowIndex}-${row.map((n) => n.id).join("-")}`}
+                className="category-row category-row--sub category-row--nested"
+              >
+                {row.map((nested) => (
                   <Link
                     key={nested.id}
                     href={buildShopHref({
@@ -189,15 +199,13 @@ export default async function ShopPage({ searchParams }: Props) {
                       sub: nested.id,
                       sort,
                     })}
-                    className={`chip chip--sub chip--nested${
-                      nested.id === "cw-clearance" ? " chip--clearance" : ""
-                    }${sub === nested.id ? " is-active" : ""}`}
+                    className={chipClass(nested, sub, pathIds)}
                   >
                     {nested.labelKo}
                   </Link>
                 ))}
               </div>
-            ) : null}
+            ))}
 
             {sort === "orders" ? (
               <CollectionOrdersGrid products={list} />

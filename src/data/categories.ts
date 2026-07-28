@@ -38,6 +38,8 @@ export type SubcategoryId =
   | "cw-moonphase"
   | "gg-new-men"
   | "gg-new-women"
+  | "galvin-green"
+  | "gg-new-arrivals"
   | "luxury-shoes"
   | "training-shoes"
   | "luxury-womens"
@@ -68,6 +70,8 @@ export const GG_COLLECTION_IDS: SubcategoryId[] = [
   "gg-new-women",
 ];
 
+export const GG_NEW_ARRIVAL_IDS: SubcategoryId[] = [...GG_COLLECTION_IDS];
+
 export type NavChild = {
   id: SubcategoryId;
   labelKo: string;
@@ -87,7 +91,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
-  golf: ["golf", ...GG_COLLECTION_IDS],
+  golf: ["golf", "galvin-green", "gg-new-arrivals", ...GG_COLLECTION_IDS],
+  "galvin-green": ["gg-new-arrivals", ...GG_COLLECTION_IDS],
+  "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -264,14 +270,28 @@ export const navCategories: NavCategory[] = [
         href: "/shop?category=sports&sub=golf",
         children: [
           {
-            id: "gg-new-men",
-            labelKo: "Galvin Green · Men",
-            href: "/shop?category=sports&sub=gg-new-men",
-          },
-          {
-            id: "gg-new-women",
-            labelKo: "Galvin Green · Women",
-            href: "/shop?category=sports&sub=gg-new-women",
+            id: "galvin-green",
+            labelKo: "Galvin Green",
+            href: "/shop?category=sports&sub=galvin-green",
+            children: [
+              {
+                id: "gg-new-arrivals",
+                labelKo: "New Arrivals",
+                href: "/shop?category=sports&sub=gg-new-arrivals",
+                children: [
+                  {
+                    id: "gg-new-men",
+                    labelKo: "Men",
+                    href: "/shop?category=sports&sub=gg-new-men",
+                  },
+                  {
+                    id: "gg-new-women",
+                    labelKo: "Women",
+                    href: "/shop?category=sports&sub=gg-new-women",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
@@ -316,6 +336,20 @@ export function findSubcategory(
 
 export function subcategoryLabel(categoryId: string, subId: string) {
   return findSubcategory(categoryId, subId)?.labelKo ?? subId;
+}
+
+/** Path from a category's top children down to `subId` (inclusive). */
+export function findNavPath(
+  children: NavChild[] | undefined,
+  subId: string,
+): NavChild[] | undefined {
+  if (!children?.length) return undefined;
+  for (const child of children) {
+    if (child.id === subId) return [child];
+    const rest = findNavPath(child.children, subId);
+    if (rest) return [child, ...rest];
+  }
+  return undefined;
 }
 
 /** Leaf + group chips for shop filter rows (keeps nested groups intact). */
