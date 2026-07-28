@@ -4,7 +4,7 @@
     "cw-new-releases": 45,
     "cw-bestsellers": 40,
     "cw-hidden-gems": 6,
-    "cw-clearance": 7,
+    "cw-clearance": 8,
     "cw-atelier": 126,
     "cw-dive": 115,
     "cw-integrated-sports": 30,
@@ -121,7 +121,8 @@
       "N12-41H6D1-S00W0-B0",
       "N01-41APT0-T00A0-B0",
       "N01-41APT0-T00P0-B0",
-      "N01-41APT3-T00A0-B0"
+      "N01-41APT3-T00A0-B0",
+      "N01-41APT0-T00B1-B0"
     ],
     "cw-atelier": [
       "C01-41APT4-T00W0-RV",
@@ -2071,8 +2072,10 @@
       "badge": "Nearly New",
       "gbpPrice": 2960.0,
       "gbpListPrice": 3700.0,
-      "collections": [],
-      "primaryCollection": null
+      "collections": [
+        "cw-clearance"
+      ],
+      "primaryCollection": "cw-clearance"
     },
     {
       "sku": "C01-41APT4-T00W0-RW",

@@ -17904,7 +17904,7 @@
       "strapVariants": [],
       "braceletResize": true,
       "braceletResizeFeeKrw": 20000,
-      "inStock": true,
+      "inStock": false,
       "sourceUrl": "https://www.christopherward.com/sale/c1-bel-canto-classic---nearly-new/N01-41APT3-T00A0-B0.html?dwopt_N01-41APT3-T00A0-B0_braceletResizing=no-resize&pid=N01-41APT3-T00A0-B0&quantity=1",
       "collections": [
         "cw-clearance"
@@ -18730,13 +18730,13 @@
       "price": 7590000,
       "compareAtPrice": null,
       "images": [
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/1.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/2.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/3.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/4.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/5.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/6.jpg",
-        "/products/cw-pdp/c01-41apt0-t00b1-b0/7.jpg"
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/1.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/2.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/3.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/4.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/5.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/6.jpg",
+        "/products/cw-pdp/n01-41apt0-t00b1-b0/7.jpg"
       ],
       "image": "/products/cw-pdp/c01-41apt0-t00b1-b0/1.jpg",
       "strapVariants": [
@@ -18876,8 +18876,10 @@
       "inStock": false,
       "sourceUrl": "https://www.christopherward.com/c1-bel-canto/Z101.html?dwvar_Z101_WDialBezelColour=Cielo&quantity=1",
       "derivedFrom": "C01-41APT0-T00B1-VLB",
-      "collections": [],
-      "primaryCollection": null,
+      "collections": [
+        "cw-clearance"
+      ],
+      "primaryCollection": "cw-clearance",
       "seedSku": "N01-41APT0-T00B1-B0"
     },
     "C65-41CSC2-S0WB0-RO": {
