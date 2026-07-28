@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path("/Users/jeonghyunlee/Documents/briq")
 RAW = json.loads((ROOT / "src/data/cw/cw-catalog-raw.json").read_text())
+RAW_BY_SKU = {p["sku"]: p for p in RAW["products"] if p.get("sku")}
 ENR_PATH = ROOT / "src/data/cw/cw-pdp-enriched.json"
 ENR = json.loads(ENR_PATH.read_text())["products"] if ENR_PATH.exists() else {}
 ED_PATH = ROOT / "src/data/cw/cw-editorial.json"
@@ -61,6 +62,7 @@ WORDS = [
     ("Skeleton", "스켈레톤"),
     ("Limited", "리미티드"),
     ("Edition", "에디션"),
+    ("Steel", "스틸"),
     ("Bracelet", "브레이슬릿"),
     ("Leather", "가죽"),
     ("Rubber", "러버"),
@@ -169,7 +171,111 @@ def local_gallery(sku: str) -> list[str]:
     if not folder.exists():
         return []
     files = sorted(folder.glob("*.jpg"), key=lambda p: int(re.sub(r"\D", "", p.stem) or "0"))
-    return [f"/products/cw-pdp/{slugify(sku)}/{f.name}" for f in files]
+    out = []
+    for f in files:
+        if f.stat().st_size < 2500:
+            continue
+        out.append(f"/products/cw-pdp/{slugify(sku)}/{f.name}")
+    return out
+
+
+def existing_images(paths: list[str] | None) -> list[str]:
+    out = []
+    for p in paths or []:
+        if not p:
+            continue
+        fp = ROOT / "public" / p.lstrip("/")
+        if fp.exists() and fp.stat().st_size >= 2500:
+            out.append(p)
+    return out
+
+
+def gbp_for_sku(sku: str, fallback: float | None = None) -> float | None:
+    raw = RAW_BY_SKU.get(sku)
+    if raw and raw.get("gbpPrice") is not None:
+        return float(raw["gbpPrice"])
+    return fallback
+
+
+def is_nearly_new(text: str | None) -> bool:
+    return "nearly new" in (text or "").lower()
+
+
+def display_name_en(sku: str, en: dict, raw: dict) -> str:
+    """Prefer live catalogue name; ignore enrich contamination from Nearly New PDPs."""
+    raw_name = (raw.get("name") or "").strip()
+    en_name = (en.get("nameEn") or "").strip()
+    if sku.upper().startswith("N") or is_nearly_new(raw_name):
+        return en_name or raw_name or sku
+    if is_nearly_new(en_name):
+        return raw_name or re.sub(r"\s*-\s*Nearly New.*$", "", en_name, flags=re.I).strip() or sku
+    return en_name or raw_name or sku
+
+
+def enrich_score(en: dict) -> int:
+    if not en or en.get("error"):
+        return -100
+    score = 0
+    if en.get("strapVariants"):
+        score += 8
+    if en.get("technicalsEn"):
+        score += 5
+    if en.get("featuresEn"):
+        score += 3
+    if en.get("colour"):
+        score += 2
+    if en.get("shortDescriptionEn"):
+        score += 2
+    if en.get("images"):
+        score += 1
+    if is_nearly_new(en.get("nameEn")):
+        score -= 20
+    if "/sale/" in (en.get("sourceUrl") or "") or "nearly-new" in (en.get("sourceUrl") or ""):
+        score -= 15
+    return score
+
+
+def best_enrich(members: list[dict]) -> dict:
+    best: dict = {}
+    best_s = -10_000
+    for m in members:
+        en = ENR.get(m.get("sku") or "") or {}
+        s = enrich_score(en)
+        if s > best_s:
+            best_s = s
+            best = en
+    return best if best_s > -100 else {}
+
+
+def best_source_url(members: list[dict], en: dict) -> str:
+    for m in members:
+        u = m.get("url") or ""
+        if u and "/sale/" not in u and "nearly-new" not in u.lower():
+            return u
+    for m in members:
+        if m.get("url"):
+            return m["url"]
+    return en.get("sourceUrl") or ""
+
+
+def pick_editorial(members: list[dict], en: dict) -> list[dict]:
+    editorial = (en.get("editorial") or {}).get("sections") or []
+    if editorial:
+        return editorial
+    urls = [best_source_url(members, en)] + [m.get("url") or "" for m in members]
+    for u in urls:
+        mkey = model_key_from_url(u)
+        if mkey and ED_MODELS.get(mkey) and ED_MODELS[mkey].get("sections"):
+            return ED_MODELS[mkey].get("sections") or []
+    # Fall back: strip ---nearly-new from key
+    for u in urls:
+        mkey = model_key_from_url(u)
+        if not mkey:
+            continue
+        base = re.sub(r"---nearly-new$", "", mkey)
+        if base != mkey and ED_MODELS.get(base) and ED_MODELS[base].get("sections"):
+            return ED_MODELS[base].get("sections") or []
+    return []
 
 
 def resolve_variant_sku(v: dict, members: list, colour: str | None, primary_sku: str) -> str:
@@ -309,142 +415,165 @@ def translate_story(name_en: str, short_en: str, features: list[str], images: li
 
 accents = ["#1A2A38", "#24302A", "#1A2428", "#2C241C", "#243447", "#3A2F28", "#1F4D3A", "#314036"]
 
-# Group by name + size + colour when enriched; else keep flat SKUs
 products_out = []
 grouped = {}
 
 for raw in RAW["products"]:
     sku = raw["sku"]
-    en = ENR.get(sku) or ENR.get(raw.get("sku")) or {}
+    en = ENR.get(sku) or {}
     if en.get("error"):
         en = {}
-
-    name_en = en.get("nameEn") or raw.get("name") or sku
-    size = en.get("size")
-    colour = en.get("colour")
-    # parse from subtitle if needed
+    dial_key = "-".join(sku.split("-")[:-1]) if sku.count("-") >= 3 else sku
+    name_en = display_name_en(sku, en, raw)
+    size = en.get("size") if not is_nearly_new(en.get("nameEn")) else None
+    colour = en.get("colour") if not is_nearly_new(en.get("nameEn")) else None
     sub = clean_sub(raw.get("subtitle") or "")
     if not size or not colour:
         parts = [p.strip() for p in sub.split("·")]
-        for p in parts:
-            if re.match(r"\d+mm$", p.replace(" ", "")):
-                size = size or p.strip()
-            elif p and not any(x in p.lower() for x in ["automatic", "bracelet", "rubber", "leather", "gmt"]):
-                if not colour and "mm" not in p:
-                    colour = p
-
-    group_key = f"{name_en}|{size or ''}|{colour or ''}"
-    grouped.setdefault(group_key, {"raw_members": [], "en": en, "name_en": name_en, "size": size, "colour": colour})
+        for part in parts:
+            if re.match(r"\d+mm$", part.replace(" ", "")):
+                size = size or part.strip()
+            elif part and not any(
+                x in part.lower()
+                for x in ["automatic", "bracelet", "rubber", "leather", "gmt", "steel"]
+            ):
+                if not colour and "mm" not in part:
+                    colour = part
+    # Group by dial family + new vs nearly-new line (ignore enrich name contamination)
+    line = "nn" if (sku.upper().startswith("N") or is_nearly_new(raw.get("name"))) else "new"
+    group_key = f"{line}|{dial_key}"
+    grouped.setdefault(
+        group_key,
+        {"raw_members": [], "en": {}, "name_en": name_en, "size": size, "colour": colour},
+    )
     grouped[group_key]["raw_members"].append(raw)
-    # prefer enriched member
-    if en and not en.get("error"):
-        grouped[group_key]["en"] = en
+    if name_en and not is_nearly_new(name_en):
+        grouped[group_key]["name_en"] = name_en
+    elif not grouped[group_key].get("name_en"):
+        grouped[group_key]["name_en"] = name_en
+    if size:
+        grouped[group_key]["size"] = size
+    if colour:
+        grouped[group_key]["colour"] = colour
 
 for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
-    en = g["en"] or {}
-    name_en = g["name_en"]
     members = g["raw_members"]
-    # primary enriched or first member — prefer full SKU
-    primary_sku = en.get("sku") or members[0]["sku"]
-    if not is_full_sku(primary_sku):
-        primary_sku = next((m["sku"] for m in members if is_full_sku(m.get("sku") or "")), members[0]["sku"])
-    # If enrich collapsed to master, keep a full member SKU as primary
-    if en.get("seedSku") and is_full_sku(en["seedSku"]):
-        primary_sku = en["seedSku"]
-    elif not is_full_sku(str(en.get("sku") or "")):
-        for m in members:
-            if is_full_sku(m.get("sku") or ""):
-                primary_sku = m["sku"]
-                break
-    gbp = en.get("gbpPrice") if en.get("gbpPrice") is not None else members[0].get("gbpPrice")
+    en = best_enrich(members) or g.get("en") or {}
+    name_en = g["name_en"] or display_name_en(members[0]["sku"], en, members[0])
+    # Prefer a full new-line SKU with the richest gallery / rubber default for PDP seed
+    primary_sku = next(
+        (
+            m["sku"]
+            for m in members
+            if is_full_sku(m.get("sku") or "")
+            and not m["sku"].upper().startswith("N")
+            and local_gallery(m["sku"])
+        ),
+        None,
+    ) or next(
+        (m["sku"] for m in members if is_full_sku(m.get("sku") or "")),
+        members[0]["sku"],
+    )
+    gbp = gbp_for_sku(primary_sku, members[0].get("gbpPrice"))
     if gbp is None:
         continue
-    list_gbp = en.get("gbpListPrice") or members[0].get("gbpListPrice")
+    # List price only when this group is actually on sale (Nearly New / markdown)
+    list_gbp = None
+    if is_nearly_new(name_en) or any(is_nearly_new(m.get("name")) for m in members):
+        list_gbp = en.get("gbpListPrice") or members[0].get("gbpListPrice")
+    elif en.get("gbpListPrice") and members[0].get("gbpListPrice"):
+        # genuine markdown on new line
+        raw_list = members[0].get("gbpListPrice")
+        if raw_list and float(raw_list) > float(gbp):
+            list_gbp = float(raw_list)
 
-    # variants from strapVariants if present, else from group members with different straps
     variants = []
-    strap_vars = [v for v in (en.get("strapVariants") or []) if v.get("sku") and v.get("price") is not None]
-    if not strap_vars:
-        strap_vars = [v for v in (en.get("strapVariants") or []) if v.get("labelEn")]
-    if strap_vars:
-        seen_vids = set()
-        for v in strap_vars:
-            vsku = resolve_variant_sku(v, members, g.get("colour"), primary_sku)
-            if not vsku:
-                continue
-            vid = slugify(vsku)
-            if vid in seen_vids:
-                continue
-            seen_vids.add(vid)
-            vimgs = v.get("images") or local_gallery(vsku)
-            if not vimgs:
-                # Prefer PLP hero for this SKU
-                plp = f"/products/cw/{slugify(vsku)}.jpg"
-                if (ROOT / "public" / plp.lstrip("/")).exists():
-                    vimgs = [plp]
-                else:
-                    vimgs = local_gallery(primary_sku)[:1] or [en.get("image")]
-            vimgs = [x for x in vimgs if x]
-            member_map = {m["sku"]: m for m in members}
-            raw_gbp = (member_map.get(vsku) or {}).get("gbpPrice")
-            vgbp = raw_gbp if raw_gbp is not None else (v.get("gbpPrice") or gbp)
-            # Bracelet options are often returned as a price *range* on the master pid —
-            # never undercut the raw catalogue price for that full SKU.
-            if "bracelet" in (v.get("labelEn") or "").lower() and raw_gbp is None:
-                # Prefer max among candidate member bracelet SKUs in this dial group
-                brace = [
-                    m.get("gbpPrice")
-                    for m in members
-                    if m.get("gbpPrice")
-                    and str(m.get("sku") or "").upper().endswith(("B0", "B1", "B0R", "B1R"))
-                ]
-                if brace:
-                    vgbp = max(brace)
-            variants.append(
-                {
-                    "id": vid,
-                    "name": v.get("labelEn") or vsku,
-                    "nameKo": to_ko(v.get("labelEn") or vsku),
-                    "sku": vsku,
-                    "gbpPrice": vgbp,
-                    "price": round_krw(vgbp),
-                    "image": vimgs[0],
-                    "images": vimgs,
-                    "sourceUrl": v.get("sourceUrl") or members[0].get("url") or "",
-                    "inStock": v.get("inStock", True),
-                }
-            )
-    elif len(members) > 1:
-        # fallback: each raw member as strap-ish variant using subtitle last token
-        for m in members:
+    seen_vids = set()
+    for m in members:
+        msku = m.get("sku") or ""
+        if not is_full_sku(msku):
+            continue
+        vid = slugify(msku)
+        if vid in seen_vids:
+            continue
+        seen_vids.add(vid)
+        label = None
+        for sv in en.get("strapVariants") or []:
+            if resolve_variant_sku(sv, members, g.get("colour"), primary_sku) == msku and sv.get("labelEn"):
+                label = sv.get("labelEn")
+                break
+        if not label:
             sub = clean_sub(m.get("subtitle") or "")
-            label = sub.split("·")[-1].strip() if sub else m["sku"]
-            mgbp = m.get("gbpPrice") or gbp
-            msku = m["sku"]
-            vimgs = local_gallery(msku) or [f"/products/cw/{slugify(msku)}.jpg"]
-            variants.append(
-                {
-                    "id": slugify(msku),
-                    "name": label,
-                    "nameKo": to_ko(label),
-                    "sku": msku,
-                    "gbpPrice": mgbp,
-                    "price": round_krw(mgbp),
-                    "image": vimgs[0],
-                    "images": vimgs,
-                    "sourceUrl": m.get("url") or "",
-                    "inStock": True,
-                }
-            )
+            label = sub.split("·")[-1].strip() if sub else ""
+        if not label or "attribute" in label.lower() or len(label) < 3:
+            suf = msku.split("-")[-1].upper()
+            strap_map = {
+                "B0": "Steel Bracelet",
+                "B0R": "Steel Bracelet",
+                "B1": "Steel Bracelet",
+                "B1R": "Steel Bracelet",
+                "RB": "Blue Rubber Strap",
+                "RW": "White Rubber Strap",
+                "RK": "Black Rubber Strap",
+                "RO": "Orange Rubber Strap",
+                "RG": "Green Rubber Strap",
+                "RY": "Yellow Rubber Strap",
+            }
+            if suf in strap_map:
+                label = strap_map[suf]
+            elif suf.startswith("B"):
+                label = "Steel Bracelet"
+            elif suf.startswith("R"):
+                label = "Rubber Strap"
+            elif suf.startswith("M"):
+                label = "Leather Strap"
+            else:
+                label = msku
+        vgbp = gbp_for_sku(msku, m.get("gbpPrice") or gbp)
+        vimgs = local_gallery(msku)
+        if not vimgs:
+            for sv in en.get("strapVariants") or []:
+                if resolve_variant_sku(sv, members, g.get("colour"), primary_sku) == msku:
+                    vimgs = existing_images(sv.get("images"))
+                    break
+        if not vimgs:
+            plp = f"/products/cw/{slugify(msku)}.jpg"
+            if (ROOT / "public" / plp.lstrip("/")).exists():
+                vimgs = [plp]
+        if not vimgs:
+            continue
+        variants.append(
+            {
+                "id": vid,
+                "name": label,
+                "nameKo": to_ko(label),
+                "sku": msku,
+                "gbpPrice": float(vgbp),
+                "price": round_krw(float(vgbp)),
+                "image": vimgs[0],
+                "images": vimgs[:10],
+                "sourceUrl": m.get("url") or "",
+                "inStock": True,
+            }
+        )
+    if len(variants) <= 1:
+        variants = []
 
-    images = en.get("images") or local_gallery(primary_sku)
+    images = local_gallery(primary_sku) or existing_images(en.get("images"))
+    if not images:
+        for v in variants:
+            if v["sku"] == primary_sku and v.get("images"):
+                images = v["images"]
+                break
+    if not images and variants:
+        images = variants[0]["images"]
     if not images:
         images = [f"/products/cw/{slugify(primary_sku)}.jpg"]
-    # Prefer longest gallery among variants matching primary
-    for v in variants:
-        if v["sku"] == primary_sku and len(v.get("images") or []) > len(images):
-            images = v["images"]
-            break
+    # Prefer the primary variant gallery for hero/story (avoid enrich mixing dials)
+    if variants:
+        pref = next((v for v in variants if v["sku"] == primary_sku), variants[0])
+        if pref.get("images"):
+            images = pref["images"]
 
     sub_bits = []
     if g.get("size"):
@@ -471,16 +600,15 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     )
 
     # Merge official CW editorial long-description (video, JJ01, captions…)
-    editorial = (en.get("editorial") or {}).get("sections") or []
-    if not editorial:
-        mkey = model_key_from_url(en.get("sourceUrl") or members[0].get("url") or "")
-        if mkey and ED_MODELS.get(mkey):
-            editorial = ED_MODELS[mkey].get("sections") or []
+    editorial = pick_editorial(members, en)
     if editorial:
         ed_sections = []
         for es in editorial:
             title_en = (es.get("titleEn") or "").strip()
             body_en = (es.get("bodyEn") or "").strip()
+            # Placeholder caption labels from scraper — show image only
+            if re.match(r"^Detail\s+\d+$", body_en, re.I) and not title_en:
+                body_en = ""
             title_ko = translate_en(title_en) if title_en else ""
             body_ko = translate_en(body_en) if body_en else ""
             # Keep distinctive English titles that are brand lines
@@ -488,15 +616,22 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 title_ko = "Time to make the JJump"
             elif title_en.startswith("Calibre JJ01") or title_en == "Calibre JJ01":
                 title_ko = "Calibre JJ01"
-            if not body_ko and not es.get("image") and not es.get("videoUrl"):
+            elif title_en.startswith("Introducing Calibre CW-003"):
+                title_ko = "칼리버 CW-003 소개"
+            elif title_en == "Poetry in motion":
+                title_ko = "움직이는 시"
+            img = es.get("image")
+            if img and not existing_images([img]):
+                img = None
+            if not body_ko and not img and not es.get("videoUrl"):
                 continue
             ed_sections.append(
                 {
                     "titleKo": title_ko,
-                    "bodyKo": body_ko or title_ko,
-                    "image": es.get("image"),
+                    "bodyKo": body_ko,
+                    "image": img,
                     "videoUrl": es.get("videoUrl"),
-                    "layout": es.get("layout") or "default",
+                    "layout": es.get("layout") or ("wide" if not title_ko and img else "default"),
                     "reverse": bool(es.get("reverse")),
                 }
             )
@@ -520,8 +655,10 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         badge = badge or "Limited"
 
     desc = f"크리스토퍼와드 {name_ko}."
-    if en.get("shortDescriptionEn"):
+    if en.get("shortDescriptionEn") and not is_nearly_new(en.get("nameEn")):
         desc = translate_en(en["shortDescriptionEn"])[:320]
+
+    source_url = best_source_url(members, en)
 
     products_out.append(
         {
@@ -543,7 +680,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "accent": accents[i % len(accents)],
             "badge": badge,
             "sku": primary_sku,
-            "sourceUrl": en.get("sourceUrl") or members[0].get("url"),
+            "sourceUrl": source_url,
             "inStock": en.get("inStock", True),
             "registeredAt": None,  # set below
             "editTier": "signature",

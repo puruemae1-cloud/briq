@@ -122,11 +122,15 @@ def scrape_page(url: str, key: str) -> dict:
         if title in seen_titles:
             continue
         ctx = chunk[m.start() : m.start() + 4500]
+        # Ignore commented-out leftover embeds (CW often leaves old Vimeo iframes in <!-- -->)
+        ctx_live = re.sub(r"<!--([\s\S]*?)-->", "", ctx)
         vid_m = re.search(
-            r'data-src="(https://player\.vimeo\.com/[^"]+)"|src="(https://player\.vimeo\.com/[^"]+)"',
-            ctx,
+            r'data-src="(https://player\.vimeo\.com/video/\d[^"]*)"|src="(https://player\.vimeo\.com/video/\d[^"]*)"',
+            ctx_live,
         )
-        video = H.unescape((vid_m.group(1) or vid_m.group(2))) if vid_m else None
+        video = H.unescape((vid_m.group(1) or vid_m.group(2))).rstrip('"').replace("%22", "") if vid_m else None
+        if video and ("autoplay=1" in video or "controls=0" in video):
+            video = None
         imgs = [
             H.unescape(u.split("?")[0])
             for u in re.findall(

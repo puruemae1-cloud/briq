@@ -59,29 +59,67 @@ export function ProductGallery({
       <div
         className={`product-detail__media-wrap${soldOut ? " is-sold-out" : ""}`}
       >
-        <ProductImage
-          src={src}
-          alt={alt}
-          tone="detail"
-          className={`product-detail__media${soldOut ? " is-sold-out" : ""}`}
-          loading="eager"
+        <button
+          type="button"
+          className="product-detail__media-hit"
+          aria-label={soldOut ? alt : "사진 확대 보기"}
+          disabled={soldOut}
+          onClick={() => {
+            if (!soldOut) setZoomOpen(true);
+          }}
         >
-          {soldOut ? (
-            <span
-              className="product-sold-out product-sold-out--detail"
-              aria-label="Sold Out"
-            >
-              Sold Out
-            </span>
-          ) : badge ? (
-            <p className="product-detail__media-badge">{badge}</p>
-          ) : null}
-          {list.length > 1 ? (
-            <span className="product-gallery-count" aria-hidden>
-              {safeIndex + 1} / {list.length}
-            </span>
-          ) : null}
-        </ProductImage>
+          <ProductImage
+            src={src}
+            alt={alt}
+            tone="detail"
+            className={`product-detail__media${soldOut ? " is-sold-out" : ""}`}
+            loading="eager"
+          >
+            {soldOut ? (
+              <span
+                className="product-sold-out product-sold-out--detail"
+                aria-label="Sold Out"
+              >
+                Sold Out
+              </span>
+            ) : badge ? (
+              <p className="product-detail__media-badge">{badge}</p>
+            ) : null}
+            {list.length > 1 ? (
+              <span className="product-gallery-count" aria-hidden>
+                {safeIndex + 1} / {list.length}
+              </span>
+            ) : null}
+            {!soldOut ? (
+              <span className="product-gallery-zoom-hint" aria-hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                  <circle
+                    cx="10.5"
+                    cy="10.5"
+                    r="6.5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  />
+                  <path
+                    d="M15.5 15.5 L20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M10.5 7.5 v6 M7.5 10.5 h6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </span>
+            ) : null}
+          </ProductImage>
+        </button>
 
         {list.length > 1 ? (
           <>
@@ -89,7 +127,10 @@ export function ProductGallery({
               type="button"
               className="product-gallery-nav product-gallery-nav--prev"
               aria-label="이전 사진"
-              onClick={() => go(-1)}
+              onClick={(e) => {
+                e.stopPropagation();
+                go(-1);
+              }}
             >
               ‹
             </button>
@@ -97,45 +138,14 @@ export function ProductGallery({
               type="button"
               className="product-gallery-nav product-gallery-nav--next"
               aria-label="다음 사진"
-              onClick={() => go(1)}
+              onClick={(e) => {
+                e.stopPropagation();
+                go(1);
+              }}
             >
               ›
             </button>
           </>
-        ) : null}
-
-        {!soldOut ? (
-          <button
-            type="button"
-            className="product-gallery-zoom"
-            aria-label="사진 확대 보기"
-            onClick={() => setZoomOpen(true)}
-          >
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
-              <circle
-                cx="10.5"
-                cy="10.5"
-                r="6.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-              />
-              <path
-                d="M15.5 15.5 L20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-              />
-              <path
-                d="M10.5 7.5 v6 M7.5 10.5 h6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-              />
-            </svg>
-          </button>
         ) : null}
       </div>
 
