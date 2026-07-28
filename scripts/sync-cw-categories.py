@@ -226,21 +226,34 @@ def main() -> None:
         live[briq_id] = watches
         print(f"  {briq_id}: live={len(pids)} watches={len(watches)}")
 
-    # Merge: clearance replaced by live (exact sale watches); other cats add missing, keep extras
+    # Merge: clearance = live sale watches ∪ previous Nearly New watches (keep sold-out visible);
+    # other cats add missing, keep extras.
     for briq_id, watches in live.items():
         prev = list(raw["categories"].get(briq_id, []))
         if briq_id == "cw-clearance":
-            merged = watches[:]  # exact live sale watches
+            keep_sold_out = [
+                s
+                for s in prev
+                if s not in watches
+                and is_watch_sku(s)
+                and (
+                    s.upper().startswith("N")
+                    or "nearly new" in ((next((p for p in raw["products"] if p["sku"] == s), {}) or {}).get("name") or "").lower()
+                )
+            ]
+            merged = list(dict.fromkeys(watches + keep_sold_out))
         else:
             merged = list(dict.fromkeys(prev + watches))
         added = [s for s in watches if s not in prev]
-        removed = [s for s in prev if s not in watches] if briq_id == "cw-clearance" else []
+        removed = [s for s in prev if s not in merged] if briq_id == "cw-clearance" else []
         raw["categories"][briq_id] = merged
         raw["categoryCounts"][briq_id] = len(merged)
         if added:
             print(f"  {briq_id} +{len(added)} {added[:6]}")
         if removed:
             print(f"  {briq_id} -{len(removed)} {removed[:6]}")
+        if briq_id == "cw-clearance" and keep_sold_out:
+            print(f"  {briq_id} keep sold-out {keep_sold_out}")
 
     # Ensure product rows exist + prices for every category member
     all_skus = sorted({s for skus in raw["categories"].values() for s in skus})
