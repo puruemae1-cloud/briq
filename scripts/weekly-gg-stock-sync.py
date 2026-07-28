@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Weekly Galvin Green stock/price sync for Briq gg catalog.
 
-Re-fetches men-new / women-new products.json, updates matching variants by SKU,
+Re-fetches New Arrivals + Bestsellers products.json, updates matching variants by SKU,
 adds new handles, rebuilds gg-catalog.ts.
 """
 from __future__ import annotations
@@ -59,6 +59,7 @@ def sync() -> None:
             norm = normalize_product(r, briq_coll)
             h = norm["handle"]
             if h not in by_handle:
+                norm["collections"] = [briq_coll]
                 new_products.append(norm)
                 by_handle[h] = norm
                 products.append(norm)
@@ -67,12 +68,15 @@ def sync() -> None:
                 continue
 
             existing = by_handle[h]
+            cols = existing.setdefault("collections", [existing.get("collection") or briq_coll])
+            if briq_coll not in cols:
+                cols.append(briq_coll)
             existing["title"] = norm["title"]
             existing["body_html"] = norm["body_html"]
             existing["tags"] = norm["tags"]
             existing["images"] = norm["images"] or existing.get("images")
             existing["styleName"] = norm["styleName"]
-            existing["collection"] = briq_coll
+            existing["collection"] = cols[0]
             existing["published_at"] = norm.get("published_at") or existing.get("published_at")
 
             remote_by_sku = {v["sku"]: v for v in norm["variants"] if v.get("sku")}
@@ -121,13 +125,17 @@ def sync() -> None:
 
     men = len(collections_meta.get("men-new") or [])
     women = len(collections_meta.get("women-new") or [])
+    men_b = len(collections_meta.get("our-bestsellers-men") or [])
+    women_b = len(collections_meta.get("our-bestsellers-women") or [])
     print("=== GG weekly sync summary ===")
-    print(f"  men-new handles:   {men}")
-    print(f"  women-new handles: {women}")
-    print(f"  total colorways:   {len(products)}")
-    print(f"  stock updates:     {updated_stock}")
-    print(f"  price updates:     {updated_price}")
-    print(f"  new handles:       {added_handles}")
+    print(f"  men-new handles:          {men}")
+    print(f"  women-new handles:        {women}")
+    print(f"  bestsellers-men handles:  {men_b}")
+    print(f"  bestsellers-women handles:{women_b}")
+    print(f"  total colorways:          {len(products)}")
+    print(f"  stock updates:            {updated_stock}")
+    print(f"  price updates:            {updated_price}")
+    print(f"  new handles:              {added_handles}")
 
 
 if __name__ == "__main__":

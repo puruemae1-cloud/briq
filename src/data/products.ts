@@ -58,6 +58,10 @@ export type Product = {
    * Christopher Ward PLP memberships (a SKU can sit in New Releases + Twelve etc.).
    */
   cwCollections?: SubcategoryId[];
+  /**
+   * Galvin Green PLP memberships (e.g. New Arrivals + Bestsellers).
+   */
+  ggCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -774,6 +778,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
     list = list.filter((p) => {
       if (p.subcategory && expanded.includes(p.subcategory)) return true;
       if (p.cwCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.ggCollections?.some((c) => expanded.includes(c))) return true;
       return false;
     });
   }

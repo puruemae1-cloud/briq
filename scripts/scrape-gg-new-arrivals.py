@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scrape Galvin Green men-new / women-new Shopify collections, download images, build catalog."""
+"""Scrape Galvin Green Shopify collections (New Arrivals + Bestsellers), download images, build catalog."""
 from __future__ import annotations
 
 import json
@@ -29,6 +29,8 @@ UA = {
 COLLECTIONS = [
     ("men-new", "gg-new-men"),
     ("women-new", "gg-new-women"),
+    ("our-bestsellers-men", "gg-bestsellers-men"),
+    ("our-bestsellers-women", "gg-bestsellers-women"),
 ]
 
 COLOR_TAGS = [
@@ -233,10 +235,17 @@ def normalize_product(raw: dict, collection: str) -> dict:
     }
 
 
+def gender_key(p: dict) -> str:
+    cols = p.get("collections") or [p.get("collection") or ""]
+    if any("women" in (c or "") for c in cols):
+        return "women"
+    return "men"
+
+
 def assign_colors(products: list[dict]) -> None:
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for p in products:
-        groups[(p["styleName"], p["collection"])].append(p)
+        groups[(p["styleName"], gender_key(p))].append(p)
     for members in groups.values():
         handles = [m["handle"] for m in members]
         for m in members:
@@ -286,7 +295,7 @@ def download_images(products: list[dict]) -> tuple[int, int]:
 
 
 def scrape_and_write() -> dict:
-    all_products: list[dict] = []
+    by_handle: dict[str, dict] = {}
     collections_meta: dict[str, list[str]] = {}
 
     for shopify_handle, briq_coll in COLLECTIONS:
@@ -295,11 +304,30 @@ def scrape_and_write() -> dict:
         handles = []
         for raw in raw_list:
             norm = normalize_product(raw, briq_coll)
-            all_products.append(norm)
-            handles.append(norm["handle"])
+            h = norm["handle"]
+            handles.append(h)
+            if h in by_handle:
+                existing = by_handle[h]
+                cols = existing.setdefault("collections", [existing["collection"]])
+                if briq_coll not in cols:
+                    cols.append(briq_coll)
+                # Prefer freshest stock/price/images from this pass
+                existing["title"] = norm["title"]
+                existing["body_html"] = norm["body_html"]
+                existing["tags"] = norm["tags"]
+                existing["images"] = norm["images"] or existing.get("images")
+                existing["variants"] = norm["variants"]
+                existing["styleName"] = norm["styleName"]
+                existing["published_at"] = norm.get("published_at") or existing.get(
+                    "published_at"
+                )
+            else:
+                norm["collections"] = [briq_coll]
+                by_handle[h] = norm
         collections_meta[shopify_handle] = handles
         print(f"  → {len(handles)} products")
 
+    all_products = list(by_handle.values())
     assign_colors(all_products)
 
     payload = {
@@ -309,15 +337,17 @@ def scrape_and_write() -> dict:
     }
     RAW_PATH.parent.mkdir(parents=True, exist_ok=True)
     RAW_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {RAW_PATH.relative_to(ROOT)} ({len(all_products)} colorways)")
+    print(f"Wrote {RAW_PATH.relative_to(ROOT)} ({len(all_products)} unique colorways)")
 
     print("Downloading images…")
     saved, skipped = download_images(all_products)
     print(f"  images saved={saved} skipped_existing={skipped}")
 
     return {
-        "men": len(collections_meta.get("men-new") or []),
-        "women": len(collections_meta.get("women-new") or []),
+        "men_new": len(collections_meta.get("men-new") or []),
+        "women_new": len(collections_meta.get("women-new") or []),
+        "men_best": len(collections_meta.get("our-bestsellers-men") or []),
+        "women_best": len(collections_meta.get("our-bestsellers-women") or []),
         "total": len(all_products),
         "saved": saved,
         "skipped": skipped,
@@ -329,8 +359,9 @@ def main() -> None:
     print("Building gg-catalog.ts …")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/build-gg-catalog.py")], cwd=str(ROOT))
     print(
-        f"Done. men={stats['men']} women={stats['women']} "
-        f"colorways={stats['total']} images_new={stats['saved']}"
+        f"Done. new men/women={stats['men_new']}/{stats['women_new']} "
+        f"best men/women={stats['men_best']}/{stats['women_best']} "
+        f"unique={stats['total']} images_new={stats['saved']}"
     )
 
 

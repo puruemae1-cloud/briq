@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-28T20:06:42Z",
+  "scrapedAt": "2026-07-28T20:53:02Z",
   "collections": {
     "men-new": [
       "arlo-waterproof-golf-jacket-black-orange",
@@ -132,6 +132,64 @@
       "marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy",
       "nea-breathable-golf-pants-sand",
       "nea-breathable-golf-pants-navy"
+    ],
+    "our-bestsellers-men": [
+      "luis-windproof-and-water-repellent-golf-jacket-black",
+      "marty-breathable-short-sleeve-golf-shirt-white",
+      "drake-insulating-mid-layer-black",
+      "del-insulating-vest-navy",
+      "dion-insulating-golf-mid-layer-black",
+      "alan-waterproof-golf-pants-black",
+      "atlas-waterproof-golf-hat-black",
+      "noah-breathable-pants-navy",
+      "argus-waterproof-jacket-black-white",
+      "dex-insulating-neck-warmer-black",
+      "akron-waterproof-golf-jacket-black",
+      "lane-windproof-and-water-repellent-pants-black",
+      "aston-waterproof-golf-jacket-navy",
+      "elmo-thermal-base-layer-top-white",
+      "aron-waterproof-golf-pants-navy",
+      "aiden-waterproof-golf-hat-black",
+      "paul-breathable-shorts-white",
+      "asher-waterproof-golf-hat-navy",
+      "marty-breathable-short-sleeve-golf-shirt-black",
+      "marty-breathable-short-sleeve-golf-shirt-crystal-blue",
+      "nixon-breathable-pants-light-grey",
+      "percy-breathable-shorts-navy",
+      "luis-windproof-and-water-repellent-golf-jacket-navy",
+      "mansfield-breathable-short-sleeve-golf-shirt-royal-blue",
+      "mansfield-breathable-short-sleeve-golf-shirt-navy",
+      "wilton-golf-belt-black-sharkskin",
+      "dean-insulating-golf-mid-layer-black-white-royal-blue",
+      "arlo-waterproof-golf-jacket-crystal-blue-navy",
+      "dean-insulating-golf-mid-layer-white-navy-red",
+      "arlo-waterproof-golf-jacket-white-red"
+    ],
+    "our-bestsellers-women": [
+      "darla-insulating-golf-mid-layer-white",
+      "nina-breathable-golf-skirt-with-inner-shorts-navy",
+      "darla-insulating-golf-mid-layer-navy",
+      "marielle-breathable-golf-skirt-with-inner-shorts-white",
+      "molly-breathable-short-sleeve-golf-shirt-white",
+      "nina-breathable-golf-skirt-with-inner-shorts-sand",
+      "darla-insulating-golf-mid-layer-pink",
+      "nellie-breathable-pants-black",
+      "abby-waterproof-golf-jacket-crystal-blue-white",
+      "april-waterproof-pants-black",
+      "abby-waterproof-golf-jacket-fuchsia-white",
+      "angie-waterproof-golf-pants-navy",
+      "andrea-waterproof-golf-jacket-black",
+      "levana-windproof-and-water-repellent-pants-navy",
+      "lydia-windproof-and-water-repellent-jacket-sand",
+      "nellie-breathable-pants-navy",
+      "ava-waterproof-jacket-black",
+      "dixie-insulating-golf-mid-layer-navy-white",
+      "lewis-windproof-gloves-black",
+      "shade-sun-visor-white",
+      "molly-breathable-short-sleeve-golf-shirt-navy",
+      "elaine-thermal-base-layer-top-white",
+      "nea-breathable-golf-pants-sand",
+      "ella-uv-protection-top-white"
     ]
   },
   "products": [
@@ -215,7 +273,10 @@
       ],
       "styleName": "Arlo",
       "colorName": "Black Orange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128360251770,
@@ -298,7 +359,10 @@
       ],
       "styleName": "Lloyd",
       "colorName": "Black White Orange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128360350074,
@@ -372,7 +436,10 @@
       ],
       "styleName": "London",
       "colorName": "Orange Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128360808826,
@@ -446,7 +513,10 @@
       ],
       "styleName": "Luca",
       "colorName": "Orange Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128361496954,
@@ -520,7 +590,10 @@
       ],
       "styleName": "Dalton",
       "colorName": "Black White Orange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128362971514,
@@ -601,7 +674,10 @@
       ],
       "styleName": "Mulligan",
       "colorName": "Black White Orange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128364151162,
@@ -674,7 +750,10 @@
       ],
       "styleName": "Merry",
       "colorName": "Orange Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129563918714,
@@ -755,7 +834,10 @@
       ],
       "styleName": "Muir",
       "colorName": "Orange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129564672378,
@@ -836,7 +918,10 @@
       ],
       "styleName": "Medley",
       "colorName": "Black Royal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128360939898,
@@ -911,7 +996,10 @@
       ],
       "styleName": "Luca",
       "colorName": "Forged Iron Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128361300346,
@@ -992,7 +1080,10 @@
       ],
       "styleName": "Donnie",
       "colorName": "Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128362316154,
@@ -1065,7 +1156,10 @@
       ],
       "styleName": "Daniel",
       "colorName": "Sand Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128362086778,
@@ -1147,7 +1241,10 @@
       ],
       "styleName": "Dean",
       "colorName": "Sand Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128361595258,
@@ -1221,7 +1318,10 @@
       ],
       "styleName": "Dalton",
       "colorName": "Sand Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129563623802,
@@ -1302,7 +1402,10 @@
       ],
       "styleName": "Muir",
       "colorName": "Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128360481146,
@@ -1378,7 +1481,10 @@
       ],
       "styleName": "London",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128361005434,
@@ -1454,7 +1560,10 @@
       ],
       "styleName": "Luca",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128364249466,
@@ -1527,7 +1636,10 @@
       ],
       "styleName": "Merry",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129563394426,
@@ -1608,7 +1720,10 @@
       ],
       "styleName": "Muir",
       "colorName": "Crystal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128363299194,
@@ -1689,7 +1804,10 @@
       ],
       "styleName": "Mulligan",
       "colorName": "Crystal Blue White Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128364446074,
@@ -1762,7 +1880,10 @@
       ],
       "styleName": "Merry",
       "colorName": "Moonlight Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16128363594106,
@@ -1843,7 +1964,10 @@
       ],
       "styleName": "Mulligan",
       "colorName": "Royal Blue White Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129564508538,
@@ -1924,7 +2048,10 @@
       ],
       "styleName": "Medley",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338686972282,
@@ -2007,7 +2134,10 @@
       ],
       "styleName": "Lloyd",
       "colorName": "Sand Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338689429882,
@@ -2091,7 +2221,10 @@
       ],
       "styleName": "Donnie",
       "colorName": "White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338687594874,
@@ -2174,7 +2307,10 @@
       ],
       "styleName": "Dion",
       "colorName": "Sand Melange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338692804986,
@@ -2259,7 +2395,10 @@
       ],
       "styleName": "Dean",
       "colorName": "Sand Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338686382458,
@@ -2335,7 +2474,10 @@
       ],
       "styleName": "Adam",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338688053626,
@@ -2418,7 +2560,10 @@
       ],
       "styleName": "Dion",
       "colorName": "Crystal Blue Melange",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15533438566778,
@@ -2509,7 +2654,11 @@
       ],
       "styleName": "Marty",
       "colorName": "Crystal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
     },
     {
       "id": 15345374069114,
@@ -2547,7 +2696,10 @@
       ],
       "styleName": "Shane",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338686447994,
@@ -2623,7 +2775,10 @@
       ],
       "styleName": "Adam",
       "colorName": "Royal Blue Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338686906746,
@@ -2697,7 +2852,10 @@
       ],
       "styleName": "Larry",
       "colorName": "Royal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693067130,
@@ -2772,7 +2930,10 @@
       ],
       "styleName": "Don",
       "colorName": "Royal Blue White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15343112552826,
@@ -2848,7 +3009,11 @@
       ],
       "styleName": "Mansfield",
       "colorName": "Royal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
     },
     {
       "id": 15338687070586,
@@ -2931,7 +3096,10 @@
       ],
       "styleName": "Lloyd",
       "colorName": "Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693099898,
@@ -3007,7 +3175,10 @@
       ],
       "styleName": "Don",
       "colorName": "Black White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693362042,
@@ -3083,7 +3254,10 @@
       ],
       "styleName": "Darryl",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338688250234,
@@ -3165,8 +3339,11 @@
         }
       ],
       "styleName": "Del",
-      "colorName": "Blue",
-      "collection": "gg-new-men"
+      "colorName": "Golf Vest Crystal Blue Melange",
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338688446842,
@@ -3247,7 +3424,10 @@
       ],
       "styleName": "Donnie",
       "colorName": "Crystal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15342514766202,
@@ -3323,7 +3503,10 @@
       ],
       "styleName": "Maguire",
       "colorName": "Crystal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338517528954,
@@ -3400,7 +3583,11 @@
       ],
       "styleName": "Luis",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
     },
     {
       "id": 15343114682746,
@@ -3476,7 +3663,10 @@
       ],
       "styleName": "Maggio",
       "colorName": "Royal Blue Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344939008378,
@@ -3656,7 +3846,10 @@
       ],
       "styleName": "Nick",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15345374429562,
@@ -3696,7 +3889,10 @@
       ],
       "styleName": "Shane",
       "colorName": "White Cool Grey",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693263738,
@@ -3772,7 +3968,10 @@
       ],
       "styleName": "Darryl",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693525882,
@@ -3847,7 +4046,10 @@
       ],
       "styleName": "Darryl",
       "colorName": "White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693001594,
@@ -3932,7 +4134,11 @@
       ],
       "styleName": "Dean",
       "colorName": "White Navy Red",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
     },
     {
       "id": 15343114813818,
@@ -4008,7 +4214,10 @@
       ],
       "styleName": "Maggio",
       "colorName": "Red Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338516939130,
@@ -4083,7 +4292,10 @@
       ],
       "styleName": "Luis",
       "colorName": "Royal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15438656307578,
@@ -4157,7 +4369,10 @@
       ],
       "styleName": "Air",
       "colorName": "Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338693230970,
@@ -4233,7 +4448,10 @@
       ],
       "styleName": "Don",
       "colorName": "Navy White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338517266810,
@@ -4310,7 +4528,11 @@
       ],
       "styleName": "Luis",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
     },
     {
       "id": 15338686873978,
@@ -4388,7 +4610,10 @@
       ],
       "styleName": "Leo",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344939303290,
@@ -4479,7 +4704,10 @@
       ],
       "styleName": "Pedro",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15345374331258,
@@ -4519,7 +4747,10 @@
       ],
       "styleName": "Shane",
       "colorName": "Sand Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344938942842,
@@ -4699,7 +4930,10 @@
       ],
       "styleName": "Nick",
       "colorName": "Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344938975610,
@@ -4879,7 +5113,10 @@
       ],
       "styleName": "Nick",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15343114256762,
@@ -4955,7 +5192,10 @@
       ],
       "styleName": "Maggio",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344939204986,
@@ -5046,7 +5286,10 @@
       ],
       "styleName": "Pedro",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15343256764794,
@@ -5122,7 +5365,10 @@
       ],
       "styleName": "Mitchell",
       "colorName": "Crystal Blue White Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338473914746,
@@ -5225,7 +5471,10 @@
       ],
       "styleName": "Andrew",
       "colorName": "Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15343256895866,
@@ -5301,7 +5550,10 @@
       ],
       "styleName": "Mitchell",
       "colorName": "Black White Royal Blue",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344939073914,
@@ -5392,7 +5644,10 @@
       ],
       "styleName": "Pedro",
       "colorName": "Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344936780154,
@@ -5483,7 +5738,10 @@
       ],
       "styleName": "Moon",
       "colorName": "Royal Blue Black",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15338474307962,
@@ -5586,7 +5844,10 @@
       ],
       "styleName": "Andrew",
       "colorName": "Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344938910074,
@@ -5677,7 +5938,10 @@
       ],
       "styleName": "Moon",
       "colorName": "Moonlight Blue Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344938811770,
@@ -5768,7 +6032,10 @@
       ],
       "styleName": "Moon",
       "colorName": "Crystal Blue Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 15344938844538,
@@ -5859,7 +6126,10 @@
       ],
       "styleName": "Moon",
       "colorName": "Sand Navy",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16006289326458,
@@ -5934,7 +6204,10 @@
       ],
       "styleName": "Dunn",
       "colorName": "Sand White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16006294798714,
@@ -6009,7 +6282,10 @@
       ],
       "styleName": "Myron",
       "colorName": "Sand White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16006303089018,
@@ -6084,7 +6360,10 @@
       ],
       "styleName": "Myron",
       "colorName": "White Sunny Lime",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16006304039290,
@@ -6159,7 +6438,10 @@
       ],
       "styleName": "Myles",
       "colorName": "Sand White",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16006304629114,
@@ -6236,7 +6518,10 @@
       ],
       "styleName": "Linden",
       "colorName": "White Sand",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16014629241210,
@@ -6271,7 +6556,10 @@
       ],
       "styleName": "Derek",
       "colorName": "Lime",
-      "collection": "gg-new-men"
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
     },
     {
       "id": 16129561821562,
@@ -6354,7 +6642,10 @@
       ],
       "styleName": "Abby",
       "colorName": "Storm Blue Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129585578362,
@@ -6437,7 +6728,10 @@
       ],
       "styleName": "Daphne",
       "colorName": "Sand",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129584923002,
@@ -6518,7 +6812,10 @@
       ],
       "styleName": "Lydia",
       "colorName": "Storm Blue",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15124580991354,
@@ -6604,7 +6901,10 @@
       ],
       "styleName": "Luna",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129585021306,
@@ -6685,7 +6985,10 @@
       ],
       "styleName": "Luna",
       "colorName": "Storm Blue",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129585217914,
@@ -6767,7 +7070,10 @@
       ],
       "styleName": "Diora",
       "colorName": "Storm Blue Melange",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129585742202,
@@ -6850,7 +7156,10 @@
       ],
       "styleName": "Daphne",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129585381754,
@@ -6932,7 +7241,10 @@
       ],
       "styleName": "Dixie",
       "colorName": "Storm Blue Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129587773818,
@@ -7012,7 +7324,10 @@
       ],
       "styleName": "Maya",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15124580794746,
@@ -7098,7 +7413,10 @@
       ],
       "styleName": "Luna",
       "colorName": "Sand",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129586921850,
@@ -7181,7 +7499,10 @@
       ],
       "styleName": "Miley",
       "colorName": "Delphinium Blue",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 14922316218746,
@@ -7268,7 +7589,11 @@
       ],
       "styleName": "Dixie",
       "colorName": "Navy White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 16129587609978,
@@ -7348,7 +7673,10 @@
       ],
       "styleName": "Maya",
       "colorName": "Storm Blue",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129587183994,
@@ -7430,7 +7758,10 @@
       ],
       "styleName": "Miley",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 16129587446138,
@@ -7512,7 +7843,10 @@
       ],
       "styleName": "Mona",
       "colorName": "Delphinium Blue Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345051926906,
@@ -7598,7 +7932,10 @@
       ],
       "styleName": "Diora",
       "colorName": "Black",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15344999334266,
@@ -7683,7 +8020,11 @@
       ],
       "styleName": "Abby",
       "colorName": "Fuchsia White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345000677754,
@@ -7759,7 +8100,10 @@
       ],
       "styleName": "Lissy",
       "colorName": "Crystal Blue White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345000415610,
@@ -7835,7 +8179,10 @@
       ],
       "styleName": "Lissy",
       "colorName": "Fuchsia White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15344999661946,
@@ -7923,7 +8270,10 @@
       ],
       "styleName": "Abby",
       "colorName": "Navy White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345051828602,
@@ -8008,7 +8358,10 @@
       ],
       "styleName": "Diora",
       "colorName": "Fuchsia Melange",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15344999432570,
@@ -8093,7 +8446,11 @@
       ],
       "styleName": "Abby",
       "colorName": "Crystal Blue White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345051894138,
@@ -8177,7 +8534,10 @@
       ],
       "styleName": "Diora",
       "colorName": "Crystal Blue Melange",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345056547194,
@@ -8261,7 +8621,10 @@
       ],
       "styleName": "Dixie",
       "colorName": "Fuchsia White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345362239866,
@@ -8346,7 +8709,10 @@
       ],
       "styleName": "Mia",
       "colorName": "Pink Fuchsia",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345052057978,
@@ -8432,7 +8798,10 @@
       ],
       "styleName": "Diora",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345362600314,
@@ -8516,7 +8885,10 @@
       ],
       "styleName": "Mia",
       "colorName": "White Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345056448890,
@@ -8599,7 +8971,10 @@
       ],
       "styleName": "Denise",
       "colorName": "Crystal Blue",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345362305402,
@@ -8683,7 +9058,10 @@
       ],
       "styleName": "Mia",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345056612730,
@@ -8767,7 +9145,10 @@
       ],
       "styleName": "Dixie",
       "colorName": "Crystal Blue White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345364697466,
@@ -8851,7 +9232,10 @@
       ],
       "styleName": "Miley",
       "colorName": "Crystal Blue White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345370792314,
@@ -8936,7 +9320,10 @@
       ],
       "styleName": "Molly",
       "colorName": "Fuchsia",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345363124602,
@@ -9020,7 +9407,10 @@
       ],
       "styleName": "Miley",
       "colorName": "Pink White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345366040954,
@@ -9105,7 +9495,10 @@
       ],
       "styleName": "Miley",
       "colorName": "Navy White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345366237562,
@@ -9189,7 +9582,10 @@
       ],
       "styleName": "Mona",
       "colorName": "White Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345366073722,
@@ -9273,7 +9669,10 @@
       ],
       "styleName": "Mona",
       "colorName": "Crystal Blue White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345372823930,
@@ -9365,7 +9764,11 @@
       ],
       "styleName": "Nina",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345371251066,
@@ -9451,7 +9854,11 @@
       ],
       "styleName": "Molly",
       "colorName": "White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345372660090,
@@ -9543,7 +9950,11 @@
       ],
       "styleName": "Nina",
       "colorName": "Sand",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345371054458,
@@ -9629,7 +10040,11 @@
       ],
       "styleName": "Molly",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345372430714,
@@ -9711,7 +10126,11 @@
       ],
       "styleName": "Marielle",
       "colorName": "White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15447902585210,
@@ -9796,7 +10215,11 @@
       ],
       "styleName": "Darla",
       "colorName": "Pink",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345371644282,
@@ -9878,7 +10301,10 @@
       ],
       "styleName": "Marielle",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15447902847354,
@@ -9963,7 +10389,11 @@
       ],
       "styleName": "Darla",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345372594554,
@@ -10046,7 +10476,10 @@
       ],
       "styleName": "Marielle",
       "colorName": "White Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15447903109498,
@@ -10131,7 +10564,11 @@
       ],
       "styleName": "Darla",
       "colorName": "White",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15345373020538,
@@ -10223,7 +10660,10 @@
       ],
       "styleName": "Nova",
       "colorName": "Sand",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15345373118842,
@@ -10314,7 +10754,10 @@
       ],
       "styleName": "Nova",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15438591918458,
@@ -10424,7 +10867,10 @@
       ],
       "styleName": "Angie",
       "colorName": "Black",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15438778204538,
@@ -10506,7 +10952,10 @@
       ],
       "styleName": "Marielle",
       "colorName": "Pink Fuchsia",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15438778368378,
@@ -10588,7 +11037,10 @@
       ],
       "styleName": "Marielle",
       "colorName": "Crystal Blue Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
     },
     {
       "id": 15447914152314,
@@ -10678,7 +11130,11 @@
       ],
       "styleName": "Nea",
       "colorName": "Sand",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-bestsellers-women"
+      ]
     },
     {
       "id": 15447914250618,
@@ -10768,7 +11224,3730 @@
       ],
       "styleName": "Nea",
       "colorName": "Navy",
-      "collection": "gg-new-women"
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
+    },
+    {
+      "id": 14923394843002,
+      "handle": "marty-breathable-short-sleeve-golf-shirt-white",
+      "title": "Marty - Breathable short sleeve golf shirt",
+      "body_html": "Marty is back: a solid shirt with a contrasting colour on the collar and sleeve edges. This is a classic shirt with an edge — literally and figuratively. Made from stretch fabric, it offers excellent breathability and quick-drying performance, keeping you comfortable all day. With UV protection (20+) and ribbed collar and cuffs, Marty combines timeless style with modern functionality.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Core collection",
+        "Men",
+        "MEN TORSO",
+        "Quick Response Collection",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "White",
+        "Windy & Warm"
+      ],
+      "published_at": "2025-02-03T11:57:32+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_FRONT_D01001309409.webp?v=1759155295",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_1_D01000309409.webp?v=1759155295",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_3_D01000309409.webp?v=1759155294",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_4_D01000309409.webp?v=1759155294",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_2_D01000309409.webp?v=1759155294",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_5_D01000309409.webp?v=1759155294",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_BACK_D01001309409.webp?v=1759155295",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_6_D01000309409.webp?v=1759155294"
+      ],
+      "variants": [
+        {
+          "id": 54976183894394,
+          "sku": "D01001309409001",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976183927162,
+          "sku": "D01001309409002",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976183959930,
+          "sku": "D01001309409003",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976183992698,
+          "sku": "D01001309409004",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976184025466,
+          "sku": "D01001309409005",
+          "size": "XXL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976184058234,
+          "sku": "D01001309409006",
+          "size": "3XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976184091002,
+          "sku": "D01001309409007",
+          "size": "4XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Marty",
+      "colorName": "White",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399917060254,
+      "handle": "drake-insulating-mid-layer-black",
+      "title": "Drake - Insulating golf mid layer",
+      "body_html": "Drake is a high tech golf mid layer that is soft, stretchy and comfortable. Cut from a new eco-generation of INSULA™ materials, this fabric is made from recycled plastic bottles and is bluesign® approved fabric. Available in a variety of colours, we recommend you size up for a looser fit.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Black",
+        "Halfzip",
+        "insula",
+        "INSULA™ Warming effect #2",
+        "Men",
+        "MEN TORSO",
+        "Mid layer - Half Zip",
+        "Midlayers",
+        "Rainy & Cold",
+        "Sunny & Cold",
+        "Windy & Cold"
+      ],
+      "published_at": "2022-12-02T08:17:52+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_FRONT_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_1_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_2_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_3_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_4_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_5_C01000219403.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_S_6_C01000219403.webp?v=1759143323",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_BACK_C01000219403.webp?v=1759143321",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_C01000219403_MG_6410.webp?v=1759143322",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DRAKE_L_C01000219403_7600.webp?v=1759143323"
+      ],
+      "variants": [
+        {
+          "id": 42278909509790,
+          "sku": "C01000219403001",
+          "size": "S",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909542558,
+          "sku": "C01000219403002",
+          "size": "M",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909575326,
+          "sku": "C01000219403003",
+          "size": "L",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909608094,
+          "sku": "C01000219403004",
+          "size": "XL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909640862,
+          "sku": "C01000219403005",
+          "size": "XXL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909673630,
+          "sku": "C01000219403006",
+          "size": "3XL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42278909706398,
+          "sku": "C01000219403007",
+          "size": "4XL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Drake",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15124701446522,
+      "handle": "del-insulating-vest-navy",
+      "title": "Del - Insulating golf vest",
+      "body_html": "Need an extra layer of warmth underneath your jacket or over your golf shirt? Del is a quarter-zip thermal golf vest is rated with warming effect #1, offering light thermal insulation. Made from an extremely breathable, quick dry fabric, Del is soft, stretchy, and feels great against the skin.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Bodywarmer",
+        "Halfzip",
+        "insula",
+        "INSULA™ Warming effect #1",
+        "Men",
+        "MEN TORSO",
+        "Midlayers",
+        "Navy",
+        "Rainy & Warm",
+        "Windy & Warm"
+      ],
+      "published_at": "2025-07-30T13:43:38+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_FRONT_C01000439405.webp?v=1759145379",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_S_1_C01000439405_3c103fd1-38a0-4cda-9e22-f6c9623effe2.webp?v=1764681672",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_S_2_C01000439405_a8fcd6df-01b5-4050-a4ed-3fbe3af6b85e.webp?v=1764681672",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_S_3_C01000439405.webp?v=1764681672",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_S_4_C01000439405_015604de-f350-4c00-a416-c20a17ea4dc4.webp?v=1764681672",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_S_5_C01000439405.webp?v=1764681672",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_BACK_C01000439405.webp?v=1759145379",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEL_L_C01000439405_3584.webp?v=1759145378"
+      ],
+      "variants": [
+        {
+          "id": 55437210190202,
+          "sku": "C01000439405001",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437210222970,
+          "sku": "C01000439405002",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437210255738,
+          "sku": "C01000439405003",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437210288506,
+          "sku": "C01000439405004",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437210321274,
+          "sku": "C01000439405005",
+          "size": "XXL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437210354042,
+          "sku": "C01000439405006",
+          "size": "3XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Del",
+      "colorName": "Vest Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15294277091706,
+      "handle": "dion-insulating-golf-mid-layer-black",
+      "title": "Dion - Insulating golf mid layer",
+      "body_html": "Dion is a lightweight men’s melange quarter zip designed to be worn as a light sweater in cool conditions, or a mid layer underneath your jacket or vest. Made from a quick dry bluesign® approved fabric that’s stretchy and comfortable, Dion has a soft hand feel and feels great against the skin. Part of a range of high-tech, versatile mid layers designed for golfers, Dion is rated with warming effect #1, offering maximum breathability.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Core collection",
+        "Halfzip",
+        "insula",
+        "INSULA™ Warming effect #1",
+        "Men",
+        "MEN TORSO",
+        "Mid layer - Half Zip",
+        "Midlayers",
+        "Quick Response Collection",
+        "Rainy & Warm",
+        "Windy & Warm"
+      ],
+      "published_at": "2025-08-19T15:02:05+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_FRONT_C01000429403.webp?v=1759145217",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_S_1_C01000429403.webp?v=1759145217",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_S_2_C01000429403.webp?v=1759145217",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_S_4_C01000429403.webp?v=1759145217",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_S_6_C01000429403.webp?v=1759145217",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_BACK_C01000429403.webp?v=1759145216",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DION_L_C01000429403_2012.webp?v=1759145217"
+      ],
+      "variants": [
+        {
+          "id": 55771785593210,
+          "sku": "C01000429403001",
+          "size": "S",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55771785625978,
+          "sku": "C01000429403002",
+          "size": "M",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55771785658746,
+          "sku": "C01000429403003",
+          "size": "L",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55771785691514,
+          "sku": "C01000429403004",
+          "size": "XL",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55771785724282,
+          "sku": "C01000429403005",
+          "size": "XXL",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55771785757050,
+          "sku": "C01000429403006",
+          "size": "3XL",
+          "price": "79.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Dion",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15056395534714,
+      "handle": "alan-waterproof-golf-pants-black",
+      "title": "Alan - Waterproof golf pants",
+      "body_html": "Achieve peak waterproof performance with the Alan golf rain pants — part of Galvin Green’s DRYVR™ waterproofs collection. Featuring PERTEX® Shield stretch technology, these 100% waterproof and windproof pants are extremely breathable. We’ve spared no expense on the details, which include adjustable leg width, elasticated drawstring waist, front pockets with fleece lining, and a split inseam for abrasion resistance. We’ve also added an extra abrasion-resistant fabric on the pant hem to ensure durability.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Core collection",
+        "Men",
+        "MEN PERTEX PANTS",
+        "Pants",
+        "PERTEX® Shield 3-layer stretch",
+        "Quick Response Collection",
+        "Rainy & Warm",
+        "stretch",
+        "Waterproofs"
+      ],
+      "published_at": "2025-04-16T11:02:37+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_FRONT_A01000469403_cadcdff3-ec2d-4a9f-a477-45fe879681a5.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_1_A01000469403_cac75a42-f139-4b29-8470-555e4b734b1a.webp?v=1759138105",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_2_A01000469403_912330fb-dc6a-4345-9582-042254cb61f2.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_3_A01000469403_e7f35128-5de5-4229-bea3-3539ed750152.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_4_A01000469403_bb9d1586-15dd-4540-ac93-c91a3207675f.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_5_A01000469403_cca7dc05-60ac-4e8b-afaa-075ef3a1b9b9.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_6_A01000469403_3e804705-8849-4e54-bdd8-6f380b48d733.webp?v=1759138105",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_S_7_A01000469403_8e759b73-3814-4e28-a505-26b69d1e2710.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALAN_BACK_A01000469403_71a28482-1709-4b69-b790-ccddb65adb6b.webp?v=1759138104",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_L_7_A01000519403.webp?v=1759138104"
+      ],
+      "variants": [
+        {
+          "id": 55269218222458,
+          "sku": "A0100046V9403001",
+          "size": "30/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218255226,
+          "sku": "A0100046V9403002",
+          "size": "32/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218287994,
+          "sku": "A0100046V9403003",
+          "size": "34/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218320762,
+          "sku": "A0100046V9403004",
+          "size": "36/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218353530,
+          "sku": "A0100046V9403010",
+          "size": "28/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218386298,
+          "sku": "A0100046V9403011",
+          "size": "30/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218419066,
+          "sku": "A0100046V9403012",
+          "size": "32/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218451834,
+          "sku": "A0100046V9403013",
+          "size": "34/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218484602,
+          "sku": "A0100046V9403014",
+          "size": "36/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218517370,
+          "sku": "A0100046V9403015",
+          "size": "38/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218550138,
+          "sku": "A0100046V9403016",
+          "size": "40/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218582906,
+          "sku": "A0100046V9403020",
+          "size": "30/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218615674,
+          "sku": "A0100046V9403021",
+          "size": "32/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218648442,
+          "sku": "A0100046V9403022",
+          "size": "34/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218681210,
+          "sku": "A0100046V9403023",
+          "size": "36/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55269218713978,
+          "sku": "A0100046V9403024",
+          "size": "38/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56723000754554,
+          "sku": "A0100046V9403025",
+          "size": "40/34",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 56723000787322,
+          "sku": "A0100046V9403030",
+          "size": "34/36",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 56723000820090,
+          "sku": "A0100046V9403031",
+          "size": "36/36",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 55269218746746,
+          "sku": "A0100046V9403005",
+          "size": "38/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56723000852858,
+          "sku": "A0100046V9403006",
+          "size": "40/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 56723000885626,
+          "sku": "A0100046V9403007",
+          "size": "42/30",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 56723000918394,
+          "sku": "A0100046V9403017",
+          "size": "42/32",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        }
+      ],
+      "styleName": "Alan",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14922291347834,
+      "handle": "atlas-waterproof-golf-hat-black",
+      "title": "Atlas - Waterproof golf cap",
+      "body_html": "A high-tech, lightweight waterproof golf cap, Atlas is an essential accessory when golfing in rainy or unpredictable weather. Featuring a Galvin Green logo and white edge piping, the Atlas waterproof cap is made from Pertex Shield, a lightweight, breathable waterproof material that is PFAs free. The adjustable circumference is 54 to 62 cm (21,3 to 24,4 inches).",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Cap",
+        "Hats",
+        "PERTEX® Shield 3-layer stretch",
+        "stretch",
+        "Unisex",
+        "Waterproofs"
+      ],
+      "published_at": "2025-02-03T11:56:21+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ATLAS_FRONT_A01000659403.webp?v=1759138700",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ATLAS_FRONT_WS_A01000659403.webp?v=1759138700",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ATLAS_S_1_A01000659403.webp?v=1759138700",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ATLAS_S_2_A01000659403.webp?v=1759138700",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ATLAS_S_3_A01000659403.webp?v=1759138700"
+      ],
+      "variants": [
+        {
+          "id": 54973838688634,
+          "sku": "A01000659403001",
+          "size": "One Size",
+          "price": "39.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Atlas",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399371047070,
+      "handle": "noah-breathable-pants-navy",
+      "title": "Noah - Breathable golf pants",
+      "body_html": "These men’s golf pants incorporate a shirt gripper waistband and stretch function for a perfect fit. With front and back pockets, these pants are as functional as they are stylish. Plus, they have UV protection of 20+. Pair them with a cool golf shirt and enjoy a sunny day on the course.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Men",
+        "MEN BOTTOMS",
+        "Navy",
+        "Pants",
+        "Sunny & Cold",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2022-12-01T09:58:19+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_FRONT_D01000299405.webp?v=1759149939",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_1_D0100029405.webp?v=1759149939",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_2_D0100029405.webp?v=1759149939",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_3_D0100029405.webp?v=1759149940",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_4_D0100029405.webp?v=1759149939",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_5_D0100029405.webp?v=1759149940",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_S_6_D0100029405.webp?v=1759149939",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NOAH_BACK_D01000299405.webp?v=1759149939"
+      ],
+      "variants": [
+        {
+          "id": 42277020827806,
+          "sku": "D01000299405001",
+          "size": "30/30",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277020860574,
+          "sku": "D01000299405002",
+          "size": "32/30",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277020893342,
+          "sku": "D01000299405003",
+          "size": "34/30",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277020926110,
+          "sku": "D01000299405004",
+          "size": "36/30",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277020958878,
+          "sku": "D01000299405010",
+          "size": "28/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277020991646,
+          "sku": "D01000299405011",
+          "size": "30/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021024414,
+          "sku": "D01000299405012",
+          "size": "32/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021057182,
+          "sku": "D01000299405013",
+          "size": "34/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021089950,
+          "sku": "D01000299405014",
+          "size": "36/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021122718,
+          "sku": "D01000299405015",
+          "size": "38/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021155486,
+          "sku": "D01000299405016",
+          "size": "40/32",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021188254,
+          "sku": "D01000299405020",
+          "size": "30/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021221022,
+          "sku": "D01000299405021",
+          "size": "32/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021253790,
+          "sku": "D01000299405022",
+          "size": "34/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021286558,
+          "sku": "D01000299405023",
+          "size": "36/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021319326,
+          "sku": "D01000299405024",
+          "size": "38/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021352094,
+          "sku": "D01000299405025",
+          "size": "40/34",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021384862,
+          "sku": "D01000299405030",
+          "size": "34/36",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021417630,
+          "sku": "D01000299405031",
+          "size": "36/36",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021450398,
+          "sku": "D01000299405032",
+          "size": "38/36",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277021483166,
+          "sku": "D01000299405005",
+          "size": "38/30",
+          "price": "119.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Noah",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14807687037306,
+      "handle": "argus-waterproof-jacket-black-white",
+      "title": "Argus - Waterproof jacket",
+      "body_html": "Argus is a Pertex Shield stretch hooded jacket aesthetically inspired by streetwear but with fit and technology geared for the golf course.​ The kangaroo-like pocket, wide cuffs and tabs, and embroidery-like logo print make this directional jacket distinctively different to the main collection.",
+      "tags": [
+        "2024 part 2 - GG CONCEPT",
+        "2025 Part 1 - GG CONCEPT",
+        "2025 Part 2 - GG CONCEPT",
+        "2026 Part 1 - The Concept",
+        "Black",
+        "Fullzip",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "PERTEX® Shield 3-layer stretch",
+        "Waterproofs"
+      ],
+      "published_at": "2024-11-13T14:47:05+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_FRONT_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_1_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_2_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_3_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_4_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_5_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_6_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_7_A01000219020.webp?v=1759219364",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_S_8_A01000219020.webp?v=1759219363",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARGUS_BACK_A01000219020.webp?v=1759219363"
+      ],
+      "variants": [
+        {
+          "id": 51894384492922,
+          "sku": "A01000219020001",
+          "size": "S",
+          "price": "300.30",
+          "compare_at_price": "429.00",
+          "available": true
+        },
+        {
+          "id": 51894384525690,
+          "sku": "A01000219020002",
+          "size": "M",
+          "price": "300.30",
+          "compare_at_price": "429.00",
+          "available": false
+        },
+        {
+          "id": 51894384558458,
+          "sku": "A01000219020003",
+          "size": "L",
+          "price": "300.30",
+          "compare_at_price": "429.00",
+          "available": false
+        },
+        {
+          "id": 51894384591226,
+          "sku": "A01000219020004",
+          "size": "XL",
+          "price": "300.30",
+          "compare_at_price": "429.00",
+          "available": false
+        },
+        {
+          "id": 51894384623994,
+          "sku": "A01000219020005",
+          "size": "XXL",
+          "price": "300.30",
+          "compare_at_price": "429.00",
+          "available": true
+        }
+      ],
+      "styleName": "Argus",
+      "colorName": "Black White",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399949205662,
+      "handle": "dex-insulating-neck-warmer-black",
+      "title": "Dex - Insulating golf neck warmer",
+      "body_html": "Dex is a neck warmer made from a soft, stretchy INSULA™ material that is extremely breathable and quick dry. Durable and easy care, this thermal neck warmer is ideal to carry with you when you’re golfing in the cold.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Black",
+        "insula",
+        "INSULA™ Warming effect #2",
+        "Neckwarmer",
+        "Rainy & Cold",
+        "Snoods/Bandana",
+        "Unisex",
+        "Windy & Cold"
+      ],
+      "published_at": "2022-12-02T10:30:51+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_BACK_C01000379403_002b52e5-bd52-42be-89d7-b0b3bd98b920.webp?v=1759144612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_BACK_C01000379403.webp?v=1759144611",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_S_2_C01000379403.webp?v=1759144612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_S_1_C01000379403.webp?v=1759144613",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_S_3_C01000379403.webp?v=1759144613",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_S_4_C01000379403.webp?v=1759144613",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEX_C01000379403.webp?v=1759144612"
+      ],
+      "variants": [
+        {
+          "id": 42279036321950,
+          "sku": "C01000379403001",
+          "size": "One Size",
+          "price": "29.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Dex",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14922190946682,
+      "handle": "akron-waterproof-golf-jacket-black",
+      "title": "Akron - Waterproof Golf Jacket",
+      "body_html": "This high-tech hooded golf jacket is packed with functional design features. The Akron jacket includes adjustable cuffs and hood, elastic drawstring hem, and front pockets. Made for the golf course but designed for ultimate versatility, this jacket is your go-to piece for your next round, daily commute, dog walk, or any rainy-day adventure. Using Pertex Shield fabric, this lightweight, breathable jacket keeps you dry and comfortable. Garment features include chest tabs that reduce the bulk at the front of the jacket during your swing, and repositioned side seams to reduce friction.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Black",
+        "Core collection",
+        "Fullzip",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "PERTEX® Shield",
+        "Rainy & Cold",
+        "Rainy & Warm",
+        "Waterproofs"
+      ],
+      "published_at": "2025-02-03T11:56:07+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_FRONT_A01000519403.webp?v=1759138362",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_1_A01000519403_2c445ec1-e9a2-4c64-a17f-abfddc9ee5a0.webp?v=1764583709",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_2_A01000519403_67d64da2-0b04-49d5-9044-dcc98fc0b3ea.webp?v=1764583708",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_3_A01000519403.webp?v=1764583709",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_5A01000519403.webp?v=1764583709",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_4_A01000519403_aefc797a-8235-4b9a-af03-8515be3fe729.webp?v=1764583709",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_S_6._A01000519403.webp?v=1764583708",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AKRON_L_2_A01000519403.webp?v=1761657780"
+      ],
+      "variants": [
+        {
+          "id": 54973686055290,
+          "sku": "A01000519403001",
+          "size": "S",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973686088058,
+          "sku": "A01000519403002",
+          "size": "M",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973686120826,
+          "sku": "A01000519403003",
+          "size": "L",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973686153594,
+          "sku": "A01000519403004",
+          "size": "XL",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973686186362,
+          "sku": "A01000519403005",
+          "size": "XXL",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973686219130,
+          "sku": "A01000519403006",
+          "size": "3XL",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Akron",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7398876512414,
+      "handle": "lane-windproof-and-water-repellent-pants-black",
+      "title": "Lane - Windproof and water repellent golf pants",
+      "body_html": "With built-in stretch, these Lane pants are comfortable and easy to play in, allowing you to move freely. The material is windproof and has a water repellent finish, without compromising on breathability. With front and back pockets, these pants are functional, and we love the streamlined cut. Rated with warming effect #2, these pants are ideal when it's too cold for regular golf pants and too dry for waterproof pants.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Black",
+        "interface-1",
+        "INTERFACE-1™  Warming effect #2",
+        "Men",
+        "MEN BOTTOMS",
+        "Pants",
+        "Windproof",
+        "Windy & Cold"
+      ],
+      "published_at": "2022-11-30T17:54:02+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_FRONT_B01000089403.webp?v=1759139766",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_2_B01000089403.webp?v=1759139767",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_1_B01000089403.webp?v=1759139766",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_5_B01000089403.webp?v=1759139768",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_4_B01000089403.webp?v=1759139767",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_6_B01000089403.webp?v=1759139768",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_S_3_B01000089403.webp?v=1759139767",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LANE_BACK_B01000089403.webp?v=1759139766",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LLOYD_L_2_B01000448751.webp?v=1760450788"
+      ],
+      "variants": [
+        {
+          "id": 42275063562398,
+          "sku": "B01000089403002",
+          "size": "32/30",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063595166,
+          "sku": "B01000089403003",
+          "size": "34/30",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063627934,
+          "sku": "B01000089403004",
+          "size": "36/30",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063660702,
+          "sku": "B01000089403011",
+          "size": "30/32",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063693470,
+          "sku": "B01000089403012",
+          "size": "32/32",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063726238,
+          "sku": "B01000089403013",
+          "size": "34/32",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063759006,
+          "sku": "B01000089403014",
+          "size": "36/32",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063791774,
+          "sku": "B01000089403015",
+          "size": "38/32",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063824542,
+          "sku": "B01000089403021",
+          "size": "32/34",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063857310,
+          "sku": "B01000089403022",
+          "size": "34/34",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275063890078,
+          "sku": "B01000089403023",
+          "size": "36/34",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Lane",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14988842664314,
+      "handle": "aston-waterproof-golf-jacket-navy",
+      "title": "Aston - Waterproof Golf Jacket",
+      "body_html": "The Aston golf jacket is a versatile, high-tech outer layer for all-weather golf, part of Galvin Green’s award-winning DRYVR™ collection. Constructed from recycled polyester with next-generation GORE-TEX ePE fabric, it is 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX design and lightweight mesh lining offer comfort and warmth without bulk, while the PFAS-free water repellent treatment repels rain and ensures protection in harsh conditions.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Core collection",
+        "Fullzip",
+        "gore-tex",
+        "GORE-TEX ePE with lining",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "Navy",
+        "Rainy & Cold",
+        "Waterproofs"
+      ],
+      "published_at": "2025-03-10T08:52:55+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_FRONT_A01000569405.webp?v=1759138553",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_1_A01000569405_0fbe36dd-4390-4039-a302-58aca09fe8f1.webp?v=1764760112",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_2_A01000569405.webp?v=1764760111",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_3_A01000569405_efa660b0-b7a8-444a-8fd9-4eb5cbb317af.webp?v=1764760111",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_5_A01000569405_ab4c0957-1622-4dd4-8d14-8a2bb85b227b.webp?v=1764760112",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_4_A01000569405_db0d0a68-14aa-443e-8349-8645b4b110c1.webp?v=1764760112",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_S_6_A01000569405_3c927156-1c4a-4307-b269-69c64190722d.webp?v=1764760111",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_BACK_A01000569405.webp?v=1759138553",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASTON_L_6_A01000569405.webp?v=1759138553"
+      ],
+      "variants": [
+        {
+          "id": 55130369393018,
+          "sku": "A01000569405001",
+          "size": "S",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369425786,
+          "sku": "A01000569405002",
+          "size": "M",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369458554,
+          "sku": "A01000569405003",
+          "size": "L",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369491322,
+          "sku": "A01000569405004",
+          "size": "XL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369524090,
+          "sku": "A01000569405005",
+          "size": "XXL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369556858,
+          "sku": "A01000569405006",
+          "size": "3XL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369589626,
+          "sku": "A01000569405007",
+          "size": "4XL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130369622394,
+          "sku": "A01000569405008",
+          "size": "5XL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Aston",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7398909968542,
+      "handle": "elmo-thermal-base-layer-top-white",
+      "title": "Elmo - Thermal base layer golf top",
+      "body_html": "The light, airy material of this men’s thermal base layer provides optimum warmth, comfort, and breathability. It’s the first layer you put on when dressing for cold weather. Made from a bluesign® approved fabric, Elmo is a versatile piece you’ll be able to wear during any outdoor activities.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Baselayer",
+        "Men",
+        "MEN TORSO",
+        "Rainy & Cold",
+        "skintight thermal",
+        "SKINTIGHT™ thermal",
+        "Sunny & Cold",
+        "Tops",
+        "White",
+        "Windy & Cold"
+      ],
+      "published_at": "2022-12-02T13:43:20+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_FRONT_E01000019409_683f1bbd-c731-4ced-99d9-ed1d081c736f.webp?v=1774872388",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_1_E01000099109.webp?v=1759155738",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_2_E01000099109.webp?v=1759155738",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_4_E01000099109.webp?v=1759155738",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_5_E01000099109.webp?v=1759155740",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_6_E01000099109.webp?v=1759155738",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_7_E01000099109.webp?v=1759155739",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_S_8_E01000099109.webp?v=1759155738",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELMO_BACK_E01000019409_2afcd908-603c-47ec-88ee-cdbd31dea4c5.webp?v=1774872388"
+      ],
+      "variants": [
+        {
+          "id": 42275206103198,
+          "sku": "E01000019409001",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275206135966,
+          "sku": "E01000019409002",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275206168734,
+          "sku": "E01000019409003",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275206201502,
+          "sku": "E01000019409004",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275206234270,
+          "sku": "E01000019409005",
+          "size": "XXL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Elmo",
+      "colorName": "White",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14988907839866,
+      "handle": "aron-waterproof-golf-pants-navy",
+      "title": "Aron - Waterproof golf pants",
+      "body_html": "The Aron golf rain pants are part of the Galvin Green DRYVR™ golf rain gear collection designed for comfort and freedom of movement for wet-weather golf. Made from recycled polyester and a next-generation GORE-TEX ePE fabric with a PFAS-free water repellent treatment, these pants are 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX construction, paired with a soft polyester lining, ensures exceptional comfort and warmth throughout your round.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Core collection",
+        "gore-tex",
+        "GORE-TEX ePE with lining",
+        "Men",
+        "MEN BOTTOMS",
+        "Navy",
+        "Pants",
+        "Waterproofs"
+      ],
+      "published_at": "2025-03-10T10:02:03+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_FRONT_A01000579405.webp?v=1759138595",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_1_A01000579405.webp?v=1759138595",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_2_A01000579405.webp?v=1759138596",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_3_A01000579405.webp?v=1759138597",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_4_A01000579405.webp?v=1759138596",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_5_A01000579405.webp?v=1759138596",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_6_A01000579405.webp?v=1759138596",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_S_7_A01000579405.webp?v=1759138596",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARON_BACK_A01000579405.webp?v=1759138595"
+      ],
+      "variants": [
+        {
+          "id": 55130465960314,
+          "sku": "A01000579405002",
+          "size": "32/30",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130465993082,
+          "sku": "A01000579405003",
+          "size": "34/30",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466025850,
+          "sku": "A01000579405004",
+          "size": "36/30",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466058618,
+          "sku": "A01000579405011",
+          "size": "30/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466091386,
+          "sku": "A01000579405012",
+          "size": "32/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466124154,
+          "sku": "A01000579405013",
+          "size": "34/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466156922,
+          "sku": "A01000579405014",
+          "size": "36/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466189690,
+          "sku": "A01000579405015",
+          "size": "38/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466222458,
+          "sku": "A01000579405016",
+          "size": "40/32",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466255226,
+          "sku": "A01000579405021",
+          "size": "32/34",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466287994,
+          "sku": "A01000579405022",
+          "size": "34/34",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466320762,
+          "sku": "A01000579405023",
+          "size": "36/34",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55130466353530,
+          "sku": "A01000579405005",
+          "size": "38/30",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Aron",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14922194190714,
+      "handle": "aiden-waterproof-golf-hat-black",
+      "title": "Aiden - Waterproof golf hat",
+      "body_html": "A waterproof bucket hat is a golfer’s essential, beloved by customers for its practicality, comfort, and reliable protection against the elements. Made from a Pertex Shield stretch fabric, this lightweight hat features breathability and stretch. With an elasticated sweatband for extra comfort, the Aiden golf rain hat is part of the award-winning DRYVR™ golf raingear collection by Galvin Green.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Hat",
+        "Hats",
+        "PERTEX® Shield 3-layer stretch",
+        "stretch",
+        "Unisex",
+        "Waterproofs"
+      ],
+      "published_at": "2025-02-03T11:56:14+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AIDEN_FRONT_A01000639403.webp?v=1759138658",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AIDEN_FRONT_WS_A01000639403.webp?v=1759138657",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AIDEN_S_1_A01000639403.webp?v=1759138658",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AIDEN_S_2_A01000639403.webp?v=1759138658",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AIDEN_S_3_A01000639403.webp?v=1759138658"
+      ],
+      "variants": [
+        {
+          "id": 54973692117370,
+          "sku": "A01000639403001",
+          "size": "54/S",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973692150138,
+          "sku": "A01000639403002",
+          "size": "56/M",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973692182906,
+          "sku": "A01000639403003",
+          "size": "58/L",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973692215674,
+          "sku": "A01000639403004",
+          "size": "60/XL",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54973692248442,
+          "sku": "A01000639403005",
+          "size": "62/XXL",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Aiden",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399519453342,
+      "handle": "paul-breathable-shorts-white",
+      "title": "Paul - Breathable golf shorts",
+      "body_html": "Made from lightweight and quick dry fabric, you’ll stay cool and dry when the temperatures heat up. These breathable golf shorts for men include a shirt gripper waistband and a built-in stretch function for comfort and a perfect fit. They come with UV protection of 20+ for added cover on sunny days, and the shorts include front and back pockets. Light, soft, and comfortable - these shorts look great on the golf course and during lunch at the clubhouse.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Men",
+        "MEN SHORTS Fitted",
+        "Shorts",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "White"
+      ],
+      "published_at": "2022-12-01T16:12:00+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_FRONT_D01000269409.webp?v=1759149843",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_1_D01000269409.webp?v=1759149843",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_2_D01000269409.webp?v=1759149842",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_3_D01000269409.webp?v=1759149843",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_5_D01000269409.webp?v=1759149842",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_6_D01000269409.webp?v=1759149843",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_S_7_D01000269409.webp?v=1759149842",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PAUL_BACK_D01000269409.webp?v=1759149843"
+      ],
+      "variants": [
+        {
+          "id": 42277535285406,
+          "sku": "D01000269409002",
+          "size": "30",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535318174,
+          "sku": "D01000269409003",
+          "size": "32",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535121566,
+          "sku": "D01000269409004",
+          "size": "34",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535154334,
+          "sku": "D01000269409005",
+          "size": "36",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535187102,
+          "sku": "D01000269409006",
+          "size": "38",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535219870,
+          "sku": "D01000269409007",
+          "size": "40",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42277535252638,
+          "sku": "D01000269409008",
+          "size": "42",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Paul",
+      "colorName": "White",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14935525491066,
+      "handle": "asher-waterproof-golf-hat-navy",
+      "title": "Asher - Waterproof golf hat",
+      "body_html": "Asher is a brimmed waterproof hat in the Galvin Green DRYVR™ range, providing maximum coverage and protection. made from Pertex Shield waterproof fabric, it’s windproof, lightweight, breathable, and stretchy. Features include an elasticated sweatband, an extra wide brim at the neck, and a storm strap to ensure the hat won’t blow away.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Hat",
+        "Hats",
+        "Navy",
+        "PERTEX® Shield 3-layer stretch",
+        "stretch",
+        "Unisex",
+        "Waterproofs"
+      ],
+      "published_at": "2025-02-03T11:56:51+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_FRONT_A01000619405.webp?v=1759138627",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_FRONT_WS_A01000619405.webp?v=1759138626",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_S_1_A01000619405.webp?v=1759138627",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_S_2_A01000619405.webp?v=1759138628",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_S_3_A01000619405.webp?v=1759138627",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ASHER_BACK_A01000619405.webp?v=1759138626"
+      ],
+      "variants": [
+        {
+          "id": 55009190478202,
+          "sku": "A01000619405001",
+          "size": "54/S",
+          "price": "59.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55009190510970,
+          "sku": "A01000619405002",
+          "size": "56/M",
+          "price": "59.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55009190543738,
+          "sku": "A01000619405003",
+          "size": "58/L",
+          "price": "59.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55009190576506,
+          "sku": "A01000619405004",
+          "size": "60/XL",
+          "price": "59.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55009190609274,
+          "sku": "A01000619405005",
+          "size": "62/XXL",
+          "price": "59.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Asher",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14923394056570,
+      "handle": "marty-breathable-short-sleeve-golf-shirt-black",
+      "title": "Marty - Breathable short sleeve golf shirt",
+      "body_html": "Marty is back: a solid shirt with a contrasting colour on the collar and sleeve edges. This is a classic shirt with an edge — literally and figuratively. Made from stretch fabric, it offers excellent breathability and quick-drying performance, keeping you comfortable all day. With UV protection (20+) and ribbed collar and cuffs, Marty combines timeless style with modern functionality.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Men",
+        "MEN TORSO",
+        "Quick Response Collection",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2025-02-03T11:57:29+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_FRONT_D01001309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_1_D01000309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_2_D01000309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_3_D01000309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_4_D01000309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_5_D01000309403.webp?v=1759155240",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_6_D01000309403.webp?v=1759155239",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_7_D01000309403.webp?v=1759155239",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_S_8_D01000309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_BACK_D01001309403.webp?v=1759155238",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MARTY_L_D01001309403_1138.webp?v=1759155239"
+      ],
+      "variants": [
+        {
+          "id": 54976179962234,
+          "sku": "D01001309403001",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976179995002,
+          "sku": "D01001309403002",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976180027770,
+          "sku": "D01001309403003",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976180060538,
+          "sku": "D01001309403004",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976180093306,
+          "sku": "D01001309403005",
+          "size": "XXL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976180126074,
+          "sku": "D01001309403006",
+          "size": "3XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 54976180158842,
+          "sku": "D01001309403007",
+          "size": "4XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": false
+        }
+      ],
+      "styleName": "Marty",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399949893790,
+      "handle": "nixon-breathable-pants-light-grey",
+      "title": "Nixon - Breathable golf pants",
+      "body_html": "With front pockets, back pockets, and a mechanical stretch, the Nixon golf pants for men are comfortable, practical, and easy to wear. Available in 16 sizes, these pants will fit a wide variety of golfers. Plus, this soft, lightweight fabric is bluesign® approved. Stay comfortable on hot days with golf clothing that’s been designed by golfers, for golfers",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "Grey",
+        "Men",
+        "MEN BOTTOMS",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Pants",
+        "Sunny & Cold",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2022-12-02T10:34:52+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_FRONT_D01000209091.webp?v=1759149368",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_1_D01000209091.webp?v=1759149367",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_2_D01000209091.webp?v=1759149367",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_3_D01000209091.webp?v=1759149368",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_4_D01000209091.webp?v=1759149367",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_5_D01000209091.webp?v=1759149368",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_S_6_D01000209091.webp?v=1759149367",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NIXON_BACK_D01000209091.webp?v=1759149367"
+      ],
+      "variants": [
+        {
+          "id": 42279037993118,
+          "sku": "D01000209091002",
+          "size": "32/30",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 42279038025886,
+          "sku": "D01000209091003",
+          "size": "34/30",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 42279038058654,
+          "sku": "D01000209091004",
+          "size": "36/30",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038091422,
+          "sku": "D01000209091010",
+          "size": "28/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038124190,
+          "sku": "D01000209091011",
+          "size": "30/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038156958,
+          "sku": "D01000209091012",
+          "size": "32/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 42279038189726,
+          "sku": "D01000209091013",
+          "size": "34/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038222494,
+          "sku": "D01000209091014",
+          "size": "36/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038255262,
+          "sku": "D01000209091015",
+          "size": "38/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038288030,
+          "sku": "D01000209091016",
+          "size": "40/32",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038320798,
+          "sku": "D01000209091020",
+          "size": "30/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038353566,
+          "sku": "D01000209091021",
+          "size": "32/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 42279038386334,
+          "sku": "D01000209091022",
+          "size": "34/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038419102,
+          "sku": "D01000209091023",
+          "size": "36/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        },
+        {
+          "id": 42279038451870,
+          "sku": "D01000209091024",
+          "size": "38/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 42279038484638,
+          "sku": "D01000209091025",
+          "size": "40/34",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": true
+        }
+      ],
+      "styleName": "Nixon",
+      "colorName": "Grey",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 7399950483614,
+      "handle": "percy-breathable-shorts-navy",
+      "title": "Percy - Breathable golf shorts",
+      "body_html": "These woven four pocket men’s golf shorts have patch pockets at the back. Made from a bluesign® approved fabric, the Percy shorts are sustainable and easy to care for. Light, soft, and comfortable - these are our go-to shorts on sunny days, whether we are on the golf course or not.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "Men",
+        "MEN BOTTOMS",
+        "Navy",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Shorts",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS"
+      ],
+      "published_at": "2022-12-02T10:37:08+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_FRONT_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_1_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_2_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_3_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_4_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_5_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_6_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_BACK_D01000229405.webp?v=1759149612"
+      ],
+      "variants": [
+        {
+          "id": 42279046348958,
+          "sku": "D01000229405002",
+          "size": "30",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046381726,
+          "sku": "D01000229405003",
+          "size": "32",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046185118,
+          "sku": "D01000229405004",
+          "size": "34",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046217886,
+          "sku": "D01000229405005",
+          "size": "36",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046250654,
+          "sku": "D01000229405006",
+          "size": "38",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046283422,
+          "sku": "D01000229405007",
+          "size": "40",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046316190,
+          "sku": "D01000229405008",
+          "size": "42",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        }
+      ],
+      "styleName": "Percy",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15343112814970,
+      "handle": "mansfield-breathable-short-sleeve-golf-shirt-navy",
+      "title": "Mansfield - Breathable short sleeve golf shirt",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "tags": [
+        "2026 Part 1",
+        "Men",
+        "MEN TORSO",
+        "Navy",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2026-02-04T10:29:33+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_FRONT_D01001339405.webp?v=1759155360",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_1_D01001339405.webp?v=1764762354",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_2_D01001339405.webp?v=1764762354",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_3_D01001339405.webp?v=1764762354",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_4_D01001339405.webp?v=1764762354",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_5_D01001339405.webp?v=1764762354",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_BACK_D01001339405.webp?v=1759155360"
+      ],
+      "variants": [
+        {
+          "id": 55887505424762,
+          "sku": "D01001339405001",
+          "size": "S",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887505457530,
+          "sku": "D01001339405002",
+          "size": "M",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887505490298,
+          "sku": "D01001339405003",
+          "size": "L",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887505523066,
+          "sku": "D01001339405004",
+          "size": "XL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": true
+        },
+        {
+          "id": 55887505555834,
+          "sku": "D01001339405005",
+          "size": "XXL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        }
+      ],
+      "styleName": "Mansfield",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 14923280318842,
+      "handle": "wilton-golf-belt-black-sharkskin",
+      "title": "Wilton - Golf belt",
+      "body_html": "The Wilton golf belt is designed with versatility in mind, featuring a sturdy woven band and a sleek metal buckle. Its innovative “track fit” micro-adjustment system ensures a precise and comfortable fit. With a reversible design, this belt lets you effortlessly switch between two colours.",
+      "tags": [
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "Belts",
+        "Black",
+        "Others",
+        "Unisex"
+      ],
+      "published_at": "2025-02-03T11:57:48+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/WILTON_FRONT_F01000199350.webp?v=1759156877",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/WILTON_FRONT_WS_F01000199350.webp?v=1759156876",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/WILTON_S_1_F01000199350.webp?v=1759156876",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/WILTON_S_2_F01000199350.webp?v=1759156877"
+      ],
+      "variants": [
+        {
+          "id": 54975906349434,
+          "sku": "F01000199350001",
+          "size": "One Size",
+          "price": "45.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Wilton",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15338692936058,
+      "handle": "dean-insulating-golf-mid-layer-black-white-royal-blue",
+      "title": "Dean - Insulating golf mid layer",
+      "body_html": "Dean brings old-school style and high-tech performance together in one standout midlayer, available in both vibrant colours and classic neutrals. Made from Galvin Green’s recycled polyester INSULA™ fabric, this half-zip sweater offers exceptional thermal insulation (Warming Effect #2) while remaining soft, stretchy, and easy-care. Thanks to its bluesign® approved, quick-dry, and extremely breathable construction, Dean keeps you warm and comfortable on the coolest days without weighing you down.",
+      "tags": [
+        "2026 Part 1",
+        "Black",
+        "Halfzip",
+        "insula",
+        "INSULA™ Warming effect #2",
+        "Men",
+        "MEN TORSO",
+        "Mid layer - Half Zip",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Cold",
+        "Sunny & Cold",
+        "Windy & Cold"
+      ],
+      "published_at": "2026-02-04T10:29:13+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_FRONT_C01000848743.webp?v=1759147006",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_S_1_C01000848743.webp?v=1764591928",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_S_2_C01000848743.webp?v=1764591927",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_S_3_C01000848743.webp?v=1764591927",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_S_4_C01000848743.webp?v=1764591928",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DEAN_BACK_C01000848743.webp?v=1759147006"
+      ],
+      "variants": [
+        {
+          "id": 55877788893562,
+          "sku": "C01000848743001",
+          "size": "S",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        },
+        {
+          "id": 55877788926330,
+          "sku": "C01000848743002",
+          "size": "M",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        },
+        {
+          "id": 55877788959098,
+          "sku": "C01000848743003",
+          "size": "L",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        },
+        {
+          "id": 55877788991866,
+          "sku": "C01000848743004",
+          "size": "XL",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        },
+        {
+          "id": 55877789024634,
+          "sku": "C01000848743005",
+          "size": "XXL",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        },
+        {
+          "id": 55877789057402,
+          "sku": "C01000848743006",
+          "size": "3XL",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": true
+        }
+      ],
+      "styleName": "Dean",
+      "colorName": "Black White Royal Blue",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15447906484602,
+      "handle": "arlo-waterproof-golf-jacket-crystal-blue-navy",
+      "title": "Arlo - Waterproof Golf Jacket",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "tags": [
+        "2026 Part 1",
+        "2026 Part 2",
+        "Blue",
+        "Fullzip",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "PERTEX® Shield 3-layer stretch",
+        "Rainy & Cold",
+        "Rainy & Warm",
+        "stretch",
+        "Waterproofs"
+      ],
+      "published_at": "2026-02-05T10:23:36+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_FRONT_A01000718712.webp?v=1761647116",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_1_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_2_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_3_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_5_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_4_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_6_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_BACK_A01000718712.webp?v=1768899639",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_L_A01000718712.305A0415.webp?v=1775026921"
+      ],
+      "variants": [
+        {
+          "id": 56088700911994,
+          "sku": "A01000718712001",
+          "size": "S",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088700944762,
+          "sku": "A01000718712002",
+          "size": "M",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088700977530,
+          "sku": "A01000718712003",
+          "size": "L",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701010298,
+          "sku": "A01000718712004",
+          "size": "XL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701043066,
+          "sku": "A01000718712005",
+          "size": "XXL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701075834,
+          "sku": "A01000718712006",
+          "size": "3XL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Arlo",
+      "colorName": "Crystal Blue Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15447906517370,
+      "handle": "arlo-waterproof-golf-jacket-white-red",
+      "title": "Arlo - Waterproof Golf Jacket",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "tags": [
+        "2026 Part 1",
+        "2026 Part 2",
+        "Fullzip",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "PERTEX® Shield 3-layer stretch",
+        "Rainy & Cold",
+        "Rainy & Warm",
+        "stretch",
+        "Waterproofs",
+        "White"
+      ],
+      "published_at": "2026-02-05T10:23:37+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_FRONT_A01000718755.webp?v=1761647124",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_1_A01000718755.webp?v=1772564516",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_2_A01000718755.webp?v=1764673721",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_3_A01000718755.webp?v=1764673721",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_5_A01000718755.webp?v=1764673721",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_4_A01000718755.webp?v=1764673721",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_S_6_A01000718755.webp?v=1764673721",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_BACK_A01000718755.webp?v=1761647124",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ARLO_L_A01000718755.305A4020.webp?v=1775026926"
+      ],
+      "variants": [
+        {
+          "id": 56088701108602,
+          "sku": "A01000718755001",
+          "size": "S",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701141370,
+          "sku": "A01000718755002",
+          "size": "M",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701174138,
+          "sku": "A01000718755003",
+          "size": "L",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701206906,
+          "sku": "A01000718755004",
+          "size": "XL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701239674,
+          "sku": "A01000718755005",
+          "size": "XXL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 56088701272442,
+          "sku": "A01000718755006",
+          "size": "3XL",
+          "price": "359.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Arlo",
+      "colorName": "White Red",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 9466684277084,
+      "handle": "nellie-breathable-pants-black",
+      "title": "Nellie - Breathable golf pants",
+      "body_html": "Introducing Nellie, a new high-waisted technical golf pant with a straight leg. Designed to be worn during activity, as an everyday pant, or even to wear to the office, Nellie is a stretch activewear pant disguised as tailored trousers. An alternative to our classic Nicole golf pant, this innovative new cut is made from a super soft and comfortable 4-way stretch fabric. Featuring convenient pockets and extreme breathability, we dare you to pair them with a dressy top on a night out — no one will believe you are wearing stretch pants.",
+      "tags": [
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "Black",
+        "Pants",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Women",
+        "WOMEN BOTTOMS"
+      ],
+      "published_at": "2024-08-12T15:32:22+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_FRONT_D01000689403.webp?v=1759152192",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_1_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_2_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_3_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_4_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_5_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_6_D01000689403.webp?v=1759152193",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_BACK_D01000689403.webp?v=1759152192"
+      ],
+      "variants": [
+        {
+          "id": 48993491059036,
+          "sku": "D01000689403001",
+          "size": "34",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491091804,
+          "sku": "D01000689403002",
+          "size": "36",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491157340,
+          "sku": "D01000689403003",
+          "size": "38",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491190108,
+          "sku": "D01000689403004",
+          "size": "40",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491222876,
+          "sku": "D01000689403005",
+          "size": "42",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491255644,
+          "sku": "D01000689403006",
+          "size": "44",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491288412,
+          "sku": "D01000689403007",
+          "size": "46",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Nellie",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 15122629165434,
+      "handle": "april-waterproof-pants-black",
+      "title": "April - Waterproof golf pants",
+      "body_html": "Stay dry and comfortable on the golf course with the April rain pants. Made from a recycled polyester GORE-TEX ePE fabric, these pants are 100% waterproof, windproof, and highly breathable. Part of the Galvin Green DRYVR™ collection, these two-layer GORE-TEX fabric is lined with soft polyester, providing extra warmth and comfort on colder days. With a PFAS-free water repellent treatment, these pants reflect a commitment to both performance and sustainability, making them a reliable choice for rainy, cold days on the golf course.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Black",
+        "gore-tex",
+        "GORE-TEX ePE with lining",
+        "Pants",
+        "Waterproofs",
+        "Women",
+        "WOMEN PANTS ANNA+AlLINA"
+      ],
+      "published_at": "2025-07-30T13:44:30+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_FRONT_A11000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_1_A01000559403.webp?v=1759138840",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_2_A01000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_3_A01000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_6_A01000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_5_A01000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_S_8_A01000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/APRIL_BACK_A11000559403.webp?v=1759138839",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_L_A01000549403.305A4326-2.webp?v=1759138838"
+      ],
+      "variants": [
+        {
+          "id": 55429908758906,
+          "sku": "A11000559403001",
+          "size": "XS - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908791674,
+          "sku": "A11000559403004",
+          "size": "S - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908824442,
+          "sku": "A11000559403007",
+          "size": "M - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908857210,
+          "sku": "A11000559403010",
+          "size": "L - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908889978,
+          "sku": "A11000559403013",
+          "size": "XL - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908922746,
+          "sku": "A11000559403016",
+          "size": "XXL - Short",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908955514,
+          "sku": "A11000559403002",
+          "size": "XS - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429908988282,
+          "sku": "A11000559403005",
+          "size": "S - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429909021050,
+          "sku": "A11000559403008",
+          "size": "M - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429909053818,
+          "sku": "A11000559403011",
+          "size": "L - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429909086586,
+          "sku": "A11000559403014",
+          "size": "XL - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429909119354,
+          "sku": "A11000559403017",
+          "size": "XXL - Regular",
+          "price": "249.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "April",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 9453294059868,
+      "handle": "angie-waterproof-golf-pants-navy",
+      "title": "Angie - Waterproof golf trousers",
+      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, 100% waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
+      "tags": [
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "Navy",
+        "Others",
+        "Pants",
+        "Rainy & Warm",
+        "stretch",
+        "Waterproofs",
+        "Women",
+        "WOMEN PANTS ANNA+AlLINA"
+      ],
+      "published_at": "2024-08-12T15:13:17+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_FRONT_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_1_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_2_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_3_A01000459405.webp?v=1759138001",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_4_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_5_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_6_A01000459405.webp?v=1759138001",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_7_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_S_8_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_BACK_A01000459405.webp?v=1759138002",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANGIE_L_A01000459405.3Z1A7481.webp?v=1759230235"
+      ],
+      "variants": [
+        {
+          "id": 48959758008668,
+          "sku": "A01000459405004",
+          "size": "S - Short",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 48959758074204,
+          "sku": "A01000459405007",
+          "size": "M - Short",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48959758106972,
+          "sku": "A01000459405010",
+          "size": "L - Short",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48959758139740,
+          "sku": "A01000459405002",
+          "size": "XS - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48959758172508,
+          "sku": "A01000459405005",
+          "size": "S - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 48959758205276,
+          "sku": "A01000459405008",
+          "size": "M - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 48959758270812,
+          "sku": "A01000459405011",
+          "size": "L - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48959758303580,
+          "sku": "A01000459405014",
+          "size": "XL - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48959758336348,
+          "sku": "A01000459405017",
+          "size": "XXL - Regular",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Angie",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 15124689387898,
+      "handle": "andrea-waterproof-golf-jacket-black",
+      "title": "Andrea - Waterproof Golf Jacket",
+      "body_html": "Andrea is a high-tech hooded golf jacket combining innovative design features with our lightweight waterproof material for ultimate performance on the golf course. The Andrea jacket includes shaped sleeves for ease of movement, a two-way front zipper, and front pockets. With adjustable cuffs and hood, and an elastic drawstring at the hem, this jacket offers a customisable fit to keep you comfortable and protected in any weather. This lightweight, breathable jacket keeps you dry and comfortable. Garment features include chest tabs which allow you to reduce the bulk at the front of the jacket during your swing, and repositioned side seams to reduce friction.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Fullzip",
+        "Jacket - Full Zip",
+        "PERTEX® Shield",
+        "Rainy & Warm",
+        "Waterproofs",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2025-07-30T13:43:35+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_FRONT_A01000509403.webp?v=1759138295",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_1_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_2_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_3_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_4_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_5_A01000509403.webp?v=1759138297",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_8_A01000509403.webp?v=1759138297",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_9_A01000509403.webp?v=1759138297",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_6_A01000509403.webp?v=1759138297",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_S_7_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_BACK_A01000509403.webp?v=1759138296",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ANDREA_L_A01000509403_9959B.webp?v=1759138296"
+      ],
+      "variants": [
+        {
+          "id": 55437102350714,
+          "sku": "A01000509403001",
+          "size": "XS",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437102383482,
+          "sku": "A01000509403002",
+          "size": "S",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437102416250,
+          "sku": "A01000509403003",
+          "size": "M",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437102449018,
+          "sku": "A01000509403004",
+          "size": "L",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437102481786,
+          "sku": "A01000509403005",
+          "size": "XL",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55437102514554,
+          "sku": "A01000509403006",
+          "size": "XXL",
+          "price": "299.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Andrea",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 8461565460828,
+      "handle": "levana-windproof-and-water-repellent-pants-navy",
+      "title": "Levana - Windproof and water repellent golf pants",
+      "body_html": "With built-in stretch, these Levana pants are comfortable and easy to play in, allowing you to move freely. The material is windproof and has a water repellent finish, without compromising on breathability. With front and back pockets, these pants are functional, and we love the streamlined cut. Rated with warming effect #2, these pants are ideal when it's too cold for regular golf pants and too dry for waterproof pants.",
+      "tags": [
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "interface-1",
+        "INTERFACE-1™  Warming effect #2",
+        "Navy",
+        "Pants",
+        "Windproof",
+        "Windy & Cold",
+        "Windy & Warm",
+        "Women",
+        "WOMEN BOTTOMS"
+      ],
+      "published_at": "2023-08-09T11:49:27+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_FRONT_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_1_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_2_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_3_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_4_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_5_B01000099405.webp?v=1759139842",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_S_6_B01000099405.webp?v=1759139841",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEVANA_BACK_B01000099405.webp?v=1759139842"
+      ],
+      "variants": [
+        {
+          "id": 46874132250972,
+          "sku": "B01000099405001",
+          "size": "34",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132283740,
+          "sku": "B01000099405002",
+          "size": "36",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132316508,
+          "sku": "B01000099405003",
+          "size": "38",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132349276,
+          "sku": "B01000099405004",
+          "size": "40",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132382044,
+          "sku": "B01000099405005",
+          "size": "42",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132414812,
+          "sku": "B01000099405006",
+          "size": "44",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 46874132447580,
+          "sku": "B01000099405007",
+          "size": "46",
+          "price": "139.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Levana",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 15124578697594,
+      "handle": "lydia-windproof-and-water-repellent-jacket-sand",
+      "title": "Lydia - Windproof and water repellent golf jacket",
+      "body_html": "The Lydia jacket is a high-tech INTERFACE-1™ windbreaker designed to keep you warm without restricting your swing. Made from 100% recycled polyester with a PET membrane and filled with Thermore® padding made from recycled materials, it delivers windproof, water-repellent protection and exceptional breathability. Featuring stretch fabric, an elastic drawstring hem, and repositioned side seams, Lydia moves with you for maximum freedom on and off the course. Practical details like front pockets, a two-way zipper, and elasticated cuffs in matching body fabric complete this bluesign® approved design for sustainable performance.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Beige",
+        "Fullzip",
+        "interface-1",
+        "INTERFACE-1™  Warming effect #3",
+        "Jacket - Full Zip",
+        "Windproof",
+        "Windy & Cold",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2025-07-30T13:43:11+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_FRONT_B01000478792.webp?v=1759141605",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_S_1_B010000478792.webp?v=1759141606",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_S_2_B010000478792.webp?v=1759141606",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_S_3_B010000478792.webp?v=1759141605",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_S_4_B010000478792.webp?v=1759141606",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_S_5_B010000478792.webp?v=1759141605",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_BACK_B01000478792.webp?v=1759141605",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LYDIA_L_3_B01000478792_jpg.webp?v=1759234154"
+      ],
+      "variants": [
+        {
+          "id": 55436378079610,
+          "sku": "B01000478792001",
+          "size": "XS",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55436378112378,
+          "sku": "B01000478792002",
+          "size": "S",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55436378177914,
+          "sku": "B01000478792003",
+          "size": "M",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55436378210682,
+          "sku": "B01000478792004",
+          "size": "L",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55436378276218,
+          "sku": "B01000478792005",
+          "size": "XL",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55436378308986,
+          "sku": "B01000478792006",
+          "size": "XXL",
+          "price": "239.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Lydia",
+      "colorName": "Sand",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 9466684506460,
+      "handle": "nellie-breathable-pants-navy",
+      "title": "Nellie - Breathable golf pants",
+      "body_html": "Introducing Nellie, a new high-waisted technical golf pant with a straight leg. Designed to be worn during activity, as an everyday pant, or even to wear to the office, Nellie is a stretch activewear pant disguised as tailored trousers. An alternative to our classic Nicole golf pant, this innovative new cut is made from a super soft and comfortable 4-way stretch fabric. Featuring convenient pockets and extreme breathability, we dare you to pair them with a dressy top on a night out — no one will believe you are wearing stretch pants.",
+      "tags": [
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "Navy",
+        "Pants",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Women",
+        "WOMEN BOTTOMS"
+      ],
+      "published_at": "2024-08-12T15:32:25+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_FRONT_D01000689405.webp?v=1759152211",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_1_D01000689405.webp?v=1759152211",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_2_D01000689405.webp?v=1759152211",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_3_D01000689405.webp?v=1759152212",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_4_D01000689405.webp?v=1759152212",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_5_D01000689405.webp?v=1759152212",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_S_6_D01000689405.webp?v=1759152211",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/NELLIE_BACK_D01000689405.webp?v=1759152211"
+      ],
+      "variants": [
+        {
+          "id": 48993491779932,
+          "sku": "D01000689405001",
+          "size": "34",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491812700,
+          "sku": "D01000689405002",
+          "size": "36",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491845468,
+          "sku": "D01000689405003",
+          "size": "38",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491878236,
+          "sku": "D01000689405004",
+          "size": "40",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491911004,
+          "sku": "D01000689405005",
+          "size": "42",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491943772,
+          "sku": "D01000689405006",
+          "size": "44",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 48993491976540,
+          "sku": "D01000689405007",
+          "size": "46",
+          "price": "129.00",
+          "compare_at_price": null,
+          "available": false
+        }
+      ],
+      "styleName": "Nellie",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 15122627789178,
+      "handle": "ava-waterproof-jacket-black",
+      "title": "Ava - Waterproof Golf Jacket",
+      "body_html": "The Ava women's golf rain jacket combines freedom of movement, comfort, and advanced weather protection. Part of Galvin Green’s award-winning DRYVR™ collection, this jacket is made from next-generation GORE-TEX ePE fabric that is 100% waterproof, windproof, and highly breathable. A lightweight mesh lining adds comfort and warmth, while the PFAS-free water repellent treatment performs in heavy rain. The contrasting full-length zipper gives this jacket a modern look.",
+      "tags": [
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Black",
+        "Fullzip",
+        "gore-tex",
+        "GORE-TEX ePE with lining",
+        "Jacket - Full Zip",
+        "Rainy & Cold",
+        "Rainy & Warm",
+        "Waterproofs",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2025-07-30T13:44:28+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_FRONT_A01000549403.webp?v=1759138492",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_1_A01000549403.webp?v=1759138493",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_2_A01000549403.webp?v=1759138492",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_3_A01000549403_9ac915e9-8de0-4802-9274-7001b87095e9.webp?v=1765296493",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_4_A01000549403_4b54c026-a980-4b6c-a489-a418e73034ed.webp?v=1765296492",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_5_A01000549403.webp?v=1759138492",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_S_6_A01000549403.webp?v=1759138493",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_BACK_A01000549403.webp?v=1759138491",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_L_A01000549403.305A4274.webp?v=1759138492",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/AVA_L_A01000549403.305A4326.webp?v=1759138493"
+      ],
+      "variants": [
+        {
+          "id": 55429906104698,
+          "sku": "A01000549403001",
+          "size": "XS",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429906137466,
+          "sku": "A01000549403002",
+          "size": "S",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429906170234,
+          "sku": "A01000549403003",
+          "size": "M",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429906203002,
+          "sku": "A01000549403004",
+          "size": "L",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429906235770,
+          "sku": "A01000549403005",
+          "size": "XL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 55429906268538,
+          "sku": "A01000549403006",
+          "size": "XXL",
+          "price": "279.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Ava",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 7399947731102,
+      "handle": "lewis-windproof-gloves-black",
+      "title": "Lewis - Windproof golf gloves",
+      "body_html": "Meant to be worn snuggly, the Lewis warm golf gloves combine leather and windproof INTERFACE-1™ fabric, and are available in six sizes to fit everyone.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "Accessories",
+        "Black",
+        "Gloves",
+        "interface-1",
+        "INTERFACE-1™  Warming effect #1",
+        "Rainy & Cold",
+        "Unisex",
+        "Windy & Cold"
+      ],
+      "published_at": "2023-02-13T13:52:21+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_B01000159403_b5e28426-d77a-4ec6-983c-62cb198d3684.webp?v=1759140021",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_B01000159403.webp?v=1759140021",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_S_1_B01000159403.webp?v=1759140022",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_S_2_B01000159403.webp?v=1759140022",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_S_3_B01000159403.webp?v=1759140022",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_S_4_B01000159403.webp?v=1759140022",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/LEWIS_S_5_B01000159403.webp?v=1759140022"
+      ],
+      "variants": [
+        {
+          "id": 42279031046302,
+          "sku": "B01000159403002",
+          "size": "Ladies S",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42279031079070,
+          "sku": "B01000159403003",
+          "size": "Ladies M",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 42279031111838,
+          "sku": "B01000159403004",
+          "size": "Ladies L",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 42279031144606,
+          "sku": "B01000159403008",
+          "size": "Men's M",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42279031177374,
+          "sku": "B01000159403009",
+          "size": "Men's L",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 42279031210142,
+          "sku": "B01000159403010",
+          "size": "Men's XL",
+          "price": "49.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Lewis",
+      "colorName": "Black",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 7399480885406,
+      "handle": "shade-sun-visor-white",
+      "title": "Shade - Sun visor",
+      "body_html": "The Shade golf sun visor has an adjustable circumference measuring 54 to 62 cm (21,3 to 24,4 inches.)",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Cap",
+        "Hats",
+        "Sunny & Warm",
+        "Unisex",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "White"
+      ],
+      "published_at": "2022-12-01T13:59:18+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_F01000059409.webp?v=1759156466",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_F01000059409_0cb6056d-88b1-49a9-a775-56795fd11860.webp?v=1759156466",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_S_1_F01000059409.webp?v=1759156468",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_S_2_F01000059409.webp?v=1759156467",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_S_3_F01000059409.webp?v=1759156468",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/SHADE_S_4_F01000059409.webp?v=1759156468"
+      ],
+      "variants": [
+        {
+          "id": 42277295882398,
+          "sku": "F01000059409001",
+          "size": "One Size",
+          "price": "25.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Shade",
+      "colorName": "White",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 7398909345950,
+      "handle": "elaine-thermal-base-layer-top-white",
+      "title": "Elaine - Thermal base layer golf top",
+      "body_html": "Specifically developed for golf in cold conditions, the Elaine base layer top is stretchy and soft, allowing freedom of movement and a full range of motion while you play. Made from a solution-dyed, bluesign® fabric, this light, airy material provides thermal protection while allowing full breathability. The Elaine women’s thermal base layer is the ultimate base layer to wear under your shirt during colder rounds, or during any winter activities.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Baselayer",
+        "Rainy & Cold",
+        "skintight thermal",
+        "SKINTIGHT™ thermal",
+        "Sunny & Cold",
+        "Tops",
+        "White",
+        "Windy & Cold",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2022-12-02T13:40:31+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_FRONT_E01000059409_93c31421-53ed-44bb-8d5e-8558962547c6.webp?v=1774872398",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_1_E01000059409.webp?v=1759155984",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_2_E01000059409.webp?v=1759155984",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_3_E01000059409.webp?v=1759155985",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_4_E01000059409.webp?v=1759155985",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_5_E01000059409.webp?v=1759155985",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_S_6_E01000059409.webp?v=1759155984",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELAINE_BACK_E01000059409_ab34561e-fa14-447a-a268-44605b0d4dce.webp?v=1774872399"
+      ],
+      "variants": [
+        {
+          "id": 42275199746206,
+          "sku": "E01000059409001",
+          "size": "XS",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275199778974,
+          "sku": "E01000059409002",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275199811742,
+          "sku": "E01000059409003",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275199844510,
+          "sku": "E01000059409004",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275199877278,
+          "sku": "E01000059409005",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Elaine",
+      "colorName": "White",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
+    },
+    {
+      "id": 7398884245662,
+      "handle": "ella-uv-protection-top-white",
+      "title": "Ella - UV protection golf top",
+      "body_html": "Made from an OEKO-TEX certified fabric, this women’s long sleeve UV base layer with UV protection of 50+ is produced sustainably and is long lasting. Avoid sunburn and don’t let the heat get in the way of your game. Ella can be worn on its own, or underneath a golf shirt for added sun protection.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "2026 Part 2",
+        "2027 Part 1",
+        "Baselayer",
+        "SKINTIGHT™ fresh",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "Tops",
+        "White",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2022-11-30T17:53:40+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_FRONT_E01000049409_f6f6f6.webp?v=1759155910",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_S_1_E01000049409.webp?v=1759155910",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_S_2_E01000049409.webp?v=1759155910",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_S_3_E01000049409.webp?v=1759155909",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_S_4_E01000049409.webp?v=1759155910",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_S_5_E01000049409.webp?v=1759155909",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ELLA_BACK_E01000049409_f6f6f6.webp?v=1759155909"
+      ],
+      "variants": [
+        {
+          "id": 42275084796062,
+          "sku": "E01000049409001",
+          "size": "XS",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275084828830,
+          "sku": "E01000049409002",
+          "size": "S",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275084861598,
+          "sku": "E01000049409003",
+          "size": "M",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275084894366,
+          "sku": "E01000049409004",
+          "size": "L",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275084927134,
+          "sku": "E01000049409005",
+          "size": "XL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 42275084959902,
+          "sku": "E01000049409006",
+          "size": "XXL",
+          "price": "69.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Ella",
+      "colorName": "White",
+      "collection": "gg-bestsellers-women",
+      "collections": [
+        "gg-bestsellers-women"
+      ]
     }
   ]
 }

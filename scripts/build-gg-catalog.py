@@ -591,6 +591,31 @@ def ts_optional(key: str, value, indent: int = 4) -> str:
     return ""
 
 
+def member_collections(p: dict) -> list[str]:
+    cols = p.get("collections")
+    if isinstance(cols, list) and cols:
+        return [str(c) for c in cols]
+    coll = p.get("collection")
+    return [str(coll)] if coll else ["gg-new-men"]
+
+
+def gender_of_collections(cols: list[str]) -> str:
+    if any("women" in c for c in cols):
+        return "women"
+    return "men"
+
+
+def primary_collection(cols: list[str]) -> str:
+    """Prefer New Arrivals leaf, else Bestsellers, else first."""
+    for c in cols:
+        if c.startswith("gg-new-"):
+            return c
+    for c in cols:
+        if "bestsellers" in c:
+            return c
+    return cols[0]
+
+
 def build() -> dict:
     raw = json.loads(RAW_PATH.read_text())
     products = raw.get("products") or []
@@ -602,26 +627,33 @@ def build() -> dict:
         # New Arrivals CTA sorts by registeredAt — GG must land after CW
         batch_start = cw_max + timedelta(minutes=1)
 
-    # Group by styleName (+ collection so men/women don't merge)
+    # Group by styleName + gender (New Arrivals + Bestsellers share one PDP)
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for p in products:
         style = (p.get("styleName") or p.get("title", "").split(" - ")[0]).strip()
-        coll = p.get("collection") or "gg-new-men"
-        groups[(style, coll)].append(p)
+        cols = member_collections(p)
+        gender = gender_of_collections(cols)
+        groups[(style, gender)].append(p)
 
     briq_products: list[dict] = []
     used_ids: set[str] = set()
 
-    for (style_name, collection), members in sorted(groups.items(), key=lambda x: x[0][0].lower()):
+    for (style_name, gender), members in sorted(groups.items(), key=lambda x: x[0][0].lower()):
         handles = [m["handle"] for m in members]
         # Derive/refresh color names within group
         for m in members:
             m["colorName"] = color_from_handle_group(handles, m["handle"], m.get("tags") or [])
 
+        all_cols = sorted(
+            {c for m in members for c in member_collections(m)},
+            key=lambda c: (0 if c.startswith("gg-new-") else 1, c),
+        )
+        collection = primary_collection(all_cols)
+
         style_slug = slugify(style_name)
         pid = f"gg-{style_slug}"
         if pid in used_ids:
-            pid = f"gg-{style_slug}-{collection.replace('gg-new-', '')}"
+            pid = f"gg-{style_slug}-{gender}"
         used_ids.add(pid)
 
         # Prefer first member with images / stock
@@ -779,6 +811,18 @@ def build() -> dict:
         if not primary_image:
             primary_image = gallery_all[0] if gallery_all else "/products/run-jacket.svg"
 
+        has_new = any(c.startswith("gg-new-") for c in all_cols)
+        has_best = any("bestsellers" in c for c in all_cols)
+        if has_new:
+            badge = "New"
+            edit_tier = "new"
+        elif has_best:
+            badge = "Best"
+            edit_tier = "bestseller"
+        else:
+            badge = "New"
+            edit_tier = "new"
+
         product = {
             "id": pid,
             "name": name_en,
@@ -788,17 +832,18 @@ def build() -> dict:
             "compareAtPrice": compare_at,
             "category": "sports",
             "subcategory": collection,
-            "tags": ["galvin-green", collection],
+            "ggCollections": all_cols,
+            "tags": ["galvin-green", *all_cols],
             "descriptionKo": desc_ko[:1200] if desc_ko else None,
             "image": primary_image,
             "images": gallery_all[:12] or None,
             "accent": accent,
-            "badge": "New",
+            "badge": badge,
             "gbpPrice": gbp_price,
             "sku": first_sku or None,
             "sourceUrl": f"https://www.galvingreen.com/en-gb/products/{primary['handle']}",
             "registeredAt": registered,
-            "editTier": "new",
+            "editTier": edit_tier,
             "storySections": story or None,
             "featuresKo": feats or None,
             "techSpecs": specs or None,
@@ -825,6 +870,11 @@ def build() -> dict:
             lines.append(f"    compareAtPrice: {p['compareAtPrice']},")
         lines.append(f"    category: {ts_str(p['category'])},")
         lines.append(f"    subcategory: {ts_str(p['subcategory'])},")
+        if p.get("ggCollections"):
+            gg_inner = ", ".join(ts_str(c) for c in p["ggCollections"])
+            lines.append(
+                f"    ggCollections: [{gg_inner}] as Product[\"ggCollections\"],"
+            )
         tags_inner = ", ".join(ts_str(t) for t in p["tags"])
         lines.append(f"    tags: [{tags_inner}],")
         if p.get("descriptionKo"):
@@ -899,11 +949,17 @@ def build() -> dict:
     OUT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
     variant_total = sum(len(p["variants"]) for p in briq_products)
+    def in_coll(p: dict, coll: str) -> bool:
+        cols = p.get("collections") or [p.get("collection")]
+        return coll in cols
+
     return {
         "grouped": len(briq_products),
         "variants": variant_total,
-        "men_raw": sum(1 for p in products if p.get("collection") == "gg-new-men"),
-        "women_raw": sum(1 for p in products if p.get("collection") == "gg-new-women"),
+        "men_raw": sum(1 for p in products if in_coll(p, "gg-new-men")),
+        "women_raw": sum(1 for p in products if in_coll(p, "gg-new-women")),
+        "men_best": sum(1 for p in products if in_coll(p, "gg-bestsellers-men")),
+        "women_best": sum(1 for p in products if in_coll(p, "gg-bestsellers-women")),
     }
 
 
@@ -912,5 +968,6 @@ if __name__ == "__main__":
     print(
         f"Built {OUT_PATH.relative_to(ROOT)} — "
         f"{stats['grouped']} products, {stats['variants']} variants "
-        f"(raw men={stats['men_raw']} women={stats['women_raw']})"
+        f"(raw new men/women={stats['men_raw']}/{stats['women_raw']} "
+        f"best={stats['men_best']}/{stats['women_best']})"
     )

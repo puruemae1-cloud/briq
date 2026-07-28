@@ -38,8 +38,11 @@ export type SubcategoryId =
   | "cw-moonphase"
   | "gg-new-men"
   | "gg-new-women"
+  | "gg-bestsellers-men"
+  | "gg-bestsellers-women"
   | "galvin-green"
   | "gg-new-arrivals"
+  | "gg-bestsellers"
   | "luxury-shoes"
   | "training-shoes"
   | "luxury-womens"
@@ -65,12 +68,20 @@ export const CW_COLLECTION_IDS: SubcategoryId[] = [
   "cw-moonphase",
 ];
 
-export const GG_COLLECTION_IDS: SubcategoryId[] = [
+export const GG_NEW_ARRIVAL_IDS: SubcategoryId[] = [
   "gg-new-men",
   "gg-new-women",
 ];
 
-export const GG_NEW_ARRIVAL_IDS: SubcategoryId[] = [...GG_COLLECTION_IDS];
+export const GG_BESTSELLER_IDS: SubcategoryId[] = [
+  "gg-bestsellers-men",
+  "gg-bestsellers-women",
+];
+
+export const GG_COLLECTION_IDS: SubcategoryId[] = [
+  ...GG_NEW_ARRIVAL_IDS,
+  ...GG_BESTSELLER_IDS,
+];
 
 export type NavChild = {
   id: SubcategoryId;
@@ -93,9 +104,20 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
-  golf: ["golf", "galvin-green", "gg-new-arrivals", ...GG_COLLECTION_IDS],
-  "galvin-green": ["gg-new-arrivals", ...GG_COLLECTION_IDS],
+  golf: [
+    "golf",
+    "galvin-green",
+    "gg-new-arrivals",
+    "gg-bestsellers",
+    ...GG_COLLECTION_IDS,
+  ],
+  "galvin-green": [
+    "gg-new-arrivals",
+    "gg-bestsellers",
+    ...GG_COLLECTION_IDS,
+  ],
   "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
+  "gg-bestsellers": [...GG_BESTSELLER_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -291,6 +313,23 @@ export const navCategories: NavCategory[] = [
                     id: "gg-new-women",
                     labelKo: "Women",
                     href: "/shop?category=sports&sub=gg-new-women",
+                  },
+                ],
+              },
+              {
+                id: "gg-bestsellers",
+                labelKo: "Bestsellers",
+                href: "/shop?category=sports&sub=gg-bestsellers",
+                children: [
+                  {
+                    id: "gg-bestsellers-men",
+                    labelKo: "Men",
+                    href: "/shop?category=sports&sub=gg-bestsellers-men",
+                  },
+                  {
+                    id: "gg-bestsellers-women",
+                    labelKo: "Women",
+                    href: "/shop?category=sports&sub=gg-bestsellers-women",
                   },
                 ],
               },
