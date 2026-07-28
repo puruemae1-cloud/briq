@@ -189,8 +189,11 @@ def slugify(s: str) -> str:
 
 
 def gbp_to_krw(gbp: float) -> int:
-    """Galvin Green: GBP × 2100 × 1.06 + 20,000 → round to 만원."""
-    return int(round((gbp * 2100 * 1.06 + 20_000) / 10_000) * 10_000)
+    """Galvin Green: GBP × 2100 × 1.06 + ₩20,000 (+ ₩15,000 if ≤ £100) → round to 천원."""
+    base = gbp * 2100 * 1.06 + 20_000
+    if gbp <= 100:
+        base += 15_000
+    return int(round(base / 1_000) * 1_000)
 
 
 def title_case_color(slug: str) -> str:
