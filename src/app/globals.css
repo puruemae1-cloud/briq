@@ -2845,6 +2845,18 @@ body:has(.pdp-dock) .back-to-top {
   color: var(--ink);
 }
 
+/* Mobile only: one blank line between cancel / return policy sentences */
+.purchase-notice__mobile-gap {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  .purchase-notice__mobile-gap {
+    display: block;
+    height: 0.75em;
+  }
+}
+
 /* —— Product reviews & Q&A —— */
 .product-engage {
   margin: 0.25rem 1.25rem 5.5rem;
