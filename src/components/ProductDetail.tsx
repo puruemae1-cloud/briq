@@ -193,8 +193,11 @@ export function ProductDetail({
     return [primaryImage];
   })();
   const soldOut = !selectedAvailable;
-  const salePct = productSalePercent(product);
-  const onSale = Boolean(salePct && product.compareAtPrice);
+  const salePct = productSalePercent(product, selected);
+  const displayCompareAt = selected?.compareAtPrice ?? (
+    selected ? undefined : product.compareAtPrice
+  );
+  const onSale = Boolean(salePct && displayCompareAt);
 
   const optionLabel = selected
     ? hasSizes
@@ -299,13 +302,13 @@ export function ProductDetail({
           >
             {soldOut ? (
               "Sold Out"
-            ) : onSale && product.compareAtPrice ? (
+            ) : onSale && displayCompareAt ? (
               <>
                 <span className="product-detail__price-now">
                   {formatKrw(unitPrice)}
                 </span>
                 <span className="product-detail__price-was">
-                  {formatKrw(product.compareAtPrice)}
+                  {formatKrw(displayCompareAt)}
                 </span>
                 <span className="product-detail__price-pct">{salePct}% OFF</span>
               </>

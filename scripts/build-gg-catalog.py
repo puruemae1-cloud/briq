@@ -956,7 +956,6 @@ def build() -> dict:
         gallery_all: list[str] = []
         prices_krw: list[int] = []
         prices_gbp: list[float] = []
-        compare_krw: list[int] = []
         first_sku = ""
         primary_image = ""
 
@@ -983,18 +982,19 @@ def build() -> dict:
                 if available or True:  # include all; price from in-stock preferred later
                     prices_krw.append(krw)
                     prices_gbp.append(gbp)
+                sku = v.get("sku") or ""
+                if not first_sku and sku:
+                    first_sku = sku
+                vid = slugify(f"gg-{m['handle']}-{size}")
+                compare_at_v = None
                 cap = v.get("compare_at_price")
                 if cap:
                     try:
                         cap_f = float(cap)
                         if cap_f > gbp:
-                            compare_krw.append(gbp_to_krw(cap_f))
+                            compare_at_v = gbp_to_krw(cap_f)
                     except (TypeError, ValueError):
                         pass
-                sku = v.get("sku") or ""
-                if not first_sku and sku:
-                    first_sku = sku
-                vid = slugify(f"gg-{m['handle']}-{size}")
                 flat_variants.append(
                     {
                         "id": vid,
@@ -1003,6 +1003,7 @@ def build() -> dict:
                         "sku": sku,
                         "gbpPrice": gbp,
                         "price": krw,
+                        "compareAtPrice": compare_at_v,
                         "image": imgs[0] if imgs else (primary_image or "/products/run-jacket.svg"),
                         "images": imgs or None,
                         "sourceUrl": source,
@@ -1026,10 +1027,16 @@ def build() -> dict:
             gbp_price = min(v["gbpPrice"] for v in flat_variants)
 
         compare_at = None
-        if compare_krw:
-            c = min(compare_krw)
-            if c > price:
-                compare_at = c
+        # Product-level sale badge only when the cheapest (display) price is itself on sale
+        for v in flat_variants:
+            if v["price"] != price:
+                continue
+            if not v.get("inStock") and in_stock_prices:
+                continue
+            cap = v.get("compareAtPrice")
+            if cap and cap > price:
+                compare_at = cap
+                break
 
         story = []
         for i, body_ko in enumerate(story_bodies[:4] or [desc_ko]):
@@ -1180,6 +1187,8 @@ def build() -> dict:
             lines.append(f"        sku: {ts_str(v['sku'])},")
             lines.append(f"        gbpPrice: {v['gbpPrice']},")
             lines.append(f"        price: {v['price']},")
+            if v.get("compareAtPrice"):
+                lines.append(f"        compareAtPrice: {v['compareAtPrice']},")
             lines.append(f"        image: {ts_str(v['image'])},")
             if v.get("images"):
                 inner = ", ".join(ts_str(x) for x in v["images"])

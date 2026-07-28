@@ -22,6 +22,8 @@ export type ProductVariant = {
   sku: string;
   gbpPrice: number;
   price: number;
+  /** Pre-sale list price (KRW) for this colour/size when on sale. */
+  compareAtPrice?: number;
   /**
    * Catalog photo path under `/public/products/`.
    * Use the shared 4:5 framing standard — see `src/lib/product-image.ts`.
@@ -122,11 +124,20 @@ export function gbpToBriqAddonKrw(gbp: number) {
   return Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
 }
 
-/** Sale discount percent from compareAt → price, or null if not on sale. */
-export function productSalePercent(product: Product) {
-  const was = product.compareAtPrice;
-  if (!was || was <= product.price) return null;
-  return Math.max(1, Math.round((1 - product.price / was) * 100));
+/** Sale discount percent from compareAt → price, or null if not on sale.
+ * When a variant is selected, only that variant's compareAtPrice counts
+ * (so non-sale colours don't inherit another colourway's discount).
+ */
+export function productSalePercent(
+  product: Product,
+  variant?: ProductVariant | null,
+) {
+  const price = variant?.price ?? product.price;
+  const was = variant
+    ? variant.compareAtPrice
+    : product.compareAtPrice;
+  if (!was || was <= price) return null;
+  return Math.max(1, Math.round((1 - price / was) * 100));
 }
 
 /** True if the product (or any of its variants) can be purchased. */
