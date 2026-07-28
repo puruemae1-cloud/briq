@@ -1,6 +1,7 @@
 import type { CategoryId, SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
 import { cwProducts } from "@/data/cw/cw-products";
+import { ggCatalogProducts } from "@/data/gg/gg-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -30,6 +31,11 @@ export type ProductVariant = {
   images?: string[];
   sourceUrl: string;
   inStock: boolean;
+  /** Colour group key when a product also has size options (e.g. apparel). */
+  colorKey?: string;
+  colorNameKo?: string;
+  /** Size code when variants are colour × size (e.g. S / M / L). */
+  size?: string;
 };
 
 export type ProductTechSpec = {
@@ -626,6 +632,7 @@ export const products: Product[] = [
   },
   // Newest hand-authored products last in source order; explicit registeredAt still wins.
   ...cwProducts,
+  ...ggCatalogProducts,
 ];
 
 /** Fill missing registeredAt so later catalogue rows rank as newer. */

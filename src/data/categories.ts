@@ -36,6 +36,8 @@ export type SubcategoryId =
   | "cw-twelve"
   | "cw-trident"
   | "cw-moonphase"
+  | "gg-new-men"
+  | "gg-new-women"
   | "luxury-shoes"
   | "training-shoes"
   | "luxury-womens"
@@ -61,6 +63,11 @@ export const CW_COLLECTION_IDS: SubcategoryId[] = [
   "cw-moonphase",
 ];
 
+export const GG_COLLECTION_IDS: SubcategoryId[] = [
+  "gg-new-men",
+  "gg-new-women",
+];
+
 export type NavChild = {
   id: SubcategoryId;
   labelKo: string;
@@ -80,6 +87,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
+  golf: ["golf", ...GG_COLLECTION_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -250,7 +258,23 @@ export const navCategories: NavCategory[] = [
     labelKo: "스포츠",
     href: "/shop?category=sports",
     children: [
-      { id: "golf", labelKo: "골프", href: "/shop?category=sports&sub=golf" },
+      {
+        id: "golf",
+        labelKo: "골프",
+        href: "/shop?category=sports&sub=golf",
+        children: [
+          {
+            id: "gg-new-men",
+            labelKo: "Galvin Green · Men",
+            href: "/shop?category=sports&sub=gg-new-men",
+          },
+          {
+            id: "gg-new-women",
+            labelKo: "Galvin Green · Women",
+            href: "/shop?category=sports&sub=gg-new-women",
+          },
+        ],
+      },
       { id: "running", labelKo: "러닝", href: "/shop?category=sports&sub=running" },
       { id: "swimming", labelKo: "수영", href: "/shop?category=sports&sub=swimming" },
       { id: "cycling", labelKo: "자전거", href: "/shop?category=sports&sub=cycling" },

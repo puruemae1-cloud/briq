@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { addToCart, buyNow } from "@/app/cart/actions";
 import { BraceletResizeControls } from "@/components/BraceletResizeControls";
 import { ProductEngagement } from "@/components/ProductEngagement";
@@ -20,38 +20,89 @@ import {
 import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
 
+type ColorGroup = {
+  key: string;
+  nameKo: string;
+  image: string;
+  variants: ProductVariant[];
+  inStock: boolean;
+};
+
 function ColorSwatches({
   productId,
-  variants,
-  selectedId,
+  colors,
+  selectedKey,
+  size,
   idPrefix,
 }: {
   productId: string;
-  variants: ProductVariant[];
-  selectedId?: string;
+  colors: ColorGroup[];
+  selectedKey?: string;
+  size?: string;
   idPrefix: string;
 }) {
   return (
     <div className="variant-grid">
-      {variants.map((v) => {
-        const active = v.id === selectedId;
-        const soldOut = !v.inStock;
+      {colors.map((c) => {
+        const active = c.key === selectedKey;
+        const soldOut = !c.inStock;
+        const href = size
+          ? `/product/${productId}?color=${encodeURIComponent(c.key)}&size=${encodeURIComponent(size)}`
+          : `/product/${productId}?color=${encodeURIComponent(c.key)}`;
         return (
           <Link
-            key={`${idPrefix}-${v.id}`}
-            href={`/product/${productId}?color=${v.id}`}
+            key={`${idPrefix}-${c.key}`}
+            href={href}
             scroll={false}
             replace
             aria-current={active ? "true" : undefined}
             aria-disabled={soldOut ? true : undefined}
             className={`variant-swatch${active ? " is-active" : ""}${soldOut ? " is-sold-out" : ""}`}
-            title={soldOut ? `${v.nameKo} · Sold Out` : v.nameKo}
+            title={soldOut ? `${c.nameKo} · Sold Out` : c.nameKo}
           >
-            <ProductImage src={v.image} alt="" tone="swatch" />
-            <span>{v.nameKo}</span>
+            <ProductImage src={c.image} alt="" tone="swatch" />
+            <span>{c.nameKo}</span>
             {soldOut ? (
               <span className="variant-swatch__sold">Sold Out</span>
             ) : null}
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+function SizePicker({
+  productId,
+  colorKey,
+  sizes,
+  selectedSize,
+}: {
+  productId: string;
+  colorKey: string;
+  sizes: ProductVariant[];
+  selectedSize?: string;
+}) {
+  return (
+    <div className="size-grid" role="list">
+      {sizes.map((v) => {
+        const size = v.size || v.name;
+        const active = size === selectedSize;
+        const soldOut = !v.inStock;
+        return (
+          <Link
+            key={v.id}
+            href={`/product/${productId}?color=${encodeURIComponent(colorKey)}&size=${encodeURIComponent(size)}`}
+            scroll={false}
+            replace
+            role="listitem"
+            aria-current={active ? "true" : undefined}
+            aria-disabled={soldOut ? true : undefined}
+            className={`size-chip${active ? " is-active" : ""}${soldOut ? " is-sold-out" : ""}`}
+            title={soldOut ? `${size} · Sold Out` : size}
+          >
+            {size}
+            {soldOut ? <span className="size-chip__sold">품절</span> : null}
           </Link>
         );
       })}
@@ -66,19 +117,62 @@ function ColorSwatches({
 export function ProductDetail({
   product,
   colorId,
+  sizeId,
 }: {
   product: Product;
   colorId?: string;
+  sizeId?: string;
 }) {
   const allVariants = product.variants ?? [];
-  const inStockVariants = allVariants.filter((v) => v.inStock);
+  const hasSizes = allVariants.some((v) => Boolean(v.size));
   const productAvailable = isProductInStock(product);
 
+  const colorGroups: ColorGroup[] = useMemo(() => {
+    if (!hasSizes) {
+      return allVariants.map((v) => ({
+        key: v.id,
+        nameKo: v.nameKo,
+        image: v.image,
+        variants: [v],
+        inStock: v.inStock,
+      }));
+    }
+    const map = new Map<string, ColorGroup>();
+    for (const v of allVariants) {
+      const key = v.colorKey || v.id;
+      const existing = map.get(key);
+      if (!existing) {
+        map.set(key, {
+          key,
+          nameKo: v.colorNameKo || v.nameKo,
+          image: v.image,
+          variants: [v],
+          inStock: v.inStock,
+        });
+      } else {
+        existing.variants.push(v);
+        if (v.inStock) existing.inStock = true;
+        if (!existing.image && v.image) existing.image = v.image;
+      }
+    }
+    return Array.from(map.values());
+  }, [allVariants, hasSizes]);
+
+  const selectedColor =
+    colorGroups.find((c) => c.key === colorId) ??
+    colorGroups.find((c) => c.inStock) ??
+    colorGroups[0];
+
+  const sizeOptions = selectedColor?.variants ?? [];
   const selected =
-    allVariants.find((v) => v.id === colorId) ??
-    inStockVariants[0] ??
-    allVariants[0] ??
-    undefined;
+    (hasSizes
+      ? sizeOptions.find((v) => v.size === sizeId && v.inStock) ||
+        sizeOptions.find((v) => v.size === sizeId) ||
+        sizeOptions.find((v) => v.inStock) ||
+        sizeOptions[0]
+      : allVariants.find((v) => v.id === colorId) ||
+        allVariants.find((v) => v.inStock) ||
+        allVariants[0]) ?? undefined;
 
   const selectedAvailable = selected
     ? isVariantInStock(product, selected.id)
@@ -102,6 +196,19 @@ export function ProductDetail({
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && product.compareAtPrice);
 
+  const optionLabel = selected
+    ? hasSizes
+      ? `${selected.colorNameKo || selectedColor?.nameKo || ""} · ${selected.size || ""}`.trim()
+      : selected.nameKo
+    : "";
+
+  const variantLabel =
+    product.brand === "Christopher Ward"
+      ? "스트랩"
+      : hasSizes
+        ? "컬러"
+        : "컬러";
+
   const hiddenFields = (
     <>
       <input type="hidden" name="productId" value={product.id} />
@@ -123,14 +230,52 @@ export function ProductDetail({
     />
   ) : null;
 
+  const colorBlock =
+    colorGroups.length > 0 ? (
+      <div className="variant-block">
+        <p className="variant-block__label">
+          {variantLabel} ·{" "}
+          <strong>{selectedColor?.nameKo ?? selected?.nameKo}</strong>
+          {selectedColor && !selectedColor.inStock ? (
+            <span className="product-detail__stock"> · Sold Out</span>
+          ) : null}
+        </p>
+        <ColorSwatches
+          productId={product.id}
+          colors={colorGroups}
+          selectedKey={selectedColor?.key}
+          size={hasSizes ? selected?.size : undefined}
+          idPrefix="main"
+        />
+      </div>
+    ) : null;
+
+  const sizeBlock =
+    hasSizes && sizeOptions.length > 0 && selectedColor ? (
+      <div className="variant-block">
+        <p className="variant-block__label">
+          사이즈 · <strong>{selected?.size ?? "선택"}</strong>
+          {selected && !selected.inStock ? (
+            <span className="product-detail__stock"> · Sold Out</span>
+          ) : null}
+        </p>
+        <SizePicker
+          productId={product.id}
+          colorKey={selectedColor.key}
+          sizes={sizeOptions}
+          selectedSize={selected?.size}
+        />
+      </div>
+    ) : null;
+
   return (
     <div className={`product-page${soldOut ? " product-page--sold-out" : ""}`}>
       <article className="product-detail">
         <ProductGallery
           images={galleryImages}
-          alt={`${product.nameKo} ${selected?.nameKo ?? ""}`}
+          alt={`${product.nameKo} ${optionLabel}`}
           soldOut={soldOut}
-          badge={selected?.nameKo}
+          badge={optionLabel || selected?.nameKo}
           resetKey={selected?.id ?? product.id}
         />
 
@@ -139,7 +284,7 @@ export function ProductDetail({
           <h1>{product.nameKo}</h1>
           {selected ? (
             <p className="product-detail__color-name">
-              {selected.nameKo}
+              {optionLabel}
               {soldOut ? (
                 <span className="product-detail__stock"> · Sold Out</span>
               ) : null}
@@ -149,7 +294,9 @@ export function ProductDetail({
               <span className="product-detail__stock">Sold Out</span>
             </p>
           ) : null}
-          <p className={`product-detail__price${onSale ? " product-detail__price--sale" : ""}`}>
+          <p
+            className={`product-detail__price${onSale ? " product-detail__price--sale" : ""}`}
+          >
             {soldOut ? (
               "Sold Out"
             ) : onSale && product.compareAtPrice ? (
@@ -177,23 +324,8 @@ export function ProductDetail({
             <p className="product-detail__desc">{product.descriptionKo}</p>
           ) : null}
 
-          {allVariants.length > 0 ? (
-            <div className="variant-block">
-              <p className="variant-block__label">
-                {product.brand === "Christopher Ward" ? "스트랩 · " : "컬러 · "}
-                <strong>{selected?.nameKo}</strong>
-                {soldOut ? (
-                  <span className="product-detail__stock"> · Sold Out</span>
-                ) : null}
-              </p>
-              <ColorSwatches
-                productId={product.id}
-                variants={allVariants}
-                selectedId={selected?.id}
-                idPrefix="main"
-              />
-            </div>
-          ) : null}
+          {colorBlock}
+          {sizeBlock}
 
           {!soldOut ? braceletBlock : null}
 
@@ -201,8 +333,8 @@ export function ProductDetail({
             <div className="product-detail__sold-panel" role="status">
               <p className="product-detail__sold-mark">Sold Out</p>
               <p className="product-detail__sold-copy">
-                현재 선택하신 옵션은 품절입니다. 다른 컬러를 확인해 주시거나,
-                재입고 시 다시 안내드릴 예정입니다.
+                현재 선택하신 옵션은 품절입니다. 다른 컬러·사이즈를 확인해
+                주시거나, 재입고 시 다시 안내드릴 예정입니다.
               </p>
             </div>
           ) : (
@@ -253,20 +385,29 @@ export function ProductDetail({
               {selected ? (
                 <>
                   {" "}
-                  · <strong>{selected.nameKo}</strong>
+                  · <strong>{optionLabel}</strong>
                 </>
               ) : null}
             </p>
-            {allVariants.length > 0 ? (
+            {colorGroups.length > 0 ? (
               <ColorSwatches
                 productId={product.id}
-                variants={allVariants}
-                selectedId={selected?.id}
+                colors={colorGroups}
+                selectedKey={selectedColor?.key}
+                size={hasSizes ? selected?.size : undefined}
                 idPrefix="dock"
               />
             ) : product.braceletResize ? null : (
               <p className="pdp-dock__empty">선택 가능한 옵션이 없습니다.</p>
             )}
+            {hasSizes && sizeOptions.length > 0 && selectedColor ? (
+              <SizePicker
+                productId={product.id}
+                colorKey={selectedColor.key}
+                sizes={sizeOptions}
+                selectedSize={selected?.size}
+              />
+            ) : null}
             {!soldOut && product.braceletResize ? (
               <BraceletResizeControls
                 config={product.braceletResize}
@@ -292,7 +433,7 @@ export function ProductDetail({
           <div className="pdp-dock__summary">
             <p className="pdp-dock__name">{product.nameKo}</p>
             <p className="pdp-dock__meta">
-              {selected ? <span>{selected.nameKo}</span> : null}
+              {selected ? <span>{optionLabel}</span> : null}
               {product.braceletResize && braceletCm !== "no" ? (
                 <span>{braceletCm}cm</span>
               ) : null}
