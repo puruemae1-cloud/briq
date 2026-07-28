@@ -591,8 +591,38 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     sub_en = " · ".join(sub_bits)
     name_ko = to_ko(name_en) + (f" · {to_ko(sub_en)}" if sub_en else "")
 
-    cols = en.get("collections") or members[0].get("collections") or []
-    primary = en.get("primaryCollection") or members[0].get("primaryCollection") or (cols[0] if cols else "cw-atelier")
+    # Category membership comes from PLP scrape (raw), not enrich — enrich often
+    # mis-tags Nearly New as atelier/bel-canto and hides them from Clearance.
+    cols: list[str] = []
+    for m in members:
+        for c in m.get("collections") or []:
+            if c and c not in cols:
+                cols.append(c)
+    if not cols:
+        cols = list(en.get("collections") or [])
+    _COL_PRIORITY = [
+        "cw-clearance",
+        "cw-new-releases",
+        "cw-bestsellers",
+        "cw-hidden-gems",
+        "cw-bel-canto",
+        "cw-twelve",
+        "cw-trident",
+        "cw-sealander",
+        "cw-moonphase",
+        "cw-military",
+        "cw-dive",
+        "cw-integrated-sports",
+        "cw-adventure-field",
+        "cw-atelier",
+    ]
+    primary = next((c for c in _COL_PRIORITY if c in cols), None)
+    if not primary:
+        primary = (
+            members[0].get("primaryCollection")
+            or en.get("primaryCollection")
+            or (cols[0] if cols else "cw-atelier")
+        )
 
     price = round_krw(gbp)
     compare = round_krw(list_gbp) if list_gbp and list_gbp > gbp else None
