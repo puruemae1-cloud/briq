@@ -311,11 +311,6 @@ img {
 .category-row--nested {
   margin-top: -0.25rem;
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  grid-auto-flow: unset;
-  overflow-x: visible;
-  gap: 0.5rem 0.55rem;
 }
 
 .chip--nested {
@@ -516,11 +511,6 @@ img {
 
 .category-row--sub {
   margin-top: -0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  grid-auto-flow: unset;
-  overflow-x: visible;
-  gap: 0.5rem 0.55rem;
 }
 
 .chip--sub {
@@ -1051,7 +1041,8 @@ body:has(.nav-drawer-toggle:checked) {
 @media (max-width: 899px) {
   /* Accessories (and all lookbook chips): wrap — no horizontal page fight */
   .lookbook__rail .category-row,
-  .lookbook__rail .category-row--sub {
+  .lookbook__rail .category-row--sub,
+  .lookbook__rail .category-row--nested {
     display: flex;
     flex-wrap: wrap;
     overflow: visible;
@@ -1068,6 +1059,16 @@ body:has(.nav-drawer-toggle:checked) {
   .lookbook__rail .chip--sub {
     font-size: 0.78rem;
     padding: 0.42rem 0.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .lookbook__rail .category-row--sub,
+  .lookbook__rail .category-row--nested {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    grid-auto-flow: unset;
   }
 }
 
@@ -1968,6 +1969,37 @@ body:has(.nav-drawer-toggle:checked) {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
 }
+
+/* Must follow .category-row — otherwise grid-auto-flow:column wins and clips CW nested chips */
+.category-row.category-row--sub,
+.category-row.category-row--nested {
+  display: flex;
+  flex-wrap: wrap;
+  grid-auto-flow: unset;
+  grid-auto-columns: unset;
+  overflow-x: visible;
+  gap: 0.5rem 0.55rem;
+}
+
+@media (min-width: 900px) {
+  /* CW nested row: keep ~2 lines so Military / Bel Canto / Twelve stay visible */
+  .category-row.category-row--nested {
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    grid-auto-flow: row;
+    justify-content: start;
+    column-gap: 0.55rem;
+    row-gap: 0.55rem;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 1200px) {
+  .category-row.category-row--nested {
+    grid-template-columns: repeat(7, max-content);
+  }
+}
+
 
 .shop-browse__layout {
   display: grid;
