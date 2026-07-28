@@ -6,7 +6,7 @@ import html as H
 import json
 import re
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -180,6 +180,65 @@ TECH_TAG_HINTS = (
     "WATERPROOF",
     "WINDPROOF",
 )
+
+
+def load_cw_max_registered() -> datetime | None:
+    """Newest Christopher Ward Briq registration — GG should sort after this."""
+    cw_path = ROOT / "src" / "data" / "cw" / "cw-catalog.ts"
+    if not cw_path.exists():
+        return None
+    times: list[datetime] = []
+    for m in re.finditer(r'registeredAt:\s*"([^"]+)"', cw_path.read_text()):
+        try:
+            ts = datetime.fromisoformat(m.group(1).replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if ts.tzinfo is None:
+            ts = ts.replace(tzinfo=timezone.utc)
+        times.append(ts)
+    return max(times) if times else None
+
+
+def load_existing_registered() -> dict[str, str]:
+    """Keep stable Briq registration times across rebuilds.
+
+    Ignore Shopify published_at leftovers and any stamp still older than CW.
+    """
+    if not OUT_PATH.exists():
+        return {}
+    text = OUT_PATH.read_text()
+    out: dict[str, str] = {}
+    cw_max = load_cw_max_registered()
+    floor = cw_max + timedelta(seconds=1) if cw_max else datetime(
+        2026, 7, 28, 21, 0, 0, tzinfo=timezone.utc
+    )
+    for m in re.finditer(
+        r'id:\s*"(gg-[^"]+)"[\s\S]*?registeredAt:\s*"([^"]+)"',
+        text,
+    ):
+        raw = m.group(2)
+        try:
+            ts = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if ts.tzinfo is None:
+            ts = ts.replace(tzinfo=timezone.utc)
+        if ts >= floor:
+            out[m.group(1)] = raw
+    return out
+
+
+def briq_registered_at(
+    pid: str,
+    existing: dict[str, str],
+    batch_start: datetime,
+    index: int,
+) -> str:
+    if pid in existing:
+        return existing[pid]
+    # New to Briq catalogue — stamp now (not Shopify published_at)
+    ts = batch_start + timedelta(seconds=index)
+    return ts.strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
 
 def slugify(s: str) -> str:
@@ -536,6 +595,12 @@ def build() -> dict:
     raw = json.loads(RAW_PATH.read_text())
     products = raw.get("products") or []
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    existing_reg = load_existing_registered()
+    cw_max = load_cw_max_registered()
+    batch_start = datetime.now(timezone.utc)
+    if cw_max and batch_start <= cw_max:
+        # New Arrivals CTA sorts by registeredAt — GG must land after CW
+        batch_start = cw_max + timedelta(minutes=1)
 
     # Group by styleName (+ collection so men/women don't merge)
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
@@ -706,12 +771,9 @@ def build() -> dict:
             if not s.get("image"):
                 s.pop("image", None)
 
-        registered = primary.get("published_at") or raw.get("scrapedAt") or now_iso
-        # normalize to ISO-ish
-        if isinstance(registered, str) and registered.endswith("+02:00"):
-            registered = registered  # keep
-        elif not registered:
-            registered = now_iso
+        registered = briq_registered_at(
+            pid, existing_reg, batch_start, len(briq_products)
+        )
 
         accent = ACCENTS[len(briq_products) % len(ACCENTS)]
         if not primary_image:
