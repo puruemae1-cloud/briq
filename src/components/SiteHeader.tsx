@@ -9,7 +9,12 @@ function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number
     <>
       {items.map((child) => (
         <div key={child.id} className={depth > 0 ? "nav-dropdown__nest" : undefined}>
-          <Link href={child.href}>{child.labelKo}</Link>
+          <Link
+            href={child.href}
+            className={child.id === "cw-clearance" ? "nav-link--clearance" : undefined}
+          >
+            {child.labelKo}
+          </Link>
           {child.children?.length ? (
             <div className="nav-dropdown__group">
               <DropdownLinks items={child.children} depth={depth + 1} />
@@ -56,9 +61,12 @@ function MobileBranches({
           <a
             key={child.id}
             href={child.href}
-            className={
-              depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2"
-            }
+            className={[
+              depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2",
+              child.id === "cw-clearance" ? "nav-link--clearance" : "",
+            ]
+              .filter(Boolean)
+              .join(" ")}
           >
             {child.labelKo}
           </a>

@@ -321,6 +321,60 @@ img {
   max-width: 100%;
 }
 
+/* Clearance — oxblood + champagne gold (PC + mobile app) */
+.chip--clearance,
+a.chip[href*="sub=cw-clearance"] {
+  opacity: 1;
+  border-color: rgba(183, 161, 106, 0.55);
+  background:
+    linear-gradient(145deg, #5a222c 0%, #3d161d 55%, #2f1218 100%);
+  color: #f3e6d0;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(243, 230, 208, 0.12);
+}
+
+.chip--clearance:hover,
+.chip--clearance.is-active,
+a.chip[href*="sub=cw-clearance"]:hover,
+a.chip[href*="sub=cw-clearance"].is-active {
+  background:
+    linear-gradient(145deg, #6b2a36 0%, #4a1b24 50%, #3a151c 100%);
+  border-color: #c4a574;
+  color: #fff8ec;
+}
+
+.nav-link--clearance,
+.nav-dropdown a[href*="sub=cw-clearance"],
+.mobile-drawer__sub2.nav-link--clearance,
+.mobile-drawer a[href*="sub=cw-clearance"] {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0.15rem 0;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(183, 161, 106, 0.5);
+  background:
+    linear-gradient(145deg, #5a222c 0%, #3d161d 60%, #2f1218 100%);
+  color: #f3e6d0 !important;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 1px 0 rgba(243, 230, 208, 0.1);
+}
+
+.mobile-drawer__sub2.nav-link--clearance {
+  margin-left: 1.15rem;
+}
+
+.product-card__badge--clearance {
+  background:
+    linear-gradient(145deg, #5a222c 0%, #3d161d 100%);
+  border: 1px solid rgba(196, 165, 116, 0.55);
+  color: #f3e6d0;
+  letter-spacing: 0.1em;
+}
+
 .shop-hero {
   position: relative;
   height: clamp(11rem, 28vw, 18rem);

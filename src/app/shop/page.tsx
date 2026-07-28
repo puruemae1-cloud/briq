@@ -189,9 +189,9 @@ export default async function ShopPage({ searchParams }: Props) {
                       sub: nested.id,
                       sort,
                     })}
-                    className={`chip chip--sub chip--nested ${
-                      sub === nested.id ? "is-active" : ""
-                    }`}
+                    className={`chip chip--sub chip--nested${
+                      nested.id === "cw-clearance" ? " chip--clearance" : ""
+                    }${sub === nested.id ? " is-active" : ""}`}
                   >
                     {nested.labelKo}
                   </Link>

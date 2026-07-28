@@ -11,6 +11,10 @@ export function ProductCard({ product }: { product: Product }) {
   const soldOut = !isProductInStock(product);
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && product.compareAtPrice);
+  const isClearance =
+    product.subcategory === "cw-clearance" ||
+    product.cwCollections?.includes("cw-clearance") ||
+    product.badge === "Nearly New";
 
   return (
     <Link
@@ -28,11 +32,21 @@ export function ProductCard({ product }: { product: Product }) {
             Sold Out
           </span>
         ) : onSale ? (
-          <span className="product-card__badge product-card__badge--sale">
+          <span
+            className={`product-card__badge product-card__badge--sale${
+              isClearance ? " product-card__badge--clearance" : ""
+            }`}
+          >
             {salePct}% OFF
           </span>
         ) : product.badge ? (
-          <span className="product-card__badge">{product.badge}</span>
+          <span
+            className={`product-card__badge${
+              isClearance ? " product-card__badge--clearance" : ""
+            }`}
+          >
+            {product.badge}
+          </span>
         ) : null}
       </ProductImage>
       <div className="product-card__body">
