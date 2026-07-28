@@ -367,14 +367,6 @@ a.chip[href*="sub=cw-clearance"].is-active {
   margin-left: 1.15rem;
 }
 
-.product-card__badge--clearance {
-  background:
-    linear-gradient(145deg, #5a222c 0%, #3d161d 100%);
-  border: 1px solid rgba(196, 165, 116, 0.55);
-  color: #f3e6d0;
-  letter-spacing: 0.1em;
-}
-
 .shop-hero {
   position: relative;
   height: clamp(11rem, 28vw, 18rem);
@@ -2397,6 +2389,15 @@ body:has(.nav-drawer-toggle:checked) {
 .product-card__badge--sale {
   background: #8a1f1f;
   color: #f7f4ec;
+}
+
+.product-card__badge--clearance,
+.product-card__badge--sale.product-card__badge--clearance {
+  background:
+    linear-gradient(145deg, #5a222c 0%, #3d161d 100%);
+  border: 1px solid rgba(196, 165, 116, 0.55);
+  color: #f3e6d0;
+  letter-spacing: 0.1em;
 }
 
 .product-card--sold-out .product-card__price {
