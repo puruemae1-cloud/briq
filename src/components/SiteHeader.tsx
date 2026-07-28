@@ -7,21 +7,37 @@ import { HeaderAccount } from "@/components/HeaderAccount";
 function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number }) {
   return (
     <>
-      {items.map((child) => (
-        <div key={child.id} className={depth > 0 ? "nav-dropdown__nest" : undefined}>
-          <Link
-            href={child.href}
-            className={child.id === "cw-clearance" ? "nav-link--clearance" : undefined}
+      {items.map((child) => {
+        const hasKids = Boolean(child.children?.length);
+        return (
+          <div
+            key={child.id}
+            className={[
+              depth > 0 ? `nav-dropdown__nest nav-dropdown__nest--d${depth}` : "",
+              hasKids ? "nav-dropdown__branch" : "",
+            ]
+              .filter(Boolean)
+              .join(" ") || undefined}
           >
-            {child.labelKo}
-          </Link>
-          {child.children?.length ? (
-            <div className="nav-dropdown__group">
-              <DropdownLinks items={child.children} depth={depth + 1} />
-            </div>
-          ) : null}
-        </div>
-      ))}
+            <Link
+              href={child.href}
+              className={[
+                hasKids ? "nav-dropdown__parent" : "",
+                child.id === "cw-clearance" ? "nav-link--clearance" : "",
+              ]
+                .filter(Boolean)
+                .join(" ") || undefined}
+            >
+              {child.labelKo}
+            </Link>
+            {hasKids ? (
+              <div className="nav-dropdown__group">
+                <DropdownLinks items={child.children!} depth={depth + 1} />
+              </div>
+            ) : null}
+          </div>
+        );
+      })}
     </>
   );
 }
