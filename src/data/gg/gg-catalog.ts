@@ -13,7 +13,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Abby - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "Abby 재킷은 현대적인 디자인과 갈빈 그린 레인웨어 컬렉션에서 기대할 수 있는 고성능 기능을 결합합니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 재킷은 완전 방수 및 방풍 기능을 갖추고 있어 어떤 날씨에도 편안함을 유지할 수 있는 뛰어난 통기성을 제공합니다. 신축성 있는 원단이 자유로운 움직임을 보장하며, 밑단의 조절 가능한 커프스와 신축성 있는 조임끈이 맞춤형 핏을 제공합니다. 소매 아래의 대담한 흰색 줄무늬가 스포티하고 밝습니다. 전면 포켓, 양방향 지퍼, 쉽게 움직일 수 있는 모양의 소매를 갖춘 Abby 재킷은 성능과 스타일을 요구하는 활동적인 골퍼에게 적합합니다. 이 재킷은 갈빈 그린의 DRYVR™ 레인 컬렉션의 일부이며 PFA가 없습니다.",
     image: "/products/gg-pdp/abby-waterproof-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/abby-waterproof-golf-jacket-black/1.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-black/2.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-black/3.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-black/4.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-black/5.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-black/6.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg", "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"],
     accent: "#1A2E28",
@@ -26,14 +26,23 @@ export const ggCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "Abby - 방수 골프 재킷",
-        bodyKo: "Abby - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "Abby 재킷은 현대적인 디자인과 갈빈 그린 레인웨어 컬렉션에서 기대할 수 있는 고성능 기능을 결합합니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 재킷은 완전 방수 및 방풍 기능을 갖추고 있어 어떤 날씨에도 편안함을 유지할 수 있는 뛰어난 통기성을 제공합니다.",
         image: "/products/gg-pdp/abby-waterproof-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "신축성 있는 원단이 자유로운 움직임을 보장하며, 밑단의 조절 가능한 커프스와 신축성 있는 조임끈이 맞춤형 핏을 제공합니다. 소매 아래의 대담한 흰색 줄무늬가 스포티하고 밝습니다. 전면 포켓, 양방향 지퍼, 쉽게 움직일 수 있는 모양의 소매를 갖춘 Abby 재킷은 성능과 스타일을 요구하는 활동적인 골퍼에게 적합합니다. 이 재킷은 갈빈 그린의 DRYVR™ 레인 컬렉션의 일부이며 PFA가 없습니다.",
+        image: "/products/gg-pdp/abby-waterproof-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "밑단 신축 드로코드", "프론트 포켓", "조절 가능한 커프스", "내부의 부드러운 \"슬라이드 앤 글라이드\"", "쉽게 움직일 수 있는 모양의 소매", "양방향 전면 지퍼"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000759403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -498,7 +507,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Adam - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "\"골프 방수 제품의 새로운 표준\"으로 묘사되는 갈빈 그린의 PERTEX® Shield 컬렉션은 차세대 골프 비옷을 선보입니다. Adam 하프 지퍼 방수 재킷은 하이테크 골프 재킷의 성능 기능과 풀오버의 용이성을 결합합니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 가볍고 통기성이 뛰어난 재킷은 건조함과 편안함을 유지합니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄이는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다. 갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 스트레치 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 3겹 원단은 더 부드럽고 신축성이 뛰어나며, '슬라이드 앤 글라이드' 효과로 피부에 닿는 편안함을 높여 아래에 입는 옷과의 마찰을 줄여줍니다.",
     image: "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/1.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/2.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/3.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/4.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/5.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/6.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/1.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/2.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/3.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/4.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/5.jpg", "/products/gg-pdp/adam-waterproof-golf-jacket-royal-blue-black/6.jpg"],
     accent: "#1F4D3A",
@@ -506,19 +515,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000438712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/adam-waterproof-golf-jacket-crystal-blue-navy",
-    registeredAt: "2026-07-28T21:09:17.000Z",
+    registeredAt: "2026-07-28T21:29:44.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Adam - 방수 골프 재킷",
-        bodyKo: "Adam - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "\"골프 방수 제품의 새로운 표준\"으로 묘사되는 갈빈 그린의 PERTEX® Shield 컬렉션은 차세대 골프 비옷을 선보입니다. Adam 하프 지퍼 방수 재킷은 하이테크 골프 재킷의 성능 기능과 풀오버의 용이성을 결합합니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 가볍고 통기성이 뛰어난 재킷은 건조함과 편안함을 유지합니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄이는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다.",
         image: "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 스트레치 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 3겹 원단은 더 부드럽고 신축성이 뛰어나며, '슬라이드 앤 글라이드' 효과로 피부에 닿는 편안함을 높여 아래에 입는 옷과의 마찰을 줄여줍니다.",
+        image: "/products/gg-pdp/adam-waterproof-golf-jacket-crystal-blue-navy/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "발수 마감", "가슴 너비 조절 탭", "착용감 최적화를 위한 사이드 심 재배치", "쉽게 움직일 수 있는 모양의 소매", "조절 가능한 커프스", "밑단 신축 드로코드", "내부의 부드러운 \"슬라이드 앤 글라이드\""],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000438712" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -758,7 +776,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Aiden - 방수 골프 햇은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "방수 버킷햇은 골퍼의 필수품으로, 실용성, 편안함, 비바람에 대한 안정적인 보호 기능으로 고객들에게 사랑을 받고 있습니다. PERTEX® Shield 스트레치 패브릭으로 제작된 이 가벼운 모자는 통기성과 신축성이 특징입니다. 신축성 있는 스웨트 밴드가 있어 편안함을 더해주는 Aiden 골프 비 모자는 갈빈 그린의 수상 경력이 있는 DRYVR™ 골프 비옷 컬렉션의 일부입니다.",
     image: "/products/gg-pdp/aiden-waterproof-golf-hat-black/1.jpg",
     images: ["/products/gg-pdp/aiden-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/5.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/5.jpg"],
     accent: "#24302A",
@@ -766,19 +784,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "A01000639403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aiden-waterproof-golf-hat-black",
-    registeredAt: "2026-07-28T21:09:18.000Z",
+    registeredAt: "2026-07-28T21:29:45.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Aiden - 방수 골프 햇",
-        bodyKo: "Aiden - 방수 골프 햇은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "방수 버킷햇은 골퍼의 필수품으로, 실용성, 편안함, 비바람에 대한 안정적인 보호 기능으로 고객들에게 사랑을 받고 있습니다. PERTEX® Shield 스트레치 패브릭으로 제작된 이 가벼운 모자는 통기성과 신축성이 특징입니다. 신축성 있는 스웨트 밴드가 있어 편안함을 더해주는 Aiden 골프 비 모자는 갈빈 그린의 수상 경력이 있는 DRYVR™ 골프 비옷 컬렉션의 일부입니다.",
         image: "/products/gg-pdp/aiden-waterproof-golf-hat-black/1.jpg",
       },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "신축성 있는 스웨트밴드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000639403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -943,7 +964,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Air - 방수 숏 슬리브 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+    descriptionKo: "비 오는 날 라운드를 뛰는데 긴소매는 불편하신가요? 갈빈 그린의 반팔 골프 재킷은 데뷔 이후 고객들이 가장 선호하는 제품으로, 소매·커프가 스윙을 방해하지 않고 악천후로부터 안정적인 보호 기능을 제공합니다. Air는 소매에 대조 패널이 있는 풀 지퍼 골프 레인 재킷입니다. 가볍고 통기성이 뛰어난 이 재킷은 건조함과 편안함을 유지해줍니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄일 수 있는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다. 갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
     image: "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/1.jpg",
     images: ["/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/1.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/2.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/3.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/4.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/5.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/6.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/1.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/2.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/3.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/4.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/5.jpg", "/products/gg-pdp/air-waterproof-golf-jacket-navy-moonlight-blue/6.jpg"],
     accent: "#2A4038",
@@ -951,18 +972,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A01000529366001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/air-waterproof-golf-jacket-black-forged-iron",
-    registeredAt: "2026-07-28T21:09:19.000Z",
+    registeredAt: "2026-07-28T21:29:46.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Air - 방수 숏 슬리브 골프 재킷",
-        bodyKo: "Air - 방수 숏 슬리브 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+        bodyKo: "비 오는 날 라운드를 뛰는데 긴소매는 불편하신가요? 갈빈 그린의 반팔 골프 재킷은 데뷔 이후 고객들이 가장 선호하는 제품으로, 소매·커프가 스윙을 방해하지 않고 악천후로부터 안정적인 보호 기능을 제공합니다. Air는 소매에 대조 패널이 있는 풀 지퍼 골프 레인 재킷입니다. 가볍고 통기성이 뛰어난 이 재킷은 건조함과 편안함을 유지해줍니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄일 수 있는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다.",
         image: "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
+        image: "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "경량", "발수 마감", "재활용 폴리에스터", "프론트 포켓", "가슴 너비 조절 탭", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000529366" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 0\" / 184cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield Technology · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield" },
     ],
     variants: [
       {
@@ -1202,7 +1233,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Akron - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+    descriptionKo: "이 하이테크 후드 골프 재킷은 기능적인 디자인 특징으로 가득 차 있습니다. Akron 재킷에는 조절 가능한 커프스와 후드, 신축성 있는 조임끈 밑단, 전면 포켓이 포함되어 있습니다. 골프 코스용으로 제작되었지만 최고의 다용성을 위해 설계된 이 재킷은 다음 라운드, 일일 출퇴근, 반려견 산책 또는 비오는 날의 모험을 위한 최고의 아이템입니다. PERTEX® Shield 원단을 사용하여 가볍고 통기성이 뛰어난 재킷은 건조함과 편안함을 유지합니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄이는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다. 갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
     image: "/products/gg-pdp/akron-waterproof-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/akron-waterproof-golf-jacket-black/1.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-black/2.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-black/3.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-black/4.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-black/5.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-black/6.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/1.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/2.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/3.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/4.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/5.jpg", "/products/gg-pdp/akron-waterproof-golf-jacket-navy/6.jpg"],
     accent: "#2F5A3E",
@@ -1210,18 +1241,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000519403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/akron-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T21:09:20.000Z",
+    registeredAt: "2026-07-28T21:29:47.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Akron - 방수 골프 재킷",
-        bodyKo: "Akron - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+        bodyKo: "이 하이테크 후드 골프 재킷은 기능적인 디자인 특징으로 가득 차 있습니다. Akron 재킷에는 조절 가능한 커프스와 후드, 신축성 있는 조임끈 밑단, 전면 포켓이 포함되어 있습니다. 골프 코스용으로 제작되었지만 최고의 다용성을 위해 설계된 이 재킷은 다음 라운드, 일일 출퇴근, 반려견 산책 또는 비오는 날의 모험을 위한 최고의 아이템입니다. PERTEX® Shield 원단을 사용하여 가볍고 통기성이 뛰어난 재킷은 건조함과 편안함을 유지합니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄이는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다.",
         image: "/products/gg-pdp/akron-waterproof-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
+        image: "/products/gg-pdp/akron-waterproof-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "경량", "재활용 폴리에스터", "프론트 포켓", "밑단 신축 드로코드", "조절 가능한 커프스", "조절 가능한 후드", "모양의 소매"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000519403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 0\" / 184cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield Technology · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield" },
     ],
     variants: [
       {
@@ -1416,7 +1457,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Alan - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: MEN PERTEX PANTS, PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "갈빈 그린의 DRYVR™ 방수 컬렉션 중 하나인 Alan 골프 레인 팬츠로 최고의 방수 성능을 발휘하세요. PERTEX® Shield 스트레치 기술이 적용된 이 100% 방수 및 방풍 바지는 통기성이 뛰어납니다. 조절 가능한 다리 너비, 신축성 있는 조임끈 허리, 플리스 안감이 있는 전면 포켓, 내마모성을 위한 분할 안쪽 솔기 등 세부 사항에 비용을 아끼지 않았습니다. 또한 내구성을 보장하기 위해 바지 밑단에 내마모성 원단을 추가했습니다. 갈빈 그린의 DRYVR™ 골프 비옷 컬렉션은 플레이하는 동안 건조함과 편안함을 유지하도록 설계되었습니다. 모든 의류가 골프 동작에 잘 어울리는지 확인하기 위해 골프 코스에서 자유로운 움직임을 테스트합니다. 신축성과 통기성이 뛰어난 100% 방수 원단으로 제작된 이 PERTEX® Shield 스트레치 기술 소재는 ISO 테스트를 거쳤으며 PFC FREE 발수 처리가 특징입니다. 이 스트레치 골프 레인 팬츠는 일반 골프 바지나 베이스 레이어 위에 맞도록 디자인되었습니다.",
     image: "/products/gg-pdp/alan-waterproof-golf-pants-black/1.jpg",
     images: ["/products/gg-pdp/alan-waterproof-golf-pants-black/1.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-black/2.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-black/3.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-black/4.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-black/5.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-black/6.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/1.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/2.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/3.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/4.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/5.jpg", "/products/gg-pdp/alan-waterproof-golf-pants-navy/6.jpg"],
     accent: "#1E3A4A",
@@ -1424,20 +1465,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A0100046V9403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alan-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T21:09:21.000Z",
+    registeredAt: "2026-07-28T21:29:48.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Alan - 방수 golf 팬츠",
-        bodyKo: "Alan - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: MEN PERTEX PANTS, PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "갈빈 그린의 DRYVR™ 방수 컬렉션 중 하나인 Alan 골프 레인 팬츠로 최고의 방수 성능을 발휘하세요. PERTEX® Shield 스트레치 기술이 적용된 이 100% 방수 및 방풍 바지는 통기성이 뛰어납니다. 조절 가능한 다리 너비, 신축성 있는 조임끈 허리, 플리스 안감이 있는 전면 포켓, 내마모성을 위한 분할 안쪽 솔기 등 세부 사항에 비용을 아끼지 않았습니다. 또한 내구성을 보장하기 위해 바지 밑단에 내마모성 원단을 추가했습니다.",
         image: "/products/gg-pdp/alan-waterproof-golf-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 DRYVR™ 골프 비옷 컬렉션은 플레이하는 동안 건조함과 편안함을 유지하도록 설계되었습니다. 모든 의류가 골프 동작에 잘 어울리는지 확인하기 위해 골프 코스에서 자유로운 움직임을 테스트합니다. 신축성이 뛰어나고 통기성이 뛰어난 100% 방수 원단으로 제작된 이 PERTEX® Shield 스트레치 기술 소재는 ISO 테스트를 거쳤으며 PFC FREE 발수 처리가 특징입니다. 이 스트레치 골프 레인 팬츠는 일반 골프 바지나 베이스 레이어 위에 맞도록 디자인되었습니다.",
+        image: "/products/gg-pdp/alan-waterproof-golf-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "신축성 있는 허리 부분과 조임끈이 있어 완벽한 핏을 선사합니다.", "밑단에서 다리 폭 조절 가능", "양털 안감이 있는 앞면 포켓", "뒷주머니", "지퍼 플라이 오프닝", "내마모성을 위한 분할된 안쪽 솔기", "다리 밑단의 내마모성 강화 원단", "오버팬츠로 활용이 가능하도록 제작되었습니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "MEN PERTEX PANTS" },
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A0100046V9403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -2142,7 +2191,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Andrea - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+    descriptionKo: "Andrea는 혁신적인 디자인 기능과 경량 방수 소재를 결합하여 골프 코스에서 최고의 성능을 발휘하는 하이테크 후드 골프 재킷입니다. Andrea 재킷에는 쉽게 움직일 수 있는 모양의 소매, 양방향 전면 지퍼 및 전면 포켓이 포함되어 있습니다. 조절 가능한 커프스와 후드, 밑단에 신축성 있는 조임끈이 있는 이 재킷은 어떤 날씨에도 편안함을 유지하고 보호할 수 있는 맞춤형 핏을 제공합니다. 가볍고 통기성이 뛰어난 이 재킷은 건조함과 편안함을 유지해줍니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄일 수 있는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다. 갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
     image: "/products/gg-pdp/andrea-waterproof-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/andrea-waterproof-golf-jacket-black/1.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-black/2.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-black/3.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-black/4.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-black/5.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-black/6.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/1.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/2.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/3.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/4.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/5.jpg", "/products/gg-pdp/andrea-waterproof-golf-jacket-navy/6.jpg"],
     accent: "#243447",
@@ -2150,18 +2199,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000509403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/andrea-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T21:09:22.000Z",
+    registeredAt: "2026-07-28T21:29:49.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Andrea - 방수 골프 재킷",
-        bodyKo: "Andrea - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield, Waterproofs.",
+        bodyKo: "Andrea는 혁신적인 디자인 기능과 경량 방수 소재를 결합하여 골프 코스에서 최고의 성능을 발휘하는 하이테크 후드 골프 재킷입니다. Andrea 재킷에는 쉽게 움직일 수 있는 모양의 소매, 양방향 전면 지퍼 및 전면 포켓이 포함되어 있습니다. 조절 가능한 커프스와 후드, 밑단에 신축성 있는 조임끈이 있는 이 재킷은 어떤 날씨에도 편안함을 유지하고 보호할 수 있는 맞춤형 핏을 제공합니다. 가볍고 통기성이 뛰어난 이 재킷은 건조함과 편안함을 유지해줍니다. 의류 특징에는 스윙하는 동안 재킷 앞쪽의 부피를 줄일 수 있는 가슴 탭과 마찰을 줄이기 위해 재배치된 측면 솔기가 포함됩니다.",
         image: "/products/gg-pdp/andrea-waterproof-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 DRYVR™ 방수 제품군에 속하는 PERTEX® Shield 의류에는 친수성 PU 멤브레인이 있으며, 멤브레인의 \"친수성\" 특성으로 인해 물 분자를 끌어당기고 유지하도록 설계되었습니다. 이 2레이어 원단은 가볍고 솔기가 밀봉되어 있으며 100% 방수 기능을 보장합니다.",
+        image: "/products/gg-pdp/andrea-waterproof-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "경량", "재활용 폴리에스터", "프론트 포켓", "양방향 전면 지퍼", "조절 가능한 커프스", "조절 가능한 후드", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000509403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield Technology · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield" },
     ],
     variants: [
       {
@@ -2356,7 +2415,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Andrew - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "Andrew 재킷은 클래식하고 유선형 디자인과 까다로운 날씨에 이상적인 고성능 기능을 결합합니다. PERTEX® Shield 스트레치 기술 패브릭으로 제작된 이 풀지퍼 레인 재킷은 100% 방수, 방풍 및 통기성이 뛰어나 습한 날씨 조건에서도 편안함과 보호 기능을 보장합니다. 신축성 있는 원단을 사용하여 쉽게 움직일 수 있으며, 가슴 탭은 완벽한 너비를 위해 조절 가능한 핏을 제공합니다. 추가 기능으로는 조절 가능한 커프스, 최적의 편안함을 위해 재배치된 측면 솔기, 이동성을 높이기 위한 모양의 소매 등이 있습니다. 내부의 부드러운 \"슬라이드 앤 글라이드\"는 레이어링이 용이하며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 제공합니다. Andrew 재킷에는 PFA가 없습니다.",
     image: "/products/gg-pdp/andrew-waterproof-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/andrew-waterproof-golf-jacket-black/1.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-black/2.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-black/3.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-black/4.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-black/5.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-black/6.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/1.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/2.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/3.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/4.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/5.jpg", "/products/gg-pdp/andrew-waterproof-golf-jacket-navy/6.jpg"],
     accent: "#2C2A28",
@@ -2364,19 +2423,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 349.0,
     sku: "A01000779403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/andrew-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T21:09:23.000Z",
+    registeredAt: "2026-07-28T21:29:50.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Andrew - 방수 골프 재킷",
-        bodyKo: "Andrew - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "Andrew 재킷은 클래식하고 유선형 디자인과 까다로운 날씨에 이상적인 고성능 기능을 결합합니다. PERTEX® Shield 스트레치 기술 패브릭으로 제작된 이 풀지퍼 레인 재킷은 100% 방수, 방풍 및 통기성이 뛰어나 습한 날씨 조건에서도 편안함과 보호 기능을 보장합니다. 신축성 있는 원단을 사용하여 쉽게 움직일 수 있으며, 가슴 탭은 완벽한 너비를 위해 조절 가능한 핏을 제공합니다.",
         image: "/products/gg-pdp/andrew-waterproof-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "추가 기능으로는 조절 가능한 커프스, 최적의 편안함을 위해 재배치된 측면 솔기, 이동성을 높이기 위한 모양의 소매 등이 있습니다. 내부의 부드러운 \"슬라이드 앤 글라이드\"는 레이어링이 용이하며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 제공합니다. Andrew 재킷에는 PFA가 없습니다.",
+        image: "/products/gg-pdp/andrew-waterproof-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "가슴 너비 조절 탭", "조절 가능한 커프스", "착용감 최적화를 위한 사이드 심 재배치", "쉽게 움직일 수 있는 모양의 소매", "프론트 포켓", "밑단 신축 드로코드", "내부의 부드러운 \"슬라이드 앤 글라이드\""],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000779403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 0\" / 182cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -2631,7 +2699,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Angie - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "수십만 장의 골프 레인 팬츠를 판매한 후 우리는 스스로를 해당 분야의 전문가라고 생각합니다. Angie는 수십 년간의 골프 비옷 개발의 정점으로 통기성이 뛰어나고 신축성이 뛰어난 100% 방수 및 방풍 바지입니다. 갈빈 그린의 DRYVR™ 방수 컬렉션은 골프 코스용으로 디자인되어 편안함과 자유로운 움직임을 보장합니다. 이 여성용 스트레치 골프 레인 팬츠는 PFC가 없는 ISO 테스트를 거친 소재인 PERTEX® Shield 스트레치 기술로 제작되었습니다. 기능적 특징으로는 조절 가능한 다리 폭, 신축성 있는 허리밴드, 내마모성을 위한 분할된 안쪽 솔기, 다리 밑단의 내마모성 원단 등이 있습니다. 앞면 포켓에는 양털 안감이 있어 편안함과 따뜻함을 제공하며 지퍼 플라이 입구가 있습니다. Amy 바지는 일반 골프 바지, 레깅스 또는 보온 베이스 레이어 위에 착용하도록 설계되었습니다.",
     image: "/products/gg-pdp/angie-waterproof-golf-pants-black/1.jpg",
     images: ["/products/gg-pdp/angie-waterproof-golf-pants-black/1.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-black/2.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-black/3.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-black/4.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-black/5.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-black/6.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/1.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/2.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/3.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/4.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/5.jpg", "/products/gg-pdp/angie-waterproof-golf-pants-navy/6.jpg"],
     accent: "#3A2F28",
@@ -2639,19 +2707,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A0100045V9403004",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/angie-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T21:09:24.000Z",
+    registeredAt: "2026-07-28T21:29:51.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Angie - 방수 golf 팬츠",
-        bodyKo: "Angie - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "수십만 장의 골프 레인 팬츠를 판매한 후 우리는 스스로를 해당 분야의 전문가라고 생각합니다. Angie는 수십 년간의 골프 비옷 개발의 정점으로 통기성이 뛰어나고 신축성이 뛰어난 100% 방수 및 방풍 바지입니다. 갈빈 그린의 DRYVR™ 방수 컬렉션은 골프 코스용으로 디자인되어 편안함과 자유로운 움직임을 보장합니다.",
         image: "/products/gg-pdp/angie-waterproof-golf-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "이 여성용 스트레치 골프 레인 팬츠는 PFC가 없는 ISO 테스트 소재인 PERTEX® Shield 스트레치 기술로 제작되었습니다. 기능적 특징으로는 조절 가능한 다리 폭, 신축성 있는 허리밴드, 내마모성을 위한 분할된 안쪽 솔기, 다리 밑단의 내마모성 원단 등이 있습니다. 앞면 포켓에는 양털 안감이 있어 편안함과 따뜻함을 제공하며 지퍼 플라이 입구가 있습니다. Amy 바지는 일반 골프 바지, 레깅스 또는 보온 베이스 레이어 위에 착용하도록 설계되었습니다.",
+        image: "/products/gg-pdp/angie-waterproof-golf-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "신축성 있는 허리 부분과 조임끈이 있어 완벽한 핏을 선사합니다.", "밑단에서 다리 폭 조절 가능", "양털 안감이 있는 앞면 포켓", "뒷주머니", "내마모성을 위한 분할된 안쪽 솔기", "다리 밑단의 내마모성 강화 원단", "지퍼 플라이 오프닝", "오버팬츠로 활용이 가능하도록 제작되었습니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A0100045V9403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -2936,7 +3013,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "April - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+    descriptionKo: "에이프릴 레인팬츠로 골프장에서 건조함과 편안함을 유지하세요. 재활용 폴리에스테르 GORE-TEX ePE 원단으로 제작된 이 바지는 100% 방수, 방풍 및 통기성이 뛰어납니다. 갈빈 그린 DRYVR™ 컬렉션의 일부인 이 2겹 GORE-TEX 원단은 부드러운 폴리에스터 안감으로 되어 있어 추운 날에도 따뜻함과 편안함을 더해줍니다. PFAS가 없는 발수 처리된 이 바지는 성능과 지속 가능성에 대한 약속을 반영하여 골프 코스에서 비오고 추운 날에도 믿을 수 있는 선택이 됩니다. 에이프릴 레인 팬츠는 완벽한 핏과 자유로운 움직임을 위해 실용적인 디테일로 제작되었습니다. 조임끈이 있는 신축성 있는 허리 부분이 안정적인 핏을 보장하며, 지퍼가 달린 플라이와 밑단의 조절 가능한 다리 폭으로 다른 레이어 위에도 쉽게 착용할 수 있습니다. 편의성을 더하기 위해 바지에는 양털 안감이 있는 전면 포켓, 후면 포켓, 내마모성이 강화된 분할 안쪽 솔기가 있습니다. 다리 밑단의 추가 보강으로 소맷단이 해어지는 것을 방지하고, 맞춤형 핏으로 바지 위에 편안하게 착용할 수 있어 코스의 어떤 기상 조건에도 편안함을 유지합니다.",
     image: "/products/gg-pdp/april-waterproof-pants-black/1.jpg",
     images: ["/products/gg-pdp/april-waterproof-pants-black/1.jpg", "/products/gg-pdp/april-waterproof-pants-black/2.jpg", "/products/gg-pdp/april-waterproof-pants-black/3.jpg", "/products/gg-pdp/april-waterproof-pants-black/4.jpg", "/products/gg-pdp/april-waterproof-pants-black/5.jpg", "/products/gg-pdp/april-waterproof-pants-black/6.jpg", "/products/gg-pdp/april-waterproof-pants-navy/1.jpg", "/products/gg-pdp/april-waterproof-pants-navy/2.jpg", "/products/gg-pdp/april-waterproof-pants-navy/3.jpg", "/products/gg-pdp/april-waterproof-pants-navy/4.jpg", "/products/gg-pdp/april-waterproof-pants-navy/5.jpg", "/products/gg-pdp/april-waterproof-pants-navy/6.jpg"],
     accent: "#1A2428",
@@ -2944,19 +3021,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A11000559403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/april-waterproof-pants-black",
-    registeredAt: "2026-07-28T21:09:25.000Z",
+    registeredAt: "2026-07-28T21:29:52.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "April - 방수 golf 팬츠",
-        bodyKo: "April - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+        bodyKo: "에이프릴 레인팬츠로 골프장에서 건조함과 편안함을 유지하세요. 재활용 폴리에스테르 GORE-TEX ePE 원단으로 제작된 이 바지는 100% 방수, 방풍 및 통기성이 뛰어납니다. 갈빈 그린 DRYVR™ 컬렉션의 일부인 이 2겹 GORE-TEX 원단은 부드러운 폴리에스터 안감으로 되어 있어 추운 날에도 따뜻함과 편안함을 더해줍니다. PFAS가 없는 발수 처리된 이 바지는 성능과 지속 가능성에 대한 약속을 반영하여 골프 코스에서 비오고 추운 날에도 믿을 수 있는 선택이 됩니다.",
         image: "/products/gg-pdp/april-waterproof-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "에이프릴 레인 팬츠는 완벽한 핏과 자유로운 움직임을 위해 실용적인 디테일로 제작되었습니다. 조임끈이 있는 신축성 있는 허리 부분이 안정적인 핏을 보장하며, 지퍼가 달린 플라이와 밑단의 조절 가능한 다리 폭으로 다른 레이어 위에도 쉽게 착용할 수 있습니다. 편의성을 더하기 위해 바지에는 양털 안감이 있는 전면 포켓, 후면 포켓, 내마모성이 강화된 분할 안쪽 솔기가 있습니다. 다리 밑단의 추가 보강으로 소맷단이 해어지는 것을 방지하고, 맞춤형 핏으로 바지 위에 편안하게 착용할 수 있어 코스의 어떤 기상 조건에도 편안함을 유지합니다.",
+        image: "/products/gg-pdp/april-waterproof-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "메인 패브릭은 bluesign® 승인을 받았습니다", "재활용 폴리에스터", "신축성 있는 허리 부분과 조임끈이 있어 완벽한 핏을 선사합니다.", "양털 안감이 있는 앞면 포켓", "뒷주머니", "지퍼 플라이 오프닝", "내마모성을 위한 분할된 안쪽 솔기", "밑단에서 다리 폭 조절 가능", "다리 밑단의 내마모성 강화 원단", "오버팬츠로 활용이 가능하도록 제작되었습니다.", "내벽"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "gore-tex" },
-      { labelKo: "소재 · 테크", valueKo: "GORE-TEX ePE with lining" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A11000559403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · 안감이 있는 GORE-TEX · 겉감 원단: ePE 멤브레인이 포함된 100% 재활용 폴리에스테르 · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "GORE-TEX ePE with lining" },
     ],
     variants: [
       {
@@ -3332,7 +3418,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Argus - 방수 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, Waterproofs.",
+    descriptionKo: "Argus는 스트리트웨어에서 미적으로 영감을 받았지만 골프 코스에 적합한 핏과 기술을 갖춘 PERTEX® Shield 스트레치 후드 재킷입니다.​ 캥거루 같은 포켓, 넓은 커프스와 탭, 자수 같은 로고 프린트가 이 방향성 있는 재킷을 메인 컬렉션과 확연히 다르게 만듭니다. 이 재킷은 100% 방수 및 방풍 보호 기능을 제공하여 습한 날씨에도 건조하고 편안함을 유지합니다. Argus에는 통기성이 뛰어난 신축성 있는 원단, 조절 가능한 커프스, 부드러운 내부가 포함되어 있어 쉽게 움직일 수 있으며, PFC가 없는 발수 처리 및 모양의 슬리브는 성능과 지속 가능성을 모두 향상시킵니다.",
     image: "/products/gg-pdp/argus-waterproof-jacket-black-white/1.jpg",
     images: ["/products/gg-pdp/argus-waterproof-jacket-black-white/1.jpg", "/products/gg-pdp/argus-waterproof-jacket-black-white/2.jpg", "/products/gg-pdp/argus-waterproof-jacket-black-white/3.jpg", "/products/gg-pdp/argus-waterproof-jacket-black-white/4.jpg", "/products/gg-pdp/argus-waterproof-jacket-black-white/5.jpg", "/products/gg-pdp/argus-waterproof-jacket-black-white/6.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/1.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/2.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/3.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/4.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/5.jpg", "/products/gg-pdp/argus-waterproof-jacket-duck-green-black/6.jpg"],
     accent: "#1A2E28",
@@ -3340,18 +3426,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 300.3,
     sku: "A01000219020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/argus-waterproof-jacket-black-white",
-    registeredAt: "2026-07-28T21:09:26.000Z",
+    registeredAt: "2026-07-28T21:29:53.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Argus - 방수 재킷",
-        bodyKo: "Argus - 방수 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, Waterproofs.",
+        bodyKo: "Argus는 스트리트웨어에서 미적으로 영감을 받았지만 골프 코스에 적합한 핏과 기술을 갖춘 PERTEX® Shield 스트레치 후드 재킷입니다.​ 캥거루 같은 포켓, 넓은 커프스와 탭, 자수 같은 로고 프린트가 이 방향성 있는 재킷을 메인 컬렉션과 확연히 다르게 만듭니다.",
         image: "/products/gg-pdp/argus-waterproof-jacket-black-white/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "이 재킷은 100% 방수 및 방풍 보호 기능을 제공하여 습한 날씨에도 건조하고 편안함을 유지합니다. Argus에는 통기성이 뛰어난 신축성 있는 원단, 조절 가능한 커프스, 부드러운 내부가 포함되어 있어 쉽게 움직일 수 있으며, PFC가 없는 발수 처리 및 모양의 슬리브는 성능과 지속 가능성을 모두 향상시킵니다.",
+        image: "/products/gg-pdp/argus-waterproof-jacket-black-white/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "발수 마감", "밑단 신축 드로코드", "조절 가능한 커프스", "내부의 부드러운 \"슬라이드 앤 글라이드\"", "프론트 포켓", "후드 조절을 위한 신축성 있는 조임끈", "쉽게 움직일 수 있는 모양의 소매"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000219020" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 0\" / 183cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 폴리아미드 90%/엘라스테인 10%, PU 멤브레인 · 안감: 나일론 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -3516,7 +3612,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Arlo - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "Arlo 히어로 재킷은 현대적인 디자인과 수상 경력에 빛나는 비옷의 안정적인 성능을 결합한 제품입니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 재킷은 100% 방수, 방풍 및 통기성이 뛰어나 젖은 라운드 중에 건조하고 편안함을 유지합니다. 매끄럽고 대조적인 패널은 기능적인 성능을 유지하면서 현대적인 외관을 제공합니다. 조절 가능한 핏을 위한 가슴 탭, 조절 가능한 커프스, 최적의 편안함을 위해 재배치된 측면 솔기가 특징인 Arlo 재킷은 맞춤형 및 편안한 핏을 제공합니다. 모양이 잡힌 소매가 움직이기 쉬우며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 보장합니다. 내부의 부드러운 \"슬라이드 앤 글라이드\"는 레이어링이 용이하여 까다로운 기상 조건에서 첨단 장비가 필요한 골퍼에게 완벽한 선택입니다.",
     image: "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/1.jpg",
     images: ["/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/1.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/2.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/3.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/4.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/5.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/6.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/1.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/2.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/3.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/4.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/5.jpg", "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/6.jpg"],
     accent: "#1F4D3A",
@@ -3524,19 +3620,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 359.0,
     sku: "A01000718708001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arlo-waterproof-golf-jacket-black-orange",
-    registeredAt: "2026-07-28T21:09:27.000Z",
+    registeredAt: "2026-07-28T21:29:54.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Arlo - 방수 골프 재킷",
-        bodyKo: "Arlo hero 재킷 combines 모던 디자인 with 신뢰할 수 있는 퍼포먼스 of Galvin Green’s 수상 경력의 레인 기어. Pertex® Shield 3-레이어 스트레치 원단으로, 이 재킷은 100% 방수·방풍·고통기성, 건조하고 편안하게 비 오는 라운드에서도. 슬릭한 대비 패널이 기능성을 유지하면서 모던한 룩을 완성합니다.",
+        bodyKo: "Arlo 히어로 재킷은 현대적인 디자인과 수상 경력에 빛나는 비옷의 안정적인 성능을 결합한 제품입니다. PERTEX® Shield 3겹 스트레치 원단으로 제작된 이 재킷은 100% 방수, 방풍 및 통기성이 뛰어나 젖은 라운드 중에 건조하고 편안함을 유지합니다. 매끄럽고 대조적인 패널은 기능적인 성능을 유지하면서 현대적인 외관을 제공합니다.",
         image: "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "조절 가능한 핏을 위한 가슴 탭, 조절 가능한 커프스, 최적의 편안함을 위해 재배치된 측면 솔기가 특징인 Arlo 재킷은 맞춤형 및 편안한 핏을 제공합니다. 모양이 잡힌 소매가 움직이기 쉬우며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 보장합니다. 내부의 부드러운 \"슬라이드 앤 글라이드\"는 레이어링이 용이하여 까다로운 기상 조건에서 첨단 장비가 필요한 골퍼에게 완벽한 선택입니다.",
+        image: "/products/gg-pdp/arlo-waterproof-golf-jacket-black-orange/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "가슴 너비 조절 탭", "조절 가능한 커프스", "착용감 최적화를 위한 사이드 심 재배치", "쉽게 움직일 수 있는 모양의 소매", "프론트 포켓", "밑단 신축 드로코드", "내부의 부드러운 \"슬라이드 앤 글라이드\""],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000718708" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 180cm이고 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -4091,7 +4196,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Aron - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+    descriptionKo: "Aron 골프 비옷은 습한 날씨에 골프를 할 때 편안함과 자유로운 움직임을 위해 디자인된 갈빈 그린 DRYVR™ 골프 비옷 컬렉션의 일부입니다. 재활용 폴리에스터와 PFAS 프리 발수 처리된 차세대 GORE-TEX ePE 패브릭으로 제작된 이 바지는 100% 방수, 방풍 및 통기성이 뛰어납니다. 부드러운 폴리에스터 안감과 결합된 2레이어 GORE-TEX 구조는 라운드 내내 뛰어난 편안함과 따뜻함을 보장합니다. 실용성과 내구성을 염두에 두고 디자인된 Aron 팬츠는 맞춤형 핏을 위한 조임끈이 있는 신축성 있는 허리, 쉽게 착용할 수 있는 지퍼 플라이, 밑단에서 조절 가능한 다리 너비가 특징입니다. 플리스 안감이 있는 앞면 포켓과 뒷면 포켓이 있어 편리한 수납이 가능하며, 다리 밑단에 분할된 안쪽 솔기와 추가 내마모성 원단이 내구성을 강화합니다. 오버팬츠로 착용할 수 있는 이 레인 팬츠는 스타일이나 기능을 저하시키지 않으면서 건조함과 편안함을 유지합니다.",
     image: "/products/gg-pdp/aron-waterproof-golf-pants-black/1.jpg",
     images: ["/products/gg-pdp/aron-waterproof-golf-pants-black/1.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-black/2.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-black/3.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-black/4.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-black/5.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-black/6.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/1.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/2.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/3.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/4.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/5.jpg", "/products/gg-pdp/aron-waterproof-golf-pants-navy/6.jpg"],
     accent: "#24302A",
@@ -4099,19 +4204,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A01000579403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aron-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T21:09:28.000Z",
+    registeredAt: "2026-07-28T21:29:55.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Aron - 방수 golf 팬츠",
-        bodyKo: "Aron - 방수 golf 팬츠은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+        bodyKo: "Aron 골프 비옷은 습한 날씨에 골프를 할 때 편안함과 자유로운 움직임을 위해 디자인된 갈빈 그린 DRYVR™ 골프 비옷 컬렉션의 일부입니다. 재활용 폴리에스터와 PFAS 프리 발수 처리된 차세대 GORE-TEX ePE 패브릭으로 제작된 이 바지는 100% 방수, 방풍 및 통기성이 뛰어납니다. 부드러운 폴리에스터 안감과 결합된 2레이어 GORE-TEX 구조는 라운드 내내 뛰어난 편안함과 따뜻함을 보장합니다.",
         image: "/products/gg-pdp/aron-waterproof-golf-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "실용성과 내구성을 염두에 두고 디자인된 Aron 팬츠는 맞춤형 핏을 위한 조임끈이 있는 신축성 있는 허리, 쉽게 착용할 수 있는 지퍼 플라이, 밑단에서 조절 가능한 다리 너비가 특징입니다. 플리스 안감이 있는 앞면 포켓과 뒷면 포켓이 있어 편리한 수납이 가능하며, 다리 밑단에 분할된 안쪽 솔기와 추가 내마모성 원단이 내구성을 강화합니다. 오버팬츠로 착용할 수 있는 이 레인 팬츠는 스타일이나 기능을 저하시키지 않으면서 건조함과 편안함을 유지합니다.",
+        image: "/products/gg-pdp/aron-waterproof-golf-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "재활용 폴리에스터", "신축성 있는 허리 부분과 조임끈이 있어 완벽한 핏을 선사합니다.", "양털 안감이 있는 앞면 포켓", "뒷주머니", "지퍼 플라이 오프닝", "내마모성을 위한 분할된 안쪽 솔기", "밑단에서 다리 폭 조절 가능", "다리 밑단의 내마모성 강화 원단", "오버팬츠로 활용이 가능하도록 제작되었습니다.", "내벽"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "gore-tex" },
-      { labelKo: "소재 · 테크", valueKo: "GORE-TEX ePE with lining" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000579403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · 안감이 있는 GORE-TEX · 겉감 원단: ePE 멤브레인이 포함된 100% 재활용 폴리에스테르 · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "GORE-TEX ePE with lining" },
     ],
     variants: [
       {
@@ -4516,7 +4630,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Asher - 방수 골프 햇은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "Asher는 갈빈 그린 DRYVR™ 범위의 챙이 있는 방수 모자로 최대한의 커버력과 보호 기능을 제공합니다. PERTEX® Shield 방수 원단으로 제작되어 방풍성, 가벼움, 통기성 및 신축성이 뛰어납니다. 신축성 있는 스웨트밴드, 목 부분의 넓은 챙, 모자가 날아가지 않도록 해주는 스톰 스트랩이 특징입니다.",
     image: "/products/gg-pdp/asher-waterproof-golf-hat/1.jpg",
     images: ["/products/gg-pdp/asher-waterproof-golf-hat/1.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/2.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/3.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/4.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/5.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/6.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/5.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/6.jpg"],
     accent: "#2A4038",
@@ -4524,19 +4638,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.0,
     sku: "A01000619403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/asher-waterproof-golf-hat",
-    registeredAt: "2026-07-28T21:09:29.000Z",
+    registeredAt: "2026-07-28T21:29:56.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Asher - 방수 골프 햇",
-        bodyKo: "Asher - 방수 골프 햇은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "Asher는 갈빈 그린 DRYVR™ 범위의 챙이 있는 방수 모자로 최대한의 커버력과 보호 기능을 제공합니다. PERTEX® Shield 방수 원단으로 제작되어 방풍성, 가벼움, 통기성 및 신축성이 뛰어납니다. 신축성 있는 스웨트밴드, 목 부분의 넓은 챙, 모자가 날아가지 않도록 해주는 스톰 스트랩이 특징입니다.",
         image: "/products/gg-pdp/asher-waterproof-golf-hat/1.jpg",
       },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "신축성 있는 스웨트밴드", "뒤쪽의 매우 넓은 챙", "스톰 스트랩"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000619403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -4701,7 +4818,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Aston - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+    descriptionKo: "Aston 골프 재킷은 갈빈 그린의 수상 경력에 빛나는 DRYVR™ 컬렉션의 일부인 전천후 골프를 위한 다용도 첨단 기술 아우터 레이어입니다. 차세대 GORE-TEX ePE 패브릭과 재활용 폴리에스테르로 제작된 이 제품은 100% 방수, 방풍 및 통기성이 뛰어납니다. 2겹 GORE-TEX 디자인과 가벼운 메쉬 안감은 부피 없이 편안함과 따뜻함을 제공하며, PFAS 프리 발수 처리는 비를 막아주고 가혹한 조건에서도 보호를 보장합니다. 골퍼를 위해 디자인된 Aston은 움직임에 제한이 없는 모양의 소매, 조절 가능한 커프스, 밑단에 신축성 있는 조임끈이 있어 개인 맞춤 핏을 제공합니다. 전면 및 내부 포켓은 편리한 보관을 제공하며 재배치된 측면 솔기는 편안함을 향상시키고 마찰을 줄입니다. 풀 지퍼 디자인의 이 재킷은 편안하면서도 기능적이므로 모든 골퍼의 옷장에 꼭 필요한 아이템입니다.",
     image: "/products/gg-pdp/aston-waterproof-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/aston-waterproof-golf-jacket-black/1.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-black/2.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-black/3.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-black/4.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-black/5.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-black/6.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/1.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/2.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/3.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/4.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/5.jpg", "/products/gg-pdp/aston-waterproof-golf-jacket-navy/6.jpg"],
     accent: "#2F5A3E",
@@ -4709,19 +4826,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A01000569403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aston-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T21:09:30.000Z",
+    registeredAt: "2026-07-28T21:29:57.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Aston - 방수 골프 재킷",
-        bodyKo: "Aston - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+        bodyKo: "Aston 골프 재킷은 갈빈 그린의 수상 경력에 빛나는 DRYVR™ 컬렉션의 일부인 전천후 골프를 위한 다용도 첨단 기술 아우터 레이어입니다. 차세대 GORE-TEX ePE 패브릭과 재활용 폴리에스테르로 제작된 이 제품은 100% 방수, 방풍 및 통기성이 뛰어납니다. 2겹 GORE-TEX 디자인과 가벼운 메쉬 안감은 부피 없이 편안함과 따뜻함을 제공하며, PFAS 프리 발수 처리는 비를 막아주고 가혹한 조건에서도 보호를 보장합니다.",
         image: "/products/gg-pdp/aston-waterproof-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "골퍼를 위해 디자인된 Aston은 움직임에 제한이 없는 모양의 소매, 조절 가능한 커프스, 밑단에 신축성 있는 조임끈이 있어 개인 맞춤 핏을 제공합니다. 전면 및 내부 포켓은 편리한 보관을 제공하며 재배치된 측면 솔기는 편안함을 향상시키고 마찰을 줄입니다. 풀 지퍼 디자인의 이 재킷은 편안하면서도 기능적이므로 모든 골퍼의 옷장에 꼭 필요한 아이템입니다.",
+        image: "/products/gg-pdp/aston-waterproof-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "재활용 폴리에스터", "가벼운 메쉬 안감", "프론트 포켓", "내부 포켓", "조절 가능한 커프스", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치", "쉽게 움직일 수 있는 모양의 소매"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "gore-tex" },
-      { labelKo: "소재 · 테크", valueKo: "GORE-TEX ePE with lining" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000569403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 2\" / 187cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "DRYVR™ · 안감이 있는 GORE-TEX · 겉감 원단: ePE 멤브레인이 포함된 100% 재활용 폴리에스테르 · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "GORE-TEX ePE with lining" },
     ],
     variants: [
       {
@@ -4976,7 +5102,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Atlas - 방수 골프 캡은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+    descriptionKo: "최첨단 경량 방수 골프 모자인 Atlas는 비가 오거나 예측할 수 없는 날씨에 골프를 칠 때 필수적인 액세서리입니다. 갈빈 그린 로고와 흰색 가장자리 파이핑이 특징인 Atlas 방수 캡은 PFA가 없는 가볍고 통기성이 뛰어난 방수 소재인 PERTEX® Shield로 제작되었습니다. 조정 가능한 둘레는 54~62cm(21.3~24.4인치)입니다.",
     image: "/products/gg-pdp/atlas-waterproof-golf-hat-black/1.jpg",
     images: ["/products/gg-pdp/atlas-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/5.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/5.jpg"],
     accent: "#1E3A4A",
@@ -4984,19 +5110,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "A01000659403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/atlas-waterproof-golf-hat-black",
-    registeredAt: "2026-07-28T21:09:31.000Z",
+    registeredAt: "2026-07-28T21:29:58.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Atlas - 방수 골프 캡",
-        bodyKo: "Atlas - 방수 골프 캡은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: PERTEX® Shield 3-layer stretch, stretch, Waterproofs.",
+        bodyKo: "최첨단 경량 방수 골프 모자인 Atlas는 비가 오거나 예측할 수 없는 날씨에 골프를 칠 때 필수적인 액세서리입니다. 갈빈 그린 로고와 흰색 가장자리 파이핑이 특징인 Atlas 방수 캡은 PFA가 없는 가볍고 통기성이 뛰어난 방수 소재인 PERTEX® Shield로 제작되었습니다. 조정 가능한 둘레는 54~62cm(21.3~24.4인치)입니다.",
         image: "/products/gg-pdp/atlas-waterproof-golf-hat-black/1.jpg",
       },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "신축성 있는 원단", "폭 조절 가능", "신축성 있는 스웨트밴드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "PERTEX® Shield 3-layer stretch" },
-      { labelKo: "소재 · 테크", valueKo: "stretch" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000659403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · PERTEX® Shield 스트레치 기술 · 겉감 원단: 재활용 폴리아미드 85%/엘라스테인 15%, PU 멤브레인 포함 · 뒷면: 폴리아미드 100%" },
+      { labelKo: "테크놀로지", valueKo: "PERTEX® Shield 3-layer stretch" },
     ],
     variants: [
       {
@@ -5041,7 +5170,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Ava - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+    descriptionKo: "Ava 여성용 골프 레인 재킷은 자유로운 움직임, 편안함, 첨단 날씨 보호 기능을 결합했습니다. 갈빈 그린의 수상 경력에 빛나는 DRYVR™ 컬렉션의 일부인 이 재킷은 100% 방수, 방풍 및 통기성이 뛰어난 차세대 GORE-TEX ePE 원단으로 제작되었습니다. 가벼운 메쉬 안감이 편안함과 따뜻함을 더해주며, PFAS 프리 발수 처리로 폭우 속에서도 성능이 유지됩니다. 대조적인 전체 길이 지퍼가 이 재킷에 모던한 느낌을 더해줍니다. 골퍼를 위해 골퍼가 디자인한 Ava 재킷에는 움직임이 제한되지 않는 모양의 소매, 조절 가능한 커프스, 신축성 있는 조임끈 밑단이 포함되어 있어 맞춤형 핏을 연출할 수 있습니다. 재배치된 측면 솔기, 전면 및 내부 포켓과 같은 사려 깊은 디테일이 기능성을 더해 골프 코스에서 건조함과 편안함을 유지하는 데 완벽한 선택입니다.",
     image: "/products/gg-pdp/ava-waterproof-jacket-black/1.jpg",
     images: ["/products/gg-pdp/ava-waterproof-jacket-black/1.jpg", "/products/gg-pdp/ava-waterproof-jacket-black/2.jpg", "/products/gg-pdp/ava-waterproof-jacket-black/3.jpg", "/products/gg-pdp/ava-waterproof-jacket-black/4.jpg", "/products/gg-pdp/ava-waterproof-jacket-black/5.jpg", "/products/gg-pdp/ava-waterproof-jacket-black/6.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/1.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/2.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/3.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/4.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/5.jpg", "/products/gg-pdp/ava-waterproof-jacket-navy/6.jpg"],
     accent: "#243447",
@@ -5049,19 +5178,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A01000549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ava-waterproof-jacket-black",
-    registeredAt: "2026-07-28T21:09:32.000Z",
+    registeredAt: "2026-07-28T21:29:59.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Ava - 방수 골프 재킷",
-        bodyKo: "Ava - 방수 골프 재킷은 갈빈 그린의 방수·방풍 골프웨어입니다. 비와 바람에도 쾌적함을 유지하도록 설계되었습니다. 적용 테크: gore-tex, GORE-TEX ePE with lining, Waterproofs.",
+        bodyKo: "Ava 여성용 골프 레인 재킷은 자유로운 움직임, 편안함, 첨단 날씨 보호 기능을 결합했습니다. 갈빈 그린의 수상 경력에 빛나는 DRYVR™ 컬렉션의 일부인 이 재킷은 100% 방수, 방풍 및 통기성이 뛰어난 차세대 GORE-TEX ePE 원단으로 제작되었습니다. 가벼운 메쉬 안감이 편안함과 따뜻함을 더해주며, PFAS 프리 발수 처리로 폭우 속에서도 성능이 유지됩니다. 대조적인 전체 길이 지퍼가 이 재킷에 모던한 느낌을 더해줍니다.",
         image: "/products/gg-pdp/ava-waterproof-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "골퍼를 위해 골퍼가 디자인한 Ava 재킷에는 움직임이 제한되지 않는 모양의 소매, 조절 가능한 커프스, 신축성 있는 조임끈 밑단이 포함되어 있어 맞춤형 핏을 연출할 수 있습니다. 재배치된 측면 솔기, 전면 및 내부 포켓과 같은 사려 깊은 디테일이 기능성을 더해 골프 코스에서 건조함과 편안함을 유지하는 데 완벽한 선택입니다.",
+        image: "/products/gg-pdp/ava-waterproof-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방수", "방풍", "높은 통기성", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "재활용 폴리에스터", "가벼운 메쉬 안감", "프론트 포켓", "내부 포켓", "조절 가능한 커프스", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치", "쉽게 움직일 수 있는 모양의 소매"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "gore-tex" },
-      { labelKo: "소재 · 테크", valueKo: "GORE-TEX ePE with lining" },
-      { labelKo: "소재 · 테크", valueKo: "Waterproofs" },
+      { labelKo: "아티클 번호", valueKo: "A01000549403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "DRYVR™ · 안감이 있는 GORE-TEX · 겉감 원단: ePE 멤브레인이 포함된 100% 재활용 폴리에스테르 · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "GORE-TEX ePE with lining" },
     ],
     variants: [
       {
@@ -5256,7 +5394,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Dalton - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #3.",
+    descriptionKo: "Dalton 하프 지퍼 미드레이어는 스포티한 브랜드 뒷면 스트라이프와 대비되는 지퍼 색상으로 따뜻함과 스타일을 제공하며 흰색 소매와 측면 패널이 보완됩니다. 가장 추운 온도에 맞게 설계된 Warming Effect #3 등급입니다. Dalton은 가슴과 뒷면의 재활용 패딩을 통기성이 뛰어나고 빠르게 건조되는 부드럽고 신축성 있는 bluesign® 승인 패브릭과 결합합니다. 전체적으로 재활용 폴리에스테르를 사용하는 이 미드레이어는 가장 필요한 곳에 정확하게 단열 기능을 제공합니다.",
     image: "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/1.jpg",
     images: ["/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/1.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/2.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/3.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/4.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/5.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/6.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/1.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/2.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/3.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/4.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/5.jpg", "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-white-orange/6.jpg"],
     accent: "#2C2A28",
@@ -5264,19 +5402,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 179.0,
     sku: "C01000838756001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dalton-insulating-golf-mid-layer-black-royal-blue",
-    registeredAt: "2026-07-28T21:09:33.000Z",
+    registeredAt: "2026-07-28T21:30:00.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Dalton - 보온 golf 미드레이어",
-        bodyKo: "Dalton - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #3.",
+        bodyKo: "Dalton 하프 지퍼 미드레이어는 스포티한 브랜드 뒷면 스트라이프와 대비되는 지퍼 색상으로 따뜻함과 스타일을 제공하며 흰색 소매와 측면 패널이 보완됩니다. 가장 추운 온도에 맞게 설계된 Warming Effect #3 등급입니다. Dalton은 가슴과 뒷면의 재활용 패딩을 통기성이 뛰어나고 빠르게 건조되는 부드럽고 신축성 있는 bluesign® 승인 패브릭과 결합합니다. 전체적으로 재활용 폴리에스테르를 사용하는 이 미드레이어는 가장 필요한 곳에 정확하게 단열 기능을 제공합니다.",
         image: "/products/gg-pdp/dalton-insulating-golf-mid-layer-black-royal-blue/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #3" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인 · 패딩: 100% 재활용 폴리에스테르 소재의 Thermore®" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #3" },
     ],
     variants: [
       {
@@ -5667,7 +5804,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Daniel - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "다니엘 집업 미드 레이어는 현대적인 스타일과 복고풍 영감을 받은 디자인을 결합했으며, 대비되는 녹색 및 흰색 줄무늬 골지 칼라와 커프스가 특징입니다. 토너먼트 타임 컬렉션의 일부인 이 미드 레이어는 INSULA™ 기술로 제작되어 워밍 효과 #2를 제공하여 부피 없이 최적의 보온성을 제공합니다. 부드럽고 신축성 있는 원단은 편안함과 통기성을 보장하며 속건성 특성은 코스 안팎에서 편안함을 유지합니다. 전면 포켓과 피부에 닿는 편안함이 뛰어난 Daniel 미드 레이어는 추운 날 레이어링하기에 적합합니다.",
     image: "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/1.jpg",
     images: ["/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/1.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/2.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/3.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/4.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/5.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/6.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/1.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/2.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/3.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/4.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/5.jpg", "/products/gg-pdp/daniel-insulating-golf-mid-layer-sand-navy-white/6.jpg"],
     accent: "#3A2F28",
@@ -5675,19 +5812,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000958669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daniel-insulating-golf-mid-layer-black-white-orange",
-    registeredAt: "2026-07-28T21:09:34.000Z",
+    registeredAt: "2026-07-28T21:30:01.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Daniel - 보온 golf 미드레이어",
-        bodyKo: "Daniel - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "다니엘 집업 미드 레이어는 현대적인 스타일과 복고풍 영감을 받은 디자인을 결합했으며, 대비되는 녹색 및 흰색 줄무늬 골지 칼라와 커프스가 특징입니다. 토너먼트 타임 컬렉션의 일부인 이 미드 레이어는 INSULA™ 기술로 제작되어 워밍 효과 #2를 제공하여 부피 없이 최적의 보온성을 제공합니다. 부드럽고 신축성 있는 원단은 편안함과 통기성을 보장하며 속건성 특성은 코스 안팎에서 편안함을 유지합니다. 전면 포켓과 피부에 닿는 편안함이 뛰어난 Daniel 미드 레이어는 추운 날 레이어링하기에 적합합니다.",
         image: "/products/gg-pdp/daniel-insulating-golf-mid-layer-black-white-orange/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Full Zip" },
+      { labelKo: "소재", valueKo: "INSULA™ · 60% 재활용 폴리에스터/33% 폴리에스터/7% 스판덱스" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -6002,7 +6138,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Daphne - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "Daphne은 현대적인 단순성과 고성능 단열재를 결합하여 역동적인 플레이에 적합한 다용도 미드 레이어를 만듭니다. 재활용 폴리에스터를 사용하여 제작된 INSULA™ 원단은 뛰어난 통기성을 유지하면서 보온 효과 #2를 제공합니다. 부드러운 마감과 부드러운 신축성은 움직일 때 편안함을 유지하며 그래픽 슬리브 구조는 세련된 스포츠 스타일을 더해줍니다. 간편한 레이어링을 위해 설계된 Daphne은 코스에서 클럽하우스로 쉽게 전환됩니다.",
     image: "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/1.jpg",
     images: ["/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/1.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/2.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/3.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/4.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/5.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/6.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/1.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/2.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/3.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/4.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/5.jpg", "/products/gg-pdp/daphne-insulating-golf-mid-layer-sand/6.jpg"],
     accent: "#1A2428",
@@ -6010,19 +6146,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "C01001069405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daphne-insulating-golf-mid-layer-navy",
-    registeredAt: "2026-07-28T21:09:35.000Z",
+    registeredAt: "2026-07-28T21:30:02.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Daphne - 보온 golf 미드레이어",
-        bodyKo: "Daphne - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "Daphne은 현대적인 단순성과 고성능 단열재를 결합하여 역동적인 플레이에 적합한 다용도 미드 레이어를 만듭니다. 재활용 폴리에스터를 사용하여 제작된 INSULA™ 원단은 뛰어난 통기성을 유지하면서 보온 효과 #2를 제공합니다. 부드러운 마감과 부드러운 신축성은 움직일 때 편안함을 유지하며 그래픽 슬리브 구조는 세련된 스포츠 스타일을 더해줍니다. 간편한 레이어링을 위해 설계된 Daphne은 코스에서 클럽하우스로 쉽게 전환됩니다.",
         image: "/products/gg-pdp/daphne-insulating-golf-mid-layer-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid Layer - Hoodie" },
+      { labelKo: "소재", valueKo: "INSULA™ · 60% 재활용 폴리에스터/33% 폴리에스터/7% 스판덱스" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -6218,7 +6353,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Darla - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "INSULA™ Warming Effect #2 기술로 디자인되어 시원한 라운드 동안 따뜻하고 편안함을 유지해주는 여성용 집업 미드 레이어 Darla를 소개합니다. 부드럽고 신축성 있는 원단은 뛰어난 편안함과 통기성을 제공하며, 속건성 특성은 게임 내내 건조함을 유지하고 집중력을 유지하도록 해줍니다. 실버 지퍼는 매끄럽고 스타일리시한 느낌을 더해 코스에서 레이어링할 수 있는 다용도 아이템일 뿐만 아니라 일상적인 착용에도 탁월한 옵션입니다. bluesign® 승인 패브릭으로 제작된 Darla의 부드러운 촉감과 탁월한 통기성은 게임을 통해 자유롭게 움직일 때 최적의 온도를 유지하도록 보장합니다.",
     image: "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/1.jpg",
     images: ["/products/gg-pdp/darla-insulating-golf-mid-layer-navy/1.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/2.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/3.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/4.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/5.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/6.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/1.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/2.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/3.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/4.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/5.jpg", "/products/gg-pdp/darla-insulating-golf-mid-layer-pink/6.jpg"],
     accent: "#1A2E28",
@@ -6226,18 +6361,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "C01000989405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/darla-insulating-golf-mid-layer-navy",
-    registeredAt: "2026-07-28T21:09:36.000Z",
+    registeredAt: "2026-07-28T21:30:03.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Darla - 보온 golf 미드레이어",
-        bodyKo: "Darla - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "INSULA™ Warming Effect #2 기술로 디자인되어 시원한 라운드 동안 따뜻하고 편안함을 유지해주는 여성용 집업 미드 레이어 Darla를 소개합니다. 부드럽고 신축성 있는 원단은 뛰어난 편안함과 통기성을 제공하며, 속건성 특성은 게임 내내 건조함을 유지하고 집중력을 유지하도록 해줍니다.",
         image: "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "실버 지퍼는 매끄럽고 스타일리시한 느낌을 더해 코스에서 레이어링할 수 있는 다용도 아이템일 뿐만 아니라 일상적인 착용에도 탁월한 옵션입니다. bluesign® 승인 패브릭으로 제작된 Darla의 부드러운 촉감과 탁월한 통기성은 게임을 통해 자유롭게 움직일 때 최적의 온도를 유지하도록 보장합니다.",
+        image: "/products/gg-pdp/darla-insulating-golf-mid-layer-navy/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스테르 95%/스판덱스 5%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -6522,7 +6663,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Darryl - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+    descriptionKo: "새로운 Warming Effect #1 패브릭으로 제작된 크루넥 풀오버 미드 레이어 Darryl을 소개합니다. 이 가볍고 부드러운 원단은 안팎으로 부드러운 표면을 제공하여 피부에 닿는 순간 탁월한 편안함을 제공합니다. 추운 날 레이어링하기에 완벽한 Darryl 미드 레이어는 뛰어난 통기성과 속건성을 제공하여 라운드 내내 편안함을 유지합니다. 부드러운 촉감과 신축성 있는 원단으로 움직임이 편해 골프나 기타 야외 활동에 탁월한 선택입니다.",
     image: "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/1.jpg",
     images: ["/products/gg-pdp/darryl-insulating-golf-mid-layer-black/1.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/2.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/3.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/4.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/5.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/6.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/1.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/2.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/3.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/4.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/5.jpg", "/products/gg-pdp/darryl-insulating-golf-mid-layer-navy/6.jpg"],
     accent: "#1F4D3A",
@@ -6530,20 +6671,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "C01001019403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/darryl-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T21:09:37.000Z",
+    registeredAt: "2026-07-28T21:30:04.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Darryl - 보온 golf 미드레이어",
-        bodyKo: "Darryl - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+        bodyKo: "새로운 Warming Effect #1 패브릭으로 제작된 크루넥 풀오버 미드 레이어 Darryl을 소개합니다. 이 가볍고 부드러운 원단은 안팎으로 부드러운 표면을 제공하여 피부에 닿는 순간 탁월한 편안함을 제공합니다. 추운 날 레이어링하기에 완벽한 Darryl 미드 레이어는 뛰어난 통기성과 속건성을 제공하여 라운드 내내 편안함을 유지합니다. 부드러운 촉감과 신축성 있는 원단으로 움직임이 편해 골프나 기타 야외 활동에 탁월한 선택입니다.",
         image: "/products/gg-pdp/darryl-insulating-golf-mid-layer-black/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스테르 96%/엘라스테인 4%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #1" },
     ],
     variants: [
       {
@@ -6784,7 +6923,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Dean - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "Dean은 생생한 색상과 클래식한 뉴트럴 색상으로 모두 제공되는 하나의 뛰어난 미드레이어에 구식 스타일과 첨단 기술 성능을 결합했습니다. 갈빈 그린의 재활용 폴리에스터 INSULA™ 원단으로 제작된 이 하프 지퍼 스웨터는 탁월한 보온성(온난화 효과 #2)을 제공하는 동시에 부드럽고 신축성이 있으며 관리가 용이합니다. Bluesign® 승인, 속건성 및 통기성이 뛰어난 구조 덕분에 Dean은 가장 추운 날에도 무게를 줄이지 않고 따뜻하고 편안함을 유지합니다.",
     image: "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/1.jpg",
     images: ["/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/1.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/2.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/3.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/4.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/5.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/6.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/1.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/2.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/3.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/4.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/5.jpg", "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/6.jpg"],
     accent: "#24302A",
@@ -6792,19 +6931,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000848669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dean-insulating-golf-mid-layer-black-white-orange",
-    registeredAt: "2026-07-28T21:09:38.000Z",
+    registeredAt: "2026-07-28T21:30:05.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Dean - 보온 golf 미드레이어",
-        bodyKo: "Dean - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "Dean은 생생한 색상과 클래식한 뉴트럴 색상으로 모두 제공되는 하나의 뛰어난 미드레이어에 구식 스타일과 첨단 기술 성능을 결합했습니다. 갈빈 그린의 재활용 폴리에스터 INSULA™ 원단으로 제작된 이 하프 지퍼 스웨터는 탁월한 보온성(온난화 효과 #2)을 제공하는 동시에 부드럽고 신축성이 있으며 관리가 용이합니다. Bluesign® 승인, 속건성 및 통기성이 뛰어난 구조 덕분에 Dean은 가장 추운 날에도 무게를 줄이지 않고 따뜻하고 편안함을 유지합니다.",
         image: "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -7629,7 +7767,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Del - 보온 골프 베스트은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+    descriptionKo: "재킷 아래나 골프 셔츠 위에 보온성을 더해 주는 레이어가 필요하십니까? 델(Del)은 보온효과 1등급으로 가벼운 보온성을 제공하는 쿼터지퍼 보온 골프조끼입니다. 통기성이 뛰어나고 속건성이 뛰어난 원단으로 제작된 Del은 부드럽고 신축성이 뛰어나며 피부에 닿는 느낌이 좋습니다. 이 하이테크 바디 워머는 bluesign® 승인 직물로 제작되었으며 갈빈 그린의 골프 레이어링 시스템인 Comfort Combinations의 일부로 골퍼가 코스에서 직면하게 될 기상 조건에 맞게 옷을 입는 데 도움이 됩니다. 쿼터 지퍼 보온 골프 조끼는 따뜻하거나 시원한 날씨에 레이어링하기에 이상적인 제품이며, 가볍고 휴대 가능한 디자인으로 골프 가방에 꼭 맞게 들어가 어떤 날씨 변화에도 대비할 수 있습니다.",
     image: "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/1.jpg",
     images: ["/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/1.jpg", "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/2.jpg", "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/3.jpg", "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/4.jpg", "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/5.jpg", "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/6.jpg", "/products/gg-pdp/del-insulating-vest-black/1.jpg", "/products/gg-pdp/del-insulating-vest-black/2.jpg", "/products/gg-pdp/del-insulating-vest-black/3.jpg", "/products/gg-pdp/del-insulating-vest-black/4.jpg", "/products/gg-pdp/del-insulating-vest-black/5.jpg", "/products/gg-pdp/del-insulating-vest-black/6.jpg"],
     accent: "#2A4038",
@@ -7637,19 +7775,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 69.0,
     sku: "C01000439390001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/del-insulating-golf-vest-crystal-blue-melange",
-    registeredAt: "2026-07-28T21:09:39.000Z",
+    registeredAt: "2026-07-28T21:30:06.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Del - 보온 골프 베스트",
-        bodyKo: "Del - 보온 골프 베스트은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+        bodyKo: "재킷 아래나 골프 셔츠 위에 보온성을 더해 주는 레이어가 필요하십니까? 델(Del)은 보온효과 1등급으로 가벼운 보온성을 제공하는 쿼터지퍼 보온 골프조끼입니다. 통기성이 뛰어나고 속건성이 뛰어난 원단으로 제작된 Del은 부드럽고 신축성이 뛰어나며 피부에 닿는 느낌이 좋습니다.",
         image: "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "이 하이테크 바디 워머는 bluesign® 승인 직물로 제작되었으며 갈빈 그린의 골프 레이어링 시스템인 Comfort Combinations의 일부로 골퍼가 코스에서 직면하게 될 기상 조건에 맞게 옷을 입는 데 도움이 됩니다. 쿼터 지퍼 보온 골프 조끼는 따뜻하거나 시원한 날씨에 레이어링하기에 이상적인 제품이며, 가볍고 휴대 가능한 디자인으로 골프 가방에 꼭 맞게 들어가 어떤 날씨 변화에도 대비할 수 있습니다.",
+        image: "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스터 100%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #1" },
     ],
     variants: [
       {
@@ -7935,7 +8078,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Denise - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "두꺼운 면 후드티에서 벗어나셨나요? 무게감 없이 따뜻함을 선사하는 가볍고 부드러운 여성용 골프 후디, 데니스(Denise)를 만나보세요. 갈빈 그린 INSULA™ 미드레이어 원단으로 제작된 이 신축성 있고 따뜻한 후드티는 통기성이 뛰어나고 속건성이 뛰어납니다. 보온 효과 2등급을 받았습니다. Denise는 따뜻한 날에는 재킷 안에 레이어드하거나, 추운 날에는 셔츠와 함께 단독으로 착용할 수 있습니다. 이 bluesign® 승인 패브릭은 놀라울 정도로 부드러운 촉감을 가지고 있어 골프 코스, 체육관 또는 개와 산책할 때 추가 레이어로 이상적입니다.",
     image: "/products/gg-pdp/denise-insulating-sweatshirt-navy/1.jpg",
     images: ["/products/gg-pdp/denise-insulating-sweatshirt-navy/1.jpg", "/products/gg-pdp/denise-insulating-sweatshirt-navy/2.jpg", "/products/gg-pdp/denise-insulating-sweatshirt-navy/3.jpg", "/products/gg-pdp/denise-insulating-sweatshirt-navy/4.jpg", "/products/gg-pdp/denise-insulating-sweatshirt-navy/5.jpg", "/products/gg-pdp/denise-insulating-sweatshirt-navy/6.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/1.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/2.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/3.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/4.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/5.jpg", "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/6.jpg"],
     accent: "#2F5A3E",
@@ -7943,19 +8086,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "C01000539405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/denise-insulating-sweatshirt-navy",
-    registeredAt: "2026-07-28T21:09:40.000Z",
+    registeredAt: "2026-07-28T21:30:07.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Denise - 보온 golf sweatshirt",
-        bodyKo: "Denise - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "두꺼운 면 후드티에서 벗어나셨나요? 무게감 없이 따뜻함을 선사하는 가볍고 부드러운 여성용 골프 후디, 데니스(Denise)를 만나보세요. 갈빈 그린 INSULA™ 미드레이어 원단으로 제작된 이 신축성 있고 따뜻한 후드티는 통기성이 뛰어나고 속건성이 뛰어납니다.",
         image: "/products/gg-pdp/denise-insulating-sweatshirt-navy/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "보온 효과 2등급을 받았습니다. Denise는 따뜻한 날에는 재킷 안에 레이어드하거나, 추운 날에는 셔츠와 함께 단독으로 착용할 수 있습니다. 이 bluesign® 승인 패브릭은 놀라울 정도로 부드러운 촉감을 가지고 있어 골프 코스, 체육관 또는 개와 산책할 때 추가 레이어로 이상적입니다.",
+        image: "/products/gg-pdp/denise-insulating-sweatshirt-navy/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid Layer - Hoodie" },
+      { labelKo: "소재", valueKo: "INSULA™ · 60% 재활용 폴리에스터/33% 폴리에스터/7% 스판덱스" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -8151,7 +8299,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Derek - 보온 neck warmer은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "마이크로 스트라이프 프린트가 돋보이는 하이테크 INSULA™ 넥 워머 Derek으로 목을 따뜻하게 유지하세요. 부드럽고 통기성이 뛰어난 원단으로 제작된 이 다용도 제품은 보온 기능을 제공합니다.",
     image: "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/1.jpg",
     images: ["/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/1.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/2.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/3.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/4.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/5.jpg"],
     accent: "#1E3A4A",
@@ -8159,18 +8307,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 21.0,
     sku: "C01000639398001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/derek-insulating-neck-warmer-sunny-lime",
-    registeredAt: "2026-07-28T21:09:41.000Z",
+    registeredAt: "2026-07-28T21:30:08.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Derek - 보온 neck warmer",
-        bodyKo: "Derek - 보온 neck warmer은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "마이크로 스트라이프 프린트가 돋보이는 하이테크 INSULA™ 넥 워머 Derek으로 목을 따뜻하게 유지하세요. 부드럽고 통기성이 뛰어난 원단으로 제작된 이 다용도 제품은 보온 기능을 제공합니다.",
         image: "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스테르, 10% 엘라스테인" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -8200,7 +8348,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Dex - 보온 golf neck warmer은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "Dex는 부드럽고 신축성이 뛰어난 INSULA™ 소재로 제작되어 통기성이 뛰어나고 빠르게 건조되는 넥워머입니다. 내구성이 뛰어나고 관리가 쉬운 이 보온 넥 워머는 추운 날씨에 골프를 칠 때 휴대하기에 이상적입니다. Dex는 bluesign® 승인을 받은 재활용 폴리에스테르 원단으로 만든 보온 목워머입니다. 보온 효과 2등급을 받은 Dex는 추운 날씨에도 따뜻함을 제공하도록 설계되었습니다.",
     image: "/products/gg-pdp/dex-insulating-neck-warmer-black/1.jpg",
     images: ["/products/gg-pdp/dex-insulating-neck-warmer-black/1.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/2.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/3.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/4.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/5.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/6.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/1.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/2.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/3.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/4.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/5.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/6.jpg"],
     accent: "#243447",
@@ -8208,18 +8356,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.0,
     sku: "C01000379403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dex-insulating-neck-warmer-black",
-    registeredAt: "2026-07-28T21:09:42.000Z",
+    registeredAt: "2026-07-28T21:30:09.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Dex - 보온 golf neck warmer",
-        bodyKo: "Dex - 보온 golf neck warmer은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "Dex는 부드럽고 신축성이 뛰어난 INSULA™ 소재로 제작되어 통기성이 뛰어나고 빠르게 건조되는 넥워머입니다. 내구성이 뛰어나고 관리가 쉬운 이 보온 넥 워머는 추운 날씨에 골프를 칠 때 휴대하기에 이상적입니다.",
         image: "/products/gg-pdp/dex-insulating-neck-warmer-black/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Dex는 bluesign® 승인을 받은 재활용 폴리에스테르 원단으로 만든 보온 목워머입니다. 보온 효과 2등급을 받은 Dex는 추운 날씨에도 따뜻함을 제공하도록 설계되었습니다.",
+        image: "/products/gg-pdp/dex-insulating-neck-warmer-black/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -8339,7 +8493,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Dion - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+    descriptionKo: "Dion은 시원한 날씨에 가벼운 스웨터로 착용하거나 재킷이나 조끼 아래 중간 레이어로 착용하도록 디자인된 경량 남성용 멜란지 쿼터 지퍼입니다. 신축성이 있고 편안한 속건성 bluesign® 승인 원단으로 제작된 Dion은 부드러운 촉감과 피부에 닿는 느낌이 좋습니다. 골퍼를 위해 설계된 다양한 첨단 기술의 다용도 미드레이어 중 하나인 Dion은 보온 효과 1위로 평가되어 최대의 통기성을 제공합니다. 갈빈 그린의 iNSULA™ 미드 레이어 컬렉션은 골퍼들이 플레이하는 동안 편안함과 자유로운 움직임을 제공하도록 디자인되었습니다. 이 다재다능한 제품을 사용하면 골프 코스에서 퍼포먼스를 펼칠 수 있으며 겨울 스포츠, 야외 활동 중에 착용할 수 있으며 심지어 겨울 코트 밑에 추가 레이어로 착용할 수도 있습니다.",
     image: "/products/gg-pdp/dion-insulating-golf-mid-layer-black/1.jpg",
     images: ["/products/gg-pdp/dion-insulating-golf-mid-layer-black/1.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-black/2.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-black/3.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-black/4.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-black/5.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-black/6.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/1.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/2.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/3.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/4.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/5.jpg", "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/6.jpg"],
     accent: "#2C2A28",
@@ -8347,20 +8501,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "C01000429403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dion-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T21:09:43.000Z",
+    registeredAt: "2026-07-28T21:30:10.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Dion - 보온 golf 미드레이어",
-        bodyKo: "Dion - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+        bodyKo: "Dion은 시원한 날씨에 가벼운 스웨터로 착용하거나 재킷이나 조끼 아래 중간 레이어로 착용하도록 디자인된 경량 남성용 멜란지 쿼터 지퍼입니다. 신축성이 있고 편안한 속건성 bluesign® 승인 원단으로 제작된 Dion은 부드러운 촉감과 피부에 닿는 느낌이 좋습니다. 골퍼를 위해 설계된 다양한 첨단 기술의 다용도 미드레이어 중 하나인 Dion은 보온 효과 1위로 평가되어 최대의 통기성을 제공합니다.",
         image: "/products/gg-pdp/dion-insulating-golf-mid-layer-black/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "갈빈 그린의 iNSULA™ 미드 레이어 컬렉션은 골퍼들이 플레이하는 동안 편안함과 자유로운 움직임을 제공하도록 디자인되었습니다. 이 다재다능한 제품을 사용하면 골프 코스에서 퍼포먼스를 펼칠 수 있으며 겨울 스포츠, 야외 활동 중에 착용할 수 있으며 심지어 겨울 코트 밑에 추가 레이어로 착용할 수도 있습니다.",
+        image: "/products/gg-pdp/dion-insulating-golf-mid-layer-black/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스터 100%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #1" },
     ],
     variants: [
       {
@@ -8736,7 +8894,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Diora - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+    descriptionKo: "Diora는 갈빈 그린의 하이테크 INSULA™ 패브릭으로 제작된 가벼운 여성용 멜란지 쿼터 지퍼 미드 레이어입니다. 스웨터나 재킷 아래 레이어로 가벼운 보온 레이어를 제공하도록 디자인된 Diora는 다재다능한 골프 옷장에 꼭 필요한 아이템입니다. bluesign® 승인 원단으로 제작된 이 풀오버는 부드러운 촉감과 피부에 닿는 편안함이 뛰어납니다. 보온 효과 1등급을 받은 이 여성용 멜란지 쿼터 지퍼는 가장 가볍고 부드러운 기술을 제공하며 최대의 통기성과 자유로운 움직임을 위해 설계되었습니다. 통기성이 뛰어나고 가벼우며 속건성이 있어 다양한 조건에서 쉽게 착용할 수 있으며, 필요하지 않을 때는 골프 가방에 넣어 보관할 수 있습니다.",
     image: "/products/gg-pdp/diora-insulating-golf-mid-layer-black/1.jpg",
     images: ["/products/gg-pdp/diora-insulating-golf-mid-layer-black/1.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-black/2.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-black/3.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-black/4.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-black/5.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-black/6.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/1.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/2.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/3.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/4.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/5.jpg", "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/6.jpg"],
     accent: "#3A2F28",
@@ -8744,20 +8902,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "C01000449403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/diora-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T21:09:44.000Z",
+    registeredAt: "2026-07-28T21:30:11.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Diora - 보온 golf 미드레이어",
-        bodyKo: "Diora - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+        bodyKo: "Diora는 갈빈 그린의 하이테크 INSULA™ 패브릭으로 제작된 가벼운 여성용 멜란지 쿼터 지퍼 미드 레이어입니다. 스웨터나 재킷 아래 레이어로 가벼운 보온 레이어를 제공하도록 디자인된 Diora는 다재다능한 골프 옷장에 꼭 필요한 아이템입니다. bluesign® 승인 원단으로 제작된 이 풀오버는 부드러운 촉감과 피부에 닿는 편안함이 뛰어납니다.",
         image: "/products/gg-pdp/diora-insulating-golf-mid-layer-black/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "보온 효과 1등급을 받은 이 여성용 멜란지 쿼터 지퍼는 가장 가볍고 부드러운 기술을 제공하며 최대의 통기성과 자유로운 움직임을 위해 설계되었습니다. 통기성이 뛰어나고 가벼우며 속건성이 있어 다양한 조건에서 쉽게 착용할 수 있으며, 필요하지 않을 때는 골프 가방에 넣어 보관할 수 있습니다.",
+        image: "/products/gg-pdp/diora-insulating-golf-mid-layer-black/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스터 100%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #1" },
     ],
     variants: [
       {
@@ -9313,7 +9475,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Dixie - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "Dixie는 소매 아래로 대조적인 스트라이프가 특징인 스포티한 풀 지퍼 골프 미드 레이어입니다. 갈빈 그린의 INSULA™ 미드 레이어 컬렉션 중 하나인 이 다용도 제품은 재킷 아래의 보온 레이어로, 온화한 날씨에는 가벼운 아우터 레이어로 활용됩니다. 통기성이 뛰어나고 속건성이 뛰어난 부드럽고 신축성 있는 원단으로 제작된 Dixie는 보온 효과 #2 등급을 받아 뛰어난 보온성을 제공합니다. bluesign® 승인 재활용 폴리에스테르로 제작된 Dixie는 지속 가능하고 환경 친화적인 선택이기도 합니다.",
     image: "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/1.jpg",
     images: ["/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/1.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/2.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/3.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/4.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/5.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/6.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/1.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/2.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/3.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/4.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/5.jpg", "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/6.jpg"],
     accent: "#1A2428",
@@ -9321,19 +9483,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000698705001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-crystal-blue-white",
-    registeredAt: "2026-07-28T21:09:45.000Z",
+    registeredAt: "2026-07-28T21:30:12.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Dixie - 보온 golf 미드레이어",
-        bodyKo: "Dixie - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "Dixie는 소매 아래로 대조적인 스트라이프가 특징인 스포티한 풀 지퍼 골프 미드 레이어입니다. 갈빈 그린의 INSULA™ 미드 레이어 컬렉션 중 하나인 이 다용도 제품은 재킷 아래의 보온 레이어로, 온화한 날씨에는 가벼운 아우터 레이어로 활용됩니다.",
         image: "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "통기성이 뛰어나고 속건성이 뛰어난 부드럽고 신축성 있는 원단으로 제작된 Dixie는 보온 효과 #2 등급을 받아 뛰어난 보온성을 제공합니다. bluesign® 승인 재활용 폴리에스테르로 제작된 Dixie는 지속 가능하고 환경 친화적인 선택이기도 합니다.",
+        image: "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Full Zip" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -9798,7 +9965,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Don - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+    descriptionKo: "새로운 Warming Effect #1 패브릭으로 제작된 하프 지퍼 풀오버 ​​미드 레이어 Don을 소개합니다. 이 가볍고 부드러운 원단은 안팎으로 부드러운 표면을 제공하여 피부에 닿는 순간 탁월한 편안함을 제공합니다. 따뜻한 날에는 추가 레이어로 착용하거나 따뜻함을 더하기 위해 재킷 아래에 착용하도록 설계된 Don 미드 레이어는 통기성과 속건성을 결합하여 라운드 내내 편안함을 유지합니다. 신축성 있는 원단으로 움직임이 자유롭고, 부드러운 촉감이 활동적인 플레이 중에 편안함을 보장합니다.",
     image: "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/1.jpg",
     images: ["/products/gg-pdp/don-insulating-golf-mid-layer-black-white/1.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/2.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/3.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/4.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/5.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/6.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/1.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/2.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/3.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/4.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/5.jpg", "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/6.jpg"],
     accent: "#1A2E28",
@@ -9806,20 +9973,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "C01001009020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/don-insulating-golf-mid-layer-black-white",
-    registeredAt: "2026-07-28T21:09:46.000Z",
+    registeredAt: "2026-07-28T21:30:13.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Don - 보온 golf 미드레이어",
-        bodyKo: "Don - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #1.",
+        bodyKo: "새로운 Warming Effect #1 패브릭으로 제작된 하프 지퍼 풀오버 ​​미드 레이어 Don을 소개합니다. 이 가볍고 부드러운 원단은 안팎으로 부드러운 표면을 제공하여 피부에 닿는 순간 탁월한 편안함을 제공합니다. 따뜻한 날에는 추가 레이어로 착용하거나 따뜻함을 더하기 위해 재킷 아래에 착용하도록 설계된 Don 미드 레이어는 통기성과 속건성을 결합하여 라운드 내내 편안함을 유지합니다. 신축성 있는 원단으로 움직임이 자유롭고, 부드러운 촉감이 활동적인 플레이 중에 편안함을 보장합니다.",
         image: "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 폴리에스테르 96%/엘라스테인 4%" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #1" },
     ],
     variants: [
       {
@@ -10059,7 +10224,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Donnie - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "골프장에 나가서 추우면 따뜻함을 원합니다. 하지만 잘 놀려면 거추장스러운 옷을 원하지 않습니다. 가볍고 통기성이 뛰어나며 보온성이 뛰어난 남성용 골프 후드티 Donnie를 만나보세요. 무게 없이 따뜻함을 제공하는 Donnie는 추운 날에는 재킷 안에, 시원할 때는 셔츠 위에 착용하는 것이 이상적입니다. 보온 효과 2등급을 받은 갈빈 그린 INSULA™ 미드레이어 원단으로 제작된 Donnie 후디는 통기성이 뛰어나고 신축성이 뛰어나며 속건성이 뛰어납니다. 이 bluesign® 승인 패브릭은 놀라울 정도로 부드러운 촉감을 가지고 있어 골프 코스, 체육관 또는 개와 산책할 때 추가 레이어로 이상적입니다.",
     image: "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/1.jpg",
     images: ["/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/1.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/2.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/3.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/4.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/5.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/6.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/1.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/2.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/3.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/4.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/5.jpg", "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/6.jpg"],
     accent: "#1F4D3A",
@@ -10067,19 +10232,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 119.0,
     sku: "C01000518759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/donnie-insulating-golf-sweatshirt-crystal-blue",
-    registeredAt: "2026-07-28T21:09:47.000Z",
+    registeredAt: "2026-07-28T21:30:14.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Donnie - 보온 golf sweatshirt",
-        bodyKo: "Donnie - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "골프장에 나가서 추우면 따뜻함을 원합니다. 하지만 잘 놀려면 거추장스러운 옷을 원하지 않습니다. 가볍고 통기성이 뛰어나며 보온성이 뛰어난 남성용 골프 후드티 Donnie를 만나보세요. 무게 없이 따뜻함을 제공하는 Donnie는 추운 날에는 재킷 안에, 시원할 때는 셔츠 위에 착용하는 것이 이상적입니다.",
         image: "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "보온 효과 2등급을 받은 갈빈 그린 INSULA™ 미드레이어 원단으로 제작된 Donnie 후디는 통기성이 뛰어나고 신축성이 뛰어나며 속건성이 뛰어납니다. 이 bluesign® 승인 패브릭은 놀라울 정도로 부드러운 촉감을 가지고 있어 골프 코스, 체육관 또는 개와 산책할 때 추가 레이어로 이상적입니다.",
+        image: "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid Layer - Hoodie" },
+      { labelKo: "소재", valueKo: "INSULA™ · 60% 재활용 폴리에스터/33% 폴리에스터/7% 스판덱스" },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -10635,7 +10805,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Drake - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "Drake는 부드럽고 신축성이 있으며 편안한 하이테크 골프 미드레이어입니다. INSULA™ 소재의 새로운 친환경 소재로 제작된 이 패브릭은 재활용 플라스틱 병으로 만들어졌으며 bluesign® 승인 패브릭입니다. 다양한 컬러로 출시되어 여유로운 핏을 원하시면 한 사이즈 크게 구매하시는 것을 권장합니다. Drake는 당사의 베스트셀러이자 견고한 하이테크 골프 미드레이어이며 갈빈 그린 컬렉션의 주력 의류로 자리매김했습니다. 통기성이 뛰어난 실용적인 하프지퍼로 보온효과 2호로 뛰어난 보온성을 제공합니다. 시원한 날에는 미드 레이어로, 따뜻한 날에는 아우터 레이어로 착용할 수 있도록 디자인된 Drake는 골프 코스와 그 이상을 위한 다용도 제품입니다.",
     image: "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/1.jpg",
     images: ["/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/1.jpg", "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/2.jpg", "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/3.jpg", "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/4.jpg", "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/5.jpg", "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/6.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/1.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/2.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/3.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/4.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/5.jpg", "/products/gg-pdp/drake-insulating-mid-layer-black/6.jpg"],
     accent: "#24302A",
@@ -10643,20 +10813,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.4,
     sku: "C01000218763001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/drake-insulating-golf-mid-layer-royal-blue",
-    registeredAt: "2026-07-28T21:09:48.000Z",
+    registeredAt: "2026-07-28T21:30:15.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Drake - 보온 golf 미드레이어",
-        bodyKo: "Drake - 보온 golf 미드레이어은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "Drake는 부드럽고 신축성이 있으며 편안한 하이테크 골프 미드레이어입니다. INSULA™ 소재의 새로운 친환경 소재로 제작된 이 패브릭은 재활용 플라스틱 병으로 만들어졌으며 bluesign® 승인 패브릭입니다. 다양한 컬러로 출시되어 여유로운 핏을 원하시면 한 사이즈 크게 구매하시는 것을 권장합니다.",
         image: "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Drake는 당사의 베스트셀러이자 견고한 하이테크 골프 미드레이어이며 갈빈 그린 컬렉션의 주력 의류로 자리매김했습니다. 통기성이 뛰어난 실용적인 하프지퍼로 보온효과 2호로 뛰어난 보온성을 제공합니다. 시원한 날에는 미드 레이어로, 따뜻한 날에는 아우터 레이어로 착용할 수 있도록 디자인된 Drake는 골프 코스와 그 이상을 위한 다용도 제품입니다.",
+        image: "/products/gg-pdp/drake-insulating-golf-mid-layer-royal-blue/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid layer - Half Zip" },
-      { labelKo: "소재 · 테크", valueKo: "Midlayers" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인." },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -11152,7 +11326,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Dunn - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+    descriptionKo: "GALVIN GREEN CONCEPT 컬렉션의 Dunn 후드티는 웨이브 솔기 기능과 전면 로고로 스타일과 성능을 결합했습니다. INSULA™ 제품군으로 제작된 이 후드티는 보온 효과 #2를 제공하여 부피 없이 최적의 따뜻함을 제공합니다. 부드럽고 신축성 있는 원단은 편안함과 유연성을 보장하며, 통기성과 속건성 특성은 코스에서 편안함을 유지합니다. 샌드, 화이트, 블랙 색상으로 제공되는 Dunn 후드티는 bluesign® 승인 패브릭으로 제작되었습니다.",
     image: "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/1.jpg",
     images: ["/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/1.jpg", "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/2.jpg", "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/3.jpg", "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/4.jpg", "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/5.jpg", "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/6.jpg"],
     accent: "#2A4038",
@@ -11160,19 +11334,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 95.4,
     sku: "C01001048746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dunn-insulating-golf-sweatshirt-sand-white",
-    registeredAt: "2026-07-28T21:09:49.000Z",
+    registeredAt: "2026-07-28T21:30:16.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Dunn - 보온 golf sweatshirt",
-        bodyKo: "Dunn - 보온 golf sweatshirt은 INSULA™ 보온 기술이 적용된 갈빈 그린 미드레이어입니다. 단독 착용은 물론 레이어링에도 잘 어울립니다. 적용 테크: insula, INSULA™ Warming effect #2.",
+        bodyKo: "GALVIN GREEN CONCEPT 컬렉션의 Dunn 후드티는 웨이브 솔기 기능과 전면 로고로 스타일과 성능을 결합했습니다. INSULA™ 제품군으로 제작된 이 후드티는 보온 효과 #2를 제공하여 부피 없이 최적의 따뜻함을 제공합니다. 부드럽고 신축성 있는 원단은 편안함과 유연성을 보장하며, 통기성과 속건성 특성은 코스에서 편안함을 유지합니다. 샌드, 화이트, 블랙 색상으로 제공되는 Dunn 후드티는 bluesign® 승인 패브릭으로 제작되었습니다.",
         image: "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "insula" },
-      { labelKo: "소재 · 테크", valueKo: "INSULA™ Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Mid Layer - Hoodie" },
+      { labelKo: "소재", valueKo: "INSULA™ · 90% 재활용 폴리에스터/10% 엘라스테인." },
+      { labelKo: "테크놀로지", valueKo: "INSULA™ Warming effect #2" },
     ],
     variants: [
       {
@@ -11263,7 +11436,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Elaine - Thermal base 레이어 golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+    descriptionKo: "추운 날씨의 골프를 위해 특별히 개발된 Elaine 베이스 레이어 탑은 신축성이 있고 부드러워 플레이하는 동안 자유롭게 움직일 수 있고 모든 범위의 움직임이 가능합니다. 원액 염색된 bluesign® 패브릭으로 제작된 이 가볍고 통풍이 잘 되는 소재는 완벽한 통기성을 제공하는 동시에 열 보호 기능을 제공합니다. Elaine 여성용 보온 베이스 레이어는 추운 라운드나 겨울 활동 중에 셔츠 안에 착용할 수 있는 최고의 베이스 레이어입니다. 추운 날씨의 골프에는 체온을 유지하기 위한 열 베이스 레이어부터 시작되는 우수한 품질의 레이어링 시스템이 필요합니다. Elaine은 자카드 니트 패턴이 돋보이는 긴 소매 크루넥 여성용 보온 베이스 레이어입니다. 셔츠, 미드레이어 및/또는 겉옷 아래에 착용하도록 디자인된 이 제품의 열 특성은 따뜻함을 유지하는 데 도움이 되며, 가볍고 통기성이 있으며 습기를 흡수하는 원단은 라운드 중에 편안함을 보장합니다.",
     image: "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/1.jpg",
     images: ["/products/gg-pdp/elaine-thermal-base-layer-top-black-red/1.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/2.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/3.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/4.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/5.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/6.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/1.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/2.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/3.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/4.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/5.jpg", "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/6.jpg"],
     accent: "#2F5A3E",
@@ -11271,17 +11444,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "E01000059107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elaine-thermal-base-layer-top-black-red",
-    registeredAt: "2026-07-28T21:09:50.000Z",
+    registeredAt: "2026-07-28T21:30:17.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Elaine - Thermal base 레이어 golf top",
-        bodyKo: "Elaine - Thermal base 레이어 golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+        bodyKo: "추운 날씨의 골프를 위해 특별히 개발된 Elaine 베이스 레이어 탑은 신축성이 있고 부드러워 플레이하는 동안 자유롭게 움직일 수 있고 모든 범위의 움직임이 가능합니다. 원액 염색된 bluesign® 패브릭으로 제작된 이 가볍고 통풍이 잘 되는 소재는 완벽한 통기성을 제공하는 동시에 열 보호 기능을 제공합니다. Elaine 여성용 보온 베이스 레이어는 추운 라운드나 겨울 활동 중에 셔츠 안에 착용할 수 있는 최고의 베이스 레이어입니다.",
         image: "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "추운 날씨의 골프에는 체온을 유지하기 위한 열 베이스 레이어부터 시작되는 우수한 품질의 레이어링 시스템이 필요합니다. Elaine은 자카드 니트 패턴이 돋보이는 긴 소매 크루넥 여성용 보온 베이스 레이어입니다. 셔츠, 미드레이어 및/또는 겉옷 아래에 착용하도록 디자인된 이 제품의 열 특성은 따뜻함을 유지하는 데 도움이 되며, 가볍고 통기성이 있으며 습기를 흡수하는 원단은 라운드 중에 편안함을 보장합니다.",
+        image: "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["온난화 효과 #2", "신축성 있는 원단", "높은 통기성", "추운 날씨의 골프를 위해 특별히 개발된 제품", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "원액염색원단", "크루넥 칼라"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "Baselayer" },
+      { labelKo: "아티클 번호", valueKo: "E01000059107" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 173cm이고 S/36 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "SKINTIGHT™ 열 · 폴리에스터 95%/엘라스테인 5%." },
+      { labelKo: "테크놀로지", valueKo: "SKINTIGHT™ thermal" },
     ],
     variants: [
       {
@@ -11521,7 +11705,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Ella - UV protection golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+    descriptionKo: "OEKO-TEX 인증 원단으로 제작된 이 여성용 긴소매 UV 베이스 레이어는 UV 차단 기능이 50+로 지속 가능하게 생산되며 오래 지속됩니다. 일광화상을 피하고 열기가 게임을 방해하지 않도록 하십시오. Ella는 단독으로 착용하거나 골프 셔츠 안에 착용하여 자외선 차단 기능을 강화할 수 있습니다. Ella는 가장 더운 날에 자외선 차단 기능을 제공하도록 디자인된 여성용 긴소매 UV 베이스 레이어입니다. 단독으로 착용하거나 폴로 셔츠 안에 착용하는 Ella는 50+의 자외선 차단 기능을 제공하며 통기성이 뛰어나고 가볍습니다. 태양이 빛날 때 절대 후회하지 않을 옷입니다.",
     image: "/products/gg-pdp/ella-uv-protection-top-white/1.jpg",
     images: ["/products/gg-pdp/ella-uv-protection-top-white/1.jpg", "/products/gg-pdp/ella-uv-protection-top-white/2.jpg", "/products/gg-pdp/ella-uv-protection-top-white/3.jpg", "/products/gg-pdp/ella-uv-protection-top-white/4.jpg", "/products/gg-pdp/ella-uv-protection-top-white/5.jpg", "/products/gg-pdp/ella-uv-protection-top-white/6.jpg"],
     accent: "#1E3A4A",
@@ -11529,17 +11713,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 69.0,
     sku: "E01000049409001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ella-uv-protection-top-white",
-    registeredAt: "2026-07-28T21:09:51.000Z",
+    registeredAt: "2026-07-28T21:30:18.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Ella - UV protection golf top",
-        bodyKo: "Ella - UV protection golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+        bodyKo: "OEKO-TEX 인증 원단으로 제작된 이 여성용 긴소매 UV 베이스 레이어는 UV 차단 기능이 50+로 지속 가능하게 생산되며 오래 지속됩니다. 일광화상을 피하고 열기가 게임을 방해하지 않도록 하십시오. Ella는 단독으로 착용하거나 골프 셔츠 안에 착용하여 자외선 차단 기능을 강화할 수 있습니다.",
         image: "/products/gg-pdp/ella-uv-protection-top-white/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Ella는 가장 더운 날에 자외선 차단 기능을 제공하도록 디자인된 여성용 긴소매 UV 베이스 레이어입니다. 단독으로 착용하거나 폴로 셔츠 안에 착용하는 Ella는 50+의 자외선 차단 기능을 제공하며 통기성이 뛰어나고 가볍습니다. 태양이 빛날 때 절대 후회하지 않을 옷입니다.",
+        image: "/products/gg-pdp/ella-uv-protection-top-white/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["자외선 차단 50+", "신축성 있는 원단", "높은 통기성", "화창한 날씨의 골프를 위해 특별히 개발된 제품입니다.", "크루넥 칼라", "메인 원단은 OEKO-TEX® STANDARD 100 인증을 받았습니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "Baselayer" },
+      { labelKo: "아티클 번호", valueKo: "E01000049409" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 5' 8\" / 173cm이며 S 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "SKINTIGHT™ 프레시 · 폴리에스터 88%/스판덱스 12%" },
+      { labelKo: "테크놀로지", valueKo: "SKINTIGHT™ fresh" },
     ],
     variants: [
       {
@@ -11645,7 +11840,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Elmo - Thermal base 레이어 golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+    descriptionKo: "이 남성용 보온 베이스 레이어의 가볍고 통풍이 잘되는 소재는 최적의 따뜻함, 편안함 및 통기성을 제공합니다. 추운 날씨에 옷을 입을 때 가장 먼저 입는 옷입니다. bluesign® 승인 패브릭으로 제작된 Elmo는 모든 야외 활동 중에 착용할 수 있는 다용도 제품입니다. 이 긴팔 남성용 보온 베이스 레이어 탑은 기능성 편직 기술과 첨단 섬유를 결합하여 피부에 닿는 느낌이 좋고 부드럽고 신축성이 있는 원단을 만들어냅니다. 습기를 흡수하는 원단으로 제작된 Elmo 크루 넥 탑은 어떠한 기상 조건에서도 골프 코스에서 경기를 펼칠 수 있도록 설계되었습니다.",
     image: "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/1.jpg",
     images: ["/products/gg-pdp/elmo-thermal-base-layer-top-black-red/1.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/2.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/3.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/4.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/5.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/6.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/1.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/2.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/3.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/4.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/5.jpg", "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/6.jpg"],
     accent: "#243447",
@@ -11653,17 +11848,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "E01000019107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elmo-thermal-base-layer-top-black-red",
-    registeredAt: "2026-07-28T21:09:52.000Z",
+    registeredAt: "2026-07-28T21:30:19.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Elmo - Thermal base 레이어 golf top",
-        bodyKo: "Elmo - Thermal base 레이어 golf top은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+        bodyKo: "이 남성용 보온 베이스 레이어의 가볍고 통풍이 잘되는 소재는 최적의 따뜻함, 편안함 및 통기성을 제공합니다. 추운 날씨에 옷을 입을 때 가장 먼저 입는 옷입니다. bluesign® 승인 패브릭으로 제작된 Elmo는 모든 야외 활동 중에 착용할 수 있는 다용도 제품입니다.",
         image: "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "이 긴팔 남성용 보온 베이스 레이어 탑은 기능성 편직 기술과 첨단 섬유를 결합하여 피부에 닿는 느낌이 좋고 부드럽고 신축성이 있는 원단을 만들어냅니다. 습기를 흡수하는 원단으로 제작된 Elmo 크루 넥 탑은 어떠한 기상 조건에서도 골프 코스에서 경기를 펼칠 수 있도록 설계되었습니다.",
+        image: "/products/gg-pdp/elmo-thermal-base-layer-top-black-red/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["온난화 효과 #2", "신축성 있는 원단", "높은 통기성", "추운 날씨의 골프를 위해 특별히 개발된 제품", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "원액염색원단", "크루넥 칼라"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "Baselayer" },
+      { labelKo: "아티클 번호", valueKo: "E01000019107" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 1\" / 186cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "SKINTIGHT™ 열 · 폴리에스터 95%/엘라스테인 5%" },
+      { labelKo: "테크놀로지", valueKo: "SKINTIGHT™ thermal" },
     ],
     variants: [
       {
@@ -11903,7 +12109,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Lane - 방풍 and 발수 golf 팬츠은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "스트레치 기능이 내장된 레인 팬츠는 편안하고 쉽게 플레이할 수 있어 자유롭게 움직일 수 있습니다. 소재는 방풍 및 발수 마감 처리되어 있어 통기성이 저하되지 않습니다. 앞면과 뒷면 포켓이 있어 기능적이며 유선형 컷이 마음에 듭니다. 보온효과 2등급으로 일반 골프팬츠로는 너무 추울 때, 방수팬츠로는 너무 건조한 날씨에 활용하기 좋은 팬츠입니다. 방수 바지를 입을 만큼 젖지는 않지만 골프 바지를 입기에는 너무 추울 때, 추운 날씨에도 골프 코스에서 따뜻함을 유지하도록 디자인된 방풍 및 발수 골프 바지인 레인(Lane)이 필요합니다. 이 4포켓 팬츠는 추운 날씨에도 편안함을 유지하도록 디자인된 골프 아우터 컬렉션인 갈빈 그린의 INTERFACE™ 제품군에 속합니다.",
     image: "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/1.jpg",
     images: ["/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/1.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/2.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/3.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/4.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/5.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/6.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/1.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/2.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/3.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/4.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/5.jpg", "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/6.jpg"],
     accent: "#2C2A28",
@@ -11911,19 +12117,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000089403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lane-windproof-and-water-repellent-pants-black",
-    registeredAt: "2026-07-28T21:09:53.000Z",
+    registeredAt: "2026-07-28T21:30:20.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Lane - 방풍 and 발수 golf 팬츠",
-        bodyKo: "Lane - 방풍 and 발수 golf 팬츠은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "스트레치 기능이 내장된 레인 팬츠는 편안하고 쉽게 플레이할 수 있어 자유롭게 움직일 수 있습니다. 소재는 방풍 및 발수 마감 처리되어 있어 통기성이 저하되지 않습니다. 앞면과 뒷면 포켓이 있어 기능적이며 유선형 컷이 마음에 듭니다. 보온효과 2등급으로 일반 골프팬츠로는 너무 추울 때, 방수팬츠로는 너무 건조한 날씨에 활용하기 좋은 팬츠입니다.",
         image: "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "방수 바지를 입을 만큼 젖지는 않지만 골프 바지를 입기에는 너무 추울 때, 추운 날씨에도 골프 코스에서 따뜻함을 유지하도록 디자인된 방풍 및 발수 골프 바지인 레인(Lane)이 필요합니다. 이 4포켓 팬츠는 추운 날씨에도 편안함을 유지하도록 디자인된 골프 아우터 컬렉션인 갈빈 그린의 INTERFACE™ 제품군에 속합니다.",
+        image: "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "높은 통기성", "온난화 효과 #2", "프론트 포켓", "뒷주머니", "신축성 있는 원단", "지퍼 플라이 오프닝"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000089403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 186cm이고 32/32 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 겉감 원단: 나일론 84% / 스판덱스 14%, PU 멤브레인 포함 · 뒷면: 폴리에스터 트리코 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -12433,7 +12648,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Larry - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1, Windproof.",
+    descriptionKo: "골프공 소매보다 가벼운 Larry는 역대 가장 가벼운 재킷 중 하나입니다. 이 INTERFACE-1™ 하프 지퍼 윈드브레이커는 통기성과 신축성이 뛰어나고 발수 마감 처리된 원단으로 제작되었습니다. 갈빈 그린의 INTERFACE-1™ 방풍 컬렉션에는 다양한 수준의 보온성을 제공하여 추운 날에도 편안함을 보장하는 재킷과 바지가 포함되어 있습니다. 초경량 Larry 재킷은 신축성이 있는 bluesign® 승인 패브릭으로 제작되었으며 허리에 신축성 있는 조임끈이 특징입니다. 온화한 날씨에 셔츠 위에 착용하도록 디자인된 이 가벼운 윈드브레이커는 무게가 113g으로 접어서 주머니에 보관할 수 있을 만큼 작습니다.",
     image: "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/1.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/2.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/3.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/4.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/5.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/6.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/1.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/2.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/3.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/4.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/5.jpg", "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/6.jpg"],
     accent: "#3A2F28",
@@ -12441,19 +12656,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000439403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/larry-windproof-and-water-repellant-golf-jacket-black",
-    registeredAt: "2026-07-28T21:09:54.000Z",
+    registeredAt: "2026-07-28T21:30:21.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Larry - 방풍 and 발수 골프 재킷",
-        bodyKo: "Larry - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1, Windproof.",
+        bodyKo: "골프공 소매보다 가벼운 Larry는 역대 가장 가벼운 재킷 중 하나입니다. 이 INTERFACE-1™ 하프 지퍼 윈드브레이커는 통기성과 신축성이 뛰어나고 발수 마감 처리된 원단으로 제작되었습니다. 갈빈 그린의 INTERFACE-1™ 방풍 컬렉션에는 다양한 수준의 보온성을 제공하여 추운 날에도 편안함을 보장하는 재킷과 바지가 포함되어 있습니다.",
         image: "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "초경량 Larry 재킷은 신축성이 있는 bluesign® 승인 패브릭으로 제작되었으며 허리에 신축성 있는 조임끈이 특징입니다. 온화한 날씨에 셔츠 위에 착용하도록 디자인된 이 가벼운 윈드브레이커는 무게가 113g으로 접어서 주머니에 보관할 수 있을 만큼 작습니다.",
+        image: "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "믿을 수 없을 만큼 가벼움", "크기 무게 중간 113g/3.99온스", "높은 통기성", "신축성 있는 원단", "온난화 효과 #1", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000439403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 6' 0\" / 182cm이며 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 100% 폴리에스테르와 PU 멤브레인" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #1" },
     ],
     variants: [
       {
@@ -12693,7 +12917,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Leo - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "보온성과 바람 보호 기능을 추가로 제공하는 이상적인 레오 조끼는 시원하거나 추운 환경에서 편안함을 추구하는 골퍼를 위해 디자인된 INTERFACE-1™ 집업 조끼입니다. bluesign® 승인을 받은 신축성과 통기성이 뛰어난 방풍 원단으로 제작된 Leo는 자유로운 움직임을 유지하면서 가벼운 보호 기능을 제공합니다. 주요 특징으로는 스윙 중 마찰을 줄이기 위해 재배치된 측면 솔기, 맞춤형 핏을 제공하는 밑단의 신축성 있는 조임끈, 편의성을 더해주는 전면 포켓 등이 있습니다. 골프 코스를 염두에 두고 디자인된 이 다용도 조끼는 다른 야외 활동에도 똑같이 적합합니다.",
     image: "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/1.jpg",
     images: ["/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/1.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/2.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/3.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/4.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/5.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/6.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/1.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/2.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/3.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/4.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/5.jpg", "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/6.jpg"],
     accent: "#1A2428",
@@ -12701,19 +12925,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 169.0,
     sku: "B01000339403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leo-windproof-and-water-repellant-golf-vest-black",
-    registeredAt: "2026-07-28T21:09:55.000Z",
+    registeredAt: "2026-07-28T21:30:22.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Leo - 방풍 and 발수 골프 베스트",
-        bodyKo: "Leo - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "보온성과 바람 보호 기능을 추가로 제공하는 이상적인 레오 조끼는 시원하거나 추운 환경에서 편안함을 추구하는 골퍼를 위해 디자인된 INTERFACE-1™ 집업 조끼입니다. bluesign® 승인을 받은 신축성과 통기성이 뛰어난 방풍 원단으로 제작된 Leo는 자유로운 움직임을 유지하면서 가벼운 보호 기능을 제공합니다.",
         image: "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "주요 특징으로는 스윙 중 마찰을 줄이기 위해 재배치된 측면 솔기, 맞춤형 핏을 제공하는 밑단의 신축성 있는 조임끈, 편의성을 더해주는 전면 포켓 등이 있습니다. 골프 코스를 염두에 두고 디자인된 이 다용도 조끼는 다른 야외 활동에도 똑같이 적합합니다.",
+        image: "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "높은 통기성", "신축성 있는 원단", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다.", "재활용 폴리에스터", "온난화 효과 #2", "최적의 편안함을 위해 재배치된 측면 솔기", "프론트 포켓", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000339403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 표면: 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스테르 · 후원자: 100% 재활용 폴리에스테르" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -13028,7 +13261,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Levana - 방풍 and 발수 golf 팬츠은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "신축성이 내장된 Levana 팬츠는 편안하고 쉽게 플레이할 수 있어 자유롭게 움직일 수 있습니다. 소재는 방풍 및 발수 마감 처리되어 있어 통기성이 저하되지 않습니다. 앞면과 뒷면 포켓이 있어 기능적이며 유선형 컷이 마음에 듭니다. 보온효과 2등급으로 일반 골프팬츠로는 너무 추울 때, 방수팬츠로는 너무 건조한 날씨에 활용하기 좋은 팬츠입니다. Levana 방풍 여성용 골프 바지는 비바람으로부터 보호해야 하지만 방수 바지를 입을 만큼 젖지 않은 조건에 이상적입니다. 이 스타일리시한 방풍 및 발수 바지는 추위를 막아주면서도 통기성이 매우 뛰어나고 신축성 있는 원단으로 만들어져 편안하고 쉽게 움직일 수 있습니다.",
     image: "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/1.jpg",
     images: ["/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/1.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/2.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/3.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/4.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/5.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/6.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/1.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/2.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/3.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/4.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/5.jpg", "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/6.jpg"],
     accent: "#1A2E28",
@@ -13036,19 +13269,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000099403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/levana-windproof-and-water-repellent-pants-black",
-    registeredAt: "2026-07-28T21:09:56.000Z",
+    registeredAt: "2026-07-28T21:30:23.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Levana - 방풍 and 발수 golf 팬츠",
-        bodyKo: "Levana - 방풍 and 발수 golf 팬츠은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "신축성이 내장된 Levana 팬츠는 편안하고 쉽게 플레이할 수 있어 자유롭게 움직일 수 있습니다. 소재는 방풍 및 발수 마감 처리되어 있어 통기성이 저하되지 않습니다. 앞면과 뒷면 포켓이 있어 기능적이며 유선형 컷이 마음에 듭니다. 보온효과 2등급으로 일반 골프팬츠로는 너무 추울 때, 방수팬츠로는 너무 건조한 날씨에 활용하기 좋은 팬츠입니다.",
         image: "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Levana 방풍 여성용 골프 바지는 비바람으로부터 보호해야 하지만 방수 바지를 입을 만큼 젖지 않은 조건에 이상적입니다. 이 스타일리시한 방풍 및 발수 바지는 추위를 막아주면서도 통기성이 매우 뛰어나고 신축성 있는 원단으로 만들어져 편안하고 쉽게 움직일 수 있습니다.",
+        image: "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "높은 통기성", "온난화 효과 #2", "프론트 포켓", "뒷주머니", "신축성 있는 원단", "지퍼 플라이 오프닝", "모든 크기의 길이는 79cm/31.1인치입니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000099403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 겉감 원단: 나일론 86% / 스판덱스 14%, PU 멤브레인 포함 · 뒷면: 폴리에스터 트리코 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -13273,7 +13515,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Lewis - 방풍 golf 글러브은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1.",
+    descriptionKo: "꼭 맞게 착용할 수 있도록 제작된 루이스 따뜻한 골프 장갑은 가죽과 방풍 INTERFACE-1™ 원단을 결합했으며 누구에게나 잘 맞는 6가지 사이즈로 제공됩니다. 루이스는 바람이 많이 부는 날에 착용하도록 디자인된 인기 있는 방풍 골프 장갑입니다. 그립감을 위한 가죽과 바람으로부터 보호하기 위한 INTERFACE™ 패브릭을 혼합하여 제작된 이 장갑은 필수품입니다.",
     image: "/products/gg-pdp/lewis-windproof-gloves-black/1.jpg",
     images: ["/products/gg-pdp/lewis-windproof-gloves-black/1.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/2.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/3.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/4.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/5.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/6.jpg"],
     accent: "#1F4D3A",
@@ -13281,18 +13523,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "B01000159403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lewis-windproof-gloves-black",
-    registeredAt: "2026-07-28T21:09:57.000Z",
+    registeredAt: "2026-07-28T21:30:24.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Lewis - 방풍 golf 글러브",
-        bodyKo: "Lewis - 방풍 golf 글러브은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1.",
+        bodyKo: "꼭 맞게 착용할 수 있도록 제작된 루이스 따뜻한 골프 장갑은 가죽과 방풍 INTERFACE-1™ 원단을 결합했으며 누구에게나 잘 맞는 6가지 사이즈로 제공됩니다.",
         image: "/products/gg-pdp/lewis-windproof-gloves-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "루이스는 바람이 많이 부는 날에 착용하도록 디자인된 인기 있는 방풍 골프 장갑입니다. 그립감을 위한 가죽과 바람으로부터 보호하기 위한 INTERFACE™ 패브릭을 혼합하여 제작된 이 장갑은 필수품입니다.",
+        image: "/products/gg-pdp/lewis-windproof-gloves-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "온난화 효과 #1"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #1" },
+      { labelKo: "아티클 번호", valueKo: "B01000159403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 100% 폴리에스터, PU 멤브레인/카브레타 가죽." },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #1" },
     ],
     variants: [
       {
@@ -13398,7 +13650,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Linden - Hooded Golf Windbreaker은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "GALVIN GREEN CONCEPT 컬렉션의 Linden 후드 윈드브레이커는 곡선형 솔기 디테일과 전면 풀 후드로 성능과 스타일을 결합합니다. 발수 마감 처리된 신축성 있는 원단으로 제작된 이 재킷은 다양한 조건에서 편안하고 보호되도록 설계되었습니다. Warming Effect #2는 따뜻함을 더해주며, 통기성이 뛰어난 원단은 과열을 방지합니다. 최적의 편안함을 위해 재배치된 측면 솔기와 보관을 위한 캥거루 포켓이 특징인 이 재킷은 밑단에 신축성 있는 조임끈이 있어 안정적인 핏을 자랑합니다.",
     image: "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/1.jpg",
     images: ["/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/1.jpg", "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/2.jpg", "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/3.jpg", "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/4.jpg", "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/5.jpg", "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/6.jpg"],
     accent: "#24302A",
@@ -13406,19 +13658,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "B01000568741001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/linden-hooded-golf-windbreaker-white-sand",
-    registeredAt: "2026-07-28T21:09:58.000Z",
+    registeredAt: "2026-07-28T21:30:25.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Linden - Hooded Golf Windbreaker",
-        bodyKo: "Linden - Hooded Golf Windbreaker은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "GALVIN GREEN CONCEPT 컬렉션의 Linden 후드 윈드브레이커는 곡선형 솔기 디테일과 전면 풀 후드로 성능과 스타일을 결합합니다. 발수 마감 처리된 신축성 있는 원단으로 제작된 이 재킷은 다양한 조건에서 편안하고 보호되도록 설계되었습니다.",
         image: "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Warming Effect #2는 따뜻함을 더해주며, 통기성이 뛰어난 원단은 과열을 방지합니다. 최적의 편안함을 위해 재배치된 측면 솔기와 보관을 위한 캥거루 포켓이 특징인 이 재킷은 밑단에 신축성 있는 조임끈이 있어 안정적인 핏을 자랑합니다.",
+        image: "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "발수 마감", "높은 통기성", "신축성 있는 원단", "bluesign® 승인 패브릭", "재활용 폴리에스터", "온난화 효과 #2", "최적의 편안함을 위해 재배치된 측면 솔기", "앞면의 캥거루 포켓", "후디", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000568741" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -13509,7 +13770,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Lissy - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "바람, 추위, 가벼운 비는 골프 코스에서 직면하게 되는 가장 일반적인 상황이므로 우리는 INTERFACE-1™ 제품군을 설계했습니다. Lissy 골프 윈드브레이커는 bluesign® 승인을 받은 통기성이 뛰어나고 신축성이 뛰어난 원단으로 제작된 긴 소매 지퍼업입니다. 전면 포켓, 밑단의 신축성 있는 조임끈, 양방향 전면 지퍼가 특징입니다. 보온 효과 2등급을 받은 Lissy는 시원한 날씨에는 셔츠 위에 착용할 수 있고, 추운 날씨에는 여러 겹 겹쳐 착용할 수 있습니다.",
     image: "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/1.jpg",
     images: ["/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/1.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/2.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/3.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/4.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/5.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/6.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/1.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/2.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/3.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/4.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/5.jpg", "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-white-cool-grey/6.jpg"],
     accent: "#2A4038",
@@ -13517,19 +13778,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000379349001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lissy-windproof-and-water-repellant-golf-jacket-navy-white",
-    registeredAt: "2026-07-28T21:09:59.000Z",
+    registeredAt: "2026-07-28T21:30:26.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Lissy - 방풍 and 발수 골프 재킷",
-        bodyKo: "Lissy - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "바람, 추위, 가벼운 비는 골프 코스에서 직면하게 되는 가장 일반적인 상황이므로 우리는 INTERFACE-1™ 제품군을 설계했습니다. Lissy 골프 윈드브레이커는 bluesign® 승인을 받은 통기성이 뛰어나고 신축성이 뛰어난 원단으로 제작된 긴 소매 지퍼업입니다.",
         image: "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "전면 포켓, 밑단의 신축성 있는 조임끈, 양방향 전면 지퍼가 특징입니다. 보온 효과 2등급을 받은 Lissy는 시원한 날씨에는 셔츠 위에 착용할 수 있고, 추운 날씨에는 여러 겹 겹쳐 착용할 수 있습니다.",
+        image: "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-navy-white/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "발수 마감", "높은 통기성", "신축성 있는 원단", "bluesign® 승인 패브릭", "재활용 폴리에스터", "온난화 효과 #2", "프론트 포켓", "밑단 신축 드로코드", "양방향 전면 지퍼", "바디 패브릭 소재의 신축성 있는 커프스"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000379349" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 164cm이고 XS 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -13860,7 +14130,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Lloyd - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+    descriptionKo: "바람, 추위, 가벼운 비는 골프 코스에서 직면하게 되는 가장 일반적인 상황이므로 우리는 INTERFACE-1™ 제품군을 설계했습니다. Lloyd 골프 윈드브레이커는 대조적인 패널과 대담한 뒷면 스트라이프가 있는 스포티한 투톤 디자인이 특징입니다. 방풍, 발수 원단으로 제작된 Lloyd의 뛰어난 통기성과 신축성 덕분에 착용자가 자유롭게 움직일 수 있어 골프 코스에 이상적인 재킷입니다. 앞면 포켓, 신축성 있는 커프스, 신축성 있는 조임끈 허리가 특징인 이 재킷은 편안함을 선사합니다. 재배치된 측면 솔기는 스윙하는 동안 의류 마찰을 줄여줍니다. Lloyd는 bluesign® 승인을 받은 재활용 폴리에스테르로 만들어졌습니다.",
     image: "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/1.jpg",
     images: ["/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/1.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/2.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/3.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/4.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/5.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/6.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/1.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/2.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/3.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/4.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/5.jpg", "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-navy-white/6.jpg"],
     accent: "#2F5A3E",
@@ -13868,19 +14138,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000448669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange",
-    registeredAt: "2026-07-28T21:10:00.000Z",
+    registeredAt: "2026-07-28T21:30:27.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Lloyd - 방풍 and 발수 골프 재킷",
-        bodyKo: "Lloyd - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #2, Windproof.",
+        bodyKo: "바람, 추위, 가벼운 비는 골프 코스에서 직면하게 되는 가장 일반적인 상황이므로 우리는 INTERFACE-1™ 제품군을 설계했습니다. Lloyd 골프 윈드브레이커는 대조적인 패널과 대담한 뒷면 스트라이프가 있는 스포티한 투톤 디자인이 특징입니다. 방풍, 발수 원단으로 제작된 Lloyd의 뛰어난 통기성과 신축성 덕분에 착용자가 자유롭게 움직일 수 있어 골프 코스에 이상적인 재킷입니다.",
         image: "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "앞면 포켓, 신축성 있는 커프스, 신축성 있는 조임끈 허리가 특징인 이 재킷은 편안함을 선사합니다. 재배치된 측면 솔기는 스윙하는 동안 의류 마찰을 줄여줍니다. Lloyd는 bluesign® 승인을 받은 재활용 폴리에스테르로 만들어졌습니다.",
+        image: "/products/gg-pdp/lloyd-windproof-and-water-repellent-golf-jacket-black-white-orange/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "발수 마감", "높은 통기성", "신축성 있는 원단", "bluesign® 승인 패브릭", "재활용 폴리에스터", "온난화 효과 #2", "프론트 포켓", "착용감 최적화를 위한 사이드 심 재배치", "바디 패브릭 소재의 신축성 있는 커프스", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #2" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000448669" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "착용 모델은 180cm이고 M 사이즈를 착용했습니다." },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터 · 후원자: 100% 재활용 폴리에스테르" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #2" },
     ],
     variants: [
       {
@@ -14255,7 +14534,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "London - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3.",
+    descriptionKo: "런던은 INTERFACE-1™ 보호 기능과 전략적인 Thermore® 패딩을 결합하여 춥고 바람이 많이 부는 환경에서도 탁월한 따뜻함을 제공합니다. 재킷의 컬러 블록 슬리브는 역동적인 대비를 더하고, 전체 지퍼 잠금장치는 레이어링이 용이합니다. Bluesign® 승인 소재는 책임감 있는 구조를 강조합니다. 통기성이 뛰어난 신축성 있는 측면 패널과 레귤러 핏을 갖춘 런던은 안정적인 미기후를 유지하면서 움직임을 유동적으로 유지하여 까다로운 가을과 겨울 라운드에 적합합니다.",
     image: "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/1.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/2.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/3.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/4.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/5.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/6.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/1.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/2.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/3.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/4.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/5.jpg", "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/6.jpg"],
     accent: "#1E3A4A",
@@ -14263,18 +14542,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 259.0,
     sku: "B01000609403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/london-windproof-and-water-repellent-golf-jacket-black",
-    registeredAt: "2026-07-28T21:10:01.000Z",
+    registeredAt: "2026-07-28T21:30:28.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "London - 방풍 and 발수 골프 재킷",
-        bodyKo: "London - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3.",
+        bodyKo: "런던은 INTERFACE-1™ 보호 기능과 전략적인 Thermore® 패딩을 결합하여 춥고 바람이 많이 부는 환경에서도 탁월한 따뜻함을 제공합니다. 재킷의 컬러 블록 슬리브는 역동적인 대비를 더하고, 전체 지퍼 잠금장치는 레이어링이 용이합니다. Bluesign® 승인 소재는 책임감 있는 구조를 강조합니다. 통기성이 뛰어난 신축성 있는 측면 패널과 레귤러 핏을 갖춘 런던은 안정적인 미기후를 유지하면서 움직임을 유동적으로 유지하여 까다로운 가을과 겨울 라운드에 적합합니다.",
         image: "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/1.jpg",
       },
     ],
+    featuresKo: ["방풍", "신축성 있는 원단", "메인 패브릭은 bluesign® 승인을 받았습니다", "재활용 나일론", "재활용 폴리에스테르 패딩", "온난화 효과 #3", "프론트 포켓", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #3" },
+      { labelKo: "아티클 번호", valueKo: "B01000609403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 100% 재활용 나일론 · 패딩: 100% 재활용 폴리에스테르 소재의 Thermore® · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #3" },
     ],
     variants: [
       {
@@ -14514,7 +14797,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Luca - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3.",
+    descriptionKo: "Luca는 프리미엄 따뜻함과 매끄러운 실루엣을 결합하고 Thermore® 패딩과 INTERFACE-1™ 스트레치 패널을 결합하여 균형 잡힌 보온 경험을 선사합니다. 컬러 블록 상단 부분은 현대적인 느낌을 주며, 재활용 소재는 지속 가능성을 높여줍니다. 통기성과 방풍 기능이 뛰어난 Luca는 상쾌한 아침에 미드 레이어 위에 레이어링하는 데 이상적입니다. 유선형의 프로필은 완벽한 이동성을 보장하므로 전환기 플레이에 꼭 필요한 다용도 제품입니다.",
     image: "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/1.jpg",
     images: ["/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/1.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/2.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/3.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/4.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/5.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/6.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/1.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/2.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/3.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/4.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/5.jpg", "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/6.jpg"],
     accent: "#243447",
@@ -14522,18 +14805,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 219.0,
     sku: "B01000619237001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luca-windproof-and-water-repellent-golf-vest-forged-iron-black",
-    registeredAt: "2026-07-28T21:10:02.000Z",
+    registeredAt: "2026-07-28T21:30:29.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Luca - 방풍 and 발수 골프 베스트",
-        bodyKo: "Luca - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3.",
+        bodyKo: "Luca는 프리미엄 따뜻함과 매끄러운 실루엣을 결합하고 Thermore® 패딩과 INTERFACE-1™ 스트레치 패널을 결합하여 균형 잡힌 보온 경험을 선사합니다. 컬러 블록 상단 부분은 현대적인 느낌을 주며, 재활용 소재는 지속 가능성을 높여줍니다. 통기성과 방풍 기능이 뛰어난 Luca는 상쾌한 아침에 미드 레이어 위에 레이어링하는 데 이상적입니다. 유선형의 프로필은 완벽한 이동성을 보장하므로 전환기 플레이에 꼭 필요한 다용도 제품입니다.",
         image: "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/1.jpg",
       },
     ],
+    featuresKo: ["방풍", "신축성 있는 원단", "메인 패브릭은 bluesign® 승인을 받았습니다", "재활용 나일론", "재활용 폴리에스테르 패딩", "온난화 효과 #3", "프론트 포켓", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #3" },
+      { labelKo: "아티클 번호", valueKo: "B01000619237" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 100% 재활용 나일론 · 패딩: 100% 재활용 폴리에스테르 소재의 Thermore® · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #3" },
     ],
     variants: [
       {
@@ -14773,7 +15060,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Luis - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1, Windproof.",
+    descriptionKo: "Luis 조끼는 따뜻한 날에 최대의 성능을 발휘하도록 설계된 초경량 쿼터 지퍼 윈드브레이커입니다. 미디엄 사이즈의 무게가 94g(3.34온스)에 불과해 부피가 크지 않으면서 보호 기능과 통기성의 완벽한 균형을 제공합니다. INTERFACE-1™ 기술 원단과 Warming Effect #1으로 제작된 이 반소매 조끼는 방풍 기능이 있으며 발수 마감 처리되어 가벼운 비에도 건조함을 유지합니다. 신축성 있는 원단이 다양한 움직임을 보장하며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 제공합니다. 셔츠나 미드레이어 위에 레이어드하기에 이상적인 Luis 조끼는 라운드 중에 편안함과 자유로움을 모두 제공하는 다용도 제품입니다.",
     image: "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/1.jpg",
     images: ["/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/1.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/2.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/3.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/4.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/5.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/6.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/1.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/2.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/3.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/4.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/5.jpg", "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/6.jpg"],
     accent: "#2C2A28",
@@ -14781,19 +15068,28 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 129.0,
     sku: "B01000549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luis-windproof-and-water-repellent-golf-jacket-black",
-    registeredAt: "2026-07-28T21:10:03.000Z",
+    registeredAt: "2026-07-28T21:30:30.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Luis - 방풍 and 발수 골프 재킷",
-        bodyKo: "Luis - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #1, Windproof.",
+        bodyKo: "Luis 조끼는 따뜻한 날에 최대의 성능을 발휘하도록 설계된 초경량 쿼터 지퍼 윈드브레이커입니다. 미디엄 사이즈의 무게가 94g(3.34온스)에 불과해 부피가 크지 않으면서 보호 기능과 통기성의 완벽한 균형을 제공합니다. INTERFACE-1™ 기술 원단과 Warming Effect #1으로 제작된 이 반소매 조끼는 방풍 기능이 있으며 발수 마감 처리되어 가벼운 비에도 건조함을 유지합니다.",
         image: "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/1.jpg",
       },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "신축성 있는 원단이 다양한 움직임을 보장하며, 밑단의 신축성 있는 조임끈이 안정적인 핏을 제공합니다. 셔츠나 미드레이어 위에 레이어드하기에 이상적인 Luis 조끼는 라운드 중에 편안함과 자유로움을 모두 제공하는 다용도 제품입니다.",
+        image: "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/2.jpg",
+        reverse: true,
+      },
     ],
+    featuresKo: ["방풍", "높은 통기성", "크기 무게 중간 94g/3.34온스", "신축성 있는 원단", "온난화 효과 #1", "밑단 신축 드로코드"],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #1" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000549403" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 100% 폴리에스테르와 PU 멤브레인" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #1" },
     ],
     variants: [
       {
@@ -15033,7 +15329,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Luna - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3, Windproof.",
+    descriptionKo: "Luna 여성용 방풍 골프 조끼는 다양한 보온성과 보호 기능을 제공합니다. 날씨가 선선한 날 독립형 레이어로 사용하거나 골프 재킷 안에 넣어 보온성을 강화하는 데 적합합니다. 재생 폴리에스터와 신축성 있는 발수 원단으로 제작되어 방풍 성능과 뛰어난 통기성을 제공합니다. 이 INTERFACE-1™ 의류는 보온 효과 #3 등급을 받았으며 Thermore® 패딩 및 bluesign® 승인 소재로 완성되었습니다. 전면 포켓, 양방향 지퍼, 신축성 있는 조임끈 밑단, 재배치된 측면 솔기와 같은 사려 깊은 디테일은 어떤 야외 활동에도 어울리는 핏과 자유로운 움직임을 보장합니다.",
     image: "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/1.jpg",
     images: ["/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/1.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/2.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/3.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/4.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/5.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/6.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/1.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/2.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/3.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/4.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/5.jpg", "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/6.jpg"],
     accent: "#3A2F28",
@@ -15041,19 +15337,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 229.0,
     sku: "B01000489405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luna-windproof-and-water-repellent-vest-navy",
-    registeredAt: "2026-07-28T21:10:04.000Z",
+    registeredAt: "2026-07-28T21:30:31.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Luna - 방풍 and 발수 골프 베스트",
-        bodyKo: "Luna - 방풍 and 발수 골프 베스트은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3, Windproof.",
+        bodyKo: "Luna 여성용 방풍 골프 조끼는 다양한 보온성과 보호 기능을 제공합니다. 날씨가 선선한 날 독립형 레이어로 사용하거나 골프 재킷 안에 넣어 보온성을 강화하는 데 적합합니다. 재생 폴리에스터와 신축성 있는 발수 원단으로 제작되어 방풍 성능과 뛰어난 통기성을 제공합니다. 이 INTERFACE-1™ 의류는 보온 효과 #3 등급을 받았으며 Thermore® 패딩 및 bluesign® 승인 소재로 완성되었습니다. 전면 포켓, 양방향 지퍼, 신축성 있는 조임끈 밑단, 재배치된 측면 솔기와 같은 사려 깊은 디테일은 어떤 야외 활동에도 어울리는 핏과 자유로운 움직임을 보장합니다.",
         image: "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/1.jpg",
       },
     ],
+    featuresKo: ["방풍", "발수 마감", "높은 통기성", "신축성 있는 원단", "재활용 폴리에스터", "재활용 폴리에스테르 패딩", "온난화 효과 #3", "프론트 포켓", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치", "양방향 전면 지퍼", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #3" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000489405" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터 · 패딩: 100% 재활용 폴리에스테르 소재의 Thermore® · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #3" },
     ],
     variants: [
       {
@@ -15338,7 +15637,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Lydia - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3, Windproof.",
+    descriptionKo: "리디아 재킷은 스윙을 제한하지 않고 따뜻함을 유지하도록 설계된 하이테크 INTERFACE-1™ 윈드 브레이커입니다. 100% 재활용 폴리에스터와 PET 멤브레인으로 제작되었으며 재활용 소재로 만든 Thermore® 패딩으로 채워져 방풍, 발수 보호 및 뛰어난 통기성을 제공합니다. 신축성 있는 원단, 신축성 있는 조임끈 밑단, 재배치된 측면 솔기가 특징인 Lydia는 코스 안팎에서 최대한의 자유를 위해 함께 움직입니다. 전면 포켓, 양방향 지퍼, 신축성 있는 커프스와 같은 실용적인 디테일이 어울리는 본체 패브릭으로 이 bluesign® 승인 디자인을 완성하여 지속 가능한 성능을 제공합니다.",
     image: "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/1.jpg",
     images: ["/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/1.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/2.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/3.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/4.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/5.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/6.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/1.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/2.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/3.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/4.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/5.jpg", "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/6.jpg"],
     accent: "#1A2428",
@@ -15346,19 +15645,22 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 239.0,
     sku: "B01000479405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lydia-windproof-and-water-repellent-jacket-navy",
-    registeredAt: "2026-07-28T21:10:05.000Z",
+    registeredAt: "2026-07-28T21:30:32.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Lydia - 방풍 and 발수 골프 재킷",
-        bodyKo: "Lydia - 방풍 and 발수 골프 재킷은 방풍·발수 성능의 갈빈 그린 골프웨어입니다. 바람 부는 라운드에서도 실루엣과 보온을 함께 챙깁니다. 적용 테크: interface-1, INTERFACE-1™  Warming effect #3, Windproof.",
+        bodyKo: "리디아 재킷은 스윙을 제한하지 않고 따뜻함을 유지하도록 설계된 하이테크 INTERFACE-1™ 윈드 브레이커입니다. 100% 재활용 폴리에스터와 PET 멤브레인으로 제작되었으며 재활용 소재로 만든 Thermore® 패딩으로 채워져 방풍, 발수 보호 및 뛰어난 통기성을 제공합니다. 신축성 있는 원단, 신축성 있는 조임끈 밑단, 재배치된 측면 솔기가 특징인 Lydia는 코스 안팎에서 최대한의 자유를 위해 함께 움직입니다. 전면 포켓, 양방향 지퍼, 신축성 있는 커프스와 같은 실용적인 디테일이 어울리는 본체 패브릭으로 이 bluesign® 승인 디자인을 완성하여 지속 가능한 성능을 제공합니다.",
         image: "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/1.jpg",
       },
     ],
+    featuresKo: ["방풍", "발수 마감", "높은 통기성", "신축성 있는 원단", "재활용 폴리에스터", "재활용 폴리에스테르 패딩", "온난화 효과 #3", "프론트 포켓", "밑단 신축 드로코드", "착용감 최적화를 위한 사이드 심 재배치", "양방향 전면 지퍼", "바디 패브릭 소재의 신축성 있는 커프스", "메인 패브릭은 bluesign® 승인 및 OEKO-TEX® STANDARD 100 인증을 받았습니다."],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "interface-1" },
-      { labelKo: "소재 · 테크", valueKo: "INTERFACE-1™  Warming effect #3" },
-      { labelKo: "소재 · 테크", valueKo: "Windproof" },
+      { labelKo: "아티클 번호", valueKo: "B01000479405" },
+      { labelKo: "핏", valueKo: "레귤러" },
+      { labelKo: "모델 정보", valueKo: "특징:" },
+      { labelKo: "소재", valueKo: "INTERFACE-1™ · 재활용 PES 멤브레인을 사용한 100% 재활용 폴리에스터 · 패딩: 100% 재활용 폴리에스테르 소재의 Thermore® · 안감: 폴리에스테르 100%" },
+      { labelKo: "테크놀로지", valueKo: "INTERFACE-1™ Warming effect #3" },
     ],
     variants: [
       {
@@ -15644,7 +15946,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Maggio - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "앞면에 대담하고 대조적인 대각선 스트라이프가 돋보이는 독특한 셔츠인 Maggio를 소개합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 뛰어난 통기성과 속건성을 제공하여 코스에서 시원하고 편안함을 유지합니다. 신축성 있는 원단이 유연성을 보장하고, 골지 칼라와 커프스가 스포티한 룩을 선사합니다. UV 차단 20+ 기능을 갖춘 이 셔츠는 태양의 유해한 광선으로부터 보호해 줍니다.",
     image: "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/2.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/3.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/4.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/5.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/6.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/1.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/2.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/3.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/4.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/5.jpg", "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/6.jpg"],
     accent: "#1A2E28",
@@ -15652,18 +15954,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001368712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
-    registeredAt: "2026-07-28T21:10:06.000Z",
+    registeredAt: "2026-07-28T21:30:33.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Maggio - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Maggio - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "앞면에 대담하고 대조적인 대각선 스트라이프가 돋보이는 독특한 셔츠인 Maggio를 소개합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 뛰어난 통기성과 속건성을 제공하여 코스에서 시원하고 편안함을 유지합니다. 신축성 있는 원단이 유연성을 보장하고, 골지 칼라와 커프스가 스포티한 룩을 선사합니다. UV 차단 20+ 기능을 갖춘 이 셔츠는 태양의 유해한 광선으로부터 보호해 줍니다.",
         image: "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -15904,7 +16206,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Maguire - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "맥과이어 셔츠는 바람과 파도에서 영감을 받은 톤온톤 프린트가 특징으로 스타일과 성능을 모두 제공합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 통기성과 속건성이 뛰어나 라운드 내내 편안함을 유지합니다. 신축성 있는 원단이 자유로운 움직임을 보장하며, 테일러드 칼라와 싱글 폴드 소매 밑단이 세련된 느낌을 더해줍니다. UV 보호 20+ 기능을 갖춘 이 셔츠는 태양의 유해한 광선으로부터 보호해 주므로 따뜻한 날씨 골프에 이상적인 선택입니다.",
     image: "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg",
     images: ["/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/2.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/3.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/4.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/5.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/6.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/1.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/2.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/3.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/4.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/5.jpg", "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/6.jpg"],
     accent: "#1F4D3A",
@@ -15912,18 +16214,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001318759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maguire-breathable-short-sleeve-golf-shirt-crystal-blue",
-    registeredAt: "2026-07-28T21:10:07.000Z",
+    registeredAt: "2026-07-28T21:30:34.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Maguire - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Maguire - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "맥과이어 셔츠는 바람과 파도에서 영감을 받은 톤온톤 프린트가 특징으로 스타일과 성능을 모두 제공합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 통기성과 속건성이 뛰어나 라운드 내내 편안함을 유지합니다. 신축성 있는 원단이 자유로운 움직임을 보장하며, 테일러드 칼라와 싱글 폴드 소매 밑단이 세련된 느낌을 더해줍니다. UV 보호 20+ 기능을 갖춘 이 셔츠는 태양의 유해한 광선으로부터 보호해 주므로 따뜻한 날씨 골프에 이상적인 선택입니다.",
         image: "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -16164,7 +16466,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Mansfield - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "맨스필드 셔츠는 골지 칼라의 스트라이프와 G 로고 패턴으로 스타일과 기능성을 결합하여 클래식하고 스포티한 룩을 연출합니다. 통기성과 편안함을 위해 디자인된 이 셔츠는 속건성이 있으며 신축성 있는 원단으로 제작되어 코스에서의 움직임을 향상시킵니다. 골지 칼라와 한 번 접힌 소매 밑단이 세련된 마감을 제공하며, UV 차단 20+는 태양으로부터 보호해 줍니다.",
     image: "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/1.jpg",
     images: ["/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/1.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/2.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/3.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/4.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/5.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/6.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/1.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/2.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/3.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/4.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/5.jpg", "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/6.jpg"],
     accent: "#24302A",
@@ -16172,18 +16474,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001339405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mansfield-breathable-short-sleeve-golf-shirt-navy",
-    registeredAt: "2026-07-28T21:10:08.000Z",
+    registeredAt: "2026-07-28T21:30:35.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Mansfield - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Mansfield - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "맨스필드 셔츠는 골지 칼라의 스트라이프와 G 로고 패턴으로 스타일과 기능성을 결합하여 클래식하고 스포티한 룩을 연출합니다. 통기성과 편안함을 위해 디자인된 이 셔츠는 속건성이 있으며 신축성 있는 원단으로 제작되어 코스에서의 움직임을 향상시킵니다. 골지 칼라와 한 번 접힌 소매 밑단이 세련된 마감을 제공하며, UV 차단 20+는 태양으로부터 보호해 줍니다.",
         image: "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -16499,7 +16801,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Marielle - 통기성 골프 스커트 with inner 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Marielle 골프 스커트는 스타일과 성능을 결합했으며 숨겨진 필기체 로고가 있는 섬세한 패턴이 특징이거나 단색으로 제공됩니다. 통기성과 속건성 VENTIL8™ PLUS 원단으로 제작된 이 스커트는 UV 차단 20+ 기능을 제공하여 태양으로부터 보호해 줍니다. 신축성 있는 원단은 유연성과 편안함을 보장하며, 내부 반바지는 추가적인 지지력과 커버력을 제공합니다. 전면 포켓은 작은 필수품을 보관하기에 적합합니다.",
     image: "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/1.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/2.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/3.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/4.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/5.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/6.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/1.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/2.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/3.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/4.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/5.jpg", "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/6.jpg"],
     accent: "#2A4038",
@@ -16507,18 +16809,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001458712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy",
-    registeredAt: "2026-07-28T21:10:09.000Z",
+    registeredAt: "2026-07-28T21:30:36.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Marielle - 통기성 골프 스커트 with inner 쇼츠",
-        bodyKo: "Marielle - 통기성 골프 스커트 with inner 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Marielle 골프 스커트는 스타일과 성능을 결합했으며 숨겨진 필기체 로고가 있는 섬세한 패턴이 특징이거나 단색으로 제공됩니다. 통기성과 속건성 VENTIL8™ PLUS 원단으로 제작된 이 스커트는 UV 차단 20+ 기능을 제공하여 태양으로부터 보호해 줍니다. 신축성 있는 원단은 유연성과 편안함을 보장하며, 내부 반바지는 추가적인 지지력과 커버력을 제공합니다. 전면 포켓은 작은 필수품을 보관하기에 적합합니다.",
         image: "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 88%/엘라스테인 12%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -16984,7 +17286,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men", "gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men", "gg-bestsellers-men"],
-    descriptionKo: "Marty - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "마티가 돌아왔습니다. 칼라와 소매 가장자리에 대비되는 색상이 있는 솔리드 셔츠입니다. 문자 그대로나 비유적으로나 엣지가 있는 클래식 셔츠입니다. 신축성 있는 원단으로 제작되어 통기성과 속건성이 뛰어나 하루 종일 편안함을 유지해줍니다. UV 차단(20+) 및 골지 칼라와 커프스를 갖춘 Marty는 시대를 초월한 스타일과 현대적인 기능성을 결합합니다.",
     image: "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/1.jpg",
     images: ["/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/1.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/2.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/3.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/4.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/5.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/6.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/2.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/3.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/4.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/5.jpg", "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/6.jpg"],
     accent: "#2F5A3E",
@@ -16992,18 +17294,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001309403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marty-breathable-short-sleeve-golf-shirt-black",
-    registeredAt: "2026-07-28T21:10:10.000Z",
+    registeredAt: "2026-07-28T21:30:37.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Marty - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Marty - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "마티가 돌아왔습니다. 칼라와 소매 가장자리에 대비되는 색상이 있는 솔리드 셔츠입니다. 문자 그대로나 비유적으로나 엣지가 있는 클래식 셔츠입니다. 신축성 있는 원단으로 제작되어 통기성과 속건성이 뛰어나 하루 종일 편안함을 유지해줍니다. UV 차단(20+) 및 골지 칼라와 커프스를 갖춘 Marty는 시대를 초월한 스타일과 현대적인 기능성을 결합합니다.",
         image: "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -17753,7 +18055,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Maya - 통기성 sleeveless 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Maya는 현대적인 V자형 칼라와 표현력이 풍부한 전체 프린트로 민소매 실루엣을 새롭게 선보입니다. VENTIL8™ PLUS 원단은 탁월한 통기성과 속건성을 제공하여 온도가 상승해도 시원함을 유지합니다. 신축성 있는 원단은 완벽한 움직임의 자유를 보장하며, 부드러운 촉감은 긴 라운드에서 편안함을 향상시킵니다. 우아하고 운동 능력이 뛰어난 Maya는 경쟁적인 플레이와 따뜻한 날씨의 여가 활동에 모두 적합합니다.",
     image: "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/1.jpg",
     images: ["/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/1.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/2.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/3.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/4.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/5.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/6.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/1.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/2.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/3.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/4.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/5.jpg", "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/6.jpg"],
     accent: "#1E3A4A",
@@ -17761,18 +18063,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001659405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maya-breathable-sleeveless-golf-shirt-navy",
-    registeredAt: "2026-07-28T21:10:11.000Z",
+    registeredAt: "2026-07-28T21:30:38.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Maya - 통기성 sleeveless 골프 셔츠",
-        bodyKo: "Maya - 통기성 sleeveless 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Maya는 현대적인 V자형 칼라와 표현력이 풍부한 전체 프린트로 민소매 실루엣을 새롭게 선보입니다. VENTIL8™ PLUS 원단은 탁월한 통기성과 속건성을 제공하여 온도가 상승해도 시원함을 유지합니다. 신축성 있는 원단은 완벽한 움직임의 자유를 보장하며, 부드러운 촉감은 긴 라운드에서 편안함을 향상시킵니다. 우아하고 운동 능력이 뛰어난 Maya는 경쟁적인 플레이와 따뜻한 날씨의 여가 활동에 모두 적합합니다.",
         image: "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 88%/엘라스테인 12%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -17967,7 +18269,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Medley - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Medley는 따뜻한 날씨에 편안함을 선사하도록 맞춤 제작된 세련된 프린트와 유선형 실루엣을 선보입니다. VENTIL8™ PLUS 원단으로 제작되어 공기 흐름과 빠른 증발을 촉진하여 열기가 쌓이는 동안 집중력을 유지할 수 있도록 도와줍니다. 부드러운 신축성은 부드러운 움직임을 보장하며, 테일러드 칼라는 룩을 더욱 돋보이게 합니다. 부드럽고 가벼우며 표현력이 풍부한 Medley는 시각적 특성과 안정적인 성능을 모두 높이 평가하는 골퍼를 위해 설계되었습니다.",
     image: "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/1.jpg",
     images: ["/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/1.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/2.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/3.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/4.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/5.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/6.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/1.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/2.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/3.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/4.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/5.jpg", "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/6.jpg"],
     accent: "#243447",
@@ -17975,18 +18277,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001688708001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/medley-breathable-short-sleeve-golf-shirt-black-orange",
-    registeredAt: "2026-07-28T21:10:12.000Z",
+    registeredAt: "2026-07-28T21:30:39.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Medley - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Medley - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Medley는 따뜻한 날씨에 편안함을 선사하도록 맞춤 제작된 세련된 프린트와 유선형 실루엣을 선보입니다. VENTIL8™ PLUS 원단으로 제작되어 공기 흐름과 빠른 증발을 촉진하여 열기가 쌓이는 동안 집중력을 유지할 수 있도록 도와줍니다. 부드러운 신축성은 부드러운 움직임을 보장하며, 테일러드 칼라는 룩을 더욱 돋보이게 합니다. 부드럽고 가벼우며 표현력이 풍부한 Medley는 시각적 특성과 안정적인 성능을 모두 높이 평가하는 골퍼를 위해 설계되었습니다.",
         image: "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -18361,7 +18663,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Merry - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "메리(Merry)는 대담한 보태니컬 프린트와 세련된 대비 디테일로 코스에 신선하고 표현력이 풍부한 룩을 선사합니다. 대비를 이루는 니트 칼라와 소매 커프스가 생동감 넘치는 패턴을 구성하여 셔츠에 현대적이고 스포티한 엣지를 더해줍니다. VENTIL8™ PLUS 기술로 제작된 Merry는 탁월한 통기성, 빠른 수분 흡수 기능, 부드럽고 가벼운 신축성 있는 원단을 제공하여 스윙하는 동안 제한 없는 움직임을 보장합니다. UV 20+ 차단 기능과 속건성 느낌을 갖춘 이 고성능 폴로 셔츠는 시원함과 자신감을 유지하고 따뜻하고 햇볕이 잘 드는 라운드에서 최선을 다해 플레이할 수 있도록 해줍니다.",
     image: "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/2.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/3.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/4.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/5.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/6.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/1.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/2.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/3.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/4.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/5.jpg", "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/6.jpg"],
     accent: "#2C2A28",
@@ -18369,18 +18671,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001628712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
-    registeredAt: "2026-07-28T21:10:13.000Z",
+    registeredAt: "2026-07-28T21:30:40.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Merry - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Merry - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "메리(Merry)는 대담한 보태니컬 프린트와 세련된 대비 디테일로 코스에 신선하고 표현력이 풍부한 룩을 선사합니다. 대비를 이루는 니트 칼라와 소매 커프스가 생동감 넘치는 패턴을 구성하여 셔츠에 현대적이고 스포티한 엣지를 더해줍니다. VENTIL8™ PLUS 기술로 제작된 Merry는 탁월한 통기성, 빠른 수분 흡수 기능, 부드럽고 가벼운 신축성 있는 원단을 제공하여 스윙하는 동안 제한 없는 움직임을 보장합니다. UV 20+ 차단 기능과 속건성 느낌을 갖춘 이 고성능 폴로 셔츠는 시원함과 자신감을 유지하고 따뜻하고 햇볕이 잘 드는 라운드에서 최선을 다해 플레이할 수 있도록 해줍니다.",
         image: "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -18696,7 +18998,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Mia - 통기성 sleeveless 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "미아 민소매 골프 셔츠는 성능과 스타일을 숨겨진 필기체 로고가 특징인 섬세한 프린트 패턴과 결합합니다. 통기성과 속건성 원단으로 디자인된 이 셔츠는 UV 차단 20+ 기능을 제공하여 라운드 중에 태양으로부터 보호해 줍니다. 신축성 있는 원단이 유연성과 편안함을 보장하며, 테일러드 칼라가 세련된 룩을 더해줍니다.",
     image: "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/1.jpg",
     images: ["/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/1.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/2.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/3.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/4.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/5.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/6.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/1.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/2.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/3.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/4.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/5.jpg", "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/6.jpg"],
     accent: "#3A2F28",
@@ -18704,18 +19006,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.4,
     sku: "D01001408699001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mia-breathable-sleeveless-golf-shirt-pink-fuchsia",
-    registeredAt: "2026-07-28T21:10:14.000Z",
+    registeredAt: "2026-07-28T21:30:41.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Mia - 통기성 sleeveless 골프 셔츠",
-        bodyKo: "Mia - 통기성 sleeveless 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "미아 민소매 골프 셔츠는 성능과 스타일을 숨겨진 필기체 로고가 특징인 섬세한 프린트 패턴과 결합합니다. 통기성과 속건성 원단으로 디자인된 이 셔츠는 UV 차단 20+ 기능을 제공하여 라운드 중에 태양으로부터 보호해 줍니다. 신축성 있는 원단이 유연성과 편안함을 보장하며, 테일러드 칼라가 세련된 룩을 더해줍니다.",
         image: "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 88%/엘라스테인 12%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -19001,7 +19303,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Miley - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "실버 지퍼 앞면과 스포티한 래글런 소매가 돋보이는 여성용 골프 셔츠 Miley를 소개합니다. 셔츠의 소매에는 흰색 패널이 있어 운동적인 디자인에 역동적인 느낌을 더해줍니다. 통기성과 속건성 원단으로 제작된 Miley는 UV 차단 20+ 기능을 제공하여 태양으로부터 보호해 줍니다. 신축성 있는 원단이 유연성을 제공하며, 스탠드업 칼라와 지퍼 개구부가 독특한 골프 셔츠를 만들어줍니다.",
     image: "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/1.jpg",
     images: ["/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/1.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/2.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/3.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/4.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/5.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/6.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/1.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/2.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/3.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/4.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/5.jpg", "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/6.jpg"],
     accent: "#1A2428",
@@ -19009,18 +19311,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001418705001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
-    registeredAt: "2026-07-28T21:10:15.000Z",
+    registeredAt: "2026-07-28T21:30:42.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Miley - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Miley - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "실버 지퍼 앞면과 스포티한 래글런 소매가 돋보이는 여성용 골프 셔츠 Miley를 소개합니다. 셔츠의 소매에는 흰색 패널이 있어 운동적인 디자인에 역동적인 느낌을 더해줍니다. 통기성과 속건성 원단으로 제작된 Miley는 UV 차단 20+ 기능을 제공하여 태양으로부터 보호해 줍니다. 신축성 있는 원단이 유연성을 제공하며, 스탠드업 칼라와 지퍼 개구부가 독특한 골프 셔츠를 만들어줍니다.",
         image: "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 88%/엘라스테인 12%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -19486,7 +19788,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Mitchell - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Mitchell은 대조적인 측면 패널과 뒷면 중앙에 스트라이프가 있는 클래식하고 심플한 폴로 셔츠입니다. VENTIL8™PLUS 기술이 적용된 이 제품은 부드럽고 신축성이 뛰어난 원단으로 최고의 통기성, 속건성 성능 및 UV20+ 보호 기능을 제공합니다. 골지 칼라, 한 번 접는 소매 밑단, 소매 끝 커프스로 마감된 Mitchell은 시대를 초월한 스타일과 현대적인 기능성을 결합하여 활동적인 착용을 가능하게 합니다.",
     image: "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/1.jpg",
     images: ["/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/1.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/2.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/3.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/4.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/5.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/6.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/1.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/2.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/3.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/4.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/5.jpg", "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/6.jpg"],
     accent: "#1A2E28",
@@ -19494,18 +19796,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001238743001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue",
-    registeredAt: "2026-07-28T21:10:16.000Z",
+    registeredAt: "2026-07-28T21:30:43.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Mitchell - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Mitchell - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Mitchell은 대조적인 측면 패널과 뒷면 중앙에 스트라이프가 있는 클래식하고 심플한 폴로 셔츠입니다. VENTIL8™PLUS 기술이 적용된 이 제품은 부드럽고 신축성이 뛰어난 원단으로 최고의 통기성, 속건성 성능 및 UV20+ 보호 기능을 제공합니다. 골지 칼라, 한 번 접는 소매 밑단, 소매 끝 커프스로 마감된 Mitchell은 시대를 초월한 스타일과 현대적인 기능성을 결합하여 활동적인 착용을 가능하게 합니다.",
         image: "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -19896,7 +20198,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Molly - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "남성용 Marty 셔츠의 인기에 힘입어 Molly는 줄무늬 골지 칼라와 커프스가 있는 클래식 골프 폴로 셔츠를 제공하는 여성용 셔츠입니다. VENTIL8™ PLUS 제품군에 속하는 이 셔츠는 탁월한 통기성, 속건성 및 자외선 차단 20+ 기능을 제공합니다. 신축성 있는 원단은 유연성과 편안함을 보장하므로 스타일과 성능을 모두 중시하는 골퍼에게 완벽한 선택입니다. 클래식한 색상과 시대를 초월한 디자인을 갖춘 Molly는 앞으로의 시즌에도 계속해서 자리잡을 핵심 스타일입니다.",
     image: "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/1.jpg",
     images: ["/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/1.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/2.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/3.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/4.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/5.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/6.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/1.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/2.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/3.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/4.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/5.jpg", "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/6.jpg"],
     accent: "#1F4D3A",
@@ -19904,18 +20206,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001448707001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/molly-breathable-short-sleeve-golf-shirt-fuchsia",
-    registeredAt: "2026-07-28T21:10:17.000Z",
+    registeredAt: "2026-07-28T21:30:44.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Molly - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Molly - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "남성용 Marty 셔츠의 인기에 힘입어 Molly는 줄무늬 골지 칼라와 커프스가 있는 클래식 골프 폴로 셔츠를 제공하는 여성용 셔츠입니다. VENTIL8™ PLUS 제품군에 속하는 이 셔츠는 탁월한 통기성, 속건성 및 자외선 차단 20+ 기능을 제공합니다. 신축성 있는 원단은 유연성과 편안함을 보장하므로 스타일과 성능을 모두 중시하는 골퍼에게 완벽한 선택입니다. 클래식한 색상과 시대를 초월한 디자인을 갖춘 Molly는 앞으로의 시즌에도 계속해서 자리잡을 핵심 스타일입니다.",
         image: "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/엘라스테인 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -20200,7 +20502,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Mona - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Mona 골프 셔츠는 버튼이 없는 플래킷과 대비되는 색상의 플래킷과 스트라이프 패널로 스포티한 룩을 선사합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 통기성이 뛰어나고 속건성이 뛰어나 따뜻한 날씨 골프에 완벽한 선택입니다. 신축성 있는 원단이 유연성을 제공하며, 테일러드 칼라와 싱글 폴드 소매 밑단이 클래식한 느낌을 더해줍니다. UV 차단 20+ 기능을 갖춘 이 셔츠는 유해한 태양 광선으로부터 보호해 라운드 내내 편안하고 보호된 상태를 유지합니다.",
     image: "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/1.jpg",
     images: ["/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/1.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/2.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/3.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/4.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/5.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/6.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/1.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/2.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/3.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/4.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/5.jpg", "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-white-navy/6.jpg"],
     accent: "#24302A",
@@ -20208,18 +20510,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001428655001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy",
-    registeredAt: "2026-07-28T21:10:18.000Z",
+    registeredAt: "2026-07-28T21:30:45.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Mona - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Mona - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Mona 골프 셔츠는 버튼이 없는 플래킷과 대비되는 색상의 플래킷과 스트라이프 패널로 스포티한 룩을 선사합니다. VENTIL8™ PLUS 기술로 디자인된 이 셔츠는 통기성이 뛰어나고 속건성이 뛰어나 따뜻한 날씨 골프에 완벽한 선택입니다. 신축성 있는 원단이 유연성을 제공하며, 테일러드 칼라와 싱글 폴드 소매 밑단이 클래식한 느낌을 더해줍니다. UV 차단 20+ 기능을 갖춘 이 셔츠는 유해한 태양 광선으로부터 보호해 라운드 내내 편안하고 보호된 상태를 유지합니다.",
         image: "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 88%/엘라스테인 12%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -20504,7 +20806,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Moon - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "문(Moon) 셔츠는 클래식한 솔리드 골프 셔츠로, 골지 칼라와 대조적인 스트라이프가 있어 세련되고 스포티한 룩을 선사합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 셔츠는 뛰어난 통기성과 속건성을 제공하여 라운드 내내 편안함을 보장합니다. 신축성 있는 소재로 움직임이 편하며, 부드럽고 편안한 촉감으로 장시간 착용에도 이상적입니다. UV 보호 20+를 갖춘 Moon 셔츠는 태양의 유해한 광선으로부터도 보호합니다.",
     image: "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/1.jpg",
     images: ["/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/1.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/2.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/3.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/4.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/5.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/6.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/1.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/2.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/3.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/4.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/5.jpg", "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/6.jpg"],
     accent: "#2A4038",
@@ -20512,18 +20814,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001268760001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand",
-    registeredAt: "2026-07-28T21:10:19.000Z",
+    registeredAt: "2026-07-28T21:30:46.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Moon - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Moon - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "문(Moon) 셔츠는 클래식한 솔리드 골프 셔츠로, 골지 칼라와 대조적인 스트라이프가 있어 세련되고 스포티한 룩을 선사합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 셔츠는 뛰어난 통기성과 속건성을 제공하여 라운드 내내 편안함을 보장합니다. 신축성 있는 소재로 움직임이 편하며, 부드럽고 편안한 촉감으로 장시간 착용에도 이상적입니다. UV 보호 20+를 갖춘 Moon 셔츠는 태양의 유해한 광선으로부터도 보호합니다.",
         image: "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 93%/스판덱스 7%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -20958,7 +21260,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Muir - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Muir는 부드러운 톤의 레이어링과 역동적인 전체 프린트가 특징으로 실루엣을 압도하지 않으면서도 시각적인 흥미를 선사합니다. VENTIL8™ PLUS 원단으로 제작되어 통기성이 뛰어나고 수분 전달이 빠릅니다. 신축성 있는 섬유는 움직임을 제한하지 않고, 클래식한 폴로 구조는 디자인을 기반으로 합니다. Muir는 뛰어난 스타일과 고급 편안함을 추구하는 플레이어를 위한 표현력이 풍부하면서도 세련된 옵션입니다.",
     image: "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg",
     images: ["/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/2.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/3.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/4.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/5.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/6.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/1.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/2.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/3.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/4.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/5.jpg", "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/6.jpg"],
     accent: "#2F5A3E",
@@ -20966,18 +21268,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001638759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/muir-breathable-short-sleeve-golf-shirt-crystal-blue",
-    registeredAt: "2026-07-28T21:10:20.000Z",
+    registeredAt: "2026-07-28T21:30:47.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Muir - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Muir - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Muir는 부드러운 톤의 레이어링과 역동적인 전체 프린트가 특징으로 실루엣을 압도하지 않으면서도 시각적인 흥미를 선사합니다. VENTIL8™ PLUS 원단으로 제작되어 통기성이 뛰어나고 수분 전달이 빠릅니다. 신축성 있는 섬유는 움직임을 제한하지 않고, 클래식한 폴로 구조는 디자인을 기반으로 합니다. Muir는 뛰어난 스타일과 고급 편안함을 추구하는 플레이어를 위한 표현력이 풍부하면서도 세련된 옵션입니다.",
         image: "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -21352,7 +21654,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Mulligan - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Mulligan은 강력한 컬러 블로킹과 기술적인 소매 액센트를 통해 현대적인 단순함을 표현합니다. VENTIL8™ PLUS 원단은 공기 흐름을 향상시키고 빠르게 건조되어 햇볕이 잘 드는 긴 라운드 동안 편안함을 보장합니다. 부드러운 기계적 신축성은 자연스러운 스윙 경로를 지원하며, 골지 칼라는 맞춤형 마감을 더해줍니다. 대담한 어깨 대비와 신뢰할 수 있는 성능을 갖춘 Mulligan은 자신감 넘치는 따뜻한 날씨의 필수품입니다.",
     image: "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/1.jpg",
     images: ["/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/1.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/2.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/3.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/4.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/5.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/6.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/1.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/2.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/3.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/4.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/5.jpg", "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/6.jpg"],
     accent: "#1E3A4A",
@@ -21360,18 +21662,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001618669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange",
-    registeredAt: "2026-07-28T21:10:21.000Z",
+    registeredAt: "2026-07-28T21:30:48.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Mulligan - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Mulligan - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Mulligan은 강력한 컬러 블로킹과 기술적인 소매 액센트를 통해 현대적인 단순함을 표현합니다. VENTIL8™ PLUS 원단은 공기 흐름을 향상시키고 빠르게 건조되어 햇볕이 잘 드는 긴 라운드 동안 편안함을 보장합니다. 부드러운 기계적 신축성은 자연스러운 스윙 경로를 지원하며, 골지 칼라는 맞춤형 마감을 더해줍니다. 대담한 어깨 대비와 신뢰할 수 있는 성능을 갖춘 Mulligan은 자신감 넘치는 따뜻한 날씨의 필수품입니다.",
         image: "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -21837,7 +22139,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Myles - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "GALVIN GREEN CONCEPT 컬렉션의 Myles 골프 셔츠는 곡선형 래글런 슬리브와 블랙 및 화이트 스트라이프 골지 칼라와 커프스로 기능성과 스타일을 결합합니다. 통기성과 편안함을 위해 디자인된 이 셔츠는 속건성이 있으며 UV 차단 20+ 기능을 제공하여 태양으로부터 보호합니다. 신축성 있는 원단은 유연성을 제공하여 연주하는 동안 모든 범위의 움직임을 보장합니다.",
     image: "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/1.jpg",
     images: ["/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/1.jpg", "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/2.jpg", "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/3.jpg", "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/4.jpg", "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/5.jpg", "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/6.jpg"],
     accent: "#243447",
@@ -21845,18 +22147,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01001498746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/myles-breathable-short-sleeve-golf-shirt-sand-white",
-    registeredAt: "2026-07-28T21:10:22.000Z",
+    registeredAt: "2026-07-28T21:30:49.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Myles - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Myles - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "GALVIN GREEN CONCEPT 컬렉션의 Myles 골프 셔츠는 곡선형 래글런 슬리브와 블랙 및 화이트 스트라이프 골지 칼라와 커프스로 기능성과 스타일을 결합합니다. 통기성과 편안함을 위해 디자인된 이 셔츠는 속건성이 있으며 UV 차단 20+ 기능을 제공하여 태양으로부터 보호합니다. 신축성 있는 원단은 유연성을 제공하여 연주하는 동안 모든 범위의 움직임을 보장합니다.",
         image: "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -21947,7 +22249,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Myron - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "GALVIN GREEN CONCEPT 컬렉션의 Myron 골프 셔츠는 검은색 골지 칼라와 커프스가 있는 곡선형 요크 디자인이 특징이며 클래식 제품에 현대적인 엣지를 더해줍니다. 통기성을 위해 제작된 이 셔츠는 빠른 건조 기능을 갖추고 있으며 UV 차단 20+ 기능을 제공하여 시원함을 유지하고 태양으로부터 보호합니다. 신축성 있는 원단이 편안함과 유연성을 보장하며, 부드러운 질감이 전체적인 착용감을 높여줍니다.",
     image: "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/1.jpg",
     images: ["/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/1.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/2.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/3.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/4.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/5.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/6.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/1.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/2.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/3.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/4.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/5.jpg", "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/6.jpg"],
     accent: "#2C2A28",
@@ -21955,18 +22257,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01001488746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/myron-breathable-short-sleeve-golf-shirt-sand-white",
-    registeredAt: "2026-07-28T21:10:23.000Z",
+    registeredAt: "2026-07-28T21:30:50.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Myron - 통기성 숏 슬리브 골프 셔츠",
-        bodyKo: "Myron - 통기성 숏 슬리브 골프 셔츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "GALVIN GREEN CONCEPT 컬렉션의 Myron 골프 셔츠는 검은색 골지 칼라와 커프스가 있는 곡선형 요크 디자인이 특징이며 클래식 제품에 현대적인 엣지를 더해줍니다. 통기성을 위해 제작된 이 셔츠는 빠른 건조 기능을 갖추고 있으며 UV 차단 20+ 기능을 제공하여 시원함을 유지하고 태양으로부터 보호합니다. 신축성 있는 원단이 편안함과 유연성을 보장하며, 부드러운 질감이 전체적인 착용감을 높여줍니다.",
         image: "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 97%/스판덱스 3%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -22131,7 +22433,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Nea - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Nea 골프 바지는 현대 골퍼를 위한 스타일과 성능을 결합한 슬림한 컷 디자인을 제공합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 바지는 통기성이 뛰어나고 속건성이 뛰어나며 가벼워 라운드 내내 편안함을 보장합니다. 기계식 스트레치 패브릭은 유연성을 제공하며 UV 보호 20+는 태양의 유해한 광선으로부터 보호합니다. 앞면과 뒷면에 포켓이 있어 편리합니다.",
     image: "/products/gg-pdp/nea-breathable-golf-pants-navy/1.jpg",
     images: ["/products/gg-pdp/nea-breathable-golf-pants-navy/1.jpg", "/products/gg-pdp/nea-breathable-golf-pants-navy/2.jpg", "/products/gg-pdp/nea-breathable-golf-pants-navy/3.jpg", "/products/gg-pdp/nea-breathable-golf-pants-navy/4.jpg", "/products/gg-pdp/nea-breathable-golf-pants-navy/5.jpg", "/products/gg-pdp/nea-breathable-golf-pants-navy/6.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/1.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/2.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/3.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/4.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/5.jpg", "/products/gg-pdp/nea-breathable-golf-pants-sand/6.jpg"],
     accent: "#3A2F28",
@@ -22139,18 +22441,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "D01001539405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nea-breathable-golf-pants-navy",
-    registeredAt: "2026-07-28T21:10:24.000Z",
+    registeredAt: "2026-07-28T21:30:51.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Nea - 통기성 golf 팬츠",
-        bodyKo: "Nea - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Nea 골프 바지는 현대 골퍼를 위한 스타일과 성능을 결합한 슬림한 컷 디자인을 제공합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 바지는 통기성이 뛰어나고 속건성이 뛰어나며 가벼워 라운드 내내 편안함을 보장합니다. 기계식 스트레치 패브릭은 유연성을 제공하며 UV 보호 20+는 태양의 유해한 광선으로부터 보호합니다. 앞면과 뒷면에 포켓이 있어 편리합니다.",
         image: "/products/gg-pdp/nea-breathable-golf-pants-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 50% 재활용 폴리에스테르/ 50% 폴리에스테르, 102g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -22375,7 +22677,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Nellie - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "스트레이트 레그를 갖춘 새로운 하이웨이스트 테크니컬 골프 팬츠 Nellie를 소개합니다. 활동 중에 착용하거나 일상 바지로 착용하거나 심지어 사무실에서 착용하도록 디자인된 Nellie는 테일러드 바지로 위장한 신축성 있는 액티브웨어 바지입니다. 클래식 Nicole 골프 팬츠의 대안인 이 혁신적인 새 컷은 매우 부드럽고 편안한 4방향 스트레치 원단으로 만들어졌습니다. 편리한 포켓과 뛰어난 통기성을 갖춘 이 제품은 밤에 외출할 때 멋진 상의와 함께 착용할 수 있습니다. 누구도 신축성 있는 바지를 입고 있다고 믿지 않을 것입니다. Nellie 여성용 슬림 컷 골프 바지는 기계적 신축성이 있는 원단으로 제작되었으며 15+의 자외선 차단 기능을 제공합니다. 갈빈 그린의 VENTIL8™ PLUS 바지, 반바지, 스커트 제품군 중 하나인 Nellie는 앞면과 뒷면에 포켓이 있으며 관리하기 쉬운 속건성 원단으로 제작되었습니다.",
     image: "/products/gg-pdp/nellie-breathable-pants-black/1.jpg",
     images: ["/products/gg-pdp/nellie-breathable-pants-black/1.jpg", "/products/gg-pdp/nellie-breathable-pants-black/2.jpg", "/products/gg-pdp/nellie-breathable-pants-black/3.jpg", "/products/gg-pdp/nellie-breathable-pants-black/4.jpg", "/products/gg-pdp/nellie-breathable-pants-black/5.jpg", "/products/gg-pdp/nellie-breathable-pants-black/6.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/1.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/2.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/3.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/4.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/5.jpg", "/products/gg-pdp/nellie-breathable-pants-navy/6.jpg"],
     accent: "#1A2428",
@@ -22383,18 +22685,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 129.0,
     sku: "D01000689403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nellie-breathable-pants-black",
-    registeredAt: "2026-07-28T21:10:25.000Z",
+    registeredAt: "2026-07-28T21:30:52.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Nellie - 통기성 golf 팬츠",
-        bodyKo: "Nellie - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "스트레이트 레그를 갖춘 새로운 하이웨이스트 테크니컬 골프 팬츠 Nellie를 소개합니다. 활동 중에 착용하거나 일상 바지로 착용하거나 심지어 사무실에서 착용하도록 디자인된 Nellie는 테일러드 바지로 위장한 신축성 있는 액티브웨어 바지입니다. 클래식 Nicole 골프 팬츠의 대안인 이 혁신적인 새 컷은 매우 부드럽고 편안한 4방향 스트레치 원단으로 만들어졌습니다. 편리한 포켓과 뛰어난 통기성을 갖춘 이 제품은 밤에 외출할 때 멋진 상의와 함께 착용할 수 있습니다. 누구도 신축성 있는 바지를 입고 있다고 믿지 않을 것입니다.",
         image: "/products/gg-pdp/nellie-breathable-pants-black/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Nellie 여성용 슬림 컷 골프 바지는 기계적 신축성이 있는 원단으로 제작되었으며 15+의 자외선 차단 기능을 제공합니다. 갈빈 그린의 VENTIL8™ PLUS 바지, 반바지, 스커트 제품군 중 하나인 Nellie는 앞면과 뒷면에 포켓이 있으며 관리하기 쉬운 속건성 원단으로 제작되었습니다.",
+        image: "/products/gg-pdp/nellie-breathable-pants-black/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 100%, 151g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -22619,7 +22927,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Nick - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+    descriptionKo: "닉 골프 팬츠는 가볍고 스트레이트 컷으로 디자인되어 편안하고 모던한 핏을 선사합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 바지는 뛰어난 통기성과 속건성을 제공하여 코스에서 시원하고 편안함을 유지합니다. 기계적 신축성 있는 원단으로 유연성이 뛰어나며, UV 차단 20+ 기능으로 태양으로부터 보호됩니다. 앞면과 뒷면 포켓이 모두 특징인 Nick 바지는 하루 종일 편안함을 제공합니다.",
     image: "/products/gg-pdp/nick-breathable-golf-pants-black/1.jpg",
     images: ["/products/gg-pdp/nick-breathable-golf-pants-black/1.jpg", "/products/gg-pdp/nick-breathable-golf-pants-black/2.jpg", "/products/gg-pdp/nick-breathable-golf-pants-black/3.jpg", "/products/gg-pdp/nick-breathable-golf-pants-black/4.jpg", "/products/gg-pdp/nick-breathable-golf-pants-black/5.jpg", "/products/gg-pdp/nick-breathable-golf-pants-black/6.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/1.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/2.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/3.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/4.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/5.jpg", "/products/gg-pdp/nick-breathable-golf-pants-navy/6.jpg"],
     accent: "#1A2E28",
@@ -22627,18 +22935,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 99.0,
     sku: "D01001549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nick-breathable-golf-pants-black",
-    registeredAt: "2026-07-28T21:10:26.000Z",
+    registeredAt: "2026-07-28T21:30:53.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Nick - 통기성 golf 팬츠",
-        bodyKo: "Nick - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+        bodyKo: "닉 골프 팬츠는 가볍고 스트레이트 컷으로 디자인되어 편안하고 모던한 핏을 선사합니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 바지는 뛰어난 통기성과 속건성을 제공하여 코스에서 시원하고 편안함을 유지합니다. 기계적 신축성 있는 원단으로 유연성이 뛰어나며, UV 차단 20+ 기능으로 태양으로부터 보호됩니다. 앞면과 뒷면 포켓이 모두 특징인 Nick 바지는 하루 종일 편안함을 제공합니다.",
         image: "/products/gg-pdp/nick-breathable-golf-pants-black/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 50% 재활용 폴리에스테르/50% 폴리에스테르, 102g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™" },
     ],
     variants: [
       {
@@ -23463,7 +23771,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women", "gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women", "gg-bestsellers-women"],
-    descriptionKo: "Nina - 통기성 골프 스커트 with inner 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Nina 골프 스커트는 일직선의 맞춤형 핏을 제공하며 코스에서의 편안함과 성능을 모두 고려하여 디자인되었습니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 스커트는 통기성이 뛰어나고 속건성이 뛰어나며 가볍습니다. 기계식 스트레치 패브릭은 쉽게 움직일 수 있는 유연성을 제공하며 UV 보호 20+는 태양으로부터 보호해 줍니다. 앞면과 뒷면 포켓으로 실용성을 높였으며, 내부 반바지는 편안함과 커버력을 더욱 높여줍니다.",
     image: "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/1.jpg",
     images: ["/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/1.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/2.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/3.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/4.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/5.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/6.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/1.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/2.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/3.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/4.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/5.jpg", "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/6.jpg"],
     accent: "#1F4D3A",
@@ -23471,18 +23779,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "D01001519405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nina-breathable-golf-skirt-with-inner-shorts-navy",
-    registeredAt: "2026-07-28T21:10:27.000Z",
+    registeredAt: "2026-07-28T21:30:54.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Nina - 통기성 골프 스커트 with inner 쇼츠",
-        bodyKo: "Nina - 통기성 골프 스커트 with inner 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Nina 골프 스커트는 일직선의 맞춤형 핏을 제공하며 코스에서의 편안함과 성능을 모두 고려하여 디자인되었습니다. VENTIL8™ PLUS 기술 원단으로 제작된 이 스커트는 통기성이 뛰어나고 속건성이 뛰어나며 가볍습니다. 기계식 스트레치 패브릭은 쉽게 움직일 수 있는 유연성을 제공하며 UV 보호 20+는 태양으로부터 보호해 줍니다. 앞면과 뒷면 포켓으로 실용성을 높였으며, 내부 반바지는 편안함과 커버력을 더욱 높여줍니다.",
         image: "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 50% 재활용 폴리에스테르/ 50% 폴리에스테르, 102g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -23708,7 +24016,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Nixon - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "앞면 포켓, 뒷면 포켓 및 기계적 신축성을 갖춘 남성용 Nixon 골프 바지는 편안하고 실용적이며 착용하기 쉽습니다. 16가지 사이즈로 제공되는 이 바지는 다양한 골퍼에게 적합합니다. 또한 이 부드럽고 가벼운 원단은 bluesign® 승인을 받았습니다. 골퍼가 디자인한, 골퍼를 위한 골프복으로 더운 날에도 편안함을 느껴보세요 가장 가벼운 남성용 골프 팬츠인 Nixon은 화창한 날에 딱 맞는 가벼운 소재로 제작되었습니다. 통기성이 매우 뛰어난 신축성 있는 원단으로 제작된 이 바지는 더운 날씨에 골프를 칠 때 가장 먼저 선택하는 바지입니다. 빠른 건조 특성으로 시원하고 건조한 상태를 유지하며, UV 차단 기능 20+는 태양이 빛날 때 추가적인 커버력을 제공합니다.",
     image: "/products/gg-pdp/nixon-breathable-pants-light-grey/1.jpg",
     images: ["/products/gg-pdp/nixon-breathable-pants-light-grey/1.jpg", "/products/gg-pdp/nixon-breathable-pants-light-grey/2.jpg", "/products/gg-pdp/nixon-breathable-pants-light-grey/3.jpg", "/products/gg-pdp/nixon-breathable-pants-light-grey/4.jpg", "/products/gg-pdp/nixon-breathable-pants-light-grey/5.jpg", "/products/gg-pdp/nixon-breathable-pants-light-grey/6.jpg"],
     accent: "#24302A",
@@ -23716,18 +24024,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01000209091002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nixon-breathable-pants-light-grey",
-    registeredAt: "2026-07-28T21:10:28.000Z",
+    registeredAt: "2026-07-28T21:30:55.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Nixon - 통기성 golf 팬츠",
-        bodyKo: "Nixon - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "앞면 포켓, 뒷면 포켓 및 기계적 신축성을 갖춘 남성용 Nixon 골프 바지는 편안하고 실용적이며 착용하기 쉽습니다. 16가지 사이즈로 제공되는 이 바지는 다양한 골퍼에게 적합합니다. 또한 이 부드럽고 가벼운 원단은 bluesign® 승인을 받았습니다. 골퍼가 디자인한, 골퍼를 위한 골프복으로 더운 날에도 편안함을 느껴보세요",
         image: "/products/gg-pdp/nixon-breathable-pants-light-grey/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "가장 가벼운 남성용 골프 팬츠인 Nixon은 화창한 날에 딱 맞는 가벼운 소재로 제작되었습니다. 통기성이 매우 뛰어난 신축성 있는 원단으로 제작된 이 바지는 더운 날씨에 골프를 칠 때 가장 먼저 선택하는 바지입니다. 빠른 건조 특성으로 시원하고 건조한 상태를 유지하며, UV 차단 기능 20+는 태양이 빛날 때 추가적인 커버력을 제공합니다.",
+        image: "/products/gg-pdp/nixon-breathable-pants-light-grey/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 100%, 123g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -23982,7 +24296,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Noah - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "이 남성용 골프 바지에는 셔츠 그리퍼 허리밴드와 스트레치 기능이 포함되어 있어 완벽한 핏을 제공합니다. 앞면과 뒷면에 포켓이 있어 스타일리시하면서도 기능성도 뛰어난 팬츠입니다. 게다가 UV 차단 기능도 20+입니다. 멋진 골프 셔츠와 함께 착용하고 코스에서 화창한 날을 즐겨보세요. 노아 바지는 갈빈 그린의 베스트셀러 남성용 골프 바지이며 이 스타일은 21가지 사이즈로 제공됩니다(예, 21가지 사이즈!) 통기성이 뛰어나고 속건성이 뛰어난 원단으로 제작된 이 바지는 시원하거나 따뜻한 날씨에 골프를 치는 데 이상적입니다. 다양한 색상으로 제공되는 원단은 기계적인 신축성을 갖추고 있어 골프를 치는 동안 편안하고 자유롭게 움직일 수 있습니다.",
     image: "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/1.jpg",
     images: ["/products/gg-pdp/noah-breathable-golf-pants-blue-bell/1.jpg", "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/2.jpg", "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/3.jpg", "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/4.jpg", "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/5.jpg", "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/6.jpg", "/products/gg-pdp/noah-breathable-pants-black/1.jpg", "/products/gg-pdp/noah-breathable-pants-black/2.jpg", "/products/gg-pdp/noah-breathable-pants-black/3.jpg", "/products/gg-pdp/noah-breathable-pants-black/4.jpg", "/products/gg-pdp/noah-breathable-pants-black/5.jpg", "/products/gg-pdp/noah-breathable-pants-black/6.jpg"],
     accent: "#2A4038",
@@ -23990,18 +24304,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 119.0,
     sku: "D01000298763001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/noah-breathable-golf-pants-blue-bell",
-    registeredAt: "2026-07-28T21:10:29.000Z",
+    registeredAt: "2026-07-28T21:30:56.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Noah - 통기성 golf 팬츠",
-        bodyKo: "Noah - 통기성 golf 팬츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "이 남성용 골프 바지에는 셔츠 그리퍼 허리밴드와 스트레치 기능이 포함되어 있어 완벽한 핏을 제공합니다. 앞면과 뒷면에 포켓이 있어 스타일리시하면서도 기능성도 뛰어난 팬츠입니다. 게다가 UV 차단 기능도 20+입니다. 멋진 골프 셔츠와 함께 착용하고 코스에서 화창한 날을 즐겨보세요.",
         image: "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "노아 바지는 갈빈 그린의 베스트셀러 남성용 골프 바지이며 이 스타일은 21가지 사이즈로 제공됩니다(예, 21가지 사이즈!) 통기성이 뛰어나고 속건성이 뛰어난 원단으로 제작된 이 바지는 시원하거나 따뜻한 날씨에 골프를 치는 데 이상적입니다. 다양한 색상으로 제공되는 원단은 기계적인 신축성을 갖추고 있어 골프를 치는 동안 편안하고 자유롭게 움직일 수 있습니다.",
+        image: "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 100%, 색상 180g/m2, 흰색 205g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -25591,7 +25911,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-women",
     ggCollections: ["gg-new-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-women"],
-    descriptionKo: "Nova - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Nova 골프 반바지는 편안함과 성능을 위해 디자인되었으며 통기성과 속건성을 위한 VENTIL8™ PLUS 기술이 특징입니다. 기계식 스트레치 패브릭은 유연성을 보장하는 동시에 UV 차단 20+는 태양으로부터 보호해 줍니다. 앞면과 뒷면에 포켓이 있어 편의성이 더해진 이 반바지는 활동적인 골퍼에게 적합합니다.",
     image: "/products/gg-pdp/nova-breathable-golf-shorts-navy/1.jpg",
     images: ["/products/gg-pdp/nova-breathable-golf-shorts-navy/1.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-navy/2.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-navy/3.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-navy/4.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-navy/5.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-navy/6.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/1.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/2.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/3.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/4.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/5.jpg", "/products/gg-pdp/nova-breathable-golf-shorts-sand/6.jpg"],
     accent: "#2F5A3E",
@@ -25599,18 +25919,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001529405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nova-breathable-golf-shorts-navy",
-    registeredAt: "2026-07-28T21:10:30.000Z",
+    registeredAt: "2026-07-28T21:30:57.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Nova - 통기성 골프 쇼츠",
-        bodyKo: "Nova - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Nova 골프 반바지는 편안함과 성능을 위해 디자인되었으며 통기성과 속건성을 위한 VENTIL8™ PLUS 기술이 특징입니다. 기계식 스트레치 패브릭은 유연성을 보장하는 동시에 UV 차단 20+는 태양으로부터 보호해 줍니다. 앞면과 뒷면에 포켓이 있어 편의성이 더해진 이 반바지는 활동적인 골퍼에게 적합합니다.",
         image: "/products/gg-pdp/nova-breathable-golf-shorts-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 50% 재활용 폴리에스테르/ 50% 폴리에스테르, 102g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -25835,7 +26155,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Paul - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "가볍고 빠르게 건조되는 원단으로 제작되어 기온이 올라가도 시원하고 건조한 상태를 유지할 수 있습니다. 통기성이 뛰어난 남성용 골프 반바지에는 셔츠 그리퍼 허리밴드와 내장된 스트레치 기능이 있어 편안함과 완벽한 핏을 제공합니다. 화창한 날에 추가 커버를 제공하기 위해 20+ UV 차단 기능이 제공되며 반바지에는 앞면과 뒷면 포켓이 포함되어 있습니다. 가볍고 부드러우며 편안한 이 반바지는 골프 코스에서나 클럽하우스에서 점심 식사 중에 멋지게 보입니다. 폴 반바지는 갈빈 그린의 통기성이 뛰어난 남성용 골프 반바지로 화창한 날 골프에 이상적입니다. bluesign® 승인 원단으로 제작된 Paul 반바지는 다양한 옵션으로 제공됩니다. 클래식한 색상을 선호하시나요? 우리는 그것을 가지고 있습니다. 골프 코스에 대해 발표하고 싶으십니까? 밝거나 대담한 톤의 쌍을 선택하십시오.",
     image: "/products/gg-pdp/paul-breathable-shorts-black/1.jpg",
     images: ["/products/gg-pdp/paul-breathable-shorts-black/1.jpg", "/products/gg-pdp/paul-breathable-shorts-black/2.jpg", "/products/gg-pdp/paul-breathable-shorts-black/3.jpg", "/products/gg-pdp/paul-breathable-shorts-black/4.jpg", "/products/gg-pdp/paul-breathable-shorts-black/5.jpg", "/products/gg-pdp/paul-breathable-shorts-black/6.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/1.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/2.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/3.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/4.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/5.jpg", "/products/gg-pdp/paul-breathable-shorts-navy/6.jpg"],
     accent: "#1E3A4A",
@@ -25843,18 +26163,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 99.0,
     sku: "D01000269403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/paul-breathable-shorts-black",
-    registeredAt: "2026-07-28T21:10:31.000Z",
+    registeredAt: "2026-07-28T21:30:58.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Paul - 통기성 골프 쇼츠",
-        bodyKo: "Paul - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "가볍고 빠르게 건조되는 원단으로 제작되어 기온이 올라가도 시원하고 건조한 상태를 유지할 수 있습니다. 통기성이 뛰어난 남성용 골프 반바지에는 셔츠 그리퍼 허리밴드와 내장된 스트레치 기능이 있어 편안함과 완벽한 핏을 제공합니다. 화창한 날에 추가 커버를 제공하기 위해 20+ UV 차단 기능이 제공되며 반바지에는 앞면과 뒷면 포켓이 포함되어 있습니다. 가볍고 부드러우며 편안한 이 반바지는 골프 코스에서나 클럽하우스에서 점심 식사 중에 멋지게 보입니다.",
         image: "/products/gg-pdp/paul-breathable-shorts-black/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "폴 반바지는 갈빈 그린의 통기성이 뛰어난 남성용 골프 반바지로 화창한 날 골프에 이상적입니다. bluesign® 승인 원단으로 제작된 Paul 반바지는 다양한 옵션으로 제공됩니다. 클래식한 색상을 선호하시나요? 우리는 그것을 가지고 있습니다. 골프 코스에 대해 발표하고 싶으십니까? 밝거나 대담한 톤의 쌍을 선택하십시오.",
+        image: "/products/gg-pdp/paul-breathable-shorts-black/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 100%, 색상 180g/m2, 흰색 205g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -26499,7 +26825,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Pedro - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+    descriptionKo: "Pedro 골프 반바지는 편안함과 성능을 위해 디자인되었으며 통기성과 속건성을 위한 VENTIL8™ PLUS 기술로 제작되었습니다. 기계식 스트레치 패브릭은 자유로운 움직임을 보장하며 UV 보호 20+는 태양으로부터 사용자를 보호합니다. 앞면과 뒷면 포켓은 실용적인 수납 공간을 제공하므로 이 반바지는 화창한 날의 긴 라운드에 적합합니다.",
     image: "/products/gg-pdp/pedro-breathable-golf-shorts-black/1.jpg",
     images: ["/products/gg-pdp/pedro-breathable-golf-shorts-black/1.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-black/2.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-black/3.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-black/4.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-black/5.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-black/6.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/1.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/2.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/3.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/4.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/5.jpg", "/products/gg-pdp/pedro-breathable-golf-shorts-navy/6.jpg"],
     accent: "#243447",
@@ -26507,18 +26833,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001569403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/pedro-breathable-golf-shorts-black",
-    registeredAt: "2026-07-28T21:10:32.000Z",
+    registeredAt: "2026-07-28T21:30:59.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Pedro - 통기성 골프 쇼츠",
-        bodyKo: "Pedro - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+        bodyKo: "Pedro 골프 반바지는 편안함과 성능을 위해 디자인되었으며 통기성과 속건성을 위한 VENTIL8™ PLUS 기술로 제작되었습니다. 기계식 스트레치 패브릭은 자유로운 움직임을 보장하며 UV 보호 20+는 태양으로부터 사용자를 보호합니다. 앞면과 뒷면 포켓은 실용적인 수납 공간을 제공하므로 이 반바지는 화창한 날의 긴 라운드에 적합합니다.",
         image: "/products/gg-pdp/pedro-breathable-golf-shorts-black/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 50% 재활용 폴리에스테르/50% 폴리에스테르, 102g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™" },
     ],
     variants: [
       {
@@ -26849,7 +27175,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Percy - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "이 우븐 4포켓 남성용 골프 반바지는 뒷면에 패치 포켓이 있습니다. bluesign® 승인 패브릭으로 제작된 Percy 반바지는 지속 가능하고 관리가 쉽습니다. 가볍고 부드러우며 편안한 이 반바지는 골프 코스에 있든 없든 화창한 날에 입는 반바지입니다. Percy 남성용 골프 반바지는 초경량의 통기성이 뛰어난 원단으로 제작되어 더운 날씨 골프에 이상적입니다. 이 속건성 소재는 골프 코스에서 시원하고 건조한 상태를 유지해 주며, 자외선 차단 지수 15+는 추가 자외선 차단 기능을 제공하며, 기계적 신축성은 게임 중에 자유롭게 움직일 수 있음을 의미합니다.",
     image: "/products/gg-pdp/percy-breathable-shorts-navy/1.jpg",
     images: ["/products/gg-pdp/percy-breathable-shorts-navy/1.jpg", "/products/gg-pdp/percy-breathable-shorts-navy/2.jpg", "/products/gg-pdp/percy-breathable-shorts-navy/3.jpg", "/products/gg-pdp/percy-breathable-shorts-navy/4.jpg", "/products/gg-pdp/percy-breathable-shorts-navy/5.jpg", "/products/gg-pdp/percy-breathable-shorts-navy/6.jpg"],
     accent: "#2C2A28",
@@ -26857,18 +27183,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000229405002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/percy-breathable-shorts-navy",
-    registeredAt: "2026-07-28T21:10:33.000Z",
+    registeredAt: "2026-07-28T21:31:00.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Percy - 통기성 골프 쇼츠",
-        bodyKo: "Percy - 통기성 골프 쇼츠은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "이 우븐 4포켓 남성용 골프 반바지는 뒷면에 패치 포켓이 있습니다. bluesign® 승인 패브릭으로 제작된 Percy 반바지는 지속 가능하고 관리가 쉽습니다. 가볍고 부드러우며 편안한 이 반바지는 골프 코스에 있든 없든 화창한 날에 입는 반바지입니다.",
         image: "/products/gg-pdp/percy-breathable-shorts-navy/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "Percy 남성용 골프 반바지는 초경량의 통기성이 뛰어난 원단으로 제작되어 더운 날씨 골프에 이상적입니다. 이 속건성 소재는 골프 코스에서 시원하고 건조한 상태를 유지해 주며, 자외선 차단 지수 15+는 추가 자외선 차단 기능을 제공하며, 기계적 신축성은 게임 중에 자유롭게 움직일 수 있음을 의미합니다.",
+        image: "/products/gg-pdp/percy-breathable-shorts-navy/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스테르 100%, 123g/m2" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -26988,7 +27320,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-women",
     ggCollections: ["gg-bestsellers-women"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-women"],
-    descriptionKo: "Shade - Sun visor은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+    descriptionKo: "Shade 골프 선바이저는 54~62cm(21.3~24.4인치)로 둘레를 조절할 수 있습니다. 선글라스는 필요하지 않습니다. Shade는 둘레 조절이 가능한 가벼운 골프용 선바이저입니다. 골프, 테니스 및 다양한 야외 활동에 실용적인 이 다용도 제품은 가지고 다니기에 편리한 아이템입니다.",
     image: "/products/gg-pdp/shade-sun-visor-alaskan-blue/1.jpg",
     images: ["/products/gg-pdp/shade-sun-visor-alaskan-blue/1.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/2.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/3.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/4.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/5.jpg", "/products/gg-pdp/shade-sun-visor-black/1.jpg", "/products/gg-pdp/shade-sun-visor-black/2.jpg", "/products/gg-pdp/shade-sun-visor-black/3.jpg", "/products/gg-pdp/shade-sun-visor-black/4.jpg", "/products/gg-pdp/shade-sun-visor-black/5.jpg", "/products/gg-pdp/shade-sun-visor-navy/1.jpg", "/products/gg-pdp/shade-sun-visor-navy/2.jpg"],
     accent: "#3A2F28",
@@ -26996,18 +27328,24 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 25.0,
     sku: "F01000059645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/shade-sun-visor-alaskan-blue",
-    registeredAt: "2026-07-28T21:10:34.000Z",
+    registeredAt: "2026-07-28T21:31:01.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Shade - Sun visor",
-        bodyKo: "Shade - Sun visor은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™ PLUS.",
+        bodyKo: "Shade 골프 선바이저는 54~62cm(21.3~24.4인치)로 둘레를 조절할 수 있습니다.",
         image: "/products/gg-pdp/shade-sun-visor-alaskan-blue/1.jpg",
+      },
+      {
+        titleKo: "소재 · 테크",
+        bodyKo: "선글라스는 필요하지 않습니다. Shade는 둘레 조절이 가능한 가벼운 골프용 선바이저입니다. 골프, 테니스 및 다양한 야외 활동에 실용적인 이 다용도 제품은 가지고 다니기에 편리한 아이템입니다.",
+        image: "/products/gg-pdp/shade-sun-visor-alaskan-blue/2.jpg",
+        reverse: true,
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™ PLUS" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스터 100%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™ PLUS" },
     ],
     variants: [
       {
@@ -27082,7 +27420,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-new-men",
     ggCollections: ["gg-new-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-new-men"],
-    descriptionKo: "Shane - 통기성 골프 햇은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+    descriptionKo: "Shane 골프 모자는 대비되는 챙과 앞면 갈빈 그린 자수로 스타일과 성능을 결합합니다. 구조화된 직물로 제작된 이 캡은 향상된 통기성을 위한 환기 구멍을 갖추고 있으며, 너비 조절이 가능하여 맞춤형 핏을 보장합니다.",
     image: "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/2.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/3.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/4.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/5.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/2.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/3.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/4.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/5.jpg", "/products/gg-pdp/shane-breathable-golf-hat-white-cool-grey/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-white-cool-grey/2.jpg"],
     accent: "#1A2428",
@@ -27090,18 +27428,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.0,
     sku: "F01000208712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/shane-breathable-golf-hat-crystal-blue-navy",
-    registeredAt: "2026-07-28T21:10:35.000Z",
+    registeredAt: "2026-07-28T21:31:02.000Z",
     editTier: "new",
     storySections: [
       {
         titleKo: "Shane - 통기성 골프 햇",
-        bodyKo: "Shane - 통기성 골프 햇은 통기성 좋은 갈빈 그린 골프 셔츠입니다. 라운드 중에도 쾌적한 착용감을 위해 설계되었습니다. 적용 테크: ventil8 plus, VENTIL8™.",
+        bodyKo: "Shane 골프 모자는 대비되는 챙과 앞면 갈빈 그린 자수로 스타일과 성능을 결합합니다. 구조화된 직물로 제작된 이 캡은 향상된 통기성을 위한 환기 구멍을 갖추고 있으며, 너비 조절이 가능하여 맞춤형 핏을 보장합니다.",
         image: "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/1.jpg",
       },
     ],
     techSpecs: [
-      { labelKo: "소재 · 테크", valueKo: "ventil8 plus" },
-      { labelKo: "소재 · 테크", valueKo: "VENTIL8™" },
+      { labelKo: "소재", valueKo: "VENTIL8™ 플러스 · 폴리에스터 100%" },
+      { labelKo: "테크놀로지", valueKo: "VENTIL8™" },
     ],
     variants: [
       {
@@ -27161,7 +27499,7 @@ export const ggCatalogProducts: Product[] = [
     subcategory: "gg-bestsellers-men",
     ggCollections: ["gg-bestsellers-men"] as Product["ggCollections"],
     tags: ["galvin-green", "gg-bestsellers-men"],
-    descriptionKo: "Wilton - Golf 벨트은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+    descriptionKo: "Wilton 골프 벨트는 다재다능함을 염두에 두고 디자인되었으며 견고한 우븐 밴드와 매끄러운 금속 버클이 특징입니다. 혁신적인 \"트랙 핏\" 미세 조정 시스템은 정확하고 편안한 핏을 보장합니다. 리버서블 디자인으로 두 가지 색상을 쉽게 전환할 수 있는 벨트입니다.",
     image: "/products/gg-pdp/wilton-golf-belt-black-sharkskin/1.jpg",
     images: ["/products/gg-pdp/wilton-golf-belt-black-sharkskin/1.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/2.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/3.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/4.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/1.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/2.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/3.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/4.jpg"],
     accent: "#1A2E28",
@@ -27169,14 +27507,18 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "F01000199350001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/wilton-golf-belt-black-sharkskin",
-    registeredAt: "2026-07-28T21:10:36.000Z",
+    registeredAt: "2026-07-28T21:31:03.000Z",
     editTier: "bestseller",
     storySections: [
       {
         titleKo: "Wilton - Golf 벨트",
-        bodyKo: "Wilton - Golf 벨트은 스웨덴 골프웨어 브랜드 갈빈 그린의 신상품입니다. 코스 위 퍼포먼스와 세련된 실루엣을 동시에 담았습니다.",
+        bodyKo: "Wilton 골프 벨트는 다재다능함을 염두에 두고 디자인되었으며 견고한 우븐 밴드와 매끄러운 금속 버클이 특징입니다. 혁신적인 \"트랙 핏\" 미세 조정 시스템은 정확하고 편안한 핏을 보장합니다. 리버서블 디자인으로 두 가지 색상을 쉽게 전환할 수 있는 벨트입니다.",
         image: "/products/gg-pdp/wilton-golf-belt-black-sharkskin/1.jpg",
       },
+    ],
+    techSpecs: [
+      { labelKo: "소재", valueKo: "100% 나일론 · 금속 버클" },
+      { labelKo: "테크놀로지", valueKo: "Others" },
     ],
     variants: [
       {

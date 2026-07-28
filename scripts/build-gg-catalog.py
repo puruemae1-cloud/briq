@@ -328,6 +328,112 @@ def english_ratio(text: str) -> float:
     return a / (a + h)
 
 
+_TX_CACHE_PATH = ROOT / "src/data/gg/gg-translate-cache.json"
+_TX_CACHE: dict[str, str] = (
+    json.loads(_TX_CACHE_PATH.read_text()) if _TX_CACHE_PATH.exists() else {}
+)
+
+
+def polish_gg_ko(out: str) -> str:
+    """Post-pass for natural Briq / Galvin Green Korean."""
+    reps = [
+        ("Galvin Green", "갈빈 그린"),
+        ("갈빈그린", "갈빈 그린"),
+        ("퍼텍스", "PERTEX®"),
+        ("Pertex", "PERTEX®"),
+        ("PERTEX® 방패", "PERTEX® Shield"),
+        ("PERTEX® 실드", "PERTEX® Shield"),
+        ("방패 기술", "Shield 테크놀로지"),
+        ("Shield 기술", "Shield 테크놀로지"),
+        ("DRYVR", "DRYVR™"),
+        ("정기적인", "레귤러"),
+        ("정규적인", "레귤러"),
+        ("보통 핏", "레귤러 핏"),
+        ("아트. NO", "아티클 번호"),
+        ("아트 번호", "아티클 번호"),
+        ("비 속에서 놀고 있지만 긴 소매는 참을 수 없나요?", "비 오는 날 라운드를 뛰는데 긴소매는 불편하신가요?"),
+        ("비 속에서 놀고 있지만", "비 오는 날 플레이하는데"),
+        ("소매나 소매 부분이", "소매나 커프가"),
+        ("소매나 소매 부분", "소매나 커프가"),
+        ("소매나 커프이", "소매나 커프가"),
+        ("소매나 커프가 스윙", "소매·커프가 스윙"),
+        ("커프이", "커프가"),
+        ("그리고 기술", ""),
+        ("및 세부정보", ""),
+        ("물을 좋아하는", "친수성"),
+        ("2겹 원단", "2레이어 원단"),
+        ("모델 키는", "착용 모델은"),
+    ]
+    for a, b in reps:
+        out = out.replace(a, b)
+    out = re.sub(r"PERTEX®®", "PERTEX®", out)
+    out = re.sub(r"DRYVR™™", "DRYVR™", out)
+    if out.strip() in {"정기적인", "정규", "보통", "Regular", "regular"}:
+        out = "레귤러"
+    out = re.sub(r"\s{2,}", " ", out).strip()
+    return out
+
+
+def translate_en(text: str) -> str:
+    """Google Translate (gtx) with GG term polish — same approach as CW catalog."""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    if text in _TX_CACHE:
+        return polish_gg_ko(_TX_CACHE[text])
+
+    protected: dict[str, str] = {}
+
+    def hold(m: re.Match[str]) -> str:
+        k = f"⟦{len(protected)}⟧"
+        protected[k] = m.group(0)
+        return k
+
+    held = re.sub(
+        r"PERTEX®\s*Shield(?:\s*Technology)?|PERTEX\u00ae\s*Shield(?:\s*Technology)?|"
+        r"PERTEX®|PERTEX\u00ae|INSULA™|INSULA\u2122|VENTIL8™|VENTIL8\u2122|"
+        r"INTERFACE-1™|INTERFACE-1\u2122|INTERFACE™|DRYVR™|DRYVR\u2122|"
+        r"C-KNIT™|GORE-TEX®|Galvin Green|"
+        r"A\d{11,}",
+        hold,
+        text,
+        flags=re.I,
+    )
+    try:
+        q = __import__("urllib.parse").parse.quote(held[:4500])
+        url = (
+            "https://translate.googleapis.com/translate_a/single"
+            f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
+        )
+        req = __import__("urllib.request").request.Request(
+            url, headers={"User-Agent": "Mozilla/5.0"}
+        )
+        with __import__("urllib.request").request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode())
+        out = "".join(part[0] for part in data[0] if part and part[0])
+    except Exception:
+        out = translate_apparel(text)
+    for k, v in protected.items():
+        out = out.replace(k, v)
+    out = polish_gg_ko(out)
+    _TX_CACHE[text] = out
+    if len(_TX_CACHE) % 20 == 0:
+        _TX_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        _TX_CACHE_PATH.write_text(
+            json.dumps(_TX_CACHE, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    return out
+
+
+def flush_tx_cache() -> None:
+    _TX_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _TX_CACHE_PATH.write_text(
+        json.dumps(_TX_CACHE, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def describe_from_tags(style: str, tags: list[str], name_ko: str) -> str:
     tset = {t.lower() for t in (tags or [])}
     joined = " ".join(tags or []).upper()
@@ -377,19 +483,111 @@ def describe_from_tags(style: str, tags: list[str], name_ko: str) -> str:
 
 def compose_description_ko(style: str, tags: list[str], body_html: str, name_ko: str) -> str:
     plain = strip_html(body_html or "")
-    translated = translate_apparel(plain)
-    if english_ratio(translated) > 0.22 or len(translated) < 40:
-        return describe_from_tags(style, tags, name_ko)
-    cleaned = re.sub(
-        r"\b(combines|with|the|and|from|for|you|your|this|that|to|of|a|an|is|are|in|on)\b",
-        " ",
-        translated,
-        flags=re.I,
-    )
-    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" ,.")
-    if english_ratio(cleaned) > 0.18:
-        return describe_from_tags(style, tags, name_ko)
-    return cleaned + ("." if cleaned and not cleaned.endswith(".") else "")
+    if len(plain) >= 40:
+        translated = translate_en(plain)
+        if translated and english_ratio(translated) < 0.35:
+            return translated
+    return describe_from_tags(style, tags, name_ko)
+
+
+# Prefer curated Korean for short feature chips (more natural than MT).
+FEATURE_KO = {
+    "Waterproof": "방수",
+    "Windproof": "방풍",
+    "Highly breathable": "높은 통기성",
+    "Breathable": "통기성",
+    "Lightweight": "경량",
+    "Water repellent finish": "발수 마감",
+    "Water-repellent finish": "발수 마감",
+    "Recycled polyester": "재활용 폴리에스터",
+    "Front pockets": "프론트 포켓",
+    "Chest tabs for adjustable chest width": "가슴 너비 조절 탭",
+    "Elastic drawstring at the hem": "밑단 신축 드로코드",
+    "Repositioned side seam for optimum comfort": "착용감 최적화를 위한 사이드 심 재배치",
+    "Stretch": "스트레치",
+    "PFAS free water repellent": "PFAS-free 발수",
+    "PFASfree water repellent": "PFAS-free 발수",
+}
+
+
+def build_content_from_pdp(
+    pdp: dict | None,
+    body_html: str,
+    tags: list[str],
+    name_ko: str,
+    style_name: str,
+) -> tuple[str, list[str], list[dict], list[dict]]:
+    """Return descriptionKo, featuresKo, techSpecs, story section bodies (EN paras → KO)."""
+    pdp = pdp or {}
+    desc_en = (pdp.get("descriptionEn") or strip_html(body_html or "")).strip()
+    feats_en = list(pdp.get("featuresEn") or [])
+    fabric_en = list(pdp.get("fabricEn") or [])
+    tech_en = (pdp.get("technologyEn") or "").strip()
+    art_no = (pdp.get("artNo") or "").strip()
+    fit_en = (pdp.get("fitEn") or "").strip()
+    model_en = (pdp.get("modelInfoEn") or "").strip()
+
+    if desc_en:
+        desc_ko = translate_en(desc_en)
+        if english_ratio(desc_ko) > 0.4:
+            desc_ko = compose_description_ko(style_name, tags, body_html, name_ko)
+    else:
+        desc_ko = compose_description_ko(style_name, tags, body_html, name_ko)
+
+    features_ko: list[str] = []
+    for f in feats_en:
+        key = f.strip().lstrip("-• ").strip()
+        if key in FEATURE_KO:
+            features_ko.append(FEATURE_KO[key])
+            continue
+        ko = translate_en(key)
+        if ko and english_ratio(ko) < 0.5:
+            features_ko.append(ko)
+        elif key:
+            ko2 = translate_apparel(key)
+            features_ko.append(ko2 if english_ratio(ko2) < english_ratio(ko or key) else (ko or key))
+    features_ko = [f for f in dict.fromkeys(features_ko) if f and f not in {"및 세부정보", "그리고 기술"}][:16]
+
+    specs: list[dict[str, str]] = []
+    if art_no:
+        specs.append({"labelKo": "아티클 번호", "valueKo": art_no})
+    if fit_en:
+        fit_ko = "레귤러" if fit_en.strip().lower() == "regular" else translate_en(fit_en)
+        if fit_ko.strip() in {"정기적인", "정규", "보통", "Regular", "regular"}:
+            fit_ko = "레귤러"
+        specs.append({"labelKo": "핏", "valueKo": fit_ko})
+    if model_en:
+        specs.append({"labelKo": "모델 정보", "valueKo": translate_en(model_en)})
+    if fabric_en:
+        fabric_ko = " · ".join(translate_en(x) if english_ratio(x) > 0.2 else x for x in fabric_en)
+        # Keep brand tech tokens
+        fabric_ko = polish_gg_ko(fabric_ko)
+        specs.append({"labelKo": "소재", "valueKo": fabric_ko})
+    if tech_en:
+        specs.append({"labelKo": "테크놀로지", "valueKo": polish_gg_ko(tech_en)})
+    if not specs:
+        specs = tech_specs_from_tags(tags)
+        for sp in specs:
+            sp["labelKo"] = "소재 · 테크"
+
+    # Story: split description into paragraphs
+    paras_en = [p.strip() for p in re.split(r"\n+", desc_en) if len(p.strip()) >= 40]
+    if not paras_en and desc_en:
+        # Split long single paragraph into ~2 sentences chunks
+        sentences = re.split(r"(?<=[.!?])\s+", desc_en)
+        chunk: list[str] = []
+        paras_en = []
+        for s in sentences:
+            chunk.append(s)
+            if len(" ".join(chunk)) > 220:
+                paras_en.append(" ".join(chunk))
+                chunk = []
+        if chunk:
+            paras_en.append(" ".join(chunk))
+    story_bodies = [translate_en(p) for p in paras_en[:4]]
+    story_bodies = [b for b in story_bodies if b]
+
+    return desc_ko, features_ko, specs, story_bodies
 
 
 def strip_html(html: str) -> str:
@@ -736,18 +934,23 @@ def build() -> dict:
                 name_ko = f"{parts[0]} - {translate_apparel(parts[1])}"
 
         body = strip_html(primary.get("body_html") or "")
-        desc_ko = compose_description_ko(
-            style_name,
-            primary.get("tags") or [],
+        pdp = primary.get("pdpCopy") or {}
+        # Prefer any member that already has richer pdpCopy
+        for m in members_sorted:
+            if (m.get("pdpCopy") or {}).get("featuresEn") or (
+                m.get("pdpCopy") or {}
+            ).get("descriptionEn"):
+                pdp = m["pdpCopy"]
+                break
+
+        desc_ko, feats, specs, story_bodies = build_content_from_pdp(
+            pdp,
             primary.get("body_html") or "",
+            primary.get("tags") or [],
             name_ko,
+            style_name,
         )
         paras = paragraphs(body)
-        feats = [translate_apparel(b) for b in bullet_points(body)]
-        feats = [f for f in feats if f and english_ratio(f) < 0.35][:8]
-        specs = tech_specs_from_tags(primary.get("tags") or [])
-        for sp in specs:
-            sp["labelKo"] = "소재 · 테크"
 
         flat_variants: list[dict] = []
         gallery_all: list[str] = []
@@ -829,16 +1032,10 @@ def build() -> dict:
                 compare_at = c
 
         story = []
-        for i, para in enumerate(paras[:4]):
-            body_ko = translate_apparel(para)
-            if english_ratio(body_ko) > 0.25:
-                if i == 0:
-                    body_ko = desc_ko
-                else:
-                    continue
+        for i, body_ko in enumerate(story_bodies[:4] or [desc_ko]):
             story.append(
                 {
-                    "titleKo": name_ko if i == 0 else "디테일",
+                    "titleKo": name_ko if i == 0 else ("소재 · 테크" if i == 1 else "디테일"),
                     "bodyKo": body_ko,
                     "image": gallery_all[i] if i < len(gallery_all) else (primary_image or None),
                     "reverse": i % 2 == 1,
@@ -1019,6 +1216,7 @@ def build() -> dict:
 
 if __name__ == "__main__":
     stats = build()
+    flush_tx_cache()
     print(
         f"Built {OUT_PATH.relative_to(ROOT)} — "
         f"{stats['grouped']} products, {stats['variants']} variants "
