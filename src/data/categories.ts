@@ -77,6 +77,8 @@ export type NavChild = {
   labelKo: string;
   href: string;
   children?: NavChild[];
+  /** Header/drawer: link only — nested children stay for shop filter chips. */
+  navLeaf?: boolean;
 };
 
 export type NavCategory = {
@@ -273,6 +275,7 @@ export const navCategories: NavCategory[] = [
             id: "galvin-green",
             labelKo: "Galvin Green",
             href: "/shop?category=sports&sub=galvin-green",
+            navLeaf: true,
             children: [
               {
                 id: "gg-new-arrivals",

@@ -8,7 +8,7 @@ function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number
   return (
     <>
       {items.map((child) => {
-        const hasKids = Boolean(child.children?.length);
+        const hasKids = Boolean(child.children?.length) && !child.navLeaf;
         return (
           <div
             key={child.id}
@@ -53,7 +53,7 @@ function MobileBranches({
   return (
     <>
       {items.map((child) =>
-        child.children?.length ? (
+        child.children?.length && !child.navLeaf ? (
           <details
             key={child.id}
             className={`mobile-drawer__branch mobile-drawer__branch--d${depth}`}
