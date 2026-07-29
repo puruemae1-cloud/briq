@@ -3,6 +3,7 @@ import { ChevronDown, Menu, ShoppingBag, X } from "lucide-react";
 import { navCategories, type NavChild } from "@/data/categories";
 import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
+import { HomeLogoLink } from "@/components/HomeLogoLink";
 
 function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number }) {
   return (
@@ -118,10 +119,10 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
             <Menu size={22} />
           </label>
 
-          <Link href="/" className="brand-mark" aria-label="Briq home">
+          <HomeLogoLink className="brand-mark" aria-label="Briq home">
             <span className="brand-mark__word">Briq</span>
             <span className="brand-mark__sub">British Boutique</span>
-          </Link>
+          </HomeLogoLink>
 
           <nav className="site-nav" aria-label="Primary">
             <Link href="/shop" className="site-nav__link">
