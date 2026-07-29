@@ -16,6 +16,7 @@ from bb_women_config import primary_category_for_collections  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 OUT_PATH = ROOT / "src/data/bb/bb-catalog.ts"
+TRANSLATE_CACHE = ROOT / "src/data/bb/bb-translate-cache.json"
 
 ACCENTS = [
     "#1A2E28",
@@ -27,6 +28,20 @@ ACCENTS = [
     "#2A4038",
     "#1E3A4A",
 ]
+
+_KO: dict[str, str] = {}
+if TRANSLATE_CACHE.exists():
+    _KO = json.loads(TRANSLATE_CACHE.read_text())
+
+
+def t(text: str | None) -> str:
+    """Lookup Korean translation with Burberry→버버리 polish."""
+    if not text:
+        return ""
+    s = str(text).strip()
+    ko = _KO.get(s, s)
+    ko = ko.replace("Burberry", "버버리").replace("버 버리", "버버리")
+    return ko
 
 
 def gbp_to_krw(gbp: float) -> int:
@@ -130,26 +145,30 @@ def emit_product(p: dict) -> str:
 def description_parts(product: dict) -> tuple[str, list[str], list[dict]]:
     desc = product.get("description") or ""
     parts = [p.strip() for p in desc.split("##") if p.strip()]
-    body = parts[0] if parts else ""
-    features = parts[1:] if len(parts) > 1 else []
+    body = t(parts[0]) if parts else ""
+    features = [t(p) for p in parts[1:]] if len(parts) > 1 else []
     for acc in product.get("accordion") or []:
         label = acc.get("label") or ""
-        texts = [t for t in (acc.get("texts") or []) if t]
+        texts = [x for x in (acc.get("texts") or []) if x]
         if label.lower() == "product details" and texts:
             if not body:
-                body = texts[0]
-            for t in texts[1:]:
-                if t not in features and not t.lower().startswith("item "):
-                    features.append(t)
+                body = t(texts[0])
+            for x in texts[1:]:
+                if x.lower().startswith("item "):
+                    continue
+                tx = t(x)
+                if tx and tx not in features:
+                    features.append(tx)
         elif texts:
-            for t in texts:
-                if t and t not in features:
-                    features.append(t)
+            for x in texts:
+                tx = t(x)
+                if tx and tx not in features:
+                    features.append(tx)
     tech = []
     if product.get("measurements"):
-        tech.append({"labelKo": "사이즈 · 핏", "valueKo": str(product["measurements"])})
+        tech.append({"labelKo": "사이즈 · 핏", "valueKo": t(str(product["measurements"]))})
     if product.get("materialComposition"):
-        mat = str(product["materialComposition"]).replace(" #", " · ")
+        mat = t(str(product["materialComposition"]).replace(" #", " · "))
         tech.append({"labelKo": "소재", "valueKo": mat})
     return body, features[:16], tech
 
@@ -177,9 +196,10 @@ def main() -> None:
         name_en = clean_name(primary.get("title") or "Burberry")
         # Prefer longest title
         for c in colourways:
-            t = clean_name(c.get("title") or "")
-            if len(t) > len(name_en):
-                name_en = t
+            x = clean_name(c.get("title") or "")
+            if len(x) > len(name_en):
+                name_en = x
+        name_ko = t(name_en) or name_en
 
         style_slug = slugify(name_en) or (primary.get("id") or "item")
         pid = f"bb-{style_slug}"
@@ -206,6 +226,7 @@ def main() -> None:
 
         for c in colourways:
             color = c.get("color") or "Default"
+            color_ko = t(color) or color
             color_key = slugify(color) or c.get("id")
             color_cols = sorted(set(c.get("collections") or cols_sorted))
             local_imgs = list(c.get("images") or [])
@@ -235,14 +256,14 @@ def main() -> None:
             source = c.get("url") or ""
             for sz in sizes:
                 label = str(sz.get("label") or "One size")
+                label_ko = "프리사이즈" if label.lower() in ("one size", "onesize", "os") else label
                 sku = str(sz.get("sku") or f"{c.get('id')}-{label}")
                 in_stock = bool(sz.get("isInStock"))
-                # size-level price usually same; keep colour gbp
                 flat_variants.append(
                     {
                         "id": f"bb-{c.get('id')}-{slugify(label)}",
                         "name": f"{color} / {label}",
-                        "nameKo": f"{color} / {label}",
+                        "nameKo": f"{color_ko} / {label_ko}",
                         "sku": sku,
                         "gbpPrice": gbp,
                         "price": price,
@@ -252,8 +273,8 @@ def main() -> None:
                         "sourceUrl": source,
                         "inStock": in_stock,
                         "colorKey": color_key,
-                        "colorNameKo": color,
-                        "size": label,
+                        "colorNameKo": color_ko,
+                        "size": label_ko if label_ko == "프리사이즈" else label,
                         "bbCollections": color_cols,
                     }
                 )
@@ -286,7 +307,7 @@ def main() -> None:
         if body:
             story.append(
                 {
-                    "titleKo": name_en,
+                    "titleKo": name_ko,
                     "bodyKo": body,
                     "image": primary_image,
                 }
@@ -294,7 +315,7 @@ def main() -> None:
         if features:
             story.append(
                 {
-                    "titleKo": "Details",
+                    "titleKo": "디테일",
                     "bodyKo": " · ".join(features[:8]),
                     "image": gallery_all[1] if len(gallery_all) > 1 else primary_image,
                     "reverse": True,
@@ -305,14 +326,14 @@ def main() -> None:
             {
                 "id": pid,
                 "name": name_en,
-                "nameKo": name_en,
-                "brand": "Burberry",
+                "nameKo": name_ko,
+                "brand": "버버리",
                 "price": price,
                 "compareAtPrice": compare_at,
                 "category": top_cat,
                 "subcategory": primary_sub,
                 "bbCollections": cols_sorted,
-                "tags": ["burberry", "bb-women", *cols_sorted],
+                "tags": ["burberry", "버버리", "bb-women", *cols_sorted],
                 "descriptionKo": body[:1500] if body else None,
                 "image": primary_image,
                 "images": gallery_all[:12] or None,
