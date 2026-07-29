@@ -35,6 +35,30 @@ export function compareProductsByNewest(a: Product, b: Product): number {
   return a.id.localeCompare(b.id);
 }
 
+const GG_ACCESSORY_NAME_RE =
+  /\b(belt|cap|hat|glove|gloves|umbrella|towel|visor|bag|neck warmer|wrist warmer|wristwarmers?)\b/i;
+
+/** Unisex accessories that also sit in Men/Women collections. */
+export function isGgAccessoryProduct(product: Product): boolean {
+  if (product.subcategory === "gg-accessories") return true;
+  if (product.ggCollections?.includes("gg-accessories")) return true;
+  return GG_ACCESSORY_NAME_RE.test(`${product.name} ${product.nameKo}`);
+}
+
+/**
+ * Men/Women PLPs should lead with apparel (matching Galvin Green featured feel).
+ * Keeps relative order within apparel and within accessories.
+ */
+export function preferGgApparelFirst(list: Product[]): Product[] {
+  const apparel: Product[] = [];
+  const accessories: Product[] = [];
+  for (const product of list) {
+    if (isGgAccessoryProduct(product)) accessories.push(product);
+    else apparel.push(product);
+  }
+  return [...apparel, ...accessories];
+}
+
 /** Same ranking rules as the homepage 100 Collection / every shop category. */
 export function sortProducts(list: Product[], sort: ProductSort): Product[] {
   const copy = [...list];

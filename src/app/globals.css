@@ -2458,18 +2458,27 @@ body:has(.nav-drawer-toggle:checked) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.55rem;
   min-width: 7.5rem;
   padding: 0.65rem 1rem;
   border: 1px solid var(--line);
   background: #fff;
   color: var(--ink);
   text-decoration: none;
+  font: inherit;
   font-size: 0.88rem;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
 .shop-browse__more-btn:hover {
   border-color: var(--ink);
+}
+
+.shop-browse__more-remaining {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0;
 }
 
 .shop-browse__aside-hint {

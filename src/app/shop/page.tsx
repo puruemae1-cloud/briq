@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
-import { ProductCard } from "@/components/ProductCard";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
+import { ShopProductGrid } from "@/components/ShopProductGrid";
 import {
   categoryLabel,
   findCategory,
@@ -18,6 +18,7 @@ import {
   PRODUCT_SORTS,
   buildShopHref,
   parseProductSort,
+  preferGgApparelFirst,
   sortProducts,
 } from "@/lib/product-sort";
 
@@ -40,11 +41,10 @@ type Props = {
     sub?: string;
     q?: string;
     sort?: string;
-    view?: string;
   }>;
 };
 
-const INITIAL_VISIBLE_PRODUCTS = 48;
+const LOAD_MORE_PAGE_SIZE = 24;
 
 function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>) {
   const active = sub === node.id || pathIds.has(node.id);
@@ -70,6 +70,10 @@ export default async function ShopPage({ searchParams }: Props) {
   let list = getProductsByCategory(category, sub);
   list = searchProducts(list, params.q);
   list = sortProducts(list, sort);
+  // Men/Women include unisex accessories — keep apparel first like the official PLP.
+  if (sub === "gg-men" || sub === "gg-women") {
+    list = preferGgApparelFirst(list);
+  }
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
@@ -118,16 +122,6 @@ export default async function ShopPage({ searchParams }: Props) {
     sub,
     q: params.q,
   };
-  const isViewAll = params.view === "all";
-  const canShowMore = sort !== "orders" && !isViewAll && list.length > INITIAL_VISIBLE_PRODUCTS;
-  const visibleList =
-    sort === "orders" || isViewAll ? list : list.slice(0, INITIAL_VISIBLE_PRODUCTS);
-  const showAllHref = (() => {
-    const base = buildShopHref({ ...sortBase, sort });
-    const url = new URL(base, "https://briq.local");
-    url.searchParams.set("view", "all");
-    return `${url.pathname}?${url.searchParams.toString()}`;
-  })();
 
   return (
     <>
@@ -234,22 +228,12 @@ export default async function ShopPage({ searchParams }: Props) {
             {sort === "orders" ? (
               <CollectionOrdersGrid products={list} />
             ) : (
-              <div className="product-grid">
-                {visibleList.map((p) => (
-                  <ProductCard
-                    key={p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id}
-                    product={p}
-                  />
-                ))}
-              </div>
+              <ShopProductGrid
+                key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}`}
+                products={list}
+                pageSize={LOAD_MORE_PAGE_SIZE}
+              />
             )}
-            {canShowMore ? (
-              <div className="shop-browse__morebar">
-                <Link href={showAllHref} scroll={false} className="shop-browse__more-btn">
-                  더보기
-                </Link>
-              </div>
-            ) : null}
           </div>
 
           <aside className="shop-browse__aside" aria-label="상품 정렬 필터">

@@ -918,6 +918,34 @@ def primary_collection(cols: list[str]) -> str:
     return cols[0]
 
 
+ACCESSORY_TITLE_RE = re.compile(
+    r"\b(belt|cap|hat|glove|gloves|umbrella|towel|visor|bag|neck warmer|wrist warmer)\b",
+    re.I,
+)
+
+
+def is_accessory_group(members: list[dict], leaf_handles: dict[str, set[str]]) -> bool:
+    """True when the style is accessory merchandise (belt/hat/etc.)."""
+    for m in members:
+        cols = trusted_member_collections(m, leaf_handles)
+        if "gg-accessories" in cols:
+            return True
+        title = str(m.get("title") or "")
+        if ACCESSORY_TITLE_RE.search(title):
+            return True
+    return False
+
+
+def group_build_sort_key(
+    item: tuple[tuple[str, str], list[dict]],
+    leaf_handles: dict[str, set[str]],
+) -> tuple[int, str]:
+    """Accessories first (older registeredAt), apparel last (newer) for Men/Women PLPs."""
+    (style_name, _gender), members = item
+    return (0 if is_accessory_group(members, leaf_handles) else 1, style_name.lower())
+
+
+
 def build() -> dict:
     raw = json.loads(RAW_PATH.read_text())
     products = raw.get("products") or []
@@ -950,7 +978,9 @@ def build() -> dict:
     briq_products: list[dict] = []
     used_ids: set[str] = set()
 
-    for (style_name, gender), members in sorted(groups.items(), key=lambda x: x[0][0].lower()):
+    for (style_name, gender), members in sorted(
+        groups.items(), key=lambda item: group_build_sort_key(item, leaf_handles)
+    ):
         handles = [m["handle"] for m in members]
         # Derive/refresh color names within group
         for m in members:
