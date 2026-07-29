@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-28T22:19:50Z",
+  "scrapedAt": "2026-07-29T10:40:56Z",
   "collections": {
     "men-new": [
       "arlo-waterproof-golf-jacket-black-orange",
@@ -36,6 +36,7 @@
       "adam-waterproof-golf-jacket-royal-blue-black",
       "larry-windproof-and-water-repellent-golf-jacket-royal-blue",
       "don-insulating-golf-mid-layer-royal-blue-white",
+      "mansfield-breathable-short-sleeve-golf-shirt-royal-blue",
       "lloyd-windproof-and-water-repellent-golf-jacket-navy-white",
       "don-insulating-golf-mid-layer-black-white",
       "darryl-insulating-golf-mid-layer-navy",
@@ -43,6 +44,7 @@
       "donnie-insulating-golf-sweatshirt-crystal-blue",
       "maguire-breathable-short-sleeve-golf-shirt-crystal-blue",
       "luis-windproof-and-water-repellent-golf-jacket-navy",
+      "maggio-breathable-short-sleeve-golf-shirt-royal-blue-black",
       "nick-breathable-golf-pants-navy",
       "shane-breathable-golf-hat-white-cool-grey",
       "darryl-insulating-golf-mid-layer-black",
@@ -104,11 +106,15 @@
       "mia-breathable-sleeveless-golf-shirt-pink-fuchsia",
       "diora-insulating-golf-mid-layer-navy",
       "mia-breathable-sleeveless-golf-shirt-white-navy",
+      "denise-insulating-golf-sweatshirt-crystal-blue",
+      "mia-breathable-sleeveless-golf-shirt-crystal-blue-navy",
       "dixie-insulating-golf-mid-layer-crystal-blue-white",
       "miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
       "molly-breathable-short-sleeve-golf-shirt-fuchsia",
+      "miley-breathable-short-sleeve-golf-shirt-pink-white",
       "miley-breathable-short-sleeve-golf-shirt-navy-white",
       "mona-breathable-short-sleeve-golf-shirt-white-navy",
+      "mona-breathable-short-sleeve-golf-shirt-crystal-blue-white",
       "nina-breathable-golf-skirt-with-inner-shorts-navy",
       "molly-breathable-short-sleeve-golf-shirt-white",
       "nina-breathable-golf-skirt-with-inner-shorts-sand",
@@ -149,7 +155,9 @@
       "marty-breathable-short-sleeve-golf-shirt-black",
       "marty-breathable-short-sleeve-golf-shirt-crystal-blue",
       "nixon-breathable-pants-light-grey",
+      "percy-breathable-shorts-navy",
       "luis-windproof-and-water-repellent-golf-jacket-navy",
+      "mansfield-breathable-short-sleeve-golf-shirt-royal-blue",
       "mansfield-breathable-short-sleeve-golf-shirt-navy",
       "wilton-golf-belt-black-sharkskin",
       "dean-insulating-golf-mid-layer-black-white-royal-blue",
@@ -570,6 +578,7 @@
     ],
     "outlet": [
       "daxton-insulating-mid-layer-sunny-lime-cool-grey-white",
+      "albert-waterproof-jacket-sharkskin-cool-grey-white",
       "donya-insulating-mid-layer-white",
       "lloyd-windproof-and-water-repellent-golf-jacket-royal-blue-black",
       "maguire-breathable-short-sleeve-golf-shirt-crystal-blue",
@@ -593,6 +602,7 @@
       "mansfield-breathable-short-sleeve-golf-shirt-sand",
       "maguire-breathable-short-sleeve-golf-shirt-sand",
       "mannix-breathable-short-sleeve-shirt-white-cool-grey",
+      "manuel-breathable-short-sleeve-golf-shirt-moonlight-blue-white",
       "ames-waterproof-jacket-alaskan-blue-navy",
       "nicoline-breathable-and-stretchy-leggings-alaskan-blue-white",
       "melody-breathable-short-sleeve-shirt-alaskan-blue",
@@ -604,7 +614,9 @@
       "lennox-windproof-and-water-repellent-vest-black",
       "dean-insulating-golf-mid-layer-forged-iron-black",
       "lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue",
+      "denise-insulating-golf-sweatshirt-crystal-blue",
       "miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
+      "daniel-insulating-golf-mid-layer-crystal-blue",
       "mendez-breathable-short-sleeve-golf-shirt-crystal-blue-green",
       "dean-insulating-golf-mid-layer-black-white-royal-blue",
       "maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
@@ -768,6 +780,7 @@
       "nicci-breathable-and-stretchy-leggings-black",
       "melody-breathable-short-sleeve-shirt-navy",
       "melanie-breathable-short-sleeve-shirt-navy-white-cool-grey",
+      "meg-breathable-sleeveless-shirt-navy-white",
       "meg-breathable-sleeveless-shirt-white-cool-grey",
       "leonard-windproof-and-water-repellent-jacket-navy",
       "leonard-windproof-and-water-repellent-jacket-black",
@@ -32897,7 +32910,7 @@
           "size": "XXL",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Mansfield",
@@ -33750,7 +33763,7 @@
           "size": "M",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         },
         {
           "id": 55887506342266,
@@ -36094,7 +36107,7 @@
         }
       ],
       "styleName": "Manuel",
-      "colorName": "Green White",
+      "colorName": "Fresh Green White",
       "collection": "gg-sale",
       "collections": [
         "gg-sale"
@@ -50880,7 +50893,7 @@
           "size": "38",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279041892510,
@@ -62712,6 +62725,959 @@
         "modelInfoEn": "",
         "handle": "tromb-stormproof-umbrella-black-silver"
       }
+    },
+    {
+      "id": 15343112552826,
+      "handle": "mansfield-breathable-short-sleeve-golf-shirt-royal-blue",
+      "title": "Mansfield - Breathable short sleeve golf shirt",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "tags": [
+        "2026 Part 1",
+        "Blue",
+        "Men",
+        "MEN TORSO",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2026-02-04T10:29:29+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_FRONT_D01001338763.webp?v=1759155343",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_1_D01001338763.webp?v=1764762331",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_2_D01001338763.webp?v=1764762330",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_3_D01001338763.webp?v=1764762330",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_4_D01001338763.webp?v=1764762330",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_S_5_D01001338763.webp?v=1764762331",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANSFIELD_BACK_D01001338763.webp?v=1759155343"
+      ],
+      "variants": [
+        {
+          "id": 55887504900474,
+          "sku": "D01001338763001",
+          "size": "S",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887504933242,
+          "sku": "D01001338763002",
+          "size": "M",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887504966010,
+          "sku": "D01001338763003",
+          "size": "L",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887504998778,
+          "sku": "D01001338763004",
+          "size": "XL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887505031546,
+          "sku": "D01001338763005",
+          "size": "XXL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        }
+      ],
+      "styleName": "Mansfield",
+      "colorName": "Royal Blue",
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 15343114682746,
+      "handle": "maggio-breathable-short-sleeve-golf-shirt-royal-blue-black",
+      "title": "Maggio - Breathable short sleeve golf shirt",
+      "body_html": "Introducing Maggio, the statement shirt that stands out with a bold, contrasting diagonal stripe across the front. Designed with VENTIL8™ PLUS technology, this shirt offers superior breathability and quick-dry properties to keep you cool and comfortable on the course. The stretch fabric ensures flexibility, while the ribbed collar and cuffs provide a sporty look. With UV protection 20+, this shirt also helps shield you from the sun’s harmful rays.",
+      "tags": [
+        "2026 Part 1",
+        "Blue",
+        "Men",
+        "MEN TORSO",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2026-02-04T10:29:40+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_FRONT_D01001368751.webp?v=1759155392",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_S_1_-D01001368751.webp?v=1764593150",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_S_2_D01001368751.webp?v=1764593150",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_S_3_D01001368751.webp?v=1764593150",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_S_4_D01001368751.webp?v=1764593150",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_S_5_D01001368751.webp?v=1764593150",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MAGGIO_BACK_D01001368751.webp?v=1759155393"
+      ],
+      "variants": [
+        {
+          "id": 55887511912826,
+          "sku": "D01001368751001",
+          "size": "S",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887511945594,
+          "sku": "D01001368751002",
+          "size": "M",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887511978362,
+          "sku": "D01001368751003",
+          "size": "L",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887512011130,
+          "sku": "D01001368751004",
+          "size": "XL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 55887512043898,
+          "sku": "D01001368751005",
+          "size": "XXL",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        }
+      ],
+      "styleName": "Maggio",
+      "colorName": "Royal Blue Black",
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men"
+      ]
+    },
+    {
+      "id": 15345056448890,
+      "handle": "denise-insulating-golf-sweatshirt-crystal-blue",
+      "title": "Denise - Insulating golf sweatshirt",
+      "body_html": "Have you moved on from heavy cotton hoodies? Meet Denise, a lightweight, soft women’s golf hoodie that gives you warmth without the weight. Made from a Galvin Green INSULA™ mid layer fabric, this stretchy, warm hoodie is extremely breathable and has quick dry properties.",
+      "tags": [
+        "2026 Part 1",
+        "Blue",
+        "insula",
+        "INSULA™ Warming effect #2",
+        "Mid Layer - Hoodie",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Cold",
+        "Sunny & Cold",
+        "Windy & Cold",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2026-02-04T10:30:05+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_FRONT_C01000538759.webp?v=1759146120",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_S_1_C01000538759.webp?v=1765534957",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_S_2_C01000538759.webp?v=1765534957",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_S_5_C01000538759.webp?v=1765534957",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_S_3_C01000538759.webp?v=1765534956",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_S_4_C01000538759.webp?v=1765534956",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DENISE_BACK_C01000538759.webp?v=1759146120"
+      ],
+      "variants": [
+        {
+          "id": 55890990825850,
+          "sku": "C01000538759001",
+          "size": "XS",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 55890990858618,
+          "sku": "C01000538759002",
+          "size": "S",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 55890990891386,
+          "sku": "C01000538759003",
+          "size": "M",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 55890990924154,
+          "sku": "C01000538759004",
+          "size": "L",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 55890990956922,
+          "sku": "C01000538759005",
+          "size": "XL",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        },
+        {
+          "id": 55890990989690,
+          "sku": "C01000538759006",
+          "size": "XXL",
+          "price": "65.40",
+          "compare_at_price": "109.00",
+          "available": false
+        }
+      ],
+      "styleName": "Denise",
+      "colorName": "Crystal Blue",
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women",
+        "gg-sale"
+      ]
+    },
+    {
+      "id": 15345362305402,
+      "handle": "mia-breathable-sleeveless-golf-shirt-crystal-blue-navy",
+      "title": "Mia - Breathable sleeveless golf shirt",
+      "body_html": "The Mia sleeveless golf shirt combines performance and style with a delicate printed pattern featuring a hidden cursive logo. Designed from breathable, quick-drying fabric, this shirt offers UV protection 20+ to shield you from the sun during your round. The stretch fabric ensures flexibility and comfort, while the tailored collar adds a polished look.",
+      "tags": [
+        "2026 Part 1",
+        "Blue",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2026-02-04T10:30:13+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_FRONT_D01001408712.webp?v=1759155411",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_S_1_D01001408712.webp?v=1765900136",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_S_2_D01001408712.webp?v=1765900136",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_S_6_D01001408712.webp?v=1765900136",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_S_4_D01001408712.webp?v=1765900136",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_S_5_D01001408712.webp?v=1765900135",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MIA_BACK_D01001408712.webp?v=1759155411"
+      ],
+      "variants": [
+        {
+          "id": 55891543851386,
+          "sku": "D01001408712001",
+          "size": "XS",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        },
+        {
+          "id": 55891543884154,
+          "sku": "D01001408712002",
+          "size": "S",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        },
+        {
+          "id": 55891543916922,
+          "sku": "D01001408712003",
+          "size": "M",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        },
+        {
+          "id": 55891543949690,
+          "sku": "D01001408712004",
+          "size": "L",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        },
+        {
+          "id": 55891543982458,
+          "sku": "D01001408712005",
+          "size": "XL",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        },
+        {
+          "id": 55891544015226,
+          "sku": "D01001408712006",
+          "size": "XXL",
+          "price": "35.40",
+          "compare_at_price": "59.00",
+          "available": false
+        }
+      ],
+      "styleName": "Mia",
+      "colorName": "Crystal Blue Navy",
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
+    },
+    {
+      "id": 15345363124602,
+      "handle": "miley-breathable-short-sleeve-golf-shirt-pink-white",
+      "title": "Miley - Breathable short sleeve golf shirt",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "tags": [
+        "2026 Part 1",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Pink",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2026-02-04T10:30:15+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_FRONT_D01001418700.webp?v=1759155442",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_S_1_D01001418700.webp?v=1759155442",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_S_1B_D01001418700.webp?v=1759155443",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_S_2_D01001418700.webp?v=1759155442",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_S_4_D01001418700.webp?v=1759155442",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_S_5_D01001418700.webp?v=1759155442",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MILEY_BACK_D01001418700.webp?v=1759155441"
+      ],
+      "variants": [
+        {
+          "id": 55891545620858,
+          "sku": "D01001418700001",
+          "size": "XS",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891545653626,
+          "sku": "D01001418700002",
+          "size": "S",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891545686394,
+          "sku": "D01001418700003",
+          "size": "M",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891545719162,
+          "sku": "D01001418700004",
+          "size": "L",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891545751930,
+          "sku": "D01001418700005",
+          "size": "XL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891545784698,
+          "sku": "D01001418700006",
+          "size": "XXL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        }
+      ],
+      "styleName": "Miley",
+      "colorName": "Pink White",
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
+    },
+    {
+      "id": 15345366073722,
+      "handle": "mona-breathable-short-sleeve-golf-shirt-crystal-blue-white",
+      "title": "Mona - Breathable short sleeve golf shirt",
+      "body_html": "The Mona golf shirt offers a sporty look with a buttonless placket and contrasting colours on the placket and stripe panels. Designed with VENTIL8™ PLUS technology, this shirt is extremely breathable and quick-drying, making it the perfect choice for warm-weather golf. The stretch fabric provides flexibility, while the tailored collar and single fold sleeve hem add a classic touch. With UV protection 20+, this shirt also shields you from harmful sun rays, ensuring you stay comfortable and protected throughout your round.",
+      "tags": [
+        "2026 Part 1",
+        "Blue",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2026-02-04T10:30:19+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_FRONT_D01001428705.webp?v=1759155478",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_S_1_D01001428705.webp?v=1765813706",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_S_3_D01001428705.webp?v=1765813707",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_S_7_D01001428705.webp?v=1765813707",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_S_4_D01001428705.webp?v=1765813709",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_S_5_D01001428705.webp?v=1765813708",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MONA_BACK_D01001428705.webp?v=1759155478"
+      ],
+      "variants": [
+        {
+          "id": 55891549716858,
+          "sku": "D01001428705001",
+          "size": "XS",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891549749626,
+          "sku": "D01001428705002",
+          "size": "S",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891549782394,
+          "sku": "D01001428705003",
+          "size": "M",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891549815162,
+          "sku": "D01001428705004",
+          "size": "L",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891549847930,
+          "sku": "D01001428705005",
+          "size": "XL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 55891549880698,
+          "sku": "D01001428705006",
+          "size": "XXL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        }
+      ],
+      "styleName": "Mona",
+      "colorName": "Crystal Blue White",
+      "collection": "gg-new-women",
+      "collections": [
+        "gg-new-women"
+      ]
+    },
+    {
+      "id": 7399950483614,
+      "handle": "percy-breathable-shorts-navy",
+      "title": "Percy - Breathable golf shorts",
+      "body_html": "These woven four pocket men’s golf shorts have patch pockets at the back. Made from a bluesign® approved fabric, the Percy shorts are sustainable and easy to care for. Light, soft, and comfortable - these are our go-to shorts on sunny days, whether we are on the golf course or not.",
+      "tags": [
+        "2022 Part 2",
+        "2023 Part 1",
+        "2023 Part 2",
+        "2024 Part 1",
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2026 Part 1",
+        "Men",
+        "MEN BOTTOMS",
+        "Navy",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Shorts",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS"
+      ],
+      "published_at": "2022-12-02T10:37:08+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_FRONT_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_1_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_2_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_3_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_4_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_5_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_S_6_D01000229405.webp?v=1759149612",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/PERCY_BACK_D01000229405.webp?v=1759149612"
+      ],
+      "variants": [
+        {
+          "id": 42279046348958,
+          "sku": "D01000229405002",
+          "size": "30",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046381726,
+          "sku": "D01000229405003",
+          "size": "32",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046185118,
+          "sku": "D01000229405004",
+          "size": "34",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046217886,
+          "sku": "D01000229405005",
+          "size": "36",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046250654,
+          "sku": "D01000229405006",
+          "size": "38",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046283422,
+          "sku": "D01000229405007",
+          "size": "40",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        },
+        {
+          "id": 42279046316190,
+          "sku": "D01000229405008",
+          "size": "42",
+          "price": "53.40",
+          "compare_at_price": "89.00",
+          "available": false
+        }
+      ],
+      "styleName": "Percy",
+      "colorName": "Navy",
+      "collection": "gg-bestsellers-men",
+      "collections": [
+        "gg-bestsellers-men"
+      ]
+    },
+    {
+      "id": 8463632335196,
+      "handle": "albert-waterproof-jacket-sharkskin-cool-grey-white",
+      "title": "Albert - Waterproof golf jacket",
+      "body_html": "The Albert GORE-TEX golf jacket has a subtle print on the chest panel and the stretch GORE-TEX fabric is designed for full freedom of movement on the golf course. The lightweight mesh lining allows for a pocket of air between the body and the jacket, which is the key to maintaining your body heat on a cold day. Adjustable chest width, cuffs, and an elasticated drawstring at the hem make it easy to get just the right fit.",
+      "tags": [
+        "Fullzip",
+        "gore-tex",
+        "GORE-TEX with lining",
+        "Grey",
+        "Jacket - Full Zip",
+        "Men",
+        "MEN TORSO",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "PFAS",
+        "Rainy & Cold",
+        "stretch",
+        "Waterproofs"
+      ],
+      "published_at": "2025-08-18T14:13:03+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_FRONT_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_1_A01000069364.webp?v=1759218862",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_2_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_3_A01000069364.webp?v=1759218862",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_5_A01000069364.webp?v=1759218862",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_6_A01000069364.webp?v=1759218862",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_7_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_8_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_S_9_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_BACK_A01000069364.webp?v=1759218861",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/ALBERT_A01000069364.0357.webp?v=1759218861"
+      ],
+      "variants": [
+        {
+          "id": 46880446710108,
+          "sku": "A01000069364001",
+          "size": "S",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446742876,
+          "sku": "A01000069364002",
+          "size": "M",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446775644,
+          "sku": "A01000069364003",
+          "size": "L",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446808412,
+          "sku": "A01000069364004",
+          "size": "XL",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446841180,
+          "sku": "A01000069364005",
+          "size": "XXL",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446873948,
+          "sku": "A01000069364006",
+          "size": "3XL",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        },
+        {
+          "id": 46880446906716,
+          "sku": "A01000069364007",
+          "size": "4XL",
+          "price": "369.00",
+          "compare_at_price": null,
+          "available": false
+        }
+      ],
+      "styleName": "Albert",
+      "colorName": "Sharkskin Cool Grey White",
+      "collection": "gg-sale",
+      "collections": [
+        "gg-sale"
+      ]
+    },
+    {
+      "id": 14923390615930,
+      "handle": "manuel-breathable-short-sleeve-golf-shirt-moonlight-blue-white",
+      "title": "Manuel - Breathable short sleeve golf shirt",
+      "body_html": "What happens when you mix a classic argyle with florals and fluid shapes? Meet Manuel, an all-over print shirt with a curvy, argyle-inspired pattern. Made from stretch fabric, it offers exceptional breathability and quick-drying performance, ensuring comfort throughout your day. With UV protection (20+) and sleeve end cuffs, this shirt combines style with practicality.",
+      "tags": [
+        "2025 Part 1",
+        "Men",
+        "MEN TORSO",
+        "MISSING_CONVERTED_COLOR_METADATA",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Warm",
+        "Shirt - Short Sleeve",
+        "Sunny & Cold",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Windy & Warm"
+      ],
+      "published_at": "2025-02-03T11:57:17+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_FRONT_D01000958839.webp?v=1759153949",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_1_D01000958839.webp?v=1759153950",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_2_D01000958839.webp?v=1759153949",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_3_D01000958839.webp?v=1759153950",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_4_D01000958839.webp?v=1759153950",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_5_D01000958839.webp?v=1759153951",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_S_6_D01000958839.webp?v=1759153949",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MANUEL_BACK_D01000958839.webp?v=1759153950"
+      ],
+      "variants": [
+        {
+          "id": 54976171999610,
+          "sku": "D01000958839001",
+          "size": "S",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 54976172032378,
+          "sku": "D01000958839002",
+          "size": "M",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 54976172065146,
+          "sku": "D01000958839003",
+          "size": "L",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 54976172097914,
+          "sku": "D01000958839004",
+          "size": "XL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        },
+        {
+          "id": 54976172130682,
+          "sku": "D01000958839005",
+          "size": "XXL",
+          "price": "47.40",
+          "compare_at_price": "79.00",
+          "available": false
+        }
+      ],
+      "styleName": "Manuel",
+      "colorName": "Moonlight Blue White",
+      "collection": "gg-sale",
+      "collections": [
+        "gg-sale"
+      ]
+    },
+    {
+      "id": 15902746837370,
+      "handle": "daniel-insulating-golf-mid-layer-crystal-blue",
+      "title": "Daniel - Insulating golf mid layer",
+      "body_html": "The Daniel zip-up mid layer combines modern styling with a retro-inspired design, featuring contrasting green and white striped ribbed collar and cuffs. A part of the Tournament Time collection, this mid layer is made with INSULA™ technology, offering Warming Effect #2 for optimal warmth without bulk. The soft, stretchy fabric ensures comfort and breathability, while the quick-dry properties keep you comfortable on and off the course. With front pockets and excellent next-to-skin comfort, the Daniel mid layer is perfect for layering on cooler days.",
+      "tags": [
+        "2026 Part 1 - In season (Masters)",
+        "Blue",
+        "Fullzip",
+        "insula",
+        "INSULA™ Warming effect #2",
+        "Men",
+        "MEN TORSO",
+        "Mid layer - Full Zip",
+        "Outlet",
+        "Outlet/Rea - B2B",
+        "Rainy & Cold",
+        "Sunny & Cold",
+        "Windy & Cold"
+      ],
+      "published_at": "2026-03-26T08:04:01+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_FRONT_C01000958759.webp?v=1774508643",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_S_1_C01000958759.webp?v=1774508642",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_S_2_C01000958759.webp?v=1774508642",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_S_3_C01000958759.webp?v=1774508642",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_S_4_C01000958759.webp?v=1774508642",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DANIEL_BACK_C01000958759.webp?v=1774508642"
+      ],
+      "variants": [
+        {
+          "id": 56731850768762,
+          "sku": "C01000958759001",
+          "size": "S",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": false
+        },
+        {
+          "id": 56731850801530,
+          "sku": "C01000958759002",
+          "size": "M",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": false
+        },
+        {
+          "id": 56731850834298,
+          "sku": "C01000958759003",
+          "size": "L",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": false
+        },
+        {
+          "id": 56731850867066,
+          "sku": "C01000958759004",
+          "size": "XL",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": false
+        },
+        {
+          "id": 56731850899834,
+          "sku": "C01000958759005",
+          "size": "XXL",
+          "price": "83.40",
+          "compare_at_price": "139.00",
+          "available": false
+        }
+      ],
+      "styleName": "Daniel",
+      "colorName": "Crystal Blue",
+      "collection": "gg-sale",
+      "collections": [
+        "gg-sale"
+      ]
+    },
+    {
+      "id": 7425397489822,
+      "handle": "meg-breathable-sleeveless-shirt-navy-white",
+      "title": "Meg - Breathable short sleeve golf shirt",
+      "body_html": "Made from a soft, comfortable stretch fabric, the Meg women's sleeveless polo is available in a range of classic and seasonal colours. With a tailored collar and longer placket, you’ll pass any clubhouse’s dress code, while staying cool and comfortable on the course.",
+      "tags": [
+        "2024 Part 2",
+        "2025 Part 1",
+        "2025 Part 2",
+        "2027 Part 1",
+        "2027 Part 2",
+        "Navy",
+        "Outlet",
+        "Shirt - Sleeveless",
+        "Shortsleeve",
+        "Sunny & Warm",
+        "ventil8 plus",
+        "VENTIL8™ PLUS",
+        "Women",
+        "WOMEN TORSO"
+      ],
+      "published_at": "2023-02-09T09:44:15+01:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_FRONT_D01000149349.webp?v=1759148902",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_1_D01000149349.webp?v=1759148902",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_2_D01000149349.webp?v=1759148901",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_3_D01000149349.webp?v=1759148904",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_4_D01000149349.webp?v=1759148902",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_5_D01000149349.webp?v=1759148903",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_S_6_D01000149349.webp?v=1759148902",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/MEG_BACK_D01000149349.webp?v=1759148901"
+      ],
+      "variants": [
+        {
+          "id": 42364891136158,
+          "sku": "D01000149349001",
+          "size": "XS",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        },
+        {
+          "id": 42364891168926,
+          "sku": "D01000149349002",
+          "size": "S",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        },
+        {
+          "id": 42364891201694,
+          "sku": "D01000149349003",
+          "size": "M",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        },
+        {
+          "id": 42364891234462,
+          "sku": "D01000149349004",
+          "size": "L",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        },
+        {
+          "id": 42364891267230,
+          "sku": "D01000149349005",
+          "size": "XL",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        },
+        {
+          "id": 42364891299998,
+          "sku": "D01000149349006",
+          "size": "XXL",
+          "price": "39.00",
+          "compare_at_price": "65.00",
+          "available": false
+        }
+      ],
+      "styleName": "Meg",
+      "colorName": "Navy White",
+      "collection": "gg-sale",
+      "collections": [
+        "gg-sale"
+      ]
     }
   ],
   "colorEnrichment": {
