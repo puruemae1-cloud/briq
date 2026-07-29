@@ -42,63 +42,58 @@ export function SiteFooter() {
       </div>
 
       <div className="site-footer__biz">
-        <div className="site-footer__biz-head">
-          <p className="site-footer__biz-eyebrow">Business Information</p>
-          <p className="site-footer__biz-title">(주)리치몬드인터내셔널</p>
+        <div className="site-footer__biz-lines" aria-label="사업자 정보">
+          <p>
+            <span>상호명: (주)리치몬드인터내셔널</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>메일: support@hjstoryltd.com</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>전화번호: +44 7897 535888</span>
+          </p>
+          <p>
+            <span>주소: 경기도 김포시 고촌읍 은행영사정로23번길 46</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>사업자등록번호: {bizNo}</span>
+          </p>
+          <p>
+            <span>통신판매업신고: 제 2023-경기김포-1258 호</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <a
+              className="site-footer__biz-check"
+              href={`https://www.ftc.go.kr/bizCommPop.do?wrkr_no=${bizNoDigits}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              사업자정보확인
+            </a>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>대표자: 이정현</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>개인정보책임자: 홍화연</span>
+          </p>
+          <p>
+            <span>UK Company: HJ STORY LIMITED</span>
+            <span className="site-footer__biz-sep" aria-hidden>
+              |
+            </span>
+            <span>
+              V307 Vox Studios, 1-45 Durham Street, Vauxhall, United Kingdom,
+              SE11 5JH
+            </span>
+          </p>
         </div>
-
-        <dl className="site-footer__biz-grid">
-          <div>
-            <dt>대표자</dt>
-            <dd>이정현</dd>
-          </div>
-          <div>
-            <dt>개인정보책임자</dt>
-            <dd>홍화연</dd>
-          </div>
-          <div>
-            <dt>사업자등록번호</dt>
-            <dd>
-              {bizNo}{" "}
-              <a
-                className="site-footer__biz-check"
-                href={`https://www.ftc.go.kr/bizCommPop.do?wrkr_no=${bizNoDigits}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                사업자정보확인
-              </a>
-            </dd>
-          </div>
-          <div>
-            <dt>통신판매업신고</dt>
-            <dd>제 2023-경기김포-1258 호</dd>
-          </div>
-          <div>
-            <dt>주소</dt>
-            <dd>경기도 김포시 고촌읍 은행영사정로23번길 46</dd>
-          </div>
-          <div>
-            <dt>연락처</dt>
-            <dd>
-              <a href="tel:+4407897535888">+44 7897 535888</a>
-            </dd>
-          </div>
-          <div>
-            <dt>이메일</dt>
-            <dd>
-              <a href="mailto:support@hjstoryltd.com">support@hjstoryltd.com</a>
-            </dd>
-          </div>
-          <div>
-            <dt>UK Company</dt>
-            <dd>HJ STORY LIMITED</dd>
-          </div>
-        </dl>
-
-        <p className="site-footer__biz-address-uk">
-          V307 Vox Studios, 1-45 Durham Street, Vauxhall, United Kingdom, SE11 5JH
-        </p>
 
         <div className="site-footer__bottom">
           <div className="site-footer__bottom-links">
