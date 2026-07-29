@@ -7,6 +7,15 @@ import {
   type Product,
 } from "@/data/products";
 
+function productCardPriceLabel(product: Product): string {
+  const base = formatKrw(product.price);
+  const prices = (product.variants ?? []).map((v) => v.price);
+  if (prices.length === 0) return base;
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  return min !== max ? `${base}~` : base;
+}
+
 export function ProductCard({ product }: { product: Product }) {
   const soldOut = !isProductInStock(product);
   const salePct = productSalePercent(product);
@@ -70,11 +79,7 @@ export function ProductCard({ product }: { product: Product }) {
             <span className="product-card__price-pct">{salePct}%</span>
           </p>
         ) : (
-          <p className="product-card__price">
-            {product.variants && product.variants.length > 0
-              ? `${formatKrw(product.price)}~`
-              : formatKrw(product.price)}
-          </p>
+          <p className="product-card__price">{productCardPriceLabel(product)}</p>
         )}
       </div>
     </Link>
