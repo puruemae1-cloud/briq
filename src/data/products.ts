@@ -151,6 +151,12 @@ export function productSalePercent(
 
 /** True if the product (or any of its variants) can be purchased. */
 export function isProductInStock(product: Product) {
+  // Colourway-expanded shop cards keep only one colour's sizes in `variants`.
+  // Listing sold-out must reflect the whole style — if another colour is
+  // available, do not mark the card Sold Out.
+  if (product.shopColorKey != null && typeof product.inStock === "boolean") {
+    return product.inStock;
+  }
   if (product.variants && product.variants.length > 0) {
     return product.variants.some((v) => v.inStock);
   }
@@ -813,6 +819,8 @@ export function expandGgColourwayCards(
       continue;
     }
 
+    const styleInStock = product.variants.some((v) => v.inStock);
+
     const byColor = new Map<string, NonNullable<Product["variants"]>>();
     for (const variant of product.variants) {
       const key = variant.colorKey;
@@ -835,6 +843,7 @@ export function expandGgColourwayCards(
                 shopColorKey: only[0]?.colorKey,
                 image: only[0]?.image || product.image,
                 images: only[0]?.images || product.images,
+                inStock: styleInStock,
               }
             : product,
         );
@@ -867,6 +876,8 @@ export function expandGgColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
+        // Style-level stock for listing badges (other colours may still sell).
+        inStock: styleInStock,
       });
     }
   }
