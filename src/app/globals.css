@@ -506,6 +506,7 @@ a.chip[href*="sub=gg-sale"].is-active {
     justify-self: end;
     position: relative;
     z-index: 5;
+    margin-left: 1.75rem;
   }
 }
 
@@ -926,7 +927,7 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 900px) {
   .header-search {
-    width: 14.5rem;
+    width: 8.7rem; /* 60% of previous 14.5rem */
   }
 
   .header-search__input {
@@ -936,7 +937,11 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 1100px) {
   .header-search {
-    width: 16.5rem;
+    width: 9.9rem; /* 60% of previous 16.5rem */
+  }
+
+  .site-header__actions {
+    margin-left: 2.25rem;
   }
 }
 
