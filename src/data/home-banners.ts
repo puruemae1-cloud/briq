@@ -75,10 +75,10 @@ export const homeLookBanners: LookBanner[] = [
     categoryId: "luxury",
     eyebrow: "Luxury",
     title: "Heritage & Modern",
-    titleKo: "명품럭셔리 의류",
+    titleKo: "명품 하이엔드 의류",
     support: "영국 헤리티지와 현대 럭셔리의 교차점.",
     href: "/shop?category=luxury",
-    cta: "명품럭셔리 의류 쇼핑",
+    cta: "명품 하이엔드 의류 쇼핑",
     images: [
       "/banners/rot-luxury-1.jpg",
       "/banners/rot-luxury-2.jpg",

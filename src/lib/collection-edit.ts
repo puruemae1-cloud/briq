@@ -16,16 +16,8 @@ export const EDIT_TIER_COPY: Record<EditTier, { titleKo: string }> = {
 };
 
 const SIGNATURE_MIN = 1_000_000;
-const BESTSELLER_MIN = 100_000;
-const BESTSELLER_MAX = 300_000;
-/** Fixed grid size for every 100 Collection section. */
+/** Fixed max grid size for every 100 Collection section. */
 export const SECTION_LIMIT = 20;
-
-/**
- * When true, bestseller requires ≥1 recorded payment.
- * Temporarily false — show 10~30만 newest until live orders accumulate.
- */
-const BESTSELLER_REQUIRE_PURCHASE = false;
 
 function registeredMs(product: Product) {
   const ms = product.registeredAt ? Date.parse(product.registeredAt) : 0;
@@ -33,34 +25,7 @@ function registeredMs(product: Product) {
 }
 
 function byNewest(a: Product, b: Product) {
-  return registeredMs(b) - registeredMs(a) || b.price - a.price;
-}
-
-function takeExact(
-  preferred: Product[],
-  pool: Product[],
-  limit: number,
-): Product[] {
-  const out: Product[] = [];
-  const used = new Set<string>();
-
-  for (const p of preferred) {
-    if (out.length >= limit) break;
-    if (used.has(p.id)) continue;
-    used.add(p.id);
-    out.push(p);
-  }
-
-  if (out.length < limit) {
-    for (const p of [...pool].sort(byNewest)) {
-      if (out.length >= limit) break;
-      if (used.has(p.id)) continue;
-      used.add(p.id);
-      out.push(p);
-    }
-  }
-
-  return out;
+  return registeredMs(b) - registeredMs(a) || a.id.localeCompare(b.id);
 }
 
 export type CuratedEdit = {
@@ -70,10 +35,10 @@ export type CuratedEdit = {
 };
 
 /**
- * Build the three 100 Collection sections — each exactly SECTION_LIMIT (20).
- * - signature: ≥100만 원, 최신등록순 (부족 시 전체에서 최신으로 채움)
- * - bestseller: 10~30만 원 (결제 조건은 BESTSELLER_REQUIRE_PURCHASE)
- * - new: catalogue-wide 최신등록순 (시그니처와 중복 허용)
+ * Build the three 100 Collection sections — up to SECTION_LIMIT each.
+ * - signature: ≥100만 원, 최신등록순 (패딩 없음)
+ * - bestseller: 실제 결제 1회 이상인 상품만, 구매수 → 최신순 (패딩 없음)
+ * - new: catalogue-wide 최신등록순
  *
  * Always set `registeredAt` on new products so 신상품 큐레이션 stays correct.
  */
@@ -81,27 +46,21 @@ export function curateCollectionEdit(
   products: Product[],
   purchaseCounts: Record<string, number> = {},
 ): CuratedEdit {
-  const signaturePreferred = products
+  const signature = products
     .filter((p) => p.price >= SIGNATURE_MIN)
-    .sort(byNewest);
+    .sort(byNewest)
+    .slice(0, SECTION_LIMIT);
 
-  const bestsellerPreferred = products
-    .filter((p) => {
-      if (p.price < BESTSELLER_MIN || p.price > BESTSELLER_MAX) return false;
-      if (!BESTSELLER_REQUIRE_PURCHASE) return true;
-      return (purchaseCounts[p.id] ?? 0) >= 1;
-    })
+  const bestseller = products
+    .filter((p) => (purchaseCounts[p.id] ?? 0) >= 1)
     .sort((a, b) => {
-      if (BESTSELLER_REQUIRE_PURCHASE) {
-        const ca = purchaseCounts[a.id] ?? 0;
-        const cb = purchaseCounts[b.id] ?? 0;
-        if (cb !== ca) return cb - ca;
-      }
+      const ca = purchaseCounts[a.id] ?? 0;
+      const cb = purchaseCounts[b.id] ?? 0;
+      if (cb !== ca) return cb - ca;
       return byNewest(a, b);
-    });
+    })
+    .slice(0, SECTION_LIMIT);
 
-  const signature = takeExact(signaturePreferred, products, SECTION_LIMIT);
-  const bestseller = takeExact(bestsellerPreferred, products, SECTION_LIMIT);
   const newItems = [...products].sort(byNewest).slice(0, SECTION_LIMIT);
 
   return { signature, bestseller, newItems };

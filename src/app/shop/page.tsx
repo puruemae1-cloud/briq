@@ -219,11 +219,28 @@ export default async function ShopPage({ searchParams }: Props) {
               </div>
             ))}
 
-            {sort !== "orders" ? (
-              <div className="shop-browse__toolbar">
-                <p className="shop-browse__count">총 {list.length.toLocaleString()}개 상품</p>
+            <div className="shop-browse__controls" aria-label="상품 정렬 필터">
+              <div className="shop-browse__sort" role="list">
+                {PRODUCT_SORTS.map((option) => (
+                  <Link
+                    key={option.id}
+                    href={buildShopHref({ ...sortBase, sort: option.id })}
+                    scroll={false}
+                    role="listitem"
+                    className={`shop-browse__sort-btn ${
+                      sort === option.id ? "is-active" : ""
+                    }`}
+                  >
+                    {option.label}
+                  </Link>
+                ))}
               </div>
-            ) : null}
+              {sort !== "orders" ? (
+                <p className="shop-browse__count">
+                  총 {list.length.toLocaleString()}개 상품
+                </p>
+              ) : null}
+            </div>
 
             {sort === "orders" ? (
               <CollectionOrdersGrid products={list} />
@@ -235,25 +252,6 @@ export default async function ShopPage({ searchParams }: Props) {
               />
             )}
           </div>
-
-          <aside className="shop-browse__aside" aria-label="상품 정렬 필터">
-            <p className="shop-browse__aside-title">정렬</p>
-            <div className="shop-browse__sort" role="list">
-              {PRODUCT_SORTS.map((option) => (
-                <Link
-                  key={option.id}
-                  href={buildShopHref({ ...sortBase, sort: option.id })}
-                  scroll={false}
-                  role="listitem"
-                  className={`shop-browse__sort-btn ${
-                    sort === option.id ? "is-active" : ""
-                  }`}
-                >
-                  {option.label}
-                </Link>
-              ))}
-            </div>
-          </aside>
         </div>
       </section>
     </>

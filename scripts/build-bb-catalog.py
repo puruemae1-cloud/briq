@@ -6,7 +6,7 @@ import json
 import re
 import sys
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +17,49 @@ from bb_women_config import primary_category_for_collections  # noqa: E402
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 OUT_PATH = ROOT / "src/data/bb/bb-catalog.ts"
 TRANSLATE_CACHE = ROOT / "src/data/bb/bb-translate-cache.json"
+
+
+def load_existing_registered() -> dict[str, str]:
+    """Keep stable Briq registration times across rebuilds."""
+    if not OUT_PATH.exists():
+        return {}
+    text = OUT_PATH.read_text()
+    out: dict[str, str] = {}
+    for m in re.finditer(
+        r'id:\s*"(bb-[^"]+)"[\s\S]*?registeredAt:\s*"([^"]+)"',
+        text,
+    ):
+        out[m.group(1)] = m.group(2)
+    return out
+
+
+def catalog_max_registered(*paths: Path) -> datetime | None:
+    times: list[datetime] = []
+    for path in paths:
+        if not path.exists():
+            continue
+        for m in re.finditer(r'registeredAt:\s*"([^"]+)"', path.read_text()):
+            try:
+                ts = datetime.fromisoformat(m.group(1).replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            times.append(ts)
+    return max(times) if times else None
+
+
+def briq_registered_at(
+    pid: str,
+    existing: dict[str, str],
+    batch_start: datetime,
+    index: int,
+) -> str:
+    if pid in existing:
+        return existing[pid]
+    ts = batch_start + timedelta(seconds=index)
+    return ts.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+
 
 ACCENTS = [
     "#1A2E28",
@@ -182,9 +225,19 @@ def main() -> None:
         groups[style_key(p)].append(p)
 
     briq: list[dict] = []
-    now = datetime.now(timezone.utc)
+    existing_reg = load_existing_registered()
+    peer_max = catalog_max_registered(
+        ROOT / "src/data/cw/cw-catalog.ts",
+        ROOT / "src/data/gg/gg-catalog.ts",
+    )
+    batch_start = datetime.now(timezone.utc)
+    if peer_max and batch_start <= peer_max:
+        # New BB styles should sort after CW/GG on 신상품 큐레이션
+        batch_start = peer_max + timedelta(seconds=1)
+    new_index = 0
 
     for gkey, colourways in groups.items():
+
         colourways = sorted(colourways, key=lambda x: x.get("id") or "")
         all_cols: set[str] = set()
         for c in colourways:
@@ -342,8 +395,11 @@ def main() -> None:
                 "gbpPrice": gbp_price,
                 "sku": flat_variants[0]["sku"] if flat_variants else primary.get("id"),
                 "sourceUrl": primary.get("url") or flat_variants[0].get("sourceUrl"),
-                "registeredAt": now.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+                "registeredAt": briq_registered_at(
+                    pid, existing_reg, batch_start, new_index
+                ),
                 "editTier": "new" if badge == "New" else "signature",
+
                 "storySections": story or None,
                 "featuresKo": features or None,
                 "techSpecs": tech or None,
@@ -351,6 +407,8 @@ def main() -> None:
                 "inStock": any(v.get("inStock") for v in flat_variants),
             }
         )
+        if pid not in existing_reg:
+            new_index += 1
 
     # Stable-ish order: luxury apparel first, then bags, shoes, accessories
     top_order = {"luxury": 0, "bags": 1, "shoes": 2, "accessories": 3}

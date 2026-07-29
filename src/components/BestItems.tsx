@@ -7,11 +7,6 @@ import { usePurchases } from "@/lib/purchase-store";
 
 const MAX_ITEMS = 10;
 
-/** Curated fallback so the rail is always full before real orders come in. */
-const fallback = [...products]
-  .sort((a, b) => (b.badge ? 1 : 0) - (a.badge ? 1 : 0))
-  .slice(0, MAX_ITEMS);
-
 export function BestItems() {
   const counts = usePurchases((s) => s.counts);
   const [mounted, setMounted] = useState(false);
@@ -22,22 +17,18 @@ export function BestItems() {
     setMounted(true);
   }, []);
 
-  const ordered = mounted
+  const list = mounted
     ? products
         .map((product) => ({ product, count: counts[product.id] ?? 0 }))
         .filter((entry) => entry.count > 0)
         .sort((a, b) => b.count - a.count)
         .map((entry) => entry.product)
+        .slice(0, MAX_ITEMS)
     : [];
-
-  const seen = new Set(ordered.map((p) => p.id));
-  const list = [
-    ...ordered,
-    ...fallback.filter((p) => !seen.has(p.id)),
-  ].slice(0, MAX_ITEMS);
 
   // Autoplay: desktop (fine pointer) only — mobile is finger-scroll only
   useEffect(() => {
+    if (list.length === 0) return;
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (!fine.matches || reduce.matches) return;
@@ -65,6 +56,10 @@ export function BestItems() {
   const pause = () => {
     pausedUntil.current = Date.now() + 10000;
   };
+
+  if (!mounted || list.length === 0) {
+    return null;
+  }
 
   return (
     <section className="best-live" aria-label="실시간 주문상품 10선">

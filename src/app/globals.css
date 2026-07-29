@@ -2320,53 +2320,25 @@ body:has(.nav-drawer-toggle:checked) {
   overflow-x: clip;
 }
 
-@media (min-width: 960px) {
-  .shop-browse__layout {
-    grid-template-columns: minmax(0, 1fr) 11.5rem;
-    gap: 1.75rem;
-    align-items: start;
-  }
-}
-
-.shop-browse__aside {
-  order: -1;
-  padding: 1rem 1rem 1.15rem;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.72);
-}
-
-@media (min-width: 960px) {
-  .shop-browse__aside {
-    order: 0;
-    position: sticky;
-    top: 5.75rem;
-  }
-}
-
-.shop-browse__aside-title {
-  margin: 0 0 0.75rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 600;
+.shop-browse__controls {
+  margin: 0.35rem 0 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.55rem;
 }
 
 .shop-browse__sort {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.45rem;
 }
 
-@media (min-width: 960px) {
-  .shop-browse__sort {
-    flex-direction: column;
-  }
-}
-
 .shop-browse__sort-btn {
-  display: block;
-  padding: 0.55rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--line);
   background: rgba(247, 248, 245, 0.65);
   color: rgba(11, 18, 16, 0.72);
@@ -2382,13 +2354,6 @@ body:has(.nav-drawer-toggle:checked) {
   background: var(--ink);
   border-color: var(--ink);
   color: #f7f8f5;
-}
-
-.shop-browse__toolbar {
-  margin: 0.35rem 0 0.85rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .shop-browse__count {
@@ -2434,13 +2399,6 @@ body:has(.nav-drawer-toggle:checked) {
   letter-spacing: 0;
 }
 
-.shop-browse__aside-hint {
-  margin: 0.85rem 0 0;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: rgba(11, 18, 16, 0.5);
-}
-
 .category-row::-webkit-scrollbar {
   display: none;
 }
@@ -2482,6 +2440,10 @@ body:has(.nav-drawer-toggle:checked) {
 @media (min-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .shop-browse .product-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 

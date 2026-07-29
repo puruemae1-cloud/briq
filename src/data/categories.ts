@@ -322,7 +322,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
 export const navCategories: NavCategory[] = [
   {
     id: "luxury",
-    labelKo: "명품럭셔리 의류",
+    labelKo: "명품 하이엔드 의류",
     href: "/shop?category=luxury",
     children: [
       {
