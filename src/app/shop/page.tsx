@@ -225,25 +225,29 @@ export default async function ShopPage({ searchParams }: Props) {
               </div>
             ))}
 
+            {sort !== "orders" ? (
+              <div className="shop-browse__toolbar">
+                <p className="shop-browse__count">총 {list.length.toLocaleString()}개 상품</p>
+              </div>
+            ) : null}
+
             {sort === "orders" ? (
               <CollectionOrdersGrid products={list} />
             ) : (
               <div className="product-grid">
                 {visibleList.map((p) => (
-                  <ProductCard key={p.id} product={p} />
+                  <ProductCard
+                    key={p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id}
+                    product={p}
+                  />
                 ))}
               </div>
             )}
-            {sort !== "orders" ? (
+            {canShowMore ? (
               <div className="shop-browse__morebar">
-                {canShowMore ? (
-                  <Link href={showAllHref} scroll={false} className="shop-browse__more-btn">
-                    더보기
-                  </Link>
-                ) : (
-                  <span aria-hidden className="shop-browse__more-spacer" />
-                )}
-                <p className="shop-browse__count">총 {list.length.toLocaleString()}개 상품</p>
+                <Link href={showAllHref} scroll={false} className="shop-browse__more-btn">
+                  더보기
+                </Link>
               </div>
             ) : null}
           </div>

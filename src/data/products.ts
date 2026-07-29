@@ -38,6 +38,11 @@ export type ProductVariant = {
   colorNameKo?: string;
   /** Size code when variants are colour × size (e.g. S / M / L). */
   size?: string;
+  /**
+   * Galvin Green colourway PLP memberships (per colour, not whole style).
+   * Used so Men/Women shop grids match official colourway counts.
+   */
+  ggCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -112,6 +117,10 @@ export type Product = {
    * If omitted, inferred from price / badge / recency.
    */
   editTier?: "signature" | "bestseller" | "new";
+  /**
+   * Shop PLP colourway expand — when set, the card links to this colour on PDP.
+   */
+  shopColorKey?: string;
 };
 
 /** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
@@ -779,6 +788,91 @@ export function getProduct(id: string) {
   );
 }
 
+function isGgShopFilter(expanded?: string[]) {
+  if (!expanded?.length) return false;
+  return expanded.some(
+    (id) =>
+      id.startsWith("gg-") || id === "galvin-green" || id === "golf",
+  );
+}
+
+/**
+ * Official Galvin Green PLPs list each colourway as its own card.
+ * Expand style-grouped GG products into one shop card per colour.
+ */
+export function expandGgColourwayCards(
+  list: Product[],
+  expanded?: string[],
+): Product[] {
+  if (!isGgShopFilter(expanded)) return list;
+
+  const out: Product[] = [];
+  for (const product of list) {
+    if (!product.ggCollections?.length || !product.variants?.length) {
+      out.push(product);
+      continue;
+    }
+
+    const byColor = new Map<string, NonNullable<Product["variants"]>>();
+    for (const variant of product.variants) {
+      const key = variant.colorKey;
+      if (!key) continue;
+      const bucket = byColor.get(key);
+      if (bucket) bucket.push(variant);
+      else byColor.set(key, [variant]);
+    }
+
+    if (byColor.size <= 1) {
+      // Single colour — still re-filter memberships at colourway level when present.
+      const only = byColor.size === 1 ? [...byColor.values()][0] : null;
+      const cols = only?.[0]?.ggCollections ?? product.ggCollections;
+      if (cols.some((c) => expanded!.includes(c))) {
+        out.push(
+          only
+            ? {
+                ...product,
+                ggCollections: cols,
+                shopColorKey: only[0]?.colorKey,
+                image: only[0]?.image || product.image,
+                images: only[0]?.images || product.images,
+              }
+            : product,
+        );
+      }
+      continue;
+    }
+
+    for (const [colorKey, variants] of byColor) {
+      const cols = variants[0]?.ggCollections ?? product.ggCollections;
+      if (!cols.some((c) => expanded!.includes(c))) continue;
+
+      const inStock = variants.filter((v) => v.inStock);
+      const priced = (inStock.length ? inStock : variants).slice().sort(
+        (a, b) => a.price - b.price,
+      );
+      const lead = priced[0] ?? variants[0];
+      const compareAt =
+        lead.compareAtPrice && lead.compareAtPrice > lead.price
+          ? lead.compareAtPrice
+          : undefined;
+
+      out.push({
+        ...product,
+        image: lead.image || product.image,
+        images: lead.images || product.images,
+        price: lead.price,
+        compareAtPrice: compareAt,
+        gbpPrice: lead.gbpPrice,
+        ggCollections: cols,
+        variants,
+        shopColorKey: colorKey,
+        sourceUrl: lead.sourceUrl || product.sourceUrl,
+      });
+    }
+  }
+  return out;
+}
+
 export function getProductsByCategory(category?: string, sub?: string) {
   let list = products;
   if (category && category !== "all") {
@@ -790,8 +884,11 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.subcategory && expanded.includes(p.subcategory)) return true;
       if (p.cwCollections?.some((c) => expanded.includes(c))) return true;
       if (p.ggCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
+        return true;
       return false;
     });
+    list = expandGgColourwayCards(list, expanded);
   }
   return list;
 }

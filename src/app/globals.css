@@ -2173,11 +2173,26 @@ body:has(.nav-drawer-toggle:checked) {
   color: #f7f8f5;
 }
 
+.shop-browse__toolbar {
+  margin: 0.35rem 0 0.85rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.shop-browse__count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+
 .shop-browse__morebar {
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.8rem;
 }
 
@@ -2197,19 +2212,6 @@ body:has(.nav-drawer-toggle:checked) {
 
 .shop-browse__more-btn:hover {
   border-color: var(--ink);
-}
-
-.shop-browse__more-spacer {
-  min-width: 7.5rem;
-  min-height: 1px;
-}
-
-.shop-browse__count {
-  margin: 0 0 0 auto;
-  color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.02em;
-  text-align: right;
 }
 
 .shop-browse__aside-hint {

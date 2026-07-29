@@ -285,8 +285,15 @@ def enrich() -> dict:
                 continue
 
             norm = js_to_raw_product(js, primary_coll)
-            # Attach full style collection membership
-            norm["collections"] = list(style_cols) or [primary_coll]
+            # Sibling colourways stay on the PDP style group, but must not
+            # inherit Men/Women/Accessories/Sale PLP membership — those counts
+            # must match the official scraped collection handles.
+            editorial = [
+                c
+                for c in style_cols
+                if str(c).startswith("gg-new-") or "bestsellers" in str(c)
+            ]
+            norm["collections"] = editorial or [primary_coll]
             norm["collection"] = primary_coll
             # Prefer Shopify title from js
             if (norm.get("title") or "").strip() != title:

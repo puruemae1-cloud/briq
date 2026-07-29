@@ -843,6 +843,20 @@ def ts_optional(key: str, value, indent: int = 4) -> str:
     return ""
 
 
+# Scrape meta key → Briq collection id. Used to keep PLP membership exact
+# (sibling-colour enrichment must not inflate Men/Women beyond official counts).
+LEAF_META_TO_COLL = {
+    "men-new": "gg-new-men",
+    "women-new": "gg-new-women",
+    "our-bestsellers-men": "gg-bestsellers-men",
+    "our-bestsellers-women": "gg-bestsellers-women",
+    "men": "gg-men",
+    "women": "gg-women",
+    "accessories": "gg-accessories",
+    "outlet": "gg-sale",
+}
+
+
 def member_collections(p: dict) -> list[str]:
     cols = p.get("collections")
     if isinstance(cols, list) and cols:
@@ -851,49 +865,22 @@ def member_collections(p: dict) -> list[str]:
     return [str(coll)] if coll else ["gg-new-men"]
 
 
-ACCESSORY_TITLE_MARKERS = (
-    "belt",
-    "cap",
-    "hat",
-    "glove",
-    "neck warmer",
-    "wrist warmer",
-    "umbrella",
-    "towel",
-    "bag",
-    "visor",
-)
-
-ACCESSORY_TAG_MARKERS = {
-    "belts",
-    "caps/hats",
-    "gloves",
-    "unisex",
-}
-
-
-def is_accessory_member(p: dict, cols: list[str]) -> bool:
-    if "gg-accessories" in cols:
-        return True
-    title = str(p.get("title") or "").lower()
-    if any(marker in title for marker in ACCESSORY_TITLE_MARKERS):
-        return True
-    lower_tags = {str(t).lower() for t in (p.get("tags") or [])}
-    return bool(lower_tags & ACCESSORY_TAG_MARKERS)
-
-
-def normalized_member_collections(p: dict) -> list[str]:
+def trusted_member_collections(
+    p: dict, leaf_handles: dict[str, set[str]]
+) -> list[str]:
+    """Drop leaf PLP tags that were inherited onto colourways not in that scrape."""
     cols = member_collections(p)
-    if is_accessory_member(p, cols):
-        cols = [c for c in cols if c not in ("gg-men", "gg-women")]
-        if "gg-accessories" not in cols:
-            cols.append("gg-accessories")
-    return cols
+    handle = str(p.get("handle") or "")
+    out: list[str] = []
+    for c in cols:
+        allowed = leaf_handles.get(c)
+        if allowed is not None and handle not in allowed:
+            continue
+        out.append(c)
+    return out
 
 
 def gender_of_collections(cols: list[str], tags: list[str] | None = None) -> str:
-    if "gg-accessories" in cols and "gg-men" not in cols and "gg-women" not in cols:
-        return "accessories"
     if any(
         c in ("gg-new-women", "gg-bestsellers-women", "gg-women") or c.endswith("-women")
         for c in cols
@@ -917,6 +904,8 @@ def gender_of_collections(cols: list[str], tags: list[str] | None = None) -> str
 
 def primary_collection(cols: list[str]) -> str:
     """Prefer New Arrivals → Bestsellers → Men/Women → Accessories → Sale."""
+    if not cols:
+        return "gg-accessories"
     for c in cols:
         if c.startswith("gg-new-"):
             return c
@@ -932,6 +921,12 @@ def primary_collection(cols: list[str]) -> str:
 def build() -> dict:
     raw = json.loads(RAW_PATH.read_text())
     products = raw.get("products") or []
+    meta = raw.get("collections") or {}
+    leaf_handles: dict[str, set[str]] = {}
+    for meta_key, coll_id in LEAF_META_TO_COLL.items():
+        handles = meta.get(meta_key)
+        if isinstance(handles, list):
+            leaf_handles[coll_id] = {str(h) for h in handles}
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
     existing_reg = load_existing_registered()
     cw_max = load_cw_max_registered()
@@ -944,8 +939,12 @@ def build() -> dict:
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for p in products:
         style = (p.get("styleName") or p.get("title", "").split(" - ")[0]).strip()
-        cols = normalized_member_collections(p)
-        gender = gender_of_collections(cols, p.get("tags") or [])
+        cols = trusted_member_collections(p, leaf_handles)
+        # Sibling colourways with no trusted PLP tags still join the style PDP
+        # via tags/gender, but do not appear on Men/Women/Sale grids alone.
+        gender = gender_of_collections(
+            cols or member_collections(p), p.get("tags") or []
+        )
         groups[(style, gender)].append(p)
 
     briq_products: list[dict] = []
@@ -958,7 +957,7 @@ def build() -> dict:
             m["colorName"] = color_from_handle_group(handles, m["handle"], m.get("tags") or [])
 
         all_cols = sorted(
-            {c for m in members for c in normalized_member_collections(m)},
+            {c for m in members for c in trusted_member_collections(m, leaf_handles)},
             key=lambda c: (0 if c.startswith("gg-new-") else 1, c),
         )
         collection = primary_collection(all_cols)
@@ -1035,6 +1034,7 @@ def build() -> dict:
                     gallery_all.append(im)
 
             source = f"https://www.galvingreen.com/en-gb/products/{m['handle']}"
+            color_cols = trusted_member_collections(m, leaf_handles)
             for v in m.get("variants") or []:
                 size = str(v.get("size") or v.get("option1") or v.get("title") or "").strip()
                 gbp = float(v.get("price") or 0)
@@ -1072,6 +1072,7 @@ def build() -> dict:
                         "colorKey": color_key,
                         "colorNameKo": color_ko,
                         "size": size,
+                        "ggCollections": color_cols,
                     }
                 )
 
@@ -1264,6 +1265,11 @@ def build() -> dict:
             lines.append(f"        colorKey: {ts_str(v['colorKey'])},")
             lines.append(f"        colorNameKo: {ts_str(v['colorNameKo'])},")
             lines.append(f"        size: {ts_str(v['size'])},")
+            if v.get("ggCollections"):
+                gg_inner = ", ".join(ts_str(c) for c in v["ggCollections"])
+                lines.append(
+                    f"        ggCollections: [{gg_inner}] as Product[\"ggCollections\"],"
+                )
             lines.append("      },")
         lines.append("    ],")
         lines.append("  },")

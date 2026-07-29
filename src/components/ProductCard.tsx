@@ -21,7 +21,11 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link
-      href={`/product/${product.id}`}
+      href={
+        product.shopColorKey
+          ? `/product/${product.id}?color=${encodeURIComponent(product.shopColorKey)}`
+          : `/product/${product.id}`
+      }
       className={`product-card group${soldOut ? " product-card--sold-out" : ""}`}
     >
       <ProductImage
