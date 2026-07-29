@@ -52,7 +52,68 @@ export type SubcategoryId =
   | "luxury-womens"
   | "luxury-mens"
   | "training-womens"
-  | "training-mens";
+  | "training-mens"
+  | "burberry"
+  | "bb-women"
+  | "bb-women-latest"
+  | "bb-women-new"
+  | "bb-women-summer-styles"
+  | "bb-women-classics"
+  | "bb-women-coats-jackets"
+  | "bb-women-coats"
+  | "bb-women-jackets"
+  | "bb-women-trench-coats"
+  | "bb-women-quilted-jackets"
+  | "bb-women-puffer-jackets"
+  | "bb-women-ponchos-capes"
+  | "bb-women-clothes"
+  | "bb-women-knitwear"
+  | "bb-women-polos-tshirts"
+  | "bb-women-shirts-tops"
+  | "bb-women-dresses"
+  | "bb-women-skirts"
+  | "bb-women-hoodies-sweatshirts"
+  | "bb-women-blazers-tailoring"
+  | "bb-women-trousers-shorts"
+  | "bb-women-activewear"
+  | "bb-women-denim"
+  | "bb-women-swimwear"
+  | "burberry-bags"
+  | "bb-women-bags"
+  | "bb-women-mini-bags"
+  | "bb-women-tote-bags"
+  | "bb-women-crossbody-bags"
+  | "bb-women-shoulder-bags"
+  | "bb-women-top-handle-bags"
+  | "bb-women-backpacks"
+  | "burberry-shoes"
+  | "bb-women-shoes"
+  | "bb-women-sneakers"
+  | "bb-women-sandals"
+  | "bb-women-loafers-ballerinas"
+  | "bb-women-boots"
+  | "bb-women-pumps"
+  | "burberry-accessories"
+  | "bb-women-accessories"
+  | "bb-women-scarves"
+  | "bb-women-belts"
+  | "bb-women-sunglasses"
+  | "bb-women-caps-hats"
+  | "bb-women-umbrellas"
+  | "bb-women-jewellery"
+  | "bb-women-home"
+  | "bb-women-socks-tights"
+  | "bb-women-tech-travel"
+  | "bb-women-key-charms"
+  | "bb-women-wallets"
+  | "bb-women-card-cases"
+  | "bb-women-long-wallets"
+  | "bb-women-compact-wallets"
+  | "bb-women-chain-strap-wallets"
+  | "bb-women-gifts"
+  | "bb-women-fragrance"
+  | "bb-women-personalised-gifts"
+  | "bb-women-personalised-scarves";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -96,6 +157,102 @@ export const GG_COLLECTION_IDS: SubcategoryId[] = [
   ...GG_BRAND_LEAF_IDS,
 ];
 
+export const BB_WOMEN_LATEST_IDS: SubcategoryId[] = [
+  "bb-women-new",
+  "bb-women-summer-styles",
+  "bb-women-classics",
+];
+
+export const BB_WOMEN_COATS_IDS: SubcategoryId[] = [
+  "bb-women-coats-jackets",
+  "bb-women-coats",
+  "bb-women-jackets",
+  "bb-women-trench-coats",
+  "bb-women-quilted-jackets",
+  "bb-women-puffer-jackets",
+  "bb-women-ponchos-capes",
+];
+
+export const BB_WOMEN_CLOTHES_IDS: SubcategoryId[] = [
+  "bb-women-clothes",
+  "bb-women-knitwear",
+  "bb-women-polos-tshirts",
+  "bb-women-shirts-tops",
+  "bb-women-dresses",
+  "bb-women-skirts",
+  "bb-women-hoodies-sweatshirts",
+  "bb-women-blazers-tailoring",
+  "bb-women-trousers-shorts",
+  "bb-women-activewear",
+  "bb-women-denim",
+  "bb-women-swimwear",
+];
+
+export const BB_WOMEN_BAG_IDS: SubcategoryId[] = [
+  "bb-women-bags",
+  "bb-women-mini-bags",
+  "bb-women-tote-bags",
+  "bb-women-crossbody-bags",
+  "bb-women-shoulder-bags",
+  "bb-women-top-handle-bags",
+  "bb-women-backpacks",
+];
+
+export const BB_WOMEN_SHOE_IDS: SubcategoryId[] = [
+  "bb-women-shoes",
+  "bb-women-sneakers",
+  "bb-women-sandals",
+  "bb-women-loafers-ballerinas",
+  "bb-women-boots",
+  "bb-women-pumps",
+];
+
+export const BB_WOMEN_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
+  "bb-women-scarves",
+  "bb-women-belts",
+  "bb-women-sunglasses",
+  "bb-women-caps-hats",
+  "bb-women-umbrellas",
+  "bb-women-jewellery",
+  "bb-women-home",
+  "bb-women-socks-tights",
+  "bb-women-tech-travel",
+  "bb-women-key-charms",
+];
+
+export const BB_WOMEN_WALLET_IDS: SubcategoryId[] = [
+  "bb-women-wallets",
+  "bb-women-card-cases",
+  "bb-women-long-wallets",
+  "bb-women-compact-wallets",
+  "bb-women-chain-strap-wallets",
+];
+
+export const BB_WOMEN_GIFT_IDS: SubcategoryId[] = [
+  "bb-women-gifts",
+  "bb-women-fragrance",
+  "bb-women-personalised-gifts",
+  "bb-women-personalised-scarves",
+];
+
+/** All Burberry Women leaf collection ids used for PLP membership. */
+export const BB_WOMEN_COLLECTION_IDS: SubcategoryId[] = [
+  ...BB_WOMEN_LATEST_IDS,
+  ...BB_WOMEN_COATS_IDS,
+  ...BB_WOMEN_CLOTHES_IDS,
+  ...BB_WOMEN_BAG_IDS,
+  ...BB_WOMEN_SHOE_IDS,
+  ...BB_WOMEN_ACCESSORY_LEAF_IDS,
+  ...BB_WOMEN_WALLET_IDS,
+  ...BB_WOMEN_GIFT_IDS,
+];
+
+export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
+  ...BB_WOMEN_LATEST_IDS,
+  ...BB_WOMEN_COATS_IDS,
+  ...BB_WOMEN_CLOTHES_IDS,
+];
+
 export type NavChild = {
   id: SubcategoryId;
   labelKo: string;
@@ -131,6 +288,23 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
   "gg-bestsellers": [...GG_BESTSELLER_IDS],
+  burberry: [...BB_LUXURY_WOMEN_IDS],
+  "bb-women": [...BB_LUXURY_WOMEN_IDS],
+  "bb-women-latest": [...BB_WOMEN_LATEST_IDS],
+  "bb-women-coats-jackets": [...BB_WOMEN_COATS_IDS],
+  "bb-women-clothes": [...BB_WOMEN_CLOTHES_IDS],
+  "burberry-bags": [...BB_WOMEN_BAG_IDS],
+  "bb-women-bags": [...BB_WOMEN_BAG_IDS],
+  "burberry-shoes": [...BB_WOMEN_SHOE_IDS],
+  "bb-women-shoes": [...BB_WOMEN_SHOE_IDS],
+  "burberry-accessories": [
+    ...BB_WOMEN_ACCESSORY_LEAF_IDS,
+    ...BB_WOMEN_WALLET_IDS,
+    ...BB_WOMEN_GIFT_IDS,
+  ],
+  "bb-women-accessories": [...BB_WOMEN_ACCESSORY_LEAF_IDS],
+  "bb-women-wallets": [...BB_WOMEN_WALLET_IDS],
+  "bb-women-gifts": [...BB_WOMEN_GIFT_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -140,6 +314,62 @@ export const navCategories: NavCategory[] = [
     labelKo: "명품럭셔리 의류",
     href: "/shop?category=luxury",
     children: [
+      {
+        id: "burberry",
+        labelKo: "Burberry",
+        href: "/shop?category=luxury&sub=burberry",
+        navLeaf: true,
+        children: [
+          {
+            id: "bb-women",
+            labelKo: "Women",
+            href: "/shop?category=luxury&sub=bb-women",
+            children: [
+              {
+                id: "bb-women-latest",
+                labelKo: "Latest",
+                href: "/shop?category=luxury&sub=bb-women-latest",
+                children: [
+                  { id: "bb-women-new", labelKo: "New", href: "/shop?category=luxury&sub=bb-women-new" },
+                  { id: "bb-women-summer-styles", labelKo: "Summer Styles", href: "/shop?category=luxury&sub=bb-women-summer-styles" },
+                  { id: "bb-women-classics", labelKo: "Burberry Classics", href: "/shop?category=luxury&sub=bb-women-classics" },
+                ],
+              },
+              {
+                id: "bb-women-coats-jackets",
+                labelKo: "Coats & Jackets",
+                href: "/shop?category=luxury&sub=bb-women-coats-jackets",
+                children: [
+                  { id: "bb-women-coats", labelKo: "Coats", href: "/shop?category=luxury&sub=bb-women-coats" },
+                  { id: "bb-women-jackets", labelKo: "Jackets", href: "/shop?category=luxury&sub=bb-women-jackets" },
+                  { id: "bb-women-trench-coats", labelKo: "Trench Coats", href: "/shop?category=luxury&sub=bb-women-trench-coats" },
+                  { id: "bb-women-quilted-jackets", labelKo: "Quilted Jackets", href: "/shop?category=luxury&sub=bb-women-quilted-jackets" },
+                  { id: "bb-women-puffer-jackets", labelKo: "Puffer Jackets", href: "/shop?category=luxury&sub=bb-women-puffer-jackets" },
+                  { id: "bb-women-ponchos-capes", labelKo: "Ponchos & Capes", href: "/shop?category=luxury&sub=bb-women-ponchos-capes" },
+                ],
+              },
+              {
+                id: "bb-women-clothes",
+                labelKo: "Clothes",
+                href: "/shop?category=luxury&sub=bb-women-clothes",
+                children: [
+                  { id: "bb-women-knitwear", labelKo: "Knitwear", href: "/shop?category=luxury&sub=bb-women-knitwear" },
+                  { id: "bb-women-polos-tshirts", labelKo: "Polos & T-shirts", href: "/shop?category=luxury&sub=bb-women-polos-tshirts" },
+                  { id: "bb-women-shirts-tops", labelKo: "Shirts & Tops", href: "/shop?category=luxury&sub=bb-women-shirts-tops" },
+                  { id: "bb-women-dresses", labelKo: "Dresses", href: "/shop?category=luxury&sub=bb-women-dresses" },
+                  { id: "bb-women-skirts", labelKo: "Skirts", href: "/shop?category=luxury&sub=bb-women-skirts" },
+                  { id: "bb-women-hoodies-sweatshirts", labelKo: "Hoodies & Sweatshirts", href: "/shop?category=luxury&sub=bb-women-hoodies-sweatshirts" },
+                  { id: "bb-women-blazers-tailoring", labelKo: "Blazers & Tailoring", href: "/shop?category=luxury&sub=bb-women-blazers-tailoring" },
+                  { id: "bb-women-trousers-shorts", labelKo: "Trousers & Shorts", href: "/shop?category=luxury&sub=bb-women-trousers-shorts" },
+                  { id: "bb-women-activewear", labelKo: "Activewear", href: "/shop?category=luxury&sub=bb-women-activewear" },
+                  { id: "bb-women-denim", labelKo: "Denim", href: "/shop?category=luxury&sub=bb-women-denim" },
+                  { id: "bb-women-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-women-swimwear" },
+                ],
+              },
+            ],
+          },
+        ],
+      },
       { id: "womens", labelKo: "Womens", href: "/shop?category=luxury&sub=womens" },
       { id: "mens", labelKo: "Mens", href: "/shop?category=luxury&sub=mens" },
     ],
@@ -241,12 +471,55 @@ export const navCategories: NavCategory[] = [
     id: "bags",
     labelKo: "가방",
     href: "/shop?category=bags",
+    children: [
+      {
+        id: "burberry-bags",
+        labelKo: "Burberry",
+        href: "/shop?category=bags&sub=burberry-bags",
+        navLeaf: true,
+        children: [
+          {
+            id: "bb-women-bags",
+            labelKo: "Bags",
+            href: "/shop?category=bags&sub=bb-women-bags",
+            children: [
+              { id: "bb-women-mini-bags", labelKo: "Mini Bags", href: "/shop?category=bags&sub=bb-women-mini-bags" },
+              { id: "bb-women-tote-bags", labelKo: "Tote Bags", href: "/shop?category=bags&sub=bb-women-tote-bags" },
+              { id: "bb-women-crossbody-bags", labelKo: "Crossbody Bags", href: "/shop?category=bags&sub=bb-women-crossbody-bags" },
+              { id: "bb-women-shoulder-bags", labelKo: "Shoulder Bags", href: "/shop?category=bags&sub=bb-women-shoulder-bags" },
+              { id: "bb-women-top-handle-bags", labelKo: "Top Handle Bags", href: "/shop?category=bags&sub=bb-women-top-handle-bags" },
+              { id: "bb-women-backpacks", labelKo: "Backpacks", href: "/shop?category=bags&sub=bb-women-backpacks" },
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: "shoes",
     labelKo: "슈즈",
     href: "/shop?category=shoes",
     children: [
+      {
+        id: "burberry-shoes",
+        labelKo: "Burberry",
+        href: "/shop?category=shoes&sub=burberry-shoes",
+        navLeaf: true,
+        children: [
+          {
+            id: "bb-women-shoes",
+            labelKo: "Shoes",
+            href: "/shop?category=shoes&sub=bb-women-shoes",
+            children: [
+              { id: "bb-women-sneakers", labelKo: "Sneakers", href: "/shop?category=shoes&sub=bb-women-sneakers" },
+              { id: "bb-women-sandals", labelKo: "Sandals", href: "/shop?category=shoes&sub=bb-women-sandals" },
+              { id: "bb-women-loafers-ballerinas", labelKo: "Loafers & Ballerinas", href: "/shop?category=shoes&sub=bb-women-loafers-ballerinas" },
+              { id: "bb-women-boots", labelKo: "Boots", href: "/shop?category=shoes&sub=bb-women-boots" },
+              { id: "bb-women-pumps", labelKo: "Pumps", href: "/shop?category=shoes&sub=bb-women-pumps" },
+            ],
+          },
+        ],
+      },
       {
         id: "luxury-shoes",
         labelKo: "럭셔리 슈즈",
@@ -288,6 +561,52 @@ export const navCategories: NavCategory[] = [
     labelKo: "악세서리",
     href: "/shop?category=accessories",
     children: [
+      {
+        id: "burberry-accessories",
+        labelKo: "Burberry",
+        href: "/shop?category=accessories&sub=burberry-accessories",
+        navLeaf: true,
+        children: [
+          {
+            id: "bb-women-accessories",
+            labelKo: "Accessories",
+            href: "/shop?category=accessories&sub=bb-women-accessories",
+            children: [
+              { id: "bb-women-scarves", labelKo: "Scarves", href: "/shop?category=accessories&sub=bb-women-scarves" },
+              { id: "bb-women-belts", labelKo: "Belts", href: "/shop?category=accessories&sub=bb-women-belts" },
+              { id: "bb-women-sunglasses", labelKo: "Sunglasses", href: "/shop?category=accessories&sub=bb-women-sunglasses" },
+              { id: "bb-women-caps-hats", labelKo: "Caps & Bucket Hats", href: "/shop?category=accessories&sub=bb-women-caps-hats" },
+              { id: "bb-women-umbrellas", labelKo: "Umbrellas", href: "/shop?category=accessories&sub=bb-women-umbrellas" },
+              { id: "bb-women-jewellery", labelKo: "Jewellery", href: "/shop?category=accessories&sub=bb-women-jewellery" },
+              { id: "bb-women-home", labelKo: "Home", href: "/shop?category=accessories&sub=bb-women-home" },
+              { id: "bb-women-socks-tights", labelKo: "Socks & Tights", href: "/shop?category=accessories&sub=bb-women-socks-tights" },
+              { id: "bb-women-tech-travel", labelKo: "Tech & Travel", href: "/shop?category=accessories&sub=bb-women-tech-travel" },
+              { id: "bb-women-key-charms", labelKo: "Key & Bag Charms", href: "/shop?category=accessories&sub=bb-women-key-charms" },
+            ],
+          },
+          {
+            id: "bb-women-wallets",
+            labelKo: "Wallets & Card Cases",
+            href: "/shop?category=accessories&sub=bb-women-wallets",
+            children: [
+              { id: "bb-women-card-cases", labelKo: "Card Cases", href: "/shop?category=accessories&sub=bb-women-card-cases" },
+              { id: "bb-women-long-wallets", labelKo: "Long Wallets", href: "/shop?category=accessories&sub=bb-women-long-wallets" },
+              { id: "bb-women-compact-wallets", labelKo: "Compact Wallets", href: "/shop?category=accessories&sub=bb-women-compact-wallets" },
+              { id: "bb-women-chain-strap-wallets", labelKo: "Chain Strap Wallets", href: "/shop?category=accessories&sub=bb-women-chain-strap-wallets" },
+            ],
+          },
+          {
+            id: "bb-women-gifts",
+            labelKo: "Gifts",
+            href: "/shop?category=accessories&sub=bb-women-gifts",
+            children: [
+              { id: "bb-women-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-women-fragrance" },
+              { id: "bb-women-personalised-gifts", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-women-personalised-gifts" },
+              { id: "bb-women-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-women-personalised-scarves" },
+            ],
+          },
+        ],
+      },
       { id: "jewelry", labelKo: "쥬얼리", href: "/shop?category=accessories&sub=jewelry" },
       { id: "cosmetics", labelKo: "화장품", href: "/shop?category=accessories&sub=cosmetics" },
       { id: "wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=wallets" },

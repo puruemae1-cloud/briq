@@ -44,3 +44,4 @@ next-env.d.ts
 
 # local order inbox (dev persistence)
 /data/orders.json
+src/data/bb/bb-pdp-cache.json

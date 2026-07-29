@@ -2,6 +2,7 @@ import type { CategoryId, SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
 import { cwProducts } from "@/data/cw/cw-products";
 import { ggCatalogProducts } from "@/data/gg/gg-catalog";
+import { bbCatalogProducts } from "@/data/bb/bb-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -43,6 +44,8 @@ export type ProductVariant = {
    * Used so Men/Women shop grids match official colourway counts.
    */
   ggCollections?: SubcategoryId[];
+  /** Burberry colourway PLP memberships (per colour). */
+  bbCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -69,6 +72,8 @@ export type Product = {
    * Galvin Green PLP memberships (e.g. New Arrivals + Bestsellers).
    */
   ggCollections?: SubcategoryId[];
+  /** Burberry Women PLP memberships across luxury/bags/shoes/accessories. */
+  bbCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -663,6 +668,7 @@ export const products: Product[] = [
   // Newest hand-authored products last in source order; explicit registeredAt still wins.
   ...cwProducts,
   ...ggCatalogProducts,
+  ...bbCatalogProducts,
 ];
 
 /** Fill missing registeredAt so later catalogue rows rank as newer. */
@@ -884,6 +890,95 @@ export function expandGgColourwayCards(
   return out;
 }
 
+function isBbShopFilter(expanded?: string[]) {
+  if (!expanded?.length) return false;
+  return expanded.some(
+    (id) =>
+      id.startsWith("bb-") ||
+      id === "burberry" ||
+      id === "burberry-bags" ||
+      id === "burberry-shoes" ||
+      id === "burberry-accessories",
+  );
+}
+
+/** Official Burberry PLPs list each colourway as its own card. */
+export function expandBbColourwayCards(
+  list: Product[],
+  expanded?: string[],
+): Product[] {
+  if (!isBbShopFilter(expanded)) return list;
+
+  const out: Product[] = [];
+  for (const product of list) {
+    if (!product.bbCollections?.length || !product.variants?.length) {
+      out.push(product);
+      continue;
+    }
+
+    const styleInStock = product.variants.some((v) => v.inStock);
+
+    const byColor = new Map<string, NonNullable<Product["variants"]>>();
+    for (const variant of product.variants) {
+      const key = variant.colorKey;
+      if (!key) continue;
+      const bucket = byColor.get(key);
+      if (bucket) bucket.push(variant);
+      else byColor.set(key, [variant]);
+    }
+
+    if (byColor.size <= 1) {
+      const only = byColor.size === 1 ? [...byColor.values()][0] : null;
+      const cols = only?.[0]?.bbCollections ?? product.bbCollections;
+      if (cols.some((c) => expanded!.includes(c))) {
+        out.push(
+          only
+            ? {
+                ...product,
+                bbCollections: cols,
+                shopColorKey: only[0]?.colorKey,
+                image: only[0]?.image || product.image,
+                images: only[0]?.images || product.images,
+                inStock: styleInStock,
+              }
+            : product,
+        );
+      }
+      continue;
+    }
+
+    for (const [colorKey, variants] of byColor) {
+      const cols = variants[0]?.bbCollections ?? product.bbCollections;
+      if (!cols.some((c) => expanded!.includes(c))) continue;
+
+      const inStock = variants.filter((v) => v.inStock);
+      const priced = (inStock.length ? inStock : variants).slice().sort(
+        (a, b) => a.price - b.price,
+      );
+      const lead = priced[0] ?? variants[0];
+      const compareAt =
+        lead.compareAtPrice && lead.compareAtPrice > lead.price
+          ? lead.compareAtPrice
+          : undefined;
+
+      out.push({
+        ...product,
+        image: lead.image || product.image,
+        images: lead.images || product.images,
+        price: lead.price,
+        compareAtPrice: compareAt,
+        gbpPrice: lead.gbpPrice,
+        bbCollections: cols,
+        variants,
+        shopColorKey: colorKey,
+        sourceUrl: lead.sourceUrl || product.sourceUrl,
+        inStock: styleInStock,
+      });
+    }
+  }
+  return out;
+}
+
 export function getProductsByCategory(category?: string, sub?: string) {
   let list = products;
   if (category && category !== "all") {
@@ -895,11 +990,15 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.subcategory && expanded.includes(p.subcategory)) return true;
       if (p.cwCollections?.some((c) => expanded.includes(c))) return true;
       if (p.ggCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.bbCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });
     list = expandGgColourwayCards(list, expanded);
+    list = expandBbColourwayCards(list, expanded);
   }
   return list;
 }
