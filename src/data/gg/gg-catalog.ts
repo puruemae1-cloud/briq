@@ -528,7 +528,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.4,
     sku: "G11019406B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/action-waterproof-jacket-forged-iron",
-    registeredAt: "2026-07-28T22:34:04.000Z",
+    registeredAt: "2026-07-29T09:17:08.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -860,7 +860,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000438712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/adam-waterproof-golf-jacket-crystal-blue-navy",
-    registeredAt: "2026-07-28T22:34:05.000Z",
+    registeredAt: "2026-07-29T09:17:09.000Z",
     editTier: "new",
     storySections: [
       {
@@ -1118,9 +1118,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 144000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "Addison 골프 레인 모자는 방수, 방풍 및 통기성 기능과 세련되고 기능적인 디자인을 결합하여 악천후로부터 안정적인 보호 기능을 제공하도록 설계되었습니다. PERTEX® Shield 스트레치 기술 원단으로 제작된 이 모자는 100% 방수 기능을 갖추고 있으며 탁월한 통기성을 유지하여 비가 오는 라운드에도 건조함과 편안함을 유지합니다. 신축성 있는 원단이 편안한 핏을 선사하며, 신축성 있는 스웨트밴드가 편안함을 더해줍니다.",
     image: "/products/gg-pdp/addison-waterproof-golf-hat-black/1.jpg",
     images: ["/products/gg-pdp/addison-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-black/5.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/addison-waterproof-golf-hat-navy/5.jpg"],
@@ -1128,7 +1128,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "A01000649403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/addison-waterproof-golf-hat-black",
-    registeredAt: "2026-07-28T22:34:06.000Z",
+    registeredAt: "2026-07-29T09:17:10.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -1317,7 +1317,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 149.4,
     sku: "G87129413B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/adele-waterproof-jacket-red",
-    registeredAt: "2026-07-28T22:34:07.000Z",
+    registeredAt: "2026-07-29T09:17:11.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -1452,7 +1452,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 173.4,
     sku: "G11099413B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aden-waterproof-jacket-red",
-    registeredAt: "2026-07-28T22:34:08.000Z",
+    registeredAt: "2026-07-29T09:17:12.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -1593,7 +1593,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 244.3,
     sku: "A01000369403011",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/adrian-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T22:34:09.000Z",
+    registeredAt: "2026-07-29T09:17:13.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -1782,8 +1782,8 @@ export const ggCatalogProducts: Product[] = [
     price: 144000,
     category: "sports",
     subcategory: "gg-bestsellers-men",
-    ggCollections: ["gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-men"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men"],
     descriptionKo: "방수 버킷햇은 골퍼의 필수품으로, 실용성, 편안함, 비바람에 대한 안정적인 보호 기능으로 고객들에게 사랑을 받고 있습니다. PERTEX® Shield 스트레치 패브릭으로 제작된 이 가벼운 모자는 통기성과 신축성이 특징입니다. 신축성 있는 스웨트 밴드가 있어 편안함을 더해주는 Aiden 골프 비 모자는 갈빈 그린의 수상 경력이 있는 DRYVR™ 골프 비옷 컬렉션의 일부입니다.",
     image: "/products/gg-pdp/aiden-waterproof-golf-hat-black/1.jpg",
     images: ["/products/gg-pdp/aiden-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-black/5.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/aiden-waterproof-golf-hat-navy/5.jpg"],
@@ -1792,7 +1792,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "A01000639403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aiden-waterproof-golf-hat-black",
-    registeredAt: "2026-07-28T22:34:10.000Z",
+    registeredAt: "2026-07-29T09:17:14.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -1981,7 +1981,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 173.4,
     sku: "G21039403B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aila-waterproof-jacket-black",
-    registeredAt: "2026-07-28T22:34:11.000Z",
+    registeredAt: "2026-07-29T09:17:15.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -2409,7 +2409,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A01000529366001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/air-waterproof-golf-jacket-black-forged-iron",
-    registeredAt: "2026-07-28T22:34:12.000Z",
+    registeredAt: "2026-07-29T09:17:16.000Z",
     editTier: "new",
     storySections: [
       {
@@ -2678,7 +2678,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000519403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/akron-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T22:34:13.000Z",
+    registeredAt: "2026-07-29T09:17:17.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -2902,7 +2902,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A0100046V9403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alan-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T22:34:14.000Z",
+    registeredAt: "2026-07-29T09:17:18.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -3637,7 +3637,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 258.3,
     sku: "G13009408B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/albert-waterproof-jacket-cool-grey",
-    registeredAt: "2026-07-28T22:34:15.000Z",
+    registeredAt: "2026-07-29T09:17:19.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -3906,7 +3906,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "A01000259408001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alice-waterproof-jacket-cool-grey",
-    registeredAt: "2026-07-28T22:34:16.000Z",
+    registeredAt: "2026-07-29T09:17:20.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -4239,7 +4239,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "A01000269403004",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alina-waterproof-pants-black",
-    registeredAt: "2026-07-28T22:34:17.000Z",
+    registeredAt: "2026-07-29T09:17:21.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -4812,7 +4812,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 377.3,
     sku: "A01000119237001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alister-waterproof-jacket-forged-iron-black",
-    registeredAt: "2026-07-28T22:34:18.000Z",
+    registeredAt: "2026-07-29T09:17:22.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -5049,7 +5049,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 185.4,
     sku: "A01000079369001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ally-waterproof-jacket-black-cool-grey-white",
-    registeredAt: "2026-07-28T22:34:19.000Z",
+    registeredAt: "2026-07-29T09:17:23.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -5387,7 +5387,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 314.3,
     sku: "A01000739649001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alonzo-waterproof-golf-jacket-black-forged-iron-white",
-    registeredAt: "2026-07-28T22:34:20.000Z",
+    registeredAt: "2026-07-29T09:17:24.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -5512,7 +5512,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 300.3,
     sku: "A01000129403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alpha-waterproof-pants-black",
-    registeredAt: "2026-07-28T22:34:21.000Z",
+    registeredAt: "2026-07-29T09:17:25.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -5653,7 +5653,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 223.3,
     sku: "A01000418810001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ames-waterproof-golf-jacket-black-fresh-green",
-    registeredAt: "2026-07-28T22:34:22.000Z",
+    registeredAt: "2026-07-29T09:17:26.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -6423,7 +6423,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 299.0,
     sku: "A01000509403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/andrea-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T22:34:23.000Z",
+    registeredAt: "2026-07-29T09:17:27.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -6647,7 +6647,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 349.0,
     sku: "A01000779403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/andrew-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T22:34:24.000Z",
+    registeredAt: "2026-07-29T09:17:28.000Z",
     editTier: "new",
     storySections: [
       {
@@ -6932,7 +6932,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "A0100045V9403004",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/angie-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T22:34:25.000Z",
+    registeredAt: "2026-07-29T09:17:29.000Z",
     editTier: "new",
     storySections: [
       {
@@ -7391,7 +7391,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "A01000249403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/anna-waterproof-pants-black",
-    registeredAt: "2026-07-28T22:34:26.000Z",
+    registeredAt: "2026-07-29T09:17:30.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -7819,7 +7819,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A11000559403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/april-waterproof-pants-black",
-    registeredAt: "2026-07-28T22:34:27.000Z",
+    registeredAt: "2026-07-29T09:17:31.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -8212,9 +8212,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 144000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "양털 안감, 추가적인 보호를 위한 이어 플랩, 건조한 상태를 유지하도록 설계된 첨단 방수 소재가 특징인 Archer 골프 모자로 따뜻하고 건조한 상태를 유지하세요. PERTEX® Shield는 통기성이 있고 신축성이 있으며 PFA가 없는 첨단 기술의 경량 방수 소재입니다. 이 캡의 너비는 벨크로와 고무줄로 뒷면에서 조절하여 꼭 맞도록 할 수 있습니다. 소형 사이즈의 둘레는 54~56cm(21.3~22인치), 중형 사이즈는 56~58cm(22~22.8인치), 대형 사이즈는 60~62cm(23.6~24.4인치)입니다.",
     image: "/products/gg-pdp/archer-waterproof-golf-cap-black/1.jpg",
     images: ["/products/gg-pdp/archer-waterproof-golf-cap-black/1.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-black/2.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-black/3.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-black/4.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-black/5.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-black/6.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/1.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/2.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/3.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/4.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/5.jpg", "/products/gg-pdp/archer-waterproof-golf-cap-navy/6.jpg"],
@@ -8222,7 +8222,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "A01000679403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/archer-waterproof-golf-cap-black",
-    registeredAt: "2026-07-28T22:34:28.000Z",
+    registeredAt: "2026-07-29T09:17:32.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -8351,7 +8351,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 300.3,
     sku: "A01000219020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/argus-waterproof-jacket-black-white",
-    registeredAt: "2026-07-28T22:34:29.000Z",
+    registeredAt: "2026-07-29T09:17:33.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -8539,9 +8539,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 122000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "Ariel 방수 골프 모자는 스타일과 성능을 결합하여 비바람으로부터 필수적인 보호 기능을 제공합니다. PERTEX® Shield 스트레치 기술 원단으로 제작된 이 모자는 100% 방수, 방풍 및 통기성을 갖추고 있어 습하고 바람이 많이 부는 라운드 중에도 편안함을 유지합니다. 신축성 있는 원단이 완벽한 핏을 보장하며, 폭 조절이 가능해 사이즈를 맞춤 설정할 수 있습니다. 신축성 있는 스웨트밴드는 땀을 막아주어 격렬한 환경에서도 쾌적함을 유지해줍니다.",
     image: "/products/gg-pdp/ariel-cresting-waterproof-golf-cap-navy/1.jpg",
     images: ["/products/gg-pdp/ariel-cresting-waterproof-golf-cap-navy/1.jpg", "/products/gg-pdp/ariel-cresting-waterproof-golf-cap-navy/2.jpg", "/products/gg-pdp/ariel-waterproof-golf-cap/1.jpg", "/products/gg-pdp/ariel-waterproof-golf-cap/2.jpg"],
@@ -8549,7 +8549,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "A01000669405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ariel-cresting-waterproof-golf-cap-navy",
-    registeredAt: "2026-07-28T22:34:30.000Z",
+    registeredAt: "2026-07-29T09:17:34.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -8607,9 +8607,9 @@ export const ggCatalogProducts: Product[] = [
     price: 115000,
     compareAtPrice: 135000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "신축성 있는 스웨트 밴드는 추가적인 편안함을 제공하며, 이 방수 버킷 모자는 bluesign® 승인 패브릭으로 제작되었습니다. 비가 골프를 방해하지 않도록 갈빈 그린의 수상 경력에 빛나는 골프 비옷으로 자신을 보호하세요. Ark는 DRYVR™ 방수 제품군에 속하는 완전히 솔기가 밀봉된 방수 버킷 모자입니다. GORE-TEX로 제작된 이 모자는 완전 방수 및 방풍 기능을 갖추고 있어 가볍고 통기성이 있으면서도 악천후로부터 완벽하게 보호해 줍니다.",
     image: "/products/gg-pdp/ark-waterproof-hat-black/1.jpg",
     images: ["/products/gg-pdp/ark-waterproof-hat-black/1.jpg", "/products/gg-pdp/ark-waterproof-hat-black/2.jpg", "/products/gg-pdp/ark-waterproof-hat-black/3.jpg", "/products/gg-pdp/ark-waterproof-hat-black/4.jpg", "/products/gg-pdp/ark-waterproof-hat-black/5.jpg", "/products/gg-pdp/ark-waterproof-hat-black/6.jpg"],
@@ -8618,7 +8618,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 36.0,
     sku: "G76859403F4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ark-waterproof-hat-black",
-    registeredAt: "2026-07-28T22:34:31.000Z",
+    registeredAt: "2026-07-29T09:17:35.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -8732,9 +8732,9 @@ export const ggCatalogProducts: Product[] = [
     price: 105000,
     compareAtPrice: 135000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "Ark GORE-TEX 버킷 모자에는 신축성 있는 스웨트밴드가 있어 더욱 편안합니다. 갈빈 그린 방수 재킷과 바지를 함께 착용하면 비오는 날에도 골프장에 갈 준비가 된 것입니다. 아크 크레스팅(Ark Cresting)은 빗속에서 골프를 칠 때 건조함과 편안함을 유지하도록 디자인된 GORE-TEX 버킷 햇입니다. DRYVR™ 제품군의 이 경량 GORE-TEX 원단은 통기성이 매우 뛰어나며 완전 방수 및 방풍 멤브레인으로 악천후로부터 사용자를 보호합니다.",
     image: "/products/gg-pdp/ark-cresting-waterproof-hat-black/1.jpg",
     images: ["/products/gg-pdp/ark-cresting-waterproof-hat-black/1.jpg", "/products/gg-pdp/ark-cresting-waterproof-hat-black/2.jpg", "/products/gg-pdp/ark-cresting-waterproof-hat-black/3.jpg", "/products/gg-pdp/ark-cresting-waterproof-hat-black/4.jpg", "/products/gg-pdp/ark-cresting-waterproof-hat-black/5.jpg"],
@@ -8743,7 +8743,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 31.5,
     sku: "A01000329403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ark-cresting-waterproof-hat-black",
-    registeredAt: "2026-07-28T22:34:32.000Z",
+    registeredAt: "2026-07-29T09:17:36.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -8868,7 +8868,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "A01000089403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arlie-waterproof-jacket-black",
-    registeredAt: "2026-07-28T22:34:33.000Z",
+    registeredAt: "2026-07-29T09:17:37.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -9040,7 +9040,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 359.0,
     sku: "A01000718708001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arlo-waterproof-golf-jacket-black-orange",
-    registeredAt: "2026-07-28T22:34:34.000Z",
+    registeredAt: "2026-07-29T09:17:38.000Z",
     editTier: "new",
     storySections: [
       {
@@ -9625,7 +9625,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 179.4,
     sku: "G12029994B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/armstrong-waterproof-amazing-blue",
-    registeredAt: "2026-07-28T22:34:35.000Z",
+    registeredAt: "2026-07-29T09:17:39.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -10246,7 +10246,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 223.3,
     sku: "A01000059350001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/armstrong-waterproof-jacket-black-sharkskin",
-    registeredAt: "2026-07-28T22:34:36.000Z",
+    registeredAt: "2026-07-29T09:17:40.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -10472,9 +10472,9 @@ export const ggCatalogProducts: Product[] = [
     price: 111000,
     compareAtPrice: 144000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "Arnie 방수 골프 모자에는 플리스 안감과 이어플랩이 있어 따뜻함을 더해줍니다. 뒷면의 벨크로와 고무줄로 너비를 조절할 수 있어 꼭 맞는 핏을 보장합니다. 소형 사이즈의 둘레는 54~56cm(21.3~22인치), 중형 사이즈는 56~58cm(22~22.8인치), 대형 사이즈는 60~62cm(23.6~24.4인치)입니다. Arnie는 따뜻한 안감과 이어 플랩이 있는 솔기가 완전히 밀봉된 방수 골프 모자입니다. 비와 추위 속에서 플레이하는 골퍼를 위해 디자인된 이 방수 및 방풍 GORE-TEX 모자는 통기성이 뛰어나고 가벼워 방해 요소를 최소화하고 편안함을 극대화합니다. DRYVR™ 방수 컬렉션의 수상 경력에 빛나는 골프 비옷으로 건조한 상태를 유지하세요.",
     image: "/products/gg-pdp/arnie-waterproof-cap-black/1.jpg",
     images: ["/products/gg-pdp/arnie-waterproof-cap-black/1.jpg", "/products/gg-pdp/arnie-waterproof-cap-black/2.jpg", "/products/gg-pdp/arnie-waterproof-cap-black/3.jpg", "/products/gg-pdp/arnie-waterproof-cap-black/4.jpg", "/products/gg-pdp/arnie-waterproof-cap-black/5.jpg", "/products/gg-pdp/arnie-waterproof-cap-black/6.jpg"],
@@ -10483,7 +10483,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 34.3,
     sku: "A01000309403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arnie-waterproof-cap-black",
-    registeredAt: "2026-07-28T22:34:37.000Z",
+    registeredAt: "2026-07-29T09:17:41.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -10575,7 +10575,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 249.0,
     sku: "A01000579403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aron-waterproof-golf-pants-black",
-    registeredAt: "2026-07-28T22:34:38.000Z",
+    registeredAt: "2026-07-29T09:17:42.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -10999,9 +10999,9 @@ export const ggCatalogProducts: Product[] = [
     price: 121000,
     compareAtPrice: 157000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "Art GORE-TEX 골프 모자에는 스톰 스트랩과 신축성 있는 스웨트 밴드가 있어 최대한의 편안함과 보호 기능을 제공합니다. 이 방수 골프 모자는 bluesign® 승인 직물로 제작되었습니다. Art는 완전히 솔기로 밀봉된 방수 골프 모자로 뒷면의 챙이 매우 넓어 빗물이 몸에서 떨어지지 않도록 해줍니다. 완전 방수 및 방풍 GORE-TEX 원단으로 제작된 이 모자는 통기성이 뛰어나고 가벼워 비오는 날 골프에도 실용적이고 편안합니다. DRYVR™ 방수 컬렉션의 수상 경력에 빛나는 골프 비옷으로 건조한 상태를 유지하세요.",
     image: "/products/gg-pdp/art-waterproof-hat-black/1.jpg",
     images: ["/products/gg-pdp/art-waterproof-hat-black/1.jpg", "/products/gg-pdp/art-waterproof-hat-black/2.jpg", "/products/gg-pdp/art-waterproof-hat-black/3.jpg", "/products/gg-pdp/art-waterproof-hat-black/4.jpg", "/products/gg-pdp/art-waterproof-hat-black/5.jpg", "/products/gg-pdp/art-waterproof-hat-navy/1.jpg", "/products/gg-pdp/art-waterproof-hat-navy/2.jpg", "/products/gg-pdp/art-waterproof-hat-navy/3.jpg", "/products/gg-pdp/art-waterproof-hat-navy/4.jpg", "/products/gg-pdp/art-waterproof-hat-navy/5.jpg", "/products/gg-pdp/art-waterproof-hat-white/1.jpg", "/products/gg-pdp/art-waterproof-hat-white/2.jpg"],
@@ -11010,7 +11010,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 38.5,
     sku: "A01000279403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/art-waterproof-hat-black",
-    registeredAt: "2026-07-28T22:34:39.000Z",
+    registeredAt: "2026-07-29T09:17:43.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -11290,7 +11290,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 149.4,
     sku: "A01000229403009",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arthur-waterproof-pants-black",
-    registeredAt: "2026-07-28T22:34:40.000Z",
+    registeredAt: "2026-07-29T09:17:44.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -11799,7 +11799,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "A01000199381001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/arvin-waterproof-jacket-blue-white",
-    registeredAt: "2026-07-28T22:34:41.000Z",
+    registeredAt: "2026-07-29T09:17:45.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -11929,8 +11929,8 @@ export const ggCatalogProducts: Product[] = [
     price: 166000,
     category: "sports",
     subcategory: "gg-bestsellers-men",
-    ggCollections: ["gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-men"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men"],
     descriptionKo: "Asher는 갈빈 그린 DRYVR™ 범위의 챙이 있는 방수 모자로 최대한의 커버력과 보호 기능을 제공합니다. PERTEX® Shield 방수 원단으로 제작되어 방풍성, 가벼움, 통기성 및 신축성이 뛰어납니다. 신축성 있는 스웨트밴드, 목 부분의 넓은 챙, 모자가 날아가지 않도록 해주는 스톰 스트랩이 특징입니다.",
     image: "/products/gg-pdp/asher-waterproof-golf-hat/1.jpg",
     images: ["/products/gg-pdp/asher-waterproof-golf-hat/1.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/2.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/3.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/4.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/5.jpg", "/products/gg-pdp/asher-waterproof-golf-hat/6.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/5.jpg", "/products/gg-pdp/asher-waterproof-golf-hat-navy/6.jpg"],
@@ -11939,7 +11939,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.0,
     sku: "A01000619403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/asher-waterproof-golf-hat",
-    registeredAt: "2026-07-28T22:34:42.000Z",
+    registeredAt: "2026-07-29T09:17:46.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -12127,7 +12127,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A01000569403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/aston-waterproof-golf-jacket-black",
-    registeredAt: "2026-07-28T22:34:43.000Z",
+    registeredAt: "2026-07-29T09:17:47.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -12401,9 +12401,9 @@ export const ggCatalogProducts: Product[] = [
     price: 105000,
     compareAtPrice: 135000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "더욱 편안한 착용감을 위해 신축성 있는 스웨트 밴드가 있는 Astro 골프 레인 모자는 갈빈 그린의 수상 경력에 빛나는 골퍼용 비옷 컬렉션의 일부입니다. bluesign® 승인 직물로 제작된 이 모자는 비를 맞을 위험이 있는 경우 필수품입니다. DRYVR™ 기술이 적용된 Astro는 통기성이 뛰어나고 가벼운 GORE-TEX 원단으로 제작된 솔기가 완전히 밀봉된 골프 레인 모자입니다. 이 완전 방수 및 방풍 모자는 비오는 날 착용하거나 예상치 못한 소나기가 내릴 경우 골프 가방에 휴대하도록 설계되었습니다.",
     image: "/products/gg-pdp/astro-waterproof-hat-navy/1.jpg",
     images: ["/products/gg-pdp/astro-waterproof-hat-navy/1.jpg", "/products/gg-pdp/astro-waterproof-hat-navy/2.jpg", "/products/gg-pdp/astro-waterproof-hat-navy/3.jpg", "/products/gg-pdp/astro-waterproof-hat-navy/4.jpg", "/products/gg-pdp/astro-waterproof-hat-navy/5.jpg"],
@@ -12412,7 +12412,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 31.5,
     sku: "A01000289405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/astro-waterproof-hat-navy",
-    registeredAt: "2026-07-28T22:34:44.000Z",
+    registeredAt: "2026-07-29T09:17:48.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -12526,9 +12526,9 @@ export const ggCatalogProducts: Product[] = [
     price: 95000,
     compareAtPrice: 135000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "더욱 편안한 착용감을 위해 신축성 있는 스웨트 밴드가 있는 Astro 골프 레인 모자는 갈빈 그린의 수상 경력에 빛나는 골퍼용 비옷 컬렉션의 일부입니다. bluesign® 승인 직물로 제작된 이 모자는 비를 맞을 위험이 있는 경우 필수품입니다. Astro Upcycled는 통기성이 뛰어나고 가벼운 GORE-TEX 원단으로 제작된 완전히 솔기가 밀봉된 골프 레인 모자입니다. 이 골프 버킷 모자는 100% 방수 및 방풍 기능을 갖추고 있으며 비오는 날 착용하거나 예상치 못한 소나기가 내릴 경우 골프 가방에 휴대하도록 디자인되었습니다. 갈빈 그린 업사이클링 컬렉션은 당사의 주요 생산 과정에서 남은 직물로 만든 다양한 골프 의류 및 액세서리입니다. 이 첨단 기술의 프리미엄 원단은 낭비되는 대신 일부 베스트 셀러 스타일의 한정판 생산에 사용됩니다.",
     image: "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/1.jpg",
     images: ["/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/1.jpg", "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/2.jpg", "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/3.jpg", "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/4.jpg", "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/5.jpg", "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/6.jpg"],
@@ -12537,7 +12537,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 27.0,
     sku: "S13879407F4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/upe-astro-waterproof-hat-sharkskin",
-    registeredAt: "2026-07-28T22:34:45.000Z",
+    registeredAt: "2026-07-29T09:17:49.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -12656,8 +12656,8 @@ export const ggCatalogProducts: Product[] = [
     price: 122000,
     category: "sports",
     subcategory: "gg-bestsellers-men",
-    ggCollections: ["gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-men"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men"],
     descriptionKo: "최첨단 경량 방수 골프 모자인 Atlas는 비가 오거나 예측할 수 없는 날씨에 골프를 칠 때 필수적인 액세서리입니다. 갈빈 그린 로고와 흰색 가장자리 파이핑이 특징인 Atlas 방수 캡은 PFA가 없는 가볍고 통기성이 뛰어난 방수 소재인 PERTEX® Shield로 제작되었습니다. 조정 가능한 둘레는 54~62cm(21.3~24.4인치)입니다.",
     image: "/products/gg-pdp/atlas-waterproof-golf-hat-black/1.jpg",
     images: ["/products/gg-pdp/atlas-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-black/5.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/3.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/4.jpg", "/products/gg-pdp/atlas-waterproof-golf-hat-navy/5.jpg"],
@@ -12666,7 +12666,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "A01000659403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/atlas-waterproof-golf-hat-black",
-    registeredAt: "2026-07-28T22:34:46.000Z",
+    registeredAt: "2026-07-29T09:17:50.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -12734,7 +12734,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 279.0,
     sku: "A01000549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ava-waterproof-jacket-black",
-    registeredAt: "2026-07-28T22:34:47.000Z",
+    registeredAt: "2026-07-29T09:17:51.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -12947,9 +12947,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 166000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "에이버리 방수 골프 모자는 넓은 챙과 PERTEX® Shield 스트레치 기술로 비로부터 최고의 보호 기능을 제공합니다. DRYVR™ 레인 컬렉션의 일부로 디자인된 이 모자는 100% 방수 및 방풍 기능을 갖추고 있어 습하고 바람이 많이 부는 라운드 중에도 건조함을 유지하고 보호해 줍니다. 뒷면의 넓은 챙은 추가적인 커버력을 보장하며, 스톰 스트랩은 돌풍 속에서도 안정적인 핏을 제공합니다. 신축성 있는 스웨트 밴드가 수분을 흡수하여 편안함을 유지하고, 신축성 있는 원단이 몸에 맞춰 움직이는 유연한 핏을 제공합니다.",
     image: "/products/gg-pdp/avery-cresting-waterproof-golf-hat-navy/1.jpg",
     images: ["/products/gg-pdp/avery-cresting-waterproof-golf-hat-navy/1.jpg", "/products/gg-pdp/avery-cresting-waterproof-golf-hat-navy/2.jpg", "/products/gg-pdp/avery-waterproof-golf-hat-black/1.jpg", "/products/gg-pdp/avery-waterproof-golf-hat-black/2.jpg", "/products/gg-pdp/avery-waterproof-golf-hat-black/3.jpg", "/products/gg-pdp/avery-waterproof-golf-hat-black/4.jpg", "/products/gg-pdp/avery-waterproof-golf-hat-black/5.jpg"],
@@ -12957,7 +12957,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.0,
     sku: "A01000629405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/avery-cresting-waterproof-golf-hat-navy",
-    registeredAt: "2026-07-28T22:34:48.000Z",
+    registeredAt: "2026-07-29T09:17:52.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -13146,7 +13146,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 167.3,
     sku: "A01000189349001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/alx-short-sleeve-waterproof-jacket-navy-white",
-    registeredAt: "2026-07-28T22:34:49.000Z",
+    registeredAt: "2026-07-29T09:17:53.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -13287,7 +13287,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 223.3,
     sku: "A01000029366001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/axley-waterproof-jacket-black-forged-iron",
-    registeredAt: "2026-07-28T22:34:50.000Z",
+    registeredAt: "2026-07-29T09:17:54.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -13629,7 +13629,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 129.0,
     sku: "C01000169089001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/carl-merino-sweater-black-melange",
-    registeredAt: "2026-07-28T22:34:51.000Z",
+    registeredAt: "2026-07-29T09:17:55.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -14030,7 +14030,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.4,
     sku: "C01000159587001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/chester-merino-sweater-blue-melange",
-    registeredAt: "2026-07-28T22:34:52.000Z",
+    registeredAt: "2026-07-29T09:17:56.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -14263,7 +14263,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "C01000299849001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dagmar-insulating-sweatshirt-alaskan-blue-melange",
-    registeredAt: "2026-07-28T22:34:53.000Z",
+    registeredAt: "2026-07-29T09:17:57.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -14592,7 +14592,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 77.4,
     sku: "G21559411B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daisy-insulating-mid-layer-golf-green",
-    registeredAt: "2026-07-28T22:34:54.000Z",
+    registeredAt: "2026-07-29T09:17:58.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -14729,7 +14729,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 44.5,
     sku: "G21569415B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dalia-insulating-mid-layer-sugar-coral",
-    registeredAt: "2026-07-28T22:34:55.000Z",
+    registeredAt: "2026-07-29T09:17:59.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -14865,7 +14865,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 179.0,
     sku: "C01000838756001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dalton-insulating-golf-mid-layer-black-royal-blue",
-    registeredAt: "2026-07-28T22:34:56.000Z",
+    registeredAt: "2026-07-29T09:18:00.000Z",
     editTier: "new",
     storySections: [
       {
@@ -15263,9 +15263,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 100000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "Dana는 코스에서 더 시원한 날을 위해 제작된 매끄러운 골지 니트 비니로 따뜻함과 부드러움을 함께 제공합니다. 재활용 폴리에스터 INSULA™ 소재로 제작된 이 제품은 보온성과 뛰어난 통기성의 균형을 유지하여 움직일 때 편안함을 유지합니다. 접힌 커프에는 세련된 갈빈 그린 패치가 있어 프리미엄 스포츠 마감을 더해줍니다. 가볍고, 휴대가 가능하며, 다용도 기능을 갖춘 Dana는 기온이 떨어져도 초점을 선명하게 유지합니다.",
     image: "/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/1.jpg",
     images: ["/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/1.jpg", "/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/2.jpg", "/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/3.jpg", "/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/4.jpg", "/products/gg-pdp/dana-insulating-golf-hat-crystal-blue/5.jpg", "/products/gg-pdp/dana-insulating-golf-hat-navy/1.jpg", "/products/gg-pdp/dana-insulating-golf-hat-navy/2.jpg", "/products/gg-pdp/dana-insulating-golf-hat-navy/3.jpg", "/products/gg-pdp/dana-insulating-golf-hat-navy/4.jpg", "/products/gg-pdp/dana-insulating-golf-hat-navy/5.jpg", "/products/gg-pdp/dana-insulating-golf-hat-sand/1.jpg", "/products/gg-pdp/dana-insulating-golf-hat-sand/2.jpg"],
@@ -15273,7 +15273,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.0,
     sku: "C01001078759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dana-insulating-golf-hat-crystal-blue",
-    registeredAt: "2026-07-28T22:34:57.000Z",
+    registeredAt: "2026-07-29T09:18:01.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -15353,7 +15353,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000958669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daniel-insulating-golf-mid-layer-black-white-orange",
-    registeredAt: "2026-07-28T22:34:58.000Z",
+    registeredAt: "2026-07-29T09:18:02.000Z",
     editTier: "new",
     storySections: [
       {
@@ -15618,7 +15618,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.3,
     sku: "C01000579645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dante-insulating-sweatshirt-alaskan-blue",
-    registeredAt: "2026-07-28T22:34:59.000Z",
+    registeredAt: "2026-07-29T09:18:03.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -15818,7 +15818,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "C01001069405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daphne-insulating-golf-mid-layer-navy",
-    registeredAt: "2026-07-28T22:35:00.000Z",
+    registeredAt: "2026-07-29T09:18:04.000Z",
     editTier: "new",
     storySections: [
       {
@@ -16033,7 +16033,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 94.5,
     sku: "C01000749020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dario-insulating-golf-mid-layer-black-white",
-    registeredAt: "2026-07-28T22:35:01.000Z",
+    registeredAt: "2026-07-29T09:18:05.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -16148,7 +16148,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "C01000989405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/darla-insulating-golf-mid-layer-navy",
-    registeredAt: "2026-07-28T22:35:02.000Z",
+    registeredAt: "2026-07-29T09:18:06.000Z",
     editTier: "new",
     storySections: [
       {
@@ -16464,7 +16464,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "C01001019403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/darryl-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:03.000Z",
+    registeredAt: "2026-07-29T09:18:07.000Z",
     editTier: "new",
     storySections: [
       {
@@ -16724,7 +16724,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 125.4,
     sku: "C01001029020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dash-insulating-mid-layer-black-white",
-    registeredAt: "2026-07-28T22:35:04.000Z",
+    registeredAt: "2026-07-29T09:18:08.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -16839,7 +16839,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 81.0,
     sku: "C01000469020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dave-insulating-mid-layer-black-white",
-    registeredAt: "2026-07-28T22:35:05.000Z",
+    registeredAt: "2026-07-29T09:18:09.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -16976,7 +16976,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.4,
     sku: "C01000409235001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dawson-insulating-mid-layer-white-cool-grey",
-    registeredAt: "2026-07-28T22:35:06.000Z",
+    registeredAt: "2026-07-29T09:18:10.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -17113,7 +17113,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 67.5,
     sku: "C01000089607001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/daxton-insulating-mid-layer-aqua-cool-grey-white",
-    registeredAt: "2026-07-28T22:35:07.000Z",
+    registeredAt: "2026-07-29T09:18:11.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -18317,7 +18317,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000848669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dean-insulating-golf-mid-layer-black-white-orange",
-    registeredAt: "2026-07-28T22:35:08.000Z",
+    registeredAt: "2026-07-29T09:18:12.000Z",
     editTier: "new",
     storySections: [
       {
@@ -19276,7 +19276,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "C01000439390001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/del-insulating-golf-vest-crystal-blue-melange",
-    registeredAt: "2026-07-28T22:35:09.000Z",
+    registeredAt: "2026-07-29T09:18:13.000Z",
     editTier: "new",
     storySections: [
       {
@@ -19683,7 +19683,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "C01000539405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/denise-insulating-sweatshirt-navy",
-    registeredAt: "2026-07-28T22:35:10.000Z",
+    registeredAt: "2026-07-29T09:18:14.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -19808,9 +19808,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 77000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "부드럽고 신축성 있는 원단으로 제작된 이 골프 손목 워머는 건조가 빠르고 관리가 쉽습니다. 대부분의 INSULA™ 제품군과 마찬가지로 이 제품도 bluesign® 승인을 받았습니다. 재킷 소매와 골프 장갑 사이를 어떻게 따뜻하게 유지하나요? 골프를 치는 동안 가벼운 보온 기능을 제공하도록 설계된 부드럽고 신축성이 뛰어난 골프 손목 워머인 Denison을 만나보세요.",
     image: "/products/gg-pdp/denison-insulating-wrist-warmers-sharkskin/1.jpg",
     images: ["/products/gg-pdp/denison-insulating-wrist-warmers-sharkskin/1.jpg", "/products/gg-pdp/denison-insulating-wrist-warmers-sharkskin/2.jpg", "/products/gg-pdp/denison-insulating-wrist-warmers-blue/1.jpg", "/products/gg-pdp/denison-insulating-wrist-warmers-blue/2.jpg", "/products/gg-pdp/denison-insulating-wrist-warmers-blue/3.jpg", "/products/gg-pdp/denison-insulating-wrist-warmers-blue/4.jpg"],
@@ -19818,7 +19818,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 19.0,
     sku: "C01000459407001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/denison-insulating-wrist-warmers-sharkskin",
-    registeredAt: "2026-07-28T22:35:11.000Z",
+    registeredAt: "2026-07-29T09:18:15.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -19889,7 +19889,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.3,
     sku: "G12519403B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dennis-insulating-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:12.000Z",
+    registeredAt: "2026-07-29T09:18:16.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -20110,9 +20110,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 113000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "덴버는 전면 중앙에 갈빈 그린 로고가 있는 단색 모자입니다. 이 모자는 뛰어난 보온성을 제공하는 동시에 내구성, 통기성 및 손쉬운 관리를 제공합니다.",
     image: "/products/gg-pdp/denver-insulating-hat-black/1.jpg",
     images: ["/products/gg-pdp/denver-insulating-hat-black/1.jpg", "/products/gg-pdp/denver-insulating-hat-black/2.jpg", "/products/gg-pdp/denver-insulating-hat-black/3.jpg", "/products/gg-pdp/denver-insulating-hat-black/4.jpg", "/products/gg-pdp/denver-insulating-hat-black/5.jpg", "/products/gg-pdp/denver-insulating-hat-navy/1.jpg", "/products/gg-pdp/denver-insulating-hat-navy/2.jpg", "/products/gg-pdp/denver-insulating-hat-navy/3.jpg", "/products/gg-pdp/denver-insulating-hat-navy/4.jpg", "/products/gg-pdp/denver-insulating-hat-navy/5.jpg", "/products/gg-pdp/denver-insulating-hat-red/1.jpg", "/products/gg-pdp/denver-insulating-hat-red/2.jpg"],
@@ -20120,7 +20120,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.0,
     sku: "C01000359403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/denver-insulating-hat-black",
-    registeredAt: "2026-07-28T22:35:13.000Z",
+    registeredAt: "2026-07-29T09:18:17.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -20205,8 +20205,8 @@ export const ggCatalogProducts: Product[] = [
     compareAtPrice: 113000,
     category: "sports",
     subcategory: "gg-new-men",
-    ggCollections: ["gg-new-men", "gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-new-men", "gg-sale"],
+    ggCollections: ["gg-new-men", "gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-new-men", "gg-accessories", "gg-sale"],
     descriptionKo: "마이크로 스트라이프 프린트가 돋보이는 하이테크 INSULA™ 넥 워머 Derek으로 목을 따뜻하게 유지하세요. 부드럽고 통기성이 뛰어난 원단으로 제작된 이 다용도 제품은 보온 기능을 제공합니다.",
     image: "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/1.jpg",
     images: ["/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/1.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/2.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/3.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/4.jpg", "/products/gg-pdp/derek-insulating-neck-warmer-sunny-lime/5.jpg"],
@@ -20215,7 +20215,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 21.0,
     sku: "C01000639398001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/derek-insulating-neck-warmer-sunny-lime",
-    registeredAt: "2026-07-28T22:35:14.000Z",
+    registeredAt: "2026-07-29T09:18:18.000Z",
     editTier: "new",
     storySections: [
       {
@@ -20266,7 +20266,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 76.3,
     sku: "C01000289112001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/desmond-insulating-sweatshirt-grey-melange",
-    registeredAt: "2026-07-28T22:35:15.000Z",
+    registeredAt: "2026-07-29T09:18:19.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -20376,8 +20376,8 @@ export const ggCatalogProducts: Product[] = [
     price: 100000,
     category: "sports",
     subcategory: "gg-bestsellers-men",
-    ggCollections: ["gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-men"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men"],
     descriptionKo: "Dex는 부드럽고 신축성이 뛰어난 INSULA™ 소재로 제작되어 통기성이 뛰어나고 빠르게 건조되는 넥워머입니다. 내구성이 뛰어나고 관리가 쉬운 이 보온 넥 워머는 추운 날씨에 골프를 칠 때 휴대하기에 이상적입니다. Dex는 bluesign® 승인을 받은 재활용 폴리에스테르 원단으로 만든 보온 목워머입니다. 보온 효과 2등급을 받은 Dex는 추운 날씨에도 따뜻함을 제공하도록 설계되었습니다.",
     image: "/products/gg-pdp/dex-insulating-neck-warmer-black/1.jpg",
     images: ["/products/gg-pdp/dex-insulating-neck-warmer-black/1.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/2.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/3.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/4.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/5.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-black/6.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/1.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/2.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/3.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/4.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/5.jpg", "/products/gg-pdp/dex-insulating-neck-warmer-camelia-white/6.jpg"],
@@ -20386,7 +20386,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.0,
     sku: "C01000379403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dex-insulating-neck-warmer-black",
-    registeredAt: "2026-07-28T22:35:16.000Z",
+    registeredAt: "2026-07-29T09:18:20.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -20532,7 +20532,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 118.3,
     sku: "C01000309020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dexter-insulating-mid-layer-black-white",
-    registeredAt: "2026-07-28T22:35:17.000Z",
+    registeredAt: "2026-07-29T09:18:21.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -20765,7 +20765,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 76.3,
     sku: "C01000339379001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dina-insulating-mid-layer-light-blue",
-    registeredAt: "2026-07-28T22:35:18.000Z",
+    registeredAt: "2026-07-29T09:18:22.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -20998,7 +20998,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "C01000429403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dion-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:19.000Z",
+    registeredAt: "2026-07-29T09:18:23.000Z",
     editTier: "new",
     storySections: [
       {
@@ -21495,7 +21495,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "C01000449403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/diora-insulating-golf-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:20.000Z",
+    registeredAt: "2026-07-29T09:18:24.000Z",
     editTier: "new",
     storySections: [
       {
@@ -22376,7 +22376,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "C01000698705001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-crystal-blue-white",
-    registeredAt: "2026-07-28T22:35:21.000Z",
+    registeredAt: "2026-07-29T09:18:25.000Z",
     editTier: "new",
     storySections: [
       {
@@ -22885,7 +22885,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "C01000329403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dixon-insulating-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:22.000Z",
+    registeredAt: "2026-07-29T09:18:26.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -23342,7 +23342,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.4,
     sku: "C01000119403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dolly-insulating-mid-layer-black",
-    registeredAt: "2026-07-28T22:35:23.000Z",
+    registeredAt: "2026-07-29T09:18:27.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -23767,7 +23767,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "S21459995B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/upe-dolly-insulating-mid-layer-multicolor-na",
-    registeredAt: "2026-07-28T22:35:24.000Z",
+    registeredAt: "2026-07-29T09:18:28.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -23887,7 +23887,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "C01001009020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/don-insulating-golf-mid-layer-black-white",
-    registeredAt: "2026-07-28T22:35:25.000Z",
+    registeredAt: "2026-07-29T09:18:29.000Z",
     editTier: "new",
     storySections: [
       {
@@ -24147,7 +24147,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.4,
     sku: "C01000019167001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/donald-insulating-mid-layer-blue-navy-white",
-    registeredAt: "2026-07-28T22:35:26.000Z",
+    registeredAt: "2026-07-29T09:18:30.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -24380,7 +24380,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 77.4,
     sku: "C01000059376001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/donella-insulating-mid-layer-black-white-cool-grey",
-    registeredAt: "2026-07-28T22:35:27.000Z",
+    registeredAt: "2026-07-29T09:18:31.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -24900,7 +24900,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 119.0,
     sku: "C01000518759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/donnie-insulating-golf-sweatshirt-crystal-blue",
-    registeredAt: "2026-07-28T22:35:28.000Z",
+    registeredAt: "2026-07-29T09:18:32.000Z",
     editTier: "new",
     storySections: [
       {
@@ -25481,7 +25481,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "C01000149405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/donya-insulating-mid-layer-navy",
-    registeredAt: "2026-07-28T22:35:29.000Z",
+    registeredAt: "2026-07-29T09:18:33.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -25906,7 +25906,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "G21509408B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dorali-insulating-mid-layer-cool-grey",
-    registeredAt: "2026-07-28T22:35:30.000Z",
+    registeredAt: "2026-07-29T09:18:34.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -26043,7 +26043,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 95.4,
     sku: "C01000549094001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/douglas-insulating-mid-layer-cool-grey-navy",
-    registeredAt: "2026-07-28T22:35:31.000Z",
+    registeredAt: "2026-07-29T09:18:35.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -26324,7 +26324,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.4,
     sku: "C01000219645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/drake-insulating-golf-mid-layer-alaskan-blue",
-    registeredAt: "2026-07-28T22:35:32.000Z",
+    registeredAt: "2026-07-29T09:18:36.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -27160,9 +27160,9 @@ export const ggCatalogProducts: Product[] = [
     price: 87000,
     compareAtPrice: 122000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "드류(Drew)는 앞면에 로고 자수가 돋보이는 투톤 니트 모자입니다.",
     image: "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/1.jpg",
     images: ["/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/1.jpg", "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/2.jpg", "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/3.jpg", "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/4.jpg", "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/5.jpg", "/products/gg-pdp/drew-knitted-golf-hat-black-duck-green/6.jpg"],
@@ -27171,7 +27171,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 23.4,
     sku: "C01000628879001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/drew-knitted-golf-hat-black-duck-green",
-    registeredAt: "2026-07-28T22:35:33.000Z",
+    registeredAt: "2026-07-29T09:18:37.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -27222,7 +27222,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 95.4,
     sku: "C01000799409001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/duncan-insulating-golf-mid-layer-white",
-    registeredAt: "2026-07-28T22:35:34.000Z",
+    registeredAt: "2026-07-29T09:18:38.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -27337,7 +27337,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 95.4,
     sku: "C01001048746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/dunn-insulating-golf-sweatshirt-sand-white",
-    registeredAt: "2026-07-28T22:35:35.000Z",
+    registeredAt: "2026-07-29T09:18:39.000Z",
     editTier: "new",
     storySections: [
       {
@@ -27452,7 +27452,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 111.3,
     sku: "C01000079167001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/durante-insulating-mid-layer-blue-navy-white",
-    registeredAt: "2026-07-28T22:35:36.000Z",
+    registeredAt: "2026-07-29T09:18:40.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -27589,7 +27589,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "E01000079107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ebba-thermal-base-layer-leggings-black-red",
-    registeredAt: "2026-07-28T22:35:37.000Z",
+    registeredAt: "2026-07-29T09:18:41.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -27787,7 +27787,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 69.0,
     sku: "E01000089107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/edwin-thermal-base-layer-top-black-red",
-    registeredAt: "2026-07-28T22:35:38.000Z",
+    registeredAt: "2026-07-29T09:18:42.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -28057,7 +28057,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "E01000059107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elaine-thermal-base-layer-top-black-red",
-    registeredAt: "2026-07-28T22:35:39.000Z",
+    registeredAt: "2026-07-29T09:18:43.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -28330,7 +28330,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 69.0,
     sku: "E01000129409001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elias-uv-protection-top-white",
-    registeredAt: "2026-07-28T22:35:40.000Z",
+    registeredAt: "2026-07-29T09:18:44.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -28450,7 +28450,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 48.3,
     sku: "E01000049349001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ella-uv-protection-top-navy-white",
-    registeredAt: "2026-07-28T22:35:41.000Z",
+    registeredAt: "2026-07-29T09:18:45.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -28681,7 +28681,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "E01000019107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elmo-thermal-base-layer-top-black-red",
-    registeredAt: "2026-07-28T22:35:42.000Z",
+    registeredAt: "2026-07-29T09:18:46.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -28954,7 +28954,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 69.0,
     sku: "E01000069107001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/elof-thermal-base-layer-leggings-black-red",
-    registeredAt: "2026-07-28T22:35:43.000Z",
+    registeredAt: "2026-07-29T09:18:47.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29149,7 +29149,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "E01000139350001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/emilio-thermal-base-layer-top-black-sharkskin",
-    registeredAt: "2026-07-28T22:35:44.000Z",
+    registeredAt: "2026-07-29T09:18:48.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29354,7 +29354,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.5,
     sku: "E01000039650001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/enzo-uv-protection-top-navy-blue",
-    registeredAt: "2026-07-28T22:35:45.000Z",
+    registeredAt: "2026-07-29T09:18:49.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29479,7 +29479,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 52.5,
     sku: "E01000029350001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ethan-thermal-base-layer-top-black-sharkskin",
-    registeredAt: "2026-07-28T22:35:46.000Z",
+    registeredAt: "2026-07-29T09:18:50.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29684,7 +29684,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 314.3,
     sku: "G11039403B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/harry-waterproof-jacket-black",
-    registeredAt: "2026-07-28T22:35:47.000Z",
+    registeredAt: "2026-07-29T09:18:51.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29836,7 +29836,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 251.3,
     sku: "A50209403000",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/hugo-windproof-and-water-repellent-jacket-black",
-    registeredAt: "2026-07-28T22:35:48.000Z",
+    registeredAt: "2026-07-29T09:18:52.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -29976,7 +29976,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000089403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lane-windproof-and-water-repellent-pants-black",
-    registeredAt: "2026-07-28T22:35:49.000Z",
+    registeredAt: "2026-07-29T09:18:53.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -30516,7 +30516,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 153.3,
     sku: "B01000189851001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/larissa-windproof-and-water-repellent-jacket-alaskan-blue-white",
-    registeredAt: "2026-07-28T22:35:50.000Z",
+    registeredAt: "2026-07-29T09:18:54.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -31045,7 +31045,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000439403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/larry-windproof-and-water-repellant-golf-jacket-black",
-    registeredAt: "2026-07-28T22:35:51.000Z",
+    registeredAt: "2026-07-29T09:18:55.000Z",
     editTier: "new",
     storySections: [
       {
@@ -31315,7 +31315,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 118.3,
     sku: "B01000029094001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lathan-windproof-and-water-repellent-vest-cool-grey-navy",
-    registeredAt: "2026-07-28T22:35:52.000Z",
+    registeredAt: "2026-07-29T09:18:56.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -31456,7 +31456,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 119.4,
     sku: "B01000349237001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/laurent-windproof-and-water-repellant-golf-jacket-forged-iron-black",
-    registeredAt: "2026-07-28T22:35:53.000Z",
+    registeredAt: "2026-07-29T09:18:57.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -31731,7 +31731,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.3,
     sku: "B01000259405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lauro-windproof-and-water-repellent-vest-navy",
-    registeredAt: "2026-07-28T22:35:54.000Z",
+    registeredAt: "2026-07-29T09:18:58.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -31936,7 +31936,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.3,
     sku: "B01000059167001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lawrence-windproof-and-water-repellent-jacket-blue-navy-white",
-    registeredAt: "2026-07-28T22:35:55.000Z",
+    registeredAt: "2026-07-29T09:18:59.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -32365,7 +32365,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "B01000249094001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/layton-windproof-and-water-repellent-jacket-cool-grey-navy",
-    registeredAt: "2026-07-28T22:35:56.000Z",
+    registeredAt: "2026-07-29T09:19:00.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -32570,7 +32570,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 118.3,
     sku: "B01000369349001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lea-windproof-and-water-repellant-golf-vest-navy-white",
-    registeredAt: "2026-07-28T22:35:57.000Z",
+    registeredAt: "2026-07-29T09:19:01.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -32812,7 +32812,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 188.3,
     sku: "B01000559366001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leandro-windproof-and-water-repellent-golf-jacket-black-forged-iron",
-    registeredAt: "2026-07-28T22:35:58.000Z",
+    registeredAt: "2026-07-29T09:19:02.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -32919,9 +32919,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 122000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "이 스트라이프 니트 모자는 귀 주위에 INTERFACE-1™ 안감이 있어 완벽한 방풍 기능을 보장하며, 니트는 머리 꼭대기에서 통기성을 제공합니다. 특히 춥고 바람이 많이 부는 날에는 Leighbton 니트 장식 모자를 추천합니다. 통기성이 뛰어난 소재로 제작된 Leighton 스트라이프 니트 모자는 보온 효과 #2로 평가되어 보온 기능을 제공합니다.",
     image: "/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/1.jpg",
     images: ["/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/1.jpg", "/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/2.jpg", "/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/3.jpg", "/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/4.jpg", "/products/gg-pdp/leighton-insulating-hat-black-forged-iron-white/5.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-cool-grey-white/1.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-cool-grey-white/2.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-cool-grey-white/3.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-cool-grey-white/4.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-cool-grey-white/5.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-red-white/1.jpg", "/products/gg-pdp/leighton-insulating-hat-navy-red-white/2.jpg"],
@@ -32929,7 +32929,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "B01000069649001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leighton-insulating-hat-black-forged-iron-white",
-    registeredAt: "2026-07-28T22:35:59.000Z",
+    registeredAt: "2026-07-29T09:19:03.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -33018,9 +33018,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 122000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "신축성 있는 원단으로 제작되고 보온 효과 2등급을 받은 통기성이 뛰어난 Lemmy 모자는 추운 날에도 보온 기능을 제공합니다. Lemmy는 다양한 색상으로 제공되는 방풍 니트 모자입니다. 모자 아래쪽 절반에는 방풍 안감이 있어 귀 주변을 보호하면서도 머리 상단에서는 완전히 통기성을 제공합니다.",
     image: "/products/gg-pdp/lemmy-cap-black/1.jpg",
     images: ["/products/gg-pdp/lemmy-cap-black/1.jpg", "/products/gg-pdp/lemmy-cap-black/2.jpg", "/products/gg-pdp/lemmy-cap-black/3.jpg", "/products/gg-pdp/lemmy-cap-black/4.jpg", "/products/gg-pdp/lemmy-cap-black/5.jpg", "/products/gg-pdp/lemmy-cap-black-reflex/1.jpg", "/products/gg-pdp/lemmy-cap-black-reflex/2.jpg", "/products/gg-pdp/lemmy-cap-black-reflex/3.jpg", "/products/gg-pdp/lemmy-cap-black-reflex/4.jpg", "/products/gg-pdp/lemmy-cap-black-reflex/5.jpg", "/products/gg-pdp/lemmy-cap-navy/1.jpg", "/products/gg-pdp/lemmy-cap-navy/2.jpg"],
@@ -33028,7 +33028,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "B01000129403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lemmy-cap-black",
-    registeredAt: "2026-07-28T22:36:00.000Z",
+    registeredAt: "2026-07-29T09:19:04.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -33118,7 +33118,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 146.3,
     sku: "B01000169403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lene-windproof-and-water-repellent-vest-black",
-    registeredAt: "2026-07-28T22:36:01.000Z",
+    registeredAt: "2026-07-29T09:19:05.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -33259,7 +33259,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "B01000458743001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue",
-    registeredAt: "2026-07-28T22:36:02.000Z",
+    registeredAt: "2026-07-29T09:19:06.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -33378,7 +33378,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000469403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lennox-windproof-and-water-repellent-vest-black",
-    registeredAt: "2026-07-28T22:36:03.000Z",
+    registeredAt: "2026-07-29T09:19:07.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -33576,7 +33576,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 169.0,
     sku: "B01000339403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leo-windproof-and-water-repellant-golf-vest-black",
-    registeredAt: "2026-07-28T22:36:04.000Z",
+    registeredAt: "2026-07-29T09:19:08.000Z",
     editTier: "new",
     storySections: [
       {
@@ -33921,7 +33921,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "B01000049403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leonard-windproof-and-water-repellent-jacket-black",
-    registeredAt: "2026-07-28T22:36:05.000Z",
+    registeredAt: "2026-07-29T09:19:09.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -34259,7 +34259,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 143.4,
     sku: "B01000039403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leora-windproof-and-water-repellent-jacket-black",
-    registeredAt: "2026-07-28T22:36:06.000Z",
+    registeredAt: "2026-07-29T09:19:10.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -34592,7 +34592,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 146.3,
     sku: "B01000149408001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/leroy-windproof-and-water-repellent-vest-cool-grey",
-    registeredAt: "2026-07-28T22:36:07.000Z",
+    registeredAt: "2026-07-29T09:19:11.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -34796,7 +34796,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 139.0,
     sku: "B01000099403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/levana-windproof-and-water-repellent-pants-black",
-    registeredAt: "2026-07-28T22:36:08.000Z",
+    registeredAt: "2026-07-29T09:19:12.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -35039,9 +35039,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 166000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "골프 장갑 위에 착용하도록 디자인된 Levon 보온 골프 장갑은 바람과 추위로부터 보호하는 첨단 소재인 갈빈 그린의 INTERFACE™ 소재로 제작되었습니다. 샷 사이에 이상적인 손 보호 기능을 제공하는 이 보온 골프 장갑은 추운 날씨에 필수적입니다. 완벽한 방풍 기능과 발수 마감 처리된 Levon 벙어리 장갑에는 골프 트롤리에 부착할 수 있는 벨크로 탭이 있어 구멍 사이를 이동할 때 쉽게 끼울 수 있습니다.",
     image: "/products/gg-pdp/levon-windproof-gloves-black/1.jpg",
     images: ["/products/gg-pdp/levon-windproof-gloves-black/1.jpg", "/products/gg-pdp/levon-windproof-gloves-black/2.jpg", "/products/gg-pdp/levon-windproof-gloves-black/3.jpg", "/products/gg-pdp/levon-windproof-gloves-black/4.jpg", "/products/gg-pdp/levon-windproof-gloves-navy/1.jpg", "/products/gg-pdp/levon-windproof-gloves-navy/2.jpg"],
@@ -35049,7 +35049,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.0,
     sku: "B01000139403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/levon-windproof-gloves-black",
-    registeredAt: "2026-07-28T22:36:09.000Z",
+    registeredAt: "2026-07-29T09:19:13.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -35113,8 +35113,8 @@ export const ggCatalogProducts: Product[] = [
     price: 144000,
     category: "sports",
     subcategory: "gg-bestsellers-women",
-    ggCollections: ["gg-accessories", "gg-bestsellers-women", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-women", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-women"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-women"],
     descriptionKo: "꼭 맞게 착용할 수 있도록 제작된 루이스 따뜻한 골프 장갑은 가죽과 방풍 INTERFACE-1™ 원단을 결합했으며 누구에게나 잘 맞는 6가지 사이즈로 제공됩니다. 루이스는 바람이 많이 부는 날에 착용하도록 디자인된 인기 있는 방풍 골프 장갑입니다. 그립감을 위한 가죽과 바람으로부터 보호하기 위한 INTERFACE™ 패브릭을 혼합하여 제작된 이 장갑은 필수품입니다.",
     image: "/products/gg-pdp/lewis-windproof-gloves-black/1.jpg",
     images: ["/products/gg-pdp/lewis-windproof-gloves-black/1.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/2.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/3.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/4.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/5.jpg", "/products/gg-pdp/lewis-windproof-gloves-black/6.jpg"],
@@ -35123,7 +35123,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "B01000159403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lewis-windproof-gloves-black",
-    registeredAt: "2026-07-28T22:36:10.000Z",
+    registeredAt: "2026-07-29T09:19:14.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -35256,7 +35256,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 149.0,
     sku: "B01000428840001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lilly-windproof-and-water-repellant-golf-jacket-moonlight-blue",
-    registeredAt: "2026-07-28T22:36:11.000Z",
+    registeredAt: "2026-07-29T09:19:15.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -35481,7 +35481,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 149.4,
     sku: "G11289407B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/linc-windproof-and-water-repellent-jacket-sharkskin",
-    registeredAt: "2026-07-28T22:36:12.000Z",
+    registeredAt: "2026-07-29T09:19:16.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -35600,7 +35600,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 174.3,
     sku: "B01000568741001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/linden-hooded-golf-windbreaker-white-sand",
-    registeredAt: "2026-07-28T22:36:13.000Z",
+    registeredAt: "2026-07-29T09:19:17.000Z",
     editTier: "new",
     storySections: [
       {
@@ -35725,7 +35725,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 101.4,
     sku: "G12249403B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lion-windproof-and-water-repellent-vest-black",
-    registeredAt: "2026-07-28T22:36:14.000Z",
+    registeredAt: "2026-07-29T09:19:18.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -36058,7 +36058,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000378828001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lissy-windproof-and-water-repellant-golf-jacket-fresh-green-white",
-    registeredAt: "2026-07-28T22:36:15.000Z",
+    registeredAt: "2026-07-29T09:19:19.000Z",
     editTier: "new",
     storySections: [
       {
@@ -36593,7 +36593,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 132.3,
     sku: "B01000179238001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/livingston-windproof-and-water-repellent-short-sleeve-jacket-white-navy-orange",
-    registeredAt: "2026-07-28T22:36:16.000Z",
+    registeredAt: "2026-07-29T09:19:20.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -36718,7 +36718,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000449366001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lloyd-windproof-and-water-repellant-golf-jacket-black-forged-iron",
-    registeredAt: "2026-07-28T22:36:17.000Z",
+    registeredAt: "2026-07-29T09:19:21.000Z",
     editTier: "new",
     storySections: [
       {
@@ -37320,7 +37320,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 259.0,
     sku: "B01000609403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/london-windproof-and-water-repellent-golf-jacket-black",
-    registeredAt: "2026-07-28T22:36:18.000Z",
+    registeredAt: "2026-07-29T09:19:22.000Z",
     editTier: "new",
     storySections: [
       {
@@ -37583,7 +37583,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 219.0,
     sku: "B01000619237001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luca-windproof-and-water-repellent-golf-vest-forged-iron-black",
-    registeredAt: "2026-07-28T22:36:19.000Z",
+    registeredAt: "2026-07-29T09:19:23.000Z",
     editTier: "new",
     storySections: [
       {
@@ -37847,7 +37847,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 131.4,
     sku: "B01000019257001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lucien-windproof-and-water-repellent-jacket-blue-white-cool-grey",
-    registeredAt: "2026-07-28T22:36:20.000Z",
+    registeredAt: "2026-07-29T09:19:24.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -38052,7 +38052,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 131.4,
     sku: "B01000269645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue",
-    registeredAt: "2026-07-28T22:36:21.000Z",
+    registeredAt: "2026-07-29T09:19:25.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -38192,7 +38192,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 129.0,
     sku: "B01000549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luis-windproof-and-water-repellent-golf-jacket-black",
-    registeredAt: "2026-07-28T22:36:22.000Z",
+    registeredAt: "2026-07-29T09:19:26.000Z",
     editTier: "new",
     storySections: [
       {
@@ -38462,7 +38462,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 160.3,
     sku: "B01000209990001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luke-windbreaker-jacket-duck-green",
-    registeredAt: "2026-07-28T22:36:23.000Z",
+    registeredAt: "2026-07-29T09:19:27.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -38586,7 +38586,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 229.0,
     sku: "B01000489405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/luna-windproof-and-water-repellent-vest-navy",
-    registeredAt: "2026-07-28T22:36:24.000Z",
+    registeredAt: "2026-07-29T09:19:28.000Z",
     editTier: "new",
     storySections: [
       {
@@ -38894,7 +38894,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 239.0,
     sku: "B01000479405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lydia-windproof-and-water-repellent-jacket-navy",
-    registeredAt: "2026-07-28T22:36:25.000Z",
+    registeredAt: "2026-07-29T09:19:29.000Z",
     editTier: "new",
     storySections: [
       {
@@ -39203,7 +39203,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 153.3,
     sku: "G12219407B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/lyle-windproof-and-water-repellent-jacket-sharkskin",
-    registeredAt: "2026-07-28T22:36:26.000Z",
+    registeredAt: "2026-07-29T09:19:30.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -39344,7 +39344,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000818876001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/macoy-breathable-short-sleeve-shirt-cool-grey-coral",
-    registeredAt: "2026-07-28T22:36:27.000Z",
+    registeredAt: "2026-07-29T09:19:31.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -39545,7 +39545,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001368712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
-    registeredAt: "2026-07-28T22:36:28.000Z",
+    registeredAt: "2026-07-29T09:19:32.000Z",
     editTier: "new",
     storySections: [
       {
@@ -39740,7 +39740,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001318759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maguire-breathable-short-sleeve-golf-shirt-crystal-blue",
-    registeredAt: "2026-07-28T22:36:29.000Z",
+    registeredAt: "2026-07-29T09:19:33.000Z",
     editTier: "new",
     storySections: [
       {
@@ -40015,7 +40015,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "G21719410B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maia-breathable-short-sleeve-shirt-blue-bell",
-    registeredAt: "2026-07-28T22:36:30.000Z",
+    registeredAt: "2026-07-29T09:19:34.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -40248,7 +40248,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000499349001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mallory-breathable-short-sleeve-shirt-navy-white",
-    registeredAt: "2026-07-28T22:36:31.000Z",
+    registeredAt: "2026-07-29T09:19:35.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -40385,7 +40385,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000759235001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mannix-breathable-short-sleeve-shirt-white-cool-grey",
-    registeredAt: "2026-07-28T22:36:32.000Z",
+    registeredAt: "2026-07-29T09:19:36.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -40506,7 +40506,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001339405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mansfield-breathable-short-sleeve-golf-shirt-navy",
-    registeredAt: "2026-07-28T22:36:33.000Z",
+    registeredAt: "2026-07-29T09:19:37.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -40781,7 +40781,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000958828001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/manuel-breathable-short-sleeve-golf-shirt-fresh-green-white",
-    registeredAt: "2026-07-28T22:36:34.000Z",
+    registeredAt: "2026-07-29T09:19:38.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -40896,7 +40896,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001219407001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maple-breathable-short-sleeve-golf-shirt-sharkskin",
-    registeredAt: "2026-07-28T22:36:35.000Z",
+    registeredAt: "2026-07-29T09:19:39.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -41011,7 +41011,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01001468708001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marco-breathable-short-sleeve-golf-shirt-black-orange",
-    registeredAt: "2026-07-28T22:36:36.000Z",
+    registeredAt: "2026-07-29T09:19:40.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -41206,7 +41206,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "G21769411B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marie-breathable-skirt-with-inner-shorts-golf-green",
-    registeredAt: "2026-07-28T22:36:37.000Z",
+    registeredAt: "2026-07-29T09:19:41.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -41343,7 +41343,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001458712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy",
-    registeredAt: "2026-07-28T22:36:38.000Z",
+    registeredAt: "2026-07-29T09:19:42.000Z",
     editTier: "new",
     storySections: [
       {
@@ -41846,7 +41846,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "D01001258828001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marlene-breathable-short-sleeve-golf-shirt-fresh-green-white",
-    registeredAt: "2026-07-28T22:36:39.000Z",
+    registeredAt: "2026-07-29T09:19:43.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -41977,7 +41977,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001168839001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marley-breathable-short-sleeve-golf-shirt-moonlight-blue-white",
-    registeredAt: "2026-07-28T22:36:40.000Z",
+    registeredAt: "2026-07-29T09:19:44.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -42298,7 +42298,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.0,
     sku: "D01000538829001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marsha-breathable-skirt-with-inner-shorts-multicolor",
-    registeredAt: "2026-07-28T22:36:41.000Z",
+    registeredAt: "2026-07-29T09:19:45.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -42699,7 +42699,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001378730001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/martinez-breathable-short-sleeve-golf-shirt-crystal-blue-green",
-    registeredAt: "2026-07-28T22:36:42.000Z",
+    registeredAt: "2026-07-29T09:19:46.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -42894,7 +42894,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001309403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marty-breathable-short-sleeve-golf-shirt-black",
-    registeredAt: "2026-07-28T22:36:43.000Z",
+    registeredAt: "2026-07-29T09:19:47.000Z",
     editTier: "new",
     storySections: [
       {
@@ -43895,7 +43895,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 76.3,
     sku: "D01000359403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/marwin-breathable-long-sleeve-shirt-black",
-    registeredAt: "2026-07-28T22:36:44.000Z",
+    registeredAt: "2026-07-29T09:19:48.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44032,7 +44032,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 48.3,
     sku: "D01000869394001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mason-breathable-short-sleeve-shirt-orange",
-    registeredAt: "2026-07-28T22:36:45.000Z",
+    registeredAt: "2026-07-29T09:19:49.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44378,7 +44378,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000459845001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mate-breathable-short-sleeve-shirt-sunny-lime-black",
-    registeredAt: "2026-07-28T22:36:46.000Z",
+    registeredAt: "2026-07-29T09:19:50.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44515,7 +44515,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 34.5,
     sku: "G12719991B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mathew-breathable-short-sleeve-shirt-pink-base",
-    registeredAt: "2026-07-28T22:36:47.000Z",
+    registeredAt: "2026-07-29T09:19:51.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44636,7 +44636,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 55.3,
     sku: "G13769405B4",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/matteo-breathable-short-sleeve-shirt-navy",
-    registeredAt: "2026-07-28T22:36:48.000Z",
+    registeredAt: "2026-07-29T09:19:52.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44757,7 +44757,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000978810001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maxwell-breathable-short-sleeve-golf-shirt-black-fresh-green",
-    registeredAt: "2026-07-28T22:36:49.000Z",
+    registeredAt: "2026-07-29T09:19:53.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -44951,7 +44951,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001659405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/maya-breathable-sleeveless-golf-shirt-navy",
-    registeredAt: "2026-07-28T22:36:50.000Z",
+    registeredAt: "2026-07-29T09:19:54.000Z",
     editTier: "new",
     storySections: [
       {
@@ -45165,7 +45165,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001688708001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/medley-breathable-short-sleeve-golf-shirt-black-orange",
-    registeredAt: "2026-07-28T22:36:51.000Z",
+    registeredAt: "2026-07-29T09:19:55.000Z",
     editTier: "new",
     storySections: [
       {
@@ -45560,7 +45560,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "D01000149020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/meg-breathable-sleeveless-shirt-black-white",
-    registeredAt: "2026-07-28T22:36:52.000Z",
+    registeredAt: "2026-07-29T09:19:56.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -45793,7 +45793,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "D01000169255001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/melanie-breathable-short-sleeve-shirt-navy-white-cool-grey",
-    registeredAt: "2026-07-28T22:36:53.000Z",
+    registeredAt: "2026-07-29T09:19:57.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -45930,7 +45930,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "D01000159645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/melody-breathable-short-sleeve-shirt-alaskan-blue",
-    registeredAt: "2026-07-28T22:36:54.000Z",
+    registeredAt: "2026-07-29T09:19:58.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -46445,7 +46445,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000778874001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/melvin-breathable-short-sleeve-shirt-atlantis-green-white",
-    registeredAt: "2026-07-28T22:36:55.000Z",
+    registeredAt: "2026-07-29T09:19:59.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -46726,7 +46726,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000988840001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/memo-breathable-short-sleeve-golf-shirt-moonlight-blue",
-    registeredAt: "2026-07-28T22:36:56.000Z",
+    registeredAt: "2026-07-29T09:20:00.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -46841,7 +46841,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001388730001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mendez-breathable-short-sleeve-golf-shirt-crystal-blue-green",
-    registeredAt: "2026-07-28T22:36:57.000Z",
+    registeredAt: "2026-07-29T09:20:01.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -46956,7 +46956,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001559409001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mendoza-breathable-short-sleeve-golf-shirt-white",
-    registeredAt: "2026-07-28T22:36:58.000Z",
+    registeredAt: "2026-07-29T09:20:02.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -47070,7 +47070,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001628712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
-    registeredAt: "2026-07-28T22:36:59.000Z",
+    registeredAt: "2026-07-29T09:20:03.000Z",
     editTier: "new",
     storySections: [
       {
@@ -47405,7 +47405,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.4,
     sku: "D01001408699001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mia-breathable-sleeveless-golf-shirt-pink-fuchsia",
-    registeredAt: "2026-07-28T22:37:00.000Z",
+    registeredAt: "2026-07-29T09:20:04.000Z",
     editTier: "new",
     storySections: [
       {
@@ -47632,7 +47632,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01000609403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/michael-breathable-long-sleeve-shirt-black",
-    registeredAt: "2026-07-28T22:37:01.000Z",
+    registeredAt: "2026-07-29T09:20:05.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -47865,7 +47865,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01001008836001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miguel-breathable-short-sleeve-golf-shirt-golf-green-white",
-    registeredAt: "2026-07-28T22:37:02.000Z",
+    registeredAt: "2026-07-29T09:20:06.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -47980,7 +47980,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000439400001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mile-breathable-short-sleeve-shirt-sunny-lime-white",
-    registeredAt: "2026-07-28T22:37:03.000Z",
+    registeredAt: "2026-07-29T09:20:07.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -48101,7 +48101,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001198765001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miles-breathable-short-sleeve-golf-shirt-navy-golf-green",
-    registeredAt: "2026-07-28T22:37:04.000Z",
+    registeredAt: "2026-07-29T09:20:08.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -48232,7 +48232,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001418705001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
-    registeredAt: "2026-07-28T22:37:05.000Z",
+    registeredAt: "2026-07-29T09:20:09.000Z",
     editTier: "new",
     storySections: [
       {
@@ -48639,7 +48639,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000768892001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miller-breathable-short-sleeve-shirt-black-atlantis-green",
-    registeredAt: "2026-07-28T22:37:06.000Z",
+    registeredAt: "2026-07-29T09:20:10.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -48968,7 +48968,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000789020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mills-breathable-short-sleeve-shirt-black-white",
-    registeredAt: "2026-07-28T22:37:07.000Z",
+    registeredAt: "2026-07-29T09:20:11.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -49105,7 +49105,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000449093001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mio-breathable-short-sleeve-shirt-sharkskin-black",
-    registeredAt: "2026-07-28T22:37:08.000Z",
+    registeredAt: "2026-07-29T09:20:12.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -49306,7 +49306,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001228756001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/miran-breathable-short-sleeve-golf-shirt-black-royal-blue",
-    registeredAt: "2026-07-28T22:37:09.000Z",
+    registeredAt: "2026-07-29T09:20:13.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -49501,7 +49501,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01000119855001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mo-breathable-short-sleeve-shirt-sunny-lime-white-black",
-    registeredAt: "2026-07-28T22:37:10.000Z",
+    registeredAt: "2026-07-29T09:20:14.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -49620,7 +49620,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 75.0,
     sku: "D01000489020001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mirelle-breathable-short-sleeve-shirt-black-white",
-    registeredAt: "2026-07-28T22:37:11.000Z",
+    registeredAt: "2026-07-29T09:20:15.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -49931,7 +49931,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "G88589409B3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mireya-breathable-short-sleeve-shirt-white",
-    registeredAt: "2026-07-28T22:37:12.000Z",
+    registeredAt: "2026-07-29T09:20:16.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -50068,7 +50068,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 47.4,
     sku: "D01001238743001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue",
-    registeredAt: "2026-07-28T22:37:13.000Z",
+    registeredAt: "2026-07-29T09:20:17.000Z",
     editTier: "new",
     storySections: [
       {
@@ -50488,7 +50488,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 41.4,
     sku: "D01001448707001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/molly-breathable-short-sleeve-golf-shirt-fuchsia",
-    registeredAt: "2026-07-28T22:37:14.000Z",
+    registeredAt: "2026-07-29T09:20:18.000Z",
     editTier: "new",
     storySections: [
       {
@@ -50798,7 +50798,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001428655001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy",
-    registeredAt: "2026-07-28T22:37:15.000Z",
+    registeredAt: "2026-07-29T09:20:19.000Z",
     editTier: "new",
     storySections: [
       {
@@ -51012,7 +51012,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001268760001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand",
-    registeredAt: "2026-07-28T22:37:16.000Z",
+    registeredAt: "2026-07-29T09:20:20.000Z",
     editTier: "new",
     storySections: [
       {
@@ -51466,7 +51466,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 79.0,
     sku: "D01001638759001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/muir-breathable-short-sleeve-golf-shirt-crystal-blue",
-    registeredAt: "2026-07-28T22:37:17.000Z",
+    registeredAt: "2026-07-29T09:20:21.000Z",
     editTier: "new",
     storySections: [
       {
@@ -51860,7 +51860,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001618669001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange",
-    registeredAt: "2026-07-28T22:37:18.000Z",
+    registeredAt: "2026-07-29T09:20:22.000Z",
     editTier: "new",
     storySections: [
       {
@@ -52345,7 +52345,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01001498746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/myles-breathable-short-sleeve-golf-shirt-sand-white",
-    registeredAt: "2026-07-28T22:37:19.000Z",
+    registeredAt: "2026-07-29T09:20:23.000Z",
     editTier: "new",
     storySections: [
       {
@@ -52460,7 +52460,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01001488746001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/myron-breathable-short-sleeve-golf-shirt-sand-white",
-    registeredAt: "2026-07-28T22:37:20.000Z",
+    registeredAt: "2026-07-29T09:20:24.000Z",
     editTier: "new",
     storySections: [
       {
@@ -52655,7 +52655,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 83.4,
     sku: "D01000639403011",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nathan-breathable-pants-black",
-    registeredAt: "2026-07-28T22:37:21.000Z",
+    registeredAt: "2026-07-29T09:20:25.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -52775,7 +52775,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "D01001539405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nea-breathable-golf-pants-navy",
-    registeredAt: "2026-07-28T22:37:22.000Z",
+    registeredAt: "2026-07-29T09:20:26.000Z",
     editTier: "new",
     storySections: [
       {
@@ -53019,7 +53019,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 129.0,
     sku: "D01000689403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nellie-breathable-pants-black",
-    registeredAt: "2026-07-28T22:37:23.000Z",
+    registeredAt: "2026-07-29T09:20:27.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -53268,7 +53268,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 110.0,
     sku: "D01000309405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nessa-breathable-skirt-with-inner-shorts-navy",
-    registeredAt: "2026-07-28T22:37:24.000Z",
+    registeredAt: "2026-07-29T09:20:28.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -53519,7 +53519,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.5,
     sku: "D01000219403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nicci-breathable-and-stretchy-leggings-black",
-    registeredAt: "2026-07-28T22:37:25.000Z",
+    registeredAt: "2026-07-29T09:20:29.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -53751,7 +53751,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 99.0,
     sku: "D01001549403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nick-breathable-golf-pants-black",
-    registeredAt: "2026-07-28T22:37:26.000Z",
+    registeredAt: "2026-07-29T09:20:30.000Z",
     editTier: "new",
     storySections: [
       {
@@ -54596,7 +54596,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 71.4,
     sku: "D01000239557001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nicole-breathable-pants-black-steel-grey",
-    registeredAt: "2026-07-28T22:37:27.000Z",
+    registeredAt: "2026-07-29T09:20:31.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -54861,7 +54861,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "D01000729851001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nicoline-breathable-and-stretchy-leggings-alaskan-blue-white",
-    registeredAt: "2026-07-28T22:37:28.000Z",
+    registeredAt: "2026-07-29T09:20:32.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -55093,7 +55093,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 109.0,
     sku: "D01001519405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nina-breathable-golf-skirt-with-inner-shorts-navy",
-    registeredAt: "2026-07-28T22:37:29.000Z",
+    registeredAt: "2026-07-29T09:20:33.000Z",
     editTier: "new",
     storySections: [
       {
@@ -55338,7 +55338,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01000209403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nixon-breathable-pants-black",
-    registeredAt: "2026-07-28T22:37:30.000Z",
+    registeredAt: "2026-07-29T09:20:34.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -56147,7 +56147,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01000298763001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/noah-breathable-golf-pants-blue-bell",
-    registeredAt: "2026-07-28T22:37:31.000Z",
+    registeredAt: "2026-07-29T09:20:35.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -58098,7 +58098,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001529405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/nova-breathable-golf-shorts-navy",
-    registeredAt: "2026-07-28T22:37:32.000Z",
+    registeredAt: "2026-07-29T09:20:36.000Z",
     editTier: "new",
     storySections: [
       {
@@ -58331,9 +58331,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 91000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "바이오케어 스포츠 텍스타일 워시\n기능성 의류 및 멤브레인이 있는 쉘 의류(예: 비바람에 대비한 Dryvr/Interface)용 순한 세제. 아웃도어 의류, 파카, 플리스, 직물 아웃도어 장비에도 사용 가능. 원단의 발수 마감(DWR)을 더 오래 유지하고 의류의 통기성을 손상시키는 잔여물을 남기지 않습니다. 냉수에서도 작동하므로 하이킹 여행에 적합합니다. OrganoTex 방수 제품으로 재방수하기 전에 사용하는 것이 좋습니다. 워시인(Wash-In) 섬유 방수재 세탁기로 쉽게 세탁하여 물과 오염 방지 기능을 복원하거나 향상시키는 섬유 방수재입니다. 폴리에스터, 폴리아미드, 울, 다운, 혼방 소재의 스포츠 및 아웃도어 의류에 적합합니다. Dyrvr과 같은 미세 다공성 멤브레인과 호환됩니다. 의류의 통기성, 색상, 촉감을 유지합니다. 지속 가능성\n이 제품은 자연 자체의 화학적 성질을 기반으로 합니다. 100% 바이오 기반이며 쉽게 생분해되며* PFAS가 없습니다. OEKO-TEX ECO PASSPORT 및 USDA 인증 바이오 기반 제품 100%로 환경 마크를 획득했습니다. *OECD 301F에 따름 바이오케어 스포츠 텍스타일 워시 사용법\n1) 병을 흔들어 세제칸이 깨끗한지 확인하세요.\n2) 최대 3벌의 의류 또는 4~5kg의 세탁물에 대해 30ml(연수) 또는 40ml(경수)를 세제칸에 추가하십시오. 섬유유연제를 사용하지 마세요.\n3) 관리 지침에 따라 세탁하고 건조하십시오. 손세탁: 물 20ml/10L. 찬물에서도 효율적입니다. 워시인 섬유방수 사용방법\n1) 유연제 없이 의류를 세탁하고 헹굽니다. 기능성 의류에 적합한 세제(예: OrganoTex BioCare Sport Textile Wash)를 사용하는 것이 좋습니다. 의류는 세탁기에 넣어 보관하세요. 2) 깨끗한 세제칸에 투입량: 1개 품목 = 100ml, 2개 품목 = 150ml, 3개 품목(최대) 200ml. 짧은 세탁 및 헹굼 프로그램을 실행하십시오(관리 지침을 따르십시오). 3) 최상의 결과를 얻으려면 약한 불로 건조하십시오(관리 지침을 따르십시오). 아니면 최소 24시간 동안 자연 건조시키세요.",
     image: "/products/gg-pdp/organotex-garment-care-kit/1.jpg",
     images: ["/products/gg-pdp/organotex-garment-care-kit/1.jpg", "/products/gg-pdp/organotex-garment-care-kit/2.jpg", "/products/gg-pdp/organotex-garment-care-kit/3.jpg", "/products/gg-pdp/organotex-garment-care-kit/4.jpg"],
@@ -58341,7 +58341,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 25.0,
     sku: "1040140000001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/organotex-garment-care-kit",
-    registeredAt: "2026-07-28T22:37:33.000Z",
+    registeredAt: "2026-07-29T09:20:37.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -58408,7 +58408,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 59.4,
     sku: "G7894W9403003",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/paolo-black",
-    registeredAt: "2026-07-28T22:37:34.000Z",
+    registeredAt: "2026-07-29T09:20:38.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -58522,7 +58522,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 99.0,
     sku: "D01000269403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/paul-breathable-shorts-black",
-    registeredAt: "2026-07-28T22:37:35.000Z",
+    registeredAt: "2026-07-29T09:20:39.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -59192,7 +59192,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 89.0,
     sku: "D01001569403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/pedro-breathable-golf-shorts-black",
-    registeredAt: "2026-07-28T22:37:36.000Z",
+    registeredAt: "2026-07-29T09:20:40.000Z",
     editTier: "new",
     storySections: [
       {
@@ -59542,7 +59542,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 53.4,
     sku: "D01000229373002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/percy-breathable-shorts-aqua",
-    registeredAt: "2026-07-28T22:37:37.000Z",
+    registeredAt: "2026-07-29T09:20:41.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -59919,7 +59919,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 71.4,
     sku: "D01000649403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/perry-breathable-shorts-black",
-    registeredAt: "2026-07-28T22:37:38.000Z",
+    registeredAt: "2026-07-29T09:20:42.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -60040,7 +60040,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 65.4,
     sku: "D01000349405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/petra-breathable-shorts-navy",
-    registeredAt: "2026-07-28T22:37:39.000Z",
+    registeredAt: "2026-07-29T09:20:43.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -60305,7 +60305,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "D01000409403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/raul-breathable-shorts-black",
-    registeredAt: "2026-07-28T22:37:40.000Z",
+    registeredAt: "2026-07-29T09:20:44.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -60458,7 +60458,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 77.4,
     sku: "G13279405Z3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/raymond-windproof-and-water-repellent-vest-navy",
-    registeredAt: "2026-07-28T22:37:41.000Z",
+    registeredAt: "2026-07-29T09:20:45.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -60567,7 +60567,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "C01000179403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/raz-insulating-mid-layer-black",
-    registeredAt: "2026-07-28T22:37:42.000Z",
+    registeredAt: "2026-07-29T09:20:46.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -60800,7 +60800,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "C01000529403002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/rico-insulating-sweatshirt-black",
-    registeredAt: "2026-07-28T22:37:43.000Z",
+    registeredAt: "2026-07-29T09:20:47.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61033,7 +61033,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 52.5,
     sku: "G77869405Z3",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/rob-insulating-sweatshirt-navy",
-    registeredAt: "2026-07-28T22:37:44.000Z",
+    registeredAt: "2026-07-29T09:20:48.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61138,7 +61138,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 118.3,
     sku: "A01000349107002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/robert-waterproof-jacket-black-red",
-    registeredAt: "2026-07-28T22:37:45.000Z",
+    registeredAt: "2026-07-29T09:20:49.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61247,7 +61247,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.4,
     sku: "D01000379259002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/rowan-breathable-short-sleeve-shirt-blue-navy",
-    registeredAt: "2026-07-28T22:37:46.000Z",
+    registeredAt: "2026-07-29T09:20:50.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61480,7 +61480,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.4,
     sku: "D01000369405002",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/rylan-breathable-short-sleeve-shirt-navy",
-    registeredAt: "2026-07-28T22:37:47.000Z",
+    registeredAt: "2026-07-29T09:20:51.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61638,9 +61638,9 @@ export const ggCatalogProducts: Product[] = [
     price: 74000,
     compareAtPrice: 100000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "사무엘(Samuel) 야구 모자는 밀리터리 스타일에서 영감을 받은 실루엣과 전체 마이크로 스트라이프 프린트가 특징입니다. 통기성을 높이기 위해 양쪽에 천공이 있는 Samuel의 뒷면에는 독특하고 현대적인 조절 스트랩이 있습니다.",
     image: "/products/gg-pdp/samuel-cap-black/1.jpg",
     images: ["/products/gg-pdp/samuel-cap-black/1.jpg", "/products/gg-pdp/samuel-cap-black/2.jpg", "/products/gg-pdp/samuel-cap-black/3.jpg", "/products/gg-pdp/samuel-cap-black/4.jpg", "/products/gg-pdp/samuel-cap-black/5.jpg", "/products/gg-pdp/samuel-cap-duck-green/1.jpg", "/products/gg-pdp/samuel-cap-duck-green/2.jpg", "/products/gg-pdp/samuel-cap-duck-green/3.jpg", "/products/gg-pdp/samuel-cap-duck-green/4.jpg"],
@@ -61649,7 +61649,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 17.4,
     sku: "F01000159403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/samuel-cap-black",
-    registeredAt: "2026-07-28T22:37:48.000Z",
+    registeredAt: "2026-07-29T09:20:52.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61705,9 +61705,9 @@ export const ggCatalogProducts: Product[] = [
     price: 68000,
     compareAtPrice: 91000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "샌더스 경량 캡의 둘레는 54~62cm(21.3~24.4인치)로 조절 가능합니다. 샌더스는 골프를 치는 동안 덮개와 보호 기능을 제공하도록 설계된 경량 캡입니다. 클래식한 네이비 또는 화이트 색상으로 제공되는 이 제품은 갈빈 그린의 모자 제품군에 속하며 다양한 골프 조건에서 보호 기능을 제공하도록 디자인되었습니다.",
     image: "/products/gg-pdp/sanders-cap-forged-iron/1.jpg",
     images: ["/products/gg-pdp/sanders-cap-forged-iron/1.jpg", "/products/gg-pdp/sanders-cap-forged-iron/2.jpg", "/products/gg-pdp/sanders-cap-forged-iron/3.jpg", "/products/gg-pdp/sanders-cap-forged-iron/4.jpg", "/products/gg-pdp/sanders-cap-forged-iron/5.jpg"],
@@ -61716,7 +61716,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 15.0,
     sku: "F01000019406001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/sanders-cap-forged-iron",
-    registeredAt: "2026-07-28T22:37:49.000Z",
+    registeredAt: "2026-07-29T09:20:53.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61761,9 +61761,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 91000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "모자는 골프장에서 필수 액세서리이므로 현명하게 선택하세요. Sanford는 통기성이 뛰어나고 빠르게 건조되는 원단으로 제작된 가벼운 캡입니다. 태양으로부터 보호하거나 추울 때 따뜻함을 제공하는 데 이상적인 Sanford는 다양한 계절 색상 또는 클래식 색상으로 제공됩니다. 이 가볍고 견고한 골프 모자는 측면에 톤온톤 로고가 있으며 둘레를 54~62cm(21.3~24.4인치)로 조절할 수 있습니다.",
     image: "/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/1.jpg",
     images: ["/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/1.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/2.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/3.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/4.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-black/5.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-cool-grey/1.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-cool-grey/2.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-cool-grey/3.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-cool-grey/4.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-cool-grey/5.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-fresh-green/1.jpg", "/products/gg-pdp/sanford-lightweight-solid-golf-cap-fresh-green/2.jpg"],
@@ -61771,7 +61771,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 25.0,
     sku: "F01000149403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/sanford-lightweight-solid-golf-cap-black",
-    registeredAt: "2026-07-28T22:37:50.000Z",
+    registeredAt: "2026-07-29T09:20:54.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61921,9 +61921,9 @@ export const ggCatalogProducts: Product[] = [
     price: 68000,
     compareAtPrice: 91000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "이 통기성 골프 모자는 둘레 길이를 54~62cm(21.3~24.4인치)로 조절할 수 있습니다. Scott은 속건성 원단으로 제작된 통기성이 뛰어난 골프 모자로 더운 날 골프를 칠 때 편안함을 보장합니다.",
     image: "/products/gg-pdp/scott-cap-sharkskin/1.jpg",
     images: ["/products/gg-pdp/scott-cap-sharkskin/1.jpg", "/products/gg-pdp/scott-cap-sharkskin/2.jpg", "/products/gg-pdp/scott-cap-sharkskin/3.jpg", "/products/gg-pdp/scott-cap-sharkskin/4.jpg", "/products/gg-pdp/scott-cap-sharkskin/5.jpg", "/products/gg-pdp/scott-cap-sharkskin/6.jpg"],
@@ -61932,7 +61932,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 15.0,
     sku: "F01000049407001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/scott-cap-sharkskin",
-    registeredAt: "2026-07-28T22:37:51.000Z",
+    registeredAt: "2026-07-29T09:20:55.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -61978,8 +61978,8 @@ export const ggCatalogProducts: Product[] = [
     price: 91000,
     category: "sports",
     subcategory: "gg-bestsellers-women",
-    ggCollections: ["gg-accessories", "gg-bestsellers-women", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-women", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-women"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-women"],
     descriptionKo: "Shade 골프 선바이저는 54~62cm(21.3~24.4인치)로 둘레를 조절할 수 있습니다. 선글라스는 필요하지 않습니다. Shade는 둘레 조절이 가능한 가벼운 골프용 선바이저입니다. 골프, 테니스 및 다양한 야외 활동에 실용적인 이 다용도 제품은 가지고 다니기에 편리한 아이템입니다.",
     image: "/products/gg-pdp/shade-sun-visor-alaskan-blue/1.jpg",
     images: ["/products/gg-pdp/shade-sun-visor-alaskan-blue/1.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/2.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/3.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/4.jpg", "/products/gg-pdp/shade-sun-visor-alaskan-blue/5.jpg", "/products/gg-pdp/shade-sun-visor-black/1.jpg", "/products/gg-pdp/shade-sun-visor-black/2.jpg", "/products/gg-pdp/shade-sun-visor-black/3.jpg", "/products/gg-pdp/shade-sun-visor-black/4.jpg", "/products/gg-pdp/shade-sun-visor-black/5.jpg", "/products/gg-pdp/shade-sun-visor-navy/1.jpg", "/products/gg-pdp/shade-sun-visor-navy/2.jpg"],
@@ -61988,7 +61988,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 25.0,
     sku: "F01000059645001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/shade-sun-visor-alaskan-blue",
-    registeredAt: "2026-07-28T22:37:52.000Z",
+    registeredAt: "2026-07-29T09:20:56.000Z",
     editTier: "bestseller",
     storySections: [
       {
@@ -62078,8 +62078,8 @@ export const ggCatalogProducts: Product[] = [
     price: 100000,
     category: "sports",
     subcategory: "gg-new-men",
-    ggCollections: ["gg-new-men", "gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-new-men", "gg-accessories", "gg-men", "gg-women"],
+    ggCollections: ["gg-new-men", "gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-new-men", "gg-accessories"],
     descriptionKo: "Shane 골프 모자는 대비되는 챙과 앞면 갈빈 그린 자수로 스타일과 성능을 결합합니다. 구조화된 직물로 제작된 이 캡은 향상된 통기성을 위한 환기 구멍을 갖추고 있으며, 너비 조절이 가능하여 맞춤형 핏을 보장합니다.",
     image: "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/1.jpg",
     images: ["/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/2.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/3.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/4.jpg", "/products/gg-pdp/shane-breathable-golf-hat-crystal-blue-navy/5.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/2.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/3.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/4.jpg", "/products/gg-pdp/shane-breathable-golf-hat-sand-navy/5.jpg", "/products/gg-pdp/shane-breathable-golf-hat-white-cool-grey/1.jpg", "/products/gg-pdp/shane-breathable-golf-hat-white-cool-grey/2.jpg"],
@@ -62088,7 +62088,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.0,
     sku: "F01000208712001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/shane-breathable-golf-hat-crystal-blue-navy",
-    registeredAt: "2026-07-28T22:37:53.000Z",
+    registeredAt: "2026-07-29T09:20:57.000Z",
     editTier: "new",
     storySections: [
       {
@@ -62156,9 +62156,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 122000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "Smith 버킷 모자는 태양, 바람, 가벼운 비로부터 보호하도록 설계되었습니다. 조절 가능한 드로우 코드가 있어 바람이 부는 환경에서도 안전하게 유지되며 방풍 보호 기능과 발수 마감 처리가 되어 있습니다. Warming Effect #1 안감으로 통기성이 뛰어난 Smith는 조절 가능한 너비 디자인을 통해 가벼운 편안함과 맞춤형 핏을 제공합니다.",
     image: "/products/gg-pdp/smith-bucket-hat-navy/1.jpg",
     images: ["/products/gg-pdp/smith-bucket-hat-navy/1.jpg", "/products/gg-pdp/smith-bucket-hat-navy/2.jpg", "/products/gg-pdp/smith-bucket-hat-navy/3.jpg", "/products/gg-pdp/smith-bucket-hat-navy/4.jpg", "/products/gg-pdp/smith-bucket-hat-navy/5.jpg", "/products/gg-pdp/smith-bucket-hat-white/1.jpg", "/products/gg-pdp/smith-bucket-hat-white/2.jpg", "/products/gg-pdp/smith-bucket-hat-white/3.jpg", "/products/gg-pdp/smith-bucket-hat-white/4.jpg", "/products/gg-pdp/smith-bucket-hat-white/5.jpg"],
@@ -62166,7 +62166,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 39.0,
     sku: "F01000289405001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/smith-bucket-hat-navy",
-    registeredAt: "2026-07-28T22:37:54.000Z",
+    registeredAt: "2026-07-29T09:20:58.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62224,9 +62224,9 @@ export const ggCatalogProducts: Product[] = [
     price: 100000,
     compareAtPrice: 144000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "테이트 슬링백은 넓게 열리는 큰 메인 수납공간과 지퍼가 달린 내부 포켓을 갖추고 있습니다. 이동 중에 가장 중요한 것들을 가지고 다녀야 할 때 이것은 독창적이고 편리한 솔루션입니다. 내구성이 뛰어나고 방풍 및 발수 원단으로 제작된 이 슬링백은 도시 및 야외 모험에 이상적입니다. 어깨에 쉽게 메고 다닐 수 있는 실용적이고 스마트하며 기능적인 작은 가방입니다.",
     image: "/products/gg-pdp/tate-sling-bag-golf-green/1.jpg",
     images: ["/products/gg-pdp/tate-sling-bag-golf-green/1.jpg", "/products/gg-pdp/tate-sling-bag-golf-green/2.jpg", "/products/gg-pdp/tate-sling-bag-golf-green/3.jpg", "/products/gg-pdp/tate-sling-bag-golf-green/4.jpg"],
@@ -62235,7 +62235,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 29.4,
     sku: "G12989411U0",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/tate-sling-bag-golf-green",
-    registeredAt: "2026-07-28T22:37:55.000Z",
+    registeredAt: "2026-07-29T09:20:59.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62280,9 +62280,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 77000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "골프 코스의 필수 동반자인 Theo는 홀 사이의 클럽과 공을 닦는 데 적합한 3단 골프 타월입니다. 수건에는 갈빈 그린 로고가 자수되어 있으며 후크가 내장되어 있어 가방에 빠르고 쉽게 부착할 수 있습니다.",
     image: "/products/gg-pdp/theo-golf-towel-black/1.jpg",
     images: ["/products/gg-pdp/theo-golf-towel-black/1.jpg", "/products/gg-pdp/theo-golf-towel-black/2.jpg", "/products/gg-pdp/theo-golf-towel-black/3.jpg"],
@@ -62290,7 +62290,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 19.0,
     sku: "F01000179403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/theo-golf-towel-black",
-    registeredAt: "2026-07-28T22:37:56.000Z",
+    registeredAt: "2026-07-29T09:21:00.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62328,9 +62328,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 144000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "무게가 750g인 Tromb는 비나 태양 아래에서 골프를 칠 때 보호가 필요한 모든 사람에게 이상적인 골프 우산입니다. Tromb는 매우 강한 프레임으로 제작되어 어려운 기상 조건에서 사용자를 보호하도록 설계된 60\" 골프 우산입니다. 상단이 이중층으로 되어 있어 압력이 방출되고 공기가 통과할 수 있어 바람이 부는 날에도 우산이 더욱 안정적으로 유지됩니다. UPF 50+를 갖춘 이 골프 우산은 자외선 차단 기능도 합니다.",
     image: "/products/gg-pdp/tromb-stormproof-umbrella-black-silver/1.jpg",
     images: ["/products/gg-pdp/tromb-stormproof-umbrella-black-silver/1.jpg", "/products/gg-pdp/tromb-stormproof-umbrella-black-silver/2.jpg", "/products/gg-pdp/tromb-stormproof-umbrella-red-silver/1.jpg", "/products/gg-pdp/tromb-stormproof-umbrella-red-silver/2.jpg"],
@@ -62338,7 +62338,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 49.0,
     sku: "F01000099729001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/tromb-stormproof-umbrella-black-silver",
-    registeredAt: "2026-07-28T22:37:57.000Z",
+    registeredAt: "2026-07-29T09:21:01.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62397,9 +62397,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 77000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "보온 효과 1위, 가벼운 보온성을 제공하는 가벼운 넥 워머입니다. 내구성이 뛰어나고 통기성이 뛰어나며 관리가 쉬운 원단으로 제작된 이 실용적인 액세서리는 골프 코스는 물론 기타 야외 활동 중에도 즐겨 사용됩니다. 트로이(Troy)는 목이나 머리 주위에 착용하도록 디자인된 경량 넥워머입니다. 디지털 프린트가 특징이며 부드럽고 신축성 있는 소재로 제작된 Troy는 추위에 노출될 위험이 있을 때 가지고 다닐 수 있는 실용적인 액세서리입니다.",
     image: "/products/gg-pdp/troy-insulating-neck-warmer-black/1.jpg",
     images: ["/products/gg-pdp/troy-insulating-neck-warmer-black/1.jpg", "/products/gg-pdp/troy-insulating-neck-warmer-black/2.jpg", "/products/gg-pdp/troy-insulating-neck-warmer-black/3.jpg", "/products/gg-pdp/troy-insulating-neck-warmer-black/4.jpg"],
@@ -62407,7 +62407,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 19.0,
     sku: "F01000089403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/troy-insulating-neck-warmer-black",
-    registeredAt: "2026-07-28T22:37:58.000Z",
+    registeredAt: "2026-07-29T09:21:02.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62451,9 +62451,9 @@ export const ggCatalogProducts: Product[] = [
     brand: "Galvin Green",
     price: 113000,
     category: "sports",
-    subcategory: "gg-men",
-    ggCollections: ["gg-accessories", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-men", "gg-women"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories"],
     descriptionKo: "Ward 벨트에는 플립 잠금 버클이 있어 벨트를 크기에 맞게 쉽게 조정할 수 있습니다. Ward 벨트에는 플립 잠금 버클이 있어 벨트를 크기에 맞게 쉽게 조정할 수 있습니다.",
     image: "/products/gg-pdp/ward-elastic-golf-belt-black/1.jpg",
     images: ["/products/gg-pdp/ward-elastic-golf-belt-black/1.jpg", "/products/gg-pdp/ward-elastic-golf-belt-black/2.jpg", "/products/gg-pdp/ward-elastic-golf-belt-black/3.jpg", "/products/gg-pdp/ward-elastic-golf-belt-navy/1.jpg", "/products/gg-pdp/ward-elastic-golf-belt-navy/2.jpg", "/products/gg-pdp/ward-elastic-golf-belt-navy/3.jpg", "/products/gg-pdp/ward-elastic-golf-belt-sharkskin/1.jpg", "/products/gg-pdp/ward-elastic-golf-belt-sharkskin/2.jpg", "/products/gg-pdp/ward-elastic-golf-belt-sharkskin/3.jpg", "/products/gg-pdp/ward-elastic-golf-belt-white/1.jpg", "/products/gg-pdp/ward-elastic-golf-belt-white/2.jpg", "/products/gg-pdp/ward-elastic-golf-belt-white/3.jpg"],
@@ -62461,7 +62461,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 35.0,
     sku: "F01000309403001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/ward-elastic-golf-belt-black",
-    registeredAt: "2026-07-28T22:37:59.000Z",
+    registeredAt: "2026-07-29T09:21:03.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62551,9 +62551,9 @@ export const ggCatalogProducts: Product[] = [
     price: 95000,
     compareAtPrice: 135000,
     category: "sports",
-    subcategory: "gg-sale",
-    ggCollections: ["gg-sale"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-sale"],
+    subcategory: "gg-accessories",
+    ggCollections: ["gg-accessories", "gg-sale"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-sale"],
     descriptionKo: "Will 브레이드 신축성 있는 벨트는 갈빈 그린의 프리미엄 골프 액세서리 제품군의 일부로 남성 및 여성 의류 컬렉션을 보완하도록 디자인되었습니다. Will은 웨빙 스트랩과 금속 버클이 달린 신축성 있는 브레이드 벨트입니다. 세 가지 색상으로 제공되는 Will은 골프 바지나 반바지와 완벽한 조화를 이룹니다.",
     image: "/products/gg-pdp/will-elastic-belt-navy-ensign-blue-niagra-blue/1.jpg",
     images: ["/products/gg-pdp/will-elastic-belt-navy-ensign-blue-niagra-blue/1.jpg", "/products/gg-pdp/will-elastic-belt-navy-ensign-blue-niagra-blue/2.jpg", "/products/gg-pdp/will-elastic-belt-navy-ensign-blue-niagra-blue/3.jpg", "/products/gg-pdp/will-elastic-belt-navy-ensign-blue-niagra-blue/4.jpg"],
@@ -62562,7 +62562,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 27.0,
     sku: "F01000069670001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/will-elastic-belt-navy-ensign-blue-niagra-blue",
-    registeredAt: "2026-07-28T22:38:00.000Z",
+    registeredAt: "2026-07-29T09:21:04.000Z",
     editTier: "signature",
     storySections: [
       {
@@ -62656,8 +62656,8 @@ export const ggCatalogProducts: Product[] = [
     price: 135000,
     category: "sports",
     subcategory: "gg-bestsellers-men",
-    ggCollections: ["gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"] as Product["ggCollections"],
-    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men", "gg-men", "gg-women"],
+    ggCollections: ["gg-accessories", "gg-bestsellers-men"] as Product["ggCollections"],
+    tags: ["galvin-green", "gg-accessories", "gg-bestsellers-men"],
     descriptionKo: "Wilton 골프 벨트는 다재다능함을 염두에 두고 디자인되었으며 견고한 우븐 밴드와 매끄러운 금속 버클이 특징입니다. 혁신적인 \"트랙 핏\" 미세 조정 시스템은 정확하고 편안한 핏을 보장합니다. 리버서블 디자인으로 두 가지 색상을 쉽게 전환할 수 있는 벨트입니다.",
     image: "/products/gg-pdp/wilton-golf-belt-black-sharkskin/1.jpg",
     images: ["/products/gg-pdp/wilton-golf-belt-black-sharkskin/1.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/2.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/3.jpg", "/products/gg-pdp/wilton-golf-belt-black-sharkskin/4.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/1.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/2.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/3.jpg", "/products/gg-pdp/wilton-golf-belt-navy-ensign-blue/4.jpg"],
@@ -62666,7 +62666,7 @@ export const ggCatalogProducts: Product[] = [
     gbpPrice: 45.0,
     sku: "F01000199350001",
     sourceUrl: "https://www.galvingreen.com/en-gb/products/wilton-golf-belt-black-sharkskin",
-    registeredAt: "2026-07-28T22:38:01.000Z",
+    registeredAt: "2026-07-29T09:21:05.000Z",
     editTier: "bestseller",
     storySections: [
       {

@@ -851,7 +851,49 @@ def member_collections(p: dict) -> list[str]:
     return [str(coll)] if coll else ["gg-new-men"]
 
 
+ACCESSORY_TITLE_MARKERS = (
+    "belt",
+    "cap",
+    "hat",
+    "glove",
+    "neck warmer",
+    "wrist warmer",
+    "umbrella",
+    "towel",
+    "bag",
+    "visor",
+)
+
+ACCESSORY_TAG_MARKERS = {
+    "belts",
+    "caps/hats",
+    "gloves",
+    "unisex",
+}
+
+
+def is_accessory_member(p: dict, cols: list[str]) -> bool:
+    if "gg-accessories" in cols:
+        return True
+    title = str(p.get("title") or "").lower()
+    if any(marker in title for marker in ACCESSORY_TITLE_MARKERS):
+        return True
+    lower_tags = {str(t).lower() for t in (p.get("tags") or [])}
+    return bool(lower_tags & ACCESSORY_TAG_MARKERS)
+
+
+def normalized_member_collections(p: dict) -> list[str]:
+    cols = member_collections(p)
+    if is_accessory_member(p, cols):
+        cols = [c for c in cols if c not in ("gg-men", "gg-women")]
+        if "gg-accessories" not in cols:
+            cols.append("gg-accessories")
+    return cols
+
+
 def gender_of_collections(cols: list[str], tags: list[str] | None = None) -> str:
+    if "gg-accessories" in cols and "gg-men" not in cols and "gg-women" not in cols:
+        return "accessories"
     if any(
         c in ("gg-new-women", "gg-bestsellers-women", "gg-women") or c.endswith("-women")
         for c in cols
@@ -902,7 +944,7 @@ def build() -> dict:
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for p in products:
         style = (p.get("styleName") or p.get("title", "").split(" - ")[0]).strip()
-        cols = member_collections(p)
+        cols = normalized_member_collections(p)
         gender = gender_of_collections(cols, p.get("tags") or [])
         groups[(style, gender)].append(p)
 
@@ -916,7 +958,7 @@ def build() -> dict:
             m["colorName"] = color_from_handle_group(handles, m["handle"], m.get("tags") or [])
 
         all_cols = sorted(
-            {c for m in members for c in member_collections(m)},
+            {c for m in members for c in normalized_member_collections(m)},
             key=lambda c: (0 if c.startswith("gg-new-") else 1, c),
         )
         collection = primary_collection(all_cols)
