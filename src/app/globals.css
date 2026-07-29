@@ -2173,6 +2173,45 @@ body:has(.nav-drawer-toggle:checked) {
   color: #f7f8f5;
 }
 
+.shop-browse__morebar {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.shop-browse__more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.5rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.shop-browse__more-btn:hover {
+  border-color: var(--ink);
+}
+
+.shop-browse__more-spacer {
+  min-width: 7.5rem;
+  min-height: 1px;
+}
+
+.shop-browse__count {
+  margin: 0 0 0 auto;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+
 .shop-browse__aside-hint {
   margin: 0.85rem 0 0;
   font-size: 0.78rem;

@@ -40,8 +40,11 @@ type Props = {
     sub?: string;
     q?: string;
     sort?: string;
+    view?: string;
   }>;
 };
+
+const INITIAL_VISIBLE_PRODUCTS = 48;
 
 function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>) {
   const active = sub === node.id || pathIds.has(node.id);
@@ -115,6 +118,16 @@ export default async function ShopPage({ searchParams }: Props) {
     sub,
     q: params.q,
   };
+  const isViewAll = params.view === "all";
+  const canShowMore = sort !== "orders" && !isViewAll && list.length > INITIAL_VISIBLE_PRODUCTS;
+  const visibleList =
+    sort === "orders" || isViewAll ? list : list.slice(0, INITIAL_VISIBLE_PRODUCTS);
+  const showAllHref = (() => {
+    const base = buildShopHref({ ...sortBase, sort });
+    const url = new URL(base, "https://briq.local");
+    url.searchParams.set("view", "all");
+    return `${url.pathname}?${url.searchParams.toString()}`;
+  })();
 
   return (
     <>
@@ -216,11 +229,23 @@ export default async function ShopPage({ searchParams }: Props) {
               <CollectionOrdersGrid products={list} />
             ) : (
               <div className="product-grid">
-                {list.map((p) => (
+                {visibleList.map((p) => (
                   <ProductCard key={p.id} product={p} />
                 ))}
               </div>
             )}
+            {sort !== "orders" ? (
+              <div className="shop-browse__morebar">
+                {canShowMore ? (
+                  <Link href={showAllHref} scroll={false} className="shop-browse__more-btn">
+                    더보기
+                  </Link>
+                ) : (
+                  <span aria-hidden className="shop-browse__more-spacer" />
+                )}
+                <p className="shop-browse__count">총 {list.length.toLocaleString()}개 상품</p>
+              </div>
+            ) : null}
           </div>
 
           <aside className="shop-browse__aside" aria-label="상품 정렬 필터">
