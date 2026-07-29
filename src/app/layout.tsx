@@ -31,6 +31,20 @@ export const metadata: Metadata = {
   description:
     "Briq (브릭) — British + Boutique / Unique. 스포츠, 패션의류, 가방, 악세서리를 큐레이션한 셀렉트 숍.",
   applicationName: "Briq",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Briq",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {
