@@ -5,10 +5,8 @@ import {
   Collection100,
 } from "@/components/Collection100";
 import { LookBannerBlock } from "@/components/LookBanner";
-import { LookbookCategoryLinks } from "@/components/LookbookCategoryLinks";
 import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
-import { navCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 import { getHomepageRailProducts } from "@/lib/product-sort";
 
@@ -41,7 +39,6 @@ export default async function HomePage() {
 
       <div className="lookbook" aria-label="Briq lookbook">
         {homeLookBanners.map((banner, i) => {
-          const category = navCategories.find((c) => c.id === banner.categoryId);
           const products = banner.categoryId
             ? getHomepageRailProducts(
                 getProductsByCategory(banner.categoryId),
@@ -62,9 +59,6 @@ export default async function HomePage() {
                       </div>
                       <Link href={banner.href}>전체 보기</Link>
                     </div>
-                    {category ? (
-                      <LookbookCategoryLinks category={category} />
-                    ) : null}
                     <div className="product-grid product-grid--lookbook">
                       {products.map((p) => (
                         <ProductCard key={p.id} product={p} />

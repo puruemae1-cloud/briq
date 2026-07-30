@@ -957,7 +957,7 @@ a.chip[href*="sub=gg-sale"].is-active {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  width: min(26vw, 6.75rem);
+  width: min(26vw, 8.1rem); /* +20% vs 6.75rem */
   flex-shrink: 0;
   border-bottom: 1px solid rgba(11, 18, 16, 0.28);
   padding: 0.15rem 0.05rem 0.2rem;
@@ -1021,7 +1021,7 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 900px) {
   .header-search {
-    width: 8.7rem; /* 60% of previous 14.5rem */
+    width: 10.44rem; /* +20% vs 8.7rem */
   }
 
   .header-search__input {
@@ -1031,7 +1031,7 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 1100px) {
   .header-search {
-    width: 9.9rem; /* 60% of previous 16.5rem */
+    width: 11.88rem; /* +20% vs 9.9rem */
   }
 }
 
@@ -1381,15 +1381,19 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .lookbook__rail-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lookbook__rail--bleed .section__head {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 
   .lookbook__rail .product-grid--lookbook {
-    gap: 0.55rem;
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-    width: calc(100% + 1.5rem);
+    gap: 0.35rem;
+    margin: 0;
+    width: 100%;
     padding: 0;
   }
 
@@ -1427,146 +1431,58 @@ body:has(.nav-drawer-toggle:checked) {
   box-sizing: border-box;
 }
 
-/* Full-bleed category rails — edge-to-edge like Burberry PLPs */
+/* Full-bleed category rails — products flush to viewport edges */
 .lookbook__rail--bleed {
-  max-width: none;
+  max-width: none !important;
   width: 100%;
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 1.75rem 0 1.25rem !important;
+  box-sizing: border-box;
 }
 
 .lookbook__rail-inner {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0 1rem 0.25rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
+.lookbook__rail--bleed .section__head {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 900px) {
-  .lookbook__rail-inner {
-    padding: 0 0 0.5rem;
-  }
-
   .lookbook__rail--bleed .section__head {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lookbook__rail--bleed .lookbook-mega {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
 .product-grid--lookbook {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65rem;
+  gap: 0.35rem;
   width: 100%;
   max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 760px) {
   .product-grid--lookbook {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.75rem;
+    gap: 0.4rem;
   }
 }
 
 @media (min-width: 1100px) {
   .product-grid--lookbook {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.85rem;
+    gap: 0.45rem;
   }
-}
-
-/* Burberry-style multi-column category links under lookbook banners */
-.lookbook-mega {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.15rem 1.25rem;
-  margin: 0 0 1.35rem;
-  padding: 0.15rem 0 0.35rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 760px) {
-  .lookbook-mega {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1.35rem 1.75rem;
-  }
-}
-
-.lookbook-mega__col {
-  min-width: 0;
-}
-
-.lookbook-mega__heading {
-  display: inline-block;
-  margin-bottom: 0.55rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.lookbook-mega__heading:hover {
-  opacity: 0.65;
-}
-
-.lookbook-mega__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.28rem;
-}
-
-.lookbook-mega__item {
-  margin: 0;
-}
-
-.lookbook-mega__link {
-  display: inline-block;
-  font-size: 0.88rem;
-  font-weight: 650;
-  color: rgba(11, 18, 16, 0.88);
-  text-decoration: none;
-  line-height: 1.35;
-}
-
-.lookbook-mega__link:hover {
-  color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-
-.lookbook-mega__sublist {
-  list-style: none;
-  margin: 0.25rem 0 0.45rem;
-  padding: 0 0 0 0.55rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.18rem;
-}
-
-.lookbook-mega__sublink {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: rgba(11, 18, 16, 0.55);
-  text-decoration: none;
-  line-height: 1.35;
-}
-
-.lookbook-mega__sublink:hover {
-  color: var(--ink);
 }
 
 .lookbook__rail .product-grid {
