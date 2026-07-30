@@ -243,7 +243,6 @@ def main() -> None:
         for c in colourways:
             all_cols.update(c.get("collections") or [])
         cols_sorted = sorted(all_cols)
-        top_cat, primary_sub = primary_category_for_collections(cols_sorted)
 
         primary = colourways[0]
         name_en = clean_name(primary.get("title") or "Burberry")
@@ -253,6 +252,9 @@ def main() -> None:
             if len(x) > len(name_en):
                 name_en = x
         name_ko = t(name_en) or name_en
+        top_cat, primary_sub = primary_category_for_collections(
+            cols_sorted, name_en
+        )
 
         style_slug = slugify(name_en) or (primary.get("id") or "item")
         pid = f"bb-{style_slug}"

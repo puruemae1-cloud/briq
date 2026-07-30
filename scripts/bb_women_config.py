@@ -313,17 +313,119 @@ def collection_by_id() -> dict[str, tuple[str, str, str, str]]:
     return {cid: (label, path, top, parent) for cid, label, path, top, parent in COLLECTIONS}
 
 
-def primary_category_for_collections(cols: list[str]) -> tuple[str, str]:
-    """Return (CategoryId, primary SubcategoryId) for a colourway."""
+def primary_category_for_collections(
+    cols: list[str],
+    title: str | None = None,
+) -> tuple[str, str]:
+    """Return (CategoryId, primary SubcategoryId) for a colourway.
+
+    Burberry Gifts PLPs often cross-list apparel. Do not let gifts/accessories
+    win over real clothes/coats — otherwise dresses appear under Briq 악세서리.
+    """
     by = collection_by_id()
-    # Prefer most specific leaf: bags/shoes/accessories before broad luxury view-alls.
-    priority_tops = ("bags", "shoes", "accessories", "luxury")
+    colset = set(cols)
+
+    bag_ids = {
+        cid for cid, (_l, _p, top, _parent) in by.items() if top == "bags"
+    }
+    shoe_ids = {
+        cid for cid, (_l, _p, top, _parent) in by.items() if top == "shoes"
+    }
+    apparel_ids = {
+        cid
+        for cid, (_l, path, top, parent) in by.items()
+        if top == "luxury"
+        and (
+            parent
+            in {
+                "bb-women-clothes",
+                "bb-women-coats-jackets",
+                "bb-women-latest",
+                "bb-women",
+            }
+            or "/womens-clothing" in path
+            or "/womens-coats" in path
+            or "/womens-jackets" in path
+            or "trench" in path
+            or "quilted" in path
+            or "puffer" in path
+            or "poncho" in path
+        )
+    }
+    true_accessory_ids = {
+        cid
+        for cid, (_l, _p, top, parent) in by.items()
+        if top == "accessories"
+        and parent in {"bb-women-accessories", "bb-women-wallets"}
+    }
+    gift_ids = {
+        cid
+        for cid, (_l, _p, top, parent) in by.items()
+        if top == "accessories" and parent == "bb-women-gifts"
+    }
+
+    def best_leaf(candidates: set[str]) -> str | None:
+        ranked: list[tuple[int, str]] = []
+        for c in candidates & colset:
+            if c not in by:
+                continue
+            _label, path, _top, _parent = by[c]
+            ranked.append((-path.count("/"), c))
+        if not ranked:
+            return None
+        ranked.sort()
+        return ranked[0][1]
+
+    if hit := best_leaf(bag_ids):
+        return "bags", hit
+    if hit := best_leaf(shoe_ids):
+        return "shoes", hit
+    if hit := best_leaf(apparel_ids):
+        return "luxury", hit
+    if hit := best_leaf(true_accessory_ids):
+        return "accessories", hit
+
+    # Gift-only apparel (tees/dresses on Gifts PLP, not Accessories).
+    title_l = (title or "").lower()
+    apparel_name = any(
+        k in title_l
+        for k in (
+            "dress",
+            "shirt",
+            "polo",
+            "trouser",
+            "pant",
+            "skirt",
+            "jacket",
+            "coat",
+            "cape",
+            "hoodie",
+            "sweat",
+            "knit",
+            "cardigan",
+            "blazer",
+            "short",
+            "jean",
+            "denim",
+            "top",
+            "tee",
+            "t-shirt",
+            "gown",
+            "jumper",
+        )
+    )
+    if apparel_name and (colset & gift_ids):
+        return "luxury", "bb-women-clothes"
+
+    if hit := best_leaf(gift_ids):
+        return "accessories", hit
+
+    priority_tops = ("bags", "shoes", "luxury", "accessories")
     ranked: list[tuple[int, str, str]] = []
     for c in cols:
         if c not in by:
             continue
-        label, path, top, parent = by[c]
-        # Prefer leaf paths (longer) over view-all parents
+        _label, path, top, _parent = by[c]
         specificity = path.count("/")
         top_rank = priority_tops.index(top) if top in priority_tops else 99
         ranked.append((top_rank, -specificity, c))
