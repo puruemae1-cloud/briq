@@ -209,15 +209,47 @@ def style_key(product: dict) -> str:
     return "name:" + slugify(clean_name(product.get("title") or product.get("id") or ""))
 
 
-# Exact EN titles removed from Briq (manual merchandising).
+# Exact EN titles / colourway ids removed from Briq (manual merchandising).
 EXCLUDED_TITLES = {
     "Wide Check Wool Silk Scarf",
 }
+EXCLUDED_COLOURWAY_IDS = {
+    "80787791",
+    "80787821",
+    "81101611",
+    "81101621",
+    "81106531",
+    "81124591",
+    "81124611",
+    "81124621",
+    "81124631",
+    "81134271",
+    "81225811",
+    "81225831",
+    "81232511",
+}
+EXCLUDED_STYLE_ID_PREFIXES = (
+    "bb-wide-check-wool-silk-scarf",
+)
 
 
 def is_excluded_product(product: dict) -> bool:
     title = clean_name(product.get("title") or "")
-    return title in EXCLUDED_TITLES
+    pid = str(product.get("id") or "")
+    if title in EXCLUDED_TITLES:
+        return True
+    if pid in EXCLUDED_COLOURWAY_IDS:
+        return True
+    return False
+
+
+def is_excluded_style(product: dict) -> bool:
+    pid = str(product.get("id") or "")
+    name = clean_name(product.get("name") or "")
+    name_ko = clean_name(product.get("nameKo") or "")
+    if name in EXCLUDED_TITLES or name_ko == "Wide 체크 울 실크 스카프":
+        return True
+    return any(pid == p or pid.startswith(p + "-") for p in EXCLUDED_STYLE_ID_PREFIXES)
 
 
 def ts_str(obj) -> str:
@@ -352,6 +384,12 @@ def main() -> None:
             if len(x) > len(name_en):
                 name_en = x
         name_ko = t(name_en) or name_en
+        if (
+            name_en in EXCLUDED_TITLES
+            or name_ko == "Wide 체크 울 실크 스카프"
+            or any(str(c.get("id")) in EXCLUDED_COLOURWAY_IDS for c in colourways)
+        ):
+            continue
         top_cat, primary_sub = primary_category_for_collections(
             cols_sorted, name_en
         )

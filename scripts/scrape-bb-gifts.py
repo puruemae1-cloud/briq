@@ -15,6 +15,24 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from bb_gifts_config import GIFTS_COLLECTIONS  # noqa: E402
 from bb_women_config import BASE  # noqa: E402
 
+# Keep in sync with build-bb-catalog.EXCLUDED_TITLES
+EXCLUDED_TITLES = {"Wide Check Wool Silk Scarf"}
+EXCLUDED_COLOURWAY_IDS = {
+    "80787791",
+    "80787821",
+    "81101611",
+    "81101621",
+    "81106531",
+    "81124591",
+    "81124611",
+    "81124621",
+    "81124631",
+    "81134271",
+    "81225811",
+    "81225831",
+    "81232511",
+}
+
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/bb/bb-pdp-cache.json"
 IMG_ROOT = ROOT / "public/products/bb-pdp"
@@ -84,6 +102,9 @@ def main() -> None:
         }
         for it in items:
             pid = it["id"]
+            title = (it.get("title") or "").replace("\u200b", "").strip()
+            if pid in EXCLUDED_COLOURWAY_IDS or title in EXCLUDED_TITLES:
+                continue
             membership.setdefault(pid, set()).add(coll_id)
             prev = cards.get(pid) or {}
             if not prev.get("gbpPrice") and it.get("gbpPrice"):
@@ -140,7 +161,17 @@ def main() -> None:
 
     products = []
     for pid, cols in sorted(membership.items()):
+        if pid in EXCLUDED_COLOURWAY_IDS:
+            continue
         card = cards.get(pid) or {}
+        title = (
+            (cache.get(pid) or {}).get("name")
+            or card.get("title")
+            or (old_products.get(pid) or {}).get("title")
+            or ""
+        )
+        if str(title).replace("\u200b", "").strip() in EXCLUDED_TITLES:
+            continue
         pdp = cache.get(pid) or old_products.get(pid) or {}
         prev = old_products.get(pid) or {}
         local_imgs = pdp.get("localImages") or prev.get("images") or []
