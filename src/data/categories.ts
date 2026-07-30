@@ -381,8 +381,6 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-      { id: "womens", labelKo: "Womens", href: "/shop?category=luxury&sub=womens" },
-      { id: "mens", labelKo: "Mens", href: "/shop?category=luxury&sub=mens" },
     ],
   },
   {
