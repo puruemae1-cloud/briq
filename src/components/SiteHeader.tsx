@@ -40,24 +40,23 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
 
       <header className="site-header">
         <div className="site-header__inner">
-          <div className="site-header__brand">
-            <HomeLogoLink className="brand-mark" aria-label="Briq home">
-              <span className="brand-mark__word">Briq</span>
-              <span className="brand-mark__sub">British Boutique</span>
-            </HomeLogoLink>
+          <div className="site-header__left">
             <label
               htmlFor="nav-drawer"
               className="icon-btn nav-drawer-open"
               aria-label="카테고리 메뉴 열기"
             >
-              <Menu size={22} />
+              <Menu className="nav-drawer-open__icon" size={22} aria-hidden />
             </label>
+            <HomeLogoLink className="brand-mark" aria-label="Briq home">
+              <span className="brand-mark__word">Briq</span>
+              <span className="brand-mark__sub">British Boutique</span>
+            </HomeLogoLink>
           </div>
 
           <nav className="site-nav" aria-label="Primary">
             <Link href="/shop" className="site-nav__link">
               Shop
-              <span className="site-nav__sublabel">전체상품</span>
             </Link>
 
             {navCategories.map((c) =>
@@ -105,7 +104,7 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
           </div>
           <nav className="mobile-drawer__nav">
             <a href="/shop" className="mobile-drawer__top-link">
-              Shop (전체상품)
+              Shop
             </a>
             {navCategories.map((c) =>
               c.children?.length ? (

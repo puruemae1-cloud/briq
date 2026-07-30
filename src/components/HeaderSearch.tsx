@@ -31,7 +31,14 @@ export function HeaderSearch() {
       <label className="sr-only" htmlFor={inputId}>
         상품명, 브랜드, 키워드 검색
       </label>
-      <Search className="header-search__icon" size={18} aria-hidden />
+      <button
+        type="button"
+        className="header-search__trigger"
+        aria-label="검색 열기"
+        onClick={() => inputRef.current?.focus()}
+      >
+        <Search className="header-search__icon" size={18} aria-hidden />
+      </button>
       <input
         ref={inputRef}
         id={inputId}
