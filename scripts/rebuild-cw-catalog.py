@@ -743,6 +743,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "descriptionKo": desc,
             "image": images[0],
             "images": images,
+            "hoverImage": images[1] if len(images) > 1 else None,
             "accent": accents[i % len(accents)],
             "badge": badge,
             "sku": primary_sku,
@@ -806,6 +807,8 @@ for p in products_out:
     lines.append(f'    image: {json.dumps(p["image"])},')
     if p.get("images"):
         lines.append(f'    images: {json.dumps(p["images"])},')
+    if p.get("hoverImage"):
+        lines.append(f'    hoverImage: {json.dumps(p["hoverImage"])},')
     lines.append(f'    accent: {json.dumps(p["accent"])},')
     if p.get("badge"):
         lines.append(f'    badge: {json.dumps(p["badge"])},')

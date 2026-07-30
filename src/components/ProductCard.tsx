@@ -6,6 +6,7 @@ import {
   productSalePercent,
   type Product,
 } from "@/data/products";
+import { resolveCardHoverImage } from "@/lib/product-image";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(product.price);
@@ -20,6 +21,7 @@ export function ProductCard({ product }: { product: Product }) {
   const soldOut = !isProductInStock(product);
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && product.compareAtPrice);
+  const hoverSrc = soldOut ? undefined : resolveCardHoverImage(product);
   const isClearance =
     product.subcategory === "cw-clearance" ||
     product.subcategory === "gg-sale" ||
@@ -35,10 +37,13 @@ export function ProductCard({ product }: { product: Product }) {
           ? `/product/${product.id}?color=${encodeURIComponent(product.shopColorKey)}`
           : `/product/${product.id}`
       }
-      className={`product-card group${soldOut ? " product-card--sold-out" : ""}`}
+      className={`product-card group${soldOut ? " product-card--sold-out" : ""}${
+        hoverSrc ? " product-card--hover-swap" : ""
+      }`}
     >
       <ProductImage
         src={product.image}
+        hoverSrc={hoverSrc}
         alt={product.nameKo}
         tone="card"
         imgClassName="product-card__img"

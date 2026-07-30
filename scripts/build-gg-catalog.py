@@ -1097,6 +1097,7 @@ def build() -> dict:
                         "compareAtPrice": compare_at_v,
                         "image": imgs[0] if imgs else (primary_image or "/products/run-jacket.svg"),
                         "images": imgs or None,
+                        "hoverImage": imgs[1] if len(imgs) > 1 else None,
                         "sourceUrl": source,
                         "inStock": available,
                         "colorKey": color_key,
@@ -1191,6 +1192,7 @@ def build() -> dict:
             "descriptionKo": desc_ko[:1200] if desc_ko else None,
             "image": primary_image,
             "images": gallery_all[:12] or None,
+            "hoverImage": gallery_all[1] if len(gallery_all) > 1 else None,
             "accent": accent,
             "badge": badge,
             "gbpPrice": gbp_price,
@@ -1237,6 +1239,8 @@ def build() -> dict:
         if p.get("images"):
             imgs_inner = ", ".join(ts_str(x) for x in p["images"])
             lines.append(f"    images: [{imgs_inner}],")
+        if p.get("hoverImage"):
+            lines.append(f"    hoverImage: {ts_str(p['hoverImage'])},")
         lines.append(f"    accent: {ts_str(p['accent'])},")
         if p.get("badge"):
             lines.append(f"    badge: {ts_str(p['badge'])},")
@@ -1290,6 +1294,8 @@ def build() -> dict:
             if v.get("images"):
                 inner = ", ".join(ts_str(x) for x in v["images"])
                 lines.append(f"        images: [{inner}],")
+            if v.get("hoverImage"):
+                lines.append(f"        hoverImage: {ts_str(v['hoverImage'])},")
             lines.append(f"        sourceUrl: {ts_str(v['sourceUrl'])},")
             lines.append(f"        inStock: {'true' if v['inStock'] else 'false'},")
             lines.append(f"        colorKey: {ts_str(v['colorKey'])},")
