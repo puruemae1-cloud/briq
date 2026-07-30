@@ -58,6 +58,14 @@ export type ProductTechSpec = {
   valueKo: string;
 };
 
+export type ProductSizeChart = {
+  id: string;
+  titleKo: string;
+  noteKo: string;
+  headers: string[];
+  rows: string[][];
+};
+
 export type Product = {
   id: string;
   name: string;
@@ -121,6 +129,8 @@ export type Product = {
   /** Tech specs & features (Christopher Ward PDP). */
   techSpecs?: ProductTechSpec[];
   featuresKo?: string[];
+  /** Adult Burberry shoe size conversion chart shown next to size picker. */
+  sizeChart?: ProductSizeChart;
   /**
    * Catalogue registration time (ISO). Used by 최신등록순.
    * Always set this when adding a product — newer timestamps rank first.

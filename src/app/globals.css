@@ -4176,6 +4176,132 @@ body:has(.pdp-dock) .back-to-top {
   opacity: 0.7;
 }
 
+.size-chart {
+  margin-top: 0.75rem;
+}
+
+.size-chart__trigger {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.size-chart__trigger:hover {
+  opacity: 0.72;
+}
+
+.size-chart-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(18, 18, 16, 0.48);
+  backdrop-filter: blur(4px);
+}
+
+.size-chart-modal__panel {
+  width: min(560px, 100%);
+  max-height: min(86vh, 720px);
+  overflow: auto;
+  padding: 1.35rem 1.25rem 1.2rem;
+  background: #f7f5f1;
+  border: 1px solid rgba(30, 28, 24, 0.12);
+  box-shadow: 0 24px 60px rgba(20, 18, 14, 0.22);
+}
+
+.size-chart-modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.size-chart-modal__eyebrow {
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(30, 28, 24, 0.55);
+}
+
+.size-chart-modal__head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.size-chart-modal__close {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: rgba(30, 28, 24, 0.55);
+  cursor: pointer;
+}
+
+.size-chart-modal__note {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(30, 28, 24, 0.72);
+}
+
+.size-chart-modal__table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(30, 28, 24, 0.1);
+  background: #fffefb;
+}
+
+.size-chart-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.size-chart-table th,
+.size-chart-table td {
+  padding: 0.62rem 0.55rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(30, 28, 24, 0.08);
+  white-space: nowrap;
+}
+
+.size-chart-table thead th {
+  background: rgba(30, 28, 24, 0.04);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(30, 28, 24, 0.7);
+}
+
+.size-chart-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.size-chart-table tbody td:first-child {
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.size-chart-modal__done {
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .panel {
   background: rgba(255, 255, 255, 0.65);
   border: 1px solid var(--line);

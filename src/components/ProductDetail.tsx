@@ -10,6 +10,7 @@ import { ProductImage } from "@/components/ProductImage";
 import { ProductPurchaseNotice } from "@/components/ProductPurchaseNotice";
 import { ProductStorySections } from "@/components/ProductStorySections";
 import { ProductTechSpecs } from "@/components/ProductTechSpecs";
+import { SizeChartControl } from "@/components/SizeChartControl";
 import type { Product, ProductVariant } from "@/data/products";
 import {
   formatKrw,
@@ -268,6 +269,7 @@ export function ProductDetail({
           sizes={sizeOptions}
           selectedSize={selected?.size}
         />
+        {product.sizeChart ? <SizeChartControl chart={product.sizeChart} /> : null}
       </div>
     ) : null;
 
@@ -404,12 +406,17 @@ export function ProductDetail({
               <p className="pdp-dock__empty">선택 가능한 옵션이 없습니다.</p>
             )}
             {hasSizes && sizeOptions.length > 0 && selectedColor ? (
-              <SizePicker
-                productId={product.id}
-                colorKey={selectedColor.key}
-                sizes={sizeOptions}
-                selectedSize={selected?.size}
-              />
+              <>
+                <SizePicker
+                  productId={product.id}
+                  colorKey={selectedColor.key}
+                  sizes={sizeOptions}
+                  selectedSize={selected?.size}
+                />
+                {product.sizeChart ? (
+                  <SizeChartControl chart={product.sizeChart} />
+                ) : null}
+              </>
             ) : null}
             {!soldOut && product.braceletResize ? (
               <BraceletResizeControls

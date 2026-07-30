@@ -88,7 +88,7 @@ def t(text: str | None) -> str:
 
 
 def gbp_to_krw(gbp: float) -> int:
-    """Burberry Women pricing.
+    """Burberry pricing.
     ≤£110: GBP × 2100 × 1.06 + ₩20,000
     >£110: GBP × 2100 × 1.18 × 1.05 + ₩20,000
     Round to 천원.
@@ -101,6 +101,93 @@ def gbp_to_krw(gbp: float) -> int:
     else:
         base = g * 2100 * 1.18 * 1.05 + 20_000
     return int(round(base / 1_000) * 1_000)
+
+
+KIDS_PRICE_SURCHARGE_KRW = 100_000
+
+# Adult Burberry shoe size charts (mirrors src/data/bb/bb-shoe-size-charts.ts).
+BB_MEN_SHOE_SIZE_CHART = {
+    "id": "bb-men-shoes",
+    "titleKo": "남성 슈즈 사이즈 차트",
+    "noteKo": "아래 사이즈표를 참고해 가장 잘 맞는 사이즈를 찾아보세요. Briq 표기 사이즈는 영국(UK) 기준입니다.",
+    "headers": ["UK", "IT", "USA", "JP", "KR"],
+    "rows": [
+        ["5", "39", "6", "25cm", "250mm"],
+        ["5.5", "39.5", "6.5", "25.5cm", "255mm"],
+        ["6", "40", "7", "26cm", "260mm"],
+        ["6.5", "40.5", "7.5", "26.2cm", "262mm"],
+        ["7", "41", "8", "26.5cm", "265mm"],
+        ["7.5", "41.5", "8.5", "26.7cm", "267mm"],
+        ["8", "42", "9", "27cm", "270mm"],
+        ["8.5", "42.5", "9.5", "27.5cm", "275mm"],
+        ["9", "43", "10", "28cm", "280mm"],
+        ["9.5", "43.5", "10.5", "28.2cm", "282mm"],
+        ["10", "44", "11", "28.5cm", "285mm"],
+        ["10.5", "44.5", "11.5", "28.7cm", "287mm"],
+        ["11", "45", "12", "29cm", "290mm"],
+        ["11.5", "45.5", "12.5", "29.5cm", "295mm"],
+        ["12", "46", "13", "30cm", "300mm"],
+    ],
+}
+
+BB_WOMEN_SHOE_SIZE_CHART = {
+    "id": "bb-women-shoes",
+    "titleKo": "여성 슈즈 사이즈 차트",
+    "noteKo": "아래 치수를 확인해 사이즈를 선택하세요. Briq 표기 사이즈는 영국(UK) 기준입니다.",
+    "headers": ["UK", "IT", "USA", "JP", "KR"],
+    "rows": [
+        ["2", "35", "5", "22.5cm", "225mm"],
+        ["2.5", "35.5", "5.5", "22.8cm", "228mm"],
+        ["3", "36", "6", "23cm", "230mm"],
+        ["3.5", "36.5", "6.5", "23.5cm", "235mm"],
+        ["4", "37", "7", "24cm", "240mm"],
+        ["4.5", "37.5", "7.5", "24.2cm", "242mm"],
+        ["5", "38", "8", "24.5cm", "245mm"],
+        ["5.5", "38.5", "8.5", "24.8cm", "248mm"],
+        ["6", "39", "9", "25cm", "250mm"],
+        ["6.5", "39.5", "9.5", "25.5cm", "255mm"],
+        ["7", "40", "10", "26cm", "260mm"],
+        ["7.5", "40.5", "10.5", "26.2cm", "262mm"],
+        ["8", "41", "11", "26.5cm", "265mm"],
+        ["8.5", "41.5", "11.5", "26.7cm", "267mm"],
+        ["9", "42", "12", "27cm", "270mm"],
+    ],
+}
+
+
+def is_kids_product(cols: list[str]) -> bool:
+    return any(str(c).startswith("bb-kids-") for c in cols)
+
+
+def apply_kids_surcharge(price: int | None, cols: list[str]) -> int | None:
+    if not price:
+        return price
+    if is_kids_product(cols):
+        return int(price) + KIDS_PRICE_SURCHARGE_KRW
+    return price
+
+
+def shoe_size_chart_for_collections(cols: list[str]) -> dict | None:
+    if any(
+        c == "bb-men-shoes"
+        or str(c).startswith("bb-men-sneakers")
+        or str(c).startswith("bb-men-sandals")
+        or str(c).startswith("bb-men-boots")
+        or str(c).startswith("bb-men-loafers")
+        for c in cols
+    ):
+        return BB_MEN_SHOE_SIZE_CHART
+    if any(
+        c == "bb-women-shoes"
+        or str(c).startswith("bb-women-sneakers")
+        or str(c).startswith("bb-women-sandals")
+        or str(c).startswith("bb-women-boots")
+        or str(c).startswith("bb-women-loafers")
+        or str(c).startswith("bb-women-pumps")
+        for c in cols
+    ):
+        return BB_WOMEN_SHOE_SIZE_CHART
+    return None
 
 
 def slugify(text: str) -> str:
@@ -295,6 +382,8 @@ def main() -> None:
             gbp_list = c.get("gbpListPrice")
             price = gbp_to_krw(gbp) if gbp else 0
             compare = gbp_to_krw(float(gbp_list)) if gbp_list and float(gbp_list) > gbp else None
+            price = apply_kids_surcharge(price, color_cols) or 0
+            compare = apply_kids_surcharge(compare, color_cols)
             if price:
                 prices_krw.append(price)
 
@@ -407,6 +496,7 @@ def main() -> None:
                 "storySections": story or None,
                 "featuresKo": features or None,
                 "techSpecs": tech or None,
+                "sizeChart": shoe_size_chart_for_collections(cols_sorted),
                 "variants": flat_variants,
                 "inStock": any(v.get("inStock") for v in flat_variants),
             }
