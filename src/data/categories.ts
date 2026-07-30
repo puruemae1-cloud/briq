@@ -88,6 +88,15 @@ export type SubcategoryId =
   | "bb-women-shoulder-bags"
   | "bb-women-top-handle-bags"
   | "bb-women-backpacks"
+  | "bb-bags-collections"
+  | "bb-bags-collections-check"
+  | "bb-bags-collections-check-men"
+  | "bb-bags-collections-cotswolds"
+  | "bb-bags-collections-highlands"
+  | "bb-bags-collections-horseshoe"
+  | "bb-bags-collections-bloomsbury"
+  | "bb-bags-collections-b-clip"
+  | "bb-bags-collections-margate"
   | "burberry-shoes"
   | "bb-shoes-womens"
   | "bb-women-shoes"
@@ -347,6 +356,28 @@ export const BB_WOMEN_BAG_IDS: SubcategoryId[] = [
   "bb-women-shoulder-bags",
   "bb-women-top-handle-bags",
   "bb-women-backpacks",
+];
+
+/** Burberry Bags → Collections (from /c/bags/). Check includes women + men PLPs. */
+export const BB_BAGS_COLLECTION_LEAF_IDS: SubcategoryId[] = [
+  "bb-bags-collections-check",
+  "bb-bags-collections-check-men",
+  "bb-bags-collections-cotswolds",
+  "bb-bags-collections-highlands",
+  "bb-bags-collections-horseshoe",
+  "bb-bags-collections-bloomsbury",
+  "bb-bags-collections-b-clip",
+  "bb-bags-collections-margate",
+];
+
+export const BB_BAGS_COLLECTION_NAV_IDS: SubcategoryId[] = [
+  "bb-bags-collections-check",
+  "bb-bags-collections-cotswolds",
+  "bb-bags-collections-highlands",
+  "bb-bags-collections-horseshoe",
+  "bb-bags-collections-bloomsbury",
+  "bb-bags-collections-b-clip",
+  "bb-bags-collections-margate",
 ];
 
 export const BB_WOMEN_SHOE_IDS: SubcategoryId[] = [
@@ -696,6 +727,7 @@ export const BB_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_KIDS_COLLECTION_IDS,
   ...BB_GIFTS_ALL_IDS,
   ...BB_SCARVES_ALL_IDS,
+  ...BB_BAGS_COLLECTION_LEAF_IDS,
 ];
 
 export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
@@ -770,12 +802,19 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-kids-girls": [...BB_KIDS_GIRLS_IDS],
   "bb-kids-boys": [...BB_KIDS_BOYS_IDS],
   "burberry-bags": [
+    "bb-bags-collections",
     "bb-bags-womens",
     "bb-bags-mens",
     "bb-bags-kids",
+    ...BB_BAGS_COLLECTION_LEAF_IDS,
     ...BB_WOMEN_BAG_IDS,
     ...BB_MEN_BAG_IDS,
     ...BB_KIDS_BAG_IDS,
+  ],
+  "bb-bags-collections": [...BB_BAGS_COLLECTION_LEAF_IDS],
+  "bb-bags-collections-check": [
+    "bb-bags-collections-check",
+    "bb-bags-collections-check-men",
   ],
   "bb-bags-womens": [...BB_WOMEN_BAG_IDS],
   "bb-women-bags": [...BB_WOMEN_BAG_IDS],
@@ -1152,6 +1191,49 @@ export const navCategories: NavCategory[] = [
         labelKo: "버버리",
         href: "/shop?category=bags&sub=burberry-bags",
         children: [
+          {
+            id: "bb-bags-collections",
+            labelKo: "컬렉션",
+            href: "/shop?category=bags&sub=bb-bags-collections",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-bags-collections-check",
+                labelKo: "Check Bags",
+                href: "/shop?category=bags&sub=bb-bags-collections-check",
+              },
+              {
+                id: "bb-bags-collections-cotswolds",
+                labelKo: "Cotswolds",
+                href: "/shop?category=bags&sub=bb-bags-collections-cotswolds",
+              },
+              {
+                id: "bb-bags-collections-highlands",
+                labelKo: "Highlands",
+                href: "/shop?category=bags&sub=bb-bags-collections-highlands",
+              },
+              {
+                id: "bb-bags-collections-horseshoe",
+                labelKo: "Horseshoe",
+                href: "/shop?category=bags&sub=bb-bags-collections-horseshoe",
+              },
+              {
+                id: "bb-bags-collections-bloomsbury",
+                labelKo: "Bloomsbury",
+                href: "/shop?category=bags&sub=bb-bags-collections-bloomsbury",
+              },
+              {
+                id: "bb-bags-collections-b-clip",
+                labelKo: "B Clip",
+                href: "/shop?category=bags&sub=bb-bags-collections-b-clip",
+              },
+              {
+                id: "bb-bags-collections-margate",
+                labelKo: "Margate",
+                href: "/shop?category=bags&sub=bb-bags-collections-margate",
+              },
+            ],
+          },
           {
             id: "bb-bags-womens",
             labelKo: "여성용",

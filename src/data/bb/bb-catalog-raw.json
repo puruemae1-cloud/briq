@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-30T16:12:37Z",
+  "scrapedAt": "2026-07-30T17:40:57Z",
   "source": "https://uk.burberry.com",
   "collectionCounts": {
     "bb-women-new": 767,
@@ -188,7 +188,15 @@
     "bb-scarves-men-personalised": 55,
     "bb-scarves-kids": 7,
     "bb-scarves-kids-girls": 6,
-    "bb-scarves-kids-boys": 4
+    "bb-scarves-kids-boys": 4,
+    "bb-bags-collections-check": 93,
+    "bb-bags-collections-check-men": 43,
+    "bb-bags-collections-cotswolds": 42,
+    "bb-bags-collections-highlands": 20,
+    "bb-bags-collections-horseshoe": 11,
+    "bb-bags-collections-bloomsbury": 25,
+    "bb-bags-collections-b-clip": 11,
+    "bb-bags-collections-margate": 8
   },
   "collections": {
     "bb-women-new": {
@@ -1312,39 +1320,58 @@
       "path": "/l/boys-clothes/scarves/",
       "category": "accessories",
       "count": 4
+    },
+    "bb-bags-collections-check": {
+      "label": "Check Bags",
+      "path": "/l/womens-bags/check/",
+      "category": "bags",
+      "count": 93
+    },
+    "bb-bags-collections-check-men": {
+      "label": "Check Bags (Men)",
+      "path": "/l/mens-bags/check/",
+      "category": "bags",
+      "count": 43
+    },
+    "bb-bags-collections-cotswolds": {
+      "label": "Cotswolds",
+      "path": "/l/womens-bags/cotswolds/",
+      "category": "bags",
+      "count": 42
+    },
+    "bb-bags-collections-highlands": {
+      "label": "Highlands",
+      "path": "/l/womens-bags/highlands/",
+      "category": "bags",
+      "count": 20
+    },
+    "bb-bags-collections-horseshoe": {
+      "label": "Horseshoe",
+      "path": "/l/womens-bags/horseshoe/",
+      "category": "bags",
+      "count": 11
+    },
+    "bb-bags-collections-bloomsbury": {
+      "label": "Bloomsbury",
+      "path": "/l/womens-bags/bloomsbury/",
+      "category": "bags",
+      "count": 25
+    },
+    "bb-bags-collections-b-clip": {
+      "label": "B Clip",
+      "path": "/l/womens-bags/b-clip/",
+      "category": "bags",
+      "count": 11
+    },
+    "bb-bags-collections-margate": {
+      "label": "Margate",
+      "path": "/l/womens-bags/margate/",
+      "category": "bags",
+      "count": 8
     }
   },
-  "productCount": 2879,
-  "errors": [
-    {
-      "id": "81300331",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81311391",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81299971",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81303951",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81316181",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81303031",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81302861",
-      "error": "no PRELOADED_STATE"
-    }
-  ],
+  "productCount": 2880,
+  "errors": [],
   "products": [
     {
       "id": "34546231",
@@ -29165,6 +29192,7 @@
       "measurements": "24.5 x 13 x 12cm/9.6 x 5.1 x 4.8in",
       "materialComposition": "Outer: 70% thermoplastic polyurethane, 30% cotton#Inner and trim: 100% calf leather#Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -40804,6 +40832,7 @@
       "measurements": "35 x 14 x 41cm/13.8 x 5.5 x 16.1in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Lining: 92% polyester, 8% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
         "bb-men-bags",
@@ -40887,6 +40916,7 @@
       "measurements": "25 x 12 x 18cm/9.8 x 4.7 x 7.1in#Min strap drop: 31 cm/12.2in#Max strap drop: 68cm/26.8in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Lining: 92% polyester, 8% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-activewear",
         "bb-men-bags",
         "bb-men-crossbody-bags"
@@ -40967,6 +40997,7 @@
       "measurements": "33 x 11 x 18cm/13 x 4.3 x 7.1in#Min. strap length: 75cm/29.5in#Max. strap length: 115cm/45.3in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Lining: 92% polyester, 8% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-belt-bags",
         "bb-men-crossbody-bags"
@@ -49967,6 +49998,7 @@
       "measurements": "28 x 18 x 40cm/11 x 7.1 x 15.8in",
       "materialComposition": "Outer: 100% calf leather #Lining: 59% cotton, 41% linen #Back panel: 100% polyester",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-men-backpacks",
         "bb-men-bags",
@@ -50055,6 +50087,7 @@
       "measurements": "37 x 8 x 25.5cm/14.6 x 3.2 x 10in. Min. strap drop: 30cm/11.8in. Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather #Lining: 59% cotton, 41% linen",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-briefcases",
         "bb-men-crossbody-bags",
@@ -50139,6 +50172,7 @@
       "measurements": "27 x 5.5 x 20cm/10.6 x 2.2 x 7.8in. Min. strap drop: 33cm/13in. Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather #Lining: 59% cotton, 41% linen",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-men-bags",
         "bb-men-crossbody-bags",
@@ -50383,6 +50417,7 @@
       "measurements": "29 x 11 x 34cm/11.4 x 4.3 x 13.4in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Lining: 92% polyester, 8% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
@@ -56612,6 +56647,7 @@
       "measurements": "30 x 17 x 44cm/11.8 x 6.7 x 17.3in",
       "materialComposition": "Outer: 100% calf leather #Back panel: 100% polyester #Lining: 59% cotton, 41% linen",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-backpacks",
         "bb-men-bags",
         "bb-men-new",
@@ -56699,6 +56735,7 @@
       "measurements": "31 x 12.5 x 22cm/12.2 x 4.9 x 8.7in. Min. strap drop: 30cm/11.8in. Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather #Lining: 59% cotton, 41% linen",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-crossbody-bags",
         "bb-men-new"
@@ -57628,6 +57665,7 @@
       "measurements": "24 x 8 x 14cm/9.5 x 3.2 x 5.5in. Min. strap length: 62cm/24.4in. Max. strap length: 132cm/52in",
       "materialComposition": "92% polyester, 8% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -59319,6 +59357,7 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in. Min. strap drop: 40cm/15.8in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags"
@@ -59401,6 +59440,7 @@
       "measurements": "38 x 14 x 29.5cm/15 x 5.5 x 11.6in#Min. strap drop: 35cm/13.8in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-top-handle-bags"
       ],
       "label": "Runway"
@@ -60763,6 +60803,8 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in#Min. strap drop: 40cm/15.8in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 65% polyester, 35% cotton#Trim: 100% calf leather#Lining: 65% polyester, 35% cotton",
       "collections": [
+        "bb-bags-collections-b-clip",
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-top-handle-bags"
       ],
@@ -62855,6 +62897,7 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in#Min. strap drop: 40cm/15.8in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags"
@@ -67145,6 +67188,7 @@
       "measurements": "24 x 8 x 14cm/9.5 x 3.2 x 5.5in . Min. strap drop: 47.5cm/18.7in . Max. strap drop: 52.5cm/20.7in ",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather  #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-gifts",
@@ -67246,6 +67290,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in . Min. strap drop: 38cm/15in . Max. strap drop: 59cm/23.2in ",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather  #Lining: 100% cotton ",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -67343,6 +67388,7 @@
       "measurements": "40 x 16 x 30cm/15.8 x 6.3 x 11.8in. Min. strap drop: 37.5cm/14.8in. Max. strap drop: 42.5cm/16.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -67443,6 +67489,7 @@
       "measurements": "23 x 8 x 19cm/9.1 x 3.2 x 7.5in. Min. strap drop: 47cm/18.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -67550,6 +67597,7 @@
       "measurements": "20.5 x 3.5 x 12cm/8.1 x 1.4 x 4.7in . Strap drop: 55cm/21.7in ",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% viscose; 100% polyamide ",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -67932,6 +67980,7 @@
       "measurements": "20.5 x 4.5 x 13cm/8.1 x 1.8 x 5.1in . Min. strap drop: 49cm/19.3in . Max. strap drop: 56cm/22.1in ",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather  #Lining: 100% cotton  #Pocket lining: 100% polyamide ",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -82186,6 +82235,8 @@
       "measurements": "23.5 x 7 x 18cm/9.3 x 2.8 x 7.1in#Min. strap drop: 33cm/13in#Max. strap drop: 59.5cm/23.4in",
       "materialComposition": "97% polyamide, 3% polyurethane#Trim: 100% leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-activewear",
@@ -82281,6 +82332,7 @@
       "measurements": "39.5 x 17 x 28.5cm/15.6 x 6.7 x 11.2in #Handle drop: 12cm/4.7in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags",
@@ -82387,6 +82439,7 @@
       "measurements": "39.5 x 17 x 28.5cm/15.6 x 6.7 x 11.2in. Handle drop: 12cm/4.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags",
@@ -82500,6 +82553,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in #Handle drop: 12cm/4.7in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags",
@@ -82742,6 +82796,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in. Handle drop: 12cm/4.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -82863,6 +82918,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -82991,6 +83047,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in#Min. strap drop: 42cm/16.5in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -83120,6 +83177,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -86605,6 +86663,7 @@
       "measurements": "23.5 x 7 x 18cm/9.3 x 2.8 x 7.1in. Min. strap drop: 33cm/13in. Max. strap drop: 59.5cm/23.4in",
       "materialComposition": "100% polyamide #Trim: 100% leather",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-men-bags",
@@ -90398,6 +90457,8 @@
       "measurements": "24.5 x 8 x 18cm/9.7 x 3.2 x 7.1in#Min. strap drop: 42cm/16.5in#Max. strap drop: 53cm/20.9in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -90784,6 +90845,8 @@
       "measurements": "45 x 21.5 x 35cm/17.7 x 8.5 x 13.8in#Handle drop: 24cm/9.5in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Pocket lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -90874,6 +90937,8 @@
       "measurements": "28.5 x 11.5 x 31cm/11.2 x 4.5 x 12.2in. Min. strap drop: 35cm/13.8in. Max. strap drop: 48cm/18.9in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -91360,6 +91425,7 @@
       "measurements": "25 x 9 x 17cm/9.8 x 3.5 x 6.7in . Min. strap drop: 38cm/15in . Max. strap drop: 59cm/23.2in ",
       "materialComposition": "Outer: 54% polyurethane, 23% cotton, 23% polyester #Trim: 100% calf leather  #Lining: 60% cotton, 40% polyester ",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -91453,6 +91519,7 @@
       "measurements": "34 x 14 x 28cm/13.4 x 5.5 x 13.4in . Handle drop: 21cm/8.3in ",
       "materialComposition": "Outer: 54% polyurethane, 23% cotton, 23% polyester #Trim: 100% calf leather  #Lining: 60% cotton, 40% polyester ",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -91763,6 +91830,8 @@
       "measurements": "19 x 5 x 11cm/7.5 x 2 x 4.3in #Min. strap drop: 51cm/20.1in #Max. strap drop: 66cm/26in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -91983,6 +92052,8 @@
       "measurements": "28.5 x 11.5 x 31cm/11.2 x 4.5 x 12.2in. Min. strap drop: 35cm/13.8in. Max. strap drop: 48cm/18.9in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-women-bags",
         "bb-women-shoulder-bags",
         "bb-women-tote-bags"
@@ -92066,6 +92137,8 @@
       "measurements": "20.5 x 3.7 x 12.5cm/8.1 x 1.5 x 4.9in#Strap drop: 55cm/21.7in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -92155,6 +92228,8 @@
       "measurements": "25.5 x 12 x 16cm/10 x 4.7 x 6.3in#Strap drop: 23cm/9.1in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -92234,6 +92309,7 @@
       "measurements": "11.5 x 3 x 9cm/4.5 x 1.1 x 3.5in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -92311,6 +92387,7 @@
       "measurements": "10 x 7.5cm/3.9 x 3in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-card-cases",
@@ -92506,6 +92583,7 @@
       "measurements": "20.5 x 3.7 x 12.5cm/8.1 x 1.5 x 4.9in#Strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Inner: 51% cotton, 49% polyester#Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags"
       ],
@@ -92685,6 +92763,7 @@
       "measurements": "10.5 x 7.5cm/4.1 x 3in",
       "materialComposition": "Outer: 100% calf leather #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-card-cases",
@@ -92774,6 +92853,7 @@
       "measurements": "10.5 x 7.5cm/4.1 x 3in",
       "materialComposition": "Outer: 100% calf leather #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-gifts",
@@ -92860,6 +92940,8 @@
       "measurements": "33.5 x 12.5 x 17cm/13.2 x 4.9 x 6.7in#Min. strap drop: 37cm/14.6in#Max. strap drop: 50cm/19.7in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -116330,6 +116412,7 @@
       "measurements": "21 x 13 x 34.5cm/8.3 x 5.1 x 13.6in",
       "materialComposition": "Outer: 100% polyamide #Trim: 100% leather #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-backpacks",
@@ -123083,6 +123166,8 @@
       "measurements": "19.5 x 9 x 12cm/7.7 x 3.5 x 4.7in. Min. strap drop: 48cm/18.9in. Max. strap drop: 62cm/24.4in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -123969,6 +124054,7 @@
       "measurements": "10 x 13.5cm/3.9 x 5.3in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-men-tech-travel",
@@ -124052,6 +124138,7 @@
       "measurements": "12.5 x 7.5cm/4.9 x 3in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-women-card-cases",
         "bb-women-wallets"
       ],
@@ -124148,6 +124235,8 @@
       "measurements": "21 x 13 x 34.5cm/8.3 x 5.1 x 13.6in",
       "materialComposition": "Outer: 97% polyamide, 3% polyurethane #Trim: 100% leather #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-backpacks",
@@ -124234,6 +124323,7 @@
       "measurements": "11.5 x 2.5 x 7cm/4.5 x 1 x 2.8in. Strap drop: 53cm/20.9in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-gifts",
@@ -130245,6 +130335,7 @@
       "measurements": "18.5 x 11 x 12cm/7.3 x 4.3 x 4.7in. Min. strap drop: 47.5cm/18.7in. Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 48% cotton, 38% polyurethane, 14% polyester #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -130352,6 +130443,7 @@
       "measurements": "24 x 8 x 14cm/9.5 x 3.2 x 5.5in. Min. strap drop: 47.5cm/18.7in. Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -130456,6 +130548,7 @@
       "measurements": "16.5 x 11 x 18.5cm/6.5 x 4.3 x 7.3in. Min. strap drop: 48cm/18.9in. Max. strap drop: 54cm/21.3in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -130561,6 +130654,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in. Min. strap drop: 39cm/15.4in. Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new"
@@ -130754,6 +130848,7 @@
       "measurements": "20.5 x 3.5 x 12cm/8.1 x 1.4 x 4.7in. Strap drop: 55cm/21.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Linings: 100% polyamide; 100% viscose",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-bags",
@@ -131145,6 +131240,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in. Min. strap drop: 39cm/15.4in. Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 100% calf leather #Panel: 100% cotton #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -131638,6 +131734,7 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in. Min. strap drop: 40cm/15.8in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags"
@@ -132509,6 +132606,7 @@
       "measurements": "19 x 5 x 12cm/7.5 x 2 x 4.7in. Min. strap drop: 47cm/18.5in. Max. strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 79% cotton, 15% polyester, 6% viscose #Trim: 100% buffalo leather #Lining: 100% lambskin",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-mini-bags",
         "bb-women-new",
@@ -157699,6 +157797,7 @@
       "measurements": "14 x 10 x 19cm/5.5 x 3.9 x 7.5in. Strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 100% polyamide #Trim: 100% calf leather #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -158721,6 +158820,7 @@
       "measurements": "18.5 x 11 x 12cm/7.3 x 4.3 x 4.7in#Min. strap drop: 47.5cm/18.7in#Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 48% cotton, 38% polyurethane, 14% polyester#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -160824,6 +160924,7 @@
       "measurements": "17 x 14 x 20cm/6.7 x 5.5 x 7.9in",
       "materialComposition": "Outer: 100% polyamide #Trim: 100% calf leather #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-backpacks",
@@ -162122,6 +162223,7 @@
       "measurements": "22.5 x 6.5 x 16cm/8.9 x 2.6 x 6.3in. Min strap drop: 30cm/11.8in. Max strap drop: 65cm/25.6in",
       "materialComposition": "92% polyester, 8% polyurethane #Trim: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -163536,6 +163638,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in. Min. strap drop: 45cm/17.7in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% lambskin #Trim: 100% lambskin #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -163664,6 +163767,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% lambskin #Trim: 100% lambskin #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -163795,6 +163899,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 100% calf leather #Lining: 100% calf suede #Pocket lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -163899,6 +164004,8 @@
       "measurements": "17 x 14 x 20cm/6.7 x 5.5 x 7.9in",
       "materialComposition": "Outer: 100% polyamide #Trim: 100% calf leather #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-backpacks",
@@ -167378,6 +167485,7 @@
       "measurements": "27 x 9 x 19cm/10.6 x 3.5 x 7.5in. Min. strap drop: 30cm/11.8in. Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather #Trim: 100% calf leather #Lining: 59% cotton, 41% linen",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-crossbody-bags",
         "bb-men-new",
@@ -167668,6 +167776,7 @@
       "measurements": "30 x 14.5 x 21cm/11.8 x 5.7 x 8.3in#Min. strap drop: 38cm/15in#Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 48% cotton, 38% polyurethane, 14% polyester#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -169790,6 +169899,7 @@
       "measurements": "28 x 15 x 44cm/11 x 5.9 x 17.3in",
       "materialComposition": "Outer: 56% polyester, 44% polyamide#Back panel: 100% polyester#Trim: 53% cotton, 47% polyurethane#Lining: 56% polyester, 44% polyamide",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
         "bb-men-bags",
@@ -169876,6 +169986,7 @@
       "measurements": "43 x 22 x 31cm/16.9 x 8.7 x 12.2in#Min. strap drop: 40cm/15.8in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 56% polyester, 44% polyamide#Trim: 53% cotton, 47% polyurethane#Lining: 56% polyester, 44% polyamide",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him-classics",
         "bb-men-bags",
         "bb-men-classics",
@@ -170903,6 +171014,8 @@
       "measurements": "37.5 x 17 x 30cm/14.8 x 6.7 x 11.8in. Handle drop: 23cm/9.1in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-activewear",
@@ -171017,6 +171130,8 @@
       "measurements": "37.5 x 17 x 30cm/14.8 x 6.7 x 11.8in. Handle drop: 23cm/9.1in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-activewear",
@@ -171132,6 +171247,8 @@
       "measurements": "37.5 x 17 x 30cm/14.8 x 6.7 x 11.8in. Handle drop: 23cm/9.1in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 67% cotton, 23% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -171251,6 +171368,8 @@
       "measurements": "22 x 10 x 20cm/8.7 x 3.9 x 7.9in. Min. strap drop: 50cm/19.7in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -171369,6 +171488,8 @@
       "measurements": "22 x 10 x 20cm/8.7 x 3.9 x 7.9in. Min. strap drop: 50cm/19.7in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -171491,6 +171612,8 @@
       "measurements": "22 x 10 x 20cm/8.7 x 3.9 x 7.9in. Min. strap drop: 50cm/19.7in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 67% cotton, 23% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -171898,6 +172021,8 @@
       "measurements": "19 x 9 x 17.5cm/7.5 x 3.5 x 6.9in. Min. strap drop: 34cm/13.4in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 65% polyester, 35% cotton #Trim: 100% calf leather #Lining: 65% polyester, 35% cotton",
       "collections": [
+        "bb-bags-collections-b-clip",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -172117,6 +172242,7 @@
       "measurements": "12 x 9cm/4.7 x 3.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 69% cotton, 21% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -172214,6 +172340,7 @@
       "measurements": "20.5 x 3.5 x 13cm/8.1 x 1.4 x 5.1in. Strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 100% lambskin #Trim: 51% cotton, 49% polyester #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-chain-strap-wallets",
         "bb-women-crossbody-bags",
@@ -173337,6 +173464,7 @@
       "measurements": "12 x 9cm/4.7 x 3.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 67% cotton, 23% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -173431,6 +173559,7 @@
       "measurements": "11.5 x 3 x 9cm/4.5 x 1.2 x 3.5in",
       "materialComposition": "Outer: 100% lambskin #Trim: 51% cotton, 49% polyester #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-compact-wallets",
@@ -173521,6 +173650,8 @@
       "measurements": "19 x 10 x 12cm/7.5 x 3.9 x 4.7in. Min. strap drop: 5cm/2in. Max. strap drop: 24cm/9.5in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -174342,6 +174473,7 @@
       "measurements": "22 x 6 x 14.5cm/8.7 x 2.4 x 5.7in. Strap drop: 26.5cm/10.4in",
       "materialComposition": "Outer: 100% lambskin #Trim: 100% lambskin #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags"
       ],
@@ -174918,6 +175050,7 @@
       "measurements": "11.9 x 9cm/4.7 x 3.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-gifts",
@@ -175344,6 +175477,7 @@
       "measurements": "3cm/1.2in wide",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen #Lining: 100% calf leather",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-belts",
@@ -175550,6 +175684,7 @@
       "measurements": "2.5cm/1in wide",
       "materialComposition": "Outer: 100% calf leather #Lining: 100% calf leather",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-belts",
         "bb-women-new"
       ],
@@ -175811,6 +175946,7 @@
       "measurements": "2.5cm/1in wide",
       "materialComposition": "Outer: 100% calf leather #Lining: 100% calf leather",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-belts",
         "bb-women-new"
       ],
@@ -175906,6 +176042,7 @@
       "measurements": "2.5cm/1in wide",
       "materialComposition": "Outer: 65% polyester, 35% cotton #Lining: 100% calf leather",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-women-belts",
         "bb-women-gifts",
@@ -176015,6 +176152,7 @@
       "measurements": "19 x 9 x 17.5cm/7.5 x 3.5 x 6.9in. Min. strap drop: 34cm/13.4in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -176262,6 +176400,7 @@
       "measurements": "39.5 x 17 x 28.5cm/15.6 x 6.7 x 11.2in. Handle drop: 12cm/4.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 100% calf leather #Lining: 100% calf suede #Pocket lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags",
@@ -177818,6 +177957,7 @@
       "measurements": "10 x 3 x 8cm/3.9 x 1.2 x 3.2in",
       "materialComposition": "Outer: 100% calf leather #Trim: 69% cotton, 21% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -177924,6 +178064,7 @@
       "measurements": "10 x 3 x 8cm/3.9 x 1.2 x 3.2in",
       "materialComposition": "Outer: 100% calf leather #Trim: 67% cotton, 23% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her-classics",
         "bb-women-card-cases",
         "bb-women-classics",
@@ -178107,6 +178248,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in. Min. strap drop: 49.5cm/19.5in. Max. strap drop: 61.5cm/24.2in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -178188,6 +178330,7 @@
       "measurements": "11 x 3 x 8cm/4.3 x 1.2 x 3.1in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -178271,6 +178414,7 @@
       "measurements": "10.5 x 7.5cm/4.1 x 3in",
       "materialComposition": "Outer: 100% lambskin #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-personalised",
         "bb-women-card-cases",
@@ -180274,6 +180418,7 @@
       "measurements": "19 x 9 x 17.5cm/7.5 x 3.5 x 6.9in. Min. strap drop: 34cm/13.4in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -181830,6 +181975,7 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in. Min. strap drop: 40cm/15.8in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags"
@@ -181950,6 +182096,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in. Min. strap drop: 45cm/17.7in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 100% calf leather #Lining: 100% calf suede #Pocket lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -201097,6 +201244,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in#Min. strap drop: 39cm/15.4in#Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 100% calf leather#Panel: 100% cotton#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -215327,6 +215475,7 @@
       "measurements": "27.5 x 11 x 19cm/10.8 x 4.3 x 7.5in. Min. strap drop: 40cm/15.8in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -215436,6 +215585,7 @@
       "measurements": "19 x 9 x 17.5cm/7.5 x 3.5 x 6.9in. Min. strap drop: 34cm/13.4in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "100% calf leather #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-b-clip",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -215793,6 +215943,8 @@
       "measurements": "53.5 x 17 x 37.5cm/21.1 x 6.7 x 14.8in #Handle drop: 23cm/9.1in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-activewear",
@@ -215913,6 +216065,8 @@
       "measurements": "22 x 10 x 20cm/8.7 x 3.9 x 7.9in. Min. strap drop: 50cm/19.7in. Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -216656,6 +216810,7 @@
       "measurements": "Wallet: 8.5 x 2.5 x 11cm/3.4 x 1 x 4.3in",
       "materialComposition": "Outer: 69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Lining: 100% lambskin#Pocket lining: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -216780,6 +216935,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in#Min. strap drop: 48cm/18.9in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather#Lining: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -218331,6 +218487,7 @@
       "measurements": "12 x 9cm/4.7 x 3.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 69% cotton, 21% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -218439,6 +218596,7 @@
       "measurements": "10 x 3 x 8cm/3.9 x 1.2 x 3.2in",
       "materialComposition": "Outer: 100% calf leather #Trim: 69% cotton, 21% viscose, 10% linen #Linings: 100% lambskin; 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -221088,6 +221246,7 @@
       "measurements": "18.8 x 8 x 13.5cm/7.4 x 3.1 x 5.3in#Min. strap drop: 35cm/13.8in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather#Trim: 55% polyurethane, 25% polyester, 20% cotton#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -221195,6 +221354,7 @@
       "measurements": "18.8 x 8 x 13.5cm/7.4 x 3.1 x 5.3in#Min. strap drop: 35cm/13.8in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather#Trim: 55% polyurethane, 25% polyester, 20% cotton#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him-classics",
         "bb-men-bags",
         "bb-men-classics",
@@ -221426,6 +221586,7 @@
       "measurements": "17.5 x 5.5 x 11.5cm/6.9 x 2.2 x 4.5in#Strap drop: 15cm/5.9in",
       "materialComposition": "Outer: 100% polyester#Trims: 92% polyester, 8% polyurethane; 100% calf leather#Lining: 100% polyester",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-him",
@@ -221551,6 +221712,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in#Min. strap drop: 48cm/18.9in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather#Lining: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -221667,6 +221829,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in#Min. strap drop: 48cm/18.9in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather#Lining: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-women-crossbody-bags",
         "bb-women-gifts",
@@ -221749,6 +221912,7 @@
       "measurements": "26 x 12.5 x 13cm/10.2 x 4.9 x 5.1in#Handle drop: 15cm/5.9in",
       "materialComposition": "Outer: 100% polyester#Trims: 92% polyester, 8% polyurethane; 100% calf leather#Lining: 100% polyester",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-him",
@@ -221879,6 +222043,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in#Min. strap drop: 48cm/18.9in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather#Lining: 67% cotton, 23% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -222991,6 +223156,8 @@
       "measurements": "19 x 6 x 20cm/7.5 x 2.4 x 7.9in #Handle drop: 16cm/6.3in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -228625,6 +228792,7 @@
       "measurements": "10 x 11.5cm/3.9 x 4.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 100% lambskin#Lining: 69% cotton, 21% viscose, 10% linen#Pocket lining: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-card-cases",
@@ -228723,6 +228891,7 @@
       "measurements": "10 x 11.5cm/3.9 x 4.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 100% lambskin#Lining: 69% cotton, 21% viscose, 10% linen#Pocket lining: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-card-cases",
@@ -228821,6 +228990,7 @@
       "measurements": "10 x 11.5cm/3.9 x 4.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 100% lambskin#Lining: 69% cotton, 21% viscose, 10% linen#Pocket lining: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her-classics",
         "bb-women-card-cases",
         "bb-women-classics",
@@ -234083,6 +234253,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in. Min. strap drop: 45cm/17.7in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 70% linen, 30% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -235599,6 +235770,7 @@
       "measurements": "20.5 x 3.5 x 13cm/8.1 x 1.4 x 5.1in #Strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 70% linen, 30% cotton #Trim: 100% calf leather #Linings: 100% lambskin; 100% cotton #Pocket lining: 53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-chain-strap-wallets",
         "bb-women-crossbody-bags",
@@ -235992,6 +236164,7 @@
       "measurements": "14.5 x 9.3cm/5.7 x 3.7in",
       "materialComposition": "Outer: 100% calf leather #Linings: 100% lambskin; 69% cotton, 21% viscose, 10% linen #Pocket lining:  53% cotton, 47% polyurethane",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -236553,6 +236726,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 70% linen, 30% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-mini-bags",
@@ -237658,6 +237832,8 @@
       "measurements": "46 x 15 x 28cm/18.1 x 5.9 x 11in#Handle drop: 22cm/8.7in",
       "materialComposition": "Outer: 100% raffia#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -237750,6 +237926,8 @@
       "measurements": "46 x 15 x 28cm/18.1 x 5.9 x 11in#Handle drop: 22cm/8.7in",
       "materialComposition": "Outer: 100% raffia#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -238499,6 +238677,8 @@
       "measurements": "26 x 14.5 x 26cm/10.2 x 5.7 x 10.2in#Handle drop: 32.5cm/12.8in",
       "materialComposition": "Outer: 100% raffia#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -240449,6 +240629,8 @@
       "measurements": "14 x 9 x 12cm/5.5 x 3.5 x 4.7in",
       "materialComposition": "Outer: 100% raffia #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -246955,6 +247137,7 @@
       "measurements": "24 x 8 x 14cm/9.5 x 3.2 x 5.5in. Min. strap drop: 47.5cm/18.7in. Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -247061,6 +247244,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in. Min. strap drop: 39cm/15.4in. Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 100% calf leather #Panel: 100% cotton #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -247169,6 +247353,7 @@
       "measurements": "18.5 x 11 x 12cm/7.3 x 4.3 x 4.7in. Min. strap drop: 47.5cm/18.7in. Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 48% cotton, 38% polyurethane, 14% polyester #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -247520,6 +247705,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in. Min. strap drop: 49.5cm/19.5in. Max. strap drop: 61.5cm/24.2in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -247628,6 +247814,7 @@
       "measurements": "20.5 x 3.5 x 12cm/8.1 x 1.4 x 4.7in. Strap drop: 55cm/21.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Linings: 100% polyamide; 100% viscose",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -267946,6 +268133,7 @@
       "measurements": "22 x 6 x 14.5cm/8.7 x 2.4 x 5.7in. Strap drop: 27cm/10.6in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -271831,6 +272019,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in. Min. strap drop: 42cm/16.5in. Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-women-bags",
         "bb-women-crossbody-bags",
@@ -273562,6 +273751,8 @@
       "measurements": "14 x 9 x 12cm/5.5 x 3.5 x 4.7in",
       "materialComposition": "Outer: 100% raffia #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -304886,6 +305077,7 @@
       "measurements": "24 x 8 x 12.5cm/9.5 x 3.2 x 4.9in#Min. strap length: 130cm/51.2in #Max. strap length: 140cm/55.1in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Trim: 100% leather#Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -305159,6 +305351,7 @@
       "measurements": "32 x 15 x 40cm/12.6 x 5.9 x 15.8in",
       "materialComposition": "Outer: 92% polyester, 8% polyurethane#Trim: 100% leather#Back Panel: 100% polyester#Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
@@ -307540,6 +307733,7 @@
       "measurements": "18.8 x 8 x 13.5cm/7.4 x 3.1 x 5.3in#Min. strap drop: 35cm/13.8in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 100% calf leather#Trim: 55% polyurethane, 25% polyester, 20% cotton#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -318150,6 +318344,7 @@
       "measurements": "10.5 x 4.5 x 9cm/4.1 x 1.8 x 3.5in",
       "materialComposition": "97% polyamide, 3% polyurethane#Trim: 100% leather",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her-classics",
         "bb-women-classics",
         "bb-women-key-charms",
@@ -318510,6 +318705,7 @@
       "measurements": "20 x 7 x 13cm/7.9 x 2.8 x 5.1in#Min. strap drop: 9cm/3.5in#Max. strap drop: 120cm/47.2in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -318914,6 +319110,7 @@
       "measurements": "22 x 6 x 16cm/78.7 x 2.4 x 6.3in.#Min. strap drop: 50cm/19.7in.#Max. strap drop: 58cm/22.8in.",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -325881,6 +326078,8 @@
       "measurements": "19.5 x 8 x 11cm/7.7 × 3.1 × 4.3in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -325965,6 +326164,7 @@
       "measurements": "17 x 5.5 x 12.5cm/6.7 x 2.2 x 4.9in#Strap drop: 57cm/22.4in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -326052,6 +326252,8 @@
       "measurements": "20 x 4 x 14cm/7.9 x 1.6 x 5.5in#Strap drop: 50cm/19.7in",
       "materialComposition": "69% cotton, 21% viscose, 10% linen#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-highlands",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -326467,6 +326669,7 @@
       "measurements": "28 x 7 x 27.5cm/11 x 2.8 x 10.8in#Handle drop: 13cm/5.1in#Min. strap drop: 46cm/18.1in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -326560,6 +326763,7 @@
       "measurements": "31.5 x 12 x 33cm/12.4 x 4.7 x 13in#Min. strap drop: 31cm/12.2in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf lether#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -326654,6 +326858,7 @@
       "measurements": "25.5 x 6 x 16cm/10 × 2.4 × 6.3in #Min. strap drop: 31cm/12.2in #Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -326743,6 +326948,7 @@
       "measurements": "22 x 6 x 16cm/8.7 x 2.5 x 6.3in#Min. strap drop: 30cm/11.8in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -326836,6 +327042,7 @@
       "measurements": "15.5 x 5.5 x 20cm/6.1 x 2.2 x 7.9in #Min. strap drop: 30cm/11.8in #Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -326935,6 +327142,7 @@
       "measurements": "20 x 7 x 13cm/7.9 x 2.8 x 5.1in#Min. strap drop: 65cm/23.6in#Max. strap drop: 125cm/49.2in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -327030,6 +327238,7 @@
       "measurements": "27.5 x 16 x 37cm/10.8 x 6.3 x 14.6in #Handle drop: 8cm/3.1in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Back panel: 100% polyester #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-classics",
@@ -327133,6 +327342,7 @@
       "measurements": "30 x 14 x 45cm/11.8 x 5.5 x 17.7in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Back panel: 100% polyester#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
@@ -329833,6 +330043,7 @@
       "measurements": "22.5 x 12 x 12cm/x8.9 x 4.8 x 4.8in.",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -330361,6 +330572,7 @@
       "measurements": "22.5 x 12 x 12cm/x8.9 x 4.8 x 4.8in.",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -333127,6 +333339,7 @@
       "measurements": "22.5 x 12 x 12cm/x8.9 x 4.8 x 4.8in.",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -336005,6 +336218,7 @@
       "measurements": "32 x 12 x 39/12.6 x 4.7 x 15.4in #Handle drop: 5cm/2in #Min. strap drop: 32cm/12.6in #Max. strap drop: 48cm/18.9in",
       "materialComposition": "100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -336091,6 +336305,7 @@
       "measurements": "24 x 11 x 29cm/9.5 x 4.3 x 11.4in#Min. strap drop: 36cm/14.2in#Max. strap drop: 51cm/20.1in",
       "materialComposition": "100% cotton#Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -336365,6 +336580,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in#Min. strap drop: 48cm/18.9in#Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather#Lining: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -344431,6 +344647,7 @@
       "measurements": "22 x 4.5 x 17cm/8.7 x 1.8 x 6.7in #Handle drop: 25cm/9.8in #Min. strap drop: 44cm/17.3in #Max. strap drop: 54cm/21.3in",
       "materialComposition": "Outer: 100% lambskin #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -344519,6 +344736,8 @@
       "measurements": "21 x 14 x 16cm/8.3 x 5.5 x 6.3in #Strap drop: 21cm/8.3in",
       "materialComposition": "Outer: 100% raffia #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -344609,6 +344828,8 @@
       "measurements": "21 x 14 x 16cm/8.3 x 5.5 x 6.3in #Strap drop: 21cm/8.3in",
       "materialComposition": "Outer: 100% raffia #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -346296,6 +346517,7 @@
       "measurements": "13 x 18 x 20cm/5.1 x 7.1 x 7.9in#Handle drop: 15cm/5.9in#Min. strap drop: 45cm/17.7in#Max. strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -346416,6 +346638,8 @@
       "measurements": "22 x 10 x 20cm/8.7 x 3.9 x 7.9in #Handle drop: 10cm/3.9in #Min. strap drop: 50cm/19.7in #Max. strap drop: 60cm/23.6in",
       "materialComposition": "Outer: 100% calf leather #Reverse: 69% cotton, 21% viscose, 10% linen",
       "collections": [
+        "bb-bags-collections-bloomsbury",
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -346595,6 +346819,7 @@
       "measurements": "22 x 15 x 25cm/8.7 x 5.9 x 9.8in#Min. strap drop: 45cm/17.7in#Max. strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -346770,6 +346995,8 @@
       "measurements": "23 x 20 x 11cm/9.1 x 7.9 x 4.3in #Handle drop: 10cm/3.9in #Min. strap drop: 40cm/15.7in #Max. strap drop: 50cm/19.7in",
       "materialComposition": "Outer: 100% raffia #Trim: 100% calf leather",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-margate",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -346948,6 +347175,7 @@
       "measurements": "40 x 16 x 30cm/15.7 x 6.3 x 11.8in #Strap drop: 22cm/8.7in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -347058,6 +347286,8 @@
       "measurements": "39.5 x 17 x 28.5cm/15.6 x 6.7 x 11.2in #Handle drop: 12cm/4.7in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -347164,6 +347394,8 @@
       "measurements": "39.5 x 17 x 28.5cm/15.6 x 6.7 x 11.2in #Handle drop: 12cm/4.7in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -347435,6 +347667,7 @@
       "measurements": "34 x 15 x 23cm/13.4 × 5.9 × 9.1in#Strap drop: 22cm/8.7in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -348084,6 +348317,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348213,6 +348448,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348342,6 +348579,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348470,6 +348709,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348561,6 +348802,7 @@
       "measurements": "32 x 15.5 x 20cm/12.6 × 6.1 × 7.9in#Handle drop: 15.5cm/6.1in#Min. strap drop: 40cm/15.8in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348746,6 +348988,7 @@
       "measurements": "25.5 x 11.5 x 14cm/10 × 4.5 × 5.5in#Handle drop: 11cm/4.3in#Min. strap drop: 40cm/15.8in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-personalised",
@@ -348864,6 +349107,8 @@
       "measurements": "24.5 x 13 x 19.5cm/9.6 x 5.1 x 7.7in #Handle drop: 9cm/3.5in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -348980,6 +349225,8 @@
       "measurements": "24.5 x 13 x 19.5cm/9.6 x 5.1 x 7.7in #Handle drop: 9cm/3.5in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -350148,6 +350395,7 @@
       "measurements": "39 x 17 x 30cm/15.4 x 6.7 x 11.8in#Strap drop: 43cm/16.9in",
       "materialComposition": "100% lambskin#Trim: 100% lambskin#Lining: 100% calf suede",
       "collections": [
+        "bb-bags-collections-check",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -351272,6 +351520,7 @@
       "measurements": "20 x 7 x 13cm/7.9 x 2.8 x 5.1in#Min. strap length: 130cm/51.2in#Max. strap length: 140cm/55.1in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf lether#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -351366,6 +351615,7 @@
       "measurements": "25.5 x 6 x 16cm/8.9 x 2.5 x 6.3in#Min. strap drop: 31cm/12.2in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf lether#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-bags",
@@ -351805,6 +352055,7 @@
       "measurements": "30 x 14 x 45cm/11.8 x 5.5 x 17.7in #Handle drop: 6.5cm/2.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Back panel: 100% polyester #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-gifts-him",
         "bb-gifts-him-classics",
         "bb-men-backpacks",
@@ -352091,6 +352342,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -354553,6 +354806,7 @@
       "measurements": "22 x 4.5 x 17cm/8.7 x 1.8 x 6.7in #Handle drop: 25cm/9.8in #Min. strap drop: 44cm/17.3in #Max. strap drop: 54cm/21.3in",
       "materialComposition": "Outer: 100% lambskin #Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-horseshoe",
         "bb-gifts-her-classics",
         "bb-women-bags",
         "bb-women-classics",
@@ -357965,6 +358219,8 @@
       "measurements": "24.5 x 13 x 19.5cm/9.6 x 5.1 x 7.7in#Handle drop: 9cm/3.5in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-bags",
@@ -377670,6 +377926,7 @@
       "measurements": "13 x 18 x 20cm/5.1 x 7.1 x 7.9in #Handle drop: 15cm/5.9in #Min. strap drop: 45cm/17.7in #Max. strap drop: 58cm/22.8in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -377763,6 +378020,7 @@
       "measurements": "25.5 x 11.5 x 14cm/10 × 4.5 × 5.5in #Handle drop: 11cm/4.3in #Min. strap drop: 40cm/15.8in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-top-handle-bags"
       ],
@@ -377852,6 +378110,8 @@
       "measurements": "24.5 x 13 x 19.5cm/9.6 x 5.1 x 7.7in #Handle drop: 9cm/3.5in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather #Trim: 51% cotton, 49% polyester #Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-top-handle-bags"
       ],
@@ -377943,6 +378203,8 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf leather#Trim: 51% cotton, 49% polyester#Lining: 51% cotton, 49% polyester",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-new",
         "bb-women-top-handle-bags"
@@ -378031,6 +378293,7 @@
       "measurements": "45 x 14 x 28cm/17.7 x 5.5 x 11in#Handle drop: 22cm/8.7in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-tote-bags"
       ],
@@ -378114,6 +378377,7 @@
       "measurements": "24 x 9 x 17.5cm/9.5 x 3.5 x 6.9in#Min. strap drop: 32cm/12.6in #Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-crossbody-bags",
         "bb-men-new"
@@ -378200,6 +378464,7 @@
       "measurements": "25.5 x 11.5 x 15cm/10 x 4.5 x 5.9in#Strap drop: 27cm/10.6in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-new",
         "bb-women-shoulder-bags"
@@ -381296,6 +381561,7 @@
       "measurements": "20 x 7 x 13cm/7.9 x 2.8 x 5.1in #Min. strap length: 60cm/23.6in #Max. strap length: 125cm/49.2in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-belt-bags",
         "bb-men-new"
@@ -381385,6 +381651,7 @@
       "measurements": "30 x 14 x 45cm/11.8 x 5.5 x 17.7in #Handle drop: 6.5cm/2.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Back panel: 100% polyester #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-backpacks",
         "bb-men-bags",
         "bb-men-new"
@@ -381481,6 +381748,7 @@
       "measurements": "22 x 6 x 16cm/8.7 x 2.5 x 6.3in#Min. strap drop: 30cm/11.8in#Max. strap drop: 65cm/25.6in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-bags",
         "bb-men-crossbody-bags",
         "bb-men-new",
@@ -383953,6 +384221,7 @@
       "measurements": "19.5 x 8 x 15cm/7.7 x 3.2 x 5.9in #Handle drop: 5cm/2in #Min. strap drop: 49.5cm/19.5in #Max. strap drop: 61.5cm/24.2in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new"
@@ -384345,6 +384614,7 @@
       "measurements": "27.5 x 16 x 37cm/10.8 x 6.3 x 14.6in #Handle drop: 8cm/3.1in",
       "materialComposition": "Outer: 55% polyurethane, 25% polyester, 20% cotton #Trim: 100% calf leather #Back panel: 100% polyester #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check-men",
         "bb-men-backpacks",
         "bb-men-bags",
         "bb-men-new"
@@ -389630,6 +389900,8 @@
       "measurements": "23.5 x 7 x 18cm/9.3 x 2.8 x 7.1in#Min. strap drop: 33cm/13in#Max. strap drop: 59.5cm/23.4in",
       "materialComposition": "97% polyamide, 3% polyurethane#Trim: 100% calf leather#Lining: 100% polyamide",
       "collections": [
+        "bb-bags-collections-check",
+        "bb-bags-collections-horseshoe",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new"
@@ -390297,6 +390569,7 @@
       "measurements": "18.5 x 11 x 12cm/7.3 x 4.3 x 4.7in #Min. strap drop: 47.5cm/18.7in #Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-top-handle-bags"
@@ -390595,6 +390868,7 @@
       "measurements": "25 x 8 x 14cm/9.8 x 3.2 x 5.5in #Handle drop: 9cm/3.5in #Min. strap drop: 47.5cm/18.7in #Max. strap drop: 52.5cm/20.7in",
       "materialComposition": "Outer: 100% cotton #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags"
       ],
@@ -394135,6 +394409,100 @@
       "label": "New In"
     },
     {
+      "id": "81328401",
+      "title": "Small Check Shoulder Bag",
+      "url": "https://uk.burberry.com/small-check-shoulder-bag-p81328401",
+      "color": "Archive beige",
+      "gbpPrice": 1095.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/81328401/1.jpg",
+      "images": [
+        "/products/bb-pdp/81328401/1.jpg",
+        "/products/bb-pdp/81328401/2.jpg",
+        "/products/bb-pdp/81328401/3.jpg",
+        "/products/bb-pdp/81328401/4.jpg",
+        "/products/bb-pdp/81328401/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/F4549DEC-69A7-4C89-8CDC-66D13D32591B",
+        "https://assets.burberry.com/is/image/Burberryltd/C8DBFF80-E2E5-492B-AC89-2AAB8F8C5205",
+        "https://assets.burberry.com/is/image/Burberryltd/33A1AE4A-CF68-4472-BBCD-A7577F36A2AA",
+        "https://assets.burberry.com/is/image/Burberryltd/22B573EA-5122-4D1D-B89B-E68330658698",
+        "https://assets.burberry.com/is/image/Burberryltd/DF578041-00F8-4227-A50B-179A15A9291D"
+      ],
+      "sizes": [
+        {
+          "sku": "81328401",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 103,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 103
+        }
+      ],
+      "swatches": [
+        {
+          "id": "81328401",
+          "url": "/small-check-shoulder-bag-p81328401",
+          "label": "Archive beige",
+          "name": "Small Check Shoulder Bag",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/A6937A32-9632-4CE5-96DF-FD844F375D51"
+        },
+        {
+          "id": "81353801",
+          "url": "/small-check-shoulder-bag-p81353801",
+          "label": "Chocolate brown",
+          "name": "Small Check Shoulder Bag",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/A2C028C1-FFEF-4B92-A52F-5A6FEE1EA4A1"
+        }
+      ],
+      "description": "A shoulder bag made in Italy from House Check cotton canvas in signature archive beige, trimmed with smooth calf leather. The lightweight design is lined with cotton and detailed with a slim shoulder strap and a detachable Knight stamp charm, an archival motif first seen on Burberry bags in the 1980s. Sized to fit everyday essentials, including a phone, wallet and sunglasses.##Leather shoulder strap #Zip closure #Hand-painted edges #Brushed metal hardware #Embossed Burberry lettering at top#Detachable Knight stamp charm#Cotton lining#Comes with a dust bag",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "A shoulder bag made in Italy from House Check cotton canvas in signature archive beige, trimmed with smooth calf leather. The lightweight design is lined with cotton and detailed with a slim shoulder strap and a detachable Knight stamp charm, an archival motif first seen on Burberry bags in the 1980s. Sized to fit everyday essentials, including a phone, wallet and sunglasses.",
+            "Leather shoulder strap",
+            "Zip closure",
+            "Hand-painted edges",
+            "Brushed metal hardware",
+            "Embossed Burberry lettering at top",
+            "Detachable Knight stamp charm",
+            "Cotton lining",
+            "Comes with a dust bag",
+            "Item 81328401"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "30 x 12.5 x 30cm/11.8 x 4.9 x 11.8in",
+            "Min. strap drop: 35cm/13.8in",
+            "Max. strap drop: 48cm/18.9in"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Outer: 100% cotton",
+            "Trim: 100% calf leather",
+            "Lining: 100% cotton",
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "30 x 12.5 x 30cm/11.8 x 4.9 x 11.8in#Min. strap drop: 35cm/13.8in#Max. strap drop: 48cm/18.9in",
+      "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
+      "collections": [
+        "bb-bags-collections-check"
+      ],
+      "label": "New In"
+    },
+    {
       "id": "81328471",
       "title": "Check and Leather Opal Loafers",
       "url": "https://uk.burberry.com/check-and-leather-opal-loafers-p81328471",
@@ -395338,6 +395706,7 @@
       "measurements": "24.5 x 13 x 19.5cm/9.7 x 5.1 x 7.7in #Handle drop: 9cm/3.5in #Min. strap drop: 42cm/16.5in #Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf hair #Trim: 100% calf leather #Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-new",
         "bb-women-top-handle-bags"
@@ -395433,6 +395802,7 @@
       "measurements": "30.5 x 13 x 22.5cm/12 x 5.1 x 8.9in#Handle drop: 12cm/4.7in#Min. strap drop: 45cm/17.7in#Max. strap drop: 52cm/20.5in",
       "materialComposition": "Outer: 100% calf hair#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-cotswolds",
         "bb-women-bags",
         "bb-women-new",
         "bb-women-top-handle-bags"
@@ -399865,6 +400235,7 @@
       "measurements": "30 x 15 x 21cm/11.8 x 5.9 x 8.3in #Handle drop: 10cm/3.9in#Min. strap drop: 37.5cm/14.8in #Max. strap drop: 42.5cm/16.7in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags",
         "bb-women-new",
@@ -399952,6 +400323,7 @@
       "measurements": "25 x 8.5 x 18cm/9.8 x 3.3 x 7.1in#Min. strap drop: 38cm/15in#Max. strap drop: 59cm/23.2in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-crossbody-bags"
       ],
@@ -400038,6 +400410,7 @@
       "measurements": "30 x 12.5 x 30cm/11.8 x 4.9 x 11.8in#Min. strap drop: 35cm/13.8in#Max. strap drop: 48cm/18.9in",
       "materialComposition": "Outer: 100% cotton#Trim: 100% calf leather#Lining: 100% cotton",
       "collections": [
+        "bb-bags-collections-check",
         "bb-women-bags",
         "bb-women-shoulder-bags",
         "bb-women-tote-bags"
