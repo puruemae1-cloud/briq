@@ -5,94 +5,24 @@ import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
 
-function DropdownLinks({ items, depth = 0 }: { items: NavChild[]; depth?: number }) {
+/** Header mega-menu: brands only (no nested collections under a brand). */
+function BrandLinks({ items }: { items: NavChild[] }) {
   return (
     <>
-      {items.map((child) => {
-        const hasKids = Boolean(child.children?.length) && !child.navLeaf;
-        return (
-          <div
-            key={child.id}
-            className={[
-              depth > 0 ? `nav-dropdown__nest nav-dropdown__nest--d${depth}` : "",
-              hasKids ? "nav-dropdown__branch" : "",
-            ]
-              .filter(Boolean)
-              .join(" ") || undefined}
-          >
-            <Link
-              href={child.href}
-              className={[
-                hasKids ? "nav-dropdown__parent" : "",
-                child.id === "cw-clearance" || child.id === "gg-sale"
-                  ? "nav-link--clearance"
-                  : "",
-              ]
-                .filter(Boolean)
-                .join(" ") || undefined}
-            >
-              {child.labelKo}
-            </Link>
-            {hasKids ? (
-              <div className="nav-dropdown__group">
-                <DropdownLinks items={child.children!} depth={depth + 1} />
-              </div>
-            ) : null}
-          </div>
-        );
-      })}
-    </>
-  );
-}
-
-/** Accordion branches — collapsed until tapped. */
-function MobileBranches({
-  items,
-  depth = 0,
-}: {
-  items: NavChild[];
-  depth?: number;
-}) {
-  return (
-    <>
-      {items.map((child) =>
-        child.children?.length && !child.navLeaf ? (
-          <details
-            key={child.id}
-            className={`mobile-drawer__branch mobile-drawer__branch--d${depth}`}
-          >
-            <summary className="mobile-drawer__summary">
-              <span>{child.labelKo}</span>
-              <ChevronDown
-                className="mobile-drawer__chevron"
-                size={16}
-                aria-hidden
-              />
-            </summary>
-            <div className="mobile-drawer__branch-body">
-              <a href={child.href} className="mobile-drawer__all">
-                전체 보기
-              </a>
-              <MobileBranches items={child.children} depth={depth + 1} />
-            </div>
-          </details>
-        ) : (
-          <a
-            key={child.id}
+      {items.map((child) => (
+        <div key={child.id}>
+          <Link
             href={child.href}
-            className={[
-              depth === 0 ? "mobile-drawer__sub" : "mobile-drawer__sub2",
+            className={
               child.id === "cw-clearance" || child.id === "gg-sale"
                 ? "nav-link--clearance"
-                : "",
-            ]
-              .filter(Boolean)
-              .join(" ")}
+                : undefined
+            }
           >
             {child.labelKo}
-          </a>
-        ),
-      )}
+          </Link>
+        </div>
+      ))}
     </>
   );
 }
@@ -138,7 +68,7 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     <ChevronDown size={14} aria-hidden />
                   </Link>
                   <div className="nav-dropdown">
-                    <DropdownLinks items={c.children} />
+                    <BrandLinks items={c.children} />
                   </div>
                 </div>
               ) : (
@@ -192,7 +122,22 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     <a href={c.href} className="mobile-drawer__all">
                       전체 보기
                     </a>
-                    <MobileBranches items={c.children} />
+                    {c.children.map((child) => (
+                      <a
+                        key={child.id}
+                        href={child.href}
+                        className={[
+                          "mobile-drawer__sub",
+                          child.id === "cw-clearance" || child.id === "gg-sale"
+                            ? "nav-link--clearance"
+                            : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                      >
+                        {child.labelKo}
+                      </a>
+                    ))}
                   </div>
                 </details>
               ) : (
