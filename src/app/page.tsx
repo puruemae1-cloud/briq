@@ -9,7 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
 import { navCategories } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
-import { sortProducts } from "@/lib/product-sort";
+import { getHomepageRailProducts } from "@/lib/product-sort";
 
 export default async function HomePage() {
   const heroImage = pickRotating(heroImages);
@@ -42,8 +42,8 @@ export default async function HomePage() {
         {homeLookBanners.map((banner, i) => {
           const category = navCategories.find((c) => c.id === banner.categoryId);
           const products = banner.categoryId
-            ? sortProducts(getProductsByCategory(banner.categoryId), "new").slice(
-                0,
+            ? getHomepageRailProducts(
+                getProductsByCategory(banner.categoryId),
                 4,
               )
             : [];

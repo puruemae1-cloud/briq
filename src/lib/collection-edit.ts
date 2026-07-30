@@ -1,4 +1,8 @@
 import type { Product } from "@/data/products";
+import {
+  compareProductsByNewest,
+  sortProducts,
+} from "@/lib/product-sort";
 
 /** Curated homepage / 100 Collection section roles. */
 export type EditTier = "signature" | "bestseller" | "new";
@@ -19,15 +23,6 @@ const SIGNATURE_MIN = 1_000_000;
 /** Fixed max grid size for every 100 Collection section. */
 export const SECTION_LIMIT = 20;
 
-function registeredMs(product: Product) {
-  const ms = product.registeredAt ? Date.parse(product.registeredAt) : 0;
-  return Number.isFinite(ms) ? ms : 0;
-}
-
-function byNewest(a: Product, b: Product) {
-  return registeredMs(b) - registeredMs(a) || a.id.localeCompare(b.id);
-}
-
 export type CuratedEdit = {
   signature: Product[];
   bestseller: Product[];
@@ -38,7 +33,7 @@ export type CuratedEdit = {
  * Build the three 100 Collection sections — up to SECTION_LIMIT each.
  * - signature: ≥100만 원, 최신등록순 (패딩 없음)
  * - bestseller: 실제 결제 1회 이상인 상품만, 구매수 → 최신순 (패딩 없음)
- * - new: catalogue-wide 최신등록순
+ * - new: catalogue-wide 최신등록순 (`registeredAt`)
  *
  * Always set `registeredAt` on new products so 신상품 큐레이션 stays correct.
  */
@@ -46,10 +41,10 @@ export function curateCollectionEdit(
   products: Product[],
   purchaseCounts: Record<string, number> = {},
 ): CuratedEdit {
-  const signature = products
-    .filter((p) => p.price >= SIGNATURE_MIN)
-    .sort(byNewest)
-    .slice(0, SECTION_LIMIT);
+  const signature = sortProducts(
+    products.filter((p) => p.price >= SIGNATURE_MIN),
+    "new",
+  ).slice(0, SECTION_LIMIT);
 
   const bestseller = products
     .filter((p) => (purchaseCounts[p.id] ?? 0) >= 1)
@@ -57,11 +52,15 @@ export function curateCollectionEdit(
       const ca = purchaseCounts[a.id] ?? 0;
       const cb = purchaseCounts[b.id] ?? 0;
       if (cb !== ca) return cb - ca;
-      return byNewest(a, b);
+      return compareProductsByNewest(a, b);
     })
     .slice(0, SECTION_LIMIT);
 
-  const newItems = [...products].sort(byNewest).slice(0, SECTION_LIMIT);
+  // Prefer in-stock newest so OOS styles don't fill the 신상품 rail.
+  const inStock = products.filter((p) => p.inStock !== false);
+  const newPool =
+    inStock.length >= SECTION_LIMIT ? inStock : products;
+  const newItems = sortProducts(newPool, "new").slice(0, SECTION_LIMIT);
 
   return { signature, bestseller, newItems };
 }

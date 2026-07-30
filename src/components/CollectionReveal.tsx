@@ -1,60 +1,33 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo } from "react";
-import { ProductCard } from "@/components/ProductCard";
+import { CollectionTierBlock } from "@/components/CollectionTierBlock";
 import type { Product } from "@/data/products";
-import {
-  EDIT_TIER_COPY,
-  curateCollectionEdit,
-  type EditTier,
-} from "@/lib/collection-edit";
+import { SECTION_LIMIT } from "@/lib/collection-edit";
+import { compareProductsByNewest } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
 
-function TierBlock({
-  tier,
+/**
+ * Client-only bestseller tier — re-ranks by live purchase counts.
+ * Signature / 신상품 are server-rendered so newest `registeredAt` is in HTML.
+ */
+export function CollectionBestsellerTier({
   products,
 }: {
-  tier: EditTier;
   products: Product[];
 }) {
-  if (!products.length) return null;
-  const copy = EDIT_TIER_COPY[tier];
-  return (
-    <div className="collection-edit-tier">
-      <header className="collection-edit-tier__head">
-        <h3 className="collection-edit-tier__title">{copy.titleKo}</h3>
-      </header>
-      <div className="product-grid">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/**
- * Three curated sections + link through to the full shop catalogue.
- */
-export function CollectionReveal({ products }: { products: Product[] }) {
   const counts = usePurchases((s) => s.counts);
-  const curated = useMemo(
-    () => curateCollectionEdit(products, counts),
-    [products, counts],
-  );
+  const bestseller = useMemo(() => {
+    return products
+      .filter((p) => (counts[p.id] ?? 0) >= 1)
+      .sort((a, b) => {
+        const ca = counts[a.id] ?? 0;
+        const cb = counts[b.id] ?? 0;
+        if (cb !== ca) return cb - ca;
+        return compareProductsByNewest(a, b);
+      })
+      .slice(0, SECTION_LIMIT);
+  }, [products, counts]);
 
-  return (
-    <>
-      <TierBlock tier="signature" products={curated.signature} />
-      <TierBlock tier="bestseller" products={curated.bestseller} />
-      <TierBlock tier="new" products={curated.newItems} />
-
-      <div className="collection-100__sentinel">
-        <Link href="/shop" className="btn btn-solid collection-100__more-btn">
-          전체 상품 보러가기
-        </Link>
-      </div>
-    </>
-  );
+  return <CollectionTierBlock tier="bestseller" products={bestseller} />;
 }

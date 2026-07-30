@@ -1,7 +1,10 @@
+import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
+import { CollectionBestsellerTier } from "@/components/CollectionReveal";
+import { CollectionTierBlock } from "@/components/CollectionTierBlock";
 import { pickRotating } from "@/data/home-banners";
 import { getCollection100 } from "@/data/products";
-import { CollectionReveal } from "@/components/CollectionReveal";
+import { curateCollectionEdit } from "@/lib/collection-edit";
 
 const collectionBannerImages = [
   "/banners/rot-luxury-1.jpg",
@@ -14,7 +17,9 @@ const collectionBannerImages = [
 
 export function Collection100() {
   const banner = pickRotating(collectionBannerImages, 3);
-  const list = getCollection100();
+  const catalogue = getCollection100();
+  // Server-side: 신상품 / 하이엔드 always reflect newest registeredAt in HTML.
+  const curated = curateCollectionEdit(catalogue);
 
   return (
     <section className="collection-100" id="collection-100" aria-label="Briq 100 컬렉션">
@@ -37,7 +42,18 @@ export function Collection100() {
       </div>
 
       <div className="section collection-100__body">
-        <CollectionReveal products={list} />
+        <CollectionTierBlock tier="signature" products={curated.signature} />
+        <CollectionBestsellerTier products={catalogue} />
+        <CollectionTierBlock tier="new" products={curated.newItems} />
+
+        <div className="collection-100__sentinel">
+          <Link
+            href="/shop?sort=new"
+            className="btn btn-solid collection-100__more-btn"
+          >
+            전체 상품 보러가기
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -22,5 +22,5 @@ When adding products:
 4. Collection filler SKUs (`briq-col-*`) keep older dates on purpose.
 5. 100 Collection sections (see `src/lib/collection-edit.ts`):
    - **하이엔드**: price ≥ 1,000,000 — newest first
-   - **첫 구매자 만족도 1위**: price 100,000–300,000 — currently newest first (payment filter off until live orders)
-   - **신상품 큐레이션**: catalogue-wide newest by `registeredAt` (overlaps OK — newest flagships like CW rise to the top)
+  - **첫 구매자 만족도 1위**: 결제 1회 이상 — 구매수 → 최신등록순
+  - **신상품 큐레이션**: catalogue-wide newest by `registeredAt` (server-rendered; overlaps OK)

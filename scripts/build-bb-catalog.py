@@ -20,13 +20,18 @@ TRANSLATE_CACHE = ROOT / "src/data/bb/bb-translate-cache.json"
 
 
 def load_existing_registered() -> dict[str, str]:
-    """Keep stable Briq registration times across rebuilds."""
+    """Keep stable Briq registration times across rebuilds.
+
+    Only match style-level product ids (2-space indent), never variant ids —
+    variants sit after `registeredAt` and would otherwise steal the next
+    product's timestamp.
+    """
     if not OUT_PATH.exists():
         return {}
     text = OUT_PATH.read_text()
     out: dict[str, str] = {}
     for m in re.finditer(
-        r'id:\s*"(bb-[^"]+)"[\s\S]*?registeredAt:\s*"([^"]+)"',
+        r'\n  \{\n    id: "(bb-[^"]+)"[\s\S]*?\n    registeredAt: "([^"]+)"',
         text,
     ):
         out[m.group(1)] = m.group(2)
@@ -38,7 +43,8 @@ def catalog_max_registered(*paths: Path) -> datetime | None:
     for path in paths:
         if not path.exists():
             continue
-        for m in re.finditer(r'registeredAt:\s*"([^"]+)"', path.read_text()):
+        # Style-level dates only (same indent as product registeredAt).
+        for m in re.finditer(r'\n    registeredAt: "([^"]+)"', path.read_text()):
             try:
                 ts = datetime.fromisoformat(m.group(1).replace("Z", "+00:00"))
             except ValueError:
@@ -55,6 +61,11 @@ def briq_registered_at(
     batch_start: datetime,
     index: int,
 ) -> str:
+    """Existing styles keep their first Briq registration time.
+
+    Brand-new style ids always get timestamps after every known catalogue
+    max so homepage / shop `sort=new` rails surface them immediately.
+    """
     if pid in existing:
         return existing[pid]
     ts = batch_start + timedelta(seconds=index)
@@ -375,12 +386,14 @@ def main() -> None:
     briq: list[dict] = []
     existing_reg = load_existing_registered()
     peer_max = catalog_max_registered(
+        OUT_PATH,
         ROOT / "src/data/cw/cw-catalog.ts",
         ROOT / "src/data/gg/gg-catalog.ts",
     )
     batch_start = datetime.now(timezone.utc)
     if peer_max and batch_start <= peer_max:
-        # New BB styles should sort after CW/GG on 신상품 큐레이션
+        # New BB styles must sort after every existing Briq registration
+        # (BB + CW/GG) so homepage luxury / 신상품 rails stay newest-first.
         batch_start = peer_max + timedelta(seconds=1)
     new_index = 0
 

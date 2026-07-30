@@ -77,7 +77,7 @@ export const homeLookBanners: LookBanner[] = [
     title: "Heritage & Modern",
     titleKo: "명품 하이엔드 의류",
     support: "영국 헤리티지와 현대 럭셔리의 교차점.",
-    href: "/shop?category=luxury",
+    href: "/shop?category=luxury&sort=new",
     cta: "명품 하이엔드 의류 쇼핑",
     images: [
       "/banners/rot-luxury-1.jpg",

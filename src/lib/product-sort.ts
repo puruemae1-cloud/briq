@@ -80,6 +80,19 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
   }
 }
 
+/**
+ * Homepage lookbook rails — always newest registered first.
+ * Prefers in-stock styles so OOS newest items don't occupy the rail.
+ */
+export function getHomepageRailProducts(
+  list: Product[],
+  limit = 4,
+): Product[] {
+  const inStock = list.filter((p) => p.inStock !== false);
+  const pool = inStock.length >= limit ? inStock : list;
+  return sortProducts(pool, "new").slice(0, limit);
+}
+
 /** Build a /shop href while preserving filters and updating sort. */
 export function buildShopHref(params: {
   category?: string;
