@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import time
@@ -25,6 +26,13 @@ PAGE_LIMIT = 100
 MAX_WORKERS = 8
 IMG_PER_COLOUR = 6
 
+# Weekly sync sets BB_REFRESH_STOCK=1 so PDP sizes/prices/stock re-fetch
+# while keeping already-downloaded local images.
+REFRESH_STOCK = os.environ.get("BB_REFRESH_STOCK", "").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
 def fetch(url: str, retries: int = 4) -> str:
     last: Exception | None = None
@@ -230,11 +238,28 @@ def download_images(product_id: str, urls: list[str]) -> list[str]:
     return local
 
 
-def enrich_one(product_id: str, path: str, cache: dict) -> dict:
-    if product_id in cache and cache[product_id].get("sizes") is not None:
-        cached = cache[product_id]
-        if cached.get("localImages"):
-            return cached
+def enrich_one(
+    product_id: str,
+    path: str,
+    cache: dict,
+    *,
+    refresh_stock: bool | None = None,
+) -> dict:
+    """Fetch PDP into cache. Reuses local images when possible.
+
+    When refresh_stock (or BB_REFRESH_STOCK) is on, always re-hit the PDP so
+    size-level isInStock / prices update for weekly sync.
+    """
+    do_refresh = REFRESH_STOCK if refresh_stock is None else refresh_stock
+    cached = cache.get(product_id)
+    if (
+        not do_refresh
+        and cached
+        and cached.get("sizes") is not None
+        and cached.get("localImages")
+    ):
+        return cached
+
     url = path if path.startswith("http") else f"{BASE}{path}"
     html = fetch(url)
     pdp = extract_pdp(html, product_id)
@@ -244,7 +269,11 @@ def enrich_one(product_id: str, path: str, cache: dict) -> dict:
     else:
         pdp["sourceUrl"] = url
     imgs = pdp.get("images") or []
-    pdp["localImages"] = download_images(product_id, imgs)
+    if cached and cached.get("localImages") and do_refresh:
+        # Keep disk images; only refresh stock/price/copy from PDP.
+        pdp["localImages"] = cached["localImages"]
+    else:
+        pdp["localImages"] = download_images(product_id, imgs)
     cache[product_id] = pdp
     return pdp
 
@@ -265,14 +294,20 @@ def main() -> None:
         cache = json.loads(PDP_CACHE.read_text())
 
     membership: dict[str, set[str]] = {}
-    # Keep men collections from previous scrape so women-only runs don't wipe them
+    # Keep non-women hubs so a women-only run does not wipe later scrapes
+    _keep_prefixes = (
+        "bb-men-",
+        "bb-kids-",
+        "bb-gifts-",
+        "bb-scarves-",
+        "bb-beauty-",
+        "bb-bags-collections",
+    )
     for pid, prod in old_products.items():
         cols = [
             c
             for c in (prod.get("collections") or [])
-            if str(c).startswith("bb-men-")
-            or str(c).startswith("bb-kids-")
-            or str(c).startswith("bb-gifts-")
+            if any(str(c).startswith(p) for p in _keep_prefixes)
         ]
         if cols:
             membership[pid] = set(cols)
@@ -280,9 +315,7 @@ def main() -> None:
     plp_meta: dict[str, dict] = {
         k: v
         for k, v in (existing.get("collections") or {}).items()
-        if str(k).startswith("bb-men-")
-        or str(k).startswith("bb-kids-")
-        or str(k).startswith("bb-gifts-")
+        if any(str(k).startswith(p) for p in _keep_prefixes)
     }
 
     for coll_id, label, path, top, _parent in WOMEN_COLLECTIONS:

@@ -119,13 +119,19 @@ def main() -> None:
         for pid, cols in membership.items()
         if any(str(c).startswith(PREFIX) for c in cols)
     )
-    need = [
-        pid
-        for pid in scarf_ids
-        if pid not in cache or not (cache.get(pid) or {}).get("localImages")
-    ]
+    refresh = bool(getattr(_scrape, "REFRESH_STOCK", False))
+    need = (
+        scarf_ids
+        if refresh
+        else [
+            pid
+            for pid in scarf_ids
+            if pid not in cache or not (cache.get(pid) or {}).get("localImages")
+        ]
+    )
     print(
-        f"Beauty-linked colourways: {len(scarf_ids)} (enrich {len(need)})",
+        f"Beauty-linked colourways: {len(scarf_ids)} (enrich {len(need)}"
+        f"{', stock refresh' if refresh else ''})",
         flush=True,
     )
 

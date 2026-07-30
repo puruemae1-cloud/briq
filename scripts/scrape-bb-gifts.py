@@ -119,14 +119,19 @@ def main() -> None:
         for pid, cols in membership.items()
         if any(str(c).startswith(PREFIX) for c in cols)
     )
-    # Only enrich colourways missing local images / PDP cache
-    need = [
-        pid
-        for pid in gift_ids
-        if pid not in cache or not (cache.get(pid) or {}).get("localImages")
-    ]
+    refresh = bool(getattr(_scrape, "REFRESH_STOCK", False))
+    need = (
+        gift_ids
+        if refresh
+        else [
+            pid
+            for pid in gift_ids
+            if pid not in cache or not (cache.get(pid) or {}).get("localImages")
+        ]
+    )
     print(
-        f"Gifts-linked colourways: {len(gift_ids)} (enrich {len(need)})",
+        f"Gifts-linked colourways: {len(gift_ids)} (enrich {len(need)}"
+        f"{', stock refresh' if refresh else ''})",
         flush=True,
     )
 
