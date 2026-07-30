@@ -174,7 +174,59 @@ export type SubcategoryId =
   | "bb-men-gifts"
   | "bb-men-fragrance"
   | "bb-men-personalised-gifts"
-  | "bb-men-personalised-scarves";
+  | "bb-men-personalised-scarves"
+  | "bb-kids"
+  | "bb-kids-latest"
+  | "bb-kids-new"
+  | "bb-kids-back-to-school"
+  | "bb-kids-summer-styles"
+  | "bb-kids-classics"
+  | "bb-kids-newborn"
+  | "bb-kids-newborn-onesies-dresses"
+  | "bb-kids-newborn-shoes-accessories"
+  | "bb-kids-baby"
+  | "bb-kids-baby-coats-jackets"
+  | "bb-kids-baby-dresses"
+  | "bb-kids-baby-tops"
+  | "bb-kids-baby-knitwear"
+  | "bb-kids-baby-skirts-trousers"
+  | "bb-kids-baby-swimwear"
+  | "bb-kids-baby-shoes-accessories"
+  | "bb-kids-girls"
+  | "bb-kids-girls-coats-jackets"
+  | "bb-kids-girls-dresses"
+  | "bb-kids-girls-tops"
+  | "bb-kids-girls-hoodies-sweatshirts"
+  | "bb-kids-girls-knitwear"
+  | "bb-kids-girls-skirts-trousers"
+  | "bb-kids-girls-swimwear"
+  | "bb-kids-girls-scarves"
+  | "bb-kids-girls-shoes-accessories"
+  | "bb-kids-boys"
+  | "bb-kids-boys-coats-jackets"
+  | "bb-kids-boys-polos-tshirts"
+  | "bb-kids-boys-shirts"
+  | "bb-kids-boys-knitwear"
+  | "bb-kids-boys-hoodies-sweatshirts"
+  | "bb-kids-boys-trousers-shorts"
+  | "bb-kids-boys-swimwear"
+  | "bb-kids-boys-scarves"
+  | "bb-kids-boys-shoes-accessories"
+  | "bb-bags-kids"
+  | "bb-kids-bags"
+  | "bb-shoes-kids"
+  | "bb-kids-shoes"
+  | "bb-accessories-kids"
+  | "bb-kids-accessories"
+  | "bb-kids-hats-socks"
+  | "bb-kids-hair-accessories"
+  | "bb-kids-scarves"
+  | "bb-kids-gifts"
+  | "bb-kids-gift-girls-scarves"
+  | "bb-kids-gift-boys-scarves"
+  | "bb-kids-newborn-gifts"
+  | "bb-kids-newborn-gift-sets"
+  | "bb-kids-baby-gifts";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -396,10 +448,140 @@ export const BB_MEN_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_MEN_GIFT_IDS,
 ];
 
-/** All Burberry leaf ids (women + men) used for PLP membership. */
+export const BB_KIDS_LATEST_IDS: SubcategoryId[] = [
+  "bb-kids-new",
+  "bb-kids-back-to-school",
+  "bb-kids-summer-styles",
+  "bb-kids-classics",
+];
+
+export const BB_KIDS_NEWBORN_IDS: SubcategoryId[] = [
+  "bb-kids-newborn",
+  "bb-kids-newborn-onesies-dresses",
+  "bb-kids-newborn-shoes-accessories",
+];
+
+export const BB_KIDS_NEWBORN_APPAREL_IDS: SubcategoryId[] = [
+  "bb-kids-newborn",
+  "bb-kids-newborn-onesies-dresses",
+];
+
+export const BB_KIDS_BABY_IDS: SubcategoryId[] = [
+  "bb-kids-baby",
+  "bb-kids-baby-coats-jackets",
+  "bb-kids-baby-dresses",
+  "bb-kids-baby-tops",
+  "bb-kids-baby-knitwear",
+  "bb-kids-baby-skirts-trousers",
+  "bb-kids-baby-swimwear",
+  "bb-kids-baby-shoes-accessories",
+];
+
+export const BB_KIDS_BABY_APPAREL_IDS: SubcategoryId[] = [
+  "bb-kids-baby",
+  "bb-kids-baby-coats-jackets",
+  "bb-kids-baby-dresses",
+  "bb-kids-baby-tops",
+  "bb-kids-baby-knitwear",
+  "bb-kids-baby-skirts-trousers",
+  "bb-kids-baby-swimwear",
+];
+
+export const BB_KIDS_GIRLS_IDS: SubcategoryId[] = [
+  "bb-kids-girls",
+  "bb-kids-girls-coats-jackets",
+  "bb-kids-girls-dresses",
+  "bb-kids-girls-tops",
+  "bb-kids-girls-hoodies-sweatshirts",
+  "bb-kids-girls-knitwear",
+  "bb-kids-girls-skirts-trousers",
+  "bb-kids-girls-swimwear",
+  "bb-kids-girls-scarves",
+  "bb-kids-girls-shoes-accessories",
+];
+
+export const BB_KIDS_GIRLS_APPAREL_IDS: SubcategoryId[] = [
+  "bb-kids-girls",
+  "bb-kids-girls-coats-jackets",
+  "bb-kids-girls-dresses",
+  "bb-kids-girls-tops",
+  "bb-kids-girls-hoodies-sweatshirts",
+  "bb-kids-girls-knitwear",
+  "bb-kids-girls-skirts-trousers",
+  "bb-kids-girls-swimwear",
+  "bb-kids-girls-scarves",
+];
+
+export const BB_KIDS_BOYS_IDS: SubcategoryId[] = [
+  "bb-kids-boys",
+  "bb-kids-boys-coats-jackets",
+  "bb-kids-boys-polos-tshirts",
+  "bb-kids-boys-shirts",
+  "bb-kids-boys-knitwear",
+  "bb-kids-boys-hoodies-sweatshirts",
+  "bb-kids-boys-trousers-shorts",
+  "bb-kids-boys-swimwear",
+  "bb-kids-boys-scarves",
+  "bb-kids-boys-shoes-accessories",
+];
+
+export const BB_KIDS_BOYS_APPAREL_IDS: SubcategoryId[] = [
+  "bb-kids-boys",
+  "bb-kids-boys-coats-jackets",
+  "bb-kids-boys-polos-tshirts",
+  "bb-kids-boys-shirts",
+  "bb-kids-boys-knitwear",
+  "bb-kids-boys-hoodies-sweatshirts",
+  "bb-kids-boys-trousers-shorts",
+  "bb-kids-boys-swimwear",
+  "bb-kids-boys-scarves",
+];
+
+export const BB_KIDS_BAG_IDS: SubcategoryId[] = ["bb-kids-bags"];
+
+export const BB_KIDS_SHOE_IDS: SubcategoryId[] = [
+  "bb-kids-shoes",
+  "bb-kids-newborn-shoes-accessories",
+  "bb-kids-baby-shoes-accessories",
+  "bb-kids-girls-shoes-accessories",
+  "bb-kids-boys-shoes-accessories",
+];
+
+export const BB_KIDS_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
+  "bb-kids-hats-socks",
+  "bb-kids-hair-accessories",
+  "bb-kids-scarves",
+  "bb-kids-girls-scarves",
+  "bb-kids-boys-scarves",
+];
+
+export const BB_KIDS_GIFT_IDS: SubcategoryId[] = [
+  "bb-kids-gifts",
+  "bb-kids-gift-girls-scarves",
+  "bb-kids-gift-boys-scarves",
+  "bb-kids-newborn-gifts",
+  "bb-kids-newborn-gift-sets",
+  "bb-kids-baby-gifts",
+];
+
+/** Burberry Kids leaf collection ids used for PLP membership. */
+export const BB_KIDS_COLLECTION_IDS: SubcategoryId[] = [
+  ...BB_KIDS_LATEST_IDS,
+  ...BB_KIDS_NEWBORN_IDS,
+  ...BB_KIDS_BABY_IDS,
+  ...BB_KIDS_GIRLS_IDS,
+  ...BB_KIDS_BOYS_IDS,
+  ...BB_KIDS_BAG_IDS,
+  ...BB_KIDS_SHOE_IDS,
+  ...BB_KIDS_ACCESSORY_LEAF_IDS,
+  ...BB_KIDS_GIFT_IDS,
+];
+
+/** All Burberry leaf ids (women + men + kids) used for PLP membership. */
 export const BB_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_WOMEN_COLLECTION_IDS,
   ...BB_MEN_COLLECTION_IDS,
+  ...BB_KIDS_COLLECTION_IDS,
 ];
 
 export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
@@ -412,6 +594,14 @@ export const BB_LUXURY_MEN_IDS: SubcategoryId[] = [
   ...BB_MEN_LATEST_IDS,
   ...BB_MEN_COATS_IDS,
   ...BB_MEN_CLOTHES_IDS,
+];
+
+export const BB_LUXURY_KIDS_IDS: SubcategoryId[] = [
+  ...BB_KIDS_LATEST_IDS,
+  ...BB_KIDS_NEWBORN_APPAREL_IDS,
+  ...BB_KIDS_BABY_APPAREL_IDS,
+  ...BB_KIDS_GIRLS_APPAREL_IDS,
+  ...BB_KIDS_BOYS_APPAREL_IDS,
 ];
 
 export type NavChild = {
@@ -449,7 +639,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
   "gg-bestsellers": [...GG_BESTSELLER_IDS],
-  burberry: [...BB_LUXURY_WOMEN_IDS, ...BB_LUXURY_MEN_IDS],
+  burberry: [...BB_LUXURY_WOMEN_IDS, ...BB_LUXURY_MEN_IDS, ...BB_LUXURY_KIDS_IDS],
   "bb-women": [...BB_LUXURY_WOMEN_IDS],
   "bb-women-latest": [...BB_WOMEN_LATEST_IDS],
   "bb-women-coats-jackets": [...BB_WOMEN_COATS_IDS],
@@ -458,35 +648,52 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-men-latest": [...BB_MEN_LATEST_IDS],
   "bb-men-coats-jackets": [...BB_MEN_COATS_IDS],
   "bb-men-clothes": [...BB_MEN_CLOTHES_IDS],
+  "bb-kids": [...BB_LUXURY_KIDS_IDS],
+  "bb-kids-latest": [...BB_KIDS_LATEST_IDS],
+  "bb-kids-newborn": [...BB_KIDS_NEWBORN_IDS],
+  "bb-kids-baby": [...BB_KIDS_BABY_IDS],
+  "bb-kids-girls": [...BB_KIDS_GIRLS_IDS],
+  "bb-kids-boys": [...BB_KIDS_BOYS_IDS],
   "burberry-bags": [
     "bb-bags-womens",
     "bb-bags-mens",
+    "bb-bags-kids",
     ...BB_WOMEN_BAG_IDS,
     ...BB_MEN_BAG_IDS,
+    ...BB_KIDS_BAG_IDS,
   ],
   "bb-bags-womens": [...BB_WOMEN_BAG_IDS],
   "bb-women-bags": [...BB_WOMEN_BAG_IDS],
   "bb-bags-mens": [...BB_MEN_BAG_IDS],
   "bb-men-bags": [...BB_MEN_BAG_IDS],
+  "bb-bags-kids": [...BB_KIDS_BAG_IDS],
+  "bb-kids-bags": [...BB_KIDS_BAG_IDS],
   "burberry-shoes": [
     "bb-shoes-womens",
     "bb-shoes-mens",
+    "bb-shoes-kids",
     ...BB_WOMEN_SHOE_IDS,
     ...BB_MEN_SHOE_IDS,
+    ...BB_KIDS_SHOE_IDS,
   ],
   "bb-shoes-womens": [...BB_WOMEN_SHOE_IDS],
   "bb-women-shoes": [...BB_WOMEN_SHOE_IDS],
   "bb-shoes-mens": [...BB_MEN_SHOE_IDS],
   "bb-men-shoes": [...BB_MEN_SHOE_IDS],
+  "bb-shoes-kids": [...BB_KIDS_SHOE_IDS],
+  "bb-kids-shoes": [...BB_KIDS_SHOE_IDS],
   "burberry-accessories": [
     "bb-accessories-womens",
     "bb-accessories-mens",
+    "bb-accessories-kids",
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
     ...BB_WOMEN_GIFT_IDS,
     ...BB_MEN_ACCESSORY_LEAF_IDS,
     ...BB_MEN_WALLET_IDS,
     ...BB_MEN_GIFT_IDS,
+    ...BB_KIDS_ACCESSORY_LEAF_IDS,
+    ...BB_KIDS_GIFT_IDS,
   ],
   "bb-accessories-womens": [
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
@@ -504,6 +711,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-men-accessories": [...BB_MEN_ACCESSORY_LEAF_IDS],
   "bb-men-wallets": [...BB_MEN_WALLET_IDS],
   "bb-men-gifts": [...BB_MEN_GIFT_IDS],
+  "bb-accessories-kids": [
+    ...BB_KIDS_ACCESSORY_LEAF_IDS,
+    ...BB_KIDS_GIFT_IDS,
+  ],
+  "bb-kids-accessories": [...BB_KIDS_ACCESSORY_LEAF_IDS],
+  "bb-kids-gifts": [...BB_KIDS_GIFT_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -610,6 +823,80 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-men-activewear", labelKo: "Activewear", href: "/shop?category=luxury&sub=bb-men-activewear" },
                   { id: "bb-men-denim", labelKo: "Denim", href: "/shop?category=luxury&sub=bb-men-denim" },
                   { id: "bb-men-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-men-swimwear" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-kids",
+            labelKo: "키즈용",
+            href: "/shop?category=luxury&sub=bb-kids",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-kids-latest",
+                labelKo: "Latest",
+                href: "/shop?category=luxury&sub=bb-kids-latest",
+                children: [
+                  { id: "bb-kids-new", labelKo: "New", href: "/shop?category=luxury&sub=bb-kids-new" },
+                  { id: "bb-kids-back-to-school", labelKo: "Back to School", href: "/shop?category=luxury&sub=bb-kids-back-to-school" },
+                  { id: "bb-kids-summer-styles", labelKo: "Summer Styles", href: "/shop?category=luxury&sub=bb-kids-summer-styles" },
+                  { id: "bb-kids-classics", labelKo: "버버리 Classics", href: "/shop?category=luxury&sub=bb-kids-classics" },
+                ],
+              },
+              {
+                id: "bb-kids-newborn",
+                labelKo: "Newborn",
+                href: "/shop?category=luxury&sub=bb-kids-newborn",
+                children: [
+                  { id: "bb-kids-newborn-onesies-dresses", labelKo: "Onesies & Dresses", href: "/shop?category=luxury&sub=bb-kids-newborn-onesies-dresses" },
+                  { id: "bb-kids-newborn-shoes-accessories", labelKo: "Shoes & Accessories", href: "/shop?category=luxury&sub=bb-kids-newborn-shoes-accessories" },
+                ],
+              },
+              {
+                id: "bb-kids-baby",
+                labelKo: "Baby",
+                href: "/shop?category=luxury&sub=bb-kids-baby",
+                children: [
+                  { id: "bb-kids-baby-coats-jackets", labelKo: "Coats & Jackets", href: "/shop?category=luxury&sub=bb-kids-baby-coats-jackets" },
+                  { id: "bb-kids-baby-dresses", labelKo: "Dresses", href: "/shop?category=luxury&sub=bb-kids-baby-dresses" },
+                  { id: "bb-kids-baby-tops", labelKo: "Tops", href: "/shop?category=luxury&sub=bb-kids-baby-tops" },
+                  { id: "bb-kids-baby-knitwear", labelKo: "Knitwear", href: "/shop?category=luxury&sub=bb-kids-baby-knitwear" },
+                  { id: "bb-kids-baby-skirts-trousers", labelKo: "Skirts & Trousers", href: "/shop?category=luxury&sub=bb-kids-baby-skirts-trousers" },
+                  { id: "bb-kids-baby-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-kids-baby-swimwear" },
+                  { id: "bb-kids-baby-shoes-accessories", labelKo: "Shoes & Accessories", href: "/shop?category=luxury&sub=bb-kids-baby-shoes-accessories" },
+                ],
+              },
+              {
+                id: "bb-kids-girls",
+                labelKo: "Girls",
+                href: "/shop?category=luxury&sub=bb-kids-girls",
+                children: [
+                  { id: "bb-kids-girls-coats-jackets", labelKo: "Coats & Jackets", href: "/shop?category=luxury&sub=bb-kids-girls-coats-jackets" },
+                  { id: "bb-kids-girls-dresses", labelKo: "Dresses", href: "/shop?category=luxury&sub=bb-kids-girls-dresses" },
+                  { id: "bb-kids-girls-tops", labelKo: "Tops", href: "/shop?category=luxury&sub=bb-kids-girls-tops" },
+                  { id: "bb-kids-girls-hoodies-sweatshirts", labelKo: "Hoodies & Sweatshirts", href: "/shop?category=luxury&sub=bb-kids-girls-hoodies-sweatshirts" },
+                  { id: "bb-kids-girls-knitwear", labelKo: "Knitwear", href: "/shop?category=luxury&sub=bb-kids-girls-knitwear" },
+                  { id: "bb-kids-girls-skirts-trousers", labelKo: "Skirts & Trousers", href: "/shop?category=luxury&sub=bb-kids-girls-skirts-trousers" },
+                  { id: "bb-kids-girls-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-kids-girls-swimwear" },
+                  { id: "bb-kids-girls-scarves", labelKo: "Scarves", href: "/shop?category=luxury&sub=bb-kids-girls-scarves" },
+                  { id: "bb-kids-girls-shoes-accessories", labelKo: "Shoes & Accessories", href: "/shop?category=luxury&sub=bb-kids-girls-shoes-accessories" },
+                ],
+              },
+              {
+                id: "bb-kids-boys",
+                labelKo: "Boys",
+                href: "/shop?category=luxury&sub=bb-kids-boys",
+                children: [
+                  { id: "bb-kids-boys-coats-jackets", labelKo: "Coats & Jackets", href: "/shop?category=luxury&sub=bb-kids-boys-coats-jackets" },
+                  { id: "bb-kids-boys-polos-tshirts", labelKo: "Polos & T-shirts", href: "/shop?category=luxury&sub=bb-kids-boys-polos-tshirts" },
+                  { id: "bb-kids-boys-shirts", labelKo: "Shirts", href: "/shop?category=luxury&sub=bb-kids-boys-shirts" },
+                  { id: "bb-kids-boys-knitwear", labelKo: "Knitwear", href: "/shop?category=luxury&sub=bb-kids-boys-knitwear" },
+                  { id: "bb-kids-boys-hoodies-sweatshirts", labelKo: "Hoodies & Sweatshirts", href: "/shop?category=luxury&sub=bb-kids-boys-hoodies-sweatshirts" },
+                  { id: "bb-kids-boys-trousers-shorts", labelKo: "Trousers & Shorts", href: "/shop?category=luxury&sub=bb-kids-boys-trousers-shorts" },
+                  { id: "bb-kids-boys-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-kids-boys-swimwear" },
+                  { id: "bb-kids-boys-scarves", labelKo: "Scarves", href: "/shop?category=luxury&sub=bb-kids-boys-scarves" },
+                  { id: "bb-kids-boys-shoes-accessories", labelKo: "Shoes & Accessories", href: "/shop?category=luxury&sub=bb-kids-boys-shoes-accessories" },
                 ],
               },
             ],
@@ -763,6 +1050,19 @@ export const navCategories: NavCategory[] = [
               },
             ],
           },
+          {
+            id: "bb-bags-kids",
+            labelKo: "키즈용",
+            href: "/shop?category=bags&sub=bb-bags-kids",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-kids-bags",
+                labelKo: "Bags",
+                href: "/shop?category=bags&sub=bb-kids-bags",
+              },
+            ],
+          },
         ],
       },
     ],
@@ -812,6 +1112,25 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-men-sandals", labelKo: "Sandals", href: "/shop?category=shoes&sub=bb-men-sandals" },
                   { id: "bb-men-boots", labelKo: "Boots", href: "/shop?category=shoes&sub=bb-men-boots" },
                   { id: "bb-men-loafers-lace-ups", labelKo: "Loafers & Lace-ups", href: "/shop?category=shoes&sub=bb-men-loafers-lace-ups" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-shoes-kids",
+            labelKo: "키즈용",
+            href: "/shop?category=shoes&sub=bb-shoes-kids",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-kids-shoes",
+                labelKo: "Shoes & Accessories",
+                href: "/shop?category=shoes&sub=bb-kids-shoes",
+                children: [
+                  { id: "bb-kids-newborn-shoes-accessories", labelKo: "Newborn", href: "/shop?category=shoes&sub=bb-kids-newborn-shoes-accessories" },
+                  { id: "bb-kids-baby-shoes-accessories", labelKo: "Baby", href: "/shop?category=shoes&sub=bb-kids-baby-shoes-accessories" },
+                  { id: "bb-kids-girls-shoes-accessories", labelKo: "Girls", href: "/shop?category=shoes&sub=bb-kids-girls-shoes-accessories" },
+                  { id: "bb-kids-boys-shoes-accessories", labelKo: "Boys", href: "/shop?category=shoes&sub=bb-kids-boys-shoes-accessories" },
                 ],
               },
             ],
@@ -953,6 +1272,38 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-men-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-men-fragrance" },
                   { id: "bb-men-personalised-gifts", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-men-personalised-gifts" },
                   { id: "bb-men-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-men-personalised-scarves" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-accessories-kids",
+            labelKo: "키즈용",
+            href: "/shop?category=accessories&sub=bb-accessories-kids",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-kids-accessories",
+                labelKo: "Accessories",
+                href: "/shop?category=accessories&sub=bb-kids-accessories",
+                children: [
+                  { id: "bb-kids-hats-socks", labelKo: "Hats & Socks", href: "/shop?category=accessories&sub=bb-kids-hats-socks" },
+                  { id: "bb-kids-hair-accessories", labelKo: "Hair Accessories", href: "/shop?category=accessories&sub=bb-kids-hair-accessories" },
+                  { id: "bb-kids-scarves", labelKo: "Scarves", href: "/shop?category=accessories&sub=bb-kids-scarves" },
+                  { id: "bb-kids-girls-scarves", labelKo: "Girls Scarves", href: "/shop?category=accessories&sub=bb-kids-girls-scarves" },
+                  { id: "bb-kids-boys-scarves", labelKo: "Boys Scarves", href: "/shop?category=accessories&sub=bb-kids-boys-scarves" },
+                ],
+              },
+              {
+                id: "bb-kids-gifts",
+                labelKo: "Gifts",
+                href: "/shop?category=accessories&sub=bb-kids-gifts",
+                children: [
+                  { id: "bb-kids-gift-girls-scarves", labelKo: "Girls Scarves", href: "/shop?category=accessories&sub=bb-kids-gift-girls-scarves" },
+                  { id: "bb-kids-gift-boys-scarves", labelKo: "Boys Scarves", href: "/shop?category=accessories&sub=bb-kids-gift-boys-scarves" },
+                  { id: "bb-kids-newborn-gifts", labelKo: "Newborn Gifts", href: "/shop?category=accessories&sub=bb-kids-newborn-gifts" },
+                  { id: "bb-kids-newborn-gift-sets", labelKo: "Newborn Gift Sets", href: "/shop?category=accessories&sub=bb-kids-newborn-gift-sets" },
+                  { id: "bb-kids-baby-gifts", labelKo: "Baby Gifts", href: "/shop?category=accessories&sub=bb-kids-baby-gifts" },
                 ],
               },
             ],

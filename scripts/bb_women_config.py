@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from bb_children_config import CHILDREN_COLLECTIONS  # noqa: E402
 from bb_men_config import MEN_COLLECTIONS  # noqa: E402
 
 # (briq_id, label_en, plp_path, briq_top_category, parent_group)
@@ -296,6 +297,7 @@ WOMEN_COLLECTIONS: list[tuple[str, str, str, str, str]] = [
 COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     *WOMEN_COLLECTIONS,
     *MEN_COLLECTIONS,
+    *CHILDREN_COLLECTIONS,
 ]
 
 # Parent-only ids (no direct PLP) — used for shop chip expansion.
@@ -305,17 +307,27 @@ GROUP_IDS = [
     "bb-women-latest",
     "bb-men",
     "bb-men-latest",
+    "bb-kids",
+    "bb-kids-latest",
+    "bb-kids-newborn",
+    "bb-kids-baby",
+    "bb-kids-girls",
+    "bb-kids-boys",
     "burberry-bags",
     "burberry-shoes",
     "burberry-accessories",
     "bb-women-accessories",
     "bb-men-accessories",
+    "bb-kids-accessories",
     "bb-bags-womens",
     "bb-bags-mens",
+    "bb-bags-kids",
     "bb-shoes-womens",
     "bb-shoes-mens",
+    "bb-shoes-kids",
     "bb-accessories-womens",
     "bb-accessories-mens",
+    "bb-accessories-kids",
 ]
 
 BASE = "https://uk.burberry.com"
@@ -362,12 +374,23 @@ def primary_category_for_collections(
                 "bb-men-coats-jackets",
                 "bb-men-latest",
                 "bb-men",
+                "bb-kids-latest",
+                "bb-kids-newborn",
+                "bb-kids-baby",
+                "bb-kids-girls",
+                "bb-kids-boys",
+                "bb-kids",
             }
             or "/womens-clothing" in path
             or "/womens-coats" in path
             or "/womens-jackets" in path
             or "/mens-clothing" in path
             or "/mens-coats" in path
+            or "/newborn-clothes" in path
+            or "/baby-clothes" in path
+            or "/girls-clothes" in path
+            or "/boys-clothes" in path
+            or "/childrens-collections" in path
             or "trench" in path
             or "quilted" in path
             or "puffer" in path
@@ -384,13 +407,14 @@ def primary_category_for_collections(
             "bb-women-wallets",
             "bb-men-accessories",
             "bb-men-wallets",
+            "bb-kids-accessories",
         }
     }
     gift_ids = {
         cid
         for cid, (_l, _p, top, parent) in by.items()
         if top == "accessories"
-        and parent in {"bb-women-gifts", "bb-men-gifts"}
+        and parent in {"bb-women-gifts", "bb-men-gifts", "bb-kids-gifts"}
     }
 
     def best_leaf(candidates: set[str]) -> str | None:
@@ -417,6 +441,8 @@ def primary_category_for_collections(
             "bb-women",
             "bb-men-latest",
             "bb-men",
+            "bb-kids-latest",
+            "bb-kids",
         }
     } | {
         "bb-women-new",
@@ -427,6 +453,10 @@ def primary_category_for_collections(
         "bb-men-summer-styles",
         "bb-men-classics",
         "bb-men-activewear",
+        "bb-kids-new",
+        "bb-kids-back-to-school",
+        "bb-kids-summer-styles",
+        "bb-kids-classics",
     }
     hard_apparel_ids = apparel_ids - soft_apparel_ids
 
@@ -440,6 +470,7 @@ def primary_category_for_collections(
             "wallet",
             "cap",
             "hat",
+            "hair",
             "tie",
             "cufflink",
             "umbrella",
@@ -499,6 +530,8 @@ def primary_category_for_collections(
         )
     )
     if apparel_name and (colset & gift_ids):
+        if any(str(c).startswith("bb-kids-") for c in colset):
+            return "luxury", "bb-kids"
         if any(str(c).startswith("bb-men-") for c in colset):
             return "luxury", "bb-men-clothes"
         return "luxury", "bb-women-clothes"

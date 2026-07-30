@@ -267,14 +267,18 @@ def main() -> None:
     membership: dict[str, set[str]] = {}
     # Keep men collections from previous scrape so women-only runs don't wipe them
     for pid, prod in old_products.items():
-        cols = [c for c in (prod.get("collections") or []) if str(c).startswith("bb-men-")]
+        cols = [
+            c
+            for c in (prod.get("collections") or [])
+            if str(c).startswith("bb-men-") or str(c).startswith("bb-kids-")
+        ]
         if cols:
             membership[pid] = set(cols)
 
     plp_meta: dict[str, dict] = {
         k: v
         for k, v in (existing.get("collections") or {}).items()
-        if str(k).startswith("bb-men-")
+        if str(k).startswith("bb-men-") or str(k).startswith("bb-kids-")
     }
 
     for coll_id, label, path, top, _parent in WOMEN_COLLECTIONS:
