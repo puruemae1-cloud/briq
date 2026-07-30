@@ -62,6 +62,7 @@ export type SubcategoryId =
   | "bb-women-coats-jackets"
   | "bb-women-coats"
   | "bb-women-jackets"
+  | "bb-trench"
   | "bb-women-trench-coats"
   | "bb-women-quilted-jackets"
   | "bb-women-puffer-jackets"
@@ -397,6 +398,12 @@ export const BB_MEN_COATS_IDS: SubcategoryId[] = [
   "bb-men-puffer-jackets",
 ];
 
+/** Signature Burberry trench coats — luxury → 버버리 → 트렌치. */
+export const BB_TRENCH_IDS: SubcategoryId[] = [
+  "bb-women-trench-coats",
+  "bb-men-trench-coats",
+];
+
 export const BB_MEN_CLOTHES_IDS: SubcategoryId[] = [
   "bb-men-clothes",
   "bb-men-knitwear",
@@ -702,6 +709,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
   "gg-bestsellers": [...GG_BESTSELLER_IDS],
   burberry: [...BB_LUXURY_WOMEN_IDS, ...BB_LUXURY_MEN_IDS, ...BB_LUXURY_KIDS_IDS],
+  "bb-trench": [...BB_TRENCH_IDS],
   "bb-women": [...BB_LUXURY_WOMEN_IDS],
   "bb-women-latest": [...BB_WOMEN_LATEST_IDS],
   "bb-women-coats-jackets": [...BB_WOMEN_COATS_IDS],
@@ -799,6 +807,24 @@ export const navCategories: NavCategory[] = [
         href: "/shop?category=luxury&sub=burberry",
         children: [
           {
+            id: "bb-trench",
+            labelKo: "트렌치",
+            href: "/shop?category=luxury&sub=bb-trench",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-women-trench-coats",
+                labelKo: "여성용",
+                href: "/shop?category=luxury&sub=bb-women-trench-coats",
+              },
+              {
+                id: "bb-men-trench-coats",
+                labelKo: "남성용",
+                href: "/shop?category=luxury&sub=bb-men-trench-coats",
+              },
+            ],
+          },
+          {
             id: "bb-women",
             labelKo: "여성용",
             href: "/shop?category=luxury&sub=bb-women",
@@ -821,7 +847,6 @@ export const navCategories: NavCategory[] = [
                 children: [
                   { id: "bb-women-coats", labelKo: "Coats", href: "/shop?category=luxury&sub=bb-women-coats" },
                   { id: "bb-women-jackets", labelKo: "Jackets", href: "/shop?category=luxury&sub=bb-women-jackets" },
-                  { id: "bb-women-trench-coats", labelKo: "Trench Coats", href: "/shop?category=luxury&sub=bb-women-trench-coats" },
                   { id: "bb-women-quilted-jackets", labelKo: "Quilted Jackets", href: "/shop?category=luxury&sub=bb-women-quilted-jackets" },
                   { id: "bb-women-puffer-jackets", labelKo: "Puffer Jackets", href: "/shop?category=luxury&sub=bb-women-puffer-jackets" },
                   { id: "bb-women-ponchos-capes", labelKo: "Ponchos & Capes", href: "/shop?category=luxury&sub=bb-women-ponchos-capes" },
@@ -870,7 +895,6 @@ export const navCategories: NavCategory[] = [
                 children: [
                   { id: "bb-men-coats", labelKo: "Coats", href: "/shop?category=luxury&sub=bb-men-coats" },
                   { id: "bb-men-jackets", labelKo: "Jackets", href: "/shop?category=luxury&sub=bb-men-jackets" },
-                  { id: "bb-men-trench-coats", labelKo: "Trench Coats", href: "/shop?category=luxury&sub=bb-men-trench-coats" },
                   { id: "bb-men-quilted-jackets", labelKo: "Quilted Jackets", href: "/shop?category=luxury&sub=bb-men-quilted-jackets" },
                   { id: "bb-men-puffer-jackets", labelKo: "Puffer Jackets", href: "/shop?category=luxury&sub=bb-men-puffer-jackets" },
                 ],

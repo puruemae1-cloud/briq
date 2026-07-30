@@ -87,10 +87,25 @@ def t(text: str | None) -> str:
     return ko
 
 
-def gbp_to_krw(gbp: float) -> int:
+TRENCH_COLLECTION_IDS = frozenset(
+    {
+        "bb-women-trench-coats",
+        "bb-men-trench-coats",
+    }
+)
+
+
+def is_trench_product(cols: list[str] | None) -> bool:
+    if not cols:
+        return False
+    return any(c in TRENCH_COLLECTION_IDS for c in cols)
+
+
+def gbp_to_krw(gbp: float, cols: list[str] | None = None) -> int:
     """Burberry pricing.
     ≤£110: GBP × 2100 × 1.06 + ₩20,000
     >£110: GBP × 2100 × 1.18 × 1.05 + ₩20,000
+    Trench coats (>£110): use 1.10 instead of 1.18.
     Round to 천원.
     """
     if gbp is None:
@@ -99,7 +114,8 @@ def gbp_to_krw(gbp: float) -> int:
     if g <= 110:
         base = g * 2100 * 1.06 + 20_000
     else:
-        base = g * 2100 * 1.18 * 1.05 + 20_000
+        markup = 1.10 if is_trench_product(cols) else 1.18
+        base = g * 2100 * markup * 1.05 + 20_000
     return int(round(base / 1_000) * 1_000)
 
 
@@ -431,8 +447,12 @@ def main() -> None:
             lead_img = local_imgs[0] if local_imgs else (c.get("image") or "/products/wool-coat.svg")
             gbp = float(c.get("gbpPrice") or 0)
             gbp_list = c.get("gbpListPrice")
-            price = gbp_to_krw(gbp) if gbp else 0
-            compare = gbp_to_krw(float(gbp_list)) if gbp_list and float(gbp_list) > gbp else None
+            price = gbp_to_krw(gbp, color_cols) if gbp else 0
+            compare = (
+                gbp_to_krw(float(gbp_list), color_cols)
+                if gbp_list and float(gbp_list) > gbp
+                else None
+            )
             price = apply_kids_surcharge(price, color_cols) or 0
             compare = apply_kids_surcharge(compare, color_cols)
             if price:
