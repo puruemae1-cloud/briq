@@ -132,26 +132,29 @@ img {
 }
 
 .site-header__inner {
-  max-width: 1240px;
   width: 100%;
-  margin: 0 auto;
-  padding: 1rem 1rem;
+  max-width: none;
+  margin: 0;
+  padding: 0.85rem 1rem;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  grid-template-areas: "menu brand actions";
+  grid-template-areas: "brand nav actions";
   align-items: center;
-  gap: 0.45rem 0.7rem;
+  gap: 0.5rem 1rem;
   box-sizing: border-box;
 }
 
-.nav-drawer-open {
-  grid-area: menu;
+.site-header__brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   justify-self: start;
-  margin-right: 0.1rem;
+  min-width: 0;
 }
 
-.site-header__inner > .brand-mark {
-  grid-area: brand;
+.nav-drawer-open {
+  flex-shrink: 0;
 }
 
 .site-nav {
@@ -168,21 +171,20 @@ img {
 
 @media (min-width: 1100px) {
   .site-header__inner {
-    padding: 1rem 1.5rem;
+    padding: 0.95rem 1.75rem;
   }
 
   .site-nav {
-    gap: 0.25rem 0.75rem;
-    font-size: 0.84rem;
-    margin-left: 5.5rem;
+    gap: 0.15rem clamp(0.55rem, 1.4vw, 1.35rem);
+    font-size: 0.82rem;
   }
 }
 
 .brand-mark {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-self: center;
+  align-items: flex-start;
+  justify-self: start;
   gap: 0.1rem;
 }
 
@@ -268,6 +270,97 @@ img {
   pointer-events: none;
   transition: opacity 0.15s ease;
   z-index: 40;
+}
+
+.nav-dropdown--mega {
+  position: fixed;
+  top: var(--header-mega-top, 4.85rem);
+  left: 0;
+  right: 0;
+  transform: none;
+  width: 100%;
+  min-width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 1.75rem;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  box-sizing: border-box;
+  max-height: min(78vh, 40rem);
+  overflow: auto;
+}
+
+.nav-mega {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1.25rem 1.75rem;
+  text-align: left;
+}
+
+.nav-mega__col {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.nav-mega__heading {
+  display: block;
+  margin-bottom: 0.55rem;
+  padding: 0 !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink) !important;
+  background: transparent !important;
+}
+
+.nav-mega__heading:hover {
+  background: transparent !important;
+  opacity: 0.7;
+}
+
+.nav-mega__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  margin-bottom: 0.65rem;
+}
+
+.nav-mega__link {
+  display: block;
+  padding: 0.15rem 0 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: rgba(11, 18, 16, 0.82) !important;
+  background: transparent !important;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.nav-mega__link--parent {
+  font-weight: 700 !important;
+  color: var(--ink) !important;
+  margin-top: 0.15rem;
+}
+
+.nav-mega__sublink {
+  display: block;
+  padding: 0.1rem 0 0.1rem 0.55rem !important;
+  font-size: 0.76rem !important;
+  font-weight: 500 !important;
+  color: rgba(11, 18, 16, 0.58) !important;
+  background: transparent !important;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.nav-mega__link:hover,
+.nav-mega__sublink:hover {
+  background: transparent !important;
+  color: var(--ink) !important;
 }
 
 .nav-item.is-open .nav-dropdown,
@@ -487,26 +580,27 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 900px) {
   .site-header__inner {
-    grid-template-columns: auto auto minmax(0, 1fr) auto;
-    grid-template-areas: "menu brand nav actions";
-    gap: 0.4rem 0.5rem;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "brand nav actions";
+    gap: 0.75rem 1.25rem;
+  }
+
+  .nav-drawer-open {
+    display: none;
   }
 
   .site-nav {
     display: flex;
-    margin-left: 4.75rem;
-  }
-
-  .site-header__inner > .brand-mark {
-    justify-self: start;
-    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: 0;
   }
 
   .site-header__actions {
     justify-self: end;
     position: relative;
     z-index: 5;
-    margin-left: 1.75rem;
+    margin-left: 0;
   }
 }
 
@@ -939,10 +1033,6 @@ a.chip[href*="sub=gg-sale"].is-active {
   .header-search {
     width: 9.9rem; /* 60% of previous 16.5rem */
   }
-
-  .site-header__actions {
-    margin-left: 2.25rem;
-  }
 }
 
 .cart-btn {
@@ -1235,9 +1325,9 @@ body:has(.nav-drawer-toggle:checked) {
     overscroll-behavior-y: auto;
   }
 
-  /* Hide 3rd/4th lookbook tiles on mobile — half the decode work */
-  .lookbook__rail .product-grid > *:nth-child(n + 3) {
-    display: none !important;
+  /* Show all 4 lookbook products on mobile (2×2) */
+  .lookbook__rail .product-grid--lookbook > *:nth-child(n + 3) {
+    display: block !important;
   }
 
   .look-banner {
@@ -1285,14 +1375,22 @@ body:has(.nav-drawer-toggle:checked) {
     contain-intrinsic-size: auto 18rem;
   }
 
-  /* Keep 2-col catalog tiles fully inside the viewport */
-  .lookbook__rail.section {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .lookbook__rail--bleed {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .lookbook__rail .product-grid {
-    gap: 0.75rem;
+  .lookbook__rail-inner {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lookbook__rail .product-grid--lookbook {
+    gap: 0.55rem;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    width: calc(100% + 1.5rem);
+    padding: 0;
   }
 
   .lookbook__rail .product-frame--card {
@@ -1327,6 +1425,148 @@ body:has(.nav-drawer-toggle:checked) {
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+/* Full-bleed category rails — edge-to-edge like Burberry PLPs */
+.lookbook__rail--bleed {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lookbook__rail-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 1rem 0.25rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  .lookbook__rail-inner {
+    padding: 0 0 0.5rem;
+  }
+
+  .lookbook__rail--bleed .section__head {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lookbook__rail--bleed .lookbook-mega {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.product-grid--lookbook {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: 100%;
+  max-width: none;
+}
+
+@media (min-width: 760px) {
+  .product-grid--lookbook {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .product-grid--lookbook {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+}
+
+/* Burberry-style multi-column category links under lookbook banners */
+.lookbook-mega {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 1.25rem;
+  margin: 0 0 1.35rem;
+  padding: 0.15rem 0 0.35rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 760px) {
+  .lookbook-mega {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.35rem 1.75rem;
+  }
+}
+
+.lookbook-mega__col {
+  min-width: 0;
+}
+
+.lookbook-mega__heading {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lookbook-mega__heading:hover {
+  opacity: 0.65;
+}
+
+.lookbook-mega__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+
+.lookbook-mega__item {
+  margin: 0;
+}
+
+.lookbook-mega__link {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 650;
+  color: rgba(11, 18, 16, 0.88);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.lookbook-mega__link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.lookbook-mega__sublist {
+  list-style: none;
+  margin: 0.25rem 0 0.45rem;
+  padding: 0 0 0 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.lookbook-mega__sublink {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(11, 18, 16, 0.55);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.lookbook-mega__sublink:hover {
+  color: var(--ink);
 }
 
 .lookbook__rail .product-grid {

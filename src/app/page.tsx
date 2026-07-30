@@ -5,6 +5,7 @@ import {
   Collection100,
 } from "@/components/Collection100";
 import { LookBannerBlock } from "@/components/LookBanner";
+import { LookbookCategoryLinks } from "@/components/LookbookCategoryLinks";
 import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
 import { navCategories } from "@/data/categories";
@@ -52,31 +53,23 @@ export default async function HomePage() {
             <div key={banner.id} className="lookbook__block">
               <LookBannerBlock banner={banner} rotationOffset={i} />
               {products.length > 0 ? (
-                <section className="section lookbook__rail">
-                  <div className="section__head">
-                    <div>
-                      <h2>{banner.titleKo}</h2>
-                      <p>Selection</p>
+                <section className="section lookbook__rail lookbook__rail--bleed">
+                  <div className="lookbook__rail-inner">
+                    <div className="section__head">
+                      <div>
+                        <h2>{banner.titleKo}</h2>
+                        <p>Selection</p>
+                      </div>
+                      <Link href={banner.href}>전체 보기</Link>
                     </div>
-                    <Link href={banner.href}>전체 보기</Link>
-                  </div>
-                  {category?.children?.length ? (
-                    <div className="category-row category-row--sub">
-                      {category.children.map((child) => (
-                        <Link
-                          key={child.id}
-                          href={child.href}
-                          className="chip chip--sub"
-                        >
-                          {child.labelKo}
-                        </Link>
+                    {category ? (
+                      <LookbookCategoryLinks category={category} />
+                    ) : null}
+                    <div className="product-grid product-grid--lookbook">
+                      {products.map((p) => (
+                        <ProductCard key={p.id} product={p} />
                       ))}
                     </div>
-                  ) : null}
-                  <div className="product-grid">
-                    {products.map((p) => (
-                      <ProductCard key={p.id} product={p} />
-                    ))}
                   </div>
                 </section>
               ) : null}
