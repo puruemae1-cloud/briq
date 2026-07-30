@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-30T15:36:52Z",
+  "scrapedAt": "2026-07-30T16:12:37Z",
   "source": "https://uk.burberry.com",
   "collectionCounts": {
     "bb-women-new": 767,
@@ -174,7 +174,21 @@
     "bb-gifts-children-baby": 43,
     "bb-gifts-children-newborn": 21,
     "bb-gifts-children-accessories": 44,
-    "bb-gifts-home": 21
+    "bb-gifts-home": 21,
+    "bb-scarves-women": 275,
+    "bb-scarves-women-cashmere": 129,
+    "bb-scarves-women-wool": 61,
+    "bb-scarves-women-silk": 61,
+    "bb-scarves-women-lightweight": 53,
+    "bb-scarves-women-personalised": 55,
+    "bb-scarves-men": 176,
+    "bb-scarves-men-cashmere": 115,
+    "bb-scarves-men-wool": 37,
+    "bb-scarves-men-lightweight": 40,
+    "bb-scarves-men-personalised": 55,
+    "bb-scarves-kids": 7,
+    "bb-scarves-kids-girls": 6,
+    "bb-scarves-kids-boys": 4
   },
   "collections": {
     "bb-women-new": {
@@ -1214,12 +1228,96 @@
       "path": "/l/home-accessories/",
       "category": "accessories",
       "count": 21
+    },
+    "bb-scarves-women": {
+      "label": "Women",
+      "path": "/l/womens-accessories/scarves/",
+      "category": "accessories",
+      "count": 275
+    },
+    "bb-scarves-women-cashmere": {
+      "label": "Cashmere Scarves",
+      "path": "/l/womens-accessories/scarves/cashmere/",
+      "category": "accessories",
+      "count": 129
+    },
+    "bb-scarves-women-wool": {
+      "label": "Wool Scarves",
+      "path": "/l/womens-accessories/scarves/wool/",
+      "category": "accessories",
+      "count": 61
+    },
+    "bb-scarves-women-silk": {
+      "label": "Silk Scarves",
+      "path": "/l/womens-accessories/scarves/silk/",
+      "category": "accessories",
+      "count": 61
+    },
+    "bb-scarves-women-lightweight": {
+      "label": "Lightweight Scarves",
+      "path": "/l/womens-accessories/scarves/lightweight/",
+      "category": "accessories",
+      "count": 53
+    },
+    "bb-scarves-women-personalised": {
+      "label": "Personalised Scarves",
+      "path": "/l/womens-accessories/scarves/personalised/",
+      "category": "accessories",
+      "count": 55
+    },
+    "bb-scarves-men": {
+      "label": "Men",
+      "path": "/l/mens-accessories/scarves/",
+      "category": "accessories",
+      "count": 176
+    },
+    "bb-scarves-men-cashmere": {
+      "label": "Cashmere Scarves",
+      "path": "/l/mens-accessories/scarves/cashmere/",
+      "category": "accessories",
+      "count": 115
+    },
+    "bb-scarves-men-wool": {
+      "label": "Wool Scarves",
+      "path": "/l/mens-accessories/scarves/wool/",
+      "category": "accessories",
+      "count": 37
+    },
+    "bb-scarves-men-lightweight": {
+      "label": "Lightweight Scarves",
+      "path": "/l/mens-accessories/scarves/lightweight/",
+      "category": "accessories",
+      "count": 40
+    },
+    "bb-scarves-men-personalised": {
+      "label": "Personalised Scarves",
+      "path": "/l/mens-accessories/scarves/personalised/",
+      "category": "accessories",
+      "count": 55
+    },
+    "bb-scarves-kids": {
+      "label": "Children",
+      "path": "/l/childrens-accessories/scarves/",
+      "category": "accessories",
+      "count": 7
+    },
+    "bb-scarves-kids-girls": {
+      "label": "Girls’ Scarves",
+      "path": "/l/girls-clothes/scarves/",
+      "category": "accessories",
+      "count": 6
+    },
+    "bb-scarves-kids-boys": {
+      "label": "Boys’ Scarves",
+      "path": "/l/boys-clothes/scarves/",
+      "category": "accessories",
+      "count": 4
     }
   },
   "productCount": 2879,
   "errors": [
     {
-      "id": "81299971",
+      "id": "81300331",
       "error": "no PRELOADED_STATE"
     },
     {
@@ -1227,11 +1325,7 @@
       "error": "no PRELOADED_STATE"
     },
     {
-      "id": "81303031",
-      "error": "no PRELOADED_STATE"
-    },
-    {
-      "id": "81300331",
+      "id": "81299971",
       "error": "no PRELOADED_STATE"
     },
     {
@@ -1240,6 +1334,10 @@
     },
     {
       "id": "81316181",
+      "error": "no PRELOADED_STATE"
+    },
+    {
+      "id": "81303031",
       "error": "no PRELOADED_STATE"
     },
     {
@@ -23443,6 +23541,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -31789,6 +31889,11 @@
         "bb-men-gifts",
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -31878,6 +31983,10 @@
         "bb-men-classics",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -32607,7 +32716,8 @@
       "collections": [
         "bb-gifts-children-accessories",
         "bb-kids-classics",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids"
       ],
       "label": "8-14 Years"
     },
@@ -33140,6 +33250,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -33327,6 +33443,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -33519,6 +33641,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
         "bb-women-scarves"
@@ -33705,6 +33833,11 @@
         "bb-men-gifts",
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -34061,6 +34194,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-personalised-scarves",
         "bb-men-personalised-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -34423,6 +34561,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -34782,6 +34926,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -35055,6 +35205,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -35141,6 +35295,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -36400,6 +36558,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -36967,6 +37129,9 @@
       "collections": [
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -37086,6 +37251,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -39602,6 +39773,9 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -39953,6 +40127,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -43239,6 +43419,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -43418,6 +43604,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -43509,6 +43699,10 @@
         "bb-men-classics",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-scarves"
@@ -43628,6 +43822,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -43990,6 +44190,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -44189,6 +44395,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "Virtual Try On"
@@ -46180,6 +46390,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -47183,6 +47399,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-scarves"
       ],
       "label": ""
@@ -47269,6 +47488,9 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "Personalise"
@@ -47383,6 +47605,10 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -47491,6 +47717,10 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -47726,6 +47956,8 @@
       "materialComposition": "70% cashmere, 30% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-scarves"
       ],
       "label": ""
@@ -50245,6 +50477,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -50333,6 +50569,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -50922,6 +51162,9 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-scarves"
       ],
       "label": ""
@@ -51784,6 +52027,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -51903,6 +52150,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -54401,6 +54652,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -56035,6 +56290,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -62485,7 +62744,10 @@
         "bb-kids-gifts",
         "bb-kids-girls",
         "bb-kids-girls-scarves",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-boys",
+        "bb-scarves-kids-girls"
       ],
       "label": "8-14 Years"
     },
@@ -65632,6 +65894,10 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -65957,6 +66223,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -66146,6 +66418,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -66238,6 +66516,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -66329,6 +66612,11 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -66414,6 +66702,10 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-home",
@@ -66741,6 +67033,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -68664,6 +68962,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -68853,6 +69157,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69044,6 +69354,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69233,6 +69549,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69422,6 +69744,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69613,6 +69941,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69802,6 +70136,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -69991,6 +70331,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -70182,6 +70528,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -75612,6 +75964,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -75787,6 +76141,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -75964,6 +76324,11 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -76139,6 +76504,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -81705,6 +82076,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -92899,6 +93275,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -93080,6 +93462,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -93256,6 +93644,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-classics",
         "bb-women-scarves"
       ],
@@ -94274,6 +94667,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -94631,6 +95030,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -94986,6 +95391,11 @@
         "bb-men-gifts",
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -95344,6 +95754,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -95695,6 +96111,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-personalised-scarves",
         "bb-men-personalised-scarves",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -96056,6 +96477,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -96411,6 +96838,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -96769,6 +97202,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -97125,6 +97564,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -97478,6 +97923,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -97828,6 +98279,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
         "bb-women-scarves"
@@ -98185,6 +98642,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
         "bb-women-scarves"
@@ -98539,6 +99002,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -98890,6 +99359,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -99245,6 +99720,12 @@
         "bb-men-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -99609,6 +100090,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -99970,6 +100457,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
@@ -100326,6 +100819,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -100677,6 +101176,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -101028,6 +101533,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -102007,6 +102518,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -102362,6 +102879,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -102717,6 +103240,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -102904,6 +103433,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -103768,6 +104303,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104141,6 +104681,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104258,6 +104804,9 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104377,6 +104926,12 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104494,6 +105049,11 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104616,6 +105176,11 @@
       "collections": [
         "bb-gifts-her-scarves",
         "bb-men-summer-styles",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104733,6 +105298,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104850,6 +105417,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -104971,6 +105540,8 @@
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-scarves",
@@ -108447,6 +109018,10 @@
         "bb-men-gifts",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -109780,6 +110355,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -111417,6 +111997,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -111533,6 +112117,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -111886,6 +112476,12 @@
         "bb-gifts-him-scarves",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-gifts",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
@@ -112242,6 +112838,12 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-personalised",
         "bb-women-personalised-gifts",
         "bb-women-personalised-scarves",
         "bb-women-scarves"
@@ -112544,6 +113146,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -112941,6 +113547,9 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -113043,6 +113652,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -113960,6 +114573,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -114063,6 +114678,8 @@
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-scarves"
@@ -114595,6 +115212,11 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -114713,6 +115335,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -115025,6 +115651,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -117546,6 +118176,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -119950,6 +120584,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -121787,6 +122423,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -122868,6 +123508,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -122993,6 +123637,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -123120,6 +123768,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -126216,6 +126868,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": ""
@@ -127690,6 +128344,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -129990,6 +130648,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -131264,6 +131926,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -131399,6 +132065,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -131956,6 +132626,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -132399,6 +133073,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -145841,7 +146519,10 @@
         "bb-kids-girls",
         "bb-kids-girls-scarves",
         "bb-kids-new",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-boys",
+        "bb-scarves-kids-girls"
       ],
       "label": "8-14 Years"
     },
@@ -146212,7 +146893,9 @@
         "bb-kids-girls",
         "bb-kids-girls-scarves",
         "bb-kids-new",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-girls"
       ],
       "label": "8-14 Years"
     },
@@ -147311,6 +147994,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -147392,6 +148079,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-scarves"
       ],
       "label": ""
@@ -147514,6 +148205,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -147638,6 +148333,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -150861,6 +151560,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -150997,6 +151700,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -151132,6 +151839,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -151267,6 +151978,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -151403,6 +152118,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -151539,6 +152258,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -153075,6 +153799,10 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -153176,6 +153904,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -153281,6 +154013,10 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -153393,6 +154129,10 @@
         "bb-gifts-him-scarves",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-scarves"
       ],
@@ -158551,6 +159291,10 @@
         "bb-men-gifts",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -159974,6 +160718,10 @@
         "bb-gifts-him-scarves",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -169662,6 +170410,9 @@
         "bb-men-personalised-gifts",
         "bb-men-personalised-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-personalised",
+        "bb-scarves-women-personalised",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-home",
@@ -174280,6 +175031,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -175889,6 +176642,8 @@
       "collections": [
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -175969,6 +176724,8 @@
       "collections": [
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-new",
         "bb-women-scarves"
@@ -176049,6 +176806,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -188703,6 +189462,8 @@
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -194678,6 +195439,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -198726,6 +199491,8 @@
       "materialComposition": "100% cotton#Trims: 100% cotton; 100% leather",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -201219,6 +201986,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -202960,6 +203730,8 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -203145,6 +203917,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -203408,6 +204184,10 @@
         "bb-men-gifts",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -203535,6 +204315,8 @@
       "materialComposition": "52% wool, 48% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -203955,6 +204737,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
+        "bb-scarves-women-lightweight",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -214186,6 +214972,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -214287,6 +215076,8 @@
       "materialComposition": "50% wool, 50% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -215783,6 +216574,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -225119,6 +225912,9 @@
         "bb-men-gifts",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -226543,6 +227339,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -231936,6 +232734,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -232027,6 +232827,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -232110,6 +232912,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -232199,6 +233003,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -233946,6 +234752,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -242648,6 +243457,9 @@
         "bb-gifts-him-scarves",
         "bb-men-new",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -242865,6 +243677,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -243207,6 +244021,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -244041,6 +244859,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -244384,6 +245204,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -244727,6 +245549,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -249478,6 +250304,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -249564,6 +250392,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves",
         "bb-women-summer-styles"
@@ -252869,6 +253700,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -253035,6 +253868,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -255109,6 +255945,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -255203,6 +256041,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -255757,6 +256597,10 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -255880,6 +256724,10 @@
         "bb-men-classics",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -256098,6 +256946,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -256190,6 +257042,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -256544,6 +257398,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -261056,6 +261914,9 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -276145,6 +277006,10 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -277198,6 +278063,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -284928,6 +285795,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -285012,6 +285881,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -285110,6 +285981,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -285210,6 +286083,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -285480,6 +286355,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -285567,6 +286444,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -286199,6 +287078,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -286278,6 +287159,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -287571,6 +288454,7 @@
       "materialComposition": "100% wool",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
         "bb-women-coats-jackets",
         "bb-women-new",
         "bb-women-ponchos-capes",
@@ -291044,6 +291928,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -297547,6 +298433,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -298534,6 +299425,11 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -298666,6 +299562,11 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -299244,6 +300145,11 @@
         "bb-men-classics",
         "bb-men-gifts",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-lightweight",
+        "bb-scarves-men-wool",
+        "bb-scarves-women",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -300477,6 +301383,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -305928,6 +306836,8 @@
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -311022,6 +311932,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -311102,6 +312014,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -313564,6 +314478,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -319154,6 +320070,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -319248,6 +320166,9 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-classics",
         "bb-women-gifts",
         "bb-women-new",
@@ -330808,6 +331729,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -330889,6 +331812,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves",
@@ -332100,6 +333025,8 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -332389,6 +333316,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -338895,6 +339824,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -345753,6 +346684,9 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -347026,6 +347960,8 @@
         "bb-gifts-him-classics",
         "bb-men-classics",
         "bb-men-clothes",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -353235,6 +354171,8 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-classics",
         "bb-men-classics",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -353327,6 +354265,9 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -353419,6 +354360,9 @@
       "collections": [
         "bb-gifts-her",
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -353510,6 +354454,9 @@
       "materialComposition": "70% wool, 25% silk, 5% polyamide",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-lightweight",
+        "bb-scarves-women-wool",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -358646,6 +359593,7 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-classics",
         "bb-men-classics",
+        "bb-scarves-women",
         "bb-women-coats-jackets",
         "bb-women-gifts",
         "bb-women-new",
@@ -359409,6 +360357,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -359752,6 +360704,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -359776,6 +360730,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -359862,6 +360820,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -360642,6 +361604,8 @@
       "materialComposition": null,
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -360991,6 +361955,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -368619,6 +369587,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -368643,6 +369613,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -368667,6 +369641,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -369823,6 +370801,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -369896,6 +370878,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370144,6 +371130,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370241,6 +371231,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370338,6 +371332,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370429,6 +371427,9 @@
         "bb-gifts-him-scarves",
         "bb-men-classics",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-gifts",
         "bb-women-new",
         "bb-women-scarves"
@@ -370521,6 +371522,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370611,6 +371616,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -370701,6 +371710,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -371036,6 +372049,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -371132,6 +372149,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -371228,6 +372249,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -371317,6 +372342,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": null
@@ -372394,6 +373423,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -372665,6 +373698,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -374301,6 +375338,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -374325,6 +375366,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -378250,6 +379295,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -378379,6 +379428,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -378403,6 +379454,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": ""
@@ -378538,6 +379593,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -378667,6 +379726,8 @@
       "materialComposition": "100% cashmere",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -378798,6 +379859,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -378929,6 +379994,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -379064,6 +380133,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -379195,6 +380268,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -379330,6 +380407,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -379425,6 +380506,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -379520,6 +380603,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -379882,6 +380967,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -380914,6 +382001,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -381020,6 +382109,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -381136,6 +382227,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -382281,6 +383374,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -382426,6 +383521,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -382506,6 +383603,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -383690,6 +384789,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-new",
         "bb-women-scarves"
       ],
@@ -384090,6 +385191,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -389624,7 +390727,10 @@
         "bb-kids-girls",
         "bb-kids-girls-scarves",
         "bb-kids-girls-shoes-accessories",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-boys",
+        "bb-scarves-kids-girls"
       ],
       "label": null
     },
@@ -389751,7 +390857,9 @@
         "bb-kids-girls",
         "bb-kids-girls-scarves",
         "bb-kids-girls-shoes-accessories",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-girls"
       ],
       "label": null
     },
@@ -389883,7 +390991,10 @@
         "bb-kids-girls",
         "bb-kids-girls-scarves",
         "bb-kids-girls-shoes-accessories",
-        "bb-kids-scarves"
+        "bb-kids-scarves",
+        "bb-scarves-kids",
+        "bb-scarves-kids-boys",
+        "bb-scarves-kids-girls"
       ],
       "label": null
     },
@@ -397287,6 +398398,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -397373,6 +398488,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -397596,6 +398715,10 @@
         "bb-gifts-her-scarves",
         "bb-gifts-him-scarves",
         "bb-men-scarves",
+        "bb-scarves-men",
+        "bb-scarves-men-cashmere",
+        "bb-scarves-women",
+        "bb-scarves-women-cashmere",
         "bb-women-scarves"
       ],
       "label": "New In"
@@ -397747,6 +398870,8 @@
       "materialComposition": "100% silk",
       "collections": [
         "bb-gifts-her-scarves",
+        "bb-scarves-women",
+        "bb-scarves-women-silk",
         "bb-women-scarves"
       ],
       "label": "New In"

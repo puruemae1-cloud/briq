@@ -5,6 +5,7 @@ from __future__ import annotations
 from bb_children_config import CHILDREN_COLLECTIONS  # noqa: E402
 from bb_gifts_config import GIFTS_COLLECTIONS  # noqa: E402
 from bb_men_config import MEN_COLLECTIONS  # noqa: E402
+from bb_scarves_config import SCARVES_COLLECTIONS  # noqa: E402
 
 # (briq_id, label_en, plp_path, briq_top_category, parent_group)
 # parent_group used for nav nesting hints only.
@@ -300,6 +301,7 @@ COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     *MEN_COLLECTIONS,
     *CHILDREN_COLLECTIONS,
     *GIFTS_COLLECTIONS,
+    *SCARVES_COLLECTIONS,
 ]
 
 # Parent-only ids (no direct PLP) — used for shop chip expansion.
@@ -335,6 +337,10 @@ GROUP_IDS = [
     "bb-gifts-him",
     "bb-gifts-children",
     "bb-gifts-home",
+    "bb-scarves",
+    "bb-scarves-women",
+    "bb-scarves-men",
+    "bb-scarves-kids",
 ]
 
 BASE = "https://uk.burberry.com"
@@ -415,6 +421,10 @@ def primary_category_for_collections(
             "bb-men-accessories",
             "bb-men-wallets",
             "bb-kids-accessories",
+            "bb-scarves",
+            "bb-scarves-women",
+            "bb-scarves-men",
+            "bb-scarves-kids",
         }
     }
     gift_ids = {

@@ -97,6 +97,21 @@ export type SubcategoryId =
   | "bb-women-boots"
   | "bb-women-pumps"
   | "burberry-accessories"
+  | "bb-scarves"
+  | "bb-scarves-women"
+  | "bb-scarves-women-cashmere"
+  | "bb-scarves-women-wool"
+  | "bb-scarves-women-silk"
+  | "bb-scarves-women-lightweight"
+  | "bb-scarves-women-personalised"
+  | "bb-scarves-men"
+  | "bb-scarves-men-cashmere"
+  | "bb-scarves-men-wool"
+  | "bb-scarves-men-lightweight"
+  | "bb-scarves-men-personalised"
+  | "bb-scarves-kids"
+  | "bb-scarves-kids-girls"
+  | "bb-scarves-kids-boys"
   | "bb-accessories-womens"
   | "bb-women-accessories"
   | "bb-women-scarves"
@@ -637,6 +652,35 @@ export const BB_GIFTS_CHILDREN_IDS: SubcategoryId[] = [
 
 export const BB_GIFTS_HOME_IDS: SubcategoryId[] = ["bb-gifts-home"];
 
+export const BB_SCARVES_WOMEN_IDS: SubcategoryId[] = [
+  "bb-scarves-women",
+  "bb-scarves-women-cashmere",
+  "bb-scarves-women-wool",
+  "bb-scarves-women-silk",
+  "bb-scarves-women-lightweight",
+  "bb-scarves-women-personalised",
+];
+
+export const BB_SCARVES_MEN_IDS: SubcategoryId[] = [
+  "bb-scarves-men",
+  "bb-scarves-men-cashmere",
+  "bb-scarves-men-wool",
+  "bb-scarves-men-lightweight",
+  "bb-scarves-men-personalised",
+];
+
+export const BB_SCARVES_KIDS_IDS: SubcategoryId[] = [
+  "bb-scarves-kids",
+  "bb-scarves-kids-girls",
+  "bb-scarves-kids-boys",
+];
+
+export const BB_SCARVES_ALL_IDS: SubcategoryId[] = [
+  ...BB_SCARVES_WOMEN_IDS,
+  ...BB_SCARVES_MEN_IDS,
+  ...BB_SCARVES_KIDS_IDS,
+];
+
 /** Burberry gift-recommendation leaf ids used for PLP membership. */
 export const BB_GIFTS_ALL_IDS: SubcategoryId[] = [
   ...BB_GIFTS_HER_IDS,
@@ -651,6 +695,7 @@ export const BB_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_MEN_COLLECTION_IDS,
   ...BB_KIDS_COLLECTION_IDS,
   ...BB_GIFTS_ALL_IDS,
+  ...BB_SCARVES_ALL_IDS,
 ];
 
 export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
@@ -753,9 +798,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-shoes-kids": [...BB_KIDS_SHOE_IDS],
   "bb-kids-shoes": [...BB_KIDS_SHOE_IDS],
   "burberry-accessories": [
+    "bb-scarves",
     "bb-accessories-womens",
     "bb-accessories-mens",
     "bb-accessories-kids",
+    ...BB_SCARVES_ALL_IDS,
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
     ...BB_WOMEN_GIFT_IDS,
@@ -765,6 +812,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...BB_KIDS_ACCESSORY_LEAF_IDS,
     ...BB_KIDS_GIFT_IDS,
   ],
+  "bb-scarves": [...BB_SCARVES_ALL_IDS],
+  "bb-scarves-women": [...BB_SCARVES_WOMEN_IDS],
+  "bb-scarves-men": [...BB_SCARVES_MEN_IDS],
+  "bb-scarves-kids": [...BB_SCARVES_KIDS_IDS],
   "bb-accessories-womens": [
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
@@ -1274,6 +1325,108 @@ export const navCategories: NavCategory[] = [
         labelKo: "버버리",
         href: "/shop?category=accessories&sub=burberry-accessories",
         children: [
+          {
+            id: "bb-scarves",
+            labelKo: "스카프",
+            href: "/shop?category=accessories&sub=bb-scarves",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-scarves-women",
+                labelKo: "여성용",
+                href: "/shop?category=accessories&sub=bb-scarves-women",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "bb-scarves-women",
+                    labelKo: "전체 보기",
+                    href: "/shop?category=accessories&sub=bb-scarves-women",
+                  },
+                  {
+                    id: "bb-scarves-women-cashmere",
+                    labelKo: "캐시미어",
+                    href: "/shop?category=accessories&sub=bb-scarves-women-cashmere",
+                  },
+                  {
+                    id: "bb-scarves-women-wool",
+                    labelKo: "울",
+                    href: "/shop?category=accessories&sub=bb-scarves-women-wool",
+                  },
+                  {
+                    id: "bb-scarves-women-silk",
+                    labelKo: "실크",
+                    href: "/shop?category=accessories&sub=bb-scarves-women-silk",
+                  },
+                  {
+                    id: "bb-scarves-women-lightweight",
+                    labelKo: "라이트웨이트",
+                    href: "/shop?category=accessories&sub=bb-scarves-women-lightweight",
+                  },
+                  {
+                    id: "bb-scarves-women-personalised",
+                    labelKo: "퍼스널라이즈",
+                    href: "/shop?category=accessories&sub=bb-scarves-women-personalised",
+                  },
+                ],
+              },
+              {
+                id: "bb-scarves-men",
+                labelKo: "남성용",
+                href: "/shop?category=accessories&sub=bb-scarves-men",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "bb-scarves-men",
+                    labelKo: "전체 보기",
+                    href: "/shop?category=accessories&sub=bb-scarves-men",
+                  },
+                  {
+                    id: "bb-scarves-men-cashmere",
+                    labelKo: "캐시미어",
+                    href: "/shop?category=accessories&sub=bb-scarves-men-cashmere",
+                  },
+                  {
+                    id: "bb-scarves-men-wool",
+                    labelKo: "울",
+                    href: "/shop?category=accessories&sub=bb-scarves-men-wool",
+                  },
+                  {
+                    id: "bb-scarves-men-lightweight",
+                    labelKo: "라이트웨이트",
+                    href: "/shop?category=accessories&sub=bb-scarves-men-lightweight",
+                  },
+                  {
+                    id: "bb-scarves-men-personalised",
+                    labelKo: "퍼스널라이즈",
+                    href: "/shop?category=accessories&sub=bb-scarves-men-personalised",
+                  },
+                ],
+              },
+              {
+                id: "bb-scarves-kids",
+                labelKo: "키즈용",
+                href: "/shop?category=accessories&sub=bb-scarves-kids",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "bb-scarves-kids",
+                    labelKo: "전체 보기",
+                    href: "/shop?category=accessories&sub=bb-scarves-kids",
+                  },
+                  {
+                    id: "bb-scarves-kids-girls",
+                    labelKo: "걸즈 스카프",
+                    href: "/shop?category=accessories&sub=bb-scarves-kids-girls",
+                  },
+                  {
+                    id: "bb-scarves-kids-boys",
+                    labelKo: "보이즈 스카프",
+                    href: "/shop?category=accessories&sub=bb-scarves-kids-boys",
+                  },
+                ],
+              },
+            ],
+          },
           {
             id: "bb-accessories-womens",
             labelKo: "여성용",
