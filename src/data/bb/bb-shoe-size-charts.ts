@@ -10,7 +10,7 @@ export type ShoeSizeChart = {
 export const BB_MEN_SHOE_SIZE_CHART: ShoeSizeChart = {
   id: "bb-men-shoes",
   titleKo: "남성 슈즈 사이즈 차트",
-  noteKo: "아래 사이즈표를 참고해 가장 잘 맞는 사이즈를 찾아보세요. Briq 표기 사이즈는 영국(UK) 기준입니다.",
+  noteKo: "아래 사이즈표를 참고해 가장 잘 맞는 사이즈를 찾아보세요. Briq 표기 사이즈는 이탈리아(IT) 기준입니다.",
   headers: ["UK", "IT", "USA", "JP", "KR"],
   rows: [
     ["5", "39", "6", "25cm", "250mm"],
@@ -34,7 +34,7 @@ export const BB_MEN_SHOE_SIZE_CHART: ShoeSizeChart = {
 export const BB_WOMEN_SHOE_SIZE_CHART: ShoeSizeChart = {
   id: "bb-women-shoes",
   titleKo: "여성 슈즈 사이즈 차트",
-  noteKo: "아래 치수를 확인해 사이즈를 선택하세요. Briq 표기 사이즈는 영국(UK) 기준입니다.",
+  noteKo: "아래 치수를 확인해 사이즈를 선택하세요. Briq 표기 사이즈는 이탈리아(IT) 기준입니다.",
   headers: ["UK", "IT", "USA", "JP", "KR"],
   rows: [
     ["2", "35", "5", "22.5cm", "225mm"],
