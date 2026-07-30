@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from bb_children_config import CHILDREN_COLLECTIONS  # noqa: E402
+from bb_gifts_config import GIFTS_COLLECTIONS  # noqa: E402
 from bb_men_config import MEN_COLLECTIONS  # noqa: E402
 
 # (briq_id, label_en, plp_path, briq_top_category, parent_group)
@@ -298,6 +299,7 @@ COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     *WOMEN_COLLECTIONS,
     *MEN_COLLECTIONS,
     *CHILDREN_COLLECTIONS,
+    *GIFTS_COLLECTIONS,
 ]
 
 # Parent-only ids (no direct PLP) — used for shop chip expansion.
@@ -328,6 +330,11 @@ GROUP_IDS = [
     "bb-accessories-womens",
     "bb-accessories-mens",
     "bb-accessories-kids",
+    "burberry-gifts",
+    "bb-gifts-her",
+    "bb-gifts-him",
+    "bb-gifts-children",
+    "bb-gifts-home",
 ]
 
 BASE = "https://uk.burberry.com"
@@ -414,7 +421,16 @@ def primary_category_for_collections(
         cid
         for cid, (_l, _p, top, parent) in by.items()
         if top == "accessories"
-        and parent in {"bb-women-gifts", "bb-men-gifts", "bb-kids-gifts"}
+        and parent
+        in {
+            "bb-women-gifts",
+            "bb-men-gifts",
+            "bb-kids-gifts",
+            "bb-gifts-her",
+            "bb-gifts-him",
+            "bb-gifts-children",
+            "bb-gifts-home",
+        }
     }
 
     def best_leaf(candidates: set[str]) -> str | None:

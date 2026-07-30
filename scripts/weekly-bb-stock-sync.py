@@ -23,6 +23,7 @@ def main() -> None:
     run("scrape-bb-women.py")
     run("scrape-bb-men.py")
     run("scrape-bb-children.py")
+    run("scrape-bb-gifts.py")
     run("build-bb-catalog.py")
     print("Burberry weekly sync complete.", flush=True)
 

@@ -226,7 +226,29 @@ export type SubcategoryId =
   | "bb-kids-gift-boys-scarves"
   | "bb-kids-newborn-gifts"
   | "bb-kids-newborn-gift-sets"
-  | "bb-kids-baby-gifts";
+  | "bb-kids-baby-gifts"
+  | "burberry-gifts"
+  | "bb-gifts-her"
+  | "bb-gifts-her-scarves"
+  | "bb-gifts-her-jewellery"
+  | "bb-gifts-her-fragrance"
+  | "bb-gifts-her-personalised"
+  | "bb-gifts-her-personalised-scarves"
+  | "bb-gifts-her-classics"
+  | "bb-gifts-him"
+  | "bb-gifts-him-scarves"
+  | "bb-gifts-him-ties-cufflinks"
+  | "bb-gifts-him-fragrance"
+  | "bb-gifts-him-personalised"
+  | "bb-gifts-him-personalised-scarves"
+  | "bb-gifts-him-classics"
+  | "bb-gifts-children"
+  | "bb-gifts-children-girls-scarves"
+  | "bb-gifts-children-boys-scarves"
+  | "bb-gifts-children-baby"
+  | "bb-gifts-children-newborn"
+  | "bb-gifts-children-accessories"
+  | "bb-gifts-home";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -577,11 +599,51 @@ export const BB_KIDS_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_KIDS_GIFT_IDS,
 ];
 
-/** All Burberry leaf ids (women + men + kids) used for PLP membership. */
+export const BB_GIFTS_HER_IDS: SubcategoryId[] = [
+  "bb-gifts-her",
+  "bb-gifts-her-scarves",
+  "bb-gifts-her-jewellery",
+  "bb-gifts-her-fragrance",
+  "bb-gifts-her-personalised",
+  "bb-gifts-her-personalised-scarves",
+  "bb-gifts-her-classics",
+];
+
+export const BB_GIFTS_HIM_IDS: SubcategoryId[] = [
+  "bb-gifts-him",
+  "bb-gifts-him-scarves",
+  "bb-gifts-him-ties-cufflinks",
+  "bb-gifts-him-fragrance",
+  "bb-gifts-him-personalised",
+  "bb-gifts-him-personalised-scarves",
+  "bb-gifts-him-classics",
+];
+
+export const BB_GIFTS_CHILDREN_IDS: SubcategoryId[] = [
+  "bb-gifts-children",
+  "bb-gifts-children-girls-scarves",
+  "bb-gifts-children-boys-scarves",
+  "bb-gifts-children-baby",
+  "bb-gifts-children-newborn",
+  "bb-gifts-children-accessories",
+];
+
+export const BB_GIFTS_HOME_IDS: SubcategoryId[] = ["bb-gifts-home"];
+
+/** Burberry gift-recommendation leaf ids used for PLP membership. */
+export const BB_GIFTS_ALL_IDS: SubcategoryId[] = [
+  ...BB_GIFTS_HER_IDS,
+  ...BB_GIFTS_HIM_IDS,
+  ...BB_GIFTS_CHILDREN_IDS,
+  ...BB_GIFTS_HOME_IDS,
+];
+
+/** All Burberry leaf ids (women + men + kids + gifts) used for PLP membership. */
 export const BB_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_WOMEN_COLLECTION_IDS,
   ...BB_MEN_COLLECTION_IDS,
   ...BB_KIDS_COLLECTION_IDS,
+  ...BB_GIFTS_ALL_IDS,
 ];
 
 export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
@@ -717,6 +779,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "bb-kids-accessories": [...BB_KIDS_ACCESSORY_LEAF_IDS],
   "bb-kids-gifts": [...BB_KIDS_GIFT_IDS],
+  "burberry-gifts": [...BB_GIFTS_ALL_IDS],
+  "bb-gifts-her": [...BB_GIFTS_HER_IDS],
+  "bb-gifts-him": [...BB_GIFTS_HIM_IDS],
+  "bb-gifts-children": [...BB_GIFTS_CHILDREN_IDS],
+  "bb-gifts-home": [...BB_GIFTS_HOME_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -1307,6 +1374,62 @@ export const navCategories: NavCategory[] = [
                 ],
               },
             ],
+          },
+        ],
+      },
+      {
+        id: "burberry-gifts",
+        labelKo: "버버리 선물추천",
+        href: "/shop?category=accessories&sub=burberry-gifts",
+        children: [
+          {
+            id: "bb-gifts-her",
+            labelKo: "For Her",
+            href: "/shop?category=accessories&sub=bb-gifts-her",
+            navLeaf: true,
+            children: [
+              { id: "bb-gifts-her", labelKo: "View All", href: "/shop?category=accessories&sub=bb-gifts-her" },
+              { id: "bb-gifts-her-scarves", labelKo: "Scarves", href: "/shop?category=accessories&sub=bb-gifts-her-scarves" },
+              { id: "bb-gifts-her-jewellery", labelKo: "Jewellery", href: "/shop?category=accessories&sub=bb-gifts-her-jewellery" },
+              { id: "bb-gifts-her-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-gifts-her-fragrance" },
+              { id: "bb-gifts-her-personalised", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-gifts-her-personalised" },
+              { id: "bb-gifts-her-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-gifts-her-personalised-scarves" },
+              { id: "bb-gifts-her-classics", labelKo: "버버리 Classics", href: "/shop?category=accessories&sub=bb-gifts-her-classics" },
+            ],
+          },
+          {
+            id: "bb-gifts-him",
+            labelKo: "For Him",
+            href: "/shop?category=accessories&sub=bb-gifts-him",
+            navLeaf: true,
+            children: [
+              { id: "bb-gifts-him", labelKo: "View All", href: "/shop?category=accessories&sub=bb-gifts-him" },
+              { id: "bb-gifts-him-scarves", labelKo: "Scarves", href: "/shop?category=accessories&sub=bb-gifts-him-scarves" },
+              { id: "bb-gifts-him-ties-cufflinks", labelKo: "Ties & Cufflinks", href: "/shop?category=accessories&sub=bb-gifts-him-ties-cufflinks" },
+              { id: "bb-gifts-him-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-gifts-him-fragrance" },
+              { id: "bb-gifts-him-personalised", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-gifts-him-personalised" },
+              { id: "bb-gifts-him-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-gifts-him-personalised-scarves" },
+              { id: "bb-gifts-him-classics", labelKo: "버버리 Classics", href: "/shop?category=accessories&sub=bb-gifts-him-classics" },
+            ],
+          },
+          {
+            id: "bb-gifts-children",
+            labelKo: "For Children",
+            href: "/shop?category=accessories&sub=bb-gifts-children",
+            navLeaf: true,
+            children: [
+              { id: "bb-gifts-children", labelKo: "View All", href: "/shop?category=accessories&sub=bb-gifts-children" },
+              { id: "bb-gifts-children-girls-scarves", labelKo: "Girls’ Scarves", href: "/shop?category=accessories&sub=bb-gifts-children-girls-scarves" },
+              { id: "bb-gifts-children-boys-scarves", labelKo: "Boys’ Scarves", href: "/shop?category=accessories&sub=bb-gifts-children-boys-scarves" },
+              { id: "bb-gifts-children-baby", labelKo: "Baby Gifts", href: "/shop?category=accessories&sub=bb-gifts-children-baby" },
+              { id: "bb-gifts-children-newborn", labelKo: "Newborn Gifts", href: "/shop?category=accessories&sub=bb-gifts-children-newborn" },
+              { id: "bb-gifts-children-accessories", labelKo: "Accessories", href: "/shop?category=accessories&sub=bb-gifts-children-accessories" },
+            ],
+          },
+          {
+            id: "bb-gifts-home",
+            labelKo: "For the Home",
+            href: "/shop?category=accessories&sub=bb-gifts-home",
           },
         ],
       },
