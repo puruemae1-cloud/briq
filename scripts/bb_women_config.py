@@ -434,3 +434,4 @@ def primary_category_for_collections(
     ranked.sort()
     primary = ranked[0][2]
     return by[primary][2], primary
+
