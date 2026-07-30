@@ -5,101 +5,24 @@ import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
 
-function clearanceClass(id: string) {
-  return id === "cw-clearance" || id === "gg-sale"
-    ? "nav-link--clearance"
-    : undefined;
-}
-
-/** Full nested mega-menu — Burberry-style columns under each top category. */
-function MegaLinks({ items }: { items: NavChild[] }) {
-  const columns =
-    items.length === 1 && items[0].children?.length
-      ? items[0].children
-      : items;
-
-  return (
-    <div className="nav-mega">
-      {columns.map((col) => (
-        <div key={col.id} className="nav-mega__col">
-          <Link
-            href={col.href}
-            className={`nav-mega__heading ${clearanceClass(col.id) ?? ""}`}
-          >
-            {col.labelKo}
-          </Link>
-          {col.children?.map((child) => (
-            <div key={child.id} className="nav-mega__group">
-              <Link
-                href={child.href}
-                className={`nav-mega__link ${
-                  child.children?.length ? "nav-mega__link--parent" : ""
-                } ${clearanceClass(child.id) ?? ""}`}
-              >
-                {child.labelKo}
-              </Link>
-              {child.children?.map((leaf) => (
-                <Link
-                  key={leaf.id}
-                  href={leaf.href}
-                  className={`nav-mega__sublink ${clearanceClass(leaf.id) ?? ""}`}
-                >
-                  {leaf.labelKo}
-                </Link>
-              ))}
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function MobileBranch({
-  items,
-  depth = 0,
-}: {
-  items: NavChild[];
-  depth?: number;
-}) {
+/** Header dropdown / drawer: brands only (no nested collections). */
+function BrandLinks({ items }: { items: NavChild[] }) {
   return (
     <>
-      {items.map((child) =>
-        child.children?.length ? (
-          <details
-            key={child.id}
-            className={`mobile-drawer__branch mobile-drawer__branch--d${Math.min(depth, 3)}`}
-          >
-            <summary className="mobile-drawer__summary">
-              <span>{child.labelKo}</span>
-              <ChevronDown
-                className="mobile-drawer__chevron"
-                size={16}
-                aria-hidden
-              />
-            </summary>
-            <div className="mobile-drawer__branch-body">
-              <a href={child.href} className="mobile-drawer__all">
-                전체 보기
-              </a>
-              <MobileBranch items={child.children} depth={depth + 1} />
-            </div>
-          </details>
-        ) : (
-          <a
-            key={child.id}
+      {items.map((child) => (
+        <div key={child.id}>
+          <Link
             href={child.href}
-            className={[
-              "mobile-drawer__sub2",
-              clearanceClass(child.id) ?? "",
-            ]
-              .filter(Boolean)
-              .join(" ")}
+            className={
+              child.id === "cw-clearance" || child.id === "gg-sale"
+                ? "nav-link--clearance"
+                : undefined
+            }
           >
             {child.labelKo}
-          </a>
-        ),
-      )}
+          </Link>
+        </div>
+      ))}
     </>
   );
 }
@@ -144,8 +67,8 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     {c.labelKo}
                     <ChevronDown size={14} aria-hidden />
                   </Link>
-                  <div className="nav-dropdown nav-dropdown--mega">
-                    <MegaLinks items={c.children} />
+                  <div className="nav-dropdown">
+                    <BrandLinks items={c.children} />
                   </div>
                 </div>
               ) : (
@@ -199,7 +122,22 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     <a href={c.href} className="mobile-drawer__all">
                       전체 보기
                     </a>
-                    <MobileBranch items={c.children} />
+                    {c.children.map((child) => (
+                      <a
+                        key={child.id}
+                        href={child.href}
+                        className={[
+                          "mobile-drawer__sub",
+                          child.id === "cw-clearance" || child.id === "gg-sale"
+                            ? "nav-link--clearance"
+                            : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                      >
+                        {child.labelKo}
+                      </a>
+                    ))}
                   </div>
                 </details>
               ) : (
