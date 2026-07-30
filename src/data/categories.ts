@@ -517,12 +517,12 @@ export const navCategories: NavCategory[] = [
         id: "burberry",
         labelKo: "버버리",
         href: "/shop?category=luxury&sub=burberry",
-        navLeaf: true,
         children: [
           {
             id: "bb-women",
-            labelKo: "Women",
+            labelKo: "여성용",
             href: "/shop?category=luxury&sub=bb-women",
+            navLeaf: true,
             children: [
               {
                 id: "bb-women-latest",
@@ -569,8 +569,9 @@ export const navCategories: NavCategory[] = [
           },
           {
             id: "bb-men",
-            labelKo: "Men",
+            labelKo: "남성용",
             href: "/shop?category=luxury&sub=bb-men",
+            navLeaf: true,
             children: [
               {
                 id: "bb-men-latest",
@@ -706,8 +707,8 @@ export const navCategories: NavCategory[] = [
     labelKo: "패션의류",
     href: "/shop?category=clothing",
     children: [
-      { id: "womens", labelKo: "Womens", href: "/shop?category=clothing&sub=womens" },
-      { id: "mens", labelKo: "Mens", href: "/shop?category=clothing&sub=mens" },
+      { id: "womens", labelKo: "여성용", href: "/shop?category=clothing&sub=womens" },
+      { id: "mens", labelKo: "남성용", href: "/shop?category=clothing&sub=mens" },
     ],
   },
   {
@@ -719,12 +720,12 @@ export const navCategories: NavCategory[] = [
         id: "burberry-bags",
         labelKo: "버버리",
         href: "/shop?category=bags&sub=burberry-bags",
-        navLeaf: true,
         children: [
           {
             id: "bb-bags-womens",
             labelKo: "여성용",
             href: "/shop?category=bags&sub=bb-bags-womens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-women-bags",
@@ -745,6 +746,7 @@ export const navCategories: NavCategory[] = [
             id: "bb-bags-mens",
             labelKo: "남성용",
             href: "/shop?category=bags&sub=bb-bags-mens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-men-bags",
@@ -774,12 +776,12 @@ export const navCategories: NavCategory[] = [
         id: "burberry-shoes",
         labelKo: "버버리",
         href: "/shop?category=shoes&sub=burberry-shoes",
-        navLeaf: true,
         children: [
           {
             id: "bb-shoes-womens",
             labelKo: "여성용",
             href: "/shop?category=shoes&sub=bb-shoes-womens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-women-shoes",
@@ -799,6 +801,7 @@ export const navCategories: NavCategory[] = [
             id: "bb-shoes-mens",
             labelKo: "남성용",
             href: "/shop?category=shoes&sub=bb-shoes-mens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-men-shoes",
@@ -822,12 +825,12 @@ export const navCategories: NavCategory[] = [
         children: [
           {
             id: "luxury-womens",
-            labelKo: "Womens",
+            labelKo: "여성용",
             href: "/shop?category=shoes&sub=luxury-womens",
           },
           {
             id: "luxury-mens",
-            labelKo: "Mens",
+            labelKo: "남성용",
             href: "/shop?category=shoes&sub=luxury-mens",
           },
         ],
@@ -839,12 +842,12 @@ export const navCategories: NavCategory[] = [
         children: [
           {
             id: "training-womens",
-            labelKo: "Womens",
+            labelKo: "여성용",
             href: "/shop?category=shoes&sub=training-womens",
           },
           {
             id: "training-mens",
-            labelKo: "Mens",
+            labelKo: "남성용",
             href: "/shop?category=shoes&sub=training-mens",
           },
         ],
@@ -860,12 +863,12 @@ export const navCategories: NavCategory[] = [
         id: "burberry-accessories",
         labelKo: "버버리",
         href: "/shop?category=accessories&sub=burberry-accessories",
-        navLeaf: true,
         children: [
           {
             id: "bb-accessories-womens",
             labelKo: "여성용",
             href: "/shop?category=accessories&sub=bb-accessories-womens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-women-accessories",
@@ -911,6 +914,7 @@ export const navCategories: NavCategory[] = [
             id: "bb-accessories-mens",
             labelKo: "남성용",
             href: "/shop?category=accessories&sub=bb-accessories-mens",
+            navLeaf: true,
             children: [
               {
                 id: "bb-men-accessories",
@@ -986,12 +990,12 @@ export const navCategories: NavCategory[] = [
                 children: [
                   {
                     id: "gg-new-men",
-                    labelKo: "Men",
+                    labelKo: "남성용",
                     href: "/shop?category=sports&sub=gg-new-men",
                   },
                   {
                     id: "gg-new-women",
-                    labelKo: "Women",
+                    labelKo: "여성용",
                     href: "/shop?category=sports&sub=gg-new-women",
                   },
                 ],
@@ -1003,24 +1007,24 @@ export const navCategories: NavCategory[] = [
                 children: [
                   {
                     id: "gg-bestsellers-men",
-                    labelKo: "Men",
+                    labelKo: "남성용",
                     href: "/shop?category=sports&sub=gg-bestsellers-men",
                   },
                   {
                     id: "gg-bestsellers-women",
-                    labelKo: "Women",
+                    labelKo: "여성용",
                     href: "/shop?category=sports&sub=gg-bestsellers-women",
                   },
                 ],
               },
               {
                 id: "gg-men",
-                labelKo: "Men",
+                labelKo: "남성용",
                 href: "/shop?category=sports&sub=gg-men",
               },
               {
                 id: "gg-women",
-                labelKo: "Women",
+                labelKo: "여성용",
                 href: "/shop?category=sports&sub=gg-women",
               },
               {
