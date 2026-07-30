@@ -209,6 +209,17 @@ def style_key(product: dict) -> str:
     return "name:" + slugify(clean_name(product.get("title") or product.get("id") or ""))
 
 
+# Exact EN titles removed from Briq (manual merchandising).
+EXCLUDED_TITLES = {
+    "Wide Check Wool Silk Scarf",
+}
+
+
+def is_excluded_product(product: dict) -> bool:
+    title = clean_name(product.get("title") or "")
+    return title in EXCLUDED_TITLES
+
+
 def ts_str(obj) -> str:
     return json.dumps(obj, ensure_ascii=False)
 
@@ -305,7 +316,9 @@ def description_parts(product: dict) -> tuple[str, list[str], list[dict]]:
 
 def main() -> None:
     raw = json.loads(RAW_PATH.read_text())
-    products = raw.get("products") or []
+    products = [
+        p for p in (raw.get("products") or []) if not is_excluded_product(p)
+    ]
 
     groups: dict[str, list[dict]] = defaultdict(list)
     for p in products:
