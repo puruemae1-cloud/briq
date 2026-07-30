@@ -121,6 +121,19 @@ export type SubcategoryId =
   | "bb-scarves-kids"
   | "bb-scarves-kids-girls"
   | "bb-scarves-kids-boys"
+  | "bb-beauty"
+  | "bb-beauty-makeup"
+  | "bb-beauty-makeup-face"
+  | "bb-beauty-makeup-lips"
+  | "bb-beauty-makeup-eyes"
+  | "bb-beauty-fragrances"
+  | "bb-beauty-fragrances-women"
+  | "bb-beauty-fragrances-men"
+  | "bb-beauty-fragrances-signatures"
+  | "bb-beauty-fragrances-signatures-men"
+  | "bb-beauty-fragrances-goddess"
+  | "bb-beauty-fragrances-her"
+  | "bb-beauty-fragrances-hero"
   | "bb-accessories-womens"
   | "bb-women-accessories"
   | "bb-women-scarves"
@@ -712,6 +725,29 @@ export const BB_SCARVES_ALL_IDS: SubcategoryId[] = [
   ...BB_SCARVES_KIDS_IDS,
 ];
 
+export const BB_BEAUTY_MAKEUP_IDS: SubcategoryId[] = [
+  "bb-beauty-makeup",
+  "bb-beauty-makeup-face",
+  "bb-beauty-makeup-lips",
+  "bb-beauty-makeup-eyes",
+];
+
+export const BB_BEAUTY_FRAGRANCE_LEAF_IDS: SubcategoryId[] = [
+  "bb-beauty-fragrances",
+  "bb-beauty-fragrances-women",
+  "bb-beauty-fragrances-men",
+  "bb-beauty-fragrances-signatures",
+  "bb-beauty-fragrances-signatures-men",
+  "bb-beauty-fragrances-goddess",
+  "bb-beauty-fragrances-her",
+  "bb-beauty-fragrances-hero",
+];
+
+export const BB_BEAUTY_ALL_IDS: SubcategoryId[] = [
+  ...BB_BEAUTY_MAKEUP_IDS,
+  ...BB_BEAUTY_FRAGRANCE_LEAF_IDS,
+];
+
 /** Burberry gift-recommendation leaf ids used for PLP membership. */
 export const BB_GIFTS_ALL_IDS: SubcategoryId[] = [
   ...BB_GIFTS_HER_IDS,
@@ -727,6 +763,7 @@ export const BB_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_KIDS_COLLECTION_IDS,
   ...BB_GIFTS_ALL_IDS,
   ...BB_SCARVES_ALL_IDS,
+  ...BB_BEAUTY_ALL_IDS,
   ...BB_BAGS_COLLECTION_LEAF_IDS,
 ];
 
@@ -839,11 +876,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "burberry-accessories": [
     "bb-scarves",
     "burberry-gifts",
+    "bb-beauty",
     "bb-accessories-womens",
     "bb-accessories-mens",
     "bb-accessories-kids",
     ...BB_SCARVES_ALL_IDS,
     ...BB_GIFTS_ALL_IDS,
+    ...BB_BEAUTY_ALL_IDS,
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
     ...BB_WOMEN_GIFT_IDS,
@@ -857,6 +896,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-scarves-women": [...BB_SCARVES_WOMEN_IDS],
   "bb-scarves-men": [...BB_SCARVES_MEN_IDS],
   "bb-scarves-kids": [...BB_SCARVES_KIDS_IDS],
+  "bb-beauty": [...BB_BEAUTY_ALL_IDS],
+  "bb-beauty-makeup": [...BB_BEAUTY_MAKEUP_IDS],
+  "bb-beauty-fragrances": [...BB_BEAUTY_FRAGRANCE_LEAF_IDS],
+  "bb-beauty-fragrances-signatures": [
+    "bb-beauty-fragrances-signatures",
+    "bb-beauty-fragrances-signatures-men",
+  ],
   "bb-accessories-womens": [
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
@@ -1565,6 +1611,85 @@ export const navCategories: NavCategory[] = [
                 id: "bb-gifts-home",
                 labelKo: "For the Home",
                 href: "/shop?category=accessories&sub=bb-gifts-home",
+              },
+            ],
+          },
+          {
+            id: "bb-beauty",
+            labelKo: "뷰티",
+            href: "/shop?category=accessories&sub=bb-beauty",
+            navLeaf: true,
+            children: [
+              {
+                id: "bb-beauty-makeup",
+                labelKo: "메이크업",
+                href: "/shop?category=accessories&sub=bb-beauty-makeup",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "bb-beauty-makeup",
+                    labelKo: "전체 보기",
+                    href: "/shop?category=accessories&sub=bb-beauty-makeup",
+                  },
+                  {
+                    id: "bb-beauty-makeup-face",
+                    labelKo: "Face",
+                    href: "/shop?category=accessories&sub=bb-beauty-makeup-face",
+                  },
+                  {
+                    id: "bb-beauty-makeup-lips",
+                    labelKo: "Lips",
+                    href: "/shop?category=accessories&sub=bb-beauty-makeup-lips",
+                  },
+                  {
+                    id: "bb-beauty-makeup-eyes",
+                    labelKo: "Eyes",
+                    href: "/shop?category=accessories&sub=bb-beauty-makeup-eyes",
+                  },
+                ],
+              },
+              {
+                id: "bb-beauty-fragrances",
+                labelKo: "프래그런스",
+                href: "/shop?category=accessories&sub=bb-beauty-fragrances",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "bb-beauty-fragrances",
+                    labelKo: "전체 보기",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-women",
+                    labelKo: "여성 프래그런스",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-women",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-men",
+                    labelKo: "남성 프래그런스",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-men",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-signatures",
+                    labelKo: "Burberry Signatures",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-signatures",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-goddess",
+                    labelKo: "Burberry Goddess",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-goddess",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-her",
+                    labelKo: "Burberry Her",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-her",
+                  },
+                  {
+                    id: "bb-beauty-fragrances-hero",
+                    labelKo: "Burberry Hero",
+                    href: "/shop?category=accessories&sub=bb-beauty-fragrances-hero",
+                  },
+                ],
               },
             ],
           },

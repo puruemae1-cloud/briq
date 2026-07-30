@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from bb_bags_collections_config import BAGS_COLLECTIONS  # noqa: E402
+from bb_beauty_config import BEAUTY_COLLECTIONS  # noqa: E402
 from bb_children_config import CHILDREN_COLLECTIONS  # noqa: E402
 from bb_gifts_config import GIFTS_COLLECTIONS  # noqa: E402
 from bb_men_config import MEN_COLLECTIONS  # noqa: E402
@@ -304,6 +305,7 @@ COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     *GIFTS_COLLECTIONS,
     *SCARVES_COLLECTIONS,
     *BAGS_COLLECTIONS,
+    *BEAUTY_COLLECTIONS,
 ]
 
 # Parent-only ids (no direct PLP) — used for shop chip expansion.
@@ -344,6 +346,9 @@ GROUP_IDS = [
     "bb-scarves-men",
     "bb-scarves-kids",
     "bb-bags-collections",
+    "bb-beauty",
+    "bb-beauty-makeup",
+    "bb-beauty-fragrances",
 ]
 
 BASE = "https://uk.burberry.com"
@@ -428,6 +433,9 @@ def primary_category_for_collections(
             "bb-scarves-women",
             "bb-scarves-men",
             "bb-scarves-kids",
+            "bb-beauty",
+            "bb-beauty-makeup",
+            "bb-beauty-fragrances",
         }
     }
     gift_ids = {

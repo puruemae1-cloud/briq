@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-30T17:40:57Z",
+  "scrapedAt": "2026-07-30T17:55:44Z",
   "source": "https://uk.burberry.com",
   "collectionCounts": {
     "bb-women-new": 767,
@@ -196,7 +196,19 @@
     "bb-bags-collections-horseshoe": 11,
     "bb-bags-collections-bloomsbury": 25,
     "bb-bags-collections-b-clip": 11,
-    "bb-bags-collections-margate": 8
+    "bb-bags-collections-margate": 8,
+    "bb-beauty-makeup": 21,
+    "bb-beauty-makeup-face": 7,
+    "bb-beauty-makeup-lips": 10,
+    "bb-beauty-makeup-eyes": 4,
+    "bb-beauty-fragrances": 52,
+    "bb-beauty-fragrances-women": 35,
+    "bb-beauty-fragrances-men": 30,
+    "bb-beauty-fragrances-signatures": 11,
+    "bb-beauty-fragrances-signatures-men": 10,
+    "bb-beauty-fragrances-goddess": 9,
+    "bb-beauty-fragrances-her": 3,
+    "bb-beauty-fragrances-hero": 9
   },
   "collections": {
     "bb-women-new": {
@@ -1368,9 +1380,81 @@
       "path": "/l/womens-bags/margate/",
       "category": "bags",
       "count": 8
+    },
+    "bb-beauty-makeup": {
+      "label": "Make-up",
+      "path": "/l/beauty/make-up/",
+      "category": "accessories",
+      "count": 21
+    },
+    "bb-beauty-makeup-face": {
+      "label": "Face",
+      "path": "/l/beauty/make-up/face/",
+      "category": "accessories",
+      "count": 7
+    },
+    "bb-beauty-makeup-lips": {
+      "label": "Lips",
+      "path": "/l/beauty/make-up/lips/",
+      "category": "accessories",
+      "count": 10
+    },
+    "bb-beauty-makeup-eyes": {
+      "label": "Eyes",
+      "path": "/l/beauty/make-up/eyes/",
+      "category": "accessories",
+      "count": 4
+    },
+    "bb-beauty-fragrances": {
+      "label": "Fragrances",
+      "path": "/l/beauty/fragrances/",
+      "category": "accessories",
+      "count": 52
+    },
+    "bb-beauty-fragrances-women": {
+      "label": "Women’s Fragrances",
+      "path": "/l/beauty/womens-fragrances/",
+      "category": "accessories",
+      "count": 35
+    },
+    "bb-beauty-fragrances-men": {
+      "label": "Men’s Fragrances",
+      "path": "/l/mens-fragrances/",
+      "category": "accessories",
+      "count": 30
+    },
+    "bb-beauty-fragrances-signatures": {
+      "label": "Burberry Signatures",
+      "path": "/l/beauty/fragrances/style=signatures/",
+      "category": "accessories",
+      "count": 11
+    },
+    "bb-beauty-fragrances-signatures-men": {
+      "label": "Burberry Signatures (Men)",
+      "path": "/l/mens-fragrances/style=signatures/",
+      "category": "accessories",
+      "count": 10
+    },
+    "bb-beauty-fragrances-goddess": {
+      "label": "Burberry Goddess",
+      "path": "/l/beauty/fragrances/style=goddess/",
+      "category": "accessories",
+      "count": 9
+    },
+    "bb-beauty-fragrances-her": {
+      "label": "Burberry Her",
+      "path": "/l/beauty/fragrances/style=her/",
+      "category": "accessories",
+      "count": 3
+    },
+    "bb-beauty-fragrances-hero": {
+      "label": "Burberry Hero",
+      "path": "/l/beauty/fragrances/style=hero/",
+      "category": "accessories",
+      "count": 9
     }
   },
-  "productCount": 2880,
+  "productCount": 2893,
   "errors": [],
   "products": [
     {
@@ -1427,6 +1511,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -1490,6 +1576,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -1549,6 +1637,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -1612,6 +1702,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -1671,6 +1763,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -1732,6 +1826,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -1790,6 +1886,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -1853,6 +1951,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -1912,6 +2012,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -1975,6 +2077,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -2036,6 +2140,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -2098,6 +2204,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
         "bb-women-fragrance",
@@ -2160,6 +2268,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-gifts-him-personalised",
@@ -2226,6 +2336,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -2291,6 +2403,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-gifts-him-personalised",
@@ -2356,6 +2470,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -2543,6 +2659,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -2688,6 +2806,9 @@
       "measurements": null,
       "materialComposition": "Contains 12% concentration",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -2753,6 +2874,11 @@
       "measurements": null,
       "materialComposition": "Contains 20% concentration",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -2820,6 +2946,11 @@
       "measurements": null,
       "materialComposition": "Contains 10% concentration",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -10108,6 +10239,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
@@ -11222,6 +11355,136 @@
       "label": null
     },
     {
+      "id": "40818271",
+      "title": "Ultimate Glow Foundation – 40 Light Cool",
+      "url": "https://uk.burberry.com/ultimate-glow-foundation-40-light-cool-p40818271",
+      "color": "40 Light Cool",
+      "gbpPrice": 47.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40818271/1.jpg",
+      "images": [
+        "/products/bb-pdp/40818271/1.jpg",
+        "/products/bb-pdp/40818271/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/A2403BB6-7DB4-413B-AD35-E7E9D3615F66",
+        "https://assets.burberry.com/is/image/Burberryltd/FED38CEE-B1C7-42FB-8DF8-B622E2591BB6"
+      ],
+      "sizes": [
+        {
+          "sku": "40818271",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 4,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 4
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40818271",
+          "url": "/ultimate-glow-foundation-40-light-cool-p40818271",
+          "label": "40 light cool",
+          "name": "Ultimate Glow Foundation – 40 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C1DB11FC-D394-4C92-BCEB-3C5AA316AB89"
+        },
+        {
+          "id": "40818231",
+          "url": "/ultimate-glow-foundation-10-fair-warm-p40818231",
+          "label": "10 fair warm",
+          "name": "Ultimate Glow Foundation – 10 Fair Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2ECA532C-DAF2-4B9C-B47D-CD3AAECA936C"
+        },
+        {
+          "id": "40818241",
+          "url": "/ultimate-glow-foundation-20-fair-cool-p40818241",
+          "label": "20 fair cool",
+          "name": "Ultimate Glow Foundation – 20 Fair Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BA5586BB-9D96-49E2-BF6E-2570DA3F76CD"
+        },
+        {
+          "id": "40818251",
+          "url": "/ultimate-glow-foundation-30-light-neutral-p40818251",
+          "label": "30 light neutral",
+          "name": "Ultimate Glow Foundation – 30 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2A3BD485-7400-45E5-9C53-1767947A1382"
+        },
+        {
+          "id": "40818261",
+          "url": "/ultimate-glow-foundation-30-light-warm-p40818261",
+          "label": "30 light warm",
+          "name": "Ultimate Glow Foundation – 30 Light Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/AC5AC324-E5E7-4A9C-A383-E1CC814019E7"
+        },
+        {
+          "id": "40818281",
+          "url": "/ultimate-glow-foundation-40-light-warm-p40818281",
+          "label": "40 light warm",
+          "name": "Ultimate Glow Foundation – 40 Light Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1C40B530-D085-4EF4-B635-AB3DF28BE4EE"
+        },
+        {
+          "id": "40818291",
+          "url": "/ultimate-glow-foundation-50-medium-cool-p40818291",
+          "label": "50 medium cool",
+          "name": "Ultimate Glow Foundation – 50 Medium Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/327746F6-9CE2-4C26-BCED-5CA8B4DD738F"
+        },
+        {
+          "id": "40818301",
+          "url": "/ultimate-glow-foundation-50-medium-neutral-p40818301",
+          "label": "50 medium neutral",
+          "name": "Ultimate Glow Foundation – 50 Medium Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/68C924F5-9DEC-4B20-8955-D878F09782AE"
+        },
+        {
+          "id": "40818321",
+          "url": "/ultimate-glow-foundation-80-medium-warm-p40818321",
+          "label": "80 medium warm",
+          "name": "Ultimate Glow Foundation – 80 Medium Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/A3BD0327-C838-4FC0-942A-FD20A70E8EB1"
+        }
+      ],
+      "description": "Discover the new Ultimate Glow Fluid Foundation: Burberry’s luxurious serum foundation. A blend of skincare and make-up for a multidimensional, youthful glow – day or night.#Formulated with a powerful blend of active skincare ingredients including hyaluronic acid and viola extracts, this youth-infusing formula plumps and smooths your skin with its eight-hour hydrating properties – for a visibly youthful complexion and ultimate radiance.#This new formula contains antioxidant-rich white tea extracts that help to protect your skin from environmental damage and is enriched with light-reflecting pearls to create a lit-from-within finish.#The skincare serum-like texture is lightweight, smooth on your skin and unifies the complexion while giving a second-skin feel.#How to use: apply to the centre of the face and blend outward using a brush, sponge or your fingers. Add more layers to seamlessly build coverage.#Dermatologically tested. Formulated without parabens and D5.#Available in 12 luminous shades.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Discover the new Ultimate Glow Fluid Foundation: Burberry’s luxurious serum foundation. A blend of skincare and make-up for a multidimensional, youthful glow – day or night.",
+            "Formulated with a powerful blend of active skincare ingredients including hyaluronic acid and viola extracts, this youth-infusing formula plumps and smooths your skin with its eight-hour hydrating properties – for a visibly youthful complexion and ultimate radiance.",
+            "This new formula contains antioxidant-rich white tea extracts that help to protect your skin from environmental damage and is enriched with light-reflecting pearls to create a lit-from-within finish.",
+            "The skincare serum-like texture is lightweight, smooth on your skin and unifies the complexion while giving a second-skin feel.",
+            "How to use: apply to the centre of the face and blend outward using a brush, sponge or your fingers. Add more layers to seamlessly build coverage.",
+            "Dermatologically tested. Formulated without parabens and D5.",
+            "Available in 12 luminous shades.",
+            "30ml/1fl oz",
+            "Item 40818271"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face"
+      ],
+      "label": null
+    },
+    {
       "id": "40818651",
       "title": "Burberry Hero Eau de Toilette 50ml",
       "url": "https://uk.burberry.com/burberry-hero-eau-de-toilette-50ml-p40818651",
@@ -11330,6 +11593,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -11391,6 +11657,7 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
         "bb-men-summer-styles"
@@ -11453,6 +11720,11 @@
       "measurements": null,
       "materialComposition": "Contains 15% concentration",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -11520,6 +11792,11 @@
       "measurements": null,
       "materialComposition": "Contains 12% concentration",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -13083,6 +13360,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
@@ -14418,6 +14697,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-her",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -14538,6 +14820,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -14599,6 +14884,7 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -14659,6 +14945,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -14667,6 +14955,278 @@
         "bb-women-personalised-gifts"
       ],
       "label": "Personalise"
+    },
+    {
+      "id": "40832981",
+      "title": "Beyond Wear Perfecting Matte Foundation – 40 Light Neutral",
+      "url": "https://uk.burberry.com/beyond-wear-perfecting-matte-foundation-40-light-neutral-p40832981",
+      "color": "40 Light Neutral",
+      "gbpPrice": 47.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40832981/1.jpg",
+      "images": [
+        "/products/bb-pdp/40832981/1.jpg",
+        "/products/bb-pdp/40832981/2.jpg",
+        "/products/bb-pdp/40832981/3.jpg",
+        "/products/bb-pdp/40832981/4.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/5DD9EF2D-EA94-4F16-A093-3A1D37407421",
+        "https://assets.burberry.com/is/image/Burberryltd/138160FF-C87B-4992-AC3A-DD6C398AE2D9",
+        "https://assets.burberry.com/is/image/Burberryltd/85D5BE9E-7890-4863-AC42-D76EAB495F78",
+        "https://assets.burberry.com/is/image/Burberryltd/44273C08-DD1A-4E4E-83CB-C29C9E648A75"
+      ],
+      "sizes": [
+        {
+          "sku": "40832981",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 10,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 10
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40832981",
+          "url": "/beyond-wear-perfecting-matte-foundation-40-light-neutral-p40832981",
+          "label": "40 light neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 40 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/33256228-F9AF-4869-9BA1-81F192FA0E27"
+        },
+        {
+          "id": "40833071",
+          "url": "/beyond-wear-perfecting-matte-foundation-10-fair-warm-p40833071",
+          "label": "10 fair warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 10 Fair Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/00B3A389-A78A-48E6-A430-D23ED8A744F0"
+        },
+        {
+          "id": "40832861",
+          "url": "/beyond-wear-perfecting-matte-foundation-20-fair-cool-p40832861",
+          "label": "20 fair cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 20 Fair Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/12C0F572-E1FE-4465-919B-4824BC527E54"
+        },
+        {
+          "id": "40832961",
+          "url": "/beyond-wear-perfecting-matte-foundation-20-fair-neutral-p40832961",
+          "label": "20 fair neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 20 Fair Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/D8B6F2E9-9A1C-4764-84AD-D96AC8C742A3"
+        },
+        {
+          "id": "40833081",
+          "url": "/beyond-wear-perfecting-matte-foundation-20-fair-warm-p40833081",
+          "label": "20 fair warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 20 Fair Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/EE212057-8954-4295-AA75-0E2724C682DF"
+        },
+        {
+          "id": "40832971",
+          "url": "/beyond-wear-perfecting-matte-foundation-30-light-neutral-p40832971",
+          "label": "30 light neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 30 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/72D5223B-4F83-42D6-93C8-F5D97716572D"
+        },
+        {
+          "id": "40833091",
+          "url": "/beyond-wear-perfecting-matte-foundation-30-light-warm-p40833091",
+          "label": "30 light warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 30 Light Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/4DEF1CDD-58EA-4142-8B32-A57E1B265AD0"
+        },
+        {
+          "id": "40832881",
+          "url": "/beyond-wear-perfecting-matte-foundation-40-light-cool-p40832881",
+          "label": "40 light cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 40 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6CAE0388-8FFC-4287-844F-4BFFBAE65EC8"
+        },
+        {
+          "id": "40833101",
+          "url": "/beyond-wear-perfecting-matte-foundation-40-light-warm-p40833101",
+          "label": "40 light warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 40 Light Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/CA51EDDE-491C-41D1-BF2A-2DD2AA096536"
+        },
+        {
+          "id": "40832891",
+          "url": "/beyond-wear-perfecting-matte-foundation-45-light-cool-p40832891",
+          "label": "45 light cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 45 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1DE5B35D-3354-42C4-A866-6E5789A1CB22"
+        },
+        {
+          "id": "40832991",
+          "url": "/beyond-wear-perfecting-matte-foundation-45-light-neutral-p40832991",
+          "label": "45 light neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 45 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B198F75E-BD11-4D52-98C1-11FA252FB326"
+        },
+        {
+          "id": "40833111",
+          "url": "/beyond-wear-perfecting-matte-foundation-45-light-warm-p40833111",
+          "label": "45 light warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 45 Light Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E7B59154-2BA9-4F49-9C64-30370C6B5A3C"
+        },
+        {
+          "id": "40833001",
+          "url": "/beyond-wear-perfecting-matte-foundation-60-medium-neutral-p40833001",
+          "label": "60 medium neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 60 Medium Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/819DEAD6-00F7-463B-B3B4-F90AB7512779"
+        },
+        {
+          "id": "40833121",
+          "url": "/beyond-wear-perfecting-matte-foundation-60-medium-warm-p40833121",
+          "label": "60 medium warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 60 Medium Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/5A29050F-FBE4-480F-9738-D5E944050E97"
+        },
+        {
+          "id": "40832901",
+          "url": "/beyond-wear-perfecting-matte-foundation-70-medium-cool-p40832901",
+          "label": "70 medium cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 70 Medium Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/074F7D2B-5053-4B24-9BE2-572F53F2CC4D"
+        },
+        {
+          "id": "40833011",
+          "url": "/beyond-wear-perfecting-matte-foundation-70-medium-neutral-p40833011",
+          "label": "70 medium neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 70 Medium Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/79E0F8B6-FB4B-4D06-BED4-C427307BF35B"
+        },
+        {
+          "id": "40833141",
+          "url": "/beyond-wear-perfecting-matte-foundation-80-medium-warm-p40833141",
+          "label": "80 medium warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 80 Medium Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/EA2CD7FD-A239-4126-BC35-3757F71B5E0A"
+        },
+        {
+          "id": "40832921",
+          "url": "/beyond-wear-perfecting-matte-foundation-85-medium-cool-p40832921",
+          "label": "85 medium cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 85 Medium Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2BBF5DEB-DA8B-499F-A677-7B2786D58C9B"
+        },
+        {
+          "id": "40832931",
+          "url": "/beyond-wear-perfecting-matte-foundation-100-medium-deep-cool-p40832931",
+          "label": "100 medium-deep cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 100 Medium-Deep Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/077F7A18-38CC-4CEF-A0C2-8BB1B26DDDBB"
+        },
+        {
+          "id": "40833031",
+          "url": "/beyond-wear-perfecting-matte-foundation-100-medium-deep-neutral-p40833031",
+          "label": "100 medium-deep neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 100 Medium-Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/0855898C-AD24-425C-8DA8-8AF2ACF585A7"
+        },
+        {
+          "id": "40833161",
+          "url": "/beyond-wear-perfecting-matte-foundation-100-medium-deep-warm-p40833161",
+          "label": "100 medium-deep warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 100 Medium-Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E20B4510-DE81-40AF-96D5-74AD93230C7B"
+        },
+        {
+          "id": "40833171",
+          "url": "/beyond-wear-perfecting-matte-foundation-110-medium-deep-warm-p40833171",
+          "label": "110 medium-deep warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 110 Medium-Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/562D95A6-7A01-46A3-8A02-8D62B4042B99"
+        },
+        {
+          "id": "40832941",
+          "url": "/beyond-wear-perfecting-matte-foundation-115-medium-deep-cool-p40832941",
+          "label": "115 medium-deep cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 115 Medium-Deep Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BA1432BA-24C9-4583-B9F7-151AD8E53281"
+        },
+        {
+          "id": "40833051",
+          "url": "/beyond-wear-perfecting-matte-foundation-120-deep-neutral-p40833051",
+          "label": "120 deep neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 120 Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1084846F-4AD2-4FD0-A92F-AFCD44807E77"
+        },
+        {
+          "id": "40833181",
+          "url": "/beyond-wear-perfecting-matte-foundation-120-deep-warm-p40833181",
+          "label": "120 deep warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 120 Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7899AFA0-0945-4FC9-A44F-379D1B817A63"
+        },
+        {
+          "id": "40833061",
+          "url": "/beyond-wear-perfecting-matte-foundation-130-deep-neutral-p40833061",
+          "label": "130 deep neutral",
+          "name": "Beyond Wear Perfecting Matte Foundation – 130 Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/146299EE-5286-42E6-AD64-F0A3F609E8EA"
+        },
+        {
+          "id": "40832951",
+          "url": "/beyond-wear-perfecting-matte-foundation-140-deep-cool-p40832951",
+          "label": "140 deep cool",
+          "name": "Beyond Wear Perfecting Matte Foundation – 140 Deep Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B0F165A1-CDC3-4556-B5BD-3DDB419219A8"
+        },
+        {
+          "id": "40833191",
+          "url": "/beyond-wear-perfecting-matte-foundation-140-deep-warm-p40833191",
+          "label": "140 deep warm",
+          "name": "Beyond Wear Perfecting Matte Foundation – 140 Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/66591C2B-3FF6-4F10-B1D6-6608747941DE"
+        }
+      ],
+      "description": "Discover Beyond Wear Perfecting Matte foundation – the new long-lasting liquid foundation with Trench Protect Technology that goes beyond by combining 24-hour active wear, long-lasting active care and weather protection*. For a flawless finish that lasts.##The new foundation evens out the complexion, blurs the appearance of pores and helps protect the skin from environmental factors, leaving it smooth with a natural matte finish. Its breathable, lightweight formula allows buildable coverage from medium to full. The ultra-sensory, creamy texture blends seamlessly for all day stay-true colour.##Inspired by the innovative fabric of the iconic Burberry trench coat, Trench Protect Technology emulates the same properties, acting as a shield that delivers breathable weather protection*, high resistance and comfort. It creates a thin, water-resistant yet breathable film – tightly woven with natural origin active ingredients – which acts to protect, mattify and hydrate the skin.##• The breathable film provides resistance against water, humidity, sweat and heat.#• The formula is infused with bamboo powder for instant mattifying action and silk-cotton tree flower extract to help rebalance skin, preserving the mattifying properties while providing hydration. #• Rosa damascena and Darjeeling tea leaf extract have antioxidant and anti-pollution properties to protect against environmental factors.##*Weather protection: water, humidity, sweat and heat-resistance##Beyond Wear Perfecting Matte foundation will be available in 35 shades.##How to use: apply to the centre of the face and blend outward using a brush, sponge or your fingers. Add more layers to seamlessly build coverage.##Vegan formula#Dermatologically tested and non-comedogenic#Formulated without parabens and D5",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Discover Beyond Wear Perfecting Matte foundation – the new long-lasting liquid foundation with Trench Protect Technology that goes beyond by combining 24-hour active wear, long-lasting active care and weather protection*. For a flawless finish that lasts.",
+            "The new foundation evens out the complexion, blurs the appearance of pores and helps protect the skin from environmental factors, leaving it smooth with a natural matte finish. Its breathable, lightweight formula allows buildable coverage from medium to full. The ultra-sensory, creamy texture blends seamlessly for all day stay-true colour.",
+            "Inspired by the innovative fabric of the iconic Burberry trench coat, Trench Protect Technology emulates the same properties, acting as a shield that delivers breathable weather protection*, high resistance and comfort. It creates a thin, water-resistant yet breathable film – tightly woven with natural origin active ingredients – which acts to protect, mattify and hydrate the skin.",
+            "• The breathable film provides resistance against water, humidity, sweat and heat.",
+            "• The formula is infused with bamboo powder for instant mattifying action and silk-cotton tree flower extract to help rebalance skin, preserving the mattifying properties while providing hydration.",
+            "• Rosa damascena and Darjeeling tea leaf extract have antioxidant and anti-pollution properties to protect against environmental factors.",
+            "*Weather protection: water, humidity, sweat and heat-resistance",
+            "Beyond Wear Perfecting Matte foundation will be available in 35 shades.",
+            "How to use: apply to the centre of the face and blend outward using a brush, sponge or your fingers. Add more layers to seamlessly build coverage.",
+            "Vegan formula",
+            "Dermatologically tested and non-comedogenic",
+            "Formulated without parabens and D5",
+            "30ml/1fl oz",
+            "Item 40832981"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face"
+      ],
+      "label": null
     },
     {
       "id": "40833211",
@@ -14723,6 +15283,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -14789,6 +15354,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -14969,6 +15539,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance",
@@ -15029,6 +15602,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -15087,6 +15663,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance",
@@ -15147,10 +15726,271 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
       "label": ""
+    },
+    {
+      "id": "40836121",
+      "title": "Burberry Kisses Liquid Matte – Oxblood No.97",
+      "url": "https://uk.burberry.com/burberry-kisses-liquid-matte-oxblood-no97-p40836121",
+      "color": "Oxblood 97",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40836121/1.jpg",
+      "images": [
+        "/products/bb-pdp/40836121/1.jpg",
+        "/products/bb-pdp/40836121/2.jpg",
+        "/products/bb-pdp/40836121/3.jpg",
+        "/products/bb-pdp/40836121/4.jpg",
+        "/products/bb-pdp/40836121/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/4BD2DD55-574D-4225-B44B-35098380AC95",
+        "https://assets.burberry.com/is/image/Burberryltd/B05C8A24-25AF-4D06-9495-66CC826B175B",
+        "https://assets.burberry.com/is/image/Burberryltd/F445BB56-6173-4547-A0C2-FB0D33B972CD",
+        "https://assets.burberry.com/is/image/Burberryltd/AC2BD447-815D-4B26-BCBE-9950EDFC7137",
+        "https://assets.burberry.com/is/image/Burberryltd/B56B5358-D986-46BB-8BDF-CC22C01A0A78"
+      ],
+      "sizes": [
+        {
+          "sku": "40836121",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 5,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 5
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40836121",
+          "url": "/burberry-kisses-liquid-matte-oxblood-no97-p40836121",
+          "label": "Oxblood 97",
+          "name": "Burberry Kisses Liquid Matte – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/D94FFB16-3F02-4F2D-8BBA-6BEB7087F01F"
+        },
+        {
+          "id": "40836051",
+          "url": "/burberry-kisses-liquid-matte-delicate-rose-no14-p40836051",
+          "label": "Delicate rose 14",
+          "name": "Burberry Kisses Liquid Matte – Delicate Rose No.14",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/8BB4F5BB-1667-4602-A4F4-17834EC84ECF"
+        },
+        {
+          "id": "40836061",
+          "url": "/burberry-kisses-liquid-matte-blush-pink-no31-p40836061",
+          "label": "Blush pink 31",
+          "name": "Burberry Kisses Liquid Matte – Blush Pink No.31",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E85A9302-8E00-45F2-9FCA-E0F2A434A6F1"
+        },
+        {
+          "id": "40836071",
+          "url": "/burberry-kisses-liquid-matte-deep-rosewood-no40-p40836071",
+          "label": "Deep rosewood 40",
+          "name": "Burberry Kisses Liquid Matte – Deep Rosewood No.40",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1CC1E201-6F39-43EA-ABD4-27691D799077"
+        },
+        {
+          "id": "40836081",
+          "url": "/burberry-kisses-liquid-matte-bright-orchid-no48-p40836081",
+          "label": "Bright orchid 48",
+          "name": "Burberry Kisses Liquid Matte – Bright Orchid No.48",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2ED41BF4-8A93-4AB7-968E-9AA77DDC0F86"
+        },
+        {
+          "id": "40836091",
+          "url": "/burberry-kisses-liquid-matte-orange-red-no71-p40836091",
+          "label": "Orange red 71",
+          "name": "Burberry Kisses Liquid Matte – Orange Red No.71",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C0BE9A5B-947E-4965-BDC2-AE9E807A98B6"
+        },
+        {
+          "id": "40836101",
+          "url": "/burberry-kisses-liquid-matte-rich-caramel-no81-p40836101",
+          "label": "Rich caramel 81",
+          "name": "Burberry Kisses Liquid Matte – Rich Caramel No.81",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/0F163593-290B-4BBD-BC3A-FA83935EB4B6"
+        },
+        {
+          "id": "40836111",
+          "url": "/burberry-kisses-liquid-matte-russet-no93-p40836111",
+          "label": "Russet 93",
+          "name": "Burberry Kisses Liquid Matte – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/3C7C77FB-EA06-4F58-A578-EAF60BECFDDC"
+        },
+        {
+          "id": "40836131",
+          "url": "/burberry-kisses-liquid-matte-burgundy-no102-p40836131",
+          "label": "Burgundy 102",
+          "name": "Burberry Kisses Liquid Matte – Burgundy No.102",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/DCBDD32A-B616-4C05-BADD-0AD082406EFE"
+        },
+        {
+          "id": "40836141",
+          "url": "/burberry-kisses-liquid-matte-the-red-no106-p40836141",
+          "label": "The red 106",
+          "name": "Burberry Kisses Liquid Matte – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/3EA33D2E-7595-4E8E-8EED-DE31F6478FBC"
+        },
+        {
+          "id": "40836151",
+          "url": "/burberry-kisses-liquid-matte-tangerine-red-no108-p40836151",
+          "label": "Tangerine red 108",
+          "name": "Burberry Kisses Liquid Matte – Tangerine Red No.108",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/205C5CC6-1ED8-46E6-BDC7-1CB7C8AC6A0A"
+        },
+        {
+          "id": "40836161",
+          "url": "/burberry-kisses-liquid-matte-military-red-no109-p40836161",
+          "label": "Military red 109",
+          "name": "Burberry Kisses Liquid Matte – Military Red No.109",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/07629947-390F-46C3-97B5-AB902711A1EB"
+        },
+        {
+          "id": "40836171",
+          "url": "/burberry-kisses-liquid-matte-fire-red-no118-p40836171",
+          "label": "Fire red 118",
+          "name": "Burberry Kisses Liquid Matte – Fire Red No.118",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/A16B01CD-C242-471E-9C61-343D9DAB3225"
+        }
+      ],
+      "description": "Introducing Kisses Liquid Matte – Burberry’s first liquid lipstick that combines long-lasting wear with luxurious comfort. The lightweight creamy texture wraps lips in smoothing full-coverage colour for a matte finish.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Introducing Kisses Liquid Matte – Burberry’s first liquid lipstick that combines long-lasting wear with luxurious comfort. The lightweight creamy texture wraps lips in smoothing full-coverage colour for a matte finish.",
+            "6ml/0.2fl oz",
+            "Item 40836121"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
+    },
+    {
+      "id": "40836191",
+      "title": "Beyond Wear Setting and Refining Powder – Medium",
+      "url": "https://uk.burberry.com/beyond-wear-setting-and-refining-powder-medium-p40836191",
+      "color": "Medium",
+      "gbpPrice": 46.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40836191/1.jpg",
+      "images": [
+        "/products/bb-pdp/40836191/1.jpg",
+        "/products/bb-pdp/40836191/2.jpg",
+        "/products/bb-pdp/40836191/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/5278D8F2-EEB0-4C1B-978B-7CA77C0211A5",
+        "https://assets.burberry.com/is/image/Burberryltd/DD66770E-4054-416C-8FA7-529DA185E508",
+        "https://assets.burberry.com/is/image/Burberryltd/AFEF7F8C-1B42-47CB-B973-846543CA41CA"
+      ],
+      "sizes": [
+        {
+          "sku": "40836191",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 6,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 6
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40836191",
+          "url": "/beyond-wear-setting-and-refining-powder-medium-p40836191",
+          "label": "Medium 01",
+          "name": "Beyond Wear Setting and Refining Powder – Medium",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/46117222-1303-4B14-BC6F-DB4CCF42724D"
+        },
+        {
+          "id": "40836181",
+          "url": "/beyond-wear-setting-and-refining-powder-fair-p40836181",
+          "label": "Fair",
+          "name": "Beyond Wear Setting and Refining Powder – Fair",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/8735C1F6-DAA9-4CB1-82E2-6C95D9C17C7A"
+        },
+        {
+          "id": "40836201",
+          "url": "/beyond-wear-setting-and-refining-powder-medium-deep-p40836201",
+          "label": "Medium deep",
+          "name": "Beyond Wear Setting and Refining Powder – Medium Deep",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FFD1E0CB-671D-473F-A850-C71B64DF474B"
+        },
+        {
+          "id": "40836211",
+          "url": "/beyond-wear-setting-and-refining-powder-deep-p40836211",
+          "label": "Deep",
+          "name": "Beyond Wear Setting and Refining Powder – Deep",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/CCA7A300-6673-45E9-ACCC-2871F4193934"
+        }
+      ],
+      "description": "Introducing Burberry Beyond Wear Setting and Refining Powder. Designed to go beyond, the face powder is inspired by the fabric of the iconic Burberry trench.##Infused with natural-origin ingredients, this non-drying, lightweight and breathable formula provides a 24-hour mattifying veil with active protection.##Designed to suit a range of skin tones, the formula is a hybrid of tinted setting powder and translucent refining powder that blurs imperfections, providing:##24-hour shine control#Ultra-thin powders, including bamboo extract for long-lasting oil-control action, provide buildable coverage and a matte finish that lasts.##Skin-protecting ingredients:#Vitalit-E anti-pollution and rosa damascena antioxidant properties protect against external environmental factors. Infused with raspberry stem cell-based extract, the formula leaves skin comfortable and smooth.##Vegan formula#Suitable for all skin types, including sensitive.#Dermatologically tested and non-comedogenic.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Introducing Burberry Beyond Wear Setting and Refining Powder. Designed to go beyond, the face powder is inspired by the fabric of the iconic Burberry trench.",
+            "Infused with natural-origin ingredients, this non-drying, lightweight and breathable formula provides a 24-hour mattifying veil with active protection.",
+            "Designed to suit a range of skin tones, the formula is a hybrid of tinted setting powder and translucent refining powder that blurs imperfections, providing:",
+            "24-hour shine control",
+            "Ultra-thin powders, including bamboo extract for long-lasting oil-control action, provide buildable coverage and a matte finish that lasts.",
+            "Skin-protecting ingredients:",
+            "Vitalit-E anti-pollution and rosa damascena antioxidant properties protect against external environmental factors. Infused with raspberry stem cell-based extract, the formula leaves skin comfortable and smooth.",
+            "Vegan formula",
+            "Suitable for all skin types, including sensitive.",
+            "Dermatologically tested and non-comedogenic.",
+            "11g/0.38oz",
+            "Item 40836191"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face"
+      ],
+      "label": null
     },
     {
       "id": "40836301",
@@ -15436,6 +16276,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-eyes",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
@@ -16651,6 +17493,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -16710,6 +17554,7 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -16767,6 +17612,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -16824,6 +17672,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -16881,8 +17732,429 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
+      ],
+      "label": null
+    },
+    {
+      "id": "40841511",
+      "title": "Burberry Brit Shine Lipstick – Russet No.93",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-russet-no93-p40841511",
+      "color": "Russet 93",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40841511/1.jpg",
+      "images": [
+        "/products/bb-pdp/40841511/1.jpg",
+        "/products/bb-pdp/40841511/2.jpg",
+        "/products/bb-pdp/40841511/3.jpg",
+        "/products/bb-pdp/40841511/4.jpg",
+        "/products/bb-pdp/40841511/5.jpg",
+        "/products/bb-pdp/40841511/6.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/050D4AA3-C0BF-4441-8667-7869ED16A0D7",
+        "https://assets.burberry.com/is/image/Burberryltd/86CCE621-C478-4F07-A3FD-29FEF3B303CB",
+        "https://assets.burberry.com/is/image/Burberryltd/73E94D33-917C-4822-9C0E-AA3487BB93A4",
+        "https://assets.burberry.com/is/image/Burberryltd/0538FF0E-D7D8-4662-894C-85E82BF99656",
+        "https://assets.burberry.com/is/image/Burberryltd/23FDB5CE-BA56-4FC7-BB51-F48F5E66C8FA",
+        "https://assets.burberry.com/is/image/Burberryltd/6A3DADD3-60D9-4F9D-AD53-DE3CA4D60C84",
+        "https://assets.burberry.com/is/image/Burberryltd/9E4F6BE9-6556-4882-830F-F113F179555E"
+      ],
+      "sizes": [
+        {
+          "sku": "40841511",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 15,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 15
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Burberry Brit Shine – the new lipstick that goes beyond, offering hours of shine and plumper lips over time*.  ##Its glossy balm texture combines an intense pigmentation and a multifaceted shine that reflects light from all angles, offering a smoothing and resurfacing full-lip effect for up to six hours. The colour remains homogeneous and doesn’t bleed or smudge. Designed to suit all lips – even the most sensitive. Lightweight and non-sticky, the hybrid texture glides seamlessly on the lips to feel like a protective shield against dryness, dehydration and discomfort. The scent of the formula is a rose petal signature boosted by fruits and greens that enhances the wearing experience. ##Active hydration: infused with natural-origin ingredients, Burberry Brit Shine’s comfortable formula provides instant hydration** that lasts up to seven hours. The lips feel soft and moisturised all day long. ##Overtime plump and protection: enriched with a blend of collagen-boosting peptide, rosa damascena and safflower oil, the formula helps to strengthen the lip barrier and limits water loss, leading to plumper* lips after 28 days of use.##A unique British-inspired colour range: available in 15 statement shades inspired by Burberry’s British roots. The range features Heritage Honey, inspired by the colour of the Burberry trench coat and Tea Party, a classic English tradition – alongside Kensington Crush and Pimlico Sunset, named after two of London’s iconic neighbourhoods. The lipstick case features touches of gold and silver that shine through a protective glass-like cover, referencing Burberry’s signature house codes.  ##* +17% volume on bare lips after 28 days of use – clinically tested on 31 women. ##**+28% hydration after one hour – clinical study on 32 women. ##Vegan formula",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Burberry Brit Shine – the new lipstick that goes beyond, offering hours of shine and plumper lips over time*.",
+            "Its glossy balm texture combines an intense pigmentation and a multifaceted shine that reflects light from all angles, offering a smoothing and resurfacing full-lip effect for up to six hours. The colour remains homogeneous and doesn’t bleed or smudge. Designed to suit all lips – even the most sensitive. Lightweight and non-sticky, the hybrid texture glides seamlessly on the lips to feel like a protective shield against dryness, dehydration and discomfort. The scent of the formula is a rose petal signature boosted by fruits and greens that enhances the wearing experience.",
+            "Active hydration: infused with natural-origin ingredients, Burberry Brit Shine’s comfortable formula provides instant hydration** that lasts up to seven hours. The lips feel soft and moisturised all day long.",
+            "Overtime plump and protection: enriched with a blend of collagen-boosting peptide, rosa damascena and safflower oil, the formula helps to strengthen the lip barrier and limits water loss, leading to plumper* lips after 28 days of use.",
+            "A unique British-inspired colour range: available in 15 statement shades inspired by Burberry’s British roots. The range features Heritage Honey, inspired by the colour of the Burberry trench coat and Tea Party, a classic English tradition – alongside Kensington Crush and Pimlico Sunset, named after two of London’s iconic neighbourhoods. The lipstick case features touches of gold and silver that shine through a protective glass-like cover, referencing Burberry’s signature house codes.",
+            "* +17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "**+28% hydration after one hour – clinical study on 32 women.",
+            "Vegan formula",
+            "3g/0.11oz",
+            "Item 40841511"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup"
+      ],
+      "label": null
+    },
+    {
+      "id": "40841601",
+      "title": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+      "color": "Heritage Honey 604",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40841601/1.jpg",
+      "images": [
+        "/products/bb-pdp/40841601/1.jpg",
+        "/products/bb-pdp/40841601/2.jpg",
+        "/products/bb-pdp/40841601/3.jpg",
+        "/products/bb-pdp/40841601/4.jpg",
+        "/products/bb-pdp/40841601/5.jpg",
+        "/products/bb-pdp/40841601/6.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/6A9CCFCA-60F8-495E-85AC-9C25C7B7A1A5",
+        "https://assets.burberry.com/is/image/Burberryltd/5272DC0A-1C4E-447C-89B3-09C07DFB0647",
+        "https://assets.burberry.com/is/image/Burberryltd/A10B9663-F82B-4604-ADC3-118067D6C764",
+        "https://assets.burberry.com/is/image/Burberryltd/809B980B-FA98-4F57-8902-086A735861C0",
+        "https://assets.burberry.com/is/image/Burberryltd/3643B221-95CC-4BAB-8F65-7E938FE3879F",
+        "https://assets.burberry.com/is/image/Burberryltd/2506CB2F-0EA5-4663-ABBD-65CE96370937",
+        "https://assets.burberry.com/is/image/Burberryltd/D7403500-9AAD-4866-AC2A-B8349B2E6041"
+      ],
+      "sizes": [
+        {
+          "sku": "40841601",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 12,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 12
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Burberry Brit Shine – the new lipstick that goes beyond, offering hours of shine and plumper lips over time*.  ##Its glossy balm texture combines an intense pigmentation and a multifaceted shine that reflects light from all angles, offering a smoothing and resurfacing full-lip effect for up to six hours. The colour remains homogeneous and doesn’t bleed or smudge. Designed to suit all lips – even the most sensitive. Lightweight and non-sticky, the hybrid texture glides seamlessly on the lips to feel like a protective shield against dryness, dehydration and discomfort. The scent of the formula is a rose petal signature boosted by fruits and greens that enhances the wearing experience. ##Active hydration: infused with natural-origin ingredients, Burberry Brit Shine’s comfortable formula provides instant hydration** that lasts up to seven hours. The lips feel soft and moisturised all day long. ##Overtime plump and protection: enriched with a blend of collagen-boosting peptide, rosa damascena and safflower oil, the formula helps to strengthen the lip barrier and limits water loss, leading to plumper* lips after 28 days of use.##A unique British-inspired colour range: available in 15 statement shades inspired by Burberry’s British roots. The range features Heritage Honey, inspired by the colour of the Burberry trench coat and Tea Party, a classic English tradition – alongside Kensington Crush and Pimlico Sunset, named after two of London’s iconic neighbourhoods. The lipstick case features touches of gold and silver that shine through a protective glass-like cover, referencing Burberry’s signature house codes.  ##* +17% volume on bare lips after 28 days of use – clinically tested on 31 women. ##**+28% hydration after one hour – clinical study on 32 women. ##Vegan formula",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Burberry Brit Shine – the new lipstick that goes beyond, offering hours of shine and plumper lips over time*.",
+            "Its glossy balm texture combines an intense pigmentation and a multifaceted shine that reflects light from all angles, offering a smoothing and resurfacing full-lip effect for up to six hours. The colour remains homogeneous and doesn’t bleed or smudge. Designed to suit all lips – even the most sensitive. Lightweight and non-sticky, the hybrid texture glides seamlessly on the lips to feel like a protective shield against dryness, dehydration and discomfort. The scent of the formula is a rose petal signature boosted by fruits and greens that enhances the wearing experience.",
+            "Active hydration: infused with natural-origin ingredients, Burberry Brit Shine’s comfortable formula provides instant hydration** that lasts up to seven hours. The lips feel soft and moisturised all day long.",
+            "Overtime plump and protection: enriched with a blend of collagen-boosting peptide, rosa damascena and safflower oil, the formula helps to strengthen the lip barrier and limits water loss, leading to plumper* lips after 28 days of use.",
+            "A unique British-inspired colour range: available in 15 statement shades inspired by Burberry’s British roots. The range features Heritage Honey, inspired by the colour of the Burberry trench coat and Tea Party, a classic English tradition – alongside Kensington Crush and Pimlico Sunset, named after two of London’s iconic neighbourhoods. The lipstick case features touches of gold and silver that shine through a protective glass-like cover, referencing Burberry’s signature house codes.",
+            "* +17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "**+28% hydration after one hour – clinical study on 32 women.",
+            "Vegan formula",
+            "3g/0.11oz",
+            "Item 40841601"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup-lips"
       ],
       "label": null
     },
@@ -16997,6 +18269,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -17055,10 +18330,325 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
       "label": ""
+    },
+    {
+      "id": "40844451",
+      "title": "Beyond Wear Perfecting Concealer – 40 Light Neutral",
+      "url": "https://uk.burberry.com/beyond-wear-perfecting-concealer-40-light-neutral-p40844451",
+      "color": "40 Light Neutral",
+      "gbpPrice": 32.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40844451/1.jpg",
+      "images": [
+        "/products/bb-pdp/40844451/1.jpg",
+        "/products/bb-pdp/40844451/2.jpg",
+        "/products/bb-pdp/40844451/3.jpg",
+        "/products/bb-pdp/40844451/4.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/4560B386-DE91-490F-8501-01DCB85353DF",
+        "https://assets.burberry.com/is/image/Burberryltd/BA7729E9-A794-4596-B011-0A3FC610387E",
+        "https://assets.burberry.com/is/image/Burberryltd/007F4C14-74E1-42F8-A02B-2C525E0485C1",
+        "https://assets.burberry.com/is/image/Burberryltd/F8273997-BD0C-4E23-B842-BF2FDE7BE206"
+      ],
+      "sizes": [
+        {
+          "sku": "40844451",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 11,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 11
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40844451",
+          "url": "/beyond-wear-perfecting-concealer-40-light-neutral-p40844451",
+          "label": "40 light neutral",
+          "name": "Beyond Wear Perfecting Concealer – 40 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/91858761-1D24-4FC0-BF87-8A4B94DFBCA5"
+        },
+        {
+          "id": "40844351",
+          "url": "/beyond-wear-perfecting-concealer-10-fair-cool-p40844351",
+          "label": "10 fair cool",
+          "name": "Beyond Wear Perfecting Concealer – 10 Fair Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/57A87B7D-1A63-447C-A15F-BBE62F6919ED"
+        },
+        {
+          "id": "40844361",
+          "url": "/beyond-wear-perfecting-concealer-20-fair-cool-p40844361",
+          "label": "20 fair cool",
+          "name": "Beyond Wear Perfecting Concealer – 20 Fair Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/5E844621-5702-4878-A033-290F8BEFB64E"
+        },
+        {
+          "id": "40844371",
+          "url": "/beyond-wear-perfecting-concealer-30-light-cool-p40844371",
+          "label": "30 light cool",
+          "name": "Beyond Wear Perfecting Concealer – 30 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/44D29B60-2E77-4EE9-B9B2-E74310381905"
+        },
+        {
+          "id": "40844381",
+          "url": "/beyond-wear-perfecting-concealer-35-light-cool-p40844381",
+          "label": "35 light cool",
+          "name": "Beyond Wear Perfecting Concealer – 35 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7640247A-43DF-4904-93BE-70E0E7E4A731"
+        },
+        {
+          "id": "40844391",
+          "url": "/beyond-wear-perfecting-concealer-45-light-cool-p40844391",
+          "label": "45 light cool",
+          "name": "Beyond Wear Perfecting Concealer – 45 Light Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/8FEE0FB1-516E-446F-A6D2-D3A19B080073"
+        },
+        {
+          "id": "40844401",
+          "url": "/beyond-wear-perfecting-concealer-85-medium-cool-p40844401",
+          "label": "85 medium cool",
+          "name": "Beyond Wear Perfecting Concealer – 85 Medium Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/4DC5C26E-8B96-4805-9A3E-E2802D75DEE3"
+        },
+        {
+          "id": "40844411",
+          "url": "/beyond-wear-perfecting-concealer-100-medium-deep-cool-p40844411",
+          "label": "100 medium-deep cool",
+          "name": "Beyond Wear Perfecting Concealer – 100 Medium-Deep Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/81E86842-85F6-464B-8F54-0C8440AF456F"
+        },
+        {
+          "id": "40844421",
+          "url": "/beyond-wear-perfecting-concealer-140-deep-cool-p40844421",
+          "label": "140 deep cool",
+          "name": "Beyond Wear Perfecting Concealer – 140 Deep Cool",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/3927C8D3-B288-4091-9F5A-088A5C2AAD5A"
+        },
+        {
+          "id": "40844431",
+          "url": "/beyond-wear-perfecting-concealer-20-fair-neutral-p40844431",
+          "label": "20 fair neutral",
+          "name": "Beyond Wear Perfecting Concealer – 20 Fair Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7D94E0B4-C862-46A2-B27D-89993199B18A"
+        },
+        {
+          "id": "40844441",
+          "url": "/beyond-wear-perfecting-concealer-30-light-neutral-p40844441",
+          "label": "30 light neutral",
+          "name": "Beyond Wear Perfecting Concealer – 30 Light Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/371CBCAD-445C-44DB-9934-14C72713036D"
+        },
+        {
+          "id": "40844461",
+          "url": "/beyond-wear-perfecting-concealer-60-medium-neutral-p40844461",
+          "label": "60 medium neutral",
+          "name": "Beyond Wear Perfecting Concealer – 60 Medium Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65B471EF-9DBE-44D3-A272-E5D6576C91CA"
+        },
+        {
+          "id": "40844471",
+          "url": "/beyond-wear-perfecting-concealer-70-medium-neutral-p40844471",
+          "label": "70 medium neutral",
+          "name": "Beyond Wear Perfecting Concealer – 70 Medium Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1E355BB5-4FCD-4250-9635-DE3370DBF573"
+        },
+        {
+          "id": "40844481",
+          "url": "/beyond-wear-perfecting-concealer-100-medium-deep-neutral-p40844481",
+          "label": "100 medium-deep neutral",
+          "name": "Beyond Wear Perfecting Concealer – 100 Medium-Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/DA3D0210-98AE-4787-BCE5-0810BEB37544"
+        },
+        {
+          "id": "40844491",
+          "url": "/beyond-wear-perfecting-concealer-110-medium-deep-neutral-p40844491",
+          "label": "110 medium-deep neutral",
+          "name": "Beyond Wear Perfecting Concealer – 110 Medium-Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/A425E287-0833-4970-AA41-59E9CC7FDA17"
+        },
+        {
+          "id": "40844501",
+          "url": "/beyond-wear-perfecting-concealer-120-deep-neutral-p40844501",
+          "label": "120 deep neutral",
+          "name": "Beyond Wear Perfecting Concealer – 120 Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6EA39FEF-4A10-4F15-A2D8-1117ACABCDA6"
+        },
+        {
+          "id": "40844511",
+          "url": "/beyond-wear-perfecting-concealer-130-deep-neutral-p40844511",
+          "label": "130 deep neutral",
+          "name": "Beyond Wear Perfecting Concealer – 130 Deep Neutral",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/AAEA90FE-EDC8-46F3-8828-D530E821B5F8"
+        },
+        {
+          "id": "40844521",
+          "url": "/beyond-wear-perfecting-concealer-10-fair-warm-p40844521",
+          "label": "10 fair warm",
+          "name": "Beyond Wear Perfecting Concealer – 10 Fair Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/F8A90A86-7112-4753-A2BA-7743A1BEC164"
+        },
+        {
+          "id": "40844531",
+          "url": "/beyond-wear-perfecting-concealer-60-medium-warm-p40844531",
+          "label": "60 medium warm",
+          "name": "Beyond Wear Perfecting Concealer – 60 Medium Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/21A94415-5FA2-4E1B-9F18-066D2399EEFC"
+        },
+        {
+          "id": "40844541",
+          "url": "/beyond-wear-perfecting-concealer-80-medium-warm-p40844541",
+          "label": "80 medium warm",
+          "name": "Beyond Wear Perfecting Concealer – 80 Medium Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/126C4E83-1B02-4893-88B7-3CEDD52856ED"
+        },
+        {
+          "id": "40852221",
+          "url": "/beyond-wear-perfecting-concealer-14-deep-warm-p40852221",
+          "label": "14 deep warm",
+          "name": "Beyond Wear Perfecting Concealer – 14 Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/D59F72F1-D56A-4A70-BFD3-30DDD2A89BAD"
+        },
+        {
+          "id": "40852231",
+          "url": "/beyond-wear-perfecting-concealer-120-deep-warm-p40852231",
+          "label": "120 deep warm",
+          "name": "Beyond Wear Perfecting Concealer – 120 Deep Warm",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BAD3CBEC-BC28-4480-B2BB-B88B858DF15D"
+        }
+      ],
+      "description": "Discover Beyond Wear Perfecting Concealer – the new long-lasting liquid concealer with innovative Trench Protect Technology that uniquely combines 12-hour wear, active care and weather protection.##With buildable full coverage and a natural matte finish, this concealer acts like a filter to cover and blur imperfections, redness, hyperpigmentation and under-eye dark circles, while remaining lightweight and breathable on the skin.##Infused with natural-origin ingredients, this hydrating concealer reduces the appearance of skin imperfections over time. Designed to suit a broad range of skin tones.# #12-hour correction and wear: formulated with coated pigments, this long-lasting concealer allows for a targeted, buildable full coverage of blemishes, imperfections and under-eye dark circles.##Long-lasting active care: enriched with bisabolol for a soothing feeling on the skin throughout the day and white lupin protein to respect the skin’s moisture barrier.##Weather protection: water, humidity, sweat and heat-resistance to protect make-up. Rosa damascena and Darjeeling tea leaf extracts with antioxidant and anti-pollution properties protect against external environmental factors.# #HOW TO USE:#Use the pointed tip of the wand applicator for easy application and ultra-precise correction. Use the flat side of the applicator for larger areas, to perfect the finish, illuminate or add dimension.# #Vegan formula#Suitable for all skin types, including sensitive#Dermatologically tested and non-comedogenic",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Discover Beyond Wear Perfecting Concealer – the new long-lasting liquid concealer with innovative Trench Protect Technology that uniquely combines 12-hour wear, active care and weather protection.",
+            "With buildable full coverage and a natural matte finish, this concealer acts like a filter to cover and blur imperfections, redness, hyperpigmentation and under-eye dark circles, while remaining lightweight and breathable on the skin.",
+            "Infused with natural-origin ingredients, this hydrating concealer reduces the appearance of skin imperfections over time. Designed to suit a broad range of skin tones.",
+            "12-hour correction and wear: formulated with coated pigments, this long-lasting concealer allows for a targeted, buildable full coverage of blemishes, imperfections and under-eye dark circles.",
+            "Long-lasting active care: enriched with bisabolol for a soothing feeling on the skin throughout the day and white lupin protein to respect the skin’s moisture barrier.",
+            "Weather protection: water, humidity, sweat and heat-resistance to protect make-up. Rosa damascena and Darjeeling tea leaf extracts with antioxidant and anti-pollution properties protect against external environmental factors.",
+            "HOW TO USE:",
+            "Use the pointed tip of the wand applicator for easy application and ultra-precise correction. Use the flat side of the applicator for larger areas, to perfect the finish, illuminate or add dimension.",
+            "Vegan formula",
+            "Suitable for all skin types, including sensitive",
+            "Dermatologically tested and non-comedogenic",
+            "8ml/0.3fl oz",
+            "Item 40844451"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Korea"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face"
+      ],
+      "label": null
+    },
+    {
+      "id": "40844551",
+      "title": "Beyond Volume Mascara – Intense Black No.01",
+      "url": "https://uk.burberry.com/beyond-volume-mascara-intense-black-no01-p40844551",
+      "color": "Black",
+      "gbpPrice": 34.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40844551/1.jpg",
+      "images": [
+        "/products/bb-pdp/40844551/1.jpg",
+        "/products/bb-pdp/40844551/2.jpg",
+        "/products/bb-pdp/40844551/3.jpg",
+        "/products/bb-pdp/40844551/4.jpg",
+        "/products/bb-pdp/40844551/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/E90F2938-77D6-40B7-AE47-8E924D77249F",
+        "https://assets.burberry.com/is/image/Burberryltd/255E63F0-59EF-4BC0-9FBA-7E0E28D67C9B",
+        "https://assets.burberry.com/is/image/Burberryltd/303CE86C-7189-456F-8258-600B7453D586",
+        "https://assets.burberry.com/is/image/Burberryltd/64B9FA61-6F32-404C-8E81-C031D33E39D7",
+        "https://assets.burberry.com/is/image/Burberryltd/91D62D57-5F7D-4FB6-B8F9-58C435D97EF7"
+      ],
+      "sizes": [
+        {
+          "sku": "40844551",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 0,
+          "isPreOrderStock": false,
+          "isInStock": false,
+          "monogramStockQuantity": 0
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40844551",
+          "url": "/beyond-volume-mascara-intense-black-no01-p40844551",
+          "label": "Black",
+          "name": "Beyond Volume Mascara – Intense Black No.01",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/CE71E4A1-3B40-4D7B-8F44-74D73A11E6A2"
+        }
+      ],
+      "description": "Introducing Burberry Beyond Volume – the new long-wearing mascara by Burberry Beauty. Designed to go beyond, the formula stays on all day for fanned-out volume and an overtime lash fortifying effect. This easy-to-apply, intense black mascara lifts each lash from root to tip and lengthens in one stroke for defined, volumised and curled lashes. Apply with an upward zigzag motion. Layer on more coats to intensify the effect.##- Lasts all day#- Clump-free, flake-free and smudge-proof#- Intense black and buildable formula#- Doesn’t damage or dry lashes#- Overtime lash fortifying effect* #- Infused with red clover extract and tetrapeptide for lash conditioning action#- Vegan formula#- Ophthalmologically tested, suitable for sensitive eyes and contact lens wearers#*Consumer study on 112 people, after 28 days of usage",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Introducing Burberry Beyond Volume – the new long-wearing mascara by Burberry Beauty. Designed to go beyond, the formula stays on all day for fanned-out volume and an overtime lash fortifying effect. This easy-to-apply, intense black mascara lifts each lash from root to tip and lengthens in one stroke for defined, volumised and curled lashes. Apply with an upward zigzag motion. Layer on more coats to intensify the effect.",
+            "- Lasts all day",
+            "- Clump-free, flake-free and smudge-proof",
+            "- Intense black and buildable formula",
+            "- Doesn’t damage or dry lashes",
+            "- Overtime lash fortifying effect*",
+            "- Infused with red clover extract and tetrapeptide for lash conditioning action",
+            "- Vegan formula",
+            "- Ophthalmologically tested, suitable for sensitive eyes and contact lens wearers",
+            "*Consumer study on 112 people, after 28 days of usage",
+            "8ml/0.3fl oz",
+            "Item 40844551"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": []
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in UK"
+          ]
+        }
+      ],
+      "measurements": null,
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-eyes"
+      ],
+      "label": null
     },
     {
       "id": "40844881",
@@ -17908,6 +19498,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -17968,6 +19560,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -18026,6 +19621,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance"
       ],
@@ -18086,6 +19684,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -18152,6 +19755,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-her-personalised",
@@ -18216,6 +19824,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance",
@@ -18276,6 +19887,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance"
       ],
@@ -18581,6 +20195,7 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup-face",
         "bb-women-gifts"
       ],
       "label": null
@@ -18917,6 +20532,7 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
@@ -19219,6 +20835,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
@@ -19405,6 +21023,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-her",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-gifts-her-fragrance",
@@ -20469,6 +22090,8 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips",
         "bb-gifts-her",
         "bb-gifts-her-classics",
         "bb-women-classics",
@@ -22314,6 +23937,9 @@
       "measurements": null,
       "materialComposition": "Eau de Parfum: 100ml/3.3fl oz#Body Lotion: 75ml/2.5fl oz#Travel Spray: 10ml/0.3fl oz",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-her",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance",
@@ -22392,6 +24018,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-goddess",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-women-fragrance",
@@ -22467,6 +24096,9 @@
       "measurements": null,
       "materialComposition": "Eau de Parfum: 100ml/3.3fl oz#Travel Spray: 10ml/0.3fl oz",
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
         "bb-men-fragrance",
@@ -22529,6 +24161,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-him",
@@ -22596,6 +24233,11 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-men",
+        "bb-beauty-fragrances-signatures",
+        "bb-beauty-fragrances-signatures-men",
+        "bb-beauty-fragrances-women",
         "bb-gifts-her",
         "bb-gifts-her-fragrance",
         "bb-gifts-him",
@@ -22672,6 +24314,9 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-fragrances",
+        "bb-beauty-fragrances-hero",
+        "bb-beauty-fragrances-men",
         "bb-gifts-her",
         "bb-gifts-him",
         "bb-gifts-him-fragrance",
@@ -23065,10 +24710,992 @@
       "measurements": null,
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-face",
         "bb-gifts-her",
         "bb-women-gifts"
       ],
       "label": ""
+    },
+    {
+      "id": "40855401",
+      "title": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+      "color": "Mayfair Muse 600",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40855401/1.jpg",
+      "images": [
+        "/products/bb-pdp/40855401/1.jpg",
+        "/products/bb-pdp/40855401/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/CC18F758-E39E-4EAB-BA26-968A1B37EAE0",
+        "https://assets.burberry.com/is/image/Burberryltd/F0F70AD3-BB83-4D67-A7B3-A8B5C1F08D7E"
+      ],
+      "sizes": [
+        {
+          "sku": "40855401",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 7,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 7
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.##*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.",
+            "*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "Item 40855401"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "3g/0.11oz"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "3g/0.11oz",
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
+    },
+    {
+      "id": "40855411",
+      "title": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+      "color": "New Bond Street 21",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40855411/1.jpg",
+      "images": [
+        "/products/bb-pdp/40855411/1.jpg",
+        "/products/bb-pdp/40855411/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/CCC3C430-BD8B-4B47-8D39-51EF51909C2A",
+        "https://assets.burberry.com/is/image/Burberryltd/F99A111B-A74C-46DC-B35F-1AB2BCA8E8E9"
+      ],
+      "sizes": [
+        {
+          "sku": "40855411",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 19,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 19
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.##*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.",
+            "*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "Item 40855411"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "3g/0.11oz"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "3g/0.11oz",
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
+    },
+    {
+      "id": "40855421",
+      "title": "Burberry Brit Shine Lipstick – British Rose No.601",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+      "color": "British Rose 601",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40855421/1.jpg",
+      "images": [
+        "/products/bb-pdp/40855421/1.jpg",
+        "/products/bb-pdp/40855421/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/BE2ECCF5-2FD2-4864-8571-08D761DB2EFD",
+        "https://assets.burberry.com/is/image/Burberryltd/F249B414-562B-4115-A106-D98ECAC8ABD7"
+      ],
+      "sizes": [
+        {
+          "sku": "40855421",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 28,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 28
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.##*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.",
+            "*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "Item 40855421"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "3g/0.11oz"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "3g/0.11oz",
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
+    },
+    {
+      "id": "40855431",
+      "title": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+      "color": "Horseferry Brick 660",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40855431/1.jpg",
+      "images": [
+        "/products/bb-pdp/40855431/1.jpg",
+        "/products/bb-pdp/40855431/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/2EFA65BD-7943-4E34-814F-089652A95CFA",
+        "https://assets.burberry.com/is/image/Burberryltd/F3FEC34A-DF8E-4568-9354-4C045B731B63"
+      ],
+      "sizes": [
+        {
+          "sku": "40855431",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 25,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 25
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        }
+      ],
+      "description": "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.##*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.",
+            "*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "Item 40855431"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "3g/0.11oz"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "3g/0.11oz",
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
+    },
+    {
+      "id": "40855441",
+      "title": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+      "url": "https://uk.burberry.com/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+      "color": "Hampstead Oak 668",
+      "gbpPrice": 37.0,
+      "gbpListPrice": null,
+      "image": "/products/bb-pdp/40855441/1.jpg",
+      "images": [
+        "/products/bb-pdp/40855441/1.jpg",
+        "/products/bb-pdp/40855441/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.burberry.com/is/image/Burberryltd/51032DA1-F9CF-46EF-A8D2-5B09C95975D3",
+        "https://assets.burberry.com/is/image/Burberryltd/8A7DBAC9-B8B0-42A5-9C35-3E83738FD50D"
+      ],
+      "sizes": [
+        {
+          "sku": "40855441",
+          "label": "",
+          "preOrderStockLevel": 0,
+          "stockQuantity": 17,
+          "isPreOrderStock": false,
+          "isInStock": true,
+          "monogramStockQuantity": 17
+        }
+      ],
+      "swatches": [
+        {
+          "id": "40855441",
+          "url": "/burberry-brit-shine-lipstick-hampstead-oak-no668-p40855441",
+          "label": "Hampstead oak 668",
+          "name": "Burberry Brit Shine Lipstick – Hampstead Oak No.668",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1F4A4275-D5E6-4584-A165-0FB6A51D21B1"
+        },
+        {
+          "id": "40841421",
+          "url": "/burberry-brit-shine-lipstick-pimlico-sunset-no614-p40841421",
+          "label": "Pimlico sunset 614",
+          "name": "Burberry Brit Shine Lipstick – Pimlico Sunset No.614",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/75F91B5B-43BA-4153-8AEE-1172A397BDD5"
+        },
+        {
+          "id": "40841431",
+          "url": "/burberry-brit-shine-lipstick-bitter-orange-no616-p40841431",
+          "label": "Bitter orange 616",
+          "name": "Burberry Brit Shine Lipstick – Bitter Orange No.616",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/9C762B8F-6B43-40B0-A618-ABBFAB4D9752"
+        },
+        {
+          "id": "40841441",
+          "url": "/burberry-brit-shine-lipstick-strawberry-cream-no622-p40841441",
+          "label": "Strawberry cream 622",
+          "name": "Burberry Brit Shine Lipstick – Strawberry Cream No.622",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/65A3D0A6-4DDB-4072-AEB9-58C1E4312F2C"
+        },
+        {
+          "id": "40841451",
+          "url": "/burberry-brit-shine-lipstick-dusky-pink-no626-p40841451",
+          "label": "Dusky pink 626",
+          "name": "Burberry Brit Shine Lipstick – Dusky Pink No.626",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/454E22F1-4588-48A5-A0D2-E19F0AA4808A"
+        },
+        {
+          "id": "40841471",
+          "url": "/burberry-brit-shine-lipstick-punk-pink-no636-p40841471",
+          "label": "Punk pink 636",
+          "name": "Burberry Brit Shine Lipstick – Punk Pink No.636",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B758F57E-78DF-470D-AC1E-BDAC0F052A8C"
+        },
+        {
+          "id": "40841481",
+          "url": "/burberry-brit-shine-lipstick-the-red-no106-p40841481",
+          "label": "The red 106",
+          "name": "Burberry Brit Shine Lipstick – The Red No.106",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/1FE7F348-D527-47BC-95B6-CE0BDC754F71"
+        },
+        {
+          "id": "40841491",
+          "url": "/burberry-brit-shine-lipstick-royal-red-no646-p40841491",
+          "label": "Royal red 646",
+          "name": "Burberry Brit Shine Lipstick – Royal Red No.646",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B4B66AA0-0067-4C4A-B021-5FD698EF3051"
+        },
+        {
+          "id": "40841501",
+          "url": "/burberry-brit-shine-lipstick-burnished-red-no117-p40841501",
+          "label": "Burnished red 117",
+          "name": "Burberry Brit Shine Lipstick – Burnished Red No.117",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/2EF5E657-75D0-457F-90A0-FB690988E415"
+        },
+        {
+          "id": "40841511",
+          "url": "/burberry-brit-shine-lipstick-russet-no93-p40841511",
+          "label": "Russet 93",
+          "name": "Burberry Brit Shine Lipstick – Russet No.93",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/C6C20748-94FF-48DF-B69C-8AAB32F59529"
+        },
+        {
+          "id": "40841521",
+          "url": "/burberry-brit-shine-lipstick-oxblood-no97-p40841521",
+          "label": "Oxblood 97",
+          "name": "Burberry Brit Shine Lipstick – Oxblood No.97",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/E79DA937-74CD-45C9-BE97-1CDADF75CB60"
+        },
+        {
+          "id": "40841591",
+          "url": "/burberry-brit-shine-lipstick-tea-party-no603-p40841591",
+          "label": "Tea party 603",
+          "name": "Burberry Brit Shine Lipstick – Tea Party No.603",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/78982C0E-45B7-4F78-A73D-B5100C6AD7BE"
+        },
+        {
+          "id": "40841601",
+          "url": "/burberry-brit-shine-lipstick-heritage-honey-no604-p40841601",
+          "label": "Heritage honey 604",
+          "name": "Burberry Brit Shine Lipstick – Heritage Honey No.604",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/6D6C94AE-3B5F-407C-8398-9AC1846E44C4"
+        },
+        {
+          "id": "40841621",
+          "url": "/burberry-brit-shine-lipstick-kensington-crush-no605-p40841621",
+          "label": "Kensington crush 605",
+          "name": "Burberry Brit Shine Lipstick – Kensington Crush No.605",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/B7A90828-9132-4246-ABDC-E1CDC6FEE4F7"
+        },
+        {
+          "id": "40841631",
+          "url": "/burberry-brit-shine-lipstick-rose-petal-no-606-p40841631",
+          "label": "Rose petal 606",
+          "name": "Burberry Brit Shine Lipstick – Rose Petal No. 606",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/BF5852B0-84AF-4EEC-BB28-D973370C03FE"
+        },
+        {
+          "id": "40855401",
+          "url": "/burberry-brit-shine-lipstick-mayfair-muse-no600-p40855401",
+          "label": "Mayfair muse 600",
+          "name": "Burberry Brit Shine Lipstick – Mayfair Muse No.600",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/7440E22A-C9E8-43B3-B2F4-668ED6A72213"
+        },
+        {
+          "id": "40855411",
+          "url": "/burberry-brit-shine-lipstick-new-bond-street-no21-p40855411",
+          "label": "New bond street 21",
+          "name": "Burberry Brit Shine Lipstick – New Bond Street No.21",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/98E05A96-785B-4D9E-9E16-B1883E4A210D"
+        },
+        {
+          "id": "40855421",
+          "url": "/burberry-brit-shine-lipstick-british-rose-no601-p40855421",
+          "label": "British rose 601",
+          "name": "Burberry Brit Shine Lipstick – British Rose No.601",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/FF7F0973-490F-4FFD-BED2-B183E843BED7"
+        },
+        {
+          "id": "40855431",
+          "url": "/burberry-brit-shine-lipstick-horseferry-brick-no660-p40855431",
+          "label": "Horseferry brick 660",
+          "name": "Burberry Brit Shine Lipstick – Horseferry Brick No.660",
+          "image": "https://assets.burberry.com/is/image/Burberryltd/15233DD5-F2FB-4DA4-9843-AF115C19F2AE"
+        }
+      ],
+      "description": "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.##*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+      "accordion": [
+        {
+          "name": "productdetails",
+          "label": "Product Details",
+          "texts": [
+            "Echoing the timeless British roots and inspirations of Burberry, the natural and brown hues of the 2026 London Neutrals Collection expand the iconic Burberry Brit Shine Lipstick range, known for its glossy finish that leaves lips looking shinier and plumper over time*.",
+            "*+17% volume on bare lips after 28 days of use – clinically tested on 31 women.",
+            "Item 40855441"
+          ]
+        },
+        {
+          "name": "sizeandfit",
+          "label": "Size & Fit",
+          "texts": [
+            "3g/0.11oz"
+          ]
+        },
+        {
+          "name": "fabricandcare",
+          "label": "Fabric & Care",
+          "texts": [
+            "Made in Italy"
+          ]
+        }
+      ],
+      "measurements": "3g/0.11oz",
+      "materialComposition": null,
+      "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-lips"
+      ],
+      "label": null
     },
     {
       "id": "40855451",
@@ -23169,6 +25796,8 @@
       "measurements": "4.7g/0.2oz",
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-eyes",
         "bb-women-gifts"
       ],
       "label": null
@@ -23272,6 +25901,8 @@
       "measurements": "4.7g/0.2oz",
       "materialComposition": null,
       "collections": [
+        "bb-beauty-makeup",
+        "bb-beauty-makeup-eyes",
         "bb-women-gifts"
       ],
       "label": null
