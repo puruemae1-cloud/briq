@@ -116,7 +116,65 @@ export type SubcategoryId =
   | "bb-women-gifts"
   | "bb-women-fragrance"
   | "bb-women-personalised-gifts"
-  | "bb-women-personalised-scarves";
+  | "bb-women-personalised-scarves"
+  | "bb-men"
+  | "bb-men-latest"
+  | "bb-men-new"
+  | "bb-men-summer-styles"
+  | "bb-men-classics"
+  | "bb-men-coats-jackets"
+  | "bb-men-coats"
+  | "bb-men-jackets"
+  | "bb-men-trench-coats"
+  | "bb-men-quilted-jackets"
+  | "bb-men-puffer-jackets"
+  | "bb-men-clothes"
+  | "bb-men-knitwear"
+  | "bb-men-polos"
+  | "bb-men-tshirts"
+  | "bb-men-shirts"
+  | "bb-men-hoodies-sweatshirts"
+  | "bb-men-blazers-tailoring"
+  | "bb-men-trousers-shorts"
+  | "bb-men-activewear"
+  | "bb-men-denim"
+  | "bb-men-swimwear"
+  | "bb-bags-mens"
+  | "bb-men-bags"
+  | "bb-men-crossbody-bags"
+  | "bb-men-backpacks"
+  | "bb-men-belt-bags"
+  | "bb-men-tote-bags"
+  | "bb-men-holdall-bags"
+  | "bb-men-briefcases"
+  | "bb-shoes-mens"
+  | "bb-men-shoes"
+  | "bb-men-sneakers"
+  | "bb-men-sandals"
+  | "bb-men-boots"
+  | "bb-men-loafers-lace-ups"
+  | "bb-accessories-mens"
+  | "bb-men-accessories"
+  | "bb-men-scarves"
+  | "bb-men-ties-cufflinks"
+  | "bb-men-belts"
+  | "bb-men-sunglasses"
+  | "bb-men-caps-hats"
+  | "bb-men-umbrellas"
+  | "bb-men-jewellery"
+  | "bb-men-socks"
+  | "bb-men-tech-travel"
+  | "bb-men-home"
+  | "bb-men-key-charms"
+  | "bb-men-wallets"
+  | "bb-men-bifold-wallets"
+  | "bb-men-card-cases"
+  | "bb-men-long-wallets"
+  | "bb-men-pouches"
+  | "bb-men-gifts"
+  | "bb-men-fragrance"
+  | "bb-men-personalised-gifts"
+  | "bb-men-personalised-scarves";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -238,7 +296,7 @@ export const BB_WOMEN_GIFT_IDS: SubcategoryId[] = [
   "bb-women-personalised-scarves",
 ];
 
-/** All Burberry Women leaf collection ids used for PLP membership. */
+/** Burberry Women leaf collection ids used for PLP membership. */
 export const BB_WOMEN_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_WOMEN_LATEST_IDS,
   ...BB_WOMEN_COATS_IDS,
@@ -250,10 +308,110 @@ export const BB_WOMEN_COLLECTION_IDS: SubcategoryId[] = [
   ...BB_WOMEN_GIFT_IDS,
 ];
 
+export const BB_MEN_LATEST_IDS: SubcategoryId[] = [
+  "bb-men-new",
+  "bb-men-summer-styles",
+  "bb-men-classics",
+];
+
+export const BB_MEN_COATS_IDS: SubcategoryId[] = [
+  "bb-men-coats-jackets",
+  "bb-men-coats",
+  "bb-men-jackets",
+  "bb-men-trench-coats",
+  "bb-men-quilted-jackets",
+  "bb-men-puffer-jackets",
+];
+
+export const BB_MEN_CLOTHES_IDS: SubcategoryId[] = [
+  "bb-men-clothes",
+  "bb-men-knitwear",
+  "bb-men-polos",
+  "bb-men-tshirts",
+  "bb-men-shirts",
+  "bb-men-hoodies-sweatshirts",
+  "bb-men-blazers-tailoring",
+  "bb-men-trousers-shorts",
+  "bb-men-activewear",
+  "bb-men-denim",
+  "bb-men-swimwear",
+];
+
+export const BB_MEN_BAG_IDS: SubcategoryId[] = [
+  "bb-men-bags",
+  "bb-men-crossbody-bags",
+  "bb-men-backpacks",
+  "bb-men-belt-bags",
+  "bb-men-tote-bags",
+  "bb-men-holdall-bags",
+  "bb-men-briefcases",
+];
+
+export const BB_MEN_SHOE_IDS: SubcategoryId[] = [
+  "bb-men-shoes",
+  "bb-men-sneakers",
+  "bb-men-sandals",
+  "bb-men-boots",
+  "bb-men-loafers-lace-ups",
+];
+
+export const BB_MEN_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
+  "bb-men-scarves",
+  "bb-men-ties-cufflinks",
+  "bb-men-belts",
+  "bb-men-sunglasses",
+  "bb-men-caps-hats",
+  "bb-men-umbrellas",
+  "bb-men-jewellery",
+  "bb-men-socks",
+  "bb-men-tech-travel",
+  "bb-men-home",
+  "bb-men-key-charms",
+];
+
+export const BB_MEN_WALLET_IDS: SubcategoryId[] = [
+  "bb-men-wallets",
+  "bb-men-bifold-wallets",
+  "bb-men-card-cases",
+  "bb-men-long-wallets",
+  "bb-men-pouches",
+];
+
+export const BB_MEN_GIFT_IDS: SubcategoryId[] = [
+  "bb-men-gifts",
+  "bb-men-fragrance",
+  "bb-men-personalised-gifts",
+  "bb-men-personalised-scarves",
+];
+
+/** Burberry Men leaf collection ids used for PLP membership. */
+export const BB_MEN_COLLECTION_IDS: SubcategoryId[] = [
+  ...BB_MEN_LATEST_IDS,
+  ...BB_MEN_COATS_IDS,
+  ...BB_MEN_CLOTHES_IDS,
+  ...BB_MEN_BAG_IDS,
+  ...BB_MEN_SHOE_IDS,
+  ...BB_MEN_ACCESSORY_LEAF_IDS,
+  ...BB_MEN_WALLET_IDS,
+  ...BB_MEN_GIFT_IDS,
+];
+
+/** All Burberry leaf ids (women + men) used for PLP membership. */
+export const BB_COLLECTION_IDS: SubcategoryId[] = [
+  ...BB_WOMEN_COLLECTION_IDS,
+  ...BB_MEN_COLLECTION_IDS,
+];
+
 export const BB_LUXURY_WOMEN_IDS: SubcategoryId[] = [
   ...BB_WOMEN_LATEST_IDS,
   ...BB_WOMEN_COATS_IDS,
   ...BB_WOMEN_CLOTHES_IDS,
+];
+
+export const BB_LUXURY_MEN_IDS: SubcategoryId[] = [
+  ...BB_MEN_LATEST_IDS,
+  ...BB_MEN_COATS_IDS,
+  ...BB_MEN_CLOTHES_IDS,
 ];
 
 export type NavChild = {
@@ -291,22 +449,44 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "gg-new-arrivals": [...GG_NEW_ARRIVAL_IDS],
   "gg-bestsellers": [...GG_BESTSELLER_IDS],
-  burberry: [...BB_LUXURY_WOMEN_IDS],
+  burberry: [...BB_LUXURY_WOMEN_IDS, ...BB_LUXURY_MEN_IDS],
   "bb-women": [...BB_LUXURY_WOMEN_IDS],
   "bb-women-latest": [...BB_WOMEN_LATEST_IDS],
   "bb-women-coats-jackets": [...BB_WOMEN_COATS_IDS],
   "bb-women-clothes": [...BB_WOMEN_CLOTHES_IDS],
-  "burberry-bags": ["bb-bags-womens", ...BB_WOMEN_BAG_IDS],
+  "bb-men": [...BB_LUXURY_MEN_IDS],
+  "bb-men-latest": [...BB_MEN_LATEST_IDS],
+  "bb-men-coats-jackets": [...BB_MEN_COATS_IDS],
+  "bb-men-clothes": [...BB_MEN_CLOTHES_IDS],
+  "burberry-bags": [
+    "bb-bags-womens",
+    "bb-bags-mens",
+    ...BB_WOMEN_BAG_IDS,
+    ...BB_MEN_BAG_IDS,
+  ],
   "bb-bags-womens": [...BB_WOMEN_BAG_IDS],
   "bb-women-bags": [...BB_WOMEN_BAG_IDS],
-  "burberry-shoes": ["bb-shoes-womens", ...BB_WOMEN_SHOE_IDS],
+  "bb-bags-mens": [...BB_MEN_BAG_IDS],
+  "bb-men-bags": [...BB_MEN_BAG_IDS],
+  "burberry-shoes": [
+    "bb-shoes-womens",
+    "bb-shoes-mens",
+    ...BB_WOMEN_SHOE_IDS,
+    ...BB_MEN_SHOE_IDS,
+  ],
   "bb-shoes-womens": [...BB_WOMEN_SHOE_IDS],
   "bb-women-shoes": [...BB_WOMEN_SHOE_IDS],
+  "bb-shoes-mens": [...BB_MEN_SHOE_IDS],
+  "bb-men-shoes": [...BB_MEN_SHOE_IDS],
   "burberry-accessories": [
     "bb-accessories-womens",
+    "bb-accessories-mens",
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
     ...BB_WOMEN_WALLET_IDS,
     ...BB_WOMEN_GIFT_IDS,
+    ...BB_MEN_ACCESSORY_LEAF_IDS,
+    ...BB_MEN_WALLET_IDS,
+    ...BB_MEN_GIFT_IDS,
   ],
   "bb-accessories-womens": [
     ...BB_WOMEN_ACCESSORY_LEAF_IDS,
@@ -316,6 +496,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-women-accessories": [...BB_WOMEN_ACCESSORY_LEAF_IDS],
   "bb-women-wallets": [...BB_WOMEN_WALLET_IDS],
   "bb-women-gifts": [...BB_WOMEN_GIFT_IDS],
+  "bb-accessories-mens": [
+    ...BB_MEN_ACCESSORY_LEAF_IDS,
+    ...BB_MEN_WALLET_IDS,
+    ...BB_MEN_GIFT_IDS,
+  ],
+  "bb-men-accessories": [...BB_MEN_ACCESSORY_LEAF_IDS],
+  "bb-men-wallets": [...BB_MEN_WALLET_IDS],
+  "bb-men-gifts": [...BB_MEN_GIFT_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -375,6 +563,52 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-women-activewear", labelKo: "Activewear", href: "/shop?category=luxury&sub=bb-women-activewear" },
                   { id: "bb-women-denim", labelKo: "Denim", href: "/shop?category=luxury&sub=bb-women-denim" },
                   { id: "bb-women-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-women-swimwear" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-men",
+            labelKo: "Men",
+            href: "/shop?category=luxury&sub=bb-men",
+            children: [
+              {
+                id: "bb-men-latest",
+                labelKo: "Latest",
+                href: "/shop?category=luxury&sub=bb-men-latest",
+                children: [
+                  { id: "bb-men-new", labelKo: "New", href: "/shop?category=luxury&sub=bb-men-new" },
+                  { id: "bb-men-summer-styles", labelKo: "Summer Styles", href: "/shop?category=luxury&sub=bb-men-summer-styles" },
+                  { id: "bb-men-classics", labelKo: "버버리 Classics", href: "/shop?category=luxury&sub=bb-men-classics" },
+                ],
+              },
+              {
+                id: "bb-men-coats-jackets",
+                labelKo: "Coats & Jackets",
+                href: "/shop?category=luxury&sub=bb-men-coats-jackets",
+                children: [
+                  { id: "bb-men-coats", labelKo: "Coats", href: "/shop?category=luxury&sub=bb-men-coats" },
+                  { id: "bb-men-jackets", labelKo: "Jackets", href: "/shop?category=luxury&sub=bb-men-jackets" },
+                  { id: "bb-men-trench-coats", labelKo: "Trench Coats", href: "/shop?category=luxury&sub=bb-men-trench-coats" },
+                  { id: "bb-men-quilted-jackets", labelKo: "Quilted Jackets", href: "/shop?category=luxury&sub=bb-men-quilted-jackets" },
+                  { id: "bb-men-puffer-jackets", labelKo: "Puffer Jackets", href: "/shop?category=luxury&sub=bb-men-puffer-jackets" },
+                ],
+              },
+              {
+                id: "bb-men-clothes",
+                labelKo: "Clothes",
+                href: "/shop?category=luxury&sub=bb-men-clothes",
+                children: [
+                  { id: "bb-men-knitwear", labelKo: "Knitwear", href: "/shop?category=luxury&sub=bb-men-knitwear" },
+                  { id: "bb-men-polos", labelKo: "Polos", href: "/shop?category=luxury&sub=bb-men-polos" },
+                  { id: "bb-men-tshirts", labelKo: "T-shirts", href: "/shop?category=luxury&sub=bb-men-tshirts" },
+                  { id: "bb-men-shirts", labelKo: "Shirts", href: "/shop?category=luxury&sub=bb-men-shirts" },
+                  { id: "bb-men-hoodies-sweatshirts", labelKo: "Hoodies & Sweatshirts", href: "/shop?category=luxury&sub=bb-men-hoodies-sweatshirts" },
+                  { id: "bb-men-blazers-tailoring", labelKo: "Blazers & Tailoring", href: "/shop?category=luxury&sub=bb-men-blazers-tailoring" },
+                  { id: "bb-men-trousers-shorts", labelKo: "Trousers & Shorts", href: "/shop?category=luxury&sub=bb-men-trousers-shorts" },
+                  { id: "bb-men-activewear", labelKo: "Activewear", href: "/shop?category=luxury&sub=bb-men-activewear" },
+                  { id: "bb-men-denim", labelKo: "Denim", href: "/shop?category=luxury&sub=bb-men-denim" },
+                  { id: "bb-men-swimwear", labelKo: "Swimwear", href: "/shop?category=luxury&sub=bb-men-swimwear" },
                 ],
               },
             ],
@@ -507,6 +741,26 @@ export const navCategories: NavCategory[] = [
               },
             ],
           },
+          {
+            id: "bb-bags-mens",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=bb-bags-mens",
+            children: [
+              {
+                id: "bb-men-bags",
+                labelKo: "Bags",
+                href: "/shop?category=bags&sub=bb-men-bags",
+                children: [
+                  { id: "bb-men-crossbody-bags", labelKo: "Crossbody Bags", href: "/shop?category=bags&sub=bb-men-crossbody-bags" },
+                  { id: "bb-men-backpacks", labelKo: "Backpacks", href: "/shop?category=bags&sub=bb-men-backpacks" },
+                  { id: "bb-men-belt-bags", labelKo: "Belt Bags", href: "/shop?category=bags&sub=bb-men-belt-bags" },
+                  { id: "bb-men-tote-bags", labelKo: "Tote Bags", href: "/shop?category=bags&sub=bb-men-tote-bags" },
+                  { id: "bb-men-holdall-bags", labelKo: "Holdall Bags", href: "/shop?category=bags&sub=bb-men-holdall-bags" },
+                  { id: "bb-men-briefcases", labelKo: "Briefcases", href: "/shop?category=bags&sub=bb-men-briefcases" },
+                ],
+              },
+            ],
+          },
         ],
       },
     ],
@@ -537,6 +791,24 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-women-loafers-ballerinas", labelKo: "Loafers & Ballerinas", href: "/shop?category=shoes&sub=bb-women-loafers-ballerinas" },
                   { id: "bb-women-boots", labelKo: "Boots", href: "/shop?category=shoes&sub=bb-women-boots" },
                   { id: "bb-women-pumps", labelKo: "Pumps", href: "/shop?category=shoes&sub=bb-women-pumps" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-shoes-mens",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=bb-shoes-mens",
+            children: [
+              {
+                id: "bb-men-shoes",
+                labelKo: "Shoes",
+                href: "/shop?category=shoes&sub=bb-men-shoes",
+                children: [
+                  { id: "bb-men-sneakers", labelKo: "Sneakers", href: "/shop?category=shoes&sub=bb-men-sneakers" },
+                  { id: "bb-men-sandals", labelKo: "Sandals", href: "/shop?category=shoes&sub=bb-men-sandals" },
+                  { id: "bb-men-boots", labelKo: "Boots", href: "/shop?category=shoes&sub=bb-men-boots" },
+                  { id: "bb-men-loafers-lace-ups", labelKo: "Loafers & Lace-ups", href: "/shop?category=shoes&sub=bb-men-loafers-lace-ups" },
                 ],
               },
             ],
@@ -631,6 +903,52 @@ export const navCategories: NavCategory[] = [
                   { id: "bb-women-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-women-fragrance" },
                   { id: "bb-women-personalised-gifts", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-women-personalised-gifts" },
                   { id: "bb-women-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-women-personalised-scarves" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bb-accessories-mens",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=bb-accessories-mens",
+            children: [
+              {
+                id: "bb-men-accessories",
+                labelKo: "Accessories",
+                href: "/shop?category=accessories&sub=bb-men-accessories",
+                children: [
+                  { id: "bb-men-scarves", labelKo: "Scarves", href: "/shop?category=accessories&sub=bb-men-scarves" },
+                  { id: "bb-men-ties-cufflinks", labelKo: "Ties & Cufflinks", href: "/shop?category=accessories&sub=bb-men-ties-cufflinks" },
+                  { id: "bb-men-belts", labelKo: "Belts", href: "/shop?category=accessories&sub=bb-men-belts" },
+                  { id: "bb-men-sunglasses", labelKo: "Sunglasses", href: "/shop?category=accessories&sub=bb-men-sunglasses" },
+                  { id: "bb-men-caps-hats", labelKo: "Caps & Bucket Hats", href: "/shop?category=accessories&sub=bb-men-caps-hats" },
+                  { id: "bb-men-umbrellas", labelKo: "Umbrellas", href: "/shop?category=accessories&sub=bb-men-umbrellas" },
+                  { id: "bb-men-jewellery", labelKo: "Jewellery", href: "/shop?category=accessories&sub=bb-men-jewellery" },
+                  { id: "bb-men-socks", labelKo: "Socks", href: "/shop?category=accessories&sub=bb-men-socks" },
+                  { id: "bb-men-tech-travel", labelKo: "Tech & Travel", href: "/shop?category=accessories&sub=bb-men-tech-travel" },
+                  { id: "bb-men-home", labelKo: "Home", href: "/shop?category=accessories&sub=bb-men-home" },
+                  { id: "bb-men-key-charms", labelKo: "Key & Bag Charms", href: "/shop?category=accessories&sub=bb-men-key-charms" },
+                ],
+              },
+              {
+                id: "bb-men-wallets",
+                labelKo: "Wallets & Card Cases",
+                href: "/shop?category=accessories&sub=bb-men-wallets",
+                children: [
+                  { id: "bb-men-bifold-wallets", labelKo: "Bifold Wallets", href: "/shop?category=accessories&sub=bb-men-bifold-wallets" },
+                  { id: "bb-men-card-cases", labelKo: "Card Cases", href: "/shop?category=accessories&sub=bb-men-card-cases" },
+                  { id: "bb-men-long-wallets", labelKo: "Long Wallets", href: "/shop?category=accessories&sub=bb-men-long-wallets" },
+                  { id: "bb-men-pouches", labelKo: "Pouches", href: "/shop?category=accessories&sub=bb-men-pouches" },
+                ],
+              },
+              {
+                id: "bb-men-gifts",
+                labelKo: "Gifts",
+                href: "/shop?category=accessories&sub=bb-men-gifts",
+                children: [
+                  { id: "bb-men-fragrance", labelKo: "Fragrance", href: "/shop?category=accessories&sub=bb-men-fragrance" },
+                  { id: "bb-men-personalised-gifts", labelKo: "Personalised Gifts", href: "/shop?category=accessories&sub=bb-men-personalised-gifts" },
+                  { id: "bb-men-personalised-scarves", labelKo: "Personalised Scarves", href: "/shop?category=accessories&sub=bb-men-personalised-scarves" },
                 ],
               },
             ],

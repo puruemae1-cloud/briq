@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+from bb_men_config import MEN_COLLECTIONS  # noqa: E402
+
 # (briq_id, label_en, plp_path, briq_top_category, parent_group)
 # parent_group used for nav nesting hints only.
-COLLECTIONS: list[tuple[str, str, str, str, str]] = [
+WOMEN_COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     # Luxury — Latest
     ("bb-women-new", "New", "/l/womens-clothing/new-arrivals/", "luxury", "bb-women-latest"),
     (
@@ -291,15 +293,29 @@ COLLECTIONS: list[tuple[str, str, str, str, str]] = [
     ),
 ]
 
+COLLECTIONS: list[tuple[str, str, str, str, str]] = [
+    *WOMEN_COLLECTIONS,
+    *MEN_COLLECTIONS,
+]
+
 # Parent-only ids (no direct PLP) — used for shop chip expansion.
 GROUP_IDS = [
     "burberry",
     "bb-women",
     "bb-women-latest",
+    "bb-men",
+    "bb-men-latest",
     "burberry-bags",
     "burberry-shoes",
     "burberry-accessories",
     "bb-women-accessories",
+    "bb-men-accessories",
+    "bb-bags-womens",
+    "bb-bags-mens",
+    "bb-shoes-womens",
+    "bb-shoes-mens",
+    "bb-accessories-womens",
+    "bb-accessories-mens",
 ]
 
 BASE = "https://uk.burberry.com"
@@ -342,10 +358,16 @@ def primary_category_for_collections(
                 "bb-women-coats-jackets",
                 "bb-women-latest",
                 "bb-women",
+                "bb-men-clothes",
+                "bb-men-coats-jackets",
+                "bb-men-latest",
+                "bb-men",
             }
             or "/womens-clothing" in path
             or "/womens-coats" in path
             or "/womens-jackets" in path
+            or "/mens-clothing" in path
+            or "/mens-coats" in path
             or "trench" in path
             or "quilted" in path
             or "puffer" in path
@@ -356,12 +378,19 @@ def primary_category_for_collections(
         cid
         for cid, (_l, _p, top, parent) in by.items()
         if top == "accessories"
-        and parent in {"bb-women-accessories", "bb-women-wallets"}
+        and parent
+        in {
+            "bb-women-accessories",
+            "bb-women-wallets",
+            "bb-men-accessories",
+            "bb-men-wallets",
+        }
     }
     gift_ids = {
         cid
         for cid, (_l, _p, top, parent) in by.items()
-        if top == "accessories" and parent == "bb-women-gifts"
+        if top == "accessories"
+        and parent in {"bb-women-gifts", "bb-men-gifts"}
     }
 
     def best_leaf(candidates: set[str]) -> str | None:
@@ -376,17 +405,72 @@ def primary_category_for_collections(
         ranked.sort()
         return ranked[0][1]
 
+    # Soft luxury PLPs (New / Summer / Classics / campaign) often cross-list
+    # accessories — don't let those beat real accessory leaves.
+    soft_apparel_ids = {
+        cid
+        for cid, (_l, _p, top, parent) in by.items()
+        if top == "luxury"
+        and parent
+        in {
+            "bb-women-latest",
+            "bb-women",
+            "bb-men-latest",
+            "bb-men",
+        }
+    } | {
+        "bb-women-new",
+        "bb-women-summer-styles",
+        "bb-women-classics",
+        "bb-women-activewear",
+        "bb-men-new",
+        "bb-men-summer-styles",
+        "bb-men-classics",
+        "bb-men-activewear",
+    }
+    hard_apparel_ids = apparel_ids - soft_apparel_ids
+
+    title_l = (title or "").lower()
+    accessory_name = any(
+        k in title_l
+        for k in (
+            "sunglass",
+            "scarf",
+            "belt",
+            "wallet",
+            "cap",
+            "hat",
+            "tie",
+            "cufflink",
+            "umbrella",
+            "sock",
+            "jewellery",
+            "jewelry",
+            "charm",
+            "key ring",
+            "keyring",
+            "card case",
+            "pouch",
+            "fragrance",
+            "perfume",
+            "eau de",
+        )
+    )
+
     if hit := best_leaf(bag_ids):
         return "bags", hit
     if hit := best_leaf(shoe_ids):
         return "shoes", hit
-    if hit := best_leaf(apparel_ids):
+    if accessory_name and (hit := best_leaf(true_accessory_ids)):
+        return "accessories", hit
+    if hit := best_leaf(hard_apparel_ids):
         return "luxury", hit
     if hit := best_leaf(true_accessory_ids):
         return "accessories", hit
+    if hit := best_leaf(soft_apparel_ids):
+        return "luxury", hit
 
     # Gift-only apparel (tees/dresses on Gifts PLP, not Accessories).
-    title_l = (title or "").lower()
     apparel_name = any(
         k in title_l
         for k in (
@@ -415,6 +499,8 @@ def primary_category_for_collections(
         )
     )
     if apparel_name and (colset & gift_ids):
+        if any(str(c).startswith("bb-men-") for c in colset):
+            return "luxury", "bb-men-clothes"
         return "luxury", "bb-women-clothes"
 
     if hit := best_leaf(gift_ids):

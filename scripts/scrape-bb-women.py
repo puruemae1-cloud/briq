@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from bb_women_config import BASE, COLLECTIONS, UA  # noqa: E402
+from bb_women_config import BASE, WOMEN_COLLECTIONS, UA  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/bb/bb-pdp-cache.json"
@@ -253,14 +253,31 @@ def main() -> None:
     RAW_PATH.parent.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)
 
+    existing = {}
+    if RAW_PATH.exists():
+        existing = json.loads(RAW_PATH.read_text())
+    old_products = {
+        str(p["id"]): p for p in (existing.get("products") or []) if p.get("id")
+    }
+
     cache: dict = {}
     if PDP_CACHE.exists():
         cache = json.loads(PDP_CACHE.read_text())
 
     membership: dict[str, set[str]] = {}
-    plp_meta: dict[str, dict] = {}
+    # Keep men collections from previous scrape so women-only runs don't wipe them
+    for pid, prod in old_products.items():
+        cols = [c for c in (prod.get("collections") or []) if str(c).startswith("bb-men-")]
+        if cols:
+            membership[pid] = set(cols)
 
-    for coll_id, label, path, top, _parent in COLLECTIONS:
+    plp_meta: dict[str, dict] = {
+        k: v
+        for k, v in (existing.get("collections") or {}).items()
+        if str(k).startswith("bb-men-")
+    }
+
+    for coll_id, label, path, top, _parent in WOMEN_COLLECTIONS:
         items = scrape_collection(coll_id, path)
         plp_meta[coll_id] = {
             "label": label,
@@ -279,7 +296,12 @@ def main() -> None:
                 plp_meta["_cards"][pid] = {**prev, **it}
 
     cards: dict[str, dict] = plp_meta.pop("_cards", {})
-    product_ids = sorted(membership.keys())
+    # Only enrich colourways linked to women collections (men preserved separately)
+    product_ids = sorted(
+        pid
+        for pid, cols in membership.items()
+        if any(str(c).startswith("bb-women-") for c in cols)
+    )
     print(f"Unique colourways from PLPs: {len(product_ids)}", flush=True)
 
     # Discover sibling colours from PDPs and ensure they are enriched too
@@ -345,28 +367,37 @@ def main() -> None:
     for pid, cols in sorted(membership.items()):
         card = cards.get(pid) or {}
         pdp = cache.get(pid) or {}
+        prev = old_products.get(pid) or {}
+        local_imgs = pdp.get("localImages") or prev.get("images") or []
         products.append(
             {
                 "id": pid,
-                "title": pdp.get("name") or card.get("title") or "",
+                "title": pdp.get("name") or card.get("title") or prev.get("title") or "",
                 "url": pdp.get("sourceUrl")
+                or prev.get("url")
                 or (f"{BASE}{card['url']}" if card.get("url") else ""),
-                "color": pdp.get("color") or card.get("color") or "",
-                "gbpPrice": pdp.get("gbpPrice") or card.get("gbpPrice"),
-                "gbpListPrice": pdp.get("gbpListPrice") or card.get("gbpListPrice"),
-                "image": (pdp.get("localImages") or [None])[0]
+                "color": pdp.get("color") or card.get("color") or prev.get("color") or "",
+                "gbpPrice": pdp.get("gbpPrice")
+                or card.get("gbpPrice")
+                or prev.get("gbpPrice"),
+                "gbpListPrice": pdp.get("gbpListPrice")
+                or card.get("gbpListPrice")
+                or prev.get("gbpListPrice"),
+                "image": (local_imgs[0] if local_imgs else None)
                 or card.get("image")
+                or prev.get("image")
                 or "",
-                "images": pdp.get("localImages") or [],
-                "remoteImages": pdp.get("images") or [],
-                "sizes": pdp.get("sizes") or [],
-                "swatches": pdp.get("swatches") or [],
-                "description": pdp.get("description") or "",
-                "accordion": pdp.get("accordion") or [],
-                "measurements": pdp.get("measurements"),
-                "materialComposition": pdp.get("materialComposition"),
+                "images": local_imgs or prev.get("images") or [],
+                "remoteImages": pdp.get("images") or prev.get("remoteImages") or [],
+                "sizes": pdp.get("sizes") or prev.get("sizes") or [],
+                "swatches": pdp.get("swatches") or prev.get("swatches") or [],
+                "description": pdp.get("description") or prev.get("description") or "",
+                "accordion": pdp.get("accordion") or prev.get("accordion") or [],
+                "measurements": pdp.get("measurements") or prev.get("measurements"),
+                "materialComposition": pdp.get("materialComposition")
+                or prev.get("materialComposition"),
                 "collections": sorted(cols),
-                "label": card.get("label"),
+                "label": card.get("label") or prev.get("label"),
             }
         )
 

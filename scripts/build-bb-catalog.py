@@ -424,11 +424,11 @@ def main() -> None:
 
     chunks = [emit_product(p) for p in briq]
     out = (
-        "/** Auto-generated Burberry Women catalogue — do not edit by hand. */\n"
+        "/** Auto-generated Burberry catalogue — do not edit by hand. */\n"
         'import type { Product } from "@/data/products";\n\n'
-        "export const bbCatalogProducts: Product[] = [\n"
+        "export const bbCatalogProducts = [\n"
         + ",\n".join(chunks)
-        + "\n];\n"
+        + "\n] as unknown as Product[];\n"
     )
     OUT_PATH.write_text(out)
     print(f"Wrote {OUT_PATH} styles={len(briq)} colourways={len(products)}")
