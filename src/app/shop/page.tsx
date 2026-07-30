@@ -220,6 +220,13 @@ export default async function ShopPage({ searchParams }: Props) {
             ))}
 
             <div className="shop-browse__controls" aria-label="상품 정렬 필터">
+              {sort !== "orders" ? (
+                <p className="shop-browse__count">
+                  총 {list.length.toLocaleString()}개 상품
+                </p>
+              ) : (
+                <span className="shop-browse__count" aria-hidden />
+              )}
               <div className="shop-browse__sort" role="list">
                 {PRODUCT_SORTS.map((option) => (
                   <Link
@@ -235,11 +242,6 @@ export default async function ShopPage({ searchParams }: Props) {
                   </Link>
                 ))}
               </div>
-              {sort !== "orders" ? (
-                <p className="shop-browse__count">
-                  총 {list.length.toLocaleString()}개 상품
-                </p>
-              ) : null}
             </div>
 
             {sort === "orders" ? (

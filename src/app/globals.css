@@ -1760,6 +1760,26 @@ body:has(.nav-drawer-toggle:checked) {
   .section {
     padding: 3.5rem 2rem;
   }
+
+  /* Burberry-style PLP: edge-to-edge catalogue width */
+  .section.shop-browse {
+    max-width: none;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section.shop-browse {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .shop-hero__content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .section__head {
@@ -2314,6 +2334,14 @@ body:has(.nav-drawer-toggle:checked) {
   min-width: 0;
 }
 
+.shop-browse .section__head {
+  margin-bottom: 1.15rem;
+}
+
+.shop-browse .category-row {
+  margin-bottom: 0.85rem;
+}
+
 .shop-browse__main {
   min-width: 0;
   max-width: 100%;
@@ -2321,30 +2349,36 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .shop-browse__controls {
-  margin: 0.35rem 0 0.85rem;
+  margin: 0.15rem 0 1rem;
+  padding: 0.85rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.55rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .shop-browse__sort {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.45rem;
+  gap: 0.4rem;
+  margin-left: auto;
 }
 
 .shop-browse__sort-btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--line);
-  background: rgba(247, 248, 245, 0.65);
+  padding: 0.45rem 0.7rem;
+  border: 1px solid transparent;
+  background: transparent;
   color: rgba(11, 18, 16, 0.72);
   text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-size: 0.84rem;
+  font-weight: 500;
   letter-spacing: -0.01em;
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
@@ -2361,7 +2395,8 @@ body:has(.nav-drawer-toggle:checked) {
   color: var(--muted);
   font-size: 0.82rem;
   letter-spacing: 0.02em;
-  text-align: right;
+  text-align: left;
+  min-height: 1em;
 }
 
 .shop-browse__morebar {
@@ -2443,7 +2478,8 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .shop-browse .product-grid {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.15rem 1rem;
   }
 }
 
