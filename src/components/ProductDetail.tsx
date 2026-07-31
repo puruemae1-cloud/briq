@@ -20,6 +20,7 @@ import {
 } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
+import { compareAxSizes, isArcteryxProduct } from "@/lib/ax-size-order";
 
 type ColorGroup = {
   key: string;
@@ -156,8 +157,16 @@ export function ProductDetail({
         if (!existing.image && v.image) existing.image = v.image;
       }
     }
-    return Array.from(map.values());
-  }, [allVariants, hasSizes]);
+    const groups = Array.from(map.values());
+    if (isArcteryxProduct(product)) {
+      for (const g of groups) {
+        g.variants = [...g.variants].sort((a, b) =>
+          compareAxSizes(a.size || "", b.size || ""),
+        );
+      }
+    }
+    return groups;
+  }, [allVariants, hasSizes, product]);
 
   const selectedColor =
     colorGroups.find((c) => c.key === colorId) ??

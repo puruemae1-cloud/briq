@@ -4,10 +4,14 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from ax_size_order import sort_ax_sizes  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/ax/ax-outlet-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-outlet-pdp-cache.json"
 TRANSLATE_CACHE = ROOT / "src/data/ax/ax-translate-cache.json"
@@ -304,6 +308,7 @@ def main() -> None:
         sizes = [str(s) for s in (pdp.get("sizes") or pdp.get("sizesUk") or [])]
         if not sizes:
             sizes = default_sizes(kind, genders)
+        sizes = sort_ax_sizes(sizes)
 
         colour_names = []
         for c in pdp.get("colours") or []:

@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_charts import chart_for  # noqa: E402
+from ax_size_order import sort_ax_sizes  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-apparel-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-apparel-pdp-cache.json"
@@ -229,6 +230,7 @@ def main() -> None:
         if not sizes:
             # fallback apparel sizes
             sizes = ["XS", "S", "M", "L", "XL"]
+        sizes = sort_ax_sizes(sizes)
 
         variants_blocks: list[str] = []
         all_images: list[str] = []
@@ -275,6 +277,7 @@ def main() -> None:
                             colour_sizes.append(v["size"])
                 if not colour_sizes:
                     colour_sizes = sizes
+            colour_sizes = sort_ax_sizes(colour_sizes)
 
             for size in colour_sizes:
                 if stock_map:
