@@ -110,6 +110,9 @@ export type SubcategoryId =
   | "arcteryx-accessories"
   | "ax-acc-womens"
   | "ax-acc-mens"
+  | "arcteryx-bags"
+  | "ax-bags-womens"
+  | "ax-bags-mens"
   | "bb-shoes-womens"
   | "bb-women-shoes"
   | "bb-women-sneakers"
@@ -897,6 +900,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "arcteryx-accessories": ["ax-acc-womens", "ax-acc-mens"],
   "ax-acc-womens": ["ax-acc-womens"],
   "ax-acc-mens": ["ax-acc-mens"],
+  "arcteryx-bags": ["ax-bags-womens", "ax-bags-mens"],
+  "ax-bags-womens": ["ax-bags-womens"],
+  "ax-bags-mens": ["ax-bags-mens"],
   "bb-shoes-womens": [...BB_WOMEN_SHOE_IDS],
   "bb-women-shoes": [...BB_WOMEN_SHOE_IDS],
   "bb-shoes-mens": [...BB_MEN_SHOE_IDS],
@@ -1299,6 +1305,25 @@ export const navCategories: NavCategory[] = [
     labelKo: "가방",
     href: "/shop?category=bags",
     children: [
+      {
+        id: "arcteryx-bags",
+        labelKo: "아크테릭스",
+        href: "/shop?category=bags&sub=arcteryx-bags",
+        children: [
+          {
+            id: "ax-bags-womens",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=ax-bags-womens",
+            navLeaf: true,
+          },
+          {
+            id: "ax-bags-mens",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=ax-bags-mens",
+            navLeaf: true,
+          },
+        ],
+      },
       {
         id: "burberry-bags",
         labelKo: "버버리",
