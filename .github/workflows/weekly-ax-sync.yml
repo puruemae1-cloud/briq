@@ -1,0 +1,61 @@
+name: Weekly Arc'teryx stock sync
+
+on:
+  schedule:
+    # Every Monday 11:00 UTC (~20:00 KST) — after Burberry
+    - cron: "0 11 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-ax-stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 480
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python3 -m playwright install --with-deps chromium
+
+      - name: Sync Arc'teryx outdoor apparel (stock + galleries + rebuild)
+        run: python3 scripts/weekly-ax-stock-sync.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "briq-bot"
+          git config user.email "briq-bot@users.noreply.github.com"
+          git add -A \
+            src/data/ax \
+            public/products/axa-pdp \
+            scripts/weekly-ax-stock-sync.py \
+            scripts/enrich-ax-apparel-playwright.py \
+            scripts/build-ax-apparel-catalog.py \
+            scripts/scrape-ax-outdoor-apparel.py \
+            scripts/ax_size_charts.py
+          if git diff --staged --quiet; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          git commit -m "$(cat <<'EOF'
+          chore: weekly Arc'teryx apparel stock + catalogue sync
+
+          Refresh colour×size availability, galleries, and PDP copy from arcteryx.com GB outdoor, then rebuild Briq catalogue.
+          EOF
+          )"
+          git push

@@ -1,10 +1,10 @@
 {
   "X000006198": {
     "url": "https://arcteryx.com/gb/en/shop/womens/frame-shirt-ss",
-    "title": "Frame Shirt SS Women's",
-    "tagline": "Trim merino crew, hip-length hem",
+    "title": "Frame Shirt SS",
+    "tagline": "Slim-fit merino crew with a hip-length hem. Made with responsibly sourced wool.",
     "gbpPrice": 140,
-    "gbpListPrice": null,
+    "gbpListPrice": 140,
     "colours": [
       "Black"
     ],
@@ -15,21 +15,134 @@
       "L",
       "XL"
     ],
-    "sections": [
+    "colourImages": {
+      "Black": [
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-3-4-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S25-X000006198-Frame-Shirt-SS-Black-Women-s.jpg"
+      ]
+    },
+    "variants": [
       {
-        "heading": "Frame Shirt SS Women's",
-        "body": "Trim merino crew, hip-length hem"
+        "variantSku": "X000006198003",
+        "color": "Black",
+        "size": "XL",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006198005",
+        "color": "Black",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006198002",
+        "color": "Black",
+        "size": "L",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006198001",
+        "color": "Black",
+        "size": "XS",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006198004",
+        "color": "Black",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
       }
     ],
-    "features": [],
+    "sections": [
+      {
+        "heading": "Frame Shirt SS",
+        "body": "<p>Slim fit, trim lines in a hip-length merino crew with fitted sleeves.  Provides natural softness, odour resistance, and thermal comfort. Versatile style spans seasons and environments.</p>"
+      }
+    ],
+    "features": [
+      {
+        "title": "Fit: Fitted",
+        "body": "Our trimmer fit is patterned to stay close to the body through the chest, waist, hip, and thigh. Its low profile eliminates bulk, moves with the body, and fits comfortably over first layers or under outer layers."
+      },
+      {
+        "title": "Technical features",
+        "body": "Breathable · Lightweight"
+      },
+      {
+        "title": "Construction",
+        "body": "Micro-serged seams"
+      },
+      {
+        "title": "Cuff & Sleeves configuration",
+        "body": "Fitted sleeves"
+      },
+      {
+        "title": "Design & Fit",
+        "body": "Women's specific design and fit"
+      },
+      {
+        "title": "Hem configuration",
+        "body": "Cover-stitched hem for a clean finish"
+      },
+      {
+        "title": "Neckline configuration",
+        "body": "Crew neck"
+      },
+      {
+        "title": "Sustainability",
+        "body": "PFAS (Per- and polyfluoroalkyl substances) Compliant"
+      },
+      {
+        "title": "Materials",
+        "body": "Merino / Nylon core spun jersey 16.5mn: 87% Wool, 13% Nylon - RWS Wool · Origin of fabric: THAILAND · Origin of dyeing: THAILAND"
+      },
+      {
+        "title": "Care",
+        "body": "Machine wash gentle low · Tumble dry gentle low · Do not bleach · Wash dark colours separately · Do not dry clean · Iron low · Do not use fabric softener · Double rinse · Use wool detergent · Wash inside washing bag · Wash inside out"
+      },
+      {
+        "title": "Fit",
+        "body": "Fitted"
+      }
+    ],
+    "gender": "women",
+    "category": "Shirts and Tops",
+    "subCategory": "T-Shirts, Wool blend, bluesign® Approved Materials",
+    "sizingChart": {
+      "label": "Veilance women's sizing chart & fit guide",
+      "url": "/gb/en/help/sizing/womens/veilance"
+    },
+    "weight": {
+      "value": "100g / 3.5 oz"
+    },
     "has3d": false
   },
   "X000009735": {
     "url": "https://arcteryx.com/gb/en/shop/womens/conic-wool-midlayer-9735",
-    "title": "Conic Wool Midlayer Women's",
-    "tagline": "Light, warm, durable, 3D-knitted midlayer",
+    "title": "Conic Wool Midlayer",
+    "tagline": "Light, warm, pullover midlayer with 3D-knitted design.",
     "gbpPrice": 280,
-    "gbpListPrice": null,
+    "gbpListPrice": 280,
     "colours": [
       "Black"
     ],
@@ -40,13 +153,107 @@
       "L",
       "XL"
     ],
-    "sections": [
+    "colourImages": {
+      "Black": [
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Layering.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s-Profile.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000009735-Conic-Wool-Midlayer-Black-Women-s.jpg"
+      ]
+    },
+    "variants": [
       {
-        "heading": "Conic Wool Midlayer Women's",
-        "body": "Light, warm, durable, 3D-knitted midlayer"
+        "variantSku": "X000009735003",
+        "color": "Black",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 280,
+        "gbpListPrice": 280
+      },
+      {
+        "variantSku": "X000009735004",
+        "color": "Black",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 280,
+        "gbpListPrice": 280
+      },
+      {
+        "variantSku": "X000009735005",
+        "color": "Black",
+        "size": "L",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 280,
+        "gbpListPrice": 280
+      },
+      {
+        "variantSku": "X000009735002",
+        "color": "Black",
+        "size": "XS",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 280,
+        "gbpListPrice": 280
+      },
+      {
+        "variantSku": "X000009735006",
+        "color": "Black",
+        "size": "XL",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 280,
+        "gbpListPrice": 280
       }
     ],
-    "features": [],
+    "sections": [
+      {
+        "heading": "Conic Wool Midlayer",
+        "body": "<p>The Conic Wool Midlayer is a light, warm, 3D-knitted design that provides exceptional comfort and freedom of movement. Made from durable yarn that helps to regulate temperature, resists abrasion and pilling, and is soft next-to-skin. Pullover design features a mock neck for comfort and layering.</p>"
+      }
+    ],
+    "features": [
+      {
+        "title": "Technical features",
+        "body": "Natural odour resistance · Warm and comfortable"
+      },
+      {
+        "title": "Construction",
+        "body": "Betaspun® technology twists Merino wool and nylon fibers to create a durable yarn that helps to regulate temperature, resists abrasion and pilling, and is soft next-to-skin · 3D-knitted design with engineered rib placement"
+      },
+      {
+        "title": "Sustainability",
+        "body": "RWS (Responsible Wool Standard) - The wool in this product is 100% Responsible Wool Standard (RWS) certified by IDFL (No.TE-99950273) · PFAS (Per- and polyfluoroalkyl substances) Compliant"
+      },
+      {
+        "title": "Materials",
+        "body": "Body: Wool nylon blend - 69% Wool, 31% Nylon · Origin of Manufacture: VIETNAM · Origin of fabric: VIETNAM · Origin of dyeing: VIETNAM"
+      },
+      {
+        "title": "Care",
+        "body": "Machine wash low · Dry flat · Do not bleach · Wash dark colours separately · Do not dry clean · Do not iron · Do not use fabric softener · Double rinse · Use wool detergent · Do not wring"
+      },
+      {
+        "title": "Fit",
+        "body": "Fitted"
+      }
+    ],
+    "gender": "women",
+    "category": "Fleece",
+    "subCategory": "Wool blend, Mid Layer, Fair Trade Certified",
+    "sizingChart": {
+      "label": "Veilance women's sizing chart & fit guide",
+      "url": "/gb/en/help/sizing/womens/veilance"
+    },
+    "weight": {
+      "value": "280g / 9.9 oz"
+    },
     "has3d": false
   },
   "X000009772": {
@@ -4681,14 +4888,14 @@
   },
   "X000010034": {
     "url": "https://arcteryx.com/gb/en/shop/womens/gamma-sl-pant-0034",
-    "title": "Gamma SL Pant Women's",
-    "tagline": "Light, durable, versatile softshell pant",
+    "title": "Gamma SL Pant",
+    "tagline": "Lightweight, highly versatile softshell pant made from recycled materials. The Gamma SL Pant was previously the Gamma Lightweight Pant.",
     "gbpPrice": 140,
-    "gbpListPrice": null,
+    "gbpListPrice": 140,
     "colours": [
       "Rune",
-      "Black",
-      "Dk Stratus"
+      "Dk Stratus",
+      "Black"
     ],
     "sizes": [
       "00S",
@@ -4716,13 +4923,762 @@
       "14T",
       "16T"
     ],
-    "sections": [
+    "colourImages": {
+      "Rune": [
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Waist-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Rune-Women-s.jpg"
+      ],
+      "Dk Stratus": [
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Waist-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Dk-Stratus-Women-s.jpg"
+      ],
+      "Black": [
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Waist-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/S26-X000010034-Gamma-SL-Pant-Black-Women-s.jpg"
+      ]
+    },
+    "variants": [
       {
-        "heading": "Gamma SL Pant Women's",
-        "body": "Light, durable, versatile softshell pant"
+        "variantSku": "X000010034130",
+        "color": "Rune",
+        "size": "2R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034126",
+        "color": "Rune",
+        "size": "8S",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034101",
+        "color": "Dk Stratus",
+        "size": "6S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034109",
+        "color": "Dk Stratus",
+        "size": "8R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034129",
+        "color": "Rune",
+        "size": "0R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034118",
+        "color": "Dk Stratus",
+        "size": "12T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034097",
+        "color": "Dk Stratus",
+        "size": "00S",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034104",
+        "color": "Dk Stratus",
+        "size": "00R",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034098",
+        "color": "Dk Stratus",
+        "size": "0S",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034134",
+        "color": "Rune",
+        "size": "10R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034131",
+        "color": "Rune",
+        "size": "4R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034113",
+        "color": "Dk Stratus",
+        "size": "16R",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034125",
+        "color": "Rune",
+        "size": "6S",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034136",
+        "color": "Rune",
+        "size": "14R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034127",
+        "color": "Rune",
+        "size": "10S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034117",
+        "color": "Dk Stratus",
+        "size": "10T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034142",
+        "color": "Rune",
+        "size": "12T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034106",
+        "color": "Dk Stratus",
+        "size": "2R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034115",
+        "color": "Dk Stratus",
+        "size": "6T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034107",
+        "color": "Dk Stratus",
+        "size": "4R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034114",
+        "color": "Dk Stratus",
+        "size": "4T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034121",
+        "color": "Rune",
+        "size": "00S",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034100",
+        "color": "Dk Stratus",
+        "size": "4S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034143",
+        "color": "Rune",
+        "size": "14T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034110",
+        "color": "Dk Stratus",
+        "size": "10R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034120",
+        "color": "Dk Stratus",
+        "size": "16T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034139",
+        "color": "Rune",
+        "size": "6T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034135",
+        "color": "Rune",
+        "size": "12R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034133",
+        "color": "Rune",
+        "size": "8R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034140",
+        "color": "Rune",
+        "size": "8T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034122",
+        "color": "Rune",
+        "size": "0S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034141",
+        "color": "Rune",
+        "size": "10T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034123",
+        "color": "Rune",
+        "size": "2S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034124",
+        "color": "Rune",
+        "size": "4S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034137",
+        "color": "Rune",
+        "size": "16R",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034102",
+        "color": "Dk Stratus",
+        "size": "8S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034132",
+        "color": "Rune",
+        "size": "6R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034099",
+        "color": "Dk Stratus",
+        "size": "2S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034128",
+        "color": "Rune",
+        "size": "00R",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034111",
+        "color": "Dk Stratus",
+        "size": "12R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034116",
+        "color": "Dk Stratus",
+        "size": "8T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034108",
+        "color": "Dk Stratus",
+        "size": "6R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034138",
+        "color": "Rune",
+        "size": "4T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034144",
+        "color": "Rune",
+        "size": "16T",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034103",
+        "color": "Dk Stratus",
+        "size": "10S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034112",
+        "color": "Dk Stratus",
+        "size": "14R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034105",
+        "color": "Dk Stratus",
+        "size": "0R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034119",
+        "color": "Dk Stratus",
+        "size": "14T",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034016",
+        "color": "Black",
+        "size": "14R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034019",
+        "color": "Black",
+        "size": "6T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034015",
+        "color": "Black",
+        "size": "12R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034020",
+        "color": "Black",
+        "size": "8T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034013",
+        "color": "Black",
+        "size": "8R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034001",
+        "color": "Black",
+        "size": "00S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034006",
+        "color": "Black",
+        "size": "8S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034012",
+        "color": "Black",
+        "size": "6R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034021",
+        "color": "Black",
+        "size": "10T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034004",
+        "color": "Black",
+        "size": "4S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034014",
+        "color": "Black",
+        "size": "10R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034023",
+        "color": "Black",
+        "size": "14T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034011",
+        "color": "Black",
+        "size": "4R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034018",
+        "color": "Black",
+        "size": "4T",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034010",
+        "color": "Black",
+        "size": "2R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034022",
+        "color": "Black",
+        "size": "12T",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034007",
+        "color": "Black",
+        "size": "10S",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034005",
+        "color": "Black",
+        "size": "6S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034003",
+        "color": "Black",
+        "size": "2S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034009",
+        "color": "Black",
+        "size": "0R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034002",
+        "color": "Black",
+        "size": "0S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034017",
+        "color": "Black",
+        "size": "16R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034024",
+        "color": "Black",
+        "size": "16T",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000010034008",
+        "color": "Black",
+        "size": "00R",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
       }
     ],
-    "features": [],
+    "sections": [
+      {
+        "heading": "Gamma SL Pant",
+        "body": "Refined design, focused performance, made to move – our lightest Gamma is an all-mountain pant for summer adventure. The Fortius™ 1.0 softshell is made with 43% recycled content and delivers durable performance with the freedom of stretch. An adjustable low-profile waistbelt rides comfortably under a hipbelt or harness, and zippered hand pockets and a thigh pocket secure your smartphone and small essentials. Articulation is built in for added mobility, and eyelets at the hem accommodate shock cord to hold the cuffs over your boots."
+      }
+    ],
+    "features": [
+      {
+        "title": "Fit: Fitted",
+        "body": "Our trimmer fit is patterned to stay close to the body through the chest, waist, hip, and thigh. Its low profile eliminates bulk, moves with the body, and fits comfortably under outer layers."
+      },
+      {
+        "title": "Technical features",
+        "body": "Breathable · Lightweight · Durable · Wind resistant · Versatile · Water repellent"
+      },
+      {
+        "title": "Construction",
+        "body": "Fortius™ 1.0 softshell enables stretch and air flow automatically releasing excess heat"
+      },
+      {
+        "title": "Cuff & Sleeves configuration",
+        "body": "Eyelets at hem for shock cord attachments"
+      },
+      {
+        "title": "Design & Fit",
+        "body": "Tapered legs for maximum mobility · Garment Inseam: Size 4-S (Short) is 28\"/72cm, Size 4-R (Regular) is 30\"/77cm, Size 4-T (Tall) is 33\"/84cm — Inseam varies by size"
+      },
+      {
+        "title": "Fabric treatment",
+        "body": "FC0-DWR (Durable Water Repellent) finish repels moisture"
+      },
+      {
+        "title": "Patterning",
+        "body": "Articulated patterning for unrestricted mobility"
+      },
+      {
+        "title": "Pocket configuration",
+        "body": "Two hand pockets with zippers · Thigh pocket with zip"
+      },
+      {
+        "title": "Sustainability",
+        "body": "Contains materials produced through processes that meet bluesign® criteria · Body - bluepass Material, recycled content · Lining - bluepass Material · PFAS (Per- and polyfluoroalkyl substances) Compliant"
+      },
+      {
+        "title": "UPF rating",
+        "body": "UPF 50+, EN 13758-2,  AS4399:2020, GB/T 18830-2009. Only covered areas are protected. Protection may be reduced with use or if stretched or wet."
+      },
+      {
+        "title": "Waist & Belt configuration",
+        "body": "Adjustable waistbelt fits comfortably under harnesses and backpacks"
+      },
+      {
+        "title": "Materials",
+        "body": "Lining: Warp knit mesh - 100% Polyester · Body: Fortius™  DW 1.0 - Woven Double Weave, 125gsm - 86% Nylon, 14% Elastane · Origin of fabric: TAIWAN, CHINA · Origin of dyeing: TAIWAN, CHINA · Origin of Manufacture:  BANGLADESH · May release plastic microfibres into the environment when washing"
+      },
+      {
+        "title": "Care",
+        "body": "Machine wash low · Tumble dry normal low · Do not bleach · Wash dark colours separately · Do not dry clean · Iron low · Do not use fabric softener · Double rinse"
+      },
+      {
+        "title": "Fit",
+        "body": "Fitted"
+      }
+    ],
+    "gender": "women",
+    "category": "Pants",
+    "subCategory": "Softshell, Lightweight, Wind Resistant, Water Resistant, Inseam Length (Short), Inseam Length (Regular), Inseam Length (Tall), Synthetic, Fair Trade Certified, bluesign® Approved Materials, Sun Protection",
+    "sizingChart": {
+      "label": "Women's sizing chart & fit guide - bottoms",
+      "url": "/gb/en/help/sizing/womens/bottoms/numericalsizing"
+    },
+    "weight": {
+      "value": "220g / 7.8 oz"
+    },
     "has3d": false
   },
   "X000010033": {

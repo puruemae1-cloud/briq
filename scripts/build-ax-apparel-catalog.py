@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Build ax-apparel-catalog.ts from outdoor apparel raw + PDP + translations."""
+"""Build ax-apparel-catalog.ts from outdoor apparel raw + enriched PDP + translations."""
 from __future__ import annotations
 
 import json
 import re
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from ax_size_charts import chart_for  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/ax/ax-apparel-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-apparel-pdp-cache.json"
 TRANSLATE_CACHE = ROOT / "src/data/ax/ax-translate-cache.json"
@@ -34,6 +38,8 @@ def t(text: str | None) -> str:
     if not text:
         return ""
     s = str(text).strip()
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
     return _KO.get(s, s)
 
 
@@ -99,37 +105,6 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     return out
 
 
-def size_chart(gender: str) -> dict:
-    return {
-        "id": "ax-apparel",
-        "titleKo": (
-            "아크테릭스 여성 의류 사이즈 가이드"
-            if gender == "womens"
-            else "아크테릭스 남성 의류 사이즈 가이드"
-        ),
-        "noteKo": "상품에 표기된 사이즈를 선택하세요. R은 Regular 기장입니다.",
-        "headers": ["Size", "설명"],
-        "rows": [
-            ["XXS", "Extra Extra Small"],
-            ["XS", "Extra Small"],
-            ["S / SR", "Small / Small Regular"],
-            ["M / MR", "Medium / Medium Regular"],
-            ["L / LR", "Large / Large Regular"],
-            ["XL / XLR", "Extra Large / XL Regular"],
-            ["XXL / 2XR", "2X Large"],
-        ],
-    }
-
-
-def default_sizes(name: str, gender: str) -> list[str]:
-    n = (name or "").lower()
-    if any(k in n for k in ("pant", "short", "tight", "legging", "capri", "skirt")):
-        if gender == "womens":
-            return ["00", "0", "2", "4", "6", "8", "10", "12", "14"]
-        return ["28", "30", "32", "34", "36", "38"]
-    return ["XXS", "XS", "S", "M", "L", "XL", "XXL"]
-
-
 def build_story(pdp: dict, images: list[str]) -> list[dict]:
     sections: list[dict] = []
     for i, sec in enumerate(pdp.get("sections") or []):
@@ -154,7 +129,17 @@ def build_story(pdp: dict, images: list[str]) -> list[dict]:
         if len(sections) % 2 == 1:
             item["reverse"] = True
         sections.append(item)
-    return sections[:8]
+    return sections[:12]
+
+
+def colour_name_ko(cname: str) -> str:
+    ko = t(cname)
+    if ko.endswith(" 문자"):
+        ko = ko[:-3].strip()
+    # Prefer short colour labels
+    if cname == "Rune":
+        return "룬"
+    return ko or cname
 
 
 def main() -> None:
@@ -192,32 +177,41 @@ def main() -> None:
         tagline = pdp.get("tagline") or p.get("shortDescription") or ""
         desc_ko = t(tagline) or tagline
 
-        sizes = [str(s) for s in (pdp.get("sizes") or pdp.get("sizesUk") or [])]
-        if not sizes:
-            sizes = default_sizes(name, gender)
+        # Prefer PDP colour×size stock matrix when present
+        pdp_variants = pdp.get("variants") or []
+        stock_map: dict[tuple[str, str], bool] = {}
+        for v in pdp_variants:
+            stock_map[(v.get("color") or "", v.get("size") or "")] = bool(
+                v.get("inStock")
+            )
 
-        colour_names = []
-        for c in pdp.get("colours") or []:
-            if isinstance(c, str) and c.strip():
-                colour_names.append(c.strip())
+        colour_names = list(pdp.get("colours") or [])
         raw_colours = p.get("colours") or []
         raw_by = {c["color"]: c for c in raw_colours if c.get("color")}
         raw_by_l = {c["color"].lower(): c for c in raw_colours if c.get("color")}
         if not colour_names:
             colour_names = [c["color"] for c in raw_colours if c.get("color")]
 
+        sizes = [str(s) for s in (pdp.get("sizes") or [])]
+        if not sizes and pdp_variants:
+            seen = []
+            for v in pdp_variants:
+                s = v.get("size")
+                if s and s not in seen:
+                    seen.append(s)
+            sizes = seen
+        if not sizes:
+            # fallback apparel sizes
+            sizes = ["XS", "S", "M", "L", "XL"]
+
         variants_blocks: list[str] = []
         all_images: list[str] = []
         lead_image = ""
         lead_hover = ""
+        any_in_stock = False
 
         for cname in colour_names:
             meta = raw_by.get(cname) or raw_by_l.get(cname.lower())
-            if not meta:
-                for k, v in raw_by.items():
-                    if cname.lower() in k.lower() or k.lower() in cname.lower():
-                        meta = v
-                        break
             cslug = slugify(cname if not meta else meta["color"])
             gallery = list_gallery(pid, cslug)
             if not gallery and meta:
@@ -227,7 +221,10 @@ def main() -> None:
                 pdir = IMG_ROOT / pid
                 if pdir.exists():
                     for subdir in sorted(pdir.iterdir()):
-                        if subdir.is_dir():
+                        if subdir.is_dir() and (
+                            subdir.name == cslug
+                            or cname.lower().replace(" ", "-") in subdir.name
+                        ):
                             gallery = list_gallery(pid, subdir.name)
                             if gallery:
                                 cslug = subdir.name
@@ -241,8 +238,25 @@ def main() -> None:
                 if g not in all_images:
                     all_images.append(g)
 
-            color_ko = t(cname) or cname
-            for size in sizes:
+            color_ko = colour_name_ko(cname)
+            # If PDP has per-colour size list from variants, use those sizes for this colour
+            colour_sizes = sizes
+            if pdp_variants:
+                colour_sizes = []
+                for v in pdp_variants:
+                    if v.get("color") == cname and v.get("size"):
+                        if v["size"] not in colour_sizes:
+                            colour_sizes.append(v["size"])
+                if not colour_sizes:
+                    colour_sizes = sizes
+
+            for size in colour_sizes:
+                if stock_map:
+                    in_stock = stock_map.get((cname, size), False)
+                else:
+                    in_stock = True
+                if in_stock:
+                    any_in_stock = True
                 vid = f"axa-{pid.lower()}-{cslug}-{size.replace('.', '_').replace('/', '-')}"
                 v_lines = [
                     "      {",
@@ -260,7 +274,7 @@ def main() -> None:
                     f"        images: {js_json(gallery)},",
                     f"        hoverImage: {js_str(gallery[1] if len(gallery) > 1 else gallery[0])},",
                     f"        sourceUrl: {js_str(p.get('url') or '')},",
-                    "        inStock: true,",
+                    f"        inStock: {'true' if in_stock else 'false'},",
                     f"        colorKey: {js_str(cslug)},",
                     f"        colorNameKo: {js_str(color_ko)},",
                     f"        size: {js_str(size)},",
@@ -288,7 +302,7 @@ def main() -> None:
         )
         accent = ACCENTS[idx % len(ACCENTS)]
         style_id = f"axa-{pid.lower()}"
-        chart = size_chart(gender)
+        chart = chart_for(name, gender, sizes)
         badge = "Sale" if compare else ("New" if p.get("isNew") else None)
 
         block = [
@@ -324,6 +338,7 @@ def main() -> None:
             f"    sourceUrl: {js_str(p.get('url') or '')},",
             f"    registeredAt: {js_str(registered)},",
             f'    editTier: {js_str("new" if badge == "New" else "bestseller")},',
+            f"    inStock: {'true' if any_in_stock else 'false'},",
             f"    storySections: {js_json(story)},",
             f"    featuresKo: {js_json(features_ko)},",
             "    techSpecs: [],",
