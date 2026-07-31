@@ -97,6 +97,27 @@ export function BannerCarousel({
     return () => clearInterval(id);
   }, [slides.length, goTo]);
 
+  /**
+   * PC: overflow-x carousels trap the mouse wheel. Forward vertical wheel
+   * to the page so scrolling works while the pointer is over Weekend Movement.
+   */
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
+    if (!fine.matches) return;
+
+    const onWheel = (e: WheelEvent) => {
+      pause();
+      if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
+      e.preventDefault();
+      window.scrollBy({ top: e.deltaY, left: 0, behavior: "auto" });
+    };
+
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, [pause]);
+
   if (slides.length === 0) return null;
 
   return (
@@ -110,7 +131,6 @@ export function BannerCarousel({
         className="banner-carousel__viewport"
         onPointerDown={pause}
         onTouchStart={pause}
-        onWheel={pause}
       >
         {slides.map((slide, i) => (
           <a
