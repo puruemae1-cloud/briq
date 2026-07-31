@@ -38,6 +38,40 @@ def t(text: str | None) -> str:
     return _KO.get(s, s)
 
 
+def colour_name_ko(cname: str) -> str:
+    """Arc'teryx colourways stay English; only basic colours may use KO."""
+    basic = {
+        "Black": "블랙",
+        "White": "화이트",
+        "Navy": "네이비",
+        "Grey": "그레이",
+        "Gray": "그레이",
+        "Red": "레드",
+        "Blue": "블루",
+        "Green": "그린",
+        "Brown": "브라운",
+        "Beige": "베이지",
+        "Orange": "오렌지",
+        "Yellow": "옐로우",
+        "Purple": "퍼플",
+        "Pink": "핑크",
+    }
+    raw = (cname or "").strip()
+    if not raw:
+        return raw
+    if "/" in raw:
+        parts = re.split(r"\s*/\s*", raw)
+        return " / ".join(colour_name_ko(p) for p in parts if p)
+    if raw in basic:
+        return basic[raw]
+    cached = _KO.get(raw)
+    if cached and cached == raw:
+        return raw
+    if cached and raw in basic:
+        return cached
+    return raw
+
+
 def parse_gbp(val) -> float:
     if val is None:
         return 0.0
@@ -317,7 +351,7 @@ def main() -> None:
                 if g not in all_images:
                     all_images.append(g)
 
-            color_ko = t(cname) or cname
+            color_ko = colour_name_ko(cname)
             for size in sizes:
                 vid = f"axo-{pid.lower()}-{cslug}-{size.replace('.', '_').replace('/', '-')}"
                 v_lines = [
