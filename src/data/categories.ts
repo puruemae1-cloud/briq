@@ -102,6 +102,8 @@ export type SubcategoryId =
   | "ax-shoes-womens"
   | "ax-shoes-mens"
   | "arcteryx"
+  | "ax-womens"
+  | "ax-mens"
   | "ax-outlet"
   | "ax-outlet-womens"
   | "ax-outlet-mens"
@@ -880,7 +882,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "arcteryx-shoes": ["ax-shoes-womens", "ax-shoes-mens"],
   "ax-shoes-womens": ["ax-shoes-womens"],
   "ax-shoes-mens": ["ax-shoes-mens"],
-  "arcteryx": ["ax-outlet", "ax-outlet-womens", "ax-outlet-mens"],
+  "arcteryx": [
+    "ax-womens",
+    "ax-mens",
+    "ax-outlet",
+    "ax-outlet-womens",
+    "ax-outlet-mens",
+  ],
+  "ax-womens": ["ax-womens"],
+  "ax-mens": ["ax-mens"],
   "ax-outlet": ["ax-outlet-womens", "ax-outlet-mens"],
   "ax-outlet-womens": ["ax-outlet-womens"],
   "ax-outlet-mens": ["ax-outlet-mens"],
@@ -964,6 +974,18 @@ export const navCategories: NavCategory[] = [
         labelKo: "아크테릭스",
         href: "/shop?category=luxury&sub=arcteryx",
         children: [
+          {
+            id: "ax-womens",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=ax-womens",
+            navLeaf: true,
+          },
+          {
+            id: "ax-mens",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=ax-mens",
+            navLeaf: true,
+          },
           {
             id: "ax-outlet",
             labelKo: "아울렛",

@@ -4,6 +4,7 @@ import { cwProducts } from "@/data/cw/cw-products";
 import { ggCatalogProducts } from "@/data/gg/gg-catalog";
 import { bbCatalogProducts } from "@/data/bb/bb-catalog";
 import { axCatalogProducts } from "@/data/ax/ax-catalog";
+import { axApparelCatalogProducts } from "@/data/ax/ax-apparel-catalog";
 import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
 
 export type ProductStorySection = {
@@ -342,6 +343,7 @@ export const products: Product[] = [
   ...ggCatalogProducts,
   ...bbCatalogProducts,
   ...axCatalogProducts,
+  ...axApparelCatalogProducts,
   ...axOutletCatalogProducts,
 ];
 
