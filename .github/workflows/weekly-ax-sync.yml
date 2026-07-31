@@ -16,7 +16,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 480
+    timeout-minutes: 720
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,7 +33,9 @@ jobs:
           pip install playwright
           python3 -m playwright install --with-deps chromium
 
-      - name: Sync Arc'teryx outdoor apparel (stock + galleries + rebuild)
+      - name: Sync Arc'teryx (apparel + footwear + gear)
+        env:
+          AX_REFRESH_STOCK: "1"
         run: python3 scripts/weekly-ax-stock-sync.py
 
       - name: Commit and push if changed
@@ -43,19 +45,27 @@ jobs:
           git add -A \
             src/data/ax \
             public/products/axa-pdp \
+            public/products/ax-pdp \
+            public/products/axg-pdp \
             scripts/weekly-ax-stock-sync.py \
             scripts/enrich-ax-apparel-playwright.py \
+            scripts/enrich-ax-gear-playwright.py \
             scripts/build-ax-apparel-catalog.py \
+            scripts/build-ax-catalog.py \
+            scripts/build-ax-gear-catalog.py \
             scripts/scrape-ax-outdoor-apparel.py \
-            scripts/ax_size_charts.py
+            scripts/scrape-ax-footwear.py \
+            scripts/scrape-ax-gear.py \
+            scripts/ax_size_charts.py \
+            scripts/ax_size_order.py
           if git diff --staged --quiet; then
             echo "No catalog changes."
             exit 0
           fi
           git commit -m "$(cat <<'EOF'
-          chore: weekly Arc'teryx apparel stock + catalogue sync
+          chore: weekly Arc'teryx catalogue sync
 
-          Refresh colour×size availability, galleries, and PDP copy from arcteryx.com GB outdoor, then rebuild Briq catalogue.
+          Refresh sold-out/restocked variants, add new styles, and remove discontinued products across outdoor apparel, footwear, accessories, and bags.
           EOF
           )"
           git push

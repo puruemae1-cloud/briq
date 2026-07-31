@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import time
 import urllib.request
@@ -24,6 +25,13 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ax/ax-gear-raw.json"
 OUT_PATH = ROOT / "src/data/ax/ax-gear-pdp-cache.json"
 IMG_ROOT = ROOT / "public/products/axg-pdp"
+
+REFRESH_STOCK = os.environ.get("AX_REFRESH_STOCK", "").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
 
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -316,7 +324,13 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", default="", help="Comma-separated SKUs")
     ap.add_argument("--skip-images", action="store_true")
+    ap.add_argument(
+        "--refresh",
+        action="store_true",
+        help="Re-fetch PDPs even when cached (stock sync)",
+    )
     args = ap.parse_args()
+    refresh = bool(args.refresh or REFRESH_STOCK)
 
     raw = json.loads(RAW_PATH.read_text())
     products = raw["products"]
@@ -346,10 +360,11 @@ def main() -> None:
             pid = p["id"]
             existing = cache.get(pid) or {}
             if (
-                existing.get("variants")
+                not refresh
+                and not args.only
+                and existing.get("variants")
                 and existing.get("colourImages")
                 and not existing.get("error")
-                and not args.only
             ):
                 print(f"[{i+1}/{len(products)}] {pid} skip (cached)", flush=True)
                 continue
@@ -374,7 +389,7 @@ def main() -> None:
                     flush=True,
                 )
             OUT_PATH.write_text(json.dumps(cache, indent=2, ensure_ascii=False) + "\n")
-            time.sleep(2.5)
+            time.sleep(0.5 if refresh else 2.0)
 
         browser.close()
 

@@ -197,27 +197,41 @@ export default async function ShopPage({ searchParams }: Props) {
               </div>
             ) : null}
 
-            {nestedRows.map((row, rowIndex) => (
-              <div
-                key={`nested-${rowIndex}-${row.map((n) => n.id).join("-")}`}
-                className="category-row category-row--sub category-row--nested"
-              >
-                {row.map((nested) => (
-                  <Link
-                    key={nested.id}
-                    href={buildShopHref({
-                      category,
-                      sub: nested.id,
-                      sort,
-                    })}
-                    scroll={false}
-                    className={chipClass(nested, sub, pathIds)}
-                  >
-                    {nested.labelKo}
-                  </Link>
-                ))}
-              </div>
-            ))}
+            {nestedRows.map((row, rowIndex) => {
+              const parent = openPath?.[rowIndex];
+              return (
+                <div
+                  key={`nested-${rowIndex}-${row.map((n) => n.id).join("-")}`}
+                  className="category-nest"
+                >
+                  {parent ? (
+                    <p className="category-nest__label">
+                      <span className="category-nest__brand">
+                        {parent.labelKo}
+                      </span>
+                      <span className="category-nest__rule" aria-hidden />
+                      <span className="category-nest__hint">하위 컬렉션</span>
+                    </p>
+                  ) : null}
+                  <div className="category-row category-row--sub category-row--nested category-row--nest-chips">
+                    {row.map((nested) => (
+                      <Link
+                        key={nested.id}
+                        href={buildShopHref({
+                          category,
+                          sub: nested.id,
+                          sort,
+                        })}
+                        scroll={false}
+                        className={chipClass(nested, sub, pathIds)}
+                      >
+                        {nested.labelKo}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
 
             <div className="shop-browse__controls" aria-label="상품 정렬 필터">
               {sort !== "orders" ? (

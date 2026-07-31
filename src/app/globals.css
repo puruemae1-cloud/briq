@@ -297,13 +297,26 @@ img {
 }
 
 .nav-dropdown__group {
-  padding: 0.1rem 0 0.25rem;
+  padding: 0.15rem 0 0.35rem;
+}
+
+.nav-dropdown__group + .nav-dropdown__group {
+  border-top: 1px solid rgba(11, 18, 16, 0.08);
+  margin-top: 0.15rem;
+  padding-top: 0.35rem;
 }
 
 .nav-dropdown__parent {
   font-weight: 700 !important;
   letter-spacing: 0.02em;
   color: var(--ink) !important;
+}
+
+.nav-dropdown__nest {
+  margin-top: 0.05rem;
+  padding: 0.1rem 0 0.15rem;
+  border-left: 1px solid rgba(31, 77, 58, 0.28);
+  margin-left: 0.9rem;
 }
 
 .nav-dropdown__nest a {
@@ -313,7 +326,7 @@ img {
 }
 
 .nav-dropdown__nest--d1 > a {
-  padding-left: 1.15rem;
+  padding-left: 0.75rem;
 }
 
 .nav-dropdown__nest--d2 > a {
@@ -362,12 +375,80 @@ img {
   padding-left: 0;
 }
 
+/* Brand → leaf collection rail (Arc'teryx 여성용/남성용/아울렛 등) */
+.category-nest {
+  margin: 0.15rem 0 1.05rem;
+  padding: 0.7rem 0.85rem 0.85rem 0.95rem;
+  border-left: 2px solid var(--accent);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 77, 58, 0.07) 0%,
+    rgba(31, 77, 58, 0.02) 42%,
+    transparent 78%
+  );
+}
+
+.category-nest__label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.65rem;
+  min-width: 0;
+}
+
+.category-nest__brand {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.category-nest__rule {
+  flex: 1 1 auto;
+  height: 1px;
+  min-width: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(31, 77, 58, 0.35),
+    rgba(11, 18, 16, 0.08)
+  );
+}
+
+.category-nest__hint {
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(11, 18, 16, 0.42);
+}
+
+.category-row--nest-chips {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0;
+}
+
 .chip--nested {
   font-size: 0.8rem;
   opacity: 0.9;
   white-space: normal;
   line-height: 1.25;
   max-width: 100%;
+}
+
+.category-nest .chip--nested {
+  opacity: 1;
+  border-color: rgba(31, 77, 58, 0.22);
+  background: rgba(247, 248, 245, 0.92);
+}
+
+.category-nest .chip--nested.is-active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
 }
 
 /* Clearance — oxblood + champagne gold (PC + mobile app) */
@@ -656,6 +737,37 @@ a.chip[href*="sub=gg-sale"].is-active {
   font-size: 0.96rem;
   font-weight: 600;
   color: rgba(11, 18, 16, 0.78);
+}
+
+.mobile-drawer__brand {
+  padding: 0.15rem 0 0.35rem;
+}
+
+.mobile-drawer__brand + .mobile-drawer__brand {
+  border-top: 1px solid rgba(11, 18, 16, 0.06);
+}
+
+.mobile-drawer__sub--brand {
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.mobile-drawer__leaves {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  margin: 0.05rem 0 0.25rem 0.55rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid rgba(31, 77, 58, 0.28);
+}
+
+.mobile-drawer__sub2 {
+  display: block;
+  padding: 0.4rem 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(11, 18, 16, 0.68);
 }
 
 .mobile-drawer__branch--d0 > .mobile-drawer__summary {

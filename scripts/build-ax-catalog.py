@@ -223,7 +223,14 @@ def main() -> None:
         tagline = pdp.get("tagline") or p.get("shortDescription") or ""
         desc_ko = t(tagline) or tagline
 
-        sizes = [str(s) for s in (pdp.get("sizesUk") or [])]
+        sizes = [str(s) for s in (pdp.get("sizesUk") or pdp.get("sizes") or [])]
+        if not sizes and (pdp.get("variants") or []):
+            seen = []
+            for v in pdp.get("variants") or []:
+                s = v.get("size")
+                if s and s not in seen:
+                    seen.append(str(s))
+            sizes = seen
         if not sizes:
             sizes = [str(x) for x in ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"]]
         sizes = sort_ax_sizes(sizes)
@@ -268,6 +275,21 @@ def main() -> None:
 
             color_ko = colour_name_ko(cname)
             for size in sizes:
+                in_stock = True
+                for v in pdp.get("variants") or []:
+                    if v.get("color") == cname and str(v.get("size") or "") == size:
+                        in_stock = bool(v.get("inStock"))
+                        break
+                else:
+                    if pdp.get("variants"):
+                        # colour×size not listed → treat as OOS when matrix exists
+                        matched = [
+                            v
+                            for v in pdp.get("variants") or []
+                            if v.get("color") == cname
+                        ]
+                        if matched:
+                            in_stock = False
                 vid = f"ax-{pid.lower()}-{cslug}-{size.replace('.', '_')}"
                 variants_blocks.append(
                     "\n".join(
@@ -283,7 +305,7 @@ def main() -> None:
                             f"        images: {js_json(gallery)},",
                             f"        hoverImage: {js_str(gallery[1] if len(gallery) > 1 else gallery[0])},",
                             f"        sourceUrl: {js_str(p.get('url') or '')},",
-                            "        inStock: true,",
+                            f"        inStock: {'true' if in_stock else 'false'},",
                             f"        colorKey: {js_str(cslug)},",
                             f"        colorNameKo: {js_str(color_ko)},",
                             f"        size: {js_str(size)},",
