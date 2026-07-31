@@ -101,6 +101,13 @@ export type SubcategoryId =
   | "arcteryx-shoes"
   | "ax-shoes-womens"
   | "ax-shoes-mens"
+  | "arcteryx"
+  | "ax-outlet"
+  | "ax-outlet-womens"
+  | "ax-outlet-mens"
+  | "arcteryx-accessories"
+  | "ax-acc-womens"
+  | "ax-acc-mens"
   | "bb-shoes-womens"
   | "bb-women-shoes"
   | "bb-women-sneakers"
@@ -873,6 +880,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "arcteryx-shoes": ["ax-shoes-womens", "ax-shoes-mens"],
   "ax-shoes-womens": ["ax-shoes-womens"],
   "ax-shoes-mens": ["ax-shoes-mens"],
+  "arcteryx": ["ax-outlet", "ax-outlet-womens", "ax-outlet-mens"],
+  "ax-outlet": ["ax-outlet-womens", "ax-outlet-mens"],
+  "ax-outlet-womens": ["ax-outlet-womens"],
+  "ax-outlet-mens": ["ax-outlet-mens"],
+  "arcteryx-accessories": ["ax-acc-womens", "ax-acc-mens"],
+  "ax-acc-womens": ["ax-acc-womens"],
+  "ax-acc-mens": ["ax-acc-mens"],
   "bb-shoes-womens": [...BB_WOMEN_SHOE_IDS],
   "bb-women-shoes": [...BB_WOMEN_SHOE_IDS],
   "bb-shoes-mens": [...BB_MEN_SHOE_IDS],
@@ -945,6 +959,31 @@ export const navCategories: NavCategory[] = [
     labelKo: "명품 하이엔드 의류",
     href: "/shop?category=luxury",
     children: [
+      {
+        id: "arcteryx",
+        labelKo: "아크테릭스",
+        href: "/shop?category=luxury&sub=arcteryx",
+        children: [
+          {
+            id: "ax-outlet",
+            labelKo: "아울렛",
+            href: "/shop?category=luxury&sub=ax-outlet",
+            navLeaf: true,
+            children: [
+              {
+                id: "ax-outlet-womens",
+                labelKo: "여성용",
+                href: "/shop?category=luxury&sub=ax-outlet-womens",
+              },
+              {
+                id: "ax-outlet-mens",
+                labelKo: "남성용",
+                href: "/shop?category=luxury&sub=ax-outlet-mens",
+              },
+            ],
+          },
+        ],
+      },
       {
         id: "burberry",
         labelKo: "버버리",
@@ -1475,6 +1514,25 @@ export const navCategories: NavCategory[] = [
     labelKo: "악세서리",
     href: "/shop?category=accessories",
     children: [
+      {
+        id: "arcteryx-accessories",
+        labelKo: "아크테릭스",
+        href: "/shop?category=accessories&sub=arcteryx-accessories",
+        children: [
+          {
+            id: "ax-acc-womens",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=ax-acc-womens",
+            navLeaf: true,
+          },
+          {
+            id: "ax-acc-mens",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=ax-acc-mens",
+            navLeaf: true,
+          },
+        ],
+      },
       {
         id: "burberry-accessories",
         labelKo: "버버리",

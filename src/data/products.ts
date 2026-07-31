@@ -4,6 +4,7 @@ import { cwProducts } from "@/data/cw/cw-products";
 import { ggCatalogProducts } from "@/data/gg/gg-catalog";
 import { bbCatalogProducts } from "@/data/bb/bb-catalog";
 import { axCatalogProducts } from "@/data/ax/ax-catalog";
+import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -341,6 +342,7 @@ export const products: Product[] = [
   ...ggCatalogProducts,
   ...bbCatalogProducts,
   ...axCatalogProducts,
+  ...axOutletCatalogProducts,
 ];
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
@@ -476,7 +478,8 @@ function isAxShopFilter(expanded?: string[]) {
     (id) =>
       id.startsWith("ax-") ||
       id === "arcteryx-shoes" ||
-      id === "arcteryx",
+      id === "arcteryx" ||
+      id === "arcteryx-accessories",
   );
 }
 
