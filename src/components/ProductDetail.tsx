@@ -11,6 +11,7 @@ import { ProductPurchaseNotice } from "@/components/ProductPurchaseNotice";
 import { ProductStorySections } from "@/components/ProductStorySections";
 import { ProductTechSpecs } from "@/components/ProductTechSpecs";
 import { SizeChartControl } from "@/components/SizeChartControl";
+import { ShareLinkButton } from "@/components/ShareLinkButton";
 import type { Product, ProductVariant } from "@/data/products";
 import {
   formatKrw,
@@ -295,7 +296,15 @@ export function ProductDetail({
 
         <div className="product-detail__info">
           <p className="product-card__brand">{product.brand}</p>
-          <h1>{product.nameKo}</h1>
+          <div className="product-detail__title-row">
+            <h1>{product.nameKo}</h1>
+            <ShareLinkButton
+              title={`${product.brand} · ${product.nameKo}`}
+              url={`/product/${product.id}`}
+              compact
+              className="product-detail__share"
+            />
+          </div>
           {selected ? (
             <p className="product-detail__color-name">
               {optionLabel}

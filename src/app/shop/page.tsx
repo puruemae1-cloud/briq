@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
+import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { ShopProductGrid } from "@/components/ShopProductGrid";
 import {
   categoryLabel,
@@ -137,7 +138,20 @@ export default async function ShopPage({ searchParams }: Props) {
         <div className="shop-hero__shade" aria-hidden />
         <div className="shop-hero__content">
           <p className="shop-hero__eyebrow">{heroEyebrow}</p>
-          <h1 className="shop-hero__title">{heroTitle}</h1>
+          <div className="shop-hero__title-row">
+            <h1 className="shop-hero__title">{heroTitle}</h1>
+            <ShareLinkButton
+              title={`Briq · ${heroTitle}`}
+              url={buildShopHref({
+                category,
+                sub,
+                q: params.q,
+                sort: isNewArrivals ? "new" : sort,
+              })}
+              compact
+              className="shop-hero__share"
+            />
+          </div>
           {heroSupport ? (
             <p className="shop-hero__support">{heroSupport}</p>
           ) : null}
@@ -146,8 +160,19 @@ export default async function ShopPage({ searchParams }: Props) {
 
       <section className="section shop-browse">
         <div className="section__head">
-          <div>
+          <div className="section__head-title">
             <h2>{title}</h2>
+            <ShareLinkButton
+              title={`Briq · ${title}`}
+              url={buildShopHref({
+                category,
+                sub,
+                q: params.q,
+                sort: isNewArrivals ? "new" : sort,
+              })}
+              compact
+              className="shop-browse__share"
+            />
           </div>
         </div>
 

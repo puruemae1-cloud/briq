@@ -69,6 +69,10 @@ _KO: dict[str, str] = {}
 if CACHE_PATH.exists():
     _KO = json.loads(CACHE_PATH.read_text())
 
+_KO_NORM: dict[str, str] = {
+    re.sub(r"\s+", " ", k).strip(): v for k, v in _KO.items()
+}
+
 
 def t(text: str | None) -> str:
     if not text:
@@ -76,7 +80,9 @@ def t(text: str | None) -> str:
     s = str(text).strip()
     s = re.sub(r"<[^>]+>", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    return _KO.get(s, s)
+    if s in _KO:
+        return _KO[s]
+    return _KO_NORM.get(s, s)
 
 
 def slugify(text: str) -> str:
@@ -121,6 +127,8 @@ class ListHTMLParser(HTMLParser):
         elif tag == "p":
             self._in_p = True
             self._buf = []
+        elif tag in ("br", "hr") and (self._in_li or self._in_p):
+            self._buf.append(" ")
 
     def handle_endtag(self, tag):
         if tag == "li" and self._in_li:
