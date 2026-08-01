@@ -297,6 +297,12 @@ img {
   background: rgba(11, 18, 16, 0.05);
 }
 
+.nav-dropdown__brand {
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+  color: var(--ink) !important;
+}
+
 .nav-dropdown__group {
   padding: 0.15rem 0 0.35rem;
 }

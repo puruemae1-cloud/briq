@@ -11,32 +11,18 @@ function brandLinkClass(id: string, extra?: string) {
   return [extra, clearance].filter(Boolean).join(" ") || undefined;
 }
 
-/** Brand row with one nested leaf level (e.g. Arc'teryx → 여성용/남성용/아울렛). */
+/** Top nav dropdown: brand names only (subcategories live on the shop page). */
 function BrandLinks({ items }: { items: NavChild[] }) {
   return (
     <>
       {items.map((child) => (
-        <div key={child.id} className="nav-dropdown__group">
-          <Link
-            href={child.href}
-            className={brandLinkClass(child.id, "nav-dropdown__parent")}
-          >
-            {child.labelKo}
-          </Link>
-          {child.children?.length ? (
-            <div className="nav-dropdown__nest nav-dropdown__nest--d1">
-              {child.children.map((leaf) => (
-                <Link
-                  key={leaf.id}
-                  href={leaf.href}
-                  className={brandLinkClass(leaf.id)}
-                >
-                  {leaf.labelKo}
-                </Link>
-              ))}
-            </div>
-          ) : null}
-        </div>
+        <Link
+          key={child.id}
+          href={child.href}
+          className={brandLinkClass(child.id, "nav-dropdown__brand")}
+        >
+          {child.labelKo}
+        </Link>
       ))}
     </>
   );
@@ -137,42 +123,20 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                       전체 보기
                     </a>
                     {c.children.map((child) => (
-                      <div key={child.id} className="mobile-drawer__brand">
-                        <a
-                          href={child.href}
-                          className={[
-                            "mobile-drawer__sub mobile-drawer__sub--brand",
-                            child.id === "cw-clearance" || child.id === "gg-sale"
-                              ? "nav-link--clearance"
-                              : "",
-                          ]
-                            .filter(Boolean)
-                            .join(" ")}
-                        >
-                          {child.labelKo}
-                        </a>
-                        {child.children?.length ? (
-                          <div className="mobile-drawer__leaves">
-                            {child.children.map((leaf) => (
-                              <a
-                                key={leaf.id}
-                                href={leaf.href}
-                                className={[
-                                  "mobile-drawer__sub2",
-                                  leaf.id === "cw-clearance" ||
-                                  leaf.id === "gg-sale"
-                                    ? "nav-link--clearance"
-                                    : "",
-                                ]
-                                  .filter(Boolean)
-                                  .join(" ")}
-                              >
-                                {leaf.labelKo}
-                              </a>
-                            ))}
-                          </div>
-                        ) : null}
-                      </div>
+                      <a
+                        key={child.id}
+                        href={child.href}
+                        className={[
+                          "mobile-drawer__sub mobile-drawer__sub--brand",
+                          child.id === "cw-clearance" || child.id === "gg-sale"
+                            ? "nav-link--clearance"
+                            : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                      >
+                        {child.labelKo}
+                      </a>
                     ))}
                   </div>
                 </details>
