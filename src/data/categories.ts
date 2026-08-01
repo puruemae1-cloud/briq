@@ -1902,61 +1902,6 @@ export const navCategories: NavCategory[] = [
     href: "/shop?category=accessories",
     children: [
       {
-        id: "arcteryx-accessories",
-        labelKo: "아크테릭스",
-        href: "/shop?category=accessories&sub=arcteryx-accessories",
-        children: [
-          {
-            id: "ax-acc-womens",
-            labelKo: "여성용",
-            href: "/shop?category=accessories&sub=ax-acc-womens",
-            navLeaf: true,
-          },
-          {
-            id: "ax-acc-mens",
-            labelKo: "남성용",
-            href: "/shop?category=accessories&sub=ax-acc-mens",
-            navLeaf: true,
-          },
-        ],
-      },
-      {
-        id: "london-undercover",
-        labelKo: "런던언더커버",
-        href: "/shop?category=accessories&sub=london-undercover",
-        children: [
-          {
-            id: "umbrellas",
-            labelKo: "우산",
-            href: "/shop?category=accessories&sub=umbrellas",
-            navLeaf: true,
-            children: [
-              {
-                id: "lu-auto-compact",
-                labelKo: "오토컴팩트",
-                href: "/shop?category=accessories&sub=lu-auto-compact",
-              },
-              {
-                id: "lu-telescopic",
-                labelKo: "텔레스코픽",
-                href: "/shop?category=accessories&sub=lu-telescopic",
-              },
-              {
-                id: "lu-full-length",
-                labelKo: "장우산",
-                href: "/shop?category=accessories&sub=lu-full-length",
-              },
-            ],
-          },
-          {
-            id: "lu-lifestyle",
-            labelKo: "라이프스타일",
-            href: "/shop?category=accessories&sub=lu-lifestyle",
-            navLeaf: true,
-          },
-        ],
-      },
-      {
         id: "paul-smith-accessories",
         labelKo: "폴 스미스",
         href: "/shop?category=accessories&sub=paul-smith-accessories",
@@ -2083,6 +2028,61 @@ export const navCategories: NavCategory[] = [
                 href: "/shop?category=accessories&sub=ps-acc-other",
               },
             ],
+          },
+        ],
+      },
+      {
+        id: "arcteryx-accessories",
+        labelKo: "아크테릭스",
+        href: "/shop?category=accessories&sub=arcteryx-accessories",
+        children: [
+          {
+            id: "ax-acc-womens",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=ax-acc-womens",
+            navLeaf: true,
+          },
+          {
+            id: "ax-acc-mens",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=ax-acc-mens",
+            navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "london-undercover",
+        labelKo: "런던언더커버",
+        href: "/shop?category=accessories&sub=london-undercover",
+        children: [
+          {
+            id: "umbrellas",
+            labelKo: "우산",
+            href: "/shop?category=accessories&sub=umbrellas",
+            navLeaf: true,
+            children: [
+              {
+                id: "lu-auto-compact",
+                labelKo: "오토컴팩트",
+                href: "/shop?category=accessories&sub=lu-auto-compact",
+              },
+              {
+                id: "lu-telescopic",
+                labelKo: "텔레스코픽",
+                href: "/shop?category=accessories&sub=lu-telescopic",
+              },
+              {
+                id: "lu-full-length",
+                labelKo: "장우산",
+                href: "/shop?category=accessories&sub=lu-full-length",
+              },
+            ],
+          },
+          {
+            id: "lu-lifestyle",
+            labelKo: "라이프스타일",
+            href: "/shop?category=accessories&sub=lu-lifestyle",
+            navLeaf: true,
           },
         ],
       },
