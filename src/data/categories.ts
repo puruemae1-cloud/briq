@@ -110,6 +110,11 @@ export type SubcategoryId =
   | "arcteryx-accessories"
   | "ax-acc-womens"
   | "ax-acc-mens"
+  | "umbrellas"
+  | "london-undercover"
+  | "lu-auto-compact"
+  | "lu-telescopic"
+  | "lu-full-length"
   | "arcteryx-bags"
   | "ax-bags-womens"
   | "ax-bags-mens"
@@ -807,7 +812,7 @@ export type NavChild = {
   labelKo: string;
   href: string;
   children?: NavChild[];
-  /** Header/drawer: link only — nested children stay for shop filter chips. */
+  /** When true, shop treats this node as a leaf filter; children still nest in header. */
   navLeaf?: boolean;
 };
 
@@ -900,6 +905,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "arcteryx-accessories": ["ax-acc-womens", "ax-acc-mens"],
   "ax-acc-womens": ["ax-acc-womens"],
   "ax-acc-mens": ["ax-acc-mens"],
+  "umbrellas": ["lu-auto-compact", "lu-telescopic", "lu-full-length"],
+  "london-undercover": ["lu-auto-compact", "lu-telescopic", "lu-full-length"],
+  "lu-auto-compact": ["lu-auto-compact"],
+  "lu-telescopic": ["lu-telescopic"],
+  "lu-full-length": ["lu-full-length"],
   "arcteryx-bags": ["ax-bags-womens", "ax-bags-mens"],
   "ax-bags-womens": ["ax-bags-womens"],
   "ax-bags-mens": ["ax-bags-mens"],
@@ -1577,6 +1587,36 @@ export const navCategories: NavCategory[] = [
             labelKo: "남성용",
             href: "/shop?category=accessories&sub=ax-acc-mens",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "umbrellas",
+        labelKo: "우산",
+        href: "/shop?category=accessories&sub=umbrellas",
+        children: [
+          {
+            id: "london-undercover",
+            labelKo: "런던언더커버",
+            href: "/shop?category=accessories&sub=london-undercover",
+            navLeaf: true,
+            children: [
+              {
+                id: "lu-auto-compact",
+                labelKo: "오토컴팩트",
+                href: "/shop?category=accessories&sub=lu-auto-compact",
+              },
+              {
+                id: "lu-telescopic",
+                labelKo: "텔레스코픽",
+                href: "/shop?category=accessories&sub=lu-telescopic",
+              },
+              {
+                id: "lu-full-length",
+                labelKo: "장우산",
+                href: "/shop?category=accessories&sub=lu-full-length",
+              },
+            ],
           },
         ],
       },

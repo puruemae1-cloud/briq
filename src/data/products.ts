@@ -7,6 +7,7 @@ import { axCatalogProducts } from "@/data/ax/ax-catalog";
 import { axApparelCatalogProducts } from "@/data/ax/ax-apparel-catalog";
 import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
 import { axGearCatalogProducts } from "@/data/ax/ax-gear-catalog";
+import { luCatalogProducts } from "@/data/lu/lu-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -57,6 +58,8 @@ export type ProductVariant = {
   bbCollections?: SubcategoryId[];
   /** Arc'teryx colourway PLP memberships (per colour). */
   axCollections?: SubcategoryId[];
+  /** London Undercover colourway PLP memberships (per colour). */
+  luCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -95,6 +98,8 @@ export type Product = {
   bbCollections?: SubcategoryId[];
   /** Arc'teryx footwear PLP memberships (men/women). */
   axCollections?: SubcategoryId[];
+  /** London Undercover umbrella PLP memberships. */
+  luCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -347,6 +352,7 @@ export const products: Product[] = [
   ...axApparelCatalogProducts,
   ...axOutletCatalogProducts,
   ...axGearCatalogProducts,
+  ...luCatalogProducts,
 ];
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
@@ -641,6 +647,100 @@ export function expandAxColourwayCards(
   return out;
 }
 
+function isLuShopFilter(expanded?: string[]) {
+  return Boolean(
+    expanded?.some(
+      (c) =>
+        c === "umbrellas" ||
+        c === "london-undercover" ||
+        c.startsWith("lu-"),
+    ),
+  );
+}
+
+/** London Undercover PLPs list each colourway as its own card. */
+export function expandLuColourwayCards(
+  list: Product[],
+  expanded?: string[],
+): Product[] {
+  if (!isLuShopFilter(expanded)) return list;
+
+  const out: Product[] = [];
+  for (const product of list) {
+    if (!product.luCollections?.length || !product.variants?.length) {
+      out.push(product);
+      continue;
+    }
+
+    const styleInStock = product.variants.some((v) => v.inStock);
+    const byColor = new Map<string, NonNullable<Product["variants"]>>();
+    for (const variant of product.variants) {
+      const key = variant.colorKey;
+      if (!key) continue;
+      const bucket = byColor.get(key);
+      if (bucket) bucket.push(variant);
+      else byColor.set(key, [variant]);
+    }
+
+    if (byColor.size <= 1) {
+      const only = byColor.size === 1 ? [...byColor.values()][0] : null;
+      const cols = only?.[0]?.luCollections ?? product.luCollections;
+      if (cols?.some((c) => expanded!.includes(c))) {
+        out.push(
+          only
+            ? {
+                ...product,
+                luCollections: cols,
+                shopColorKey: only[0]?.colorKey,
+                image: only[0]?.image || product.image,
+                images: only[0]?.images || product.images,
+                hoverImage: only[0]?.hoverImage || product.hoverImage,
+                price: only[0]?.price ?? product.price,
+                compareAtPrice: only[0]?.compareAtPrice,
+                gbpPrice: only[0]?.gbpPrice ?? product.gbpPrice,
+                inStock: styleInStock,
+              }
+            : product,
+        );
+      }
+      continue;
+    }
+
+    for (const [colorKey, variants] of byColor) {
+      const cols = variants[0]?.luCollections ?? product.luCollections;
+      if (!cols?.some((c) => expanded!.includes(c))) continue;
+
+      const inStock = variants.filter((v) => v.inStock);
+      const priced = (inStock.length ? inStock : variants)
+        .slice()
+        .sort((a, b) => a.price - b.price);
+      const lead = priced[0] ?? variants[0];
+      const compareAt =
+        lead.compareAtPrice && lead.compareAtPrice > lead.price
+          ? lead.compareAtPrice
+          : undefined;
+
+      out.push({
+        ...product,
+        name: `${product.name} — ${lead.colorNameKo || lead.name}`,
+        nameKo: `${product.nameKo} — ${lead.colorNameKo || lead.nameKo}`,
+        image: lead.image || product.image,
+        images: lead.images || product.images,
+        hoverImage: lead.hoverImage || product.hoverImage,
+        price: lead.price,
+        compareAtPrice: compareAt,
+        gbpPrice: lead.gbpPrice,
+        luCollections: cols,
+        variants,
+        shopColorKey: colorKey,
+        sourceUrl: lead.sourceUrl || product.sourceUrl,
+        inStock: styleInStock,
+      });
+    }
+  }
+  return out;
+}
+
 export function getProductsByCategory(category?: string, sub?: string) {
   let list = products;
   if (category && category !== "all") {
@@ -654,17 +754,21 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.ggCollections?.some((c) => expanded.includes(c))) return true;
       if (p.bbCollections?.some((c) => expanded.includes(c))) return true;
       if (p.axCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.luCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.axCollections?.some((c) => expanded.includes(c))))
         return true;
+      if (p.variants?.some((v) => v.luCollections?.some((c) => expanded.includes(c))))
+        return true;
       return false;
     });
     list = expandGgColourwayCards(list, expanded);
     list = expandBbColourwayCards(list, expanded);
     list = expandAxColourwayCards(list, expanded);
+    list = expandLuColourwayCards(list, expanded);
   }
   return list;
 }
