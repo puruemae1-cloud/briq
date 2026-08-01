@@ -367,6 +367,7 @@ def main() -> None:
                 and not args.only
                 and existing.get("variants")
                 and existing.get("colourImages")
+                and (existing.get("sections") or existing.get("features"))
                 and not existing.get("error")
             ):
                 print(f"[{i+1}/{len(products)}] {pid} skip (cached)", flush=True)

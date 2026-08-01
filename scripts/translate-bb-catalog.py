@@ -57,6 +57,82 @@ PHRASES = [
     ("Debuted on the Burberry", "버버리"),
     ("runway", "런웨이"),
     ("Trench Coat", "트렌치 코트"),
+    ("Car Coat", "카 코트"),
+    ("Heritage Trench", "헤리티지 트렌치"),
+    ("Kensington Trench", "켄싱턴 트렌치"),
+    ("Chelsea Trench", "첼시 트렌치"),
+    ("Waterloo Trench", "워털루 트렌치"),
+    ("Camden Trench", "캠든 트렌치"),
+    ("Islington Trench", "이즐링턴 트렌치"),
+    ("Belmont Trench", "벨몬트 트렌치"),
+    ("Mayfair Trench", "메이페어 트렌치"),
+    ("Newbury Parka", "뉴베리 파카"),
+    ("Cotton Gabardine", "코튼 개버딘"),
+    ("Tropical Gabardine", "트로피컬 개버딘"),
+    ("Technical Cotton", "테크니컬 코튼"),
+    ("Cotton Blend", "코튼 블렌드"),
+    ("Leather Trim", "레더 트림"),
+    ("Mid-length", "미들 기장"),
+    ("Long-length", "롱 기장"),
+    ("Extra-long", "엑스트라 롱"),
+    ("Extra-short", "엑스트라 숏"),
+    ("Short-length", "숏 기장"),
+    ("Double-breasted", "더블브레스티드"),
+    ("Single-breasted", "싱글브레스티드"),
+    ("Storm shield", "스톰 실드"),
+    ("Detachable hood", "탈부착 후드"),
+    ("Detachable Warmer", "탈부착 워머"),
+    ("Cropped", "크롭"),
+    ("Mayfair", "메이페어"),
+    ("Kensington", "켄싱턴"),
+    ("Chelsea", "첼시"),
+    ("Waterloo", "워털루"),
+    ("Camden", "캠든"),
+    ("Islington", "이즐링턴"),
+    ("Belmont", "벨몬트"),
+    ("Newbury", "뉴베리"),
+    ("Ladybrook", "레이디브룩"),
+    ("Swarby", "스워비"),
+    ("Foxfield", "폭스필드"),
+    ("Castleford", "캐슬포드"),
+    ("Fitzrovia", "피츠로비아"),
+    ("Leadenham", "레든햄"),
+    ("Harrington", "해링턴"),
+    ("Tickhill", "틱힐"),
+    ("Ellingham", "엘링엄"),
+    ("Pembury", "펨버리"),
+    ("Parkbury", "파크버리"),
+    ("Belgravia", "벨그라비아"),
+    ("Summerside", "서머사이드"),
+    ("Stonehaven", "스톤헤이븐"),
+    ("Tillydrine", "틸리드린"),
+    ("Hastings", "헤이스팅스"),
+    ("Lawshall", "로셜"),
+    ("Ridgewood", "리지우드"),
+    ("Bloomsbury", "블룸즈버리"),
+    ("Heritage", "헤리티지"),
+    ("Suede", "스웨이드"),
+    ("Warmer", "워머"),
+    ("Hooded", "후디드"),
+    ("Parka", "파카"),
+    ("Trench", "트렌치"),
+    ("Collar", "칼라"),
+    ("Geometric", "지오메트릭"),
+    ("Embroidered", "자수"),
+    ("Coated", "코팅"),
+    ("Fringed", "프린지"),
+    ("Paisley", "페이즐리"),
+    ("Raffia-effect", "라피아 이펙트"),
+    ("Python", "파이톤"),
+    ("Tarot", "타로"),
+    ("Lace", "레이스"),
+    ("Print", "프린트"),
+    ("Blend", "블렌드"),
+    ("lined", "안감"),
+    ("Long", "롱"),
+    ("Short", "숏"),
+    ("Lightweight", "라이트웨이트"),
+    ("Relaxed fit", "릴랙스드 핏"),
     ("Puffer Jacket", "패딩 재킷"),
     ("Quilted Jacket", "퀼팅 재킷"),
     ("Bomber Jacket", "봄버 재킷"),
@@ -333,9 +409,17 @@ def translate_text(text: str) -> str:
         if s.lower() == en.lower():
             return ko
 
-    # material-ish
-    if re.search(r"\d+\s*%", s) or any(
-        w in s.lower() for w in ("lining", "upper", "trim", "sole", "heel", "outer")
+    # Material composition only — never product titles that merely mention "trim".
+    looks_like_product_name = bool(
+        re.search(
+            r"(?i)\b(trench|coat|jacket|parka|cape|dress|skirt|trousers?|"
+            r"shirt|hoodie|bag|scarf|sneaker|boot|sandal|blazer|cardigan)\b",
+            s,
+        )
+    )
+    if not looks_like_product_name and (
+        re.search(r"\d+\s*%", s)
+        or any(w in s.lower() for w in ("lining", "upper", "trim", "sole", "heel", "outer"))
     ):
         return translate_material(s)
 
@@ -347,6 +431,25 @@ def translate_text(text: str) -> str:
     out = re.sub(r"^An\s+", "", out)
     out = naturalize(out)
     return polish(out)
+
+
+def still_has_en_apparel(text: str) -> bool:
+    return bool(
+        re.search(
+            r"\b(Trench|Coat|Jacket|Cape|Parka|Hooded|Gabardine|"
+            r"Belmont|Kensington|Chelsea|Waterloo|Camden|Islington|"
+            r"Mayfair|Newbury|Ladybrook|Swarby|Heritage|Cashmere|Suede|"
+            r"Foxfield|Castleford|Fitzrovia|Leadenham|Harrington|Tickhill|"
+            r"Ellingham|Pembury|Parkbury|Belgravia|Summerside|Stonehaven|"
+            r"Tillydrine|Hastings|Lawshall|Ridgewood|Bloomsbury|"
+            r"Lightweight|Mid-length|Long-length|Warmer|Car Coat|"
+            r"Double-breasted|Single-breasted|Leather Trim|Cotton Blend|"
+            r"Long|Short|Collar|Geometric|Blend|Embroidered|Coated|"
+            r"Fringed|Print|Paisley|lined|Kisses|Beige|follows)\b",
+            text or "",
+            re.I,
+        )
+    )
 
 
 def main() -> None:
@@ -382,19 +485,43 @@ def main() -> None:
                         strings.add(piece.strip())
 
     for s in sorted(strings):
-        # Always regenerate from dictionaries so naturalize improvements apply.
-        # Keep prior MT only when it is already mostly Korean.
         prev_v = cache.get(s)
-        if prev_v and sum(1 for c in prev_v if "\uac00" <= c <= "\ud7a3") > len(prev_v) * 0.35:
+        hangul_ratio = (
+            sum(1 for c in prev_v if "\uac00" <= c <= "\ud7a3") / max(len(prev_v), 1)
+            if prev_v
+            else 0
+        )
+        if prev_v and hangul_ratio > 0.35 and not still_has_en_apparel(prev_v):
             cache[s] = naturalize(prev_v)
         else:
             cache[s] = translate_text(s)
 
-    CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
-    # quality peek
-    sample_keys = [k for k in cache if "Belted Check Wool Dress" in k or k.startswith("A tailored")]
+    # Scrub any remaining EN apparel tokens in cache values
+    for k, v in list(cache.items()):
+        if still_has_en_apparel(v) or still_has_en_apparel(k):
+            fresh = translate_text(k)
+            if fresh and (still_has_en_apparel(v) or not still_has_en_apparel(fresh)):
+                cache[k] = fresh
+            # Also scrub leftover tokens on already-Korean mixed values
+            if still_has_en_apparel(cache[k]):
+                scrubbed = cache[k]
+                for en, ko in PHRASES:
+                    scrubbed = re.sub(
+                        rf"(?<![A-Za-z]){re.escape(en)}(?![A-Za-z])",
+                        ko,
+                        scrubbed,
+                        flags=re.I,
+                    )
+                cache[k] = polish(naturalize(scrubbed))
+
+    CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n")
+    sample_keys = [
+        k
+        for k in cache
+        if "Trench" in k or "Belmont" in k or "Newbury Parka" in k
+    ]
     print(f"Wrote {CACHE_PATH} entries={len(cache)}")
-    for k in sample_keys[:3]:
+    for k in sample_keys[:6]:
         print(" ·", k[:70], "=>", cache[k][:110])
 
 

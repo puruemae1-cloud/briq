@@ -181,6 +181,93 @@ BB_WOMEN_SHOE_SIZE_CHART = {
     ],
 }
 
+# Burberry apparel body charts (UK / IT) — coats, trench, jackets, ready-to-wear
+BB_WOMEN_APPAREL_UK_CHART = {
+    "id": "bb-women-apparel-uk",
+    "titleKo": "버버리 여성 의류 사이즈 차트 (UK)",
+    "noteKo": "신체 치수(cm) 기준입니다. 트렌치·코트·재킷 등 UK 숫자 사이즈에 해당합니다. 두 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
+    "headers": ["UK", "가슴", "허리", "엉덩이"],
+    "rows": [
+        ["02", "78", "59", "85"],
+        ["04", "80", "61", "87"],
+        ["06", "83", "64", "90"],
+        ["08", "86", "67", "93"],
+        ["10", "89", "70", "96"],
+        ["12", "94", "75", "101"],
+        ["14", "99", "80", "106"],
+        ["16", "104", "85", "111"],
+        ["18", "111", "93", "118"],
+        ["20", "116", "98", "123"],
+    ],
+}
+
+BB_WOMEN_APPAREL_ALPHA_CHART = {
+    "id": "bb-women-apparel-alpha",
+    "titleKo": "버버리 여성 의류 사이즈 차트 (알파)",
+    "noteKo": "신체 치수(cm) 기준입니다. XXS–XXXL 알파 사이즈 상품에 해당합니다.",
+    "headers": ["사이즈", "가슴", "허리", "엉덩이"],
+    "rows": [
+        ["XXS", "78", "59", "85"],
+        ["XS", "81", "62", "88"],
+        ["S", "86", "67", "93"],
+        ["M", "91", "72", "98"],
+        ["L", "97", "78", "104"],
+        ["XL", "104", "85", "111"],
+        ["XXL", "111", "93", "118"],
+        ["XXXL", "118", "100", "125"],
+    ],
+}
+
+BB_MEN_APPAREL_IT_CHART = {
+    "id": "bb-men-apparel-it",
+    "titleKo": "버버리 남성 의류 사이즈 차트 (IT)",
+    "noteKo": "신체 치수(cm) 기준입니다. 트렌치·코트·재킷 등 IT 숫자 사이즈에 해당합니다.",
+    "headers": ["IT", "가슴", "허리"],
+    "rows": [
+        ["44", "88", "76"],
+        ["46", "92", "80"],
+        ["48", "96", "84"],
+        ["50", "100", "88"],
+        ["52", "104", "92"],
+        ["54", "108", "96"],
+        ["56", "112", "100"],
+        ["58", "116", "104"],
+        ["60", "120", "108"],
+    ],
+}
+
+BB_MEN_APPAREL_ALPHA_CHART = {
+    "id": "bb-men-apparel-alpha",
+    "titleKo": "버버리 남성 의류 사이즈 차트 (알파)",
+    "noteKo": "신체 치수(cm) 기준입니다. XS–XXXL 알파 사이즈 상품에 해당합니다.",
+    "headers": ["사이즈", "가슴", "허리"],
+    "rows": [
+        ["XS", "88", "76"],
+        ["S", "94", "82"],
+        ["M", "100", "88"],
+        ["L", "106", "94"],
+        ["XL", "114", "102"],
+        ["XXL", "122", "110"],
+        ["XXXL", "130", "118"],
+    ],
+}
+
+BB_KIDS_APPAREL_CHART = {
+    "id": "bb-kids-apparel",
+    "titleKo": "버버리 키즈 의류 사이즈 차트",
+    "noteKo": "연령·키(cm) 참고 가이드입니다. 상품별 표기 사이즈를 우선하세요.",
+    "headers": ["사이즈", "연령", "키(cm)", "가슴"],
+    "rows": [
+        ["3Y", "3세", "98", "55"],
+        ["4Y", "4세", "104", "57"],
+        ["6Y", "6세", "116", "61"],
+        ["8Y", "8세", "128", "66"],
+        ["10Y", "10세", "140", "71"],
+        ["12Y", "12세", "152", "76"],
+        ["14Y", "14세", "164", "81"],
+    ],
+}
+
 
 def is_kids_product(cols: list[str]) -> bool:
     return any(str(c).startswith("bb-kids-") for c in cols)
@@ -192,6 +279,95 @@ def apply_kids_surcharge(price: int | None, cols: list[str]) -> int | None:
     if is_kids_product(cols):
         return int(price) + KIDS_PRICE_SURCHARGE_KRW
     return price
+
+
+def _is_men_cols(cols: list[str]) -> bool:
+    return any(
+        str(c).startswith("bb-men")
+        or str(c) in {"bb-gifts-him", "bb-scarves-men"}
+        for c in cols
+    )
+
+
+def _is_women_cols(cols: list[str]) -> bool:
+    return any(
+        str(c).startswith("bb-women")
+        or str(c) in {"bb-gifts-her", "bb-scarves-women"}
+        for c in cols
+    )
+
+
+def size_chart_for_collections(cols: list[str], size_labels: list[str] | None = None) -> dict | None:
+    """Pick shoe or apparel size chart for Burberry collections."""
+    labels = [str(s).upper() for s in (size_labels or [])]
+    numeric_uk = any(re.fullmatch(r"0?\d{1,2}", s) for s in labels)
+    numeric_it = any(re.fullmatch(r"4\d|5\d|6\d", s) for s in labels)
+    alpha = any(
+        s in {"XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "3XL", "4XL"}
+        for s in labels
+    )
+
+    shoe = shoe_size_chart_for_collections(cols)
+    if shoe:
+        return shoe
+
+    if is_kids_product(cols) or any(str(c).startswith("bb-kids") for c in cols):
+        return BB_KIDS_APPAREL_CHART
+
+    # Apparel / trench / coats / ready-to-wear
+    apparelish = any(
+        any(
+            k in str(c)
+            for k in (
+                "trench",
+                "coat",
+                "jacket",
+                "clothes",
+                "dress",
+                "knit",
+                "trouser",
+                "skirt",
+                "top",
+                "shirt",
+                "polo",
+                "hoodie",
+                "sweat",
+                "latest",
+                "classics",
+                "summer",
+                "poncho",
+                "cape",
+                "outerwear",
+                "ready-to-wear",
+                "bb-girl",
+                "bb-boy",
+                "tailoring",
+                "quilt",
+                "down",
+                "parka",
+            )
+        )
+        for c in cols
+    ) or bool(labels)
+
+    if not apparelish and not labels:
+        return None
+
+    if _is_men_cols(cols) and not _is_women_cols(cols):
+        if numeric_it or (not alpha and numeric_uk is False and any("trench" in str(c) or "coat" in str(c) for c in cols)):
+            # Men trench/coats are typically IT 44–60
+            if numeric_it or any("trench" in str(c) or "coat" in str(c) for c in cols):
+                return BB_MEN_APPAREL_IT_CHART
+        if alpha or not numeric_it:
+            return BB_MEN_APPAREL_ALPHA_CHART
+        return BB_MEN_APPAREL_IT_CHART
+
+    # Default women / unisex gifts-her style
+    if numeric_uk or any("trench" in str(c) for c in cols):
+        return BB_WOMEN_APPAREL_UK_CHART
+    if alpha:
+        return BB_WOMEN_APPAREL_ALPHA_CHART
+    return BB_WOMEN_APPAREL_UK_CHART if _is_women_cols(cols) else BB_MEN_APPAREL_IT_CHART
 
 
 def shoe_size_chart_for_collections(cols: list[str]) -> dict | None:
@@ -580,7 +756,14 @@ def main() -> None:
                 "storySections": story or None,
                 "featuresKo": features or None,
                 "techSpecs": tech or None,
-                "sizeChart": shoe_size_chart_for_collections(cols_sorted),
+                "sizeChart": size_chart_for_collections(
+                    cols_sorted,
+                    [
+                        str(v.get("size") or "")
+                        for v in flat_variants
+                        if v.get("size") and v.get("size") != "프리사이즈"
+                    ],
+                ),
                 "variants": flat_variants,
                 "inStock": any(v.get("inStock") for v in flat_variants),
             }

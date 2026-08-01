@@ -90,34 +90,6 @@ export function ProductGallery({
                 {safeIndex + 1} / {list.length}
               </span>
             ) : null}
-            {!soldOut ? (
-              <span className="product-gallery-zoom-hint" aria-hidden>
-                <svg viewBox="0 0 24 24" width="18" height="18">
-                  <circle
-                    cx="10.5"
-                    cy="10.5"
-                    r="6.5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  />
-                  <path
-                    d="M15.5 15.5 L20 20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M10.5 7.5 v6 M7.5 10.5 h6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </span>
-            ) : null}
           </ProductImage>
         </button>
 

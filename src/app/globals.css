@@ -38,8 +38,10 @@ html {
   /* Never use smooth scrolling on touch — it stutters on direction changes */
   scroll-behavior: auto;
   max-width: 100%;
+  width: 100%;
   -webkit-text-size-adjust: 100%;
   overscroll-behavior-x: none;
+  overflow-x: clip;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -53,13 +55,10 @@ body {
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
-  /*
-    Do NOT set overflow-x:clip|hidden on shell/main alone.
-    One-axis clip forces the other axis to auto → nested scrollport,
-    and the page then pans freely in all directions on iOS.
-    Keep width ≤ 100vw instead, and only contain overscroll on X.
-  */
+  overflow-x: clip;
   overscroll-behavior-x: none;
+  /* Vertical page scroll only — carousels opt back into pan-x locally */
+  touch-action: pan-y;
   color: var(--ink);
   background: #f7f8f5;
   font-family: var(--font-body), sans-serif;
@@ -92,6 +91,7 @@ img {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .shell__main {
@@ -99,6 +99,7 @@ img {
   min-width: 0;
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .site-header {
@@ -1733,6 +1734,7 @@ body:has(.nav-drawer-toggle:checked) {
   overscroll-behavior-x: contain;
   /* Allow page scroll to continue past this carousel on wheel */
   overscroll-behavior-y: auto;
+  touch-action: pan-x pan-y;
   scrollbar-width: none;
 }
 
@@ -2673,6 +2675,7 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
 }
 
 /* Must follow .category-row — otherwise grid-auto-flow:column wins and clips CW nested chips */
@@ -2682,7 +2685,8 @@ body:has(.nav-drawer-toggle:checked) {
   flex-wrap: wrap;
   grid-auto-flow: unset;
   grid-auto-columns: unset;
-  overflow-x: visible;
+  overflow-x: clip;
+  max-width: 100%;
   gap: 0.5rem 0.55rem;
 }
 
@@ -5679,36 +5683,6 @@ body:has(.pdp-dock) .back-to-top {
 
 .product-detail__media-hit:disabled {
   cursor: default;
-}
-
-.product-gallery-zoom-hint {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  color: rgba(11, 18, 16, 0.82);
-  display: grid;
-  place-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.18s ease;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-}
-
-.product-detail__media-wrap:hover .product-gallery-zoom-hint,
-.product-detail__media-hit:focus-visible .product-gallery-zoom-hint {
-  opacity: 1;
-}
-
-@media (hover: none) {
-  .product-gallery-zoom-hint {
-    opacity: 0.85;
-  }
 }
 
 .product-gallery-nav {
