@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+from ax_size_charts import chart_for  # noqa: E402
 from ax_size_order import sort_ax_sizes  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-outlet-raw.json"
@@ -134,7 +135,13 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     return out
 
 
-def size_chart_for(kind: str, genders: list[str]) -> dict | None:
+def size_chart_for(
+    kind: str,
+    genders: list[str],
+    *,
+    name: str = "",
+    sizes: list[str] | None = None,
+) -> dict | None:
     note = (
         "발 길이를 재어 가장 가깝거나 같거나 큰 수치를 고르세요. "
         "Briq 표기 사이즈는 Arc'teryx UK 기준입니다."
@@ -175,20 +182,17 @@ def size_chart_for(kind: str, genders: list[str]) -> dict | None:
             "rows": rows,
         }
     if kind == "clothing":
-        return {
-            "id": "ax-apparel",
-            "titleKo": "아크테릭스 의류 사이즈 가이드",
-            "noteKo": "상품에 표기된 사이즈(예: S, M, MR, LR)를 선택하세요. R은 Regular 기장입니다.",
-            "headers": ["Size", "설명"],
-            "rows": [
-                ["XS", "Extra Small"],
-                ["S / SR", "Small / Small Regular"],
-                ["M / MR", "Medium / Medium Regular"],
-                ["L / LR", "Large / Large Regular"],
-                ["XL / XLR", "Extra Large / XL Regular"],
-                ["XXL / 2XR", "2X Large"],
-            ],
-        }
+        # Official Arc'teryx CM body-measurement charts (jacket vs pant, alpha vs numeric)
+        n = (name or "").lower()
+        if "womens" in genders and "mens" not in genders:
+            gender = "womens"
+        elif "mens" in genders and "womens" not in genders:
+            gender = "mens"
+        elif "women" in n:
+            gender = "womens"
+        else:
+            gender = "mens"
+        return chart_for(name, gender, sizes or [])
     return None
 
 
@@ -403,7 +407,7 @@ def main() -> None:
         )
         accent = ACCENTS[idx % len(ACCENTS)]
         style_id = f"axo-{pid.lower()}"
-        chart = size_chart_for(kind, genders)
+        chart = size_chart_for(kind, genders, name=name, sizes=sizes)
         badge = "Sale" if compare else ("New" if p.get("isNew") else None)
 
         block = [

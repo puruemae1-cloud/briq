@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""CM-based Arc'teryx apparel size charts (from official GB sizing pages)."""
+"""CM-based Arc'teryx apparel size charts (from official sizing pages)."""
 
 from __future__ import annotations
+
+import re
 
 
 WOMENS_JACKET_CM = {
@@ -24,7 +26,7 @@ WOMENS_PANT_NUMERIC_CM = {
     "id": "ax-womens-pant-numeric-cm",
     "titleKo": "아크테릭스 여성 팬츠·쇼츠 사이즈 (숫자, cm)",
     "noteKo": "허리·엉덩이·안솔기 길이는 cm 기준입니다. S=Short, R=Regular, T=Tall 기장입니다. 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
-    "headers": ["사이즈", "허리", "엉덩이", "Regular 기장", "Short 기장", "Tall 기장"],
+    "headers": ["사이즈", "허리", "엉덩이", "Regular 안솔기", "Short 안솔기", "Tall 안솔기"],
     "rows": [
         ["00", "61", "85", "78", "73", "85"],
         ["0", "64", "88", "78", "73", "86"],
@@ -43,7 +45,7 @@ WOMENS_PANT_ALPHA_CM = {
     "id": "ax-womens-pant-alpha-cm",
     "titleKo": "아크테릭스 여성 팬츠·쇼츠 사이즈 (알파, cm)",
     "noteKo": "신체 치수(cm) 기준입니다. Short / Regular / Tall 기장 옵션은 상품별로 다를 수 있습니다.",
-    "headers": ["사이즈", "허리", "엉덩이", "Regular 기장", "Short 기장", "Tall 기장"],
+    "headers": ["사이즈", "허리", "엉덩이", "Regular 안솔기", "Short 안솔기", "Tall 안솔기"],
     "rows": [
         ["XXS", "60", "84", "78", "73", "85"],
         ["XS", "65", "89", "78", "73", "86"],
@@ -76,7 +78,7 @@ MENS_PANT_NUMERIC_CM = {
     "id": "ax-mens-pant-numeric-cm",
     "titleKo": "아크테릭스 남성 팬츠·쇼츠 사이즈 (숫자, cm)",
     "noteKo": "허리·엉덩이·안솔기 길이는 cm 기준입니다. R=Regular 등 기장 표기는 상품 옵션을 확인하세요.",
-    "headers": ["사이즈", "허리", "엉덩이", "Regular 기장", "Short 기장", "Tall 기장"],
+    "headers": ["사이즈", "허리", "엉덩이", "Regular 안솔기", "Short 안솔기", "Tall 안솔기"],
     "rows": [
         ["28", "76", "90", "79", "74", "87"],
         ["29", "79", "93", "80", "75", "87"],
@@ -94,7 +96,7 @@ MENS_PANT_ALPHA_CM = {
     "id": "ax-mens-pant-alpha-cm",
     "titleKo": "아크테릭스 남성 팬츠·쇼츠 사이즈 (알파, cm)",
     "noteKo": "신체 치수(cm) 기준입니다. Short / Regular / Tall 기장 옵션은 상품별로 다를 수 있습니다.",
-    "headers": ["사이즈", "허리", "엉덩이", "Regular 기장", "Short 기장", "Tall 기장"],
+    "headers": ["사이즈", "허리", "엉덩이", "Regular 안솔기", "Short 안솔기", "Tall 안솔기"],
     "rows": [
         ["XXS", "69", "83", "78", "73", "86"],
         ["XS", "74", "88", "79", "74", "87"],
@@ -114,9 +116,8 @@ def chart_for(name: str, gender: str, sizes: list[str] | None = None) -> dict:
     is_pant = any(
         k in n for k in ("pant", "short", "tight", "legging", "capri", "skirt", "bib")
     )
-    numeric = any(any(ch.isdigit() for ch in s) for s in sizes) or any(
-        s[:1].isdigit() for s in sizes
-    )
+    # Numeric waist sizes: 00, 0-R, 32, 16-T, etc. (not alpha XS/S/M)
+    numeric = any(re.search(r"\d", s) for s in sizes)
     if is_pant:
         if g == "womens":
             return WOMENS_PANT_NUMERIC_CM if numeric else WOMENS_PANT_ALPHA_CM
