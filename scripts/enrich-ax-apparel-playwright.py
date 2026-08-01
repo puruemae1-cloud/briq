@@ -357,8 +357,17 @@ def compress_new_jpegs(root: Path) -> None:
 
     for p in root.rglob("*.jpg"):
         try:
+            # Skip macOS duplicate names ("1 2.jpg") that sips may create
+            if " " in p.name:
+                try:
+                    p.unlink()
+                except Exception:
+                    pass
+                continue
             if p.stat().st_size < 220_000:
                 continue
+            # Never sips --out to the same path — macOS creates "name 2.jpg"
+            tmp = p.with_suffix(".sips.jpg")
             subprocess.check_call(
                 [
                     "sips",
@@ -370,13 +379,20 @@ def compress_new_jpegs(root: Path) -> None:
                     "68",
                     str(p),
                     "--out",
-                    str(p),
+                    str(tmp),
                 ],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
             )
+            if tmp.exists() and tmp.stat().st_size > 800:
+                tmp.replace(p)
+            elif tmp.exists():
+                tmp.unlink()
         except Exception:
-            pass
+            try:
+                p.with_suffix(".sips.jpg").unlink(missing_ok=True)  # type: ignore[arg-type]
+            except Exception:
+                pass
 
 
 def main() -> None:

@@ -324,6 +324,7 @@ def compress_new_jpegs(root: Path) -> None:
         try:
             if p.stat().st_size < 220_000:
                 continue
+            tmp = p.with_suffix(".sips.jpg")
             subprocess.check_call(
                 [
                     "sips",
@@ -335,11 +336,15 @@ def compress_new_jpegs(root: Path) -> None:
                     "68",
                     str(p),
                     "--out",
-                    str(p),
+                    str(tmp),
                 ],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
             )
+            if tmp.exists() and tmp.stat().st_size > 800:
+                tmp.replace(p)
+            elif tmp.exists():
+                tmp.unlink()
         except Exception:
             pass
 
