@@ -8,6 +8,7 @@ import { axApparelCatalogProducts } from "@/data/ax/ax-apparel-catalog";
 import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
 import { axGearCatalogProducts } from "@/data/ax/ax-gear-catalog";
 import { luCatalogProducts } from "@/data/lu/lu-catalog";
+import { luLifestyleCatalogProducts } from "@/data/lu/lu-lifestyle-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -353,6 +354,7 @@ export const products: Product[] = [
   ...axOutletCatalogProducts,
   ...axGearCatalogProducts,
   ...luCatalogProducts,
+  ...luLifestyleCatalogProducts,
 ];
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */

@@ -115,6 +115,7 @@ export type SubcategoryId =
   | "lu-auto-compact"
   | "lu-telescopic"
   | "lu-full-length"
+  | "lu-lifestyle"
   | "arcteryx-bags"
   | "ax-bags-womens"
   | "ax-bags-mens"
@@ -906,10 +907,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ax-acc-womens": ["ax-acc-womens"],
   "ax-acc-mens": ["ax-acc-mens"],
   "umbrellas": ["lu-auto-compact", "lu-telescopic", "lu-full-length"],
-  "london-undercover": ["lu-auto-compact", "lu-telescopic", "lu-full-length"],
+  "london-undercover": [
+    "lu-auto-compact",
+    "lu-telescopic",
+    "lu-full-length",
+    "lu-lifestyle",
+  ],
   "lu-auto-compact": ["lu-auto-compact"],
   "lu-telescopic": ["lu-telescopic"],
   "lu-full-length": ["lu-full-length"],
+  "lu-lifestyle": ["lu-lifestyle"],
   "arcteryx-bags": ["ax-bags-womens", "ax-bags-mens"],
   "ax-bags-womens": ["ax-bags-womens"],
   "ax-bags-mens": ["ax-bags-mens"],
@@ -1591,14 +1598,14 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-        id: "umbrellas",
-        labelKo: "우산",
-        href: "/shop?category=accessories&sub=umbrellas",
+        id: "london-undercover",
+        labelKo: "런던언더커버",
+        href: "/shop?category=accessories&sub=london-undercover",
         children: [
           {
-            id: "london-undercover",
-            labelKo: "런던언더커버",
-            href: "/shop?category=accessories&sub=london-undercover",
+            id: "umbrellas",
+            labelKo: "우산",
+            href: "/shop?category=accessories&sub=umbrellas",
             navLeaf: true,
             children: [
               {
@@ -1617,6 +1624,12 @@ export const navCategories: NavCategory[] = [
                 href: "/shop?category=accessories&sub=lu-full-length",
               },
             ],
+          },
+          {
+            id: "lu-lifestyle",
+            labelKo: "라이프스타일",
+            href: "/shop?category=accessories&sub=lu-lifestyle",
+            navLeaf: true,
           },
         ],
       },
