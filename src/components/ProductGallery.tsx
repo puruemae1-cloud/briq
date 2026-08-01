@@ -1,7 +1,15 @@
 "use client";
 
-import { useEffect, useCallback, useState } from "react";
+import {
+  useEffect,
+  useCallback,
+  useRef,
+  useState,
+  type TouchEvent,
+} from "react";
 import { ProductImage } from "@/components/ProductImage";
+
+const SWIPE_THRESHOLD = 40;
 
 export function ProductGallery({
   images,
@@ -19,6 +27,8 @@ export function ProductGallery({
   const list = images.length > 0 ? images : [];
   const [active, setActive] = useState(0);
   const [zoomOpen, setZoomOpen] = useState(false);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const swiped = useRef(false);
 
   useEffect(() => {
     setActive(0);
@@ -34,6 +44,30 @@ export function ProductGallery({
       setActive((i) => (i + dir + list.length) % list.length);
     },
     [list.length],
+  );
+
+  const onTouchStart = useCallback((e: TouchEvent) => {
+    const t = e.changedTouches[0];
+    if (!t) return;
+    touchStart.current = { x: t.clientX, y: t.clientY };
+    swiped.current = false;
+  }, []);
+
+  const onTouchEnd = useCallback(
+    (e: TouchEvent) => {
+      const start = touchStart.current;
+      touchStart.current = null;
+      if (!start || list.length < 2) return;
+      const t = e.changedTouches[0];
+      if (!t) return;
+      const dx = t.clientX - start.x;
+      const dy = t.clientY - start.y;
+      if (Math.abs(dx) < SWIPE_THRESHOLD) return;
+      if (Math.abs(dx) <= Math.abs(dy)) return;
+      swiped.current = true;
+      go(dx < 0 ? 1 : -1);
+    },
+    [go, list.length],
   );
 
   useEffect(() => {
@@ -58,6 +92,8 @@ export function ProductGallery({
     <div className="product-detail__gallery">
       <div
         className={`product-detail__media-wrap${soldOut ? " is-sold-out" : ""}`}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         <button
           type="button"
@@ -65,6 +101,10 @@ export function ProductGallery({
           aria-label={soldOut ? alt : "사진 확대 보기"}
           disabled={soldOut}
           onClick={() => {
+            if (swiped.current) {
+              swiped.current = false;
+              return;
+            }
             if (!soldOut) setZoomOpen(true);
           }}
         >
@@ -149,6 +189,14 @@ export function ProductGallery({
           aria-modal="true"
           aria-label="확대 이미지"
           onClick={() => setZoomOpen(false)}
+          onTouchStart={onTouchStart}
+          onTouchEnd={(e) => {
+            onTouchEnd(e);
+            if (swiped.current) {
+              e.stopPropagation();
+              swiped.current = false;
+            }
+          }}
         >
           <button
             type="button"
@@ -190,6 +238,7 @@ export function ProductGallery({
             src={src}
             alt={alt}
             onClick={(e) => e.stopPropagation()}
+            draggable={false}
           />
           {list.length > 1 ? (
             <p className="product-lightbox__count">

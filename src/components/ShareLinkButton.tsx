@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState, type MouseEvent } from "react";
+import { createPortal } from "react-dom";
 import { Check, Share2 } from "lucide-react";
 
 type Props = {
@@ -19,6 +20,22 @@ function resolveUrl(url?: string) {
   return new URL(url, window.location.origin).toString();
 }
 
+async function copyText(text: string) {
+  if (typeof navigator !== "undefined" && navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand("copy");
+  document.body.removeChild(ta);
+}
+
 export function ShareLinkButton({
   title,
   url,
@@ -26,54 +43,65 @@ export function ShareLinkButton({
   compact = false,
 }: Props) {
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const onShare = useCallback(async () => {
-    const href = resolveUrl(url);
-    try {
-      if (typeof navigator !== "undefined" && typeof navigator.share === "function") {
-        await navigator.share({ title, url: href, text: title });
-        return;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const onShare = useCallback(
+    async (e: MouseEvent<HTMLButtonElement>) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const href = resolveUrl(url);
+      try {
+        await copyText(href);
+        setCopied(true);
+        window.setTimeout(() => setCopied(false), 2000);
+      } catch {
+        window.prompt("링크를 복사하세요", href);
       }
-    } catch (err) {
-      if (err instanceof DOMException && err.name === "AbortError") return;
-    }
-
-    try {
-      await navigator.clipboard.writeText(href);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1800);
-    } catch {
-      window.prompt("링크를 복사하세요", href);
-    }
-  }, [title, url]);
+    },
+    [url],
+  );
 
   return (
-    <button
-      type="button"
-      className={[
-        "share-link",
-        compact ? "share-link--compact" : "",
-        copied ? "is-copied" : "",
-        className || "",
-      ]
-        .filter(Boolean)
-        .join(" ")}
-      onClick={onShare}
-      aria-label={copied ? "링크가 복사되었습니다" : "공유하기"}
-      title={copied ? "링크 복사됨" : "공유하기"}
-    >
-      <span className="share-link__mark" aria-hidden>
-        {copied ? (
-          <Check size={compact ? 14 : 15} strokeWidth={2.25} />
-        ) : (
-          <Share2 size={compact ? 14 : 15} strokeWidth={1.75} />
-        )}
-      </span>
-      {!compact ? (
-        <span className="share-link__label">
-          {copied ? "복사됨" : "공유"}
+    <>
+      <button
+        type="button"
+        className={[
+          "share-link",
+          compact ? "share-link--compact" : "",
+          copied ? "is-copied" : "",
+          className || "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        onClick={onShare}
+        aria-label={copied ? "링크가 복사되었습니다" : "링크 복사"}
+        title={copied ? "링크가 복사되었습니다" : "링크 복사"}
+      >
+        <span className="share-link__mark" aria-hidden>
+          {copied ? (
+            <Check size={compact ? 14 : 15} strokeWidth={2.25} />
+          ) : (
+            <Share2 size={compact ? 14 : 15} strokeWidth={1.75} />
+          )}
         </span>
-      ) : null}
-    </button>
+        {!compact ? (
+          <span className="share-link__label">
+            {copied ? "복사됨" : "공유"}
+          </span>
+        ) : null}
+      </button>
+      {mounted && copied
+        ? createPortal(
+            <div className="share-toast" role="status" aria-live="polite">
+              링크가 복사되었습니다
+            </div>,
+            document.body,
+          )
+        : null}
+    </>
   );
 }
