@@ -9,6 +9,7 @@ import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
 import { axGearCatalogProducts } from "@/data/ax/ax-gear-catalog";
 import { luCatalogProducts } from "@/data/lu/lu-catalog";
 import { luLifestyleCatalogProducts } from "@/data/lu/lu-lifestyle-catalog";
+import { psCatalogProducts } from "@/data/ps/ps-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -61,6 +62,8 @@ export type ProductVariant = {
   axCollections?: SubcategoryId[];
   /** London Undercover colourway PLP memberships (per colour). */
   luCollections?: SubcategoryId[];
+  /** Paul Smith PLP memberships. */
+  psCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -101,6 +104,8 @@ export type Product = {
   axCollections?: SubcategoryId[];
   /** London Undercover umbrella PLP memberships. */
   luCollections?: SubcategoryId[];
+  /** Paul Smith PLP memberships. */
+  psCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -355,6 +360,7 @@ export const products: Product[] = [
   ...axGearCatalogProducts,
   ...luCatalogProducts,
   ...luLifestyleCatalogProducts,
+  ...psCatalogProducts,
 ];
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
@@ -757,6 +763,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.bbCollections?.some((c) => expanded.includes(c))) return true;
       if (p.axCollections?.some((c) => expanded.includes(c))) return true;
       if (p.luCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.psCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
@@ -764,6 +771,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.axCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.luCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.psCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });

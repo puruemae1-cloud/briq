@@ -307,7 +307,68 @@ export type SubcategoryId =
   | "bb-gifts-children-baby"
   | "bb-gifts-children-newborn"
   | "bb-gifts-children-accessories"
-  | "bb-gifts-home";
+  | "bb-gifts-home"
+  | "paul-smith"
+  | "ps-men"
+  | "paul-smith-shoes"
+  | "ps-shoes-men"
+  | "paul-smith-accessories"
+  | "ps-acc-men"
+  | "ps-men-all-in-one"
+  | "ps-men-coats"
+  | "ps-men-dressing-gown"
+  | "ps-men-jackets"
+  | "ps-men-jeans"
+  | "ps-men-knitwear"
+  | "ps-men-loungewear"
+  | "ps-men-polos"
+  | "ps-men-pyjamas"
+  | "ps-men-shirts"
+  | "ps-men-shorts"
+  | "ps-men-suits"
+  | "ps-men-sweat-pants"
+  | "ps-men-sweatshirts"
+  | "ps-men-swimwear"
+  | "ps-men-tshirts"
+  | "ps-men-trousers"
+  | "ps-men-underwear"
+  | "ps-men-waistcoats"
+  | "ps-men-tailoring"
+  | "ps-men-other"
+  | "ps-shoes-boots"
+  | "ps-shoes-brogues"
+  | "ps-shoes-derby"
+  | "ps-shoes-espadrilles"
+  | "ps-shoes-loafers"
+  | "ps-shoes-oxford"
+  | "ps-shoes-sandals"
+  | "ps-shoes-care"
+  | "ps-shoes-slides"
+  | "ps-shoes-trainers"
+  | "ps-shoes-other"
+  | "ps-acc-bags"
+  | "ps-acc-belts"
+  | "ps-acc-boots"
+  | "ps-acc-ceramics"
+  | "ps-acc-giftset"
+  | "ps-acc-gloves"
+  | "ps-acc-hats"
+  | "ps-acc-jewellery"
+  | "ps-acc-keyrings"
+  | "ps-acc-knitwear"
+  | "ps-acc-novelty"
+  | "ps-acc-pocket-squares"
+  | "ps-acc-pyjamas"
+  | "ps-acc-scarves"
+  | "ps-acc-slg"
+  | "ps-acc-socks"
+  | "ps-acc-stationery"
+  | "ps-acc-swimwear"
+  | "ps-acc-ties"
+  | "ps-acc-towels"
+  | "ps-acc-umbrellas"
+  | "ps-acc-underwear"
+  | "ps-acc-other";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -808,6 +869,71 @@ export const BB_LUXURY_KIDS_IDS: SubcategoryId[] = [
   ...BB_KIDS_BOYS_APPAREL_IDS,
 ];
 
+
+export const PS_MEN_CLOTHING_IDS: SubcategoryId[] = [
+  "ps-men-all-in-one",
+  "ps-men-coats",
+  "ps-men-dressing-gown",
+  "ps-men-jackets",
+  "ps-men-jeans",
+  "ps-men-knitwear",
+  "ps-men-loungewear",
+  "ps-men-polos",
+  "ps-men-pyjamas",
+  "ps-men-shirts",
+  "ps-men-shorts",
+  "ps-men-suits",
+  "ps-men-sweat-pants",
+  "ps-men-sweatshirts",
+  "ps-men-swimwear",
+  "ps-men-tshirts",
+  "ps-men-trousers",
+  "ps-men-underwear",
+  "ps-men-waistcoats",
+  "ps-men-tailoring",
+  "ps-men-other",
+];
+
+export const PS_MEN_SHOE_IDS: SubcategoryId[] = [
+  "ps-shoes-boots",
+  "ps-shoes-brogues",
+  "ps-shoes-derby",
+  "ps-shoes-espadrilles",
+  "ps-shoes-loafers",
+  "ps-shoes-oxford",
+  "ps-shoes-sandals",
+  "ps-shoes-care",
+  "ps-shoes-slides",
+  "ps-shoes-trainers",
+  "ps-shoes-other",
+];
+
+export const PS_MEN_ACC_IDS: SubcategoryId[] = [
+  "ps-acc-bags",
+  "ps-acc-belts",
+  "ps-acc-boots",
+  "ps-acc-ceramics",
+  "ps-acc-giftset",
+  "ps-acc-gloves",
+  "ps-acc-hats",
+  "ps-acc-jewellery",
+  "ps-acc-keyrings",
+  "ps-acc-knitwear",
+  "ps-acc-novelty",
+  "ps-acc-pocket-squares",
+  "ps-acc-pyjamas",
+  "ps-acc-scarves",
+  "ps-acc-slg",
+  "ps-acc-socks",
+  "ps-acc-stationery",
+  "ps-acc-swimwear",
+  "ps-acc-ties",
+  "ps-acc-towels",
+  "ps-acc-umbrellas",
+  "ps-acc-underwear",
+  "ps-acc-other",
+];
+
 export type NavChild = {
   id: SubcategoryId;
   labelKo: string;
@@ -826,6 +952,13 @@ export type NavCategory = {
 
 /** Expands group subcategory ids (e.g. luxury-shoes → womens/mens leaf ids). */
 export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> = {
+
+  "paul-smith": ["ps-men", ...PS_MEN_CLOTHING_IDS],
+  "ps-men": [...PS_MEN_CLOTHING_IDS],
+  "paul-smith-shoes": ["ps-shoes-men", ...PS_MEN_SHOE_IDS],
+  "ps-shoes-men": [...PS_MEN_SHOE_IDS],
+  "paul-smith-accessories": ["ps-acc-men", ...PS_MEN_ACC_IDS],
+  "ps-acc-men": [...PS_MEN_ACC_IDS],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -1024,6 +1157,126 @@ export const navCategories: NavCategory[] = [
                 id: "ax-outlet-mens",
                 labelKo: "남성용",
                 href: "/shop?category=luxury&sub=ax-outlet-mens",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "paul-smith",
+        labelKo: "폴 스미스",
+        href: "/shop?category=luxury&sub=paul-smith",
+        children: [
+          {
+            id: "ps-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=ps-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-men-all-in-one",
+                labelKo: "올인원",
+                href: "/shop?category=luxury&sub=ps-men-all-in-one",
+              },
+              {
+                id: "ps-men-coats",
+                labelKo: "코트",
+                href: "/shop?category=luxury&sub=ps-men-coats",
+              },
+              {
+                id: "ps-men-dressing-gown",
+                labelKo: "드레싱 가운",
+                href: "/shop?category=luxury&sub=ps-men-dressing-gown",
+              },
+              {
+                id: "ps-men-jackets",
+                labelKo: "재킷",
+                href: "/shop?category=luxury&sub=ps-men-jackets",
+              },
+              {
+                id: "ps-men-jeans",
+                labelKo: "진",
+                href: "/shop?category=luxury&sub=ps-men-jeans",
+              },
+              {
+                id: "ps-men-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=ps-men-knitwear",
+              },
+              {
+                id: "ps-men-loungewear",
+                labelKo: "라운지웨어",
+                href: "/shop?category=luxury&sub=ps-men-loungewear",
+              },
+              {
+                id: "ps-men-polos",
+                labelKo: "폴로 셔츠",
+                href: "/shop?category=luxury&sub=ps-men-polos",
+              },
+              {
+                id: "ps-men-pyjamas",
+                labelKo: "파자마",
+                href: "/shop?category=luxury&sub=ps-men-pyjamas",
+              },
+              {
+                id: "ps-men-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=ps-men-shirts",
+              },
+              {
+                id: "ps-men-shorts",
+                labelKo: "쇼츠",
+                href: "/shop?category=luxury&sub=ps-men-shorts",
+              },
+              {
+                id: "ps-men-suits",
+                labelKo: "수트",
+                href: "/shop?category=luxury&sub=ps-men-suits",
+              },
+              {
+                id: "ps-men-sweat-pants",
+                labelKo: "스웻팬츠",
+                href: "/shop?category=luxury&sub=ps-men-sweat-pants",
+              },
+              {
+                id: "ps-men-sweatshirts",
+                labelKo: "스웻셔츠",
+                href: "/shop?category=luxury&sub=ps-men-sweatshirts",
+              },
+              {
+                id: "ps-men-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=ps-men-swimwear",
+              },
+              {
+                id: "ps-men-tshirts",
+                labelKo: "티셔츠",
+                href: "/shop?category=luxury&sub=ps-men-tshirts",
+              },
+              {
+                id: "ps-men-trousers",
+                labelKo: "트라우저",
+                href: "/shop?category=luxury&sub=ps-men-trousers",
+              },
+              {
+                id: "ps-men-underwear",
+                labelKo: "언더웨어",
+                href: "/shop?category=luxury&sub=ps-men-underwear",
+              },
+              {
+                id: "ps-men-waistcoats",
+                labelKo: "웨이스트코트",
+                href: "/shop?category=luxury&sub=ps-men-waistcoats",
+              },
+              {
+                id: "ps-men-tailoring",
+                labelKo: "테일러링",
+                href: "/shop?category=luxury&sub=ps-men-tailoring",
+              },
+              {
+                id: "ps-men-other",
+                labelKo: "기타 의류",
+                href: "/shop?category=luxury&sub=ps-men-other",
               },
             ],
           },
@@ -1473,6 +1726,76 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "paul-smith-shoes",
+        labelKo: "폴 스미스",
+        href: "/shop?category=shoes&sub=paul-smith-shoes",
+        children: [
+          {
+            id: "ps-shoes-men",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=ps-shoes-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-shoes-boots",
+                labelKo: "부츠",
+                href: "/shop?category=shoes&sub=ps-shoes-boots",
+              },
+              {
+                id: "ps-shoes-brogues",
+                labelKo: "브로그",
+                href: "/shop?category=shoes&sub=ps-shoes-brogues",
+              },
+              {
+                id: "ps-shoes-derby",
+                labelKo: "더비 슈즈",
+                href: "/shop?category=shoes&sub=ps-shoes-derby",
+              },
+              {
+                id: "ps-shoes-espadrilles",
+                labelKo: "에스파드리유",
+                href: "/shop?category=shoes&sub=ps-shoes-espadrilles",
+              },
+              {
+                id: "ps-shoes-loafers",
+                labelKo: "로퍼",
+                href: "/shop?category=shoes&sub=ps-shoes-loafers",
+              },
+              {
+                id: "ps-shoes-oxford",
+                labelKo: "옥스포드",
+                href: "/shop?category=shoes&sub=ps-shoes-oxford",
+              },
+              {
+                id: "ps-shoes-sandals",
+                labelKo: "샌들",
+                href: "/shop?category=shoes&sub=ps-shoes-sandals",
+              },
+              {
+                id: "ps-shoes-care",
+                labelKo: "슈케어",
+                href: "/shop?category=shoes&sub=ps-shoes-care",
+              },
+              {
+                id: "ps-shoes-slides",
+                labelKo: "슬라이드",
+                href: "/shop?category=shoes&sub=ps-shoes-slides",
+              },
+              {
+                id: "ps-shoes-trainers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=ps-shoes-trainers",
+              },
+              {
+                id: "ps-shoes-other",
+                labelKo: "기타 슈즈",
+                href: "/shop?category=shoes&sub=ps-shoes-other",
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: "burberry-shoes",
         labelKo: "버버리",
         href: "/shop?category=shoes&sub=burberry-shoes",
@@ -1630,6 +1953,136 @@ export const navCategories: NavCategory[] = [
             labelKo: "라이프스타일",
             href: "/shop?category=accessories&sub=lu-lifestyle",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "paul-smith-accessories",
+        labelKo: "폴 스미스",
+        href: "/shop?category=accessories&sub=paul-smith-accessories",
+        children: [
+          {
+            id: "ps-acc-men",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=ps-acc-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-acc-bags",
+                labelKo: "백",
+                href: "/shop?category=accessories&sub=ps-acc-bags",
+              },
+              {
+                id: "ps-acc-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=ps-acc-belts",
+              },
+              {
+                id: "ps-acc-boots",
+                labelKo: "부츠",
+                href: "/shop?category=accessories&sub=ps-acc-boots",
+              },
+              {
+                id: "ps-acc-ceramics",
+                labelKo: "세라믹",
+                href: "/shop?category=accessories&sub=ps-acc-ceramics",
+              },
+              {
+                id: "ps-acc-giftset",
+                labelKo: "기프트 세트",
+                href: "/shop?category=accessories&sub=ps-acc-giftset",
+              },
+              {
+                id: "ps-acc-gloves",
+                labelKo: "글러브",
+                href: "/shop?category=accessories&sub=ps-acc-gloves",
+              },
+              {
+                id: "ps-acc-hats",
+                labelKo: "모자",
+                href: "/shop?category=accessories&sub=ps-acc-hats",
+              },
+              {
+                id: "ps-acc-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=ps-acc-jewellery",
+              },
+              {
+                id: "ps-acc-keyrings",
+                labelKo: "키링",
+                href: "/shop?category=accessories&sub=ps-acc-keyrings",
+              },
+              {
+                id: "ps-acc-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=accessories&sub=ps-acc-knitwear",
+              },
+              {
+                id: "ps-acc-novelty",
+                labelKo: "노블티",
+                href: "/shop?category=accessories&sub=ps-acc-novelty",
+              },
+              {
+                id: "ps-acc-pocket-squares",
+                labelKo: "포켓 스퀘어",
+                href: "/shop?category=accessories&sub=ps-acc-pocket-squares",
+              },
+              {
+                id: "ps-acc-pyjamas",
+                labelKo: "파자마",
+                href: "/shop?category=accessories&sub=ps-acc-pyjamas",
+              },
+              {
+                id: "ps-acc-scarves",
+                labelKo: "스카프",
+                href: "/shop?category=accessories&sub=ps-acc-scarves",
+              },
+              {
+                id: "ps-acc-slg",
+                labelKo: "가죽 소품",
+                href: "/shop?category=accessories&sub=ps-acc-slg",
+              },
+              {
+                id: "ps-acc-socks",
+                labelKo: "삭스",
+                href: "/shop?category=accessories&sub=ps-acc-socks",
+              },
+              {
+                id: "ps-acc-stationery",
+                labelKo: "스테이셔너리",
+                href: "/shop?category=accessories&sub=ps-acc-stationery",
+              },
+              {
+                id: "ps-acc-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=accessories&sub=ps-acc-swimwear",
+              },
+              {
+                id: "ps-acc-ties",
+                labelKo: "타이",
+                href: "/shop?category=accessories&sub=ps-acc-ties",
+              },
+              {
+                id: "ps-acc-towels",
+                labelKo: "타월",
+                href: "/shop?category=accessories&sub=ps-acc-towels",
+              },
+              {
+                id: "ps-acc-umbrellas",
+                labelKo: "우산",
+                href: "/shop?category=accessories&sub=ps-acc-umbrellas",
+              },
+              {
+                id: "ps-acc-underwear",
+                labelKo: "언더웨어",
+                href: "/shop?category=accessories&sub=ps-acc-underwear",
+              },
+              {
+                id: "ps-acc-other",
+                labelKo: "기타 악세서리",
+                href: "/shop?category=accessories&sub=ps-acc-other",
+              },
+            ],
           },
         ],
       },
