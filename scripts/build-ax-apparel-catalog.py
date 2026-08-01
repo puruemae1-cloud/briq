@@ -90,9 +90,14 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     d = IMG_ROOT / pid / cslug
     if not d.exists():
         return []
+    # Only strict N.jpg — exclude macOS duplicates like "1 2.jpg" (breaks URLs)
     nums = sorted(
-        [p for p in d.glob("[0-9]*.jpg")],
-        key=lambda p: int(p.stem) if p.stem.isdigit() else 999,
+        [
+            p
+            for p in d.iterdir()
+            if p.is_file() and re.fullmatch(r"\d+\.jpg", p.name, flags=re.I)
+        ],
+        key=lambda p: int(p.stem),
     )
     out = [
         f"/products/axa-pdp/{pid}/{cslug}/{p.name}"
@@ -370,7 +375,7 @@ def main() -> None:
             f"    inStock: {'true' if any_in_stock else 'false'},",
             f"    storySections: {js_json(story)},",
             f"    featuresKo: {js_json(features_ko)},",
-            "    techSpecs: [],",
+            f"    techSpecs: {js_json([{'labelKo': (f.split(':',1)[0] if ':' in f else '특징'), 'valueKo': (f.split(':',1)[1].strip() if ':' in f else f)} for f in features_ko[:16]])},",
             f"    sizeChart: {js_json(chart)},",
             "    variants: [",
             *variants_blocks,

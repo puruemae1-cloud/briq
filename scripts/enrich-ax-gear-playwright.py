@@ -76,6 +76,33 @@ def dismiss_cookies(page) -> None:
         pass
 
 
+
+def colour_gallery_urls(colour: dict) -> list[str]:
+    imgs: list[str] = []
+    def add(u):
+        u = (u or "").strip()
+        if not u or "placeholder" in u.lower():
+            return
+        if not u.startswith("http"):
+            return
+        if u not in imgs:
+            imgs.append(u)
+    for asset in colour.get("imageAssets") or []:
+        if isinstance(asset, dict):
+            add(((asset.get("image") or {}).get("url") or ""))
+            add(asset.get("url"))
+        elif isinstance(asset, str):
+            add(asset)
+    hero = colour.get("heroImage") or {}
+    if isinstance(hero, dict):
+        add(((hero.get("image") or {}).get("url") or ""))
+        add(hero.get("url"))
+    if len(imgs) < 3:
+        blob = json.dumps(colour, ensure_ascii=False)
+        for u in re.findall(r"https://(?:images(?:-dynamic)?\.)[^\"\\]+", blob):
+            add(u)
+    return imgs
+
 def parse_product(prod: dict) -> dict:
     colour_by_id = {}
     colours: list[str] = []
@@ -86,15 +113,7 @@ def parse_product(prod: dict) -> dict:
             continue
         colours.append(label)
         colour_by_id[str(c.get("id"))] = label
-        imgs: list[str] = []
-        for asset in c.get("imageAssets") or []:
-            u = ((asset.get("image") or {}).get("url") or "").strip()
-            if u and u not in imgs:
-                imgs.append(u)
-        hero = ((c.get("heroImage") or {}).get("image") or {}).get("url")
-        if hero and hero not in imgs:
-            imgs.insert(0, hero)
-        colour_images[label] = imgs
+        colour_images[label] = colour_gallery_urls(c)
 
     size_by_id = {}
     sizes: list[str] = []
@@ -225,7 +244,7 @@ def fetch_one(page, url: str) -> dict:
         return {"error": f"goto: {e}", "url": url}
     dismiss_cookies(page)
     try:
-        page.wait_for_selector("#__NEXT_DATA__", timeout=30000)
+        page.wait_for_selector("#__NEXT_DATA__", state="attached", timeout=30000)
     except Exception:
         page.wait_for_timeout(2500)
     try:
@@ -253,7 +272,11 @@ def gallery_count(pid: str, color: str) -> int:
     d = IMG_ROOT / pid / slugify(color)
     if not d.exists():
         return 0
-    return sum(1 for p in d.glob("[0-9]*.jpg") if p.stat().st_size > 800)
+    return sum(
+        1
+        for p in d.iterdir()
+        if p.is_file() and re.fullmatch(r"\d+\.jpg", p.name, flags=re.I) and p.stat().st_size > 800
+    )
 
 
 def download_images(pid: str, colour_images: dict[str, list[str]]) -> None:
@@ -280,7 +303,9 @@ def download_images(pid: str, colour_images: dict[str, list[str]]) -> None:
                 data = r.read()
             if len(data) < 800:
                 return False
-            dest.write_bytes(data)
+            tmp = dest.with_suffix(".tmp.jpg")
+            tmp.write_bytes(data)
+            tmp.replace(dest)
             return True
         except Exception:
             return False

@@ -76,6 +76,47 @@ def dismiss_cookies(page) -> None:
         pass
 
 
+def strip_html(text: str) -> str:
+    s = re.sub(r"<br\s*/?>", "\n", text or "", flags=re.I)
+    s = re.sub(r"</p\s*>", "\n", s, flags=re.I)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = re.sub(r"&nbsp;", " ", s)
+    s = re.sub(r"&amp;", "&", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def colour_gallery_urls(colour: dict) -> list[str]:
+    """Collect real PDP gallery URLs for a colour option (skip placeholders)."""
+    imgs: list[str] = []
+
+    def add(u: str | None) -> None:
+        u = (u or "").strip()
+        if not u or "placeholder" in u.lower():
+            return
+        if not (u.startswith("http://") or u.startswith("https://")):
+            return
+        if u not in imgs:
+            imgs.append(u)
+
+    for asset in colour.get("imageAssets") or []:
+        if isinstance(asset, dict):
+            add(((asset.get("image") or {}).get("url") or ""))
+            add(asset.get("url"))
+        elif isinstance(asset, str):
+            add(asset)
+    hero = colour.get("heroImage") or {}
+    if isinstance(hero, dict):
+        add(((hero.get("image") or {}).get("url") or ""))
+        add(hero.get("url"))
+    # Fallback: any arcteryx image URL nested in the colour blob
+    if len(imgs) < 3:
+        blob = json.dumps(colour, ensure_ascii=False)
+        for u in re.findall(r"https://(?:images(?:-dynamic)?\.)[^\"\\]+", blob):
+            add(u)
+    return imgs
+
+
 def parse_product(prod: dict) -> dict:
     colour_by_id = {}
     colours: list[str] = []
@@ -86,15 +127,7 @@ def parse_product(prod: dict) -> dict:
             continue
         colours.append(label)
         colour_by_id[str(c.get("id"))] = label
-        imgs: list[str] = []
-        for asset in c.get("imageAssets") or []:
-            u = ((asset.get("image") or {}).get("url") or "").strip()
-            if u and u not in imgs:
-                imgs.append(u)
-        hero = ((c.get("heroImage") or {}).get("image") or {}).get("url")
-        if hero and hero not in imgs:
-            imgs.insert(0, hero)
-        colour_images[label] = imgs
+        colour_images[label] = colour_gallery_urls(c)
 
     size_by_id = {}
     sizes: list[str] = []
@@ -128,9 +161,8 @@ def parse_product(prod: dict) -> dict:
 
     # Story content (exclude reviews/Q&A)
     sections: list[dict] = []
-    short = re.sub(r"<[^>]+>", " ", prod.get("shortDescription") or "")
-    short = re.sub(r"\s+", " ", short).strip()
-    long = (prod.get("description") or "").strip()
+    short = strip_html(prod.get("shortDescription") or "")
+    long = strip_html(prod.get("description") or "")
     if long:
         sections.append(
             {
@@ -148,17 +180,17 @@ def parse_product(prod: dict) -> dict:
 
     features: list[dict] = []
     for kf in prod.get("keyFeatures") or []:
-        title = (kf.get("title") or "").strip()
-        body = (kf.get("description") or "").strip()
+        title = strip_html(kf.get("title") or "")
+        body = strip_html(kf.get("description") or "")
         if body:
             features.append({"title": title, "body": body})
     for feat in prod.get("features") or []:
-        label = (feat.get("label") or "").strip()
+        label = strip_html(feat.get("label") or "")
         vals = feat.get("value") or []
         if isinstance(vals, list):
-            body = " · ".join(str(x) for x in vals if x)
+            body = " · ".join(strip_html(str(x)) for x in vals if x)
         else:
-            body = str(vals)
+            body = strip_html(str(vals))
         if body:
             features.append({"title": label, "body": body})
 
@@ -221,7 +253,8 @@ def fetch_one(page, url: str) -> dict:
     page.goto(url, wait_until="domcontentloaded", timeout=90000)
     dismiss_cookies(page)
     try:
-        page.wait_for_selector("#__NEXT_DATA__", timeout=45000)
+        # __NEXT_DATA__ is a hidden <script>; must use attached not visible
+        page.wait_for_selector("#__NEXT_DATA__", state="attached", timeout=45000)
     except Exception:
         page.wait_for_timeout(5000)
     next_data = page.evaluate(
@@ -239,30 +272,64 @@ def fetch_one(page, url: str) -> dict:
     return parse_product(prod)
 
 
+def numbered_jpgs(d: Path) -> list[Path]:
+    if not d.exists():
+        return []
+    out = []
+    for p in d.iterdir():
+        if p.is_file() and re.fullmatch(r"\d+\.jpg", p.name, flags=re.I):
+            if p.stat().st_size > 800:
+                out.append(p)
+    return sorted(out, key=lambda p: int(p.stem))
+
+
 def gallery_count(pid: str, color: str) -> int:
-    d = IMG_ROOT / pid / slugify(color)
+    return len(numbered_jpgs(IMG_ROOT / pid / slugify(color)))
+
+
+def purge_space_named_images(d: Path) -> int:
+    """Remove macOS-style duplicate names like '1 2.jpg' that break URLs."""
+    n = 0
     if not d.exists():
         return 0
-    return sum(1 for p in d.glob("[0-9]*.jpg") if p.stat().st_size > 800)
+    for p in list(d.iterdir()):
+        if p.is_file() and " " in p.name and p.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"}:
+            try:
+                p.unlink()
+                n += 1
+            except Exception:
+                pass
+    return n
 
 
-def download_images(pid: str, colour_images: dict[str, list[str]]) -> None:
+def download_images(
+    pid: str, colour_images: dict[str, list[str]], *, force: bool = False
+) -> None:
     jobs = []
     for color, urls in colour_images.items():
-        if gallery_count(pid, color) >= min(6, len(urls)):
+        urls = [u for u in (urls or []) if u and "placeholder" not in u.lower()]
+        if not urls:
             continue
         cslug = slugify(color)
         d = IMG_ROOT / pid / cslug
         d.mkdir(parents=True, exist_ok=True)
+        purge_space_named_images(d)
+        have = gallery_count(pid, color)
+        want = min(8, len(urls))
+        if not force and have >= want and have >= min(6, want):
+            continue
         for i, url in enumerate(urls[:8], start=1):
-            jobs.append((url, d / f"{i}.jpg"))
-        if urls:
-            jobs.append((urls[0], d / "thumb.jpg"))
+            dest = d / f"{i}.jpg"
+            if force or not dest.exists() or dest.stat().st_size <= 800:
+                jobs.append((url, dest, True))
+            else:
+                jobs.append((url, dest, False))
+        jobs.append((urls[0], d / "thumb.jpg", force or not (d / "thumb.jpg").exists()))
     if not jobs:
         return
 
-    def one(url: str, dest: Path) -> bool:
-        if dest.exists() and dest.stat().st_size > 800:
+    def one(url: str, dest: Path, overwrite: bool) -> bool:
+        if not overwrite and dest.exists() and dest.stat().st_size > 800:
             return True
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/*"})
@@ -270,13 +337,16 @@ def download_images(pid: str, colour_images: dict[str, list[str]]) -> None:
                 data = r.read()
             if len(data) < 800:
                 return False
-            dest.write_bytes(data)
+            # Atomic write avoids macOS creating "1 2.jpg" duplicates
+            tmp = dest.with_suffix(".tmp.jpg")
+            tmp.write_bytes(data)
+            tmp.replace(dest)
             return True
         except Exception:
             return False
 
     with ThreadPoolExecutor(max_workers=10) as ex:
-        futs = [ex.submit(one, u, p) for u, p in jobs]
+        futs = [ex.submit(one, u, p, ow) for u, p, ow in jobs]
         for _ in as_completed(futs):
             pass
 
@@ -317,9 +387,19 @@ def main() -> None:
     ap.add_argument("--only", default="", help="Comma-separated SKUs")
     ap.add_argument("--skip-images", action="store_true")
     ap.add_argument(
+        "--force-images",
+        action="store_true",
+        help="Re-download galleries even when local files exist",
+    )
+    ap.add_argument(
         "--refresh",
         action="store_true",
         help="Re-fetch PDPs even when cached (stock sync)",
+    )
+    ap.add_argument(
+        "--refresh-thin",
+        action="store_true",
+        help="Re-fetch products with thin PDP/missing galleries",
     )
     ap.add_argument("--raw", default="", help="Override raw JSON path")
     ap.add_argument("--out", default="", help="Override PDP cache path")
@@ -359,17 +439,45 @@ def main() -> None:
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
         )
 
+        def is_thin(row: dict) -> bool:
+            if not row or row.get("error"):
+                return True
+            ci = row.get("colourImages") or {}
+            if not ci:
+                return True
+            if any(any("placeholder" in (u or "") for u in urls) for urls in ci.values()):
+                return True
+            if any(len(urls) < 3 for urls in ci.values()):
+                return True
+            feats = row.get("features") or []
+            body = "".join((s.get("body") or "") for s in (row.get("sections") or []))
+            if len(feats) < 2 and len(body) < 250:
+                return True
+            if not row.get("variants"):
+                return True
+            return False
+
         for i, p in enumerate(products):
             pid = p["id"]
             existing = cache.get(pid) or {}
+            thin = is_thin(existing)
             if (
                 not refresh
                 and not args.only
+                and not (args.refresh_thin and thin)
                 and existing.get("variants")
                 and existing.get("colourImages")
                 and (existing.get("sections") or existing.get("features"))
                 and not existing.get("error")
+                and not thin
             ):
+                # Still top-up incomplete local galleries from cached URLs
+                if not args.skip_images and existing.get("colourImages"):
+                    download_images(
+                        pid,
+                        existing.get("colourImages") or {},
+                        force=bool(args.force_images),
+                    )
                 print(f"[{i+1}/{len(products)}] {pid} skip (cached)", flush=True)
                 continue
             url = p.get("url") or f"https://arcteryx.com/gb/en/shop/{p.get('slug')}"
@@ -384,16 +492,22 @@ def main() -> None:
             else:
                 cache[pid] = row
                 if not args.skip_images:
-                    download_images(pid, row.get("colourImages") or {})
+                    download_images(
+                        pid,
+                        row.get("colourImages") or {},
+                        force=bool(args.force_images or thin),
+                    )
                 in_c = sum(1 for v in row.get("variants") or [] if v.get("inStock"))
+                img_n = sum(len(v) for v in (row.get("colourImages") or {}).values())
                 print(
                     f"  colours={len(row.get('colours') or [])} "
                     f"sizes={len(row.get('sizes') or [])} "
+                    f"images={img_n} features={len(row.get('features') or [])} "
                     f"inStockVariants={in_c}/{len(row.get('variants') or [])}",
                     flush=True,
                 )
             OUT_PATH.write_text(json.dumps(cache, indent=2, ensure_ascii=False) + "\n")
-            time.sleep(0.35 if refresh else 0.15)
+            time.sleep(0.35 if refresh or args.refresh_thin else 0.15)
 
         browser.close()
 

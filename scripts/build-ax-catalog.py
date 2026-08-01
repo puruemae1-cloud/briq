@@ -114,8 +114,12 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     if not d.exists():
         return []
     nums = sorted(
-        [p for p in d.glob("[0-9]*.jpg")],
-        key=lambda p: int(p.stem) if p.stem.isdigit() else 999,
+        [
+            p
+            for p in d.iterdir()
+            if p.is_file() and re.fullmatch(r"\d+\.jpg", p.name, flags=re.I)
+        ],
+        key=lambda p: int(p.stem),
     )
     out = [f"/products/ax-pdp/{pid}/{cslug}/{p.name}" for p in nums]
     thumb = d / "thumb.jpg"
