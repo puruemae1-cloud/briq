@@ -200,9 +200,10 @@ if 'id: "paul-smith-shoes"' not in text:
     )
 
 if 'id: "paul-smith-accessories"' not in text:
+    # Newest brand first in accessories nav
     text = text.replace(
-        '      {\n        id: "burberry-accessories",\n        labelKo: "버버리",',
-        acc_nav + '      {\n        id: "burberry-accessories",\n        labelKo: "버버리",',
+        '      {\n        id: "arcteryx-accessories",\n        labelKo: "아크테릭스",',
+        acc_nav + '      {\n        id: "arcteryx-accessories",\n        labelKo: "아크테릭스",',
         1,
     )
 
