@@ -751,10 +751,13 @@ export function expandLuColourwayCards(
 
 export function getProductsByCategory(category?: string, sub?: string) {
   let list = products;
-  if (category && category !== "all") {
+  const expanded = expandSubcategoryFilter(sub);
+  // Gift PLPs include apparel/shoes tagged with ps-gifts*; skip category gate.
+  const isPsGifts =
+    expanded?.some((c) => c === "ps-gifts" || c.startsWith("ps-gifts-")) ?? false;
+  if (category && category !== "all" && !isPsGifts) {
     list = list.filter((p) => p.category === category);
   }
-  const expanded = expandSubcategoryFilter(sub);
   if (expanded) {
     list = list.filter((p) => {
       if (p.subcategory && expanded.includes(p.subcategory)) return true;

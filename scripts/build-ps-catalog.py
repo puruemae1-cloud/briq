@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Paul Smith mens catalogue TypeScript from scraped raw JSON."""
+"""Build Paul Smith catalogue TypeScript from scraped raw JSON."""
 from __future__ import annotations
 
 import json
@@ -49,6 +49,26 @@ CLOTHING_TYPE_MAP = {
     "Waistcoats": ("ps-men-waistcoats", "웨이스트코트"),
 }
 
+WOMEN_CLOTHING_TYPE_MAP = {
+    "Bags": ("ps-women-other", "기타 의류"),
+    "Coats": ("ps-women-coats", "코트"),
+    "Dresses": ("ps-women-dresses", "드레스"),
+    "Jackets": ("ps-women-jackets", "재킷"),
+    "Jeans": ("ps-women-jeans", "진"),
+    "Knitwear": ("ps-women-knitwear", "니트웨어"),
+    "Loungewear": ("ps-women-loungewear", "라운지웨어"),
+    "Pyjamas": ("ps-women-pyjamas", "파자마"),
+    "Shirts": ("ps-women-shirts", "셔츠"),
+    "Shorts": ("ps-women-shorts", "쇼츠"),
+    "Skirts": ("ps-women-skirts", "스커트"),
+    "Suits": ("ps-women-suits", "수트"),
+    "Sweatshirts": ("ps-women-sweatshirts", "스웻셔츠"),
+    "Swimwear": ("ps-women-swimwear", "스윔웨어"),
+    "T-Shirts": ("ps-women-tshirts", "티셔츠"),
+    "Trousers": ("ps-women-trousers", "트라우저"),
+    "Waistcoats": ("ps-women-waistcoats", "웨이스트코트"),
+}
+
 SHOE_STYLE_MAP = {
     "Boots": ("ps-shoes-boots", "부츠"),
     "Brogues": ("ps-shoes-brogues", "브로그"),
@@ -62,6 +82,15 @@ SHOE_STYLE_MAP = {
     "Trainers": ("ps-shoes-trainers", "스니커즈"),
 }
 
+WOMEN_SHOE_STYLE_MAP = {
+    "Boots": ("ps-shoes-women-boots", "부츠"),
+    "Flats": ("ps-shoes-women-flats", "플랫"),
+    "Loafers": ("ps-shoes-women-loafers", "로퍼"),
+    "Sandals": ("ps-shoes-women-sandals", "샌들"),
+    "Shoe Care": ("ps-shoes-women-care", "슈케어"),
+    "Trainers": ("ps-shoes-women-trainers", "스니커즈"),
+}
+
 # When Elevate `style` is missing, map product_type → shoe leaf
 SHOE_PTYPE_MAP = {
     "Sneaker": ("ps-shoes-trainers", "스니커즈"),
@@ -71,6 +100,15 @@ SHOE_PTYPE_MAP = {
     "Sandal": ("ps-shoes-sandals", "샌들"),
     "Espadrille": ("ps-shoes-espadrilles", "에스파드리유"),
     "Shoe": ("ps-shoes-other", "기타 슈즈"),
+}
+
+WOMEN_SHOE_PTYPE_MAP = {
+    "Sneaker": ("ps-shoes-women-trainers", "스니커즈"),
+    "Boots": ("ps-shoes-women-boots", "부츠"),
+    "Loafer": ("ps-shoes-women-loafers", "로퍼"),
+    "Sandal": ("ps-shoes-women-sandals", "샌들"),
+    "Flats": ("ps-shoes-women-flats", "플랫"),
+    "Shoe": ("ps-shoes-women-other", "기타 슈즈"),
 }
 
 ACC_TYPE_MAP = {
@@ -96,6 +134,25 @@ ACC_TYPE_MAP = {
     "Towels": ("ps-acc-towels", "타월"),
     "Umbrellas": ("ps-acc-umbrellas", "우산"),
     "Underwear": ("ps-acc-underwear", "언더웨어"),
+}
+
+WOMEN_ACC_TYPE_MAP = {
+    "Bags": ("ps-acc-women-bags", "백"),
+    "Belts": ("ps-acc-women-belts", "벨트"),
+    "Hats": ("ps-acc-women-hats", "모자"),
+    "Jewellery": ("ps-acc-women-jewellery", "주얼리"),
+    "Keyrings": ("ps-acc-women-keyrings", "키링"),
+    "Novelty Items": ("ps-acc-women-novelty", "노블티"),
+    "Sandal": ("ps-acc-women-other", "기타 악세서리"),
+    "Scarves": ("ps-acc-women-scarves", "스카프"),
+    "Small Leather Goods": ("ps-acc-women-slg", "가죽 소품"),
+    "Socks": ("ps-acc-women-socks", "삭스"),
+    "Stationery": ("ps-acc-women-stationery", "스테이셔너리"),
+    "Swimwear": ("ps-acc-women-swimwear", "스윔웨어"),
+    "Towels": ("ps-acc-women-towels", "타월"),
+    "Umbrellas": ("ps-acc-women-umbrellas", "우산"),
+    "Gloves": ("ps-acc-women-gloves", "글러브"),
+    "Giftset": ("ps-acc-women-other", "기타 악세서리"),
 }
 
 MEASURE_Y_KO = {
@@ -336,47 +393,61 @@ def apparel_alpha_chart(title: str) -> dict:
     }
 
 
-def infer_acc_type(ptype: str | None, title: str) -> tuple[str, str]:
-    if ptype and str(ptype) in ACC_TYPE_MAP:
-        return ACC_TYPE_MAP[str(ptype)]
+def infer_acc_type(ptype: str | None, title: str, *, women: bool = False) -> tuple[str, str]:
+    amap = WOMEN_ACC_TYPE_MAP if women else ACC_TYPE_MAP
+    other = ("ps-acc-women-other", "기타 악세서리") if women else ("ps-acc-other", "기타 악세서리")
+    if ptype and str(ptype) in amap:
+        return amap[str(ptype)]
     name = (title or "").lower()
-    if "glove" in name:
-        return ACC_TYPE_MAP["Gloves"]
+    if "glove" in name and "Gloves" in amap:
+        return amap["Gloves"]
     if "gift" in name or "three pack" in name or "two pack" in name:
-        return ACC_TYPE_MAP["Giftset"]
-    if "sock" in name:
-        return ACC_TYPE_MAP["Socks"]
-    if "belt" in name:
-        return ACC_TYPE_MAP["Belts"]
-    if "umbrella" in name:
-        return ACC_TYPE_MAP["Umbrellas"]
+        if "Giftset" in amap:
+            return amap["Giftset"]
+    if "sock" in name and "Socks" in amap:
+        return amap["Socks"]
+    if "belt" in name and "Belts" in amap:
+        return amap["Belts"]
+    if "umbrella" in name and "Umbrellas" in amap:
+        return amap["Umbrellas"]
     if "bauble" in name or "ornament" in name:
-        return ACC_TYPE_MAP["Novelty Items"]
+        if "Novelty Items" in amap:
+            return amap["Novelty Items"]
     if "hand care" in name or "botanist" in name:
-        return ACC_TYPE_MAP["Novelty Items"]
-    return ("ps-acc-other", "기타 악세서리")
+        if "Novelty Items" in amap:
+            return amap["Novelty Items"]
+    return other
+
+
+def gift_cols_for(channels: set[str]) -> tuple[str, str, list[str]] | None:
+    if "homeware" in channels and not (
+        channels & {"clothing", "clothing-women", "shoes", "shoes-women", "accessories", "accessories-women", "tailoring", "suits-women"}
+    ):
+        return "ps-gifts-homeware", "홈웨어", ["paul-smith-accessories", "ps-gifts", "ps-gifts-homeware"]
+    if "gifts-him" in channels:
+        return "ps-gifts-him", "남성용", ["paul-smith-accessories", "ps-gifts", "ps-gifts-him"]
+    if "gifts-her" in channels:
+        return "ps-gifts-her", "여성용", ["paul-smith-accessories", "ps-gifts", "ps-gifts-her"]
+    if "homeware" in channels:
+        return "ps-gifts-homeware", "홈웨어", ["paul-smith-accessories", "ps-gifts", "ps-gifts-homeware"]
+    return None
 
 
 def fallback_size_chart(cat: str, leaf_id: str, name_ko: str) -> dict | None:
-    if cat == "shoes" or leaf_id.startswith("ps-shoes-") or leaf_id == "ps-acc-boots":
+    if cat == "shoes" or "shoes" in leaf_id or leaf_id.endswith("-boots"):
         return shoe_size_chart()
-    if leaf_id == "ps-acc-belts":
+    if leaf_id in {"ps-acc-belts", "ps-acc-women-belts"}:
         return belt_size_chart()
-    if leaf_id == "ps-acc-socks":
+    if leaf_id in {"ps-acc-socks", "ps-acc-women-socks"}:
         return sock_size_chart()
-    if leaf_id == "ps-acc-hats":
+    if leaf_id in {"ps-acc-hats", "ps-acc-women-hats"}:
         return hat_size_chart()
-    if leaf_id == "ps-acc-gloves":
+    if leaf_id in {"ps-acc-gloves", "ps-acc-women-gloves"}:
         return glove_size_chart()
-    if leaf_id in {
-        "ps-acc-underwear",
-        "ps-acc-swimwear",
-        "ps-acc-pyjamas",
-        "ps-men-underwear",
-        "ps-men-swimwear",
-        "ps-men-loungewear",
-        "ps-men-pyjamas",
-    }:
+    if any(
+        leaf_id.endswith(s)
+        for s in ("-underwear", "-swimwear", "-pyjamas", "-loungewear")
+    ):
         return apparel_alpha_chart(name_ko or "폴 스미스")
     return None
 
@@ -393,39 +464,99 @@ def classify(row: dict) -> tuple[str, str, list[str], str]:
         or (entity.get("categoryName") or [None])[-1]
     )
     style = entity.get("style") or plp.get("style")
+    gift = gift_cols_for(channels)
 
-    cols: list[str] = []
-    # Primary channel priority: shoes > accessories > clothing/tailoring
-    if "shoes" in channels:
-        cat = "shoes"
-        if style and str(style) in SHOE_STYLE_MAP:
-            leaf_id, leaf_ko = SHOE_STYLE_MAP[str(style)]
-        elif ptype and str(ptype) in SHOE_PTYPE_MAP:
-            leaf_id, leaf_ko = SHOE_PTYPE_MAP[str(ptype)]
+    primary_apparel = channels & {
+        "clothing",
+        "clothing-women",
+        "shoes",
+        "shoes-women",
+        "accessories",
+        "accessories-women",
+        "tailoring",
+        "suits-women",
+    }
+    # Gift/homeware-only → accessories gifts
+    if gift and not primary_apparel:
+        leaf_id, leaf_ko, cols = gift
+        return "accessories", leaf_id, cols, leaf_ko
+
+    def with_gifts(cols: list[str], leaf_id: str, leaf_ko: str, cat: str):
+        if gift:
+            for g in gift[2]:
+                if g not in cols:
+                    cols.append(g)
+        return cat, leaf_id, cols, leaf_ko
+
+    # Shoes (women preferred when only women channel)
+    if "shoes-women" in channels or "shoes" in channels:
+        women = "shoes-women" in channels and "shoes" not in channels
+        if women:
+            if style and str(style) in WOMEN_SHOE_STYLE_MAP:
+                leaf_id, leaf_ko = WOMEN_SHOE_STYLE_MAP[str(style)]
+            elif ptype and str(ptype) in WOMEN_SHOE_PTYPE_MAP:
+                leaf_id, leaf_ko = WOMEN_SHOE_PTYPE_MAP[str(ptype)]
+            else:
+                leaf_id, leaf_ko = ("ps-shoes-women-other", "기타 슈즈")
+            cols = ["paul-smith-shoes", "ps-shoes-women", leaf_id]
         else:
-            leaf_id, leaf_ko = ("ps-shoes-other", "기타 슈즈")
-        cols = ["paul-smith-shoes", "ps-shoes-men", leaf_id]
-        return cat, leaf_id, cols, leaf_ko
+            if style and str(style) in SHOE_STYLE_MAP:
+                leaf_id, leaf_ko = SHOE_STYLE_MAP[str(style)]
+            elif ptype and str(ptype) in SHOE_PTYPE_MAP:
+                leaf_id, leaf_ko = SHOE_PTYPE_MAP[str(ptype)]
+            else:
+                leaf_id, leaf_ko = ("ps-shoes-other", "기타 슈즈")
+            cols = ["paul-smith-shoes", "ps-shoes-men", leaf_id]
+        return with_gifts(cols, leaf_id, leaf_ko, "shoes")
 
-    if "accessories" in channels and "clothing" not in channels and "tailoring" not in channels:
-        cat = "accessories"
-        leaf_id, leaf_ko = infer_acc_type(str(ptype) if ptype else None, title)
-        # Acc "Boots" with UK shoe sizes → treat as shoes leaf under accessories nav still
-        cols = ["paul-smith-accessories", "ps-acc-men", leaf_id]
-        return cat, leaf_id, cols, leaf_ko
+    # Accessories
+    if ("accessories-women" in channels or "accessories" in channels) and not (
+        channels & {"clothing", "clothing-women", "tailoring", "suits-women"}
+    ):
+        women = "accessories-women" in channels and "accessories" not in channels
+        leaf_id, leaf_ko = infer_acc_type(str(ptype) if ptype else None, title, women=women)
+        if women:
+            cols = ["paul-smith-accessories", "ps-acc-women", leaf_id]
+        else:
+            cols = ["paul-smith-accessories", "ps-acc-men", leaf_id]
+        return with_gifts(cols, leaf_id, leaf_ko, "accessories")
 
-    # clothing / tailoring → luxury
-    cat = "luxury"
+    # Clothing / tailoring / suits → luxury
+    women = bool(channels & {"clothing-women", "suits-women"}) and not bool(
+        channels & {"clothing", "tailoring"}
+    )
+    if women:
+        cols = ["paul-smith", "ps-women"]
+        if "suits-women" in channels:
+            cols.append("ps-women-tailoring")
+        leaf_id, leaf_ko = WOMEN_CLOTHING_TYPE_MAP.get(
+            str(ptype or ""), ("ps-women-other", "기타 의류")
+        )
+        if leaf_id not in cols:
+            cols.append(leaf_id)
+        if "suits-women" in channels and "clothing-women" not in channels and str(ptype or "") not in WOMEN_CLOTHING_TYPE_MAP:
+            return with_gifts(
+                ["paul-smith", "ps-women", "ps-women-tailoring"],
+                "ps-women-tailoring",
+                "테일러링",
+                "luxury",
+            )
+        return with_gifts(cols, leaf_id, leaf_ko, "luxury")
+
     cols = ["paul-smith", "ps-men"]
     if "tailoring" in channels:
         cols.append("ps-men-tailoring")
     leaf_id, leaf_ko = CLOTHING_TYPE_MAP.get(str(ptype or ""), ("ps-men-other", "기타 의류"))
     if leaf_id not in cols:
         cols.append(leaf_id)
-    # If only tailoring and no clothing type match, use tailoring leaf
     if "tailoring" in channels and "clothing" not in channels and str(ptype or "") not in CLOTHING_TYPE_MAP:
-        return cat, "ps-men-tailoring", ["paul-smith", "ps-men", "ps-men-tailoring"], "테일러링"
-    return cat, leaf_id, cols, leaf_ko
+        return with_gifts(
+            ["paul-smith", "ps-men", "ps-men-tailoring"],
+            "ps-men-tailoring",
+            "테일러링",
+            "luxury",
+        )
+    return with_gifts(cols, leaf_id, leaf_ko, "luxury")
 
 
 def variant_in_stock(v: dict) -> bool:
@@ -565,7 +696,7 @@ def main() -> None:
     raw = json.loads(RAW_PATH.read_text())
     print(f"raw products={len(raw)}")
 
-    batch_start = datetime(2026, 8, 1, 12, 0, tzinfo=timezone.utc)
+    batch_start = datetime(2026, 8, 2, 12, 0, tzinfo=timezone.utc)
     blocks: list[str] = []
     accents = ["#1a1a1a", "#2c2c2c", "#3d3d3d", "#111111"]
     count = 0
@@ -707,10 +838,10 @@ def main() -> None:
         [
             'import type { Product, ProductVariant } from "@/data/products";',
             "",
-            "/** Auto-generated Paul Smith mens catalogue — do not edit by hand. */",
-            "export const psCatalogProducts: Product[] = [",
+            "/** Auto-generated Paul Smith catalogue — do not edit by hand. */",
+            "export const psCatalogProducts = [",
             *blocks,
-            "];",
+            "] as unknown as Product[];",
             "",
         ]
     )

@@ -368,7 +368,54 @@ export type SubcategoryId =
   | "ps-acc-towels"
   | "ps-acc-umbrellas"
   | "ps-acc-underwear"
-  | "ps-acc-other";
+  | "ps-acc-other"
+  | "ps-women"
+  | "ps-shoes-women"
+  | "ps-acc-women"
+  | "ps-gifts"
+  | "ps-women-coats"
+  | "ps-women-dresses"
+  | "ps-women-jackets"
+  | "ps-women-jeans"
+  | "ps-women-knitwear"
+  | "ps-women-loungewear"
+  | "ps-women-pyjamas"
+  | "ps-women-shirts"
+  | "ps-women-shorts"
+  | "ps-women-skirts"
+  | "ps-women-suits"
+  | "ps-women-sweatshirts"
+  | "ps-women-swimwear"
+  | "ps-women-tshirts"
+  | "ps-women-trousers"
+  | "ps-women-waistcoats"
+  | "ps-women-tailoring"
+  | "ps-women-other"
+  | "ps-shoes-women-boots"
+  | "ps-shoes-women-flats"
+  | "ps-shoes-women-loafers"
+  | "ps-shoes-women-sandals"
+  | "ps-shoes-women-care"
+  | "ps-shoes-women-trainers"
+  | "ps-shoes-women-other"
+  | "ps-acc-women-bags"
+  | "ps-acc-women-belts"
+  | "ps-acc-women-gloves"
+  | "ps-acc-women-hats"
+  | "ps-acc-women-jewellery"
+  | "ps-acc-women-keyrings"
+  | "ps-acc-women-novelty"
+  | "ps-acc-women-scarves"
+  | "ps-acc-women-slg"
+  | "ps-acc-women-socks"
+  | "ps-acc-women-stationery"
+  | "ps-acc-women-swimwear"
+  | "ps-acc-women-towels"
+  | "ps-acc-women-umbrellas"
+  | "ps-acc-women-other"
+  | "ps-gifts-him"
+  | "ps-gifts-her"
+  | "ps-gifts-homeware";
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -934,6 +981,62 @@ export const PS_MEN_ACC_IDS: SubcategoryId[] = [
   "ps-acc-other",
 ];
 
+
+export const PS_WOMEN_CLOTHING_IDS: SubcategoryId[] = [
+  "ps-women-coats",
+  "ps-women-dresses",
+  "ps-women-jackets",
+  "ps-women-jeans",
+  "ps-women-knitwear",
+  "ps-women-loungewear",
+  "ps-women-pyjamas",
+  "ps-women-shirts",
+  "ps-women-shorts",
+  "ps-women-skirts",
+  "ps-women-suits",
+  "ps-women-sweatshirts",
+  "ps-women-swimwear",
+  "ps-women-tshirts",
+  "ps-women-trousers",
+  "ps-women-waistcoats",
+  "ps-women-tailoring",
+  "ps-women-other",
+];
+
+export const PS_WOMEN_SHOE_IDS: SubcategoryId[] = [
+  "ps-shoes-women-boots",
+  "ps-shoes-women-flats",
+  "ps-shoes-women-loafers",
+  "ps-shoes-women-sandals",
+  "ps-shoes-women-care",
+  "ps-shoes-women-trainers",
+  "ps-shoes-women-other",
+];
+
+export const PS_WOMEN_ACC_IDS: SubcategoryId[] = [
+  "ps-acc-women-bags",
+  "ps-acc-women-belts",
+  "ps-acc-women-gloves",
+  "ps-acc-women-hats",
+  "ps-acc-women-jewellery",
+  "ps-acc-women-keyrings",
+  "ps-acc-women-novelty",
+  "ps-acc-women-scarves",
+  "ps-acc-women-slg",
+  "ps-acc-women-socks",
+  "ps-acc-women-stationery",
+  "ps-acc-women-swimwear",
+  "ps-acc-women-towels",
+  "ps-acc-women-umbrellas",
+  "ps-acc-women-other",
+];
+
+export const PS_GIFTS_IDS: SubcategoryId[] = [
+  "ps-gifts-him",
+  "ps-gifts-her",
+  "ps-gifts-homeware",
+];
+
 export type NavChild = {
   id: SubcategoryId;
   labelKo: string;
@@ -953,12 +1056,16 @@ export type NavCategory = {
 /** Expands group subcategory ids (e.g. luxury-shoes → womens/mens leaf ids). */
 export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> = {
 
-  "paul-smith": ["ps-men", ...PS_MEN_CLOTHING_IDS],
+  "paul-smith": ["ps-men", "ps-women", ...PS_MEN_CLOTHING_IDS, ...PS_WOMEN_CLOTHING_IDS],
   "ps-men": [...PS_MEN_CLOTHING_IDS],
-  "paul-smith-shoes": ["ps-shoes-men", ...PS_MEN_SHOE_IDS],
+  "ps-women": [...PS_WOMEN_CLOTHING_IDS],
+  "paul-smith-shoes": ["ps-shoes-men", "ps-shoes-women", ...PS_MEN_SHOE_IDS, ...PS_WOMEN_SHOE_IDS],
   "ps-shoes-men": [...PS_MEN_SHOE_IDS],
-  "paul-smith-accessories": ["ps-acc-men", ...PS_MEN_ACC_IDS],
+  "ps-shoes-women": [...PS_WOMEN_SHOE_IDS],
+  "paul-smith-accessories": ["ps-acc-men", "ps-acc-women", "ps-gifts", ...PS_MEN_ACC_IDS, ...PS_WOMEN_ACC_IDS, ...PS_GIFTS_IDS],
   "ps-acc-men": [...PS_MEN_ACC_IDS],
+  "ps-acc-women": [...PS_WOMEN_ACC_IDS],
+  "ps-gifts": [...PS_GIFTS_IDS],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -1278,6 +1385,104 @@ export const navCategories: NavCategory[] = [
                 labelKo: "기타 의류",
                 href: "/shop?category=luxury&sub=ps-men-other",
               },
+            ],
+          },
+          {
+            id: "ps-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=ps-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-women-coats",
+                labelKo: "코트",
+                href: "/shop?category=luxury&sub=ps-women-coats",
+              },
+              {
+                id: "ps-women-dresses",
+                labelKo: "드레스",
+                href: "/shop?category=luxury&sub=ps-women-dresses",
+              },
+              {
+                id: "ps-women-jackets",
+                labelKo: "재킷",
+                href: "/shop?category=luxury&sub=ps-women-jackets",
+              },
+              {
+                id: "ps-women-jeans",
+                labelKo: "진",
+                href: "/shop?category=luxury&sub=ps-women-jeans",
+              },
+              {
+                id: "ps-women-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=ps-women-knitwear",
+              },
+              {
+                id: "ps-women-loungewear",
+                labelKo: "라운지웨어",
+                href: "/shop?category=luxury&sub=ps-women-loungewear",
+              },
+              {
+                id: "ps-women-pyjamas",
+                labelKo: "파자마",
+                href: "/shop?category=luxury&sub=ps-women-pyjamas",
+              },
+              {
+                id: "ps-women-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=ps-women-shirts",
+              },
+              {
+                id: "ps-women-shorts",
+                labelKo: "쇼츠",
+                href: "/shop?category=luxury&sub=ps-women-shorts",
+              },
+              {
+                id: "ps-women-skirts",
+                labelKo: "스커트",
+                href: "/shop?category=luxury&sub=ps-women-skirts",
+              },
+              {
+                id: "ps-women-suits",
+                labelKo: "수트",
+                href: "/shop?category=luxury&sub=ps-women-suits",
+              },
+              {
+                id: "ps-women-sweatshirts",
+                labelKo: "스웻셔츠",
+                href: "/shop?category=luxury&sub=ps-women-sweatshirts",
+              },
+              {
+                id: "ps-women-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=ps-women-swimwear",
+              },
+              {
+                id: "ps-women-tshirts",
+                labelKo: "티셔츠",
+                href: "/shop?category=luxury&sub=ps-women-tshirts",
+              },
+              {
+                id: "ps-women-trousers",
+                labelKo: "트라우저",
+                href: "/shop?category=luxury&sub=ps-women-trousers",
+              },
+              {
+                id: "ps-women-waistcoats",
+                labelKo: "웨이스트코트",
+                href: "/shop?category=luxury&sub=ps-women-waistcoats",
+              },
+              {
+                id: "ps-women-tailoring",
+                labelKo: "테일러링",
+                href: "/shop?category=luxury&sub=ps-women-tailoring",
+              },
+              {
+                id: "ps-women-other",
+                labelKo: "기타 의류",
+                href: "/shop?category=luxury&sub=ps-women-other",
+              }
             ],
           },
         ],
@@ -1793,6 +1998,49 @@ export const navCategories: NavCategory[] = [
               },
             ],
           },
+          {
+            id: "ps-shoes-women",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=ps-shoes-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-shoes-women-boots",
+                labelKo: "부츠",
+                href: "/shop?category=shoes&sub=ps-shoes-women-boots",
+              },
+              {
+                id: "ps-shoes-women-flats",
+                labelKo: "플랫",
+                href: "/shop?category=shoes&sub=ps-shoes-women-flats",
+              },
+              {
+                id: "ps-shoes-women-loafers",
+                labelKo: "로퍼",
+                href: "/shop?category=shoes&sub=ps-shoes-women-loafers",
+              },
+              {
+                id: "ps-shoes-women-sandals",
+                labelKo: "샌들",
+                href: "/shop?category=shoes&sub=ps-shoes-women-sandals",
+              },
+              {
+                id: "ps-shoes-women-care",
+                labelKo: "슈케어",
+                href: "/shop?category=shoes&sub=ps-shoes-women-care",
+              },
+              {
+                id: "ps-shoes-women-trainers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=ps-shoes-women-trainers",
+              },
+              {
+                id: "ps-shoes-women-other",
+                labelKo: "기타 슈즈",
+                href: "/shop?category=shoes&sub=ps-shoes-women-other",
+              }
+            ],
+          },
         ],
       },
       {
@@ -2027,6 +2275,112 @@ export const navCategories: NavCategory[] = [
                 labelKo: "기타 악세서리",
                 href: "/shop?category=accessories&sub=ps-acc-other",
               },
+            ],
+          },
+          {
+            id: "ps-acc-women",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=ps-acc-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-acc-women-bags",
+                labelKo: "백",
+                href: "/shop?category=accessories&sub=ps-acc-women-bags",
+              },
+              {
+                id: "ps-acc-women-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=ps-acc-women-belts",
+              },
+              {
+                id: "ps-acc-women-gloves",
+                labelKo: "글러브",
+                href: "/shop?category=accessories&sub=ps-acc-women-gloves",
+              },
+              {
+                id: "ps-acc-women-hats",
+                labelKo: "모자",
+                href: "/shop?category=accessories&sub=ps-acc-women-hats",
+              },
+              {
+                id: "ps-acc-women-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=ps-acc-women-jewellery",
+              },
+              {
+                id: "ps-acc-women-keyrings",
+                labelKo: "키링",
+                href: "/shop?category=accessories&sub=ps-acc-women-keyrings",
+              },
+              {
+                id: "ps-acc-women-novelty",
+                labelKo: "노블티",
+                href: "/shop?category=accessories&sub=ps-acc-women-novelty",
+              },
+              {
+                id: "ps-acc-women-scarves",
+                labelKo: "스카프",
+                href: "/shop?category=accessories&sub=ps-acc-women-scarves",
+              },
+              {
+                id: "ps-acc-women-slg",
+                labelKo: "가죽 소품",
+                href: "/shop?category=accessories&sub=ps-acc-women-slg",
+              },
+              {
+                id: "ps-acc-women-socks",
+                labelKo: "삭스",
+                href: "/shop?category=accessories&sub=ps-acc-women-socks",
+              },
+              {
+                id: "ps-acc-women-stationery",
+                labelKo: "스테이셔너리",
+                href: "/shop?category=accessories&sub=ps-acc-women-stationery",
+              },
+              {
+                id: "ps-acc-women-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=accessories&sub=ps-acc-women-swimwear",
+              },
+              {
+                id: "ps-acc-women-towels",
+                labelKo: "타월",
+                href: "/shop?category=accessories&sub=ps-acc-women-towels",
+              },
+              {
+                id: "ps-acc-women-umbrellas",
+                labelKo: "우산",
+                href: "/shop?category=accessories&sub=ps-acc-women-umbrellas",
+              },
+              {
+                id: "ps-acc-women-other",
+                labelKo: "기타 악세서리",
+                href: "/shop?category=accessories&sub=ps-acc-women-other",
+              }
+            ],
+          },
+          {
+            id: "ps-gifts",
+            labelKo: "선물용",
+            href: "/shop?category=accessories&sub=ps-gifts",
+            navLeaf: true,
+            children: [
+              {
+                id: "ps-gifts-him",
+                labelKo: "남성용",
+                href: "/shop?category=accessories&sub=ps-gifts-him",
+              },
+              {
+                id: "ps-gifts-her",
+                labelKo: "여성용",
+                href: "/shop?category=accessories&sub=ps-gifts-her",
+              },
+              {
+                id: "ps-gifts-homeware",
+                labelKo: "홈웨어",
+                href: "/shop?category=accessories&sub=ps-gifts-homeware",
+              }
             ],
           },
         ],
