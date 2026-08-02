@@ -387,9 +387,9 @@ def main() -> None:
     header = """/** Auto-generated Arc'teryx footwear catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const axCatalogProducts: Product[] = [
+export const axCatalogProducts = [
 """
-    footer = """];
+    footer = """] as unknown as Product[];
 """
     OUT_PATH.write_text(header + "\n".join(products_out) + "\n" + footer)
     print(f"Wrote {len(products_out)} products → {OUT_PATH}")

@@ -1,7 +1,7 @@
 /** Auto-generated Arc'teryx accessories + bags catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const axGearCatalogProducts: Product[] = [
+export const axGearCatalogProducts = [
   {
     id: "axg-x000010185",
     name: "Silex Cap",
@@ -8651,4 +8651,4 @@ export const axGearCatalogProducts: Product[] = [
       },
     ],
   },
-];
+] as unknown as Product[];

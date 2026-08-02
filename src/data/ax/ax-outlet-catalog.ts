@@ -1,7 +1,7 @@
 /** Auto-generated Arc'teryx Outlet catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const axOutletCatalogProducts: Product[] = [
+export const axOutletCatalogProducts = [
   {
     id: "axo-x000010172",
     name: "Norvan 4 Nivalis GTX Grotto Shoe Men's",
@@ -84042,4 +84042,4 @@ export const axOutletCatalogProducts: Product[] = [
       },
     ],
   },
-];
+] as unknown as Product[];

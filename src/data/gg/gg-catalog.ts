@@ -1,7 +1,7 @@
 /** Auto-generated Galvin Green catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const ggCatalogProducts: Product[] = [
+export const ggCatalogProducts = [
   {
     id: "gg-addison-cresting",
     name: "Addison Cresting - Waterproof golf hat",
@@ -67089,4 +67089,4 @@ export const ggCatalogProducts: Product[] = [
       },
     ],
   },
-];
+] as unknown as Product[];

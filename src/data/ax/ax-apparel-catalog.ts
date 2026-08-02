@@ -1,7 +1,7 @@
 /** Auto-generated Arc'teryx outdoor apparel catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const axApparelCatalogProducts: Product[] = [
+export const axApparelCatalogProducts = [
   {
     id: "axa-x000006198",
     name: "Frame Shirt SS Women's",
@@ -111011,4 +111011,4 @@ export const axApparelCatalogProducts: Product[] = [
       },
     ],
   },
-];
+] as unknown as Product[];

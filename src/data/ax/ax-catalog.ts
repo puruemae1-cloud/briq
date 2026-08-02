@@ -1,7 +1,7 @@
 /** Auto-generated Arc'teryx footwear catalogue — do not edit by hand. */
 import type { Product } from "@/data/products";
 
-export const axCatalogProducts: Product[] = [
+export const axCatalogProducts = [
   {
     id: "ax-x000009715",
     name: "Vertex Speed Low Shoe Men's",
@@ -23703,4 +23703,4 @@ export const axCatalogProducts: Product[] = [
       },
     ],
   },
-];
+] as unknown as Product[];
