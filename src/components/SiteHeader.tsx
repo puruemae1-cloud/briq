@@ -11,20 +11,90 @@ function brandLinkClass(id: string, extra?: string) {
   return [extra, clearance].filter(Boolean).join(" ") || undefined;
 }
 
-/** Top nav dropdown: brand names only (subcategories live on the shop page). */
+/**
+ * Brand row + one nested level (e.g. 폴 스미스 → 남성용 / 여성용 / 선물용).
+ * Product-type leaves stay on the shop page chips.
+ */
 function BrandLinks({ items }: { items: NavChild[] }) {
   return (
     <>
-      {items.map((child) => (
-        <Link
-          key={child.id}
-          href={child.href}
-          className={brandLinkClass(child.id, "nav-dropdown__brand")}
-        >
-          {child.labelKo}
-        </Link>
-      ))}
+      {items.map((child) => {
+        const splits = child.children?.filter(
+          (c) => c.navLeaf || !c.children?.length,
+        );
+        const nest =
+          splits && splits.length > 0
+            ? splits
+            : child.children?.filter((c) => c.navLeaf) ?? [];
+        const showNest = (nest?.length ?? 0) > 0;
+
+        return (
+          <div key={child.id} className="nav-dropdown__group">
+            <Link
+              href={child.href}
+              className={brandLinkClass(
+                child.id,
+                showNest
+                  ? "nav-dropdown__brand nav-dropdown__parent"
+                  : "nav-dropdown__brand",
+              )}
+            >
+              {child.labelKo}
+            </Link>
+            {showNest ? (
+              <div className="nav-dropdown__nest nav-dropdown__nest--d1">
+                {nest!.map((sub) => (
+                  <Link
+                    key={sub.id}
+                    href={sub.href}
+                    className={brandLinkClass(sub.id)}
+                  >
+                    {sub.labelKo}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        );
+      })}
     </>
+  );
+}
+
+function MobileBrandBranch({ child }: { child: NavChild }) {
+  const nest =
+    child.children?.filter((c) => c.navLeaf || !c.children?.length) ?? [];
+  const showNest = nest.length > 0;
+
+  return (
+    <div className="mobile-drawer__brand">
+      <a
+        href={child.href}
+        className={[
+          "mobile-drawer__sub mobile-drawer__sub--brand",
+          child.id === "cw-clearance" || child.id === "gg-sale"
+            ? "nav-link--clearance"
+            : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
+        {child.labelKo}
+      </a>
+      {showNest ? (
+        <div className="mobile-drawer__leaves">
+          {nest.map((sub) => (
+            <a
+              key={sub.id}
+              href={sub.href}
+              className={brandLinkClass(sub.id, "mobile-drawer__sub2")}
+            >
+              {sub.labelKo}
+            </a>
+          ))}
+        </div>
+      ) : null}
+    </div>
   );
 }
 
@@ -123,20 +193,7 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                       전체 보기
                     </a>
                     {c.children.map((child) => (
-                      <a
-                        key={child.id}
-                        href={child.href}
-                        className={[
-                          "mobile-drawer__sub mobile-drawer__sub--brand",
-                          child.id === "cw-clearance" || child.id === "gg-sale"
-                            ? "nav-link--clearance"
-                            : "",
-                        ]
-                          .filter(Boolean)
-                          .join(" ")}
-                      >
-                        {child.labelKo}
-                      </a>
+                      <MobileBrandBranch key={child.id} child={child} />
                     ))}
                   </div>
                 </details>
