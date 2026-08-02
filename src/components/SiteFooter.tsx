@@ -56,9 +56,8 @@ export function SiteFooter() {
           </p>
           <p>
             <span>주소: 경기도 김포시 고촌읍 은행영사정로23번길 46</span>
-            <span className="site-footer__biz-sep" aria-hidden>
-              |
-            </span>
+          </p>
+          <p>
             <span>사업자등록번호: {bizNo}</span>
           </p>
           <p>
@@ -74,9 +73,8 @@ export function SiteFooter() {
             >
               사업자정보확인
             </a>
-            <span className="site-footer__biz-sep" aria-hidden>
-              |
-            </span>
+          </p>
+          <p>
             <span>대표자: 이정현</span>
             <span className="site-footer__biz-sep" aria-hidden>
               |
