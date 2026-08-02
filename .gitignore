@@ -60,3 +60,6 @@ src/data/bb/bb-pdp-cache.json
 /public/products/cw/
 /public/products/cw-twelve-picnmix/
 /public/products/lu-pdp/
+
+*.ts.bak
+*.bak
