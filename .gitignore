@@ -45,3 +45,18 @@ next-env.d.ts
 # local order inbox (dev persistence)
 /data/orders.json
 src/data/bb/bb-pdp-cache.json
+
+# Heavy PDP image trees — served from the `product-images` git tag via rewrite.
+# Keep a local copy for `next dev`; Vercel clones stay small enough to build.
+/public/products/axa-pdp/
+/public/products/ax-pdp/
+/public/products/axg-pdp/
+/public/products/axo-pdp/
+/public/products/ps-pdp/
+/public/products/bb-pdp/
+/public/products/gg-pdp/
+/public/products/cw-pdp/
+/public/products/cw-editorial/
+/public/products/cw/
+/public/products/cw-twelve-picnmix/
+/public/products/lu-pdp/

@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
  *  and served from GitHub via rewrite to keep builds under disk limits. */
 const PRODUCT_IMAGE_ORIGIN =
   process.env.PRODUCT_IMAGE_ORIGIN ||
-  "https://raw.githubusercontent.com/puruemae1-cloud/briq/main/public/products";
+  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public/products";
 
 const nextConfig: NextConfig = {
   // mobile/ is a separate Expo app
