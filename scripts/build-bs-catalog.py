@@ -128,7 +128,6 @@ SHOE_TYPES = {
 ACC_TYPES_PREFIX = (
     "HATS",
     "WALLET",
-    "BAGS",
     "HOME ACCESSORIES",
     "MISC",
     "GIFT",
@@ -210,8 +209,20 @@ def is_shoe(channels: set[str], ptype: str) -> bool:
     )
 
 
+def is_bag(ptype: str, title: str = "") -> bool:
+    """True Belstaff bags (not wash bags / wallets)."""
+    if (ptype or "").startswith("BAGS"):
+        return True
+    low = (title or "").lower()
+    if "wash bag" in low:
+        return False
+    return False
+
+
 def is_accessory(channels: set[str], ptype: str, title: str) -> bool:
     if "footwear" in channels or "women-footwear" in channels:
+        return False
+    if is_bag(ptype, title):
         return False
     if (
         ("accessories" in channels or "women-accessories" in channels)
@@ -220,11 +231,16 @@ def is_accessory(channels: set[str], ptype: str, title: str) -> bool:
         and "outerwear" not in channels
         and "women-outerwear" not in channels
     ):
+        # Accessories channel alone isn't enough if it's actually a bag type
+        if is_bag(ptype, title):
+            return False
+        # Don't treat pure bag titles in accessories channel as soft accessories
+        # when product_type is BAGS (handled above). Other channel-only accessories OK.
         return True
     if any(ptype.startswith(p) for p in ACC_TYPES_PREFIX):
         return True
     low = (title or "").lower()
-    if any(k in low for k in ("wallet", "belt", "cap", "beanie", "scarf", "glove", "bag")):
+    if any(k in low for k in ("wallet", "belt", "cap", "beanie", "scarf", "glove")):
         if "jacket" not in low and "shirt" not in low:
             return True
     return False
@@ -267,6 +283,7 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
         str(c).startswith("women-") for c in channels
     )
     shoe_like = is_shoe(channels, ptype)
+    bag_like = is_bag(ptype, title)
     acc_like = is_accessory(channels, ptype, title)
 
     if shoe_like and not force_luxury:
@@ -287,6 +304,9 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
         if "bs-shoes-men" not in cols and "bs-shoes-women" not in cols:
             cols.append(leaf)
         return "shoes", leaf, _dedupe(cols)
+
+    if bag_like and not force_luxury:
+        return "bags", "belstaff-bags", ["belstaff-bags"]
 
     if acc_like and not force_luxury:
         cols = ["belstaff-accessories"]
@@ -525,6 +545,7 @@ def build() -> None:
         "bs-women-motorcycle",
         "bs-sale-men",
         "bs-sale-women",
+        "belstaff-bags",
     }
     prev_registered: dict[str, str] = {}
     prev_collections: dict[str, set[str]] = {}

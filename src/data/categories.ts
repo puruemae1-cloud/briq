@@ -435,6 +435,7 @@ export type SubcategoryId =
   | "belstaff-shoes"
   | "bs-shoes-men"
   | "bs-shoes-women"
+  | "belstaff-bags"
   | "belstaff-accessories"
   | "bs-acc-men"
   | "bs-acc-women";
@@ -1124,6 +1125,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bs-women": [...BS_WOMEN_CLOTHING_IDS],
   "bs-sale": [...BS_SALE_IDS],
   "belstaff-shoes": [...BS_MEN_SHOE_IDS, ...BS_WOMEN_SHOE_IDS],
+  "belstaff-bags": ["belstaff-bags"],
   "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
@@ -1948,6 +1950,12 @@ export const navCategories: NavCategory[] = [
             navLeaf: true,
           },
         ],
+      },
+      {
+        id: "belstaff-bags",
+        labelKo: "벨스타프",
+        href: "/shop?category=bags&sub=belstaff-bags",
+        navLeaf: true,
       },
       {
         id: "burberry-bags",
