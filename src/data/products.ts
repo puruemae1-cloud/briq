@@ -156,8 +156,9 @@ export type Product = {
   /** Adult Burberry shoe size conversion chart shown next to size picker. */
   sizeChart?: ProductSizeChart;
   /**
-   * Catalogue registration time (ISO). Used by 최신등록순.
-   * Always set this when adding a product — newer timestamps rank first.
+   * Catalogue registration time on Briq (ISO). Used by 최신등록순 / homepage rails.
+   * Always set this when first adding a product — newer timestamps rank first.
+   * Rebuilds should preserve the original value so new imports stay on top.
    */
   registeredAt?: string;
   /**

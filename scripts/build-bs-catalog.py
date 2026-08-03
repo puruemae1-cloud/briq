@@ -143,17 +143,59 @@ OUTER_TYPES = {
 }
 
 
+MEN_CORE = {
+    "new",
+    "outerwear",
+    "clothing",
+    "footwear",
+    "accessories",
+    "men-icons",
+    "men-motorcycle",
+    "mens-sale",
+}
+WOMEN_CORE = {
+    "women-new",
+    "women-outerwear",
+    "women-clothing",
+    "women-footwear",
+    "women-accessories",
+    "women-icons",
+    "women-motorcycle",
+    "womens-sale",
+}
+LUXURY_FORCE = {
+    "men-icons",
+    "women-icons",
+    "men-motorcycle",
+    "women-motorcycle",
+    "mens-sale",
+    "womens-sale",
+}
+OUTER_M = {"JACKETS - M", "COATS - M", "GILETS - M"}
+OUTER_W = {"JACKETS - W", "COATS - W", "GILETS - W"}
+
+
 def is_women(row: dict) -> bool:
     channels = set(row.get("channels") or [])
     ptype = row.get("product_type") or ""
+    if channels & {
+        "women-new",
+        "women-outerwear",
+        "women-clothing",
+        "women-footwear",
+        "women-accessories",
+        "women-icons",
+        "women-motorcycle",
+        "womens-sale",
+    }:
+        return True
     if any(str(c).startswith("women-") for c in channels):
         return True
     if ptype.endswith("- W"):
         return True
     tags = {str(t).lower() for t in (row.get("tags") or [])}
     if ("women" in tags or "womenswear" in tags) and not ptype.endswith("- M"):
-        # only if no explicit men channel
-        if not (channels & {"new", "outerwear", "clothing", "footwear", "accessories"}):
+        if not (channels & MEN_CORE):
             return True
     return False
 
@@ -188,6 +230,23 @@ def is_accessory(channels: set[str], ptype: str, title: str) -> bool:
     return False
 
 
+def _dedupe(cols: list[str]) -> list[str]:
+    seen: set[str] = set()
+    return [c for c in cols if not (c in seen or seen.add(c))]
+
+
+MEN_CHANNELS = {
+    "new",
+    "outerwear",
+    "clothing",
+    "footwear",
+    "accessories",
+    "men-icons",
+    "men-motorcycle",
+    "mens-sale",
+}
+
+
 def classify(row: dict) -> tuple[str, str, list[str]]:
     """category, subcategory, bsCollections."""
     channels = set(row.get("channels") or [])
@@ -195,16 +254,28 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
     title = row.get("title") or ""
     women = is_women(row)
 
-    # Dual-list unisex: may have both men + women accessory channels
-    has_men_ch = bool(
-        channels & {"new", "outerwear", "clothing", "footwear", "accessories"}
-    )
-    has_women_ch = any(str(c).startswith("women-") for c in channels)
+    icons_men = "men-icons" in channels
+    icons_women = "women-icons" in channels
+    moto_men = "men-motorcycle" in channels
+    moto_women = "women-motorcycle" in channels
+    sale_men = "mens-sale" in channels
+    sale_women = "womens-sale" in channels
+    force_luxury = bool(channels & LUXURY_FORCE)
 
-    if is_shoe(channels, ptype):
+    has_men_ch = bool(channels & MEN_CORE)
+    has_women_ch = bool(channels & WOMEN_CORE) or any(
+        str(c).startswith("women-") for c in channels
+    )
+    shoe_like = is_shoe(channels, ptype)
+    acc_like = is_accessory(channels, ptype, title)
+
+    if shoe_like and not force_luxury:
         cols = ["belstaff-shoes"]
-        leaf = "bs-shoes-women" if (women or "women-footwear" in channels) else "bs-shoes-men"
-        # if both footwear channels somehow
+        leaf = (
+            "bs-shoes-women"
+            if (women or "women-footwear" in channels)
+            else "bs-shoes-men"
+        )
         if "footwear" in channels or (has_men_ch and not has_women_ch and not women):
             cols.append("bs-shoes-men")
             if not women and "women-footwear" not in channels:
@@ -212,14 +283,12 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
         if women or "women-footwear" in channels:
             if "bs-shoes-women" not in cols:
                 cols.append("bs-shoes-women")
-            leaf = "bs-shoes-women" if (women or "women-footwear" in channels) else leaf
+            leaf = "bs-shoes-women"
         if "bs-shoes-men" not in cols and "bs-shoes-women" not in cols:
             cols.append(leaf)
-        seen: set[str] = set()
-        cols = [c for c in cols if not (c in seen or seen.add(c))]
-        return "shoes", leaf, cols
+        return "shoes", leaf, _dedupe(cols)
 
-    if is_accessory(channels, ptype, title):
+    if acc_like and not force_luxury:
         cols = ["belstaff-accessories"]
         if has_men_ch or (not has_women_ch and not women):
             cols.append("bs-acc-men")
@@ -228,77 +297,124 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
         if "bs-acc-men" not in cols and "bs-acc-women" not in cols:
             cols.append("bs-acc-women" if women else "bs-acc-men")
         leaf = "bs-acc-women" if (women or has_women_ch) else "bs-acc-men"
-        seen = set()
-        cols = [c for c in cols if not (c in seen or seen.add(c))]
-        return "accessories", leaf, cols
+        return "accessories", leaf, _dedupe(cols)
 
-    # Apparel / outerwear
+    women_path = bool(
+        women or icons_women or moto_women or sale_women or has_women_ch
+    )
+    men_path = bool(channels & MEN_CHANNELS) or (
+        not women_path and not ptype.endswith("- W")
+    )
+    if ptype.endswith("- W") and not (channels & MEN_CHANNELS):
+        men_path = False
+        women_path = True
+
     cols = ["belstaff"]
-    if women or has_women_ch:
+    if sale_men or sale_women:
+        cols.append("bs-sale")
+        if sale_men:
+            cols.append("bs-sale-men")
+        if sale_women:
+            cols.append("bs-sale-women")
+
+    if women_path:
         cols.append("bs-women")
         if "women-new" in channels:
             cols.append("bs-women-new")
-        if "women-outerwear" in channels or ptype in {
-            "JACKETS - W",
-            "COATS - W",
-            "GILETS - W",
-        }:
+        if "women-outerwear" in channels or ptype in OUTER_W:
             cols.append("bs-women-outerwear")
-        if "women-clothing" in channels or ptype not in {
-            "JACKETS - W",
-            "COATS - W",
-            "GILETS - W",
-        }:
-            if "women-clothing" in channels or (
-                ptype.endswith("- W")
-                and ptype not in {"JACKETS - W", "COATS - W", "GILETS - W"}
-            ):
-                cols.append("bs-women-clothing")
-        if "bs-women-outerwear" not in cols and "bs-women-clothing" not in cols:
-            if ptype in {"JACKETS - W", "COATS - W", "GILETS - W"}:
-                cols.append("bs-women-outerwear")
-            else:
-                cols.append("bs-women-clothing")
-        if "bs-women-outerwear" in cols and (
-            "women-outerwear" in channels
-            or ptype in {"JACKETS - W", "COATS - W", "GILETS - W"}
+        if "women-clothing" in channels or (
+            ptype.endswith("- W")
+            and ptype not in OUTER_W
+            and not shoe_like
+            and not acc_like
         ):
-            leaf = "bs-women-outerwear"
-        elif "bs-women-clothing" in cols:
-            leaf = "bs-women-clothing"
-        else:
-            leaf = "bs-women-new"
-        # If also listed under men channels, keep men memberships too
-        if has_men_ch and not ptype.endswith("- W"):
-            cols.append("bs-men")
-    else:
+            cols.append("bs-women-clothing")
+        if icons_women:
+            cols.append("bs-women-icons")
+        if moto_women:
+            cols.append("bs-women-motorcycle")
+        if (
+            "bs-women-outerwear" not in cols
+            and "bs-women-clothing" not in cols
+            and not shoe_like
+            and not acc_like
+            and ptype.endswith("- W")
+        ):
+            cols.append(
+                "bs-women-outerwear" if ptype in OUTER_W else "bs-women-clothing"
+            )
+
+    if men_path:
         cols.append("bs-men")
         if "new" in channels:
             cols.append("bs-men-new")
-        if "outerwear" in channels or ptype in {"JACKETS - M", "COATS - M", "GILETS - M"}:
+        if "outerwear" in channels or ptype in OUTER_M:
             cols.append("bs-men-outerwear")
-        if "clothing" in channels or ptype not in {
-            "JACKETS - M",
-            "COATS - M",
-            "GILETS - M",
-        }:
-            cols.append("bs-men-clothing")
-        if ptype in {"JACKETS - M", "COATS - M", "GILETS - M"} and "bs-men-outerwear" not in cols:
-            cols.append("bs-men-outerwear")
-        if "bs-men-outerwear" not in cols and "bs-men-clothing" not in cols:
-            cols.append("bs-men-clothing")
-        if "bs-men-outerwear" in cols and (
-            "outerwear" in channels or ptype in {"JACKETS - M", "COATS - M", "GILETS - M"}
+        if "clothing" in channels or (
+            ptype.endswith("- M")
+            and ptype not in OUTER_M
+            and not shoe_like
+            and not acc_like
         ):
-            leaf = "bs-men-outerwear"
-        elif "bs-men-clothing" in cols:
-            leaf = "bs-men-clothing"
-        else:
-            leaf = "bs-men-new"
+            cols.append("bs-men-clothing")
+        if ptype in OUTER_M and "bs-men-outerwear" not in cols:
+            cols.append("bs-men-outerwear")
+        if icons_men:
+            cols.append("bs-men-icons")
+        if moto_men:
+            cols.append("bs-men-motorcycle")
+        if (
+            "bs-men-outerwear" not in cols
+            and "bs-men-clothing" not in cols
+            and not shoe_like
+            and not acc_like
+            and ptype.endswith("- M")
+        ):
+            cols.append("bs-men-clothing")
 
-    seen = set()
-    cols = [c for c in cols if not (c in seen or seen.add(c))]
-    return "luxury", leaf, cols
+    if icons_women:
+        leaf = "bs-women-icons"
+    elif moto_women:
+        leaf = "bs-women-motorcycle"
+    elif icons_men and not women_path:
+        leaf = "bs-men-icons"
+    elif moto_men and not women_path:
+        leaf = "bs-men-motorcycle"
+    elif sale_women and not (
+        {"bs-women-outerwear", "bs-women-clothing", "bs-women-new"} & set(cols)
+    ):
+        leaf = "bs-sale-women"
+    elif sale_men and not women_path and not (
+        {"bs-men-outerwear", "bs-men-clothing", "bs-men-new"} & set(cols)
+    ):
+        leaf = "bs-sale-men"
+    elif women_path and "bs-women-outerwear" in cols and (
+        "women-outerwear" in channels or ptype in OUTER_W
+    ):
+        leaf = "bs-women-outerwear"
+    elif women_path and "bs-women-clothing" in cols:
+        leaf = "bs-women-clothing"
+    elif women_path and "bs-women-new" in cols:
+        leaf = "bs-women-new"
+    elif women_path and sale_women:
+        leaf = "bs-sale-women"
+    elif women_path:
+        leaf = "bs-women"
+    elif "bs-men-outerwear" in cols and ("outerwear" in channels or ptype in OUTER_M):
+        leaf = "bs-men-outerwear"
+    elif "bs-men-clothing" in cols:
+        leaf = "bs-men-clothing"
+    elif "bs-men-new" in cols:
+        leaf = "bs-men-new"
+    elif sale_men:
+        leaf = "bs-sale-men"
+    else:
+        leaf = "bs-men"
+
+    return "luxury", leaf, _dedupe(cols)
+
+
 def shoe_fallback_chart(*, women: bool = False) -> dict:
     gender = "여성" if women else "남성"
     return {

@@ -421,10 +421,17 @@ export type SubcategoryId =
   | "bs-men-new"
   | "bs-men-outerwear"
   | "bs-men-clothing"
+  | "bs-men-icons"
+  | "bs-men-motorcycle"
   | "bs-women"
   | "bs-women-new"
   | "bs-women-outerwear"
   | "bs-women-clothing"
+  | "bs-women-icons"
+  | "bs-women-motorcycle"
+  | "bs-sale"
+  | "bs-sale-men"
+  | "bs-sale-women"
   | "belstaff-shoes"
   | "bs-shoes-men"
   | "bs-shoes-women"
@@ -436,13 +443,19 @@ export const BS_MEN_CLOTHING_IDS: SubcategoryId[] = [
   "bs-men-new",
   "bs-men-outerwear",
   "bs-men-clothing",
+  "bs-men-icons",
+  "bs-men-motorcycle",
 ];
 
 export const BS_WOMEN_CLOTHING_IDS: SubcategoryId[] = [
   "bs-women-new",
   "bs-women-outerwear",
   "bs-women-clothing",
+  "bs-women-icons",
+  "bs-women-motorcycle",
 ];
+
+export const BS_SALE_IDS: SubcategoryId[] = ["bs-sale-men", "bs-sale-women"];
 
 export const BS_MEN_SHOE_IDS: SubcategoryId[] = ["bs-shoes-men"];
 export const BS_WOMEN_SHOE_IDS: SubcategoryId[] = ["bs-shoes-women"];
@@ -1099,9 +1112,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ps-acc-men": [...PS_MEN_ACC_IDS],
   "ps-acc-women": [...PS_WOMEN_ACC_IDS],
   "ps-gifts": [...PS_GIFTS_IDS],
-  belstaff: ["bs-men", "bs-women", ...BS_MEN_CLOTHING_IDS, ...BS_WOMEN_CLOTHING_IDS],
+  belstaff: [
+    "bs-men",
+    "bs-women",
+    "bs-sale",
+    ...BS_MEN_CLOTHING_IDS,
+    ...BS_WOMEN_CLOTHING_IDS,
+    ...BS_SALE_IDS,
+  ],
   "bs-men": [...BS_MEN_CLOTHING_IDS],
   "bs-women": [...BS_WOMEN_CLOTHING_IDS],
+  "bs-sale": [...BS_SALE_IDS],
   "belstaff-shoes": [...BS_MEN_SHOE_IDS, ...BS_WOMEN_SHOE_IDS],
   "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
@@ -1551,6 +1572,16 @@ export const navCategories: NavCategory[] = [
                 labelKo: "의류",
                 href: "/shop?category=luxury&sub=bs-men-clothing",
               },
+              {
+                id: "bs-men-icons",
+                labelKo: "Icons",
+                href: "/shop?category=luxury&sub=bs-men-icons",
+              },
+              {
+                id: "bs-men-motorcycle",
+                labelKo: "Motorcycle",
+                href: "/shop?category=luxury&sub=bs-men-motorcycle",
+              },
             ],
           },
           {
@@ -1573,6 +1604,34 @@ export const navCategories: NavCategory[] = [
                 id: "bs-women-clothing",
                 labelKo: "의류",
                 href: "/shop?category=luxury&sub=bs-women-clothing",
+              },
+              {
+                id: "bs-women-icons",
+                labelKo: "Icons",
+                href: "/shop?category=luxury&sub=bs-women-icons",
+              },
+              {
+                id: "bs-women-motorcycle",
+                labelKo: "Motorcycle",
+                href: "/shop?category=luxury&sub=bs-women-motorcycle",
+              },
+            ],
+          },
+          {
+            id: "bs-sale",
+            labelKo: "세일",
+            href: "/shop?category=luxury&sub=bs-sale",
+            navLeaf: true,
+            children: [
+              {
+                id: "bs-sale-men",
+                labelKo: "남성용",
+                href: "/shop?category=luxury&sub=bs-sale-men",
+              },
+              {
+                id: "bs-sale-women",
+                labelKo: "여성용",
+                href: "/shop?category=luxury&sub=bs-sale-women",
               },
             ],
           },
