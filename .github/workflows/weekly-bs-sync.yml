@@ -32,22 +32,16 @@ jobs:
       - name: Sync Belstaff catalogue (stock + new + remove)
         run: python3 scripts/weekly-bs-stock-sync.py
 
-      - name: Push new PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs bs-pdp
-
-      - name: Commit and push if changed
+      - name: Commit and push catalogue
         run: |
-          git config user.name "briq-bot"
-          git config user.email "briq-bot@users.noreply.github.com"
-          git add -A src/data/bs scripts/weekly-bs-stock-sync.py scripts/push-product-images-tag.py
-          if git diff --staged --quiet; then
-            echo "No catalog changes."
-            exit 0
-          fi
-          git commit -m "$(cat <<'EOF'
-          chore: weekly Belstaff stock + catalogue sync
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Belstaff stock + catalogue sync" \
+            src/data/bs \
+            scripts/weekly-bs-stock-sync.py \
+            scripts/push-product-images-tag.py \
+            scripts/ci-commit-push.sh
 
-          Refresh sold-out / restocked options, add new styles, and drop discontinued products from belstaff.com.
-          EOF
-          )"
-          git push
+      - name: Push new PDP images to product-images tag
+        continue-on-error: true
+        run: python3 scripts/push-product-images-tag.py --dirs bs-pdp

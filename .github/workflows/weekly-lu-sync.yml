@@ -32,22 +32,19 @@ jobs:
       - name: Sync London Undercover catalogue (stock + new + remove)
         run: python3 scripts/weekly-lu-stock-sync.py
 
-      - name: Push new PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs lu-pdp
-
-      - name: Commit and push if changed
+      - name: Commit and push catalogue
         run: |
-          git config user.name "briq-bot"
-          git config user.email "briq-bot@users.noreply.github.com"
-          git add -A src/data/lu scripts/scrape-lu.py scripts/weekly-lu-stock-sync.py scripts/build-lu-catalog.py scripts/build-lu-lifestyle-catalog.py scripts/push-product-images-tag.py
-          if git diff --staged --quiet; then
-            echo "No catalog changes."
-            exit 0
-          fi
-          git commit -m "$(cat <<'EOF'
-          chore: weekly London Undercover stock + catalogue sync
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly London Undercover stock + catalogue sync" \
+            src/data/lu \
+            scripts/scrape-lu.py \
+            scripts/weekly-lu-stock-sync.py \
+            scripts/build-lu-catalog.py \
+            scripts/build-lu-lifestyle-catalog.py \
+            scripts/push-product-images-tag.py \
+            scripts/ci-commit-push.sh
 
-          Refresh sold-out / restocked options, add new styles, and drop discontinued products from londonundercover.co.uk.
-          EOF
-          )"
-          git push
+      - name: Push new PDP images to product-images tag
+        continue-on-error: true
+        run: python3 scripts/push-product-images-tag.py --dirs lu-pdp

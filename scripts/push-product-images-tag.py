@@ -5,6 +5,8 @@ Used by weekly brand syncs so Vercel (raw.githubusercontent.com rewrite)
 serves new / updated product photos without bloating `main`.
 
   python3 scripts/push-product-images-tag.py --dirs bs-pdp ps-pdp lu-pdp
+
+Exits 0 when there is nothing to do. Never leaves a dirty worktree behind.
 """
 from __future__ import annotations
 
@@ -20,9 +22,26 @@ ROOT = Path(__file__).resolve().parents[1]
 TAG = "product-images"
 
 
-def run(cmd: list[str], cwd: Path | None = None, check: bool = True) -> subprocess.CompletedProcess:
+def run(
+    cmd: list[str],
+    cwd: Path | None = None,
+    check: bool = True,
+) -> subprocess.CompletedProcess:
     print("+", " ".join(cmd), flush=True)
     return subprocess.run(cmd, cwd=str(cwd or ROOT), check=check)
+
+
+def ensure_git_identity(cwd: Path) -> None:
+    run(
+        ["git", "config", "user.name", "briq-bot"],
+        cwd=cwd,
+        check=False,
+    )
+    run(
+        ["git", "config", "user.email", "briq-bot@users.noreply.github.com"],
+        cwd=cwd,
+        check=False,
+    )
 
 
 def main() -> int:
@@ -48,12 +67,36 @@ def main() -> int:
         return 0
 
     # Need the tag available
-    run(["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"], check=False)
+    fetched = run(
+        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+        check=False,
+    )
+    if fetched.returncode != 0:
+        # Tag may already exist locally
+        show = run(["git", "rev-parse", "--verify", TAG], check=False)
+        if show.returncode != 0:
+            print(
+                f"WARN: tag {TAG} not available — skip image tag update "
+                "(catalogue commit can still proceed).",
+                flush=True,
+            )
+            return 0
 
     tmp = Path(tempfile.mkdtemp(prefix="briq-product-images-"))
     try:
-        run(["git", "worktree", "add", "--detach", str(tmp), TAG])
-        staged = 0
+        added = run(
+            ["git", "worktree", "add", "--detach", str(tmp), TAG],
+            check=False,
+        )
+        if added.returncode != 0:
+            print(
+                f"WARN: could not check out tag {TAG} — skip image tag update.",
+                flush=True,
+            )
+            return 0
+
+        ensure_git_identity(tmp)
+
         for name, src in src_roots:
             dest = tmp / "public" / "products" / name
             dest.mkdir(parents=True, exist_ok=True)
@@ -66,7 +109,6 @@ def main() -> int:
                     shutil.rmtree(target)
                 shutil.copytree(child, target)
             run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
-            staged += 1
 
         status = subprocess.run(
             ["git", "status", "--porcelain"],
@@ -89,13 +131,19 @@ def main() -> int:
             cwd=tmp,
         )
         run(["git", "tag", "-f", TAG], cwd=tmp)
-        # Prefer GITHUB_TOKEN remote when present
-        token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-        if token:
-            # origin already authenticated in Actions via checkout token
-            run(["git", "push", "-f", "origin", f"refs/tags/{TAG}"], cwd=tmp)
-        else:
-            run(["git", "push", "-f", "origin", f"refs/tags/{TAG}"], cwd=tmp)
+        pushed = run(
+            ["git", "push", "-f", "origin", f"refs/tags/{TAG}"],
+            cwd=tmp,
+            check=False,
+        )
+        if pushed.returncode != 0:
+            print(
+                "WARN: failed to push product-images tag "
+                "(check Actions write permissions / tag protection).",
+                flush=True,
+            )
+            # Do not fail the whole weekly job — catalogue sync still valuable.
+            return 0
         print("product-images tag updated.", flush=True)
         return 0
     finally:
