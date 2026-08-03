@@ -2,6 +2,9 @@ import type { Product } from "@/data/products";
 
 export type ProductSort = "new" | "orders" | "price-asc" | "price-desc";
 
+/** Default shop / homepage sort — always 최신등록순 unless the URL overrides it. */
+export const DEFAULT_PRODUCT_SORT: ProductSort = "new";
+
 export const PRODUCT_SORTS: { id: ProductSort; label: string }[] = [
   { id: "new", label: "최신등록순" },
   { id: "orders", label: "주문많은순" },
@@ -18,7 +21,7 @@ export function parseProductSort(value?: string | null): ProductSort {
   ) {
     return value;
   }
-  return "new";
+  return DEFAULT_PRODUCT_SORT;
 }
 
 function registeredAtMs(product: Product): number {
@@ -83,6 +86,8 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
 /**
  * Homepage lookbook rails — always newest registered first.
  * Prefers in-stock styles so OOS newest items don't occupy the rail.
+ * `registeredAt` is Briq catalogue registration time (set when a SKU is first
+ * imported); rebuilds must preserve it so newly added brands stay on top.
  */
 export function getHomepageRailProducts(
   list: Product[],
@@ -90,7 +95,7 @@ export function getHomepageRailProducts(
 ): Product[] {
   const inStock = list.filter((p) => p.inStock !== false);
   const pool = inStock.length >= limit ? inStock : list;
-  return sortProducts(pool, "new").slice(0, limit);
+  return sortProducts(pool, DEFAULT_PRODUCT_SORT).slice(0, limit);
 }
 
 /** Build a /shop href while preserving filters and updating sort. */
@@ -106,7 +111,8 @@ export function buildShopHref(params: {
   }
   if (params.sub) sp.set("sub", params.sub);
   if (params.q?.trim()) sp.set("q", params.q.trim());
-  if (params.sort) sp.set("sort", params.sort);
+  // Always persist sort explicitly so shares / filters keep 최신등록순 visible.
+  sp.set("sort", params.sort ?? DEFAULT_PRODUCT_SORT);
   const qs = sp.toString();
   return qs ? `/shop?${qs}` : "/shop";
 }

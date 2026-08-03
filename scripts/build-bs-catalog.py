@@ -398,6 +398,21 @@ def build() -> None:
     now = datetime.now(timezone.utc)
     out: list[dict] = []
 
+    # Preserve Briq registration timestamps across rebuilds so re-scrapes
+    # don't reshuffle the homepage / 최신등록순 order.
+    prev_registered: dict[str, str] = {}
+    if OUT_JSON.exists():
+        try:
+            for prev in json.loads(OUT_JSON.read_text()):
+                pid = prev.get("id")
+                reg = prev.get("registeredAt")
+                if pid and reg:
+                    prev_registered[str(pid)] = str(reg)
+        except Exception:
+            prev_registered = {}
+
+    new_stamp_i = 0
+
     for idx, row in enumerate(products_in):
         handle = row.get("handle") or ""
         if not handle:
@@ -515,18 +530,24 @@ def build() -> None:
             women=is_women(row),
         )
 
-        # registration time: newer first, slightly offset by index
-        pub = row.get("published_at") or row.get("created_at")
-        try:
-            reg = datetime.fromisoformat(pub.replace("Z", "+00:00")) if pub else now
-        except Exception:
-            reg = now - timedelta(minutes=idx)
-        # bump scrape order so new arrivals rank well among same publish day
-        chans = set(row.get("channels") or [])
-        if "new" in chans or "women-new" in chans:
-            reg = max(reg, now - timedelta(hours=6) - timedelta(seconds=idx))
+        # Briq registration time (not Belstaff publish date):
+        # - preserve existing registeredAt on rebuilds
+        # - brand-new SKUs get "now" so they surface on homepage / 최신등록순
+        pid = f"bs-{handle}"
+        if pid in prev_registered:
+            try:
+                reg = datetime.fromisoformat(
+                    prev_registered[pid].replace("Z", "+00:00")
+                )
+            except Exception:
+                reg = now - timedelta(seconds=new_stamp_i)
+                new_stamp_i += 1
+        else:
+            reg = now - timedelta(seconds=new_stamp_i)
+            new_stamp_i += 1
 
         badge = None
+        chans = set(row.get("channels") or [])
         if "new" in chans or "women-new" in chans:
             badge = "New"
         if compare and compare > price:
@@ -534,7 +555,7 @@ def build() -> None:
 
         in_stock = any(v["inStock"] for v in variants_out)
         product = {
-            "id": f"bs-{handle}",
+            "id": pid,
             "name": title,
             "nameKo": name_ko,
             "brand": "벨스타프",
