@@ -415,7 +415,26 @@ export type SubcategoryId =
   | "ps-acc-women-other"
   | "ps-gifts-him"
   | "ps-gifts-her"
-  | "ps-gifts-homeware";
+  | "ps-gifts-homeware"
+  | "belstaff"
+  | "bs-men"
+  | "bs-men-new"
+  | "bs-men-outerwear"
+  | "bs-men-clothing"
+  | "belstaff-shoes"
+  | "bs-shoes-men"
+  | "belstaff-accessories"
+  | "bs-acc-men";
+
+export const BS_MEN_CLOTHING_IDS: SubcategoryId[] = [
+  "bs-men-new",
+  "bs-men-outerwear",
+  "bs-men-clothing",
+];
+
+export const BS_MEN_SHOE_IDS: SubcategoryId[] = ["bs-shoes-men"];
+
+export const BS_MEN_ACC_IDS: SubcategoryId[] = ["bs-acc-men"];
 
 /** Christopher Ward leaf collections under the parent brand chip. */
 export const CW_COLLECTION_IDS: SubcategoryId[] = [
@@ -1066,6 +1085,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ps-acc-men": [...PS_MEN_ACC_IDS],
   "ps-acc-women": [...PS_WOMEN_ACC_IDS],
   "ps-gifts": [...PS_GIFTS_IDS],
+  belstaff: ["bs-men", ...BS_MEN_CLOTHING_IDS],
+  "bs-men": [...BS_MEN_CLOTHING_IDS],
+  "belstaff-shoes": [...BS_MEN_SHOE_IDS],
+  "belstaff-accessories": [...BS_MEN_ACC_IDS],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -1483,6 +1506,36 @@ export const navCategories: NavCategory[] = [
                 labelKo: "기타 의류",
                 href: "/shop?category=luxury&sub=ps-women-other",
               }
+            ],
+          },
+        ],
+      },
+      {
+        id: "belstaff",
+        labelKo: "벨스타프",
+        href: "/shop?category=luxury&sub=belstaff",
+        children: [
+          {
+            id: "bs-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=bs-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "bs-men-new",
+                labelKo: "신상품",
+                href: "/shop?category=luxury&sub=bs-men-new",
+              },
+              {
+                id: "bs-men-outerwear",
+                labelKo: "아웃웨어",
+                href: "/shop?category=luxury&sub=bs-men-outerwear",
+              },
+              {
+                id: "bs-men-clothing",
+                labelKo: "의류",
+                href: "/shop?category=luxury&sub=bs-men-clothing",
+              },
             ],
           },
         ],
@@ -2044,6 +2097,19 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "belstaff-shoes",
+        labelKo: "벨스타프",
+        href: "/shop?category=shoes&sub=belstaff-shoes",
+        children: [
+          {
+            id: "bs-shoes-men",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=bs-shoes-men",
+            navLeaf: true,
+          },
+        ],
+      },
+      {
         id: "burberry-shoes",
         labelKo: "버버리",
         href: "/shop?category=shoes&sub=burberry-shoes",
@@ -2382,6 +2448,19 @@ export const navCategories: NavCategory[] = [
                 href: "/shop?category=accessories&sub=ps-gifts-homeware",
               }
             ],
+          },
+        ],
+      },
+      {
+        id: "belstaff-accessories",
+        labelKo: "벨스타프",
+        href: "/shop?category=accessories&sub=belstaff-accessories",
+        children: [
+          {
+            id: "bs-acc-men",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=bs-acc-men",
+            navLeaf: true,
           },
         ],
       },

@@ -18,6 +18,7 @@ const SLIM_DIRS = [
   "axg-pdp",
   "axo-pdp",
   "ps-pdp",
+  "bs-pdp",
   "bb-pdp",
   "gg-pdp",
   "cw-pdp",

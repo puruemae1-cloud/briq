@@ -10,6 +10,7 @@ import { axGearCatalogProducts } from "@/data/ax/ax-gear-catalog";
 import { luCatalogProducts } from "@/data/lu/lu-catalog";
 import { luLifestyleCatalogProducts } from "@/data/lu/lu-lifestyle-catalog";
 import { psCatalogProducts } from "@/data/ps/ps-catalog";
+import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 
 export type ProductStorySection = {
   titleKo: string;
@@ -64,6 +65,8 @@ export type ProductVariant = {
   luCollections?: SubcategoryId[];
   /** Paul Smith PLP memberships. */
   psCollections?: SubcategoryId[];
+  /** Belstaff PLP memberships. */
+  bsCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -106,6 +109,8 @@ export type Product = {
   luCollections?: SubcategoryId[];
   /** Paul Smith PLP memberships. */
   psCollections?: SubcategoryId[];
+  /** Belstaff PLP memberships. */
+  bsCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;
@@ -361,6 +366,7 @@ export const products: Product[] = [
   ...luCatalogProducts,
   ...luLifestyleCatalogProducts,
   ...psCatalogProducts,
+  ...bsCatalogProducts,
 ];
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
@@ -767,6 +773,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.axCollections?.some((c) => expanded.includes(c))) return true;
       if (p.luCollections?.some((c) => expanded.includes(c))) return true;
       if (p.psCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.bsCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
@@ -776,6 +783,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.luCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.psCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.bsCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });
