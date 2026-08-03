@@ -516,16 +516,33 @@ def build() -> None:
 
     # Preserve Briq registration timestamps across rebuilds so re-scrapes
     # don't reshuffle the homepage / 최신등록순 order.
+    # Exception: when an existing SKU newly joins a "drop" collection
+    # (Icons / Motorcycle / Sale), bump registeredAt so it surfaces on top.
+    RELIST_COLLECTIONS = {
+        "bs-men-icons",
+        "bs-women-icons",
+        "bs-men-motorcycle",
+        "bs-women-motorcycle",
+        "bs-sale-men",
+        "bs-sale-women",
+    }
     prev_registered: dict[str, str] = {}
+    prev_collections: dict[str, set[str]] = {}
     if OUT_JSON.exists():
         try:
             for prev in json.loads(OUT_JSON.read_text()):
                 pid = prev.get("id")
+                if not pid:
+                    continue
                 reg = prev.get("registeredAt")
-                if pid and reg:
+                if reg:
                     prev_registered[str(pid)] = str(reg)
+                prev_collections[str(pid)] = {
+                    str(c) for c in (prev.get("bsCollections") or [])
+                }
         except Exception:
             prev_registered = {}
+            prev_collections = {}
 
     new_stamp_i = 0
 
@@ -649,8 +666,13 @@ def build() -> None:
         # Briq registration time (not Belstaff publish date):
         # - preserve existing registeredAt on rebuilds
         # - brand-new SKUs get "now" so they surface on homepage / 최신등록순
+        # - newly joining Icons / Motorcycle / Sale also get "now"
         pid = f"bs-{handle}"
-        if pid in prev_registered:
+        gained_relist = bool(
+            (set(cols) & RELIST_COLLECTIONS)
+            - prev_collections.get(pid, set())
+        )
+        if pid in prev_registered and not gained_relist:
             try:
                 reg = datetime.fromisoformat(
                     prev_registered[pid].replace("Z", "+00:00")
