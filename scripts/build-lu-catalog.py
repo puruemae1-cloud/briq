@@ -74,6 +74,20 @@ _KO_NORM: dict[str, str] = {
 }
 
 
+def load_prev_registered(ts_path: Path) -> dict[str, str]:
+    """Parse id → registeredAt from an existing inline TS catalogue."""
+    if not ts_path.exists():
+        return {}
+    text = ts_path.read_text(encoding="utf-8", errors="replace")
+    out: dict[str, str] = {}
+    for m in re.finditer(
+        r'id:\s*"([^"]+)"[\s\S]*?registeredAt:\s*"([^"]+)"',
+        text,
+    ):
+        out[m.group(1)] = m.group(2)
+    return out
+
+
 def t(text: str | None) -> str:
     if not text:
         return ""
@@ -267,6 +281,8 @@ def main() -> None:
         meta[en] = (en, ko, leaf)
 
     batch_start = datetime.now(timezone.utc).replace(microsecond=0)
+    prev_registered = load_prev_registered(OUT_PATH)
+    new_stamp_i = 0
     blocks: list[str] = []
 
     for idx, (style_en, items) in enumerate(sorted(groups.items(), key=lambda x: x[0])):
@@ -373,10 +389,14 @@ def main() -> None:
         if min_compare and min_compare > (min_price or 0):
             badge = "Sale"
 
-        registered = (batch_start + timedelta(seconds=idx)).strftime(
-            "%Y-%m-%dT%H:%M:%S.000Z"
-        )
         style_id = f"lu-{slugify(style_en)}"
+        if style_id in prev_registered:
+            registered = prev_registered[style_id]
+        else:
+            registered = (batch_start - timedelta(seconds=new_stamp_i)).strftime(
+                "%Y-%m-%dT%H:%M:%S.000Z"
+            )
+            new_stamp_i += 1
         accent = ACCENTS[idx % len(ACCENTS)]
 
         tech = []

@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ps/ps-catalog-raw.json"
+OUT_JSON = ROOT / "src/data/ps/ps-catalog.json"
 OUT_PATH = ROOT / "src/data/ps/ps-catalog.ts"
 CACHE_PATH = ROOT / "src/data/ps/ps-translate-cache.json"
 
@@ -696,8 +697,20 @@ def main() -> None:
     raw = json.loads(RAW_PATH.read_text())
     print(f"raw products={len(raw)}")
 
-    batch_start = datetime(2026, 8, 2, 12, 0, tzinfo=timezone.utc)
-    blocks: list[str] = []
+    prev_registered: dict[str, str] = {}
+    if OUT_JSON.exists():
+        try:
+            for prev in json.loads(OUT_JSON.read_text()):
+                pid = prev.get("id")
+                reg = prev.get("registeredAt")
+                if pid and reg:
+                    prev_registered[str(pid)] = str(reg)
+        except Exception:
+            prev_registered = {}
+
+    now = datetime.now(timezone.utc)
+    new_stamp_i = 0
+    products_out: list[dict] = []
     accents = ["#1a1a1a", "#2c2c2c", "#3d3d3d", "#111111"]
     count = 0
 
@@ -735,7 +748,21 @@ def main() -> None:
 
         variants = build_variants(row, price, compare, cols)
         any_stock = any(v.get("inStock") for v in variants)
-        # product price = cheapest in-stock else cheapest
+        # Prefer PLP inStock when entity stock is stale
+        plp_vars = (plp.get("variants") or [])
+        if plp_vars:
+            by_label = {
+                str(v.get("label") or "").strip(): bool(v.get("inStock"))
+                for v in plp_vars
+                if v.get("label") is not None
+            }
+            if by_label:
+                for v in variants:
+                    size = (v.get("size") or "").strip()
+                    if size in by_label:
+                        v["inStock"] = by_label[size]
+                any_stock = any(v.get("inStock") for v in variants)
+
         priced = [v for v in variants if v.get("inStock")] or variants
         price = min(v["price"] for v in priced)
         compare_candidates = [v.get("compareAtPrice") for v in priced if v.get("compareAtPrice")]
@@ -750,7 +777,6 @@ def main() -> None:
             "발" in h or "foot" in h.lower() or "shoe" in h.lower()
             for h in (chart.get("headers") or [])
         ):
-            # Prefer dedicated UK shoe chart when measurement chart is apparel-like
             chart = shoe_size_chart()
 
         badge = None
@@ -759,94 +785,75 @@ def main() -> None:
         elif entity.get("newProduct"):
             badge = "New"
 
-        registered = (batch_start + timedelta(seconds=idx)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        pid = f"ps-{handle}"
+        if pid in prev_registered:
+            registered = prev_registered[pid]
+        else:
+            registered = (now - timedelta(seconds=new_stamp_i)).strftime(
+                "%Y-%m-%dT%H:%M:%SZ"
+            )
+            new_stamp_i += 1
+
         story = story_sections(name_ko, desc_ko, images, details)
         features = [d for d in details if d][:8]
         tech = [{"labelKo": "특징", "valueKo": f} for f in features[:6]]
 
-        pid = f"ps-{handle}"
-        lines = [
-            "  {",
-            f"    id: {js_str(pid)},",
-            f"    name: {js_str(title)},",
-            f"    nameKo: {js_str(name_ko)},",
-            f'    brand: "폴 스미스",',
-            f"    price: {price},",
-        ]
+        product: dict = {
+            "id": pid,
+            "name": title,
+            "nameKo": name_ko,
+            "brand": "폴 스미스",
+            "price": price,
+            "category": cat,
+            "subcategory": sub,
+            "psCollections": cols,
+            "tags": ["paul smith", "폴 스미스", *cols[:6]],
+            "descriptionKo": (desc_ko[:1200] if desc_ko else name_ko),
+            "image": images[0],
+            "images": images,
+            "hoverImage": images[1] if len(images) > 1 else images[0],
+            "accent": accents[idx % len(accents)],
+            "gbpPrice": gbp_sell,
+            "sku": str(entity.get("sku") or handle),
+            "sourceUrl": row.get("sourceUrl") or "",
+            "inStock": any_stock,
+            "registeredAt": registered,
+            "variants": variants,
+        }
         if compare:
-            lines.append(f"    compareAtPrice: {compare},")
-        lines += [
-            f"    category: {js_str(cat)},",
-            f"    subcategory: {js_str(sub)},",
-            f"    psCollections: {json.dumps(cols, ensure_ascii=False)} as Product[\"psCollections\"],",
-            f"    tags: {json.dumps(['paul smith', '폴 스미스', *cols[:6]], ensure_ascii=False)},",
-            f"    descriptionKo: {js_str(desc_ko[:1200] if desc_ko else name_ko)},",
-            f"    image: {js_str(images[0])},",
-            f"    images: {json.dumps(images, ensure_ascii=False)},",
-            f"    hoverImage: {js_str(images[1] if len(images) > 1 else images[0])},",
-            f"    accent: {js_str(accents[idx % len(accents)])},",
-        ]
+            product["compareAtPrice"] = compare
         if badge:
-            lines.append(f"    badge: {js_str(badge)},")
-        lines += [
-            f"    gbpPrice: {gbp_sell},",
-        ]
+            product["badge"] = badge
         if gbp_list > gbp_sell:
-            lines.append(f"    gbpListPrice: {gbp_list},")
-        lines += [
-            f"    sku: {js_str(str(entity.get('sku') or handle))},",
-            f"    sourceUrl: {js_str(row.get('sourceUrl') or '')},",
-            f"    inStock: {str(any_stock).lower()},",
-            f"    registeredAt: {js_str(registered)},",
-        ]
+            product["gbpListPrice"] = gbp_list
         if chart:
-            lines.append(f"    sizeChart: {json.dumps(chart, ensure_ascii=False)},")
+            product["sizeChart"] = chart
         if story:
-            lines.append(f"    storySections: {json.dumps(story, ensure_ascii=False)},")
+            product["storySections"] = story
         if features:
-            lines.append(f"    featuresKo: {json.dumps(features, ensure_ascii=False)},")
+            product["featuresKo"] = features
         if tech:
-            lines.append(f"    techSpecs: {json.dumps(tech, ensure_ascii=False)},")
-        # variants
-        lines.append("    variants: [")
-        for v in variants:
-            lines.append("      {")
-            for k, val in v.items():
-                if val is None:
-                    continue
-                if k == "psCollections":
-                    lines.append(f"        psCollections: {json.dumps(val, ensure_ascii=False)} as ProductVariant[\"psCollections\"],")
-                elif isinstance(val, bool):
-                    lines.append(f"        {k}: {str(val).lower()},")
-                elif isinstance(val, (int, float)):
-                    lines.append(f"        {k}: {val},")
-                elif isinstance(val, list):
-                    lines.append(f"        {k}: {json.dumps(val, ensure_ascii=False)},")
-                else:
-                    lines.append(f"        {k}: {js_str(str(val))},")
-            lines.append("      },")
-        lines.append("    ],")
-        lines.append("  },")
-        blocks.append("\n".join(lines))
+            product["techSpecs"] = tech
+
+        products_out.append(product)
         count += 1
         if count % 40 == 0:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
             print(f"built {count}", flush=True)
 
+    products_out.sort(key=lambda p: p.get("registeredAt") or "", reverse=True)
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
-    out = "\n".join(
-        [
-            'import type { Product, ProductVariant } from "@/data/products";',
-            "",
-            "/** Auto-generated Paul Smith catalogue — do not edit by hand. */",
-            "export const psCatalogProducts = [",
-            *blocks,
-            "] as unknown as Product[];",
-            "",
-        ]
+    OUT_JSON.write_text(
+        json.dumps(products_out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    OUT_PATH.write_text(out)
-    print(f"Wrote {count} products → {OUT_PATH}")
+    OUT_PATH.write_text(
+        'import type { Product } from "@/data/products";\n'
+        'import data from "./ps-catalog.json";\n\n'
+        "/** Auto-generated — thin wrapper over JSON catalogue. */\n"
+        "export const psCatalogProducts = data as unknown as Product[];\n",
+        encoding="utf-8",
+    )
+    print(f"Wrote {count} products → {OUT_JSON.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
