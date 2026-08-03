@@ -353,14 +353,29 @@ def build() -> None:
 
         name_ko = t(title)
         desc_ko = t(body) if body else ""
-        # features from bullet-ish lines
+        # Official PDP Details accordion (preferred) → featuresKo
         features = []
-        for line in (body or "").split("\n"):
-            line = line.strip(" •-\t")
-            if 12 <= len(line) <= 120:
+        for line in row.get("details") or []:
+            line = re.sub(r"\s+", " ", str(line)).strip()
+            if line:
                 features.append(t(line))
-            if len(features) >= 6:
-                break
+        if not features:
+            for line in (body or "").split("\n"):
+                line = line.strip(" •-\t")
+                if 12 <= len(line) <= 120:
+                    features.append(t(line))
+                if len(features) >= 6:
+                    break
+
+        specs = []
+        for line in row.get("fit") or []:
+            line = re.sub(r"\s+", " ", str(line)).strip()
+            if line:
+                specs.append({"labelKo": "핏", "valueKo": t(line)})
+        for line in (row.get("care") or [])[:6]:
+            line = re.sub(r"\s+", " ", str(line)).strip()
+            if line:
+                specs.append({"labelKo": "케어", "valueKo": t(line)})
 
         chart = to_size_chart(
             row.get("sizeChart"), shoes=shoes, title_ko=name_ko or "벨스타프"
@@ -409,6 +424,7 @@ def build() -> None:
             "sizeChart": chart,
             "registeredAt": reg.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "featuresKo": features or None,
+            "techSpecs": specs or None,
             "storySections": [
                 {
                     "titleKo": name_ko,
@@ -423,6 +439,8 @@ def build() -> None:
         # drop None features
         if not product.get("featuresKo"):
             product.pop("featuresKo", None)
+        if not product.get("techSpecs"):
+            product.pop("techSpecs", None)
         if not product.get("storySections"):
             product.pop("storySections", None)
 
