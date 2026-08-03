@@ -120,6 +120,10 @@ SHOE_TYPES = {
     "TRAINERS - M",
     "SHOES - M",
     "FOOTWEAR - M",
+    "BOOTS - W",
+    "TRAINERS - W",
+    "SHOES - W",
+    "FOOTWEAR - W",
 }
 ACC_TYPES_PREFIX = (
     "HATS",
@@ -129,19 +133,51 @@ ACC_TYPES_PREFIX = (
     "MISC",
     "GIFT",
 )
-OUTER_TYPES = {"JACKETS - M", "COATS - M", "GILETS - M"}
+OUTER_TYPES = {
+    "JACKETS - M",
+    "COATS - M",
+    "GILETS - M",
+    "JACKETS - W",
+    "COATS - W",
+    "GILETS - W",
+}
+
+
+def is_women(row: dict) -> bool:
+    channels = set(row.get("channels") or [])
+    ptype = row.get("product_type") or ""
+    if any(str(c).startswith("women-") for c in channels):
+        return True
+    if ptype.endswith("- W"):
+        return True
+    tags = {str(t).lower() for t in (row.get("tags") or [])}
+    if ("women" in tags or "womenswear" in tags) and not ptype.endswith("- M"):
+        # only if no explicit men channel
+        if not (channels & {"new", "outerwear", "clothing", "footwear", "accessories"}):
+            return True
+    return False
 
 
 def is_shoe(channels: set[str], ptype: str) -> bool:
-    if "footwear" in channels:
+    if "footwear" in channels or "women-footwear" in channels:
         return True
-    return ptype in SHOE_TYPES or ptype.startswith("BOOTS") or ptype.startswith("TRAINERS")
+    return (
+        ptype in SHOE_TYPES
+        or ptype.startswith("BOOTS")
+        or ptype.startswith("TRAINERS")
+    )
 
 
 def is_accessory(channels: set[str], ptype: str, title: str) -> bool:
-    if "footwear" in channels:
+    if "footwear" in channels or "women-footwear" in channels:
         return False
-    if "accessories" in channels and "clothing" not in channels and "outerwear" not in channels:
+    if (
+        ("accessories" in channels or "women-accessories" in channels)
+        and "clothing" not in channels
+        and "women-clothing" not in channels
+        and "outerwear" not in channels
+        and "women-outerwear" not in channels
+    ):
         return True
     if any(ptype.startswith(p) for p in ACC_TYPES_PREFIX):
         return True
@@ -157,47 +193,134 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
     channels = set(row.get("channels") or [])
     ptype = row.get("product_type") or ""
     title = row.get("title") or ""
+    women = is_women(row)
 
-    # Shoes (incl. new-arrivals footwear) → 슈즈 → 벨스타프 → 남성용
+    # Dual-list unisex: may have both men + women accessory channels
+    has_men_ch = bool(
+        channels & {"new", "outerwear", "clothing", "footwear", "accessories"}
+    )
+    has_women_ch = any(str(c).startswith("women-") for c in channels)
+
     if is_shoe(channels, ptype):
-        return "shoes", "bs-shoes-men", ["belstaff-shoes", "bs-shoes-men"]
+        cols = ["belstaff-shoes"]
+        leaf = "bs-shoes-women" if (women or "women-footwear" in channels) else "bs-shoes-men"
+        # if both footwear channels somehow
+        if "footwear" in channels or (has_men_ch and not has_women_ch and not women):
+            cols.append("bs-shoes-men")
+            if not women and "women-footwear" not in channels:
+                leaf = "bs-shoes-men"
+        if women or "women-footwear" in channels:
+            if "bs-shoes-women" not in cols:
+                cols.append("bs-shoes-women")
+            leaf = "bs-shoes-women" if (women or "women-footwear" in channels) else leaf
+        if "bs-shoes-men" not in cols and "bs-shoes-women" not in cols:
+            cols.append(leaf)
+        seen: set[str] = set()
+        cols = [c for c in cols if not (c in seen or seen.add(c))]
+        return "shoes", leaf, cols
 
-    # Accessories → 악세서리 → 벨스타프 → 남성용
     if is_accessory(channels, ptype, title):
-        return "accessories", "bs-acc-men", ["belstaff-accessories", "bs-acc-men"]
+        cols = ["belstaff-accessories"]
+        if has_men_ch or (not has_women_ch and not women):
+            cols.append("bs-acc-men")
+        if has_women_ch or women:
+            cols.append("bs-acc-women")
+        if "bs-acc-men" not in cols and "bs-acc-women" not in cols:
+            cols.append("bs-acc-women" if women else "bs-acc-men")
+        leaf = "bs-acc-women" if (women or has_women_ch) else "bs-acc-men"
+        seen = set()
+        cols = [c for c in cols if not (c in seen or seen.add(c))]
+        return "accessories", leaf, cols
 
-    cols = ["belstaff", "bs-men"]
-    if "new" in channels:
-        cols.append("bs-men-new")
-    if "outerwear" in channels or ptype in OUTER_TYPES:
-        cols.append("bs-men-outerwear")
-    if "clothing" in channels or ptype not in OUTER_TYPES:
-        cols.append("bs-men-clothing")
-    if ptype in OUTER_TYPES and "bs-men-outerwear" not in cols:
-        cols.append("bs-men-outerwear")
-    if "bs-men-outerwear" not in cols and "bs-men-clothing" not in cols:
-        cols.append("bs-men-clothing")
-
-    if "bs-men-outerwear" in cols and "clothing" not in channels and ptype in OUTER_TYPES:
-        leaf = "bs-men-outerwear"
-    elif "bs-men-outerwear" in cols and "outerwear" in channels:
-        leaf = "bs-men-outerwear"
-    elif "bs-men-clothing" in cols:
-        leaf = "bs-men-clothing"
+    # Apparel / outerwear
+    cols = ["belstaff"]
+    if women or has_women_ch:
+        cols.append("bs-women")
+        if "women-new" in channels:
+            cols.append("bs-women-new")
+        if "women-outerwear" in channels or ptype in {
+            "JACKETS - W",
+            "COATS - W",
+            "GILETS - W",
+        }:
+            cols.append("bs-women-outerwear")
+        if "women-clothing" in channels or ptype not in {
+            "JACKETS - W",
+            "COATS - W",
+            "GILETS - W",
+        }:
+            if "women-clothing" in channels or (
+                ptype.endswith("- W")
+                and ptype not in {"JACKETS - W", "COATS - W", "GILETS - W"}
+            ):
+                cols.append("bs-women-clothing")
+        if "bs-women-outerwear" not in cols and "bs-women-clothing" not in cols:
+            if ptype in {"JACKETS - W", "COATS - W", "GILETS - W"}:
+                cols.append("bs-women-outerwear")
+            else:
+                cols.append("bs-women-clothing")
+        if "bs-women-outerwear" in cols and (
+            "women-outerwear" in channels
+            or ptype in {"JACKETS - W", "COATS - W", "GILETS - W"}
+        ):
+            leaf = "bs-women-outerwear"
+        elif "bs-women-clothing" in cols:
+            leaf = "bs-women-clothing"
+        else:
+            leaf = "bs-women-new"
+        # If also listed under men channels, keep men memberships too
+        if has_men_ch and not ptype.endswith("- W"):
+            cols.append("bs-men")
     else:
-        leaf = "bs-men-new"
+        cols.append("bs-men")
+        if "new" in channels:
+            cols.append("bs-men-new")
+        if "outerwear" in channels or ptype in {"JACKETS - M", "COATS - M", "GILETS - M"}:
+            cols.append("bs-men-outerwear")
+        if "clothing" in channels or ptype not in {
+            "JACKETS - M",
+            "COATS - M",
+            "GILETS - M",
+        }:
+            cols.append("bs-men-clothing")
+        if ptype in {"JACKETS - M", "COATS - M", "GILETS - M"} and "bs-men-outerwear" not in cols:
+            cols.append("bs-men-outerwear")
+        if "bs-men-outerwear" not in cols and "bs-men-clothing" not in cols:
+            cols.append("bs-men-clothing")
+        if "bs-men-outerwear" in cols and (
+            "outerwear" in channels or ptype in {"JACKETS - M", "COATS - M", "GILETS - M"}
+        ):
+            leaf = "bs-men-outerwear"
+        elif "bs-men-clothing" in cols:
+            leaf = "bs-men-clothing"
+        else:
+            leaf = "bs-men-new"
 
-    seen: set[str] = set()
+    seen = set()
     cols = [c for c in cols if not (c in seen or seen.add(c))]
     return "luxury", leaf, cols
-
-def shoe_fallback_chart() -> dict:
+def shoe_fallback_chart(*, women: bool = False) -> dict:
+    gender = "여성" if women else "남성"
     return {
-        "id": "bs-shoes-mens-uk",
-        "titleKo": "벨스타프 남성 슈즈 사이즈 차트 (UK)",
+        "id": "bs-shoes-womens-uk" if women else "bs-shoes-mens-uk",
+        "titleKo": f"벨스타프 {gender} 슈즈 사이즈 차트 (UK)",
         "noteKo": "Belstaff 표기 사이즈는 UK 기준입니다. 발 길이를 재어 가장 가까운 수치를 선택하세요.",
         "headers": ["UK", "EU", "US", "KR(mm)"],
         "rows": [
+            ["3", "36", "5", "220"],
+            ["3.5", "36.5", "5.5", "225"],
+            ["4", "37", "6", "230"],
+            ["4.5", "37.5", "6.5", "235"],
+            ["5", "38", "7", "240"],
+            ["5.5", "38.5", "7.5", "245"],
+            ["6", "39", "8", "250"],
+            ["6.5", "40", "8.5", "253"],
+            ["7", "41", "9", "255"],
+            ["7.5", "41.5", "9.5", "258"],
+            ["8", "42", "10", "260"],
+        ]
+        if women
+        else [
             ["6", "40", "7", "250"],
             ["6.5", "40.5", "7.5", "253"],
             ["7", "41", "8", "255"],
@@ -215,13 +338,22 @@ def shoe_fallback_chart() -> dict:
     }
 
 
-def apparel_fallback_chart() -> dict:
+def apparel_fallback_chart(*, women: bool = False) -> dict:
+    gender = "여성" if women else "남성"
     return {
-        "id": "bs-men-apparel-alpha",
-        "titleKo": "벨스타프 남성 의류 사이즈 차트",
+        "id": "bs-women-apparel-alpha" if women else "bs-men-apparel-alpha",
+        "titleKo": f"벨스타프 {gender} 의류 사이즈 차트",
         "noteKo": "일반 알파 사이즈 참고표입니다. 제품별 실측이 있으면 실측을 우선하세요.",
         "headers": ["사이즈", "가슴(cm)", "허리(cm)"],
         "rows": [
+            ["XS", "80–84", "62–66"],
+            ["S", "84–88", "66–70"],
+            ["M", "88–92", "70–74"],
+            ["L", "92–96", "74–78"],
+            ["XL", "96–100", "78–82"],
+        ]
+        if women
+        else [
             ["XS", "90", "78.5"],
             ["S", "94–98", "82.5–86.5"],
             ["M", "98–102", "86.5–90.5"],
@@ -233,20 +365,20 @@ def apparel_fallback_chart() -> dict:
     }
 
 
-def to_size_chart(raw_chart: dict | None, *, shoes: bool, title_ko: str) -> dict:
+def to_size_chart(
+    raw_chart: dict | None, *, shoes: bool, title_ko: str, women: bool = False
+) -> dict:
     if raw_chart and raw_chart.get("rows") and raw_chart.get("headers"):
         headers = list(raw_chart["headers"])
         rows = list(raw_chart["rows"])
         keys = set(raw_chart.get("measureKeys") or [])
         joined = " ".join(headers)
         has_foot = ("Foot Length" in keys) or ("발 길이" in joined)
-        has_chest = ("Chest" in keys) or ("가슴" in joined)
-        # Reject mismatched charts (e.g. trainer PDP returning apparel grid).
+        has_chest = ("Chest" in keys) or ("Bust" in keys) or ("가슴" in joined)
         if shoes and not has_foot:
-            return shoe_fallback_chart()
+            return shoe_fallback_chart(women=women)
         if not shoes and has_foot and not has_chest:
-            return apparel_fallback_chart()
-        # Drop empty trailing measure columns mismatch
+            return apparel_fallback_chart(women=women)
         width = len(headers)
         rows = [r[:width] + ["—"] * max(0, width - len(r)) for r in rows]
         return {
@@ -257,9 +389,8 @@ def to_size_chart(raw_chart: dict | None, *, shoes: bool, title_ko: str) -> dict
             "rows": rows,
         }
     if shoes:
-        return shoe_fallback_chart()
-    return apparel_fallback_chart()
-
+        return shoe_fallback_chart(women=women)
+    return apparel_fallback_chart(women=women)
 
 def build() -> None:
     raw = json.loads(RAW_PATH.read_text())
@@ -378,7 +509,10 @@ def build() -> None:
                 specs.append({"labelKo": "케어", "valueKo": t(line)})
 
         chart = to_size_chart(
-            row.get("sizeChart"), shoes=shoes, title_ko=name_ko or "벨스타프"
+            row.get("sizeChart"),
+            shoes=shoes,
+            title_ko=name_ko or "벨스타프",
+            women=is_women(row),
         )
 
         # registration time: newer first, slightly offset by index
@@ -388,11 +522,12 @@ def build() -> None:
         except Exception:
             reg = now - timedelta(minutes=idx)
         # bump scrape order so new arrivals rank well among same publish day
-        if "new" in set(row.get("channels") or []):
+        chans = set(row.get("channels") or [])
+        if "new" in chans or "women-new" in chans:
             reg = max(reg, now - timedelta(hours=6) - timedelta(seconds=idx))
 
         badge = None
-        if "new" in set(row.get("channels") or []):
+        if "new" in chans or "women-new" in chans:
             badge = "New"
         if compare and compare > price:
             badge = "Sale"
