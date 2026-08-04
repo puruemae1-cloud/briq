@@ -19,12 +19,12 @@
     sans-serif;
   /* Product catalog photo frame — Gucci-like breathing room on white */
   --product-aspect: 4 / 5;
-  --product-frame-pad: 8%;
-  --product-frame-pad-sm: 6%;
+  --product-frame-pad: 10%;
+  --product-frame-pad-sm: 8%;
   /* Same clean white as the page — no visible mat around photos */
   --product-frame-bg: #ffffff;
-  --product-grid-gap-y: 2.75rem;
-  --product-grid-gap-x: 2.75rem;
+  --product-grid-gap-y: 3rem;
+  --product-grid-gap-x: 3.25rem;
 }
 
 @theme inline {
@@ -1631,7 +1631,7 @@ body:has(.nav-drawer-toggle:checked) {
 .product-grid--lookbook {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem 0.95rem;
+  gap: 1.5rem 1.15rem;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -1641,14 +1641,14 @@ body:has(.nav-drawer-toggle:checked) {
 @media (min-width: 760px) {
   .product-grid--lookbook {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.75rem 1.5rem;
+    gap: 2.1rem 1.9rem;
   }
 }
 
 @media (min-width: 1100px) {
   .product-grid--lookbook {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.1rem 1.85rem;
+    gap: 2.5rem 2.35rem;
   }
 }
 
@@ -2097,15 +2097,15 @@ body:has(.nav-drawer-toggle:checked) {
   .section.shop-browse {
     max-width: none;
     width: 100%;
-    padding-left: 3.25rem;
-    padding-right: 3.25rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 }
 
 @media (min-width: 1400px) {
   .section.shop-browse {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
   }
 
   .shop-hero__content {
@@ -2590,7 +2590,7 @@ body:has(.nav-drawer-toggle:checked) {
 .collection-100 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem 0.95rem;
+  gap: 1.5rem 1.15rem;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -2600,14 +2600,14 @@ body:has(.nav-drawer-toggle:checked) {
 @media (min-width: 760px) {
   .collection-100 .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.75rem 1.5rem;
+    gap: 2.1rem 1.9rem;
   }
 }
 
 @media (min-width: 1100px) {
   .collection-100 .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.1rem 1.85rem;
+    gap: 2.5rem 2.35rem;
   }
 }
 
@@ -2897,7 +2897,7 @@ body:has(.nav-drawer-toggle:checked) {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem 1.25rem;
+  gap: 2rem 1.5rem;
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -2911,33 +2911,33 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .shop-browse .product-grid {
-    gap: 2.75rem 2.75rem;
+    gap: 3rem 3.25rem;
   }
 }
 
 @media (min-width: 900px) {
   .shop-browse .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3.25rem 3.75rem;
+    gap: 3.5rem 4.25rem;
   }
 }
 
 @media (min-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3rem 3.25rem;
+    gap: 3.25rem 3.75rem;
   }
 
-  /* Gucci handbags PLP: airier gutters so tiles read smaller / less cramped */
+  /* Slightly smaller tiles / wider gutters across the catalogue */
   .shop-browse .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3.5rem 4.25rem;
+    gap: 3.75rem 5rem;
   }
 }
 
 @media (min-width: 1400px) {
   .shop-browse .product-grid {
-    gap: 3.75rem 5rem;
+    gap: 4rem 5.75rem;
   }
 }
 
