@@ -118,6 +118,61 @@ def clean_name_ko(name: str) -> str:
     return s
 
 
+def strip_gucci_warranty(text: str) -> str:
+    """Drop KR Gucci A/S warranty + clientservice.kr copy from product text.
+
+    Official KR PDP injects clauses like:
+      품질보증기준: A/S 보증기간 2년(...)
+      AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com
+    They may sit together or be split by other detail bullets — remove each clause.
+    """
+    if not text:
+        return ""
+    s = text.replace("\xa0", " ").replace("\u202f", " ")
+    s = re.sub(r"[ \t]+", " ", s)
+
+    # Warranty standards clause (ends at next middle-dot bullet or EOL)
+    s = re.sub(
+        r"품질보증기준\s*:[^·\n]*",
+        "",
+        s,
+        flags=re.I,
+    )
+    # Phone / email AS intake clause
+    s = re.sub(
+        r"AS\s*유선접수\s*:[^·\n]*clientservice\.kr@gucci\.com",
+        "",
+        s,
+        flags=re.I,
+    )
+    s = re.sub(r"clientservice\.kr@gucci\.com", "", s, flags=re.I)
+    # Orphan AS phone line without email
+    s = re.sub(
+        r"AS\s*유선접수\s*:[^·\n]*02-3452-1921[^·\n]*",
+        "",
+        s,
+        flags=re.I,
+    )
+
+    s = re.sub(r"(?:\s*[·•]\s*){2,}", " · ", s)
+    s = re.sub(r"^\s*[·•]\s*", "", s)
+    s = re.sub(r"\s*[·•]\s*$", "", s)
+    s = re.sub(r"\n{3,}", "\n\n", s)
+    s = re.sub(r"[ \t]+\n", "\n", s)
+    return s.strip(" \t·•\n")
+
+
+def is_gucci_warranty_line(line: str) -> bool:
+    s = (line or "").replace("\xa0", " ")
+    if "품질보증기준" in s:
+        return True
+    if "clientservice.kr@gucci.com" in s.lower():
+        return True
+    if re.search(r"AS\s*유선접수", s, flags=re.I):
+        return True
+    return False
+
+
 def detail_lines(parts: list | None) -> list[str]:
     out: list[str] = []
     for p in parts or []:
@@ -126,6 +181,12 @@ def detail_lines(parts: list | None) -> list[str]:
             continue
         # Skip season codes like PF25 alone
         if re.fullmatch(r"[A-Z]{1,3}\d{2}", line):
+            continue
+        # Drop KR Gucci warranty / client-service footers
+        if is_gucci_warranty_line(line):
+            cleaned = strip_gucci_warranty(line)
+            if cleaned:
+                out.append(cleaned)
             continue
         # Drop long medical warning footers
         if "전자의료" in line or "electromedical" in line.lower() or "WARNING:" in line:
@@ -183,14 +244,23 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     if not color_ko and colors:
         color_ko = colors[0].get("name") or ""
 
-    editorial_ko = html_to_text(ko.get("editorialDescription") or "")
+    editorial_ko = strip_gucci_warranty(
+        html_to_text(ko.get("editorialDescription") or "")
+    )
     editorial_en = html_to_text(en.get("editorialDescription") or "")
     if not editorial_ko and editorial_en:
-        editorial_ko = t(editorial_en)
+        editorial_ko = strip_gucci_warranty(t(editorial_en))
 
-    details_ko = detail_lines(ko.get("detailParts"))
+    details_ko = [
+        strip_gucci_warranty(x) for x in detail_lines(ko.get("detailParts"))
+    ]
+    details_ko = [x for x in details_ko if x]
     if not details_ko:
-        details_ko = [t(x) for x in detail_lines(en.get("detailParts"))]
+        details_ko = [
+            strip_gucci_warranty(t(x))
+            for x in detail_lines(en.get("detailParts"))
+        ]
+        details_ko = [x for x in details_ko if x]
 
     care_ko = care_lines(ko.get("materialCare"))
     if not care_ko:
@@ -214,7 +284,9 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     description_bits = [editorial_ko] if editorial_ko else []
     if details_ko:
         description_bits.append(" · ".join(details_ko[:8]))
-    description_ko = "\n\n".join(x for x in description_bits if x).strip()
+    description_ko = strip_gucci_warranty(
+        "\n\n".join(x for x in description_bits if x).strip()
+    )
 
     story: list[dict] = []
     if editorial_ko:
@@ -229,7 +301,7 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         story.append(
             {
                 "titleKo": "디테일",
-                "bodyKo": " · ".join(details_ko),
+                "bodyKo": strip_gucci_warranty(" · ".join(details_ko)),
                 "image": images[1] if len(images) > 1 else image,
                 "reverse": True,
             }
