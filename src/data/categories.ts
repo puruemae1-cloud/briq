@@ -438,7 +438,29 @@ export type SubcategoryId =
   | "belstaff-bags"
   | "belstaff-accessories"
   | "bs-acc-men"
-  | "bs-acc-women";
+  | "bs-acc-women"
+  | "gucci-bags"
+  | "gc-handbags"
+  | "gc-women-shoulder-bags"
+  | "gc-women-mini-bags"
+  | "gc-women-crossbody-bags"
+  | "gc-women-tote-bags"
+  | "gc-women-top-handle-bags"
+  | "gc-women-backpacks-beltbags"
+  | "gc-women-clutches-evening"
+  | "gc-women-personalised";
+
+/** Gucci Handbags leaf collections (official UK handbag PLPs). */
+export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-shoulder-bags",
+  "gc-women-mini-bags",
+  "gc-women-crossbody-bags",
+  "gc-women-tote-bags",
+  "gc-women-top-handle-bags",
+  "gc-women-backpacks-beltbags",
+  "gc-women-clutches-evening",
+  "gc-women-personalised",
+];
 
 export const BS_MEN_CLOTHING_IDS: SubcategoryId[] = [
   "bs-men-new",
@@ -1127,6 +1149,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "belstaff-shoes": [...BS_MEN_SHOE_IDS, ...BS_WOMEN_SHOE_IDS],
   "belstaff-bags": ["belstaff-bags"],
   "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
+  "gucci-bags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "gc-women-shoulder-bags": ["gc-women-shoulder-bags"],
+  "gc-women-mini-bags": ["gc-women-mini-bags"],
+  "gc-women-crossbody-bags": ["gc-women-crossbody-bags"],
+  "gc-women-tote-bags": ["gc-women-tote-bags"],
+  "gc-women-top-handle-bags": ["gc-women-top-handle-bags"],
+  "gc-women-backpacks-beltbags": ["gc-women-backpacks-beltbags"],
+  "gc-women-clutches-evening": ["gc-women-clutches-evening"],
+  "gc-women-personalised": ["gc-women-personalised"],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -1956,6 +1988,61 @@ export const navCategories: NavCategory[] = [
         labelKo: "벨스타프",
         href: "/shop?category=bags&sub=belstaff-bags",
         navLeaf: true,
+      },
+      {
+        id: "gucci-bags",
+        labelKo: "구찌",
+        href: "/shop?category=bags&sub=gucci-bags",
+        children: [
+          {
+            id: "gc-handbags",
+            labelKo: "핸드백",
+            href: "/shop?category=bags&sub=gc-handbags",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-shoulder-bags",
+                labelKo: "Shoulder Bags",
+                href: "/shop?category=bags&sub=gc-women-shoulder-bags",
+              },
+              {
+                id: "gc-women-mini-bags",
+                labelKo: "Mini Bags",
+                href: "/shop?category=bags&sub=gc-women-mini-bags",
+              },
+              {
+                id: "gc-women-crossbody-bags",
+                labelKo: "Crossbody Bags",
+                href: "/shop?category=bags&sub=gc-women-crossbody-bags",
+              },
+              {
+                id: "gc-women-tote-bags",
+                labelKo: "Tote Bags",
+                href: "/shop?category=bags&sub=gc-women-tote-bags",
+              },
+              {
+                id: "gc-women-top-handle-bags",
+                labelKo: "Top Handle Bags",
+                href: "/shop?category=bags&sub=gc-women-top-handle-bags",
+              },
+              {
+                id: "gc-women-backpacks-beltbags",
+                labelKo: "Backpacks & Beltbags",
+                href: "/shop?category=bags&sub=gc-women-backpacks-beltbags",
+              },
+              {
+                id: "gc-women-clutches-evening",
+                labelKo: "Clutches & Evening Bags",
+                href: "/shop?category=bags&sub=gc-women-clutches-evening",
+              },
+              {
+                id: "gc-women-personalised",
+                labelKo: "Personalised Handbags",
+                href: "/shop?category=bags&sub=gc-women-personalised",
+              },
+            ],
+          },
+        ],
       },
       {
         id: "burberry-bags",
