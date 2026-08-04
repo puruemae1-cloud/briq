@@ -29,12 +29,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore gg-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs gg-pdp
+
       - name: Sync Galvin Green collections + stock
         run: python3 scripts/weekly-gg-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs gg-pdp
 
       - name: Commit and push if changed
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
             "chore: weekly Galvin Green stock + catalogue sync" \
-            src/data/gg
+            src/data/gg \
+            scripts/weekly-gg-stock-sync.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/ci-commit-push.sh

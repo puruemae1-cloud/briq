@@ -28,12 +28,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore cw-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs cw-pdp
+
       - name: Sync CW categories + stock
         run: python3 scripts/weekly-cw-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs cw-pdp
 
       - name: Commit and push if changed
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
             "chore: weekly Christopher Ward stock + clearance sync" \
-            src/data/cw
+            src/data/cw \
+            scripts/weekly-cw-stock-sync.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/ci-commit-push.sh

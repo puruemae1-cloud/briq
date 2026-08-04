@@ -34,10 +34,16 @@ jobs:
           pip install playwright
           python3 -m playwright install --with-deps chromium
 
+      - name: Restore ax PDP images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs ax-pdp axa-pdp axg-pdp
+
       - name: Sync Arc'teryx (apparel + footwear + gear)
         env:
           AX_REFRESH_STOCK: "1"
         run: python3 scripts/weekly-ax-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs ax-pdp axa-pdp axg-pdp
 
       - name: Commit and push if changed
         run: |
@@ -55,4 +61,7 @@ jobs:
             scripts/scrape-ax-footwear.py \
             scripts/scrape-ax-gear.py \
             scripts/ax_size_charts.py \
-            scripts/ax_size_order.py
+            scripts/ax_size_order.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/ci-commit-push.sh

@@ -29,14 +29,24 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore bb-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs bb-pdp
+
       - name: Sync Burberry catalogue (stock + new + restock)
         env:
           BB_REFRESH_STOCK: "1"
         run: python3 scripts/weekly-bb-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs bb-pdp
 
       - name: Commit and push if changed
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
             "chore: weekly Burberry stock + catalogue sync" \
-            src/data/bb
+            src/data/bb \
+            scripts/weekly-bb-stock-sync.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/ci-commit-push.sh
