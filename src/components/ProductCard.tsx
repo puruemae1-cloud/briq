@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProductImage } from "@/components/ProductImage";
+import { ProductCardMedia } from "@/components/ProductCardMedia";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import {
   formatKrw,
@@ -7,7 +7,6 @@ import {
   productSalePercent,
   type Product,
 } from "@/data/products";
-import { resolveCardHoverImage } from "@/lib/product-image";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(product.price);
@@ -28,7 +27,6 @@ export function ProductCard({ product }: { product: Product }) {
   const soldOut = !isProductInStock(product);
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && product.compareAtPrice);
-  const hoverSrc = soldOut ? undefined : resolveCardHoverImage(product);
   const isClearance =
     product.subcategory === "cw-clearance" ||
     product.subcategory === "gg-sale" ||
@@ -48,17 +46,9 @@ export function ProductCard({ product }: { product: Product }) {
       />
       <Link
         href={href}
-        className={`product-card group${soldOut ? " product-card--sold-out" : ""}${
-          hoverSrc ? " product-card--hover-swap" : ""
-        }`}
+        className={`product-card group${soldOut ? " product-card--sold-out" : ""}`}
       >
-        <ProductImage
-          src={product.image}
-          hoverSrc={hoverSrc}
-          alt={product.nameKo}
-          tone="card"
-          imgClassName="product-card__img"
-        >
+        <ProductCardMedia product={product} soldOut={soldOut}>
           {soldOut ? (
             <span className="product-sold-out" aria-label="Sold Out">
               Sold Out
@@ -80,7 +70,7 @@ export function ProductCard({ product }: { product: Product }) {
               {product.badge}
             </span>
           ) : null}
-        </ProductImage>
+        </ProductCardMedia>
         <div className="product-card__body">
           <p className="product-card__brand">{product.brand}</p>
           <h3 className="product-card__name">{product.nameKo}</h3>

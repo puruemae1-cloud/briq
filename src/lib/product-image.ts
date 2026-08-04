@@ -7,17 +7,14 @@
  *
  * When adding or replacing product images under `/public/products/`:
  * - Prefer JPG/WebP, ~1600×2000 (4:5) or larger with the same ratio
- * - Subject centered; leave generous studio-style breathing room around the item
- *   (CSS frame pad ~15% so tiles match a Gucci-like PLP scale, not edge-to-edge)
- * - Plain / soft studio background preferred (frame fills the rest)
+ * - Subject centered; CSS frame pad is minimal so white studio mats blend with the page
+ * - Plain / soft studio background preferred (White for Gucci packshots)
  * - Avoid extreme close-ups that crop the product edge
  * - Variant colors should share the same framing & crop style
- * - Gallery order: [0] packshot / dial face, then remaining PDP frames
- * - Card hover uses `hoverImage` when set — must match the brand's official PLP
- *   tile swap (Gucci: on-model type-100 / alternateGallery; Arc'teryx: *-Hover.jpg;
- *   Paul Smith: PLP imageInfo[1]). Do not assume PDP images[1] is the hover.
- * - Override with `hoverImage` whenever the second gallery frame is not the
- *   official PLP hover cut.
+ * - Gallery order for cards: [0] primary packshot, [1+] remaining frames
+ *   (hover / PLP swap should be included but primary stays first)
+ * - Card hover / carousel uses official PLP swap order when possible
+ *   (Gucci: on-model type-100; Arc'teryx: *-Hover.jpg; Paul Smith: PLP imageInfo[1])
  *
  * Do not rely on CSS `cover` for catalog photos — always go through
  * `ProductImage` / `.product-frame` so future updates stay uniform.
@@ -57,34 +54,41 @@ function uniqueGallery(paths: Array<string | undefined | null>): string[] {
   return out;
 }
 
-/** Gallery used for a shop card (honours colourway expand via shopColorKey). */
-export function resolveCardGallery(product: Product): string[] {
+function colourwayGallery(product: Product): string[] {
   if (product.shopColorKey && product.variants?.length) {
     const colour = product.variants.find(
       (v) => v.colorKey === product.shopColorKey,
     );
     if (colour) {
       return uniqueGallery([
+        colour.image,
         colour.hoverImage,
         ...(colour.images ?? []),
-        colour.image,
+        product.image,
         product.hoverImage,
         ...(product.images ?? []),
-        product.image,
       ]);
     }
   }
 
   return uniqueGallery([
+    product.image,
     product.hoverImage,
     ...(product.images ?? []),
-    product.image,
     ...(product.variants ?? []).flatMap((v) => [
+      v.image,
       v.hoverImage,
       ...(v.images ?? []),
-      v.image,
     ]),
   ]);
+}
+
+/**
+ * Gallery for shop cards — primary packshot first, then hover + remaining frames.
+ * Caps length so PLP carousels stay light.
+ */
+export function resolveCardGallery(product: Product, limit = 8): string[] {
+  return colourwayGallery(product).slice(0, Math.max(1, limit));
 }
 
 /**

@@ -79,13 +79,13 @@ def abs_url(u: str | None) -> str:
 
 
 def upgrade_media_url(u: str) -> str:
-    """Prefer large DarkGray centre crop for PDP-quality assets."""
+    """Prefer large White centre crop so PLP tiles match Gucci's clean white mat."""
     u = abs_url(u)
     if "media.gucci.com/style/" not in u:
         return u
     u = re.sub(
         r"/style/[^/]+/",
-        "/style/DarkGray_Center_0_0_1200x1200/",
+        "/style/White_Center_0_0_1200x1200/",
         u,
         count=1,
     )

@@ -17,11 +17,11 @@
   --font-body: var(--font-body);
   --font-pretendard: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
     sans-serif;
-  /* Product catalog photo frame — Gucci-like breathing room inside every tile */
+  /* Product catalog photo frame — Gucci-like, near edge-to-edge on white */
   --product-aspect: 4 / 5;
-  --product-frame-pad: 15%;
-  --product-frame-pad-sm: 11%;
-  /* Clean white mat — same as page so PLP tiles read seamless like Gucci */
+  --product-frame-pad: 2%;
+  --product-frame-pad-sm: 2%;
+  /* Same clean white as the page — no visible mat around photos */
   --product-frame-bg: #ffffff;
   --product-grid-gap-y: 1.75rem;
   --product-grid-gap-x: 1.5rem;
@@ -2982,6 +2982,113 @@ body:has(.nav-drawer-toggle:checked) {
 
 .product-frame--card {
   width: 100%;
+}
+
+/* PLP card media carousel (Gucci-like arrows + thin segment bars) */
+.product-card-media {
+  position: relative;
+  width: 100%;
+}
+
+.product-card-media__frame {
+  display: grid;
+  place-items: center;
+  padding: var(--product-frame-pad);
+  background: #fff;
+}
+
+.product-card-media__img {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.product-card-media__img.is-current {
+  opacity: 1;
+}
+
+.product-card-media__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #111;
+  font-size: 1.55rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.product-card-media__arrow span {
+  display: block;
+  transform: translateY(-0.05em);
+}
+
+.product-card-media__arrow--prev {
+  left: 0.15rem;
+}
+
+.product-card-media__arrow--next {
+  right: 0.15rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-card-media--multi.is-active .product-card-media__arrow,
+  .product-card-shell:hover .product-card-media--multi .product-card-media__arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.product-card-media__bars {
+  position: absolute;
+  left: 0.55rem;
+  right: 0.55rem;
+  bottom: 0.45rem;
+  z-index: 3;
+  display: flex;
+  gap: 0.2rem;
+  height: 1px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-card-media--multi.is-active .product-card-media__bars,
+  .product-card-shell:hover .product-card-media--multi .product-card-media__bars {
+    opacity: 1;
+  }
+}
+
+.product-card-media__bar {
+  flex: 1 1 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 0 0.35px rgba(0, 0, 0, 0.18);
+}
+
+.product-card-media__bar.is-active {
+  background: #111;
+  box-shadow: none;
+}
+
+.product-card-media .product-card__badge,
+.product-card-media .product-sold-out {
+  z-index: 4;
 }
 
 .product-frame--detail {
