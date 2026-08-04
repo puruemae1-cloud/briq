@@ -28,8 +28,8 @@ export const PRODUCT_IMAGE = {
   /** Recommended upload size (width × height) */
   uploadWidth: 1600,
   uploadHeight: 2000,
-  /** Soft studio mat behind every product photo */
-  frameBg: "#f5f5f5",
+  /** Clean white mat behind every product photo (matches page) */
+  frameBg: "#ffffff",
 } as const;
 
 export type ProductImageTone = "card" | "detail" | "cart" | "swatch";
