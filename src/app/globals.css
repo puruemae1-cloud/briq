@@ -2740,9 +2740,37 @@ body:has(.nav-drawer-toggle:checked) {
   flex-wrap: wrap;
   grid-auto-flow: unset;
   grid-auto-columns: unset;
-  overflow-x: clip;
+  overflow-x: visible;
   max-width: 100%;
   gap: 0.5rem 0.55rem;
+}
+
+@media (max-width: 899px) {
+  /* Brand / mid-level rows: swipe when chips overflow */
+  .shop-browse .category-row:not(.category-row--nested) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y;
+    scrollbar-width: none;
+    padding-bottom: 0.45rem;
+  }
+
+  /* Deepest nest: wrap every leaf so nothing is clipped off-screen */
+  .shop-browse .category-row.category-row--nested {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    gap: 0.45rem 0.5rem;
+  }
+
+  .shop-browse .category-row.category-row--nested .chip {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 900px) {
