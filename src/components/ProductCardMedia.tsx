@@ -102,34 +102,63 @@ export function ProductCardMedia({
         {children}
         {multi ? (
           <>
-            <button
-              type="button"
-              className="product-card-media__arrow product-card-media__arrow--prev"
-              aria-label="이전 사진"
-              tabIndex={active ? 0 : -1}
-              onClick={(e) => {
-                stopNav(e);
-                go(index - 1);
-              }}
-            >
-              <span aria-hidden>‹</span>
-            </button>
-            <button
-              type="button"
-              className="product-card-media__arrow product-card-media__arrow--next"
-              aria-label="다음 사진"
-              tabIndex={active ? 0 : -1}
-              onClick={(e) => {
-                stopNav(e);
-                go(index + 1);
-              }}
-            >
-              <span aria-hidden>›</span>
-            </button>
-            <div
-              className="product-card-media__bars"
-              aria-hidden
-            >
+            <div className="product-card-media__nav" aria-hidden={false}>
+              <button
+                type="button"
+                className="product-card-media__arrow product-card-media__arrow--prev"
+                aria-label="이전 사진"
+                tabIndex={active ? 0 : -1}
+                onClick={(e) => {
+                  stopNav(e);
+                  go(index - 1);
+                }}
+              >
+                <svg
+                  className="product-card-media__chevron"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  height="12"
+                  aria-hidden
+                >
+                  <path
+                    d="M14.5 5.25 8.75 12l5.75 6.75"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="square"
+                    strokeLinejoin="miter"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                className="product-card-media__arrow product-card-media__arrow--next"
+                aria-label="다음 사진"
+                tabIndex={active ? 0 : -1}
+                onClick={(e) => {
+                  stopNav(e);
+                  go(index + 1);
+                }}
+              >
+                <svg
+                  className="product-card-media__chevron"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  height="12"
+                  aria-hidden
+                >
+                  <path
+                    d="M9.5 5.25 15.25 12 9.5 18.75"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="square"
+                    strokeLinejoin="miter"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="product-card-media__bars" aria-hidden>
               {gallery.map((src, i) => (
                 <span
                   key={src}

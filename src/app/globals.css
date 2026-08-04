@@ -19,12 +19,12 @@
     sans-serif;
   /* Product catalog photo frame — Gucci-like breathing room on white */
   --product-aspect: 4 / 5;
-  --product-frame-pad: 6%;
-  --product-frame-pad-sm: 5%;
+  --product-frame-pad: 8%;
+  --product-frame-pad-sm: 6%;
   /* Same clean white as the page — no visible mat around photos */
   --product-frame-bg: #ffffff;
-  --product-grid-gap-y: 2.5rem;
-  --product-grid-gap-x: 2.5rem;
+  --product-grid-gap-y: 2.75rem;
+  --product-grid-gap-x: 2.75rem;
 }
 
 @theme inline {
@@ -2097,15 +2097,15 @@ body:has(.nav-drawer-toggle:checked) {
   .section.shop-browse {
     max-width: none;
     width: 100%;
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
   }
 }
 
 @media (min-width: 1400px) {
   .section.shop-browse {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .shop-hero__content {
@@ -2909,24 +2909,35 @@ body:has(.nav-drawer-toggle:checked) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--product-grid-gap-y) var(--product-grid-gap-x);
   }
+
+  .shop-browse .product-grid {
+    gap: 2.75rem 2.75rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .shop-browse .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3.25rem 3.75rem;
+  }
 }
 
 @media (min-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.75rem 2.75rem;
+    gap: 3rem 3.25rem;
   }
 
   /* Gucci handbags PLP: airier gutters so tiles read smaller / less cramped */
   .shop-browse .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 3rem 3.25rem;
+    gap: 3.5rem 4.25rem;
   }
 }
 
 @media (min-width: 1400px) {
   .shop-browse .product-grid {
-    gap: 3.25rem 3.75rem;
+    gap: 3.75rem 5rem;
   }
 }
 
@@ -3017,39 +3028,68 @@ body:has(.nav-drawer-toggle:checked) {
   opacity: 1;
 }
 
-.product-card-media__arrow {
+.product-card-media__nav {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  inset: 0 8px;
   z-index: 3;
-  width: 2.4rem;
-  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.product-card-media__arrow {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  transform: none;
+  z-index: 3;
+  width: 28px;
+  height: 28px;
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 0;
+  border-radius: 50%;
   background: transparent;
-  color: #111;
-  font-size: 1.86rem;
-  line-height: 1;
+  color: #fff;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.18s ease, transform 0.8s cubic-bezier(0.5, 0, 0, 1);
   -webkit-tap-highlight-color: transparent;
 }
 
-.product-card-media__arrow span {
+/* Gucci floating translucent disc behind the chevron */
+.product-card-media__arrow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(68, 73, 78, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.product-card-media__arrow:hover::before {
+  transform: scale(1.06);
+}
+
+.product-card-media__chevron {
+  position: relative;
+  z-index: 1;
   display: block;
-  transform: translateY(-0.05em);
+  flex-shrink: 0;
 }
 
-.product-card-media__arrow--prev {
-  left: 0.15rem;
-}
-
+.product-card-media__arrow--prev,
 .product-card-media__arrow--next {
-  right: 0.15rem;
+  left: auto;
+  right: auto;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -3068,7 +3108,7 @@ body:has(.nav-drawer-toggle:checked) {
   z-index: 3;
   display: flex;
   gap: 0.2rem;
-  height: 1px;
+  height: 1.5px;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.18s ease;
@@ -3083,9 +3123,9 @@ body:has(.nav-drawer-toggle:checked) {
 
 .product-card-media__bar {
   flex: 1 1 0;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 0 0 0.35px rgba(0, 0, 0, 0.18);
+  height: 1.5px;
+  background: rgba(68, 73, 78, 0.4);
+  box-shadow: none;
 }
 
 .product-card-media__bar.is-active {
