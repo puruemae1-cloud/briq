@@ -29,8 +29,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore lu-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs lu-pdp
+
       - name: Sync London Undercover catalogue (stock + new + remove)
         run: python3 scripts/weekly-lu-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs lu-pdp
 
       - name: Commit and push catalogue
         run: |
@@ -43,8 +49,5 @@ jobs:
             scripts/build-lu-catalog.py \
             scripts/build-lu-lifestyle-catalog.py \
             scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
             scripts/ci-commit-push.sh
-
-      - name: Push new PDP images to product-images tag
-        continue-on-error: true
-        run: python3 scripts/push-product-images-tag.py --dirs lu-pdp

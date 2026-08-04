@@ -106,6 +106,28 @@ def prune_images(raw: dict[str, dict]) -> int:
     return removed
 
 
+def assert_local_images(raw: dict[str, dict]) -> None:
+    """Fail the weekly job if catalogue points at missing PDP files."""
+    missing: list[str] = []
+    for row in raw.values():
+        handle = row.get("handle") or "?"
+        images = row.get("images") or []
+        if not images:
+            missing.append(f"{handle}: no images[]")
+            continue
+        for img in images:
+            path = ROOT / "public" / str(img).lstrip("/")
+            if not path.is_file() or path.stat().st_size < 800:
+                missing.append(str(img))
+    if missing:
+        sample = ", ".join(missing[:12])
+        raise SystemExit(
+            f"Paul Smith sync aborted: {len(missing)} missing local image(s). "
+            f"Sample: {sample}"
+        )
+    print(f"local image check ok ({len(raw)} products)", flush=True)
+
+
 def main() -> None:
     run("scrape-ps-mens.py")
     run("scrape-ps-extend.py")
@@ -124,6 +146,7 @@ def main() -> None:
         json.dumps(pruned, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     prune_images(pruned)
+    assert_local_images(pruned)
 
     run("build-ps-catalog.py")
     print("Paul Smith weekly sync complete.", flush=True)

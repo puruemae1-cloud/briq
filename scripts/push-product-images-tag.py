@@ -90,10 +90,10 @@ def main() -> int:
         )
         if added.returncode != 0:
             print(
-                f"WARN: could not check out tag {TAG} — skip image tag update.",
+                f"ERROR: could not check out tag {TAG} — abort image tag update.",
                 flush=True,
             )
-            return 0
+            return 1
 
         ensure_git_identity(tmp)
 
@@ -138,12 +138,11 @@ def main() -> int:
         )
         if pushed.returncode != 0:
             print(
-                "WARN: failed to push product-images tag "
+                "ERROR: failed to push product-images tag "
                 "(check Actions write permissions / tag protection).",
                 flush=True,
             )
-            # Do not fail the whole weekly job — catalogue sync still valuable.
-            return 0
+            return 1
         print("product-images tag updated.", flush=True)
         return 0
     finally:

@@ -57,7 +57,8 @@ def main() -> None:
     todos = []
     for key, p in plp_by_key.items():
         link = (p.get("link") or "").strip().lstrip("/")
-        if key in existing and existing[key].get("entity") and existing[key].get("images"):
+        prev = existing.get(key)
+        if prev and prev.get("entity") and mens.local_images_ok(prev):
             existing[key]["channels"] = sorted(membership.get(key, set()))
             existing[key]["plp"] = {
                 "key": key,
@@ -71,6 +72,25 @@ def main() -> None:
                 "product_type": mens.custom_label(p.get("custom"), "product_type"),
             }
             continue
+        if prev and prev.get("entity") and mens.content_image_urls(prev):
+            handle = prev.get("handle") or link.replace("/", "-") or key
+            local = mens.download_images(handle, mens.content_image_urls(prev))
+            if mens.local_images_ok({**prev, "images": local}):
+                prev["images"] = local
+                prev["channels"] = sorted(membership.get(key, set()))
+                prev["plp"] = {
+                    "key": key,
+                    "title": p.get("title"),
+                    "link": link,
+                    "sellingPrice": p.get("sellingPrice"),
+                    "listPrice": p.get("listPrice"),
+                    "variants": p.get("variants") or [],
+                    "custom": p.get("custom") or {},
+                    "style": mens.custom_label(p.get("custom"), "style"),
+                    "product_type": mens.custom_label(p.get("custom"), "product_type"),
+                }
+                existing[key] = prev
+                continue
         todos.append((key, p, link))
 
     print(f"PDP todo={len(todos)} cached-update={len(plp_by_key) - len(todos)}")

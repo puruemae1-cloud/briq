@@ -225,25 +225,59 @@ def normalize_asset_url(url: str) -> str:
 
 
 def download_images(handle: str, urls: list[str]) -> list[str]:
+    """Download gallery shots with contiguous 1.jpg…N.jpg names (skip failed URLs)."""
     dest = IMG_ROOT / handle
     dest.mkdir(parents=True, exist_ok=True)
+    # Clear stale numbered files so gaps from failed URLs don't leave broken refs
+    for old in dest.glob("*.jpg"):
+        try:
+            old.unlink()
+        except OSError:
+            pass
     local = []
-    for i, url in enumerate(urls[:6], start=1):
-        path = dest / f"{i}.jpg"
-        if path.exists() and path.stat().st_size > 800:
-            local.append(f"/products/ps-pdp/{handle}/{i}.jpg")
-            continue
+    n = 0
+    for url in urls[:8]:
         try:
             fetch_url = normalize_asset_url(url)
             data = fetch_bytes(fetch_url)
             if len(data) < 800:
                 continue
+            n += 1
+            path = dest / f"{n}.jpg"
             path.write_bytes(data)
-            local.append(f"/products/ps-pdp/{handle}/{i}.jpg")
+            local.append(f"/products/ps-pdp/{handle}/{n}.jpg")
             time.sleep(0.03)
         except Exception as e:
-            print("img fail", handle, i, e)
+            print("img fail", handle, url[-40:], e)
     return local
+
+
+def local_images_ok(row: dict) -> bool:
+    """True when every catalogued image path exists on disk (CI checkout has none)."""
+    images = row.get("images") or []
+    if not images:
+        return False
+    for img in images:
+        path = ROOT / "public" / str(img).lstrip("/")
+        if not path.is_file() or path.stat().st_size < 800:
+            return False
+    return True
+
+
+def content_image_urls(row: dict) -> list[str]:
+    urls: list[str] = []
+    for img in (row.get("content") or {}).get("images") or []:
+        if not isinstance(img, dict) or not img.get("url"):
+            continue
+        url = str(img["url"])
+        # Skip videos / non-raster assets that appear in the gallery list
+        if any(url.lower().endswith(ext) for ext in (".mp4", ".webm", ".mov", ".m4v")):
+            continue
+        if img.get("type") and str(img.get("type")).lower() not in {"image", "img", ""}:
+            if "video" in str(img.get("type")).lower():
+                continue
+        urls.append(url)
+    return urls
 
 
 def scrape_pdp(uri: str) -> dict | None:
@@ -316,7 +350,12 @@ def main() -> None:
     todos = []
     for key, p in plp_by_key.items():
         link = (p.get("link") or "").strip().lstrip("/")
-        if key in existing and existing[key].get("entity") and existing[key].get("images"):
+        prev = existing.get(key)
+        if (
+            prev
+            and prev.get("entity")
+            and local_images_ok(prev)
+        ):
             # refresh membership/stock from PLP cheaply
             existing[key]["channels"] = sorted(membership.get(key, set()))
             existing[key]["plp"] = {
@@ -331,6 +370,27 @@ def main() -> None:
                 "product_type": custom_label(p.get("custom"), "product_type"),
             }
             continue
+        # Cached metadata but missing on-disk images (common on CI): rehydrate
+        # from stored content URLs without a full PDP hit when possible.
+        if prev and prev.get("entity") and content_image_urls(prev):
+            handle = (prev.get("handle") or link.replace("/", "-") or key)
+            local = download_images(handle, content_image_urls(prev))
+            if local_images_ok({**prev, "images": local}):
+                prev["images"] = local
+                prev["channels"] = sorted(membership.get(key, set()))
+                prev["plp"] = {
+                    "key": key,
+                    "title": p.get("title"),
+                    "link": link,
+                    "sellingPrice": p.get("sellingPrice"),
+                    "listPrice": p.get("listPrice"),
+                    "variants": p.get("variants") or [],
+                    "custom": p.get("custom") or {},
+                    "style": custom_label(p.get("custom"), "style"),
+                    "product_type": custom_label(p.get("custom"), "product_type"),
+                }
+                existing[key] = prev
+                continue
         todos.append((key, p, link))
 
     print(f"PDP todo={len(todos)} cached={len(plp_by_key) - len(todos)}")
