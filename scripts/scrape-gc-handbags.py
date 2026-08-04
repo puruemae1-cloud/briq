@@ -12,6 +12,12 @@ from threading import Lock
 
 from curl_cffi import requests as cffi_requests
 
+from plp_hover import (
+    first_alternate_gallery_src,
+    gucci_lifestyle_index,
+    pick_hover_local,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/gc/gc-pdp-cache.json"
@@ -351,6 +357,14 @@ def main() -> None:
             seen.add(k)
             images.append(u)
 
+        # Official PLP tile hover ≈ alternateGallery[0] (on-model), not side _002.
+        plp_hover_url = first_alternate_gallery_src(item)
+        if plp_hover_url:
+            plp_hover_url = upgrade_media_url(plp_hover_url)
+        life_idx = gucci_lifestyle_index(images)
+        if not plp_hover_url and life_idx is not None:
+            plp_hover_url = images[life_idx]
+
         gbp = item.get("rawPrice")
         if gbp is None and catalog:
             gbp = gbp_from_catalog(catalog)
@@ -384,6 +398,7 @@ def main() -> None:
             "priceLabel": item.get("price"),
             "image": images[0] if images else "",
             "images": images,
+            "plpHoverUrl": plp_hover_url or "",
             "collections": sorted(membership.get(code) or []),
             "inStock": in_stock,
             "label": item.get("label"),
@@ -448,6 +463,21 @@ def main() -> None:
         p["localImages"] = locs
         if locs:
             p["localImage"] = locs[0]
+        # Map official PLP hover URL → local file by shot key
+        hover_url = p.get("plpHoverUrl") or ""
+        local_hover = None
+        if hover_url and locs:
+            hk = extract_shot_key(hover_url)
+            for i, remote in enumerate(p.get("images") or []):
+                if extract_shot_key(remote) == hk and i < len(locs):
+                    local_hover = locs[i]
+                    break
+        if not local_hover and locs:
+            local_hover = pick_hover_local(
+                locs, remote_images=p.get("images") or []
+            )
+        if local_hover:
+            p["localHover"] = local_hover
 
     payload = {
         "scrapedAt": datetime.now(timezone.utc).isoformat(),

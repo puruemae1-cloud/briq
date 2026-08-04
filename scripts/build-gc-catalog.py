@@ -16,6 +16,8 @@ from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
 
+from plp_hover import pick_hover_local
+
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/gc/gc-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
@@ -279,7 +281,17 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         images = remotes[:1]
 
     image = images[0]
-    hover = images[1] if len(images) > 1 else images[0]
+    # Official Gucci PLP hover is the on-model / lookbook frame (type 100),
+    # not PDP gallery[1] (usually a side packshot _002).
+    hover = (
+        row.get("localHover")
+        or pick_hover_local(
+            images,
+            remote_images=row.get("images") or [],
+            explicit=None,
+        )
+        or image
+    )
 
     description_bits = [editorial_ko] if editorial_ko else []
     if details_ko:

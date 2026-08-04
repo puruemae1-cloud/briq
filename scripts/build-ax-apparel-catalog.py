@@ -111,6 +111,16 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     return out
 
 
+def list_hover(pid: str, cslug: str, gallery: list[str]) -> str:
+    """Official Arc'teryx PLP hover asset when present, else gallery[1]."""
+    hover = IMG_ROOT / pid / cslug / "hover.jpg"
+    if hover.exists() and hover.stat().st_size > 2000:
+        return f"/products/axa-pdp/{pid}/{cslug}/hover.jpg"
+    if len(gallery) > 1:
+        return gallery[1]
+    return gallery[0] if gallery else ""
+
+
 def build_story(pdp: dict, images: list[str]) -> list[dict]:
     sections: list[dict] = []
     for i, sec in enumerate(pdp.get("sections") or []):
@@ -266,7 +276,7 @@ def main() -> None:
                 continue
             if not lead_image:
                 lead_image = gallery[0]
-                lead_hover = gallery[1] if len(gallery) > 1 else gallery[0]
+                lead_hover = list_hover(pid, cslug, gallery)
             for g in gallery:
                 if g not in all_images:
                     all_images.append(g)
@@ -306,7 +316,7 @@ def main() -> None:
                 v_lines += [
                     f"        image: {js_str(gallery[0])},",
                     f"        images: {js_json(gallery)},",
-                    f"        hoverImage: {js_str(gallery[1] if len(gallery) > 1 else gallery[0])},",
+                    f"        hoverImage: {js_str(list_hover(pid, cslug, gallery))},",
                     f"        sourceUrl: {js_str(p.get('url') or '')},",
                     f"        inStock: {'true' if in_stock else 'false'},",
                     f"        colorKey: {js_str(cslug)},",

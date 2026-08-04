@@ -42,8 +42,8 @@ export type ProductVariant = {
   /** Optional multi-image gallery for this strap/colour option. */
   images?: string[];
   /**
-   * Optional PLP hover photo for this colourway (model / wrist shot).
-   * When omitted, cards fall back to `images[1]`.
+   * Official brand PLP hover/swap photo for this colourway.
+   * When omitted, cards fall back to the first gallery frame ≠ primary.
    */
   hoverImage?: string;
   sourceUrl: string;
@@ -127,8 +127,8 @@ export type Product = {
   image: string;
   images?: string[];
   /**
-   * Optional PLP hover photo (model / wrist shot).
-   * When omitted, cards use the second gallery image if available.
+   * Official brand PLP hover/swap photo (model / wrist / Hover.jpg).
+   * When omitted, cards use the first gallery frame that differs from `image`.
    */
   hoverImage?: string;
   accent: string;

@@ -579,6 +579,9 @@ def build_variants(row: dict, price: int, compare: int | None, cols: list[str]) 
     entity = row.get("entity") or {}
     plp = row.get("plp") or {}
     images = row.get("images") or []
+    hover = row.get("localHover") or (
+        images[1] if len(images) > 1 else (images[0] if images else None)
+    )
     color = entity.get("variantName") or entity.get("detailed_colour_label") or entity.get("colour_group") or "Default"
     color_ko = t(color) if color and color != "Default" else color
     color_key = slugify(color)
@@ -634,7 +637,7 @@ def build_variants(row: dict, price: int, compare: int | None, cols: list[str]) 
                 **({"compareAtPrice": v_compare} if v_compare else {}),
                 "image": images[0] if images else "/products/ps-pdp/placeholder.jpg",
                 "images": images,
-                "hoverImage": images[1] if len(images) > 1 else (images[0] if images else None),
+                "hoverImage": hover,
                 "sourceUrl": row.get("sourceUrl"),
                 "inStock": in_stock,
                 "colorKey": color_key,
@@ -654,7 +657,7 @@ def build_variants(row: dict, price: int, compare: int | None, cols: list[str]) 
                 **({"compareAtPrice": compare} if compare else {}),
                 "image": images[0] if images else "/products/ps-pdp/placeholder.jpg",
                 "images": images,
-                "hoverImage": images[1] if len(images) > 1 else (images[0] if images else None),
+                "hoverImage": hover,
                 "sourceUrl": row.get("sourceUrl"),
                 "inStock": not bool(row.get("isOutOfStock")),
                 "colorKey": color_key,
@@ -723,6 +726,9 @@ def main() -> None:
         images = [u for u in (row.get("images") or []) if u]
         if not images:
             continue
+        hover = row.get("localHover") or (
+            images[1] if len(images) > 1 else images[0]
+        )
 
         cat, sub, cols, _leaf_ko = classify(row)
         gbp_sell, gbp_list = price_pair(entity, plp)
@@ -811,7 +817,7 @@ def main() -> None:
             "descriptionKo": (desc_ko[:1200] if desc_ko else name_ko),
             "image": images[0],
             "images": images,
-            "hoverImage": images[1] if len(images) > 1 else images[0],
+            "hoverImage": hover,
             "accent": accents[idx % len(accents)],
             "gbpPrice": gbp_sell,
             "sku": str(entity.get("sku") or handle),

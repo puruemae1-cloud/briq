@@ -230,6 +230,8 @@ def download_images(handle: str, urls: list[str]) -> list[str]:
     dest.mkdir(parents=True, exist_ok=True)
     # Clear stale numbered files so gaps from failed URLs don't leave broken refs
     for old in dest.glob("*.jpg"):
+        if old.name.lower() == "hover.jpg":
+            continue
         try:
             old.unlink()
         except OSError:
@@ -250,6 +252,24 @@ def download_images(handle: str, urls: list[str]) -> list[str]:
         except Exception as e:
             print("img fail", handle, url[-40:], e)
     return local
+
+
+def download_hover(handle: str, url: str) -> str | None:
+    """Save the official PLP hover frame as hover.jpg."""
+    if not url:
+        return None
+    dest = IMG_ROOT / handle
+    dest.mkdir(parents=True, exist_ok=True)
+    path = dest / "hover.jpg"
+    try:
+        data = fetch_bytes(normalize_asset_url(url))
+        if len(data) < 800:
+            return None
+        path.write_bytes(data)
+        return f"/products/ps-pdp/{handle}/hover.jpg"
+    except Exception as e:
+        print("hover fail", handle, e)
+        return None
 
 
 def local_images_ok(row: dict) -> bool:
@@ -404,9 +424,16 @@ def main() -> None:
             for img in (pdp.get("content") or {}).get("images") or []:
                 if isinstance(img, dict) and img.get("url"):
                     urls.append(img["url"])
+        plp_urls = plp_image_urls(p)
         if not urls:
-            urls = plp_image_urls(p)
+            urls = plp_urls
         local = download_images(handle, urls)
+        # Official Paul Smith PLP hover = imageInfo.images[1]
+        local_hover = None
+        if len(plp_urls) > 1:
+            local_hover = download_hover(handle, plp_urls[1])
+        if not local_hover and len(local) > 1:
+            local_hover = local[1]
         row = {
             "key": key,
             "handle": handle,
@@ -428,6 +455,7 @@ def main() -> None:
             "configurableOptions": (pdp or {}).get("configurableOptions") or [],
             "selectedPrice": (pdp or {}).get("selectedPrice") or {},
             "images": local,
+            "localHover": local_hover,
             "sourceUrl": f"{BASE}/uk/{link}",
         }
         return key, row

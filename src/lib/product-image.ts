@@ -12,9 +12,12 @@
  * - Plain / soft studio background preferred (frame fills the rest)
  * - Avoid extreme close-ups that crop the product edge
  * - Variant colors should share the same framing & crop style
- * - Gallery order: [0] packshot / dial face, [1] model wear or wrist shot
- *   (used automatically for PC card hover). Override with `hoverImage`
- *   when the second gallery frame is not the lifestyle cut.
+ * - Gallery order: [0] packshot / dial face, then remaining PDP frames
+ * - Card hover uses `hoverImage` when set — must match the brand's official PLP
+ *   tile swap (Gucci: on-model type-100 / alternateGallery; Arc'teryx: *-Hover.jpg;
+ *   Paul Smith: PLP imageInfo[1]). Do not assume PDP images[1] is the hover.
+ * - Override with `hoverImage` whenever the second gallery frame is not the
+ *   official PLP hover cut.
  *
  * Do not rely on CSS `cover` for catalog photos — always go through
  * `ProductImage` / `.product-frame` so future updates stay uniform.
@@ -85,9 +88,9 @@ export function resolveCardGallery(product: Product): string[] {
 }
 
 /**
- * Second photo for PC card hover — model wear / wrist shot when available.
+ * Second photo for PC card hover — official PLP swap image when available.
  * Explicit `hoverImage` wins; otherwise the first gallery frame that differs
- * from the primary card image (typically images[1]).
+ * from the primary card image.
  */
 export function resolveCardHoverImage(product: Product): string | undefined {
   const primary = product.image?.trim();
