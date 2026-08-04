@@ -7,7 +7,8 @@
  *
  * When adding or replacing product images under `/public/products/`:
  * - Prefer JPG/WebP, ~1600×2000 (4:5) or larger with the same ratio
- * - Subject centered; leave a little breathing room around the item
+ * - Subject centered; leave generous studio-style breathing room around the item
+ *   (CSS frame pad ~15% so tiles match a Gucci-like PLP scale, not edge-to-edge)
  * - Plain / soft studio background preferred (frame fills the rest)
  * - Avoid extreme close-ups that crop the product edge
  * - Variant colors should share the same framing & crop style
