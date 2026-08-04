@@ -17,14 +17,14 @@
   --font-body: var(--font-body);
   --font-pretendard: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
     sans-serif;
-  /* Product catalog photo frame — Gucci-like, near edge-to-edge on white */
+  /* Product catalog photo frame — Gucci-like breathing room on white */
   --product-aspect: 4 / 5;
-  --product-frame-pad: 2%;
-  --product-frame-pad-sm: 2%;
+  --product-frame-pad: 6%;
+  --product-frame-pad-sm: 5%;
   /* Same clean white as the page — no visible mat around photos */
   --product-frame-bg: #ffffff;
-  --product-grid-gap-y: 1.75rem;
-  --product-grid-gap-x: 1.5rem;
+  --product-grid-gap-y: 2.5rem;
+  --product-grid-gap-x: 2.5rem;
 }
 
 @theme inline {
@@ -2097,15 +2097,15 @@ body:has(.nav-drawer-toggle:checked) {
   .section.shop-browse {
     max-width: none;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 }
 
 @media (min-width: 1400px) {
   .section.shop-browse {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .shop-hero__content {
@@ -2897,7 +2897,7 @@ body:has(.nav-drawer-toggle:checked) {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.35rem 1rem;
+  gap: 1.75rem 1.25rem;
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -2914,12 +2914,19 @@ body:has(.nav-drawer-toggle:checked) {
 @media (min-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2rem 1.75rem;
+    gap: 2.75rem 2.75rem;
   }
 
+  /* Gucci handbags PLP: airier gutters so tiles read smaller / less cramped */
   .shop-browse .product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.25rem 2rem;
+    gap: 3rem 3.25rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .shop-browse .product-grid {
+    gap: 3.25rem 3.75rem;
   }
 }
 
@@ -3015,15 +3022,15 @@ body:has(.nav-drawer-toggle:checked) {
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   margin: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
   color: #111;
-  font-size: 1.55rem;
+  font-size: 1.86rem;
   line-height: 1;
   cursor: pointer;
   opacity: 0;
