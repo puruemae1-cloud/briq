@@ -2159,6 +2159,41 @@ body:has(.nav-drawer-toggle:checked) {
   color: #333333;
 }
 
+.section__brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0;
+  margin: 0.55rem 0 0;
+  max-width: min(40rem, 100%);
+}
+
+.section__brands-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.section__brands-sep {
+  margin: 0 0.55rem;
+  color: #b8b4ae;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.section__brands a {
+  font-family: var(--font-pretendard);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #6a6560;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.section__brands a:hover {
+  color: #1a1a1a;
+}
+
 /* Live-order product carousel — CSS-only, 5s per page (no JS required) */
 /* Same rhythm as .pricing-banner → next banner */
 .best-live {

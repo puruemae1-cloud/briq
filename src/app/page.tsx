@@ -55,7 +55,23 @@ export default async function HomePage() {
                     <div className="section__head">
                       <div>
                         <h2>{banner.titleKo}</h2>
-                        <p>Selection</p>
+                        {banner.railLinks && banner.railLinks.length > 0 ? (
+                          <nav
+                            className="section__brands"
+                            aria-label={`${banner.titleKo} 브랜드`}
+                          >
+                            {banner.railLinks.map((link, idx) => (
+                              <span key={link.href} className="section__brands-item">
+                                {idx > 0 ? (
+                                  <span className="section__brands-sep" aria-hidden>
+                                    ·
+                                  </span>
+                                ) : null}
+                                <Link href={link.href}>{link.label}</Link>
+                              </span>
+                            ))}
+                          </nav>
+                        ) : null}
                       </div>
                       <Link href={banner.href}>전체 보기</Link>
                     </div>
