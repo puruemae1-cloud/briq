@@ -54,29 +54,6 @@ function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>
   return `chip chip--sub chip--nested${clearance}${active ? " is-active" : ""}`;
 }
 
-/** Deepest shoppable leaves under a nest row (skips folder-only groups). */
-function flattenNavLeaves(nodes: NavChild[]): NavChild[] {
-  const out: NavChild[] = [];
-  for (const n of nodes) {
-    if (n.children?.length) {
-      out.push(...flattenNavLeaves(n.children));
-    } else {
-      out.push(n);
-    }
-  }
-  return out;
-}
-
-/**
- * On the deepest nest row, if chips are still folders (Latest / Clothes…),
- * expand to every leaf so mobile shoppers can reach them without another drill-in.
- */
-function nestRowChips(row: NavChild[], isLastRow: boolean): NavChild[] {
-  if (!isLastRow) return row;
-  const hasFolders = row.some((n) => (n.children?.length ?? 0) > 0);
-  return hasFolders ? flattenNavLeaves(row) : row;
-}
-
 export default async function ShopPage({ searchParams }: Props) {
   const params = await searchParams;
   const category = params.category ?? "all";
@@ -247,8 +224,6 @@ export default async function ShopPage({ searchParams }: Props) {
 
             {nestedRows.map((row, rowIndex) => {
               const parent = openPath?.[rowIndex];
-              const isLast = rowIndex === nestedRows.length - 1;
-              const chips = nestRowChips(row, isLast);
               return (
                 <div
                   key={`nested-${rowIndex}-${row.map((n) => n.id).join("-")}`}
@@ -264,7 +239,7 @@ export default async function ShopPage({ searchParams }: Props) {
                     </p>
                   ) : null}
                   <div className="category-row category-row--sub category-row--nested category-row--nest-chips">
-                    {chips.map((nested) => (
+                    {row.map((nested) => (
                       <Link
                         key={nested.id}
                         href={buildShopHref({
