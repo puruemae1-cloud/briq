@@ -29,7 +29,7 @@ export const PRODUCT_IMAGE = {
   uploadWidth: 1600,
   uploadHeight: 2000,
   /** Soft studio mat behind every product photo */
-  frameBg: "#f3f2ed",
+  frameBg: "#f5f5f5",
 } as const;
 
 export type ProductImageTone = "card" | "detail" | "cart" | "swatch";
