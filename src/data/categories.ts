@@ -448,7 +448,23 @@ export type SubcategoryId =
   | "gc-women-top-handle-bags"
   | "gc-women-backpacks-beltbags"
   | "gc-women-clutches-evening"
-  | "gc-women-personalised";
+  | "gc-women-personalised"
+  | "gucci"
+  | "gc-women"
+  | "gc-women-rtw"
+  | "gc-women-knitwear"
+  | "gc-women-tops-shirts"
+  | "gc-women-tshirts-sweatshirts"
+  | "gc-women-dresses"
+  | "gc-women-pants-shorts"
+  | "gc-women-denim"
+  | "gc-women-skirts"
+  | "gc-women-swimwear"
+  | "gc-women-coats-jackets"
+  | "gc-women-outerwear"
+  | "gc-women-leather"
+  | "gc-women-activewear"
+  | "gc-women-cocktail-evening";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -460,6 +476,23 @@ export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "gc-women-backpacks-beltbags",
   "gc-women-clutches-evening",
   "gc-women-personalised",
+];
+
+/** Gucci women's ready-to-wear Clothing leaves (official UK RTW PLPs). */
+export const GC_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-knitwear",
+  "gc-women-tops-shirts",
+  "gc-women-tshirts-sweatshirts",
+  "gc-women-dresses",
+  "gc-women-pants-shorts",
+  "gc-women-denim",
+  "gc-women-skirts",
+  "gc-women-swimwear",
+  "gc-women-coats-jackets",
+  "gc-women-outerwear",
+  "gc-women-leather",
+  "gc-women-activewear",
+  "gc-women-cocktail-evening",
 ];
 
 export const BS_MEN_CLOTHING_IDS: SubcategoryId[] = [
@@ -1151,6 +1184,22 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
   "gucci-bags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  gucci: ["gucci", "gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
+  "gc-women": ["gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
+  "gc-women-rtw": ["gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
+  "gc-women-knitwear": ["gc-women-knitwear"],
+  "gc-women-tops-shirts": ["gc-women-tops-shirts"],
+  "gc-women-tshirts-sweatshirts": ["gc-women-tshirts-sweatshirts"],
+  "gc-women-dresses": ["gc-women-dresses"],
+  "gc-women-pants-shorts": ["gc-women-pants-shorts"],
+  "gc-women-denim": ["gc-women-denim"],
+  "gc-women-skirts": ["gc-women-skirts"],
+  "gc-women-swimwear": ["gc-women-swimwear"],
+  "gc-women-coats-jackets": ["gc-women-coats-jackets"],
+  "gc-women-outerwear": ["gc-women-outerwear"],
+  "gc-women-leather": ["gc-women-leather"],
+  "gc-women-activewear": ["gc-women-activewear"],
+  "gc-women-cocktail-evening": ["gc-women-cocktail-evening"],
   "gc-women-shoulder-bags": ["gc-women-shoulder-bags"],
   "gc-women-mini-bags": ["gc-women-mini-bags"],
   "gc-women-crossbody-bags": ["gc-women-crossbody-bags"],
@@ -1666,6 +1715,91 @@ export const navCategories: NavCategory[] = [
                 id: "bs-sale-women",
                 labelKo: "여성용",
                 href: "/shop?category=luxury&sub=bs-sale-women",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "gucci",
+        labelKo: "구찌",
+        href: "/shop?category=luxury&sub=gucci",
+        children: [
+          {
+            id: "gc-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=gc-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-rtw",
+                labelKo: "전체보기",
+                href: "/shop?category=luxury&sub=gc-women-rtw",
+              },
+              {
+                id: "gc-women-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=gc-women-knitwear",
+              },
+              {
+                id: "gc-women-tops-shirts",
+                labelKo: "탑 & 셔츠",
+                href: "/shop?category=luxury&sub=gc-women-tops-shirts",
+              },
+              {
+                id: "gc-women-tshirts-sweatshirts",
+                labelKo: "티셔츠 & 스웻셔츠",
+                href: "/shop?category=luxury&sub=gc-women-tshirts-sweatshirts",
+              },
+              {
+                id: "gc-women-dresses",
+                labelKo: "원피스 & 점프수트",
+                href: "/shop?category=luxury&sub=gc-women-dresses",
+              },
+              {
+                id: "gc-women-pants-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=gc-women-pants-shorts",
+              },
+              {
+                id: "gc-women-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=gc-women-denim",
+              },
+              {
+                id: "gc-women-skirts",
+                labelKo: "스커트",
+                href: "/shop?category=luxury&sub=gc-women-skirts",
+              },
+              {
+                id: "gc-women-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=gc-women-swimwear",
+              },
+              {
+                id: "gc-women-coats-jackets",
+                labelKo: "코트 & 재킷",
+                href: "/shop?category=luxury&sub=gc-women-coats-jackets",
+              },
+              {
+                id: "gc-women-outerwear",
+                labelKo: "아우터웨어",
+                href: "/shop?category=luxury&sub=gc-women-outerwear",
+              },
+              {
+                id: "gc-women-leather",
+                labelKo: "레더",
+                href: "/shop?category=luxury&sub=gc-women-leather",
+              },
+              {
+                id: "gc-women-activewear",
+                labelKo: "액티브웨어",
+                href: "/shop?category=luxury&sub=gc-women-activewear",
+              },
+              {
+                id: "gc-women-cocktail-evening",
+                labelKo: "칵테일 & 이브닝",
+                href: "/shop?category=luxury&sub=gc-women-cocktail-evening",
               },
             ],
           },

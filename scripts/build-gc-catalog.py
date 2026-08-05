@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Gucci handbags catalogue from scraped raw.
+"""Build Gucci catalogue from scraped raw (handbags + women's RTW).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
@@ -19,12 +19,16 @@ from pathlib import Path
 from plp_hover import pick_hover_local
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_PATH = ROOT / "src/data/gc/gc-catalog-raw.json"
+HANDBAG_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
+RTW_RAW = ROOT / "src/data/gc/gc-rtw-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
 OUT_TS = ROOT / "src/data/gc/gc-catalog.ts"
 CACHE_PATH = ROOT / "src/data/gc/gc-translate-cache.json"
 
-LEAF_COLLECTIONS = [
+# Back-compat alias
+RAW_PATH = HANDBAG_RAW
+
+HANDBAG_LEAF_COLLECTIONS = [
     "gc-women-shoulder-bags",
     "gc-women-mini-bags",
     "gc-women-crossbody-bags",
@@ -34,6 +38,46 @@ LEAF_COLLECTIONS = [
     "gc-women-clutches-evening",
     "gc-women-personalised",
 ]
+
+RTW_LEAF_COLLECTIONS = [
+    "gc-women-knitwear",
+    "gc-women-tops-shirts",
+    "gc-women-tshirts-sweatshirts",
+    "gc-women-dresses",
+    "gc-women-pants-shorts",
+    "gc-women-denim",
+    "gc-women-skirts",
+    "gc-women-swimwear",
+    "gc-women-coats-jackets",
+    "gc-women-outerwear",
+    "gc-women-leather",
+    "gc-women-activewear",
+    "gc-women-cocktail-evening",
+]
+
+# Keep old name for any external imports
+LEAF_COLLECTIONS = HANDBAG_LEAF_COLLECTIONS
+
+# Official Gucci women RTW Italian size guide (approx body measurements).
+GC_WOMEN_RTW_SIZE_CHART = {
+    "id": "gc-women-rtw-it",
+    "titleKo": "구찌 여성 의류 사이즈 차트",
+    "noteKo": (
+        "구찌 여성 레디투웨어는 이탈리아(IT) 사이즈를 기준으로 표기합니다. "
+        "브랜드·시즌·실루엣에 따라 핏이 다를 수 있으니 참고용으로 확인해 주세요."
+    ),
+    "headers": ["IT", "KR", "UK", "US", "FR", "가슴 (cm)", "허리 (cm)", "엉덩이 (cm)"],
+    "rows": [
+        ["34", "44", "4", "00", "32", "80", "58", "86"],
+        ["36", "44", "6", "0", "34", "84", "62", "90"],
+        ["38", "55", "8", "2", "36", "88", "66", "94"],
+        ["40", "55", "10", "4", "38", "92", "70", "98"],
+        ["42", "66", "12", "6", "40", "96", "74", "102"],
+        ["44", "66", "14", "8", "42", "100", "78", "106"],
+        ["46", "77", "16", "10", "44", "104", "82", "110"],
+        ["48", "77", "18", "12", "46", "108", "86", "114"],
+    ],
+}
 
 
 def gbp_to_krw(gbp: float | None) -> int:
@@ -111,7 +155,6 @@ def slugify(text: str) -> str:
 
 
 def clean_name_ko(name: str) -> str:
-    """Convert '[구찌 소프트빗] 맥시 숄더백' → '구찌 소프트빗 맥시 숄더백'."""
     s = (name or "").strip()
     m = re.match(r"^\[([^\]]+)\]\s*(.*)$", s)
     if m:
@@ -121,26 +164,11 @@ def clean_name_ko(name: str) -> str:
 
 
 def strip_gucci_warranty(text: str) -> str:
-    """Drop KR Gucci A/S warranty + clientservice.kr copy from product text.
-
-    Official KR PDP injects clauses like:
-      품질보증기준: A/S 보증기간 2년(...)
-      AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com
-    They may sit together or be split by other detail bullets — remove each clause.
-    """
     if not text:
         return ""
     s = text.replace("\xa0", " ").replace("\u202f", " ")
     s = re.sub(r"[ \t]+", " ", s)
-
-    # Warranty standards clause (ends at next middle-dot bullet or EOL)
-    s = re.sub(
-        r"품질보증기준\s*:[^·\n]*",
-        "",
-        s,
-        flags=re.I,
-    )
-    # Phone / email AS intake clause
+    s = re.sub(r"품질보증기준\s*:[^·\n]*", "", s, flags=re.I)
     s = re.sub(
         r"AS\s*유선접수\s*:[^·\n]*clientservice\.kr@gucci\.com",
         "",
@@ -148,14 +176,12 @@ def strip_gucci_warranty(text: str) -> str:
         flags=re.I,
     )
     s = re.sub(r"clientservice\.kr@gucci\.com", "", s, flags=re.I)
-    # Orphan AS phone line without email
     s = re.sub(
         r"AS\s*유선접수\s*:[^·\n]*02-3452-1921[^·\n]*",
         "",
         s,
         flags=re.I,
     )
-
     s = re.sub(r"(?:\s*[·•]\s*){2,}", " · ", s)
     s = re.sub(r"^\s*[·•]\s*", "", s)
     s = re.sub(r"\s*[·•]\s*$", "", s)
@@ -181,18 +207,14 @@ def detail_lines(parts: list | None) -> list[str]:
         line = html_to_text(str(p))
         if not line:
             continue
-        # Skip season codes like PF25 alone
         if re.fullmatch(r"[A-Z]{1,3}\d{2}", line):
             continue
-        # Drop KR Gucci warranty / client-service footers
         if is_gucci_warranty_line(line):
             cleaned = strip_gucci_warranty(line)
             if cleaned:
                 out.append(cleaned)
             continue
-        # Drop long medical warning footers
         if "전자의료" in line or "electromedical" in line.lower() or "WARNING:" in line:
-            # keep the closure part before warning if present
             before = re.split(r"WARNING:|경고:", line, maxsplit=1)[0].strip()
             if before:
                 out.append(before)
@@ -207,33 +229,23 @@ def care_lines(care: str | None) -> list[str]:
     return [html_to_text(x) for x in care.split("|") if html_to_text(x)]
 
 
-def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
-    code = row.get("productCode") or row.get("id")
-    if not code:
-        return None
-    gbp = row.get("gbpPrice")
-    if gbp is None:
-        return None
-    price = gbp_to_krw(float(gbp))
-    if price <= 0:
-        return None
+def format_size_label(size: str) -> str:
+    s = (size or "").strip()
+    if not s:
+        return "One Size"
+    if s.isdigit():
+        return f"IT {s}"
+    return s.upper() if len(s) <= 4 else s
 
-    cols = [
-        c
-        for c in (row.get("collections") or [])
-        if c in LEAF_COLLECTIONS or c == "gc-handbags"
-    ]
-    # Always include parent handbag hub when in any leaf
-    if any(c in LEAF_COLLECTIONS for c in cols) and "gc-handbags" not in cols:
-        cols.append("gc-handbags")
-    cols = sorted(set(cols))
-    if not cols:
-        cols = ["gc-handbags"]
 
-    leaf = next((c for c in LEAF_COLLECTIONS if c in cols), "gc-handbags")
+def size_slug(size: str) -> str:
+    return slugify(format_size_label(size))
 
+
+def common_copy(row: dict) -> dict:
     ko = row.get("translationKo") or {}
     en = row.get("translationEn") or {}
+    code = row.get("productCode") or row.get("id") or ""
 
     title_en = (row.get("title") or en.get("name") or code).strip()
     name_ko = clean_name_ko(ko.get("name") or "") or t(title_en)
@@ -276,13 +288,12 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     if not images and row.get("localImage"):
         images = [row["localImage"]]
     if not images:
-        # Fallback to remote URLs (dev only) — still set path pattern
-        remotes = row.get("images") or ([] if not row.get("image") else [row["image"]])
+        remotes = row.get("images") or (
+            [] if not row.get("image") else [row["image"]]
+        )
         images = remotes[:1]
 
-    image = images[0]
-    # Official Gucci PLP hover is the on-model / lookbook frame (type 100),
-    # not PDP gallery[1] (usually a side packshot _002).
+    image = images[0] if images else ""
     hover = (
         row.get("localHover")
         or pick_hover_local(
@@ -303,11 +314,7 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     story: list[dict] = []
     if editorial_ko:
         story.append(
-            {
-                "titleKo": name_ko,
-                "bodyKo": editorial_ko,
-                "image": image,
-            }
+            {"titleKo": name_ko, "bodyKo": editorial_ko, "image": image}
         )
     if details_ko:
         story.append(
@@ -348,27 +355,62 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
             }
         )
 
-    color_key = slugify(color_en or color_ko or "default")
-    pid = f"gc-{slugify(title_en)}-{slugify(code)[-12:]}"
-    # Stable id from product code
-    pid = f"gc-{code.lower()}"
+    return {
+        "code": code,
+        "title_en": title_en,
+        "name_ko": name_ko,
+        "color_en": color_en,
+        "color_ko": color_ko,
+        "color_key": slugify(color_en or color_ko or "default"),
+        "images": images,
+        "image": image,
+        "hover": hover,
+        "description_ko": description_ko,
+        "story": story,
+    }
 
+
+def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c in HANDBAG_LEAF_COLLECTIONS or c == "gc-handbags"
+    ]
+    if any(c in HANDBAG_LEAF_COLLECTIONS for c in cols) and "gc-handbags" not in cols:
+        cols.append("gc-handbags")
+    cols = sorted(set(cols))
+    if not cols:
+        cols = ["gc-handbags"]
+
+    leaf = next((c for c in HANDBAG_LEAF_COLLECTIONS if c in cols), "gc-handbags")
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
     variant = {
         "id": f"{pid}-u",
-        "name": f"{title_en} — {color_en or 'One Size'}".strip(" —"),
-        "nameKo": f"{name_ko} — {color_ko or '원 사이즈'}".strip(" —"),
+        "name": f"{copy['title_en']} — {copy['color_en'] or 'One Size'}".strip(" —"),
+        "nameKo": f"{copy['name_ko']} — {copy['color_ko'] or '원 사이즈'}".strip(" —"),
         "sku": code,
         "gbpPrice": float(gbp),
         "price": price,
-        "image": image,
-        "images": images,
-        "hoverImage": hover,
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
         "sourceUrl": row.get("url") or "",
         "inStock": bool(row.get("inStock", True)),
-        "colorKey": color_key,
-        "colorNameKo": color_ko or color_en or "기본",
+        "colorKey": copy["color_key"],
+        "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
         "size": "One Size",
         "gcCollections": cols,
     }
@@ -381,18 +423,18 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
 
     return {
         "id": pid,
-        "name": title_en,
-        "nameKo": name_ko,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
         "brand": "구찌",
         "price": price,
         "category": "bags",
         "subcategory": leaf,
         "gcCollections": cols,
         "tags": tags,
-        "descriptionKo": description_ko,
-        "image": image,
-        "images": images,
-        "hoverImage": hover,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
         "accent": accent_for(code),
         "badge": badge,
         "gbpPrice": float(gbp),
@@ -400,18 +442,154 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         "sourceUrl": row.get("url") or "",
         "inStock": bool(row.get("inStock", True)),
         "variants": [variant],
-        "storySections": story,
+        "storySections": copy["story"],
         "registeredAt": registered,
         "editTier": "new" if badge == "New" else "signature",
     }
 
 
-def main() -> None:
-    if not RAW_PATH.exists():
-        raise SystemExit(f"Missing {RAW_PATH} — run scrape-gc-handbags.py first")
+def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
 
-    raw = json.loads(RAW_PATH.read_text())
-    rows = raw.get("products") or []
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c in {*RTW_LEAF_COLLECTIONS, "gc-women-rtw", "gc-women", "gucci"}
+    ]
+    cols = sorted(set([*cols, "gc-women-rtw", "gc-women", "gucci"]))
+
+    leaf = next((c for c in RTW_LEAF_COLLECTIONS if c in cols), "gc-women-rtw")
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    in_stock = bool(row.get("inStock", True))
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    if size_rows:
+        for sz in size_rows:
+            size_raw = str(sz.get("size") or "").strip()
+            if not size_raw:
+                continue
+            label = format_size_label(size_raw)
+            slug = size_slug(size_raw)
+            sku = str(sz.get("sku") or f"{code}-{slug}")
+            variants.append(
+                {
+                    "id": f"{pid}-{slug}",
+                    "name": f"{copy['title_en']} — {label}",
+                    "nameKo": f"{copy['name_ko']} — {label}",
+                    "sku": sku,
+                    "gbpPrice": float(gbp),
+                    "price": price,
+                    "image": copy["image"],
+                    "images": copy["images"],
+                    "hoverImage": copy["hover"],
+                    "sourceUrl": row.get("url") or "",
+                    "inStock": in_stock,
+                    "colorKey": copy["color_key"],
+                    "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                    "size": label,
+                    "gcCollections": cols,
+                }
+            )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{copy['title_en']} — One Size",
+                "nameKo": f"{copy['name_ko']} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": copy["image"],
+                "images": copy["images"],
+                "hoverImage": copy["hover"],
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": copy["color_key"],
+                "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                "size": "One Size",
+                "gcCollections": cols,
+            }
+        ]
+
+    tags = ["gucci", "구찌", "rtw", "의류", "여성", "ready-to-wear", *cols]
+    badge = None
+    label = (row.get("label") or "").lower()
+    if "new" in label:
+        badge = "New"
+
+    return {
+        "id": pid,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
+        "brand": "구찌",
+        "price": price,
+        "category": "luxury",
+        "subcategory": leaf,
+        "gcCollections": cols,
+        "tags": tags,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "accent": accent_for(code),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "sizeChart": GC_WOMEN_RTW_SIZE_CHART,
+        "storySections": copy["story"],
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+
+
+def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    kind = (row.get("kind") or "").lower()
+    cols = row.get("collections") or []
+    if kind == "rtw" or any(
+        c in RTW_LEAF_COLLECTIONS or c in {"gc-women-rtw", "gc-women"} for c in cols
+    ):
+        return build_rtw_product(row, prev, now_iso)
+    return build_handbag_product(row, prev, now_iso)
+
+
+def load_rows() -> list[dict]:
+    rows: list[dict] = []
+    if HANDBAG_RAW.exists():
+        data = json.loads(HANDBAG_RAW.read_text())
+        for row in data.get("products") or []:
+            row = dict(row)
+            row.setdefault("kind", "handbag")
+            rows.append(row)
+    if RTW_RAW.exists():
+        data = json.loads(RTW_RAW.read_text())
+        for row in data.get("products") or []:
+            row = dict(row)
+            row["kind"] = "rtw"
+            rows.append(row)
+    return rows
+
+
+def main() -> None:
+    rows = load_rows()
+    if not rows:
+        raise SystemExit(
+            "Missing Gucci raw catalogues — run scrape-gc-handbags.py "
+            "and/or scrape-gc-womens-rtw.py first"
+        )
 
     prev_by_sku: dict[str, dict] = {}
     if OUT_JSON.exists():
@@ -419,15 +597,26 @@ def main() -> None:
             if p.get("sku"):
                 prev_by_sku[str(p["sku"])] = p
 
-    now_iso = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace(
-        "+00:00", "Z"
+    now_iso = (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
     )
     products: list[dict] = []
+    seen_ids: set[str] = set()
     for i, row in enumerate(rows, start=1):
         sku = str(row.get("productCode") or row.get("id") or "")
         prod = build_product(row, prev_by_sku.get(sku), now_iso)
-        if prod:
-            products.append(prod)
+        if not prod:
+            continue
+        if prod["id"] in seen_ids:
+            if row.get("kind") == "rtw":
+                products = [p for p in products if p["id"] != prod["id"]]
+                products.append(prod)
+            continue
+        seen_ids.add(prod["id"])
+        products.append(prod)
         if i % 50 == 0:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built {i}/{len(rows)}", flush=True)
@@ -438,12 +627,15 @@ def main() -> None:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./gc-catalog.json";\n\n'
-        "/** Auto-generated — Gucci women's handbags. */\n"
+        "/** Auto-generated — Gucci handbags + women's ready-to-wear. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
-    for leaf in LEAF_COLLECTIONS:
+    bags_n = sum(1 for p in products if p.get("category") == "bags")
+    rtw_n = sum(1 for p in products if p.get("category") == "luxury")
+    print(f"  handbags: {bags_n}  rtw: {rtw_n}", flush=True)
+    for leaf in RTW_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
 
