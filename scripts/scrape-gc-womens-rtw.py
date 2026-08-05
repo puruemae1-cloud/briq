@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scrape Gucci UK women's ready-to-wear (Clothing) + PDP images.
 
-Mirrors scrape-gc-handbags.py: productgrid leaves + catalog API + White_Center
+Mirrors scrape-gc-handbags.py: productgrid leaves + catalog API + DarkGray
 images into public/products/gc-pdp/. Writes gc-rtw-catalog-raw.json.
 """
 from __future__ import annotations

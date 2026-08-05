@@ -22,7 +22,7 @@
   --product-frame-pad: 10%;
   --product-frame-pad-sm: 8%;
   /* Same clean white as the page — no visible mat around photos */
-  --product-frame-bg: #ffffff;
+  --product-frame-bg: #e7e7e7;
   --product-grid-gap-y: 3rem;
   --product-grid-gap-x: 3.25rem;
 }
