@@ -6,6 +6,9 @@ serves new / updated product photos without bloating `main`.
 
   python3 scripts/push-product-images-tag.py --dirs bs-pdp ps-pdp lu-pdp
 
+Commits and force-pushes one brand directory at a time so large multi-brand
+updates do not trip GitHub HTTP 500 limits.
+
 Exits 0 when there is nothing to do. Never leaves a dirty worktree behind.
 """
 from __future__ import annotations
@@ -44,6 +47,49 @@ def ensure_git_identity(cwd: Path) -> None:
     )
 
 
+def sync_brand(tmp: Path, name: str, src: Path) -> bool:
+    """Copy one brand tree into the worktree and stage it. Returns True if dirty."""
+    dest = tmp / "public" / "products" / name
+    dest.mkdir(parents=True, exist_ok=True)
+    for child in src.iterdir():
+        if not child.is_dir():
+            continue
+        target = dest / child.name
+        if target.exists():
+            shutil.rmtree(target)
+        shutil.copytree(child, target)
+    run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
+    status = subprocess.run(
+        ["git", "status", "--porcelain", "--", f"public/products/{name}"],
+        cwd=str(tmp),
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return bool(status)
+
+
+def push_tag(tmp: Path) -> bool:
+    """Force-push the product-images tag. Returns True on success."""
+    run(["git", "tag", "-f", TAG], cwd=tmp)
+    pushed = run(
+        [
+            "git",
+            "-c",
+            "http.postBuffer=524288000",
+            "-c",
+            "http.version=HTTP/1.1",
+            "push",
+            "-f",
+            "origin",
+            f"refs/tags/{TAG}",
+        ],
+        cwd=tmp,
+        check=False,
+    )
+    return pushed.returncode == 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
@@ -51,6 +97,11 @@ def main() -> int:
         nargs="+",
         required=True,
         help="Image folder names under public/products (e.g. bs-pdp)",
+    )
+    ap.add_argument(
+        "--skip-whiten",
+        action="store_true",
+        help="Skip studio-background whitening before push",
     )
     args = ap.parse_args()
 
@@ -66,13 +117,33 @@ def main() -> int:
         print("No local image dirs to push.", flush=True)
         return 0
 
-    # Need the tag available
+    # Lift warm/gray studio mats to white before publishing (Gucci-like PLP).
+    whiten = ROOT / "scripts" / "whiten-product-studio-bg.py"
+    if whiten.is_file() and not args.skip_whiten:
+        names = [n for n, _ in src_roots]
+        print(f"Whitening studio backgrounds: {names}", flush=True)
+        whitened = run(
+            [
+                sys.executable,
+                str(whiten),
+                "--workers",
+                str(max(2, (os.cpu_count() or 4) // 2)),
+                "--dirs",
+                *names,
+            ],
+            check=False,
+        )
+        if whitened.returncode != 0:
+            print(
+                "WARN: whitener exited non-zero — continuing with existing images.",
+                flush=True,
+            )
+
     fetched = run(
         ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
         check=False,
     )
     if fetched.returncode != 0:
-        # Tag may already exist locally
         show = run(["git", "rev-parse", "--verify", TAG], check=False)
         if show.returncode != 0:
             print(
@@ -97,53 +168,34 @@ def main() -> int:
 
         ensure_git_identity(tmp)
 
+        any_pushed = False
         for name, src in src_roots:
-            dest = tmp / "public" / "products" / name
-            dest.mkdir(parents=True, exist_ok=True)
-            # Copy only — do not --delete whole brand tree (other brands live on tag)
-            for child in src.iterdir():
-                if not child.is_dir():
-                    continue
-                target = dest / child.name
-                if target.exists():
-                    shutil.rmtree(target)
-                shutil.copytree(child, target)
-            run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
+            print(f"=== sync {name} ===", flush=True)
+            if not sync_brand(tmp, name, src):
+                print(f"No image changes for {name}.", flush=True)
+                continue
 
-        status = subprocess.run(
-            ["git", "status", "--porcelain"],
-            cwd=str(tmp),
-            check=True,
-            capture_output=True,
-            text=True,
-        ).stdout.strip()
-        if not status:
-            print("No image changes on product-images tag.", flush=True)
-            return 0
-
-        run(
-            [
-                "git",
-                "commit",
-                "-m",
-                "chore: sync PDP images from weekly brand jobs\n",
-            ],
-            cwd=tmp,
-        )
-        run(["git", "tag", "-f", TAG], cwd=tmp)
-        pushed = run(
-            ["git", "push", "-f", "origin", f"refs/tags/{TAG}"],
-            cwd=tmp,
-            check=False,
-        )
-        if pushed.returncode != 0:
-            print(
-                "ERROR: failed to push product-images tag "
-                "(check Actions write permissions / tag protection).",
-                flush=True,
+            run(
+                [
+                    "git",
+                    "commit",
+                    "-m",
+                    f"chore: sync PDP images ({name})\n",
+                ],
+                cwd=tmp,
             )
-            return 1
-        print("product-images tag updated.", flush=True)
+            if not push_tag(tmp):
+                print(
+                    "ERROR: failed to push product-images tag "
+                    "(check Actions write permissions / tag protection / size).",
+                    flush=True,
+                )
+                return 1
+            any_pushed = True
+            print(f"product-images tag updated ({name}).", flush=True)
+
+        if not any_pushed:
+            print("No image changes on product-images tag.", flush=True)
         return 0
     finally:
         run(["git", "worktree", "remove", "--force", str(tmp)], check=False)
