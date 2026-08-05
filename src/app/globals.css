@@ -5034,6 +5034,31 @@ body:has(.pdp-dock) .back-to-top {
   color: rgba(30, 28, 24, 0.72);
 }
 
+.size-chart-modal__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+}
+
+.size-chart-modal__tab {
+  appearance: none;
+  border: 1px solid rgba(30, 28, 24, 0.18);
+  background: #fff;
+  color: #222;
+  padding: 0.45rem 0.85rem;
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.size-chart-modal__tab.is-active {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
 .size-chart-modal__table-wrap {
   overflow-x: auto;
   border: 1px solid rgba(30, 28, 24, 0.1);

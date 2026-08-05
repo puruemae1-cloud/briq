@@ -77,12 +77,21 @@ export type ProductTechSpec = {
   valueKo: string;
 };
 
+export type ProductSizeChartTab = {
+  id: string;
+  labelKo: string;
+  headers: string[];
+  rows: string[][];
+};
+
 export type ProductSizeChart = {
   id: string;
   titleKo: string;
   noteKo: string;
   headers: string[];
   rows: string[][];
+  /** Optional Tops / Bottoms tabs (Gucci RTW size guide). */
+  tabs?: ProductSizeChartTab[];
 };
 
 export type Product = {

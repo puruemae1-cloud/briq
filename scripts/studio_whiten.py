@@ -67,6 +67,11 @@ def studio_bg_color(arr: np.ndarray) -> np.ndarray | None:
             return None
     if _luma(tuple(bg)) < 172:
         return None
+    # Skip neutral grey studio backdrops (e.g. Gucci DarkGray RTW).
+    # Only lift warm/cream packshot mats toward white.
+    mx, mn = float(np.max(bg)), float(np.min(bg))
+    if (mx - mn) < 14 and _luma(tuple(bg)) < 248:
+        return None
     return bg
 
 

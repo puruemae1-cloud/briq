@@ -25,7 +25,6 @@ from plp_hover import (  # noqa: E402
     gucci_lifestyle_index,
     pick_hover_local,
 )
-from studio_whiten import save_product_image  # noqa: E402
 
 OUT_RAW = ROOT / "src/data/gc/gc-rtw-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/gc/gc-pdp-cache.json"
@@ -98,12 +97,13 @@ def abs_url(u: str | None) -> str:
 
 
 def upgrade_media_url(u: str) -> str:
+    """Keep DarkGray studio crops — matches gucci.com RTW PLP/PDP look."""
     u = abs_url(u)
     if "media.gucci.com/style/" not in u:
         return u
     return re.sub(
         r"/style/[^/]+/",
-        "/style/White_Center_0_0_1200x1200/",
+        "/style/DarkGray_Center_0_0_1200x1200/",
         u,
         count=1,
     )
@@ -246,13 +246,19 @@ def download_image(s: cffi_requests.Session, url: str, dest: Path) -> bool:
         try:
             r = s.get(
                 url,
-                headers={"Accept": "image/*,*/*", "Referer": f"{BASE}/"},
+                headers={
+                    "Accept": "image/jpeg,image/*,*/*",
+                    "Referer": f"{BASE}/",
+                },
                 impersonate="chrome124",
                 timeout=90,
             )
             if r.status_code != 200 or len(r.content) < 1500:
                 raise RuntimeError(f"bad image {r.status_code} {len(r.content)}")
-            save_product_image(dest, r.content)
+            if r.content[:3] != b"\xff\xd8\xff":
+                raise RuntimeError("not jpeg")
+            # Do not whiten — RTW DarkGray studio mats must match gucci.com.
+            dest.write_bytes(r.content)
             return True
         except Exception:
             time.sleep(0.8 * (attempt + 1))

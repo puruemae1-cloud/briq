@@ -1,11 +1,35 @@
 "use client";
 
-import { useId, useState } from "react";
-import type { ShoeSizeChart } from "@/data/bb/bb-shoe-size-charts";
+import { useId, useMemo, useState } from "react";
+import type { ProductSizeChart } from "@/data/products";
 
-export function SizeChartControl({ chart }: { chart: ShoeSizeChart }) {
+type ChartLike = {
+  id: string;
+  titleKo: string;
+  noteKo: string;
+  headers: string[];
+  rows: string[][];
+  tabs?: {
+    id: string;
+    labelKo: string;
+    headers: string[];
+    rows: string[][];
+  }[];
+};
+
+export function SizeChartControl({ chart }: { chart: ChartLike | ProductSizeChart }) {
   const [open, setOpen] = useState(false);
+  const tabs = chart.tabs?.length ? chart.tabs : null;
+  const [tabId, setTabId] = useState(tabs?.[0]?.id ?? "");
   const titleId = useId();
+
+  const active = useMemo(() => {
+    if (!tabs) {
+      return { headers: chart.headers, rows: chart.rows };
+    }
+    const found = tabs.find((t) => t.id === tabId) ?? tabs[0];
+    return { headers: found.headers, rows: found.rows };
+  }, [tabs, tabId, chart.headers, chart.rows]);
 
   return (
     <div className="size-chart">
@@ -44,11 +68,31 @@ export function SizeChartControl({ chart }: { chart: ShoeSizeChart }) {
               </button>
             </header>
             <p className="size-chart-modal__note">{chart.noteKo}</p>
+            {tabs ? (
+              <div className="size-chart-modal__tabs" role="tablist">
+                {tabs.map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={t.id === (tabId || tabs[0].id)}
+                    className={
+                      t.id === (tabId || tabs[0].id)
+                        ? "size-chart-modal__tab is-active"
+                        : "size-chart-modal__tab"
+                    }
+                    onClick={() => setTabId(t.id)}
+                  >
+                    {t.labelKo}
+                  </button>
+                ))}
+              </div>
+            ) : null}
             <div className="size-chart-modal__table-wrap">
               <table className="size-chart-table">
                 <thead>
                   <tr>
-                    {chart.headers.map((h) => (
+                    {active.headers.map((h) => (
                       <th key={h} scope="col">
                         {h}
                       </th>
@@ -56,7 +100,7 @@ export function SizeChartControl({ chart }: { chart: ShoeSizeChart }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {chart.rows.map((row) => (
+                  {active.rows.map((row) => (
                     <tr key={row.join("-")}>
                       {row.map((cell, i) => (
                         <td key={`${row[0]}-${i}`}>{cell}</td>
