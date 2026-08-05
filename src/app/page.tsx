@@ -6,7 +6,7 @@ import {
 } from "@/components/Collection100";
 import { LookBannerBlock } from "@/components/LookBanner";
 import { ProductCard } from "@/components/ProductCard";
-import { heroImages, homeLookBanners, pickRotating } from "@/data/home-banners";
+import { heroImages, homeLookBanners, pickRotating, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { getHomepageRailProducts } from "@/lib/product-sort";
 
@@ -45,6 +45,7 @@ export default async function HomePage() {
                 4,
               )
             : [];
+          const railLinks = resolveHomeRailLinks(banner);
 
           return (
             <div key={banner.id} className="lookbook__block">
@@ -55,12 +56,12 @@ export default async function HomePage() {
                     <div className="section__head">
                       <div>
                         <h2>{banner.titleKo}</h2>
-                        {banner.railLinks && banner.railLinks.length > 0 ? (
+                        {railLinks.length > 0 ? (
                           <nav
                             className="section__brands"
                             aria-label={`${banner.titleKo} 브랜드`}
                           >
-                            {banner.railLinks.map((link, idx) => (
+                            {railLinks.map((link, idx) => (
                               <span key={link.href} className="section__brands-item">
                                 {idx > 0 ? (
                                   <span className="section__brands-sep" aria-hidden>

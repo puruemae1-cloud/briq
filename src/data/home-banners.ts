@@ -1,4 +1,5 @@
 import type { CategoryId } from "@/data/categories";
+import { navCategories } from "@/data/categories";
 
 export type BannerSlide = {
   id: string;
@@ -30,9 +31,36 @@ export type LookBanner = {
   align?: "left" | "center" | "right";
   /** When present the banner renders as an auto-advancing carousel */
   slides?: BannerSlide[];
-  /** Brand / leaf links shown under the lookbook rail title (replaces “Selection”). */
+  /**
+   * Optional override for brand / leaf links under the lookbook rail title.
+   * When omitted, links are derived from `navCategories` children for
+   * `categoryId` so new brands appear on the homepage automatically.
+   */
   railLinks?: LookBannerLink[];
 };
+
+/** Homepage rail brand chips — mirrors top-level children under each shop category. */
+export function homeRailLinksForCategory(
+  categoryId: CategoryId,
+): LookBannerLink[] {
+  const cat = navCategories.find((c) => c.id === categoryId);
+  if (!cat?.children?.length) return [];
+  return cat.children.map((child) => ({
+    label: child.labelKo,
+    href: child.href,
+  }));
+}
+
+/** Resolve rail links: explicit override wins, else auto from nav. */
+export function resolveHomeRailLinks(banner: LookBanner): LookBannerLink[] {
+  if (banner.railLinks && banner.railLinks.length > 0) {
+    return banner.railLinks;
+  }
+  if (banner.categoryId) {
+    return homeRailLinksForCategory(banner.categoryId);
+  }
+  return [];
+}
 
 const TWO_WEEKS_MS = 14 * 24 * 60 * 60 * 1000;
 
@@ -92,12 +120,6 @@ export const homeLookBanners: LookBanner[] = [
       "/banners/rot-luxury-3.jpg",
     ],
     align: "right",
-    railLinks: [
-      { label: "버버리", href: "/shop?category=luxury&sub=burberry" },
-      { label: "벨스타프", href: "/shop?category=luxury&sub=belstaff" },
-      { label: "폴스미스", href: "/shop?category=luxury&sub=paul-smith" },
-      { label: "아크테릭스", href: "/shop?category=luxury&sub=arcteryx" },
-    ],
   },
   {
     id: "watches",
@@ -116,12 +138,6 @@ export const homeLookBanners: LookBanner[] = [
     ],
     align: "left",
     focal: "center 42%",
-    railLinks: [
-      {
-        label: "크리스토퍼와드",
-        href: "/shop?category=watches&sub=christopher-ward",
-      },
-    ],
   },
   {
     id: "clothing",
@@ -156,12 +172,6 @@ export const homeLookBanners: LookBanner[] = [
       "/banners/rot-bag-3.jpg",
     ],
     align: "left",
-    railLinks: [
-      { label: "구찌", href: "/shop?category=bags&sub=gucci-bags" },
-      { label: "버버리", href: "/shop?category=bags&sub=burberry-bags" },
-      { label: "벨스타프", href: "/shop?category=bags&sub=belstaff-bags" },
-      { label: "아크테릭스", href: "/shop?category=bags&sub=arcteryx-bags" },
-    ],
   },
   {
     id: "shoes",
@@ -179,12 +189,6 @@ export const homeLookBanners: LookBanner[] = [
       "/banners/rot-shoe-3.jpg",
     ],
     align: "right",
-    railLinks: [
-      { label: "버버리", href: "/shop?category=shoes&sub=burberry-shoes" },
-      { label: "벨스타프", href: "/shop?category=shoes&sub=belstaff-shoes" },
-      { label: "폴스미스", href: "/shop?category=shoes&sub=paul-smith-shoes" },
-      { label: "아크테릭스", href: "/shop?category=shoes&sub=arcteryx-shoes" },
-    ],
   },
   {
     id: "accessories",
@@ -202,21 +206,6 @@ export const homeLookBanners: LookBanner[] = [
       "/banners/rot-acc-3.jpg",
     ],
     align: "left",
-    railLinks: [
-      {
-        label: "폴스미스",
-        href: "/shop?category=accessories&sub=paul-smith-accessories",
-      },
-      {
-        label: "벨스타프",
-        href: "/shop?category=accessories&sub=belstaff-accessories",
-      },
-      {
-        label: "런던 언더커버",
-        href: "/shop?category=accessories&sub=london-undercover",
-      },
-      { label: "버버리", href: "/shop?category=accessories&sub=burberry-accessories" },
-    ],
   },
   {
     id: "sports",
@@ -230,13 +219,6 @@ export const homeLookBanners: LookBanner[] = [
     cta: "스포츠 쇼핑",
     images: ["/banners/rot-golf-1.jpg"],
     align: "left",
-    railLinks: [
-      { label: "골프", href: "/shop?category=sports&sub=golf" },
-      { label: "자전거", href: "/shop?category=sports&sub=cycling" },
-      { label: "수영", href: "/shop?category=sports&sub=swimming" },
-      { label: "러닝", href: "/shop?category=sports&sub=running" },
-      { label: "테니스", href: "/shop?category=sports&sub=tennis" },
-    ],
     slides: [
       {
         id: "golf",
