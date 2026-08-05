@@ -49,9 +49,8 @@ export function SiteFooter() {
               |
             </span>
             <span>메일: support@hjstoryltd.com</span>
-            <span className="site-footer__biz-sep" aria-hidden>
-              |
-            </span>
+          </p>
+          <p>
             <span>전화번호: +44 7897 535888</span>
           </p>
           <p>
@@ -83,12 +82,11 @@ export function SiteFooter() {
           </p>
           <p>
             <span>UK Company: HJ STORY LIMITED</span>
-            <span className="site-footer__biz-sep" aria-hidden>
-              |
-            </span>
+          </p>
+          <p>
             <span>
-              V307 Vox Studios, 1-45 Durham Street, Vauxhall, United Kingdom,
-              SE11 5JH
+              Vox Studios, 1-45 Durham Street, Vauxhall, United Kingdom, SE11
+              5JH
             </span>
           </p>
         </div>
