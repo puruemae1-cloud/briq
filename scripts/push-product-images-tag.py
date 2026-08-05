@@ -117,30 +117,32 @@ def main() -> int:
         print("No local image dirs to push.", flush=True)
         return 0
 
-    # Always lift warm/gray studio mats to white before publishing (Gucci-like PLP).
-    # Required for newly scraped products — do not skip in weekly CI.
+    # Always map light studio mats to Gucci DarkGray before publishing so pale
+    # garments stay visible. Required for newly scraped products — do not skip
+    # in weekly CI (use --skip-whiten only when images were already greymatted).
     if not args.skip_whiten:
         names = [n for n, _ in src_roots]
-        print(f"Whitening studio backgrounds: {names}", flush=True)
+        print(f"Greymatting studio backgrounds → DarkGray: {names}", flush=True)
         scripts_dir = str(ROOT / "scripts")
         if scripts_dir not in sys.path:
             sys.path.insert(0, scripts_dir)
         try:
-            from studio_whiten import whiten_dirs  # type: ignore
+            from studio_greymat import greymat_dirs  # type: ignore
         except ImportError as e:
             print(
-                "ERROR: studio whitening requires pillow + numpy "
-                f"(`pip install pillow numpy`). Import failed: {e}",
+                "ERROR: studio greymat requires pillow + numpy + rembg "
+                f"(`pip install -r scripts/requirements-images.txt`). "
+                f"Import failed: {e}",
                 flush=True,
             )
             return 1
         try:
-            whiten_dirs(
+            greymat_dirs(
                 names,
-                workers=max(2, (os.cpu_count() or 4) // 2),
+                workers=max(2, min(6, (os.cpu_count() or 4) // 2)),
             )
         except Exception as e:
-            print(f"ERROR: studio whitening failed: {e}", flush=True)
+            print(f"ERROR: studio greymat failed: {e}", flush=True)
             return 1
 
     fetched = run(

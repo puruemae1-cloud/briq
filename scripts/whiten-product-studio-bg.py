@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""CLI: whiten light studio mats on catalog PDP photos.
+"""CLI: map light studio mats to Gucci DarkGray on catalog PDP photos.
 
-See studio_whiten.py for the shared library used by scrapers and image pushes.
+See studio_greymat.py for the shared library used by scrapers and image pushes.
+(Kept filename for existing CI / docs that still call whiten-product-studio-bg.)
 """
 from __future__ import annotations
 
@@ -11,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from studio_whiten import DEFAULT_DIRS, whiten_dirs  # noqa: E402
+from studio_greymat import DEFAULT_DIRS, greymat_dirs  # noqa: E402
 
 
 def main() -> None:
@@ -22,10 +23,10 @@ def main() -> None:
         default=DEFAULT_DIRS,
         help="Product image roots under public/products/",
     )
-    ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
-    whiten_dirs(args.dirs, workers=args.workers, limit=args.limit)
+    greymat_dirs(args.dirs, workers=args.workers, limit=args.limit)
 
 
 if __name__ == "__main__":
