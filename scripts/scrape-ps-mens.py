@@ -11,8 +11,11 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import save_product_image  # noqa: E402
 OUT_DIR = ROOT / "src/data/ps"
 RAW_PATH = OUT_DIR / "ps-catalog-raw.json"
 IMG_ROOT = ROOT / "public/products/ps-pdp"
@@ -246,7 +249,7 @@ def download_images(handle: str, urls: list[str]) -> list[str]:
                 continue
             n += 1
             path = dest / f"{n}.jpg"
-            path.write_bytes(data)
+            save_product_image(path, data)
             local.append(f"/products/ps-pdp/{handle}/{n}.jpg")
             time.sleep(0.03)
         except Exception as e:
@@ -265,7 +268,7 @@ def download_hover(handle: str, url: str) -> str | None:
         data = fetch_bytes(normalize_asset_url(url))
         if len(data) < 800:
             return None
-        path.write_bytes(data)
+        save_product_image(path, data)
         return f"/products/ps-pdp/{handle}/hover.jpg"
     except Exception as e:
         print("hover fail", handle, e)

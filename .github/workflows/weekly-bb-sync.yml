@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install image whitening deps
+        run: pip install -r scripts/requirements-images.txt
+
       - name: Restore bb-pdp images from product-images tag
         run: python3 scripts/restore-product-images-tag.py --dirs bb-pdp
 
@@ -47,6 +50,8 @@ jobs:
             "chore: weekly Burberry stock + catalogue sync" \
             src/data/bb \
             scripts/weekly-bb-stock-sync.py \
+            scripts/studio_whiten.py \
+            scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
             scripts/ci-commit-push.sh

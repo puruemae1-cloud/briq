@@ -10,8 +10,11 @@ import urllib.request
 from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import save_product_image  # noqa: E402
 RAW_PATH = ROOT / "src/data/bs/bs-catalog-raw.json"
 IMG_ROOT = ROOT / "public/products/bs-pdp"
 CHART_CACHE = ROOT / "src/data/bs/bs-sizechart-cache.json"
@@ -230,7 +233,7 @@ def download_images(products: list[dict]) -> tuple[int, int]:
                 data = fetch(cdn_url(src, 1200), "*/*")
                 if len(data) < 500:
                     continue
-                dest.write_bytes(data)
+                save_product_image(dest, data)
                 saved += 1
             except Exception as e:
                 print(f"  warn image {handle}/{i}: {e}", flush=True)

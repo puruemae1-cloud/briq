@@ -18,10 +18,14 @@ import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+import sys
 
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import whiten_file  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/ax/ax-apparel-raw.json"
 OUT_PATH = ROOT / "src/data/ax/ax-apparel-pdp-cache.json"
 IMG_ROOT = ROOT / "public/products/axa-pdp"
@@ -341,6 +345,7 @@ def download_images(
             tmp = dest.with_suffix(".tmp.jpg")
             tmp.write_bytes(data)
             tmp.replace(dest)
+            whiten_file(dest)
             return True
         except Exception:
             return False

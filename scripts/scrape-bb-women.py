@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_women_config import BASE, WOMEN_COLLECTIONS, UA  # noqa: E402
+from studio_whiten import save_product_image  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/bb/bb-pdp-cache.json"
@@ -231,7 +232,7 @@ def download_images(product_id: str, urls: list[str]) -> list[str]:
         try:
             req = urllib.request.Request(fetch_url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=60) as resp:
-                out.write_bytes(resp.read())
+                save_product_image(out, resp.read())
             local.append(rel)
         except Exception as e:  # noqa: BLE001
             print(f"  img fail {product_id}#{i}: {e}", flush=True)

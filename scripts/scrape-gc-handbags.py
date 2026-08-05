@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -12,13 +13,16 @@ from threading import Lock
 
 from curl_cffi import requests as cffi_requests
 
-from plp_hover import (
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from plp_hover import (  # noqa: E402
     first_alternate_gallery_src,
     gucci_lifestyle_index,
     pick_hover_local,
 )
+from studio_whiten import save_product_image  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
 OUT_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/gc/gc-pdp-cache.json"
 IMG_ROOT = ROOT / "public/products/gc-pdp"
@@ -237,7 +241,7 @@ def download_image(s: cffi_requests.Session, url: str, dest: Path) -> bool:
             )
             if r.status_code != 200 or len(r.content) < 1500:
                 raise RuntimeError(f"bad image {r.status_code} {len(r.content)}")
-            dest.write_bytes(r.content)
+            save_product_image(dest, r.content)
             return True
         except Exception:
             time.sleep(0.8 * (attempt + 1))

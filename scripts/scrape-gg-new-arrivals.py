@@ -14,6 +14,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import save_product_image  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/gg/gg-catalog-raw.json"
 IMG_ROOT = ROOT / "public/products/gg-pdp"
 
@@ -364,7 +367,7 @@ def download_images(products: list[dict]) -> tuple[int, int]:
                     data = r.read()
                 if len(data) < 500:
                     continue
-                dest.write_bytes(data)
+                save_product_image(dest, data)
                 saved += 1
             except (urllib.error.URLError, TimeoutError, OSError) as e:
                 print(f"  warn image {handle}/{i}: {e}", flush=True)

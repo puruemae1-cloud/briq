@@ -14,8 +14,12 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import save_product_image  # noqa: E402
+
 UMBRELLA_RAW = ROOT / "src/data/lu/lu-pdp-raw.json"
 COLLECTIONS_RAW = ROOT / "src/data/lu/lu-collections-raw.json"
 LIFESTYLE_RAW = ROOT / "src/data/lu/lu-lifestyle-pdp-raw.json"
@@ -129,7 +133,7 @@ def download_images(handles_products: list[dict]) -> tuple[int, int]:
                 data = fetch(cdn_url(src, 1200))
                 if len(data) < 500:
                     continue
-                dest.write_bytes(data)
+                save_product_image(dest, data)
                 saved += 1
             except Exception as e:
                 print(f"  warn image {handle}/{i}: {e}", flush=True)

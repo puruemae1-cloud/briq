@@ -19,6 +19,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio_whiten import save_product_image  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/cw/cw-catalog-raw.json"
 ENR_PATH = ROOT / "src/data/cw/cw-pdp-enriched.json"
 IMG = ROOT / "public/products/cw-pdp"
@@ -151,7 +154,7 @@ def download_imgs(sku: str, urls: list[str]) -> list[str]:
             with urllib.request.urlopen(req, timeout=60) as r:
                 data = r.read()
             if len(data) > 1000:
-                dest.write_bytes(data)
+                save_product_image(dest, data)
                 out.append(local)
         except Exception:
             pass

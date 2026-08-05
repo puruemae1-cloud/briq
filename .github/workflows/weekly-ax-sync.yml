@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install image whitening deps
+        run: pip install -r scripts/requirements-images.txt
+
       - name: Install Playwright
         run: |
           pip install playwright
@@ -62,6 +65,8 @@ jobs:
             scripts/scrape-ax-gear.py \
             scripts/ax_size_charts.py \
             scripts/ax_size_order.py \
+            scripts/studio_whiten.py \
+            scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
             scripts/ci-commit-push.sh

@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install image whitening deps
+        run: pip install -r scripts/requirements-images.txt
+
       - name: Restore lu-pdp images from product-images tag
         run: python3 scripts/restore-product-images-tag.py --dirs lu-pdp
 
@@ -48,6 +51,8 @@ jobs:
             scripts/weekly-lu-stock-sync.py \
             scripts/build-lu-catalog.py \
             scripts/build-lu-lifestyle-catalog.py \
+            scripts/studio_whiten.py \
+            scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
             scripts/ci-commit-push.sh

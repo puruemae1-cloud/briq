@@ -117,27 +117,31 @@ def main() -> int:
         print("No local image dirs to push.", flush=True)
         return 0
 
-    # Lift warm/gray studio mats to white before publishing (Gucci-like PLP).
-    whiten = ROOT / "scripts" / "whiten-product-studio-bg.py"
-    if whiten.is_file() and not args.skip_whiten:
+    # Always lift warm/gray studio mats to white before publishing (Gucci-like PLP).
+    # Required for newly scraped products — do not skip in weekly CI.
+    if not args.skip_whiten:
         names = [n for n, _ in src_roots]
         print(f"Whitening studio backgrounds: {names}", flush=True)
-        whitened = run(
-            [
-                sys.executable,
-                str(whiten),
-                "--workers",
-                str(max(2, (os.cpu_count() or 4) // 2)),
-                "--dirs",
-                *names,
-            ],
-            check=False,
-        )
-        if whitened.returncode != 0:
+        scripts_dir = str(ROOT / "scripts")
+        if scripts_dir not in sys.path:
+            sys.path.insert(0, scripts_dir)
+        try:
+            from studio_whiten import whiten_dirs  # type: ignore
+        except ImportError as e:
             print(
-                "WARN: whitener exited non-zero — continuing with existing images.",
+                "ERROR: studio whitening requires pillow + numpy "
+                f"(`pip install pillow numpy`). Import failed: {e}",
                 flush=True,
             )
+            return 1
+        try:
+            whiten_dirs(
+                names,
+                workers=max(2, (os.cpu_count() or 4) // 2),
+            )
+        except Exception as e:
+            print(f"ERROR: studio whitening failed: {e}", flush=True)
+            return 1
 
     fetched = run(
         ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
