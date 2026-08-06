@@ -39,13 +39,32 @@ export type LookBanner = {
   railLinks?: LookBannerLink[];
 };
 
+/**
+ * Accessories shop nav still includes product-type leaves (쥬얼리, 지갑, …).
+ * Homepage rail should show brand names only.
+ */
+const ACCESSORIES_HOMEPAGE_NON_BRAND_IDS = new Set([
+  "jewelry",
+  "cosmetics",
+  "wallets",
+  "snacks",
+  "health-food",
+  "british-tea",
+]);
+
 /** Homepage rail brand chips — mirrors top-level children under each shop category. */
 export function homeRailLinksForCategory(
   categoryId: CategoryId,
 ): LookBannerLink[] {
   const cat = navCategories.find((c) => c.id === categoryId);
   if (!cat?.children?.length) return [];
-  return cat.children.map((child) => ({
+  const children =
+    categoryId === "accessories"
+      ? cat.children.filter(
+          (child) => !ACCESSORIES_HOMEPAGE_NON_BRAND_IDS.has(child.id),
+        )
+      : cat.children;
+  return children.map((child) => ({
     label: child.labelKo,
     href: child.href,
   }));
