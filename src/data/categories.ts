@@ -475,7 +475,17 @@ export type SubcategoryId =
   | "gc-women-slides"
   | "gc-women-pumps"
   | "gc-women-ballet-flats"
-  | "gc-women-boots";
+  | "gc-women-boots"
+  | "gucci-accessories"
+  | "gc-accessories-womens"
+  | "gc-women-wallets"
+  | "gc-women-long-wallets"
+  | "gc-women-chain-wallets"
+  | "gc-women-compact-wallets"
+  | "gc-women-card-holders"
+  | "gc-women-bag-charms-keychains"
+  | "gc-women-pouches"
+  | "gc-women-tech-accessories";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -516,6 +526,17 @@ export const GC_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
   "gc-women-pumps",
   "gc-women-ballet-flats",
   "gc-women-boots",
+];
+
+/** Gucci women's wallets & small accessories leaves (official UK PLPs). */
+export const GC_WOMEN_WALLET_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-long-wallets",
+  "gc-women-chain-wallets",
+  "gc-women-compact-wallets",
+  "gc-women-card-holders",
+  "gc-women-bag-charms-keychains",
+  "gc-women-pouches",
+  "gc-women-tech-accessories",
 ];
 
 
@@ -1243,6 +1264,25 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-pumps": ["gc-women-pumps"],
   "gc-women-ballet-flats": ["gc-women-ballet-flats"],
   "gc-women-boots": ["gc-women-boots"],
+  "gucci-accessories": [
+    "gucci-accessories",
+    "gc-accessories-womens",
+    "gc-women-wallets",
+    ...GC_WOMEN_WALLET_LEAF_IDS,
+  ],
+  "gc-accessories-womens": [
+    "gc-accessories-womens",
+    "gc-women-wallets",
+    ...GC_WOMEN_WALLET_LEAF_IDS,
+  ],
+  "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
+  "gc-women-long-wallets": ["gc-women-long-wallets"],
+  "gc-women-chain-wallets": ["gc-women-chain-wallets"],
+  "gc-women-compact-wallets": ["gc-women-compact-wallets"],
+  "gc-women-card-holders": ["gc-women-card-holders"],
+  "gc-women-bag-charms-keychains": ["gc-women-bag-charms-keychains"],
+  "gc-women-pouches": ["gc-women-pouches"],
+  "gc-women-tech-accessories": ["gc-women-tech-accessories"],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -2889,6 +2929,56 @@ export const navCategories: NavCategory[] = [
             labelKo: "여성용",
             href: "/shop?category=accessories&sub=bs-acc-women",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "gucci-accessories",
+        labelKo: "구찌",
+        href: "/shop?category=accessories&sub=gucci-accessories",
+        children: [
+          {
+            id: "gc-accessories-womens",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=gc-accessories-womens",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-long-wallets",
+                labelKo: "롱 월렛",
+                href: "/shop?category=accessories&sub=gc-women-long-wallets",
+              },
+              {
+                id: "gc-women-chain-wallets",
+                labelKo: "체인 월렛",
+                href: "/shop?category=accessories&sub=gc-women-chain-wallets",
+              },
+              {
+                id: "gc-women-compact-wallets",
+                labelKo: "컴팩트 월렛",
+                href: "/shop?category=accessories&sub=gc-women-compact-wallets",
+              },
+              {
+                id: "gc-women-card-holders",
+                labelKo: "카드홀더",
+                href: "/shop?category=accessories&sub=gc-women-card-holders",
+              },
+              {
+                id: "gc-women-bag-charms-keychains",
+                labelKo: "백 참 & 키체인",
+                href: "/shop?category=accessories&sub=gc-women-bag-charms-keychains",
+              },
+              {
+                id: "gc-women-pouches",
+                labelKo: "파우치",
+                href: "/shop?category=accessories&sub=gc-women-pouches",
+              },
+              {
+                id: "gc-women-tech-accessories",
+                labelKo: "테크 액세서리",
+                href: "/shop?category=accessories&sub=gc-women-tech-accessories",
+              },
+            ],
           },
         ],
       },
