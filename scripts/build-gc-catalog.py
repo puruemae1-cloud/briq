@@ -595,6 +595,54 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     return build_handbag_product(row, prev, now_iso)
 
 
+def dedupe_style_color_name(products: list[dict]) -> list[dict]:
+    """Drop near-duplicate colourways that share style + colour code + name.
+
+    Gucci keys by full productCode (style+material+colour). Some materials are
+    distinct PDPs for the same black cardigan / Jackie bag — keep the richer
+    gallery and drop the rest so PLP/PDP don't show clones.
+    """
+    pat = re.compile(r"^(\d{6})([A-Z0-9]{5})(\d{4})$", re.I)
+    buckets: dict[tuple[str, str, str], list[dict]] = {}
+    passthrough: list[dict] = []
+    for p in products:
+        sku = str(p.get("sku") or "").upper()
+        m = pat.match(sku)
+        if not m:
+            passthrough.append(p)
+            continue
+        style, _mat, color = m.groups()
+        name = str(p.get("name") or "").strip().lower()
+        buckets.setdefault((style, color.upper(), name), []).append(p)
+
+    kept: list[dict] = list(passthrough)
+    dropped = 0
+    for group in buckets.values():
+        if len(group) == 1:
+            kept.append(group[0])
+            continue
+        ranked = sorted(
+            group,
+            key=lambda p: (
+                len(p.get("images") or []),
+                len(p.get("variants") or []),
+                p.get("id") or "",
+            ),
+            reverse=True,
+        )
+        kept.append(ranked[0])
+        dropped += len(ranked) - 1
+        for loser in ranked[1:]:
+            print(
+                f"dedupe drop {loser.get('id')} (keep {ranked[0].get('id')})",
+                flush=True,
+            )
+    if dropped:
+        print(f"dedupe removed {dropped} style+color+name clones", flush=True)
+    kept.sort(key=lambda p: p["id"])
+    return kept
+
+
 def load_rows() -> list[dict]:
     rows: list[dict] = []
     if HANDBAG_RAW.exists():
@@ -652,6 +700,7 @@ def main() -> None:
             time.sleep(0.05)
 
     products.sort(key=lambda p: p["id"])
+    products = dedupe_style_color_name(products)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'

@@ -16,7 +16,19 @@ from bb_women_config import primary_category_for_collections  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 OUT_PATH = ROOT / "src/data/bb/bb-catalog.ts"
+OUT_JSON = ROOT / "src/data/bb/bb-catalog.json"
+BAK_PATH = ROOT / "src/data/bb/bb-catalog.ts.bak"
 TRANSLATE_CACHE = ROOT / "src/data/bb/bb-translate-cache.json"
+
+
+def _extract_registered_from_ts(text: str) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for m in re.finditer(
+        r'\n  \{\n    id: "(bb-[^"]+)"[\s\S]*?\n    registeredAt: "([^"]+)"',
+        text,
+    ):
+        out[m.group(1)] = m.group(2)
+    return out
 
 
 def load_existing_registered() -> dict[str, str]:
@@ -25,16 +37,54 @@ def load_existing_registered() -> dict[str, str]:
     Only match style-level product ids (2-space indent), never variant ids —
     variants sit after `registeredAt` and would otherwise steal the next
     product's timestamp.
+
+    If the live catalogue looks mass-restamped (most styles share one calendar
+    day) and `.bak` has an older distribution, prefer bak timestamps so weekly
+    sync / translate rebuilds cannot flood homepage "최신등록순" with Burberry.
     """
-    if not OUT_PATH.exists():
-        return {}
-    text = OUT_PATH.read_text()
-    out: dict[str, str] = {}
-    for m in re.finditer(
-        r'\n  \{\n    id: "(bb-[^"]+)"[\s\S]*?\n    registeredAt: "([^"]+)"',
-        text,
-    ):
-        out[m.group(1)] = m.group(2)
+    from collections import Counter
+
+    from_ts: dict[str, str] = {}
+    from_json: dict[str, str] = {}
+    from_bak: dict[str, str] = {}
+
+    if OUT_PATH.exists():
+        from_ts = _extract_registered_from_ts(OUT_PATH.read_text())
+    if OUT_JSON.exists():
+        try:
+            for p in json.loads(OUT_JSON.read_text()):
+                pid = p.get("id")
+                reg = p.get("registeredAt")
+                if pid and reg:
+                    from_json[str(pid)] = str(reg)
+        except Exception:
+            pass
+    if BAK_PATH.exists():
+        from_bak = _extract_registered_from_ts(BAK_PATH.read_text())
+
+    live = from_ts or from_json
+    if live and from_bak:
+        days = Counter(v[:10] for v in live.values())
+        top_day, top_n = days.most_common(1)[0]
+        if top_n / max(len(live), 1) >= 0.75:
+            bak_day = Counter(v[:10] for v in from_bak.values()).most_common(1)[0][0]
+            if bak_day < top_day:
+                print(
+                    f"WARN: mass re-stamp detected ({top_n}/{len(live)} on {top_day}); "
+                    f"restoring registeredAt from bak ({bak_day})",
+                    flush=True,
+                )
+                merged = dict(from_bak)
+                for pid, reg in live.items():
+                    if pid not in merged:
+                        merged[pid] = reg  # truly new styles keep live stamp
+                return merged
+
+    out = dict(from_ts)
+    for pid, reg in from_json.items():
+        out.setdefault(pid, reg)
+    for pid, reg in from_bak.items():
+        out.setdefault(pid, reg)
     return out
 
 
@@ -788,7 +838,9 @@ def main() -> None:
         + "\n] as unknown as Product[];\n"
     )
     OUT_PATH.write_text(out)
+    OUT_JSON.write_text(json.dumps(briq, ensure_ascii=False, indent=2) + "\n")
     print(f"Wrote {OUT_PATH} styles={len(briq)} colourways={len(products)}")
+    print(f"Wrote {OUT_JSON}", flush=True)
 
 
 if __name__ == "__main__":
