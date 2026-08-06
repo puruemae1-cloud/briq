@@ -40,10 +40,17 @@ export type LookBanner = {
 };
 
 /**
- * Accessories shop nav still includes product-type leaves (쥬얼리, 지갑, …).
- * Homepage rail should show brand names only.
+ * Shop nav still mixes product-type / gender leaves with brands.
+ * Homepage rails (except sports) should show brand names only.
  */
-const ACCESSORIES_HOMEPAGE_NON_BRAND_IDS = new Set([
+const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set([
+  // clothing — gender, not brands
+  "womens",
+  "mens",
+  // shoes — type groupings, not brands
+  "luxury-shoes",
+  "training-shoes",
+  // accessories — product-type leaves
   "jewelry",
   "cosmetics",
   "wallets",
@@ -58,12 +65,13 @@ export function homeRailLinksForCategory(
 ): LookBannerLink[] {
   const cat = navCategories.find((c) => c.id === categoryId);
   if (!cat?.children?.length) return [];
+  // Sports keeps sport-type leaves (골프, 러닝, …) as-is.
   const children =
-    categoryId === "accessories"
-      ? cat.children.filter(
-          (child) => !ACCESSORIES_HOMEPAGE_NON_BRAND_IDS.has(child.id),
-        )
-      : cat.children;
+    categoryId === "sports"
+      ? cat.children
+      : cat.children.filter(
+          (child) => !HOMEPAGE_RAIL_NON_BRAND_IDS.has(child.id),
+        );
   return children.map((child) => ({
     label: child.labelKo,
     href: child.href,
