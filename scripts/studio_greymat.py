@@ -28,7 +28,8 @@ TARGET_RGB = (231, 231, 231)
 TARGET = np.array(TARGET_RGB, dtype=np.float32)
 
 DEFAULT_DIRS = [
-    "bb-pdp",
+    # bb-pdp excluded — Burberry official Scene7 crops must stay untouched
+    # (greymat/rembg damaged on-model lifestyle shots).
     "ps-pdp",
     "bs-pdp",
     "ax-pdp",

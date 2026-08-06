@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Re-download Burberry PDP images, then map studio mats to Gucci DarkGray."""
+"""Re-download Burberry PDP images from official Scene7 (no greymat/rembg).
+
+Prior greymatting flattened on-model lifestyle shots onto solid grey mats.
+Restore pristine Burberry.com crops.
+"""
 from __future__ import annotations
 
 import json
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -11,10 +14,6 @@ from pathlib import Path
 from curl_cffi import requests as cffi_requests
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
-
-from studio_greymat import greymat_dirs  # noqa: E402
-
 RAW = ROOT / "src/data/bb/bb-catalog-raw.json"
 IMG_ROOT = ROOT / "public/products/bb-pdp"
 WORKERS = 16
@@ -22,7 +21,10 @@ WORKERS = 16
 
 def remote_url(base: str) -> str:
     base = (base or "").split("?")[0]
-    return f"{base}?wid=1200&fmt=jpg" if base else ""
+    if not base:
+        return ""
+    # Match scrape-bb-women Scene7 preset used on burberry.com PLP/PDP.
+    return f"{base}?$BBY_V2_SL_3x4$&wid=1200&hei=1600&fmt=jpg"
 
 
 def download_one(product: dict) -> tuple[int, int]:
@@ -63,7 +65,10 @@ def download_one(product: dict) -> tuple[int, int]:
 
 def main() -> None:
     products = json.loads(RAW.read_text()).get("products") or []
-    print(f"BB download products={len(products)} workers={WORKERS}", flush=True)
+    print(
+        f"BB official redownload products={len(products)} workers={WORKERS}",
+        flush=True,
+    )
     total_ok = total_fail = 0
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         futs = [ex.submit(download_one, p) for p in products]
@@ -78,9 +83,7 @@ def main() -> None:
                     f"{done}/{len(products)} imgs_ok={total_ok} fail={total_fail}",
                     flush=True,
                 )
-    print(f"download done ok={total_ok} fail={total_fail}", flush=True)
-    print("greymatting bb-pdp…", flush=True)
-    greymat_dirs(["bb-pdp"], workers=4)
+    print(f"done ok={total_ok} fail={total_fail}", flush=True)
 
 
 if __name__ == "__main__":

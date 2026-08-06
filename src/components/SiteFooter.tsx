@@ -85,8 +85,9 @@ export function SiteFooter() {
           </p>
           <p>
             <span>
-              Vox Studios, 1-45 Durham Street, Vauxhall, United Kingdom, SE11
-              5JH
+              Vox Studios, 1-45 Durham Street, Vauxhall,
+              <br />
+              United Kingdom, SE11 5JH
             </span>
           </p>
         </div>
