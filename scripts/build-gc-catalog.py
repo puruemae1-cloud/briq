@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Gucci catalogue from scraped raw (handbags + women's RTW).
+"""Build Gucci catalogue from scraped raw (handbags + women's RTW + shoes).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
@@ -21,6 +21,7 @@ from plp_hover import pick_hover_local
 ROOT = Path(__file__).resolve().parents[1]
 HANDBAG_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
 RTW_RAW = ROOT / "src/data/gc/gc-rtw-catalog-raw.json"
+SHOES_RAW = ROOT / "src/data/gc/gc-shoes-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
 OUT_TS = ROOT / "src/data/gc/gc-catalog.ts"
 CACHE_PATH = ROOT / "src/data/gc/gc-translate-cache.json"
@@ -55,10 +56,28 @@ RTW_LEAF_COLLECTIONS = [
     "gc-women-cocktail-evening",
 ]
 
+SHOES_LEAF_COLLECTIONS = [
+    "gc-women-sneakers",
+    "gc-women-moccasins",
+    "gc-women-slippers-mules",
+    "gc-women-sandals",
+    "gc-women-slides",
+    "gc-women-pumps",
+    "gc-women-ballet-flats",
+    "gc-women-boots",
+]
+
+SHOES_PARENT_COLLECTIONS = [
+    "gc-women-shoes",
+    "gc-shoes-womens",
+    "gucci-shoes",
+]
+
 # Keep old name for any external imports
 LEAF_COLLECTIONS = HANDBAG_LEAF_COLLECTIONS
 
 # Official Gucci women RTW size guide (Tops / Bottoms) — letter SIZE + IT mapping.
+# Jeans column on bottoms matches gucci.com size guide (KnowSize / brand tables).
 GC_WOMEN_RTW_TOPS = {
     "id": "tops",
     "labelKo": "상의",
@@ -80,19 +99,69 @@ GC_WOMEN_RTW_TOPS = {
 GC_WOMEN_RTW_BOTTOMS = {
     "id": "bottoms",
     "labelKo": "하의",
-    "headers": ["SIZE", "IT", "EU", "UK/AU", "US", "JP", "WAIST (CM/IN)", "HIP (CM/IN)"],
-    "rows": [
-        ["XXXS", "34", "30", "2", "00", "3", "59 / 23.2", "85 / 33.5"],
-        ["XXS", "36", "32", "4", "0", "5", "62 / 24.4", "88 / 34.6"],
-        ["XS", "38", "34", "6", "2", "7", "65 / 25.6", "91 / 35.8"],
-        ["S", "40", "36", "8", "4", "9", "68 / 26.8", "94 / 37"],
-        ["M", "42", "38", "10", "6", "11", "71 / 27.9", "97 / 38.2"],
-        ["L", "44", "40", "12", "8", "13", "75 / 29.5", "101 / 39.8"],
-        ["XL", "46", "42", "14", "10", "15", "79 / 31.1", "105 / 41.3"],
-        ["XXL", "48", "44", "16", "12", "17", "83 / 32.7", "109 / 42.9"],
-        ["XXXL", "50", "46", "18", "14", "19", "87 / 34.3", "113 / 44.5"],
-        ["4XL", "52", "48", "20", "16", "21", "91 / 35.8", "117 / 46.1"],
+    "headers": [
+        "SIZE",
+        "IT",
+        "EU",
+        "UK/AU",
+        "US",
+        "JP",
+        "JEANS",
+        "WAIST (CM/IN)",
+        "HIP (CM/IN)",
     ],
+    "rows": [
+        ["XXXS", "34", "30", "2", "00", "3", "20", "59 / 23.2", "85 / 33.5"],
+        ["XXS", "36", "32", "4", "0", "5", "22", "62 / 24.4", "88 / 34.6"],
+        ["XS", "38", "34", "6", "2", "7", "24", "65 / 25.6", "91 / 35.8"],
+        ["S", "40", "36", "8", "4", "9", "26", "68 / 26.8", "94 / 37"],
+        ["M", "42", "38", "10", "6", "11", "28", "71 / 27.9", "97 / 38.2"],
+        ["L", "44", "40", "12", "8", "13", "30", "75 / 29.5", "101 / 39.8"],
+        ["XL", "46", "42", "14", "10", "15", "32", "79 / 31.1", "105 / 41.3"],
+        ["XXL", "48", "44", "16", "12", "17", "34", "83 / 32.7", "109 / 42.9"],
+        ["XXXL", "50", "46", "18", "14", "19", "36", "87 / 34.3", "113 / 44.5"],
+        ["4XL", "52", "48", "20", "16", "21", "38", "91 / 35.8", "117 / 46.1"],
+    ],
+}
+
+# Denim / jeans waist sizes as sold on gucci.com (Briq labels them "IT 23" etc.).
+# Primary JEANS column matches the PDP size picker; IT column is apparel conversion.
+GC_WOMEN_DENIM_ROWS = [
+    # jeans, size, IT, EU, UK/AU, US, JP, waist, hip
+    ["20", "XXXS", "34", "30", "2", "00", "3", "59 / 23.2", "85 / 33.5"],
+    ["21", "XXXS", "35", "31", "3", "00", "4", "60.5 / 23.8", "86.5 / 34.1"],
+    ["22", "XXS", "36", "32", "4", "0", "5", "62 / 24.4", "88 / 34.6"],
+    ["23", "XXS", "37", "33", "5", "1", "6", "63.5 / 25", "89.5 / 35.2"],
+    ["24", "XS", "38", "34", "6", "2", "7", "65 / 25.6", "91 / 35.8"],
+    ["25", "XS", "39", "34", "6", "2", "7", "66.5 / 26.2", "92.5 / 36.4"],
+    ["26", "S", "40", "36", "8", "4", "9", "68 / 26.8", "94 / 37"],
+    ["27", "S", "41", "36", "8", "4", "9", "69.5 / 27.4", "95.5 / 37.6"],
+    ["28", "M", "42", "38", "10", "6", "11", "71 / 27.9", "97 / 38.2"],
+    ["29", "M", "43", "38", "10", "6", "11", "73 / 28.7", "99 / 39"],
+    ["30", "L", "44", "40", "12", "8", "13", "75 / 29.5", "101 / 39.8"],
+    ["31", "L", "45", "40", "12", "8", "13", "77 / 30.3", "103 / 40.6"],
+    ["32", "XL", "46", "42", "14", "10", "15", "79 / 31.1", "105 / 41.3"],
+    ["33", "XL", "47", "42", "14", "10", "15", "81 / 31.9", "107 / 42.1"],
+    ["34", "XXL", "48", "44", "16", "12", "17", "83 / 32.7", "109 / 42.9"],
+    ["35", "XXL", "49", "44", "16", "12", "17", "85 / 33.5", "111 / 43.7"],
+    ["36", "XXXL", "50", "46", "18", "14", "19", "87 / 34.3", "113 / 44.5"],
+]
+
+GC_WOMEN_DENIM = {
+    "id": "denim",
+    "labelKo": "진/데님",
+    "headers": [
+        "JEANS",
+        "SIZE",
+        "IT",
+        "EU",
+        "UK/AU",
+        "US",
+        "JP",
+        "WAIST (CM/IN)",
+        "HIP (CM/IN)",
+    ],
+    "rows": GC_WOMEN_DENIM_ROWS,
 }
 
 GC_WOMEN_RTW_SIZE_CHART = {
@@ -100,13 +169,88 @@ GC_WOMEN_RTW_SIZE_CHART = {
     "titleKo": "구찌 여성 레디투웨어 사이즈 가이드",
     "noteKo": (
         "사이즈표는 신체 치수 기준입니다. 구찌 여성 의류는 이탈리아(IT) 사이즈를 "
-        "기준으로 하며, Briq 표기의 XS·S·M 또는 IT 숫자는 아래 SIZE 열과 대응합니다. "
-        "브랜드·시즌·실루엣에 따라 핏이 다를 수 있으니 참고용으로 확인해 주세요."
+        "기준으로 하며, Briq 표기의 XS·S·M 또는 IT 숫자는 아래 SIZE/IT 열과 대응합니다. "
+        "진·데님은 JEANS(허리) 사이즈를 사용합니다. 브랜드·시즌·실루엣에 따라 핏이 "
+        "다를 수 있으니 참고용으로 확인해 주세요."
     ),
     "headers": GC_WOMEN_RTW_TOPS["headers"],
     "rows": GC_WOMEN_RTW_TOPS["rows"],
-    "tabs": [GC_WOMEN_RTW_TOPS, GC_WOMEN_RTW_BOTTOMS],
+    "tabs": [GC_WOMEN_RTW_TOPS, GC_WOMEN_RTW_BOTTOMS, GC_WOMEN_DENIM],
 }
+
+GC_WOMEN_DENIM_SIZE_CHART = {
+    "id": "gc-women-denim",
+    "titleKo": "구찌 여성 진/데님 사이즈 가이드",
+    "noteKo": (
+        "이 상품은 진/데님 허리 사이즈(JEANS)로 판매됩니다. 사이즈 선택란의 "
+        "IT 23·IT 24 등은 진 허리 사이즈이며, 일반 의류 IT 34·36과는 다릅니다. "
+        "아래 JEANS 열을 기준으로 골라 주세요."
+    ),
+    "headers": GC_WOMEN_DENIM["headers"],
+    "rows": GC_WOMEN_DENIM["rows"],
+    "tabs": [GC_WOMEN_DENIM, GC_WOMEN_RTW_BOTTOMS, GC_WOMEN_RTW_TOPS],
+}
+
+# Official Gucci UK women shoes size guide
+# (https://www.gucci.com/uk/en_gb/st/shoes-size-guide — Women's Shoes Size Chart).
+# PDP pickers use IT sizes; half sizes appear as 34+ in catalog API → IT 34.5.
+GC_WOMEN_SHOES_ROWS = [
+    # IT, UK, FR, US, AU, KR(mm), JP(cm)
+    ["34", "1", "35", "4", "3.5", "210", "21"],
+    ["34.5", "1.5", "35.5", "4.5", "4", "215", "21.5"],
+    ["35", "2", "36", "5", "4.5", "220", "22"],
+    ["35.5", "2.5", "36.5", "5.5", "5", "225", "22.5"],
+    ["36", "3", "37", "6", "5.5", "230", "23"],
+    ["36.5", "3.5", "37.5", "6.5", "6", "235", "23.5"],
+    ["37", "4", "38", "7", "6.5", "240", "24"],
+    ["37.5", "4.5", "38.5", "7.5", "7", "245", "24.5"],
+    ["38", "5", "39", "8", "7.5", "250", "25"],
+    ["38.5", "5.5", "39.5", "8.5", "8", "255", "25.5"],
+    ["39", "6", "40", "9", "8.5", "260", "26"],
+    ["39.5", "6.5", "40.5", "9.5", "9", "265", "26.5"],
+    ["40", "7", "41", "10", "9.5", "270", "27"],
+    ["40.5", "7.5", "41.5", "10.5", "10", "275", "27.5"],
+    ["41", "8", "42", "11", "10.5", "280", "28"],
+    ["41.5", "8.5", "42.5", "11.5", "11", "285", "28.5"],
+    ["42", "9", "43", "12", "11.5", "290", "29"],
+    # Extended for SKUs sold above official women chart max (IT 42)
+    ["42.5", "9.5", "43.5", "12.5", "12", "295", "29.5"],
+    ["43", "10", "44", "13", "12.5", "300", "30"],
+]
+
+GC_WOMEN_SHOES_SIZE_CHART = {
+    "id": "gc-women-shoes",
+    "titleKo": "구찌 여성 슈즈 사이즈 가이드",
+    "noteKo": (
+        "사이즈표는 구찌 공식 여성 슈즈 가이드 기준입니다. Briq 표기 사이즈는 "
+        "이탈리아(IT) 기준이며, 사이즈 선택란의 IT 37·IT 37.5 등은 아래 IT 열과 "
+        "대응합니다. FR는 프랑스 사이즈입니다. IT 42.5·43은 일부 상품에만 "
+        "제공되며 공식 표의 패턴을 연장한 값입니다. 스타일·소재에 따라 핏이 "
+        "다를 수 있으니 참고용으로 확인해 주세요."
+    ),
+    "headers": ["IT", "UK", "FR", "US", "AU", "KR (MM)", "JP (CM)"],
+    "rows": GC_WOMEN_SHOES_ROWS,
+}
+
+
+def _variant_size_numbers(variants: list[dict]) -> list[int]:
+    nums: list[int] = []
+    for v in variants:
+        label = str(v.get("size") or "")
+        m = re.search(r"(\d{2})", label)
+        if m:
+            nums.append(int(m.group(1)))
+    return nums
+
+
+def size_chart_for_rtw(variants: list[dict]) -> dict:
+    """Pick denim jeans chart when PDP sizes are waist 20–36, else RTW guide."""
+    nums = _variant_size_numbers(variants)
+    if nums and max(nums) <= 36 and min(nums) <= 28 and max(nums) - min(nums) <= 20:
+        # Jeans waist run (e.g. 23–32), not apparel IT 36–50
+        if max(nums) < 36 or min(nums) < 34:
+            return GC_WOMEN_DENIM_SIZE_CHART
+    return GC_WOMEN_RTW_SIZE_CHART
 
 
 def gbp_to_krw(gbp: float | None) -> int:
@@ -262,9 +406,23 @@ def format_size_label(size: str) -> str:
     s = (size or "").strip()
     if not s:
         return "One Size"
+    # Shoe half sizes already normalized to 34.5 in scraper
+    if re.fullmatch(r"\d+(\.\d+)?", s):
+        return f"IT {s}"
     if s.isdigit():
         return f"IT {s}"
     return s.upper() if len(s) <= 4 else s
+
+
+def format_shoe_size_label(size: str) -> str:
+    s = (size or "").strip()
+    if not s:
+        return "One Size"
+    if s.endswith("+") and s[:-1].replace(".", "", 1).isdigit():
+        s = f"{s[:-1]}.5"
+    if re.fullmatch(r"\d+(\.\d+)?", s):
+        return f"IT {s}"
+    return s
 
 
 def size_slug(size: str) -> str:
@@ -578,7 +736,112 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "sourceUrl": row.get("url") or "",
         "inStock": in_stock,
         "variants": variants,
-        "sizeChart": GC_WOMEN_RTW_SIZE_CHART,
+        "sizeChart": size_chart_for_rtw(variants),
+        "storySections": copy["story"],
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+
+
+def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    allowed = {*SHOES_LEAF_COLLECTIONS, *SHOES_PARENT_COLLECTIONS}
+    cols = [c for c in (row.get("collections") or []) if c in allowed]
+    cols = sorted(set([*cols, *SHOES_PARENT_COLLECTIONS]))
+
+    leaf = next((c for c in SHOES_LEAF_COLLECTIONS if c in cols), "gc-women-shoes")
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    in_stock = bool(row.get("inStock", True))
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    if size_rows:
+        for sz in size_rows:
+            size_raw = str(sz.get("size") or "").strip()
+            if not size_raw:
+                continue
+            label = format_shoe_size_label(size_raw)
+            slug = size_slug(label)
+            sku = str(sz.get("sku") or f"{code}-{slug}")
+            variants.append(
+                {
+                    "id": f"{pid}-{slug}",
+                    "name": f"{copy['title_en']} — {label}",
+                    "nameKo": f"{copy['name_ko']} — {label}",
+                    "sku": sku,
+                    "gbpPrice": float(gbp),
+                    "price": price,
+                    "image": copy["image"],
+                    "images": copy["images"],
+                    "hoverImage": copy["hover"],
+                    "sourceUrl": row.get("url") or "",
+                    "inStock": in_stock,
+                    "colorKey": copy["color_key"],
+                    "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                    "size": label,
+                    "gcCollections": cols,
+                }
+            )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{copy['title_en']} — One Size",
+                "nameKo": f"{copy['name_ko']} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": copy["image"],
+                "images": copy["images"],
+                "hoverImage": copy["hover"],
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": copy["color_key"],
+                "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                "size": "One Size",
+                "gcCollections": cols,
+            }
+        ]
+
+    tags = ["gucci", "구찌", "shoes", "슈즈", "여성", *cols]
+    badge = None
+    label = (row.get("label") or "").lower()
+    if "new" in label:
+        badge = "New"
+
+    return {
+        "id": pid,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
+        "brand": "구찌",
+        "price": price,
+        "category": "shoes",
+        "subcategory": leaf,
+        "gcCollections": cols,
+        "tags": tags,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "accent": accent_for(code),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "sizeChart": GC_WOMEN_SHOES_SIZE_CHART,
         "storySections": copy["story"],
         "registeredAt": registered,
         "editTier": "new" if badge == "New" else "signature",
@@ -588,6 +851,10 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
 def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     kind = (row.get("kind") or "").lower()
     cols = row.get("collections") or []
+    if kind == "shoes" or any(
+        c in SHOES_LEAF_COLLECTIONS or c in SHOES_PARENT_COLLECTIONS for c in cols
+    ):
+        return build_shoe_product(row, prev, now_iso)
     if kind == "rtw" or any(
         c in RTW_LEAF_COLLECTIONS or c in {"gc-women-rtw", "gc-women"} for c in cols
     ):
@@ -657,6 +924,12 @@ def load_rows() -> list[dict]:
             row = dict(row)
             row["kind"] = "rtw"
             rows.append(row)
+    if SHOES_RAW.exists():
+        data = json.loads(SHOES_RAW.read_text())
+        for row in data.get("products") or []:
+            row = dict(row)
+            row["kind"] = "shoes"
+            rows.append(row)
     return rows
 
 
@@ -664,8 +937,8 @@ def main() -> None:
     rows = load_rows()
     if not rows:
         raise SystemExit(
-            "Missing Gucci raw catalogues — run scrape-gc-handbags.py "
-            "and/or scrape-gc-womens-rtw.py first"
+            "Missing Gucci raw catalogues — run scrape-gc-handbags.py, "
+            "scrape-gc-womens-rtw.py and/or scrape-gc-womens-shoes.py first"
         )
 
     prev_by_sku: dict[str, dict] = {}
@@ -688,7 +961,9 @@ def main() -> None:
         if not prod:
             continue
         if prod["id"] in seen_ids:
-            if row.get("kind") == "rtw":
+            # Later sources (rtw/shoes) may overwrite handbags of same code
+            # only when kind is rtw/shoes — keep first unless shoes/rtw wins.
+            if row.get("kind") in {"rtw", "shoes"}:
                 products = [p for p in products if p["id"] != prod["id"]]
                 products.append(prod)
             continue
@@ -705,15 +980,19 @@ def main() -> None:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./gc-catalog.json";\n\n'
-        "/** Auto-generated — Gucci handbags + women's ready-to-wear. */\n"
+        "/** Auto-generated — Gucci handbags + women's RTW + women's shoes. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
     bags_n = sum(1 for p in products if p.get("category") == "bags")
     rtw_n = sum(1 for p in products if p.get("category") == "luxury")
-    print(f"  handbags: {bags_n}  rtw: {rtw_n}", flush=True)
+    shoes_n = sum(1 for p in products if p.get("category") == "shoes")
+    print(f"  handbags: {bags_n}  rtw: {rtw_n}  shoes: {shoes_n}", flush=True)
     for leaf in RTW_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+        print(f"  {leaf}: {n}", flush=True)
+    for leaf in SHOES_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
 

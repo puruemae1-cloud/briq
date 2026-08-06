@@ -464,7 +464,18 @@ export type SubcategoryId =
   | "gc-women-outerwear"
   | "gc-women-leather"
   | "gc-women-activewear"
-  | "gc-women-cocktail-evening";
+  | "gc-women-cocktail-evening"
+  | "gucci-shoes"
+  | "gc-shoes-womens"
+  | "gc-women-shoes"
+  | "gc-women-sneakers"
+  | "gc-women-moccasins"
+  | "gc-women-slippers-mules"
+  | "gc-women-sandals"
+  | "gc-women-slides"
+  | "gc-women-pumps"
+  | "gc-women-ballet-flats"
+  | "gc-women-boots";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -494,6 +505,19 @@ export const GC_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "gc-women-activewear",
   "gc-women-cocktail-evening",
 ];
+
+/** Gucci women's shoes leaves (official UK women shoes PLPs). */
+export const GC_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-sneakers",
+  "gc-women-moccasins",
+  "gc-women-slippers-mules",
+  "gc-women-sandals",
+  "gc-women-slides",
+  "gc-women-pumps",
+  "gc-women-ballet-flats",
+  "gc-women-boots",
+];
+
 
 export const BS_MEN_CLOTHING_IDS: SubcategoryId[] = [
   "bs-men-new",
@@ -1208,6 +1232,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-backpacks-beltbags": ["gc-women-backpacks-beltbags"],
   "gc-women-clutches-evening": ["gc-women-clutches-evening"],
   "gc-women-personalised": ["gc-women-personalised"],
+  "gucci-shoes": ["gucci-shoes", "gc-shoes-womens", "gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
+  "gc-shoes-womens": ["gc-shoes-womens", "gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
+  "gc-women-shoes": ["gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
+  "gc-women-sneakers": ["gc-women-sneakers"],
+  "gc-women-moccasins": ["gc-women-moccasins"],
+  "gc-women-slippers-mules": ["gc-women-slippers-mules"],
+  "gc-women-sandals": ["gc-women-sandals"],
+  "gc-women-slides": ["gc-women-slides"],
+  "gc-women-pumps": ["gc-women-pumps"],
+  "gc-women-ballet-flats": ["gc-women-ballet-flats"],
+  "gc-women-boots": ["gc-women-boots"],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -2438,6 +2473,61 @@ export const navCategories: NavCategory[] = [
             labelKo: "여성용",
             href: "/shop?category=shoes&sub=bs-shoes-women",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "gucci-shoes",
+        labelKo: "구찌",
+        href: "/shop?category=shoes&sub=gucci-shoes",
+        children: [
+          {
+            id: "gc-shoes-womens",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=gc-shoes-womens",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=gc-women-sneakers",
+              },
+              {
+                id: "gc-women-moccasins",
+                labelKo: "모카신 & 레이스업",
+                href: "/shop?category=shoes&sub=gc-women-moccasins",
+              },
+              {
+                id: "gc-women-slippers-mules",
+                labelKo: "슬리퍼 & 뮬",
+                href: "/shop?category=shoes&sub=gc-women-slippers-mules",
+              },
+              {
+                id: "gc-women-sandals",
+                labelKo: "샌들",
+                href: "/shop?category=shoes&sub=gc-women-sandals",
+              },
+              {
+                id: "gc-women-slides",
+                labelKo: "슬라이드",
+                href: "/shop?category=shoes&sub=gc-women-slides",
+              },
+              {
+                id: "gc-women-pumps",
+                labelKo: "펌프스",
+                href: "/shop?category=shoes&sub=gc-women-pumps",
+              },
+              {
+                id: "gc-women-ballet-flats",
+                labelKo: "발레 플랫",
+                href: "/shop?category=shoes&sub=gc-women-ballet-flats",
+              },
+              {
+                id: "gc-women-boots",
+                labelKo: "부츠 & 앵클부츠",
+                href: "/shop?category=shoes&sub=gc-women-boots",
+              },
+            ],
           },
         ],
       },

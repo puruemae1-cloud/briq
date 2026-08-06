@@ -1,16 +1,14 @@
 ---
-description: Always commit and push so Vercel deploys after Briq changes
+description: After Briq catalog/product changes, always commit, push, and deploy including product images — do not wait to be asked.
 alwaysApply: true
 ---
 
-# Auto deploy (commit + push)
+# Auto-deploy Briq changes
 
-After finishing meaningful code or content changes in this repo:
+When finishing catalog, product, image, category, or site content work that should go live:
 
-1. **Commit** with a clear message (follow the project's git commit protocol / HEREDOC).
-2. **Push** to `origin` on the current branch (`git push -u origin HEAD` if needed) so **Vercel production deploy** runs.
-3. Do this **without waiting** for the user to ask — treat deploy as part of "done".
-4. Skip only if there is nothing to commit, or the user explicitly says not to commit/push.
-5. Never force-push to main/master, never amend pushed commits, never update git config.
-
-This preference overrides the default "only commit when asked" habit for the Briq project.
+1. **Commit** the relevant code/data changes (follow the repo git commit protocol; no secrets).
+2. **Push** to the tracked remote branch (`main` unless on a feature branch with an open PR flow).
+3. **Product images**: if any PDP assets under gitignored `public/products/*-pdp/` changed, run `python3 scripts/push-product-images-tag.py` with the appropriate `--dirs` (e.g. `gc-pdp`, `bb-pdp`) so the `product-images` tag publishes.
+4. Do **not** stop after local edits and ask “커밋/배포할까요?” — the user wants deploy by default.
+5. Still avoid force-push, `--no-verify`, and destructive git unless explicitly requested.
