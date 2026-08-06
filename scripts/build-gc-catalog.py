@@ -1292,9 +1292,9 @@ def main() -> None:
     travel_n = sum(
         1
         for p in products
-        if any(
-            c in TRAVEL_LEAF_COLLECTIONS or c in TRAVEL_PARENT_COLLECTIONS
-            for c in (p.get("gcCollections") or [])
+        if "gc-women-travel" in (p.get("gcCollections") or [])
+        or any(
+            c in TRAVEL_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
         )
     )
     print(
