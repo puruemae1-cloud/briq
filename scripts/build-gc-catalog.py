@@ -362,6 +362,12 @@ def clean_name_ko(name: str) -> str:
     return s
 
 
+_IMPORTER_GUCCI_KR_RE = re.compile(
+    r"수입자\s*:?\s*구찌코리아",
+    flags=re.I,
+)
+
+
 def strip_gucci_warranty(text: str) -> str:
     if not text:
         return ""
@@ -381,6 +387,8 @@ def strip_gucci_warranty(text: str) -> str:
         s,
         flags=re.I,
     )
+    # Official KR detailParts include importer line; drop from Briq PDP copy.
+    s = _IMPORTER_GUCCI_KR_RE.sub("", s)
     s = re.sub(r"(?:\s*[·•]\s*){2,}", " · ", s)
     s = re.sub(r"^\s*[·•]\s*", "", s)
     s = re.sub(r"\s*[·•]\s*$", "", s)
@@ -396,6 +404,8 @@ def is_gucci_warranty_line(line: str) -> bool:
     if "clientservice.kr@gucci.com" in s.lower():
         return True
     if re.search(r"AS\s*유선접수", s, flags=re.I):
+        return True
+    if _IMPORTER_GUCCI_KR_RE.search(s):
         return True
     return False
 
