@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Gucci catalogue from scraped raw (handbags + RTW + shoes + wallets).
+"""Build Gucci catalogue from scraped raw (handbags + RTW + shoes + wallets + travel).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
@@ -23,6 +23,7 @@ HANDBAG_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
 RTW_RAW = ROOT / "src/data/gc/gc-rtw-catalog-raw.json"
 SHOES_RAW = ROOT / "src/data/gc/gc-shoes-catalog-raw.json"
 WALLETS_RAW = ROOT / "src/data/gc/gc-wallets-catalog-raw.json"
+TRAVEL_RAW = ROOT / "src/data/gc/gc-travel-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
 OUT_TS = ROOT / "src/data/gc/gc-catalog.ts"
 CACHE_PATH = ROOT / "src/data/gc/gc-translate-cache.json"
@@ -86,6 +87,19 @@ WALLETS_LEAF_COLLECTIONS = [
 
 WALLETS_PARENT_COLLECTIONS = [
     "gc-women-wallets",
+    "gc-accessories-womens",
+    "gucci-accessories",
+]
+
+TRAVEL_LEAF_COLLECTIONS = [
+    "gc-women-trolley",
+    "gc-women-weekend-duffle",
+    "gc-women-travel-accessories",
+    "gc-women-hard-shell-luggage",
+]
+
+TRAVEL_PARENT_COLLECTIONS = [
+    "gc-women-travel",
     "gc-accessories-womens",
     "gucci-accessories",
 ]
@@ -857,6 +871,93 @@ def build_wallet_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
     }
 
 
+def build_travel_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    """Travel bags / luggage — One Size; W×H×D + capacity in PDP detail copy.
+
+    Same pattern as handbags/wallets (no apparel size chart).
+    """
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    allowed = {*TRAVEL_LEAF_COLLECTIONS, *TRAVEL_PARENT_COLLECTIONS}
+    cols = [c for c in (row.get("collections") or []) if c in allowed]
+    cols = sorted(set([*cols, *TRAVEL_PARENT_COLLECTIONS]))
+
+    leaf = next(
+        (c for c in TRAVEL_LEAF_COLLECTIONS if c in cols), "gc-women-travel"
+    )
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    variant = {
+        "id": f"{pid}-u",
+        "name": f"{copy['title_en']} — {copy['color_en'] or 'One Size'}".strip(" —"),
+        "nameKo": f"{copy['name_ko']} — {copy['color_ko'] or '원 사이즈'}".strip(" —"),
+        "sku": code,
+        "gbpPrice": float(gbp),
+        "price": price,
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "sourceUrl": row.get("url") or "",
+        "inStock": bool(row.get("inStock", True)),
+        "colorKey": copy["color_key"],
+        "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+        "size": "One Size",
+        "gcCollections": cols,
+    }
+
+    tags = [
+        "gucci",
+        "구찌",
+        "travel",
+        "여행",
+        "luggage",
+        "러기지",
+        "악세서리",
+        "여성",
+        *cols,
+    ]
+    badge = None
+    label = (row.get("label") or "").lower()
+    if "new" in label:
+        badge = "New"
+
+    return {
+        "id": pid,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
+        "brand": "구찌",
+        "price": price,
+        "category": "accessories",
+        "subcategory": leaf,
+        "gcCollections": cols,
+        "tags": tags,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "accent": accent_for(code),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": bool(row.get("inStock", True)),
+        "variants": [variant],
+        "storySections": copy["story"],
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+
+
 def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     code = row.get("productCode") or row.get("id")
     if not code:
@@ -973,8 +1074,13 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         c in RTW_LEAF_COLLECTIONS or c in {"gc-women-rtw", "gc-women"} for c in cols
     ):
         return build_rtw_product(row, prev, now_iso)
+    # Travel before wallets — shared parents (gucci-accessories) must not misroute.
+    if kind == "travel" or any(
+        c in TRAVEL_LEAF_COLLECTIONS or c == "gc-women-travel" for c in cols
+    ):
+        return build_travel_product(row, prev, now_iso)
     if kind == "wallets" or any(
-        c in WALLETS_LEAF_COLLECTIONS or c in WALLETS_PARENT_COLLECTIONS for c in cols
+        c in WALLETS_LEAF_COLLECTIONS or c == "gc-women-wallets" for c in cols
     ):
         return build_wallet_product(row, prev, now_iso)
     return build_handbag_product(row, prev, now_iso)
@@ -1028,11 +1134,21 @@ def dedupe_style_color_name(products: list[dict]) -> list[dict]:
     return kept
 
 
-def load_rows() -> tuple[list[dict], dict]:
-    """Load raw rows. Returns (rows, stats) — wallets skip bag duplicates."""
+def load_rows() -> tuple[list[dict], dict, dict]:
+    """Load raw rows. Wallets/travel skip duplicates already in handbags or catalog."""
     rows: list[dict] = []
-    bag_skus: set[str] = set()
-    bag_style_colors: set[tuple[str, str]] = set()
+    existing_skus: set[str] = set()
+    existing_ids: set[str] = set()
+    existing_style_colors: set[tuple[str, str]] = set()
+
+    def remember(sku: str) -> None:
+        if not sku:
+            return
+        existing_skus.add(sku.upper())
+        existing_ids.add(f"gc-{sku.lower()}")
+        sc = style_color_key(sku)
+        if sc:
+            existing_style_colors.add(sc)
 
     if HANDBAG_RAW.exists():
         data = json.loads(HANDBAG_RAW.read_text())
@@ -1040,23 +1156,23 @@ def load_rows() -> tuple[list[dict], dict]:
             row = dict(row)
             row.setdefault("kind", "handbag")
             sku = str(row.get("productCode") or row.get("id") or "")
-            if sku:
-                bag_skus.add(sku.upper())
-                sc = style_color_key(sku)
-                if sc:
-                    bag_style_colors.add(sc)
+            remember(sku)
             rows.append(row)
     if RTW_RAW.exists():
         data = json.loads(RTW_RAW.read_text())
         for row in data.get("products") or []:
             row = dict(row)
             row["kind"] = "rtw"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            remember(sku)
             rows.append(row)
     if SHOES_RAW.exists():
         data = json.loads(SHOES_RAW.read_text())
         for row in data.get("products") or []:
             row = dict(row)
             row["kind"] = "shoes"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            remember(sku)
             rows.append(row)
 
     wallet_stats = {
@@ -1072,25 +1188,56 @@ def load_rows() -> tuple[list[dict], dict]:
             row = dict(row)
             row["kind"] = "wallets"
             sku = str(row.get("productCode") or row.get("id") or "")
-            if sku.upper() in bag_skus:
+            if sku.upper() in existing_skus or f"gc-{sku.lower()}" in existing_ids:
                 wallet_stats["skipped_bag_sku"] += 1
                 continue
             sc = style_color_key(sku)
-            if sc and sc in bag_style_colors:
+            if sc and sc in existing_style_colors:
                 wallet_stats["skipped_bag_style_color"] += 1
                 continue
             wallet_stats["kept"] += 1
+            remember(sku)
             rows.append(row)
-    return rows, wallet_stats
+
+    travel_stats = {
+        "raw": 0,
+        "skipped_existing_sku": 0,
+        "skipped_existing_id": 0,
+        "skipped_style_color": 0,
+        "kept": 0,
+    }
+    if TRAVEL_RAW.exists():
+        data = json.loads(TRAVEL_RAW.read_text())
+        for row in data.get("products") or []:
+            travel_stats["raw"] += 1
+            row = dict(row)
+            row["kind"] = "travel"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            briq_id = f"gc-{sku.lower()}" if sku else ""
+            if sku.upper() in existing_skus:
+                travel_stats["skipped_existing_sku"] += 1
+                continue
+            if briq_id and briq_id in existing_ids:
+                travel_stats["skipped_existing_id"] += 1
+                continue
+            sc = style_color_key(sku)
+            if sc and sc in existing_style_colors:
+                travel_stats["skipped_style_color"] += 1
+                continue
+            travel_stats["kept"] += 1
+            remember(sku)
+            rows.append(row)
+
+    return rows, wallet_stats, travel_stats
 
 
 def main() -> None:
-    rows, wallet_stats = load_rows()
+    rows, wallet_stats, travel_stats = load_rows()
     if not rows:
         raise SystemExit(
             "Missing Gucci raw catalogues — run scrape-gc-handbags.py, "
-            "scrape-gc-womens-rtw.py, scrape-gc-womens-shoes.py and/or "
-            "scrape-gc-womens-wallets.py first"
+            "scrape-gc-womens-rtw.py, scrape-gc-womens-shoes.py, "
+            "scrape-gc-womens-wallets.py and/or scrape-gc-womens-travel.py first"
         )
 
     prev_by_sku: dict[str, dict] = {}
@@ -1115,7 +1262,7 @@ def main() -> None:
         if prod["id"] in seen_ids:
             # Later sources (rtw/shoes) may overwrite handbags of same code
             # only when kind is rtw/shoes — keep first unless shoes/rtw wins.
-            # Wallets never overwrite bags (already filtered in load_rows).
+            # Wallets/travel never overwrite bags (already filtered in load_rows).
             if row.get("kind") in {"rtw", "shoes"}:
                 products = [p for p in products if p["id"] != prod["id"]]
                 products.append(prod)
@@ -1133,7 +1280,7 @@ def main() -> None:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./gc-catalog.json";\n\n'
-        "/** Auto-generated — Gucci handbags + RTW + shoes + wallets. */\n"
+        "/** Auto-generated — Gucci handbags + RTW + shoes + wallets + travel. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
@@ -1142,8 +1289,17 @@ def main() -> None:
     rtw_n = sum(1 for p in products if p.get("category") == "luxury")
     shoes_n = sum(1 for p in products if p.get("category") == "shoes")
     acc_n = sum(1 for p in products if p.get("category") == "accessories")
+    travel_n = sum(
+        1
+        for p in products
+        if any(
+            c in TRAVEL_LEAF_COLLECTIONS or c in TRAVEL_PARENT_COLLECTIONS
+            for c in (p.get("gcCollections") or [])
+        )
+    )
     print(
-        f"  handbags: {bags_n}  rtw: {rtw_n}  shoes: {shoes_n}  accessories: {acc_n}",
+        f"  handbags: {bags_n}  rtw: {rtw_n}  shoes: {shoes_n}  "
+        f"accessories: {acc_n}  travel: {travel_n}",
         flush=True,
     )
     if wallet_stats["raw"]:
@@ -1152,6 +1308,15 @@ def main() -> None:
             f"kept={wallet_stats['kept']} "
             f"skipped_bag_sku={wallet_stats['skipped_bag_sku']} "
             f"skipped_bag_style_color={wallet_stats['skipped_bag_style_color']}",
+            flush=True,
+        )
+    if travel_stats["raw"]:
+        print(
+            f"  travel raw={travel_stats['raw']} "
+            f"kept={travel_stats['kept']} "
+            f"skipped_sku={travel_stats['skipped_existing_sku']} "
+            f"skipped_id={travel_stats['skipped_existing_id']} "
+            f"skipped_style_color={travel_stats['skipped_style_color']}",
             flush=True,
         )
     for leaf in RTW_LEAF_COLLECTIONS:
@@ -1163,16 +1328,19 @@ def main() -> None:
     for leaf in WALLETS_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
-    parent_only = sum(
+    for leaf in TRAVEL_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+        print(f"  {leaf}: {n}", flush=True)
+    travel_parent_only = sum(
         1
         for p in products
-        if p.get("category") == "accessories"
+        if "gc-women-travel" in (p.get("gcCollections") or [])
         and not any(
-            c in WALLETS_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
+            c in TRAVEL_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
         )
     )
-    if parent_only:
-        print(f"  gc-women-wallets (no leaf): {parent_only}", flush=True)
+    if travel_parent_only:
+        print(f"  gc-women-travel (no leaf): {travel_parent_only}", flush=True)
 
 
 if __name__ == "__main__":

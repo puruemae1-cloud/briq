@@ -485,7 +485,12 @@ export type SubcategoryId =
   | "gc-women-card-holders"
   | "gc-women-bag-charms-keychains"
   | "gc-women-pouches"
-  | "gc-women-tech-accessories";
+  | "gc-women-tech-accessories"
+  | "gc-women-travel"
+  | "gc-women-trolley"
+  | "gc-women-weekend-duffle"
+  | "gc-women-travel-accessories"
+  | "gc-women-hard-shell-luggage";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -537,6 +542,14 @@ export const GC_WOMEN_WALLET_LEAF_IDS: SubcategoryId[] = [
   "gc-women-bag-charms-keychains",
   "gc-women-pouches",
   "gc-women-tech-accessories",
+];
+
+/** Gucci women's travel bags leaves (official UK travel PLPs). */
+export const GC_WOMEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-trolley",
+  "gc-women-weekend-duffle",
+  "gc-women-travel-accessories",
+  "gc-women-hard-shell-luggage",
 ];
 
 
@@ -1269,11 +1282,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-womens",
     "gc-women-wallets",
     ...GC_WOMEN_WALLET_LEAF_IDS,
+    "gc-women-travel",
+    ...GC_WOMEN_TRAVEL_LEAF_IDS,
   ],
   "gc-accessories-womens": [
     "gc-accessories-womens",
     "gc-women-wallets",
     ...GC_WOMEN_WALLET_LEAF_IDS,
+    "gc-women-travel",
+    ...GC_WOMEN_TRAVEL_LEAF_IDS,
   ],
   "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
   "gc-women-long-wallets": ["gc-women-long-wallets"],
@@ -1283,6 +1300,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-bag-charms-keychains": ["gc-women-bag-charms-keychains"],
   "gc-women-pouches": ["gc-women-pouches"],
   "gc-women-tech-accessories": ["gc-women-tech-accessories"],
+  "gc-women-travel": ["gc-women-travel", ...GC_WOMEN_TRAVEL_LEAF_IDS],
+  "gc-women-trolley": ["gc-women-trolley"],
+  "gc-women-weekend-duffle": ["gc-women-weekend-duffle"],
+  "gc-women-travel-accessories": ["gc-women-travel-accessories"],
+  "gc-women-hard-shell-luggage": ["gc-women-hard-shell-luggage"],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -2977,6 +2999,34 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-tech-accessories",
                 labelKo: "테크 액세서리",
                 href: "/shop?category=accessories&sub=gc-women-tech-accessories",
+              },
+            ],
+          },
+          {
+            id: "gc-women-travel",
+            labelKo: "여행",
+            href: "/shop?category=accessories&sub=gc-women-travel",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-trolley",
+                labelKo: "트롤리",
+                href: "/shop?category=accessories&sub=gc-women-trolley",
+              },
+              {
+                id: "gc-women-weekend-duffle",
+                labelKo: "위켄드백 & 더플백",
+                href: "/shop?category=accessories&sub=gc-women-weekend-duffle",
+              },
+              {
+                id: "gc-women-travel-accessories",
+                labelKo: "여행 액세서리",
+                href: "/shop?category=accessories&sub=gc-women-travel-accessories",
+              },
+              {
+                id: "gc-women-hard-shell-luggage",
+                labelKo: "하드셸 러기지",
+                href: "/shop?category=accessories&sub=gc-women-hard-shell-luggage",
               },
             ],
           },
