@@ -3598,6 +3598,15 @@ body:has(.nav-drawer-toggle:checked) {
   color: #fff;
 }
 
+/* Mobile: share mark only on PDP — hide listing / shop surfaces */
+@media (max-width: 899px) {
+  .product-card-shell__share,
+  .shop-hero__share,
+  .shop-browse__share {
+    display: none;
+  }
+}
+
 .product-detail__price {
   font-size: 1.25rem;
   font-weight: 650;
