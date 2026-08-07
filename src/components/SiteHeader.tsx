@@ -12,10 +12,17 @@ function brandLinkClass(id: string, extra?: string) {
 }
 
 /**
- * Brand row + one nested level (e.g. 폴 스미스 → 남성용 / 여성용 / 선물용).
- * Product-type leaves stay on the shop page chips.
+ * Header category dropdown rows.
+ * Default: brand row + one nested level (스포츠).
+ * brandsOnly: brand/top-child links only — no 여성용/남성용/아울렛 nest.
  */
-function BrandLinks({ items }: { items: NavChild[] }) {
+function BrandLinks({
+  items,
+  brandsOnly = false,
+}: {
+  items: NavChild[];
+  brandsOnly?: boolean;
+}) {
   return (
     <>
       {items.map((child) => {
@@ -26,7 +33,7 @@ function BrandLinks({ items }: { items: NavChild[] }) {
           splits && splits.length > 0
             ? splits
             : child.children?.filter((c) => c.navLeaf) ?? [];
-        const showNest = (nest?.length ?? 0) > 0;
+        const showNest = !brandsOnly && (nest?.length ?? 0) > 0;
 
         return (
           <div key={child.id} className="nav-dropdown__group">
@@ -61,10 +68,16 @@ function BrandLinks({ items }: { items: NavChild[] }) {
   );
 }
 
-function MobileBrandBranch({ child }: { child: NavChild }) {
+function MobileBrandBranch({
+  child,
+  brandsOnly = false,
+}: {
+  child: NavChild;
+  brandsOnly?: boolean;
+}) {
   const nest =
     child.children?.filter((c) => c.navLeaf || !c.children?.length) ?? [];
-  const showNest = nest.length > 0;
+  const showNest = !brandsOnly && nest.length > 0;
 
   return (
     <div className="mobile-drawer__brand">
@@ -138,7 +151,10 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     <ChevronDown size={14} aria-hidden />
                   </Link>
                   <div className="nav-dropdown">
-                    <BrandLinks items={c.children} />
+                    <BrandLinks
+                      items={c.children}
+                      brandsOnly={c.id !== "sports"}
+                    />
                   </div>
                 </div>
               ) : (
@@ -193,7 +209,11 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                       전체 보기
                     </a>
                     {c.children.map((child) => (
-                      <MobileBrandBranch key={child.id} child={child} />
+                      <MobileBrandBranch
+                        key={child.id}
+                        child={child}
+                        brandsOnly={c.id !== "sports"}
+                      />
                     ))}
                   </div>
                 </details>
