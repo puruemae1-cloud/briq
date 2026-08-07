@@ -490,7 +490,18 @@ export type SubcategoryId =
   | "gc-women-trolley"
   | "gc-women-weekend-duffle"
   | "gc-women-travel-accessories"
-  | "gc-women-hard-shell-luggage";
+  | "gc-women-hard-shell-luggage"
+  | "gc-jewellery-watches"
+  | "gc-gold-jewellery"
+  | "gc-gold-jewellery-women"
+  | "gc-gold-jewellery-men"
+  | "gc-silver-jewellery"
+  | "gc-silver-jewellery-women"
+  | "gc-silver-jewellery-men"
+  | "gc-fashion-jewellery"
+  | "gc-watches"
+  | "gc-watches-women"
+  | "gc-watches-men";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -550,6 +561,32 @@ export const GC_WOMEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
   "gc-women-weekend-duffle",
   "gc-women-travel-accessories",
   "gc-women-hard-shell-luggage",
+];
+
+/** Gucci jewellery & watches hub leaves (official UK jewellery-watches PLPs). */
+export const GC_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "gc-gold-jewellery-women",
+  "gc-gold-jewellery-men",
+  "gc-silver-jewellery-women",
+  "gc-silver-jewellery-men",
+  "gc-fashion-jewellery",
+  "gc-watches-women",
+  "gc-watches-men",
+];
+
+export const GC_GOLD_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "gc-gold-jewellery-women",
+  "gc-gold-jewellery-men",
+];
+
+export const GC_SILVER_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "gc-silver-jewellery-women",
+  "gc-silver-jewellery-men",
+];
+
+export const GC_WATCHES_LEAF_IDS: SubcategoryId[] = [
+  "gc-watches-women",
+  "gc-watches-men",
 ];
 
 
@@ -1284,6 +1321,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_WOMEN_WALLET_LEAF_IDS,
     "gc-women-travel",
     ...GC_WOMEN_TRAVEL_LEAF_IDS,
+    "gc-jewellery-watches",
+    "gc-gold-jewellery",
+    ...GC_GOLD_JEWELLERY_LEAF_IDS,
+    "gc-silver-jewellery",
+    ...GC_SILVER_JEWELLERY_LEAF_IDS,
+    "gc-fashion-jewellery",
+    "gc-watches",
+    ...GC_WATCHES_LEAF_IDS,
   ],
   "gc-accessories-womens": [
     "gc-accessories-womens",
@@ -1305,6 +1350,26 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-weekend-duffle": ["gc-women-weekend-duffle"],
   "gc-women-travel-accessories": ["gc-women-travel-accessories"],
   "gc-women-hard-shell-luggage": ["gc-women-hard-shell-luggage"],
+  "gc-jewellery-watches": [
+    "gc-jewellery-watches",
+    "gc-gold-jewellery",
+    ...GC_GOLD_JEWELLERY_LEAF_IDS,
+    "gc-silver-jewellery",
+    ...GC_SILVER_JEWELLERY_LEAF_IDS,
+    "gc-fashion-jewellery",
+    "gc-watches",
+    ...GC_WATCHES_LEAF_IDS,
+  ],
+  "gc-gold-jewellery": ["gc-gold-jewellery", ...GC_GOLD_JEWELLERY_LEAF_IDS],
+  "gc-gold-jewellery-women": ["gc-gold-jewellery-women"],
+  "gc-gold-jewellery-men": ["gc-gold-jewellery-men"],
+  "gc-silver-jewellery": ["gc-silver-jewellery", ...GC_SILVER_JEWELLERY_LEAF_IDS],
+  "gc-silver-jewellery-women": ["gc-silver-jewellery-women"],
+  "gc-silver-jewellery-men": ["gc-silver-jewellery-men"],
+  "gc-fashion-jewellery": ["gc-fashion-jewellery"],
+  "gc-watches": ["gc-watches", ...GC_WATCHES_LEAF_IDS],
+  "gc-watches-women": ["gc-watches-women"],
+  "gc-watches-men": ["gc-watches-men"],
   "luxury-shoes": ["luxury-womens", "luxury-mens"],
   "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
@@ -3027,6 +3092,70 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-hard-shell-luggage",
                 labelKo: "하드셸 러기지",
                 href: "/shop?category=accessories&sub=gc-women-hard-shell-luggage",
+              },
+            ],
+          },
+          {
+            id: "gc-jewellery-watches",
+            labelKo: "쥬얼리 & 시계",
+            href: "/shop?category=accessories&sub=gc-jewellery-watches",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-gold-jewellery",
+                labelKo: "골드 쥬얼리",
+                href: "/shop?category=accessories&sub=gc-gold-jewellery",
+                children: [
+                  {
+                    id: "gc-gold-jewellery-women",
+                    labelKo: "여성용",
+                    href: "/shop?category=accessories&sub=gc-gold-jewellery-women",
+                  },
+                  {
+                    id: "gc-gold-jewellery-men",
+                    labelKo: "남성용",
+                    href: "/shop?category=accessories&sub=gc-gold-jewellery-men",
+                  },
+                ],
+              },
+              {
+                id: "gc-silver-jewellery",
+                labelKo: "실버 쥬얼리",
+                href: "/shop?category=accessories&sub=gc-silver-jewellery",
+                children: [
+                  {
+                    id: "gc-silver-jewellery-women",
+                    labelKo: "여성용",
+                    href: "/shop?category=accessories&sub=gc-silver-jewellery-women",
+                  },
+                  {
+                    id: "gc-silver-jewellery-men",
+                    labelKo: "남성용",
+                    href: "/shop?category=accessories&sub=gc-silver-jewellery-men",
+                  },
+                ],
+              },
+              {
+                id: "gc-fashion-jewellery",
+                labelKo: "패션 쥬얼리",
+                href: "/shop?category=accessories&sub=gc-fashion-jewellery",
+              },
+              {
+                id: "gc-watches",
+                labelKo: "시계",
+                href: "/shop?category=accessories&sub=gc-watches",
+                children: [
+                  {
+                    id: "gc-watches-women",
+                    labelKo: "여성용",
+                    href: "/shop?category=accessories&sub=gc-watches-women",
+                  },
+                  {
+                    id: "gc-watches-men",
+                    labelKo: "남성용",
+                    href: "/shop?category=accessories&sub=gc-watches-men",
+                  },
+                ],
               },
             ],
           },
