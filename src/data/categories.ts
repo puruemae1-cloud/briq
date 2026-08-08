@@ -10,12 +10,6 @@ export type CategoryId =
 export type SubcategoryId =
   | "womens"
   | "mens"
-  | "jewelry"
-  | "cosmetics"
-  | "wallets"
-  | "snacks"
-  | "health-food"
-  | "british-tea"
   | "golf"
   | "running"
   | "swimming"
@@ -508,7 +502,14 @@ export type SubcategoryId =
   | "gc-fashion-jewellery"
   | "gc-watches"
   | "gc-watches-women"
-  | "gc-watches-men";
+  | "gc-watches-men"
+  | "gc-gifts"
+  | "gc-gifts-her"
+  | "gc-gifts-him"
+  | "gc-gifts-personalised"
+  | "gc-gifts-beauty"
+  | "gc-gifts-jewellery"
+  | "gc-gifts-children";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -606,6 +607,16 @@ export const GC_SILVER_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
 export const GC_WATCHES_LEAF_IDS: SubcategoryId[] = [
   "gc-watches-women",
   "gc-watches-men",
+];
+
+/** Gucci gifts leaves (official UK gifts hub PLPs). */
+export const GC_GIFTS_LEAF_IDS: SubcategoryId[] = [
+  "gc-gifts-her",
+  "gc-gifts-him",
+  "gc-gifts-personalised",
+  "gc-gifts-beauty",
+  "gc-gifts-jewellery",
+  "gc-gifts-children",
 ];
 
 
@@ -1350,7 +1361,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-fashion-jewellery",
     "gc-watches",
     ...GC_WATCHES_LEAF_IDS,
+    "gc-gifts",
+    ...GC_GIFTS_LEAF_IDS,
   ],
+  "gc-gifts": ["gc-gifts", ...GC_GIFTS_LEAF_IDS],
+  "gc-gifts-her": ["gc-gifts-her"],
+  "gc-gifts-him": ["gc-gifts-him"],
+  "gc-gifts-personalised": ["gc-gifts-personalised"],
+  "gc-gifts-beauty": ["gc-gifts-beauty"],
+  "gc-gifts-jewellery": ["gc-gifts-jewellery"],
+  "gc-gifts-children": ["gc-gifts-children"],
   "gc-accessories-womens": [
     "gc-accessories-womens",
     "gc-women-wallets",
@@ -3228,6 +3248,44 @@ export const navCategories: NavCategory[] = [
               },
             ],
           },
+          {
+            id: "gc-gifts",
+            labelKo: "선물용",
+            href: "/shop?category=accessories&sub=gc-gifts",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-gifts-her",
+                labelKo: "여성을 위한 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-her",
+              },
+              {
+                id: "gc-gifts-him",
+                labelKo: "남성을 위한 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-him",
+              },
+              {
+                id: "gc-gifts-personalised",
+                labelKo: "퍼스널라이즈드 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-personalised",
+              },
+              {
+                id: "gc-gifts-beauty",
+                labelKo: "향수 & 메이크업 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-beauty",
+              },
+              {
+                id: "gc-gifts-jewellery",
+                labelKo: "쥬얼리 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-jewellery",
+              },
+              {
+                id: "gc-gifts-children",
+                labelKo: "키즈 선물",
+                href: "/shop?category=accessories&sub=gc-gifts-children",
+              },
+            ],
+          },
         ],
       },
       {
@@ -3655,12 +3713,6 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-      { id: "jewelry", labelKo: "쥬얼리", href: "/shop?category=accessories&sub=jewelry" },
-      { id: "cosmetics", labelKo: "화장품", href: "/shop?category=accessories&sub=cosmetics" },
-      { id: "wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=wallets" },
-      { id: "snacks", labelKo: "스낵", href: "/shop?category=accessories&sub=snacks" },
-      { id: "health-food", labelKo: "건강식품", href: "/shop?category=accessories&sub=health-food" },
-      { id: "british-tea", labelKo: "영국 Tea", href: "/shop?category=accessories&sub=british-tea" },
     ],
   },
   {

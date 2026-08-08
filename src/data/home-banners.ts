@@ -50,13 +50,6 @@ const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set([
   // shoes — type groupings, not brands
   "luxury-shoes",
   "training-shoes",
-  // accessories — product-type leaves
-  "jewelry",
-  "cosmetics",
-  "wallets",
-  "snacks",
-  "health-food",
-  "british-tea",
 ]);
 
 /** Homepage rail brand chips — mirrors top-level children under each shop category. */

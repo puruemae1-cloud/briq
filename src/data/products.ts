@@ -774,10 +774,12 @@ export function expandLuColourwayCards(
 export function getProductsByCategory(category?: string, sub?: string) {
   let list = products;
   const expanded = expandSubcategoryFilter(sub);
-  // Gift PLPs include apparel/shoes tagged with ps-gifts*; skip category gate.
+  // Gift PLPs include apparel/bags/shoes tagged with gifts*; skip category gate.
   const isPsGifts =
     expanded?.some((c) => c === "ps-gifts" || c.startsWith("ps-gifts-")) ?? false;
-  if (category && category !== "all" && !isPsGifts) {
+  const isGcGifts =
+    expanded?.some((c) => c === "gc-gifts" || c.startsWith("gc-gifts-")) ?? false;
+  if (category && category !== "all" && !isPsGifts && !isGcGifts) {
     list = list.filter((p) => p.category === category);
   }
   if (expanded) {

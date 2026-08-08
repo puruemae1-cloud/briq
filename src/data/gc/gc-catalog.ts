@@ -1,5 +1,5 @@
 import type { Product } from "@/data/products";
 import data from "./gc-catalog.json";
 
-/** Auto-generated — Gucci handbags + RTW + shoes + wallets + fashion accessories + travel + jewellery. */
+/** Auto-generated — Gucci handbags + RTW + shoes + wallets + fashion accessories + travel + jewellery + gifts. */
 export const gcCatalogProducts = data as unknown as Product[];

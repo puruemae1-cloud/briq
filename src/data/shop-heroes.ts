@@ -97,36 +97,6 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/rot-acc-2.jpg",
     "/banners/rot-acc-3.jpg",
   ],
-  "accessories:jewelry": [
-    "/banners/shop-jewelry-1.jpg",
-    "/banners/shop-acc-1.jpg",
-    "/banners/rot-acc-1.jpg",
-  ],
-  "accessories:cosmetics": [
-    "/banners/shop-cosmetics-1.jpg",
-    "/banners/rot-acc-2.jpg",
-    "/banners/shop-cosmetics-1.jpg",
-  ],
-  "accessories:wallets": [
-    "/banners/shop-wallet-1.jpg",
-    "/banners/rot-acc-3.jpg",
-    "/banners/shop-wallet-1.jpg",
-  ],
-  "accessories:snacks": [
-    "/banners/shop-snack-1.jpg",
-    "/banners/rot-acc-2.jpg",
-    "/banners/shop-snack-1.jpg",
-  ],
-  "accessories:health-food": [
-    "/banners/shop-health-1.jpg",
-    "/banners/rot-acc-1.jpg",
-    "/banners/shop-health-1.jpg",
-  ],
-  "accessories:british-tea": [
-    "/banners/shop-tea-1.jpg",
-    "/banners/rot-acc-3.jpg",
-    "/banners/shop-tea-1.jpg",
-  ],
 
   sports: [
     "/banners/rot-golf-1.jpg",
