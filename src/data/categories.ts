@@ -2353,7 +2353,7 @@ export const navCategories: NavCategory[] = [
         children: [
           {
             id: "gc-handbags",
-            labelKo: "핸드백",
+            labelKo: "여성용 핸드백",
             href: "/shop?category=bags&sub=gc-handbags",
             navLeaf: true,
             children: [
