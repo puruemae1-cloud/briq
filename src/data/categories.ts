@@ -443,6 +443,13 @@ export type SubcategoryId =
   | "gc-women-backpacks-beltbags"
   | "gc-women-clutches-evening"
   | "gc-women-personalised"
+  | "gc-mens-handbags"
+  | "gc-men-crossbody-messengers"
+  | "gc-men-backpacks"
+  | "gc-men-tote-bags"
+  | "gc-men-small-bags-pouches"
+  | "gc-men-belt-slingbags"
+  | "gc-men-duffle-bags"
   | "gucci"
   | "gc-women"
   | "gc-women-rtw"
@@ -521,6 +528,16 @@ export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "gc-women-backpacks-beltbags",
   "gc-women-clutches-evening",
   "gc-women-personalised",
+];
+
+/** Gucci men's bags leaf collections (official UK men bags PLPs). */
+export const GC_MENS_HANDBAG_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-crossbody-messengers",
+  "gc-men-backpacks",
+  "gc-men-tote-bags",
+  "gc-men-small-bags-pouches",
+  "gc-men-belt-slingbags",
+  "gc-men-duffle-bags",
 ];
 
 /** Gucci women's ready-to-wear Clothing leaves (official UK RTW PLPs). */
@@ -1307,8 +1324,20 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "belstaff-shoes": [...BS_MEN_SHOE_IDS, ...BS_WOMEN_SHOE_IDS],
   "belstaff-bags": ["belstaff-bags"],
   "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
-  "gucci-bags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "gucci-bags": [
+    "gc-handbags",
+    ...GC_HANDBAG_LEAF_IDS,
+    "gc-mens-handbags",
+    ...GC_MENS_HANDBAG_LEAF_IDS,
+  ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
+  "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
+  "gc-men-backpacks": ["gc-men-backpacks"],
+  "gc-men-tote-bags": ["gc-men-tote-bags"],
+  "gc-men-small-bags-pouches": ["gc-men-small-bags-pouches"],
+  "gc-men-belt-slingbags": ["gc-men-belt-slingbags"],
+  "gc-men-duffle-bags": ["gc-men-duffle-bags"],
   gucci: ["gucci", "gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
   "gc-women": ["gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
   "gc-women-rtw": ["gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
@@ -2396,6 +2425,44 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-personalised",
                 labelKo: "Personalised Handbags",
                 href: "/shop?category=bags&sub=gc-women-personalised",
+              },
+            ],
+          },
+          {
+            id: "gc-mens-handbags",
+            labelKo: "남성용 핸드백",
+            href: "/shop?category=bags&sub=gc-mens-handbags",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-men-crossbody-messengers",
+                labelKo: "크로스바디 & 메신저",
+                href: "/shop?category=bags&sub=gc-men-crossbody-messengers",
+              },
+              {
+                id: "gc-men-backpacks",
+                labelKo: "백팩",
+                href: "/shop?category=bags&sub=gc-men-backpacks",
+              },
+              {
+                id: "gc-men-tote-bags",
+                labelKo: "토트백",
+                href: "/shop?category=bags&sub=gc-men-tote-bags",
+              },
+              {
+                id: "gc-men-small-bags-pouches",
+                labelKo: "스몰백 & 파우치",
+                href: "/shop?category=bags&sub=gc-men-small-bags-pouches",
+              },
+              {
+                id: "gc-men-belt-slingbags",
+                labelKo: "벨트백 & 슬링백",
+                href: "/shop?category=bags&sub=gc-men-belt-slingbags",
+              },
+              {
+                id: "gc-men-duffle-bags",
+                labelKo: "더플백",
+                href: "/shop?category=bags&sub=gc-men-duffle-bags",
               },
             ],
           },
