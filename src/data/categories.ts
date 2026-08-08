@@ -486,6 +486,13 @@ export type SubcategoryId =
   | "gc-women-bag-charms-keychains"
   | "gc-women-pouches"
   | "gc-women-tech-accessories"
+  | "gc-women-fashion-accessories"
+  | "gc-women-belts"
+  | "gc-women-scarves-silks"
+  | "gc-women-hats-gloves"
+  | "gc-women-eyewear"
+  | "gc-women-hair-accessories"
+  | "gc-women-socks-tights"
   | "gc-women-travel"
   | "gc-women-trolley"
   | "gc-women-weekend-duffle"
@@ -553,6 +560,18 @@ export const GC_WOMEN_WALLET_LEAF_IDS: SubcategoryId[] = [
   "gc-women-bag-charms-keychains",
   "gc-women-pouches",
   "gc-women-tech-accessories",
+];
+
+/** Gucci women's fashion accessories leaves (official UK soft-accessory PLPs).
+ * Bag charms reuse `gc-women-bag-charms-keychains` under wallets nav — not listed here.
+ */
+export const GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
+  "gc-women-belts",
+  "gc-women-scarves-silks",
+  "gc-women-hats-gloves",
+  "gc-women-eyewear",
+  "gc-women-hair-accessories",
+  "gc-women-socks-tights",
 ];
 
 /** Gucci women's travel bags leaves (official UK travel PLPs). */
@@ -1319,6 +1338,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-womens",
     "gc-women-wallets",
     ...GC_WOMEN_WALLET_LEAF_IDS,
+    "gc-women-fashion-accessories",
+    ...GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-women-travel",
     ...GC_WOMEN_TRAVEL_LEAF_IDS,
     "gc-jewellery-watches",
@@ -1345,6 +1366,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-bag-charms-keychains": ["gc-women-bag-charms-keychains"],
   "gc-women-pouches": ["gc-women-pouches"],
   "gc-women-tech-accessories": ["gc-women-tech-accessories"],
+  "gc-women-fashion-accessories": [
+    "gc-women-fashion-accessories",
+    ...GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS,
+  ],
+  "gc-women-belts": ["gc-women-belts"],
+  "gc-women-scarves-silks": ["gc-women-scarves-silks"],
+  "gc-women-hats-gloves": ["gc-women-hats-gloves"],
+  "gc-women-eyewear": ["gc-women-eyewear"],
+  "gc-women-hair-accessories": ["gc-women-hair-accessories"],
+  "gc-women-socks-tights": ["gc-women-socks-tights"],
   "gc-women-travel": ["gc-women-travel", ...GC_WOMEN_TRAVEL_LEAF_IDS],
   "gc-women-trolley": ["gc-women-trolley"],
   "gc-women-weekend-duffle": ["gc-women-weekend-duffle"],
@@ -3064,6 +3095,44 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-tech-accessories",
                 labelKo: "테크 액세서리",
                 href: "/shop?category=accessories&sub=gc-women-tech-accessories",
+              },
+            ],
+          },
+          {
+            id: "gc-women-fashion-accessories",
+            labelKo: "패션 액세서리",
+            href: "/shop?category=accessories&sub=gc-women-fashion-accessories",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-women-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=gc-women-belts",
+              },
+              {
+                id: "gc-women-scarves-silks",
+                labelKo: "스카프 & 실크",
+                href: "/shop?category=accessories&sub=gc-women-scarves-silks",
+              },
+              {
+                id: "gc-women-hats-gloves",
+                labelKo: "모자 & 장갑",
+                href: "/shop?category=accessories&sub=gc-women-hats-gloves",
+              },
+              {
+                id: "gc-women-eyewear",
+                labelKo: "아이웨어",
+                href: "/shop?category=accessories&sub=gc-women-eyewear",
+              },
+              {
+                id: "gc-women-hair-accessories",
+                labelKo: "헤어 액세서리",
+                href: "/shop?category=accessories&sub=gc-women-hair-accessories",
+              },
+              {
+                id: "gc-women-socks-tights",
+                labelKo: "삭스 & 타이즈",
+                href: "/shop?category=accessories&sub=gc-women-socks-tights",
               },
             ],
           },
