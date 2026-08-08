@@ -353,6 +353,116 @@ def expand_membership(cols: set[str]) -> set[str]:
     return out
 
 
+def fetch_modern_plp_style_codes(
+    s: cffi_requests.Session, category_path: str, max_page: int = 8
+) -> list[str]:
+    """Collect styleCodes from the Next.js PLP RSC payload.
+
+    Legacy /c/productgrid can under-count vs the live PLP (e.g. scarves 205 vs 209).
+    Requesting ?page=N with RSC returns a cumulative product list; the last page
+    that still grows is the full set.
+    """
+    best: list[str] = []
+    for page in range(0, max_page + 1):
+        url = f"{BASE}{category_path}" + (f"?page={page}" if page else "")
+        try:
+            r = s.get(
+                url,
+                headers={
+                    **headers_html(),
+                    "Accept": "text/x-component",
+                    "RSC": "1",
+                },
+                impersonate="chrome124",
+                timeout=90,
+            )
+            if r.status_code != 200:
+                continue
+            text = r.text
+        except Exception as e:
+            print(f"  modern PLP page={page} fail: {e}", flush=True)
+            continue
+        found: list[str] = []
+        seen: set[str] = set()
+        for m in re.finditer(r'styleCode":"([0-9A-Za-z]+)"', text):
+            code = m.group(1)
+            if "99999" in code or code in seen:
+                continue
+            seen.add(code)
+            found.append(code)
+        if len(found) > len(best):
+            best = found
+        elif page > 0 and found and len(found) <= len(best):
+            # Stop once cumulative list stops growing.
+            break
+    return best
+
+
+def resolve_pdp_link(
+    s: cffi_requests.Session, code: str, title: str, sibling_url: str = ""
+) -> str:
+    """Best-effort PDP path for SKUs absent from the legacy productgrid."""
+    guesses: list[str] = []
+    if sibling_url:
+        guesses.append(re.sub(r"-p-[0-9A-Za-z]+$", f"-p-{code}", sibling_url))
+    slug = re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-") or "product"
+    for folder in (
+        "scarves-for-women",
+        "square-shaped-scarves-for-women",
+        "neck-bows-for-women",
+        "shawls-stoles-for-women",
+    ):
+        guesses.append(
+            f"/uk/en_gb/pr/women/accessories-for-women/silks-and-scarves-for-women/"
+            f"{folder}/{slug}-p-{code}"
+        )
+    for path in guesses:
+        url = path if path.startswith("http") else BASE + path
+        try:
+            r = s.get(
+                url,
+                headers=headers_html(),
+                impersonate="chrome124",
+                timeout=60,
+                allow_redirects=True,
+            )
+            if r.status_code == 200 and code in r.url:
+                return r.url.replace(BASE, "") if r.url.startswith(BASE) else r.url
+        except Exception:
+            continue
+    return ""
+
+
+def stub_card_from_catalog(
+    s: cffi_requests.Session,
+    catalog: dict | None,
+    code: str,
+    sibling_url: str = "",
+    title_fallback: str = "",
+) -> dict:
+    """Minimal productgrid-shaped card so enrich() can proceed for modern-only SKUs."""
+    en = pick_translation(catalog or {}, "en_GB") or pick_translation(catalog or {}, "en") or {}
+    name = en.get("name") or title_fallback or code
+    variant = en.get("variationDescription") or ""
+    gbp = gbp_from_catalog(catalog or {})
+    price_label = None
+    if gbp is not None:
+        price_label = f"£ {int(gbp)}" if float(gbp).is_integer() else f"£ {gbp}"
+    link = resolve_pdp_link(s, code, name, sibling_url=sibling_url)
+    return {
+        "productCode": code,
+        "productName": name,
+        "variant": variant,
+        "price": price_label,
+        "rawPrice": gbp,
+        "productLink": link,
+        "showOutOfStockLabel": False,
+        "inStockEntry": True,
+        "label": None,
+        "isDiyProduct": False,
+    }
+
+
 def main() -> None:
     OUT_RAW.parent.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)
@@ -393,6 +503,41 @@ def main() -> None:
                 prev = cards[code]
                 if len(collect_grid_images(it)) > len(collect_grid_images(prev)):
                     cards[code] = {**prev, **it}
+
+    # Supplement scarves/silks from modern Next.js PLP (productgrid under-counts).
+    scarves_id = "gc-women-scarves-silks"
+    scarves_path = (
+        "/uk/en_gb/ca/women/accessories-for-women/"
+        "silks-and-scarves-for-women-c-women-accessories-silks-and-scarves"
+    )
+    modern_codes = fetch_modern_plp_style_codes(s, scarves_path)
+    if modern_codes:
+        missing_modern = [c for c in modern_codes if c not in cards]
+        print(
+            f"Modern scarves PLP: {len(modern_codes)} "
+            f"(+{len(missing_modern)} missing from productgrid)",
+            flush=True,
+        )
+        sibling_url = ""
+        for c, it in cards.items():
+            if scarves_id in (membership.get(c) or set()) and it.get("productLink"):
+                sibling_url = it["productLink"]
+                if not sibling_url.startswith("http"):
+                    sibling_url = abs_url(
+                        sibling_url
+                        if sibling_url.startswith("/uk/")
+                        else f"/uk/en_gb{sibling_url}"
+                    )
+                break
+        for code in missing_modern:
+            catalog = fetch_catalog(s, code)
+            cards[code] = stub_card_from_catalog(
+                s, catalog, code, sibling_url=sibling_url
+            )
+            membership.setdefault(code, set()).update(expand_membership({scarves_id}))
+        if scarves_id in plp_meta:
+            plp_meta[scarves_id]["count"] = len(modern_codes)
+            plp_meta[scarves_id]["modernPlpCount"] = len(modern_codes)
 
     codes = sorted(cards.keys())
     print(f"Unique colourways: {len(codes)}", flush=True)

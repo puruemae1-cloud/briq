@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-08T18:42:53.563976+00:00",
+  "scrapedAt": "2026-08-08T19:23:40.651375+00:00",
   "source": "https://www.gucci.com/uk/en_gb/ca/women/accessories-for-women-c-women-accessories",
   "collections": {
     "gc-women-belts": {
@@ -10,7 +10,7 @@
     "gc-women-scarves-silks": {
       "label": "Scarves & Silks",
       "categoryCode": "women-accessories-silks-and-scarves",
-      "count": 205
+      "count": 209
     },
     "gc-women-hats-gloves": {
       "label": "Hats & Gloves",
@@ -38,7 +38,7 @@
       "count": 6
     }
   },
-  "count": 530,
+  "count": 534,
   "failedCategoryCodes": [],
   "products": [
     {
@@ -32826,6 +32826,108 @@
       "localHover": "/products/gc-pdp/8652573G0012164/2.jpg"
     },
     {
+      "id": "8652573G0019865",
+      "productCode": "8652573G0019865",
+      "title": "Printed silk twill carré",
+      "variant": "camel and brown",
+      "url": "https://www.gucci.com/uk/en_gb/pr/women/accessories-for-women/silks-and-scarves-for-women/square-shaped-scarves-for-women/printed-silk-twill-carre-p-8652573G0019865",
+      "gbpPrice": 225.0,
+      "priceLabel": "£ 225",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764784863/865257_3G001_9865_001_080_0000_Light-printed-silk-twill-carre.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764784863/865257_3G001_9865_001_080_0000_Light-printed-silk-twill-carre.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764785724/865257_3G001_9865_002_080_0000_Light-printed-silk-twill-carre.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1766475904/865257_3G001_9865_003_100_0000_Light-printed-silk-twill-carre.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764785724/865257_3G001_9865_002_080_0000_Light.jpg",
+      "collections": [
+        "gc-women-fashion-accessories",
+        "gc-women-scarves-silks",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814179799"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Printed silk twill carré",
+        "detailParts": [
+          "Camel and brown silk twill",
+          "Allover GG print",
+          "W55cm x L55cm",
+          "Made in Italy",
+          "The dimensions of this item may vary slightly as the hem is hand-sewn",
+          "Main fabric: silk 100%"
+        ],
+        "editorialDescription": "Introducing Spring Summer 2026. Silk and soft accessories designs continue to reinterpret emblematic codes through a creative lens in the La Famiglia collection. Crafted from a silk twill, this carré reveals an allover GG print.",
+        "materialCare": "Gucci products are made with carefully selected materials. Please handle with care for longer product life.",
+        "colors": [
+          {
+            "hex": "#dacaab",
+            "name": "Beige"
+          },
+          {
+            "hex": "#8D4F10",
+            "name": "Brown"
+          }
+        ],
+        "materials": [
+          "Silk"
+        ],
+        "variationDescription": "camel and brown"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "프린트 실크 트윌 까레",
+        "detailParts": [
+          "제조자: 구찌",
+          "제조국: 이태리",
+          "수입자: 구찌코리아",
+          "카멜/브라운 실크 트윌",
+          "올오버 GG 프린트",
+          "품질보증기준: A/S 보증기간 2년(상품 이상 시 무상수선, 고객의 부주의로 판단되는 경우 유상수선)",
+          "AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com",
+          "가로 55cm x 세로 55cm",
+          "제조국: 이태리",
+          "이 제품의 치수는 밑단이 손바느질로 되어 있어 약간 다를 수 있습니다",
+          "주요 소재: 실크 100%"
+        ],
+        "editorialDescription": "2026 봄/여름 컬렉션을 소개합니다. 실크와 부드러운 액세서리 디자인은 라 파밀리아 컬렉션에서 창의적인 렌즈를 통해 상징적인 코드를 계속해서 재해석합니다. 실크 트윌로 제작된 이 까레는 올오버 GG 프린트를 선보입니다.",
+        "materialCare": "구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.    \n;   ;",
+        "colors": [
+          {
+            "hex": "#dacaab",
+            "name": "베이지"
+          },
+          {
+            "hex": "#8D4F10",
+            "name": "브라운"
+          }
+        ],
+        "materials": [
+          "실크"
+        ],
+        "variationDescription": "카멜/브라운"
+      },
+      "kind": "fashion-accessories",
+      "scrapedAt": "2026-08-08T19:23:20.507917+00:00",
+      "localImages": [
+        "/products/gc-pdp/8652573G0019865/1.jpg",
+        "/products/gc-pdp/8652573G0019865/2.jpg",
+        "/products/gc-pdp/8652573G0019865/3.jpg"
+      ],
+      "localImage": "/products/gc-pdp/8652573G0019865/1.jpg",
+      "localHover": "/products/gc-pdp/8652573G0019865/2.jpg"
+    },
+    {
       "id": "8652573G0019965",
       "productCode": "8652573G0019965",
       "title": "Printed silk twill carré",
@@ -33292,6 +33394,107 @@
       ],
       "localImage": "/products/gc-pdp/8653073GAQS5872/1.jpg",
       "localHover": "/products/gc-pdp/8653073GAQS5872/2.jpg"
+    },
+    {
+      "id": "8653073GAQS9965",
+      "productCode": "8653073GAQS9965",
+      "title": "Printed silk chiffon ribbon",
+      "variant": "brown and light brown",
+      "url": "https://www.gucci.com/uk/en_gb/pr/women/accessories-for-women/silks-and-scarves-for-women/neck-bows-for-women/printed-silk-chiffon-ribbon-p-8653073GAQS9965",
+      "gbpPrice": 205.0,
+      "priceLabel": "£ 205",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1765324834/865307_3GAQS_9965_001_100_0000_Light-printed-silk-chiffon-ribbon.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1765324834/865307_3GAQS_9965_001_100_0000_Light-printed-silk-chiffon-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1765324834/865307_3GAQS_9965_002_100_0000_Light-printed-silk-chiffon-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1766475905/865307_3GAQS_9965_003_100_0000_Light-printed-silk-chiffon-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1766475905/865307_3GAQS_9965_004_100_0000_Light-printed-silk-chiffon-ribbon.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1766475905/865307_3GAQS_9965_004_100_0000_Light.jpg",
+      "collections": [
+        "gc-women-fashion-accessories",
+        "gc-women-scarves-silks",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814179806"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Printed silk chiffon ribbon",
+        "detailParts": [
+          "Brown and light brown silk chiffon",
+          "Allover GG print",
+          "W6.2cm x L140cm",
+          "Made in Italy",
+          "Main fabric: silk 100%"
+        ],
+        "editorialDescription": "Introducing Spring Summer 2026. Silk and soft accessories designs continue to reinterpret emblematic codes through a creative lens in the La Famiglia collection. Crafted in silk chiffon, this ribbon reveals an allover GG print.",
+        "materialCare": "Gucci products are made with carefully selected materials. Please handle with care for longer product life.    |Dry clean only|If needed, iron on low temperature to remove any wrinkles or creases",
+        "colors": [
+          {
+            "hex": "#dacaab",
+            "name": "Beige"
+          },
+          {
+            "hex": "#8D4F10",
+            "name": "Brown"
+          }
+        ],
+        "materials": [
+          "Fabric"
+        ],
+        "variationDescription": "brown and light brown"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "프린트 실크 쉬폰 리본",
+        "detailParts": [
+          "제조자: 구찌",
+          "제조국: 이태리",
+          "수입자: 구찌코리아",
+          "브라운/라이트 브라운 실크 쉬폰",
+          "올오버 GG 프린트",
+          "품질보증기준: A/S 보증기간 2년(상품 이상 시 무상수선, 고객의 부주의로 판단되는 경우 유상수선)",
+          "가로 6.2cm x 길이 140cm",
+          "Made in Italy",
+          "주요 소재: 실크 100%"
+        ],
+        "editorialDescription": "2026 봄-여름 컬렉션을 소개합니다. 라 파밀리아 컬렉션에서 실크와 부드러운 패션소품 디자인은 창의적인 렌즈를 통해 상징적인 코드를 계속해서 재해석합니다. 실크 시폰으로 제작된 이 리본은 올오버 GG 프린트를 선보입니다.",
+        "materialCare": "구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.       |반드시 드라이클리닝 하십시오.|주름을 펴야 하는 경우, 낮은 온도로 설정하여 다림질하십시오.",
+        "colors": [
+          {
+            "hex": "#dacaab",
+            "name": "베이지"
+          },
+          {
+            "hex": "#8D4F10",
+            "name": "브라운"
+          }
+        ],
+        "materials": [
+          "패브릭"
+        ],
+        "variationDescription": "브라운/라이트 브라운"
+      },
+      "kind": "fashion-accessories",
+      "scrapedAt": "2026-08-08T19:23:24.042494+00:00",
+      "localImages": [
+        "/products/gc-pdp/8653073GAQS9965/1.jpg",
+        "/products/gc-pdp/8653073GAQS9965/2.jpg",
+        "/products/gc-pdp/8653073GAQS9965/3.jpg",
+        "/products/gc-pdp/8653073GAQS9965/4.jpg"
+      ],
+      "localImage": "/products/gc-pdp/8653073GAQS9965/1.jpg",
+      "localHover": "/products/gc-pdp/8653073GAQS9965/4.jpg"
     },
     {
       "id": "8653083G0012164",
@@ -39337,6 +39540,103 @@
       "localHover": "/products/gc-pdp/8747763G0019965/2.jpg"
     },
     {
+      "id": "8747793G0014969",
+      "productCode": "8747793G0014969",
+      "title": "Printed GG silk twill carré",
+      "variant": "multicolor",
+      "url": "https://www.gucci.com/uk/en_gb/pr/women/accessories-for-women/silks-and-scarves-for-women/square-shaped-scarves-for-women/printed-gg-silk-twill-carre-p-8747793G0014969",
+      "gbpPrice": 450.0,
+      "priceLabel": "£ 450",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779383716/874779_3G001_4969_015_090_0000_Light-printed-gg-silk-twill-carre.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779383716/874779_3G001_4969_015_090_0000_Light-printed-gg-silk-twill-carre.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779486311/874779_3G001_4969_002_100_0000_Light-printed-gg-silk-twill-carre.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779383716/874779_3G001_4969_006_090_0000_Light-printed-gg-silk-twill-carre.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779383716/874779_3G001_4969_001_090_0000_Light.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779383716/874779_3G001_4969_015_090_0000_Light.jpg",
+      "collections": [
+        "gc-women-fashion-accessories",
+        "gc-women-scarves-silks",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814280587"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Printed GG silk twill carré",
+        "detailParts": [
+          "Multicolor GG silk twill jacquard",
+          "Light blue border",
+          "Allover Gucci Flora print",
+          "W90cm x L90cm",
+          "Made in Italy",
+          "The dimensions of this item may vary slightly as the hem is hand-sewn",
+          "Main fabric: silk 100%"
+        ],
+        "editorialDescription": "Generation Gucci delves into the brand's archival codes, and combines different generations of design into one aesthetic narrative. This carré features an allover Gucci Flora print with a tonal trim.",
+        "materialCare": "Gucci products are made with carefully selected materials. Please handle with care for longer product life.    |Dry clean only|If needed, iron on low temperature to remove any wrinkles or creases",
+        "colors": [
+          {
+            "hex": "#0E4276",
+            "name": "Blue"
+          }
+        ],
+        "materials": [
+          "Silk"
+        ],
+        "variationDescription": "multicolor"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "프린트 GG 실크 트윌 까레",
+        "detailParts": [
+          "제조자: 구찌",
+          "제조국: 이태리",
+          "수입자: 구찌코리아",
+          "멀티컬러 GG 실크 트윌 자카드",
+          "라이트 블루 테두리",
+          "올오버 구찌 플로라 프린트",
+          "품질보증기준: A/S 보증기간 2년(상품 이상 시 무상수선, 고객의 부주의로 판단되는 경우 유상수선)",
+          "AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com",
+          "가로 90cm x 세로 90cm",
+          "이 제품의 치수는 밑단이 손바느질로 되어 있어 약간 다를 수 있습니다",
+          "주요 소재: 실크 100%"
+        ],
+        "editorialDescription": "제너레이션 구찌는 브랜드의 아카이브 코드를 탐구하고 여러 세대의 디자인을 하나의 미적 내러티브로 결합합니다. 이 까레는 전체적인 구찌 플로라 프린트와 톤 트림을 특징으로 합니다.",
+        "materialCare": "구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.   |반드시 드라이클리닝 하십시오.|주름을 펴야 하는 경우, 낮은 온도로 설정하여 다림질하십시오.",
+        "colors": [
+          {
+            "hex": "#0E4276",
+            "name": "블루"
+          }
+        ],
+        "materials": [
+          "실크"
+        ],
+        "variationDescription": "멀티컬러"
+      },
+      "kind": "fashion-accessories",
+      "scrapedAt": "2026-08-08T19:23:28.133130+00:00",
+      "localImages": [
+        "/products/gc-pdp/8747793G0014969/1.jpg",
+        "/products/gc-pdp/8747793G0014969/2.jpg",
+        "/products/gc-pdp/8747793G0014969/3.jpg",
+        "/products/gc-pdp/8747793G0014969/4.jpg"
+      ],
+      "localImage": "/products/gc-pdp/8747793G0014969/1.jpg",
+      "localHover": "/products/gc-pdp/8747793G0014969/1.jpg"
+    },
+    {
       "id": "8747793G0015872",
       "productCode": "8747793G0015872",
       "title": "Printed GG silk twill carré",
@@ -39432,6 +39732,103 @@
       ],
       "localImage": "/products/gc-pdp/8747793G0015872/1.jpg",
       "localHover": "/products/gc-pdp/8747793G0015872/2.jpg"
+    },
+    {
+      "id": "8747803G0014969",
+      "productCode": "8747803G0014969",
+      "title": "Printed silk ribbon",
+      "variant": "multicolor",
+      "url": "https://www.gucci.com/uk/en_gb/pr/women/accessories-for-women/silks-and-scarves-for-women/neck-bows-for-women/printed-silk-ribbon-p-8747803G0014969",
+      "gbpPrice": 190.0,
+      "priceLabel": "£ 190",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779207327/874780_3G001_4969_015_100_0000_Light-printed-silk-ribbon.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779207327/874780_3G001_4969_015_100_0000_Light-printed-silk-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779486312/874780_3G001_4969_002_100_0000_Light-printed-silk-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779486312/874780_3G001_4969_003_100_0000_Light-printed-silk-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779207327/874780_3G001_4969_006_100_0000_Light-printed-silk-ribbon.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779207326/874780_3G001_4969_001_100_0000_Light.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779486312/874780_3G001_4969_002_100_0000_Light.jpg",
+      "collections": [
+        "gc-women-fashion-accessories",
+        "gc-women-scarves-silks",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814280591"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Printed silk ribbon",
+        "detailParts": [
+          "Multicolor GG silk twill jacquard",
+          "Light blue border",
+          "Allover Gucci Flora print",
+          "W5.2cm x L120cm",
+          "Made in Italy",
+          "Main fabric: silk 100%"
+        ],
+        "editorialDescription": "Generation Gucci delves into the brand's archival codes, and combines different generations of design into one aesthetic narrative. This ribbon features an allover Gucci Flora print with a tonal trim.",
+        "materialCare": "Gucci products are made with carefully selected materials. Please handle with care for longer product life.    |Dry clean only|If needed, iron on low temperature to remove any wrinkles or creases",
+        "colors": [
+          {
+            "hex": "#0E4276",
+            "name": "Blue"
+          }
+        ],
+        "materials": [
+          "Silk"
+        ],
+        "variationDescription": "multicolor"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "프린트 실크 리본",
+        "detailParts": [
+          "제조자: 구찌",
+          "제조국: 이태리",
+          "수입자: 구찌코리아",
+          "멀티컬러 GG 실크 트윌 자카드",
+          "라이트 블루 테두리",
+          "올오버 구찌 플로라 프린트",
+          "품질보증기준: A/S 보증기간 2년(상품 이상 시 무상수선, 고객의 부주의로 판단되는 경우 유상수선)",
+          "AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com",
+          "가로 5.2cm x 길이 120cm",
+          "주요 소재: 실크 100%"
+        ],
+        "editorialDescription": "제너레이션 구찌는 브랜드의 아카이브 코드를 탐구하고 여러 세대의 디자인을 하나의 미적 내러티브로 결합합니다. 이 리본은 구찌 플로라 프린트를 전면에 활용하고 동일한 색조의 트림을 더했습니다.",
+        "materialCare": "구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.       |반드시 드라이클리닝 하십시오.|주름을 펴야 하는 경우, 낮은 온도로 설정하여 다림질하십시오.",
+        "colors": [
+          {
+            "hex": "#0E4276",
+            "name": "블루"
+          }
+        ],
+        "materials": [
+          "실크"
+        ],
+        "variationDescription": "멀티컬러"
+      },
+      "kind": "fashion-accessories",
+      "scrapedAt": "2026-08-08T19:23:34.350409+00:00",
+      "localImages": [
+        "/products/gc-pdp/8747803G0014969/1.jpg",
+        "/products/gc-pdp/8747803G0014969/2.jpg",
+        "/products/gc-pdp/8747803G0014969/3.jpg",
+        "/products/gc-pdp/8747803G0014969/4.jpg",
+        "/products/gc-pdp/8747803G0014969/5.jpg"
+      ],
+      "localImage": "/products/gc-pdp/8747803G0014969/1.jpg",
+      "localHover": "/products/gc-pdp/8747803G0014969/2.jpg"
     },
     {
       "id": "8747803G0015872",
