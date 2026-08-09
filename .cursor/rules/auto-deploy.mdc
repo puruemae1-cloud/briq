@@ -9,6 +9,23 @@ When finishing catalog, product, image, category, or site content work that shou
 
 1. **Commit** the relevant code/data changes (follow the repo git commit protocol; no secrets).
 2. **Push** to the tracked remote branch (`main` unless on a feature branch with an open PR flow).
-3. **Product images**: if any PDP assets under gitignored `public/products/*-pdp/` changed, run `python3 scripts/push-product-images-tag.py` with the appropriate `--dirs` (e.g. `gc-pdp`, `bb-pdp`) so the `product-images` tag publishes.
+3. **Product images (mandatory when PDP folders changed or new SKUs added)**  
+   Production serves photos from the git tag `product-images` via  
+   `raw.githubusercontent.com/.../product-images/public/products/...`  
+   (see `next.config.ts`). Local `public/products/*-pdp/` is **gitignored** —  
+   a `main` push alone does **not** publish images.
+   - After any scrape/import that writes `public/products/<brand>-pdp/` (e.g. `gc-pdp`, `bb-pdp`), **always** run:
+     ```bash
+     python3 scripts/push-product-images-tag.py --dirs <brand>-pdp
+     ```
+   - Then verify (fail the task if this exits non-zero):
+     ```bash
+     python3 scripts/verify-product-images.py --brand <gc|bb> --remote
+     ```
+   - Do **not** assume “images already on disk” means they are live. New SKU folders must be on the tag or briq.kr shows broken `<img>`.
 4. Do **not** stop after local edits and ask “커밋/배포할까요?” — the user wants deploy by default.
-5. Still avoid force-push, `--no-verify`, and destructive git unless explicitly requested.
+5. Still avoid force-push to `main`/`master`, `--no-verify`, and destructive git unless explicitly requested. Force-updating the `product-images` **tag** via the push script is expected.
+
+## Known failure mode (do not repeat)
+
+Men’s handbags (2026-08): catalog + local DarkGray files were correct, but seven new SKUs were never pushed to `product-images`, so Vercel rewrites 404’d. Fix was tag push only — prevent by always running push + `--remote` verify after GC/BB image scrapes.
