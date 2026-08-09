@@ -500,6 +500,7 @@ export type SubcategoryId =
   | "gc-men-boots"
   | "gucci-accessories"
   | "gc-accessories-womens"
+  | "gc-accessories-mens"
   | "gc-women-wallets"
   | "gc-women-long-wallets"
   | "gc-women-chain-wallets"
@@ -508,6 +509,12 @@ export type SubcategoryId =
   | "gc-women-bag-charms-keychains"
   | "gc-women-pouches"
   | "gc-women-tech-accessories"
+  | "gc-men-wallets"
+  | "gc-men-wallets-wallets"
+  | "gc-men-wallets-small-bags-pouches"
+  | "gc-men-card-coin-cases"
+  | "gc-men-keyrings-keycases"
+  | "gc-men-tech-accessories"
   | "gc-women-fashion-accessories"
   | "gc-women-belts"
   | "gc-women-scarves-silks"
@@ -624,6 +631,15 @@ export const GC_WOMEN_WALLET_LEAF_IDS: SubcategoryId[] = [
   "gc-women-bag-charms-keychains",
   "gc-women-pouches",
   "gc-women-tech-accessories",
+];
+
+/** Gucci men's wallets & small accessories leaves (official UK PLPs). */
+export const GC_MEN_WALLET_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-wallets-wallets",
+  "gc-men-wallets-small-bags-pouches",
+  "gc-men-card-coin-cases",
+  "gc-men-keyrings-keycases",
+  "gc-men-tech-accessories",
 ];
 
 /** Gucci women's fashion accessories leaves (official UK soft-accessory PLPs).
@@ -1465,6 +1481,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-women-travel",
     ...GC_WOMEN_TRAVEL_LEAF_IDS,
+    "gc-accessories-mens",
+    "gc-men-wallets",
+    ...GC_MEN_WALLET_LEAF_IDS,
     "gc-jewellery-watches",
     "gc-gold-jewellery",
     ...GC_GOLD_JEWELLERY_LEAF_IDS,
@@ -1500,6 +1519,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-watches",
     ...GC_WATCHES_LEAF_IDS,
   ],
+  "gc-accessories-mens": [
+    "gc-accessories-mens",
+    "gc-men-wallets",
+    ...GC_MEN_WALLET_LEAF_IDS,
+  ],
   "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
   "gc-women-long-wallets": ["gc-women-long-wallets"],
   "gc-women-chain-wallets": ["gc-women-chain-wallets"],
@@ -1508,6 +1532,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-bag-charms-keychains": ["gc-women-bag-charms-keychains"],
   "gc-women-pouches": ["gc-women-pouches"],
   "gc-women-tech-accessories": ["gc-women-tech-accessories"],
+  "gc-men-wallets": ["gc-men-wallets", ...GC_MEN_WALLET_LEAF_IDS],
+  "gc-men-wallets-wallets": ["gc-men-wallets-wallets"],
+  "gc-men-wallets-small-bags-pouches": ["gc-men-wallets-small-bags-pouches"],
+  "gc-men-card-coin-cases": ["gc-men-card-coin-cases"],
+  "gc-men-keyrings-keycases": ["gc-men-keyrings-keycases"],
+  "gc-men-tech-accessories": ["gc-men-tech-accessories"],
   "gc-women-fashion-accessories": [
     "gc-women-fashion-accessories",
     ...GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS,
@@ -3509,6 +3539,47 @@ export const navCategories: NavCategory[] = [
                         href: "/shop?category=accessories&sub=gc-watches-men",
                       },
                     ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: "gc-accessories-mens",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=gc-accessories-mens",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-men-wallets",
+                labelKo: "지갑 & 악세서리",
+                href: "/shop?category=accessories&sub=gc-men-wallets",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "gc-men-wallets-wallets",
+                    labelKo: "지갑",
+                    href: "/shop?category=accessories&sub=gc-men-wallets-wallets",
+                  },
+                  {
+                    id: "gc-men-wallets-small-bags-pouches",
+                    labelKo: "스몰백 & 파우치",
+                    href: "/shop?category=accessories&sub=gc-men-wallets-small-bags-pouches",
+                  },
+                  {
+                    id: "gc-men-card-coin-cases",
+                    labelKo: "카드홀더 & 코인케이스",
+                    href: "/shop?category=accessories&sub=gc-men-card-coin-cases",
+                  },
+                  {
+                    id: "gc-men-keyrings-keycases",
+                    labelKo: "키링 & 키케이스",
+                    href: "/shop?category=accessories&sub=gc-men-keyrings-keycases",
+                  },
+                  {
+                    id: "gc-men-tech-accessories",
+                    labelKo: "테크 액세서리",
+                    href: "/shop?category=accessories&sub=gc-men-tech-accessories",
                   },
                 ],
               },
