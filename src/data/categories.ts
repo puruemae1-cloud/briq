@@ -2388,42 +2388,42 @@ export const navCategories: NavCategory[] = [
             children: [
               {
                 id: "gc-women-shoulder-bags",
-                labelKo: "Shoulder Bags",
+                labelKo: "숄더백",
                 href: "/shop?category=bags&sub=gc-women-shoulder-bags",
               },
               {
                 id: "gc-women-mini-bags",
-                labelKo: "Mini Bags",
+                labelKo: "미니백",
                 href: "/shop?category=bags&sub=gc-women-mini-bags",
               },
               {
                 id: "gc-women-crossbody-bags",
-                labelKo: "Crossbody Bags",
+                labelKo: "크로스바디백",
                 href: "/shop?category=bags&sub=gc-women-crossbody-bags",
               },
               {
                 id: "gc-women-tote-bags",
-                labelKo: "Tote Bags",
+                labelKo: "토트백",
                 href: "/shop?category=bags&sub=gc-women-tote-bags",
               },
               {
                 id: "gc-women-top-handle-bags",
-                labelKo: "Top Handle Bags",
+                labelKo: "탑 핸들백",
                 href: "/shop?category=bags&sub=gc-women-top-handle-bags",
               },
               {
                 id: "gc-women-backpacks-beltbags",
-                labelKo: "Backpacks & Beltbags",
+                labelKo: "백팩 & 벨트백",
                 href: "/shop?category=bags&sub=gc-women-backpacks-beltbags",
               },
               {
                 id: "gc-women-clutches-evening",
-                labelKo: "Clutches & Evening Bags",
+                labelKo: "클러치 & 이브닝백",
                 href: "/shop?category=bags&sub=gc-women-clutches-evening",
               },
               {
                 id: "gc-women-personalised",
-                labelKo: "Personalised Handbags",
+                labelKo: "퍼스널라이즈드 핸드백",
                 href: "/shop?category=bags&sub=gc-women-personalised",
               },
             ],
