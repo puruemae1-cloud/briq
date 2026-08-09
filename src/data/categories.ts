@@ -490,6 +490,14 @@ export type SubcategoryId =
   | "gc-women-pumps"
   | "gc-women-ballet-flats"
   | "gc-women-boots"
+  | "gc-shoes-mens"
+  | "gc-men-shoes"
+  | "gc-men-sneakers"
+  | "gc-men-loafers-moccasins"
+  | "gc-men-slides-sandals"
+  | "gc-men-driving"
+  | "gc-men-lace-ups"
+  | "gc-men-boots"
   | "gucci-accessories"
   | "gc-accessories-womens"
   | "gc-women-wallets"
@@ -595,6 +603,16 @@ export const GC_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
   "gc-women-pumps",
   "gc-women-ballet-flats",
   "gc-women-boots",
+];
+
+/** Gucci men's shoes leaves (official UK men shoes PLPs). */
+export const GC_MEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-sneakers",
+  "gc-men-loafers-moccasins",
+  "gc-men-slides-sandals",
+  "gc-men-driving",
+  "gc-men-lace-ups",
+  "gc-men-boots",
 ];
 
 /** Gucci women's wallets & small accessories leaves (official UK PLPs). */
@@ -1411,7 +1429,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-backpacks-beltbags": ["gc-women-backpacks-beltbags"],
   "gc-women-clutches-evening": ["gc-women-clutches-evening"],
   "gc-women-personalised": ["gc-women-personalised"],
-  "gucci-shoes": ["gucci-shoes", "gc-shoes-womens", "gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
+  "gucci-shoes": [
+    "gucci-shoes",
+    "gc-shoes-womens",
+    "gc-women-shoes",
+    ...GC_WOMEN_SHOE_LEAF_IDS,
+    "gc-shoes-mens",
+    "gc-men-shoes",
+    ...GC_MEN_SHOE_LEAF_IDS,
+  ],
   "gc-shoes-womens": ["gc-shoes-womens", "gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
   "gc-women-shoes": ["gc-women-shoes", ...GC_WOMEN_SHOE_LEAF_IDS],
   "gc-women-sneakers": ["gc-women-sneakers"],
@@ -1422,6 +1448,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-pumps": ["gc-women-pumps"],
   "gc-women-ballet-flats": ["gc-women-ballet-flats"],
   "gc-women-boots": ["gc-women-boots"],
+  "gc-shoes-mens": ["gc-shoes-mens", "gc-men-shoes", ...GC_MEN_SHOE_LEAF_IDS],
+  "gc-men-shoes": ["gc-men-shoes", ...GC_MEN_SHOE_LEAF_IDS],
+  "gc-men-sneakers": ["gc-men-sneakers"],
+  "gc-men-loafers-moccasins": ["gc-men-loafers-moccasins"],
+  "gc-men-slides-sandals": ["gc-men-slides-sandals"],
+  "gc-men-driving": ["gc-men-driving"],
+  "gc-men-lace-ups": ["gc-men-lace-ups"],
+  "gc-men-boots": ["gc-men-boots"],
   "gucci-accessories": [
     "gucci-accessories",
     "gc-accessories-womens",
@@ -2898,6 +2932,44 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-boots",
                 labelKo: "부츠 & 앵클부츠",
                 href: "/shop?category=shoes&sub=gc-women-boots",
+              },
+            ],
+          },
+          {
+            id: "gc-shoes-mens",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=gc-shoes-mens",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-men-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=gc-men-sneakers",
+              },
+              {
+                id: "gc-men-loafers-moccasins",
+                labelKo: "로퍼 & 모카신",
+                href: "/shop?category=shoes&sub=gc-men-loafers-moccasins",
+              },
+              {
+                id: "gc-men-slides-sandals",
+                labelKo: "슬라이드 & 샌들",
+                href: "/shop?category=shoes&sub=gc-men-slides-sandals",
+              },
+              {
+                id: "gc-men-driving",
+                labelKo: "드라이빙 슈즈",
+                href: "/shop?category=shoes&sub=gc-men-driving",
+              },
+              {
+                id: "gc-men-lace-ups",
+                labelKo: "레이스업 슈즈",
+                href: "/shop?category=shoes&sub=gc-men-lace-ups",
+              },
+              {
+                id: "gc-men-boots",
+                labelKo: "부츠 & 앵클부츠",
+                href: "/shop?category=shoes&sub=gc-men-boots",
               },
             ],
           },
