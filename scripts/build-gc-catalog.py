@@ -1897,14 +1897,15 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
 
 
 def dedupe_style_color_name(products: list[dict]) -> list[dict]:
-    """Drop near-duplicate colourways that share style + colour code + name.
+    """Drop near-duplicate colourways that share style + colour + name + variant.
 
-    Gucci keys by full productCode (style+material+colour). Some materials are
-    distinct PDPs for the same black cardigan / Jackie bag — keep the richer
-    gallery and drop the rest so PLP/PDP don't show clones.
+    Gucci keys by full productCode (style+material+colour). True clones reuse the
+    same variation copy at the same price with different material codes — keep the
+    richer gallery. Distinct materials (e.g. leather vs GG canvas, or hand-treated
+    vs plain leather) must remain separate PDPs even when the 4-digit colour matches.
     """
     pat = re.compile(r"^(\d{6})([A-Z0-9]{5})(\d{4})$", re.I)
-    buckets: dict[tuple[str, str, str], list[dict]] = {}
+    buckets: dict[tuple[str, str, str, str], list[dict]] = {}
     passthrough: list[dict] = []
     for p in products:
         sku = str(p.get("sku") or "").upper()
@@ -1914,7 +1915,21 @@ def dedupe_style_color_name(products: list[dict]) -> list[dict]:
             continue
         style, _mat, color = m.groups()
         name = str(p.get("name") or "").strip().lower()
-        buckets.setdefault((style, color.upper(), name), []).append(p)
+        variant = ""
+        for v in p.get("variants") or []:
+            # "Name — black leather" → variation side
+            vn = str(v.get("name") or "")
+            if " — " in vn:
+                variant = vn.split(" — ", 1)[-1].strip().lower()
+                break
+            if " - " in vn:
+                variant = vn.split(" - ", 1)[-1].strip().lower()
+                break
+        if not variant:
+            accent = p.get("accent") or {}
+            if isinstance(accent, dict):
+                variant = str(accent.get("labelEn") or accent.get("label") or "").strip().lower()
+        buckets.setdefault((style, color.upper(), name, variant), []).append(p)
 
     kept: list[dict] = list(passthrough)
     dropped = 0
@@ -2092,10 +2107,8 @@ def load_rows() -> tuple[
                     mens_bag_stats["tagged_existing"] += 1
                 mens_bag_stats["skipped_existing_id"] += 1
                 continue
-            sc = style_color_key(sku)
-            if sc and sc in existing_style_colors:
-                mens_bag_stats["skipped_style_color"] += 1
-                continue
+            # Do not skip on style+colour alone — leather vs canvas (etc.) share
+            # the 4-digit colour code but are distinct PDPs on gucci.com.
             mens_bag_stats["kept"] += 1
             remember(sku)
             rows.append(row)

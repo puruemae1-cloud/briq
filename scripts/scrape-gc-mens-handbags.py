@@ -294,6 +294,189 @@ def expand_membership(cols: set[str]) -> set[str]:
     return out
 
 
+def fetch_modern_plp_style_codes(
+    s: cffi_requests.Session, category_path: str, max_page: int = 10
+) -> list[str]:
+    """Collect styleCodes from the Next.js PLP RSC payload.
+
+    Legacy /c/productgrid can under-count vs the live PLP (men's bags 133 vs 140).
+    Pages are not strictly cumulative — a flat page may precede a fuller one —
+    so scan until two consecutive pages add nothing.
+    """
+    seen: dict[str, None] = {}
+    stagnant = 0
+    for page in range(0, max_page + 1):
+        url = f"{BASE}{category_path}" + (f"?page={page}" if page else "")
+        try:
+            r = s.get(
+                url,
+                headers={
+                    **headers_html(),
+                    "Accept": "text/x-component",
+                    "RSC": "1",
+                },
+                impersonate="chrome124",
+                timeout=90,
+            )
+            if r.status_code != 200:
+                stagnant += 1
+                if stagnant >= 2 and page > 0:
+                    break
+                continue
+            text = r.text
+        except Exception as e:
+            print(f"  modern PLP page={page} fail: {e}", flush=True)
+            stagnant += 1
+            if stagnant >= 2 and page > 0:
+                break
+            continue
+
+        before = len(seen)
+        for pat in (
+            r'styleCode":"([0-9A-Za-z]+)"',
+            r'styleCode\\":\\"([0-9A-Za-z]+)\\"',
+            r"-p-([0-9A-Za-z]{10,20})",
+        ):
+            for m in re.finditer(pat, text):
+                code = m.group(1)
+                if "99999" in code or len(code) < 10:
+                    continue
+                seen.setdefault(code, None)
+        added = len(seen) - before
+        print(
+            f"  modern PLP page={page} +{added} (total {len(seen)})",
+            flush=True,
+        )
+        if page > 0 and added == 0:
+            stagnant += 1
+            if stagnant >= 2:
+                break
+        else:
+            stagnant = 0
+    return list(seen.keys())
+
+
+def leaf_from_pdp_url(url: str) -> str | None:
+    """Map a mens-bag PDP URL path segment to a Briq leaf collection id."""
+    u = (url or "").lower()
+    if "messenger" in u or "crossbody" in u:
+        return "gc-men-crossbody-messengers"
+    if "backpack" in u:
+        return "gc-men-backpacks"
+    if "tote" in u:
+        return "gc-men-tote-bags"
+    if "belt" in u or "sling" in u:
+        return "gc-men-belt-slingbags"
+    if "duffle" in u or "suitcase" in u:
+        return "gc-men-duffle-bags"
+    if "small-bag" in u or "pouch" in u:
+        return "gc-men-small-bags-pouches"
+    return None
+
+
+def resolve_pdp_link(
+    s: cffi_requests.Session, code: str, title: str, sibling_url: str = ""
+) -> str:
+    """Best-effort PDP path for SKUs absent from the legacy productgrid."""
+    guesses: list[str] = []
+    if sibling_url:
+        guesses.append(re.sub(r"-p-[0-9A-Za-z]+$", f"-p-{code}", sibling_url))
+    slug = re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-") or "product"
+    for folder in (
+        "small-bags-pouches-for-men/pouches-for-men",
+        "messenger-crossbody-bags-for-men",
+        "small-bags-pouches-for-men",
+        "backpacks-for-men",
+        "tote-bags-for-men",
+        "totes-for-men",
+        "belt-bags-and-slingbags-for-men",
+        "belt-bags-for-men",
+        "duffle-bags-for-men",
+    ):
+        guesses.append(
+            f"/uk/en_gb/pr/men/bags-for-men/{folder}/{slug}-p-{code}"
+        )
+    for path in guesses:
+        url = path if path.startswith("http") else BASE + path
+        try:
+            r = s.get(
+                url,
+                headers=headers_html(),
+                impersonate="chrome124",
+                timeout=60,
+                allow_redirects=True,
+            )
+            if r.status_code == 200 and code in r.url:
+                return r.url.replace(BASE, "") if r.url.startswith(BASE) else r.url
+        except Exception:
+            continue
+    return ""
+
+
+def stub_card_from_catalog(
+    s: cffi_requests.Session,
+    catalog: dict | None,
+    code: str,
+    sibling_url: str = "",
+    title_fallback: str = "",
+) -> dict:
+    """Minimal productgrid-shaped card so enrich() can proceed for modern-only SKUs."""
+    en = pick_translation(catalog or {}, "en_GB") or pick_translation(catalog or {}, "en") or {}
+    name = en.get("name") or title_fallback or code
+    variant = en.get("variationDescription") or ""
+    gbp = gbp_from_catalog(catalog or {})
+    price_label = None
+    if gbp is not None:
+        price_label = f"£ {int(gbp)}" if float(gbp).is_integer() else f"£ {gbp}"
+    link = resolve_pdp_link(s, code, name, sibling_url=sibling_url)
+    return {
+        "productCode": code,
+        "productName": name,
+        "variant": variant,
+        "price": price_label,
+        "rawPrice": gbp,
+        "productLink": link,
+        "showOutOfStockLabel": False,
+        "inStockEntry": True,
+        "label": None,
+        "isDiyProduct": False,
+    }
+
+
+# Official modern PLP paths (hub + 6 leaves)
+MODERN_PLP_PATHS: list[tuple[str, str]] = [
+    (PARENT_COLL, "/uk/en_gb/ca/men/bags-for-men-c-men-bags"),
+    (
+        "gc-men-crossbody-messengers",
+        "/uk/en_gb/ca/men/bags-for-men/"
+        "messenger-bags-for-men-c-men-bags-messenger-bags",
+    ),
+    (
+        "gc-men-backpacks",
+        "/uk/en_gb/ca/men/bags-for-men/backpacks-for-men-c-men-bags-backpacks",
+    ),
+    (
+        "gc-men-tote-bags",
+        "/uk/en_gb/ca/men/bags-for-men/tote-bags-for-men-c-men-bags-totes",
+    ),
+    (
+        "gc-men-small-bags-pouches",
+        "/uk/en_gb/ca/men/bags-for-men/"
+        "small-bags-and-pouches-for-men-c-men-bags-small",
+    ),
+    (
+        "gc-men-belt-slingbags",
+        "/uk/en_gb/ca/men/bags-for-men/"
+        "belt-bags-and-slingbags-for-men-c-men-bags-belt",
+    ),
+    (
+        "gc-men-duffle-bags",
+        "/uk/en_gb/ca/men/bags-for-men/"
+        "duffle-bags-for-men-c-men-bags-suitcases-duffle-bags",
+    ),
+]
+
+
 def main() -> None:
     OUT_RAW.parent.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)
@@ -350,6 +533,55 @@ def main() -> None:
                 prev = cards[code]
                 if len(collect_grid_images(it)) > len(collect_grid_images(prev)):
                     cards[code] = {**prev, **it}
+
+    # Supplement from modern Next.js PLP (productgrid under-counts, e.g. 133 vs 140).
+    sibling_url = ""
+    for c, it in cards.items():
+        if it.get("productLink"):
+            sibling_url = it["productLink"]
+            if not sibling_url.startswith("http"):
+                sibling_url = abs_url(
+                    sibling_url
+                    if sibling_url.startswith("/uk/")
+                    else f"/uk/en_gb{sibling_url}"
+                )
+            break
+
+    for coll_id, plp_path in MODERN_PLP_PATHS:
+        print(f"=== modern PLP {coll_id}", flush=True)
+        modern_codes = fetch_modern_plp_style_codes(s, plp_path)
+        if not modern_codes:
+            continue
+        missing_modern = [c for c in modern_codes if c not in cards]
+        print(
+            f"  modern {coll_id}: {len(modern_codes)} "
+            f"(+{len(missing_modern)} missing from productgrid)",
+            flush=True,
+        )
+        extra = expand_membership(
+            {coll_id} if coll_id != PARENT_COLL else {PARENT_COLL}
+        )
+        for code in modern_codes:
+            membership.setdefault(code, set()).update(extra)
+        for code in missing_modern:
+            catalog = fetch_catalog(s, code)
+            cards[code] = stub_card_from_catalog(
+                s, catalog, code, sibling_url=sibling_url
+            )
+            # Infer leaf from PDP URL when leaf modern PLPs return empty RSC.
+            leaf = leaf_from_pdp_url(cards[code].get("productLink") or "")
+            if leaf:
+                membership.setdefault(code, set()).update(expand_membership({leaf}))
+        if coll_id in plp_meta:
+            plp_meta[coll_id]["count"] = len(modern_codes)
+            plp_meta[coll_id]["modernPlpCount"] = len(modern_codes)
+        elif coll_id == PARENT_COLL:
+            plp_meta[PARENT_COLL] = {
+                "label": "Bags for Men",
+                "categoryCode": ALL_MENS_BAGS_CODE,
+                "count": len(modern_codes),
+                "modernPlpCount": len(modern_codes),
+            }
 
     codes = sorted(cards.keys())
     print(f"Unique colourways: {len(codes)}", flush=True)
