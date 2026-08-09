@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build Gucci catalogue from scraped raw
-(handbags + men's bags + RTW + shoes + wallets + fashion accessories +
+(handbags + men's bags + women's/men's RTW + shoes + wallets + fashion accessories +
 travel + jewellery + gifts).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
@@ -8,6 +8,8 @@ Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
 
 Gifts: existing productCodes get gift gcCollections merged on; only truly new
 gift SKUs are imported as PDPs (duplicates are never re-imported).
+Men's RTW / men's bags: exact duplicate productCodes tag membership onto the
+existing PDP instead of creating a second one.
 """
 from __future__ import annotations
 
@@ -27,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HANDBAG_RAW = ROOT / "src/data/gc/gc-catalog-raw.json"
 MENS_HANDBAG_RAW = ROOT / "src/data/gc/gc-mens-handbags-catalog-raw.json"
 RTW_RAW = ROOT / "src/data/gc/gc-rtw-catalog-raw.json"
+MENS_RTW_RAW = ROOT / "src/data/gc/gc-mens-rtw-catalog-raw.json"
 SHOES_RAW = ROOT / "src/data/gc/gc-shoes-catalog-raw.json"
 WALLETS_RAW = ROOT / "src/data/gc/gc-wallets-catalog-raw.json"
 FASHION_ACC_RAW = ROOT / "src/data/gc/gc-fashion-accessories-catalog-raw.json"
@@ -79,6 +82,26 @@ RTW_LEAF_COLLECTIONS = [
     "gc-women-leather",
     "gc-women-activewear",
     "gc-women-cocktail-evening",
+]
+
+MEN_RTW_LEAF_COLLECTIONS = [
+    "gc-men-tshirts-polos",
+    "gc-men-tracksuit-sweatshirts",
+    "gc-men-shirts",
+    "gc-men-knitwear",
+    "gc-men-denim",
+    "gc-men-trousers-shorts",
+    "gc-men-swimwear",
+    "gc-men-outerwear",
+    "gc-men-leather",
+    "gc-men-formal-wear",
+    "gc-men-coats-jackets",
+]
+
+MEN_RTW_PARENT_COLLECTIONS = [
+    "gc-men-rtw",
+    "gc-men",
+    "gucci",
 ]
 
 SHOES_LEAF_COLLECTIONS = [
@@ -303,6 +326,106 @@ GC_WOMEN_DENIM_SIZE_CHART = {
     "tabs": [GC_WOMEN_DENIM, GC_WOMEN_RTW_BOTTOMS, GC_WOMEN_RTW_TOPS],
 }
 
+# Official Gucci UK men clothing size chart
+# https://www.gucci.com/uk/en_gb/st/gucci-clothing-size-chart — Men's Size Chart
+GC_MEN_RTW_TOPS = {
+    "id": "tops",
+    "labelKo": "상의",
+    "headers": ["SIZE", "IT", "SHOULDERS (CM/IN)", "CHEST (CM/IN)"],
+    "rows": [
+        ["-", "40", "43 / 17", "82 / 32.3"],
+        ["XXS", "42", "44 / 17.3", "86 / 33.8"],
+        ["XS", "44", "45 / 17.7", "90 / 35.4"],
+        ["S", "46", "46 / 18.1", "94 / 37"],
+        ["M", "48", "47 / 18.5", "98 / 38.6"],
+        ["L", "50", "48 / 18.9", "102 / 40.2"],
+        ["XL", "52", "49 / 19.3", "106 / 41.7"],
+        ["XXL", "54", "50 / 19.7", "110 / 43.3"],
+        ["XXXL", "56", "51 / 20.1", "114 / 44.9"],
+        ["-", "58", "52 / 20.5", "118 / 46.5"],
+        ["-", "60", "53 / 20.9", "122 / 48"],
+    ],
+}
+
+GC_MEN_RTW_BOTTOMS = {
+    "id": "bottoms",
+    "labelKo": "하의",
+    "headers": ["SIZE", "IT", "JEANS", "WAIST (CM/IN)", "HIPS (CM/IN)"],
+    "rows": [
+        ["-", "40", "26-27", "63 / 24.8", "83 / 32.6"],
+        ["XXS", "42", "28-29", "67 / 26.4", "87 / 34.2"],
+        ["XS", "44", "30-31", "71 / 28", "91 / 35.8"],
+        ["S", "46", "32-33", "75 / 29.5", "95 / 37.4"],
+        ["M", "48", "34-35", "79 / 31.1", "99 / 39"],
+        ["L", "50", "36-37", "83 / 32.7", "103 / 40.5"],
+        ["XL", "52", "38-39", "87 / 34.2", "107 / 42.1"],
+        ["XXL", "54", "40-41", "91 / 35.8", "111 / 43.7"],
+        ["XXXL", "56", "42-43", "95 / 37.4", "115 / 45.3"],
+        ["-", "58", "44-45", "99 / 39", "119 / 46.8"],
+        ["-", "60", "46", "103 / 40.5", "123 / 48.4"],
+    ],
+}
+
+# Men jeans waist as sold on gucci.com PDPs — expanded from official JEANS ranges.
+GC_MEN_DENIM_ROWS = [
+    # jeans, size, IT, waist, hips
+    ["26", "-", "40", "63 / 24.8", "83 / 32.6"],
+    ["27", "-", "40", "65 / 25.6", "85 / 33.5"],
+    ["28", "XXS", "42", "67 / 26.4", "87 / 34.2"],
+    ["29", "XXS", "42", "69 / 27.2", "89 / 35"],
+    ["30", "XS", "44", "71 / 28", "91 / 35.8"],
+    ["31", "XS", "44", "73 / 28.7", "93 / 36.6"],
+    ["32", "S", "46", "75 / 29.5", "95 / 37.4"],
+    ["33", "S", "46", "77 / 30.3", "97 / 38.2"],
+    ["34", "M", "48", "79 / 31.1", "99 / 39"],
+    ["35", "M", "48", "81 / 31.9", "101 / 39.8"],
+    ["36", "L", "50", "83 / 32.7", "103 / 40.5"],
+    ["37", "L", "50", "85 / 33.5", "105 / 41.3"],
+    ["38", "XL", "52", "87 / 34.2", "107 / 42.1"],
+    ["39", "XL", "52", "89 / 35", "109 / 42.9"],
+    ["40", "XXL", "54", "91 / 35.8", "111 / 43.7"],
+    ["41", "XXL", "54", "93 / 36.6", "113 / 44.5"],
+    ["42", "XXXL", "56", "95 / 37.4", "115 / 45.3"],
+    ["43", "XXXL", "56", "97 / 38.2", "117 / 46.1"],
+    ["44", "-", "58", "99 / 39", "119 / 46.8"],
+    ["45", "-", "58", "101 / 39.8", "121 / 47.6"],
+    ["46", "-", "60", "103 / 40.5", "123 / 48.4"],
+]
+
+GC_MEN_DENIM = {
+    "id": "denim",
+    "labelKo": "진/데님",
+    "headers": ["JEANS", "SIZE", "IT", "WAIST (CM/IN)", "HIPS (CM/IN)"],
+    "rows": GC_MEN_DENIM_ROWS,
+}
+
+GC_MEN_RTW_SIZE_CHART = {
+    "id": "gc-men-rtw",
+    "titleKo": "구찌 남성 레디투웨어 사이즈 가이드",
+    "noteKo": (
+        "사이즈표는 구찌 공식 남성 의류 가이드 기준입니다. 구찌 남성 의류는 "
+        "이탈리아(IT) 사이즈를 기준으로 하며, Briq 표기의 XS·S·M 또는 IT 숫자는 "
+        "아래 SIZE/IT 열과 대응합니다. 진·데님은 JEANS(허리) 사이즈를 사용합니다. "
+        "브랜드·시즌·실루엣에 따라 핏이 다를 수 있으니 참고용으로 확인해 주세요."
+    ),
+    "headers": GC_MEN_RTW_TOPS["headers"],
+    "rows": GC_MEN_RTW_TOPS["rows"],
+    "tabs": [GC_MEN_RTW_TOPS, GC_MEN_RTW_BOTTOMS, GC_MEN_DENIM],
+}
+
+GC_MEN_DENIM_SIZE_CHART = {
+    "id": "gc-men-denim",
+    "titleKo": "구찌 남성 진/데님 사이즈 가이드",
+    "noteKo": (
+        "이 상품은 진/데님 허리 사이즈(JEANS)로 판매됩니다. 사이즈 선택란의 "
+        "IT 30·IT 32 등은 진 허리 사이즈이며, 일반 의류 IT 46·48과는 다릅니다. "
+        "아래 JEANS 열을 기준으로 골라 주세요."
+    ),
+    "headers": GC_MEN_DENIM["headers"],
+    "rows": GC_MEN_DENIM["rows"],
+    "tabs": [GC_MEN_DENIM, GC_MEN_RTW_BOTTOMS, GC_MEN_RTW_TOPS],
+}
+
 # Official Gucci UK women shoes size guide
 # (https://www.gucci.com/uk/en_gb/st/shoes-size-guide — Women's Shoes Size Chart).
 # PDP pickers use IT sizes; half sizes appear as 34+ in catalog API → IT 34.5.
@@ -504,6 +627,16 @@ def size_chart_for_rtw(variants: list[dict]) -> dict:
         if max(nums) < 36 or min(nums) < 34:
             return GC_WOMEN_DENIM_SIZE_CHART
     return GC_WOMEN_RTW_SIZE_CHART
+
+
+def size_chart_for_mens_rtw(variants: list[dict]) -> dict:
+    """Pick men denim jeans chart when PDP sizes are waist ~26–42, else men RTW."""
+    nums = _variant_size_numbers(variants)
+    if nums and max(nums) <= 46 and min(nums) <= 34 and max(nums) - min(nums) <= 22:
+        # Jeans waist (e.g. 28–36), not apparel IT 44–56
+        if max(nums) < 44 or min(nums) < 40:
+            return GC_MEN_DENIM_SIZE_CHART
+    return GC_MEN_RTW_SIZE_CHART
 
 
 def gbp_to_krw(gbp: float | None) -> int:
@@ -1170,6 +1303,118 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "inStock": in_stock,
         "variants": variants,
         "sizeChart": size_chart_for_rtw(variants),
+        "storySections": copy["story"],
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+
+
+def build_mens_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c
+        in {
+            *MEN_RTW_LEAF_COLLECTIONS,
+            *MEN_RTW_PARENT_COLLECTIONS,
+        }
+    ]
+    cols = sorted(set([*cols, "gc-men-rtw", "gc-men", "gucci"]))
+
+    leaf = next((c for c in MEN_RTW_LEAF_COLLECTIONS if c in cols), "gc-men-rtw")
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    in_stock = bool(row.get("inStock", True))
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    if size_rows:
+        for sz in size_rows:
+            size_raw = str(sz.get("size") or "").strip()
+            if not size_raw:
+                continue
+            label = format_size_label(size_raw)
+            slug = size_slug(size_raw)
+            sku = str(sz.get("sku") or f"{code}-{slug}")
+            variants.append(
+                {
+                    "id": f"{pid}-{slug}",
+                    "name": f"{copy['title_en']} — {label}",
+                    "nameKo": f"{copy['name_ko']} — {label}",
+                    "sku": sku,
+                    "gbpPrice": float(gbp),
+                    "price": price,
+                    "image": copy["image"],
+                    "images": copy["images"],
+                    "hoverImage": copy["hover"],
+                    "sourceUrl": row.get("url") or "",
+                    "inStock": in_stock,
+                    "colorKey": copy["color_key"],
+                    "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                    "size": label,
+                    "gcCollections": cols,
+                }
+            )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{copy['title_en']} — One Size",
+                "nameKo": f"{copy['name_ko']} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": copy["image"],
+                "images": copy["images"],
+                "hoverImage": copy["hover"],
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": copy["color_key"],
+                "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+                "size": "One Size",
+                "gcCollections": cols,
+            }
+        ]
+
+    tags = ["gucci", "구찌", "rtw", "의류", "남성", "mens", "ready-to-wear", *cols]
+    badge = None
+    label = (row.get("label") or "").lower()
+    if "new" in label:
+        badge = "New"
+
+    return {
+        "id": pid,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
+        "brand": "구찌",
+        "price": price,
+        "category": "luxury",
+        "subcategory": leaf,
+        "gcCollections": cols,
+        "tags": tags,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "accent": accent_for(code),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "sizeChart": size_chart_for_mens_rtw(variants),
         "storySections": copy["story"],
         "registeredAt": registered,
         "editTier": "new" if badge == "New" else "signature",
@@ -1851,6 +2096,10 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         c in SHOES_LEAF_COLLECTIONS or c in SHOES_PARENT_COLLECTIONS for c in cols
     ):
         return build_shoe_product(row, prev, now_iso)
+    if kind in {"mens-rtw", "men-rtw", "mens_rtw"} or any(
+        c in MEN_RTW_LEAF_COLLECTIONS or c in {"gc-men-rtw", "gc-men"} for c in cols
+    ):
+        return build_mens_rtw_product(row, prev, now_iso)
     if kind == "rtw" or any(
         c in RTW_LEAF_COLLECTIONS or c in {"gc-women-rtw", "gc-women"} for c in cols
     ):
@@ -1964,6 +2213,51 @@ def gift_cols_from_row(row: dict) -> list[str]:
     return sorted({c for c in (row.get("collections") or []) if c in allowed})
 
 
+def mens_rtw_cols_from_row(row: dict) -> list[str]:
+    allowed = {*MEN_RTW_LEAF_COLLECTIONS, *MEN_RTW_PARENT_COLLECTIONS}
+    cols = {c for c in (row.get("collections") or []) if c in allowed}
+    if any(c in MEN_RTW_LEAF_COLLECTIONS for c in cols):
+        cols.add("gc-men-rtw")
+        cols.add("gc-men")
+        cols.add("gucci")
+    elif "gc-men-rtw" in cols or "gc-men" in cols:
+        cols.add("gc-men-rtw")
+        cols.add("gc-men")
+        cols.add("gucci")
+    return sorted(cols)
+
+
+def apply_mens_rtw_membership(
+    products: list[dict], mens_rtw_tags: dict[str, list[str]]
+) -> int:
+    """Merge men's RTW collection ids onto existing (often women's) PDPs."""
+    tagged = 0
+    for p in products:
+        sku = str(p.get("sku") or "").upper()
+        extra = mens_rtw_tags.get(sku)
+        if not extra:
+            continue
+        cols = sorted(set(p.get("gcCollections") or []) | set(extra))
+        if cols != sorted(p.get("gcCollections") or []):
+            tagged += 1
+        p["gcCollections"] = cols
+        tags = list(p.get("tags") or [])
+        for c in extra:
+            if c not in tags:
+                tags.append(c)
+        for t in ("rtw", "의류", "남성", "mens", "ready-to-wear"):
+            if t not in tags:
+                tags.append(t)
+        p["tags"] = tags
+        # If previously women's-only, keep women's tags but ensure men's nav works
+        for v in p.get("variants") or []:
+            if "gcCollections" in v:
+                v["gcCollections"] = sorted(
+                    set(v.get("gcCollections") or []) | set(extra)
+                )
+    return tagged
+
+
 def mens_bag_cols_from_row(row: dict) -> list[str]:
     allowed = {*MENS_HANDBAG_LEAF_COLLECTIONS, *MENS_HANDBAG_PARENT_COLLECTIONS}
     cols = {c for c in (row.get("collections") or []) if c in allowed}
@@ -2045,13 +2339,15 @@ def load_rows() -> tuple[
     dict,
     dict,
     dict,
+    dict,
+    dict[str, list[str]],
     dict[str, list[str]],
     dict[str, list[str]],
 ]:
     """Load raw rows. Later sources skip duplicates already in catalog.
 
-    Returns gift_tags / mens_bag_tags: sku → collection ids to merge onto
-    existing products (no second PDP).
+    Returns gift_tags / mens_bag_tags / mens_rtw_tags: sku → collection ids to
+    merge onto existing products (no second PDP).
     """
     rows: list[dict] = []
     existing_skus: set[str] = set()
@@ -2059,6 +2355,7 @@ def load_rows() -> tuple[
     existing_style_colors: set[tuple[str, str]] = set()
     gift_tags: dict[str, list[str]] = {}
     mens_bag_tags: dict[str, list[str]] = {}
+    mens_rtw_tags: dict[str, list[str]] = {}
 
     def remember(sku: str) -> None:
         if not sku:
@@ -2121,6 +2418,39 @@ def load_rows() -> tuple[
             sku = str(row.get("productCode") or row.get("id") or "")
             remember(sku)
             rows.append(row)
+
+    mens_rtw_stats = {
+        "raw": 0,
+        "skipped_existing_sku": 0,
+        "skipped_existing_id": 0,
+        "tagged_existing": 0,
+        "kept": 0,
+    }
+    if MENS_RTW_RAW.exists():
+        data = json.loads(MENS_RTW_RAW.read_text())
+        for row in data.get("products") or []:
+            mens_rtw_stats["raw"] += 1
+            row = dict(row)
+            row["kind"] = "mens-rtw"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            briq_id = f"gc-{sku.lower()}" if sku else ""
+            mcols = mens_rtw_cols_from_row(row)
+            if sku.upper() in existing_skus:
+                if mcols:
+                    mens_rtw_tags[sku.upper()] = mcols
+                    mens_rtw_stats["tagged_existing"] += 1
+                mens_rtw_stats["skipped_existing_sku"] += 1
+                continue
+            if briq_id and briq_id in existing_ids:
+                if mcols:
+                    mens_rtw_tags[sku.upper()] = mcols
+                    mens_rtw_stats["tagged_existing"] += 1
+                mens_rtw_stats["skipped_existing_id"] += 1
+                continue
+            mens_rtw_stats["kept"] += 1
+            remember(sku)
+            rows.append(row)
+
     if SHOES_RAW.exists():
         data = json.loads(SHOES_RAW.read_text())
         for row in data.get("products") or []:
@@ -2279,6 +2609,7 @@ def load_rows() -> tuple[
     return (
         rows,
         mens_bag_stats,
+        mens_rtw_stats,
         wallet_stats,
         fashion_stats,
         travel_stats,
@@ -2286,6 +2617,7 @@ def load_rows() -> tuple[
         gifts_stats,
         gift_tags,
         mens_bag_tags,
+        mens_rtw_tags,
     )
 
 
@@ -2293,6 +2625,7 @@ def main() -> None:
     (
         rows,
         mens_bag_stats,
+        mens_rtw_stats,
         wallet_stats,
         fashion_stats,
         travel_stats,
@@ -2300,11 +2633,13 @@ def main() -> None:
         gifts_stats,
         gift_tags,
         mens_bag_tags,
+        mens_rtw_tags,
     ) = load_rows()
     if not rows:
         raise SystemExit(
             "Missing Gucci raw catalogues — run scrape-gc-handbags.py, "
             "scrape-gc-mens-handbags.py, scrape-gc-womens-rtw.py, "
+            "scrape-gc-mens-rtw.py, "
             "scrape-gc-womens-shoes.py, scrape-gc-womens-wallets.py, "
             "scrape-gc-womens-fashion-accessories.py, scrape-gc-womens-travel.py, "
             "scrape-gc-jewellery-watches.py and/or scrape-gc-gifts.py first"
@@ -2333,7 +2668,7 @@ def main() -> None:
             # Later sources (rtw/shoes) may overwrite handbags of same code
             # only when kind is rtw/shoes — keep first unless shoes/rtw wins.
             # Wallets/fashion/travel/jewellery never overwrite bags (already filtered).
-            if row.get("kind") in {"rtw", "shoes"}:
+            if row.get("kind") in {"rtw", "mens-rtw", "shoes"}:
                 products = [p for p in products if p["id"] != prod["id"]]
                 products.append(prod)
             continue
@@ -2347,13 +2682,14 @@ def main() -> None:
     products.sort(key=lambda p: p["id"])
     products = dedupe_style_color_name(products)
     mens_tagged = apply_mens_bag_membership(products, mens_bag_tags)
+    mens_rtw_tagged = apply_mens_rtw_membership(products, mens_rtw_tags)
     gift_tagged = apply_gift_membership(products, gift_tags)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./gc-catalog.json";\n\n'
-        "/** Auto-generated — Gucci handbags + men's bags + RTW + shoes + "
-        "wallets + fashion accessories + travel + jewellery + gifts. */\n"
+        "/** Auto-generated — Gucci handbags + men's bags + women's/men's RTW + "
+        "shoes + wallets + fashion accessories + travel + jewellery + gifts. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
@@ -2368,6 +2704,12 @@ def main() -> None:
         )
     )
     rtw_n = sum(1 for p in products if p.get("category") == "luxury")
+    mens_rtw_n = sum(
+        1
+        for p in products
+        if "gc-men-rtw" in (p.get("gcCollections") or [])
+        or any(c in MEN_RTW_LEAF_COLLECTIONS for c in (p.get("gcCollections") or []))
+    )
     shoes_n = sum(1 for p in products if p.get("category") == "shoes")
     acc_n = sum(1 for p in products if p.get("category") == "accessories")
     fashion_n = sum(
@@ -2403,6 +2745,7 @@ def main() -> None:
     )
     print(
         f"  handbags: {bags_n}  mens-bags: {mens_bags_n}  rtw: {rtw_n}  "
+        f"mens-rtw: {mens_rtw_n}  "
         f"shoes: {shoes_n}  accessories: {acc_n}  fashion: {fashion_n}  "
         f"travel: {travel_n}  jewellery: {jewellery_n}  gifts: {gifts_n}",
         flush=True,
@@ -2424,6 +2767,23 @@ def main() -> None:
             flush=True,
         )
         for leaf in MENS_HANDBAG_LEAF_COLLECTIONS:
+            n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+            print(f"    {leaf}: {n}", flush=True)
+    if mens_rtw_stats["raw"]:
+        skipped = (
+            mens_rtw_stats["skipped_existing_sku"]
+            + mens_rtw_stats["skipped_existing_id"]
+        )
+        print(
+            f"  mens-rtw raw={mens_rtw_stats['raw']} "
+            f"kept={mens_rtw_stats['kept']} skipped={skipped} "
+            f"tagged_existing={mens_rtw_stats.get('tagged_existing', 0)} "
+            f"(merged onto products={mens_rtw_tagged}) "
+            f"(sku={mens_rtw_stats['skipped_existing_sku']} "
+            f"id={mens_rtw_stats['skipped_existing_id']})",
+            flush=True,
+        )
+        for leaf in MEN_RTW_LEAF_COLLECTIONS:
             n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
             print(f"    {leaf}: {n}", flush=True)
     if wallet_stats["raw"]:

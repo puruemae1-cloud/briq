@@ -466,6 +466,19 @@ export type SubcategoryId =
   | "gc-women-leather"
   | "gc-women-activewear"
   | "gc-women-cocktail-evening"
+  | "gc-men"
+  | "gc-men-rtw"
+  | "gc-men-tshirts-polos"
+  | "gc-men-tracksuit-sweatshirts"
+  | "gc-men-shirts"
+  | "gc-men-knitwear"
+  | "gc-men-denim"
+  | "gc-men-trousers-shorts"
+  | "gc-men-swimwear"
+  | "gc-men-outerwear"
+  | "gc-men-leather"
+  | "gc-men-formal-wear"
+  | "gc-men-coats-jackets"
   | "gucci-shoes"
   | "gc-shoes-womens"
   | "gc-women-shoes"
@@ -555,6 +568,21 @@ export const GC_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "gc-women-leather",
   "gc-women-activewear",
   "gc-women-cocktail-evening",
+];
+
+/** Gucci men's ready-to-wear Clothing leaves (official UK men RTW PLPs). */
+export const GC_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-tshirts-polos",
+  "gc-men-tracksuit-sweatshirts",
+  "gc-men-shirts",
+  "gc-men-knitwear",
+  "gc-men-denim",
+  "gc-men-trousers-shorts",
+  "gc-men-swimwear",
+  "gc-men-outerwear",
+  "gc-men-leather",
+  "gc-men-formal-wear",
+  "gc-men-coats-jackets",
 ];
 
 /** Gucci women's shoes leaves (official UK women shoes PLPs). */
@@ -1338,7 +1366,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-men-small-bags-pouches": ["gc-men-small-bags-pouches"],
   "gc-men-belt-slingbags": ["gc-men-belt-slingbags"],
   "gc-men-duffle-bags": ["gc-men-duffle-bags"],
-  gucci: ["gucci", "gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
+  gucci: [
+    "gucci",
+    "gc-women",
+    "gc-women-rtw",
+    ...GC_WOMEN_RTW_LEAF_IDS,
+    "gc-men",
+    "gc-men-rtw",
+    ...GC_MEN_RTW_LEAF_IDS,
+  ],
   "gc-women": ["gc-women", "gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
   "gc-women-rtw": ["gc-women-rtw", ...GC_WOMEN_RTW_LEAF_IDS],
   "gc-women-knitwear": ["gc-women-knitwear"],
@@ -1354,6 +1390,19 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-leather": ["gc-women-leather"],
   "gc-women-activewear": ["gc-women-activewear"],
   "gc-women-cocktail-evening": ["gc-women-cocktail-evening"],
+  "gc-men": ["gc-men", "gc-men-rtw", ...GC_MEN_RTW_LEAF_IDS],
+  "gc-men-rtw": ["gc-men-rtw", ...GC_MEN_RTW_LEAF_IDS],
+  "gc-men-tshirts-polos": ["gc-men-tshirts-polos"],
+  "gc-men-tracksuit-sweatshirts": ["gc-men-tracksuit-sweatshirts"],
+  "gc-men-shirts": ["gc-men-shirts"],
+  "gc-men-knitwear": ["gc-men-knitwear"],
+  "gc-men-denim": ["gc-men-denim"],
+  "gc-men-trousers-shorts": ["gc-men-trousers-shorts"],
+  "gc-men-swimwear": ["gc-men-swimwear"],
+  "gc-men-outerwear": ["gc-men-outerwear"],
+  "gc-men-leather": ["gc-men-leather"],
+  "gc-men-formal-wear": ["gc-men-formal-wear"],
+  "gc-men-coats-jackets": ["gc-men-coats-jackets"],
   "gc-women-shoulder-bags": ["gc-women-shoulder-bags"],
   "gc-women-mini-bags": ["gc-women-mini-bags"],
   "gc-women-crossbody-bags": ["gc-women-crossbody-bags"],
@@ -2052,6 +2101,74 @@ export const navCategories: NavCategory[] = [
                 id: "gc-women-cocktail-evening",
                 labelKo: "칵테일 & 이브닝",
                 href: "/shop?category=luxury&sub=gc-women-cocktail-evening",
+              },
+            ],
+          },
+          {
+            id: "gc-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=gc-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "gc-men-rtw",
+                labelKo: "전체보기",
+                href: "/shop?category=luxury&sub=gc-men-rtw",
+              },
+              {
+                id: "gc-men-tshirts-polos",
+                labelKo: "티셔츠 & 폴로",
+                href: "/shop?category=luxury&sub=gc-men-tshirts-polos",
+              },
+              {
+                id: "gc-men-tracksuit-sweatshirts",
+                labelKo: "트랙수트 & 스웻셔츠",
+                href: "/shop?category=luxury&sub=gc-men-tracksuit-sweatshirts",
+              },
+              {
+                id: "gc-men-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=gc-men-shirts",
+              },
+              {
+                id: "gc-men-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=gc-men-knitwear",
+              },
+              {
+                id: "gc-men-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=gc-men-denim",
+              },
+              {
+                id: "gc-men-trousers-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=gc-men-trousers-shorts",
+              },
+              {
+                id: "gc-men-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=gc-men-swimwear",
+              },
+              {
+                id: "gc-men-outerwear",
+                labelKo: "아우터웨어",
+                href: "/shop?category=luxury&sub=gc-men-outerwear",
+              },
+              {
+                id: "gc-men-leather",
+                labelKo: "레더",
+                href: "/shop?category=luxury&sub=gc-men-leather",
+              },
+              {
+                id: "gc-men-formal-wear",
+                labelKo: "포멀웨어",
+                href: "/shop?category=luxury&sub=gc-men-formal-wear",
+              },
+              {
+                id: "gc-men-coats-jackets",
+                labelKo: "코트 & 재킷",
+                href: "/shop?category=luxury&sub=gc-men-coats-jackets",
               },
             ],
           },
