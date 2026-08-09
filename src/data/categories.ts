@@ -522,6 +522,14 @@ export type SubcategoryId =
   | "gc-women-eyewear"
   | "gc-women-hair-accessories"
   | "gc-women-socks-tights"
+  | "gc-men-fashion-accessories"
+  | "gc-men-belts"
+  | "gc-men-eyewear"
+  | "gc-men-hats-gloves"
+  | "gc-men-ties"
+  | "gc-men-scarves"
+  | "gc-men-socks"
+  | "gc-men-bag-charms-keychains"
   | "gc-women-travel"
   | "gc-women-trolley"
   | "gc-women-weekend-duffle"
@@ -657,6 +665,17 @@ export const GC_WOMEN_FASHION_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
   "gc-women-eyewear",
   "gc-women-hair-accessories",
   "gc-women-socks-tights",
+];
+
+/** Gucci men's fashion accessories leaves (official UK soft-accessory PLPs). */
+export const GC_MEN_FASHION_ACCESSORY_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-belts",
+  "gc-men-eyewear",
+  "gc-men-hats-gloves",
+  "gc-men-ties",
+  "gc-men-scarves",
+  "gc-men-socks",
+  "gc-men-bag-charms-keychains",
 ];
 
 /** Gucci women's travel bags leaves (official UK travel PLPs). */
@@ -1497,6 +1516,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-mens",
     "gc-men-wallets",
     ...GC_MEN_WALLET_LEAF_IDS,
+    "gc-men-fashion-accessories",
+    ...GC_MEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-men-travel",
     ...GC_MEN_TRAVEL_LEAF_IDS,
     "gc-jewellery-watches",
@@ -1538,6 +1559,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-mens",
     "gc-men-wallets",
     ...GC_MEN_WALLET_LEAF_IDS,
+    "gc-men-fashion-accessories",
+    ...GC_MEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-men-travel",
     ...GC_MEN_TRAVEL_LEAF_IDS,
   ],
@@ -1565,6 +1588,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-eyewear": ["gc-women-eyewear"],
   "gc-women-hair-accessories": ["gc-women-hair-accessories"],
   "gc-women-socks-tights": ["gc-women-socks-tights"],
+  "gc-men-fashion-accessories": [
+    "gc-men-fashion-accessories",
+    ...GC_MEN_FASHION_ACCESSORY_LEAF_IDS,
+  ],
+  "gc-men-belts": ["gc-men-belts"],
+  "gc-men-eyewear": ["gc-men-eyewear"],
+  "gc-men-hats-gloves": ["gc-men-hats-gloves"],
+  "gc-men-ties": ["gc-men-ties"],
+  "gc-men-scarves": ["gc-men-scarves"],
+  "gc-men-socks": ["gc-men-socks"],
+  "gc-men-bag-charms-keychains": ["gc-men-bag-charms-keychains"],
   "gc-women-travel": ["gc-women-travel", ...GC_WOMEN_TRAVEL_LEAF_IDS],
   "gc-women-trolley": ["gc-women-trolley"],
   "gc-women-weekend-duffle": ["gc-women-weekend-duffle"],
@@ -3602,6 +3636,49 @@ export const navCategories: NavCategory[] = [
                     id: "gc-men-tech-accessories",
                     labelKo: "테크 액세서리",
                     href: "/shop?category=accessories&sub=gc-men-tech-accessories",
+                  },
+                ],
+              },
+              {
+                id: "gc-men-fashion-accessories",
+                labelKo: "패션 액세서리",
+                href: "/shop?category=accessories&sub=gc-men-fashion-accessories",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "gc-men-belts",
+                    labelKo: "벨트",
+                    href: "/shop?category=accessories&sub=gc-men-belts",
+                  },
+                  {
+                    id: "gc-men-eyewear",
+                    labelKo: "아이웨어",
+                    href: "/shop?category=accessories&sub=gc-men-eyewear",
+                  },
+                  {
+                    id: "gc-men-hats-gloves",
+                    labelKo: "모자 & 장갑",
+                    href: "/shop?category=accessories&sub=gc-men-hats-gloves",
+                  },
+                  {
+                    id: "gc-men-ties",
+                    labelKo: "타이",
+                    href: "/shop?category=accessories&sub=gc-men-ties",
+                  },
+                  {
+                    id: "gc-men-scarves",
+                    labelKo: "스카프",
+                    href: "/shop?category=accessories&sub=gc-men-scarves",
+                  },
+                  {
+                    id: "gc-men-socks",
+                    labelKo: "삭스",
+                    href: "/shop?category=accessories&sub=gc-men-socks",
+                  },
+                  {
+                    id: "gc-men-bag-charms-keychains",
+                    labelKo: "백 참 & 키체인",
+                    href: "/shop?category=accessories&sub=gc-men-bag-charms-keychains",
                   },
                 ],
               },
