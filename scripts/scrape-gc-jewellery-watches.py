@@ -68,11 +68,17 @@ COLLECTIONS: list[tuple[str, str, str]] = [
         "Silver Jewellery / For Him",
         "jewelry-watches-silver-jewelry-men",
     ),
-    # Fashion Jewellery (hub has a single Discover More — covers her + him)
+    # Fashion Jewellery (hub Discover More — her + him)
     (
         "gc-fashion-jewellery",
         "Fashion Jewellery",
         "jewelry-watches-fashion-jewelry",
+    ),
+    # Fashion Jewellery / For Him (also under 악세서리 → 남성용 → 쥬얼리)
+    (
+        "gc-men-fashion-jewellery",
+        "Fashion Jewellery / For Him",
+        "jewelry-watches-fashion-jewelry-men",
     ),
     # Watches
     (
@@ -96,19 +102,19 @@ NESTED_TYPE_COLLECTIONS: list[tuple[str, str, str, str]] = [
     ("rings", "Rings", "jewelry-watches-silver-jewelry-women-rings", "gc-silver-jewellery-women"),
     ("rings", "Rings", "jewelry-watches-silver-jewelry-rings-men", "gc-silver-jewellery-men"),
     ("rings", "Rings", "jewelry-watches-fashion-jewelry-women-rings", "gc-fashion-jewellery"),
-    ("rings", "Rings", "jewelry-watches-fashion-jewelry-men-rings", "gc-fashion-jewellery"),
+    ("rings", "Rings", "jewelry-watches-fashion-jewelry-men-rings", "gc-men-fashion-jewellery"),
     ("bracelets", "Bracelets", "jewelry-watches-fine-jewelry-women-bracelets", "gc-gold-jewellery-women"),
     ("bracelets", "Bracelets", "jewelry-watches-fine-jewelry-men-bracelets", "gc-gold-jewellery-men"),
     ("bracelets", "Bracelets", "jewelry-watches-silver-jewelry-women-bracelets", "gc-silver-jewellery-women"),
     ("bracelets", "Bracelets", "jewelry-watches-silver-jewelry-bracelets-men", "gc-silver-jewellery-men"),
     ("bracelets", "Bracelets", "jewelry-watches-fashion-jewelry-women-bracelets", "gc-fashion-jewellery"),
-    ("bracelets", "Bracelets", "jewelry-watches-fashion-jewelry-men-bracelets", "gc-fashion-jewellery"),
+    ("bracelets", "Bracelets", "jewelry-watches-fashion-jewelry-men-bracelets", "gc-men-fashion-jewellery"),
     ("necklaces", "Necklaces", "jewelry-watches-fine-jewelry-women-necklaces", "gc-gold-jewellery-women"),
     ("necklaces", "Necklaces", "jewelry-watches-fine-jewelry-men-necklaces", "gc-gold-jewellery-men"),
     ("necklaces", "Necklaces", "jewelry-watches-silver-jewelry-women-necklaces", "gc-silver-jewellery-women"),
     ("necklaces", "Necklaces", "jewelry-watches-silver-jewelry-necklaces-men", "gc-silver-jewellery-men"),
     ("necklaces", "Necklaces", "jewelry-watches-fashion-jewelry-women-necklaces", "gc-fashion-jewellery"),
-    ("necklaces", "Necklaces", "jewelry-watches-fashion-jewelry-men-necklaces", "gc-fashion-jewellery"),
+    ("necklaces", "Necklaces", "jewelry-watches-fashion-jewelry-men-necklaces", "gc-men-fashion-jewellery"),
     ("earrings", "Earrings", "jewelry-watches-fine-jewelry-women-earrings", "gc-gold-jewellery-women"),
     ("earrings", "Earrings", "jewelry-watches-silver-jewelry-women-earrings", "gc-silver-jewellery-women"),
     ("earrings", "Earrings", "jewelry-watches-silver-jewelry-earrings-men", "gc-silver-jewellery-men"),
@@ -123,12 +129,24 @@ PARENT_COLLS = (
     "gucci-accessories",
 )
 
+# Men's accessories → 쥬얼리 parents (alongside jewellery-watches hub)
+MEN_JEWELLERY_LEAVES = {
+    "gc-gold-jewellery-men",
+    "gc-silver-jewellery-men",
+    "gc-men-fashion-jewellery",
+}
+MEN_JEWELLERY_PARENTS = (
+    "gc-men-jewellery",
+    "gc-accessories-mens",
+)
+
 # Mid parents assigned from leaf membership
 MID_BY_LEAF = {
     "gc-gold-jewellery-women": "gc-gold-jewellery",
     "gc-gold-jewellery-men": "gc-gold-jewellery",
     "gc-silver-jewellery-women": "gc-silver-jewellery",
     "gc-silver-jewellery-men": "gc-silver-jewellery",
+    "gc-men-fashion-jewellery": "gc-fashion-jewellery",
     "gc-watches-women": "gc-watches",
     "gc-watches-men": "gc-watches",
 }
@@ -393,6 +411,8 @@ def expand_membership(cols: set[str]) -> set[str]:
     for leaf, mid in MID_BY_LEAF.items():
         if leaf in out:
             out.add(mid)
+    if out & MEN_JEWELLERY_LEAVES:
+        out.update(MEN_JEWELLERY_PARENTS)
     return out
 
 

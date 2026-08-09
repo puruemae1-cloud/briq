@@ -540,6 +540,8 @@ export type SubcategoryId =
   | "gc-men-weekend-duffle"
   | "gc-men-travel-accessories"
   | "gc-men-hard-shell-luggage"
+  | "gc-men-jewellery"
+  | "gc-men-fashion-jewellery"
   | "gc-jewellery-watches"
   | "gc-gold-jewellery"
   | "gc-gold-jewellery-women"
@@ -694,6 +696,13 @@ export const GC_MEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
   "gc-men-hard-shell-luggage",
 ];
 
+/** Men's accessories → 쥬얼리 leaves (reuse hub gold/silver men; fashion men split). */
+export const GC_MEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "gc-gold-jewellery-men",
+  "gc-silver-jewellery-men",
+  "gc-men-fashion-jewellery",
+];
+
 /** Gucci jewellery & watches hub leaves (official UK jewellery-watches PLPs). */
 export const GC_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
   "gc-gold-jewellery-women",
@@ -701,6 +710,7 @@ export const GC_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
   "gc-silver-jewellery-women",
   "gc-silver-jewellery-men",
   "gc-fashion-jewellery",
+  "gc-men-fashion-jewellery",
   "gc-watches-women",
   "gc-watches-men",
 ];
@@ -1520,6 +1530,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-men-travel",
     ...GC_MEN_TRAVEL_LEAF_IDS,
+    "gc-men-jewellery",
+    ...GC_MEN_JEWELLERY_LEAF_IDS,
     "gc-jewellery-watches",
     "gc-gold-jewellery",
     ...GC_GOLD_JEWELLERY_LEAF_IDS,
@@ -1563,7 +1575,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MEN_FASHION_ACCESSORY_LEAF_IDS,
     "gc-men-travel",
     ...GC_MEN_TRAVEL_LEAF_IDS,
+    "gc-men-jewellery",
+    ...GC_MEN_JEWELLERY_LEAF_IDS,
   ],
+  "gc-men-jewellery": ["gc-men-jewellery", ...GC_MEN_JEWELLERY_LEAF_IDS],
+  "gc-men-fashion-jewellery": ["gc-men-fashion-jewellery"],
   "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
   "gc-women-long-wallets": ["gc-women-long-wallets"],
   "gc-women-chain-wallets": ["gc-women-chain-wallets"],
@@ -1616,6 +1632,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-silver-jewellery",
     ...GC_SILVER_JEWELLERY_LEAF_IDS,
     "gc-fashion-jewellery",
+    "gc-men-fashion-jewellery",
     "gc-watches",
     ...GC_WATCHES_LEAF_IDS,
   ],
@@ -1625,7 +1642,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-silver-jewellery": ["gc-silver-jewellery", ...GC_SILVER_JEWELLERY_LEAF_IDS],
   "gc-silver-jewellery-women": ["gc-silver-jewellery-women"],
   "gc-silver-jewellery-men": ["gc-silver-jewellery-men"],
-  "gc-fashion-jewellery": ["gc-fashion-jewellery"],
+  "gc-fashion-jewellery": ["gc-fashion-jewellery", "gc-men-fashion-jewellery"],
   "gc-watches": ["gc-watches", ...GC_WATCHES_LEAF_IDS],
   "gc-watches-women": ["gc-watches-women"],
   "gc-watches-men": ["gc-watches-men"],
@@ -3707,6 +3724,29 @@ export const navCategories: NavCategory[] = [
                     id: "gc-men-hard-shell-luggage",
                     labelKo: "하드셸 러기지",
                     href: "/shop?category=accessories&sub=gc-men-hard-shell-luggage",
+                  },
+                ],
+              },
+              {
+                id: "gc-men-jewellery",
+                labelKo: "쥬얼리",
+                href: "/shop?category=accessories&sub=gc-men-jewellery",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "gc-gold-jewellery-men",
+                    labelKo: "골드 쥬얼리",
+                    href: "/shop?category=accessories&sub=gc-gold-jewellery-men",
+                  },
+                  {
+                    id: "gc-silver-jewellery-men",
+                    labelKo: "실버 쥬얼리",
+                    href: "/shop?category=accessories&sub=gc-silver-jewellery-men",
+                  },
+                  {
+                    id: "gc-men-fashion-jewellery",
+                    labelKo: "패션 쥬얼리",
+                    href: "/shop?category=accessories&sub=gc-men-fashion-jewellery",
                   },
                 ],
               },

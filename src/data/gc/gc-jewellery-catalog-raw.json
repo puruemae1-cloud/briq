@@ -225,11 +225,16 @@
       "typeHint": "charms",
       "count": 13,
       "nested": true
+    },
+    "gc-men-fashion-jewellery": {
+      "label": "Fashion Jewellery / For Him",
+      "categoryCode": "jewelry-watches-fashion-jewelry-men",
+      "count": 46
     }
   },
   "count": 503,
   "failedCategoryCodes": [],
-  "note": "High Jewellery (/nst/gucci-high-jewelry) and High Watchmaking (/nst/gucci-high-watchmaking) are editorial — no productgrid.",
+  "note": "High Jewellery (/nst/gucci-high-jewelry) and High Watchmaking (/nst/gucci-high-watchmaking) are editorial — no productgrid. Men's accessories nav: gc-men-jewellery → gold/silver men + gc-men-fashion-jewellery.",
   "products": [
     {
       "id": "152045J85005702",
@@ -247,10 +252,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1631171703/152045_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -931,10 +938,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1444925705/225985_I19A1_8061_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -1135,10 +1144,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1640709910/325964_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -1349,7 +1360,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659601809/356289_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -1536,7 +1549,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1523033105/454285_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -1648,7 +1663,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397224/455307_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -1746,7 +1763,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716398149/455535_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -1846,10 +1865,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1601650803/527095_J8F77_8522_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -2278,7 +2299,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659392222/551899_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -2468,7 +2491,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1550853903/577299_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -2553,10 +2578,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1570113003/606826_I0H11_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -2732,10 +2759,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1570113003/606826_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -2911,7 +2940,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1579170604/616941_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3009,7 +3040,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1579169704/620798_J8400_0811_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3131,7 +3164,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1682028920/620798_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3246,7 +3281,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1582719303/627068_J8400_0728_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3353,7 +3390,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1682028929/627068_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3456,7 +3495,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659459679/627729_J8400_0701_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3640,7 +3681,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397294/627757_J8400_0701_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3739,7 +3782,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1580740205/632207_J8400_0701_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -3843,10 +3888,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1621326607/660070_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -4053,10 +4100,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1621326607/660070_J8502_9000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -4264,10 +4313,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613993406/662106_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -4357,10 +4408,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613412008/662106_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -4452,10 +4505,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397329/662108_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -4551,10 +4606,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397331/662108_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5124,10 +5181,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613412008/662121_J8568_9066_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5220,10 +5279,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397338/662132_J8568_9066_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5319,10 +5380,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613411103/662140_J8568_9066_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5504,10 +5567,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613411104/662177_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5688,10 +5753,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613411104/662177_J8502_9000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -5872,10 +5939,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613672107/662188_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -6072,10 +6141,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613672107/662194_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -6264,10 +6335,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613672108/662194_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -6455,10 +6528,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613671209/662194_J8502_9000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -8285,10 +8360,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678752059/744562_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -8396,10 +8473,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678752066/744562_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -8512,10 +8591,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458047/745654_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -8814,7 +8895,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397503/759703_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -8906,7 +8989,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716397509/770724_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -8997,7 +9082,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1686236603/770756_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -9376,7 +9463,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1695139343/774034_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -9459,7 +9548,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1689182264/774049_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -9660,7 +9751,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1689182267/774052_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -9863,7 +9956,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1689182269/774054_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -9985,7 +10080,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716398475/774055_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -10248,8 +10345,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1692980389/774638_I4600_8005_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -11563,10 +11663,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1711125025/786556_J85L0_8093_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -11670,10 +11772,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1708965998/786556_JAAGR_8523_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -11777,10 +11881,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716453908/786671_I8310_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -11872,10 +11978,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716453910/786671_I8310_9090_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -11967,10 +12075,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1709280074/786693_I8310_8062_002_100_0022_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -12074,10 +12184,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1709280077/786693_I8310_9090_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -12621,10 +12733,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716453915/789340_J85L0_8093_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -12725,10 +12839,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716453919/789340_JAAGR_8523_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -12920,8 +13036,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1708966030/792317_I4600_8005_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -13312,10 +13431,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1713543373/795651_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -13571,10 +13692,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1713285128/795810_J8500_8000_002_100_0022_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -13688,10 +13811,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1713285131/795812_J8500_8000_002_100_0020_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -13802,10 +13927,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716453924/795818_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -14368,10 +14495,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1744118104/796174_J8540_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -14479,10 +14608,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1713285141/796178_J8540_5702_002_100_0025_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -14587,10 +14718,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1713285142/796185_J8500_8000_002_100_0028_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -14692,7 +14825,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1708966835/796351_J8400_8106_002_100_0012_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -14799,7 +14934,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716454807/796355_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -15833,10 +15970,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716454830/796823_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -15925,10 +16064,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1716454832/796833_J8540_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -16442,7 +16583,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1708619541/797029_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -16626,7 +16769,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1708619543/797031_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -16806,7 +16951,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1717090360/798542_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -16989,10 +17136,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1724342429/804329_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -17160,10 +17309,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458078/804335_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -17345,10 +17496,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1724342431/804335_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -17718,10 +17871,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458083/804368_J8500_5702_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -17816,10 +17971,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458084/804368_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -18355,10 +18512,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458085/809255_J8500_5702_002_100_0011_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -18460,10 +18619,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1720458087/809255_J8500_8000_002_100_0014_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -19730,7 +19891,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726158628/814829_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -19817,7 +19980,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1724342451/814914_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -19910,7 +20075,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1724342453/814917_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -20019,7 +20186,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1724342454/814919_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -20111,7 +20280,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726587016/814949_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -20291,7 +20462,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726587023/814957_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -20382,7 +20555,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726158642/815048_J8410_8131_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -20462,7 +20637,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1761149714/815048_J8410_8137_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -21271,7 +21448,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726587035/817025_J8400_8106_002_100_0016_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -21590,7 +21769,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1726587041/818927_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -22945,10 +23126,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1748967311/831316_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -24280,10 +24463,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741887005/832319_J8568_9066_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -24486,10 +24671,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741024897/832321_J8568_9066_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25237,10 +25424,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741025845/832971_J8568_9066_002_100_0012_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25565,8 +25754,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1742542251/836244_IAAE5_8163_002_100_0016_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25671,8 +25863,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1742542253/836244_IAAE5_8179_002_100_0016_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25775,8 +25970,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1754577004/836244_IAAE5_8182_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25877,8 +26075,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1754577004/836244_IAAE5_8489_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -25981,8 +26182,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1742542255/836293_IAADZ_8199_002_100_0016_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -26446,7 +26650,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741333521/836813_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -26549,7 +26755,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1742322767/836819_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -26691,7 +26899,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741024915/836833_JAAIV_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -27458,8 +27668,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1742542275/837355_IAAF1_8523_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -30081,7 +30294,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741026710/839732_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -30174,7 +30389,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741334441/840986_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -30282,7 +30499,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1741334443/840987_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -31232,7 +31451,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1748427341/843596_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -31334,7 +31555,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1748427343/843602_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -31450,7 +31673,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1758004208/843607_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -31546,7 +31771,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1750147204/843627_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -31716,7 +31943,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1753279216/843630_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -31804,7 +32033,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1750147207/843736_J8400_0818_002_100_0025_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -31914,7 +32145,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1748619075/843748_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -32098,7 +32331,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1748619077/843813_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -32292,7 +32527,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1750147209/843972_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -32754,7 +32991,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229409/853846_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -32863,7 +33102,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229410/853848_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -32956,7 +33197,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229411/853849_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33127,7 +33370,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229411/853852_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -33306,7 +33551,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229411/853866_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33387,7 +33634,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756830613/853880_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33476,7 +33725,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1757085311/853911_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33561,7 +33812,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229412/853964_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -33653,7 +33906,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229412/853966_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -33758,7 +34013,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1757953837/853967_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33845,7 +34102,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229413/853978_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -33947,7 +34206,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229413/853990_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -34459,7 +34720,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1761149729/854204_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -34549,7 +34812,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1757953839/854247_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -34702,7 +34967,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1757953839/854258_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -34863,7 +35130,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1756229415/854308_J89B0_8131_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -34952,7 +35221,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1757518248/854366_J89B0_8131_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -37740,8 +38011,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092741/859240_IAAGM_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -37843,8 +38117,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092742/859240_IAAGN_8181_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -37946,8 +38223,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092742/859240_IAAGN_8199_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38049,8 +38329,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092742/859240_IAAGO_8519_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38152,8 +38435,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1768302903/859247_IAAGP_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38257,8 +38543,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1768302904/859247_IAAGQ_8065_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38592,8 +38881,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092760/863739_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38675,8 +38967,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092761/863754_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38786,8 +39081,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092761/863754_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -38892,8 +39190,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092761/863754_I4812_8030_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39003,8 +39304,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092762/863754_IAAG0_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39113,8 +39417,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092762/863754_IAAG1_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39311,8 +39618,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092763/863769_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39427,8 +39737,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092764/863769_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39548,8 +39861,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092765/863810_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39637,8 +39953,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092767/863860_I4812_8030_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39728,8 +40047,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092768/863865_I4729_8131_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39817,8 +40139,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092768/863865_I8157_8027_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39906,8 +40231,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764092769/863870_I8157_8027_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -39988,8 +40316,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1767090607/863965_J3F42_8162_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -40079,8 +40410,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764093606/864038_J3F42_8162_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -40174,7 +40508,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1764093609/864653_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -43717,7 +44053,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776274246/874217_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -43905,7 +44243,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782118803/874248_J8400_0818_003_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44011,7 +44351,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776274247/874249_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44091,7 +44433,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1777566645/874252_J8400_0818_006_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44175,7 +44519,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779989438/874254_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -44264,7 +44610,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779467410/874258_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44345,7 +44693,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1777567514/874262_J8400_0818_006_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -44429,7 +44779,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776250822/874283_J84R0_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44518,7 +44870,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779467411/874284_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44600,7 +44954,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782118804/874286_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44685,7 +45041,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782119703/874293_J89L0_8518_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -44772,7 +45130,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784191504/874343_JAAMX_8519_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -46137,8 +46497,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779345916/874621_IAAG8_8519_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -46237,8 +46600,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779989439/874621_IAAG8_8522_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -46337,8 +46703,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779345916/874621_IAAG9_8517_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -46928,10 +47297,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1762849850/874738_J1574_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -47017,10 +47388,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1762849850/874902_J1574_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -47107,7 +47480,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779990331/875895_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -47440,7 +47815,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779990334/875974_J8400_0818_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -47539,7 +47916,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1778594434/876222_J8420_8175_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -47630,7 +48009,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776259846/876224_J8420_8175_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -47774,7 +48155,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1778594434/876227_J8420_8175_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -47874,7 +48257,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1778595308/876234_J84R0_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -47971,8 +48356,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779786056/A00048_IAAHC_8160_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -48086,8 +48474,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779786057/A0004M_IAAHC_8160_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -48188,8 +48579,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1778594447/A0004R_IAAHC_8160_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -48290,8 +48684,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779786058/A0004U_IAAHC_8160_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50311,8 +50708,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784910636/A000ZD_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50416,8 +50816,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785222023/A000ZD_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50525,8 +50928,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772443805/A0010F_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50641,8 +51047,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772131504/A0010F_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50752,8 +51161,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772131505/A00116_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50868,8 +51280,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772443806/A00116_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -50975,8 +51390,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1771955164/A0011Q_I4600_0912_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -51076,8 +51494,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1771955164/A0011Q_I4601_0926_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -51179,7 +51600,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776255311/A002MN_JAAFV_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -51289,7 +51712,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776255312/A002MN_JAAFV_8166_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -51397,10 +51822,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782120604/A002OM_I19A1_8061_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -51578,10 +52005,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1781601305/A002P9_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -51749,10 +52178,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776255313/A002PI_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -51917,10 +52348,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1777567558/A002Q0_I19A1_8061_006_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52024,10 +52457,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779786077/A002QZ_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52207,10 +52642,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1780419610/A002R0_J8502_9000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52376,10 +52813,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785342611/A002R5_J8502_9000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52482,10 +52921,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784303154/A002R9_J8500_8000_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52588,10 +53029,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1779345940/A002UA_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -52700,10 +53143,12 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1776259871/A002UV_J85V5_8062_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-gold-jewellery",
         "gc-gold-jewellery-men",
         "gc-gold-jewellery-women",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -53346,7 +53791,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784567743/A005XY_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -53502,7 +53949,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785255355/A005YX_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -53716,7 +54165,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785255357/A0060O_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -53811,7 +54262,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1780642863/A0078L_J8400_8106_006_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gucci-accessories"
@@ -53901,7 +54354,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785256253/A0078M_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -54005,7 +54460,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785256253/A00790_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -54124,7 +54581,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785256254/A00792_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -54298,7 +54757,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785256255/A00796_J8400_8106_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -54403,8 +54864,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1783960268/A0079W_IAAHL_8029_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -54511,8 +54975,11 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784567754/A0079W_IAAHM_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-fashion-jewellery",
         "gc-jewellery-watches",
+        "gc-men-fashion-jewellery",
+        "gc-men-jewellery",
         "gucci-accessories"
       ],
       "inStock": true,
@@ -54619,7 +55086,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784567761/A007TO_I5974_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",
@@ -54725,7 +55194,9 @@
       ],
       "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784911523/A007U6_J84R0_8163_002_100_0000_Light.jpg",
       "collections": [
+        "gc-accessories-mens",
         "gc-jewellery-watches",
+        "gc-men-jewellery",
         "gc-silver-jewellery",
         "gc-silver-jewellery-men",
         "gc-silver-jewellery-women",

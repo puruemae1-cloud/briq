@@ -238,9 +238,16 @@ JEWELLERY_LEAF_COLLECTIONS = [
     "gc-gold-jewellery-men",
     "gc-silver-jewellery-women",
     "gc-silver-jewellery-men",
+    "gc-men-fashion-jewellery",
     "gc-fashion-jewellery",
     "gc-watches-women",
     "gc-watches-men",
+]
+
+MEN_JEWELLERY_LEAF_COLLECTIONS = [
+    "gc-gold-jewellery-men",
+    "gc-silver-jewellery-men",
+    "gc-men-fashion-jewellery",
 ]
 
 JEWELLERY_PARENT_COLLECTIONS = [
@@ -248,6 +255,8 @@ JEWELLERY_PARENT_COLLECTIONS = [
     "gc-gold-jewellery",
     "gc-silver-jewellery",
     "gc-watches",
+    "gc-men-jewellery",
+    "gc-accessories-mens",
     "gucci-accessories",
 ]
 
@@ -2177,6 +2186,19 @@ def build_mens_travel_product(
     }
 
 
+def jewellery_cols_from_row(row: dict) -> list[str]:
+    allowed = {*JEWELLERY_LEAF_COLLECTIONS, *JEWELLERY_PARENT_COLLECTIONS}
+    cols = {c for c in (row.get("collections") or []) if c in allowed}
+    cols.add("gc-jewellery-watches")
+    cols.add("gucci-accessories")
+    if cols & set(MEN_JEWELLERY_LEAF_COLLECTIONS):
+        cols.add("gc-men-jewellery")
+        cols.add("gc-accessories-mens")
+    if "gc-men-fashion-jewellery" in cols:
+        cols.add("gc-fashion-jewellery")
+    return sorted(cols)
+
+
 def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     """Jewellery & watches — ring/bracelet size charts when variants exist."""
     code = row.get("productCode") or row.get("id")
@@ -2189,9 +2211,7 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     if price <= 0:
         return None
 
-    allowed = {*JEWELLERY_LEAF_COLLECTIONS, *JEWELLERY_PARENT_COLLECTIONS}
-    cols = [c for c in (row.get("collections") or []) if c in allowed]
-    cols = sorted(set([*cols, "gc-jewellery-watches", "gucci-accessories"]))
+    cols = jewellery_cols_from_row(row)
 
     leaf = next(
         (c for c in JEWELLERY_LEAF_COLLECTIONS if c in cols), "gc-jewellery-watches"
@@ -3114,6 +3134,40 @@ def apply_mens_travel_membership(
     return tagged
 
 
+def apply_jewellery_membership(
+    products: list[dict], jewellery_tags: dict[str, list[str]]
+) -> int:
+    """Merge jewellery hub + men's accessories jewellery ids onto existing PDPs."""
+    tagged = 0
+    for p in products:
+        sku = str(p.get("sku") or "").upper()
+        extra = jewellery_tags.get(sku)
+        if not extra:
+            continue
+        cols = sorted(set(p.get("gcCollections") or []) | set(extra))
+        if cols != sorted(p.get("gcCollections") or []):
+            tagged += 1
+        p["gcCollections"] = cols
+        tags = list(p.get("tags") or [])
+        for c in extra:
+            if c not in tags:
+                tags.append(c)
+        for t in ("jewellery", "쥬얼리", "악세서리"):
+            if t not in tags:
+                tags.append(t)
+        if set(extra) & set(MEN_JEWELLERY_LEAF_COLLECTIONS) or "gc-men-jewellery" in extra:
+            for t in ("남성", "mens"):
+                if t not in tags:
+                    tags.append(t)
+        p["tags"] = tags
+        for v in p.get("variants") or []:
+            if "gcCollections" in v:
+                v["gcCollections"] = sorted(
+                    set(v.get("gcCollections") or []) | set(extra)
+                )
+    return tagged
+
+
 def load_rows() -> tuple:
     """Load raw rows. Later sources skip duplicates already in catalog.
 
@@ -3132,6 +3186,7 @@ def load_rows() -> tuple:
     mens_wallet_tags: dict[str, list[str]] = {}
     mens_fashion_tags: dict[str, list[str]] = {}
     mens_travel_tags: dict[str, list[str]] = {}
+    jewellery_tags: dict[str, list[str]] = {}
 
     def remember(sku: str) -> None:
         if not sku:
@@ -3451,6 +3506,7 @@ def load_rows() -> tuple:
         "skipped_existing_sku": 0,
         "skipped_existing_id": 0,
         "skipped_style_color": 0,
+        "tagged_existing": 0,
         "kept": 0,
     }
     if JEWELLERY_RAW.exists():
@@ -3461,10 +3517,17 @@ def load_rows() -> tuple:
             row["kind"] = "jewellery"
             sku = str(row.get("productCode") or row.get("id") or "")
             briq_id = f"gc-{sku.lower()}" if sku else ""
+            jcols = jewellery_cols_from_row(row)
             if sku.upper() in existing_skus:
+                if jcols:
+                    jewellery_tags[sku.upper()] = jcols
+                    jewellery_stats["tagged_existing"] += 1
                 jewellery_stats["skipped_existing_sku"] += 1
                 continue
             if briq_id and briq_id in existing_ids:
+                if jcols:
+                    jewellery_tags[sku.upper()] = jcols
+                    jewellery_stats["tagged_existing"] += 1
                 jewellery_stats["skipped_existing_id"] += 1
                 continue
             sc = style_color_key(sku)
@@ -3530,6 +3593,7 @@ def load_rows() -> tuple:
         mens_wallet_tags,
         mens_fashion_tags,
         mens_travel_tags,
+        jewellery_tags,
     )
 
 
@@ -3554,6 +3618,7 @@ def main() -> None:
         mens_wallet_tags,
         mens_fashion_tags,
         mens_travel_tags,
+        jewellery_tags,
     ) = load_rows()
     if not rows:
         raise SystemExit(
@@ -3613,6 +3678,7 @@ def main() -> None:
         products, mens_fashion_tags
     )
     mens_travel_tagged = apply_mens_travel_membership(products, mens_travel_tags)
+    jewellery_tagged = apply_jewellery_membership(products, jewellery_tags)
     gift_tagged = apply_gift_membership(products, gift_tags)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
@@ -3848,9 +3914,16 @@ def main() -> None:
             f"kept={jewellery_stats['kept']} "
             f"skipped_sku={jewellery_stats['skipped_existing_sku']} "
             f"skipped_id={jewellery_stats['skipped_existing_id']} "
-            f"skipped_style_color={jewellery_stats['skipped_style_color']}",
+            f"skipped_style_color={jewellery_stats['skipped_style_color']} "
+            f"tagged_existing={jewellery_stats.get('tagged_existing', 0)} "
+            f"(merged onto products={jewellery_tagged})",
             flush=True,
         )
+        for leaf in MEN_JEWELLERY_LEAF_COLLECTIONS:
+            n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+            print(f"    {leaf}: {n}", flush=True)
+        n = sum(1 for p in products if "gc-men-jewellery" in (p.get("gcCollections") or []))
+        print(f"    gc-men-jewellery: {n}", flush=True)
     if gifts_stats["raw"]:
         print(
             f"  gifts raw={gifts_stats['raw']} "
