@@ -527,6 +527,11 @@ export type SubcategoryId =
   | "gc-women-weekend-duffle"
   | "gc-women-travel-accessories"
   | "gc-women-hard-shell-luggage"
+  | "gc-men-travel"
+  | "gc-men-trolley"
+  | "gc-men-weekend-duffle"
+  | "gc-men-travel-accessories"
+  | "gc-men-hard-shell-luggage"
   | "gc-jewellery-watches"
   | "gc-gold-jewellery"
   | "gc-gold-jewellery-women"
@@ -660,6 +665,14 @@ export const GC_WOMEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
   "gc-women-weekend-duffle",
   "gc-women-travel-accessories",
   "gc-women-hard-shell-luggage",
+];
+
+/** Gucci men's travel bags leaves (official UK men travel PLPs). */
+export const GC_MEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-trolley",
+  "gc-men-weekend-duffle",
+  "gc-men-travel-accessories",
+  "gc-men-hard-shell-luggage",
 ];
 
 /** Gucci jewellery & watches hub leaves (official UK jewellery-watches PLPs). */
@@ -1484,6 +1497,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-mens",
     "gc-men-wallets",
     ...GC_MEN_WALLET_LEAF_IDS,
+    "gc-men-travel",
+    ...GC_MEN_TRAVEL_LEAF_IDS,
     "gc-jewellery-watches",
     "gc-gold-jewellery",
     ...GC_GOLD_JEWELLERY_LEAF_IDS,
@@ -1523,6 +1538,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "gc-accessories-mens",
     "gc-men-wallets",
     ...GC_MEN_WALLET_LEAF_IDS,
+    "gc-men-travel",
+    ...GC_MEN_TRAVEL_LEAF_IDS,
   ],
   "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
   "gc-women-long-wallets": ["gc-women-long-wallets"],
@@ -1553,6 +1570,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-women-weekend-duffle": ["gc-women-weekend-duffle"],
   "gc-women-travel-accessories": ["gc-women-travel-accessories"],
   "gc-women-hard-shell-luggage": ["gc-women-hard-shell-luggage"],
+  "gc-men-travel": ["gc-men-travel", ...GC_MEN_TRAVEL_LEAF_IDS],
+  "gc-men-trolley": ["gc-men-trolley"],
+  "gc-men-weekend-duffle": ["gc-men-weekend-duffle"],
+  "gc-men-travel-accessories": ["gc-men-travel-accessories"],
+  "gc-men-hard-shell-luggage": ["gc-men-hard-shell-luggage"],
   "gc-jewellery-watches": [
     "gc-jewellery-watches",
     "gc-gold-jewellery",
@@ -3580,6 +3602,34 @@ export const navCategories: NavCategory[] = [
                     id: "gc-men-tech-accessories",
                     labelKo: "테크 액세서리",
                     href: "/shop?category=accessories&sub=gc-men-tech-accessories",
+                  },
+                ],
+              },
+              {
+                id: "gc-men-travel",
+                labelKo: "여행",
+                href: "/shop?category=accessories&sub=gc-men-travel",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "gc-men-trolley",
+                    labelKo: "트롤리",
+                    href: "/shop?category=accessories&sub=gc-men-trolley",
+                  },
+                  {
+                    id: "gc-men-weekend-duffle",
+                    labelKo: "위켄드백 & 더플백",
+                    href: "/shop?category=accessories&sub=gc-men-weekend-duffle",
+                  },
+                  {
+                    id: "gc-men-travel-accessories",
+                    labelKo: "여행 액세서리",
+                    href: "/shop?category=accessories&sub=gc-men-travel-accessories",
+                  },
+                  {
+                    id: "gc-men-hard-shell-luggage",
+                    labelKo: "하드셸 러기지",
+                    href: "/shop?category=accessories&sub=gc-men-hard-shell-luggage",
                   },
                 ],
               },

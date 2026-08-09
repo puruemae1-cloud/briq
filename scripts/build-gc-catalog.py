@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Build Gucci catalogue from scraped raw
 (handbags + men's bags + women's/men's RTW + women's/men's shoes + wallets +
-men's wallets + fashion accessories + travel + jewellery + gifts).
+men's wallets + fashion accessories + women's/men's travel + jewellery + gifts).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
 
 Gifts: existing productCodes get gift gcCollections merged on; only truly new
 gift SKUs are imported as PDPs (duplicates are never re-imported).
-Men's RTW / men's bags / men's shoes / men's wallets: exact duplicate
-productCodes tag membership onto the existing PDP instead of creating a second one.
+Men's RTW / men's bags / men's shoes / men's wallets / men's travel: exact
+duplicate productCodes tag membership onto the existing PDP instead of creating
+a second one.
 """
 from __future__ import annotations
 
@@ -36,6 +37,7 @@ WALLETS_RAW = ROOT / "src/data/gc/gc-wallets-catalog-raw.json"
 MENS_WALLETS_RAW = ROOT / "src/data/gc/gc-mens-wallets-catalog-raw.json"
 FASHION_ACC_RAW = ROOT / "src/data/gc/gc-fashion-accessories-catalog-raw.json"
 TRAVEL_RAW = ROOT / "src/data/gc/gc-travel-catalog-raw.json"
+MENS_TRAVEL_RAW = ROOT / "src/data/gc/gc-mens-travel-catalog-raw.json"
 JEWELLERY_RAW = ROOT / "src/data/gc/gc-jewellery-catalog-raw.json"
 GIFTS_RAW = ROOT / "src/data/gc/gc-gifts-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
@@ -195,6 +197,19 @@ TRAVEL_LEAF_COLLECTIONS = [
 TRAVEL_PARENT_COLLECTIONS = [
     "gc-women-travel",
     "gc-accessories-womens",
+    "gucci-accessories",
+]
+
+MEN_TRAVEL_LEAF_COLLECTIONS = [
+    "gc-men-trolley",
+    "gc-men-weekend-duffle",
+    "gc-men-travel-accessories",
+    "gc-men-hard-shell-luggage",
+]
+
+MEN_TRAVEL_PARENT_COLLECTIONS = [
+    "gc-men-travel",
+    "gc-accessories-mens",
     "gucci-accessories",
 ]
 
@@ -1830,10 +1845,7 @@ def build_fashion_accessory_product(
 
 
 def build_travel_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
-    """Travel bags / luggage — One Size; W×H×D + capacity in PDP detail copy.
-
-    Same pattern as handbags/wallets (no apparel size chart).
-    """
+    """Women's travel bags / luggage — One Size; W×H×D in PDP detail copy."""
     code = row.get("productCode") or row.get("id")
     if not code:
         return None
@@ -1882,6 +1894,92 @@ def build_travel_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
         "러기지",
         "악세서리",
         "여성",
+        *cols,
+    ]
+    badge = None
+    label = (row.get("label") or "").lower()
+    if "new" in label:
+        badge = "New"
+
+    return {
+        "id": pid,
+        "name": copy["title_en"],
+        "nameKo": copy["name_ko"],
+        "brand": "구찌",
+        "price": price,
+        "category": "accessories",
+        "subcategory": leaf,
+        "gcCollections": cols,
+        "tags": tags,
+        "descriptionKo": copy["description_ko"],
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "accent": accent_for(code),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": bool(row.get("inStock", True)),
+        "variants": [variant],
+        "storySections": copy["story"],
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+
+
+def build_mens_travel_product(
+    row: dict, prev: dict | None, now_iso: str
+) -> dict | None:
+    """Men's travel bags / luggage — One Size; W×H×D in PDP detail copy."""
+    code = row.get("productCode") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    allowed = {*MEN_TRAVEL_LEAF_COLLECTIONS, *MEN_TRAVEL_PARENT_COLLECTIONS}
+    cols = [c for c in (row.get("collections") or []) if c in allowed]
+    cols = sorted(set([*cols, *MEN_TRAVEL_PARENT_COLLECTIONS]))
+
+    leaf = next(
+        (c for c in MEN_TRAVEL_LEAF_COLLECTIONS if c in cols), "gc-men-travel"
+    )
+    copy = common_copy(row)
+    pid = f"gc-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    variant = {
+        "id": f"{pid}-u",
+        "name": f"{copy['title_en']} — {copy['color_en'] or 'One Size'}".strip(" —"),
+        "nameKo": f"{copy['name_ko']} — {copy['color_ko'] or '원 사이즈'}".strip(" —"),
+        "sku": code,
+        "gbpPrice": float(gbp),
+        "price": price,
+        "image": copy["image"],
+        "images": copy["images"],
+        "hoverImage": copy["hover"],
+        "sourceUrl": row.get("url") or "",
+        "inStock": bool(row.get("inStock", True)),
+        "colorKey": copy["color_key"],
+        "colorNameKo": copy["color_ko"] or copy["color_en"] or "기본",
+        "size": "One Size",
+        "gcCollections": cols,
+    }
+
+    tags = [
+        "gucci",
+        "구찌",
+        "travel",
+        "여행",
+        "luggage",
+        "러기지",
+        "악세서리",
+        "남성",
         *cols,
     ]
     badge = None
@@ -2427,6 +2525,10 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     ):
         return build_jewellery_product(row, prev, now_iso)
     # Travel before wallets — shared parents (gucci-accessories) must not misroute.
+    if kind in {"mens-travel", "mens_travel", "men-travel"} or any(
+        c in MEN_TRAVEL_LEAF_COLLECTIONS or c == "gc-men-travel" for c in cols
+    ):
+        return build_mens_travel_product(row, prev, now_iso)
     if kind == "travel" or any(
         c in TRAVEL_LEAF_COLLECTIONS or c == "gc-women-travel" for c in cols
     ):
@@ -2742,6 +2844,53 @@ def apply_mens_wallet_membership(
     return tagged
 
 
+def mens_travel_cols_from_row(row: dict) -> list[str]:
+    allowed = {*MEN_TRAVEL_LEAF_COLLECTIONS, *MEN_TRAVEL_PARENT_COLLECTIONS}
+    cols = {c for c in (row.get("collections") or []) if c in allowed}
+    if any(c in MEN_TRAVEL_LEAF_COLLECTIONS for c in cols):
+        cols.add("gc-men-travel")
+        cols.add("gc-accessories-mens")
+        cols.add("gucci-accessories")
+    elif "gc-men-travel" in cols or "gc-accessories-mens" in cols:
+        cols.add("gc-men-travel")
+        cols.add("gc-accessories-mens")
+        cols.add("gucci-accessories")
+    return sorted(cols)
+
+
+def apply_mens_travel_membership(
+    products: list[dict], mens_tags: dict[str, list[str]]
+) -> int:
+    """Merge men's travel collection ids onto existing PDPs (bags / women's travel).
+
+    Exact duplicates (esp. duffles already in men's handbags) are not re-imported.
+    """
+    tagged = 0
+    for p in products:
+        sku = str(p.get("sku") or "").upper()
+        extra = mens_tags.get(sku)
+        if not extra:
+            continue
+        cols = sorted(set(p.get("gcCollections") or []) | set(extra))
+        if cols != sorted(p.get("gcCollections") or []):
+            tagged += 1
+        p["gcCollections"] = cols
+        tags = list(p.get("tags") or [])
+        for c in extra:
+            if c not in tags:
+                tags.append(c)
+        for t in ("travel", "여행", "luggage", "러기지", "악세서리", "남성", "mens"):
+            if t not in tags:
+                tags.append(t)
+        p["tags"] = tags
+        for v in p.get("variants") or []:
+            if "gcCollections" in v:
+                v["gcCollections"] = sorted(
+                    set(v.get("gcCollections") or []) | set(extra)
+                )
+    return tagged
+
+
 def load_rows() -> tuple[
     list[dict],
     dict,
@@ -2753,6 +2902,8 @@ def load_rows() -> tuple[
     dict,
     dict,
     dict,
+    dict,
+    dict[str, list[str]],
     dict[str, list[str]],
     dict[str, list[str]],
     dict[str, list[str]],
@@ -2762,8 +2913,8 @@ def load_rows() -> tuple[
     """Load raw rows. Later sources skip duplicates already in catalog.
 
     Returns gift_tags / mens_bag_tags / mens_rtw_tags / mens_shoes_tags /
-    mens_wallet_tags: sku → collection ids to merge onto existing products
-    (no second PDP).
+    mens_wallet_tags / mens_travel_tags: sku → collection ids to merge onto
+    existing products (no second PDP).
     """
     rows: list[dict] = []
     existing_skus: set[str] = set()
@@ -2774,6 +2925,7 @@ def load_rows() -> tuple[
     mens_rtw_tags: dict[str, list[str]] = {}
     mens_shoes_tags: dict[str, list[str]] = {}
     mens_wallet_tags: dict[str, list[str]] = {}
+    mens_travel_tags: dict[str, list[str]] = {}
 
     def remember(sku: str) -> None:
         if not sku:
@@ -3024,6 +3176,38 @@ def load_rows() -> tuple[
             remember(sku)
             rows.append(row)
 
+    mens_travel_stats = {
+        "raw": 0,
+        "skipped_existing_sku": 0,
+        "skipped_existing_id": 0,
+        "tagged_existing": 0,
+        "kept": 0,
+    }
+    if MENS_TRAVEL_RAW.exists():
+        data = json.loads(MENS_TRAVEL_RAW.read_text())
+        for row in data.get("products") or []:
+            mens_travel_stats["raw"] += 1
+            row = dict(row)
+            row["kind"] = "mens-travel"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            briq_id = f"gc-{sku.lower()}" if sku else ""
+            mcols = mens_travel_cols_from_row(row)
+            if sku.upper() in existing_skus:
+                if mcols:
+                    mens_travel_tags[sku.upper()] = mcols
+                    mens_travel_stats["tagged_existing"] += 1
+                mens_travel_stats["skipped_existing_sku"] += 1
+                continue
+            if briq_id and briq_id in existing_ids:
+                if mcols:
+                    mens_travel_tags[sku.upper()] = mcols
+                    mens_travel_stats["tagged_existing"] += 1
+                mens_travel_stats["skipped_existing_id"] += 1
+                continue
+            mens_travel_stats["kept"] += 1
+            remember(sku)
+            rows.append(row)
+
     jewellery_stats = {
         "raw": 0,
         "skipped_existing_sku": 0,
@@ -3097,6 +3281,7 @@ def load_rows() -> tuple[
         mens_wallet_stats,
         fashion_stats,
         travel_stats,
+        mens_travel_stats,
         jewellery_stats,
         gifts_stats,
         gift_tags,
@@ -3104,6 +3289,7 @@ def load_rows() -> tuple[
         mens_rtw_tags,
         mens_shoes_tags,
         mens_wallet_tags,
+        mens_travel_tags,
     )
 
 
@@ -3117,6 +3303,7 @@ def main() -> None:
         mens_wallet_stats,
         fashion_stats,
         travel_stats,
+        mens_travel_stats,
         jewellery_stats,
         gifts_stats,
         gift_tags,
@@ -3124,6 +3311,7 @@ def main() -> None:
         mens_rtw_tags,
         mens_shoes_tags,
         mens_wallet_tags,
+        mens_travel_tags,
     ) = load_rows()
     if not rows:
         raise SystemExit(
@@ -3133,6 +3321,7 @@ def main() -> None:
             "scrape-gc-womens-shoes.py, scrape-gc-mens-shoes.py, "
             "scrape-gc-womens-wallets.py, scrape-gc-mens-wallets.py, "
             "scrape-gc-womens-fashion-accessories.py, scrape-gc-womens-travel.py, "
+            "scrape-gc-mens-travel.py, "
             "scrape-gc-jewellery-watches.py and/or scrape-gc-gifts.py first"
         )
 
@@ -3176,6 +3365,7 @@ def main() -> None:
     mens_rtw_tagged = apply_mens_rtw_membership(products, mens_rtw_tags)
     mens_shoes_tagged = apply_mens_shoe_membership(products, mens_shoes_tags)
     mens_wallet_tagged = apply_mens_wallet_membership(products, mens_wallet_tags)
+    mens_travel_tagged = apply_mens_travel_membership(products, mens_travel_tags)
     gift_tagged = apply_gift_membership(products, gift_tags)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
@@ -3183,7 +3373,7 @@ def main() -> None:
         'import data from "./gc-catalog.json";\n\n'
         "/** Auto-generated — Gucci handbags + men's bags + women's/men's RTW + "
         "women's/men's shoes + wallets + men's wallets + fashion accessories + "
-        "travel + jewellery + gifts. */\n"
+        "women's/men's travel + jewellery + gifts. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
@@ -3230,6 +3420,14 @@ def main() -> None:
             c in TRAVEL_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
         )
     )
+    mens_travel_n = sum(
+        1
+        for p in products
+        if "gc-men-travel" in (p.get("gcCollections") or [])
+        or any(
+            c in MEN_TRAVEL_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
+        )
+    )
     jewellery_n = sum(
         1
         for p in products
@@ -3248,7 +3446,7 @@ def main() -> None:
         f"  handbags: {bags_n}  mens-bags: {mens_bags_n}  rtw: {rtw_n}  "
         f"mens-rtw: {mens_rtw_n}  "
         f"shoes: {shoes_n}  mens-shoes: {mens_shoes_n}  accessories: {acc_n}  fashion: {fashion_n}  "
-        f"travel: {travel_n}  jewellery: {jewellery_n}  gifts: {gifts_n}",
+        f"travel: {travel_n}  mens-travel: {mens_travel_n}  jewellery: {jewellery_n}  gifts: {gifts_n}",
         flush=True,
     )
     if mens_bag_stats["raw"]:
@@ -3353,6 +3551,23 @@ def main() -> None:
             f"skipped_style_color={travel_stats['skipped_style_color']}",
             flush=True,
         )
+    if mens_travel_stats["raw"]:
+        skipped = (
+            mens_travel_stats["skipped_existing_sku"]
+            + mens_travel_stats["skipped_existing_id"]
+        )
+        print(
+            f"  mens-travel raw={mens_travel_stats['raw']} "
+            f"kept={mens_travel_stats['kept']} skipped={skipped} "
+            f"tagged_existing={mens_travel_stats.get('tagged_existing', 0)} "
+            f"(merged onto products={mens_travel_tagged}) "
+            f"(sku={mens_travel_stats['skipped_existing_sku']} "
+            f"id={mens_travel_stats['skipped_existing_id']})",
+            flush=True,
+        )
+        for leaf in MEN_TRAVEL_LEAF_COLLECTIONS:
+            n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+            print(f"    {leaf}: {n}", flush=True)
     if jewellery_stats["raw"]:
         print(
             f"  jewellery raw={jewellery_stats['raw']} "
@@ -3391,6 +3606,9 @@ def main() -> None:
     for leaf in TRAVEL_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
+    for leaf in MEN_TRAVEL_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+        print(f"  {leaf}: {n}", flush=True)
     for leaf in JEWELLERY_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
@@ -3407,6 +3625,16 @@ def main() -> None:
     )
     if travel_parent_only:
         print(f"  gc-women-travel (no leaf): {travel_parent_only}", flush=True)
+    mens_travel_parent_only = sum(
+        1
+        for p in products
+        if "gc-men-travel" in (p.get("gcCollections") or [])
+        and not any(
+            c in MEN_TRAVEL_LEAF_COLLECTIONS for c in (p.get("gcCollections") or [])
+        )
+    )
+    if mens_travel_parent_only:
+        print(f"  gc-men-travel (no leaf): {mens_travel_parent_only}", flush=True)
     jw_parent_only = sum(
         1
         for p in products
