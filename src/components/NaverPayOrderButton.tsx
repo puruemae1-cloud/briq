@@ -101,6 +101,7 @@ export function NaverPayOrderButton({
   useEffect(() => {
     if (!show) return;
     let cancelled = false;
+    let sideObs: MutationObserver | undefined;
     const mountEl = document.getElementById(containerId);
     if (mountEl) mountEl.innerHTML = "";
 
@@ -129,8 +130,8 @@ export function NaverPayOrderButton({
         backUrl ||
         (typeof window !== "undefined" ? window.location.href : `${origin}/cart`);
 
-      // V2.1 template: only the buy button is required. wishlist / talkTalk /
-      // benefit extras are optional ("구매하기 외 구성요소는 가맹점 선택").
+      // Buy button only — wishlist / talkTalk / benefits are optional per Naver.
+      // Omit those component flags; CSS + MutationObserver strip any leftovers.
       window.Npay.order.create({
         buttonKey,
         containerId,
@@ -138,12 +139,6 @@ export function NaverPayOrderButton({
         type: "template",
         colorTheme: "green",
         enable: true,
-        components: {
-          talkTalk: false,
-          wishlist: false,
-          benefitMessage: false,
-          benefitCoachMark: false,
-        },
         onBuyClick: async (): Promise<NpayBuyResult | null> => {
           try {
             const res = await fetch("/api/naverpay/order", {
@@ -171,11 +166,33 @@ export function NaverPayOrderButton({
           }
         },
       });
+
+      const root = document.getElementById(containerId);
+      if (!root || cancelled) return;
+      const stripSideButtons = () => {
+        root
+          .querySelectorAll(
+            [
+              ".npay_side_cell",
+              ".npay_link_wishlist",
+              ".npay_wishlist",
+              ".npay_talktalk",
+              ".npay_link_talktalk",
+              '[class*="wishlist"]',
+              '[class*="talktalk"]',
+            ].join(", "),
+          )
+          .forEach((el) => el.remove());
+      };
+      stripSideButtons();
+      sideObs = new MutationObserver(stripSideButtons);
+      sideObs.observe(root, { childList: true, subtree: true });
     }
 
     void mount();
     return () => {
       cancelled = true;
+      sideObs?.disconnect();
     };
   }, [show, containerId, itemsKey, backUrl, page]);
 
