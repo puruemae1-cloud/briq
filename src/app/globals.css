@@ -5170,21 +5170,36 @@ body:has(.pdp-dock) .back-to-top {
   max-width: 18rem;
 }
 
-.pdp-dock__npay {
-  padding: 0.55rem 0.85rem 0.85rem;
-  background: rgba(247, 248, 245, 0.96);
-  border-top: 1px solid rgba(11, 18, 16, 0.08);
-  pointer-events: auto;
+/* Dock: Npay buy sits beside 구매하기 (all products, PC + mobile). */
+.npay-order-button--dock {
+  flex: 0 1 auto;
+  width: auto;
+  min-width: 9.5rem;
+  max-width: 14rem;
+  margin: 0;
 }
 
-.pdp-dock__npay .npay-order-button {
-  max-width: none;
+.npay-order-button--dock .npay-order-button__mount {
+  min-width: 9.5rem;
+  min-height: 2.7rem;
+  height: 100%;
 }
 
-/* PC: no Npay on sticky bottom dock — only beside size chart / buy actions. */
-@media (min-width: 900px) {
-  .pdp-dock__npay {
-    display: none !important;
+.npay-order-button--dock .npay_button_sdk_wrapper,
+.npay-order-button--dock .npay_button_area,
+.npay-order-button--dock .npay_main_cell,
+.npay-order-button--dock .npay_main_cell > a {
+  height: 100%;
+  min-height: 2.7rem;
+}
+
+@media (min-width: 760px) {
+  .pdp-dock__actions {
+    align-items: stretch;
+  }
+
+  .npay-order-button--dock {
+    min-width: 10.5rem;
   }
 }
 
