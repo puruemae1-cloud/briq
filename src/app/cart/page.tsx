@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { removeFromCart, updateCartQty } from "@/app/cart/actions";
+import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
 import { ProductImage } from "@/components/ProductImage";
 import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";
 import { formatKrw } from "@/data/products";
@@ -28,6 +29,13 @@ export default async function CartPage() {
       </section>
     );
   }
+
+  const npayItems = items.map(({ product, variant, braceletCm, qty }) => ({
+    productId: product.id,
+    variantId: variant?.id,
+    braceletCm,
+    qty,
+  }));
 
   return (
     <section className="section">
@@ -106,11 +114,18 @@ export default async function CartPage() {
             </div>
           );
         })}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div className="cart-checkout-row">
           <strong>합계 {formatKrw(total)}</strong>
-          <Link href="/checkout" className="btn btn-solid">
-            결제하기
-          </Link>
+          <div className="cart-checkout-row__actions">
+            <Link href="/checkout" className="btn btn-solid">
+              결제하기
+            </Link>
+            <NaverPayOrderButton
+              page="cart"
+              items={npayItems}
+              className="npay-order-button npay-order-button--cart"
+            />
+          </div>
         </div>
       </div>
     </section>

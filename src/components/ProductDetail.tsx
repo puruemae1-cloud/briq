@@ -12,6 +12,7 @@ import { ProductStorySections } from "@/components/ProductStorySections";
 import { ProductTechSpecs } from "@/components/ProductTechSpecs";
 import { SizeChartControl } from "@/components/SizeChartControl";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
+import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
 import type { Product, ProductVariant } from "@/data/products";
 import {
   formatKrw,
@@ -377,6 +378,22 @@ export function ProductDetail({
               <Link href="/cart" className="btn btn-outline">
                 장바구니 보기
               </Link>
+              <NaverPayOrderButton
+                page="product"
+                enabled={!soldOut}
+                className="npay-order-button npay-order-button--pdp"
+                items={[
+                  {
+                    productId: product.id,
+                    variantId: selected?.id,
+                    braceletCm:
+                      product.braceletResize && braceletCm !== "no"
+                        ? braceletCm
+                        : undefined,
+                    qty: 1,
+                  },
+                ]}
+              />
             </div>
           )}
         </div>
@@ -496,6 +513,26 @@ export function ProductDetail({
             )}
           </div>
         </div>
+        {!soldOut ? (
+          <div className="pdp-dock__npay">
+            <NaverPayOrderButton
+              page="product"
+              enabled={!soldOut}
+              className="npay-order-button npay-order-button--dock"
+              items={[
+                {
+                  productId: product.id,
+                  variantId: selected?.id,
+                  braceletCm:
+                    product.braceletResize && braceletCm !== "no"
+                      ? braceletCm
+                      : undefined,
+                  qty: 1,
+                },
+              ]}
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   );

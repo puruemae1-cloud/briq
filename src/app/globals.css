@@ -5128,6 +5128,53 @@ body:has(.pdp-dock) .back-to-top {
   gap: 1rem;
 }
 
+.cart-checkout-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-checkout-row__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.npay-order-button {
+  width: 100%;
+  max-width: 22rem;
+  min-width: 12.5rem;
+}
+
+.npay-order-button__mount {
+  min-width: 200px;
+  min-height: 96px;
+  width: 100%;
+}
+
+.npay-order-button--pdp {
+  flex: 1 1 100%;
+  max-width: none;
+  margin-top: 0.25rem;
+}
+
+.npay-order-button--cart {
+  max-width: 18rem;
+}
+
+.pdp-dock__npay {
+  padding: 0.55rem 0.85rem 0.85rem;
+  background: rgba(247, 248, 245, 0.96);
+  border-top: 1px solid rgba(11, 18, 16, 0.08);
+}
+
+.pdp-dock__npay .npay-order-button {
+  max-width: none;
+}
+
 .cart-item {
   display: grid;
   grid-template-columns: 88px 1fr auto;

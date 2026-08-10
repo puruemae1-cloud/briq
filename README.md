@@ -41,7 +41,26 @@ npm start
 cp .env.example .env.local
 ```
 
-코드 자리: `src/lib/payments.ts`
+코드 자리: `src/lib/payments.ts` (기존 데모 체크아웃)
+
+### 네이버페이 주문형 V2.1 (샌드박스)
+
+독립몰 주문형 연동 스켈레톤이 포함되어 있습니다 (`NEXT_PUBLIC_NAVERPAY_SANDBOX=true` 기본).
+
+| 환경변수 | 공개 | 설명 |
+|---------|------|------|
+| `NEXT_PUBLIC_NAVERPAY_ORDER` | yes | `true`면 버튼 강제 노출 |
+| `NEXT_PUBLIC_NAVERPAY_SANDBOX` | yes | `false`만 운영 URL (검수 승인 후) |
+| `NEXT_PUBLIC_NAVER_WCS_ACCOUNT` | yes | 네이버공통인증키 (wcs) |
+| `NEXT_PUBLIC_NAVERPAY_BUTTON_KEY` | yes | 버튼 인증키 (SDK용) |
+| `NAVERPAY_MERCHANT_ID` | **no** | 상점 ID |
+| `NAVERPAY_CERTI_KEY` | **no** | 가맹점인증키 (서버 전용) |
+
+- 상품정보 XML: `/api/naverpay/product-info?product[0][id]=<productId>`
+- 주문 등록: `POST /api/naverpay/order` (서버→Naver register XML)
+- 버튼: PDP · 장바구니 (기존 `/checkout` 데모 결제와 병행)
+
+검수 요청 전 `dl_techsupport@navercorp.com`으로 테스트 URL + 상품정보 XML URL을 전달해야 합니다. 배송비·반품지·톡톡 등은 플레이스홀더이므로 가맹점 설정 후 교체하세요.
 
 ## 도메인
 

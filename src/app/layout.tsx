@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
+import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCartCount } from "@/lib/cart-server";
@@ -81,6 +82,7 @@ export default async function RootLayout({
         <a href="#top" className="back-to-top" aria-label="맨 위로">
           <span aria-hidden="true">↑</span>
         </a>
+        <NaverWcsScript />
       </body>
     </html>
   );
