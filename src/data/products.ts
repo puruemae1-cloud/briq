@@ -236,141 +236,7 @@ export function isVariantInStock(product: Product, variantId?: string | null) {
   return product.inStock !== false;
 }
 
-const chinoCapVariants: ProductVariant[] = [
-  {
-    id: "black-white",
-    name: "black/white",
-    nameKo: "블랙/화이트",
-    sku: "PO252P011-Q11",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-black-white.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-cotton-chino-ball-cap-cap-blackwhite-po252p011-q11.html",
-    inStock: false,
-  },
-  {
-    id: "company-olive",
-    name: "company olive",
-    nameKo: "컴퍼니 올리브",
-    sku: "PO252P011-M15",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-company-olive.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-the-iconic-cotton-chino-ball-cap-cap-company-olive-po252p011-m15.html",
-    inStock: false,
-  },
-  {
-    id: "cruise-lime",
-    name: "cruise lime",
-    nameKo: "크루즈 라임",
-    sku: "PO252P011-K19",
-    gbpPrice: 60,
-    price: gbpToBriqKrw(60),
-    image: "/products/prl-chino-cap-cruise-lime.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-the-iconic-cotton-chino-ball-cap-cap-cruise-lime-po252p011-k19.html",
-    inStock: false,
-  },
-  {
-    id: "garden-trail-cream",
-    name: "garden trail/cream pp",
-    nameKo: "가든 트레일/크림",
-    sku: "PO252P011-Q12",
-    gbpPrice: 54,
-    price: gbpToBriqKrw(54),
-    image: "/products/prl-chino-cap-garden-trail-cream.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-the-iconic-cotton-chino-ball-cap-cap-garden-trailcream-pp-po252p011-q12.html",
-    inStock: false,
-  },
-  {
-    id: "new-forest",
-    name: "new forest",
-    nameKo: "뉴 포레스트",
-    sku: "PO252P011-M11",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-new-forest.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-cotton-chino-ball-cap-cap-new-forest-po252p011-m11.html",
-    inStock: false,
-  },
-  {
-    id: "rustic-navy",
-    name: "rustic navy",
-    nameKo: "러스틱 네이비",
-    sku: "PO252P011-K13",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-rustic-navy.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-chino-ball-hat-cap-rustic-navy-po252p011-k13.html",
-    inStock: false,
-  },
-  {
-    id: "rustic-tan",
-    name: "rustic tan",
-    nameKo: "러스틱 탄",
-    sku: "PO252P011-B11",
-    gbpPrice: 54,
-    price: gbpToBriqKrw(54),
-    image: "/products/prl-chino-cap-rustic-tan.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-cotton-chino-ball-cap-cap-rustic-tan-po252p011-b11.html",
-    inStock: false,
-  },
-  {
-    id: "terrace-pink",
-    name: "terrace pink/c7560",
-    nameKo: "테라스 핑크",
-    sku: "PO252P011-J11",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-terrace-pink.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-the-iconic-cotton-chino-ball-cap-cap-terrace-pinkc7560-po252p011-j11.html",
-    inStock: false,
-  },
-  {
-    id: "wisteria",
-    name: "wisteria w/ c9601",
-    nameKo: "위스테리아",
-    sku: "PO252P011-I12",
-    gbpPrice: 70,
-    price: gbpToBriqKrw(70),
-    image: "/products/prl-chino-cap-wisteria.jpg",
-    sourceUrl:
-      "https://www.zalando.co.uk/polo-ralph-lauren-the-iconic-cotton-chino-ball-cap-cap-wisteria-w-c9601-po252p011-i12.html",
-    inStock: false,
-  },
-];
-
-const chinoCapMinPrice = Math.min(...chinoCapVariants.map((v) => v.price));
-
 export const products: Product[] = [
-  {
-    id: "prl-chino-cap",
-    name: "The Iconic Cotton Chino Ball Cap",
-    nameKo: "폴로 랄프 로렌 아이코닉 코튼 치노 볼캡",
-    brand: "Polo Ralph Lauren",
-    price: chinoCapMinPrice,
-    gbpPrice: Math.min(...chinoCapVariants.map((v) => v.gbpPrice)),
-    category: "accessories",
-    tags: ["cap", "cotton", "one-size"],
-    descriptionKo: "100% 코튼 치노 볼캡. 포니 자수, 버클 조절 스트랩. 사이즈 One Size.",
-    image: chinoCapVariants[0].image,
-    images: chinoCapVariants.map((v) => v.image),
-    accent: "#1a1a1a",
-    badge: "New",
-    editTier: "new",
-    size: "One Size",
-    sku: "PO252P011",
-    sourceUrl: chinoCapVariants[0].sourceUrl,
-    variants: chinoCapVariants,
-    registeredAt: "2026-07-20T09:00:00.000Z",
-  },
   ...cwProducts,
   ...ggCatalogProducts,
   ...bbCatalogProducts,
@@ -384,7 +250,6 @@ export const products: Product[] = [
   ...bsCatalogProducts,
   ...gcCatalogProducts,
 ];
-
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
 export function getCollection100() {
   return products;
@@ -397,9 +262,6 @@ export function formatKrw(price: number) {
 }
 
 export function getProduct(id: string) {
-  if (id === "prl-chino-cap-old-royal") {
-    return products.find((p) => p.id === "prl-chino-cap");
-  }
   const direct = products.find((p) => p.id === id);
   if (direct) return direct;
   // CW strap variants share a parent product — resolve by variant id or sku slug.

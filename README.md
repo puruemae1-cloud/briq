@@ -64,6 +64,7 @@ cp .env.example .env.local
 - 버튼: PDP · 장바구니 (기존 `/checkout` 데모 결제와 병행)
 - 배송비: 상품가에 해외 항공·관세 포함 → Npay `feeType=FREE`
 - 옵션: variant `manageCode`가 order XML ↔ product-info combination에 동일
+- 검수 테스트 상품: `cw-c01-39ajh4-s00b0-b1` (옵션), `gc-768255fafbe8448`
 
 검수 요청: `dl_techsupport@navercorp.com` 으로 가맹점명·상점ID·연동버전(2.1)·테스트 PDP URL·상품정보 XML URL 전달.
 
