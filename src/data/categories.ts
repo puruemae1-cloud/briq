@@ -569,7 +569,32 @@ export type SubcategoryId =
   | "gc-men-gifts-small-leathergoods"
   | "gc-men-gifts-sunglasses"
   | "gc-men-gifts-watches"
-  | "gc-men-gifts-personalised";
+  | "gc-men-gifts-personalised"
+  | "chanel"
+  | "ch-women"
+  | "ch-women-rtw"
+  | "ch-women-looks"
+  | "ch-women-jackets"
+  | "ch-women-dresses"
+  | "ch-women-blouses-tops"
+  | "ch-women-cardigans-sweaters"
+  | "ch-women-skirts"
+  | "ch-women-trousers-shorts"
+  | "ch-women-swimwear"
+  | "ch-women-outerwear";
+
+/** Chanel Ready-to-Wear official GB fashion leaves. */
+export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-looks",
+  "ch-women-jackets",
+  "ch-women-dresses",
+  "ch-women-blouses-tops",
+  "ch-women-cardigans-sweaters",
+  "ch-women-skirts",
+  "ch-women-trousers-shorts",
+  "ch-women-swimwear",
+  "ch-women-outerwear",
+];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -1502,6 +1527,18 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-men-leather": ["gc-men-leather"],
   "gc-men-formal-wear": ["gc-men-formal-wear"],
   "gc-men-coats-jackets": ["gc-men-coats-jackets"],
+  chanel: ["chanel", "ch-women", "ch-women-rtw", ...CH_WOMEN_RTW_LEAF_IDS],
+  "ch-women": ["ch-women", "ch-women-rtw", ...CH_WOMEN_RTW_LEAF_IDS],
+  "ch-women-rtw": ["ch-women-rtw", ...CH_WOMEN_RTW_LEAF_IDS],
+  "ch-women-looks": ["ch-women-looks"],
+  "ch-women-jackets": ["ch-women-jackets"],
+  "ch-women-dresses": ["ch-women-dresses"],
+  "ch-women-blouses-tops": ["ch-women-blouses-tops"],
+  "ch-women-cardigans-sweaters": ["ch-women-cardigans-sweaters"],
+  "ch-women-skirts": ["ch-women-skirts"],
+  "ch-women-trousers-shorts": ["ch-women-trousers-shorts"],
+  "ch-women-swimwear": ["ch-women-swimwear"],
+  "ch-women-outerwear": ["ch-women-outerwear"],
   "gc-women-shoulder-bags": ["gc-women-shoulder-bags"],
   "gc-women-mini-bags": ["gc-women-mini-bags"],
   "gc-women-crossbody-bags": ["gc-women-crossbody-bags"],
@@ -2343,6 +2380,71 @@ export const navCategories: NavCategory[] = [
                 id: "gc-men-coats-jackets",
                 labelKo: "코트 & 재킷",
                 href: "/shop?category=luxury&sub=gc-men-coats-jackets",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "chanel",
+        labelKo: "샤넬",
+        href: "/shop?category=luxury&sub=chanel",
+        children: [
+          {
+            id: "ch-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=ch-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "ch-women-rtw",
+                labelKo: "전체보기",
+                href: "/shop?category=luxury&sub=ch-women-rtw",
+              },
+              {
+                id: "ch-women-looks",
+                labelKo: "전체 룩",
+                href: "/shop?category=luxury&sub=ch-women-looks",
+              },
+              {
+                id: "ch-women-jackets",
+                labelKo: "재킷",
+                href: "/shop?category=luxury&sub=ch-women-jackets",
+              },
+              {
+                id: "ch-women-dresses",
+                labelKo: "드레스",
+                href: "/shop?category=luxury&sub=ch-women-dresses",
+              },
+              {
+                id: "ch-women-blouses-tops",
+                labelKo: "블라우스 & 탑",
+                href: "/shop?category=luxury&sub=ch-women-blouses-tops",
+              },
+              {
+                id: "ch-women-cardigans-sweaters",
+                labelKo: "가디건 & 스웨터",
+                href: "/shop?category=luxury&sub=ch-women-cardigans-sweaters",
+              },
+              {
+                id: "ch-women-skirts",
+                labelKo: "스커트",
+                href: "/shop?category=luxury&sub=ch-women-skirts",
+              },
+              {
+                id: "ch-women-trousers-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=ch-women-trousers-shorts",
+              },
+              {
+                id: "ch-women-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=ch-women-swimwear",
+              },
+              {
+                id: "ch-women-outerwear",
+                labelKo: "아우터웨어",
+                href: "/shop?category=luxury&sub=ch-women-outerwear",
               },
             ],
           },

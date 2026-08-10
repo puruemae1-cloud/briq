@@ -7,6 +7,7 @@ serves via raw.githubusercontent.com/.../product-images/...
 
   python3 scripts/verify-product-images.py --brand gc
   python3 scripts/verify-product-images.py --brand gc --remote
+  python3 scripts/verify-product-images.py --brand ch --remote
   python3 scripts/verify-product-images.py --ids gc-768255fafbe8448 --remote
 
 Exit 1 if any primary image is missing locally (default) or on the tag (--remote).
@@ -27,6 +28,7 @@ BRAND_CATALOGS = {
     "gc": ROOT / "src/data/gc/gc-catalog.json",
     "bb": ROOT / "src/data/bb/bb-catalog.json",
     "ps": ROOT / "src/data/ps/ps-catalog.json",
+    "ch": ROOT / "src/data/ch/ch-catalog.json",
 }
 
 
