@@ -5175,6 +5175,14 @@ body:has(.pdp-dock) .back-to-top {
   max-width: none;
 }
 
+/* PC: Npay only beside 구매하기 (product-detail__actions). Dock duplicate is not
+   required by Naver 주문형 — one PDP button is enough. Keep dock Npay on mobile. */
+@media (min-width: 900px) {
+  .pdp-dock__npay {
+    display: none;
+  }
+}
+
 .cart-item {
   display: grid;
   grid-template-columns: 88px 1fr auto;
