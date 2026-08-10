@@ -18,7 +18,7 @@ const notices: { title: string; body: ReactNode }[] = [
         특성상,{" "}
         <strong>결제 완료 이후에는 단순 변심으로 인한 주문 취소가 불가</strong>
         합니다.
-        <span className="purchase-notice__mobile-gap" aria-hidden="true" />
+        <span className="purchase-notice__para-break" aria-hidden="true" />
         아울러 해외 배송의 특성상{" "}
         <strong>
           제품 자체의 명백한 하자가 아닌 이상, 그 어떠한 사유로도 교환 및 반품이

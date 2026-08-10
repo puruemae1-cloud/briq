@@ -12,6 +12,10 @@ Two paths:
 Paul Smith pale colourways (white/ivory/cream/ecru/…) skip greymat entirely —
 rembg/soft remap destroyed those official packshots. See ps_pale_colour.py.
 
+Gucci pale / light colourways likewise keep official DarkGray_Center CDN bytes
+(see gc_pale_colour.py). gc-pdp is skipped by DEFAULT_DIRS, but when a push
+passes --dirs gc-pdp we must still exclude pale SKUs from rembg.
+
 Importable helpers for scrapers / weekly syncs / image tag pushes.
 """
 from __future__ import annotations
@@ -229,7 +233,7 @@ def save_product_image(
 ) -> str:
     """Write downloaded PDP bytes then optionally greymat studio mats in place.
 
-    Pass greymat=False for pale PS colourways (and Burberry-style official
+    Pass greymat=False for pale PS / GC colourways (and Burberry-style official
     crops) — rembg/soft remap turns white garments into grey blocks.
     """
     dest = Path(path)
@@ -264,6 +268,8 @@ def greymat_dirs(
 
     Paul Smith pale colourways (white/ivory/cream/ecru/…) are excluded — their
     official CDN packshots must stay untouched (see ps_pale_colour.py).
+
+    Gucci pale / light colourways are excluded the same way (gc_pale_colour.py).
     """
     files = collect_images(dirs)
     if "ps-pdp" in dirs:
@@ -284,6 +290,26 @@ def greymat_dirs(
             print(
                 f"PS pale skip: excluded {before - len(files)} images "
                 f"across {len(skip_handles)} white-ish handles",
+                flush=True,
+            )
+    if "gc-pdp" in dirs:
+        try:
+            from gc_pale_colour import pale_gc_codes  # type: ignore
+
+            skip_codes = pale_gc_codes()
+        except Exception as e:
+            print(f"WARN: could not load GC pale codes ({e})", flush=True)
+            skip_codes = set()
+        if skip_codes:
+            before = len(files)
+            files = [
+                p
+                for p in files
+                if p.parent.name not in skip_codes
+            ]
+            print(
+                f"GC pale skip: excluded {before - len(files)} images "
+                f"across {len(skip_codes)} white/light codes",
                 flush=True,
             )
     if limit:

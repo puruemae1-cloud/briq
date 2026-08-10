@@ -4023,16 +4023,10 @@ body:has(.pdp-dock) .back-to-top {
   color: var(--ink);
 }
 
-/* Mobile only: one blank line between cancel / return policy sentences */
-.purchase-notice__mobile-gap {
-  display: none;
-}
-
-@media (max-width: 899px) {
-  .purchase-notice__mobile-gap {
-    display: block;
-    height: 0.75em;
-  }
+/* Blank line between cancel / return policy sentences (all viewports) */
+.purchase-notice__para-break {
+  display: block;
+  height: 0.85em;
 }
 
 /* —— Product reviews & Q&A —— */
@@ -6292,32 +6286,43 @@ body:has(.pdp-dock) .back-to-top {
 }
 
 /* —— Tech specs —— */
+/* Match .purchase-notice container width / margins / type rhythm */
 .product-tech {
-  margin: 2.5rem 0 0;
-  padding: 2.25rem 0 0.5rem;
-  border-top: 1px solid rgba(11, 18, 16, 0.1);
+  margin: 0.5rem 1.25rem 2rem;
+  padding: 1.75rem 1.35rem 1.5rem;
+  border-top: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(247, 248, 245, 0.35));
+}
+
+@media (min-width: 900px) {
+  .product-tech {
+    margin: 0.25rem 2rem 3rem;
+    padding: 2.25rem 2rem 1.85rem;
+  }
 }
 
 .product-tech__inner {
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: 0 1.25rem 1rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-tech__eyebrow {
   margin: 0 0 0.35rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .product-tech__title {
   margin: 0 0 1.35rem;
-  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
-  letter-spacing: -0.02em;
-  font-weight: 620;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .product-tech__features {
