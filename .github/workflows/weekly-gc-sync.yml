@@ -1,0 +1,76 @@
+name: Weekly GC stock sync
+
+on:
+  schedule:
+    # Every Tuesday 07:00 UTC (~16:00 KST) — after Monday brand pile-up
+    - cron: "0 7 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-gc-stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Gucci scrape + image deps
+        run: |
+          pip install -r scripts/requirements-gc.txt
+          pip install -r scripts/requirements-images.txt
+
+      - name: Restore gc-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs gc-pdp
+
+      - name: Sync Gucci catalogue (stock + new + restock)
+        env:
+          GC_REFRESH_STOCK: "1"
+        run: python3 scripts/weekly-gc-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs gc-pdp
+
+      - name: Commit and push if changed
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Gucci stock + catalogue sync" \
+            src/data/gc \
+            src/data/products.ts \
+            src/data/categories.ts \
+            scripts/weekly-gc-stock-sync.py \
+            scripts/build-gc-catalog.py \
+            scripts/scrape-gc-handbags.py \
+            scripts/scrape-gc-mens-handbags.py \
+            scripts/scrape-gc-womens-rtw.py \
+            scripts/scrape-gc-mens-rtw.py \
+            scripts/scrape-gc-womens-shoes.py \
+            scripts/scrape-gc-mens-shoes.py \
+            scripts/scrape-gc-womens-wallets.py \
+            scripts/scrape-gc-mens-wallets.py \
+            scripts/scrape-gc-womens-fashion-accessories.py \
+            scripts/scrape-gc-mens-fashion-accessories.py \
+            scripts/scrape-gc-womens-travel.py \
+            scripts/scrape-gc-mens-travel.py \
+            scripts/scrape-gc-jewellery-watches.py \
+            scripts/scrape-gc-gifts.py \
+            scripts/scrape-gc-mens-gifts.py \
+            scripts/requirements-gc.txt \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/ci-commit-push.sh
