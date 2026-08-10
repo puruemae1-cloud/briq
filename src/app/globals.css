@@ -5145,8 +5145,19 @@ body:has(.pdp-dock) .back-to-top {
 
 .npay-order-button__mount {
   min-width: 200px;
-  min-height: 96px;
+  min-height: 52px;
   width: 100%;
+}
+
+/* Buy-only: hide wishlist / TalkTalk side chrome if SDK still injects it. */
+.npay-order-button__mount .npay_side_cell,
+.npay-order-button__mount .npay_link_wishlist,
+.npay-order-button__mount .npay_wishlist,
+.npay-order-button__mount .npay_talktalk,
+.npay-order-button__mount .npay_link_talktalk,
+.npay-order-button__mount [class*="wishlist"],
+.npay-order-button__mount [class*="talktalk"] {
+  display: none !important;
 }
 
 .npay-order-button--pdp {
@@ -5168,6 +5179,13 @@ body:has(.pdp-dock) .back-to-top {
 
 .pdp-dock__npay .npay-order-button {
   max-width: none;
+}
+
+/* PC: no Npay on sticky bottom dock — only beside size chart / buy actions. */
+@media (min-width: 900px) {
+  .pdp-dock__npay {
+    display: none !important;
+  }
 }
 
 .cart-item {
