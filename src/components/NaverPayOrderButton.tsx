@@ -27,7 +27,6 @@ type Props = {
 };
 
 type NpayBuyResult = { key: string; merchantNo: string };
-type NpayWishlistResult = { merchantId: string; payProductId: string };
 
 type NpaySdk = {
   order: {
@@ -76,9 +75,8 @@ function loadButtonScript(src: string): Promise<void> {
 }
 
 /**
- * 주문형 V2.1 template button.
+ * 주문형 V2.1 template button — buy only (wishlist / talkTalk optional per Naver).
  * onBuyClick → POST /api/naverpay/order → { key, merchantNo }.
- * onWishlistClick (PDP only) → POST /api/naverpay/wishlist → { merchantId, payProductId }.
  * Mobile uses the same APIs; SDK opens order sheet via location (not a popup).
  */
 export function NaverPayOrderButton({
@@ -131,8 +129,8 @@ export function NaverPayOrderButton({
         backUrl ||
         (typeof window !== "undefined" ? window.location.href : `${origin}/cart`);
 
-      const enableWishlist = page === "product" && itemsRef.current.length === 1;
-
+      // V2.1 template: only the buy button is required. wishlist / talkTalk /
+      // benefit extras are optional ("구매하기 외 구성요소는 가맹점 선택").
       window.Npay.order.create({
         buttonKey,
         containerId,
@@ -141,11 +139,10 @@ export function NaverPayOrderButton({
         colorTheme: "green",
         enable: true,
         components: {
-          // Cart: wishlist / talkTalk off per manual. Talk Talk needs separate channel setup.
           talkTalk: false,
-          wishlist: enableWishlist,
-          benefitMessage: true,
-          benefitCoachMark: page === "product",
+          wishlist: false,
+          benefitMessage: false,
+          benefitCoachMark: false,
         },
         onBuyClick: async (): Promise<NpayBuyResult | null> => {
           try {
@@ -173,45 +170,6 @@ export function NaverPayOrderButton({
             return null;
           }
         },
-        onWishlistClick: enableWishlist
-          ? async (): Promise<NpayWishlistResult | null> => {
-              try {
-                const item = itemsRef.current[0];
-                if (!item) return null;
-                const res = await fetch("/api/naverpay/wishlist", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({
-                    productId: item.productId,
-                    variantId: item.variantId,
-                    braceletCm: item.braceletCm,
-                  }),
-                });
-                const data = (await res.json()) as {
-                  ok?: boolean;
-                  merchantId?: string;
-                  payProductId?: string;
-                  message?: string;
-                };
-                if (
-                  !res.ok ||
-                  !data.ok ||
-                  !data.merchantId ||
-                  !data.payProductId
-                ) {
-                  alert(data.message || "네이버페이 찜 등록에 실패했습니다.");
-                  return null;
-                }
-                return {
-                  merchantId: data.merchantId,
-                  payProductId: data.payProductId,
-                };
-              } catch {
-                alert("네이버페이 찜 등록 중 오류가 발생했습니다.");
-                return null;
-              }
-            }
-          : undefined,
       });
     }
 
