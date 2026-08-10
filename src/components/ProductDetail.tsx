@@ -626,6 +626,22 @@ export function ProductDetail({
                     구매하기
                   </button>
                 </form>
+                <NaverPayOrderButton
+                  page="product"
+                  enabled={!soldOut}
+                  className="npay-order-button npay-order-button--dock"
+                  items={[
+                    {
+                      productId: product.id,
+                      variantId: selected?.id,
+                      braceletCm:
+                        product.braceletResize && braceletCm !== "no"
+                          ? braceletCm
+                          : undefined,
+                      qty: 1,
+                    },
+                  ]}
+                />
                 <form action={addToCart}>
                   {hiddenFields}
                   <button type="submit" className="btn btn-primary pdp-dock__cart">
@@ -636,26 +652,6 @@ export function ProductDetail({
             )}
           </div>
         </div>
-        {!soldOut ? (
-          <div className="pdp-dock__npay">
-            <NaverPayOrderButton
-              page="product"
-              enabled={!soldOut}
-              className="npay-order-button npay-order-button--dock"
-              items={[
-                {
-                  productId: product.id,
-                  variantId: selected?.id,
-                  braceletCm:
-                    product.braceletResize && braceletCm !== "no"
-                      ? braceletCm
-                      : undefined,
-                  qty: 1,
-                },
-              ]}
-            />
-          </div>
-        ) : null}
       </div>
     </div>
   );
