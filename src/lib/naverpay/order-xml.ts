@@ -80,6 +80,15 @@ export type ResolvedNaverPayLine = {
   imageUrl: string;
 };
 
+/**
+ * manageCode must match product-info `<combination><manageCode>`.
+ * Briq uses the variant id only. Bracelet resize is folded into basePrice + name
+ * (not a separate Npay option dimension) so codes stay in sync with combinations.
+ */
+export function variantManageCode(variantId: string): string {
+  return toNaverManageCode(variantId);
+}
+
 export function resolveOrderLines(
   inputs: NaverPayOrderLineInput[],
 ): ResolvedNaverPayLine[] {
@@ -88,6 +97,9 @@ export function resolveOrderLines(
     const product = getProduct(row.productId);
     if (!product) continue;
     const qty = Math.max(1, Math.min(999, Math.floor(row.qty) || 1));
+    const hasVariants = Boolean(product.variants && product.variants.length > 0);
+    // Variant SKUs must send the selected variant — required for 검수 option XML.
+    if (hasVariants && !row.variantId) continue;
     const variant = row.variantId
       ? product.variants?.find((v) => v.id === row.variantId)
       : undefined;
@@ -100,20 +112,17 @@ export function resolveOrderLines(
           variant.size ? `&size=${encodeURIComponent(variant.size)}` : ""
         }`
       : `/product/${product.id}`;
-    const hasOption = Boolean(variant || (row.braceletCm && row.braceletCm !== "no"));
-    // manageCode must match product-info <combination><manageCode> (variant id).
-    const manageCode = hasOption
-      ? toNaverManageCode(
-          variant
-            ? row.braceletCm && row.braceletCm !== "no"
-              ? `${variant.id}_${row.braceletCm}`
-              : variant.id
-            : row.braceletCm || "default",
-        )
-      : undefined;
-    const optionLabel = variant
-      ? [variant.colorNameKo || variant.nameKo, variant.size].filter(Boolean).join(" · ")
-      : undefined;
+    const manageCode = variant ? variantManageCode(variant.id) : undefined;
+    const braceletLabel =
+      row.braceletCm && row.braceletCm !== "no" ? `${row.braceletCm}cm` : undefined;
+    const optionLabel = [
+      variant
+        ? [variant.colorNameKo || variant.nameKo, variant.size].filter(Boolean).join(" · ")
+        : undefined,
+      braceletLabel,
+    ]
+      .filter(Boolean)
+      .join(" · ");
     out.push({
       product,
       variant,
@@ -122,7 +131,7 @@ export function resolveOrderLines(
       unitPrice,
       naverProductId: toNaverProductId(product.id),
       manageCode,
-      optionLabel,
+      optionLabel: optionLabel || undefined,
       infoUrl: absoluteUrl(infoPath),
       imageUrl: absoluteUrl(image),
     });
@@ -144,36 +153,28 @@ function shippingPolicyXml(): string {
 }
 
 function optionXml(line: ResolvedNaverPayLine): string {
-  if (!line.manageCode) {
+  if (!line.manageCode || !line.variant) {
     return `<single><quantity>${line.qty}</quantity></single>`;
   }
   const selected: string[] = [];
-  if (line.variant) {
-    if (line.variant.colorNameKo || line.variant.colorKey) {
-      const id = toNaverManageCode(line.variant.colorKey || line.variant.id);
-      const text = line.variant.colorNameKo || line.variant.nameKo || id;
-      selected.push(
-        `<selectedItem><type>SELECT</type><name>${cdata("컬러")}</name><value><id>${escapeXml(id)}</id><text>${cdata(text)}</text></value></selectedItem>`,
-      );
-    }
-    if (line.variant.size) {
-      const id = toNaverManageCode(line.variant.size);
-      selected.push(
-        `<selectedItem><type>SELECT</type><name>${cdata("사이즈")}</name><value><id>${escapeXml(id)}</id><text>${cdata(line.variant.size)}</text></value></selectedItem>`,
-      );
-    }
-    if (selected.length === 0) {
-      selected.push(
-        `<selectedItem><type>SELECT</type><name>${cdata("옵션")}</name><value><id>${escapeXml(toNaverManageCode(line.variant.id))}</id><text>${cdata(line.variant.nameKo || line.variant.id)}</text></value></selectedItem>`,
-      );
-    }
-  }
-  if (line.braceletCm && line.braceletCm !== "no") {
+  const v = line.variant;
+  // Mirror product-info optionItem names/ids (컬러+사이즈 or 옵션).
+  if (v.size) {
+    const colorId = toNaverManageCode(v.colorKey || v.id);
+    const colorText = v.colorNameKo || v.nameKo || colorId;
     selected.push(
-      `<selectedItem><type>SELECT</type><name>${cdata("브레이슬릿")}</name><value><id>${escapeXml(toNaverManageCode(line.braceletCm))}</id><text>${cdata(`${line.braceletCm}cm`)}</text></value></selectedItem>`,
+      `<selectedItem><type>SELECT</type><name>${cdata("컬러")}</name><value><id>${escapeXml(colorId)}</id><text>${cdata(colorText)}</text></value></selectedItem>`,
+    );
+    selected.push(
+      `<selectedItem><type>SELECT</type><name>${cdata("사이즈")}</name><value><id>${escapeXml(toNaverManageCode(v.size))}</id><text>${cdata(v.size)}</text></value></selectedItem>`,
+    );
+  } else {
+    selected.push(
+      `<selectedItem><type>SELECT</type><name>${cdata("옵션")}</name><value><id>${escapeXml(toNaverManageCode(v.id))}</id><text>${cdata(v.nameKo || v.name || v.id)}</text></value></selectedItem>`,
     );
   }
-  // Option add-on price is folded into basePrice for Briq (unit already includes bracelet fee).
+  // Bracelet resize fee is already in basePrice; do not emit a separate option
+  // (product-info combinations key off variant id only — see variantManageCode).
   return [
     "<option>",
     `<manageCode>${cdata(line.manageCode)}</manageCode>`,

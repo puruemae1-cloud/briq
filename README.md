@@ -45,22 +45,27 @@ cp .env.example .env.local
 
 ### 네이버페이 주문형 V2.1 (샌드박스)
 
-독립몰 주문형 연동 스켈레톤이 포함되어 있습니다 (`NEXT_PUBLIC_NAVERPAY_SANDBOX=true` 기본).
+독립몰 주문형 연동이 포함되어 있습니다 (`NEXT_PUBLIC_NAVERPAY_SANDBOX=true` 기본).
 
 | 환경변수 | 공개 | 설명 |
 |---------|------|------|
-| `NEXT_PUBLIC_NAVERPAY_ORDER` | yes | `true`면 버튼 강제 노출 |
+| `NEXT_PUBLIC_NAVERPAY_ORDER` | yes | `true`면 버튼 강제 노출 (Vercel production에 키 있을 때 `true`) |
 | `NEXT_PUBLIC_NAVERPAY_SANDBOX` | yes | `false`만 운영 URL (검수 승인 후) |
+| `NEXT_PUBLIC_SITE_URL` | yes | 상품/이미지 absolute URL origin |
 | `NEXT_PUBLIC_NAVER_WCS_ACCOUNT` | yes | 네이버공통인증키 (wcs) |
 | `NEXT_PUBLIC_NAVERPAY_BUTTON_KEY` | yes | 버튼 인증키 (SDK용) |
 | `NAVERPAY_MERCHANT_ID` | **no** | 상점 ID |
 | `NAVERPAY_CERTI_KEY` | **no** | 가맹점인증키 (서버 전용) |
+| `NAVERPAY_RETURN_*` | **no** | 반품지 오버라이드 (미설정 시 푸터 사업자 정보) |
 
 - 상품정보 XML: `/api/naverpay/product-info?product[0][id]=<productId>`
 - 주문 등록: `POST /api/naverpay/order` (서버→Naver register XML)
+- 찜 등록: `POST /api/naverpay/wishlist` (PDP 버튼 `onWishlistClick`)
 - 버튼: PDP · 장바구니 (기존 `/checkout` 데모 결제와 병행)
+- 배송비: 상품가에 해외 항공·관세 포함 → Npay `feeType=FREE`
+- 옵션: variant `manageCode`가 order XML ↔ product-info combination에 동일
 
-검수 요청 전 `dl_techsupport@navercorp.com`으로 테스트 URL + 상품정보 XML URL을 전달해야 합니다. 배송비·반품지·톡톡 등은 플레이스홀더이므로 가맹점 설정 후 교체하세요.
+검수 요청: `dl_techsupport@navercorp.com` 으로 가맹점명·상점ID·연동버전(2.1)·테스트 PDP URL·상품정보 XML URL 전달.
 
 ## 도메인
 

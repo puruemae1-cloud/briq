@@ -5,7 +5,7 @@ import {
   type ProductVariant,
 } from "@/data/products";
 import {
-  NAVERPAY_RETURN_INFO_PLACEHOLDER,
+  getNaverPayReturnInfo,
   NAVERPAY_SHIPPING_DEFAULTS,
   NAVERPAY_TAX_TYPE,
 } from "@/lib/naverpay/config";
@@ -16,6 +16,7 @@ import {
   resolveBriqProductId,
   toNaverManageCode,
   toNaverProductId,
+  variantManageCode,
 } from "@/lib/naverpay/order-xml";
 import { resolveProductImage } from "@/lib/product-image";
 
@@ -41,7 +42,9 @@ export function parseProductInfoQuery(url: URL): ProductInfoQuery[] {
       if (field === "id") {
         row.id = value;
       } else {
-        row.optionManageCodes = [...(row.optionManageCodes ?? []), value].filter(Boolean);
+        // Support comma-separated codes in a single param.
+        const parts = value.split(",").map((s) => s.trim()).filter(Boolean);
+        row.optionManageCodes = [...(row.optionManageCodes ?? []), ...parts];
       }
       indexed.set(idx, row);
       continue;
@@ -60,7 +63,9 @@ export function parseProductInfoQuery(url: URL): ProductInfoQuery[] {
     url.searchParams.get("productId") ||
     url.searchParams.get("ITEM_ID");
   if (single) {
-    const codes = url.searchParams.getAll("optionManageCodes");
+    const codes = url.searchParams.getAll("optionManageCodes").flatMap((v) =>
+      v.split(",").map((s) => s.trim()).filter(Boolean),
+    );
     return [{ id: single, optionManageCodes: codes.length ? codes : undefined }];
   }
   return out;
@@ -80,7 +85,7 @@ function shippingPolicyXml(): string {
 }
 
 function returnInfoXml(): string {
-  const r = NAVERPAY_RETURN_INFO_PLACEHOLDER;
+  const r = getNaverPayReturnInfo();
   return [
     "<returnInfo>",
     `<zipcode>${escapeXml(r.zipcode)}</zipcode>`,
@@ -92,15 +97,31 @@ function returnInfoXml(): string {
   ].join("");
 }
 
-function optionBlockXml(product: Product): string {
+/**
+ * Option axes: size variants → 컬러 + 사이즈; otherwise single 옵션 per variant id.
+ * Combination manageCode = variant id (must match order XML).
+ */
+function optionBlockXml(
+  product: Product,
+  optionManageCodes?: string[],
+): string {
   const variants = product.variants ?? [];
   if (variants.length === 0) return "";
 
-  const hasSizes = variants.some((v) => Boolean(v.size));
+  const codeFilter = optionManageCodes?.length
+    ? new Set(optionManageCodes.map((c) => toNaverManageCode(c)))
+    : null;
+  const filtered = codeFilter
+    ? variants.filter((v) => codeFilter.has(variantManageCode(v.id)))
+    : variants;
+  // If Naver asked for codes we don't have, still return full catalogue (safer for 검수).
+  const list = filtered.length > 0 ? filtered : variants;
+
+  const hasSizes = list.some((v) => Boolean(v.size));
   const colorMap = new Map<string, { id: string; text: string; status: boolean }>();
   const sizeMap = new Map<string, { id: string; text: string; status: boolean }>();
 
-  for (const v of variants) {
+  for (const v of list) {
     if (hasSizes) {
       const colorId = toNaverManageCode(v.colorKey || v.id);
       const colorText = v.colorNameKo || v.nameKo || colorId;
@@ -172,7 +193,7 @@ function optionBlockXml(product: Product): string {
     );
   }
 
-  const combinations = variants.map((v) => combinationXml(product, v)).join("");
+  const combinations = list.map((v) => combinationXml(product, v)).join("");
 
   return [
     "<optionSupport>true</optionSupport>",
@@ -184,10 +205,12 @@ function optionBlockXml(product: Product): string {
 }
 
 function combinationXml(product: Product, variant: ProductVariant): string {
-  const manageCode = toNaverManageCode(variant.id);
+  const manageCode = variantManageCode(variant.id);
   const inStock = isVariantInStock(product, variant.id);
+  // Relative to product.basePrice; order XML uses full unit as basePrice + option price 0.
   const optionPrice = Math.max(0, variant.price - product.price);
   const options: string[] = [];
+  // Keep axes identical to order-xml optionXml / optionItem names above.
   if (variant.size) {
     options.push(
       `<options><name>${cdata("컬러")}</name><id>${escapeXml(toNaverManageCode(variant.colorKey || variant.id))}</id></options>`,
@@ -222,6 +245,7 @@ function productXml(query: ProductInfoQuery): string | null {
     ? product.variants!.some((v) => v.inStock)
     : product.inStock !== false;
   const status = anyInStock ? "ON_SALE" : "SOLD_OUT";
+  // Soft stock for private-order UK→KR; real availability is variant.inStock flags.
   const stockQuantity = anyInStock ? 99 : 0;
   const name = `${product.brand} ${product.nameKo}`.slice(0, 100);
 
@@ -237,7 +261,9 @@ function productXml(query: ProductInfoQuery): string | null {
     `<status>${status}</status>`,
     `<stockQuantity>${stockQuantity}</stockQuantity>`,
     "<supplementSupport>false</supplementSupport>",
-    hasVariants ? optionBlockXml(product) : "<optionSupport>false</optionSupport>",
+    hasVariants
+      ? optionBlockXml(product, query.optionManageCodes)
+      : "<optionSupport>false</optionSupport>",
     returnInfoXml(),
     shippingPolicyXml(),
     "</product>",
