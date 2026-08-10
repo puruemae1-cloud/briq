@@ -2,7 +2,7 @@
 """Build Gucci catalogue from scraped raw
 (handbags + men's bags + women's/men's RTW + women's/men's shoes + wallets +
 men's wallets + fashion accessories + men's fashion accessories +
-women's/men's travel + jewellery + gifts).
+women's/men's travel + jewellery + gifts + men's gifts).
 
 Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
@@ -10,8 +10,8 @@ Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
 Gifts: existing productCodes get gift gcCollections merged on; only truly new
 gift SKUs are imported as PDPs (duplicates are never re-imported).
 Men's RTW / men's bags / men's shoes / men's wallets / men's fashion
-accessories / men's travel: exact duplicate productCodes tag membership onto
-the existing PDP instead of creating a second one.
+accessories / men's travel / men's gifts: exact duplicate productCodes tag
+membership onto the existing PDP instead of creating a second one.
 """
 from __future__ import annotations
 
@@ -42,6 +42,7 @@ TRAVEL_RAW = ROOT / "src/data/gc/gc-travel-catalog-raw.json"
 MENS_TRAVEL_RAW = ROOT / "src/data/gc/gc-mens-travel-catalog-raw.json"
 JEWELLERY_RAW = ROOT / "src/data/gc/gc-jewellery-catalog-raw.json"
 GIFTS_RAW = ROOT / "src/data/gc/gc-gifts-catalog-raw.json"
+MENS_GIFTS_RAW = ROOT / "src/data/gc/gc-mens-gifts-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/gc/gc-catalog.json"
 OUT_TS = ROOT / "src/data/gc/gc-catalog.ts"
 CACHE_PATH = ROOT / "src/data/gc/gc-translate-cache.json"
@@ -271,6 +272,24 @@ GIFTS_LEAF_COLLECTIONS = [
 
 GIFTS_PARENT_COLLECTIONS = [
     "gc-gifts",
+    "gucci-accessories",
+]
+
+MEN_GIFTS_LEAF_COLLECTIONS = [
+    "gc-men-gifts-bags",
+    "gc-men-gifts-belts",
+    "gc-men-gifts-jewellery-watches",
+    "gc-men-gifts-shoes",
+    "gc-men-gifts-small-accessories",
+    "gc-men-gifts-small-leathergoods",
+    "gc-men-gifts-sunglasses",
+    "gc-men-gifts-watches",
+    "gc-men-gifts-personalised",
+]
+
+MEN_GIFTS_PARENT_COLLECTIONS = [
+    "gc-men-gifts",
+    "gc-accessories-mens",
     "gucci-accessories",
 ]
 
@@ -2562,11 +2581,28 @@ def build_gift_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     if price <= 0:
         return None
 
-    allowed = {*GIFTS_LEAF_COLLECTIONS, *GIFTS_PARENT_COLLECTIONS}
-    cols = [c for c in (row.get("collections") or []) if c in allowed]
-    cols = sorted(set([*cols, *GIFTS_PARENT_COLLECTIONS]))
-
-    leaf = next((c for c in GIFTS_LEAF_COLLECTIONS if c in cols), "gc-gifts")
+    is_mens = (row.get("kind") or "").lower() in {
+        "mens-gifts",
+        "mens_gifts",
+        "men-gifts",
+    }
+    if is_mens:
+        allowed = {
+            *MEN_GIFTS_LEAF_COLLECTIONS,
+            *MEN_GIFTS_PARENT_COLLECTIONS,
+            *GIFTS_LEAF_COLLECTIONS,
+            *GIFTS_PARENT_COLLECTIONS,
+        }
+        cols = [c for c in (row.get("collections") or []) if c in allowed]
+        cols = sorted(set([*cols, *MEN_GIFTS_PARENT_COLLECTIONS]))
+        leaf = next(
+            (c for c in MEN_GIFTS_LEAF_COLLECTIONS if c in cols), "gc-men-gifts"
+        )
+    else:
+        allowed = {*GIFTS_LEAF_COLLECTIONS, *GIFTS_PARENT_COLLECTIONS}
+        cols = [c for c in (row.get("collections") or []) if c in allowed]
+        cols = sorted(set([*cols, *GIFTS_PARENT_COLLECTIONS]))
+        leaf = next((c for c in GIFTS_LEAF_COLLECTIONS if c in cols), "gc-gifts")
     copy = common_copy(row)
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
@@ -2628,11 +2664,13 @@ def build_gift_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
         ]
 
     tags = ["gucci", "구찌", "gift", "선물", "악세서리", *cols]
+    if is_mens:
+        tags.extend(["남성", "mens"])
     if "gc-gifts-beauty" in cols:
         tags.extend(["fragrance", "향수", "makeup", "메이크업", "뷰티"])
     if "gc-gifts-children" in cols:
         tags.extend(["kids", "키즈", "children"])
-    if "gc-gifts-personalised" in cols:
+    if "gc-gifts-personalised" in cols or "gc-men-gifts-personalised" in cols:
         tags.extend(["personalised", "퍼스널라이즈", "monogram"])
 
     badge = None
@@ -2640,7 +2678,24 @@ def build_gift_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     if "new" in label:
         badge = "New"
 
-    return {
+    size_chart = None
+    if "gc-men-gifts-shoes" in cols:
+        size_chart = GC_MEN_SHOES_SIZE_CHART
+    elif "gc-men-gifts-belts" in cols:
+        size_chart = GC_BELT_SIZE_CHART
+    elif "gc-men-gifts-jewellery-watches" in cols or "gc-men-gifts-watches" in cols:
+        # Prefer ring chart when sized like rings; otherwise bracelet if numeric.
+        size_labels = [
+            str(sz.get("size") or "").strip().upper()
+            for sz in size_rows
+            if str(sz.get("size") or "").strip()
+        ]
+        if any(re.search(r"\b(RING|RG)\b", s) or re.fullmatch(r"\d{1,2}", s) for s in size_labels):
+            size_chart = GC_RING_SIZE_CHART
+        elif any("BRACELET" in s or "BR" in s for s in size_labels):
+            size_chart = GC_BRACELET_SIZE_CHART
+
+    prod = {
         "id": pid,
         "name": copy["title_en"],
         "nameKo": copy["name_ko"],
@@ -2665,12 +2720,15 @@ def build_gift_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
         "registeredAt": registered,
         "editTier": "new" if badge == "New" else "signature",
     }
+    if size_chart:
+        prod["sizeChart"] = size_chart
+    return prod
 
 
 def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     kind = (row.get("kind") or "").lower()
     cols = row.get("collections") or []
-    if kind == "gifts":
+    if kind in {"gifts", "mens-gifts", "mens_gifts", "men-gifts"}:
         return build_gift_product(row, prev, now_iso)
     if kind in {"mens-handbags", "mens_handbags", "men-handbags"} or any(
         c in MENS_HANDBAG_LEAF_COLLECTIONS or c == "gc-mens-handbags" for c in cols
@@ -2805,11 +2863,30 @@ def dedupe_style_color_name(products: list[dict]) -> list[dict]:
             ),
             reverse=True,
         )
-        kept.append(ranked[0])
+        winner = ranked[0]
+        # Merge category membership from dropped clones (e.g. gifts-for-him
+        # material codes that share style+colour with an existing belt PDP).
+        for loser in ranked[1:]:
+            extra = loser.get("gcCollections") or []
+            if extra:
+                winner["gcCollections"] = sorted(
+                    set(winner.get("gcCollections") or []) | set(extra)
+                )
+                for v in winner.get("variants") or []:
+                    if "gcCollections" in v:
+                        v["gcCollections"] = sorted(
+                            set(v.get("gcCollections") or []) | set(extra)
+                        )
+            tags = list(winner.get("tags") or [])
+            for t in loser.get("tags") or []:
+                if t not in tags:
+                    tags.append(t)
+            winner["tags"] = tags
+        kept.append(winner)
         dropped += len(ranked) - 1
         for loser in ranked[1:]:
             print(
-                f"dedupe drop {loser.get('id')} (keep {ranked[0].get('id')})",
+                f"dedupe drop {loser.get('id')} (keep {winner.get('id')})",
                 flush=True,
             )
     if dropped:
@@ -2821,6 +2898,76 @@ def dedupe_style_color_name(products: list[dict]) -> list[dict]:
 def gift_cols_from_row(row: dict) -> list[str]:
     allowed = {*GIFTS_LEAF_COLLECTIONS, *GIFTS_PARENT_COLLECTIONS}
     return sorted({c for c in (row.get("collections") or []) if c in allowed})
+
+
+def mens_gifts_cols_from_row(row: dict) -> list[str]:
+    allowed = {*MEN_GIFTS_LEAF_COLLECTIONS, *MEN_GIFTS_PARENT_COLLECTIONS}
+    cols = {c for c in (row.get("collections") or []) if c in allowed}
+    if any(c in MEN_GIFTS_LEAF_COLLECTIONS for c in cols) or "gc-men-gifts" in cols:
+        cols.add("gc-men-gifts")
+        cols.add("gc-accessories-mens")
+        cols.add("gucci-accessories")
+    return sorted(cols)
+
+
+def apply_mens_gifts_membership(
+    products: list[dict], mens_tags: dict[str, list[str]]
+) -> int:
+    """Merge men's gifts-for-him collection ids onto existing PDPs.
+
+    Exact duplicates already under gc-gifts* / other categories are tagged only.
+    Also matches style+colour when the gifts SKU used a different material code.
+    """
+    by_style_color: dict[tuple[str, str], list[dict]] = {}
+    for p in products:
+        sc = style_color_key(str(p.get("sku") or ""))
+        if sc:
+            by_style_color.setdefault(sc, []).append(p)
+
+    tagged = 0
+    for sku, extra in mens_tags.items():
+        if not extra:
+            continue
+        targets: list[dict] = []
+        for p in products:
+            if str(p.get("sku") or "").upper() == sku:
+                targets.append(p)
+        if not targets:
+            sc = style_color_key(sku)
+            if sc:
+                candidates = list(by_style_color.get(sc) or [])
+                if candidates:
+                    # One stand-in only — avoid tagging every material twin.
+                    candidates.sort(
+                        key=lambda p: (
+                            len(p.get("images") or []),
+                            len(p.get("variants") or []),
+                            p.get("id") or "",
+                        ),
+                        reverse=True,
+                    )
+                    targets = [candidates[0]]
+        if not targets:
+            continue
+        for p in targets:
+            cols = sorted(set(p.get("gcCollections") or []) | set(extra))
+            if cols != sorted(p.get("gcCollections") or []):
+                tagged += 1
+            p["gcCollections"] = cols
+            tags = list(p.get("tags") or [])
+            for c in extra:
+                if c not in tags:
+                    tags.append(c)
+            for t in ("gift", "선물", "악세서리", "남성", "mens"):
+                if t not in tags:
+                    tags.append(t)
+            p["tags"] = tags
+            for v in p.get("variants") or []:
+                if "gcCollections" in v:
+                    v["gcCollections"] = sorted(
+                        set(v.get("gcCollections") or []) | set(extra)
+                    )
+    return tagged
 
 
 def mens_rtw_cols_from_row(row: dict) -> list[str]:
@@ -3172,8 +3319,8 @@ def load_rows() -> tuple:
     """Load raw rows. Later sources skip duplicates already in catalog.
 
     Returns gift_tags / mens_bag_tags / mens_rtw_tags / mens_shoes_tags /
-    mens_wallet_tags / mens_fashion_tags / mens_travel_tags: sku → collection
-    ids to merge onto existing products (no second PDP).
+    mens_wallet_tags / mens_fashion_tags / mens_travel_tags / mens_gifts_tags:
+    sku → collection ids to merge onto existing products (no second PDP).
     """
     rows: list[dict] = []
     existing_skus: set[str] = set()
@@ -3187,6 +3334,7 @@ def load_rows() -> tuple:
     mens_fashion_tags: dict[str, list[str]] = {}
     mens_travel_tags: dict[str, list[str]] = {}
     jewellery_tags: dict[str, list[str]] = {}
+    mens_gifts_tags: dict[str, list[str]] = {}
 
     def remember(sku: str) -> None:
         if not sku:
@@ -3573,6 +3721,39 @@ def load_rows() -> tuple:
             remember(sku)
             rows.append(row)
 
+    mens_gifts_stats = {
+        "raw": 0,
+        "tagged_existing": 0,
+        "skipped_style_color": 0,
+        "kept_new": 0,
+    }
+    if MENS_GIFTS_RAW.exists():
+        data = json.loads(MENS_GIFTS_RAW.read_text())
+        for row in data.get("products") or []:
+            mens_gifts_stats["raw"] += 1
+            row = dict(row)
+            row["kind"] = "mens-gifts"
+            sku = str(row.get("productCode") or row.get("id") or "")
+            mcols = mens_gifts_cols_from_row(row)
+            if not mcols:
+                continue
+            if sku.upper() in existing_skus or row.get("tagOnly"):
+                mens_gifts_tags[sku.upper()] = mcols
+                mens_gifts_stats["tagged_existing"] += 1
+                continue
+            briq_id = f"gc-{sku.lower()}" if sku else ""
+            if briq_id and briq_id in existing_ids:
+                mens_gifts_tags[sku.upper()] = mcols
+                mens_gifts_stats["tagged_existing"] += 1
+                continue
+            sc = style_color_key(sku)
+            if sc and sc in existing_style_colors:
+                mens_gifts_stats["skipped_style_color"] += 1
+                continue
+            mens_gifts_stats["kept_new"] += 1
+            remember(sku)
+            rows.append(row)
+
     return (
         rows,
         mens_bag_stats,
@@ -3586,6 +3767,7 @@ def load_rows() -> tuple:
         mens_travel_stats,
         jewellery_stats,
         gifts_stats,
+        mens_gifts_stats,
         gift_tags,
         mens_bag_tags,
         mens_rtw_tags,
@@ -3594,6 +3776,7 @@ def load_rows() -> tuple:
         mens_fashion_tags,
         mens_travel_tags,
         jewellery_tags,
+        mens_gifts_tags,
     )
 
 
@@ -3611,6 +3794,7 @@ def main() -> None:
         mens_travel_stats,
         jewellery_stats,
         gifts_stats,
+        mens_gifts_stats,
         gift_tags,
         mens_bag_tags,
         mens_rtw_tags,
@@ -3619,6 +3803,7 @@ def main() -> None:
         mens_fashion_tags,
         mens_travel_tags,
         jewellery_tags,
+        mens_gifts_tags,
     ) = load_rows()
     if not rows:
         raise SystemExit(
@@ -3631,7 +3816,8 @@ def main() -> None:
             "scrape-gc-mens-fashion-accessories.py, "
             "scrape-gc-womens-travel.py, "
             "scrape-gc-mens-travel.py, "
-            "scrape-gc-jewellery-watches.py and/or scrape-gc-gifts.py first"
+            "scrape-gc-jewellery-watches.py, scrape-gc-gifts.py "
+            "and/or scrape-gc-mens-gifts.py first"
         )
 
     prev_by_sku: dict[str, dict] = {}
@@ -3680,13 +3866,15 @@ def main() -> None:
     mens_travel_tagged = apply_mens_travel_membership(products, mens_travel_tags)
     jewellery_tagged = apply_jewellery_membership(products, jewellery_tags)
     gift_tagged = apply_gift_membership(products, gift_tags)
+    mens_gifts_tagged = apply_mens_gifts_membership(products, mens_gifts_tags)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./gc-catalog.json";\n\n'
         "/** Auto-generated — Gucci handbags + men's bags + women's/men's RTW + "
         "women's/men's shoes + wallets + men's wallets + fashion accessories + "
-        "men's fashion accessories + women's/men's travel + jewellery + gifts. */\n"
+        "men's fashion accessories + women's/men's travel + jewellery + gifts + "
+        "men's gifts. */\n"
         "export const gcCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
@@ -3933,6 +4121,20 @@ def main() -> None:
             f"skipped_style_color={gifts_stats['skipped_style_color']}",
             flush=True,
         )
+    if mens_gifts_stats["raw"]:
+        print(
+            f"  mens-gifts raw={mens_gifts_stats['raw']} "
+            f"new={mens_gifts_stats['kept_new']} "
+            f"tagged_existing={mens_gifts_stats['tagged_existing']} "
+            f"(merged onto products={mens_gifts_tagged}) "
+            f"skipped_style_color={mens_gifts_stats['skipped_style_color']}",
+            flush=True,
+        )
+        for leaf in MEN_GIFTS_LEAF_COLLECTIONS:
+            n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+            print(f"    {leaf}: {n}", flush=True)
+        n = sum(1 for p in products if "gc-men-gifts" in (p.get("gcCollections") or []))
+        print(f"    gc-men-gifts: {n}", flush=True)
     for leaf in RTW_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
@@ -3963,6 +4165,9 @@ def main() -> None:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
     for leaf in GIFTS_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
+        print(f"  {leaf}: {n}", flush=True)
+    for leaf in MEN_GIFTS_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("gcCollections") or []))
         print(f"  {leaf}: {n}", flush=True)
     travel_parent_only = sum(

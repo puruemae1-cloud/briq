@@ -559,7 +559,17 @@ export type SubcategoryId =
   | "gc-gifts-personalised"
   | "gc-gifts-beauty"
   | "gc-gifts-jewellery"
-  | "gc-gifts-children";
+  | "gc-gifts-children"
+  | "gc-men-gifts"
+  | "gc-men-gifts-bags"
+  | "gc-men-gifts-belts"
+  | "gc-men-gifts-jewellery-watches"
+  | "gc-men-gifts-shoes"
+  | "gc-men-gifts-small-accessories"
+  | "gc-men-gifts-small-leathergoods"
+  | "gc-men-gifts-sunglasses"
+  | "gc-men-gifts-watches"
+  | "gc-men-gifts-personalised";
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -738,6 +748,19 @@ export const GC_GIFTS_LEAF_IDS: SubcategoryId[] = [
   "gc-gifts-beauty",
   "gc-gifts-jewellery",
   "gc-gifts-children",
+];
+
+/** Gucci men's accessories → 선물용 leaves (gifts-for-him Category filters). */
+export const GC_MEN_GIFTS_LEAF_IDS: SubcategoryId[] = [
+  "gc-men-gifts-bags",
+  "gc-men-gifts-belts",
+  "gc-men-gifts-jewellery-watches",
+  "gc-men-gifts-shoes",
+  "gc-men-gifts-small-accessories",
+  "gc-men-gifts-small-leathergoods",
+  "gc-men-gifts-sunglasses",
+  "gc-men-gifts-watches",
+  "gc-men-gifts-personalised",
 ];
 
 
@@ -1532,6 +1555,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MEN_TRAVEL_LEAF_IDS,
     "gc-men-jewellery",
     ...GC_MEN_JEWELLERY_LEAF_IDS,
+    "gc-men-gifts",
+    ...GC_MEN_GIFTS_LEAF_IDS,
     "gc-jewellery-watches",
     "gc-gold-jewellery",
     ...GC_GOLD_JEWELLERY_LEAF_IDS,
@@ -1577,9 +1602,21 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MEN_TRAVEL_LEAF_IDS,
     "gc-men-jewellery",
     ...GC_MEN_JEWELLERY_LEAF_IDS,
+    "gc-men-gifts",
+    ...GC_MEN_GIFTS_LEAF_IDS,
   ],
   "gc-men-jewellery": ["gc-men-jewellery", ...GC_MEN_JEWELLERY_LEAF_IDS],
   "gc-men-fashion-jewellery": ["gc-men-fashion-jewellery"],
+  "gc-men-gifts": ["gc-men-gifts", ...GC_MEN_GIFTS_LEAF_IDS],
+  "gc-men-gifts-bags": ["gc-men-gifts-bags"],
+  "gc-men-gifts-belts": ["gc-men-gifts-belts"],
+  "gc-men-gifts-jewellery-watches": ["gc-men-gifts-jewellery-watches"],
+  "gc-men-gifts-shoes": ["gc-men-gifts-shoes"],
+  "gc-men-gifts-small-accessories": ["gc-men-gifts-small-accessories"],
+  "gc-men-gifts-small-leathergoods": ["gc-men-gifts-small-leathergoods"],
+  "gc-men-gifts-sunglasses": ["gc-men-gifts-sunglasses"],
+  "gc-men-gifts-watches": ["gc-men-gifts-watches"],
+  "gc-men-gifts-personalised": ["gc-men-gifts-personalised"],
   "gc-women-wallets": ["gc-women-wallets", ...GC_WOMEN_WALLET_LEAF_IDS],
   "gc-women-long-wallets": ["gc-women-long-wallets"],
   "gc-women-chain-wallets": ["gc-women-chain-wallets"],
@@ -3747,6 +3784,59 @@ export const navCategories: NavCategory[] = [
                     id: "gc-men-fashion-jewellery",
                     labelKo: "패션 쥬얼리",
                     href: "/shop?category=accessories&sub=gc-men-fashion-jewellery",
+                  },
+                ],
+              },
+              {
+                id: "gc-men-gifts",
+                labelKo: "선물용",
+                href: "/shop?category=accessories&sub=gc-men-gifts",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "gc-men-gifts-bags",
+                    labelKo: "가방",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-bags",
+                  },
+                  {
+                    id: "gc-men-gifts-belts",
+                    labelKo: "벨트",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-belts",
+                  },
+                  {
+                    id: "gc-men-gifts-jewellery-watches",
+                    labelKo: "쥬얼리 & 시계",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-jewellery-watches",
+                  },
+                  {
+                    id: "gc-men-gifts-shoes",
+                    labelKo: "슈즈",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-shoes",
+                  },
+                  {
+                    id: "gc-men-gifts-small-accessories",
+                    labelKo: "스몰 액세서리",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-small-accessories",
+                  },
+                  {
+                    id: "gc-men-gifts-small-leathergoods",
+                    labelKo: "스몰 레더굿즈",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-small-leathergoods",
+                  },
+                  {
+                    id: "gc-men-gifts-sunglasses",
+                    labelKo: "선글라스",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-sunglasses",
+                  },
+                  {
+                    id: "gc-men-gifts-watches",
+                    labelKo: "시계",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-watches",
+                  },
+                  {
+                    id: "gc-men-gifts-personalised",
+                    labelKo: "퍼스널라이즈드 선물",
+                    href: "/shop?category=accessories&sub=gc-men-gifts-personalised",
                   },
                 ],
               },

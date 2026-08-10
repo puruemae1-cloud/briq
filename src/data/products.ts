@@ -640,7 +640,13 @@ export function getProductsByCategory(category?: string, sub?: string) {
   const isPsGifts =
     expanded?.some((c) => c === "ps-gifts" || c.startsWith("ps-gifts-")) ?? false;
   const isGcGifts =
-    expanded?.some((c) => c === "gc-gifts" || c.startsWith("gc-gifts-")) ?? false;
+    expanded?.some(
+      (c) =>
+        c === "gc-gifts" ||
+        c.startsWith("gc-gifts-") ||
+        c === "gc-men-gifts" ||
+        c.startsWith("gc-men-gifts-"),
+    ) ?? false;
   if (category && category !== "all" && !isPsGifts && !isGcGifts) {
     list = list.filter((p) => p.category === category);
   }
