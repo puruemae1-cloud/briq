@@ -26,6 +26,7 @@ PRODUCTS_PREFIX = "public/products/"
 BRAND_CATALOGS = {
     "gc": ROOT / "src/data/gc/gc-catalog.json",
     "bb": ROOT / "src/data/bb/bb-catalog.json",
+    "ps": ROOT / "src/data/ps/ps-catalog.json",
 }
 
 

@@ -74,7 +74,10 @@ def main() -> None:
             continue
         if prev and prev.get("entity") and mens.content_image_urls(prev):
             handle = prev.get("handle") or link.replace("/", "-") or key
-            local = mens.download_images(handle, mens.content_image_urls(prev))
+            use_gm = mens.should_greymat_row(prev.get("entity") or {}, handle)
+            local = mens.download_images(
+                handle, mens.content_image_urls(prev), greymat=use_gm
+            )
             if mens.local_images_ok({**prev, "images": local}):
                 prev["images"] = local
                 prev["channels"] = sorted(membership.get(key, set()))
@@ -106,7 +109,9 @@ def main() -> None:
                     urls.append(img["url"])
         if not urls:
             urls = mens.plp_image_urls(p)
-        local = mens.download_images(handle, urls)
+        entity = (pdp or {}).get("entity") or {}
+        use_gm = mens.should_greymat_row(entity, handle)
+        local = mens.download_images(handle, urls, greymat=use_gm)
         row = {
             "key": key,
             "handle": handle,
@@ -122,7 +127,7 @@ def main() -> None:
                 "style": mens.custom_label(p.get("custom"), "style"),
                 "product_type": mens.custom_label(p.get("custom"), "product_type"),
             },
-            "entity": (pdp or {}).get("entity") or {},
+            "entity": entity,
             "content": (pdp or {}).get("content") or {},
             "measurementChart": (pdp or {}).get("measurementChart") or {},
             "configurableOptions": (pdp or {}).get("configurableOptions") or [],
@@ -174,7 +179,11 @@ def main() -> None:
                 "measurementChart": {},
                 "configurableOptions": [],
                 "selectedPrice": {},
-                "images": mens.download_images(handle, mens.plp_image_urls(p)),
+                "images": mens.download_images(
+                    handle,
+                    mens.plp_image_urls(p),
+                    greymat=mens.should_greymat_row(handle=handle),
+                ),
                 "sourceUrl": f"{mens.BASE}/uk/{link}",
             }
         else:

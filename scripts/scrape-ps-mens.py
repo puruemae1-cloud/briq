@@ -15,6 +15,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ps_pale_colour import is_pale_ps_colour  # noqa: E402
 from studio_whiten import save_product_image  # noqa: E402
 OUT_DIR = ROOT / "src/data/ps"
 RAW_PATH = OUT_DIR / "ps-catalog-raw.json"
@@ -210,25 +211,39 @@ def custom_label(custom: dict | None, key: str) -> str | None:
     return None
 
 
-def normalize_asset_url(url: str) -> str:
+def normalize_asset_url(url: str, *, high_quality: bool = False) -> str:
     u = (url or "").strip()
     if not u:
         return u
-    # Already transformed PLP thumbs → bump width
+    # Already transformed PLP thumbs → bump width (and quality for pale colourways)
     if "/w_" in u:
-        return re.sub(r"/w_\d+,", "/w_1200,", u)
+        u = re.sub(r"/w_\d+,", "/w_1200,", u)
+        if high_quality:
+            u = re.sub(r"/q_auto(?:,|,|$)", "/q_85,", u)
+            if "/q_" not in u:
+                u = re.sub(r"/(w_\d+,[^/]+)/", r"/\1,q_85/", u, count=1)
+        return u
     # Raw asset path: .../paul-smith-products/v123/... → insert transform
     if "paul-smith-products/" in u and "/w_" not in u:
+        quality = "q_85" if high_quality else "q_auto"
         return u.replace(
             "paul-smith-products/",
-            "paul-smith-products/w_1200,c_scale/q_auto,f_jpg/",
+            f"paul-smith-products/w_1200,c_scale/{quality},f_jpg/",
             1,
         )
     return u
 
 
-def download_images(handle: str, urls: list[str]) -> list[str]:
-    """Download gallery shots with contiguous 1.jpg…N.jpg names (skip failed URLs)."""
+def download_images(
+    handle: str,
+    urls: list[str],
+    *,
+    greymat: bool = True,
+) -> list[str]:
+    """Download gallery shots with contiguous 1.jpg…N.jpg names (skip failed URLs).
+
+    Pass greymat=False for pale colourways — keep official paulsmith.com bytes.
+    """
     dest = IMG_ROOT / handle
     dest.mkdir(parents=True, exist_ok=True)
     # Clear stale numbered files so gaps from failed URLs don't leave broken refs
@@ -241,15 +256,18 @@ def download_images(handle: str, urls: list[str]) -> list[str]:
             pass
     local = []
     n = 0
+    # Pale (no-greymat) downloads use a higher JPEG quality — q_auto crushes
+    # chalk garments into near-blank flats.
+    hq = not greymat
     for url in urls[:8]:
         try:
-            fetch_url = normalize_asset_url(url)
+            fetch_url = normalize_asset_url(url, high_quality=hq)
             data = fetch_bytes(fetch_url)
             if len(data) < 800:
                 continue
             n += 1
             path = dest / f"{n}.jpg"
-            save_product_image(path, data)
+            save_product_image(path, data, greymat=greymat)
             local.append(f"/products/ps-pdp/{handle}/{n}.jpg")
             time.sleep(0.03)
         except Exception as e:
@@ -257,7 +275,12 @@ def download_images(handle: str, urls: list[str]) -> list[str]:
     return local
 
 
-def download_hover(handle: str, url: str) -> str | None:
+def download_hover(
+    handle: str,
+    url: str,
+    *,
+    greymat: bool = True,
+) -> str | None:
     """Save the official PLP hover frame as hover.jpg."""
     if not url:
         return None
@@ -265,14 +288,19 @@ def download_hover(handle: str, url: str) -> str | None:
     dest.mkdir(parents=True, exist_ok=True)
     path = dest / "hover.jpg"
     try:
-        data = fetch_bytes(normalize_asset_url(url))
+        data = fetch_bytes(normalize_asset_url(url, high_quality=not greymat))
         if len(data) < 800:
             return None
-        save_product_image(path, data)
+        save_product_image(path, data, greymat=greymat)
         return f"/products/ps-pdp/{handle}/hover.jpg"
     except Exception as e:
         print("hover fail", handle, e)
         return None
+
+
+def should_greymat_row(entity: dict | None = None, handle: str = "") -> bool:
+    """False for pale PS colourways — official CDN packshots stay as-is."""
+    return not is_pale_ps_colour(entity, handle=handle)
 
 
 def local_images_ok(row: dict) -> bool:
@@ -397,7 +425,10 @@ def main() -> None:
         # from stored content URLs without a full PDP hit when possible.
         if prev and prev.get("entity") and content_image_urls(prev):
             handle = (prev.get("handle") or link.replace("/", "-") or key)
-            local = download_images(handle, content_image_urls(prev))
+            use_gm = should_greymat_row(prev.get("entity") or {}, handle)
+            local = download_images(
+                handle, content_image_urls(prev), greymat=use_gm
+            )
             if local_images_ok({**prev, "images": local}):
                 prev["images"] = local
                 prev["channels"] = sorted(membership.get(key, set()))
@@ -430,11 +461,13 @@ def main() -> None:
         plp_urls = plp_image_urls(p)
         if not urls:
             urls = plp_urls
-        local = download_images(handle, urls)
+        entity = (pdp or {}).get("entity") or {}
+        use_gm = should_greymat_row(entity, handle)
+        local = download_images(handle, urls, greymat=use_gm)
         # Official Paul Smith PLP hover = imageInfo.images[1]
         local_hover = None
         if len(plp_urls) > 1:
-            local_hover = download_hover(handle, plp_urls[1])
+            local_hover = download_hover(handle, plp_urls[1], greymat=use_gm)
         if not local_hover and len(local) > 1:
             local_hover = local[1]
         row = {
@@ -452,7 +485,7 @@ def main() -> None:
                 "style": custom_label(p.get("custom"), "style"),
                 "product_type": custom_label(p.get("custom"), "product_type"),
             },
-            "entity": (pdp or {}).get("entity") or {},
+            "entity": entity,
             "content": (pdp or {}).get("content") or {},
             "measurementChart": (pdp or {}).get("measurementChart") or {},
             "configurableOptions": (pdp or {}).get("configurableOptions") or [],
@@ -503,7 +536,11 @@ def main() -> None:
                 "measurementChart": {},
                 "configurableOptions": [],
                 "selectedPrice": {},
-                "images": download_images(handle, plp_image_urls(p)),
+                "images": download_images(
+                    handle,
+                    plp_image_urls(p),
+                    greymat=should_greymat_row(handle=handle),
+                ),
                 "sourceUrl": f"{BASE}/uk/{link}",
             }
         else:

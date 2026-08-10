@@ -9,6 +9,9 @@ Two paths:
   - rembg: background removal + grey composite when the subject is also light
     (white tees, chalk polos, etc.)
 
+Paul Smith pale colourways (white/ivory/cream/ecru/…) skip greymat entirely —
+rembg/soft remap destroyed those official packshots. See ps_pale_colour.py.
+
 Importable helpers for scrapers / weekly syncs / image tag pushes.
 """
 from __future__ import annotations
@@ -218,11 +221,22 @@ def greymat_file(path: Path | str) -> str:
     return process_one(str(path))[1]
 
 
-def save_product_image(path: Path | str, data: bytes) -> str:
-    """Write downloaded PDP bytes then greymat studio mats in place."""
+def save_product_image(
+    path: Path | str,
+    data: bytes,
+    *,
+    greymat: bool = True,
+) -> str:
+    """Write downloaded PDP bytes then optionally greymat studio mats in place.
+
+    Pass greymat=False for pale PS colourways (and Burberry-style official
+    crops) — rembg/soft remap turns white garments into grey blocks.
+    """
     dest = Path(path)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(data)
+    if not greymat:
+        return "skip:no-greymat"
     return greymat_file(dest)
 
 
@@ -247,8 +261,31 @@ def greymat_dirs(
     """Greymat all images under the given public/products/* dirs.
 
     Returns (ok, skip, fail).
+
+    Paul Smith pale colourways (white/ivory/cream/ecru/…) are excluded — their
+    official CDN packshots must stay untouched (see ps_pale_colour.py).
     """
     files = collect_images(dirs)
+    if "ps-pdp" in dirs:
+        try:
+            from ps_pale_colour import pale_ps_handles  # type: ignore
+
+            skip_handles = pale_ps_handles()
+        except Exception as e:
+            print(f"WARN: could not load PS pale handles ({e})", flush=True)
+            skip_handles = set()
+        if skip_handles:
+            before = len(files)
+            files = [
+                p
+                for p in files
+                if p.parent.name not in skip_handles
+            ]
+            print(
+                f"PS pale skip: excluded {before - len(files)} images "
+                f"across {len(skip_handles)} white-ish handles",
+                flush=True,
+            )
     if limit:
         files = files[:limit]
     if not files:
