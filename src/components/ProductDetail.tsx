@@ -490,22 +490,6 @@ export function ProductDetail({
               <Link href="/cart" className="btn btn-outline">
                 장바구니 보기
               </Link>
-              <NaverPayOrderButton
-                page="product"
-                enabled={!soldOut}
-                className="npay-order-button npay-order-button--pdp"
-                items={[
-                  {
-                    productId: product.id,
-                    variantId: selected?.id,
-                    braceletCm:
-                      product.braceletResize && braceletCm !== "no"
-                        ? braceletCm
-                        : undefined,
-                    qty: 1,
-                  },
-                ]}
-              />
             </div>
           )}
         </div>
@@ -627,7 +611,7 @@ export function ProductDetail({
                   </button>
                 </form>
                 <NaverPayOrderButton
-                  page="product"
+                  page="dock"
                   enabled={!soldOut}
                   className="npay-order-button npay-order-button--dock"
                   items={[

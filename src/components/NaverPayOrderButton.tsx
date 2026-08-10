@@ -16,8 +16,8 @@ type OrderItem = {
 };
 
 type Props = {
-  /** PDP vs cart — cart turns wishlist / talkTalk off (manual). */
-  page: "product" | "cart";
+  /** product = PDP dock/inline, cart = cart page, dock = sticky bar (unique container). */
+  page: "product" | "cart" | "dock";
   items: OrderItem[];
   /** When false (OOS), button is not rendered. */
   enabled?: boolean;
@@ -30,7 +30,7 @@ type NpayBuyResult = { key: string; merchantNo: string };
 
 type NpaySdk = {
   order: {
-    create: (opts: Record<string, unknown>) => void;
+    create: (opts: Record<string, unknown>) => void | Promise<unknown>;
   };
 };
 
@@ -74,6 +74,25 @@ function loadButtonScript(src: string): Promise<void> {
   });
 }
 
+function waitForLayout(el: HTMLElement, minWidth = 120, timeoutMs = 5000) {
+  return new Promise<void>((resolve) => {
+    const start = Date.now();
+    const tick = () => {
+      const w = el.getBoundingClientRect().width || el.clientWidth;
+      if (w >= minWidth) {
+        resolve();
+        return;
+      }
+      if (Date.now() - start > timeoutMs) {
+        resolve();
+        return;
+      }
+      requestAnimationFrame(tick);
+    };
+    tick();
+  });
+}
+
 /**
  * 주문형 V2.1 template button — buy only (wishlist / talkTalk optional per Naver).
  * onBuyClick → POST /api/naverpay/order → { key, merchantNo }.
@@ -102,6 +121,7 @@ export function NaverPayOrderButton({
     if (!show) return;
     let cancelled = false;
     let sideObs: MutationObserver | undefined;
+    const timers: number[] = [];
     const mountEl = document.getElementById(containerId);
     if (mountEl) mountEl.innerHTML = "";
 
@@ -115,7 +135,15 @@ export function NaverPayOrderButton({
       }
       if (cancelled || !window.Npay) return;
 
-      // Ensure inflow ran before button (manual requirement).
+      const root = document.getElementById(containerId);
+      if (!root || cancelled) return;
+
+      // SDK sizes / paints from container width — dock flex can be 0 on first paint.
+      root.style.minWidth = "168px";
+      root.style.width = "100%";
+      await waitForLayout(root, 120);
+      if (cancelled) return;
+
       try {
         if (window.wcs) {
           window.wcs.checkoutWhitelist = ["briq.kr", "www.briq.kr"];
@@ -131,44 +159,44 @@ export function NaverPayOrderButton({
         (typeof window !== "undefined" ? window.location.href : `${origin}/cart`);
 
       // Buy button only — wishlist / talkTalk / benefits are optional per Naver.
-      // Omit those component flags; CSS + MutationObserver strip any leftovers.
-      window.Npay.order.create({
-        buttonKey,
-        containerId,
-        orderRegistrationVersion: "2.1",
-        type: "template",
-        colorTheme: "green",
-        enable: true,
-        onBuyClick: async (): Promise<NpayBuyResult | null> => {
-          try {
-            const res = await fetch("/api/naverpay/order", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                items: itemsRef.current,
-                backUrl: resolvedBack,
-              }),
-            });
-            const data = (await res.json()) as {
-              ok?: boolean;
-              key?: string;
-              merchantNo?: string;
-              message?: string;
-            };
-            if (!res.ok || !data.ok || !data.key || !data.merchantNo) {
-              alert(data.message || "네이버페이 주문 등록에 실패했습니다.");
+      await Promise.resolve(
+        window.Npay.order.create({
+          buttonKey,
+          containerId,
+          orderRegistrationVersion: "2.1",
+          type: "template",
+          colorTheme: "green",
+          enable: true,
+          onBuyClick: async (): Promise<NpayBuyResult | null> => {
+            try {
+              const res = await fetch("/api/naverpay/order", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  items: itemsRef.current,
+                  backUrl: resolvedBack,
+                }),
+              });
+              const data = (await res.json()) as {
+                ok?: boolean;
+                key?: string;
+                merchantNo?: string;
+                message?: string;
+              };
+              if (!res.ok || !data.ok || !data.key || !data.merchantNo) {
+                alert(data.message || "네이버페이 주문 등록에 실패했습니다.");
+                return null;
+              }
+              return { key: data.key, merchantNo: data.merchantNo };
+            } catch {
+              alert("네이버페이 주문 등록 중 오류가 발생했습니다.");
               return null;
             }
-            return { key: data.key, merchantNo: data.merchantNo };
-          } catch {
-            alert("네이버페이 주문 등록 중 오류가 발생했습니다.");
-            return null;
-          }
-        },
-      });
+          },
+        }),
+      );
 
-      const root = document.getElementById(containerId);
-      if (!root || cancelled) return;
+      if (cancelled) return;
       const stripSideButtons = () => {
         root
           .querySelectorAll(
@@ -178,13 +206,15 @@ export function NaverPayOrderButton({
               ".npay_wishlist",
               ".npay_talktalk",
               ".npay_link_talktalk",
-              '[class*="wishlist"]',
-              '[class*="talktalk"]',
             ].join(", "),
           )
           .forEach((el) => el.remove());
       };
       stripSideButtons();
+      timers.push(
+        window.setTimeout(stripSideButtons, 250),
+        window.setTimeout(stripSideButtons, 1000),
+      );
       sideObs = new MutationObserver(stripSideButtons);
       sideObs.observe(root, { childList: true, subtree: true });
     }
@@ -193,6 +223,7 @@ export function NaverPayOrderButton({
     return () => {
       cancelled = true;
       sideObs?.disconnect();
+      timers.forEach((t) => window.clearTimeout(t));
     };
   }, [show, containerId, itemsKey, backUrl, page]);
 
