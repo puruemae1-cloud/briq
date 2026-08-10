@@ -118,6 +118,9 @@ function optionBlockXml(
   const list = filtered.length > 0 ? filtered : variants;
 
   const hasSizes = list.some((v) => Boolean(v.size));
+  const isCw = product.brand === "Christopher Ward";
+  const colorAxisName = isCw ? "스트랩" : hasSizes ? "컬러" : "옵션";
+  const sizeAxisName = isCw ? "케이스 사이즈" : "사이즈";
   const colorMap = new Map<string, { id: string; text: string; status: boolean }>();
   const sizeMap = new Map<string, { id: string; text: string; status: boolean }>();
 
@@ -156,7 +159,7 @@ function optionBlockXml(
       [
         "<optionItem>",
         "<type>SELECT</type>",
-        `<name>${cdata("컬러")}</name>`,
+        `<name>${cdata(colorAxisName)}</name>`,
         ...[...colorMap.values()].map(
           (c) =>
             `<value><id>${escapeXml(c.id)}</id><text>${cdata(c.text)}</text><status>${c.status}</status></value>`,
@@ -169,7 +172,7 @@ function optionBlockXml(
         [
           "<optionItem>",
           "<type>SELECT</type>",
-          `<name>${cdata("사이즈")}</name>`,
+          `<name>${cdata(sizeAxisName)}</name>`,
           ...[...sizeMap.values()].map(
             (s) =>
               `<value><id>${escapeXml(s.id)}</id><text>${cdata(s.text)}</text><status>${s.status}</status></value>`,
@@ -183,7 +186,7 @@ function optionBlockXml(
       [
         "<optionItem>",
         "<type>SELECT</type>",
-        `<name>${cdata("옵션")}</name>`,
+        `<name>${cdata(isCw ? "스트랩" : "옵션")}</name>`,
         ...[...colorMap.values()].map(
           (c) =>
             `<value><id>${escapeXml(c.id)}</id><text>${cdata(c.text)}</text><status>${c.status}</status></value>`,
@@ -209,18 +212,21 @@ function combinationXml(product: Product, variant: ProductVariant): string {
   const inStock = isVariantInStock(product, variant.id);
   // Relative to product.basePrice; order XML uses full unit as basePrice + option price 0.
   const optionPrice = Math.max(0, variant.price - product.price);
+  const isCw = product.brand === "Christopher Ward";
+  const colorAxisName = isCw ? "스트랩" : "컬러";
+  const sizeAxisName = isCw ? "케이스 사이즈" : "사이즈";
   const options: string[] = [];
   // Keep axes identical to order-xml optionXml / optionItem names above.
   if (variant.size) {
     options.push(
-      `<options><name>${cdata("컬러")}</name><id>${escapeXml(toNaverManageCode(variant.colorKey || variant.id))}</id></options>`,
+      `<options><name>${cdata(colorAxisName)}</name><id>${escapeXml(toNaverManageCode(variant.colorKey || variant.id))}</id></options>`,
     );
     options.push(
-      `<options><name>${cdata("사이즈")}</name><id>${escapeXml(toNaverManageCode(variant.size))}</id></options>`,
+      `<options><name>${cdata(sizeAxisName)}</name><id>${escapeXml(toNaverManageCode(variant.size))}</id></options>`,
     );
   } else {
     options.push(
-      `<options><name>${cdata("옵션")}</name><id>${escapeXml(toNaverManageCode(variant.id))}</id></options>`,
+      `<options><name>${cdata(isCw ? "스트랩" : "옵션")}</name><id>${escapeXml(toNaverManageCode(variant.id))}</id></options>`,
     );
   }
   return [

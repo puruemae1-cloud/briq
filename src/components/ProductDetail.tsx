@@ -81,31 +81,36 @@ function SizePicker({
   colorKey,
   sizes,
   selectedSize,
+  sizeLabel,
 }: {
   productId: string;
   colorKey: string;
   sizes: ProductVariant[];
   selectedSize?: string;
+  /** Chip label override — defaults to variant.size / name. */
+  sizeLabel?: (v: ProductVariant) => string;
 }) {
   return (
     <div className="size-grid" role="list">
       {sizes.map((v) => {
         const size = v.size || v.name;
+        const label = sizeLabel ? sizeLabel(v) : size;
         const active = size === selectedSize;
         const soldOut = !v.inStock;
+        const hrefColor = v.colorKey || colorKey;
         return (
           <Link
             key={v.id}
-            href={`/product/${productId}?color=${encodeURIComponent(colorKey)}&size=${encodeURIComponent(size)}`}
+            href={`/product/${productId}?color=${encodeURIComponent(hrefColor)}&size=${encodeURIComponent(size)}`}
             scroll={false}
             replace
             role="listitem"
             aria-current={active ? "true" : undefined}
             aria-disabled={soldOut ? true : undefined}
             className={`size-chip${active ? " is-active" : ""}${soldOut ? " is-sold-out" : ""}`}
-            title={soldOut ? `${size} · Sold Out` : size}
+            title={soldOut ? `${label} · Sold Out` : label}
           >
-            {size}
+            {label}
             {soldOut ? <span className="size-chip__sold">품절</span> : null}
           </Link>
         );
@@ -129,6 +134,7 @@ export function ProductDetail({
 }) {
   const allVariants = product.variants ?? [];
   const hasSizes = allVariants.some((v) => Boolean(v.size));
+  const isCw = product.brand === "Christopher Ward";
   const productAvailable = isProductInStock(product);
 
   const colorGroups: ColorGroup[] = useMemo(() => {
@@ -167,19 +173,109 @@ export function ProductDetail({
         );
       }
     }
+    if (isCw) {
+      for (const g of groups) {
+        g.variants = [...g.variants].sort((a, b) => {
+          const na = Number.parseInt(a.size || "", 10) || 0;
+          const nb = Number.parseInt(b.size || "", 10) || 0;
+          return na - nb;
+        });
+      }
+    }
     return groups;
-  }, [allVariants, hasSizes, product]);
+  }, [allVariants, hasSizes, product, isCw]);
+
+  // CW: pick case size first (official WSize), then strap swatches for that size.
+  const cwCaseSizeOptions = useMemo(() => {
+    if (!isCw || !hasSizes) return [] as ProductVariant[];
+    const bySize = new Map<string, ProductVariant>();
+    for (const v of allVariants) {
+      if (!v.size) continue;
+      const prev = bySize.get(v.size);
+      if (!prev) {
+        bySize.set(v.size, v);
+        continue;
+      }
+      // Prefer matching the requested strap colour when building the chip set later.
+      if (!prev.inStock && v.inStock) bySize.set(v.size, v);
+    }
+    return Array.from(bySize.values()).sort((a, b) => {
+      const na = Number.parseInt(a.size || "", 10) || 0;
+      const nb = Number.parseInt(b.size || "", 10) || 0;
+      return na - nb;
+    });
+  }, [allVariants, hasSizes, isCw]);
+
+  const preferredCwSize =
+    (sizeId && cwCaseSizeOptions.some((v) => v.size === sizeId) ? sizeId : undefined) ||
+    cwCaseSizeOptions.find((v) => v.inStock)?.size ||
+    cwCaseSizeOptions[0]?.size;
+
+  const colorGroupsForUi = useMemo(() => {
+    if (!isCw || !hasSizes || !preferredCwSize) return colorGroups;
+    return colorGroups
+      .map((g) => {
+        const variants = g.variants.filter((v) => v.size === preferredCwSize);
+        if (variants.length === 0) return null;
+        return {
+          ...g,
+          variants,
+          image: variants[0]?.image || g.image,
+          inStock: variants.some((v) => v.inStock),
+        };
+      })
+      .filter((g): g is ColorGroup => Boolean(g));
+  }, [colorGroups, hasSizes, isCw, preferredCwSize]);
 
   const selectedColor =
-    colorGroups.find((c) => c.key === colorId) ??
-    colorGroups.find((c) => c.inStock) ??
-    colorGroups[0];
+    colorGroupsForUi.find((c) => c.key === colorId) ??
+    // Legacy CW links used full variant ids as ?color=
+    colorGroupsForUi.find((c) =>
+      c.variants.some((v) => v.id === colorId || `cw-${v.id}` === colorId),
+    ) ??
+    colorGroupsForUi.find((c) => c.inStock) ??
+    colorGroupsForUi[0];
 
-  const sizeOptions = selectedColor?.variants ?? [];
+  const sizeOptions = isCw && hasSizes
+    ? // One chip per case diameter; prefer current strap when available.
+      cwCaseSizeOptions.map((chip) => {
+        const match =
+          (selectedColor &&
+            allVariants.find(
+              (v) =>
+                v.size === chip.size &&
+                v.colorKey === selectedColor.key &&
+                v.inStock,
+            )) ||
+          (selectedColor &&
+            allVariants.find(
+              (v) => v.size === chip.size && v.colorKey === selectedColor.key,
+            )) ||
+          allVariants.find((v) => v.size === chip.size && v.inStock) ||
+          allVariants.find((v) => v.size === chip.size) ||
+          chip;
+        return match;
+      })
+    : (selectedColor?.variants ?? []);
+
+  const legacyVariant =
+    colorId
+      ? allVariants.find((v) => v.id === colorId || `cw-${v.id}` === colorId)
+      : undefined;
+
   const selected =
     (hasSizes
-      ? sizeOptions.find((v) => v.size === sizeId && v.inStock) ||
+      ? (legacyVariant &&
+          (!sizeId || legacyVariant.size === sizeId) &&
+          legacyVariant) ||
+        sizeOptions.find((v) => v.size === sizeId && v.inStock) ||
         sizeOptions.find((v) => v.size === sizeId) ||
+        (isCw && preferredCwSize
+          ? selectedColor?.variants.find((v) => v.size === preferredCwSize && v.inStock) ||
+            selectedColor?.variants.find((v) => v.size === preferredCwSize) ||
+            selectedColor?.variants.find((v) => v.inStock) ||
+            selectedColor?.variants[0]
+          : undefined) ||
         sizeOptions.find((v) => v.inStock) ||
         sizeOptions[0]
       : allVariants.find((v) => v.id === colorId) ||
@@ -213,7 +309,9 @@ export function ProductDetail({
 
   const optionLabel = selected
     ? hasSizes
-      ? `${selected.colorNameKo || selectedColor?.nameKo || ""} · ${selected.size || ""}`.trim()
+      ? isCw
+        ? `${selected.size || ""} · ${selected.colorNameKo || selectedColor?.nameKo || ""}`.trim()
+        : `${selected.colorNameKo || selectedColor?.nameKo || ""} · ${selected.size || ""}`.trim()
       : selected.nameKo
     : "";
 
@@ -223,6 +321,8 @@ export function ProductDetail({
       : hasSizes
         ? "컬러"
         : "컬러";
+
+  const sizeAxisLabel = isCw ? "케이스 사이즈" : "사이즈";
 
   const hiddenFields = (
     <>
@@ -246,7 +346,7 @@ export function ProductDetail({
   ) : null;
 
   const colorBlock =
-    colorGroups.length > 0 ? (
+    colorGroupsForUi.length > 0 ? (
       <div className="variant-block">
         <p className="variant-block__label">
           {variantLabel} ·{" "}
@@ -257,7 +357,7 @@ export function ProductDetail({
         </p>
         <ColorSwatches
           productId={product.id}
-          colors={colorGroups}
+          colors={colorGroupsForUi}
           selectedKey={selectedColor?.key}
           size={hasSizes ? selected?.size : undefined}
           idPrefix="main"
@@ -266,23 +366,36 @@ export function ProductDetail({
     ) : null;
 
   const sizeBlock =
-    hasSizes && sizeOptions.length > 0 && selectedColor ? (
+    hasSizes && sizeOptions.length > 0 && (selectedColor || isCw) ? (
       <div className="variant-block">
         <p className="variant-block__label">
-          사이즈 · <strong>{selected?.size ?? "선택"}</strong>
+          {sizeAxisLabel} · <strong>{selected?.size ?? "선택"}</strong>
           {selected && !selected.inStock ? (
             <span className="product-detail__stock"> · Sold Out</span>
           ) : null}
         </p>
         <SizePicker
           productId={product.id}
-          colorKey={selectedColor.key}
+          colorKey={selectedColor?.key || selected?.colorKey || ""}
           sizes={sizeOptions}
           selectedSize={selected?.size}
         />
         {product.sizeChart ? <SizeChartControl chart={product.sizeChart} /> : null}
       </div>
     ) : null;
+
+  const optionBlocks =
+    isCw && hasSizes ? (
+      <>
+        {sizeBlock}
+        {colorBlock}
+      </>
+    ) : (
+      <>
+        {colorBlock}
+        {sizeBlock}
+      </>
+    );
 
   return (
     <div className={`product-page${soldOut ? " product-page--sold-out" : ""}`}>
@@ -348,8 +461,7 @@ export function ProductDetail({
             <p className="product-detail__desc">{product.descriptionKo}</p>
           ) : null}
 
-          {colorBlock}
-          {sizeBlock}
+          {optionBlocks}
 
           {!soldOut ? braceletBlock : null}
 
@@ -429,10 +541,18 @@ export function ProductDetail({
                 </>
               ) : null}
             </p>
-            {colorGroups.length > 0 ? (
+            {isCw && hasSizes && sizeOptions.length > 0 ? (
+              <SizePicker
+                productId={product.id}
+                colorKey={selectedColor?.key || selected?.colorKey || ""}
+                sizes={sizeOptions}
+                selectedSize={selected?.size}
+              />
+            ) : null}
+            {colorGroupsForUi.length > 0 ? (
               <ColorSwatches
                 productId={product.id}
-                colors={colorGroups}
+                colors={colorGroupsForUi}
                 selectedKey={selectedColor?.key}
                 size={hasSizes ? selected?.size : undefined}
                 idPrefix="dock"
@@ -440,7 +560,7 @@ export function ProductDetail({
             ) : product.braceletResize ? null : (
               <p className="pdp-dock__empty">선택 가능한 옵션이 없습니다.</p>
             )}
-            {hasSizes && sizeOptions.length > 0 && selectedColor ? (
+            {!isCw && hasSizes && sizeOptions.length > 0 && selectedColor ? (
               <>
                 <SizePicker
                   productId={product.id}
@@ -452,6 +572,9 @@ export function ProductDetail({
                   <SizeChartControl chart={product.sizeChart} />
                 ) : null}
               </>
+            ) : null}
+            {isCw && hasSizes && product.sizeChart ? (
+              <SizeChartControl chart={product.sizeChart} />
             ) : null}
             {!soldOut && product.braceletResize ? (
               <BraceletResizeControls

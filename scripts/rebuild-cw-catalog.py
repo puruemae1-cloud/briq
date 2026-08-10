@@ -166,6 +166,49 @@ def is_full_sku(sku: str) -> bool:
     return bool(sku) and sku.count("-") >= 2 and len(sku) > 10
 
 
+def case_size_from_sku(sku: str) -> str | None:
+    """Extract case diameter from CW SKU middle token (e.g. 36ADA4 → 36mm)."""
+    parts = (sku or "").split("-")
+    if len(parts) < 2:
+        return None
+    m = re.match(r"^(\d{2,3})[A-Z0-9]+$", parts[1], re.I)
+    return f"{m.group(1)}mm" if m else None
+
+
+def dial_family_key(sku: str, line: str) -> str:
+    """
+    Group strap sisters across case sizes.
+    4-part: C63-36ADA4-S00B0-B0 + C63-39ADA4-S00B0-RK → new|C63|ADA4|S00B0
+    3-part: C60-41A3H31S0BB0-B0 + C60-44A3H31S0BB0-RK → new|C60|A3H31S0BB0
+    (leading case-diameter digits stripped from the model token).
+    """
+    parts = (sku or "").split("-")
+    if len(parts) < 2:
+        return f"{line}|{sku}"
+    model = parts[1]
+    m = re.match(r"^(\d{2,3})([A-Z0-9]+)$", model, re.I)
+    model_code = m.group(2).upper() if m else model.upper()
+    prefix = parts[0].upper()
+    if len(parts) >= 4:
+        dial = parts[2].upper()
+        return f"{line}|{prefix}|{model_code}|{dial}"
+    # 3-part SKUs embed dial in the middle token; last token is strap only.
+    return f"{line}|{prefix}|{model_code}"
+
+
+def strap_color_key(sku: str) -> str:
+    """Stable strap axis across case sizes (last SKU token)."""
+    return slugify((sku or "").split("-")[-1] or sku)
+
+
+def normalize_case_size(size: str | None, sku: str = "") -> str | None:
+    if size:
+        m = re.search(r"(\d{2,3})\s*mm", str(size), re.I)
+        if m:
+            return f"{m.group(1)}mm"
+    return case_size_from_sku(sku)
+
+
 def local_gallery(sku: str) -> list[str]:
     folder = ROOT / "public/products/cw-pdp" / slugify(sku)
     if not folder.exists():
@@ -431,28 +474,34 @@ for raw in RAW["products"]:
     en = ENR.get(sku) or {}
     if en.get("error"):
         en = {}
-    dial_key = "-".join(sku.split("-")[:-1]) if sku.count("-") >= 3 else sku
     name_en = display_name_en(sku, en, raw)
-    size = en.get("size") if not is_nearly_new(en.get("nameEn")) else None
+    size = normalize_case_size(en.get("size") if not is_nearly_new(en.get("nameEn")) else None, sku)
     colour = en.get("colour") if not is_nearly_new(en.get("nameEn")) else None
     sub = clean_sub(raw.get("subtitle") or "")
     if not size or not colour:
         parts = [p.strip() for p in sub.split("·")]
         for part in parts:
-            if re.match(r"\d+mm$", part.replace(" ", "")):
-                size = size or part.strip()
+            if re.match(r"\d+mm$", part.replace(" ", ""), re.I):
+                size = size or normalize_case_size(part.strip(), sku)
             elif part and not any(
                 x in part.lower()
                 for x in ["automatic", "bracelet", "rubber", "leather", "gmt", "steel"]
             ):
                 if not colour and "mm" not in part:
                     colour = part
-    # Group by dial family + new vs nearly-new line (ignore enrich name contamination)
+    size = normalize_case_size(size, sku)
+    # Group strap sisters across case diameters (official WSize axis).
     line = "nn" if (sku.upper().startswith("N") or is_nearly_new(raw.get("name"))) else "new"
-    group_key = f"{line}|{dial_key}"
+    group_key = dial_family_key(sku, line)
     grouped.setdefault(
         group_key,
-        {"raw_members": [], "en": {}, "name_en": name_en, "size": size, "colour": colour},
+        {
+            "raw_members": [],
+            "en": {},
+            "name_en": name_en,
+            "sizes": set(),
+            "colour": colour,
+        },
     )
     grouped[group_key]["raw_members"].append(raw)
     if name_en and not is_nearly_new(name_en):
@@ -460,7 +509,7 @@ for raw in RAW["products"]:
     elif not grouped[group_key].get("name_en"):
         grouped[group_key]["name_en"] = name_en
     if size:
-        grouped[group_key]["size"] = size
+        grouped[group_key]["sizes"].add(size)
     if colour:
         grouped[group_key]["colour"] = colour
 
@@ -468,7 +517,11 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     members = g["raw_members"]
     en = best_enrich(members) or g.get("en") or {}
     name_en = g["name_en"] or display_name_en(members[0]["sku"], en, members[0])
-    # Prefer a full new-line SKU with the richest gallery / rubber default for PDP seed
+    case_sizes = sorted(
+        g.get("sizes") or set(),
+        key=lambda s: int(re.sub(r"\D", "", s) or "0"),
+    )
+    # Prefer primary from the richest gallery; fall back across sizes
     primary_sku = next(
         (
             m["sku"]
@@ -482,6 +535,10 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         (m["sku"] for m in members if is_full_sku(m.get("sku") or "")),
         members[0]["sku"],
     )
+    primary_size = normalize_case_size(
+        (ENR.get(primary_sku) or {}).get("size"), primary_sku
+    )
+    multi_case = len(case_sizes) > 1
     gbp = gbp_for_sku(primary_sku, members[0].get("gbpPrice"))
     if gbp is None:
         continue
@@ -505,8 +562,9 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         if vid in seen_vids:
             continue
         seen_vids.add(vid)
+        men = ENR.get(msku) or {}
         label = None
-        for sv in en.get("strapVariants") or []:
+        for sv in (men.get("strapVariants") or en.get("strapVariants") or []):
             if resolve_variant_sku(sv, members, g.get("colour"), primary_sku) == msku and sv.get("labelEn"):
                 label = sv.get("labelEn")
                 break
@@ -540,7 +598,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         vgbp = gbp_for_sku(msku, m.get("gbpPrice") or gbp)
         vimgs = local_gallery(msku)
         if not vimgs:
-            for sv in en.get("strapVariants") or []:
+            for sv in (men.get("strapVariants") or en.get("strapVariants") or []):
                 if resolve_variant_sku(sv, members, g.get("colour"), primary_sku) == msku:
                     vimgs = existing_images(sv.get("images"))
                     break
@@ -550,20 +608,24 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 vimgs = [plp]
         if not vimgs:
             continue
-        variants.append(
-            {
-                "id": vid,
-                "name": label,
-                "nameKo": to_ko(label),
-                "sku": msku,
-                "gbpPrice": float(vgbp),
-                "price": round_krw(float(vgbp)),
-                "image": vimgs[0],
-                "images": vimgs[:10],
-                "sourceUrl": m.get("url") or "",
-                "inStock": True,
-            }
-        )
+        vsize = normalize_case_size(men.get("size") or (None if multi_case else primary_size), msku)
+        vrow = {
+            "id": vid,
+            "name": label,
+            "nameKo": to_ko(label),
+            "sku": msku,
+            "gbpPrice": float(vgbp),
+            "price": round_krw(float(vgbp)),
+            "image": vimgs[0],
+            "images": vimgs[:10],
+            "sourceUrl": m.get("url") or "",
+            "inStock": True,
+        }
+        if multi_case and vsize:
+            vrow["size"] = vsize
+            vrow["colorKey"] = strap_color_key(msku)
+            vrow["colorNameKo"] = to_ko(label)
+        variants.append(vrow)
     if len(variants) <= 1:
         variants = []
 
@@ -584,8 +646,11 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             images = pref["images"]
 
     sub_bits = []
-    if g.get("size"):
-        sub_bits.append(g["size"])
+    # Multi-case PDPs expose diameter as a picker — omit from the title.
+    if not multi_case and primary_size:
+        sub_bits.append(primary_size)
+    elif not multi_case and case_sizes:
+        sub_bits.append(case_sizes[0])
     if g.get("colour"):
         sub_bits.append(g["colour"])
     sub_en = " · ".join(sub_bits)
@@ -755,6 +820,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             ),
             "registeredAt": None,  # set below
             "editTier": "signature",
+            "size": None if multi_case else primary_size,
             "variants": variants if len(variants) > 1 else [],
             "braceletResize": bool(en.get("braceletResize")),
             "braceletResizeFeeKrw": en.get("braceletResizeFeeKrw") or 20000,
@@ -762,6 +828,8 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "techSpecs": tech_specs,
             "featuresKo": features_ko,
             "memberSkus": [m["sku"] for m in members],
+            "multiCase": multi_case,
+            "caseSizes": case_sizes,
         }
     )
 
@@ -832,6 +900,12 @@ for p in products_out:
                 lines.append(f'        images: {json.dumps(v["images"])},')
             lines.append(f'        sourceUrl: {json.dumps(v["sourceUrl"])},')
             lines.append(f'        inStock: {str(v.get("inStock", True)).lower()},')
+            if v.get("size"):
+                lines.append(f'        size: {json.dumps(v["size"])},')
+            if v.get("colorKey"):
+                lines.append(f'        colorKey: {json.dumps(v["colorKey"])},')
+            if v.get("colorNameKo"):
+                lines.append(f'        colorNameKo: {json.dumps(v["colorNameKo"], ensure_ascii=False)},')
             lines.append("      },")
         lines.append("    ],")
     if p.get("braceletResize"):
@@ -875,4 +949,16 @@ lines.append("")
 out = ROOT / "src/data/cw/cw-catalog.ts"
 out.write_text("\n".join(lines))
 _TX_CACHE_PATH.write_text(json.dumps(_TX_CACHE, ensure_ascii=False, indent=2))
-print("wrote", out, "products", len(products_out), "withVariants", sum(1 for p in products_out if p.get("variants")), "enriched", sum(1 for p in products_out if p.get("storySections") and p["storySections"][0].get("bodyKo")))
+multi_n = sum(1 for p in products_out if p.get("multiCase"))
+print(
+    "wrote",
+    out,
+    "products",
+    len(products_out),
+    "withVariants",
+    sum(1 for p in products_out if p.get("variants")),
+    "multiCaseSize",
+    multi_n,
+    "enriched",
+    sum(1 for p in products_out if p.get("storySections") and p["storySections"][0].get("bodyKo")),
+)

@@ -160,17 +160,21 @@ function optionXml(line: ResolvedNaverPayLine): string {
   const v = line.variant;
   // Mirror product-info optionItem names/ids (컬러+사이즈 or 옵션).
   if (v.size) {
+    const isCw = line.product.brand === "Christopher Ward";
+    const colorAxisName = isCw ? "스트랩" : "컬러";
+    const sizeAxisName = isCw ? "케이스 사이즈" : "사이즈";
     const colorId = toNaverManageCode(v.colorKey || v.id);
     const colorText = v.colorNameKo || v.nameKo || colorId;
     selected.push(
-      `<selectedItem><type>SELECT</type><name>${cdata("컬러")}</name><value><id>${escapeXml(colorId)}</id><text>${cdata(colorText)}</text></value></selectedItem>`,
+      `<selectedItem><type>SELECT</type><name>${cdata(colorAxisName)}</name><value><id>${escapeXml(colorId)}</id><text>${cdata(colorText)}</text></value></selectedItem>`,
     );
     selected.push(
-      `<selectedItem><type>SELECT</type><name>${cdata("사이즈")}</name><value><id>${escapeXml(toNaverManageCode(v.size))}</id><text>${cdata(v.size)}</text></value></selectedItem>`,
+      `<selectedItem><type>SELECT</type><name>${cdata(sizeAxisName)}</name><value><id>${escapeXml(toNaverManageCode(v.size))}</id><text>${cdata(v.size)}</text></value></selectedItem>`,
     );
   } else {
+    const isCw = line.product.brand === "Christopher Ward";
     selected.push(
-      `<selectedItem><type>SELECT</type><name>${cdata("옵션")}</name><value><id>${escapeXml(toNaverManageCode(v.id))}</id><text>${cdata(v.nameKo || v.name || v.id)}</text></value></selectedItem>`,
+      `<selectedItem><type>SELECT</type><name>${cdata(isCw ? "스트랩" : "옵션")}</name><value><id>${escapeXml(toNaverManageCode(v.id))}</id><text>${cdata(v.nameKo || v.name || v.id)}</text></value></selectedItem>`,
     );
   }
   // Bracelet resize fee is already in basePrice; do not emit a separate option
