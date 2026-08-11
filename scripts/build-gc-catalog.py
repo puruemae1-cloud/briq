@@ -1087,7 +1087,7 @@ def size_slug(size: str) -> str:
     return slugify(format_size_label(size))
 
 
-def common_copy(row: dict) -> dict:
+def common_copy(row: dict) -> dict | None:
     ko = row.get("translationKo") or {}
     en = row.get("translationEn") or {}
     code = row.get("productCode") or row.get("id") or ""
@@ -1132,13 +1132,19 @@ def common_copy(row: dict) -> dict:
     images = list(row.get("localImages") or [])
     if not images and row.get("localImage"):
         images = [row["localImage"]]
+    # Only keep files that exist locally — never ship catalog paths that 404 on
+    # the product-images tag (weekly sync used to leave orphans).
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
     if not images:
-        remotes = row.get("images") or (
-            [] if not row.get("image") else [row["image"]]
-        )
-        images = remotes[:1]
+        print(f"skip no local image: {row.get('productCode') or row.get('sku') or row.get('code')}", flush=True)
+        return None
 
-    image = images[0] if images else ""
+    image = images[0]
     hover = (
         row.get("localHover")
         or pick_hover_local(
@@ -1148,6 +1154,11 @@ def common_copy(row: dict) -> dict:
         )
         or image
     )
+    if hover and not (
+        (ROOT / "public" / str(hover).lstrip("/")).is_file()
+        and (ROOT / "public" / str(hover).lstrip("/")).stat().st_size > 2048
+    ):
+        hover = images[1] if len(images) > 1 else image
 
     description_bits = [editorial_ko] if editorial_ko else []
     if details_ko:
@@ -1239,6 +1250,8 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
 
     leaf = next((c for c in HANDBAG_LEAF_COLLECTIONS if c in cols), "gc-handbags")
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -1323,6 +1336,8 @@ def build_mens_handbag_product(row: dict, prev: dict | None, now_iso: str) -> di
         "gc-mens-handbags",
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -1397,6 +1412,8 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
 
     leaf = next((c for c in RTW_LEAF_COLLECTIONS if c in cols), "gc-women-rtw")
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -1509,6 +1526,8 @@ def build_mens_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict |
 
     leaf = next((c for c in MEN_RTW_LEAF_COLLECTIONS if c in cols), "gc-men-rtw")
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -1621,6 +1640,8 @@ def build_wallet_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
         (c for c in WALLETS_LEAF_COLLECTIONS if c in cols), "gc-women-wallets"
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -1695,6 +1716,8 @@ def build_mens_wallet_product(row: dict, prev: dict | None, now_iso: str) -> dic
         (c for c in MEN_WALLETS_LEAF_COLLECTIONS if c in cols), "gc-men-wallets"
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -1778,6 +1801,8 @@ def build_fashion_accessory_product(
         "gc-women-fashion-accessories",
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -1921,6 +1946,8 @@ def build_mens_fashion_accessory_product(
         "gc-men-fashion-accessories",
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -2055,6 +2082,8 @@ def build_travel_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
         (c for c in TRAVEL_LEAF_COLLECTIONS if c in cols), "gc-women-travel"
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -2141,6 +2170,8 @@ def build_mens_travel_product(
         (c for c in MEN_TRAVEL_LEAF_COLLECTIONS if c in cols), "gc-men-travel"
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
@@ -2236,6 +2267,8 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         (c for c in JEWELLERY_LEAF_COLLECTIONS if c in cols), "gc-jewellery-watches"
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -2365,6 +2398,8 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
 
     leaf = next((c for c in SHOES_LEAF_COLLECTIONS if c in cols), "gc-women-shoes")
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -2481,6 +2516,8 @@ def build_mens_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         "gc-men-shoes",
     )
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))
@@ -2604,6 +2641,8 @@ def build_gift_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
         cols = sorted(set([*cols, *GIFTS_PARENT_COLLECTIONS]))
         leaf = next((c for c in GIFTS_LEAF_COLLECTIONS if c in cols), "gc-gifts")
     copy = common_copy(row)
+    if not copy:
+        return None
     pid = f"gc-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
     in_stock = bool(row.get("inStock", True))

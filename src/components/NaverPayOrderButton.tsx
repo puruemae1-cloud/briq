@@ -138,10 +138,15 @@ export function NaverPayOrderButton({
       const root = document.getElementById(containerId);
       if (!root || cancelled) return;
 
-      // SDK sizes / paints from container width — dock flex can be 0 on first paint.
-      root.style.minWidth = "168px";
-      root.style.width = "100%";
-      await waitForLayout(root, 120);
+      // SDK sizes from container width — match dock CTA (7.5rem) or give PDP room.
+      const dock = page === "dock";
+      root.style.minWidth = dock ? "120px" : "168px";
+      root.style.width = dock ? "120px" : "100%";
+      root.style.height = dock ? "43px" : "";
+      root.style.display = dock ? "flex" : "";
+      root.style.alignItems = dock ? "center" : "";
+      root.style.justifyContent = dock ? "center" : "";
+      await waitForLayout(root, dock ? 100 : 120);
       if (cancelled) return;
 
       try {

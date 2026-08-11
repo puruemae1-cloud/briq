@@ -1,12 +1,12 @@
 {
-  "scrapedAt": "2026-08-11T11:58:43.961523+00:00",
+  "scrapedAt": "2026-08-11T14:34:23.552499+00:00",
   "source": "https://www.chanel.com/gb/fashion/ready-to-wear/",
   "note": "Partial import; scrape continues.",
   "collections": {
     "ch-women-looks": {
       "label": "All the Looks",
       "labelKo": "전체 룩",
-      "count": 210
+      "count": 214
     },
     "ch-women-jackets": {
       "label": "Jackets",
@@ -31,7 +31,7 @@
     "ch-women-skirts": {
       "label": "Skirts",
       "labelKo": "스커트",
-      "count": 57
+      "count": 60
     },
     "ch-women-trousers-shorts": {
       "label": "Trousers & Shorts",
@@ -46,11 +46,11 @@
     "ch-women-outerwear": {
       "label": "Outerwear",
       "labelKo": "아우터웨어",
-      "count": 3
+      "count": 4
     }
   },
-  "count": 210,
-  "skippedCount": 17,
+  "count": 214,
+  "skippedCount": 19,
   "failedCount": 0,
   "leafCounts": {
     "ch-women-dresses": 26,
@@ -58,9 +58,9 @@
     "ch-women-jackets": 36,
     "ch-women-trousers-shorts": 12,
     "ch-women-blouses-tops": 43,
-    "ch-women-skirts": 57,
+    "ch-women-skirts": 60,
     "ch-women-cardigans-sweaters": 25,
-    "ch-women-outerwear": 3
+    "ch-women-outerwear": 4
   },
   "skipped": [
     {
@@ -164,6 +164,18 @@
       "sku": "P82654V7511800100",
       "reason": "bad price None",
       "url": "https://www.chanel.com/gb/fashion/p/P82654V7511800100/long-skirt-embroidered-silk/"
+    },
+    {
+      "_skip": true,
+      "sku": "P82666V7485994305",
+      "reason": "bad price None",
+      "url": "https://www.chanel.com/gb/fashion/p/P82666V7485994305/jacket-embroidered-wool-silk/"
+    },
+    {
+      "_skip": true,
+      "sku": "P82669V74936UA693",
+      "reason": "bad price None",
+      "url": "https://www.chanel.com/gb/fashion/p/P82669V74936UA693/coat-tweed-mixed-fibres/"
     }
   ],
   "failed": [],
@@ -36379,6 +36391,698 @@
       ],
       "localImage": "/products/ch-pdp/p82663v6269094305/1.jpg",
       "localHover": "/products/ch-pdp/p82663v6269094305/2.jpg"
+    },
+    {
+      "id": "P82665V74726UA292",
+      "productCode": "P82665V74726UA292",
+      "sku": "P82665V74726UA292",
+      "title": "Midi Skirt",
+      "priceLabel": "£3,390",
+      "gbpPrice": 3390.0,
+      "categoryLabel": "Skirts",
+      "collection": "Métiers d’art 2026",
+      "collectionCode": "26A",
+      "url": "https://www.chanel.com/gb/fashion/p/P82665V74726UA292/midi-skirt-tweed/",
+      "hierarchy": [
+        {
+          "label": "Métiers d’art 2026",
+          "url": "/gb/fashion/metiers-dart-2026/l/1x2x84/the-looks/"
+        },
+        {
+          "label": "Ready-To-Wear",
+          "url": "/gb/fashion/ready-to-wear/"
+        },
+        {
+          "label": "Skirts",
+          "url": "/gb/fashion/ready-to-wear/l/1x1x9x7/skirts/"
+        }
+      ],
+      "details": {
+        "color": "Black & Multicolour",
+        "description": "Multicoloured midi skirt with a pencil silhouette, embellished with a black and white braid and a silken lining.",
+        "fabrics": "Tweed",
+        "reference": "P82665-V74726-UA292",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-82774708.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774703.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774694.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178869.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178872.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178853.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774708.jpg",
+          "id": "82774708"
+        },
+        {
+          "typology": "PACKSHOT_ALTERNATIVE",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774703.jpg",
+          "id": "82774703"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774694.jpg",
+          "id": "82774694"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178869.jpg",
+          "id": "80178869"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178872.jpg",
+          "id": "80178872"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178853.jpg",
+          "id": "80178853"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "P82665V74726UA29250",
+          "size": "50",
+          "orliSize": "50",
+          "sku": "P82665V74726UA29250",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29248",
+          "size": "48",
+          "orliSize": "48",
+          "sku": "P82665V74726UA29248",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29246",
+          "size": "46",
+          "orliSize": "46",
+          "sku": "P82665V74726UA29246",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29244",
+          "size": "44",
+          "orliSize": "44",
+          "sku": "P82665V74726UA29244",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29242",
+          "size": "42",
+          "orliSize": "42",
+          "sku": "P82665V74726UA29242",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29240",
+          "size": "40",
+          "orliSize": "40",
+          "sku": "P82665V74726UA29240",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29238",
+          "size": "38",
+          "orliSize": "38",
+          "sku": "P82665V74726UA29238",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29236",
+          "size": "36",
+          "orliSize": "36",
+          "sku": "P82665V74726UA29236",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74726UA29234",
+          "size": "34",
+          "orliSize": "34",
+          "sku": "P82665V74726UA29234",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "look": {
+        "id": "26A-PODIUM-046DIGI",
+        "passageNumber": 46,
+        "url": "/gb/fashion/p/26A-PODIUM-046/look-46/"
+      },
+      "new": false,
+      "collections": [
+        "ch-women",
+        "ch-women-looks",
+        "ch-women-rtw",
+        "ch-women-skirts",
+        "chanel"
+      ],
+      "leaf": "ch-women-skirts",
+      "localImages": [
+        "/products/ch-pdp/p82665v74726ua292/1.jpg",
+        "/products/ch-pdp/p82665v74726ua292/2.jpg",
+        "/products/ch-pdp/p82665v74726ua292/3.jpg",
+        "/products/ch-pdp/p82665v74726ua292/4.jpg",
+        "/products/ch-pdp/p82665v74726ua292/5.jpg",
+        "/products/ch-pdp/p82665v74726ua292/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/p82665v74726ua292/1.jpg",
+      "localHover": "/products/ch-pdp/p82665v74726ua292/2.jpg"
+    },
+    {
+      "id": "P82665V74786U9935",
+      "productCode": "P82665V74786U9935",
+      "sku": "P82665V74786U9935",
+      "title": "Midi Skirt",
+      "priceLabel": "£4,350",
+      "gbpPrice": 4350.0,
+      "categoryLabel": "Skirts",
+      "collection": "Métiers d’art 2026",
+      "collectionCode": "26A",
+      "url": "https://www.chanel.com/gb/fashion/p/P82665V74786U9935/midi-skirt-mixed-fibres/",
+      "hierarchy": [
+        {
+          "label": "Métiers d’art 2026",
+          "url": "/gb/fashion/metiers-dart-2026/l/1x2x84/the-looks/"
+        },
+        {
+          "label": "Ready-To-Wear",
+          "url": "/gb/fashion/ready-to-wear/"
+        },
+        {
+          "label": "Skirts",
+          "url": "/gb/fashion/ready-to-wear/l/1x1x9x7/skirts/"
+        }
+      ],
+      "details": {
+        "color": "Red & Multicolor",
+        "description": "A textured tweed skirt woven with mixed yarn recreates the poster of the movie Tonight or Never—a nod to Gabrielle Chanel’s movie costume creations.",
+        "fabrics": "Mixed Fibres",
+        "reference": "P82665-V74786-U9935",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-82774589.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774602.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774591.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80179549.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80179552.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80179529.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774589.jpg",
+          "id": "82774589"
+        },
+        {
+          "typology": "PACKSHOT_ALTERNATIVE",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774602.jpg",
+          "id": "82774602"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774591.jpg",
+          "id": "82774591"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80179549.jpg",
+          "id": "80179549"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80179552.jpg",
+          "id": "80179552"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80179529.jpg",
+          "id": "80179529"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "P82665V74786U993550",
+          "size": "50",
+          "orliSize": "50",
+          "sku": "P82665V74786U993550",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993548",
+          "size": "48",
+          "orliSize": "48",
+          "sku": "P82665V74786U993548",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993546",
+          "size": "46",
+          "orliSize": "46",
+          "sku": "P82665V74786U993546",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993544",
+          "size": "44",
+          "orliSize": "44",
+          "sku": "P82665V74786U993544",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993542",
+          "size": "42",
+          "orliSize": "42",
+          "sku": "P82665V74786U993542",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993540",
+          "size": "40",
+          "orliSize": "40",
+          "sku": "P82665V74786U993540",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993538",
+          "size": "38",
+          "orliSize": "38",
+          "sku": "P82665V74786U993538",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993536",
+          "size": "36",
+          "orliSize": "36",
+          "sku": "P82665V74786U993536",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V74786U993534",
+          "size": "34",
+          "orliSize": "34",
+          "sku": "P82665V74786U993534",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "look": {
+        "id": "26A-PODIUM-066DIGI",
+        "passageNumber": 66,
+        "url": "/gb/fashion/p/26A-PODIUM-066/look-66/"
+      },
+      "new": false,
+      "collections": [
+        "ch-women",
+        "ch-women-looks",
+        "ch-women-rtw",
+        "ch-women-skirts",
+        "chanel"
+      ],
+      "leaf": "ch-women-skirts",
+      "localImages": [
+        "/products/ch-pdp/p82665v74786u9935/1.jpg",
+        "/products/ch-pdp/p82665v74786u9935/2.jpg",
+        "/products/ch-pdp/p82665v74786u9935/3.jpg",
+        "/products/ch-pdp/p82665v74786u9935/4.jpg",
+        "/products/ch-pdp/p82665v74786u9935/5.jpg",
+        "/products/ch-pdp/p82665v74786u9935/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/p82665v74786u9935/1.jpg",
+      "localHover": "/products/ch-pdp/p82665v74786u9935/2.jpg"
+    },
+    {
+      "id": "P82665V75005UA758",
+      "productCode": "P82665V75005UA758",
+      "sku": "P82665V75005UA758",
+      "title": "Midi Skirt",
+      "priceLabel": "£4,950",
+      "gbpPrice": 4950.0,
+      "categoryLabel": "Skirts",
+      "collection": "Métiers d’art 2026",
+      "collectionCode": "26A",
+      "url": "https://www.chanel.com/gb/fashion/p/P82665V75005UA758/midi-skirt-silk/",
+      "hierarchy": [
+        {
+          "label": "Métiers d’art 2026",
+          "url": "/gb/fashion/metiers-dart-2026/l/1x2x84/the-looks/"
+        },
+        {
+          "label": "Ready-To-Wear",
+          "url": "/gb/fashion/ready-to-wear/"
+        },
+        {
+          "label": "Skirts",
+          "url": "/gb/fashion/ready-to-wear/l/1x1x9x7/skirts/"
+        }
+      ],
+      "details": {
+        "color": "Green, White & Black",
+        "description": "For the Métiers d’art 2026 collection, eclectic silhouettes cross paths in a play of contrasts where the extraordinary meets the everyday. Unique to CHANEL, the Métiers d’art collections celebrate every year the exceptional savoir-faire of at the heart of the House’s creations.",
+        "fabrics": "Silk",
+        "reference": "P82665-V75005-UA758",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-82774666.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774663.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82774658.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178701.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178704.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178688.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774666.jpg",
+          "id": "82774666"
+        },
+        {
+          "typology": "PACKSHOT_ALTERNATIVE",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774663.jpg",
+          "id": "82774663"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/as/f_auto/-82774658.jpg",
+          "id": "82774658"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178701.jpg",
+          "id": "80178701"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178704.jpg",
+          "id": "80178704"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178688.jpg",
+          "id": "80178688"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "P82665V75005UA75850",
+          "size": "50",
+          "orliSize": "50",
+          "sku": "P82665V75005UA75850",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75848",
+          "size": "48",
+          "orliSize": "48",
+          "sku": "P82665V75005UA75848",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75846",
+          "size": "46",
+          "orliSize": "46",
+          "sku": "P82665V75005UA75846",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75844",
+          "size": "44",
+          "orliSize": "44",
+          "sku": "P82665V75005UA75844",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75842",
+          "size": "42",
+          "orliSize": "42",
+          "sku": "P82665V75005UA75842",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75840",
+          "size": "40",
+          "orliSize": "40",
+          "sku": "P82665V75005UA75840",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75838",
+          "size": "38",
+          "orliSize": "38",
+          "sku": "P82665V75005UA75838",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75836",
+          "size": "36",
+          "orliSize": "36",
+          "sku": "P82665V75005UA75836",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82665V75005UA75834",
+          "size": "34",
+          "orliSize": "34",
+          "sku": "P82665V75005UA75834",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "look": {
+        "id": "26A-PODIUM-005DIGI",
+        "passageNumber": 5,
+        "url": "/gb/fashion/p/26A-PODIUM-005/look-5/"
+      },
+      "new": false,
+      "collections": [
+        "ch-women",
+        "ch-women-looks",
+        "ch-women-rtw",
+        "ch-women-skirts",
+        "chanel"
+      ],
+      "leaf": "ch-women-skirts",
+      "localImages": [
+        "/products/ch-pdp/p82665v75005ua758/1.jpg",
+        "/products/ch-pdp/p82665v75005ua758/2.jpg",
+        "/products/ch-pdp/p82665v75005ua758/3.jpg",
+        "/products/ch-pdp/p82665v75005ua758/4.jpg",
+        "/products/ch-pdp/p82665v75005ua758/5.jpg",
+        "/products/ch-pdp/p82665v75005ua758/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/p82665v75005ua758/1.jpg",
+      "localHover": "/products/ch-pdp/p82665v75005ua758/2.jpg"
+    },
+    {
+      "id": "P82668V7405894305",
+      "productCode": "P82668V7405894305",
+      "sku": "P82668V7405894305",
+      "title": "Trench Coat",
+      "priceLabel": "£6,870",
+      "gbpPrice": 6870.0,
+      "categoryLabel": "Outerwear",
+      "collection": "Métiers d’art 2026",
+      "collectionCode": "26A",
+      "url": "https://www.chanel.com/gb/fashion/p/P82668V7405894305/trench-coat-tweed/",
+      "hierarchy": [
+        {
+          "label": "Métiers d’art 2026",
+          "url": "/gb/fashion/metiers-dart-2026/l/1x2x84/the-looks/"
+        },
+        {
+          "label": "Ready-To-Wear",
+          "url": "/gb/fashion/ready-to-wear/"
+        },
+        {
+          "label": "Outerwear",
+          "url": "/gb/fashion/ready-to-wear/l/1x1x9x2/outerwear/"
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "For the Métiers d’art 2026 collection, eclectic silhouettes cross paths in a play of contrasts where the extraordinary meets the everyday. Unique to CHANEL, the Métiers d’art collections celebrate every year the exceptional savoir-faire of at the heart of the House’s creations.",
+        "fabrics": "Tweed",
+        "reference": "P82668-V74058-94305",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-82760018.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82760027.jpg",
+        "https://www.chanel.com/images/as/f_auto/-82760019.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178451.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178458.jpg",
+        "https://www.chanel.com/images/as/f_auto/-80178440.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/as/f_auto/-82760018.jpg",
+          "id": "82760018"
+        },
+        {
+          "typology": "PACKSHOT_ALTERNATIVE",
+          "source": "https://www.chanel.com/images/as/f_auto/-82760027.jpg",
+          "id": "82760027"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/as/f_auto/-82760019.jpg",
+          "id": "82760019"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178451.jpg",
+          "id": "80178451"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178458.jpg",
+          "id": "80178458"
+        },
+        {
+          "typology": "PACKSHOT_STOCKMAN",
+          "source": "https://www.chanel.com/images/as/f_auto/-80178440.jpg",
+          "id": "80178440"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "P82668V740589430550",
+          "size": "50",
+          "orliSize": "50",
+          "sku": "P82668V740589430550",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430548",
+          "size": "48",
+          "orliSize": "48",
+          "sku": "P82668V740589430548",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430546",
+          "size": "46",
+          "orliSize": "46",
+          "sku": "P82668V740589430546",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430544",
+          "size": "44",
+          "orliSize": "44",
+          "sku": "P82668V740589430544",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430542",
+          "size": "42",
+          "orliSize": "42",
+          "sku": "P82668V740589430542",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430540",
+          "size": "40",
+          "orliSize": "40",
+          "sku": "P82668V740589430540",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430538",
+          "size": "38",
+          "orliSize": "38",
+          "sku": "P82668V740589430538",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430536",
+          "size": "36",
+          "orliSize": "36",
+          "sku": "P82668V740589430536",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "P82668V740589430534",
+          "size": "34",
+          "orliSize": "34",
+          "sku": "P82668V740589430534",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "look": {
+        "id": "26A-PODIUM-047DIGI",
+        "passageNumber": 47,
+        "url": "/gb/fashion/p/26A-PODIUM-047/look-47/"
+      },
+      "new": false,
+      "collections": [
+        "ch-women",
+        "ch-women-looks",
+        "ch-women-outerwear",
+        "ch-women-rtw",
+        "chanel"
+      ],
+      "leaf": "ch-women-outerwear",
+      "localImages": [
+        "/products/ch-pdp/p82668v7405894305/1.jpg",
+        "/products/ch-pdp/p82668v7405894305/2.jpg",
+        "/products/ch-pdp/p82668v7405894305/3.jpg",
+        "/products/ch-pdp/p82668v7405894305/4.jpg",
+        "/products/ch-pdp/p82668v7405894305/5.jpg",
+        "/products/ch-pdp/p82668v7405894305/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/p82668v7405894305/1.jpg",
+      "localHover": "/products/ch-pdp/p82668v7405894305/2.jpg"
     }
   ]
 }
