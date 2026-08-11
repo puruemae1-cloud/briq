@@ -594,16 +594,23 @@ def leaf_from_product(prod: dict) -> str | None:
 
 
 def order_images(images: list[dict]) -> list[str]:
-    """Prefer PACKSHOT_DEFAULT, then alternatives; skip empty sources."""
+    """Prefer studio garment packshots (STOCKMAN) over lifestyle model shots.
+
+    Chanel RTW PDPs usually ship:
+      PACKSHOT_DEFAULT / ALTERNATIVE / OTHER — on-model lifestyle / look photos
+      PACKSHOT_STOCKMAN — studio garment views (FRONT / BACK / DETAIL)
+
+    Briq PLP thumbnails must show the garment, not the lookbook model.
+    """
     preferred = (
-        "PACKSHOT_DEFAULT",
-        "PACKSHOT_ALTERNATIVE",
-        "PACKSHOT_OTHER",
         "PACKSHOT_STOCKMAN",
+        "PACKSHOT_OTHER",
+        "PACKSHOT_ALTERNATIVE",
+        "PACKSHOT_DEFAULT",
         "LOOK",
         "EDITORIAL",
     )
-    scored: list[tuple[int, int, str]] = []
+    scored: list[tuple[int, int, int, str]] = []
     seen: set[str] = set()
     for i, im in enumerate(images or []):
         if not isinstance(im, dict):
@@ -617,9 +624,12 @@ def order_images(images: list[dict]) -> list[str]:
             rank = preferred.index(typ)
         except ValueError:
             rank = 50
-        scored.append((rank, i, src))
+        angle = (im.get("viewAngle") or "").upper()
+        # FRONT before BACK / DETAIL within STOCKMAN
+        angle_rank = {"FRONT": 0, "BACK": 1, "DETAIL": 2}.get(angle, 5)
+        scored.append((rank, angle_rank, i, src))
     scored.sort()
-    return [u for _, _, u in scored]
+    return [u for _, _, _, u in scored]
 
 
 def availability_map(avail: dict | None) -> tuple[str | None, dict[str, bool]]:
@@ -735,6 +745,8 @@ def parse_pdp(html: str, url: str) -> dict | None:
         "imageMeta": [
             {
                 "typology": im.get("typology"),
+                "viewAngle": im.get("viewAngle"),
+                "viewLabel": im.get("viewLabel"),
                 "source": normalize_img_url(im.get("source")),
                 "id": im.get("id"),
             }

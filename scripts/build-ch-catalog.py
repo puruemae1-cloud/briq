@@ -163,6 +163,60 @@ def accent_for(key: str) -> str:
     return f"#{r:02x}{g:02x}{b:02x}"
 
 
+def reorder_locals_garment_first(row: dict) -> list[str]:
+    """Put studio STOCKMAN garment shots before lifestyle model photos.
+
+    Existing downloads keep file numbers from the old order; we only reorder
+    the path list so PLP / PDP primary image is the garment packshot.
+    """
+    locals_ = list(row.get("localImages") or [])
+    if not locals_ and row.get("localImage"):
+        locals_ = [row["localImage"]]
+    cdn = list(row.get("images") or [])
+    metas = [m for m in (row.get("imageMeta") or []) if isinstance(m, dict)]
+    if not locals_:
+        return []
+    if not cdn or not metas:
+        return locals_
+
+    src_to_local: dict[str, str] = {}
+    for i, src in enumerate(cdn):
+        if i < len(locals_) and src:
+            src_to_local[str(src)] = locals_[i]
+
+    def score(m: dict) -> tuple[int, int, int]:
+        typ = str(m.get("typology") or "").upper()
+        angle = str(m.get("viewAngle") or "").upper()
+        preferred = (
+            "PACKSHOT_STOCKMAN",
+            "PACKSHOT_OTHER",
+            "PACKSHOT_ALTERNATIVE",
+            "PACKSHOT_DEFAULT",
+            "LOOK",
+            "EDITORIAL",
+        )
+        try:
+            rank = preferred.index(typ)
+        except ValueError:
+            rank = 50
+        angle_rank = {"FRONT": 0, "BACK": 1, "DETAIL": 2}.get(angle, 5)
+        # Stable by original meta order when angle missing (FRONT is usually first STOCKMAN)
+        return (rank, angle_rank, 0)
+
+    ordered: list[str] = []
+    seen_src: set[str] = set()
+    for m in sorted(metas, key=score):
+        src = str(m.get("source") or "")
+        loc = src_to_local.get(src)
+        if loc and src not in seen_src:
+            seen_src.add(src)
+            ordered.append(loc)
+    for loc in locals_:
+        if loc not in ordered:
+            ordered.append(loc)
+    return ordered
+
+
 def format_size_label(size: str) -> str:
     s = (size or "").strip()
     if not s:
@@ -234,9 +288,7 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         parts.append(f"레퍼런스: {ref}")
     description_ko = "\n\n".join(p for p in parts if p)
 
-    images = list(row.get("localImages") or [])
-    if not images and row.get("localImage"):
-        images = [row["localImage"]]
+    images = reorder_locals_garment_first(row)
     # Require at least one real local file
     images = [
         p
@@ -248,7 +300,8 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         print(f"skip no local image: {code}", flush=True)
         return None
     image = images[0]
-    hover = row.get("localHover") or (images[1] if len(images) > 1 else None)
+    # Hover: next studio angle if available, else second image
+    hover = images[1] if len(images) > 1 else None
     if hover and not (
         (ROOT / "public" / hover.lstrip("/")).is_file()
         and (ROOT / "public" / hover.lstrip("/")).stat().st_size > 2048
