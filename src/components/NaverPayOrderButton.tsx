@@ -243,62 +243,41 @@ export function NaverPayOrderButton({
             "size_small",
           );
           el.classList.add("type_one_button", "size_medium");
-          el.style.width = "100%";
-          el.style.height = "100%";
-          el.style.margin = "0";
         });
 
-        // Drop empty leftover table columns that leave a left/right gap.
-        root.querySelectorAll("td, th").forEach((cell) => {
-          const el = cell as HTMLElement;
-          if (
-            !el.textContent?.trim() &&
-            !el.querySelector("a, button, img, iframe, svg")
-          ) {
-            el.remove();
-          }
-        });
-
-        root.querySelectorAll("table").forEach((table) => {
-          const t = table as HTMLElement;
-          t.style.width = "100%";
-          t.style.height = "100%";
-          t.style.margin = "0";
-          t.style.tableLayout = "fixed";
-        });
+        const fill = (el: HTMLElement) => {
+          el.style.setProperty("position", "absolute", "important");
+          el.style.setProperty("inset", "0", "important");
+          el.style.setProperty("top", "0", "important");
+          el.style.setProperty("right", "0", "important");
+          el.style.setProperty("bottom", "0", "important");
+          el.style.setProperty("left", "0", "important");
+          el.style.setProperty("width", "100%", "important");
+          el.style.setProperty("height", "100%", "important");
+          el.style.setProperty("min-height", "100%", "important");
+          el.style.setProperty("max-height", "100%", "important");
+          el.style.setProperty("margin", "0", "important");
+          el.style.setProperty("padding", "0", "important");
+          el.style.setProperty("box-sizing", "border-box", "important");
+          el.style.setProperty("display", "flex", "important");
+          el.style.setProperty("align-items", "center", "important");
+          el.style.setProperty("justify-content", "center", "important");
+          el.style.setProperty("line-height", "1", "important");
+        };
 
         root
           .querySelectorAll(
-            ".npay_button_area, .npay_btn_container, .npay_main_cell",
+            [
+              ".npay_button_sdk_wrapper",
+              ".npay_button_area",
+              ".npay_btn_container",
+              ".npay_main_cell",
+              ".npay_main_cell > a",
+              ".npay_btn_pay",
+              ".npay_link_order",
+            ].join(", "),
           )
-          .forEach((node) => {
-            const el = node as HTMLElement;
-            el.style.display = "flex";
-            el.style.alignItems = "center";
-            el.style.justifyContent = "center";
-            el.style.width = "100%";
-            el.style.height = "100%";
-            el.style.margin = "0";
-            el.style.maxWidth = "100%";
-          });
-
-        root
-          .querySelectorAll(
-            ".npay_main_cell > a, .npay_btn_pay, .npay_link_order",
-          )
-          .forEach((node) => {
-            const el = node as HTMLElement;
-            el.style.display = "flex";
-            el.style.alignItems = "center";
-            el.style.justifyContent = "center";
-            el.style.width = "100%";
-            el.style.height = "100%";
-            el.style.margin = "0";
-            el.style.padding = "0";
-            el.style.boxSizing = "border-box";
-            el.style.gap = "0.25rem";
-            el.style.lineHeight = "1";
-          });
+          .forEach((node) => fill(node as HTMLElement));
       };
 
       const polish = dock ? fitDockButton : stripSideButtons;

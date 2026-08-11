@@ -5191,7 +5191,7 @@ body:has(.pdp-dock) .back-to-top {
   max-width: 18rem;
 }
 
-/* Dock: Npay buy — same footprint as 구매하기; force buy-only SDK layout. */
+/* Dock: Npay buy — match 구매하기 height; fill slot + center logo/text. */
 .npay-order-button--dock {
   --dock-cta-w: 9.5rem;
   --dock-cta-h: 2.7rem;
@@ -5205,19 +5205,20 @@ body:has(.pdp-dock) .back-to-top {
   padding: 0;
   align-self: center;
   overflow: hidden;
-  display: grid;
-  place-items: stretch;
+  position: relative;
+  display: block;
   background: transparent;
 }
 
 .npay-order-button--dock .npay-order-button__mount {
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  min-height: var(--dock-cta-h);
-  overflow: hidden;
-  display: grid !important;
-  place-items: stretch;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  display: block !important;
   background: transparent;
 }
 
@@ -5240,59 +5241,57 @@ body:has(.pdp-dock) .back-to-top {
   pointer-events: none !important;
 }
 
-/* Override SDK type_three_button (60% main) → fill the CTA slot. */
+/* SDK leaves the gray chrome shorter than the slot — pin it to the CTA box. */
 .npay-order-button--dock .npay_button_sdk_wrapper,
 .npay-order-button--dock .npay_button_area,
 .npay-order-button--dock .npay_btn_container,
-.npay-order-button--dock .npay_main_cell {
+.npay-order-button--dock .npay_main_cell,
+.npay-order-button--dock .npay_main_cell > a,
+.npay-order-button--dock .npay_btn_pay,
+.npay-order-button--dock .npay_link_order {
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
   width: 100% !important;
+  min-width: 100% !important;
   max-width: 100% !important;
-  min-width: 0 !important;
   height: 100% !important;
   min-height: 100% !important;
+  max-height: 100% !important;
   margin: 0 !important;
-}
-
-.npay-order-button--dock .npay_button_area,
-.npay-order-button--dock .npay_main_cell {
+  padding: 0 !important;
+  box-sizing: border-box !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  line-height: 1 !important;
+  gap: 0.25rem !important;
 }
 
 .npay-order-button--dock table {
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
-  max-width: 100% !important;
   height: 100% !important;
   margin: 0 !important;
   border-collapse: collapse !important;
   table-layout: fixed !important;
 }
 
-.npay-order-button--dock .npay_main_cell > a,
-.npay-order-button--dock .npay_btn_pay,
-.npay-order-button--dock .npay_link_order,
-.npay-order-button--dock .npay_btn_pay_text {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  height: 100% !important;
-  min-height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  box-sizing: border-box !important;
-  gap: 0.25rem !important;
-  line-height: 1 !important;
+.npay-order-button--dock .npay_logo,
+.npay-order-button--dock .npay_logo svg {
+  display: block !important;
+  flex-shrink: 0 !important;
 }
 
 .npay-order-button--dock iframe {
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
-  max-width: 100% !important;
   height: 100% !important;
-  min-height: 100% !important;
   display: block;
   margin: 0;
   border: 0;
