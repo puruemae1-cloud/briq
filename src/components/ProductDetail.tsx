@@ -490,6 +490,22 @@ export function ProductDetail({
               <Link href="/cart" className="btn btn-outline">
                 장바구니 보기
               </Link>
+              <NaverPayOrderButton
+                page="product"
+                enabled={!soldOut}
+                className="npay-order-button npay-order-button--pdp"
+                items={[
+                  {
+                    productId: product.id,
+                    variantId: selected?.id,
+                    braceletCm:
+                      product.braceletResize && braceletCm !== "no"
+                        ? braceletCm
+                        : undefined,
+                    qty: 1,
+                  },
+                ]}
+              />
             </div>
           )}
         </div>
@@ -604,12 +620,6 @@ export function ProductDetail({
               </button>
             ) : (
               <>
-                <form action={buyNow}>
-                  {hiddenFields}
-                  <button type="submit" className="btn btn-solid pdp-dock__buy">
-                    구매하기
-                  </button>
-                </form>
                 <NaverPayOrderButton
                   page="dock"
                   enabled={!soldOut}
@@ -626,6 +636,12 @@ export function ProductDetail({
                     },
                   ]}
                 />
+                <form action={buyNow}>
+                  {hiddenFields}
+                  <button type="submit" className="btn btn-solid pdp-dock__buy">
+                    구매하기
+                  </button>
+                </form>
                 <form action={addToCart}>
                   {hiddenFields}
                   <button type="submit" className="btn btn-primary pdp-dock__cart">

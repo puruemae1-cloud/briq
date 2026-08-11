@@ -158,7 +158,7 @@ export function NaverPayOrderButton({
         backUrl ||
         (typeof window !== "undefined" ? window.location.href : `${origin}/cart`);
 
-      // Buy button only — wishlist / talkTalk / benefits are optional per Naver.
+      // Buy only — SDK defaults wishlist/talkTalk to true unless explicitly false.
       await Promise.resolve(
         window.Npay.order.create({
           buttonKey,
@@ -167,6 +167,12 @@ export function NaverPayOrderButton({
           type: "template",
           colorTheme: "green",
           enable: true,
+          components: {
+            wishlist: false,
+            talkTalk: false,
+            benefitMessage: false,
+            benefitCoachMark: false,
+          },
           onBuyClick: async (): Promise<NpayBuyResult | null> => {
             try {
               const res = await fetch("/api/naverpay/order", {

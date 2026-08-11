@@ -52,12 +52,14 @@ def sync_brand(tmp: Path, name: str, src: Path) -> bool:
     dest = tmp / "public" / "products" / name
     dest.mkdir(parents=True, exist_ok=True)
     for child in src.iterdir():
-        if not child.is_dir():
-            continue
         target = dest / child.name
-        if target.exists():
-            shutil.rmtree(target)
-        shutil.copytree(child, target)
+        if child.is_dir():
+            if target.exists():
+                shutil.rmtree(target)
+            shutil.copytree(child, target)
+        elif child.is_file() and child.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"}:
+            # Flat listing thumbs (e.g. public/products/cw/*.jpg)
+            shutil.copy2(child, target)
     run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
     status = subprocess.run(
         ["git", "status", "--porcelain", "--", f"public/products/{name}"],
