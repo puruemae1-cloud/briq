@@ -112,16 +112,29 @@ HTML_HEADERS = {
     "Accept-Language": "en-GB,en;q=0.9",
 }
 
-WARM_EVERY = 8
-MAX_RETRIES = 3
-PDP_PAUSE = 4.0
-CHALLENGE_COOLDOWN = 45.0
-HARD_BLOCK_SLEEP = 180.0
+WARM_EVERY = 12
+MAX_RETRIES = 4
+PDP_PAUSE = 1.2
+CHALLENGE_COOLDOWN = 3.0
+HARD_BLOCK_SLEEP = 12.0
 # Prefer iOS Safari; rotate if Akamai soft-blocks the session.
 IMPERSONATES = ("safari17_2_ios", "safari18_0_ios")
 PROBE_SKU_URL = (
     "https://www.chanel.com/gb/fashion/p/P82545K11942UA557/jacket-mixed-fibres/"
 )
+PROXY_LIST_URL = (
+    "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http"
+    "&timeout=5000&country=gb,us,de,nl,fr&ssl=yes&anonymity=all"
+)
+# Proxies that successfully served Chanel PDPs in this environment.
+SEED_PROXIES = [
+    "95.211.64.139:8888",
+    "38.76.9.0:999",
+    "38.51.207.118:999",
+    "154.18.255.99:1111",
+]
+PROXY_QUICK_TIMEOUT = 12
+PROXY_VALIDATE_TIMEOUT = 18
 
 _print_lock = Lock()
 _session_lock = Lock()
@@ -130,6 +143,29 @@ _session_lock = Lock()
 def log(msg: str) -> None:
     with _print_lock:
         print(msg, flush=True)
+
+
+def fetch_proxy_candidates(limit: int = 60) -> list[str]:
+    """Public HTTP proxies — local IP is Akamai-banned on /fashion/p/."""
+    out: list[str] = []
+    # Seed with proxies known to work for Chanel PDPs
+    seeds = list(SEED_PROXIES)
+    try:
+        s = cffi_requests.Session()
+        resp = s.get(PROXY_LIST_URL, impersonate="chrome124", timeout=30)
+        for line in resp.text.splitlines():
+            line = line.strip()
+            if re.fullmatch(r"\d{1,3}(?:\.\d{1,3}){3}:\d+", line):
+                out.append(line)
+    except Exception as e:
+        log(f"proxy list fetch failed: {e}")
+    merged: list[str] = []
+    seen: set[str] = set()
+    for p in seeds + out:
+        if p not in seen:
+            seen.add(p)
+            merged.append(p)
+    return merged[:limit]
 
 
 def normalize_img_url(u: str | None) -> str:
@@ -193,16 +229,185 @@ class ChanelClient:
         self.session = cffi_requests.Session()
         self._req_count = 0
         self._imp_idx = 0
+        self._proxy: str | None = None
+        self._proxy_pool: list[str] = []
+        self._proxy_idx = 0
+        self._dead_proxies: set[str] = set()
+        # Prefer direct IP when Akamai allows it (common on residential / some CI).
+        if self.probe_direct():
+            log("PDP direct access OK — proxy disabled until blocked")
+        else:
+            log("PDP direct blocked — selecting proxy")
+            self._proxy_pool = fetch_proxy_candidates()
+            self.pick_working_proxy()
         self.warm()
 
     @property
     def impersonate(self) -> str:
         return IMPERSONATES[self._imp_idx % len(IMPERSONATES)]
 
+    @property
+    def proxies(self) -> dict[str, str] | None:
+        if not self._proxy:
+            return None
+        url = f"http://{self._proxy}"
+        return {"http": url, "https": url}
+
+    def probe_direct(self) -> bool:
+        try:
+            self.session.get(
+                HUB,
+                impersonate=self.impersonate,
+                timeout=45,
+                headers=HTML_HEADERS,
+            )
+            p = self.session.get(
+                PROBE_SKU_URL,
+                impersonate=self.impersonate,
+                timeout=45,
+                headers={**HTML_HEADERS, "Referer": HUB},
+            )
+            ok = not is_challenge(p.text, p.status_code)
+            if ok:
+                log(f"direct PDP OK ({len(p.text)} bytes)")
+            return ok
+        except Exception as e:
+            log(f"direct PDP probe failed: {e}")
+            return False
+
     def rotate_impersonate(self) -> None:
         self._imp_idx = (self._imp_idx + 1) % len(IMPERSONATES)
         self.session = cffi_requests.Session()
         log(f"rotate impersonate → {self.impersonate}")
+
+    def clear_proxy(self) -> None:
+        """Drop proxy and open a fresh direct session."""
+        self._proxy = None
+        self.session = cffi_requests.Session()
+        self._req_count = 0
+        log("cleared proxy → trying direct again")
+        try:
+            self.session.get(
+                HUB,
+                impersonate=self.impersonate,
+                timeout=60,
+                headers=HTML_HEADERS,
+            )
+        except Exception:
+            pass
+
+    def soft_refresh(self) -> None:
+        """New TLS session on the same proxy — clears soft Akamai challenges."""
+        self.session = cffi_requests.Session()
+        self._req_count = 0
+        try:
+            self.session.get(
+                HUB,
+                impersonate=self.impersonate,
+                timeout=60,
+                headers=HTML_HEADERS,
+                proxies=self.proxies,
+            )
+        except Exception:
+            pass
+
+    def rotate_proxy(self, mark_dead: bool = True) -> None:
+        if mark_dead and self._proxy:
+            self._dead_proxies.add(self._proxy)
+        self.session = cffi_requests.Session()
+        # Prefer quick try without full validate — validate burns minutes
+        tried = 0
+        while tried < 15 and self._proxy_idx < len(self._proxy_pool):
+            cand = self._proxy_pool[self._proxy_idx]
+            self._proxy_idx += 1
+            tried += 1
+            if cand in self._dead_proxies:
+                continue
+            self._proxy = cand
+            log(f"try proxy {cand}")
+            try:
+                r = self.session.get(
+                    PROBE_SKU_URL,
+                    impersonate=self.impersonate,
+                    timeout=PROXY_QUICK_TIMEOUT,
+                    headers={**HTML_HEADERS, "Referer": HUB},
+                    proxies=self.proxies,
+                )
+                if not is_challenge(r.text, r.status_code):
+                    log(f"proxy OK {cand} (quick {len(r.text)} bytes)")
+                    self._req_count = 0
+                    return
+            except Exception as e:
+                log(f"proxy fail {cand}: {e}")
+                self._dead_proxies.add(cand)
+                self.session = cffi_requests.Session()
+                continue
+            self._dead_proxies.add(cand)
+            self.session = cffi_requests.Session()
+        # Proxies exhausted — fall back to direct (often recovers after cooldown).
+        self.clear_proxy()
+        if self.probe_direct():
+            log("recovered via direct after proxy exhaustion")
+            return
+        # Fall back to full validation pass on a refreshed pool
+        self._proxy_pool = fetch_proxy_candidates(80)
+        self._proxy_idx = 0
+        self.pick_working_proxy(validate=True)
+        log("WARN: exhausted quick proxies — used validated pick")
+
+    def ensure_proxy(self) -> None:
+        """Load a working proxy when direct access starts failing."""
+        if self._proxy:
+            return
+        if not self._proxy_pool:
+            self._proxy_pool = fetch_proxy_candidates()
+            self._proxy_idx = 0
+        self.pick_working_proxy()
+
+    def pick_working_proxy(self, validate: bool = True) -> None:
+        while self._proxy_idx < len(self._proxy_pool):
+            cand = self._proxy_pool[self._proxy_idx]
+            self._proxy_idx += 1
+            if cand in self._dead_proxies:
+                continue
+            self._proxy = cand
+            log(f"try proxy {cand}")
+            if not validate or self.validate_proxy():
+                return
+            self._dead_proxies.add(cand)
+        # refresh pool once
+        log("refreshing proxy pool…")
+        self._proxy_pool = fetch_proxy_candidates(80)
+        self._proxy_idx = 0
+        self._proxy = self._proxy_pool[0] if self._proxy_pool else None
+
+    def validate_proxy(self) -> bool:
+        if not self._proxy:
+            return False
+        try:
+            r = self.session.get(
+                HUB,
+                impersonate=self.impersonate,
+                timeout=PROXY_VALIDATE_TIMEOUT,
+                headers=HTML_HEADERS,
+                proxies=self.proxies,
+            )
+            if r.status_code != 200 or len(r.text) < 20000:
+                return False
+            p = self.session.get(
+                PROBE_SKU_URL,
+                impersonate=self.impersonate,
+                timeout=PROXY_VALIDATE_TIMEOUT,
+                headers={**HTML_HEADERS, "Referer": HUB},
+                proxies=self.proxies,
+            )
+            ok = not is_challenge(p.text, p.status_code)
+            if ok:
+                log(f"proxy OK {self._proxy} (pdp {len(p.text)} bytes)")
+            return ok
+        except Exception as e:
+            log(f"proxy fail {self._proxy}: {e}")
+            return False
 
     def warm(self) -> None:
         with _session_lock:
@@ -212,19 +417,33 @@ class ChanelClient:
                     impersonate=self.impersonate,
                     timeout=90,
                     headers=HTML_HEADERS,
+                    proxies=self.proxies,
                 )
-                log(f"warm hub → {r.status_code} ({len(r.text)} bytes) [{self.impersonate}]")
+                log(
+                    f"warm hub → {r.status_code} ({len(r.text)} bytes) "
+                    f"[{self.impersonate}] proxy={self._proxy}"
+                )
                 if is_challenge(r.text, r.status_code):
-                    self.rotate_impersonate()
+                    # hub should work without proxy too
                     r = self.session.get(
                         HUB,
                         impersonate=self.impersonate,
                         timeout=90,
                         headers=HTML_HEADERS,
                     )
-                    log(f"warm hub retry → {r.status_code} ({len(r.text)} bytes)")
+                    log(f"warm hub direct → {r.status_code} ({len(r.text)} bytes)")
             except Exception as e:
                 log(f"warm hub error: {e}")
+                try:
+                    r = self.session.get(
+                        HUB,
+                        impersonate=self.impersonate,
+                        timeout=90,
+                        headers=HTML_HEADERS,
+                    )
+                    log(f"warm hub fallback → {r.status_code}")
+                except Exception as e2:
+                    log(f"warm hub fallback error: {e2}")
             self._req_count = 0
 
     def get_html(
@@ -233,9 +452,11 @@ class ChanelClient:
         headers = {**HTML_HEADERS, "Referer": referer}
         last_status, last_text = 0, ""
         attempts = max_attempts if max_attempts is not None else MAX_RETRIES
+        is_pdp = "/fashion/p/" in url or "/p/" in url
         for attempt in range(1, attempts + 1):
             if self._req_count >= WARM_EVERY:
                 self.warm()
+            use_proxy = bool(is_pdp and self._proxy)
             try:
                 with _session_lock:
                     r = self.session.get(
@@ -243,29 +464,52 @@ class ChanelClient:
                         impersonate=self.impersonate,
                         timeout=90,
                         headers=headers,
+                        proxies=self.proxies if use_proxy else None,
                     )
                     self._req_count += 1
                     last_status, last_text = r.status_code, r.text
             except Exception as e:
                 log(f"  GET error {url}: {e} (attempt {attempt})")
-                time.sleep(1.5 * attempt)
-                self.rotate_impersonate()
+                time.sleep(1.2 * attempt)
+                if use_proxy:
+                    # Dead tunnel — try direct before burning more proxies.
+                    self.clear_proxy()
+                    if not self.probe_direct():
+                        self.ensure_proxy()
+                elif is_pdp:
+                    self.soft_refresh()
+                else:
+                    self.rotate_impersonate()
                 self.warm()
                 continue
             if not is_challenge(last_text, last_status):
                 return last_status, last_text
             log(
                 f"  challenge {last_status} on {url} "
-                f"(attempt {attempt}, len={len(last_text)})"
+                f"(attempt {attempt}, len={len(last_text)}, proxy={self._proxy})"
             )
             if attempt < attempts:
-                time.sleep(CHALLENGE_COOLDOWN * attempt)
-                if attempt % 2 == 0:
+                time.sleep(CHALLENGE_COOLDOWN)
+                if use_proxy:
+                    if attempt == 1 and len(last_text) < 8000:
+                        self.soft_refresh()
+                    else:
+                        self.clear_proxy()
+                        if not self.probe_direct():
+                            self.ensure_proxy()
+                elif is_pdp:
+                    # Soft challenge on direct — refresh session, then proxy.
+                    if attempt == 1:
+                        self.soft_refresh()
+                    else:
+                        self.ensure_proxy()
+                else:
                     self.rotate_impersonate()
-                self.warm()
+                    self.warm()
         return last_status, last_text
 
     def get_bytes(self, url: str, referer: str = HUB) -> bytes | None:
+        # Image CDN is not IP-banned — hit it directly.
         headers = {
             "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
             "Accept-Language": "en-GB,en;q=0.9",
@@ -288,18 +532,26 @@ class ChanelClient:
                     ):
                         return bytes(r.content)
                 if r.status_code in (403, 429):
-                    self.warm()
                     time.sleep(1.0 * attempt)
                     continue
             except Exception as e:
                 log(f"  img error {url}: {e}")
                 time.sleep(0.8 * attempt)
-                self.warm()
         return None
 
 
 def discover_sitemap_skus(client: ChanelClient) -> dict[str, str]:
-    status, text = client.get_html(SITEMAP)
+    # Sitemap works directly
+    status, text = client.get_html(SITEMAP, max_attempts=2)
+    if is_challenge(text, status):
+        # try without treating as pdp
+        try:
+            r = client.session.get(
+                SITEMAP, impersonate=client.impersonate, timeout=90, headers=HTML_HEADERS
+            )
+            status, text = r.status_code, r.text
+        except Exception:
+            pass
     if status != 200:
         log(f"WARN sitemap status {status}")
         return {}
@@ -533,24 +785,23 @@ def save_cache(cache: dict) -> None:
     PDP_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n")
 
 
-def wait_for_pdp_access(client: ChanelClient, max_wait_s: float = 3600) -> bool:
-    """Block until a probe PDP returns __NEXT_DATA__ (Akamai cool-down)."""
+def wait_for_pdp_access(client: ChanelClient, max_wait_s: float = 600) -> bool:
+    """Ensure we have a proxy that can fetch PDPs."""
     started = time.time()
     attempt = 0
     while time.time() - started < max_wait_s:
         attempt += 1
-        client.rotate_impersonate()
-        client.warm()
         status, html = client.get_html(PROBE_SKU_URL, max_attempts=1)
         if not is_challenge(html, status):
-            log(f"PDP access OK after {int(time.time() - started)}s (attempt {attempt})")
+            log(f"PDP access OK (attempt {attempt}, proxy={client._proxy})")
             return True
-        log(
-            f"PDP still blocked ({status}, len={len(html)}); "
-            f"sleeping {HARD_BLOCK_SLEEP:.0f}s "
-            f"[{int(time.time() - started)}s elapsed]"
-        )
-        time.sleep(HARD_BLOCK_SLEEP)
+        log(f"PDP blocked on proxy={client._proxy}; rotating…")
+        if client._proxy:
+            client.rotate_proxy()
+        else:
+            client.ensure_proxy()
+        client.warm()
+        time.sleep(2)
     return False
 
 
@@ -614,21 +865,23 @@ def main() -> int:
                 log(f"  cache hit progress {i}/{len(items)}")
             continue
 
-        status, html = client.get_html(url, max_attempts=2)
+        status, html = client.get_html(url, max_attempts=3)
         if is_challenge(html, status):
             consecutive_blocks += 1
             log(
                 f"[{i}/{len(items)}] blocked {sku} "
-                f"(streak={consecutive_blocks}) — cooling down"
+                f"(streak={consecutive_blocks}, proxy={client._proxy}) — recovering"
             )
+            client.clear_proxy()
             time.sleep(HARD_BLOCK_SLEEP)
-            client.rotate_impersonate()
+            if not client.probe_direct():
+                client.ensure_proxy()
             client.warm()
             # retry same SKU
             i -= 1
-            if consecutive_blocks >= 8:
-                log("Too many consecutive blocks — waiting for PDP access again")
-                if not wait_for_pdp_access(client, max_wait_s=1800):
+            if consecutive_blocks >= 12:
+                log("Too many consecutive blocks — re-validating PDP access")
+                if not wait_for_pdp_access(client, max_wait_s=600):
                     failed.append(
                         {"sku": sku, "url": url, "status": status, "reason": "akamai"}
                     )

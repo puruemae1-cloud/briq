@@ -268,9 +268,10 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         label = format_size_label(size_raw)
         slug = size_slug(size_raw)
         sku = str(sz.get("sku") or sz.get("id") or f"{code}-{slug}")
-        in_stock = bool(sz.get("inStock"))
-        if in_stock:
-            any_in = True
+        # Chanel.com RTW SSR almost always reports OUT_OF_STOCK (boutique /
+        # not sold online). Briq fulfils as special order — keep sizes buyable.
+        in_stock = True
+        any_in = True
         v: dict = {
             "id": f"{pid}-{slug}",
             "name": f"{title_en} — {label}",
@@ -292,8 +293,8 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         variants.append(v)
 
     if not variants:
-        in_stock = bool(row.get("inStock", False))
-        any_in = in_stock
+        in_stock = True
+        any_in = True
         variants = [
             {
                 "id": f"{pid}-os",
@@ -315,8 +316,7 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         if hover:
             variants[0]["hoverImage"] = hover
     else:
-        # product inStock if any size in stock (override row if needed)
-        any_in = any(v["inStock"] for v in variants) or bool(row.get("inStock"))
+        any_in = any(v["inStock"] for v in variants)
 
     tags = [
         "chanel",
