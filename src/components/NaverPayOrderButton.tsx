@@ -138,15 +138,21 @@ export function NaverPayOrderButton({
       const root = document.getElementById(containerId);
       if (!root || cancelled) return;
 
-      // SDK sizes from container width — match dock CTA (7.5rem) or give PDP room.
+      // SDK sizes from container width. Dock: fill shared CTA slot; avoid
+      // undersized mounts that clip the buy chrome to the right.
       const dock = page === "dock";
-      root.style.minWidth = dock ? "120px" : "168px";
-      root.style.width = dock ? "120px" : "100%";
-      root.style.height = dock ? "43px" : "";
-      root.style.display = dock ? "flex" : "";
-      root.style.alignItems = dock ? "center" : "";
-      root.style.justifyContent = dock ? "center" : "";
-      await waitForLayout(root, dock ? 100 : 120);
+      if (dock) {
+        root.style.minWidth = "100%";
+        root.style.width = "100%";
+        root.style.height = "100%";
+        root.style.display = "grid";
+        root.style.placeItems = "center";
+        root.style.overflow = "hidden";
+      } else {
+        root.style.minWidth = "168px";
+        root.style.width = "100%";
+      }
+      await waitForLayout(root, dock ? 80 : 120);
       if (cancelled) return;
 
       try {
@@ -217,16 +223,92 @@ export function NaverPayOrderButton({
               ".npay_wishlist",
               ".npay_talktalk",
               ".npay_link_talktalk",
+              '[data-npay-component="wishlist"]',
+              '[data-npay-component="talktalk"]',
             ].join(", "),
           )
           .forEach((el) => el.remove());
       };
-      stripSideButtons();
+
+      const fitDockButton = () => {
+        stripSideButtons();
+
+        // SDK keeps type_three_button even when wishlist/talkTalk are false,
+        // which locks .npay_main_cell to 60% width — force buy-only layout.
+        root.querySelectorAll(".npay_button_sdk_wrapper").forEach((node) => {
+          const el = node as HTMLElement;
+          el.classList.remove(
+            "type_three_button",
+            "type_two_button",
+            "size_small",
+          );
+          el.classList.add("type_one_button", "size_medium");
+          el.style.width = "100%";
+          el.style.height = "100%";
+          el.style.margin = "0";
+        });
+
+        // Drop empty leftover table columns that leave a left/right gap.
+        root.querySelectorAll("td, th").forEach((cell) => {
+          const el = cell as HTMLElement;
+          if (
+            !el.textContent?.trim() &&
+            !el.querySelector("a, button, img, iframe, svg")
+          ) {
+            el.remove();
+          }
+        });
+
+        root.querySelectorAll("table").forEach((table) => {
+          const t = table as HTMLElement;
+          t.style.width = "100%";
+          t.style.height = "100%";
+          t.style.margin = "0";
+          t.style.tableLayout = "fixed";
+        });
+
+        root
+          .querySelectorAll(
+            ".npay_button_area, .npay_btn_container, .npay_main_cell",
+          )
+          .forEach((node) => {
+            const el = node as HTMLElement;
+            el.style.display = "flex";
+            el.style.alignItems = "center";
+            el.style.justifyContent = "center";
+            el.style.width = "100%";
+            el.style.height = "100%";
+            el.style.margin = "0";
+            el.style.maxWidth = "100%";
+          });
+
+        root
+          .querySelectorAll(
+            ".npay_main_cell > a, .npay_btn_pay, .npay_link_order",
+          )
+          .forEach((node) => {
+            const el = node as HTMLElement;
+            el.style.display = "flex";
+            el.style.alignItems = "center";
+            el.style.justifyContent = "center";
+            el.style.width = "100%";
+            el.style.height = "100%";
+            el.style.margin = "0";
+            el.style.padding = "0";
+            el.style.boxSizing = "border-box";
+            el.style.gap = "0.25rem";
+            el.style.lineHeight = "1";
+          });
+      };
+
+      const polish = dock ? fitDockButton : stripSideButtons;
+      polish();
       timers.push(
-        window.setTimeout(stripSideButtons, 250),
-        window.setTimeout(stripSideButtons, 1000),
+        window.setTimeout(polish, 250),
+        window.setTimeout(polish, 800),
+        window.setTimeout(polish, 1600),
       );
-      sideObs = new MutationObserver(stripSideButtons);
+      sideObs = new MutationObserver(polish);
       sideObs.observe(root, { childList: true, subtree: true });
     }
 
