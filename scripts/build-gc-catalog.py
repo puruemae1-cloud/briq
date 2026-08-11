@@ -4,7 +4,7 @@
 men's wallets + fashion accessories + men's fashion accessories +
 women's/men's travel + jewellery + gifts + men's gifts).
 
-Pricing: KRW = round_천원(GBP × 2100 × 1.05 × 1.15)
+Pricing: KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Prefer official Korean copy from Gucci catalog API; fall back to gtx translate.
 
 Gifts: existing productCodes get gift gcCollections merged on; only truly new
@@ -790,10 +790,11 @@ def size_chart_for_mens_rtw(variants: list[dict]) -> dict:
 
 
 def gbp_to_krw(gbp: float | None) -> int:
+    """KRW = round_만원(GBP × 2100 × 1.05 × 1.15)."""
     if gbp is None:
         return 0
     base = float(gbp) * 2100 * 1.05 * 1.15
-    return int(round(base / 1_000) * 1_000)
+    return int(round(base / 10_000) * 10_000)
 
 
 _KO: dict[str, str] = {}

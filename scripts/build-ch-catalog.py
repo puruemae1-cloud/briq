@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build Chanel RTW catalogue → src/data/ch/ch-catalog.json + ch-catalog.ts.
 
-Pricing (same as Gucci): KRW = round_to_1000(GBP × 2100 × 1.05 × 1.15)
+Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
 Size chart: French RTW FR 34–50.
 """
@@ -95,10 +95,11 @@ CH_WOMEN_RTW_SIZE_CHART = {
 
 
 def gbp_to_krw(gbp: float | None) -> int:
+    """KRW = round_만원(GBP × 2100 × 1.05 × 1.15)."""
     if gbp is None:
         return 0
     base = float(gbp) * 2100 * 1.05 * 1.15
-    return int(round(base / 1_000) * 1_000)
+    return int(round(base / 10_000) * 10_000)
 
 
 _KO: dict[str, str] = {}
