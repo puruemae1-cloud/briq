@@ -124,43 +124,84 @@ def is_bag_sku(sku: str) -> bool:
     return bool(re.fullmatch(r"A[A-Z0-9]+", s))
 
 
+def fetch_page(client: ChanelClient, url: str, referer: str = HUB) -> tuple[int, str]:
+    """Fetch PLP/HTML preferring proxy when available (Akamai soft-blocks direct PLPs)."""
+    headers = {**_rtw.HTML_HEADERS, "Referer": referer}
+    last_status, last_text = 0, ""
+    for attempt in range(1, 4):
+        try:
+            with _rtw._session_lock:
+                r = client.session.get(
+                    url,
+                    impersonate=client.impersonate,
+                    timeout=90,
+                    headers=headers,
+                    proxies=client.proxies,
+                )
+                client._req_count += 1
+                last_status, last_text = r.status_code, r.text
+        except Exception as e:
+            log(f"  GET error {url}: {e}")
+            time.sleep(1.0 * attempt)
+            if client._proxy:
+                client.rotate_proxy()
+            else:
+                client.ensure_proxy()
+            continue
+        # Soft block / challenge page
+        if last_status == 404:
+            return last_status, last_text
+        if "__NEXT_DATA__" in last_text and len(last_text) > 20000:
+            return last_status, last_text
+        if last_status == 200 and "/gb/fashion/p/" in last_text:
+            return last_status, last_text
+        log(
+            f"  soft-block {last_status} on {url} "
+            f"(attempt {attempt}, len={len(last_text)})"
+        )
+        time.sleep(1.5)
+        if not client._proxy:
+            client.ensure_proxy()
+        else:
+            client.soft_refresh()
+            client.warm()
+    return last_status, last_text
+
+
+def extract_skus_from_html(html: str) -> set[str]:
+    skus = set(re.findall(r"/gb/fashion/p/([A-Z][A-Z0-9]+)/", html, flags=re.I))
+    # NEXT_DATA sometimes embeds escaped paths
+    skus |= set(
+        re.findall(r"\\?/gb\\?/fashion\\?/p\\?/([A-Z][A-Z0-9]+)\\?/", html, flags=re.I)
+    )
+    return {s for s in skus if is_bag_sku(s)}
+
+
 def discover_plp_skus(client: ChanelClient, url: str) -> set[str]:
-    """Pull productIds from a handbags PLP (paginate /page-N/)."""
+    """Pull product SKUs from a handbags PLP (paginate /page-N/)."""
     found: set[str] = set()
     pages = [url]
     for n in range(2, MAX_PLP_PAGES + 1):
-        if url.endswith("/"):
-            pages.append(f"{url}page-{n}/")
-        else:
-            pages.append(f"{url}/page-{n}/")
+        pages.append(f"{url.rstrip('/')}/page-{n}/")
 
     for page_url in pages:
-        status, html = client.get_html(page_url, referer=HUB, max_attempts=3)
-        if is_challenge(html, status) or status != 200:
-            if page_url != url:
-                break
-            log(f"  PLP blocked {page_url} status={status}")
+        status, html = fetch_page(client, page_url)
+        if status == 404:
             break
-        nd = extract_next_data(html)
-        if not nd:
-            # fallback regex on HTML
-            ids = set(re.findall(r"/gb/fashion/p/(A[A-Z0-9]+)/", html, flags=re.I))
-            ids |= set(re.findall(r'"productId"\s*:\s*"(A[^"]+)"', html, flags=re.I))
-        else:
-            raw = json.dumps(nd)
-            ids = set(re.findall(r'"productId"\s*:\s*"(A[^"]+)"', raw, flags=re.I))
-            ids |= set(re.findall(r"/gb/fashion/p/(A[A-Z0-9]+)/", raw, flags=re.I))
-        ids = {i.upper() if i.startswith("a") else i for i in ids}
-        # normalize to original casing from match — keep as scraped
-        ids = {i for i in ids if is_bag_sku(i)}
-        if not ids and page_url != url:
+        if status != 200 or len(html) < 5000:
+            if page_url == url:
+                log(f"  PLP blocked {page_url} status={status} len={len(html)}")
             break
+        ids = extract_skus_from_html(html)
         before = len(found)
         found |= ids
         log(f"  PLP {page_url} → +{len(found) - before} (total {len(found)})")
-        if len(found) == before and page_url != url:
+        if not ids and page_url != url:
             break
-        time.sleep(0.6)
+        # No growth on later page → stop
+        if page_url != url and len(found) == before:
+            break
+        time.sleep(0.5)
     return found
 
 
@@ -380,6 +421,11 @@ def main() -> int:
     )
 
     client = ChanelClient()
+    # PLP grids are often soft-blocked on direct IP — prefer a working proxy.
+    if not client._proxy:
+        client.ensure_proxy()
+        client.warm()
+
     leaf_to_skus: dict[str, set[str]] = {}
     sku_leaves: dict[str, set[str]] = defaultdict(set)
     sku_urls: dict[str, str] = {}
@@ -388,6 +434,10 @@ def main() -> int:
     for cid, en, _ko, url in LEAVES:
         log(f"leaf {cid} ({en})")
         ids = discover_plp_skus(client, url)
+        if not ids and not client._proxy:
+            client.ensure_proxy()
+            client.warm()
+            ids = discover_plp_skus(client, url)
         leaf_to_skus[cid] = ids
         for sku in ids:
             sku_leaves[sku].add(cid)
