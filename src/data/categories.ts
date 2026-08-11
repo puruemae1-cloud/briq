@@ -581,7 +581,17 @@ export type SubcategoryId =
   | "ch-women-skirts"
   | "ch-women-trousers-shorts"
   | "ch-women-swimwear"
-  | "ch-women-outerwear";
+  | "ch-women-outerwear"
+  | "chanel-bags"
+  | "ch-handbags"
+  | "ch-women-flap-bags"
+  | "ch-women-hobo-bags"
+  | "ch-women-tote-bowling-bags"
+  | "ch-women-bucket-bags"
+  | "ch-women-backpacks"
+  | "ch-women-evening-bags"
+  | "ch-women-mini-bags"
+  | "ch-the-chanel-handbag";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -594,6 +604,18 @@ export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "ch-women-trousers-shorts",
   "ch-women-swimwear",
   "ch-women-outerwear",
+];
+
+/** Chanel handbags leaf collections (official GB handbag PLPs). */
+export const CH_HANDBAG_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-flap-bags",
+  "ch-women-hobo-bags",
+  "ch-women-tote-bowling-bags",
+  "ch-women-bucket-bags",
+  "ch-women-backpacks",
+  "ch-women-evening-bags",
+  "ch-women-mini-bags",
+  "ch-the-chanel-handbag",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -1483,6 +1505,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MENS_HANDBAG_LEAF_IDS,
   ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "chanel-bags": ["chanel-bags", "ch-handbags", ...CH_HANDBAG_LEAF_IDS],
+  "ch-handbags": ["ch-handbags", ...CH_HANDBAG_LEAF_IDS],
+  "ch-women-flap-bags": ["ch-women-flap-bags"],
+  "ch-women-hobo-bags": ["ch-women-hobo-bags"],
+  "ch-women-tote-bowling-bags": ["ch-women-tote-bowling-bags"],
+  "ch-women-bucket-bags": ["ch-women-bucket-bags"],
+  "ch-women-backpacks": ["ch-women-backpacks"],
+  "ch-women-evening-bags": ["ch-women-evening-bags"],
+  "ch-women-mini-bags": ["ch-women-mini-bags"],
+  "ch-the-chanel-handbag": ["ch-the-chanel-handbag"],
   "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
   "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
   "gc-men-backpacks": ["gc-men-backpacks"],
@@ -2767,6 +2799,67 @@ export const navCategories: NavCategory[] = [
         labelKo: "벨스타프",
         href: "/shop?category=bags&sub=belstaff-bags",
         navLeaf: true,
+      },
+      {
+        id: "chanel-bags",
+        labelKo: "샤넬",
+        href: "/shop?category=bags&sub=chanel-bags",
+        children: [
+          {
+            id: "ch-handbags",
+            labelKo: "핸드백 전체",
+            href: "/shop?category=bags&sub=ch-handbags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-flap-bags",
+            labelKo: "플랩백",
+            href: "/shop?category=bags&sub=ch-women-flap-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-hobo-bags",
+            labelKo: "호보백",
+            href: "/shop?category=bags&sub=ch-women-hobo-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-tote-bowling-bags",
+            labelKo: "토트 & 볼링백",
+            href: "/shop?category=bags&sub=ch-women-tote-bowling-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-bucket-bags",
+            labelKo: "버킷백",
+            href: "/shop?category=bags&sub=ch-women-bucket-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-backpacks",
+            labelKo: "백팩",
+            href: "/shop?category=bags&sub=ch-women-backpacks",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-evening-bags",
+            labelKo: "이브닝백",
+            href: "/shop?category=bags&sub=ch-women-evening-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-mini-bags",
+            labelKo: "미니백",
+            href: "/shop?category=bags&sub=ch-women-mini-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-the-chanel-handbag",
+            labelKo: "더 샤넬 핸드백",
+            href: "/shop?category=bags&sub=ch-the-chanel-handbag",
+            navLeaf: true,
+          },
+        ],
       },
       {
         id: "gucci-bags",

@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Build Chanel RTW catalogue → src/data/ch/ch-catalog.json + ch-catalog.ts.
+"""Build Chanel catalogue → src/data/ch/ch-catalog.json + ch-catalog.ts.
+
+Sources:
+  - ch-rtw-catalog-raw.json → category luxury (RTW)
+  - ch-handbags-catalog-raw.json → category bags
 
 Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
-Size chart: French RTW FR 34–50.
+RTW size chart: French FR 34–50. Handbags: One Size + dimensions in copy.
 """
 from __future__ import annotations
 
@@ -18,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ch/ch-rtw-catalog-raw.json"
+HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
 OUT_TS = ROOT / "src/data/ch/ch-catalog.ts"
 CACHE_PATH = ROOT / "src/data/ch/ch-translate-cache.json"
@@ -34,6 +39,19 @@ SHAPE_LEAVES = [
 ]
 
 PARENT_COLS = ["chanel", "ch-women", "ch-women-rtw", "ch-women-looks"]
+
+BAG_SHAPE_LEAVES = [
+    "ch-women-flap-bags",
+    "ch-women-hobo-bags",
+    "ch-women-tote-bowling-bags",
+    "ch-women-bucket-bags",
+    "ch-women-backpacks",
+    "ch-women-evening-bags",
+    "ch-women-mini-bags",
+    "ch-the-chanel-handbag",
+]
+
+BAG_PARENT_COLS = ["chanel", "chanel-bags", "ch-handbags"]
 
 # French women's RTW conversion (Chanel FR sizes). Body measures are approximate
 # maison / industry references for shopper guidance.
@@ -151,6 +169,19 @@ def t(text: str | None) -> str:
         .replace("샤 넬", "샤넬")
         .replace("Ready-to-Wear", "레디투웨어")
         .replace("Ready-To-Wear", "레디투웨어")
+        .replace("Flap Bag", "플랩백")
+        .replace("Hobo Bag", "호보백")
+        .replace("Shopping Bag", "쇼핑백")
+        .replace("Bowling Bag", "볼링백")
+        .replace("Bucket Bag", "버킷백")
+        .replace("Backpack", "백팩")
+        .replace("Evening Bag", "이브닝백")
+        .replace("Mini Bag", "미니백")
+        .replace("Handbag", "핸드백")
+        .replace("Calfskin", "카프스킨")
+        .replace("Lambskin", "램스킨")
+        .replace("Gold-Tone Metal", "골드 톤 메탈")
+        .replace("Silver-Tone Metal", "실버 톤 메탈")
     )
     _KO[s] = ko
     return ko
@@ -423,31 +454,191 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     return prod
 
 
-def main() -> int:
-    if not RAW_PATH.exists():
-        raise SystemExit(f"Missing raw catalog: {RAW_PATH}")
+def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
 
-    raw = json.loads(RAW_PATH.read_text())
-    rows = raw.get("products") or []
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in BAG_SHAPE_LEAVES
+    ]
+    leaf = row.get("leaf") if row.get("leaf") in BAG_SHAPE_LEAVES else None
+    if leaf and leaf not in leaves:
+        leaves.append(leaf)
+    if not leaves:
+        return None
+    primary = next((c for c in BAG_SHAPE_LEAVES if c in leaves), leaves[0])
+    cols = sorted(set([*BAG_PARENT_COLS, *leaves]))
+
+    title_en = (row.get("title") or "").strip() or str(code)
+    details = row.get("details") or {}
+    color_en = (details.get("color") or "").strip()
+    fabrics_en = (details.get("fabrics") or "").strip()
+    desc_en = (details.get("description") or "").strip()
+    dims_en = (details.get("dimensions") or "").strip()
+    ref = (details.get("reference") or "").strip()
+
+    name_ko = t(title_en)
+    color_ko = t(color_en) if color_en else ""
+    fabrics_ko = t(fabrics_en) if fabrics_en else ""
+    desc_ko = t(desc_en) if desc_en else ""
+    dims_ko = t(dims_en) if dims_en else ""
+
+    parts = [desc_ko]
+    if color_ko:
+        parts.append(f"컬러: {color_ko}")
+    if fabrics_ko:
+        parts.append(f"소재: {fabrics_ko}")
+    if dims_ko:
+        parts.append(f"사이즈: {dims_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = reorder_locals_garment_first(row)
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / p.lstrip("/")).is_file()
+        and (ROOT / "public" / p.lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (bag): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    # Handbags: One Size (boutique special order — always buyable)
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — One Size",
+            "nameKo": f"{name_ko} — 원 사이즈",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": color_en.lower() or "default",
+            "colorNameKo": color_ko or color_en or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "handbag",
+        "가방",
+        "핸드백",
+        "여성",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "bags",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return prod
+
+
+def main() -> int:
     prev_map = load_prev()
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
     products: list[dict] = []
     seen: set[str] = set()
-    for i, row in enumerate(rows, start=1):
+
+    rtw_rows: list[dict] = []
+    if RAW_PATH.exists():
+        rtw_rows = json.loads(RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing RTW raw: {RAW_PATH}", flush=True)
+
+    bag_rows: list[dict] = []
+    if HANDBAGS_RAW_PATH.exists():
+        bag_rows = json.loads(HANDBAGS_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing handbags raw: {HANDBAGS_RAW_PATH}", flush=True)
+
+    # Keep existing catalog rows when a raw source is missing (partial rebuild).
+    if not rtw_rows or not bag_rows:
+        for prev in prev_map.values():
+            cat = prev.get("category")
+            if not rtw_rows and cat == "luxury":
+                products.append(prev)
+                seen.add(prev["id"])
+            if not bag_rows and cat == "bags":
+                products.append(prev)
+                seen.add(prev["id"])
+
+    for i, row in enumerate(rtw_rows, start=1):
         if row.get("_skip"):
             continue
         pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
         prod = build_product(row, prev_map.get(pid_guess), now_iso)
-        if not prod:
-            continue
-        if prod["id"] in seen:
+        if not prod or prod["id"] in seen:
             continue
         seen.add(prod["id"])
         products.append(prod)
         if i % 40 == 0:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
-            print(f"built {i}/{len(rows)}", flush=True)
+            print(f"built RTW {i}/{len(rtw_rows)}", flush=True)
+
+    for i, row in enumerate(bag_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_handbag_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built bags {i}/{len(bag_rows)}", flush=True)
 
     products.sort(key=lambda p: p["id"])
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
@@ -455,26 +646,22 @@ def main() -> int:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel Ready-to-Wear (women). */\n"
+        "/** Auto-generated — Chanel Ready-to-Wear + Handbags. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
 
-    leaf_n = {leaf: 0 for leaf in SHAPE_LEAVES}
-    leaf_n["ch-women-looks"] = 0
-    in_stock = 0
-    oos = 0
+    leaf_n = {leaf: 0 for leaf in [*SHAPE_LEAVES, *BAG_SHAPE_LEAVES, "ch-women-looks"]}
+    in_stock = sum(1 for p in products if p.get("inStock"))
+    bags_n = sum(1 for p in products if p.get("category") == "bags")
+    luxury_n = sum(1 for p in products if p.get("category") == "luxury")
     for p in products:
-        if p.get("inStock"):
-            in_stock += 1
-        else:
-            oos += 1
         for c in p.get("chCollections") or []:
             if c in leaf_n:
                 leaf_n[c] += 1
 
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
-    print(f"inStock={in_stock} oos={oos}", flush=True)
+    print(f"luxury={luxury_n} bags={bags_n} inStock={in_stock}", flush=True)
     print(f"leafCounts={leaf_n}", flush=True)
     return 0
 
