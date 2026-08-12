@@ -113,7 +113,45 @@ extract_next_data = _rtw.extract_next_data
 is_challenge = _rtw.is_challenge
 normalize_img_url = _rtw.normalize_img_url
 parse_gbp = _rtw.parse_gbp
-order_images = _rtw.order_images
+def order_handbag_images(images: list[dict]) -> list[str]:
+    """Prefer closed front packshots for handbags (not open-bag artistic heroes)."""
+    preferred = (
+        "PACKSHOT_ARTISTIQUE_VUE1",
+        "PACKSHOT_DEFAULT",
+        "PACKSHOT_ARTISTIQUE_VUE2",
+        "PACKSHOT_ARTISTIQUE_VUE3",
+        "PACKSHOT_ARTISTIQUE_VUE4",
+        "PACKSHOT_ARTISTIQUE_VUE5",
+        "PACKSHOT_ALTERNATIVE",
+        "PACKSHOT_EXTRA",
+        "PACKSHOT_OTHER",
+        "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+        "LOOK",
+        "EDITORIAL",
+    )
+    scored: list[tuple[int, int, int, str]] = []
+    seen: set[str] = set()
+    for i, im in enumerate(images or []):
+        if not isinstance(im, dict):
+            continue
+        src = normalize_img_url(im.get("source") or im.get("url") or "")
+        if not src or src in seen:
+            continue
+        seen.add(src)
+        typ = (im.get("typology") or "").upper()
+        try:
+            rank = preferred.index(typ)
+        except ValueError:
+            rank = 50
+        angle = (im.get("viewAngle") or "").upper()
+        angle_rank = {"FRONT": 0, "BACK": 1, "DETAIL": 2}.get(angle, 5)
+        scored.append((rank, angle_rank, i, src))
+    scored.sort()
+    return [u for _, _, _, u in scored]
+
+
+# Prefer handbag ordering over RTW STOCKMAN helper.
+order_images = order_handbag_images  # noqa: F811 — override imported RTW order_images
 availability_map = _rtw.availability_map
 wait_for_pdp_access = _rtw.wait_for_pdp_access
 log = _rtw.log

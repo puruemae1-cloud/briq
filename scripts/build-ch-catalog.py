@@ -201,6 +201,46 @@ def reorder_locals_garment_first(row: dict) -> list[str]:
     Existing downloads keep file numbers from the old order; we only reorder
     the path list so PLP / PDP primary image is the garment packshot.
     """
+    return _reorder_locals_by_typology(
+        row,
+        preferred=(
+            "PACKSHOT_STOCKMAN",
+            "PACKSHOT_OTHER",
+            "PACKSHOT_ALTERNATIVE",
+            "PACKSHOT_DEFAULT",
+            "LOOK",
+            "EDITORIAL",
+        ),
+    )
+
+
+def reorder_locals_handbag_front(row: dict) -> list[str]:
+    """Prefer closed front / default packshots for handbags.
+
+    Chanel bag PDPs lead with ARTISTIQUE_VUE1_LARGE / OTHER which are often
+    open-bag or interior heroes. Briq PLP needs the clear front product shot:
+    ARTISTIQUE_VUE1 (not LARGE) or PACKSHOT_DEFAULT.
+    """
+    return _reorder_locals_by_typology(
+        row,
+        preferred=(
+            "PACKSHOT_ARTISTIQUE_VUE1",
+            "PACKSHOT_DEFAULT",
+            "PACKSHOT_ARTISTIQUE_VUE2",
+            "PACKSHOT_ARTISTIQUE_VUE3",
+            "PACKSHOT_ARTISTIQUE_VUE4",
+            "PACKSHOT_ARTISTIQUE_VUE5",
+            "PACKSHOT_ALTERNATIVE",
+            "PACKSHOT_EXTRA",
+            "PACKSHOT_OTHER",
+            "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+            "LOOK",
+            "EDITORIAL",
+        ),
+    )
+
+
+def _reorder_locals_by_typology(row: dict, preferred: tuple[str, ...]) -> list[str]:
     locals_ = list(row.get("localImages") or [])
     if not locals_ and row.get("localImage"):
         locals_ = [row["localImage"]]
@@ -211,40 +251,36 @@ def reorder_locals_garment_first(row: dict) -> list[str]:
     if not cdn or not metas:
         return locals_
 
+    # Map by URL (cdn/localImages share download order; imageMeta may differ).
     src_to_local: dict[str, str] = {}
     for i, src in enumerate(cdn):
         if i < len(locals_) and src:
             src_to_local[str(src)] = locals_[i]
+            # Also key by filename — Chanel sometimes varies query/path slightly
+            fn = str(src).rsplit("/", 1)[-1]
+            if fn:
+                src_to_local.setdefault(fn, locals_[i])
 
     def score(m: dict) -> tuple[int, int, int]:
         typ = str(m.get("typology") or "").upper()
         angle = str(m.get("viewAngle") or "").upper()
-        preferred = (
-            "PACKSHOT_STOCKMAN",
-            "PACKSHOT_OTHER",
-            "PACKSHOT_ALTERNATIVE",
-            "PACKSHOT_DEFAULT",
-            "LOOK",
-            "EDITORIAL",
-        )
         try:
             rank = preferred.index(typ)
         except ValueError:
             rank = 50
         angle_rank = {"FRONT": 0, "BACK": 1, "DETAIL": 2}.get(angle, 5)
-        # Stable by original meta order when angle missing (FRONT is usually first STOCKMAN)
         return (rank, angle_rank, 0)
 
     ordered: list[str] = []
-    seen_src: set[str] = set()
+    seen_loc: set[str] = set()
     for m in sorted(metas, key=score):
         src = str(m.get("source") or "")
-        loc = src_to_local.get(src)
-        if loc and src not in seen_src:
-            seen_src.add(src)
+        loc = src_to_local.get(src) or src_to_local.get(src.rsplit("/", 1)[-1])
+        if loc and loc not in seen_loc:
+            seen_loc.add(loc)
             ordered.append(loc)
     for loc in locals_:
-        if loc not in ordered:
+        if loc not in seen_loc:
             ordered.append(loc)
     return ordered
 
@@ -519,7 +555,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
         parts.append(f"레퍼런스: {ref}")
     description_ko = "\n\n".join(p for p in parts if p)
 
-    images = reorder_locals_garment_first(row)
+    images = reorder_locals_handbag_front(row)
     images = [
         p
         for p in images
