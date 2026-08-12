@@ -454,6 +454,20 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     return prod
 
 
+def as_text(val) -> str:
+    if val is None:
+        return ""
+    if isinstance(val, list):
+        parts = [as_text(v) for v in val]
+        return " · ".join(p for p in parts if p)
+    if isinstance(val, dict):
+        for k in ("label", "value", "text", "description"):
+            if val.get(k):
+                return as_text(val.get(k))
+        return ""
+    return str(val).strip()
+
+
 def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     code = row.get("productCode") or row.get("sku") or row.get("id")
     if not code:
@@ -478,13 +492,15 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     primary = next((c for c in BAG_SHAPE_LEAVES if c in leaves), leaves[0])
     cols = sorted(set([*BAG_PARENT_COLS, *leaves]))
 
-    title_en = (row.get("title") or "").strip() or str(code)
+    title_en = as_text(row.get("title")) or str(code)
     details = row.get("details") or {}
-    color_en = (details.get("color") or "").strip()
-    fabrics_en = (details.get("fabrics") or "").strip()
-    desc_en = (details.get("description") or "").strip()
-    dims_en = (details.get("dimensions") or "").strip()
-    ref = (details.get("reference") or "").strip()
+    if not isinstance(details, dict):
+        details = {}
+    color_en = as_text(details.get("color"))
+    fabrics_en = as_text(details.get("fabrics"))
+    desc_en = as_text(details.get("description"))
+    dims_en = as_text(details.get("dimensions"))
+    ref = as_text(details.get("reference"))
 
     name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
