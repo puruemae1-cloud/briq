@@ -7,12 +7,14 @@ Sources:
   - ch-slg-catalog-raw.json → category bags (small leather goods)
   - ch-shoes-catalog-raw.json → category shoes
   - ch-jewellery-catalog-raw.json → category accessories
+  - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
 
 Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
 RTW size chart: French FR 34–50. Handbags / SLG: One Size + dimensions in copy.
 Shoes: EU (French) sizes as shown on chanel.com GB PDPs.
 Costume jewellery: mostly One Size (UNI); rings use French ring sizes + chart.
+Sunglasses: One Size + official frame measurements (mm) in copy.
 """
 from __future__ import annotations
 
@@ -31,6 +33,7 @@ HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
 SLG_RAW_PATH = ROOT / "src/data/ch/ch-slg-catalog-raw.json"
 SHOES_RAW_PATH = ROOT / "src/data/ch/ch-shoes-catalog-raw.json"
 JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-jewellery-catalog-raw.json"
+SUNGLASSES_RAW_PATH = ROOT / "src/data/ch/ch-sunglasses-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
 OUT_TS = ROOT / "src/data/ch/ch-catalog.ts"
 CACHE_PATH = ROOT / "src/data/ch/ch-translate-cache.json"
@@ -93,6 +96,9 @@ JEWELLERY_SHAPE_LEAVES = [
 
 JEWELLERY_PARENT_COLS = ["chanel", "chanel-accessories", "ch-jewellery"]
 
+SUNGLASSES_LEAF = "ch-women-sunglasses"
+SUNGLASSES_PARENT_COLS = ["chanel", "chanel-accessories", "ch-sunglasses", SUNGLASSES_LEAF]
+
 # Chanel costume jewellery PDPs mostly use UNI (One Size). Rings that expose
 # numeric sizes follow French ring sizing (finger circumference ≈ FR number).
 # Chanel.com fashion PDPs surface the WFJ-style finger-circumference guide;
@@ -135,6 +141,26 @@ CH_RING_SIZE_CHART = {
     ),
     "headers": ["FR", "UK", "US", "INNER CIRC (MM)", "KR (MM)"],
     "rows": CH_RING_SIZE_ROWS,
+}
+
+# Chanel eyewear PDPs publish frame measurements (lens / bridge / temple / …).
+# Products are One Size; the chart explains how to read those mm values.
+CH_EYEWEAR_SIZE_CHART = {
+    "id": "ch-women-sunglasses",
+    "titleKo": "샤넬 선글라스 프레임 사이즈 가이드",
+    "noteKo": (
+        "샤넬 선글라스는 공홈과 같이 원 사이즈로 판매되며, 제품별 프레임 치수"
+        "(렌즈 폭·브릿지·템플·프레임 높이·프론트 폭)가 밀리미터(mm)로 표기됩니다. "
+        "Briq 상품 설명의 사이즈 항목은 공홈 PDP의 mm 값을 따릅니다."
+    ),
+    "headers": ["항목", "의미", "단위"],
+    "rows": [
+        ["렌즈 폭", "Lens width — 한쪽 렌즈의 가로 폭", "mm"],
+        ["브릿지", "Bridge — 코 위 브릿지 폭", "mm"],
+        ["템플", "Temple — 다리(템플) 길이", "mm"],
+        ["프레임 높이", "Height — 프레임/렌즈 세로 높이", "mm"],
+        ["프론트 폭", "Front width — 프레임 전체 가로 폭", "mm"],
+    ],
 }
 
 # Chanel GB shoe PDPs use French/EU numeric sizes (34–42, half sizes).
@@ -324,6 +350,17 @@ _EN_TITLE_KO = {
     "Leather Accessories": "레더 액세서리",
     "Clutch with chain": "체인 클러치",
     "Clutch": "클러치",
+    "Pilot Sunglasses": "파일럿 선글라스",
+    "Oval Sunglasses": "오벌 선글라스",
+    "Square Sunglasses": "스퀘어 선글라스",
+    "Round Sunglasses": "라운드 선글라스",
+    "Cat Eye Sunglasses": "캣아이 선글라스",
+    "Cat-Eye Sunglasses": "캣아이 선글라스",
+    "Butterfly Sunglasses": "버터플라이 선글라스",
+    "Rectangle Sunglasses": "렉탱글 선글라스",
+    "Shield Sunglasses": "실드 선글라스",
+    "Pantos Sunglasses": "판토스 선글라스",
+    "Sunglasses": "선글라스",
 }
 
 
@@ -577,6 +614,41 @@ def format_jewellery_size_label(size: str, leaf: str | None = None) -> str:
     if s.upper().startswith("FR"):
         return s
     return s
+
+
+def format_eyewear_dims(dims) -> str:
+    """Prefer mm frame measurements from Chanel eyewear PDP details.dimensions."""
+    if not dims:
+        return ""
+    rows = dims if isinstance(dims, list) else [dims]
+    mm = None
+    for row in rows:
+        if isinstance(row, dict) and str(row.get("unit") or "").lower() == "mm":
+            mm = row
+            break
+    if not mm:
+        for row in rows:
+            if isinstance(row, dict) and any(
+                k in row for k in ("lensWidth", "bridgeWidth", "temple", "height", "frontWidth")
+            ):
+                mm = row
+                break
+    if not isinstance(mm, dict):
+        return as_text(dims)
+    parts: list[str] = []
+    mapping = [
+        ("lensWidth", "렌즈"),
+        ("bridgeWidth", "브릿지"),
+        ("temple", "템플"),
+        ("height", "높이"),
+        ("frontWidth", "프론트"),
+    ]
+    for key, label in mapping:
+        val = mm.get(key)
+        if val is None or val == "":
+            continue
+        parts.append(f"{label} {val}mm")
+    return " · ".join(parts)
 
 
 def size_slug(size: str) -> str:
@@ -1376,6 +1448,150 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     return prod
 
 
+def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    primary = SUNGLASSES_LEAF
+    cols = sorted(set(SUNGLASSES_PARENT_COLS))
+
+    title_en = as_text(row.get("title")) or str(code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    color_en = as_text(details.get("color"))
+    fabrics_en = as_text(details.get("fabrics"))
+    desc_en = as_text(details.get("description"))
+    dims_en = format_eyewear_dims(details.get("dimensions"))
+    ref = as_text(details.get("reference"))
+    lens_color = as_text(details.get("eyeLensColor"))
+    uv = details.get("freeStat") if isinstance(details.get("freeStat"), dict) else {}
+    uv_label = as_text(uv.get("label")) if uv else ""
+    treatment = details.get("treatment") if isinstance(details.get("treatment"), dict) else {}
+    treatment_label = as_text(treatment.get("label")) if treatment else ""
+
+    name_ko = t(title_en)
+    color_ko = t(color_en) if color_en else ""
+    fabrics_ko = t(fabrics_en) if fabrics_en else ""
+    desc_ko = t(desc_en) if desc_en else ""
+    lens_ko = t(lens_color) if lens_color else ""
+
+    parts = [desc_ko]
+    if color_ko:
+        parts.append(f"컬러: {color_ko}")
+    if lens_ko:
+        parts.append(f"렌즈: {lens_ko}")
+    if fabrics_ko:
+        parts.append(f"소재: {fabrics_ko}")
+    if dims_en:
+        parts.append(f"사이즈: {dims_en}")
+    if uv_label:
+        parts.append(f"UV: {uv_label}")
+    if treatment_label:
+        parts.append(f"처리: {treatment_label}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    # Prefer packshot order already stored; reuse handbag local reorder helper.
+    images = reorder_locals_handbag_front(row)
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / p.lstrip("/")).is_file()
+        and (ROOT / "public" / p.lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        # Fall back to listed localImages order
+        images = [
+            p
+            for p in (row.get("localImages") or [])
+            if (ROOT / "public" / str(p).lstrip("/")).is_file()
+            and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+        ]
+    if not images:
+        print(f"skip no local image (sunglasses): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — One Size",
+            "nameKo": f"{name_ko} — 원 사이즈",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": color_en.lower() or "default",
+            "colorNameKo": color_ko or color_en or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "sunglasses",
+        "선글라스",
+        "eyewear",
+        "아이웨어",
+        "악세서리",
+        "여성",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "accessories",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "sizeChart": CH_EYEWEAR_SIZE_CHART,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return prod
+
+
 def main() -> int:
     prev_map = load_prev()
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -1413,12 +1629,36 @@ def main() -> int:
     else:
         print(f"WARN missing jewellery raw: {JEWELLERY_RAW_PATH}", flush=True)
 
+    sunglass_rows: list[dict] = []
+    if SUNGLASSES_RAW_PATH.exists():
+        sunglass_rows = json.loads(SUNGLASSES_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing sunglasses raw: {SUNGLASSES_RAW_PATH}", flush=True)
+
     def _is_slg_prev(p: dict) -> bool:
         cols = set(p.get("chCollections") or [])
         return "ch-slg" in cols or p.get("subcategory") in SLG_SHAPE_LEAVES
 
+    def _is_jew_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return "ch-jewellery" in cols or p.get("subcategory") in JEWELLERY_SHAPE_LEAVES
+
+    def _is_sunglass_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return (
+            "ch-sunglasses" in cols
+            or p.get("subcategory") == SUNGLASSES_LEAF
+        )
+
     # Keep existing catalog rows when a raw source is missing (partial rebuild).
-    if not rtw_rows or not bag_rows or not slg_rows or not shoe_rows or not jew_rows:
+    if (
+        not rtw_rows
+        or not bag_rows
+        or not slg_rows
+        or not shoe_rows
+        or not jew_rows
+        or not sunglass_rows
+    ):
         for prev in prev_map.values():
             cat = prev.get("category")
             if not rtw_rows and cat == "luxury":
@@ -1434,9 +1674,22 @@ def main() -> int:
             if not shoe_rows and cat == "shoes":
                 products.append(prev)
                 seen.add(prev["id"])
-            if not jew_rows and cat == "accessories":
-                products.append(prev)
-                seen.add(prev["id"])
+            if cat == "accessories":
+                if not jew_rows and _is_jew_prev(prev):
+                    products.append(prev)
+                    seen.add(prev["id"])
+                if not sunglass_rows and _is_sunglass_prev(prev):
+                    products.append(prev)
+                    seen.add(prev["id"])
+                # Legacy accessories without jewellery/sunglass tags: keep only if both missing
+                if (
+                    not jew_rows
+                    and not sunglass_rows
+                    and not _is_jew_prev(prev)
+                    and not _is_sunglass_prev(prev)
+                ):
+                    products.append(prev)
+                    seen.add(prev["id"])
 
     for i, row in enumerate(rtw_rows, start=1):
         if row.get("_skip"):
@@ -1503,13 +1756,26 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built jewellery {i}/{len(jew_rows)}", flush=True)
 
+    for i, row in enumerate(sunglass_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_sunglasses_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built sunglasses {i}/{len(sunglass_rows)}", flush=True)
+
     products.sort(key=lambda p: p["id"])
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + Sunglasses. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -1522,6 +1788,7 @@ def main() -> int:
             *SLG_SHAPE_LEAVES,
             *SHOE_SHAPE_LEAVES,
             *JEWELLERY_SHAPE_LEAVES,
+            SUNGLASSES_LEAF,
             "ch-women-looks",
         ]
     }

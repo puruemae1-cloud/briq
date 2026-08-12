@@ -613,7 +613,9 @@ export type SubcategoryId =
   | "ch-women-necklaces"
   | "ch-women-bracelets-cuffs"
   | "ch-women-brooches"
-  | "ch-women-rings";
+  | "ch-women-rings"
+  | "ch-sunglasses"
+  | "ch-women-sunglasses";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -668,6 +670,9 @@ export const CH_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
   "ch-women-brooches",
   "ch-women-rings",
 ];
+
+/** Chanel sunglasses (official GB See All Sunglasses PLP). */
+export const CH_SUNGLASSES_LEAF_IDS: SubcategoryId[] = ["ch-women-sunglasses"];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -1591,6 +1596,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "chanel-accessories",
     "ch-jewellery",
     ...CH_JEWELLERY_LEAF_IDS,
+    "ch-sunglasses",
+    ...CH_SUNGLASSES_LEAF_IDS,
   ],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-women-earrings": ["ch-women-earrings"],
@@ -1598,6 +1605,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-bracelets-cuffs": ["ch-women-bracelets-cuffs"],
   "ch-women-brooches": ["ch-women-brooches"],
   "ch-women-rings": ["ch-women-rings"],
+  "ch-sunglasses": ["ch-sunglasses", ...CH_SUNGLASSES_LEAF_IDS],
+  "ch-women-sunglasses": ["ch-women-sunglasses"],
   "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
   "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
   "gc-men-backpacks": ["gc-men-backpacks"],
@@ -3884,6 +3893,12 @@ export const navCategories: NavCategory[] = [
             id: "ch-women-rings",
             labelKo: "링",
             href: "/shop?category=accessories&sub=ch-women-rings",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-sunglasses",
+            labelKo: "선글라스",
+            href: "/shop?category=accessories&sub=ch-women-sunglasses",
             navLeaf: true,
           },
         ],
