@@ -600,7 +600,14 @@ export type SubcategoryId =
   | "ch-women-casual-sandals"
   | "ch-women-loafers"
   | "ch-women-boots"
-  | "ch-women-sneakers";
+  | "ch-women-sneakers"
+  | "chanel-accessories"
+  | "ch-jewellery"
+  | "ch-women-earrings"
+  | "ch-women-necklaces"
+  | "ch-women-bracelets-cuffs"
+  | "ch-women-brooches"
+  | "ch-women-rings";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -636,6 +643,15 @@ export const CH_SHOE_LEAF_IDS: SubcategoryId[] = [
   "ch-women-loafers",
   "ch-women-boots",
   "ch-women-sneakers",
+];
+
+/** Chanel costume jewellery leaves (official GB costume jewellery PLPs). */
+export const CH_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-earrings",
+  "ch-women-necklaces",
+  "ch-women-bracelets-cuffs",
+  "ch-women-brooches",
+  "ch-women-rings",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -1544,6 +1560,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-loafers": ["ch-women-loafers"],
   "ch-women-boots": ["ch-women-boots"],
   "ch-women-sneakers": ["ch-women-sneakers"],
+  "chanel-accessories": [
+    "chanel-accessories",
+    "ch-jewellery",
+    ...CH_JEWELLERY_LEAF_IDS,
+  ],
+  "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
+  "ch-women-earrings": ["ch-women-earrings"],
+  "ch-women-necklaces": ["ch-women-necklaces"],
+  "ch-women-bracelets-cuffs": ["ch-women-bracelets-cuffs"],
+  "ch-women-brooches": ["ch-women-brooches"],
+  "ch-women-rings": ["ch-women-rings"],
   "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
   "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
   "gc-men-backpacks": ["gc-men-backpacks"],
@@ -3751,6 +3778,49 @@ export const navCategories: NavCategory[] = [
             id: "bs-acc-women",
             labelKo: "여성용",
             href: "/shop?category=accessories&sub=bs-acc-women",
+            navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "chanel-accessories",
+        labelKo: "샤넬",
+        href: "/shop?category=accessories&sub=chanel-accessories",
+        children: [
+          {
+            id: "ch-jewellery",
+            labelKo: "주얼리 전체",
+            href: "/shop?category=accessories&sub=ch-jewellery",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-earrings",
+            labelKo: "이어링",
+            href: "/shop?category=accessories&sub=ch-women-earrings",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-necklaces",
+            labelKo: "네크리스",
+            href: "/shop?category=accessories&sub=ch-women-necklaces",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-bracelets-cuffs",
+            labelKo: "브레이슬릿 & 커프",
+            href: "/shop?category=accessories&sub=ch-women-bracelets-cuffs",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-brooches",
+            labelKo: "브로치",
+            href: "/shop?category=accessories&sub=ch-women-brooches",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-rings",
+            labelKo: "링",
+            href: "/shop?category=accessories&sub=ch-women-rings",
             navLeaf: true,
           },
         ],

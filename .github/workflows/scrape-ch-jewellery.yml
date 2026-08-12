@@ -1,0 +1,55 @@
+name: Scrape Chanel Jewellery
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-ch-jewellery
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install "curl_cffi>=0.7.0"
+          pip install -r scripts/requirements-images.txt || true
+
+      - name: Scrape Chanel costume jewellery PDPs + images
+        run: python3 scripts/scrape-ch-jewellery.py
+
+      - name: Build Chanel catalogue (RTW + handbags + shoes + jewellery)
+        run: python3 scripts/build-ch-catalog.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp
+
+      - name: Verify product images (remote)
+        run: python3 scripts/verify-product-images.py --brand ch --remote || true
+
+      - name: Commit and push
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "feat: import Chanel costume jewellery by official GB categories" \
+            src/data/ch \
+            src/data/categories.ts \
+            scripts/scrape-ch-jewellery.py \
+            scripts/build-ch-catalog.py \
+            .github/workflows/scrape-ch-jewellery.yml
