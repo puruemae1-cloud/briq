@@ -4,12 +4,13 @@
 Sources:
   - ch-rtw-catalog-raw.json → category luxury (RTW)
   - ch-handbags-catalog-raw.json → category bags
+  - ch-slg-catalog-raw.json → category bags (small leather goods)
   - ch-shoes-catalog-raw.json → category shoes
   - ch-jewellery-catalog-raw.json → category accessories
 
 Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
-RTW size chart: French FR 34–50. Handbags: One Size + dimensions in copy.
+RTW size chart: French FR 34–50. Handbags / SLG: One Size + dimensions in copy.
 Shoes: EU (French) sizes as shown on chanel.com GB PDPs.
 Costume jewellery: mostly One Size (UNI); rings use French ring sizes + chart.
 """
@@ -27,6 +28,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ch/ch-rtw-catalog-raw.json"
 HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
+SLG_RAW_PATH = ROOT / "src/data/ch/ch-slg-catalog-raw.json"
 SHOES_RAW_PATH = ROOT / "src/data/ch/ch-shoes-catalog-raw.json"
 JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-jewellery-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
@@ -58,6 +60,17 @@ BAG_SHAPE_LEAVES = [
 ]
 
 BAG_PARENT_COLS = ["chanel", "chanel-bags", "ch-handbags"]
+
+SLG_SHAPE_LEAVES = [
+    "ch-women-wallets-on-chain",
+    "ch-women-micro-bags",
+    "ch-women-vanity",
+    "ch-women-card-holders-wallets",
+    "ch-women-pouches-cases",
+    "ch-women-leather-accessories",
+]
+
+SLG_PARENT_COLS = ["chanel", "chanel-bags", "ch-slg"]
 
 SHOE_SHAPE_LEAVES = [
     "ch-women-pumps-slingbacks",
@@ -278,6 +291,40 @@ _EN_TITLE_KO = {
     "Brooch": "브로치",
     "Rings": "링",
     "Ring": "링",
+    "Wallets on Chain": "월렛 온 체인",
+    "Wallet On Chain": "월렛 온 체인",
+    "Wallet on Chain": "월렛 온 체인",
+    "Classic Wallet On Chain": "클래식 월렛 온 체인",
+    "BOY CHANEL Wallet On Chain": "보이 샤넬 월렛 온 체인",
+    "Micro Bags": "마이크로백",
+    "Micro Bag": "마이크로백",
+    "Mini Bag Charm": "미니백 참",
+    "Vanity": "배니티",
+    "Long Vanity with chain": "롱 배니티 체인",
+    "Large Vanity with chain": "라지 배니티 체인",
+    "Vanity with chain": "배니티 체인",
+    "Vanity with Chain": "배니티 체인",
+    "CHANEL 19 Wallet on Chain": "샤넬 19 월렛 온 체인",
+    "CHANEL 19 Wallet On Chain": "샤넬 19 월렛 온 체인",
+    "Card Holders & Wallets": "카드홀더 & 월렛",
+    "Card Holder": "카드홀더",
+    "Classic Card Holder": "클래식 카드홀더",
+    "Flap Card Holder": "플랩 카드홀더",
+    "Zipped Card Holder": "지퍼 카드홀더",
+    "Passport Holder": "패스포트 홀더",
+    "Long Wallet": "롱 월렛",
+    "Long Zipped Wallet": "롱 지퍼 월렛",
+    "Small Flap Wallet": "스몰 플랩 월렛",
+    "Classic Small Flap Wallet": "클래식 스몰 플랩 월렛",
+    "Classic Zipped Coin Purse": "클래식 지퍼 코인 퍼스",
+    "Zipped Coin Purse": "지퍼 코인 퍼스",
+    "Pouches & Cases": "파우치 & 케이스",
+    "Zipped Pouch": "지퍼 파우치",
+    "Large Zipped Pouch": "라지 지퍼 파우치",
+    "Classic Zipped Pouch": "클래식 지퍼 파우치",
+    "Leather Accessories": "레더 액세서리",
+    "Clutch with chain": "체인 클러치",
+    "Clutch": "클러치",
 }
 
 
@@ -733,7 +780,26 @@ def as_text(val) -> str:
     if val is None:
         return ""
     if isinstance(val, list):
-        parts = [as_text(v) for v in val]
+        # Prefer centimetre dimensions when Chanel returns in/cm/mm triples.
+        cm_parts = []
+        other_parts = []
+        for v in val:
+            if isinstance(v, dict):
+                unit = str(v.get("unit") or "").lower()
+                value = as_text(v.get("value"))
+                if not value:
+                    continue
+                if unit == "cm":
+                    cm_parts.append(f"{value} cm")
+                elif unit:
+                    other_parts.append(f"{value} {unit}")
+                else:
+                    other_parts.append(value)
+            else:
+                t = as_text(v)
+                if t:
+                    other_parts.append(t)
+        parts = cm_parts or other_parts
         return " · ".join(p for p in parts if p)
     if isinstance(val, dict):
         for k in ("label", "value", "text", "description"):
@@ -838,6 +904,140 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
         "handbag",
         "가방",
         "핸드백",
+        "여성",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "bags",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return prod
+
+
+def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    """Small leather goods — same pricing/copy pattern as handbags (One Size + dims)."""
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    leaf = row.get("leaf") if row.get("leaf") in SLG_SHAPE_LEAVES else None
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in SLG_SHAPE_LEAVES
+    ]
+    if leaf:
+        leaves = [leaf]
+    elif not leaves:
+        return None
+    primary = leaf or next((c for c in SLG_SHAPE_LEAVES if c in leaves), leaves[0])
+    cols = sorted(set([*SLG_PARENT_COLS, primary]))
+
+    title_en = as_text(row.get("title")) or str(code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    color_en = as_text(details.get("color"))
+    fabrics_en = as_text(details.get("fabrics"))
+    desc_en = as_text(details.get("description"))
+    dims_en = as_text(details.get("dimensions"))
+    ref = as_text(details.get("reference"))
+
+    name_ko = t(title_en)
+    color_ko = t(color_en) if color_en else ""
+    fabrics_ko = t(fabrics_en) if fabrics_en else ""
+    desc_ko = t(desc_en) if desc_en else ""
+    dims_ko = t(dims_en) if dims_en else ""
+
+    parts = [desc_ko]
+    if color_ko:
+        parts.append(f"컬러: {color_ko}")
+    if fabrics_ko:
+        parts.append(f"소재: {fabrics_ko}")
+    if dims_ko:
+        parts.append(f"사이즈: {dims_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = reorder_locals_handbag_front(row)
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / p.lstrip("/")).is_file()
+        and (ROOT / "public" / p.lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (slg): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    # Official Chanel SLG is sold as One Size; dimensions live in copy (사이즈: …).
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — One Size",
+            "nameKo": f"{name_ko} — 원 사이즈",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": color_en.lower() or "default",
+            "colorNameKo": color_ko or color_en or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "slg",
+        "small leather goods",
+        "스몰 레더 굿즈",
+        "가방",
         "여성",
         *cols,
     ]
@@ -1196,6 +1396,12 @@ def main() -> int:
     else:
         print(f"WARN missing handbags raw: {HANDBAGS_RAW_PATH}", flush=True)
 
+    slg_rows: list[dict] = []
+    if SLG_RAW_PATH.exists():
+        slg_rows = json.loads(SLG_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing SLG raw: {SLG_RAW_PATH}", flush=True)
+
     shoe_rows: list[dict] = []
     if SHOES_RAW_PATH.exists():
         shoe_rows = json.loads(SHOES_RAW_PATH.read_text()).get("products") or []
@@ -1208,16 +1414,24 @@ def main() -> int:
     else:
         print(f"WARN missing jewellery raw: {JEWELLERY_RAW_PATH}", flush=True)
 
+    def _is_slg_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return "ch-slg" in cols or p.get("subcategory") in SLG_SHAPE_LEAVES
+
     # Keep existing catalog rows when a raw source is missing (partial rebuild).
-    if not rtw_rows or not bag_rows or not shoe_rows or not jew_rows:
+    if not rtw_rows or not bag_rows or not slg_rows or not shoe_rows or not jew_rows:
         for prev in prev_map.values():
             cat = prev.get("category")
             if not rtw_rows and cat == "luxury":
                 products.append(prev)
                 seen.add(prev["id"])
-            if not bag_rows and cat == "bags":
-                products.append(prev)
-                seen.add(prev["id"])
+            if cat == "bags":
+                if not bag_rows and not _is_slg_prev(prev):
+                    products.append(prev)
+                    seen.add(prev["id"])
+                if not slg_rows and _is_slg_prev(prev):
+                    products.append(prev)
+                    seen.add(prev["id"])
             if not shoe_rows and cat == "shoes":
                 products.append(prev)
                 seen.add(prev["id"])
@@ -1251,6 +1465,19 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built bags {i}/{len(bag_rows)}", flush=True)
 
+    for i, row in enumerate(slg_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_slg_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built SLG {i}/{len(slg_rows)}", flush=True)
+
     for i, row in enumerate(shoe_rows, start=1):
         if row.get("_skip"):
             continue
@@ -1283,7 +1510,7 @@ def main() -> int:
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + Shoes + Jewellery. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -1293,6 +1520,7 @@ def main() -> int:
         for leaf in [
             *SHAPE_LEAVES,
             *BAG_SHAPE_LEAVES,
+            *SLG_SHAPE_LEAVES,
             *SHOE_SHAPE_LEAVES,
             *JEWELLERY_SHAPE_LEAVES,
             "ch-women-looks",

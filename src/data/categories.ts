@@ -592,6 +592,13 @@ export type SubcategoryId =
   | "ch-women-evening-bags"
   | "ch-women-mini-bags"
   | "ch-the-chanel-handbag"
+  | "ch-slg"
+  | "ch-women-wallets-on-chain"
+  | "ch-women-micro-bags"
+  | "ch-women-vanity"
+  | "ch-women-card-holders-wallets"
+  | "ch-women-pouches-cases"
+  | "ch-women-leather-accessories"
   | "chanel-shoes"
   | "ch-shoes"
   | "ch-women-pumps-slingbacks"
@@ -632,6 +639,16 @@ export const CH_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "ch-women-evening-bags",
   "ch-women-mini-bags",
   "ch-the-chanel-handbag",
+];
+
+/** Chanel small leather goods leaves (official GB SLG PLPs). */
+export const CH_SLG_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-wallets-on-chain",
+  "ch-women-micro-bags",
+  "ch-women-vanity",
+  "ch-women-card-holders-wallets",
+  "ch-women-pouches-cases",
+  "ch-women-leather-accessories",
 ];
 
 /** Chanel women's shoes leaves (official GB shoes PLPs). */
@@ -1541,7 +1558,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MENS_HANDBAG_LEAF_IDS,
   ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
-  "chanel-bags": ["chanel-bags", "ch-handbags", ...CH_HANDBAG_LEAF_IDS],
+  "chanel-bags": [
+    "chanel-bags",
+    "ch-handbags",
+    ...CH_HANDBAG_LEAF_IDS,
+    "ch-slg",
+    ...CH_SLG_LEAF_IDS,
+  ],
   "ch-handbags": ["ch-handbags", ...CH_HANDBAG_LEAF_IDS],
   "ch-women-flap-bags": ["ch-women-flap-bags"],
   "ch-women-hobo-bags": ["ch-women-hobo-bags"],
@@ -1551,6 +1574,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-evening-bags": ["ch-women-evening-bags"],
   "ch-women-mini-bags": ["ch-women-mini-bags"],
   "ch-the-chanel-handbag": ["ch-the-chanel-handbag"],
+  "ch-slg": ["ch-slg", ...CH_SLG_LEAF_IDS],
+  "ch-women-wallets-on-chain": ["ch-women-wallets-on-chain"],
+  "ch-women-micro-bags": ["ch-women-micro-bags"],
+  "ch-women-vanity": ["ch-women-vanity"],
+  "ch-women-card-holders-wallets": ["ch-women-card-holders-wallets"],
+  "ch-women-pouches-cases": ["ch-women-pouches-cases"],
+  "ch-women-leather-accessories": ["ch-women-leather-accessories"],
   "chanel-shoes": ["chanel-shoes", "ch-shoes", ...CH_SHOE_LEAF_IDS],
   "ch-shoes": ["ch-shoes", ...CH_SHOE_LEAF_IDS],
   "ch-women-pumps-slingbacks": ["ch-women-pumps-slingbacks"],
@@ -2913,6 +2943,48 @@ export const navCategories: NavCategory[] = [
             id: "ch-the-chanel-handbag",
             labelKo: "더 샤넬 핸드백",
             href: "/shop?category=bags&sub=ch-the-chanel-handbag",
+            navLeaf: true,
+          },
+          {
+            id: "ch-slg",
+            labelKo: "스몰 레더 굿즈 전체",
+            href: "/shop?category=bags&sub=ch-slg",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-wallets-on-chain",
+            labelKo: "월렛 온 체인",
+            href: "/shop?category=bags&sub=ch-women-wallets-on-chain",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-micro-bags",
+            labelKo: "마이크로백",
+            href: "/shop?category=bags&sub=ch-women-micro-bags",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-vanity",
+            labelKo: "배니티",
+            href: "/shop?category=bags&sub=ch-women-vanity",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-card-holders-wallets",
+            labelKo: "카드홀더 & 월렛",
+            href: "/shop?category=bags&sub=ch-women-card-holders-wallets",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-pouches-cases",
+            labelKo: "파우치 & 케이스",
+            href: "/shop?category=bags&sub=ch-women-pouches-cases",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-leather-accessories",
+            labelKo: "레더 액세서리",
+            href: "/shop?category=bags&sub=ch-women-leather-accessories",
             navLeaf: true,
           },
         ],
