@@ -4,10 +4,12 @@
 Sources:
   - ch-rtw-catalog-raw.json → category luxury (RTW)
   - ch-handbags-catalog-raw.json → category bags
+  - ch-shoes-catalog-raw.json → category shoes
 
 Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
 RTW size chart: French FR 34–50. Handbags: One Size + dimensions in copy.
+Shoes: EU (French) sizes as shown on chanel.com GB PDPs.
 """
 from __future__ import annotations
 
@@ -23,6 +25,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ch/ch-rtw-catalog-raw.json"
 HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
+SHOES_RAW_PATH = ROOT / "src/data/ch/ch-shoes-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
 OUT_TS = ROOT / "src/data/ch/ch-catalog.ts"
 CACHE_PATH = ROOT / "src/data/ch/ch-translate-cache.json"
@@ -52,6 +55,56 @@ BAG_SHAPE_LEAVES = [
 ]
 
 BAG_PARENT_COLS = ["chanel", "chanel-bags", "ch-handbags"]
+
+SHOE_SHAPE_LEAVES = [
+    "ch-women-pumps-slingbacks",
+    "ch-women-ballet-mary-janes",
+    "ch-women-elegant-sandals",
+    "ch-women-casual-sandals",
+    "ch-women-loafers",
+    "ch-women-boots",
+    "ch-women-sneakers",
+]
+
+SHOE_PARENT_COLS = ["chanel", "chanel-shoes", "ch-shoes"]
+
+# Chanel GB shoe PDPs use French/EU numeric sizes (34–42, half sizes).
+# Conversion follows standard French women's EU ↔ UK/US ↔ KR(mm)/JP(cm).
+# chanel.com does not publish a public shoes conversion table; EU labels match
+# the orliSize values shown on official product pages.
+CH_WOMEN_SHOES_ROWS = [
+    # EU, UK, US, KR(mm), JP(cm)
+    ["34", "1", "4", "210", "21"],
+    ["34.5", "1.5", "4.5", "215", "21.5"],
+    ["35", "2", "5", "220", "22"],
+    ["35.5", "2.5", "5.5", "225", "22.5"],
+    ["36", "3", "6", "230", "23"],
+    ["36.5", "3.5", "6.5", "235", "23.5"],
+    ["37", "4", "7", "240", "24"],
+    ["37.5", "4.5", "7.5", "245", "24.5"],
+    ["38", "5", "8", "250", "25"],
+    ["38.5", "5.5", "8.5", "255", "25.5"],
+    ["39", "6", "9", "260", "26"],
+    ["39.5", "6.5", "9.5", "265", "26.5"],
+    ["40", "7", "10", "270", "27"],
+    ["40.5", "7.5", "10.5", "275", "27.5"],
+    ["41", "8", "11", "280", "28"],
+    ["41.5", "8.5", "11.5", "285", "28.5"],
+    ["42", "9", "12", "290", "29"],
+]
+
+CH_WOMEN_SHOES_SIZE_CHART = {
+    "id": "ch-women-shoes",
+    "titleKo": "샤넬 여성 슈즈 사이즈 가이드",
+    "noteKo": (
+        "샤넬 슈즈는 공홈(chanel.com) 제품 페이지와 동일하게 프랑스/유럽(EU) 사이즈를 "
+        "사용합니다. Briq 사이즈 선택란의 EU 38·EU 38.5 등은 공홈에 표기된 사이즈와 "
+        "같습니다. UK·US·KR(mm)·JP(cm)은 표준 프랑스 여성 슈즈 환산이며, 스타일·소재에 "
+        "따라 핏이 다를 수 있으니 참고용으로 확인해 주세요."
+    ),
+    "headers": ["EU", "UK", "US", "KR (MM)", "JP (CM)"],
+    "rows": CH_WOMEN_SHOES_ROWS,
+}
 
 # French women's RTW conversion (Chanel FR sizes). Body measures are approximate
 # maison / industry references for shopper guidance.
@@ -182,6 +235,40 @@ def t(text: str | None) -> str:
         .replace("Lambskin", "램스킨")
         .replace("Gold-Tone Metal", "골드 톤 메탈")
         .replace("Silver-Tone Metal", "실버 톤 메탈")
+        .replace("Ballet flats", "발레 플랫")
+        .replace("Ballet Flats", "발레 플랫")
+        .replace("발레 아파트", "발레 플랫")
+        .replace("Mary Janes", "메리제인")
+        .replace("Mary Jane", "메리제인")
+        .replace("메리 제인스", "메리제인")
+        .replace("메리 제인", "메리제인")
+        .replace("Slingbacks", "슬링백")
+        .replace("Slingback", "슬링백")
+        .replace("Pumps", "펌프스")
+        .replace("Pump", "펌프스")
+        .replace("Mules", "뮬")
+        .replace("Mule", "뮬")
+        .replace("노새", "뮬")
+        .replace("Trainers", "스니커즈")
+        .replace("Trainer", "스니커즈")
+        .replace("Thongs", "통 샌들")
+        .replace("Thong", "통 샌들")
+        .replace("통 스타일", "통 샌들")
+        .replace("Loafers", "로퍼")
+        .replace("Loafer", "로퍼")
+        .replace("Sneakers", "스니커즈")
+        .replace("Sneaker", "스니커즈")
+        .replace("Sandals", "샌들")
+        .replace("Sandal", "샌들")
+        .replace("Short Boots", "숏 부츠")
+        .replace("High Boots", "하이 부츠")
+        .replace("Boots", "부츠")
+        .replace("Boot", "부츠")
+        .replace("Lace-Up Shoes", "레이스업 슈즈")
+        .replace("Moccasins", "모카신")
+        .replace("Moccasin", "모카신")
+        .replace("Espadrilles", "에스파드리유")
+        .replace("Espadrille", "에스파드리유")
     )
     _KO[s] = ko
     return ko
@@ -226,6 +313,27 @@ def reorder_locals_handbag_front(row: dict) -> list[str]:
         preferred=(
             "PACKSHOT_ARTISTIQUE_VUE1",
             "PACKSHOT_DEFAULT",
+            "PACKSHOT_ARTISTIQUE_VUE2",
+            "PACKSHOT_ARTISTIQUE_VUE3",
+            "PACKSHOT_ARTISTIQUE_VUE4",
+            "PACKSHOT_ARTISTIQUE_VUE5",
+            "PACKSHOT_ALTERNATIVE",
+            "PACKSHOT_EXTRA",
+            "PACKSHOT_OTHER",
+            "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+            "LOOK",
+            "EDITORIAL",
+        ),
+    )
+
+
+def reorder_locals_shoe_front(row: dict) -> list[str]:
+    """Prefer default / front packshots for shoes."""
+    return _reorder_locals_by_typology(
+        row,
+        preferred=(
+            "PACKSHOT_DEFAULT",
+            "PACKSHOT_ARTISTIQUE_VUE1",
             "PACKSHOT_ARTISTIQUE_VUE2",
             "PACKSHOT_ARTISTIQUE_VUE3",
             "PACKSHOT_ARTISTIQUE_VUE4",
@@ -291,6 +399,17 @@ def format_size_label(size: str) -> str:
         return "One Size"
     if re.fullmatch(r"\d+(\.\d+)?", s):
         return f"FR {s}"
+    return s
+
+
+def format_shoe_size_label(size: str) -> str:
+    s = (size or "").strip()
+    if not s:
+        return "One Size"
+    if re.fullmatch(r"\d+(\.\d+)?", s):
+        return f"EU {s}"
+    if s.upper().startswith("EU"):
+        return s
     return s
 
 
@@ -636,6 +755,146 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     return prod
 
 
+def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in SHOE_SHAPE_LEAVES
+    ]
+    leaf = row.get("leaf") if row.get("leaf") in SHOE_SHAPE_LEAVES else None
+    if leaf and leaf not in leaves:
+        leaves.append(leaf)
+    if not leaves:
+        return None
+    primary = next((c for c in SHOE_SHAPE_LEAVES if c in leaves), leaves[0])
+    cols = sorted(set([*SHOE_PARENT_COLS, *leaves]))
+
+    title_en = as_text(row.get("title")) or str(code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    color_en = as_text(details.get("color"))
+    fabrics_en = as_text(details.get("fabrics"))
+    desc_en = as_text(details.get("description"))
+    ref = as_text(details.get("reference"))
+
+    name_ko = t(title_en)
+    color_ko = t(color_en) if color_en else ""
+    fabrics_ko = t(fabrics_en) if fabrics_en else ""
+    desc_ko = t(desc_en) if desc_en else ""
+
+    parts = [desc_ko]
+    if color_ko:
+        parts.append(f"컬러: {color_ko}")
+    if fabrics_ko:
+        parts.append(f"소재: {fabrics_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = reorder_locals_shoe_front(row)
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / p.lstrip("/")).is_file()
+        and (ROOT / "public" / p.lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (shoe): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    for sz in size_rows:
+        size_raw = str(sz.get("orliSize") or sz.get("size") or "").strip()
+        if not size_raw:
+            continue
+        label = format_shoe_size_label(size_raw)
+        slug = size_slug(size_raw)
+        sku = str(sz.get("sku") or sz.get("id") or f"{code}-{slug}")
+        # Boutique / special-order — keep sizes buyable like RTW.
+        v: dict = {
+            "id": f"{pid}-{slug}",
+            "name": f"{title_en} — {label}",
+            "nameKo": f"{name_ko} — {label}",
+            "sku": sku,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": color_en.lower() or "default",
+            "colorNameKo": color_ko or color_en or "기본",
+            "size": label,
+            "chCollections": cols,
+        }
+        if hover:
+            v["hoverImage"] = hover
+        variants.append(v)
+
+    if not variants:
+        print(f"skip no sizes (shoe): {code}", flush=True)
+        return None
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "shoes",
+        "슈즈",
+        "여성",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "shoes",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "sizeChart": CH_WOMEN_SHOES_SIZE_CHART,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return prod
+
+
 def main() -> int:
     prev_map = load_prev()
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -655,14 +914,23 @@ def main() -> int:
     else:
         print(f"WARN missing handbags raw: {HANDBAGS_RAW_PATH}", flush=True)
 
+    shoe_rows: list[dict] = []
+    if SHOES_RAW_PATH.exists():
+        shoe_rows = json.loads(SHOES_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing shoes raw: {SHOES_RAW_PATH}", flush=True)
+
     # Keep existing catalog rows when a raw source is missing (partial rebuild).
-    if not rtw_rows or not bag_rows:
+    if not rtw_rows or not bag_rows or not shoe_rows:
         for prev in prev_map.values():
             cat = prev.get("category")
             if not rtw_rows and cat == "luxury":
                 products.append(prev)
                 seen.add(prev["id"])
             if not bag_rows and cat == "bags":
+                products.append(prev)
+                seen.add(prev["id"])
+            if not shoe_rows and cat == "shoes":
                 products.append(prev)
                 seen.add(prev["id"])
 
@@ -692,28 +960,53 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built bags {i}/{len(bag_rows)}", flush=True)
 
+    for i, row in enumerate(shoe_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_shoe_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built shoes {i}/{len(shoe_rows)}", flush=True)
+
     products.sort(key=lambda p: p["id"])
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel Ready-to-Wear + Handbags. */\n"
+        "/** Auto-generated — Chanel Ready-to-Wear + Handbags + Shoes. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
 
-    leaf_n = {leaf: 0 for leaf in [*SHAPE_LEAVES, *BAG_SHAPE_LEAVES, "ch-women-looks"]}
+    leaf_n = {
+        leaf: 0
+        for leaf in [
+            *SHAPE_LEAVES,
+            *BAG_SHAPE_LEAVES,
+            *SHOE_SHAPE_LEAVES,
+            "ch-women-looks",
+        ]
+    }
     in_stock = sum(1 for p in products if p.get("inStock"))
     bags_n = sum(1 for p in products if p.get("category") == "bags")
     luxury_n = sum(1 for p in products if p.get("category") == "luxury")
+    shoes_n = sum(1 for p in products if p.get("category") == "shoes")
     for p in products:
         for c in p.get("chCollections") or []:
             if c in leaf_n:
                 leaf_n[c] += 1
 
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
-    print(f"luxury={luxury_n} bags={bags_n} inStock={in_stock}", flush=True)
+    print(
+        f"luxury={luxury_n} bags={bags_n} shoes={shoes_n} inStock={in_stock}",
+        flush=True,
+    )
     print(f"leafCounts={leaf_n}", flush=True)
     return 0
 

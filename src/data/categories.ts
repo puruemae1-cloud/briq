@@ -591,7 +591,16 @@ export type SubcategoryId =
   | "ch-women-backpacks"
   | "ch-women-evening-bags"
   | "ch-women-mini-bags"
-  | "ch-the-chanel-handbag";
+  | "ch-the-chanel-handbag"
+  | "chanel-shoes"
+  | "ch-shoes"
+  | "ch-women-pumps-slingbacks"
+  | "ch-women-ballet-mary-janes"
+  | "ch-women-elegant-sandals"
+  | "ch-women-casual-sandals"
+  | "ch-women-loafers"
+  | "ch-women-boots"
+  | "ch-women-sneakers";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -616,6 +625,17 @@ export const CH_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "ch-women-evening-bags",
   "ch-women-mini-bags",
   "ch-the-chanel-handbag",
+];
+
+/** Chanel women's shoes leaves (official GB shoes PLPs). */
+export const CH_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-pumps-slingbacks",
+  "ch-women-ballet-mary-janes",
+  "ch-women-elegant-sandals",
+  "ch-women-casual-sandals",
+  "ch-women-loafers",
+  "ch-women-boots",
+  "ch-women-sneakers",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -1515,6 +1535,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-evening-bags": ["ch-women-evening-bags"],
   "ch-women-mini-bags": ["ch-women-mini-bags"],
   "ch-the-chanel-handbag": ["ch-the-chanel-handbag"],
+  "chanel-shoes": ["chanel-shoes", "ch-shoes", ...CH_SHOE_LEAF_IDS],
+  "ch-shoes": ["ch-shoes", ...CH_SHOE_LEAF_IDS],
+  "ch-women-pumps-slingbacks": ["ch-women-pumps-slingbacks"],
+  "ch-women-ballet-mary-janes": ["ch-women-ballet-mary-janes"],
+  "ch-women-elegant-sandals": ["ch-women-elegant-sandals"],
+  "ch-women-casual-sandals": ["ch-women-casual-sandals"],
+  "ch-women-loafers": ["ch-women-loafers"],
+  "ch-women-boots": ["ch-women-boots"],
+  "ch-women-sneakers": ["ch-women-sneakers"],
   "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
   "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
   "gc-men-backpacks": ["gc-men-backpacks"],
@@ -3213,6 +3242,61 @@ export const navCategories: NavCategory[] = [
             id: "bs-shoes-women",
             labelKo: "여성용",
             href: "/shop?category=shoes&sub=bs-shoes-women",
+            navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "chanel-shoes",
+        labelKo: "샤넬",
+        href: "/shop?category=shoes&sub=chanel-shoes",
+        children: [
+          {
+            id: "ch-shoes",
+            labelKo: "슈즈 전체",
+            href: "/shop?category=shoes&sub=ch-shoes",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-pumps-slingbacks",
+            labelKo: "펌프스 & 슬링백",
+            href: "/shop?category=shoes&sub=ch-women-pumps-slingbacks",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-ballet-mary-janes",
+            labelKo: "발레 플랫 & 메리제인",
+            href: "/shop?category=shoes&sub=ch-women-ballet-mary-janes",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-elegant-sandals",
+            labelKo: "엘레강트 샌들",
+            href: "/shop?category=shoes&sub=ch-women-elegant-sandals",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-casual-sandals",
+            labelKo: "캐주얼 샌들",
+            href: "/shop?category=shoes&sub=ch-women-casual-sandals",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-loafers",
+            labelKo: "로퍼",
+            href: "/shop?category=shoes&sub=ch-women-loafers",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-boots",
+            labelKo: "부츠",
+            href: "/shop?category=shoes&sub=ch-women-boots",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-sneakers",
+            labelKo: "스니커즈",
+            href: "/shop?category=shoes&sub=ch-women-sneakers",
             navLeaf: true,
           },
         ],
