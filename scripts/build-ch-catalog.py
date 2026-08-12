@@ -56,7 +56,6 @@ BAG_SHAPE_LEAVES = [
     "ch-women-backpacks",
     "ch-women-evening-bags",
     "ch-women-mini-bags",
-    "ch-the-chanel-handbag",
 ]
 
 BAG_PARENT_COLS = ["chanel", "chanel-bags", "ch-handbags"]

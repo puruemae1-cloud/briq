@@ -3,7 +3,8 @@
 
 Official leaves (Handbags hub):
   Flap / Hobo / Tote & Bowling / Bucket / Backpacks /
-  Evening / Mini / The CHANEL Handbag
+  Evening / Mini
+  (The CHANEL Handbag is a content landing with no sellable SKUs — omitted.)
 
 Reuses ChanelClient + image helpers from scrape-ch-rtw.py (Akamai/proxy).
 SKU prefixes: A* / AS* (not RTW P*).
@@ -73,12 +74,6 @@ LEAVES: list[tuple[str, str, str, str]] = [
         "미니백",
         f"{BASE}/gb/fashion/mini-bags/c/1x3x11/",
     ),
-    (
-        "ch-the-chanel-handbag",
-        "The CHANEL Handbag",
-        "더 샤넬 핸드백",
-        f"{BASE}/gb/fashion/handbags/the-chanel-handbag/",
-    ),
 ]
 
 LEAF_IDS = [c for c, *_ in LEAVES]
@@ -93,7 +88,6 @@ LEAF_BY_SLUG = {
     "backpacks": "ch-women-backpacks",
     "evening-bags": "ch-women-evening-bags",
     "mini-bags": "ch-women-mini-bags",
-    "the-chanel-handbag": "ch-the-chanel-handbag",
 }
 
 PDP_PAUSE = 1.2
@@ -291,8 +285,6 @@ def leaf_from_hierarchy(prod: dict) -> str | None:
             return "ch-women-evening-bags"
         if "/1x3x11/" in url or "mini-bags" in url:
             return "ch-women-mini-bags"
-        if "the-chanel-handbag" in url:
-            return "ch-the-chanel-handbag"
     return None
 
 

@@ -591,7 +591,6 @@ export type SubcategoryId =
   | "ch-women-backpacks"
   | "ch-women-evening-bags"
   | "ch-women-mini-bags"
-  | "ch-the-chanel-handbag"
   | "ch-slg"
   | "ch-women-wallets-on-chain"
   | "ch-women-micro-bags"
@@ -638,7 +637,6 @@ export const CH_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "ch-women-backpacks",
   "ch-women-evening-bags",
   "ch-women-mini-bags",
-  "ch-the-chanel-handbag",
 ];
 
 /** Chanel small leather goods leaves (official GB SLG PLPs). */
@@ -1573,7 +1571,6 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-backpacks": ["ch-women-backpacks"],
   "ch-women-evening-bags": ["ch-women-evening-bags"],
   "ch-women-mini-bags": ["ch-women-mini-bags"],
-  "ch-the-chanel-handbag": ["ch-the-chanel-handbag"],
   "ch-slg": ["ch-slg", ...CH_SLG_LEAF_IDS],
   "ch-women-wallets-on-chain": ["ch-women-wallets-on-chain"],
   "ch-women-micro-bags": ["ch-women-micro-bags"],
@@ -2937,12 +2934,6 @@ export const navCategories: NavCategory[] = [
             id: "ch-women-mini-bags",
             labelKo: "미니백",
             href: "/shop?category=bags&sub=ch-women-mini-bags",
-            navLeaf: true,
-          },
-          {
-            id: "ch-the-chanel-handbag",
-            labelKo: "더 샤넬 핸드백",
-            href: "/shop?category=bags&sub=ch-the-chanel-handbag",
             navLeaf: true,
           },
           {
