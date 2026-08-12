@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import { useAuthStore } from "@/lib/auth-store";
 import { useCouponStore } from "@/lib/coupon-store";
 

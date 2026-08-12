@@ -1,5 +1,5 @@
 import { ProductCard } from "@/components/ProductCard";
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import {
   EDIT_TIER_COPY,
   type EditTier,

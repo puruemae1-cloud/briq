@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import { useAuthStore } from "@/lib/auth-store";
 import { SHIPPING_STAGE_COPY } from "@/lib/orders";
 import { useOrderStore } from "@/lib/order-store";

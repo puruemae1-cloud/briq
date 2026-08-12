@@ -1,33 +1,56 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
-import type { Product } from "@/data/products";
+import type { Product } from "@/data/product-types";
 import { SECTION_LIMIT } from "@/lib/collection-edit";
-import { compareProductsByNewest } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
+
+async function fetchProductsByIds(ids: string[]): Promise<Product[]> {
+  if (ids.length === 0) return [];
+  const res = await fetch(
+    `/api/products/by-ids?ids=${encodeURIComponent(ids.join(","))}`,
+    { cache: "force-cache" },
+  );
+  if (!res.ok) return [];
+  const data = (await res.json()) as { products?: Product[] };
+  return data.products ?? [];
+}
 
 /**
  * Client-only bestseller tier — re-ranks by live purchase counts.
- * Signature / 신상품 are server-rendered so newest `registeredAt` is in HTML.
+ * Loads only the purchased product ids (not the full catalogue).
  */
-export function CollectionBestsellerTier({
-  products,
-}: {
-  products: Product[];
-}) {
+export function CollectionBestsellerTier() {
   const counts = usePurchases((s) => s.counts);
-  const bestseller = useMemo(() => {
-    return products
-      .filter((p) => (counts[p.id] ?? 0) >= 1)
-      .sort((a, b) => {
-        const ca = counts[a.id] ?? 0;
-        const cb = counts[b.id] ?? 0;
-        if (cb !== ca) return cb - ca;
-        return compareProductsByNewest(a, b);
-      })
-      .slice(0, SECTION_LIMIT);
-  }, [products, counts]);
+  const [bestseller, setBestseller] = useState<Product[]>([]);
+
+  const topIds = useMemo(() => {
+    return Object.entries(counts)
+      .filter(([, count]) => count >= 1)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, SECTION_LIMIT)
+      .map(([id]) => id);
+  }, [counts]);
+
+  useEffect(() => {
+    let cancelled = false;
+    if (topIds.length === 0) {
+      setBestseller([]);
+      return;
+    }
+    void fetchProductsByIds(topIds).then((products) => {
+      if (cancelled) return;
+      const order = new Map(topIds.map((id, i) => [id, i]));
+      products.sort(
+        (a, b) => (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99),
+      );
+      setBestseller(products);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [topIds]);
 
   return <CollectionTierBlock tier="bestseller" products={bestseller} />;
 }

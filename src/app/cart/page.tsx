@@ -3,7 +3,7 @@ import { removeFromCart, updateCartQty } from "@/app/cart/actions";
 import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
 import { ProductImage } from "@/components/ProductImage";
 import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import {
   cartSubtotal,
   getCartItems,

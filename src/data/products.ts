@@ -1,4 +1,4 @@
-import type { CategoryId, SubcategoryId } from "@/data/categories";
+import type { SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
 import { cwProducts } from "@/data/cw/cw-products";
 import { ggCatalogProducts } from "@/data/gg/gg-catalog";
@@ -14,232 +14,16 @@ import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 import { gcCatalogProducts } from "@/data/gc/gc-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
 
-export type ProductStorySection = {
-  titleKo: string;
-  bodyKo: string;
-  image?: string;
-  imageAlt?: string;
-  reverse?: boolean;
-  /** Optional embedded video (e.g. Vimeo). */
-  videoUrl?: string;
-  /** Full-bleed / caption-card presentation. */
-  layout?: "default" | "wide" | "caption";
-};
-
-export type ProductVariant = {
-  id: string;
-  name: string;
-  nameKo: string;
-  sku: string;
-  gbpPrice: number;
-  price: number;
-  /** Pre-sale list price (KRW) for this colour/size when on sale. */
-  compareAtPrice?: number;
-  /**
-   * Catalog photo path under `/public/products/`.
-   * Use the shared 4:5 framing standard — see `src/lib/product-image.ts`.
-   */
-  image: string;
-  /** Optional multi-image gallery for this strap/colour option. */
-  images?: string[];
-  /**
-   * Official brand PLP hover/swap photo for this colourway.
-   * When omitted, cards fall back to the first gallery frame ≠ primary.
-   */
-  hoverImage?: string;
-  sourceUrl: string;
-  inStock: boolean;
-  /** Colour group key when a product also has size options (e.g. apparel). */
-  colorKey?: string;
-  colorNameKo?: string;
-  /** Size code when variants are colour × size (e.g. S / M / L). */
-  size?: string;
-  /**
-   * Galvin Green colourway PLP memberships (per colour, not whole style).
-   * Used so Men/Women shop grids match official colourway counts.
-   */
-  ggCollections?: SubcategoryId[];
-  /** Burberry colourway PLP memberships (per colour). */
-  bbCollections?: SubcategoryId[];
-  /** Arc'teryx colourway PLP memberships (per colour). */
-  axCollections?: SubcategoryId[];
-  /** London Undercover colourway PLP memberships (per colour). */
-  luCollections?: SubcategoryId[];
-  /** Paul Smith PLP memberships. */
-  psCollections?: SubcategoryId[];
-  /** Belstaff PLP memberships. */
-  bsCollections?: SubcategoryId[];
-  /** Gucci PLP memberships. */
-  gcCollections?: SubcategoryId[];
-  /** Chanel PLP memberships. */
-  chCollections?: SubcategoryId[];
-};
-
-export type ProductTechSpec = {
-  labelKo: string;
-  valueKo: string;
-};
-
-export type ProductSizeChartTab = {
-  id: string;
-  labelKo: string;
-  headers: string[];
-  rows: string[][];
-};
-
-export type ProductSizeChart = {
-  id: string;
-  titleKo: string;
-  noteKo: string;
-  headers: string[];
-  rows: string[][];
-  /** Optional Tops / Bottoms tabs (Gucci RTW size guide). */
-  tabs?: ProductSizeChartTab[];
-};
-
-export type Product = {
-  id: string;
-  name: string;
-  nameKo: string;
-  brand: string;
-  /** Selling price (KRW). When on sale this is the discounted amount. */
-  price: number;
-  /** Pre-sale / list price (KRW). Shown struck-through when higher than `price`. */
-  compareAtPrice?: number;
-  category: CategoryId;
-  subcategory?: SubcategoryId;
-  /**
-   * Christopher Ward PLP memberships (a SKU can sit in New Releases + Twelve etc.).
-   */
-  cwCollections?: SubcategoryId[];
-  /**
-   * Galvin Green PLP memberships (e.g. New Arrivals + Bestsellers).
-   */
-  ggCollections?: SubcategoryId[];
-  /** Burberry Women PLP memberships across luxury/bags/shoes/accessories. */
-  bbCollections?: SubcategoryId[];
-  /** Arc'teryx footwear PLP memberships (men/women). */
-  axCollections?: SubcategoryId[];
-  /** London Undercover umbrella PLP memberships. */
-  luCollections?: SubcategoryId[];
-  /** Paul Smith PLP memberships. */
-  psCollections?: SubcategoryId[];
-  /** Belstaff PLP memberships. */
-  bsCollections?: SubcategoryId[];
-  /** Gucci PLP memberships. */
-  gcCollections?: SubcategoryId[];
-  /** Chanel Ready-to-Wear PLP memberships. */
-  chCollections?: SubcategoryId[];
-  tags: string[];
-  /** Customer-facing Korean description only */
-  descriptionKo?: string;
-  /**
-   * Primary catalog photo (`/public/products/...`).
-   * Prefer ~1600×2000 (4:5), subject centered — rendered via `ProductImage`
-   * with `object-fit: contain` so all grid/PDP/cart tiles stay uniform.
-   */
-  image: string;
-  images?: string[];
-  /**
-   * Official brand PLP hover/swap photo (model / wrist / Hover.jpg).
-   * When omitted, cards use the first gallery frame that differs from `image`.
-   */
-  hoverImage?: string;
-  accent: string;
-  badge?: string;
-  gbpPrice?: number;
-  /** Original GBP list price when the CW site shows a reduction. */
-  gbpListPrice?: number;
-  sku?: string;
-  sourceUrl?: string;
-  size?: string;
-  variants?: ProductVariant[];
-  /**
-   * Product-level stock when there are no variants.
-   * With variants, availability is derived from `variant.inStock`.
-   */
-  inStock?: boolean;
-  /**
-   * Optional bracelet resize (Christopher Ward).
-   * Selecting any cm size adds `feeKrw`; "no" keeps base price.
-   */
-  braceletResize?: {
-    feeKrw: number;
-    sizesCm: string[];
-  };
-  /** Long-form PDP story blocks (image + Korean copy). */
-  storySections?: ProductStorySection[];
-  /** Tech specs & features (Christopher Ward PDP). */
-  techSpecs?: ProductTechSpec[];
-  featuresKo?: string[];
-  /** Adult Burberry shoe size conversion chart shown next to size picker. */
-  sizeChart?: ProductSizeChart;
-  /**
-   * Catalogue registration time on Briq (ISO). Used by 최신등록순 / homepage rails.
-   * Always set this when first adding a product — newer timestamps rank first.
-   * Rebuilds should preserve the original value so new imports stay on top.
-   */
-  registeredAt?: string;
-  /**
-   * 100 Collection / homepage edit bucket.
-   * Set when registering: "signature" | "bestseller" | "new".
-   * If omitted, inferred from price / badge / recency.
-   */
-  editTier?: "signature" | "bestseller" | "new";
-  /**
-   * Shop PLP colourway expand — when set, the card links to this colour on PDP.
-   */
-  shopColorKey?: string;
-};
-
-/** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
-export function gbpToBriqKrw(gbp: number) {
-  return Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
-}
-
-/** Addon fees (bracelet resize etc.) — no +200,000 base, still 만원 rounding. */
-export function gbpToBriqAddonKrw(gbp: number) {
-  return Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
-}
-
-/** Sale discount percent from compareAt → price, or null if not on sale.
- * When a variant is selected, only that variant's compareAtPrice counts
- * (so non-sale colours don't inherit another colourway's discount).
- */
-export function productSalePercent(
-  product: Product,
-  variant?: ProductVariant | null,
-) {
-  const price = variant?.price ?? product.price;
-  const was = variant
-    ? variant.compareAtPrice
-    : product.compareAtPrice;
-  if (!was || was <= price) return null;
-  return Math.max(1, Math.round((1 - price / was) * 100));
-}
-
-/** True if the product (or any of its variants) can be purchased. */
-export function isProductInStock(product: Product) {
-  // Colourway-expanded shop cards keep only one colour's sizes in `variants`.
-  // Listing sold-out must reflect the whole style — if another colour is
-  // available, do not mark the card Sold Out.
-  if (product.shopColorKey != null && typeof product.inStock === "boolean") {
-    return product.inStock;
-  }
-  if (product.variants && product.variants.length > 0) {
-    return product.variants.some((v) => v.inStock);
-  }
-  return product.inStock !== false;
-}
-
-/** True if a specific variant (or the product itself) is purchasable. */
-export function isVariantInStock(product: Product, variantId?: string | null) {
-  if (product.variants && product.variants.length > 0) {
-    if (!variantId) return false;
-    return product.variants.some((v) => v.id === variantId && v.inStock);
-  }
-  return product.inStock !== false;
-}
+export type * from "@/data/product-types";
+export {
+  formatKrw,
+  gbpToBriqAddonKrw,
+  gbpToBriqKrw,
+  isProductInStock,
+  isVariantInStock,
+  productSalePercent,
+} from "@/data/product-utils";
+import type { Product } from "@/data/product-types";
 
 export const products: Product[] = [
   ...cwProducts,
@@ -259,12 +43,6 @@ export const products: Product[] = [
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
 export function getCollection100() {
   return products;
-}
-
-export function formatKrw(price: number) {
-  return `${new Intl.NumberFormat("ko-KR", {
-    maximumFractionDigits: 0,
-  }).format(price)}원`;
 }
 
 export function getProduct(id: string) {

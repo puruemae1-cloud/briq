@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Gift, ImagePlus, Star, Video } from "lucide-react";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import { useAuthStore } from "@/lib/auth-store";
 import {
   REVIEW_COUPON_MEDIA,

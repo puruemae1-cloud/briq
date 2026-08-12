@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { ProductCardMedia } from "@/components/ProductCardMedia";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
+import type { Product } from "@/data/product-types";
 import {
   formatKrw,
   isProductInStock,
   productSalePercent,
-  type Product,
-} from "@/data/products";
+} from "@/data/product-utils";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(product.price);

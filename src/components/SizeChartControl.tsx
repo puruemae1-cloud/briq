@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useMemo, useState } from "react";
-import type { ProductSizeChart } from "@/data/products";
+import type {  ProductSizeChart  } from "@/data/product-types";
 
 type ChartLike = {
   id: string;

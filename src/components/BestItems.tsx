@@ -1,32 +1,56 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
-import { products } from "@/data/products";
+import type { Product } from "@/data/product-types";
 import { usePurchases } from "@/lib/purchase-store";
 
 const MAX_ITEMS = 10;
 
+async function fetchProductsByIds(ids: string[]): Promise<Product[]> {
+  if (ids.length === 0) return [];
+  const res = await fetch(
+    `/api/products/by-ids?ids=${encodeURIComponent(ids.join(","))}`,
+    { cache: "force-cache" },
+  );
+  if (!res.ok) return [];
+  const data = (await res.json()) as { products?: Product[] };
+  return data.products ?? [];
+}
+
 export function BestItems() {
   const counts = usePurchases((s) => s.counts);
-  const [mounted, setMounted] = useState(false);
+  const [list, setList] = useState<Product[]>([]);
   const trackRef = useRef<HTMLDivElement>(null);
   const pausedUntil = useRef(0);
 
+  const topIds = useMemo(() => {
+    return Object.entries(counts)
+      .filter(([, count]) => count > 0)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, MAX_ITEMS)
+      .map(([id]) => id);
+  }, [counts]);
+
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    let cancelled = false;
+    if (topIds.length === 0) {
+      setList([]);
+      return;
+    }
+    void fetchProductsByIds(topIds).then((products) => {
+      if (cancelled) return;
+      const order = new Map(topIds.map((id, i) => [id, i]));
+      products.sort(
+        (a, b) => (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99),
+      );
+      setList(products);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [topIds]);
 
-  const list = mounted
-    ? products
-        .map((product) => ({ product, count: counts[product.id] ?? 0 }))
-        .filter((entry) => entry.count > 0)
-        .sort((a, b) => b.count - a.count)
-        .map((entry) => entry.product)
-        .slice(0, MAX_ITEMS)
-    : [];
-
-  // Autoplay: desktop (fine pointer) only — mobile is finger-scroll only
   useEffect(() => {
     if (list.length === 0) return;
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -46,7 +70,7 @@ export function BestItems() {
       const next = el.scrollLeft + page;
       el.scrollTo({
         left: next >= max - 4 ? 0 : next,
-        behavior: "smooth",
+        behavior: "auto",
       });
     }, 4500);
 
@@ -57,7 +81,7 @@ export function BestItems() {
     pausedUntil.current = Date.now() + 10000;
   };
 
-  if (!mounted || list.length === 0) {
+  if (list.length === 0) {
     return null;
   }
 

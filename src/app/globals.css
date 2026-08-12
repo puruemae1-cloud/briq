@@ -38,19 +38,13 @@
 }
 
 html {
-  /* Never use smooth scrolling on touch — it stutters on direction changes */
+  /* Instant page / hash scroll — smooth scrolling feels laggy on dense pages */
   scroll-behavior: auto;
   max-width: 100%;
   width: 100%;
   -webkit-text-size-adjust: 100%;
   overscroll-behavior-x: none;
   overflow-x: clip;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  html {
-    scroll-behavior: smooth;
-  }
 }
 
 body {
@@ -76,6 +70,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.route-loading {
+  min-height: 28vh;
 }
 
 img {

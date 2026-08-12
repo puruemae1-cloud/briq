@@ -20,7 +20,7 @@
  * `ProductImage` / `.product-frame` so future updates stay uniform.
  */
 
-import type { Product, ProductVariant } from "@/data/products";
+import type {  Product, ProductVariant  } from "@/data/product-types";
 
 export const PRODUCT_IMAGE = {
   /** Canonical display ratio for cards, PDP, cart thumbs */

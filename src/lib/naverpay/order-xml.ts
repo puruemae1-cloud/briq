@@ -1,5 +1,6 @@
 import { createHash } from "crypto";
-import { getProduct, products, type Product, type ProductVariant } from "@/data/products";
+import type { Product, ProductVariant } from "@/data/product-types";
+import { getProduct, products } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
 import {
   getNaverPaySiteOrigin,

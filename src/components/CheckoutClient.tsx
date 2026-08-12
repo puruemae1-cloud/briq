@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { clearCart } from "@/app/cart/actions";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import type { CartItem } from "@/lib/cart-server";
 import { cartUnitPrice } from "@/lib/cart-price";
 import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";

@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   turbopack: {},
   // Hide the "N" dev tools badge (dev server only; production never shows it)
   devIndicators: false,
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
   async rewrites() {
     // Only proxy when the local file is missing (Vercel slim build). Locally,
     // files in public/products are served directly and this rewrite is unused.

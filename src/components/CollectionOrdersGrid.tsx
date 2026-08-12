@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import { usePurchases } from "@/lib/purchase-store";
 
 /** Re-ranks by live purchase counts once client store hydrates. */

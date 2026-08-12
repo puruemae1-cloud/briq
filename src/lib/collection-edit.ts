@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import {
   compareProductsByNewest,
   sortProducts,

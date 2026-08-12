@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
 import { NaverWcsScript } from "@/components/NaverWcsScript";
+import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCartCount } from "@/lib/cart-server";
@@ -10,18 +11,21 @@ const display = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 const classic = Nanum_Myeongjo({
   variable: "--font-classic",
   subsets: ["latin"],
   weight: ["400", "700", "800"],
+  display: "swap",
 });
 
 const body = Outfit({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -63,17 +67,10 @@ export default async function RootLayout({
 
   return (
     <html lang="ko">
-      <head>
-        <link
-          rel="stylesheet"
-          as="style"
-          crossOrigin="anonymous"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-        />
-      </head>
       <body
         className={`${display.variable} ${classic.variable} ${body.variable} antialiased`}
       >
+        <PretendardStylesheet />
         <div id="top" className="shell">
           <SiteHeader cartCount={cartCount} />
           <main className="shell__main">{children}</main>

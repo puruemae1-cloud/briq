@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import { cwCatalogProducts } from "@/data/cw/cw-catalog";
 import {
   CW_BRACELET_RESIZE_FEE,

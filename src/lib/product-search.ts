@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import { categoryLabel, subcategoryLabel } from "@/data/categories";
 
 /** Common KR/EN aliases so casual keywords still hit products. */

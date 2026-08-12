@@ -1,9 +1,6 @@
-import {
-  getProduct,
-  isVariantInStock,
-  type Product,
-  type ProductVariant,
-} from "@/data/products";
+import type { Product, ProductVariant } from "@/data/product-types";
+import { getProduct } from "@/data/products";
+import { isVariantInStock } from "@/data/product-utils";
 import {
   getNaverPayReturnInfo,
   NAVERPAY_SHIPPING_DEFAULTS,

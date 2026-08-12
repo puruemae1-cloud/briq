@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 
 export type ProductSort = "new" | "orders" | "price-asc" | "price-desc";
 

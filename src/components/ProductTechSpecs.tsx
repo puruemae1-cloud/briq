@@ -1,4 +1,4 @@
-import type { ProductTechSpec } from "@/data/products";
+import type {  ProductTechSpec  } from "@/data/product-types";
 
 export function ProductTechSpecs({
   specs,

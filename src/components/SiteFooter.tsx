@@ -44,6 +44,16 @@ export function SiteFooter() {
       <div className="site-footer__biz">
         <div className="site-footer__biz-lines" aria-label="사업자 정보">
           <p>
+            <span>UK Company: HJ STORY LIMITED</span>
+          </p>
+          <p>
+            <span>
+              Vox Studios, 1-45 Durham Street, Vauxhall,
+              <br />
+              United Kingdom, SE11 5JH
+            </span>
+          </p>
+          <p>
             <span>상호명: (주)리치몬드인터내셔널</span>
             <span className="site-footer__biz-sep" aria-hidden>
               |
@@ -79,16 +89,6 @@ export function SiteFooter() {
               |
             </span>
             <span>개인정보책임자: 홍화연</span>
-          </p>
-          <p>
-            <span>UK Company: HJ STORY LIMITED</span>
-          </p>
-          <p>
-            <span>
-              Vox Studios, 1-45 Durham Street, Vauxhall,
-              <br />
-              United Kingdom, SE11 5JH
-            </span>
           </p>
         </div>
 

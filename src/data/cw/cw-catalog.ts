@@ -1,5 +1,5 @@
 /** Auto-generated CW catalogue — names KO, 만원 prices, PDP stories/variants. */
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import { CW_BRACELET_RESIZE_FEE, CW_BRACELET_SIZES_CM } from "@/data/cw-twelve-picnmix";
 
 export const cwCatalogProducts: Product[] = [

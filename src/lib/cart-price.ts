@@ -1,4 +1,4 @@
-import type { Product, ProductVariant } from "@/data/products";
+import type {  Product, ProductVariant  } from "@/data/product-types";
 import { braceletResizeFee } from "@/data/cw-twelve-picnmix";
 
 export function cartUnitPrice(

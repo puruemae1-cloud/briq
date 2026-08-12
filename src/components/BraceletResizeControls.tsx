@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import { CW_BRACELET_RESIZE_FEE } from "@/data/cw-twelve-picnmix";
 
 type BraceletResizeConfig = {

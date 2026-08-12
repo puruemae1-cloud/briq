@@ -43,7 +43,7 @@ export function Collection100() {
 
       <div className="section collection-100__body">
         <CollectionTierBlock tier="signature" products={curated.signature} />
-        <CollectionBestsellerTier products={catalogue} />
+        <CollectionBestsellerTier />
         <CollectionTierBlock tier="new" products={curated.newItems} />
 
         <div className="collection-100__sentinel">

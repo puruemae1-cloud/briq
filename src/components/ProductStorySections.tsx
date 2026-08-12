@@ -1,5 +1,5 @@
 import { ProductImage } from "@/components/ProductImage";
-import type { ProductStorySection } from "@/data/products";
+import type {  ProductStorySection  } from "@/data/product-types";
 
 function vimeoEmbed(url: string) {
   // Accept full player URL or bare video id path

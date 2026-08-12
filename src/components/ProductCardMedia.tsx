@@ -8,7 +8,7 @@ import {
   type MouseEvent,
   type ReactNode,
 } from "react";
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 import { resolveCardGallery } from "@/lib/product-image";
 
 type ProductCardMediaProps = {

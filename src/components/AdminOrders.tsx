@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
-import { formatKrw } from "@/data/products";
+import { formatKrw } from "@/data/product-utils";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 import {
   INCLUDED_SHIPPING_NOTE,

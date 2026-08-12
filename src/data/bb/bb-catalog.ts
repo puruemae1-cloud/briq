@@ -1,5 +1,5 @@
 /** Auto-generated Burberry catalogue — do not edit by hand. */
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 
 export const bbCatalogProducts = [
   {

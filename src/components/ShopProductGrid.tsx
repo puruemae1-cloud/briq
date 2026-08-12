@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
-import type { Product } from "@/data/products";
+import type {  Product  } from "@/data/product-types";
 
 const DEFAULT_PAGE_SIZE = 24;
 

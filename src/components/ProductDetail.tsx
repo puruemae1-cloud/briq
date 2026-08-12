@@ -13,13 +13,13 @@ import { ProductTechSpecs } from "@/components/ProductTechSpecs";
 import { SizeChartControl } from "@/components/SizeChartControl";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
-import type { Product, ProductVariant } from "@/data/products";
+import type { Product, ProductVariant } from "@/data/product-types";
 import {
   formatKrw,
   isProductInStock,
   isVariantInStock,
   productSalePercent,
-} from "@/data/products";
+} from "@/data/product-utils";
 import { cartUnitPrice } from "@/lib/cart-price";
 import { resolveProductImage } from "@/lib/product-image";
 import { compareAxSizes, isArcteryxProduct } from "@/lib/ax-size-order";
