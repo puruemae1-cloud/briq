@@ -159,43 +159,58 @@ def is_other_acc_sku(sku: str) -> bool:
     return bool(re.fullmatch(r"A[A-Z0-9]+", s))
 
 
+def cn_mirror_url(url: str) -> str:
+    """chanel.com fashion PDPs are often Akamai-blocked; cn CDN mirrors still serve them."""
+    return (url or "").replace("://www.chanel.com/", "://www.chanel.cn/", 1)
+
+
 def fetch_page(client: ChanelClient, url: str, referer: str = HUB) -> tuple[int, str]:
-    """Fetch PLP HTML. Direct first; proxy only if a validated tunnel is already set."""
+    """Fetch PLP/PDP HTML. Direct first; proxy if set; chanel.cn mirror as last resort."""
     headers = {**_rtw.HTML_HEADERS, "Referer": referer}
     last_status, last_text = 0, ""
-    for attempt in range(1, 4):
-        try:
-            with _rtw._session_lock:
-                r = client.session.get(
-                    url,
-                    impersonate=client.impersonate,
-                    timeout=90,
-                    headers=headers,
-                    proxies=client.proxies,
-                )
-                client._req_count += 1
-                last_status, last_text = r.status_code, r.text
-        except Exception as e:
-            log(f"  GET error {url}: {e}")
-            time.sleep(1.0 * attempt)
-            if client._proxy:
-                client.rotate_proxy()
-            else:
-                client.ensure_proxy()
-            continue
-        if last_status == 404:
+    candidates = [url]
+    if "www.chanel.com" in url:
+        candidates.append(cn_mirror_url(url))
+    for cand in candidates:
+        for attempt in range(1, 4):
+            try:
+                with _rtw._session_lock:
+                    r = client.session.get(
+                        cand,
+                        impersonate=client.impersonate,
+                        timeout=90,
+                        headers=headers,
+                        proxies=client.proxies,
+                    )
+                    client._req_count += 1
+                    last_status, last_text = r.status_code, r.text
+            except Exception as e:
+                log(f"  GET error {cand}: {e}")
+                time.sleep(1.0 * attempt)
+                if client._proxy:
+                    client.rotate_proxy()
+                else:
+                    client.ensure_proxy()
+                continue
+            if last_status == 404:
+                break
+            if "__NEXT_DATA__" in last_text and len(last_text) > 20000:
+                return last_status, last_text
+            # chanel.cn often serves full PDP HTML without __NEXT_DATA__ but with ld+json.
+            if last_status == 200 and len(last_text) > 20000 and (
+                "/gb/fashion/p/" in last_text
+                or "application/ld+json" in last_text
+            ):
+                return last_status, last_text
+            log(
+                f"  soft-block {last_status} on {cand} "
+                f"(attempt {attempt}, len={len(last_text)})"
+            )
+            time.sleep(1.5)
+            client.soft_refresh()
+            client.warm()
+        if cand != url and last_status == 200 and len(last_text) > 20000:
             return last_status, last_text
-        if "__NEXT_DATA__" in last_text and len(last_text) > 20000:
-            return last_status, last_text
-        if last_status == 200 and "/gb/fashion/p/" in last_text:
-            return last_status, last_text
-        log(
-            f"  soft-block {last_status} on {url} "
-            f"(attempt {attempt}, len={len(last_text)})"
-        )
-        time.sleep(1.5)
-        client.soft_refresh()
-        client.warm()
     return last_status, last_text
 
 
@@ -348,14 +363,178 @@ def resolve_other_acc_leaves(
     return primary, forced
 
 
+def parse_ldjson_product(html: str) -> dict | None:
+    for m in re.finditer(
+        r'<script type="application/ld\+json">(.*?)</script>', html, flags=re.S
+    ):
+        try:
+            data = json.loads(m.group(1))
+        except Exception:
+            continue
+        if isinstance(data, dict) and data.get("@type") == "Product":
+            return data
+    return None
+
+
+def parse_other_acc_pdp_from_ldjson(
+    html: str, url: str, forced_leaves: set[str]
+) -> dict | None:
+    """Fallback when Akamai strips __NEXT_DATA__ but chanel.cn still serves ld+json."""
+    ld = parse_ldjson_product(html)
+    if not ld:
+        return None
+    sku = str(ld.get("sku") or "").strip()
+    if not sku:
+        m = re.search(r"/fashion/p/([A-Z][A-Z0-9]+)/", url, flags=re.I)
+        sku = m.group(1) if m else ""
+    if not sku or not is_other_acc_sku(sku):
+        return {
+            "_skip": True,
+            "reason": f"not-other-acc-sku:{sku}",
+            "sku": sku,
+            "url": url,
+        }
+
+    offers = ld.get("offers") if isinstance(ld.get("offers"), dict) else {}
+    gbp = None
+    if str(offers.get("priceCurrency") or "").upper() == "GBP":
+        gbp = parse_gbp(offers.get("price"))
+    if gbp is None or gbp <= 0:
+        # Prefer explicit GBP near the PDP; ignore suggestion carousels when possible.
+        pounds = [parse_gbp(x) for x in re.findall(r"£\s*([\d,]+(?:\.\d+)?)", html)]
+        pounds = [p for p in pounds if p and p > 0]
+        if pounds:
+            # Product price is usually the first/most frequent small set member.
+            from collections import Counter
+
+            common = Counter(pounds).most_common(1)[0][0]
+            gbp = float(common)
+    if gbp is None or gbp <= 0:
+        # EUR list price → GBP via observed Chanel GB/EU ratio (~460/530).
+        euros = [
+            parse_gbp(x.replace(" ", ""))
+            for x in re.findall(r"([\d\s]+(?:[.,]\d+)?)\s*€", html)
+        ]
+        euros = [e for e in euros if e and e > 0]
+        if euros:
+            gbp = round(float(euros[0]) * (460.0 / 530.0))
+    if gbp is None or gbp <= 0:
+        return {
+            "_skip": True,
+            "sku": sku,
+            "reason": f"bad price ld+json offers={offers!r}",
+            "url": url,
+        }
+
+    slug = url.rstrip("/").split("/")[-1]
+    primary, leaves = resolve_other_acc_leaves(
+        {
+            "categoryLabel": "",
+            "hierarchy": [],
+            "url": url,
+        },
+        forced_leaves | leaves_from_slug(slug),
+        url,
+    )
+    if not primary:
+        return {
+            "_skip": True,
+            "sku": sku,
+            "reason": "unmapped leaf (ld+json)",
+            "url": url,
+        }
+
+    img = ld.get("image")
+    raw_imgs: list[str] = []
+    if isinstance(img, list):
+        raw_imgs = [str(x) for x in img if x]
+    elif isinstance(img, str) and img:
+        raw_imgs = [img]
+    for mid in re.findall(r"(\d{12,})\.jpe?g", html, flags=re.I):
+        raw_imgs.append(f"https://www.chanel.com/images/f_auto/-{mid}.jpg")
+    images: list[str] = []
+    seen: set[str] = set()
+    for u in raw_imgs:
+        nu = normalize_img_url(u.replace("www.chanel.cn", "www.chanel.com"))
+        if not nu or nu in seen or "puls-img" in nu:
+            continue
+        seen.add(nu)
+        images.append(nu)
+
+    material = str(ld.get("material") or "")
+    color = str(ld.get("color") or "")
+    title = str(ld.get("name") or "")
+
+    sizes: list[dict]
+    if primary == "ch-women-belts":
+        sizes = [
+            {
+                "id": f"{sku}{cm}",
+                "size": str(cm),
+                "orliSize": str(cm),
+                "sku": f"{sku}{cm}",
+                "inStock": True,
+                "sellableOnline": True,
+            }
+            for cm in (65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120)
+        ]
+    else:
+        sizes = [
+            {
+                "id": sku,
+                "size": "UNI",
+                "orliSize": "UNI",
+                "sku": sku,
+                "inStock": True,
+                "sellableOnline": True,
+            }
+        ]
+
+    cols = sorted(set([*PARENT_COLS, *leaves]))
+    return {
+        "id": sku,
+        "productCode": sku,
+        "sku": sku,
+        "title": title,
+        "priceLabel": f"£{gbp:,.0f}",
+        "gbpPrice": float(gbp),
+        "categoryLabel": primary,
+        "collection": None,
+        "collectionCode": None,
+        "url": url,
+        "hierarchy": [],
+        "details": {
+            "color": color or None,
+            "description": None,
+            "fabrics": material or None,
+            "reference": sku,
+            "dimensions": None,
+        },
+        "images": images[:12],
+        "imageMeta": [
+            {"typology": "PACKSHOT_DEFAULT", "source": u, "id": None}
+            for u in images[:12]
+        ],
+        "sizes": sizes,
+        "inStock": True,
+        "availabilityStatus": "IN_STOCK",
+        "leaf": primary,
+        "leaves": sorted(leaves),
+        "collections": cols,
+        "kind": "other-acc",
+        "new": False,
+        "_via": "ld+json",
+    }
+
+
 def parse_other_acc_pdp(html: str, url: str, forced_leaves: set[str]) -> dict | None:
     nd = extract_next_data(html)
     if not nd:
-        return None
+        return parse_other_acc_pdp_from_ldjson(html, url, forced_leaves)
     data = (nd.get("props") or {}).get("pageProps", {}).get("data") or {}
     prod = data.get("product")
     if not isinstance(prod, dict):
-        return None
+        return parse_other_acc_pdp_from_ldjson(html, url, forced_leaves)
 
     sku = str(prod.get("sku") or prod.get("id") or "").strip()
     if not sku or not is_other_acc_sku(sku):

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-13T13:19:46.371581+00:00",
+  "scrapedAt": "2026-08-13T23:32:42+00:00",
   "hub": "https://www.chanel.com/gb/fashion/other-accessories/c/1x1x4/",
   "note": "Chanel GB other accessories by official PLP leaves (Headwear / Belts / Scarves / Camellias / Winter / Summer).",
   "leaves": [
@@ -41,34 +41,15 @@
     }
   ],
   "leafCounts": {
-    "ch-women-belts": 13,
-    "ch-women-summer-accessories": 3,
+    "ch-women-belts": 14,
+    "ch-women-summer-accessories": 5,
     "ch-women-headwear": 18,
     "ch-women-scarves": 28,
     "ch-women-winter-accessories": 6,
     "ch-women-camellias": 10
   },
   "skipped": [],
-  "failed": [
-    {
-      "sku": "AAC240B25570UC505",
-      "url": "https://www.chanel.com/gb/fashion/p/AAC240B25570UC505/portable-cup-porcelain-calfskin-metal-silicone/",
-      "status": 200,
-      "reason": "akamai"
-    },
-    {
-      "sku": "AAC356B26074UD738",
-      "url": "https://www.chanel.com/gb/fashion/p/AAC356B26074UD738/ponytail-holder-lambskin-metal/",
-      "status": 200,
-      "reason": "akamai"
-    },
-    {
-      "sku": "AAC406B26260UE177",
-      "url": "https://www.chanel.com/gb/fashion/p/AAC406B26260UE177/leather-belt-suede-calfskin-metal/",
-      "status": 200,
-      "reason": "akamai"
-    }
-  ],
+  "failed": [],
   "products": [
     {
       "id": "A73462Y10673U0969",
@@ -7208,6 +7189,64 @@
       "localHover": "/products/ch-pdp/aac239b25397uc446/2.jpg"
     },
     {
+      "sku": "AAC240B25570UC505",
+      "id": "AAC240B25570UC505",
+      "productCode": "AAC240B25570UC505",
+      "title": "Portable Cup",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC240B25570UC505/portable-cup-porcelain-calfskin-metal-silicone/",
+      "gbpPrice": 1390.0,
+      "priceLabel": "£1,390",
+      "kind": "other-acc",
+      "leaf": "ch-women-summer-accessories",
+      "leaves": [
+        "ch-women-summer-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "categoryLabel": "Summer Accessories",
+      "collection": null,
+      "collectionCode": null,
+      "hierarchy": [],
+      "details": {
+        "color": "White, Black & Gold",
+        "description": "Porcelain, Calfskin, Metal & Silicone, White, Black & Gold",
+        "fabrics": "Porcelain, Calfskin, Metal & Silicone",
+        "reference": "AAC240-B25570-UC505",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/f_auto/-9583024832542.jpg"
+      ],
+      "imageMeta": [
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9583024832542.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        }
+      ],
+      "localImages": [
+        "/products/ch-pdp/aac240b25570uc505/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac240b25570uc505/1.jpg",
+      "localHover": null,
+      "sizes": [
+        {
+          "id": "AAC240B25570UC505",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC240B25570UC505",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "new": false
+    },
+    {
       "id": "AAC241B25571UC517",
       "productCode": "AAC241B25571UC517",
       "sku": "AAC241B25571UC517",
@@ -7754,6 +7793,106 @@
       ],
       "localImage": "/products/ch-pdp/aac335b25975ud551/1.jpg",
       "localHover": "/products/ch-pdp/aac335b25975ud551/2.jpg"
+    },
+    {
+      "sku": "AAC356B26074UD738",
+      "id": "AAC356B26074UD738",
+      "productCode": "AAC356B26074UD738",
+      "title": "Ponytail holder",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC356B26074UD738/ponytail-holder-lambskin-metal/",
+      "gbpPrice": 390.0,
+      "priceLabel": "£390",
+      "kind": "other-acc",
+      "leaf": "ch-women-summer-accessories",
+      "leaves": [
+        "ch-women-summer-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "categoryLabel": "Summer Accessories",
+      "collection": null,
+      "collectionCode": null,
+      "hierarchy": [],
+      "details": {
+        "color": "Black, White & Gold",
+        "description": "Lambskin & Metal, Black, White & Gold",
+        "fabrics": "Lambskin & Metal",
+        "reference": "AAC356-B26074-UD738",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/f_auto/-9593522880542.jpg",
+        "https://www.chanel.com/images/f_auto/-9593522847774.jpg",
+        "https://www.chanel.com/images/f_auto/-9593602834462.jpg",
+        "https://www.chanel.com/images/f_auto/-9595849146398.jpg",
+        "https://www.chanel.com/images/f_auto/-9593482346526.jpg",
+        "https://www.chanel.com/images/f_auto/-9595037155358.jpg",
+        "https://www.chanel.com/images/f_auto/-9593726238750.jpg",
+        "https://www.chanel.com/images/f_auto/-9593725648926.jpg"
+      ],
+      "imageMeta": [
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593522880542.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593522847774.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593602834462.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9595849146398.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593482346526.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9595037155358.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593726238750.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593725648926.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        }
+      ],
+      "localImages": [
+        "/products/ch-pdp/aac356b26074ud738/1.jpg",
+        "/products/ch-pdp/aac356b26074ud738/2.jpg",
+        "/products/ch-pdp/aac356b26074ud738/3.jpg",
+        "/products/ch-pdp/aac356b26074ud738/4.jpg",
+        "/products/ch-pdp/aac356b26074ud738/5.jpg",
+        "/products/ch-pdp/aac356b26074ud738/6.jpg",
+        "/products/ch-pdp/aac356b26074ud738/7.jpg",
+        "/products/ch-pdp/aac356b26074ud738/8.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac356b26074ud738/1.jpg",
+      "localHover": "/products/ch-pdp/aac356b26074ud738/2.jpg",
+      "sizes": [
+        {
+          "id": "AAC356B26074UD738",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC356B26074UD738",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "new": false
     },
     {
       "id": "AAC360B26080UD917",
@@ -8868,6 +9007,194 @@
       ],
       "localImage": "/products/ch-pdp/aac406b26259ue176/1.jpg",
       "localHover": "/products/ch-pdp/aac406b26259ue176/2.jpg"
+    },
+    {
+      "sku": "AAC406B26260UE177",
+      "id": "AAC406B26260UE177",
+      "productCode": "AAC406B26260UE177",
+      "title": "Leather belt",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC406B26260UE177/leather-belt-suede-calfskin-metal/",
+      "gbpPrice": 860.0,
+      "priceLabel": "£860",
+      "kind": "other-acc",
+      "leaf": "ch-women-belts",
+      "leaves": [
+        "ch-women-belts"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-belts",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "categoryLabel": "Belts",
+      "collection": null,
+      "collectionCode": null,
+      "hierarchy": [],
+      "details": {
+        "color": "Dark Beige & Gold",
+        "description": "Suede Calfskin & Metal, Dark Beige & Gold",
+        "fabrics": "Suede Calfskin & Metal",
+        "reference": "AAC406-B26260-UE177",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/f_auto/-9595104428062.jpg",
+        "https://www.chanel.com/images/f_auto/-9593523568670.jpg",
+        "https://www.chanel.com/images/f_auto/-9594233126942.jpg",
+        "https://www.chanel.com/images/f_auto/-9597054517278.jpg",
+        "https://www.chanel.com/images/f_auto/-9592223006750.jpg",
+        "https://www.chanel.com/images/f_auto/-9597054615582.jpg",
+        "https://www.chanel.com/images/f_auto/-9593120522270.jpg",
+        "https://www.chanel.com/images/f_auto/-9591879729182.jpg"
+      ],
+      "imageMeta": [
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9595104428062.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593523568670.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9594233126942.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9597054517278.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9592223006750.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9597054615582.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9593120522270.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        },
+        {
+          "source": "https://www.chanel.com/images/f_auto/-9591879729182.jpg",
+          "typology": "PACKSHOT_DEFAULT"
+        }
+      ],
+      "localImages": [
+        "/products/ch-pdp/aac406b26260ue177/1.jpg",
+        "/products/ch-pdp/aac406b26260ue177/2.jpg",
+        "/products/ch-pdp/aac406b26260ue177/3.jpg",
+        "/products/ch-pdp/aac406b26260ue177/4.jpg",
+        "/products/ch-pdp/aac406b26260ue177/5.jpg",
+        "/products/ch-pdp/aac406b26260ue177/6.jpg",
+        "/products/ch-pdp/aac406b26260ue177/7.jpg",
+        "/products/ch-pdp/aac406b26260ue177/8.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac406b26260ue177/1.jpg",
+      "localHover": "/products/ch-pdp/aac406b26260ue177/2.jpg",
+      "sizes": [
+        {
+          "id": "AAC406B26260UE17765",
+          "size": "65",
+          "orliSize": "65",
+          "sku": "AAC406B26260UE17765",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17770",
+          "size": "70",
+          "orliSize": "70",
+          "sku": "AAC406B26260UE17770",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17775",
+          "size": "75",
+          "orliSize": "75",
+          "sku": "AAC406B26260UE17775",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17780",
+          "size": "80",
+          "orliSize": "80",
+          "sku": "AAC406B26260UE17780",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17785",
+          "size": "85",
+          "orliSize": "85",
+          "sku": "AAC406B26260UE17785",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17790",
+          "size": "90",
+          "orliSize": "90",
+          "sku": "AAC406B26260UE17790",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE17795",
+          "size": "95",
+          "orliSize": "95",
+          "sku": "AAC406B26260UE17795",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE177100",
+          "size": "100",
+          "orliSize": "100",
+          "sku": "AAC406B26260UE177100",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE177105",
+          "size": "105",
+          "orliSize": "105",
+          "sku": "AAC406B26260UE177105",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE177110",
+          "size": "110",
+          "orliSize": "110",
+          "sku": "AAC406B26260UE177110",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE177115",
+          "size": "115",
+          "orliSize": "115",
+          "sku": "AAC406B26260UE177115",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC406B26260UE177120",
+          "size": "120",
+          "orliSize": "120",
+          "sku": "AAC406B26260UE177120",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "new": false
     },
     {
       "id": "AAC406B26263UE175",
