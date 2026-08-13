@@ -615,7 +615,14 @@ export type SubcategoryId =
   | "ch-women-brooches"
   | "ch-women-rings"
   | "ch-sunglasses"
-  | "ch-women-sunglasses";
+  | "ch-women-sunglasses"
+  | "ch-other-accessories"
+  | "ch-women-headwear"
+  | "ch-women-belts"
+  | "ch-women-scarves"
+  | "ch-women-camellias"
+  | "ch-women-winter-accessories"
+  | "ch-women-summer-accessories";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -673,6 +680,16 @@ export const CH_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
 
 /** Chanel sunglasses (official GB See All Sunglasses PLP). */
 export const CH_SUNGLASSES_LEAF_IDS: SubcategoryId[] = ["ch-women-sunglasses"];
+
+/** Chanel other accessories leaves (official GB other-accessories PLPs). */
+export const CH_OTHER_ACC_LEAF_IDS: SubcategoryId[] = [
+  "ch-women-headwear",
+  "ch-women-belts",
+  "ch-women-scarves",
+  "ch-women-camellias",
+  "ch-women-winter-accessories",
+  "ch-women-summer-accessories",
+];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -1591,6 +1608,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...CH_SLG_LEAF_IDS,
     "ch-sunglasses",
     ...CH_SUNGLASSES_LEAF_IDS,
+    "ch-other-accessories",
+    ...CH_OTHER_ACC_LEAF_IDS,
   ],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-women-earrings": ["ch-women-earrings"],
@@ -1607,6 +1626,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-women-leather-accessories": ["ch-women-leather-accessories"],
   "ch-sunglasses": ["ch-sunglasses", ...CH_SUNGLASSES_LEAF_IDS],
   "ch-women-sunglasses": ["ch-women-sunglasses"],
+  "ch-other-accessories": ["ch-other-accessories", ...CH_OTHER_ACC_LEAF_IDS],
+  "ch-women-headwear": ["ch-women-headwear"],
+  "ch-women-belts": ["ch-women-belts"],
+  "ch-women-scarves": ["ch-women-scarves"],
+  "ch-women-camellias": ["ch-women-camellias"],
+  "ch-women-winter-accessories": ["ch-women-winter-accessories"],
+  "ch-women-summer-accessories": ["ch-women-summer-accessories"],
   "gc-mens-handbags": ["gc-mens-handbags", ...GC_MENS_HANDBAG_LEAF_IDS],
   "gc-men-crossbody-messengers": ["gc-men-crossbody-messengers"],
   "gc-men-backpacks": ["gc-men-backpacks"],
@@ -3899,6 +3925,48 @@ export const navCategories: NavCategory[] = [
             id: "ch-women-sunglasses",
             labelKo: "선글라스",
             href: "/shop?category=accessories&sub=ch-women-sunglasses",
+            navLeaf: true,
+          },
+          {
+            id: "ch-other-accessories",
+            labelKo: "기타 악세서리 전체",
+            href: "/shop?category=accessories&sub=ch-other-accessories",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-headwear",
+            labelKo: "헤드웨어",
+            href: "/shop?category=accessories&sub=ch-women-headwear",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-belts",
+            labelKo: "벨트",
+            href: "/shop?category=accessories&sub=ch-women-belts",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-scarves",
+            labelKo: "스카프",
+            href: "/shop?category=accessories&sub=ch-women-scarves",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-camellias",
+            labelKo: "카멜리아",
+            href: "/shop?category=accessories&sub=ch-women-camellias",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-winter-accessories",
+            labelKo: "윈터 악세서리",
+            href: "/shop?category=accessories&sub=ch-women-winter-accessories",
+            navLeaf: true,
+          },
+          {
+            id: "ch-women-summer-accessories",
+            labelKo: "서머 악세서리",
+            href: "/shop?category=accessories&sub=ch-women-summer-accessories",
             navLeaf: true,
           },
         ],

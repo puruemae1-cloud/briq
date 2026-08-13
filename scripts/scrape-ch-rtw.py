@@ -365,21 +365,29 @@ class ChanelClient:
         self.pick_working_proxy()
 
     def pick_working_proxy(self, validate: bool = True) -> None:
-        while self._proxy_idx < len(self._proxy_pool):
-            cand = self._proxy_pool[self._proxy_idx]
-            self._proxy_idx += 1
-            if cand in self._dead_proxies:
-                continue
-            self._proxy = cand
-            log(f"try proxy {cand}")
-            if not validate or self.validate_proxy():
-                return
-            self._dead_proxies.add(cand)
-        # refresh pool once
+        def _try_pool() -> bool:
+            while self._proxy_idx < len(self._proxy_pool):
+                cand = self._proxy_pool[self._proxy_idx]
+                self._proxy_idx += 1
+                if cand in self._dead_proxies:
+                    continue
+                self._proxy = cand
+                log(f"try proxy {cand}")
+                if not validate or self.validate_proxy():
+                    return True
+                self._dead_proxies.add(cand)
+                self.session = cffi_requests.Session()
+            return False
+
+        if _try_pool():
+            return
         log("refreshing proxy pool…")
         self._proxy_pool = fetch_proxy_candidates(80)
         self._proxy_idx = 0
-        self._proxy = self._proxy_pool[0] if self._proxy_pool else None
+        if _try_pool():
+            return
+        self._proxy = None
+        log("WARN: no working proxy in pool")
 
     def validate_proxy(self) -> bool:
         if not self._proxy:
