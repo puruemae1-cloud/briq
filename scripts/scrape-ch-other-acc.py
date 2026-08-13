@@ -160,12 +160,10 @@ def is_other_acc_sku(sku: str) -> bool:
 
 
 def fetch_page(client: ChanelClient, url: str, referer: str = HUB) -> tuple[int, str]:
-    """Fetch PLP HTML via the validated PDP proxy (direct is Akamai-blocked)."""
+    """Fetch PLP HTML. Direct first; proxy only if a validated tunnel is already set."""
     headers = {**_rtw.HTML_HEADERS, "Referer": referer}
     last_status, last_text = 0, ""
     for attempt in range(1, 4):
-        if not client._proxy:
-            client.ensure_proxy()
         try:
             with _rtw._session_lock:
                 r = client.session.get(
@@ -196,10 +194,7 @@ def fetch_page(client: ChanelClient, url: str, referer: str = HUB) -> tuple[int,
             f"(attempt {attempt}, len={len(last_text)})"
         )
         time.sleep(1.5)
-        if client._proxy:
-            client.rotate_proxy()
-        else:
-            client.ensure_proxy()
+        client.soft_refresh()
         client.warm()
     return last_status, last_text
 
@@ -258,7 +253,19 @@ def leaves_from_slug(slug: str) -> set[str]:
 
 def discover_sitemap_other_acc(client: ChanelClient) -> tuple[dict[str, str], dict[str, set[str]]]:
     """SKU → PDP URL and slug-inferred leaves (PLPs are often Akamai-blocked)."""
-    status, text = client.get_html(SITEMAP, max_attempts=2)
+    # Separate session so sitemap cookies do not clobber a working PDP proxy.
+    try:
+        import curl_cffi.requests as _req
+
+        r = _req.Session().get(
+            SITEMAP,
+            impersonate="safari17_2_ios",
+            timeout=60,
+            headers=_rtw.HTML_HEADERS,
+        )
+        status, text = r.status_code, r.text
+    except Exception:
+        status, text = 0, ""
     if status != 200 or len(text) < 1000:
         try:
             r = client.session.get(
@@ -266,6 +273,7 @@ def discover_sitemap_other_acc(client: ChanelClient) -> tuple[dict[str, str], di
                 impersonate=client.impersonate,
                 timeout=90,
                 headers=_rtw.HTML_HEADERS,
+                proxies=client.proxies,
             )
             status, text = r.status_code, r.text
         except Exception:
@@ -496,24 +504,7 @@ def main() -> int:
     _rtw.HUB = HUB
     # Keep RTW probe SKU — connectivity check only; guessed other-acc slugs 404.
 
-    _rtw.SEED_PROXIES = []
-
-    _orig_probe = _rtw.ChanelClient.probe_direct
-    _skip_once = {"v": True}
-
-    def _probe(self) -> bool:
-        if _skip_once["v"]:
-            _skip_once["v"] = False
-            log("defer proxy hunt until first PDP (sitemap is reachable direct)")
-            return True
-        return _orig_probe(self)
-
-    def _no_proxy(self) -> None:
-        log("skip public-proxy hunt (Chanel PDPs reject the pool)")
-
-    _rtw.ChanelClient.probe_direct = _probe
-    _rtw.ChanelClient.ensure_proxy = _no_proxy
-    _rtw.ChanelClient.rotate_proxy = lambda self, mark_dead=True: self.clear_proxy()
+    _rtw.SEED_PROXIES = ["212.58.132.5:8888"]
 
     client = ChanelClient()
 
@@ -521,24 +512,9 @@ def main() -> int:
     sku_leaves: dict[str, set[str]] = defaultdict(set)
     sku_urls: dict[str, str] = {}
 
-    log("discovering other-accessories PLPs…")
-    plp_jobs = [(cid, en, url) for cid, en, _ko, url in LEAVES] + [
-        (cid, f"extra→{cid}", url) for cid, url in EXTRA_LEAF_PLPS
-    ]
-    if client._proxy:
-        for cid, en, url in plp_jobs:
-            log(f"leaf {cid} ({en})")
-            ids = discover_plp_skus(client, url)
-            leaf_to_skus.setdefault(cid, set()).update(ids)
-            for sku in ids:
-                sku_leaves[sku].add(cid)
-                sku_urls.setdefault(sku, f"{BASE}/gb/fashion/p/{sku}/")
-            time.sleep(0.4)
-    else:
-        log("no proxy yet — skip PLPs, seed from sitemap")
-
+    log("seeding other-accessories from sitemap (PLPs are Akamai-blocked)")
     sitemap, sitemap_leaves = discover_sitemap_other_acc(client)
-    hub_ids = discover_plp_skus(client, HUB) if client._proxy else set()
+    hub_ids: set[str] = set()
     for sku in hub_ids:
         if sku not in sku_leaves and not re.match(r"^A(AB|AC|73)", sku, re.I):
             continue
@@ -597,29 +573,20 @@ def main() -> int:
             leaf_counts[cached["leaf"]] += 1
             continue
 
-        status, html = client.get_html(url, referer=HUB, max_attempts=1)
+        status, html = fetch_page(client, url, referer=HUB)
         if is_challenge(html, status):
             consecutive_blocks += 1
             log(
                 f"[{i}/{len(todo)}] blocked {sku} "
                 f"(streak={consecutive_blocks}, proxy={client._proxy})"
             )
-            client.clear_proxy()
             time.sleep(HARD_BLOCK_SLEEP)
-            if client.probe_direct():
-                client.warm()
-                i -= 1
-                continue
-            if consecutive_blocks >= 3:
-                log(
-                    f"Akamai streak={consecutive_blocks} — writing partial catalog "
-                    f"({len(products)} scraped this run)"
-                )
+            if consecutive_blocks >= 4:
                 failed.append(
                     {"sku": sku, "url": url, "status": status, "reason": "akamai"}
                 )
-                break
-            time.sleep(8)
+                consecutive_blocks = 0
+                continue
             i -= 1
             continue
 
