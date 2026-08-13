@@ -27,7 +27,7 @@ BASE = "https://www.chanel.com"
 HUB = f"{BASE}/gb/fashion/small-leather-goods/c/1x1x2/"
 SITEMAP = f"{BASE}/gb/sitemap.xml"
 
-PARENT_COLS = ["chanel", "chanel-bags", "ch-slg"]
+PARENT_COLS = ["chanel", "chanel-accessories", "ch-slg"]
 
 # (collection id, EN label, KO label, PLP URL)
 # Card Holders & Wallets = official Card Holders + Long Wallets PLPs.

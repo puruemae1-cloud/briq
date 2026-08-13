@@ -4,7 +4,7 @@
 Sources:
   - ch-rtw-catalog-raw.json → category luxury (RTW)
   - ch-handbags-catalog-raw.json → category bags
-  - ch-slg-catalog-raw.json → category bags (small leather goods)
+  - ch-slg-catalog-raw.json → category accessories (small leather goods)
   - ch-shoes-catalog-raw.json → category shoes
   - ch-jewellery-catalog-raw.json → category accessories
   - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
@@ -72,7 +72,7 @@ SLG_SHAPE_LEAVES = [
     "ch-women-leather-accessories",
 ]
 
-SLG_PARENT_COLS = ["chanel", "chanel-bags", "ch-slg"]
+SLG_PARENT_COLS = ["chanel", "chanel-accessories", "ch-slg"]
 
 SHOE_SHAPE_LEAVES = [
     "ch-women-pumps-slingbacks",
@@ -1108,7 +1108,7 @@ def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "slg",
         "small leather goods",
         "스몰 레더 굿즈",
-        "가방",
+        "악세서리",
         "여성",
         *cols,
     ]
@@ -1123,7 +1123,7 @@ def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "nameKo": name_ko,
         "brand": "샤넬",
         "price": price,
-        "category": "bags",
+        "category": "accessories",
         "subcategory": primary,
         "chCollections": cols,
         "tags": tags,
@@ -1664,24 +1664,23 @@ def main() -> int:
             if not rtw_rows and cat == "luxury":
                 products.append(prev)
                 seen.add(prev["id"])
-            if cat == "bags":
-                if not bag_rows and not _is_slg_prev(prev):
+            if cat == "bags" and not _is_slg_prev(prev):
+                if not bag_rows:
                     products.append(prev)
                     seen.add(prev["id"])
-                if not slg_rows and _is_slg_prev(prev):
-                    products.append(prev)
-                    seen.add(prev["id"])
+            if not slg_rows and _is_slg_prev(prev):
+                products.append(prev)
+                seen.add(prev["id"])
             if not shoe_rows and cat == "shoes":
                 products.append(prev)
                 seen.add(prev["id"])
-            if cat == "accessories":
+            if cat == "accessories" and not _is_slg_prev(prev):
                 if not jew_rows and _is_jew_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
                 if not sunglass_rows and _is_sunglass_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
-                # Legacy accessories without jewellery/sunglass tags: keep only if both missing
                 if (
                     not jew_rows
                     and not sunglass_rows
