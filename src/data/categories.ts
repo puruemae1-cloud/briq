@@ -614,6 +614,7 @@ export type SubcategoryId =
   | "ch-women-bracelets-cuffs"
   | "ch-women-brooches"
   | "ch-women-rings"
+  | "ch-high-jewellery"
   | "ch-sunglasses"
   | "ch-women-sunglasses"
   | "ch-other-accessories"
@@ -677,6 +678,9 @@ export const CH_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
   "ch-women-brooches",
   "ch-women-rings",
 ];
+
+/** Chanel High Jewellery (official GB https://www.chanel.com/gb/high-jewellery/). */
+export const CH_HIGH_JEWELLERY_LEAF_IDS: SubcategoryId[] = ["ch-high-jewellery"];
 
 /** Chanel sunglasses (official GB See All Sunglasses PLP). */
 export const CH_SUNGLASSES_LEAF_IDS: SubcategoryId[] = ["ch-women-sunglasses"];
@@ -1604,6 +1608,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "chanel-accessories",
     "ch-jewellery",
     ...CH_JEWELLERY_LEAF_IDS,
+    ...CH_HIGH_JEWELLERY_LEAF_IDS,
     "ch-slg",
     ...CH_SLG_LEAF_IDS,
     "ch-sunglasses",
@@ -1612,6 +1617,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...CH_OTHER_ACC_LEAF_IDS,
   ],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
+  "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-women-earrings": ["ch-women-earrings"],
   "ch-women-necklaces": ["ch-women-necklaces"],
   "ch-women-bracelets-cuffs": ["ch-women-bracelets-cuffs"],
@@ -3877,6 +3883,12 @@ export const navCategories: NavCategory[] = [
             id: "ch-women-rings",
             labelKo: "링",
             href: "/shop?category=accessories&sub=ch-women-rings",
+            navLeaf: true,
+          },
+          {
+            id: "ch-high-jewellery",
+            labelKo: "고급 주얼리",
+            href: "/shop?category=accessories&sub=ch-high-jewellery",
             navLeaf: true,
           },
           {

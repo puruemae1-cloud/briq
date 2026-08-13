@@ -244,9 +244,9 @@ def leaves_from_slug(slug: str) -> set[str]:
         leaves.add("ch-women-headwear")
     if re.search(r"scarf|shawl|bandeau|muffler", s):
         leaves.add("ch-women-scarves")
-    if re.search(r"glove|muffler|collar|cashmere|beanie", s):
+    if re.search(r"glove|muffler|collar|cashmere|beanie|travel|blanket|pillow", s):
         leaves.add("ch-women-winter-accessories")
-    if re.search(r"beach|surf|straw|raffia", s):
+    if re.search(r"beach|surf|straw|raffia|ponytail|hair|cup", s):
         leaves.add("ch-women-summer-accessories")
     return leaves
 
@@ -313,7 +313,7 @@ def leaf_from_hierarchy(prod: dict) -> str | None:
             return "ch-women-scarves"
         if "/1x1x7/" in url or "camellia" in label:
             return "ch-women-camellias"
-        if "/1x3x25/" in url or "winter accessor" in label:
+        if "/1x3x25/" in url or "winter accessor" in label or "travel" in label:
             return "ch-women-winter-accessories"
         if "/1x3x23" in url or "summer accessor" in label:
             return "ch-women-summer-accessories"
@@ -326,7 +326,7 @@ def leaf_from_hierarchy(prod: dict) -> str | None:
         return "ch-women-scarves"
     if "camellia" in cat:
         return "ch-women-camellias"
-    if "winter" in cat:
+    if "winter" in cat or "travel" in cat:
         return "ch-women-winter-accessories"
     if "summer" in cat:
         return "ch-women-summer-accessories"
@@ -334,13 +334,16 @@ def leaf_from_hierarchy(prod: dict) -> str | None:
 
 
 def resolve_other_acc_leaves(
-    prod: dict, forced_leaves: set[str] | None = None
+    prod: dict, forced_leaves: set[str] | None = None, url: str = ""
 ) -> tuple[str | None, set[str]]:
     """Keep official PLP tags; prefer hierarchy for primary."""
     forced = {c for c in (forced_leaves or set()) if c in LEAF_IDS}
     hier = leaf_from_hierarchy(prod)
     if hier:
         forced.add(hier)
+    if not forced:
+        slug = (url or prod.get("url") or "").rstrip("/").split("/")[-1]
+        forced |= leaves_from_slug(slug)
     primary = hier if hier in LEAF_IDS else next((c for c in LEAF_IDS if c in forced), None)
     return primary, forced
 
@@ -372,7 +375,7 @@ def parse_other_acc_pdp(html: str, url: str, forced_leaves: set[str]) -> dict | 
             "url": url,
         }
 
-    primary, leaves = resolve_other_acc_leaves(prod, forced_leaves)
+    primary, leaves = resolve_other_acc_leaves(prod, forced_leaves, url)
     if not primary:
         return {
             "_skip": True,
@@ -503,8 +506,14 @@ def main() -> int:
 
     _rtw.HUB = HUB
     # Keep RTW probe SKU — connectivity check only; guessed other-acc slugs 404.
+    # safari17 is IP-banned; safari18 still serves PDPs.
+    _rtw.IMPERSONATES = ("safari18_0_ios",)
+    _rtw.SEED_PROXIES = []
 
-    _rtw.SEED_PROXIES = ["212.58.132.5:8888"]
+    def _no_proxy(self) -> None:
+        return None
+
+    _rtw.ChanelClient.ensure_proxy = _no_proxy
 
     client = ChanelClient()
 
@@ -558,7 +567,7 @@ def main() -> int:
             and cached.get("kind") == "other-acc"
             and not cached.get("_skip")
         ):
-            primary, leaves = resolve_other_acc_leaves(cached, forced)
+            primary, leaves = resolve_other_acc_leaves(cached, forced, url)
             primary = primary or cached.get("leaf")
             if not primary:
                 continue
