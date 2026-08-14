@@ -178,6 +178,58 @@ def parse_characteristics(html: str) -> list[dict[str, str]]:
                 continue
             i += 1
 
+    # Fashion handbags / shoes / RTW / SLG: materials, colour, dimensions
+    # live on the product-details panel (no #product-characteristics).
+    if not out:
+        materials = ""
+        for span in soup.select(
+            "span.product-details__description[data-test='lblProductSubTitle']"
+        ):
+            if "product-details__color" in (span.get("class") or []):
+                continue
+            materials = _clean(span.get_text(" ", strip=True))
+            if materials:
+                break
+        if materials:
+            add("Material", materials)
+
+        color_el = soup.select_one(
+            "span.product-details__color, "
+            "span.product-details__description.product-details__color"
+        )
+        if color_el:
+            add("Colour", _clean(color_el.get_text(" ", strip=True)))
+
+        dim_el = soup.select_one("span.js-dimension[data-test='lblDimension']")
+        if dim_el:
+            dim = _clean(
+                dim_el.get("data-in-value")
+                or dim_el.get("data-cm-value")
+                or dim_el.get_text(" ", strip=True)
+            )
+            # Prefer metric cm when both are present in attributes.
+            cm = _clean(dim_el.get("data-in-value") or "")
+            if cm and "cm" in cm.lower():
+                dim = cm
+            if dim:
+                add("Size", dim)
+
+        ref_el = soup.select_one(
+            "p.product-details__reference[data-test='lblReferenceNumber']"
+        )
+        if ref_el:
+            ref = _clean(ref_el.get("data-reffshcode") or "")
+            if not ref:
+                ref = re.sub(
+                    r"^Ref\.?\s*",
+                    "",
+                    _clean(ref_el.get_text(" ", strip=True)),
+                    flags=re.I,
+                )
+                ref = re.sub(r"\s+", "", ref)
+            if ref:
+                add("Reference", ref)
+
     return out
 
 
@@ -202,15 +254,22 @@ def extract_image_urls(html: str, sku: str, limit: int = 24) -> list[str]:
         fn = u.rsplit("/", 1)[-1]
         fl = fn.lower()
         # Filenames often embed a truncated code: ...-packshot-default-a40888x09955l4395-8853.jpg
+        # Fashion long codes: ...-a01112b2404894305-9591.jpg
         tok_m = re.search(
-            r"-(a\d+x[a-z0-9]+|j\d+|h\d+|g\d+|ap\d+|ab[a-z0-9]+)-\d+\.", fl
+            r"-(a\d+x[a-z0-9]+|a\d+[a-z]\d+[a-z0-9]*|j\d+|h\d+|g\d+|ap\d+|p\d+|ab[a-z0-9]+)-\d+\.",
+            fl,
         )
         token = tok_m.group(1) if tok_m else ""
         ok = False
         if sku_l in fl:
             ok = True
         elif token and (sku_l.startswith(token) or token.startswith(sku_l)):
-            ok = True
+            # Require near-full match for long fashion SKUs so sibling
+            # colourways (same A01112 prefix) are not pulled in.
+            if len(sku_l) >= 12 and len(token) < len(sku_l) - 2:
+                ok = False
+            else:
+                ok = True
         if not ok:
             continue
         if fl in seen:

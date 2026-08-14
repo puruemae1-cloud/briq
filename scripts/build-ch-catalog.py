@@ -1090,6 +1090,7 @@ CHAR_LABEL_KO = {
     "Bridge": "브릿지",
     "Color": "컬러",
     "Colour": "컬러",
+    "Reference": "레퍼런스",
 }
 
 
