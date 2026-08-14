@@ -624,7 +624,14 @@ export type SubcategoryId =
   | "ch-women-scarves"
   | "ch-women-camellias"
   | "ch-women-winter-accessories"
-  | "ch-women-summer-accessories";
+  | "ch-women-summer-accessories"
+  | "chanel-watches"
+  | "ch-watches"
+  | "ch-watches-j12"
+  | "ch-watches-premiere"
+  | "ch-watches-boy-friend"
+  | "ch-watches-monsieur"
+  | "ch-watches-code-coco";
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -682,6 +689,15 @@ export const CH_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
 
 /** Chanel High Jewellery (official GB https://www.chanel.com/gb/high-jewellery/). */
 export const CH_HIGH_JEWELLERY_LEAF_IDS: SubcategoryId[] = ["ch-high-jewellery"];
+
+/** Chanel watches collection leaves (official GB Watches Collections PLPs). */
+export const CH_WATCH_LEAF_IDS: SubcategoryId[] = [
+  "ch-watches-j12",
+  "ch-watches-premiere",
+  "ch-watches-boy-friend",
+  "ch-watches-monsieur",
+  "ch-watches-code-coco",
+];
 
 /** Chanel Fine Jewellery (official GB https://www.chanel.com/gb/fine-jewellery/). */
 export const CH_FINE_JEWELLERY_LEAF_IDS: SubcategoryId[] = ["ch-fine-jewellery"];
@@ -1639,6 +1655,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-sunglasses": ["ch-sunglasses", ...CH_SUNGLASSES_LEAF_IDS],
   "ch-women-sunglasses": ["ch-women-sunglasses"],
   "ch-other-accessories": ["ch-other-accessories", ...CH_OTHER_ACC_LEAF_IDS],
+  "chanel-watches": ["chanel-watches", "ch-watches", ...CH_WATCH_LEAF_IDS],
+  "ch-watches": ["ch-watches", ...CH_WATCH_LEAF_IDS],
+  "ch-watches-j12": ["ch-watches-j12"],
+  "ch-watches-premiere": ["ch-watches-premiere"],
+  "ch-watches-boy-friend": ["ch-watches-boy-friend"],
+  "ch-watches-monsieur": ["ch-watches-monsieur"],
+  "ch-watches-code-coco": ["ch-watches-code-coco"],
   "ch-women-headwear": ["ch-women-headwear"],
   "ch-women-belts": ["ch-women-belts"],
   "ch-women-scarves": ["ch-women-scarves"],
@@ -2812,6 +2835,49 @@ export const navCategories: NavCategory[] = [
     labelKo: "시계",
     href: "/shop?category=watches",
     children: [
+      {
+        id: "chanel-watches",
+        labelKo: "샤넬",
+        href: "/shop?category=watches&sub=chanel-watches",
+        children: [
+          {
+            id: "ch-watches",
+            labelKo: "전체보기",
+            href: "/shop?category=watches&sub=ch-watches",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-j12",
+            labelKo: "J12",
+            href: "/shop?category=watches&sub=ch-watches-j12",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-premiere",
+            labelKo: "프리미에르",
+            href: "/shop?category=watches&sub=ch-watches-premiere",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-boy-friend",
+            labelKo: "보이·프렌드",
+            href: "/shop?category=watches&sub=ch-watches-boy-friend",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-monsieur",
+            labelKo: "무슈",
+            href: "/shop?category=watches&sub=ch-watches-monsieur",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-code-coco",
+            labelKo: "코드 코코",
+            href: "/shop?category=watches&sub=ch-watches-code-coco",
+            navLeaf: true,
+          },
+        ],
+      },
       {
         id: "christopher-ward",
         labelKo: "크리스토퍼와드",

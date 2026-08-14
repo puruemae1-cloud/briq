@@ -11,6 +11,7 @@ Sources:
   - ch-fine-jewellery-catalog-raw.json → category accessories (Fine Jewellery)
   - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
   - ch-other-acc-catalog-raw.json → category accessories (other accessories)
+  - ch-watches-catalog-raw.json → category watches (J12 / Première / BOY·FRIEND / Monsieur / Code Coco)
 
 Pricing (same as Gucci): KRW = round_만원(GBP × 2100 × 1.05 × 1.15)
 Korean copy via gtx + ch-translate-cache.json.
@@ -41,6 +42,7 @@ HIGH_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-high-jewellery-catalog-raw.json
 FINE_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-fine-jewellery-catalog-raw.json"
 SUNGLASSES_RAW_PATH = ROOT / "src/data/ch/ch-sunglasses-catalog-raw.json"
 OTHER_ACC_RAW_PATH = ROOT / "src/data/ch/ch-other-acc-catalog-raw.json"
+WATCHES_RAW_PATH = ROOT / "src/data/ch/ch-watches-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
 OUT_TS = ROOT / "src/data/ch/ch-catalog.ts"
 CACHE_PATH = ROOT / "src/data/ch/ch-translate-cache.json"
@@ -122,6 +124,15 @@ OTHER_ACC_SHAPE_LEAVES = [
 ]
 
 OTHER_ACC_PARENT_COLS = ["chanel", "chanel-accessories", "ch-other-accessories"]
+
+WATCH_SHAPE_LEAVES = [
+    "ch-watches-j12",
+    "ch-watches-premiere",
+    "ch-watches-boy-friend",
+    "ch-watches-monsieur",
+    "ch-watches-code-coco",
+]
+WATCH_PARENT_COLS = ["chanel-watches", "ch-watches"]
 
 # Chanel costume jewellery PDPs mostly use UNI (One Size). Rings that expose
 # numeric sizes follow French ring sizing (finger circumference ≈ FR number).
@@ -401,6 +412,19 @@ _EN_TITLE_KO = {
     "Plume de Chanel": "플룸 드 샤넬",
     "High Jewellery": "High 주얼리",
     "Fine Jewellery": "Fine 주얼리",
+    "Watches": "시계",
+    "J12": "J12",
+    "Première": "프리미에르",
+    "Premiere": "프리미에르",
+    "BOY·FRIEND": "보이·프렌드",
+    "BOY.FRIEND": "보이·프렌드",
+    "Boy·Friend": "보이·프렌드",
+    "Monsieur": "무슈",
+    "Code Coco": "코드 코코",
+    "Calibre": "칼리버",
+    "Ceramic": "세라믹",
+    "Matte": "매트",
+    "Superleggera": "수퍼레제라",
     "Coco Crush": "코코 크러쉬",
     "COCO CRUSH": "코코 크러쉬",
     "Ultra": "울트라",
@@ -2229,6 +2253,158 @@ def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     return prod
 
 
+def build_watch_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in WATCH_SHAPE_LEAVES
+    ]
+    leaf = row.get("leaf") if row.get("leaf") in WATCH_SHAPE_LEAVES else None
+    if leaf and leaf not in leaves:
+        leaves.insert(0, leaf)
+    if not leaves:
+        leaves = ["ch-watches-j12"]
+    primary = next((c for c in WATCH_SHAPE_LEAVES if c in leaves), leaves[0])
+
+    cols = sorted(set([*WATCH_PARENT_COLS, *leaves]))
+    title_en = as_text(row.get("title")) or str(code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    color_en = as_text(details.get("color"))
+    fabrics_en = as_text(details.get("fabrics"))
+    desc_en = as_text(details.get("description"))
+    dims_en = as_text(details.get("dimensions"))
+    ref = as_text(details.get("reference"))
+    collection_en = as_text(row.get("collection"))
+
+    name_ko = t(title_en)
+    color_ko = t(color_en) if color_en else ""
+    fabrics_ko = t(fabrics_en) if fabrics_en else ""
+    desc_ko = t(desc_en) if desc_en else ""
+    dims_ko = t(dims_en) if dims_en else ""
+    collection_ko = t(collection_en) if collection_en else ""
+
+    parts = [desc_ko]
+    if collection_ko:
+        parts.append(f"컬렉션: {collection_ko}")
+    if color_ko:
+        parts.append(f"컬러: {color_ko}")
+    if fabrics_ko:
+        parts.append(f"소재: {fabrics_ko}")
+    if dims_ko:
+        parts.append(f"스펙: {dims_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = reorder_locals_shoe_front(row)
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / p.lstrip("/")).is_file()
+        and (ROOT / "public" / p.lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        images = [
+            p
+            for p in (row.get("localImages") or [])
+            if (ROOT / "public" / str(p).lstrip("/")).is_file()
+            and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+        ]
+    if not images:
+        print(f"skip no local image (watches): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    leaf_label = {
+        "ch-watches-j12": "J12",
+        "ch-watches-premiere": "Première",
+        "ch-watches-boy-friend": "BOY·FRIEND",
+        "ch-watches-monsieur": "Monsieur",
+        "ch-watches-code-coco": "Code Coco",
+    }.get(primary, "Watches")
+
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — One Size",
+            "nameKo": f"{name_ko} — 원 사이즈",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": color_en.lower() or "default",
+            "colorNameKo": color_ko or color_en or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "watches",
+        "시계",
+        leaf_label,
+        "여성",
+        "남성",
+        *cols,
+    ]
+    if collection_ko:
+        tags.append(collection_ko)
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "watches",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return prod
+
+
 def main() -> int:
     prev_map = load_prev()
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -2290,6 +2466,12 @@ def main() -> int:
     else:
         print(f"WARN missing other-acc raw: {OTHER_ACC_RAW_PATH}", flush=True)
 
+    watch_rows: list[dict] = []
+    if WATCHES_RAW_PATH.exists():
+        watch_rows = json.loads(WATCHES_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing watches raw: {WATCHES_RAW_PATH}", flush=True)
+
     def _is_slg_prev(p: dict) -> bool:
         cols = set(p.get("chCollections") or [])
         return "ch-slg" in cols or p.get("subcategory") in SLG_SHAPE_LEAVES
@@ -2320,6 +2502,14 @@ def main() -> int:
             or p.get("subcategory") in OTHER_ACC_SHAPE_LEAVES
         )
 
+    def _is_watch_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return (
+            "chanel-watches" in cols
+            or "ch-watches" in cols
+            or p.get("subcategory") in WATCH_SHAPE_LEAVES
+        )
+
     # Keep existing catalog rows when a raw source is missing (partial rebuild).
     if (
         not rtw_rows
@@ -2331,6 +2521,7 @@ def main() -> int:
         or not fj_rows
         or not sunglass_rows
         or not other_acc_rows
+        or not watch_rows
     ):
         for prev in prev_map.values():
             cat = prev.get("category")
@@ -2345,6 +2536,9 @@ def main() -> int:
                 products.append(prev)
                 seen.add(prev["id"])
             if not shoe_rows and cat == "shoes":
+                products.append(prev)
+                seen.add(prev["id"])
+            if not watch_rows and _is_watch_prev(prev):
                 products.append(prev)
                 seen.add(prev["id"])
             if cat == "accessories" and not _is_slg_prev(prev):
@@ -2498,13 +2692,26 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built other-acc {i}/{len(other_acc_rows)}", flush=True)
 
+    for i, row in enumerate(watch_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_watch_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 20 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built watches {i}/{len(watch_rows)}", flush=True)
+
     products.sort(key=lambda p: p["id"])
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Other Accessories. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Other Accessories + Watches. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -2521,6 +2728,7 @@ def main() -> int:
             FINE_JEWELLERY_LEAF,
             SUNGLASSES_LEAF,
             *OTHER_ACC_SHAPE_LEAVES,
+            *WATCH_SHAPE_LEAVES,
             "ch-women-looks",
         ]
     }
@@ -2529,6 +2737,16 @@ def main() -> int:
     luxury_n = sum(1 for p in products if p.get("category") == "luxury")
     shoes_n = sum(1 for p in products if p.get("category") == "shoes")
     jew_n = sum(1 for p in products if p.get("category") == "accessories")
+    watches_n = sum(
+        1
+        for p in products
+        if p.get("category") == "watches"
+        and (
+            "chanel-watches" in (p.get("chCollections") or [])
+            or "ch-watches" in (p.get("chCollections") or [])
+            or p.get("subcategory") in WATCH_SHAPE_LEAVES
+        )
+    )
     for p in products:
         for c in p.get("chCollections") or []:
             if c in leaf_n:
@@ -2537,7 +2755,7 @@ def main() -> int:
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
     print(
         f"luxury={luxury_n} bags={bags_n} shoes={shoes_n} accessories={jew_n} "
-        f"inStock={in_stock}",
+        f"watches={watches_n} inStock={in_stock}",
         flush=True,
     )
     print(f"leafCounts={leaf_n}", flush=True)
