@@ -31,8 +31,12 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from ch_hybris_details import compose_official_name  # noqa: E402
+
 RAW_PATH = ROOT / "src/data/ch/ch-rtw-catalog-raw.json"
 HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
 SLG_RAW_PATH = ROOT / "src/data/ch/ch-slg-catalog-raw.json"
@@ -453,6 +457,14 @@ _EN_TITLE_KO = {
     "Frame width": "프레임 너비",
     "Branch length": "템플 길이",
     "highly resistant ceramic": "고강도 세라믹",
+    "Highly resistant white ceramic and steel": "고강도 화이트 세라믹과 스틸",
+    "Highly resistant black ceramic and steel": "고강도 블랙 세라믹과 스틸",
+    "Highly resistant ceramic and steel": "고강도 세라믹과 스틸",
+    "white ceramic and steel": "화이트 세라믹과 스틸",
+    "black ceramic and steel": "블랙 세라믹과 스틸",
+    "Yellow gold and diamonds": "옐로우 골드와 다이아몬드",
+    "White gold and diamonds": "화이트 골드와 다이아몬드",
+    "Beige gold and diamonds": "베이지 골드와 다이아몬드",
     "Self-winding": "오토매틱",
     "quartz movement": "쿼츠 무브먼트",
     "brilliant-cut diamonds": "브릴리언트 컷 다이아몬드",
@@ -878,14 +890,13 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
         (c for c in SHAPE_LEAVES if c in cols), "ch-women-rtw"
     )
 
-    title_en = (row.get("title") or "").strip() or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     color_en = (details.get("color") or "").strip()
     fabrics_en = (details.get("fabrics") or "").strip()
     desc_en = (details.get("description") or "").strip()
     ref = (details.get("reference") or "").strip()
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1066,6 +1077,42 @@ def as_text(val) -> str:
     return str(val).strip()
 
 
+def official_title_en(row: dict, code: str | None = None) -> str:
+    """Prefer official PDP heading: title + materials subtitle (+ colour)."""
+    return official_name_pair(row, code)[0]
+
+
+def official_name_pair(row: dict, code: str | None = None) -> tuple[str, str]:
+    """Return (name_en, name_ko) matching official Chanel PDP heading.
+
+    Translate short title + material subtitle separately so Korean stays natural
+    (e.g. J12 + 고강도 화이트 세라믹과 스틸).
+    """
+    details = row.get("details") if isinstance(row.get("details"), dict) else {}
+    title = as_text(row.get("title"))
+    short = as_text(row.get("titleShort")) or title
+    subtitle = as_text(row.get("subtitle") or details.get("subtitle"))
+    color = as_text(details.get("color"))
+    if subtitle and title and subtitle.lower() in title.lower():
+        composed = title
+    else:
+        composed = compose_official_name(short, subtitle, color) or title
+    composed = composed or str(code or row.get("id") or row.get("sku") or "")
+
+    if short and subtitle:
+        parts_ko = [t(short), t(subtitle)]
+        if (
+            color
+            and color.lower() in composed.lower()
+            and color.lower() not in subtitle.lower()
+            and color.lower() not in short.lower()
+        ):
+            parts_ko.append(t(color))
+        name_ko = " ".join(p for p in parts_ko if p)
+        return composed, name_ko or t(composed)
+    return composed, t(composed)
+
+
 CHAR_LABEL_KO = {
     "Sizes": "사이즈",
     "Size": "사이즈",
@@ -1233,7 +1280,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     primary = next((c for c in BAG_SHAPE_LEAVES if c in leaves), leaves[0])
     cols = sorted(set([*BAG_PARENT_COLS, *leaves]))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1243,7 +1290,6 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     dims_en = as_text(details.get("dimensions"))
     ref = as_text(details.get("reference"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1366,7 +1412,7 @@ def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
     primary = leaf or next((c for c in SLG_SHAPE_LEAVES if c in leaves), leaves[0])
     cols = sorted(set([*SLG_PARENT_COLS, primary]))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1376,7 +1422,6 @@ def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
     dims_en = as_text(details.get("dimensions"))
     ref = as_text(details.get("reference"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1499,7 +1544,7 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     primary = next((c for c in SHOE_SHAPE_LEAVES if c in leaves), leaves[0])
     cols = sorted(set([*SHOE_PARENT_COLS, *leaves]))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1508,7 +1553,6 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     desc_en = as_text(details.get("description"))
     ref = as_text(details.get("reference"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1640,7 +1684,7 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     primary = leaf or next((c for c in JEWELLERY_SHAPE_LEAVES if c in leaves), leaves[0])
     cols = sorted(set([*JEWELLERY_PARENT_COLS, primary]))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1650,7 +1694,6 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     dims_en = as_text(details.get("dimensions"))
     ref = as_text(details.get("reference"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1789,7 +1832,7 @@ def build_high_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
         return None
 
     cols = sorted(set([*HIGH_JEWELLERY_PARENT_COLS]))
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1800,7 +1843,6 @@ def build_high_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
     ref = as_text(details.get("reference"))
     collection_en = as_text(row.get("collection"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -1950,7 +1992,7 @@ def build_fine_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
         return None
 
     cols = sorted(set([*FINE_JEWELLERY_PARENT_COLS]))
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -1961,7 +2003,6 @@ def build_fine_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
     ref = as_text(details.get("reference"))
     collection_en = as_text(row.get("collection"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -2120,7 +2161,7 @@ def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict
     primary = SUNGLASSES_LEAF
     cols = sorted(set(SUNGLASSES_PARENT_COLS))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -2135,7 +2176,6 @@ def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict
     treatment = details.get("treatment") if isinstance(details.get("treatment"), dict) else {}
     treatment_label = as_text(treatment.get("label")) if treatment else ""
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -2277,7 +2317,7 @@ def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         primary = leaf
     cols = sorted(set([*OTHER_ACC_PARENT_COLS, *leaves]))
 
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -2287,7 +2327,6 @@ def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     dims_en = as_text(details.get("dimensions"))
     ref = as_text(details.get("reference"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""
@@ -2451,7 +2490,7 @@ def build_watch_product(row: dict, prev: dict | None, now_iso: str) -> dict | No
     primary = next((c for c in WATCH_SHAPE_LEAVES if c in leaves), leaves[0])
 
     cols = sorted(set([*WATCH_PARENT_COLS, *leaves]))
-    title_en = as_text(row.get("title")) or str(code)
+    title_en, name_ko = official_name_pair(row, code)
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
@@ -2462,7 +2501,6 @@ def build_watch_product(row: dict, prev: dict | None, now_iso: str) -> dict | No
     ref = as_text(details.get("reference"))
     collection_en = as_text(row.get("collection"))
 
-    name_ko = t(title_en)
     color_ko = t(color_en) if color_en else ""
     fabrics_ko = t(fabrics_en) if fabrics_en else ""
     desc_ko = t(desc_en) if desc_en else ""

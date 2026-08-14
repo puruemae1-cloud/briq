@@ -305,12 +305,68 @@ def extract_image_urls(html: str, sku: str, limit: int = 24) -> list[str]:
     ]
 
 
+def parse_title_parts(html: str) -> dict[str, str]:
+    """Official PDP title + material subtitle (+ colour when present).
+
+    Chanel H1 reads as: "{title} {subtitle} {colour}" e.g.
+    "J12 watch, 28 mm Highly resistant white ceramic and steel"
+    """
+    soup = BeautifulSoup(html or "", "html.parser")
+    title = ""
+    title_el = soup.select_one(
+        '[data-test="lblProductTitle"], '
+        ".product-details__title .heading, "
+        ".product-details__title"
+    )
+    if title_el:
+        title = _clean(title_el.get_text(" ", strip=True))
+
+    subtitle = ""
+    color = ""
+    for span in soup.select(
+        "span.product-details__description[data-test='lblProductSubTitle']"
+    ):
+        text = _clean(span.get_text(" ", strip=True))
+        if not text:
+            continue
+        classes = span.get("class") or []
+        if "product-details__color" in classes:
+            if not color:
+                color = text
+        elif not subtitle:
+            subtitle = text
+
+    return {"title": title, "subtitle": subtitle, "color": color}
+
+
+def compose_official_name(
+    title: str,
+    subtitle: str = "",
+    color: str = "",
+) -> str:
+    """Match the official Chanel PDP heading: title + materials (+ colour)."""
+    parts: list[str] = []
+    t = _clean(title)
+    if t:
+        parts.append(t)
+    joined = " ".join(parts).lower()
+    s = _clean(subtitle)
+    if s and s.lower() not in joined:
+        parts.append(s)
+        joined = " ".join(parts).lower()
+    c = _clean(color)
+    if c and c.lower() not in joined:
+        parts.append(c)
+    return " ".join(parts)
+
+
 def enrich_from_html(html: str, sku: str, details: dict | None = None) -> dict[str, Any]:
     """Return detail/image enrichment fields from Hybris HTML."""
     details = dict(details or {})
     editorial = parse_editorial(html)
     chars = parse_characteristics(html)
     images = extract_image_urls(html, sku)
+    title_parts = parse_title_parts(html)
 
     if editorial:
         details["editorial"] = editorial
@@ -324,4 +380,22 @@ def enrich_from_html(html: str, sku: str, details: dict | None = None) -> dict[s
     if chars:
         details["characteristics"] = chars
 
-    return {"details": details, "images": images, "editorial": editorial, "characteristics": chars}
+    if title_parts.get("subtitle"):
+        details["subtitle"] = title_parts["subtitle"]
+    if title_parts.get("color") and not details.get("color"):
+        details["color"] = title_parts["color"]
+
+    official = compose_official_name(
+        title_parts.get("title") or "",
+        title_parts.get("subtitle") or "",
+        title_parts.get("color") or details.get("color") or "",
+    )
+
+    return {
+        "details": details,
+        "images": images,
+        "editorial": editorial,
+        "characteristics": chars,
+        "titleParts": title_parts,
+        "officialName": official,
+    }
