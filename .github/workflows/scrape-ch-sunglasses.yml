@@ -38,7 +38,7 @@ jobs:
         run: python3 scripts/build-ch-catalog.py
 
       - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp
+        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp --skip-whiten
 
       - name: Verify product images (remote)
         run: python3 scripts/verify-product-images.py --brand ch --remote || true
@@ -47,7 +47,7 @@ jobs:
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
-            "feat: import Chanel sunglasses under Accessories→샤넬" \
+            "feat: import full Chanel eyewear hub under Accessories→샤넬→선글라스" \
             src/data/ch \
             src/data/categories.ts \
             scripts/scrape-ch-sunglasses.py \

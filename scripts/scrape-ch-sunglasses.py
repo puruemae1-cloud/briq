@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Scrape Chanel GB sunglasses into ch-sunglasses-catalog-raw.json + images.
+"""Scrape Chanel GB eyewear into ch-sunglasses-catalog-raw.json + images.
 
-Official See All Sunglasses PLP:
-  https://www.chanel.com/gb/eyewear/sunglasses/c/2x1x1/
+Official hub: https://www.chanel.com/gb/eyewear/
+Shopable PLPs:
+  Sunglasses  /gb/eyewear/sunglasses/c/2x1x1/
+  Optical     /gb/eyewear/optical/c/2x1x2/
+  Blue light  /gb/eyewear/blue-light-glasses/c/2x1x3/
 
-Reuses ChanelClient + image helpers from scrape-ch-rtw.py (Akamai/proxy).
-SKU pattern: A{digits}X… under /gb/eyewear/p/ (not fashion handbags/jewellery).
+All land under Accessories → 샤넬 → 선글라스 (ch-women-sunglasses).
+Existing SKUs already in raw/cache are kept; only missing PDPs are fetched.
 """
 from __future__ import annotations
 
@@ -24,15 +27,29 @@ IMG_ROOT = ROOT / "public/products/ch-pdp"
 
 BASE = "https://www.chanel.com"
 HUB = f"{BASE}/gb/eyewear/"
-PLP = f"{BASE}/gb/eyewear/sunglasses/c/2x1x1/"
 SITEMAP = f"{BASE}/gb/sitemap.xml"
 
 LEAF_ID = "ch-women-sunglasses"
 PARENT_COLS = ["chanel", "chanel-accessories", "ch-sunglasses", LEAF_ID]
 
-PDP_PAUSE = 1.2
-HARD_BLOCK_SLEEP = 12.0
+PLPS: list[tuple[str, str, str]] = [
+    ("sunglasses", "Sunglasses", f"{BASE}/gb/eyewear/sunglasses/c/2x1x1/"),
+    ("optical", "Optical", f"{BASE}/gb/eyewear/optical/c/2x1x2/"),
+    (
+        "blue-light",
+        "Blue Light Glasses",
+        f"{BASE}/gb/eyewear/blue-light-glasses/c/2x1x3/",
+    ),
+]
+
+PDP_PAUSE = 0.8
+HARD_BLOCK_SLEEP = 8.0
 MAX_PLP_PAGES = 20
+PDP_RE = re.compile(
+    r"/gb/eyewear/p/(A\d+X[A-Z0-9]+)/([^/\"'?\s<>]+)",
+    flags=re.I,
+)
+SKU_RE = re.compile(r"^A\d+X[A-Z0-9]+$", flags=re.I)
 
 _spec = importlib.util.spec_from_file_location(
     "scrape_ch_rtw", ROOT / "scripts" / "scrape-ch-rtw.py"
@@ -47,8 +64,20 @@ is_challenge = _rtw.is_challenge
 normalize_img_url = _rtw.normalize_img_url
 parse_gbp = _rtw.parse_gbp
 availability_map = _rtw.availability_map
-wait_for_pdp_access = _rtw.wait_for_pdp_access
 log = _rtw.log
+
+
+def is_eyewear_sku(sku: str) -> bool:
+    return bool(SKU_RE.fullmatch((sku or "").upper()))
+
+
+def pdp_url(sku: str, slug: str = "") -> str:
+    slug = (slug or "").strip("/") or "product"
+    return f"{BASE}/gb/eyewear/p/{sku.upper()}/{slug}/"
+
+
+def to_cn_url(url: str) -> str:
+    return (url or "").replace("://www.chanel.com/", "://www.chanel.cn/")
 
 
 def order_eyewear_images(images: list[dict]) -> list[str]:
@@ -81,116 +110,76 @@ def order_eyewear_images(images: list[dict]) -> list[str]:
     return [u for _, _, u in scored]
 
 
-def is_eyewear_sku(sku: str) -> bool:
-    s = (sku or "").upper()
-    # Eyewear PDPs use A{n}X… codes (e.g. A71778X08101S011653NOCCI).
-    return bool(re.fullmatch(r"A\d+X[A-Z0-9]+", s))
-
-
-def fetch_page(client: ChanelClient, url: str, referer: str = HUB) -> tuple[int, str]:
-    headers = {**_rtw.HTML_HEADERS, "Referer": referer}
-    last_status, last_text = 0, ""
-    for attempt in range(1, 4):
-        try:
-            with _rtw._session_lock:
-                r = client.session.get(
-                    url,
-                    impersonate=client.impersonate,
-                    timeout=90,
-                    headers=headers,
-                    proxies=client.proxies,
-                )
-                client._req_count += 1
-                last_status, last_text = r.status_code, r.text
-        except Exception as e:
-            log(f"  GET error {url}: {e}")
-            time.sleep(1.0 * attempt)
-            if client._proxy:
-                client.rotate_proxy()
-            else:
-                client.ensure_proxy()
-            continue
-        if last_status == 404:
-            return last_status, last_text
-        if "__NEXT_DATA__" in last_text and len(last_text) > 20000:
-            return last_status, last_text
-        if last_status == 200 and "/gb/eyewear/p/" in last_text:
-            return last_status, last_text
-        log(
-            f"  soft-block {last_status} on {url} "
-            f"(attempt {attempt}, len={len(last_text)})"
-        )
-        time.sleep(1.5)
-        if not client._proxy:
-            client.ensure_proxy()
-        else:
-            client.soft_refresh()
-            client.warm()
-    return last_status, last_text
-
-
-def extract_skus_from_html(html: str) -> set[str]:
-    skus = set(re.findall(r"/gb/eyewear/p/([A-Z0-9]+)/", html, flags=re.I))
-    skus |= set(
-        re.findall(r"\\?/gb\\?/eyewear\\?/p\\?/([A-Z0-9]+)\\?/", html, flags=re.I)
-    )
-    return {s for s in skus if is_eyewear_sku(s)}
-
-
-def discover_plp_skus(client: ChanelClient, url: str) -> set[str]:
-    found: set[str] = set()
-    pages = [url]
-    for n in range(2, MAX_PLP_PAGES + 1):
-        pages.append(f"{url.rstrip('/')}/page-{n}/")
-
-    for page_url in pages:
-        status, html = fetch_page(client, page_url)
-        if status == 404:
-            break
-        if status != 200 or len(html) < 5000:
-            if page_url == url:
-                log(f"  PLP blocked {page_url} status={status} len={len(html)}")
-            break
-        ids = extract_skus_from_html(html)
-        before = len(found)
-        found |= ids
-        log(f"  PLP {page_url} → +{len(found) - before} (total {len(found)})")
-        if not ids and page_url != url:
-            break
-        if page_url != url and len(found) == before:
-            break
-        time.sleep(0.5)
-    return found
-
-
-def discover_sitemap_eyewear_skus(client: ChanelClient) -> dict[str, str]:
-    status, text = client.get_html(SITEMAP, max_attempts=2)
-    if status != 200:
-        try:
-            r = client.session.get(
-                SITEMAP,
-                impersonate=client.impersonate,
-                timeout=90,
-                headers=_rtw.HTML_HEADERS,
-            )
-            status, text = r.status_code, r.text
-        except Exception:
-            return {}
-    by_sku: dict[str, str] = {}
-    for m in re.finditer(
-        r"https://www\.chanel\.com/gb/eyewear/p/(A[^/\s\"<]+)/",
-        text,
-        flags=re.I,
+def _ld_products(html: str) -> list[dict]:
+    out: list[dict] = []
+    for raw in re.findall(
+        r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+        html or "",
+        flags=re.S | re.I,
     ):
-        sku = m.group(1)
-        if not is_eyewear_sku(sku):
+        try:
+            obj = json.loads(raw.strip())
+        except json.JSONDecodeError:
             continue
-        by_sku.setdefault(sku, m.group(0).rstrip("/") + "/")
-    log(f"sitemap eyewear SKUs: {len(by_sku)}")
-    return by_sku
+        if isinstance(obj, dict) and obj.get("@type") == "Product":
+            out.append(obj)
+        elif isinstance(obj, list):
+            out.extend(
+                x for x in obj if isinstance(x, dict) and x.get("@type") == "Product"
+            )
+    return out
 
 
-def parse_eyewear_pdp(html: str, url: str) -> dict | None:
+def _hybris_image_urls(html: str, sku: str) -> list[str]:
+    sku_l = sku.lower()
+    # Match URL-sku stem (before optional colour/size suffix) for packshots.
+    stem = sku_l
+    files: list[str] = []
+    seen: set[str] = set()
+    for m in re.finditer(
+        r"https://www\.chanel\.(?:com|cn)/images/[^\"\s>]+", html or ""
+    ):
+        u = (
+            m.group(0)
+            .rstrip("\\")
+            .split("?")[0]
+            .replace("www.chanel.cn", "www.chanel.com")
+        )
+        if not re.search(r"\.(?:jpg|jpeg|png|webp)$", u, re.I):
+            continue
+        fn = u.rsplit("/", 1)[-1]
+        fl = fn.lower()
+        if stem not in fl:
+            continue
+        # Drop other colourway packshots that only share the A#####X prefix.
+        if fl in seen:
+            continue
+        seen.add(fl)
+        files.append(fn)
+
+    def rank(fn: str) -> tuple[int, str]:
+        f = fn.lower()
+        if "packshot-default" in f:
+            return (0, f)
+        if "packshot-alternative" in f:
+            return (1, f)
+        if "packshot-other" in f:
+            return (2, f)
+        if "packshot-extra" in f:
+            return (3, f)
+        if "portee" in f or "worn" in f:
+            return (4, f)
+        return (5, f)
+
+    files.sort(key=rank)
+    return [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/"
+        f"w_1240/{fn}"
+        for fn in files[:12]
+    ]
+
+
+def parse_next_eyewear(html: str, url: str, sku_hint: str) -> dict | None:
     nd = extract_next_data(html)
     if not nd:
         return None
@@ -199,9 +188,15 @@ def parse_eyewear_pdp(html: str, url: str) -> dict | None:
     if not isinstance(prod, dict):
         return None
 
-    sku = str(prod.get("sku") or prod.get("id") or "").strip()
+    sku = str(prod.get("sku") or prod.get("id") or sku_hint or "").strip().upper()
     if not sku or not is_eyewear_sku(sku):
-        return {"_skip": True, "reason": f"not-eyewear-sku:{sku}", "sku": sku, "url": url}
+        return {
+            "_skip": True,
+            "reason": f"not-eyewear-sku:{sku}",
+            "sku": sku,
+            "url": url,
+            "kind": "sunglasses",
+        }
 
     gbp = parse_gbp(prod.get("price"))
     if gbp is None or gbp <= 0:
@@ -210,9 +205,9 @@ def parse_eyewear_pdp(html: str, url: str) -> dict | None:
             "sku": sku,
             "reason": f"bad price {prod.get('price')!r}",
             "url": url,
+            "kind": "sunglasses",
         }
 
-    # Eyewear "variants" in NEXT_DATA are frame measurement maps, not buyable sizes.
     top_status, _stock = availability_map(data.get("availability"))
     details = prod.get("details") if isinstance(prod.get("details"), dict) else {}
     imgs = prod.get("images") if isinstance(prod.get("images"), list) else []
@@ -262,6 +257,215 @@ def parse_eyewear_pdp(html: str, url: str) -> dict | None:
     }
 
 
+def parse_hybris_eyewear(html: str, url: str, sku_hint: str) -> dict | None:
+    ld_list = _ld_products(html)
+    ld = ld_list[0] if ld_list else {}
+    sku = (sku_hint or "").upper()
+    if not sku:
+        m = re.search(r"/eyewear/p/(A\d+X[A-Z0-9]+)/", url, flags=re.I)
+        sku = (m.group(1) if m else "").upper()
+    if not sku or not is_eyewear_sku(sku):
+        return None
+
+    offers = ld.get("offers") if isinstance(ld.get("offers"), dict) else {}
+    gbp = parse_gbp(offers.get("price") or ld.get("price"))
+    if gbp is None or gbp <= 0:
+        m_gbp = re.search(r"£\s*([\d,]+(?:\.\d+)?)", html or "")
+        if m_gbp:
+            gbp = parse_gbp(m_gbp.group(1))
+    if gbp is None or gbp <= 0:
+        return {
+            "_skip": True,
+            "sku": sku,
+            "reason": f"bad price {offers.get('price')!r}",
+            "url": url,
+            "kind": "sunglasses",
+        }
+
+    title = str(ld.get("name") or "").strip()
+    color = str(ld.get("color") or "").strip()
+    material = str(ld.get("material") or "").strip()
+    desc = str(ld.get("description") or "").strip()
+    images = _hybris_image_urls(html, sku)
+    if not images and ld.get("image"):
+        images = [
+            str(ld.get("image")).replace("www.chanel.cn", "www.chanel.com")
+        ]
+
+    slug = ""
+    m_slug = re.search(r"/eyewear/p/[^/]+/([^/\"'?]+)", url, flags=re.I)
+    if m_slug:
+        slug = m_slug.group(1).lower()
+    cat = "Sunglasses"
+    if "eyeglass" in slug or "optical" in slug:
+        cat = "Optical"
+    elif "blue-light" in slug:
+        cat = "Blue Light Glasses"
+
+    return {
+        "id": sku,
+        "productCode": sku,
+        "sku": sku,
+        "title": title,
+        "priceLabel": f"£{gbp:,.0f}" if gbp >= 1 else str(offers.get("price") or ""),
+        "gbpPrice": gbp,
+        "categoryLabel": cat,
+        "collection": None,
+        "collectionCode": None,
+        "url": url if url.startswith("http") else pdp_url(sku, slug),
+        "hierarchy": [
+            {"label": "Eyewear", "url": "/gb/eyewear/"},
+            {"label": cat, "url": ""},
+        ],
+        "details": {
+            "color": color,
+            "description": desc if desc and desc.lower() != color.lower() else "",
+            "fabrics": material,
+            "reference": sku,
+            "dimensions": None,
+            "eyeLensColor": None,
+            "freeStat": None,
+            "treatment": None,
+        },
+        "images": images,
+        "imageMeta": [
+            {
+                "typology": "PACKSHOT_DEFAULT" if i == 0 else "PACKSHOT_OTHER",
+                "source": src,
+            }
+            for i, src in enumerate(images)
+        ],
+        "sizes": [{"size": "UNI", "orliSize": "UNI", "sku": sku, "inStock": True}],
+        "availabilityStatus": "IN_STOCK",
+        "inStock": True,
+        "new": False,
+        "collections": list(PARENT_COLS),
+        "leaf": LEAF_ID,
+        "leaves": [LEAF_ID],
+        "kind": "sunglasses",
+    }
+
+
+def parse_eyewear_pdp(html: str, url: str, sku_hint: str = "") -> dict | None:
+    if "__NEXT_DATA__" in (html or ""):
+        parsed = parse_next_eyewear(html, url, sku_hint)
+        if parsed:
+            return parsed
+    return parse_hybris_eyewear(html, url, sku_hint)
+
+
+def fetch_pdp_html(client: ChanelClient, url: str) -> tuple[int, str]:
+    """Prefer COM (Next.js details); fall back to CN Hybris GBP mirror."""
+    status, html = client.get_html(url, referer=HUB, max_attempts=1)
+    if (
+        not is_challenge(html, status)
+        and len(html) > 20000
+        and ("__NEXT_DATA__" in html or "application/ld+json" in html)
+    ):
+        return status, html
+
+    cn = to_cn_url(url)
+    log(f"  CN fallback {cn}")
+    try:
+        with _rtw._session_lock:
+            r = client.session.get(
+                cn,
+                impersonate=client.impersonate,
+                timeout=90,
+                headers={**_rtw.HTML_HEADERS, "Referer": to_cn_url(HUB)},
+            )
+            client._req_count += 1
+            st, text = r.status_code, r.text
+        if st == 200 and len(text) > 20000 and (
+            "application/ld+json" in text or "£" in text or "__NEXT_DATA__" in text
+        ):
+            return st, text
+        log(f"  CN weak st={st} len={len(text)}")
+    except Exception as e:
+        log(f"  CN GET error: {e}")
+    return status, html
+
+
+def fetch_plp_html(client: ChanelClient, url: str) -> tuple[int, str]:
+    cn = to_cn_url(url)
+    try:
+        with _rtw._session_lock:
+            r = client.session.get(
+                cn,
+                impersonate=client.impersonate,
+                timeout=90,
+                headers={**_rtw.HTML_HEADERS, "Referer": to_cn_url(HUB)},
+            )
+            client._req_count += 1
+            if r.status_code == 200 and len(r.text) > 10000:
+                return r.status_code, r.text
+    except Exception as e:
+        log(f"  CN PLP error: {e}")
+    return client.get_html(url, referer=HUB, max_attempts=1)
+
+
+def extract_skus_from_html(html: str) -> set[str]:
+    return {m.group(1).upper() for m in PDP_RE.finditer(html or "") if is_eyewear_sku(m.group(1))}
+
+
+def discover_plp_skus(client: ChanelClient) -> dict[str, str]:
+    found: dict[str, str] = {}
+    for cid, label, url in PLPS:
+        log(f"PLP {cid} ({label})")
+        pages = [url] + [
+            f"{url.rstrip('/')}/page-{n}/" for n in range(2, MAX_PLP_PAGES + 1)
+        ]
+        leaf_n = 0
+        for page in pages:
+            st, html = fetch_plp_html(client, page)
+            if st == 404:
+                break
+            if st != 200 or len(html) < 5000:
+                if page == url:
+                    log(f"  weak {page} st={st} len={len(html)}")
+                break
+            batch = extract_skus_from_html(html)
+            # Also capture slug URLs when present.
+            for m in PDP_RE.finditer(html or ""):
+                sku, slug = m.group(1).upper(), m.group(2)
+                if is_eyewear_sku(sku):
+                    found.setdefault(sku, pdp_url(sku, slug))
+            before = leaf_n
+            leaf_n += len(batch)
+            log(f"  {page} → +{len(batch)} (leaf ~{leaf_n})")
+            if page != url and not batch:
+                break
+            if page != url and len(batch) == 0 and before == leaf_n:
+                break
+            time.sleep(0.3)
+    log(f"PLP eyewear SKUs: {len(found)}")
+    return found
+
+
+def discover_sitemap_eyewear_skus(client: ChanelClient) -> dict[str, str]:
+    status, text = client.get_html(SITEMAP, max_attempts=2)
+    if status != 200 or len(text) < 1000:
+        try:
+            r = client.session.get(
+                SITEMAP,
+                impersonate=client.impersonate,
+                timeout=90,
+                headers=_rtw.HTML_HEADERS,
+            )
+            status, text = r.status_code, r.text
+        except Exception:
+            return {}
+    by_sku: dict[str, str] = {}
+    for m in PDP_RE.finditer(text or ""):
+        sku = m.group(1).upper()
+        slug = m.group(2)
+        if not is_eyewear_sku(sku):
+            continue
+        by_sku.setdefault(sku, pdp_url(sku, slug))
+    log(f"sitemap eyewear SKUs: {len(by_sku)}")
+    return by_sku
+
+
 def download_images(client: ChanelClient, sku: str, urls: list[str]) -> list[str]:
     dest = IMG_ROOT / sku.lower()
     dest.mkdir(parents=True, exist_ok=True)
@@ -273,6 +477,9 @@ def download_images(client: ChanelClient, sku: str, urls: list[str]) -> list[str
             local.append(web)
             continue
         data = client.get_bytes(url, referer=HUB)
+        if not data:
+            cn = url.replace("www.chanel.com", "www.chanel.cn")
+            data = client.get_bytes(cn, referer=to_cn_url(HUB))
         if not data:
             log(f"  skip img {sku} #{i}")
             continue
@@ -307,6 +514,67 @@ def save_cache(cache: dict) -> None:
     PDP_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n")
 
 
+def load_existing_products() -> dict[str, dict]:
+    by: dict[str, dict] = {}
+    if OUT_RAW.exists():
+        try:
+            for p in json.loads(OUT_RAW.read_text()).get("products") or []:
+                sku = str(p.get("sku") or "").upper()
+                if sku and p.get("gbpPrice") and not p.get("_skip"):
+                    by[sku] = p
+        except Exception:
+            pass
+    return by
+
+
+def is_complete(row: dict) -> bool:
+    if not isinstance(row, dict) or row.get("_skip"):
+        return False
+    if not row.get("gbpPrice") or row.get("kind") != "sunglasses":
+        return False
+    imgs = row.get("localImages") or []
+    if not imgs:
+        return False
+    for p in imgs:
+        path = ROOT / "public" / str(p).lstrip("/")
+        if path.is_file() and path.stat().st_size > 2048:
+            return True
+    return False
+
+
+def write_raw(
+    products: list[dict],
+    skipped: list[dict],
+    failed: list[dict],
+) -> None:
+    by_id = {p["sku"].upper(): p for p in products if p.get("sku")}
+    products = sorted(by_id.values(), key=lambda p: p["sku"])
+    leaf_counts = Counter(p.get("leaf") or LEAF_ID for p in products)
+    payload = {
+        "scrapedAt": datetime.now(timezone.utc).isoformat(),
+        "hub": HUB,
+        "note": (
+            "Chanel GB eyewear hub — Sunglasses + Optical + Blue Light Glasses "
+            "under Accessories→샤넬→선글라스; existing SKUs kept, new only scraped."
+        ),
+        "leaves": [
+            {
+                "id": LEAF_ID,
+                "label": "Sunglasses",
+                "labelKo": "선글라스",
+                "url": f"{BASE}/gb/eyewear/sunglasses/c/2x1x1/",
+            }
+        ],
+        "leafCounts": dict(leaf_counts),
+        "skipped": skipped,
+        "failed": failed,
+        "products": products,
+    }
+    OUT_RAW.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    log(f"wrote {len(products)} sunglasses → {OUT_RAW}")
+    log(f"leafCounts={dict(leaf_counts)} skipped={len(skipped)} failed={len(failed)}")
+
+
 def main() -> int:
     IMG_ROOT.mkdir(parents=True, exist_ok=True)
     OUT_RAW.parent.mkdir(parents=True, exist_ok=True)
@@ -316,36 +584,79 @@ def main() -> int:
         "https://www.chanel.com/gb/eyewear/p/A40888X09955L439559KUNI/"
         "pilot-sunglasses/"
     )
+    _rtw.IMPERSONATES = ("safari18_0_ios",)
+    _rtw.SEED_PROXIES = []
+
+    _orig_probe = _rtw.ChanelClient.probe_direct
+    _skip_once = {"v": True}
+
+    def _probe(self) -> bool:
+        if _skip_once["v"]:
+            _skip_once["v"] = False
+            log("skip init proxy hunt — eyewear uses CN/COM dual fetch")
+            return True
+        return _orig_probe(self)
+
+    def _no_proxy(self) -> None:
+        log("skip public-proxy hunt")
+
+    _rtw.ChanelClient.probe_direct = _probe
+    _rtw.ChanelClient.ensure_proxy = _no_proxy
+    _rtw.ChanelClient.rotate_proxy = lambda self, mark_dead=True: self.clear_proxy()
 
     client = ChanelClient()
-    if not client._proxy:
-        client.ensure_proxy()
-        client.warm()
 
-    log("discovering sunglasses PLP (See All)…")
-    ids = discover_plp_skus(client, PLP)
-    if not ids and not client._proxy:
-        client.ensure_proxy()
-        client.warm()
-        ids = discover_plp_skus(client, PLP)
+    existing = load_existing_products()
+    log(f"existing sunglasses in raw: {len(existing)}")
 
-    sitemap = discover_sitemap_eyewear_skus(client)
-    sku_urls: dict[str, str] = {}
-    for sku in ids:
-        sku_urls[sku] = sitemap.get(sku) or f"{BASE}/gb/eyewear/p/{sku}/"
+    # Sitemap is the authoritative full eyewear list (stable full SKUs).
+    # PLP HTML sometimes truncates SKUs mid-token — do not use for identity.
+    sku_urls = discover_sitemap_eyewear_skus(client)
+    plp_urls = discover_plp_skus(client)
+    log(f"PLP SKUs seen={len(plp_urls)} (informative only; sitemap drives scrape)")
+    # If a sitemap SKU lacks a slug URL somehow, keep generic.
+    for sku in list(sku_urls):
+        if not sku_urls[sku].rstrip("/").count("/") >= 6:
+            sku_urls[sku] = pdp_url(sku)
 
-    todo = sorted(sku_urls.items())
-    log(f"unique sunglasses SKUs to scrape: {len(todo)}")
+    if not sku_urls and not existing:
+        log("ERROR: no eyewear SKUs discovered")
+        return 1
 
     cache = load_cache()
+    # Drop truncated cache keys that are not full eyewear SKUs on the hub.
+    for bad in [k for k in list(cache) if k.upper() not in sku_urls and k.upper() not in existing]:
+        log(f"drop stale/truncated cache key {bad}")
+        cache.pop(bad, None)
     products: list[dict] = []
     skipped: list[dict] = []
     failed: list[dict] = []
-    leaf_counts: Counter[str] = Counter()
 
-    if not wait_for_pdp_access(client):
-        log("ERROR: PDP access never recovered — aborting")
-        return 1
+    # Seed with complete existing products (dedupe).
+    kept = 0
+    for sku, row in existing.items():
+        row = dict(row)
+        row["leaf"] = LEAF_ID
+        row["leaves"] = [LEAF_ID]
+        row["collections"] = list(PARENT_COLS)
+        row["kind"] = "sunglasses"
+        if is_complete(row):
+            products.append(row)
+            cache[sku] = row
+            kept += 1
+        elif (
+            isinstance(cache.get(sku), dict)
+            and is_complete(cache[sku])
+        ):
+            products.append(cache[sku])
+            kept += 1
+    log(f"kept complete existing: {kept}")
+
+    have = {p["sku"].upper() for p in products}
+    todo = sorted(
+        (sku, url) for sku, url in sku_urls.items() if sku.upper() not in have
+    )
+    log(f"new eyewear SKUs to scrape: {len(todo)} (hub total {len(sku_urls)})")
 
     consecutive_blocks = 0
     i = 0
@@ -354,50 +665,35 @@ def main() -> int:
         i += 1
 
         cached = cache.get(sku)
-        if (
-            isinstance(cached, dict)
-            and cached.get("gbpPrice")
-            and cached.get("leaf")
-            and cached.get("kind") == "sunglasses"
-            and not cached.get("_skip")
-        ):
+        if isinstance(cached, dict) and is_complete(cached):
             cached["leaf"] = LEAF_ID
             cached["leaves"] = [LEAF_ID]
             cached["collections"] = list(PARENT_COLS)
-            if not cached.get("localImages"):
-                cached = enrich_images(client, cached)
-            cache[sku] = cached
-            save_cache(cache)
             products.append(cached)
-            leaf_counts[LEAF_ID] += 1
             continue
 
-        status, html = client.get_html(url, referer=PLP, max_attempts=3)
-        if is_challenge(html, status):
+        status, html = fetch_pdp_html(client, url)
+        if is_challenge(html, status) or len(html) < 8000:
             consecutive_blocks += 1
             log(
                 f"[{i}/{len(todo)}] blocked {sku} "
-                f"(streak={consecutive_blocks}, proxy={client._proxy})"
+                f"(streak={consecutive_blocks})"
             )
-            client.clear_proxy()
             time.sleep(HARD_BLOCK_SLEEP)
-            if not client.probe_direct():
-                client.ensure_proxy()
-            client.warm()
+            if consecutive_blocks >= 5:
+                log(
+                    f"block streak={consecutive_blocks} — writing partial "
+                    f"({len(products)} products)"
+                )
+                failed.append(
+                    {"sku": sku, "url": url, "status": status, "reason": "akamai"}
+                )
+                break
             i -= 1
-            if consecutive_blocks >= 12:
-                if not wait_for_pdp_access(client, max_wait_s=600):
-                    failed.append(
-                        {"sku": sku, "url": url, "status": status, "reason": "akamai"}
-                    )
-                    consecutive_blocks = 0
-                    i += 1
-                else:
-                    consecutive_blocks = 0
             continue
 
         consecutive_blocks = 0
-        parsed = parse_eyewear_pdp(html, url)
+        parsed = parse_eyewear_pdp(html, url, sku_hint=sku)
         if not parsed:
             failed.append({"sku": sku, "url": url, "status": status, "reason": "parse"})
             log(f"[{i}/{len(todo)}] FAIL {sku} parse")
@@ -410,50 +706,46 @@ def main() -> int:
             time.sleep(PDP_PAUSE)
             continue
 
+        # Canonicalize to discovery SKU (URL) so we don't duplicate colour suffixes.
+        parsed["sku"] = sku
+        parsed["id"] = sku
+        parsed["productCode"] = sku
+        parsed["leaf"] = LEAF_ID
+        parsed["leaves"] = [LEAF_ID]
+        parsed["collections"] = list(PARENT_COLS)
+
         cache[sku] = parsed
         save_cache(cache)
         parsed = enrich_images(client, parsed)
         cache[sku] = parsed
         products.append(parsed)
-        leaf_counts[LEAF_ID] += 1
         log(
-            f"[{i}/{len(todo)}] OK {sku} {parsed['leaf']} "
-            f"£{parsed['gbpPrice']} imgs={len(parsed.get('localImages') or [])}"
+            f"[{i}/{len(todo)}] OK {sku} £{parsed['gbpPrice']} "
+            f"imgs={len(parsed.get('localImages') or [])} "
+            f"title={parsed.get('title')!r}"
         )
         save_cache(cache)
         time.sleep(PDP_PAUSE)
 
-    save_cache(cache)
-
-    by_id: dict[str, dict] = {}
-    for p in products:
-        by_id[p["sku"]] = p
+    # Merge any leftover complete cache rows for SKUs still on hub.
+    by_id = {p["sku"].upper(): p for p in products if p.get("sku")}
+    for sku, row in cache.items():
+        su = str(sku).upper()
+        if su in by_id:
+            continue
+        if su in sku_urls and is_complete(row):
+            row["leaf"] = LEAF_ID
+            row["leaves"] = [LEAF_ID]
+            row["collections"] = list(PARENT_COLS)
+            by_id[su] = row
     products = list(by_id.values())
-    products.sort(key=lambda p: p["sku"])
 
-    payload = {
-        "scrapedAt": datetime.now(timezone.utc).isoformat(),
-        "hub": HUB,
-        "plp": PLP,
-        "note": "Chanel GB eyewear — See All Sunglasses PLP.",
-        "leaves": [
-            {
-                "id": LEAF_ID,
-                "label": "Sunglasses",
-                "labelKo": "선글라스",
-                "url": PLP,
-            }
-        ],
-        "leafCounts": dict(leaf_counts),
-        "skipped": skipped,
-        "failed": failed,
-        "products": products,
-    }
-    OUT_RAW.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
-    log(f"wrote {len(products)} sunglasses → {OUT_RAW}")
-    log(f"leafCounts={dict(leaf_counts)}")
-    log(f"skipped={len(skipped)} failed={len(failed)}")
-    return 0 if products else 1
+    save_cache(cache)
+    if not products:
+        log("ERROR: 0 sunglasses scraped")
+        return 1
+    write_raw(products, skipped, failed)
+    return 0
 
 
 if __name__ == "__main__":
