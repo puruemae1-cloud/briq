@@ -3648,6 +3648,7 @@ body:has(.nav-drawer-toggle:checked) {
 .product-detail__desc {
   color: rgba(11, 18, 16, 0.72);
   line-height: 1.65;
+  white-space: pre-line;
 }
 
 .product-detail__sold-panel {

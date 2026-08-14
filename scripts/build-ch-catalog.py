@@ -438,6 +438,24 @@ _EN_TITLE_KO = {
     "Pantos": "판토스",
     "Shield": "실드",
     "Acetate": "아세테이트",
+    "Case": "케이스",
+    "Bezel": "베젤",
+    "Crown": "크라운",
+    "Dial": "다이얼",
+    "Strap": "스트랩",
+    "Movement": "무브먼트",
+    "Functions": "기능",
+    "Water-resistance": "방수",
+    "Diamonds": "다이아몬드",
+    "Material": "소재",
+    "Lens width": "렌즈 너비",
+    "Lens height": "렌즈 높이",
+    "Frame width": "프레임 너비",
+    "Branch length": "템플 길이",
+    "highly resistant ceramic": "고강도 세라믹",
+    "Self-winding": "오토매틱",
+    "quartz movement": "쿼츠 무브먼트",
+    "brilliant-cut diamonds": "브릴리언트 컷 다이아몬드",
     "Coco Crush": "코코 크러쉬",
     "COCO CRUSH": "코코 크러쉬",
     "Ultra": "울트라",
@@ -1012,7 +1030,7 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def as_text(val) -> str:
@@ -1046,6 +1064,148 @@ def as_text(val) -> str:
                 return as_text(val.get(k))
         return ""
     return str(val).strip()
+
+
+CHAR_LABEL_KO = {
+    "Sizes": "사이즈",
+    "Size": "사이즈",
+    "Case": "케이스",
+    "Bezel": "베젤",
+    "Crown": "크라운",
+    "Dial": "다이얼",
+    "Strap": "스트랩",
+    "Bracelet": "브레이슬릿",
+    "Movement": "무브먼트",
+    "Functions": "기능",
+    "Water-resistance": "방수",
+    "Water resistance": "방수",
+    "Diamonds": "다이아몬드",
+    "Material": "소재",
+    "Materials": "소재",
+    "Feature": "특징",
+    "Lens width": "렌즈 너비",
+    "Lens height": "렌즈 높이",
+    "Frame width": "프레임 너비",
+    "Branch length": "템플 길이",
+    "Bridge": "브릿지",
+    "Color": "컬러",
+    "Colour": "컬러",
+}
+
+
+def characteristics_list(details: dict | None) -> list[dict]:
+    if not isinstance(details, dict):
+        return []
+    raw = details.get("characteristics") or []
+    out: list[dict] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        label = as_text(item.get("label"))
+        value = as_text(item.get("value"))
+        if label and value:
+            out.append({"label": label, "value": value})
+    return out
+
+
+def build_tech_specs(details: dict | None) -> list[dict]:
+    specs: list[dict] = []
+    for item in characteristics_list(details):
+        label_en = item["label"]
+        value_en = item["value"]
+        label_ko = CHAR_LABEL_KO.get(label_en) or t(label_en) or label_en
+        value_ko = t(value_en) or value_en
+        specs.append({"labelKo": label_ko, "valueKo": value_ko})
+    return specs
+
+
+def build_ch_detail_fields(
+    row: dict,
+    *,
+    name_ko: str,
+    image: str | None,
+    extra_meta: list[str] | None = None,
+) -> tuple[str, list[dict], list[dict]]:
+    """Return (descriptionKo, storySections, techSpecs) from enriched raw details."""
+    details = row.get("details") if isinstance(row.get("details"), dict) else {}
+    editorial = as_text(details.get("editorial"))
+    desc_en = as_text(details.get("description"))
+    body_en = editorial or desc_en
+    body_ko = t(body_en) if body_en else ""
+
+    chars = characteristics_list(details)
+    tech = build_tech_specs(details)
+
+    meta_parts: list[str] = []
+    for line in extra_meta or []:
+        if line and str(line).strip():
+            meta_parts.append(str(line).strip())
+
+    blocks = [b for b in [body_ko, *meta_parts] if b]
+    uniq: list[str] = []
+    seen: set[str] = set()
+    for b in blocks:
+        key = b[:80]
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(b)
+    description_ko = "\n\n".join(uniq)
+
+    story: list[dict] = []
+    if body_ko:
+        story.append({"titleKo": name_ko, "bodyKo": body_ko, "image": image})
+    if chars:
+        spec_body = "\n".join(
+            f"{(CHAR_LABEL_KO.get(c['label']) or t(c['label']) or c['label'])}: "
+            f"{t(c['value']) or c['value']}"
+            for c in chars
+        )
+        if spec_body and (not body_ko or spec_body[:40] not in body_ko):
+            story.append(
+                {
+                    "titleKo": "제품 상세",
+                    "bodyKo": spec_body,
+                    "image": image,
+                }
+            )
+    return description_ko, story, tech
+
+
+def apply_detail_fields(
+    prod: dict, row: dict, *, name_ko: str, image: str | None
+) -> dict:
+    """Attach enriched Korean copy + techSpecs onto a built Chanel product."""
+    details = row.get("details") if isinstance(row.get("details"), dict) else {}
+    has_enrich = bool(details.get("characteristics") or details.get("editorial"))
+    if not has_enrich:
+        desc_en = as_text(details.get("description"))
+        if desc_en and len(desc_en) > 100:
+            desc_ko = t(desc_en)
+            cur = prod.get("descriptionKo") or ""
+            if desc_ko and len(desc_ko) > len(cur):
+                prod["descriptionKo"] = desc_ko
+                if not prod.get("storySections"):
+                    prod["storySections"] = [
+                        {"titleKo": name_ko, "bodyKo": desc_ko, "image": image}
+                    ]
+        return prod
+
+    existing = as_text(prod.get("descriptionKo"))
+    meta = []
+    for block in existing.split("\n\n"):
+        if ":" in block and len(block) < 160:
+            meta.append(block)
+    description_ko, story, tech = build_ch_detail_fields(
+        row, name_ko=name_ko, image=image, extra_meta=meta
+    )
+    if description_ko:
+        prod["descriptionKo"] = description_ko
+    if story:
+        prod["storySections"] = story
+    if tech:
+        prod["techSpecs"] = tech
+    return prod
 
 
 def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1177,7 +1337,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1311,7 +1471,7 @@ def build_slg_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1451,7 +1611,7 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1613,7 +1773,7 @@ def build_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         prod["sizeChart"] = CH_RING_SIZE_CHART
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_high_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1774,7 +1934,7 @@ def build_high_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
         prod["sizeChart"] = CH_RING_SIZE_CHART
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_fine_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -1942,7 +2102,7 @@ def build_fine_jewellery_product(row: dict, prev: dict | None, now_iso: str) -> 
         prod["sizeChart"] = CH_RING_SIZE_CHART
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -2086,7 +2246,7 @@ def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -2263,7 +2423,7 @@ def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         prod["sizeChart"] = size_chart
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def build_watch_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
@@ -2415,7 +2575,7 @@ def build_watch_product(row: dict, prev: dict | None, now_iso: str) -> dict | No
     }
     if hover:
         prod["hoverImage"] = hover
-    return prod
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
 def main() -> int:
