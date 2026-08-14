@@ -1,4 +1,4 @@
-name: Scrape Chanel High Jewellery
+name: Scrape Chanel Fine Jewellery
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: scrape-ch-high-jewellery
+  group: scrape-ch-fine-jewellery
   cancel-in-progress: false
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -31,14 +31,14 @@ jobs:
           pip install "curl_cffi>=0.7.0"
           pip install -r scripts/requirements-images.txt || true
 
-      - name: Scrape Chanel high jewellery PDPs + images
-        run: python3 scripts/scrape-ch-high-jewellery.py
+      - name: Scrape Chanel fine jewellery PDPs + images
+        run: python3 scripts/scrape-ch-fine-jewellery.py
 
       - name: Build Chanel catalogue
         run: python3 scripts/build-ch-catalog.py
 
       - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp
+        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp --skip-whiten
 
       - name: Verify product images (remote)
         run: python3 scripts/verify-product-images.py --brand ch --remote || true
@@ -47,9 +47,9 @@ jobs:
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
-            "feat: import Chanel High Jewellery under Accessories→샤넬→High 주얼리" \
+            "feat: import Chanel Fine Jewellery under Accessories→샤넬→Fine 주얼리" \
             src/data/ch \
             src/data/categories.ts \
-            scripts/scrape-ch-high-jewellery.py \
+            scripts/scrape-ch-fine-jewellery.py \
             scripts/build-ch-catalog.py \
-            .github/workflows/scrape-ch-high-jewellery.yml
+            .github/workflows/scrape-ch-fine-jewellery.yml
