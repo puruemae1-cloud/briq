@@ -240,9 +240,10 @@ export function NaverPayOrderButton({
           el.classList.remove(
             "type_three_button",
             "type_two_button",
-            "size_small",
+            "size_medium",
+            "size_large",
           );
-          el.classList.add("type_one_button", "size_medium");
+          el.classList.add("type_one_button", "size_small");
         });
 
         const fill = (el: HTMLElement) => {
@@ -253,8 +254,10 @@ export function NaverPayOrderButton({
           el.style.setProperty("bottom", "0", "important");
           el.style.setProperty("left", "0", "important");
           el.style.setProperty("width", "100%", "important");
+          el.style.setProperty("min-width", "0", "important");
+          el.style.setProperty("max-width", "100%", "important");
           el.style.setProperty("height", "100%", "important");
-          el.style.setProperty("min-height", "100%", "important");
+          el.style.setProperty("min-height", "0", "important");
           el.style.setProperty("max-height", "100%", "important");
           el.style.setProperty("margin", "0", "important");
           el.style.setProperty("padding", "0", "important");
@@ -263,6 +266,7 @@ export function NaverPayOrderButton({
           el.style.setProperty("align-items", "center", "important");
           el.style.setProperty("justify-content", "center", "important");
           el.style.setProperty("line-height", "1", "important");
+          el.style.setProperty("overflow", "hidden", "important");
         };
 
         root
