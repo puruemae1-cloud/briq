@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
-/** Product PDP images live in git; on Vercel they are slimmed from the deploy
- *  and served from GitHub via rewrite to keep builds under disk limits. */
-const PRODUCT_IMAGE_ORIGIN =
-  process.env.PRODUCT_IMAGE_ORIGIN ||
-  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public/products";
+/**
+ * Product + banner media live on the `product-images` git tag.
+ * On Vercel we do NOT proxy them (that burned Fast Origin Transfer / Hobby
+ * fair-use). The browser loads jsDelivr directly via NEXT_PUBLIC_MEDIA_ORIGIN.
+ */
+const MEDIA_ORIGIN =
+  process.env.MEDIA_ORIGIN ||
+  "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
 
 const nextConfig: NextConfig = {
   // mobile/ is a separate Expo app
@@ -14,15 +17,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
-  async rewrites() {
-    // Only proxy when the local file is missing (Vercel slim build). Locally,
-    // files in public/products are served directly and this rewrite is unused.
-    return [
-      {
-        source: "/products/:path*",
-        destination: `${PRODUCT_IMAGE_ORIGIN}/:path*`,
-      },
-    ];
+  env: {
+    // Empty locally so `public/` paths keep working in next dev.
+    NEXT_PUBLIC_MEDIA_ORIGIN: process.env.VERCEL ? MEDIA_ORIGIN : "",
   },
 };
 

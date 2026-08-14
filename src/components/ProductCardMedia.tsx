@@ -9,7 +9,7 @@ import {
   type ReactNode,
 } from "react";
 import type {  Product  } from "@/data/product-types";
-import { resolveCardGallery } from "@/lib/product-image";
+import { mediaUrl, resolveCardGallery } from "@/lib/product-image";
 
 type ProductCardMediaProps = {
   product: Product;
@@ -92,11 +92,12 @@ export function ProductCardMedia({
             className={`product-frame__img product-card__img product-card-media__img${
               i === index ? " is-current" : ""
             }`}
-            src={src}
+            src={mediaUrl(src)}
             alt={i === 0 ? product.nameKo : ""}
             aria-hidden={i !== 0}
             loading={i === 0 ? "lazy" : "lazy"}
             decoding="async"
+            referrerPolicy="no-referrer"
           />
         ))}
         {children}

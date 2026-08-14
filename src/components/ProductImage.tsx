@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { ProductImageTone } from "@/lib/product-image";
+import { mediaUrl, type ProductImageTone } from "@/lib/product-image";
 
 const toneClass: Record<ProductImageTone, string> = {
   card: "product-frame product-frame--card",
@@ -36,7 +36,9 @@ export function ProductImage({
   loading = "lazy",
   children,
 }: ProductImageProps) {
-  const hasHover = Boolean(hoverSrc && hoverSrc !== src);
+  const primary = mediaUrl(src);
+  const hover = hoverSrc ? mediaUrl(hoverSrc) : undefined;
+  const hasHover = Boolean(hover && hover !== primary);
   const frameClass = [
     toneClass[tone],
     hasHover ? "product-frame--has-hover" : "",
@@ -53,20 +55,22 @@ export function ProductImage({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className={`${imageClass} product-frame__img--primary`}
-        src={src}
+        src={primary}
         alt={alt}
         loading={loading}
         decoding="async"
+        referrerPolicy="no-referrer"
       />
       {hasHover ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           className={`${imageClass} product-frame__img--hover`}
-          src={hoverSrc}
+          src={hover}
           alt=""
           aria-hidden
           loading="lazy"
           decoding="async"
+          referrerPolicy="no-referrer"
         />
       ) : null}
       {children}

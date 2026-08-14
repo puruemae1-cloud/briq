@@ -22,6 +22,25 @@
 
 import type {  Product, ProductVariant  } from "@/data/product-types";
 
+/**
+ * On Vercel, heavy `/products/*` and `/banners/*` assets are not shipped in the
+ * deploy. Point the browser straight at jsDelivr (GitHub `product-images` tag)
+ * so image bytes never count against Vercel Fast Origin Transfer.
+ * Locally this is a no-op and files under `public/` are used.
+ */
+export function mediaUrl(src: string | undefined | null): string {
+  if (!src) return "";
+  if (/^https?:\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) {
+    return src;
+  }
+  const origin = (process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "").replace(/\/$/, "");
+  if (!origin) return src;
+  if (src.startsWith("/products/") || src.startsWith("/banners/")) {
+    return `${origin}${src}`;
+  }
+  return src;
+}
+
 export const PRODUCT_IMAGE = {
   /** Canonical display ratio for cards, PDP, cart thumbs */
   aspect: "4 / 5",

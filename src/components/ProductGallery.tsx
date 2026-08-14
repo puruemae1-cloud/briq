@@ -8,6 +8,7 @@ import {
   type TouchEvent,
 } from "react";
 import { ProductImage } from "@/components/ProductImage";
+import { mediaUrl } from "@/lib/product-image";
 
 const SWIPE_THRESHOLD = 40;
 
@@ -235,10 +236,11 @@ export function ProductGallery({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="product-lightbox__img"
-            src={src}
+            src={mediaUrl(src)}
             alt={alt}
             onClick={(e) => e.stopPropagation()}
             draggable={false}
+            referrerPolicy="no-referrer"
           />
           {list.length > 1 ? (
             <p className="product-lightbox__count">

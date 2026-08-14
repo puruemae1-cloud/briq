@@ -7,7 +7,7 @@ import {
   NAVERPAY_SHIPPING_DEFAULTS,
   NAVERPAY_TAX_TYPE,
 } from "@/lib/naverpay/config";
-import { resolveProductImage } from "@/lib/product-image";
+import { resolveProductImage, mediaUrl } from "@/lib/product-image";
 
 const NAVER_ID_RE = /^[A-Za-z0-9!+\-/=_|]+$/;
 
@@ -57,6 +57,9 @@ export function cdata(value: string): string {
 
 export function absoluteUrl(pathOrUrl: string): string {
   if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
+  // Prefer external media CDN so product photos don't depend on Vercel bytes.
+  const viaCdn = mediaUrl(pathOrUrl);
+  if (/^https?:\/\//i.test(viaCdn)) return viaCdn;
   const origin = getNaverPaySiteOrigin();
   return `${origin}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
 }
