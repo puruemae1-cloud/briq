@@ -18,12 +18,15 @@ export function ProductGallery({
   soldOut,
   badge,
   resetKey,
+  frameModifier,
 }: {
   images: string[];
   alt: string;
   soldOut?: boolean;
   badge?: string | null;
   resetKey?: string;
+  /** Optional frame modifier (e.g. Chanel fragrance mobile zoom). */
+  frameModifier?: string;
 }) {
   const list = images.length > 0 ? images : [];
   const [active, setActive] = useState(0);
@@ -113,7 +116,9 @@ export function ProductGallery({
             src={src}
             alt={alt}
             tone="detail"
-            className={`product-detail__media${soldOut ? " is-sold-out" : ""}`}
+            className={`product-detail__media${soldOut ? " is-sold-out" : ""}${
+              frameModifier ? ` ${frameModifier}` : ""
+            }`}
             loading="eager"
           >
             {soldOut ? (

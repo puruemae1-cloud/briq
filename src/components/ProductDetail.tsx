@@ -397,8 +397,16 @@ export function ProductDetail({
       </>
     );
 
+  const chFragrance =
+    product.subcategory === "ch-fragrance" ||
+    Boolean(product.chCollections?.includes("ch-fragrance"));
+
   return (
-    <div className={`product-page${soldOut ? " product-page--sold-out" : ""}`}>
+    <div
+      className={`product-page${soldOut ? " product-page--sold-out" : ""}${
+        chFragrance ? " product-page--ch-fragrance" : ""
+      }`}
+    >
       <article className="product-detail">
         <ProductGallery
           images={galleryImages}
@@ -406,6 +414,9 @@ export function ProductDetail({
           soldOut={soldOut}
           badge={optionLabel || selected?.nameKo}
           resetKey={selected?.id ?? product.id}
+          frameModifier={
+            chFragrance ? "product-frame--ch-fragrance" : undefined
+          }
         />
 
         <div className="product-detail__info">

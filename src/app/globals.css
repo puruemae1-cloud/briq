@@ -3192,6 +3192,44 @@ body:has(.nav-drawer-toggle:checked) {
   transition: filter 0.45s ease, opacity 0.45s ease;
 }
 
+/*
+ * Chanel fragrance packshots sit on large black mats, so bottles read tiny on
+ * mobile PLP / PDP. Tighten the frame and zoom the subject for phones only.
+ */
+@media (max-width: 899px) {
+  .product-card--ch-fragrance .product-card-media__frame,
+  .product-card--ch-fragrance .product-frame--card {
+    padding: 0;
+  }
+
+  .product-card--ch-fragrance .product-frame__img {
+    transform: scale(1.55);
+    transform-origin: center center;
+  }
+
+  .product-card--ch-fragrance.product-card--sold-out .product-frame__img {
+    transform: scale(1.55);
+  }
+
+  .product-page--ch-fragrance .product-frame--detail,
+  .product-frame--detail.product-frame--ch-fragrance {
+    padding: 0.4rem;
+  }
+
+  .product-page--ch-fragrance .product-frame--detail .product-frame__img,
+  .product-frame--detail.product-frame--ch-fragrance .product-frame__img {
+    transform: scale(1.45);
+    transform-origin: center center;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .product-card--ch-fragrance:hover .product-frame__img,
+    .product-card--ch-fragrance:hover .product-card__img {
+      transform: scale(1.55);
+    }
+  }
+}
+
 .product-sold-out {
   position: absolute;
   inset: 0;
