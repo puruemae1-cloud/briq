@@ -47,19 +47,42 @@ def ensure_git_identity(cwd: Path) -> None:
     )
 
 
-def sync_brand(tmp: Path, name: str, src: Path) -> bool:
-    """Copy one brand tree into the worktree and stage it. Returns True if dirty."""
+def sync_brand(tmp: Path, name: str, src: Path, *, merge: bool = False) -> bool:
+    """Copy one brand tree into the worktree and stage it. Returns True if dirty.
+
+    merge=True replaces only colour (or SKU) subfolders present locally, so
+    sibling colourways already on the tag are preserved. Use this when the
+    local tree is a partial redownload (e.g. pale Arc'teryx colourways only).
+    """
     dest = tmp / "public" / "products" / name
     dest.mkdir(parents=True, exist_ok=True)
-    for child in src.iterdir():
-        target = dest / child.name
-        if child.is_dir():
-            if target.exists():
-                shutil.rmtree(target)
-            shutil.copytree(child, target)
-        elif child.is_file() and child.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"}:
-            # Flat listing thumbs (e.g. public/products/cw/*.jpg)
-            shutil.copy2(child, target)
+    if merge:
+        for pid_dir in src.iterdir():
+            if not pid_dir.is_dir():
+                continue
+            for colour_dir in pid_dir.iterdir():
+                if not colour_dir.is_dir():
+                    continue
+                target = dest / pid_dir.name / colour_dir.name
+                if target.exists():
+                    shutil.rmtree(target)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copytree(colour_dir, target)
+    else:
+        for child in src.iterdir():
+            target = dest / child.name
+            if child.is_dir():
+                if target.exists():
+                    shutil.rmtree(target)
+                shutil.copytree(child, target)
+            elif child.is_file() and child.suffix.lower() in {
+                ".jpg",
+                ".jpeg",
+                ".png",
+                ".webp",
+            }:
+                # Flat listing thumbs (e.g. public/products/cw/*.jpg)
+                shutil.copy2(child, target)
     run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
     status = subprocess.run(
         ["git", "status", "--porcelain", "--", f"public/products/{name}"],
@@ -104,6 +127,14 @@ def main() -> int:
         "--skip-whiten",
         action="store_true",
         help="Skip studio-background whitening before push",
+    )
+    ap.add_argument(
+        "--merge",
+        action="store_true",
+        help=(
+            "Merge colour/SKU subfolders into the tag without replacing "
+            "sibling folders under each product id (for partial redownloads)."
+        ),
     )
     args = ap.parse_args()
 
@@ -178,8 +209,9 @@ def main() -> int:
 
         any_pushed = False
         for name, src in src_roots:
-            print(f"=== sync {name} ===", flush=True)
-            if not sync_brand(tmp, name, src):
+            mode = "merge" if args.merge else "replace"
+            print(f"=== sync {name} ({mode}) ===", flush=True)
+            if not sync_brand(tmp, name, src, merge=args.merge):
                 print(f"No image changes for {name}.", flush=True)
                 continue
 

@@ -16,6 +16,9 @@ Gucci pale / light colourways likewise keep official DarkGray_Center CDN bytes
 (see gc_pale_colour.py). gc-pdp is skipped by DEFAULT_DIRS, but when a push
 passes --dirs gc-pdp we must still exclude pale SKUs from rembg.
 
+Arc'teryx pale apparel colourways (White Light / Arctic Silk / Sea Salt / …)
+keep images.arcteryx.com bytes (see ax_pale_colour.py).
+
 Importable helpers for scrapers / weekly syncs / image tag pushes.
 """
 from __future__ import annotations
@@ -233,8 +236,8 @@ def save_product_image(
 ) -> str:
     """Write downloaded PDP bytes then optionally greymat studio mats in place.
 
-    Pass greymat=False for pale PS / GC colourways (and Burberry-style official
-    crops) — rembg/soft remap turns white garments into grey blocks.
+    Pass greymat=False for pale PS / GC / AX colourways (and Burberry-style
+    official crops) — rembg/soft remap turns white garments into grey blocks.
     """
     dest = Path(path)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -270,6 +273,9 @@ def greymat_dirs(
     official CDN packshots must stay untouched (see ps_pale_colour.py).
 
     Gucci pale / light colourways are excluded the same way (gc_pale_colour.py).
+
+    Arc'teryx pale apparel colourways are excluded the same way
+    (ax_pale_colour.py) under axa-pdp.
     """
     files = collect_images(dirs)
     if "ps-pdp" in dirs:
@@ -310,6 +316,26 @@ def greymat_dirs(
             print(
                 f"GC pale skip: excluded {before - len(files)} images "
                 f"across {len(skip_codes)} white/light codes",
+                flush=True,
+            )
+    if "axa-pdp" in dirs:
+        try:
+            from ax_pale_colour import pale_axa_colour_dirs  # type: ignore
+
+            skip_dirs = pale_axa_colour_dirs()
+        except Exception as e:
+            print(f"WARN: could not load AX pale dirs ({e})", flush=True)
+            skip_dirs = set()
+        if skip_dirs:
+            before = len(files)
+            files = [
+                p
+                for p in files
+                if f"{p.parent.parent.name}/{p.parent.name}" not in skip_dirs
+            ]
+            print(
+                f"AX pale skip: excluded {before - len(files)} images "
+                f"across {len(skip_dirs)} white-ish colour dirs",
                 flush=True,
             )
     if limit:
