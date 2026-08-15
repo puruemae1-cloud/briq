@@ -1,6 +1,6 @@
 "use client";
 
-import { toMobileBannerSrc } from "@/lib/banner-image";
+import { toMobileBannerSrc, toTabletBannerSrc } from "@/lib/banner-image";
 import { mediaUrl } from "@/lib/product-image";
 
 type BannerImageProps = {
@@ -14,9 +14,11 @@ type BannerImageProps = {
 };
 
 /**
- * Serves a lighter `/banners/m/` asset on mobile viewports when present.
- * Desktop keeps the original high-res file.
- * On Vercel both resolve to the external media CDN (not Vercel bandwidth).
+ * Serves device-optimised banner assets:
+ *  - phone  (≤899px):  `/banners/m/…`
+ *  - tablet (900–1199px): `/banners/t/…` when present, else desktop
+ *  - desktop (≥1200px): original `/banners/…`
+ * On Vercel all resolve to the external media CDN (not Vercel bandwidth).
  */
 export function BannerImage({
   src,
@@ -28,10 +30,12 @@ export function BannerImage({
   "aria-hidden": ariaHidden,
 }: BannerImageProps) {
   const desktopSrc = mediaUrl(src);
+  const tabletSrc = mediaUrl(toTabletBannerSrc(src));
   const mobileSrc = mediaUrl(toMobileBannerSrc(src));
+  const hasTablet = tabletSrc !== desktopSrc;
   const hasMobile = mobileSrc !== desktopSrc;
 
-  if (!hasMobile) {
+  if (!hasTablet && !hasMobile) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
@@ -50,7 +54,20 @@ export function BannerImage({
 
   return (
     <picture style={{ display: "contents" }}>
-      <source media="(max-width: 899px)" srcSet={mobileSrc} type="image/jpeg" />
+      {hasMobile ? (
+        <source
+          media="(max-width: 899px)"
+          srcSet={mobileSrc}
+          type="image/jpeg"
+        />
+      ) : null}
+      {hasTablet ? (
+        <source
+          media="(max-width: 1199px)"
+          srcSet={tabletSrc}
+          type="image/jpeg"
+        />
+      ) : null}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className={className}

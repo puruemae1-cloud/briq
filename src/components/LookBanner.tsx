@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { BannerImage } from "@/components/BannerImage";
 import { pickRotating, type LookBanner } from "@/data/home-banners";
+import { bannerFocalForSrc } from "@/lib/banner-focal";
 
 export function LookBannerBlock({
   banner,
@@ -12,13 +13,17 @@ export function LookBannerBlock({
 }) {
   const align = banner.align ?? "left";
   const image = pickRotating(banner.images, rotationOffset);
-  const slides = banner.slides?.map((slide, i) => ({
-    id: slide.id,
-    labelKo: slide.labelKo,
-    href: slide.href,
-    image: pickRotating(slide.images, rotationOffset + i),
-    focal: slide.focal,
-  }));
+  const focal = bannerFocalForSrc(image, banner.focal);
+  const slides = banner.slides?.map((slide, i) => {
+    const slideImage = pickRotating(slide.images, rotationOffset + i);
+    return {
+      id: slide.id,
+      labelKo: slide.labelKo,
+      href: slide.href,
+      image: slideImage,
+      focal: bannerFocalForSrc(slideImage, slide.focal),
+    };
+  });
 
   return (
     <section
@@ -33,7 +38,7 @@ export function LookBannerBlock({
             className="look-banner__img"
             src={image}
             alt=""
-            style={banner.focal ? { objectPosition: banner.focal } : undefined}
+            style={focal ? { objectPosition: focal } : undefined}
             loading="lazy"
           />
           <div className="look-banner__shade" />

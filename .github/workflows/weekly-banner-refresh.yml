@@ -1,0 +1,50 @@
+name: Weekly luxury banner refresh
+
+on:
+  schedule:
+    # Every Monday 06:00 UTC (~15:00 KST) — before brand stock syncs
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-banner-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install image deps
+        run: pip install pillow numpy
+
+      - name: Refresh homepage + category banners
+        run: python3 scripts/weekly-banner-refresh.py
+
+      - name: Push banners to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs banners --skip-whiten
+
+      - name: Commit manifest + banner crops
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly luxury model banner refresh" \
+            public/banners \
+            src/data/banner-refresh-manifest.json \
+            scripts/weekly-banner-refresh.py \
+            scripts/banner_smart_crop.py \
+            scripts/push-product-images-tag.py

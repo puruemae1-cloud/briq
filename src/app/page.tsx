@@ -8,10 +8,12 @@ import { LookBannerBlock } from "@/components/LookBanner";
 import { ProductCard } from "@/components/ProductCard";
 import { heroImages, homeLookBanners, pickRotating, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
+import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { getHomepageRailProducts } from "@/lib/product-sort";
 
 export default async function HomePage() {
   const heroImage = pickRotating(heroImages);
+  const heroFocal = bannerFocalForSrc(heroImage, "center 40%");
 
   return (
     <>
@@ -24,6 +26,7 @@ export default async function HomePage() {
             aria-hidden
             fetchPriority="high"
             loading="eager"
+            style={heroFocal ? { objectPosition: heroFocal } : undefined}
           />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">

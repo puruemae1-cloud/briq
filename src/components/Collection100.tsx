@@ -4,6 +4,7 @@ import { CollectionBestsellerTier } from "@/components/CollectionReveal";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
 import { pickRotating } from "@/data/home-banners";
 import { getCollection100 } from "@/data/products";
+import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { curateCollectionEdit } from "@/lib/collection-edit";
 
 const collectionBannerImages = [
@@ -30,6 +31,9 @@ export function Collection100() {
           alt=""
           aria-hidden
           loading="lazy"
+          style={{
+            objectPosition: bannerFocalForSrc(banner, "center 40%"),
+          }}
         />
         <div className="collection-100__banner-shade" aria-hidden />
         <div className="collection-100__banner-content">

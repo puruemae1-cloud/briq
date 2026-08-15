@@ -14,6 +14,7 @@ import {
 import { getProductsByCategory } from "@/data/products";
 import { pickRotating } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
+import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { searchProducts } from "@/lib/product-search";
 import {
   PRODUCT_SORTS,
@@ -134,6 +135,9 @@ export default async function ShopPage({ searchParams }: Props) {
           aria-hidden
           loading="eager"
           fetchPriority="high"
+          style={{
+            objectPosition: bannerFocalForSrc(heroImage, "center 45%"),
+          }}
         />
         <div className="shop-hero__shade" aria-hidden />
         <div className="shop-hero__content">

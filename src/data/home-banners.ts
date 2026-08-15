@@ -25,7 +25,7 @@ export type LookBanner = {
   support: string;
   href: string;
   cta: string;
-  /** Rotates to the next photo every two weeks */
+  /** Rotates to the next photo every week */
   images: string[];
   focal?: string;
   align?: "left" | "center" | "right";
@@ -82,14 +82,14 @@ export function resolveHomeRailLinks(banner: LookBanner): LookBannerLink[] {
   return [];
 }
 
-const TWO_WEEKS_MS = 14 * 24 * 60 * 60 * 1000;
+const ONE_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
-/** Advances once every two weeks so the artwork refreshes itself. */
+/** Advances once every week so the artwork refreshes itself. */
 export function rotationIndex(now: number = Date.now()) {
-  return Math.floor(now / TWO_WEEKS_MS);
+  return Math.floor(now / ONE_WEEK_MS);
 }
 
-/** Picks this fortnight's photo; `offset` keeps banners out of sync. */
+/** Picks this week's photo; `offset` keeps banners out of sync. */
 export function pickRotating(
   images: string[],
   offset = 0,

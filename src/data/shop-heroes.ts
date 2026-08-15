@@ -1,7 +1,7 @@
 import { pickRotating } from "@/data/home-banners";
 
 /**
- * Shop / subcategory page heroes — rotate every two weeks via pickRotating.
+ * Shop / subcategory page heroes — rotate every week via pickRotating.
  * Key: `category` or `category:sub`.
  */
 const shopHeroImages: Record<string, string[]> = {

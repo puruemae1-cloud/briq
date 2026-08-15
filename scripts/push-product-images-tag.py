@@ -47,6 +47,23 @@ def ensure_git_identity(cwd: Path) -> None:
     )
 
 
+def sync_banners(tmp: Path, src: Path) -> bool:
+    """Replace public/banners on the tag with the local tree (desktop/m/t)."""
+    dest = tmp / "public" / "banners"
+    if dest.exists():
+        shutil.rmtree(dest)
+    shutil.copytree(src, dest)
+    run(["git", "add", "-f", "public/banners"], cwd=tmp)
+    status = subprocess.run(
+        ["git", "status", "--porcelain", "--", "public/banners"],
+        cwd=str(tmp),
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    return bool(status)
+
+
 def sync_brand(tmp: Path, name: str, src: Path, *, merge: bool = False) -> bool:
     """Copy one brand tree into the worktree and stage it. Returns True if dirty.
 
@@ -121,7 +138,10 @@ def main() -> int:
         "--dirs",
         nargs="+",
         required=True,
-        help="Image folder names under public/products (e.g. bs-pdp)",
+        help=(
+            "Image folder names under public/products (e.g. bs-pdp), "
+            "or 'banners' for public/banners"
+        ),
     )
     ap.add_argument(
         "--skip-whiten",
@@ -138,9 +158,12 @@ def main() -> int:
     )
     args = ap.parse_args()
 
-    src_roots = []
+    src_roots: list[tuple[str, Path]] = []
     for name in args.dirs:
-        src = ROOT / "public" / "products" / name
+        if name == "banners":
+            src = ROOT / "public" / "banners"
+        else:
+            src = ROOT / "public" / "products" / name
         if src.is_dir() and any(src.iterdir()):
             src_roots.append((name, src))
         else:
@@ -153,9 +176,10 @@ def main() -> int:
     # Always map light studio mats to Gucci DarkGray before publishing so pale
     # garments stay visible. Required for newly scraped products — do not skip
     # in weekly CI (use --skip-whiten only when images were already greymatted).
-    if not args.skip_whiten:
-        names = [n for n, _ in src_roots]
-        print(f"Greymatting studio backgrounds → DarkGray: {names}", flush=True)
+    # Banner trees are lifestyle photos — never greymat them.
+    product_dirs = [n for n, _ in src_roots if n != "banners"]
+    if not args.skip_whiten and product_dirs:
+        print(f"Greymatting studio backgrounds → DarkGray: {product_dirs}", flush=True)
         scripts_dir = str(ROOT / "scripts")
         if scripts_dir not in sys.path:
             sys.path.insert(0, scripts_dir)
@@ -171,7 +195,7 @@ def main() -> int:
             return 1
         try:
             greymat_dirs(
-                names,
+                product_dirs,
                 workers=max(2, min(6, (os.cpu_count() or 4) // 2)),
             )
         except Exception as e:
@@ -211,7 +235,11 @@ def main() -> int:
         for name, src in src_roots:
             mode = "merge" if args.merge else "replace"
             print(f"=== sync {name} ({mode}) ===", flush=True)
-            if not sync_brand(tmp, name, src, merge=args.merge):
+            if name == "banners":
+                changed = sync_banners(tmp, src)
+            else:
+                changed = sync_brand(tmp, name, src, merge=args.merge)
+            if not changed:
                 print(f"No image changes for {name}.", flush=True)
                 continue
 
