@@ -1,6 +1,6 @@
 {
-  "refreshedAt": "2026-08-15T23:25:14.924314+00:00",
-  "weekSeed": 202608152324,
+  "refreshedAt": "2026-08-15T23:43:24.537020+00:00",
+  "weekSeed": 202608152341,
   "slots": {
     "rot-acc-1.jpg": {
       "sourceProductId": "gc-8705353ga415872",
@@ -348,6 +348,168 @@
       "sourceProductId": "axa-x000009674",
       "sourceImage": "/products/axa-pdp/X000009674/habitat/3.jpg",
       "focal": "58% 27%",
+      "shop": true
+    },
+    "brand-arcteryx-1.jpg": {
+      "sourceProductId": "axa-x000006917",
+      "sourceImage": "/products/axa-pdp/X000006917/rune/5.jpg",
+      "focal": "66% 33%",
+      "shop": true
+    },
+    "brand-arcteryx-2.jpg": {
+      "sourceProductId": "axa-x000010306",
+      "sourceImage": "/products/axa-pdp/X000010306/alpine-blue/5.jpg",
+      "focal": "55% 22%",
+      "shop": true
+    },
+    "brand-arcteryx-3.jpg": {
+      "sourceProductId": "axg-x000009930",
+      "sourceImage": "/products/axg-pdp/X000009930/habitat-shincha/5.jpg",
+      "focal": "66% 42%",
+      "shop": true
+    },
+    "brand-belstaff-1.jpg": {
+      "sourceProductId": "bs-trialmaster-jacket-black-2",
+      "sourceImage": "/products/bs-pdp/trialmaster-jacket-black-2/3.jpg",
+      "focal": "47% 30%",
+      "shop": true
+    },
+    "brand-belstaff-2.jpg": {
+      "sourceProductId": "bs-foley-bifold-wallet-black",
+      "sourceImage": "/products/bs-pdp/foley-bifold-wallet-black/2.jpg",
+      "focal": "56% 55%",
+      "shop": true
+    },
+    "brand-belstaff-3.jpg": {
+      "sourceProductId": "bs-sideline-jacket-dark-navy",
+      "sourceImage": "/products/bs-pdp/sideline-jacket-dark-navy/5.jpg",
+      "focal": "47% 22%",
+      "shop": true
+    },
+    "brand-burberry-1.jpg": {
+      "sourceProductId": "bb-mid-length-chelsea-heritage-trench-coat",
+      "sourceImage": "/products/bb-pdp/81172381/4.jpg",
+      "focal": "51% 22%",
+      "shop": true
+    },
+    "brand-burberry-2.jpg": {
+      "sourceProductId": "bb-wool-belmont-trench-cape",
+      "sourceImage": "/products/bb-pdp/81162491/3.jpg",
+      "focal": "50% 42%",
+      "shop": true
+    },
+    "brand-burberry-3.jpg": {
+      "sourceProductId": "bb-crochet-moulin-cotton-shorts",
+      "sourceImage": "/products/bb-pdp/81251721/3.jpg",
+      "focal": "50% 36%",
+      "shop": true
+    },
+    "brand-chanel-1.jpg": {
+      "sourceProductId": "ch-as4561b2564245002",
+      "sourceImage": "/products/ch-pdp/as4561b2564245002/4.jpg",
+      "focal": "47% 53%",
+      "shop": true
+    },
+    "brand-chanel-2.jpg": {
+      "sourceProductId": "ch-p81539k11856u8607",
+      "sourceImage": "/products/ch-pdp/p81539k11856u8607/6.jpg",
+      "focal": "69% 29%",
+      "shop": true
+    },
+    "brand-chanel-3.jpg": {
+      "sourceProductId": "ch-ap5472b25517ub700",
+      "sourceImage": "/products/ch-pdp/ap5472b25517ub700/5.jpg",
+      "focal": "25% 33%",
+      "shop": true
+    },
+    "brand-christopher-ward-1.jpg": {
+      "sourceProductId": "cw-C60-41C3H31T0KK0-RKO",
+      "sourceImage": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwef88e706/images/WATCHES/C60-41C3H31T0KK0-RKO/C60-41C3H31T0KK0-RKO_Picture_1.jpg?sw=1000&sh=1250",
+      "focal": "39% 22%",
+      "shop": true
+    },
+    "brand-christopher-ward-2.jpg": {
+      "sourceProductId": "cw-C63-36ADA4-S00P0-VK",
+      "sourceImage": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4c21c0ec/images/WATCHES/C63-36ADA4-S00P0-VK/C63-36ADA4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
+      "focal": "53% 42%",
+      "shop": true
+    },
+    "brand-christopher-ward-3.jpg": {
+      "sourceProductId": "cw-C63-41AGM4-S0KV0-NOX",
+      "sourceImage": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw7ff3a6aa/images/WATCHES/C63-41AGM4-S0KV0-NOX/C63-41AGM4-S0KV0-NOX_Picture_1.jpg?sw=1000&sh=1250",
+      "focal": "50% 22%",
+      "shop": true
+    },
+    "brand-galvin-green-1.jpg": {
+      "sourceProductId": "gg-marie",
+      "sourceImage": "/products/gg-pdp/marie-breathable-skirt-with-inner-shorts-golf-green/4.jpg",
+      "focal": "43% 32%",
+      "shop": true
+    },
+    "brand-galvin-green-2.jpg": {
+      "sourceProductId": "gg-memo",
+      "sourceImage": "/products/gg-pdp/memo-breathable-short-sleeve-golf-shirt-moonlight-blue/3.jpg",
+      "focal": "50% 36%",
+      "shop": true
+    },
+    "brand-galvin-green-3.jpg": {
+      "sourceProductId": "gg-archer",
+      "sourceImage": "/products/gg-pdp/archer-waterproof-golf-cap-black/3.jpg",
+      "focal": "53% 55%",
+      "shop": true
+    },
+    "brand-gucci-1.jpg": {
+      "sourceProductId": "gc-864626xjhuf9280",
+      "sourceImage": "/products/gc-pdp/864626XJHUF9280/3.jpg",
+      "focal": "49% 28%",
+      "shop": true
+    },
+    "brand-gucci-2.jpg": {
+      "sourceProductId": "gc-a0065yaaf8m6223",
+      "sourceImage": "/products/gc-pdp/A0065YAAF8M6223/5.jpg",
+      "focal": "33% 39%",
+      "shop": true
+    },
+    "brand-gucci-3.jpg": {
+      "sourceProductId": "gc-8365594gabx1360",
+      "sourceImage": "/products/gc-pdp/8365594GABX1360/3.jpg",
+      "focal": "50% 22%",
+      "shop": true
+    },
+    "brand-london-undercover-1.jpg": {
+      "sourceProductId": "lu-black-w1-city-gent-umbrella",
+      "sourceImage": "/products/lu-pdp/black-w1-city-gent-umbrella/2.jpg",
+      "focal": "62% 22%",
+      "shop": true
+    },
+    "brand-london-undercover-2.jpg": {
+      "sourceProductId": "lu-aladdin-rain-double-cg-umbrella",
+      "sourceImage": "/products/lu-pdp/aladdin-rain-double-cg-umbrella/2.jpg",
+      "focal": "63% 22%",
+      "shop": true
+    },
+    "brand-london-undercover-3.jpg": {
+      "sourceProductId": "lu-olive-drab-whangee-telescopic-umbrella",
+      "sourceImage": "/products/lu-pdp/olive-drab-whangee-telescopic-umbrella/2.jpg",
+      "focal": "63% 22%",
+      "shop": true
+    },
+    "brand-paul-smith-1.jpg": {
+      "sourceProductId": "ps-black-leather-signature-stripe-cuff-gloves",
+      "sourceImage": "/products/ps-pdp/black-leather-signature-stripe-cuff-gloves/2.jpg",
+      "focal": "46% 55%",
+      "shop": true
+    },
+    "brand-paul-smith-2.jpg": {
+      "sourceProductId": "ps-white-broken-record-print-t-shirt",
+      "sourceImage": "/products/ps-pdp/white-broken-record-print-t-shirt/4.jpg",
+      "focal": "40% 29%",
+      "shop": true
+    },
+    "brand-paul-smith-3.jpg": {
+      "sourceProductId": "ps-paul-smith-botanist-scented-candle-and-hand-lotion-set",
+      "sourceImage": "/products/ps-pdp/paul-smith-botanist-scented-candle-and-hand-lotion-set/3.jpg",
+      "focal": "35% 55%",
       "shop": true
     }
   }

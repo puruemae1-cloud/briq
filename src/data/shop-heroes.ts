@@ -1,7 +1,10 @@
+import { brandHeroes } from "@/data/brand-heroes";
 import { pickRotating } from "@/data/home-banners";
+import { resolveShopBrand } from "@/lib/shop-brand";
 
 /**
  * Shop / subcategory page heroes — rotate every week via pickRotating.
+ * Brand chips (Gucci, Burberry, …) use dedicated brand-* banners.
  * Key: `category` or `category:sub`.
  */
 const shopHeroImages: Record<string, string[]> = {
@@ -141,6 +144,9 @@ const FALLBACK = [
 ];
 
 export function getShopHeroImages(category?: string, sub?: string): string[] {
+  const brand = resolveShopBrand(category, sub);
+  if (brand?.images?.length) return brand.images;
+
   if (category && category !== "all") {
     if (sub) {
       const keyed = shopHeroImages[`${category}:${sub}`];
@@ -151,6 +157,11 @@ export function getShopHeroImages(category?: string, sub?: string): string[] {
   }
   return FALLBACK;
 }
+
+/** Re-export so banner refresh can discover brand-* paths via this module. */
+export const brandHeroImagePaths = Object.values(brandHeroes).flatMap(
+  (b) => b.images,
+);
 
 export function pickShopHero(category?: string, sub?: string, offset = 0): string {
   return pickRotating(getShopHeroImages(category, sub), offset);

@@ -16,6 +16,7 @@ import { pickRotating } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { searchProducts } from "@/lib/product-search";
+import { resolveShopBrand } from "@/lib/shop-brand";
 import {
   PRODUCT_SORTS,
   buildShopHref,
@@ -102,6 +103,9 @@ export default async function ShopPage({ searchParams }: Props) {
 
   const isAllCatalogue =
     category === "all" && !sub && !params.q?.trim() && !isNewArrivals;
+  const shopBrand = !isNewArrivals && !isAllCatalogue
+    ? resolveShopBrand(category, sub)
+    : null;
   const heroImage = isNewArrivals
     ? pickRotating(NEW_ARRIVALS_HERO_IMAGES, 1)
     : isAllCatalogue
@@ -111,13 +115,17 @@ export default async function ShopPage({ searchParams }: Props) {
     ? "New Season Edit"
     : isAllCatalogue
       ? "Briq Catalogue"
-      : (subNode?.labelKo ?? current?.labelKo ?? "Shop");
+      : shopBrand
+        ? shopBrand.nameEn
+        : (subNode?.labelKo ?? current?.labelKo ?? "Shop");
   const heroTitle = isNewArrivals ? "New Arrivals" : title;
   const heroSupport = isNewArrivals
     ? "지금 영국에서 가장 핫한 신상 · 최신등록순"
     : isAllCatalogue
       ? "시그니처부터 입문까지 — 영국 셀렉션 전체"
-      : null;
+      : shopBrand
+        ? `${shopBrand.nameKo} · Briq edit`
+        : null;
 
   const sortBase = {
     category,
@@ -127,7 +135,10 @@ export default async function ShopPage({ searchParams }: Props) {
 
   return (
     <>
-      <section className="shop-hero" aria-label={heroTitle}>
+      <section
+        className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}`}
+        aria-label={heroTitle}
+      >
         <BannerImage
           className="shop-hero__img"
           src={heroImage}
@@ -141,7 +152,19 @@ export default async function ShopPage({ searchParams }: Props) {
         />
         <div className="shop-hero__shade" aria-hidden />
         <div className="shop-hero__content">
-          <p className="shop-hero__eyebrow">{heroEyebrow}</p>
+          {shopBrand ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              className="shop-hero__logo"
+              src={shopBrand.logoSrc}
+              alt={shopBrand.nameEn}
+              width={280}
+              height={42}
+              decoding="async"
+            />
+          ) : (
+            <p className="shop-hero__eyebrow">{heroEyebrow}</p>
+          )}
           <div className="shop-hero__title-row">
             <h1 className="shop-hero__title">{heroTitle}</h1>
             <ShareLinkButton

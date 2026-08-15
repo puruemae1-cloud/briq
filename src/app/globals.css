@@ -550,6 +550,32 @@ a.chip[href*="sub=gg-sale"].is-active {
   );
 }
 
+.shop-hero--brand .shop-hero__shade {
+  background: linear-gradient(
+    105deg,
+    rgba(6, 8, 7, 0.78) 0%,
+    rgba(6, 8, 7, 0.42) 48%,
+    rgba(6, 8, 7, 0.55) 100%
+  );
+}
+
+.shop-hero__logo {
+  display: block;
+  width: min(14.5rem, 62vw);
+  height: auto;
+  margin: 0 0 0.55rem;
+  color: #f7f4ec;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.35));
+  opacity: 0.96;
+}
+
+@media (min-width: 900px) {
+  .shop-hero__logo {
+    width: min(17rem, 28vw);
+    margin-bottom: 0.7rem;
+  }
+}
+
 .shop-hero__content {
   position: relative;
   z-index: 1;
