@@ -72,8 +72,17 @@ a {
   text-decoration: none;
 }
 
+/* Fill the viewport during soft nav so the footer never jumps into view
+   (short placeholders made header + empty main + footer fit on one phone screen). */
 .route-loading {
-  min-height: 28vh;
+  min-height: calc(100svh - 4.75rem);
+  min-height: calc(100dvh - 4.75rem);
+  width: 100%;
+  background: #fff;
+}
+
+.shell:has(.route-loading) .site-footer {
+  display: none;
 }
 
 img {
@@ -1707,6 +1716,17 @@ body:has(.nav-drawer-toggle:checked) {
   display: grid;
   align-items: end;
   color: #f7f4ec;
+}
+
+.look-banner__hit {
+  display: grid;
+  align-items: end;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  min-height: inherit;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 900px) {

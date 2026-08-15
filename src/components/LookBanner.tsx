@@ -25,37 +25,54 @@ export function LookBannerBlock({
     };
   });
 
+  const titleBlock = (
+    <>
+      <p className="look-banner__eyebrow">{banner.eyebrow}</p>
+      <h2 className="look-banner__title">
+        <span className="look-banner__title-en">{banner.title}</span>
+        <span className="look-banner__title-ko">{banner.titleKo}</span>
+      </h2>
+      <p className="look-banner__support">{banner.support}</p>
+    </>
+  );
+
   return (
     <section
       className={`look-banner look-banner--${align}${slides ? " look-banner--carousel" : ""}`}
       aria-label={`${banner.titleKo} ${banner.eyebrow}`}
     >
       {slides ? (
-        <BannerCarousel slides={slides} />
+        <>
+          <BannerCarousel slides={slides} />
+          <div className="look-banner__content">
+            {titleBlock}
+            <Link href={banner.href} className="look-banner__cta">
+              {banner.cta}
+            </Link>
+          </div>
+        </>
       ) : (
-        <div className="look-banner__media" aria-hidden>
-          <BannerImage
-            className="look-banner__img"
-            src={image}
-            alt=""
-            style={focal ? { objectPosition: focal } : undefined}
-            loading="lazy"
-          />
-          <div className="look-banner__shade" />
-        </div>
-      )}
-
-      <div className="look-banner__content">
-        <p className="look-banner__eyebrow">{banner.eyebrow}</p>
-        <h2 className="look-banner__title">
-          <span className="look-banner__title-en">{banner.title}</span>
-          <span className="look-banner__title-ko">{banner.titleKo}</span>
-        </h2>
-        <p className="look-banner__support">{banner.support}</p>
-        <Link href={banner.href} className="look-banner__cta">
-          {banner.cta}
+        <Link
+          href={banner.href}
+          className="look-banner__hit"
+          aria-label={banner.cta}
+        >
+          <div className="look-banner__media" aria-hidden>
+            <BannerImage
+              className="look-banner__img"
+              src={image}
+              alt=""
+              style={focal ? { objectPosition: focal } : undefined}
+              loading="lazy"
+            />
+            <div className="look-banner__shade" />
+          </div>
+          <div className="look-banner__content">
+            {titleBlock}
+            <span className="look-banner__cta">{banner.cta}</span>
+          </div>
         </Link>
-      </div>
+      )}
     </section>
   );
 }

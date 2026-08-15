@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BannerImage } from "@/components/BannerImage";
 
@@ -133,7 +134,7 @@ export function BannerCarousel({
         onTouchStart={pause}
       >
         {slides.map((slide, i) => (
-          <a
+          <Link
             key={slide.id}
             href={slide.href}
             className="banner-slide"
@@ -147,7 +148,7 @@ export function BannerCarousel({
               loading={i === 0 ? "eager" : "lazy"}
             />
             <span className="banner-slide__label">{slide.labelKo}</span>
-          </a>
+          </Link>
         ))}
       </div>
 
