@@ -21,6 +21,7 @@ import {
   productSalePercent,
 } from "@/data/product-utils";
 import { cartUnitPrice } from "@/lib/cart-price";
+import { needsChanelMobilePackshotZoom } from "@/lib/ch-packshot-zoom";
 import { resolveProductImage } from "@/lib/product-image";
 import { compareAxSizes, isArcteryxProduct } from "@/lib/ax-size-order";
 
@@ -397,11 +398,7 @@ export function ProductDetail({
       </>
     );
 
-  const chPackshotZoom =
-    product.subcategory === "ch-fragrance" ||
-    product.subcategory === "ch-fine-jewellery" ||
-    Boolean(product.chCollections?.includes("ch-fragrance")) ||
-    Boolean(product.chCollections?.includes("ch-fine-jewellery"));
+  const chPackshotZoom = needsChanelMobilePackshotZoom(product);
 
   return (
     <div

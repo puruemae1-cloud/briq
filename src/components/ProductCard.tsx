@@ -7,6 +7,7 @@ import {
   isProductInStock,
   productSalePercent,
 } from "@/data/product-utils";
+import { needsChanelMobilePackshotZoom } from "@/lib/ch-packshot-zoom";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(product.price);
@@ -21,15 +22,6 @@ function productHref(product: Product) {
   return product.shopColorKey
     ? `/product/${product.id}?color=${encodeURIComponent(product.shopColorKey)}`
     : `/product/${product.id}`;
-}
-
-function needsChanelMobilePackshotZoom(product: Product) {
-  const sub = product.subcategory;
-  if (sub === "ch-fragrance" || sub === "ch-fine-jewellery") return true;
-  const cols = product.chCollections;
-  return Boolean(
-    cols?.includes("ch-fragrance") || cols?.includes("ch-fine-jewellery"),
-  );
 }
 
 export function ProductCard({ product }: { product: Product }) {
