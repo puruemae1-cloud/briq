@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Auto-deploy Briq changes
 
-When finishing catalog, product, image, category, or site content work that should go live:
+When finishing catalog, product, image, category, UI/CSS, or site content work that should go live:
 
 1. **Commit** the relevant code/data changes (follow the repo git commit protocol; no secrets).
 2. **Push** to the tracked remote branch (`main` unless on a feature branch with an open PR flow).
