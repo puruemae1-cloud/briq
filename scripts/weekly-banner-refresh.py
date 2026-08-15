@@ -274,6 +274,7 @@ def pick_for_slot(
     pool: dict[str, list[tuple[str, str]]],
     rng: random.Random,
     used: set[str],
+    seed: int,
 ) -> tuple[str, str] | None:
     options: list[tuple[str, str]] = []
     for t in themes:
@@ -287,7 +288,7 @@ def pick_for_slot(
     if not options:
         return None
     # Deterministic weekly shuffle per slot
-    digest = hashlib.sha1(f"{week_seed()}:{slot}".encode()).hexdigest()
+    digest = hashlib.sha1(f"{seed}:{slot}".encode()).hexdigest()
     slot_rng = random.Random(digest)
     slot_rng.shuffle(options)
     return options[0]
@@ -311,10 +312,16 @@ def referenced_slots() -> list[str]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="Only refresh N slots (debug)")
+    ap.add_argument(
+        "--seed",
+        type=int,
+        default=0,
+        help="Override week seed (force a new shuffle mid-week)",
+    )
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    seed = week_seed()
+    seed = args.seed or week_seed()
     rng = random.Random(seed)
     print(f"week_seed={seed}", flush=True)
 
@@ -339,7 +346,7 @@ def main() -> int:
     ok = fail = 0
     for i, slot in enumerate(slots, start=1):
         themes = SLOT_THEMES.get(slot) or ["luxury"]
-        pick = pick_for_slot(slot, themes, pool, rng, used)
+        pick = pick_for_slot(slot, themes, pool, rng, used, seed)
         if not pick:
             print(f"{i}/{len(slots)} {slot} FAIL no-candidate", flush=True)
             fail += 1
