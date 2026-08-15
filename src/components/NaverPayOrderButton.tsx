@@ -142,11 +142,10 @@ export function NaverPayOrderButton({
       // undersized mounts that clip the buy chrome to the right.
       const dock = page === "dock";
       if (dock) {
-        root.style.minWidth = "100%";
+        root.style.minWidth = "0";
         root.style.width = "100%";
         root.style.height = "100%";
-        root.style.display = "grid";
-        root.style.placeItems = "center";
+        root.style.display = "block";
         root.style.overflow = "hidden";
       } else {
         root.style.minWidth = "168px";
@@ -267,6 +266,7 @@ export function NaverPayOrderButton({
           el.style.setProperty("justify-content", "center", "important");
           el.style.setProperty("line-height", "1", "important");
           el.style.setProperty("overflow", "hidden", "important");
+          el.style.setProperty("border-radius", "0", "important");
         };
 
         root

@@ -3790,7 +3790,10 @@ body:has(.nav-drawer-toggle:checked) {
   grid-template-columns: auto 1fr;
   gap: 0.65rem 0.85rem;
   align-items: center;
-  padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom));
+  padding-top: 0.7rem;
+  padding-bottom: calc(0.7rem + env(safe-area-inset-bottom));
+  padding-left: 1rem;
+  padding-right: 1rem;
   background: linear-gradient(180deg, rgba(16, 24, 21, 0.97), rgba(9, 14, 12, 0.99));
   border-top: 1px solid rgba(183, 161, 106, 0.35);
   box-shadow: 0 -12px 36px rgba(4, 8, 6, 0.45);
@@ -3863,14 +3866,25 @@ body:has(.nav-drawer-toggle:checked) {
 .pdp-dock__actions {
   grid-column: 1 / -1;
   display: grid;
-  /* npay | buy | cart */
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.9fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.55rem;
   align-items: stretch;
+  justify-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pdp-dock__actions > * {
+  min-width: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .pdp-dock__actions > form {
   min-width: 0;
+  width: 100%;
   display: flex;
 }
 
@@ -3882,6 +3896,11 @@ body:has(.nav-drawer-toggle:checked) {
     align-items: stretch;
   }
 
+  .pdp-dock__actions > *,
+  .pdp-dock__actions > form {
+    width: auto;
+  }
+
   .pdp-dock__buy,
   .pdp-dock__cart {
     min-width: 9.5rem;
@@ -3889,13 +3908,16 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .pdp-dock__actions .btn {
+  flex: 1 1 auto;
   width: 100%;
+  min-width: 0;
   height: 2.7rem;
   min-height: 2.7rem;
   max-height: 2.7rem;
   padding-top: 0;
   padding-bottom: 0;
   box-sizing: border-box;
+  border-radius: 0;
 }
 
 /* Gold gradient buy CTA on the dark dock */
@@ -5199,14 +5221,14 @@ body:has(.pdp-dock) .back-to-top {
 .npay-order-button--dock {
   --dock-cta-h: 2.7rem;
   width: 100%;
-  min-width: 0;
-  max-width: none;
+  min-width: 0 !important;
+  max-width: none !important;
   flex: none;
   height: var(--dock-cta-h);
   min-height: var(--dock-cta-h);
   max-height: var(--dock-cta-h);
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   align-self: stretch;
   overflow: hidden;
   position: relative;
@@ -5214,6 +5236,7 @@ body:has(.pdp-dock) .back-to-top {
   background: transparent;
   box-sizing: border-box;
   line-height: 0;
+  border-radius: 0;
 }
 
 .npay-order-button--dock .npay-order-button__mount {
@@ -5276,6 +5299,7 @@ body:has(.pdp-dock) .back-to-top {
   line-height: 1 !important;
   gap: 0.25rem !important;
   overflow: hidden !important;
+  border-radius: 0 !important;
 }
 
 /* Override SDK size_* min-heights so dock stays 2.7rem. */
@@ -5285,6 +5309,15 @@ body:has(.pdp-dock) .back-to-top {
   min-height: 0 !important;
   height: 100% !important;
   max-height: 100% !important;
+}
+
+/* SDK type_three/two locks the buy cell to ~60% — stretch to the full slot. */
+.npay-order-button--dock .type_three_button .npay_main_cell,
+.npay-order-button--dock .type_two_button .npay_main_cell,
+.npay-order-button--dock .npay_main_cell {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .npay-order-button--dock table {
