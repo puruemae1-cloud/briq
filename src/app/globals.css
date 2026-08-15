@@ -85,6 +85,10 @@ a {
   display: none;
 }
 
+body:has(.route-loading) .back-to-top {
+  display: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
