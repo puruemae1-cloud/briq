@@ -25,7 +25,7 @@ export function ProductGallery({
   soldOut?: boolean;
   badge?: string | null;
   resetKey?: string;
-  /** Optional frame modifier (e.g. Chanel fragrance mobile zoom). */
+  /** Optional frame modifier (e.g. Chanel packshot mobile zoom). */
   frameModifier?: string;
 }) {
   const list = images.length > 0 ? images : [];

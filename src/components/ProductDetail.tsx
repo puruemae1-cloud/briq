@@ -397,14 +397,16 @@ export function ProductDetail({
       </>
     );
 
-  const chFragrance =
+  const chPackshotZoom =
     product.subcategory === "ch-fragrance" ||
-    Boolean(product.chCollections?.includes("ch-fragrance"));
+    product.subcategory === "ch-fine-jewellery" ||
+    Boolean(product.chCollections?.includes("ch-fragrance")) ||
+    Boolean(product.chCollections?.includes("ch-fine-jewellery"));
 
   return (
     <div
       className={`product-page${soldOut ? " product-page--sold-out" : ""}${
-        chFragrance ? " product-page--ch-fragrance" : ""
+        chPackshotZoom ? " product-page--ch-packshot-zoom" : ""
       }`}
     >
       <article className="product-detail">
@@ -415,7 +417,7 @@ export function ProductDetail({
           badge={optionLabel || selected?.nameKo}
           resetKey={selected?.id ?? product.id}
           frameModifier={
-            chFragrance ? "product-frame--ch-fragrance" : undefined
+            chPackshotZoom ? "product-frame--ch-packshot-zoom" : undefined
           }
         />
 

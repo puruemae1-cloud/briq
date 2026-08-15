@@ -23,10 +23,12 @@ function productHref(product: Product) {
     : `/product/${product.id}`;
 }
 
-function isChanelFragrance(product: Product) {
-  return (
-    product.subcategory === "ch-fragrance" ||
-    Boolean(product.chCollections?.includes("ch-fragrance"))
+function needsChanelMobilePackshotZoom(product: Product) {
+  const sub = product.subcategory;
+  if (sub === "ch-fragrance" || sub === "ch-fine-jewellery") return true;
+  const cols = product.chCollections;
+  return Boolean(
+    cols?.includes("ch-fragrance") || cols?.includes("ch-fine-jewellery"),
   );
 }
 
@@ -41,7 +43,7 @@ export function ProductCard({ product }: { product: Product }) {
     Boolean(product.ggCollections?.includes("gg-sale")) ||
     product.badge === "Nearly New" ||
     product.badge === "Sale";
-  const chFragrance = isChanelFragrance(product);
+  const chPackshotZoom = needsChanelMobilePackshotZoom(product);
   const href = productHref(product);
 
   return (
@@ -55,7 +57,7 @@ export function ProductCard({ product }: { product: Product }) {
       <Link
         href={href}
         className={`product-card group${soldOut ? " product-card--sold-out" : ""}${
-          chFragrance ? " product-card--ch-fragrance" : ""
+          chPackshotZoom ? " product-card--ch-packshot-zoom" : ""
         }`}
       >
         <ProductCardMedia product={product} soldOut={soldOut}>
