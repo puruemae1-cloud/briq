@@ -10,6 +10,7 @@ Sources:
   - ch-high-jewellery-catalog-raw.json → category accessories (High Jewellery)
   - ch-fine-jewellery-catalog-raw.json → category accessories (Fine Jewellery)
   - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
+  - ch-fragrance-catalog-raw.json → category accessories (fragrance)
   - ch-other-acc-catalog-raw.json → category accessories (other accessories)
   - ch-watches-catalog-raw.json → category watches (J12 / Première / BOY·FRIEND / Monsieur / Code Coco)
 
@@ -19,6 +20,7 @@ RTW size chart: French FR 34–50. Handbags / SLG: One Size + dimensions in copy
 Shoes: EU (French) sizes as shown on chanel.com GB PDPs.
 Costume jewellery: mostly One Size (UNI); rings use French ring sizes + chart.
 Sunglasses: One Size + official frame measurements (mm) in copy.
+Fragrance: One Size (volume is in the official product name).
 Other accessories: belts numeric cm; hats S/M/L head-circ; most UNI.
 """
 from __future__ import annotations
@@ -45,6 +47,7 @@ JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-jewellery-catalog-raw.json"
 HIGH_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-high-jewellery-catalog-raw.json"
 FINE_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-fine-jewellery-catalog-raw.json"
 SUNGLASSES_RAW_PATH = ROOT / "src/data/ch/ch-sunglasses-catalog-raw.json"
+FRAGRANCE_RAW_PATH = ROOT / "src/data/ch/ch-fragrance-catalog-raw.json"
 OTHER_ACC_RAW_PATH = ROOT / "src/data/ch/ch-other-acc-catalog-raw.json"
 WATCHES_RAW_PATH = ROOT / "src/data/ch/ch-watches-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
@@ -117,6 +120,9 @@ FINE_JEWELLERY_PARENT_COLS = ["chanel", "chanel-accessories", FINE_JEWELLERY_LEA
 
 SUNGLASSES_LEAF = "ch-women-sunglasses"
 SUNGLASSES_PARENT_COLS = ["chanel", "chanel-accessories", "ch-sunglasses", SUNGLASSES_LEAF]
+
+FRAGRANCE_LEAF = "ch-fragrance"
+FRAGRANCE_PARENT_COLS = ["chanel", "chanel-accessories", FRAGRANCE_LEAF]
 
 OTHER_ACC_SHAPE_LEAVES = [
     "ch-women-headwear",
@@ -430,6 +436,36 @@ _EN_TITLE_KO = {
     "Matte": "매트",
     "Superleggera": "수퍼레제라",
     "Sunglasses": "선글라스",
+    "Fragrance": "향수",
+    "Eau de Parfum": "오 드 빠르펭",
+    "Eau de Toilette": "오 드 뚜알렛",
+    "Eau de Cologne": "오 드 코롱",
+    "Eau de Parfum Spray": "오 드 빠르펭 스프레이",
+    "Eau de Toilette Spray": "오 드 뚜알렛 스프레이",
+    "Parfum": "빠르펭",
+    "Extrait": "엑스트레",
+    "Les Exclusifs de CHANEL": "레 젝스클루시프 드 샤넬",
+    "Les Eaux de CHANEL": "레 조 드 샤넬",
+    "COCO MADEMOISELLE": "코코 마드모아젤",
+    "Coco Mademoiselle": "코코 마드모아젤",
+    "BLEU DE CHANEL": "블루 드 샤넬",
+    "Bleu de Chanel": "블루 드 샤넬",
+    "GABRIELLE CHANEL": "가브리엘 샤넬",
+    "ALLURE HOMME SPORT": "알뤼르 옴 스포츠",
+    "ALLURE HOMME": "알뤼르 옴",
+    "CHANCE EAU SPLENDIDE": "샹스 오 스플랑디드",
+    "CHANCE EAU TENDRE": "샹스 오 땅드르",
+    "CHANCE EAU FRAÎCHE": "샹스 오 프레슈",
+    "CHANCE EAU FRAICHE": "샹스 오 프레슈",
+    "CHANCE": "샹스",
+    "Body Oil": "바디 오일",
+    "Body Lotion": "바디 로션",
+    "Hair Mist": "헤어 미스트",
+    "Shower Gel": "샤워 젤",
+    "Moisturising Body Cream": "모이스처라이징 바디 크림",
+    "Moisturizing Body Cream": "모이스처라이징 바디 크림",
+    "Hand Cream": "핸드 크림",
+    "Twist and Spray": "트위스트 앤 스프레이",
     "Eyeglasses": "안경",
     "Optical": "옵티컬",
     "Blue Light Glasses": "블루라이트 글라스",
@@ -1138,6 +1174,11 @@ CHAR_LABEL_KO = {
     "Color": "컬러",
     "Colour": "컬러",
     "Reference": "레퍼런스",
+    "Volume": "용량",
+    "Olfactory family": "향조",
+    "Concentration": "농도",
+    "Key ingredients": "주요 성분",
+    "Ingredients": "성분",
 }
 
 
@@ -2290,6 +2331,121 @@ def build_sunglasses_product(row: dict, prev: dict | None, now_iso: str) -> dict
     return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
+def build_fragrance_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    primary = FRAGRANCE_LEAF
+    cols = sorted(set(FRAGRANCE_PARENT_COLS))
+
+    title_en, name_ko = official_name_pair(row, code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    desc_en = as_text(details.get("editorial") or details.get("description"))
+    ref = as_text(details.get("reference")) or str(code)
+    volume = as_text(details.get("volume") or details.get("dimensions"))
+    collection = as_text(row.get("collection") or row.get("categoryLabel"))
+
+    desc_ko = t(desc_en) if desc_en else ""
+    collection_ko = t(collection) if collection else ""
+
+    parts = [desc_ko]
+    if collection_ko:
+        parts.append(f"컬렉션: {collection_ko}")
+    if volume:
+        parts.append(f"용량: {volume}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = [
+        p
+        for p in (row.get("localImages") or [])
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (fragrance): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — One Size",
+            "nameKo": f"{name_ko} — 원 사이즈",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": "default",
+            "colorNameKo": "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "fragrance",
+        "향수",
+        "perfume",
+        "퍼퓸",
+        "악세서리",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "accessories",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
+
+
 def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     """Other accessories — keep official multi-leaf tags (e.g. scarf + winter)."""
     code = row.get("productCode") or row.get("sku") or row.get("id")
@@ -2672,6 +2828,12 @@ def main() -> int:
     else:
         print(f"WARN missing sunglasses raw: {SUNGLASSES_RAW_PATH}", flush=True)
 
+    fragrance_rows: list[dict] = []
+    if FRAGRANCE_RAW_PATH.exists():
+        fragrance_rows = json.loads(FRAGRANCE_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing fragrance raw: {FRAGRANCE_RAW_PATH}", flush=True)
+
     other_acc_rows: list[dict] = []
     if OTHER_ACC_RAW_PATH.exists():
         other_acc_rows = json.loads(OTHER_ACC_RAW_PATH.read_text()).get("products") or []
@@ -2707,6 +2869,10 @@ def main() -> int:
             or p.get("subcategory") == SUNGLASSES_LEAF
         )
 
+    def _is_fragrance_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return FRAGRANCE_LEAF in cols or p.get("subcategory") == FRAGRANCE_LEAF
+
     def _is_other_acc_prev(p: dict) -> bool:
         cols = set(p.get("chCollections") or [])
         return (
@@ -2732,6 +2898,7 @@ def main() -> int:
         or not hj_rows
         or not fj_rows
         or not sunglass_rows
+        or not fragrance_rows
         or not other_acc_rows
         or not watch_rows
     ):
@@ -2766,6 +2933,9 @@ def main() -> int:
                 if not sunglass_rows and _is_sunglass_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
+                if not fragrance_rows and _is_fragrance_prev(prev):
+                    products.append(prev)
+                    seen.add(prev["id"])
                 if not other_acc_rows and _is_other_acc_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
@@ -2774,11 +2944,13 @@ def main() -> int:
                     and not hj_rows
                     and not fj_rows
                     and not sunglass_rows
+                    and not fragrance_rows
                     and not other_acc_rows
                     and not _is_jew_prev(prev)
                     and not _is_hj_prev(prev)
                     and not _is_fj_prev(prev)
                     and not _is_sunglass_prev(prev)
+                    and not _is_fragrance_prev(prev)
                     and not _is_other_acc_prev(prev)
                 ):
                     products.append(prev)
@@ -2891,6 +3063,19 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built sunglasses {i}/{len(sunglass_rows)}", flush=True)
 
+    for i, row in enumerate(fragrance_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        prod = build_fragrance_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built fragrance {i}/{len(fragrance_rows)}", flush=True)
+
     for i, row in enumerate(other_acc_rows, start=1):
         if row.get("_skip"):
             continue
@@ -2923,7 +3108,7 @@ def main() -> int:
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Other Accessories + Watches. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Fragrance + Other Accessories + Watches. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -2939,6 +3124,7 @@ def main() -> int:
             HIGH_JEWELLERY_LEAF,
             FINE_JEWELLERY_LEAF,
             SUNGLASSES_LEAF,
+            FRAGRANCE_LEAF,
             *OTHER_ACC_SHAPE_LEAVES,
             *WATCH_SHAPE_LEAVES,
             "ch-women-looks",
