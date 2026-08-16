@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { BannerImage } from "@/components/BannerImage";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
@@ -17,6 +18,7 @@ import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { searchProducts } from "@/lib/product-search";
 import { resolveShopBrand } from "@/lib/shop-brand";
+import { getSiteUrl } from "@/lib/site";
 import {
   PRODUCT_SORTS,
   buildShopHref,
@@ -48,6 +50,63 @@ type Props = {
 };
 
 const LOAD_MORE_PAGE_SIZE = 24;
+
+export async function generateMetadata({
+  searchParams,
+}: Props): Promise<Metadata> {
+  const params = await searchParams;
+  const category = params.category ?? "all";
+  const sub = params.sub;
+  const brand = resolveShopBrand(category, sub);
+  const current = category !== "all" ? findCategory(category) : undefined;
+  const subNode = sub && current ? findSubcategory(category, sub) : undefined;
+  const isNew =
+    params.sort === "new" && !params.q?.trim() && category === "all" && !sub;
+
+  let title: string;
+  let description: string;
+  if (params.q?.trim()) {
+    title = `‘${params.q.trim()}’ 검색 | 명품직구 Briq`;
+    description = `${params.q.trim()} 검색 결과 — Briq 영국 명품의류·명품직구·명품구매대행.`;
+  } else if (isNew) {
+    title = "New Arrivals 신상품 | 명품직구 Briq";
+    description =
+      "Briq 신상품 — 명품의류·가방·시계 최신 셀렉션. 영국 명품직구·구매대행.";
+  } else if (brand) {
+    title = `${brand.nameKo} ${brand.nameEn} | 명품직구 Briq`;
+    description = `${brand.blurb} 명품의류·명품직구·명품구매대행 Briq.`;
+  } else if (subNode && current) {
+    title = `${current.labelKo} · ${subNode.labelKo} | Briq`;
+    description = `${current.labelKo} ${subNode.labelKo} — 영국 명품 셀렉트숍 Briq 명품직구.`;
+  } else if (current) {
+    title = `${current.labelKo} | 명품직구 Briq`;
+    description = `${current.labelKo} 명품 쇼핑 — 샤넬·구찌·버버리 등 Briq 영국 직구.`;
+  } else {
+    title = "Shop 전체상품 | 명품의류·명품직구 Briq";
+    description =
+      "Briq 전체 카탈로그 — 명품의류·가방·시계·악세서리 명품직구·구매대행.";
+  }
+
+  const canonicalPath = buildShopHref({
+    category: category === "all" ? undefined : category,
+    sub,
+    q: params.q,
+    sort: params.sort === "new" ? "new" : undefined,
+  });
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `${getSiteUrl()}${canonicalPath}` },
+    openGraph: {
+      title,
+      description,
+      url: `${getSiteUrl()}${canonicalPath}`,
+      locale: "ko_KR",
+      type: "website",
+    },
+  };
+}
 
 function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>) {
   const active = sub === node.id || pathIds.has(node.id);

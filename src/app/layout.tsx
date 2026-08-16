@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
+import { JsonLd } from "@/components/JsonLd";
 import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCartCount } from "@/lib/cart-server";
+import { rootMetadata } from "@/lib/seo-metadata";
+import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const display = Fraunces({
@@ -28,29 +31,7 @@ const body = Outfit({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Briq — British Boutique",
-    template: "%s · Briq",
-  },
-  description:
-    "Briq (브릭) — British + Boutique / Unique. 스포츠, 패션의류, 가방, 악세서리를 큐레이션한 셀렉트 숍.",
-  applicationName: "Briq",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-  },
-  appleWebApp: {
-    capable: true,
-    title: "Briq",
-    statusBarStyle: "black-translucent",
-  },
-};
+export const metadata: Metadata = rootMetadata;
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -64,12 +45,61 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const cartCount = await getCartCount();
+  const site = getSiteUrl();
+
+  const orgLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    alternateName: ["브릭", "Briq 브릭"],
+    url: site,
+    logo: `${site}/icon-512.png`,
+    description: DEFAULT_DESCRIPTION,
+    email: "support@hjstoryltd.com",
+    telephone: "+44-7897-535888",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "경기도 김포시 고촌읍 은행영사정로23번길 46",
+      addressCountry: "KR",
+    },
+    sameAs: [site],
+  };
+
+  const websiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: `${SITE_NAME} 브릭`,
+    url: site,
+    description: DEFAULT_DESCRIPTION,
+    inLanguage: "ko-KR",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${site}/shop?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const storeLd = {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    name: `${SITE_NAME} 브릭`,
+    url: site,
+    description:
+      "영국 명품의류·명품직구·명품구매대행 셀렉트숍. 샤넬·구찌·버버리 등.",
+    priceRange: "₩₩₩₩",
+    currenciesAccepted: "KRW",
+    paymentAccepted: "Naver Pay, Credit Card",
+  };
 
   return (
     <html lang="ko">
       <body
         className={`${display.variable} ${classic.variable} ${body.variable} antialiased`}
       >
+        <JsonLd data={[orgLd, websiteLd, storeLd]} />
         <PretendardStylesheet />
         <div id="top" className="shell">
           <SiteHeader cartCount={cartCount} />

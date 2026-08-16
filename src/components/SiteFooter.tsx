@@ -12,9 +12,9 @@ export function SiteFooter() {
           <p className="brand-mark__word">Briq</p>
           <p className="site-footer__tag">British + Boutique / Unique</p>
           <p className="site-footer__copy">
-            영국 현지 기준의 까다로운 셀렉션,
+            영국 현지 기준 명품의류·명품직구·명품구매대행.
             <br />
-            오직 당신만을 위한 직배송.
+            샤넬·구찌·버버리 셀렉션, 국내 직배송.
           </p>
           <div className="site-footer__policy-links">
             <Link href="/terms">이용약관</Link>
@@ -32,6 +32,13 @@ export function SiteFooter() {
               {c.labelKo}
             </Link>
           ))}
+        </div>
+        <div>
+          <h4>Discover</h4>
+          <Link href="/brands">명품 브랜드</Link>
+          <Link href="/guide/luxury-direct">명품직구 가이드</Link>
+          <Link href="/guide/buying-agency">명품구매대행</Link>
+          <Link href="/guide/luxury-apparel">명품의류</Link>
         </div>
         <div>
           <h4>Customer Care</h4>
