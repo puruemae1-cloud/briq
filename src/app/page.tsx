@@ -39,27 +39,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="seo-intro" aria-label="Briq 소개">
-        <div className="seo-intro__inner">
-          <h2 className="seo-intro__title">
-            명품의류 · 명품직구 · 명품구매대행
-          </h2>
-          <p className="seo-intro__copy">
-            Briq(브릭)은 샤넬·구찌·버버리·아크테릭스 등 유명 명품브랜드를
-            영국 부티크 기준으로 큐레이션하는 셀렉트숍입니다. 프라다·에르메스
-            등 하이엔드 명품을 찾는 고객에게도 투명한 직구·구매대행형 쇼핑을
-            제공합니다. 항공 배송비와 관·부가세가 포함된 가격으로 국내
-            직배송까지 이어집니다.
-          </p>
-          <nav className="seo-intro__links" aria-label="가이드">
-            <Link href="/guide/luxury-direct">명품직구 가이드</Link>
-            <Link href="/guide/buying-agency">명품구매대행 안내</Link>
-            <Link href="/guide/luxury-apparel">명품의류</Link>
-            <Link href="/brands">브랜드</Link>
-          </nav>
-        </div>
-      </section>
-
       <div className="lookbook" aria-label="Briq lookbook">
         {homeLookBanners.map((banner, i) => {
           const products = banner.categoryId
