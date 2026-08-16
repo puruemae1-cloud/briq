@@ -75,7 +75,7 @@ export async function generateMetadata({
       "Briq 신상품 — 명품의류·가방·시계 최신 셀렉션. 영국 명품직구·구매대행.";
   } else if (brand) {
     title = `${brand.nameKo} ${brand.nameEn} | 명품직구 Briq`;
-    description = `${brand.blurb} 명품의류·명품직구·명품구매대행 Briq.`;
+    description = `${brand.nameKo}(${brand.nameEn}) 셀렉션 — 명품의류·명품직구·명품구매대행 Briq.`;
   } else if (subNode && current) {
     title = `${current.labelKo} · ${subNode.labelKo} | Briq`;
     description = `${current.labelKo} ${subNode.labelKo} — 영국 명품 셀렉트숍 Briq 명품직구.`;
