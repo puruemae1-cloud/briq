@@ -13,6 +13,7 @@ Applies to:
 - Homepage category rails under each lookbook banner (top-left = newest)
 - Any new product listing UI — always `sortProducts(list, "new")` before slicing
 - 100 Collection “신상품 큐레이션” and “하이엔드 컬렉션” (newest within each filter)
+- `/shop?sort=new` (신상 보러가기) — newest **100** only (`NEW_ARRIVALS_LIMIT`); overflow drops from New Arrivals but stays in 전체상품 / category PLPs
 
 When adding products:
 

@@ -21,8 +21,10 @@ import { resolveShopBrand } from "@/lib/shop-brand";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import {
+  NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
   buildShopHref,
+  getNewArrivalsProducts,
   parseProductSort,
   preferGgApparelFirst,
   sortProducts,
@@ -72,7 +74,7 @@ export async function generateMetadata({
   } else if (isNew) {
     title = "New Arrivals 신상품 | 명품직구 Briq";
     description =
-      "Briq 신상품 — 명품의류·가방·시계 최신 셀렉션. 영국 명품직구·구매대행.";
+      "Briq 신상품 — 브랜드 주간 업데이트로 새로 등록된 최신 100개. 영국 명품직구·구매대행.";
   } else if (brand) {
     title = `${brand.nameKo} ${brand.nameEn} | 명품직구 Briq`;
     description = `${brand.nameKo}(${brand.nameEn}) 셀렉션 — 명품의류·명품직구·명품구매대행 Briq.`;
@@ -122,7 +124,7 @@ export default async function ShopPage({ searchParams }: Props) {
   const sub = params.sub;
   const sort = parseProductSort(params.sort);
 
-  /** New Arrivals = all products, newest first (from 신상 보러가기). */
+  /** New Arrivals = newest 100 only (신상 보러가기); full catalogue stays on /shop. */
   const isNewArrivals = Boolean(
     params.sort === "new" &&
       !params.q?.trim() &&
@@ -132,7 +134,11 @@ export default async function ShopPage({ searchParams }: Props) {
 
   let list = getProductsByCategory(category, sub);
   list = searchProducts(list, params.q);
-  list = sortProducts(list, sort);
+  if (isNewArrivals) {
+    list = getNewArrivalsProducts(list);
+  } else {
+    list = sortProducts(list, sort);
+  }
   // Men/Women include unisex accessories — keep apparel first like the official PLP.
   if (sub === "gg-men" || sub === "gg-women") {
     list = preferGgApparelFirst(list);
@@ -180,7 +186,7 @@ export default async function ShopPage({ searchParams }: Props) {
         : (subNode?.labelKo ?? current?.labelKo ?? "Shop");
   const heroTitle = isNewArrivals ? "New Arrivals" : title;
   const heroSupport = isNewArrivals
-    ? "지금 영국에서 가장 핫한 신상 · 최신등록순"
+    ? `브랜드 주간 업데이트 신상 · 최대 ${NEW_ARRIVALS_LIMIT}개`
     : isAllCatalogue
       ? "시그니처부터 입문까지 — 영국 셀렉션 전체"
       : shopBrand

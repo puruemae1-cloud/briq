@@ -38,6 +38,14 @@ export function compareProductsByNewest(a: Product, b: Product): number {
   return a.id.localeCompare(b.id);
 }
 
+/**
+ * Cap for `/shop?sort=new` (신상 보러가기).
+ * Weekly brand syncs stamp fresh `registeredAt` on new SKUs; this pool is
+ * always the newest N. When full, older rows drop out of New Arrivals only —
+ * they remain in 전체상품 and category PLPs.
+ */
+export const NEW_ARRIVALS_LIMIT = 100;
+
 const GG_ACCESSORY_NAME_RE =
   /\b(belt|cap|hat|glove|gloves|umbrella|towel|visor|bag|neck warmer|wrist warmer|wristwarmers?)\b/i;
 
@@ -81,6 +89,11 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
     default:
       return copy.sort(compareProductsByNewest);
   }
+}
+
+/** Catalogue-wide newest products for the New Arrivals shop surface. */
+export function getNewArrivalsProducts(list: Product[]): Product[] {
+  return sortProducts(list, "new").slice(0, NEW_ARRIVALS_LIMIT);
 }
 
 /**

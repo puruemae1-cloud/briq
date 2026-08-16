@@ -55,7 +55,7 @@ export function Collection100() {
             href="/shop?sort=new"
             className="btn btn-solid collection-100__more-btn"
           >
-            전체 상품 보러가기
+            신상 보러가기
           </Link>
         </div>
       </div>
