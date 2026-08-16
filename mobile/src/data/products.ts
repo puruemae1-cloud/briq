@@ -44,7 +44,7 @@ export function gbpToBriqKrw(gbp: number) {
 
 export const categories: { id: CategoryId | "all"; labelKo: string }[] = [
   { id: "all", labelKo: "전체" },
-  { id: "luxury", labelKo: "명품 하이엔드 의류" },
+  { id: "luxury", labelKo: "시그니처 의류 컬렉션" },
   { id: "watches", labelKo: "시계" },
   { id: "clothing", labelKo: "패션의류" },
   { id: "bags", labelKo: "가방" },

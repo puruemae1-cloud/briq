@@ -45,7 +45,7 @@ export default function LuxuryApparelGuidePage() {
           <ul className="seo-guide__brands">
             <li>
               <Link href="/shop?category=luxury&sort=new">
-                명품 하이엔드 의류 전체
+                시그니처 의류 컬렉션 전체
               </Link>
             </li>
             <li>

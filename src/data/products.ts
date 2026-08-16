@@ -474,7 +474,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
 
 /** @deprecated use navCategories from categories.ts */
 export const categories = [
-  { id: "luxury" as const, label: "Luxury", labelKo: "명품 하이엔드 의류" },
+  { id: "luxury" as const, label: "Signature", labelKo: "시그니처 의류 컬렉션" },
   { id: "watches" as const, label: "Watches", labelKo: "시계" },
   { id: "clothing" as const, label: "Clothing", labelKo: "패션의류" },
   { id: "bags" as const, label: "Bags", labelKo: "가방" },
