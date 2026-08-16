@@ -1656,6 +1656,14 @@ body:has(.nav-drawer-toggle:checked) {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1rem;
+  /* Brands stack above 전체 보기 on narrow screens — match site section rhythm */
+  gap: 1.1rem;
+}
+
+@media (min-width: 640px) {
+  .lookbook__rail--bleed .section__head {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -2212,7 +2220,7 @@ body:has(.nav-drawer-toggle:checked) {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.15rem 0;
-  margin: 0.55rem 0 0;
+  margin: 0.65rem 0 0;
   max-width: min(40rem, 100%);
 }
 
