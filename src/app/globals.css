@@ -2219,7 +2219,8 @@ body:has(.nav-drawer-toggle:checked) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.15rem 0;
+  /* Row gap when brands wrap (e.g. accessories) — keep readable, not airy */
+  gap: 0.5rem 0;
   margin: 0.65rem 0 0;
   max-width: min(40rem, 100%);
 }
