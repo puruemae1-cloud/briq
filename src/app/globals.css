@@ -6954,3 +6954,200 @@ body:has(.pdp-dock) .back-to-top {
   padding-top: 0.85rem;
 }
 
+
+/* —— SEO intro / guide / brand landings (Naver crawlable copy) —— */
+.seo-intro {
+  padding: 1.75rem 1.25rem 0.5rem;
+  background: linear-gradient(180deg, #f7f5f1 0%, #fff 100%);
+}
+
+@media (min-width: 900px) {
+  .seo-intro {
+    padding: 2.25rem 2rem 0.75rem;
+  }
+}
+
+.seo-intro__inner {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.seo-intro__title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-pretendard);
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+}
+
+.seo-intro__copy {
+  margin: 0;
+  font-family: var(--font-pretendard);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #4a4743;
+  word-break: keep-all;
+}
+
+.seo-intro__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+  margin-top: 0.95rem;
+}
+
+.seo-intro__links a {
+  font-family: var(--font-pretendard);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: #2f6b50;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.seo-guide {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3.5rem;
+}
+
+@media (min-width: 900px) {
+  .seo-guide {
+    padding: 2.75rem 2rem 4rem;
+  }
+}
+
+.seo-guide__eyebrow {
+  margin: 0 0 0.55rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a847c;
+}
+
+.seo-guide__title {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-classic), serif;
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: #121212;
+}
+
+.seo-guide__title-en {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.55em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: #6a6560;
+}
+
+.seo-guide__lead {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #3d3a36;
+  word-break: keep-all;
+}
+
+.seo-guide__body {
+  margin-top: 2rem;
+}
+
+.seo-guide__body section + section {
+  margin-top: 1.75rem;
+}
+
+.seo-guide__body h2 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-pretendard);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.seo-guide__body p,
+.seo-guide__body li {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #3d3a36;
+  word-break: keep-all;
+}
+
+.seo-guide__body ul,
+.seo-guide__body ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.seo-guide__brands {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.seo-guide__brands a {
+  color: #2f6b50;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.seo-guide__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.seo-brand-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .seo-brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.seo-brand-card a {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.15rem 1.1rem;
+  border: 1px solid rgba(11, 18, 16, 0.12);
+  background: #fff;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.seo-brand-card a:hover {
+  border-color: rgba(47, 107, 80, 0.45);
+  background: #fafaf8;
+}
+
+.seo-brand-card__en {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a847c;
+}
+
+.seo-brand-card__ko {
+  font-family: var(--font-classic), serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #121212;
+}
+
+.seo-brand-card__blurb {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #5a564f;
+}
