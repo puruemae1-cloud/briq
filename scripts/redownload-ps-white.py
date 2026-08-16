@@ -1,17 +1,18 @@
-#!/usr/bin/env python3
-"""Re-download Paul Smith pale colourway PDP images from official CDN (no greymat).
+"""Re-download Paul Smith pale / grey colourway PDP images from official CDN.
 
-Prior rembg/soft greymat flattened white / ivory / cream / ecru garments onto
-#e7e7e7 (grey blocks) or washed them out. Restore pristine assets.paulsmith.com
-bytes — same approach as redownload-bb-greymat.py for Burberry.
+Prior rembg/soft greymat flattened white / ivory / cream / ecru *and mid-grey*
+garments onto #e7e7e7 (patchy mats / grey blocks). Restore pristine
+assets.paulsmith.com bytes — same approach as redownload-bb-greymat.py.
 
-When raw catalog rows lack content.images (common for older cached rows),
-re-hit the official PDP once to recover CDN URLs.
+Pass --grey-only to refresh only Grey/Silver (and grey-* handles), which is
+the usual fix when white-ish SKUs were already restored.
 """
 from __future__ import annotations
 
+import argparse
 import importlib.util
 import json
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -20,7 +21,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from ps_pale_colour import is_pale_ps_row, pale_ps_handles  # noqa: E402
+from ps_pale_colour import (  # noqa: E402
+    _label,
+    is_pale_ps_row,
+)
 
 SPEC = importlib.util.spec_from_file_location(
     "ps_mens", ROOT / "scripts/scrape-ps-mens.py"
@@ -31,6 +35,25 @@ SPEC.loader.exec_module(mens)
 
 RAW = ROOT / "src/data/ps/ps-catalog-raw.json"
 WORKERS = 8
+
+_HANDLE_GREY_RE = re.compile(
+    r"^(?:mens?|womens?|men-s|women-s)-?"
+    r"(grey|gray|silver|grey-marl|gray-marl)\b"
+    r"|^(grey|gray|silver|grey-marl|gray-marl)\b",
+    re.I,
+)
+
+
+def is_grey_ps_row(row: dict | None) -> bool:
+    """Grey / Silver family only (subset of pale_ps)."""
+    if not row:
+        return False
+    ent = row.get("entity") if isinstance(row.get("entity"), dict) else {}
+    cg = _label(ent.get("colour_group"))
+    if cg and re.match(r"^(grey|gray|silver)$", cg, re.I):
+        return True
+    handle = str(row.get("handle") or "").strip().replace("_", "-")
+    return bool(handle and _HANDLE_GREY_RE.search(handle))
 
 
 def remote_urls(row: dict) -> list[str]:
@@ -81,7 +104,7 @@ def download_one(row: dict) -> tuple[str, int, int, str, dict]:
     urls = remote_urls(row)
     if not urls:
         return handle, 0, 1, "no-urls", row
-    # Always write official bytes — never greymat pale colourways.
+    # Always write official bytes — never greymat pale/grey colourways.
     local = mens.download_images(handle, urls, greymat=False)
     ok = len(local)
     fail = max(0, min(8, len(urls)) - ok)
@@ -96,14 +119,40 @@ def download_one(row: dict) -> tuple[str, int, int, str, dict]:
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--grey-only",
+        action="store_true",
+        help="Only Grey/Silver colourways and grey-* handles",
+    )
+    ap.add_argument(
+        "--handles",
+        nargs="*",
+        default=None,
+        help="Optional explicit handles to refresh",
+    )
+    args = ap.parse_args()
+
     raw = json.loads(RAW.read_text())
-    rows = [
-        r for r in raw.values() if isinstance(r, dict) and is_pale_ps_row(r)
-    ]
-    handles = pale_ps_handles(raw)
+    if args.handles:
+        want = {h.strip().lstrip("/") for h in args.handles if h.strip()}
+        rows = [
+            r
+            for r in raw.values()
+            if isinstance(r, dict) and str(r.get("handle") or "") in want
+        ]
+    elif args.grey_only:
+        rows = [
+            r for r in raw.values() if isinstance(r, dict) and is_grey_ps_row(r)
+        ]
+    else:
+        rows = [
+            r for r in raw.values() if isinstance(r, dict) and is_pale_ps_row(r)
+        ]
+    handles = {str(r.get("handle") or "") for r in rows}
     print(
-        f"PS pale redownload products={len(rows)} handles={len(handles)} "
-        f"workers={WORKERS}",
+        f"PS pale/grey redownload products={len(rows)} handles={len(handles)} "
+        f"workers={WORKERS} grey_only={args.grey_only}",
         flush=True,
     )
     total_ok = total_fail = 0
@@ -125,6 +174,7 @@ def main() -> None:
                     updated += 1
                 if row.get("entity") and not raw[key].get("entity"):
                     raw[key]["entity"] = row["entity"]
+                    updated += 1
             if done <= 8 or done % 25 == 0 or done == len(rows):
                 print(
                     f"{done}/{len(rows)} {handle} ok={ok} fail={fail} {status} "

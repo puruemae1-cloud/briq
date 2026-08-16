@@ -328,7 +328,12 @@ def content_image_urls(row: dict) -> list[str]:
             if "video" in str(img.get("type")).lower():
                 continue
         urls.append(url)
-    return urls
+    # Prefer STILL packshots before MODEL lifestyle when both exist — greymat/rembg
+    # on mid-grey garments looked worst on cut-out model frames.
+    still = [u for u in urls if "/STILL/" in u.upper()]
+    model = [u for u in urls if "/MODEL/" in u.upper()]
+    other = [u for u in urls if u not in still and u not in model]
+    return still + model + other
 
 
 def scrape_pdp(uri: str) -> dict | None:

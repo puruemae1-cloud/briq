@@ -1,8 +1,9 @@
-"""Detect Paul Smith pale / white-ish colourways that must skip greymat/rembg.
+"""Detect Paul Smith pale / light colourways that must skip greymat/rembg.
 
-Official packshots of white, ivory, cream, ecru, etc. are destroyed by soft
-remap (garment → grey) or rembg composite onto #e7e7e7 (grey blocks). Keep
-paulsmith.com CDN bytes as-is for these colourways — same idea as Burberry.
+Official packshots of white, ivory, cream, ecru, *and mid greys* are destroyed
+by soft remap (garment → grey) or rembg composite onto #e7e7e7 (patchy mats /
+halos). Keep paulsmith.com CDN bytes as-is for these colourways — same idea as
+Burberry.
 """
 from __future__ import annotations
 
@@ -16,15 +17,26 @@ RAW_PATH = ROOT / "src/data/ps/ps-catalog-raw.json"
 # Exact colour labels from Elevate entity.colour_group / detailed_colour_label.
 PALE_COLOUR_RE = re.compile(
     r"^(white|off[\s-]?white|ivory|cream|ecru|chalk|optic\s*white|"
-    r"snow|pearl|bone|alabaster|eggshell|oyster)$",
+    r"snow|pearl|bone|alabaster|eggshell|oyster|"
+    # Mid greys / silver — rembg on light mats leaves awkward white patches.
+    r"grey|gray|silver|grey\s*marl|gray\s*marl|light\s*grey|light\s*gray|"
+    r"heather\s*grey|heather\s*gray|smoke\s*grey|smoke\s*gray|ash|marl)$",
+    re.I,
+)
+
+# colour_group alone is enough for the whole Grey / Silver family (incl. charcoal).
+PALE_COLOUR_GROUP_RE = re.compile(
+    r"^(white|off[\s-]?white|ivory|cream|ecru|chalk|grey|gray|silver)$",
     re.I,
 )
 
 # Handle prefix when PDP entity is missing (PLP-only rows).
 _HANDLE_PALE_RE = re.compile(
     r"^(?:mens?|womens?|men-s|women-s)-?"
-    r"(white|off-white|ivory|cream|ecru|chalk|pearl|bone)\b"
-    r"|^(white|off-white|ivory|cream|ecru|chalk|pearl|bone)\b",
+    r"(white|off-white|ivory|cream|ecru|chalk|pearl|bone|"
+    r"grey|gray|silver|grey-marl|gray-marl)\b"
+    r"|^(white|off-white|ivory|cream|ecru|chalk|pearl|bone|"
+    r"grey|gray|silver|grey-marl|gray-marl)\b",
     re.I,
 )
 
@@ -53,8 +65,13 @@ def is_pale_ps_colour(
     ent = entity or {}
     for raw in (
         colour_group,
-        detailed_colour,
         ent.get("colour_group"),
+    ):
+        lab = _label(raw)
+        if lab and PALE_COLOUR_GROUP_RE.match(lab):
+            return True
+    for raw in (
+        detailed_colour,
         ent.get("detailed_colour_label"),
     ):
         lab = _label(raw)

@@ -9,7 +9,7 @@ Two paths:
   - rembg: background removal + grey composite when the subject is also light
     (white tees, chalk polos, etc.)
 
-Paul Smith pale colourways (white/ivory/cream/ecru/…) skip greymat entirely —
+Paul Smith pale colourways (white/ivory/cream/ecru/grey/silver/…) skip greymat entirely —
 rembg/soft remap destroyed those official packshots. See ps_pale_colour.py.
 
 Gucci pale / light colourways likewise keep official DarkGray_Center CDN bytes
