@@ -22,7 +22,7 @@ export default async function HomePage() {
           <BannerImage
             className="hero__bg"
             src={heroImage}
-            alt="Briq 명품의류·명품직구 메인 비주얼"
+            alt="Briq 메인 비주얼"
             fetchPriority="high"
             loading="eager"
             style={heroFocal ? { objectPosition: heroFocal } : undefined}
