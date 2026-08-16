@@ -328,12 +328,14 @@ def content_image_urls(row: dict) -> list[str]:
             if "video" in str(img.get("type")).lower():
                 continue
         urls.append(url)
-    # Prefer STILL packshots before MODEL lifestyle when both exist — greymat/rembg
-    # on mid-grey garments looked worst on cut-out model frames.
-    still = [u for u in urls if "/STILL/" in u.upper()]
+    # Prefer MODEL / lifestyle frames before STILL packshots — mid-grey STILL
+    # ghost-mannequin shots read awkwardly on Briq's light product cards.
     model = [u for u in urls if "/MODEL/" in u.upper()]
-    other = [u for u in urls if u not in still and u not in model]
-    return still + model + other
+    still = [u for u in urls if "/STILL/" in u.upper()]
+    other = [u for u in urls if u not in model and u not in still]
+    if model:
+        return model + still + other
+    return urls
 
 
 def scrape_pdp(uri: str) -> dict | None:
