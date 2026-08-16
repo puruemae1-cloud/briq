@@ -5712,7 +5712,7 @@ body:has(.pdp-dock) .back-to-top {
 
 @media (min-width: 800px) {
   .site-footer__grid {
-    grid-template-columns: 1.35fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1fr;
   }
 }
 
