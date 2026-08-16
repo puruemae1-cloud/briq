@@ -5040,7 +5040,7 @@ export function findNavPath(
 
 /** Leaf + group chips for shop filter rows (keeps nested groups intact). */
 export function getShopFilterChildren(categoryId: string): NavChild[] {
-  return findCategory(categoryId)?.children ?? [];
+  return sortNavChildrenByBrandOrder(findCategory(categoryId)?.children ?? []);
 }
 
 /** Flat list of navigable children for homepage rails / simple menus. */

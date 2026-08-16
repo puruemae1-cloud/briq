@@ -19,6 +19,7 @@ import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { searchProducts } from "@/lib/product-search";
 import { resolveShopBrand } from "@/lib/shop-brand";
 import { getSiteUrl } from "@/lib/site";
+import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import {
   PRODUCT_SORTS,
   buildShopHref,
@@ -289,7 +290,7 @@ export default async function ShopPage({ searchParams }: Props) {
 
             {current?.children ? (
               <div className="category-row category-row--sub">
-                {current.children.map((child) => (
+                {sortNavChildrenByBrandOrder(current.children).map((child) => (
                   <Link
                     key={child.id}
                     href={buildShopHref({

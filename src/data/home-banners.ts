@@ -1,5 +1,6 @@
 import type { CategoryId } from "@/data/categories";
 import { navCategories } from "@/data/categories";
+import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 
 export type BannerSlide = {
   id: string;
@@ -62,8 +63,10 @@ export function homeRailLinksForCategory(
   const children =
     categoryId === "sports"
       ? cat.children
-      : cat.children.filter(
-          (child) => !HOMEPAGE_RAIL_NON_BRAND_IDS.has(child.id),
+      : sortNavChildrenByBrandOrder(
+          cat.children.filter(
+            (child) => !HOMEPAGE_RAIL_NON_BRAND_IDS.has(child.id),
+          ),
         );
   return children.map((child) => ({
     label: child.labelKo,

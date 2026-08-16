@@ -49,16 +49,22 @@ export default function LuxuryApparelGuidePage() {
               </Link>
             </li>
             <li>
-              <Link href="/shop?category=luxury&sub=gucci">구찌 의류</Link>
+              <Link href="/shop?category=luxury&sub=chanel">샤넬 의류</Link>
             </li>
             <li>
-              <Link href="/shop?category=luxury&sub=chanel">샤넬 의류</Link>
+              <Link href="/shop?category=luxury&sub=gucci">구찌 의류</Link>
             </li>
             <li>
               <Link href="/shop?category=luxury&sub=burberry">버버리 의류</Link>
             </li>
             <li>
+              <Link href="/shop?category=luxury&sub=paul-smith">폴 스미스</Link>
+            </li>
+            <li>
               <Link href="/shop?category=luxury&sub=arcteryx">아크테릭스</Link>
+            </li>
+            <li>
+              <Link href="/shop?category=luxury&sub=belstaff">벨스타프</Link>
             </li>
           </ul>
         </section>

@@ -4,6 +4,7 @@ import { navCategories, type NavChild } from "@/data/categories";
 import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
+import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 
 function brandLinkClass(id: string, extra?: string) {
   const clearance =
@@ -23,9 +24,10 @@ function BrandLinks({
   items: NavChild[];
   brandsOnly?: boolean;
 }) {
+  const ordered = sortNavChildrenByBrandOrder(items);
   return (
     <>
-      {items.map((child) => {
+      {ordered.map((child) => {
         const splits = child.children?.filter(
           (c) => c.navLeaf || !c.children?.length,
         );
@@ -208,7 +210,7 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                     <a href={c.href} className="mobile-drawer__all">
                       전체 보기
                     </a>
-                    {c.children.map((child) => (
+                    {sortNavChildrenByBrandOrder(c.children).map((child) => (
                       <MobileBrandBranch
                         key={child.id}
                         child={child}
