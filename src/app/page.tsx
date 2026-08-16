@@ -66,12 +66,12 @@ export default async function HomePage() {
                           >
                             {railLinks.map((link, idx) => (
                               <span key={link.href} className="section__brands-item">
-                                {idx > 0 ? (
+                                <Link href={link.href}>{link.label}</Link>
+                                {idx < railLinks.length - 1 ? (
                                   <span className="section__brands-sep" aria-hidden>
                                     ·
                                   </span>
                                 ) : null}
-                                <Link href={link.href}>{link.label}</Link>
                               </span>
                             ))}
                           </nav>
