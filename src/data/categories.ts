@@ -1,3 +1,5 @@
+import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
+
 export type CategoryId =
   | "luxury"
   | "watches"
