@@ -408,12 +408,22 @@ export function cropToVideoStyle(
     return { objectFit: "cover", objectPosition: "50% 55%" };
   }
 
-  const scale = Math.min(2.4, Math.max(1, matchScale));
-  const zoom = scale > 1.02 ? scale : 1;
-  const wPct = (sourceW / crop.w) * 100 * zoom;
-  const hPct = (sourceH / crop.h) * 100 * zoom;
-  const leftPct = (-crop.x / crop.w) * 100 * zoom;
-  const topPct = (-crop.y / crop.h) * 100 * zoom;
+  const zoom = Math.min(2.4, Math.max(1, matchScale));
+  let c = crop;
+  if (zoom > 1.02) {
+    const inset = 1 - 1 / zoom;
+    c = {
+      x: crop.x + crop.w * (inset / 2),
+      y: crop.y + crop.h * (inset / 2),
+      w: crop.w / zoom,
+      h: crop.h / zoom,
+    };
+  }
+
+  const wPct = (sourceW / c.w) * 100;
+  const hPct = (sourceH / c.h) * 100;
+  const leftPct = (-c.x / c.w) * 100;
+  const topPct = (-c.y / c.h) * 100;
 
   return {
     position: "absolute",
@@ -423,7 +433,6 @@ export function cropToVideoStyle(
     height: `${hPct}%`,
     objectFit: "fill",
     maxWidth: "none",
-    transformOrigin: "center center",
   };
 }
 
