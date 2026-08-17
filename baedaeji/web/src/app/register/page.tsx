@@ -13,7 +13,7 @@ export default async function RegisterPage({
     <div className="page-wrap py-14">
       <h1 className="display mb-2 text-center text-4xl">회원가입</h1>
       <p className="mb-8 text-center text-sm text-[var(--muted)]">
-        가입 후 복사한 상품 URL을 장바구니에 붙여 넣을 수 있습니다.
+        가입 후 상품 이름이나 링크를 장바구니에 붙여 넣을 수 있습니다.
       </p>
       <AuthForm
         action={registerAction}

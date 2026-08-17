@@ -14,7 +14,7 @@ export function Header({ user }: { user: User | null }) {
             ASOS에서 돌아오기
           </Link>
           <Link href="/#paste" className="opacity-80 hover:opacity-100">
-            URL 붙여넣기
+            붙여넣기
           </Link>
           <Link href="/#stores" className="opacity-80 hover:opacity-100">
             Stores
@@ -67,7 +67,7 @@ export function Footer() {
         <p className="display text-lg text-[var(--ink)]">배대지</p>
         <div className="max-w-xl leading-6">
           영국 쇼핑몰 구매대행 · 배송대행 베타. 해외몰 장바구니는 읽지 않습니다. 상품
-          URL을 이 사이트에 담아 견적을 받은 뒤 원화로 결제하세요. 네이버페이 등
+          이름이나 링크를 이 사이트에 담아 견적을 받은 뒤 원화로 결제하세요. 네이버페이 등
           간편결제는 가맹 심사 후 연결됩니다. briq.kr과 별도 서비스입니다.
         </div>
       </div>

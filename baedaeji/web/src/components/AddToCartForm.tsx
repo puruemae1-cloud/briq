@@ -2,20 +2,37 @@
 
 import { useActionState, useState } from "react";
 import { addCartItemAction, previewUrlAction } from "@/app/actions/cart";
+import { enabledStores } from "@/lib/stores";
+import { isHttpUrl } from "@/lib/product-input";
 
 const initial = { error: "" };
 
-export function AddToCartForm({ presetUrl = "" }: { presetUrl?: string }) {
+export function AddToCartForm({
+  presetUrl = "",
+  defaultStoreId = "asos",
+}: {
+  presetUrl?: string;
+  defaultStoreId?: string;
+}) {
   const [state, action, pending] = useActionState(addCartItemAction, initial);
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState(isHttpUrl(presetUrl) ? "" : presetUrl.trim());
+  const [storeId, setStoreId] = useState(defaultStoreId);
   const [storeName, setStoreName] = useState("");
   const [previewing, setPreviewing] = useState(false);
+  const stores = enabledStores();
+  const selected = stores.find((s) => s.id === storeId) ?? stores[0];
 
-  async function onUrlBlur(url: string) {
-    if (!url.trim()) return;
+  async function onProductBlur(raw: string) {
+    const text = raw.trim();
+    if (!text) return;
+    if (!isHttpUrl(text)) {
+      setTitle((prev) => prev || text);
+      setStoreName(selected?.nameEn ?? "ASOS");
+      return;
+    }
     setPreviewing(true);
     try {
-      const preview = await previewUrlAction(url.trim());
+      const preview = await previewUrlAction(text);
       setTitle((prev) => prev || preview.title);
       setStoreName(preview.storeName);
     } catch {
@@ -28,34 +45,52 @@ export function AddToCartForm({ presetUrl = "" }: { presetUrl?: string }) {
   return (
     <form action={action} className="card grid gap-4 p-5 md:grid-cols-2">
       <label className="field md:col-span-2">
-        <span>상품 URL</span>
-        <input
+        <span>상품 이름 또는 링크</span>
+        <textarea
           name="url"
           required
+          rows={3}
           defaultValue={presetUrl}
-          placeholder="복사한 상품 링크를 여기에 붙여 넣으세요"
+          placeholder="ASOS DESIGN double layer minimal halter neck top in cream"
           autoCapitalize="off"
           autoCorrect="off"
           spellCheck={false}
-          inputMode="url"
-          className="min-h-[52px]"
-          onBlur={(e) => onUrlBlur(e.target.value)}
+          className="min-h-[72px]"
+          onBlur={(e) => onProductBlur(e.target.value)}
         />
         <em className="text-[0.8rem] not-italic text-[var(--muted)]">
           {previewing
             ? "상품 정보를 읽는 중…"
             : storeName
-              ? `${storeName} 링크로 인식했습니다.`
-              : "메인 배너 스토어의 상품 페이지만 가능합니다."}
+              ? `${storeName}로 인식했습니다. 이름만 넣으면 그 스토어에서 검색합니다.`
+              : "ASOS에서 복사한 상품 이름만 붙여넣어도 됩니다. 링크가 있으면 링크를 넣으세요."}
         </em>
       </label>
-      <label className="field md:col-span-2">
+      <label className="field">
+        <span>검색할 쇼핑몰</span>
+        <select
+          name="storeId"
+          value={storeId}
+          onChange={(e) => {
+            setStoreId(e.target.value);
+            const next = stores.find((s) => s.id === e.target.value);
+            if (next && !isHttpUrl(presetUrl)) setStoreName(next.nameEn);
+          }}
+        >
+          {stores.map((s) => (
+            <option key={s.id} value={s.id}>
+              {s.nameEn} ({s.nameKo})
+            </option>
+          ))}
+        </select>
+      </label>
+      <label className="field">
         <span>상품명</span>
         <input
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="자동으로 채워지지 않으면 직접 입력"
+          placeholder="비워 두면 위에 붙인 이름을 씁니다"
         />
       </label>
       <label className="field">

@@ -5,6 +5,7 @@ import { readOnlyDb } from "@/lib/db";
 import { formatDate } from "@/lib/format";
 import { formatGbp, formatKrw } from "@/lib/fx";
 import { ORDER_STATUS_LABEL } from "@/lib/types";
+import { cartLinkLabel } from "@/lib/product-input";
 
 export default async function OrderDetailPage({
   params,
@@ -45,7 +46,7 @@ export default async function OrderDetailPage({
               </p>
               {item.memo ? <p className="mt-2 text-sm">메모: {item.memo}</p> : null}
               <a href={item.url} className="mt-2 inline-block text-sm underline" target="_blank" rel="noopener noreferrer">
-                {item.url}
+                {cartLinkLabel(item.url, item.storeName, item.source)}
               </a>
             </article>
           ))}

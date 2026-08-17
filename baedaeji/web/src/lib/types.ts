@@ -27,6 +27,7 @@ export type CartItem = {
   gbpPrice: number | null;
   memo: string;
   addedAt: string;
+  source?: "url" | "search";
 };
 
 export type OrderStatus =

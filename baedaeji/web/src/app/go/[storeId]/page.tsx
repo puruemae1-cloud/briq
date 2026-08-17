@@ -22,7 +22,7 @@ export default async function GoStorePage({
       <h1 className="display mt-2 text-4xl">{store.nameEn}</h1>
       <p className="mt-3 max-w-xl text-sm leading-6 text-[var(--muted)]">
         이 화면은 배대지입니다. {store.nameKo}로 가도 여기로 돌아올 수 있게, 먼저 이
-        페이지를 열어 두세요. 상품 주소를 복사한 뒤 이 칸에 붙이면 됩니다.
+        페이지를 열어 두세요. 상품 이름이나 주소를 복사한 뒤 이 칸에 붙이면 됩니다.
       </p>
 
       <div
@@ -40,13 +40,12 @@ export default async function GoStorePage({
       </div>
 
       <section className="mt-10">
-        <h2 className="display text-2xl">복사한 상품 링크는 여기에</h2>
+        <h2 className="display text-2xl">복사한 이름이나 링크는 여기에</h2>
         <p className="mt-2 text-sm text-[var(--muted)]">
-          {store.nameEn} 탭에서 주소를 복사한 다음, Safari 탭에서 이 화면으로 돌아와
-          붙이세요.
+          {store.nameEn}에서 상품 이름을 복사해도 됩니다. 링크가 있으면 링크를 넣으세요.
         </p>
         <div className="mt-4">
-          <PasteUrlBar />
+          <PasteUrlBar storeId={store.id} />
         </div>
       </section>
 

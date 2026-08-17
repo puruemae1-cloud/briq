@@ -7,16 +7,20 @@ import { requestQuoteAction } from "@/app/actions/orders";
 import { getCurrentUser } from "@/lib/auth";
 import { readOnlyDb } from "@/lib/db";
 import { formatGbp } from "@/lib/fx";
+import { cartLinkLabel } from "@/lib/product-input";
 
 export default async function CartPage({
   searchParams,
 }: {
-  searchParams: Promise<{ url?: string }>;
+  searchParams: Promise<{ url?: string; store?: string }>;
 }) {
   const me = await getCurrentUser();
-  const { url } = await searchParams;
+  const { url, store } = await searchParams;
   if (!me) {
-    const next = url ? `/cart?url=${encodeURIComponent(url)}` : "/cart";
+    const qs = new URLSearchParams();
+    if (url) qs.set("url", url);
+    if (store) qs.set("store", store);
+    const next = qs.size ? `/cart?${qs.toString()}` : "/cart";
     redirect(`/login?next=${encodeURIComponent(next)}`);
   }
   const db = await readOnlyDb();
@@ -26,12 +30,12 @@ export default async function CartPage({
     <div className="page-wrap py-12">
       <h1 className="display text-4xl">장바구니</h1>
       <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-        <strong>상품 URL</strong> 칸에 복사한 링크를 붙여 넣으세요. 사이즈·수량을 적고
-        「장바구니에 담기」를 누르면 됩니다.
+        ASOS에서 복사한 <strong>상품 이름</strong>만 붙여넣어도 됩니다. 링크가 있으면
+        링크를 넣으세요. 사이즈·수량을 적고 「장바구니에 담기」를 누르면 됩니다.
       </p>
 
       <div className="mt-8">
-        <AddToCartForm presetUrl={url || ""} />
+        <AddToCartForm presetUrl={url || ""} defaultStoreId={store || "asos"} />
       </div>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -65,7 +69,7 @@ export default async function CartPage({
                     {item.gbpPrice ? ` · ${formatGbp(item.gbpPrice)}` : " · 가격 미입력"}
                   </p>
                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm underline">
-                    원본 페이지
+                    {cartLinkLabel(item.url, item.storeName, item.source)}
                   </a>
                 </div>
                 <form action={removeCartItemAction.bind(null, item.id)}>

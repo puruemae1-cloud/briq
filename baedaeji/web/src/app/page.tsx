@@ -22,12 +22,12 @@ export default async function HomePage() {
               한국에서 맡기다
             </h1>
             <p className="mt-6 max-w-xl text-[1.02rem] leading-7 text-[#d7d2c8]">
-              아래 영국 스토어에서 상품을 고른 뒤, 주소창 링크를 배대지에 담으세요.
+              아래 영국 스토어에서 상품을 고른 뒤, 상품 이름이나 링크를 배대지에 담으세요.
               오늘 환율로 견적을 내고 원화로 결제하면 영국에서 대신 사서 보냅니다.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/#paste" className="btn btn-gold">
-                URL 붙여넣기
+                이름·링크 붙여넣기
               </Link>
               <Link href="/#stores" className="btn btn-ghost border-[#f7f4ee]/30 text-[#f7f4ee]">
                 스토어 보기
@@ -43,7 +43,7 @@ export default async function HomePage() {
             <ol className="mt-6 grid gap-3 text-sm leading-6">
               <li>1. 배너를 누르면 배대지 안내 화면이 남는다</li>
               <li>2. ASOS는 길게 눌러 새 탭으로 연다</li>
-              <li>3. 상품 주소를 복사하고 배대지 탭으로 돌아와 붙인다</li>
+              <li>3. 상품 이름이나 주소를 복사하고 배대지 탭으로 돌아와 붙인다</li>
               <li>4. 즐겨찾기 「배대지에 담기」면 한 번에 돌아온다</li>
             </ol>
           </div>
@@ -56,12 +56,13 @@ export default async function HomePage() {
       >
         <div className="page-wrap">
           <p className="text-[0.72rem] tracking-[0.2em] uppercase text-[var(--muted)]">
-            Paste product URL
+            Paste name or URL
           </p>
-          <h2 className="display mt-1 text-3xl">복사한 상품 링크는 여기에</h2>
+          <h2 className="display mt-1 text-3xl">복사한 이름이나 링크는 여기에</h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-            영국 몰 주소창에서 복사한 뒤, 아래 칸을 길게 눌러 붙여넣기 하세요. 로그인되어
-            있지 않으면 로그인 화면으로 이동합니다.
+            ASOS 상품 이름을 그대로 붙여넣어도 됩니다. 링크가 있으면 링크를 넣으세요.
+            아래 칸을 길게 눌러 붙여넣기 하세요. 로그인되어 있지 않으면 로그인 화면으로
+            이동합니다.
           </p>
           <div className="mt-5 max-w-3xl">
             <PasteUrlBar />
@@ -80,8 +81,8 @@ export default async function HomePage() {
         <section className="mt-16 grid gap-6 md:grid-cols-3">
           {[
             {
-              t: "링크만 담으면 됩니다",
-              d: "해외몰 장바구니는 이 사이트가 읽을 수 없습니다. 상품 URL을 배대지 장바구니에 넣는 것이 주문입니다.",
+              t: "이름만 담아도 됩니다",
+              d: "해외몰 장바구니는 이 사이트가 읽을 수 없습니다. 상품 이름이나 링크를 배대지 장바구니에 넣는 것이 주문입니다.",
             },
             {
               t: "견적 후 결제",

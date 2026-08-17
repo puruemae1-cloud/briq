@@ -5,6 +5,7 @@ import { readOnlyDb } from "@/lib/db";
 import { formatDate } from "@/lib/format";
 import { formatGbp, formatKrw } from "@/lib/fx";
 import { ORDER_STATUS_LABEL, type OrderStatus } from "@/lib/types";
+import { cartLinkLabel } from "@/lib/product-input";
 
 const STATUSES = Object.keys(ORDER_STATUS_LABEL) as OrderStatus[];
 
@@ -18,7 +19,7 @@ export default async function AdminPage() {
     <div className="page-wrap py-12">
       <h1 className="display text-4xl">운영 주문</h1>
       <p className="mt-2 text-sm text-[var(--muted)]">
-        영국 몰에 자동 로그인하지 않습니다. URL을 열고 직접 구매하세요.
+        영국 몰에 자동 로그인하지 않습니다. 검색 링크나 상품 페이지를 열고 직접 구매하세요.
       </p>
       <div className="mt-8 grid gap-6">
         {db.orders.length === 0 ? (
@@ -49,8 +50,8 @@ export default async function AdminPage() {
                     <span className="text-[var(--muted)]">{item.storeName}</span> {item.title} ·{" "}
                     {item.size || "사이즈?"} · {item.qty}개 · {item.gbpPrice ? formatGbp(item.gbpPrice) : "GBP?"}
                     <br />
-                    <a href={item.url} className="underline break-all" target="_blank" rel="noopener noreferrer">
-                      {item.url}
+                    <a href={item.url} className="underline" target="_blank" rel="noopener noreferrer">
+                      {cartLinkLabel(item.url, item.storeName, item.source)}
                     </a>
                   </li>
                 ))}
