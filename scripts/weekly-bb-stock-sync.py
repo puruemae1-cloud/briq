@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Weekly Burberry stock + catalogue sync for Briq.
 
-Re-scrapes UK PLPs + PDPs (forcing size/stock refresh), then rebuilds
-bb-catalog.ts while preserving registeredAt for existing styles.
+Re-scrapes UK PLPs + PDPs (forcing size/stock refresh), translates
+shop copy EN→KO, then rebuilds bb-catalog.ts while preserving
+registeredAt for existing styles.
 
 Covers:
   - option-level sold-out / restock (isInStock on each size)
@@ -30,17 +31,17 @@ SCRIPTS = (
     "scrape-bb-scarves.py",
     "scrape-bb-bags-collections.py",
     "scrape-bb-beauty.py",
+    "translate-bb-catalog.py",
     "build-bb-catalog.py",
 )
 
 
 def run(script: str, env: dict[str, str]) -> None:
     print(f"→ {script}", flush=True)
-    subprocess.check_call(
-        [sys.executable, str(ROOT / "scripts" / script)],
-        cwd=str(ROOT),
-        env=env,
-    )
+    cmd = [sys.executable, str(ROOT / "scripts" / script)]
+    if script == "translate-bb-catalog.py":
+        cmd.extend(["--workers", "4"])
+    subprocess.check_call(cmd, cwd=str(ROOT), env=env)
 
 
 def main() -> None:
@@ -52,6 +53,16 @@ def main() -> None:
     for script in SCRIPTS:
         run(script, env)
 
+    print("Checking Burberry Korean copy…", flush=True)
+    subprocess.check_call(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "translate-bb-catalog.py"),
+            "--check-catalog",
+        ],
+        cwd=str(ROOT),
+        env=env,
+    )
     print("Burberry weekly sync complete.", flush=True)
 
 

@@ -53,6 +53,7 @@ jobs:
             "chore: weekly Burberry stock + catalogue sync" \
             src/data/bb \
             scripts/weekly-bb-stock-sync.py \
+            scripts/translate-bb-catalog.py \
             scripts/build-bb-catalog.py \
             scripts/catalog_image_guard.py \
             scripts/verify-product-images.py \
