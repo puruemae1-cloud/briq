@@ -185,10 +185,13 @@ type MotionAnalysis = {
   analysisH: number;
 };
 
+export type CropMode = "user" | "tour";
+
 /** Tight body + club crop — trims sky, floor, and empty sides via motion mass. */
 export async function detectBodyCrop(
   video: HTMLVideoElement,
   onProgress?: FramingProgressCallback,
+  mode: CropMode = "user",
 ): Promise<MotionAnalysis> {
   const vw = video.videoWidth;
   const vh = video.videoHeight;
@@ -319,19 +322,51 @@ export async function detectBodyCrop(
     return { start: bestStart, end: bestStart + bestLen - 1 };
   };
 
-  const rowWin = massWindow(rowMass, 0.988);
-  const colWin = massWindow(colMass, 0.988);
+  const rowCover = mode === "tour" ? 0.86 : 0.968;
+  const colCover = mode === "tour" ? 0.8 : 0.962;
+  const rowWin = massWindow(rowMass, rowCover);
+  const colWin = massWindow(colMass, colCover);
 
   let maxRowMass = 0;
+  let maxColMass = 0;
   for (let y = 0; y < analysisH; y++) {
     if (rowMass[y] > maxRowMass) maxRowMass = rowMass[y];
   }
+  for (let x = 0; x < analysisW; x++) {
+    if (colMass[x] > maxColMass) maxColMass = colMass[x];
+  }
+
+  const rowFloor = maxRowMass * (mode === "tour" ? 0.14 : 0.1);
+  const colFloor = maxColMass * (mode === "tour" ? 0.16 : 0.12);
 
   let bodyTopRow = rowWin.start;
-  const rowFloor = maxRowMass * 0.06;
   for (let y = rowWin.start; y <= rowWin.end; y++) {
     if (rowMass[y] >= rowFloor) {
       bodyTopRow = y;
+      break;
+    }
+  }
+
+  let bodyBottomRow = rowWin.end;
+  for (let y = rowWin.end; y >= bodyTopRow; y--) {
+    if (rowMass[y] >= rowFloor) {
+      bodyBottomRow = y;
+      break;
+    }
+  }
+
+  let cropLeftCol = colWin.start;
+  for (let x = colWin.start; x <= colWin.end; x++) {
+    if (colMass[x] >= colFloor) {
+      cropLeftCol = x;
+      break;
+    }
+  }
+
+  let cropRightCol = colWin.end;
+  for (let x = colWin.end; x >= cropLeftCol; x--) {
+    if (colMass[x] >= colFloor) {
+      cropRightCol = x;
       break;
     }
   }
@@ -340,21 +375,70 @@ export async function detectBodyCrop(
   if (clubApexTopY < analysisH) {
     cropTopRow = Math.min(bodyTopRow, clubApexTopY);
   }
-  cropTopRow = Math.max(0, cropTopRow - Math.round(analysisH * 0.012));
+  const headroom = Math.round(analysisH * (mode === "tour" ? 0.006 : 0.004));
+  cropTopRow = Math.max(0, cropTopRow - headroom);
 
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;
 
-  let x = colWin.start * scaleX;
-  let y = cropTopRow * scaleY;
-  let w = (colWin.end - colWin.start + 1) * scaleX;
-  let h = (rowWin.end - cropTopRow + 1) * scaleY;
+  if (mode === "tour") {
+    let sumX = 0;
+    let sumW = 0;
+    for (let y = cropTopRow; y <= bodyBottomRow; y++) {
+      for (let x = cropLeftCol; x <= cropRightCol; x++) {
+        const p = y * analysisW + x;
+        const m = peakMotion[p] >= MOTION_THRESHOLD ? peakMotion[p] : 0;
+        if (m <= 0) continue;
+        sumX += x * m;
+        sumW += m;
+      }
+    }
 
-  const padX = w * 0.02;
-  const padBottom = h * 0.025;
-  x = Math.max(0, x - padX);
-  w = Math.min(vw - x, w + padX * 2);
-  h = Math.min(vh - y, h + padBottom);
+    const cx = sumW > 0 ? sumX / sumW : (cropLeftCol + cropRightCol) / 2;
+    const bodySpan = bodyBottomRow - cropTopRow + 1;
+    const tourW = Math.min(
+      analysisW * 0.42,
+      Math.max(analysisW * 0.28, (cropRightCol - cropLeftCol + 1) * 0.72),
+    );
+    const tourH = Math.min(
+      analysisH * 0.92,
+      Math.max(bodySpan * 1.02, analysisH * 0.55),
+    );
+
+    let leftCol = cx - tourW * 0.44;
+    let topRow = cropTopRow;
+    if (topRow + tourH > analysisH) topRow = Math.max(0, analysisH - tourH);
+    if (leftCol < 0) leftCol = 0;
+    if (leftCol + tourW > analysisW) leftCol = Math.max(0, analysisW - tourW);
+
+    cropLeftCol = Math.round(leftCol);
+    cropRightCol = Math.min(analysisW - 1, Math.round(leftCol + tourW));
+    cropTopRow = Math.round(topRow);
+    bodyBottomRow = Math.min(analysisH - 1, Math.round(cropTopRow + tourH));
+  }
+
+  let x = cropLeftCol * scaleX;
+  let y = cropTopRow * scaleY;
+  let w = (cropRightCol - cropLeftCol + 1) * scaleX;
+  let h = (bodyBottomRow - cropTopRow + 1) * scaleY;
+
+  if (mode === "user") {
+    const padLeft = w * 0.025;
+    x = Math.max(0, x - padLeft);
+    w = Math.min(vw - x, w + padLeft);
+
+    const trimTop = h * 0.035;
+    const trimBottom = h * 0.07;
+    const trimRight = w * 0.12;
+    y += trimTop;
+    h -= trimTop + trimBottom;
+    w -= trimRight;
+  } else {
+    x = Math.max(0, x);
+    w = Math.min(vw - x, w);
+  }
+
+  h = Math.min(vh - y, h);
 
   x = Math.round(x);
   y = Math.round(y);
@@ -390,11 +474,25 @@ export function tourMatchScale(
   userMeta: BodyFrameMeta,
   tourCrop: CropRect,
   tourH: number,
+  tourW?: number,
 ): number {
   const userBodyFrac = userMeta.sourceCrop.h / userMeta.sourceH;
   const tourBodyFrac = tourCrop.h / tourH;
-  if (tourBodyFrac <= 0) return 1;
-  return Math.min(2.4, Math.max(1, userBodyFrac / tourBodyFrac));
+  if (tourBodyFrac <= 0) return 1.35;
+
+  const heightScale = userBodyFrac / tourBodyFrac;
+  let scale = heightScale;
+
+  if (tourW && tourW > 0) {
+    const userWidthFrac = userMeta.sourceCrop.w / userMeta.sourceW;
+    const tourWidthFrac = tourCrop.w / tourW;
+    if (tourWidthFrac > 0) {
+      const widthScale = userWidthFrac / tourWidthFrac;
+      scale = heightScale * 0.55 + widthScale * 0.45;
+    }
+  }
+
+  return Math.min(4.2, Math.max(1.15, scale));
 }
 
 /** Hard CSS crop — maps source crop rect onto an overflow-hidden panel. */
@@ -408,7 +506,7 @@ export function cropToVideoStyle(
     return { objectFit: "cover", objectPosition: "50% 55%" };
   }
 
-  const zoom = Math.min(2.4, Math.max(1, matchScale));
+  const zoom = Math.min(4.2, Math.max(1, matchScale));
   let c = crop;
   if (zoom > 1.02) {
     const inset = 1 - 1 / zoom;
@@ -436,13 +534,16 @@ export function cropToVideoStyle(
   };
 }
 
-export async function detectBodyCropFromUrl(src: string): Promise<{
+export async function detectBodyCropFromUrl(
+  src: string,
+  mode: CropMode = "user",
+): Promise<{
   crop: CropRect;
   sourceW: number;
   sourceH: number;
 }> {
   const video = await loadVideoFromUrl(src);
-  const { crop } = await detectBodyCrop(video);
+  const { crop } = await detectBodyCrop(video, undefined, mode);
   return { crop, sourceW: video.videoWidth, sourceH: video.videoHeight };
 }
 

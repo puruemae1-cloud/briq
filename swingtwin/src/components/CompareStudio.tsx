@@ -98,10 +98,13 @@ export function CompareStudio() {
   const applyTourDisplayStyle = useCallback(
     async (src: string, userMeta?: BodyFrameMeta) => {
       try {
-        const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(src);
+        const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(
+          src,
+          "tour",
+        );
         const scale = userMeta
-          ? tourMatchScale(userMeta, crop, sourceH)
-          : 1;
+          ? tourMatchScale(userMeta, crop, sourceH, sourceW)
+          : 2.2;
         setTourDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH, scale));
       } catch {
         setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 45%" });
