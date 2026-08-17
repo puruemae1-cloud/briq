@@ -6,6 +6,7 @@ import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
 import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
+import { autoFrameSwingVideo } from "@/lib/swing-framing";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
@@ -160,6 +161,35 @@ export function CompareStudio() {
     }
   }
 
+  async function prepareUserClip(file: File) {
+    setSyncBusy("Auto-framing swing…");
+    try {
+      return await autoFrameSwingVideo(file, setSyncBusy);
+    } catch {
+      return file;
+    } finally {
+      setSyncBusy(null);
+    }
+  }
+
+  async function applyUserFace(file: File) {
+    const f = await prepareUserClip(file);
+    setMyFace(f);
+    const url = URL.createObjectURL(f);
+    setUserUrl((prev) => {
+      if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
+      return url;
+    });
+    setUserFileName(f.name);
+    await saveClip("user", f);
+    await captureUserForSync(f);
+  }
+
+  async function applyUserDtl(file: File) {
+    const f = await prepareUserClip(file);
+    setMyDtl(f);
+  }
+
   function commit(userViews: ViewCapture[], tourViews?: ViewCapture[]) {
     const user = applyHandedness(userViews, handedness);
     const tour = tourViews
@@ -301,9 +331,10 @@ export function CompareStudio() {
         <p className="twin-kicker">Compare</p>
         <h1>You on the left — Rory on the right</h1>
         <p>
-          Upload your face-on clip on the left. Rory McIlroy&apos;s real PGA Tour
-          down-the-line clip loads on the right automatically (normal speed, behind
-          the ball). Press play to sync arms-up through impact.
+          Upload your face-on clip on the left — we auto-crop static background so
+          your swing fills the frame (club arc included). Rory McIlroy&apos;s real PGA
+          Tour down-the-line clip loads on the right. Press play to sync arms-up
+          through impact.
         </p>
       </header>
 
@@ -313,7 +344,7 @@ export function CompareStudio() {
         <label className="twin-drop">
           <span>Left — your swing (face-on)</span>
           <strong>{myFace?.name || userFileName || "Choose video"}</strong>
-          <em>Full body, camera in front</em>
+          <em>Full body, camera in front · auto background crop</em>
           {hasUserFace ? (
             <button
               type="button"
@@ -333,24 +364,14 @@ export function CompareStudio() {
             accept="video/*"
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
-              setMyFace(f);
-              if (f) {
-                const url = URL.createObjectURL(f);
-                setUserUrl((prev) => {
-                  if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
-                  return url;
-                });
-                setUserFileName(f.name);
-                void saveClip("user", f);
-                void captureUserForSync(f);
-              }
+              if (f) void applyUserFace(f);
             }}
           />
         </label>
         <label className="twin-drop">
           <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
-          <em>Down the line — unlocks 3D</em>
+          <em>Down the line · auto crop · unlocks 3D</em>
           {hasUserDtl ? (
             <button
               type="button"
@@ -368,7 +389,10 @@ export function CompareStudio() {
             ref={userDtlInputRef}
             type="file"
             accept="video/*"
-            onChange={(e) => setMyDtl(e.target.files?.[0] ?? null)}
+            onChange={(e) => {
+              const f = e.target.files?.[0] ?? null;
+              if (f) void applyUserDtl(f);
+            }}
           />
         </label>
         <label className="twin-drop twin-drop--tour">
