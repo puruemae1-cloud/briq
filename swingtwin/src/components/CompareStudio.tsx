@@ -6,7 +6,7 @@ import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
 import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
-import { autoFrameSwingVideo } from "@/lib/swing-framing";
+import { autoFrameSwingVideo, autoFrameSwingUrl } from "@/lib/swing-framing";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
@@ -58,6 +58,7 @@ export function CompareStudio() {
   const userFaceInputRef = useRef<HTMLInputElement>(null);
   const userDtlInputRef = useRef<HTMLInputElement>(null);
   const tourInputRef = useRef<HTMLInputElement>(null);
+  const tourRevokeRef = useRef<(() => void) | null>(null);
 
   const preferredProId = useTwinStore((s) => s.preferredProId);
   const handedness = useTwinStore((s) => s.handedness);
@@ -83,18 +84,22 @@ export function CompareStudio() {
   const captureReference = useCallback(async () => {
     const ref = getReferenceClip(pro.id);
     if (!ref || tourFile) return undefined;
-    setSyncBusy("Loading tour reference…");
+    setSyncBusy("Framing Rory to match your body size…");
     try {
-      const video = await loadVideo(ref.src);
+      const framed = await autoFrameSwingUrl(ref.src, ref.label, setSyncBusy);
+      tourRevokeRef.current?.();
+      tourRevokeRef.current = framed.revoke;
+      setTourUrl(framed.url);
+      setTourFileName(ref.label);
+      setUsingReference(true);
+
+      const video = await loadVideo(framed.url);
       const cap = await captureView(video, "downTheLine", ref.label, {
         handedness,
         style: pro.style ?? TOUR_STYLE,
       });
       setRefTourCapture(cap);
       setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
-      setTourUrl(ref.src);
-      setTourFileName(ref.label);
-      setUsingReference(true);
       return cap;
     } finally {
       setSyncBusy(null);
@@ -109,6 +114,7 @@ export function CompareStudio() {
 
   useEffect(() => {
     return () => {
+      tourRevokeRef.current?.();
       if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
     };
   }, [tourUrl]);
@@ -162,18 +168,21 @@ export function CompareStudio() {
   }
 
   async function prepareUserClip(file: File) {
-    setSyncBusy("Auto-framing swing…");
+    setSyncBusy("Tight crop — body only…");
     try {
       return await autoFrameSwingVideo(file, setSyncBusy);
-    } catch {
-      return file;
     } finally {
       setSyncBusy(null);
     }
   }
 
+  async function refreshTourFraming() {
+    if (tourFile) return;
+    await captureReference();
+  }
+
   async function applyUserFace(file: File) {
-    const f = await prepareUserClip(file);
+    const { file: f } = await prepareUserClip(file);
     setMyFace(f);
     const url = URL.createObjectURL(f);
     setUserUrl((prev) => {
@@ -183,11 +192,40 @@ export function CompareStudio() {
     setUserFileName(f.name);
     await saveClip("user", f);
     await captureUserForSync(f);
+    await refreshTourFraming();
   }
 
   async function applyUserDtl(file: File) {
-    const f = await prepareUserClip(file);
+    const { file: f } = await prepareUserClip(file);
     setMyDtl(f);
+  }
+
+  async function applyTourUpload(file: File) {
+    setSyncBusy("Framing tour clip to match…");
+    try {
+      const { file: f } = await autoFrameSwingVideo(file, setSyncBusy);
+      setTourFile(f);
+      const url = URL.createObjectURL(f);
+      tourRevokeRef.current?.();
+      tourRevokeRef.current = null;
+      setTourUrl((prev) => {
+        if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
+        return url;
+      });
+      setTourFileName(f.name);
+      setUsingReference(false);
+      setRefTourCapture(undefined);
+      await saveClip("tour", f);
+      const { video } = await fileToVideo(f);
+      const cap = await captureView(video, "faceOn", f.name, {
+        handedness,
+        style: pro.style ?? TOUR_STYLE,
+      });
+      setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
+      setRefTourCapture(cap);
+    } finally {
+      setSyncBusy(null);
+    }
   }
 
   function commit(userViews: ViewCapture[], tourViews?: ViewCapture[]) {
@@ -308,6 +346,8 @@ export function CompareStudio() {
   }
 
   async function clearTourUpload() {
+    tourRevokeRef.current?.();
+    tourRevokeRef.current = null;
     if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
     try {
       await deleteClip("tour");
@@ -331,10 +371,9 @@ export function CompareStudio() {
         <p className="twin-kicker">Compare</p>
         <h1>You on the left — Rory on the right</h1>
         <p>
-          Upload your face-on clip on the left — we auto-crop static background so
-          your swing fills the frame (club arc included). Rory McIlroy&apos;s real PGA
-          Tour down-the-line clip loads on the right. Press play to sync arms-up
-          through impact.
+          Upload your face-on clip on the left — we cut sky, floor and sides so only
+          your body fills the frame (club arc kept). Rory on the right is auto-framed
+          to the same body size. Press play to sync arms-up through impact.
         </p>
       </header>
 
@@ -344,7 +383,7 @@ export function CompareStudio() {
         <label className="twin-drop">
           <span>Left — your swing (face-on)</span>
           <strong>{myFace?.name || userFileName || "Choose video"}</strong>
-          <em>Full body, camera in front · auto background crop</em>
+          <em>Body-only crop · sky/floor/sides removed</em>
           {hasUserFace ? (
             <button
               type="button"
@@ -424,32 +463,7 @@ export function CompareStudio() {
             accept="video/*"
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
-              setTourFile(f);
-              if (f) {
-                const url = URL.createObjectURL(f);
-                setTourUrl((prev) => {
-                  if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
-                  return url;
-                });
-                setTourFileName(f.name);
-                setUsingReference(false);
-                setRefTourCapture(undefined);
-                void saveClip("tour", f);
-                void (async () => {
-                  setSyncBusy("Reading tour clip…");
-                  try {
-                    const { video } = await fileToVideo(f);
-                    const cap = await captureView(video, "faceOn", f.name, {
-                      handedness,
-                      style: pro.style ?? TOUR_STYLE,
-                    });
-                    setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
-                    setRefTourCapture(cap);
-                  } finally {
-                    setSyncBusy(null);
-                  }
-                })();
-              }
+              if (f) void applyTourUpload(f);
             }}
           />
         </label>

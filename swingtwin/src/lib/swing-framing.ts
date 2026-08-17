@@ -23,27 +23,54 @@ function luma(data: Uint8ClampedArray, i: number) {
 
 export type CropRect = { x: number; y: number; w: number; h: number };
 
-async function loadVideoFromFile(file: File) {
-  const url = URL.createObjectURL(file);
+export type BodyFrameMeta = {
+  /** Body span height as a fraction of the framed output (after normalise). */
+  bodyFill: number;
+  outputW: number;
+  outputH: number;
+};
+
+export type FramedVideoResult = {
+  file: File;
+  meta: BodyFrameMeta;
+};
+
+const OUTPUT_W = 540;
+const OUTPUT_H = 720;
+const BODY_FILL = 0.96;
+const MOTION_THRESHOLD = 8;
+
+async function loadVideoFromUrl(src: string) {
   const video = document.createElement("video");
-  video.src = url;
+  video.src = src;
   video.muted = true;
   video.playsInline = true;
   video.preload = "auto";
+  video.crossOrigin = "anonymous";
   await new Promise<void>((resolve, reject) => {
     video.onloadedmetadata = () => resolve();
     video.onerror = () => reject(new Error("Could not read that video."));
   });
+  return video;
+}
+
+async function loadVideoFromFile(file: File) {
+  const url = URL.createObjectURL(file);
+  const video = await loadVideoFromUrl(url);
   return { video, url };
 }
 
-/** Union bbox of every pixel that moves (body + club arc), in source video pixels. */
-export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRect> {
+type MotionAnalysis = {
+  crop: CropRect;
+  analysisW: number;
+  analysisH: number;
+};
+
+/** Tight body + club crop — trims sky, floor, and empty sides via motion mass. */
+export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAnalysis> {
   const vw = video.videoWidth;
   const vh = video.videoHeight;
-  if (!vw || !vh) {
-    throw new Error("Video has no picture size.");
-  }
+  if (!vw || !vh) throw new Error("Video has no picture size.");
 
   const analysisW = 360;
   const analysisH = Math.max(1, Math.round(vh * (analysisW / vw)));
@@ -80,45 +107,87 @@ export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRec
     prev = cur.slice();
   }
 
-  const motionThreshold = 8;
-  let minX = analysisW;
-  let minY = analysisH;
-  let maxX = 0;
-  let maxY = 0;
-  let hits = 0;
+  const rowMass = new Float32Array(analysisH);
+  const colMass = new Float32Array(analysisW);
+  let total = 0;
 
   for (let y = 0; y < analysisH; y++) {
     for (let x = 0; x < analysisW; x++) {
       const p = y * analysisW + x;
-      if (peakMotion[p] >= motionThreshold) {
-        hits++;
-        if (x < minX) minX = x;
-        if (y < minY) minY = y;
-        if (x > maxX) maxX = x;
-        if (y > maxY) maxY = y;
-      }
+      const w = peakMotion[p] >= MOTION_THRESHOLD ? peakMotion[p] : 0;
+      if (!w) continue;
+      rowMass[y] += w;
+      colMass[x] += w;
+      total += w;
     }
   }
+
+  if (total <= 0) {
+    const crop: CropRect = {
+      x: Math.round(vw * 0.18),
+      y: Math.round(vh * 0.08),
+      w: Math.round(vw * 0.64),
+      h: Math.round(vh * 0.84),
+    };
+    return { crop, analysisW, analysisH };
+  }
+
+  const massWindow = (mass: Float32Array, cover: number) => {
+    const target = total * cover;
+    let bestLen = mass.length + 1;
+    let bestStart = 0;
+    let sum = 0;
+    let left = 0;
+    for (let right = 0; right < mass.length; right++) {
+      sum += mass[right];
+      while (sum >= target && left <= right) {
+        const len = right - left + 1;
+        if (len < bestLen) {
+          bestLen = len;
+          bestStart = left;
+        }
+        sum -= mass[left];
+        left++;
+      }
+    }
+    if (bestLen > mass.length) {
+      let start = 0;
+      for (let i = 0; i < mass.length; i++) {
+        if (mass[i] > 0) {
+          start = i;
+          break;
+        }
+      }
+      let end = mass.length - 1;
+      for (let i = mass.length - 1; i >= 0; i--) {
+        if (mass[i] > 0) {
+          end = i;
+          break;
+        }
+      }
+      return { start, end };
+    }
+    return { start: bestStart, end: bestStart + bestLen - 1 };
+  };
+
+  const rowWin = massWindow(rowMass, 0.985);
+  const colWin = massWindow(colMass, 0.985);
 
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;
 
-  if (!hits) {
-    return {
-      x: Math.round(vw * 0.12),
-      y: Math.round(vh * 0.06),
-      w: Math.round(vw * 0.76),
-      h: Math.round(vh * 0.88),
-    };
-  }
+  let minX = colWin.start;
+  let maxX = colWin.end;
+  let minY = rowWin.start;
+  let maxY = rowWin.end;
 
   let x = minX * scaleX;
   let y = minY * scaleY;
   let w = (maxX - minX + 1) * scaleX;
   let h = (maxY - minY + 1) * scaleY;
 
-  const padX = w * 0.1;
-  const padY = h * 0.1;
+  const padX = w * 0.035;
+  const padY = h * 0.035;
   x = Math.max(0, x - padX);
   y = Math.max(0, y - padY);
   w = Math.min(vw - x, w + padX * 2);
@@ -126,36 +195,42 @@ export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRec
 
   x = Math.round(x);
   y = Math.round(y);
-  w = Math.round(w) & ~1;
-  h = Math.round(h) & ~1;
+  w = Math.max(32, Math.round(w) & ~1);
+  h = Math.max(32, Math.round(h) & ~1);
+  if (x + w > vw) x = Math.max(0, vw - w);
+  if (y + h > vh) y = Math.max(0, vh - h);
 
-  if (w < 32) w = Math.min(vw, 32);
-  if (h < 32) h = Math.min(vh, 32);
-  if (x + w > vw) x = vw - w;
-  if (y + h > vh) y = vh - h;
-
-  return { x: Math.max(0, x), y: Math.max(0, y), w, h };
+  return {
+    crop: { x, y, w, h },
+    analysisW,
+    analysisH,
+  };
 }
 
-function cropCoversMostOfFrame(crop: CropRect, vw: number, vh: number) {
-  return crop.w / vw > 0.94 && crop.h / vh > 0.94;
+/** @deprecated use detectBodyCrop */
+export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRect> {
+  const { crop } = await detectBodyCrop(video);
+  return crop;
 }
 
-async function renderCroppedVideo(
+async function renderBodyFocusedVideo(
   video: HTMLVideoElement,
   crop: CropRect,
   onProgress?: (message: string) => void,
 ): Promise<Blob> {
-  const maxEdge = 720;
-  const scale = Math.min(1, maxEdge / Math.max(crop.w, crop.h));
-  const outW = Math.max(2, Math.round(crop.w * scale) & ~1);
-  const outH = Math.max(2, Math.round(crop.h * scale) & ~1);
-
+  const outW = OUTPUT_W;
+  const outH = OUTPUT_H;
   const canvas = document.createElement("canvas");
   canvas.width = outW;
   canvas.height = outH;
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Could not render cropped video.");
+
+  const scale = (outH * BODY_FILL) / crop.h;
+  const drawW = crop.w * scale;
+  const drawH = crop.h * scale;
+  const dx = (outW - drawW) / 2;
+  const dy = (outH - drawH) / 2;
 
   const fps = 30;
   const duration =
@@ -189,12 +264,24 @@ async function renderCroppedVideo(
       try {
         for (let i = 0; i < frameCount; i++) {
           if (i % 8 === 0) {
-            onProgress?.(`Cropping swing… ${Math.round((i / frameCount) * 100)}%`);
+            onProgress?.(`Framing body… ${Math.round((i / frameCount) * 100)}%`);
           }
           const t = Math.min(i / fps, Math.max(0, duration - 0.001));
           video.currentTime = t;
           await waitSeek(video);
-          ctx.drawImage(video, crop.x, crop.y, crop.w, crop.h, 0, 0, outW, outH);
+          ctx.fillStyle = "#04110c";
+          ctx.fillRect(0, 0, outW, outH);
+          ctx.drawImage(
+            video,
+            crop.x,
+            crop.y,
+            crop.w,
+            crop.h,
+            dx,
+            dy,
+            drawW,
+            drawH,
+          );
           await new Promise((r) => setTimeout(r, frameMs));
         }
         recorder.stop();
@@ -208,38 +295,67 @@ async function renderCroppedVideo(
   return blob;
 }
 
+function defaultMeta(): BodyFrameMeta {
+  return { bodyFill: BODY_FILL, outputW: OUTPUT_W, outputH: OUTPUT_H };
+}
+
+async function frameVideoElement(
+  video: HTMLVideoElement,
+  onProgress?: (message: string) => void,
+  fileStem = "swing",
+): Promise<FramedVideoResult> {
+  onProgress?.("Finding your body…");
+  const { crop } = await detectBodyCrop(video);
+  onProgress?.("Cutting sky, floor & sides…");
+  const blob = await renderBodyFocusedVideo(video, crop, onProgress);
+  const file = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });
+  return { file, meta: defaultMeta() };
+}
+
 /**
- * Auto-crop static background on upload — keeps the full moving region (golfer + club path)
- * and re-encodes so the swing fills the preview frame.
+ * Auto-crop on upload — keeps only the golfer (incl. club arc), removes sky/floor/sides,
+ * and normalises so the body fills the frame. Same output size for tour matching.
  */
 export async function autoFrameSwingVideo(
   file: File,
   onProgress?: (message: string) => void,
-): Promise<File> {
+): Promise<FramedVideoResult> {
+  const meta = defaultMeta();
   if (!file.type.startsWith("video/") || typeof MediaRecorder === "undefined") {
-    return file;
+    return { file, meta };
   }
 
   const { video, url } = await loadVideoFromFile(file);
   try {
-    onProgress?.("Finding swing motion…");
-    const crop = await detectMotionCrop(video);
-    const vw = video.videoWidth;
-    const vh = video.videoHeight;
-
-    if (cropCoversMostOfFrame(crop, vw, vh)) {
-      return file;
-    }
-
-    onProgress?.("Removing static background…");
-    try {
-      const blob = await renderCroppedVideo(video, crop, onProgress);
-      const stem = file.name.replace(/\.[^.]+$/, "") || "swing";
-      return new File([blob], `${stem}-framed.webm`, { type: blob.type });
-    } catch {
-      return file;
-    }
+    const stem = file.name.replace(/\.[^.]+$/, "") || "swing";
+    return await frameVideoElement(video, onProgress, stem);
+  } catch {
+    return { file, meta };
   } finally {
     URL.revokeObjectURL(url);
   }
 }
+
+/** Frame a bundled tour / reference clip to the same body scale as user uploads. */
+export async function autoFrameSwingUrl(
+  src: string,
+  label: string,
+  onProgress?: (message: string) => void,
+): Promise<{ url: string; meta: BodyFrameMeta; revoke: () => void }> {
+  const meta = defaultMeta();
+  if (typeof MediaRecorder === "undefined") {
+    return { url: src, meta, revoke: () => {} };
+  }
+
+  const video = await loadVideoFromUrl(src);
+  try {
+    const stem = label.replace(/[^\w.-]+/g, "-").slice(0, 40) || "tour";
+    const framed = await frameVideoElement(video, onProgress, stem);
+    const url = URL.createObjectURL(framed.file);
+    return { url, meta: framed.meta, revoke: () => URL.revokeObjectURL(url) };
+  } catch {
+    return { url: src, meta, revoke: () => {} };
+  }
+}
+
+export { OUTPUT_W, OUTPUT_H, BODY_FILL };

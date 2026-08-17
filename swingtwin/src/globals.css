@@ -255,8 +255,8 @@ a { color: inherit; text-decoration: none; }
 }
 .twin-compare video, .twin-compare__empty {
   width: 100%;
-  aspect-ratio: 9 / 12;
-  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
   background: #04110c;
   display: block;
 }

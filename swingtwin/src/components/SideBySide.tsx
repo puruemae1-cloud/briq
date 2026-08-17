@@ -223,7 +223,7 @@ export function SideBySide({
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
           {tourIsReference
-            ? " · Rory = official PGA Tour DTL (normal speed)"
+            ? " · Rory auto-framed to same body size as you"
             : tourUrl
               ? ""
               : " · upload Rory's clip on the right to replace the default"}
