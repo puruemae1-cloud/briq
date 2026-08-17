@@ -17,6 +17,8 @@ import {
   rankedGaps,
 } from "./metrics";
 import { gapCopy, phaseNote } from "./copy";
+import { AMATEUR_STYLE, FINE_PHASES, TOUR_STYLE } from "./anatomy";
+import { buildPose, comparePoses } from "./pose";
 
 function peakIndex(samples: MotionSample[]) {
   let max = -1;
@@ -93,6 +95,15 @@ export function metricsFromMotion(
   return hint ? blendMetrics(hint, derived) : derived;
 }
 
+function sampleAt(samples: MotionSample[], tNorm: number) {
+  if (!samples.length) return undefined;
+  const idx = Math.min(
+    samples.length - 1,
+    Math.round(tNorm * (samples.length - 1)),
+  );
+  return samples[idx];
+}
+
 function phaseHints(views: ViewCapture[]): Record<SwingPhase, string> {
   const all = views.flatMap((v) => v.samples);
   const t = splitTempo(all);
@@ -153,7 +164,10 @@ export function analyzePair(opts: {
       user: Math.round(userMetrics[key]),
       pro: Math.round(proMetrics[key]),
       delta: Math.round(delta),
-      severity: (abs < 8 ? "ok" : abs < 16 ? "watch" : "fix") as const,
+      severity: (abs < 8 ? "ok" : abs < 16 ? "watch" : "fix") as
+        | "ok"
+        | "watch"
+        | "fix",
       summary: comparedAgainstClip
         ? copy.summary.replace("the model", "their clip")
         : copy.summary,
@@ -168,6 +182,29 @@ export function analyzePair(opts: {
     note: phaseNote(pro, phase, hints[phase]),
   }));
 
+  const allFine = FINE_PHASES.map((phase) => {
+    const userPose = buildPose({
+      style: AMATEUR_STYLE,
+      phaseT: phase.t,
+      handedness: opts.handedness,
+      motion: sampleAt(userAll, phase.t),
+    });
+    const proPose = buildPose({
+      style: comparedAgainstClip ? AMATEUR_STYLE : (pro.style ?? TOUR_STYLE),
+      phaseT: phase.t,
+      handedness: opts.handedness,
+      motion: comparedAgainstClip ? sampleAt(tourAll, phase.t) : undefined,
+    });
+    const top = comparePoses(userPose, proPose).slice(0, 3);
+    return {
+      n: phase.n,
+      code: phase.code,
+      label: phase.label,
+      cue: phase.cue,
+      note: `${phase.cue} Biggest gaps: ${top.map((d) => d.label).join(", ")}.`,
+    };
+  });
+
   return {
     id: `sw_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 7)}`,
     createdAt: new Date().toISOString(),
@@ -180,6 +217,7 @@ export function analyzePair(opts: {
     overall,
     gaps,
     phaseNotes: opts.trialLimited ? phaseNotes.slice(0, 2) : phaseNotes,
+    finePhaseNotes: opts.trialLimited ? allFine.slice(0, 3) : allFine,
     userMetrics,
     proMetrics,
     trialLimited: opts.trialLimited,

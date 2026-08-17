@@ -11,6 +11,9 @@ export function Privacy() {
       <p>
         We will not sell footage. Tour clips you upload remain yours to use only for
         private coaching comparison — do not publish other people’s broadcasts.
+        Instagram accounts such as @golf_swings, @pgatour, @golfdigest, @golf_gods
+        and @golfonthesnap are not scraped; player models are distilled from
+        public swing patterns, and any clip you upload stays on this device.
       </p>
       <p>
         Contact for the production company will sit here once TwinSwing Ltd (or the

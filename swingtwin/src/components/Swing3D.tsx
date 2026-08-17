@@ -1,22 +1,6 @@
 import { useEffect, useRef } from "react";
+import { BODY_BONES } from "@/lib/anatomy";
 import type { SkeletonFrame } from "@/lib/types";
-
-const BONES: [string, string][] = [
-  ["head", "neck"],
-  ["neck", "lShoulder"],
-  ["neck", "rShoulder"],
-  ["lShoulder", "lElbow"],
-  ["lElbow", "lWrist"],
-  ["rShoulder", "rElbow"],
-  ["rElbow", "rWrist"],
-  ["lShoulder", "lHip"],
-  ["rShoulder", "rHip"],
-  ["lHip", "rHip"],
-  ["lHip", "lKnee"],
-  ["lKnee", "lAnkle"],
-  ["rHip", "rKnee"],
-  ["rKnee", "rAnkle"],
-];
 
 type Props = {
   frames: SkeletonFrame[];
@@ -88,7 +72,7 @@ export function Swing3D({ frames, playing = true, label }: Props) {
         ctx.lineCap = "round";
         ctx.lineWidth = 3.5;
         ctx.strokeStyle = "#c9b37a";
-        for (const [a, b] of BONES) {
+        for (const [a, b] of BODY_BONES) {
           const ja = joints[a];
           const jb = joints[b];
           if (!ja || !jb) continue;

@@ -116,6 +116,7 @@ export type AnalysisResult = {
   overall: number;
   gaps: MetricGap[];
   phaseNotes: { phase: SwingPhase; note: string }[];
+  finePhaseNotes: { n: number; code: string; label: string; cue: string; note: string }[];
   userMetrics: SwingMetrics;
   proMetrics: SwingMetrics;
   trialLimited: boolean;
@@ -156,6 +157,8 @@ export type ProProfile = {
   signature: string;
   whyMatch: string;
   instagram?: string;
+  sources?: string[];
+  style?: import("./anatomy").PlayerStyle;
   metrics: SwingMetrics;
   phaseCues: Record<SwingPhase, string>;
 };

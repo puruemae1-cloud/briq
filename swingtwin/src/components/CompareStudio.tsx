@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { analyzePair } from "@/lib/analyze";
-import { captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
-import { defaultProId, getPro, PROS } from "@/lib/pros";
+import { applyHandedness, captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
+import { TOUR_STYLE } from "@/lib/anatomy";
+import { defaultProId, getPro } from "@/lib/pros";
 import { useTwinStore } from "@/lib/store";
-import type { ViewCapture } from "@/lib/types";
-import { PHASE_LABEL } from "@/lib/types";
+import type { SkeletonFrame, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
 import { Swing3D } from "./Swing3D";
+import { PlayerPicker } from "./PlayerPicker";
+import { PhaseOverlay } from "./PhaseOverlay";
 
 async function fileToVideo(file: File) {
   const url = URL.createObjectURL(file);
@@ -30,6 +32,8 @@ export function CompareStudio() {
   const [tourUrl, setTourUrl] = useState<string | undefined>();
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [phaseT, setPhaseT] = useState<number | undefined>();
+  const [tourFrames, setTourFrames] = useState<SkeletonFrame[] | undefined>();
 
   const tier = useTwinStore((s) => s.tier);
   const trialUsed = useTwinStore((s) => s.trialUsed);
@@ -58,21 +62,26 @@ export function CompareStudio() {
   }, [tourUrl]);
 
   function commit(userViews: ViewCapture[], tourViews?: ViewCapture[]) {
+    const user = applyHandedness(userViews, handedness);
+    const tour = tourViews
+      ? applyHandedness(tourViews, handedness, pro.style ?? TOUR_STYLE)
+      : undefined;
     const fused = fuseSkeletons(
-      userViews.find((v) => v.view === "faceOn")?.skeleton,
-      userViews.find((v) => v.view === "downTheLine")?.skeleton,
+      user.find((v) => v.view === "faceOn")?.skeleton,
+      user.find((v) => v.view === "downTheLine")?.skeleton,
     );
     const analysis = analyzePair({
-      userViews,
-      tourViews,
+      userViews: user,
+      tourViews: tour,
       proId: pro.id,
       handedness,
       trialLimited: tier !== "subscriber",
     });
     const thumbsOut = [
-      ...userViews.flatMap((v) => v.thumbs),
-      ...(tourViews?.flatMap((v) => v.thumbs) ?? []),
+      ...user.flatMap((v) => v.thumbs),
+      ...(tour?.flatMap((v) => v.thumbs) ?? []),
     ];
+    setTourFrames(tour?.[0]?.skeleton);
     const saved = saveAnalysis(analysis, fused, thumbsOut);
     if (!saved.ok) setError(saved.message);
   }
@@ -95,14 +104,18 @@ export function CompareStudio() {
         const { video, url } = await fileToVideo(myFace);
         urls.push(url);
         setUserUrl(url);
-        userViews.push(await captureView(video, "faceOn", myFace.name));
+        userViews.push(
+          await captureView(video, "faceOn", myFace.name, { handedness }),
+        );
       }
       if (myDtl) {
         setBusy("Reading your down-the-line clip…");
         const { video, url } = await fileToVideo(myDtl);
         urls.push(url);
         if (!myFace) setUserUrl(url);
-        userViews.push(await captureView(video, "downTheLine", myDtl.name));
+        userViews.push(
+          await captureView(video, "downTheLine", myDtl.name, { handedness }),
+        );
       }
       let tourViews: ViewCapture[] | undefined;
       if (tourFile) {
@@ -110,9 +123,14 @@ export function CompareStudio() {
         const { video, url } = await fileToVideo(tourFile);
         urls.push(url);
         setTourUrl(url);
-        tourViews = [await captureView(video, "faceOn", tourFile.name)];
+        tourViews = [
+          await captureView(video, "faceOn", tourFile.name, {
+            handedness,
+            style: pro.style ?? TOUR_STYLE,
+          }),
+        ];
       }
-      setBusy("Comparing you with the player…");
+      setBusy("Syncing 30 phases against the player…");
       commit(userViews, tourViews);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Compare failed.");
@@ -128,7 +146,7 @@ export function CompareStudio() {
       setError("Trial is used. Subscribe to keep comparing new swings.");
       return;
     }
-    const set = sampleCompareSet();
+    const set = sampleCompareSet(handedness);
     commit(set.user, set.tour);
   }
 
@@ -138,9 +156,10 @@ export function CompareStudio() {
         <p className="twin-kicker">Compare</p>
         <h1>Your swing next to the player you want</h1>
         <p>
-          Upload your clip, then the PGA (or LPGA) slow-mo you are copying. We line them
-          up, score the differences, and tell you what to change. Face-on plus
-          down-the-line also builds a 3D skeleton.
+          Pick any PGA name from the five Instagram archives, upload your clip,
+          then (optionally) the exact tour slow-mo you are copying. We sync both
+          swings through 30 phases and draw a line on every body part that
+          differs — hands, wrists, arms, shoulders, thighs, knees, feet, head.
         </p>
       </header>
 
@@ -150,6 +169,8 @@ export function CompareStudio() {
           <Link to="/subscribe">Subscribe (£12.99 / month)</Link> to keep uploading.
         </div>
       ) : null}
+
+      <PlayerPicker value={pro.id} onChange={setPreferredPro} />
 
       <div className="twin-grid3">
         <label className="twin-drop">
@@ -173,9 +194,9 @@ export function CompareStudio() {
           />
         </label>
         <label className="twin-drop twin-drop--tour">
-          <span>3. Their swing</span>
-          <strong>{tourFile ? tourFile.name : "Choose the player clip"}</strong>
-          <em>The exact video you want to look like</em>
+          <span>3. Their swing (optional clip)</span>
+          <strong>{tourFile ? tourFile.name : "Saved Instagram / tour clip"}</strong>
+          <em>If empty, we use the learned {pro.name} model</em>
           <input
             type="file"
             accept="video/*"
@@ -185,19 +206,6 @@ export function CompareStudio() {
       </div>
 
       <div className="twin-toolbar">
-        <label>
-          This clip is
-          <select
-            value={pro.id}
-            onChange={(e) => setPreferredPro(e.target.value)}
-          >
-            {PROS.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.name} · {p.tour}
-              </option>
-            ))}
-          </select>
-        </label>
         <label>
           You play
           <select
@@ -228,8 +236,11 @@ export function CompareStudio() {
         </button>
       </div>
       <p className="twin-note">
-        Sample uses the trial. Save a player slow-mo from Instagram or Tour coverage onto
-        your phone, then pick it in box 3.
+        Instagram is not scraped live (their terms). Each name is a model
+        distilled from the public FO/DTL patterns those accounts repeat. Save a
+        clip from @golf_swings, @pgatour, @golfdigest, @golf_gods or
+        @golfonthesnap onto your phone and pick it in box 3 for clip-vs-clip.
+        Changing the player after a compare redraws the overlay on this swing.
       </p>
       {error ? <p className="twin-error">{error}</p> : null}
 
@@ -240,7 +251,19 @@ export function CompareStudio() {
         tourLabel={tourFile?.name || pro.name}
         userPeakT={result?.userPeakT}
         tourPeakT={result?.tourPeakT}
+        phaseT={phaseT}
       />
+
+      {result && skeleton.length ? (
+        <PhaseOverlay
+          userFrames={skeleton}
+          proFrames={tourFrames}
+          pro={pro}
+          handedness={handedness}
+          trialLimited={result.trialLimited}
+          onPhase={(_i, t) => setPhaseT(t)}
+        />
+      ) : null}
 
       {result ? (
         <section className="twin-result">
@@ -298,14 +321,16 @@ export function CompareStudio() {
           </ul>
           {result.trialLimited ? (
             <p className="twin-note">
-              Subscribers get every phase, a daily plan, and a printable sheet.{" "}
-              <Link to="/subscribe">See plans</Link>
+              Subscribers get all 30 phases, 30 body lines, a daily plan, and a
+              printable sheet. <Link to="/subscribe">See plans</Link>
             </p>
           ) : (
-            <div className="twin-phases">
-              {result.phaseNotes.map((p) => (
-                <article key={p.phase}>
-                  <h3>{PHASE_LABEL[p.phase]}</h3>
+            <div className="twin-phases twin-phases--fine">
+              {(result.finePhaseNotes ?? []).map((p) => (
+                <article key={`${p.n}-${p.label}`}>
+                  <h3>
+                    {p.n}. {p.code} · {p.label}
+                  </h3>
                   <p>{p.note}</p>
                 </article>
               ))}

@@ -35,7 +35,7 @@ export const useTwinStore = create<SwingState>()(
       lastSkeleton: null,
       lastThumbs: [],
       sessions: [],
-      preferredProId: "custom-clip",
+      preferredProId: "rory-mcilroy",
       handedness: "right",
       setPreferredPro: (id) => set({ preferredProId: id }),
       setHandedness: (h) => set({ handedness: h }),

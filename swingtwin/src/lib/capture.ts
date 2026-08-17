@@ -1,4 +1,6 @@
-import type { MotionSample, SkeletonFrame, SwingView, ViewCapture } from "./types";
+import { AMATEUR_STYLE, FINE_PHASES, TOUR_STYLE, type PlayerStyle } from "./anatomy";
+import { framesForStyle, userFramesFromMotion } from "./pose";
+import type { Handedness, MotionSample, SkeletonFrame, SwingView, ViewCapture } from "./types";
 
 function waitSeek(video: HTMLVideoElement) {
   return new Promise<void>((resolve) => {
@@ -55,91 +57,25 @@ function analyzeFrame(
   return { energy: energy / (w * h), cx, cy, width, height };
 }
 
-function jointsFromBox(
-  t: number,
-  cx: number,
-  cy: number,
-  width: number,
-  height: number,
-  view: SwingView,
-  swingT: number,
-): SkeletonFrame {
-  const phase = swingT;
-  const shoulderY = cy - height * 0.28;
-  const hipY = cy + height * 0.05;
-  const turn = Math.sin(phase * Math.PI) * (view === "faceOn" ? 0.12 : 0.04);
-  const armsUp = Math.sin(Math.min(phase, 0.55) * Math.PI) * height * 0.35;
-  const zBase = view === "downTheLine" ? (cx - 0.5) * 1.4 : 0;
-  const xBase = view === "faceOn" ? (cx - 0.5) * 1.6 : 0;
-
-  const j = (id: string, x: number, y: number, z: number) => ({ id, x, y, z });
-
-  const left = view === "faceOn" ? 1 : 0.2;
-  const right = view === "faceOn" ? -1 : -0.2;
-
-  return {
-    t,
-    joints: {
-      head: j("head", xBase, shoulderY - height * 0.18, zBase),
-      neck: j("neck", xBase, shoulderY - 0.02, zBase),
-      lShoulder: j(
-        "lShoulder",
-        xBase + left * width * 0.35,
-        shoulderY,
-        zBase + turn,
-      ),
-      rShoulder: j(
-        "rShoulder",
-        xBase + right * width * 0.35,
-        shoulderY,
-        zBase - turn,
-      ),
-      lElbow: j(
-        "lElbow",
-        xBase + left * width * 0.5,
-        shoulderY + height * 0.12 - armsUp * 0.3,
-        zBase + turn * 1.4,
-      ),
-      rElbow: j(
-        "rElbow",
-        xBase + right * width * 0.55,
-        shoulderY - armsUp * 0.5,
-        zBase - turn * 1.6,
-      ),
-      lWrist: j(
-        "lWrist",
-        xBase + left * width * 0.25,
-        shoulderY + height * 0.18 - armsUp,
-        zBase + turn * 1.8,
-      ),
-      rWrist: j(
-        "rWrist",
-        xBase + right * width * 0.15,
-        shoulderY - armsUp * 0.85,
-        zBase - turn * 2,
-      ),
-      lHip: j("lHip", xBase + left * width * 0.18, hipY, zBase * 0.6),
-      rHip: j("rHip", xBase + right * width * 0.18, hipY, zBase * 0.6),
-      lKnee: j("lKnee", xBase + left * width * 0.16, hipY + height * 0.22, zBase * 0.3),
-      rKnee: j("rKnee", xBase + right * width * 0.2, hipY + height * 0.22, zBase * 0.3),
-      lAnkle: j("lAnkle", xBase + left * width * 0.14, hipY + height * 0.42, 0),
-      rAnkle: j("rAnkle", xBase + right * width * 0.22, hipY + height * 0.42, 0),
-    },
-  };
-}
 
 export async function captureView(
   video: HTMLVideoElement,
   view: SwingView,
   fileName: string,
-  sampleCount = 24,
+  opts?: {
+    sampleCount?: number;
+    handedness?: Handedness;
+    style?: PlayerStyle;
+  },
 ) {
+  const sampleCount = opts?.sampleCount ?? FINE_PHASES.length;
+  const handedness = opts?.handedness ?? "right";
   const duration = Number.isFinite(video.duration) && video.duration > 0
     ? video.duration
     : 2;
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d", { willReadFrequently: true });
-  if (!ctx) throw new Error("캔버스를 사용할 수 없습니다.");
+  if (!ctx) throw new Error("Could not read frames from that video.");
 
   canvas.width = 160;
   canvas.height = 90;
@@ -149,7 +85,6 @@ export async function captureView(
   thumbCanvas.height = 180;
 
   const samples: MotionSample[] = [];
-  const skeleton: SkeletonFrame[] = [];
   const thumbs: string[] = [];
   let prev: Uint8ClampedArray | null = null;
 
@@ -167,9 +102,6 @@ export async function captureView(
     );
     prev = img.data;
     samples.push({ t, ...stats });
-    skeleton.push(
-      jointsFromBox(t, stats.cx, stats.cy, stats.width, stats.height, view, i / sampleCount),
-    );
 
     if (tctx && (i === 2 || i === Math.floor(sampleCount * 0.45) || i === sampleCount - 3)) {
       tctx.drawImage(video, 0, 0, thumbCanvas.width, thumbCanvas.height);
@@ -177,7 +109,23 @@ export async function captureView(
     }
   }
 
+  const skeleton = opts?.style
+    ? framesForStyle(opts.style, handedness, samples)
+    : userFramesFromMotion(samples, handedness);
   return { view, fileName, duration, samples, thumbs, skeleton };
+}
+
+export function applyHandedness(
+  views: ViewCapture[],
+  handedness: Handedness,
+  style?: PlayerStyle,
+): ViewCapture[] {
+  return views.map((v) => ({
+    ...v,
+    skeleton: style
+      ? framesForStyle(style, handedness, v.samples)
+      : userFramesFromMotion(v.samples, handedness),
+  }));
 }
 
 export function fuseSkeletons(
@@ -207,7 +155,7 @@ export function fuseSkeletons(
 }
 
 /** Demo pair: amateur-like face-on + DTL, plus a quieter tour face-on. */
-export function sampleCompareSet() {
+export function sampleCompareSet(handedness: Handedness = "right") {
   const make = (
     view: SwingView,
     fileName: string,
@@ -216,20 +164,26 @@ export function sampleCompareSet() {
     duration: number,
   ): ViewCapture => {
     const samples: MotionSample[] = [];
-    const skeleton: SkeletonFrame[] = [];
-    const n = 24;
+    const n = FINE_PHASES.length;
     for (let i = 0; i < n; i++) {
-      const t = (i / (n - 1)) * duration;
-      const swingT = i / n;
+      const swingT = i / Math.max(n - 1, 1);
+      const t = swingT * duration;
       const energy = 4 + Math.sin(swingT * Math.PI) * 18;
       const cx = 0.5 + Math.sin(swingT * Math.PI * 2) * swayAmt;
       const cy = 0.48 + Math.sin(swingT * Math.PI) * 0.04;
       const width = 0.28 + swingT * 0.04;
       const height = 0.72 - Math.max(0, swingT - 0.5) * collapse;
       samples.push({ t, energy, cx, cy, width, height });
-      skeleton.push(jointsFromBox(t, cx, cy, width, height, view, swingT));
     }
-    return { view, fileName, duration, samples, thumbs: [], skeleton };
+    const style = swayAmt > 0.05 ? AMATEUR_STYLE : TOUR_STYLE;
+    return {
+      view,
+      fileName,
+      duration,
+      samples,
+      thumbs: [],
+      skeleton: framesForStyle(style, handedness, samples),
+    };
   };
 
   return {

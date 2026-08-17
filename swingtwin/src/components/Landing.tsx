@@ -1,22 +1,35 @@
 import { Link } from "react-router-dom";
-import { PROS } from "@/lib/pros";
+import { IG_SOURCES, PROS } from "@/lib/players";
 import { useTwinStore } from "@/lib/store";
+
+const FEATURED = [
+  "rory-mcilroy",
+  "scottie-scheffler",
+  "tiger-woods",
+  "tommy-fleetwood",
+  "collin-morikawa",
+  "jon-rahm",
+];
 
 export function Landing() {
   const trialUsed = useTwinStore((s) => s.trialUsed);
   const tier = useTwinStore((s) => s.tier);
+  const pgaCount = PROS.filter((p) => p.tour === "PGA Tour").length;
+  const featured = FEATURED.map((id) => PROS.find((p) => p.id === id)).filter(Boolean);
 
   return (
     <div className="twin-page twin-landing">
       <section className="twin-hero">
         <p className="twin-kicker">Made for golfers in the UK</p>
         <h1>
-          Put your swing next to the PGA player you actually want to look like
+          Put your swing next to any PGA player — 30 phases, 30 body lines
         </h1>
         <p>
-          Subscribers upload a swing, then the tour clip they are copying. TwinSwing
-          plays them together, scores the gaps, and gives a daily fix. Face-on plus
-          down-the-line becomes 3D.
+          Choose a name from the {pgaCount}-player archive (learned from
+          @golf_swings, @pgatour, @golfdigest, @golf_gods and @golfonthesnap),
+          upload your clip, and we sync both swings. Gold is the player, mint is
+          you. A dashed line marks every joint that is off — head, hands,
+          wrists, arms, shoulders, thighs, knees, feet.
         </p>
         <div className="twin-hero__cta">
           <Link to="/compare" className="twin-btn">
@@ -30,40 +43,66 @@ export function Landing() {
       <ol className="twin-steps">
         <li>
           <span>01</span>
-          <h2>Your video</h2>
-          <p>Phone on a tripod. Face-on is enough. Add behind-the-ball for 3D.</p>
+          <h2>Pick the player</h2>
+          <p>Search every PGA name on file. Change player any time — the overlay redraws.</p>
         </li>
         <li>
           <span>02</span>
-          <h2>Their video</h2>
+          <h2>Your video + theirs</h2>
           <p>
-            Save a slow-mo of Rory, Scheffler, or whoever you are copying — including
-            clips from archives such as @purego1f — and upload it.
+            Face-on is enough. Add down-the-line for 3D. Optionally upload the
+            exact Instagram slow-mo you saved.
           </p>
         </li>
         <li>
           <span>03</span>
-          <h2>The gap</h2>
-          <p>Trial: three differences. Subscribers: daily drills and a progress score.</p>
+          <h2>30 synced phases</h2>
+          <p>
+            Scrub Setup through Recoil. Each of ~30 body parts gets a gap line
+            so the difference is obvious.
+          </p>
         </li>
       </ol>
       <section>
-        <h2>Players on file</h2>
+        <h2>Learned from these archives</h2>
         <p className="twin-note">
-          Models help when you have not got a clip yet. The real product is your
-          upload versus their upload.
+          We do not scrape Instagram. Models are distilled from the public
+          face-on / down-the-line patterns those accounts repeat. Upload a saved
+          clip for a true clip-vs-clip compare.
         </p>
         <div className="twin-pro-grid">
-          {PROS.filter((p) => p.id !== "custom-clip").map((p) => (
-            <article key={p.id}>
+          {IG_SOURCES.filter((s) => s.id !== "purego1f").map((s) => (
+            <article key={s.id}>
+              <p>Instagram</p>
+              <h3>{s.handle}</h3>
               <p>
-                {p.tour}
-                {p.country ? ` · ${p.country}` : ""}
+                <a href={s.url} target="_blank" rel="noreferrer">
+                  {s.url.replace("https://", "")}
+                </a>
               </p>
-              <h3>{p.name}</h3>
-              <p>{p.signature}</p>
             </article>
           ))}
+        </div>
+      </section>
+      <section>
+        <h2>Players on file</h2>
+        <p className="twin-note">
+          {pgaCount} PGA names are selectable. A few to start —{" "}
+          <Link to="/library">see the full list</Link>.
+        </p>
+        <div className="twin-pro-grid">
+          {featured.map((p) =>
+            p ? (
+              <article key={p.id}>
+                <p>
+                  {p.tour}
+                  {p.country ? ` · ${p.country}` : ""}
+                </p>
+                <h3>{p.name}</h3>
+                <p>{p.signature}</p>
+              </article>
+            ) : null,
+          )}
         </div>
       </section>
     </div>

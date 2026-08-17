@@ -7,6 +7,7 @@ type Props = {
   tourLabel: string;
   userPeakT?: number;
   tourPeakT?: number;
+  phaseT?: number;
 };
 
 export function SideBySide({
@@ -16,11 +17,26 @@ export function SideBySide({
   tourLabel,
   userPeakT = 0,
   tourPeakT = 0,
+  phaseT,
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [sync, setSync] = useState(true);
+
+  useEffect(() => {
+    if (phaseT == null) return;
+    const user = userRef.current;
+    const tour = tourRef.current;
+    const seek = (el: HTMLVideoElement | null, peak: number) => {
+      if (!el || !el.duration) return;
+      const t = Math.max(0, Math.min(el.duration * 0.98, phaseT * el.duration));
+      if (Math.abs(el.currentTime - t) > 0.05) el.currentTime = t;
+      void peak;
+    };
+    seek(user, userPeakT);
+    seek(tour, tourPeakT);
+  }, [phaseT, userPeakT, tourPeakT, userUrl, tourUrl]);
 
   useEffect(() => {
     const user = userRef.current;

@@ -1,26 +1,67 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { PROS, getPro } from "@/lib/pros";
+import { IG_SOURCES, PROS, getPro, searchPros } from "@/lib/players";
 import { useTwinStore } from "@/lib/store";
 
 export function Library() {
   const preferredProId = useTwinStore((s) => s.preferredProId);
   const setPreferredPro = useTwinStore((s) => s.setPreferredPro);
+  const [q, setQ] = useState("");
+  const [source, setSource] = useState("all");
+
+  const list = useMemo(() => {
+    const base = searchPros(q);
+    if (source === "all") return base;
+    return base.filter((p) => p.sources?.includes(source));
+  }, [q, source]);
 
   return (
     <div className="twin-page">
       <header className="twin-page__head">
         <p className="twin-kicker">Players</p>
-        <h1>Who are you copying?</h1>
+        <h1>Every PGA name on file</h1>
         <p>
-          Label the clip so the daily plan uses that player’s feel. The comparison
-          still runs on the video you upload, not a stock animation.
+          {PROS.filter((p) => p.tour === "PGA Tour").length} tour players, plus a
+          tour-blend model. Learned from the public slow-mo patterns on{" "}
+          {IG_SOURCES.filter((s) => s.id !== "purego1f")
+            .map((s) => s.handle)
+            .join(", ")}
+          . Pick a name, then compare — Instagram is not scraped live.
         </p>
       </header>
+      <div className="twin-picker">
+        <label>
+          Search
+          <input
+            type="search"
+            placeholder="Name, country, or role…"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+          />
+        </label>
+        <label>
+          Archive
+          <select value={source} onChange={(e) => setSource(e.target.value)}>
+            <option value="all">All five Instagram archives</option>
+            {IG_SOURCES.filter((s) => s.id !== "purego1f").map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.handle}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <p className="twin-note">
+        {list.length} names · selected{" "}
+        <strong>{getPro(preferredProId)?.name}</strong> ·{" "}
+        <Link to="/compare">Compare</Link>
+      </p>
       <div className="twin-pro-list">
-        {PROS.map((p) => (
+        {list.map((p) => (
           <article key={p.id} className={p.id === preferredProId ? "is-on" : ""}>
             <p>
               {p.tour} · {p.role}
+              {p.country ? ` · ${p.country}` : ""}
             </p>
             <h2>{p.name}</h2>
             <p>{p.signature}</p>
@@ -35,17 +76,13 @@ export function Library() {
               </button>
               {p.instagram ? (
                 <a href={p.instagram} target="_blank" rel="noreferrer">
-                  @purego1f
+                  Open archive
                 </a>
               ) : null}
             </div>
           </article>
         ))}
       </div>
-      <p className="twin-note">
-        Selected: <strong>{getPro(preferredProId)?.name}</strong> ·{" "}
-        <Link to="/compare">Compare</Link>
-      </p>
     </div>
   );
 }
