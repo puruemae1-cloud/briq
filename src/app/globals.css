@@ -3252,8 +3252,8 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 /*
- * Chanel fragrance + fine jewellery packshots sit on large studio mats, so
- * pieces read tiny on mobile PLP / PDP. Tighten the frame and zoom the
+ * Chanel fragrance, fine jewellery, and makeup packshots sit on large studio
+ * mats, so pieces read tiny on mobile PLP / PDP. Tighten the frame and zoom the
  * subject for phones only.
  */
 @media (max-width: 899px) {

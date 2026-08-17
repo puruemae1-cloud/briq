@@ -1,19 +1,30 @@
 import type { Product } from "@/data/product-types";
+import { CH_MAKEUP_LEAF_IDS } from "@/data/categories";
 
-/** Fragrance gift/discovery sets already fill the PLP frame — don't zoom. */
-const FRAGRANCE_SET_RE = /세트|\bSET\b/i;
+/** Gift/discovery sets already fill the PLP frame — don't zoom. */
+const PACKSHOT_SET_RE = /세트|\bSET\b/i;
 /** Refill spray sets are still tiny bottles and should keep mobile zoom. */
 const FRAGRANCE_REFILL_RE = /리필|refill/i;
 
-function isChanelFragranceSet(product: Product): boolean {
+const CH_MAKEUP_SUBS = new Set<string>(CH_MAKEUP_LEAF_IDS);
+
+function isChanelPackshotSet(product: Product): boolean {
   const name = `${product.nameKo ?? ""} ${product.name ?? ""}`;
-  if (!FRAGRANCE_SET_RE.test(name)) return false;
+  if (!PACKSHOT_SET_RE.test(name)) return false;
   if (FRAGRANCE_REFILL_RE.test(name)) return false;
   return true;
 }
 
+function isChanelMakeup(product: Product): boolean {
+  const sub = product.subcategory;
+  if (sub && CH_MAKEUP_SUBS.has(sub)) return true;
+  const cols = product.chCollections ?? [];
+  if (cols.includes("ch-makeup")) return true;
+  return cols.some((c) => CH_MAKEUP_SUBS.has(c));
+}
+
 /**
- * Mobile packshot zoom for Chanel fragrance (non-set) + fine jewellery.
+ * Mobile packshot zoom for Chanel fragrance (non-set), fine jewellery, and makeup.
  * Gift sets with box+bottles already read large — leave those at default scale.
  */
 export function needsChanelMobilePackshotZoom(product: Product): boolean {
@@ -25,8 +36,10 @@ export function needsChanelMobilePackshotZoom(product: Product): boolean {
   const isFineJewellery =
     sub === "ch-fine-jewellery" ||
     Boolean(cols?.includes("ch-fine-jewellery"));
+  const isMakeup = isChanelMakeup(product);
 
   if (isFineJewellery) return true;
-  if (isFragrance) return !isChanelFragranceSet(product);
+  if (isMakeup) return !isChanelPackshotSet(product);
+  if (isFragrance) return !isChanelPackshotSet(product);
   return false;
 }
