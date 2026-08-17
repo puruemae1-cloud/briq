@@ -621,6 +621,35 @@ export type SubcategoryId =
   | "ch-sunglasses"
   | "ch-women-sunglasses"
   | "ch-fragrance"
+  | "ch-makeup"
+  | "ch-makeup-complexion"
+  | "ch-makeup-foundations"
+  | "ch-makeup-base"
+  | "ch-makeup-healthy-glow"
+  | "ch-makeup-blush"
+  | "ch-makeup-powders"
+  | "ch-makeup-bronzers"
+  | "ch-makeup-concealer"
+  | "ch-makeup-highlighter"
+  | "ch-makeup-eyes"
+  | "ch-makeup-eyeshadows"
+  | "ch-makeup-mascara"
+  | "ch-makeup-brows"
+  | "ch-makeup-eyeliners"
+  | "ch-makeup-eye-palette"
+  | "ch-makeup-lips"
+  | "ch-makeup-lip-gloss"
+  | "ch-makeup-lipsticks"
+  | "ch-makeup-lip-pencils"
+  | "ch-makeup-lip-balms"
+  | "ch-makeup-liquid-lipsticks"
+  | "ch-makeup-nails"
+  | "ch-makeup-manicure"
+  | "ch-makeup-nail-colour"
+  | "ch-makeup-brushes"
+  | "ch-makeup-eye-brushes"
+  | "ch-makeup-complexion-brushes"
+  | "ch-makeup-lip-brushes"
   | "ch-other-accessories"
   | "ch-women-headwear"
   | "ch-women-belts"
@@ -710,6 +739,62 @@ export const CH_SUNGLASSES_LEAF_IDS: SubcategoryId[] = ["ch-women-sunglasses"];
 
 /** Chanel fragrance (official GB https://www.chanel.com/gb/fragrance/). */
 export const CH_FRAGRANCE_LEAF_IDS: SubcategoryId[] = ["ch-fragrance"];
+
+/** Chanel makeup group hubs (official GB https://www.chanel.com/gb/makeup/). */
+export const CH_MAKEUP_GROUP_IDS: SubcategoryId[] = [
+  "ch-makeup-complexion",
+  "ch-makeup-eyes",
+  "ch-makeup-lips",
+  "ch-makeup-nails",
+  "ch-makeup-brushes",
+];
+
+export const CH_MAKEUP_COMPLEXION_LEAF_IDS: SubcategoryId[] = [
+  "ch-makeup-foundations",
+  "ch-makeup-base",
+  "ch-makeup-healthy-glow",
+  "ch-makeup-blush",
+  "ch-makeup-powders",
+  "ch-makeup-bronzers",
+  "ch-makeup-concealer",
+  "ch-makeup-highlighter",
+];
+
+export const CH_MAKEUP_EYE_LEAF_IDS: SubcategoryId[] = [
+  "ch-makeup-eyeshadows",
+  "ch-makeup-mascara",
+  "ch-makeup-brows",
+  "ch-makeup-eyeliners",
+  "ch-makeup-eye-palette",
+];
+
+export const CH_MAKEUP_LIP_LEAF_IDS: SubcategoryId[] = [
+  "ch-makeup-lip-gloss",
+  "ch-makeup-lipsticks",
+  "ch-makeup-lip-pencils",
+  "ch-makeup-lip-balms",
+  "ch-makeup-liquid-lipsticks",
+];
+
+export const CH_MAKEUP_NAIL_LEAF_IDS: SubcategoryId[] = [
+  "ch-makeup-manicure",
+  "ch-makeup-nail-colour",
+];
+
+export const CH_MAKEUP_BRUSH_LEAF_IDS: SubcategoryId[] = [
+  "ch-makeup-eye-brushes",
+  "ch-makeup-complexion-brushes",
+  "ch-makeup-lip-brushes",
+];
+
+export const CH_MAKEUP_LEAF_IDS: SubcategoryId[] = [
+  ...CH_MAKEUP_GROUP_IDS,
+  ...CH_MAKEUP_COMPLEXION_LEAF_IDS,
+  ...CH_MAKEUP_EYE_LEAF_IDS,
+  ...CH_MAKEUP_LIP_LEAF_IDS,
+  ...CH_MAKEUP_NAIL_LEAF_IDS,
+  ...CH_MAKEUP_BRUSH_LEAF_IDS,
+];
 
 /** Chanel other accessories leaves (official GB other-accessories PLPs). */
 export const CH_OTHER_ACC_LEAF_IDS: SubcategoryId[] = [
@@ -1642,6 +1727,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...CH_SUNGLASSES_LEAF_IDS,
     "ch-fragrance",
     ...CH_FRAGRANCE_LEAF_IDS,
+    "ch-makeup",
+    ...CH_MAKEUP_LEAF_IDS,
     "ch-other-accessories",
     ...CH_OTHER_ACC_LEAF_IDS,
   ],
@@ -1663,6 +1750,38 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-sunglasses": ["ch-sunglasses", ...CH_SUNGLASSES_LEAF_IDS],
   "ch-women-sunglasses": ["ch-women-sunglasses"],
   "ch-fragrance": ["ch-fragrance"],
+  "ch-makeup": ["ch-makeup", ...CH_MAKEUP_LEAF_IDS],
+  "ch-makeup-complexion": [
+    "ch-makeup-complexion",
+    ...CH_MAKEUP_COMPLEXION_LEAF_IDS,
+  ],
+  "ch-makeup-foundations": ["ch-makeup-foundations"],
+  "ch-makeup-base": ["ch-makeup-base"],
+  "ch-makeup-healthy-glow": ["ch-makeup-healthy-glow"],
+  "ch-makeup-blush": ["ch-makeup-blush"],
+  "ch-makeup-powders": ["ch-makeup-powders"],
+  "ch-makeup-bronzers": ["ch-makeup-bronzers"],
+  "ch-makeup-concealer": ["ch-makeup-concealer"],
+  "ch-makeup-highlighter": ["ch-makeup-highlighter"],
+  "ch-makeup-eyes": ["ch-makeup-eyes", ...CH_MAKEUP_EYE_LEAF_IDS],
+  "ch-makeup-eyeshadows": ["ch-makeup-eyeshadows"],
+  "ch-makeup-mascara": ["ch-makeup-mascara"],
+  "ch-makeup-brows": ["ch-makeup-brows"],
+  "ch-makeup-eyeliners": ["ch-makeup-eyeliners"],
+  "ch-makeup-eye-palette": ["ch-makeup-eye-palette"],
+  "ch-makeup-lips": ["ch-makeup-lips", ...CH_MAKEUP_LIP_LEAF_IDS],
+  "ch-makeup-lip-gloss": ["ch-makeup-lip-gloss"],
+  "ch-makeup-lipsticks": ["ch-makeup-lipsticks"],
+  "ch-makeup-lip-pencils": ["ch-makeup-lip-pencils"],
+  "ch-makeup-lip-balms": ["ch-makeup-lip-balms"],
+  "ch-makeup-liquid-lipsticks": ["ch-makeup-liquid-lipsticks"],
+  "ch-makeup-nails": ["ch-makeup-nails", ...CH_MAKEUP_NAIL_LEAF_IDS],
+  "ch-makeup-manicure": ["ch-makeup-manicure"],
+  "ch-makeup-nail-colour": ["ch-makeup-nail-colour"],
+  "ch-makeup-brushes": ["ch-makeup-brushes", ...CH_MAKEUP_BRUSH_LEAF_IDS],
+  "ch-makeup-eye-brushes": ["ch-makeup-eye-brushes"],
+  "ch-makeup-complexion-brushes": ["ch-makeup-complexion-brushes"],
+  "ch-makeup-lip-brushes": ["ch-makeup-lip-brushes"],
   "ch-other-accessories": ["ch-other-accessories", ...CH_OTHER_ACC_LEAF_IDS],
   "chanel-watches": ["chanel-watches", "ch-watches", ...CH_WATCH_LEAF_IDS],
   "ch-watches": ["ch-watches", ...CH_WATCH_LEAF_IDS],
@@ -4031,6 +4150,169 @@ export const navCategories: NavCategory[] = [
             labelKo: "향수",
             href: "/shop?category=accessories&sub=ch-fragrance",
             navLeaf: true,
+          },
+          {
+            id: "ch-makeup",
+            labelKo: "메이크업",
+            href: "/shop?category=accessories&sub=ch-makeup",
+            navLeaf: true,
+            children: [
+              {
+                id: "ch-makeup-complexion",
+                labelKo: "컴플렉션",
+                href: "/shop?category=accessories&sub=ch-makeup-complexion",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "ch-makeup-foundations",
+                    labelKo: "파운데이션",
+                    href: "/shop?category=accessories&sub=ch-makeup-foundations",
+                  },
+                  {
+                    id: "ch-makeup-base",
+                    labelKo: "베이스",
+                    href: "/shop?category=accessories&sub=ch-makeup-base",
+                  },
+                  {
+                    id: "ch-makeup-healthy-glow",
+                    labelKo: "헬시 글로우",
+                    href: "/shop?category=accessories&sub=ch-makeup-healthy-glow",
+                  },
+                  {
+                    id: "ch-makeup-blush",
+                    labelKo: "블러시",
+                    href: "/shop?category=accessories&sub=ch-makeup-blush",
+                  },
+                  {
+                    id: "ch-makeup-powders",
+                    labelKo: "파우더",
+                    href: "/shop?category=accessories&sub=ch-makeup-powders",
+                  },
+                  {
+                    id: "ch-makeup-bronzers",
+                    labelKo: "브론저",
+                    href: "/shop?category=accessories&sub=ch-makeup-bronzers",
+                  },
+                  {
+                    id: "ch-makeup-concealer",
+                    labelKo: "컨실러",
+                    href: "/shop?category=accessories&sub=ch-makeup-concealer",
+                  },
+                  {
+                    id: "ch-makeup-highlighter",
+                    labelKo: "하이라이터",
+                    href: "/shop?category=accessories&sub=ch-makeup-highlighter",
+                  },
+                ],
+              },
+              {
+                id: "ch-makeup-eyes",
+                labelKo: "아이",
+                href: "/shop?category=accessories&sub=ch-makeup-eyes",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "ch-makeup-eyeshadows",
+                    labelKo: "아이섀도우",
+                    href: "/shop?category=accessories&sub=ch-makeup-eyeshadows",
+                  },
+                  {
+                    id: "ch-makeup-mascara",
+                    labelKo: "마스카라",
+                    href: "/shop?category=accessories&sub=ch-makeup-mascara",
+                  },
+                  {
+                    id: "ch-makeup-brows",
+                    labelKo: "브로우",
+                    href: "/shop?category=accessories&sub=ch-makeup-brows",
+                  },
+                  {
+                    id: "ch-makeup-eyeliners",
+                    labelKo: "아이라이너",
+                    href: "/shop?category=accessories&sub=ch-makeup-eyeliners",
+                  },
+                  {
+                    id: "ch-makeup-eye-palette",
+                    labelKo: "아이 팔레트",
+                    href: "/shop?category=accessories&sub=ch-makeup-eye-palette",
+                  },
+                ],
+              },
+              {
+                id: "ch-makeup-lips",
+                labelKo: "립",
+                href: "/shop?category=accessories&sub=ch-makeup-lips",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "ch-makeup-lip-gloss",
+                    labelKo: "립글로스",
+                    href: "/shop?category=accessories&sub=ch-makeup-lip-gloss",
+                  },
+                  {
+                    id: "ch-makeup-lipsticks",
+                    labelKo: "립스틱",
+                    href: "/shop?category=accessories&sub=ch-makeup-lipsticks",
+                  },
+                  {
+                    id: "ch-makeup-lip-pencils",
+                    labelKo: "립펜슬",
+                    href: "/shop?category=accessories&sub=ch-makeup-lip-pencils",
+                  },
+                  {
+                    id: "ch-makeup-lip-balms",
+                    labelKo: "립밤 & 립케어",
+                    href: "/shop?category=accessories&sub=ch-makeup-lip-balms",
+                  },
+                  {
+                    id: "ch-makeup-liquid-lipsticks",
+                    labelKo: "리퀴드 립스틱",
+                    href: "/shop?category=accessories&sub=ch-makeup-liquid-lipsticks",
+                  },
+                ],
+              },
+              {
+                id: "ch-makeup-nails",
+                labelKo: "네일",
+                href: "/shop?category=accessories&sub=ch-makeup-nails",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "ch-makeup-manicure",
+                    labelKo: "매니큐어",
+                    href: "/shop?category=accessories&sub=ch-makeup-manicure",
+                  },
+                  {
+                    id: "ch-makeup-nail-colour",
+                    labelKo: "네일 컬러",
+                    href: "/shop?category=accessories&sub=ch-makeup-nail-colour",
+                  },
+                ],
+              },
+              {
+                id: "ch-makeup-brushes",
+                labelKo: "브러시 & 액세서리",
+                href: "/shop?category=accessories&sub=ch-makeup-brushes",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "ch-makeup-eye-brushes",
+                    labelKo: "아이 브러시",
+                    href: "/shop?category=accessories&sub=ch-makeup-eye-brushes",
+                  },
+                  {
+                    id: "ch-makeup-complexion-brushes",
+                    labelKo: "컴플렉션 브러시",
+                    href: "/shop?category=accessories&sub=ch-makeup-complexion-brushes",
+                  },
+                  {
+                    id: "ch-makeup-lip-brushes",
+                    labelKo: "립 브러시",
+                    href: "/shop?category=accessories&sub=ch-makeup-lip-brushes",
+                  },
+                ],
+              },
+            ],
           },
           {
             id: "ch-other-accessories",

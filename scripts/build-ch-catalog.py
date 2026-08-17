@@ -11,6 +11,7 @@ Sources:
   - ch-fine-jewellery-catalog-raw.json → category accessories (Fine Jewellery)
   - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
   - ch-fragrance-catalog-raw.json → category accessories (fragrance)
+  - ch-makeup-catalog-raw.json → category accessories (makeup)
   - ch-other-acc-catalog-raw.json → category accessories (other accessories)
   - ch-watches-catalog-raw.json → category watches (J12 / Première / BOY·FRIEND / Monsieur / Code Coco)
 
@@ -21,6 +22,7 @@ Shoes: EU (French) sizes as shown on chanel.com GB PDPs.
 Costume jewellery: mostly One Size (UNI); rings use French ring sizes + chart.
 Sunglasses: One Size + official frame measurements (mm) in copy.
 Fragrance: One Size (volume is in the official product name).
+Makeup: One Size (shade is in the official product name / colour).
 Other accessories: belts numeric cm; hats S/M/L head-circ; most UNI.
 """
 from __future__ import annotations
@@ -48,6 +50,7 @@ HIGH_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-high-jewellery-catalog-raw.json
 FINE_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-fine-jewellery-catalog-raw.json"
 SUNGLASSES_RAW_PATH = ROOT / "src/data/ch/ch-sunglasses-catalog-raw.json"
 FRAGRANCE_RAW_PATH = ROOT / "src/data/ch/ch-fragrance-catalog-raw.json"
+MAKEUP_RAW_PATH = ROOT / "src/data/ch/ch-makeup-catalog-raw.json"
 OTHER_ACC_RAW_PATH = ROOT / "src/data/ch/ch-other-acc-catalog-raw.json"
 WATCHES_RAW_PATH = ROOT / "src/data/ch/ch-watches-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
@@ -123,6 +126,41 @@ SUNGLASSES_PARENT_COLS = ["chanel", "chanel-accessories", "ch-sunglasses", SUNGL
 
 FRAGRANCE_LEAF = "ch-fragrance"
 FRAGRANCE_PARENT_COLS = ["chanel", "chanel-accessories", FRAGRANCE_LEAF]
+
+MAKEUP_GROUP_IDS = [
+    "ch-makeup-complexion",
+    "ch-makeup-eyes",
+    "ch-makeup-lips",
+    "ch-makeup-nails",
+    "ch-makeup-brushes",
+]
+MAKEUP_SHAPE_LEAVES = [
+    "ch-makeup-foundations",
+    "ch-makeup-base",
+    "ch-makeup-healthy-glow",
+    "ch-makeup-blush",
+    "ch-makeup-powders",
+    "ch-makeup-bronzers",
+    "ch-makeup-concealer",
+    "ch-makeup-highlighter",
+    "ch-makeup-eyeshadows",
+    "ch-makeup-mascara",
+    "ch-makeup-brows",
+    "ch-makeup-eyeliners",
+    "ch-makeup-eye-palette",
+    "ch-makeup-lip-gloss",
+    "ch-makeup-lipsticks",
+    "ch-makeup-lip-pencils",
+    "ch-makeup-lip-balms",
+    "ch-makeup-liquid-lipsticks",
+    "ch-makeup-manicure",
+    "ch-makeup-nail-colour",
+    "ch-makeup-eye-brushes",
+    "ch-makeup-complexion-brushes",
+    "ch-makeup-lip-brushes",
+    *MAKEUP_GROUP_IDS,
+]
+MAKEUP_PARENT_COLS = ["chanel", "chanel-accessories", "ch-makeup"]
 
 OTHER_ACC_SHAPE_LEAVES = [
     "ch-women-headwear",
@@ -437,6 +475,93 @@ _EN_TITLE_KO = {
     "Superleggera": "수퍼레제라",
     "Sunglasses": "선글라스",
     "Fragrance": "향수",
+    "Makeup": "메이크업",
+    "Base": "베이스",
+    "Eyes": "아이",
+    "Lips": "립",
+    "Complexion": "컴플렉션",
+    "Foundations": "파운데이션",
+    "Foundation": "파운데이션",
+    "Healthy Glow Makeup": "헬시 글로우",
+    "Blush": "블러시",
+    "Powders": "파우더",
+    "Powder": "파우더",
+    "Bronzers": "브론저",
+    "Bronzer": "브론저",
+    "Concealer": "컨실러",
+    "Highlighter": "하이라이터",
+    "Eyeshadows": "아이섀도우",
+    "Eyeshadow": "아이섀도우",
+    "Mascara": "마스카라",
+    "Brows": "브로우",
+    "Eyeliners": "아이라이너",
+    "Eyeliner": "아이라이너",
+    "Eye Palette": "아이 팔레트",
+    "Lip Gloss": "립글로스",
+    "Lipsticks": "립스틱",
+    "Lipstick": "립스틱",
+    "Lip Pencils": "립펜슬",
+    "Lip Pencil": "립펜슬",
+    "Lip Balms and Lip Care": "립밤 & 립케어",
+    "Lip Balm": "립밤",
+    "Liquid Lipsticks": "리퀴드 립스틱",
+    "Liquid Lipstick": "리퀴드 립스틱",
+    "Nails": "네일",
+    "Manicure": "매니큐어",
+    "Nail Colour": "네일 컬러",
+    "Brushes & Accessories": "브러시 & 액세서리",
+    "Eye Brushes": "아이 브러시",
+    "Complexion Brushes": "컴플렉션 브러시",
+    "Lip Brushes": "립 브러시",
+    "ROUGE COCO": "루쥬 코코",
+    "Rouge Coco": "루쥬 코코",
+    "ROUGE COCO FLASH": "루쥬 코코 플래시",
+    "Rouge Coco Flash": "루쥬 코코 플래시",
+    "ROUGE COCO BLOOM": "루쥬 코코 블룸",
+    "Rouge Coco Bloom": "루쥬 코코 블룸",
+    "ROUGE COCO BAUME": "루쥬 코코 봄",
+    "Rouge Coco Baume": "루쥬 코코 봄",
+    "LES BEIGES": "레 베쥬",
+    "Les Beiges": "레 베쥬",
+    "LE VERNIS": "르 베르니",
+    "Le Vernis": "르 베르니",
+    "LE VOLUME": "르 볼륨",
+    "Le Volume": "르 볼륨",
+    "LE VOLUME RÉVOLUTION": "르 볼륨 레볼루션",
+    "Le Volume Révolution": "르 볼륨 레볼루션",
+    "INIMITABLE": "이니미타블",
+    "Inimitable": "이니미타블",
+    "ROUGE ALLURE": "루쥬 알뤼르",
+    "Rouge Allure": "루쥬 알뤼르",
+    "ULTRA LE TEINT": "울트라 르 탱",
+    "Ultra Le Teint": "울트라 르 탱",
+    "LE LIFT": "르 리프트",
+    "Le Lift": "르 리프트",
+    "VITALUMIÈRE": "비탈뤼미에르",
+    "Vitalumière": "비탈뤼미에르",
+    "JOUES CONTRASTE": "주 콩트라스트",
+    "Joues Contraste": "주 콩트라스트",
+    "LE BLANC": "르 블랑",
+    "Le Blanc": "르 블랑",
+    "LE CORRECTEUR": "르 코렉퇴르",
+    "Le Correcteur": "르 코렉퇴르",
+    "STYLO YEUX": "스틸로 이외",
+    "Stylo Yeux": "스틸로 이외",
+    "STYLO SOURCILS": "스틸로 수르실",
+    "Stylo Sourcils": "스틸로 수르실",
+    "LA LIGNE GRAPHIQUE": "라 린 그라피크",
+    "La Ligne Graphique": "라 린 그라피크",
+    "LE LINER": "르 라이너",
+    "Le Liner": "르 라이너",
+    "LE ROUGE DUO ULTRA TENUE": "르 루쥬 듀오 울트라 트뉘",
+    "Le Rouge Duo Ultra Tenue": "르 루쥬 듀오 울트라 트뉘",
+    "PINCEAU": "팽소",
+    "Pinceau": "팽소",
+    "MIROIR": "미루아르",
+    "Miroir": "미루아르",
+    "Longwear": "롱웨어",
+    "Satin Lipstick": "사틴 립스틱",
+    "Hydrating and Smoothing Lip Care": "수분·스무딩 립케어",
     "Eau de Parfum": "오 드 빠르펭",
     "Eau de Toilette": "오 드 뚜알렛",
     "Eau de Cologne": "오 드 코롱",
@@ -1179,6 +1304,11 @@ CHAR_LABEL_KO = {
     "Concentration": "농도",
     "Key ingredients": "주요 성분",
     "Ingredients": "성분",
+    "Shade": "셰이드",
+    "Finish": "피니시",
+    "Texture": "텍스처",
+    "Coverage": "커버리지",
+    "Application": "사용법",
 }
 
 
@@ -2446,6 +2576,139 @@ def build_fragrance_product(row: dict, prev: dict | None, now_iso: str) -> dict 
     return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
+def build_makeup_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    allowed = {"ch-makeup", *MAKEUP_SHAPE_LEAVES}
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in MAKEUP_SHAPE_LEAVES
+    ]
+    leaf = row.get("leaf") if row.get("leaf") in MAKEUP_SHAPE_LEAVES else None
+    if leaf and leaf not in leaves:
+        leaves.append(leaf)
+    if not leaves:
+        leaves = ["ch-makeup-brushes"]
+    primary = next((c for c in MAKEUP_SHAPE_LEAVES if c in leaves), leaves[0])
+    if leaf:
+        primary = leaf
+    cols = sorted(set([*MAKEUP_PARENT_COLS, *leaves]) & (allowed | set(MAKEUP_PARENT_COLS)))
+
+    title_en, name_ko = official_name_pair(row, code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    desc_en = as_text(details.get("editorial") or details.get("description"))
+    ref = as_text(details.get("reference")) or str(code)
+    shade = as_text(details.get("color"))
+    collection = as_text(row.get("collection") or row.get("categoryLabel"))
+
+    desc_ko = t(desc_en) if desc_en else ""
+    collection_ko = t(collection) if collection else ""
+    shade_ko = t(shade) if shade else ""
+
+    parts = [desc_ko]
+    if collection_ko:
+        parts.append(f"카테고리: {collection_ko}")
+    if shade_ko:
+        parts.append(f"컬러: {shade_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = [
+        p
+        for p in (row.get("localImages") or [])
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (makeup): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    shade_label = shade or "One Size"
+    shade_ko_label = shade_ko or "원 사이즈"
+
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — {shade_label}",
+            "nameKo": f"{name_ko} — {shade_ko_label}",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": re.sub(r"[^a-z0-9]+", "-", shade.lower()).strip("-")
+            if shade
+            else "default",
+            "colorNameKo": shade_ko or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "makeup",
+        "메이크업",
+        "beauty",
+        "뷰티",
+        "악세서리",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "accessories",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
+
+
 def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     """Other accessories — keep official multi-leaf tags (e.g. scarf + winter)."""
     code = row.get("productCode") or row.get("sku") or row.get("id")
@@ -2834,6 +3097,12 @@ def main() -> int:
     else:
         print(f"WARN missing fragrance raw: {FRAGRANCE_RAW_PATH}", flush=True)
 
+    makeup_rows: list[dict] = []
+    if MAKEUP_RAW_PATH.exists():
+        makeup_rows = json.loads(MAKEUP_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing makeup raw: {MAKEUP_RAW_PATH}", flush=True)
+
     other_acc_rows: list[dict] = []
     if OTHER_ACC_RAW_PATH.exists():
         other_acc_rows = json.loads(OTHER_ACC_RAW_PATH.read_text()).get("products") or []
@@ -2873,6 +3142,13 @@ def main() -> int:
         cols = set(p.get("chCollections") or [])
         return FRAGRANCE_LEAF in cols or p.get("subcategory") == FRAGRANCE_LEAF
 
+    def _is_makeup_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return (
+            "ch-makeup" in cols
+            or p.get("subcategory") in MAKEUP_SHAPE_LEAVES
+        )
+
     def _is_other_acc_prev(p: dict) -> bool:
         cols = set(p.get("chCollections") or [])
         return (
@@ -2899,6 +3175,7 @@ def main() -> int:
         or not fj_rows
         or not sunglass_rows
         or not fragrance_rows
+        or not makeup_rows
         or not other_acc_rows
         or not watch_rows
     ):
@@ -2934,8 +3211,13 @@ def main() -> int:
                     products.append(prev)
                     seen.add(prev["id"])
                 if not fragrance_rows and _is_fragrance_prev(prev):
-                    products.append(prev)
-                    seen.add(prev["id"])
+                    if prev["id"] not in seen:
+                        products.append(prev)
+                        seen.add(prev["id"])
+                if not makeup_rows and _is_makeup_prev(prev):
+                    if prev["id"] not in seen:
+                        products.append(prev)
+                        seen.add(prev["id"])
                 if not other_acc_rows and _is_other_acc_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
@@ -2945,12 +3227,14 @@ def main() -> int:
                     and not fj_rows
                     and not sunglass_rows
                     and not fragrance_rows
+                    and not makeup_rows
                     and not other_acc_rows
                     and not _is_jew_prev(prev)
                     and not _is_hj_prev(prev)
                     and not _is_fj_prev(prev)
                     and not _is_sunglass_prev(prev)
                     and not _is_fragrance_prev(prev)
+                    and not _is_makeup_prev(prev)
                     and not _is_other_acc_prev(prev)
                 ):
                     products.append(prev)
@@ -3076,6 +3360,50 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built fragrance {i}/{len(fragrance_rows)}", flush=True)
 
+    by_id = {p["id"]: p for p in products}
+
+    def _makeup_cols_from_row(row: dict) -> list[str]:
+        leaves = [
+            c
+            for c in (row.get("leaves") or row.get("collections") or [])
+            if c in MAKEUP_SHAPE_LEAVES
+        ]
+        leaf = row.get("leaf") if row.get("leaf") in MAKEUP_SHAPE_LEAVES else None
+        if leaf and leaf not in leaves:
+            leaves.append(leaf)
+        if not leaves:
+            leaves = ["ch-makeup-brushes"]
+        return sorted(set([*MAKEUP_PARENT_COLS, *leaves]))
+
+    def _merge_makeup_onto(existing: dict, row: dict) -> None:
+        extra = _makeup_cols_from_row(row)
+        cols = sorted(set(existing.get("chCollections") or []) | set(extra))
+        existing["chCollections"] = cols
+        tags = list(dict.fromkeys([*(existing.get("tags") or []), "makeup", "메이크업", "beauty", "뷰티", *cols]))
+        existing["tags"] = tags
+        for v in existing.get("variants") or []:
+            if isinstance(v, dict):
+                v["chCollections"] = sorted(set(v.get("chCollections") or []) | set(extra))
+
+    for i, row in enumerate(makeup_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        if pid_guess in seen:
+            existing = by_id.get(pid_guess)
+            if existing:
+                _merge_makeup_onto(existing, row)
+            continue
+        prod = build_makeup_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        by_id[prod["id"]] = prod
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built makeup {i}/{len(makeup_rows)}", flush=True)
+
     for i, row in enumerate(other_acc_rows, start=1):
         if row.get("_skip"):
             continue
@@ -3108,7 +3436,7 @@ def main() -> int:
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Fragrance + Other Accessories + Watches. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Fragrance + Makeup + Other Accessories + Watches. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -3125,6 +3453,7 @@ def main() -> int:
             FINE_JEWELLERY_LEAF,
             SUNGLASSES_LEAF,
             FRAGRANCE_LEAF,
+            *MAKEUP_SHAPE_LEAVES,
             *OTHER_ACC_SHAPE_LEAVES,
             *WATCH_SHAPE_LEAVES,
             "ch-women-looks",
