@@ -104,7 +104,7 @@ export function CompareStudio() {
         );
         const scale = userMeta
           ? tourMatchScale(userMeta, crop, sourceH, sourceW)
-          : 2.2;
+          : 1.6;
         setTourDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH, scale));
       } catch {
         setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 45%" });

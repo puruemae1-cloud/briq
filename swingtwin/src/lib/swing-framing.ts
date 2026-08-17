@@ -354,6 +354,12 @@ export async function detectBodyCrop(
       break;
     }
   }
+  if (mode === "user") {
+    bodyBottomRow = Math.min(
+      analysisH - 1,
+      bodyBottomRow + Math.round(analysisH * 0.018),
+    );
+  }
 
   let cropLeftCol = colWin.start;
   for (let x = colWin.start; x <= colWin.end; x++) {
@@ -397,12 +403,12 @@ export async function detectBodyCrop(
     const cx = sumW > 0 ? sumX / sumW : (cropLeftCol + cropRightCol) / 2;
     const bodySpan = bodyBottomRow - cropTopRow + 1;
     const tourW = Math.min(
-      analysisW * 0.42,
-      Math.max(analysisW * 0.28, (cropRightCol - cropLeftCol + 1) * 0.72),
+      analysisW * 0.36,
+      Math.max(analysisW * 0.24, (cropRightCol - cropLeftCol + 1) * 0.62),
     );
     const tourH = Math.min(
-      analysisH * 0.92,
-      Math.max(bodySpan * 1.02, analysisH * 0.55),
+      analysisH * 0.88,
+      Math.max(bodySpan * 1.0, analysisH * 0.62),
     );
 
     let leftCol = cx - tourW * 0.44;
@@ -427,9 +433,9 @@ export async function detectBodyCrop(
     x = Math.max(0, x - padLeft);
     w = Math.min(vw - x, w + padLeft);
 
-    const trimTop = h * 0.035;
-    const trimBottom = h * 0.07;
-    const trimRight = w * 0.12;
+    const trimTop = h * 0.055;
+    const trimBottom = h * 0.13;
+    const trimRight = w * 0.14;
     y += trimTop;
     h -= trimTop + trimBottom;
     w -= trimRight;

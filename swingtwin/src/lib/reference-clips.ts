@@ -13,11 +13,11 @@ export const REFERENCE_CLIPS: ReferenceClip[] = [
   {
     proId: "rory-mcilroy",
     src: "/reference/rory-mcilroy-dtl.mp4",
-    label: "Rory McIlroy — down the line (normal speed)",
-    sourceName: "PGA Tour",
+    label: "Rory McIlroy — driver DTL (normal speed)",
+    sourceName: "PGA Tour — Swing Theory",
     sourceUrl:
-      "https://www.pgatour.com/video/competition/6401330997112/rory-mcilroy-crushes-yard-tee-shot-drives-green-for-birdie-at-the-open",
-    instagramHandles: ["@golf_swings", "@pgatour", "@golfdigest"],
+      "https://www.pgatour.com/video/features/6314012785112/rory-mcilroy-swing-theory-driver-iron-wedge",
+    instagramHandles: ["@golf_swings", "@pgatour", "@golfdigest", "@JonathanYarwood"],
   },
 ];
 

@@ -4,8 +4,8 @@ Bundled tour clips for side-by-side compare when the user has not uploaded their
 
 | File | Player | Source |
 |------|--------|--------|
-| `rory-mcilroy-dtl.mp4` | Rory McIlroy | [PGA Tour — Open tee shot (down the line)](https://www.pgatour.com/video/competition/6401330997112/rory-mcilroy-crushes-yard-tee-shot-drives-green-for-birdie-at-the-open) |
+| `rory-mcilroy-dtl.mp4` | Rory McIlroy | [PGA Tour — Swing Theory (driver, down-the-line)](https://www.pgatour.com/video/features/6314012785112/rory-mcilroy-swing-theory-driver-iron-wedge) |
 
-Normal-speed, behind-the-ball excerpt. We do **not** scrape Instagram; we ship a short official excerpt for sync playback in the prototype.
+1280×720 excerpt (~6.8s) from the **DRIVER — BACK** segment: normal-speed down-the-line driver, similar framing to a range DTL phone clip. We do **not** scrape Instagram; we ship a short official excerpt for sync playback in the prototype.
 
-Trimmed segment (~5.5s) for app size. Rights remain with the original broadcaster.
+Trimmed for app size. Rights remain with the original broadcaster.
