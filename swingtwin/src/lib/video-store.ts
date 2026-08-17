@@ -45,3 +45,13 @@ export async function clipObjectUrl(key: "user" | "tour") {
   if (!row) return null;
   return { url: URL.createObjectURL(row.blob), name: row.name };
 }
+
+export async function deleteClip(key: "user" | "tour") {
+  const db = await openDb();
+  return new Promise<void>((resolve, reject) => {
+    const tx = db.transaction(STORE, "readwrite");
+    tx.objectStore(STORE).delete(key);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}

@@ -1,11 +1,11 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { analyzePair } from "@/lib/analyze";
 import { applyHandedness, captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
 import { TOUR_STYLE } from "@/lib/anatomy";
 import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
-import { saveClip, clipObjectUrl, loadClip } from "@/lib/video-store";
+import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
@@ -53,6 +53,10 @@ export function CompareStudio() {
   const [liveTourSync, setLiveTourSync] = useState<SwingSyncMarkers | undefined>();
   const [refTourCapture, setRefTourCapture] = useState<ViewCapture | undefined>();
   const [usingReference, setUsingReference] = useState(false);
+
+  const userFaceInputRef = useRef<HTMLInputElement>(null);
+  const userDtlInputRef = useRef<HTMLInputElement>(null);
+  const tourInputRef = useRef<HTMLInputElement>(null);
 
   const preferredProId = useTwinStore((s) => s.preferredProId);
   const handedness = useTwinStore((s) => s.handedness);
@@ -254,6 +258,43 @@ export function CompareStudio() {
     commit(set.user, set.tour);
   }
 
+  async function clearUserFace() {
+    if (isBlobUrl(userUrl)) URL.revokeObjectURL(userUrl!);
+    try {
+      await deleteClip("user");
+    } catch {
+      /* ignore missing row */
+    }
+    setMyFace(null);
+    setUserUrl(undefined);
+    setUserFileName(undefined);
+    setLiveUserSync(undefined);
+    if (userFaceInputRef.current) userFaceInputRef.current.value = "";
+  }
+
+  function clearUserDtl() {
+    setMyDtl(null);
+    if (userDtlInputRef.current) userDtlInputRef.current.value = "";
+  }
+
+  async function clearTourUpload() {
+    if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
+    try {
+      await deleteClip("tour");
+    } catch {
+      /* ignore missing row */
+    }
+    setTourFile(null);
+    setRefTourCapture(undefined);
+    setLiveTourSync(undefined);
+    if (tourInputRef.current) tourInputRef.current.value = "";
+    await captureReference();
+  }
+
+  const hasUserFace = Boolean(myFace || userFileName || userUrl);
+  const hasUserDtl = Boolean(myDtl);
+  const hasTourUpload = Boolean(tourFile);
+
   return (
     <div className="twin-page">
       <header className="twin-page__head">
@@ -273,7 +314,21 @@ export function CompareStudio() {
           <span>Left — your swing (face-on)</span>
           <strong>{myFace?.name || userFileName || "Choose video"}</strong>
           <em>Full body, camera in front</em>
+          {hasUserFace ? (
+            <button
+              type="button"
+              className="twin-drop__remove"
+              aria-label="Remove face-on clip"
+              onClick={(e) => {
+                e.preventDefault();
+                void clearUserFace();
+              }}
+            >
+              Remove
+            </button>
+          ) : null}
           <input
+            ref={userFaceInputRef}
             type="file"
             accept="video/*"
             onChange={(e) => {
@@ -296,7 +351,21 @@ export function CompareStudio() {
           <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
           <em>Down the line — unlocks 3D</em>
+          {hasUserDtl ? (
+            <button
+              type="button"
+              className="twin-drop__remove"
+              aria-label="Remove down-the-line clip"
+              onClick={(e) => {
+                e.preventDefault();
+                clearUserDtl();
+              }}
+            >
+              Remove
+            </button>
+          ) : null}
           <input
+            ref={userDtlInputRef}
             type="file"
             accept="video/*"
             onChange={(e) => setMyDtl(e.target.files?.[0] ?? null)}
@@ -312,7 +381,21 @@ export function CompareStudio() {
                 : "Uses bundled Rory DTL clip"}
           </strong>
           <em>Save from Instagram to replace the default tour file</em>
+          {hasTourUpload ? (
+            <button
+              type="button"
+              className="twin-drop__remove"
+              aria-label="Remove tour clip override"
+              onClick={(e) => {
+                e.preventDefault();
+                void clearTourUpload();
+              }}
+            >
+              Remove
+            </button>
+          ) : null}
           <input
+            ref={tourInputRef}
             type="file"
             accept="video/*"
             onChange={(e) => {

@@ -186,7 +186,25 @@ a { color: inherit; text-decoration: none; }
 .twin-drop span { color: var(--gold); font-size: 0.78rem; }
 .twin-drop strong { margin: 0.35rem 0; }
 .twin-drop em { font-style: normal; font-size: 0.82rem; color: rgba(232,239,233,0.5); }
-.twin-drop input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.twin-drop input { position: absolute; inset: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.twin-drop__remove {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 2;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(7, 20, 15, 0.92);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+.twin-drop__remove:hover {
+  color: #f5b0a8;
+  border-color: rgba(245, 176, 168, 0.45);
+}
 
 .twin-toolbar {
   display: flex;
