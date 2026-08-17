@@ -319,13 +319,28 @@ export async function detectBodyCrop(
     return { start: bestStart, end: bestStart + bestLen - 1 };
   };
 
-  const rowWin = massWindow(rowMass, 0.992);
-  const colWin = massWindow(colMass, 0.992);
+  const rowWin = massWindow(rowMass, 0.988);
+  const colWin = massWindow(colMass, 0.988);
 
-  let cropTopRow = rowWin.start;
-  if (clubApexTopY < analysisH) {
-    cropTopRow = Math.max(rowWin.start, clubApexTopY);
+  let maxRowMass = 0;
+  for (let y = 0; y < analysisH; y++) {
+    if (rowMass[y] > maxRowMass) maxRowMass = rowMass[y];
   }
+
+  let bodyTopRow = rowWin.start;
+  const rowFloor = maxRowMass * 0.06;
+  for (let y = rowWin.start; y <= rowWin.end; y++) {
+    if (rowMass[y] >= rowFloor) {
+      bodyTopRow = y;
+      break;
+    }
+  }
+
+  let cropTopRow = bodyTopRow;
+  if (clubApexTopY < analysisH) {
+    cropTopRow = Math.min(bodyTopRow, clubApexTopY);
+  }
+  cropTopRow = Math.max(0, cropTopRow - Math.round(analysisH * 0.012));
 
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;
@@ -336,7 +351,7 @@ export async function detectBodyCrop(
   let h = (rowWin.end - cropTopRow + 1) * scaleY;
 
   const padX = w * 0.02;
-  const padBottom = h * 0.02;
+  const padBottom = h * 0.025;
   x = Math.max(0, x - padX);
   w = Math.min(vw - x, w + padX * 2);
   h = Math.min(vh - y, h + padBottom);
@@ -358,10 +373,16 @@ export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRec
 }
 
 export type VideoDisplayStyle = {
-  objectFit?: "cover" | "contain";
+  position?: "absolute";
+  top?: string;
+  left?: string;
+  width?: string;
+  height?: string;
+  objectFit?: "cover" | "contain" | "fill" | "none";
   objectPosition?: string;
   transform?: string;
   transformOrigin?: string;
+  maxWidth?: string;
 };
 
 /** Zoom Rory so his body matches the user's framed body height. */
@@ -376,21 +397,33 @@ export function tourMatchScale(
   return Math.min(2.4, Math.max(1, userBodyFrac / tourBodyFrac));
 }
 
-/** CSS object-position + scale so a raw clip fills the panel like a framed user clip. */
+/** Hard CSS crop — maps source crop rect onto an overflow-hidden panel. */
 export function cropToVideoStyle(
   crop: CropRect,
   sourceW: number,
   sourceH: number,
   matchScale = 1,
 ): VideoDisplayStyle {
-  const cx = ((crop.x + crop.w / 2) / sourceW) * 100;
-  const cy = ((crop.y + crop.h / 2) / sourceH) * 100;
+  if (!sourceW || !sourceH || !crop.w || !crop.h) {
+    return { objectFit: "cover", objectPosition: "50% 55%" };
+  }
+
   const scale = Math.min(2.4, Math.max(1, matchScale));
+  const zoom = scale > 1.02 ? scale : 1;
+  const wPct = (sourceW / crop.w) * 100 * zoom;
+  const hPct = (sourceH / crop.h) * 100 * zoom;
+  const leftPct = (-crop.x / crop.w) * 100 * zoom;
+  const topPct = (-crop.y / crop.h) * 100 * zoom;
+
   return {
-    objectFit: "cover",
-    objectPosition: `${cx}% ${cy}%`,
-    transform: scale > 1.02 ? `scale(${scale})` : undefined,
-    transformOrigin: `${cx}% ${cy}%`,
+    position: "absolute",
+    top: `${topPct}%`,
+    left: `${leftPct}%`,
+    width: `${wPct}%`,
+    height: `${hPct}%`,
+    objectFit: "fill",
+    maxWidth: "none",
+    transformOrigin: "center center",
   };
 }
 

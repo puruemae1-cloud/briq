@@ -174,6 +174,23 @@ export function CompareStudio() {
           const file = new File([row.blob], row.name, { type: row.blob.type });
           setMyFace(file);
           void captureUserForSync(file);
+          try {
+            const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(user.url);
+            if (!cancelled) {
+              const meta: BodyFrameMeta = {
+                bodyFill: 1,
+                outputW: 540,
+                outputH: 720,
+                sourceCrop: crop,
+                sourceW,
+                sourceH,
+              };
+              setUserFrameMeta(meta);
+              setUserDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH));
+            }
+          } catch {
+            /* show uncropped if analysis fails */
+          }
         }
       }
     })();
@@ -228,13 +245,11 @@ export function CompareStudio() {
 
   async function applyUserFace(file: File) {
     try {
-      const { file: f, meta, cssOnly } = await prepareUserClip(file, "face");
+      const { file: f, meta } = await prepareUserClip(file, "face");
       setUploadProgress({ slot: "face", label: "Saving clip…", percent: 95 });
       setUserFrameMeta(meta);
       setUserDisplayStyle(
-        cssOnly
-          ? cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH)
-          : undefined,
+        cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
       );
       setMyFace(f);
       const url = URL.createObjectURL(f);
@@ -258,12 +273,16 @@ export function CompareStudio() {
 
   async function applyUserDtl(file: File) {
     try {
-      const { file: f, meta, cssOnly } = await prepareUserClip(file, "dtl");
+      const { file: f, meta } = await prepareUserClip(file, "dtl");
       setMyDtl(f);
-      if (cssOnly) {
+      if (!myFace && !userFileName && !userUrl) {
+        const url = URL.createObjectURL(f);
+        setUserUrl(url);
+        setUserFileName(f.name);
         setUserDisplayStyle(
           cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
         );
+        setUserFrameMeta(meta);
       }
       setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
     } catch (e) {
