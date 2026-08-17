@@ -10,5 +10,9 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(root, "src") },
   },
-  server: { port: 3001, host: true },
+  server: {
+    port: 3001,
+    host: true,
+    allowedHosts: true,
+  },
 });
