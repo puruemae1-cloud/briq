@@ -16,6 +16,7 @@ type Props = {
   phaseT?: number;
   pro?: ProProfile;
   handedness?: Handedness;
+  tourIsReference?: boolean;
 };
 
 export function SideBySide({
@@ -28,6 +29,7 @@ export function SideBySide({
   phaseT,
   pro,
   handedness = "right",
+  tourIsReference,
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
@@ -161,7 +163,7 @@ export function SideBySide({
     <div className="twin-compare">
       <div className="twin-compare__grid">
         <figure>
-          <figcaption>You</figcaption>
+          <figcaption>You · left</figcaption>
           {userUrl ? (
             <video ref={userRef} src={userUrl} playsInline muted controls={false} />
           ) : (
@@ -170,7 +172,9 @@ export function SideBySide({
           <p>{userLabel}</p>
         </figure>
         <figure>
-          <figcaption>{tourUrl ? "Tour clip" : pro?.name ?? "Tour player"}</figcaption>
+          <figcaption>
+            {tourUrl ? `${pro?.name ?? "Tour"} · right` : pro?.name ?? "Tour player"}
+          </figcaption>
           {tourUrl ? (
             <video ref={tourRef} src={tourUrl} playsInline muted controls={false} />
           ) : useModel && pro ? (
@@ -218,7 +222,11 @@ export function SideBySide({
         <p className="twin-note twin-compare__sync">
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
-          {tourUrl ? "" : " · Rory plays from the learned model until you upload his clip"}
+          {tourIsReference
+            ? " · Rory = official PGA Tour slow-mo (same reel as @golf_swings)"
+            : tourUrl
+              ? ""
+              : " · upload Rory's clip on the right to replace the default"}
         </p>
       ) : null}
     </div>

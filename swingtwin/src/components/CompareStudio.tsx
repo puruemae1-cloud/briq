@@ -1,29 +1,40 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { analyzePair } from "@/lib/analyze";
 import { applyHandedness, captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
 import { TOUR_STYLE } from "@/lib/anatomy";
 import { defaultProId, getPro } from "@/lib/pros";
+import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
-import { saveClip, clipObjectUrl } from "@/lib/video-store";
-import { modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
-import type { SkeletonFrame, ViewCapture } from "@/lib/types";
+import { saveClip, clipObjectUrl, loadClip } from "@/lib/video-store";
+import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
+import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
 import { Swing3D } from "./Swing3D";
 import { PlayerPicker } from "./PlayerPicker";
 import { PhaseOverlay } from "./PhaseOverlay";
 
-async function fileToVideo(file: File) {
-  const url = URL.createObjectURL(file);
+async function loadVideo(src: string) {
   const video = document.createElement("video");
-  video.src = url;
+  video.src = src;
   video.muted = true;
   video.playsInline = true;
+  video.crossOrigin = "anonymous";
   await new Promise<void>((resolve, reject) => {
     video.onloadedmetadata = () => resolve();
     video.onerror = () => reject(new Error("Could not read that video."));
   });
+  return video;
+}
+
+async function fileToVideo(file: File) {
+  const url = URL.createObjectURL(file);
+  const video = await loadVideo(url);
   return { video, url };
+}
+
+function isBlobUrl(url?: string) {
+  return Boolean(url?.startsWith("blob:"));
 }
 
 export function CompareStudio() {
@@ -33,11 +44,16 @@ export function CompareStudio() {
   const [userUrl, setUserUrl] = useState<string | undefined>();
   const [tourUrl, setTourUrl] = useState<string | undefined>();
   const [busy, setBusy] = useState<string | null>(null);
+  const [syncBusy, setSyncBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [phaseT, setPhaseT] = useState<number | undefined>();
   const [tourFrames, setTourFrames] = useState<SkeletonFrame[] | undefined>();
   const [userFileName, setUserFileName] = useState<string>();
   const [tourFileName, setTourFileName] = useState<string>();
+  const [liveUserSync, setLiveUserSync] = useState<SwingSyncMarkers | undefined>();
+  const [liveTourSync, setLiveTourSync] = useState<SwingSyncMarkers | undefined>();
+  const [refTourCapture, setRefTourCapture] = useState<ViewCapture | undefined>();
+  const [usingReference, setUsingReference] = useState(false);
 
   const tier = useTwinStore((s) => s.tier);
   const trialUsed = useTwinStore((s) => s.trialUsed);
@@ -51,22 +67,48 @@ export function CompareStudio() {
   const saveAnalysis = useTwinStore((s) => s.saveAnalysis);
 
   const pro = getPro(preferredProId) ?? getPro(defaultProId())!;
+  const reference = getReferenceClip(pro.id);
   const trialBlocked = tier === "trial" && trialUsed;
+
   const userSync =
-    result?.userSync ?? (skeleton.length ? syncFromSkeleton(skeleton) : undefined);
+    result?.userSync ??
+    liveUserSync ??
+    (skeleton.length ? syncFromSkeleton(skeleton) : undefined);
   const tourSync =
     result?.tourSync ??
+    liveTourSync ??
     (userSync ? modelSyncFromUser(userSync) : undefined);
+
+  const captureReference = useCallback(async () => {
+    const ref = getReferenceClip(pro.id);
+    if (!ref || tourFile) return undefined;
+    setSyncBusy("Loading tour reference…");
+    try {
+      const video = await loadVideo(ref.src);
+      const cap = await captureView(video, "faceOn", ref.label, {
+        handedness,
+        style: pro.style ?? TOUR_STYLE,
+      });
+      setRefTourCapture(cap);
+      setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
+      setTourUrl(ref.src);
+      setTourFileName(ref.label);
+      setUsingReference(true);
+      return cap;
+    } finally {
+      setSyncBusy(null);
+    }
+  }, [pro.id, pro.style, tourFile, handedness]);
 
   useEffect(() => {
     return () => {
-      if (userUrl) URL.revokeObjectURL(userUrl);
+      if (isBlobUrl(userUrl)) URL.revokeObjectURL(userUrl!);
     };
   }, [userUrl]);
 
   useEffect(() => {
     return () => {
-      if (tourUrl) URL.revokeObjectURL(tourUrl);
+      if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
     };
   }, [tourUrl]);
 
@@ -76,23 +118,47 @@ export function CompareStudio() {
       const user = await clipObjectUrl("user");
       const tour = await clipObjectUrl("tour");
       if (cancelled) {
-        user?.url && URL.revokeObjectURL(user.url);
-        tour?.url && URL.revokeObjectURL(tour.url);
+        if (user?.url) URL.revokeObjectURL(user.url);
+        if (tour?.url) URL.revokeObjectURL(tour.url);
         return;
       }
       if (user) {
         setUserUrl(user.url);
         setUserFileName(user.name);
+        const row = await loadClip("user");
+        if (row) {
+          const file = new File([row.blob], row.name, { type: row.blob.type });
+          setMyFace(file);
+          void captureUserForSync(file);
+        }
       }
       if (tour) {
         setTourUrl(tour.url);
         setTourFileName(tour.name);
+        setUsingReference(false);
       }
     })();
     return () => {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (tourFile) return;
+    void captureReference();
+  }, [tourFile, captureReference]);
+
+  async function captureUserForSync(file: File) {
+    setSyncBusy("Finding your takeaway → impact…");
+    try {
+      const { video } = await fileToVideo(file);
+      const cap = await captureView(video, "faceOn", file.name, { handedness });
+      setLiveUserSync(detectSwingSync(cap.samples, cap.duration));
+      return cap;
+    } finally {
+      setSyncBusy(null);
+    }
+  }
 
   function commit(userViews: ViewCapture[], tourViews?: ViewCapture[]) {
     const user = applyHandedness(userViews, handedness);
@@ -115,6 +181,8 @@ export function CompareStudio() {
       ...(tour?.flatMap((v) => v.thumbs) ?? []),
     ];
     setTourFrames(tour?.[0]?.skeleton);
+    setLiveUserSync(analysis.userSync);
+    setLiveTourSync(analysis.tourSync);
     const saved = saveAnalysis(analysis, fused, thumbsOut);
     if (!saved.ok) setError(saved.message);
   }
@@ -125,7 +193,7 @@ export function CompareStudio() {
       setError("Trial is used. Subscribe to keep comparing new swings.");
       return;
     }
-    if (!myFace && !myDtl) {
+    if (!myFace && !myDtl && !userUrl) {
       setError("Upload at least one clip of your own swing.");
       return;
     }
@@ -142,6 +210,11 @@ export function CompareStudio() {
         userViews.push(
           await captureView(video, "faceOn", myFace.name, { handedness }),
         );
+      } else if (userUrl && userFileName) {
+        const video = await loadVideo(userUrl);
+        userViews.push(
+          await captureView(video, "faceOn", userFileName, { handedness }),
+        );
       }
       if (myDtl) {
         setBusy("Reading your down-the-line clip…");
@@ -154,20 +227,26 @@ export function CompareStudio() {
       }
       let tourViews: ViewCapture[] | undefined;
       if (tourFile) {
-        setBusy("Reading the tour player clip…");
+        setBusy(`Reading ${pro.name}'s clip…`);
         await saveClip("tour", tourFile);
         const { video, url } = await fileToVideo(tourFile);
         urls.push(url);
         setTourUrl(url);
         setTourFileName(tourFile.name);
+        setUsingReference(false);
         tourViews = [
           await captureView(video, "faceOn", tourFile.name, {
             handedness,
             style: pro.style ?? TOUR_STYLE,
           }),
         ];
+      } else if (refTourCapture) {
+        tourViews = [refTourCapture];
+      } else {
+        const cap = await captureReference();
+        if (cap) tourViews = [cap];
       }
-      setBusy("Syncing 30 phases against the player…");
+      setBusy("Syncing takeaway → impact with Rory…");
       commit(userViews, tourViews);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Compare failed.");
@@ -191,12 +270,11 @@ export function CompareStudio() {
     <div className="twin-page">
       <header className="twin-page__head">
         <p className="twin-kicker">Compare</p>
-        <h1>Your swing next to the player you want</h1>
+        <h1>You on the left — Rory on the right</h1>
         <p>
-          Pick any PGA name from the five Instagram archives, upload your clip,
-          then (optionally) the exact tour slow-mo you are copying. We sync both
-          swings through 30 phases and draw a line on every body part that
-          differs — hands, wrists, arms, shoulders, thighs, knees, feet, head.
+          Upload your face-on clip on the left. Rory McIlroy&apos;s real PGA Tour
+          slow-mo loads on the right automatically (the same face-on reel you see
+          on @golf_swings / @pgatour). Press play to sync arms-up through impact.
         </p>
       </header>
 
@@ -211,8 +289,8 @@ export function CompareStudio() {
 
       <div className="twin-grid3">
         <label className="twin-drop">
-          <span>1. Your swing — face-on</span>
-          <strong>{myFace ? myFace.name : "Choose video"}</strong>
+          <span>Left — your swing (face-on)</span>
+          <strong>{myFace?.name || userFileName || "Choose video"}</strong>
           <em>Full body, camera in front</em>
           <input
             type="file"
@@ -223,17 +301,18 @@ export function CompareStudio() {
               if (f) {
                 const url = URL.createObjectURL(f);
                 setUserUrl((prev) => {
-                  if (prev) URL.revokeObjectURL(prev);
+                  if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
                   return url;
                 });
                 setUserFileName(f.name);
                 void saveClip("user", f);
+                void captureUserForSync(f);
               }
             }}
           />
         </label>
         <label className="twin-drop">
-          <span>2. Your swing — behind (optional)</span>
+          <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
           <em>Down the line — unlocks 3D</em>
           <input
@@ -243,9 +322,15 @@ export function CompareStudio() {
           />
         </label>
         <label className="twin-drop twin-drop--tour">
-          <span>3. Their swing (optional clip)</span>
-          <strong>{tourFile ? tourFile.name : "Saved Instagram / tour clip"}</strong>
-          <em>If empty, we use the learned {pro.name} model</em>
+          <span>Right — override Rory clip (optional)</span>
+          <strong>
+            {tourFile
+              ? tourFile.name
+              : usingReference
+                ? tourFileName || `${pro.name} reference`
+                : "Uses bundled Rory slow-mo"}
+          </strong>
+          <em>Save from Instagram to replace the default tour file</em>
           <input
             type="file"
             accept="video/*"
@@ -255,11 +340,27 @@ export function CompareStudio() {
               if (f) {
                 const url = URL.createObjectURL(f);
                 setTourUrl((prev) => {
-                  if (prev) URL.revokeObjectURL(prev);
+                  if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
                   return url;
                 });
                 setTourFileName(f.name);
+                setUsingReference(false);
+                setRefTourCapture(undefined);
                 void saveClip("tour", f);
+                void (async () => {
+                  setSyncBusy("Reading tour clip…");
+                  try {
+                    const { video } = await fileToVideo(f);
+                    const cap = await captureView(video, "faceOn", f.name, {
+                      handedness,
+                      style: pro.style ?? TOUR_STYLE,
+                    });
+                    setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
+                    setRefTourCapture(cap);
+                  } finally {
+                    setSyncBusy(null);
+                  }
+                })();
               }
             }}
           />
@@ -296,13 +397,17 @@ export function CompareStudio() {
           Sample pair
         </button>
       </div>
-      <p className="twin-note">
-        Instagram is not scraped live (their terms). Each name is a model
-        distilled from the public FO/DTL patterns those accounts repeat. Save a
-        clip from @golf_swings, @pgatour, @golfdigest, @golf_gods or
-        @golfonthesnap onto your phone and pick it in box 3 for clip-vs-clip.
-        Changing the player after a compare redraws the overlay on this swing.
-      </p>
+      {reference && usingReference ? (
+        <p className="twin-note">
+          Right panel: <strong>{reference.label}</strong> from{" "}
+          <a href={reference.sourceUrl} target="_blank" rel="noreferrer">
+            {reference.sourceName}
+          </a>
+          . Same style of clip reposted on {reference.instagramHandles.join(", ")}.
+          Instagram is not scraped — this is a bundled official excerpt.
+        </p>
+      ) : null}
+      {syncBusy ? <p className="twin-note">{syncBusy}</p> : null}
       {error ? <p className="twin-error">{error}</p> : null}
 
       <SideBySide
@@ -315,13 +420,16 @@ export function CompareStudio() {
         phaseT={phaseT}
         pro={pro}
         handedness={handedness}
+        tourIsReference={usingReference}
       />
 
-      {userUrl && !userSync ? (
+      {userUrl && tourUrl && userSync && tourSync ? (
         <p className="twin-note">
-          Press <strong>Trial compare</strong> to lock takeaway → impact sync with{" "}
-          {pro.name}.
+          Press <strong>Play synced swing</strong> — both clips start at takeaway
+          and hit impact together.
         </p>
+      ) : userUrl && !userSync ? (
+        <p className="twin-note">Reading your clip for sync points…</p>
       ) : null}
 
       {result && skeleton.length ? (
@@ -342,7 +450,7 @@ export function CompareStudio() {
             <strong>{result.overall}</strong>
             <span>
               vs {result.proName}
-              {result.comparedAgainstClip ? " · clip vs clip" : " · player model"}
+              {result.comparedAgainstClip ? " · real tour clip" : " · player model"}
             </span>
             <em>
               {result.has3d
