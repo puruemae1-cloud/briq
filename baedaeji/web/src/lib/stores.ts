@@ -162,6 +162,10 @@ export function enabledStores() {
   return STORES.filter((s) => s.enabled).sort((a, b) => a.sort - b.sort);
 }
 
+export function storeById(id: string) {
+  return STORES.find((s) => s.id === id && s.enabled) ?? null;
+}
+
 export function storeFromUrl(raw: string): StoreBanner | null {
   try {
     const host = new URL(raw).hostname.toLowerCase().replace(/^www\./, "");
