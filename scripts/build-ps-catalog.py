@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -11,6 +12,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from catalog_image_guard import existing_images, image_on_disk  # noqa: E402
 RAW_PATH = ROOT / "src/data/ps/ps-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ps/ps-catalog.json"
 OUT_PATH = ROOT / "src/data/ps/ps-catalog.ts"
@@ -723,12 +726,15 @@ def main() -> None:
         plp = row.get("plp") or {}
         title = entity.get("name") or plp.get("title") or row.get("handle") or row.get("key")
         handle = row.get("handle") or slugify(title)
-        images = [u for u in (row.get("images") or []) if u]
+        images = existing_images([u for u in (row.get("images") or []) if u])
         if not images:
+            print(f"skip no local image: {handle}", flush=True)
             continue
         hover = row.get("localHover") or (
             images[1] if len(images) > 1 else images[0]
         )
+        if hover and not image_on_disk(hover):
+            hover = images[1] if len(images) > 1 else images[0]
 
         cat, sub, cols, _leaf_ko = classify(row)
         gbp_sell, gbp_list = price_pair(entity, plp)

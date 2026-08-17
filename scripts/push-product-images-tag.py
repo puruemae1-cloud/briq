@@ -177,7 +177,9 @@ def main() -> int:
     # garments stay visible. Required for newly scraped products — do not skip
     # in weekly CI (use --skip-whiten only when images were already greymatted).
     # Banner trees are lifestyle photos — never greymat them.
-    product_dirs = [n for n, _ in src_roots if n != "banners"]
+    # Burberry Scene7 and Gucci DarkGray packshots must stay official bytes.
+    skip_greymat = {"banners", "bb-pdp", "gc-pdp"}
+    product_dirs = [n for n, _ in src_roots if n not in skip_greymat]
     if not args.skip_whiten and product_dirs:
         print(f"Greymatting studio backgrounds → DarkGray: {product_dirs}", flush=True)
         scripts_dir = str(ROOT / "scripts")
@@ -210,11 +212,11 @@ def main() -> int:
         show = run(["git", "rev-parse", "--verify", TAG], check=False)
         if show.returncode != 0:
             print(
-                f"WARN: tag {TAG} not available — skip image tag update "
-                "(catalogue commit can still proceed).",
+                f"ERROR: tag {TAG} not available — refusing to skip image "
+                "publish (catalogue must not go live without PDP files).",
                 flush=True,
             )
-            return 0
+            return 1
 
     tmp = Path(tempfile.mkdtemp(prefix="briq-product-images-"))
     try:

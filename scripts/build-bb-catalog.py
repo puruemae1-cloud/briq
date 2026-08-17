@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_women_config import primary_category_for_collections  # noqa: E402
+from catalog_image_guard import existing_images, image_on_disk  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/bb/bb-catalog-raw.json"
 OUT_PATH = ROOT / "src/data/bb/bb-catalog.ts"
@@ -677,13 +678,15 @@ def main() -> None:
             color_ko = t(color) or color
             color_key = slugify(color) or c.get("id")
             color_cols = sorted(set(c.get("collections") or cols_sorted))
-            local_imgs = list(c.get("images") or [])
+            local_imgs = existing_images(list(c.get("images") or []))
             if not local_imgs and c.get("image") and str(c["image"]).startswith("/"):
-                local_imgs = [c["image"]]
+                local_imgs = existing_images([c["image"]])
+            if not local_imgs:
+                continue
             for img in local_imgs:
                 if img and img not in gallery_all:
                     gallery_all.append(img)
-            lead_img = local_imgs[0] if local_imgs else (c.get("image") or "/products/wool-coat.svg")
+            lead_img = local_imgs[0]
             gbp = float(c.get("gbpPrice") or 0)
             gbp_list = c.get("gbpListPrice")
             price = gbp_to_krw(gbp, color_cols) if gbp else 0
@@ -753,7 +756,12 @@ def main() -> None:
                 compare_at = cap
                 break
 
-        primary_image = gallery_all[0] if gallery_all else "/products/wool-coat.svg"
+        gallery_all = existing_images(gallery_all)
+        if not gallery_all or not flat_variants:
+            print(f"skip no local image: {pid}", flush=True)
+            continue
+
+        primary_image = gallery_all[0]
         badge = "New" if any(x.get("label") == "New In" for x in colourways) else None
         if "bb-women-new" in cols_sorted:
             badge = badge or "New"

@@ -41,6 +41,9 @@ jobs:
       - name: Push PDP images to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs bs-pdp
 
+      - name: Verify catalogue images are on the product-images tag
+        run: python3 scripts/verify-product-images.py --brand bs --remote --skip-local --all-images
+
       - name: Commit and push catalogue
         run: |
           chmod +x scripts/ci-commit-push.sh
@@ -48,6 +51,8 @@ jobs:
             "chore: weekly Belstaff stock + catalogue sync" \
             src/data/bs \
             scripts/weekly-bs-stock-sync.py \
+            scripts/catalog_image_guard.py \
+            scripts/verify-product-images.py \
             scripts/studio_whiten.py \
             scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \

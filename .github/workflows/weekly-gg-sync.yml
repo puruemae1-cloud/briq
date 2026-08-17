@@ -41,6 +41,9 @@ jobs:
       - name: Push PDP images to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs gg-pdp
 
+      - name: Verify catalogue images are on the product-images tag
+        run: python3 scripts/verify-product-images.py --brand gg --remote --skip-local --all-images
+
       - name: Commit and push if changed
         run: |
           chmod +x scripts/ci-commit-push.sh
@@ -52,4 +55,5 @@ jobs:
             scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
+            scripts/verify-product-images.py \
             scripts/ci-commit-push.sh

@@ -22,12 +22,15 @@ When finishing catalog, product, image, category, UI/CSS, or site content work t
      ```
    - Then verify (fail the task if this exits non-zero):
      ```bash
-     python3 scripts/verify-product-images.py --brand <gc|bb> --remote
+     python3 scripts/verify-product-images.py --brand <gc|bb|bs|ps|ch|ax|axa|axg|gg|cw|lu> --remote --all-images
      ```
    - Do **not** assume “images already on disk” means they are live. New SKU folders must be on the tag or briq.kr shows broken `<img>`.
+   - Weekly GitHub Actions must push the tag, then run that verify, **then** commit catalogue. Never commit catalogue paths for files that are not on the tag.
 4. Do **not** stop after local edits and ask “커밋/배포할까요?” — the user wants deploy by default.
 5. Still avoid force-push to `main`/`master`, `--no-verify`, and destructive git unless explicitly requested. Force-updating the `product-images` **tag** via the push script is expected.
 
 ## Known failure mode (do not repeat)
 
-Men’s handbags (2026-08): catalog + local DarkGray files were correct, but seven new SKUs were never pushed to `product-images`, so Vercel rewrites 404’d. Fix was tag push only — prevent by always running push + `--remote` verify after GC/BB image scrapes.
+Men’s handbags (2026-08): catalog + local DarkGray files were correct, but seven new SKUs were never pushed to `product-images`, so Vercel rewrites 404’d.
+
+Burberry / Belstaff (2026-08-17): weekly sync wrote catalogue paths for SKUs whose JPGs were never downloaded/published. Shop cards 404’d. Prevent by: (1) builders skip rows without local files, (2) weekly job verifies `--remote` after the tag push and **does not** commit catalogue if verify fails.

@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -13,6 +14,8 @@ from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from catalog_image_guard import existing_images  # noqa: E402
 RAW_PATH = ROOT / "src/data/bs/bs-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/bs/bs-catalog.json"
 OUT_TS = ROOT / "src/data/bs/bs-catalog.ts"
@@ -579,8 +582,11 @@ def build() -> None:
 
         # Images
         n_img = min(8, len(row.get("images") or []))
-        local_imgs = [f"/products/bs-pdp/{handle}/{i}.jpg" for i in range(1, n_img + 1)]
+        local_imgs = existing_images(
+            [f"/products/bs-pdp/{handle}/{i}.jpg" for i in range(1, n_img + 1)]
+        )
         if not local_imgs:
+            print(f"skip no local image: {handle}", flush=True)
             continue
 
         variants_out = []

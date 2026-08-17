@@ -6,9 +6,8 @@ Prevents the failure mode where scrape/build writes public/products/*-pdp/
 serves via raw.githubusercontent.com/.../product-images/...
 
   python3 scripts/verify-product-images.py --brand gc
-  python3 scripts/verify-product-images.py --brand gc --remote
-  python3 scripts/verify-product-images.py --brand ch --remote
-  python3 scripts/verify-product-images.py --ids gc-768255fafbe8448 --remote
+  python3 scripts/verify-product-images.py --brand bb --remote --all-images
+  python3 scripts/verify-product-images.py --all-brands --remote
 
 Exit 1 if any primary image is missing locally (default) or on the tag (--remote).
 """
@@ -16,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -24,24 +24,69 @@ ROOT = Path(__file__).resolve().parents[1]
 TAG = "product-images"
 PRODUCTS_PREFIX = "public/products/"
 
-BRAND_CATALOGS = {
-    "gc": ROOT / "src/data/gc/gc-catalog.json",
-    "bb": ROOT / "src/data/bb/bb-catalog.json",
-    "ps": ROOT / "src/data/ps/ps-catalog.json",
-    "ch": ROOT / "src/data/ch/ch-catalog.json",
+BRAND_CATALOGS: dict[str, list[Path]] = {
+    "gc": [ROOT / "src/data/gc/gc-catalog.json"],
+    "bb": [ROOT / "src/data/bb/bb-catalog.json"],
+    "ps": [ROOT / "src/data/ps/ps-catalog.json"],
+    "ch": [ROOT / "src/data/ch/ch-catalog.json"],
+    "bs": [ROOT / "src/data/bs/bs-catalog.json"],
+    "ax": [ROOT / "src/data/ax/ax-catalog.json"],
+    "axa": [ROOT / "src/data/ax/ax-apparel-catalog.json"],
+    "axo": [ROOT / "src/data/ax/ax-outlet-catalog.json"],
+    "axg": [ROOT / "src/data/ax/ax-gear-catalog.json"],
+    "gg": [ROOT / "src/data/gg/gg-catalog.ts"],
+    "cw": [ROOT / "src/data/cw/cw-catalog.ts"],
+    "lu": [
+        ROOT / "src/data/lu/lu-catalog.ts",
+        ROOT / "src/data/lu/lu-lifestyle-catalog.ts",
+    ],
 }
 
+PATH_RE = re.compile(r"/products/[a-z0-9][\w.-]*-pdp/[^\"'\\s)]+")
 
-def load_products(brand: str) -> list[dict]:
-    path = BRAND_CATALOGS.get(brand)
-    if not path or not path.is_file():
-        raise SystemExit(f"Unknown brand or missing catalog: {brand} ({path})")
+
+def _load_json_products(path: Path) -> list[dict]:
     data = json.loads(path.read_text())
     if isinstance(data, list):
         return data
     if isinstance(data, dict) and "products" in data:
         return list(data["products"])
     raise SystemExit(f"Unexpected catalog shape: {path}")
+
+
+def _load_ts_paths(path: Path) -> list[dict]:
+    text = path.read_text(errors="ignore")
+    found = []
+    for raw in PATH_RE.findall(text):
+        p = raw.rstrip(".,;")
+        if p.endswith((".jpg", ".jpeg", ".png", ".webp")):
+            found.append(p)
+    uniq: list[str] = []
+    seen: set[str] = set()
+    for p in found:
+        if p not in seen:
+            seen.add(p)
+            uniq.append(p)
+    if not uniq:
+        return []
+    return [{"id": path.name, "image": uniq[0], "images": uniq}]
+
+
+def load_products(brand: str) -> list[dict]:
+    paths = BRAND_CATALOGS.get(brand)
+    if not paths:
+        raise SystemExit(
+            f"Unknown brand: {brand}. Choose from {', '.join(sorted(BRAND_CATALOGS))}"
+        )
+    products: list[dict] = []
+    for path in paths:
+        if not path.is_file():
+            raise SystemExit(f"Missing catalog: {path}")
+        if path.suffix == ".json":
+            products.extend(_load_json_products(path))
+        else:
+            products.extend(_load_ts_paths(path))
+    return products
 
 
 def primary_image(product: dict) -> str | None:
@@ -112,11 +157,27 @@ def list_tag_paths(prefix: str = PRODUCTS_PREFIX) -> set[str]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--brand", default="gc", choices=sorted(BRAND_CATALOGS))
+    ap.add_argument(
+        "--brand",
+        action="append",
+        dest="brands",
+        choices=sorted(BRAND_CATALOGS),
+        help="Brand to check (repeatable). Default: gc",
+    )
+    ap.add_argument(
+        "--all-brands",
+        action="store_true",
+        help="Check every brand catalogue",
+    )
     ap.add_argument(
         "--remote",
         action="store_true",
-        help="Also require primary images to exist on the product-images tag",
+        help="Also require images to exist on the product-images tag",
+    )
+    ap.add_argument(
+        "--skip-local",
+        action="store_true",
+        help="Do not require files on this machine (tag check only)",
     )
     ap.add_argument(
         "--all-images",
@@ -134,8 +195,17 @@ def main() -> int:
         help="Only products whose subcategory/tags start with this (e.g. gc-men)",
     )
     args = ap.parse_args()
+    if args.skip_local and not args.remote:
+        raise SystemExit("--skip-local requires --remote")
+    brands = (
+        sorted(BRAND_CATALOGS)
+        if args.all_brands
+        else (args.brands or ["gc"])
+    )
 
-    products = load_products(args.brand)
+    products: list[dict] = []
+    for brand in brands:
+        products.extend(load_products(brand))
     if args.ids:
         want = set(args.ids)
         products = [p for p in products if p.get("id") in want]
@@ -175,7 +245,7 @@ def main() -> int:
         for web in paths:
             checked += 1
             disk = path_on_disk(web)
-            if not disk.is_file():
+            if not args.skip_local and not disk.is_file():
                 missing_local.append((pid, web))
             if tag_paths is not None:
                 blob = tag_blob_path(web)
