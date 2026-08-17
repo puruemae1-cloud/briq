@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Handedness, ProProfile, SwingSyncMarkers } from "@/lib/types";
+import type { VideoDisplayStyle } from "@/lib/swing-framing";
 import {
   mapSyncedTourTime,
   swingPhaseNorm,
@@ -17,6 +18,7 @@ type Props = {
   pro?: ProProfile;
   handedness?: Handedness;
   tourIsReference?: boolean;
+  tourVideoStyle?: VideoDisplayStyle;
 };
 
 export function SideBySide({
@@ -30,6 +32,7 @@ export function SideBySide({
   pro,
   handedness = "right",
   tourIsReference,
+  tourVideoStyle,
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
@@ -165,7 +168,9 @@ export function SideBySide({
         <figure>
           <figcaption>You · left</figcaption>
           {userUrl ? (
-            <video ref={userRef} src={userUrl} playsInline muted controls={false} />
+            <div className="twin-compare__video-wrap">
+              <video ref={userRef} src={userUrl} playsInline muted controls={false} />
+            </div>
           ) : (
             <div className="twin-compare__empty">Your swing</div>
           )}
@@ -176,7 +181,16 @@ export function SideBySide({
             {tourUrl ? `${pro?.name ?? "Tour"} · right` : pro?.name ?? "Tour player"}
           </figcaption>
           {tourUrl ? (
-            <video ref={tourRef} src={tourUrl} playsInline muted controls={false} />
+            <div className="twin-compare__video-wrap">
+              <video
+                ref={tourRef}
+                src={tourUrl}
+                playsInline
+                muted
+                controls={false}
+                style={tourVideoStyle}
+              />
+            </div>
           ) : useModel && pro ? (
             <ProSwingCanvas
               pro={pro}
@@ -223,7 +237,7 @@ export function SideBySide({
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
           {tourIsReference
-            ? " · Rory auto-framed to same body size as you"
+            ? " · Rory zoomed to match your body size"
             : tourUrl
               ? ""
               : " · upload Rory's clip on the right to replace the default"}

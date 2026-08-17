@@ -24,10 +24,13 @@ function luma(data: Uint8ClampedArray, i: number) {
 export type CropRect = { x: number; y: number; w: number; h: number };
 
 export type BodyFrameMeta = {
-  /** Body span height as a fraction of the framed output (after normalise). */
   bodyFill: number;
   outputW: number;
   outputH: number;
+  /** Source crop used before normalise (for tour scale matching). */
+  sourceCrop: CropRect;
+  sourceW: number;
+  sourceH: number;
 };
 
 export type FramedVideoResult = {
@@ -37,8 +40,7 @@ export type FramedVideoResult = {
 
 const OUTPUT_W = 540;
 const OUTPUT_H = 720;
-const BODY_FILL = 0.96;
-const MOTION_THRESHOLD = 8;
+const MOTION_THRESHOLD = 7;
 
 async function loadVideoFromUrl(src: string) {
   const video = document.createElement("video");
@@ -46,7 +48,9 @@ async function loadVideoFromUrl(src: string) {
   video.muted = true;
   video.playsInline = true;
   video.preload = "auto";
-  video.crossOrigin = "anonymous";
+  if (!src.startsWith("blob:")) {
+    video.crossOrigin = "anonymous";
+  }
   await new Promise<void>((resolve, reject) => {
     video.onloadedmetadata = () => resolve();
     video.onerror = () => reject(new Error("Could not read that video."));
@@ -124,10 +128,10 @@ export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAna
 
   if (total <= 0) {
     const crop: CropRect = {
-      x: Math.round(vw * 0.18),
-      y: Math.round(vh * 0.08),
-      w: Math.round(vw * 0.64),
-      h: Math.round(vh * 0.84),
+      x: Math.round(vw * 0.22),
+      y: Math.round(vh * 0.06),
+      w: Math.round(vw * 0.56),
+      h: Math.round(vh * 0.88),
     };
     return { crop, analysisW, analysisH };
   }
@@ -170,24 +174,19 @@ export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAna
     return { start: bestStart, end: bestStart + bestLen - 1 };
   };
 
-  const rowWin = massWindow(rowMass, 0.985);
-  const colWin = massWindow(colMass, 0.985);
+  const rowWin = massWindow(rowMass, 0.992);
+  const colWin = massWindow(colMass, 0.992);
 
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;
 
-  let minX = colWin.start;
-  let maxX = colWin.end;
-  let minY = rowWin.start;
-  let maxY = rowWin.end;
+  let x = colWin.start * scaleX;
+  let y = rowWin.start * scaleY;
+  let w = (colWin.end - colWin.start + 1) * scaleX;
+  let h = (rowWin.end - rowWin.start + 1) * scaleY;
 
-  let x = minX * scaleX;
-  let y = minY * scaleY;
-  let w = (maxX - minX + 1) * scaleX;
-  let h = (maxY - minY + 1) * scaleY;
-
-  const padX = w * 0.035;
-  const padY = h * 0.035;
+  const padX = w * 0.02;
+  const padY = h * 0.02;
   x = Math.max(0, x - padX);
   y = Math.max(0, y - padY);
   w = Math.min(vw - x, w + padX * 2);
@@ -200,17 +199,60 @@ export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAna
   if (x + w > vw) x = Math.max(0, vw - w);
   if (y + h > vh) y = Math.max(0, vh - h);
 
-  return {
-    crop: { x, y, w, h },
-    analysisW,
-    analysisH,
-  };
+  return { crop: { x, y, w, h }, analysisW, analysisH };
 }
 
 /** @deprecated use detectBodyCrop */
 export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRect> {
   const { crop } = await detectBodyCrop(video);
   return crop;
+}
+
+export type VideoDisplayStyle = {
+  objectFit?: "cover" | "contain";
+  objectPosition?: string;
+  transform?: string;
+  transformOrigin?: string;
+};
+
+/** Zoom Rory so his body matches the user's framed body height. */
+export function tourMatchScale(
+  userMeta: BodyFrameMeta,
+  tourCrop: CropRect,
+  tourH: number,
+): number {
+  const userBodyFrac = userMeta.sourceCrop.h / userMeta.sourceH;
+  const tourBodyFrac = tourCrop.h / tourH;
+  if (tourBodyFrac <= 0) return 1;
+  return Math.min(2.4, Math.max(1, userBodyFrac / tourBodyFrac));
+}
+
+/** CSS object-position + scale so a raw clip fills the panel like a framed user clip. */
+export function cropToVideoStyle(
+  crop: CropRect,
+  sourceW: number,
+  sourceH: number,
+  matchScale = 1,
+): VideoDisplayStyle {
+  const cx = ((crop.x + crop.w / 2) / sourceW) * 100;
+  const cy = ((crop.y + crop.h / 2) / sourceH) * 100;
+  const scale = Math.min(2.4, Math.max(1, matchScale));
+  return {
+    objectFit: "cover",
+    objectPosition: `${cx}% ${cy}%`,
+    transform: scale > 1.02 ? `scale(${scale})` : undefined,
+    transformOrigin: `${cx}% ${cy}%`,
+  };
+}
+
+export async function detectBodyCropFromUrl(src: string): Promise<{
+  crop: CropRect;
+  sourceW: number;
+  sourceH: number;
+}> {
+  const video = await loadVideoFromUrl(src);
+  const { crop } = await detectBodyCrop(video);
+  return { crop, sourceW: video.videoWidth, sourceH: video.videoHeight };
 }
 
 async function renderBodyFocusedVideo(
@@ -226,13 +268,13 @@ async function renderBodyFocusedVideo(
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Could not render cropped video.");
 
-  const scale = (outH * BODY_FILL) / crop.h;
+  const scale = Math.max(outW / crop.w, outH / crop.h);
   const drawW = crop.w * scale;
   const drawH = crop.h * scale;
   const dx = (outW - drawW) / 2;
   const dy = (outH - drawH) / 2;
 
-  const fps = 30;
+  const fps = 24;
   const duration =
     Number.isFinite(video.duration) && video.duration > 0 ? video.duration : 2;
   const frameCount = Math.max(1, Math.ceil(duration * fps));
@@ -243,6 +285,10 @@ async function renderBodyFocusedVideo(
     : MediaRecorder.isTypeSupported("video/webm;codecs=vp8")
       ? "video/webm;codecs=vp8"
       : "video/webm";
+
+  if (!MediaRecorder.isTypeSupported(mimeType)) {
+    throw new Error("MediaRecorder not supported");
+  }
 
   const stream = canvas.captureStream(fps);
   const recorder = new MediaRecorder(stream, {
@@ -255,7 +301,14 @@ async function renderBodyFocusedVideo(
     recorder.ondataavailable = (e) => {
       if (e.data.size) chunks.push(e.data);
     };
-    recorder.onstop = () => resolve(new Blob(chunks, { type: mimeType }));
+    recorder.onstop = () => {
+      const out = new Blob(chunks, { type: mimeType });
+      if (out.size < 1024) {
+        reject(new Error("Encoded video was empty"));
+        return;
+      }
+      resolve(out);
+    };
     recorder.onerror = () =>
       reject(new Error("Could not encode cropped video."));
     recorder.start(250);
@@ -263,7 +316,7 @@ async function renderBodyFocusedVideo(
     void (async () => {
       try {
         for (let i = 0; i < frameCount; i++) {
-          if (i % 8 === 0) {
+          if (i % 6 === 0) {
             onProgress?.(`Framing body… ${Math.round((i / frameCount) * 100)}%`);
           }
           const t = Math.min(i / fps, Math.max(0, duration - 0.001));
@@ -295,8 +348,15 @@ async function renderBodyFocusedVideo(
   return blob;
 }
 
-function defaultMeta(): BodyFrameMeta {
-  return { bodyFill: BODY_FILL, outputW: OUTPUT_W, outputH: OUTPUT_H };
+function buildMeta(video: HTMLVideoElement, crop: CropRect): BodyFrameMeta {
+  return {
+    bodyFill: 1,
+    outputW: OUTPUT_W,
+    outputH: OUTPUT_H,
+    sourceCrop: crop,
+    sourceW: video.videoWidth,
+    sourceH: video.videoHeight,
+  };
 }
 
 async function frameVideoElement(
@@ -309,20 +369,21 @@ async function frameVideoElement(
   onProgress?.("Cutting sky, floor & sides…");
   const blob = await renderBodyFocusedVideo(video, crop, onProgress);
   const file = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });
-  return { file, meta: defaultMeta() };
+  return { file, meta: buildMeta(video, crop) };
 }
 
-/**
- * Auto-crop on upload — keeps only the golfer (incl. club arc), removes sky/floor/sides,
- * and normalises so the body fills the frame. Same output size for tour matching.
- */
 export async function autoFrameSwingVideo(
   file: File,
   onProgress?: (message: string) => void,
 ): Promise<FramedVideoResult> {
-  const meta = defaultMeta();
   if (!file.type.startsWith("video/") || typeof MediaRecorder === "undefined") {
-    return { file, meta };
+    const { video, url } = await loadVideoFromFile(file);
+    try {
+      const { crop } = await detectBodyCrop(video);
+      return { file, meta: buildMeta(video, crop) };
+    } finally {
+      URL.revokeObjectURL(url);
+    }
   }
 
   const { video, url } = await loadVideoFromFile(file);
@@ -330,32 +391,11 @@ export async function autoFrameSwingVideo(
     const stem = file.name.replace(/\.[^.]+$/, "") || "swing";
     return await frameVideoElement(video, onProgress, stem);
   } catch {
-    return { file, meta };
+    const { crop } = await detectBodyCrop(video);
+    return { file, meta: buildMeta(video, crop) };
   } finally {
     URL.revokeObjectURL(url);
   }
 }
 
-/** Frame a bundled tour / reference clip to the same body scale as user uploads. */
-export async function autoFrameSwingUrl(
-  src: string,
-  label: string,
-  onProgress?: (message: string) => void,
-): Promise<{ url: string; meta: BodyFrameMeta; revoke: () => void }> {
-  const meta = defaultMeta();
-  if (typeof MediaRecorder === "undefined") {
-    return { url: src, meta, revoke: () => {} };
-  }
-
-  const video = await loadVideoFromUrl(src);
-  try {
-    const stem = label.replace(/[^\w.-]+/g, "-").slice(0, 40) || "tour";
-    const framed = await frameVideoElement(video, onProgress, stem);
-    const url = URL.createObjectURL(framed.file);
-    return { url, meta: framed.meta, revoke: () => URL.revokeObjectURL(url) };
-  } catch {
-    return { url: src, meta, revoke: () => {} };
-  }
-}
-
-export { OUTPUT_W, OUTPUT_H, BODY_FILL };
+export { OUTPUT_W, OUTPUT_H };

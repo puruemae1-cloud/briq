@@ -6,7 +6,8 @@ import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
 import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
-import { autoFrameSwingVideo, autoFrameSwingUrl } from "@/lib/swing-framing";
+import { autoFrameSwingVideo, detectBodyCropFromUrl, cropToVideoStyle, tourMatchScale } from "@/lib/swing-framing";
+import type { BodyFrameMeta, VideoDisplayStyle } from "@/lib/swing-framing";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
@@ -54,11 +55,14 @@ export function CompareStudio() {
   const [liveTourSync, setLiveTourSync] = useState<SwingSyncMarkers | undefined>();
   const [refTourCapture, setRefTourCapture] = useState<ViewCapture | undefined>();
   const [usingReference, setUsingReference] = useState(false);
+  const [userFrameMeta, setUserFrameMeta] = useState<BodyFrameMeta | undefined>();
+  const [tourDisplayStyle, setTourDisplayStyle] = useState<VideoDisplayStyle | undefined>();
 
   const userFaceInputRef = useRef<HTMLInputElement>(null);
   const userDtlInputRef = useRef<HTMLInputElement>(null);
   const tourInputRef = useRef<HTMLInputElement>(null);
   const tourRevokeRef = useRef<(() => void) | null>(null);
+  const tourLoadGen = useRef(0);
 
   const preferredProId = useTwinStore((s) => s.preferredProId);
   const handedness = useTwinStore((s) => s.handedness);
@@ -81,30 +85,55 @@ export function CompareStudio() {
     liveTourSync ??
     (userSync ? modelSyncFromUser(userSync) : undefined);
 
+  const applyTourDisplayStyle = useCallback(
+    async (src: string, userMeta?: BodyFrameMeta) => {
+      try {
+        const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(src);
+        const scale = userMeta
+          ? tourMatchScale(userMeta, crop, sourceH)
+          : 1;
+        setTourDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH, scale));
+      } catch {
+        setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 45%" });
+      }
+    },
+    [],
+  );
+
   const captureReference = useCallback(async () => {
     const ref = getReferenceClip(pro.id);
     if (!ref || tourFile) return undefined;
-    setSyncBusy("Framing Rory to match your body size…");
-    try {
-      const framed = await autoFrameSwingUrl(ref.src, ref.label, setSyncBusy);
-      tourRevokeRef.current?.();
-      tourRevokeRef.current = framed.revoke;
-      setTourUrl(framed.url);
-      setTourFileName(ref.label);
-      setUsingReference(true);
+    const gen = ++tourLoadGen.current;
 
-      const video = await loadVideo(framed.url);
+    setTourUrl(ref.src);
+    setTourFileName(ref.label);
+    setUsingReference(true);
+    setSyncBusy("Loading Rory…");
+
+    try {
+      void applyTourDisplayStyle(ref.src, userFrameMeta);
+
+      const video = await loadVideo(ref.src);
+      if (gen !== tourLoadGen.current) return undefined;
+
       const cap = await captureView(video, "downTheLine", ref.label, {
         handedness,
         style: pro.style ?? TOUR_STYLE,
       });
+      if (gen !== tourLoadGen.current) return undefined;
+
       setRefTourCapture(cap);
       setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
       return cap;
+    } catch (e) {
+      if (gen === tourLoadGen.current) {
+        setError(e instanceof Error ? e.message : "Could not load Rory clip.");
+      }
+      return undefined;
     } finally {
-      setSyncBusy(null);
+      if (gen === tourLoadGen.current) setSyncBusy(null);
     }
-  }, [pro.id, pro.style, tourFile, handedness]);
+  }, [pro.id, pro.style, tourFile, handedness, userFrameMeta, applyTourDisplayStyle]);
 
   useEffect(() => {
     return () => {
@@ -115,7 +144,7 @@ export function CompareStudio() {
   useEffect(() => {
     return () => {
       tourRevokeRef.current?.();
-      if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
+      tourRevokeRef.current = null;
     };
   }, [tourUrl]);
 
@@ -176,13 +205,16 @@ export function CompareStudio() {
     }
   }
 
-  async function refreshTourFraming() {
-    if (tourFile) return;
-    await captureReference();
+  async function refreshTourDisplay() {
+    if (tourFile || !reference) return;
+    if (tourUrl) {
+      await applyTourDisplayStyle(tourUrl, userFrameMeta);
+    }
   }
 
   async function applyUserFace(file: File) {
-    const { file: f } = await prepareUserClip(file);
+    const { file: f, meta } = await prepareUserClip(file);
+    setUserFrameMeta(meta);
     setMyFace(f);
     const url = URL.createObjectURL(f);
     setUserUrl((prev) => {
@@ -192,7 +224,7 @@ export function CompareStudio() {
     setUserFileName(f.name);
     await saveClip("user", f);
     await captureUserForSync(f);
-    await refreshTourFraming();
+    await refreshTourDisplay();
   }
 
   async function applyUserDtl(file: File) {
@@ -201,19 +233,20 @@ export function CompareStudio() {
   }
 
   async function applyTourUpload(file: File) {
-    setSyncBusy("Framing tour clip to match…");
+    setSyncBusy("Framing tour clip…");
     try {
       const { file: f } = await autoFrameSwingVideo(file, setSyncBusy);
       setTourFile(f);
       const url = URL.createObjectURL(f);
       tourRevokeRef.current?.();
-      tourRevokeRef.current = null;
+      tourRevokeRef.current = () => URL.revokeObjectURL(url);
       setTourUrl((prev) => {
         if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
         return url;
       });
       setTourFileName(f.name);
       setUsingReference(false);
+      setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 50%" });
       setRefTourCapture(undefined);
       await saveClip("tour", f);
       const { video } = await fileToVideo(f);
@@ -337,6 +370,7 @@ export function CompareStudio() {
     setUserUrl(undefined);
     setUserFileName(undefined);
     setLiveUserSync(undefined);
+    setUserFrameMeta(undefined);
     if (userFaceInputRef.current) userFaceInputRef.current.value = "";
   }
 
@@ -357,6 +391,7 @@ export function CompareStudio() {
     setTourFile(null);
     setRefTourCapture(undefined);
     setLiveTourSync(undefined);
+    setTourDisplayStyle(undefined);
     if (tourInputRef.current) tourInputRef.current.value = "";
     await captureReference();
   }
@@ -523,6 +558,7 @@ export function CompareStudio() {
         pro={pro}
         handedness={handedness}
         tourIsReference={usingReference}
+        tourVideoStyle={tourDisplayStyle}
       />
 
       {userUrl && tourUrl && userSync && tourSync ? (
