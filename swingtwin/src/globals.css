@@ -186,6 +186,50 @@ a { color: inherit; text-decoration: none; }
 .twin-drop span { color: var(--gold); font-size: 0.78rem; }
 .twin-drop strong { margin: 0.35rem 0; }
 .twin-drop em { font-style: normal; font-size: 0.82rem; color: rgba(232,239,233,0.5); }
+.twin-drop.is-uploading {
+  border-color: var(--gold);
+  box-shadow: inset 0 0 0 1px rgba(201, 179, 122, 0.55);
+  pointer-events: none;
+  opacity: 0.88;
+}
+
+.twin-upload-progress {
+  margin: 0.85rem 0 0.2rem;
+  padding: 0.85rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.twin-upload-progress__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+.twin-upload-progress__head strong {
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.twin-upload-progress p {
+  margin: 0 0 0.55rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+.twin-upload-progress__track {
+  height: 0.45rem;
+  border-radius: 999px;
+  background: rgba(232, 239, 233, 0.12);
+  overflow: hidden;
+}
+.twin-upload-progress__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8a7340, var(--gold));
+  transition: width 0.18s ease-out;
+}
+
 .twin-drop input { position: absolute; inset: 0; opacity: 0; cursor: pointer; z-index: 1; }
 .twin-drop__remove {
   position: absolute;

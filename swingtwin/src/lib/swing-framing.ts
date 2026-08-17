@@ -23,6 +23,20 @@ function luma(data: Uint8ClampedArray, i: number) {
 
 export type CropRect = { x: number; y: number; w: number; h: number };
 
+export type FramingProgress = { label: string; percent: number };
+export type FramingProgressCallback = (progress: FramingProgress) => void;
+
+function report(
+  onProgress: FramingProgressCallback | undefined,
+  label: string,
+  percent: number,
+) {
+  onProgress?.({
+    label,
+    percent: Math.min(100, Math.max(0, Math.round(percent))),
+  });
+}
+
 export type BodyFrameMeta = {
   bodyFill: number;
   outputW: number;
@@ -71,7 +85,10 @@ type MotionAnalysis = {
 };
 
 /** Tight body + club crop — trims sky, floor, and empty sides via motion mass. */
-export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAnalysis> {
+export async function detectBodyCrop(
+  video: HTMLVideoElement,
+  onProgress?: FramingProgressCallback,
+): Promise<MotionAnalysis> {
   const vw = video.videoWidth;
   const vh = video.videoHeight;
   if (!vw || !vh) throw new Error("Video has no picture size.");
@@ -96,6 +113,7 @@ export async function detectBodyCrop(video: HTMLVideoElement): Promise<MotionAna
     const t = (i / Math.max(sampleCount - 1, 1)) * duration * 0.98;
     video.currentTime = t;
     await waitSeek(video);
+    report(onProgress, "Finding your body…", 8 + (i / sampleCount) * 22);
     ctx.drawImage(video, 0, 0, analysisW, analysisH);
     const cur = ctx.getImageData(0, 0, analysisW, analysisH).data;
     if (!bg) bg = cur.slice();
@@ -258,7 +276,7 @@ export async function detectBodyCropFromUrl(src: string): Promise<{
 async function renderBodyFocusedVideo(
   video: HTMLVideoElement,
   crop: CropRect,
-  onProgress?: (message: string) => void,
+  onProgress?: FramingProgressCallback,
 ): Promise<Blob> {
   const outW = OUTPUT_W;
   const outH = OUTPUT_H;
@@ -316,9 +334,11 @@ async function renderBodyFocusedVideo(
     void (async () => {
       try {
         for (let i = 0; i < frameCount; i++) {
-          if (i % 6 === 0) {
-            onProgress?.(`Framing body… ${Math.round((i / frameCount) * 100)}%`);
-          }
+          report(
+            onProgress,
+            "Framing body — cutting background…",
+            34 + (i / frameCount) * 58,
+          );
           const t = Math.min(i / fps, Math.max(0, duration - 0.001));
           video.currentTime = t;
           await waitSeek(video);
@@ -361,25 +381,28 @@ function buildMeta(video: HTMLVideoElement, crop: CropRect): BodyFrameMeta {
 
 async function frameVideoElement(
   video: HTMLVideoElement,
-  onProgress?: (message: string) => void,
+  onProgress?: FramingProgressCallback,
   fileStem = "swing",
 ): Promise<FramedVideoResult> {
-  onProgress?.("Finding your body…");
-  const { crop } = await detectBodyCrop(video);
-  onProgress?.("Cutting sky, floor & sides…");
+  report(onProgress, "Finding your body…", 6);
+  const { crop } = await detectBodyCrop(video, onProgress);
+  report(onProgress, "Cutting sky, floor & sides…", 32);
   const blob = await renderBodyFocusedVideo(video, crop, onProgress);
+  report(onProgress, "Body crop complete", 94);
   const file = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });
   return { file, meta: buildMeta(video, crop) };
 }
 
 export async function autoFrameSwingVideo(
   file: File,
-  onProgress?: (message: string) => void,
+  onProgress?: FramingProgressCallback,
 ): Promise<FramedVideoResult> {
+  report(onProgress, "Reading video…", 2);
   if (!file.type.startsWith("video/") || typeof MediaRecorder === "undefined") {
     const { video, url } = await loadVideoFromFile(file);
     try {
-      const { crop } = await detectBodyCrop(video);
+      const { crop } = await detectBodyCrop(video, onProgress);
+      report(onProgress, "Done", 100);
       return { file, meta: buildMeta(video, crop) };
     } finally {
       URL.revokeObjectURL(url);
@@ -389,9 +412,12 @@ export async function autoFrameSwingVideo(
   const { video, url } = await loadVideoFromFile(file);
   try {
     const stem = file.name.replace(/\.[^.]+$/, "") || "swing";
-    return await frameVideoElement(video, onProgress, stem);
+    const result = await frameVideoElement(video, onProgress, stem);
+    report(onProgress, "Done", 100);
+    return result;
   } catch {
-    const { crop } = await detectBodyCrop(video);
+    const { crop } = await detectBodyCrop(video, onProgress);
+    report(onProgress, "Done", 100);
     return { file, meta: buildMeta(video, crop) };
   } finally {
     URL.revokeObjectURL(url);

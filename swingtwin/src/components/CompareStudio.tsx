@@ -14,6 +14,14 @@ import { SideBySide } from "./SideBySide";
 import { Swing3D } from "./Swing3D";
 import { PlayerPicker } from "./PlayerPicker";
 import { PhaseOverlay } from "./PhaseOverlay";
+import { UploadProgressBar } from "./UploadProgressBar";
+
+type UploadSlot = "face" | "dtl" | "tour";
+type UploadProgressState = {
+  slot: UploadSlot;
+  label: string;
+  percent: number;
+};
 
 async function loadVideo(src: string) {
   const video = document.createElement("video");
@@ -57,6 +65,9 @@ export function CompareStudio() {
   const [usingReference, setUsingReference] = useState(false);
   const [userFrameMeta, setUserFrameMeta] = useState<BodyFrameMeta | undefined>();
   const [tourDisplayStyle, setTourDisplayStyle] = useState<VideoDisplayStyle | undefined>();
+  const [uploadProgress, setUploadProgress] = useState<UploadProgressState | null>(
+    null,
+  );
 
   const userFaceInputRef = useRef<HTMLInputElement>(null);
   const userDtlInputRef = useRef<HTMLInputElement>(null);
@@ -184,24 +195,38 @@ export function CompareStudio() {
     void captureReference();
   }, [tourFile, captureReference]);
 
-  async function captureUserForSync(file: File) {
-    setSyncBusy("Finding your takeaway → impact…");
+  function trackUpload(slot: UploadSlot) {
+    return (progress: { label: string; percent: number }) => {
+      setUploadProgress({
+        slot,
+        label: progress.label,
+        percent: progress.percent,
+      });
+    };
+  }
+
+  async function captureUserForSync(file: File, slot: UploadSlot = "face") {
+    setUploadProgress({
+      slot,
+      label: "Finding takeaway → impact…",
+      percent: 96,
+    });
     try {
       const { video } = await fileToVideo(file);
       const cap = await captureView(video, "faceOn", file.name, { handedness });
       setLiveUserSync(detectSwingSync(cap.samples, cap.duration));
       return cap;
     } finally {
-      setSyncBusy(null);
+      /* progress cleared by caller */
     }
   }
 
-  async function prepareUserClip(file: File) {
-    setSyncBusy("Tight crop — body only…");
+  async function prepareUserClip(file: File, slot: UploadSlot) {
+    setUploadProgress({ slot, label: "Starting upload…", percent: 0 });
     try {
-      return await autoFrameSwingVideo(file, setSyncBusy);
+      return await autoFrameSwingVideo(file, trackUpload(slot));
     } finally {
-      setSyncBusy(null);
+      /* cleared by caller */
     }
   }
 
@@ -213,29 +238,48 @@ export function CompareStudio() {
   }
 
   async function applyUserFace(file: File) {
-    const { file: f, meta } = await prepareUserClip(file);
-    setUserFrameMeta(meta);
-    setMyFace(f);
-    const url = URL.createObjectURL(f);
-    setUserUrl((prev) => {
-      if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
-      return url;
-    });
-    setUserFileName(f.name);
-    await saveClip("user", f);
-    await captureUserForSync(f);
-    await refreshTourDisplay();
+    try {
+      const { file: f, meta } = await prepareUserClip(file, "face");
+      setUploadProgress({ slot: "face", label: "Saving clip…", percent: 95 });
+      setUserFrameMeta(meta);
+      setMyFace(f);
+      const url = URL.createObjectURL(f);
+      setUserUrl((prev) => {
+        if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
+        return url;
+      });
+      setUserFileName(f.name);
+      await saveClip("user", f);
+      await captureUserForSync(f, "face");
+      setUploadProgress({ slot: "face", label: "Matching Rory scale…", percent: 98 });
+      await refreshTourDisplay();
+      setUploadProgress({ slot: "face", label: "Upload complete", percent: 100 });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Upload failed.");
+      setUploadProgress(null);
+    } finally {
+      window.setTimeout(() => setUploadProgress(null), 700);
+    }
   }
 
   async function applyUserDtl(file: File) {
-    const { file: f } = await prepareUserClip(file);
-    setMyDtl(f);
+    try {
+      const { file: f } = await prepareUserClip(file, "dtl");
+      setMyDtl(f);
+      setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Upload failed.");
+      setUploadProgress(null);
+    } finally {
+      window.setTimeout(() => setUploadProgress(null), 700);
+    }
   }
 
   async function applyTourUpload(file: File) {
-    setSyncBusy("Framing tour clip…");
     try {
-      const { file: f } = await autoFrameSwingVideo(file, setSyncBusy);
+      setUploadProgress({ slot: "tour", label: "Starting upload…", percent: 0 });
+      const { file: f } = await autoFrameSwingVideo(file, trackUpload("tour"));
+      setUploadProgress({ slot: "tour", label: "Saving clip…", percent: 95 });
       setTourFile(f);
       const url = URL.createObjectURL(f);
       tourRevokeRef.current?.();
@@ -249,6 +293,7 @@ export function CompareStudio() {
       setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 50%" });
       setRefTourCapture(undefined);
       await saveClip("tour", f);
+      setUploadProgress({ slot: "tour", label: "Reading tour clip…", percent: 97 });
       const { video } = await fileToVideo(f);
       const cap = await captureView(video, "faceOn", f.name, {
         handedness,
@@ -256,8 +301,12 @@ export function CompareStudio() {
       });
       setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
       setRefTourCapture(cap);
+      setUploadProgress({ slot: "tour", label: "Upload complete", percent: 100 });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Upload failed.");
+      setUploadProgress(null);
     } finally {
-      setSyncBusy(null);
+      window.setTimeout(() => setUploadProgress(null), 700);
     }
   }
 
@@ -415,7 +464,9 @@ export function CompareStudio() {
       <PlayerPicker value={pro.id} onChange={setPreferredPro} />
 
       <div className="twin-grid3">
-        <label className="twin-drop">
+        <label
+          className={`twin-drop${uploadProgress?.slot === "face" ? " is-uploading" : ""}`}
+        >
           <span>Left — your swing (face-on)</span>
           <strong>{myFace?.name || userFileName || "Choose video"}</strong>
           <em>Body-only crop · sky/floor/sides removed</em>
@@ -436,13 +487,16 @@ export function CompareStudio() {
             ref={userFaceInputRef}
             type="file"
             accept="video/*"
+            disabled={Boolean(uploadProgress)}
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
               if (f) void applyUserFace(f);
             }}
           />
         </label>
-        <label className="twin-drop">
+        <label
+          className={`twin-drop${uploadProgress?.slot === "dtl" ? " is-uploading" : ""}`}
+        >
           <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
           <em>Down the line · auto crop · unlocks 3D</em>
@@ -463,13 +517,16 @@ export function CompareStudio() {
             ref={userDtlInputRef}
             type="file"
             accept="video/*"
+            disabled={Boolean(uploadProgress)}
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
               if (f) void applyUserDtl(f);
             }}
           />
         </label>
-        <label className="twin-drop twin-drop--tour">
+        <label
+          className={`twin-drop twin-drop--tour${uploadProgress?.slot === "tour" ? " is-uploading" : ""}`}
+        >
           <span>Right — override Rory clip (optional)</span>
           <strong>
             {tourFile
@@ -496,6 +553,7 @@ export function CompareStudio() {
             ref={tourInputRef}
             type="file"
             accept="video/*"
+            disabled={Boolean(uploadProgress)}
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
               if (f) void applyTourUpload(f);
@@ -503,6 +561,14 @@ export function CompareStudio() {
           />
         </label>
       </div>
+
+      {uploadProgress ? (
+        <UploadProgressBar
+          slot={uploadProgress.slot}
+          label={uploadProgress.label}
+          percent={uploadProgress.percent}
+        />
+      ) : null}
 
       <div className="twin-toolbar">
         <label>
