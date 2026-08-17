@@ -57,8 +57,9 @@ export async function registerAction(_prev: { error: string } | null, formData: 
   });
 
   if (!user) return formError("이미 가입된 이메일입니다.");
+  const next = String(formData.get("next") || "/cart");
   await setSession(user);
-  redirect("/cart");
+  redirect(next.startsWith("/") && !next.startsWith("//") ? next : "/cart");
 }
 
 export async function loginAction(_prev: { error: string } | null, formData: FormData) {

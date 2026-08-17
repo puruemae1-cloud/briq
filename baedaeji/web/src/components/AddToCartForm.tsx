@@ -33,7 +33,12 @@ export function AddToCartForm({ presetUrl = "" }: { presetUrl?: string }) {
           name="url"
           required
           defaultValue={presetUrl}
-          placeholder="https://www.selfridges.com/..."
+          placeholder="복사한 상품 링크를 여기에 붙여 넣으세요"
+          autoCapitalize="off"
+          autoCorrect="off"
+          spellCheck={false}
+          inputMode="url"
+          className="min-h-[52px]"
           onBlur={(e) => onUrlBlur(e.target.value)}
         />
         <em className="text-[0.8rem] not-italic text-[var(--muted)]">

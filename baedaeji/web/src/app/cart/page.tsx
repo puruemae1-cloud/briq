@@ -14,8 +14,11 @@ export default async function CartPage({
   searchParams: Promise<{ url?: string }>;
 }) {
   const me = await getCurrentUser();
-  if (!me) redirect("/login?next=/cart");
   const { url } = await searchParams;
+  if (!me) {
+    const next = url ? `/cart?url=${encodeURIComponent(url)}` : "/cart";
+    redirect(`/login?next=${encodeURIComponent(next)}`);
+  }
   const db = await readOnlyDb();
   const items = db.carts[me.id] ?? [];
 
@@ -23,8 +26,8 @@ export default async function CartPage({
     <div className="page-wrap py-12">
       <h1 className="display text-4xl">장바구니</h1>
       <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-        영국 몰에서 상품 페이지를 연 다음, 주소창 URL을 붙여 넣으세요. 장바구니를
-        해외몰과 공유하지 않습니다.
+        <strong>상품 URL</strong> 칸에 복사한 링크를 붙여 넣으세요. 사이즈·수량을 적고
+        「장바구니에 담기」를 누르면 됩니다.
       </p>
 
       <div className="mt-8">

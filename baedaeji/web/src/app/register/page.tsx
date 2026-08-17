@@ -1,16 +1,24 @@
+import Link from "next/link";
 import { AuthForm } from "@/components/AuthForm";
 import { registerAction } from "@/app/actions/auth";
 
-export default function RegisterPage() {
+export default async function RegisterPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>;
+}) {
+  const { next } = await searchParams;
+  const dest = next || "/cart";
   return (
     <div className="page-wrap py-14">
       <h1 className="display mb-2 text-center text-4xl">회원가입</h1>
       <p className="mb-8 text-center text-sm text-[var(--muted)]">
-        가입 후 영국 스토어 상품 URL을 장바구니에 담을 수 있습니다.
+        가입 후 복사한 상품 URL을 장바구니에 붙여 넣을 수 있습니다.
       </p>
       <AuthForm
         action={registerAction}
         submitLabel="가입하고 장바구니로"
+        next={dest}
         extra={
           <>
             <label className="field">
@@ -40,6 +48,12 @@ export default function RegisterPage() {
           </>
         }
       />
+      <p className="mt-6 text-center text-sm text-[var(--muted)]">
+        이미 계정이 있으면{" "}
+        <Link className="underline" href={`/login?next=${encodeURIComponent(dest)}`}>
+          로그인
+        </Link>
+      </p>
     </div>
   );
 }

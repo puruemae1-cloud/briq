@@ -1,10 +1,10 @@
 import Link from "next/link";
+import { PasteUrlBar } from "@/components/PasteUrlBar";
 import { StoreBannerGrid } from "@/components/StoreBannerGrid";
-import { getCurrentUser } from "@/lib/auth";
 import { getGbpKrw } from "@/lib/fx";
 
 export default async function HomePage() {
-  const [user, fx] = await Promise.all([getCurrentUser(), getGbpKrw()]);
+  const fx = await getGbpKrw();
 
   return (
     <>
@@ -24,11 +24,11 @@ export default async function HomePage() {
               오늘 환율로 견적을 내고 원화로 결제하면 영국에서 대신 사서 보냅니다.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/#stores" className="btn btn-gold">
-                스토어 보기
+              <Link href="/#paste" className="btn btn-gold">
+                URL 붙여넣기
               </Link>
-              <Link href={user ? "/cart" : "/register"} className="btn btn-ghost border-[#f7f4ee]/30 text-[#f7f4ee]">
-                {user ? "상품 URL 담기" : "회원가입"}
+              <Link href="/#stores" className="btn btn-ghost border-[#f7f4ee]/30 text-[#f7f4ee]">
+                스토어 보기
               </Link>
             </div>
           </div>
@@ -41,9 +41,28 @@ export default async function HomePage() {
             <ol className="mt-6 grid gap-3 text-sm leading-6">
               <li>1. 배너에서 영국 몰을 연다</li>
               <li>2. 상품 페이지 URL을 복사한다</li>
-              <li>3. 장바구니에 붙여 넣고 견적을 받는다</li>
+              <li>3. 아래 「복사한 상품 링크는 여기에」칸에 붙여 넣는다</li>
               <li>4. 원화 결제 후 영국에서 구매·배송</li>
             </ol>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="paste"
+        className="scroll-mt-24 border-y border-[var(--line)] bg-[var(--bg-deep)] py-10"
+      >
+        <div className="page-wrap">
+          <p className="text-[0.72rem] tracking-[0.2em] uppercase text-[var(--muted)]">
+            Paste product URL
+          </p>
+          <h2 className="display mt-1 text-3xl">복사한 상품 링크는 여기에</h2>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
+            영국 몰 주소창에서 복사한 뒤, 아래 칸을 길게 눌러 붙여넣기 하세요. 로그인되어
+            있지 않으면 로그인 화면으로 이동합니다.
+          </p>
+          <div className="mt-5 max-w-3xl">
+            <PasteUrlBar />
           </div>
         </div>
       </section>
