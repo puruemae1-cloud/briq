@@ -9,7 +9,8 @@
     "lint": "next lint",
     "mobile": "npm --prefix mobile start",
     "mobile:ios": "npm --prefix mobile run ios",
-    "mobile:android": "npm --prefix mobile run android"
+    "mobile:android": "npm --prefix mobile run android",
+    "swingtwin": "npm --prefix swingtwin run dev"
   },
   "dependencies": {
     "lucide-react": "^1.26.0",

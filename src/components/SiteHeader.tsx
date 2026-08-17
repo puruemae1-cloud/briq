@@ -144,9 +144,6 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
             <Link href="/shop" className="site-nav__link">
               Shop
             </Link>
-            <Link href="/swing" className="site-nav__link">
-              Swing
-            </Link>
 
             {navCategories.map((c) =>
               c.children?.length ? (
@@ -197,9 +194,6 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
           <nav className="mobile-drawer__nav">
             <a href="/shop" className="mobile-drawer__top-link">
               Shop
-            </a>
-            <a href="/swing" className="mobile-drawer__top-link">
-              Swing 코칭
             </a>
             {navCategories.map((c) =>
               c.children?.length ? (

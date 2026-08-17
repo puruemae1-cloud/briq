@@ -75,18 +75,6 @@ export default async function sitemap({
         changeFrequency: "yearly",
         priority: 0.2,
       },
-      {
-        url: `${site}/swing`,
-        lastModified: now,
-        changeFrequency: "weekly",
-        priority: 0.7,
-      },
-      {
-        url: `${site}/swing/analyze`,
-        lastModified: now,
-        changeFrequency: "weekly",
-        priority: 0.65,
-      },
     ];
 
     for (const cat of navCategories) {
