@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { BookmarkletCard } from "@/components/BookmarkletCard";
+import { HomePasteQuote } from "@/components/HomePasteQuote";
 import { HomeScreenHint } from "@/components/HomeScreenHint";
-import { PasteUrlBar } from "@/components/PasteUrlBar";
 import { StoreBannerGrid } from "@/components/StoreBannerGrid";
-import { getGbpKrw } from "@/lib/fx";
+import { formatKrw, getGbpKrw, quoteKrw } from "@/lib/fx";
+import { FEE } from "@/lib/types";
 
 export default async function HomePage() {
   const fx = await getGbpKrw();
+  const sample = quoteKrw({ goodsGbp: 10, gbpKrw: fx.gbpKrw, itemCount: 1 });
 
   return (
     <>
@@ -36,10 +38,16 @@ export default async function HomePage() {
           </div>
           <div className="card bg-[#f7f4ee] p-6 text-[var(--ink)]">
             <p className="text-[0.72rem] tracking-[0.18em] uppercase text-[var(--muted)]">
-              Today · GBP
+              Today · GBP → KRW
             </p>
-            <p className="display mt-2 text-4xl">{fx.gbpKrw.toLocaleString("en-US")}</p>
-            <p className="mt-1 text-sm text-[var(--muted)]">원 · {fx.source}</p>
+            <p className="display mt-2 text-4xl">£1 = {formatKrw(fx.gbpKrw)}</p>
+            <p className="mt-1 text-sm text-[var(--muted)]">
+              {fx.source} · 환전 마진 {Math.round(FEE.fxMargin * 100)}% · 대행{" "}
+              {Math.round(FEE.agencyRate * 100)}%
+            </p>
+            <p className="mt-3 text-sm leading-6">
+              예: £10 상품 1개 → 약 {formatKrw(sample.totalKrw)} (배송·수수료 포함)
+            </p>
             <ol className="mt-6 grid gap-3 text-sm leading-6">
               <li>1. 배너를 누르면 배대지 안내 화면이 남는다</li>
               <li>2. ASOS는 길게 눌러 새 탭으로 연다</li>
@@ -60,11 +68,11 @@ export default async function HomePage() {
           </p>
           <h2 className="display mt-1 text-3xl">복사한 이름이나 링크는 여기에</h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-            ASOS 상품 이름을 그대로 붙여넣어도 됩니다. 링크가 있으면 링크를 넣으세요.
-            가격은 스토어에서 찾아 넣으며, 고객이 GBP를 직접 쓸 수는 없습니다.
+            ASOS 상품 이름을 그대로 붙여넣어도 됩니다. £ 가격을 찾아 오늘 환율로 원화
+            견적을 바로 보여 줍니다.
           </p>
           <div className="mt-5 max-w-3xl">
-            <PasteUrlBar />
+            <HomePasteQuote gbpKrw={fx.gbpKrw} fxSource={fx.source} />
           </div>
         </div>
       </section>
