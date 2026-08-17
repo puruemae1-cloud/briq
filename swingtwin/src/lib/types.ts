@@ -104,6 +104,14 @@ export type MetricGap = {
   feel: string;
 };
 
+export type SwingSyncMarkers = {
+  /** Arms start up — start of side-by-side playback */
+  takeawayT: number;
+  topT: number;
+  impactT: number;
+  endT: number;
+};
+
 export type AnalysisResult = {
   id: string;
   createdAt: string;
@@ -123,6 +131,8 @@ export type AnalysisResult = {
   coachingFocus: MetricKey;
   userPeakT: number;
   tourPeakT: number;
+  userSync: SwingSyncMarkers;
+  tourSync: SwingSyncMarkers;
 };
 
 export type SwingSession = {

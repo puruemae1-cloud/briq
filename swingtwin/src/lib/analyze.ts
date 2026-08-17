@@ -19,6 +19,7 @@ import {
 import { gapCopy, phaseNote } from "./copy";
 import { AMATEUR_STYLE, FINE_PHASES, TOUR_STYLE } from "./anatomy";
 import { buildPose, comparePoses } from "./pose";
+import { detectSwingSync, modelSyncFromUser } from "./swing-sync";
 
 function peakIndex(samples: MotionSample[]) {
   let max = -1;
@@ -182,6 +183,18 @@ export function analyzePair(opts: {
     note: phaseNote(pro, phase, hints[phase]),
   }));
 
+  const userFace = opts.userViews.find((v) => v.view === "faceOn");
+  const userSamples = userFace?.samples ?? userAll;
+  const userDur = userFace?.duration ?? userSamples[userSamples.length - 1]?.t ?? 2;
+  const userSync = detectSwingSync(userSamples, userDur);
+
+  const tourFace = opts.tourViews?.find((v) => v.view === "faceOn");
+  const tourSamples = tourFace?.samples ?? tourAll;
+  const tourDur = tourFace?.duration ?? tourSamples[tourSamples.length - 1]?.t ?? userDur;
+  const tourSync = tourFace
+    ? detectSwingSync(tourSamples, tourDur)
+    : modelSyncFromUser(userSync);
+
   const allFine = FINE_PHASES.map((phase) => {
     const userPose = buildPose({
       style: AMATEUR_STYLE,
@@ -224,5 +237,7 @@ export function analyzePair(opts: {
     coachingFocus: primaryFocus(userMetrics, proMetrics),
     userPeakT: peakTime(userAll),
     tourPeakT: peakTime(tourAll),
+    userSync,
+    tourSync,
   };
 }

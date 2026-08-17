@@ -5,6 +5,8 @@ import { applyHandedness, captureView, fuseSkeletons, sampleCompareSet } from "@
 import { TOUR_STYLE } from "@/lib/anatomy";
 import { defaultProId, getPro } from "@/lib/pros";
 import { useTwinStore } from "@/lib/store";
+import { saveClip, clipObjectUrl } from "@/lib/video-store";
+import { modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
 import { Swing3D } from "./Swing3D";
@@ -34,6 +36,8 @@ export function CompareStudio() {
   const [error, setError] = useState<string | null>(null);
   const [phaseT, setPhaseT] = useState<number | undefined>();
   const [tourFrames, setTourFrames] = useState<SkeletonFrame[] | undefined>();
+  const [userFileName, setUserFileName] = useState<string>();
+  const [tourFileName, setTourFileName] = useState<string>();
 
   const tier = useTwinStore((s) => s.tier);
   const trialUsed = useTwinStore((s) => s.trialUsed);
@@ -48,6 +52,11 @@ export function CompareStudio() {
 
   const pro = getPro(preferredProId) ?? getPro(defaultProId())!;
   const trialBlocked = tier === "trial" && trialUsed;
+  const userSync =
+    result?.userSync ?? (skeleton.length ? syncFromSkeleton(skeleton) : undefined);
+  const tourSync =
+    result?.tourSync ??
+    (userSync ? modelSyncFromUser(userSync) : undefined);
 
   useEffect(() => {
     return () => {
@@ -60,6 +69,30 @@ export function CompareStudio() {
       if (tourUrl) URL.revokeObjectURL(tourUrl);
     };
   }, [tourUrl]);
+
+  useEffect(() => {
+    let cancelled = false;
+    void (async () => {
+      const user = await clipObjectUrl("user");
+      const tour = await clipObjectUrl("tour");
+      if (cancelled) {
+        user?.url && URL.revokeObjectURL(user.url);
+        tour?.url && URL.revokeObjectURL(tour.url);
+        return;
+      }
+      if (user) {
+        setUserUrl(user.url);
+        setUserFileName(user.name);
+      }
+      if (tour) {
+        setTourUrl(tour.url);
+        setTourFileName(tour.name);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   function commit(userViews: ViewCapture[], tourViews?: ViewCapture[]) {
     const user = applyHandedness(userViews, handedness);
@@ -101,9 +134,11 @@ export function CompareStudio() {
       const userViews: ViewCapture[] = [];
       if (myFace) {
         setBusy("Reading your face-on clip…");
+        await saveClip("user", myFace);
         const { video, url } = await fileToVideo(myFace);
         urls.push(url);
         setUserUrl(url);
+        setUserFileName(myFace.name);
         userViews.push(
           await captureView(video, "faceOn", myFace.name, { handedness }),
         );
@@ -120,9 +155,11 @@ export function CompareStudio() {
       let tourViews: ViewCapture[] | undefined;
       if (tourFile) {
         setBusy("Reading the tour player clip…");
+        await saveClip("tour", tourFile);
         const { video, url } = await fileToVideo(tourFile);
         urls.push(url);
         setTourUrl(url);
+        setTourFileName(tourFile.name);
         tourViews = [
           await captureView(video, "faceOn", tourFile.name, {
             handedness,
@@ -180,7 +217,19 @@ export function CompareStudio() {
           <input
             type="file"
             accept="video/*"
-            onChange={(e) => setMyFace(e.target.files?.[0] ?? null)}
+            onChange={(e) => {
+              const f = e.target.files?.[0] ?? null;
+              setMyFace(f);
+              if (f) {
+                const url = URL.createObjectURL(f);
+                setUserUrl((prev) => {
+                  if (prev) URL.revokeObjectURL(prev);
+                  return url;
+                });
+                setUserFileName(f.name);
+                void saveClip("user", f);
+              }
+            }}
           />
         </label>
         <label className="twin-drop">
@@ -200,7 +249,19 @@ export function CompareStudio() {
           <input
             type="file"
             accept="video/*"
-            onChange={(e) => setTourFile(e.target.files?.[0] ?? null)}
+            onChange={(e) => {
+              const f = e.target.files?.[0] ?? null;
+              setTourFile(f);
+              if (f) {
+                const url = URL.createObjectURL(f);
+                setTourUrl((prev) => {
+                  if (prev) URL.revokeObjectURL(prev);
+                  return url;
+                });
+                setTourFileName(f.name);
+                void saveClip("tour", f);
+              }
+            }}
           />
         </label>
       </div>
@@ -247,12 +308,21 @@ export function CompareStudio() {
       <SideBySide
         userUrl={userUrl}
         tourUrl={tourUrl}
-        userLabel={myFace?.name || myDtl?.name || "Your swing"}
-        tourLabel={tourFile?.name || pro.name}
-        userPeakT={result?.userPeakT}
-        tourPeakT={result?.tourPeakT}
+        userLabel={myFace?.name || userFileName || "Your swing"}
+        tourLabel={tourFile?.name || tourFileName || pro.name}
+        userSync={userSync}
+        tourSync={tourSync}
         phaseT={phaseT}
+        pro={pro}
+        handedness={handedness}
       />
+
+      {userUrl && !userSync ? (
+        <p className="twin-note">
+          Press <strong>Trial compare</strong> to lock takeaway → impact sync with{" "}
+          {pro.name}.
+        </p>
+      ) : null}
 
       {result && skeleton.length ? (
         <PhaseOverlay

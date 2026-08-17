@@ -1,13 +1,21 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import type { Handedness, ProProfile, SwingSyncMarkers } from "@/lib/types";
+import {
+  mapSyncedTourTime,
+  swingPhaseNorm,
+} from "@/lib/swing-sync";
+import { ProSwingCanvas } from "./ProSwingCanvas";
 
 type Props = {
   userUrl?: string;
   tourUrl?: string;
   userLabel: string;
   tourLabel: string;
-  userPeakT?: number;
-  tourPeakT?: number;
+  userSync?: SwingSyncMarkers;
+  tourSync?: SwingSyncMarkers;
   phaseT?: number;
+  pro?: ProProfile;
+  handedness?: Handedness;
 };
 
 export function SideBySide({
@@ -15,68 +23,138 @@ export function SideBySide({
   tourUrl,
   userLabel,
   tourLabel,
-  userPeakT = 0,
-  tourPeakT = 0,
+  userSync,
+  tourSync,
   phaseT,
+  pro,
+  handedness = "right",
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [sync, setSync] = useState(true);
+  const [phaseNorm, setPhaseNorm] = useState(0);
+  const rafRef = useRef(0);
+
+  const hasSync = Boolean(userSync && tourSync);
+  const useModel = !tourUrl && Boolean(pro && userSync && tourSync);
+
+  const seekUser = useCallback(
+    (t: number) => {
+      const el = userRef.current;
+      if (!el || !Number.isFinite(el.duration)) return;
+      el.currentTime = Math.max(0, Math.min(el.duration * 0.99, t));
+    },
+    [],
+  );
+
+  const seekTour = useCallback(
+    (userTime: number) => {
+      if (!userSync || !tourSync) return;
+      const mapped = mapSyncedTourTime(userTime, userSync, tourSync);
+      const el = tourRef.current;
+      if (el && Number.isFinite(el.duration)) {
+        el.currentTime = Math.max(0, Math.min(el.duration * 0.99, mapped));
+      }
+      setPhaseNorm(swingPhaseNorm(userTime, userSync));
+    },
+    [userSync, tourSync],
+  );
 
   useEffect(() => {
-    if (phaseT == null) return;
+    if (phaseT == null || !userSync) return;
     const user = userRef.current;
-    const tour = tourRef.current;
-    const seek = (el: HTMLVideoElement | null, peak: number) => {
-      if (!el || !el.duration) return;
-      const t = Math.max(0, Math.min(el.duration * 0.98, phaseT * el.duration));
-      if (Math.abs(el.currentTime - t) > 0.05) el.currentTime = t;
-      void peak;
+    if (!user?.duration) return;
+    const t = userSync.takeawayT + phaseT * (userSync.impactT - userSync.takeawayT);
+    seekUser(t);
+    seekTour(t);
+  }, [phaseT, userSync, tourSync, userUrl, tourUrl, seekUser, seekTour]);
+
+  useEffect(() => {
+    if (!userUrl || !userSync) return;
+    const user = userRef.current;
+    if (!user) return;
+    const onMeta = () => {
+      seekUser(userSync.takeawayT);
+      seekTour(userSync.takeawayT);
     };
-    seek(user, userPeakT);
-    seek(tour, tourPeakT);
-  }, [phaseT, userPeakT, tourPeakT, userUrl, tourUrl]);
+    user.addEventListener("loadedmetadata", onMeta);
+    if (user.readyState >= 1) onMeta();
+    return () => user.removeEventListener("loadedmetadata", onMeta);
+  }, [userUrl, userSync, tourSync, seekUser, seekTour]);
 
   useEffect(() => {
     const user = userRef.current;
     const tour = tourRef.current;
-    if (!user || !tour || !sync) return;
+    if (!user || !sync || !hasSync) return;
 
     const onTime = () => {
-      const mapped = user.currentTime - userPeakT + tourPeakT;
-      if (!Number.isFinite(mapped)) return;
-      const target = Math.max(0, Math.min(tour.duration || mapped, mapped));
-      if (Math.abs(tour.currentTime - target) > 0.12) {
-        tour.currentTime = target;
+      const t = user.currentTime;
+      if (userSync && t >= userSync.endT && playing) {
+        user.pause();
+        tour?.pause();
+        setPlaying(false);
+        return;
       }
+      if (tourUrl && tour) {
+        const mapped = mapSyncedTourTime(t, userSync!, tourSync!);
+        if (Math.abs(tour.currentTime - mapped) > 0.06) {
+          tour.currentTime = mapped;
+        }
+      }
+      setPhaseNorm(swingPhaseNorm(t, userSync!));
     };
     user.addEventListener("timeupdate", onTime);
     return () => user.removeEventListener("timeupdate", onTime);
-  }, [sync, userPeakT, tourPeakT, userUrl, tourUrl]);
+  }, [sync, hasSync, userSync, tourSync, tourUrl, playing]);
+
+  useEffect(() => {
+    if (!playing || !userSync) return;
+    const tick = () => {
+      const user = userRef.current;
+      if (user && !user.paused) {
+        setPhaseNorm(swingPhaseNorm(user.currentTime, userSync));
+      }
+      rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [playing, userSync]);
 
   async function toggle() {
     const user = userRef.current;
     const tour = tourRef.current;
-    if (!user) return;
+    if (!user || !userSync) return;
+
     if (playing) {
       user.pause();
       tour?.pause();
       setPlaying(false);
       return;
     }
+
     try {
-      if (tour && sync) {
-        tour.currentTime = Math.max(0, user.currentTime - userPeakT + tourPeakT);
-        await Promise.all([user.play(), tour.play()]);
-      } else {
-        await user.play();
-        await tour?.play();
+      seekUser(userSync.takeawayT);
+      if (tourUrl && tour && tourSync) {
+        tour.currentTime = mapSyncedTourTime(userSync.takeawayT, userSync, tourSync);
       }
+      setPhaseNorm(0);
+      await user.play();
+      if (tourUrl && tour) await tour.play();
       setPlaying(true);
     } catch {
       setPlaying(false);
     }
+  }
+
+  function replaySegment() {
+    if (!userSync) return;
+    userRef.current?.pause();
+    tourRef.current?.pause();
+    setPlaying(false);
+    seekUser(userSync.takeawayT);
+    seekTour(userSync.takeawayT);
+    setPhaseNorm(0);
   }
 
   return (
@@ -92,18 +170,40 @@ export function SideBySide({
           <p>{userLabel}</p>
         </figure>
         <figure>
-          <figcaption>Tour player</figcaption>
+          <figcaption>{tourUrl ? "Tour clip" : pro?.name ?? "Tour player"}</figcaption>
           {tourUrl ? (
             <video ref={tourRef} src={tourUrl} playsInline muted controls={false} />
+          ) : useModel && pro ? (
+            <ProSwingCanvas
+              pro={pro}
+              handedness={handedness}
+              phaseNorm={phaseNorm}
+              label={`${pro.name} · learned model`}
+            />
           ) : (
-            <div className="twin-compare__empty">Their clip</div>
+            <div className="twin-compare__empty">
+              {pro ? `${pro.name} model` : "Their clip"}
+            </div>
           )}
           <p>{tourLabel}</p>
         </figure>
       </div>
       <div className="twin-compare__bar">
-        <button type="button" className="twin-btn" onClick={() => void toggle()} disabled={!userUrl}>
-          {playing ? "Pause" : "Play both"}
+        <button
+          type="button"
+          className="twin-btn"
+          onClick={() => void toggle()}
+          disabled={!userUrl || !hasSync}
+        >
+          {playing ? "Pause" : "Play synced swing"}
+        </button>
+        <button
+          type="button"
+          className="twin-btn twin-btn--ghost"
+          onClick={replaySegment}
+          disabled={!userUrl || !hasSync}
+        >
+          Replay takeaway → impact
         </button>
         <label>
           <input
@@ -111,9 +211,16 @@ export function SideBySide({
             checked={sync}
             onChange={(e) => setSync(e.target.checked)}
           />
-          Sync to impact
+          Sync arms up → impact
         </label>
       </div>
+      {hasSync && userSync ? (
+        <p className="twin-note twin-compare__sync">
+          Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
+          {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
+          {tourUrl ? "" : " · Rory plays from the learned model until you upload his clip"}
+        </p>
+      ) : null}
     </div>
   );
 }
