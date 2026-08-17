@@ -4,68 +4,58 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth";
 import { updateDb } from "@/lib/db";
-import { previewProductUrl } from "@/lib/preview";
-import { resolveProductInput } from "@/lib/product-input";
+import { lookupProduct } from "@/lib/lookup";
 import type { CartItem } from "@/lib/types";
 
-export async function previewUrlAction(url: string) {
-  return previewProductUrl(url);
+export async function lookupProductAction(raw: string, storeId: string) {
+  return lookupProduct(raw, storeId);
 }
 
 export async function addCartItemAction(_prev: { error: string } | null, formData: FormData) {
   const me = await getCurrentUser();
   if (!me) return { error: "로그인이 필요합니다." };
 
-  const url = String(formData.get("url") || "").trim();
+  const raw = String(formData.get("url") || "").trim();
   const titleIn = String(formData.get("title") || "").trim();
   const storeId = String(formData.get("storeId") || "asos").trim();
   const size = String(formData.get("size") || "").trim();
   const color = String(formData.get("color") || "").trim();
   const memo = String(formData.get("memo") || "").trim();
   const qty = Math.max(1, Number(formData.get("qty") || 1) || 1);
-  const gbpRaw = String(formData.get("gbpPrice") || "").trim();
-  const gbpPrice = gbpRaw ? Number(gbpRaw) : null;
 
-  let resolved;
+  let found;
   try {
-    resolved = resolveProductInput(url, storeId);
+    found = await lookupProduct(raw, storeId);
   } catch (err) {
     return { error: err instanceof Error ? err.message : "상품을 인식하지 못했습니다." };
   }
-  if (gbpPrice !== null && (!Number.isFinite(gbpPrice) || gbpPrice <= 0)) {
-    return { error: "GBP 가격을 숫자로 입력해 주세요. 모르면 비워 두세요." };
-  }
 
-  let title = titleIn || resolved.title;
-  let image = "";
-  if (resolved.kind === "url") {
-    try {
-      const preview = await previewProductUrl(resolved.url);
-      title = titleIn || preview.title;
-      image = preview.image;
-    } catch (err) {
-      return { error: err instanceof Error ? err.message : "링크를 읽지 못했습니다." };
-    }
-  }
-  if (!title) title = resolved.store.nameEn;
+  const title = titleIn || found.title || found.storeName;
+  const notes = [
+    memo,
+    found.source === "search" ? `${found.storeName}에서 상품 이름으로 검색` : "",
+    found.gbpPrice
+      ? found.priceSource === "search"
+        ? `표시가 ${found.gbpPrice.toFixed(2)} GBP (검색 결과)`
+        : `표시가 ${found.gbpPrice.toFixed(2)} GBP`
+      : "스토어 가격을 못 찾아 운영자 확인",
+  ].filter(Boolean);
 
   const item: CartItem = {
     id: crypto.randomUUID(),
-    url: resolved.url,
-    storeId: resolved.store.id,
-    storeName: resolved.store.nameEn,
+    url: found.url,
+    storeId: found.storeId,
+    storeName: found.storeName,
     title,
-    image,
+    image: found.image,
     size,
     color,
     qty,
-    gbpPrice,
-    memo:
-      resolved.kind === "search"
-        ? [memo, `${resolved.store.nameEn}에서 상품 이름으로 검색`].filter(Boolean).join(" · ")
-        : memo,
+    gbpPrice: found.gbpPrice,
+    memo: notes.join(" · "),
     addedAt: new Date().toISOString(),
-    source: resolved.kind,
+    source: found.source,
+    priceSource: found.priceSource,
   };
 
   await updateDb((db) => {

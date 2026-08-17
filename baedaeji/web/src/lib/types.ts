@@ -28,6 +28,7 @@ export type CartItem = {
   memo: string;
   addedAt: string;
   source?: "url" | "search";
+  priceSource?: "pdp" | "search" | null;
 };
 
 export type OrderStatus =

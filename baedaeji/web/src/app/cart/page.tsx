@@ -30,8 +30,9 @@ export default async function CartPage({
     <div className="page-wrap py-12">
       <h1 className="display text-4xl">장바구니</h1>
       <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
-        ASOS에서 복사한 <strong>상품 이름</strong>만 붙여넣어도 됩니다. 링크가 있으면
-        링크를 넣으세요. 사이즈·수량을 적고 「장바구니에 담기」를 누르면 됩니다.
+        ASOS에서 복사한 <strong>상품 이름</strong>이나 링크를 붙여넣으면 가격을 찾아
+        넣습니다. GBP는 고객이 바꿀 수 없습니다. 사이즈·수량만 적고 「장바구니에 담기」를
+        누르면 됩니다.
       </p>
 
       <div className="mt-8">

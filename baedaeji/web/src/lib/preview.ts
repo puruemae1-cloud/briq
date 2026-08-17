@@ -1,35 +1,11 @@
 import { isAllowedProductUrl, storeFromUrl } from "./stores";
-
-function meta(html: string, keys: string[]) {
-  for (const key of keys) {
-    const re = new RegExp(
-      `<meta[^>]+(?:property|name)=["']${key}["'][^>]+content=["']([^"']+)["']`,
-      "i",
-    );
-    const re2 = new RegExp(
-      `<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']${key}["']`,
-      "i",
-    );
-    const m = html.match(re) || html.match(re2);
-    if (m?.[1]) return decode(m[1]);
-  }
-  return "";
-}
-
-function decode(s: string) {
-  return s
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .trim();
-}
+import { extractGbpFromHtml, extractImageFromHtml, extractTitleFromHtml } from "./gbp";
 
 export type UrlPreview = {
   url: string;
   title: string;
   image: string;
+  gbpPrice: number | null;
   storeId: string;
   storeName: string;
 };
@@ -41,8 +17,16 @@ export async function previewProductUrl(raw: string): Promise<UrlPreview> {
   }
   const store = storeFromUrl(url)!;
   const titleFallback = store.nameEn;
+  const empty: UrlPreview = {
+    url,
+    title: titleFallback,
+    image: "",
+    gbpPrice: null,
+    storeId: store.id,
+    storeName: store.nameEn,
+  };
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 8000);
+  const timer = setTimeout(() => controller.abort(), 4500);
   try {
     const res = await fetch(url, {
       signal: controller.signal,
@@ -53,27 +37,17 @@ export async function previewProductUrl(raw: string): Promise<UrlPreview> {
         accept: "text/html,application/xhtml+xml",
       },
     });
-    const html = (await res.text()).slice(0, 250_000);
-    const title =
-      meta(html, ["og:title", "twitter:title"]) ||
-      html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1]?.trim() ||
-      titleFallback;
-    const image = meta(html, ["og:image", "twitter:image"]);
+    const html = (await res.text()).slice(0, 280_000);
     return {
       url,
-      title: decode(title).slice(0, 200),
-      image,
+      title: extractTitleFromHtml(html, titleFallback),
+      image: extractImageFromHtml(html),
+      gbpPrice: extractGbpFromHtml(html),
       storeId: store.id,
       storeName: store.nameEn,
     };
   } catch {
-    return {
-      url,
-      title: titleFallback,
-      image: "",
-      storeId: store.id,
-      storeName: store.nameEn,
-    };
+    return empty;
   } finally {
     clearTimeout(timer);
   }

@@ -61,8 +61,7 @@ export default async function HomePage() {
           <h2 className="display mt-1 text-3xl">복사한 이름이나 링크는 여기에</h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
             ASOS 상품 이름을 그대로 붙여넣어도 됩니다. 링크가 있으면 링크를 넣으세요.
-            아래 칸을 길게 눌러 붙여넣기 하세요. 로그인되어 있지 않으면 로그인 화면으로
-            이동합니다.
+            가격은 스토어에서 찾아 넣으며, 고객이 GBP를 직접 쓸 수는 없습니다.
           </p>
           <div className="mt-5 max-w-3xl">
             <PasteUrlBar />
