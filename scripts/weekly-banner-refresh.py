@@ -681,12 +681,11 @@ def main() -> int:
                 mobile_path=MOBILE_DIR / slot,
                 shop=kind == "shop",
                 kind=kind,
+                require_face=slot in CLOTHING_SLOTS,
             )
         except Exception as e:
-            # Landscape-enough source still cropped to a thin studio stripe —
-            # try remaining picks before giving up.
             recovered = False
-            if kind in {"look", "hero"} and "thin-studio" in str(e):
+            if kind in {"look", "hero"}:
                 for pid2, img2 in picks[:24]:
                     if img2 == img:
                         continue
@@ -708,6 +707,7 @@ def main() -> int:
                             mobile_path=MOBILE_DIR / slot,
                             shop=False,
                             kind=kind,
+                            require_face=slot in CLOTHING_SLOTS,
                         )
                         pid, img, source = pid2, img2, source2
                         recovered = True

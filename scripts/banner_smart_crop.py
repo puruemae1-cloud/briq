@@ -2,8 +2,8 @@
 
 Desktop / tablet / mobile targets match the live CSS frames:
   hero desktop    2400×600  (4:1)  — homepage PC hero is a short panoramic strip
-  look desktop    2400×800  (3:1)  — homepage PC look-banners (~56svh × full width)
-  look/hero tablet 1600×640 (2.5:1)
+  look desktop    2400×900  (8:3)  — homepage PC look-banners (max 720px × full width)
+  look/hero tablet 1600×680 (~2.35:1)
   mobile          1200×800  (3:2)  — phones are closer to square
   shop desktop    2400×1200 (2:1)  — category strip
   shop tablet     1600×800
@@ -23,9 +23,9 @@ from PIL import Image, ImageOps
 HERO_DESKTOP = (2400, 600)
 HERO_TABLET = (1600, 500)
 HERO_MOBILE = (1200, 800)
-# Homepage PC look-banner: ~56svh × full width ≈ 3:1
-LOOK_DESKTOP = (2400, 800)
-LOOK_TABLET = (1600, 640)
+# Homepage PC look-banner: max-height 720 at 1920px ≈ 2.67:1
+LOOK_DESKTOP = (2400, 900)
+LOOK_TABLET = (1600, 680)
 LOOK_MOBILE = (1200, 800)
 SHOP_DESKTOP = (2400, 1200)
 SHOP_TABLET = (1600, 800)
@@ -136,7 +136,7 @@ def cover_crop(
         cy = min(cy, 0.36)
     elif tw / max(th, 1) >= 2.4:
         # Panoramic PC strip: keep the face in the short vertical window.
-        cy = min(max(cy, 0.22), 0.30)
+        cy = min(max(cy, 0.16), 0.24)
 
     left = int(round(cx * nw - tw / 2))
     top = int(round(cy * nh - th / 2))
@@ -239,6 +239,7 @@ def export_banner_set(
     mobile_path,
     shop: bool = False,
     kind: str | None = None,
+    require_face: bool = False,
 ) -> FocalPoint:
     """Write desktop / tablet / mobile JPEGs from one source photo."""
     focal = estimate_focal(source)
@@ -247,6 +248,8 @@ def export_banner_set(
     desktop = cover_crop(source, d, focal, mobile_bias=False)
     if slot_kind in {"look", "hero"} and is_thin_studio_crop(desktop):
         raise ValueError("thin-studio-crop")
+    if require_face and not has_on_model_face(desktop):
+        raise ValueError("crop-missed-face")
     save_jpeg(desktop, desktop_path)
     save_jpeg(cover_crop(source, t, focal, mobile_bias=False), tablet_path)
     save_jpeg(cover_crop(source, m, focal, mobile_bias=True), mobile_path)
