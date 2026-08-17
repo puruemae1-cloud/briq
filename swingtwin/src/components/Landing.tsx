@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { IG_SOURCES, PROS } from "@/lib/players";
-import { useTwinStore } from "@/lib/store";
 
 const FEATURED = [
   "rory-mcilroy",
@@ -12,8 +11,6 @@ const FEATURED = [
 ];
 
 export function Landing() {
-  const trialUsed = useTwinStore((s) => s.trialUsed);
-  const tier = useTwinStore((s) => s.tier);
   const pgaCount = PROS.filter((p) => p.tour === "PGA Tour").length;
   const featured = FEATURED.map((id) => PROS.find((p) => p.id === id)).filter(Boolean);
 
@@ -33,10 +30,7 @@ export function Landing() {
         </p>
         <div className="twin-hero__cta">
           <Link to="/compare" className="twin-btn">
-            {trialUsed && tier !== "subscriber" ? "Open last compare" : "Free trial"}
-          </Link>
-          <Link to="/subscribe" className="twin-btn twin-btn--ghost">
-            Subscribe — £12.99/mo
+            Start comparing — free
           </Link>
         </div>
       </section>

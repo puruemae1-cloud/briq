@@ -41,14 +41,6 @@ export const useTwinStore = create<SwingState>()(
       setHandedness: (h) => set({ handedness: h }),
       activateSubscriber: () => set({ tier: "subscriber" }),
       saveAnalysis: (result, skeleton, thumbs) => {
-        const { tier, trialUsed } = get();
-        if (tier === "trial" && trialUsed) {
-          return {
-            ok: false,
-            message:
-              "The free trial is one comparison. Subscribe to keep uploading and track whether the change is sticking.",
-          };
-        }
         const session: SwingSession = {
           id: result.id,
           createdAt: result.createdAt,
@@ -65,7 +57,6 @@ export const useTwinStore = create<SwingState>()(
           lastResult: result,
           lastSkeleton: skeleton,
           lastThumbs: thumbs.slice(0, 6),
-          trialUsed: true,
           sessions: [session, ...get().sessions].slice(0, 40),
         });
         return { ok: true };

@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { useTwinStore } from "@/lib/store";
 
 const links = [
   { href: "/", label: "Home", exact: true },
@@ -12,7 +11,6 @@ const links = [
 
 export function Shell({ children }: { children: React.ReactNode }) {
   const pathname = useLocation().pathname;
-  const tier = useTwinStore((s) => s.tier);
 
   return (
     <div className="twin-root">
@@ -33,9 +31,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
             );
           })}
         </nav>
-        <span className={`twin-pill ${tier === "subscriber" ? "is-on" : ""}`}>
-          {tier === "subscriber" ? "Subscriber" : "Trial"}
-        </span>
+        <span className="twin-pill is-on">Free</span>
       </header>
       {children}
       <footer className="twin-page" style={{ paddingTop: 0 }}>

@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { analyzePair } from "@/lib/analyze";
 import { applyHandedness, captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
 import { TOUR_STYLE } from "@/lib/anatomy";
@@ -55,8 +54,6 @@ export function CompareStudio() {
   const [refTourCapture, setRefTourCapture] = useState<ViewCapture | undefined>();
   const [usingReference, setUsingReference] = useState(false);
 
-  const tier = useTwinStore((s) => s.tier);
-  const trialUsed = useTwinStore((s) => s.trialUsed);
   const preferredProId = useTwinStore((s) => s.preferredProId);
   const handedness = useTwinStore((s) => s.handedness);
   const result = useTwinStore((s) => s.lastResult);
@@ -68,7 +65,6 @@ export function CompareStudio() {
 
   const pro = getPro(preferredProId) ?? getPro(defaultProId())!;
   const reference = getReferenceClip(pro.id);
-  const trialBlocked = tier === "trial" && trialUsed;
 
   const userSync =
     result?.userSync ??
@@ -85,7 +81,7 @@ export function CompareStudio() {
     setSyncBusy("Loading tour reference…");
     try {
       const video = await loadVideo(ref.src);
-      const cap = await captureView(video, "faceOn", ref.label, {
+      const cap = await captureView(video, "downTheLine", ref.label, {
         handedness,
         style: pro.style ?? TOUR_STYLE,
       });
@@ -174,7 +170,7 @@ export function CompareStudio() {
       tourViews: tour,
       proId: pro.id,
       handedness,
-      trialLimited: tier !== "subscriber",
+      trialLimited: false,
     });
     const thumbsOut = [
       ...user.flatMap((v) => v.thumbs),
@@ -189,10 +185,6 @@ export function CompareStudio() {
 
   async function run() {
     setError(null);
-    if (trialBlocked) {
-      setError("Trial is used. Subscribe to keep comparing new swings.");
-      return;
-    }
     if (!myFace && !myDtl && !userUrl) {
       setError("Upload at least one clip of your own swing.");
       return;
@@ -258,10 +250,6 @@ export function CompareStudio() {
 
   function runSample() {
     setError(null);
-    if (trialBlocked) {
-      setError("Trial is used. Subscribe to keep comparing new swings.");
-      return;
-    }
     const set = sampleCompareSet(handedness);
     commit(set.user, set.tour);
   }
@@ -273,17 +261,10 @@ export function CompareStudio() {
         <h1>You on the left — Rory on the right</h1>
         <p>
           Upload your face-on clip on the left. Rory McIlroy&apos;s real PGA Tour
-          slow-mo loads on the right automatically (the same face-on reel you see
-          on @golf_swings / @pgatour). Press play to sync arms-up through impact.
+          down-the-line clip loads on the right automatically (normal speed, behind
+          the ball). Press play to sync arms-up through impact.
         </p>
       </header>
-
-      {trialBlocked ? (
-        <div className="twin-banner">
-          You have used the free comparison.{" "}
-          <Link to="/subscribe">Subscribe (£12.99 / month)</Link> to keep uploading.
-        </div>
-      ) : null}
 
       <PlayerPicker value={pro.id} onChange={setPreferredPro} />
 
@@ -328,7 +309,7 @@ export function CompareStudio() {
               ? tourFile.name
               : usingReference
                 ? tourFileName || `${pro.name} reference`
-                : "Uses bundled Rory slow-mo"}
+                : "Uses bundled Rory DTL clip"}
           </strong>
           <em>Save from Instagram to replace the default tour file</em>
           <input
@@ -384,15 +365,15 @@ export function CompareStudio() {
           type="button"
           className="twin-btn"
           onClick={() => void run()}
-          disabled={Boolean(busy) || trialBlocked}
+          disabled={Boolean(busy)}
         >
-          {busy ?? (tier === "subscriber" ? "Compare & save" : "Trial compare")}
+          {busy ?? "Compare & save"}
         </button>
         <button
           type="button"
           className="twin-btn twin-btn--ghost"
           onClick={runSample}
-          disabled={Boolean(busy) || trialBlocked}
+          disabled={Boolean(busy)}
         >
           Sample pair
         </button>
@@ -438,7 +419,7 @@ export function CompareStudio() {
           proFrames={tourFrames}
           pro={pro}
           handedness={handedness}
-          trialLimited={result.trialLimited}
+          trialLimited={false}
           onPhase={(_i, t) => setPhaseT(t)}
         />
       ) : null}
@@ -475,11 +456,7 @@ export function CompareStudio() {
 
       {result ? (
         <>
-          <h2>
-            {result.trialLimited
-              ? "Trial — three differences"
-              : "Where you differ"}
-          </h2>
+          <h2>Where you differ</h2>
           <ul className="twin-gaps">
             {result.gaps.map((g) => (
               <li key={g.key} className={`is-${g.severity}`}>
@@ -491,29 +468,20 @@ export function CompareStudio() {
                 </p>
                 <p>{g.summary}</p>
                 <p className="twin-gaps__drill">Fix: {g.drill}</p>
-                {result.trialLimited ? null : (
-                  <p className="twin-gaps__feel">Feel: {g.feel}</p>
-                )}
+                <p className="twin-gaps__feel">Feel: {g.feel}</p>
               </li>
             ))}
           </ul>
-          {result.trialLimited ? (
-            <p className="twin-note">
-              Subscribers get all 30 phases, 30 body lines, a daily plan, and a
-              printable sheet. <Link to="/subscribe">See plans</Link>
-            </p>
-          ) : (
-            <div className="twin-phases twin-phases--fine">
-              {(result.finePhaseNotes ?? []).map((p) => (
-                <article key={`${p.n}-${p.label}`}>
-                  <h3>
-                    {p.n}. {p.code} · {p.label}
-                  </h3>
-                  <p>{p.note}</p>
-                </article>
-              ))}
-            </div>
-          )}
+          <div className="twin-phases twin-phases--fine">
+            {(result.finePhaseNotes ?? []).map((p) => (
+              <article key={`${p.n}-${p.label}`}>
+                <h3>
+                  {p.n}. {p.code} · {p.label}
+                </h3>
+                <p>{p.note}</p>
+              </article>
+            ))}
+          </div>
         </>
       ) : null}
     </div>

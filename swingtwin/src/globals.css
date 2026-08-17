@@ -223,10 +223,11 @@ a { color: inherit; text-decoration: none; }
 .twin-compare { margin: 1.4rem 0; }
 .twin-compare__grid {
   display: grid;
-  gap: 0.7rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
 }
 @media (min-width: 700px) {
-  .twin-compare__grid { grid-template-columns: 1fr 1fr; }
+  .twin-compare__grid { gap: 0.7rem; }
 }
 .twin-compare figure { margin: 0; padding: 0.7rem; }
 .twin-compare figcaption {

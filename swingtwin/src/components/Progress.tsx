@@ -15,25 +15,9 @@ function download(filename: string, html: string) {
 }
 
 export function Progress() {
-  const tier = useTwinStore((s) => s.tier);
   const sessions = useTwinStore((s) => s.sessions);
   const lastResult = useTwinStore((s) => s.lastResult);
   const pro = getPro(lastResult?.proId ?? "custom-clip");
-
-  if (tier !== "subscriber") {
-    return (
-      <div className="twin-page">
-        <header className="twin-page__head">
-          <p className="twin-kicker">Progress</p>
-          <h1>See if the change is sticking</h1>
-          <p>Subscribers keep every compare and can export today’s range sheet.</p>
-        </header>
-        <Link to="/subscribe" className="twin-btn">
-          Subscribe
-        </Link>
-      </div>
-    );
-  }
 
   const first = sessions[sessions.length - 1];
   const latest = sessions[0];
@@ -71,7 +55,7 @@ export function Progress() {
         <p>
           {sessions.length
             ? `${sessions.length} compares · ${delta >= 0 ? "+" : ""}${delta} from first to last`
-            : "No subscriber sessions yet."}
+            : "No compares yet."}
         </p>
       </header>
       {sessions.length > 1 ? (

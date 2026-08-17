@@ -5,24 +5,8 @@ import { todayKey, useTwinStore } from "@/lib/store";
 import { METRIC_LABEL, PHASE_LABEL } from "@/lib/types";
 
 export function Coaching() {
-  const tier = useTwinStore((s) => s.tier);
   const lastResult = useTwinStore((s) => s.lastResult);
   const pro = getPro(lastResult?.proId ?? "custom-clip");
-
-  if (tier !== "subscriber") {
-    return (
-      <div className="twin-page">
-        <header className="twin-page__head">
-          <p className="twin-kicker">Daily</p>
-          <h1>One gap, every day</h1>
-          <p>Subscribers get three drills aimed at the biggest difference versus their player.</p>
-        </header>
-        <Link to="/subscribe" className="twin-btn">
-          Subscribe to unlock
-        </Link>
-      </div>
-    );
-  }
 
   if (!lastResult || !pro) {
     return (

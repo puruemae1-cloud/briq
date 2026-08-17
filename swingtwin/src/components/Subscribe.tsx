@@ -1,52 +1,31 @@
 import { Link } from "react-router-dom";
-import { useTwinStore } from "@/lib/store";
 
 export function Subscribe() {
-  const tier = useTwinStore((s) => s.tier);
-  const trialUsed = useTwinStore((s) => s.trialUsed);
-  const activateSubscriber = useTwinStore((s) => s.activateSubscriber);
-
   return (
     <div className="twin-page">
       <header className="twin-page__head">
         <p className="twin-kicker">UK subscription</p>
-        <h1>Trial is a peek. Subscribers keep filming.</h1>
+        <h1>Everything is free for now</h1>
         <p>
-          Card billing (Stripe, GBP) is the production next step. This build stores
-          membership on the device so you can walk the product.
+          Upload as many swings as you like, compare side-by-side, use daily
+          coaching, and track progress — no limits on this build. Paid plans
+          (£12.99 / month) will come later with Stripe billing.
         </p>
       </header>
       <div className="twin-plans">
-        <article>
-          <p>Trial</p>
-          <h2>Free · one compare</h2>
-          <ul>
-            <li>One pair of videos</li>
-            <li>Three differences versus their clip</li>
-            <li>One drill for each</li>
-          </ul>
-          <p className="twin-plans__state">{trialUsed ? "Used on this phone" : "Still available"}</p>
-          <Link to="/compare" className="twin-btn twin-btn--ghost">
-            Compare
-          </Link>
-        </article>
         <article className="is-featured">
-          <p>TwinSwing+</p>
-          <h2>£12.99 / month</h2>
-          <p className="twin-note">or £99 / year · cancel anytime · App Store / Play when we ship native</p>
+          <p>TwinSwing</p>
+          <h2>Free · unlimited</h2>
           <ul>
-            <li>Unlimited uploads of your swing and their swing</li>
+            <li>Unlimited uploads of your swing and tour clips</li>
             <li>Side-by-side synced to impact, plus 3D from two cameras</li>
-            <li>Daily plan and printable range sheet</li>
-            <li>Score history — did the change stick?</li>
+            <li>All 30 phases and body-line differences</li>
+            <li>Daily plan, printable range sheet, and score history</li>
           </ul>
-          {tier === "subscriber" ? (
-            <p className="twin-plans__state">Subscriber is on for this device</p>
-          ) : (
-            <button type="button" className="twin-btn" onClick={activateSubscriber}>
-              Turn on subscriber (demo)
-            </button>
-          )}
+          <p className="twin-plans__state">Active on this device</p>
+          <Link to="/compare" className="twin-btn">
+            Compare a swing
+          </Link>
         </article>
       </div>
     </div>

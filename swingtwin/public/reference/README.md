@@ -1,11 +1,11 @@
 # Reference tour clips
 
-Bundled slow-mo clips for side-by-side compare when the subscriber has not uploaded their own tour file.
+Bundled tour clips for side-by-side compare when the user has not uploaded their own tour file.
 
 | File | Player | Source |
 |------|--------|--------|
-| `rory-mcilroy-faceon.mp4` | Rory McIlroy | [PGA Tour — slow motion at Wells Fargo](https://www.pgatour.com/video/competition/6083133193001/rory-mcilroys-powerful-golf-swing-in-slow-motion-at-wells-fargo) |
+| `rory-mcilroy-dtl.mp4` | Rory McIlroy | [PGA Tour — Open tee shot (down the line)](https://www.pgatour.com/video/competition/6401330997112/rory-mcilroy-crushes-yard-tee-shot-drives-green-for-birdie-at-the-open) |
 
-These are the same face-on slow-mo patterns reposted on Instagram accounts such as @golf_swings and @pgatour. We do **not** scrape Instagram; we ship a short official excerpt for sync playback in the prototype.
+Normal-speed, behind-the-ball excerpt. We do **not** scrape Instagram; we ship a short official excerpt for sync playback in the prototype.
 
-Trimmed segment (~6s) for app size. Rights remain with the original broadcaster.
+Trimmed segment (~5.5s) for app size. Rights remain with the original broadcaster.
