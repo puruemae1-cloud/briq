@@ -16,7 +16,7 @@ import { PlayerPicker } from "./PlayerPicker";
 import { PhaseOverlay } from "./PhaseOverlay";
 import { UploadProgressBar } from "./UploadProgressBar";
 
-type UploadSlot = "face" | "dtl" | "tour";
+type UploadSlot = "face" | "dtl";
 type UploadProgressState = {
   slot: UploadSlot;
   label: string;
@@ -49,7 +49,6 @@ function isBlobUrl(url?: string) {
 export function CompareStudio() {
   const [myFace, setMyFace] = useState<File | null>(null);
   const [myDtl, setMyDtl] = useState<File | null>(null);
-  const [tourFile, setTourFile] = useState<File | null>(null);
   const [userUrl, setUserUrl] = useState<string | undefined>();
   const [tourUrl, setTourUrl] = useState<string | undefined>();
   const [busy, setBusy] = useState<string | null>(null);
@@ -71,7 +70,6 @@ export function CompareStudio() {
 
   const userFaceInputRef = useRef<HTMLInputElement>(null);
   const userDtlInputRef = useRef<HTMLInputElement>(null);
-  const tourInputRef = useRef<HTMLInputElement>(null);
   const tourRevokeRef = useRef<(() => void) | null>(null);
   const tourLoadGen = useRef(0);
 
@@ -113,7 +111,7 @@ export function CompareStudio() {
 
   const captureReference = useCallback(async () => {
     const ref = getReferenceClip(pro.id);
-    if (!ref || tourFile) return undefined;
+    if (!ref) return undefined;
     const gen = ++tourLoadGen.current;
 
     setTourUrl(ref.src);
@@ -144,7 +142,7 @@ export function CompareStudio() {
     } finally {
       if (gen === tourLoadGen.current) setSyncBusy(null);
     }
-  }, [pro.id, pro.style, tourFile, handedness, userFrameMeta, applyTourDisplayStyle]);
+  }, [pro.id, pro.style, handedness, userFrameMeta, applyTourDisplayStyle]);
 
   useEffect(() => {
     return () => {
@@ -163,10 +161,8 @@ export function CompareStudio() {
     let cancelled = false;
     void (async () => {
       const user = await clipObjectUrl("user");
-      const tour = await clipObjectUrl("tour");
       if (cancelled) {
         if (user?.url) URL.revokeObjectURL(user.url);
-        if (tour?.url) URL.revokeObjectURL(tour.url);
         return;
       }
       if (user) {
@@ -179,11 +175,6 @@ export function CompareStudio() {
           void captureUserForSync(file);
         }
       }
-      if (tour) {
-        setTourUrl(tour.url);
-        setTourFileName(tour.name);
-        setUsingReference(false);
-      }
     })();
     return () => {
       cancelled = true;
@@ -191,9 +182,8 @@ export function CompareStudio() {
   }, []);
 
   useEffect(() => {
-    if (tourFile) return;
     void captureReference();
-  }, [tourFile, captureReference]);
+  }, [captureReference]);
 
   function trackUpload(slot: UploadSlot) {
     return (progress: { label: string; percent: number }) => {
@@ -231,10 +221,8 @@ export function CompareStudio() {
   }
 
   async function refreshTourDisplay() {
-    if (tourFile || !reference) return;
-    if (tourUrl) {
-      await applyTourDisplayStyle(tourUrl, userFrameMeta);
-    }
+    if (!reference || !tourUrl) return;
+    await applyTourDisplayStyle(tourUrl, userFrameMeta);
   }
 
   async function applyUserFace(file: File) {
@@ -264,44 +252,9 @@ export function CompareStudio() {
 
   async function applyUserDtl(file: File) {
     try {
-      const { file: f } = await prepareUserClip(file, "dtl");
-      setMyDtl(f);
+      setUploadProgress({ slot: "dtl", label: "Saving clip…", percent: 30 });
+      setMyDtl(file);
       setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Upload failed.");
-      setUploadProgress(null);
-    } finally {
-      window.setTimeout(() => setUploadProgress(null), 700);
-    }
-  }
-
-  async function applyTourUpload(file: File) {
-    try {
-      setUploadProgress({ slot: "tour", label: "Starting upload…", percent: 0 });
-      const { file: f } = await autoFrameSwingVideo(file, trackUpload("tour"));
-      setUploadProgress({ slot: "tour", label: "Saving clip…", percent: 95 });
-      setTourFile(f);
-      const url = URL.createObjectURL(f);
-      tourRevokeRef.current?.();
-      tourRevokeRef.current = () => URL.revokeObjectURL(url);
-      setTourUrl((prev) => {
-        if (isBlobUrl(prev)) URL.revokeObjectURL(prev!);
-        return url;
-      });
-      setTourFileName(f.name);
-      setUsingReference(false);
-      setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 50%" });
-      setRefTourCapture(undefined);
-      await saveClip("tour", f);
-      setUploadProgress({ slot: "tour", label: "Reading tour clip…", percent: 97 });
-      const { video } = await fileToVideo(f);
-      const cap = await captureView(video, "faceOn", f.name, {
-        handedness,
-        style: pro.style ?? TOUR_STYLE,
-      });
-      setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
-      setRefTourCapture(cap);
-      setUploadProgress({ slot: "tour", label: "Upload complete", percent: 100 });
     } catch (e) {
       setError(e instanceof Error ? e.message : "Upload failed.");
       setUploadProgress(null);
@@ -372,21 +325,7 @@ export function CompareStudio() {
         );
       }
       let tourViews: ViewCapture[] | undefined;
-      if (tourFile) {
-        setBusy(`Reading ${pro.name}'s clip…`);
-        await saveClip("tour", tourFile);
-        const { video, url } = await fileToVideo(tourFile);
-        urls.push(url);
-        setTourUrl(url);
-        setTourFileName(tourFile.name);
-        setUsingReference(false);
-        tourViews = [
-          await captureView(video, "faceOn", tourFile.name, {
-            handedness,
-            style: pro.style ?? TOUR_STYLE,
-          }),
-        ];
-      } else if (refTourCapture) {
+      if (refTourCapture) {
         tourViews = [refTourCapture];
       } else {
         const cap = await captureReference();
@@ -428,26 +367,8 @@ export function CompareStudio() {
     if (userDtlInputRef.current) userDtlInputRef.current.value = "";
   }
 
-  async function clearTourUpload() {
-    tourRevokeRef.current?.();
-    tourRevokeRef.current = null;
-    if (isBlobUrl(tourUrl)) URL.revokeObjectURL(tourUrl!);
-    try {
-      await deleteClip("tour");
-    } catch {
-      /* ignore missing row */
-    }
-    setTourFile(null);
-    setRefTourCapture(undefined);
-    setLiveTourSync(undefined);
-    setTourDisplayStyle(undefined);
-    if (tourInputRef.current) tourInputRef.current.value = "";
-    await captureReference();
-  }
-
   const hasUserFace = Boolean(myFace || userFileName || userUrl);
   const hasUserDtl = Boolean(myDtl);
-  const hasTourUpload = Boolean(tourFile);
 
   return (
     <div className="twin-page">
@@ -455,21 +376,21 @@ export function CompareStudio() {
         <p className="twin-kicker">Compare</p>
         <h1>You on the left — Rory on the right</h1>
         <p>
-          Upload your face-on clip on the left — we cut sky, floor and sides so only
-          your body fills the frame (club arc kept). Rory on the right is auto-framed
-          to the same body size. Press play to sync arms-up through impact.
+          Upload your face-on clip on the left — sky is cut at the driver apex (top of
+          backswing), plus floor and sides removed so your body fills the frame. Rory
+          loads automatically on the right.
         </p>
       </header>
 
       <PlayerPicker value={pro.id} onChange={setPreferredPro} />
 
-      <div className="twin-grid3">
+      <div className="twin-grid2">
         <label
           className={`twin-drop${uploadProgress?.slot === "face" ? " is-uploading" : ""}`}
         >
           <span>Left — your swing (face-on)</span>
           <strong>{myFace?.name || userFileName || "Choose video"}</strong>
-          <em>Body-only crop · sky/floor/sides removed</em>
+          <em>Sky cut at driver apex · floor/sides removed</em>
           {hasUserFace ? (
             <button
               type="button"
@@ -499,7 +420,7 @@ export function CompareStudio() {
         >
           <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
-          <em>Down the line · auto crop · unlocks 3D</em>
+          <em>Down the line · unlocks 3D (no crop on this clip)</em>
           {hasUserDtl ? (
             <button
               type="button"
@@ -521,42 +442,6 @@ export function CompareStudio() {
             onChange={(e) => {
               const f = e.target.files?.[0] ?? null;
               if (f) void applyUserDtl(f);
-            }}
-          />
-        </label>
-        <label
-          className={`twin-drop twin-drop--tour${uploadProgress?.slot === "tour" ? " is-uploading" : ""}`}
-        >
-          <span>Right — override Rory clip (optional)</span>
-          <strong>
-            {tourFile
-              ? tourFile.name
-              : usingReference
-                ? tourFileName || `${pro.name} reference`
-                : "Uses bundled Rory DTL clip"}
-          </strong>
-          <em>Save from Instagram to replace the default tour file</em>
-          {hasTourUpload ? (
-            <button
-              type="button"
-              className="twin-drop__remove"
-              aria-label="Remove tour clip override"
-              onClick={(e) => {
-                e.preventDefault();
-                void clearTourUpload();
-              }}
-            >
-              Remove
-            </button>
-          ) : null}
-          <input
-            ref={tourInputRef}
-            type="file"
-            accept="video/*"
-            disabled={Boolean(uploadProgress)}
-            onChange={(e) => {
-              const f = e.target.files?.[0] ?? null;
-              if (f) void applyTourUpload(f);
             }}
           />
         </label>
@@ -617,7 +502,7 @@ export function CompareStudio() {
         userUrl={userUrl}
         tourUrl={tourUrl}
         userLabel={myFace?.name || userFileName || "Your swing"}
-        tourLabel={tourFile?.name || tourFileName || pro.name}
+        tourLabel={tourFileName || pro.name}
         userSync={userSync}
         tourSync={tourSync}
         phaseT={phaseT}

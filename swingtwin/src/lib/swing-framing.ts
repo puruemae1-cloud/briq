@@ -1,5 +1,20 @@
-function waitSeek(video: HTMLVideoElement) {
+function seekVideo(video: HTMLVideoElement, t: number) {
+  const maxT = Number.isFinite(video.duration) && video.duration > 0
+    ? Math.max(0, video.duration - 0.05)
+    : 0;
+  const target = Math.max(0, Math.min(t, maxT));
+
   return new Promise<void>((resolve, reject) => {
+    if (Math.abs(video.currentTime - target) < 0.02 && video.readyState >= 2) {
+      resolve();
+      return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      cleanup();
+      reject(new Error("Video seek timed out"));
+    }, 12_000);
+
     const onSeeked = () => {
       cleanup();
       resolve();
@@ -9,11 +24,19 @@ function waitSeek(video: HTMLVideoElement) {
       reject(new Error("Could not read that video."));
     };
     const cleanup = () => {
+      window.clearTimeout(timeout);
       video.removeEventListener("seeked", onSeeked);
       video.removeEventListener("error", onError);
     };
+
     video.addEventListener("seeked", onSeeked);
     video.addEventListener("error", onError);
+    try {
+      video.currentTime = target;
+    } catch (e) {
+      cleanup();
+      reject(e instanceof Error ? e : new Error("Video seek failed"));
+    }
   });
 }
 
@@ -66,8 +89,24 @@ async function loadVideoFromUrl(src: string) {
     video.crossOrigin = "anonymous";
   }
   await new Promise<void>((resolve, reject) => {
-    video.onloadedmetadata = () => resolve();
-    video.onerror = () => reject(new Error("Could not read that video."));
+    const done = () => {
+      cleanup();
+      resolve();
+    };
+    const fail = () => {
+      cleanup();
+      reject(new Error("Could not read that video."));
+    };
+    const cleanup = () => {
+      video.removeEventListener("loadeddata", done);
+      video.removeEventListener("error", fail);
+    };
+    if (video.readyState >= 2) {
+      resolve();
+      return;
+    }
+    video.addEventListener("loadeddata", done);
+    video.addEventListener("error", fail);
   });
   return video;
 }
@@ -103,21 +142,24 @@ export async function detectBodyCrop(
 
   const duration =
     Number.isFinite(video.duration) && video.duration > 0 ? video.duration : 2;
-  const sampleCount = Math.min(56, Math.max(28, Math.ceil(duration * 14)));
+  const sampleCount = Math.min(24, Math.max(12, Math.ceil(duration * 8)));
   const pixelCount = analysisW * analysisH;
   const peakMotion = new Float32Array(pixelCount);
+  const peakFastMotion = new Float32Array(pixelCount);
   let bg: Uint8ClampedArray | null = null;
   let prev: Uint8ClampedArray | null = null;
+  let clubApexTopY = analysisH;
+  const FAST_MOTION = 13;
 
   for (let i = 0; i < sampleCount; i++) {
     const t = (i / Math.max(sampleCount - 1, 1)) * duration * 0.98;
-    video.currentTime = t;
-    await waitSeek(video);
-    report(onProgress, "Finding your body…", 8 + (i / sampleCount) * 22);
+    report(onProgress, "Finding driver apex…", 8 + (i / sampleCount) * 22);
+    await seekVideo(video, t);
     ctx.drawImage(video, 0, 0, analysisW, analysisH);
     const cur = ctx.getImageData(0, 0, analysisW, analysisH).data;
     if (!bg) bg = cur.slice();
 
+    let frameFastTop = analysisH;
     for (let p = 0; p < pixelCount; p++) {
       const idx = p * 4;
       const L = luma(cur, idx);
@@ -125,8 +167,25 @@ export async function detectBodyCrop(
       const fromPrev = prev ? Math.abs(L - luma(prev, idx)) : 0;
       const motion = Math.max(fromBg, fromPrev);
       if (motion > peakMotion[p]) peakMotion[p] = motion;
+      if (fromPrev >= FAST_MOTION) {
+        if (fromPrev > peakFastMotion[p]) peakFastMotion[p] = fromPrev;
+        const y = Math.floor(p / analysisW);
+        if (y < frameFastTop) frameFastTop = y;
+      }
+    }
+    if (frameFastTop < analysisH) {
+      clubApexTopY = Math.min(clubApexTopY, frameFastTop);
     }
     prev = cur.slice();
+  }
+
+  if (clubApexTopY >= analysisH) {
+    for (let p = 0; p < pixelCount; p++) {
+      if (peakFastMotion[p] > 0) {
+        const y = Math.floor(p / analysisW);
+        if (y < clubApexTopY) clubApexTopY = y;
+      }
+    }
   }
 
   const rowMass = new Float32Array(analysisH);
@@ -195,20 +254,24 @@ export async function detectBodyCrop(
   const rowWin = massWindow(rowMass, 0.992);
   const colWin = massWindow(colMass, 0.992);
 
+  let cropTopRow = rowWin.start;
+  if (clubApexTopY < analysisH) {
+    cropTopRow = Math.max(rowWin.start, clubApexTopY);
+  }
+
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;
 
   let x = colWin.start * scaleX;
-  let y = rowWin.start * scaleY;
+  let y = cropTopRow * scaleY;
   let w = (colWin.end - colWin.start + 1) * scaleX;
-  let h = (rowWin.end - rowWin.start + 1) * scaleY;
+  let h = (rowWin.end - cropTopRow + 1) * scaleY;
 
   const padX = w * 0.02;
-  const padY = h * 0.02;
+  const padBottom = h * 0.02;
   x = Math.max(0, x - padX);
-  y = Math.max(0, y - padY);
   w = Math.min(vw - x, w + padX * 2);
-  h = Math.min(vh - y, h + padY * 2);
+  h = Math.min(vh - y, h + padBottom);
 
   x = Math.round(x);
   y = Math.round(y);
@@ -336,12 +399,11 @@ async function renderBodyFocusedVideo(
         for (let i = 0; i < frameCount; i++) {
           report(
             onProgress,
-            "Framing body — cutting background…",
+            "Framing body — cutting sky at driver apex…",
             34 + (i / frameCount) * 58,
           );
           const t = Math.min(i / fps, Math.max(0, duration - 0.001));
-          video.currentTime = t;
-          await waitSeek(video);
+          await seekVideo(video, t);
           ctx.fillStyle = "#04110c";
           ctx.fillRect(0, 0, outW, outH);
           ctx.drawImage(
@@ -384,9 +446,9 @@ async function frameVideoElement(
   onProgress?: FramingProgressCallback,
   fileStem = "swing",
 ): Promise<FramedVideoResult> {
-  report(onProgress, "Finding your body…", 6);
+  report(onProgress, "Finding driver apex…", 6);
   const { crop } = await detectBodyCrop(video, onProgress);
-  report(onProgress, "Cutting sky, floor & sides…", 32);
+  report(onProgress, "Cutting sky at driver apex…", 32);
   const blob = await renderBodyFocusedVideo(video, crop, onProgress);
   report(onProgress, "Body crop complete", 94);
   const file = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });

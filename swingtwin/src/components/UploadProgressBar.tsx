@@ -1,5 +1,5 @@
 type Props = {
-  slot: "face" | "dtl" | "tour";
+  slot: "face" | "dtl";
   label: string;
   percent: number;
 };
@@ -7,7 +7,6 @@ type Props = {
 const SLOT_LABEL: Record<Props["slot"], string> = {
   face: "Face-on upload",
   dtl: "Down-the-line upload",
-  tour: "Tour clip upload",
 };
 
 export function UploadProgressBar({ slot, label, percent }: Props) {

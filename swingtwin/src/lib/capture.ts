@@ -2,13 +2,27 @@ import { AMATEUR_STYLE, FINE_PHASES, TOUR_STYLE, type PlayerStyle } from "./anat
 import { framesForStyle, userFramesFromMotion } from "./pose";
 import type { Handedness, MotionSample, SkeletonFrame, SwingView, ViewCapture } from "./types";
 
-function waitSeek(video: HTMLVideoElement) {
+function seekVideo(video: HTMLVideoElement, t: number) {
+  const maxT = Number.isFinite(video.duration) && video.duration > 0
+    ? Math.max(0, video.duration - 0.05)
+    : 0;
+  const target = Math.max(0, Math.min(t, maxT));
+
   return new Promise<void>((resolve) => {
+    if (Math.abs(video.currentTime - target) < 0.02 && video.readyState >= 2) {
+      resolve();
+      return;
+    }
     const done = () => {
       video.removeEventListener("seeked", done);
       resolve();
     };
     video.addEventListener("seeked", done);
+    try {
+      video.currentTime = target;
+    } catch {
+      resolve();
+    }
   });
 }
 
@@ -90,8 +104,7 @@ export async function captureView(
 
   for (let i = 0; i < sampleCount; i++) {
     const t = (i / Math.max(sampleCount - 1, 1)) * duration * 0.96;
-    video.currentTime = t;
-    await waitSeek(video);
+    await seekVideo(video, t);
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
     const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const stats = analyzeFrame(
