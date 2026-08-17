@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BookmarkletCard } from "@/components/BookmarkletCard";
+import { HomeScreenHint } from "@/components/HomeScreenHint";
 import { PasteUrlBar } from "@/components/PasteUrlBar";
 import { StoreBannerGrid } from "@/components/StoreBannerGrid";
 import { getGbpKrw } from "@/lib/fx";
@@ -39,10 +41,10 @@ export default async function HomePage() {
             <p className="display mt-2 text-4xl">{fx.gbpKrw.toLocaleString("en-US")}</p>
             <p className="mt-1 text-sm text-[var(--muted)]">원 · {fx.source}</p>
             <ol className="mt-6 grid gap-3 text-sm leading-6">
-              <li>1. 배너에서 영국 몰을 연다</li>
-              <li>2. 상품 페이지 URL을 복사한다</li>
-              <li>3. 아래 「복사한 상품 링크는 여기에」칸에 붙여 넣는다</li>
-              <li>4. 원화 결제 후 영국에서 구매·배송</li>
+              <li>1. 배너를 누르면 영국 몰이 새 탭으로 열린다 (이 화면은 유지)</li>
+              <li>2. 상품 페이지에서 주소를 복사한다</li>
+              <li>3. Safari 탭에서 배대지로 돌아와 붙여 넣는다</li>
+              <li>4. 또는 즐겨찾기 「배대지에 담기」로 한 번에 돌아온다</li>
             </ol>
           </div>
         </div>
@@ -69,6 +71,11 @@ export default async function HomePage() {
 
       <div className="page-wrap py-14">
         <StoreBannerGrid />
+
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          <BookmarkletCard />
+          <HomeScreenHint />
+        </div>
 
         <section className="mt-16 grid gap-6 md:grid-cols-3">
           {[

@@ -10,6 +10,9 @@ export function Header({ user }: { user: User | null }) {
           배대지
         </Link>
         <nav className="flex items-center gap-3 overflow-x-auto whitespace-nowrap text-[0.72rem] tracking-[0.1em] uppercase sm:gap-4 sm:text-[0.78rem] sm:tracking-[0.12em]">
+          <Link href="/#bookmarklet" className="opacity-80 hover:opacity-100">
+            ASOS에서 돌아오기
+          </Link>
           <Link href="/#paste" className="opacity-80 hover:opacity-100">
             URL 붙여넣기
           </Link>
