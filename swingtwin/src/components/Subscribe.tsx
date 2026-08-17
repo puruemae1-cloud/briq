@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useTwinStore } from "@/lib/store";
 
 export function Subscribe() {
@@ -28,7 +26,7 @@ export function Subscribe() {
             <li>One drill for each</li>
           </ul>
           <p className="twin-plans__state">{trialUsed ? "Used on this phone" : "Still available"}</p>
-          <Link href="/compare" className="twin-btn twin-btn--ghost">
+          <Link to="/compare" className="twin-btn twin-btn--ghost">
             Compare
           </Link>
         </article>

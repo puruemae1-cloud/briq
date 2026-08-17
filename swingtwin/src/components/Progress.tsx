@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { buildDailyPlan, buildMaterialHtml } from "@/lib/coaching";
 import { getPro } from "@/lib/pros";
 import { todayKey, useTwinStore } from "@/lib/store";
@@ -30,7 +28,7 @@ export function Progress() {
           <h1>See if the change is sticking</h1>
           <p>Subscribers keep every compare and can export today’s range sheet.</p>
         </header>
-        <Link href="/subscribe" className="twin-btn">
+        <Link to="/subscribe" className="twin-btn">
           Subscribe
         </Link>
       </div>
@@ -108,7 +106,7 @@ export function Progress() {
         ))}
       </ul>
       <div className="twin-hero__cta">
-        <Link href="/compare" className="twin-btn">
+        <Link to="/compare" className="twin-btn">
           New compare
         </Link>
         <button type="button" className="twin-btn twin-btn--ghost" onClick={issueSheet} disabled={!lastResult}>

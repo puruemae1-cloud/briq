@@ -9,9 +9,15 @@ const MEDIA_ORIGIN =
   process.env.MEDIA_ORIGIN ||
   "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
 
+const repoRoot = process.cwd();
+
 const nextConfig: NextConfig = {
-  // mobile/ is a separate Expo app
-  turbopack: {},
+  // Nested package-lock.json files (mobile/, swingtwin/) must not become
+  // Turbopack's inferred workspace root — that fails the Vercel build.
+  outputFileTracingRoot: repoRoot,
+  turbopack: {
+    root: repoRoot,
+  },
   // Hide the "N" dev tools badge (dev server only; production never shows it)
   devIndicators: false,
   experimental: {

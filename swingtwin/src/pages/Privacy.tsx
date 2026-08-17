@@ -1,4 +1,4 @@
-export default function PrivacyPage() {
+export function Privacy() {
   return (
     <div className="twin-page twin-legal">
       <h1>Privacy</h1>

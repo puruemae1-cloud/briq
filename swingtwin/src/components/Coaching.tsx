@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { buildDailyPlan } from "@/lib/coaching";
 import { getPro } from "@/lib/pros";
 import { todayKey, useTwinStore } from "@/lib/store";
@@ -19,7 +17,7 @@ export function Coaching() {
           <h1>One gap, every day</h1>
           <p>Subscribers get three drills aimed at the biggest difference versus their player.</p>
         </header>
-        <Link href="/subscribe" className="twin-btn">
+        <Link to="/subscribe" className="twin-btn">
           Subscribe to unlock
         </Link>
       </div>
@@ -33,7 +31,7 @@ export function Coaching() {
           <p className="twin-kicker">Daily</p>
           <h1>Compare a swing first</h1>
         </header>
-        <Link href="/compare" className="twin-btn">
+        <Link to="/compare" className="twin-btn">
           Compare
         </Link>
       </div>

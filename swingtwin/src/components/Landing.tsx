@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { PROS } from "@/lib/pros";
 import { useTwinStore } from "@/lib/store";
 
@@ -21,10 +19,10 @@ export function Landing() {
           down-the-line becomes 3D.
         </p>
         <div className="twin-hero__cta">
-          <Link href="/compare" className="twin-btn">
+          <Link to="/compare" className="twin-btn">
             {trialUsed && tier !== "subscriber" ? "Open last compare" : "Free trial"}
           </Link>
-          <Link href="/subscribe" className="twin-btn twin-btn--ghost">
+          <Link to="/subscribe" className="twin-btn twin-btn--ghost">
             Subscribe — £12.99/mo
           </Link>
         </div>

@@ -1,7 +1,4 @@
-"use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, useLocation } from "react-router-dom";
 import { useTwinStore } from "@/lib/store";
 
 const links = [
@@ -14,13 +11,13 @@ const links = [
 ];
 
 export function Shell({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+  const pathname = useLocation().pathname;
   const tier = useTwinStore((s) => s.tier);
 
   return (
     <div className="twin-root">
       <header className="twin-top">
-        <Link href="/" className="twin-logo">
+        <Link to="/" className="twin-logo">
           TwinSwing
           <em>UK</em>
         </Link>
@@ -30,7 +27,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
               ? pathname === l.href
               : pathname === l.href || pathname.startsWith(`${l.href}/`);
             return (
-              <Link key={l.href} href={l.href} className={active ? "is-active" : undefined}>
+              <Link key={l.href} to={l.href} className={active ? "is-active" : undefined}>
                 {l.label}
               </Link>
             );
@@ -44,7 +41,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <footer className="twin-page" style={{ paddingTop: 0 }}>
         <p className="twin-note">
           TwinSwing · United Kingdom · independent of any shop ·{" "}
-          <Link href="/privacy">Privacy</Link>
+          <Link to="/privacy">Privacy</Link>
         </p>
       </footer>
     </div>

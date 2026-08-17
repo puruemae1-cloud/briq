@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { PROS, getPro } from "@/lib/pros";
 import { useTwinStore } from "@/lib/store";
 
@@ -46,7 +44,7 @@ export function Library() {
       </div>
       <p className="twin-note">
         Selected: <strong>{getPro(preferredProId)?.name}</strong> ·{" "}
-        <Link href="/compare">Compare</Link>
+        <Link to="/compare">Compare</Link>
       </p>
     </div>
   );

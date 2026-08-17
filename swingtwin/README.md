@@ -28,6 +28,8 @@ npm run dev
 
 App: [http://localhost:3001](http://localhost:3001)
 
+This folder is a **Vite** app on purpose. It must not be a second Next.js project inside the Briq repo — Vercel treats extra `next.config` files as another app and the shop deploy fails.
+
 Installable as a PWA (Add to Home Screen) while native stores are in progress.
 
 ## UK shipping (next)

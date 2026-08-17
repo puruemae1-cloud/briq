@@ -1,7 +1,5 @@
-"use client";
-
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { analyzePair } from "@/lib/analyze";
 import { captureView, fuseSkeletons, sampleCompareSet } from "@/lib/capture";
 import { defaultProId, getPro, PROS } from "@/lib/pros";
@@ -149,7 +147,7 @@ export function CompareStudio() {
       {trialBlocked ? (
         <div className="twin-banner">
           You have used the free comparison.{" "}
-          <Link href="/subscribe">Subscribe (£12.99 / month)</Link> to keep uploading.
+          <Link to="/subscribe">Subscribe (£12.99 / month)</Link> to keep uploading.
         </div>
       ) : null}
 
@@ -269,7 +267,6 @@ export function CompareStudio() {
       {thumbs.length ? (
         <div className="twin-thumbs">
           {thumbs.map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
             <img key={i} src={src} alt="" />
           ))}
         </div>
@@ -302,7 +299,7 @@ export function CompareStudio() {
           {result.trialLimited ? (
             <p className="twin-note">
               Subscribers get every phase, a daily plan, and a printable sheet.{" "}
-              <Link href="/subscribe">See plans</Link>
+              <Link to="/subscribe">See plans</Link>
             </p>
           ) : (
             <div className="twin-phases">
