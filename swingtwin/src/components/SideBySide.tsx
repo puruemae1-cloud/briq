@@ -19,6 +19,7 @@ type Props = {
   handedness?: Handedness;
   tourIsReference?: boolean;
   tourVideoStyle?: VideoDisplayStyle;
+  userVideoStyle?: VideoDisplayStyle;
 };
 
 export function SideBySide({
@@ -33,6 +34,7 @@ export function SideBySide({
   handedness = "right",
   tourIsReference,
   tourVideoStyle,
+  userVideoStyle,
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
@@ -169,7 +171,14 @@ export function SideBySide({
           <figcaption>You · left</figcaption>
           {userUrl ? (
             <div className="twin-compare__video-wrap">
-              <video ref={userRef} src={userUrl} playsInline muted controls={false} />
+              <video
+                ref={userRef}
+                src={userUrl}
+                playsInline
+                muted
+                controls={false}
+                style={userVideoStyle}
+              />
             </div>
           ) : (
             <div className="twin-compare__empty">Your swing</div>

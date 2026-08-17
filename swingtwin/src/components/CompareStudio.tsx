@@ -64,6 +64,7 @@ export function CompareStudio() {
   const [usingReference, setUsingReference] = useState(false);
   const [userFrameMeta, setUserFrameMeta] = useState<BodyFrameMeta | undefined>();
   const [tourDisplayStyle, setTourDisplayStyle] = useState<VideoDisplayStyle | undefined>();
+  const [userDisplayStyle, setUserDisplayStyle] = useState<VideoDisplayStyle | undefined>();
   const [uploadProgress, setUploadProgress] = useState<UploadProgressState | null>(
     null,
   );
@@ -227,9 +228,14 @@ export function CompareStudio() {
 
   async function applyUserFace(file: File) {
     try {
-      const { file: f, meta } = await prepareUserClip(file, "face");
+      const { file: f, meta, cssOnly } = await prepareUserClip(file, "face");
       setUploadProgress({ slot: "face", label: "Saving clip…", percent: 95 });
       setUserFrameMeta(meta);
+      setUserDisplayStyle(
+        cssOnly
+          ? cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH)
+          : undefined,
+      );
       setMyFace(f);
       const url = URL.createObjectURL(f);
       setUserUrl((prev) => {
@@ -252,8 +258,13 @@ export function CompareStudio() {
 
   async function applyUserDtl(file: File) {
     try {
-      const { file: f } = await prepareUserClip(file, "dtl");
+      const { file: f, meta, cssOnly } = await prepareUserClip(file, "dtl");
       setMyDtl(f);
+      if (cssOnly) {
+        setUserDisplayStyle(
+          cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
+        );
+      }
       setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
     } catch (e) {
       setError(e instanceof Error ? e.message : "Upload failed.");
@@ -359,6 +370,7 @@ export function CompareStudio() {
     setUserFileName(undefined);
     setLiveUserSync(undefined);
     setUserFrameMeta(undefined);
+    setUserDisplayStyle(undefined);
     if (userFaceInputRef.current) userFaceInputRef.current.value = "";
   }
 
@@ -510,6 +522,7 @@ export function CompareStudio() {
         handedness={handedness}
         tourIsReference={usingReference}
         tourVideoStyle={tourDisplayStyle}
+        userVideoStyle={userDisplayStyle}
       />
 
       {userUrl && tourUrl && userSync && tourSync ? (

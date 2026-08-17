@@ -73,48 +73,110 @@ export type BodyFrameMeta = {
 export type FramedVideoResult = {
   file: File;
   meta: BodyFrameMeta;
+  /** Original file + CSS crop (no re-encode) — used on mobile for reliability. */
+  cssOnly?: boolean;
 };
 
 const OUTPUT_W = 540;
 const OUTPUT_H = 720;
 const MOTION_THRESHOLD = 7;
 
-async function loadVideoFromUrl(src: string) {
+async function loadVideoFromUrl(
+  src: string,
+  onProgress?: FramingProgressCallback,
+) {
+  report(onProgress, "Reading video…", 3);
   const video = document.createElement("video");
   video.src = src;
   video.muted = true;
   video.playsInline = true;
+  video.setAttribute("playsinline", "true");
   video.preload = "auto";
   if (!src.startsWith("blob:")) {
     video.crossOrigin = "anonymous";
   }
+
   await new Promise<void>((resolve, reject) => {
-    const done = () => {
+    let settled = false;
+    const finish = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
       cleanup();
-      resolve();
+      if (ok) resolve();
+      else reject(new Error("Could not read that video."));
     };
-    const fail = () => {
-      cleanup();
-      reject(new Error("Could not read that video."));
+
+    const timeout = window.setTimeout(() => {
+      if (video.readyState >= 1 && video.videoWidth > 0) finish(true);
+      else finish(false);
+    }, 20_000);
+
+    const pulse = window.setInterval(() => {
+      if (video.readyState >= 1 && video.videoWidth > 0) finish(true);
+    }, 350);
+
+    const tryReady = () => {
+      report(onProgress, "Loading video…", 5);
+      if (video.readyState >= 1 && video.videoWidth > 0) finish(true);
     };
+
     const cleanup = () => {
-      video.removeEventListener("loadeddata", done);
-      video.removeEventListener("error", fail);
+      window.clearTimeout(timeout);
+      window.clearInterval(pulse);
+      video.removeEventListener("loadedmetadata", tryReady);
+      video.removeEventListener("loadeddata", tryReady);
+      video.removeEventListener("canplay", tryReady);
+      video.removeEventListener("error", onErr);
     };
-    if (video.readyState >= 2) {
-      resolve();
-      return;
-    }
-    video.addEventListener("loadeddata", done);
-    video.addEventListener("error", fail);
+    const onErr = () => finish(false);
+
+    video.addEventListener("loadedmetadata", tryReady);
+    video.addEventListener("loadeddata", tryReady);
+    video.addEventListener("canplay", tryReady);
+    video.addEventListener("error", onErr);
+    video.load();
+    tryReady();
   });
+
+  report(onProgress, "Video ready", 7);
   return video;
 }
 
-async function loadVideoFromFile(file: File) {
+async function loadVideoFromFile(
+  file: File,
+  onProgress?: FramingProgressCallback,
+) {
   const url = URL.createObjectURL(file);
-  const video = await loadVideoFromUrl(url);
+  const video = await loadVideoFromUrl(url, onProgress);
   return { video, url };
+}
+
+function isMobileLike() {
+  return /iPhone|iPad|iPod|Android|Mobi/i.test(navigator.userAgent);
+}
+
+function encodeMimeType() {
+  if (MediaRecorder.isTypeSupported("video/webm;codecs=vp9")) {
+    return "video/webm;codecs=vp9";
+  }
+  if (MediaRecorder.isTypeSupported("video/webm;codecs=vp8")) {
+    return "video/webm;codecs=vp8";
+  }
+  return "video/webm";
+}
+
+function encodeWithTimeout(
+  video: HTMLVideoElement,
+  crop: CropRect,
+  onProgress?: FramingProgressCallback,
+  ms = 45_000,
+) {
+  return Promise.race([
+    renderBodyFocusedVideo(video, crop, onProgress),
+    new Promise<Blob>((_, reject) => {
+      window.setTimeout(() => reject(new Error("Encode timed out")), ms);
+    }),
+  ]);
 }
 
 type MotionAnalysis = {
@@ -142,7 +204,9 @@ export async function detectBodyCrop(
 
   const duration =
     Number.isFinite(video.duration) && video.duration > 0 ? video.duration : 2;
-  const sampleCount = Math.min(24, Math.max(12, Math.ceil(duration * 8)));
+  const sampleCount = isMobileLike()
+    ? Math.min(14, Math.max(8, Math.ceil(duration * 5)))
+    : Math.min(24, Math.max(12, Math.ceil(duration * 8)));
   const pixelCount = analysisW * analysisH;
   const peakMotion = new Float32Array(pixelCount);
   const peakFastMotion = new Float32Array(pixelCount);
@@ -154,7 +218,11 @@ export async function detectBodyCrop(
   for (let i = 0; i < sampleCount; i++) {
     const t = (i / Math.max(sampleCount - 1, 1)) * duration * 0.98;
     report(onProgress, "Finding driver apex…", 8 + (i / sampleCount) * 22);
-    await seekVideo(video, t);
+    try {
+      await seekVideo(video, t);
+    } catch {
+      continue;
+    }
     ctx.drawImage(video, 0, 0, analysisW, analysisH);
     const cur = ctx.getImageData(0, 0, analysisW, analysisH).data;
     if (!bg) bg = cur.slice();
@@ -443,16 +511,36 @@ function buildMeta(video: HTMLVideoElement, crop: CropRect): BodyFrameMeta {
 
 async function frameVideoElement(
   video: HTMLVideoElement,
+  file: File,
   onProgress?: FramingProgressCallback,
   fileStem = "swing",
 ): Promise<FramedVideoResult> {
-  report(onProgress, "Finding driver apex…", 6);
+  report(onProgress, "Finding driver apex…", 8);
   const { crop } = await detectBodyCrop(video, onProgress);
+  const meta = buildMeta(video, crop);
   report(onProgress, "Cutting sky at driver apex…", 32);
-  const blob = await renderBodyFocusedVideo(video, crop, onProgress);
-  report(onProgress, "Body crop complete", 94);
-  const file = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });
-  return { file, meta: buildMeta(video, crop) };
+
+  const mimeType = encodeMimeType();
+  const useCssOnly =
+    isMobileLike() ||
+    typeof MediaRecorder === "undefined" ||
+    !MediaRecorder.isTypeSupported(mimeType);
+
+  if (useCssOnly) {
+    report(onProgress, "Crop applied (fast mode)", 100);
+    return { file, meta, cssOnly: true };
+  }
+
+  try {
+    report(onProgress, "Encoding cropped video…", 40);
+    const blob = await encodeWithTimeout(video, crop, onProgress);
+    report(onProgress, "Body crop complete", 94);
+    const out = new File([blob], `${fileStem}-framed.webm`, { type: blob.type });
+    return { file: out, meta, cssOnly: false };
+  } catch {
+    report(onProgress, "Using fast crop mode", 96);
+    return { file, meta, cssOnly: true };
+  }
 }
 
 export async function autoFrameSwingVideo(
@@ -460,27 +548,33 @@ export async function autoFrameSwingVideo(
   onProgress?: FramingProgressCallback,
 ): Promise<FramedVideoResult> {
   report(onProgress, "Reading video…", 2);
-  if (!file.type.startsWith("video/") || typeof MediaRecorder === "undefined") {
-    const { video, url } = await loadVideoFromFile(file);
-    try {
-      const { crop } = await detectBodyCrop(video, onProgress);
-      report(onProgress, "Done", 100);
-      return { file, meta: buildMeta(video, crop) };
-    } finally {
-      URL.revokeObjectURL(url);
-    }
+  if (!file.type.startsWith("video/")) {
+    return {
+      file,
+      meta: {
+        bodyFill: 1,
+        outputW: OUTPUT_W,
+        outputH: OUTPUT_H,
+        sourceCrop: { x: 0, y: 0, w: 1, h: 1 },
+        sourceW: 1,
+        sourceH: 1,
+      },
+    };
   }
 
-  const { video, url } = await loadVideoFromFile(file);
+  const { video, url } = await loadVideoFromFile(file, onProgress);
   try {
     const stem = file.name.replace(/\.[^.]+$/, "") || "swing";
-    const result = await frameVideoElement(video, onProgress, stem);
+    const result = await frameVideoElement(video, file, onProgress, stem);
     report(onProgress, "Done", 100);
     return result;
   } catch {
-    const { crop } = await detectBodyCrop(video, onProgress);
     report(onProgress, "Done", 100);
-    return { file, meta: buildMeta(video, crop) };
+    return {
+      file,
+      meta: buildMeta(video, { x: 0, y: 0, w: video.videoWidth, h: video.videoHeight }),
+      cssOnly: true,
+    };
   } finally {
     URL.revokeObjectURL(url);
   }
