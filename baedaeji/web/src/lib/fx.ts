@@ -8,21 +8,36 @@ export type FxQuote = {
 
 let cache: { at: number; value: FxQuote } | null = null;
 const HOUR = 60 * 60 * 1000;
-const FALLBACK = 1800;
+const FALLBACK = 1957;
+
+async function fetchNaverGbpCashBuy() {
+  const res = await fetch(
+    "https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_GBPKRW",
+    {
+      next: { revalidate: 3600 },
+      headers: {
+        "user-agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        accept: "text/html,application/xhtml+xml",
+      },
+    },
+  );
+  if (!res.ok) throw new Error("naver fx http");
+  const html = new TextDecoder("euc-kr").decode(await res.arrayBuffer());
+  const m = html.match(/현찰\s*사실때[\s\S]*?<td>[\s\S]*?([0-9,]+\.?[0-9]*)/);
+  if (!m?.[1]) throw new Error("naver fx parse");
+  const rate = Number(m[1].replace(/,/g, ""));
+  if (!Number.isFinite(rate) || rate <= 0) throw new Error("naver fx invalid");
+  return Math.round(rate);
+}
 
 export async function getGbpKrw(): Promise<FxQuote> {
   if (cache && Date.now() - cache.at < HOUR) return cache.value;
   try {
-    const res = await fetch("https://api.frankfurter.app/latest?from=GBP&to=KRW", {
-      next: { revalidate: 3600 },
-    });
-    if (!res.ok) throw new Error("fx http");
-    const data = (await res.json()) as { rates?: { KRW?: number }; date?: string };
-    const rate = data.rates?.KRW;
-    if (!rate || !Number.isFinite(rate)) throw new Error("fx parse");
+    const rate = await fetchNaverGbpCashBuy();
     const value: FxQuote = {
-      gbpKrw: Math.round(rate * 100) / 100,
-      source: "Frankfurter (ECB)",
+      gbpKrw: rate,
+      source: "네이버 · 현찰 살 때",
       fetchedAt: new Date().toISOString(),
     };
     cache = { at: Date.now(), value };
