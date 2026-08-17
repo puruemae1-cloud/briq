@@ -252,8 +252,8 @@ export function CompareStudio() {
 
   async function applyUserDtl(file: File) {
     try {
-      setUploadProgress({ slot: "dtl", label: "Saving clip…", percent: 30 });
-      setMyDtl(file);
+      const { file: f } = await prepareUserClip(file, "dtl");
+      setMyDtl(f);
       setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
     } catch (e) {
       setError(e instanceof Error ? e.message : "Upload failed.");
@@ -420,7 +420,7 @@ export function CompareStudio() {
         >
           <span>Your swing — behind (optional)</span>
           <strong>{myDtl ? myDtl.name : "Choose video"}</strong>
-          <em>Down the line · unlocks 3D (no crop on this clip)</em>
+          <em>Sky cut at driver apex · floor/sides removed · unlocks 3D</em>
           {hasUserDtl ? (
             <button
               type="button"
