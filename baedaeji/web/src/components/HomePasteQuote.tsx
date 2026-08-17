@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { lookupProductAction } from "@/app/actions/cart";
-import { formatGbp, formatKrw, quoteKrw } from "@/lib/fx";
+import { QuoteFeeBreakdown } from "@/components/QuoteFeeBreakdown";
+import { formatGbp, formatKrw, quoteKrw, feePolicySummary } from "@/lib/fx";
 import { FEE } from "@/lib/types";
 
 export function HomePasteQuote({
@@ -23,9 +24,7 @@ export function HomePasteQuote({
   const seq = useRef(0);
 
   const quote =
-    gbpPrice && gbpPrice > 0
-      ? quoteKrw({ goodsGbp: gbpPrice, gbpKrw, itemCount: 1 })
-      : null;
+    gbpPrice && gbpPrice > 0 ? quoteKrw({ goodsGbp: gbpPrice, gbpKrw }) : null;
 
   async function runLookup(raw: string) {
     const text = raw.trim();
@@ -44,7 +43,7 @@ export function HomePasteQuote({
       setGbpPrice(found.gbpPrice);
       setNote(
         found.gbpPrice
-          ? `${found.storeName} 표시가 기준 · 환율 ${formatKrw(gbpKrw)} · 마진 ${Math.round(FEE.fxMargin * 100)}% · 대행 ${Math.round(FEE.agencyRate * 100)}%`
+          ? `${found.storeName} 표시가 · £1 = ${formatKrw(gbpKrw)} · 환전 마진 ${Math.round(FEE.fxMargin * 100)}% · ${feePolicySummary()}`
           : "가격을 못 찾았습니다. 장바구니에서 운영자 확인 후 견적이 나갑니다.",
       );
     } catch {
@@ -116,24 +115,9 @@ export function HomePasteQuote({
       </div>
 
       {quote ? (
-        <dl className="card grid gap-2 p-4 text-sm">
-          <div className="flex justify-between">
-            <dt>상품 (환율·마진 포함)</dt>
-            <dd>{formatKrw(quote.goodsKrw)}</dd>
-          </div>
-          <div className="flex justify-between">
-            <dt>대행 수수료</dt>
-            <dd>{formatKrw(quote.agencyKrw)}</dd>
-          </div>
-          <div className="flex justify-between">
-            <dt>예상 국제배송</dt>
-            <dd>{formatKrw(quote.shippingKrw)}</dd>
-          </div>
-          <div className="mt-1 flex justify-between border-t border-[var(--line)] pt-2 font-medium">
-            <dt>예상 합계</dt>
-            <dd>{formatKrw(quote.totalKrw)}</dd>
-          </div>
-        </dl>
+        <div className="card p-4">
+          <QuoteFeeBreakdown quote={quote} />
+        </div>
       ) : null}
 
       {note ? <p className="text-sm text-[var(--muted)]">{note}</p> : null}

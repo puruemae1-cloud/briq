@@ -91,7 +91,8 @@ export const ORDER_STATUS_LABEL: Record<OrderStatus, string> = {
 
 export const FEE = {
   fxMargin: 0.03,
-  agencyRate: 0.08,
-  shippingPerItemKrw: 18000,
+  agencyRate: 0,
+  shippingKrw: 20000,
+  cardRate: 0.05,
   quoteTtlHours: 12,
 } as const;

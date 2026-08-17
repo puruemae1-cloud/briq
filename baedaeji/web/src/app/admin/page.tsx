@@ -72,8 +72,8 @@ export default async function AdminPage() {
                   <input name="goodsGbp" defaultValue={order.goodsGbp ?? ""} placeholder="89.00" />
                 </label>
                 <label className="field">
-                  <span>국제배송 원화</span>
-                  <input name="shippingEstKrw" defaultValue={order.fees.shippingEstKrw} />
+                  <span>배송비 (원)</span>
+                  <input name="shippingEstKrw" defaultValue={order.fees.shippingEstKrw} placeholder="20000" />
                 </label>
                 <label className="field md:col-span-4">
                   <span>운영 메모</span>

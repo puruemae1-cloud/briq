@@ -3,12 +3,12 @@ import { BookmarkletCard } from "@/components/BookmarkletCard";
 import { HomePasteQuote } from "@/components/HomePasteQuote";
 import { HomeScreenHint } from "@/components/HomeScreenHint";
 import { StoreBannerGrid } from "@/components/StoreBannerGrid";
-import { formatKrw, getGbpKrw, quoteKrw } from "@/lib/fx";
+import { formatKrw, getGbpKrw, quoteKrw, feePolicySummary } from "@/lib/fx";
 import { FEE } from "@/lib/types";
 
 export default async function HomePage() {
   const fx = await getGbpKrw();
-  const sample = quoteKrw({ goodsGbp: 10, gbpKrw: fx.gbpKrw, itemCount: 1 });
+  const sample = quoteKrw({ goodsGbp: 10, gbpKrw: fx.gbpKrw });
 
   return (
     <>
@@ -42,11 +42,11 @@ export default async function HomePage() {
             </p>
             <p className="display mt-2 text-4xl">£1 = {formatKrw(fx.gbpKrw)}</p>
             <p className="mt-1 text-sm text-[var(--muted)]">
-              {fx.source} · 환전 마진 {Math.round(FEE.fxMargin * 100)}% · 대행{" "}
-              {Math.round(FEE.agencyRate * 100)}%
+              {fx.source} · 환전 마진 {Math.round(FEE.fxMargin * 100)}%
             </p>
-            <p className="mt-3 text-sm leading-6">
-              예: £10 상품 1개 → 약 {formatKrw(sample.totalKrw)} (배송·수수료 포함)
+            <p className="mt-2 text-sm leading-6">{feePolicySummary()}</p>
+            <p className="mt-2 text-sm leading-6">
+              예: £10 상품 1개 → 약 {formatKrw(sample.totalKrw)} (관부가세 제외)
             </p>
             <ol className="mt-6 grid gap-3 text-sm leading-6">
               <li>1. 배너를 누르면 배대지 안내 화면이 남는다</li>
@@ -93,7 +93,7 @@ export default async function HomePage() {
             },
             {
               t: "견적 후 결제",
-              d: "환율·대행 수수료·예상 배송비를 보여 준 뒤 결제합니다. 첫 단계는 결제가 아니라 견적 확인입니다.",
+              d: "환율·배송·카드 수수료를 보여 준 뒤 결제합니다. 대행은 무료, 관부가세는 통관 시 고객이 직접 납부합니다.",
             },
             {
               t: "영국에서 사람이 삽니다",

@@ -3,9 +3,10 @@ import { markPaymentPendingAction } from "@/app/actions/orders";
 import { getCurrentUser } from "@/lib/auth";
 import { readOnlyDb } from "@/lib/db";
 import { formatDate } from "@/lib/format";
-import { formatGbp, formatKrw } from "@/lib/fx";
+import { formatGbp, formatKrw, quoteKrw, feePolicySummary } from "@/lib/fx";
 import { ORDER_STATUS_LABEL } from "@/lib/types";
 import { cartLinkLabel } from "@/lib/product-input";
+import { QuoteFeeBreakdown } from "@/components/QuoteFeeBreakdown";
 
 export default async function OrderDetailPage({
   params,
@@ -22,6 +23,14 @@ export default async function OrderDetailPage({
 
   const expired = Boolean(order.quotedUntil && new Date(order.quotedUntil) < new Date());
   const canPay = order.status === "quoted" && !expired && order.quotedKrw;
+  const breakdown = order.goodsGbp
+    ? quoteKrw({
+        goodsGbp: order.goodsGbp,
+        gbpKrw: order.fx.gbpKrw,
+        shippingKrw: order.fees.shippingEstKrw,
+        agencyRate: order.fees.agencyRate,
+      })
+    : null;
 
   return (
     <div className="page-wrap py-12">
@@ -52,14 +61,18 @@ export default async function OrderDetailPage({
           ))}
         </div>
         <aside className="card p-5">
-          <p className="text-sm">GBP {order.fx.gbpKrw.toLocaleString("en-US")} · {order.fx.source}</p>
+          <p className="text-sm">£1 = {formatKrw(order.fx.gbpKrw)} · {order.fx.source}</p>
+          <p className="mt-2 text-sm text-[var(--muted)]">{feePolicySummary()}</p>
           <p className="mt-2">상품 {order.goodsGbp ? formatGbp(order.goodsGbp) : "확인 중"}</p>
-          <p className="display mt-4 text-3xl">
-            {order.quotedKrw ? formatKrw(order.quotedKrw) : "운영자 견적 대기"}
-          </p>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            예상 국제배송 {formatKrw(order.fees.shippingEstKrw)} 포함
-          </p>
+          {breakdown ? (
+            <div className="mt-4">
+              <QuoteFeeBreakdown quote={breakdown} totalClassName="display text-2xl" />
+            </div>
+          ) : (
+            <p className="display mt-4 text-3xl">
+              {order.quotedKrw ? formatKrw(order.quotedKrw) : "운영자 견적 대기"}
+            </p>
+          )}
           <p className="mt-4 text-sm leading-6">
             {order.customer.name} · {order.customer.phone}
             <br />

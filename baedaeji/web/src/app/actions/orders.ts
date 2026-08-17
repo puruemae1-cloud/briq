@@ -23,13 +23,7 @@ export async function requestQuoteAction() {
       ? items.reduce((sum, i) => sum + (i.gbpPrice ?? 0) * i.qty, 0)
       : null;
     const breakdown =
-      goodsGbp !== null
-        ? quoteKrw({
-            goodsGbp,
-            gbpKrw: fx.gbpKrw,
-            itemCount: items.reduce((n, i) => n + i.qty, 0),
-          })
-        : null;
+      goodsGbp !== null ? quoteKrw({ goodsGbp, gbpKrw: fx.gbpKrw }) : null;
     const now = new Date();
     const quotedUntil = new Date(now.getTime() + FEE.quoteTtlHours * 60 * 60 * 1000).toISOString();
     const next: Order = {
@@ -52,7 +46,7 @@ export async function requestQuoteAction() {
       },
       fees: {
         agencyRate: FEE.agencyRate,
-        shippingEstKrw: breakdown?.shippingKrw ?? FEE.shippingPerItemKrw * items.length,
+        shippingEstKrw: breakdown?.shippingKrw ?? FEE.shippingKrw,
       },
       goodsGbp,
       quotedKrw: breakdown?.totalKrw ?? null,
@@ -107,12 +101,10 @@ export async function adminUpdateOrderAction(orderId: string, formData: FormData
       const goodsGbp = Number(gbpRaw);
       if (Number.isFinite(goodsGbp) && goodsGbp > 0) {
         order.goodsGbp = goodsGbp;
-        const itemCount = order.items.reduce((n, i) => n + i.qty, 0);
         const q = quoteKrw({
           goodsGbp,
           gbpKrw: fx.gbpKrw,
-          itemCount,
-          shippingPerItemKrw: shippingRaw ? Number(shippingRaw) / Math.max(1, itemCount) : undefined,
+          shippingKrw: shippingRaw ? Number(shippingRaw) : undefined,
         });
         order.fx = {
           gbpKrw: fx.gbpKrw,
@@ -126,17 +118,14 @@ export async function adminUpdateOrderAction(orderId: string, formData: FormData
         if (order.status === "needs_price") order.status = "quoted";
       }
     }
-    if (shippingRaw && Number.isFinite(Number(shippingRaw))) {
-      order.fees.shippingEstKrw = Math.round(Number(shippingRaw));
-      if (order.goodsGbp) {
-        const q = quoteKrw({
-          goodsGbp: order.goodsGbp,
-          gbpKrw: order.fx.gbpKrw,
-          itemCount: order.items.reduce((n, i) => n + i.qty, 0),
-          shippingPerItemKrw: order.fees.shippingEstKrw / Math.max(1, order.items.reduce((n, i) => n + i.qty, 0)),
-        });
-        order.quotedKrw = q.goodsKrw + q.agencyKrw + order.fees.shippingEstKrw;
-      }
+    if (shippingRaw && Number.isFinite(Number(shippingRaw)) && order.goodsGbp) {
+      const q = quoteKrw({
+        goodsGbp: order.goodsGbp,
+        gbpKrw: order.fx.gbpKrw,
+        shippingKrw: Number(shippingRaw),
+      });
+      order.fees.shippingEstKrw = q.shippingKrw;
+      order.quotedKrw = q.totalKrw;
     }
     if (status && status in {
       needs_price: 1,
