@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-10T09:46:48Z",
+  "scrapedAt": "2026-08-17T09:01:48Z",
   "categoryCounts": {
     "cw-new-releases": 48,
     "cw-bestsellers": 40,
@@ -118,9 +118,9 @@
       "C65-41CSC2-S0WB0-RO"
     ],
     "cw-clearance": [
+      "N01-39AJH4-S00E0-B1",
       "N01-41APT0-T00A0-B0",
       "N60-42ADA31S0KW1-B0",
-      "N01-39AJH4-S00E0-B1",
       "N63-39AGM3-31SQD-B0",
       "N12-41H6D1-S00K0-B0",
       "N63-36ADA3-S00W1-B1",
@@ -1299,7 +1299,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-new-releases",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C12-41A5D1-SD0K0-B0",
@@ -2131,7 +2131,7 @@
         "cw-clearance"
       ],
       "primaryCollection": "cw-clearance",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "N01-41APT0-T00P0-B0",
@@ -2772,7 +2772,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-41APT3-T00A0-MK",
@@ -3013,7 +3013,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-41APT3-T00A0-B0",
@@ -3208,7 +3208,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-41APT3-T00B0-MC",
@@ -3328,7 +3328,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-41APT0-T00K0-VC",
@@ -3418,7 +3418,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-39AJH4-S00E0-MLB",
@@ -3448,7 +3448,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C01-39AJH4-S00B0-MT",
@@ -7835,7 +7835,7 @@
         "cw-clearance"
       ],
       "primaryCollection": "cw-clearance",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "N01-39AJH4-S00E0-B1",
@@ -7865,7 +7865,7 @@
         "cw-clearance"
       ],
       "primaryCollection": "cw-clearance",
-      "inStock": true
+      "inStock": false
     }
   ]
 }
