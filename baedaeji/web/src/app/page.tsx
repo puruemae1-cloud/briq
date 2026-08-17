@@ -41,7 +41,7 @@ export default async function HomePage() {
             <p className="display mt-2 text-4xl">{fx.gbpKrw.toLocaleString("en-US")}</p>
             <p className="mt-1 text-sm text-[var(--muted)]">원 · {fx.source}</p>
             <ol className="mt-6 grid gap-3 text-sm leading-6">
-              <li>1. 배너를 누르면 영국 몰이 새 탭으로 열린다 (이 화면은 유지)</li>
+              <li>1. 배너를 누르면 Safari가 ASOS를 새 탭으로 연다</li>
               <li>2. 상품 페이지에서 주소를 복사한다</li>
               <li>3. Safari 탭에서 배대지로 돌아와 붙여 넣는다</li>
               <li>4. 또는 즐겨찾기 「배대지에 담기」로 한 번에 돌아온다</li>

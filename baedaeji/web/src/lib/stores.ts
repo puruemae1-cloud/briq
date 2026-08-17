@@ -20,7 +20,7 @@ export const STORES: StoreBanner[] = [
     id: "asos",
     nameKo: "에이소스",
     nameEn: "ASOS",
-    href: "https://www.asos.com",
+    href: "https://www.asos.com/",
     hosts: ["asos.com"],
     sort: 1,
     enabled: true,
