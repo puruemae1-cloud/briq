@@ -1,0 +1,33 @@
+---
+description: Do not push Briq updates on weekly catalogue-sync days until those GitHub Actions finish.
+alwaysApply: true
+---
+
+# Weekly sync freeze
+
+Monday/Tuesday UTC GitHub Actions rebuild brand catalogues. A slower **older** Vercel build can overwrite a newer production deploy (2026-08-17: London Undercover vs Chanel makeup).
+
+## Before any `git push` to `main`, empty-commit redeploy, or `push-product-images-tag.py`
+
+Run:
+
+```bash
+python3 scripts/weekly-sync-status.py
+```
+
+- Exit **0**: deploy as usual (`auto-deploy.mdc`).
+- Exit **2**: **do not push**. Do not start a new catalogue import that you would then deploy.
+
+## If the user asks for a new update while frozen
+
+Do the work locally only if it stays unpushed, and reply in Korean that:
+
+- 지금은 주간 동기화 요일/진행 중이라 새 업데이트를 배포하지 않는다
+- 스크립트가 알려 준 남은 작업이 끝나면 이어서 배포하겠다
+
+Do not ask “지금 강행할까요?”. Wait until `weekly-sync-status.py` exits 0, then deploy without being asked again if the original request is still in this chat.
+
+## Schedule (UTC)
+
+- **Monday**: banner 06:00, CW 08:00, GG 09:00, BB 10:00, AX 11:00, Belstaff 12:00, Paul Smith 13:00, London Undercover 14:00
+- **Tuesday**: Gucci 07:00

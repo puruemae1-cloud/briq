@@ -5,6 +5,8 @@ alwaysApply: true
 
 # Auto-deploy Briq changes
 
+**Weekly sync freeze (overrides this file):** before any `git push` to `main` or `push-product-images-tag.py`, run `python3 scripts/weekly-sync-status.py`. If it exits 2, do not deploy — follow `.cursor/rules/weekly-sync-freeze.mdc` and tell the user you will push after weekly jobs finish.
+
 When finishing catalog, product, image, category, UI/CSS, or site content work that should go live:
 
 1. **Commit** the relevant code/data changes (follow the repo git commit protocol; no secrets).
