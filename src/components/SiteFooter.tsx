@@ -27,6 +27,7 @@ export function SiteFooter() {
         <div>
           <h4>Shop</h4>
           <Link href="/shop">Shop (전체상품)</Link>
+          <Link href="/swing">Swing 코칭</Link>
           {navCategories.map((c) => (
             <Link key={c.id} href={c.href}>
               {c.labelKo}
