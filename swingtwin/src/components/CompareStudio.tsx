@@ -98,15 +98,15 @@ export function CompareStudio() {
   const applyTourDisplayStyle = useCallback(
     async (src: string, userMeta?: BodyFrameMeta) => {
       const known = getReferenceClip(pro.id);
-      if (
-        known?.displayCrop &&
-        known.sourceW &&
-        known.sourceH &&
-        (src === known.src || src.endsWith(known.src))
-      ) {
-        setTourDisplayStyle(
-          cropToVideoStyle(known.displayCrop, known.sourceW, known.sourceH, 1),
-        );
+      const isBundledPortrait =
+        Boolean(known?.sourceW && known.sourceH && known.sourceH >= known.sourceW) &&
+        (src === known?.src || src.endsWith(known?.src ?? ""));
+
+      if (isBundledPortrait) {
+        setTourDisplayStyle({
+          objectFit: "cover",
+          objectPosition: "50% 70%",
+        });
         return;
       }
 
@@ -120,7 +120,7 @@ export function CompareStudio() {
           : 1;
         setTourDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH, scale));
       } catch {
-        setTourDisplayStyle({ objectFit: "cover", objectPosition: "28% 78%" });
+        setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 70%" });
       }
     },
     [pro.id],

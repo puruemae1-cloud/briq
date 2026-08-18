@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Re-download Rory DTL reference from PGA Tour Brightcove (Swing Theory driver segment).
+# Re-download Rory DTL reference from PGA Tour Brightcove and bake a 3:4 portrait file.
 set -euo pipefail
 
 PK="BCpkADawqM0vwoTnlGSUgP84xuQaUJJUF2Hp1MT2MbyDvrD8DfnRNr57b3W-SnGPIUswIm1LLqO6pEdQf6lVX8bADNuaxAT-Lodzt2GSUUZRoUQMsUfgTuy1NYQxkKwXKRfSmCdrRF-dmXGa"
@@ -19,8 +19,10 @@ url=sorted(mp4,key=lambda s:s.get('size',0),reverse=True)[0]['src']
 subprocess.run(['curl','-fsSL',url,'-o','${TMP}'], check=True)
 "
 
+# DRIVER — BACK DTL segment, baked to 540×720 so Compare does not CSS-crop a 16:9 plate.
 ffmpeg -y -ss 117.2 -t 6.8 -i "$TMP" \
-  -an -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -movflags +faststart \
+  -vf "crop=360:480:250:220,scale=540:720" \
+  -an -c:v libx264 -preset slow -crf 20 -pix_fmt yuv420p -movflags +faststart \
   "${OUT_DIR}/rory-mcilroy-dtl.mp4"
 
 rm -f "$TMP"
