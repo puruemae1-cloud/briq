@@ -1,4 +1,4 @@
-import type {  Product  } from "@/data/product-types";
+import type { Product } from "@/data/products";
 import data from "./gc-catalog.json";
 
 /** Auto-generated — Gucci handbags + men's bags + women's/men's RTW + women's/men's shoes + wallets + men's wallets + fashion accessories + men's fashion accessories + women's/men's travel + jewellery + gifts + men's gifts. */

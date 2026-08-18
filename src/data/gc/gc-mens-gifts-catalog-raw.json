@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-11T08:25:09.447320+00:00",
+  "scrapedAt": "2026-08-18T07:55:19.036795+00:00",
   "source": "https://www.gucci.com/uk/en_gb/ca/gifts/gifts-for-men-c-gifts-for-him",
   "collections": {
     "gc-men-gifts": {
@@ -14,7 +14,7 @@
       "categoryCodes": [
         "gifts-gifts-for-him-bags"
       ],
-      "count": 51
+      "count": 49
     },
     "gc-men-gifts-belts": {
       "label": "Belts",
@@ -35,7 +35,7 @@
       "categoryCodes": [
         "gifts-gifts-for-him-shoes"
       ],
-      "count": 52
+      "count": 53
     },
     "gc-men-gifts-small-accessories": {
       "label": "Small Accessories",
@@ -49,7 +49,7 @@
       "categoryCodes": [
         "gifts-for-him-small-leathergoods"
       ],
-      "count": 48
+      "count": 49
     },
     "gc-men-gifts-sunglasses": {
       "label": "Sunglasses",
@@ -74,8 +74,8 @@
     }
   },
   "count": 239,
-  "tagOnlyCount": 238,
-  "newCount": 1,
+  "tagOnlyCount": 233,
+  "newCount": 6,
   "failedCategoryCodes": [],
   "note": "Official gifts-for-him hub Category filters + personalised. Existing SKUs are tagOnly under gc-men-gifts*; keep top-level gc-gifts.",
   "products": [
@@ -101,7 +101,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157487+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818376+00:00"
     },
     {
       "id": "307929AADCW2179",
@@ -125,7 +125,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157518+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818411+00:00"
     },
     {
       "id": "307929BLM001000",
@@ -149,7 +149,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157533+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818428+00:00"
     },
     {
       "id": "406994BLM001000",
@@ -173,7 +173,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157544+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818436+00:00"
     },
     {
       "id": "406994BLM002024",
@@ -197,7 +197,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157556+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818442+00:00"
     },
     {
       "id": "411924CWC1N1000",
@@ -222,7 +222,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157566+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818450+00:00"
     },
     {
       "id": "411924KGDHX8449",
@@ -247,7 +247,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157574+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818456+00:00"
     },
     {
       "id": "414516AP00T1000",
@@ -272,7 +272,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157583+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818464+00:00"
     },
     {
       "id": "42944602JP09064",
@@ -296,7 +296,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157592+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818470+00:00"
     },
     {
       "id": "429469GIB101098",
@@ -320,7 +320,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157600+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818477+00:00"
     },
     {
       "id": "455307J84000811",
@@ -344,7 +344,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157609+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818485+00:00"
     },
     {
       "id": "4565204B0024168",
@@ -368,7 +368,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157644+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818493+00:00"
     },
     {
       "id": "4955924G3502179",
@@ -392,7 +392,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157654+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818501+00:00"
     },
     {
       "id": "5465519Y9209666",
@@ -416,7 +416,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157663+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818509+00:00"
     },
     {
       "id": "6600794G0051000",
@@ -440,7 +440,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157671+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818516+00:00"
     },
     {
       "id": "67392192TIN1000",
@@ -593,7 +593,7 @@
       },
       "kind": "mens-gifts",
       "tagOnly": false,
-      "scrapedAt": "2026-08-11T08:25:08.159712+00:00",
+      "scrapedAt": "2026-08-18T07:55:16.820971+00:00",
       "localImages": [
         "/products/gc-pdp/67392192TIN1000/1.jpg",
         "/products/gc-pdp/67392192TIN1000/2.jpg",
@@ -611,8 +611,12 @@
       "url": "https://www.gucci.com/uk/en_gb/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-parfum-pour-homme-p-703099999990099",
       "gbpPrice": 100.0,
       "priceLabel": "£ 100",
-      "image": "",
-      "images": [],
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1636650075/703099_99999_0099_001_100_0000_Light-gucci-guilty-parfum-pour-homme-50ml.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1636650075/703099_99999_0099_001_100_0000_Light-gucci-guilty-parfum-pour-homme-50ml.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1636650077/703099_99999_0099_002_100_0000_Light-gucci-guilty-parfum-pour-homme-50ml.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1636650077/703099_99999_0099_002_100_0000_Light.jpg",
       "collections": [
         "gc-accessories-mens",
         "gc-men-gifts",
@@ -622,10 +626,69 @@
       "inStock": true,
       "label": "Online Exclusive",
       "isDiyProduct": false,
-      "sizes": [],
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "810566427"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Gucci Guilty Parfum Pour Homme, 50ml",
+        "detailParts": [
+          "50ml",
+          "Gucci Guilty Parfum Pour Homme opens with a lighter, milder, and more modernized aromatic hook of French Lavandin Abrialis and uplifting Lemon Sfumatrice that combine perfectly with the intensity of Juniper. ",
+          "The true essence of Gucci Guilty Pour Homme is magnified at the heart, with the deep ambery signature of Spanish Cistus combined with the floral richness of Orange Flower and a spicy hint of Nutmeg. ",
+          "The mysterious elegance of Indonesian Patchouli is reinforced with the long-lasting sensation of Dry Woods and Musks. ",
+          "Encapsulated in a fully metallized bottle, dressed in dark anthracite, with a matching cap. The design is finished with the House’s emblematic interlocking G logo. ",
+          "Please note, returns on this item will be accepted only if the product is intact"
+        ],
+        "editorialDescription": "The #ForeverGuilty universe continues to pursue a liberated notion of love with a reinterpretation of the classic Gucci Guilty fragrances. The new vision elevates the scent to higher levels of intensity for those looking for a declaration of love free from the rules and definitions of society. Designed to act as emblems of the connection between like-minded, eccentric lovers, Gucci Guilty Parfum Pour Homme is a Woody Aromatic Ambery fragrance that magnifies the true essence of the Gucci Guilty Pour Homme signature.",
+        "colors": [
+          {
+            "hex": "n/a",
+            "name": "Undefined"
+          }
+        ],
+        "variationDescription": "parfum"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "[구찌 길티] 퍼퓸 뿌르 옴므, 50ml",
+        "lineName": "구찌 길티",
+        "detailParts": [
+          "제품 주요 사양 : 모든 피부 타입",
+          "제조국: 스페인",
+          "화장품제조업자: COTY SPAIN, S.L.",
+          "화장품책임판매업자: (주) 코티코리아",
+          "제조번호: 용기에 별도 표시",
+          "「화장품법」에 따른 기능성 화장품(미백, 주름개선, 자외선 차단제품 등)의 경우: 해당 없음",
+          "구찌 길티 퍼퓸 뿌르 옴므는 한결 가볍고 부드러우며 프랑스 라반딘 아브리알리스(French Lavandin Abrialis)의 모던한 아로마틱 향, 그리고 주니퍼(Juniper)의 강렬함과 완벽하게 조화되는 상쾌한 레몬 스푸마트리스(Lemon Sfumatrice)로 시작됩니다. ",
+          "구찌 길티 뿌르 옴므의 진정한 본질은 하트 노트에서 스페인 시스투스(Spanish Cistus)의 깊은 시그니처 앰버 향과 오렌지 플라워의 풍부한 플로라 향, 그리고 넛메그의 스파이시 향이 결합되며 강렬하게 드러납니다. ",
+          "인도네시아 파촐리의 신비로운 우아함은 오랫동안 지속되는 드라이 우드와 머스크의 관능적인 매력과 함께 강력함이 배로 증가합니다. ",
+          "전체 표면을 다크 앤트러사이트 컬러 메탈로 처리한 보틀에 담겼으며, 비슷한 디자인의 캡이 제공됩니다. 하우스를 상징하는 인터로킹 G 로고를 장식해 디자인을 마무리했습니다. ",
+          "전성분: 변성알코올, 정제수, 프로필렌글라이콜, 향료, 리모넨, 리날룰, 벤질살리실레이트, 알파-아이소메틸아이오논, 쿠마린, 시트랄, 제라니올, 시트로넬올\n",
+          "상품 발송일을 기준으로 사용기한이 12개월 이상 남아 있는 제품만을 판매합니다. ",
+          "사용할 때의 주의사항:  1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것. 2. 상처가 있는 부위 등에는 사용을 자제할 것. 3. 보관 및 취급 시의 주의사항 1) 어린이의 손이 닿지 않는 곳에 보관할 것 2) 직사광선을 피해서 보관할 것",
+          "품질보증기준: 관련 법 및 소비자 분쟁해결 규정에 따름",
+          "용량: 50ml",
+          "상품이 손상되지 않은 경우에만 반품이 가능합니다.",
+          "소비자 상담 관련 전화번호: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com"
+        ],
+        "editorialDescription": "#ForeverGuilty 유니버스는 클래식 구찌 길티 향수의 재해석을 통해 자유로운 사랑의 개념을 추구합니다. 이 새로운 비전은 사회의 규범과 관념에 얽매이지 않는 사랑을 선언하고자 하는 이들을 위한 향수에 강렬함을 한층 더합니다. 마음이 서로 잘 맞는 연인을 연결하는 상징으로 디자인된 구찌 길티 퍼퓸 뿌르 옴므는 구찌 길티 뿌르 옴므의 시그니처 향을 더욱 강렬하게 표현한 우디 아로마틱 앰버 향이 특징적입니다.",
+        "variationDescription": "퍼퓸"
+      },
       "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157679+00:00"
+      "tagOnly": false,
+      "scrapedAt": "2026-08-18T07:55:16.820449+00:00",
+      "localImages": [
+        "/products/gc-pdp/703099999990099/1.jpg",
+        "/products/gc-pdp/703099999990099/2.jpg"
+      ],
+      "localImage": "/products/gc-pdp/703099999990099/1.jpg",
+      "localHover": "/products/gc-pdp/703099999990099/2.jpg"
     },
     {
       "id": "7443794E2174174",
@@ -649,7 +712,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157687+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818523+00:00"
     },
     {
       "id": "74630896IWT8745",
@@ -674,7 +737,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157696+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818530+00:00"
     },
     {
       "id": "757892AACAG9055",
@@ -698,7 +761,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157708+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818538+00:00"
     },
     {
       "id": "76001996IWT8745",
@@ -722,7 +785,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157716+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818544+00:00"
     },
     {
       "id": "760775FACMZ4049",
@@ -746,7 +809,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157724+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818551+00:00"
     },
     {
       "id": "760775FACMZ9746",
@@ -770,7 +833,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157732+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818558+00:00"
     },
     {
       "id": "765589999990099",
@@ -780,8 +843,12 @@
       "url": "https://www.gucci.com/uk/en_gb/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-elixir-de-parfum-pour-homme-60ml-p-765589999990099",
       "gbpPrice": 134.0,
       "priceLabel": "£ 134",
-      "image": "",
-      "images": [],
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690978676/765589_99999_0099_001_100_0000_Light-gucci-guilty-elixir-de-parfum-pour-homme-60ml.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690978676/765589_99999_0099_001_100_0000_Light-gucci-guilty-elixir-de-parfum-pour-homme-60ml.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690978676/765589_99999_0099_002_100_0000_Light-gucci-guilty-elixir-de-parfum-pour-homme-60ml.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690978676/765589_99999_0099_002_100_0000_Light.jpg",
       "collections": [
         "gc-accessories-mens",
         "gc-men-gifts",
@@ -791,10 +858,74 @@
       "inStock": true,
       "label": null,
       "isDiyProduct": false,
-      "sizes": [],
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "813156949"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Gucci Guilty Elixir de Parfum Pour Homme, 60ml",
+        "detailParts": [
+          "Eau de Parfum",
+          "Olfactive family: ambery leathery",
+          "Key ingredients: Orris Butter, Ambrofix, Benzoin ",
+          "The original essence is magnified with the infusion of Vanillin Extract, while the addition of noble Orris Butter imparts a warm, enveloping aroma.",
+          "Elevating its distinctive nature, the exhilarating Ambrofix™,  complemented by smoky hints of Nutmeg, heightens the scent to its peak expression. ",
+          "The base notes of Benzoin imbue the fragrance with depth and magnetism. ​",
+          "Packaging: presented in sophisticated green, the design is finished with the House’s Interlocking G logo and a silver brushed caps.",
+          "60ml",
+          "Made in Spain"
+        ],
+        "editorialDescription": "Gucci Guilty Elixir de Parfum Pour Homme is a powerful invitation to love and self-acceptance. The fragrance has an ambery leathery scent that features precious Patchouli, the signature ingredient of Gucci Guilty, amplified in concentration for an intensified impact. The bouquet is presented in a brightly coloured flacon, created to mirror its woman's counterpart in their sleek symmetry.",
+        "colors": [
+          {
+            "hex": "n/a",
+            "name": "Undefined"
+          }
+        ],
+        "variationDescription": "eau de parfum"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "[구찌 길티] 엘릭서 드 퍼퓸 뿌르 옴므 퍼퓸",
+        "detailParts": [
+          "제품 주요 사양 : 모든 피부 타입",
+          "제조국: 스페인",
+          "화장품제조업자: COTY SPAIN, S.L.",
+          "화장품책임판매업자: (주) 코티코리아",
+          "제조번호: 용기에 별도 표시",
+          "「화장품법」에 따른 기능성 화장품(미백, 주름개선, 자외선 차단제품 등)의 경우: 해당 없음",
+          "오 드 퍼퓸",
+          "계열: 앰버 레더",
+          "바닐린 추출물을 더해 오리지널 에센스를 더욱 돋보이게 하고, 고귀한 감각의 오리스 버터를 첨가하여 따뜻하고 포근한 향을 선사합니다.",
+          "특유의 개성을 한껏 끌어올려 주는 산뜻한 암브로픽스™는 스모키한 너트맥의 향이 가미되어 향기를 최고조로 끌어올립니다. ",
+          "벤조인의 베이스 노트는 향에 깊이와 매력을 불어넣어줍니다. ​",
+          "패키징: 세련된 그린 색상으로 선보이며 하우스의 인터로킹 G 로고와 실버 브러시드 캡으로 마감된 디자인.",
+          "주요 성분: 변성알코올, 정제수, 에칠헥실살리실레이트, 부틸메톡시디벤조일메탄, 에탄올, 트리스(테트라메틸하이드록시피페리딘올)시트레이트, 황색4호, 적색504호, 향료, 쿠마린, 알파-아이소메틸아이오논, 하이드록시시트로넬알, 유제놀, 리날룰, 리모넨, 벤질벤조에이트, 아이소유제놀, 메틸2-옥티노에이트",
+          "상품 발송일을 기준으로 사용기한이 12개월 이상 남아 있는 제품만을 판매합니다. ",
+          "사용할 때의 주의사항:  1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것. 2. 상처가 있는 부위 등에는 사용을 자제할 것. 3. 보관 및 취급 시의 주의사항 1) 어린이의 손이 닿지 않는 곳에 보관할 것 2) 직사광선을 피해서 보관할 것",
+          "품질보증기준: 관련 법 및 소비자 분쟁해결 규정에 따름",
+          "60ml",
+          "제조국: 스페인",
+          "상품이 손상되지 않은 경우에만 반품이 가능합니다.",
+          "소비자 상담 관련 전화번호: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com"
+        ],
+        "editorialDescription": "구찌 길티 엘릭서 드 퍼퓸 뿌르 옴므는 사랑을 누리면서 완전한 자기 수용을 실현할 수 있는 공간으로 여러분을 초대합니다. 구찌 길티의 시그니처 성분인 고급스러운 파촐리가 농도를 증폭시켜 강렬한 임팩트를 선사하는 앰버 레더 향이 특징입니다. 부케는 여성의 모습을 재현하여 세련된 형태로 대칭을 이루는 밝은 색상의 보틀에 담겨 제공됩니다.",
+        "variationDescription": "오 드 퍼퓸"
+      },
       "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157740+00:00"
+      "tagOnly": false,
+      "scrapedAt": "2026-08-18T07:55:16.821142+00:00",
+      "localImages": [
+        "/products/gc-pdp/765589999990099/1.jpg",
+        "/products/gc-pdp/765589999990099/2.jpg"
+      ],
+      "localImage": "/products/gc-pdp/765589999990099/1.jpg",
+      "localHover": "/products/gc-pdp/765589999990099/2.jpg"
     },
     {
       "id": "768243FACQC1048",
@@ -819,7 +950,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157748+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818577+00:00"
     },
     {
       "id": "768243FAFBE8448",
@@ -844,7 +975,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157756+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818586+00:00"
     },
     {
       "id": "768248FACQC1048",
@@ -868,7 +999,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157766+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818594+00:00"
     },
     {
       "id": "768248FAFBE8448",
@@ -892,7 +1023,31 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157776+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818600+00:00"
+    },
+    {
+      "id": "768255FACQC1048",
+      "productCode": "768255FACQC1048",
+      "title": "Grey trim medium pouch",
+      "variant": "black GG Supreme canvas",
+      "url": "https://www.gucci.com/uk/en_gb/pr/men/travel-bags-for-men/accessories-for-men/grey-trim-medium-pouch-p-768255FACQC1048",
+      "gbpPrice": 710.0,
+      "priceLabel": "£ 710",
+      "image": "",
+      "images": [],
+      "collections": [
+        "gc-accessories-mens",
+        "gc-men-gifts",
+        "gc-men-gifts-small-leathergoods",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "sizes": [],
+      "kind": "mens-gifts",
+      "tagOnly": true,
+      "scrapedAt": "2026-08-18T07:55:16.818621+00:00"
     },
     {
       "id": "77415392TIT1000",
@@ -917,7 +1072,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157781+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818626+00:00"
     },
     {
       "id": "783396I16009065",
@@ -941,7 +1096,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157786+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818632+00:00"
     },
     {
       "id": "783403ICUA08155",
@@ -965,7 +1120,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157791+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818636+00:00"
     },
     {
       "id": "792075FADJA1042",
@@ -990,7 +1145,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157795+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818641+00:00"
     },
     {
       "id": "792080FADJQ1185",
@@ -1014,31 +1169,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157800+00:00"
-    },
-    {
-      "id": "792082FADJA1042",
-      "productCode": "792082FADJA1042",
-      "title": "GG Black small messenger bag",
-      "variant": "black GG Supreme",
-      "url": "https://www.gucci.com/uk/en_gb/pr/men/bags-for-men/messenger-crossbody-bags-for-men/gg-black-small-messenger-bag-p-792082FADJA1042",
-      "gbpPrice": 1070.0,
-      "priceLabel": "£ 1,070",
-      "image": "",
-      "images": [],
-      "collections": [
-        "gc-accessories-mens",
-        "gc-men-gifts",
-        "gc-men-gifts-bags",
-        "gucci-accessories"
-      ],
-      "inStock": true,
-      "label": null,
-      "isDiyProduct": false,
-      "sizes": [],
-      "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157806+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818646+00:00"
     },
     {
       "id": "796779I18B08605",
@@ -1062,7 +1193,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157811+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818650+00:00"
     },
     {
       "id": "796785I18B09065",
@@ -1086,7 +1217,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157816+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818655+00:00"
     },
     {
       "id": "8113444G2001000",
@@ -1110,7 +1241,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157821+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818659+00:00"
     },
     {
       "id": "8113444G2001200",
@@ -1134,7 +1265,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157826+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818663+00:00"
     },
     {
       "id": "8123784G2001000",
@@ -1158,7 +1289,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157830+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818668+00:00"
     },
     {
       "id": "814949J84008106",
@@ -1182,7 +1313,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157835+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818672+00:00"
     },
     {
       "id": "817017JAAH48766",
@@ -1206,7 +1337,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157840+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818677+00:00"
     },
     {
       "id": "817380J160N8126",
@@ -1230,7 +1361,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157845+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818680+00:00"
     },
     {
       "id": "820724AAE5X1000",
@@ -1255,7 +1386,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157850+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818684+00:00"
     },
     {
       "id": "834271FAEOI9746",
@@ -1280,7 +1411,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157855+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818689+00:00"
     },
     {
       "id": "834289AADCW1000",
@@ -1304,7 +1435,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157860+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818693+00:00"
     },
     {
       "id": "834460FAEOI9746",
@@ -1329,7 +1460,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157865+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818697+00:00"
     },
     {
       "id": "834466FAEOJ9747",
@@ -1353,7 +1484,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157871+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818701+00:00"
     },
     {
       "id": "834467FAEOF9745",
@@ -1377,7 +1508,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157876+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818705+00:00"
     },
     {
       "id": "834795FAEOI9746",
@@ -1401,7 +1532,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157881+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818709+00:00"
     },
     {
       "id": "836244IAAE58182",
@@ -1425,7 +1556,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157886+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818713+00:00"
     },
     {
       "id": "836244IAAE58489",
@@ -1449,7 +1580,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157891+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818717+00:00"
     },
     {
       "id": "8365594GABX4469",
@@ -1473,7 +1604,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157897+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818722+00:00"
     },
     {
       "id": "838593FAE0Y9870",
@@ -1497,7 +1628,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157901+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818726+00:00"
     },
     {
       "id": "839103FAEOF9745",
@@ -1521,7 +1652,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157906+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818730+00:00"
     },
     {
       "id": "839106FAEOF9745",
@@ -1545,7 +1676,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157910+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818734+00:00"
     },
     {
       "id": "839155FAEOF9745",
@@ -1570,7 +1701,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157915+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818738+00:00"
     },
     {
       "id": "8403379AAHX1050",
@@ -1594,7 +1725,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157920+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818742+00:00"
     },
     {
       "id": "8403379AAI38596",
@@ -1618,7 +1749,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157925+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818746+00:00"
     },
     {
       "id": "849862FAFGJ1000",
@@ -1642,7 +1773,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157930+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818750+00:00"
     },
     {
       "id": "850175AAFDV1000",
@@ -1666,7 +1797,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157936+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818753+00:00"
     },
     {
       "id": "850187AAFDV1000",
@@ -1690,7 +1821,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157942+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818759+00:00"
     },
     {
       "id": "850214AAFOM1053",
@@ -1714,7 +1845,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157947+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818763+00:00"
     },
     {
       "id": "850223AAFOK1053",
@@ -1738,7 +1869,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157952+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818767+00:00"
     },
     {
       "id": "850242AAFOM1053",
@@ -1762,7 +1893,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157957+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818771+00:00"
     },
     {
       "id": "8531774G2009774",
@@ -1786,7 +1917,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157962+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818775+00:00"
     },
     {
       "id": "8533504E0094266",
@@ -1810,7 +1941,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157966+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818780+00:00"
     },
     {
       "id": "8533564E6484100",
@@ -1834,7 +1965,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157971+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818784+00:00"
     },
     {
       "id": "853846J89L08518",
@@ -1858,7 +1989,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157976+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818788+00:00"
     },
     {
       "id": "853849J89L08518",
@@ -1882,7 +2013,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157981+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818792+00:00"
     },
     {
       "id": "853978J84000818",
@@ -1906,7 +2037,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157986+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818797+00:00"
     },
     {
       "id": "854308J89B08131",
@@ -1930,7 +2061,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157992+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818801+00:00"
     },
     {
       "id": "854366J89B08131",
@@ -1954,7 +2085,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.157997+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818805+00:00"
     },
     {
       "id": "854485HAAN91000",
@@ -1978,7 +2109,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158002+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818809+00:00"
     },
     {
       "id": "854734AAFDV1000",
@@ -2002,7 +2133,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158007+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818813+00:00"
     },
     {
       "id": "854750AAFWC1048",
@@ -2026,7 +2157,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158012+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818817+00:00"
     },
     {
       "id": "855566FAFJB1000",
@@ -2050,7 +2181,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158017+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818822+00:00"
     },
     {
       "id": "855566FAFJB9780",
@@ -2074,7 +2205,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158022+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818826+00:00"
     },
     {
       "id": "855693FACHL9050",
@@ -2098,31 +2229,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158027+00:00"
-    },
-    {
-      "id": "855695FAFJK9043",
-      "productCode": "855695FAFJK9043",
-      "title": "Medium GG backpack",
-      "variant": "white GG Supreme",
-      "url": "https://www.gucci.com/uk/en_gb/pr/men/bags-for-men/backpacks-for-men/medium-gg-backpack-p-855695FAFJK9043",
-      "gbpPrice": 1030.0,
-      "priceLabel": "£ 1,030",
-      "image": "",
-      "images": [],
-      "collections": [
-        "gc-accessories-mens",
-        "gc-men-gifts",
-        "gc-men-gifts-bags",
-        "gucci-accessories"
-      ],
-      "inStock": true,
-      "label": null,
-      "isDiyProduct": false,
-      "sizes": [],
-      "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158032+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818830+00:00"
     },
     {
       "id": "856041FAFTC9866",
@@ -2146,7 +2253,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158038+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818834+00:00"
     },
     {
       "id": "857018AAF1X2750",
@@ -2170,7 +2277,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158043+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818838+00:00"
     },
     {
       "id": "857018AAFUH1086",
@@ -2194,7 +2301,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158048+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818842+00:00"
     },
     {
       "id": "857018AAFUH9245",
@@ -2218,7 +2325,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158053+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818846+00:00"
     },
     {
       "id": "859247IAAGP8163",
@@ -2242,7 +2349,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158058+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818850+00:00"
     },
     {
       "id": "860868AAFDV1000",
@@ -2266,7 +2373,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158063+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818854+00:00"
     },
     {
       "id": "864119AAF3Q2140",
@@ -2290,7 +2397,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158068+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818857+00:00"
     },
     {
       "id": "864119AAF3Q2535",
@@ -2314,7 +2421,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158073+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818861+00:00"
     },
     {
       "id": "864147AAHAJ2024",
@@ -2338,7 +2445,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158078+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818864+00:00"
     },
     {
       "id": "864147AAHAJ4009",
@@ -2362,7 +2469,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158082+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818869+00:00"
     },
     {
       "id": "864233FAFUT9611",
@@ -2387,7 +2494,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158087+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818873+00:00"
     },
     {
       "id": "864485AAGDQ1053",
@@ -2412,7 +2519,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158092+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818877+00:00"
     },
     {
       "id": "864485FAFV99653",
@@ -2437,7 +2544,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158136+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818880+00:00"
     },
     {
       "id": "865046FAFYV1161",
@@ -2461,7 +2568,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158142+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818884+00:00"
     },
     {
       "id": "865046FAFYV9649",
@@ -2485,7 +2592,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158147+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818888+00:00"
     },
     {
       "id": "8653204E0091000",
@@ -2509,7 +2616,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158152+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818938+00:00"
     },
     {
       "id": "8653204E0094000",
@@ -2533,7 +2640,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158157+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818942+00:00"
     },
     {
       "id": "8653244E0094000",
@@ -2557,7 +2664,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158162+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818946+00:00"
     },
     {
       "id": "865441AAGFF1048",
@@ -2581,7 +2688,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158167+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818951+00:00"
     },
     {
       "id": "865454999990099",
@@ -2591,8 +2698,14 @@
       "url": "https://www.gucci.com/uk/en_gb/pr/beauty/beauty-gift-sets/gucci-guilty-pour-homme-gift-set-p-865454999990099",
       "gbpPrice": 107.0,
       "priceLabel": "£ 107",
-      "image": "",
-      "images": [],
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035212/865454_99999_0099_001_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035212/865454_99999_0099_001_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035212/865454_99999_0099_002_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035212/865454_99999_0099_003_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035213/865454_99999_0099_004_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035212/865454_99999_0099_002_100_0000_Light.jpg",
       "collections": [
         "gc-accessories-mens",
         "gc-men-gifts",
@@ -2602,10 +2715,71 @@
       "inStock": true,
       "label": "New",
       "isDiyProduct": false,
-      "sizes": [],
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814186527"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Gucci Guilty Pour Homme gift set",
+        "detailParts": [
+          "Gucci Guility Pour Homme Eau de Toilette: 90ml",
+          "Gucci Guility Pour Homme Shower Gel: 50ml",
+          "Gucci Guility Pour Homme Eau de Toilette Travel Spray: 15ml",
+          "Top notes of Pink Pepper, a spicy, intense flavor mixed with invigorating Italian Lemon.",
+          "Heart notes of Orange Blossom Absolute blended with Neroli and French Lavender.",
+          "Base notes of Patchouli, embodying a modern expression of sensuality, mystery, and intrigue. The dry down is intensified with the masculine richness of Cedarwood."
+        ],
+        "editorialDescription": "Gucci Guilty Eau de Toilette Pour Homme is a woody aromatic spicy fragrance. A vibrant opening of Lemon and piquant Pink Pepper leads into a heart of Lavandin and orange blossom absolute. At the base, Patchouli reveals its rich, leathery and woody facets. Here, the scent is presented in a three-piece gift set.",
+        "colors": [
+          {
+            "hex": "n/a",
+            "name": "Undefined"
+          }
+        ],
+        "variationDescription": "eau de toilette"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "구찌 길티 뿌르 옴므 기프트 세트",
+        "detailParts": [
+          "제조국: 구찌 길티 뿌르 옴므 샤워젤-모나코 / 구찌 길티 뿌르 옴므 오 드 뚜왈렛 내추럴 스프레이-스페인",
+          "화장품제조업자: 구찌 길티 뿌르 옴므 샤워젤-COTY - LANCASTER SAM / 구찌 길티 뿌르 옴므 오 드 뚜왈렛 내추럴 스프레이-COTY SPAIN, S.L.",
+          "화장품책임판매업자: (주) 코티코리아",
+          "제조번호: 용기에 별도 표시",
+          "「화장품법」에 따른 기능성 화장품(미백, 주름개선, 자외선 차단제품 등)의 경우: 해당 없음",
+          "구찌 길티 뿌르 옴므 오 드 뚜왈렛: 용량: 90ml",
+          "구찌 길티 뿌르 옴므 샤워 젤: 용량: 50ml",
+          "구찌 길티 뿌르 옴므 오 드 뚜왈렛 여행용 스프레이: 용량: 15ml",
+          "제품 주요 사양 : 모든 피부 타입",
+          "전성분: 구찌 길티 뿌르 옴므 샤워젤-정제수, 소듐C14-16올레핀설포네이트, 코카미도프로필베타인, 향료, 소듐클로라이드, 프로판다이올, 소듐메틸올레오일타우레이트, 소듐벤조에이트, 시트릭애씨드, 테트라메틸아세틸옥타하이드로나프탈렌, 리날릴아세테이트, 리날룰, 리모넨, 소듐하이드록사이드, 광곽향오일, 헥사메틸인다노피란, 하이드록시시트로넬알, 레몬껍질오일, 벤질살리실레이트, 아밀살리실레이트, 알파-아이소메틸아이오논 / 구찌 길티 뿌르 옴므 오 드 뚜왈렛 내추럴 스프레이-변성알코올, 정제수, 향료, 에칠헥실메톡시신나메이트, 디에칠아미노하이드록시벤조일헥실벤조에이트, 비에이치티, 자색401호, 적색504호, 황색4호, 청색1호, 적색227호",
+          "탑 노트: 강렬한 핑크 페퍼, 이와 조화를 이루는 신선한 이탈리안 레몬.",
+          "하트 노트: 오렌지 블로썸 앱솔루트에 조합한 네롤리와 프렌치 라벤더.",
+          "베이스 노트: 현대적인 관능미, 신비로움, 흥미를 불어넣는 파촐리. 은은하게 퍼지는 시더우드 잔향.",
+          "상품 발송일을 기준으로 사용기한이 12개월 이상 남아 있는 제품만을 판매합니다.",
+          "사용할 때의 주의사항:  1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것. 2. 상처가 있는 부위 등에는 사용을 자제할 것. 3. 보관 및 취급 시의 주의사항 1) 어린이의 손이 닿지 않는 곳에 보관할 것 2) 직사광선을 피해서 보관할 것",
+          "소비자 상담 관련 전화번호: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com",
+          "상품이 손상되지 않은 경우에만 반품이 가능합니다.",
+          "품질보증기준: 관련 법 및 소비자 분쟁해결 규정에 따름"
+        ],
+        "editorialDescription": "구찌 길티 오 드 뚜왈렛 뿌르 옴므는 우디 아로마틱 스파이시 향을 선사합니다. 생생한 레몬과 톡 쏘는 핑크 페퍼로 감각을 깨우며, 라반딘과 오렌지 블로썸 앱솔루트가 중심을 잡아줍니다. 묵직한 레더 및 우디 향이 어우러진 파촐리로 베이스를 구성했습니다. 이 향수는 3종 기프트 세트로 선보입니다.",
+        "variationDescription": "오 드 뚜왈렛"
+      },
       "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158172+00:00"
+      "tagOnly": false,
+      "scrapedAt": "2026-08-18T07:55:16.821263+00:00",
+      "localImages": [
+        "/products/gc-pdp/865454999990099/1.jpg",
+        "/products/gc-pdp/865454999990099/2.jpg",
+        "/products/gc-pdp/865454999990099/3.jpg",
+        "/products/gc-pdp/865454999990099/4.jpg"
+      ],
+      "localImage": "/products/gc-pdp/865454999990099/1.jpg",
+      "localHover": "/products/gc-pdp/865454999990099/2.jpg"
     },
     {
       "id": "865457999990099",
@@ -2615,8 +2789,14 @@
       "url": "https://www.gucci.com/uk/en_gb/pr/beauty/beauty-gift-sets/gucci-guilty-pour-homme-gift-set-p-865457999990099",
       "gbpPrice": 125.0,
       "priceLabel": "£ 125",
-      "image": "",
-      "images": [],
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035214/865457_99999_0099_001_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035214/865457_99999_0099_001_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035214/865457_99999_0099_002_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035215/865457_99999_0099_003_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035215/865457_99999_0099_004_100_0000_Light-gucci-guilty-pour-homme-gift-set.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1772035214/865457_99999_0099_002_100_0000_Light.jpg",
       "collections": [
         "gc-accessories-mens",
         "gc-men-gifts",
@@ -2626,10 +2806,71 @@
       "inStock": true,
       "label": "New",
       "isDiyProduct": false,
-      "sizes": [],
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "U",
+          "ggSizeCode": "99001",
+          "sku": "814186529"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Gucci Guilty Pour Homme gift set",
+        "detailParts": [
+          "Gucci Guilty Pour Homme Eau de Parfum: 90ml",
+          "Gucci Guilty Pour Homme Shower Gel: 50ml",
+          "Gucci Guility Pour Homme Eau de Parfum Travel Spray: 15ml",
+          "Top notes of Rose and Chili Pepper create an invigorating retro vibe, with hints of vinegar and salt for an unexpected finish.",
+          "Orange Blossom Absolute, Neroli and French Lavender add intensity, while Patchouli and Cedarwood accentuate the scent's richness and sensuality.",
+          "Base notes of Patchouli, embodying a modern expression of sensuality, mystery, and intrigue. The dry down is intensified with the masculine richness of Cedarwood."
+        ],
+        "editorialDescription": "Gucci Guilty Eau de Toilette Pour Homme is a woody aromatic spicy fragrance. A vibrant opening of Lemon and piquant Pink Pepper leads into a heart of Lavandin and orange blossom absolute. At the base, Patchouli reveals its rich, leathery and woody facets. Here, the scent is presented in a three-piece gift set.",
+        "colors": [
+          {
+            "hex": "n/a",
+            "name": "Undefined"
+          }
+        ],
+        "variationDescription": "eau de parfum"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "구찌 길티 뿌르 옴므 기프트 세트",
+        "detailParts": [
+          "제조국: 구찌 길티 오 드 퍼퓸 뿌르 옴므 내추럴 스프레이-스페인 / 구찌 길티 뿌르 옴므 샤워젤-모나코",
+          "화장품제조업자: 구찌 길티 오 드 퍼퓸 뿌르 옴므 내추럴 스프레이-COTY SPAIN, S.L. / 구찌 길티 뿌르 옴므 샤워젤-COTY - LANCASTER SAM",
+          "화장품책임판매업자: (주) 코티코리아",
+          "제조번호: 용기에 별도 표시",
+          "「화장품법」에 따른 기능성 화장품(미백, 주름개선, 자외선 차단제품 등)의 경우: 해당 없음",
+          "구찌 길티 뿌르 옴므 오 드 퍼퓸: 용량: 90ml",
+          "구찌 길티 뿌르 옴므 샤워 젤: 용량: 50ml",
+          "구찌 길티 뿌르 옴므 오 드 퍼퓸 여행용 스프레이: 15ml",
+          "제품 주요 사양 : 모든 피부 타입",
+          "전성분: 구찌 길티 오 드 퍼퓸 뿌르 옴므 내추럴 스프레이-변성알코올, 정제수, 향료, 에칠헥실메톡시신나메이트, 디에칠아미노하이드록시벤조일헥실벤조에이트, 비에이치티, 자색401호, 적색504호, 황색4호, 청색1호, 적색227호 / 구찌 길티 뿌르 옴므 샤워젤-정제수, 소듐C14-16올레핀설포네이트, 코카미도프로필베타인, 향료, 소듐클로라이드, 프로판다이올, 소듐메틸올레오일타우레이트, 소듐벤조에이트, 시트릭애씨드, 테트라메틸아세틸옥타하이드로나프탈렌, 리날릴아세테이트, 리날룰, 리모넨, 소듐하이드록사이드, 광곽향오일, 헥사메틸인다노피란, 하이드록시시트로넬알, 레몬껍질오일, 벤질살리실레이트, 아밀살리실레이트, 알파-아이소메틸아이오논",
+          "로즈와 칠리 페퍼 탑노트 성분이 레트로 감성을 일으키고, 비니거와 솔트에서 힌트를 얻어 만든 독특하게 마무리되는 향.",
+          "오렌지 블로썸 앱솔루트, 네롤리 및 프렌치 라벤더가 강렬함을 더하고, 파촐리와 시더우드가 향의 풍성함과 관능미를 강조함.",
+          "베이스 노트: 현대적인 관능미, 신비로움, 흥미를 불어넣는 파촐리. 은은하게 퍼지는 시더우드 잔향.",
+          "상품 발송일을 기준으로 사용기한이 12개월 이상 남아 있는 제품만을 판매합니다.",
+          "사용할 때의 주의사항:  1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것. 2. 상처가 있는 부위 등에는 사용을 자제할 것. 3. 보관 및 취급 시의 주의사항 1) 어린이의 손이 닿지 않는 곳에 보관할 것 2) 직사광선을 피해서 보관할 것",
+          "소비자 상담 관련 전화번호: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com",
+          "상품이 손상되지 않은 경우에만 반품이 가능합니다.",
+          "품질보증기준: 관련 법 및 소비자 분쟁해결 규정에 따름"
+        ],
+        "editorialDescription": "구찌 길티 오 드 뚜왈렛 뿌르 옴므는 우디 아로마틱 스파이시 향을 선사합니다. 생생한 레몬과 톡 쏘는 핑크 페퍼로 감각을 깨우며, 라반딘과 오렌지 블로썸 앱솔루트가 중심을 잡아줍니다. 묵직한 레더 및 우디 향이 어우러진 파촐리로 베이스를 구성했습니다. 이 향수는 3종 기프트 세트로 선보입니다.",
+        "variationDescription": "오 드 퍼퓸"
+      },
       "kind": "mens-gifts",
-      "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158177+00:00"
+      "tagOnly": false,
+      "scrapedAt": "2026-08-18T07:55:16.821555+00:00",
+      "localImages": [
+        "/products/gc-pdp/865457999990099/1.jpg",
+        "/products/gc-pdp/865457999990099/2.jpg",
+        "/products/gc-pdp/865457999990099/3.jpg",
+        "/products/gc-pdp/865457999990099/4.jpg"
+      ],
+      "localImage": "/products/gc-pdp/865457999990099/1.jpg",
+      "localHover": "/products/gc-pdp/865457999990099/2.jpg"
     },
     {
       "id": "866938AAGDQ1053",
@@ -2654,7 +2895,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158182+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818955+00:00"
     },
     {
       "id": "866938FAFV99653",
@@ -2678,7 +2919,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158186+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818958+00:00"
     },
     {
       "id": "866982AAGIH1057",
@@ -2702,7 +2943,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158191+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818963+00:00"
     },
     {
       "id": "867032AAGIH1057",
@@ -2726,7 +2967,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158195+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818967+00:00"
     },
     {
       "id": "867507AAGEH1000",
@@ -2750,7 +2991,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158200+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818971+00:00"
     },
     {
       "id": "867507AAGQR4009",
@@ -2774,7 +3015,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158204+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818975+00:00"
     },
     {
       "id": "871595FAFV99653",
@@ -2798,7 +3039,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158210+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818978+00:00"
     },
     {
       "id": "871608FAF481068",
@@ -2822,7 +3063,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158215+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818982+00:00"
     },
     {
       "id": "871608FAF489644",
@@ -2846,7 +3087,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158220+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818987+00:00"
     },
     {
       "id": "871668AAF3Q1000",
@@ -2870,7 +3111,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158225+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818991+00:00"
     },
     {
       "id": "871685FAF511028",
@@ -2894,7 +3135,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158230+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.818996+00:00"
     },
     {
       "id": "871759HAAOZ8449",
@@ -2918,7 +3159,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158234+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819000+00:00"
     },
     {
       "id": "8726314HBJM1066",
@@ -2942,7 +3183,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158239+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819005+00:00"
     },
     {
       "id": "8726314HBJN9066",
@@ -2966,7 +3207,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158244+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819008+00:00"
     },
     {
       "id": "8726324HBJO9666",
@@ -2990,7 +3231,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158249+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819013+00:00"
     },
     {
       "id": "8726324HBJP1066",
@@ -3014,7 +3255,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158254+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819018+00:00"
     },
     {
       "id": "8740914E0094000",
@@ -3038,7 +3279,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158259+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819022+00:00"
     },
     {
       "id": "8740964E0094100",
@@ -3062,7 +3303,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158264+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819026+00:00"
     },
     {
       "id": "874217J84000818",
@@ -3086,7 +3327,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158269+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819030+00:00"
     },
     {
       "id": "874248J84000818",
@@ -3110,7 +3351,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158274+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819034+00:00"
     },
     {
       "id": "874249J84000818",
@@ -3134,7 +3375,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158279+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819037+00:00"
     },
     {
       "id": "874283J84R08163",
@@ -3158,7 +3399,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158284+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819041+00:00"
     },
     {
       "id": "874293J89L08518",
@@ -3182,7 +3423,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158289+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819045+00:00"
     },
     {
       "id": "874343JAAMX8519",
@@ -3206,7 +3447,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158294+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819048+00:00"
     },
     {
       "id": "874724AAGYT1000",
@@ -3230,7 +3471,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158299+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819052+00:00"
     },
     {
       "id": "874726AAGRY1053",
@@ -3255,7 +3496,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158304+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819057+00:00"
     },
     {
       "id": "874734HAAPT8475",
@@ -3279,7 +3520,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158309+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819061+00:00"
     },
     {
       "id": "874862AAGSG1000",
@@ -3303,7 +3544,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158313+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819064+00:00"
     },
     {
       "id": "874862AAGSG2117",
@@ -3327,7 +3568,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158319+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819068+00:00"
     },
     {
       "id": "874936AAG9O2052",
@@ -3351,7 +3592,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158323+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819073+00:00"
     },
     {
       "id": "874936AAG9O4055",
@@ -3375,7 +3616,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158328+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819076+00:00"
     },
     {
       "id": "874936AAGSM1060",
@@ -3399,7 +3640,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158333+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819080+00:00"
     },
     {
       "id": "874936AAGSM2047",
@@ -3423,7 +3664,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158338+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819084+00:00"
     },
     {
       "id": "875059FAF798547",
@@ -3448,7 +3689,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158342+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819088+00:00"
     },
     {
       "id": "875059FAF8A1000",
@@ -3473,7 +3714,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158347+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819092+00:00"
     },
     {
       "id": "8750784E0094100",
@@ -3497,7 +3738,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158352+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819096+00:00"
     },
     {
       "id": "875174FAF9H1242",
@@ -3521,7 +3762,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158356+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819100+00:00"
     },
     {
       "id": "875174FAF9H9052",
@@ -3545,7 +3786,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158361+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819103+00:00"
     },
     {
       "id": "875174FAF9H9742",
@@ -3569,7 +3810,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158365+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819107+00:00"
     },
     {
       "id": "875226AAGVN1000",
@@ -3593,7 +3834,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158370+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819111+00:00"
     },
     {
       "id": "875229FAF8P9647",
@@ -3617,7 +3858,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158375+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819115+00:00"
     },
     {
       "id": "875377AAGSW1000",
@@ -3641,7 +3882,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158379+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819119+00:00"
     },
     {
       "id": "875588AAGTN1000",
@@ -3665,7 +3906,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158385+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819122+00:00"
     },
     {
       "id": "875588AAGTN8550",
@@ -3689,7 +3930,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158391+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819126+00:00"
     },
     {
       "id": "875594AAGTN1000",
@@ -3713,7 +3954,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158396+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819130+00:00"
     },
     {
       "id": "8757364HBKG1060",
@@ -3737,7 +3978,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158402+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819135+00:00"
     },
     {
       "id": "875821FAF798547",
@@ -3761,7 +4002,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158407+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819139+00:00"
     },
     {
       "id": "876323AAGG11000",
@@ -3785,7 +4026,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158412+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819143+00:00"
     },
     {
       "id": "876323AAGG12117",
@@ -3809,7 +4050,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158417+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819147+00:00"
     },
     {
       "id": "876356AAGRK9751",
@@ -3833,7 +4074,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158422+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819151+00:00"
     },
     {
       "id": "876356AAGRL1000",
@@ -3857,7 +4098,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158427+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819156+00:00"
     },
     {
       "id": "876356AAGRL8448",
@@ -3881,7 +4122,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158432+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819159+00:00"
     },
     {
       "id": "876390FAF8A1000",
@@ -3906,7 +4147,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158437+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819164+00:00"
     },
     {
       "id": "876390FAF8A3020",
@@ -3931,7 +4172,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158442+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819167+00:00"
     },
     {
       "id": "876390FAF8A8742",
@@ -3955,7 +4196,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158447+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819171+00:00"
     },
     {
       "id": "876390FAF8A9767",
@@ -3979,7 +4220,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158452+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819175+00:00"
     },
     {
       "id": "876390FAF9W9644",
@@ -4004,7 +4245,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158456+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819178+00:00"
     },
     {
       "id": "876391FAF9S9646",
@@ -4028,7 +4269,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158461+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819182+00:00"
     },
     {
       "id": "876404FAF8A1000",
@@ -4053,7 +4294,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158466+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819186+00:00"
     },
     {
       "id": "876404FAF9W9644",
@@ -4078,7 +4319,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158470+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819189+00:00"
     },
     {
       "id": "876421FAF8A1000",
@@ -4103,7 +4344,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158475+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819193+00:00"
     },
     {
       "id": "876421FAF8A8742",
@@ -4127,7 +4368,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158479+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819197+00:00"
     },
     {
       "id": "876421FAF9W9644",
@@ -4152,7 +4393,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158484+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819200+00:00"
     },
     {
       "id": "876432FAF8A1000",
@@ -4177,7 +4418,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158488+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819204+00:00"
     },
     {
       "id": "876432FAF9W9644",
@@ -4202,7 +4443,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158493+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819208+00:00"
     },
     {
       "id": "876434FAF8A1000",
@@ -4226,7 +4467,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158498+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819212+00:00"
     },
     {
       "id": "876434FAF9W9644",
@@ -4250,7 +4491,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158502+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819217+00:00"
     },
     {
       "id": "876486FAF8A1000",
@@ -4274,7 +4515,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158507+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819221+00:00"
     },
     {
       "id": "876494FAF9R1000",
@@ -4298,7 +4539,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158512+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819226+00:00"
     },
     {
       "id": "A000GAFAGAT9545",
@@ -4322,7 +4563,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158517+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819230+00:00"
     },
     {
       "id": "A000OSJ16911012",
@@ -4346,7 +4587,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158521+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819234+00:00"
     },
     {
       "id": "A000OSJ16924016",
@@ -4370,7 +4611,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158526+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819238+00:00"
     },
     {
       "id": "A000P0J07401012",
@@ -4394,7 +4635,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158531+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819242+00:00"
     },
     {
       "id": "A000P8J07401012",
@@ -4418,7 +4659,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158536+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819245+00:00"
     },
     {
       "id": "A000P8J07402323",
@@ -4442,7 +4683,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158541+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819251+00:00"
     },
     {
       "id": "A000PCI33301012",
@@ -4466,7 +4707,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158546+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819255+00:00"
     },
     {
       "id": "A000PCI33308023",
@@ -4490,7 +4731,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158550+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819258+00:00"
     },
     {
       "id": "A00116I46000912",
@@ -4514,7 +4755,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158555+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819262+00:00"
     },
     {
       "id": "A00116I46010926",
@@ -4538,7 +4779,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158561+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819266+00:00"
     },
     {
       "id": "A00147FAGAU9059",
@@ -4562,7 +4803,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158566+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819271+00:00"
     },
     {
       "id": "A00148AAGVY9058",
@@ -4586,7 +4827,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158570+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819275+00:00"
     },
     {
       "id": "A001I24HBK31079",
@@ -4610,7 +4851,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158576+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819279+00:00"
     },
     {
       "id": "A001I24HBLB9660",
@@ -4634,7 +4875,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158580+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819283+00:00"
     },
     {
       "id": "A001XBAAGTN1000",
@@ -4658,7 +4899,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158585+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819287+00:00"
     },
     {
       "id": "A001XBAAGTN8550",
@@ -4682,7 +4923,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158590+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819291+00:00"
     },
     {
       "id": "A0020SFAGAA1000",
@@ -4706,7 +4947,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158595+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819295+00:00"
     },
     {
       "id": "A0020SFAGLF8743",
@@ -4730,7 +4971,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158601+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819299+00:00"
     },
     {
       "id": "A0020SFAGLV1000",
@@ -4754,7 +4995,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158605+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819303+00:00"
     },
     {
       "id": "A0022ZFAGBV9653",
@@ -4778,7 +5019,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158610+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819306+00:00"
     },
     {
       "id": "A0022ZFAGIB1000",
@@ -4802,7 +5043,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158633+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819310+00:00"
     },
     {
       "id": "A00230FAGBV9653",
@@ -4826,7 +5067,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158639+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819314+00:00"
     },
     {
       "id": "A0025SAAGQR2256",
@@ -4850,7 +5091,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158644+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819318+00:00"
     },
     {
       "id": "A002F2FAF8A1000",
@@ -4874,7 +5115,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158656+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819322+00:00"
     },
     {
       "id": "A002F2FAF8A3020",
@@ -4898,7 +5139,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158660+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819326+00:00"
     },
     {
       "id": "A002F2FAF8A8742",
@@ -4922,7 +5163,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158665+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819330+00:00"
     },
     {
       "id": "A002F2FAF8A9767",
@@ -4946,7 +5187,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158671+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819333+00:00"
     },
     {
       "id": "A002F2FAF9W9644",
@@ -4970,7 +5211,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158675+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819337+00:00"
     },
     {
       "id": "A002KXFAF8R1000",
@@ -4994,7 +5235,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158680+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819341+00:00"
     },
     {
       "id": "A002KXFAF999646",
@@ -5018,7 +5259,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158684+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819344+00:00"
     },
     {
       "id": "A002MNJAAFV8163",
@@ -5042,7 +5283,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158689+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819348+00:00"
     },
     {
       "id": "A002SJFAF9S9646",
@@ -5066,7 +5307,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158694+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819353+00:00"
     },
     {
       "id": "A005GMAAGNT1000",
@@ -5090,7 +5331,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158699+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819357+00:00"
     },
     {
       "id": "A005V1AAG701069",
@@ -5114,7 +5355,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158706+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819361+00:00"
     },
     {
       "id": "A005V1AAG709071",
@@ -5138,7 +5379,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158711+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819365+00:00"
     },
     {
       "id": "A005ZFFAGBV9653",
@@ -5162,7 +5403,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158718+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819369+00:00"
     },
     {
       "id": "A005ZFFAGIB1000",
@@ -5186,7 +5427,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158724+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819373+00:00"
     },
     {
       "id": "A006JEFAGII1000",
@@ -5210,7 +5451,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158729+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819376+00:00"
     },
     {
       "id": "A006QOFAGIK1000",
@@ -5234,7 +5475,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158734+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819381+00:00"
     },
     {
       "id": "A006VDAAHAV1077",
@@ -5258,7 +5499,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158739+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819385+00:00"
     },
     {
       "id": "A006VDAAHAV9077",
@@ -5282,7 +5523,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158744+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819389+00:00"
     },
     {
       "id": "A006VLFAGIV1078",
@@ -5306,7 +5547,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158749+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819393+00:00"
     },
     {
       "id": "A006VLFAGIV9078",
@@ -5330,7 +5571,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158754+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819397+00:00"
     },
     {
       "id": "A006WU4E0094100",
@@ -5354,7 +5595,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158758+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819401+00:00"
     },
     {
       "id": "A006WU4E0094900",
@@ -5378,7 +5619,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158763+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819405+00:00"
     },
     {
       "id": "A006WX4E0094269",
@@ -5402,7 +5643,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158768+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819409+00:00"
     },
     {
       "id": "A006XLFAGI79557",
@@ -5427,7 +5668,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158772+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819413+00:00"
     },
     {
       "id": "A006XMFAGI79557",
@@ -5452,7 +5693,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158777+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819417+00:00"
     },
     {
       "id": "A006XMFAGIK1000",
@@ -5476,7 +5717,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158783+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819421+00:00"
     },
     {
       "id": "A006XMFAGIK8742",
@@ -5500,7 +5741,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158787+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819425+00:00"
     },
     {
       "id": "A006ZNFAGII1000",
@@ -5524,7 +5765,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158792+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819429+00:00"
     },
     {
       "id": "A006ZNFAGII8743",
@@ -5548,7 +5789,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158797+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819433+00:00"
     },
     {
       "id": "A006ZNFAGIJ8569",
@@ -5572,7 +5813,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158802+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819437+00:00"
     },
     {
       "id": "A00711FAGI79557",
@@ -5596,7 +5837,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158806+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819441+00:00"
     },
     {
       "id": "A00716FAGI81081",
@@ -5620,7 +5861,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158811+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819445+00:00"
     },
     {
       "id": "A0071BFAGI81081",
@@ -5644,7 +5885,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158816+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819448+00:00"
     },
     {
       "id": "A00733I33301012",
@@ -5668,7 +5909,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158821+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819452+00:00"
     },
     {
       "id": "A0078LJ84008106",
@@ -5692,7 +5933,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158826+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819456+00:00"
     },
     {
       "id": "A0078MJ84008106",
@@ -5716,7 +5957,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158831+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819459+00:00"
     },
     {
       "id": "A00790J84008106",
@@ -5740,7 +5981,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158835+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819463+00:00"
     },
     {
       "id": "A00792J84008106",
@@ -5764,7 +6005,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158840+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819466+00:00"
     },
     {
       "id": "A0079WIAAHL8029",
@@ -5788,7 +6029,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158844+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819470+00:00"
     },
     {
       "id": "A0079WIAAHM8163",
@@ -5812,7 +6053,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158848+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819473+00:00"
     },
     {
       "id": "A007IZ4GALK1062",
@@ -5836,7 +6077,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158853+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819477+00:00"
     },
     {
       "id": "A007TOI59748163",
@@ -5860,7 +6101,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158858+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819481+00:00"
     },
     {
       "id": "A008RCFAGI81081",
@@ -5884,7 +6125,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158863+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819484+00:00"
     },
     {
       "id": "A0093NA9L001000",
@@ -5908,7 +6149,234 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158868+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819487+00:00"
+    },
+    {
+      "id": "A009XQAAHFT1060",
+      "productCode": "A009XQAAHFT1060",
+      "title": "Men's loafer with Web",
+      "variant": "black leather",
+      "url": "https://www.gucci.com/uk/en_gb/pr/men/shoes-for-men/loafers-moccasins-for-men/mens-loafer-with-web-p-A009XQAAHFT1060",
+      "gbpPrice": 750.0,
+      "priceLabel": "£ 750",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466232/A009XQ_AAHFT_1060_015_100_0000_Light-mens-loafer-with-web.jpg",
+      "images": [
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466232/A009XQ_AAHFT_1060_015_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877316/A009XQ_AAHFT_1060_002_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877317/A009XQ_AAHFT_1060_003_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_006_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_007_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_008_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_009_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_010_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_011_100_0000_Light-mens-loafer-with-web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466232/A009XQ_AAHFT_1060_015_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877316/A009XQ_AAHFT_1060_002_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877317/A009XQ_AAHFT_1060_003_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_006_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_007_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466230/A009XQ_AAHFT_1060_008_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_009_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_010_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466231/A009XQ_AAHFT_1060_011_100_0000_Light.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1782466229/A009XQ_AAHFT_1060_001_100_0000_Light-Mens-loafer-with-Web.jpg",
+        "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877316/A009XQ_AAHFT_1060_002_100_0000_Light-Mens-loafer-with-Web.jpg"
+      ],
+      "plpHoverUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1784877316/A009XQ_AAHFT_1060_002_100_0000_Light.jpg",
+      "collections": [
+        "gc-accessories-mens",
+        "gc-men-gifts",
+        "gc-men-gifts-shoes",
+        "gucci-accessories"
+      ],
+      "inStock": true,
+      "label": null,
+      "isDiyProduct": false,
+      "flagPersonalization": false,
+      "sizes": [
+        {
+          "size": "4+",
+          "ggSizeCode": "29101",
+          "sku": "814434466"
+        },
+        {
+          "size": "5",
+          "ggSizeCode": "29102",
+          "sku": "814434467"
+        },
+        {
+          "size": "5+",
+          "ggSizeCode": "29103",
+          "sku": "814434468"
+        },
+        {
+          "size": "6",
+          "ggSizeCode": "29104",
+          "sku": "814434469"
+        },
+        {
+          "size": "6+",
+          "ggSizeCode": "29105",
+          "sku": "814434470"
+        },
+        {
+          "size": "7",
+          "ggSizeCode": "29106",
+          "sku": "814434471"
+        },
+        {
+          "size": "7+",
+          "ggSizeCode": "29107",
+          "sku": "814434472"
+        },
+        {
+          "size": "8",
+          "ggSizeCode": "29108",
+          "sku": "814434473"
+        },
+        {
+          "size": "8+",
+          "ggSizeCode": "29109",
+          "sku": "814434474"
+        },
+        {
+          "size": "9",
+          "ggSizeCode": "29110",
+          "sku": "814434475"
+        },
+        {
+          "size": "9+",
+          "ggSizeCode": "29111",
+          "sku": "814434476"
+        },
+        {
+          "size": "10",
+          "ggSizeCode": "29112",
+          "sku": "814434477"
+        },
+        {
+          "size": "10+",
+          "ggSizeCode": "29113",
+          "sku": "814434478"
+        },
+        {
+          "size": "11",
+          "ggSizeCode": "29201",
+          "sku": "814434479"
+        },
+        {
+          "size": "11+",
+          "ggSizeCode": "29202",
+          "sku": "814434480"
+        },
+        {
+          "size": "12",
+          "ggSizeCode": "29203",
+          "sku": "814434481"
+        },
+        {
+          "size": "12+",
+          "ggSizeCode": "29204",
+          "sku": "814434482"
+        },
+        {
+          "size": "13",
+          "ggSizeCode": "29205",
+          "sku": "814434483"
+        },
+        {
+          "size": "13+",
+          "ggSizeCode": "29206",
+          "sku": "814434484"
+        },
+        {
+          "size": "14",
+          "ggSizeCode": "29207",
+          "sku": "814434485"
+        },
+        {
+          "size": "14+",
+          "ggSizeCode": "29208",
+          "sku": "814434486"
+        },
+        {
+          "size": "15",
+          "ggSizeCode": "29209",
+          "sku": "814434487"
+        }
+      ],
+      "translationEn": {
+        "language": "en_GB",
+        "name": "Men's loafer with Web",
+        "detailParts": [
+          "Black leather",
+          "Green and red nylon trim",
+          "Leather lining",
+          "Web",
+          "Leather sole",
+          "Padded leather insole with Gucci archival label",
+          "Flat",
+          "Height: 5mm",
+          "Made in Italy"
+        ],
+        "editorialDescription": "Gucci Primavera establishes a new vocabulary of silhouettes, textures, and materials, merging innovation with a grounded vision. This style puts an edgy twist on the classic loafer, defined by a slim leather sole and reverse construction, a refined shoemaking method that turns the upper inside‑out to create a glove‑like interior for a soft, comfortable and flexible fit.",
+        "materialCare": "Gucci products are made with carefully selected materials. Please handle with care for longer product life.|Protect from direct light, heat and rain. Should it become wet, dry it immediately with a soft cloth|Fill shoe with tissue paper to help maintain the shape and absorb humidity, then store in the provided flannel bag and box|Clean with a soft, dry cloth or brush",
+        "colors": [
+          {
+            "hex": "#000000",
+            "name": "Black"
+          }
+        ],
+        "variationDescription": "black leather",
+        "heelHeight": "Flat"
+      },
+      "translationKo": {
+        "language": "ko",
+        "name": "남성 웹(Web) 로퍼",
+        "detailParts": [
+          "블랙 레더",
+          "그린/레드 나일론 트리밍",
+          "레더 안감",
+          "웹(Web)",
+          "레더 솔",
+          "구찌 아카이브 라벨이 있는 패딩 처리 레더 인솔",
+          "플랫",
+          "높이: 5mm",
+          "Made in Italy"
+        ],
+        "editorialDescription": "구찌 프리마베라는 실루엣, 텍스처 및 소재의 새로운 어휘를 확립하여 혁신과 실용적인 비전을 융합합니다. 이 스타일은 클래식한 로퍼에 에지한 트위스트를 더합니다. 슬림한 레더 솔과 리버스 구조로 정의되며, 어퍼를 뒤집어 부드럽고 편안하며 매우 유연한 착화감을 제공하는 글러브 같은 내부를 만드는 세련된 제화 방식입니다.",
+        "materialCare": "구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.|직사광선, 열 및 비에 노출되지 않도록 주의하십시오. 제품이 물에 젖은 경우 그 즉시 부드러운 천으로 닦아 주십시오.|모양을 유지하고 습기를 흡수할 수 있도록 상품 안에 티슈 페이퍼를 채워 넣고, 구입 시 제공된 플란넬 백 및 상자 안에 보관하시기 바랍니다.|부드러운 재질의 마른 천으로 제품을 닦아 주십시오.",
+        "colors": [
+          {
+            "hex": "#000000",
+            "name": "블랙"
+          }
+        ],
+        "materials": [
+          "가죽"
+        ],
+        "variationDescription": "블랙 레더",
+        "heelHeight": "플랫"
+      },
+      "kind": "mens-gifts",
+      "tagOnly": false,
+      "scrapedAt": "2026-08-18T07:55:16.821758+00:00",
+      "localImages": [
+        "/products/gc-pdp/A009XQAAHFT1060/1.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/2.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/3.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/4.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/5.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/6.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/7.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/8.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/9.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/10.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/11.jpg",
+        "/products/gc-pdp/A009XQAAHFT1060/12.jpg"
+      ],
+      "localImage": "/products/gc-pdp/A009XQAAHFT1060/1.jpg",
+      "localHover": "/products/gc-pdp/A009XQAAHFT1060/11.jpg"
     },
     {
       "id": "A00A96FAFUW9611",
@@ -5932,7 +6400,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158872+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819491+00:00"
     },
     {
       "id": "A00BC5FAGNV9663",
@@ -5957,7 +6425,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158877+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819496+00:00"
     },
     {
       "id": "A00BC5FAGNW1095",
@@ -5982,7 +6450,7 @@
       "sizes": [],
       "kind": "mens-gifts",
       "tagOnly": true,
-      "scrapedAt": "2026-08-11T08:25:08.158881+00:00"
+      "scrapedAt": "2026-08-18T07:55:16.819500+00:00"
     }
   ]
 }
