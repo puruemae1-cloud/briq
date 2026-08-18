@@ -315,6 +315,39 @@ a { color: inherit; text-decoration: none; }
   background: #04110c;
   display: block;
 }
+.twin-align {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.twin-align__h,
+.twin-align__v {
+  position: absolute;
+  background: rgba(201, 168, 76, 0.55);
+}
+.twin-align__h {
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: translateY(-0.5px);
+}
+.twin-align__v {
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  transform: translateX(-0.5px);
+}
+.twin-align__v--ball {
+  background: rgba(232, 239, 233, 0.45);
+}
+.twin-compare__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  display: block;
+}
 .twin-compare video, .twin-compare__empty {
   width: 100%;
   height: 100%;

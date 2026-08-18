@@ -468,6 +468,229 @@ export async function detectMotionCrop(video: HTMLVideoElement): Promise<CropRec
   return crop;
 }
 
+export type SwingLandmarks = {
+  /** Normalised 0–1 in source video. */
+  headY: number;
+  feetY: number;
+  backX: number;
+  ballX: number;
+  ballY: number;
+};
+
+/** Rory portrait 540×720 — head, soles, spine, ball at address. */
+export const RORY_PORTRAIT_LANDMARKS: SwingLandmarks = {
+  headY: 0.18,
+  feetY: 0.935,
+  backX: 0.4,
+  ballX: 0.52,
+  ballY: 0.86,
+};
+
+function clamp01(n: number) {
+  return Math.min(1, Math.max(0, n));
+}
+
+/**
+ * Crop that maps `src` landmarks onto `target` panel positions
+ * (same head/feet/back/ball lines in both 3:4 panels).
+ */
+export function cropToMatchLandmarks(
+  src: SwingLandmarks,
+  target: SwingLandmarks,
+  sourceW: number,
+  sourceH: number,
+): CropRect {
+  const dy = src.feetY - src.headY;
+  const ty = target.feetY - target.headY;
+  let cropH = dy > 0.05 && ty > 0.05 ? (dy / ty) * sourceH : sourceH * 0.85;
+
+  const dx = src.ballX - src.backX;
+  const tx = target.ballX - target.backX;
+  let cropW =
+    Math.abs(dx) > 0.03 && Math.abs(tx) > 0.03
+      ? (Math.abs(dx) / Math.abs(tx)) * sourceW
+      : cropH * (3 / 4);
+
+  cropW = Math.max(48, cropW);
+  cropH = Math.max(64, cropH);
+
+  let x = src.backX * sourceW - target.backX * cropW;
+  let y = src.headY * sourceH - target.headY * cropH;
+
+  if (x < 0) {
+    cropW += x;
+    x = 0;
+  }
+  if (y < 0) {
+    cropH += y;
+    y = 0;
+  }
+  if (x + cropW > sourceW) cropW = sourceW - x;
+  if (y + cropH > sourceH) cropH = sourceH - y;
+
+  x = Math.round(Math.max(0, x));
+  y = Math.round(Math.max(0, y));
+  let w = Math.max(32, Math.round(cropW) & ~1);
+  let h = Math.max(32, Math.round(cropH) & ~1);
+  if (x + w > sourceW) x = Math.max(0, sourceW - w);
+  if (y + h > sourceH) y = Math.max(0, sourceH - h);
+
+  return { x, y, w, h };
+}
+
+/** Detect head, soles, back (spine), and ball from address + motion. */
+export async function detectSwingLandmarks(
+  video: HTMLVideoElement,
+  onProgress?: FramingProgressCallback,
+): Promise<SwingLandmarks> {
+  const { crop, analysisW, analysisH } = await detectBodyCrop(
+    video,
+    onProgress,
+    "user",
+  );
+  const vw = video.videoWidth;
+  const vh = video.videoHeight;
+  const scaleX = vw / analysisW;
+  const scaleY = vh / analysisH;
+
+  const canvas = document.createElement("canvas");
+  canvas.width = analysisW;
+  canvas.height = analysisH;
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  if (!ctx) {
+    return {
+      headY: crop.y / vh,
+      feetY: (crop.y + crop.h) / vh,
+      backX: (crop.x + crop.w * 0.4) / vw,
+      ballX: (crop.x + crop.w * 0.58) / vw,
+      ballY: (crop.y + crop.h * 0.9) / vh,
+    };
+  }
+
+  const duration =
+    Number.isFinite(video.duration) && video.duration > 0 ? video.duration : 2;
+  const tAddr = Math.min(0.35, duration * 0.12);
+  try {
+    await seekVideo(video, tAddr);
+  } catch {
+    /* use current frame */
+  }
+  ctx.drawImage(video, 0, 0, analysisW, analysisH);
+  const img = ctx.getImageData(0, 0, analysisW, analysisH).data;
+
+  const x0 = Math.max(0, Math.floor(crop.x / scaleX));
+  const y0 = Math.max(0, Math.floor(crop.y / scaleY));
+  const x1 = Math.min(analysisW - 1, Math.ceil((crop.x + crop.w) / scaleX));
+  const y1 = Math.min(analysisH - 1, Math.ceil((crop.y + crop.h) / scaleY));
+
+  const rowFill = new Float32Array(analysisH);
+  const colFill = new Float32Array(analysisW);
+
+  for (let y = y0; y <= y1; y++) {
+    for (let x = x0; x <= x1; x++) {
+      const idx = (y * analysisW + x) * 4;
+      const r = img[idx];
+      const g = img[idx + 1];
+      const b = img[idx + 2];
+      const L = luma(img, idx);
+      const sky = L > 165 && Math.abs(r - g) < 45 && b + 8 >= r;
+      const grass = g > r + 14 && g > b + 10 && y > analysisH * 0.55;
+      if (sky || grass) continue;
+      const body =
+        L < 155 || (g > 90 && r > 70 && Math.abs(r - g) < 40);
+      if (!body) continue;
+      rowFill[y] += 1;
+      colFill[x] += 1;
+    }
+  }
+
+  let maxRow = 0;
+  for (let y = y0; y <= y1; y++) if (rowFill[y] > maxRow) maxRow = rowFill[y];
+  const rowT = Math.max(4, maxRow * 0.22);
+
+  let headRow = y0;
+  for (let y = y0; y <= y1; y++) {
+    if (rowFill[y] >= rowT && rowFill[y] > analysisW * 0.06) {
+      headRow = y;
+      break;
+    }
+  }
+
+  let feetRow = y1;
+  for (let y = y1; y >= headRow; y--) {
+    if (rowFill[y] >= rowT * 0.7) {
+      feetRow = y;
+      break;
+    }
+  }
+
+  const torso0 = Math.round(headRow + (feetRow - headRow) * 0.28);
+  const torso1 = Math.round(headRow + (feetRow - headRow) * 0.62);
+  let backSum = 0;
+  let backN = 0;
+  for (let y = torso0; y <= torso1; y++) {
+    for (let x = x0; x <= x1; x++) {
+      if (colFill[x] <= 0) continue;
+      const idx = (y * analysisW + x) * 4;
+      const L = luma(img, idx);
+      if (L < 140) {
+        backSum += x;
+        backN++;
+      }
+    }
+  }
+  const backCol =
+    backN > 8 ? backSum / backN : (x0 + x1) * 0.42;
+
+  let ballX = backCol + (x1 - x0) * 0.22;
+  let ballY = feetRow - (feetRow - headRow) * 0.08;
+  let bestBall = 0;
+  const by0 = Math.max(y0, Math.round(feetRow - (feetRow - headRow) * 0.18));
+  const by1 = Math.min(y1, feetRow + 2);
+  const bx0 = Math.round(backCol);
+  for (let y = by0; y <= by1; y++) {
+    for (let x = bx0; x <= x1; x++) {
+      const idx = (y * analysisW + x) * 4;
+      const r = img[idx];
+      const g = img[idx + 1];
+      const b = img[idx + 2];
+      const L = luma(img, idx);
+      if (L > 190 && r > 175 && g > 175 && b > 160) {
+        const score = L;
+        if (score > bestBall) {
+          bestBall = score;
+          ballX = x;
+          ballY = y;
+        }
+      }
+    }
+  }
+
+  return {
+    headY: clamp01((headRow * scaleY) / vh),
+    feetY: clamp01((feetRow * scaleY) / vh),
+    backX: clamp01((backCol * scaleX) / vw),
+    ballX: clamp01((ballX * scaleX) / vw),
+    ballY: clamp01((ballY * scaleY) / vh),
+  };
+}
+
+export async function detectSwingLandmarksFromUrl(
+  src: string,
+  onProgress?: FramingProgressCallback,
+) {
+  const video = await loadVideoFromUrl(src, onProgress);
+  try {
+    return {
+      landmarks: await detectSwingLandmarks(video, onProgress),
+      sourceW: video.videoWidth,
+      sourceH: video.videoHeight,
+    };
+  } finally {
+    video.src = "";
+  }
+}
+
 export type VideoDisplayStyle = {
   position?: "absolute";
   top?: string;

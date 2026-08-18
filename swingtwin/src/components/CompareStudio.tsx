@@ -6,8 +6,8 @@ import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
 import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
-import { autoFrameSwingVideo, detectBodyCropFromUrl, cropToVideoStyle, tourMatchScale } from "@/lib/swing-framing";
-import type { BodyFrameMeta, VideoDisplayStyle } from "@/lib/swing-framing";
+import { autoFrameSwingVideo, detectBodyCropFromUrl, cropToVideoStyle, tourMatchScale, detectSwingLandmarksFromUrl, cropToMatchLandmarks, RORY_PORTRAIT_LANDMARKS } from "@/lib/swing-framing";
+import type { BodyFrameMeta, VideoDisplayStyle, SwingLandmarks } from "@/lib/swing-framing";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
 import { SideBySide } from "./SideBySide";
@@ -65,6 +65,7 @@ export function CompareStudio() {
   const [userFrameMeta, setUserFrameMeta] = useState<BodyFrameMeta | undefined>();
   const [tourDisplayStyle, setTourDisplayStyle] = useState<VideoDisplayStyle | undefined>();
   const [userDisplayStyle, setUserDisplayStyle] = useState<VideoDisplayStyle | undefined>();
+  const [alignGuides, setAlignGuides] = useState<SwingLandmarks>(RORY_PORTRAIT_LANDMARKS);
   const [uploadProgress, setUploadProgress] = useState<UploadProgressState | null>(
     null,
   );
@@ -105,8 +106,9 @@ export function CompareStudio() {
       if (isBundledPortrait) {
         setTourDisplayStyle({
           objectFit: "cover",
-          objectPosition: "50% 70%",
+          objectPosition: "50% 55%",
         });
+        setAlignGuides(RORY_PORTRAIT_LANDMARKS);
         return;
       }
 
@@ -191,18 +193,10 @@ export function CompareStudio() {
           setMyFace(file);
           void captureUserForSync(file);
           try {
-            const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(user.url);
-            if (!cancelled) {
-              const meta: BodyFrameMeta = {
-                bodyFill: 1,
-                outputW: 540,
-                outputH: 720,
-                sourceCrop: crop,
-                sourceW,
-                sourceH,
-              };
-              setUserFrameMeta(meta);
-              setUserDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH));
+            const aligned = await alignUserUrl(user.url);
+            if (!cancelled && aligned) {
+              setUserFrameMeta(aligned.meta);
+              setUserDisplayStyle(aligned.style);
             }
           } catch {
             /* show uncropped if analysis fails */
@@ -259,14 +253,34 @@ export function CompareStudio() {
     await applyTourDisplayStyle(tourUrl, userFrameMeta);
   }
 
+  async function alignUserUrl(src: string) {
+    const { landmarks, sourceW, sourceH } = await detectSwingLandmarksFromUrl(src);
+    const crop = cropToMatchLandmarks(
+      landmarks,
+      RORY_PORTRAIT_LANDMARKS,
+      sourceW,
+      sourceH,
+    );
+    setAlignGuides(RORY_PORTRAIT_LANDMARKS);
+    const meta: BodyFrameMeta = {
+      bodyFill: 1,
+      outputW: 540,
+      outputH: 720,
+      sourceCrop: crop,
+      sourceW,
+      sourceH,
+    };
+    return {
+      meta,
+      style: cropToVideoStyle(crop, sourceW, sourceH),
+    };
+  }
+
   async function applyUserFace(file: File) {
     try {
       const { file: f, meta } = await prepareUserClip(file, "face");
       setUploadProgress({ slot: "face", label: "Saving clip…", percent: 95 });
       setUserFrameMeta(meta);
-      setUserDisplayStyle(
-        cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
-      );
       setMyFace(f);
       const url = URL.createObjectURL(f);
       setUserUrl((prev) => {
@@ -274,6 +288,16 @@ export function CompareStudio() {
         return url;
       });
       setUserFileName(f.name);
+      try {
+        setUploadProgress({ slot: "face", label: "Matching head · feet · ball…", percent: 96 });
+        const aligned = await alignUserUrl(url);
+        setUserFrameMeta(aligned.meta);
+        setUserDisplayStyle(aligned.style);
+      } catch {
+        setUserDisplayStyle(
+          cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
+        );
+      }
       await saveClip("user", f);
       await captureUserForSync(f, "face");
       setUploadProgress({ slot: "face", label: "Matching Rory scale…", percent: 98 });
@@ -295,10 +319,16 @@ export function CompareStudio() {
         const url = URL.createObjectURL(f);
         setUserUrl(url);
         setUserFileName(f.name);
-        setUserDisplayStyle(
-          cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
-        );
-        setUserFrameMeta(meta);
+        try {
+          const aligned = await alignUserUrl(url);
+          setUserDisplayStyle(aligned.style);
+          setUserFrameMeta(aligned.meta);
+        } catch {
+          setUserDisplayStyle(
+            cropToVideoStyle(meta.sourceCrop, meta.sourceW, meta.sourceH),
+          );
+          setUserFrameMeta(meta);
+        }
       }
       setUploadProgress({ slot: "dtl", label: "Upload complete", percent: 100 });
     } catch (e) {
@@ -558,6 +588,8 @@ export function CompareStudio() {
         tourIsReference={usingReference}
         tourVideoStyle={tourDisplayStyle}
         userVideoStyle={userDisplayStyle}
+        alignGuides={alignGuides}
+        tourPoster={reference?.poster}
       />
 
       {userUrl && tourUrl && userSync && tourSync ? (

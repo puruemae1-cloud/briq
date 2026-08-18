@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Handedness, ProProfile, SwingSyncMarkers } from "@/lib/types";
-import type { VideoDisplayStyle } from "@/lib/swing-framing";
+import type { VideoDisplayStyle, SwingLandmarks } from "@/lib/swing-framing";
+import { RORY_PORTRAIT_LANDMARKS } from "@/lib/swing-framing";
 import {
   mapSyncedTourTime,
   swingPhaseNorm,
@@ -20,7 +21,22 @@ type Props = {
   tourIsReference?: boolean;
   tourVideoStyle?: VideoDisplayStyle;
   userVideoStyle?: VideoDisplayStyle;
+  alignGuides?: SwingLandmarks;
+  tourPoster?: string;
 };
+
+function AlignGuides({ marks }: { marks: SwingLandmarks }) {
+  return (
+    <div className="twin-align" aria-hidden>
+      <span className="twin-align__h" style={{ top: `${marks.headY * 100}%` }} />
+      <span className="twin-align__h" style={{ top: `${((marks.headY + marks.feetY) / 2) * 100}%` }} />
+      <span className="twin-align__h" style={{ top: `${marks.ballY * 100}%` }} />
+      <span className="twin-align__h" style={{ top: `${marks.feetY * 100}%` }} />
+      <span className="twin-align__v" style={{ left: `${marks.backX * 100}%` }} />
+      <span className="twin-align__v twin-align__v--ball" style={{ left: `${marks.ballX * 100}%` }} />
+    </div>
+  );
+}
 
 export function SideBySide({
   userUrl,
@@ -35,6 +51,8 @@ export function SideBySide({
   tourIsReference,
   tourVideoStyle,
   userVideoStyle,
+  alignGuides = RORY_PORTRAIT_LANDMARKS,
+  tourPoster,
 }: Props) {
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
@@ -76,6 +94,27 @@ export function SideBySide({
     seekUser(t);
     seekTour(t);
   }, [phaseT, userSync, tourSync, userUrl, tourUrl, seekUser, seekTour]);
+
+  useEffect(() => {
+    const tour = tourRef.current;
+    if (!tour || !tourUrl) return;
+    const showFirst = () => {
+      if (!Number.isFinite(tour.duration) || tour.duration <= 0) return;
+      const t = tourSync?.takeawayT ?? Math.min(0.35, tour.duration * 0.08);
+      try {
+        tour.currentTime = t;
+      } catch {
+        /* ignore */
+      }
+    };
+    tour.addEventListener("loadeddata", showFirst);
+    tour.addEventListener("loadedmetadata", showFirst);
+    if (tour.readyState >= 2) showFirst();
+    return () => {
+      tour.removeEventListener("loadeddata", showFirst);
+      tour.removeEventListener("loadedmetadata", showFirst);
+    };
+  }, [tourUrl, tourSync]);
 
   useEffect(() => {
     if (!userUrl || !userSync) return;
@@ -177,8 +216,10 @@ export function SideBySide({
                 playsInline
                 muted
                 controls={false}
+                preload="auto"
                 style={userVideoStyle}
               />
+              <AlignGuides marks={alignGuides} />
             </div>
           ) : (
             <div className="twin-compare__empty">Your swing</div>
@@ -194,11 +235,14 @@ export function SideBySide({
               <video
                 ref={tourRef}
                 src={tourUrl}
+                poster={tourPoster}
                 playsInline
                 muted
                 controls={false}
+                preload="auto"
                 style={tourVideoStyle}
               />
+              <AlignGuides marks={alignGuides} />
             </div>
           ) : useModel && pro ? (
             <ProSwingCanvas
@@ -209,7 +253,13 @@ export function SideBySide({
             />
           ) : (
             <div className="twin-compare__empty">
-              {pro ? `${pro.name} model` : "Their clip"}
+              {tourPoster ? (
+                <img src={tourPoster} alt="" className="twin-compare__poster" />
+              ) : pro ? (
+                `${pro.name} model`
+              ) : (
+                "Their clip"
+              )}
             </div>
           )}
           <p>{tourLabel}</p>

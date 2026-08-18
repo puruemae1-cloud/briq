@@ -9,6 +9,7 @@ export type ReferenceClip = {
   instagramHandles: string[];
   sourceW?: number;
   sourceH?: number;
+  poster?: string;
 };
 
 export const REFERENCE_CLIPS: ReferenceClip[] = [
@@ -22,6 +23,7 @@ export const REFERENCE_CLIPS: ReferenceClip[] = [
     instagramHandles: ["@golf_swings", "@pgatour", "@golfdigest"],
     sourceW: 540,
     sourceH: 720,
+    poster: "/reference/rory-mcilroy-dtl.jpg",
   },
 ];
 
