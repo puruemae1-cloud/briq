@@ -281,6 +281,20 @@ def is_clothing_product(product: dict) -> bool:
     if any(
         x in blob
         for x in (
+            "children",
+            "kids",
+            "baby",
+            "infant",
+            "bloomers",
+            "childrens",
+            "키즈",
+            "아동",
+        )
+    ):
+        return False
+    if any(
+        x in blob
+        for x in (
             "bag",
             "handbag",
             "가방",
@@ -323,15 +337,11 @@ def is_clothing_product(product: dict) -> bool:
             "hoodie",
             "trench",
             "knit",
-            "trouser",
-            "pant",
-            "skirt",
             "blouse",
             "cape",
             "parka",
             "cardigan",
             "polo",
-            "jean",
             "suit",
             "blazer",
             "outerwear",
@@ -549,6 +559,8 @@ def pick_for_slot(
     digest = hashlib.sha1(f"{seed}:{slot}".encode()).hexdigest()
     slot_rng = random.Random(digest)
     slot_rng.shuffle(options)
+    if slot in CLOTHING_SLOTS:
+        options.sort(key=lambda o: 0 if re.search(r"/2\.jpe?g$", o[1], re.I) else 1)
     return options
 
 
@@ -634,7 +646,7 @@ def main() -> int:
             continue
         # PC look/hero banners are panoramic — prefer landscape sources and
         # skip portrait studio packshots that collapse to a vertical stripe.
-        tries = 24 if kind in {"look", "hero"} else 4
+        tries = 40 if kind in {"look", "hero"} else 4
         chosen: tuple[str, str, Image.Image] | None = None
         last_err = ""
         for pid, img in picks[:tries]:
@@ -686,7 +698,7 @@ def main() -> int:
         except Exception as e:
             recovered = False
             if kind in {"look", "hero"}:
-                for pid2, img2 in picks[:24]:
+                for pid2, img2 in picks[:40]:
                     if img2 == img:
                         continue
                     source2 = fetch_image(img2)

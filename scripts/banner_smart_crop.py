@@ -136,7 +136,7 @@ def cover_crop(
         cy = min(cy, 0.36)
     elif tw / max(th, 1) >= 2.4:
         # Panoramic PC strip: keep the face in the short vertical window.
-        cy = min(max(cy, 0.16), 0.24)
+        cy = min(max(cy, 0.10), 0.18)
 
     left = int(round(cx * nw - tw / 2))
     top = int(round(cy * nh - th / 2))
@@ -146,7 +146,7 @@ def cover_crop(
 
 
 def has_on_model_face(im: Image.Image) -> bool:
-    """True when the photo looks like a person (skin in the upper half)."""
+    """True when the photo looks like a person (a face/neck blob, not hardware)."""
     rgb = np.asarray(im.convert("RGB"), dtype=np.float32)
     h, w = rgb.shape[:2]
     step = max(1, min(h, w) // 160)
@@ -154,17 +154,30 @@ def has_on_model_face(im: Image.Image) -> bool:
     sh, sw = small.shape[:2]
     r, g, b = small[..., 0], small[..., 1], small[..., 2]
     skin = (
-        (r > 95)
+        (r > 110)
         & (g > 40)
         & (b > 20)
         & (r > g)
         & (r > b)
-        & ((r - g) > 12)
-        & (_luma(small) < 230)
+        & ((r - g) > 18)
+        & ((r - b) > 18)
+        & (_luma(small) < 220)
+        & (_luma(small) > 55)
     )
-    skin[: int(sh * 0.05), :] = False
-    skin[int(sh * 0.62) :, :] = False
-    return int(skin.sum()) >= 40
+    skin[: int(sh * 0.04), :] = False
+    skin[int(sh * 0.58) :, :] = False
+    ys, xs = np.where(skin)
+    if len(xs) < 90:
+        return False
+    # Buttons / labels are tiny; a face or neck spans a real slice of the frame.
+    hspan = float(ys.max() - ys.min()) / max(sh, 1)
+    wspan = float(xs.max() - xs.min()) / max(sw, 1)
+    if hspan < 0.08 or wspan < 0.06:
+        return False
+    # Wall-to-wall "skin" is usually khaki fabric, not a person.
+    if float(skin.mean()) > 0.22:
+        return False
+    return True
 
 
 def is_extreme_closeup(im: Image.Image) -> bool:
@@ -218,6 +231,24 @@ def is_thin_studio_crop(im: Image.Image) -> bool:
     return side_chroma < 18
 
 
+def is_unbalanced_wide_crop(im: Image.Image) -> bool:
+    """True when a panoramic crop is empty studio on one side and product on the other."""
+    rgb = np.asarray(im.convert("RGB"), dtype=np.float32)
+    h, w = rgb.shape[:2]
+    if w < 48 or h < 16:
+        return True
+    luma = _luma(rgb)
+    thirds = []
+    for i in range(3):
+        sl = luma[:, i * w // 3 : (i + 1) * w // 3]
+        thirds.append(float(sl.std()))
+    lo, hi = min(thirds), max(thirds)
+    if hi < 12:
+        return True
+    # One third is busy product, another is flat grey paper
+    return hi > 3.2 * max(lo, 1.0) and lo < 14
+
+
 def sizes_for_kind(kind: str) -> tuple[tuple[int, int], tuple[int, int], tuple[int, int]]:
     if kind == "shop":
         return SHOP_DESKTOP, SHOP_TABLET, SHOP_MOBILE
@@ -246,10 +277,12 @@ def export_banner_set(
     slot_kind = kind or ("shop" if shop else "look")
     d, t, m = sizes_for_kind(slot_kind)
     desktop = cover_crop(source, d, focal, mobile_bias=False)
-    if slot_kind in {"look", "hero"} and is_thin_studio_crop(desktop):
-        raise ValueError("thin-studio-crop")
-    if require_face and not has_on_model_face(desktop):
-        raise ValueError("crop-missed-face")
+    if require_face:
+        if not has_on_model_face(desktop):
+            raise ValueError("crop-missed-face")
+    elif slot_kind in {"look", "hero"}:
+        if is_thin_studio_crop(desktop) or is_unbalanced_wide_crop(desktop):
+            raise ValueError("thin-studio-crop")
     save_jpeg(desktop, desktop_path)
     save_jpeg(cover_crop(source, t, focal, mobile_bias=False), tablet_path)
     save_jpeg(cover_crop(source, m, focal, mobile_bias=True), mobile_path)
