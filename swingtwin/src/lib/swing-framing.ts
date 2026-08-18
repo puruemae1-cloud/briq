@@ -377,12 +377,18 @@ export async function detectBodyCrop(
     }
   }
 
+  const landscape = vw > vh * 1.15;
+  const skyBand = landscape ? Math.round(analysisH * 0.38) : 0;
+
   let cropTopRow = bodyTopRow;
-  if (clubApexTopY < analysisH) {
+  if (mode === "user" && clubApexTopY < analysisH && clubApexTopY >= skyBand) {
     cropTopRow = Math.min(bodyTopRow, clubApexTopY);
   }
-  const headroom = Math.round(analysisH * (mode === "tour" ? 0.006 : 0.004));
-  cropTopRow = Math.max(0, cropTopRow - headroom);
+  if (mode === "tour" && landscape) {
+    cropTopRow = Math.max(cropTopRow, skyBand);
+  }
+  const headroom = Math.round(analysisH * (mode === "tour" ? 0.004 : 0.004));
+  cropTopRow = Math.max(skyBand && mode === "tour" ? skyBand : 0, cropTopRow - headroom);
 
   const scaleX = vw / analysisW;
   const scaleY = vh / analysisH;

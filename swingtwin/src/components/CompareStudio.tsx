@@ -97,20 +97,33 @@ export function CompareStudio() {
 
   const applyTourDisplayStyle = useCallback(
     async (src: string, userMeta?: BodyFrameMeta) => {
+      const known = getReferenceClip(pro.id);
+      if (
+        known?.displayCrop &&
+        known.sourceW &&
+        known.sourceH &&
+        (src === known.src || src.endsWith(known.src))
+      ) {
+        setTourDisplayStyle(
+          cropToVideoStyle(known.displayCrop, known.sourceW, known.sourceH, 1),
+        );
+        return;
+      }
+
       try {
         const { crop, sourceW, sourceH } = await detectBodyCropFromUrl(
           src,
           "tour",
         );
         const scale = userMeta
-          ? tourMatchScale(userMeta, crop, sourceH, sourceW)
-          : 1.6;
+          ? Math.min(1.25, tourMatchScale(userMeta, crop, sourceH, sourceW))
+          : 1;
         setTourDisplayStyle(cropToVideoStyle(crop, sourceW, sourceH, scale));
       } catch {
-        setTourDisplayStyle({ objectFit: "cover", objectPosition: "50% 45%" });
+        setTourDisplayStyle({ objectFit: "cover", objectPosition: "28% 78%" });
       }
     },
-    [],
+    [pro.id],
   );
 
   const captureReference = useCallback(async () => {
