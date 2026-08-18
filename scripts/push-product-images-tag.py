@@ -64,15 +64,46 @@ def sync_banners(tmp: Path, src: Path) -> bool:
     return bool(status)
 
 
-def sync_brand(tmp: Path, name: str, src: Path, *, merge: bool = False) -> bool:
+def sync_brand(
+    tmp: Path,
+    name: str,
+    src: Path,
+    *,
+    merge: bool = False,
+    only: list[str] | None = None,
+) -> bool:
     """Copy one brand tree into the worktree and stage it. Returns True if dirty.
 
     merge=True replaces only colour (or SKU) subfolders present locally, so
     sibling colourways already on the tag are preserved. Use this when the
     local tree is a partial redownload (e.g. pale Arc'teryx colourways only).
+    only= limits the copy to those product-id folder names (flat SKU trees
+    like ch-pdp/<sku>/1.jpg).
     """
     dest = tmp / "public" / "products" / name
     dest.mkdir(parents=True, exist_ok=True)
+    if only:
+        copied = 0
+        for sku in only:
+            child = src / sku
+            if not child.is_dir():
+                print(f"skip missing {child}", flush=True)
+                continue
+            target = dest / sku
+            if target.exists():
+                shutil.rmtree(target)
+            shutil.copytree(child, target)
+            copied += 1
+        print(f"copied {copied}/{len(only)} ids → public/products/{name}", flush=True)
+        run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
+        status = subprocess.run(
+            ["git", "status", "--porcelain", "--", f"public/products/{name}"],
+            cwd=str(tmp),
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        return bool(status)
     if merge:
         for pid_dir in src.iterdir():
             if not pid_dir.is_dir():
@@ -156,7 +187,23 @@ def main() -> int:
             "sibling folders under each product id (for partial redownloads)."
         ),
     )
+    ap.add_argument(
+        "--only",
+        nargs="+",
+        help="Only copy these product-id folder names under each --dirs tree",
+    )
+    ap.add_argument(
+        "--only-file",
+        help="Newline-separated product-id folder names (same as --only)",
+    )
     args = ap.parse_args()
+    only_ids: list[str] = list(args.only or [])
+    if args.only_file:
+        only_ids.extend(
+            line.strip()
+            for line in Path(args.only_file).read_text().splitlines()
+            if line.strip() and not line.startswith("#")
+        )
 
     src_roots: list[tuple[str, Path]] = []
     for name in args.dirs:
@@ -240,7 +287,9 @@ def main() -> int:
             if name == "banners":
                 changed = sync_banners(tmp, src)
             else:
-                changed = sync_brand(tmp, name, src, merge=args.merge)
+                changed = sync_brand(
+                    tmp, name, src, merge=args.merge, only=only_ids or None
+                )
             if not changed:
                 print(f"No image changes for {name}.", flush=True)
                 continue

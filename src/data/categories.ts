@@ -650,6 +650,17 @@ export type SubcategoryId =
   | "ch-makeup-eye-brushes"
   | "ch-makeup-complexion-brushes"
   | "ch-makeup-lip-brushes"
+  | "ch-skincare"
+  | "ch-skincare-cleansers"
+  | "ch-skincare-serums"
+  | "ch-skincare-moisturisers"
+  | "ch-skincare-eyes-lips"
+  | "ch-skincare-body"
+  | "ch-skincare-masks"
+  | "ch-skincare-oils"
+  | "ch-skincare-protection"
+  | "ch-skincare-toners"
+  | "ch-skincare-mists"
   | "ch-other-accessories"
   | "ch-women-headwear"
   | "ch-women-belts"
@@ -794,6 +805,20 @@ export const CH_MAKEUP_LEAF_IDS: SubcategoryId[] = [
   ...CH_MAKEUP_LIP_LEAF_IDS,
   ...CH_MAKEUP_NAIL_LEAF_IDS,
   ...CH_MAKEUP_BRUSH_LEAF_IDS,
+];
+
+/** Chanel skincare product-type leaves (official GB https://www.chanel.com/gb/skincare/). */
+export const CH_SKINCARE_LEAF_IDS: SubcategoryId[] = [
+  "ch-skincare-cleansers",
+  "ch-skincare-serums",
+  "ch-skincare-moisturisers",
+  "ch-skincare-eyes-lips",
+  "ch-skincare-body",
+  "ch-skincare-masks",
+  "ch-skincare-oils",
+  "ch-skincare-protection",
+  "ch-skincare-toners",
+  "ch-skincare-mists",
 ];
 
 /** Chanel other accessories leaves (official GB other-accessories PLPs). */
@@ -1729,6 +1754,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...CH_FRAGRANCE_LEAF_IDS,
     "ch-makeup",
     ...CH_MAKEUP_LEAF_IDS,
+    "ch-skincare",
+    ...CH_SKINCARE_LEAF_IDS,
     "ch-other-accessories",
     ...CH_OTHER_ACC_LEAF_IDS,
   ],
@@ -1782,6 +1809,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ch-makeup-eye-brushes": ["ch-makeup-eye-brushes"],
   "ch-makeup-complexion-brushes": ["ch-makeup-complexion-brushes"],
   "ch-makeup-lip-brushes": ["ch-makeup-lip-brushes"],
+  "ch-skincare": ["ch-skincare", ...CH_SKINCARE_LEAF_IDS],
+  "ch-skincare-cleansers": ["ch-skincare-cleansers"],
+  "ch-skincare-serums": ["ch-skincare-serums"],
+  "ch-skincare-moisturisers": ["ch-skincare-moisturisers"],
+  "ch-skincare-eyes-lips": ["ch-skincare-eyes-lips"],
+  "ch-skincare-body": ["ch-skincare-body"],
+  "ch-skincare-masks": ["ch-skincare-masks"],
+  "ch-skincare-oils": ["ch-skincare-oils"],
+  "ch-skincare-protection": ["ch-skincare-protection"],
+  "ch-skincare-toners": ["ch-skincare-toners"],
+  "ch-skincare-mists": ["ch-skincare-mists"],
   "ch-other-accessories": ["ch-other-accessories", ...CH_OTHER_ACC_LEAF_IDS],
   "chanel-watches": ["chanel-watches", "ch-watches", ...CH_WATCH_LEAF_IDS],
   "ch-watches": ["ch-watches", ...CH_WATCH_LEAF_IDS],
@@ -4311,6 +4349,64 @@ export const navCategories: NavCategory[] = [
                     href: "/shop?category=accessories&sub=ch-makeup-lip-brushes",
                   },
                 ],
+              },
+            ],
+          },
+          {
+            id: "ch-skincare",
+            labelKo: "스킨케어",
+            href: "/shop?category=accessories&sub=ch-skincare",
+            navLeaf: true,
+            children: [
+              {
+                id: "ch-skincare-cleansers",
+                labelKo: "클렌저/메이크업 리무버",
+                href: "/shop?category=accessories&sub=ch-skincare-cleansers",
+              },
+              {
+                id: "ch-skincare-serums",
+                labelKo: "세럼",
+                href: "/shop?category=accessories&sub=ch-skincare-serums",
+              },
+              {
+                id: "ch-skincare-moisturisers",
+                labelKo: "모이스처라이저",
+                href: "/shop?category=accessories&sub=ch-skincare-moisturisers",
+              },
+              {
+                id: "ch-skincare-eyes-lips",
+                labelKo: "아이 & 립 케어",
+                href: "/shop?category=accessories&sub=ch-skincare-eyes-lips",
+              },
+              {
+                id: "ch-skincare-body",
+                labelKo: "바디/핸드 케어",
+                href: "/shop?category=accessories&sub=ch-skincare-body",
+              },
+              {
+                id: "ch-skincare-masks",
+                labelKo: "마스크 & 스크럽",
+                href: "/shop?category=accessories&sub=ch-skincare-masks",
+              },
+              {
+                id: "ch-skincare-oils",
+                labelKo: "오일",
+                href: "/shop?category=accessories&sub=ch-skincare-oils",
+              },
+              {
+                id: "ch-skincare-protection",
+                labelKo: "선 프로텍션",
+                href: "/shop?category=accessories&sub=ch-skincare-protection",
+              },
+              {
+                id: "ch-skincare-toners",
+                labelKo: "토너/로션",
+                href: "/shop?category=accessories&sub=ch-skincare-toners",
+              },
+              {
+                id: "ch-skincare-mists",
+                labelKo: "미스트",
+                href: "/shop?category=accessories&sub=ch-skincare-mists",
               },
             ],
           },

@@ -12,6 +12,7 @@ Sources:
   - ch-sunglasses-catalog-raw.json → category accessories (sunglasses)
   - ch-fragrance-catalog-raw.json → category accessories (fragrance)
   - ch-makeup-catalog-raw.json → category accessories (makeup)
+  - ch-skincare-catalog-raw.json → category accessories (skincare)
   - ch-other-acc-catalog-raw.json → category accessories (other accessories)
   - ch-watches-catalog-raw.json → category watches (J12 / Première / BOY·FRIEND / Monsieur / Code Coco)
 
@@ -23,6 +24,7 @@ Costume jewellery: mostly One Size (UNI); rings use French ring sizes + chart.
 Sunglasses: One Size + official frame measurements (mm) in copy.
 Fragrance: One Size (volume is in the official product name).
 Makeup: One Size (shade is in the official product name / colour).
+Skincare: One Size (volume is in the official product name).
 Other accessories: belts numeric cm; hats S/M/L head-circ; most UNI.
 """
 from __future__ import annotations
@@ -51,6 +53,7 @@ FINE_JEWELLERY_RAW_PATH = ROOT / "src/data/ch/ch-fine-jewellery-catalog-raw.json
 SUNGLASSES_RAW_PATH = ROOT / "src/data/ch/ch-sunglasses-catalog-raw.json"
 FRAGRANCE_RAW_PATH = ROOT / "src/data/ch/ch-fragrance-catalog-raw.json"
 MAKEUP_RAW_PATH = ROOT / "src/data/ch/ch-makeup-catalog-raw.json"
+SKINCARE_RAW_PATH = ROOT / "src/data/ch/ch-skincare-catalog-raw.json"
 OTHER_ACC_RAW_PATH = ROOT / "src/data/ch/ch-other-acc-catalog-raw.json"
 WATCHES_RAW_PATH = ROOT / "src/data/ch/ch-watches-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ch/ch-catalog.json"
@@ -161,6 +164,20 @@ MAKEUP_SHAPE_LEAVES = [
     *MAKEUP_GROUP_IDS,
 ]
 MAKEUP_PARENT_COLS = ["chanel", "chanel-accessories", "ch-makeup"]
+
+SKINCARE_SHAPE_LEAVES = [
+    "ch-skincare-cleansers",
+    "ch-skincare-serums",
+    "ch-skincare-moisturisers",
+    "ch-skincare-eyes-lips",
+    "ch-skincare-body",
+    "ch-skincare-masks",
+    "ch-skincare-oils",
+    "ch-skincare-protection",
+    "ch-skincare-toners",
+    "ch-skincare-mists",
+]
+SKINCARE_PARENT_COLS = ["chanel", "chanel-accessories", "ch-skincare"]
 
 OTHER_ACC_SHAPE_LEAVES = [
     "ch-women-headwear",
@@ -2709,6 +2726,139 @@ def build_makeup_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
     return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
 
 
+def build_skincare_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("sku") or row.get("id")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    allowed = {"ch-skincare", *SKINCARE_SHAPE_LEAVES}
+    leaves = [
+        c
+        for c in (row.get("leaves") or row.get("collections") or [])
+        if c in SKINCARE_SHAPE_LEAVES
+    ]
+    leaf = row.get("leaf") if row.get("leaf") in SKINCARE_SHAPE_LEAVES else None
+    if leaf and leaf not in leaves:
+        leaves.append(leaf)
+    if not leaves:
+        leaves = ["ch-skincare"]
+    primary = next((c for c in SKINCARE_SHAPE_LEAVES if c in leaves), leaves[0])
+    if leaf:
+        primary = leaf
+    cols = sorted(set([*SKINCARE_PARENT_COLS, *leaves]) & (allowed | set(SKINCARE_PARENT_COLS)))
+
+    title_en, name_ko = official_name_pair(row, code)
+    details = row.get("details") or {}
+    if not isinstance(details, dict):
+        details = {}
+    desc_en = as_text(details.get("editorial") or details.get("description"))
+    ref = as_text(details.get("reference")) or str(code)
+    shade = as_text(details.get("color"))
+    collection = as_text(row.get("collection") or row.get("categoryLabel"))
+
+    desc_ko = t(desc_en) if desc_en else ""
+    collection_ko = t(collection) if collection else ""
+    shade_ko = t(shade) if shade else ""
+
+    parts = [desc_ko]
+    if collection_ko:
+        parts.append(f"카테고리: {collection_ko}")
+    if shade_ko:
+        parts.append(f"컬러: {shade_ko}")
+    if ref:
+        parts.append(f"레퍼런스: {ref}")
+    description_ko = "\n\n".join(p for p in parts if p)
+
+    images = [
+        p
+        for p in (row.get("localImages") or [])
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (skincare): {code}", flush=True)
+        return None
+    image = images[0]
+    hover = images[1] if len(images) > 1 else None
+
+    pid = f"ch-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    shade_label = shade or "One Size"
+    shade_ko_label = shade_ko or "원 사이즈"
+
+    variants = [
+        {
+            "id": f"{pid}-os",
+            "name": f"{title_en} — {shade_label}",
+            "nameKo": f"{name_ko} — {shade_ko_label}",
+            "sku": code,
+            "gbpPrice": float(gbp),
+            "price": price,
+            "image": image,
+            "images": images,
+            "sourceUrl": row.get("url") or "",
+            "inStock": True,
+            "colorKey": re.sub(r"[^a-z0-9]+", "-", shade.lower()).strip("-")
+            if shade
+            else "default",
+            "colorNameKo": shade_ko or "기본",
+            "size": "One Size",
+            "chCollections": cols,
+        }
+    ]
+    if hover:
+        variants[0]["hoverImage"] = hover
+
+    tags = [
+        "chanel",
+        "샤넬",
+        "skincare",
+        "스킨케어",
+        "beauty",
+        "뷰티",
+        "악세서리",
+        *cols,
+    ]
+    badge = "New" if row.get("new") else None
+    story = []
+    if desc_ko:
+        story.append({"titleKo": name_ko, "bodyKo": desc_ko, "image": image})
+
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "샤넬",
+        "price": price,
+        "category": "accessories",
+        "subcategory": primary,
+        "chCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "accent": accent_for(str(code)),
+        "badge": badge,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": True,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "new" if badge == "New" else "signature",
+    }
+    if hover:
+        prod["hoverImage"] = hover
+    return apply_detail_fields(prod, row, name_ko=name_ko, image=image)
+
+
 def build_other_acc_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     """Other accessories — keep official multi-leaf tags (e.g. scarf + winter)."""
     code = row.get("productCode") or row.get("sku") or row.get("id")
@@ -3103,6 +3253,12 @@ def main() -> int:
     else:
         print(f"WARN missing makeup raw: {MAKEUP_RAW_PATH}", flush=True)
 
+    skincare_rows: list[dict] = []
+    if SKINCARE_RAW_PATH.exists():
+        skincare_rows = json.loads(SKINCARE_RAW_PATH.read_text()).get("products") or []
+    else:
+        print(f"WARN missing skincare raw: {SKINCARE_RAW_PATH}", flush=True)
+
     other_acc_rows: list[dict] = []
     if OTHER_ACC_RAW_PATH.exists():
         other_acc_rows = json.loads(OTHER_ACC_RAW_PATH.read_text()).get("products") or []
@@ -3149,6 +3305,14 @@ def main() -> int:
             or p.get("subcategory") in MAKEUP_SHAPE_LEAVES
         )
 
+    def _is_skincare_prev(p: dict) -> bool:
+        cols = set(p.get("chCollections") or [])
+        return (
+            "ch-skincare" in cols
+            or p.get("subcategory") in SKINCARE_SHAPE_LEAVES
+            or p.get("subcategory") == "ch-skincare"
+        )
+
     def _is_other_acc_prev(p: dict) -> bool:
         cols = set(p.get("chCollections") or [])
         return (
@@ -3176,6 +3340,7 @@ def main() -> int:
         or not sunglass_rows
         or not fragrance_rows
         or not makeup_rows
+        or not skincare_rows
         or not other_acc_rows
         or not watch_rows
     ):
@@ -3218,6 +3383,10 @@ def main() -> int:
                     if prev["id"] not in seen:
                         products.append(prev)
                         seen.add(prev["id"])
+                if not skincare_rows and _is_skincare_prev(prev):
+                    if prev["id"] not in seen:
+                        products.append(prev)
+                        seen.add(prev["id"])
                 if not other_acc_rows and _is_other_acc_prev(prev):
                     products.append(prev)
                     seen.add(prev["id"])
@@ -3228,6 +3397,7 @@ def main() -> int:
                     and not sunglass_rows
                     and not fragrance_rows
                     and not makeup_rows
+                    and not skincare_rows
                     and not other_acc_rows
                     and not _is_jew_prev(prev)
                     and not _is_hj_prev(prev)
@@ -3235,6 +3405,7 @@ def main() -> int:
                     and not _is_sunglass_prev(prev)
                     and not _is_fragrance_prev(prev)
                     and not _is_makeup_prev(prev)
+                    and not _is_skincare_prev(prev)
                     and not _is_other_acc_prev(prev)
                 ):
                     products.append(prev)
@@ -3404,6 +3575,52 @@ def main() -> int:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built makeup {i}/{len(makeup_rows)}", flush=True)
 
+    def _skincare_cols_from_row(row: dict) -> list[str]:
+        leaves = [
+            c
+            for c in (row.get("leaves") or row.get("collections") or [])
+            if c in SKINCARE_SHAPE_LEAVES
+        ]
+        leaf = row.get("leaf") if row.get("leaf") in SKINCARE_SHAPE_LEAVES else None
+        if leaf and leaf not in leaves:
+            leaves.append(leaf)
+        if not leaves:
+            leaves = ["ch-skincare"]
+        return sorted(set([*SKINCARE_PARENT_COLS, *leaves]))
+
+    def _merge_skincare_onto(existing: dict, row: dict) -> None:
+        extra = _skincare_cols_from_row(row)
+        cols = sorted(set(existing.get("chCollections") or []) | set(extra))
+        existing["chCollections"] = cols
+        tags = list(
+            dict.fromkeys(
+                [*(existing.get("tags") or []), "skincare", "스킨케어", "beauty", "뷰티", *cols]
+            )
+        )
+        existing["tags"] = tags
+        for v in existing.get("variants") or []:
+            if isinstance(v, dict):
+                v["chCollections"] = sorted(set(v.get("chCollections") or []) | set(extra))
+
+    for i, row in enumerate(skincare_rows, start=1):
+        if row.get("_skip"):
+            continue
+        pid_guess = f"ch-{str(row.get('sku') or row.get('id') or '').lower()}"
+        if pid_guess in seen:
+            existing = by_id.get(pid_guess)
+            if existing:
+                _merge_skincare_onto(existing, row)
+            continue
+        prod = build_skincare_product(row, prev_map.get(pid_guess), now_iso)
+        if not prod or prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
+        by_id[prod["id"]] = prod
+        products.append(prod)
+        if i % 40 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"built skincare {i}/{len(skincare_rows)}", flush=True)
+
     for i, row in enumerate(other_acc_rows, start=1):
         if row.get("_skip"):
             continue
@@ -3436,7 +3653,7 @@ def main() -> int:
     OUT_TS.write_text(
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./ch-catalog.json";\n\n'
-        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Fragrance + Makeup + Other Accessories + Watches. */\n"
+        "/** Auto-generated — Chanel RTW + Handbags + SLG + Shoes + Jewellery + High/Fine Jewellery + Sunglasses + Fragrance + Makeup + Skincare + Other Accessories + Watches. */\n"
         "export const chCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2) + "\n")
@@ -3454,6 +3671,8 @@ def main() -> int:
             SUNGLASSES_LEAF,
             FRAGRANCE_LEAF,
             *MAKEUP_SHAPE_LEAVES,
+            "ch-skincare",
+            *SKINCARE_SHAPE_LEAVES,
             *OTHER_ACC_SHAPE_LEAVES,
             *WATCH_SHAPE_LEAVES,
             "ch-women-looks",
