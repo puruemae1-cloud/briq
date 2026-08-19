@@ -16,10 +16,11 @@ export function detectSwingSync(
 
   if (samples.length < 8) {
     return {
+      addressT: 0,
       takeawayT: dur * 0.12,
       topT: dur * 0.42,
       impactT: dur * 0.72,
-      endT: dur * 0.88,
+      endT: dur * 0.98,
     };
   }
 
@@ -63,10 +64,11 @@ export function detectSwingSync(
   const takeawayT = samples[takeawayI]?.t ?? dur * 0.12;
   const topT = Math.max(samples[topI]?.t ?? dur * 0.42, takeawayT + 0.08);
   const impactT = Math.max(samples[impactI]?.t ?? dur * 0.72, topT + 0.08);
+  const addressT = clamp(Math.min(takeawayT * 0.35, takeawayT - 0.25), 0, takeawayT);
   const swingLen = impactT - takeawayT;
-  const endT = clamp(impactT + swingLen * 0.12, impactT + 0.05, dur * 0.98);
+  const endT = clamp(impactT + swingLen * 0.85, impactT + 0.35, dur * 0.995);
 
-  return { takeawayT, topT, impactT, endT };
+  return { addressT, takeawayT, topT, impactT, endT };
 }
 
 /** Rory / tour model timing when no tour clip is uploaded. */
@@ -75,10 +77,11 @@ export function modelSyncFromUser(user: SwingSyncMarkers): SwingSyncMarkers {
   const topFrac = (0.42 - 0.09) / (0.74 - 0.09);
   const impactFrac = 1;
   return {
+    addressT: 0,
     takeawayT: 0,
     topT: len * topFrac,
     impactT: len * impactFrac,
-    endT: len * 1.1,
+    endT: len * 1.55,
   };
 }
 
@@ -88,10 +91,10 @@ export function mapSyncedTourTime(
   user: SwingSyncMarkers,
   tour: SwingSyncMarkers,
 ): number {
-  const u0 = user.takeawayT;
+  const u0 = swingAddressT(user);
   const u1 = user.topT;
   const u2 = user.impactT;
-  const t0 = tour.takeawayT;
+  const t0 = swingAddressT(tour);
   const t1 = tour.topT;
   const t2 = tour.impactT;
   const t = clamp(userTime, u0, user.endT);
@@ -113,11 +116,30 @@ export function syncFromSkeleton(frames: SkeletonFrame[]): SwingSyncMarkers | un
   if (frames.length < 4) return undefined;
   const pick = (frac: number) =>
     frames[Math.min(frames.length - 1, Math.round(frac * (frames.length - 1)))]?.t ?? 0;
-  const takeawayT = pick(0.12);
+  const takeawayT = pick(0.08);
   const topT = Math.max(pick(0.42), takeawayT + 0.08);
-  const impactT = Math.max(pick(0.74), topT + 0.08);
-  const endT = impactT + (impactT - takeawayT) * 0.12;
-  return { takeawayT, topT, impactT, endT };
+  const impactT = Math.max(pick(0.68), topT + 0.08);
+  const addressT = Math.max(0, takeawayT - 0.25);
+  const endT = Math.min(
+    frames[frames.length - 1]!.t,
+    impactT + (impactT - takeawayT) * 0.85,
+  );
+  return { addressT, takeawayT, topT, impactT, endT };
+}
+
+export function swingAddressT(sync: SwingSyncMarkers) {
+  if (sync.addressT != null && Number.isFinite(sync.addressT)) {
+    return Math.max(0, sync.addressT);
+  }
+  return Math.max(0, sync.takeawayT - 0.28);
+}
+
+export function swingFinishT(sync: SwingSyncMarkers, duration?: number) {
+  const end = Number.isFinite(sync.endT) ? sync.endT : 0;
+  if (duration && Number.isFinite(duration) && duration > 0) {
+    return Math.min(Math.max(end, 0), duration * 0.995);
+  }
+  return Math.max(0, end);
 }
 
 export function swingPhaseNorm(

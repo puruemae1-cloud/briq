@@ -192,7 +192,14 @@ export function analyzePair(opts: {
   const tourSamples = tourFace?.samples ?? tourAll;
   const tourDur = tourFace?.duration ?? tourSamples[tourSamples.length - 1]?.t ?? userDur;
   const tourSync = tourFace
-    ? detectSwingSync(tourSamples, tourDur)
+    ? (() => {
+        const detected = detectSwingSync(tourSamples, tourDur);
+        return {
+          ...detected,
+          addressT: detected.addressT ?? 0,
+          endT: Math.max(detected.endT, tourDur * 0.995),
+        };
+      })()
     : modelSyncFromUser(userSync);
 
   const allFine = FINE_PHASES.map((phase) => {

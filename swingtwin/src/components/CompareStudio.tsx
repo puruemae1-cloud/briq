@@ -6,7 +6,7 @@ import { defaultProId, getPro } from "@/lib/pros";
 import { getReferenceClip } from "@/lib/reference-clips";
 import { useTwinStore } from "@/lib/store";
 import { saveClip, clipObjectUrl, loadClip, deleteClip } from "@/lib/video-store";
-import { autoFrameSwingVideo, detectBodyCropFromUrl, cropToVideoStyle, tourMatchScale, detectSwingLandmarksFromUrl, cropToMatchLandmarks, RORY_PORTRAIT_LANDMARKS } from "@/lib/swing-framing";
+import { autoFrameSwingVideo, detectBodyCropFromUrl, cropToVideoStyle, tourMatchScale, detectSwingLandmarksFromUrl, cropToMatchLandmarks, RORY_PORTRAIT_LANDMARKS, USER_TO_RORY_ZOOM } from "@/lib/swing-framing";
 import type { BodyFrameMeta, VideoDisplayStyle, SwingLandmarks } from "@/lib/swing-framing";
 import { detectSwingSync, modelSyncFromUser, syncFromSkeleton } from "@/lib/swing-sync";
 import type { SkeletonFrame, SwingSyncMarkers, ViewCapture } from "@/lib/types";
@@ -88,12 +88,12 @@ export function CompareStudio() {
   const reference = getReferenceClip(pro.id);
 
   const userSync =
-    result?.userSync ??
     liveUserSync ??
+    result?.userSync ??
     (skeleton.length ? syncFromSkeleton(skeleton) : undefined);
   const tourSync =
-    result?.tourSync ??
     liveTourSync ??
+    result?.tourSync ??
     (userSync ? modelSyncFromUser(userSync) : undefined);
 
   const applyTourDisplayStyle = useCallback(
@@ -151,7 +151,12 @@ export function CompareStudio() {
       if (gen !== tourLoadGen.current) return undefined;
 
       setRefTourCapture(cap);
-      setLiveTourSync(detectSwingSync(cap.samples, cap.duration));
+      const sync = detectSwingSync(cap.samples, cap.duration);
+      setLiveTourSync({
+        ...sync,
+        addressT: 0,
+        endT: Math.max(sync.endT, cap.duration * 0.995),
+      });
       return cap;
     } catch (e) {
       if (gen === tourLoadGen.current) {
@@ -272,7 +277,7 @@ export function CompareStudio() {
     };
     return {
       meta,
-      style: cropToVideoStyle(crop, sourceW, sourceH),
+      style: cropToVideoStyle(crop, sourceW, sourceH, USER_TO_RORY_ZOOM),
     };
   }
 
@@ -453,9 +458,9 @@ export function CompareStudio() {
         <p className="twin-kicker">Compare</p>
         <h1>You on the left — Rory on the right</h1>
         <p>
-          Upload your face-on clip on the left — sky is cut at the driver apex (top of
-          backswing), plus floor and sides removed so your body fills the frame. Rory
-          loads automatically on the right.
+          Upload your face-on clip on the left. Your body is zoomed to match
+          Rory’s size. Rory plays address through finish at the same 1× speed as
+          your swing.
         </p>
       </header>
 
@@ -594,8 +599,9 @@ export function CompareStudio() {
 
       {userUrl && tourUrl && userSync && tourSync ? (
         <p className="twin-note">
-          Press <strong>Play synced swing</strong> — both clips start at takeaway
-          and hit impact together.
+          Press <strong>Play swing</strong> — both clips start at address and
+          play at the same 1× speed through to finish. Re-upload your clip so
+          your body is zoomed to match Rory.
         </p>
       ) : userUrl && !userSync ? (
         <p className="twin-note">Reading your clip for sync points…</p>

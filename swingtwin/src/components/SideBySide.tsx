@@ -5,6 +5,8 @@ import { RORY_PORTRAIT_LANDMARKS } from "@/lib/swing-framing";
 import {
   mapSyncedTourTime,
   swingPhaseNorm,
+  swingAddressT,
+  swingFinishT,
 } from "@/lib/swing-sync";
 import { ProSwingCanvas } from "./ProSwingCanvas";
 
@@ -57,9 +59,11 @@ export function SideBySide({
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
-  const [sync, setSync] = useState(true);
+  const [sync, setSync] = useState(false);
   const [phaseNorm, setPhaseNorm] = useState(0);
   const rafRef = useRef(0);
+  const userDoneRef = useRef(false);
+  const tourDoneRef = useRef(false);
 
   const hasSync = Boolean(userSync && tourSync);
   const useModel = !tourUrl && Boolean(pro && userSync && tourSync);
@@ -74,16 +78,18 @@ export function SideBySide({
   );
 
   const seekTour = useCallback(
-    (userTime: number) => {
-      if (!userSync || !tourSync) return;
-      const mapped = mapSyncedTourTime(userTime, userSync, tourSync);
+    (userTime: number, warp: boolean) => {
       const el = tourRef.current;
-      if (el && Number.isFinite(el.duration)) {
-        el.currentTime = Math.max(0, Math.min(el.duration * 0.99, mapped));
-      }
-      setPhaseNorm(swingPhaseNorm(userTime, userSync));
+      if (!el || !Number.isFinite(el.duration) || !tourSync) return;
+      const mapped = warp && userSync
+        ? mapSyncedTourTime(userTime, userSync, tourSync)
+        : swingAddressT(tourSync) + Math.max(0, userTime - (userSync ? swingAddressT(userSync) : 0));
+      const start = tourIsReference ? 0 : swingAddressT(tourSync);
+      const target = warp ? mapped : Math.max(start, mapped);
+      el.currentTime = Math.max(0, Math.min(el.duration * 0.99, target));
+      if (userSync) setPhaseNorm(swingPhaseNorm(userTime, userSync));
     },
-    [userSync, tourSync],
+    [userSync, tourSync, tourIsReference],
   );
 
   useEffect(() => {
@@ -92,15 +98,15 @@ export function SideBySide({
     if (!user?.duration) return;
     const t = userSync.takeawayT + phaseT * (userSync.impactT - userSync.takeawayT);
     seekUser(t);
-    seekTour(t);
-  }, [phaseT, userSync, tourSync, userUrl, tourUrl, seekUser, seekTour]);
+    seekTour(t, sync);
+  }, [phaseT, userSync, tourSync, userUrl, tourUrl, seekUser, seekTour, sync]);
 
   useEffect(() => {
     const tour = tourRef.current;
     if (!tour || !tourUrl) return;
     const showFirst = () => {
       if (!Number.isFinite(tour.duration) || tour.duration <= 0) return;
-      const t = tourSync?.takeawayT ?? Math.min(0.35, tour.duration * 0.08);
+      const t = tourIsReference ? 0 : tourSync ? swingAddressT(tourSync) : 0;
       try {
         tour.currentTime = t;
       } catch {
@@ -114,45 +120,85 @@ export function SideBySide({
       tour.removeEventListener("loadeddata", showFirst);
       tour.removeEventListener("loadedmetadata", showFirst);
     };
-  }, [tourUrl, tourSync]);
+  }, [tourUrl, tourSync, tourIsReference]);
 
   useEffect(() => {
     if (!userUrl || !userSync) return;
     const user = userRef.current;
     if (!user) return;
     const onMeta = () => {
-      seekUser(userSync.takeawayT);
-      seekTour(userSync.takeawayT);
+      const t = swingAddressT(userSync);
+      seekUser(t);
+      const tour = tourRef.current;
+      if (tour && tourSync) {
+        const start = tourIsReference ? 0 : swingAddressT(tourSync);
+        tour.currentTime = Math.max(0, Math.min(tour.duration * 0.99, start));
+      }
     };
     user.addEventListener("loadedmetadata", onMeta);
     if (user.readyState >= 1) onMeta();
     return () => user.removeEventListener("loadedmetadata", onMeta);
-  }, [userUrl, userSync, tourSync, seekUser, seekTour]);
+  }, [userUrl, userSync, tourSync, tourIsReference, seekUser]);
 
   useEffect(() => {
     const user = userRef.current;
     const tour = tourRef.current;
-    if (!user || !sync || !hasSync) return;
+    if (!playing || !user || !userSync) return;
 
-    const onTime = () => {
-      const t = user.currentTime;
-      if (userSync && t >= userSync.endT && playing) {
+    const userEnd = swingFinishT(userSync, user.duration);
+    const tourEnd = tour
+      ? tourIsReference && Number.isFinite(tour.duration)
+        ? tour.duration * 0.995
+        : tourSync
+          ? swingFinishT(tourSync, tour.duration)
+          : tour.duration * 0.995
+      : Infinity;
+
+    const maybeStop = () => {
+      if (user.currentTime >= userEnd) {
         user.pause();
-        tour?.pause();
-        setPlaying(false);
-        return;
+        userDoneRef.current = true;
       }
-      if (tourUrl && tour) {
-        const mapped = mapSyncedTourTime(t, userSync!, tourSync!);
+      if (tour && tour.currentTime >= tourEnd) {
+        tour.pause();
+        tourDoneRef.current = true;
+      }
+      if (userDoneRef.current && (tourDoneRef.current || !tour)) {
+        setPlaying(false);
+      }
+      setPhaseNorm(swingPhaseNorm(user.currentTime, userSync));
+    };
+
+    const onUser = () => {
+      if (sync && tour && userSync && tourSync) {
+        const mapped = mapSyncedTourTime(user.currentTime, userSync, tourSync);
         if (Math.abs(tour.currentTime - mapped) > 0.06) {
           tour.currentTime = mapped;
         }
       }
-      setPhaseNorm(swingPhaseNorm(t, userSync!));
+      maybeStop();
     };
-    user.addEventListener("timeupdate", onTime);
-    return () => user.removeEventListener("timeupdate", onTime);
-  }, [sync, hasSync, userSync, tourSync, tourUrl, playing]);
+    const onTour = () => maybeStop();
+    const onUserEnded = () => {
+      userDoneRef.current = true;
+      maybeStop();
+    };
+    const onTourEnded = () => {
+      tourDoneRef.current = true;
+      maybeStop();
+    };
+
+    user.addEventListener("timeupdate", onUser);
+    user.addEventListener("ended", onUserEnded);
+    tour?.addEventListener("timeupdate", onTour);
+    tour?.addEventListener("ended", onTourEnded);
+    return () => {
+      user.removeEventListener("timeupdate", onUser);
+      user.removeEventListener("ended", onUserEnded);
+      tour?.removeEventListener("timeupdate", onTour);
+      tour?.removeEventListener("ended", onTourEnded);
+    };
+  }, [playing, sync, userSync, tourSync, tourIsReference]);
 
   useEffect(() => {
     if (!playing || !userSync) return;
@@ -180,10 +226,23 @@ export function SideBySide({
     }
 
     try {
-      seekUser(userSync.takeawayT);
-      if (tourUrl && tour && tourSync) {
-        tour.currentTime = mapSyncedTourTime(userSync.takeawayT, userSync, tourSync);
+      const userStart = swingAddressT(userSync);
+      const tourStart = tourIsReference
+        ? 0
+        : tourSync
+          ? swingAddressT(tourSync)
+          : 0;
+      seekUser(userStart);
+      if (tourUrl && tour) {
+        tour.currentTime = Math.max(
+          0,
+          Math.min(tour.duration * 0.99, tourStart),
+        );
+        tour.playbackRate = 1;
       }
+      user.playbackRate = 1;
+      userDoneRef.current = false;
+      tourDoneRef.current = false;
       setPhaseNorm(0);
       await user.play();
       if (tourUrl && tour) await tour.play();
@@ -198,8 +257,12 @@ export function SideBySide({
     userRef.current?.pause();
     tourRef.current?.pause();
     setPlaying(false);
-    seekUser(userSync.takeawayT);
-    seekTour(userSync.takeawayT);
+    const userStart = swingAddressT(userSync);
+    seekUser(userStart);
+    const tour = tourRef.current;
+    if (tour && tourSync) {
+      tour.currentTime = tourIsReference ? 0 : swingAddressT(tourSync);
+    }
     setPhaseNorm(0);
   }
 
@@ -272,7 +335,7 @@ export function SideBySide({
           onClick={() => void toggle()}
           disabled={!userUrl || !hasSync}
         >
-          {playing ? "Pause" : "Play synced swing"}
+          {playing ? "Pause" : "Play swing"}
         </button>
         <button
           type="button"
@@ -280,7 +343,7 @@ export function SideBySide({
           onClick={replaySegment}
           disabled={!userUrl || !hasSync}
         >
-          Replay takeaway → impact
+          Replay address → finish
         </button>
         <label>
           <input
@@ -288,7 +351,7 @@ export function SideBySide({
             checked={sync}
             onChange={(e) => setSync(e.target.checked)}
           />
-          Sync arms up → impact
+          Warp speed to hit impact together
         </label>
       </div>
       {hasSync && userSync ? (
@@ -296,7 +359,7 @@ export function SideBySide({
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
           {tourIsReference
-            ? " · Rory zoomed to match your body size"
+            ? " · same 1x speed · address → finish · your body zoomed to Rory"
             : tourUrl
               ? ""
               : " · upload Rory's clip on the right to replace the default"}

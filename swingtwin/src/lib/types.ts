@@ -105,6 +105,8 @@ export type MetricGap = {
 };
 
 export type SwingSyncMarkers = {
+  /** Setup / address — start of full-swing playback */
+  addressT?: number;
   /** Arms start up — start of side-by-side playback */
   takeawayT: number;
   topT: number;

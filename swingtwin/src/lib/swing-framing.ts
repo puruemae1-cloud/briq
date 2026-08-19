@@ -490,9 +490,12 @@ function clamp01(n: number) {
   return Math.min(1, Math.max(0, n));
 }
 
+/** Extra CSS zoom so a distant phone golfer fills the panel like Rory. */
+export const USER_TO_RORY_ZOOM = 1.82;
+
 /**
- * Crop that maps `src` landmarks onto `target` panel positions
- * (same head/feet/back/ball lines in both 3:4 panels).
+ * Tight 3:4 crop so the user's head-to-feet span matches Rory in the panel.
+ * Width follows body height (not ball-to-back, which made phone clips too wide/small).
  */
 export function cropToMatchLandmarks(
   src: SwingLandmarks,
@@ -500,36 +503,42 @@ export function cropToMatchLandmarks(
   sourceW: number,
   sourceH: number,
 ): CropRect {
-  const dy = src.feetY - src.headY;
-  const ty = target.feetY - target.headY;
-  let cropH = dy > 0.05 && ty > 0.05 ? (dy / ty) * sourceH : sourceH * 0.85;
-
-  const dx = src.ballX - src.backX;
-  const tx = target.ballX - target.backX;
-  let cropW =
-    Math.abs(dx) > 0.03 && Math.abs(tx) > 0.03
-      ? (Math.abs(dx) / Math.abs(tx)) * sourceW
-      : cropH * (3 / 4);
+  let headY = src.headY;
+  let feetY = src.feetY;
+  let bodySpan = Math.max(0.12, feetY - headY);
+  // Phone DTL often tags sky as "head", leaving the golfer tiny in a near-full-frame crop.
+  if (bodySpan > 0.58) {
+    feetY = Math.min(0.97, src.feetY);
+    headY = Math.max(0.05, feetY - 0.4);
+    bodySpan = feetY - headY;
+  }
+  const targetSpan = Math.max(0.72, target.feetY - target.headY);
+  const fill = Math.min(0.86, targetSpan * 1.12);
+  const bodyH = bodySpan * sourceH;
+  let cropH = bodyH / fill;
+  let cropW = cropH * (3 / 4);
 
   cropW = Math.max(48, cropW);
   cropH = Math.max(64, cropH);
 
-  let x = src.backX * sourceW - target.backX * cropW;
-  let y = src.headY * sourceH - target.headY * cropH;
+  let x = src.backX * sourceW - 0.42 * cropW;
+  let y = headY * sourceH - 0.08 * cropH;
 
-  if (x < 0) {
-    cropW += x;
+  if (cropW > sourceW) {
+    cropH *= sourceW / cropW;
+    cropW = sourceW;
     x = 0;
   }
-  if (y < 0) {
-    cropH += y;
+  if (cropH > sourceH) {
+    cropW *= sourceH / cropH;
+    cropH = sourceH;
     y = 0;
   }
-  if (x + cropW > sourceW) cropW = sourceW - x;
-  if (y + cropH > sourceH) cropH = sourceH - y;
+  x = Math.max(0, Math.min(x, sourceW - cropW));
+  y = Math.max(0, Math.min(y, sourceH - cropH));
 
-  x = Math.round(Math.max(0, x));
-  y = Math.round(Math.max(0, y));
+  x = Math.round(x);
+  y = Math.round(y);
   let w = Math.max(32, Math.round(cropW) & ~1);
   let h = Math.max(32, Math.round(cropH) & ~1);
   if (x + w > sourceW) x = Math.max(0, sourceW - w);
@@ -608,8 +617,8 @@ export async function detectSwingLandmarks(
   for (let y = y0; y <= y1; y++) if (rowFill[y] > maxRow) maxRow = rowFill[y];
   const rowT = Math.max(4, maxRow * 0.22);
 
-  let headRow = y0;
-  for (let y = y0; y <= y1; y++) {
+  let headRow = y0 + Math.round((y1 - y0) * 0.1);
+  for (let y = headRow; y <= y1; y++) {
     if (rowFill[y] >= rowT && rowFill[y] > analysisW * 0.06) {
       headRow = y;
       break;
