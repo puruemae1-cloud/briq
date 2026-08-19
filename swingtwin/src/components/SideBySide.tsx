@@ -58,7 +58,7 @@ export function SideBySide({
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
-  const [sync, setSync] = useState(true);
+  const [sync] = useState(true);
   const [phaseNorm, setPhaseNorm] = useState(0);
   const rafRef = useRef(0);
   const userDoneRef = useRef(false);
@@ -193,19 +193,18 @@ export function SideBySide({
           ? Math.max(0.5, tourEl.duration * 0.995 - tourStart)
           : null;
 
-      // Make both clips take exactly max(userLen, tourLen) wall-clock seconds
+      // Always match Rory timing: keep Rory at 1x, slow/speed up the user so
+      // both address → finish end at the same wall-clock time.
+      // If user's timeline segment is shorter, userRate < 1 (slow down).
       let userRate = 1;
-      let tourRate = 1;
-      if (sync && tourLen !== null) {
-        const wall = Math.max(userLen, tourLen);
-        userRate = Math.max(0.1, Math.min(4, userLen / wall));
-        tourRate = Math.max(0.1, Math.min(4, tourLen / wall));
+      if (tourLen != null && tourLen > 0) {
+        userRate = Math.max(0.1, Math.min(4, userLen / tourLen));
       }
 
       seekUser(userStart);
       if (tourEl) {
         tourEl.currentTime = Math.max(0, Math.min(tourEl.duration * 0.995, tourStart));
-        tourEl.playbackRate = tourRate;
+        tourEl.playbackRate = 1;
       }
       user.playbackRate = userRate;
       userDoneRef.current = false;
@@ -303,11 +302,7 @@ export function SideBySide({
           Replay address → finish
         </button>
         <label>
-          <input
-            type="checkbox"
-            checked={sync}
-            onChange={(e) => setSync(e.target.checked)}
-          />
+          <input type="checkbox" checked={true} disabled />
           같은 속도로 처음부터 끝까지
         </label>
       </div>
