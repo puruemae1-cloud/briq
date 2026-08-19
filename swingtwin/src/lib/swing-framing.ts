@@ -491,11 +491,13 @@ function clamp01(n: number) {
 }
 
 /** Extra CSS zoom so a distant phone golfer fills the panel like Rory. */
-export const USER_TO_RORY_ZOOM = 1.82;
+export const USER_TO_RORY_ZOOM = 1.55;
 
 /**
  * Tight 3:4 crop so the user's head-to-feet span matches Rory in the panel.
  * Width follows body height (not ball-to-back, which made phone clips too wide/small).
+ *
+ * Head/feet must always be visible — generous headroom + footroom baked in.
  */
 export function cropToMatchLandmarks(
   src: SwingLandmarks,
@@ -507,13 +509,14 @@ export function cropToMatchLandmarks(
   let feetY = src.feetY;
   let bodySpan = Math.max(0.12, feetY - headY);
   // Phone DTL often tags sky as "head", leaving the golfer tiny in a near-full-frame crop.
-  if (bodySpan > 0.58) {
+  if (bodySpan > 0.62) {
     feetY = Math.min(0.97, src.feetY);
-    headY = Math.max(0.05, feetY - 0.4);
+    headY = Math.max(0.05, feetY - 0.45);
     bodySpan = feetY - headY;
   }
   const targetSpan = Math.max(0.72, target.feetY - target.headY);
-  const fill = Math.min(0.86, targetSpan * 1.12);
+  // body fills 72 % of the crop height, leaving 14 % headroom + 14 % footroom
+  const fill = 0.72;
   const bodyH = bodySpan * sourceH;
   let cropH = bodyH / fill;
   let cropW = cropH * (3 / 4);
@@ -521,8 +524,10 @@ export function cropToMatchLandmarks(
   cropW = Math.max(48, cropW);
   cropH = Math.max(64, cropH);
 
+  // Place crop so head sits at ~14 % from top (never clipped even during backswing)
+  const headroom = cropH * 0.14;
   let x = src.backX * sourceW - 0.42 * cropW;
-  let y = headY * sourceH - 0.08 * cropH;
+  let y = headY * sourceH - headroom;
 
   if (cropW > sourceW) {
     cropH *= sourceW / cropW;
@@ -754,9 +759,12 @@ export function cropToVideoStyle(
   let c = crop;
   if (zoom > 1.02) {
     const inset = 1 - 1 / zoom;
+    // Bias inset downward so the head is never cropped: top takes only 5 % of the
+    // inset, bottom takes the remaining 95 %.
+    const topBias = 0.05;
     c = {
       x: crop.x + crop.w * (inset / 2),
-      y: crop.y + crop.h * (inset / 2),
+      y: crop.y + crop.h * (inset * topBias),
       w: crop.w / zoom,
       h: crop.h / zoom,
     };
