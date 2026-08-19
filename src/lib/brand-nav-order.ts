@@ -29,6 +29,7 @@ const FAMILY_RANK: Record<string, number> = {
   burberry: 300,
   "paul-smith": 400,
   arcteryx: 900,
+  "london-undercover": 950,
   belstaff: 1000,
 };
 
@@ -39,14 +40,10 @@ function brandFamily(id: string): string | null {
   if (x === "burberry" || x.startsWith("burberry-")) return "burberry";
   if (x === "paul-smith" || x.startsWith("paul-smith-")) return "paul-smith";
   if (x === "arcteryx" || x.startsWith("arcteryx-")) return "arcteryx";
-  if (x === "belstaff" || x.startsWith("belstaff-")) return "belstaff";
-  if (
-    x === "london-undercover" ||
-    x === "umbrellas" ||
-    x.startsWith("london-undercover")
-  ) {
-    return "_new";
+  if (x === "london-undercover" || x === "umbrellas" || x.startsWith("london-undercover")) {
+    return "london-undercover";
   }
+  if (x === "belstaff" || x.startsWith("belstaff-")) return "belstaff";
   if (x === "christopher-ward" || x.startsWith("christopher-ward")) {
     return "_new";
   }
