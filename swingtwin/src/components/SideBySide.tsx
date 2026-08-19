@@ -3,7 +3,6 @@ import type { Handedness, ProProfile, SwingSyncMarkers } from "@/lib/types";
 import type { VideoDisplayStyle, SwingLandmarks } from "@/lib/swing-framing";
 import { RORY_PORTRAIT_LANDMARKS } from "@/lib/swing-framing";
 import {
-  mapSyncedTourTime,
   swingPhaseNorm,
   swingAddressT,
   swingFinishT,
@@ -59,7 +58,6 @@ export function SideBySide({
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
-  // Default ON: club-position warp keeps Rory's backswing/impact aligned to yours
   const [sync, setSync] = useState(true);
   const [phaseNorm, setPhaseNorm] = useState(0);
   const rafRef = useRef(0);
@@ -78,20 +76,6 @@ export function SideBySide({
     [],
   );
 
-  const seekTour = useCallback(
-    (userTime: number, warp: boolean) => {
-      const el = tourRef.current;
-      if (!el || !Number.isFinite(el.duration) || !tourSync) return;
-      const mapped = warp && userSync
-        ? mapSyncedTourTime(userTime, userSync, tourSync)
-        : swingAddressT(tourSync) + Math.max(0, userTime - (userSync ? swingAddressT(userSync) : 0));
-      const start = tourIsReference ? 0 : swingAddressT(tourSync);
-      const target = warp ? mapped : Math.max(start, mapped);
-      el.currentTime = Math.max(0, Math.min(el.duration * 0.99, target));
-      if (userSync) setPhaseNorm(swingPhaseNorm(userTime, userSync));
-    },
-    [userSync, tourSync, tourIsReference],
-  );
 
   useEffect(() => {
     if (phaseT == null || !userSync) return;
@@ -99,8 +83,7 @@ export function SideBySide({
     if (!user?.duration) return;
     const t = userSync.takeawayT + phaseT * (userSync.impactT - userSync.takeawayT);
     seekUser(t);
-    seekTour(t, sync);
-  }, [phaseT, userSync, tourSync, userUrl, tourUrl, seekUser, seekTour, sync]);
+  }, [phaseT, userSync, userUrl, seekUser]);
 
   useEffect(() => {
     const tour = tourRef.current;
@@ -155,67 +138,30 @@ export function SideBySide({
           : tour.duration * 0.995
       : Infinity;
 
-    const onUserEnded = () => {
-      userDoneRef.current = true;
-      user.pause();
-      if (!tourDoneRef.current && tour && !sync) {
-        // keep tour running to finish
-      } else {
-        tour?.pause();
-        setPlaying(false);
-      }
-    };
-    const onTourEnded = () => {
-      tourDoneRef.current = true;
-    };
-
-    user.addEventListener("ended", onUserEnded);
-    tour?.addEventListener("ended", onTourEnded);
-
-    // RAF loop: in sync/warp mode seek Rory to club-position-mapped time every frame
     let raf = 0;
     const tick = () => {
       const t = user.currentTime;
-      if (userSync) setPhaseNorm(swingPhaseNorm(t, userSync));
+      setPhaseNorm(swingPhaseNorm(t, userSync));
 
-      if (sync && tour && userSync && tourSync) {
-        const mapped = mapSyncedTourTime(t, userSync, tourSync);
-        if (Math.abs(tour.currentTime - mapped) > 0.08) {
-          tour.currentTime = Math.max(0, Math.min(tour.duration * 0.995, mapped));
-        }
-      }
-
-      // enforce stop at finish
+      // Stop user at finish
       if (t >= userEnd && !userDoneRef.current) {
         user.pause();
         userDoneRef.current = true;
-        if (sync || !tour) {
-          tour?.pause();
-          setPlaying(false);
-        }
       }
+      // Stop tour at finish
       if (tour && tour.currentTime >= tourEnd && !tourDoneRef.current) {
+        tour.pause();
         tourDoneRef.current = true;
-        if (!sync) {
-          tour.pause();
-          if (userDoneRef.current) setPlaying(false);
-        }
       }
-      if (userDoneRef.current && tourDoneRef.current) {
-        tour?.pause();
+      if (userDoneRef.current && (tourDoneRef.current || !tour)) {
         setPlaying(false);
+        return;
       }
-
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
-
-    return () => {
-      cancelAnimationFrame(raf);
-      user.removeEventListener("ended", onUserEnded);
-      tour?.removeEventListener("ended", onTourEnded);
-    };
-  }, [playing, sync, userSync, tourSync, tourIsReference]);
+    return () => cancelAnimationFrame(raf);
+  }, [playing, userSync, tourSync, tourIsReference]);
 
   async function toggle() {
     const user = userRef.current;
@@ -236,20 +182,37 @@ export function SideBySide({
         : tourSync
           ? swingAddressT(tourSync)
           : 0;
-      seekUser(userStart);
-      if (tourUrl && tour) {
-        tour.currentTime = Math.max(
-          0,
-          Math.min(tour.duration * 0.99, tourStart),
-        );
-        tour.playbackRate = 1;
+
+      const userEnd = swingFinishT(userSync, user.duration);
+      const userLen = Math.max(0.5, userEnd - userStart);
+
+      const tourEl = tourUrl && tour ? tour : null;
+      const tourLen = tourEl && tourSync
+        ? Math.max(0.5, swingFinishT(tourSync, tourEl.duration) - tourStart)
+        : tourEl && tourIsReference && Number.isFinite(tourEl.duration)
+          ? Math.max(0.5, tourEl.duration * 0.995 - tourStart)
+          : null;
+
+      // Make both clips take exactly max(userLen, tourLen) wall-clock seconds
+      let userRate = 1;
+      let tourRate = 1;
+      if (sync && tourLen !== null) {
+        const wall = Math.max(userLen, tourLen);
+        userRate = Math.max(0.1, Math.min(4, userLen / wall));
+        tourRate = Math.max(0.1, Math.min(4, tourLen / wall));
       }
-      user.playbackRate = 1;
+
+      seekUser(userStart);
+      if (tourEl) {
+        tourEl.currentTime = Math.max(0, Math.min(tourEl.duration * 0.995, tourStart));
+        tourEl.playbackRate = tourRate;
+      }
+      user.playbackRate = userRate;
       userDoneRef.current = false;
       tourDoneRef.current = false;
       setPhaseNorm(0);
       await user.play();
-      if (tourUrl && tour) await tour.play();
+      if (tourEl) await tourEl.play();
       setPlaying(true);
     } catch {
       setPlaying(false);
@@ -257,17 +220,7 @@ export function SideBySide({
   }
 
   function replaySegment() {
-    if (!userSync) return;
-    userRef.current?.pause();
-    tourRef.current?.pause();
-    setPlaying(false);
-    const userStart = swingAddressT(userSync);
-    seekUser(userStart);
-    const tour = tourRef.current;
-    if (tour && tourSync) {
-      tour.currentTime = tourIsReference ? 0 : swingAddressT(tourSync);
-    }
-    setPhaseNorm(0);
+    void toggle();
   }
 
   return (
@@ -355,7 +308,7 @@ export function SideBySide({
             checked={sync}
             onChange={(e) => setSync(e.target.checked)}
           />
-          Sync club position (takeaway · top · impact)
+          같은 속도로 처음부터 끝까지
         </label>
       </div>
       {hasSync && userSync ? (
@@ -363,7 +316,7 @@ export function SideBySide({
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
           {tourIsReference
-            ? " · club position sync ON · address → finish · your body zoomed to Rory"
+            ? " · 쌍둥이 속도 · address → finish · your body zoomed to Rory"
             : tourUrl
               ? ""
               : " · upload Rory's clip on the right to replace the default"}
