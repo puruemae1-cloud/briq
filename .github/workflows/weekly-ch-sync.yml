@@ -1,0 +1,77 @@
+name: Weekly CH stock sync
+
+on:
+  schedule:
+    # Thursday 07:00 UTC (~16:00 KST) — after Tuesday Gucci / Wednesday buffer
+    - cron: "0 7 * * 4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-ch-stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scrape + image deps
+        run: |
+          pip install "curl_cffi>=0.7.0" beautifulsoup4
+          pip install -r scripts/requirements-images.txt || true
+
+      - name: Restore ch-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs ch-pdp
+
+      - name: Sync Chanel catalogue (stock + new + Korean PDP copy)
+        run: python3 scripts/weekly-ch-stock-sync.py
+
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs ch-pdp --skip-whiten
+
+      - name: Verify product images (remote)
+        run: python3 scripts/verify-product-images.py --brand ch --remote --skip-local --all-images || true
+
+      - name: Commit and push if changed
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Chanel stock + catalogue sync" \
+            src/data/ch \
+            src/data/categories.ts \
+            scripts/weekly-ch-stock-sync.py \
+            scripts/enrich-ch-beauty-copy.py \
+            scripts/sync-ch-gb-stock.py \
+            scripts/build-ch-catalog.py \
+            scripts/ch_hybris_details.py \
+            scripts/scrape-ch-makeup.py \
+            scripts/scrape-ch-skincare.py \
+            scripts/scrape-ch-fragrance.py \
+            scripts/scrape-ch-handbags.py \
+            scripts/scrape-ch-rtw.py \
+            scripts/scrape-ch-shoes.py \
+            scripts/scrape-ch-slg.py \
+            scripts/scrape-ch-jewellery.py \
+            scripts/scrape-ch-fine-jewellery.py \
+            scripts/scrape-ch-high-jewellery.py \
+            scripts/scrape-ch-sunglasses.py \
+            scripts/scrape-ch-other-acc.py \
+            scripts/scrape-ch-watches.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/verify-product-images.py \
+            scripts/ci-commit-push.sh

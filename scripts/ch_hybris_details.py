@@ -339,6 +339,211 @@ def parse_title_parts(html: str) -> dict[str, str]:
     return {"title": title, "subtitle": subtitle, "color": color}
 
 
+ACCORDION_SKIP_TITLES = {
+    "reviews",
+    "리뷰",
+    "the art of wrapping",
+    "특별한 선물 포장",
+    "delivery & returns",
+    "delivery and returns",
+    "배송과 반품",
+    "배송 및 반품",
+}
+
+ACCORDION_INNER_HEADINGS = [
+    ("효과", "효과"),
+    ("핵심 성분", "핵심 성분"),
+    ("사용 방법", "사용 방법"),
+    ("사용시 주의사항", "사용 시 주의사항"),
+    ("사용 시 주의사항", "사용 시 주의사항"),
+    ("benefits", "효과"),
+    ("active ingredients", "핵심 성분"),
+    ("how to use", "사용 방법"),
+    ("size", "용량"),
+    ("사이즈", "용량"),
+    ("list of ingredients", "전성분"),
+    ("성분 목록", "전성분"),
+]
+
+TAB_TITLE_KO = {
+    "description": "제품 소개",
+    "설명": "제품 소개",
+    "additional information": "상품 정보",
+    "상품 필수 정보": "상품 정보",
+}
+
+
+def parse_pdp_in_stock(html: str) -> bool:
+    """GB beauty PDPs expose schema.org availability; sold-out banner is explicit."""
+    text = html or ""
+    if re.search(r"This product is sold out\.?", text, flags=re.I):
+        return False
+    if "schema.org/OutOfStock" in text:
+        return False
+    if "schema.org/InStock" in text:
+        return True
+    return True
+
+
+def _strip_accordion_chrome(text: str) -> str:
+    t = text or ""
+    t = re.sub(r"Go back to[^\n]*", " ", t, flags=re.I)
+    t = re.sub(r"[^\n]{0,40}\(으\)로 돌아가기", " ", t)
+    t = re.sub(r"[^\n]{0,40}로 돌아가기", " ", t)
+    t = re.sub(
+        r"CHANEL\s*92\s*200\s*Neuilly-sur-Seine",
+        " ",
+        t,
+        flags=re.I,
+    )
+    t = re.sub(r"\n{3,}", "\n\n", t)
+    return t.strip()
+
+
+def _split_inner_headings(title: str, body: str) -> list[dict[str, str]]:
+    """Split Description / 상품 필수 정보 blobs into labelled subsections."""
+    body = _strip_accordion_chrome(body)
+    if not body:
+        return []
+
+    # Drop a duplicated tab title at the start of the panel.
+    body = re.sub(
+        rf"^{re.escape(title)}\s*",
+        "",
+        body,
+        count=1,
+        flags=re.I,
+    ).strip()
+
+    matches: list[tuple[int, int, str]] = []
+    for raw, ko in ACCORDION_INNER_HEADINGS:
+        for m in re.finditer(
+            rf"(?:^|\n)\s*({re.escape(raw)})\s*(?:\n|$)",
+            body,
+            flags=re.I,
+        ):
+            matches.append((m.start(1), m.end(1), ko))
+    matches.sort(key=lambda x: x[0])
+
+    dedup: list[tuple[int, int, str]] = []
+    used_end = -1
+    for start, end, ko in matches:
+        if start < used_end:
+            continue
+        dedup.append((start, end, ko))
+        used_end = end
+    matches = dedup
+
+    out: list[dict[str, str]] = []
+    if not matches:
+        cleaned = _clean_section_body(title, body)
+        if cleaned:
+            out.append(
+                {
+                    "title": TAB_TITLE_KO.get(title.lower(), title),
+                    "body": cleaned,
+                }
+            )
+        return out
+
+    preface = body[: matches[0][0]].strip()
+    preface = _clean_section_body(title, preface)
+    if preface:
+        # Skip a leftover product-code line like "제품\nHUILE DE JASMIN BODY / …"
+        if not re.match(r"^(제품|product)\b", preface, flags=re.I) or len(preface) > 80:
+            if re.match(r"^(제품|product)\b", preface, flags=re.I):
+                # Keep marketing paragraphs after the SKU/name line.
+                parts = re.split(r"\n+", preface, maxsplit=2)
+                preface = parts[-1].strip() if len(parts) >= 2 else preface
+            if preface:
+                out.append(
+                    {
+                        "title": TAB_TITLE_KO.get(title.lower(), "제품 소개"),
+                        "body": preface,
+                    }
+                )
+
+    for i, (start, end, ko) in enumerate(matches):
+        chunk_end = matches[i + 1][0] if i + 1 < len(matches) else len(body)
+        chunk = _strip_accordion_chrome(body[end:chunk_end])
+        chunk = _clean_section_body(ko, chunk)
+        if chunk:
+            out.append({"title": ko, "body": chunk})
+    return out
+
+
+def _clean_section_body(title: str, body: str) -> str:
+    t = _strip_accordion_chrome(body)
+    t = re.sub(rf"^{re.escape(title)}\s*", "", t, count=1, flags=re.I).strip()
+    # Drop "제품 / ENGLISH NAME / KO NAME" header rows that aren't copy.
+    lines = [ln.strip() for ln in t.splitlines() if ln.strip()]
+    if lines and lines[0] in {"제품", "Product", "PRODUCT"}:
+        lines = lines[1:]
+        if lines and (
+            re.search(r"/", lines[0])
+            or re.match(r"^[A-ZÉÈÊËÀÂÄÙÛÜÔÖÎÏÇ0-9][A-ZÉÈÊËÀÂÄÙÛÜÔÖÎÏÇ0-9 '\-/]{6,}$", lines[0])
+        ):
+            lines = lines[1:]
+    t = "\n".join(lines).strip()
+    min_len = 2 if title in {"용량", "사이즈", "Size", "SIZE"} else 12
+    if len(t) < min_len:
+        return ""
+    return t
+
+
+def parse_product_accordion(html: str) -> list[dict[str, str]]:
+    """Product Information accordion (skincare / makeup / fragrance)."""
+    soup = BeautifulSoup(html or "", "html.parser")
+    sections: list[dict[str, str]] = []
+    seen: set[str] = set()
+    allowed_titles = {
+        "description",
+        "설명",
+        "additional information",
+        "상품 필수 정보",
+    }
+
+    for tab in soup.select(
+        ".js-product-accordion .product-accordion-tab, "
+        ".pdp-accordion .product-accordion-tab, "
+        ".product-accordion-tab"
+    ):
+        classes = " ".join(tab.get("class") or [])
+        if "rating" in classes.lower():
+            continue
+        title_el = tab.select_one(".product-accordion-tab-title")
+        title = _clean(title_el.get_text(" ", strip=True) if title_el else "")
+        if not title:
+            continue
+        if title.lower() not in allowed_titles and title not in allowed_titles:
+            continue
+        if title.lower() in ACCORDION_SKIP_TITLES:
+            continue
+        content_el = tab.select_one(".product-accordion-tab-content")
+        if not content_el:
+            continue
+        body = content_el.get_text("\n", strip=True)
+        for part in _split_inner_headings(title, body):
+            key = f"{part['title']}::{part['body'][:80]}"
+            if key in seen:
+                continue
+            seen.add(key)
+            sections.append(part)
+    return sections
+
+
+def parse_kr_product_name(html: str) -> str:
+    soup = BeautifulSoup(html or "", "html.parser")
+    h1 = soup.select_one("h1.product-details__head, h1")
+    name = _clean(h1.get_text(" ", strip=True) if h1 else "")
+    if name:
+        return name
+    title = soup.select_one(
+        "[data-test='lblProductTitle'], .product-details__title"
+    )
+    return _clean(title.get_text(" ", strip=True) if title else "")
+
+
 def compose_official_name(
     title: str,
     subtitle: str = "",

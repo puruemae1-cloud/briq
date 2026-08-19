@@ -33,7 +33,10 @@ MONDAY = [
 TUESDAY = [
     ("weekly-gc-sync.yml", "구찌", "화 07:00 UTC / 16:00 KST"),
 ]
-ALL = MONDAY + TUESDAY
+WEDNESDAY = [
+    ("weekly-ch-sync.yml", "샤넬", "목 07:00 UTC / 16:00 KST"),
+]
+ALL = MONDAY + TUESDAY + WEDNESDAY
 
 
 def _headers() -> dict[str, str]:
@@ -62,6 +65,8 @@ def _runs(file: str, created_from: str) -> list[dict]:
     try:
         data = _get(url)
     except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return []
         raise RuntimeError(f"GitHub Actions API {e.code} for {file}") from e
     return list(data.get("workflow_runs") or [])
 
@@ -91,6 +96,9 @@ def main() -> int:
     elif weekday == 1:
         required = TUESDAY
         day_ko = "화요일 주간 동기화(구찌)"
+    elif weekday == 3:
+        required = WEDNESDAY
+        day_ko = "목요일 주간 동기화(샤넬)"
     else:
         required = []
         day_ko = None
@@ -101,7 +109,7 @@ def main() -> int:
         if required:
             print(
                 "주간 동기화 상태를 확인하지 못했습니다. "
-                "월·화에는 새 업데이트를 배포하지 않습니다.\n"
+                "월·화·목에는 새 업데이트를 배포하지 않습니다.\n"
                 f"원인: {e}",
                 file=sys.stderr,
             )

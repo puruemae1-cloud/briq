@@ -1277,6 +1277,10 @@ def official_name_pair(row: dict, code: str | None = None) -> tuple[str, str]:
         composed = compose_official_name(short, subtitle, color) or title
     composed = composed or str(code or row.get("id") or row.get("sku") or "")
 
+    title_ko = as_text(details.get("titleKo"))
+    if title_ko and any("\uac00" <= c <= "\ud7a3" for c in title_ko):
+        return composed, title_ko
+
     if short and subtitle:
         parts_ko = [t(short), t(subtitle)]
         if (
@@ -1364,13 +1368,40 @@ def build_ch_detail_fields(
 ) -> tuple[str, list[dict], list[dict]]:
     """Return (descriptionKo, storySections, techSpecs) from enriched raw details."""
     details = row.get("details") if isinstance(row.get("details"), dict) else {}
+    ko_secs = details.get("infoSectionsKo")
+    if not isinstance(ko_secs, list):
+        ko_secs = []
     editorial = as_text(details.get("editorial"))
     desc_en = as_text(details.get("description"))
     body_en = editorial or desc_en
-    body_ko = t(body_en) if body_en else ""
+    body_ko = t(body_en) if body_en and not ko_secs else as_text(editorial) if ko_secs else (t(body_en) if body_en else "")
 
     chars = characteristics_list(details)
     tech = build_tech_specs(details)
+    if ko_secs:
+        story: list[dict] = []
+        intro = ""
+        for sec in ko_secs:
+            if not isinstance(sec, dict):
+                continue
+            title = as_text(sec.get("title")) or name_ko
+            body = as_text(sec.get("body"))
+            if not body:
+                continue
+            if not intro and title in {"제품 소개", "설명"}:
+                intro = body
+            story.append({"titleKo": title, "bodyKo": body, "image": image})
+        if not intro and story:
+            intro = as_text(story[0].get("bodyKo"))
+        meta_parts: list[str] = []
+        for line in extra_meta or []:
+            if line and str(line).strip() and str(line).strip().startswith("레퍼런스"):
+                meta_parts.append(str(line).strip())
+        description_ko = "\n\n".join(b for b in [intro, *meta_parts] if b)
+        ref = as_text(details.get("reference"))
+        if ref and not any(s.get("labelKo") == "레퍼런스" for s in tech):
+            tech.append({"labelKo": "레퍼런스", "valueKo": ref})
+        return description_ko, story, tech
 
     meta_parts: list[str] = []
     for line in extra_meta or []:
@@ -1413,7 +1444,11 @@ def apply_detail_fields(
 ) -> dict:
     """Attach enriched Korean copy + techSpecs onto a built Chanel product."""
     details = row.get("details") if isinstance(row.get("details"), dict) else {}
-    has_enrich = bool(details.get("characteristics") or details.get("editorial"))
+    has_enrich = bool(
+        details.get("infoSectionsKo")
+        or details.get("characteristics")
+        or details.get("editorial")
+    )
     if not has_enrich:
         desc_en = as_text(details.get("description"))
         if desc_en and len(desc_en) > 100:
@@ -1429,9 +1464,17 @@ def apply_detail_fields(
 
     existing = as_text(prod.get("descriptionKo"))
     meta = []
+    has_ko = bool(details.get("infoSectionsKo"))
     for block in existing.split("\n\n"):
-        if ":" in block and len(block) < 160:
-            meta.append(block)
+        b = block.strip()
+        if not b:
+            continue
+        if has_ko:
+            if b.startswith("레퍼런스"):
+                meta.append(b)
+            continue
+        if ":" in b and len(b) < 160:
+            meta.append(b)
     description_ko, story, tech = build_ch_detail_fields(
         row, name_ko=name_ko, image=image, extra_meta=meta
     )
@@ -2539,7 +2582,7 @@ def build_fragrance_product(row: dict, prev: dict | None, now_iso: str) -> dict 
             "image": image,
             "images": images,
             "sourceUrl": row.get("url") or "",
-            "inStock": True,
+            "inStock": bool(row.get("inStock", True)),
             "colorKey": "default",
             "colorNameKo": "기본",
             "size": "One Size",
@@ -2582,7 +2625,7 @@ def build_fragrance_product(row: dict, prev: dict | None, now_iso: str) -> dict 
         "gbpPrice": float(gbp),
         "sku": code,
         "sourceUrl": row.get("url") or "",
-        "inStock": True,
+        "inStock": bool(row.get("inStock", True)),
         "variants": variants,
         "storySections": story,
         "registeredAt": registered,
@@ -2670,7 +2713,7 @@ def build_makeup_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
             "image": image,
             "images": images,
             "sourceUrl": row.get("url") or "",
-            "inStock": True,
+            "inStock": bool(row.get("inStock", True)),
             "colorKey": re.sub(r"[^a-z0-9]+", "-", shade.lower()).strip("-")
             if shade
             else "default",
@@ -2715,7 +2758,7 @@ def build_makeup_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
         "gbpPrice": float(gbp),
         "sku": code,
         "sourceUrl": row.get("url") or "",
-        "inStock": True,
+        "inStock": bool(row.get("inStock", True)),
         "variants": variants,
         "storySections": story,
         "registeredAt": registered,
@@ -2803,7 +2846,7 @@ def build_skincare_product(row: dict, prev: dict | None, now_iso: str) -> dict |
             "image": image,
             "images": images,
             "sourceUrl": row.get("url") or "",
-            "inStock": True,
+            "inStock": bool(row.get("inStock", True)),
             "colorKey": re.sub(r"[^a-z0-9]+", "-", shade.lower()).strip("-")
             if shade
             else "default",
@@ -2848,7 +2891,7 @@ def build_skincare_product(row: dict, prev: dict | None, now_iso: str) -> dict |
         "gbpPrice": float(gbp),
         "sku": code,
         "sourceUrl": row.get("url") or "",
-        "inStock": True,
+        "inStock": bool(row.get("inStock", True)),
         "variants": variants,
         "storySections": story,
         "registeredAt": registered,
@@ -3648,6 +3691,41 @@ def main() -> int:
             print(f"built watches {i}/{len(watch_rows)}", flush=True)
 
     products.sort(key=lambda p: p["id"])
+
+    stock_by: dict[str, bool] = {}
+    for _rows in (
+        fragrance_rows,
+        makeup_rows,
+        skincare_rows,
+        rtw_rows,
+        bag_rows,
+        slg_rows,
+        shoe_rows,
+        jew_rows,
+        hj_rows,
+        fj_rows,
+        sunglass_rows,
+        other_acc_rows,
+        watch_rows,
+    ):
+        for row in _rows:
+            sku = str(row.get("sku") or row.get("id") or "").upper()
+            if not sku or "inStock" not in row:
+                continue
+            kind = str(row.get("kind") or "")
+            # Fashion: only push explicit GB sold-out. Beauty: honor inStock.
+            if kind in {"skincare", "makeup", "fragrance"} or row.get("inStock") is False:
+                stock_by[sku] = bool(row.get("inStock"))
+    for p in products:
+        sku = str(p.get("sku") or "").upper()
+        if sku not in stock_by:
+            continue
+        flag = stock_by[sku]
+        p["inStock"] = flag
+        for v in p.get("variants") or []:
+            if isinstance(v, dict):
+                v["inStock"] = flag
+
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(

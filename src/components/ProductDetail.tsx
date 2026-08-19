@@ -21,7 +21,7 @@ import {
   productSalePercent,
 } from "@/data/product-utils";
 import { cartUnitPrice } from "@/lib/cart-price";
-import { needsChanelMobilePackshotZoom } from "@/lib/ch-packshot-zoom";
+import { needsChanelMobilePackshotZoom, needsChanelPcPackshotZoom } from "@/lib/ch-packshot-zoom";
 import { resolveProductImage } from "@/lib/product-image";
 import { compareAxSizes, isArcteryxProduct } from "@/lib/ax-size-order";
 
@@ -399,12 +399,13 @@ export function ProductDetail({
     );
 
   const chPackshotZoom = needsChanelMobilePackshotZoom(product);
+  const chPackshotZoomPc = needsChanelPcPackshotZoom(product);
 
   return (
     <div
       className={`product-page${soldOut ? " product-page--sold-out" : ""}${
         chPackshotZoom ? " product-page--ch-packshot-zoom" : ""
-      }`}
+      }${chPackshotZoomPc ? " product-page--ch-packshot-zoom-pc" : ""}`}
     >
       <article className="product-detail">
         <ProductGallery
@@ -414,7 +415,12 @@ export function ProductDetail({
           badge={optionLabel || selected?.nameKo}
           resetKey={selected?.id ?? product.id}
           frameModifier={
-            chPackshotZoom ? "product-frame--ch-packshot-zoom" : undefined
+            [
+              chPackshotZoom ? "product-frame--ch-packshot-zoom" : "",
+              chPackshotZoomPc ? "product-frame--ch-packshot-zoom-pc" : "",
+            ]
+              .filter(Boolean)
+              .join(" ") || undefined
           }
         />
 

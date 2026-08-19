@@ -7,7 +7,7 @@ import {
   isProductInStock,
   productSalePercent,
 } from "@/data/product-utils";
-import { needsChanelMobilePackshotZoom } from "@/lib/ch-packshot-zoom";
+import { needsChanelMobilePackshotZoom, needsChanelPcPackshotZoom } from "@/lib/ch-packshot-zoom";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(product.price);
@@ -36,6 +36,7 @@ export function ProductCard({ product }: { product: Product }) {
     product.badge === "Nearly New" ||
     product.badge === "Sale";
   const chPackshotZoom = needsChanelMobilePackshotZoom(product);
+  const chPackshotZoomPc = needsChanelPcPackshotZoom(product);
   const href = productHref(product);
 
   return (
@@ -50,7 +51,7 @@ export function ProductCard({ product }: { product: Product }) {
         href={href}
         className={`product-card group${soldOut ? " product-card--sold-out" : ""}${
           chPackshotZoom ? " product-card--ch-packshot-zoom" : ""
-        }`}
+        }${chPackshotZoomPc ? " product-card--ch-packshot-zoom-pc" : ""}`}
       >
         <ProductCardMedia product={product} soldOut={soldOut}>
           {soldOut ? (

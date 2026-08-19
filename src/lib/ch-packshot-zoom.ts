@@ -55,3 +55,8 @@ export function needsChanelMobilePackshotZoom(product: Product): boolean {
   if (isFragrance) return !isChanelPackshotSet(product);
   return false;
 }
+
+/** Desktop PLP/PDP packshots for makeup — bottles sit on large studio mats. */
+export function needsChanelPcPackshotZoom(product: Product): boolean {
+  return isChanelMakeup(product) && !isChanelPackshotSet(product);
+}
