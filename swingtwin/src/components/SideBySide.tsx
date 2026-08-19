@@ -59,7 +59,8 @@ export function SideBySide({
   const userRef = useRef<HTMLVideoElement>(null);
   const tourRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
-  const [sync, setSync] = useState(false);
+  // Default ON: club-position warp keeps Rory's backswing/impact aligned to yours
+  const [sync, setSync] = useState(true);
   const [phaseNorm, setPhaseNorm] = useState(0);
   const rafRef = useRef(0);
   const userDoneRef = useRef(false);
@@ -154,64 +155,67 @@ export function SideBySide({
           : tour.duration * 0.995
       : Infinity;
 
-    const maybeStop = () => {
-      if (user.currentTime >= userEnd) {
-        user.pause();
-        userDoneRef.current = true;
-      }
-      if (tour && tour.currentTime >= tourEnd) {
-        tour.pause();
-        tourDoneRef.current = true;
-      }
-      if (userDoneRef.current && (tourDoneRef.current || !tour)) {
-        setPlaying(false);
-      }
-      setPhaseNorm(swingPhaseNorm(user.currentTime, userSync));
-    };
-
-    const onUser = () => {
-      if (sync && tour && userSync && tourSync) {
-        const mapped = mapSyncedTourTime(user.currentTime, userSync, tourSync);
-        if (Math.abs(tour.currentTime - mapped) > 0.06) {
-          tour.currentTime = mapped;
-        }
-      }
-      maybeStop();
-    };
-    const onTour = () => maybeStop();
     const onUserEnded = () => {
       userDoneRef.current = true;
-      maybeStop();
+      user.pause();
+      if (!tourDoneRef.current && tour && !sync) {
+        // keep tour running to finish
+      } else {
+        tour?.pause();
+        setPlaying(false);
+      }
     };
     const onTourEnded = () => {
       tourDoneRef.current = true;
-      maybeStop();
     };
 
-    user.addEventListener("timeupdate", onUser);
     user.addEventListener("ended", onUserEnded);
-    tour?.addEventListener("timeupdate", onTour);
     tour?.addEventListener("ended", onTourEnded);
+
+    // RAF loop: in sync/warp mode seek Rory to club-position-mapped time every frame
+    let raf = 0;
+    const tick = () => {
+      const t = user.currentTime;
+      if (userSync) setPhaseNorm(swingPhaseNorm(t, userSync));
+
+      if (sync && tour && userSync && tourSync) {
+        const mapped = mapSyncedTourTime(t, userSync, tourSync);
+        if (Math.abs(tour.currentTime - mapped) > 0.08) {
+          tour.currentTime = Math.max(0, Math.min(tour.duration * 0.995, mapped));
+        }
+      }
+
+      // enforce stop at finish
+      if (t >= userEnd && !userDoneRef.current) {
+        user.pause();
+        userDoneRef.current = true;
+        if (sync || !tour) {
+          tour?.pause();
+          setPlaying(false);
+        }
+      }
+      if (tour && tour.currentTime >= tourEnd && !tourDoneRef.current) {
+        tourDoneRef.current = true;
+        if (!sync) {
+          tour.pause();
+          if (userDoneRef.current) setPlaying(false);
+        }
+      }
+      if (userDoneRef.current && tourDoneRef.current) {
+        tour?.pause();
+        setPlaying(false);
+      }
+
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+
     return () => {
-      user.removeEventListener("timeupdate", onUser);
+      cancelAnimationFrame(raf);
       user.removeEventListener("ended", onUserEnded);
-      tour?.removeEventListener("timeupdate", onTour);
       tour?.removeEventListener("ended", onTourEnded);
     };
   }, [playing, sync, userSync, tourSync, tourIsReference]);
-
-  useEffect(() => {
-    if (!playing || !userSync) return;
-    const tick = () => {
-      const user = userRef.current;
-      if (user && !user.paused) {
-        setPhaseNorm(swingPhaseNorm(user.currentTime, userSync));
-      }
-      rafRef.current = requestAnimationFrame(tick);
-    };
-    rafRef.current = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafRef.current);
-  }, [playing, userSync]);
 
   async function toggle() {
     const user = userRef.current;
@@ -351,7 +355,7 @@ export function SideBySide({
             checked={sync}
             onChange={(e) => setSync(e.target.checked)}
           />
-          Warp speed to hit impact together
+          Sync club position (takeaway · top · impact)
         </label>
       </div>
       {hasSync && userSync ? (
@@ -359,7 +363,7 @@ export function SideBySide({
           Synced: takeaway {userSync.takeawayT.toFixed(2)}s · top{" "}
           {userSync.topT.toFixed(2)}s · impact {userSync.impactT.toFixed(2)}s
           {tourIsReference
-            ? " · same 1x speed · address → finish · your body zoomed to Rory"
+            ? " · club position sync ON · address → finish · your body zoomed to Rory"
             : tourUrl
               ? ""
               : " · upload Rory's clip on the right to replace the default"}

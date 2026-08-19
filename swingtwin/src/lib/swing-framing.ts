@@ -439,11 +439,11 @@ export async function detectBodyCrop(
     x = Math.max(0, x - padLeft);
     w = Math.min(vw - x, w + padLeft);
 
-    const trimTop = h * 0.055;
-    const trimBottom = h * 0.13;
-    const trimRight = w * 0.14;
+    // Minimal trims only — preserve head top and shoe soles
+    const trimTop = h * 0.02;
+    const trimRight = w * 0.10;
     y += trimTop;
-    h -= trimTop + trimBottom;
+    h -= trimTop;
     w -= trimRight;
   } else {
     x = Math.max(0, x);
@@ -491,7 +491,7 @@ function clamp01(n: number) {
 }
 
 /** Extra CSS zoom so a distant phone golfer fills the panel like Rory. */
-export const USER_TO_RORY_ZOOM = 1.55;
+export const USER_TO_RORY_ZOOM = 1.45;
 
 /**
  * Tight 3:4 crop so the user's head-to-feet span matches Rory in the panel.
@@ -515,8 +515,8 @@ export function cropToMatchLandmarks(
     bodySpan = feetY - headY;
   }
   const targetSpan = Math.max(0.72, target.feetY - target.headY);
-  // body fills 72 % of the crop height, leaving 14 % headroom + 14 % footroom
-  const fill = 0.72;
+  // body fills 80 % of the crop height, leaving 10 % headroom + 10 % footroom
+  const fill = 0.80;
   const bodyH = bodySpan * sourceH;
   let cropH = bodyH / fill;
   let cropW = cropH * (3 / 4);
@@ -524,8 +524,8 @@ export function cropToMatchLandmarks(
   cropW = Math.max(48, cropW);
   cropH = Math.max(64, cropH);
 
-  // Place crop so head sits at ~14 % from top (never clipped even during backswing)
-  const headroom = cropH * 0.14;
+  // Place crop so head sits at ~10 % from top
+  const headroom = cropH * 0.10;
   let x = src.backX * sourceW - 0.42 * cropW;
   let y = headY * sourceH - headroom;
 
@@ -759,9 +759,9 @@ export function cropToVideoStyle(
   let c = crop;
   if (zoom > 1.02) {
     const inset = 1 - 1 / zoom;
-    // Bias inset downward so the head is never cropped: top takes only 5 % of the
-    // inset, bottom takes the remaining 95 %.
-    const topBias = 0.05;
+    // Bias inset downward so the head is never cropped: top takes only 2 % of the
+    // inset, bottom takes the remaining 98 %.
+    const topBias = 0.02;
     c = {
       x: crop.x + crop.w * (inset / 2),
       y: crop.y + crop.h * (inset * topBias),
