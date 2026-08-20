@@ -79,9 +79,18 @@ def _completed_today(runs: list[dict]) -> dict | None:
     done = [
         r
         for r in runs
-        if r.get("status") == "completed" and r.get("conclusion") in {"success", "failure", "cancelled", "skipped"}
+        if r.get("status") == "completed"
+        and r.get("conclusion") in {"success", "failure", "cancelled", "skipped"}
     ]
     return done[0] if done else None
+
+
+def _succeeded_today(runs: list[dict]) -> dict | None:
+    """Only a successful run counts as finished for required weekly brands."""
+    for r in runs:
+        if r.get("status") == "completed" and r.get("conclusion") == "success":
+            return r
+    return None
 
 
 def main() -> int:
@@ -102,6 +111,8 @@ def main() -> int:
     else:
         required = []
         day_ko = None
+
+    required_files = {file for file, _label, _when in required}
 
     try:
         by_file = {file: _runs(file, created_from) for file, _label, _when in ALL}
@@ -128,15 +139,25 @@ def main() -> int:
     for file, label, when in ALL:
         runs = by_file.get(file) or []
         live = _active(runs)
+        ok = _succeeded_today(runs)
         finished = _completed_today(runs)
+        must = file in required_files
         if live:
             status = live[0].get("status")
             active_rows.append(f"- {label} ({when}) — {status}")
+        elif ok:
+            done_rows.append(f"- {label} — success")
+        elif must and finished and finished.get("conclusion") != "success":
+            # Cancelled/failed weekly jobs auto-requeue; keep freeze until success.
+            conc = finished.get("conclusion")
+            waiting_rows.append(
+                f"- {label} ({when}) — 오늘 {conc} (성공할 때까지 재시도 중·배포 보류)"
+            )
+        elif must:
+            waiting_rows.append(f"- {label} ({when}) — 아직 오늘 실행 없음")
         elif finished:
             conc = finished.get("conclusion")
             done_rows.append(f"- {label} — {conc}")
-        elif any(item[0] == file for item in required):
-            waiting_rows.append(f"- {label} ({when}) — 아직 오늘 실행 없음")
 
     freeze = bool(active_rows or waiting_rows)
 
