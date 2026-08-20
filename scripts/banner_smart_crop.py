@@ -17,7 +17,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 import numpy as np
-from PIL import Image, ImageOps
+from PIL import Image, ImageFilter, ImageOps
 
 # Homepage PC hero: ~38svh × full width ≈ 4:1
 HERO_DESKTOP = (2400, 600)
@@ -117,8 +117,15 @@ def cover_crop(
     focal: FocalPoint | None = None,
     *,
     mobile_bias: bool = False,
+    vertical_bias: str = "torso",
 ) -> Image.Image:
-    """Scale-to-cover then crop so focal stays inside the frame."""
+    """Scale-to-cover then crop so focal stays inside the frame.
+
+    vertical_bias for panoramic PC strips:
+      torso   — apparel lookbooks (shoulders → waist), never a face-only crop
+      product — shoes / bags / accessories (keep the item in the short window)
+      face    — rare; only when a headshot strip is explicitly requested
+    """
     im = ImageOps.exif_transpose(im.convert("RGB"))
     tw, th = size
     sw, sh = im.size
@@ -132,17 +139,118 @@ def cover_crop(
     fp = focal or estimate_focal(im)
     cx, cy = fp.x, fp.y
     if mobile_bias:
-        # Phones crop tighter; keep headroom for faces.
-        cy = min(cy, 0.36)
+        # Phones crop tighter; keep a little headroom without losing the outfit.
+        cy = min(max(cy, 0.28), 0.42)
     elif tw / max(th, 1) >= 2.4:
-        # Panoramic PC strip: keep the face in the short vertical window.
-        cy = min(max(cy, 0.10), 0.18)
+        # Panoramic PC strip — never pin to the top 18% (that zooms faces /
+        # cuts shoes off the bottom). Bias to torso or product mid-frame.
+        if vertical_bias == "face":
+            cy = min(max(cy, 0.12), 0.28)
+        elif vertical_bias == "product":
+            cy = min(max(cy, 0.42), 0.62)
+        else:
+            cy = min(max(cy, 0.34), 0.52)
 
     left = int(round(cx * nw - tw / 2))
     top = int(round(cy * nh - th / 2))
     left = int(np.clip(left, 0, max(0, nw - tw)))
     top = int(np.clip(top, 0, max(0, nh - th)))
     return resized.crop((left, top, left + tw, top + th))
+
+
+def subject_bbox(im: Image.Image, *, threshold: float = 28.0) -> tuple[int, int, int, int] | None:
+    """Tight box around non-studio pixels, or None when the frame is empty."""
+    rgb = np.asarray(im.convert("RGB"), dtype=np.float32)
+    h, w = rgb.shape[:2]
+    step = max(1, min(h, w) // 200)
+    small = rgb[::step, ::step]
+    sh, sw = small.shape[:2]
+    s = max(2, min(sh, sw) // 12)
+    corners = np.stack(
+        [
+            small[:s, :s].reshape(-1, 3).mean(0),
+            small[:s, -s:].reshape(-1, 3).mean(0),
+            small[-s:, :s].reshape(-1, 3).mean(0),
+            small[-s:, -s:].reshape(-1, 3).mean(0),
+        ]
+    )
+    bg = np.median(corners, axis=0)
+    dist = np.linalg.norm(small - bg.reshape(1, 1, 3), axis=2)
+    mask = dist > threshold
+    ys, xs = np.where(mask)
+    if len(xs) < 40:
+        return None
+    y0, y1 = int(ys.min() * step), int(min(h, (ys.max() + 1) * step))
+    x0, x1 = int(xs.min() * step), int(min(w, (xs.max() + 1) * step))
+    if (y1 - y0) < h * 0.08 or (x1 - x0) < w * 0.08:
+        return None
+    return x0, y0, x1, y1
+
+
+def trim_studio_subject(im: Image.Image, *, pad_ratio: float = 0.10) -> Image.Image:
+    """Crop away empty studio paper so tiny packshot products fill the frame."""
+    im = ImageOps.exif_transpose(im.convert("RGB"))
+    box = subject_bbox(im)
+    if box is None:
+        return im
+    x0, y0, x1, y1 = box
+    w, h = im.size
+    bw, bh = x1 - x0, y1 - y0
+    # Only trim when the subject is a small island on a huge canvas.
+    if (bw * bh) / max(w * h, 1) > 0.55:
+        return im
+    pad = int(round(max(bw, bh) * pad_ratio))
+    left = max(0, x0 - pad)
+    top = max(0, y0 - pad)
+    right = min(w, x1 + pad)
+    bottom = min(h, y1 + pad)
+    return im.crop((left, top, right, bottom))
+
+
+def fit_panorama(
+    im: Image.Image,
+    size: tuple[int, int],
+    focal: FocalPoint | None = None,
+    *,
+    vertical_bias: str = "torso",
+) -> Image.Image:
+    """Build a panoramic PC frame that keeps the full product readable.
+
+    Portrait / square PDP stills cannot be cover-cropped into ~3:1 without
+    turning into a face or fabric strip. Fit the source to the banner height,
+    centre it, and fill the sides with a soft blur of the same image.
+    True landscape sources still use cover_crop.
+    """
+    im = ImageOps.exif_transpose(im.convert("RGB"))
+    if vertical_bias == "product":
+        im = trim_studio_subject(im)
+    tw, th = size
+    sw, sh = im.size
+    if sw < 8 or sh < 8:
+        return im.resize(size, Image.Resampling.LANCZOS)
+
+    target_ar = tw / max(th, 1)
+    source_ar = sw / max(sh, 1)
+    # Wide enough to cover without slicing the subject into a macro strip.
+    if source_ar >= target_ar * 0.88:
+        return cover_crop(im, size, focal, mobile_bias=False, vertical_bias=vertical_bias)
+
+    # Fit height so the whole garment / shoe / bag stays in frame.
+    scale = th / sh
+    nw = max(1, int(round(sw * scale)))
+    nh = th
+    fg = im.resize((nw, nh), Image.Resampling.LANCZOS)
+
+    # Soft panoramic backdrop from a cover crop of the same still.
+    bg = cover_crop(
+        im, size, focal or FocalPoint(0.5, 0.45), vertical_bias=vertical_bias
+    ).filter(ImageFilter.GaussianBlur(radius=32))
+    # Keep the product side readable — slightly darken the blur.
+    bg = Image.blend(bg, Image.new("RGB", size, (28, 28, 30)), 0.22)
+    canvas = bg.copy()
+    x = (tw - fg.size[0]) // 2
+    canvas.paste(fg, (x, 0))
+    return canvas
 
 
 def has_on_model_face(im: Image.Image) -> bool:
@@ -200,6 +308,60 @@ def is_extreme_closeup(im: Image.Image) -> bool:
     dist = np.linalg.norm(small - bg.reshape(1, 1, 3), axis=2)
     mask = dist > 28.0
     return float(mask.mean()) > 0.78
+
+
+def is_face_dominant(im: Image.Image) -> bool:
+    """True when a face fills most of the short axis (headshot, not an outfit)."""
+    rgb = np.asarray(im.convert("RGB"), dtype=np.float32)
+    h, w = rgb.shape[:2]
+    step = max(1, min(h, w) // 160)
+    small = rgb[::step, ::step]
+    sh, sw = small.shape[:2]
+    r, g, b = small[..., 0], small[..., 1], small[..., 2]
+    skin = (
+        (r > 95)
+        & (g > 40)
+        & (b > 20)
+        & (r > g)
+        & (r > b)
+        & ((r - g) > 12)
+        & (_luma(small) < 230)
+        & (_luma(small) > 50)
+    )
+    # Face lives in the upper ~55% of a portrait lookbook frame.
+    skin[int(sh * 0.58) :, :] = False
+    ys, xs = np.where(skin)
+    if len(xs) < 80:
+        return False
+    hspan = float(ys.max() - ys.min()) / max(sh, 1)
+    wspan = float(xs.max() - xs.min()) / max(sw, 1)
+    # Headshot: face covers a large slice of height (and often width).
+    if hspan >= 0.38 and wspan >= 0.22:
+        return True
+    if float(skin[: int(sh * 0.45), :].mean()) > 0.12 and hspan >= 0.28:
+        return True
+    return False
+
+
+def subject_fill_ratio(im: Image.Image) -> float:
+    """Fraction of non-studio pixels — used to reject empty panoramic crops."""
+    rgb = np.asarray(im.convert("RGB"), dtype=np.float32)
+    h, w = rgb.shape[:2]
+    step = max(1, min(h, w) // 160)
+    small = rgb[::step, ::step]
+    sh, sw = small.shape[:2]
+    s = max(2, min(sh, sw) // 12)
+    corners = np.stack(
+        [
+            small[:s, :s].reshape(-1, 3).mean(0),
+            small[:s, -s:].reshape(-1, 3).mean(0),
+            small[-s:, :s].reshape(-1, 3).mean(0),
+            small[-s:, -s:].reshape(-1, 3).mean(0),
+        ]
+    )
+    bg = np.median(corners, axis=0)
+    dist = np.linalg.norm(small - bg.reshape(1, 1, 3), axis=2)
+    return float((dist > 28.0).mean())
 
 
 def aspect_ratio(im: Image.Image) -> float:
@@ -271,19 +433,52 @@ def export_banner_set(
     shop: bool = False,
     kind: str | None = None,
     require_face: bool = False,
+    vertical_bias: str = "torso",
 ) -> FocalPoint:
     """Write desktop / tablet / mobile JPEGs from one source photo."""
     focal = estimate_focal(source)
     slot_kind = kind or ("shop" if shop else "look")
     d, t, m = sizes_for_kind(slot_kind)
-    desktop = cover_crop(source, d, focal, mobile_bias=False)
+    # Desktop / tablet are panoramic — fit portrait product stills so the
+    # garment or shoe stays whole. Mobile is closer to square; cover is fine.
+    if slot_kind in {"look", "hero"}:
+        desktop = fit_panorama(source, d, focal, vertical_bias=vertical_bias)
+    else:
+        desktop = cover_crop(
+            source, d, focal, mobile_bias=False, vertical_bias=vertical_bias
+        )
     if require_face:
         if not has_on_model_face(desktop):
             raise ValueError("crop-missed-face")
-    elif slot_kind in {"look", "hero"}:
-        if is_thin_studio_crop(desktop) or is_unbalanced_wide_crop(desktop):
-            raise ValueError("thin-studio-crop")
+    if slot_kind in {"look", "hero"}:
+        src_ar = aspect_ratio(source)
+        dst_ar = d[0] / max(d[1], 1)
+        # Skip thin-studio check when we intentionally padded a portrait still.
+        if src_ar >= dst_ar * 0.88:
+            if is_thin_studio_crop(desktop) or is_unbalanced_wide_crop(desktop):
+                raise ValueError("thin-studio-crop")
+        if vertical_bias != "face" and is_face_dominant(desktop):
+            raise ValueError("face-dominant-crop")
+        fill = subject_fill_ratio(desktop)
+        if vertical_bias == "product" and fill < 0.08:
+            raise ValueError("empty-product-crop")
+        if vertical_bias == "torso" and fill < 0.06:
+            raise ValueError("empty-torso-crop")
     save_jpeg(desktop, desktop_path)
-    save_jpeg(cover_crop(source, t, focal, mobile_bias=False), tablet_path)
-    save_jpeg(cover_crop(source, m, focal, mobile_bias=True), mobile_path)
+    if slot_kind in {"look", "hero"}:
+        save_jpeg(
+            fit_panorama(source, t, focal, vertical_bias=vertical_bias),
+            tablet_path,
+        )
+    else:
+        save_jpeg(
+            cover_crop(
+                source, t, focal, mobile_bias=False, vertical_bias=vertical_bias
+            ),
+            tablet_path,
+        )
+    save_jpeg(
+        cover_crop(source, m, focal, mobile_bias=True, vertical_bias=vertical_bias),
+        mobile_path,
+    )
     return focal

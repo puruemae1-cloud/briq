@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Weekly refresh of Briq homepage / category banners with luxury on-model photos.
+"""Weekly refresh of Briq homepage / category banners with luxury product photos.
 
 Sources official product galleries already on the `product-images` CDN
-(Gucci / Burberry / Chanel / Arc'teryx …) — models wearing the brands we sell.
+(Gucci / Burberry / Chanel / Arc'teryx …).
 
-PC homepage frames are panoramic (hero ~4:1, look-banners ~3:1), so this
-script prefers on-model lookbook stills and writes wide desktop crops — not
-portrait packshots that collapse to a vertical stripe under object-fit:cover.
+PC homepage frames are panoramic (hero ~4:1, look-banners ~3:1). Selection
+prefers wide outfit / product stills and rejects face-only headshots and
+empty grey product crops that used to dominate the desktop strip.
 
   python3 scripts/weekly-banner-refresh.py
-  python3 scripts/weekly-banner-refresh.py --limit 8
+  python3 scripts/weekly-banner-refresh.py --only rot-luxury --seed 42
 """
 from __future__ import annotations
 
@@ -34,6 +34,8 @@ from banner_smart_crop import (  # noqa: E402
     export_banner_set,
     has_on_model_face,
     is_extreme_closeup,
+    is_face_dominant,
+    subject_fill_ratio,
 )
 
 BANNER_DIR = ROOT / "public" / "banners"
@@ -51,7 +53,7 @@ SLOT_THEMES: dict[str, list[str]] = {
     "rot-hero-1.jpg": ["luxury", "fashion"],
     "rot-hero-2.jpg": ["luxury", "fashion"],
     "rot-hero-3.jpg": ["fashion", "street"],
-    "rot-hero-4.jpg": ["luxury", "bags"],
+    "rot-hero-4.jpg": ["luxury", "fashion"],
     "rot-event-1.jpg": ["fashion", "luxury"],
     "rot-event-2.jpg": ["street", "fashion"],
     "rot-event-3.jpg": ["luxury", "fashion"],
@@ -150,6 +152,17 @@ CLOTHING_SLOTS = {
     or n.startswith("rot-cloth-")
 }
 
+# Product stills — shoes / bags / accessories must stay readable after the PC crop.
+PRODUCT_SLOTS = {
+    n
+    for n in SLOT_THEMES
+    if n.startswith("rot-shoe-")
+    or n.startswith("rot-bag-")
+    or n.startswith("rot-acc-")
+    or n.startswith("shop-shoe-")
+    or n.startswith("shop-bag-")
+}
+
 BRAND_MATCH: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     # id prefixes, blob needles
     "gucci": (("gc-",), ("gucci", "구찌")),
@@ -232,8 +245,8 @@ def load_catalog_ts(path: Path) -> list[dict]:
     return out
 
 
-def product_images(product: dict) -> list[str]:
-    """Prefer hover / secondary gallery frames (often on-model)."""
+def product_images(product: dict, *, prefer_on_model: bool = True) -> list[str]:
+    """Gallery paths. Clothing lookbooks prefer hover/2; product stills keep packshot/1."""
     out: list[str] = []
     seen: set[str] = set()
 
@@ -251,8 +264,8 @@ def product_images(product: dict) -> list[str]:
         add(product.get(key))
     for src in product.get("images") or []:
         add(src)
-    # On-model is rarely the first packshot — prefer [1:] when available
-    if len(out) >= 2:
+    if prefer_on_model and len(out) >= 2:
+        # On-model is rarely the first packshot — prefer [1:] when available
         return out[1:] + out[:1]
     return out
 
@@ -381,11 +394,81 @@ def theme_match(product: dict, themes: list[str]) -> bool:
             )
         ),
         "street": any(x in blob for x in ("street", "hoodie", "tee", "sneaker", "trainer")),
-        "bags": any(x in blob for x in ("bag", "handbag", "가방", "tote", "backpack", "wallet")),
-        "shoes": any(x in blob for x in ("shoe", "sneaker", "boot", "loafer", "heel", "슈즈", "footwear")),
-        "accessories": any(
+        "bags": any(
             x in blob
-            for x in ("accessor", "jewellery", "jewelry", "sunglass", "scarf", "belt", "악세서", "주얼")
+            for x in ("bag", "handbag", "가방", "tote", "backpack", "clutch", "crossbody")
+        ),
+        "shoes": any(
+            x in blob
+            for x in ("shoe", "sneaker", "boot", "loafer", "heel", "슈즈", "footwear", "sandal")
+        ),
+        "accessories": (
+            any(
+                x in blob
+                for x in (
+                    "accessor",
+                    "jewellery",
+                    "jewelry",
+                    "sunglass",
+                    "scarf",
+                    "belt",
+                    "wallet",
+                    "지갑",
+                    "악세서",
+                    "주얼",
+                    "necktie",
+                    "tie ",
+                    "glove",
+                    "cufflink",
+                    "keyring",
+                    "keychain",
+                    "cap",
+                    "hat",
+                )
+            )
+            and not any(
+                x in blob
+                for x in (
+                    "fragrance",
+                    "perfume",
+                    "parfum",
+                    "eau de",
+                    "toilette",
+                    "makeup",
+                    "lipstick",
+                    "beauty",
+                    "skincare",
+                    "향수",
+                    "메이크업",
+                    "크림",
+                    "phone case",
+                    "iphone",
+                    "airpods",
+                    "smartphone",
+                    "폰케이스",
+                    "basket",
+                    "pastry",
+                    "kitchen",
+                    "homeware",
+                    "candle",
+                    "mug",
+                    "shoe",
+                    "sneaker",
+                    "boot",
+                    "loafer",
+                    "sandal",
+                    "heel",
+                    "footwear",
+                    "슈즈",
+                    "bag",
+                    "handbag",
+                    "가방",
+                    "jacket",
+                    "coat",
+                    "shirt",
+                    "hoodie",
+                )
+            )
         ),
         "watches": any(x in blob for x in ("watch", "시계", "christopher ward", "cw-")),
         "golf": any(x in blob for x in ("golf", "골프", "galvin")),
@@ -465,15 +548,24 @@ def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str]]:
             pid = str(product.get("id") or "")
             if is_clothing_product(product):
                 clothing_ids.add(pid)
-            imgs = [i for i in product_images(product) if is_likely_on_model(i)]
-            if not imgs:
-                imgs = product_images(product)[:2]
-            if not imgs:
+            look_imgs = product_images(product, prefer_on_model=True)
+            look_imgs = [i for i in look_imgs if is_likely_on_model(i)] or look_imgs[:2]
+            pack_imgs = product_images(product, prefer_on_model=False)
+            pack_only = [
+                i for i in pack_imgs if re.search(r"/1\.jpe?g(?:\?|$)", i.lower())
+            ]
+            pack_imgs = (pack_only or pack_imgs)[:2]
+            if not look_imgs and not pack_imgs:
                 continue
+            product_themes = {"shoes", "bags", "accessories", "watches"}
             for theme in list(by_theme):
-                if theme_match(product, [theme]):
-                    for img in imgs[:3]:
-                        by_theme[theme].append((pid, img))
+                if not theme_match(product, [theme]):
+                    continue
+                imgs = pack_imgs if theme in product_themes else look_imgs
+                if not imgs:
+                    imgs = pack_imgs or look_imgs
+                for img in imgs[:3]:
+                    by_theme[theme].append((pid, img))
     for theme, rows in by_theme.items():
         seen: set[str] = set()
         uniq = []
@@ -541,8 +633,7 @@ def pick_for_slot(
     options = [o for o in options if o[1] not in used]
     if slot in CLOTHING_SLOTS and clothing_ids:
         clothed = [o for o in options if o[0] in clothing_ids]
-        if clothed:
-            options = clothed
+        options = clothed
     brand_only = any(t.startswith("brand:") for t in themes)
     if not options and not brand_only:
         # fallback any luxury/fashion
@@ -550,9 +641,7 @@ def pick_for_slot(
             options.extend(pool.get(t) or [])
         options = [o for o in options if o[1] not in used]
         if slot in CLOTHING_SLOTS and clothing_ids:
-            clothed = [o for o in options if o[0] in clothing_ids]
-            if clothed:
-                options = clothed
+            options = [o for o in options if o[0] in clothing_ids]
     if not options:
         return []
     # Deterministic weekly shuffle per slot, then prefer wider local photos.
@@ -560,7 +649,24 @@ def pick_for_slot(
     slot_rng = random.Random(digest)
     slot_rng.shuffle(options)
     if slot in CLOTHING_SLOTS:
-        options.sort(key=lambda o: 0 if re.search(r"/2\.jpe?g$", o[1], re.I) else 1)
+        luxury = slot.startswith("rot-luxury-")
+        # Luxury: packshot garments. Other apparel: lookbook frame #2.
+        options.sort(
+            key=lambda o: (
+                0 if luxury and re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
+                0 if (not luxury) and re.search(r"/2\.jpe?g$", o[1], re.I) else 1,
+                0 if "/look" in o[1].lower() else 1,
+            )
+        )
+    elif slot in PRODUCT_SLOTS:
+        # Prefer primary packshots; never lead with /3 detail macros.
+        options.sort(
+            key=lambda o: (
+                2 if re.search(r"/[3-9]\.jpe?g$", o[1], re.I) else 0,
+                1 if is_likely_detail_frame(o[1]) else 0,
+                0 if re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
+            )
+        )
     return options
 
 
@@ -570,6 +676,56 @@ def slot_kind(slot: str) -> str:
     if slot.startswith("rot-hero-"):
         return "hero"
     return "look"
+
+
+def slot_vertical_bias(slot: str) -> str:
+    if slot in PRODUCT_SLOTS:
+        return "product"
+    return "torso"
+
+
+def clothing_source_ok(source, img: str, *, luxury_only: bool = False) -> tuple[bool, str]:
+    """Accept outfit / garment stills; reject headshots and unreadable macros."""
+    ratio = aspect_ratio(source)
+    if ratio < 0.62:
+        return False, f"too-tall {ratio:.2f}"
+    if is_extreme_closeup(source):
+        return False, "extreme-closeup"
+    if is_likely_detail_frame(img):
+        return False, "detail-frame"
+    if is_face_dominant(source):
+        return False, "face-dominant"
+    # Signature clothing rail: garment stills only — no on-model face banners.
+    if luxury_only and has_on_model_face(source):
+        return False, "luxury-no-face"
+    fill = subject_fill_ratio(source)
+    if fill > 0.88:
+        return False, f"macro-fill {fill:.2f}"
+    if fill < 0.08:
+        return False, f"empty {fill:.2f}"
+    return True, "ok"
+
+
+def product_source_ok(source, img: str) -> tuple[bool, str]:
+    """Shoes / bags / accessories must read as the full product after PC crop."""
+    ratio = aspect_ratio(source)
+    low = img.lower()
+    if any(x in low for x in ("parfum", "perfume", "fragrance", "lipstick", "makeup")):
+        return False, "beauty-not-acc"
+    if is_likely_detail_frame(img):
+        return False, "detail-frame"
+    if ratio < 0.55:
+        return False, f"too-tall {ratio:.2f}"
+    if is_extreme_closeup(source):
+        return False, "extreme-closeup"
+    if is_face_dominant(source) or has_on_model_face(source):
+        return False, "outfit-lookbook"
+    fill = subject_fill_ratio(source)
+    if fill < 0.10:
+        return False, f"empty {fill:.2f}"
+    if fill > 0.88:
+        return False, f"macro-fill {fill:.2f}"
+    return True, "ok"
 
 
 def referenced_slots() -> list[str]:
@@ -616,7 +772,8 @@ def main() -> int:
 
     slots = [s for s in referenced_slots() if s in SLOT_THEMES]
     if args.only:
-        slots = [s for s in slots if args.only in s]
+        needles = [n.strip() for n in args.only.split(",") if n.strip()]
+        slots = [s for s in slots if any(n in s for n in needles)]
     if args.limit:
         slots = slots[: args.limit]
     print(f"slots={len(slots)}", flush=True)
@@ -644,30 +801,31 @@ def main() -> int:
             print(f"{i}/{len(slots)} {slot} FAIL no-candidate", flush=True)
             fail += 1
             continue
-        # PC look/hero banners are panoramic — prefer landscape sources and
-        # skip portrait studio packshots that collapse to a vertical stripe.
-        tries = 40 if kind in {"look", "hero"} else 4
+        # PC look/hero banners are panoramic — prefer wide outfit / product
+        # stills; reject face-only headshots and empty grey product frames.
+        tries = 100 if kind in {"look", "hero"} else 12
         chosen: tuple[str, str, Image.Image] | None = None
         last_err = ""
+        bias = slot_vertical_bias(slot)
         for pid, img in picks[:tries]:
             source = fetch_image(img)
             if source is None:
                 last_err = f"fetch {img}"
                 continue
             ratio = aspect_ratio(source)
-            # Clothing look/hero: need an on-model lookbook frame, then crop
-            # that to a panoramic PC strip. Landscape product details (collars,
-            # flat lays) look like a zoomed stripe on the homepage.
-            if kind in {"look", "hero"} and slot in CLOTHING_SLOTS:
-                if (
-                    ratio >= 1.35
-                    or not has_on_model_face(source)
-                    or is_extreme_closeup(source)
-                    or is_likely_detail_frame(img)
-                ):
-                    last_err = f"not-lookbook {ratio:.2f} {img}"
+            if slot in CLOTHING_SLOTS:
+                ok_src, why = clothing_source_ok(
+                    source, img, luxury_only=slot.startswith("rot-luxury-")
+                )
+                if not ok_src:
+                    last_err = f"{why} {ratio:.2f} {img}"
                     continue
-            if kind in {"look", "hero"} and ratio < 0.55:
+            elif slot in PRODUCT_SLOTS:
+                ok_src, why = product_source_ok(source, img)
+                if not ok_src:
+                    last_err = f"{why} {ratio:.2f} {img}"
+                    continue
+            elif kind in {"look", "hero"} and ratio < 0.55:
                 last_err = f"too-tall {ratio:.2f} {img}"
                 continue
             chosen = (pid, img, source)
@@ -693,24 +851,30 @@ def main() -> int:
                 mobile_path=MOBILE_DIR / slot,
                 shop=kind == "shop",
                 kind=kind,
-                require_face=slot in CLOTHING_SLOTS,
+                require_face=False,
+                vertical_bias=bias,
             )
         except Exception as e:
             recovered = False
             if kind in {"look", "hero"}:
-                for pid2, img2 in picks[:40]:
+                for pid2, img2 in picks[:tries]:
                     if img2 == img:
                         continue
                     source2 = fetch_image(img2)
                     if source2 is None:
                         continue
-                    if slot in CLOTHING_SLOTS and (
-                        aspect_ratio(source2) >= 1.35
-                        or not has_on_model_face(source2)
-                        or is_extreme_closeup(source2)
-                        or is_likely_detail_frame(img2)
-                    ):
-                        continue
+                    if slot in CLOTHING_SLOTS:
+                        ok_src, _ = clothing_source_ok(
+                            source2,
+                            img2,
+                            luxury_only=slot.startswith("rot-luxury-"),
+                        )
+                        if not ok_src:
+                            continue
+                    elif slot in PRODUCT_SLOTS:
+                        ok_src, _ = product_source_ok(source2, img2)
+                        if not ok_src:
+                            continue
                     try:
                         focal = export_banner_set(
                             source2,
@@ -719,7 +883,8 @@ def main() -> int:
                             mobile_path=MOBILE_DIR / slot,
                             shop=False,
                             kind=kind,
-                            require_face=slot in CLOTHING_SLOTS,
+                            require_face=False,
+                            vertical_bias=bias,
                         )
                         pid, img, source = pid2, img2, source2
                         recovered = True
