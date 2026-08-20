@@ -3245,10 +3245,25 @@ body:has(.nav-drawer-toggle:checked) {
   transform: none;
 }
 
+/*
+ * Sold-out dimming must only hit the visible frame. Card galleries stack every
+ * slide in one grid cell; applying opacity here was overriding
+ * `.product-card-media__img { opacity: 0 }` and blending texture / close-up
+ * slides on top of the packshot (read as huge cream swatches on PLP).
+ */
 .product-card--sold-out .product-frame__img {
   filter: blur(1.15px) saturate(0.88) brightness(0.94);
-  opacity: 0.88;
   transition: filter 0.45s ease, opacity 0.45s ease;
+}
+
+.product-card--sold-out .product-card-media__img.is-current,
+.product-card--sold-out .product-frame__img:not(.product-card-media__img) {
+  opacity: 0.88;
+}
+
+.product-card--sold-out .product-card-media__img:not(.is-current) {
+  opacity: 0;
+  filter: none;
 }
 
 /*

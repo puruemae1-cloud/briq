@@ -905,6 +905,42 @@ def reorder_locals_shoe_front(row: dict) -> list[str]:
     )
 
 
+def reorder_locals_beauty_packshot(row: dict) -> list[str]:
+    """Prefer full packshot-default for beauty PLP; push textures / tight crops last.
+
+    Chanel beauty CDNs often ship basic-texture and alternative-v1 close-ups
+    right after the hero. Those read as huge cream swatches when stacked or used
+    as hover — keep the bottle/jar first.
+    """
+    locals_ = list(row.get("localImages") or [])
+    cdn = list(row.get("images") or [])
+    if not locals_:
+        return []
+    if not cdn:
+        return locals_
+
+    def rank(url: str) -> tuple[int, str]:
+        f = str(url).rsplit("/", 1)[-1].lower()
+        if "packshot-default" in f:
+            return (0, f)
+        if "packshot-alternative" in f and "v1" not in f and "vue" not in f:
+            return (1, f)
+        if "packshot-alternative-v1" in f:
+            return (3, f)
+        if "packshot" in f:
+            return (2, f)
+        if "texture" in f or "swatch" in f:
+            return (9, f)
+        if "how-to" in f or "application" in f or "shade" in f:
+            return (8, f)
+        return (5, f)
+
+    n = min(len(locals_), len(cdn))
+    pairs = list(zip(cdn[:n], locals_[:n]))
+    ordered = sorted(pairs, key=lambda p: rank(p[0]))
+    return [loc for _, loc in ordered] + locals_[n:]
+
+
 def _reorder_locals_by_typology(row: dict, preferred: tuple[str, ...]) -> list[str]:
     locals_ = list(row.get("localImages") or [])
     if not locals_ and row.get("localImage"):
@@ -2558,7 +2594,7 @@ def build_fragrance_product(row: dict, prev: dict | None, now_iso: str) -> dict 
 
     images = [
         p
-        for p in (row.get("localImages") or [])
+        for p in reorder_locals_beauty_packshot(row)
         if (ROOT / "public" / str(p).lstrip("/")).is_file()
         and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
     ]
@@ -2687,7 +2723,7 @@ def build_makeup_product(row: dict, prev: dict | None, now_iso: str) -> dict | N
 
     images = [
         p
-        for p in (row.get("localImages") or [])
+        for p in reorder_locals_beauty_packshot(row)
         if (ROOT / "public" / str(p).lstrip("/")).is_file()
         and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
     ]
@@ -2820,7 +2856,7 @@ def build_skincare_product(row: dict, prev: dict | None, now_iso: str) -> dict |
 
     images = [
         p
-        for p in (row.get("localImages") or [])
+        for p in reorder_locals_beauty_packshot(row)
         if (ROOT / "public" / str(p).lstrip("/")).is_file()
         and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
     ]

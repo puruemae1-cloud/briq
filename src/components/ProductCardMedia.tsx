@@ -27,22 +27,25 @@ export function ProductCardMedia({
   children,
 }: ProductCardMediaProps) {
   const gallery = resolveCardGallery(product, 8);
-  const multi = gallery.length > 1 && !soldOut;
+  // Sold-out cards only need the primary packshot — extra slides still used to
+  // paint when sold-out opacity leaked onto non-current imgs.
+  const slides = soldOut ? gallery.slice(0, 1) : gallery;
+  const multi = slides.length > 1;
   const [index, setIndex] = useState(0);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
     setIndex(0);
     setActive(false);
-  }, [product.id, product.shopColorKey, product.image]);
+  }, [product.id, product.shopColorKey, product.image, soldOut]);
 
   const go = useCallback(
     (next: number) => {
       if (!multi) return;
-      const len = gallery.length;
+      const len = slides.length;
       setIndex(((next % len) + len) % len);
     },
-    [gallery.length, multi],
+    [slides.length, multi],
   );
 
   const onEnter = () => {
@@ -85,7 +88,7 @@ export function ProductCardMedia({
       onKeyDown={onKey}
     >
       <div className="product-frame product-frame--card product-card-media__frame">
-        {gallery.map((src, i) => (
+        {slides.map((src, i) => (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             key={src}
@@ -160,7 +163,7 @@ export function ProductCardMedia({
               </button>
             </div>
             <div className="product-card-media__bars" aria-hidden>
-              {gallery.map((src, i) => (
+              {slides.map((src, i) => (
                 <span
                   key={src}
                   className={`product-card-media__bar${
