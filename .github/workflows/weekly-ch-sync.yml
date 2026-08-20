@@ -5,9 +5,16 @@ on:
     # Thursday 07:00 UTC (~16:00 KST) — after Tuesday Gucci / Wednesday buffer
     - cron: "0 7 * * 4"
   workflow_dispatch:
+    inputs:
+      attempt:
+        description: "Retry attempt (auto-filled on requeue; leave as 1 for manual runs)"
+        required: false
+        default: "1"
+        type: string
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: weekly-ch-stock-sync
@@ -16,7 +23,9 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 720
+    # GitHub-hosted runners hard-cap at 6h regardless of a higher value.
+    # Stay under that and rely on resumable phases + requeue.
+    timeout-minutes: 350
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,8 +46,29 @@ jobs:
       - name: Restore ch-pdp images from product-images tag
         run: python3 scripts/restore-product-images-tag.py --dirs ch-pdp
 
-      - name: Sync Chanel catalogue (stock + new + Korean PDP copy)
-        run: python3 scripts/weekly-ch-stock-sync.py
+      - name: Phase scrape (PLP discovery; skips complete PDPs)
+        run: python3 scripts/weekly-ch-stock-sync.py --phase scrape
+
+      - name: Checkpoint scrape progress
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Chanel scrape checkpoint" \
+            src/data/ch \
+            src/data/categories.ts
+
+      - name: Phase enrich (Korean beauty PDP copy, --resume)
+        run: python3 scripts/weekly-ch-stock-sync.py --phase enrich
+
+      - name: Checkpoint enrich progress
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Chanel beauty-copy checkpoint" \
+            src/data/ch
+
+      - name: Phase stock + catalogue rebuild
+        run: python3 scripts/weekly-ch-stock-sync.py --phase stock-build
 
       - name: Push PDP images to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs ch-pdp --skip-whiten
@@ -75,3 +105,38 @@ jobs:
             scripts/restore-product-images-tag.py \
             scripts/verify-product-images.py \
             scripts/ci-commit-push.sh
+
+  # GitHub cancels jobs that hit the ~6h hosted-runner cap (shows as cancelled).
+  # Re-dispatch with the same concurrency group so the next attempt continues
+  # from checkpoints / --resume until the full weekly pass succeeds.
+  requeue:
+    needs: sync
+    if: always() && (needs.sync.result == 'failure' || needs.sync.result == 'cancelled')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Re-dispatch until success
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const maxAttempts = 12;
+            const raw =
+              (context.payload.inputs && context.payload.inputs.attempt) ||
+              '1';
+            const attempt = Math.max(1, parseInt(String(raw), 10) || 1);
+            core.info(`Chanel weekly sync ended as ${{ needs.sync.result }} on attempt ${attempt}`);
+            if (attempt >= maxAttempts) {
+              core.setFailed(
+                `Chanel weekly sync still not finished after ${maxAttempts} attempts — check Actions logs`
+              );
+              return;
+            }
+            const next = String(attempt + 1);
+            core.info(`Re-dispatching weekly-ch-sync.yml attempt=${next}`);
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'weekly-ch-sync.yml',
+              ref: context.ref.replace(/^refs\/heads\//, '') || 'main',
+              inputs: { attempt: next },
+            });
