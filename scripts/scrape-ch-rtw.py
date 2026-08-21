@@ -805,8 +805,12 @@ def save_cache(cache: dict) -> None:
     PDP_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n")
 
 
-def wait_for_pdp_access(client: ChanelClient, max_wait_s: float = 600) -> bool:
-    """Ensure we have a proxy that can fetch PDPs."""
+def wait_for_pdp_access(client: ChanelClient, max_wait_s: float = 90) -> bool:
+    """Ensure we have a proxy that can fetch PDPs.
+
+    Keep the wait short: GitHub-hosted IPs are often Akamai-blocked and free
+    proxies rarely help. Callers should soft-skip rather than burn the job.
+    """
     started = time.time()
     attempt = 0
     while time.time() - started < max_wait_s:
@@ -859,8 +863,11 @@ def main() -> int:
     log(f"scraping {len(items)} PDPs…")
 
     if not wait_for_pdp_access(client):
-        log("ERROR: PDP access never recovered — aborting")
-        return 1
+        log(
+            "WARN: PDP access blocked (Akamai/proxy) — skipping new PDPs; "
+            "keeping existing catalogue raw/cache so weekly stock sync can finish"
+        )
+        return 0
 
     consecutive_blocks = 0
     i = 0
@@ -901,7 +908,7 @@ def main() -> int:
             i -= 1
             if consecutive_blocks >= 12:
                 log("Too many consecutive blocks — re-validating PDP access")
-                if not wait_for_pdp_access(client, max_wait_s=600):
+                if not wait_for_pdp_access(client, max_wait_s=90):
                     failed.append(
                         {"sku": sku, "url": url, "status": status, "reason": "akamai"}
                     )

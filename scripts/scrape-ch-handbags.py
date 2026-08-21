@@ -495,8 +495,11 @@ def main() -> int:
     leaf_counts: Counter[str] = Counter()
 
     if not wait_for_pdp_access(client):
-        log("ERROR: PDP access never recovered — aborting")
-        return 1
+        log(
+            "WARN: PDP access blocked (Akamai/proxy) — skipping new PDPs; "
+            "keeping existing catalogue raw/cache so weekly stock sync can finish"
+        )
+        return 0
 
     consecutive_blocks = 0
     i = 0
@@ -542,7 +545,7 @@ def main() -> int:
             client.warm()
             i -= 1
             if consecutive_blocks >= 12:
-                if not wait_for_pdp_access(client, max_wait_s=600):
+                if not wait_for_pdp_access(client, max_wait_s=90):
                     failed.append(
                         {"sku": sku, "url": url, "status": status, "reason": "akamai"}
                     )

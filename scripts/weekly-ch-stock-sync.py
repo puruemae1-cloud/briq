@@ -44,22 +44,41 @@ SCRAPE_SCRIPTS = (
 PHASES = ("scrape", "enrich", "stock-build", "all")
 
 
-def run(script: str, env: dict[str, str], extra_args: list[str] | None = None) -> None:
+def run(
+    script: str,
+    env: dict[str, str],
+    extra_args: list[str] | None = None,
+    *,
+    soft: bool = False,
+) -> bool:
     cmd = [sys.executable, "-u", str(ROOT / "scripts" / script)]
     if extra_args:
         cmd.extend(extra_args)
     print(f"→ {' '.join(cmd[2:])}", flush=True)
-    subprocess.check_call(cmd, cwd=str(ROOT), env=env)
+    try:
+        subprocess.check_call(cmd, cwd=str(ROOT), env=env)
+        return True
+    except subprocess.CalledProcessError as e:
+        if soft:
+            print(
+                f"WARN: {script} exited {e.returncode} — continuing weekly sync "
+                f"(Akamai blocks must not fail the whole job)",
+                flush=True,
+            )
+            return False
+        raise
 
 
 def run_phase(phase: str, env: dict[str, str]) -> None:
     if phase in ("scrape", "all"):
+        # Soft: fashion PDPs are often 403 from GitHub IPs; beauty may still
+        # succeed via CN mirrors. Never abort the weekly job on one scraper.
         for script in SCRAPE_SCRIPTS:
-            run(script, env)
+            run(script, env, soft=True)
     if phase in ("enrich", "all"):
         # Always resume — full beauty re-enrich of ~1.2k SKUs exceeds the
         # GitHub-hosted 6h job cap; retries must continue where we left off.
-        run("enrich-ch-beauty-copy.py", env, ["--resume"])
+        run("enrich-ch-beauty-copy.py", env, ["--resume"], soft=True)
     if phase in ("stock-build", "all"):
         run("sync-ch-gb-stock.py", env)
         run("build-ch-catalog.py", env)

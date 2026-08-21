@@ -106,33 +106,32 @@ jobs:
             scripts/verify-product-images.py \
             scripts/ci-commit-push.sh
 
-  # GitHub cancels jobs that hit the ~6h hosted-runner cap (shows as cancelled).
-  # Re-dispatch with the same concurrency group so the next attempt continues
-  # from checkpoints / --resume until the full weekly pass succeeds.
+  # Only requeue on runner hard-cancel (~6h cap). Do NOT requeue on failure —
+  # Akamai 403 loops were burning Actions minutes and triggering repeat deploys.
   requeue:
     needs: sync
-    if: always() && (needs.sync.result == 'failure' || needs.sync.result == 'cancelled')
+    if: always() && needs.sync.result == 'cancelled'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Re-dispatch until success
+      - name: Re-dispatch after runner timeout only
         uses: actions/github-script@v7
         with:
           script: |
-            const maxAttempts = 12;
+            const maxAttempts = 3;
             const raw =
               (context.payload.inputs && context.payload.inputs.attempt) ||
               '1';
             const attempt = Math.max(1, parseInt(String(raw), 10) || 1);
-            core.info(`Chanel weekly sync ended as ${{ needs.sync.result }} on attempt ${attempt}`);
+            core.info(`Chanel weekly sync cancelled on attempt ${attempt}`);
             if (attempt >= maxAttempts) {
               core.setFailed(
-                `Chanel weekly sync still not finished after ${maxAttempts} attempts — check Actions logs`
+                `Chanel weekly sync still not finished after ${maxAttempts} timeout retries — check Actions logs`
               );
               return;
             }
             const next = String(attempt + 1);
-            core.info(`Re-dispatching weekly-ch-sync.yml attempt=${next}`);
+            core.info(`Re-dispatching weekly-ch-sync.yml attempt=${next} (timeout resume only)`);
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
