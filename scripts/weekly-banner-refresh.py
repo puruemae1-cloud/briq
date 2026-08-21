@@ -52,10 +52,10 @@ UA = (
 SLOT_THEMES: dict[str, list[str]] = {
     "rot-hero-1.jpg": ["luxury", "fashion"],
     "rot-hero-2.jpg": ["luxury", "fashion"],
-    "rot-hero-3.jpg": ["fashion", "street"],
+    "rot-hero-3.jpg": ["luxury", "fashion"],
     "rot-hero-4.jpg": ["luxury", "fashion"],
-    "rot-event-1.jpg": ["fashion", "luxury"],
-    "rot-event-2.jpg": ["street", "fashion"],
+    "rot-event-1.jpg": ["luxury", "fashion"],
+    "rot-event-2.jpg": ["luxury", "fashion"],
     "rot-event-3.jpg": ["luxury", "fashion"],
     "rot-luxury-1.jpg": ["luxury"],
     "rot-luxury-2.jpg": ["luxury"],
@@ -150,6 +150,29 @@ CLOTHING_SLOTS = {
     or n.startswith("rot-event-")
     or n.startswith("rot-luxury-")
     or n.startswith("rot-cloth-")
+}
+
+# Main homepage hero + "Now in London" — luxury fashion logo close-ups only.
+MAIN_BANNER_SLOTS = {
+    n
+    for n in SLOT_THEMES
+    if n.startswith("rot-hero-") or n.startswith("rot-event-")
+}
+
+# Sports imagery stays on sports / outdoor rails and brand chips only.
+SPORTS_SLOTS = {
+    n
+    for n in SLOT_THEMES
+    if n.startswith("rot-golf-")
+    or n.startswith("rot-cycle-")
+    or n.startswith("rot-swim-")
+    or n.startswith("rot-run-")
+    or n.startswith("rot-tennis-")
+    or n.startswith("shop-golf-")
+    or n.startswith("shop-run-")
+    or n.startswith("shop-shoe-train-")
+    or n.startswith("brand-arcteryx-")
+    or n.startswith("brand-galvin-green-")
 }
 
 # Product stills — shoes / bags / accessories must stay readable after the PC crop.
@@ -366,6 +389,59 @@ def is_clothing_product(product: dict) -> bool:
     )
 
 
+def is_sports_product(product: dict) -> bool:
+    """True for golf / Arc'teryx / training — keep these off fashion homepage rails."""
+    pid = str(product.get("id") or "").lower()
+    if pid.startswith(("axa-", "ax-", "axg-", "axo-", "gg-")):
+        return True
+    blob = product_blob(product)
+    return any(
+        x in blob
+        for x in (
+            "golf",
+            "골프",
+            "galvin",
+            "arcteryx",
+            "arc'teryx",
+            "아크테릭스",
+            "running",
+            "러너",
+            "tennis",
+            "swim",
+            "cycling",
+            "스포츠",
+            "training shoe",
+            "골프웨어",
+        )
+    )
+
+
+def looks_logo_branded(product_id: str, img: str, product: dict | None = None) -> bool:
+    """Heuristic: monogram / crest / check garments read as branded close-ups."""
+    blob = f"{product_id} {img} {product_blob(product) if product else ''}".lower()
+    return any(
+        x in blob
+        for x in (
+            "logo",
+            "monogram",
+            "gg",
+            "check",
+            "horseferry",
+            "interlocking",
+            "crest",
+            "embroider",
+            "jacquard",
+            "stripe",
+            "zebra",
+            "signature",
+        )
+    )
+
+
+def is_luxury_fashion_id(pid: str) -> bool:
+    return pid.lower().startswith(("gc-", "bb-", "ch-", "ps-"))
+
+
 def theme_match(product: dict, themes: list[str]) -> bool:
     blob = product_blob(product)
     checks = {
@@ -386,11 +462,19 @@ def theme_match(product: dict, themes: list[str]) -> bool:
                 "sweater",
                 "shirt",
                 "hoodie",
-                "arc'teryx",
-                "arcteryx",
-                "axa-",
                 "paul smith",
                 "belstaff",
+            )
+        )
+        and not any(
+            x in blob
+            for x in (
+                "arcteryx",
+                "arc'teryx",
+                "axa-",
+                "galvin",
+                "golf",
+                "골프",
             )
         ),
         "street": any(x in blob for x in ("street", "hoodie", "tee", "sneaker", "trainer")),
@@ -515,8 +599,8 @@ def is_likely_on_model(path: str) -> bool:
     return True
 
 
-def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str]]:
-    """theme → list of (product_id, image_path), plus clothing product ids."""
+def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str], set[str]]:
+    """theme → candidates, clothing product ids, sports product ids."""
     catalogs = [
         ROOT / "src/data/gc/gc-catalog.json",
         ROOT / "src/data/bb/bb-catalog.json",
@@ -543,11 +627,14 @@ def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str]]:
     }
     by_theme: dict[str, list[tuple[str, str]]] = {t: [] for t in themes}
     clothing_ids: set[str] = set()
+    sports_ids: set[str] = set()
     for path in catalogs:
         for product in load_catalog(path):
             pid = str(product.get("id") or "")
             if is_clothing_product(product):
                 clothing_ids.add(pid)
+            if is_sports_product(product):
+                sports_ids.add(pid)
             look_imgs = product_images(product, prefer_on_model=True)
             look_imgs = [i for i in look_imgs if is_likely_on_model(i)] or look_imgs[:2]
             pack_imgs = product_images(product, prefer_on_model=False)
@@ -577,8 +664,8 @@ def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str]]:
         by_theme[theme] = uniq
         if uniq or theme.startswith("brand:"):
             print(f"candidates {theme}={len(uniq)}", flush=True)
-    print(f"clothing_ids={len(clothing_ids)}", flush=True)
-    return by_theme, clothing_ids
+    print(f"clothing_ids={len(clothing_ids)} sports_ids={len(sports_ids)}", flush=True)
+    return by_theme, clothing_ids, sports_ids
 
 
 def fetch_image(rel: str) -> Image.Image | None:
@@ -626,20 +713,30 @@ def pick_for_slot(
     used: set[str],
     seed: int,
     clothing_ids: set[str] | None = None,
+    sports_ids: set[str] | None = None,
 ) -> list[tuple[str, str]]:
     options: list[tuple[str, str]] = []
     for t in themes:
         options.extend(pool.get(t) or [])
     options = [o for o in options if o[1] not in used]
+    # Sports products only feed sports / outdoor / golf brand slots.
+    if sports_ids and slot not in SPORTS_SLOTS:
+        options = [o for o in options if o[0] not in sports_ids]
+    if slot in MAIN_BANNER_SLOTS:
+        options = [o for o in options if is_luxury_fashion_id(o[0])]
     if slot in CLOTHING_SLOTS and clothing_ids:
         clothed = [o for o in options if o[0] in clothing_ids]
         options = clothed
     brand_only = any(t.startswith("brand:") for t in themes)
     if not options and not brand_only:
-        # fallback any luxury/fashion
-        for t in ("luxury", "fashion", "outdoor"):
+        # fallback luxury/fashion only — never outdoor/sports on fashion rails
+        for t in ("luxury", "fashion"):
             options.extend(pool.get(t) or [])
         options = [o for o in options if o[1] not in used]
+        if sports_ids and slot not in SPORTS_SLOTS:
+            options = [o for o in options if o[0] not in sports_ids]
+        if slot in MAIN_BANNER_SLOTS:
+            options = [o for o in options if is_luxury_fashion_id(o[0])]
         if slot in CLOTHING_SLOTS and clothing_ids:
             options = [o for o in options if o[0] in clothing_ids]
     if not options:
@@ -648,9 +745,16 @@ def pick_for_slot(
     digest = hashlib.sha1(f"{seed}:{slot}".encode()).hexdigest()
     slot_rng = random.Random(digest)
     slot_rng.shuffle(options)
-    if slot in CLOTHING_SLOTS:
+    if slot in MAIN_BANNER_SLOTS:
+        # Prefer branded logo / monogram close stills for hero + Now in London.
+        options.sort(
+            key=lambda o: (
+                0 if looks_logo_branded(o[0], o[1]) else 1,
+                0 if re.search(r"/[12]\.jpe?g$", o[1], re.I) else 1,
+            )
+        )
+    elif slot in CLOTHING_SLOTS:
         luxury = slot.startswith("rot-luxury-")
-        # Luxury: packshot garments. Other apparel: lookbook frame #2.
         options.sort(
             key=lambda o: (
                 0 if luxury and re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
@@ -659,7 +763,6 @@ def pick_for_slot(
             )
         )
     elif slot in PRODUCT_SLOTS:
-        # Prefer primary packshots; never lead with /3 detail macros.
         options.sort(
             key=lambda o: (
                 2 if re.search(r"/[3-9]\.jpe?g$", o[1], re.I) else 0,
@@ -703,6 +806,27 @@ def clothing_source_ok(source, img: str, *, luxury_only: bool = False) -> tuple[
         return False, f"macro-fill {fill:.2f}"
     if fill < 0.08:
         return False, f"empty {fill:.2f}"
+    return True, "ok"
+
+
+def main_banner_source_ok(source, img: str, pid: str) -> tuple[bool, str]:
+    """Hero + Now in London: luxury clothing close-ups with visible branding."""
+    if not is_luxury_fashion_id(pid):
+        return False, "not-luxury-fashion"
+    if is_face_dominant(source) or has_on_model_face(source):
+        return False, "face"
+    ratio = aspect_ratio(source)
+    if ratio < 0.62:
+        return False, f"too-tall {ratio:.2f}"
+    fill = subject_fill_ratio(source)
+    if fill < 0.20:
+        return False, f"empty {fill:.2f}"
+    # Prefer tighter branded stills (logo / monogram / crest) over distant flats.
+    if fill < 0.32 and not looks_logo_branded(pid, img):
+        return False, "not-close-branded"
+    # Reject wall-to-wall texture with no readable garment silhouette.
+    if fill > 0.92 and not looks_logo_branded(pid, img):
+        return False, "macro-no-logo"
     return True, "ok"
 
 
@@ -778,7 +902,7 @@ def main() -> int:
         slots = slots[: args.limit]
     print(f"slots={len(slots)}", flush=True)
 
-    pool, clothing_ids = collect_candidates()
+    pool, clothing_ids, sports_ids = collect_candidates()
     used: set[str] = set()
     prev_slots: dict = {}
     if MANIFEST.is_file():
@@ -796,7 +920,9 @@ def main() -> int:
     for i, slot in enumerate(slots, start=1):
         themes = SLOT_THEMES.get(slot) or ["luxury"]
         kind = slot_kind(slot)
-        picks = pick_for_slot(slot, themes, pool, rng, used, seed, clothing_ids)
+        picks = pick_for_slot(
+            slot, themes, pool, rng, used, seed, clothing_ids, sports_ids
+        )
         if not picks:
             print(f"{i}/{len(slots)} {slot} FAIL no-candidate", flush=True)
             fail += 1
@@ -813,7 +939,12 @@ def main() -> int:
                 last_err = f"fetch {img}"
                 continue
             ratio = aspect_ratio(source)
-            if slot in CLOTHING_SLOTS:
+            if slot in MAIN_BANNER_SLOTS:
+                ok_src, why = main_banner_source_ok(source, img, pid)
+                if not ok_src:
+                    last_err = f"{why} {ratio:.2f} {img}"
+                    continue
+            elif slot in CLOTHING_SLOTS:
                 ok_src, why = clothing_source_ok(
                     source, img, luxury_only=slot.startswith("rot-luxury-")
                 )
@@ -863,7 +994,11 @@ def main() -> int:
                     source2 = fetch_image(img2)
                     if source2 is None:
                         continue
-                    if slot in CLOTHING_SLOTS:
+                    if slot in MAIN_BANNER_SLOTS:
+                        ok_src, _ = main_banner_source_ok(source2, img2, pid2)
+                        if not ok_src:
+                            continue
+                    elif slot in CLOTHING_SLOTS:
                         ok_src, _ = clothing_source_ok(
                             source2,
                             img2,

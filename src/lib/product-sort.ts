@@ -1,4 +1,5 @@
-import type {  Product  } from "@/data/product-types";
+import type { Product } from "@/data/product-types";
+import { isProductInStock } from "@/data/product-utils";
 
 export type ProductSort = "new" | "orders" | "price-asc" | "price-desc";
 
@@ -31,11 +32,26 @@ function registeredAtMs(product: Product): number {
   return Number.isFinite(ms) ? ms : 0;
 }
 
+/** In-stock first (0), sold-out last (1) — applied to every PLP / collection sort. */
+export function stockSortRank(product: Product): number {
+  return isProductInStock(product) ? 0 : 1;
+}
+
 /** Newest first by `registeredAt` (ISO). Missing dates sort last. */
 export function compareProductsByNewest(a: Product, b: Product): number {
   const diff = registeredAtMs(b) - registeredAtMs(a);
   if (diff !== 0) return diff;
   return a.id.localeCompare(b.id);
+}
+
+function withSoldOutLast(
+  cmp: (a: Product, b: Product) => number,
+): (a: Product, b: Product) => number {
+  return (a, b) => {
+    const stock = stockSortRank(a) - stockSortRank(b);
+    if (stock !== 0) return stock;
+    return cmp(a, b);
+  };
 }
 
 /**
@@ -70,24 +86,28 @@ export function preferGgApparelFirst(list: Product[]): Product[] {
   return [...apparel, ...accessories];
 }
 
-/** Same ranking rules as the homepage 100 Collection / every shop category. */
+/** Same ranking rules as the homepage 100 Collection / every shop category.
+ * Sold-out styles always sink to the end, regardless of sort mode.
+ */
 export function sortProducts(list: Product[], sort: ProductSort): Product[] {
   const copy = [...list];
   switch (sort) {
     case "price-asc":
-      return copy.sort((a, b) => a.price - b.price);
+      return copy.sort(withSoldOutLast((a, b) => a.price - b.price));
     case "price-desc":
-      return copy.sort((a, b) => b.price - a.price);
+      return copy.sort(withSoldOutLast((a, b) => b.price - a.price));
     case "orders":
-      return copy.sort((a, b) => {
-        const ba = a.badge ? 1 : 0;
-        const bb = b.badge ? 1 : 0;
-        if (bb !== ba) return bb - ba;
-        return a.price - b.price;
-      });
+      return copy.sort(
+        withSoldOutLast((a, b) => {
+          const ba = a.badge ? 1 : 0;
+          const bb = b.badge ? 1 : 0;
+          if (bb !== ba) return bb - ba;
+          return a.price - b.price;
+        }),
+      );
     case "new":
     default:
-      return copy.sort(compareProductsByNewest);
+      return copy.sort(withSoldOutLast(compareProductsByNewest));
   }
 }
 
@@ -106,7 +126,7 @@ export function getHomepageRailProducts(
   list: Product[],
   limit = 4,
 ): Product[] {
-  const inStock = list.filter((p) => p.inStock !== false);
+  const inStock = list.filter((p) => isProductInStock(p));
   const pool = inStock.length >= limit ? inStock : list;
   return sortProducts(pool, DEFAULT_PRODUCT_SORT).slice(0, limit);
 }

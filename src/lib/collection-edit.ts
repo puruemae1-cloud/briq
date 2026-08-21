@@ -1,7 +1,8 @@
-import type {  Product  } from "@/data/product-types";
+import type { Product } from "@/data/product-types";
 import {
   compareProductsByNewest,
   sortProducts,
+  stockSortRank,
 } from "@/lib/product-sort";
 
 /** Curated homepage / 100 Collection section roles. */
@@ -31,9 +32,9 @@ export type CuratedEdit = {
 
 /**
  * Build the three 100 Collection sections — up to SECTION_LIMIT each.
- * - signature: ≥100만 원, 최신등록순 (패딩 없음)
- * - bestseller: 실제 결제 1회 이상인 상품만, 구매수 → 최신순 (패딩 없음)
- * - new: catalogue-wide 최신등록순 (`registeredAt`)
+ * - signature: ≥100만 원, 최신등록순 (품절은 맨 뒤)
+ * - bestseller: 실제 결제 1회 이상인 상품만, 구매수 → 최신순 (품절은 맨 뒤)
+ * - new: catalogue-wide 최신등록순 (`registeredAt`), 품절은 맨 뒤
  *
  * Always set `registeredAt` on new products so 신상품 큐레이션 stays correct.
  */
@@ -49,6 +50,8 @@ export function curateCollectionEdit(
   const bestseller = products
     .filter((p) => (purchaseCounts[p.id] ?? 0) >= 1)
     .sort((a, b) => {
+      const stock = stockSortRank(a) - stockSortRank(b);
+      if (stock !== 0) return stock;
       const ca = purchaseCounts[a.id] ?? 0;
       const cb = purchaseCounts[b.id] ?? 0;
       if (cb !== ca) return cb - ca;
@@ -56,7 +59,8 @@ export function curateCollectionEdit(
     })
     .slice(0, SECTION_LIMIT);
 
-  // Prefer in-stock newest so OOS styles don't fill the 신상품 rail.
+  // Prefer filling with in-stock newest; sold-out still allowed as padding,
+  // but sortProducts sinks them to the end of the section.
   const inStock = products.filter((p) => p.inStock !== false);
   const newPool =
     inStock.length >= SECTION_LIMIT ? inStock : products;

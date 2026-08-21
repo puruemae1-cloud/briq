@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
 import type { Product } from "@/data/product-types";
 import { SECTION_LIMIT } from "@/lib/collection-edit";
+import { stockSortRank } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
 
 async function fetchProductsByIds(ids: string[]): Promise<Product[]> {
@@ -29,7 +30,7 @@ export function CollectionBestsellerTier() {
     return Object.entries(counts)
       .filter(([, count]) => count >= 1)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, SECTION_LIMIT)
+      .slice(0, SECTION_LIMIT * 2)
       .map(([id]) => id);
   }, [counts]);
 
@@ -42,10 +43,12 @@ export function CollectionBestsellerTier() {
     void fetchProductsByIds(topIds).then((products) => {
       if (cancelled) return;
       const order = new Map(topIds.map((id, i) => [id, i]));
-      products.sort(
-        (a, b) => (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99),
-      );
-      setBestseller(products);
+      products.sort((a, b) => {
+        const stock = stockSortRank(a) - stockSortRank(b);
+        if (stock !== 0) return stock;
+        return (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99);
+      });
+      setBestseller(products.slice(0, SECTION_LIMIT));
     });
     return () => {
       cancelled = true;

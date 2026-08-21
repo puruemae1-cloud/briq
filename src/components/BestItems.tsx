@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
 import type { Product } from "@/data/product-types";
+import { stockSortRank } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
 
 const MAX_ITEMS = 10;
@@ -28,7 +29,7 @@ export function BestItems() {
     return Object.entries(counts)
       .filter(([, count]) => count > 0)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, MAX_ITEMS)
+      .slice(0, MAX_ITEMS * 2)
       .map(([id]) => id);
   }, [counts]);
 
@@ -41,10 +42,12 @@ export function BestItems() {
     void fetchProductsByIds(topIds).then((products) => {
       if (cancelled) return;
       const order = new Map(topIds.map((id, i) => [id, i]));
-      products.sort(
-        (a, b) => (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99),
-      );
-      setList(products);
+      products.sort((a, b) => {
+        const stock = stockSortRank(a) - stockSortRank(b);
+        if (stock !== 0) return stock;
+        return (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99);
+      });
+      setList(products.slice(0, MAX_ITEMS));
     });
     return () => {
       cancelled = true;
