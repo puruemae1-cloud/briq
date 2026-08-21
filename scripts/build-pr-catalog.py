@@ -16,7 +16,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
+RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
+RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
 OUT_TS = ROOT / "src/data/pr/pr-catalog.ts"
 CACHE_PATH = ROOT / "src/data/pr/pr-translate-cache.json"
@@ -29,9 +30,25 @@ HANDBAG_LEAF_COLLECTIONS = [
     "pr-women-backpacks",
     "pr-women-briefcases",
 ]
-PARENT_COLS = ["prada", "prada-bags", "pr-handbags"]
+BAG_PARENT_COLS = ["prada", "prada-bags", "pr-handbags"]
 
-# Title / material glossary — natural Korean for Prada bags
+RTW_LEAF_COLLECTIONS = [
+    "pr-women-knitwear",
+    "pr-women-shirts-tops",
+    "pr-women-tshirts-sweatshirts",
+    "pr-women-dresses",
+    "pr-women-skirts",
+    "pr-women-trousers-shorts",
+    "pr-women-denim",
+    "pr-women-jackets-coats",
+    "pr-women-outerwear",
+    "pr-women-leather",
+    "pr-women-swimwear",
+    "pr-women-pajamas-underwear",
+]
+RTW_PARENT_COLS = ["prada", "prada-luxury", "pr-women", "pr-women-rtw"]
+
+# Title / material glossary — natural Korean for Prada
 _GLOSSARY = {
     "Shoulder bag": "숄더백",
     "Shoulder bags": "숄더백",
@@ -47,6 +64,21 @@ _GLOSSARY = {
     "Briefcase": "브리프케이스",
     "Briefcases": "브리프케이스",
     "Handbag": "핸드백",
+    "Knitwear": "니트웨어",
+    "Dress": "드레스",
+    "Dresses": "드레스",
+    "Skirt": "스커트",
+    "Skirts": "스커트",
+    "Trousers": "팬츠",
+    "Shorts": "쇼츠",
+    "Jacket": "재킷",
+    "Coat": "코트",
+    "Outerwear": "아우터",
+    "Denim": "데님",
+    "Swimwear": "스윔웨어",
+    "Shirt": "셔츠",
+    "T-shirt": "티셔츠",
+    "Sweatshirt": "스웻셔츠",
     "Saffiano leather": "사피아노 가죽",
     "Saffiano": "사피아노",
     "Re-Nylon": "Re-Nylon",
@@ -57,6 +89,8 @@ _GLOSSARY = {
     "nylon": "나일론",
     "Nylon": "나일론",
     "cotton canvas": "코튼 캔버스",
+    "cotton jersey": "코튼 저지",
+    "jersey": "저지",
     "canvas": "캔버스",
     "triangle logo": "트라이앵글 로고",
     "metal hardware": "메탈 하드웨어",
@@ -179,7 +213,7 @@ def dims_ko(dims: dict | None) -> str:
     return " · ".join(parts)
 
 
-def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     code = row.get("productCode") or row.get("id") or row.get("sku")
     if not code:
         return None
@@ -193,9 +227,9 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     cols = [
         c
         for c in (row.get("collections") or [])
-        if c in HANDBAG_LEAF_COLLECTIONS or c in PARENT_COLS
+        if c in HANDBAG_LEAF_COLLECTIONS or c in BAG_PARENT_COLS
     ]
-    cols = sorted(set([*cols, *PARENT_COLS]))
+    cols = sorted(set([*cols, *BAG_PARENT_COLS]))
     if any(c in HANDBAG_LEAF_COLLECTIONS for c in cols) and "pr-handbags" not in cols:
         cols.append("pr-handbags")
         cols = sorted(set(cols))
@@ -362,12 +396,201 @@ def build_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
     }
 
 
-def main() -> None:
-    if not RAW.exists():
-        raise SystemExit(f"Missing {RAW} — run scrape-pr-handbags.py first")
+def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id") or row.get("sku")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
 
-    raw = json.loads(RAW.read_text())
-    rows = raw.get("products") or []
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c in RTW_LEAF_COLLECTIONS or c in RTW_PARENT_COLS
+    ]
+    cols = sorted(set([*cols, *RTW_PARENT_COLS]))
+    leaf = row.get("leaf") or next(
+        (c for c in RTW_LEAF_COLLECTIONS if c in cols), "pr-women-rtw"
+    )
+
+    images = list(row.get("localImages") or [])
+    if not images and row.get("localImage"):
+        images = [row["localImage"]]
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (rtw): {code}", flush=True)
+        return None
+
+    image = images[0]
+    hover = row.get("localHover") or (images[1] if len(images) > 1 else image)
+    if hover and not (
+        (ROOT / "public" / str(hover).lstrip("/")).is_file()
+        and (ROOT / "public" / str(hover).lstrip("/")).stat().st_size > 2048
+    ):
+        hover = images[1] if len(images) > 1 else image
+
+    title_en = (row.get("title") or code).strip()
+    name_ko = t(title_en)
+    color_en = (row.get("color") or "").strip()
+    color_ko = t(color_en) if color_en else ""
+    editorial = (row.get("description") or "").strip()
+    editorial_ko = t(editorial) if editorial else ""
+    details = [x for x in (row.get("details") or []) if str(x).strip()]
+    details_ko = [t(x) for x in details]
+    materials = [x for x in (row.get("materialsCare") or []) if str(x).strip()]
+    materials_ko = [t(x) for x in materials]
+    if row.get("material") and not materials_ko:
+        materials_ko = [t(row["material"])]
+
+    desc_bits = []
+    if editorial_ko:
+        desc_bits.append(editorial_ko)
+    if details_ko:
+        desc_bits.append(" · ".join(details_ko[:10]))
+    description_ko = "\n\n".join(desc_bits).strip()
+
+    story: list[dict] = []
+    if editorial_ko:
+        story.append({"titleKo": name_ko, "bodyKo": editorial_ko, "image": image})
+    if details_ko:
+        story.append(
+            {
+                "titleKo": "디테일",
+                "bodyKo": " · ".join(details_ko),
+                "image": images[1] if len(images) > 1 else image,
+                "reverse": True,
+            }
+        )
+    if materials_ko:
+        story.append(
+            {
+                "titleKo": "소재 & 케어",
+                "bodyKo": " · ".join(materials_ko),
+                "image": images[2] if len(images) > 2 else image,
+            }
+        )
+    for i, img in enumerate(images[1:], start=1):
+        if len(story) >= 8:
+            break
+        story.append(
+            {
+                "titleKo": "갤러리",
+                "bodyKo": f"{name_ko}의 디테일.",
+                "image": img,
+                "layout": "wide",
+                "reverse": i % 2 == 0,
+            }
+        )
+
+    pid = f"pr-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    in_stock = bool(row.get("inStock", True))
+    color_key = slugify(color_en or color_ko or "default")
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    for sz in size_rows:
+        label = str(sz.get("size") or "").strip()
+        if not label:
+            continue
+        slug = slugify(label)
+        variants.append(
+            {
+                "id": f"{pid}-{slug}",
+                "name": f"{title_en} — {label}",
+                "nameKo": f"{name_ko} — {label}",
+                "sku": f"{code}-{label}",
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": bool(sz.get("inStock", in_stock)),
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": label,
+                "prCollections": cols,
+            }
+        )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{title_en} — One Size",
+                "nameKo": f"{name_ko} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": "One Size",
+                "prCollections": cols,
+            }
+        ]
+
+    tags = ["prada", "프라다", "rtw", "레디투웨어", "여성", *cols]
+    return {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "프라다",
+        "price": price,
+        "category": "luxury",
+        "subcategory": leaf,
+        "prCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "hoverImage": hover,
+        "accent": accent_for(code),
+        "badge": None,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "signature",
+    }
+
+
+def main() -> None:
+    rows: list[dict] = []
+    if RAW_BAGS.exists():
+        bags = json.loads(RAW_BAGS.read_text()).get("products") or []
+        for r in bags:
+            r = dict(r)
+            r["_kind"] = "handbag"
+            rows.append(r)
+    if RAW_RTW.exists():
+        rtw = json.loads(RAW_RTW.read_text()).get("products") or []
+        for r in rtw:
+            r = dict(r)
+            r["_kind"] = "rtw"
+            rows.append(r)
+    if not rows:
+        raise SystemExit(
+            "Missing Prada raw catalogues — run scrape-pr-handbags.py "
+            "and/or scrape-pr-womens-rtw.py first"
+        )
+
     prev_by_sku: dict[str, dict] = {}
     if OUT_JSON.exists():
         for p in json.loads(OUT_JSON.read_text()):
@@ -382,11 +605,19 @@ def main() -> None:
     )
 
     products: list[dict] = []
+    seen: set[str] = set()
     for i, row in enumerate(rows, start=1):
         sku = str(row.get("productCode") or row.get("id") or "")
-        prod = build_product(row, prev_by_sku.get(sku), now_iso)
+        kind = row.get("_kind") or row.get("kind") or "handbag"
+        if kind in {"womens-rtw", "rtw"}:
+            prod = build_rtw_product(row, prev_by_sku.get(sku), now_iso)
+        else:
+            prod = build_handbag_product(row, prev_by_sku.get(sku), now_iso)
         if not prod:
             continue
+        if prod["id"] in seen:
+            continue
+        seen.add(prod["id"])
         products.append(prod)
         if i % 25 == 0:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
@@ -399,14 +630,18 @@ def main() -> None:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./pr-catalog.json";\n\n'
-        "/** Auto-generated — Prada women's handbags (GB). */\n"
+        "/** Auto-generated — Prada women's handbags + ready-to-wear (GB). */\n"
         "export const prCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
-    for leaf in HANDBAG_LEAF_COLLECTIONS:
+    bags_n = sum(1 for p in products if p.get("category") == "bags")
+    lux_n = sum(1 for p in products if p.get("category") == "luxury")
+    print(f"  bags={bags_n} luxury/rtw={lux_n}", flush=True)
+    for leaf in RTW_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
-        print(f"  {leaf}: {n}", flush=True)
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
 
 
 if __name__ == "__main__":

@@ -71,10 +71,10 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     slug: "prada",
     nameEn: "Prada",
     nameKo: "프라다",
-    shopHref: "/shop?category=bags&sub=prada-bags",
-    keywords: ["프라다", "Prada", "프라다 직구", "프라다 가방", "프라다 명품"],
+    shopHref: "/shop?category=luxury&sub=pr-women",
+    keywords: ["프라다", "Prada", "프라다 직구", "프라다 가방", "프라다 의류", "프라다 명품"],
     blurb:
-      "프라다 여성 가방을 Briq에서 영국 셀렉션 기준으로 만나보세요.",
+      "프라다 여성 레디투웨어·가방을 Briq에서 영국 셀렉션 기준으로 만나보세요.",
   },
   hermes: {
     slug: "hermes",

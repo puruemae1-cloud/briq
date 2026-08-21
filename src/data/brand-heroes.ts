@@ -156,6 +156,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "chanel-watches": "chanel",
   prada: "prada",
   "prada-bags": "prada",
+  "prada-luxury": "prada",
   arcteryx: "arcteryx",
   "arcteryx-bags": "arcteryx",
   "arcteryx-shoes": "arcteryx",

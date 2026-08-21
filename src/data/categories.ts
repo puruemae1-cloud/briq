@@ -454,6 +454,21 @@ export type SubcategoryId =
   | "pr-women-backpacks"
   | "pr-women-briefcases"
   | "prada"
+  | "prada-luxury"
+  | "pr-women"
+  | "pr-women-rtw"
+  | "pr-women-knitwear"
+  | "pr-women-shirts-tops"
+  | "pr-women-tshirts-sweatshirts"
+  | "pr-women-dresses"
+  | "pr-women-skirts"
+  | "pr-women-trousers-shorts"
+  | "pr-women-denim"
+  | "pr-women-jackets-coats"
+  | "pr-women-outerwear"
+  | "pr-women-leather"
+  | "pr-women-swimwear"
+  | "pr-women-pajamas-underwear"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -860,6 +875,22 @@ export const PR_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "pr-women-mini-bags",
   "pr-women-backpacks",
   "pr-women-briefcases",
+];
+
+/** Prada women's ready-to-wear leaves (official GB RTW PLPs). */
+export const PR_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-knitwear",
+  "pr-women-shirts-tops",
+  "pr-women-tshirts-sweatshirts",
+  "pr-women-dresses",
+  "pr-women-skirts",
+  "pr-women-trousers-shorts",
+  "pr-women-denim",
+  "pr-women-jackets-coats",
+  "pr-women-outerwear",
+  "pr-women-leather",
+  "pr-women-swimwear",
+  "pr-women-pajamas-underwear",
 ];
 
 /** Gucci men's bags leaf collections (official UK men bags PLPs). */
@@ -1738,7 +1769,36 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
   "prada-bags": ["prada-bags", "pr-handbags", ...PR_HANDBAG_LEAF_IDS],
-  prada: ["prada", "prada-bags", "pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  prada: [
+    "prada",
+    "prada-luxury",
+    "pr-women",
+    "pr-women-rtw",
+    ...PR_WOMEN_RTW_LEAF_IDS,
+    "prada-bags",
+    "pr-handbags",
+    ...PR_HANDBAG_LEAF_IDS,
+  ],
+  "prada-luxury": [
+    "prada-luxury",
+    "pr-women",
+    "pr-women-rtw",
+    ...PR_WOMEN_RTW_LEAF_IDS,
+  ],
+  "pr-women": ["pr-women", "pr-women-rtw", ...PR_WOMEN_RTW_LEAF_IDS],
+  "pr-women-rtw": ["pr-women-rtw", ...PR_WOMEN_RTW_LEAF_IDS],
+  "pr-women-knitwear": ["pr-women-knitwear"],
+  "pr-women-shirts-tops": ["pr-women-shirts-tops"],
+  "pr-women-tshirts-sweatshirts": ["pr-women-tshirts-sweatshirts"],
+  "pr-women-dresses": ["pr-women-dresses"],
+  "pr-women-skirts": ["pr-women-skirts"],
+  "pr-women-trousers-shorts": ["pr-women-trousers-shorts"],
+  "pr-women-denim": ["pr-women-denim"],
+  "pr-women-jackets-coats": ["pr-women-jackets-coats"],
+  "pr-women-outerwear": ["pr-women-outerwear"],
+  "pr-women-leather": ["pr-women-leather"],
+  "pr-women-swimwear": ["pr-women-swimwear"],
+  "pr-women-pajamas-underwear": ["pr-women-pajamas-underwear"],
   "pr-handbags": ["pr-handbags", ...PR_HANDBAG_LEAF_IDS],
   "pr-women-shoulder-bags": ["pr-women-shoulder-bags"],
   "pr-women-top-handle-bags": ["pr-women-top-handle-bags"],
@@ -2824,6 +2884,86 @@ export const navCategories: NavCategory[] = [
                 id: "ch-women-outerwear",
                 labelKo: "아우터웨어",
                 href: "/shop?category=luxury&sub=ch-women-outerwear",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prada",
+        labelKo: "프라다",
+        href: "/shop?category=luxury&sub=prada",
+        children: [
+          {
+            id: "pr-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=pr-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-women-rtw",
+                labelKo: "전체보기",
+                href: "/shop?category=luxury&sub=pr-women-rtw",
+              },
+              {
+                id: "pr-women-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=pr-women-knitwear",
+              },
+              {
+                id: "pr-women-shirts-tops",
+                labelKo: "셔츠 & 탑",
+                href: "/shop?category=luxury&sub=pr-women-shirts-tops",
+              },
+              {
+                id: "pr-women-tshirts-sweatshirts",
+                labelKo: "티셔츠 & 스웻셔츠",
+                href: "/shop?category=luxury&sub=pr-women-tshirts-sweatshirts",
+              },
+              {
+                id: "pr-women-dresses",
+                labelKo: "드레스",
+                href: "/shop?category=luxury&sub=pr-women-dresses",
+              },
+              {
+                id: "pr-women-skirts",
+                labelKo: "스커트",
+                href: "/shop?category=luxury&sub=pr-women-skirts",
+              },
+              {
+                id: "pr-women-trousers-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=pr-women-trousers-shorts",
+              },
+              {
+                id: "pr-women-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=pr-women-denim",
+              },
+              {
+                id: "pr-women-jackets-coats",
+                labelKo: "재킷 & 코트",
+                href: "/shop?category=luxury&sub=pr-women-jackets-coats",
+              },
+              {
+                id: "pr-women-outerwear",
+                labelKo: "아우터",
+                href: "/shop?category=luxury&sub=pr-women-outerwear",
+              },
+              {
+                id: "pr-women-leather",
+                labelKo: "레더",
+                href: "/shop?category=luxury&sub=pr-women-leather",
+              },
+              {
+                id: "pr-women-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=pr-women-swimwear",
+              },
+              {
+                id: "pr-women-pajamas-underwear",
+                labelKo: "파자마 & 언더웨어",
+                href: "/shop?category=luxury&sub=pr-women-pajamas-underwear",
               },
             ],
           },
