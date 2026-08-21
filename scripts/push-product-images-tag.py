@@ -163,6 +163,17 @@ def push_tag(tmp: Path) -> bool:
     return pushed.returncode == 0
 
 
+def purge_jsdelivr(dirs: list[str]) -> None:
+    """Invalidate jsDelivr so same-path updates show on the live shop."""
+    script = ROOT / "scripts" / "purge-jsdelivr-media.py"
+    if not script.is_file():
+        print("WARN: purge-jsdelivr-media.py missing — skip CDN purge", flush=True)
+        return
+    cmd = [sys.executable, str(script), "--dirs", *dirs]
+    print("+", " ".join(cmd), flush=True)
+    subprocess.run(cmd, cwd=str(ROOT), check=False)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
@@ -315,6 +326,11 @@ def main() -> int:
 
         if not any_pushed:
             print("No image changes on product-images tag.", flush=True)
+            return 0
+
+        # Same path on @product-images keeps a stale jsDelivr HIT otherwise
+        # (homepage banners looked unchanged after refresh).
+        purge_jsdelivr([name for name, _ in src_roots])
         return 0
     finally:
         run(["git", "worktree", "remove", "--force", str(tmp)], check=False)
