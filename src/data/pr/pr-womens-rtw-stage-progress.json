@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-21T21:47:34.695934+00:00",
+  "updatedAt": "2026-08-21T22:15:35.728563+00:00",
   "hubTotal": 682,
   "stages": 5,
   "completedStages": [
-    1
+    1,
+    2
   ],
-  "rawCount": 136,
+  "rawCount": 272,
   "stageCounts": {
-    "1": 136
+    "1": 136,
+    "2": 136
   }
 }
