@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-15T19:15:47.543492+00:00",
+  "scrapedAt": "2026-08-21T12:59:38.662088+00:00",
   "hub": "https://www.chanel.com/gb/fragrance/",
   "note": "Chanel GB fragrance hub — Women + Men + Les Exclusifs + Les Eaux under Accessories→샤넬→향수.",
   "leaves": [
@@ -11,95 +11,10 @@
     }
   ],
   "leafCounts": {
-    "ch-fragrance": 297
+    "ch-fragrance": 313
   },
   "skipped": [],
-  "failed": [
-    {
-      "sku": "105571",
-      "url": "https://www.chanel.com/gb/fragrance/p/105571/n5-twist-and-spray-refill-set-eau-de-toilette/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "105580",
-      "url": "https://www.chanel.com/gb/fragrance/p/105580/n5-leau-on-hand-cream/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "105670",
-      "url": "https://www.chanel.com/gb/fragrance/p/105670/n5-eau-de-toilette-spray/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "105700",
-      "url": "https://www.chanel.com/gb/fragrance/p/105700/n5-the-bath-soap/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "105728",
-      "url": "https://www.chanel.com/gb/fragrance/p/105728/n5-the-body-cream/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "107070",
-      "url": "https://www.chanel.com/gb/fragrance/p/107070/bleu-de-chanel-after-shave-lotion/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "107370",
-      "url": "https://www.chanel.com/gb/fragrance/p/107370/bleu-de-chanel-eau-de-parfum-spray/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "107930",
-      "url": "https://www.chanel.com/gb/fragrance/p/107930/bleu-de-chanel-deodorant-spray/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "107960",
-      "url": "https://www.chanel.com/gb/fragrance/p/107960/bleu-de-chanel-shower-gel/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "116570",
-      "url": "https://www.chanel.com/gb/fragrance/p/116570/coco-mademoiselle-eau-de-parfum-spray/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "116610",
-      "url": "https://www.chanel.com/gb/fragrance/p/116610/coco-mademoiselle-twist-and-spray-refill-set-eau-de-parfum-intense/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "120072",
-      "url": "https://www.chanel.com/gb/fragrance/p/120072/cuir-de-russie-extrait-set-amber-leather-floral/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "120074",
-      "url": "https://www.chanel.com/gb/fragrance/p/120074/gardenia-extrait-set-floral-bouquet-intense/",
-      "status": 0,
-      "reason": "akamai"
-    },
-    {
-      "sku": "120076",
-      "url": "https://www.chanel.com/gb/fragrance/p/120076/jersey-extrait-set-aromatic-musky-vanilla/",
-      "status": 0,
-      "reason": "akamai"
-    }
-  ],
+  "failed": [],
   "products": [
     {
       "id": "100670",
@@ -4567,6 +4482,215 @@
       "localHover": "/products/ch-pdp/105530/2.jpg"
     },
     {
+      "id": "105571",
+      "productCode": "105571",
+      "sku": "105571",
+      "title": "N°5 TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "titleShort": "N°5",
+      "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "priceLabel": "£100",
+      "gbpPrice": 100.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105571/n5-twist-and-spray-refill-set-eau-de-toilette/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE"
+          },
+          {
+            "label": "Reference",
+            "value": "105571"
+          }
+        ],
+        "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "editorial": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "reference": "105571"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-toilette-twist-and-spray-refill-3x0-7fl-oz--packshot-default-105571-9564842819614.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-toilette-twist-and-spray-refill-3x0-7fl-oz--packshot-alternative-v1-105571-9543094960158.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105571",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105571/1.jpg",
+        "/products/ch-pdp/105571/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105571/1.jpg",
+      "localHover": "/products/ch-pdp/105571/2.jpg"
+    },
+    {
+      "id": "105580",
+      "productCode": "105580",
+      "sku": "105580",
+      "title": "N°5 L'EAU ON HAND CREAM",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "ON HAND CREAM",
+      "priceLabel": "£54",
+      "gbpPrice": 54.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105580/n5-leau-on-hand-cream/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "ON HAND CREAM"
+          },
+          {
+            "label": "Reference",
+            "value": "105580"
+          }
+        ],
+        "subtitle": "ON HAND CREAM",
+        "editorial": "ON HAND CREAM",
+        "reference": "105580"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-on-hand-cream-1-7fl-oz--packshot-default-105580-9564842590238.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-on-hand-cream-1-7fl-oz--packshot-alternative-v1-105580-8849387159582.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-on-hand-cream-1-7fl-oz--basic-texture-105580-9565036642334.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105580",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105580/1.jpg",
+        "/products/ch-pdp/105580/2.jpg",
+        "/products/ch-pdp/105580/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105580/1.jpg",
+      "localHover": "/products/ch-pdp/105580/2.jpg"
+    },
+    {
+      "id": "105670",
+      "productCode": "105670",
+      "sku": "105670",
+      "title": "N°5 EAU DE TOILETTE SPRAY",
+      "titleShort": "N°5",
+      "subtitle": "EAU DE TOILETTE SPRAY",
+      "priceLabel": "£127",
+      "gbpPrice": 127.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105670/n5-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "105670"
+          }
+        ],
+        "subtitle": "EAU DE TOILETTE SPRAY",
+        "editorial": "EAU DE TOILETTE SPRAY",
+        "reference": "105670"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-toilette-spray-2-5fl-oz--packshot-default-105670-9580787630110.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-toilette-spray-2-5fl-oz--packshot-alternative-v1-105670-9580787695646.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105670",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105670/1.jpg",
+        "/products/ch-pdp/105670/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105670/1.jpg",
+      "localHover": "/products/ch-pdp/105670/2.jpg"
+    },
+    {
       "id": "105680",
       "productCode": "105680",
       "sku": "105680",
@@ -4654,6 +4778,144 @@
       ],
       "localImage": "/products/ch-pdp/105680/1.jpg",
       "localHover": "/products/ch-pdp/105680/2.jpg"
+    },
+    {
+      "id": "105700",
+      "productCode": "105700",
+      "sku": "105700",
+      "title": "N°5 THE BATH SOAP",
+      "titleShort": "N°5",
+      "subtitle": "THE BATH SOAP",
+      "priceLabel": "£34",
+      "gbpPrice": 34.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105700/n5-the-bath-soap/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "THE BATH SOAP"
+          },
+          {
+            "label": "Reference",
+            "value": "105700"
+          }
+        ],
+        "subtitle": "THE BATH SOAP",
+        "editorial": "THE BATH SOAP",
+        "reference": "105700"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-bath-soap-5-3oz--packshot-default-105700-8851414056990.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-bath-soap-5-3oz--packshot-alternative-v1-105700-8851277643806.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105700",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105700/1.jpg",
+        "/products/ch-pdp/105700/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105700/1.jpg",
+      "localHover": "/products/ch-pdp/105700/2.jpg"
+    },
+    {
+      "id": "105728",
+      "productCode": "105728",
+      "sku": "105728",
+      "title": "N°5 THE BODY CREAM",
+      "titleShort": "N°5",
+      "subtitle": "THE BODY CREAM",
+      "priceLabel": "£85",
+      "gbpPrice": 85.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105728/n5-the-body-cream/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "THE BODY CREAM"
+          },
+          {
+            "label": "Reference",
+            "value": "105728"
+          }
+        ],
+        "subtitle": "THE BODY CREAM",
+        "editorial": "THE BODY CREAM",
+        "reference": "105728"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-body-cream-5oz--packshot-default-105728-8835353706526.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-body-cream-5oz--packshot-alternative-v1-105728-9564975792158.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105728",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105728/1.jpg",
+        "/products/ch-pdp/105728/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105728/1.jpg",
+      "localHover": "/products/ch-pdp/105728/2.jpg"
     },
     {
       "id": "105738",
@@ -5271,6 +5533,77 @@
       ],
       "localImage": "/products/ch-pdp/107009/1.jpg",
       "localHover": "/products/ch-pdp/107009/2.jpg"
+    },
+    {
+      "id": "107070",
+      "productCode": "107070",
+      "sku": "107070",
+      "title": "BLEU DE CHANEL AFTER-SHAVE LOTION",
+      "titleShort": "BLEU DE CHANEL",
+      "subtitle": "AFTER-SHAVE LOTION",
+      "priceLabel": "£65",
+      "gbpPrice": 65.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/107070/bleu-de-chanel-after-shave-lotion/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "AFTER-SHAVE LOTION"
+          },
+          {
+            "label": "Reference",
+            "value": "107070"
+          }
+        ],
+        "subtitle": "AFTER-SHAVE LOTION",
+        "editorial": "AFTER-SHAVE LOTION",
+        "reference": "107070"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-after-shave-lotion-3-4fl-oz--packshot-default-107070-8826672152606.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-after-shave-lotion-3-4fl-oz--packshot-alternative-v1-107070-9563853717534.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-after-shave-lotion-3-4fl-oz--basic-texture-107070-9540632805406.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "107070",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/107070/1.jpg",
+        "/products/ch-pdp/107070/2.jpg",
+        "/products/ch-pdp/107070/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/107070/1.jpg",
+      "localHover": "/products/ch-pdp/107070/2.jpg"
     },
     {
       "id": "107120",
@@ -6335,6 +6668,75 @@
       "localHover": "/products/ch-pdp/107360/2.jpg"
     },
     {
+      "id": "107370",
+      "productCode": "107370",
+      "sku": "107370",
+      "title": "BLEU DE CHANEL EAU DE PARFUM SPRAY",
+      "titleShort": "BLEU DE CHANEL",
+      "subtitle": "EAU DE PARFUM SPRAY",
+      "priceLabel": "£156",
+      "gbpPrice": 156.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/107370/bleu-de-chanel-eau-de-parfum-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "107370"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM SPRAY",
+        "editorial": "EAU DE PARFUM SPRAY",
+        "reference": "107370"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-eau-de-parfum-spray-5fl-oz--packshot-default-107370-9564893315102.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-eau-de-parfum-spray-5fl-oz--packshot-alternative-v1-107370-8851959218206.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "107370",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/107370/1.jpg",
+        "/products/ch-pdp/107370/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/107370/1.jpg",
+      "localHover": "/products/ch-pdp/107370/2.jpg"
+    },
+    {
       "id": "107450",
       "productCode": "107450",
       "sku": "107450",
@@ -7116,6 +7518,144 @@
       ],
       "localImage": "/products/ch-pdp/107810/1.jpg",
       "localHover": "/products/ch-pdp/107810/2.jpg"
+    },
+    {
+      "id": "107930",
+      "productCode": "107930",
+      "sku": "107930",
+      "title": "BLEU DE CHANEL DEODORANT SPRAY",
+      "titleShort": "BLEU DE CHANEL",
+      "subtitle": "DEODORANT SPRAY",
+      "priceLabel": "£44",
+      "gbpPrice": 44.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/107930/bleu-de-chanel-deodorant-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "DEODORANT SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "107930"
+          }
+        ],
+        "subtitle": "DEODORANT SPRAY",
+        "editorial": "DEODORANT SPRAY",
+        "reference": "107930"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-deodorant-spray-3-4fl-oz--packshot-default-107930-9564911337502.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-deodorant-spray-3-4fl-oz--packshot-alternative-v1-107930-9563874033694.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "107930",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/107930/1.jpg",
+        "/products/ch-pdp/107930/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/107930/1.jpg",
+      "localHover": "/products/ch-pdp/107930/2.jpg"
+    },
+    {
+      "id": "107960",
+      "productCode": "107960",
+      "sku": "107960",
+      "title": "BLEU DE CHANEL SHOWER GEL",
+      "titleShort": "BLEU DE CHANEL",
+      "subtitle": "SHOWER GEL",
+      "priceLabel": "£42",
+      "gbpPrice": 42.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/107960/bleu-de-chanel-shower-gel/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "SHOWER GEL"
+          },
+          {
+            "label": "Reference",
+            "value": "107960"
+          }
+        ],
+        "subtitle": "SHOWER GEL",
+        "editorial": "SHOWER GEL",
+        "reference": "107960"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-shower-gel-6-8fl-oz--packshot-default-107960-9564920119326.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-shower-gel-6-8fl-oz--packshot-alternative-v1-107960-9563834712094.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "107960",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/107960/1.jpg",
+        "/products/ch-pdp/107960/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/107960/1.jpg",
+      "localHover": "/products/ch-pdp/107960/2.jpg"
     },
     {
       "id": "107970",
@@ -8862,6 +9402,148 @@
       "localHover": "/products/ch-pdp/116090/2.jpg"
     },
     {
+      "id": "116170",
+      "productCode": "116170",
+      "sku": "116170",
+      "title": "COCO MADEMOISELLE CRUSH ABSOLU Ambery – Intense",
+      "titleShort": "COCO MADEMOISELLE CRUSH ABSOLU",
+      "subtitle": "Ambery – Intense",
+      "priceLabel": "£117",
+      "gbpPrice": 117.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116170/coco-mademoiselle-crush-absolu-ambery-intense/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "Ambery – Intense"
+          },
+          {
+            "label": "Reference",
+            "value": "116170"
+          }
+        ],
+        "subtitle": "Ambery – Intense",
+        "editorial": "Ambery – Intense.",
+        "reference": "116170"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-1-7fl-oz--packshot-default-116170-9590197714974.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-1-7fl-oz--packshot-alternative-v1-116170-9590198566942.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-1-7fl-oz--packshot-other-116170-9598414618654.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116170",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116170/1.jpg",
+        "/products/ch-pdp/116170/2.jpg",
+        "/products/ch-pdp/116170/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116170/1.jpg",
+      "localHover": "/products/ch-pdp/116170/2.jpg"
+    },
+    {
+      "id": "116190",
+      "productCode": "116190",
+      "sku": "116190",
+      "title": "COCO MADEMOISELLE CRUSH ABSOLU Ambery – Intense",
+      "titleShort": "COCO MADEMOISELLE CRUSH ABSOLU",
+      "subtitle": "Ambery – Intense",
+      "priceLabel": "£160",
+      "gbpPrice": 160.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116190/coco-mademoiselle-crush-absolu-ambery-intense/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "Ambery – Intense"
+          },
+          {
+            "label": "Reference",
+            "value": "116190"
+          }
+        ],
+        "subtitle": "Ambery – Intense",
+        "editorial": "Ambery – Intense",
+        "reference": "116190"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-3-4fl-oz--packshot-default-116190-9591355113502.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-3-4fl-oz--packshot-alternative-v1-116190-9593965772830.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-crush-absolu-ambery-intense-3-4fl-oz--packshot-other-116190-9598414553118.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116190",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116190/1.jpg",
+        "/products/ch-pdp/116190/2.jpg",
+        "/products/ch-pdp/116190/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116190/1.jpg",
+      "localHover": "/products/ch-pdp/116190/2.jpg"
+    },
+    {
       "id": "116250",
       "productCode": "116250",
       "sku": "116250",
@@ -9834,6 +10516,146 @@
       ],
       "localImage": "/products/ch-pdp/116520/1.jpg",
       "localHover": "/products/ch-pdp/116520/2.jpg"
+    },
+    {
+      "id": "116570",
+      "productCode": "116570",
+      "sku": "116570",
+      "title": "COCO MADEMOISELLE EAU DE PARFUM SPRAY",
+      "titleShort": "COCO MADEMOISELLE",
+      "subtitle": "EAU DE PARFUM SPRAY",
+      "priceLabel": "£235",
+      "gbpPrice": 235.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116570/coco-mademoiselle-eau-de-parfum-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "116570"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM SPRAY",
+        "editorial": "EAU DE PARFUM SPRAY",
+        "reference": "116570"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-spray-6-8fl-oz--packshot-default-116570-9564893216798.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-spray-6-8fl-oz--packshot-alternative-v1-116570-9564979167262.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-spray-6-8fl-oz--packshot-other-116570-9598414454814.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116570",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116570/1.jpg",
+        "/products/ch-pdp/116570/2.jpg",
+        "/products/ch-pdp/116570/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116570/1.jpg",
+      "localHover": "/products/ch-pdp/116570/2.jpg"
+    },
+    {
+      "id": "116610",
+      "productCode": "116610",
+      "sku": "116610",
+      "title": "COCO MADEMOISELLE TWIST AND SPRAY REFILL SET – EAU DE PARFUM INTENSE",
+      "titleShort": "COCO MADEMOISELLE",
+      "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE PARFUM INTENSE",
+      "priceLabel": "£84",
+      "gbpPrice": 84.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116610/coco-mademoiselle-twist-and-spray-refill-set-eau-de-parfum-intense/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "TWIST AND SPRAY REFILL SET – EAU DE PARFUM INTENSE"
+          },
+          {
+            "label": "Reference",
+            "value": "116610"
+          }
+        ],
+        "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE PARFUM INTENSE",
+        "editorial": "TWIST AND SPRAY REFILL SET – EAU DE PARFUM INTENSE",
+        "reference": "116610"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-3-x-0-2fl-oz--packshot-default-116610-9578092101662.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-3-x-0-2fl-oz--packshot-alternative-v1-116610-9543163117598.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116610",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116610/1.jpg",
+        "/products/ch-pdp/116610/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116610/1.jpg",
+      "localHover": "/products/ch-pdp/116610/2.jpg"
     },
     {
       "id": "116650",
@@ -11933,6 +12755,204 @@
         "/products/ch-pdp/120070/1.jpg"
       ],
       "localImage": "/products/ch-pdp/120070/1.jpg"
+    },
+    {
+      "id": "120072",
+      "productCode": "120072",
+      "sku": "120072",
+      "title": "CUIR DE RUSSIE EXTRAIT – SET Amber – Leather – Floral",
+      "titleShort": "CUIR DE RUSSIE EXTRAIT – SET",
+      "subtitle": "Amber – Leather – Floral",
+      "priceLabel": "£390",
+      "gbpPrice": 390.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/120072/cuir-de-russie-extrait-set-amber-leather-floral/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "Amber – Leather – Floral"
+          },
+          {
+            "label": "Reference",
+            "value": "120072"
+          }
+        ],
+        "subtitle": "Amber – Leather – Floral",
+        "editorial": "Amber – Leather – Floral",
+        "reference": "120072"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/cuir-de-russie-extrait-ambery-leathery-floral-1fl-oz--packshot-default-120072-9591318446110.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "120072",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/120072/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/120072/1.jpg"
+    },
+    {
+      "id": "120074",
+      "productCode": "120074",
+      "sku": "120074",
+      "title": "GARDÉNIA EXTRAIT – SET Floral – Bouquet – Intense",
+      "titleShort": "GARDÉNIA EXTRAIT – SET",
+      "subtitle": "Floral – Bouquet – Intense",
+      "priceLabel": "£390",
+      "gbpPrice": 390.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/120074/gardenia-extrait-set-floral-bouquet-intense/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "Floral – Bouquet – Intense"
+          },
+          {
+            "label": "Reference",
+            "value": "120074"
+          }
+        ],
+        "subtitle": "Floral – Bouquet – Intense",
+        "editorial": "Floral – Bouquet – Intense",
+        "reference": "120074"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/gardenia-extrait-floral-bouquet-intense-1fl-oz--packshot-default-120074-9591387947038.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "120074",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/120074/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/120074/1.jpg"
+    },
+    {
+      "id": "120076",
+      "productCode": "120076",
+      "sku": "120076",
+      "title": "JERSEY EXTRAIT – SET Aromatic – Musky – Vanilla",
+      "titleShort": "JERSEY EXTRAIT – SET",
+      "subtitle": "Aromatic – Musky – Vanilla",
+      "priceLabel": "£390",
+      "gbpPrice": 390.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/120076/jersey-extrait-set-aromatic-musky-vanilla/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "Aromatic – Musky – Vanilla"
+          },
+          {
+            "label": "Reference",
+            "value": "120076"
+          }
+        ],
+        "subtitle": "Aromatic – Musky – Vanilla",
+        "editorial": "Aromatic – Musky – Vanilla",
+        "reference": "120076"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/jersey-extrait-aromatic-musky-vanilla-1fl-oz--packshot-default-120076-9591388438558.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "120076",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/120076/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/120076/1.jpg"
     },
     {
       "id": "120078",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-18T13:56:34.328476+00:00",
+  "scrapedAt": "2026-08-21T12:59:06.961053+00:00",
   "hub": "https://www.chanel.com/gb/skincare/",
   "note": "Chanel GB skincare hub — official product-type PLPs under Accessories→샤넬→스킨케어.",
   "leaves": [
@@ -78,8 +78,8 @@
     "ch-skincare-oils": 6,
     "ch-skincare-body": 9,
     "ch-skincare-toners": 9,
-    "ch-skincare-moisturisers": 37,
-    "ch-skincare-eyes-lips": 15,
+    "ch-skincare-moisturisers": 42,
+    "ch-skincare-eyes-lips": 17,
     "ch-skincare-masks": 9,
     "ch-skincare-cleansers": 9,
     "ch-skincare-serums": 22,
@@ -2777,6 +2777,152 @@
       "localHover": "/products/ch-pdp/133540/2.jpg"
     },
     {
+      "id": "133567",
+      "productCode": "133567",
+      "sku": "133567",
+      "title": "ÉCLAT PREMIER BRIGHT SILKY CREAM BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+      "titleShort": "ÉCLAT PREMIER BRIGHT SILKY CREAM",
+      "subtitle": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+      "priceLabel": "£170",
+      "gbpPrice": 170.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133567/eclat-premier-bright-silky-cream-brightening-unifying-and-soothing-cream/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "BRIGHTENING, UNIFYING AND SOOTHING CREAM"
+          },
+          {
+            "label": "Reference",
+            "value": "133567"
+          }
+        ],
+        "subtitle": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+        "editorial": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+        "reference": "133567"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-brightening-unifying-and-soothing-cream-1-64oz--packshot-default-133567-9579088019486.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-brightening-unifying-and-soothing-cream-1-64oz--packshot-alternative-133567-9579088347166.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-brightening-unifying-and-soothing-cream-1-64oz--packshot-alternative-v1-133567-9579087724574.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-brightening-unifying-and-soothing-cream-1-64oz--basic-texture-133567-9579087691806.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133567",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133567/1.jpg",
+        "/products/ch-pdp/133567/2.jpg",
+        "/products/ch-pdp/133567/3.jpg",
+        "/products/ch-pdp/133567/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133567/1.jpg",
+      "localHover": "/products/ch-pdp/133567/2.jpg"
+    },
+    {
+      "id": "133569",
+      "productCode": "133569",
+      "sku": "133569",
+      "title": "ÉCLAT PREMIER BRIGHT SILKY CREAM – REFILL BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+      "titleShort": "ÉCLAT PREMIER BRIGHT SILKY CREAM – REFILL",
+      "subtitle": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+      "priceLabel": "£148",
+      "gbpPrice": 148.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133569/eclat-premier-bright-silky-cream-refill-brightening-unifying-and-soothing-cream/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "BRIGHTENING, UNIFYING AND SOOTHING CREAM"
+          },
+          {
+            "label": "Reference",
+            "value": "133569"
+          }
+        ],
+        "subtitle": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+        "editorial": "BRIGHTENING, UNIFYING AND SOOTHING CREAM",
+        "reference": "133569"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-refill-brightening-unifying-and-soothing-cream-1-64oz--packshot-default-133569-9579087953950.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-refill-brightening-unifying-and-soothing-cream-1-64oz--packshot-alternative-v1-133569-9579088379934.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/eclat-premier-bright-silky-cream-refill-brightening-unifying-and-soothing-cream-1-64oz--basic-texture-133569-9579088445470.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133569",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133569/1.jpg",
+        "/products/ch-pdp/133569/2.jpg",
+        "/products/ch-pdp/133569/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133569/1.jpg",
+      "localHover": "/products/ch-pdp/133569/2.jpg"
+    },
+    {
       "id": "133630",
       "productCode": "133630",
       "sku": "133630",
@@ -2979,6 +3125,150 @@
       "localHover": "/products/ch-pdp/133635/2.jpg"
     },
     {
+      "id": "133640",
+      "productCode": "133640",
+      "sku": "133640",
+      "title": "SUBLIMAGE L'EXTRAIT BAUME REGARD ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+      "titleShort": "SUBLIMAGE L'EXTRAIT BAUME REGARD",
+      "subtitle": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+      "priceLabel": "£405",
+      "gbpPrice": 405.0,
+      "categoryLabel": "Eye & Lip Care",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133640/sublimage-lextrait-baume-regard-ultimate-eye-balm-reinvigorates-and-nourishes/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Eye & Lip Care",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES"
+          },
+          {
+            "label": "Reference",
+            "value": "133640"
+          }
+        ],
+        "subtitle": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+        "editorial": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+        "reference": "133640"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-ultimate-eye-balm-regenerates-and-repairs-0-5oz--packshot-default-133640-9563494219806.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-ultimate-eye-balm-regenerates-and-repairs-0-5oz--packshot-alternative-v1-133640-9566971002910.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-ultimate-eye-balm-regenerates-and-repairs-0-5oz--basic-texture-133640-9566970871838.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133640",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-eyes-lips",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-eyes-lips",
+      "leaves": [
+        "ch-skincare-eyes-lips"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133640/1.jpg",
+        "/products/ch-pdp/133640/2.jpg",
+        "/products/ch-pdp/133640/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133640/1.jpg",
+      "localHover": "/products/ch-pdp/133640/2.jpg"
+    },
+    {
+      "id": "133645",
+      "productCode": "133645",
+      "sku": "133645",
+      "title": "SUBLIMAGE L'EXTRAIT BAUME REGARD – REFILL ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+      "titleShort": "SUBLIMAGE L'EXTRAIT BAUME REGARD – REFILL",
+      "subtitle": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+      "priceLabel": "£352",
+      "gbpPrice": 352.0,
+      "categoryLabel": "Eye & Lip Care",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133645/sublimage-lextrait-baume-regard-refill-ultimate-eye-balm-reinvigorates-and-nourishes/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Eye & Lip Care",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES"
+          },
+          {
+            "label": "Reference",
+            "value": "133645"
+          }
+        ],
+        "subtitle": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+        "editorial": "ULTIMATE EYE BALM: REINVIGORATES AND NOURISHES",
+        "reference": "133645"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-refill-ultimate-eye-balm-regenerates-and-repairs-0-5oz--packshot-default-133645-9592693620766.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-refill-ultimate-eye-balm-regenerates-and-repairs-0-5oz--packshot-alternative-v1-133645-9566970937374.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-baume-regard-refill-ultimate-eye-balm-regenerates-and-repairs-0-5oz--basic-texture-133645-9566970839070.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133645",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-eyes-lips",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-eyes-lips",
+      "leaves": [
+        "ch-skincare-eyes-lips"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133645/1.jpg",
+        "/products/ch-pdp/133645/2.jpg",
+        "/products/ch-pdp/133645/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133645/1.jpg",
+      "localHover": "/products/ch-pdp/133645/2.jpg"
+    },
+    {
       "id": "133650",
       "productCode": "133650",
       "sku": "133650",
@@ -3081,6 +3371,224 @@
       ],
       "localImage": "/products/ch-pdp/133650/1.jpg",
       "localHover": "/products/ch-pdp/133650/2.jpg"
+    },
+    {
+      "id": "133700",
+      "productCode": "133700",
+      "sku": "133700",
+      "title": "LE LIFT CRÈME WRINKLES, FIRMNESS AND CONTOURS",
+      "titleShort": "LE LIFT CRÈME",
+      "subtitle": "WRINKLES, FIRMNESS AND CONTOURS",
+      "priceLabel": "£150",
+      "gbpPrice": 150.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133700/le-lift-creme-wrinkles-firmness-and-contours/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "WRINKLES, FIRMNESS AND CONTOURS"
+          },
+          {
+            "label": "Reference",
+            "value": "133700"
+          }
+        ],
+        "subtitle": "WRINKLES, FIRMNESS AND CONTOURS",
+        "editorial": "WRINKLES, FIRMNESS AND CONTOURS",
+        "reference": "133700"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-wrinkles-contours-1-7oz--packshot-default-133700-9589549858846.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-wrinkles-contours-1-7oz--packshot-alternative-133700-9589549826078.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-wrinkles-contours-1-7oz--packshot-alternative-v1-133700-9589550219294.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-wrinkles-contours-1-7oz--basic-texture-133700-9597201514526.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133700",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133700/1.jpg",
+        "/products/ch-pdp/133700/2.jpg",
+        "/products/ch-pdp/133700/3.jpg",
+        "/products/ch-pdp/133700/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133700/1.jpg",
+      "localHover": "/products/ch-pdp/133700/2.jpg"
+    },
+    {
+      "id": "133705",
+      "productCode": "133705",
+      "sku": "133705",
+      "title": "LE LIFT CRÈME – REFILL WRINKLES, FIRMNESS AND CONTOURS",
+      "titleShort": "LE LIFT CRÈME – REFILL",
+      "subtitle": "WRINKLES, FIRMNESS AND CONTOURS",
+      "priceLabel": "£130",
+      "gbpPrice": 130.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133705/le-lift-creme-refill-wrinkles-firmness-and-contours/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "WRINKLES, FIRMNESS AND CONTOURS"
+          },
+          {
+            "label": "Reference",
+            "value": "133705"
+          }
+        ],
+        "subtitle": "WRINKLES, FIRMNESS AND CONTOURS",
+        "editorial": "WRINKLES, FIRMNESS AND CONTOURS",
+        "reference": "133705"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-refill-wrinkles-firmness-contours-1-7oz--packshot-default-133705-9589549793310.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-refill-wrinkles-firmness-contours-1-7oz--packshot-alternative-v1-133705-9589549760542.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-creme-refill-wrinkles-firmness-contours-1-7oz--basic-texture-133705-9597201481758.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133705",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133705/1.jpg",
+        "/products/ch-pdp/133705/2.jpg",
+        "/products/ch-pdp/133705/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133705/1.jpg",
+      "localHover": "/products/ch-pdp/133705/2.jpg"
+    },
+    {
+      "id": "133730",
+      "productCode": "133730",
+      "sku": "133730",
+      "title": "LE LIFT FLUIDE WRINKLES, CONTOURS AND PORES",
+      "titleShort": "LE LIFT FLUIDE",
+      "subtitle": "WRINKLES, CONTOURS AND PORES",
+      "priceLabel": "£150",
+      "gbpPrice": 150.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133730/le-lift-fluide-wrinkles-contours-and-pores/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "WRINKLES, CONTOURS AND PORES"
+          },
+          {
+            "label": "Reference",
+            "value": "133730"
+          }
+        ],
+        "subtitle": "WRINKLES, CONTOURS AND PORES",
+        "editorial": "WRINKLES, CONTOURS AND PORES",
+        "reference": "133730"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-fluide-wrinkles-contours-pores-1-7fl-oz--packshot-default-133730-9589550284830.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-fluide-wrinkles-contours-pores-1-7fl-oz--packshot-alternative-v1-133730-9589549695006.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/le-lift-fluide-wrinkles-contours-pores-1-7fl-oz--basic-texture-133730-9589550350366.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133730",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133730/1.jpg",
+        "/products/ch-pdp/133730/2.jpg",
+        "/products/ch-pdp/133730/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133730/1.jpg",
+      "localHover": "/products/ch-pdp/133730/2.jpg"
     },
     {
       "id": "133850",
