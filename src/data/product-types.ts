@@ -59,6 +59,8 @@ export type ProductVariant = {
   gcCollections?: SubcategoryId[];
   /** Chanel PLP memberships. */
   chCollections?: SubcategoryId[];
+  /** Prada PLP memberships. */
+  prCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -116,6 +118,8 @@ export type Product = {
   gcCollections?: SubcategoryId[];
   /** Chanel Ready-to-Wear PLP memberships. */
   chCollections?: SubcategoryId[];
+  /** Prada PLP memberships. */
+  prCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;

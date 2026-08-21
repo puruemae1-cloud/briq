@@ -7,6 +7,7 @@ export type BrandKey =
   | "gucci"
   | "burberry"
   | "chanel"
+  | "prada"
   | "arcteryx"
   | "paul-smith"
   | "belstaff"
@@ -56,6 +57,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/brand-chanel-1.jpg",
       "/banners/brand-chanel-2.jpg",
       "/banners/brand-chanel-3.jpg",
+    ],
+  },
+  prada: {
+    key: "prada",
+    nameEn: "Prada",
+    nameKo: "프라다",
+    logoSrc: "/brands/prada.svg",
+    images: [
+      "/banners/brand-prada-1.jpg",
+      "/banners/brand-prada-2.jpg",
+      "/banners/brand-prada-3.jpg",
     ],
   },
   arcteryx: {
@@ -142,6 +154,8 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "chanel-shoes": "chanel",
   "chanel-accessories": "chanel",
   "chanel-watches": "chanel",
+  prada: "prada",
+  "prada-bags": "prada",
   arcteryx: "arcteryx",
   "arcteryx-bags": "arcteryx",
   "arcteryx-shoes": "arcteryx",

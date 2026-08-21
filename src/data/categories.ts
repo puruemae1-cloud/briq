@@ -445,6 +445,15 @@ export type SubcategoryId =
   | "gc-women-backpacks-beltbags"
   | "gc-women-clutches-evening"
   | "gc-women-personalised"
+  | "prada-bags"
+  | "pr-handbags"
+  | "pr-women-shoulder-bags"
+  | "pr-women-top-handle-bags"
+  | "pr-women-tote-bags"
+  | "pr-women-mini-bags"
+  | "pr-women-backpacks"
+  | "pr-women-briefcases"
+  | "prada"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -841,6 +850,16 @@ export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "gc-women-backpacks-beltbags",
   "gc-women-clutches-evening",
   "gc-women-personalised",
+];
+
+/** Prada women's handbags leaf collections (official GB bags PLPs). */
+export const PR_HANDBAG_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-shoulder-bags",
+  "pr-women-top-handle-bags",
+  "pr-women-tote-bags",
+  "pr-women-mini-bags",
+  "pr-women-backpacks",
+  "pr-women-briefcases",
 ];
 
 /** Gucci men's bags leaf collections (official UK men bags PLPs). */
@@ -1718,6 +1737,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MENS_HANDBAG_LEAF_IDS,
   ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
+  "prada-bags": ["prada-bags", "pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  prada: ["prada", "prada-bags", "pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  "pr-handbags": ["pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  "pr-women-shoulder-bags": ["pr-women-shoulder-bags"],
+  "pr-women-top-handle-bags": ["pr-women-top-handle-bags"],
+  "pr-women-tote-bags": ["pr-women-tote-bags"],
+  "pr-women-mini-bags": ["pr-women-mini-bags"],
+  "pr-women-backpacks": ["pr-women-backpacks"],
+  "pr-women-briefcases": ["pr-women-briefcases"],
   "chanel-bags": [
     "chanel-bags",
     "ch-handbags",
@@ -3214,6 +3242,51 @@ export const navCategories: NavCategory[] = [
             labelKo: "미니백",
             href: "/shop?category=bags&sub=ch-women-mini-bags",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "prada-bags",
+        labelKo: "프라다",
+        href: "/shop?category=bags&sub=prada-bags",
+        children: [
+          {
+            id: "pr-handbags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=pr-handbags",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-women-shoulder-bags",
+                labelKo: "숄더백",
+                href: "/shop?category=bags&sub=pr-women-shoulder-bags",
+              },
+              {
+                id: "pr-women-top-handle-bags",
+                labelKo: "탑 핸들백",
+                href: "/shop?category=bags&sub=pr-women-top-handle-bags",
+              },
+              {
+                id: "pr-women-tote-bags",
+                labelKo: "토트백",
+                href: "/shop?category=bags&sub=pr-women-tote-bags",
+              },
+              {
+                id: "pr-women-mini-bags",
+                labelKo: "미니백",
+                href: "/shop?category=bags&sub=pr-women-mini-bags",
+              },
+              {
+                id: "pr-women-backpacks",
+                labelKo: "백팩",
+                href: "/shop?category=bags&sub=pr-women-backpacks",
+              },
+              {
+                id: "pr-women-briefcases",
+                labelKo: "브리프케이스",
+                href: "/shop?category=bags&sub=pr-women-briefcases",
+              },
+            ],
           },
         ],
       },

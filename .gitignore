@@ -47,6 +47,7 @@ next-env.d.ts
 src/data/bb/bb-pdp-cache.json
 src/data/gc/gc-pdp-cache.json
 src/data/ch/ch-pdp-cache.json
+src/data/pr/pr-handbags-pdp-cache.json
 
 # Heavy PDP image trees — served from the `product-images` git tag via rewrite.
 # Keep a local copy for `next dev`; Vercel clones stay small enough to build.
@@ -59,6 +60,7 @@ src/data/ch/ch-pdp-cache.json
 /public/products/gc-pdp/
 /public/products/bb-pdp/
 /public/products/ch-pdp/
+/public/products/pr-pdp/
 /public/products/gg-pdp/
 /public/products/cw-pdp/
 /public/products/cw-editorial/

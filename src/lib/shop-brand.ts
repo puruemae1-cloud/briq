@@ -10,6 +10,7 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(gc-|gucci)/i, key: "gucci" },
   { re: /^(bb-|burberry)/i, key: "burberry" },
   { re: /^(ch-|chanel)/i, key: "chanel" },
+  { re: /^(pr-|prada)/i, key: "prada" },
   { re: /^(ax-|axa-|arcteryx)/i, key: "arcteryx" },
   { re: /^(ps-|paul-smith)/i, key: "paul-smith" },
   { re: /^(bs-|belstaff)/i, key: "belstaff" },
