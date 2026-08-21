@@ -70,11 +70,18 @@ jobs:
       - name: Phase stock + catalogue rebuild
         run: python3 scripts/weekly-ch-stock-sync.py --phase stock-build
 
+      # Re-fetch any catalogue paths still missing on disk (raw CDN → ch-pdp)
+      # before publishing the tag. Stops broken jsDelivr cards when CI built
+      # against stale localImages that were never on product-images.
+      - name: Repair missing Chanel PDP images
+        run: python3 scripts/repair-missing-catalog-images.py --brand ch
+
       - name: Push PDP images to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs ch-pdp --skip-whiten
 
+      # Hard fail — never swallow missing remote images (`|| true` hid 26 beauty 404s).
       - name: Verify product images (remote)
-        run: python3 scripts/verify-product-images.py --brand ch --remote --skip-local --all-images || true
+        run: python3 scripts/verify-product-images.py --brand ch --remote --skip-local --all-images
 
       - name: Commit and push if changed
         run: |

@@ -29,6 +29,7 @@ BRAND_CATALOGS: dict[str, list[Path]] = {
     "bb": [ROOT / "src/data/bb/bb-catalog.json"],
     "ps": [ROOT / "src/data/ps/ps-catalog.json"],
     "ch": [ROOT / "src/data/ch/ch-catalog.json"],
+    "pr": [ROOT / "src/data/pr/pr-catalog.json"],
     "bs": [ROOT / "src/data/bs/bs-catalog.json"],
     "ax": [ROOT / "src/data/ax/ax-catalog.json"],
     "axa": [ROOT / "src/data/ax/ax-apparel-catalog.json"],
