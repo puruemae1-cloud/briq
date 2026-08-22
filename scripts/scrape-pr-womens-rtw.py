@@ -192,20 +192,54 @@ def primary_leaf(cols: list[str], hit: dict) -> str:
 
 
 def sizes_from_hit(hit: dict) -> list[dict]:
-    out = []
-    for sz in hit.get("availableSizes") or []:
-        label = str(sz.get("label") or "").strip()
+    """All PDP sizes with per-size stock from Prada Algolia.
+
+    SizeGroupStore / availableSizesStore list every size shown on the official PDP.
+    availableSizes lists sizes that can be purchased online right now.
+    """
+    in_stock_labels = {
+        str(sz.get("label") or "").strip().upper()
+        for sz in (hit.get("availableSizes") or [])
+        if str(sz.get("label") or "").strip()
+    }
+
+    code_by_label: dict[str, str] = {}
+    for src in (hit.get("availableSizesStore") or [], hit.get("availableSizes") or []):
+        for sz in src:
+            label = str(sz.get("label") or "").strip()
+            if label:
+                code_by_label.setdefault(label.upper(), str(sz.get("code") or ""))
+
+    all_labels: list[str] = []
+    seen: set[str] = set()
+
+    def add_label(raw: str) -> None:
+        label = raw.strip()
         if not label:
-            continue
-        out.append(
-            {
-                "size": label,
-                "code": str(sz.get("code") or ""),
-                "inStock": True,
-            }
-        )
-    # stable order XS→XL then numeric
-    order = {"XXS": 0, "XS": 1, "S": 2, "M": 3, "L": 4, "XL": 5, "XXL": 6}
+            return
+        key = label.upper()
+        if key in seen:
+            return
+        seen.add(key)
+        all_labels.append(label)
+
+    for label in (hit.get("SizeGroupStore") or {}).get("en_GB") or []:
+        add_label(str(label))
+    for sz in hit.get("availableSizesStore") or []:
+        add_label(str(sz.get("label") or ""))
+    for sz in hit.get("availableSizes") or []:
+        add_label(str(sz.get("label") or ""))
+
+    out = [
+        {
+            "size": label,
+            "code": code_by_label.get(label.upper(), ""),
+            "inStock": label.upper() in in_stock_labels,
+        }
+        for label in all_labels
+    ]
+
+    order = {"XXS": 0, "XS": 1, "S": 2, "M": 3, "L": 4, "XL": 5, "XXL": 6, "XXXL": 7}
     out.sort(key=lambda x: (order.get(x["size"].upper(), 50), x["size"]))
     return out
 
@@ -340,6 +374,7 @@ def hit_to_seed(hit: dict) -> dict:
     imgs = hit.get("Images") or {}
     cols = collections_for(hit)
     material = ((hit.get("MaterialGroup") or {}).get("en_GB") or "").strip()
+    sizes = sizes_from_hit(hit)
     return {
         "id": sku,
         "productCode": sku,
@@ -353,8 +388,10 @@ def hit_to_seed(hit: dict) -> dict:
         "plpHoverUrl": media_url(imgs.get("HoverBKG") or ""),
         "collections": cols,
         "leaf": primary_leaf(cols, hit),
-        "sizes": sizes_from_hit(hit),
-        "inStock": (hit.get("Availability") or "") != "Red",
+        "sizes": sizes,
+        "inStock": any(s["inStock"] for s in sizes)
+        if sizes
+        else (hit.get("Availability") or "") != "Red",
         "availability": hit.get("Availability") or "",
         "material": material,
         "kind": "womens-rtw",
@@ -372,12 +409,89 @@ def stage_slice(n: int, stage: int, stages: int) -> tuple[int, int]:
     return start, end
 
 
+def refresh_sizes_from_algolia() -> None:
+    """Refresh size rows + stock flags for products already in raw (no image re-download)."""
+    if not OUT_RAW.exists():
+        raise SystemExit(f"Missing {OUT_RAW}")
+
+    payload = json.loads(OUT_RAW.read_text())
+    products: list[dict] = payload.get("products") or []
+    if not products:
+        raise SystemExit("No products in raw catalogue")
+
+    s = session()
+    headers = {
+        "X-Algolia-Application-Id": ALGOLIA_APP,
+        "X-Algolia-API-Key": ALGOLIA_KEY,
+    }
+    updated = 0
+    for i, row in enumerate(products, start=1):
+        sku = row.get("id") or row.get("sku")
+        if not sku:
+            continue
+        try:
+            hit = s.get(
+                f"https://{ALGOLIA_APP}-dsn.algolia.net/1/indexes/"
+                f"{ALGOLIA_INDEX}/{quote(sku)}",
+                headers=headers,
+                impersonate="chrome124",
+                timeout=45,
+            ).json()
+        except Exception as e:
+            print(f"  skip {sku}: {e}", flush=True)
+            continue
+        if not hit.get("objectID"):
+            continue
+        sizes = sizes_from_hit(hit)
+        row["sizes"] = sizes
+        row["inStock"] = (
+            any(sz["inStock"] for sz in sizes)
+            if sizes
+            else (hit.get("Availability") or "") != "Red"
+        )
+        updated += 1
+        if i % 50 == 0 or i == len(products):
+            print(f"  refreshed sizes {i}/{len(products)}", flush=True)
+        time.sleep(0.05)
+
+    payload["products"] = products
+    payload["sizesRefreshedAt"] = datetime.now(timezone.utc).isoformat()
+    OUT_RAW.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
+
+    if SEED.exists():
+        seed = json.loads(SEED.read_text())
+        by_id = {p["id"]: p for p in products if p.get("id")}
+        seed_products = seed.get("products") or []
+        seed_updated = 0
+        for sp in seed_products:
+            src = by_id.get(sp.get("id"))
+            if not src or not src.get("sizes"):
+                continue
+            sp["sizes"] = src["sizes"]
+            sp["inStock"] = src["inStock"]
+            seed_updated += 1
+        seed["sizesRefreshedAt"] = payload["sizesRefreshedAt"]
+        SEED.write_text(json.dumps(seed, ensure_ascii=False, indent=2))
+        print(f"Updated seed sizes for {seed_updated} overlapping SKUs", flush=True)
+
+    print(f"Refreshed sizes for {updated} products → {OUT_RAW}", flush=True)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", type=int, default=1)
     ap.add_argument("--stages", type=int, default=5)
     ap.add_argument("--refresh-seed", action="store_true")
+    ap.add_argument(
+        "--refresh-sizes",
+        action="store_true",
+        help="Re-fetch Algolia size/stock flags for products already in raw",
+    )
     args = ap.parse_args()
+
+    if args.refresh_sizes:
+        refresh_sizes_from_algolia()
+        return
 
     OUT_RAW.parent.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)

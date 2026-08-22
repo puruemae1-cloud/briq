@@ -493,7 +493,6 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
 
     pid = f"pr-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
-    in_stock = bool(row.get("inStock", True))
     color_key = slugify(color_en or color_ko or "default")
 
     size_rows = row.get("sizes") or []
@@ -503,6 +502,7 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         if not label:
             continue
         slug = slugify(label)
+        sz_in_stock = bool(sz.get("inStock", False))
         variants.append(
             {
                 "id": f"{pid}-{slug}",
@@ -515,13 +515,16 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
                 "images": images,
                 "hoverImage": hover,
                 "sourceUrl": row.get("url") or "",
-                "inStock": bool(sz.get("inStock", in_stock)),
+                "inStock": sz_in_stock,
                 "colorKey": color_key,
                 "colorNameKo": color_ko or color_en or "기본",
                 "size": label,
                 "prCollections": cols,
             }
         )
+    in_stock = any(v["inStock"] for v in variants) if variants else bool(
+        row.get("inStock", True)
+    )
     if not variants:
         variants = [
             {
