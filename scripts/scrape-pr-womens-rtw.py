@@ -344,6 +344,7 @@ def hit_to_seed(hit: dict) -> dict:
         "id": sku,
         "productCode": sku,
         "sku": sku,
+        "officialNameEn": name,
         "title": name,
         "color": color_en(hit),
         "url": abs_url(url_path),
@@ -464,9 +465,12 @@ def main() -> None:
         if gbp is None and pdp.get("gbpPrice") is not None:
             gbp = pdp["gbpPrice"]
 
+        official_name = row.get("officialNameEn") or row.get("title") or sku
+
         enriched = {
             **row,
-            "title": pdp.get("title") or row.get("title") or sku,
+            "officialNameEn": official_name,
+            "title": official_name,
             "gbpPrice": float(gbp) if gbp is not None else None,
             "description": pdp.get("description") or "",
             "details": pdp.get("details") or [],

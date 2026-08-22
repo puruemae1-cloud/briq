@@ -386,6 +386,7 @@ def hit_to_seed(hit: dict) -> dict:
         "id": sku,
         "productCode": sku,
         "sku": sku,
+        "officialNameEn": name,
         "title": name,
         "color": color_en(hit),
         "url": source,
@@ -468,13 +469,14 @@ def main() -> None:
         if gbp is None and pdp.get("gbpPrice") is not None:
             gbp = pdp["gbpPrice"]
 
-        title = pdp.get("title") or row.get("title") or sku
+        official_name = row.get("officialNameEn") or row.get("title") or sku
         dims = dict(row.get("dimensions") or {})
         dims.update(pdp.get("dimensions") or {})
 
         enriched = {
             **row,
-            "title": title,
+            "officialNameEn": official_name,
+            "title": official_name,
             "gbpPrice": float(gbp) if gbp is not None else None,
             "description": pdp.get("description") or "",
             "details": pdp.get("details") or [],

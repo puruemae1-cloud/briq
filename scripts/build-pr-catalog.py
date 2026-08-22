@@ -259,7 +259,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     ):
         hover = images[1] if len(images) > 1 else image
 
-    title_en = (row.get("title") or code).strip()
+    title_en = (row.get("officialNameEn") or row.get("title") or code).strip()
     name_ko = t(title_en)
     color_en = (row.get("color") or "").strip()
     color_ko = t(color_en) if color_en else ""
@@ -438,7 +438,7 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
     ):
         hover = images[1] if len(images) > 1 else image
 
-    title_en = (row.get("title") or code).strip()
+    title_en = (row.get("officialNameEn") or row.get("title") or code).strip()
     name_ko = t(title_en)
     color_en = (row.get("color") or "").strip()
     color_ko = t(color_en) if color_en else ""

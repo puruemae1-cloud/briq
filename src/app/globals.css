@@ -3599,6 +3599,21 @@ body:has(.nav-drawer-toggle:checked) {
   line-height: 1.3;
 }
 
+.product-detail__official-name {
+  margin: -0.15rem 0 0.5rem;
+  font-size: 80%;
+  line-height: 1.35;
+  color: rgba(11, 18, 16, 0.62);
+  font-family: var(--font-pretendard);
+}
+
+.pdp-dock__official-name {
+  margin: 0.1rem 0 0;
+  font-size: 80%;
+  line-height: 1.25;
+  color: rgba(11, 18, 16, 0.55);
+}
+
 /* Elegant share mark — categories + product surfaces */
 .share-link {
   display: inline-flex;

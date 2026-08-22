@@ -435,6 +435,9 @@ export function ProductDetail({
               className="product-detail__share"
             />
           </div>
+          {product.brand === "프라다" && product.name ? (
+            <p className="product-detail__official-name">{product.name}</p>
+          ) : null}
           {selected ? (
             <p className="product-detail__color-name">
               {optionLabel}
@@ -616,6 +619,9 @@ export function ProductDetail({
           )}
           <div className="pdp-dock__summary">
             <p className="pdp-dock__name">{product.nameKo}</p>
+            {product.brand === "프라다" && product.name ? (
+              <p className="pdp-dock__official-name">{product.name}</p>
+            ) : null}
             <p className="pdp-dock__meta">
               {selected ? <span>{optionLabel}</span> : null}
               {product.braceletResize && braceletCm !== "no" ? (
