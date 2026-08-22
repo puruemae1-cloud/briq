@@ -21,6 +21,7 @@
  */
 
 import type {  Product, ProductVariant  } from "@/data/product-types";
+import { bannerMediaVersion } from "@/lib/banner-media-version";
 
 /**
  * On Vercel, heavy `/products/*` and `/banners/*` assets are not shipped in the
@@ -36,7 +37,12 @@ export function mediaUrl(src: string | undefined | null): string {
   const origin = (process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "").replace(/\/$/, "");
   if (!origin) return src;
   if (src.startsWith("/products/") || src.startsWith("/banners/")) {
-    return `${origin}${src}`;
+    let url = `${origin}${src}`;
+    if (src.startsWith("/banners/")) {
+      const v = bannerMediaVersion();
+      if (v) url += `?v=${encodeURIComponent(v)}`;
+    }
+    return url;
   }
   return src;
 }

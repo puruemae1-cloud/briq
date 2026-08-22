@@ -326,6 +326,10 @@ def main() -> int:
 
         if not any_pushed:
             print("No image changes on product-images tag.", flush=True)
+            # Still purge when banners were requested — jsDelivr can stay stale
+            # even if the tag tree already matched local files.
+            if any(name == "banners" for name, _ in src_roots):
+                purge_jsdelivr(["banners"])
             return 0
 
         # Same path on @product-images keeps a stale jsDelivr HIT otherwise
