@@ -16,6 +16,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "scripts"
+import sys
+
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from pr_size_charts import size_chart_for_variants  # noqa: E402
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
@@ -547,7 +554,7 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         ]
 
     tags = ["prada", "프라다", "rtw", "레디투웨어", "여성", *cols]
-    return {
+    prod: dict = {
         "id": pid,
         "name": title_en,
         "nameKo": name_ko,
@@ -572,6 +579,10 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "registeredAt": registered,
         "editTier": "signature",
     }
+    chart = size_chart_for_variants(variants)
+    if chart:
+        prod["sizeChart"] = chart
+    return prod
 
 
 def main() -> None:
