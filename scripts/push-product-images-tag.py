@@ -14,6 +14,7 @@ Exits 0 when there is nothing to do. Never leaves a dirty worktree behind.
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import shutil
 import subprocess
@@ -167,6 +168,32 @@ def push_tag(tmp: Path) -> bool:
         check=False,
     )
     return pushed.returncode == 0
+
+
+def update_product_images_manifest() -> None:
+    """Bump cache-bust token on main after a successful tag push."""
+    rev = subprocess.run(
+        ["git", "rev-parse", TAG],
+        cwd=str(ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    if not rev:
+        print("WARN: could not read product-images tag rev — skip manifest", flush=True)
+        return
+    from datetime import datetime, timezone
+
+    manifest = {
+        "publishedAt": datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z"),
+        "tagRev": rev[:12],
+    }
+    path = ROOT / "src/data/product-images-manifest.json"
+    path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(f"Updated {path.name} tagRev={manifest['tagRev']}", flush=True)
 
 
 def purge_jsdelivr(dirs: list[str]) -> None:
@@ -329,6 +356,9 @@ def main() -> int:
                 return 1
             any_pushed = True
             print(f"product-images tag updated ({name}).", flush=True)
+
+        if any_pushed:
+            update_product_images_manifest()
 
         if not any_pushed:
             print("No image changes on product-images tag.", flush=True)

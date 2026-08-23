@@ -25,6 +25,8 @@ from curl_cffi import requests as cffi_requests
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from pr_download_image import download_image  # noqa: E402
+
 OUT_RAW = ROOT / "src/data/pr/pr-womens-slg-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/pr/pr-womens-slg-pdp-cache.json"
 SEED = ROOT / "src/data/pr/pr-womens-slg-hub-seed.json"
@@ -339,27 +341,6 @@ def fetch_pdp(s: cffi_requests.Session, url: str, sku: str) -> dict:
     except Exception as e:
         print(f"  pdp fail {sku}: {e}", flush=True)
         return {}
-
-
-def download_image(s: cffi_requests.Session, url: str, dest: Path) -> bool:
-    if dest.exists() and dest.stat().st_size > 2000:
-        return True
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    for attempt in range(3):
-        try:
-            r = s.get(
-                url,
-                headers={"Accept": "image/jpeg,image/*,*/*", "Referer": f"{BASE}/"},
-                impersonate="chrome124",
-                timeout=90,
-            )
-            if r.status_code != 200 or len(r.content) < 1500:
-                raise RuntimeError(f"bad {r.status_code}")
-            dest.write_bytes(r.content)
-            return True
-        except Exception:
-            time.sleep(0.8 * (attempt + 1))
-    return False
 
 
 def hit_to_seed(hit: dict) -> dict:

@@ -9,6 +9,8 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import subprocess
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -17,7 +19,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
-import sys
 
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
@@ -1689,6 +1690,14 @@ def main() -> None:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)
+
+    verify = subprocess.run(
+        [sys.executable, str(SCRIPTS / "verify-product-images.py"), "--brand", "pr"],
+        cwd=str(ROOT),
+        check=False,
+    )
+    if verify.returncode != 0:
+        raise SystemExit("Prada catalog image verify failed — fix before shipping.")
 
 
 if __name__ == "__main__":

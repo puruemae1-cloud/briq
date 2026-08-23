@@ -24,6 +24,11 @@ ROOT = Path(__file__).resolve().parents[1]
 TAG = "product-images"
 PRODUCTS_PREFIX = "public/products/"
 
+if str(ROOT / "scripts") not in sys.path:
+    sys.path.insert(0, str(ROOT / "scripts"))
+
+from product_image_bytes import validate_image_file  # noqa: E402
+
 BRAND_CATALOGS: dict[str, list[Path]] = {
     "gc": [ROOT / "src/data/gc/gc-catalog.json"],
     "bb": [ROOT / "src/data/bb/bb-catalog.json"],
@@ -231,6 +236,7 @@ def main() -> int:
         print(f"  {len(tag_paths)} paths on tag", flush=True)
 
     missing_local: list[tuple[str, str]] = []
+    corrupt_local: list[tuple[str, str]] = []
     missing_remote: list[tuple[str, str]] = []
     checked = 0
 
@@ -246,8 +252,11 @@ def main() -> int:
         for web in paths:
             checked += 1
             disk = path_on_disk(web)
-            if not args.skip_local and not disk.is_file():
-                missing_local.append((pid, web))
+            if not args.skip_local:
+                if not disk.is_file():
+                    missing_local.append((pid, web))
+                elif not validate_image_file(disk):
+                    corrupt_local.append((pid, web))
             if tag_paths is not None:
                 blob = tag_blob_path(web)
                 if blob not in tag_paths:
@@ -262,6 +271,17 @@ def main() -> int:
         if len(missing_local) > 40:
             print(f"  … +{len(missing_local) - 40} more", flush=True)
 
+    if corrupt_local:
+        print(f"\nCORRUPT LOCAL ({len(corrupt_local)}):", flush=True)
+        for pid, web in corrupt_local[:40]:
+            print(f"  {pid}  {web}", flush=True)
+        if len(corrupt_local) > 40:
+            print(f"  … +{len(corrupt_local) - 40} more", flush=True)
+        print(
+            "\nFix: python3 scripts/repair-missing-catalog-images.py --brand <brand>",
+            flush=True,
+        )
+
     if missing_remote:
         print(f"\nMISSING ON TAG {TAG} ({len(missing_remote)}):", flush=True)
         for pid, web in missing_remote[:40]:
@@ -273,7 +293,7 @@ def main() -> int:
             flush=True,
         )
 
-    if missing_local or missing_remote:
+    if missing_local or corrupt_local or missing_remote:
         return 1
     print("OK — all checked images present.", flush=True)
     return 0
