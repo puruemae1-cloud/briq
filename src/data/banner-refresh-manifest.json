@@ -1,6 +1,6 @@
 {
-  "refreshedAt": "2026-08-23T11:50:36.469582+00:00",
-  "weekSeed": 20260824,
+  "refreshedAt": "2026-08-23T15:11:09.658133+00:00",
+  "weekSeed": 202634,
   "slots": {
     "rot-acc-1.jpg": {
       "sourceProductId": "ps-black-pre-tied-silk-bow-tie",
@@ -266,28 +266,28 @@
       "sourceAspect": 0.75
     },
     "rot-shoe-1.jpg": {
-      "sourceProductId": "gc-874936aagsm1060",
-      "sourceImage": "/products/gc-pdp/874936AAGSM1060/1.jpg",
-      "focal": "42% 43%",
+      "sourceProductId": "ps-black-patent-leather-grant-shoes",
+      "sourceImage": "/products/ps-pdp/black-patent-leather-grant-shoes/1.jpg",
+      "focal": "44% 55%",
+      "shop": false,
+      "kind": "look",
+      "sourceAspect": 0.714
+    },
+    "rot-shoe-2.jpg": {
+      "sourceProductId": "gc-848307upg409064",
+      "sourceImage": "/products/gc-pdp/848307UPG409064/1.jpg",
+      "focal": "47% 42%",
       "shop": false,
       "kind": "look",
       "sourceAspect": 1.0
     },
-    "rot-shoe-2.jpg": {
-      "sourceProductId": "bb-horseshoe-backpack",
-      "sourceImage": "/products/bb-pdp/81143941/1.jpg",
-      "focal": "50% 24%",
-      "shop": false,
-      "kind": "look",
-      "sourceAspect": 0.75
-    },
     "rot-shoe-3.jpg": {
-      "sourceProductId": "ch-g47388x0100094305",
-      "sourceImage": "/products/ch-pdp/g47388x0100094305/1.jpg",
-      "focal": "39% 55%",
+      "sourceProductId": "gc-871686haan92140",
+      "sourceImage": "/products/gc-pdp/871686HAAN92140/1.jpg",
+      "focal": "62% 42%",
       "shop": false,
       "kind": "look",
-      "sourceAspect": 0.856
+      "sourceAspect": 1.0
     },
     "rot-swim-1.jpg": {
       "sourceProductId": "axa-x000009106",
@@ -422,16 +422,20 @@
       "shop": true
     },
     "shop-shoe-lux-m-1.jpg": {
-      "sourceProductId": "bb-check-cotton-bucket-hat",
-      "sourceImage": "/products/bb-pdp/81174101/2.jpg",
-      "focal": "49% 41%",
-      "shop": true
+      "sourceProductId": "gc-870823clg009214",
+      "sourceImage": "/products/gc-pdp/870823CLG009214/1.jpg",
+      "focal": "42% 54%",
+      "shop": true,
+      "kind": "shop",
+      "sourceAspect": 1.0
     },
     "shop-shoe-lux-w-1.jpg": {
-      "sourceProductId": "ps-black-leather-aston-trainers",
-      "sourceImage": "/products/ps-pdp/black-leather-aston-trainers/3.jpg",
-      "focal": "48% 55%",
-      "shop": true
+      "sourceProductId": "gc-848317upg401072",
+      "sourceImage": "/products/gc-pdp/848317UPG401072/1.jpg",
+      "focal": "47% 45%",
+      "shop": true,
+      "kind": "shop",
+      "sourceAspect": 1.0
     },
     "shop-shoe-train-m-1.jpg": {
       "sourceProductId": "axa-x000007856",

@@ -453,6 +453,10 @@ export type SubcategoryId =
   | "pr-women-mini-bags"
   | "pr-women-backpacks"
   | "pr-women-briefcases"
+  | "pr-women-travel"
+  | "pr-women-travel-bags"
+  | "pr-women-luggage-carry-on"
+  | "pr-women-travel-accessories"
   | "prada"
   | "prada-luxury"
   | "pr-women"
@@ -891,6 +895,13 @@ export const PR_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "pr-women-mini-bags",
   "pr-women-backpacks",
   "pr-women-briefcases",
+];
+
+/** Prada women's travel leaves (official GB travel PLPs). */
+export const PR_WOMEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-travel-bags",
+  "pr-women-luggage-carry-on",
+  "pr-women-travel-accessories",
 ];
 
 /** Prada women's ready-to-wear leaves (official GB RTW PLPs). */
@@ -1803,7 +1814,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...GC_MENS_HANDBAG_LEAF_IDS,
   ],
   "gc-handbags": ["gc-handbags", ...GC_HANDBAG_LEAF_IDS],
-  "prada-bags": ["prada-bags", "pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  "prada-bags": [
+    "prada-bags",
+    "pr-handbags",
+    ...PR_HANDBAG_LEAF_IDS,
+    "pr-women-travel",
+    ...PR_WOMEN_TRAVEL_LEAF_IDS,
+  ],
   prada: [
     "prada",
     "prada-luxury",
@@ -1813,6 +1830,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "prada-bags",
     "pr-handbags",
     ...PR_HANDBAG_LEAF_IDS,
+    "pr-women-travel",
+    ...PR_WOMEN_TRAVEL_LEAF_IDS,
     "prada-shoes",
     "pr-women-shoes",
     ...PR_WOMEN_SHOE_LEAF_IDS,
@@ -1840,13 +1859,22 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-leather": ["pr-women-leather"],
   "pr-women-swimwear": ["pr-women-swimwear"],
   "pr-women-pajamas-underwear": ["pr-women-pajamas-underwear"],
-  "pr-handbags": ["pr-handbags", ...PR_HANDBAG_LEAF_IDS],
+  "pr-handbags": [
+    "pr-handbags",
+    ...PR_HANDBAG_LEAF_IDS,
+    "pr-women-travel",
+    ...PR_WOMEN_TRAVEL_LEAF_IDS,
+  ],
   "pr-women-shoulder-bags": ["pr-women-shoulder-bags"],
   "pr-women-top-handle-bags": ["pr-women-top-handle-bags"],
   "pr-women-tote-bags": ["pr-women-tote-bags"],
   "pr-women-mini-bags": ["pr-women-mini-bags"],
   "pr-women-backpacks": ["pr-women-backpacks"],
   "pr-women-briefcases": ["pr-women-briefcases"],
+  "pr-women-travel": ["pr-women-travel", ...PR_WOMEN_TRAVEL_LEAF_IDS],
+  "pr-women-travel-bags": ["pr-women-travel-bags"],
+  "pr-women-luggage-carry-on": ["pr-women-luggage-carry-on"],
+  "pr-women-travel-accessories": ["pr-women-travel-accessories"],
   "prada-shoes": ["prada-shoes", "pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
   "pr-women-shoes": ["pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
   "pr-women-ankle-boots-boots": ["pr-women-ankle-boots-boots"],
@@ -3477,6 +3505,29 @@ export const navCategories: NavCategory[] = [
                 id: "pr-women-briefcases",
                 labelKo: "브리프케이스",
                 href: "/shop?category=bags&sub=pr-women-briefcases",
+              },
+              {
+                id: "pr-women-travel",
+                labelKo: "여행용",
+                href: "/shop?category=bags&sub=pr-women-travel",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "pr-women-travel-bags",
+                    labelKo: "트래블백",
+                    href: "/shop?category=bags&sub=pr-women-travel-bags",
+                  },
+                  {
+                    id: "pr-women-luggage-carry-on",
+                    labelKo: "러기지 & 캐리온",
+                    href: "/shop?category=bags&sub=pr-women-luggage-carry-on",
+                  },
+                  {
+                    id: "pr-women-travel-accessories",
+                    labelKo: "트래블 액세서리",
+                    href: "/shop?category=bags&sub=pr-women-travel-accessories",
+                  },
+                ],
               },
             ],
           },

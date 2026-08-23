@@ -511,13 +511,41 @@ def theme_match(product: dict, themes: list[str]) -> bool:
             )
         ),
         "street": any(x in blob for x in ("street", "hoodie", "tee", "sneaker", "trainer")),
-        "bags": any(
+        "bags": (
+            str(product.get("category") or "").lower() == "bags"
+            or any(
+                x in blob
+                for x in (
+                    "handbag",
+                    "가방",
+                    "tote",
+                    "backpack",
+                    "clutch",
+                    "crossbody",
+                    "duffel",
+                    "duffle",
+                    "trolley",
+                    "luggage",
+                )
+            )
+        )
+        and str(product.get("category") or "").lower()
+        not in {"shoes", "watches", "accessories"},
+        # Strict: shoe banners must only use category=shoes products.
+        # Avoid substring traps like "shoe" in "horseshoe" or "heel" in "wheel".
+        "shoes": str(product.get("category") or "").lower() == "shoes"
+        and not any(
             x in blob
-            for x in ("bag", "handbag", "가방", "tote", "backpack", "clutch", "crossbody")
-        ),
-        "shoes": any(
-            x in blob
-            for x in ("shoe", "sneaker", "boot", "loafer", "heel", "슈즈", "footwear", "sandal")
+            for x in (
+                "backpack",
+                "handbag",
+                "bucket hat",
+                "bucket-hat",
+                "모자",
+                " hat",
+                "hat ",
+                "-hat",
+            )
         ),
         "accessories": (
             any(
@@ -834,10 +862,14 @@ def pick_for_slot(
         options = clothed
     brand_only = any(t.startswith("brand:") for t in themes)
     if not options and not brand_only:
-        # fallback — event stays non-apparel; others use luxury/fashion
+        # fallback — event stays non-apparel; shoe/bag product slots stay in-theme
         if slot in EVENT_EDIT_SLOTS:
             for t in ("watches", "shoes", "accessories", "bags"):
                 options.extend(pool.get(t) or [])
+        elif slot.startswith("rot-shoe-") or slot.startswith("shop-shoe-"):
+            options.extend(pool.get("shoes") or [])
+        elif slot.startswith("rot-bag-") or slot.startswith("shop-bag-"):
+            options.extend(pool.get("bags") or [])
         else:
             for t in ("luxury", "fashion"):
                 options.extend(pool.get(t) or [])
