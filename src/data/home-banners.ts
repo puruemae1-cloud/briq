@@ -45,9 +45,6 @@ export type LookBanner = {
  * Homepage rails (except sports) should show brand names only.
  */
 const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set([
-  // clothing — gender, not brands
-  "womens",
-  "mens",
   // shoes — type groupings, not brands
   "luxury-shoes",
   "training-shoes",
@@ -161,23 +158,6 @@ export const homeLookBanners: LookBanner[] = [
     ],
     align: "left",
     focal: "center 42%",
-  },
-  {
-    id: "clothing",
-    kind: "category",
-    categoryId: "clothing",
-    eyebrow: "Fashion",
-    title: "British Silhouette",
-    titleKo: "패션의류",
-    support: "시티부터 위켄드까지, 절제된 영국식 실루엣.",
-    href: "/shop?category=clothing",
-    cta: "패션의류 쇼핑",
-    images: [
-      "/banners/rot-cloth-1.jpg",
-      "/banners/rot-cloth-2.jpg",
-      "/banners/rot-cloth-3.jpg",
-    ],
-    align: "center",
   },
   {
     id: "bags",

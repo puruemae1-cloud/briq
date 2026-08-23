@@ -3323,15 +3323,6 @@ export const navCategories: NavCategory[] = [
     ],
   },
   {
-    id: "clothing",
-    labelKo: "패션의류",
-    href: "/shop?category=clothing",
-    children: [
-      { id: "womens", labelKo: "여성용", href: "/shop?category=clothing&sub=womens" },
-      { id: "mens", labelKo: "남성용", href: "/shop?category=clothing&sub=mens" },
-    ],
-  },
-  {
     id: "bags",
     labelKo: "가방",
     href: "/shop?category=bags",

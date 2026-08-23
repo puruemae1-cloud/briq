@@ -481,7 +481,6 @@ export function getProductsByCategory(category?: string, sub?: string) {
 export const categories = [
   { id: "luxury" as const, label: "Signature", labelKo: "시그니처 의류 컬렉션" },
   { id: "watches" as const, label: "Watches", labelKo: "시계" },
-  { id: "clothing" as const, label: "Clothing", labelKo: "패션의류" },
   { id: "bags" as const, label: "Bags", labelKo: "가방" },
   { id: "shoes" as const, label: "Shoes", labelKo: "슈즈" },
   { id: "accessories" as const, label: "Accessories", labelKo: "악세서리" },
