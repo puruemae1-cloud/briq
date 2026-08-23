@@ -23,6 +23,7 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from pr_size_charts import size_chart_for_shoes, size_chart_for_variants  # noqa: E402
+from pr_shoe_ko import seed_shoe_cache, shoe_text_ko  # noqa: E402
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
@@ -96,11 +97,77 @@ _GLOSSARY = {
     "Denim": "데님",
     "Swimwear": "스윔웨어",
     "Loafers": "로퍼",
+    "Loafer": "로퍼",
     "Sneakers": "스니커즈",
+    "Sneaker": "스니커즈",
     "Pumps": "펌프스",
+    "Pump": "펌프스",
     "Sandals": "샌들",
+    "Sandal": "샌들",
     "Boots": "부츠",
+    "Boot": "부츠",
+    "Booties": "부티",
+    "Bootie": "부티",
     "Mules": "뮬",
+    "Mule": "뮬",
+    "Ballerinas": "발레리나",
+    "Ballerina": "발레리나",
+    "Slingback pumps": "슬링백 펌프스",
+    "Slingback": "슬링백",
+    "Platform sandals": "플랫폼 샌들",
+    "Platform": "플랫폼",
+    "nubuck leather": "누벅 가죽",
+    "nubuck": "누벅",
+    "Nubuck": "누벅",
+    "brushed leather": "브러시드 가죽",
+    "Brushed leather": "브러시드 가죽",
+    "antiqued leather": "앤틱 가죽",
+    "Antiqued leather": "앤틱 가죽",
+    "nappa leather": "나파 가죽",
+    "Nappa leather": "나파 가죽",
+    "mesh fabric": "메쉬 패브릭",
+    "Mesh fabric": "메쉬 패브릭",
+    "technical mesh": "테크니컬 메쉬",
+    "shearling": "시어링",
+    "Shearling": "시어링",
+    "satin": "새틴",
+    "Satin": "새틴",
+    "crochet": "크로셰",
+    "Crochet": "크로셰",
+    "fabric": "패브릭",
+    "Fabric": "패브릭",
+    "rubber sole": "러버 솔",
+    "leather sole": "레더 솔",
+    "leather lining": "가죽 안감",
+    "fabric lining": "패브릭 안감",
+    "shearling lining": "시어링 안감",
+    "hot-stamped logo": "핫스탬프 로고",
+    "screen-printed logo": "스크린 프린트 로고",
+    "enameled metal triangle logo": "에나멜 메탈 트라이앵글 로고",
+    "Enameled metal triangle logo": "에나멜 메탈 트라이앵글 로고",
+    "metal lettering logo": "메탈 레터링 로고",
+    "logo-engraved": "로고 각인",
+    "Monoblock rubber sole": "모노블록 러버 솔",
+    "monoblock rubber sole": "모노블록 러버 솔",
+    "Removable leather-covered insole": "탈착식 가죽 커버 인솔",
+    "leather-covered heel": "가죽 커버 힐",
+    "Leather-covered heel": "가죽 커버 힐",
+    "Cotton laces": "코튼 레이스",
+    "cotton laces": "코튼 레이스",
+    "Lug tread": "러그 트레드",
+    "Open-side": "오픈 사이드",
+    "Feather-embellished": "페더 장식",
+    "Embroidered": "자수",
+    "Vintage-effect": "빈티지 이펙트",
+    "lined": "안감",
+    "Upper with": "갑피:",
+    "Structure": "구조",
+    "Composition": "소재 구성",
+    "Care": "케어",
+    "Made in Italy": "메이드 인 이탈리아",
+    "heel height": "굽 높이",
+    "height": "높이",
+    "mm": "mm",
     "Shirt": "셔츠",
     "T-shirt": "티셔츠",
     "Sweatshirt": "스웻셔츠",
@@ -165,15 +232,93 @@ def en_ratio(s: str) -> float:
 
 
 def gtx(text: str) -> str:
-    q = urllib.parse.quote(text[:4500])
-    url = (
-        "https://translate.googleapis.com/translate_a/single"
-        f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
-    )
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=35) as r:
-        data = json.loads(r.read().decode())
-    return "".join(part[0] for part in data[0] if part and part[0])
+    """Translate EN→KO. Prefer Google gtx; fall back to MyMemory on 429/errors."""
+
+    def _gtx_once(chunk: str) -> str:
+        q = urllib.parse.quote(chunk[:4500])
+        url = (
+            "https://translate.googleapis.com/translate_a/single"
+            f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
+        )
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=35) as r:
+            data = json.loads(r.read().decode())
+        return "".join(part[0] for part in data[0] if part and part[0])
+
+    def _mymemory_once(chunk: str) -> str:
+        # Free tier ~500 chars
+        url2 = (
+            "https://api.mymemory.translated.net/get"
+            f"?q={urllib.parse.quote(chunk[:480])}&langpair=en|ko"
+        )
+        req2 = urllib.request.Request(url2, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req2, timeout=35) as r:
+            data = json.loads(r.read().decode())
+        return (data.get("responseData") or {}).get("translatedText") or ""
+
+    def _one(chunk: str) -> str:
+        try:
+            out = _gtx_once(chunk)
+            if out.strip() and en_ratio(out) < 0.70:
+                return out
+        except Exception:
+            pass
+        out = _mymemory_once(chunk)
+        if out and en_ratio(out) < 0.70:
+            return out
+        raise RuntimeError("translate-failed")
+
+    text = (text or "").strip()
+    if not text:
+        return ""
+    if len(text) <= 480:
+        return _one(text)
+    # Split long copy on sentence boundaries for MyMemory limits
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    chunks: list[str] = []
+    buf = ""
+    for p in parts:
+        if len(buf) + len(p) + 1 <= 480:
+            buf = f"{buf} {p}".strip()
+        else:
+            if buf:
+                chunks.append(buf)
+            buf = p
+    if buf:
+        chunks.append(buf)
+    outs = []
+    for c in chunks:
+        outs.append(_one(c))
+        time.sleep(0.08)
+    return " ".join(outs)
+
+def pretranslate_unique(strings: list[str]) -> None:
+    """Warm the cache for a set of English strings (deduped)."""
+    uniq = []
+    seen: set[str] = set()
+    for s in strings:
+        s = re.sub(r"\s+", " ", (s or "").strip())
+        if not s or s in seen:
+            continue
+        seen.add(s)
+        if s in _KO and en_ratio(_KO[s]) < 0.40:
+            continue
+        if s in _GLOSSARY or en_ratio(s) < 0.35:
+            continue
+        uniq.append(s)
+    print(f"pretranslate {len(uniq)} unique strings…", flush=True)
+    for i, s in enumerate(uniq, start=1):
+        try:
+            ko = gtx(s).strip()
+            if ko and en_ratio(ko) < 0.70:
+                _KO[s] = apply_glossary(ko)
+        except Exception as e:
+            print(f"  skip {i}: {e}", flush=True)
+        if i % 20 == 0:
+            CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
+            print(f"  cached {i}/{len(uniq)}", flush=True)
+        time.sleep(0.12)
+    CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
 
 
 def apply_glossary(s: str) -> str:
@@ -187,26 +332,44 @@ def apply_glossary(s: str) -> str:
     return out
 
 
+_FORCE_TRANSLATE = False
+_OFFLINE_TRANSLATE = False
+
+
 def t(text: str | None) -> str:
     s = re.sub(r"\s+", " ", (text or "").strip())
     if not s:
         return ""
-    if s in _KO and en_ratio(_KO[s]) < 0.55:
+    curated = shoe_text_ko(s)
+    if curated is not None:
+        _KO[s] = curated
+        return curated
+    # Always reuse in-run / good cache hits (force only clears weak entries first).
+    if s in _KO and en_ratio(_KO[s]) < 0.40:
         return apply_glossary(_KO[s])
-    # short glossary hit
+    # short glossary hit (exact title phrase)
     if s in _GLOSSARY:
         return _GLOSSARY[s]
     if en_ratio(s) < 0.35 or len(s) < 3:
         return apply_glossary(s)
-    try:
-        ko = gtx(s).strip()
-        if ko:
-            ko = apply_glossary(ko)
-            _KO[s] = ko
-            return ko
-    except Exception:
-        pass
-    return apply_glossary(s)
+    if not _OFFLINE_TRANSLATE:
+        for attempt in range(2):
+            try:
+                ko = gtx(s).strip()
+                if ko and en_ratio(ko) < 0.55:
+                    ko = apply_glossary(ko)
+                    _KO[s] = ko
+                    time.sleep(0.05)
+                    return ko
+                time.sleep(0.1 * (attempt + 1))
+            except Exception:
+                time.sleep(0.1 * (attempt + 1))
+    # Offline fallback for remaining English (esp. long descriptions)
+    from pr_shoe_ko import apply_phrases
+
+    ko = apply_glossary(apply_phrases(s))
+    _KO[s] = ko
+    return ko
 
 
 def accent_for(key: str) -> str:
@@ -786,20 +949,51 @@ def build_shoes_product(row: dict, prev: dict | None, now_iso: str) -> dict | No
 
 
 def main() -> None:
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--only",
+        choices=["shoes", "rtw", "bags", "all"],
+        default="all",
+        help="Rebuild only one Prada segment (keeps others from existing catalog)",
+    )
+    ap.add_argument(
+        "--force-translate",
+        action="store_true",
+        help="Ignore translate cache and re-run Google Translate",
+    )
+    ap.add_argument(
+        "--offline",
+        action="store_true",
+        help="Do not call external translate APIs (curated + phrase maps only)",
+    )
+    args = ap.parse_args()
+
+    global _FORCE_TRANSLATE, _OFFLINE_TRANSLATE, _KO
+    if args.force_translate:
+        _FORCE_TRANSLATE = True
+        print("force-translate: refreshing shoe Korean copy", flush=True)
+    if args.offline or args.force_translate:
+        # Shoes force-refresh uses curated offline maps (API often 429s).
+        _OFFLINE_TRANSLATE = True
+        print("offline translate mode", flush=True)
+
+    only = args.only
     rows: list[dict] = []
-    if RAW_BAGS.exists():
+    if only in {"all", "bags"} and RAW_BAGS.exists():
         bags = json.loads(RAW_BAGS.read_text()).get("products") or []
         for r in bags:
             r = dict(r)
             r["_kind"] = "handbag"
             rows.append(r)
-    if RAW_RTW.exists():
+    if only in {"all", "rtw"} and RAW_RTW.exists():
         rtw = json.loads(RAW_RTW.read_text()).get("products") or []
         for r in rtw:
             r = dict(r)
             r["_kind"] = "rtw"
             rows.append(r)
-    if RAW_SHOES.exists():
+    if only in {"all", "shoes"} and RAW_SHOES.exists():
         shoes = json.loads(RAW_SHOES.read_text()).get("products") or []
         for r in shoes:
             r = dict(r)
@@ -812,10 +1006,25 @@ def main() -> None:
         )
 
     prev_by_sku: dict[str, dict] = {}
+    existing: list[dict] = []
     if OUT_JSON.exists():
-        for p in json.loads(OUT_JSON.read_text()):
+        existing = json.loads(OUT_JSON.read_text())
+        for p in existing:
             if p.get("sku"):
                 prev_by_sku[str(p["sku"])] = p
+
+    # When force-translating shoes, drop cache for every English source string
+    # used by the shoe raw catalogue so titles/descriptions re-run through gtx.
+    if args.force_translate and only == "shoes":
+        # Keep good description translations; drop weak ones and re-seed curated.
+        dropped = 0
+        for k in list(_KO.keys()):
+            if en_ratio(str(_KO[k])) >= 0.40:
+                _KO.pop(k, None)
+                dropped += 1
+        print(f"cleared {dropped} weak cache entries for shoe retranslate", flush=True)
+        n_seed = seed_shoe_cache(_KO)
+        print(f"seeded {n_seed} curated shoe strings", flush=True)
 
     now_iso = (
         datetime.now(timezone.utc)
@@ -845,6 +1054,27 @@ def main() -> None:
             CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
             print(f"built {i}/{len(rows)}", flush=True)
             time.sleep(0.05)
+
+    if only != "all" and existing:
+        keep_cat = {
+            "shoes": "shoes",
+            "rtw": "luxury",
+            "bags": "bags",
+        }[only]
+        # RTW shares category luxury with nothing else from Prada currently
+        merged = [p for p in existing if p.get("category") != keep_cat]
+        if only == "rtw":
+            # Prada RTW is category luxury; bags are bags; shoes are shoes.
+            # Keep bags+shoes, replace luxury Prada RTW only.
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and p.get("category") == "luxury"
+                )
+            ]
+        products = merged + products
 
     products.sort(key=lambda p: p["id"])
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
