@@ -483,6 +483,15 @@ export type SubcategoryId =
   | "pr-women-new-formal"
   | "pr-women-chocolate"
   | "prada-accessories"
+  | "pr-women-accessories"
+  | "pr-women-sunglasses"
+  | "pr-women-silks-scarves"
+  | "pr-women-hats-gloves"
+  | "pr-women-headbands-hair"
+  | "pr-women-bag-charms"
+  | "pr-women-jewels"
+  | "pr-women-belts"
+  | "pr-women-pouches"
   | "pr-women-slg"
   | "pr-women-card-holders"
   | "pr-women-small-wallets"
@@ -937,6 +946,18 @@ export const PR_WOMEN_SLG_LEAF_IDS: SubcategoryId[] = [
   "pr-women-large-wallets",
   "pr-women-wallets-on-chain",
   "pr-women-high-tech-accessories",
+];
+
+/** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
+export const PR_WOMEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-sunglasses",
+  "pr-women-silks-scarves",
+  "pr-women-hats-gloves",
+  "pr-women-headbands-hair",
+  "pr-women-bag-charms",
+  "pr-women-jewels",
+  "pr-women-belts",
+  "pr-women-pouches",
 ];
 
 /** Gucci men's bags leaf collections (official UK men bags PLPs). */
@@ -1886,9 +1907,25 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-chocolate": ["pr-women-chocolate"],
   "prada-accessories": [
     "prada-accessories",
+    "pr-women-accessories",
+    ...PR_WOMEN_ACCESSORIES_LEAF_IDS,
     "pr-women-slg",
     ...PR_WOMEN_SLG_LEAF_IDS,
   ],
+  "pr-women-accessories": [
+    "pr-women-accessories",
+    ...PR_WOMEN_ACCESSORIES_LEAF_IDS,
+    "pr-women-slg",
+    ...PR_WOMEN_SLG_LEAF_IDS,
+  ],
+  "pr-women-sunglasses": ["pr-women-sunglasses"],
+  "pr-women-silks-scarves": ["pr-women-silks-scarves"],
+  "pr-women-hats-gloves": ["pr-women-hats-gloves"],
+  "pr-women-headbands-hair": ["pr-women-headbands-hair"],
+  "pr-women-bag-charms": ["pr-women-bag-charms"],
+  "pr-women-jewels": ["pr-women-jewels"],
+  "pr-women-belts": ["pr-women-belts"],
+  "pr-women-pouches": ["pr-women-pouches"],
   "pr-women-slg": ["pr-women-slg", ...PR_WOMEN_SLG_LEAF_IDS],
   "pr-women-card-holders": ["pr-women-card-holders"],
   "pr-women-small-wallets": ["pr-women-small-wallets"],
@@ -4826,11 +4863,51 @@ export const navCategories: NavCategory[] = [
         href: "/shop?category=accessories&sub=prada-accessories",
         children: [
           {
-            id: "pr-women-slg",
+            id: "pr-women-accessories",
             labelKo: "여성용",
-            href: "/shop?category=accessories&sub=pr-women-slg",
+            href: "/shop?category=accessories&sub=pr-women-accessories",
             navLeaf: true,
             children: [
+              {
+                id: "pr-women-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=pr-women-sunglasses",
+              },
+              {
+                id: "pr-women-silks-scarves",
+                labelKo: "실크 & 스카프",
+                href: "/shop?category=accessories&sub=pr-women-silks-scarves",
+              },
+              {
+                id: "pr-women-hats-gloves",
+                labelKo: "모자 & 장갑",
+                href: "/shop?category=accessories&sub=pr-women-hats-gloves",
+              },
+              {
+                id: "pr-women-headbands-hair",
+                labelKo: "헤어밴드 & 헤어 액세서리",
+                href: "/shop?category=accessories&sub=pr-women-headbands-hair",
+              },
+              {
+                id: "pr-women-bag-charms",
+                labelKo: "백 참 & 키체인",
+                href: "/shop?category=accessories&sub=pr-women-bag-charms",
+              },
+              {
+                id: "pr-women-jewels",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=pr-women-jewels",
+              },
+              {
+                id: "pr-women-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=pr-women-belts",
+              },
+              {
+                id: "pr-women-pouches",
+                labelKo: "파우치",
+                href: "/shop?category=accessories&sub=pr-women-pouches",
+              },
               {
                 id: "pr-women-card-holders",
                 labelKo: "카드홀더",
