@@ -469,6 +469,15 @@ export type SubcategoryId =
   | "pr-women-leather"
   | "pr-women-swimwear"
   | "pr-women-pajamas-underwear"
+  | "prada-shoes"
+  | "pr-women-shoes"
+  | "pr-women-ankle-boots-boots"
+  | "pr-women-loafers-lace-ups"
+  | "pr-women-pumps-ballerinas"
+  | "pr-women-sneakers"
+  | "pr-women-sandals-mules"
+  | "pr-women-new-formal"
+  | "pr-women-chocolate"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -891,6 +900,16 @@ export const PR_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "pr-women-leather",
   "pr-women-swimwear",
   "pr-women-pajamas-underwear",
+];
+
+export const PR_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-ankle-boots-boots",
+  "pr-women-loafers-lace-ups",
+  "pr-women-pumps-ballerinas",
+  "pr-women-sneakers",
+  "pr-women-sandals-mules",
+  "pr-women-new-formal",
+  "pr-women-chocolate",
 ];
 
 /** Gucci men's bags leaf collections (official UK men bags PLPs). */
@@ -1778,6 +1797,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "prada-bags",
     "pr-handbags",
     ...PR_HANDBAG_LEAF_IDS,
+    "prada-shoes",
+    "pr-women-shoes",
+    ...PR_WOMEN_SHOE_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -1806,6 +1828,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-mini-bags": ["pr-women-mini-bags"],
   "pr-women-backpacks": ["pr-women-backpacks"],
   "pr-women-briefcases": ["pr-women-briefcases"],
+  "prada-shoes": ["prada-shoes", "pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
+  "pr-women-shoes": ["pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
+  "pr-women-ankle-boots-boots": ["pr-women-ankle-boots-boots"],
+  "pr-women-loafers-lace-ups": ["pr-women-loafers-lace-ups"],
+  "pr-women-pumps-ballerinas": ["pr-women-pumps-ballerinas"],
+  "pr-women-sneakers": ["pr-women-sneakers"],
+  "pr-women-sandals-mules": ["pr-women-sandals-mules"],
+  "pr-women-new-formal": ["pr-women-new-formal"],
+  "pr-women-chocolate": ["pr-women-chocolate"],
   "chanel-bags": [
     "chanel-bags",
     "ch-handbags",
@@ -3929,6 +3960,56 @@ export const navCategories: NavCategory[] = [
                 id: "gc-men-boots",
                 labelKo: "부츠 & 앵클부츠",
                 href: "/shop?category=shoes&sub=gc-men-boots",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prada-shoes",
+        labelKo: "프라다",
+        href: "/shop?category=shoes&sub=prada-shoes",
+        children: [
+          {
+            id: "pr-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=pr-women-shoes",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-women-ankle-boots-boots",
+                labelKo: "앵클 부츠 & 부츠",
+                href: "/shop?category=shoes&sub=pr-women-ankle-boots-boots",
+              },
+              {
+                id: "pr-women-loafers-lace-ups",
+                labelKo: "로퍼 & 레이스업",
+                href: "/shop?category=shoes&sub=pr-women-loafers-lace-ups",
+              },
+              {
+                id: "pr-women-pumps-ballerinas",
+                labelKo: "펌프스 & 발레리나",
+                href: "/shop?category=shoes&sub=pr-women-pumps-ballerinas",
+              },
+              {
+                id: "pr-women-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=pr-women-sneakers",
+              },
+              {
+                id: "pr-women-sandals-mules",
+                labelKo: "샌들 & 뮬",
+                href: "/shop?category=shoes&sub=pr-women-sandals-mules",
+              },
+              {
+                id: "pr-women-new-formal",
+                labelKo: "뉴 포멀",
+                href: "/shop?category=shoes&sub=pr-women-new-formal",
+              },
+              {
+                id: "pr-women-chocolate",
+                labelKo: "초콜릿",
+                href: "/shop?category=shoes&sub=pr-women-chocolate",
               },
             ],
           },

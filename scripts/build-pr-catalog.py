@@ -22,9 +22,10 @@ import sys
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from pr_size_charts import size_chart_for_variants  # noqa: E402
+from pr_size_charts import size_chart_for_shoes, size_chart_for_variants  # noqa: E402
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
+RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
 OUT_TS = ROOT / "src/data/pr/pr-catalog.ts"
 CACHE_PATH = ROOT / "src/data/pr/pr-translate-cache.json"
@@ -55,6 +56,17 @@ RTW_LEAF_COLLECTIONS = [
 ]
 RTW_PARENT_COLS = ["prada", "prada-luxury", "pr-women", "pr-women-rtw"]
 
+SHOES_LEAF_COLLECTIONS = [
+    "pr-women-ankle-boots-boots",
+    "pr-women-loafers-lace-ups",
+    "pr-women-pumps-ballerinas",
+    "pr-women-sneakers",
+    "pr-women-sandals-mules",
+    "pr-women-new-formal",
+    "pr-women-chocolate",
+]
+SHOES_PARENT_COLS = ["prada", "prada-shoes", "pr-women-shoes"]
+
 # Title / material glossary — natural Korean for Prada
 _GLOSSARY = {
     "Shoulder bag": "숄더백",
@@ -83,6 +95,12 @@ _GLOSSARY = {
     "Outerwear": "아우터",
     "Denim": "데님",
     "Swimwear": "스윔웨어",
+    "Loafers": "로퍼",
+    "Sneakers": "스니커즈",
+    "Pumps": "펌프스",
+    "Sandals": "샌들",
+    "Boots": "부츠",
+    "Mules": "뮬",
     "Shirt": "셔츠",
     "T-shirt": "티셔츠",
     "Sweatshirt": "스웻셔츠",
@@ -585,6 +603,188 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
     return prod
 
 
+def build_shoes_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id") or row.get("sku")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c in SHOES_LEAF_COLLECTIONS or c in SHOES_PARENT_COLS
+    ]
+    cols = sorted(set([*cols, *SHOES_PARENT_COLS]))
+    leaf = row.get("leaf") or next(
+        (c for c in SHOES_LEAF_COLLECTIONS if c in cols), "pr-women-shoes"
+    )
+
+    images = list(row.get("localImages") or [])
+    if not images and row.get("localImage"):
+        images = [row["localImage"]]
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (shoes): {code}", flush=True)
+        return None
+
+    image = images[0]
+    hover = row.get("localHover") or (images[1] if len(images) > 1 else image)
+    if hover and not (
+        (ROOT / "public" / str(hover).lstrip("/")).is_file()
+        and (ROOT / "public" / str(hover).lstrip("/")).stat().st_size > 2048
+    ):
+        hover = images[1] if len(images) > 1 else image
+
+    title_en = (row.get("officialNameEn") or row.get("title") or code).strip()
+    name_ko = t(title_en)
+    color_en = (row.get("color") or "").strip()
+    color_ko = t(color_en) if color_en else ""
+    editorial = (row.get("description") or "").strip()
+    editorial_ko = t(editorial) if editorial else ""
+    details = [x for x in (row.get("details") or []) if str(x).strip()]
+    details_ko = [t(x) for x in details]
+    materials = [x for x in (row.get("materialsCare") or []) if str(x).strip()]
+    materials_ko = [t(x) for x in materials]
+    if row.get("material") and not materials_ko:
+        materials_ko = [t(row["material"])]
+
+    desc_bits = []
+    if editorial_ko:
+        desc_bits.append(editorial_ko)
+    if details_ko:
+        desc_bits.append(" · ".join(details_ko[:10]))
+    description_ko = "\n\n".join(desc_bits).strip()
+
+    story: list[dict] = []
+    if editorial_ko:
+        story.append({"titleKo": name_ko, "bodyKo": editorial_ko, "image": image})
+    if details_ko:
+        story.append(
+            {
+                "titleKo": "디테일",
+                "bodyKo": " · ".join(details_ko),
+                "image": images[1] if len(images) > 1 else image,
+                "reverse": True,
+            }
+        )
+    if materials_ko:
+        story.append(
+            {
+                "titleKo": "소재 & 케어",
+                "bodyKo": " · ".join(materials_ko),
+                "image": images[2] if len(images) > 2 else image,
+            }
+        )
+    for i, img in enumerate(images[1:], start=1):
+        if len(story) >= 8:
+            break
+        story.append(
+            {
+                "titleKo": "갤러리",
+                "bodyKo": f"{name_ko}의 디테일.",
+                "image": img,
+                "layout": "wide",
+                "reverse": i % 2 == 0,
+            }
+        )
+
+    pid = f"pr-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    color_key = slugify(color_en or color_ko or "default")
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    for sz in size_rows:
+        label = str(sz.get("size") or "").strip()
+        if not label:
+            continue
+        slug = slugify(label)
+        sz_in_stock = bool(sz.get("inStock", False))
+        variants.append(
+            {
+                "id": f"{pid}-{slug}",
+                "name": f"{title_en} — {label}",
+                "nameKo": f"{name_ko} — {label}",
+                "sku": f"{code}-{label}",
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": sz_in_stock,
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": label,
+                "prCollections": cols,
+            }
+        )
+    in_stock = any(v["inStock"] for v in variants) if variants else bool(
+        row.get("inStock", True)
+    )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{title_en} — One Size",
+                "nameKo": f"{name_ko} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": "One Size",
+                "prCollections": cols,
+            }
+        ]
+
+    tags = ["prada", "프라다", "shoes", "슈즈", "여성", *cols]
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "프라다",
+        "price": price,
+        "category": "shoes",
+        "subcategory": leaf,
+        "prCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "hoverImage": hover,
+        "accent": accent_for(code),
+        "badge": None,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "signature",
+    }
+    chart = size_chart_for_shoes(variants)
+    if chart:
+        prod["sizeChart"] = chart
+    return prod
+
+
 def main() -> None:
     rows: list[dict] = []
     if RAW_BAGS.exists():
@@ -599,10 +799,16 @@ def main() -> None:
             r = dict(r)
             r["_kind"] = "rtw"
             rows.append(r)
+    if RAW_SHOES.exists():
+        shoes = json.loads(RAW_SHOES.read_text()).get("products") or []
+        for r in shoes:
+            r = dict(r)
+            r["_kind"] = "shoes"
+            rows.append(r)
     if not rows:
         raise SystemExit(
-            "Missing Prada raw catalogues — run scrape-pr-handbags.py "
-            "and/or scrape-pr-womens-rtw.py first"
+            "Missing Prada raw catalogues — run scrape-pr-handbags.py, "
+            "scrape-pr-womens-rtw.py, and/or scrape-pr-womens-shoes.py first"
         )
 
     prev_by_sku: dict[str, dict] = {}
@@ -625,6 +831,8 @@ def main() -> None:
         kind = row.get("_kind") or row.get("kind") or "handbag"
         if kind in {"womens-rtw", "rtw"}:
             prod = build_rtw_product(row, prev_by_sku.get(sku), now_iso)
+        elif kind in {"womens-shoes", "shoes"}:
+            prod = build_shoes_product(row, prev_by_sku.get(sku), now_iso)
         else:
             prod = build_handbag_product(row, prev_by_sku.get(sku), now_iso)
         if not prod:
@@ -644,15 +852,20 @@ def main() -> None:
     OUT_TS.write_text(
         'import type { Product } from "@/data/products";\n'
         'import data from "./pr-catalog.json";\n\n'
-        "/** Auto-generated — Prada women's handbags + ready-to-wear (GB). */\n"
+        "/** Auto-generated — Prada women's handbags + RTW + shoes (GB). */\n"
         "export const prCatalogProducts = data as unknown as Product[];\n"
     )
     CACHE_PATH.write_text(json.dumps(_KO, ensure_ascii=False, indent=2))
     print(f"Wrote {len(products)} products → {OUT_JSON}", flush=True)
     bags_n = sum(1 for p in products if p.get("category") == "bags")
     lux_n = sum(1 for p in products if p.get("category") == "luxury")
-    print(f"  bags={bags_n} luxury/rtw={lux_n}", flush=True)
+    shoes_n = sum(1 for p in products if p.get("category") == "shoes")
+    print(f"  bags={bags_n} luxury/rtw={lux_n} shoes={shoes_n}", flush=True)
     for leaf in RTW_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in SHOES_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)

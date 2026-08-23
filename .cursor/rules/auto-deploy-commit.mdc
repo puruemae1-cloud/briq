@@ -1,0 +1,14 @@
+---
+description: After catalog/scrape work, always commit and push to main without asking
+alwaysApply: true
+---
+
+# Auto deploy commit
+
+When catalog, scrape, nav, image-tag, or similar product-data work finishes successfully:
+
+1. **Commit** all related changes on `main` (message focused on why).
+2. **Push** to `origin/main` immediately — do not wait for the user to say "응" or "배포".
+3. Also push `product-images` (or other CDN tags) when image scripts ran.
+
+Do this automatically every time unless the user explicitly says not to push, or the change is clearly WIP/local-only.
