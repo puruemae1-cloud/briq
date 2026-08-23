@@ -478,6 +478,13 @@ export type SubcategoryId =
   | "pr-women-sandals-mules"
   | "pr-women-new-formal"
   | "pr-women-chocolate"
+  | "prada-accessories"
+  | "pr-women-slg"
+  | "pr-women-card-holders"
+  | "pr-women-small-wallets"
+  | "pr-women-large-wallets"
+  | "pr-women-wallets-on-chain"
+  | "pr-women-high-tech-accessories"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -910,6 +917,15 @@ export const PR_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
   "pr-women-sandals-mules",
   "pr-women-new-formal",
   "pr-women-chocolate",
+];
+
+/** Prada women's small leather goods leaves (official GB SLG PLPs). */
+export const PR_WOMEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "pr-women-card-holders",
+  "pr-women-small-wallets",
+  "pr-women-large-wallets",
+  "pr-women-wallets-on-chain",
+  "pr-women-high-tech-accessories",
 ];
 
 /** Gucci men's bags leaf collections (official UK men bags PLPs). */
@@ -1800,6 +1816,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "prada-shoes",
     "pr-women-shoes",
     ...PR_WOMEN_SHOE_LEAF_IDS,
+    "prada-accessories",
+    "pr-women-slg",
+    ...PR_WOMEN_SLG_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -1837,6 +1856,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-sandals-mules": ["pr-women-sandals-mules"],
   "pr-women-new-formal": ["pr-women-new-formal"],
   "pr-women-chocolate": ["pr-women-chocolate"],
+  "prada-accessories": [
+    "prada-accessories",
+    "pr-women-slg",
+    ...PR_WOMEN_SLG_LEAF_IDS,
+  ],
+  "pr-women-slg": ["pr-women-slg", ...PR_WOMEN_SLG_LEAF_IDS],
+  "pr-women-card-holders": ["pr-women-card-holders"],
+  "pr-women-small-wallets": ["pr-women-small-wallets"],
+  "pr-women-large-wallets": ["pr-women-large-wallets"],
+  "pr-women-wallets-on-chain": ["pr-women-wallets-on-chain"],
+  "pr-women-high-tech-accessories": ["pr-women-high-tech-accessories"],
   "chanel-bags": [
     "chanel-bags",
     "ch-handbags",
@@ -4736,6 +4766,46 @@ export const navCategories: NavCategory[] = [
             labelKo: "서머 악세서리",
             href: "/shop?category=accessories&sub=ch-women-summer-accessories",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "prada-accessories",
+        labelKo: "프라다",
+        href: "/shop?category=accessories&sub=prada-accessories",
+        children: [
+          {
+            id: "pr-women-slg",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=pr-women-slg",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-women-card-holders",
+                labelKo: "카드홀더",
+                href: "/shop?category=accessories&sub=pr-women-card-holders",
+              },
+              {
+                id: "pr-women-small-wallets",
+                labelKo: "스몰 월렛",
+                href: "/shop?category=accessories&sub=pr-women-small-wallets",
+              },
+              {
+                id: "pr-women-large-wallets",
+                labelKo: "라지 월렛",
+                href: "/shop?category=accessories&sub=pr-women-large-wallets",
+              },
+              {
+                id: "pr-women-wallets-on-chain",
+                labelKo: "월렛 온 체인",
+                href: "/shop?category=accessories&sub=pr-women-wallets-on-chain",
+              },
+              {
+                id: "pr-women-high-tech-accessories",
+                labelKo: "하이테크 액세서리",
+                href: "/shop?category=accessories&sub=pr-women-high-tech-accessories",
+              },
+            ],
           },
         ],
       },
