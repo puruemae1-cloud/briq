@@ -28,6 +28,10 @@ from pr_shoe_ko import seed_shoe_cache, shoe_text_ko  # noqa: E402
 from pr_slg_ko import seed_slg_cache, slg_text_ko  # noqa: E402
 from pr_travel_ko import seed_travel_cache, travel_text_ko  # noqa: E402
 from pr_accessories_ko import seed_accessories_cache, accessories_text_ko  # noqa: E402
+from pr_common_ko import apply_phrases as common_phrases  # noqa: E402
+
+# Reject cached / returned copy above this Latin-letter ratio (hybrid EN/KO guard).
+_MAX_KO_EN_RATIO = 0.30
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
@@ -274,7 +278,37 @@ if CACHE_PATH.exists():
 
 
 def en_ratio(s: str) -> float:
-    letters = [c for c in s if c.isalpha()]
+    """Latin-letter ratio; whitelisted brand/tech tokens are ignored."""
+    cleaned = s or ""
+    for tok in (
+        "Re-Nylon",
+        "Re-Edition",
+        "Linea Rossa",
+        "Prada",
+        "Symbole",
+        "Shadowplay",
+        "Oakley",
+        "Prizm",
+        "Switchlock",
+        "Eyewear Collection",
+        "Runway",
+        "Single Layer",
+        "UVA",
+        "UVB",
+        "TSA",
+        "EVA",
+        "TPU",
+        "mm",
+        "cm",
+        "GB",
+        "L",
+        "M",
+        "S",
+        "OS",
+        "TU",
+    ):
+        cleaned = re.sub(re.escape(tok), "", cleaned, flags=re.I)
+    letters = [c for c in cleaned if c.isalpha()]
     if not letters:
         return 0.0
     latin = sum(1 for c in letters if ("A" <= c <= "Z") or ("a" <= c <= "z"))
@@ -351,7 +385,7 @@ def pretranslate_unique(strings: list[str]) -> None:
         if not s or s in seen:
             continue
         seen.add(s)
-        if s in _KO and en_ratio(_KO[s]) < 0.40:
+        if s in _KO and en_ratio(_KO[s]) < _MAX_KO_EN_RATIO:
             continue
         if s in _GLOSSARY or en_ratio(s) < 0.35:
             continue
@@ -359,9 +393,9 @@ def pretranslate_unique(strings: list[str]) -> None:
     print(f"pretranslate {len(uniq)} unique strings…", flush=True)
     for i, s in enumerate(uniq, start=1):
         try:
-            ko = gtx(s).strip()
-            if ko and en_ratio(ko) < 0.70:
-                _KO[s] = apply_glossary(ko)
+            ko = t(s)
+            if ko and en_ratio(ko) < _MAX_KO_EN_RATIO:
+                _KO[s] = ko
         except Exception as e:
             print(f"  skip {i}: {e}", flush=True)
         if i % 20 == 0:
@@ -386,6 +420,86 @@ _FORCE_TRANSLATE = False
 _OFFLINE_TRANSLATE = False
 
 
+def _phrase_fallback(s: str) -> str:
+    from pr_shoe_ko import apply_phrases as shoe_phrases
+    from pr_slg_ko import apply_phrases as slg_phrases
+    from pr_travel_ko import apply_phrases as travel_phrases
+    from pr_accessories_ko import apply_phrases as acc_phrases
+
+    out = common_phrases(
+        slg_phrases(shoe_phrases(travel_phrases(acc_phrases(s))))
+    )
+    return apply_glossary(out)
+
+
+def _collect_row_strings(rows: list[dict]) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for row in rows:
+        for key in ("officialNameEn", "title", "color", "material", "description"):
+            val = row.get(key)
+            if val and str(val).strip():
+                s = re.sub(r"\s+", " ", str(val).strip())
+                if s not in seen:
+                    seen.add(s)
+                    out.append(s)
+        for key in ("details", "materialsCare"):
+            for item in row.get(key) or []:
+                s = re.sub(r"\s+", " ", str(item).strip())
+                if s and s not in seen:
+                    seen.add(s)
+                    out.append(s)
+    return out
+
+
+def purge_weak_cache(threshold: float = _MAX_KO_EN_RATIO) -> int:
+    dropped = 0
+    for k in list(_KO.keys()):
+        if en_ratio(str(_KO[k])) >= threshold:
+            _KO.pop(k, None)
+            dropped += 1
+    return dropped
+
+
+def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
+    """Fail the build if Prada PDP body copy still looks like hybrid EN/KO."""
+    bad: list[tuple[str, str, float]] = []
+    for p in products:
+        if p.get("brand") != "프라다":
+            continue
+        cols = p.get("prCollections") or []
+        tags = p.get("tags") or []
+        if scope == "travel" and "pr-women-travel" not in cols:
+            continue
+        if scope == "acc" and "acc" not in tags:
+            continue
+        if scope == "slg" and "slg" not in tags:
+            continue
+        if scope == "shoes" and p.get("category") != "shoes":
+            continue
+        if scope == "bags" and p.get("category") != "bags":
+            continue
+        if scope == "rtw" and p.get("category") != "luxury":
+            continue
+        pid = str(p.get("id") or "")
+        val = str(p.get("descriptionKo") or "").strip()
+        if val and en_ratio(val) > _MAX_KO_EN_RATIO:
+            bad.append((pid, "descriptionKo", en_ratio(val)))
+        for i, sec in enumerate(p.get("storySections") or []):
+            body = str(sec.get("bodyKo") or "").strip()
+            if body and en_ratio(body) > _MAX_KO_EN_RATIO:
+                bad.append((pid, f"story[{i}].bodyKo", en_ratio(body)))
+    if bad:
+        bad.sort(key=lambda x: -x[2])
+        print("Prada Korean QA failed — hybrid English detected:", flush=True)
+        for pid, field, ratio in bad[:12]:
+            print(f"  {pid} {field} en_ratio={ratio:.2f}", flush=True)
+        raise SystemExit(
+            f"Prada Korean QA failed ({len(bad)} fields). "
+            "Add curated copy or fix translate pipeline."
+        )
+
+
 def t(text: str | None) -> str:
     s = re.sub(r"\s+", " ", (text or "").strip())
     if not s:
@@ -408,8 +522,8 @@ def t(text: str | None) -> str:
     if curated is not None:
         _KO[s] = curated
         return curated
-    # Always reuse in-run / good cache hits (force only clears weak entries first).
-    if s in _KO and en_ratio(_KO[s]) < 0.40:
+    # Reuse good cache hits only (never keep hybrid EN/KO).
+    if s in _KO and en_ratio(_KO[s]) < _MAX_KO_EN_RATIO:
         return apply_glossary(_KO[s])
     # short glossary hit (exact title phrase)
     if s in _GLOSSARY:
@@ -417,23 +531,23 @@ def t(text: str | None) -> str:
     if en_ratio(s) < 0.35 or len(s) < 3:
         return apply_glossary(s)
     if not _OFFLINE_TRANSLATE:
-        for attempt in range(2):
+        for attempt in range(5):
             try:
                 ko = gtx(s).strip()
-                if ko and en_ratio(ko) < 0.55:
+                if ko and en_ratio(ko) < 0.45:
                     ko = apply_glossary(ko)
-                    _KO[s] = ko
-                    time.sleep(0.05)
-                    return ko
-                time.sleep(0.1 * (attempt + 1))
+                    if en_ratio(ko) < _MAX_KO_EN_RATIO:
+                        _KO[s] = ko
+                        time.sleep(0.05)
+                        return ko
+                time.sleep(0.15 * (attempt + 1))
             except Exception:
-                time.sleep(0.1 * (attempt + 1))
-    # Offline fallback for remaining English (esp. long descriptions)
-    from pr_shoe_ko import apply_phrases as shoe_phrases
-    from pr_slg_ko import apply_phrases as slg_phrases
-
-    ko = apply_glossary(slg_phrases(shoe_phrases(s)))
-    _KO[s] = ko
+                time.sleep(0.2 * (attempt + 1))
+    ko = _phrase_fallback(s)
+    if en_ratio(ko) < _MAX_KO_EN_RATIO:
+        _KO[s] = ko
+        return ko
+    print(f"WARN untranslated ({en_ratio(ko):.2f}): {s[:96]}…", flush=True)
     return ko
 
 
@@ -573,7 +687,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
         story.append(
             {
                 "titleKo": "갤러리",
-                "bodyKo": f"{name_ko}의 디테일.",
+                "bodyKo": "제품 디테일.",
                 "image": img,
                 "layout": "wide",
                 "reverse": i % 2 == 0,
@@ -737,7 +851,7 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         story.append(
             {
                 "titleKo": "갤러리",
-                "bodyKo": f"{name_ko}의 디테일.",
+                "bodyKo": "제품 디테일.",
                 "image": img,
                 "layout": "wide",
                 "reverse": i % 2 == 0,
@@ -919,7 +1033,7 @@ def build_shoes_product(row: dict, prev: dict | None, now_iso: str) -> dict | No
         story.append(
             {
                 "titleKo": "갤러리",
-                "bodyKo": f"{name_ko}의 디테일.",
+                "bodyKo": "제품 디테일.",
                 "image": img,
                 "layout": "wide",
                 "reverse": i % 2 == 0,
@@ -1197,7 +1311,7 @@ def build_slg_products(rows: list[dict], prev_by_sku: dict[str, dict], now_iso: 
             story.append(
                 {
                     "titleKo": "갤러리",
-                    "bodyKo": f"{name_ko}의 디테일.",
+                    "bodyKo": "제품 디테일.",
                     "image": img,
                     "layout": "wide",
                     "reverse": i % 2 == 0,
@@ -1412,7 +1526,7 @@ def build_travel_products(rows: list[dict], prev_by_sku: dict[str, dict], now_is
             story.append(
                 {
                     "titleKo": "갤러리",
-                    "bodyKo": f"{name_ko}의 디테일.",
+                    "bodyKo": "제품 디테일.",
                     "image": img,
                     "layout": "wide",
                     "reverse": i % 2 == 0,
@@ -1626,7 +1740,7 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             story.append(
                 {
                     "titleKo": "갤러리",
-                    "bodyKo": f"{name_ko}의 디테일.",
+                    "bodyKo": "제품 디테일.",
                     "image": img,
                     "layout": "wide",
                     "reverse": i % 2 == 0,
@@ -1698,17 +1812,20 @@ def main() -> None:
         help="Do not call external translate APIs (curated + phrase maps only)",
     )
     args = ap.parse_args()
+    only = args.only
 
     global _FORCE_TRANSLATE, _OFFLINE_TRANSLATE, _KO
     if args.force_translate:
         _FORCE_TRANSLATE = True
-        print("force-translate: refreshing shoe Korean copy", flush=True)
-    if args.offline or args.force_translate:
-        # Shoes force-refresh uses curated offline maps (API often 429s).
+        print("force-translate: refreshing curated Korean copy", flush=True)
+    if args.offline:
         _OFFLINE_TRANSLATE = True
         print("offline translate mode", flush=True)
+    elif args.force_translate and only == "shoes":
+        # Shoes use curated offline maps (API often 429s).
+        _OFFLINE_TRANSLATE = True
+        print("offline translate mode (shoes)", flush=True)
 
-    only = args.only
     rows: list[dict] = []
     if only in {"all", "bags"} and RAW_BAGS.exists():
         bags = json.loads(RAW_BAGS.read_text()).get("products") or []
@@ -1787,14 +1904,20 @@ def main() -> None:
         n_seed = seed_shoe_cache(_KO)
         print(f"seeded {n_seed} curated shoe strings", flush=True)
     if args.force_translate and only == "slg":
-        dropped = 0
-        for k in list(_KO.keys()):
-            if en_ratio(str(_KO[k])) >= 0.35:
-                _KO.pop(k, None)
-                dropped += 1
+        dropped = purge_weak_cache()
         print(f"cleared {dropped} weak cache entries for SLG retranslate", flush=True)
         n_seed = seed_slg_cache(_KO)
         print(f"re-seeded {n_seed} curated SLG strings", flush=True)
+    if args.force_translate and only in {"travel", "bags"}:
+        dropped = purge_weak_cache()
+        print(f"cleared {dropped} weak cache entries for travel retranslate", flush=True)
+        n_seed = seed_travel_cache(_KO)
+        print(f"re-seeded {n_seed} curated travel strings", flush=True)
+    if args.force_translate and only == "acc":
+        dropped = purge_weak_cache()
+        print(f"cleared {dropped} weak cache entries for accessories retranslate", flush=True)
+        n_seed = seed_accessories_cache(_KO)
+        print(f"re-seeded {n_seed} curated accessories strings", flush=True)
 
     now_iso = (
         datetime.now(timezone.utc)
@@ -1841,6 +1964,8 @@ def main() -> None:
         print(f"  SLG products={sum(1 for p in products if p.get('category')=='accessories' and 'slg' in (p.get('tags') or []))}", flush=True)
 
     if travel_rows:
+        if not _OFFLINE_TRANSLATE:
+            pretranslate_unique(_collect_row_strings(travel_rows))
         print(f"building travel color groups from {len(travel_rows)} SKUs…", flush=True)
         for prod in build_travel_products(travel_rows, prev_by_sku, now_iso):
             if prod["id"] in seen:
@@ -1853,6 +1978,8 @@ def main() -> None:
         )
 
     if acc_rows:
+        if not _OFFLINE_TRANSLATE:
+            pretranslate_unique(_collect_row_strings(acc_rows))
         print(f"building accessories color groups from {len(acc_rows)} SKUs…", flush=True)
         for prod in build_accessories_products(acc_rows, prev_by_sku, now_iso):
             if prod["id"] in seen:
@@ -1916,6 +2043,7 @@ def main() -> None:
             products = merged + products
 
     products.sort(key=lambda p: p["id"])
+    validate_prada_korean(products, scope=only)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
     OUT_TS.write_text(
