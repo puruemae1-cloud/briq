@@ -52,7 +52,13 @@ def sync_banners(tmp: Path, src: Path) -> bool:
     dest = tmp / "public" / "banners"
     if dest.exists():
         shutil.rmtree(dest)
-    shutil.copytree(src, dest)
+    def _ignore(dirpath: str, names: list[str]) -> set[str]:
+        # Source download cache — not needed on CDN
+        if Path(dirpath).name == "banners" and "_cache" in names:
+            return {"_cache"}
+        return set()
+
+    shutil.copytree(src, dest, ignore=_ignore)
     run(["git", "add", "-f", "public/banners"], cwd=tmp)
     status = subprocess.run(
         ["git", "status", "--porcelain", "--", "public/banners"],
