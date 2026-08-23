@@ -69,5 +69,8 @@ src/data/pr/pr-womens-rtw-pdp-cache.json
 /public/products/cw-twelve-picnmix/
 /public/products/lu-pdp/
 
+# London B&W banner source cache (downloaded during weekly refresh)
+/public/banners/_cache/
+
 *.ts.bak
 *.bak

@@ -21,7 +21,7 @@ REPO = "puruemae1-cloud/briq"
 API = f"https://api.github.com/repos/{REPO}/actions/workflows"
 
 MONDAY = [
-    ("weekly-banner-refresh.yml", "배너 리프레시", "월 06:00 UTC / 15:00 KST"),
+    ("weekly-banner-refresh.yml", "배너 리프레시 (런던 B&W + 비의류)", "월 06:00 UTC / 15:00 KST"),
     ("weekly-cw-sync.yml", "크리스토퍼 워드", "월 08:00 UTC / 17:00 KST"),
     ("weekly-gg-sync.yml", "갈빈 그린", "월 09:00 UTC / 18:00 KST"),
     ("weekly-bb-sync.yml", "버버리", "월 10:00 UTC / 19:00 KST"),

@@ -1,4 +1,4 @@
-name: Weekly luxury banner refresh
+name: Weekly homepage banner refresh
 
 on:
   schedule:
@@ -34,6 +34,7 @@ jobs:
 
       - name: Refresh homepage + category banners
         run: python3 scripts/weekly-banner-refresh.py
+        # Hero = B&W London panoramas; Now in London = watches/shoes/acc/bags B&W
 
       - name: Push banners to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs banners --skip-whiten
@@ -48,7 +49,7 @@ jobs:
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
-            "chore: weekly luxury model banner refresh" \
+            "chore: weekly banner refresh (London B&W hero + non-apparel edit)" \
             public/banners \
             src/data/banner-refresh-manifest.json \
             scripts/weekly-banner-refresh.py \

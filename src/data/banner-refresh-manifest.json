@@ -1,6 +1,6 @@
 {
-  "refreshedAt": "2026-08-21T11:57:17.130999+00:00",
-  "weekSeed": 92101,
+  "refreshedAt": "2026-08-23T11:50:36.469582+00:00",
+  "weekSeed": 20260824,
   "slots": {
     "rot-acc-1.jpg": {
       "sourceProductId": "ps-black-pre-tied-silk-bow-tie",
@@ -131,28 +131,31 @@
       "sourceAspect": 0.75
     },
     "rot-event-1.jpg": {
-      "sourceProductId": "ps-men-s-black-signature-logo-t-shirt",
-      "sourceImage": "/products/ps-pdp/men-s-black-signature-logo-t-shirt/2.jpg",
-      "focal": "50% 36%",
+      "sourceProductId": "gc-a003wdi46010926",
+      "sourceImage": "/products/gc-pdp/A003WDI46010926/1.jpg",
+      "focal": "37% 50%",
       "shop": false,
       "kind": "look",
-      "sourceAspect": 0.714
+      "sourceAspect": 1.0,
+      "tone": "bw-non-apparel"
     },
     "rot-event-2.jpg": {
-      "sourceProductId": "bb-icon-stripe-trim-wool-sweater",
-      "sourceImage": "/products/bb-pdp/81286611/1.jpg",
-      "focal": "49% 22%",
+      "sourceProductId": "bb-leather-soft-saddle-low-boots",
+      "sourceImage": "/products/bb-pdp/81117371/1.jpg",
+      "focal": "40% 55%",
       "shop": false,
       "kind": "look",
-      "sourceAspect": 0.75
+      "sourceAspect": 0.75,
+      "tone": "bw-non-apparel"
     },
     "rot-event-3.jpg": {
-      "sourceProductId": "ps-light-blue-signature-logo-lounge-t-shirt",
-      "sourceImage": "/products/ps-pdp/light-blue-signature-logo-lounge-t-shirt/2.jpg",
-      "focal": "50% 40%",
+      "sourceProductId": "bs-phoenix-patch-cap-black-4",
+      "sourceImage": "/products/bs-pdp/phoenix-patch-cap-black-4/1.jpg",
+      "focal": "43% 55%",
       "shop": false,
       "kind": "look",
-      "sourceAspect": 0.714
+      "sourceAspect": 0.8,
+      "tone": "bw-non-apparel"
     },
     "rot-golf-1.jpg": {
       "sourceProductId": "gg-lissy",
@@ -179,36 +182,40 @@
       "sourceAspect": 1.0
     },
     "rot-hero-1.jpg": {
-      "sourceProductId": "bb-check-cotton-overshirt",
-      "sourceImage": "/products/bb-pdp/81307891/1.jpg",
-      "focal": "51% 49%",
+      "sourceProductId": "london-tower-bridge",
+      "sourceImage": "london-bw:london-tower-bridge",
+      "focal": "47% 50%",
       "shop": false,
       "kind": "hero",
-      "sourceAspect": 0.75
+      "tone": "bw-london",
+      "sourceAspect": 2.0
     },
     "rot-hero-2.jpg": {
-      "sourceProductId": "bb-relaxed-fit-knot-check-cotton-shirt",
-      "sourceImage": "/products/bb-pdp/81277351/2.jpg",
-      "focal": "50% 50%",
+      "sourceProductId": "london-big-ben-river",
+      "sourceImage": "london-bw:london-big-ben-river",
+      "focal": "50% 51%",
       "shop": false,
       "kind": "hero",
-      "sourceAspect": 0.75
+      "tone": "bw-london",
+      "sourceAspect": 1.505
     },
     "rot-hero-3.jpg": {
-      "sourceProductId": "ps-navy-textured-cotton-buggy-lined-blazer",
-      "sourceImage": "/products/ps-pdp/navy-textured-cotton-buggy-lined-blazer/2.jpg",
-      "focal": "50% 49%",
+      "sourceProductId": "london-thames-dusk",
+      "sourceImage": "london-bw:london-thames-dusk",
+      "focal": "50% 48%",
       "shop": false,
       "kind": "hero",
-      "sourceAspect": 0.714
+      "tone": "bw-london",
+      "sourceAspect": 1.501
     },
     "rot-hero-4.jpg": {
-      "sourceProductId": "ps-slim-fit-light-blue-signature-stripe-cotton-shirt",
-      "sourceImage": "/products/ps-pdp/slim-fit-light-blue-signature-stripe-cotton-shirt/2.jpg",
-      "focal": "40% 52%",
+      "sourceProductId": "london-westminster-dome",
+      "sourceImage": "london-bw:london-westminster-dome",
+      "focal": "48% 54%",
       "shop": false,
       "kind": "hero",
-      "sourceAspect": 0.714
+      "tone": "bw-london",
+      "sourceAspect": 1.5
     },
     "rot-luxury-1.jpg": {
       "sourceProductId": "bb-cashmere-pea-coat",

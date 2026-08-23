@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Weekly refresh of Briq homepage / category banners with luxury product photos.
+"""Weekly refresh of Briq homepage / category banners.
 
-Sources official product galleries already on the `product-images` CDN
-(Gucci / Burberry / Chanel / Arc'teryx …).
+- Homepage hero (rot-hero-*): black-and-white London panoramas
+  (Parliament / Big Ben / Thames / bridges) — never apparel or accessories.
+- "Now in London" (rot-event-*): watches / shoes / accessories / bags only,
+  converted to black-and-white to match the hero tone — never clothing or sports.
+- Other rails: official product galleries on the `product-images` CDN.
 
-PC homepage frames are panoramic (hero ~4:1, look-banners ~3:1). Selection
-prefers wide outfit / product stills and rejects face-only headshots and
-empty grey product crops that used to dominate the desktop strip.
+PC frames are panoramic (hero ~4:1, look-banners ~3:1) with desktop / tablet /
+mobile crops via banner_smart_crop.
 
   python3 scripts/weekly-banner-refresh.py
-  python3 scripts/weekly-banner-refresh.py --only rot-luxury --seed 42
+  python3 scripts/weekly-banner-refresh.py --only rot-hero,rot-event --seed 42
 """
 from __future__ import annotations
 
@@ -50,13 +52,15 @@ UA = (
 
 # Slot filename → theme buckets used to pick catalog on-model frames.
 SLOT_THEMES: dict[str, list[str]] = {
-    "rot-hero-1.jpg": ["luxury", "fashion"],
-    "rot-hero-2.jpg": ["luxury", "fashion"],
-    "rot-hero-3.jpg": ["luxury", "fashion"],
-    "rot-hero-4.jpg": ["luxury", "fashion"],
-    "rot-event-1.jpg": ["luxury", "fashion"],
-    "rot-event-2.jpg": ["luxury", "fashion"],
-    "rot-event-3.jpg": ["luxury", "fashion"],
+    # London B&W panoramas (external curated pool — see LONDON_BW_SOURCES)
+    "rot-hero-1.jpg": ["london-bw"],
+    "rot-hero-2.jpg": ["london-bw"],
+    "rot-hero-3.jpg": ["london-bw"],
+    "rot-hero-4.jpg": ["london-bw"],
+    # Non-apparel edit — watches / shoes / accessories / bags (forced B&W)
+    "rot-event-1.jpg": ["watches", "shoes", "accessories", "bags"],
+    "rot-event-2.jpg": ["watches", "shoes", "accessories", "bags"],
+    "rot-event-3.jpg": ["watches", "shoes", "accessories", "bags"],
     "rot-luxury-1.jpg": ["luxury"],
     "rot-luxury-2.jpg": ["luxury"],
     "rot-luxury-3.jpg": ["luxury"],
@@ -142,22 +146,51 @@ SHOP_SLOTS = {
     n for n in SLOT_THEMES if n.startswith("shop-") or n.startswith("brand-")
 }
 
-# Homepage look/hero strips for apparel — never crop shoe/bag close-ups into these.
+# Homepage apparel rails — never crop shoe/bag close-ups into these.
 CLOTHING_SLOTS = {
     n
     for n in SLOT_THEMES
-    if n.startswith("rot-hero-")
-    or n.startswith("rot-event-")
-    or n.startswith("rot-luxury-")
-    or n.startswith("rot-cloth-")
+    if n.startswith("rot-luxury-") or n.startswith("rot-cloth-")
 }
 
-# Main homepage hero + "Now in London" — luxury fashion logo close-ups only.
-MAIN_BANNER_SLOTS = {
-    n
-    for n in SLOT_THEMES
-    if n.startswith("rot-hero-") or n.startswith("rot-event-")
-}
+# Hero: B&W London skyline panoramas (not product photography).
+HERO_LONDON_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-hero-")}
+
+# "Now in London": watches / shoes / accessories / bags in matching B&W.
+EVENT_EDIT_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-event-")}
+
+# Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
+# Mood reference: Andrew Prokos Parliament & Big Ben skyline (style only; not copied).
+LONDON_BW_SOURCES: list[dict[str, str]] = [
+    {
+        "id": "london-parliament-thames",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Big_Ben_and_houses_of_parliament_London.jpg",
+    },
+    {
+        "id": "london-westminster-dome",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg?width=2560",
+    },
+    {
+        "id": "london-tower-bridge",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_Bridge_from_Shad_Thames.jpg?width=2560",
+    },
+    {
+        "id": "london-westminster-bridge",
+        "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=2800&q=85",
+    },
+    {
+        "id": "london-thames-dusk",
+        "url": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=2800&q=85",
+    },
+    {
+        "id": "london-big-ben-river",
+        "url": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=2800&q=85",
+    },
+    {
+        "id": "london-eye-thames",
+        "url": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=2800&q=85",
+    },
+]
 
 # Sports imagery stays on sports / outdoor rails and brand chips only.
 SPORTS_SLOTS = {
@@ -705,6 +738,75 @@ def fetch_image(rel: str) -> Image.Image | None:
     return None
 
 
+def to_black_and_white(im: Image.Image) -> Image.Image:
+    """Match Briq hero tone: rich B&W with slight contrast lift."""
+    from PIL import ImageEnhance, ImageOps
+
+    bw = ImageOps.grayscale(im.convert("RGB")).convert("RGB")
+    bw = ImageEnhance.Contrast(bw).enhance(1.12)
+    bw = ImageEnhance.Brightness(bw).enhance(0.96)
+    return bw
+
+
+def fetch_london_source(entry: dict[str, str]) -> Image.Image | None:
+    url = entry.get("url") or ""
+    if not url:
+        return None
+    cache_dir = ROOT / "public" / "banners" / "_cache" / "london-bw"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    safe = re.sub(r"[^A-Za-z0-9._-]+", "-", entry.get("id") or "london")[:80]
+    cache_path = cache_dir / f"{safe}.jpg"
+    if cache_path.is_file() and cache_path.stat().st_size > 20_000:
+        try:
+            return to_black_and_white(Image.open(cache_path).convert("RGB"))
+        except Exception:
+            pass
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            data = resp.read()
+        if len(data) < 5000:
+            return None
+        cache_path.write_bytes(data)
+        return to_black_and_white(Image.open(cache_path).convert("RGB"))
+    except Exception as e:
+        print(f"  london fetch fail {entry.get('id')}: {e}", flush=True)
+        return None
+
+
+def pick_london_for_slot(
+    slot: str, seed: int, used: set[str]
+) -> tuple[str, str, Image.Image] | None:
+    digest = hashlib.sha1(f"{seed}:{slot}:london".encode()).hexdigest()
+    slot_rng = random.Random(digest)
+    order = list(LONDON_BW_SOURCES)
+    slot_rng.shuffle(order)
+    # Prefer wide panoramas for the PC hero strip (aspect ≥ ~1.4)
+    scored: list[tuple[float, dict[str, str], Image.Image]] = []
+    for entry in order:
+        sid = entry["id"]
+        if sid in used:
+            continue
+        im = fetch_london_source(entry)
+        if im is None:
+            continue
+        ar = aspect_ratio(im)
+        scored.append((ar, entry, im))
+    scored.sort(key=lambda x: (-x[0], x[1]["id"]))
+    for ar, entry, im in scored:
+        if ar < 1.2 and any(a >= 1.2 for a, _, _ in scored):
+            continue
+        return entry["id"], f"london-bw:{entry['id']}", im
+    if scored:
+        entry, im = scored[0][1], scored[0][2]
+        return entry["id"], f"london-bw:{entry['id']}", im
+    for entry in order:
+        im = fetch_london_source(entry)
+        if im is not None:
+            return entry["id"], f"london-bw:{entry['id']}", im
+    return None
+
+
 def pick_for_slot(
     slot: str,
     themes: list[str],
@@ -715,6 +817,8 @@ def pick_for_slot(
     clothing_ids: set[str] | None = None,
     sports_ids: set[str] | None = None,
 ) -> list[tuple[str, str]]:
+    if slot in HERO_LONDON_SLOTS:
+        return []  # handled separately via pick_london_for_slot
     options: list[tuple[str, str]] = []
     for t in themes:
         options.extend(pool.get(t) or [])
@@ -722,21 +826,26 @@ def pick_for_slot(
     # Sports products only feed sports / outdoor / golf brand slots.
     if sports_ids and slot not in SPORTS_SLOTS:
         options = [o for o in options if o[0] not in sports_ids]
-    if slot in MAIN_BANNER_SLOTS:
-        options = [o for o in options if is_luxury_fashion_id(o[0])]
+    # Event edit: never clothing
+    if slot in EVENT_EDIT_SLOTS and clothing_ids:
+        options = [o for o in options if o[0] not in clothing_ids]
     if slot in CLOTHING_SLOTS and clothing_ids:
         clothed = [o for o in options if o[0] in clothing_ids]
         options = clothed
     brand_only = any(t.startswith("brand:") for t in themes)
     if not options and not brand_only:
-        # fallback luxury/fashion only — never outdoor/sports on fashion rails
-        for t in ("luxury", "fashion"):
-            options.extend(pool.get(t) or [])
+        # fallback — event stays non-apparel; others use luxury/fashion
+        if slot in EVENT_EDIT_SLOTS:
+            for t in ("watches", "shoes", "accessories", "bags"):
+                options.extend(pool.get(t) or [])
+        else:
+            for t in ("luxury", "fashion"):
+                options.extend(pool.get(t) or [])
         options = [o for o in options if o[1] not in used]
         if sports_ids and slot not in SPORTS_SLOTS:
             options = [o for o in options if o[0] not in sports_ids]
-        if slot in MAIN_BANNER_SLOTS:
-            options = [o for o in options if is_luxury_fashion_id(o[0])]
+        if slot in EVENT_EDIT_SLOTS and clothing_ids:
+            options = [o for o in options if o[0] not in clothing_ids]
         if slot in CLOTHING_SLOTS and clothing_ids:
             options = [o for o in options if o[0] in clothing_ids]
     if not options:
@@ -745,12 +854,20 @@ def pick_for_slot(
     digest = hashlib.sha1(f"{seed}:{slot}".encode()).hexdigest()
     slot_rng = random.Random(digest)
     slot_rng.shuffle(options)
-    if slot in MAIN_BANNER_SLOTS:
-        # Prefer branded logo / monogram close stills for hero + Now in London.
+    if slot in EVENT_EDIT_SLOTS:
+        # Rotate themes so weekly edit mixes watches / shoes / bags / accessories.
+        theme_order = ["watches", "shoes", "accessories", "bags"]
+        m = re.search(r"(\d+)", slot)
+        slot_i = int(m.group(1)) if m else 1
+        preferred = theme_order[(slot_i - 1 + seed) % len(theme_order)]
+        pref_set = set(pool.get(preferred) or [])
+        pref = [o for o in options if o in pref_set]
+        rest = [o for o in options if o not in pref_set]
+        options = pref + rest
         options.sort(
             key=lambda o: (
-                0 if looks_logo_branded(o[0], o[1]) else 1,
-                0 if re.search(r"/[12]\.jpe?g$", o[1], re.I) else 1,
+                0 if o in pref_set else 1,
+                0 if re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
             )
         )
     elif slot in CLOTHING_SLOTS:
@@ -809,27 +926,6 @@ def clothing_source_ok(source, img: str, *, luxury_only: bool = False) -> tuple[
     return True, "ok"
 
 
-def main_banner_source_ok(source, img: str, pid: str) -> tuple[bool, str]:
-    """Hero + Now in London: luxury clothing close-ups with visible branding."""
-    if not is_luxury_fashion_id(pid):
-        return False, "not-luxury-fashion"
-    if is_face_dominant(source) or has_on_model_face(source):
-        return False, "face"
-    ratio = aspect_ratio(source)
-    if ratio < 0.62:
-        return False, f"too-tall {ratio:.2f}"
-    fill = subject_fill_ratio(source)
-    if fill < 0.20:
-        return False, f"empty {fill:.2f}"
-    # Prefer tighter branded stills (logo / monogram / crest) over distant flats.
-    if fill < 0.32 and not looks_logo_branded(pid, img):
-        return False, "not-close-branded"
-    # Reject wall-to-wall texture with no readable garment silhouette.
-    if fill > 0.92 and not looks_logo_branded(pid, img):
-        return False, "macro-no-logo"
-    return True, "ok"
-
-
 def product_source_ok(source, img: str) -> tuple[bool, str]:
     """Shoes / bags / accessories must read as the full product after PC crop."""
     ratio = aspect_ratio(source)
@@ -849,6 +945,20 @@ def product_source_ok(source, img: str) -> tuple[bool, str]:
         return False, f"empty {fill:.2f}"
     if fill > 0.88:
         return False, f"macro-fill {fill:.2f}"
+    return True, "ok"
+
+
+def event_edit_source_ok(source, img: str, pid: str, clothing_ids: set[str]) -> tuple[bool, str]:
+    """Now in London: watches / shoes / accessories / bags — no apparel."""
+    if pid in clothing_ids:
+        return False, "clothing"
+    ok, why = product_source_ok(source, img)
+    if not ok:
+        if "watch" in img.lower() or pid.lower().startswith("cw-"):
+            ratio = aspect_ratio(source)
+            if ratio >= 0.55 and not is_face_dominant(source):
+                return True, "ok-watch"
+        return False, why
     return True, "ok"
 
 
@@ -920,6 +1030,58 @@ def main() -> int:
     for i, slot in enumerate(slots, start=1):
         themes = SLOT_THEMES.get(slot) or ["luxury"]
         kind = slot_kind(slot)
+        bias = slot_vertical_bias(slot)
+
+        # --- Homepage hero: B&W London panoramas ---
+        if slot in HERO_LONDON_SLOTS:
+            london = pick_london_for_slot(slot, seed, used)
+            if london is None:
+                print(f"{i}/{len(slots)} {slot} FAIL no-london-source", flush=True)
+                fail += 1
+                continue
+            pid, img, source = london
+            if args.dry_run:
+                print(
+                    f"{i}/{len(slots)} {slot} <- {pid} {img} "
+                    f"({source.size} {aspect_ratio(source):.2f})",
+                    flush=True,
+                )
+                used.add(pid)
+                ok += 1
+                continue
+            try:
+                focal = export_banner_set(
+                    source,
+                    desktop_path=BANNER_DIR / slot,
+                    tablet_path=TABLET_DIR / slot,
+                    mobile_path=MOBILE_DIR / slot,
+                    shop=False,
+                    kind="hero",
+                    require_face=False,
+                    vertical_bias="torso",
+                )
+            except Exception as e:
+                print(f"{i}/{len(slots)} {slot} FAIL crop {e}", flush=True)
+                fail += 1
+                continue
+            used.add(pid)
+            new_slots[slot] = {
+                "sourceProductId": pid,
+                "sourceImage": img,
+                "focal": focal.css,
+                "shop": False,
+                "kind": "hero",
+                "tone": "bw-london",
+                "sourceAspect": round(aspect_ratio(source), 3),
+            }
+            ok += 1
+            print(
+                f"{i}/{len(slots)} {slot} ok hero-london {source.size[0]}x{source.size[1]} "
+                f"focal={focal.css} src={img}",
+                flush=True,
+            )
+            continue
+
         picks = pick_for_slot(
             slot, themes, pool, rng, used, seed, clothing_ids, sports_ids
         )
@@ -929,21 +1091,21 @@ def main() -> int:
             continue
         # PC look/hero banners are panoramic — prefer wide outfit / product
         # stills; reject face-only headshots and empty grey product frames.
-        tries = 100 if kind in {"look", "hero"} else 12
+        tries = 100 if kind in {"look", "hero"} or slot in EVENT_EDIT_SLOTS else 12
         chosen: tuple[str, str, Image.Image] | None = None
         last_err = ""
-        bias = slot_vertical_bias(slot)
         for pid, img in picks[:tries]:
             source = fetch_image(img)
             if source is None:
                 last_err = f"fetch {img}"
                 continue
             ratio = aspect_ratio(source)
-            if slot in MAIN_BANNER_SLOTS:
-                ok_src, why = main_banner_source_ok(source, img, pid)
+            if slot in EVENT_EDIT_SLOTS:
+                ok_src, why = event_edit_source_ok(source, img, pid, clothing_ids)
                 if not ok_src:
                     last_err = f"{why} {ratio:.2f} {img}"
                     continue
+                source = to_black_and_white(source)
             elif slot in CLOTHING_SLOTS:
                 ok_src, why = clothing_source_ok(
                     source, img, luxury_only=slot.startswith("rot-luxury-")
@@ -974,6 +1136,7 @@ def main() -> int:
             used.add(img)
             ok += 1
             continue
+        event_bias = "product" if slot in EVENT_EDIT_SLOTS else bias
         try:
             focal = export_banner_set(
                 source,
@@ -983,21 +1146,24 @@ def main() -> int:
                 shop=kind == "shop",
                 kind=kind,
                 require_face=False,
-                vertical_bias=bias,
+                vertical_bias=event_bias,
             )
         except Exception as e:
             recovered = False
-            if kind in {"look", "hero"}:
+            if kind in {"look", "hero"} or slot in EVENT_EDIT_SLOTS:
                 for pid2, img2 in picks[:tries]:
                     if img2 == img:
                         continue
                     source2 = fetch_image(img2)
                     if source2 is None:
                         continue
-                    if slot in MAIN_BANNER_SLOTS:
-                        ok_src, _ = main_banner_source_ok(source2, img2, pid2)
+                    if slot in EVENT_EDIT_SLOTS:
+                        ok_src, _ = event_edit_source_ok(
+                            source2, img2, pid2, clothing_ids
+                        )
                         if not ok_src:
                             continue
+                        source2 = to_black_and_white(source2)
                     elif slot in CLOTHING_SLOTS:
                         ok_src, _ = clothing_source_ok(
                             source2,
@@ -1019,7 +1185,7 @@ def main() -> int:
                             shop=False,
                             kind=kind,
                             require_face=False,
-                            vertical_bias=bias,
+                            vertical_bias=event_bias,
                         )
                         pid, img, source = pid2, img2, source2
                         recovered = True
@@ -1031,7 +1197,7 @@ def main() -> int:
                 fail += 1
                 continue
         used.add(img)
-        new_slots[slot] = {
+        entry = {
             "sourceProductId": pid,
             "sourceImage": img,
             "focal": focal.css,
@@ -1039,8 +1205,11 @@ def main() -> int:
             "kind": kind,
             "sourceAspect": round(aspect_ratio(source), 3),
         }
+        if slot in EVENT_EDIT_SLOTS:
+            entry["tone"] = "bw-non-apparel"
+        new_slots[slot] = entry
         ok += 1
-        if i <= 12 or i % 10 == 0 or i == len(slots):
+        if i <= 12 or i % 10 == 0 or i == len(slots) or slot in EVENT_EDIT_SLOTS:
             print(
                 f"{i}/{len(slots)} {slot} ok {kind} {source.size[0]}x{source.size[1]} "
                 f"focal={focal.css} src={img}",
