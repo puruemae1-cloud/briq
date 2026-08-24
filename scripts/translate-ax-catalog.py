@@ -119,6 +119,12 @@ def needs_translate(src: str, cached: str | None) -> bool:
         if not re.search(r"\b(the|and|for|with|from|made|designed)\b", src, re.I):
             return False
     if cached and has_hangul(cached) and cached != src:
+        # Re-translate hybrid EN/KO leftovers
+        letters = [c for c in cached if c.isalpha()]
+        if letters:
+            latin = sum(1 for c in letters if ord(c) < 128)
+            if latin / len(letters) > 0.30:
+                return True
         return False
     return True
 

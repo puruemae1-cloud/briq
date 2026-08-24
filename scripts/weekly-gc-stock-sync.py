@@ -95,11 +95,14 @@ def print_delta(before: dict[str, bool], after: dict[str, bool]) -> None:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
     env = os.environ.copy()
     env.setdefault("PYTHONUNBUFFERED", "1")
     # Hint scrapers / future size-level refresh paths.
     env["GC_REFRESH_STOCK"] = "1"
     print("GC_REFRESH_STOCK=1 (re-fetch PLP availability + new SKUs)", flush=True)
+    since = utc_now_iso()
 
     before = stock_map(OUT_JSON)
     print(f"Previous catalogue SKUs: {len(before)}", flush=True)
@@ -109,6 +112,7 @@ def main() -> None:
 
     after = stock_map(OUT_JSON)
     print_delta(before, after)
+    check_new_korean("gc", since)
     print("Gucci weekly sync complete.", flush=True)
 
 

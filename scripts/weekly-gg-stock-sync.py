@@ -32,12 +32,16 @@ paginate_collection = _scrape.paginate_collection
 
 
 def sync() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
+    since = utc_now_iso()
     if not RAW_PATH.exists():
         print("No raw catalog — running full scrape…")
         subprocess.check_call(
             [sys.executable, str(ROOT / "scripts/scrape-gg-new-arrivals.py")],
             cwd=str(ROOT),
         )
+        check_new_korean("gg", since)
         return
 
     raw = json.loads(RAW_PATH.read_text())
@@ -136,6 +140,7 @@ def sync() -> None:
     print(f"  stock updates:            {updated_stock}")
     print(f"  price updates:            {updated_price}")
     print(f"  new handles:              {added_handles}")
+    check_new_korean("gg", since)
 
 
 if __name__ == "__main__":

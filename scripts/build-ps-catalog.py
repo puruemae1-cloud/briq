@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from catalog_image_guard import existing_images, image_on_disk  # noqa: E402
+from ko_qa import translate_en_to_ko  # noqa: E402
 RAW_PATH = ROOT / "src/data/ps/ps-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/ps/ps-catalog.json"
 OUT_PATH = ROOT / "src/data/ps/ps-catalog.ts"
@@ -179,42 +180,8 @@ if CACHE_PATH.exists():
     _KO = json.loads(CACHE_PATH.read_text())
 
 
-def en_ratio(s: str) -> float:
-    letters = [c for c in s if c.isalpha()]
-    if not letters:
-        return 0.0
-    latin = sum(1 for c in letters if ("A" <= c <= "Z") or ("a" <= c <= "z"))
-    return latin / len(letters)
-
-
-def gtx(text: str) -> str:
-    q = urllib.parse.quote(text[:4500])
-    url = (
-        "https://translate.googleapis.com/translate_a/single"
-        f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
-    )
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=35) as r:
-        data = json.loads(r.read().decode())
-    return "".join(part[0] for part in data[0] if part and part[0])
-
-
 def t(text: str | None) -> str:
-    s = re.sub(r"\s+", " ", (text or "").strip())
-    if not s:
-        return ""
-    if s in _KO and en_ratio(_KO[s]) < 0.55:
-        return _KO[s]
-    if en_ratio(s) < 0.35 or len(s) < 8:
-        return s
-    try:
-        ko = gtx(s).strip()
-        if ko:
-            _KO[s] = ko
-            return ko
-    except Exception:
-        pass
-    return s
+    return translate_en_to_ko(text, _KO)
 
 
 def js_str(s: str) -> str:

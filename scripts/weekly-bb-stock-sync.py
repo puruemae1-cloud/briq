@@ -45,10 +45,13 @@ def run(script: str, env: dict[str, str]) -> None:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
     env = os.environ.copy()
     # Always refresh PDP stock/prices on the weekly job.
     env["BB_REFRESH_STOCK"] = "1"
     print("BB_REFRESH_STOCK=1 (re-fetch size availability + prices)", flush=True)
+    since = utc_now_iso()
 
     for script in SCRIPTS:
         run(script, env)
@@ -63,6 +66,7 @@ def main() -> None:
         cwd=str(ROOT),
         env=env,
     )
+    check_new_korean("bb", since)
     print("Burberry weekly sync complete.", flush=True)
 
 

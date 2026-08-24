@@ -79,8 +79,11 @@ def prune_line(raw_name: str, cache_name: str, img_name: str) -> None:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
     os.environ["AX_REFRESH_STOCK"] = "1"
     print("AX_REFRESH_STOCK=1 (re-fetch colour×size availability)", flush=True)
+    since = utc_now_iso()
 
     # 1) Feeds — discover new styles / drop discontinued
     run("scrape-ax-outdoor-apparel.py")
@@ -107,10 +110,12 @@ def main() -> None:
     prune_line("ax-catalog-raw.json", "ax-pdp-cache.json", "ax-pdp")
     prune_line("ax-gear-raw.json", "ax-gear-pdp-cache.json", "axg-pdp")
 
-    # 4) Rebuild catalogues (removed styles drop here)
+    # 4) Translate EN→KO then rebuild catalogues
+    run("translate-ax-catalog.py")
     run("build-ax-apparel-catalog.py")
     run("build-ax-catalog.py")
     run("build-ax-gear-catalog.py")
+    check_new_korean("ax", since)
 
     print("Arc'teryx weekly sync complete.", flush=True)
 

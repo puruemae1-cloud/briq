@@ -52,10 +52,15 @@ def prune_images() -> int:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
+    since = utc_now_iso()
     run("scrape-lu.py")
     prune_images()
+    run("scrub-lu-ko.py")
     run("build-lu-catalog.py")
     run("build-lu-lifestyle-catalog.py")
+    check_new_korean("lu", since)
     print("London Undercover weekly sync complete.", flush=True)
 
 

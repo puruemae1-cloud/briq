@@ -42,6 +42,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ch_hybris_details import compose_official_name  # noqa: E402
+from ko_qa import MAX_KO_EN_RATIO, gtx_translate  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ch/ch-rtw-catalog-raw.json"
 HANDBAGS_RAW_PATH = ROOT / "src/data/ch/ch-handbags-catalog-raw.json"
@@ -430,15 +431,7 @@ def en_ratio(s: str) -> float:
 
 
 def gtx(text: str) -> str:
-    q = urllib.parse.quote(text[:4500])
-    url = (
-        "https://translate.googleapis.com/translate_a/single"
-        f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
-    )
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=35) as r:
-        data = json.loads(r.read().decode())
-    return "".join(part[0] for part in data[0] if part and part[0])
+    return gtx_translate(text)
 
 
 # Exact / phrase glossary applied on EN source before MT (avoids bad gtx like Cuff→동).
@@ -737,7 +730,7 @@ def t(text: str | None) -> str:
     if s in _EN_TITLE_KO:
         _KO[s] = _EN_TITLE_KO[s]
         return _EN_TITLE_KO[s]
-    if s in _KO and en_ratio(_KO[s]) < 0.55 and _KO[s] not in {"동", "소매"}:
+    if s in _KO and en_ratio(_KO[s]) < MAX_KO_EN_RATIO and _KO[s] not in {"동", "소매"}:
         return _KO[s]
     # Already mostly Korean
     if en_ratio(s) < 0.35:
@@ -755,6 +748,14 @@ def t(text: str | None) -> str:
         time.sleep(0.05)
     except Exception:
         ko = s
+    for attempt in range(3):
+        if en_ratio(ko) < MAX_KO_EN_RATIO:
+            break
+        try:
+            ko = gtx(s)
+            time.sleep(0.12 * (attempt + 1))
+        except Exception:
+            break
     ko = (
         ko.replace("Chanel", "샤넬")
         .replace("CHANEL", "샤넬")
@@ -827,7 +828,8 @@ def t(text: str | None) -> str:
     )
     if s.lower() in {"cuff", "cuffs"}:
         ko = "커프"
-    _KO[s] = ko
+    if en_ratio(ko) < MAX_KO_EN_RATIO:
+        _KO[s] = ko
     return ko
 
 

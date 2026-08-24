@@ -268,6 +268,9 @@ def rebuild_collections(raw: dict) -> None:
 
 
 def main() -> int:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
+    since = utc_now_iso()
     raw = json.loads(RAW_PATH.read_text())
     enr = json.loads(ENR_PATH.read_text()) if ENR_PATH.exists() else {"scrapedAt": "", "products": {}}
     enr_products = enr.setdefault("products", {})
@@ -400,6 +403,7 @@ def main() -> int:
 
     print("5) Rebuilding cw-catalog.ts…")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/rebuild-cw-catalog.py")], cwd=str(ROOT))
+    check_new_korean("cw", since)
 
     print("\n=== Weekly CW sync summary ===")
     print(f"Live clearance watches: {summary['live_clearance']}")

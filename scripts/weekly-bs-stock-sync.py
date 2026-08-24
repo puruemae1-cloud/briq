@@ -59,10 +59,14 @@ def prune_images() -> int:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
+    since = utc_now_iso()
     for script in SCRIPTS[:-1]:
         run(script)
     prune_images()
     run(SCRIPTS[-1])
+    check_new_korean("bs", since)
     print("Belstaff weekly sync complete.", flush=True)
 
 

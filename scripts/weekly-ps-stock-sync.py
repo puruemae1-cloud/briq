@@ -129,6 +129,9 @@ def assert_local_images(raw: dict[str, dict]) -> None:
 
 
 def main() -> None:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
+    since = utc_now_iso()
     run("scrape-ps-mens.py")
     run("scrape-ps-extend.py")
 
@@ -149,6 +152,7 @@ def main() -> None:
     assert_local_images(pruned)
 
     run("build-ps-catalog.py")
+    check_new_korean("ps", since)
     print("Paul Smith weekly sync complete.", flush=True)
 
 

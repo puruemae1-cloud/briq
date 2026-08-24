@@ -27,7 +27,11 @@ When finishing catalog, product, image, category, UI/CSS, or site content work t
    - Do **not** assume “images already on disk” means they are live. New SKU folders must be on the tag or briq.kr shows broken `<img>`.
    - Weekly GitHub Actions must push the tag, then run that verify, **then** commit catalogue. Never commit catalogue paths for files that are not on the tag.
 4. Do **not** stop after local edits and ask “커밋/배포할까요?” — the user wants deploy by default.
-5. Still avoid force-push to `main`/`master`, `--no-verify`, and destructive git unless explicitly requested. Force-updating the `product-images` **tag** via the push script is expected.
+5. **Korean PDP copy (mandatory):** after any catalogue rebuild/update, run
+   `python3 scripts/check-catalog-korean.py --brand <brand> --fail`
+   (or `--new-since` / `--ids` for scoped updates). Do not ship hybrid EN/KO
+   `descriptionKo` / story bodies. See `.cursor/rules/korean-product-copy.mdc`.
+6. Still avoid force-push to `main`/`master`, `--no-verify`, and destructive git unless explicitly requested. Force-updating the `product-images` **tag** via the push script is expected.
 
 ## Known failure mode (do not repeat)
 

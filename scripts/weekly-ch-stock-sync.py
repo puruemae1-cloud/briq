@@ -85,6 +85,8 @@ def run_phase(phase: str, env: dict[str, str]) -> None:
 
 
 def main() -> int:
+    from weekly_korean_gate import check_new_korean, utc_now_iso
+
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--phase",
@@ -95,7 +97,10 @@ def main() -> int:
     args = ap.parse_args()
     env = os.environ.copy()
     print(f"weekly-ch-stock-sync phase={args.phase}", flush=True)
+    since = utc_now_iso()
     run_phase(args.phase, env)
+    if args.phase in ("stock-build", "all"):
+        check_new_korean("ch", since)
     return 0
 
 
