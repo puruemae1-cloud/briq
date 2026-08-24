@@ -23,7 +23,11 @@ SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from pr_size_charts import size_chart_for_shoes, size_chart_for_variants  # noqa: E402
+from pr_size_charts import (  # noqa: E402
+    size_chart_for_mens_rtw_variants,
+    size_chart_for_shoes,
+    size_chart_for_variants,
+)
 from pr_shoe_ko import seed_shoe_cache, shoe_text_ko  # noqa: E402
 from pr_slg_ko import seed_slg_cache, slg_text_ko  # noqa: E402
 from pr_travel_ko import seed_travel_cache, travel_text_ko  # noqa: E402
@@ -31,6 +35,7 @@ from pr_mens_handbags_ko import (  # noqa: E402
     mens_handbag_text_ko,
     seed_mens_handbags_cache,
 )
+from pr_mens_rtw_ko import mens_rtw_text_ko, seed_mens_rtw_cache  # noqa: E402
 from pr_accessories_ko import seed_accessories_cache, accessories_text_ko  # noqa: E402
 from pr_common_ko import apply_phrases as common_phrases  # noqa: E402
 
@@ -39,6 +44,7 @@ _MAX_KO_EN_RATIO = 0.30
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
 RAW_MEN_BAGS = ROOT / "src/data/pr/pr-mens-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
+RAW_MENS_RTW = ROOT / "src/data/pr/pr-mens-rtw-catalog-raw.json"
 RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
 RAW_SLG = ROOT / "src/data/pr/pr-womens-slg-catalog-raw.json"
 RAW_TRAVEL = ROOT / "src/data/pr/pr-womens-travel-catalog-raw.json"
@@ -84,6 +90,22 @@ RTW_LEAF_COLLECTIONS = [
     "pr-women-pajamas-underwear",
 ]
 RTW_PARENT_COLS = ["prada", "prada-luxury", "pr-women", "pr-women-rtw"]
+
+MENS_RTW_LEAF_COLLECTIONS = [
+    "pr-men-denim",
+    "pr-men-jackets-coats",
+    "pr-men-jogging-suits-sweatshirts",
+    "pr-men-knitwear",
+    "pr-men-leather",
+    "pr-men-outerwear",
+    "pr-men-pajamas-underwear",
+    "pr-men-shirts",
+    "pr-men-suits",
+    "pr-men-swimwear",
+    "pr-men-trousers-bermudas",
+    "pr-men-tshirts-polos",
+]
+MENS_RTW_PARENT_COLS = ["prada", "prada-luxury", "pr-men", "pr-men-rtw"]
 
 SHOES_LEAF_COLLECTIONS = [
     "pr-women-ankle-boots-boots",
@@ -449,13 +471,16 @@ _OFFLINE_TRANSLATE = False
 
 
 def _phrase_fallback(s: str) -> str:
+    from pr_mens_rtw_ko import apply_phrases as mens_rtw_phrases
     from pr_shoe_ko import apply_phrases as shoe_phrases
     from pr_slg_ko import apply_phrases as slg_phrases
     from pr_travel_ko import apply_phrases as travel_phrases
     from pr_accessories_ko import apply_phrases as acc_phrases
 
     out = common_phrases(
-        slg_phrases(shoe_phrases(travel_phrases(acc_phrases(s))))
+        mens_rtw_phrases(
+            slg_phrases(shoe_phrases(travel_phrases(acc_phrases(s))))
+        )
     )
     return apply_glossary(out)
 
@@ -512,7 +537,23 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             or any(c in MEN_HANDBAG_LEAF_COLLECTIONS for c in cols)
         ):
             continue
-        if scope == "rtw" and p.get("category") != "luxury":
+        if scope == "rtw" and not (
+            p.get("category") == "luxury"
+            and (
+                "pr-women-rtw" in cols
+                or "pr-women" in cols
+                or any(c in RTW_LEAF_COLLECTIONS for c in cols)
+            )
+        ):
+            continue
+        if scope == "mens-rtw" and not (
+            p.get("category") == "luxury"
+            and (
+                "pr-men-rtw" in cols
+                or "pr-men" in cols
+                or any(c in MENS_RTW_LEAF_COLLECTIONS for c in cols)
+            )
+        ):
             continue
         pid = str(p.get("id") or "")
         val = str(p.get("descriptionKo") or "").strip()
@@ -548,6 +589,10 @@ def t(text: str | None) -> str:
         _KO[s] = curated
         return curated
     curated = mens_handbag_text_ko(s)
+    if curated is not None:
+        _KO[s] = curated
+        return curated
+    curated = mens_rtw_text_ko(s)
     if curated is not None:
         _KO[s] = curated
         return curated
@@ -989,6 +1034,212 @@ def build_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None
         "editTier": "signature",
     }
     chart = size_chart_for_variants(variants)
+    if chart:
+        prod["sizeChart"] = chart
+    return prod
+
+
+def _usable_ko(text: str | None) -> str:
+    """Keep Korean copy only when hybrid-English QA would pass."""
+    s = re.sub(r"\s+", " ", (text or "").strip())
+    if not s:
+        return ""
+    if en_ratio(s) <= _MAX_KO_EN_RATIO:
+        return s
+    return ""
+
+
+def _usable_ko_list(items: list[str]) -> list[str]:
+    return [x for x in (_usable_ko(v) for v in items) if x]
+
+
+def build_mens_rtw_product(row: dict, prev: dict | None, now_iso: str) -> dict | None:
+    code = row.get("productCode") or row.get("id") or row.get("sku")
+    if not code:
+        return None
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return None
+    price = gbp_to_krw(float(gbp))
+    if price <= 0:
+        return None
+
+    cols = [
+        c
+        for c in (row.get("collections") or [])
+        if c in MENS_RTW_LEAF_COLLECTIONS or c in MENS_RTW_PARENT_COLS
+    ]
+    cols = sorted(set([*cols, *MENS_RTW_PARENT_COLS]))
+    leaf = row.get("leaf") or next(
+        (c for c in MENS_RTW_LEAF_COLLECTIONS if c in cols), "pr-men-rtw"
+    )
+
+    images = list(row.get("localImages") or [])
+    if not images and row.get("localImage"):
+        images = [row["localImage"]]
+    images = [
+        p
+        for p in images
+        if (ROOT / "public" / str(p).lstrip("/")).is_file()
+        and (ROOT / "public" / str(p).lstrip("/")).stat().st_size > 2048
+    ]
+    if not images:
+        print(f"skip no local image (mens-rtw): {code}", flush=True)
+        return None
+
+    image = images[0]
+    hover = row.get("localHover") or (images[1] if len(images) > 1 else image)
+    if hover and not (
+        (ROOT / "public" / str(hover).lstrip("/")).is_file()
+        and (ROOT / "public" / str(hover).lstrip("/")).stat().st_size > 2048
+    ):
+        hover = images[1] if len(images) > 1 else image
+
+    title_en = (row.get("officialNameEn") or row.get("title") or code).strip()
+    name_ko = _usable_ko(t(title_en)) or apply_glossary(title_en)
+    color_en = (row.get("color") or "").strip()
+    color_ko = _usable_ko(t(color_en)) if color_en else ""
+    editorial = (row.get("description") or "").strip()
+    editorial_ko = _usable_ko(t(editorial)) if editorial else ""
+    details = [x for x in (row.get("details") or []) if str(x).strip()]
+    details_ko = _usable_ko_list([t(x) for x in details])
+    materials = [x for x in (row.get("materialsCare") or []) if str(x).strip()]
+    materials_ko = _usable_ko_list([t(x) for x in materials])
+    if row.get("material") and not materials_ko:
+        materials_ko = _usable_ko_list([t(row["material"])])
+
+    desc_bits = []
+    if editorial_ko:
+        desc_bits.append(editorial_ko)
+    if details_ko:
+        desc_bits.append(" · ".join(details_ko[:10]))
+    if not desc_bits:
+        desc_bits.append(f"{name_ko}. 프라다 남성 레디투웨어.")
+    description_ko = "\n\n".join(desc_bits).strip()
+
+    story: list[dict] = []
+    if editorial_ko:
+        story.append({"titleKo": name_ko, "bodyKo": editorial_ko, "image": image})
+    if details_ko:
+        story.append(
+            {
+                "titleKo": "디테일",
+                "bodyKo": " · ".join(details_ko),
+                "image": images[1] if len(images) > 1 else image,
+                "reverse": True,
+            }
+        )
+    if materials_ko:
+        story.append(
+            {
+                "titleKo": "소재 & 케어",
+                "bodyKo": " · ".join(materials_ko),
+                "image": images[2] if len(images) > 2 else image,
+            }
+        )
+    if not story:
+        story.append(
+            {
+                "titleKo": name_ko,
+                "bodyKo": description_ko,
+                "image": image,
+            }
+        )
+    for i, img in enumerate(images[1:], start=1):
+        if len(story) >= 8:
+            break
+        story.append(
+            {
+                "titleKo": "갤러리",
+                "bodyKo": "제품 디테일.",
+                "image": img,
+                "layout": "wide",
+                "reverse": i % 2 == 0,
+            }
+        )
+
+    pid = f"pr-{str(code).lower()}"
+    registered = (prev or {}).get("registeredAt") or now_iso
+    color_key = slugify(color_en or color_ko or "default")
+
+    size_rows = row.get("sizes") or []
+    variants: list[dict] = []
+    for sz in size_rows:
+        label = str(sz.get("size") or "").strip()
+        if not label:
+            continue
+        slug = slugify(label)
+        sz_in_stock = bool(sz.get("inStock", False))
+        variants.append(
+            {
+                "id": f"{pid}-{slug}",
+                "name": f"{title_en} — {label}",
+                "nameKo": f"{name_ko} — {label}",
+                "sku": f"{code}-{label}",
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": sz_in_stock,
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": label,
+                "prCollections": cols,
+            }
+        )
+    in_stock = any(v["inStock"] for v in variants) if variants else bool(
+        row.get("inStock", True)
+    )
+    if not variants:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": f"{title_en} — One Size",
+                "nameKo": f"{name_ko} — 원 사이즈",
+                "sku": code,
+                "gbpPrice": float(gbp),
+                "price": price,
+                "image": image,
+                "images": images,
+                "hoverImage": hover,
+                "sourceUrl": row.get("url") or "",
+                "inStock": in_stock,
+                "colorKey": color_key,
+                "colorNameKo": color_ko or color_en or "기본",
+                "size": "One Size",
+                "prCollections": cols,
+            }
+        ]
+
+    tags = ["prada", "프라다", "rtw", "레디투웨어", "남성", *cols]
+    prod: dict = {
+        "id": pid,
+        "name": title_en,
+        "nameKo": name_ko,
+        "brand": "프라다",
+        "price": price,
+        "category": "luxury",
+        "subcategory": leaf,
+        "prCollections": cols,
+        "tags": tags,
+        "descriptionKo": description_ko,
+        "image": image,
+        "images": images,
+        "hoverImage": hover,
+        "accent": accent_for(code),
+        "badge": None,
+        "gbpPrice": float(gbp),
+        "sku": code,
+        "sourceUrl": row.get("url") or "",
+        "inStock": in_stock,
+        "variants": variants,
+        "storySections": story,
+        "registeredAt": registered,
+        "editTier": "signature",
+    }
+    chart = size_chart_for_mens_rtw_variants(variants)
     if chart:
         prod["sizeChart"] = chart
     return prod
@@ -1846,7 +2097,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "rtw", "bags", "mens-bags", "slg", "travel", "acc", "all"],
+        choices=["shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "travel", "acc", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -1894,6 +2145,14 @@ def main() -> None:
             r = dict(r)
             r["_kind"] = "rtw"
             rows.append(r)
+    mens_rtw_rows: list[dict] = []
+    if only in {"all", "mens-rtw"} and RAW_MENS_RTW.exists():
+        mens_rtw_rows = [
+            dict(r) for r in (json.loads(RAW_MENS_RTW.read_text()).get("products") or [])
+        ]
+        for r in mens_rtw_rows:
+            r["_kind"] = "mens-rtw"
+            rows.append(r)
     if only in {"all", "shoes"} and RAW_SHOES.exists():
         shoes = json.loads(RAW_SHOES.read_text()).get("products") or []
         for r in shoes:
@@ -1924,7 +2183,7 @@ def main() -> None:
     if not rows and not slg_rows and not travel_rows and not acc_rows:
         raise SystemExit(
             "Missing Prada raw catalogues — run scrape-pr-handbags.py, "
-            "scrape-pr-mens-handbags.py, "
+            "scrape-pr-mens-handbags.py, scrape-pr-mens-rtw.py, "
             "scrape-pr-womens-rtw.py, scrape-pr-womens-shoes.py, "
             "scrape-pr-womens-slg.py, scrape-pr-womens-travel.py, "
             "and/or scrape-pr-womens-accessories.py first"
@@ -1939,6 +2198,11 @@ def main() -> None:
     if only in {"all", "bags", "mens-bags"}:
         n_seed = seed_mens_handbags_cache(_KO)
         print(f"seeded {n_seed} curated mens handbag strings", flush=True)
+    if only in {"all", "mens-rtw"}:
+        n_seed = seed_mens_rtw_cache(_KO)
+        print(f"seeded {n_seed} curated mens RTW strings", flush=True)
+        if mens_rtw_rows and not _OFFLINE_TRANSLATE:
+            pretranslate_unique(_collect_row_strings(mens_rtw_rows))
     if only in {"all", "acc"}:
         n_seed = seed_accessories_cache(_KO)
         print(f"seeded {n_seed} curated accessories strings", flush=True)
@@ -1992,6 +2256,8 @@ def main() -> None:
         kind = row.get("_kind") or row.get("kind") or "handbag"
         if kind in {"womens-rtw", "rtw"}:
             prod = build_rtw_product(row, prev_by_sku.get(sku), now_iso)
+        elif kind in {"mens-rtw"}:
+            prod = build_mens_rtw_product(row, prev_by_sku.get(sku), now_iso)
         elif kind in {"womens-shoes", "shoes"}:
             prod = build_shoes_product(row, prev_by_sku.get(sku), now_iso)
         elif kind in {"womens-slg", "slg"}:
@@ -2101,11 +2367,30 @@ def main() -> None:
                 )
             ]
             products = merged + products
+        elif only == "mens-rtw":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and p.get("category") == "luxury"
+                    and (
+                        "pr-men-rtw" in (p.get("prCollections") or [])
+                        or "pr-men" in (p.get("prCollections") or [])
+                        or any(
+                            c in MENS_RTW_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
+                )
+            ]
+            products = merged + products
         else:
             keep_cat = {
                 "shoes": "shoes",
                 "rtw": "luxury",
-            }[only]
+                "mens-rtw": "luxury",
+            }.get(only, "luxury")
             merged = [p for p in existing if p.get("category") != keep_cat]
             if only == "rtw":
                 merged = [
@@ -2114,6 +2399,14 @@ def main() -> None:
                     if not (
                         p.get("brand") == "프라다"
                         and p.get("category") == "luxury"
+                        and (
+                            "pr-women-rtw" in (p.get("prCollections") or [])
+                            or "pr-women" in (p.get("prCollections") or [])
+                            or any(
+                                c in RTW_LEAF_COLLECTIONS
+                                for c in (p.get("prCollections") or [])
+                            )
+                        )
                     )
                 ]
             products = merged + products
@@ -2151,6 +2444,10 @@ def main() -> None:
         if n:
             print(f"  {leaf}: {n}", flush=True)
     for leaf in RTW_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in MENS_RTW_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)

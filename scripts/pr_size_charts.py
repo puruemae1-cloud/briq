@@ -130,12 +130,121 @@ def _chart_mode(labels: list[str]) -> str:
 
 
 def size_chart_for_variants(variants: list[dict]) -> dict | None:
-    """Return the Prada GB RTW chart matching the product's size picker labels."""
+    """Return the Prada GB women's RTW chart matching the product's size picker labels."""
     labels = _variant_labels(variants)
     if not labels:
         return None
     mode = _chart_mode(labels)
     base = PR_WOMEN_RTW_NUMERIC if mode == "numeric" else PR_WOMEN_RTW_LETTER
+    return copy.deepcopy(base)
+
+
+# Men's ready-to-wear (prada.com GB, Aug 2026)
+PR_MEN_RTW_NUMERIC = {
+    "id": "pr-men-rtw-numeric",
+    "titleKo": "프라다 남성 레디투웨어 사이즈 차트",
+    "noteKo": (
+        "prada.com(영국) 공식 사이즈 가이드입니다. "
+        "Prada size는 이탈리아(IT) 기준이며, 가슴·허리 치수는 둘레(circumference) 기준 cm입니다."
+    ),
+    "headers": ["Prada size", "44", "46", "48", "50", "52", "54", "56"],
+    "rows": [
+        ["United Kingdom", "34", "36", "38", "40", "42", "44", "46"],
+        [
+            "Chest",
+            "96 cm",
+            "98 cm",
+            "102 cm",
+            "106 cm",
+            "110 cm",
+            "114 cm",
+            "118 cm",
+        ],
+        [
+            "Waist",
+            "94 cm",
+            "96 cm",
+            "100 cm",
+            "104 cm",
+            "108 cm",
+            "112 cm",
+            "116 cm",
+        ],
+    ],
+}
+
+PR_MEN_RTW_LETTER = {
+    "id": "pr-men-rtw-letter",
+    "titleKo": "프라다 남성 레디투웨어 사이즈 차트",
+    "noteKo": (
+        "prada.com(영국) 공식 사이즈 가이드입니다. "
+        "가슴·허리 치수는 둘레(circumference) 기준 cm입니다."
+    ),
+    "headers": ["Prada size", "XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+    "rows": [
+        ["United Kingdom", "—", "34.5", "36.5", "38.5", "40.5", "42.5", "44.5", "46.5"],
+        [
+            "Chest",
+            "88 cm",
+            "92 cm",
+            "96 cm",
+            "100 cm",
+            "104 cm",
+            "108 cm",
+            "112 cm",
+            "120 cm",
+        ],
+        [
+            "Waist",
+            "76 cm",
+            "80 cm",
+            "84 cm",
+            "88 cm",
+            "92 cm",
+            "96 cm",
+            "100 cm",
+            "108 cm",
+        ],
+    ],
+}
+
+# Men's denim waist sizes (jeans / denim PLP)
+PR_MEN_RTW_DENIM = {
+    "id": "pr-men-denim-waist",
+    "titleKo": "프라다 남성 데님 사이즈 차트",
+    "noteKo": (
+        "prada.com(영국) 데님 사이즈 가이드입니다. "
+        "표기 사이즈는 허리(waist) 인치 기준이며, 허리·엉덩이 치수는 cm입니다."
+    ),
+    "headers": ["Waist", "29", "30", "31", "32", "33", "34", "36", "38"],
+    "rows": [
+        ["Waist (cm)", "74 cm", "77 cm", "79 cm", "82 cm", "84 cm", "87 cm", "92 cm", "97 cm"],
+        ["Hips (cm)", "94 cm", "97 cm", "99 cm", "102 cm", "104 cm", "107 cm", "112 cm", "117 cm"],
+    ],
+}
+
+
+def _variant_size_numbers(variants: list[dict]) -> list[int]:
+    nums: list[int] = []
+    for v in variants:
+        label = str(v.get("size") or "")
+        m = re.search(r"(\d{2})", label)
+        if m:
+            nums.append(int(m.group(1)))
+    return nums
+
+
+def size_chart_for_mens_rtw_variants(variants: list[dict]) -> dict | None:
+    """Return Prada GB men's RTW chart (numeric IT, letter, or denim waist)."""
+    labels = _variant_labels(variants)
+    if not labels:
+        return None
+    nums = _variant_size_numbers(variants)
+    if nums and max(nums) <= 40 and min(nums) <= 34 and max(nums) - min(nums) <= 22:
+        if max(nums) < 44 or min(nums) < 40:
+            return copy.deepcopy(PR_MEN_RTW_DENIM)
+    mode = _chart_mode(labels)
+    base = PR_MEN_RTW_NUMERIC if mode == "numeric" else PR_MEN_RTW_LETTER
     return copy.deepcopy(base)
 
 

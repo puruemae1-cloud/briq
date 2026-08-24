@@ -479,6 +479,20 @@ export type SubcategoryId =
   | "pr-women-leather"
   | "pr-women-swimwear"
   | "pr-women-pajamas-underwear"
+  | "pr-men"
+  | "pr-men-rtw"
+  | "pr-men-denim"
+  | "pr-men-jackets-coats"
+  | "pr-men-jogging-suits-sweatshirts"
+  | "pr-men-knitwear"
+  | "pr-men-leather"
+  | "pr-men-outerwear"
+  | "pr-men-pajamas-underwear"
+  | "pr-men-shirts"
+  | "pr-men-suits"
+  | "pr-men-swimwear"
+  | "pr-men-trousers-bermudas"
+  | "pr-men-tshirts-polos"
   | "prada-shoes"
   | "pr-women-shoes"
   | "pr-women-ankle-boots-boots"
@@ -942,6 +956,22 @@ export const PR_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "pr-women-leather",
   "pr-women-swimwear",
   "pr-women-pajamas-underwear",
+];
+
+/** Prada men's ready-to-wear leaves (official GB RTW PLPs). */
+export const PR_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-denim",
+  "pr-men-jackets-coats",
+  "pr-men-jogging-suits-sweatshirts",
+  "pr-men-knitwear",
+  "pr-men-leather",
+  "pr-men-outerwear",
+  "pr-men-pajamas-underwear",
+  "pr-men-shirts",
+  "pr-men-suits",
+  "pr-men-swimwear",
+  "pr-men-trousers-bermudas",
+  "pr-men-tshirts-polos",
 ];
 
 export const PR_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
@@ -1865,6 +1895,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-women",
     "pr-women-rtw",
     ...PR_WOMEN_RTW_LEAF_IDS,
+    "pr-men",
+    "pr-men-rtw",
+    ...PR_MEN_RTW_LEAF_IDS,
     "prada-bags",
     "pr-handbags",
     ...PR_HANDBAG_LEAF_IDS,
@@ -1884,8 +1917,25 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-women",
     "pr-women-rtw",
     ...PR_WOMEN_RTW_LEAF_IDS,
+    "pr-men",
+    "pr-men-rtw",
+    ...PR_MEN_RTW_LEAF_IDS,
   ],
   "pr-women": ["pr-women", "pr-women-rtw", ...PR_WOMEN_RTW_LEAF_IDS],
+  "pr-men": ["pr-men", "pr-men-rtw", ...PR_MEN_RTW_LEAF_IDS],
+  "pr-men-rtw": ["pr-men-rtw", ...PR_MEN_RTW_LEAF_IDS],
+  "pr-men-denim": ["pr-men-denim"],
+  "pr-men-jackets-coats": ["pr-men-jackets-coats"],
+  "pr-men-jogging-suits-sweatshirts": ["pr-men-jogging-suits-sweatshirts"],
+  "pr-men-knitwear": ["pr-men-knitwear"],
+  "pr-men-leather": ["pr-men-leather"],
+  "pr-men-outerwear": ["pr-men-outerwear"],
+  "pr-men-pajamas-underwear": ["pr-men-pajamas-underwear"],
+  "pr-men-shirts": ["pr-men-shirts"],
+  "pr-men-suits": ["pr-men-suits"],
+  "pr-men-swimwear": ["pr-men-swimwear"],
+  "pr-men-trousers-bermudas": ["pr-men-trousers-bermudas"],
+  "pr-men-tshirts-polos": ["pr-men-tshirts-polos"],
   "pr-women-rtw": ["pr-women-rtw", ...PR_WOMEN_RTW_LEAF_IDS],
   "pr-women-knitwear": ["pr-women-knitwear"],
   "pr-women-shirts-tops": ["pr-women-shirts-tops"],
@@ -2860,7 +2910,7 @@ export const navCategories: NavCategory[] = [
               },
               {
                 id: "gc-women-pants-shorts",
-                labelKo: "팬츠 & 쇼츠",
+                labelKo: "팬츠 & 버뮤다",
                 href: "/shop?category=luxury&sub=gc-women-pants-shorts",
               },
               {
@@ -3115,6 +3165,79 @@ export const navCategories: NavCategory[] = [
                 id: "pr-women-pajamas-underwear",
                 labelKo: "파자마 & 언더웨어",
                 href: "/shop?category=luxury&sub=pr-women-pajamas-underwear",
+              },
+            ],
+          },
+          {
+            id: "pr-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=pr-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-men-rtw",
+                labelKo: "전체보기",
+                href: "/shop?category=luxury&sub=pr-men-rtw",
+              },
+              {
+                id: "pr-men-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=pr-men-denim",
+              },
+              {
+                id: "pr-men-jackets-coats",
+                labelKo: "재킷 & 코트",
+                href: "/shop?category=luxury&sub=pr-men-jackets-coats",
+              },
+              {
+                id: "pr-men-jogging-suits-sweatshirts",
+                labelKo: "조깅 & 스웻셔츠",
+                href: "/shop?category=luxury&sub=pr-men-jogging-suits-sweatshirts",
+              },
+              {
+                id: "pr-men-knitwear",
+                labelKo: "니트웨어",
+                href: "/shop?category=luxury&sub=pr-men-knitwear",
+              },
+              {
+                id: "pr-men-leather",
+                labelKo: "레더",
+                href: "/shop?category=luxury&sub=pr-men-leather",
+              },
+              {
+                id: "pr-men-outerwear",
+                labelKo: "아우터",
+                href: "/shop?category=luxury&sub=pr-men-outerwear",
+              },
+              {
+                id: "pr-men-pajamas-underwear",
+                labelKo: "파자마 & 언더웨어",
+                href: "/shop?category=luxury&sub=pr-men-pajamas-underwear",
+              },
+              {
+                id: "pr-men-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=pr-men-shirts",
+              },
+              {
+                id: "pr-men-suits",
+                labelKo: "수트",
+                href: "/shop?category=luxury&sub=pr-men-suits",
+              },
+              {
+                id: "pr-men-swimwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=pr-men-swimwear",
+              },
+              {
+                id: "pr-men-trousers-bermudas",
+                labelKo: "팬츠 & 버뫤다",
+                href: "/shop?category=luxury&sub=pr-men-trousers-bermudas",
+              },
+              {
+                id: "pr-men-tshirts-polos",
+                labelKo: "티셔츠 & 폴로",
+                href: "/shop?category=luxury&sub=pr-men-tshirts-polos",
               },
             ],
           },

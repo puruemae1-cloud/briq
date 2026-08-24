@@ -1,0 +1,57 @@
+name: Retry Prada men's RTW Korean copy
+
+on:
+  schedule:
+    # Every 6 hours — picks up when Google/MyMemory 429 clears
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retry-pr-mens-rtw-ko
+  cancel-in-progress: false
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Retry translate batch + rebuild
+        id: retry
+        run: |
+          set +e
+          python3 scripts/retry-pr-mens-rtw-ko.py --rebuild --max-batch 100
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" -eq 2 ]; then
+            echo "Translate API still rate-limited — will retry on next schedule."
+            exit 0
+          fi
+          exit "$code"
+
+      - name: Commit and push if changed
+        if: steps.retry.outputs.exit_code != '2'
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: improve Prada men's RTW Korean copy (auto-retry)" \
+            src/data/pr/pr-catalog.json \
+            src/data/pr/pr-catalog.ts \
+            src/data/pr/pr-translate-cache.json \
+            src/data/pr/pr-mens-rtw-translate-state.json \
+            src/data/pr/pr-mens-rtw-ko-copy.json \
+            scripts/retry-pr-mens-rtw-ko.py \
+            scripts/seed-pr-mens-rtw-translate.py
