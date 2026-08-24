@@ -48,6 +48,7 @@ src/data/bb/bb-pdp-cache.json
 src/data/gc/gc-pdp-cache.json
 src/data/ch/ch-pdp-cache.json
 src/data/pr/pr-handbags-pdp-cache.json
+src/data/pr/pr-mens-handbags-pdp-cache.json
 src/data/pr/pr-womens-rtw-pdp-cache.json
 
 # Heavy PDP image trees — served from the `product-images` git tag via rewrite.

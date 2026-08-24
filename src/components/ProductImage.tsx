@@ -1,5 +1,11 @@
-import type { ReactNode } from "react";
-import { mediaUrl, type ProductImageTone } from "@/lib/product-image";
+"use client";
+
+import { useEffect, useState, type ReactNode, type SyntheticEvent } from "react";
+import {
+  mediaUrl,
+  mediaUrlFallback,
+  type ProductImageTone,
+} from "@/lib/product-image";
 
 const toneClass: Record<ProductImageTone, string> = {
   card: "product-frame product-frame--card",
@@ -20,6 +26,48 @@ type ProductImageProps = {
   loading?: "lazy" | "eager";
   children?: ReactNode;
 };
+
+function CdnImg({
+  resolved,
+  alt,
+  className,
+  loading,
+  ariaHidden,
+}: {
+  resolved: string;
+  alt: string;
+  className: string;
+  loading: "lazy" | "eager";
+  ariaHidden?: boolean;
+}) {
+  const [src, setSrc] = useState(resolved);
+  useEffect(() => {
+    setSrc(resolved);
+  }, [resolved]);
+
+  const onError = (_e: SyntheticEvent<HTMLImageElement>) => {
+    const altUrl = mediaUrlFallback(resolved);
+    if (altUrl && altUrl !== src) {
+      setSrc(altUrl);
+    }
+  };
+
+  if (!resolved) return null;
+
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      className={className}
+      src={src}
+      alt={alt}
+      aria-hidden={ariaHidden}
+      loading={loading}
+      decoding="async"
+      referrerPolicy="no-referrer"
+      onError={onError}
+    />
+  );
+}
 
 /**
  * Shared product photo frame. Always uses contain + fixed aspect so
@@ -52,25 +100,19 @@ export function ProductImage({
 
   return (
     <div className={frameClass}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className={`${imageClass} product-frame__img--primary`}
-        src={primary}
+      <CdnImg
+        resolved={primary}
         alt={alt}
+        className={`${imageClass} product-frame__img--primary`}
         loading={loading}
-        decoding="async"
-        referrerPolicy="no-referrer"
       />
       {hasHover ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          className={`${imageClass} product-frame__img--hover`}
-          src={hover}
+        <CdnImg
+          resolved={hover!}
           alt=""
-          aria-hidden
+          className={`${imageClass} product-frame__img--hover`}
           loading="lazy"
-          decoding="async"
-          referrerPolicy="no-referrer"
+          ariaHidden
         />
       ) : null}
       {children}

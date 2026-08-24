@@ -3,11 +3,12 @@ import type { NextConfig } from "next";
 /**
  * Product + banner media live on the `product-images` git tag.
  * On Vercel we do NOT proxy them (that burned Fast Origin Transfer / Hobby
- * fair-use). The browser loads jsDelivr directly via NEXT_PUBLIC_MEDIA_ORIGIN.
+ * fair-use). Point browsers at GitHub raw for the tag — jsDelivr intermittently
+ * 403s under PLP load, which shows as broken product thumbnails.
  */
 const MEDIA_ORIGIN =
   process.env.MEDIA_ORIGIN ||
-  "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
+  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
 
 const nextConfig: NextConfig = {
   // mobile/ is a separate Expo app

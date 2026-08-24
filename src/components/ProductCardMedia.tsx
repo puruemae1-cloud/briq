@@ -8,14 +8,49 @@ import {
   type MouseEvent,
   type ReactNode,
 } from "react";
+// media failover helpers used by CardSlide
 import type {  Product  } from "@/data/product-types";
-import { mediaUrl, resolveCardGallery } from "@/lib/product-image";
+import { mediaUrl, mediaUrlFallback, resolveCardGallery } from "@/lib/product-image";
 
 type ProductCardMediaProps = {
   product: Product;
   soldOut?: boolean;
   children?: ReactNode;
 };
+
+function CardSlide({
+  src,
+  alt,
+  current,
+}: {
+  src: string;
+  alt: string;
+  current: boolean;
+}) {
+  const resolved = mediaUrl(src);
+  const [shown, setShown] = useState(resolved);
+  useEffect(() => {
+    setShown(resolved);
+  }, [resolved]);
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      className={`product-frame__img product-card__img product-card-media__img${
+        current ? " is-current" : ""
+      }`}
+      src={shown}
+      alt={alt}
+      aria-hidden={!current && !alt}
+      loading="lazy"
+      decoding="async"
+      referrerPolicy="no-referrer"
+      onError={() => {
+        const altUrl = mediaUrlFallback(resolved);
+        if (altUrl && altUrl !== shown) setShown(altUrl);
+      }}
+    />
+  );
+}
 
 /**
  * Gucci-like PLP media: primary packshot, hover advances to slide 2,
@@ -89,18 +124,11 @@ export function ProductCardMedia({
     >
       <div className="product-frame product-frame--card product-card-media__frame">
         {slides.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <CardSlide
             key={src}
-            className={`product-frame__img product-card__img product-card-media__img${
-              i === index ? " is-current" : ""
-            }`}
-            src={mediaUrl(src)}
+            src={src}
             alt={i === 0 ? product.nameKo : ""}
-            aria-hidden={i !== 0}
-            loading={i === 0 ? "lazy" : "lazy"}
-            decoding="async"
-            referrerPolicy="no-referrer"
+            current={i === index}
           />
         ))}
         {children}

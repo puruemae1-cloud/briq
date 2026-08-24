@@ -24,10 +24,17 @@ import type {  Product, ProductVariant  } from "@/data/product-types";
 import { bannerMediaVersion } from "@/lib/banner-media-version";
 import { productMediaVersion } from "@/lib/product-media-version";
 
+/** Primary CDN for Vercel (GitHub `product-images` tag). */
+export const MEDIA_ORIGIN_PRIMARY =
+  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
+/** Secondary CDN if primary fails (jsDelivr mirrors the same tag). */
+export const MEDIA_ORIGIN_FALLBACK =
+  "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
+
 /**
  * On Vercel, heavy `/products/*` and `/banners/*` assets are not shipped in the
- * deploy. Point the browser straight at jsDelivr (GitHub `product-images` tag)
- * so image bytes never count against Vercel Fast Origin Transfer.
+ * deploy. Point the browser at the GitHub `product-images` tag so image bytes
+ * never count against Vercel Fast Origin Transfer.
  * Locally this is a no-op and files under `public/` are used.
  */
 export function mediaUrl(src: string | undefined | null): string {
@@ -49,6 +56,45 @@ export function mediaUrl(src: string | undefined | null): string {
     return url;
   }
   return src;
+}
+
+/** Alternate absolute URL for the same catalog path (other CDN host). */
+export function mediaUrlFallback(src: string | undefined | null): string {
+  if (!src) return "";
+  if (/^https?:\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) {
+    const primary = MEDIA_ORIGIN_PRIMARY;
+    const fallback = MEDIA_ORIGIN_FALLBACK;
+    if (src.startsWith(primary)) return fallback + src.slice(primary.length);
+    if (src.startsWith(fallback)) return primary + src.slice(fallback.length);
+    // Absolute URL already — swap known hosts if present
+    if (src.includes("cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public")) {
+      return src.replace(
+        "cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public",
+        "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
+      );
+    }
+    if (src.includes("raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public")) {
+      return src.replace(
+        "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
+        "cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public",
+      );
+    }
+    return "";
+  }
+  if (!src.startsWith("/products/") && !src.startsWith("/banners/")) return "";
+  const origin = (process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "").replace(/\/$/, "");
+  if (!origin) return "";
+  const alt =
+    origin.includes("jsdelivr") ? MEDIA_ORIGIN_PRIMARY : MEDIA_ORIGIN_FALLBACK;
+  let url = `${alt}${src}`;
+  if (src.startsWith("/banners/")) {
+    const v = bannerMediaVersion();
+    if (v) url += `?v=${encodeURIComponent(v)}`;
+  } else if (src.startsWith("/products/")) {
+    const v = productMediaVersion();
+    if (v) url += `?v=${encodeURIComponent(v)}`;
+  }
+  return url;
 }
 
 export const PRODUCT_IMAGE = {

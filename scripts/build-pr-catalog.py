@@ -27,12 +27,17 @@ from pr_size_charts import size_chart_for_shoes, size_chart_for_variants  # noqa
 from pr_shoe_ko import seed_shoe_cache, shoe_text_ko  # noqa: E402
 from pr_slg_ko import seed_slg_cache, slg_text_ko  # noqa: E402
 from pr_travel_ko import seed_travel_cache, travel_text_ko  # noqa: E402
+from pr_mens_handbags_ko import (  # noqa: E402
+    mens_handbag_text_ko,
+    seed_mens_handbags_cache,
+)
 from pr_accessories_ko import seed_accessories_cache, accessories_text_ko  # noqa: E402
 from pr_common_ko import apply_phrases as common_phrases  # noqa: E402
 
 # Reject cached / returned copy above this Latin-letter ratio (hybrid EN/KO guard).
 _MAX_KO_EN_RATIO = 0.30
 RAW_BAGS = ROOT / "src/data/pr/pr-handbags-catalog-raw.json"
+RAW_MEN_BAGS = ROOT / "src/data/pr/pr-mens-handbags-catalog-raw.json"
 RAW_RTW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
 RAW_SLG = ROOT / "src/data/pr/pr-womens-slg-catalog-raw.json"
@@ -51,6 +56,18 @@ HANDBAG_LEAF_COLLECTIONS = [
     "pr-women-briefcases",
 ]
 BAG_PARENT_COLS = ["prada", "prada-bags", "pr-handbags"]
+MEN_HANDBAG_LEAF_COLLECTIONS = [
+    "pr-men-backpacks-belt-bags",
+    "pr-men-briefcases",
+    "pr-men-clutches",
+    "pr-men-messenger-bags",
+    "pr-men-tote-bags",
+]
+MEN_BAG_PARENT_COLS = ["prada", "prada-bags", "pr-mens-handbags"]
+ALL_HANDBAG_LEAF_COLLECTIONS = [
+    *HANDBAG_LEAF_COLLECTIONS,
+    *MEN_HANDBAG_LEAF_COLLECTIONS,
+]
 
 RTW_LEAF_COLLECTIONS = [
     "pr-women-knitwear",
@@ -285,6 +302,16 @@ def en_ratio(s: str) -> float:
         "Re-Edition",
         "Linea Rossa",
         "Prada",
+        "Saffiano",
+        "Galleria",
+        "Brique",
+        "Explore",
+        "Bonnie",
+        "Jardinière",
+        "Jardiniere",
+        "Speedrock",
+        "nappa",
+        "Nappa",
         "Symbole",
         "Shadowplay",
         "Oakley",
@@ -293,6 +320,7 @@ def en_ratio(s: str) -> float:
         "Eyewear Collection",
         "Runway",
         "Single Layer",
+        "Nylon",
         "UVA",
         "UVB",
         "TSA",
@@ -479,6 +507,11 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             continue
         if scope == "bags" and p.get("category") != "bags":
             continue
+        if scope == "mens-bags" and not (
+            "pr-mens-handbags" in cols
+            or any(c in MEN_HANDBAG_LEAF_COLLECTIONS for c in cols)
+        ):
+            continue
         if scope == "rtw" and p.get("category") != "luxury":
             continue
         pid = str(p.get("id") or "")
@@ -511,6 +544,10 @@ def t(text: str | None) -> str:
         _KO[s] = curated
         return curated
     curated = travel_text_ko(s)
+    if curated is not None:
+        _KO[s] = curated
+        return curated
+    curated = mens_handbag_text_ko(s)
     if curated is not None:
         _KO[s] = curated
         return curated
@@ -591,18 +628,30 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
     if price <= 0:
         return None
 
+    mens = (
+        (row.get("_kind") or row.get("kind") or "") in {"mens-handbag", "mens-handbags"}
+        or any(
+            c in MEN_HANDBAG_LEAF_COLLECTIONS or c == "pr-mens-handbags"
+            for c in (row.get("collections") or [])
+        )
+    )
+    leaf_cols = MEN_HANDBAG_LEAF_COLLECTIONS if mens else HANDBAG_LEAF_COLLECTIONS
+    parent_cols = MEN_BAG_PARENT_COLS if mens else BAG_PARENT_COLS
+    parent_leaf = "pr-mens-handbags" if mens else "pr-handbags"
+    gender_tag = "남성" if mens else "여성"
+
     cols = [
         c
         for c in (row.get("collections") or [])
-        if c in HANDBAG_LEAF_COLLECTIONS or c in BAG_PARENT_COLS
+        if c in leaf_cols or c in parent_cols
     ]
-    cols = sorted(set([*cols, *BAG_PARENT_COLS]))
-    if any(c in HANDBAG_LEAF_COLLECTIONS for c in cols) and "pr-handbags" not in cols:
-        cols.append("pr-handbags")
+    cols = sorted(set([*cols, *parent_cols]))
+    if any(c in leaf_cols for c in cols) and parent_leaf not in cols:
+        cols.append(parent_leaf)
         cols = sorted(set(cols))
 
     leaf = row.get("leaf") or next(
-        (c for c in HANDBAG_LEAF_COLLECTIONS if c in cols), "pr-handbags"
+        (c for c in leaf_cols if c in cols), parent_leaf
     )
 
     images = list(row.get("localImages") or [])
@@ -733,7 +782,7 @@ def build_handbag_product(row: dict, prev: dict | None, now_iso: str) -> dict | 
         "prCollections": cols,
     }
 
-    tags = ["prada", "프라다", "handbag", "핸드백", "여성", *cols]
+    tags = ["prada", "프라다", "handbag", "핸드백", gender_tag, *cols]
 
     return {
         "id": pid,
@@ -1797,7 +1846,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "rtw", "bags", "slg", "travel", "acc", "all"],
+        choices=["shoes", "rtw", "bags", "mens-bags", "slg", "travel", "acc", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -1832,6 +1881,12 @@ def main() -> None:
         for r in bags:
             r = dict(r)
             r["_kind"] = "handbag"
+            rows.append(r)
+    if only in {"all", "bags", "mens-bags"} and RAW_MEN_BAGS.exists():
+        men_bags = json.loads(RAW_MEN_BAGS.read_text()).get("products") or []
+        for r in men_bags:
+            r = dict(r)
+            r["_kind"] = "mens-handbag"
             rows.append(r)
     if only in {"all", "rtw"} and RAW_RTW.exists():
         rtw = json.loads(RAW_RTW.read_text()).get("products") or []
@@ -1869,6 +1924,7 @@ def main() -> None:
     if not rows and not slg_rows and not travel_rows and not acc_rows:
         raise SystemExit(
             "Missing Prada raw catalogues — run scrape-pr-handbags.py, "
+            "scrape-pr-mens-handbags.py, "
             "scrape-pr-womens-rtw.py, scrape-pr-womens-shoes.py, "
             "scrape-pr-womens-slg.py, scrape-pr-womens-travel.py, "
             "and/or scrape-pr-womens-accessories.py first"
@@ -1880,6 +1936,9 @@ def main() -> None:
     if only in {"all", "travel", "bags"}:
         n_seed = seed_travel_cache(_KO)
         print(f"seeded {n_seed} curated travel strings", flush=True)
+    if only in {"all", "bags", "mens-bags"}:
+        n_seed = seed_mens_handbags_cache(_KO)
+        print(f"seeded {n_seed} curated mens handbag strings", flush=True)
     if only in {"all", "acc"}:
         n_seed = seed_accessories_cache(_KO)
         print(f"seeded {n_seed} curated accessories strings", flush=True)
@@ -2018,11 +2077,28 @@ def main() -> None:
             merged = [p for p in existing if "acc" not in (p.get("tags") or [])]
             products = merged + products
         elif only == "bags":
-            # Replace all Prada bags (handbags + travel)
+            # Replace all Prada bags (women handbags + men handbags + travel)
             merged = [
                 p
                 for p in existing
                 if not (p.get("brand") == "프라다" and p.get("category") == "bags")
+            ]
+            products = merged + products
+        elif only == "mens-bags":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and p.get("category") == "bags"
+                    and (
+                        "pr-mens-handbags" in (p.get("prCollections") or [])
+                        or any(
+                            c in MEN_HANDBAG_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
+                )
             ]
             products = merged + products
         else:
@@ -2066,6 +2142,14 @@ def main() -> None:
         f"  bags={bags_n} luxury/rtw={lux_n} shoes={shoes_n} accessories/slg={acc_n}",
         flush=True,
     )
+    for leaf in HANDBAG_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in MEN_HANDBAG_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
     for leaf in RTW_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:

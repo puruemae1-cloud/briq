@@ -457,6 +457,12 @@ export type SubcategoryId =
   | "pr-women-travel-bags"
   | "pr-women-luggage-carry-on"
   | "pr-women-travel-accessories"
+  | "pr-mens-handbags"
+  | "pr-men-backpacks-belt-bags"
+  | "pr-men-briefcases"
+  | "pr-men-clutches"
+  | "pr-men-messenger-bags"
+  | "pr-men-tote-bags"
   | "prada"
   | "prada-luxury"
   | "pr-women"
@@ -904,6 +910,15 @@ export const PR_HANDBAG_LEAF_IDS: SubcategoryId[] = [
   "pr-women-mini-bags",
   "pr-women-backpacks",
   "pr-women-briefcases",
+];
+
+/** Prada men's handbags leaf collections (official GB bags PLPs). */
+export const PR_MENS_HANDBAG_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-backpacks-belt-bags",
+  "pr-men-briefcases",
+  "pr-men-clutches",
+  "pr-men-messenger-bags",
+  "pr-men-tote-bags",
 ];
 
 /** Prada women's travel leaves (official GB travel PLPs). */
@@ -1841,6 +1856,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_HANDBAG_LEAF_IDS,
     "pr-women-travel",
     ...PR_WOMEN_TRAVEL_LEAF_IDS,
+    "pr-mens-handbags",
+    ...PR_MENS_HANDBAG_LEAF_IDS,
   ],
   prada: [
     "prada",
@@ -1853,6 +1870,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_HANDBAG_LEAF_IDS,
     "pr-women-travel",
     ...PR_WOMEN_TRAVEL_LEAF_IDS,
+    "pr-mens-handbags",
+    ...PR_MENS_HANDBAG_LEAF_IDS,
     "prada-shoes",
     "pr-women-shoes",
     ...PR_WOMEN_SHOE_LEAF_IDS,
@@ -1896,6 +1915,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-travel-bags": ["pr-women-travel-bags"],
   "pr-women-luggage-carry-on": ["pr-women-luggage-carry-on"],
   "pr-women-travel-accessories": ["pr-women-travel-accessories"],
+  "pr-mens-handbags": ["pr-mens-handbags", ...PR_MENS_HANDBAG_LEAF_IDS],
+  "pr-men-backpacks-belt-bags": ["pr-men-backpacks-belt-bags"],
+  "pr-men-briefcases": ["pr-men-briefcases"],
+  "pr-men-clutches": ["pr-men-clutches"],
+  "pr-men-messenger-bags": ["pr-men-messenger-bags"],
+  "pr-men-tote-bags": ["pr-men-tote-bags"],
   "prada-shoes": ["prada-shoes", "pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
   "pr-women-shoes": ["pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
   "pr-women-ankle-boots-boots": ["pr-women-ankle-boots-boots"],
@@ -3565,6 +3590,39 @@ export const navCategories: NavCategory[] = [
                     href: "/shop?category=bags&sub=pr-women-travel-accessories",
                   },
                 ],
+              },
+            ],
+          },
+          {
+            id: "pr-mens-handbags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=pr-mens-handbags",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-men-backpacks-belt-bags",
+                labelKo: "백팩·벨트백",
+                href: "/shop?category=bags&sub=pr-men-backpacks-belt-bags",
+              },
+              {
+                id: "pr-men-briefcases",
+                labelKo: "브리프케이스",
+                href: "/shop?category=bags&sub=pr-men-briefcases",
+              },
+              {
+                id: "pr-men-clutches",
+                labelKo: "클러치",
+                href: "/shop?category=bags&sub=pr-men-clutches",
+              },
+              {
+                id: "pr-men-messenger-bags",
+                labelKo: "메신저백",
+                href: "/shop?category=bags&sub=pr-men-messenger-bags",
+              },
+              {
+                id: "pr-men-tote-bags",
+                labelKo: "토트백",
+                href: "/shop?category=bags&sub=pr-men-tote-bags",
               },
             ],
           },
