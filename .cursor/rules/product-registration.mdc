@@ -25,3 +25,6 @@ When adding products:
    - **하이엔드**: price ≥ 1,000,000 — newest first
   - **첫 구매자 만족도 1위**: 결제 1회 이상 — 구매수 → 최신등록순
   - **신상품 큐레이션**: catalogue-wide newest by `registeredAt` (server-rendered; overlaps OK)
+6. **Never re-stamp `registeredAt` on weekly stock syncs** for existing product ids.
+   Only brand-new SKUs get “now”. Re-stamping old styles (e.g. Galvin Green variant-id
+   parse bug) dumps them back into 신상품 큐레이션 incorrectly.

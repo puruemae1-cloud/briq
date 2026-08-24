@@ -52,6 +52,10 @@ PHRASE_MAP = [
     ("Golf Cap", "골프 캡"),
     ("Golf Hat", "골프 햇"),
     ("Golf Polo", "골프 폴로"),
+    ("Slingbag", "슬링백"),
+    ("Sling bag", "슬링백"),
+    ("Sling Bag", "슬링백"),
+    ("Sweatshirt", "스웻셔츠"),
     ("Trousers", "팬츠"),
     ("Jacket", "재킷"),
     ("Vest", "베스트"),
@@ -68,6 +72,7 @@ PHRASE_MAP = [
     ("Dress", "드레스"),
     ("Gloves", "글러브"),
     ("Belt", "벨트"),
+    ("Bag", "백"),
     ("Socks", "삭스"),
     ("Stretch", "스트레치"),
     ("Lightweight", "경량"),
@@ -202,30 +207,51 @@ def load_cw_max_registered() -> datetime | None:
 def load_existing_registered() -> dict[str, str]:
     """Keep stable Briq registration times across rebuilds.
 
-    Ignore Shopify published_at leftovers and any stamp still older than CW.
+    Product-level only (never variant ids). When TS/JSON disagree after a bad
+    rebuild, keep the earliest Briq stamp so accidental weekly re-stamps do not
+    push old styles back into 신상품 큐레이션.
     """
-    if not OUT_PATH.exists():
-        return {}
-    text = OUT_PATH.read_text()
-    out: dict[str, str] = {}
-    cw_max = load_cw_max_registered()
-    floor = cw_max + timedelta(seconds=1) if cw_max else datetime(
-        2026, 7, 28, 21, 0, 0, tzinfo=timezone.utc
-    )
-    for m in re.finditer(
-        r'id:\s*"(gg-[^"]+)"[\s\S]*?registeredAt:\s*"([^"]+)"',
-        text,
-    ):
-        raw = m.group(2)
+    out: dict[str, datetime] = {}
+
+    def consider(pid: str, raw: str) -> None:
         try:
             ts = datetime.fromisoformat(raw.replace("Z", "+00:00"))
         except ValueError:
-            continue
+            return
         if ts.tzinfo is None:
             ts = ts.replace(tzinfo=timezone.utc)
-        if ts >= floor:
-            out[m.group(1)] = raw
-    return out
+        # Ignore ancient Shopify published_at leftovers.
+        if ts < datetime(2026, 7, 1, tzinfo=timezone.utc):
+            return
+        prev = out.get(pid)
+        if prev is None or ts < prev:
+            out[pid] = ts
+
+    json_path = ROOT / "src/data/gg/gg-catalog.json"
+    if json_path.exists():
+        try:
+            for p in json.loads(json_path.read_text()):
+                if isinstance(p, dict) and p.get("id") and p.get("registeredAt"):
+                    consider(str(p["id"]), str(p["registeredAt"]))
+        except Exception:
+            pass
+
+    if OUT_PATH.exists():
+        text = OUT_PATH.read_text()
+        # Top-level products are indented with two spaces; variants use more.
+        for block in re.split(r"\n  \{\n    id: ", text)[1:]:
+            id_m = re.match(r'"(gg-[^"]+)"', block)
+            if not id_m:
+                continue
+            pid = id_m.group(1)
+            head = block.split("\n    variants:")[0]
+            reg_m = re.search(r'registeredAt:\s*"([^"]+)"', head)
+            if reg_m:
+                consider(pid, reg_m.group(1))
+
+    return {
+        pid: ts.strftime("%Y-%m-%dT%H:%M:%S.000Z") for pid, ts in out.items()
+    }
 
 
 def briq_registered_at(
@@ -1157,6 +1183,8 @@ def build() -> dict:
         registered = briq_registered_at(
             pid, existing_reg, batch_start, len(briq_products)
         )
+        if pid not in existing_reg:
+            print(f"  new registeredAt {pid} → {registered}", flush=True)
 
         accent = ACCENTS[len(briq_products) % len(ACCENTS)]
         if not primary_image:
@@ -1315,6 +1343,12 @@ def build() -> dict:
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text("\n".join(lines), encoding="utf-8")
+    # Keep JSON sidecar in sync for registeredAt preservation / tooling.
+    json_path = ROOT / "src/data/gg/gg-catalog.json"
+    json_path.write_text(
+        json.dumps(briq_products, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     variant_total = sum(len(p["variants"]) for p in briq_products)
     def in_coll(p: dict, coll: str) -> bool:
