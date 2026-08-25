@@ -26,14 +26,20 @@ TITLE_KO: dict[str, str] = {
     "Canvas duffle bag": "캔버스 더플백",
     "Canvas duffel bag": "캔버스 더플백",
     "Leather duffel bag": "가죽 더플백",
-    "Prada Explore Re-Nylon and leather duffel bag": "Prada Explore Re-Nylon & 가죽 더플백",
+    "Prada Explore Re-Nylon and leather duffel bag": "프라다 익스플로어 Re-Nylon & 가죽 더플백",
     "Nappa leather duffel bag": "나파 가죽 더플백",
     "Re-Nylon and Saffiano leather trolley": "Re-Nylon & 사피아노 가죽 트롤리",
     "Saffiano leather trolley": "사피아노 가죽 트롤리",
     "Polycarbonate trolley": "폴리카보네이트 트롤리",
     "Small Re-Nylon and Saffiano leather suitcase": "스몰 Re-Nylon & 사피아노 가죽 슈트케이스",
+    "Medium Re-Nylon and Saffiano leather suitcase": "미디엄 Re-Nylon & 사피아노 가죽 슈트케이스",
     "Linen blend drawstring duffel bag": "린넨 블렌드 드로우스트링 더플백",
     "Canvas drawstring duffle bag": "캔버스 드로우스트링 더플백",
+    "Prada Speedrock Re-Nylon and leather pouch": "프라다 스피드록 Re-Nylon & 가죽 파우치",
+    "Re-Nylon and Saffiano leather necessaire": "Re-Nylon & 사피아노 가죽 네세세르",
+    "Re-Nylon and Saffiano necessaire": "Re-Nylon & 사피아노 네세세르",
+    "Re-Nylon and Saffiano leather travel pouch": "Re-Nylon & 사피아노 가죽 트래블 파우치",
+    "Saffiano leather travel pouch": "사피아노 가죽 트래블 파우치",
 }
 
 COLOR_KO: dict[str, str] = {
@@ -54,6 +60,9 @@ COLOR_KO: dict[str, str] = {
     "White": "화이트",
     "Red": "레드",
     "Navy": "네이비",
+    "Caramel": "카라멜",
+    "Loden": "로덴",
+    "Black/Burnt": "블랙/번트",
 }
 
 PHRASE_KO: list[tuple[str, str]] = sorted(

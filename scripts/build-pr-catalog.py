@@ -51,6 +51,7 @@ RAW_MENS_SHOES = ROOT / "src/data/pr/pr-mens-shoes-catalog-raw.json"
 RAW_SLG = ROOT / "src/data/pr/pr-womens-slg-catalog-raw.json"
 RAW_MEN_SLG = ROOT / "src/data/pr/pr-mens-slg-catalog-raw.json"
 RAW_TRAVEL = ROOT / "src/data/pr/pr-womens-travel-catalog-raw.json"
+RAW_MEN_TRAVEL = ROOT / "src/data/pr/pr-mens-travel-catalog-raw.json"
 RAW_ACC = ROOT / "src/data/pr/pr-womens-accessories-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
 OUT_TS = ROOT / "src/data/pr/pr-catalog.ts"
@@ -174,6 +175,14 @@ TRAVEL_LEAF_COLLECTIONS = [
     "pr-women-travel-accessories",
 ]
 TRAVEL_PARENT_COLS = ["prada", "prada-bags", "pr-women-travel"]
+MEN_TRAVEL_LEAF_COLLECTIONS = [
+    "pr-men-travel-bags",
+    "pr-men-luggage-carry-on",
+    "pr-men-travel-accessories",
+]
+MEN_TRAVEL_PARENT_COLS = ["prada", "prada-bags", "pr-mens-handbags", "pr-men-travel"]
+ALL_TRAVEL_LEAF_COLLECTIONS = [*TRAVEL_LEAF_COLLECTIONS, *MEN_TRAVEL_LEAF_COLLECTIONS]
+ALL_TRAVEL_PARENT_COLS = sorted(set([*TRAVEL_PARENT_COLS, *MEN_TRAVEL_PARENT_COLS]))
 
 # Title / material glossary — natural Korean for Prada
 _GLOSSARY = {
@@ -555,7 +564,16 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             continue
         cols = p.get("prCollections") or []
         tags = p.get("tags") or []
-        if scope == "travel" and "pr-women-travel" not in cols:
+        if scope == "travel" and "pr-women-travel" not in cols and "pr-men-travel" not in cols:
+            continue
+        if scope == "mens-travel" and not (
+            "travel" in tags
+            and (
+                "남성" in tags
+                or "pr-men-travel" in cols
+                or any(c in MEN_TRAVEL_LEAF_COLLECTIONS for c in cols)
+            )
+        ):
             continue
         if scope == "acc" and "acc" not in tags:
             continue
@@ -703,6 +721,35 @@ def t(text: str | None) -> str:
         return ko
     print(f"WARN untranslated ({en_ratio(ko):.2f}): {s[:96]}…", flush=True)
     return ko
+
+
+def merge_prada_product_fields(dst: dict, src: dict) -> None:
+    """Union collections/tags when the same SKU appears in multiple Prada segments."""
+    dst["prCollections"] = sorted(
+        set(dst.get("prCollections") or []) | set(src.get("prCollections") or [])
+    )
+    dst["tags"] = sorted(set(dst.get("tags") or []) | set(src.get("tags") or []))
+    # Prefer a leaf subcategory when the destination was a gender/parent hub.
+    src_leaf = str(src.get("subcategory") or "")
+    dst_leaf = str(dst.get("subcategory") or "")
+    leaf_ids = set(ALL_TRAVEL_LEAF_COLLECTIONS) | set(ALL_SLG_LEAF_COLLECTIONS)
+    if src_leaf in leaf_ids and dst_leaf not in leaf_ids:
+        dst["subcategory"] = src_leaf
+
+
+def dedupe_merge_products(products: list[dict]) -> list[dict]:
+    by_id: dict[str, dict] = {}
+    order: list[str] = []
+    for p in products:
+        pid = str(p.get("id") or "")
+        if not pid:
+            continue
+        if pid not in by_id:
+            by_id[pid] = p
+            order.append(pid)
+        else:
+            merge_prada_product_fields(by_id[pid], p)
+    return [by_id[i] for i in order]
 
 
 def accent_for(key: str) -> str:
@@ -1781,16 +1828,29 @@ def build_travel_products(rows: list[dict], prev_by_sku: dict[str, dict], now_is
         title_en = (primary.get("officialNameEn") or primary.get("title") or code0).strip()
         name_ko = t(title_en)
 
+        sample_cols = [
+            c
+            for r in usable
+            for c in (r.get("collections") or [])
+        ]
+        is_mens = any(
+            c in MEN_TRAVEL_LEAF_COLLECTIONS or c in MEN_TRAVEL_PARENT_COLS for c in sample_cols
+        ) or str(primary.get("_kind") or "") == "mens-travel"
+        leaf_cols = MEN_TRAVEL_LEAF_COLLECTIONS if is_mens else TRAVEL_LEAF_COLLECTIONS
+        parent_cols = MEN_TRAVEL_PARENT_COLS if is_mens else TRAVEL_PARENT_COLS
+        default_leaf = "pr-men-travel" if is_mens else "pr-women-travel"
+        gender_tag = "남성" if is_mens else "여성"
+
         cols: list[str] = []
         for r in usable:
             cols.extend(
                 c
                 for c in (r.get("collections") or [])
-                if c in TRAVEL_LEAF_COLLECTIONS or c in TRAVEL_PARENT_COLS
+                if c in leaf_cols or c in parent_cols
             )
-        cols = sorted(set([*cols, *TRAVEL_PARENT_COLS]))
+        cols = sorted(set([*cols, *parent_cols]))
         leaf = primary.get("leaf") or next(
-            (c for c in TRAVEL_LEAF_COLLECTIONS if c in cols), "pr-women-travel"
+            (c for c in leaf_cols if c in cols), default_leaf
         )
 
         variants: list[dict] = []
@@ -1943,7 +2003,7 @@ def build_travel_products(rows: list[dict], prev_by_sku: dict[str, dict], now_is
         price0 = gbp_to_krw(gbp0)
         in_stock = any(v["inStock"] for v in variants)
 
-        tags = ["prada", "프라다", "bags", "가방", "travel", "여행", "여성", *cols]
+        tags = ["prada", "프라다", "bags", "가방", "travel", "여행", gender_tag, *cols]
         out.append(
             {
                 "id": pid,
@@ -2193,7 +2253,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "acc", "all"],
+        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "mens-travel", "acc", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -2282,6 +2342,13 @@ def main() -> None:
         ]
         for r in travel_rows:
             r["_kind"] = "travel"
+    if only in {"all", "mens-travel", "bags", "mens-bags"} and RAW_MEN_TRAVEL.exists():
+        mens_travel = [
+            dict(r) for r in (json.loads(RAW_MEN_TRAVEL.read_text()).get("products") or [])
+        ]
+        for r in mens_travel:
+            r["_kind"] = "mens-travel"
+            travel_rows.append(r)
     acc_rows: list[dict] = []
     if only in {"all", "acc"} and RAW_ACC.exists():
         acc_rows = [
@@ -2296,7 +2363,7 @@ def main() -> None:
             "scrape-pr-womens-rtw.py, scrape-pr-womens-shoes.py, "
             "scrape-pr-mens-shoes.py, "
             "scrape-pr-womens-slg.py, scrape-pr-mens-slg.py, "
-            "scrape-pr-womens-travel.py, "
+            "scrape-pr-womens-travel.py, scrape-pr-mens-travel.py, "
             "and/or scrape-pr-womens-accessories.py first"
         )
 
@@ -2306,7 +2373,7 @@ def main() -> None:
     if only in {"all", "slg", "mens-slg"}:
         n_seed = seed_slg_cache(_KO)
         print(f"seeded {n_seed} curated SLG strings", flush=True)
-    if only in {"all", "travel", "bags"}:
+    if only in {"all", "travel", "mens-travel", "bags", "mens-bags"}:
         n_seed = seed_travel_cache(_KO)
         print(f"seeded {n_seed} curated travel strings", flush=True)
     if only in {"all", "bags", "mens-bags"}:
@@ -2345,7 +2412,7 @@ def main() -> None:
         print(f"cleared {dropped} weak cache entries for SLG retranslate", flush=True)
         n_seed = seed_slg_cache(_KO)
         print(f"re-seeded {n_seed} curated SLG strings", flush=True)
-    if args.force_translate and only in {"travel", "bags"}:
+    if args.force_translate and only in {"travel", "mens-travel", "bags"}:
         dropped = purge_weak_cache()
         print(f"cleared {dropped} weak cache entries for travel retranslate", flush=True)
         n_seed = seed_travel_cache(_KO)
@@ -2376,7 +2443,7 @@ def main() -> None:
             prod = build_shoes_product(row, prev_by_sku.get(sku), now_iso)
         elif kind in {"womens-slg", "slg", "mens-slg"}:
             continue  # built via build_slg_products below
-        elif kind in {"womens-travel", "travel"}:
+        elif kind in {"womens-travel", "travel", "mens-travel"}:
             continue  # built via build_travel_products below
         elif kind in {"womens-accessories", "acc"}:
             continue  # built via build_accessories_products below
@@ -2408,11 +2475,14 @@ def main() -> None:
         print(f"building travel color groups from {len(travel_rows)} SKUs…", flush=True)
         for prod in build_travel_products(travel_rows, prev_by_sku, now_iso):
             if prod["id"] in seen:
+                existing_prod = next((p for p in products if p["id"] == prod["id"]), None)
+                if existing_prod:
+                    merge_prada_product_fields(existing_prod, prod)
                 continue
             seen.add(prod["id"])
             products.append(prod)
         print(
-            f"  travel products={sum(1 for p in products if 'pr-women-travel' in (p.get('prCollections') or []))}",
+            f"  travel products={sum(1 for p in products if 'travel' in (p.get('tags') or []))}",
             flush=True,
         )
 
@@ -2470,6 +2540,23 @@ def main() -> None:
                 and not any(
                     c in TRAVEL_LEAF_COLLECTIONS
                     for c in (p.get("prCollections") or [])
+                )
+            ]
+            products = merged + products
+        elif only == "mens-travel":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and p.get("category") == "bags"
+                    and (
+                        "pr-men-travel" in (p.get("prCollections") or [])
+                        or any(
+                            c in MEN_TRAVEL_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
                 )
             ]
             products = merged + products
@@ -2580,6 +2667,7 @@ def main() -> None:
 
     products.sort(key=lambda p: p["id"])
     validate_prada_rtw_sizes(products, scope=only)
+    products = dedupe_merge_products(products)
     validate_prada_korean(products, scope=only)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
@@ -2632,6 +2720,10 @@ def main() -> None:
         if n:
             print(f"  {leaf}: {n}", flush=True)
     for leaf in TRAVEL_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in MEN_TRAVEL_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)

@@ -463,6 +463,10 @@ export type SubcategoryId =
   | "pr-men-clutches"
   | "pr-men-messenger-bags"
   | "pr-men-tote-bags"
+  | "pr-men-travel"
+  | "pr-men-travel-bags"
+  | "pr-men-luggage-carry-on"
+  | "pr-men-travel-accessories"
   | "prada"
   | "prada-luxury"
   | "pr-women"
@@ -953,6 +957,13 @@ export const PR_WOMEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
   "pr-women-travel-bags",
   "pr-women-luggage-carry-on",
   "pr-women-travel-accessories",
+];
+
+/** Prada men's travel leaves (official GB travel PLPs). */
+export const PR_MEN_TRAVEL_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-travel-bags",
+  "pr-men-luggage-carry-on",
+  "pr-men-travel-accessories",
 ];
 
 /** Prada women's ready-to-wear leaves (official GB RTW PLPs). */
@@ -1919,6 +1930,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_WOMEN_TRAVEL_LEAF_IDS,
     "pr-mens-handbags",
     ...PR_MENS_HANDBAG_LEAF_IDS,
+    "pr-men-travel",
+    ...PR_MEN_TRAVEL_LEAF_IDS,
   ],
   prada: [
     "prada",
@@ -1936,6 +1949,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_WOMEN_TRAVEL_LEAF_IDS,
     "pr-mens-handbags",
     ...PR_MENS_HANDBAG_LEAF_IDS,
+    "pr-men-travel",
+    ...PR_MEN_TRAVEL_LEAF_IDS,
     "prada-shoes",
     "pr-women-shoes",
     ...PR_WOMEN_SHOE_LEAF_IDS,
@@ -2003,12 +2018,21 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-travel-bags": ["pr-women-travel-bags"],
   "pr-women-luggage-carry-on": ["pr-women-luggage-carry-on"],
   "pr-women-travel-accessories": ["pr-women-travel-accessories"],
-  "pr-mens-handbags": ["pr-mens-handbags", ...PR_MENS_HANDBAG_LEAF_IDS],
+  "pr-mens-handbags": [
+    "pr-mens-handbags",
+    ...PR_MENS_HANDBAG_LEAF_IDS,
+    "pr-men-travel",
+    ...PR_MEN_TRAVEL_LEAF_IDS,
+  ],
   "pr-men-backpacks-belt-bags": ["pr-men-backpacks-belt-bags"],
   "pr-men-briefcases": ["pr-men-briefcases"],
   "pr-men-clutches": ["pr-men-clutches"],
   "pr-men-messenger-bags": ["pr-men-messenger-bags"],
   "pr-men-tote-bags": ["pr-men-tote-bags"],
+  "pr-men-travel": ["pr-men-travel", ...PR_MEN_TRAVEL_LEAF_IDS],
+  "pr-men-travel-bags": ["pr-men-travel-bags"],
+  "pr-men-luggage-carry-on": ["pr-men-luggage-carry-on"],
+  "pr-men-travel-accessories": ["pr-men-travel-accessories"],
   "prada-shoes": [
     "prada-shoes",
     "pr-women-shoes",
@@ -3810,6 +3834,29 @@ export const navCategories: NavCategory[] = [
                 id: "pr-men-tote-bags",
                 labelKo: "토트백",
                 href: "/shop?category=bags&sub=pr-men-tote-bags",
+              },
+              {
+                id: "pr-men-travel",
+                labelKo: "여행용",
+                href: "/shop?category=bags&sub=pr-men-travel",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "pr-men-travel-bags",
+                    labelKo: "트래블백",
+                    href: "/shop?category=bags&sub=pr-men-travel-bags",
+                  },
+                  {
+                    id: "pr-men-luggage-carry-on",
+                    labelKo: "러기지 & 캐리온",
+                    href: "/shop?category=bags&sub=pr-men-luggage-carry-on",
+                  },
+                  {
+                    id: "pr-men-travel-accessories",
+                    labelKo: "트래블 액세서리",
+                    href: "/shop?category=bags&sub=pr-men-travel-accessories",
+                  },
+                ],
               },
             ],
           },
