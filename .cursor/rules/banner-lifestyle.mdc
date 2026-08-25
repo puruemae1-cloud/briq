@@ -1,0 +1,24 @@
+---
+description: Homepage/category banners prefer campaign lifestyle photos and taller crops — not flat packshot thumbs
+globs: scripts/weekly-banner-refresh.py,scripts/banner_smart_crop.py,src/app/globals.css,src/data/home-banners.ts,src/data/shop-heroes.ts
+alwaysApply: false
+---
+
+# Briq banner photography
+
+Prefer **Prada-like campaign / lifestyle** frames over grey studio packshots.
+
+## Do
+
+- Shoes: on-model legs, walking, styled footwear (gallery `/2` `/3`), not lone shoe on white
+- Clothing / luxury: natural on-model outfits; allow faces unless face-dominant headshot
+- Bags: staged still-life or on-model carry; avoid flat `/1.jpg` packshots when better frames exist
+- Watches: packshot dials remain OK
+- Look-banner crops are **taller** (~2:1 desktop, more vertical on mobile) so subjects are not cropped
+- Weekly job: `python3 scripts/weekly-banner-refresh.py` (same rules)
+
+## Do not
+
+- Force packshot-first for shoes / bags / accessories / clothing
+- Reject on-model frames for shoe/bag slots (use `lifestyle_product_source_ok`)
+- Shrink look-banner `max-height` back to the old short panoramic strip

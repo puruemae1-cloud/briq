@@ -26,6 +26,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pr_download_image import download_image  # noqa: E402
+from pr_sizes import (  # noqa: E402
+    assert_no_mixed_rtw_sizes,
+    rtw_sizes,
+    sizes_from_hit,
+    sizes_from_pdp_html,
+)
 
 OUT_RAW = ROOT / "src/data/pr/pr-womens-rtw-catalog-raw.json"
 PDP_CACHE = ROOT / "src/data/pr/pr-womens-rtw-pdp-cache.json"
@@ -193,59 +199,6 @@ def primary_leaf(cols: list[str], hit: dict) -> str:
     return "pr-women-rtw"
 
 
-def sizes_from_hit(hit: dict) -> list[dict]:
-    """All PDP sizes with per-size stock from Prada Algolia.
-
-    SizeGroupStore / availableSizesStore list every size shown on the official PDP.
-    availableSizes lists sizes that can be purchased online right now.
-    """
-    in_stock_labels = {
-        str(sz.get("label") or "").strip().upper()
-        for sz in (hit.get("availableSizes") or [])
-        if str(sz.get("label") or "").strip()
-    }
-
-    code_by_label: dict[str, str] = {}
-    for src in (hit.get("availableSizesStore") or [], hit.get("availableSizes") or []):
-        for sz in src:
-            label = str(sz.get("label") or "").strip()
-            if label:
-                code_by_label.setdefault(label.upper(), str(sz.get("code") or ""))
-
-    all_labels: list[str] = []
-    seen: set[str] = set()
-
-    def add_label(raw: str) -> None:
-        label = raw.strip()
-        if not label:
-            return
-        key = label.upper()
-        if key in seen:
-            return
-        seen.add(key)
-        all_labels.append(label)
-
-    for label in (hit.get("SizeGroupStore") or {}).get("en_GB") or []:
-        add_label(str(label))
-    for sz in hit.get("availableSizesStore") or []:
-        add_label(str(sz.get("label") or ""))
-    for sz in hit.get("availableSizes") or []:
-        add_label(str(sz.get("label") or ""))
-
-    out = [
-        {
-            "size": label,
-            "code": code_by_label.get(label.upper(), ""),
-            "inStock": label.upper() in in_stock_labels,
-        }
-        for label in all_labels
-    ]
-
-    order = {"XXS": 0, "XS": 1, "S": 2, "M": 3, "L": 4, "XL": 5, "XXL": 6, "XXXL": 7}
-    out.sort(key=lambda x: (order.get(x["size"].upper(), 50), x["size"]))
-    return out
-
-
 def parse_pdp(html: str, sku: str) -> dict:
     desc = ""
     m = re.search(r'<meta\s+name="description"\s+content="([^"]+)"', html, re.I)
@@ -324,7 +277,7 @@ def parse_pdp(html: str, sku: str) -> dict:
     if tm:
         title = re.sub(r"\s*\|\s*PRADA.*$", "", tm.group(1).strip(), flags=re.I).strip()
 
-    return {
+    out = {
         "description": desc,
         "details": details,
         "materialsCare": materials_care,
@@ -332,6 +285,10 @@ def parse_pdp(html: str, sku: str) -> dict:
         "gbpPrice": price,
         "title": title,
     }
+    pdp_sizes = sizes_from_pdp_html(html)
+    if pdp_sizes:
+        out["sizes"] = pdp_sizes
+    return out
 
 
 def fetch_pdp(s: cffi_requests.Session, url: str, sku: str) -> dict:
@@ -423,7 +380,21 @@ def refresh_sizes_from_algolia() -> None:
             continue
         if not hit.get("objectID"):
             continue
-        sizes = sizes_from_hit(hit)
+        pdp_html = ""
+        url = row.get("url") or ""
+        if url:
+            try:
+                pr = s.get(
+                    url,
+                    headers=headers_html(),
+                    impersonate="chrome124",
+                    timeout=90,
+                )
+                if pr.status_code == 200:
+                    pdp_html = pr.text
+            except Exception as e:
+                print(f"  pdp skip {sku}: {e}", flush=True)
+        sizes = rtw_sizes(hit, pdp_html or None)
         row["sizes"] = sizes
         row["inStock"] = (
             any(sz["inStock"] for sz in sizes)
@@ -436,6 +407,7 @@ def refresh_sizes_from_algolia() -> None:
         time.sleep(0.05)
 
     payload["products"] = products
+    assert_no_mixed_rtw_sizes(products, context="women's RTW size refresh")
     payload["sizesRefreshedAt"] = datetime.now(timezone.utc).isoformat()
     OUT_RAW.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
 
@@ -466,7 +438,7 @@ def main() -> None:
     ap.add_argument(
         "--refresh-sizes",
         action="store_true",
-        help="Re-fetch Algolia size/stock flags for products already in raw",
+        help="Re-fetch PDP picker sizes (+ Algolia stock) for products already in raw",
     )
     args = ap.parse_args()
 
@@ -574,6 +546,9 @@ def main() -> None:
             "scrapedAt": datetime.now(timezone.utc).isoformat(),
             "stage": args.stage,
         }
+        if pdp.get("sizes"):
+            enriched["sizes"] = pdp["sizes"]
+            enriched["inStock"] = any(sz.get("inStock") for sz in pdp["sizes"])
         with cache_lock:
             cache[sku] = {
                 "pdp": {
@@ -688,6 +663,7 @@ def main() -> None:
         "count": len(merged),
         "products": merged,
     }
+    assert_no_mixed_rtw_sizes(merged, context="women's RTW scrape")
     OUT_RAW.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
     PDP_CACHE.write_text(json.dumps(cache, ensure_ascii=False))
     progress = {

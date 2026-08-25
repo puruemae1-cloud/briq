@@ -2,15 +2,16 @@
 
 Desktop / tablet / mobile targets match the live CSS frames:
   hero desktop    2400×600  (4:1)  — homepage PC hero is a short panoramic strip
-  look desktop    2400×900  (8:3)  — homepage PC look-banners (max 720px × full width)
-  look/hero tablet 1600×680 (~2.35:1)
-  mobile          1200×800  (3:2)  — phones are closer to square
-  shop desktop    2400×1200 (2:1)  — category strip
-  shop tablet     1600×800
-  shop mobile     1200×600
+  look desktop    2400×1200 (2:1)  — taller campaign look-banners (editorial room)
+  look/hero tablet 1600×900 (~16:9)
+  mobile          1200×1000 (6:5)  — phones keep more vertical subject
+  shop desktop    2400×1400 (~1.7:1)  — category strip
+  shop tablet     1600×1000
+  shop mobile     1200×800
 
 Crops bias toward the subject (and faces in the upper half) so models and
 product don't get cut off awkwardly under CSS object-fit: cover.
+Prefer campaign / lifestyle sources over flat packshots — see weekly-banner-refresh.
 """
 from __future__ import annotations
 
@@ -23,13 +24,13 @@ from PIL import Image, ImageFilter, ImageOps
 HERO_DESKTOP = (2400, 600)
 HERO_TABLET = (1600, 500)
 HERO_MOBILE = (1200, 800)
-# Homepage PC look-banner: max-height 720 at 1920px ≈ 2.67:1
-LOOK_DESKTOP = (2400, 900)
-LOOK_TABLET = (1600, 680)
-LOOK_MOBILE = (1200, 800)
-SHOP_DESKTOP = (2400, 1200)
-SHOP_TABLET = (1600, 800)
-SHOP_MOBILE = (1200, 600)
+# Homepage look-banners: taller so campaign / on-model frames keep legs, bags, outfit
+LOOK_DESKTOP = (2400, 1200)
+LOOK_TABLET = (1600, 900)
+LOOK_MOBILE = (1200, 1000)
+SHOP_DESKTOP = (2400, 1400)
+SHOP_TABLET = (1600, 1000)
+SHOP_MOBILE = (1200, 800)
 
 # Back-compat aliases
 DESKTOP = LOOK_DESKTOP
@@ -141,15 +142,14 @@ def cover_crop(
     if mobile_bias:
         # Phones crop tighter; keep a little headroom without losing the outfit.
         cy = min(max(cy, 0.28), 0.42)
-    elif tw / max(th, 1) >= 2.4:
-        # Panoramic PC strip — never pin to the top 18% (that zooms faces /
-        # cuts shoes off the bottom). Bias to torso or product mid-frame.
+    elif tw / max(th, 1) >= 1.85:
+        # Wide PC / tablet strips — keep torso / product mid-frame (not face-only).
         if vertical_bias == "face":
             cy = min(max(cy, 0.12), 0.28)
         elif vertical_bias == "product":
-            cy = min(max(cy, 0.42), 0.62)
+            cy = min(max(cy, 0.40), 0.60)
         else:
-            cy = min(max(cy, 0.34), 0.52)
+            cy = min(max(cy, 0.32), 0.52)
 
     left = int(round(cx * nw - tw / 2))
     top = int(round(cy * nh - th / 2))

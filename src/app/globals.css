@@ -524,7 +524,7 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 .shop-hero {
   position: relative;
-  height: clamp(11rem, 28vw, 18rem);
+  height: clamp(13rem, 34vw, 22rem);
   overflow: hidden;
   margin-bottom: 0.25rem;
 }
@@ -1534,8 +1534,8 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner {
-    min-height: 40svh;
-    max-height: 420px;
+    min-height: 48svh;
+    max-height: 520px;
   }
 
   .look-banner__img {
@@ -1556,8 +1556,8 @@ body:has(.nav-drawer-toggle:checked) {
 
   .collection-100__banner {
     content-visibility: visible;
-    min-height: 42svh;
-    max-height: 28rem;
+    min-height: 48svh;
+    max-height: 34rem;
   }
 
   .shop-hero__img,
@@ -1571,7 +1571,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .shop-hero {
-    min-height: 12.5rem;
+    min-height: 15rem;
   }
 
   .collection-100 .product-grid > * {
@@ -1749,8 +1749,8 @@ body:has(.nav-drawer-toggle:checked) {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 52svh;
-  max-height: 640px;
+  min-height: 48svh;
+  max-height: 520px;
   display: grid;
   align-items: end;
   color: #f7f4ec;
@@ -1769,8 +1769,8 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .look-banner {
-    min-height: 56svh;
-    max-height: 720px;
+    min-height: 64svh;
+    max-height: 900px;
   }
 }
 
@@ -2476,8 +2476,8 @@ body:has(.nav-drawer-toggle:checked) {
   position: relative;
   overflow: hidden;
   /* Match lookbook banner proportions (full-bleed L/R) */
-  min-height: 52svh;
-  max-height: 640px;
+  min-height: 48svh;
+  max-height: 520px;
   width: 100%;
   color: #f7f4ec;
   display: grid;
@@ -2486,8 +2486,8 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .collection-100__banner {
-    min-height: 56svh;
-    max-height: 720px;
+    min-height: 64svh;
+    max-height: 900px;
   }
 }
 

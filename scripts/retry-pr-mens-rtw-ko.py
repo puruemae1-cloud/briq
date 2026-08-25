@@ -156,9 +156,13 @@ def main() -> None:
     )
     added = 0
     for i, s in enumerate(batch, start=1):
+        # Force re-translate hybrid cache (partial phrase maps like "개버딘 blouson").
+        hit = build._KO.get(s)
+        if hit and build.en_ratio(hit) >= build._MAX_KO_EN_RATIO:
+            build._KO.pop(s, None)
         ko = build.t(s)
         if ko and build.en_ratio(ko) < build._MAX_KO_EN_RATIO:
-            if build._KO.get(s) != ko:
+            if hit != ko:
                 added += 1
             build._KO[s] = ko
         if i % 20 == 0 or i == len(batch):

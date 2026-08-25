@@ -1,0 +1,27 @@
+---
+description: Prada RTW size options must match official PDP picker — never mix S/M/L with numeric sizes
+globs: scripts/scrape-pr-*-rtw.py,scripts/pr_sizes.py,scripts/build-pr-catalog.py,src/data/pr/pr-*-rtw*
+alwaysApply: false
+---
+
+# Prada RTW size options
+
+Official Prada ready-to-wear PDP size pickers are the source of truth.
+
+## Do
+
+- Prefer PDP HTML `aria-label="Select size …"` via `pr_sizes.rtw_sizes` / `sizes_from_pdp_html`
+- Use `availableSizesStore` / `availableSizes` for codes + online stock
+- Keep short variants (`46S`, `48S`) as separate purchasable sizes when the PDP shows them
+- Run `python3 scripts/verify-pr-rtw-sizes.py` and `python3 scripts/test_pr_sizes.py` after size changes
+
+## Do not
+
+- Never merge Algolia `SizeGroupStore` letter labels (`S`/`M`/`L`/`XL`) into the variant list when numeric IT/waist sizes exist — those letters are conversion-chart labels, not PDP picker SKUs
+- Never ship a product with both letter sizes and numeric sizes in `sizes` / `variants` (e.g. `S, M, L, 48, 50`)
+
+## Guards already in place
+
+- `pr_sizes.assert_no_mixed_rtw_sizes` — scrape refresh + catalog build hard-fail
+- `scripts/verify-pr-rtw-sizes.py` — raw + catalog check
+- `scripts/test_pr_sizes.py` — regression for the GEB310-style Algolia mix

@@ -28,6 +28,7 @@ from pr_size_charts import (  # noqa: E402
     size_chart_for_shoes,
     size_chart_for_variants,
 )
+from pr_sizes import assert_no_mixed_rtw_sizes  # noqa: E402
 from pr_shoe_ko import seed_shoe_cache, shoe_text_ko  # noqa: E402
 from pr_slg_ko import seed_slg_cache, slg_text_ko  # noqa: E402
 from pr_travel_ko import seed_travel_cache, travel_text_ko  # noqa: E402
@@ -574,39 +575,60 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
         )
 
 
+def validate_prada_rtw_sizes(products: list[dict], scope: str = "all") -> None:
+    """Fail if RTW products mix letter (S/M/L) and numeric (48/48S) size options."""
+    if scope not in {"all", "rtw", "mens-rtw"}:
+        return
+    rtw: list[dict] = []
+    for p in products:
+        if p.get("brand") != "프라다" or p.get("category") != "luxury":
+            continue
+        cols = p.get("prCollections") or []
+        is_women = (
+            "pr-women-rtw" in cols
+            or "pr-women" in cols
+            or any(c in RTW_LEAF_COLLECTIONS for c in cols)
+        )
+        is_men = (
+            "pr-men-rtw" in cols
+            or "pr-men" in cols
+            or any(c in MENS_RTW_LEAF_COLLECTIONS for c in cols)
+        )
+        if scope == "rtw" and not is_women:
+            continue
+        if scope == "mens-rtw" and not is_men:
+            continue
+        if scope == "all" and not (is_women or is_men):
+            continue
+        rtw.append(p)
+    assert_no_mixed_rtw_sizes(rtw, context=f"Prada catalog build ({scope})")
+
+
 def t(text: str | None) -> str:
     s = re.sub(r"\s+", " ", (text or "").strip())
     if not s:
         return ""
     # Prefer SLG curated maps before shoe heuristics (shoe_text_ko treats any
     # short string containing "logo"/"lining" as a shoe detail).
-    curated = slg_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
-    curated = travel_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
-    curated = mens_handbag_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
-    curated = mens_rtw_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
-    curated = accessories_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
-    curated = shoe_text_ko(s)
-    if curated is not None:
-        _KO[s] = curated
-        return curated
+    # Only accept curated / phrase hits that pass hybrid-English QA.
+    for curated_fn in (
+        slg_text_ko,
+        travel_text_ko,
+        mens_handbag_text_ko,
+        mens_rtw_text_ko,
+        accessories_text_ko,
+        shoe_text_ko,
+    ):
+        curated = curated_fn(s)
+        if curated is not None and en_ratio(curated) < _MAX_KO_EN_RATIO:
+            _KO[s] = curated
+            return curated
     # Reuse good cache hits only (never keep hybrid EN/KO).
     if s in _KO and en_ratio(_KO[s]) < _MAX_KO_EN_RATIO:
         return apply_glossary(_KO[s])
+    # Drop stale hybrid cache so gtx / phrase fallback can replace it.
+    if s in _KO and en_ratio(_KO[s]) >= _MAX_KO_EN_RATIO:
+        _KO.pop(s, None)
     # short glossary hit (exact title phrase)
     if s in _GLOSSARY:
         return _GLOSSARY[s]
@@ -2412,6 +2434,7 @@ def main() -> None:
             products = merged + products
 
     products.sort(key=lambda p: p["id"])
+    validate_prada_rtw_sizes(products, scope=only)
     validate_prada_korean(products, scope=only)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
@@ -2475,6 +2498,17 @@ def main() -> None:
     )
     if verify.returncode != 0:
         raise SystemExit("Prada catalog image verify failed — fix before shipping.")
+
+    if only in {"all", "rtw", "mens-rtw"}:
+        size_verify = subprocess.run(
+            [sys.executable, str(SCRIPTS / "verify-pr-rtw-sizes.py")],
+            cwd=str(ROOT),
+            check=False,
+        )
+        if size_verify.returncode != 0:
+            raise SystemExit(
+                "Prada RTW size verify failed — mixed letter+numeric sizes detected."
+            )
 
 
 if __name__ == "__main__":

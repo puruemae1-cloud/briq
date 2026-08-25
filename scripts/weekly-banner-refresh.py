@@ -5,9 +5,12 @@
   (Parliament / Big Ben / Thames / bridges) — never apparel or accessories.
 - "Now in London" (rot-event-*): watches / shoes / accessories / bags only,
   converted to black-and-white to match the hero tone — never clothing or sports.
+- Fashion rails (shoes / bags / clothing / luxury / accessories): prefer
+  campaign / on-model / staged lifestyle frames — not flat grey packshot thumbs.
+  Look-banner crops are taller (~2:1 desktop) so legs, bags, and outfits stay in frame.
 - Other rails: official product galleries on the `product-images` CDN.
 
-PC frames are panoramic (hero ~4:1, look-banners ~3:1) with desktop / tablet /
+PC frames are panoramic (hero ~4:1, look-banners ~2:1) with desktop / tablet /
 mobile crops via banner_smart_crop.
 
   python3 scripts/weekly-banner-refresh.py
@@ -79,10 +82,10 @@ SLOT_THEMES: dict[str, list[str]] = {
     "rot-watch-1.jpg": ["watches"],
     "rot-watch-2.jpg": ["watches"],
     "rot-watch-3.jpg": ["watches"],
-    "rot-cw-1.jpg": ["watches"],
-    "rot-cw-2.jpg": ["watches"],
-    "rot-cw-3.jpg": ["watches"],
-    "rot-cw-alt.jpg": ["watches"],
+    "rot-cw-1.jpg": ["brand:christopher-ward"],
+    "rot-cw-2.jpg": ["brand:christopher-ward"],
+    "rot-cw-3.jpg": ["brand:christopher-ward"],
+    "rot-cw-alt.jpg": ["brand:christopher-ward"],
     "rot-golf-1.jpg": ["golf"],
     "rot-golf-2.jpg": ["golf"],
     "rot-golf-3.jpg": ["golf"],
@@ -208,15 +211,23 @@ SPORTS_SLOTS = {
     or n.startswith("brand-galvin-green-")
 }
 
-# Product stills — shoes / bags / accessories must stay readable after the PC crop.
+# Product stills — shoes / bags / accessories / watches must stay readable after the PC crop.
 PRODUCT_SLOTS = {
     n
     for n in SLOT_THEMES
     if n.startswith("rot-shoe-")
     or n.startswith("rot-bag-")
     or n.startswith("rot-acc-")
+    or n.startswith("rot-watch-")
+    or n.startswith("rot-cw-")
     or n.startswith("shop-shoe-")
     or n.startswith("shop-bag-")
+}
+
+WATCH_SLOTS = {
+    n
+    for n in SLOT_THEMES
+    if n.startswith("rot-watch-") or n.startswith("rot-cw-")
 }
 
 BRAND_MATCH: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
@@ -480,7 +491,20 @@ def theme_match(product: dict, themes: list[str]) -> bool:
     checks = {
         "luxury": any(
             x in blob
-            for x in ("gucci", "버버리", "burberry", "chanel", "샤넬", "luxury", "gc-", "bb-", "ch-")
+            for x in (
+                "gucci",
+                "버버리",
+                "burberry",
+                "chanel",
+                "샤넬",
+                "prada",
+                "프라다",
+                "luxury",
+                "gc-",
+                "bb-",
+                "ch-",
+                "pr-",
+            )
         ),
         "fashion": any(
             x in blob
@@ -497,6 +521,8 @@ def theme_match(product: dict, themes: list[str]) -> bool:
                 "hoodie",
                 "paul smith",
                 "belstaff",
+                "prada",
+                "프라다",
             )
         )
         and not any(
@@ -615,7 +641,60 @@ def theme_match(product: dict, themes: list[str]) -> bool:
                 )
             )
         ),
-        "watches": any(x in blob for x in ("watch", "시계", "christopher ward", "cw-")),
+        # Strict: real watches only — never "Black Watch" tartan umbrellas or
+        # jewellery that shares a "jewellery & watches" hub tag.
+        "watches": (
+            (
+                str(product.get("category") or "").lower() == "watches"
+                or str(product.get("id") or "").lower().startswith("cw-")
+                or str(product.get("subcategory") or "")
+                .lower()
+                .startswith(("gc-watches", "ch-watches", "cw-"))
+                or any(
+                    str(c).lower().startswith(("gc-watches", "ch-watches", "cw-"))
+                    for c in (
+                        *(product.get("gcCollections") or []),
+                        *(product.get("chCollections") or []),
+                        *(product.get("tags") or []),
+                    )
+                )
+            )
+            and not any(
+                x in blob
+                for x in (
+                    "umbrella",
+                    "우산",
+                    "parasol",
+                    "black-watch-tartan",
+                    "black_watch_tartan",
+                    "watch-tartan",
+                    "watch tartan",
+                    "시계 타탄",
+                )
+            )
+            and not (
+                str(product.get("category") or "").lower() == "accessories"
+                and not (
+                    str(product.get("subcategory") or "")
+                    .lower()
+                    .startswith(("gc-watches", "ch-watches"))
+                    or any(
+                        str(c).lower().startswith("gc-watches")
+                        for c in (product.get("gcCollections") or [])
+                    )
+                )
+            )
+            and not any(
+                x in str(product.get("subcategory") or "").lower()
+                for x in (
+                    "jewellery",
+                    "jewelry",
+                    "gold-jewellery",
+                    "silver-jewellery",
+                    "fine-jewellery",
+                )
+            )
+        ),
         "golf": any(x in blob for x in ("golf", "골프", "galvin")),
         "outdoor": any(
             x in blob for x in ("arc'teryx", "arcteryx", "outdoor", "running", "hike", "axa-", "ax-")
@@ -673,6 +752,7 @@ def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str], se
         ROOT / "src/data/bs/bs-catalog.json",
         ROOT / "src/data/cw/cw-catalog-raw.json",
         ROOT / "src/data/lu/lu-catalog.ts",
+        ROOT / "src/data/pr/pr-catalog.json",
     ]
     themes = {
         "luxury",
@@ -705,14 +785,18 @@ def collect_candidates() -> tuple[dict[str, list[tuple[str, str]]], set[str], se
             pack_imgs = (pack_only or pack_imgs)[:2]
             if not look_imgs and not pack_imgs:
                 continue
-            product_themes = {"shoes", "bags", "accessories", "watches"}
+            # Watches: packshot dials. Everything else: campaign / lifestyle first.
+            packshot_first_themes = {"watches"}
             for theme in list(by_theme):
                 if not theme_match(product, [theme]):
                     continue
-                imgs = pack_imgs if theme in product_themes else look_imgs
+                if theme in packshot_first_themes:
+                    imgs = pack_imgs or look_imgs
+                else:
+                    imgs = look_imgs or pack_imgs
                 if not imgs:
                     imgs = pack_imgs or look_imgs
-                for img in imgs[:3]:
+                for img in imgs[:4]:
                     by_theme[theme].append((pid, img))
     for theme, rows in by_theme.items():
         seen: set[str] = set()
@@ -860,6 +944,24 @@ def pick_for_slot(
     if slot in CLOTHING_SLOTS and clothing_ids:
         clothed = [o for o in options if o[0] in clothing_ids]
         options = clothed
+    if slot in WATCH_SLOTS:
+        # Hard ban: London Undercover "Black Watch" tartan umbrellas etc.
+        options = [
+            o
+            for o in options
+            if not any(
+                x in f"{o[0]} {o[1]}".lower()
+                for x in (
+                    "umbrella",
+                    "우산",
+                    "parasol",
+                    "watch-tartan",
+                    "watch_tartan",
+                    "watch tartan",
+                    "lu-",
+                )
+            )
+        ]
     brand_only = any(t.startswith("brand:") for t in themes)
     if not options and not brand_only:
         # fallback — event stays non-apparel; shoe/bag product slots stay in-theme
@@ -903,20 +1005,23 @@ def pick_for_slot(
             )
         )
     elif slot in CLOTHING_SLOTS:
-        luxury = slot.startswith("rot-luxury-")
+        # Prefer on-model / campaign gallery frames over packshot /1.jpg
         options.sort(
             key=lambda o: (
-                0 if luxury and re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
-                0 if (not luxury) and re.search(r"/2\.jpe?g$", o[1], re.I) else 1,
+                0 if is_likely_on_model(o[1]) else 2,
+                0 if re.search(r"/[23]\.jpe?g$", o[1], re.I) else 1,
+                1 if re.search(r"/1\.jpe?g$", o[1], re.I) else 0,
                 0 if "/look" in o[1].lower() else 1,
             )
         )
     elif slot in PRODUCT_SLOTS:
+        # Shoes / bags / accessories: lifestyle over grey packshots
         options.sort(
             key=lambda o: (
-                2 if re.search(r"/[3-9]\.jpe?g$", o[1], re.I) else 0,
+                0 if is_likely_on_model(o[1]) else 2,
+                1 if re.search(r"/1\.jpe?g$", o[1], re.I) else 0,
                 1 if is_likely_detail_frame(o[1]) else 0,
-                0 if re.search(r"/1\.jpe?g$", o[1], re.I) else 1,
+                0 if re.search(r"/[23]\.jpe?g$", o[1], re.I) else 1,
             )
         )
     return options
@@ -931,15 +1036,19 @@ def slot_kind(slot: str) -> str:
 
 
 def slot_vertical_bias(slot: str) -> str:
-    if slot in PRODUCT_SLOTS:
+    # Watches stay product-centred; shoes/bags/acc use torso/lower for lifestyle.
+    if slot in WATCH_SLOTS:
         return "product"
+    if slot in PRODUCT_SLOTS:
+        return "torso"
     return "torso"
 
 
 def clothing_source_ok(source, img: str, *, luxury_only: bool = False) -> tuple[bool, str]:
-    """Accept outfit / garment stills; reject headshots and unreadable macros."""
+    """Accept natural on-model / campaign outfit frames; reject headshot macros."""
+    del luxury_only  # kept for call-site compat; lifestyle faces are allowed
     ratio = aspect_ratio(source)
-    if ratio < 0.62:
+    if ratio < 0.50:
         return False, f"too-tall {ratio:.2f}"
     if is_extreme_closeup(source):
         return False, "extreme-closeup"
@@ -947,19 +1056,16 @@ def clothing_source_ok(source, img: str, *, luxury_only: bool = False) -> tuple[
         return False, "detail-frame"
     if is_face_dominant(source):
         return False, "face-dominant"
-    # Signature clothing rail: garment stills only — no on-model face banners.
-    if luxury_only and has_on_model_face(source):
-        return False, "luxury-no-face"
     fill = subject_fill_ratio(source)
-    if fill > 0.88:
+    if fill > 0.92:
         return False, f"macro-fill {fill:.2f}"
-    if fill < 0.08:
+    if fill < 0.06:
         return False, f"empty {fill:.2f}"
     return True, "ok"
 
 
 def product_source_ok(source, img: str) -> tuple[bool, str]:
-    """Shoes / bags / accessories must read as the full product after PC crop."""
+    """Watch / flat stills — full product readable, no outfit lookbooks."""
     ratio = aspect_ratio(source)
     low = img.lower()
     if any(x in low for x in ("parfum", "perfume", "fragrance", "lipstick", "makeup")):
@@ -980,18 +1086,41 @@ def product_source_ok(source, img: str) -> tuple[bool, str]:
     return True, "ok"
 
 
+def lifestyle_product_source_ok(source, img: str) -> tuple[bool, str]:
+    """Shoes / bags / accessories: campaign, on-model, or staged still-life."""
+    ratio = aspect_ratio(source)
+    low = img.lower()
+    if any(x in low for x in ("parfum", "perfume", "fragrance", "lipstick", "makeup")):
+        return False, "beauty-not-acc"
+    if is_likely_detail_frame(img):
+        return False, "detail-frame"
+    if ratio < 0.48:
+        return False, f"too-tall {ratio:.2f}"
+    if is_extreme_closeup(source):
+        return False, "extreme-closeup"
+    if is_face_dominant(source):
+        return False, "face-dominant"
+    fill = subject_fill_ratio(source)
+    if fill < 0.06:
+        return False, f"empty {fill:.2f}"
+    if fill > 0.94:
+        return False, f"macro-fill {fill:.2f}"
+    return True, "ok"
+
+
 def event_edit_source_ok(source, img: str, pid: str, clothing_ids: set[str]) -> tuple[bool, str]:
     """Now in London: watches / shoes / accessories / bags — no apparel."""
     if pid in clothing_ids:
         return False, "clothing"
-    ok, why = product_source_ok(source, img)
-    if not ok:
-        if "watch" in img.lower() or pid.lower().startswith("cw-"):
-            ratio = aspect_ratio(source)
-            if ratio >= 0.55 and not is_face_dominant(source):
-                return True, "ok-watch"
+    if "watch" in img.lower() or pid.lower().startswith("cw-"):
+        ok, why = product_source_ok(source, img)
+        if ok:
+            return True, "ok"
+        ratio = aspect_ratio(source)
+        if ratio >= 0.55 and not is_face_dominant(source):
+            return True, "ok-watch"
         return False, why
-    return True, "ok"
+    return lifestyle_product_source_ok(source, img)
 
 
 def referenced_slots() -> list[str]:
@@ -1146,7 +1275,10 @@ def main() -> int:
                     last_err = f"{why} {ratio:.2f} {img}"
                     continue
             elif slot in PRODUCT_SLOTS:
-                ok_src, why = product_source_ok(source, img)
+                if slot in WATCH_SLOTS:
+                    ok_src, why = product_source_ok(source, img)
+                else:
+                    ok_src, why = lifestyle_product_source_ok(source, img)
                 if not ok_src:
                     last_err = f"{why} {ratio:.2f} {img}"
                     continue
@@ -1205,7 +1337,10 @@ def main() -> int:
                         if not ok_src:
                             continue
                     elif slot in PRODUCT_SLOTS:
-                        ok_src, _ = product_source_ok(source2, img2)
+                        if slot in WATCH_SLOTS:
+                            ok_src, _ = product_source_ok(source2, img2)
+                        else:
+                            ok_src, _ = lifestyle_product_source_ok(source2, img2)
                         if not ok_src:
                             continue
                     try:
