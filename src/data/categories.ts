@@ -511,6 +511,7 @@ export type SubcategoryId =
   | "pr-men-americas-cup"
   | "prada-accessories"
   | "pr-women-accessories"
+  | "pr-mens-accessories"
   | "pr-women-sunglasses"
   | "pr-women-silks-scarves"
   | "pr-women-hats-gloves"
@@ -525,6 +526,11 @@ export type SubcategoryId =
   | "pr-women-large-wallets"
   | "pr-women-wallets-on-chain"
   | "pr-women-high-tech-accessories"
+  | "pr-mens-slg"
+  | "pr-men-card-holders"
+  | "pr-men-small-wallets"
+  | "pr-men-large-wallets"
+  | "pr-men-high-tech-accessories"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -1008,6 +1014,14 @@ export const PR_WOMEN_SLG_LEAF_IDS: SubcategoryId[] = [
   "pr-women-large-wallets",
   "pr-women-wallets-on-chain",
   "pr-women-high-tech-accessories",
+];
+
+/** Prada men's small leather goods leaves (official GB SLG PLPs under 10346EU). */
+export const PR_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-card-holders",
+  "pr-men-small-wallets",
+  "pr-men-large-wallets",
+  "pr-men-high-tech-accessories",
 ];
 
 /** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
@@ -1928,8 +1942,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-men-shoes",
     ...PR_MEN_SHOE_LEAF_IDS,
     "prada-accessories",
+    "pr-women-accessories",
+    ...PR_WOMEN_ACCESSORIES_LEAF_IDS,
     "pr-women-slg",
     ...PR_WOMEN_SLG_LEAF_IDS,
+    "pr-mens-accessories",
+    "pr-mens-slg",
+    ...PR_MEN_SLG_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -2018,6 +2037,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_WOMEN_ACCESSORIES_LEAF_IDS,
     "pr-women-slg",
     ...PR_WOMEN_SLG_LEAF_IDS,
+    "pr-mens-accessories",
+    "pr-mens-slg",
+    ...PR_MEN_SLG_LEAF_IDS,
   ],
   "pr-women-accessories": [
     "pr-women-accessories",
@@ -2025,6 +2047,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-women-slg",
     ...PR_WOMEN_SLG_LEAF_IDS,
   ],
+  "pr-mens-accessories": [
+    "pr-mens-accessories",
+    "pr-mens-slg",
+    ...PR_MEN_SLG_LEAF_IDS,
+  ],
+  "pr-mens-slg": ["pr-mens-slg", ...PR_MEN_SLG_LEAF_IDS],
+  "pr-men-card-holders": ["pr-men-card-holders"],
+  "pr-men-small-wallets": ["pr-men-small-wallets"],
+  "pr-men-large-wallets": ["pr-men-large-wallets"],
+  "pr-men-high-tech-accessories": ["pr-men-high-tech-accessories"],
   "pr-women-sunglasses": ["pr-women-sunglasses"],
   "pr-women-silks-scarves": ["pr-women-silks-scarves"],
   "pr-women-hats-gloves": ["pr-women-hats-gloves"],
@@ -5183,6 +5215,34 @@ export const navCategories: NavCategory[] = [
                 id: "pr-women-high-tech-accessories",
                 labelKo: "하이테크 액세서리",
                 href: "/shop?category=accessories&sub=pr-women-high-tech-accessories",
+              },
+            ],
+          },
+          {
+            id: "pr-mens-accessories",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=pr-mens-accessories",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-men-card-holders",
+                labelKo: "카드홀더",
+                href: "/shop?category=accessories&sub=pr-men-card-holders",
+              },
+              {
+                id: "pr-men-small-wallets",
+                labelKo: "스몰 월렛",
+                href: "/shop?category=accessories&sub=pr-men-small-wallets",
+              },
+              {
+                id: "pr-men-large-wallets",
+                labelKo: "라지 월렛",
+                href: "/shop?category=accessories&sub=pr-men-large-wallets",
+              },
+              {
+                id: "pr-men-high-tech-accessories",
+                labelKo: "하이테크 액세서리",
+                href: "/shop?category=accessories&sub=pr-men-high-tech-accessories",
               },
             ],
           },

@@ -49,6 +49,7 @@ RAW_MENS_RTW = ROOT / "src/data/pr/pr-mens-rtw-catalog-raw.json"
 RAW_SHOES = ROOT / "src/data/pr/pr-womens-shoes-catalog-raw.json"
 RAW_MENS_SHOES = ROOT / "src/data/pr/pr-mens-shoes-catalog-raw.json"
 RAW_SLG = ROOT / "src/data/pr/pr-womens-slg-catalog-raw.json"
+RAW_MEN_SLG = ROOT / "src/data/pr/pr-mens-slg-catalog-raw.json"
 RAW_TRAVEL = ROOT / "src/data/pr/pr-womens-travel-catalog-raw.json"
 RAW_ACC = ROOT / "src/data/pr/pr-womens-accessories-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
@@ -141,6 +142,20 @@ SLG_LEAF_COLLECTIONS = [
     "pr-women-high-tech-accessories",
 ]
 SLG_PARENT_COLS = ["prada", "prada-accessories", "pr-women-accessories", "pr-women-slg"]
+MEN_SLG_LEAF_COLLECTIONS = [
+    "pr-men-card-holders",
+    "pr-men-small-wallets",
+    "pr-men-large-wallets",
+    "pr-men-high-tech-accessories",
+]
+MEN_SLG_PARENT_COLS = [
+    "prada",
+    "prada-accessories",
+    "pr-mens-accessories",
+    "pr-mens-slg",
+]
+ALL_SLG_LEAF_COLLECTIONS = [*SLG_LEAF_COLLECTIONS, *MEN_SLG_LEAF_COLLECTIONS]
+ALL_SLG_PARENT_COLS = sorted(set([*SLG_PARENT_COLS, *MEN_SLG_PARENT_COLS]))
 ACCESSORIES_PARENT_COLS = ["prada", "prada-accessories", "pr-women-accessories"]
 ACCESSORIES_LEAF_COLLECTIONS = [
     "pr-women-sunglasses",
@@ -545,6 +560,10 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
         if scope == "acc" and "acc" not in tags:
             continue
         if scope == "slg" and "slg" not in tags:
+            continue
+        if scope == "mens-slg" and not (
+            "slg" in tags and ("남성" in tags or "pr-mens-slg" in cols or any(c in MEN_SLG_LEAF_COLLECTIONS for c in cols))
+        ):
             continue
         if scope == "shoes" and not (
             p.get("category") == "shoes"
@@ -1534,16 +1553,29 @@ def build_slg_products(rows: list[dict], prev_by_sku: dict[str, dict], now_iso: 
         title_en = (primary.get("officialNameEn") or primary.get("title") or code0).strip()
         name_ko = t(title_en)
 
+        sample_cols = [
+            c
+            for r in usable
+            for c in (r.get("collections") or [])
+        ]
+        is_mens = any(
+            c in MEN_SLG_LEAF_COLLECTIONS or c in MEN_SLG_PARENT_COLS for c in sample_cols
+        ) or str(primary.get("_kind") or "") == "mens-slg"
+        leaf_cols = MEN_SLG_LEAF_COLLECTIONS if is_mens else SLG_LEAF_COLLECTIONS
+        parent_cols = MEN_SLG_PARENT_COLS if is_mens else SLG_PARENT_COLS
+        default_leaf = "pr-mens-slg" if is_mens else "pr-women-slg"
+        gender_tag = "남성" if is_mens else "여성"
+
         cols: list[str] = []
         for r in usable:
             cols.extend(
                 c
                 for c in (r.get("collections") or [])
-                if c in SLG_LEAF_COLLECTIONS or c in SLG_PARENT_COLS
+                if c in leaf_cols or c in parent_cols
             )
-        cols = sorted(set([*cols, *SLG_PARENT_COLS]))
+        cols = sorted(set([*cols, *parent_cols]))
         leaf = primary.get("leaf") or next(
-            (c for c in SLG_LEAF_COLLECTIONS if c in cols), "pr-women-slg"
+            (c for c in leaf_cols if c in cols), default_leaf
         )
 
         variants: list[dict] = []
@@ -1696,7 +1728,7 @@ def build_slg_products(rows: list[dict], prev_by_sku: dict[str, dict], now_iso: 
         price0 = gbp_to_krw(gbp0)
         in_stock = any(v["inStock"] for v in variants)
 
-        tags = ["prada", "프라다", "accessories", "악세서리", "slg", "여성", *cols]
+        tags = ["prada", "프라다", "accessories", "악세서리", "slg", gender_tag, *cols]
         out.append(
             {
                 "id": pid,
@@ -2161,7 +2193,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "travel", "acc", "all"],
+        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "acc", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -2236,6 +2268,13 @@ def main() -> None:
         ]
         for r in slg_rows:
             r["_kind"] = "slg"
+    if only in {"all", "mens-slg"} and RAW_MEN_SLG.exists():
+        mens_slg = [
+            dict(r) for r in (json.loads(RAW_MEN_SLG.read_text()).get("products") or [])
+        ]
+        for r in mens_slg:
+            r["_kind"] = "mens-slg"
+            slg_rows.append(r)
     travel_rows: list[dict] = []
     if only in {"all", "travel", "bags"} and RAW_TRAVEL.exists():
         travel_rows = [
@@ -2256,14 +2295,15 @@ def main() -> None:
             "scrape-pr-mens-handbags.py, scrape-pr-mens-rtw.py, "
             "scrape-pr-womens-rtw.py, scrape-pr-womens-shoes.py, "
             "scrape-pr-mens-shoes.py, "
-            "scrape-pr-womens-slg.py, scrape-pr-womens-travel.py, "
+            "scrape-pr-womens-slg.py, scrape-pr-mens-slg.py, "
+            "scrape-pr-womens-travel.py, "
             "and/or scrape-pr-womens-accessories.py first"
         )
 
     if only in {"all", "shoes", "mens-shoes"}:
         n_seed = seed_shoe_cache(_KO)
         print(f"seeded {n_seed} curated shoe strings", flush=True)
-    if only in {"all", "slg"}:
+    if only in {"all", "slg", "mens-slg"}:
         n_seed = seed_slg_cache(_KO)
         print(f"seeded {n_seed} curated SLG strings", flush=True)
     if only in {"all", "travel", "bags"}:
@@ -2300,7 +2340,7 @@ def main() -> None:
         print(f"cleared {dropped} weak cache entries for shoe retranslate", flush=True)
         n_seed = seed_shoe_cache(_KO)
         print(f"seeded {n_seed} curated shoe strings", flush=True)
-    if args.force_translate and only == "slg":
+    if args.force_translate and only in {"slg", "mens-slg"}:
         dropped = purge_weak_cache()
         print(f"cleared {dropped} weak cache entries for SLG retranslate", flush=True)
         n_seed = seed_slg_cache(_KO)
@@ -2334,7 +2374,7 @@ def main() -> None:
             prod = build_mens_rtw_product(row, prev_by_sku.get(sku), now_iso)
         elif kind in {"womens-shoes", "shoes", "mens-shoes"}:
             prod = build_shoes_product(row, prev_by_sku.get(sku), now_iso)
-        elif kind in {"womens-slg", "slg"}:
+        elif kind in {"womens-slg", "slg", "mens-slg"}:
             continue  # built via build_slg_products below
         elif kind in {"womens-travel", "travel"}:
             continue  # built via build_travel_products below
@@ -2399,6 +2439,26 @@ def main() -> None:
                     p.get("brand") == "프라다"
                     and p.get("category") == "accessories"
                     and "slg" in (p.get("tags") or [])
+                    and "여성" in (p.get("tags") or [])
+                )
+            ]
+            products = merged + products
+        elif only == "mens-slg":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and p.get("category") == "accessories"
+                    and "slg" in (p.get("tags") or [])
+                    and (
+                        "남성" in (p.get("tags") or [])
+                        or "pr-mens-slg" in (p.get("prCollections") or [])
+                        or any(
+                            c in MEN_SLG_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
                 )
             ]
             products = merged + products
