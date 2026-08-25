@@ -535,6 +535,14 @@ export type SubcategoryId =
   | "pr-men-small-wallets"
   | "pr-men-large-wallets"
   | "pr-men-high-tech-accessories"
+  | "pr-men-sunglasses"
+  | "pr-men-hats-gloves"
+  | "pr-men-bag-charms"
+  | "pr-men-belts"
+  | "pr-men-custom-belts"
+  | "pr-men-silks-scarves"
+  | "pr-men-ties-bow-ties"
+  | "pr-men-jewels"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -1033,6 +1041,18 @@ export const PR_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
   "pr-men-small-wallets",
   "pr-men-large-wallets",
   "pr-men-high-tech-accessories",
+];
+
+/** Prada men's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
+export const PR_MEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-sunglasses",
+  "pr-men-hats-gloves",
+  "pr-men-bag-charms",
+  "pr-men-belts",
+  "pr-men-custom-belts",
+  "pr-men-silks-scarves",
+  "pr-men-ties-bow-ties",
+  "pr-men-jewels",
 ];
 
 /** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
@@ -1964,6 +1984,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-mens-accessories",
     "pr-mens-slg",
     ...PR_MEN_SLG_LEAF_IDS,
+    ...PR_MEN_ACCESSORIES_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -2064,6 +2085,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-mens-accessories",
     "pr-mens-slg",
     ...PR_MEN_SLG_LEAF_IDS,
+    ...PR_MEN_ACCESSORIES_LEAF_IDS,
   ],
   "pr-women-accessories": [
     "pr-women-accessories",
@@ -2075,12 +2097,21 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-mens-accessories",
     "pr-mens-slg",
     ...PR_MEN_SLG_LEAF_IDS,
+    ...PR_MEN_ACCESSORIES_LEAF_IDS,
   ],
   "pr-mens-slg": ["pr-mens-slg", ...PR_MEN_SLG_LEAF_IDS],
   "pr-men-card-holders": ["pr-men-card-holders"],
   "pr-men-small-wallets": ["pr-men-small-wallets"],
   "pr-men-large-wallets": ["pr-men-large-wallets"],
   "pr-men-high-tech-accessories": ["pr-men-high-tech-accessories"],
+  "pr-men-sunglasses": ["pr-men-sunglasses"],
+  "pr-men-hats-gloves": ["pr-men-hats-gloves"],
+  "pr-men-bag-charms": ["pr-men-bag-charms"],
+  "pr-men-belts": ["pr-men-belts"],
+  "pr-men-custom-belts": ["pr-men-custom-belts"],
+  "pr-men-silks-scarves": ["pr-men-silks-scarves"],
+  "pr-men-ties-bow-ties": ["pr-men-ties-bow-ties"],
+  "pr-men-jewels": ["pr-men-jewels"],
   "pr-women-sunglasses": ["pr-women-sunglasses"],
   "pr-women-silks-scarves": ["pr-women-silks-scarves"],
   "pr-women-hats-gloves": ["pr-women-hats-gloves"],
@@ -5271,6 +5302,46 @@ export const navCategories: NavCategory[] = [
             href: "/shop?category=accessories&sub=pr-mens-accessories",
             navLeaf: true,
             children: [
+              {
+                id: "pr-men-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=pr-men-sunglasses",
+              },
+              {
+                id: "pr-men-hats-gloves",
+                labelKo: "모자 & 장갑",
+                href: "/shop?category=accessories&sub=pr-men-hats-gloves",
+              },
+              {
+                id: "pr-men-bag-charms",
+                labelKo: "백 참 & 키체인",
+                href: "/shop?category=accessories&sub=pr-men-bag-charms",
+              },
+              {
+                id: "pr-men-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=pr-men-belts",
+              },
+              {
+                id: "pr-men-custom-belts",
+                labelKo: "커스텀 벨트",
+                href: "/shop?category=accessories&sub=pr-men-custom-belts",
+              },
+              {
+                id: "pr-men-silks-scarves",
+                labelKo: "실크 & 스카프",
+                href: "/shop?category=accessories&sub=pr-men-silks-scarves",
+              },
+              {
+                id: "pr-men-ties-bow-ties",
+                labelKo: "넥타이 & 보우타이",
+                href: "/shop?category=accessories&sub=pr-men-ties-bow-ties",
+              },
+              {
+                id: "pr-men-jewels",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=pr-men-jewels",
+              },
               {
                 id: "pr-men-card-holders",
                 labelKo: "카드홀더",

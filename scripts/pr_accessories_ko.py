@@ -42,6 +42,28 @@ TITLE_KO: dict[str, str] = {
     "Mini Re-Nylon pouch": "미니 Re-Nylon 파우치",
     "Nappa leather pouch": "나파 가죽 파우치",
     "Saffiano leather pouch": "사피아노 가죽 파우치",
+    # Men's accessories
+    "Re-Nylon baseball cap with triangle logo": "Re-Nylon 트라이앵글 로고 베이스볼 캡",
+    "Re-Nylon bucket hat with triangle logo": "Re-Nylon 트라이앵글 로고 버킷햇",
+    "Cashmere beanie": "캐시미어 비니",
+    "Wool beanie": "울 비니",
+    "Re-Nylon gloves": "Re-Nylon 글러브",
+    "Saffiano leather belt": "사피아노 가죽 벨트",
+    "Saffiano leather belt with metal buckle": "메탈 버클 사피아노 가죽 벨트",
+    "Reversible Saffiano leather belt": "리버서블 사피아노 가죽 벨트",
+    "Silk tie": "실크 넥타이",
+    "Printed silk tie": "프린트 실크 넥타이",
+    "Silk bow tie": "실크 보우타이",
+    "Wool and silk tie": "울 & 실크 넥타이",
+    "Re-Nylon tie": "Re-Nylon 넥타이",
+    "Printed silk scarf": "프린트 실크 스카프",
+    "Wool scarf": "울 스카프",
+    "Cashmere scarf": "캐시미어 스카프",
+    "Metal bracelet": "메탈 브레이슬릿",
+    "Metal necklace": "메탈 네클리스",
+    "Metal ring": "메탈 링",
+    "Leather keychain": "가죽 키체인",
+    "Re-Nylon key ring": "Re-Nylon 키링",
 }
 
 COLOR_KO: dict[str, str] = {
