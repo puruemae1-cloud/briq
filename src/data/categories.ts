@@ -502,6 +502,13 @@ export type SubcategoryId =
   | "pr-women-sandals-mules"
   | "pr-women-new-formal"
   | "pr-women-chocolate"
+  | "pr-men-shoes"
+  | "pr-men-loafers"
+  | "pr-men-sneakers"
+  | "pr-men-sandals"
+  | "pr-men-lace-ups"
+  | "pr-men-boots"
+  | "pr-men-americas-cup"
   | "prada-accessories"
   | "pr-women-accessories"
   | "pr-women-sunglasses"
@@ -982,6 +989,16 @@ export const PR_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
   "pr-women-sandals-mules",
   "pr-women-new-formal",
   "pr-women-chocolate",
+];
+
+/** Prada men's shoes leaves (official GB men's shoes PLPs). */
+export const PR_MEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "pr-men-loafers",
+  "pr-men-sneakers",
+  "pr-men-sandals",
+  "pr-men-lace-ups",
+  "pr-men-boots",
+  "pr-men-americas-cup",
 ];
 
 /** Prada women's small leather goods leaves (official GB SLG PLPs). */
@@ -1908,6 +1925,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "prada-shoes",
     "pr-women-shoes",
     ...PR_WOMEN_SHOE_LEAF_IDS,
+    "pr-men-shoes",
+    ...PR_MEN_SHOE_LEAF_IDS,
     "prada-accessories",
     "pr-women-slg",
     ...PR_WOMEN_SLG_LEAF_IDS,
@@ -1971,7 +1990,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-men-clutches": ["pr-men-clutches"],
   "pr-men-messenger-bags": ["pr-men-messenger-bags"],
   "pr-men-tote-bags": ["pr-men-tote-bags"],
-  "prada-shoes": ["prada-shoes", "pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
+  "prada-shoes": [
+    "prada-shoes",
+    "pr-women-shoes",
+    ...PR_WOMEN_SHOE_LEAF_IDS,
+    "pr-men-shoes",
+    ...PR_MEN_SHOE_LEAF_IDS,
+  ],
   "pr-women-shoes": ["pr-women-shoes", ...PR_WOMEN_SHOE_LEAF_IDS],
   "pr-women-ankle-boots-boots": ["pr-women-ankle-boots-boots"],
   "pr-women-loafers-lace-ups": ["pr-women-loafers-lace-ups"],
@@ -1980,6 +2005,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-women-sandals-mules": ["pr-women-sandals-mules"],
   "pr-women-new-formal": ["pr-women-new-formal"],
   "pr-women-chocolate": ["pr-women-chocolate"],
+  "pr-men-shoes": ["pr-men-shoes", ...PR_MEN_SHOE_LEAF_IDS],
+  "pr-men-loafers": ["pr-men-loafers"],
+  "pr-men-sneakers": ["pr-men-sneakers"],
+  "pr-men-sandals": ["pr-men-sandals"],
+  "pr-men-lace-ups": ["pr-men-lace-ups"],
+  "pr-men-boots": ["pr-men-boots"],
+  "pr-men-americas-cup": ["pr-men-americas-cup"],
   "prada-accessories": [
     "prada-accessories",
     "pr-women-accessories",
@@ -4300,6 +4332,44 @@ export const navCategories: NavCategory[] = [
                 id: "pr-women-chocolate",
                 labelKo: "초콜릿",
                 href: "/shop?category=shoes&sub=pr-women-chocolate",
+              },
+            ],
+          },
+          {
+            id: "pr-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=pr-men-shoes",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-men-loafers",
+                labelKo: "로퍼",
+                href: "/shop?category=shoes&sub=pr-men-loafers",
+              },
+              {
+                id: "pr-men-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=pr-men-sneakers",
+              },
+              {
+                id: "pr-men-sandals",
+                labelKo: "샌들",
+                href: "/shop?category=shoes&sub=pr-men-sandals",
+              },
+              {
+                id: "pr-men-lace-ups",
+                labelKo: "레이스업",
+                href: "/shop?category=shoes&sub=pr-men-lace-ups",
+              },
+              {
+                id: "pr-men-boots",
+                labelKo: "부츠",
+                href: "/shop?category=shoes&sub=pr-men-boots",
+              },
+              {
+                id: "pr-men-americas-cup",
+                labelKo: "아메리카스 컵",
+                href: "/shop?category=shoes&sub=pr-men-americas-cup",
               },
             ],
           },

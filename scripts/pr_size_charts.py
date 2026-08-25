@@ -279,9 +279,48 @@ PR_WOMEN_SHOES_SIZE_CHART = {
     ],
 }
 
+# Prada GB men's shoes display UK-equivalent labels as Prada size (5, 5,5 …).
+PR_MEN_SHOES_SIZE_CHART = {
+    "id": "pr-men-shoes",
+    "titleKo": "프라다 남성 슈즈 사이즈 차트",
+    "noteKo": (
+        "prada.com(영국) 남성 슈즈 사이즈 가이드입니다. "
+        "Briq 표기 사이즈(5, 5,5, 6 등)는 아래 Prada size(UK) 열과 대응합니다. "
+        "Foot은 발 길이(cm)입니다."
+    ),
+    "headers": ["Prada size", "US", "IT", "Foot (CM)"],
+    "rows": [
+        ["5", "6", "39", "24.5 cm"],
+        ["5.5", "6.5", "39.5", "24.9 cm"],
+        ["6", "7", "40", "25.3 cm"],
+        ["6.5", "7.5", "40.5", "25.7 cm"],
+        ["7", "8", "41", "26.1 cm"],
+        ["7.5", "8.5", "41.5", "26.5 cm"],
+        ["8", "9", "42", "26.9 cm"],
+        ["8.5", "9.5", "42.5", "27.3 cm"],
+        ["9", "10", "43", "27.7 cm"],
+        ["9.5", "10.5", "43.5", "28.1 cm"],
+        ["10", "11", "44", "28.5 cm"],
+        ["10.5", "11.5", "44.5", "28.9 cm"],
+        ["11", "12", "45", "29.3 cm"],
+        ["11.5", "12.5", "45.5", "29.7 cm"],
+        ["12", "13", "46", "30.1 cm"],
+        ["12.5", "13.5", "46.5", "30.5 cm"],
+        ["13", "14", "47", "30.9 cm"],
+    ],
+}
 
-def size_chart_for_shoes(variants: list[dict]) -> dict | None:
+
+def size_chart_for_shoes(
+    variants: list[dict], *, mens: bool | None = None
+) -> dict | None:
     labels = _variant_labels(variants)
     if not labels:
         return None
-    return copy.deepcopy(PR_WOMEN_SHOES_SIZE_CHART)
+    if mens is None:
+        nums = _variant_size_numbers(variants)
+        # GB men's shoes use UK-scale labels (~5–14); women's use IT (~34–42).
+        mens = bool(nums) and max(nums) <= 20
+    return copy.deepcopy(
+        PR_MEN_SHOES_SIZE_CHART if mens else PR_WOMEN_SHOES_SIZE_CHART
+    )
