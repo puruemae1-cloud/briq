@@ -1,0 +1,43 @@
+name: Weekly Prada size-chart sync
+
+on:
+  schedule:
+    # Every Monday 12:00 UTC — after Arc'teryx
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-pr-size-chart-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh Prada RTW Short (S) size charts
+        run: python3 scripts/weekly-pr-stock-sync.py
+
+      - name: Commit and push if changed
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly Prada RTW Short size-chart sync" \
+            src/data/pr \
+            scripts/weekly-pr-stock-sync.py \
+            scripts/patch-pr-rtw-short-size-charts.py \
+            scripts/pr_size_charts.py

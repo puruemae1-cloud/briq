@@ -11,6 +11,7 @@ from pr_sizes import (
     sizes_from_hit,
     sizes_from_pdp_html,
 )
+from pr_size_charts import size_chart_for_mens_rtw_variants
 
 
 class TestPrSizes(unittest.TestCase):
@@ -80,6 +81,20 @@ class TestPrSizes(unittest.TestCase):
             {"id": "B", "variants": [{"size": "S"}, {"size": "M"}, {"size": "L"}]},
         ]
         assert_no_mixed_rtw_sizes(products, context="test")
+
+    def test_mens_size_chart_includes_short_tab(self) -> None:
+        variants = [{"size": s} for s in ["46S", "46", "48S", "48", "50", "54"]]
+        chart = size_chart_for_mens_rtw_variants(variants)
+        assert chart is not None
+        self.assertIn("5 cm", chart["noteKo"])
+        tabs = {t["id"]: t for t in chart.get("tabs") or []}
+        self.assertIn("short", tabs)
+        self.assertIn("46S", tabs["short"]["headers"])
+        self.assertIn("48S", tabs["short"]["headers"])
+        self.assertNotIn("54S", tabs["short"]["headers"])  # not offered on PDP
+        length = tabs["short"]["rows"][-1]
+        self.assertEqual(length[0], "기장 (Length)")
+        self.assertTrue(all("−5 cm" in c or c == "기장 (Length)" for c in length))
 
 
 if __name__ == "__main__":

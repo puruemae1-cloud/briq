@@ -1,11 +1,24 @@
 """Official Prada women's RTW size guides (prada.com GB, Aug 2026).
 
 Sourced from prada.com PDP size-chart tables (Ready to wear).
+
+Short sizes (46S, 48S, …): Prada marks garments with \"S\" as 5 cm shorter in
+length than the matching standard size; body circumference is the same.
 """
 from __future__ import annotations
 
 import copy
 import re
+
+# Official Prada GB PDP size-guide disclaimer (URL-decoded from PDP JSON).
+PR_SHORT_SIZE_NOTE_KO = (
+    "S가 붙은 사이즈(예: 46S, 48S)는 같은 숫자 사이즈와 가슴·허리(또는 허리) 치수가 "
+    "동일하고, 기장(길이)만 표준보다 약 5cm 짧은 Short 기장입니다. "
+    "(prada.com: Garments in the sizes marked \"S\" are 5 cm shorter in length "
+    "than the standard size.)"
+)
+
+_SHORT_SIZE = re.compile(r"^(\d{2})S$", re.I)
 
 # Numeric Prada / IT sizes (e.g. knitwear, tailoring)
 PR_WOMEN_RTW_NUMERIC = {
@@ -111,6 +124,96 @@ def _variant_labels(variants: list[dict]) -> list[str]:
     return out
 
 
+def _has_short_sizes(labels: list[str]) -> bool:
+    return any(_SHORT_SIZE.match(lb) for lb in labels)
+
+
+def _short_base_codes(labels: list[str]) -> list[str]:
+    """Unique base numeric codes that have a Short (…S) option, sorted."""
+    bases = {m.group(1) for lb in labels if (m := _SHORT_SIZE.match(lb))}
+    return sorted(bases, key=lambda x: int(x))
+
+
+def _append_short_note(note: str) -> str:
+    note = (note or "").strip()
+    if PR_SHORT_SIZE_NOTE_KO in note:
+        return note
+    return f"{note} {PR_SHORT_SIZE_NOTE_KO}".strip() if note else PR_SHORT_SIZE_NOTE_KO
+
+
+def _enrich_chart_with_short_sizes(chart: dict, labels: list[str]) -> dict:
+    """When PDP offers …S sizes, add Short tab + official length note.
+
+    Body measurements match the standard size; length is 5 cm shorter (Prada GB).
+    """
+    out = copy.deepcopy(chart)
+    if not _has_short_sizes(labels):
+        return out
+
+    out["noteKo"] = _append_short_note(str(out.get("noteKo") or ""))
+    headers = list(out.get("headers") or [])
+    rows = [list(r) for r in (out.get("rows") or [])]
+    if len(headers) < 2 or not rows:
+        return out
+
+    label_col = headers[0]
+    std_cols = headers[1:]
+    # Map standard column → measurement cells
+    col_index = {c: i for i, c in enumerate(std_cols)}
+
+    short_bases = _short_base_codes(labels)
+    # Prefer Short columns that exist both on the product and in the chart;
+    # fall back to every chart column's S twin so the guide stays complete.
+    short_cols: list[str] = []
+    short_src: list[str] = []  # standard col to copy measurements from
+    for base in short_bases:
+        if base in col_index:
+            short_cols.append(f"{base}S")
+            short_src.append(base)
+    if not short_cols:
+        for c in std_cols:
+            if re.fullmatch(r"\d{2}", c):
+                short_cols.append(f"{c}S")
+                short_src.append(c)
+
+    short_headers = [label_col, *short_cols]
+    short_rows: list[list[str]] = []
+    for row in rows:
+        label = row[0] if row else ""
+        # Skip any prior length rows when copying
+        if "기장" in label or "Length" in label:
+            continue
+        cells = [label]
+        for src in short_src:
+            idx = col_index[src] + 1  # +1 for label column
+            cells.append(row[idx] if idx < len(row) else "—")
+        short_rows.append(cells)
+    short_rows.append(
+        ["기장 (Length)", *["표준 대비 −5 cm"] * len(short_cols)]
+    )
+
+    std_rows = [r for r in rows if "기장" not in (r[0] if r else "") and "Length" not in (r[0] if r else "")]
+    std_rows.append(["기장 (Length)", *["표준"] * len(std_cols)])
+
+    out["headers"] = headers
+    out["rows"] = std_rows
+    out["tabs"] = [
+        {
+            "id": "standard",
+            "labelKo": "표준 사이즈",
+            "headers": headers,
+            "rows": std_rows,
+        },
+        {
+            "id": "short",
+            "labelKo": "Short (S) 사이즈",
+            "headers": short_headers,
+            "rows": short_rows,
+        },
+    ]
+    return out
+
+
 def _chart_mode(labels: list[str]) -> str:
     numeric = [lb for lb in labels if _NUMERIC_SIZE.match(lb.upper())]
     letters = [lb for lb in labels if _LETTER_SIZE.match(lb.upper())]
@@ -136,7 +239,8 @@ def size_chart_for_variants(variants: list[dict]) -> dict | None:
         return None
     mode = _chart_mode(labels)
     base = PR_WOMEN_RTW_NUMERIC if mode == "numeric" else PR_WOMEN_RTW_LETTER
-    return copy.deepcopy(base)
+    chart = copy.deepcopy(base)
+    return _enrich_chart_with_short_sizes(chart, labels)
 
 
 # Men's ready-to-wear (prada.com GB, Aug 2026)
@@ -147,9 +251,9 @@ PR_MEN_RTW_NUMERIC = {
         "prada.com(영국) 공식 사이즈 가이드입니다. "
         "Prada size는 이탈리아(IT) 기준이며, 가슴·허리 치수는 둘레(circumference) 기준 cm입니다."
     ),
-    "headers": ["Prada size", "44", "46", "48", "50", "52", "54", "56"],
+    "headers": ["Prada size", "44", "46", "48", "50", "52", "54", "56", "58"],
     "rows": [
-        ["United Kingdom", "34", "36", "38", "40", "42", "44", "46"],
+        ["United Kingdom", "34", "36", "38", "40", "42", "44", "46", "48"],
         [
             "Chest",
             "96 cm",
@@ -159,6 +263,7 @@ PR_MEN_RTW_NUMERIC = {
             "110 cm",
             "114 cm",
             "118 cm",
+            "122 cm",
         ],
         [
             "Waist",
@@ -169,6 +274,7 @@ PR_MEN_RTW_NUMERIC = {
             "108 cm",
             "112 cm",
             "116 cm",
+            "120 cm",
         ],
     ],
 }
@@ -242,10 +348,12 @@ def size_chart_for_mens_rtw_variants(variants: list[dict]) -> dict | None:
     nums = _variant_size_numbers(variants)
     if nums and max(nums) <= 40 and min(nums) <= 34 and max(nums) - min(nums) <= 22:
         if max(nums) < 44 or min(nums) < 40:
-            return copy.deepcopy(PR_MEN_RTW_DENIM)
+            chart = copy.deepcopy(PR_MEN_RTW_DENIM)
+            return _enrich_chart_with_short_sizes(chart, labels)
     mode = _chart_mode(labels)
     base = PR_MEN_RTW_NUMERIC if mode == "numeric" else PR_MEN_RTW_LETTER
-    return copy.deepcopy(base)
+    chart = copy.deepcopy(base)
+    return _enrich_chart_with_short_sizes(chart, labels)
 
 
 # Official Prada women's shoes size guide (prada.com GB PDP size chart).

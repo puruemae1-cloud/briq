@@ -2598,6 +2598,14 @@ def main() -> None:
             raise SystemExit(
                 "Prada RTW size verify failed — mixed letter+numeric sizes detected."
             )
+        # Ensure Short (…S) size-guide tabs/notes are present after any merge path.
+        short_patch = subprocess.run(
+            [sys.executable, str(SCRIPTS / "patch-pr-rtw-short-size-charts.py")],
+            cwd=str(ROOT),
+            check=False,
+        )
+        if short_patch.returncode != 0:
+            raise SystemExit("Prada RTW Short size-chart patch failed.")
 
 
 if __name__ == "__main__":
