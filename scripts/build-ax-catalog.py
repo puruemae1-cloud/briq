@@ -16,6 +16,7 @@ RAW_PATH = ROOT / "src/data/ax/ax-catalog-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-pdp-cache.json"
 TRANSLATE_CACHE = ROOT / "src/data/ax/ax-translate-cache.json"
 OUT_PATH = ROOT / "src/data/ax/ax-catalog.ts"
+OUT_JSON = ROOT / "src/data/ax/ax-catalog.json"
 IMG_ROOT = ROOT / "public/products/ax-pdp"
 
 ACCENTS = [
@@ -39,6 +40,14 @@ def t(text: str | None) -> str:
         return ""
     s = str(text).strip()
     return _KO.get(s, s)
+
+
+def _en_ratio(s: str) -> float:
+    letters = [c for c in (s or "") if c.isalpha()]
+    if not letters:
+        return 0.0
+    latin = sum(1 for c in letters if ("A" <= c <= "Z") or ("a" <= c <= "z"))
+    return latin / len(letters)
 
 
 def colour_name_ko(cname: str) -> str:
@@ -223,6 +232,7 @@ def main() -> None:
     raw = json.loads(RAW_PATH.read_text())
     pdp_all = json.loads(PDP_PATH.read_text())
     products_out: list[str] = []
+    products_json: list[dict] = []
     batch_start = datetime.now(timezone.utc).replace(microsecond=0)
 
     for idx, p in enumerate(raw["products"]):
@@ -256,6 +266,7 @@ def main() -> None:
         raw_by_lower = {c["color"].lower(): c for c in p["colours"]}
 
         variants_blocks: list[str] = []
+        variants_json: list[dict] = []
         all_images: list[str] = []
         lead_image = ""
         lead_hover = ""
@@ -328,6 +339,25 @@ def main() -> None:
                         ]
                     )
                 )
+                variants_json.append(
+                    {
+                        "id": vid,
+                        "name": f"{cname} / UK {size}",
+                        "nameKo": f"{color_ko} / UK {size}",
+                        "sku": f"{pid}-{cslug}-{size}",
+                        "gbpPrice": gbp,
+                        "price": price,
+                        "image": gallery[0],
+                        "images": gallery,
+                        "hoverImage": list_hover(pid, cslug, gallery),
+                        "sourceUrl": p.get("url") or "",
+                        "inStock": in_stock,
+                        "colorKey": cslug,
+                        "colorNameKo": color_ko,
+                        "size": size,
+                        "axCollections": [coll],
+                    }
+                )
 
         if not lead_image:
             print(f"skip no images: {pid}")
@@ -349,6 +379,18 @@ def main() -> None:
             val = t(spec.get("value") or "")
             if lab or val:
                 tech.append({"labelKo": lab or "스펙", "valueKo": val})
+        # Footwear PDPs put construction/materials under features, not techSpecs.
+        if not tech:
+            for f in features_ko[:16]:
+                if ":" in f:
+                    lab, val = f.split(":", 1)
+                    tech.append({"labelKo": lab.strip() or "특징", "valueKo": val.strip()})
+                else:
+                    tech.append({"labelKo": "특징", "valueKo": f})
+
+        for f in features_ko:
+            if _en_ratio(f) > 0.35:
+                print(f"WARN EN feature left on {pid}: {f[:90]}", flush=True)
 
         registered = (batch_start + timedelta(seconds=idx)).strftime(
             "%Y-%m-%dT%H:%M:%S.000Z"
@@ -357,6 +399,36 @@ def main() -> None:
         style_id = f"ax-{pid.lower()}"
         chart = size_chart(gender)
         badge = "New" if p.get("isNew") else None
+
+        product_obj = {
+            "id": style_id,
+            "name": name,
+            "nameKo": name_ko,
+            "brand": "아크테릭스",
+            "price": price,
+            "category": "shoes",
+            "subcategory": coll,
+            "axCollections": [coll],
+            "tags": ["arcteryx", "아크테릭스", "shoes", coll, gender],
+            "descriptionKo": desc_ko,
+            "image": lead_image,
+            "images": all_images[:24] or [lead_image],
+            "hoverImage": lead_hover,
+            "accent": accent,
+            "gbpPrice": gbp,
+            "sku": pid,
+            "sourceUrl": p.get("url") or "",
+            "registeredAt": registered,
+            "editTier": "new" if badge else "bestseller",
+            "storySections": story,
+            "featuresKo": features_ko,
+            "techSpecs": tech,
+            "sizeChart": chart,
+            "variants": variants_json,
+        }
+        if badge:
+            product_obj["badge"] = badge
+        products_json.append(product_obj)
 
         block = [
             "  {",
@@ -402,7 +474,9 @@ export const axCatalogProducts = [
     footer = """] as unknown as Product[];
 """
     OUT_PATH.write_text(header + "\n".join(products_out) + "\n" + footer)
+    OUT_JSON.write_text(json.dumps(products_json, ensure_ascii=False, indent=2) + "\n")
     print(f"Wrote {len(products_out)} products → {OUT_PATH}")
+    print(f"Wrote {len(products_json)} products → {OUT_JSON}")
 
 
 if __name__ == "__main__":

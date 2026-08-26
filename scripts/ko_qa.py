@@ -42,6 +42,17 @@ _WHITELIST_TOKENS = (
     "Burberry",
     "Arc'teryx",
     "Belstaff",
+    "Vibram",
+    "Megagrip",
+    "Matryx",
+    "LITEBASE",
+    "Litebase",
+    "Fair Trade Certified",
+    "PFAS",
+    "Norvan",
+    "Aerios",
+    "Konseal",
+    "Sylan",
     "UVA",
     "UVB",
     "TSA",
@@ -65,6 +76,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "bs": [ROOT / "src/data/bs/bs-catalog.json"],
     "ps": [ROOT / "src/data/ps/ps-catalog.json"],
     "ax": [
+        # Prefer JSON companions written by build-ax-*-catalog.py (used by KO gate).
         ROOT / "src/data/ax/ax-catalog.json",
         ROOT / "src/data/ax/ax-apparel-catalog.json",
         ROOT / "src/data/ax/ax-gear-catalog.json",
@@ -149,6 +161,9 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
             out.append((key, val.strip()))
     for feat in p.get("featuresKo") or []:
         if isinstance(feat, str) and feat.strip():
+            # Colourway / logo callouts keep Latin colour names on purpose.
+            if feat.startswith("로고") or "Logos" in feat:
+                continue
             out.append(("featuresKo", feat.strip()))
     for i, sec in enumerate(p.get("storySections") or []):
         if not isinstance(sec, dict):
@@ -159,6 +174,9 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
             continue
         # Gallery placeholders often embed English product titles — skip.
         if title == "갤러리" or body.strip().endswith("의 디테일.") or body.strip() == "제품 디테일.":
+            continue
+        # Colourway / logo callouts keep Latin colour names on purpose.
+        if "Bird logo" in body or "로고가 있" in body or title.startswith("로고"):
             continue
         out.append((f"story[{i}].bodyKo", body.strip()))
     return out

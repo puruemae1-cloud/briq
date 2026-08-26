@@ -12,7 +12,7 @@ export function ProductTechSpecs({
   return (
     <section className="product-tech" aria-label="기술 사양">
       <div className="product-tech__inner">
-        <p className="product-tech__eyebrow">Tech Specs & Features</p>
+        <p className="product-tech__eyebrow">기술 사양 & 특징</p>
         <h2 className="product-tech__title">기술 사양 & 특징</h2>
 
         {features?.length ? (
