@@ -423,6 +423,14 @@ def en_ratio(s: str) -> float:
         "Re-Edition",
         "Linea Rossa",
         "Luna Rossa",
+        "Homme",
+        "Intense",
+        "Miracles",
+        "Amber",
+        "Candy",
+        "L'Homme",
+        "Vanille",
+        "Infusion",
         "Extreme-Tex",
         "America's Cup",
         "America’s Cup",
@@ -2246,27 +2254,24 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             for c in (r.get("collections") or [])
         ]
         is_linea = any(
-            c in LINEA_ROSSA_LEAF_COLLECTIONS or c in LINEA_ROSSA_PARENT_COLS
+            c in LINEA_ROSSA_LEAF_COLLECTIONS or c == "pr-linea-rossa"
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"linea-rossa", "linea"}
         is_beauty = any(
-            c in BEAUTY_LEAF_COLLECTIONS or c in BEAUTY_PARENT_COLS
+            c in BEAUTY_LEAF_COLLECTIONS or c == "pr-beauty"
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"beauty"}
         is_fragrance = any(
-            c in FRAGRANCE_LEAF_COLLECTIONS or c in FRAGRANCE_PARENT_COLS
+            c in FRAGRANCE_LEAF_COLLECTIONS or c == "pr-fragrances"
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"fragrances", "fragrance"}
         is_mens = any(
             c in MEN_ACCESSORIES_LEAF_COLLECTIONS or c in MEN_ACCESSORIES_PARENT_COLS
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"mens-accessories", "mens-acc"}
-        if is_beauty:
-            leaf_cols = BEAUTY_LEAF_COLLECTIONS
-            parent_cols = BEAUTY_PARENT_COLS
-            default_leaf = "pr-beauty"
-            gender_tag = "여성"
-        elif is_fragrance:
+        # Prefer explicit scrape kind / leaf over shared prada-accessories parent.
+        kind0 = str(primary.get("_kind") or primary.get("kind") or "")
+        if kind0 in {"fragrances", "fragrance"} or (is_fragrance and not is_beauty and not is_linea):
             leaf_cols = FRAGRANCE_LEAF_COLLECTIONS
             parent_cols = FRAGRANCE_PARENT_COLS
             default_leaf = "pr-fragrances"
@@ -2276,6 +2281,13 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
                 gender_tag = "남성"
             else:
                 gender_tag = "공용"
+            is_fragrance, is_beauty, is_linea = True, False, False
+        elif kind0 in {"beauty"} or (is_beauty and not is_linea):
+            leaf_cols = BEAUTY_LEAF_COLLECTIONS
+            parent_cols = BEAUTY_PARENT_COLS
+            default_leaf = "pr-beauty"
+            gender_tag = "여성"
+            is_fragrance, is_beauty, is_linea = False, True, False
         elif is_linea:
             leaf_cols = LINEA_ROSSA_LEAF_COLLECTIONS
             parent_cols = LINEA_ROSSA_PARENT_COLS
@@ -2286,6 +2298,7 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
                 gender_tag = "남성"
             else:
                 gender_tag = "공용"
+            is_fragrance, is_beauty, is_linea = False, False, True
         else:
             leaf_cols = (
                 MEN_ACCESSORIES_LEAF_COLLECTIONS if is_mens else ACCESSORIES_LEAF_COLLECTIONS
@@ -2295,6 +2308,7 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             )
             default_leaf = "pr-mens-accessories" if is_mens else "pr-women-accessories"
             gender_tag = "남성" if is_mens else "여성"
+            is_fragrance = is_beauty = is_linea = False
 
         cols: list[str] = []
         for r in usable:
@@ -2926,10 +2940,12 @@ def main() -> None:
                     out.append(prod)
             products = out
         elif only == "beauty":
+            new_ids = {p["id"] for p in products}
             merged = [
                 p
                 for p in existing
-                if not (
+                if p["id"] not in new_ids
+                and not (
                     p.get("brand") == "프라다"
                     and (
                         "beauty" in (p.get("tags") or [])
@@ -2938,23 +2954,25 @@ def main() -> None:
                             c in BEAUTY_LEAF_COLLECTIONS
                             for c in (p.get("prCollections") or [])
                         )
+                        or str(p.get("subcategory") or "").startswith("pr-beauty")
                     )
                 )
             ]
-            by_id = {p["id"]: p for p in merged}
+            existing_by_id = {p["id"]: p for p in existing}
             out = list(merged)
             for prod in products:
-                if prod["id"] in by_id:
-                    merge_prada_product_fields(by_id[prod["id"]], prod)
-                else:
-                    by_id[prod["id"]] = prod
-                    out.append(prod)
+                old = existing_by_id.get(prod["id"])
+                if old:
+                    merge_prada_product_fields(prod, old)
+                out.append(prod)
             products = out
         elif only == "fragrances":
+            new_ids = {p["id"] for p in products}
             merged = [
                 p
                 for p in existing
-                if not (
+                if p["id"] not in new_ids
+                and not (
                     p.get("brand") == "프라다"
                     and (
                         "fragrances" in (p.get("tags") or [])
@@ -2963,17 +2981,18 @@ def main() -> None:
                             c in FRAGRANCE_LEAF_COLLECTIONS
                             for c in (p.get("prCollections") or [])
                         )
+                        or str(p.get("subcategory") or "").startswith("pr-fragrances")
                     )
                 )
             ]
-            by_id = {p["id"]: p for p in merged}
+            existing_by_id = {p["id"]: p for p in existing}
             out = list(merged)
             for prod in products:
-                if prod["id"] in by_id:
-                    merge_prada_product_fields(by_id[prod["id"]], prod)
-                else:
-                    by_id[prod["id"]] = prod
-                    out.append(prod)
+                old = existing_by_id.get(prod["id"])
+                if old:
+                    # Keep fragrance as primary; union Linea Rossa / other segment tags.
+                    merge_prada_product_fields(prod, old)
+                out.append(prod)
             products = out
         elif only == "bags":
             # Replace all Prada bags (women handbags + men handbags + travel)
