@@ -549,6 +549,16 @@ export type SubcategoryId =
   | "pr-linea-rossa-sunglasses"
   | "pr-linea-rossa-shoes"
   | "pr-linea-rossa-fragrances"
+  | "pr-beauty"
+  | "pr-beauty-face"
+  | "pr-beauty-eyes"
+  | "pr-beauty-lips"
+  | "pr-beauty-skincare"
+  | "pr-beauty-brushes"
+  | "pr-fragrances"
+  | "pr-fragrances-women"
+  | "pr-fragrances-men"
+  | "pr-fragrances-exclusive"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -1068,6 +1078,22 @@ export const PR_LINEA_ROSSA_LEAF_IDS: SubcategoryId[] = [
   "pr-linea-rossa-sunglasses",
   "pr-linea-rossa-shoes",
   "pr-linea-rossa-fragrances",
+];
+
+/** Prada Beauty leaves (official GB beauty PLPs under 10565EU). */
+export const PR_BEAUTY_LEAF_IDS: SubcategoryId[] = [
+  "pr-beauty-face",
+  "pr-beauty-eyes",
+  "pr-beauty-lips",
+  "pr-beauty-skincare",
+  "pr-beauty-brushes",
+];
+
+/** Prada Fragrances leaves (official GB fragrance PLPs under 10566EU). */
+export const PR_FRAGRANCE_LEAF_IDS: SubcategoryId[] = [
+  "pr-fragrances-women",
+  "pr-fragrances-men",
+  "pr-fragrances-exclusive",
 ];
 
 /** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
@@ -2002,6 +2028,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_MEN_ACCESSORIES_LEAF_IDS,
     "pr-linea-rossa",
     ...PR_LINEA_ROSSA_LEAF_IDS,
+    "pr-beauty",
+    ...PR_BEAUTY_LEAF_IDS,
+    "pr-fragrances",
+    ...PR_FRAGRANCE_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -2105,6 +2135,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_MEN_ACCESSORIES_LEAF_IDS,
     "pr-linea-rossa",
     ...PR_LINEA_ROSSA_LEAF_IDS,
+    "pr-beauty",
+    ...PR_BEAUTY_LEAF_IDS,
+    "pr-fragrances",
+    ...PR_FRAGRANCE_LEAF_IDS,
   ],
   "pr-women-accessories": [
     "pr-women-accessories",
@@ -2137,6 +2171,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-linea-rossa-sunglasses": ["pr-linea-rossa-sunglasses"],
   "pr-linea-rossa-shoes": ["pr-linea-rossa-shoes"],
   "pr-linea-rossa-fragrances": ["pr-linea-rossa-fragrances"],
+  "pr-beauty": ["pr-beauty", ...PR_BEAUTY_LEAF_IDS],
+  "pr-beauty-face": ["pr-beauty-face"],
+  "pr-beauty-eyes": ["pr-beauty-eyes"],
+  "pr-beauty-lips": ["pr-beauty-lips"],
+  "pr-beauty-skincare": ["pr-beauty-skincare"],
+  "pr-beauty-brushes": ["pr-beauty-brushes"],
+  "pr-fragrances": ["pr-fragrances", ...PR_FRAGRANCE_LEAF_IDS],
+  "pr-fragrances-women": ["pr-fragrances-women"],
+  "pr-fragrances-men": ["pr-fragrances-men"],
+  "pr-fragrances-exclusive": ["pr-fragrances-exclusive"],
   "pr-women-sunglasses": ["pr-women-sunglasses"],
   "pr-women-silks-scarves": ["pr-women-silks-scarves"],
   "pr-women-hats-gloves": ["pr-women-hats-gloves"],
@@ -5419,6 +5463,62 @@ export const navCategories: NavCategory[] = [
                 id: "pr-linea-rossa-fragrances",
                 labelKo: "프래그런스",
                 href: "/shop?category=accessories&sub=pr-linea-rossa-fragrances",
+              },
+            ],
+          },
+          {
+            id: "pr-beauty",
+            labelKo: "뷰티",
+            href: "/shop?category=accessories&sub=pr-beauty",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-beauty-face",
+                labelKo: "페이스",
+                href: "/shop?category=accessories&sub=pr-beauty-face",
+              },
+              {
+                id: "pr-beauty-eyes",
+                labelKo: "아이즈",
+                href: "/shop?category=accessories&sub=pr-beauty-eyes",
+              },
+              {
+                id: "pr-beauty-lips",
+                labelKo: "립스",
+                href: "/shop?category=accessories&sub=pr-beauty-lips",
+              },
+              {
+                id: "pr-beauty-skincare",
+                labelKo: "스킨케어",
+                href: "/shop?category=accessories&sub=pr-beauty-skincare",
+              },
+              {
+                id: "pr-beauty-brushes",
+                labelKo: "브러시 & 액세서리",
+                href: "/shop?category=accessories&sub=pr-beauty-brushes",
+              },
+            ],
+          },
+          {
+            id: "pr-fragrances",
+            labelKo: "향수",
+            href: "/shop?category=accessories&sub=pr-fragrances",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-fragrances-women",
+                labelKo: "여성 향수",
+                href: "/shop?category=accessories&sub=pr-fragrances-women",
+              },
+              {
+                id: "pr-fragrances-men",
+                labelKo: "남성 향수",
+                href: "/shop?category=accessories&sub=pr-fragrances-men",
+              },
+              {
+                id: "pr-fragrances-exclusive",
+                labelKo: "익스클루시브 컬렉션",
+                href: "/shop?category=accessories&sub=pr-fragrances-exclusive",
               },
             ],
           },

@@ -39,6 +39,8 @@ from pr_mens_handbags_ko import (  # noqa: E402
 from pr_mens_rtw_ko import mens_rtw_text_ko, seed_mens_rtw_cache  # noqa: E402
 from pr_accessories_ko import seed_accessories_cache, accessories_text_ko  # noqa: E402
 from pr_linea_rossa_ko import seed_linea_rossa_cache, linea_rossa_text_ko  # noqa: E402
+from pr_beauty_ko import seed_beauty_cache, beauty_text_ko  # noqa: E402
+from pr_fragrances_ko import seed_fragrances_cache, fragrances_text_ko  # noqa: E402
 from pr_common_ko import apply_phrases as common_phrases  # noqa: E402
 
 # Reject cached / returned copy above this Latin-letter ratio (hybrid EN/KO guard).
@@ -56,6 +58,8 @@ RAW_MEN_TRAVEL = ROOT / "src/data/pr/pr-mens-travel-catalog-raw.json"
 RAW_ACC = ROOT / "src/data/pr/pr-womens-accessories-catalog-raw.json"
 RAW_MEN_ACC = ROOT / "src/data/pr/pr-mens-accessories-catalog-raw.json"
 RAW_LINEA = ROOT / "src/data/pr/pr-linea-rossa-catalog-raw.json"
+RAW_BEAUTY = ROOT / "src/data/pr/pr-beauty-catalog-raw.json"
+RAW_FRAGRANCES = ROOT / "src/data/pr/pr-fragrances-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
 OUT_TS = ROOT / "src/data/pr/pr-catalog.ts"
 CACHE_PATH = ROOT / "src/data/pr/pr-translate-cache.json"
@@ -202,6 +206,20 @@ LINEA_ROSSA_LEAF_COLLECTIONS = [
     "pr-linea-rossa-fragrances",
 ]
 LINEA_ROSSA_PARENT_COLS = ["prada", "prada-accessories", "pr-linea-rossa"]
+BEAUTY_LEAF_COLLECTIONS = [
+    "pr-beauty-face",
+    "pr-beauty-eyes",
+    "pr-beauty-lips",
+    "pr-beauty-skincare",
+    "pr-beauty-brushes",
+]
+BEAUTY_PARENT_COLS = ["prada", "prada-accessories", "pr-beauty"]
+FRAGRANCE_LEAF_COLLECTIONS = [
+    "pr-fragrances-women",
+    "pr-fragrances-men",
+    "pr-fragrances-exclusive",
+]
+FRAGRANCE_PARENT_COLS = ["prada", "prada-accessories", "pr-fragrances"]
 
 TRAVEL_LEAF_COLLECTIONS = [
     "pr-women-travel-bags",
@@ -398,6 +416,8 @@ def en_ratio(s: str) -> float:
     # Strip model codes BEFORE single-letter tokens (L/M/S) mangle "LR-…".
     cleaned = re.sub(r"LR[\s–\-]*[A-Z]{1,3}\s*\d{2,4}(?:-MK\d)?", "", cleaned, flags=re.I)
     cleaned = re.sub(r"\bF\d{2}\b", "", cleaned)
+    # Beauty shade / refill codes (DC70, O103, U001, B03, DC7, etc.)
+    cleaned = re.sub(r"\b[A-Z]{1,3}\d{1,4}\b", "", cleaned)
     for tok in (
         "Re-Nylon",
         "Re-Edition",
@@ -427,6 +447,46 @@ def en_ratio(s: str) -> float:
         "Ocean",
         "Sport",
         "Toblach",
+        "Reveal",
+        "Monochrome",
+        "Dimensions",
+        "Pradascope",
+        "그램",
+        "gram",
+        "Extending Primer",
+        "cream-to-powder",
+        "Light Glowing",
+        "Blurring",
+        "Setting Powder",
+        "Rebalancing",
+        "Mesh Cushion",
+        "Holo Nude",
+        "Wisteria Gleams",
+        "Frosting Care",
+        "Optimizing Care",
+        "Pradalines",
+        "Reflection",
+        "LHA",
+        "PHA",
+        "BHA",
+        "AHA",
+        "Micro-Peel",
+        "Adapto.gn",
+        "Augmented Skin",
+        "Paradoxe",
+        "Glowing",
+        "Soft Matte",
+        "Hyper Matte",
+        "Blushing Care",
+        "Micro-Pixel",
+        "NEUTRI",
+        "MAHOGANY",
+        "PORTRAIT",
+        "ASTRAL PINK",
+        "SPICE MAHOGANY",
+        "BRICK MAHOGANY",
+        "Hyper Matte",
+        "Soft Matte",
         "MIPS",
         "RECCO",
         "Twiceme",
@@ -590,10 +650,20 @@ def _phrase_fallback(s: str) -> str:
     from pr_travel_ko import apply_phrases as travel_phrases
     from pr_accessories_ko import apply_phrases as acc_phrases
     from pr_linea_rossa_ko import apply_phrases as linea_phrases
+    from pr_beauty_ko import apply_phrases as beauty_phrases
+    from pr_fragrances_ko import apply_phrases as fragrance_phrases
 
     out = common_phrases(
         mens_rtw_phrases(
-            slg_phrases(shoe_phrases(travel_phrases(linea_phrases(acc_phrases(s)))))
+            slg_phrases(
+                shoe_phrases(
+                    travel_phrases(
+                        linea_phrases(
+                            beauty_phrases(fragrance_phrases(acc_phrases(s)))
+                        )
+                    )
+                )
+            )
         )
     )
     return apply_glossary(out)
@@ -662,6 +732,18 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             "linea-rossa" in tags
             or "pr-linea-rossa" in cols
             or any(c in LINEA_ROSSA_LEAF_COLLECTIONS for c in cols)
+        ):
+            continue
+        if scope == "beauty" and not (
+            "beauty" in tags
+            or "pr-beauty" in cols
+            or any(c in BEAUTY_LEAF_COLLECTIONS for c in cols)
+        ):
+            continue
+        if scope == "fragrances" and not (
+            "fragrances" in tags
+            or "pr-fragrances" in cols
+            or any(c in FRAGRANCE_LEAF_COLLECTIONS for c in cols)
         ):
             continue
         if scope == "slg" and "slg" not in tags:
@@ -770,6 +852,8 @@ def t(text: str | None) -> str:
     # short string containing "logo"/"lining" as a shoe detail).
     # Only accept curated / phrase hits that pass hybrid-English QA.
     for curated_fn in (
+        beauty_text_ko,
+        fragrances_text_ko,
         linea_rossa_text_ko,
         slg_text_ko,
         travel_text_ko,
@@ -827,6 +911,8 @@ def merge_prada_product_fields(dst: dict, src: dict) -> None:
         set(ALL_TRAVEL_LEAF_COLLECTIONS)
         | set(ALL_SLG_LEAF_COLLECTIONS)
         | set(LINEA_ROSSA_LEAF_COLLECTIONS)
+        | set(BEAUTY_LEAF_COLLECTIONS)
+        | set(FRAGRANCE_LEAF_COLLECTIONS)
     )
     if src_leaf in leaf_ids and dst_leaf not in leaf_ids:
         dst["subcategory"] = src_leaf
@@ -2163,11 +2249,34 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             c in LINEA_ROSSA_LEAF_COLLECTIONS or c in LINEA_ROSSA_PARENT_COLS
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"linea-rossa", "linea"}
+        is_beauty = any(
+            c in BEAUTY_LEAF_COLLECTIONS or c in BEAUTY_PARENT_COLS
+            for c in sample_cols
+        ) or str(primary.get("_kind") or "") in {"beauty"}
+        is_fragrance = any(
+            c in FRAGRANCE_LEAF_COLLECTIONS or c in FRAGRANCE_PARENT_COLS
+            for c in sample_cols
+        ) or str(primary.get("_kind") or "") in {"fragrances", "fragrance"}
         is_mens = any(
             c in MEN_ACCESSORIES_LEAF_COLLECTIONS or c in MEN_ACCESSORIES_PARENT_COLS
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"mens-accessories", "mens-acc"}
-        if is_linea:
+        if is_beauty:
+            leaf_cols = BEAUTY_LEAF_COLLECTIONS
+            parent_cols = BEAUTY_PARENT_COLS
+            default_leaf = "pr-beauty"
+            gender_tag = "여성"
+        elif is_fragrance:
+            leaf_cols = FRAGRANCE_LEAF_COLLECTIONS
+            parent_cols = FRAGRANCE_PARENT_COLS
+            default_leaf = "pr-fragrances"
+            if "pr-fragrances-women" in sample_cols and "pr-fragrances-men" not in sample_cols:
+                gender_tag = "여성"
+            elif "pr-fragrances-men" in sample_cols and "pr-fragrances-women" not in sample_cols:
+                gender_tag = "남성"
+            else:
+                gender_tag = "공용"
+        elif is_linea:
             leaf_cols = LINEA_ROSSA_LEAF_COLLECTIONS
             parent_cols = LINEA_ROSSA_PARENT_COLS
             default_leaf = "pr-linea-rossa"
@@ -2354,6 +2463,10 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             tags = sorted(
                 set([*tags, "linea-rossa", "Linea Rossa", "리네아 로사", "prada linea rossa"])
             )
+        elif is_beauty:
+            tags = sorted(set([*tags, "beauty", "뷰티", "prada beauty"]))
+        elif is_fragrance:
+            tags = sorted(set([*tags, "fragrances", "향수", "prada fragrances"]))
         out.append(
             {
                 "id": pid,
@@ -2389,7 +2502,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "mens-travel", "acc", "mens-acc", "linea-rossa", "all"],
+        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "mens-travel", "acc", "mens-acc", "linea-rossa", "beauty", "fragrances", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -2506,6 +2619,20 @@ def main() -> None:
         for r in linea_rows:
             r["_kind"] = "linea-rossa"
         acc_rows.extend(linea_rows)
+    if only in {"all", "beauty"} and RAW_BEAUTY.exists():
+        beauty_rows = [
+            dict(r) for r in (json.loads(RAW_BEAUTY.read_text()).get("products") or [])
+        ]
+        for r in beauty_rows:
+            r["_kind"] = "beauty"
+        acc_rows.extend(beauty_rows)
+    if only in {"all", "fragrances"} and RAW_FRAGRANCES.exists():
+        frag_rows = [
+            dict(r) for r in (json.loads(RAW_FRAGRANCES.read_text()).get("products") or [])
+        ]
+        for r in frag_rows:
+            r["_kind"] = "fragrances"
+        acc_rows.extend(frag_rows)
     if not rows and not slg_rows and not travel_rows and not acc_rows:
         raise SystemExit(
             "Missing Prada raw catalogues — run scrape-pr-handbags.py, "
@@ -2515,7 +2642,7 @@ def main() -> None:
             "scrape-pr-womens-slg.py, scrape-pr-mens-slg.py, "
             "scrape-pr-womens-travel.py, scrape-pr-mens-travel.py, "
             "scrape-pr-womens-accessories.py, scrape-pr-mens-accessories.py, "
-            "scrape-pr-linea-rossa.py first"
+            "scrape-pr-linea-rossa.py, scrape-pr-beauty.py, scrape-pr-fragrances.py first"
         )
 
     if only in {"all", "shoes", "mens-shoes"}:
@@ -2543,6 +2670,14 @@ def main() -> None:
         print(f"seeded {n_seed} curated Linea Rossa strings", flush=True)
         n_seed = seed_accessories_cache(_KO)
         print(f"seeded {n_seed} curated accessories strings", flush=True)
+    if only in {"all", "beauty"}:
+        n_seed = seed_beauty_cache(_KO)
+        print(f"seeded {n_seed} curated Beauty strings", flush=True)
+    if only in {"all", "fragrances"}:
+        n_seed = seed_fragrances_cache(_KO)
+        print(f"seeded {n_seed} curated Fragrance strings", flush=True)
+        n_seed = seed_linea_rossa_cache(_KO)
+        print(f"seeded {n_seed} curated Linea Rossa strings", flush=True)
     prev_by_sku: dict[str, dict] = {}
     existing: list[dict] = []
     if OUT_JSON.exists():
@@ -2604,7 +2739,17 @@ def main() -> None:
             continue  # built via build_slg_products below
         elif kind in {"womens-travel", "travel", "mens-travel"}:
             continue  # built via build_travel_products below
-        elif kind in {"womens-accessories", "acc", "mens-accessories", "mens-acc", "linea-rossa", "linea"}:
+        elif kind in {
+            "womens-accessories",
+            "acc",
+            "mens-accessories",
+            "mens-acc",
+            "linea-rossa",
+            "linea",
+            "beauty",
+            "fragrances",
+            "fragrance",
+        }:
             continue  # built via build_accessories_products below
         else:
             prod = build_handbag_product(row, prev_by_sku.get(sku), now_iso)
@@ -2766,6 +2911,56 @@ def main() -> None:
                         or "pr-linea-rossa" in (p.get("prCollections") or [])
                         or any(
                             c in LINEA_ROSSA_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
+                )
+            ]
+            by_id = {p["id"]: p for p in merged}
+            out = list(merged)
+            for prod in products:
+                if prod["id"] in by_id:
+                    merge_prada_product_fields(by_id[prod["id"]], prod)
+                else:
+                    by_id[prod["id"]] = prod
+                    out.append(prod)
+            products = out
+        elif only == "beauty":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and (
+                        "beauty" in (p.get("tags") or [])
+                        or "pr-beauty" in (p.get("prCollections") or [])
+                        or any(
+                            c in BEAUTY_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                    )
+                )
+            ]
+            by_id = {p["id"]: p for p in merged}
+            out = list(merged)
+            for prod in products:
+                if prod["id"] in by_id:
+                    merge_prada_product_fields(by_id[prod["id"]], prod)
+                else:
+                    by_id[prod["id"]] = prod
+                    out.append(prod)
+            products = out
+        elif only == "fragrances":
+            merged = [
+                p
+                for p in existing
+                if not (
+                    p.get("brand") == "프라다"
+                    and (
+                        "fragrances" in (p.get("tags") or [])
+                        or "pr-fragrances" in (p.get("prCollections") or [])
+                        or any(
+                            c in FRAGRANCE_LEAF_COLLECTIONS
                             for c in (p.get("prCollections") or [])
                         )
                     )
@@ -2953,6 +3148,14 @@ def main() -> None:
         if n:
             print(f"  {leaf}: {n}", flush=True)
     for leaf in LINEA_ROSSA_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in BEAUTY_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in FRAGRANCE_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)
