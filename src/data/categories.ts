@@ -543,6 +543,12 @@ export type SubcategoryId =
   | "pr-men-silks-scarves"
   | "pr-men-ties-bow-ties"
   | "pr-men-jewels"
+  | "pr-linea-rossa"
+  | "pr-linea-rossa-women"
+  | "pr-linea-rossa-men"
+  | "pr-linea-rossa-sunglasses"
+  | "pr-linea-rossa-shoes"
+  | "pr-linea-rossa-fragrances"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -1053,6 +1059,15 @@ export const PR_MEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
   "pr-men-silks-scarves",
   "pr-men-ties-bow-ties",
   "pr-men-jewels",
+];
+
+/** Prada Linea Rossa leaves (official GB landing + hub menu PLPs). */
+export const PR_LINEA_ROSSA_LEAF_IDS: SubcategoryId[] = [
+  "pr-linea-rossa-women",
+  "pr-linea-rossa-men",
+  "pr-linea-rossa-sunglasses",
+  "pr-linea-rossa-shoes",
+  "pr-linea-rossa-fragrances",
 ];
 
 /** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
@@ -1985,6 +2000,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-mens-slg",
     ...PR_MEN_SLG_LEAF_IDS,
     ...PR_MEN_ACCESSORIES_LEAF_IDS,
+    "pr-linea-rossa",
+    ...PR_LINEA_ROSSA_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -2086,6 +2103,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "pr-mens-slg",
     ...PR_MEN_SLG_LEAF_IDS,
     ...PR_MEN_ACCESSORIES_LEAF_IDS,
+    "pr-linea-rossa",
+    ...PR_LINEA_ROSSA_LEAF_IDS,
   ],
   "pr-women-accessories": [
     "pr-women-accessories",
@@ -2112,6 +2131,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-men-silks-scarves": ["pr-men-silks-scarves"],
   "pr-men-ties-bow-ties": ["pr-men-ties-bow-ties"],
   "pr-men-jewels": ["pr-men-jewels"],
+  "pr-linea-rossa": ["pr-linea-rossa", ...PR_LINEA_ROSSA_LEAF_IDS],
+  "pr-linea-rossa-women": ["pr-linea-rossa-women"],
+  "pr-linea-rossa-men": ["pr-linea-rossa-men"],
+  "pr-linea-rossa-sunglasses": ["pr-linea-rossa-sunglasses"],
+  "pr-linea-rossa-shoes": ["pr-linea-rossa-shoes"],
+  "pr-linea-rossa-fragrances": ["pr-linea-rossa-fragrances"],
   "pr-women-sunglasses": ["pr-women-sunglasses"],
   "pr-women-silks-scarves": ["pr-women-silks-scarves"],
   "pr-women-hats-gloves": ["pr-women-hats-gloves"],
@@ -5361,6 +5386,39 @@ export const navCategories: NavCategory[] = [
                 id: "pr-men-high-tech-accessories",
                 labelKo: "하이테크 액세서리",
                 href: "/shop?category=accessories&sub=pr-men-high-tech-accessories",
+              },
+            ],
+          },
+          {
+            id: "pr-linea-rossa",
+            labelKo: "LINEA ROSSA",
+            href: "/shop?category=accessories&sub=pr-linea-rossa",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-linea-rossa-women",
+                labelKo: "여성용 컬렉션",
+                href: "/shop?category=accessories&sub=pr-linea-rossa-women",
+              },
+              {
+                id: "pr-linea-rossa-men",
+                labelKo: "남성용 컬렉션",
+                href: "/shop?category=accessories&sub=pr-linea-rossa-men",
+              },
+              {
+                id: "pr-linea-rossa-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=pr-linea-rossa-sunglasses",
+              },
+              {
+                id: "pr-linea-rossa-shoes",
+                labelKo: "슈즈",
+                href: "/shop?category=accessories&sub=pr-linea-rossa-shoes",
+              },
+              {
+                id: "pr-linea-rossa-fragrances",
+                labelKo: "프래그런스",
+                href: "/shop?category=accessories&sub=pr-linea-rossa-fragrances",
               },
             ],
           },
