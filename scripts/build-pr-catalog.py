@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -41,6 +42,7 @@ from pr_accessories_ko import seed_accessories_cache, accessories_text_ko  # noq
 from pr_linea_rossa_ko import seed_linea_rossa_cache, linea_rossa_text_ko  # noqa: E402
 from pr_beauty_ko import seed_beauty_cache, beauty_text_ko  # noqa: E402
 from pr_fragrances_ko import seed_fragrances_cache, fragrances_text_ko  # noqa: E402
+from pr_fine_jewelry_ko import seed_fine_jewelry_cache, fine_jewelry_text_ko  # noqa: E402
 from pr_common_ko import apply_phrases as common_phrases  # noqa: E402
 
 # Reject cached / returned copy above this Latin-letter ratio (hybrid EN/KO guard).
@@ -60,6 +62,7 @@ RAW_MEN_ACC = ROOT / "src/data/pr/pr-mens-accessories-catalog-raw.json"
 RAW_LINEA = ROOT / "src/data/pr/pr-linea-rossa-catalog-raw.json"
 RAW_BEAUTY = ROOT / "src/data/pr/pr-beauty-catalog-raw.json"
 RAW_FRAGRANCES = ROOT / "src/data/pr/pr-fragrances-catalog-raw.json"
+RAW_FINE_JEWELRY = ROOT / "src/data/pr/pr-fine-jewelry-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/pr/pr-catalog.json"
 OUT_TS = ROOT / "src/data/pr/pr-catalog.ts"
 CACHE_PATH = ROOT / "src/data/pr/pr-translate-cache.json"
@@ -220,6 +223,13 @@ FRAGRANCE_LEAF_COLLECTIONS = [
     "pr-fragrances-exclusive",
 ]
 FRAGRANCE_PARENT_COLS = ["prada", "prada-accessories", "pr-fragrances"]
+FINE_JEWELRY_LEAF_COLLECTIONS = [
+    "pr-fine-jewelry-bracelets",
+    "pr-fine-jewelry-necklaces",
+    "pr-fine-jewelry-rings",
+    "pr-fine-jewelry-earrings-brooches",
+]
+FINE_JEWELRY_PARENT_COLS = ["prada", "prada-accessories", "pr-fine-jewelry"]
 
 TRAVEL_LEAF_COLLECTIONS = [
     "pr-women-travel-bags",
@@ -660,6 +670,7 @@ def _phrase_fallback(s: str) -> str:
     from pr_linea_rossa_ko import apply_phrases as linea_phrases
     from pr_beauty_ko import apply_phrases as beauty_phrases
     from pr_fragrances_ko import apply_phrases as fragrance_phrases
+    from pr_fine_jewelry_ko import apply_phrases as fine_jewelry_phrases
 
     out = common_phrases(
         mens_rtw_phrases(
@@ -667,7 +678,9 @@ def _phrase_fallback(s: str) -> str:
                 shoe_phrases(
                     travel_phrases(
                         linea_phrases(
-                            beauty_phrases(fragrance_phrases(acc_phrases(s)))
+                            fine_jewelry_phrases(
+                                beauty_phrases(fragrance_phrases(acc_phrases(s)))
+                            )
                         )
                     )
                 )
@@ -752,6 +765,12 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             "fragrances" in tags
             or "pr-fragrances" in cols
             or any(c in FRAGRANCE_LEAF_COLLECTIONS for c in cols)
+        ):
+            continue
+        if scope == "fine-jewelry" and not (
+            "fine-jewelry" in tags
+            or "pr-fine-jewelry" in cols
+            or any(c in FINE_JEWELRY_LEAF_COLLECTIONS for c in cols)
         ):
             continue
         if scope == "slg" and "slg" not in tags:
@@ -860,6 +879,7 @@ def t(text: str | None) -> str:
     # short string containing "logo"/"lining" as a shoe detail).
     # Only accept curated / phrase hits that pass hybrid-English QA.
     for curated_fn in (
+        fine_jewelry_text_ko,
         beauty_text_ko,
         fragrances_text_ko,
         linea_rossa_text_ko,
@@ -921,6 +941,7 @@ def merge_prada_product_fields(dst: dict, src: dict) -> None:
         | set(LINEA_ROSSA_LEAF_COLLECTIONS)
         | set(BEAUTY_LEAF_COLLECTIONS)
         | set(FRAGRANCE_LEAF_COLLECTIONS)
+        | set(FINE_JEWELRY_LEAF_COLLECTIONS)
     )
     if src_leaf in leaf_ids and dst_leaf not in leaf_ids:
         dst["subcategory"] = src_leaf
@@ -2265,13 +2286,25 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             c in FRAGRANCE_LEAF_COLLECTIONS or c == "pr-fragrances"
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"fragrances", "fragrance"}
+        is_fine_jewelry = any(
+            c in FINE_JEWELRY_LEAF_COLLECTIONS or c == "pr-fine-jewelry"
+            for c in sample_cols
+        ) or str(primary.get("_kind") or "") in {"fine-jewelry", "fine_jewelry"}
         is_mens = any(
             c in MEN_ACCESSORIES_LEAF_COLLECTIONS or c in MEN_ACCESSORIES_PARENT_COLS
             for c in sample_cols
         ) or str(primary.get("_kind") or "") in {"mens-accessories", "mens-acc"}
         # Prefer explicit scrape kind / leaf over shared prada-accessories parent.
         kind0 = str(primary.get("_kind") or primary.get("kind") or "")
-        if kind0 in {"fragrances", "fragrance"} or (is_fragrance and not is_beauty and not is_linea):
+        if kind0 in {"fine-jewelry", "fine_jewelry"} or (
+            is_fine_jewelry and not is_beauty and not is_fragrance and not is_linea
+        ):
+            leaf_cols = FINE_JEWELRY_LEAF_COLLECTIONS
+            parent_cols = FINE_JEWELRY_PARENT_COLS
+            default_leaf = "pr-fine-jewelry"
+            gender_tag = "공용"
+            is_fine_jewelry, is_fragrance, is_beauty, is_linea = True, False, False, False
+        elif kind0 in {"fragrances", "fragrance"} or (is_fragrance and not is_beauty and not is_linea):
             leaf_cols = FRAGRANCE_LEAF_COLLECTIONS
             parent_cols = FRAGRANCE_PARENT_COLS
             default_leaf = "pr-fragrances"
@@ -2479,6 +2512,8 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
             )
         elif is_beauty:
             tags = sorted(set([*tags, "beauty", "뷰티", "prada beauty"]))
+        elif is_fine_jewelry:
+            tags = sorted(set([*tags, "fine-jewelry", "파인 주얼리", "prada fine jewelry"]))
         elif is_fragrance:
             tags = sorted(set([*tags, "fragrances", "향수", "prada fragrances"]))
         out.append(
@@ -2510,13 +2545,63 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
         )
     return out
 
+def _row_has_price(row: dict) -> bool:
+    gbp = row.get("gbpPrice")
+    if gbp is None:
+        return False
+    try:
+        return float(gbp) > 0
+    except (TypeError, ValueError):
+        return False
+
+
+def _collect_no_price_skus(*row_lists: list[dict]) -> set[str]:
+    out: set[str] = set()
+    for rows in row_lists:
+        for row in rows:
+            if _row_has_price(row):
+                continue
+            for key in ("sku", "productCode", "id", "parentProduct"):
+                val = str(row.get(key) or "").strip()
+                if val:
+                    out.add(val.upper())
+    return out
+
+
+def _preserve_no_price_catalog(
+    existing: list[dict], products: list[dict], no_price_skus: set[str]
+) -> list[dict]:
+    if not no_price_skus:
+        return products
+    new_ids = {p["id"] for p in products}
+    preserved: list[dict] = []
+    for p in existing:
+        if p["id"] in new_ids:
+            continue
+        sku = str(p.get("sku") or "").upper()
+        if sku in no_price_skus:
+            preserved.append(p)
+            continue
+        for v in p.get("variants") or []:
+            base = str(v.get("sku") or "").split("-")[0].upper()
+            if base in no_price_skus:
+                preserved.append(p)
+                break
+    if preserved:
+        print(
+            f"preserved {len(preserved)} catalogue entries (scrape missing GBP price)",
+            flush=True,
+        )
+    return products + preserved
+
+
 def main() -> None:
     import argparse
 
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "mens-travel", "acc", "mens-acc", "linea-rossa", "beauty", "fragrances", "all"],
+        choices=["shoes", "mens-shoes", "rtw", "mens-rtw", "bags", "mens-bags", "slg", "mens-slg", "travel", "mens-travel", "acc", "mens-acc", "linea-rossa", "beauty", "fragrances", "fine-jewelry", "all"],
         default="all",
         help="Rebuild only one Prada segment (keeps others from existing catalog)",
     )
@@ -2647,6 +2732,13 @@ def main() -> None:
         for r in frag_rows:
             r["_kind"] = "fragrances"
         acc_rows.extend(frag_rows)
+    if only in {"all", "fine-jewelry"} and RAW_FINE_JEWELRY.exists():
+        fj_rows = [
+            dict(r) for r in (json.loads(RAW_FINE_JEWELRY.read_text()).get("products") or [])
+        ]
+        for r in fj_rows:
+            r["_kind"] = "fine-jewelry"
+        acc_rows.extend(fj_rows)
     if not rows and not slg_rows and not travel_rows and not acc_rows:
         raise SystemExit(
             "Missing Prada raw catalogues — run scrape-pr-handbags.py, "
@@ -2656,7 +2748,26 @@ def main() -> None:
             "scrape-pr-womens-slg.py, scrape-pr-mens-slg.py, "
             "scrape-pr-womens-travel.py, scrape-pr-mens-travel.py, "
             "scrape-pr-womens-accessories.py, scrape-pr-mens-accessories.py, "
-            "scrape-pr-linea-rossa.py, scrape-pr-beauty.py, scrape-pr-fragrances.py first"
+            "scrape-pr-linea-rossa.py, scrape-pr-beauty.py, scrape-pr-fragrances.py, "
+            "scrape-pr-fine-jewelry.py first"
+        )
+
+    skip_no_price = os.environ.get("PR_SKIP_NO_PRICE_UPDATE", "").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+    no_price_skus = _collect_no_price_skus(rows, slg_rows, travel_rows, acc_rows)
+    if skip_no_price and no_price_skus:
+        before = len(rows) + len(slg_rows) + len(travel_rows) + len(acc_rows)
+        rows = [r for r in rows if _row_has_price(r)]
+        slg_rows = [r for r in slg_rows if _row_has_price(r)]
+        travel_rows = [r for r in travel_rows if _row_has_price(r)]
+        acc_rows = [r for r in acc_rows if _row_has_price(r)]
+        after = len(rows) + len(slg_rows) + len(travel_rows) + len(acc_rows)
+        print(
+            f"PR_SKIP_NO_PRICE_UPDATE: omitted {before - after} SKUs without GBP price",
+            flush=True,
         )
 
     if only in {"all", "shoes", "mens-shoes"}:
@@ -2692,6 +2803,9 @@ def main() -> None:
         print(f"seeded {n_seed} curated Fragrance strings", flush=True)
         n_seed = seed_linea_rossa_cache(_KO)
         print(f"seeded {n_seed} curated Linea Rossa strings", flush=True)
+    if only in {"all", "fine-jewelry"}:
+        n_seed = seed_fine_jewelry_cache(_KO)
+        print(f"seeded {n_seed} curated Fine Jewelry strings", flush=True)
     prev_by_sku: dict[str, dict] = {}
     existing: list[dict] = []
     if OUT_JSON.exists():
@@ -2763,6 +2877,8 @@ def main() -> None:
             "beauty",
             "fragrances",
             "fragrance",
+            "fine-jewelry",
+            "fine_jewelry",
         }:
             continue  # built via build_accessories_products below
         else:
@@ -2994,6 +3110,33 @@ def main() -> None:
                     merge_prada_product_fields(prod, old)
                 out.append(prod)
             products = out
+        elif only == "fine-jewelry":
+            new_ids = {p["id"] for p in products}
+            merged = [
+                p
+                for p in existing
+                if p["id"] not in new_ids
+                and not (
+                    p.get("brand") == "프라다"
+                    and (
+                        "fine-jewelry" in (p.get("tags") or [])
+                        or "pr-fine-jewelry" in (p.get("prCollections") or [])
+                        or any(
+                            c in FINE_JEWELRY_LEAF_COLLECTIONS
+                            for c in (p.get("prCollections") or [])
+                        )
+                        or str(p.get("subcategory") or "").startswith("pr-fine-jewelry")
+                    )
+                )
+            ]
+            existing_by_id = {p["id"]: p for p in existing}
+            out = list(merged)
+            for prod in products:
+                old = existing_by_id.get(prod["id"])
+                if old:
+                    merge_prada_product_fields(prod, old)
+                out.append(prod)
+            products = out
         elif only == "bags":
             # Replace all Prada bags (women handbags + men handbags + travel)
             merged = [
@@ -3097,6 +3240,8 @@ def main() -> None:
             products = merged + products
 
     products.sort(key=lambda p: p["id"])
+    if skip_no_price and no_price_skus and existing:
+        products = _preserve_no_price_catalog(existing, products, no_price_skus)
     validate_prada_rtw_sizes(products, scope=only)
     products = dedupe_merge_products(products)
     validate_prada_korean(products, scope=only)
@@ -3175,6 +3320,10 @@ def main() -> None:
         if n:
             print(f"  {leaf}: {n}", flush=True)
     for leaf in FRAGRANCE_LEAF_COLLECTIONS:
+        n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
+        if n:
+            print(f"  {leaf}: {n}", flush=True)
+    for leaf in FINE_JEWELRY_LEAF_COLLECTIONS:
         n = sum(1 for p in products if leaf in (p.get("prCollections") or []))
         if n:
             print(f"  {leaf}: {n}", flush=True)

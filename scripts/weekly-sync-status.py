@@ -26,6 +26,7 @@ MONDAY = [
     ("weekly-gg-sync.yml", "갈빈 그린", "월 09:00 UTC / 18:00 KST"),
     ("weekly-bb-sync.yml", "버버리", "월 10:00 UTC / 19:00 KST"),
     ("weekly-ax-sync.yml", "아크테릭스", "월 11:00 UTC / 20:00 KST"),
+    ("weekly-pr-sync.yml", "프라다", "월 12:00 UTC / 21:00 KST"),
     ("weekly-bs-sync.yml", "벨스태프", "월 12:00 UTC / 21:00 KST"),
     ("weekly-ps-sync.yml", "폴 스미스", "월 13:00 UTC / 22:00 KST"),
     ("weekly-lu-sync.yml", "런던언더커버", "월 14:00 UTC / 23:00 KST"),

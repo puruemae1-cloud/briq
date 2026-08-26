@@ -559,6 +559,11 @@ export type SubcategoryId =
   | "pr-fragrances-women"
   | "pr-fragrances-men"
   | "pr-fragrances-exclusive"
+  | "pr-fine-jewelry"
+  | "pr-fine-jewelry-bracelets"
+  | "pr-fine-jewelry-necklaces"
+  | "pr-fine-jewelry-rings"
+  | "pr-fine-jewelry-earrings-brooches"
   | "gc-mens-handbags"
   | "gc-men-crossbody-messengers"
   | "gc-men-backpacks"
@@ -1094,6 +1099,14 @@ export const PR_FRAGRANCE_LEAF_IDS: SubcategoryId[] = [
   "pr-fragrances-women",
   "pr-fragrances-men",
   "pr-fragrances-exclusive",
+];
+
+/** Prada Fine Jewelry leaves (official GB categories hub 10628EU). */
+export const PR_FINE_JEWELRY_LEAF_IDS: SubcategoryId[] = [
+  "pr-fine-jewelry-bracelets",
+  "pr-fine-jewelry-necklaces",
+  "pr-fine-jewelry-rings",
+  "pr-fine-jewelry-earrings-brooches",
 ];
 
 /** Prada women's accessories leaves (official GB accessories PLPs, excl. SLG hub). */
@@ -2032,6 +2045,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_BEAUTY_LEAF_IDS,
     "pr-fragrances",
     ...PR_FRAGRANCE_LEAF_IDS,
+    "pr-fine-jewelry",
+    ...PR_FINE_JEWELRY_LEAF_IDS,
   ],
   "prada-luxury": [
     "prada-luxury",
@@ -2139,6 +2154,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...PR_BEAUTY_LEAF_IDS,
     "pr-fragrances",
     ...PR_FRAGRANCE_LEAF_IDS,
+    "pr-fine-jewelry",
+    ...PR_FINE_JEWELRY_LEAF_IDS,
   ],
   "pr-women-accessories": [
     "pr-women-accessories",
@@ -2181,6 +2198,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "pr-fragrances-women": ["pr-fragrances-women"],
   "pr-fragrances-men": ["pr-fragrances-men"],
   "pr-fragrances-exclusive": ["pr-fragrances-exclusive"],
+  "pr-fine-jewelry": ["pr-fine-jewelry", ...PR_FINE_JEWELRY_LEAF_IDS],
+  "pr-fine-jewelry-bracelets": ["pr-fine-jewelry-bracelets"],
+  "pr-fine-jewelry-necklaces": ["pr-fine-jewelry-necklaces"],
+  "pr-fine-jewelry-rings": ["pr-fine-jewelry-rings"],
+  "pr-fine-jewelry-earrings-brooches": ["pr-fine-jewelry-earrings-brooches"],
   "pr-women-sunglasses": ["pr-women-sunglasses"],
   "pr-women-silks-scarves": ["pr-women-silks-scarves"],
   "pr-women-hats-gloves": ["pr-women-hats-gloves"],
@@ -5519,6 +5541,34 @@ export const navCategories: NavCategory[] = [
                 id: "pr-fragrances-exclusive",
                 labelKo: "익스클루시브 컬렉션",
                 href: "/shop?category=accessories&sub=pr-fragrances-exclusive",
+              },
+            ],
+          },
+          {
+            id: "pr-fine-jewelry",
+            labelKo: "파인 주얼리",
+            href: "/shop?category=accessories&sub=pr-fine-jewelry",
+            navLeaf: true,
+            children: [
+              {
+                id: "pr-fine-jewelry-bracelets",
+                labelKo: "팔찌",
+                href: "/shop?category=accessories&sub=pr-fine-jewelry-bracelets",
+              },
+              {
+                id: "pr-fine-jewelry-necklaces",
+                labelKo: "네크리스",
+                href: "/shop?category=accessories&sub=pr-fine-jewelry-necklaces",
+              },
+              {
+                id: "pr-fine-jewelry-rings",
+                labelKo: "링",
+                href: "/shop?category=accessories&sub=pr-fine-jewelry-rings",
+              },
+              {
+                id: "pr-fine-jewelry-earrings-brooches",
+                labelKo: "이어링 & 브로치",
+                href: "/shop?category=accessories&sub=pr-fine-jewelry-earrings-brooches",
               },
             ],
           },
