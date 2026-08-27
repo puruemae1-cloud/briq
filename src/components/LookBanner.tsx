@@ -38,7 +38,7 @@ export function LookBannerBlock({
 
   return (
     <section
-      className={`look-banner look-banner--${align}${slides ? " look-banner--carousel" : ""}`}
+      className={`look-banner look-banner--${align}${slides ? " look-banner--carousel" : ""}${banner.fullFrame ? " look-banner--fullframe" : ""}`}
       aria-label={`${banner.titleKo} ${banner.eyebrow}`}
     >
       {slides ? (

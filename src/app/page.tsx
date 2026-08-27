@@ -13,11 +13,11 @@ import { getHomepageRailProducts } from "@/lib/product-sort";
 
 export default async function HomePage() {
   // Fixed asset — do not pickRotating / weekly-refresh this slot.
-  const heroFocal = bannerFocalForSrc(heroImage, "42% 45%");
+  const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
 
   return (
     <>
-      <section className="hero">
+      <section className="hero hero--fullframe">
         <div className="hero__stage">
           <BannerImage
             className="hero__bg"

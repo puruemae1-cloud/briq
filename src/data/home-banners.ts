@@ -30,6 +30,11 @@ export type LookBanner = {
   images: string[];
   focal?: string;
   align?: "left" | "center" | "right";
+  /**
+   * Locked creatives: keep the full photo visible (no cover-crop strip).
+   * Stage uses the image aspect ratio instead of a short panoramic max-height.
+   */
+  fullFrame?: boolean;
   /** When present the banner renders as an auto-advancing carousel */
   slides?: BannerSlide[];
   /**
@@ -123,7 +128,8 @@ export const homeLookBanners: LookBanner[] = [
     // Locked creative — weekly refresh only rotates rot-event-* (unused here).
     images: ["/banners/event-now-london.jpg"],
     align: "left",
-    focal: "48% 48%",
+    focal: "50% 50%",
+    fullFrame: true,
   },
   {
     id: "luxury",

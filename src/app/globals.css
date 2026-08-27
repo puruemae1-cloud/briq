@@ -1380,6 +1380,29 @@ body:has(.nav-drawer-toggle:checked) {
   }
 }
 
+/* Locked homepage creatives — show the full photo (taller OK). */
+.hero--fullframe .hero__stage {
+  min-height: 0;
+  max-height: none;
+  width: 100%;
+  aspect-ratio: 1024 / 687;
+  height: auto;
+}
+
+.hero--fullframe .hero__bg {
+  object-fit: cover;
+  object-position: center center;
+  transform: none !important;
+  animation: none !important;
+}
+
+@media (min-width: 900px) {
+  .hero--fullframe .hero__stage {
+    /* Keep full frame — do not re-impose a short panoramic max-height. */
+    max-height: none;
+  }
+}
+
 .hero__shade {
   position: absolute;
   inset: 0;
@@ -1536,6 +1559,13 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner {
     min-height: 48svh;
     max-height: 520px;
+  }
+
+  .look-banner--fullframe {
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 1024 / 682;
+    height: auto;
   }
 
   .look-banner__img {
@@ -1772,6 +1802,27 @@ body:has(.nav-drawer-toggle:checked) {
     min-height: 64svh;
     max-height: 900px;
   }
+
+  .look-banner--fullframe {
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 1024 / 682;
+    height: auto;
+  }
+}
+
+.look-banner--fullframe {
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: 1024 / 682;
+  height: auto;
+}
+
+.look-banner--fullframe .look-banner__img {
+  object-fit: cover;
+  object-position: center center;
+  transform: none !important;
+  animation: none !important;
 }
 
 .look-banner__media {
