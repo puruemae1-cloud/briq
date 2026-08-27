@@ -24,6 +24,12 @@ CDN = "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public/ba
 RAW = "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public/banners"
 
 KEY_SLOTS = [
+    "hero-london-door.jpg",
+    "m/hero-london-door.jpg",
+    "t/hero-london-door.jpg",
+    "event-now-london.jpg",
+    "m/event-now-london.jpg",
+    "t/event-now-london.jpg",
     "rot-hero-1.jpg",
     "rot-hero-2.jpg",
     "rot-hero-3.jpg",

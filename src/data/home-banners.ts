@@ -100,12 +100,15 @@ export function pickRotating(
   return images[index];
 }
 
-export const heroImages = [
-  "/banners/rot-hero-1.jpg",
-  "/banners/rot-hero-2.jpg",
-  "/banners/rot-hero-3.jpg",
-  "/banners/rot-hero-4.jpg",
-];
+/**
+ * Fixed homepage hero ("London to Your Door").
+ * Not rotated weekly — keep a single locked asset under /banners/hero-london-door.jpg
+ * (plus /t/ and /m/ variants). Weekly banner refresh only touches rot-hero-* slots.
+ */
+export const heroImage = "/banners/hero-london-door.jpg";
+
+/** @deprecated Prefer `heroImage` — kept as a one-item list for any callers. */
+export const heroImages = [heroImage];
 
 export const homeLookBanners: LookBanner[] = [
   {
@@ -117,12 +120,10 @@ export const homeLookBanners: LookBanner[] = [
     support: "남들보다 빠르게 선점하는 영국 실시간 프리미엄 트렌드.",
     href: "/shop?sort=new",
     cta: "신상 보러가기",
-    images: [
-      "/banners/rot-event-1.jpg",
-      "/banners/rot-event-2.jpg",
-      "/banners/rot-event-3.jpg",
-    ],
+    // Locked creative — weekly refresh only rotates rot-event-* (unused here).
+    images: ["/banners/event-now-london.jpg"],
     align: "left",
+    focal: "48% 48%",
   },
   {
     id: "luxury",

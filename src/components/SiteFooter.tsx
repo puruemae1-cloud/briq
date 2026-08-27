@@ -37,7 +37,7 @@ export function SiteFooter() {
           <h4>Customer Care</h4>
           <a href="mailto:support@hjstoryltd.com">support@hjstoryltd.com</a>
           <a href="tel:+4407897535888">+44 7897 535888</a>
-          <p>결제: 네이버페이 · 카카오페이 (연동 예정)</p>
+          <p>결제: 네이버페이</p>
         </div>
       </div>
 

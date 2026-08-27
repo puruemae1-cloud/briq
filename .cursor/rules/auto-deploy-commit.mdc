@@ -1,14 +1,17 @@
 ---
-description: After catalog/scrape work, always commit and push to main without asking
+description: After ANY completed Briq request, always commit and push to deploy — banners, UI, footer, catalog, everything.
 alwaysApply: true
 ---
 
-# Auto deploy commit
+# Auto commit + deploy (all requests)
 
-When catalog, scrape, nav, image-tag, or similar product-data work finishes successfully:
+When a user request is finished successfully (not WIP / not explicitly “로컬만”):
 
-1. **Commit** all related changes on `main` (message focused on why).
-2. **Push** to `origin/main` immediately — do not wait for the user to say "응" or "배포".
-3. Also push `product-images` (or other CDN tags) when image scripts ran.
+1. **Commit** all related changes on `main` (message focused on why; no secrets; skip junk like `scripts/_*.json` scratch files).
+2. **Push** to `origin/main` immediately — do **not** ask “커밋/배포할까요?”.
+3. Push CDN tags when needed (`product-images` via `push-product-images-tag.py` for PDP or `banners`).
+4. Applies to **every** shippable change: homepage banners, CSS/UI, footer copy, nav, catalog, scrapers, workflows — not only product imports.
 
-Do this automatically every time unless the user explicitly says not to push, or the change is clearly WIP/local-only.
+**Freeze override:** before `git push` to `main` or `push-product-images-tag.py`, run `python3 scripts/weekly-sync-status.py`. Exit 2 → follow `weekly-sync-freeze.mdc` and tell the user.
+
+Still never force-push `main`/`master`, skip hooks, or run destructive git unless the user explicitly asks.

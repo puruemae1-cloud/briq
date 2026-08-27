@@ -6,14 +6,14 @@ import {
 } from "@/components/Collection100";
 import { LookBannerBlock } from "@/components/LookBanner";
 import { ProductCard } from "@/components/ProductCard";
-import { heroImages, homeLookBanners, pickRotating, resolveHomeRailLinks } from "@/data/home-banners";
+import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { getHomepageRailProducts } from "@/lib/product-sort";
 
 export default async function HomePage() {
-  const heroImage = pickRotating(heroImages);
-  const heroFocal = bannerFocalForSrc(heroImage, "center 40%");
+  // Fixed asset — do not pickRotating / weekly-refresh this slot.
+  const heroFocal = bannerFocalForSrc(heroImage, "42% 45%");
 
   return (
     <>

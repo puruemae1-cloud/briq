@@ -3,8 +3,8 @@
 
 - Homepage hero (rot-hero-*): black-and-white London panoramas
   (Parliament / Big Ben / Thames / bridges) — never apparel or accessories.
-- "Now in London" (rot-event-*): watches / shoes / accessories / bags only,
-  converted to black-and-white to match the hero tone — never clothing or sports.
+- "Now in London" homepage rail uses locked creative event-now-london.jpg
+  (not rotated). Legacy rot-event-* slots remain available for shop / other rails.
 - Fashion rails (shoes / bags / clothing / luxury / accessories): prefer
   campaign / on-model / staged lifestyle frames — not flat grey packshot thumbs.
   Look-banner crops are taller (~2:1 desktop) so legs, bags, and outfits stay in frame.
@@ -157,10 +157,17 @@ CLOTHING_SLOTS = {
 }
 
 # Hero: B&W London skyline panoramas (not product photography).
+# Homepage "London to Your Door" uses a locked creative at
+# public/banners/hero-london-door.jpg (+ t/ m/) — never rotated here.
 HERO_LONDON_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-hero-")}
+FIXED_HOME_HERO = "hero-london-door.jpg"
+assert FIXED_HOME_HERO not in SLOT_THEMES, "locked home hero must not be in SLOT_THEMES"
 
-# "Now in London": watches / shoes / accessories / bags in matching B&W.
+# Legacy rot-event-* pool (shop / secondary rails). Homepage "Now in London"
+# is locked at public/banners/event-now-london.jpg (+ t/ m/).
 EVENT_EDIT_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-event-")}
+FIXED_EVENT_BANNER = "event-now-london.jpg"
+assert FIXED_EVENT_BANNER not in SLOT_THEMES, "locked event banner must not be in SLOT_THEMES"
 
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
 # Mood reference: Andrew Prokos Parliament & Big Ben skyline (style only; not copied).

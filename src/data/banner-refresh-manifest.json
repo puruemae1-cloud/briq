@@ -130,6 +130,16 @@
       "kind": "look",
       "sourceAspect": 0.75
     },
+    "event-now-london.jpg": {
+      "sourceProductId": "fixed-now-in-london",
+      "sourceImage": "local:event-now-london",
+      "focal": "48% 48%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.501
+    },
     "rot-event-1.jpg": {
       "sourceProductId": "gc-a003wdi46010926",
       "sourceImage": "/products/gc-pdp/A003WDI46010926/1.jpg",
@@ -180,6 +190,16 @@
       "shop": false,
       "kind": "look",
       "sourceAspect": 1.0
+    },
+    "hero-london-door.jpg": {
+      "sourceProductId": "fixed-london-door",
+      "sourceImage": "local:hero-london-door",
+      "focal": "42% 45%",
+      "shop": false,
+      "kind": "hero",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.491
     },
     "rot-hero-1.jpg": {
       "sourceProductId": "london-tower-bridge",
