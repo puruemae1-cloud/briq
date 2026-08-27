@@ -2,8 +2,8 @@ name: Weekly Arc'teryx stock sync
 
 on:
   schedule:
-    # Every Monday 11:00 UTC (~20:00 KST) — after Burberry
-    - cron: "0 11 * * 1"
+    # Every Friday 05:00 UTC (06:00 UK / BST) — after Burberry
+    - cron: "0 5 * * 5"
   workflow_dispatch:
 
 permissions:

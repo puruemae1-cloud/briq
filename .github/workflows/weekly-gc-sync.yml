@@ -2,8 +2,8 @@ name: Weekly GC stock sync
 
 on:
   schedule:
-    # Every Tuesday 07:00 UTC (~16:00 KST) — after Monday brand pile-up
-    - cron: "0 7 * * 2"
+    # Every Friday 10:00 UTC (11:00 UK / BST) — Gucci after apparel rails
+    - cron: "0 10 * * 5"
   workflow_dispatch:
 
 permissions:

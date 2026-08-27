@@ -5,7 +5,9 @@ alwaysApply: true
 
 # Weekly sync freeze
 
-Monday/Tuesday UTC GitHub Actions rebuild brand catalogues. A slower **older** Vercel build can overwrite a newer production deploy (2026-08-17: London Undercover vs Chanel makeup).
+Friday UTC early-morning GitHub Actions rebuild brand catalogues (UK ~02:00 start).
+A slower **older** Vercel build can overwrite a newer production deploy
+(2026-08-17: London Undercover vs Chanel makeup).
 
 ## Before any `git push` to `main`, empty-commit redeploy, or `push-product-images-tag.py`
 
@@ -18,6 +20,8 @@ python3 scripts/weekly-sync-status.py
 - Exit **0**: deploy as usual (`auto-deploy.mdc`).
 - Exit **2**: **do not push**. Do not start a new catalogue import that you would then deploy.
 
+**Exception:** If the user explicitly says to deploy now / ignore the freeze / ship despite weekly sync, push as requested.
+
 ## If the user asks for a new update while frozen
 
 Do the work locally only if it stays unpushed, and reply in Korean that:
@@ -27,7 +31,8 @@ Do the work locally only if it stays unpushed, and reply in Korean that:
 
 Do not ask “지금 강행할까요?”. Wait until `weekly-sync-status.py` exits 0, then deploy without being asked again if the original request is still in this chat.
 
-## Schedule (UTC)
+## Schedule (UTC ≈ UK BST = UTC+1)
 
-- **Monday**: banner 06:00, CW 08:00, GG 09:00, BB 10:00, AX 11:00, Belstaff 12:00, Paul Smith 13:00, London Undercover 14:00
-- **Tuesday**: Gucci 07:00
+All weekly brand syncs run **Friday**, staggered from **01:00 UTC (02:00 UK / BST)**:
+
+- banner 01:00, CW 02:00, GG 03:00, BB 04:00, AX 05:00, PR 06:00, BS 07:00, PS 08:00, LU 09:00, GC 10:00, CH 11:00

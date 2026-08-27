@@ -2,8 +2,8 @@ name: Weekly BB stock sync
 
 on:
   schedule:
-    # Every Monday 10:00 UTC (~19:00 KST) — after CW/GG
-    - cron: "0 10 * * 1"
+    # Every Friday 04:00 UTC (05:00 UK / BST) — after CW/GG
+    - cron: "0 4 * * 5"
   workflow_dispatch:
 
 permissions:

@@ -2,8 +2,8 @@ name: Weekly Prada stock sync
 
 on:
   schedule:
-    # Every Monday 12:00 UTC — after Arc'teryx
-    - cron: "0 12 * * 1"
+    # Every Friday 06:00 UTC (07:00 UK / BST) — after Arc'teryx
+    - cron: "0 6 * * 5"
   workflow_dispatch:
 
 permissions:

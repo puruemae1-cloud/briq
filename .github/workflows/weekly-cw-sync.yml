@@ -2,7 +2,8 @@ name: Weekly CW stock sync
 
 on:
   schedule:
-    - cron: "0 8 * * 1"
+    # Every Friday 02:00 UTC (03:00 UK / BST) — after banner refresh
+    - cron: "0 2 * * 5"
   workflow_dispatch:
 
 permissions:

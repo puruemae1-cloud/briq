@@ -2,8 +2,8 @@ name: Weekly CH stock sync
 
 on:
   schedule:
-    # Thursday 07:00 UTC (~16:00 KST) — after Tuesday Gucci / Wednesday buffer
-    - cron: "0 7 * * 4"
+    # Every Friday 11:00 UTC (12:00 UK / BST) — Chanel last (longest)
+    - cron: "0 11 * * 5"
   workflow_dispatch:
     inputs:
       attempt:

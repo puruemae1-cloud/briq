@@ -2,8 +2,8 @@ name: Weekly Paul Smith stock sync
 
 on:
   schedule:
-    # Every Monday 13:00 UTC (~22:00 KST) — after Belstaff
-    - cron: "0 13 * * 1"
+    # Every Friday 08:00 UTC (09:00 UK / BST) — after Belstaff
+    - cron: "0 8 * * 5"
   workflow_dispatch:
 
 permissions:

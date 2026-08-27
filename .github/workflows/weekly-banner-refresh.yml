@@ -2,8 +2,8 @@ name: Weekly homepage banner refresh
 
 on:
   schedule:
-    # Every Monday 06:00 UTC (~15:00 KST) — before brand stock syncs
-    - cron: "0 6 * * 1"
+    # Every Friday 01:00 UTC (02:00 UK / BST) — before brand stock syncs
+    - cron: "0 1 * * 5"
   workflow_dispatch:
 
 permissions:

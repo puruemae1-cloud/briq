@@ -2,8 +2,8 @@ name: Weekly GG stock sync
 
 on:
   schedule:
-    # Every Monday 09:00 UTC (~18:00 KST)
-    - cron: "0 9 * * 1"
+    # Every Friday 03:00 UTC (04:00 UK / BST)
+    - cron: "0 3 * * 5"
   workflow_dispatch:
 
 permissions:

@@ -4,8 +4,8 @@
 Exit 0: safe to push/deploy agent updates.
 Exit 2: freeze — do not push main or product-images; tell the user to wait.
 
-Monday UTC: banner + CW / GG / BB / AX / Belstaff / Paul Smith / London Undercover
-Tuesday UTC: Gucci
+Friday UTC (UK early morning): banner + all brand weekly syncs, staggered from
+01:00 UTC (02:00 UK during BST; 01:00 UK during GMT).
 Other days: freeze only if a weekly job is still queued or in progress.
 """
 from __future__ import annotations
@@ -20,24 +20,21 @@ from datetime import datetime, timezone
 REPO = "puruemae1-cloud/briq"
 API = f"https://api.github.com/repos/{REPO}/actions/workflows"
 
-MONDAY = [
-    ("weekly-banner-refresh.yml", "배너 리프레시 (런던 B&W + 비의류)", "월 06:00 UTC / 15:00 KST"),
-    ("weekly-cw-sync.yml", "크리스토퍼 워드", "월 08:00 UTC / 17:00 KST"),
-    ("weekly-gg-sync.yml", "갈빈 그린", "월 09:00 UTC / 18:00 KST"),
-    ("weekly-bb-sync.yml", "버버리", "월 10:00 UTC / 19:00 KST"),
-    ("weekly-ax-sync.yml", "아크테릭스", "월 11:00 UTC / 20:00 KST"),
-    ("weekly-pr-sync.yml", "프라다", "월 12:00 UTC / 21:00 KST"),
-    ("weekly-bs-sync.yml", "벨스태프", "월 12:00 UTC / 21:00 KST"),
-    ("weekly-ps-sync.yml", "폴 스미스", "월 13:00 UTC / 22:00 KST"),
-    ("weekly-lu-sync.yml", "런던언더커버", "월 14:00 UTC / 23:00 KST"),
+# GitHub cron is UTC. UK local ≈ UTC+1 in BST, UTC+0 in GMT.
+FRIDAY = [
+    ("weekly-banner-refresh.yml", "배너 리프레시", "금 01:00 UTC / 02:00 UK(BST)"),
+    ("weekly-cw-sync.yml", "크리스토퍼 워드", "금 02:00 UTC / 03:00 UK(BST)"),
+    ("weekly-gg-sync.yml", "갈빈 그린", "금 03:00 UTC / 04:00 UK(BST)"),
+    ("weekly-bb-sync.yml", "버버리", "금 04:00 UTC / 05:00 UK(BST)"),
+    ("weekly-ax-sync.yml", "아크테릭스", "금 05:00 UTC / 06:00 UK(BST)"),
+    ("weekly-pr-sync.yml", "프라다", "금 06:00 UTC / 07:00 UK(BST)"),
+    ("weekly-bs-sync.yml", "벨스태프", "금 07:00 UTC / 08:00 UK(BST)"),
+    ("weekly-ps-sync.yml", "폴 스미스", "금 08:00 UTC / 09:00 UK(BST)"),
+    ("weekly-lu-sync.yml", "런던언더커버", "금 09:00 UTC / 10:00 UK(BST)"),
+    ("weekly-gc-sync.yml", "구찌", "금 10:00 UTC / 11:00 UK(BST)"),
+    ("weekly-ch-sync.yml", "샤넬", "금 11:00 UTC / 12:00 UK(BST)"),
 ]
-TUESDAY = [
-    ("weekly-gc-sync.yml", "구찌", "화 07:00 UTC / 16:00 KST"),
-]
-WEDNESDAY = [
-    ("weekly-ch-sync.yml", "샤넬", "목 07:00 UTC / 16:00 KST"),
-]
-ALL = MONDAY + TUESDAY + WEDNESDAY
+ALL = FRIDAY
 
 
 def _headers() -> dict[str, str]:
@@ -98,17 +95,11 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
     created_from = f"{today}T00:00:00Z"
-    weekday = now.weekday()  # Mon=0
+    weekday = now.weekday()  # Mon=0 … Fri=4
 
-    if weekday == 0:
-        required = MONDAY
-        day_ko = "월요일 주간 동기화"
-    elif weekday == 1:
-        required = TUESDAY
-        day_ko = "화요일 주간 동기화(구찌)"
-    elif weekday == 3:
-        required = WEDNESDAY
-        day_ko = "목요일 주간 동기화(샤넬)"
+    if weekday == 4:
+        required = FRIDAY
+        day_ko = "금요일 주간 동기화(영국 새벽 2시부터)"
     else:
         required = []
         day_ko = None
@@ -121,7 +112,7 @@ def main() -> int:
         if required:
             print(
                 "주간 동기화 상태를 확인하지 못했습니다. "
-                "월·화·목에는 새 업데이트를 배포하지 않습니다.\n"
+                "금요일에는 새 업데이트를 배포하지 않습니다.\n"
                 f"원인: {e}",
                 file=sys.stderr,
             )

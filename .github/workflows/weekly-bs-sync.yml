@@ -2,8 +2,8 @@ name: Weekly Belstaff stock sync
 
 on:
   schedule:
-    # Every Monday 12:00 UTC (~21:00 KST) — after Arc'teryx
-    - cron: "0 12 * * 1"
+    # Every Friday 07:00 UTC (08:00 UK / BST) — after Prada
+    - cron: "0 7 * * 5"
   workflow_dispatch:
 
 permissions:
