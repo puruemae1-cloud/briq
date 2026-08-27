@@ -60,7 +60,7 @@ jobs:
             scripts/build-pr-catalog.py \
             scripts/scrape-pr-fine-jewelry.py \
             scripts/pr_fine_jewelry_ko.py \
-            scripts/pr_fine_jewelry_ko_gen.py \
+            scripts/build_pr_fine_jewelry_ko.py \
             scripts/patch-pr-rtw-short-size-charts.py \
             scripts/pr_size_charts.py \
             scripts/push-product-images-tag.py \
