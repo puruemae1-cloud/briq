@@ -2247,6 +2247,23 @@ def build_travel_products(rows: list[dict], prev_by_sku: dict[str, dict], now_is
         )
     return out
 
+def linea_rossa_fragrance_skus() -> set[str]:
+    """SKU keys for Linea Rossa fragrance PLP (Luna Rossa etc.)."""
+    out: set[str] = set()
+    if not RAW_LINEA.exists():
+        return out
+    for r in json.loads(RAW_LINEA.read_text()).get("products") or []:
+        cols = r.get("collections") or []
+        leaf = str(r.get("leaf") or "")
+        if "pr-linea-rossa-fragrances" not in cols and leaf != "pr-linea-rossa-fragrances":
+            continue
+        for k in ("productCode", "id", "sku", "parentProduct"):
+            v = str(r.get(k) or "").strip()
+            if v:
+                out.add(v.upper())
+    return out
+
+
 def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], now_iso: str) -> list[dict]:
     """Group accessories colorways by parentProduct into multi-color variant products."""
     groups: dict[str, list[dict]] = {}
@@ -2354,6 +2371,41 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
         leaf = primary.get("leaf") or next(
             (c for c in leaf_cols if c in cols), default_leaf
         )
+
+        # Luna Rossa / Linea Rossa fragrances: keep both Fragrances + Linea Rossa leaves.
+        member_skus = {
+            str(r.get(k) or "").strip().upper()
+            for r in usable
+            for k in ("productCode", "id", "sku", "parentProduct")
+            if str(r.get(k) or "").strip()
+        }
+        is_linea_frag = bool(member_skus & linea_rossa_fragrance_skus()) or (
+            "pr-linea-rossa-fragrances" in sample_cols
+        )
+        if is_linea_frag and (is_fragrance or is_linea):
+            frag_leaves = [c for c in sample_cols if c in FRAGRANCE_LEAF_COLLECTIONS]
+            if not frag_leaves and is_fragrance:
+                frag_leaves = [c for c in cols if c in FRAGRANCE_LEAF_COLLECTIONS]
+            if not frag_leaves:
+                frag_leaves = ["pr-fragrances-men"]
+            cols = sorted(
+                set(
+                    [
+                        *cols,
+                        *FRAGRANCE_PARENT_COLS,
+                        *LINEA_ROSSA_PARENT_COLS,
+                        "pr-linea-rossa-fragrances",
+                        *frag_leaves,
+                    ]
+                )
+            )
+            if is_fragrance:
+                leaf = next(
+                    (c for c in FRAGRANCE_LEAF_COLLECTIONS if c in cols),
+                    leaf,
+                )
+            else:
+                leaf = "pr-linea-rossa-fragrances"
 
         variants: list[dict] = []
         story_images: list[str] = []
@@ -2506,7 +2558,22 @@ def build_accessories_products(rows: list[dict], prev_by_sku: dict[str, dict], n
         in_stock = any(v["inStock"] for v in variants)
 
         tags = ["prada", "프라다", "accessories", "악세서리", "acc", gender_tag, *cols]
-        if is_linea:
+        if is_linea_frag and (is_fragrance or is_linea):
+            tags = sorted(
+                set(
+                    [
+                        *tags,
+                        "linea-rossa",
+                        "Linea Rossa",
+                        "리네아 로사",
+                        "prada linea rossa",
+                        "fragrances",
+                        "향수",
+                        "prada fragrances",
+                    ]
+                )
+            )
+        elif is_linea:
             tags = sorted(
                 set([*tags, "linea-rossa", "Linea Rossa", "리네아 로사", "prada linea rossa"])
             )
