@@ -2018,7 +2018,7 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .look-banner--watches.look-banner--fullframe {
-  aspect-ratio: var(--look-banner-aspect, 2560 / 900);
+  aspect-ratio: var(--look-banner-aspect, 2560 / 630);
 }
 
 .look-banner--watches.look-banner--fullframe .look-banner__img {
