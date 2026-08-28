@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-28T16:07:09.874+00:00",
+  "refreshedAt": "2026-08-28T15:54:16.447+00:00",
   "weekSeed": 20260826,
   "slots": {
     "rot-acc-1.jpg": {
@@ -671,10 +671,20 @@
       "locked": true,
       "sourceAspect": 2.0
     },
-    "chanel-watches-bel-canto.jpg": {
-      "sourceProductId": "fixed-chanel-watches-bel-canto",
-      "sourceImage": "local:chanel-watches-bel-canto",
-      "focal": "50% 45%",
+    "brand-chanel-premiere.jpg": {
+      "sourceProductId": "fixed-chanel-premiere",
+      "sourceImage": "local:chanel-premiere",
+      "focal": "50% 50%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 2.0
+    },
+    "brand-chanel-como-bag.jpg": {
+      "sourceProductId": "fixed-chanel-como-bag",
+      "sourceImage": "local:chanel-como-bag",
+      "focal": "50% 50%",
       "shop": false,
       "kind": "look",
       "tone": "fixed-color",

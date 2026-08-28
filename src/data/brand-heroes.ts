@@ -7,6 +7,7 @@ export type BrandKey =
   | "gucci"
   | "burberry"
   | "chanel"
+  | "chanel-watches"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -53,11 +54,16 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    images: [
-      "/banners/brand-chanel-1.jpg",
-      "/banners/brand-chanel-2.jpg",
-      "/banners/brand-chanel-3.jpg",
-    ],
+    // Locked Como cruise bag creative — bags / shoes / accessories (not watches).
+    images: ["/banners/brand-chanel-como-bag.jpg"],
+  },
+  "chanel-watches": {
+    key: "chanel-watches",
+    nameEn: "Chanel",
+    nameKo: "샤넬",
+    logoSrc: "/brands/chanel.svg",
+    // Locked Première creative — watches only.
+    images: ["/banners/brand-chanel-premiere.jpg"],
   },
   prada: {
     key: "prada",
@@ -150,7 +156,8 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "chanel-bags": "chanel",
   "chanel-shoes": "chanel",
   "chanel-accessories": "chanel",
-  "chanel-watches": "chanel",
+  "chanel-watches": "chanel-watches",
+  "ch-watches": "chanel-watches",
   prada: "prada",
   "prada-bags": "prada",
   "prada-luxury": "prada",

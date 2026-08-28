@@ -32,9 +32,7 @@ const shopHeroImages: Record<string, string[]> = {
   "watches:christopher-ward": [
     "/banners/brand-christopher-ward-moonphase.jpg",
   ],
-  "watches:chanel-watches": [
-    "/banners/chanel-watches-bel-canto.jpg",
-  ],
+  "watches:chanel-watches": ["/banners/brand-chanel-premiere.jpg"],
 
   clothing: [
     "/banners/rot-cloth-1.jpg",
@@ -144,17 +142,14 @@ const FALLBACK = [
 ];
 
 export function getShopHeroImages(category?: string, sub?: string): string[] {
-  // Explicit category:sub overrides (e.g. locked Chanel watches banner) win
-  // over the shared brand hero pool so fashion/bags brands stay untouched.
-  if (category && category !== "all" && sub) {
-    const keyed = shopHeroImages[`${category}:${sub}`];
-    if (keyed?.length) return keyed;
-  }
-
   const brand = resolveShopBrand(category, sub);
   if (brand?.images?.length) return brand.images;
 
   if (category && category !== "all") {
+    if (sub) {
+      const keyed = shopHeroImages[`${category}:${sub}`];
+      if (keyed?.length) return keyed;
+    }
     const cat = shopHeroImages[category];
     if (cat?.length) return cat;
   }

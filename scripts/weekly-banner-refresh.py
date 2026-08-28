@@ -177,9 +177,11 @@ assert FIXED_WATCH_BANNER not in SLOT_THEMES, "locked watch banner must not be i
 FIXED_CW_BRAND_BANNER = "brand-christopher-ward-moonphase.jpg"
 assert FIXED_CW_BRAND_BANNER not in SLOT_THEMES, "locked CW brand banner must not be in SLOT_THEMES"
 
-# Chanel watches subcategory — locked Bel Canto creative (not weekly-rotated).
-FIXED_CHANEL_WATCHES_BANNER = "chanel-watches-bel-canto.jpg"
-assert FIXED_CHANEL_WATCHES_BANNER not in SLOT_THEMES, "locked Chanel watches banner must not be in SLOT_THEMES"
+# Chanel brand heroes — locked creatives (watches vs bags/shoes/accessories).
+FIXED_CHANEL_WATCH_BANNER = "brand-chanel-premiere.jpg"
+FIXED_CHANEL_BRAND_BANNER = "brand-chanel-como-bag.jpg"
+assert FIXED_CHANEL_WATCH_BANNER not in SLOT_THEMES, "locked Chanel watch banner must not be in SLOT_THEMES"
+assert FIXED_CHANEL_BRAND_BANNER not in SLOT_THEMES, "locked Chanel brand banner must not be in SLOT_THEMES"
 
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
 # Mood reference: Andrew Prokos Parliament & Big Ben skyline (style only; not copied).
