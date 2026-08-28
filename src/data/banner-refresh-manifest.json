@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-28T15:35:01.504+00:00",
+  "refreshedAt": "2026-08-28T15:41:53.093+00:00",
   "weekSeed": 20260826,
   "slots": {
     "rot-acc-1.jpg": {
@@ -650,6 +650,16 @@
       "sourceImage": "/products/ps-pdp/regular-fit-blue-stripe-shirt/3.jpg",
       "focal": "51% 41%",
       "shop": true
+    },
+    "watches-bel-canto.jpg": {
+      "sourceProductId": "fixed-watches-bel-canto",
+      "sourceImage": "local:watches-bel-canto",
+      "focal": "50% 45%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.7778
     }
   }
 }

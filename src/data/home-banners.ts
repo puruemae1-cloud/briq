@@ -35,6 +35,8 @@ export type LookBanner = {
    * Stage uses the image aspect ratio instead of a short panoramic max-height.
    */
   fullFrame?: boolean;
+  /** CSS aspect-ratio for fullFrame banners (e.g. "16 / 9"). */
+  aspectRatio?: string;
   /** When present the banner renders as an auto-advancing carousel */
   slides?: BannerSlide[];
   /**
@@ -130,6 +132,7 @@ export const homeLookBanners: LookBanner[] = [
     align: "left",
     focal: "50% 50%",
     fullFrame: true,
+    aspectRatio: "2560 / 1414",
   },
   {
     id: "luxury",
@@ -158,13 +161,12 @@ export const homeLookBanners: LookBanner[] = [
     support: "초침이 흐르는 순간까지, 시간에 품격을 더하는 셀렉트 워치.",
     href: "/shop?category=watches",
     cta: "시계 쇼핑",
-    images: [
-      "/banners/rot-watch-1.jpg",
-      "/banners/rot-watch-2.jpg",
-      "/banners/rot-watch-3.jpg",
-    ],
+    // Locked Christopher Ward Bel Canto creative — not rotated weekly.
+    images: ["/banners/watches-bel-canto.jpg"],
     align: "left",
-    focal: "center 42%",
+    focal: "50% 45%",
+    fullFrame: true,
+    aspectRatio: "16 / 9",
   },
   {
     id: "bags",

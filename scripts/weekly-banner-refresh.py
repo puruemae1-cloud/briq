@@ -169,6 +169,10 @@ EVENT_EDIT_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-event-")}
 FIXED_EVENT_BANNER = "event-now-london.jpg"
 assert FIXED_EVENT_BANNER not in SLOT_THEMES, "locked event banner must not be in SLOT_THEMES"
 
+# Homepage watches rail uses locked Christopher Ward Bel Canto creative.
+FIXED_WATCH_BANNER = "watches-bel-canto.jpg"
+assert FIXED_WATCH_BANNER not in SLOT_THEMES, "locked watch banner must not be in SLOT_THEMES"
+
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
 # Mood reference: Andrew Prokos Parliament & Big Ben skyline (style only; not copied).
 LONDON_BW_SOURCES: list[dict[str, str]] = [
