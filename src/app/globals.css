@@ -1412,6 +1412,9 @@ body:has(.nav-drawer-toggle:checked) {
   width: 100%;
   aspect-ratio: 1024 / 687;
   height: auto;
+  align-items: start;
+  justify-items: start;
+  padding: 1.45rem 1.25rem 1.35rem;
 }
 
 .hero--fullframe .hero__bg {
@@ -1421,10 +1424,36 @@ body:has(.nav-drawer-toggle:checked) {
   animation: none !important;
 }
 
+.hero--fullframe .hero__shade {
+  background:
+    linear-gradient(
+      125deg,
+      rgba(11, 18, 16, 0.78) 0%,
+      rgba(11, 18, 16, 0.42) 38%,
+      rgba(11, 18, 16, 0.12) 62%,
+      transparent 78%
+    ),
+    linear-gradient(180deg, rgba(11, 18, 16, 0.38) 0%, transparent 42%);
+}
+
+.hero--fullframe .hero__content {
+  max-width: min(36rem, 92%);
+  text-align: left;
+}
+
+.hero--fullframe .hero__support {
+  margin-bottom: 0;
+}
+
 @media (min-width: 900px) {
   .hero--fullframe .hero__stage {
     /* Keep full frame — do not re-impose a short panoramic max-height. */
     max-height: none;
+    padding: 2.35rem 2.5rem 2rem;
+  }
+
+  .hero--fullframe .hero__content {
+    max-width: min(40rem, 46%);
   }
 }
 
