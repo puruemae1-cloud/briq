@@ -1860,8 +1860,8 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe {
     min-height: 0;
     max-height: none;
-    /* Match locked Now in London crop (2560×1414) */
-    aspect-ratio: 2560 / 1414;
+    /* Match locked Now in London crop (2560×1392) */
+    aspect-ratio: 2560 / 1392;
     height: auto;
   }
 }
@@ -1869,7 +1869,7 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner--fullframe {
   min-height: 0;
   max-height: none;
-  aspect-ratio: 2560 / 1414;
+  aspect-ratio: 2560 / 1392;
   height: auto;
 }
 
