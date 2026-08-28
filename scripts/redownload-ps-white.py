@@ -1,11 +1,11 @@
-"""Re-download Paul Smith pale / grey colourway PDP images from official CDN.
+"""Re-download Paul Smith PDP images from official CDN (no greymat).
 
-Prior rembg/soft greymat flattened white / ivory / cream / ecru *and mid-grey*
-garments onto #e7e7e7 (patchy mats / grey blocks). Restore pristine
+Prior rembg/soft greymat flattened apparel and pale colourways onto #e7e7e7
+(patchy mats / grey blocks / sand garments eaten by the mat). Restore pristine
 assets.paulsmith.com bytes — same approach as redownload-bb-greymat.py.
 
-Pass --grey-only to refresh only Grey/Silver (and grey-* handles), which is
-the usual fix when white-ish SKUs were already restored.
+Default: pale colourways only. Use --clothing for all PS apparel (recommended
+after greymat policy change). --grey-only refreshes Grey/Silver only.
 """
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from ps_pale_colour import (  # noqa: E402
     _label,
     is_pale_ps_row,
+    is_ps_clothing_row,
 )
 
 SPEC = importlib.util.spec_from_file_location(
@@ -57,6 +58,9 @@ def is_grey_ps_row(row: dict | None) -> bool:
 
 
 def remote_urls(row: dict) -> list[str]:
+    urls = mens.gallery_image_urls(row)
+    if urls:
+        return urls
     urls = mens.content_image_urls(row)
     if urls:
         return urls
@@ -74,7 +78,7 @@ def hover_url(row: dict) -> str | None:
 
 def ensure_content_urls(row: dict) -> dict:
     """Fill content.images from a live PDP when the raw row was slimmed."""
-    if mens.content_image_urls(row):
+    if mens.content_image_urls(row) or mens.gallery_image_urls(row):
         return row
     link = ""
     plp = row.get("plp") or {}
@@ -108,6 +112,7 @@ def download_one(row: dict) -> tuple[str, int, int, str, dict]:
     local = mens.download_images(handle, urls, greymat=False)
     ok = len(local)
     fail = max(0, min(8, len(urls)) - ok)
+    row["images"] = local
     hurl = hover_url(row)
     if hurl:
         hover = mens.download_hover(handle, hurl, greymat=False)
@@ -120,6 +125,11 @@ def download_one(row: dict) -> tuple[str, int, int, str, dict]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--clothing",
+        action="store_true",
+        help="All PS apparel (clothing / tailoring / suits)",
+    )
     ap.add_argument(
         "--grey-only",
         action="store_true",
@@ -141,6 +151,10 @@ def main() -> None:
             for r in raw.values()
             if isinstance(r, dict) and str(r.get("handle") or "") in want
         ]
+    elif args.clothing:
+        rows = [
+            r for r in raw.values() if isinstance(r, dict) and is_ps_clothing_row(r)
+        ]
     elif args.grey_only:
         rows = [
             r for r in raw.values() if isinstance(r, dict) and is_grey_ps_row(r)
@@ -151,8 +165,8 @@ def main() -> None:
         ]
     handles = {str(r.get("handle") or "") for r in rows}
     print(
-        f"PS pale/grey redownload products={len(rows)} handles={len(handles)} "
-        f"workers={WORKERS} grey_only={args.grey_only}",
+        f"PS redownload products={len(rows)} handles={len(handles)} "
+        f"workers={WORKERS} clothing={args.clothing} grey_only={args.grey_only}",
         flush=True,
     )
     total_ok = total_fail = 0
@@ -167,6 +181,9 @@ def main() -> None:
             done += 1
             key = str(row.get("key") or "")
             if key and key in raw:
+                if row.get("images") and row["images"] != raw[key].get("images"):
+                    raw[key]["images"] = row["images"]
+                    updated += 1
                 if row.get("content") and row["content"] != raw[key].get(
                     "content"
                 ):

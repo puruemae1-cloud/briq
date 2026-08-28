@@ -1,9 +1,12 @@
-"""Detect Paul Smith pale / light colourways that must skip greymat/rembg.
+"""Detect Paul Smith products that must skip greymat/rembg.
 
-Official packshots of white, ivory, cream, ecru, *and mid greys* are destroyed
-by soft remap (garment → grey) or rembg composite onto #e7e7e7 (patchy mats /
-halos). Keep paulsmith.com CDN bytes as-is for these colourways — same idea as
-Burberry.
+All PS *clothing* (mens / womens / tailoring / suits) keeps official CDN bytes —
+greymat/rembg destroys light studio mats and pale garments (sand, beige, ecru,
+white, grey, …). Shoes and accessories may still greymat when backgrounds are
+very light.
+
+Pale colour detection also covers white / ivory / cream / ecru / mid greys when
+channel metadata is missing (PLP-only rows).
 """
 from __future__ import annotations
 
@@ -13,6 +16,11 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "src/data/ps/ps-catalog-raw.json"
+
+# Apparel channels — never greymat (official paulsmith.com packshots are fine).
+PS_CLOTHING_CHANNELS = frozenset(
+    {"clothing", "clothing-women", "tailoring", "suits-women"}
+)
 
 # Exact colour labels from Elevate entity.colour_group / detailed_colour_label.
 PALE_COLOUR_RE = re.compile(
@@ -92,7 +100,36 @@ def is_pale_ps_row(row: dict | None) -> bool:
     )
 
 
-def pale_ps_handles(raw: dict | None = None) -> set[str]:
+def is_ps_clothing_row(row: dict | None) -> bool:
+    """True for PS apparel (clothing / tailoring / suits) — skip greymat."""
+    if not row:
+        return False
+    channels = row.get("channels") or []
+    return bool(set(channels) & PS_CLOTHING_CHANNELS)
+
+
+def is_ps_no_greymat_row(row: dict | None) -> bool:
+    """True when this PS product must keep official CDN bytes (no greymat)."""
+    if not row:
+        return False
+    if is_ps_clothing_row(row):
+        return True
+    return is_pale_ps_row(row)
+
+
+def should_skip_ps_greymat(
+    entity: dict | None = None,
+    *,
+    handle: str | None = None,
+    channels: list[str] | set[str] | None = None,
+) -> bool:
+    """True when scrape/push must not greymat this PS SKU."""
+    if channels and set(channels) & PS_CLOTHING_CHANNELS:
+        return True
+    return is_pale_ps_colour(entity, handle=handle)
+
+
+def ps_no_greymat_handles(raw: dict | None = None) -> set[str]:
     """All ps-pdp folder names that must skip greymat."""
     data = raw
     if data is None:
@@ -107,9 +144,14 @@ def pale_ps_handles(raw: dict | None = None) -> set[str]:
     for row in data.values():
         if not isinstance(row, dict):
             continue
-        if not is_pale_ps_row(row):
+        if not is_ps_no_greymat_row(row):
             continue
         handle = str(row.get("handle") or "").strip()
         if handle:
             out.add(handle)
     return out
+
+
+def pale_ps_handles(raw: dict | None = None) -> set[str]:
+    """Alias for ps_no_greymat_handles (clothing + pale colourways)."""
+    return ps_no_greymat_handles(raw)

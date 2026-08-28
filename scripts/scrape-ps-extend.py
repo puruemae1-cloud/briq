@@ -72,11 +72,19 @@ def main() -> None:
                 "product_type": mens.custom_label(p.get("custom"), "product_type"),
             }
             continue
-        if prev and prev.get("entity") and mens.content_image_urls(prev):
+        if prev and prev.get("entity") and (
+            mens.content_image_urls(prev) or mens.gallery_image_urls(prev)
+        ):
             handle = prev.get("handle") or link.replace("/", "-") or key
-            use_gm = mens.should_greymat_row(prev.get("entity") or {}, handle)
+            use_gm = mens.should_greymat_row(
+                prev.get("entity") or {},
+                handle,
+                channels=prev.get("channels") or membership.get(key, set()),
+            )
             local = mens.download_images(
-                handle, mens.content_image_urls(prev), greymat=use_gm
+                handle,
+                mens.image_urls_for_row(prev, greymat=use_gm),
+                greymat=use_gm,
             )
             if mens.local_images_ok({**prev, "images": local}):
                 prev["images"] = local
@@ -110,12 +118,23 @@ def main() -> None:
         if not urls:
             urls = mens.plp_image_urls(p)
         entity = (pdp or {}).get("entity") or {}
-        use_gm = mens.should_greymat_row(entity, handle)
-        local = mens.download_images(handle, urls, greymat=use_gm)
+        ch = sorted(membership.get(key, set()))
+        use_gm = mens.should_greymat_row(entity, handle, channels=ch)
+        row_for_urls = {"content": (pdp or {}).get("content") or {}}
+        plp_urls = mens.plp_image_urls(p)
+        if not mens.gallery_image_urls(row_for_urls) and not mens.content_image_urls(
+            row_for_urls
+        ):
+            row_for_urls = {"content": {"images": [{"url": u} for u in plp_urls]}}
+        local = mens.download_images(
+            handle,
+            mens.image_urls_for_row(row_for_urls, greymat=use_gm),
+            greymat=use_gm,
+        )
         row = {
             "key": key,
             "handle": handle,
-            "channels": sorted(membership.get(key, set())),
+            "channels": ch,
             "plp": {
                 "key": key,
                 "title": p.get("title"),
@@ -182,7 +201,10 @@ def main() -> None:
                 "images": mens.download_images(
                     handle,
                     mens.plp_image_urls(p),
-                    greymat=mens.should_greymat_row(handle=handle),
+                    greymat=mens.should_greymat_row(
+                        handle=handle,
+                        channels=membership.get(key, set()),
+                    ),
                 ),
                 "sourceUrl": f"{mens.BASE}/uk/{link}",
             }

@@ -15,7 +15,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ps_pale_colour import is_pale_ps_colour  # noqa: E402
+from ps_pale_colour import should_skip_ps_greymat  # noqa: E402
 from studio_whiten import save_product_image  # noqa: E402
 OUT_DIR = ROOT / "src/data/ps"
 RAW_PATH = OUT_DIR / "ps-catalog-raw.json"
@@ -315,6 +315,31 @@ def local_images_ok(row: dict) -> bool:
     return True
 
 
+def gallery_image_urls(row: dict) -> list[str]:
+    """All PDP raster frames in official gallery order (MODEL + STILL)."""
+    urls: list[str] = []
+    for img in (row.get("content") or {}).get("images") or []:
+        if not isinstance(img, dict) or not img.get("url"):
+            continue
+        url = str(img["url"])
+        if any(url.lower().endswith(ext) for ext in (".mp4", ".webm", ".mov", ".m4v")):
+            continue
+        if img.get("type") and str(img.get("type")).lower() not in {"image", "img", ""}:
+            if "video" in str(img.get("type")).lower():
+                continue
+        urls.append(url)
+    return urls
+
+
+def image_urls_for_row(row: dict, *, greymat: bool) -> list[str]:
+    """Official gallery (all frames) for no-greymat apparel; MODEL-first when greymat."""
+    if not greymat:
+        gallery = gallery_image_urls(row)
+        if gallery:
+            return gallery
+    return content_image_urls(row)
+
+
 def content_image_urls(row: dict) -> list[str]:
     urls: list[str] = []
     for img in (row.get("content") or {}).get("images") or []:
@@ -431,11 +456,13 @@ def main() -> None:
             continue
         # Cached metadata but missing on-disk images (common on CI): rehydrate
         # from stored content URLs without a full PDP hit when possible.
-        if prev and prev.get("entity") and content_image_urls(prev):
+        if prev and prev.get("entity") and (content_image_urls(prev) or gallery_image_urls(prev)):
             handle = (prev.get("handle") or link.replace("/", "-") or key)
             use_gm = should_greymat_row(prev.get("entity") or {}, handle)
             local = download_images(
-                handle, content_image_urls(prev), greymat=use_gm
+                handle,
+                image_urls_for_row(prev, greymat=use_gm),
+                greymat=use_gm,
             )
             if local_images_ok({**prev, "images": local}):
                 prev["images"] = local
@@ -470,8 +497,18 @@ def main() -> None:
         if not urls:
             urls = plp_urls
         entity = (pdp or {}).get("entity") or {}
-        use_gm = should_greymat_row(entity, handle)
-        local = download_images(handle, urls, greymat=use_gm)
+        ch = sorted(membership.get(key, set()))
+        use_gm = should_greymat_row(entity, handle, channels=ch)
+        row_for_urls = {
+            "content": (pdp or {}).get("content") or {},
+        }
+        if not gallery_image_urls(row_for_urls) and not content_image_urls(row_for_urls):
+            row_for_urls = {"content": {"images": [{"url": u} for u in plp_urls]}}
+        local = download_images(
+            handle,
+            image_urls_for_row(row_for_urls, greymat=use_gm),
+            greymat=use_gm,
+        )
         # Official Paul Smith PLP hover = imageInfo.images[1]
         local_hover = None
         if len(plp_urls) > 1:
@@ -481,7 +518,7 @@ def main() -> None:
         row = {
             "key": key,
             "handle": handle,
-            "channels": sorted(membership.get(key, set())),
+            "channels": ch,
             "plp": {
                 "key": key,
                 "title": p.get("title"),
@@ -547,7 +584,10 @@ def main() -> None:
                 "images": download_images(
                     handle,
                     plp_image_urls(p),
-                    greymat=should_greymat_row(handle=handle),
+                    greymat=should_greymat_row(
+                        handle=handle,
+                        channels=membership.get(key, set()),
+                    ),
                 ),
                 "sourceUrl": f"{BASE}/uk/{link}",
             }

@@ -9,8 +9,9 @@ Two paths:
   - rembg: background removal + grey composite when the subject is also light
     (white tees, chalk polos, etc.)
 
-Paul Smith pale colourways (white/ivory/cream/ecru/grey/silver/…) skip greymat entirely —
-rembg/soft remap destroyed those official packshots. See ps_pale_colour.py.
+Paul Smith apparel and pale colourways skip greymat entirely — rembg/soft remap
+destroyed official packshots (sand/beige/white/grey on light mats). See
+ps_pale_colour.py.
 
 Gucci pale / light colourways likewise keep official DarkGray_Center CDN bytes
 (see gc_pale_colour.py). gc-pdp is skipped by DEFAULT_DIRS, but when a push
@@ -280,11 +281,11 @@ def greymat_dirs(
     files = collect_images(dirs)
     if "ps-pdp" in dirs:
         try:
-            from ps_pale_colour import pale_ps_handles  # type: ignore
+            from ps_pale_colour import ps_no_greymat_handles  # type: ignore
 
-            skip_handles = pale_ps_handles()
+            skip_handles = ps_no_greymat_handles()
         except Exception as e:
-            print(f"WARN: could not load PS pale handles ({e})", flush=True)
+            print(f"WARN: could not load PS no-greymat handles ({e})", flush=True)
             skip_handles = set()
         if skip_handles:
             before = len(files)
@@ -294,8 +295,8 @@ def greymat_dirs(
                 if p.parent.name not in skip_handles
             ]
             print(
-                f"PS pale skip: excluded {before - len(files)} images "
-                f"across {len(skip_handles)} white-ish handles",
+                f"PS no-greymat skip: excluded {before - len(files)} images "
+                f"across {len(skip_handles)} apparel/pale handles",
                 flush=True,
             )
     if "gc-pdp" in dirs:
