@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { BannerImage } from "@/components/BannerImage";
 import { pickRotating, type LookBanner } from "@/data/home-banners";
@@ -41,7 +42,10 @@ export function LookBannerBlock({
       className={`look-banner look-banner--${align}${slides ? " look-banner--carousel" : ""}${banner.fullFrame ? " look-banner--fullframe" : ""}`}
       style={
         banner.fullFrame && banner.aspectRatio
-          ? { aspectRatio: banner.aspectRatio }
+          ? ({
+              aspectRatio: banner.aspectRatio,
+              "--look-banner-aspect": banner.aspectRatio,
+            } as React.CSSProperties)
           : undefined
       }
       aria-label={`${banner.titleKo} ${banner.eyebrow}`}

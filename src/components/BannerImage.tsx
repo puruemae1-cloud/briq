@@ -14,18 +14,51 @@ type BannerImageProps = {
   "aria-hidden"?: boolean | "true" | "false";
 };
 
-function bannerUrls(catalogSrc: string, useFallbackCdn: boolean) {
-  const resolve = (path: string) =>
-    useFallbackCdn ? mediaUrlFallback(path) || mediaUrl(path) : mediaUrl(path);
-  const desktop = resolve(catalogSrc);
-  const tablet = resolve(toTabletBannerSrc(catalogSrc));
-  const mobile = resolve(toMobileBannerSrc(catalogSrc));
-  return { desktop, tablet, mobile };
+type BannerTier = "mobile" | "tablet" | "desktop";
+
+function tierForWidth(width: number): BannerTier {
+  if (width <= 899) return "mobile";
+  if (width <= 1199) return "tablet";
+  return "desktop";
+}
+
+function catalogPath(catalogSrc: string, tier: BannerTier): string {
+  if (tier === "mobile") return toMobileBannerSrc(catalogSrc);
+  if (tier === "tablet") return toTabletBannerSrc(catalogSrc);
+  return catalogSrc;
+}
+
+function absoluteBannerUrl(
+  catalogSrc: string,
+  tier: BannerTier,
+  useFallbackCdn: boolean,
+): string {
+  const path = catalogPath(catalogSrc, tier);
+  return useFallbackCdn ? mediaUrlFallback(path) || mediaUrl(path) : mediaUrl(path);
+}
+
+/** Ordered fallbacks: current tier → larger tiers, primary CDN then jsDelivr. */
+function buildFallbackChain(catalogSrc: string, tier: BannerTier): string[] {
+  const tiers: BannerTier[] =
+    tier === "mobile"
+      ? ["mobile", "tablet", "desktop"]
+      : tier === "tablet"
+        ? ["tablet", "desktop"]
+        : ["desktop"];
+  const out: string[] = [];
+  for (const t of tiers) {
+    const primary = absoluteBannerUrl(catalogSrc, t, false);
+    const fallback = absoluteBannerUrl(catalogSrc, t, true);
+    if (primary) out.push(primary);
+    if (fallback && fallback !== primary) out.push(fallback);
+  }
+  return out;
 }
 
 /**
- * Device-optimised banner JPEGs via srcSet (no WebP — raw CDN 404s broke mobile
- * `<picture>` fallbacks). Swaps to jsDelivr when GitHub raw is stale/missing.
+ * Device-optimised banner JPEGs. Picks mobile/tablet/desktop URL from viewport
+ * width (more reliable than `srcSet` + external CDN). Steps through CDN hosts
+ * on error.
  */
 export function BannerImage({
   src,
@@ -36,35 +69,29 @@ export function BannerImage({
   style,
   "aria-hidden": ariaHidden,
 }: BannerImageProps) {
-  const [useFallbackCdn, setUseFallbackCdn] = useState(false);
-  const urls = useMemo(
-    () => bannerUrls(src, useFallbackCdn),
-    [src, useFallbackCdn],
-  );
+  const [tier, setTier] = useState<BannerTier>("desktop");
+  const [fallbackIndex, setFallbackIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setUseFallbackCdn(false);
-  }, [src]);
+    setMounted(true);
+    const update = () => setTier(tierForWidth(window.innerWidth));
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
 
-  const hasMobile = urls.mobile !== urls.desktop;
-  const hasTablet = urls.tablet !== urls.desktop;
+  useEffect(() => {
+    setFallbackIndex(0);
+  }, [src, tier]);
 
-  const srcSet = hasMobile
-    ? [
-        `${urls.mobile} 900w`,
-        hasTablet ? `${urls.tablet} 1200w` : null,
-        `${urls.desktop} 2400w`,
-      ]
-        .filter(Boolean)
-        .join(", ")
-    : undefined;
+  const chain = useMemo(() => buildFallbackChain(src, tier), [src, tier]);
+  const resolvedSrc = chain[fallbackIndex] ?? mediaUrl(src);
+  const displaySrc = mounted ? resolvedSrc : mediaUrl(src);
 
   const onError = (_e: SyntheticEvent<HTMLImageElement>) => {
-    if (!useFallbackCdn) {
-      const altHost = mediaUrlFallback(urls.desktop);
-      if (altHost && altHost !== urls.desktop) {
-        setUseFallbackCdn(true);
-      }
+    if (fallbackIndex + 1 < chain.length) {
+      setFallbackIndex((i) => i + 1);
     }
   };
 
@@ -72,9 +99,7 @@ export function BannerImage({
     // eslint-disable-next-line @next/next/no-img-element
     <img
       className={className}
-      src={urls.desktop}
-      srcSet={srcSet}
-      sizes={srcSet ? "100vw" : undefined}
+      src={displaySrc}
       alt={alt}
       loading={loading}
       decoding="async"
