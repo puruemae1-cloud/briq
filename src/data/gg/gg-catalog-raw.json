@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-24T10:03:25Z",
+  "scrapedAt": "2026-08-28T14:53:51Z",
   "collections": {
     "men-new": [
       "arlo-waterproof-golf-jacket-black-orange",
@@ -387,7 +387,6 @@
       "mason-breathable-short-sleeve-shirt-super-pink",
       "laurent-windproof-and-water-repellant-golf-jacket-forged-iron-black",
       "laurent-windproof-and-water-repellant-golf-jacket-red-navy",
-      "mitchell-breathable-short-sleeve-golf-shirt-royal-blue-white-black",
       "sanford-lightweight-solid-golf-cap-black",
       "dean-insulating-golf-mid-layer-crystal-blue-navy",
       "tromb-stormproof-umbrella-black-silver",
@@ -607,8 +606,6 @@
       "armstrong-waterproof-jacket-black-sharkskin-cool-grey",
       "armstrong-waterproof-jacket-cool-grey",
       "dolly-insulating-mid-layer-black",
-      "molly-breathable-short-sleeve-golf-shirt-fuchsia",
-      "abby-waterproof-golf-jacket-fuchsia-white",
       "dixie-insulating-golf-mid-layer-fuchsia-white",
       "alice-waterproof-jacket-white",
       "melody-breathable-short-sleeve-shirt-white",
@@ -637,7 +634,6 @@
       "marielle-breathable-golf-skirt-with-inner-shorts-white-navy",
       "lissy-windproof-and-water-repellent-golf-jacket-crystal-blue-white",
       "lissy-windproof-and-water-repellent-golf-jacket-fuchsia-white",
-      "abby-waterproof-golf-jacket-crystal-blue-white",
       "mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy",
       "maguire-breathable-short-sleeve-golf-shirt-royal-blue",
       "marley-breathable-short-sleeve-golf-shirt-white-royal-blue",
@@ -783,7 +779,6 @@
       "dolly-insulating-mid-layer-holly-green",
       "albert-waterproof-jacket-cool-grey",
       "ebba-thermal-base-layer-leggings-navy-blue-bell",
-      "nicole-breathable-pants-navy-white",
       "percy-breathable-shorts-black",
       "percy-breathable-shorts-light-grey",
       "nixon-breathable-pants-navy",
@@ -820,7 +815,6 @@
       "mireya-breathable-short-sleeve-shirt-white",
       "adele-waterproof-jacket-red",
       "ark-waterproof-hat-black",
-      "marie-breathable-skirt-with-inner-shorts-golf-green",
       "maia-breathable-short-sleeve-shirt-cool-grey",
       "daisy-insulating-mid-layer-golf-green",
       "dolly-insulating-mid-layer-red",
@@ -846,7 +840,6 @@
       "leandro-windproof-and-water-repellent-golf-jacket-black-forged-iron",
       "dante-insulating-sweatshirt-black",
       "dante-insulating-sweatshirt-alaskan-blue",
-      "derek-insulating-neck-warmer-sunny-lime",
       "duncan-insulating-golf-mid-layer-white",
       "dunn-insulating-golf-sweatshirt-sand-white",
       "dash-insulating-mid-layer-black-white",
@@ -859,15 +852,19 @@
       "lloyd-windproof-and-water-repellant-golf-jacket-black-forged-iron",
       "raul-breathable-shorts-black",
       "miran-breathable-short-sleeve-golf-shirt-navy-moonlight-blue",
-      "del-insulating-vest-atlantis-green-melange",
       "mona-breathable-short-sleeve-golf-shirt-crystal-blue-white",
       "daxton-insulating-mid-layer-red",
-      "dexter-insulating-mid-layer-navy",
       "dorali-insulating-mid-layer-navy",
       "drake-insulating-mid-layer-blue",
       "lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue",
       "daxton-insulating-mid-layer-sporty-red",
-      "upe-dolly-insulating-mid-layer-multicolor-na"
+      "upe-dolly-insulating-mid-layer-multicolor-na",
+      "percy-breathable-shorts-navy",
+      "nicole-breathable-pants-navy-white",
+      "abby-waterproof-golf-jacket-crystal-blue-white",
+      "abby-waterproof-golf-jacket-fuchsia-white",
+      "marty-breathable-short-sleeve-golf-shirt-sharkskin",
+      "molly-breathable-short-sleeve-golf-shirt-fuchsia"
     ]
   },
   "products": [
@@ -875,7 +872,7 @@
       "id": 16128360186234,
       "handle": "arlo-waterproof-golf-jacket-black-orange",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 2",
         "Black",
@@ -1930,7 +1927,7 @@
           "size": "M",
           "price": "119.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 56981712961914,
@@ -4150,7 +4147,7 @@
       "id": 15338693067130,
       "handle": "don-insulating-golf-mid-layer-royal-blue-white",
       "title": "Don - Insulating golf mid layer",
-      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play. ",
+      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -4355,7 +4352,7 @@
       "id": 15338693099898,
       "handle": "don-insulating-golf-mid-layer-black-white",
       "title": "Don - Insulating golf mid layer",
-      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play. ",
+      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -4453,7 +4450,6 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
-        "2027 Part 2",
         "insula",
         "INSULA™ Warming effect #1",
         "Men",
@@ -4687,7 +4683,7 @@
           "size": "L",
           "price": "119.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 55877783912826,
@@ -4832,7 +4828,7 @@
       "id": 15338517528954,
       "handle": "luis-windproof-and-water-repellent-golf-jacket-navy",
       "title": "Luis - Windproof and water repellent golf jacket",
-      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain. ",
+      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -5197,7 +5193,6 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
-        "2027 Part 2",
         "Black",
         "insula",
         "INSULA™ Warming effect #1",
@@ -5573,7 +5568,7 @@
       "id": 15338516939130,
       "handle": "luis-windproof-and-water-repellent-golf-jacket-royal-blue",
       "title": "Luis - Windproof and water repellent golf jacket",
-      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain. ",
+      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -5777,7 +5772,7 @@
       "id": 15338693230970,
       "handle": "don-insulating-golf-mid-layer-navy-white",
       "title": "Don - Insulating golf mid layer",
-      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play. ",
+      "body_html": "Introducing Don, a half-zip pullover mid layer crafted with a new Warming Effect #1 fabric. This lightweight, smooth fabric offers a soft surface inside and out, providing excellent next-to-skin comfort. Designed to be worn as an extra layer on warmer days or under a jacket for added warmth, the Don mid layer combines breathability and quick-dry properties to keep you comfortable throughout your round. Its stretch fabric allows for freedom of movement, while the soft handfeel ensures comfort during active play.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -5870,7 +5865,7 @@
       "id": 15338517266810,
       "handle": "luis-windproof-and-water-repellent-golf-jacket-black",
       "title": "Luis - Windproof and water repellent golf jacket",
-      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain. ",
+      "body_html": "The Luis vest is an ultra-lightweight, quarter-zip windbreaker designed for maximum performance on warmer days. Weighing just 94g (3.34 ounces) in size medium, it offers the perfect balance of protection and breathability without the bulk. Made with INTERFACE-1™ technology fabric and Warming Effect #1, this short-sleeve vest is windproof and features a water-repellent finish to keep you dry in light rain.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -6899,7 +6894,7 @@
           "size": "XL",
           "price": "47.40",
           "compare_at_price": "79.00",
-          "available": true
+          "available": false
         },
         {
           "id": 55888130605434,
@@ -6935,7 +6930,7 @@
       "id": 15338473914746,
       "handle": "andrew-waterproof-golf-jacket-black",
       "title": "Andrew - Waterproof Golf Jacket",
-      "body_html": "The Andrew jacket combines classic, streamlined design with high-performance features ideal in challenging weather. Made from Pertex® Shield Stretch Technology fabric, this full-zip rain jacket is 100% waterproof, windproof, and highly breathable, ensuring comfort and protection in wet weather conditions. The stretch fabric allows for easy movement, while the chest tabs offer an adjustable fit for the perfect width. ",
+      "body_html": "The Andrew jacket combines classic, streamlined design with high-performance features ideal in challenging weather. Made from Pertex® Shield Stretch Technology fabric, this full-zip rain jacket is waterproof, windproof, and highly breathable, ensuring comfort and protection in wet weather conditions. The stretch fabric allows for easy movement, while the chest tabs offer an adjustable fit for the perfect width.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -7378,7 +7373,7 @@
       "id": 15338474307962,
       "handle": "andrew-waterproof-golf-jacket-navy",
       "title": "Andrew - Waterproof Golf Jacket",
-      "body_html": "The Andrew jacket combines classic, streamlined design with high-performance features ideal in challenging weather. Made from Pertex® Shield Stretch Technology fabric, this full-zip rain jacket is 100% waterproof, windproof, and highly breathable, ensuring comfort and protection in wet weather conditions. The stretch fabric allows for easy movement, while the chest tabs offer an adjustable fit for the perfect width. ",
+      "body_html": "The Andrew jacket combines classic, streamlined design with high-performance features ideal in challenging weather. Made from Pertex® Shield Stretch Technology fabric, this full-zip rain jacket is waterproof, windproof, and highly breathable, ensuring comfort and protection in wet weather conditions. The stretch fabric allows for easy movement, while the chest tabs offer an adjustable fit for the perfect width.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -8334,7 +8329,7 @@
           "size": "One Size",
           "price": "21.00",
           "compare_at_price": "35.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Derek",
@@ -8362,7 +8357,7 @@
       "id": 16129561821562,
       "handle": "abby-waterproof-golf-jacket-storm-blue-navy",
       "title": "Abby - Waterproof golf jacket",
-      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather. ",
+      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather.",
       "tags": [
         "2026 Part 2",
         "Blue",
@@ -9433,7 +9428,7 @@
       "id": 16129586921850,
       "handle": "miley-breathable-short-sleeve-golf-shirt-delphinium-blue",
       "title": "Miley - Breathable short sleeve golf shirt",
-      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.",
       "tags": [
         "2026 Part 2",
         "Blue",
@@ -9735,7 +9730,7 @@
       "id": 16129587183994,
       "handle": "miley-breathable-short-sleeve-golf-shirt-navy",
       "title": "Miley - Breathable short sleeve golf shirt",
-      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.",
       "tags": [
         "2026 Part 2",
         "Navy",
@@ -9873,7 +9868,7 @@
           "size": "S",
           "price": "79.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 56987033731450,
@@ -10036,7 +10031,7 @@
       "id": 15344999334266,
       "handle": "abby-waterproof-golf-jacket-fuchsia-white",
       "title": "Abby - Waterproof golf jacket",
-      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather. ",
+      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather.",
       "tags": [
         "2026 Part 1",
         "Fullzip",
@@ -10362,7 +10357,7 @@
       "id": 15344999661946,
       "handle": "abby-waterproof-golf-jacket-navy-white",
       "title": "Abby - Waterproof golf jacket",
-      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather. ",
+      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -10439,7 +10434,7 @@
           "size": "XXL",
           "price": "329.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Abby",
@@ -10582,7 +10577,7 @@
       "id": 15344999432570,
       "handle": "abby-waterproof-golf-jacket-crystal-blue-white",
       "title": "Abby - Waterproof golf jacket",
-      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather. ",
+      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather.",
       "tags": [
         "2026 Part 1",
         "Blue",
@@ -10739,7 +10734,7 @@
           "size": "S",
           "price": "47.40",
           "compare_at_price": "79.00",
-          "available": true
+          "available": false
         },
         {
           "id": 55890985648506,
@@ -11307,7 +11302,7 @@
       "id": 15345364697466,
       "handle": "miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
       "title": "Miley - Breathable short sleeve golf shirt",
-      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.",
       "tags": [
         "2026 Part 1",
         "Blue",
@@ -11466,7 +11461,7 @@
           "size": "L",
           "price": "41.40",
           "compare_at_price": "69.00",
-          "available": false
+          "available": true
         },
         {
           "id": 55891555254650,
@@ -11510,7 +11505,7 @@
       "id": 15345366040954,
       "handle": "miley-breathable-short-sleeve-golf-shirt-navy-white",
       "title": "Miley - Breathable short sleeve golf shirt",
-      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.",
       "tags": [
         "2026 Part 1",
         "Navy",
@@ -12080,7 +12075,7 @@
           "size": "S",
           "price": "69.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 55891555910010,
@@ -12096,7 +12091,7 @@
           "size": "L",
           "price": "69.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 55891555975546,
@@ -12172,7 +12167,7 @@
           "size": "XS",
           "price": "69.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 55891558302074,
@@ -12204,7 +12199,7 @@
           "size": "XL",
           "price": "69.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 55891558433146,
@@ -12241,7 +12236,7 @@
       "id": 15447902585210,
       "handle": "darla-insulating-golf-mid-layer-pink",
       "title": "Darla - Insulating golf mid layer",
-      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game. ",
+      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game.",
       "tags": [
         "2026 Part 1",
         "Fullzip",
@@ -12443,7 +12438,7 @@
       "id": 15447902847354,
       "handle": "darla-insulating-golf-mid-layer-navy",
       "title": "Darla - Insulating golf mid layer",
-      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game. ",
+      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -12646,7 +12641,7 @@
       "id": 15447903109498,
       "handle": "darla-insulating-golf-mid-layer-white",
       "title": "Darla - Insulating golf mid layer",
-      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game. ",
+      "body_html": "Introducing Darla, a women’s zip-up mid layer designed with INSULA™ Warming Effect #2 technology to keep you warm and comfortable during cooler rounds. The soft and stretchy fabric provides exceptional comfort and breathability, while the quick-dry properties ensure you stay dry and focused throughout your game.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -12749,7 +12744,7 @@
       "id": 15345373020538,
       "handle": "nova-breathable-golf-shorts-sand",
       "title": "Nova - Breathable golf shorts",
-      "body_html": "The Nova golf shorts are designed for comfort and performance, featuring VENTIL8™ PLUS technology for breathability and quick-dry properties. The mechanical stretch fabric ensures flexibility, while UV protection 20+ keeps you shielded from the sun. With front and back pockets for added convenience, these shorts are perfect for active golfers. ",
+      "body_html": "The Nova golf shorts are designed for comfort and performance, featuring VENTIL8™ PLUS technology for breathability and quick-dry properties. The mechanical stretch fabric ensures flexibility, while UV protection 20+ keeps you shielded from the sun. With front and back pockets for added convenience, these shorts are perfect for active golfers.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -12858,7 +12853,7 @@
       "id": 15345373118842,
       "handle": "nova-breathable-golf-shorts-navy",
       "title": "Nova - Breathable golf shorts",
-      "body_html": "The Nova golf shorts are designed for comfort and performance, featuring VENTIL8™ PLUS technology for breathability and quick-dry properties. The mechanical stretch fabric ensures flexibility, while UV protection 20+ keeps you shielded from the sun. With front and back pockets for added convenience, these shorts are perfect for active golfers. ",
+      "body_html": "The Nova golf shorts are designed for comfort and performance, featuring VENTIL8™ PLUS technology for breathability and quick-dry properties. The mechanical stretch fabric ensures flexibility, while UV protection 20+ keeps you shielded from the sun. With front and back pockets for added convenience, these shorts are perfect for active golfers.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -12966,7 +12961,7 @@
       "id": 15438591918458,
       "handle": "angie-waterproof-golf-pants-black",
       "title": "Angie - Waterproof golf pants",
-      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, 100% waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
+      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -13965,7 +13960,7 @@
       "id": 15056395534714,
       "handle": "alan-waterproof-golf-pants-black",
       "title": "Alan - Waterproof golf pants",
-      "body_html": "Achieve peak waterproof performance with the Alan golf rain pants — part of Galvin Green’s DRYVR™ waterproofs collection. Featuring PERTEX® Shield stretch technology, these 100% waterproof and windproof pants are extremely breathable. We’ve spared no expense on the details, which include adjustable leg width, elasticated drawstring waist, front pockets with fleece lining, and a split inseam for abrasion resistance. We’ve also added an extra abrasion-resistant fabric on the pant hem to ensure durability.",
+      "body_html": "Achieve peak waterproof performance with the Alan golf rain pants — part of Galvin Green’s DRYVR™ waterproofs collection. Featuring PERTEX® Shield stretch technology, these waterproof and windproof pants are extremely breathable. We’ve spared no expense on the details, which include adjustable leg width, elasticated drawstring waist, front pockets with fleece lining, and a split inseam for abrasion resistance. We’ve also added an extra abrasion-resistant fabric on the pant hem to ensure durability.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -14223,7 +14218,7 @@
       "id": 14922291347834,
       "handle": "atlas-waterproof-golf-hat-black",
       "title": "Atlas - Waterproof golf cap",
-      "body_html": "A high-tech, lightweight waterproof golf cap, Atlas is an essential accessory when golfing in rainy or unpredictable weather. Featuring a Galvin Green logo and white edge piping, the Atlas waterproof cap is made from Pertex Shield, a lightweight, breathable waterproof material that is PFAs free. The adjustable circumference is 54 to 62 cm (21,3 to 24,4 inches).",
+      "body_html": "A high-tech, lightweight waterproof golf cap, Atlas is an essential accessory when golfing in rainy or unpredictable weather. Featuring a Galvin Green logo and white edge piping, the Atlas waterproof cap is made from Pertex Shield, a lightweight, breathable waterproof material.  The adjustable circumference is 54 to 62 cm (21,3 to 24,4 inches).",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -14972,7 +14967,7 @@
       "id": 14988842664314,
       "handle": "aston-waterproof-golf-jacket-navy",
       "title": "Aston - Waterproof Golf Jacket",
-      "body_html": "The Aston golf jacket is a versatile, high-tech outer layer for all-weather golf, part of Galvin Green’s award-winning DRYVR™ collection. Constructed from recycled polyester with next-generation GORE-TEX ePE fabric, it is 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX design and lightweight mesh lining offer comfort and warmth without bulk, while the PFAS-free water repellent treatment repels rain and ensures protection in harsh conditions.",
+      "body_html": "The Aston golf jacket is a versatile, high-tech outer layer for all-weather golf, part of Galvin Green’s award-winning DRYVR™ collection. Constructed from recycled polyester with next-generation GORE-TEX ePE fabric, it is waterproof, windproof, and highly breathable. The two-layer GORE-TEX design and lightweight mesh lining offer comfort and warmth without bulk, while the water repellent treatment repels rain and ensures protection in harsh conditions.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -15220,7 +15215,7 @@
       "id": 14988907839866,
       "handle": "aron-waterproof-golf-pants-navy",
       "title": "Aron - Waterproof golf pants",
-      "body_html": "The Aron golf rain pants are part of the Galvin Green DRYVR™ golf rain gear collection designed for comfort and freedom of movement for wet-weather golf. Made from recycled polyester and a next-generation GORE-TEX ePE fabric with a PFAS-free water repellent treatment, these pants are 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX construction, paired with a soft polyester lining, ensures exceptional comfort and warmth throughout your round.",
+      "body_html": "The Aron golf rain pants are part of the Galvin Green DRYVR™ golf rain gear collection designed for comfort and freedom of movement for wet-weather golf. Made from recycled polyester and a next-generation GORE-TEX ePE fabric with a water repellent treatment, these pants are waterproof, windproof, and highly breathable. The two-layer GORE-TEX construction, paired with a soft polyester lining, ensures exceptional comfort and warmth throughout your round.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -15510,6 +15505,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Men",
         "MEN SHORTS Fitted",
         "Shorts",
@@ -16019,7 +16015,7 @@
       "id": 15343112814970,
       "handle": "mansfield-breathable-short-sleeve-golf-shirt-navy",
       "title": "Mansfield - Breathable short sleeve golf shirt",
-      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun.",
       "tags": [
         "2026 Part 1",
         "Men",
@@ -16267,7 +16263,7 @@
       "id": 15447906484602,
       "handle": "arlo-waterproof-golf-jacket-crystal-blue-navy",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -16383,7 +16379,7 @@
       "id": 15447906517370,
       "handle": "arlo-waterproof-golf-jacket-white-red",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -16607,12 +16603,13 @@
       "id": 15122629165434,
       "handle": "april-waterproof-pants-black",
       "title": "April - Waterproof golf pants",
-      "body_html": "Stay dry and comfortable on the golf course with the April rain pants. Made from a recycled polyester GORE-TEX ePE fabric, these pants are 100% waterproof, windproof, and highly breathable. Part of the Galvin Green DRYVR™ collection, these two-layer GORE-TEX fabric is lined with soft polyester, providing extra warmth and comfort on colder days. With a PFAS-free water repellent treatment, these pants reflect a commitment to both performance and sustainability, making them a reliable choice for rainy, cold days on the golf course.",
+      "body_html": "Stay dry and comfortable on the golf course with the April rain pants. Made from a recycled polyester GORE-TEX ePE fabric, these pants are waterproof, windproof, and highly breathable. Part of the Galvin Green DRYVR™ collection, these two-layer GORE-TEX fabric is lined with soft polyester, providing extra warmth and comfort on colder days. With a water repellent treatment, these pants reflect a commitment to both performance and sustainability, making them a reliable choice for rainy, cold days on the golf course.",
       "tags": [
         "2025 Part 2",
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Black",
         "gore-tex",
         "GORE-TEX ePE with lining",
@@ -16773,7 +16770,7 @@
       "id": 9453294059868,
       "handle": "angie-waterproof-golf-pants-navy",
       "title": "Angie - Waterproof golf trousers",
-      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, 100% waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
+      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
       "tags": [
         "2024 Part 2",
         "2025 Part 1",
@@ -17373,7 +17370,7 @@
       "id": 15122627789178,
       "handle": "ava-waterproof-jacket-black",
       "title": "Ava - Waterproof Golf Jacket",
-      "body_html": "The Ava women's golf rain jacket combines freedom of movement, comfort, and advanced weather protection. Part of Galvin Green’s award-winning DRYVR™ collection, this jacket is made from next-generation GORE-TEX ePE fabric that is 100% waterproof, windproof, and highly breathable. A lightweight mesh lining adds comfort and warmth, while the PFAS-free water repellent treatment performs in heavy rain. The contrasting full-length zipper gives this jacket a modern look.",
+      "body_html": "The Ava women's golf rain jacket combines freedom of movement, comfort, and advanced weather protection. Part of Galvin Green’s award-winning DRYVR™ collection, this jacket is made from next-generation GORE-TEX ePE fabric that is waterproof, windproof, and highly breathable. A lightweight mesh lining adds comfort and warmth, while the water repellent treatment performs in heavy rain. The contrasting full-length zipper gives this jacket a modern look.",
       "tags": [
         "2025 Part 2",
         "2026 Part 1",
@@ -17957,7 +17954,7 @@
           "size": "XXL",
           "price": "179.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Dalton",
@@ -18016,7 +18013,7 @@
           "size": "S",
           "price": "139.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 56981715353978,
@@ -18083,7 +18080,7 @@
       "id": 16128360120698,
       "handle": "arlo-waterproof-golf-jacket-sand-navy-white",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 2",
         "Beige",
@@ -18382,7 +18379,7 @@
       "id": 15447906550138,
       "handle": "arlo-waterproof-golf-jacket-black-royal-blue",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -19146,7 +19143,7 @@
       "id": 15447906582906,
       "handle": "arlo-waterproof-golf-jacket-navy-white",
       "title": "Arlo - Waterproof Golf Jacket",
-      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is 100% waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance. ",
+      "body_html": "The Arlo hero jacket combines modern design with the reliable performance of Galvin Green’s award-winning rain gear. Made from Pertex® Shield 3-layer stretch fabric, this jacket is waterproof, windproof, and highly breathable, ensuring you stay dry and comfortable during wet rounds. The sleek, contrasting panels offer a modern look while maintaining functional performance.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -19263,7 +19260,7 @@
       "id": 15056395633018,
       "handle": "alan-waterproof-golf-pants-navy",
       "title": "Alan - Waterproof golf pants",
-      "body_html": "Achieve peak waterproof performance with the Alan golf rain pants — part of Galvin Green’s DRYVR™ waterproofs collection. Featuring PERTEX® Shield stretch technology, these 100% waterproof and windproof pants are extremely breathable. We’ve spared no expense on the details, which include adjustable leg width, elasticated drawstring waist, front pockets with fleece lining, and a split inseam for abrasion resistance. We’ve also added an extra abrasion-resistant fabric on the pant hem to ensure durability.",
+      "body_html": "Achieve peak waterproof performance with the Alan golf rain pants — part of Galvin Green’s DRYVR™ waterproofs collection. Featuring PERTEX® Shield stretch technology, these waterproof and windproof pants are extremely breathable. We’ve spared no expense on the details, which include adjustable leg width, elasticated drawstring waist, front pockets with fleece lining, and a split inseam for abrasion resistance. We’ve also added an extra abrasion-resistant fabric on the pant hem to ensure durability.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -19686,7 +19683,7 @@
       "id": 14988907217274,
       "handle": "aron-waterproof-golf-pants-black",
       "title": "Aron - Waterproof golf pants",
-      "body_html": "The Aron golf rain pants are part of the Galvin Green DRYVR™ golf rain gear collection designed for comfort and freedom of movement for wet-weather golf. Made from recycled polyester and a next-generation GORE-TEX ePE fabric with a PFAS-free water repellent treatment, these pants are 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX construction, paired with a soft polyester lining, ensures exceptional comfort and warmth throughout your round.",
+      "body_html": "The Aron golf rain pants are part of the Galvin Green DRYVR™ golf rain gear collection designed for comfort and freedom of movement for wet-weather golf. Made from recycled polyester and a next-generation GORE-TEX ePE fabric with a water repellent treatment, these pants are waterproof, windproof, and highly breathable. The two-layer GORE-TEX construction, paired with a soft polyester lining, ensures exceptional comfort and warmth throughout your round.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -20695,7 +20692,7 @@
       "id": 15065863356794,
       "handle": "organotex-garment-care-kit",
       "title": "OrganoTex Garment Care Kit (300 ml)",
-      "body_html": " BioCare Sport Textile Wash\nGentle detergent for functional clothing and shell garments with membranes (e.g. Dryvr/Interface, as rain and wind clothing. Also for outdoor clothing, parkas, fleece, and textile outdoor gear. Maintains the fabric’s water repellent finish (DWR) longer, and leaves no residue that impairs the garment’s breathability.  It also works in cold water, making it perfect for hiking trips. Preferable used before reproofing with OrganoTex waterproofing products.\n\nWash-In Textile Waterproofing Textile waterproofing that is easily washed into the garment in a washing machine to restore or improve water and dirt-repellency. Suitable for sports and outdoor garments made from polyester, polyamide, wool, down, or blends. Compatible with microporous membranes like Dyrvr. Maintains the garment’s breathability, color, and feel.\n\nSustainability\nThe product is based on nature’s own chemistry. It is 100% biobased, readily biodegradable*, and PFAS-free. Eco-labeled with OEKO-TEX ECO PASSSPORT and USDA Certified Biobased Product 100%. *according to OECD 301F\n",
+      "body_html": "BioCare Sport Textile Wash\nGentle detergent for functional clothing and shell garments with membranes (e.g. Dryvr/Interface, as rain and wind clothing. Also for outdoor clothing, parkas, fleece, and textile outdoor gear. Maintains the fabric’s water repellent finish (DWR) longer, and leaves no residue that impairs the garment’s breathability.  It also works in cold water, making it perfect for hiking trips. Preferable used before reproofing with OrganoTex waterproofing products.\n\nWash-In Textile Waterproofing Textile waterproofing that is easily washed into the garment in a washing machine to restore or improve water and dirt-repellency. Suitable for sports and outdoor garments made from polyester, polyamide, wool, down, or blends. Compatible with microporous membranes like Dyrvr. Maintains the garment’s breathability, color, and feel.\n\nSustainability\nThe product is based on nature’s own chemistry. It is 100% biobased, readily biodegradable*, and PFAS-free. Eco-labeled with OEKO-TEX ECO PASSSPORT and USDA Certified Biobased Product 100%. *according to OECD 301F",
       "tags": [
         "2024 Part 2",
         "2026 Part 1",
@@ -20745,7 +20742,7 @@
       "id": 14988842205562,
       "handle": "aston-waterproof-golf-jacket-black",
       "title": "Aston - Waterproof Golf Jacket",
-      "body_html": "The Aston golf jacket is a versatile, high-tech outer layer for all-weather golf, part of Galvin Green’s award-winning DRYVR™ collection. Constructed from recycled polyester with next-generation GORE-TEX ePE fabric, it is 100% waterproof, windproof, and highly breathable. The two-layer GORE-TEX design and lightweight mesh lining offer comfort and warmth without bulk, while the PFAS-free water repellent treatment repels rain and ensures protection in harsh conditions.",
+      "body_html": "The Aston golf jacket is a versatile, high-tech outer layer for all-weather golf, part of Galvin Green’s award-winning DRYVR™ collection. Constructed from recycled polyester with next-generation GORE-TEX ePE fabric, it is waterproof, windproof, and highly breathable. The two-layer GORE-TEX design and lightweight mesh lining offer comfort and warmth without bulk, while the water repellent treatment repels rain and ensures protection in harsh conditions.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -21757,7 +21754,7 @@
       "id": 14922292363642,
       "handle": "atlas-waterproof-golf-hat-navy",
       "title": "Atlas - Waterproof golf cap",
-      "body_html": "A high-tech, lightweight waterproof golf cap, Atlas is an essential accessory when golfing in rainy or unpredictable weather. Featuring a Galvin Green logo and white edge piping, the Atlas waterproof cap is made from Pertex Shield, a lightweight, breathable waterproof material that is PFAs free. The adjustable circumference is 54 to 62 cm (21,3 to 24,4 inches).",
+      "body_html": "A high-tech, lightweight waterproof golf cap, Atlas is an essential accessory when golfing in rainy or unpredictable weather. Featuring a Galvin Green logo and white edge piping, the Atlas waterproof cap is made from Pertex Shield, a lightweight, breathable waterproof material.  The adjustable circumference is 54 to 62 cm (21,3 to 24,4 inches).",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -21826,7 +21823,7 @@
       "id": 14922290823546,
       "handle": "avery-waterproof-golf-hat-black",
       "title": "Avery Cresting - Waterproof golf hat",
-      "body_html": "The Avery waterproof golf hat offers ultimate protection from the rain with its wide brim and Pertex® Shield Stretch Technology. Designed as part of the DRYVR™ rain collection, this hat is 100% waterproof and windproof, keeping you dry and shielded during wet and windy rounds. The extra-wide brim at the back ensures additional coverage, while the storm strap provides a secure fit, even in gusty conditions. The elasticated sweatband keeps you comfortable by absorbing moisture, and the stretch fabric offers a flexible fit that moves with you.",
+      "body_html": "The Avery waterproof golf hat offers ultimate protection from the rain with its wide brim and Pertex® Shield Stretch Technology. Designed as part of the DRYVR™ rain collection, this hat is waterproof and windproof, keeping you dry and shielded during wet and windy rounds. The extra-wide brim at the back ensures additional coverage, while the storm strap provides a secure fit, even in gusty conditions. The elasticated sweatband keeps you comfortable by absorbing moisture, and the stretch fabric offers a flexible fit that moves with you.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -22032,7 +22029,7 @@
       "id": 14922194682234,
       "handle": "archer-waterproof-golf-cap-navy",
       "title": "Archer - Waterproof golf cap",
-      "body_html": "Stay warm and dry with the Archer golf cap — featuring a fleece lining, ear flaps for extra protection, and high-tech waterproof material designed to keep you dry. Pertex Shield is a high-tech, lightweight waterproof material that is breathable, stretchy, and PFAs free. This cap’s width can be adjusted at the back with velcro and elastic to ensure a snug fit. Circumference for size small is 54 to 56 cm (21,3 to 22 inches), medium is 56 to 58 cm (22 to 22,8 inches) and large is 60 to 62 cm (23,6 to 24,4 inches).",
+      "body_html": "Stay warm and dry with the Archer golf cap — featuring a fleece lining, ear flaps for extra protection, and high-tech waterproof material designed to keep you dry. Pertex Shield is a high-tech, lightweight waterproof material that is breathable and  stretchy. This cap’s width can be adjusted at the back with velcro and elastic to ensure a snug fit. Circumference for size small is 54 to 56 cm (21,3 to 22 inches), medium is 56 to 58 cm (22 to 22,8 inches) and large is 60 to 62 cm (23,6 to 24,4 inches).",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -22122,7 +22119,7 @@
       "id": 14922194518394,
       "handle": "archer-waterproof-golf-cap-black",
       "title": "Archer - Waterproof golf cap",
-      "body_html": "Stay warm and dry with the Archer golf cap — featuring a fleece lining, ear flaps for extra protection, and high-tech waterproof material designed to keep you dry. Pertex Shield is a high-tech, lightweight waterproof material that is breathable, stretchy, and PFAs free. This cap’s width can be adjusted at the back with velcro and elastic to ensure a snug fit. Circumference for size small is 54 to 56 cm (21,3 to 22 inches), medium is 56 to 58 cm (22 to 22,8 inches) and large is 60 to 62 cm (23,6 to 24,4 inches).",
+      "body_html": "Stay warm and dry with the Archer golf cap — featuring a fleece lining, ear flaps for extra protection, and high-tech waterproof material designed to keep you dry. Pertex Shield is a high-tech, lightweight waterproof material that is breathable and  stretchy. This cap’s width can be adjusted at the back with velcro and elastic to ensure a snug fit. Circumference for size small is 54 to 56 cm (21,3 to 22 inches), medium is 56 to 58 cm (22 to 22,8 inches) and large is 60 to 62 cm (23,6 to 24,4 inches).",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -22212,7 +22209,7 @@
       "id": 14922194321786,
       "handle": "addison-waterproof-golf-hat-black",
       "title": "Addison Cresting - Waterproof golf hat",
-      "body_html": "The Addison golf rain hat is designed to provide reliable protection from the elements, combining waterproof, windproof, and highly breathable features with a stylish and functional design. Made with Pertex® Shield Stretch Technology fabric, this hat is 100% waterproof while maintaining excellent breathability to keep you dry and comfortable during rainy rounds. The stretch fabric ensures a comfortable fit, and the elasticated sweatband adds extra comfort.",
+      "body_html": "The Addison golf rain hat is designed to provide reliable protection from the elements, combining waterproof, windproof, and highly breathable features with a stylish and functional design. Made with Pertex® Shield Stretch Technology fabric, this hat is waterproof while maintaining excellent breathability to keep you dry and comfortable during rainy rounds. The stretch fabric ensures a comfortable fit, and the elasticated sweatband adds extra comfort.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -24832,6 +24829,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Men",
         "MEN SHORTS Fitted",
         "Navy",
@@ -24946,6 +24944,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Black",
         "Men",
         "MEN SHORTS Fitted",
@@ -25059,6 +25058,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Core collection",
         "Grey",
         "INSULA™ Warming effect #2",
@@ -25207,7 +25207,7 @@
           "size": "L",
           "price": "129.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 42277436653726,
@@ -25269,6 +25269,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Black",
         "Core collection",
         "INSULA™ Warming effect #2",
@@ -25757,7 +25758,7 @@
           "size": "30/30",
           "price": "119.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 42277021647006,
@@ -25853,7 +25854,7 @@
           "size": "32/34",
           "price": "119.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 42277022040222,
@@ -25869,7 +25870,7 @@
           "size": "36/34",
           "price": "119.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 42277022105758,
@@ -25893,7 +25894,7 @@
           "size": "34/36",
           "price": "119.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 42277022204062,
@@ -26671,7 +26672,7 @@
       "id": 15345353884026,
       "handle": "ariel-cresting-waterproof-golf-cap-navy",
       "title": "Ariel Cresting - Waterproof golf cap",
-      "body_html": "The Ariel waterproof golf hat combines style and performance, offering essential protection from the elements. Made with Pertex® Shield Stretch Technology fabric, this hat is 100% waterproof, windproof, and breathable, keeping you comfortable during wet and windy rounds. The stretch fabric ensures a perfect fit, and the adjustable width allows for a customisable size. The elasticated sweatband helps keep sweat at bay, ensuring you stay dry even in intense conditions. ",
+      "body_html": "The Ariel waterproof golf hat combines style and performance, offering essential protection from the elements. Made with Pertex® Shield Stretch Technology fabric, this hat is waterproof, windproof, and breathable, keeping you comfortable during wet and windy rounds. The stretch fabric ensures a perfect fit, and the adjustable width allows for a customisable size. The elasticated sweatband helps keep sweat at bay, ensuring you stay dry even in intense conditions.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -26799,7 +26800,7 @@
       "id": 14922292986234,
       "handle": "ariel-waterproof-golf-cap",
       "title": "Ariel Cresting - Waterproof golf cap",
-      "body_html": "The Ariel waterproof golf hat combines style and performance, offering essential protection from the elements. Made with Pertex® Shield Stretch Technology fabric, this hat is 100% waterproof, windproof, and breathable, keeping you comfortable during wet and windy rounds. The stretch fabric ensures a perfect fit, and the adjustable width allows for a customisable size. The elasticated sweatband helps keep sweat at bay, ensuring you stay dry even in intense conditions. ",
+      "body_html": "The Ariel waterproof golf hat combines style and performance, offering essential protection from the elements. Made with Pertex® Shield Stretch Technology fabric, this hat is waterproof, windproof, and breathable, keeping you comfortable during wet and windy rounds. The stretch fabric ensures a perfect fit, and the adjustable width allows for a customisable size. The elasticated sweatband helps keep sweat at bay, ensuring you stay dry even in intense conditions.",
       "tags": [
         "2025 Part 1",
         "2025 Part 2",
@@ -26866,7 +26867,7 @@
       "id": 15345353490810,
       "handle": "avery-cresting-waterproof-golf-hat-navy",
       "title": "Avery Cresting - Waterproof golf hat",
-      "body_html": "The Avery waterproof golf hat offers ultimate protection from the rain with its wide brim and Pertex® Shield Stretch Technology. Designed as part of the DRYVR™ rain collection, this hat is 100% waterproof and windproof, keeping you dry and shielded during wet and windy rounds. The extra-wide brim at the back ensures additional coverage, while the storm strap provides a secure fit, even in gusty conditions. The elasticated sweatband keeps you comfortable by absorbing moisture, and the stretch fabric offers a flexible fit that moves with you.",
+      "body_html": "The Avery waterproof golf hat offers ultimate protection from the rain with its wide brim and Pertex® Shield Stretch Technology. Designed as part of the DRYVR™ rain collection, this hat is waterproof and windproof, keeping you dry and shielded during wet and windy rounds. The extra-wide brim at the back ensures additional coverage, while the storm strap provides a secure fit, even in gusty conditions. The elasticated sweatband keeps you comfortable by absorbing moisture, and the stretch fabric offers a flexible fit that moves with you.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -26964,7 +26965,7 @@
       "id": 15345353687418,
       "handle": "addison-waterproof-golf-hat-navy",
       "title": "Addison Cresting - Waterproof golf hat",
-      "body_html": "The Addison golf rain hat is designed to provide reliable protection from the elements, combining waterproof, windproof, and highly breathable features with a stylish and functional design. Made with Pertex® Shield Stretch Technology fabric, this hat is 100% waterproof while maintaining excellent breathability to keep you dry and comfortable during rainy rounds. The stretch fabric ensures a comfortable fit, and the elasticated sweatband adds extra comfort.",
+      "body_html": "The Addison golf rain hat is designed to provide reliable protection from the elements, combining waterproof, windproof, and highly breathable features with a stylish and functional design. Made with Pertex® Shield Stretch Technology fabric, this hat is waterproof while maintaining excellent breathability to keep you dry and comfortable during rainy rounds. The stretch fabric ensures a comfortable fit, and the elasticated sweatband adds extra comfort.",
       "tags": [
         "2026 Part 1",
         "2026 Part 2",
@@ -27328,7 +27329,7 @@
           "size": "L",
           "price": "129.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 46880673202524,
@@ -27336,7 +27337,7 @@
           "size": "XL",
           "price": "129.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 46880673235292,
@@ -28781,6 +28782,7 @@
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "Black",
         "Others",
         "Umbrella",
@@ -29047,7 +29049,7 @@
       "id": 16129561952634,
       "handle": "abby-waterproof-golf-jacket-black",
       "title": "Abby - Waterproof golf jacket",
-      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather. ",
+      "body_html": "The Abby jacket combines modern design with the high-performance features you expect from Galvin Green’s rainwear collection. Made from Pertex® Shield 3-layer stretch fabric, this jacket is fully waterproof and windproof, offering excellent breathability to keep you comfortable in any weather.",
       "tags": [
         "2026 Part 2",
         "2027 Part 1",
@@ -29266,12 +29268,13 @@
       "id": 15122629525882,
       "handle": "april-waterproof-pants-navy",
       "title": "April - Waterproof golf pants",
-      "body_html": "Stay dry and comfortable on the golf course with the April rain pants. Made from a recycled polyester GORE-TEX ePE fabric, these pants are 100% waterproof, windproof, and highly breathable. Part of the Galvin Green DRYVR™ collection, these two-layer GORE-TEX fabric is lined with soft polyester, providing extra warmth and comfort on colder days. With a PFAS-free water repellent treatment, these pants reflect a commitment to both performance and sustainability, making them a reliable choice for rainy, cold days on the golf course.",
+      "body_html": "Stay dry and comfortable on the golf course with the April rain pants. Made from a recycled polyester GORE-TEX ePE fabric, these pants are waterproof, windproof, and highly breathable. Part of the Galvin Green DRYVR™ collection, these two-layer GORE-TEX fabric is lined with soft polyester, providing extra warmth and comfort on colder days. With a water repellent treatment, these pants reflect a commitment to both performance and sustainability, making them a reliable choice for rainy, cold days on the golf course.",
       "tags": [
         "2025 Part 2",
         "2026 Part 1",
         "2026 Part 2",
         "2027 Part 1",
+        "2027 Part 2",
         "gore-tex",
         "GORE-TEX ePE with lining",
         "Navy",
@@ -29496,7 +29499,7 @@
           "size": "L",
           "price": "149.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 54973869851002,
@@ -29550,7 +29553,7 @@
       "id": 15122628444538,
       "handle": "ava-waterproof-jacket-navy",
       "title": "Ava - Waterproof Golf Jacket",
-      "body_html": "The Ava women's golf rain jacket combines freedom of movement, comfort, and advanced weather protection. Part of Galvin Green’s award-winning DRYVR™ collection, this jacket is made from next-generation GORE-TEX ePE fabric that is 100% waterproof, windproof, and highly breathable. A lightweight mesh lining adds comfort and warmth, while the PFAS-free water repellent treatment performs in heavy rain. The contrasting full-length zipper gives this jacket a modern look.",
+      "body_html": "The Ava women's golf rain jacket combines freedom of movement, comfort, and advanced weather protection. Part of Galvin Green’s award-winning DRYVR™ collection, this jacket is made from next-generation GORE-TEX ePE fabric that is waterproof, windproof, and highly breathable. A lightweight mesh lining adds comfort and warmth, while the water repellent treatment performs in heavy rain. The contrasting full-length zipper gives this jacket a modern look.",
       "tags": [
         "2025 Part 2",
         "2026 Part 1",
@@ -30068,7 +30071,7 @@
           "size": "S",
           "price": "69.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 42279049101470,
@@ -31494,7 +31497,7 @@
           "size": "3XL",
           "price": "83.40",
           "compare_at_price": "139.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Dean",
@@ -31992,7 +31995,7 @@
       "id": 15902728946042,
       "handle": "martinez-breathable-short-sleeve-golf-shirt-pink-green",
       "title": "Martinez - Breathable short sleeve golf shirt",
-      "body_html": "The Martinez golf shirt, part of the Tournament Time collection, combines modern style with high-performance features. Made with VENTIL8™ PLUS technology, this shirt is breathable and quick-drying, ensuring comfort throughout your round. The striking G print and contrasting green or pink plackets give the shirt a fresh, contemporary look, while the stretch fabric provides freedom of movement. Tailored collar and single fold sleeve hem add refined detailing, and UV protection 20+ keeps you shielded from the sun. ",
+      "body_html": "The Martinez golf shirt, part of the Tournament Time collection, combines modern style with high-performance features. Made with VENTIL8™ PLUS technology, this shirt is breathable and quick-drying, ensuring comfort throughout your round. The striking G print and contrasting green or pink plackets give the shirt a fresh, contemporary look, while the stretch fabric provides freedom of movement. Tailored collar and single fold sleeve hem add refined detailing, and UV protection 20+ keeps you shielded from the sun.",
       "tags": [
         "2026 Part 1 - In season (Masters)",
         "Men",
@@ -32835,7 +32838,7 @@
       "id": 15343112618362,
       "handle": "mansfield-breathable-short-sleeve-golf-shirt-sand",
       "title": "Mansfield - Breathable short sleeve golf shirt",
-      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun.",
       "tags": [
         "2026 Part 1",
         "Beige",
@@ -33484,7 +33487,7 @@
           "size": "XL",
           "price": "83.40",
           "compare_at_price": "139.00",
-          "available": false
+          "available": true
         },
         {
           "id": 56731851129210,
@@ -33712,7 +33715,7 @@
       "id": 15343113404794,
       "handle": "mansfield-breathable-short-sleeve-golf-shirt-white",
       "title": "Mansfield - Breathable short sleeve golf shirt",
-      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun.",
       "tags": [
         "2026 Part 1",
         "Men",
@@ -34418,7 +34421,7 @@
       "id": 15902728913274,
       "handle": "martinez-breathable-short-sleeve-golf-shirt-crystal-blue-green",
       "title": "Martinez - Breathable short sleeve golf shirt",
-      "body_html": "The Martinez golf shirt, part of the Tournament Time collection, combines modern style with high-performance features. Made with VENTIL8™ PLUS technology, this shirt is breathable and quick-drying, ensuring comfort throughout your round. The striking G print and contrasting green or pink plackets give the shirt a fresh, contemporary look, while the stretch fabric provides freedom of movement. Tailored collar and single fold sleeve hem add refined detailing, and UV protection 20+ keeps you shielded from the sun. ",
+      "body_html": "The Martinez golf shirt, part of the Tournament Time collection, combines modern style with high-performance features. Made with VENTIL8™ PLUS technology, this shirt is breathable and quick-drying, ensuring comfort throughout your round. The striking G print and contrasting green or pink plackets give the shirt a fresh, contemporary look, while the stretch fabric provides freedom of movement. Tailored collar and single fold sleeve hem add refined detailing, and UV protection 20+ keeps you shielded from the sun.",
       "tags": [
         "2026 Part 1 - In season (Masters)",
         "Blue",
@@ -35842,7 +35845,7 @@
           "size": "S",
           "price": "41.40",
           "compare_at_price": "69.00",
-          "available": false
+          "available": true
         },
         {
           "id": 54976179732858,
@@ -35984,7 +35987,7 @@
           "size": "XXL",
           "price": "41.40",
           "compare_at_price": "69.00",
-          "available": true
+          "available": false
         },
         {
           "id": 54976178946426,
@@ -37220,7 +37223,7 @@
           "size": "32/32",
           "price": "244.30",
           "compare_at_price": "349.00",
-          "available": true
+          "available": false
         },
         {
           "id": 51817359999354,
@@ -38648,7 +38651,7 @@
       "id": 9453294911836,
       "handle": "angie-waterproof-golf-pants-cool-grey",
       "title": "Angie - Waterproof golf trousers",
-      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, 100% waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
+      "body_html": "After having sold hundreds of thousands of golf rain pants, we consider ourselves experts in the field. Angie is the culmination of decades of golf rain gear development, waterproof and windproof pants that are extremely breathable, and with stretch. Galvin Green’s DRYVR™ waterproofs collection is designed for the golf course, ensuring comfort and freedom of movement.",
       "tags": [
         "2024 Part 2",
         "2025 Part 1",
@@ -39011,7 +39014,7 @@
           "size": "S",
           "price": "47.40",
           "compare_at_price": "79.00",
-          "available": false
+          "available": true
         },
         {
           "id": 48762341720412,
@@ -40269,7 +40272,7 @@
           "size": "L",
           "price": "47.40",
           "compare_at_price": "79.00",
-          "available": false
+          "available": true
         },
         {
           "id": 47555003253084,
@@ -42246,7 +42249,7 @@
           "size": "L",
           "price": "47.40",
           "compare_at_price": "79.00",
-          "available": true
+          "available": false
         },
         {
           "id": 47454855725404,
@@ -42960,7 +42963,7 @@
           "size": "L",
           "price": "39.00",
           "compare_at_price": "65.00",
-          "available": true
+          "available": false
         },
         {
           "id": 46880717570396,
@@ -45712,7 +45715,7 @@
           "size": "170",
           "price": "45.00",
           "compare_at_price": "75.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Raz",
@@ -45949,7 +45952,7 @@
           "size": "M",
           "price": "132.30",
           "compare_at_price": "199.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42366198677662,
@@ -48873,7 +48876,7 @@
           "size": "L",
           "price": "39.00",
           "compare_at_price": "65.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42364890939550,
@@ -50859,7 +50862,7 @@
           "size": "32",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279041794206,
@@ -50867,7 +50870,7 @@
           "size": "34",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279041826974,
@@ -50875,7 +50878,7 @@
           "size": "36",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279041859742,
@@ -50883,7 +50886,7 @@
           "size": "38",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279041892510,
@@ -51297,7 +51300,7 @@
           "size": "30/32",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279039074462,
@@ -51361,7 +51364,7 @@
           "size": "34/34",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279039336606,
@@ -51585,7 +51588,7 @@
           "size": "XXL",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279034126494,
@@ -58617,7 +58620,7 @@
       "id": 15447791141242,
       "handle": "alonzo-waterproof-golf-jacket-black-forged-iron-white",
       "title": "Alonzo - Waterproof Golf Jacket",
-      "body_html": "The Alonzo jacket is a high-tech, super-stretchy DRYVR™ rain jacket, designed for performance in extreme weather conditions. Featuring a 3-layer fabric with a microporous membrane, this jacket is 100% waterproof and windproof, ensuring you stay dry and comfortable. Water-repellent zippers on the centre front and pockets, along with a drawstring collar, keep the rain out, while the cross print on the sleeves adds a sleek, modern aesthetic. ",
+      "body_html": "The Alonzo jacket is a high-tech, super-stretchy DRYVR™ rain jacket, designed for performance in extreme weather conditions. Featuring a 3-layer fabric with a microporous membrane, this jacket is waterproof and windproof, ensuring you stay dry and comfortable. Water-repellent zippers on the centre front and pockets, along with a drawstring collar, keep the rain out, while the cross print on the sleeves adds a sleek, modern aesthetic.",
       "tags": [
         "Black",
         "Fullzip",
@@ -62720,7 +62723,7 @@
       "id": 15343112552826,
       "handle": "mansfield-breathable-short-sleeve-golf-shirt-royal-blue",
       "title": "Mansfield - Breathable short sleeve golf shirt",
-      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun. ",
+      "body_html": "The Mansfield shirt combines style and functionality with stripes on the ribbed collar and a G logo pattern for a classic, sporty look. Designed for breathability and comfort, this shirt is quick-drying and made with stretch fabric for enhanced movement on the course. The ribbed collar and single fold sleeve hem provide a refined finish, while UV protection 20+ helps shield you from the sun.",
       "tags": [
         "2026 Part 1",
         "Blue",
@@ -63054,7 +63057,7 @@
       "id": 15345363124602,
       "handle": "miley-breathable-short-sleeve-golf-shirt-pink-white",
       "title": "Miley - Breathable short sleeve golf shirt",
-      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.\n",
+      "body_html": "Introducing Miley, a women’s golf shirt with a silver zip front and sporty raglan sleeves. The shirt features white panels on the sleeves, adding a dynamic touch to this athletic design. Made from breathable, quick-drying fabric, Miley offers UV protection 20+ to keep you shielded from the sun. The stretch fabric provides flexibility, while the stand-up collar and zipper opening make this a unique golf shirt.",
       "tags": [
         "2026 Part 1",
         "Outlet",
@@ -63275,7 +63278,7 @@
           "size": "32",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279046185118,
@@ -63283,7 +63286,7 @@
           "size": "34",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279046217886,
@@ -63291,7 +63294,7 @@
           "size": "36",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279046250654,
@@ -63299,7 +63302,7 @@
           "size": "38",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42279046283422,
@@ -63322,7 +63325,8 @@
       "colorName": "Navy",
       "collection": "gg-bestsellers-men",
       "collections": [
-        "gg-bestsellers-men"
+        "gg-bestsellers-men",
+        "gg-sale"
       ]
     },
     {
@@ -63846,7 +63850,7 @@
       "id": 16178238947706,
       "handle": "alonzo-storm-blue-navy-white",
       "title": "Alonzo - Waterproof Golf Jacket",
-      "body_html": "The Alonzo jacket is a high-tech, super-stretchy DRYVR™ rain jacket, designed for performance in extreme weather conditions. Featuring a 3-layer fabric with a microporous membrane, this jacket is 100% waterproof and windproof, ensuring you stay dry and comfortable. Water-repellent zippers on the centre front and pockets, along with a drawstring collar, keep the rain out, while the cross print on the sleeves adds a sleek, modern aesthetic. ",
+      "body_html": "The Alonzo jacket is a high-tech, super-stretchy DRYVR™ rain jacket, designed for performance in extreme weather conditions. Featuring a 3-layer fabric with a microporous membrane, this jacket is waterproof and windproof, ensuring you stay dry and comfortable. Water-repellent zippers on the centre front and pockets, along with a drawstring collar, keep the rain out, while the cross print on the sleeves adds a sleek, modern aesthetic.",
       "tags": [
         "2026 Part 2 - The Lab",
         "Blue",
