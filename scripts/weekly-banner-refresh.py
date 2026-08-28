@@ -185,6 +185,10 @@ assert FIXED_SHOES_BANNER not in SLOT_THEMES, "locked shoes banner must not be i
 FIXED_LUXURY_BANNER = "luxury-heritage-modern.jpg"
 assert FIXED_LUXURY_BANNER not in SLOT_THEMES, "locked luxury banner must not be in SLOT_THEMES"
 
+# Homepage accessories / The Finishing Edit — locked Chanel N°5 signatures creative.
+FIXED_ACCESSORIES_BANNER = "accessories-finishing-edit.jpg"
+assert FIXED_ACCESSORIES_BANNER not in SLOT_THEMES, "locked accessories banner must not be in SLOT_THEMES"
+
 # Christopher Ward brand page top banner — locked moonphase creative.
 FIXED_CW_BRAND_BANNER = "brand-christopher-ward-moonphase.jpg"
 assert FIXED_CW_BRAND_BANNER not in SLOT_THEMES, "locked CW brand banner must not be in SLOT_THEMES"
@@ -203,6 +207,7 @@ LOCKED_BANNERS = {
     FIXED_BAG_BANNER,
     FIXED_SHOES_BANNER,
     FIXED_LUXURY_BANNER,
+    FIXED_ACCESSORIES_BANNER,
     FIXED_CW_BRAND_BANNER,
     FIXED_CHANEL_WATCH_BANNER,
     FIXED_CHANEL_BRAND_BANNER,

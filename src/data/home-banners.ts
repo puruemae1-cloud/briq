@@ -211,12 +211,11 @@ export const homeLookBanners: LookBanner[] = [
     support: "티·지갑·쥬얼리까지, 일상의 마침표.",
     href: "/shop?category=accessories",
     cta: "악세서리 쇼핑",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    images: ["/banners/accessories-finishing-edit.jpg"],
     align: "left",
+    focal: "38% 50%",
+    fullFrame: true,
+    aspectRatio: "2560 / 1120",
   },
   {
     id: "sports",
