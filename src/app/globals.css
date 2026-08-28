@@ -1617,64 +1617,81 @@ body:has(.nav-drawer-toggle:checked) {
     max-height: none;
     aspect-ratio: 6 / 5;
     height: auto;
-  }
-
-  .look-banner--fullframe {
-    aspect-ratio: unset;
-    min-height: 0;
-    max-height: none;
-    height: auto;
-    overflow: visible;
-    color: #f7f4ec;
-  }
-
-  .look-banner--fullframe .look-banner__hit {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 0;
-    height: auto;
-  }
-
-  .look-banner--fullframe .look-banner__media {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    flex: none;
+    display: grid;
+    align-items: end;
     overflow: hidden;
   }
 
-  .look-banner--fullframe .look-banner__img {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    height: auto;
+  .look-banner--fullframe {
     aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+  }
+
+  .look-banner--fullframe .look-banner__hit {
+    display: grid;
+    align-items: end;
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .look-banner--fullframe .look-banner__media {
+    position: absolute;
+    inset: 0;
+  }
+
+  .look-banner--fullframe .look-banner__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
     object-fit: cover;
-    object-position: center top;
+    object-position: center center;
   }
 
   .look-banner--fullframe .look-banner__shade {
     background:
       linear-gradient(
-        180deg,
-        rgba(8, 12, 10, 0.08) 0%,
-        rgba(8, 12, 10, 0.42) 72%,
-        rgba(8, 12, 10, 0.72) 100%
+        0deg,
+        rgba(8, 12, 10, 0.82) 0%,
+        rgba(8, 12, 10, 0.28) 42%,
+        rgba(8, 12, 10, 0.12) 100%
       );
   }
 
   .look-banner--fullframe .look-banner__content {
     position: relative;
     flex: none;
-    padding: 1.15rem 1.25rem 1.35rem;
-    background: linear-gradient(180deg, rgba(8, 12, 10, 0.92) 0%, #0b1210 100%);
+    padding: 0 1.15rem 1.25rem;
+    background: transparent;
   }
 
   .look-banner--carousel {
     aspect-ratio: 6 / 5;
-    min-height: 0;
+    min-height: 14rem;
     max-height: none;
+  }
+
+  .look-banner--carousel .look-banner__content {
+    padding: 0 1.15rem 1.15rem;
+  }
+
+  .look-banner__title-en {
+    font-size: clamp(1.45rem, 5.8vw, 2rem);
+  }
+
+  .look-banner__support {
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .look-banner__content {
+    padding: 0 1.15rem 1.25rem;
   }
 
   .look-banner__img {
@@ -1710,49 +1727,59 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .hero--fullframe .hero__stage {
-    aspect-ratio: unset;
+    aspect-ratio: 1024 / 687;
     height: auto;
     min-height: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
+    padding: 0 1.15rem 1.25rem;
+    display: grid;
+    align-items: end;
+    overflow: hidden;
   }
 
   .hero--fullframe .hero__bg {
-    position: relative;
-    inset: auto;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
-    aspect-ratio: 1024 / 687;
+    height: 100%;
+    aspect-ratio: unset;
     object-fit: cover;
     object-position: center center;
-    flex: none;
   }
 
   .hero--fullframe .hero__shade {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    aspect-ratio: 1024 / 687;
-    width: 100%;
+    inset: 0;
+    width: auto;
     height: auto;
+    aspect-ratio: unset;
     background:
       linear-gradient(
-        180deg,
-        rgba(11, 18, 16, 0.35) 0%,
-        rgba(11, 18, 16, 0.12) 45%,
-        rgba(11, 18, 16, 0.55) 100%
-      );
+        100deg,
+        rgba(11, 18, 16, 0.72) 0%,
+        rgba(11, 18, 16, 0.28) 55%,
+        rgba(11, 18, 16, 0.45) 100%
+      ),
+      linear-gradient(0deg, rgba(11, 18, 16, 0.55), transparent 55%);
   }
 
   .hero--fullframe .hero__content {
     position: relative;
-    max-width: none;
-    padding: 1.15rem 1.25rem 1.35rem;
-    background: linear-gradient(180deg, rgba(11, 18, 16, 0.92) 0%, #0b1210 100%);
+    max-width: 100%;
+    padding: 0;
+    background: transparent;
+  }
+
+  .hero__brand {
+    font-size: clamp(1.35rem, 6.5vw, 2rem);
+  }
+
+  .hero__headline {
+    font-size: clamp(0.92rem, 3.8vw, 1.1rem);
+  }
+
+  .hero__support {
+    font-size: 0.86rem;
+    margin-bottom: 0;
   }
 
   .shop-hero__img,
@@ -1971,8 +1998,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe {
     min-height: 0;
     max-height: none;
-    /* Match locked Now in London crop (2560×1392) */
-    aspect-ratio: 2560 / 1392;
+    aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
     height: auto;
   }
 }
@@ -1980,21 +2006,25 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner--fullframe {
   min-height: 0;
   max-height: none;
-  aspect-ratio: 2560 / 1392;
+  aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
   height: auto;
 }
 
-  .look-banner--fullframe .look-banner__img {
-    object-fit: cover;
-    object-position: center top;
-    transform: none !important;
-    animation: none !important;
-  }
+.look-banner--fullframe .look-banner__img {
+  object-fit: cover;
+  object-position: center center;
+  transform: none !important;
+  animation: none !important;
+}
 
-  .look-banner--watches.look-banner--fullframe .look-banner__img {
-    object-fit: contain;
-    object-position: center center;
-  }
+.look-banner--watches.look-banner--fullframe {
+  aspect-ratio: var(--look-banner-aspect, 2560 / 900);
+}
+
+.look-banner--watches.look-banner--fullframe .look-banner__img {
+  object-fit: cover;
+  object-position: center 42%;
+}
 
 .look-banner__media {
   position: absolute;

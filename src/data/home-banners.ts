@@ -166,7 +166,7 @@ export const homeLookBanners: LookBanner[] = [
     align: "left",
     focal: "50% 45%",
     fullFrame: true,
-    aspectRatio: "16 / 9",
+    aspectRatio: "2560 / 900",
   },
   {
     id: "bags",
