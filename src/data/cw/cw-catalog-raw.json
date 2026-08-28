@@ -1,19 +1,19 @@
 {
-  "scrapedAt": "2026-08-17T09:01:48Z",
+  "scrapedAt": "2026-08-28T14:14:02Z",
   "categoryCounts": {
-    "cw-new-releases": 48,
+    "cw-new-releases": 54,
     "cw-bestsellers": 40,
     "cw-hidden-gems": 6,
     "cw-clearance": 11,
     "cw-atelier": 126,
-    "cw-dive": 121,
+    "cw-dive": 127,
     "cw-integrated-sports": 30,
     "cw-adventure-field": 37,
     "cw-military": 4,
     "cw-bel-canto": 11,
     "cw-sealander": 136,
     "cw-twelve": 46,
-    "cw-trident": 53,
+    "cw-trident": 59,
     "cw-moonphase": 6
   },
   "categories": {
@@ -65,7 +65,13 @@
       "C01-39AJH4-S00E0-B1",
       "C60-41A3H1-SBMFB-B0",
       "C60-41A3H1-SBMFB-RB",
-      "C60-41A3H1-SBMFB-RW"
+      "C60-41A3H1-SBMFB-RW",
+      "C60-42C3H1-S0KK0-B0",
+      "C60-39C3H1-B0KK0-VT1",
+      "C60-42C3H1-S0RK0-B0",
+      "C60-39C3H1-B0VV0-HV",
+      "C60-39AGM1-S0RK0-B1",
+      "C60-42AGM1-S0BW0-HB"
     ],
     "cw-bestsellers": [
       "C01-41APT3-T00O0-MW",
@@ -379,7 +385,13 @@
       "C60-41A3H1-SBMFB-RW",
       "C60-41C3H31T0BB0-RBW",
       "C60-41C3H31T0KO0-RKW",
-      "C60-41C3H31T0KK0-RKW"
+      "C60-41C3H31T0KK0-RKW",
+      "C60-42C3H1-S0KK0-B0",
+      "C60-39C3H1-B0KK0-VT1",
+      "C60-42C3H1-S0RK0-B0",
+      "C60-39C3H1-B0VV0-HV",
+      "C60-39AGM1-S0RK0-B1",
+      "C60-42AGM1-S0BW0-HB"
     ],
     "cw-integrated-sports": [
       "C12-36AHC1-T00V1-B0R",
@@ -710,7 +722,13 @@
       "C60-40ADA31S0KW1-RO",
       "C60-38ADA31S0KW1-RO",
       "C60-41A3H1-SBMFB-B0",
-      "C60-41C3H31T0BB0-RBW"
+      "C60-41C3H31T0BB0-RBW",
+      "C60-42C3H1-S0KK0-B0",
+      "C60-39C3H1-B0KK0-VT1",
+      "C60-42C3H1-S0RK0-B0",
+      "C60-39C3H1-B0VV0-HV",
+      "C60-39AGM1-S0RK0-B1",
+      "C60-42AGM1-S0BW0-HB"
     ],
     "cw-moonphase": [
       "C01-40AMP2-S00B0-MB1",
@@ -7565,7 +7583,7 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-atelier",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C63-36AGM4-S00W0-RK",
@@ -7850,7 +7868,7 @@
         "cw-clearance"
       ],
       "primaryCollection": "cw-clearance",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "N63-39AGM3-31SQD-B0",

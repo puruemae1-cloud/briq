@@ -14214,7 +14214,7 @@ export const cwCatalogProducts: Product[] = [
     badge: "Nearly New",
     sku: "N01-39AJH4-S00E0-B1",
     sourceUrl: "https://www.christopherward.com/int/sale/C1-Jump-Hour-Mk-V---Nearly-New/N01-39AJH4-S00E0-B1.html",
-    inStock: true,
+    inStock: false,
     registeredAt: "2026-07-20T10:28:16.000Z",
     editTier: "signature",
     storySections: [
