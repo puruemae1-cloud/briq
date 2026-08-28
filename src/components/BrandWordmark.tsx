@@ -9,22 +9,22 @@ type BrandWordmarkProps = {
  * never renders the trailing “?” replacement glyph after the last letter.
  */
 export function BrandWordmark({ nameEn, className }: BrandWordmarkProps) {
-  const chars = nameEn.toUpperCase().split("");
+  const words = nameEn.toUpperCase().split(/\s+/).filter(Boolean);
 
   return (
     <p
       className={["brand-wordmark", className].filter(Boolean).join(" ")}
       aria-label={nameEn}
     >
-      {chars.map((ch, i) =>
-        ch === " " ? (
-          <span key={`sp-${i}`} className="brand-wordmark__word-gap" aria-hidden />
-        ) : (
-          <span key={`ch-${i}`} className="brand-wordmark__letter">
-            {ch}
-          </span>
-        ),
-      )}
+      {words.map((word, wi) => (
+        <span key={word} className="brand-wordmark__word">
+          {word.split("").map((ch, ci) => (
+            <span key={`${wi}-${ci}`} className="brand-wordmark__letter">
+              {ch}
+            </span>
+          ))}
+        </span>
+      ))}
     </p>
   );
 }
