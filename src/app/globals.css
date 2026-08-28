@@ -1649,7 +1649,7 @@ body:has(.nav-drawer-toggle:checked) {
     inset: auto;
     width: 100%;
     height: auto;
-    aspect-ratio: var(--look-banner-aspect, 2560 / 1392);
+    aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
     object-fit: cover;
     object-position: center top;
   }
