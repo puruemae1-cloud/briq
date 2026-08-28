@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-28T15:41:53.093+00:00",
+  "refreshedAt": "2026-08-28T15:54:16.447+00:00",
   "weekSeed": 20260826,
   "slots": {
     "rot-acc-1.jpg": {
@@ -660,6 +660,16 @@
       "tone": "fixed-color",
       "locked": true,
       "sourceAspect": 1.7778
+    },
+    "brand-christopher-ward-moonphase.jpg": {
+      "sourceProductId": "fixed-cw-moonphase",
+      "sourceImage": "local:cw-moonphase",
+      "focal": "50% 50%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 2.0
     }
   }
 }

@@ -30,10 +30,7 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/rot-watch-3.jpg",
   ],
   "watches:christopher-ward": [
-    "/banners/rot-cw-1.jpg",
-    "/banners/rot-cw-2.jpg",
-    "/banners/rot-cw-3.jpg",
-    "/banners/rot-cw-alt.jpg",
+    "/banners/brand-christopher-ward-moonphase.jpg",
   ],
 
   clothing: [

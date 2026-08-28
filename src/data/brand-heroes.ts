@@ -119,11 +119,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Christopher Ward",
     nameKo: "크리스토퍼와드",
     logoSrc: "/brands/christopher-ward.svg",
-    images: [
-      "/banners/brand-christopher-ward-1.jpg",
-      "/banners/brand-christopher-ward-2.jpg",
-      "/banners/brand-christopher-ward-3.jpg",
-    ],
+    // Locked C1 Moonphase creative — not rotated weekly.
+    images: ["/banners/brand-christopher-ward-moonphase.jpg"],
   },
   "london-undercover": {
     key: "london-undercover",
