@@ -18,3 +18,9 @@ export function toTabletBannerSrc(src: string): string {
   if (name.includes("/")) return src;
   return `/banners/t/${name}`;
 }
+
+/** Prefer WebP sibling when the catalog path is a JPEG banner. */
+export function toWebpBannerSrc(src: string): string {
+  if (!src.startsWith("/banners/") || !src.endsWith(".jpg")) return src;
+  return `${src.slice(0, -4)}.webp`;
+}

@@ -1618,7 +1618,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe {
     min-height: 0;
     max-height: none;
-    aspect-ratio: 2560 / 1414;
+    aspect-ratio: 2560 / 1392;
     height: auto;
   }
 

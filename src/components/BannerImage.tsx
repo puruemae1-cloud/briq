@@ -1,6 +1,6 @@
 "use client";
 
-import { toMobileBannerSrc, toTabletBannerSrc } from "@/lib/banner-image";
+import { toMobileBannerSrc, toTabletBannerSrc, toWebpBannerSrc } from "@/lib/banner-image";
 import { mediaUrl } from "@/lib/product-image";
 
 type BannerImageProps = {
@@ -32,10 +32,16 @@ export function BannerImage({
   const desktopSrc = mediaUrl(src);
   const tabletSrc = mediaUrl(toTabletBannerSrc(src));
   const mobileSrc = mediaUrl(toMobileBannerSrc(src));
+  const desktopWebp = mediaUrl(toWebpBannerSrc(src));
+  const tabletWebp = mediaUrl(toWebpBannerSrc(toTabletBannerSrc(src)));
+  const mobileWebp = mediaUrl(toWebpBannerSrc(toMobileBannerSrc(src)));
   const hasTablet = tabletSrc !== desktopSrc;
   const hasMobile = mobileSrc !== desktopSrc;
+  const hasDesktopWebp = desktopWebp !== desktopSrc;
+  const hasTabletWebp = hasTablet && tabletWebp !== tabletSrc;
+  const hasMobileWebp = hasMobile && mobileWebp !== mobileSrc;
 
-  if (!hasTablet && !hasMobile) {
+  if (!hasTablet && !hasMobile && !hasDesktopWebp) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
@@ -54,11 +60,25 @@ export function BannerImage({
 
   return (
     <picture style={{ display: "contents" }}>
+      {hasMobileWebp ? (
+        <source
+          media="(max-width: 899px)"
+          srcSet={mobileWebp}
+          type="image/webp"
+        />
+      ) : null}
       {hasMobile ? (
         <source
           media="(max-width: 899px)"
           srcSet={mobileSrc}
           type="image/jpeg"
+        />
+      ) : null}
+      {hasTabletWebp ? (
+        <source
+          media="(max-width: 1199px)"
+          srcSet={tabletWebp}
+          type="image/webp"
         />
       ) : null}
       {hasTablet ? (
@@ -67,6 +87,9 @@ export function BannerImage({
           srcSet={tabletSrc}
           type="image/jpeg"
         />
+      ) : null}
+      {hasDesktopWebp ? (
+        <source srcSet={desktopWebp} type="image/webp" />
       ) : null}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
