@@ -195,12 +195,12 @@ export const homeLookBanners: LookBanner[] = [
     support: "데스크에서 디너까지 이어지는 풋웨어.",
     href: "/shop?category=shoes",
     cta: "슈즈 쇼핑",
-    images: [
-      "/banners/rot-shoe-1.jpg",
-      "/banners/rot-shoe-2.jpg",
-      "/banners/rot-shoe-3.jpg",
-    ],
+    // Locked fur-mule creative — not rotated weekly.
+    images: ["/banners/shoes-fur-mule.jpg"],
     align: "right",
+    focal: "50% 55%",
+    fullFrame: true,
+    aspectRatio: "16 / 9",
   },
   {
     id: "accessories",

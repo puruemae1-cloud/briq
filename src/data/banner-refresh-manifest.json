@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-28T17:26:39.715+00:00",
+  "refreshedAt": "2026-08-28T17:32:10.936+00:00",
   "weekSeed": 20260826,
   "slots": {
     "rot-acc-1.jpg": {
@@ -670,6 +670,16 @@
       "tone": "fixed-bw",
       "locked": true,
       "sourceAspect": 2.0
+    },
+    "shoes-fur-mule.jpg": {
+      "sourceProductId": "fixed-shoes-fur-mule",
+      "sourceImage": "local:shoes-fur-mule",
+      "focal": "50% 55%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.7778
     },
     "brand-christopher-ward-moonphase.jpg": {
       "sourceProductId": "fixed-cw-moonphase",

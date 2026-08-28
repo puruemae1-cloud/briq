@@ -177,6 +177,10 @@ assert FIXED_WATCH_BANNER not in SLOT_THEMES, "locked watch banner must not be i
 FIXED_BAG_BANNER = "bags-chanel-campaign.jpg"
 assert FIXED_BAG_BANNER not in SLOT_THEMES, "locked bag banner must not be in SLOT_THEMES"
 
+# Homepage shoes rail — locked fur-mule creative.
+FIXED_SHOES_BANNER = "shoes-fur-mule.jpg"
+assert FIXED_SHOES_BANNER not in SLOT_THEMES, "locked shoes banner must not be in SLOT_THEMES"
+
 # Christopher Ward brand page top banner — locked moonphase creative.
 FIXED_CW_BRAND_BANNER = "brand-christopher-ward-moonphase.jpg"
 assert FIXED_CW_BRAND_BANNER not in SLOT_THEMES, "locked CW brand banner must not be in SLOT_THEMES"
