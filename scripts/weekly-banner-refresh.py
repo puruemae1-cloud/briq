@@ -191,6 +191,18 @@ FIXED_CHANEL_BRAND_BANNER = "brand-chanel-como-bag.jpg"
 assert FIXED_CHANEL_WATCH_BANNER not in SLOT_THEMES, "locked Chanel watch banner must not be in SLOT_THEMES"
 assert FIXED_CHANEL_BRAND_BANNER not in SLOT_THEMES, "locked Chanel brand banner must not be in SLOT_THEMES"
 
+# Locked homepage / brand creatives — never rotated or dropped from manifest.
+LOCKED_BANNERS = {
+    FIXED_HOME_HERO,
+    FIXED_EVENT_BANNER,
+    FIXED_WATCH_BANNER,
+    FIXED_BAG_BANNER,
+    FIXED_SHOES_BANNER,
+    FIXED_CW_BRAND_BANNER,
+    FIXED_CHANEL_WATCH_BANNER,
+    FIXED_CHANEL_BRAND_BANNER,
+}
+
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
 # Mood reference: Andrew Prokos Parliament & Big Ben skyline (style only; not copied).
 LONDON_BW_SOURCES: list[dict[str, str]] = [
@@ -1417,7 +1429,7 @@ def main() -> int:
         merged = {**prev_slots, **new_slots}
         # Drop stale keys only on full weekly runs (no --only filter)
         if not args.only:
-            keep = set(referenced_slots()) | set(SLOT_THEMES)
+            keep = set(referenced_slots()) | set(SLOT_THEMES) | LOCKED_BANNERS
             merged = {k: v for k, v in merged.items() if k in keep}
         manifest = {
             "refreshedAt": datetime.now(timezone.utc).isoformat(),

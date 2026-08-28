@@ -33,6 +33,9 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/brand-christopher-ward-moonphase.jpg",
   ],
   "watches:chanel-watches": ["/banners/brand-chanel-premiere.jpg"],
+  "bags:chanel-bags": ["/banners/brand-chanel-como-bag.jpg"],
+  "shoes:chanel-shoes": ["/banners/brand-chanel-como-bag.jpg"],
+  "accessories:chanel-accessories": ["/banners/brand-chanel-como-bag.jpg"],
 
   clothing: [
     "/banners/rot-cloth-1.jpg",

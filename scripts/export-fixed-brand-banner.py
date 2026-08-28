@@ -94,7 +94,9 @@ def export_set(src: Path, stem: str, *, quality: int = 97) -> None:
             progressive=True,
             subsampling=0,
         )
-        print(f"wrote {dest.relative_to(ROOT)} {out.size} {dest.stat().st_size}")
+        webp = dest.with_suffix(".webp")
+        out.save(webp, format="WEBP", quality=92, method=6)
+        print(f"wrote {dest.relative_to(ROOT)} {out.size} jpg={dest.stat().st_size} webp={webp.stat().st_size}")
 
 
 def main() -> None:
