@@ -178,12 +178,12 @@ export const homeLookBanners: LookBanner[] = [
     support: "손끝에 느껴지는 가죽과 구조감.",
     href: "/shop?category=bags",
     cta: "가방 쇼핑",
-    images: [
-      "/banners/rot-bag-1.jpg",
-      "/banners/rot-bag-2.jpg",
-      "/banners/rot-bag-3.jpg",
-    ],
+    // Locked Chanel Spring 2018 campaign creative — not rotated weekly.
+    images: ["/banners/bags-chanel-campaign.jpg"],
     align: "left",
+    focal: "50% 50%",
+    fullFrame: true,
+    aspectRatio: "2 / 1",
   },
   {
     id: "shoes",
