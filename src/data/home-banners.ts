@@ -144,12 +144,11 @@ export const homeLookBanners: LookBanner[] = [
     support: "영국 헤리티지와 현대 럭셔리의 교차점.",
     href: "/shop?category=luxury&sort=new",
     cta: "시그니처 의류 컬렉션 쇼핑",
-    images: [
-      "/banners/rot-luxury-1.jpg",
-      "/banners/rot-luxury-2.jpg",
-      "/banners/rot-luxury-3.jpg",
-    ],
+    images: ["/banners/luxury-heritage-modern.jpg"],
     align: "right",
+    focal: "50% 42%",
+    fullFrame: true,
+    aspectRatio: "16 / 9",
   },
   {
     id: "watches",

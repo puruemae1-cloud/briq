@@ -199,7 +199,7 @@
       "kind": "hero",
       "tone": "fixed-color",
       "locked": true,
-      "sourceAspect": 1.491
+      "sourceAspect": 1.5802
     },
     "rot-hero-1.jpg": {
       "sourceProductId": "london-tower-bridge",
@@ -670,6 +670,16 @@
       "tone": "fixed-bw",
       "locked": true,
       "sourceAspect": 2.0
+    },
+    "luxury-heritage-modern.jpg": {
+      "sourceProductId": "fixed-luxury-heritage-modern",
+      "sourceImage": "local:luxury-flight-mode-desert",
+      "focal": "50% 42%",
+      "shop": false,
+      "kind": "look",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.7778
     },
     "shoes-fur-mule.jpg": {
       "sourceProductId": "fixed-shoes-fur-mule",

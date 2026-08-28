@@ -181,6 +181,10 @@ assert FIXED_BAG_BANNER not in SLOT_THEMES, "locked bag banner must not be in SL
 FIXED_SHOES_BANNER = "shoes-fur-mule.jpg"
 assert FIXED_SHOES_BANNER not in SLOT_THEMES, "locked shoes banner must not be in SLOT_THEMES"
 
+# Homepage luxury / Heritage & Modern rail — locked Flight Mode creative.
+FIXED_LUXURY_BANNER = "luxury-heritage-modern.jpg"
+assert FIXED_LUXURY_BANNER not in SLOT_THEMES, "locked luxury banner must not be in SLOT_THEMES"
+
 # Christopher Ward brand page top banner — locked moonphase creative.
 FIXED_CW_BRAND_BANNER = "brand-christopher-ward-moonphase.jpg"
 assert FIXED_CW_BRAND_BANNER not in SLOT_THEMES, "locked CW brand banner must not be in SLOT_THEMES"
@@ -198,6 +202,7 @@ LOCKED_BANNERS = {
     FIXED_WATCH_BANNER,
     FIXED_BAG_BANNER,
     FIXED_SHOES_BANNER,
+    FIXED_LUXURY_BANNER,
     FIXED_CW_BRAND_BANNER,
     FIXED_CHANEL_WATCH_BANNER,
     FIXED_CHANEL_BRAND_BANNER,
