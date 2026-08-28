@@ -1,7 +1,8 @@
 "use client";
 
-import { toMobileBannerSrc, toTabletBannerSrc, toWebpBannerSrc } from "@/lib/banner-image";
-import { mediaUrl } from "@/lib/product-image";
+import { useEffect, useMemo, useState, type SyntheticEvent } from "react";
+import { toMobileBannerSrc, toTabletBannerSrc } from "@/lib/banner-image";
+import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 
 type BannerImageProps = {
   src: string;
@@ -13,12 +14,18 @@ type BannerImageProps = {
   "aria-hidden"?: boolean | "true" | "false";
 };
 
+function bannerUrls(catalogSrc: string, useFallbackCdn: boolean) {
+  const resolve = (path: string) =>
+    useFallbackCdn ? mediaUrlFallback(path) || mediaUrl(path) : mediaUrl(path);
+  const desktop = resolve(catalogSrc);
+  const tablet = resolve(toTabletBannerSrc(catalogSrc));
+  const mobile = resolve(toMobileBannerSrc(catalogSrc));
+  return { desktop, tablet, mobile };
+}
+
 /**
- * Serves device-optimised banner assets:
- *  - phone  (≤899px):  `/banners/m/…`
- *  - tablet (900–1199px): `/banners/t/…` when present, else desktop
- *  - desktop (≥1200px): original `/banners/…`
- * On Vercel all resolve to the external media CDN (not Vercel bandwidth).
+ * Device-optimised banner JPEGs via srcSet (no WebP — raw CDN 404s broke mobile
+ * `<picture>` fallbacks). Swaps to jsDelivr when GitHub raw is stale/missing.
  */
 export function BannerImage({
   src,
@@ -29,80 +36,53 @@ export function BannerImage({
   style,
   "aria-hidden": ariaHidden,
 }: BannerImageProps) {
-  const desktopSrc = mediaUrl(src);
-  const tabletSrc = mediaUrl(toTabletBannerSrc(src));
-  const mobileSrc = mediaUrl(toMobileBannerSrc(src));
-  const desktopWebp = mediaUrl(toWebpBannerSrc(src));
-  const tabletWebp = mediaUrl(toWebpBannerSrc(toTabletBannerSrc(src)));
-  const mobileWebp = mediaUrl(toWebpBannerSrc(toMobileBannerSrc(src)));
-  const hasTablet = tabletSrc !== desktopSrc;
-  const hasMobile = mobileSrc !== desktopSrc;
-  const hasDesktopWebp = desktopWebp !== desktopSrc;
-  const hasTabletWebp = hasTablet && tabletWebp !== tabletSrc;
-  const hasMobileWebp = hasMobile && mobileWebp !== mobileSrc;
+  const [useFallbackCdn, setUseFallbackCdn] = useState(false);
+  const urls = useMemo(
+    () => bannerUrls(src, useFallbackCdn),
+    [src, useFallbackCdn],
+  );
 
-  if (!hasTablet && !hasMobile && !hasDesktopWebp) {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        className={className}
-        src={desktopSrc}
-        alt={alt}
-        loading={loading}
-        decoding="async"
-        fetchPriority={fetchPriority}
-        style={style}
-        aria-hidden={ariaHidden}
-        referrerPolicy="no-referrer"
-      />
-    );
-  }
+  useEffect(() => {
+    setUseFallbackCdn(false);
+  }, [src]);
+
+  const hasMobile = urls.mobile !== urls.desktop;
+  const hasTablet = urls.tablet !== urls.desktop;
+
+  const srcSet = hasMobile
+    ? [
+        `${urls.mobile} 900w`,
+        hasTablet ? `${urls.tablet} 1200w` : null,
+        `${urls.desktop} 2400w`,
+      ]
+        .filter(Boolean)
+        .join(", ")
+    : undefined;
+
+  const onError = (_e: SyntheticEvent<HTMLImageElement>) => {
+    if (!useFallbackCdn) {
+      const altHost = mediaUrlFallback(urls.desktop);
+      if (altHost && altHost !== urls.desktop) {
+        setUseFallbackCdn(true);
+      }
+    }
+  };
 
   return (
-    <picture style={{ display: "contents" }}>
-      {hasMobileWebp ? (
-        <source
-          media="(max-width: 899px)"
-          srcSet={mobileWebp}
-          type="image/webp"
-        />
-      ) : null}
-      {hasMobile ? (
-        <source
-          media="(max-width: 899px)"
-          srcSet={mobileSrc}
-          type="image/jpeg"
-        />
-      ) : null}
-      {hasTabletWebp ? (
-        <source
-          media="(max-width: 1199px)"
-          srcSet={tabletWebp}
-          type="image/webp"
-        />
-      ) : null}
-      {hasTablet ? (
-        <source
-          media="(max-width: 1199px)"
-          srcSet={tabletSrc}
-          type="image/jpeg"
-        />
-      ) : null}
-      {hasDesktopWebp ? (
-        <source srcSet={desktopWebp} type="image/webp" />
-      ) : null}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className={className}
-        src={desktopSrc}
-        alt={alt}
-        loading={loading}
-        decoding="async"
-        fetchPriority={fetchPriority}
-        style={style}
-        aria-hidden={ariaHidden}
-        referrerPolicy="no-referrer"
-      />
-    </picture>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      className={className}
+      src={urls.desktop}
+      srcSet={srcSet}
+      sizes={srcSet ? "100vw" : undefined}
+      alt={alt}
+      loading={loading}
+      decoding="async"
+      fetchPriority={fetchPriority}
+      style={style}
+      aria-hidden={ariaHidden}
+      referrerPolicy="no-referrer"
+      onError={onError}
+    />
   );
 }

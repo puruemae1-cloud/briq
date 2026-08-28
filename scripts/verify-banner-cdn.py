@@ -130,10 +130,14 @@ def main() -> int:
             print(f"skip missing local {rel}", flush=True)
             continue
         lm = md5(local)
+        # Production serves banners from raw GitHub — check it first.
         for label, base in (("github", RAW), ("jsdelivr", CDN)):
             url = f"{base}/{rel}"
             try:
                 remote = fetch(url)
+            except urllib.error.HTTPError as e:
+                bad.append(f"{rel} {label} HTTP {e.code}")
+                continue
             except (urllib.error.URLError, TimeoutError, OSError) as e:
                 bad.append(f"{rel} {label} fetch: {e}")
                 continue

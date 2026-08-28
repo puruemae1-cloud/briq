@@ -149,8 +149,38 @@ def sync_brand(
     return bool(status)
 
 
+def commit_head(tmp: Path) -> str:
+    return subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=str(tmp),
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+
+def remote_tag_rev() -> str:
+    run(["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"], check=False)
+    show = subprocess.run(
+        ["git", "rev-parse", TAG],
+        cwd=str(ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    return show.stdout.strip() if show.returncode == 0 else ""
+
+
+def reset_worktree_to_remote_tag(tmp: Path) -> None:
+    """Re-base the tag worktree on the latest remote tag after a concurrent push."""
+    rev = remote_tag_rev()
+    if rev:
+        run(["git", "reset", "--hard", rev], cwd=tmp)
+
+
 def push_tag(tmp: Path) -> bool:
-    """Force-push the product-images tag. Returns True on success."""
+    """Force-push the product-images tag. True only when remote matches our HEAD."""
+    head = commit_head(tmp)
     run(["git", "tag", "-f", TAG], cwd=tmp)
     pushed = run(
         [
@@ -167,7 +197,9 @@ def push_tag(tmp: Path) -> bool:
         cwd=tmp,
         check=False,
     )
-    return pushed.returncode == 0
+    if pushed.returncode != 0:
+        return False
+    return remote_tag_rev() == head
 
 
 def update_product_images_manifest() -> None:
@@ -328,34 +360,60 @@ def main() -> int:
         for name, src in src_roots:
             mode = "merge" if args.merge else "replace"
             print(f"=== sync {name} ({mode}) ===", flush=True)
-            if name == "banners":
-                changed = sync_banners(tmp, src)
-            else:
-                changed = sync_brand(
-                    tmp, name, src, merge=args.merge, only=only_ids or None
-                )
-            if not changed:
-                print(f"No image changes for {name}.", flush=True)
-                continue
+            pushed_dir = False
+            for attempt in range(5):
+                if name == "banners":
+                    changed = sync_banners(tmp, src)
+                else:
+                    changed = sync_brand(
+                        tmp, name, src, merge=args.merge, only=only_ids or None
+                    )
+                if not changed:
+                    print(f"No image changes for {name}.", flush=True)
+                    pushed_dir = True
+                    break
 
-            run(
-                [
-                    "git",
-                    "commit",
-                    "-m",
-                    f"chore: sync PDP images ({name})\n",
-                ],
-                cwd=tmp,
-            )
-            if not push_tag(tmp):
+                run(
+                    [
+                        "git",
+                        "commit",
+                        "-m",
+                        f"chore: sync PDP images ({name})\n",
+                    ],
+                    cwd=tmp,
+                )
+                if push_tag(tmp):
+                    any_pushed = True
+                    pushed_dir = True
+                    print(f"product-images tag updated ({name}).", flush=True)
+                    if name == "banners":
+                        verify = subprocess.run(
+                            [sys.executable, str(ROOT / "scripts" / "verify-banner-cdn.py")],
+                            cwd=str(ROOT),
+                            check=False,
+                        )
+                        if verify.returncode != 0:
+                            print(
+                                "ERROR: banner CDN verify failed after tag push.",
+                                flush=True,
+                            )
+                            return 1
+                    break
+
                 print(
-                    "ERROR: failed to push product-images tag "
-                    "(check Actions write permissions / tag protection / size).",
+                    f"WARN: product-images tag race on {name} "
+                    f"(attempt {attempt + 1}/5) — rebasing worktree",
+                    flush=True,
+                )
+                reset_worktree_to_remote_tag(tmp)
+
+            if not pushed_dir:
+                print(
+                    "ERROR: failed to push product-images tag after retries "
+                    "(concurrent weekly sync or tag protection).",
                     flush=True,
                 )
                 return 1
-            any_pushed = True
-            print(f"product-images tag updated ({name}).", flush=True)
 
         if any_pushed:
             update_product_images_manifest()
