@@ -1449,7 +1449,9 @@ body:has(.nav-drawer-toggle:checked) {
   .hero--fullframe .hero__stage {
     /* Keep full frame — do not re-impose a short panoramic max-height. */
     max-height: none;
-    padding: 2.35rem 2.5rem 2rem;
+    align-items: end;
+    justify-items: start;
+    padding: 0 2.5rem 6.75rem;
   }
 
   .hero--fullframe .hero__content {
@@ -1982,12 +1984,17 @@ body:has(.nav-drawer-toggle:checked) {
   height: auto;
 }
 
-.look-banner--fullframe .look-banner__img {
-  object-fit: cover;
-  object-position: center top;
-  transform: none !important;
-  animation: none !important;
-}
+  .look-banner--fullframe .look-banner__img {
+    object-fit: cover;
+    object-position: center top;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .look-banner--watches.look-banner--fullframe .look-banner__img {
+    object-fit: contain;
+    object-position: center center;
+  }
 
 .look-banner__media {
   position: absolute;
@@ -2217,7 +2224,7 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .look-banner__content {
-    padding: 3rem 3.5rem 3.25rem;
+    padding: 3rem 3.5rem 9.75rem;
   }
 
   .look-banner--right .look-banner__content {
@@ -2228,6 +2235,14 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--center .look-banner__content {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .look-banner--fullframe .look-banner__content {
+    padding-bottom: 9.75rem;
+  }
+
+  .collection-100__banner-content {
+    padding: 2.4rem 2.5rem 5.25rem;
   }
 }
 

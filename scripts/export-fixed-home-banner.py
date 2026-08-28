@@ -34,8 +34,8 @@ def _scale_width(im: Image.Image, width: int) -> Image.Image:
     return _sharpen(out)
 
 
-def _crop_now_london(scaled: Image.Image, *, ref_full_h: int = 1705, ref_peak: int = 327, ref_gap: int = 14) -> Image.Image:
-    """Top crop so bag-handle breathing room matches the locked 40% strap edit."""
+def _crop_now_london(scaled: Image.Image, *, ref_full_h: int = 1705, ref_peak: int = 327, ref_gap: int = 40) -> Image.Image:
+    """Top crop — larger ref_gap keeps more headroom above the bag strap."""
     sh = scaled.height
     peak_y = round(ref_peak * sh / ref_full_h)
     gap = max(1, round(ref_gap * scaled.width / DESKTOP_W))

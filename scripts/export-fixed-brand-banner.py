@@ -48,7 +48,13 @@ def _soft_edge_blend(
     return out
 
 
-def make_panorama(src: Image.Image, out_w: int, out_h: int) -> Image.Image:
+def make_panorama(
+    src: Image.Image,
+    out_w: int,
+    out_h: int,
+    *,
+    subject_scale: float = 1.0,
+) -> Image.Image:
     """Color subject centered; margins = blurred B&W cover of the same photo."""
     bg = _grayscale_rgb(src)
     bg = bg.resize(_cover_size(bg.size, (out_w, out_h)), Image.Resampling.LANCZOS)
@@ -61,7 +67,7 @@ def make_panorama(src: Image.Image, out_w: int, out_h: int) -> Image.Image:
     bg = ImageEnhance.Contrast(bg).enhance(1.05)
 
     sw, sh = src.size
-    scale = min(out_w / sw, out_h / sh)
+    scale = min(out_w / sw, out_h / sh) * max(0.35, min(1.0, subject_scale))
     fw = max(1, round(sw * scale))
     fh = max(1, round(sh * scale))
     if fw > out_w:
@@ -80,10 +86,19 @@ def make_panorama(src: Image.Image, out_w: int, out_h: int) -> Image.Image:
     return _soft_edge_blend(bg, fg, x, y, feather)
 
 
-def export_set(src: Path, stem: str, *, quality: int = 97) -> None:
+def export_set(
+    src: Path,
+    stem: str,
+    *,
+    quality: int = 97,
+    subject_scale: float = 1.0,
+    desktop: tuple[int, int] = DESKTOP,
+    tablet: tuple[int, int] = TABLET,
+    mobile: tuple[int, int] = MOBILE,
+) -> None:
     im = Image.open(src).convert("RGB")
-    for size, subdir in ((DESKTOP, ""), (TABLET, "t"), (MOBILE, "m")):
-        out = make_panorama(im, size[0], size[1])
+    for size, subdir in ((desktop, ""), (tablet, "t"), (mobile, "m")):
+        out = make_panorama(im, size[0], size[1], subject_scale=subject_scale)
         dest = BANNERS / subdir / f"{stem}.jpg" if subdir else BANNERS / f"{stem}.jpg"
         dest.parent.mkdir(parents=True, exist_ok=True)
         out.save(
@@ -104,8 +119,30 @@ def main() -> None:
     ap.add_argument("source", type=Path)
     ap.add_argument("stem", help="banner filename without .jpg, e.g. brand-chanel-premiere")
     ap.add_argument("--quality", type=int, default=97)
+    ap.add_argument(
+        "--subject-scale",
+        type=float,
+        default=1.0,
+        help="Scale foreground subject within frame (0.7 = 70%% size on PC)",
+    )
+
+    def parse_size(raw: str) -> tuple[int, int]:
+        w, h = raw.lower().split("x")
+        return int(w), int(h)
+
+    ap.add_argument("--desktop-size", type=parse_size, default="2560x1280")
+    ap.add_argument("--tablet-size", type=parse_size, default="1920x960")
+    ap.add_argument("--mobile-size", type=parse_size, default="1280x640")
     args = ap.parse_args()
-    export_set(args.source, args.stem, quality=args.quality)
+    export_set(
+        args.source,
+        args.stem,
+        quality=args.quality,
+        subject_scale=args.subject_scale,
+        desktop=args.desktop_size,
+        tablet=args.tablet_size,
+        mobile=args.mobile_size,
+    )
 
 
 if __name__ == "__main__":

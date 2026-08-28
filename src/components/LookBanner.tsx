@@ -39,13 +39,13 @@ export function LookBannerBlock({
 
   return (
     <section
-      className={`look-banner look-banner--${align}${slides ? " look-banner--carousel" : ""}${banner.fullFrame ? " look-banner--fullframe" : ""}`}
+      className={`look-banner look-banner--${banner.id} look-banner--${align}${slides ? " look-banner--carousel" : ""}${banner.fullFrame ? " look-banner--fullframe" : ""}`}
       style={
         banner.fullFrame && banner.aspectRatio
           ? ({
               aspectRatio: banner.aspectRatio,
               "--look-banner-aspect": banner.aspectRatio,
-            } as React.CSSProperties)
+            } as CSSProperties)
           : undefined
       }
       aria-label={`${banner.titleKo} ${banner.eyebrow}`}
