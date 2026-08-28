@@ -1618,7 +1618,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe {
     min-height: 0;
     max-height: none;
-    aspect-ratio: 1024 / 682;
+    aspect-ratio: 2560 / 1414;
     height: auto;
   }
 
@@ -1860,7 +1860,8 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe {
     min-height: 0;
     max-height: none;
-    aspect-ratio: 1024 / 682;
+    /* Match locked Now in London crop (2560×1414) */
+    aspect-ratio: 2560 / 1414;
     height: auto;
   }
 }
@@ -1868,13 +1869,13 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner--fullframe {
   min-height: 0;
   max-height: none;
-  aspect-ratio: 1024 / 682;
+  aspect-ratio: 2560 / 1414;
   height: auto;
 }
 
 .look-banner--fullframe .look-banner__img {
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
   transform: none !important;
   animation: none !important;
 }
