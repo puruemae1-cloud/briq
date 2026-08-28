@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BannerImage } from "@/components/BannerImage";
+import { BrandWordmark } from "@/components/BrandWordmark";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { ShopProductGrid } from "@/components/ShopProductGrid";
@@ -219,14 +220,9 @@ export default async function ShopPage({ searchParams }: Props) {
         <div className="shop-hero__shade" aria-hidden />
         <div className="shop-hero__content">
           {shopBrand ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <BrandWordmark
+              nameEn={shopBrand.nameEn}
               className="shop-hero__logo"
-              src={shopBrand.logoSrc}
-              alt={shopBrand.nameEn}
-              width={280}
-              height={42}
-              decoding="async"
             />
           ) : (
             <p className="shop-hero__eyebrow">{heroEyebrow}</p>

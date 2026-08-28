@@ -562,17 +562,42 @@ a.chip[href*="sub=gg-sale"].is-active {
 .shop-hero__logo {
   display: block;
   width: min(14.5rem, 62vw);
-  height: auto;
   margin: 0 0 0.55rem;
-  color: #f7f4ec;
   filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.35));
   opacity: 0.96;
+}
+
+.brand-wordmark {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.26em;
+  margin: 0;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: clamp(1.15rem, 4.6vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1;
+  color: #f7f4ec;
+  text-transform: uppercase;
+}
+
+.brand-wordmark__word-gap {
+  flex: 0 0 0.35em;
+}
+
+.brand-wordmark__letter {
+  display: inline-block;
 }
 
 @media (min-width: 900px) {
   .shop-hero__logo {
     width: min(17rem, 28vw);
     margin-bottom: 0.7rem;
+  }
+
+  .brand-wordmark {
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+    gap: 0.3em;
   }
 }
 

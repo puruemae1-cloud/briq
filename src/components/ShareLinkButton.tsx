@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useState, type MouseEvent } from "react";
 import { createPortal } from "react-dom";
-import { Check, Share2 } from "lucide-react";
 
 type Props = {
   title: string;
@@ -12,6 +11,44 @@ type Props = {
   /** Compact icon-only mark for dense headers. */
   compact?: boolean;
 };
+
+function ShareIcon({ size }: { size: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+      <polyline points="16 6 12 2 8 6" />
+      <line x1="12" y1="2" x2="12" y2="15" />
+    </svg>
+  );
+}
+
+function CheckIcon({ size }: { size: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  );
+}
 
 function resolveUrl(url?: string) {
   if (typeof window === "undefined") return url || "";
@@ -83,9 +120,9 @@ export function ShareLinkButton({
       >
         <span className="share-link__mark" aria-hidden>
           {copied ? (
-            <Check size={compact ? 14 : 15} strokeWidth={2.25} />
+            <CheckIcon size={compact ? 14 : 15} />
           ) : (
-            <Share2 size={compact ? 14 : 15} strokeWidth={1.75} />
+            <ShareIcon size={compact ? 14 : 15} />
           )}
         </span>
         {!compact ? (
