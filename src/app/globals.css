@@ -1410,7 +1410,7 @@ body:has(.nav-drawer-toggle:checked) {
   min-height: 0;
   max-height: none;
   width: 100%;
-  aspect-ratio: 1024 / 687;
+  aspect-ratio: 1024 / 648;
   height: auto;
   align-items: start;
   justify-items: start;
@@ -1727,7 +1727,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .hero--fullframe .hero__stage {
-    aspect-ratio: 1024 / 687;
+    aspect-ratio: 1024 / 648;
     height: auto;
     min-height: 0;
     padding: 0 1.15rem 1.25rem;
