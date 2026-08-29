@@ -15,6 +15,7 @@ import { gcCatalogProducts } from "@/data/gc/gc-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
 import { prCatalogProducts } from "@/data/pr/pr-catalog";
 import { lvCatalogProducts } from "@/data/lv/lv-catalog";
+import { diCatalogProducts } from "@/data/di/di-catalog";
 
 export type * from "@/data/product-types";
 export {
@@ -43,6 +44,7 @@ export const products: Product[] = [
   ...chCatalogProducts,
   ...prCatalogProducts,
   ...lvCatalogProducts,
+  ...diCatalogProducts,
 ];
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
 export function getCollection100() {
@@ -452,6 +454,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.chCollections?.some((c) => expanded.includes(c))) return true;
       if (p.prCollections?.some((c) => expanded.includes(c))) return true;
       if (p.lvCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.diCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
@@ -471,6 +474,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.prCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.lvCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.diCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });

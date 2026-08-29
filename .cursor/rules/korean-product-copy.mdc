@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Korean PDP copy (모든 브랜드)
 
-When adding or updating **any** Briq products (Prada, Gucci, Chanel, Burberry, Belstaff, Paul Smith, Arc'teryx, Galvin Green, London Undercover, Christopher Ward, etc.):
+When adding or updating **any** Briq products (Prada, Gucci, Chanel, Burberry, Belstaff, Paul Smith, Arc'teryx, Galvin Green, London Undercover, Christopher Ward, Louis Vuitton, Dior, etc.):
 
 1. **Translate everything the shopper reads as body copy** into natural Korean:
    - `descriptionKo`, `featuresKo`
@@ -16,7 +16,7 @@ When adding or updating **any** Briq products (Prada, Gucci, Chanel, Burberry, B
 3. Brand/tech tokens may stay Latin when intentional (`Re-Nylon`, `GORE-TEX`, `Chanel`, sizes, mm/cm).
 4. After rebuilding a catalogue, **always verify**:
    ```bash
-   python3 scripts/check-catalog-korean.py --brand <pr|gc|ch|bb|bs|ps|ax|gg|lu|cw> --fail
+   python3 scripts/check-catalog-korean.py --brand <pr|gc|ch|bb|bs|ps|ax|gg|lu|cw|lv|di> --fail
    ```
    For newly registered SKUs only (weekly / large syncs):
    ```bash

@@ -28,6 +28,7 @@ const FAMILY_RANK: Record<string, number> = {
   gucci: 200,
   /** Louis Vuitton — after Chanel, before other _new brands. */
   "louis-vuitton": 220,
+  dior: 230,
   /** Slot for newly added brands — always after Gucci, before Burberry. */
   _new: 250,
   burberry: 300,
@@ -65,6 +66,9 @@ function brandFamily(id: string): string | null {
   if (x === "belstaff" || x.startsWith("belstaff-") || x.startsWith("bb-")) return "belstaff";
   if (x === "louis-vuitton" || x.startsWith("louis-vuitton") || x.startsWith("lv-")) {
     return "louis-vuitton";
+  }
+  if (x === "dior" || x.startsWith("dior-") || x.startsWith("di-")) {
+    return "dior";
   }
   if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) return "_new";
   return null;
@@ -123,6 +127,8 @@ export const SEO_BRAND_SLUG_ORDER = [
   "christopher-ward",
   "chanel",
   "gucci",
+  "louis-vuitton",
+  "dior",
   // new brands insert here
   "prada",
   "hermes",

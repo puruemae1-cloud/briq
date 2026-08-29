@@ -15,6 +15,7 @@ export type BrandKey =
   | "galvin-green"
   | "christopher-ward"
   | "louis-vuitton"
+  | "dior"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -131,6 +132,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/rot-acc-3.jpg",
     ],
   },
+  dior: {
+    key: "dior",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    images: [
+      "/banners/rot-acc-1.jpg",
+      "/banners/rot-acc-2.jpg",
+      "/banners/rot-acc-3.jpg",
+    ],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -189,6 +201,21 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "louis-vuitton-accessories": "louis-vuitton",
   "lv-home-lifestyle": "louis-vuitton",
   "lv-furniture-lighting": "louis-vuitton",
+  dior: "dior",
+  "dior-accessories": "dior",
+  "di-home": "dior",
+  "di-tableware": "dior",
+  "di-objects": "dior",
+  "di-objects-all": "dior",
+  "di-books": "dior",
+  "di-notebooks": "dior",
+  "di-desk-accessories": "dior",
+  "di-candleholders-candles": "dior",
+  "di-small-objects": "dior",
+  "di-trinket-trays": "dior",
+  "di-trays": "dior",
+  "di-leisure": "dior",
+  "di-paperweights": "dior",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

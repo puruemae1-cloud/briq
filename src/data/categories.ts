@@ -796,6 +796,27 @@ export type SubcategoryId =
   | "lv-tables"
   | "lv-lighting"
   | "lv-storage"
+  | "dior"
+  | "dior-accessories"
+  | "di-home"
+  | "di-tableware"
+  | "di-tableware-all"
+  | "di-plates-bowls"
+  | "di-glasses"
+  | "di-carafes"
+  | "di-tea-coffee"
+  | "di-cutlery"
+  | "di-objects"
+  | "di-objects-all"
+  | "di-books"
+  | "di-notebooks"
+  | "di-desk-accessories"
+  | "di-candleholders-candles"
+  | "di-small-objects"
+  | "di-trinket-trays"
+  | "di-trays"
+  | "di-leisure"
+  | "di-paperweights"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -966,6 +987,30 @@ export const LV_FURNITURE_LEAF_IDS: SubcategoryId[] = [
   "lv-tables",
   "lv-lighting",
   "lv-storage",
+];
+
+/** Dior Maison — tableware leaves (official GB Art de la Table PLPs). */
+export const DI_TABLEWARE_LEAF_IDS: SubcategoryId[] = [
+  "di-tableware-all",
+  "di-plates-bowls",
+  "di-glasses",
+  "di-carafes",
+  "di-tea-coffee",
+  "di-cutlery",
+];
+
+/** Dior Maison — objects leaves (official GB Objects PLPs). */
+export const DI_OBJECTS_LEAF_IDS: SubcategoryId[] = [
+  "di-objects-all",
+  "di-books",
+  "di-notebooks",
+  "di-desk-accessories",
+  "di-candleholders-candles",
+  "di-small-objects",
+  "di-trinket-trays",
+  "di-trays",
+  "di-leisure",
+  "di-paperweights",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2300,6 +2345,48 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "lv-tables": ["lv-tables"],
   "lv-lighting": ["lv-lighting"],
   "lv-storage": ["lv-storage"],
+  dior: [
+    "dior",
+    "dior-accessories",
+    "di-home",
+    "di-tableware",
+    ...DI_TABLEWARE_LEAF_IDS,
+    "di-objects",
+    ...DI_OBJECTS_LEAF_IDS,
+  ],
+  "dior-accessories": [
+    "dior-accessories",
+    "di-home",
+    "di-tableware",
+    ...DI_TABLEWARE_LEAF_IDS,
+    "di-objects",
+    ...DI_OBJECTS_LEAF_IDS,
+  ],
+  "di-home": [
+    "di-home",
+    "di-tableware",
+    ...DI_TABLEWARE_LEAF_IDS,
+    "di-objects",
+    ...DI_OBJECTS_LEAF_IDS,
+  ],
+  "di-tableware": ["di-tableware", ...DI_TABLEWARE_LEAF_IDS],
+  "di-tableware-all": ["di-tableware-all"],
+  "di-plates-bowls": ["di-plates-bowls"],
+  "di-glasses": ["di-glasses"],
+  "di-carafes": ["di-carafes"],
+  "di-tea-coffee": ["di-tea-coffee"],
+  "di-cutlery": ["di-cutlery"],
+  "di-objects": ["di-objects", ...DI_OBJECTS_LEAF_IDS],
+  "di-objects-all": ["di-objects-all"],
+  "di-books": ["di-books"],
+  "di-notebooks": ["di-notebooks"],
+  "di-desk-accessories": ["di-desk-accessories"],
+  "di-candleholders-candles": ["di-candleholders-candles"],
+  "di-small-objects": ["di-small-objects"],
+  "di-trinket-trays": ["di-trinket-trays"],
+  "di-trays": ["di-trays"],
+  "di-leisure": ["di-leisure"],
+  "di-paperweights": ["di-paperweights"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -5391,6 +5478,116 @@ export const navCategories: NavCategory[] = [
                     id: "lv-storage",
                     labelKo: "수납 · 사이드보드",
                     href: "/shop?category=accessories&sub=lv-storage",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "dior-accessories",
+        labelKo: "디올",
+        href: "/shop?category=accessories&sub=dior-accessories",
+        children: [
+          {
+            id: "di-home",
+            labelKo: "홈",
+            href: "/shop?category=accessories&sub=di-home",
+            children: [
+              {
+                id: "di-tableware",
+                labelKo: "테이블웨어",
+                href: "/shop?category=accessories&sub=di-tableware",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-tableware-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-tableware-all",
+                  },
+                  {
+                    id: "di-plates-bowls",
+                    labelKo: "플레이트 & 보울",
+                    href: "/shop?category=accessories&sub=di-plates-bowls",
+                  },
+                  {
+                    id: "di-glasses",
+                    labelKo: "글라스",
+                    href: "/shop?category=accessories&sub=di-glasses",
+                  },
+                  {
+                    id: "di-carafes",
+                    labelKo: "카라페",
+                    href: "/shop?category=accessories&sub=di-carafes",
+                  },
+                  {
+                    id: "di-tea-coffee",
+                    labelKo: "티 & 커피",
+                    href: "/shop?category=accessories&sub=di-tea-coffee",
+                  },
+                  {
+                    id: "di-cutlery",
+                    labelKo: "커트러리",
+                    href: "/shop?category=accessories&sub=di-cutlery",
+                  },
+                ],
+              },
+              {
+                id: "di-objects",
+                labelKo: "오브젝트",
+                href: "/shop?category=accessories&sub=di-objects",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-objects-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-objects-all",
+                  },
+                  {
+                    id: "di-books",
+                    labelKo: "북",
+                    href: "/shop?category=accessories&sub=di-books",
+                  },
+                  {
+                    id: "di-notebooks",
+                    labelKo: "노트북",
+                    href: "/shop?category=accessories&sub=di-notebooks",
+                  },
+                  {
+                    id: "di-desk-accessories",
+                    labelKo: "데스크 악세서리",
+                    href: "/shop?category=accessories&sub=di-desk-accessories",
+                  },
+                  {
+                    id: "di-candleholders-candles",
+                    labelKo: "캔들홀더 & 캔들",
+                    href: "/shop?category=accessories&sub=di-candleholders-candles",
+                  },
+                  {
+                    id: "di-small-objects",
+                    labelKo: "스몰 오브젝트",
+                    href: "/shop?category=accessories&sub=di-small-objects",
+                  },
+                  {
+                    id: "di-trinket-trays",
+                    labelKo: "트링켓 트레이",
+                    href: "/shop?category=accessories&sub=di-trinket-trays",
+                  },
+                  {
+                    id: "di-trays",
+                    labelKo: "트레이",
+                    href: "/shop?category=accessories&sub=di-trays",
+                  },
+                  {
+                    id: "di-leisure",
+                    labelKo: "레저",
+                    href: "/shop?category=accessories&sub=di-leisure",
+                  },
+                  {
+                    id: "di-paperweights",
+                    labelKo: "페이퍼웨이트",
+                    href: "/shop?category=accessories&sub=di-paperweights",
                   },
                 ],
               },

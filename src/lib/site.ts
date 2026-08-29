@@ -67,6 +67,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "루이 비통 홈 · 가구와 라이트닝 컬렉션을 Briq 영국 셀렉션으로 만나보세요.",
   },
+  dior: {
+    slug: "dior",
+    nameEn: "Dior",
+    nameKo: "디올",
+    shopHref: "/shop?category=accessories&sub=dior-accessories",
+    keywords: ["디올", "Dior", "디올 메종", "디올 테이블웨어", "디올 직구"],
+    blurb:
+      "디올 메종 테이블웨어 · 홈 컬렉션을 Briq 영국 셀렉션으로 만나보세요.",
+  },
   gucci: {
     slug: "gucci",
     nameEn: "Gucci",

@@ -63,6 +63,8 @@ export type ProductVariant = {
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */
   lvCollections?: SubcategoryId[];
+  /** Dior Maison / tableware PLP memberships. */
+  diCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -124,6 +126,8 @@ export type Product = {
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */
   lvCollections?: SubcategoryId[];
+  /** Dior Maison / tableware PLP memberships. */
+  diCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;

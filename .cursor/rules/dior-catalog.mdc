@@ -1,0 +1,18 @@
+---
+description: Dior link/catalog requests — full KO copy, all photos, sizes + size charts, then deploy
+alwaysApply: true
+---
+
+# Dior catalog requests
+
+When the user pastes a **Dior** (`dior.com`) PLP/PDP link or asks to sync Dior:
+
+1. **Korean PDP copy** — prefer native Korean from Algolia `merch_prod_live_ko_kr` (`scripts/build-di-catalog-from-ko-algolia.py`). Fall back to EN merch + translate (`deep-translator` / `ko_qa.gtx_translate`). Never ship hybrid EN/KO. Run `python3 scripts/check-catalog-korean.py --brand di --fail`.
+2. **All photos** — download every gallery frame into `public/products/di-pdp/<sku>/` (Algolia `damAssets` + PLP views); push via `push-product-images-tag.py --dirs di-pdp`.
+3. **Sizes / options** — for apparel, shoes, and accessories with size or colour options, map variants clearly (`colorKey`, `size`, separate colourways). Prefer official Dior option labels.
+4. **Size charts** — when Dior publishes a size guide for that category, scrape or mirror it into `sizeChart` matching the official GB chart. Home / tableware / objects one-size items stay `원 사이즈`.
+5. **Nav** — mirror official Maison leaves under Accessories → Dior → Home → Tableware / Objects → …
+6. **Staged runs** — large Maison PLPs: scrape one stage, pause (machine stability), then continue. Objects stages: 1 Books+Notebooks · 2 Desk+Paperweights+Leisure · 3 Candles · 4 Small+Trinket · 5 Trays+All gaps.
+7. **Deploy** — commit, push `main`, and push `product-images` for `di-pdp` (see `auto-deploy-commit.mdc`).
+
+**Akamai note:** direct PDP HTML is often blocked; use Algolia merch (`prd-{CODE_WITHOUT_UNDERSCORE}`) for description + DAM gallery.
