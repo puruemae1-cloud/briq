@@ -524,9 +524,14 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 .shop-hero {
   position: relative;
-  height: clamp(13rem, 34vw, 22rem);
+  height: clamp(13.5rem, 32vw, 22rem);
   overflow: hidden;
   margin-bottom: 0.25rem;
+}
+
+/* Brand shop heroes: taller strip so head→chest framing survives cover crop */
+.shop-hero--brand {
+  height: clamp(15.5rem, 38vw, 28rem);
 }
 
 .shop-hero__img {
@@ -563,7 +568,7 @@ a.chip[href*="sub=gg-sale"].is-active {
   display: block;
   width: max-content;
   max-width: 100%;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.45rem;
   filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.35));
   opacity: 0.96;
 }
@@ -597,7 +602,7 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 @media (min-width: 900px) {
   .shop-hero__logo {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.65rem;
   }
 
   .brand-wordmark {
@@ -617,18 +622,35 @@ a.chip[href*="sub=gg-sale"].is-active {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  padding: 1.35rem 1.25rem 1.5rem;
+  padding: 1.15rem 1.15rem 1.25rem;
   color: #f7f4ec;
+  text-align: left;
+  max-width: min(36rem, 100%);
+  box-sizing: border-box;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .shop-hero {
+    height: clamp(15rem, 30vw, 20rem);
+  }
+
+  .shop-hero--brand {
+    height: clamp(17rem, 34vw, 24rem);
+  }
+
+  .shop-hero__content {
+    padding: 1.35rem 1.65rem 1.5rem;
+  }
 }
 
 @media (min-width: 900px) {
   .shop-hero__content {
-    padding: 2rem 2.5rem 2.15rem;
+    padding: 1.85rem 2.5rem 2rem;
   }
 }
 
 .shop-hero__eyebrow {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.3rem;
   font-family: var(--font-display), serif;
   font-size: 0.72rem;
   letter-spacing: 0.28em;
@@ -639,16 +661,16 @@ a.chip[href*="sub=gg-sale"].is-active {
 .shop-hero__title {
   margin: 0;
   font-family: var(--font-classic), "Nanum Myeongjo", serif;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: clamp(1.25rem, 3vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 
 .shop-hero__support {
-  margin: 0.85rem 0 0;
+  margin: 0.65rem 0 0;
   max-width: 28rem;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: rgba(247, 244, 236, 0.78);
 }
 
@@ -1419,11 +1441,12 @@ body:has(.nav-drawer-toggle:checked) {
   min-height: 0;
   max-height: none;
   width: 100%;
-  aspect-ratio: 1024 / 648;
+  aspect-ratio: 1024 / 576;
   height: auto;
   align-items: start;
   justify-items: start;
-  padding: 1.45rem 1.25rem 1.35rem;
+  padding: 0;
+  position: relative;
 }
 
 .hero--fullframe .hero__bg {
@@ -1446,25 +1469,44 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .hero--fullframe .hero__content {
-  max-width: min(36rem, 92%);
+  /* Start just above the trench model’s shoulders, then stack downward. */
+  position: absolute;
+  left: clamp(1.1rem, 3.2vw, 2.5rem);
+  right: auto;
+  top: 44%;
+  max-width: min(36rem, 52%);
   text-align: left;
+  margin: 0;
+  z-index: 2;
+  padding-bottom: 0.75rem;
 }
 
 .hero--fullframe .hero__support {
   margin-bottom: 0;
+  max-width: 26rem;
+}
+
+.hero--fullframe .hero__brand {
+  margin-bottom: 0.4rem;
+}
+
+.hero--fullframe .hero__headline {
+  margin-bottom: 0.4rem;
 }
 
 @media (min-width: 900px) {
   .hero--fullframe .hero__stage {
     /* Keep full frame — do not re-impose a short panoramic max-height. */
     max-height: none;
-    align-items: end;
+    align-items: start;
     justify-items: start;
-    padding: 0 2.5rem 6.75rem;
+    padding: 0;
   }
 
   .hero--fullframe .hero__content {
-    max-width: min(40rem, 46%);
+    left: clamp(2rem, 3.5vw, 2.75rem);
+    top: 45%;
+    max-width: min(40rem, 44%);
   }
 }
 
@@ -1624,7 +1666,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner {
     min-height: 0;
     max-height: none;
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 5 / 4;
     height: auto;
     display: grid;
     align-items: end;
@@ -1667,40 +1709,77 @@ body:has(.nav-drawer-toggle:checked) {
     background:
       linear-gradient(
         0deg,
-        rgba(8, 12, 10, 0.82) 0%,
-        rgba(8, 12, 10, 0.28) 42%,
-        rgba(8, 12, 10, 0.12) 100%
+        rgba(8, 12, 10, 0.84) 0%,
+        rgba(8, 12, 10, 0.32) 46%,
+        rgba(8, 12, 10, 0.1) 100%
       );
   }
 
   .look-banner--fullframe .look-banner__content {
     position: relative;
     flex: none;
-    padding: 0 1.15rem 1.25rem;
+    padding: 0 1.15rem 1.15rem;
     background: transparent;
+    max-width: min(34rem, 100%);
   }
 
   .look-banner--carousel {
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 5 / 4;
     min-height: 14rem;
     max-height: none;
   }
 
   .look-banner--carousel .look-banner__content {
-    padding: 0 1.15rem 1.15rem;
+    padding: 0 1.15rem 1.1rem;
   }
 
   .look-banner__title-en {
-    font-size: clamp(1.45rem, 5.8vw, 2rem);
+    font-size: clamp(1.35rem, 5.4vw, 1.85rem);
+  }
+
+  .look-banner__title-ko {
+    font-size: clamp(0.95rem, 3.4vw, 1.15rem);
   }
 
   .look-banner__support {
-    font-size: 0.86rem;
+    margin: 0.65rem 0 1rem;
+    font-size: 0.84rem;
     line-height: 1.45;
+    max-width: 26rem;
+  }
+
+  .look-banner__eyebrow {
+    margin-bottom: 0.5rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+  }
+
+  .look-banner__cta {
+    min-height: 2.45rem;
+    padding: 0.55rem 1rem;
+    font-size: 0.84rem;
   }
 
   .look-banner__content {
-    padding: 0 1.15rem 1.25rem;
+    padding: 0 1.15rem 1.15rem;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: min(34rem, 100%);
+  }
+
+  /* Keep copy left on phones — right/center collide with crop subjects */
+  .look-banner--right .look-banner__content,
+  .look-banner--center .look-banner__content {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .look-banner--right .look-banner__support,
+  .look-banner--center .look-banner__support {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .look-banner__img {
@@ -1723,7 +1802,7 @@ body:has(.nav-drawer-toggle:checked) {
     content-visibility: visible;
     min-height: 0;
     max-height: none;
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 2 / 1;
     height: auto;
   }
 
@@ -1735,13 +1814,23 @@ body:has(.nav-drawer-toggle:checked) {
     object-fit: cover;
   }
 
+  .collection-100__banner-content {
+    padding: 1.25rem 1.15rem 1.3rem;
+    max-width: min(34rem, 100%);
+  }
+
+  .collection-100__title {
+    font-size: clamp(1.2rem, 4.6vw, 1.75rem);
+    line-height: 1.4;
+  }
+
   .hero--fullframe .hero__stage {
-    aspect-ratio: 1024 / 648;
+    aspect-ratio: 1024 / 576;
     height: auto;
     min-height: 0;
-    padding: 0 1.15rem 1.25rem;
+    padding: 0;
     display: grid;
-    align-items: end;
+    align-items: start;
     overflow: hidden;
   }
 
@@ -1763,31 +1852,39 @@ body:has(.nav-drawer-toggle:checked) {
     aspect-ratio: unset;
     background:
       linear-gradient(
-        100deg,
-        rgba(11, 18, 16, 0.72) 0%,
-        rgba(11, 18, 16, 0.28) 55%,
-        rgba(11, 18, 16, 0.45) 100%
+        105deg,
+        rgba(11, 18, 16, 0.78) 0%,
+        rgba(11, 18, 16, 0.38) 42%,
+        rgba(11, 18, 16, 0.12) 68%,
+        transparent 82%
       ),
-      linear-gradient(0deg, rgba(11, 18, 16, 0.55), transparent 55%);
+      linear-gradient(180deg, rgba(11, 18, 16, 0.22) 0%, transparent 38%);
   }
 
   .hero--fullframe .hero__content {
-    position: relative;
-    max-width: 100%;
-    padding: 0;
+    position: absolute;
+    left: 1.1rem;
+    top: 42%;
+    max-width: min(17.5rem, 58%);
+    padding: 0 0 0.5rem;
     background: transparent;
+    text-align: left;
   }
 
   .hero__brand {
-    font-size: clamp(1.35rem, 6.5vw, 2rem);
+    font-size: clamp(1.2rem, 5.8vw, 1.75rem);
+    margin-bottom: 0.3rem;
+    line-height: 1.08;
   }
 
   .hero__headline {
-    font-size: clamp(0.92rem, 3.8vw, 1.1rem);
+    font-size: clamp(0.86rem, 3.4vw, 1rem);
+    margin-bottom: 0.3rem;
   }
 
   .hero__support {
-    font-size: 0.86rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
     margin-bottom: 0;
   }
 
@@ -1802,7 +1899,25 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .shop-hero {
-    min-height: 15rem;
+    min-height: 14.5rem;
+  }
+
+  .shop-hero--brand {
+    min-height: 15.5rem;
+  }
+
+  .shop-hero__support {
+    font-size: 0.84rem;
+    margin-top: 0.5rem;
+  }
+
+  .shop-hero__title {
+    font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+  }
+
+  .brand-wordmark {
+    font-size: clamp(0.72rem, 3.2vw, 1.15rem);
+    max-width: 100%;
   }
 
   .collection-100 .product-grid > * {
@@ -2024,15 +2139,6 @@ body:has(.nav-drawer-toggle:checked) {
   object-position: center center;
   transform: none !important;
   animation: none !important;
-}
-
-.look-banner--watches.look-banner--fullframe {
-  aspect-ratio: var(--look-banner-aspect, 2560 / 630);
-}
-
-.look-banner--watches.look-banner--fullframe .look-banner__img {
-  object-fit: cover;
-  object-position: center 42%;
 }
 
 .look-banner__media {
@@ -2257,13 +2363,62 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner__content {
   position: relative;
   z-index: 1;
-  padding: 2rem 1.25rem 2.25rem;
+  padding: 1.65rem 1.25rem 1.75rem;
   max-width: 36rem;
+  text-align: left;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .look-banner {
+    aspect-ratio: 16 / 11;
+  }
+
+  .look-banner--carousel {
+    aspect-ratio: 16 / 11;
+  }
+
+  .look-banner__content,
+  .look-banner--fullframe .look-banner__content,
+  .look-banner--carousel .look-banner__content {
+    padding: 0 1.65rem 1.55rem;
+    max-width: min(38rem, 72%);
+  }
+
+  .look-banner__title-en {
+    font-size: clamp(1.55rem, 3.6vw, 2.15rem);
+  }
+
+  .look-banner__support {
+    margin: 0.75rem 0 1.15rem;
+    font-size: 0.9rem;
+  }
+
+  .hero--fullframe .hero__content {
+    left: 1.65rem;
+    top: 44%;
+    max-width: min(22rem, 50%);
+  }
+
+  .hero__brand {
+    font-size: clamp(1.45rem, 3.8vw, 2.1rem);
+  }
+
+  .hero__headline {
+    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  }
+
+  .hero__support {
+    font-size: 0.88rem;
+  }
+
+  .collection-100__banner-content {
+    padding: 1.55rem 1.65rem 1.65rem;
+  }
 }
 
 @media (min-width: 900px) {
   .look-banner__content {
-    padding: 3rem 3.5rem 9.75rem;
+    padding: 2.75rem 2.75rem 5.5rem;
   }
 
   .look-banner--right .look-banner__content {
@@ -2277,11 +2432,21 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner--fullframe .look-banner__content {
-    padding-bottom: 9.75rem;
+    padding-bottom: 5.5rem;
   }
 
   .collection-100__banner-content {
-    padding: 2.4rem 2.5rem 5.25rem;
+    padding: 2.25rem 2.5rem 2.4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .look-banner__content {
+    padding: 3rem 3.5rem 8.5rem;
+  }
+
+  .look-banner--fullframe .look-banner__content {
+    padding-bottom: 8.5rem;
   }
 }
 
@@ -2744,10 +2909,11 @@ body:has(.nav-drawer-toggle:checked) {
 .collection-100__banner {
   position: relative;
   overflow: hidden;
-  /* Match lookbook banner proportions (full-bleed L/R) */
-  min-height: 48svh;
-  max-height: 520px;
+  /* Locked Gucci 2:1 hero — full-bleed, native aspect */
+  min-height: 0;
+  max-height: none;
   width: 100%;
+  aspect-ratio: 2 / 1;
   color: #f7f4ec;
   display: grid;
   align-items: end;
@@ -2755,8 +2921,8 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .collection-100__banner {
-    min-height: 64svh;
-    max-height: 900px;
+    min-height: 0;
+    max-height: none;
   }
 }
 
@@ -2812,7 +2978,7 @@ body:has(.nav-drawer-toggle:checked) {
 
 @media (min-width: 900px) {
   .collection-100__banner-content {
-    padding: 2.4rem 2.5rem 2.5rem;
+    padding: 2.25rem 2.5rem 2.4rem;
   }
 }
 

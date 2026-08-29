@@ -14,6 +14,7 @@ export type BrandKey =
   | "belstaff"
   | "galvin-green"
   | "christopher-ward"
+  | "louis-vuitton"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -43,11 +44,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Burberry",
     nameKo: "버버리",
     logoSrc: "/brands/burberry.svg",
-    images: [
-      "/banners/brand-burberry-1.jpg",
-      "/banners/brand-burberry-2.jpg",
-      "/banners/brand-burberry-3.jpg",
-    ],
+    // Locked scarf campaign creative (A Good Sport / Romeo Beckham) — head to shoulders.
+    images: ["/banners/brand-burberry-scarf.jpg"],
   },
   chanel: {
     key: "chanel",
@@ -70,22 +68,16 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Prada",
     nameKo: "프라다",
     logoSrc: "/brands/prada.svg",
-    images: [
-      "/banners/brand-prada-1.jpg",
-      "/banners/brand-prada-2.jpg",
-      "/banners/brand-prada-3.jpg",
-    ],
+    // Locked Linea Rossa campaign creative — head to chest.
+    images: ["/banners/brand-prada-linea-rossa.jpg"],
   },
   arcteryx: {
     key: "arcteryx",
     nameEn: "Arc'teryx",
     nameKo: "아크테릭스",
     logoSrc: "/brands/arcteryx.svg",
-    images: [
-      "/banners/brand-arcteryx-1.jpg",
-      "/banners/brand-arcteryx-2.jpg",
-      "/banners/brand-arcteryx-3.jpg",
-    ],
+    // Locked Who We Are ridge creative — all Arc'teryx category heroes.
+    images: ["/banners/brand-arcteryx-ridge.jpg"],
   },
   "paul-smith": {
     key: "paul-smith",
@@ -128,6 +120,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     // Locked C1 Moonphase creative — not rotated weekly.
     images: ["/banners/brand-christopher-ward-moonphase.jpg"],
   },
+  "louis-vuitton": {
+    key: "louis-vuitton",
+    nameEn: "Louis Vuitton",
+    nameKo: "루이 비통",
+    logoSrc: "/brands/louis-vuitton.svg",
+    images: [
+      "/banners/rot-acc-1.jpg",
+      "/banners/rot-acc-2.jpg",
+      "/banners/rot-acc-3.jpg",
+    ],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -161,6 +164,14 @@ export const brandRootToKey: Record<string, BrandKey> = {
   prada: "prada",
   "prada-bags": "prada",
   "prada-luxury": "prada",
+  "prada-shoes": "prada",
+  "prada-accessories": "prada",
+  "pr-linea-rossa": "prada",
+  "pr-linea-rossa-women": "prada",
+  "pr-linea-rossa-men": "prada",
+  "pr-linea-rossa-sunglasses": "prada",
+  "pr-linea-rossa-shoes": "prada",
+  "pr-linea-rossa-fragrances": "prada",
   arcteryx: "arcteryx",
   "arcteryx-bags": "arcteryx",
   "arcteryx-shoes": "arcteryx",
@@ -174,6 +185,10 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "belstaff-accessories": "belstaff",
   "galvin-green": "galvin-green",
   "christopher-ward": "christopher-ward",
+  "louis-vuitton": "louis-vuitton",
+  "louis-vuitton-accessories": "louis-vuitton",
+  "lv-home-lifestyle": "louis-vuitton",
+  "lv-furniture-lighting": "louis-vuitton",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

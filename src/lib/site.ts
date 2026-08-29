@@ -58,6 +58,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "샤넬 의류·핸드백·슈즈·주얼리·향수까지 Briq 큐레이션으로 살펴보세요.",
   },
+  "louis-vuitton": {
+    slug: "louis-vuitton",
+    nameEn: "Louis Vuitton",
+    nameKo: "루이 비통",
+    shopHref: "/shop?category=accessories&sub=louis-vuitton-accessories",
+    keywords: ["루이비통", "Louis Vuitton", "루이 비통", "LV 홈", "루이비통 가구"],
+    blurb:
+      "루이 비통 홈 · 가구와 라이트닝 컬렉션을 Briq 영국 셀렉션으로 만나보세요.",
+  },
   gucci: {
     slug: "gucci",
     nameEn: "Gucci",

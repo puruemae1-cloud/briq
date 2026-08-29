@@ -2,22 +2,14 @@ import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
 import { CollectionBestsellerTier } from "@/components/CollectionReveal";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
-import { pickRotating } from "@/data/home-banners";
 import { getCollection100 } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { curateCollectionEdit } from "@/lib/collection-edit";
 
-const collectionBannerImages = [
-  "/banners/rot-luxury-1.jpg",
-  "/banners/rot-event-1.jpg",
-  "/banners/rot-cloth-1.jpg",
-  "/banners/rot-hero-2.jpg",
-  "/banners/rot-luxury-2.jpg",
-  "/banners/rot-event-2.jpg",
-];
+/** Locked Gucci Primavera hero — not rotated weekly. */
+const COLLECTION_100_BANNER = "/banners/collection-100-gucci.jpg";
 
 export function Collection100() {
-  const banner = pickRotating(collectionBannerImages, 3);
   const catalogue = getCollection100();
   // Server-side: 신상품 / 하이엔드 always reflect newest registeredAt in HTML.
   const curated = curateCollectionEdit(catalogue);
@@ -27,12 +19,12 @@ export function Collection100() {
       <div className="collection-100__banner">
         <BannerImage
           className="collection-100__banner-img"
-          src={banner}
+          src={COLLECTION_100_BANNER}
           alt=""
           aria-hidden
           loading="lazy"
           style={{
-            objectPosition: bannerFocalForSrc(banner, "center 40%"),
+            objectPosition: bannerFocalForSrc(COLLECTION_100_BANNER, "center 40%"),
           }}
         />
         <div className="collection-100__banner-shade" aria-hidden />

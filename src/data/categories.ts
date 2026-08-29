@@ -787,6 +787,15 @@ export type SubcategoryId =
   | "ch-women-camellias"
   | "ch-women-winter-accessories"
   | "ch-women-summer-accessories"
+  | "louis-vuitton"
+  | "louis-vuitton-accessories"
+  | "lv-home-lifestyle"
+  | "lv-furniture-lighting"
+  | "lv-furniture-lighting-all"
+  | "lv-seating"
+  | "lv-tables"
+  | "lv-lighting"
+  | "lv-storage"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -948,6 +957,15 @@ export const CH_OTHER_ACC_LEAF_IDS: SubcategoryId[] = [
   "ch-women-camellias",
   "ch-women-winter-accessories",
   "ch-women-summer-accessories",
+];
+
+/** Louis Vuitton Home — furniture & lighting leaves (GB PLPs under 가구와 라이트닝). */
+export const LV_FURNITURE_LEAF_IDS: SubcategoryId[] = [
+  "lv-furniture-lighting-all",
+  "lv-seating",
+  "lv-tables",
+  "lv-lighting",
+  "lv-storage",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2258,6 +2276,30 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "ch-other-accessories",
     ...CH_OTHER_ACC_LEAF_IDS,
   ],
+  "louis-vuitton": [
+    "louis-vuitton",
+    "louis-vuitton-accessories",
+    "lv-home-lifestyle",
+    "lv-furniture-lighting",
+    ...LV_FURNITURE_LEAF_IDS,
+  ],
+  "louis-vuitton-accessories": [
+    "louis-vuitton-accessories",
+    "lv-home-lifestyle",
+    "lv-furniture-lighting",
+    ...LV_FURNITURE_LEAF_IDS,
+  ],
+  "lv-home-lifestyle": [
+    "lv-home-lifestyle",
+    "lv-furniture-lighting",
+    ...LV_FURNITURE_LEAF_IDS,
+  ],
+  "lv-furniture-lighting": ["lv-furniture-lighting", ...LV_FURNITURE_LEAF_IDS],
+  "lv-furniture-lighting-all": ["lv-furniture-lighting-all"],
+  "lv-seating": ["lv-seating"],
+  "lv-tables": ["lv-tables"],
+  "lv-lighting": ["lv-lighting"],
+  "lv-storage": ["lv-storage"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -3654,49 +3696,6 @@ export const navCategories: NavCategory[] = [
     href: "/shop?category=watches",
     children: [
       {
-        id: "chanel-watches",
-        labelKo: "샤넬",
-        href: "/shop?category=watches&sub=chanel-watches",
-        children: [
-          {
-            id: "ch-watches",
-            labelKo: "전체보기",
-            href: "/shop?category=watches&sub=ch-watches",
-            navLeaf: true,
-          },
-          {
-            id: "ch-watches-j12",
-            labelKo: "J12",
-            href: "/shop?category=watches&sub=ch-watches-j12",
-            navLeaf: true,
-          },
-          {
-            id: "ch-watches-premiere",
-            labelKo: "프리미에르",
-            href: "/shop?category=watches&sub=ch-watches-premiere",
-            navLeaf: true,
-          },
-          {
-            id: "ch-watches-boy-friend",
-            labelKo: "보이·프렌드",
-            href: "/shop?category=watches&sub=ch-watches-boy-friend",
-            navLeaf: true,
-          },
-          {
-            id: "ch-watches-monsieur",
-            labelKo: "무슈",
-            href: "/shop?category=watches&sub=ch-watches-monsieur",
-            navLeaf: true,
-          },
-          {
-            id: "ch-watches-code-coco",
-            labelKo: "코드 코코",
-            href: "/shop?category=watches&sub=ch-watches-code-coco",
-            navLeaf: true,
-          },
-        ],
-      },
-      {
         id: "christopher-ward",
         labelKo: "크리스토퍼와드",
         href: "/shop?category=watches&sub=christopher-ward",
@@ -3770,6 +3769,49 @@ export const navCategories: NavCategory[] = [
             id: "cw-moonphase",
             labelKo: "Moonphase",
             href: "/shop?category=watches&sub=cw-moonphase",
+          },
+        ],
+      },
+      {
+        id: "chanel-watches",
+        labelKo: "샤넬",
+        href: "/shop?category=watches&sub=chanel-watches",
+        children: [
+          {
+            id: "ch-watches",
+            labelKo: "전체보기",
+            href: "/shop?category=watches&sub=ch-watches",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-j12",
+            labelKo: "J12",
+            href: "/shop?category=watches&sub=ch-watches-j12",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-premiere",
+            labelKo: "프리미에르",
+            href: "/shop?category=watches&sub=ch-watches-premiere",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-boy-friend",
+            labelKo: "보이·프렌드",
+            href: "/shop?category=watches&sub=ch-watches-boy-friend",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-monsieur",
+            labelKo: "무슈",
+            href: "/shop?category=watches&sub=ch-watches-monsieur",
+            navLeaf: true,
+          },
+          {
+            id: "ch-watches-code-coco",
+            labelKo: "코드 코코",
+            href: "/shop?category=watches&sub=ch-watches-code-coco",
+            navLeaf: true,
           },
         ],
       },
@@ -5306,6 +5348,53 @@ export const navCategories: NavCategory[] = [
             labelKo: "서머 악세서리",
             href: "/shop?category=accessories&sub=ch-women-summer-accessories",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "louis-vuitton-accessories",
+        labelKo: "루이 비통",
+        href: "/shop?category=accessories&sub=louis-vuitton-accessories",
+        children: [
+          {
+            id: "lv-home-lifestyle",
+            labelKo: "홈, 라이프스타일과 서재",
+            href: "/shop?category=accessories&sub=lv-home-lifestyle",
+            children: [
+              {
+                id: "lv-furniture-lighting",
+                labelKo: "가구와 라이트닝",
+                href: "/shop?category=accessories&sub=lv-furniture-lighting",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "lv-furniture-lighting-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=lv-furniture-lighting-all",
+                  },
+                  {
+                    id: "lv-seating",
+                    labelKo: "시팅",
+                    href: "/shop?category=accessories&sub=lv-seating",
+                  },
+                  {
+                    id: "lv-tables",
+                    labelKo: "테이블",
+                    href: "/shop?category=accessories&sub=lv-tables",
+                  },
+                  {
+                    id: "lv-lighting",
+                    labelKo: "라이트닝",
+                    href: "/shop?category=accessories&sub=lv-lighting",
+                  },
+                  {
+                    id: "lv-storage",
+                    labelKo: "수납 · 사이드보드",
+                    href: "/shop?category=accessories&sub=lv-storage",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },

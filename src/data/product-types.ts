@@ -61,6 +61,8 @@ export type ProductVariant = {
   chCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
+  /** Louis Vuitton Home PLP memberships. */
+  lvCollections?: SubcategoryId[];
 };
 
 export type ProductTechSpec = {
@@ -120,6 +122,8 @@ export type Product = {
   chCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
+  /** Louis Vuitton Home PLP memberships. */
+  lvCollections?: SubcategoryId[];
   tags: string[];
   /** Customer-facing Korean description only */
   descriptionKo?: string;

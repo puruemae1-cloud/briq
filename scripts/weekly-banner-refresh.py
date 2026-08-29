@@ -169,9 +169,13 @@ EVENT_EDIT_SLOTS = {n for n in SLOT_THEMES if n.startswith("rot-event-")}
 FIXED_EVENT_BANNER = "event-now-london.jpg"
 assert FIXED_EVENT_BANNER not in SLOT_THEMES, "locked event banner must not be in SLOT_THEMES"
 
-# Homepage watches rail uses locked Christopher Ward Bel Canto creative.
+# Homepage watches rail uses locked Christopher Ward C12 Loco open-balance creative.
 FIXED_WATCH_BANNER = "watches-bel-canto.jpg"
 assert FIXED_WATCH_BANNER not in SLOT_THEMES, "locked watch banner must not be in SLOT_THEMES"
+
+# Homepage 100 Collection banner — locked Gucci Primavera hero.
+FIXED_COLLECTION_100_BANNER = "collection-100-gucci.jpg"
+assert FIXED_COLLECTION_100_BANNER not in SLOT_THEMES, "locked collection-100 banner must not be in SLOT_THEMES"
 
 # Homepage bags rail — locked Chanel Spring 2018 campaign creative.
 FIXED_BAG_BANNER = "bags-chanel-campaign.jpg"
@@ -199,11 +203,24 @@ FIXED_CHANEL_BRAND_BANNER = "brand-chanel-como-bag.jpg"
 assert FIXED_CHANEL_WATCH_BANNER not in SLOT_THEMES, "locked Chanel watch banner must not be in SLOT_THEMES"
 assert FIXED_CHANEL_BRAND_BANNER not in SLOT_THEMES, "locked Chanel brand banner must not be in SLOT_THEMES"
 
+# Burberry brand hero — locked scarf campaign creative.
+FIXED_BURBERRY_BRAND_BANNER = "brand-burberry-scarf.jpg"
+assert FIXED_BURBERRY_BRAND_BANNER not in SLOT_THEMES, "locked Burberry brand banner must not be in SLOT_THEMES"
+
+# Prada brand hero — locked Linea Rossa campaign creative.
+FIXED_PRADA_BRAND_BANNER = "brand-prada-linea-rossa.jpg"
+assert FIXED_PRADA_BRAND_BANNER not in SLOT_THEMES, "locked Prada brand banner must not be in SLOT_THEMES"
+
+# Arc'teryx brand hero — locked Who We Are ridge creative.
+FIXED_ARC_BRAND_BANNER = "brand-arcteryx-ridge.jpg"
+assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner must not be in SLOT_THEMES"
+
 # Locked homepage / brand creatives — never rotated or dropped from manifest.
 LOCKED_BANNERS = {
     FIXED_HOME_HERO,
     FIXED_EVENT_BANNER,
     FIXED_WATCH_BANNER,
+    FIXED_COLLECTION_100_BANNER,
     FIXED_BAG_BANNER,
     FIXED_SHOES_BANNER,
     FIXED_LUXURY_BANNER,
@@ -211,6 +228,9 @@ LOCKED_BANNERS = {
     FIXED_CW_BRAND_BANNER,
     FIXED_CHANEL_WATCH_BANNER,
     FIXED_CHANEL_BRAND_BANNER,
+    FIXED_BURBERRY_BRAND_BANNER,
+    FIXED_PRADA_BRAND_BANNER,
+    FIXED_ARC_BRAND_BANNER,
 }
 
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.

@@ -17,6 +17,7 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(bs-|belstaff)/i, key: "belstaff" },
   { re: /^(gg-|galvin)/i, key: "galvin-green" },
   { re: /^(cw-|christopher-ward)/i, key: "christopher-ward" },
+  { re: /^(lv-|louis-vuitton)/i, key: "louis-vuitton" },
   { re: /^(lu-|london-undercover|umbrellas)/i, key: "london-undercover" },
 ];
 

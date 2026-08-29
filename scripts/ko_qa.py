@@ -88,6 +88,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
         ROOT / "src/data/lu/lu-lifestyle-catalog.ts",
     ],
     "cw": [ROOT / "src/data/cw/cw-catalog.ts"],
+    "lv": [ROOT / "src/data/lv/lv-catalog.json"],
 }
 
 

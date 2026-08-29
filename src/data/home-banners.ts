@@ -130,9 +130,9 @@ export const homeLookBanners: LookBanner[] = [
     // Locked creative — weekly refresh only rotates rot-event-* (unused here).
     images: ["/banners/event-now-london.jpg"],
     align: "left",
-    focal: "50% 50%",
+    focal: "50% 45%",
     fullFrame: true,
-    aspectRatio: "2560 / 1418",
+    aspectRatio: "2560 / 1436",
   },
   {
     id: "luxury",
@@ -160,12 +160,12 @@ export const homeLookBanners: LookBanner[] = [
     support: "초침이 흐르는 순간까지, 시간에 품격을 더하는 셀렉트 워치.",
     href: "/shop?category=watches",
     cta: "시계 쇼핑",
-    // Locked Christopher Ward Bel Canto creative — not rotated weekly.
+    // Locked Christopher Ward C12 Loco open-balance creative — not rotated weekly.
     images: ["/banners/watches-bel-canto.jpg"],
     align: "left",
     focal: "50% 45%",
     fullFrame: true,
-    aspectRatio: "2560 / 630",
+    aspectRatio: "2500 / 1875",
   },
   {
     id: "bags",
