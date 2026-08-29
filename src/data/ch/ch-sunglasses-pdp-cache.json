@@ -25052,5 +25052,139 @@
     "localHover": "/products/ch-pdp/a75354x08101v165652nocci/2.jpg",
     "titleShort": "Rectangle Eyeglasses",
     "subtitle": "Acetate"
+  },
+  "A75292X08101V501Z54MUNI": {
+    "id": "A75292X08101V501Z54MUNI",
+    "productCode": "A75292X08101V501Z54MUNI",
+    "sku": "A75292X08101V501Z54MUNI",
+    "title": "Cat-Eye Eyeglasses",
+    "priceLabel": "£260",
+    "gbpPrice": 260.0,
+    "categoryLabel": "Optical",
+    "collection": null,
+    "collectionCode": null,
+    "url": "https://www.chanel.com/gb/eyewear/p/A75292X08101V501Z54MUNI/cat-eye-eyeglasses-black/",
+    "hierarchy": [
+      {
+        "label": "Eyewear",
+        "url": "/gb/eyewear/"
+      },
+      {
+        "label": "Optical",
+        "url": ""
+      }
+    ],
+    "details": {
+      "color": "Black",
+      "description": "",
+      "fabrics": "Acetate",
+      "reference": "A75292X08101V501Z54MUNI",
+      "dimensions": null,
+      "eyeLensColor": null,
+      "freeStat": null,
+      "treatment": null
+    },
+    "images": [
+      "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-black-acetate-acetate-packshot-default-a75292x08101v501z-9534285086750.jpg"
+    ],
+    "imageMeta": [
+      {
+        "typology": "PACKSHOT_DEFAULT",
+        "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-black-acetate-acetate-packshot-default-a75292x08101v501z-9534285086750.jpg"
+      }
+    ],
+    "sizes": [
+      {
+        "size": "UNI",
+        "orliSize": "UNI",
+        "sku": "A75292X08101V501Z54MUNI",
+        "inStock": true
+      }
+    ],
+    "availabilityStatus": "IN_STOCK",
+    "inStock": true,
+    "new": false,
+    "collections": [
+      "chanel",
+      "chanel-accessories",
+      "ch-sunglasses",
+      "ch-women-sunglasses"
+    ],
+    "leaf": "ch-women-sunglasses",
+    "leaves": [
+      "ch-women-sunglasses"
+    ],
+    "kind": "sunglasses",
+    "localImages": [
+      "/products/ch-pdp/a75292x08101v501z54muni/1.jpg"
+    ],
+    "localImage": "/products/ch-pdp/a75292x08101v501z54muni/1.jpg"
+  },
+  "A75324X08282V362255MOCCI": {
+    "id": "A75324X08282V362255MOCCI",
+    "productCode": "A75324X08282V362255MOCCI",
+    "sku": "A75324X08282V362255MOCCI",
+    "title": "Rectangle Eyeglasses",
+    "priceLabel": "£385",
+    "gbpPrice": 385.0,
+    "categoryLabel": "Optical",
+    "collection": null,
+    "collectionCode": null,
+    "url": "https://www.chanel.com/gb/eyewear/p/A75324X08282V362255MOCCI/rectangle-eyeglasses-black/",
+    "hierarchy": [
+      {
+        "label": "Eyewear",
+        "url": "/gb/eyewear/"
+      },
+      {
+        "label": "Optical",
+        "url": ""
+      }
+    ],
+    "details": {
+      "color": "Black",
+      "description": "",
+      "fabrics": "Acetate & Glass Pearls",
+      "reference": "A75324X08282V362255MOCCI",
+      "dimensions": null,
+      "eyeLensColor": null,
+      "freeStat": null,
+      "treatment": null
+    },
+    "images": [
+      "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-eyeglasses-black-acetate-glass-pearls-acetate-glass-pearls-packshot-default-a75324x08282v3622-9563877703710.jpg"
+    ],
+    "imageMeta": [
+      {
+        "typology": "PACKSHOT_DEFAULT",
+        "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-eyeglasses-black-acetate-glass-pearls-acetate-glass-pearls-packshot-default-a75324x08282v3622-9563877703710.jpg"
+      }
+    ],
+    "sizes": [
+      {
+        "size": "UNI",
+        "orliSize": "UNI",
+        "sku": "A75324X08282V362255MOCCI",
+        "inStock": true
+      }
+    ],
+    "availabilityStatus": "IN_STOCK",
+    "inStock": true,
+    "new": false,
+    "collections": [
+      "chanel",
+      "chanel-accessories",
+      "ch-sunglasses",
+      "ch-women-sunglasses"
+    ],
+    "leaf": "ch-women-sunglasses",
+    "leaves": [
+      "ch-women-sunglasses"
+    ],
+    "kind": "sunglasses",
+    "localImages": [
+      "/products/ch-pdp/a75324x08282v362255mocci/1.jpg"
+    ],
+    "localImage": "/products/ch-pdp/a75324x08282v362255mocci/1.jpg"
   }
 }

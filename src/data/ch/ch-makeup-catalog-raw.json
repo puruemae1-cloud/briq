@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-21T12:58:14.078072+00:00",
+  "scrapedAt": "2026-08-29T03:20:23.940050+00:00",
   "hub": "https://www.chanel.com/gb/makeup/",
   "note": "Chanel GB makeup hub — Complexion / Eyes / Lips / Nails / Brushes & Accessories under Accessories→샤넬→메이크업.",
   "leaves": [
@@ -201,12 +201,12 @@
     }
   ],
   "leafCounts": {
-    "ch-makeup-lips": 282,
-    "ch-makeup-lipsticks": 156,
-    "ch-makeup-nail-colour": 71,
-    "ch-makeup-nails": 71,
+    "ch-makeup-lips": 277,
+    "ch-makeup-lipsticks": 151,
+    "ch-makeup-nail-colour": 65,
+    "ch-makeup-nails": 69,
     "ch-makeup-lip-balms": 37,
-    "ch-makeup-complexion": 392,
+    "ch-makeup-complexion": 384,
     "ch-makeup-highlighter": 91,
     "ch-makeup-powders": 66,
     "ch-makeup-concealer": 80,
@@ -215,20 +215,20 @@
     "ch-makeup-complexion-brushes": 16,
     "ch-makeup-eye-brushes": 11,
     "ch-makeup-lip-brushes": 2,
-    "ch-makeup-blush": 133,
+    "ch-makeup-blush": 125,
     "ch-makeup-foundations": 169,
-    "ch-makeup-eye-palette": 43,
-    "ch-makeup-eyes": 127,
-    "ch-makeup-eyeshadows": 61,
+    "ch-makeup-eye-palette": 40,
+    "ch-makeup-eyes": 126,
+    "ch-makeup-eyeshadows": 53,
     "ch-makeup-liquid-lipsticks": 52,
-    "ch-makeup-eyeliners": 43,
-    "ch-makeup-healthy-glow": 171,
+    "ch-makeup-eyeliners": 44,
+    "ch-makeup-healthy-glow": 172,
     "ch-makeup-manicure": 4,
     "ch-makeup-lip-gloss": 39,
-    "ch-makeup-mascara": 27,
     "ch-makeup-brows": 21,
     "ch-makeup-bronzers": 40,
-    "ch-makeup-lip-pencils": 20
+    "ch-makeup-lip-pencils": 20,
+    "ch-makeup-mascara": 19
   },
   "skipped": [],
   "failed": [],
@@ -17154,8 +17154,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
@@ -17169,8 +17167,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -18329,10 +18325,7 @@
         "ch-makeup",
         "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
-        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
@@ -18344,10 +18337,7 @@
       "leaves": [
         "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
-        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
@@ -20210,20 +20200,14 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-manicure",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
       "kind": "makeup",
@@ -20315,20 +20299,14 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-manicure",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
       "kind": "makeup",
@@ -20419,20 +20397,14 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-manicure",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
       "kind": "makeup",
@@ -23207,20 +23179,14 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-manicure",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-manicure",
-        "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
       "kind": "makeup",
@@ -32159,12 +32125,6 @@
         "ch-makeup",
         "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
-        "ch-makeup-eyeliners",
-        "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
@@ -32174,12 +32134,6 @@
       "leaves": [
         "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
-        "ch-makeup-eyeliners",
-        "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -53821,17 +53775,13 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-nail-colour",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -55053,17 +55003,13 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-nail-colour",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -59171,7 +59117,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
@@ -59179,8 +59124,7 @@
       "leaves": [
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59283,7 +59227,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
@@ -59291,8 +59234,7 @@
       "leaves": [
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59395,7 +59337,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
@@ -59403,8 +59344,7 @@
       "leaves": [
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59507,7 +59447,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
@@ -59515,8 +59454,7 @@
       "leaves": [
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59619,7 +59557,6 @@
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
@@ -59627,8 +59564,7 @@
       "leaves": [
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59723,17 +59659,17 @@
       "new": false,
       "collections": [
         "ch-makeup",
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-eyeshadows",
       "leaves": [
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59833,17 +59769,17 @@
       "new": false,
       "collections": [
         "ch-makeup",
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-eyeshadows",
       "leaves": [
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -59943,17 +59879,17 @@
       "new": false,
       "collections": [
         "ch-makeup",
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-eyeshadows",
       "leaves": [
+        "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-mascara"
+        "ch-makeup-eyeshadows"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63130,21 +63066,25 @@
       "new": false,
       "collections": [
         "ch-makeup",
+        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
+        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
+        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow"
+        "ch-makeup-healthy-glow",
+        "ch-makeup-highlighter"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63354,25 +63294,21 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -72447,13 +72383,15 @@
         "ch-makeup",
         "ch-makeup-bronzers",
         "ch-makeup-complexion",
+        "ch-makeup-healthy-glow",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-bronzers",
+      "leaf": "ch-makeup-healthy-glow",
       "leaves": [
         "ch-makeup-bronzers",
-        "ch-makeup-complexion"
+        "ch-makeup-complexion",
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -75804,31 +75742,15 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
-        "ch-makeup-nail-colour",
-        "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-eyeliners",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
-        "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
-        "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
-        "ch-makeup-nail-colour",
-        "ch-makeup-nails"
+        "ch-makeup-eyes"
       ],
       "kind": "makeup",
       "localImages": [
@@ -76038,9 +75960,6 @@
         "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
@@ -76053,9 +75972,6 @@
         "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -80148,15 +80064,13 @@
       "collections": [
         "ch-makeup",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-eyeshadows",
+      "leaf": "ch-makeup-mascara",
       "leaves": [
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara"
       ],
       "kind": "makeup",
@@ -80255,15 +80169,13 @@
       "collections": [
         "ch-makeup",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-eyeshadows",
+      "leaf": "ch-makeup-mascara",
       "leaves": [
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara"
       ],
       "kind": "makeup",
@@ -80356,15 +80268,13 @@
       "collections": [
         "ch-makeup",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-eyeshadows",
+      "leaf": "ch-makeup-mascara",
       "leaves": [
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
         "ch-makeup-mascara"
       ],
       "kind": "makeup",
@@ -81568,33 +81478,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
         "ch-makeup-mascara",
-        "ch-makeup-nail-colour",
-        "ch-makeup-nails",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-blush",
+      "leaf": "ch-makeup-mascara",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyeliners",
         "ch-makeup-eyes",
-        "ch-makeup-eyeshadows",
-        "ch-makeup-lips",
-        "ch-makeup-lipsticks",
-        "ch-makeup-mascara",
-        "ch-makeup-nail-colour",
-        "ch-makeup-nails"
+        "ch-makeup-mascara"
       ],
       "kind": "makeup",
       "localImages": [
