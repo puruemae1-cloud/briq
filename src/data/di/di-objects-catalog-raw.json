@@ -1,0 +1,3116 @@
+{
+  "scrapedAt": "2026-08-29T11:56:53.133239+00:00",
+  "stage": "1",
+  "hub": "https://www.dior.com/en_gb/fashion/maison/objects/all-products",
+  "leaves": [
+    {
+      "id": "di-objects-all",
+      "slug": "all-products",
+      "label": "All Objects",
+      "labelKo": "전체",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/all-products",
+      "stage": "5"
+    },
+    {
+      "id": "di-books",
+      "slug": "books",
+      "label": "Books",
+      "labelKo": "북",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/books",
+      "stage": "1"
+    },
+    {
+      "id": "di-notebooks",
+      "slug": "notebooks",
+      "label": "Notebooks",
+      "labelKo": "노트북",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/notebooks",
+      "stage": "1"
+    },
+    {
+      "id": "di-desk-accessories",
+      "slug": "desk-accessories",
+      "label": "Desk Accessories",
+      "labelKo": "데스크 악세서리",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/desk-accessories",
+      "stage": "2"
+    },
+    {
+      "id": "di-paperweights",
+      "slug": "paperweights",
+      "label": "Paperweights",
+      "labelKo": "페이퍼웨이트",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/all-products?f_category=Paperweights",
+      "stage": "2"
+    },
+    {
+      "id": "di-leisure",
+      "slug": "leisure",
+      "label": "Leisure",
+      "labelKo": "레저",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/leisure",
+      "stage": "2"
+    },
+    {
+      "id": "di-candleholders-candles",
+      "slug": "candleholders-candles",
+      "label": "Candleholders & Candles",
+      "labelKo": "캔들홀더 & 캔들",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/candleholders-candles",
+      "stage": "3"
+    },
+    {
+      "id": "di-small-objects",
+      "slug": "small-objects",
+      "label": "Small Objects",
+      "labelKo": "스몰 오브젝트",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/small-objects",
+      "stage": "4"
+    },
+    {
+      "id": "di-trinket-trays",
+      "slug": "trinket-trays",
+      "label": "Trinket Trays",
+      "labelKo": "트링켓 트레이",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/trinket-trays",
+      "stage": "4"
+    },
+    {
+      "id": "di-trays",
+      "slug": "trays",
+      "label": "Trays",
+      "labelKo": "트레이",
+      "url": "https://www.dior.com/en_gb/fashion/maison/objects/trays",
+      "stage": "5"
+    }
+  ],
+  "products": [
+    {
+      "id": "HYE04MON0U_C970",
+      "sku": "HYE04MON0U_C970_TU",
+      "title": "Book: Dior, La Légende du 30 Avenue Montaigne",
+      "subtitle": "English Version",
+      "gbpPrice": 35,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04MON0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C970",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Celebrating the reopening of 30, avenue Montaigne and the opening of La Galerie Dior, this book shows the public and unprecedented history of the hallmark Haute Couture House headquarters. 30 Montaigne has been tied to Dior since its founding in 1946. Christian Dior chose this hôtel particulier as the home to his Couture House and the backdrop of his collection presentations, including the inaugural fashion show in 1947 that marked the debut of the New Look era. Since then, Christian Dior and his successors – from Yves Saint Laurent to Maria Grazia Chiuri – have designed and created all of the House collections there. 30 Montaigne still maintains its ateliers, making it a legendary address of Parisian Haute Couture. Looking at iconic images of Mr. Dior working in his design studio, fittings, backstage at shows, archival documents and a stunning portfolio of Dior creations, readers will experience the spirit of 30 Montaigne through the decades and get a peek into its future. Text by Maureen Footer, Jérôme Hanover and Olivier Flaviano."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04mon0u-c970/1.jpg",
+        "/products/di-pdp/hye04mon0u-c970/2.jpg",
+        "/products/di-pdp/hye04mon0u-c970/3.jpg",
+        "/products/di-pdp/hye04mon0u-c970/4.jpg",
+        "/products/di-pdp/hye04mon0u-c970/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON0UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON0UC970_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON0UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04MON1U_C970",
+      "sku": "HYE04MON1U_C970_TU",
+      "title": "Book: Dior, La Légende du 30 Avenue Montaigne",
+      "subtitle": "French Version",
+      "gbpPrice": 35,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04MON1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C970",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Celebrating the reopening of 30, avenue Montaigne and the opening of La Galerie Dior, this book shows the public and unprecedented history of the hallmark Haute Couture House headquarters. 30 Montaigne has been tied to Dior since its founding in 1946. Christian Dior chose this hôtel particulier as the home to his Couture House and the backdrop of his collection presentations, including the inaugural fashion show in 1947 that marked the debut of the New Look era. Since then, Christian Dior and his successors – from Yves Saint Laurent to Maria Grazia Chiuri – have designed and created all of the House collections there. 30 Montaigne still maintains its ateliers, making it a legendary address of Parisian Haute Couture. Looking at iconic images of Mr. Dior working in his design studio, fittings, backstage at shows, archival documents and a stunning portfolio of Dior creations, readers will experience the spirit of 30 Montaigne through the decades and get a peek into its future. Text by Maureen Footer, Jérôme Hanover and Olivier Flaviano."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04mon1u-c970/1.jpg",
+        "/products/di-pdp/hye04mon1u-c970/2.jpg",
+        "/products/di-pdp/hye04mon1u-c970/3.jpg",
+        "/products/di-pdp/hye04mon1u-c970/4.jpg",
+        "/products/di-pdp/hye04mon1u-c970/5.jpg",
+        "/products/di-pdp/hye04mon1u-c970/6.jpg",
+        "/products/di-pdp/hye04mon1u-c970/7.jpg",
+        "/products/di-pdp/hye04mon1u-c970/8.jpg",
+        "/products/di-pdp/hye04mon1u-c970/9.jpg",
+        "/products/di-pdp/hye04mon1u-c970/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MON1UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DBA0U_C000",
+      "sku": "HYE04DBA0U_C000_TU",
+      "title": "Book: Dior by Avedon",
+      "subtitle": "English version",
+      "gbpPrice": 140,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DBA0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "C000",
+        "label": "Blue"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Avedon celebrates Maison Dior's creations while retracing the evolution of fashion from the 1940s to the 1970s. With a mastery of light and contrast, Avedon embraces grace, drama and humor to capture the very essence of the creations of the Maison Dior as well as the styles and personalities of the female icons who have worn them. Incredible moments of photography captivate enthusiasts of art and fashion alike. Text by Olivier Saillard and Justine Picardie, preface by Jacqueline de Ribes."
+        ],
+        "bullets": [
+          "English version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dba0u-c000/1.jpg",
+        "/products/di-pdp/hye04dba0u-c000/2.jpg",
+        "/products/di-pdp/hye04dba0u-c000/3.jpg",
+        "/products/di-pdp/hye04dba0u-c000/4.jpg",
+        "/products/di-pdp/hye04dba0u-c000/5.jpg",
+        "/products/di-pdp/hye04dba0u-c000/6.jpg",
+        "/products/di-pdp/hye04dba0u-c000/7.jpg",
+        "/products/di-pdp/hye04dba0u-c000/8.jpg",
+        "/products/di-pdp/hye04dba0u-c000/9.jpg",
+        "/products/di-pdp/hye04dba0u-c000/10.jpg",
+        "/products/di-pdp/hye04dba0u-c000/11.jpg",
+        "/products/di-pdp/hye04dba0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E05?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E04-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E05-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E06-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA0UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DBA1U_C000",
+      "sku": "HYE04DBA1U_C000_TU",
+      "title": "Book: Dior by Avedon",
+      "subtitle": "French version",
+      "gbpPrice": 140,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DBA1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "C000",
+        "label": "Blue"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Avedon celebrates Maison Dior's creations while retracing the evolution of fashion from the 1940s to the 1970s. With a mastery of light and contrast, Avedon embraces grace, drama and humor to capture the very essence of the creations of the Maison Dior as well as the styles and personalities of the female icons who have worn them. Incredible moments of photography captivate enthusiasts of art and fashion alike. Text by Olivier Saillard and Justine Picardie, preface by Jacqueline de Ribes."
+        ],
+        "bullets": [
+          "French version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dba1u-c000/1.jpg",
+        "/products/di-pdp/hye04dba1u-c000/2.jpg",
+        "/products/di-pdp/hye04dba1u-c000/3.jpg",
+        "/products/di-pdp/hye04dba1u-c000/4.jpg",
+        "/products/di-pdp/hye04dba1u-c000/5.jpg",
+        "/products/di-pdp/hye04dba1u-c000/6.jpg",
+        "/products/di-pdp/hye04dba1u-c000/7.jpg",
+        "/products/di-pdp/hye04dba1u-c000/8.jpg",
+        "/products/di-pdp/hye04dba1u-c000/9.jpg",
+        "/products/di-pdp/hye04dba1u-c000/10.jpg",
+        "/products/di-pdp/hye04dba1u-c000/11.jpg",
+        "/products/di-pdp/hye04dba1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E05?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E04-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E05-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E06-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBA1UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04LHD0U_C000",
+      "sku": "HYE04LHD0U_C000_TU",
+      "title": "Book: Her Dior, Maria Grazia Chiuri's New Voice",
+      "subtitle": "English Version",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04LHD0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "The book Her Dior: Maria Grazia Chiuri's New Voice showcases photos from 33 women photographers who have collaborated with Dior and Maria Grazia Chiuri since 2016, including editorials for Dior Magazine, i-D, Tank and Purple, among other media. Illustrating the work of these artists and their important role in contemporary photography, it also celebrates Maria Grazia Chiuri's innovative and feminist spirit. The book was released on International Women's Day on March 8, 2021."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04lhd0u-c000/1.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/2.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/3.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/4.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/5.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/6.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/7.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/8.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/9.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/10.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/11.jpg",
+        "/products/di-pdp/hye04lhd0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E03-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LHD0UC000_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_M_20_5_LOOK_012_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1002_1002928-lormg0321i-whr.jpg"
+      ]
+    },
+    {
+      "id": "HYE04DLB0U_C970",
+      "sku": "HYE04DLB0U_C970_TU",
+      "title": "Book: Dior - Peter Lindbergh",
+      "subtitle": "Trilingual Version (English, French, German)",
+      "gbpPrice": 240,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DLB0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C970",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "The magnificent collection pays homage to the hallmark work of Peter Lindbergh with two volumes. In October 2018, 80 of Christian Dior and Maria Grazia Chiuri's haute couture creations were photographed exclusively by Peter Lindbergh; archival pieces staged in Times Square in the heart of New York's hustle and bustle. The second book brings together more than 110 Peter Lindbergh photographs that celebrated Dior creations in the world's most prestigious magazines over the past 30 years. Text by historian Martin Harrison."
+        ],
+        "bullets": [
+          "Trilingual Version (English, French, German)"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dlb0u-c970/1.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/2.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/3.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/4.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/5.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/6.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/7.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/8.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/9.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/10.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/11.jpg",
+        "/products/di-pdp/hye04dlb0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E01-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E02-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E05-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E06-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E07-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DLB0UC970_E09-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04MRP0U_C970",
+      "sku": "HYE04MRP0U_C970_TU",
+      "title": "Book: Dior Metamorphosis",
+      "subtitle": "English Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04MRP0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "The reinvention of 30 Montaigne, photographed by Robert Polidori, captures a gripping journey between past, present and future. Following the reopening of 30 Montaigne, Dior Metamorphosis unveils never-before-seen photographs by Robert Polidori, one of the greatest contemporary photographers and a privileged witness to the restoration of Christian Dior Couture's historic home. Throughout two years of renovations, Robert Polidori followed the various phases of deconstruction and resurrection, creating images that invite us behind the scenes to see the guts of this marvelous refuge, as Christian Dior called it. From the raw setting of debris and dust, light and beauty spring from these unique images. Reflecting reinvention, hallmark House designs — like the signature Bar suit — are featured amid the construction, an artistic statement imbued with Mr. Dior's soul and the ethos of the House. The timeless architecture of the silhouettes acts as a powerful omen for building the fashion and the world of tomorrow. Text by Emanuele Coccia. Photographs by Robert Polidori."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04mrp0u-c970/1.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/2.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/3.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/4.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/5.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/6.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/7.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/8.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/9.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/10.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/11.jpg",
+        "/products/di-pdp/hye04mrp0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP0UC970_E14-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04MRP1U_C970",
+      "sku": "HYE04MRP1U_C970_TU",
+      "title": "Book: Dior métamorphose",
+      "subtitle": "French Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04MRP1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "The reinvention of 30 Montaigne, photographed by Robert Polidori, captures a gripping journey between past, present and future. Following the reopening of 30 Montaigne, Dior métamorphose unveils never-before-seen photographs by Robert Polidori, one of the greatest contemporary photographers and a privileged witness to the restoration of Christian Dior Couture's historic home. Throughout two years of renovations, Robert Polidori followed the various phases of deconstruction and resurrection, creating images that invite us behind the scenes to see the guts of this marvelous refuge, as Christian Dior called it. From the raw setting of debris and dust, light and beauty spring from these unique images. Reflecting reinvention, hallmark House designs — like the signature Bar suit — are featured amid the construction, an artistic statement imbued with Mr. Dior's soul and the ethos of the House. The timeless architecture of the silhouettes acts as a powerful omen for building the fashion and the world of tomorrow. Text by Emanuele Coccia. Photographs by Robert Polidori."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04mrp1u-c970/1.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/2.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/3.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/4.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/5.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/6.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/7.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/8.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/9.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/10.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/11.jpg",
+        "/products/di-pdp/hye04mrp1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E07?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E07-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04MRP1UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04SMB0U_C970",
+      "sku": "HYE04SMB0U_C970_TU",
+      "title": "Book: Dior by Sarah Moon",
+      "subtitle": "English Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04SMB0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "White",
+        "code": "C970",
+        "label": "White"
+      },
+      "details": {
+        "paragraphs": [
+          "The book Dior by Sarah Moon explores the relationship between the Dior aesthetic and Sarah Moon in a box set of three volumes. Volume 1: Creations by Christian Dior, photographed at the Fondation Le Corbusier in Paris. Text by Sarah Moon. Volume 2: Creations by the House's creative directors (from Christian Dior to Maria Grazia Chiuri), photographed at Dior Heritage. Text by fashion historian Olivier Saillard. Volume 3: Creations and accompanying text by Maria Grazia Chiuri. The book was published in November 2022, on the occasion of Paris Photo."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04smb0u-c970/1.jpg",
+        "/products/di-pdp/hye04smb0u-c970/2.jpg",
+        "/products/di-pdp/hye04smb0u-c970/3.jpg",
+        "/products/di-pdp/hye04smb0u-c970/4.jpg",
+        "/products/di-pdp/hye04smb0u-c970/5.jpg",
+        "/products/di-pdp/hye04smb0u-c970/6.jpg",
+        "/products/di-pdp/hye04smb0u-c970/7.jpg",
+        "/products/di-pdp/hye04smb0u-c970/8.jpg",
+        "/products/di-pdp/hye04smb0u-c970/9.jpg",
+        "/products/di-pdp/hye04smb0u-c970/10.jpg",
+        "/products/di-pdp/hye04smb0u-c970/11.jpg",
+        "/products/di-pdp/hye04smb0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E02?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E02-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04SMB1U_C970",
+      "sku": "HYE04SMB1U_C970_TU",
+      "title": "Book: Dior par Sarah Moon",
+      "subtitle": "French Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04SMB1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "White",
+        "code": "C970",
+        "label": "White"
+      },
+      "details": {
+        "paragraphs": [
+          "The book Dior par Sarah Moon explores the relationship between the Dior aesthetic and Sarah Moon in a box set of three volumes. Volume 1: Creations by Christian Dior, photographed at the Fondation Le Corbusier in Paris. Text by Sarah Moon. Volume 2: Creations by the House's creative directors (from Christian Dior to Maria Grazia Chiuri), photographed at Dior Heritage. Text by fashion historian Olivier Saillard. Volume 3: Creations and accompanying text by Maria Grazia Chiuri. The book was published in November 2022, on the occasion of Paris Photo."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04smb1u-c970/1.jpg",
+        "/products/di-pdp/hye04smb1u-c970/2.jpg",
+        "/products/di-pdp/hye04smb1u-c970/3.jpg",
+        "/products/di-pdp/hye04smb1u-c970/4.jpg",
+        "/products/di-pdp/hye04smb1u-c970/5.jpg",
+        "/products/di-pdp/hye04smb1u-c970/6.jpg",
+        "/products/di-pdp/hye04smb1u-c970/7.jpg",
+        "/products/di-pdp/hye04smb1u-c970/8.jpg",
+        "/products/di-pdp/hye04smb1u-c970/9.jpg",
+        "/products/di-pdp/hye04smb1u-c970/10.jpg",
+        "/products/di-pdp/hye04smb1u-c970/11.jpg",
+        "/products/di-pdp/hye04smb1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E02?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E02-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04SMB1UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04LFD0U_C970",
+      "sku": "HYE04LFD0U_C970_TU",
+      "title": "Book: Dior Scarves. Fashion Stories",
+      "subtitle": "English Version",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04LFD0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C970",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "An affectionate atlas of Dior scarves at the heart of iconic fashion. A scarf unfurls over the back of the book's dust jacket. The paper inside is as light and soft as silk. From Christian Dior to Maria Grazia Chiuri, the scarves convey the imagination of the creative directors who have shaped the haute couture house. Featuring over 400 designs, primarily taken from the Dior archives, the book traces a remarkable history of fashion. Sophisticated, minimalist, figurative, abstract, luxurious, essential, contemporary and timeless designs for men and women. Dior silk scarves form an incomparable visual repertoire, sure to appeal to any connoisseur of fashion, design and the decorative arts. In addition to this compendium of scarves, enriched with photography portfolios by Brigitte Niedermair and Pol Baril, the book includes content from leading art and fashion historians — Maria Luisa Frisa, Claire Allen-Johnstone, Émilie Hammen, Elda Danese. The foreword is by Maria Grazia Chiuri, Creative Director of Dior Women's collections."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04lfd0u-c970/1.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/2.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/3.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/4.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/5.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/6.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/7.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/8.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/9.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/10.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/11.jpg",
+        "/products/di-pdp/hye04lfd0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD0UC970_E14-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04LFD1U_C970",
+      "sku": "HYE04LFD1U_C970_TU",
+      "title": "Book: Les Foulards Dior. Histoires de mode",
+      "subtitle": "French Version",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04LFD1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C970",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "An affectionate atlas of Dior scarves at the heart of iconic fashion. A scarf unfurls over the back of the book's dust jacket. The paper inside is as light and soft as silk. From Christian Dior to Maria Grazia Chiuri, the scarves convey the imagination of the creative directors who have shaped the haute couture house. Featuring over 400 designs, primarily taken from the Dior archives, the book traces a remarkable history of fashion. Sophisticated, minimalist, figurative, abstract, luxurious, essential, contemporary and timeless designs for men and women. Dior silk scarves form an incomparable visual repertoire, sure to appeal to any connoisseur of fashion, design and the decorative arts. In addition to this compendium of scarves, enriched with photography portfolios by Brigitte Niedermair and Pol Baril, the book includes content from leading art and fashion historians — Maria Luisa Frisa, Claire Allen-Johnstone, Émilie Hammen, Elda Danese. The foreword is by Maria Grazia Chiuri, Creative Director of Dior Women's collections."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04lfd1u-c970/1.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/2.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/3.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/4.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/5.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/6.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/7.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/8.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/9.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/10.jpg",
+        "/products/di-pdp/hye04lfd1u-c970/11.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LFD1UC970_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DJG0U_C970",
+      "sku": "HYE04DJG0U_C970_TU",
+      "title": "Book: Dior by John Galliano",
+      "subtitle": "English Version",
+      "gbpPrice": 180,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DJG0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "C970",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "DIOR BY JOHN GALLIANO (1997-2011) is the fifth volume in the DIOR BY collection, which explores the lines of each Creative Director at Christian Dior Couture. Before joining Dior as Creative Director of the Women's collection, Gibraltar-born British designer John Galliano had already encountered an array of artists and dynamic characters with whom he forged strong bonds. These kindred spirits would go on to play a defining role in his career. From the moment he joined Dior, Galliano set himself apart with his flamboyant shows, blending eclectic historical and cultural inspirations — a global kaleidoscope of influences and an unbridled form of creativity, steeped in romance and heritage. The designer's sensitivity to haute couture savoir-faire and his innate sense of the spectacular earned him a reputation as a master of the silhouette. Galliano reinvented the art — and the essence — of haute couture, redefining the codes of contemporary style by drawing on influences of his travels — both real and imagined — with the impressive legacy of Christian Dior. This book showcases the exceptional silhouettes he created for Dior, featuring his most iconic designs, photographed by Laziz Hamani, together with shots by Steven Meisel, Annie Leibovitz, Irving Penn and Paolo Roversi."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04djg0u-c970/1.jpg",
+        "/products/di-pdp/hye04djg0u-c970/2.jpg",
+        "/products/di-pdp/hye04djg0u-c970/3.jpg",
+        "/products/di-pdp/hye04djg0u-c970/4.jpg",
+        "/products/di-pdp/hye04djg0u-c970/5.jpg",
+        "/products/di-pdp/hye04djg0u-c970/6.jpg",
+        "/products/di-pdp/hye04djg0u-c970/7.jpg",
+        "/products/di-pdp/hye04djg0u-c970/8.jpg",
+        "/products/di-pdp/hye04djg0u-c970/9.jpg",
+        "/products/di-pdp/hye04djg0u-c970/10.jpg",
+        "/products/di-pdp/hye04djg0u-c970/11.jpg",
+        "/products/di-pdp/hye04djg0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DJG1U_C970",
+      "sku": "HYE04DJG1U_C970_TU",
+      "title": "Book: Dior par John Galliano",
+      "subtitle": "French Version",
+      "gbpPrice": 180,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DJG1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "C970",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "DIOR PAR JOHN GALLIANO (1997-2011) is the fifth volume in the 'DIOR PAR' collection, which explores the lines of each Creative Director at Christian Dior Couture. Before joining Dior as Creative Director of the Women's collection, Gibraltar-born British designer John Galliano had already encountered an array of artists and dynamic characters with whom he forged strong bonds. These kindred spirits would go on to play a defining role in his career. From the moment he joined Dior, Galliano set himself apart with his flamboyant shows, blending eclectic historical and cultural inspirations — a global kaleidoscope of influences and an unbridled form of creativity, steeped in romance and heritage. The designer's sensitivity to haute couture savoir-faire and his innate sense of the spectacular earned him a reputation as a master of the silhouette. Galliano reinvented the art — and the essence — of haute couture, redefining the codes of contemporary style by drawing on influences of his travels — both real and imagined — with the impressive legacy of Christian Dior. This book showcases the exceptional silhouettes he created for Dior, featuring his most iconic designs, photographed by Laziz Hamani, together with shots by Steven Meisel, Annie Leibovitz, Irving Penn and Paolo Roversi."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04djg1u-c970/1.jpg",
+        "/products/di-pdp/hye04djg1u-c970/2.jpg",
+        "/products/di-pdp/hye04djg1u-c970/3.jpg",
+        "/products/di-pdp/hye04djg1u-c970/4.jpg",
+        "/products/di-pdp/hye04djg1u-c970/5.jpg",
+        "/products/di-pdp/hye04djg1u-c970/6.jpg",
+        "/products/di-pdp/hye04djg1u-c970/7.jpg",
+        "/products/di-pdp/hye04djg1u-c970/8.jpg",
+        "/products/di-pdp/hye04djg1u-c970/9.jpg",
+        "/products/di-pdp/hye04djg1u-c970/10.jpg",
+        "/products/di-pdp/hye04djg1u-c970/11.jpg",
+        "/products/di-pdp/hye04djg1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJG1UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DMB0U_C000",
+      "sku": "HYE04DMB0U_C000_TU",
+      "title": "Book: Dior by Marc Bohan",
+      "subtitle": "English Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DMB0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Red",
+        "code": "C000",
+        "label": "Red"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Marc Bohan is the third volume in a series of books, each of which is dedicated to one of the creative directors of the Maison Dior. This collection includes all of the haute couture collections from Spring-Summer 1960 to Spring-Summer 1989. Text by fashion journalist Jérôme Hanover."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dmb0u-c000/1.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/2.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/3.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/4.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/5.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/6.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/7.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/8.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/9.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/10.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/11.jpg",
+        "/products/di-pdp/hye04dmb0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB0UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DMB1U_C000",
+      "sku": "HYE04DMB1U_C000_TU",
+      "title": "Book: Dior by Marc Bohan",
+      "subtitle": "French Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DMB1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Red",
+        "code": "C000",
+        "label": "Red"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Marc Bohan is the third volume in a series of books, each of which is dedicated to one of the creative directors of the Maison Dior. This collection includes all of the haute couture collections from Spring-Summer 1960 to Spring-Summer 1989. Text by fashion journalist Jérôme Hanover."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dmb1u-c000/1.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/2.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/3.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/4.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/5.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/6.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/7.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/8.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/9.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/10.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/11.jpg",
+        "/products/di-pdp/hye04dmb1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DMB1UC000_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04RAF0U_C970",
+      "sku": "HYE04RAF0U_C970_TU",
+      "title": "Book: Dior by Raf Simons",
+      "subtitle": "English Version",
+      "gbpPrice": 180,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04RAF0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Red",
+        "code": "C970",
+        "label": "Red"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Raf Simons (2012-2015) is the sixth volume of the Dior by series, exploring the collections of each of Christian Dior Couture's creative directors. In 2012, Raf Simons is chosen to usher in a new era of the House's history. He breathes contemporary inspiration into Dior's romantic heritage by marrying his signature minimal aesthetic with the House's poetic elegance. A graduate in industrial design and furniture design from Belgium, Raf Simons brings his unique sensibility to fashion, infusing it with the eclectic mix of music, performance and fine arts that is inherent in his creative process. Of all the major Parisian Houses, Dior holds the most prestige around the world. Dior by Raf Simons — the sixth installment of the collection dedicated to Dior's creative directors — celebrates the most remarkable creations from Fall-Winter 2012 to Fall-Winter 2015, magnificently photographed by Laziz Hamani and explored by fashion journalist Tim Blanks. Text by Tim Blanks. Photographs by Laziz Hamani."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04raf0u-c970/1.jpg",
+        "/products/di-pdp/hye04raf0u-c970/2.jpg",
+        "/products/di-pdp/hye04raf0u-c970/3.jpg",
+        "/products/di-pdp/hye04raf0u-c970/4.jpg",
+        "/products/di-pdp/hye04raf0u-c970/5.jpg",
+        "/products/di-pdp/hye04raf0u-c970/6.jpg",
+        "/products/di-pdp/hye04raf0u-c970/7.jpg",
+        "/products/di-pdp/hye04raf0u-c970/8.jpg",
+        "/products/di-pdp/hye04raf0u-c970/9.jpg",
+        "/products/di-pdp/hye04raf0u-c970/10.jpg",
+        "/products/di-pdp/hye04raf0u-c970/11.jpg",
+        "/products/di-pdp/hye04raf0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E07?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RAF0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04RMG0U_C400",
+      "sku": "HYE04RMG0U_C400_TU",
+      "title": "Book: Dior par Mats Gustafson Vol. II",
+      "subtitle": "French Version",
+      "gbpPrice": 100,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04RMG0U_C400",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "C400",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "This gorgeous book is a compilation of works by the illustrator Mats Gustafson of Maria Grazia Chiuri's collections for Dior. Seven years after the publication of the Dior volume by Mats Gustafson, the Swedish illustrator revisits the sophistication and glamour of the Maison Dior. In this volume, his ethereal watercolors and vibrantly colored collages exclusively depict creations by Maria Grazia Chiuri, Dior's Creative Director since 2016. The book assembles Chiuri's most emblematic styles, from her first to her latest Haute Couture and Ready-to-Wear collections. Drawings of motif details and accessories — such as bags, shoes, and perfume bottles, among others — enhance the selection of looks. Celebrating the House's creativity, Mats Gustafson's illustrations capture Maria Grazia Chiuri's innovations while showcasing the timeless charm of Dior. Reviving the tradition of fashion illustration with an inventive flair, Mats Gustafson delivers an invaluable graphic body of work that will satisfy any fan of fashion and art. Text by Holly Brubach and illustrations by Mats Gustafson"
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04rmg0u-c400/1.jpg",
+        "/products/di-pdp/hye04rmg0u-c400/2.jpg",
+        "/products/di-pdp/hye04rmg0u-c400/3.jpg",
+        "/products/di-pdp/hye04rmg0u-c400/4.jpg",
+        "/products/di-pdp/hye04rmg0u-c400/5.jpg",
+        "/products/di-pdp/hye04rmg0u-c400/6.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04RMG0UC400_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DBM0U_C000",
+      "sku": "HYE04DBM0U_C000_TU",
+      "title": "Book: Dior by Mats Gustafson",
+      "subtitle": "English Version",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DBM0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "C000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Mats Gustafson takes a novel exploration into the inspired collaboration between the Swedish illustrator and Maison Dior. The artist's lively watercolors and collages showcase the fascinating world of Dior and its haute couture pieces as well as the contemporary, ready-to-wear designs of Raf Simons and Maria Grazia Chiuri. This magnificent work is a visual ode to the timelessness of the Dior silhouette. Text by fashion journalist Tim Blanks."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dbm0u-c000/1.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/2.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/3.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/4.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/5.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/6.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/7.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/8.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/9.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/10.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/11.jpg",
+        "/products/di-pdp/hye04dbm0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E04-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM0UC000_E14-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DBM1U_C000",
+      "sku": "HYE04DBM1U_C000_TU",
+      "title": "Book: Dior par Mats Gustafson",
+      "subtitle": "French Version",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DBM1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "C000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior par Mats Gustafson takes a novel exploration into the inspired collaboration between the Swedish illustrator and Maison Dior. The artist's lively watercolors and collages showcase the fascinating world of Dior and its haute couture pieces as well as the contemporary, ready-to-wear designs of Raf Simons and Maria Grazia Chiuri. This magnificent work is a visual ode to the timelessness of the Dior silhouette. Text by fashion journalist Tim Blanks."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dbm1u-c000/1.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/2.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/3.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/4.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/5.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/6.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/7.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/8.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/9.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/10.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/11.jpg",
+        "/products/di-pdp/hye04dbm1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E04-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DBM1UC000_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DGF0U_C000",
+      "sku": "HYE04DGF0U_C000_TU",
+      "title": "Book: Dior by Gianfranco Ferré",
+      "subtitle": "English Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DGF0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Gianfranco Ferré is the fourth volume in a series of works, each of which is dedicated to one of the creative directors of the Maison Dior. It looks at Gianfranco Ferré's most emblematic creations for Dior, from the Fall-Winter 1989 collection to the Fall-Winter 1996 collection. Exploring the fusion of his tastes with those of the House's founder, the elegance of Christian Dior's style is reinterpreted through his eyes and presented to a new generation of customers and fashion enthusiasts. Text by fashion journalist Alexander Fury."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dgf0u-c000/1.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/2.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/3.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/4.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/5.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/6.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/7.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/8.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/9.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/10.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/11.jpg",
+        "/products/di-pdp/hye04dgf0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF0UC000_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DGF1U_C000",
+      "sku": "HYE04DGF1U_C000_TU",
+      "title": "Book: Dior by Gianfranco Ferré",
+      "subtitle": "French Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DGF1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Gianfranco Ferré is the fourth volume in a series of works, each of which is dedicated to one of the creative directors of the Maison Dior. It looks at Gianfranco Ferré's most emblematic creations for Dior, from the Fall-Winter 1989 collection to the Fall-Winter 1996 collection. Exploring the fusion of his tastes with those of the House's founder, the elegance of Christian Dior's style is reinterpreted through his eyes and presented to a new generation of customers and fashion enthusiasts. Text by fashion journalist Alexander Fury."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dgf1u-c000/1.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/2.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/3.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/4.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/5.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/6.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/7.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/8.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/9.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/10.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/11.jpg",
+        "/products/di-pdp/hye04dgf1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DGF1UC000_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04YSL0U_C000",
+      "sku": "HYE04YSL0U_C000_TU",
+      "title": "Book: Dior by Yves Saint Laurent",
+      "subtitle": "English Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04YSL0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Yves Saint Laurent is the second volume in a series of works, each of which is dedicated to one of the creative directors of the Maison Dior. It showcases Yves Saint Laurent's most emblematic creations for Dior, from the famous Trapèze collection from Spring-Summer 1958 to the Fall-Winter 1960 collection. Text by Laurence Benaïm, fashion journalist and biographer of Yves Saint Laurent."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04ysl0u-c000/1.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/2.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/3.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/4.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/5.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/6.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/7.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/8.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/9.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/10.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/11.jpg",
+        "/products/di-pdp/hye04ysl0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL0UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04YSL1U_C000",
+      "sku": "HYE04YSL1U_C000_TU",
+      "title": "Book: Dior by Yves Saint Laurent",
+      "subtitle": "French Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04YSL1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Yves Saint Laurent is the second volume in a series of works, each of which is dedicated to one of the creative directors of the Maison Dior. It showcases Yves Saint Laurent's most emblematic creations for Dior, from the famous Trapèze collection from Spring-Summer 1958 to the Fall-Winter 1960 collection. Text by Laurence Benaïm, fashion journalist and biographer of Yves Saint Laurent."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04ysl1u-c000/1.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/2.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/3.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/4.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/5.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/6.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/7.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/8.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/9.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/10.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/11.jpg",
+        "/products/di-pdp/hye04ysl1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04YSL1UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DCI1U_C000",
+      "sku": "HYE04DCI1U_C000_TU",
+      "title": "Book: Dior by Christian Dior",
+      "subtitle": "French Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DCI1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Christian Dior is the first volume in a series dedicated to each of the House's creative directors. This is the latest collection of the most hallmark haute couture creations designed by Christian Dior, from his first Spring-Summer 1947 New Look collection to his final line, Fuseau, from Fall-Winter 1957. Text by fashion historian Olivier Saillard."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dci1u-c000/1.jpg",
+        "/products/di-pdp/hye04dci1u-c000/2.jpg",
+        "/products/di-pdp/hye04dci1u-c000/3.jpg",
+        "/products/di-pdp/hye04dci1u-c000/4.jpg",
+        "/products/di-pdp/hye04dci1u-c000/5.jpg",
+        "/products/di-pdp/hye04dci1u-c000/6.jpg",
+        "/products/di-pdp/hye04dci1u-c000/7.jpg",
+        "/products/di-pdp/hye04dci1u-c000/8.jpg",
+        "/products/di-pdp/hye04dci1u-c000/9.jpg",
+        "/products/di-pdp/hye04dci1u-c000/10.jpg",
+        "/products/di-pdp/hye04dci1u-c000/11.jpg",
+        "/products/di-pdp/hye04dci1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E09-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI1UC000_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DCI0U_C000",
+      "sku": "HYE04DCI0U_C000_TU",
+      "title": "Book: Dior by Christian Dior",
+      "subtitle": "English Version",
+      "gbpPrice": 190,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DCI0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C000",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior by Christian Dior is the first volume in a series dedicated to each of the House's creative directors. This is the latest collection of the most hallmark haute couture creations designed by Christian Dior, from his first Spring-Summer 1947 New Look collection to his final line, Fuseau, from Fall-Winter 1957. Text by fashion historian Olivier Saillard."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dci0u-c000/1.jpg",
+        "/products/di-pdp/hye04dci0u-c000/2.jpg",
+        "/products/di-pdp/hye04dci0u-c000/3.jpg",
+        "/products/di-pdp/hye04dci0u-c000/4.jpg",
+        "/products/di-pdp/hye04dci0u-c000/5.jpg",
+        "/products/di-pdp/hye04dci0u-c000/6.jpg",
+        "/products/di-pdp/hye04dci0u-c000/7.jpg",
+        "/products/di-pdp/hye04dci0u-c000/8.jpg",
+        "/products/di-pdp/hye04dci0u-c000/9.jpg",
+        "/products/di-pdp/hye04dci0u-c000/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCI0UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DCR0U_C000",
+      "sku": "HYE04DCR0U_C000_TU",
+      "title": "Book: Christian Dior – Designer of Dreams",
+      "subtitle": "English Version",
+      "gbpPrice": 55,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DCR0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "Christian Dior presented his first fashion show in 1947, marking the end of wartime austerity and the birth of a new feminine silhouette. Featuring a cinched waist, full skirt and soft shoulders, this silhouette was inspired by the so-called 'femmes fleurs' who embodied quintessential Parisian luxury. The 'New Look' repositioned Paris as the fashion capital and made the Dior name synonymous with haute couture. This book details a selection of 70 silhouettes created by Christian Dior and his successors — Yves Saint Laurent, Marc Bohan, Gianfranco Ferré, John Galliano, Raf Simons and Maria Grazia Chiuri. Specially photographed for this book, these garments are accompanied by texts contextualizing them, sketches, photographs of fashion shows and the work of the greatest fashion photographers, including Irving Penn, Richard Avedon, Cecil Beaton, Helmut Newton, Patrick Demarchelier, Peter Lindbergh, Mario Testino and Nick Knight. The texts highlight the defining themes of the House's history: lines, architecture, links to history and art, color, gardens and other inspiration, as well as the brand's muses and celebrated clients (Marlene Dietrich, Grace of Monaco, Marilyn Monroe, Elizabeth Taylor, Lady Diana, Charlize Theron, Natalie Portman, Jennifer Lawrence, etc.)."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dcr0u-c000/1.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/2.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/3.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/4.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/5.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/6.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/7.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/8.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/9.jpg",
+        "/products/di-pdp/hye04dcr0u-c000/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR0UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DCR1U_C000",
+      "sku": "HYE04DCR1U_C000_TU",
+      "title": "Book: Christian Dior – Couturier du Rêve",
+      "subtitle": "French Version",
+      "gbpPrice": 55,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DCR1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "Christian Dior presented his first fashion show in 1947, marking the end of wartime austerity and the birth of a new feminine silhouette. Featuring a cinched waist, full skirt and soft shoulders, this silhouette was inspired by the so-called 'femmes fleurs' who embodied quintessential Parisian luxury. The 'New Look' repositioned Paris as the fashion capital and made the Dior name synonymous with haute couture. This book details a selection of 70 silhouettes created by Christian Dior and his successors — Yves Saint Laurent, Marc Bohan, Gianfranco Ferré, John Galliano, Raf Simons and Maria Grazia Chiuri. Specially photographed for this book, these garments are accompanied by texts contextualizing them, sketches, photographs of fashion shows and the work of the greatest fashion photographers, including Irving Penn, Richard Avedon, Cecil Beaton, Helmut Newton, Patrick Demarchelier, Peter Lindbergh, Mario Testino and Nick Knight. The texts highlight the defining themes of the House's history: lines, architecture, links to history and art, color, gardens and other inspiration, as well as the brand's muses and celebrated clients (Marlene Dietrich, Grace of Monaco, Marilyn Monroe, Elizabeth Taylor, Lady Diana, Charlize Theron, Natalie Portman, Jennifer Lawrence, etc.)."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dcr1u-c000/1.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/2.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/3.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/4.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/5.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/6.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/7.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/8.jpg",
+        "/products/di-pdp/hye04dcr1u-c000/9.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E09-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DCR1UC000_E12-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04BRI0U_C970",
+      "sku": "HYE04BRI0U_C970_TU",
+      "title": "Book: Photography, Christian Dior by Brigitte Niedermair",
+      "subtitle": "English Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04BRI0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C970",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "The book Photography, Christian Dior by Brigitte Niedermair explores photographer Brigitte Niedermair's unique collaboration with the House. The remarkable relationship between Maria Grazia Chiuri, creative director of Christian Dior Couture womenswear, and Brigitte Niedermair is expressed through ingeniously provocative and unconventional photographs. Brigitte Niedermair has delved deep into the extensive Dior archives and selected around 40 historical pieces, each of which has been photographed twice with a silver-box camera in a five-by-four-inch format. Hidden details are revealed about the construction of designs including jackets, coats, day outfits, and evening dresses to offer a unique perspective. The book features a preface by Maria Grazia Chiuri and is enriched with contributions from Olivier Gabet, Brigitte Lacombe, and Maripol, as well as artists and designers Martino Gamper and Marcello Jori."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04bri0u-c970/1.jpg",
+        "/products/di-pdp/hye04bri0u-c970/2.jpg",
+        "/products/di-pdp/hye04bri0u-c970/3.jpg",
+        "/products/di-pdp/hye04bri0u-c970/4.jpg",
+        "/products/di-pdp/hye04bri0u-c970/5.jpg",
+        "/products/di-pdp/hye04bri0u-c970/6.jpg",
+        "/products/di-pdp/hye04bri0u-c970/7.jpg",
+        "/products/di-pdp/hye04bri0u-c970/8.jpg",
+        "/products/di-pdp/hye04bri0u-c970/9.jpg",
+        "/products/di-pdp/hye04bri0u-c970/10.jpg",
+        "/products/di-pdp/hye04bri0u-c970/11.jpg",
+        "/products/di-pdp/hye04bri0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI0UC970_E14-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04BRI1U_C970",
+      "sku": "HYE04BRI1U_C970_TU",
+      "title": "Book: Photographie, Christian Dior par Brigitte Niedermair",
+      "subtitle": "French Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04BRI1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C970",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "The book Photographie, Christian Dior par Brigitte Niedermair explores photographer Brigitte Niedermair's unique collaboration with the House. The remarkable relationship between Maria Grazia Chiuri, creative director of Christian Dior Couture womenswear, and Brigitte Niedermair is expressed through ingeniously provocative and unconventional photographs. Brigitte Niedermair has delved deep into the extensive Dior archives and selected around 40 historical pieces, each of which has been photographed twice with a silver-box camera in a five-by-four-inch format. Hidden details are revealed about the construction of designs including jackets, coats, day outfits, and evening dresses to offer a unique perspective. The book features a preface by Maria Grazia Chiuri and is enriched with contributions from Olivier Gabet, Brigitte Lacombe, and Maripol, as well as artists and designers Martino Gamper and Marcello Jori."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04bri1u-c970/1.jpg",
+        "/products/di-pdp/hye04bri1u-c970/2.jpg",
+        "/products/di-pdp/hye04bri1u-c970/3.jpg",
+        "/products/di-pdp/hye04bri1u-c970/4.jpg",
+        "/products/di-pdp/hye04bri1u-c970/5.jpg",
+        "/products/di-pdp/hye04bri1u-c970/6.jpg",
+        "/products/di-pdp/hye04bri1u-c970/7.jpg",
+        "/products/di-pdp/hye04bri1u-c970/8.jpg",
+        "/products/di-pdp/hye04bri1u-c970/9.jpg",
+        "/products/di-pdp/hye04bri1u-c970/10.jpg",
+        "/products/di-pdp/hye04bri1u-c970/11.jpg",
+        "/products/di-pdp/hye04bri1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04BRI1UC970_E14-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DDE0U_C000",
+      "sku": "HYE04DDE0U_C000_TU",
+      "title": "Book: Dior Catwalk",
+      "subtitle": "English Version",
+      "gbpPrice": 55,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DDE0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior Catwalk explores the entirety of the collections of Christian Dior and his successors Yves Saint Laurent, Marc Bohan, Gianfranco Ferré, John Galliano, Raf Simons, and the first creations of Maria Grazia Chiuri for the prestigious House. Including over 1,100 illustrations, this treasure trove of inspiration cannot be missed. Text by Alexander Fury, fashion journalist."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dde0u-c000/1.jpg",
+        "/products/di-pdp/hye04dde0u-c000/2.jpg",
+        "/products/di-pdp/hye04dde0u-c000/3.jpg",
+        "/products/di-pdp/hye04dde0u-c000/4.jpg",
+        "/products/di-pdp/hye04dde0u-c000/5.jpg",
+        "/products/di-pdp/hye04dde0u-c000/6.jpg",
+        "/products/di-pdp/hye04dde0u-c000/7.jpg",
+        "/products/di-pdp/hye04dde0u-c000/8.jpg",
+        "/products/di-pdp/hye04dde0u-c000/9.jpg",
+        "/products/di-pdp/hye04dde0u-c000/10.jpg",
+        "/products/di-pdp/hye04dde0u-c000/11.jpg",
+        "/products/di-pdp/hye04dde0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E01-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E03-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E04-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E09-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DDE1U_C000",
+      "sku": "HYE04DDE1U_C000_TU",
+      "title": "Book: Dior Défilés",
+      "subtitle": "French Version",
+      "gbpPrice": 55,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DDE1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior Défilés explores in entirety the collections of Christian Dior and his successors Yves Saint Laurent, Marc Bohan, Gianfranco Ferré, John Galliano, Raf Simons, and the first creations of Maria Grazia Chiuri for the prestigious House. With over 1,100 illustrations, this treasure trove of inspiration cannot be missed. Text by Alexander Fury, fashion journalist."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dde1u-c000/1.jpg",
+        "/products/di-pdp/hye04dde1u-c000/2.jpg",
+        "/products/di-pdp/hye04dde1u-c000/3.jpg",
+        "/products/di-pdp/hye04dde1u-c000/4.jpg",
+        "/products/di-pdp/hye04dde1u-c000/5.jpg",
+        "/products/di-pdp/hye04dde1u-c000/6.jpg",
+        "/products/di-pdp/hye04dde1u-c000/7.jpg",
+        "/products/di-pdp/hye04dde1u-c000/8.jpg",
+        "/products/di-pdp/hye04dde1u-c000/9.jpg",
+        "/products/di-pdp/hye04dde1u-c000/10.jpg",
+        "/products/di-pdp/hye04dde1u-c000/11.jpg",
+        "/products/di-pdp/hye04dde1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_SBG_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E01-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E03-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E04-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DDE1UC000_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DIP0U_C000",
+      "sku": "HYE04DIP0U_C000_TU",
+      "title": "Book: Dior Images – Paolo Roversi",
+      "subtitle": "English Version",
+      "gbpPrice": 100,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DIP0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Brown",
+        "code": "C000",
+        "label": "Brown"
+      },
+      "details": {
+        "paragraphs": [
+          "The poetic atmosphere in Paolo Roversi's delicate images lends a unique style to the Christian Dior models. The celebrated photographer's photos have a lyrical and supernatural quality, revealing the silhouettes of treasured models like Naomi Campbell, Natalia Vodianova, Laetitia Casta, Eva Herzigova and actress Natalie Portman. Behind the official images published in the biggest fashion magazines lie unpublished images from each photo shoot. Handwritten notes from the photographer and his favorite models embellish these pages and the story within them. The text is written by Emanuele Coccia, an Italian philosopher specializing in the status and power of images, while the preface is by Grace Coddington. The combination of these two leading names from the world of fashion contributes to making this book a true collector's item that will appeal to both haute couture and photography enthusiasts."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dip0u-c000/1.jpg",
+        "/products/di-pdp/hye04dip0u-c000/2.jpg",
+        "/products/di-pdp/hye04dip0u-c000/3.jpg",
+        "/products/di-pdp/hye04dip0u-c000/4.jpg",
+        "/products/di-pdp/hye04dip0u-c000/5.jpg",
+        "/products/di-pdp/hye04dip0u-c000/6.jpg",
+        "/products/di-pdp/hye04dip0u-c000/7.jpg",
+        "/products/di-pdp/hye04dip0u-c000/8.jpg",
+        "/products/di-pdp/hye04dip0u-c000/9.jpg",
+        "/products/di-pdp/hye04dip0u-c000/10.jpg",
+        "/products/di-pdp/hye04dip0u-c000/11.jpg",
+        "/products/di-pdp/hye04dip0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP0UC000_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DIP1U_C000",
+      "sku": "HYE04DIP1U_C000_TU",
+      "title": "Book: Dior Images – Paolo Roversi",
+      "subtitle": "French Version",
+      "gbpPrice": 100,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DIP1U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Brown",
+        "code": "C000",
+        "label": "Brown"
+      },
+      "details": {
+        "paragraphs": [
+          "The poetic atmosphere in Paolo Roversi's delicate images lends a unique style to the Christian Dior models. The celebrated photographer's photos have a lyrical and supernatural quality, revealing the silhouettes of treasured models like Naomi Campbell, Natalia Vodianova, Laetitia Casta, Eva Herzigova and actress Natalie Portman. Behind the official images published in the biggest fashion magazines lie unpublished images from each photo shoot. Handwritten notes from the photographer and his favorite models embellish these pages and the story within them. The text is written by Emanuele Coccia, an Italian philosopher specializing in the status and power of images, while the preface is by Grace Coddington. The combination of these two leading names from the world of fashion contributes to making this book a true collector's item that will appeal to both haute couture and photography enthusiasts."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dip1u-c000/1.jpg",
+        "/products/di-pdp/hye04dip1u-c000/2.jpg",
+        "/products/di-pdp/hye04dip1u-c000/3.jpg",
+        "/products/di-pdp/hye04dip1u-c000/4.jpg",
+        "/products/di-pdp/hye04dip1u-c000/5.jpg",
+        "/products/di-pdp/hye04dip1u-c000/6.jpg",
+        "/products/di-pdp/hye04dip1u-c000/7.jpg",
+        "/products/di-pdp/hye04dip1u-c000/8.jpg",
+        "/products/di-pdp/hye04dip1u-c000/9.jpg",
+        "/products/di-pdp/hye04dip1u-c000/10.jpg",
+        "/products/di-pdp/hye04dip1u-c000/11.jpg",
+        "/products/di-pdp/hye04dip1u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DIP1UC000_E14-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04LDS0U_C970",
+      "sku": "HYE04LDS0U_C970_TU",
+      "title": "Book: The Dior Sessions",
+      "subtitle": "English Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04LDS0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C970",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "The Dior Sessions is a book of portraits of famous and anonymous figures by Nikolai von Bismarck, celebrating the contemporary style of Dior Men. Nikolai von Bismarck has captured striking images of Kim Jones creations worn by the likes of Robert Pattinson, David Beckham, Eddie Redmayne, David Bailey, Takashi Murakami, Bella Hadid, Kate Moss and many more. Text by fashion journalist Alexander Fury."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04lds0u-c970/1.jpg",
+        "/products/di-pdp/hye04lds0u-c970/2.jpg",
+        "/products/di-pdp/hye04lds0u-c970/3.jpg",
+        "/products/di-pdp/hye04lds0u-c970/4.jpg",
+        "/products/di-pdp/hye04lds0u-c970/5.jpg",
+        "/products/di-pdp/hye04lds0u-c970/6.jpg",
+        "/products/di-pdp/hye04lds0u-c970/7.jpg",
+        "/products/di-pdp/hye04lds0u-c970/8.jpg",
+        "/products/di-pdp/hye04lds0u-c970/9.jpg",
+        "/products/di-pdp/hye04lds0u-c970/10.jpg",
+        "/products/di-pdp/hye04lds0u-c970/11.jpg",
+        "/products/di-pdp/hye04lds0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_SBG_E05?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E03-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E04-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E05-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E09-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS0UC970_E14-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04LDS1U_C970",
+      "sku": "HYE04LDS1U_C970_TU",
+      "title": "Book: The Dior Sessions",
+      "subtitle": "French Version",
+      "gbpPrice": 110,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04LDS1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Black",
+        "code": "C970",
+        "label": "Black"
+      },
+      "details": {
+        "paragraphs": [
+          "The Dior Sessions is a book of portraits of famous and anonymous figures by Nikolai von Bismarck, celebrating the contemporary style of Dior Men. Nikolai von Bismarck has captured striking images of Kim Jones creations worn by the likes of Robert Pattinson, David Beckham, Eddie Redmayne, David Bailey, Takashi Murakami, Bella Hadid, Kate Moss and many more. Text by fashion journalist Alexander Fury."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04lds1u-c970/1.jpg",
+        "/products/di-pdp/hye04lds1u-c970/2.jpg",
+        "/products/di-pdp/hye04lds1u-c970/3.jpg",
+        "/products/di-pdp/hye04lds1u-c970/4.jpg",
+        "/products/di-pdp/hye04lds1u-c970/5.jpg",
+        "/products/di-pdp/hye04lds1u-c970/6.jpg",
+        "/products/di-pdp/hye04lds1u-c970/7.jpg",
+        "/products/di-pdp/hye04lds1u-c970/8.jpg",
+        "/products/di-pdp/hye04lds1u-c970/9.jpg",
+        "/products/di-pdp/hye04lds1u-c970/10.jpg",
+        "/products/di-pdp/hye04lds1u-c970/11.jpg",
+        "/products/di-pdp/hye04lds1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E05?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E03-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E04-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E05-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04LDS1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DJO0U_C970",
+      "sku": "HYE04DJO0U_C970_TU",
+      "title": "Book: Dior Joaillerie (The A to Z of Victoire de Castellane)",
+      "subtitle": "English Version",
+      "gbpPrice": 160,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DJO0U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior Joaillerie offers readers an immersion into the heart of the work of the creative director, Victoire de Castellane. Drawing its inspiration from a blend of pop culture, plant motifs and couture details, her work reflects a playful world in which diamond bows are reminiscent of untied ribbons, ladybugs are lacquered and rings blossom like flowers. Multicolored opals and sapphires reinvent sea creatures while snakes, salamanders and frogs are made of rubies, sapphires and emeralds. Skulls wear crowns of diamonds and roses are adorned in beautiful ballgowns. This first work devoted to the talent of the Place Vendôme jeweler showcases the savoir-faire and aesthetics of the Dior jewelry collections. The scholarly and poetic text by jewelry historian Michèle Heuzé plunges into the world of French luxury and refinement."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04djo0u-c970/1.jpg",
+        "/products/di-pdp/hye04djo0u-c970/2.jpg",
+        "/products/di-pdp/hye04djo0u-c970/3.jpg",
+        "/products/di-pdp/hye04djo0u-c970/4.jpg",
+        "/products/di-pdp/hye04djo0u-c970/5.jpg",
+        "/products/di-pdp/hye04djo0u-c970/6.jpg",
+        "/products/di-pdp/hye04djo0u-c970/7.jpg",
+        "/products/di-pdp/hye04djo0u-c970/8.jpg",
+        "/products/di-pdp/hye04djo0u-c970/9.jpg",
+        "/products/di-pdp/hye04djo0u-c970/10.jpg",
+        "/products/di-pdp/hye04djo0u-c970/11.jpg",
+        "/products/di-pdp/hye04djo0u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E01-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E05-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E06-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E07-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E13-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO0UC970_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DJO1U_C970",
+      "sku": "HYE04DJO1U_C970_TU",
+      "title": "Book: Dior Joaillerie",
+      "subtitle": "French Version",
+      "gbpPrice": 160,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DJO1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "Dior Joaillerie offers readers an immersion into the heart of the work of the creative director, Victoire de Castellane. Drawing its inspiration from a blend of pop culture, plant motifs and couture details, her work reflects a playful world in which diamond bows are reminiscent of untied ribbons, ladybugs are lacquered and rings blossom like flowers. Multicolored opals and sapphires reinvent sea creatures while snakes, salamanders and frogs are made of rubies, sapphires and emeralds. Skulls wear crowns of diamonds and roses are adorned in beautiful ballgowns. This first work devoted to the talent of the Place Vendôme jeweler showcases the savoir-faire and aesthetics of the Dior jewelry collections. The scholarly and poetic text by jewelry historian Michèle Heuzé plunges into the world of French luxury and refinement."
+        ],
+        "bullets": [
+          "French Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04djo1u-c970/1.jpg",
+        "/products/di-pdp/hye04djo1u-c970/2.jpg",
+        "/products/di-pdp/hye04djo1u-c970/3.jpg",
+        "/products/di-pdp/hye04djo1u-c970/4.jpg",
+        "/products/di-pdp/hye04djo1u-c970/5.jpg",
+        "/products/di-pdp/hye04djo1u-c970/6.jpg",
+        "/products/di-pdp/hye04djo1u-c970/7.jpg",
+        "/products/di-pdp/hye04djo1u-c970/8.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E05?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DJO1UC970_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04DNL0U_C000",
+      "sku": "HYE04DNL0U_C000_TU",
+      "title": "Book: Dior New Looks",
+      "subtitle": "English Version",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04DNL0U_C000",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C000",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "The book pays homage to the outstanding elements of the Dior aesthetic since its debut in 1947, in the form of a collection of a classic and contemporary photographs accompanied by unpublished anecdotes. The pages highlight the most beautiful fashion mood boards from the era of Christian Dior himself, accompanied by various House creations over the decades. Text by Jérôme Gautier."
+        ],
+        "bullets": [
+          "English Version"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04dnl0u-c000/1.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/2.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/3.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/4.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/5.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/6.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/7.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/8.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/9.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/10.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/11.jpg",
+        "/products/di-pdp/hye04dnl0u-c000/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_SBG_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E03-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E08-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04DNL0UC000_E14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYE04CDD1U_C970",
+      "sku": "HYE04CDD1U_C970_TU",
+      "title": "Book: Christian Dior Designer of Dreams, クリスチャン・ディオール、夢のクチュリエ, Exhibition in Japan",
+      "subtitle": "Japanese Version with Booklet in English",
+      "gbpPrice": 45,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYE04CDD1U_C970",
+      "leafId": "di-books",
+      "leafLabel": "Books",
+      "leafLabelKo": "북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-books"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "C970",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "This seminal book retraces the inter-linkages between the House of Dior and Japan in an unprecedented way. Published on the occasion of the exhibition Christian Dior: Designer of Dreams opening December 21, 2022, at the Museum of Contemporary Art Tokyo (MOT), this title chronicles the evolution of the House of Dior from its first collection in 1947 in Paris, when Christian Dior heralded the birth of a new era of elegance with his revolutionary 'New Look,' to the present day. Furthermore, this book underlines the links between the House of Dior and Japan, with a magnificent portfolio of original photographs by the famous Japanese photographer Yuriko Takagi. The book includes new and original texts: a foreword by Motoyuki Oka, Director of the Museum of Contemporary Art in Tokyo, and Pietro Beccari, Chairman and Chief Executive Officer of Christian Dior Couture; an introduction by Florence Müller, curator of the exhibition; contributions by Kazuko Koike, Creative Director; Akiko Fukai, Honorary Curator, The Kyoto Costume Institute; Kaya Tsujita, Fashion Historian, Doctor of History, École des Hautes Études en Sciences Sociales; Vincent Leret, Heritage Manager, Parfums Christian Dior; and Olivier Flaviano, Head of La Galerie Dior."
+        ],
+        "bullets": [
+          "Japanese Version with Booklet in English"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hye04cdd1u-c970/1.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/2.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/3.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/4.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/5.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/6.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/7.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/8.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/9.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/10.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/11.jpg",
+        "/products/di-pdp/hye04cdd1u-c970/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_SBG_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E01-5?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYE04CDD1UC970_E12-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03CCV0U_C970",
+      "sku": "HYA03CCV0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "Ecru Cover with Multicolor Dior Colibri Motif",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03CCV0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "code": "C970"
+      },
+      "details": {
+        "paragraphs": [
+          "As part of a collection inspired by love, Dior Maison offers a graceful new take on the notebook. Made of paper, the notebook is adorned with a multicolor Colibri motif, featuring delicate hummingbirds perched amid bucolic scenes and accented by ethereal bows and the Dior Médaillon, channeling the refined 18th-century rococo aesthetic of Dior salons. An infinitely tender gift, the notebook is ideal to keep notes and sketches and can be coordinated with other pieces from the collection for a quintessential Dior atmosphere."
+        ],
+        "bullets": [
+          "Ecru Cover with Multicolor Dior Colibri Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03ccv0u-c970/1.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/2.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/3.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/4.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/5.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/6.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/7.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/8.jpg",
+        "/products/di-pdp/hya03ccv0u-c970/9.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03CCV0UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03RCG0U_C970",
+      "sku": "HYA03RCG0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "White Cover with Multicolor Dior Arabesque Motif",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03RCG0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "Part of the Dioriviera capsule, the notebook showcases the Dior Arabesque motif drawing inspiration from the work of artist Christian Bérard* with a colorful floral pattern, elevated by Jonathan Anderson's hallmark Dior Médaillon signature. Crafted in paper, the notebook features a white cover printed with mesmerizing bouquets of multicolor flowers. The creation will hold notes or sketches and can be coordinated with other pieces from the Dioriviera collection for an irresistibly joyful atmosphere."
+        ],
+        "bullets": [
+          "White Cover with Multicolor Dior Arabesque Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03rcg0u-c970/1.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/2.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/3.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/4.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/5.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/6.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/7.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/8.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/9.jpg",
+        "/products/di-pdp/hya03rcg0u-c970/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_SBG_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_SBG_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCG0UC970_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03RCC0U_C970",
+      "sku": "HYA03RCC0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "Ecru Cover with Multicolor Brush & Bloom Motif",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03RCC0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "Part of the Dioriviera capsule, the notebook features the Brush & Bloom motif, showcasing an original sketch by Mr. Dior accented by Jonathan Anderson's hallmark Dior Médaillon signature. Crafted in paper, the notebook presents an ecru cover printed with vibrant multicolor flowers and enhanced by the Dior Médaillon signature, channeling the 18th-century rococo refinement of Dior salons. The creation will hold notes or sketches and can be coordinated with other pieces from the Dioriviera collection for an irresistibly joyful atmosphere."
+        ],
+        "bullets": [
+          "Ecru Cover with Multicolor Brush & Bloom Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03rcc0u-c970/1.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/2.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/3.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/4.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/5.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/6.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/7.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/8.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/9.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/10.jpg",
+        "/products/di-pdp/hya03rcc0u-c970/11.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_SBG_E01-17?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_SBG_E08-16?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_SBG_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_SBG_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_SBG_E11-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCC0UC970_E11-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1460_1460781-k001h9sctp-whr.jpg"
+      ]
+    },
+    {
+      "id": "HYA03RCB0U_C970",
+      "sku": "HYA03RCB0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "White Cover with Multicolor Dior Bows Motif",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03RCB0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "Part of the Dioriviera capsule, the notebook presents the Dior Bows motif inspired by the work of artist Christian Bérard* to offer a twist on Jonathan Anderson's signature bow. Crafted in paper, the notebook features a white cover printed with delicate multicolor bows. The creation will hold notes or sketches and can be coordinated with other pieces from the Dioriviera collection for an irresistibly joyful atmosphere."
+        ],
+        "bullets": [
+          "White Cover with Multicolor Dior Bows Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03rcb0u-c970/1.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/2.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/3.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/4.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/5.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/6.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/7.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/8.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/9.jpg",
+        "/products/di-pdp/hya03rcb0u-c970/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RCB0UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03RFC0U_C970",
+      "sku": "HYA03RFC0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "Ecru Cover with Multicolor Revolution Flowers Motif",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03RFC0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "The notebook showcases the Revolution Flowers motif drawing inspiration from an 18th-century embroidery, reimagined through Jonathan Anderson's modern vision, in homage to the history of French embroidery and sartorial traditions. Made in paper, the notebook features an ecru printed cover with delicate multicolor flowers and designs, elevated by the Dior signature. The creation is ideal for jotting down notes and sketches, and it can be coordinated with other Maison pieces for a quintessential Dior atmosphere."
+        ],
+        "bullets": [
+          "Ecru Cover with Multicolor Revolution Flowers Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03rfc0u-c970/1.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/2.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/3.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/4.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/5.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/6.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/7.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/8.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/9.jpg",
+        "/products/di-pdp/hya03rfc0u-c970/10.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_SBG_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03RFC0UC970_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03SWV0U_C600",
+      "sku": "HYA03SWV0U_C600_TU",
+      "title": "Notebook",
+      "subtitle": "Ecru Cover with Green and Blue Lily of the Valley Garden Motif",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03SWV0U_C600",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C600",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "The notebook showcases the Lily of the Valley Garden motif, created by Jonathan Anderson in tribute to Mr. Dior's lucky symbol and celebrating the House's heritage of luck and good fortune. The paper notebook features flowering sprigs of lily of the valley in shades of green and blue and is further enhanced by the Dior Médaillon signature, channeling the refined 18th-century rococo aesthetic of the Dior salons."
+        ],
+        "bullets": [
+          "Ecru Cover with Green and Blue Lily of the Valley Garden Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03swv0u-c600/1.jpg",
+        "/products/di-pdp/hya03swv0u-c600/2.jpg",
+        "/products/di-pdp/hya03swv0u-c600/3.jpg",
+        "/products/di-pdp/hya03swv0u-c600/4.jpg",
+        "/products/di-pdp/hya03swv0u-c600/5.jpg",
+        "/products/di-pdp/hya03swv0u-c600/6.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03SWV0UC600_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03SWV0UC600_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03SWV0UC600_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03SWV0UC600_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03SWV0UC600_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1244_1244028-n80l046yxu-whr.jpg"
+      ]
+    },
+    {
+      "id": "HYA03VHC0U_C970",
+      "sku": "HYA03VHC0U_C970_TU",
+      "title": "Notebook",
+      "subtitle": "White Cover with Multicolor Book Cover Motif",
+      "gbpPrice": 75,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03VHC0U_C970",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Multicolor",
+        "code": "C970",
+        "label": "Multicolor"
+      },
+      "details": {
+        "paragraphs": [
+          "The Book Cover notebook joins Jonathan Anderson's dream library, showcasing a first edition cover of Eric Carle's The Very Hungry Caterpillar™. Made from paper, the white notebook will hold notes or sketches and can be combined with other Book Cover creations for a timeless ode to literature and imagination."
+        ],
+        "bullets": [
+          "White Cover with Multicolor Book Cover Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03vhc0u-c970/1.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/2.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/3.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/4.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/5.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/6.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/7.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/8.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/9.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/10.jpg",
+        "/products/di-pdp/hya03vhc0u-c970/11.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_SBG_E01-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_SBG_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_SBG_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_SBG_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_SBG_E11-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_E01-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_E08-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_E09-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_E10-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03VHC0UC970_E11-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_M_26_2_LOOK_001_E02?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA03TDM0U_C500",
+      "sku": "HYA03TDM0U_C500_TU",
+      "title": "Notebook",
+      "subtitle": "Blue Cover with White Book Cover Motif",
+      "gbpPrice": 75,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA03TDM0U_C500",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "C500",
+        "label": "Blue"
+      },
+      "details": {
+        "paragraphs": [
+          "The Book Cover notebook joins Jonathan Anderson's dream library, showcasing a first edition cover of Jules Verne's Le Tour du Monde en 80 Jours (Around the World in 80 Days). Made from paper, the blue notebook may be used to collect notes or sketches and can be combined with other Book Cover creations for a timeless ode to literature and imagination."
+        ],
+        "bullets": [
+          "Blue Cover with White Book Cover Motif"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya03tdm0u-c500/1.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/2.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/3.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/4.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/5.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/6.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/7.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/8.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/9.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/10.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/11.jpg",
+        "/products/di-pdp/hya03tdm0u-c500/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_SBG_E10-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_SBG_E11-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E01-6?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E03?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E09-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E10-26?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA03TDM0UC500_E11-32?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_M_26_2_LOOK_001_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA02CTJ1U_C800",
+      "sku": "HYA02CTJ1U_C800_TU",
+      "title": "Notebook",
+      "subtitle": "Gray Toile de Jouy",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA02CTJ1U_C800",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Grey",
+        "code": "C800",
+        "label": "Grey"
+      },
+      "details": {
+        "paragraphs": [
+          "Toile de Jouy, the iconic motif that adorned the walls of Mr. Dior's first boutique, is refreshed in the designer's cherished gray for this new series of stationery and office accessories."
+        ],
+        "bullets": [
+          "Gray Toile de Jouy"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya02ctj1u-c800/1.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/2.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/3.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/4.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/5.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/6.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/7.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/8.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/9.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/10.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/11.jpg",
+        "/products/di-pdp/hya02ctj1u-c800/12.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_SBG_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_SBG_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_SBG_E10?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_SBG_E11?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E01-12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E03-6?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E08-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E09-18?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E10-14?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E11-15?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC800_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA02CTJ0U_C500",
+      "sku": "HYA02CTJ0U_C500_TU",
+      "title": "Large Notebook",
+      "subtitle": "Blue Toile de Jouy",
+      "gbpPrice": 80,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA02CTJ0U_C500",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "C500",
+        "label": "Blue"
+      },
+      "details": {
+        "paragraphs": [
+          "Toile de Jouy, the iconic motif that adorned the walls of Mr. Dior's first boutique, is refreshed in the designer's cherished blue for this new series of stationery and office accessories."
+        ],
+        "bullets": [
+          "Blue Toile de Jouy"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya02ctj0u-c500/1.jpg",
+        "/products/di-pdp/hya02ctj0u-c500/2.jpg",
+        "/products/di-pdp/hya02ctj0u-c500/3.jpg",
+        "/products/di-pdp/hya02ctj0u-c500/4.jpg",
+        "/products/di-pdp/hya02ctj0u-c500/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ0UC500_E01-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ0UC500_E03-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ0UC500_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ0UC500_E10-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ0UC500_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "HYA02CTJ1U_C500",
+      "sku": "HYA02CTJ1U_C500_TU",
+      "title": "Notebook",
+      "subtitle": "Blue Toile de Jouy",
+      "gbpPrice": 70,
+      "url": "https://www.dior.com/en_gb/fashion/products/HYA02CTJ1U_C500",
+      "leafId": "di-notebooks",
+      "leafLabel": "Notebooks",
+      "leafLabelKo": "노트북",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-home",
+        "di-objects",
+        "di-notebooks"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "C500",
+        "label": "Blue"
+      },
+      "details": {
+        "paragraphs": [
+          "Toile de Jouy, the iconic motif that adorned the walls of Mr. Dior's first boutique, is refreshed in the designer's cherished blue for this new series of stationery and office accessories."
+        ],
+        "bullets": [
+          "Blue Toile de Jouy"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/hya02ctj1u-c500/1.jpg",
+        "/products/di-pdp/hya02ctj1u-c500/2.jpg",
+        "/products/di-pdp/hya02ctj1u-c500/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC500_E01-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC500_E03-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/HYA02CTJ1UC500_E06-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    }
+  ]
+}

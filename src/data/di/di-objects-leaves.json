@@ -1,0 +1,82 @@
+[
+  {
+    "id": "di-objects-all",
+    "slug": "all-products",
+    "label": "All Objects",
+    "labelKo": "전체",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/all-products",
+    "stage": "5"
+  },
+  {
+    "id": "di-books",
+    "slug": "books",
+    "label": "Books",
+    "labelKo": "북",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/books",
+    "stage": "1"
+  },
+  {
+    "id": "di-notebooks",
+    "slug": "notebooks",
+    "label": "Notebooks",
+    "labelKo": "노트북",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/notebooks",
+    "stage": "1"
+  },
+  {
+    "id": "di-desk-accessories",
+    "slug": "desk-accessories",
+    "label": "Desk Accessories",
+    "labelKo": "데스크 악세서리",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/desk-accessories",
+    "stage": "2"
+  },
+  {
+    "id": "di-paperweights",
+    "slug": "paperweights",
+    "label": "Paperweights",
+    "labelKo": "페이퍼웨이트",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/all-products?f_category=Paperweights",
+    "stage": "2"
+  },
+  {
+    "id": "di-leisure",
+    "slug": "leisure",
+    "label": "Leisure",
+    "labelKo": "레저",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/leisure",
+    "stage": "2"
+  },
+  {
+    "id": "di-candleholders-candles",
+    "slug": "candleholders-candles",
+    "label": "Candleholders & Candles",
+    "labelKo": "캔들홀더 & 캔들",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/candleholders-candles",
+    "stage": "3"
+  },
+  {
+    "id": "di-small-objects",
+    "slug": "small-objects",
+    "label": "Small Objects",
+    "labelKo": "스몰 오브젝트",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/small-objects",
+    "stage": "4"
+  },
+  {
+    "id": "di-trinket-trays",
+    "slug": "trinket-trays",
+    "label": "Trinket Trays",
+    "labelKo": "트링켓 트레이",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/trinket-trays",
+    "stage": "4"
+  },
+  {
+    "id": "di-trays",
+    "slug": "trays",
+    "label": "Trays",
+    "labelKo": "트레이",
+    "url": "https://www.dior.com/en_gb/fashion/maison/objects/trays",
+    "stage": "5"
+  }
+]
