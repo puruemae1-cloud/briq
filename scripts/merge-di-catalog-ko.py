@@ -33,6 +33,7 @@ from ko_qa import en_ratio, is_good_korean  # noqa: E402
 RAW_PATHS = [
     ROOT / "src/data/di/di-tableware-catalog-raw.json",
     ROOT / "src/data/di/di-objects-catalog-raw.json",
+    ROOT / "src/data/di/di-decor-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -52,6 +53,17 @@ OBJECTISH = {
     "di-paperweights",
 }
 
+DECORISH = {
+    "di-decor",
+    "di-decor-all",
+    "di-decorative-pieces",
+    "di-lighting",
+    "di-baskets",
+    "di-wallpapers",
+    "di-vases",
+    "di-furniture",
+}
+
 # Prefer specific Maison leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -68,8 +80,15 @@ LEAF_PREF = [
     "di-trinket-trays",
     "di-paperweights",
     "di-trays",
+    "di-decorative-pieces",
+    "di-vases",
+    "di-lighting",
+    "di-baskets",
+    "di-wallpapers",
+    "di-furniture",
     "di-tableware-all",
     "di-objects-all",
+    "di-decor-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -183,6 +202,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["tableware", "테이블웨어"]
     if any(c in OBJECTISH for c in collections + [leaf]):
         tags += ["objects", "오브젝트"]
+    if any(c in DECORISH for c in collections + [leaf]):
+        tags += ["decor", "데코"]
     return list(dict.fromkeys(tags))
 
 

@@ -820,6 +820,14 @@ export type SubcategoryId =
   | "di-trays"
   | "di-leisure"
   | "di-paperweights"
+  | "di-decor"
+  | "di-decor-all"
+  | "di-decorative-pieces"
+  | "di-lighting"
+  | "di-baskets"
+  | "di-wallpapers"
+  | "di-vases"
+  | "di-furniture"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1014,6 +1022,17 @@ export const DI_OBJECTS_LEAF_IDS: SubcategoryId[] = [
   "di-trays",
   "di-leisure",
   "di-paperweights",
+];
+
+/** Dior Maison — decor leaves (official GB Decor PLPs). */
+export const DI_DECOR_LEAF_IDS: SubcategoryId[] = [
+  "di-decor-all",
+  "di-decorative-pieces",
+  "di-lighting",
+  "di-baskets",
+  "di-wallpapers",
+  "di-vases",
+  "di-furniture",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2356,6 +2375,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TABLEWARE_LEAF_IDS,
     "di-objects",
     ...DI_OBJECTS_LEAF_IDS,
+    "di-decor",
+    ...DI_DECOR_LEAF_IDS,
   ],
   "dior-accessories": [
     "dior-accessories",
@@ -2364,6 +2385,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TABLEWARE_LEAF_IDS,
     "di-objects",
     ...DI_OBJECTS_LEAF_IDS,
+    "di-decor",
+    ...DI_DECOR_LEAF_IDS,
   ],
   "di-home": [
     "di-home",
@@ -2371,6 +2394,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TABLEWARE_LEAF_IDS,
     "di-objects",
     ...DI_OBJECTS_LEAF_IDS,
+    "di-decor",
+    ...DI_DECOR_LEAF_IDS,
   ],
   "di-tableware": ["di-tableware", ...DI_TABLEWARE_LEAF_IDS],
   "di-tableware-all": ["di-tableware-all"],
@@ -2390,6 +2415,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-trays": ["di-trays"],
   "di-leisure": ["di-leisure"],
   "di-paperweights": ["di-paperweights"],
+  "di-decor": ["di-decor", ...DI_DECOR_LEAF_IDS],
+  "di-decor-all": ["di-decor-all"],
+  "di-decorative-pieces": ["di-decorative-pieces"],
+  "di-lighting": ["di-lighting"],
+  "di-baskets": ["di-baskets"],
+  "di-wallpapers": ["di-wallpapers"],
+  "di-vases": ["di-vases"],
+  "di-furniture": ["di-furniture"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -5599,6 +5632,49 @@ export const navCategories: NavCategory[] = [
                     id: "di-paperweights",
                     labelKo: "페이퍼웨이트",
                     href: "/shop?category=accessories&sub=di-paperweights",
+                  },
+                ],
+              },
+              {
+                id: "di-decor",
+                labelKo: "데코",
+                href: "/shop?category=accessories&sub=di-decor",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-decor-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-decor-all",
+                  },
+                  {
+                    id: "di-decorative-pieces",
+                    labelKo: "데코러티브 피스",
+                    href: "/shop?category=accessories&sub=di-decorative-pieces",
+                  },
+                  {
+                    id: "di-lighting",
+                    labelKo: "조명",
+                    href: "/shop?category=accessories&sub=di-lighting",
+                  },
+                  {
+                    id: "di-baskets",
+                    labelKo: "바스켓",
+                    href: "/shop?category=accessories&sub=di-baskets",
+                  },
+                  {
+                    id: "di-wallpapers",
+                    labelKo: "월페이퍼",
+                    href: "/shop?category=accessories&sub=di-wallpapers",
+                  },
+                  {
+                    id: "di-vases",
+                    labelKo: "화병",
+                    href: "/shop?category=accessories&sub=di-vases",
+                  },
+                  {
+                    id: "di-furniture",
+                    labelKo: "가구",
+                    href: "/shop?category=accessories&sub=di-furniture",
                   },
                 ],
               },

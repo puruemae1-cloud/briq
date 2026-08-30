@@ -163,11 +163,82 @@ OBJECTS_LEAVES: list[dict[str, str]] = [
     },
 ]
 
+# Official Decor leaves (Maison → Decor).
+# Stages (pause ~5 min between for machine stability):
+#   1 — Decorative Pieces + Vases
+#   2 — Lighting + Baskets + Wallpapers
+#   3 — Furniture + All Decor gaps
+DECOR_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-decor-all",
+        "slug": "all-products",
+        "label": "All Products",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/all-products",
+        "stage": "3",
+    },
+    {
+        "id": "di-decorative-pieces",
+        "slug": "decorative-pieces",
+        "label": "Decorative Pieces",
+        "labelKo": "데코러티브 피스",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/decorative-pieces",
+        "stage": "1",
+    },
+    {
+        "id": "di-vases",
+        "slug": "vases",
+        "label": "Vases",
+        "labelKo": "화병",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/vases",
+        "stage": "1",
+    },
+    {
+        "id": "di-lighting",
+        "slug": "lighting",
+        "label": "Lighting",
+        "labelKo": "조명",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/lighting",
+        "stage": "2",
+    },
+    {
+        "id": "di-baskets",
+        "slug": "baskets",
+        "label": "Baskets",
+        "labelKo": "바스켓",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/baskets",
+        "stage": "2",
+    },
+    {
+        "id": "di-wallpapers",
+        "slug": "wallpapers",
+        "label": "Wallpapers",
+        "labelKo": "월페이퍼",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/wallpapers",
+        "stage": "2",
+    },
+    {
+        "id": "di-furniture",
+        "slug": "furniture",
+        "label": "Furniture",
+        "labelKo": "가구",
+        "url": f"{BASE}/{LANG}/fashion/maison/decor/furniture",
+        "stage": "3",
+    },
+]
+
 PARENT_COLS_OBJECTS = [
     "dior",
     "dior-accessories",
     "di-home",
     "di-objects",
+]
+
+PARENT_COLS_DECOR = [
+    "dior",
+    "dior-accessories",
+    "di-home",
+    "di-decor",
 ]
 
 PARENT_COLS = [
