@@ -36,6 +36,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-decor-catalog-raw.json",
     ROOT / "src/data/di/di-textile-catalog-raw.json",
     ROOT / "src/data/di/di-jewelry-catalog-raw.json",
+    ROOT / "src/data/di/di-timepieces-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -84,6 +85,13 @@ JEWELRYISH = {
     "di-necklaces",
 }
 
+TIMEPIECEISH = {
+    "dior-watches",
+    "di-timepieces-all",
+    "di-la-d-de-dior",
+    "di-straps",
+}
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -114,11 +122,14 @@ LEAF_PREF = [
     "di-bracelets",
     "di-rings",
     "di-necklaces",
+    "di-la-d-de-dior",
+    "di-straps",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",
     "di-textile-all",
     "di-jewelry-all",
+    "di-timepieces-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -229,8 +240,10 @@ def translate(text: str) -> str:
 def tags_for(collections: list[str], leaf: str) -> list[str]:
     tags = ["dior", "디올"]
     cols = collections + [leaf]
-    if any(c in JEWELRYISH for c in cols):
-        tags += ["jewelry", "jewellery", "쥬얼리", "타임피스"]
+    if any(c in TIMEPIECEISH for c in cols):
+        tags += ["watches", "timepieces", "시계", "타임피스"]
+    elif any(c in JEWELRYISH for c in cols):
+        tags += ["jewelry", "jewellery", "쥬얼리"]
     else:
         tags += ["maison"]
     if any(
@@ -272,6 +285,11 @@ def refresh_existing(existing: dict, row: dict) -> dict:
     p["gbpPrice"] = gbp_f
     p["diCollections"] = collections
     p["subcategory"] = leaf
+    p["category"] = (
+        "watches"
+        if any(c in TIMEPIECEISH for c in collections + [leaf])
+        else p.get("category") or "accessories"
+    )
     p["tags"] = tags_for(collections, leaf)
     p["sourceUrl"] = row.get("url") or p.get("sourceUrl") or ""
     if p.get("variants"):
@@ -400,7 +418,11 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "name": title_en,
         "nameKo": title_ko,
         "brand": "Dior",
-        "category": "accessories",
+        "category": (
+            "watches"
+            if any(c in TIMEPIECEISH for c in collections + [leaf])
+            else "accessories"
+        ),
         "subcategory": leaf,
         "diCollections": collections,
         "tags": tags_for(collections, leaf),

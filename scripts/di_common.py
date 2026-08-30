@@ -343,6 +343,41 @@ PARENT_COLS_JEWELRY = [
     "di-jewelry-timepieces",
 ]
 
+# Official Timepieces leaves (Jewelry & Timepieces → Timepieces by Collection).
+# Shop nav: Watches → Dior. Single run (~26 SKUs).
+TIMEPIECE_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-timepieces-all",
+        "slug": "all-pieces",
+        "label": "All Pieces",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/timepieces-by-collection/all-pieces",
+        "stage": "1",
+    },
+    {
+        "id": "di-la-d-de-dior",
+        "slug": "la-d-de-dior",
+        "label": "La D de Dior",
+        "labelKo": "라 D 드 디올",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/timepieces-by-collection/la-d-de-dior",
+        "stage": "1",
+    },
+    {
+        "id": "di-straps",
+        "slug": "straps",
+        "label": "Straps",
+        "labelKo": "스트랩",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/timepieces-by-collection/straps",
+        "stage": "1",
+    },
+]
+
+PARENT_COLS_TIMEPIECE = [
+    "dior",
+    "dior-watches",
+]
+
+
 PARENT_COLS = [
     "dior",
     "dior-accessories",

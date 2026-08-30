@@ -8,6 +8,7 @@ export type BrandKey =
   | "burberry"
   | "chanel"
   | "chanel-watches"
+  | "dior-watches"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -143,6 +144,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/rot-acc-3.jpg",
     ],
   },
+  "dior-watches": {
+    key: "dior-watches",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    images: [
+      "/banners/rot-acc-1.jpg",
+      "/banners/rot-acc-2.jpg",
+      "/banners/rot-acc-3.jpg",
+    ],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -239,6 +251,10 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-bracelets": "dior",
   "di-rings": "dior",
   "di-necklaces": "dior",
+  "dior-watches": "dior-watches",
+  "di-timepieces-all": "dior-watches",
+  "di-la-d-de-dior": "dior-watches",
+  "di-straps": "dior-watches",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

@@ -840,6 +840,10 @@ export type SubcategoryId =
   | "di-bracelets"
   | "di-rings"
   | "di-necklaces"
+  | "dior-watches"
+  | "di-timepieces-all"
+  | "di-la-d-de-dior"
+  | "di-straps"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1064,6 +1068,14 @@ export const DI_JEWELRY_LEAF_IDS: SubcategoryId[] = [
   "di-rings",
   "di-necklaces",
 ];
+
+/** Dior Watches — timepieces-by-collection leaves (official GB). */
+export const DI_TIMEPIECE_LEAF_IDS: SubcategoryId[] = [
+  "di-timepieces-all",
+  "di-la-d-de-dior",
+  "di-straps",
+];
+
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -2478,6 +2490,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-bracelets": ["di-bracelets"],
   "di-rings": ["di-rings"],
   "di-necklaces": ["di-necklaces"],
+  "dior-watches": ["dior-watches", ...DI_TIMEPIECE_LEAF_IDS],
+  "di-timepieces-all": ["di-timepieces-all"],
+  "di-la-d-de-dior": ["di-la-d-de-dior"],
+  "di-straps": ["di-straps"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -3997,6 +4013,31 @@ export const navCategories: NavCategory[] = [
             id: "ch-watches-code-coco",
             labelKo: "코드 코코",
             href: "/shop?category=watches&sub=ch-watches-code-coco",
+            navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "dior-watches",
+        labelKo: "디올",
+        href: "/shop?category=watches&sub=dior-watches",
+        children: [
+          {
+            id: "di-timepieces-all",
+            labelKo: "전체",
+            href: "/shop?category=watches&sub=di-timepieces-all",
+            navLeaf: true,
+          },
+          {
+            id: "di-la-d-de-dior",
+            labelKo: "라 D 드 디올",
+            href: "/shop?category=watches&sub=di-la-d-de-dior",
+            navLeaf: true,
+          },
+          {
+            id: "di-straps",
+            labelKo: "스트랩",
+            href: "/shop?category=watches&sub=di-straps",
             navLeaf: true,
           },
         ],
