@@ -845,7 +845,12 @@ def main() -> None:
         + ",\n".join(chunks)
         + "\n] as unknown as Product[];\n"
     )
-    OUT_PATH.write_text(out)
+    OUT_PATH.write_text(
+        "/** Auto-generated Burberry catalogue — do not edit by hand. */\n"
+        'import type { Product } from "@/data/products";\n'
+        'import data from "./bb-catalog.json";\n\n'
+        "export const bbCatalogProducts = data as unknown as Product[];\n"
+    )
     OUT_JSON.write_text(json.dumps(briq, ensure_ascii=False, indent=2) + "\n")
     print(f"Wrote {OUT_PATH} styles={len(briq)} colourways={len(products)}")
     print(f"Wrote {OUT_JSON}", flush=True)
