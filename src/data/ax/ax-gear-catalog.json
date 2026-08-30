@@ -15883,17 +15883,17 @@
     "nameKo": "Norvan 7 Vest 남성용",
     "brand": "아크테릭스",
     "price": 367000,
-    "category": "bags",
-    "subcategory": "ax-bags-mens",
+    "category": "accessories",
+    "subcategory": "ax-climbing-mens",
     "axCollections": [
-      "ax-bags-mens"
+      "ax-climbing-mens"
     ],
     "tags": [
       "arcteryx",
       "아크테릭스",
-      "bags",
-      "ax-bags-mens",
-      "mens"
+      "mens",
+      "climbing-gear",
+      "ax-climbing-mens"
     ],
     "descriptionKo": "가볍고 유선형의 조끼는 트레일 러닝과 하이킹을 위한 장비와 수분 공급 장치를 담고 있습니다.",
     "image": "/products/axg-pdp/X000006747/black/1.jpg",
@@ -16016,7 +16016,7 @@
         "colorNameKo": "블랙",
         "size": "S",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       },
       {
@@ -16043,7 +16043,7 @@
         "colorNameKo": "블랙",
         "size": "M",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       },
       {
@@ -16070,7 +16070,7 @@
         "colorNameKo": "블랙",
         "size": "L",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       },
       {
@@ -16097,7 +16097,7 @@
         "colorNameKo": "Mantis",
         "size": "S",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       },
       {
@@ -16124,7 +16124,7 @@
         "colorNameKo": "Mantis",
         "size": "M",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       },
       {
@@ -16151,7 +16151,7 @@
         "colorNameKo": "Mantis",
         "size": "L",
         "axCollections": [
-          "ax-bags-mens"
+          "ax-climbing-mens"
         ]
       }
     ],
@@ -17004,17 +17004,17 @@
     "nameKo": "Norvan 7 Vest 여성용",
     "brand": "아크테릭스",
     "price": 367000,
-    "category": "bags",
-    "subcategory": "ax-bags-womens",
+    "category": "accessories",
+    "subcategory": "ax-climbing-womens",
     "axCollections": [
-      "ax-bags-womens"
+      "ax-climbing-womens"
     ],
     "tags": [
       "arcteryx",
       "아크테릭스",
-      "bags",
-      "ax-bags-womens",
-      "womens"
+      "womens",
+      "climbing-gear",
+      "ax-climbing-womens"
     ],
     "descriptionKo": "가볍고 유선형의 조끼는 트레일 러닝과 하이킹을 위한 장비와 수분 공급 장치를 담고 있습니다.",
     "image": "/products/axg-pdp/X000006803/mantis/1.jpg",
@@ -17137,7 +17137,7 @@
         "colorNameKo": "Mantis",
         "size": "S",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       },
       {
@@ -17164,7 +17164,7 @@
         "colorNameKo": "Mantis",
         "size": "M",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       },
       {
@@ -17191,7 +17191,7 @@
         "colorNameKo": "Mantis",
         "size": "L",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       },
       {
@@ -17218,7 +17218,7 @@
         "colorNameKo": "블랙",
         "size": "S",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       },
       {
@@ -17245,7 +17245,7 @@
         "colorNameKo": "블랙",
         "size": "M",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       },
       {
@@ -17272,7 +17272,7 @@
         "colorNameKo": "블랙",
         "size": "L",
         "axCollections": [
-          "ax-bags-womens"
+          "ax-climbing-womens"
         ]
       }
     ],
@@ -18805,19 +18805,19 @@
     "nameKo": "Ion Chalk Bucket",
     "brand": "아크테릭스",
     "price": 193000,
-    "category": "bags",
-    "subcategory": "ax-bags-womens",
+    "category": "accessories",
+    "subcategory": "ax-climbing-womens",
     "axCollections": [
-      "ax-bags-womens",
-      "ax-bags-mens"
+      "ax-climbing-womens",
+      "ax-climbing-mens"
     ],
     "tags": [
       "arcteryx",
       "아크테릭스",
-      "bags",
-      "ax-bags-womens",
-      "ax-bags-mens",
-      "unisex"
+      "unisex",
+      "climbing-gear",
+      "ax-climbing-womens",
+      "ax-climbing-mens"
     ],
     "descriptionKo": "대형, 내후성, 누수 방지, 접근이 용이한 초크 버킷.",
     "image": "/products/axg-pdp/X000010363/black/1.jpg",
@@ -18949,8 +18949,8 @@
         "colorNameKo": "블랙",
         "size": "NA",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       },
       {
@@ -18978,8 +18978,8 @@
         "colorNameKo": "Stone Red",
         "size": "NA",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       }
     ],
@@ -19013,19 +19013,19 @@
     "nameKo": "Ion SL Chalkbag",
     "brand": "아크테릭스",
     "price": 132000,
-    "category": "bags",
-    "subcategory": "ax-bags-womens",
+    "category": "accessories",
+    "subcategory": "ax-climbing-womens",
     "axCollections": [
-      "ax-bags-womens",
-      "ax-bags-mens"
+      "ax-climbing-womens",
+      "ax-climbing-mens"
     ],
     "tags": [
       "arcteryx",
       "아크테릭스",
-      "bags",
-      "ax-bags-womens",
-      "ax-bags-mens",
-      "unisex"
+      "unisex",
+      "climbing-gear",
+      "ax-climbing-womens",
+      "ax-climbing-mens"
     ],
     "descriptionKo": "쉽게 접근할 수 있고 지속적인 신뢰성을 갖도록 설계된 가볍고 내구성이 뛰어난 초크 백입니다. 이 제품은 이전에는 이온 경량 초크백이었습니다.",
     "image": "/products/axg-pdp/X000010364/24k-black/1.jpg",
@@ -19145,8 +19145,8 @@
         "colorNameKo": "24K Black",
         "size": "M",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       },
       {
@@ -19172,8 +19172,8 @@
         "colorNameKo": "24K Black",
         "size": "L",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       },
       {
@@ -19199,8 +19199,8 @@
         "colorNameKo": "Reef",
         "size": "M",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       },
       {
@@ -19226,8 +19226,8 @@
         "colorNameKo": "Reef",
         "size": "L",
         "axCollections": [
-          "ax-bags-womens",
-          "ax-bags-mens"
+          "ax-climbing-womens",
+          "ax-climbing-mens"
         ]
       }
     ]

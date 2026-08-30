@@ -7,6 +7,7 @@ Writes:
 from __future__ import annotations
 
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -108,6 +109,19 @@ def is_harness(name: str | None) -> bool:
     return "harness" in (name or "").lower()
 
 
+def is_climbing_product(name: str | None, *, source_category: str = "") -> bool:
+    """Harnesses, chalk, and pack-vests (e.g. Norvan) → climbing gear, not bags."""
+    n = (name or "").lower()
+    if source_category == "climbing-gear":
+        return True
+    if "harness" in n:
+        return True
+    # Running / hydration vests live under Packs on Arc'teryx but are not bags.
+    if re.search(r"\bvest\b", n):
+        return True
+    return False
+
+
 def collections_for(kind: str, gender: str) -> list[str]:
     if kind == "accessories":
         if gender == "mens":
@@ -121,7 +135,7 @@ def collections_for(kind: str, gender: str) -> list[str]:
         if gender == "womens":
             return ["ax-climbing-womens"]
         return ["ax-climbing-womens", "ax-climbing-mens"]
-    # packs (+ non-harness climbing gear like chalk bags) → bags
+    # packs → bags
     if gender == "mens":
         return ["ax-bags-mens"]
     if gender == "womens":
@@ -135,8 +149,8 @@ def main() -> None:
         feed_map.update(feed_by_id(g))
         time.sleep(0.2)
 
-    # accessories → accessories; packs → bags; climbing harness → climbing gear
-    # (chalk bags etc. stay under bags)
+    # accessories → accessories; packs → bags (except vests);
+    # climbing-gear PLP → climbing; harnesses/vests always climbing
     sources = [
         ("accessories", "accessories"),
         ("packs", "bags"),
@@ -180,9 +194,8 @@ def main() -> None:
             slug = d.get("slug") or feed_item.get("slug") or ""
             name = d.get("title") or feed_item.get("name") or pid
             kind = default_kind
-            if br_cat == "climbing-gear" and not is_harness(str(name)):
-                # chalk bags / buckets remain in bags category
-                kind = "bags"
+            if is_climbing_product(str(name), source_category=br_cat):
+                kind = "climbing"
             products.append(
                 {
                     "id": pid,
