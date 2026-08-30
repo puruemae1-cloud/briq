@@ -117,6 +117,8 @@ def main() -> None:
     run("build-ax-apparel-catalog.py")
     run("build-ax-catalog.py")
     run("build-ax-gear-catalog.py")
+    # Ensure gear size charts survive rebuilds / partial image skips.
+    run("patch-ax-gear-size-charts.py")
     # Hard-fail on leftover English in footwear PDP copy (the live "신발 제작" bug class).
     import json as _json
 

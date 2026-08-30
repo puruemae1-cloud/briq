@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_order import sort_ax_sizes  # noqa: E402
+from ax_gear_size_charts import chart_for_gear_product  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-gear-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-gear-pdp-cache.json"
@@ -261,6 +262,13 @@ def main() -> None:
             sizes = ["OS"]
         sizes = sort_ax_sizes(sizes)
 
+        chart = chart_for_gear_product(
+            name=name,
+            gender=gender,
+            sizes=sizes,
+            sizing_url=((pdp.get("sizingChart") or {}).get("url")),
+        )
+
         variants_blocks: list[str] = []
         all_images: list[str] = []
         lead_image = ""
@@ -385,6 +393,8 @@ def main() -> None:
         ]
         if badge:
             block.append(f"    badge: {js_str(badge)},")
+        if chart:
+            block.append(f"    sizeChart: {js_json(chart)},")
         block += [
             f"    gbpPrice: {sale_gbp},",
         ]
