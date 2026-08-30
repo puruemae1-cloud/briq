@@ -106,6 +106,9 @@ export type SubcategoryId =
   | "arcteryx-accessories"
   | "ax-acc-womens"
   | "ax-acc-mens"
+  | "ax-climbing-gear"
+  | "ax-climbing-womens"
+  | "ax-climbing-mens"
   | "umbrellas"
   | "london-undercover"
   | "lu-auto-compact"
@@ -2776,9 +2779,17 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ax-outlet": ["ax-outlet-womens", "ax-outlet-mens"],
   "ax-outlet-womens": ["ax-outlet-womens"],
   "ax-outlet-mens": ["ax-outlet-mens"],
-  "arcteryx-accessories": ["ax-acc-womens", "ax-acc-mens"],
+  "arcteryx-accessories": [
+    "ax-acc-womens",
+    "ax-acc-mens",
+    "ax-climbing-womens",
+    "ax-climbing-mens",
+  ],
   "ax-acc-womens": ["ax-acc-womens"],
   "ax-acc-mens": ["ax-acc-mens"],
+  "ax-climbing-gear": ["ax-climbing-womens", "ax-climbing-mens"],
+  "ax-climbing-womens": ["ax-climbing-womens"],
+  "ax-climbing-mens": ["ax-climbing-mens"],
   "umbrellas": ["lu-auto-compact", "lu-telescopic", "lu-full-length"],
   "london-undercover": [
     "lu-auto-compact",
@@ -6282,6 +6293,25 @@ export const navCategories: NavCategory[] = [
             labelKo: "남성용",
             href: "/shop?category=accessories&sub=ax-acc-mens",
             navLeaf: true,
+          },
+          {
+            id: "ax-climbing-gear",
+            labelKo: "클라이밍기어",
+            href: "/shop?category=accessories&sub=ax-climbing-gear",
+            children: [
+              {
+                id: "ax-climbing-womens",
+                labelKo: "여성용",
+                href: "/shop?category=accessories&sub=ax-climbing-womens",
+                navLeaf: true,
+              },
+              {
+                id: "ax-climbing-mens",
+                labelKo: "남성용",
+                href: "/shop?category=accessories&sub=ax-climbing-mens",
+                navLeaf: true,
+              },
+            ],
           },
         ],
       },

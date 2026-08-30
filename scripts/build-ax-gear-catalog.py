@@ -216,14 +216,23 @@ def main() -> None:
         price = gbp_to_krw(sale_gbp)
         compare = gbp_to_krw(list_gbp) if list_gbp and list_gbp > sale_gbp + 0.5 else None
 
-        category = "accessories" if kind == "accessories" else "bags"
-        tag_kind = "accessories" if kind == "accessories" else "bags"
+        category = {
+            "accessories": "accessories",
+            "climbing": "accessories",
+            "bags": "bags",
+        }.get(kind, "bags")
+        tag_kind = {
+            "accessories": "accessories",
+            "climbing": "climbing-gear",
+            "bags": "bags",
+        }.get(kind, "bags")
         if not cols:
-            cols = (
-                ["ax-acc-womens", "ax-acc-mens"]
-                if kind == "accessories"
-                else ["ax-bags-womens", "ax-bags-mens"]
-            )
+            if kind == "accessories":
+                cols = ["ax-acc-womens", "ax-acc-mens"]
+            elif kind == "climbing":
+                cols = ["ax-climbing-womens", "ax-climbing-mens"]
+            else:
+                cols = ["ax-bags-womens", "ax-bags-mens"]
         sub = cols[0]
 
         pdp_variants = pdp.get("variants") or []

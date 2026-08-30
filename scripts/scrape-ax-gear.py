@@ -104,6 +104,10 @@ def gender_norm(raw: str | None) -> str:
     return "unisex"
 
 
+def is_harness(name: str | None) -> bool:
+    return "harness" in (name or "").lower()
+
+
 def collections_for(kind: str, gender: str) -> list[str]:
     if kind == "accessories":
         if gender == "mens":
@@ -111,7 +115,13 @@ def collections_for(kind: str, gender: str) -> list[str]:
         if gender == "womens":
             return ["ax-acc-womens"]
         return ["ax-acc-womens", "ax-acc-mens"]
-    # packs + climbing-gear → bags
+    if kind == "climbing":
+        if gender == "mens":
+            return ["ax-climbing-mens"]
+        if gender == "womens":
+            return ["ax-climbing-womens"]
+        return ["ax-climbing-womens", "ax-climbing-mens"]
+    # packs (+ non-harness climbing gear like chalk bags) → bags
     if gender == "mens":
         return ["ax-bags-mens"]
     if gender == "womens":
@@ -125,16 +135,17 @@ def main() -> None:
         feed_map.update(feed_by_id(g))
         time.sleep(0.2)
 
-    # accessories → accessories; packs + climbing-gear → bags (dedupe packs first)
+    # accessories → accessories; packs → bags; climbing harness → climbing gear
+    # (chalk bags etc. stay under bags)
     sources = [
         ("accessories", "accessories"),
         ("packs", "bags"),
-        ("climbing-gear", "bags"),
+        ("climbing-gear", "climbing"),
     ]
     products: list[dict] = []
     seen: set[str] = set()
 
-    for br_cat, kind in sources:
+    for br_cat, default_kind in sources:
         docs = bloomreach_category(br_cat)
         print(f"{br_cat}: {len(docs)} docs")
         for d in docs:
@@ -168,6 +179,10 @@ def main() -> None:
                 list_p = feed_item.get("price") or feed_item.get("minPrice") or list_p
             slug = d.get("slug") or feed_item.get("slug") or ""
             name = d.get("title") or feed_item.get("name") or pid
+            kind = default_kind
+            if br_cat == "climbing-gear" and not is_harness(str(name)):
+                # chalk bags / buckets remain in bags category
+                kind = "bags"
             products.append(
                 {
                     "id": pid,
