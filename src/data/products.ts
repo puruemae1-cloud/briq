@@ -437,7 +437,9 @@ export function getProductsByCategory(category?: string, sub?: string) {
         c === "gc-men-gifts" ||
         c.startsWith("gc-men-gifts-"),
     ) ?? false;
-  if (category && category !== "all" && !isPsGifts && !isGcGifts) {
+  // Dior Icons hub mixes jewellery + timepieces on the official PLP.
+  const isDiDiorIcons = sub === "di-dior-icons";
+  if (category && category !== "all" && !isPsGifts && !isGcGifts && !isDiDiorIcons) {
     list = list.filter((p) => p.category === category);
   }
   if (expanded) {

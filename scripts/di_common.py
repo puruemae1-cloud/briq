@@ -343,6 +343,24 @@ PARENT_COLS_JEWELRY = [
     "di-jewelry-timepieces",
 ]
 
+# Official Dior Icons hub (Jewelry & Timepieces → Dior Icons). ~14 curated SKUs.
+ICONS_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-dior-icons",
+        "slug": "dior-icons",
+        "label": "Dior Icons",
+        "labelKo": "디올 아이콘즈",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/dior-icons",
+        "stage": "1",
+    },
+]
+
+PARENT_COLS_ICONS = [
+    "dior",
+    "dior-accessories",
+    "di-jewelry-timepieces",
+]
+
 # Official Timepieces leaves (Jewelry & Timepieces → Timepieces by Collection).
 # Shop nav: Watches → Dior. Single run (~26 SKUs).
 TIMEPIECE_LEAVES: list[dict[str, str]] = [

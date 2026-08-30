@@ -840,6 +840,7 @@ export type SubcategoryId =
   | "di-bracelets"
   | "di-rings"
   | "di-necklaces"
+  | "di-dior-icons"
   | "dior-watches"
   | "di-timepieces-all"
   | "di-la-d-de-dior"
@@ -1060,13 +1061,14 @@ export const DI_TEXTILE_LEAF_IDS: SubcategoryId[] = [
   "di-throws",
 ];
 
-/** Dior Jewelry & Timepieces — jewelry-by-category leaves (official GB). */
+/** Dior Jewelry & Timepieces — jewelry-by-category + Dior Icons leaves (official GB). */
 export const DI_JEWELRY_LEAF_IDS: SubcategoryId[] = [
   "di-jewelry-all",
   "di-earrings",
   "di-bracelets",
   "di-rings",
   "di-necklaces",
+  "di-dior-icons",
 ];
 
 /** Dior Watches — timepieces-by-collection leaves (official GB). */
@@ -2490,6 +2492,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-bracelets": ["di-bracelets"],
   "di-rings": ["di-rings"],
   "di-necklaces": ["di-necklaces"],
+  "di-dior-icons": ["di-dior-icons"],
   "dior-watches": ["dior-watches", ...DI_TIMEPIECE_LEAF_IDS],
   "di-timepieces-all": ["di-timepieces-all"],
   "di-la-d-de-dior": ["di-la-d-de-dior"],
@@ -5839,6 +5842,11 @@ export const navCategories: NavCategory[] = [
                 id: "di-necklaces",
                 labelKo: "네크리스",
                 href: "/shop?category=accessories&sub=di-necklaces",
+              },
+              {
+                id: "di-dior-icons",
+                labelKo: "디올 아이콘즈",
+                href: "/shop?category=accessories&sub=di-dior-icons",
               },
             ],
           },

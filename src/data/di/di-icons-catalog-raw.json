@@ -1,0 +1,610 @@
+{
+  "scrapedAt": "2026-08-30T22:51:29.566326+00:00",
+  "hub": "https://www.dior.com/en_gb/fashion/jewelry-timepieces/dior-icons",
+  "leaves": [
+    {
+      "id": "di-dior-icons",
+      "slug": "dior-icons",
+      "label": "Dior Icons",
+      "labelKo": "디올 아이콘즈",
+      "url": "https://www.dior.com/en_gb/fashion/jewelry-timepieces/dior-icons",
+      "stage": "1"
+    }
+  ],
+  "products": [
+    {
+      "id": "JRDV95005_0000",
+      "sku": "JRDV95005_0000_U",
+      "title": "Rose des Vents Necklace",
+      "subtitle": "Yellow Gold, Diamond and Mother-of-Pearl",
+      "gbpPrice": 2350,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95005_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-necklaces",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "Victoire de Castellane reinterprets Mr. Dior's lucky star in the form of a wind rose, an eight-pointed star design. A ring of beading encircles the motif, which turns to switch between the gemstone or wind rose sides."
+        ],
+        "bullets": [
+          "Yellow Gold, Diamond and Mother-of-Pearl"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95005-0000/1.jpg",
+        "/products/di-pdp/jrdv95005-0000/2.jpg",
+        "/products/di-pdp/jrdv95005-0000/3.jpg",
+        "/products/di-pdp/jrdv95005-0000/4.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95005_SBG_E01-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95005_SBG_E02-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95005_SBG_E03-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1302_1302666-6ihk4nroi2-whr.jpg"
+      ]
+    },
+    {
+      "id": "JRDV95245_0000",
+      "sku": "JRDV95245_0000_U",
+      "title": "Étoile des Vents Necklace",
+      "subtitle": "Pink Gold and Diamond",
+      "gbpPrice": 2250,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95245_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-necklaces",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "Étoile des Vents opens a refined new chapter for the collection with a reinterpretation of the iconic Rose des Vents motif without its gemstones and incorporating Mr. Dior's symbolic lucky wind rose star. Made in pink gold set with a precious diamond, the Étoile des Vents necklace offers contemporary appeal by virtue of its refined design. It pairs ideally with other necklaces from the Rose des Vents collection."
+        ],
+        "bullets": [
+          "Pink Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95245-0000/1.jpg",
+        "/products/di-pdp/jrdv95245-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95245_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95245_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JRDV95247_0000",
+      "sku": "JRDV95247_0000_U",
+      "title": "Étoile des Vents Bracelet",
+      "subtitle": "Pink Gold and Diamond",
+      "gbpPrice": 2100,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95247_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-bracelets",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "Étoile des Vents opens a refined new chapter for the collection with a reinterpretation of the iconic Rose des Vents motif without its gemstones and incorporating Mr. Dior's symbolic lucky wind rose star. Made in pink gold set with a precious diamond, the Étoile des Vents bracelet offers contemporary appeal by virtue of its refined design. It pairs ideally with other creations from the Rose des Vents collection."
+        ],
+        "bullets": [
+          "Pink Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95247-0000/1.jpg",
+        "/products/di-pdp/jrdv95247-0000/2.jpg",
+        "/products/di-pdp/jrdv95247-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95247_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_JT_RDV_LOOK_101_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1336_1336458-2od02x46pd-whr.jpg"
+      ]
+    },
+    {
+      "id": "JOUI95001_0000",
+      "sku": "JOUI95001_0000",
+      "title": "Dioramour Ring",
+      "subtitle": "Yellow Gold and Diamond",
+      "gbpPrice": 1350,
+      "url": "https://www.dior.com/en_gb/fashion/products/JOUI95001_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-rings",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "As if drawn by hand, the curves of the iconic pieces in the Dioramour collection create joyful, graphic designs. Each curl twists like a strand of couture thread in a nod to the ateliers' savoir-faire. O, U, I… Three evocative letters, topped with a diamond, sparkle like a tender declaration wrapped delicately around the finger."
+        ],
+        "bullets": [
+          "Yellow Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/joui95001-0000/1.jpg",
+        "/products/di-pdp/joui95001-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JOUI95001_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JOUI95001_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JMYD95034_0000",
+      "sku": "JMYD95034_0000",
+      "title": "My Dior Bracelet",
+      "subtitle": "Pink and White Gold",
+      "gbpPrice": 9050,
+      "url": "https://www.dior.com/en_gb/fashion/products/JMYD95034_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-bracelets",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "The My Dior collection by Victoire de Castellane is reinvented with a series of infinitely precious jewelry pieces. In an ode to the art of detail, a tangle of golden threads is woven together like meticulously interlaced sprigs of straw into a subtle mesh, revealing the iconic Cannage, accented by a strip of shiny gold. The craftsmanship is an homage to Dior's refined style. The monochrome designs of the My Dior line play with the concepts of contrast, brilliance and sleek graphics in a tribute to Dior's timeless elegance. Featuring pink gold, yellow gold or white gold, the pieces are also occasionally adorned with diamonds."
+        ],
+        "bullets": [
+          "Pink and White Gold"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jmyd95034-0000/1.jpg",
+        "/products/di-pdp/jmyd95034-0000/2.jpg",
+        "/products/di-pdp/jmyd95034-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95034_SBG_E01-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95034_SBG_E02-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_JT_MYD_LOOK_055_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JRDV95083_0000",
+      "sku": "JRDV95083_0000_U",
+      "title": "Small Rose des Vents Single Earring",
+      "subtitle": "Yellow Gold and Diamond",
+      "gbpPrice": 1100,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95083_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-earrings",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "Victoire de Castellane reinterprets Mr. Dior's lucky star in the form of a wind rose, an eight-pointed star design. A ring of beading encircles the motif."
+        ],
+        "bullets": [
+          "Yellow Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95083-0000/1.jpg",
+        "/products/di-pdp/jrdv95083-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95083_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95083_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "CD04111X1295_0000",
+      "sku": "CD04111X1295_0000_U",
+      "title": "La D de Dior Satine",
+      "subtitle": "Ø 25 MM, Steel, Pink Mother-Of-Pearl and Diamonds",
+      "gbpPrice": 3400,
+      "url": "https://www.dior.com/en_gb/fashion/products/CD04111X1295_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-watches",
+        "di-timepieces-all",
+        "di-la-d-de-dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-dior-icons"
+      ],
+      "color": {
+        "code": "0000"
+      },
+      "details": {
+        "paragraphs": [
+          "La D de Dior Satine. Ø 25 MM, Steel, Pink Mother-Of-Pearl and Diamonds"
+        ],
+        "bullets": [
+          "Ø 25 MM, Steel, Pink Mother-Of-Pearl and Diamonds"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/cd04111x1295-0000/1.jpg",
+        "/products/di-pdp/cd04111x1295-0000/2.jpg",
+        "/products/di-pdp/cd04111x1295-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1295_SBG_E01-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1295_SBG_E02?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1295_SBG_E04-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JMYD95028_0000",
+      "sku": "JMYD95028_0000",
+      "title": "My Dior Ring",
+      "subtitle": "Pink Gold",
+      "gbpPrice": 3250,
+      "url": "https://www.dior.com/en_gb/fashion/products/JMYD95028_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-rings",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "The My Dior collection by Victoire de Castellane is reinvented with a series of infinitely precious jewelry pieces. In an ode to the art of detail, a tangle of golden threads is woven together like meticulously interlaced sprigs of straw into a subtle mesh, revealing the iconic Cannage, accented by a strip of shiny gold. The craftsmanship is an homage to Dior's refined style. The monochrome designs of the My Dior line play with the concepts of contrast, brilliance and sleek graphics in a tribute to Dior's timeless elegance. Featuring pink gold, yellow gold or white gold, the pieces are also occasionally adorned with diamonds."
+        ],
+        "bullets": [
+          "Pink Gold"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jmyd95028-0000/1.jpg",
+        "/products/di-pdp/jmyd95028-0000/2.jpg",
+        "/products/di-pdp/jmyd95028-0000/3.jpg",
+        "/products/di-pdp/jmyd95028-0000/4.jpg",
+        "/products/di-pdp/jmyd95028-0000/5.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95028_SBG_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95028_SBG_E02-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95028_SBG_E03-4?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_JT_MYD_LOOK_039_E01-1?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1458_1458918-lrrxqti7mk-whr.jpg"
+      ]
+    },
+    {
+      "id": "JRDV95003_0000",
+      "sku": "JRDV95003_0000_U",
+      "title": "Rose des Vents Bracelet",
+      "subtitle": "Pink Gold, Diamond and Pink Opal",
+      "gbpPrice": 2500,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95003_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-bracelets",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "Victoire de Castellane reinterprets Mr. Dior's lucky star in the form of a wind rose, an eight-pointed star design. A ring of beading encircles the motif, which turns to switch between the gemstone or wind rose sides."
+        ],
+        "bullets": [
+          "Pink Gold, Diamond and Pink Opal"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95003-0000/1.jpg",
+        "/products/di-pdp/jrdv95003-0000/2.jpg",
+        "/products/di-pdp/jrdv95003-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95003_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95003_E07?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://media.christiandior.com/pm_11872_1336_1336398-nj8ipksoh7-whr.jpg"
+      ]
+    },
+    {
+      "id": "JMYD95033_0000",
+      "sku": "JMYD95033_0000",
+      "title": "My Dior Bracelet",
+      "subtitle": "Yellow Gold and White Gold",
+      "gbpPrice": 9300,
+      "url": "https://www.dior.com/en_gb/fashion/products/JMYD95033_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-bracelets",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "The My Dior collection by Victoire de Castellane is reinvented with a series of infinitely precious jewelry pieces. In an ode to the art of detail, a tangle of golden threads is woven together like meticulously interlaced sprigs of straw into a subtle mesh, revealing the iconic Cannage, accented by a strip of shiny gold. The craftsmanship is an homage to Dior's refined style. Combining shades of gold, the My Dior design highlights the radiance of white gold, while the iconic Cannage lines appear in yellow gold for a luminous and quintessential Dior style."
+        ],
+        "bullets": [
+          "Yellow Gold and White Gold"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jmyd95033-0000/1.jpg",
+        "/products/di-pdp/jmyd95033-0000/2.jpg",
+        "/products/di-pdp/jmyd95033-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95033_SBG_E01-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMYD95033_SBG_E02-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_JT_MYD_LOOK_040_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JRDV95246_0000",
+      "sku": "JRDV95246_0000_U",
+      "title": "Étoile des Vents Single Earring",
+      "subtitle": "Pink Gold and Diamond",
+      "gbpPrice": 1650,
+      "url": "https://www.dior.com/en_gb/fashion/products/JRDV95246_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-earrings",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Pink",
+        "code": "0000",
+        "label": "Pink"
+      },
+      "details": {
+        "paragraphs": [
+          "Étoile des Vents opens a refined new chapter for the collection with a reinterpretation of the iconic Rose des Vents motif without its gemstones and incorporating Mr. Dior's symbolic lucky wind rose star. The sparkling and refined Étoile des Vents stud embodies contemporary minimalism and combines perfectly with other earrings from the Rose des Vents collection."
+        ],
+        "bullets": [
+          "Pink Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jrdv95246-0000/1.jpg",
+        "/products/di-pdp/jrdv95246-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95246_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JRDV95246_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "CD04111X1289_0000",
+      "sku": "CD04111X1289_0000_U",
+      "title": "La D de Dior Satine",
+      "subtitle": "Ø 25 MM, Steel, White Mother-Of-Pearl and Diamonds",
+      "gbpPrice": 3400,
+      "url": "https://www.dior.com/en_gb/fashion/products/CD04111X1289_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-watches",
+        "di-timepieces-all",
+        "di-la-d-de-dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-dior-icons"
+      ],
+      "color": {
+        "code": "0000"
+      },
+      "details": {
+        "paragraphs": [
+          "La D de Dior Satine. Ø 25 MM, Steel, White Mother-Of-Pearl and Diamonds"
+        ],
+        "bullets": [
+          "Ø 25 MM, Steel, White Mother-Of-Pearl and Diamonds"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/cd04111x1289-0000/1.jpg",
+        "/products/di-pdp/cd04111x1289-0000/2.jpg",
+        "/products/di-pdp/cd04111x1289-0000/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1289_SBG_E01-3?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1289_SBG_E02-2?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/CD04111X1289_SBG_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JMRO95001_0000",
+      "sku": "JMRO95001_0000",
+      "title": "Mimirose Ring",
+      "subtitle": "Yellow Gold and Diamond",
+      "gbpPrice": 840,
+      "url": "https://www.dior.com/en_gb/fashion/products/JMRO95001_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-rings",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "The new fine jewelry collection by Victoire de Castellane, Mimirose, celebrates the 20th anniversary of Dior Joaillerie. It draws inspiration from both Mimioui, with its finesse and precious stones, and Rose des Vents, with its delicate bead setting that adorns each stone."
+        ],
+        "bullets": [
+          "Yellow Gold and Diamond"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jmro95001-0000/1.jpg",
+        "/products/di-pdp/jmro95001-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JMRO95001_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMRO95001_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "JMRO95010_0000",
+      "sku": "JMRO95010_0000_U",
+      "title": "Mimirose Necklace",
+      "subtitle": "Yellow Gold and Diamonds",
+      "gbpPrice": 2300,
+      "url": "https://www.dior.com/en_gb/fashion/products/JMRO95010_0000",
+      "leafId": "di-dior-icons",
+      "leafLabel": "Dior Icons",
+      "leafLabelKo": "디올 아이콘즈",
+      "collections": [
+        "dior",
+        "dior-accessories",
+        "di-jewelry-timepieces",
+        "di-jewelry-all",
+        "di-necklaces",
+        "di-dior-icons"
+      ],
+      "color": {
+        "label_int": "Yellow",
+        "code": "0000",
+        "label": "Yellow"
+      },
+      "details": {
+        "paragraphs": [
+          "The new fine jewelry collection by Victoire de Castellane, Mimirose, celebrates the 20th anniversary of Dior Joaillerie. It draws inspiration from both Mimioui, with its finesse and precious stones, and Rose des Vents, with its delicate bead setting that adorns each stone."
+        ],
+        "bullets": [
+          "Yellow Gold and Diamonds"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/jmro95010-0000/1.jpg",
+        "/products/di-pdp/jmro95010-0000/2.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/JMRO95010_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/JMRO95010_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    }
+  ]
+}

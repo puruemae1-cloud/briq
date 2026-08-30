@@ -37,6 +37,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-textile-catalog-raw.json",
     ROOT / "src/data/di/di-jewelry-catalog-raw.json",
     ROOT / "src/data/di/di-timepieces-catalog-raw.json",
+    ROOT / "src/data/di/di-icons-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -83,6 +84,7 @@ JEWELRYISH = {
     "di-bracelets",
     "di-rings",
     "di-necklaces",
+    "di-dior-icons",
 }
 
 TIMEPIECEISH = {
@@ -124,6 +126,7 @@ LEAF_PREF = [
     "di-necklaces",
     "di-la-d-de-dior",
     "di-straps",
+    "di-dior-icons",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",

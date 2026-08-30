@@ -251,6 +251,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-bracelets": "dior",
   "di-rings": "dior",
   "di-necklaces": "dior",
+  "di-dior-icons": "dior",
   "dior-watches": "dior-watches",
   "di-timepieces-all": "dior-watches",
   "di-la-d-de-dior": "dior-watches",
