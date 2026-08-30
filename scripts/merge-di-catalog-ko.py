@@ -504,11 +504,14 @@ def main() -> None:
             time.sleep(25)
 
     CAT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+    # Keep di-catalog.ts tiny (JSON import) — embedding 1000+ SKUs inline OOMs Cursor/Vercel.
     OUT_TS.write_text(
         "/* Auto-generated — do not edit */\n"
         'import type { Product } from "@/data/product-types";\n'
-        f"export const diCatalogProducts = {json.dumps(out, ensure_ascii=False)} as Product[];\n"
-        f"export const diCatalogGeneratedAt = {json.dumps(datetime.now(timezone.utc).isoformat())};\n"
+        'import data from "./di-catalog.json";\n'
+        "\n"
+        "/** Dior Maison + Jewelry catalog (loaded from JSON to keep the TS module small). */\n"
+        "export const diCatalogProducts = data as unknown as Product[];\n"
     )
     good = sum(
         1
