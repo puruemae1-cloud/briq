@@ -227,6 +227,50 @@ DECOR_LEAVES: list[dict[str, str]] = [
     },
 ]
 
+# Official Textile leaves (Maison → Textile). Single-run (~79 SKUs).
+TEXTILE_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-textile-all",
+        "slug": "all-textiles",
+        "label": "All Textiles",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/maison/textile/all-textiles",
+        "stage": "1",
+    },
+    {
+        "id": "di-cushions",
+        "slug": "cushions",
+        "label": "Cushions",
+        "labelKo": "쿠션",
+        "url": f"{BASE}/{LANG}/fashion/maison/textile/cushions",
+        "stage": "1",
+    },
+    {
+        "id": "di-bath-linen",
+        "slug": "bath-linen",
+        "label": "Bath Linen",
+        "labelKo": "배스 리넨",
+        "url": f"{BASE}/{LANG}/fashion/maison/textile/bath-linen",
+        "stage": "1",
+    },
+    {
+        "id": "di-table-linen",
+        "slug": "table-linen",
+        "label": "Table Linen",
+        "labelKo": "테이블 리넨",
+        "url": f"{BASE}/{LANG}/fashion/maison/textile/table-linen",
+        "stage": "1",
+    },
+    {
+        "id": "di-throws",
+        "slug": "throws",
+        "label": "Throws",
+        "labelKo": "스로우",
+        "url": f"{BASE}/{LANG}/fashion/maison/textile/throws",
+        "stage": "1",
+    },
+]
+
 PARENT_COLS_OBJECTS = [
     "dior",
     "dior-accessories",
@@ -239,6 +283,13 @@ PARENT_COLS_DECOR = [
     "dior-accessories",
     "di-home",
     "di-decor",
+]
+
+PARENT_COLS_TEXTILE = [
+    "dior",
+    "dior-accessories",
+    "di-home",
+    "di-textile",
 ]
 
 PARENT_COLS = [

@@ -227,6 +227,12 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-wallpapers": "dior",
   "di-vases": "dior",
   "di-furniture": "dior",
+  "di-textile": "dior",
+  "di-textile-all": "dior",
+  "di-cushions": "dior",
+  "di-bath-linen": "dior",
+  "di-table-linen": "dior",
+  "di-throws": "dior",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

@@ -828,6 +828,12 @@ export type SubcategoryId =
   | "di-wallpapers"
   | "di-vases"
   | "di-furniture"
+  | "di-textile"
+  | "di-textile-all"
+  | "di-cushions"
+  | "di-bath-linen"
+  | "di-table-linen"
+  | "di-throws"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1033,6 +1039,15 @@ export const DI_DECOR_LEAF_IDS: SubcategoryId[] = [
   "di-wallpapers",
   "di-vases",
   "di-furniture",
+];
+
+/** Dior Maison — textile leaves (official GB Textile PLPs). */
+export const DI_TEXTILE_LEAF_IDS: SubcategoryId[] = [
+  "di-textile-all",
+  "di-cushions",
+  "di-bath-linen",
+  "di-table-linen",
+  "di-throws",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2377,6 +2392,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_OBJECTS_LEAF_IDS,
     "di-decor",
     ...DI_DECOR_LEAF_IDS,
+    "di-textile",
+    ...DI_TEXTILE_LEAF_IDS,
   ],
   "dior-accessories": [
     "dior-accessories",
@@ -2387,6 +2404,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_OBJECTS_LEAF_IDS,
     "di-decor",
     ...DI_DECOR_LEAF_IDS,
+    "di-textile",
+    ...DI_TEXTILE_LEAF_IDS,
   ],
   "di-home": [
     "di-home",
@@ -2396,6 +2415,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_OBJECTS_LEAF_IDS,
     "di-decor",
     ...DI_DECOR_LEAF_IDS,
+    "di-textile",
+    ...DI_TEXTILE_LEAF_IDS,
   ],
   "di-tableware": ["di-tableware", ...DI_TABLEWARE_LEAF_IDS],
   "di-tableware-all": ["di-tableware-all"],
@@ -2423,6 +2444,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-wallpapers": ["di-wallpapers"],
   "di-vases": ["di-vases"],
   "di-furniture": ["di-furniture"],
+  "di-textile": ["di-textile", ...DI_TEXTILE_LEAF_IDS],
+  "di-textile-all": ["di-textile-all"],
+  "di-cushions": ["di-cushions"],
+  "di-bath-linen": ["di-bath-linen"],
+  "di-table-linen": ["di-table-linen"],
+  "di-throws": ["di-throws"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -5675,6 +5702,39 @@ export const navCategories: NavCategory[] = [
                     id: "di-furniture",
                     labelKo: "가구",
                     href: "/shop?category=accessories&sub=di-furniture",
+                  },
+                ],
+              },
+              {
+                id: "di-textile",
+                labelKo: "텍스타일즈",
+                href: "/shop?category=accessories&sub=di-textile",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-textile-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-textile-all",
+                  },
+                  {
+                    id: "di-cushions",
+                    labelKo: "쿠션",
+                    href: "/shop?category=accessories&sub=di-cushions",
+                  },
+                  {
+                    id: "di-bath-linen",
+                    labelKo: "배스 리넨",
+                    href: "/shop?category=accessories&sub=di-bath-linen",
+                  },
+                  {
+                    id: "di-table-linen",
+                    labelKo: "테이블 리넨",
+                    href: "/shop?category=accessories&sub=di-table-linen",
+                  },
+                  {
+                    id: "di-throws",
+                    labelKo: "스로우",
+                    href: "/shop?category=accessories&sub=di-throws",
                   },
                 ],
               },

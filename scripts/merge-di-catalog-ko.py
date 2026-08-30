@@ -34,6 +34,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-tableware-catalog-raw.json",
     ROOT / "src/data/di/di-objects-catalog-raw.json",
     ROOT / "src/data/di/di-decor-catalog-raw.json",
+    ROOT / "src/data/di/di-textile-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -64,6 +65,15 @@ DECORISH = {
     "di-furniture",
 }
 
+TEXTILEISH = {
+    "di-textile",
+    "di-textile-all",
+    "di-cushions",
+    "di-bath-linen",
+    "di-table-linen",
+    "di-throws",
+}
+
 # Prefer specific Maison leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -86,9 +96,14 @@ LEAF_PREF = [
     "di-baskets",
     "di-wallpapers",
     "di-furniture",
+    "di-cushions",
+    "di-bath-linen",
+    "di-table-linen",
+    "di-throws",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",
+    "di-textile-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -204,6 +219,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["objects", "오브젝트"]
     if any(c in DECORISH for c in collections + [leaf]):
         tags += ["decor", "데코"]
+    if any(c in TEXTILEISH for c in collections + [leaf]):
+        tags += ["textile", "텍스타일", "텍스타일즈"]
     return list(dict.fromkeys(tags))
 
 
