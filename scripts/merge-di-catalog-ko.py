@@ -52,6 +52,42 @@ OBJECTISH = {
     "di-paperweights",
 }
 
+# Prefer specific Maison leaves over *-all when picking subcategory.
+LEAF_PREF = [
+    "di-plates-bowls",
+    "di-glasses",
+    "di-carafes",
+    "di-cutlery",
+    "di-tea-coffee",
+    "di-books",
+    "di-notebooks",
+    "di-desk-accessories",
+    "di-leisure",
+    "di-candleholders-candles",
+    "di-small-objects",
+    "di-trinket-trays",
+    "di-paperweights",
+    "di-trays",
+    "di-tableware-all",
+    "di-objects-all",
+]
+_LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
+
+
+def prefer_leaf(collections: list[str], fallback: str) -> tuple[str, list[str]]:
+    """Return (subcategory, reordered collections) preferring specific leaves."""
+    cols = list(dict.fromkeys(collections or []))
+    leaf_cols = [c for c in cols if c in _LEAF_RANK]
+    if not leaf_cols:
+        leaf = fallback if fallback in _LEAF_RANK else (fallback or "di-tableware-all")
+        if leaf not in cols:
+            cols.append(leaf)
+        return leaf, cols
+    best = min(leaf_cols, key=lambda c: _LEAF_RANK[c])
+    parents = [c for c in cols if c not in _LEAF_RANK]
+    ordered = parents + sorted(leaf_cols, key=lambda c: _LEAF_RANK[c])
+    return best, list(dict.fromkeys(ordered))
+
 
 def load_raw() -> dict[str, dict]:
     by: dict[str, dict] = {}
@@ -153,10 +189,11 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
 def refresh_existing(existing: dict, row: dict) -> dict:
     images = [img for img in (row.get("images") or []) if img]
     image = images[0]
-    leaf = row.get("leafId") or existing.get("subcategory") or "di-tableware-all"
+    raw_leaf = row.get("leafId") or existing.get("subcategory") or "di-tableware-all"
     collections = list(dict.fromkeys(row.get("collections") or existing.get("diCollections") or []))
-    if leaf not in collections:
-        collections.append(leaf)
+    if raw_leaf not in collections:
+        collections.append(raw_leaf)
+    leaf, collections = prefer_leaf(collections, raw_leaf)
     gbp = row.get("gbpPrice")
     try:
         gbp_f = float(gbp) if gbp is not None else float(existing.get("gbpPrice") or 0)
@@ -195,10 +232,11 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
     except (TypeError, ValueError):
         gbp_f = 0.0
     price = gbp_to_krw(gbp_f) if gbp_f else 0
-    leaf = row.get("leafId") or "di-tableware-all"
+    raw_leaf = row.get("leafId") or "di-tableware-all"
     collections = list(dict.fromkeys(row.get("collections") or []))
-    if leaf not in collections:
-        collections.append(leaf)
+    if raw_leaf not in collections:
+        collections.append(raw_leaf)
+    leaf, collections = prefer_leaf(collections, raw_leaf)
     color = row.get("color") or {}
     title_en = (row.get("title") or sku).strip()
 

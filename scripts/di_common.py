@@ -116,8 +116,10 @@ OBJECTS_LEAVES: list[dict[str, str]] = [
         "slug": "paperweights",
         "label": "Paperweights",
         "labelKo": "페이퍼웨이트",
-        "url": f"{BASE}/{LANG}/fashion/maison/objects/all-products?f_category=Paperweights",
-        "stage": "2",
+        # Facet-only leaf — scraped from All Objects and filtered (no dedicated PLP).
+        "url": f"{BASE}/{LANG}/fashion/maison/objects/all-products",
+        "categoryFilter": "Paperweights",
+        "stage": "5",
     },
     {
         "id": "di-leisure",

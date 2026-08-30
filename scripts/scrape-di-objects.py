@@ -111,13 +111,29 @@ def scrape_plp_hits(page, leaf: dict) -> list[dict]:
         hits.extend(more)
         pag2 = ((data2.get("props") or {}).get("pageProps") or {}).get("pagination") or {}
         next_url = pag2.get("next")
+    cat_filter = (leaf.get("categoryFilter") or "").strip().lower()
     # dedupe by code
     by_code: dict[str, dict] = {}
     for h in hits:
         code = (h.get("code") or h.get("objectID") or "").strip()
-        if code:
-            by_code[code] = h
-    log(f"  unique hits {len(by_code)}")
+        if not code:
+            continue
+        if cat_filter:
+            blob = json.dumps(
+                {
+                    "c": h.get("category"),
+                    "ci": h.get("categoryInt"),
+                    "cats": h.get("categories"),
+                    "t": h.get("title"),
+                    "s": h.get("subtitle"),
+                    "tags": h.get("tagsKeys"),
+                },
+                ensure_ascii=False,
+            ).lower()
+            if cat_filter not in blob and "paperweight" not in blob:
+                continue
+        by_code[code] = h
+    log(f"  unique hits {len(by_code)}" + (f" (filter={cat_filter})" if cat_filter else ""))
     return list(by_code.values())
 
 
@@ -295,7 +311,7 @@ def main() -> None:
         leaves = [
             L
             for L in leaves
-            if L["id"] in ("di-desk-accessories", "di-paperweights", "di-leisure")
+            if L["id"] in ("di-desk-accessories", "di-leisure")
         ]
     elif args.stage == "3":
         leaves = [L for L in leaves if L["id"] == "di-candleholders-candles"]
@@ -304,7 +320,11 @@ def main() -> None:
             L for L in leaves if L["id"] in ("di-small-objects", "di-trinket-trays")
         ]
     elif args.stage == "5":
-        leaves = [L for L in leaves if L["id"] in ("di-trays", "di-objects-all")]
+        leaves = [
+            L
+            for L in leaves
+            if L["id"] in ("di-trays", "di-objects-all", "di-paperweights")
+        ]
 
     save_json(OUT_LEAVES, OBJECTS_LEAVES)
     existing = load_json(OUT_RAW, {"products": []})
