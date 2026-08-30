@@ -292,6 +292,57 @@ PARENT_COLS_TEXTILE = [
     "di-textile",
 ]
 
+# Official Jewelry leaves (Jewelry & Timepieces → Jewelry by Category).
+# ~167 SKUs — single run (All + Earrings + Bracelets + Rings + Necklaces).
+JEWELRY_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-jewelry-all",
+        "slug": "all-jewelry",
+        "label": "All Jewelry",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/jewelry-by-category/all-jewelry",
+        "stage": "1",
+    },
+    {
+        "id": "di-earrings",
+        "slug": "earrings",
+        "label": "Earrings",
+        "labelKo": "이어링스",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/jewelry-by-category/earrings",
+        "stage": "1",
+    },
+    {
+        "id": "di-bracelets",
+        "slug": "bracelets",
+        "label": "Bracelets",
+        "labelKo": "브레이슬릿",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/jewelry-by-category/bracelets",
+        "stage": "1",
+    },
+    {
+        "id": "di-rings",
+        "slug": "rings",
+        "label": "Rings",
+        "labelKo": "링",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/jewelry-by-category/rings",
+        "stage": "1",
+    },
+    {
+        "id": "di-necklaces",
+        "slug": "necklaces",
+        "label": "Necklaces",
+        "labelKo": "네크리스",
+        "url": f"{BASE}/{LANG}/fashion/jewelry-timepieces/jewelry-by-category/necklaces",
+        "stage": "1",
+    },
+]
+
+PARENT_COLS_JEWELRY = [
+    "dior",
+    "dior-accessories",
+    "di-jewelry-timepieces",
+]
+
 PARENT_COLS = [
     "dior",
     "dior-accessories",

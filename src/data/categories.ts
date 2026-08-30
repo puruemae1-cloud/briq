@@ -834,6 +834,12 @@ export type SubcategoryId =
   | "di-bath-linen"
   | "di-table-linen"
   | "di-throws"
+  | "di-jewelry-timepieces"
+  | "di-jewelry-all"
+  | "di-earrings"
+  | "di-bracelets"
+  | "di-rings"
+  | "di-necklaces"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1048,6 +1054,15 @@ export const DI_TEXTILE_LEAF_IDS: SubcategoryId[] = [
   "di-bath-linen",
   "di-table-linen",
   "di-throws",
+];
+
+/** Dior Jewelry & Timepieces — jewelry-by-category leaves (official GB). */
+export const DI_JEWELRY_LEAF_IDS: SubcategoryId[] = [
+  "di-jewelry-all",
+  "di-earrings",
+  "di-bracelets",
+  "di-rings",
+  "di-necklaces",
 ];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2394,6 +2409,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_DECOR_LEAF_IDS,
     "di-textile",
     ...DI_TEXTILE_LEAF_IDS,
+    "di-jewelry-timepieces",
+    ...DI_JEWELRY_LEAF_IDS,
   ],
   "dior-accessories": [
     "dior-accessories",
@@ -2406,6 +2423,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_DECOR_LEAF_IDS,
     "di-textile",
     ...DI_TEXTILE_LEAF_IDS,
+    "di-jewelry-timepieces",
+    ...DI_JEWELRY_LEAF_IDS,
   ],
   "di-home": [
     "di-home",
@@ -2450,6 +2469,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-bath-linen": ["di-bath-linen"],
   "di-table-linen": ["di-table-linen"],
   "di-throws": ["di-throws"],
+  "di-jewelry-timepieces": [
+    "di-jewelry-timepieces",
+    ...DI_JEWELRY_LEAF_IDS,
+  ],
+  "di-jewelry-all": ["di-jewelry-all"],
+  "di-earrings": ["di-earrings"],
+  "di-bracelets": ["di-bracelets"],
+  "di-rings": ["di-rings"],
+  "di-necklaces": ["di-necklaces"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -5737,6 +5765,39 @@ export const navCategories: NavCategory[] = [
                     href: "/shop?category=accessories&sub=di-throws",
                   },
                 ],
+              },
+            ],
+          },
+          {
+            id: "di-jewelry-timepieces",
+            labelKo: "쥬얼리 & 타임피스",
+            href: "/shop?category=accessories&sub=di-jewelry-timepieces",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-jewelry-all",
+                labelKo: "전체",
+                href: "/shop?category=accessories&sub=di-jewelry-all",
+              },
+              {
+                id: "di-earrings",
+                labelKo: "이어링스",
+                href: "/shop?category=accessories&sub=di-earrings",
+              },
+              {
+                id: "di-bracelets",
+                labelKo: "브레이슬릿",
+                href: "/shop?category=accessories&sub=di-bracelets",
+              },
+              {
+                id: "di-rings",
+                labelKo: "링",
+                href: "/shop?category=accessories&sub=di-rings",
+              },
+              {
+                id: "di-necklaces",
+                labelKo: "네크리스",
+                href: "/shop?category=accessories&sub=di-necklaces",
               },
             ],
           },

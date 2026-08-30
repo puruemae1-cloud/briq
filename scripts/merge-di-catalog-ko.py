@@ -35,6 +35,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-objects-catalog-raw.json",
     ROOT / "src/data/di/di-decor-catalog-raw.json",
     ROOT / "src/data/di/di-textile-catalog-raw.json",
+    ROOT / "src/data/di/di-jewelry-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -74,7 +75,16 @@ TEXTILEISH = {
     "di-throws",
 }
 
-# Prefer specific Maison leaves over *-all when picking subcategory.
+JEWELRYISH = {
+    "di-jewelry-timepieces",
+    "di-jewelry-all",
+    "di-earrings",
+    "di-bracelets",
+    "di-rings",
+    "di-necklaces",
+}
+
+# Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
     "di-glasses",
@@ -100,10 +110,15 @@ LEAF_PREF = [
     "di-bath-linen",
     "di-table-linen",
     "di-throws",
+    "di-earrings",
+    "di-bracelets",
+    "di-rings",
+    "di-necklaces",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",
     "di-textile-all",
+    "di-jewelry-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -212,14 +227,27 @@ def translate(text: str) -> str:
 
 
 def tags_for(collections: list[str], leaf: str) -> list[str]:
-    tags = ["dior", "디올", "maison"]
-    if any("tableware" in c or c.startswith("di-plates") or c.startswith("di-glass") or c.startswith("di-carafe") or c.startswith("di-tea") or c.startswith("di-cutlery") for c in collections + [leaf]):
+    tags = ["dior", "디올"]
+    cols = collections + [leaf]
+    if any(c in JEWELRYISH for c in cols):
+        tags += ["jewelry", "jewellery", "쥬얼리", "타임피스"]
+    else:
+        tags += ["maison"]
+    if any(
+        "tableware" in c
+        or c.startswith("di-plates")
+        or c.startswith("di-glass")
+        or c.startswith("di-carafe")
+        or c.startswith("di-tea")
+        or c.startswith("di-cutlery")
+        for c in cols
+    ):
         tags += ["tableware", "테이블웨어"]
-    if any(c in OBJECTISH for c in collections + [leaf]):
+    if any(c in OBJECTISH for c in cols):
         tags += ["objects", "오브젝트"]
-    if any(c in DECORISH for c in collections + [leaf]):
+    if any(c in DECORISH for c in cols):
         tags += ["decor", "데코"]
-    if any(c in TEXTILEISH for c in collections + [leaf]):
+    if any(c in TEXTILEISH for c in cols):
         tags += ["textile", "텍스타일", "텍스타일즈"]
     return list(dict.fromkeys(tags))
 
@@ -304,23 +332,69 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
     if isinstance(h.get("color"), dict):
         color_ko = h["color"].get("label")
     color_ko = color_ko or color.get("label") or "기본"
+    color_key = color.get("code") or "default"
+    source_url = row.get("url") or ""
 
-    variant = {
-        "id": f"{pid}-os",
-        "name": "One Size",
-        "nameKo": "원 사이즈",
-        "sku": str(row.get("sku") or sku),
-        "gbpPrice": gbp_f,
-        "price": price,
-        "image": image,
-        "images": images,
-        "sourceUrl": row.get("url") or "",
-        "inStock": True,
-        "colorKey": color.get("code") or "default",
-        "colorNameKo": color_ko,
-        "size": "OS",
-        "diCollections": collections,
-    }
+    variants: list[dict] = []
+    raw_vars = h.get("variants") if isinstance(h.get("variants"), list) else []
+    for vv in raw_vars:
+        if not isinstance(vv, dict):
+            continue
+        sz = str(vv.get("sizeFormatted") or vv.get("size") or "").strip()
+        if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
+            continue
+        v_gbp = gbp_f
+        vp = vv.get("price") or {}
+        if isinstance(vp, dict) and vp.get("amount") is not None:
+            try:
+                v_gbp = float(vp["amount"])
+            except (TypeError, ValueError):
+                pass
+        variants.append(
+            {
+                "id": f"{pid}-sz-{slugify(sz, max_len=24)}",
+                "name": sz,
+                "nameKo": sz,
+                "sku": str(vv.get("sku") or row.get("sku") or sku),
+                "gbpPrice": v_gbp,
+                "price": gbp_to_krw(v_gbp) if v_gbp else price,
+                "image": image,
+                "images": images,
+                "sourceUrl": source_url,
+                "inStock": True,
+                "colorKey": color_key,
+                "colorNameKo": color_ko,
+                "size": sz,
+                "diCollections": collections,
+            }
+        )
+    if variants:
+        def _sz_key(v: dict):
+            try:
+                return (0, float(v["size"]))
+            except (TypeError, ValueError):
+                return (1, str(v.get("size") or ""))
+
+        variants = sorted(variants, key=_sz_key)
+    else:
+        variants = [
+            {
+                "id": f"{pid}-os",
+                "name": "One Size",
+                "nameKo": "원 사이즈",
+                "sku": str(row.get("sku") or sku),
+                "gbpPrice": gbp_f,
+                "price": price,
+                "image": image,
+                "images": images,
+                "sourceUrl": source_url,
+                "inStock": True,
+                "colorKey": color_key,
+                "colorNameKo": color_ko,
+                "size": "OS",
+                "diCollections": collections,
+            }
+        ]
     return {
         "id": pid,
         "name": title_en,
@@ -336,8 +410,8 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "accent": ACCENTS[idx % len(ACCENTS)],
         "gbpPrice": gbp_f,
         "sku": sku,
-        "sourceUrl": row.get("url") or "",
-        "variants": [variant],
+        "sourceUrl": source_url,
+        "variants": variants,
         "storySections": [
             {
                 "titleKo": "제품 소개",
