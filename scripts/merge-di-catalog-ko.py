@@ -38,6 +38,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-jewelry-catalog-raw.json",
     ROOT / "src/data/di/di-timepieces-catalog-raw.json",
     ROOT / "src/data/di/di-icons-catalog-raw.json",
+    ROOT / "src/data/di/di-bags-women-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -94,6 +95,19 @@ TIMEPIECEISH = {
     "di-straps",
 }
 
+BAGISH = {
+    "dior-bags",
+    "di-bags-womens",
+    "di-bags-all",
+    "di-handbags",
+    "di-crossbody-shoulder-bags",
+    "di-tote-bags",
+    "di-bucket-bags",
+    "di-clutches",
+    "di-mini-bags",
+    "di-accessorize-bag",
+}
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -127,12 +141,20 @@ LEAF_PREF = [
     "di-la-d-de-dior",
     "di-straps",
     "di-dior-icons",
+    "di-handbags",
+    "di-crossbody-shoulder-bags",
+    "di-tote-bags",
+    "di-bucket-bags",
+    "di-clutches",
+    "di-mini-bags",
+    "di-accessorize-bag",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",
     "di-textile-all",
     "di-jewelry-all",
     "di-timepieces-all",
+    "di-bags-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -245,6 +267,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
     cols = collections + [leaf]
     if any(c in TIMEPIECEISH for c in cols):
         tags += ["watches", "timepieces", "시계", "타임피스"]
+    elif any(c in BAGISH for c in cols):
+        tags += ["bags", "handbags", "가방", "핸드백"]
     elif any(c in JEWELRYISH for c in cols):
         tags += ["jewelry", "jewellery", "쥬얼리"]
     else:
@@ -268,6 +292,15 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
     return list(dict.fromkeys(tags))
 
 
+def _category_for(collections: list[str], leaf: str, fallback: str = "accessories") -> str:
+    cols = collections + [leaf]
+    if any(c in TIMEPIECEISH for c in cols):
+        return "watches"
+    if any(c in BAGISH for c in cols):
+        return "bags"
+    return fallback
+
+
 def refresh_existing(existing: dict, row: dict) -> dict:
     images = [img for img in (row.get("images") or []) if img]
     image = images[0]
@@ -288,11 +321,7 @@ def refresh_existing(existing: dict, row: dict) -> dict:
     p["gbpPrice"] = gbp_f
     p["diCollections"] = collections
     p["subcategory"] = leaf
-    p["category"] = (
-        "watches"
-        if any(c in TIMEPIECEISH for c in collections + [leaf])
-        else p.get("category") or "accessories"
-    )
+    p["category"] = _category_for(collections, leaf, p.get("category") or "accessories")
     p["tags"] = tags_for(collections, leaf)
     p["sourceUrl"] = row.get("url") or p.get("sourceUrl") or ""
     if p.get("variants"):
@@ -421,11 +450,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "name": title_en,
         "nameKo": title_ko,
         "brand": "Dior",
-        "category": (
-            "watches"
-            if any(c in TIMEPIECEISH for c in collections + [leaf])
-            else "accessories"
-        ),
+        "category": _category_for(collections, leaf, "accessories"),
         "subcategory": leaf,
         "diCollections": collections,
         "tags": tags_for(collections, leaf),
@@ -535,7 +560,7 @@ def main() -> None:
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./di-catalog.json";\n'
         "\n"
-        "/** Dior Maison + Jewelry catalog (loaded from JSON to keep the TS module small). */\n"
+        "/** Dior Maison + Jewelry + Bags catalog (JSON import keeps TS small). */\n"
         "export const diCatalogProducts = data as unknown as Product[];\n"
     )
     good = sum(

@@ -9,6 +9,7 @@ export type BrandKey =
   | "chanel"
   | "chanel-watches"
   | "dior-watches"
+  | "dior-bags"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -155,6 +156,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/rot-acc-3.jpg",
     ],
   },
+  "dior-bags": {
+    key: "dior-bags",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    images: [
+      "/banners/rot-acc-1.jpg",
+      "/banners/rot-acc-2.jpg",
+      "/banners/rot-acc-3.jpg",
+    ],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -256,6 +268,16 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-timepieces-all": "dior-watches",
   "di-la-d-de-dior": "dior-watches",
   "di-straps": "dior-watches",
+  "dior-bags": "dior-bags",
+  "di-bags-womens": "dior-bags",
+  "di-bags-all": "dior-bags",
+  "di-handbags": "dior-bags",
+  "di-crossbody-shoulder-bags": "dior-bags",
+  "di-tote-bags": "dior-bags",
+  "di-bucket-bags": "dior-bags",
+  "di-clutches": "dior-bags",
+  "di-mini-bags": "dior-bags",
+  "di-accessorize-bag": "dior-bags",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

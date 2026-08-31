@@ -395,6 +395,84 @@ PARENT_COLS_TIMEPIECE = [
     "dior-watches",
 ]
 
+# Official Women's Bags by Category (Bags → Dior → 여성용).
+# ~388 SKUs — 3 stages with pause between:
+#   1 — Handbags + Cross-body & Shoulder + Tote Bags
+#   2 — Bucket Bags + Clutches + Mini Bags
+#   3 — Accessorize Your Bag + All Bags (gap fill)
+BAGS_WOMEN_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-bags-all",
+        "slug": "all-the-bags",
+        "label": "All Bags",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/all-the-bags",
+        "stage": "3",
+    },
+    {
+        "id": "di-handbags",
+        "slug": "handbags",
+        "label": "Handbags",
+        "labelKo": "핸드백",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/handbags",
+        "stage": "1",
+    },
+    {
+        "id": "di-crossbody-shoulder-bags",
+        "slug": "cross-body-shoulder-bags",
+        "label": "Cross-body & Shoulder Bags",
+        "labelKo": "크로스바디 & 숄더백",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/cross-body-shoulder-bags",
+        "stage": "1",
+    },
+    {
+        "id": "di-tote-bags",
+        "slug": "totes-bags",
+        "label": "Tote Bags",
+        "labelKo": "토트백",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/totes-bags",
+        "stage": "1",
+    },
+    {
+        "id": "di-bucket-bags",
+        "slug": "bucket-bags",
+        "label": "Bucket Bags",
+        "labelKo": "버킷백",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/bucket-bags",
+        "stage": "2",
+    },
+    {
+        "id": "di-clutches",
+        "slug": "clutches",
+        "label": "Clutches",
+        "labelKo": "클러치",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/clutches",
+        "stage": "2",
+    },
+    {
+        "id": "di-mini-bags",
+        "slug": "mini-bags-belt-bags",
+        "label": "Mini Bags",
+        "labelKo": "미니백",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/mini-bags-belt-bags",
+        "stage": "2",
+    },
+    {
+        "id": "di-accessorize-bag",
+        "slug": "accessorize-your-bag",
+        "label": "Accessorize Your Bag",
+        "labelKo": "백 액세서리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/accessorize-your-bag",
+        "stage": "3",
+    },
+]
+
+PARENT_COLS_BAGS_WOMEN = [
+    "dior",
+    "dior-bags",
+    "di-bags-womens",
+]
+
 
 PARENT_COLS = [
     "dior",

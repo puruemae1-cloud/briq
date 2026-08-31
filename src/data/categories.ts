@@ -845,6 +845,16 @@ export type SubcategoryId =
   | "di-timepieces-all"
   | "di-la-d-de-dior"
   | "di-straps"
+  | "dior-bags"
+  | "di-bags-womens"
+  | "di-bags-all"
+  | "di-handbags"
+  | "di-crossbody-shoulder-bags"
+  | "di-tote-bags"
+  | "di-bucket-bags"
+  | "di-clutches"
+  | "di-mini-bags"
+  | "di-accessorize-bag"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1076,6 +1086,18 @@ export const DI_TIMEPIECE_LEAF_IDS: SubcategoryId[] = [
   "di-timepieces-all",
   "di-la-d-de-dior",
   "di-straps",
+];
+
+/** Dior women's bags by category (official GB bags PLPs). */
+export const DI_BAGS_WOMEN_LEAF_IDS: SubcategoryId[] = [
+  "di-bags-all",
+  "di-handbags",
+  "di-crossbody-shoulder-bags",
+  "di-tote-bags",
+  "di-bucket-bags",
+  "di-clutches",
+  "di-mini-bags",
+  "di-accessorize-bag",
 ];
 
 
@@ -2425,6 +2447,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TEXTILE_LEAF_IDS,
     "di-jewelry-timepieces",
     ...DI_JEWELRY_LEAF_IDS,
+    "dior-bags",
+    "di-bags-womens",
+    ...DI_BAGS_WOMEN_LEAF_IDS,
   ],
   "dior-accessories": [
     "dior-accessories",
@@ -2497,6 +2522,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-timepieces-all": ["di-timepieces-all"],
   "di-la-d-de-dior": ["di-la-d-de-dior"],
   "di-straps": ["di-straps"],
+  "dior-bags": ["dior-bags", "di-bags-womens", ...DI_BAGS_WOMEN_LEAF_IDS],
+  "di-bags-womens": ["di-bags-womens", ...DI_BAGS_WOMEN_LEAF_IDS],
+  "di-bags-all": ["di-bags-all"],
+  "di-handbags": ["di-handbags"],
+  "di-crossbody-shoulder-bags": ["di-crossbody-shoulder-bags"],
+  "di-tote-bags": ["di-tote-bags"],
+  "di-bucket-bags": ["di-bucket-bags"],
+  "di-clutches": ["di-clutches"],
+  "di-mini-bags": ["di-mini-bags"],
+  "di-accessorize-bag": ["di-accessorize-bag"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -4129,6 +4164,61 @@ export const navCategories: NavCategory[] = [
             labelKo: "미니백",
             href: "/shop?category=bags&sub=ch-women-mini-bags",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "dior-bags",
+        labelKo: "디올",
+        href: "/shop?category=bags&sub=dior-bags",
+        children: [
+          {
+            id: "di-bags-womens",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=di-bags-womens",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-bags-all",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=di-bags-all",
+              },
+              {
+                id: "di-handbags",
+                labelKo: "핸드백",
+                href: "/shop?category=bags&sub=di-handbags",
+              },
+              {
+                id: "di-crossbody-shoulder-bags",
+                labelKo: "크로스바디 & 숄더백",
+                href: "/shop?category=bags&sub=di-crossbody-shoulder-bags",
+              },
+              {
+                id: "di-tote-bags",
+                labelKo: "토트백",
+                href: "/shop?category=bags&sub=di-tote-bags",
+              },
+              {
+                id: "di-bucket-bags",
+                labelKo: "버킷백",
+                href: "/shop?category=bags&sub=di-bucket-bags",
+              },
+              {
+                id: "di-clutches",
+                labelKo: "클러치",
+                href: "/shop?category=bags&sub=di-clutches",
+              },
+              {
+                id: "di-mini-bags",
+                labelKo: "미니백",
+                href: "/shop?category=bags&sub=di-mini-bags",
+              },
+              {
+                id: "di-accessorize-bag",
+                labelKo: "백 액세서리",
+                href: "/shop?category=bags&sub=di-accessorize-bag",
+              },
+            ],
           },
         ],
       },
