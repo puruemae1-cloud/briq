@@ -28,6 +28,7 @@ from di_common import (  # noqa: E402
     gbp_to_krw,
     slugify,
 )
+from di_size_charts import size_chart_for_di_mens_rtw  # noqa: E402
 from ko_qa import en_ratio, is_good_korean  # noqa: E402
 
 RAW_PATHS = [
@@ -39,6 +40,8 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-timepieces-catalog-raw.json",
     ROOT / "src/data/di/di-icons-catalog-raw.json",
     ROOT / "src/data/di/di-bags-women-catalog-raw.json",
+    ROOT / "src/data/di/di-bags-men-catalog-raw.json",
+    ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -106,6 +109,30 @@ BAGISH = {
     "di-clutches",
     "di-mini-bags",
     "di-accessorize-bag",
+    "di-bags-mens",
+    "di-men-bags-all",
+    "di-men-crossbody-shoulder-bags",
+    "di-men-backpacks",
+    "di-men-small-bags",
+    "di-men-tote-bags",
+    "di-men-travel-bags",
+    "di-men-briefcases",
+    "di-men-accessorize-bag",
+}
+
+RTWISH = {
+    "di-mens",
+    "di-men-rtw-all",
+    "di-men-tshirts-polos",
+    "di-men-shirts",
+    "di-men-knitwear-sweatshirts",
+    "di-men-trousers-shorts",
+    "di-men-denim",
+    "di-men-beachwear",
+    "di-men-outerwear",
+    "di-men-tailored-jackets",
+    "di-men-leather",
+    "di-men-suits-tuxedos",
 }
 
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
@@ -148,6 +175,13 @@ LEAF_PREF = [
     "di-clutches",
     "di-mini-bags",
     "di-accessorize-bag",
+    "di-men-crossbody-shoulder-bags",
+    "di-men-backpacks",
+    "di-men-small-bags",
+    "di-men-tote-bags",
+    "di-men-travel-bags",
+    "di-men-briefcases",
+    "di-men-accessorize-bag",
     "di-tableware-all",
     "di-objects-all",
     "di-decor-all",
@@ -155,6 +189,7 @@ LEAF_PREF = [
     "di-jewelry-all",
     "di-timepieces-all",
     "di-bags-all",
+    "di-men-bags-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -269,6 +304,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["watches", "timepieces", "시계", "타임피스"]
     elif any(c in BAGISH for c in cols):
         tags += ["bags", "handbags", "가방", "핸드백"]
+    elif any(c in RTWISH for c in cols):
+        tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
     elif any(c in JEWELRYISH for c in cols):
         tags += ["jewelry", "jewellery", "쥬얼리"]
     else:
@@ -298,6 +335,8 @@ def _category_for(collections: list[str], leaf: str, fallback: str = "accessorie
         return "watches"
     if any(c in BAGISH for c in cols):
         return "bags"
+    if any(c in RTWISH for c in cols):
+        return "luxury"
     return fallback
 
 
@@ -333,6 +372,10 @@ def refresh_existing(existing: dict, row: dict) -> dict:
         v["diCollections"] = collections
         v["sourceUrl"] = p["sourceUrl"]
         p["variants"] = [v]
+    if any(c in RTWISH for c in collections + [leaf]):
+        chart = size_chart_for_di_mens_rtw(p.get("variants") or [], leaf_id=leaf)
+        if chart:
+            p["sizeChart"] = chart
     return p
 
 
@@ -445,7 +488,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
                 "diCollections": collections,
             }
         ]
-    return {
+    product = {
         "id": pid,
         "name": title_en,
         "nameKo": title_ko,
@@ -470,6 +513,11 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
             }
         ],
     }
+    if any(c in RTWISH for c in collections + [leaf]):
+        chart = size_chart_for_di_mens_rtw(variants, leaf_id=leaf)
+        if chart:
+            product["sizeChart"] = chart
+    return product
 
 
 def main() -> None:

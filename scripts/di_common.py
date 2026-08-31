@@ -473,6 +473,186 @@ PARENT_COLS_BAGS_WOMEN = [
     "di-bags-womens",
 ]
 
+# Official Men's Bags by Category (Bags → Dior → 남성용).
+# ~163 SKUs — 3 stages with pause between:
+#   1 — Cross-body & Shoulder + Backpacks + Small Bags
+#   2 — Tote Bags + Travel Bags + Briefcases
+#   3 — Accessorize Your Bag + All Bags (gap fill)
+BAGS_MEN_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-men-bags-all",
+        "slug": "all-bags",
+        "label": "All Bags",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/all-bags",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-crossbody-shoulder-bags",
+        "slug": "cross-body-shoulder-bags",
+        "label": "Cross-body & Shoulder Bags",
+        "labelKo": "크로스바디 & 숄더백",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/cross-body-shoulder-bags",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-backpacks",
+        "slug": "backpacks",
+        "label": "Backpacks",
+        "labelKo": "백팩",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/backpacks",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-small-bags",
+        "slug": "belt-bags",
+        "label": "Small Bags",
+        "labelKo": "스몰백",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/belt-bags",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-tote-bags",
+        "slug": "totes",
+        "label": "Tote Bags",
+        "labelKo": "토트백",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/totes",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-travel-bags",
+        "slug": "travel-bags",
+        "label": "Travel Bags",
+        "labelKo": "트래블백",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/travel-bags",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-briefcases",
+        "slug": "briefcases",
+        "label": "Briefcases",
+        "labelKo": "브리프케이스",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/briefcases",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-accessorize-bag",
+        "slug": "accessorize-your-bag",
+        "label": "Accessorize Your Bag",
+        "labelKo": "백 액세서리",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/bags/accessorize-your-bag",
+        "stage": "3",
+    },
+]
+
+PARENT_COLS_BAGS_MEN = [
+    "dior",
+    "dior-bags",
+    "di-bags-mens",
+]
+
+# Official Men's Ready-to-Wear by Category (Luxury → Dior → 남성용).
+# ~549 unique SKUs on All RTW — 4 stages with pause between:
+#   1 — T-shirts & Polos
+#   2 — Shirts + Knitwear & Sweatshirts
+#   3 — Trousers & Shorts + Denim + Beachwear
+#   4 — Outerwear + Jackets + Leather + Suits + All (gap fill)
+MEN_RTW_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-men-rtw-all",
+        "slug": "all-ready-to-wear",
+        "label": "All Ready-to-Wear",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/all-ready-to-wear",
+        "stage": "4",
+    },
+    {
+        "id": "di-men-tshirts-polos",
+        "slug": "t-shirts-polos",
+        "label": "T-shirts & Polos",
+        "labelKo": "티셔츠 & 폴로",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/t-shirts-polos",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-shirts",
+        "slug": "shirts",
+        "label": "Shirts",
+        "labelKo": "셔츠",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/shirts",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-knitwear-sweatshirts",
+        "slug": "knitwear-sweatshirts",
+        "label": "Knitwear & Sweatshirts",
+        "labelKo": "니트웨어 & 스웨터",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/knitwear-sweatshirts",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-trousers-shorts",
+        "slug": "trousers-shorts",
+        "label": "Trousers & Shorts",
+        "labelKo": "팬츠 & 쇼츠",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/trousers-shorts",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-denim",
+        "slug": "denim",
+        "label": "Denim",
+        "labelKo": "데님",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/denim",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-beachwear",
+        "slug": "beachwear",
+        "label": "Swimwear",
+        "labelKo": "스윔웨어",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/beachwear",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-outerwear",
+        "slug": "outerwear",
+        "label": "Outerwear",
+        "labelKo": "아우터웨어",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/outerwear",
+        "stage": "4",
+    },
+    {
+        "id": "di-men-tailored-jackets",
+        "slug": "tailored-jackets",
+        "label": "Jackets",
+        "labelKo": "재킷",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/tailored-jackets",
+        "stage": "4",
+    },
+    {
+        "id": "di-men-leather",
+        "slug": "leather",
+        "label": "Leather",
+        "labelKo": "레더",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/leather",
+        "stage": "4",
+    },
+    {
+        "id": "di-men-suits-tuxedos",
+        "slug": "suits-tuxedos",
+        "label": "Suits & Tuxedos",
+        "labelKo": "수트 & 턱시도",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/ready-to-wear/suits-tuxedos",
+        "stage": "4",
+    },
+]
+
+PARENT_COLS_MEN_RTW = [
+    "dior",
+    "di-mens",
+]
+
 
 PARENT_COLS = [
     "dior",

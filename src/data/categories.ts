@@ -855,6 +855,27 @@ export type SubcategoryId =
   | "di-clutches"
   | "di-mini-bags"
   | "di-accessorize-bag"
+  | "di-bags-mens"
+  | "di-men-bags-all"
+  | "di-men-crossbody-shoulder-bags"
+  | "di-men-backpacks"
+  | "di-men-small-bags"
+  | "di-men-tote-bags"
+  | "di-men-travel-bags"
+  | "di-men-briefcases"
+  | "di-men-accessorize-bag"
+  | "di-mens"
+  | "di-men-rtw-all"
+  | "di-men-tshirts-polos"
+  | "di-men-shirts"
+  | "di-men-knitwear-sweatshirts"
+  | "di-men-trousers-shorts"
+  | "di-men-denim"
+  | "di-men-beachwear"
+  | "di-men-outerwear"
+  | "di-men-tailored-jackets"
+  | "di-men-leather"
+  | "di-men-suits-tuxedos"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1099,6 +1120,35 @@ export const DI_BAGS_WOMEN_LEAF_IDS: SubcategoryId[] = [
   "di-mini-bags",
   "di-accessorize-bag",
 ];
+
+/** Dior men's bags by category (official GB mens bags PLPs). */
+export const DI_BAGS_MEN_LEAF_IDS: SubcategoryId[] = [
+  "di-men-bags-all",
+  "di-men-crossbody-shoulder-bags",
+  "di-men-backpacks",
+  "di-men-small-bags",
+  "di-men-tote-bags",
+  "di-men-travel-bags",
+  "di-men-briefcases",
+  "di-men-accessorize-bag",
+];
+
+
+/** Dior men's ready-to-wear by category (official GB mens RTW PLPs). */
+export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "di-men-rtw-all",
+  "di-men-tshirts-polos",
+  "di-men-shirts",
+  "di-men-knitwear-sweatshirts",
+  "di-men-trousers-shorts",
+  "di-men-denim",
+  "di-men-beachwear",
+  "di-men-outerwear",
+  "di-men-tailored-jackets",
+  "di-men-leather",
+  "di-men-suits-tuxedos",
+];
+
 
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
@@ -2450,6 +2500,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "dior-bags",
     "di-bags-womens",
     ...DI_BAGS_WOMEN_LEAF_IDS,
+    "di-bags-mens",
+    ...DI_BAGS_MEN_LEAF_IDS,
+    "di-mens",
+    ...DI_MEN_RTW_LEAF_IDS,
   ],
   "dior-accessories": [
     "dior-accessories",
@@ -2522,7 +2576,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-timepieces-all": ["di-timepieces-all"],
   "di-la-d-de-dior": ["di-la-d-de-dior"],
   "di-straps": ["di-straps"],
-  "dior-bags": ["dior-bags", "di-bags-womens", ...DI_BAGS_WOMEN_LEAF_IDS],
+  "dior-bags": [
+    "dior-bags",
+    "di-bags-womens",
+    ...DI_BAGS_WOMEN_LEAF_IDS,
+    "di-bags-mens",
+    ...DI_BAGS_MEN_LEAF_IDS,
+  ],
   "di-bags-womens": ["di-bags-womens", ...DI_BAGS_WOMEN_LEAF_IDS],
   "di-bags-all": ["di-bags-all"],
   "di-handbags": ["di-handbags"],
@@ -2532,6 +2592,28 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-clutches": ["di-clutches"],
   "di-mini-bags": ["di-mini-bags"],
   "di-accessorize-bag": ["di-accessorize-bag"],
+  "di-bags-mens": ["di-bags-mens", ...DI_BAGS_MEN_LEAF_IDS],
+  "di-men-bags-all": ["di-men-bags-all"],
+  "di-men-crossbody-shoulder-bags": ["di-men-crossbody-shoulder-bags"],
+  "di-men-backpacks": ["di-men-backpacks"],
+  "di-men-small-bags": ["di-men-small-bags"],
+  "di-men-tote-bags": ["di-men-tote-bags"],
+  "di-men-travel-bags": ["di-men-travel-bags"],
+  "di-men-briefcases": ["di-men-briefcases"],
+  "di-men-accessorize-bag": ["di-men-accessorize-bag"],
+
+  "di-mens": ["di-mens", ...DI_MEN_RTW_LEAF_IDS],
+  "di-men-rtw-all": ["di-men-rtw-all"],
+  "di-men-tshirts-polos": ["di-men-tshirts-polos"],
+  "di-men-shirts": ["di-men-shirts"],
+  "di-men-knitwear-sweatshirts": ["di-men-knitwear-sweatshirts"],
+  "di-men-trousers-shorts": ["di-men-trousers-shorts"],
+  "di-men-denim": ["di-men-denim"],
+  "di-men-beachwear": ["di-men-beachwear"],
+  "di-men-outerwear": ["di-men-outerwear"],
+  "di-men-tailored-jackets": ["di-men-tailored-jackets"],
+  "di-men-leather": ["di-men-leather"],
+  "di-men-suits-tuxedos": ["di-men-suits-tuxedos"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -3583,6 +3665,76 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "dior",
+        labelKo: "디올",
+        href: "/shop?category=luxury&sub=dior",
+        children: [
+          {
+            id: "di-mens",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=di-mens",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-men-rtw-all",
+                labelKo: "전체",
+                href: "/shop?category=luxury&sub=di-men-rtw-all",
+              },
+              {
+                id: "di-men-tshirts-polos",
+                labelKo: "티셔츠 & 폴로",
+                href: "/shop?category=luxury&sub=di-men-tshirts-polos",
+              },
+              {
+                id: "di-men-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=di-men-shirts",
+              },
+              {
+                id: "di-men-knitwear-sweatshirts",
+                labelKo: "니트웨어 & 스웨터",
+                href: "/shop?category=luxury&sub=di-men-knitwear-sweatshirts",
+              },
+              {
+                id: "di-men-trousers-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=di-men-trousers-shorts",
+              },
+              {
+                id: "di-men-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=di-men-denim",
+              },
+              {
+                id: "di-men-outerwear",
+                labelKo: "아우터웨어",
+                href: "/shop?category=luxury&sub=di-men-outerwear",
+              },
+              {
+                id: "di-men-tailored-jackets",
+                labelKo: "재킷",
+                href: "/shop?category=luxury&sub=di-men-tailored-jackets",
+              },
+              {
+                id: "di-men-beachwear",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=di-men-beachwear",
+              },
+              {
+                id: "di-men-leather",
+                labelKo: "레더",
+                href: "/shop?category=luxury&sub=di-men-leather",
+              },
+              {
+                id: "di-men-suits-tuxedos",
+                labelKo: "수트 & 턱시도",
+                href: "/shop?category=luxury&sub=di-men-suits-tuxedos",
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: "prada",
         labelKo: "프라다",
         href: "/shop?category=luxury&sub=prada",
@@ -4217,6 +4369,54 @@ export const navCategories: NavCategory[] = [
                 id: "di-accessorize-bag",
                 labelKo: "백 액세서리",
                 href: "/shop?category=bags&sub=di-accessorize-bag",
+              },
+            ],
+          },
+          {
+            id: "di-bags-mens",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=di-bags-mens",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-men-bags-all",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=di-men-bags-all",
+              },
+              {
+                id: "di-men-crossbody-shoulder-bags",
+                labelKo: "크로스바디 & 숄더백",
+                href: "/shop?category=bags&sub=di-men-crossbody-shoulder-bags",
+              },
+              {
+                id: "di-men-backpacks",
+                labelKo: "백팩",
+                href: "/shop?category=bags&sub=di-men-backpacks",
+              },
+              {
+                id: "di-men-small-bags",
+                labelKo: "스몰백",
+                href: "/shop?category=bags&sub=di-men-small-bags",
+              },
+              {
+                id: "di-men-tote-bags",
+                labelKo: "토트백",
+                href: "/shop?category=bags&sub=di-men-tote-bags",
+              },
+              {
+                id: "di-men-travel-bags",
+                labelKo: "트래블백",
+                href: "/shop?category=bags&sub=di-men-travel-bags",
+              },
+              {
+                id: "di-men-briefcases",
+                labelKo: "브리프케이스",
+                href: "/shop?category=bags&sub=di-men-briefcases",
+              },
+              {
+                id: "di-men-accessorize-bag",
+                labelKo: "백 액세서리",
+                href: "/shop?category=bags&sub=di-men-accessorize-bag",
               },
             ],
           },
