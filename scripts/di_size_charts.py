@@ -64,6 +64,73 @@ DI_MEN_RTW_SML = {
     ],
 }
 
+# Shirts — collar (cm) conversion + body measurements from dior.com Size Chart drawer.
+DI_MEN_RTW_SHIRT = {
+    "id": "di-men-rtw-shirt",
+    "titleKo": "디올 남성 셔츠 사이즈 가이드",
+    "noteKo": (
+        "dior.com(영국) 공식 셔츠 사이즈 가이드입니다. "
+        "Briq 사이즈 선택란의 숫자(37·38 등)는 목둘레(cm) 기준 Dior Size와 "
+        "대응합니다. 실측(cm) 탭에서 어깨·가슴·소매·기장 치수를 확인할 수 있습니다."
+    ),
+    "headers": ["목둘레 (cm)", "목둘레 (inch)", "SML", "CN"],
+    "rows": [
+        ["37", "14.5", "S", "165/80A"],
+        ["38", "15", "S", "170/84A"],
+        ["39", "15.5", "M", "170/88A"],
+        ["40", "15.75", "M", "175/92A"],
+        ["41", "16", "L", "175/96A"],
+        ["42", "16.5", "L", "180/100A"],
+        ["43", "17", "XL", "180/104A"],
+        ["44", "17.5", "XL", "185/100A"],
+        ["45", "17.75", "XXL", "185/108B"],
+        ["46", "18", "XXL", "185/104A"],
+    ],
+    "tabs": [
+        {
+            "id": "convert",
+            "labelKo": "사이즈 변환",
+            "headers": ["목둘레 (cm)", "목둘레 (inch)", "SML", "CN"],
+            "rows": [
+                ["37", "14.5", "S", "165/80A"],
+                ["38", "15", "S", "170/84A"],
+                ["39", "15.5", "M", "170/88A"],
+                ["40", "15.75", "M", "175/92A"],
+                ["41", "16", "L", "175/96A"],
+                ["42", "16.5", "L", "180/100A"],
+                ["43", "17", "XL", "180/104A"],
+                ["44", "17.5", "XL", "185/100A"],
+                ["45", "17.75", "XXL", "185/108B"],
+                ["46", "18", "XXL", "185/104A"],
+            ],
+        },
+        {
+            "id": "measure",
+            "labelKo": "실측 (cm)",
+            "headers": [
+                "Dior Size",
+                "칼라 폭",
+                "어깨",
+                "가슴",
+                "소매",
+                "기장",
+            ],
+            "rows": [
+                ["37", "22", "16", "39", "26", "31"],
+                ["38", "22", "16", "40", "26", "31"],
+                ["39", "22", "17", "42", "26", "32"],
+                ["40", "22", "17", "43", "26", "32"],
+                ["41", "22", "17", "45", "27", "32"],
+                ["42", "22", "18", "46", "27", "32"],
+                ["43", "22", "18", "48", "27", "33"],
+                ["44", "22", "18", "50", "27", "33"],
+                ["45", "22", "19", "51", "27", "33"],
+                ["46", "22", "19", "52", "27", "33"],
+            ],
+        },
+    ],
+}
+
 # Denim / waist-inch SKUs — same official mapping, waist-first columns.
 DI_MEN_RTW_DENIM = {
     "id": "di-men-rtw-denim",
@@ -93,6 +160,21 @@ _LETTER = re.compile(
     re.I,
 )
 
+_SHIRT_LEAVES = {"di-men-shirts"}
+_SML_LEAVES = {
+    "di-men-knitwear-sweatshirts",
+    "di-men-tshirts-polos",
+    "di-men-beachwear",
+    "di-men-outerwear",
+    "di-men-leather",
+}
+_DENIM_LEAVES = {"di-men-denim"}
+_IT_LEAVES = {
+    "di-men-trousers-shorts",
+    "di-men-tailored-jackets",
+    "di-men-suits-tuxedos",
+}
+
 
 def _variant_labels(variants: list[dict]) -> list[str]:
     out: list[str] = []
@@ -114,32 +196,61 @@ def _nums(labels: list[str]) -> list[int]:
     return nums
 
 
+def _is_shirt_collar(labels: list[str]) -> bool:
+    nums = _nums(labels)
+    return bool(nums) and min(nums) >= 36 and max(nums) <= 46
+
+
+def _chart_by_leaf(leaf_id: str) -> dict | None:
+    leaf = leaf_id or ""
+    if leaf in _SHIRT_LEAVES or "shirt" in leaf:
+        return copy.deepcopy(DI_MEN_RTW_SHIRT)
+    if leaf in _DENIM_LEAVES or leaf.endswith("-denim"):
+        return copy.deepcopy(DI_MEN_RTW_DENIM)
+    if leaf in _SML_LEAVES:
+        return copy.deepcopy(DI_MEN_RTW_SML)
+    if leaf in _IT_LEAVES:
+        return copy.deepcopy(DI_MEN_RTW_IT)
+    return copy.deepcopy(DI_MEN_RTW_SML)
+
+
 def size_chart_for_di_mens_rtw(
     variants: list[dict],
     *,
     leaf_id: str = "",
+    title_en: str = "",
 ) -> dict | None:
-    """Pick IT / SML / denim chart from variant labels + leaf."""
+    """Pick shirt / IT / SML / denim chart from variant labels + leaf."""
     labels = _variant_labels(variants)
-    if not labels:
-        return None
     leaf = leaf_id or ""
+    title = (title_en or "").lower()
+
+    if not labels:
+        if leaf or title:
+            return _chart_by_leaf(leaf)
+        return None
+
     nums = _nums(labels)
     letterish = sum(1 for lab in labels if _LETTER.match(lab.strip())) >= max(
         1, len(labels) // 2
     )
 
-    if leaf.endswith("-denim") or (
+    if (
+        leaf in _SHIRT_LEAVES
+        or "shirt" in title
+        or _is_shirt_collar(labels)
+    ):
+        return copy.deepcopy(DI_MEN_RTW_SHIRT)
+
+    if leaf.endswith("-denim") or leaf in _DENIM_LEAVES or (
         nums
         and max(nums) <= 42
         and min(nums) <= 36
         and max(nums) - min(nums) <= 16
         and not letterish
-        and (not nums or max(nums) < 44)
+        and max(nums) < 44
     ):
-        # Waist inches (26–40), not IT 44+
-        if nums and max(nums) < 44:
-            return copy.deepcopy(DI_MEN_RTW_DENIM)
+        return copy.deepcopy(DI_MEN_RTW_DENIM)
 
     if letterish or (not nums and any(re.search(r"[A-Za-z]", lab) for lab in labels)):
         return copy.deepcopy(DI_MEN_RTW_SML)

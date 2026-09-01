@@ -212,10 +212,78 @@ def features_from_ko_hit(h: dict | None) -> list[str]:
     return [ln.strip() for ln in chars.replace("\r", "").split("\n") if ln.strip()]
 
 
-def story_sections_for_di(description_ko: str, images: list[str]) -> list[dict]:
+def story_sections_for_di(
+    description_ko: str,
+    images: list[str],
+    *,
+    rtw: bool = False,
+    features_ko: list[str] | None = None,
+    material_ko: str = "",
+    madein_ko: str = "",
+) -> list[dict]:
     if not images:
         return [{"titleKo": "제품 소개", "bodyKo": description_ko, "image": ""}]
-    sections: list[dict] = [
+    if rtw:
+        detail_body = (
+            " · ".join((features_ko or [])[:8])
+            if features_ko
+            else (
+                "Dior 공식 제품 컷으로 확인하는 실루엣·소재·"
+                "테일러링 디테일입니다."
+            )
+        )
+        material_body = (
+            f"주요 소재: {material_ko}. {madein_ko}."
+            if material_ko and madein_ko
+            else (f"주요 소재: {material_ko}." if material_ko else madein_ko)
+        )
+        look_idx = next(
+            (i for i, img in enumerate(images) if "look_" in img.lower()),
+            None,
+        )
+        sections: list[dict] = [
+            {"titleKo": "제품 소개", "bodyKo": description_ko, "image": images[0]},
+        ]
+        if len(images) > 3:
+            sections.append(
+                {
+                    "titleKo": "디테일 & 특징",
+                    "bodyKo": detail_body,
+                    "image": images[min(3, len(images) - 1)],
+                }
+            )
+        if len(images) > 5:
+            sections.append(
+                {
+                    "titleKo": "소재 & 제작",
+                    "bodyKo": material_body or detail_body,
+                    "image": images[min(5, len(images) - 1)],
+                }
+            )
+        if look_idx is not None:
+            sections.append(
+                {
+                    "titleKo": "디올 룩",
+                    "bodyKo": (
+                        "Dior 남성 컬렉션 룩과 함께 제안되는 "
+                        "스타일링 레퍼런스입니다."
+                    ),
+                    "image": images[look_idx],
+                }
+            )
+        elif len(images) > 7:
+            sections.append(
+                {
+                    "titleKo": "착용 & 스타일",
+                    "bodyKo": (
+                        "포멀부터 데일리까지 다양한 룩에 어울리는 "
+                        "디올 남성 레디투웨어 실루엣입니다."
+                    ),
+                    "image": images[min(7, len(images) - 1)],
+                }
+            )
+        return sections
+    sections = [
         {"titleKo": "제품 소개", "bodyKo": description_ko, "image": images[0]},
     ]
     if len(images) > 4:
@@ -235,7 +303,7 @@ def story_sections_for_di(description_ko: str, images: list[str]) -> list[dict]:
                 "titleKo": "착용 & 스타일",
                 "bodyKo": (
                     "데일리부터 트래블까지 다양한 룩에 어울리는 "
-                    "실용적인 디올 백 실루엣입니다."
+                    "디올 백 실루엣입니다."
                 ),
                 "image": images[min(8, len(images) - 1)],
             }
@@ -423,7 +491,11 @@ def refresh_existing(existing: dict, row: dict) -> dict:
         p["variants"] = [v]
     p["price"] = list_price_from_variants(p.get("variants") or [], price)
     if any(c in RTWISH for c in collections + [leaf]):
-        chart = size_chart_for_di_mens_rtw(p.get("variants") or [], leaf_id=leaf)
+        chart = size_chart_for_di_mens_rtw(
+            p.get("variants") or [],
+            leaf_id=leaf,
+            title_en=p.get("name") or "",
+        )
         if chart:
             p["sizeChart"] = chart
     return p
@@ -556,13 +628,21 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "sku": sku,
         "sourceUrl": source_url,
         "variants": variants,
-        "storySections": story_sections_for_di(description_ko or title_ko, images),
+        "storySections": story_sections_for_di(
+            description_ko or title_ko,
+            images,
+            rtw=any(c in RTWISH for c in collections + [leaf]),
+        ),
     }
     feats = features_from_ko_hit(h)
     if feats:
         product["featuresKo"] = feats
     if any(c in RTWISH for c in collections + [leaf]):
-        chart = size_chart_for_di_mens_rtw(variants, leaf_id=leaf)
+        chart = size_chart_for_di_mens_rtw(
+            variants,
+            leaf_id=leaf,
+            title_en=title_en,
+        )
         if chart:
             product["sizeChart"] = chart
     return product

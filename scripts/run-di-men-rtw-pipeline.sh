@@ -25,6 +25,10 @@ echo "=== MERGE ==="
 python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-men-rtw-merge.log
 echo "EXIT_MERGE:$?"
 
+echo "=== RTW PDP ENRICH ==="
+python3 scripts/enrich-di-men-rtw-pdp.py | tee /tmp/di-men-rtw-enrich.log
+echo "EXIT_ENRICH:$?"
+
 echo "=== KO ==="
 python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-rtw-ko.log
 echo "EXIT_KO:$?"
@@ -72,6 +76,7 @@ git add \
   .cursor/rules/dior-catalog.mdc \
   scripts/di_common.py \
   scripts/di_size_charts.py \
+  scripts/enrich-di-men-rtw-pdp.py \
   scripts/merge-di-catalog-ko.py \
   scripts/scrape-di-men-rtw.py \
   scripts/run-di-men-rtw-pipeline.sh \
