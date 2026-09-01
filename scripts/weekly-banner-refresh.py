@@ -215,6 +215,10 @@ assert FIXED_PRADA_BRAND_BANNER not in SLOT_THEMES, "locked Prada brand banner m
 FIXED_ARC_BRAND_BANNER = "brand-arcteryx-ridge.jpg"
 assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner must not be in SLOT_THEMES"
 
+# Dior bags brand hero — locked All Bags forest bench creative.
+FIXED_DIOR_BAGS_BRAND_BANNER = "brand-dior-bags.jpg"
+assert FIXED_DIOR_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Dior bags brand banner must not be in SLOT_THEMES"
+
 # Locked homepage / brand creatives — never rotated or dropped from manifest.
 LOCKED_BANNERS = {
     FIXED_HOME_HERO,
@@ -231,6 +235,7 @@ LOCKED_BANNERS = {
     FIXED_BURBERRY_BRAND_BANNER,
     FIXED_PRADA_BRAND_BANNER,
     FIXED_ARC_BRAND_BANNER,
+    FIXED_DIOR_BAGS_BRAND_BANNER,
 }
 
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.

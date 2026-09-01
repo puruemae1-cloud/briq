@@ -161,11 +161,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Dior",
     nameKo: "디올",
     logoSrc: "/brands/dior.svg",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    // Locked All Bags campaign creative — forest bench / Dior Promenade bag.
+    images: ["/banners/brand-dior-bags.jpg"],
   },
   "london-undercover": {
     key: "london-undercover",
