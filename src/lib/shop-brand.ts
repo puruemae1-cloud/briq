@@ -35,10 +35,12 @@ export function resolveShopBrand(
   const cat = findCategory(category);
   const path = findNavPath(cat?.children, sub);
   if (path?.length) {
+    let found: BrandHeroDef | null = null;
     for (const node of path) {
       const key = brandRootToKey[node.id];
-      if (key) return brandHeroes[key];
+      if (key) found = brandHeroes[key];
     }
+    if (found) return found;
   }
 
   const direct = brandRootToKey[sub];

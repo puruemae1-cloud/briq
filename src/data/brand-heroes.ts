@@ -10,6 +10,7 @@ export type BrandKey =
   | "chanel-watches"
   | "dior-watches"
   | "dior-bags"
+  | "dior-mens-rtw"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -164,6 +165,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     // Locked All Bags campaign creative — forest bench / Dior Promenade bag.
     images: ["/banners/brand-dior-bags.jpg"],
   },
+  "dior-mens-rtw": {
+    key: "dior-mens-rtw",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    // Locked men's RTW campaign — boat / technical jacket (all-ready-to-wear PLP).
+    images: ["/banners/brand-dior-mens-rtw.jpg"],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -284,18 +293,18 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-men-travel-bags": "dior-bags",
   "di-men-briefcases": "dior-bags",
   "di-men-accessorize-bag": "dior-bags",
-  "di-mens": "dior",
-  "di-men-rtw-all": "dior",
-  "di-men-tshirts-polos": "dior",
-  "di-men-shirts": "dior",
-  "di-men-knitwear-sweatshirts": "dior",
-  "di-men-trousers-shorts": "dior",
-  "di-men-denim": "dior",
-  "di-men-beachwear": "dior",
-  "di-men-outerwear": "dior",
-  "di-men-tailored-jackets": "dior",
-  "di-men-leather": "dior",
-  "di-men-suits-tuxedos": "dior",
+  "di-mens": "dior-mens-rtw",
+  "di-men-rtw-all": "dior-mens-rtw",
+  "di-men-tshirts-polos": "dior-mens-rtw",
+  "di-men-shirts": "dior-mens-rtw",
+  "di-men-knitwear-sweatshirts": "dior-mens-rtw",
+  "di-men-trousers-shorts": "dior-mens-rtw",
+  "di-men-denim": "dior-mens-rtw",
+  "di-men-beachwear": "dior-mens-rtw",
+  "di-men-outerwear": "dior-mens-rtw",
+  "di-men-tailored-jackets": "dior-mens-rtw",
+  "di-men-leather": "dior-mens-rtw",
+  "di-men-suits-tuxedos": "dior-mens-rtw",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

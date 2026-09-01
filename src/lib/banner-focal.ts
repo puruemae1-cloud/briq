@@ -24,6 +24,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* All Bags forest bench — keep models + Promenade bag centred */
   "brand-dior-bags.jpg": "50% 58%",
   "brand-dior-bags.webp": "50% 58%",
+  /* Men's RTW boat campaign — model + jacket on the right */
+  "brand-dior-mens-rtw.jpg": "68% 46%",
+  "brand-dior-mens-rtw.webp": "68% 46%",
 };
 
 /**
