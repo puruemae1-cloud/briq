@@ -10,6 +10,36 @@ export function gbpToBriqAddonKrw(gbp: number) {
   return Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
 }
 
+/** Lowest purchasable KRW for PLP cards / metadata (variant → product → gbp fallback). */
+export function productDisplayPrice(
+  product: Product,
+  variant?: ProductVariant | null,
+): number {
+  if (variant?.price != null && variant.price > 0) return variant.price;
+  if (product.price != null && product.price > 0) return product.price;
+  const variantPrices = (product.variants ?? [])
+    .map((v) => v.price)
+    .filter((p): p is number => typeof p === "number" && p > 0);
+  if (variantPrices.length > 0) return Math.min(...variantPrices);
+  if (product.gbpPrice != null && product.gbpPrice > 0) {
+    return gbpToBriqKrw(product.gbpPrice);
+  }
+  return 0;
+}
+
+/** Compare-at KRW aligned with `productDisplayPrice` selection rules. */
+export function productCompareAtPrice(
+  product: Product,
+  variant?: ProductVariant | null,
+): number | undefined {
+  if (variant?.compareAtPrice != null) return variant.compareAtPrice;
+  if (product.compareAtPrice != null) return product.compareAtPrice;
+  const was = (product.variants ?? [])
+    .map((v) => v.compareAtPrice)
+    .filter((p): p is number => typeof p === "number" && p > 0);
+  return was.length > 0 ? Math.max(...was) : undefined;
+}
+
 /** Sale discount percent from compareAt → price, or null if not on sale.
  * When a variant is selected, only that variant's compareAtPrice counts
  * (so non-sale colours don't inherit another colourway's discount).
@@ -18,10 +48,8 @@ export function productSalePercent(
   product: Product,
   variant?: ProductVariant | null,
 ) {
-  const price = variant?.price ?? product.price;
-  const was = variant
-    ? variant.compareAtPrice
-    : product.compareAtPrice;
+  const price = productDisplayPrice(product, variant);
+  const was = productCompareAtPrice(product, variant);
   if (!was || was <= price) return null;
   return Math.max(1, Math.round((1 - price / was) * 100));
 }

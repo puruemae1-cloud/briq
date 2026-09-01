@@ -194,6 +194,55 @@ LEAF_PREF = [
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
 
+def list_price_from_variants(variants: list[dict], fallback: int = 0) -> int:
+    prices = [
+        int(v["price"])
+        for v in variants
+        if isinstance(v.get("price"), (int, float)) and v.get("price") > 0
+    ]
+    return min(prices) if prices else fallback
+
+
+def features_from_ko_hit(h: dict | None) -> list[str]:
+    if not h:
+        return []
+    chars = h.get("characteristics") or ""
+    if not isinstance(chars, str):
+        return []
+    return [ln.strip() for ln in chars.replace("\r", "").split("\n") if ln.strip()]
+
+
+def story_sections_for_di(description_ko: str, images: list[str]) -> list[dict]:
+    if not images:
+        return [{"titleKo": "제품 소개", "bodyKo": description_ko, "image": ""}]
+    sections: list[dict] = [
+        {"titleKo": "제품 소개", "bodyKo": description_ko, "image": images[0]},
+    ]
+    if len(images) > 4:
+        sections.append(
+            {
+                "titleKo": "디테일",
+                "bodyKo": (
+                    "Dior 공식 제품 컷으로 확인하는 실루엣·소재·"
+                    "시그니처 장식 디테일입니다."
+                ),
+                "image": images[4],
+            }
+        )
+    if len(images) > 8:
+        sections.append(
+            {
+                "titleKo": "착용 & 스타일",
+                "bodyKo": (
+                    "데일리부터 트래블까지 다양한 룩에 어울리는 "
+                    "실용적인 디올 백 실루엣입니다."
+                ),
+                "image": images[min(8, len(images) - 1)],
+            }
+        )
+    return sections
+
+
 def prefer_leaf(collections: list[str], fallback: str) -> tuple[str, list[str]]:
     """Return (subcategory, reordered collections) preferring specific leaves."""
     cols = list(dict.fromkeys(collections or []))
@@ -372,6 +421,7 @@ def refresh_existing(existing: dict, row: dict) -> dict:
         v["diCollections"] = collections
         v["sourceUrl"] = p["sourceUrl"]
         p["variants"] = [v]
+    p["price"] = list_price_from_variants(p.get("variants") or [], price)
     if any(c in RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_mens_rtw(p.get("variants") or [], leaf_id=leaf)
         if chart:
@@ -502,17 +552,15 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "images": images,
         "accent": ACCENTS[idx % len(ACCENTS)],
         "gbpPrice": gbp_f,
+        "price": list_price_from_variants(variants, price),
         "sku": sku,
         "sourceUrl": source_url,
         "variants": variants,
-        "storySections": [
-            {
-                "titleKo": "제품 소개",
-                "bodyKo": description_ko or title_ko,
-                "image": image,
-            }
-        ],
+        "storySections": story_sections_for_di(description_ko or title_ko, images),
     }
+    feats = features_from_ko_hit(h)
+    if feats:
+        product["featuresKo"] = feats
     if any(c in RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_mens_rtw(variants, leaf_id=leaf)
         if chart:

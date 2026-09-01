@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
-import { formatKrw, getProduct, isProductInStock } from "@/data/products";
+import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
 import { mediaUrl } from "@/lib/product-image";
 import { getSiteUrl } from "@/lib/site";
 
@@ -19,11 +19,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = product.nameKo || product.name;
   const brand = product.brand || "Briq";
   const title = `${brand} ${name} | 명품직구 Briq`;
+  const listPrice = productDisplayPrice(product);
   const description = [
     `${brand} ${name}.`,
     product.compareAtPrice
-      ? `판매가 ${formatKrw(product.price)}.`
-      : `가격 ${formatKrw(product.price)}.`,
+      ? `판매가 ${formatKrw(listPrice)}.`
+      : `가격 ${formatKrw(listPrice)}.`,
     "Briq 영국 명품직구·구매대행, 항공배송·관부가세 포함.",
   ].join(" ");
   const image = mediaUrl(product.image || product.images?.[0] || "");

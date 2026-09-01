@@ -24,6 +24,8 @@ export {
   gbpToBriqKrw,
   isProductInStock,
   isVariantInStock,
+  productCompareAtPrice,
+  productDisplayPrice,
   productSalePercent,
 } from "@/data/product-utils";
 import type { Product } from "@/data/product-types";

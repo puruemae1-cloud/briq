@@ -5,13 +5,15 @@ import type { Product } from "@/data/product-types";
 import {
   formatKrw,
   isProductInStock,
+  productCompareAtPrice,
+  productDisplayPrice,
   productSalePercent,
 } from "@/data/product-utils";
 import { needsChanelMobilePackshotZoom, needsChanelPcPackshotZoom } from "@/lib/ch-packshot-zoom";
 
 function productCardPriceLabel(product: Product): string {
-  const base = formatKrw(product.price);
-  const prices = (product.variants ?? []).map((v) => v.price);
+  const base = formatKrw(productDisplayPrice(product));
+  const prices = (product.variants ?? []).map((v) => v.price).filter((p) => p > 0);
   if (prices.length === 0) return base;
   const min = Math.min(...prices);
   const max = Math.max(...prices);
@@ -26,8 +28,10 @@ function productHref(product: Product) {
 
 export function ProductCard({ product }: { product: Product }) {
   const soldOut = !isProductInStock(product);
+  const listPrice = productDisplayPrice(product);
+  const compareAt = productCompareAtPrice(product);
   const salePct = productSalePercent(product);
-  const onSale = Boolean(salePct && product.compareAtPrice);
+  const onSale = Boolean(salePct && compareAt);
   const isClearance =
     product.subcategory === "cw-clearance" ||
     product.subcategory === "gg-sale" ||
@@ -81,11 +85,11 @@ export function ProductCard({ product }: { product: Product }) {
           <h3 className="product-card__name">{product.nameKo}</h3>
           {soldOut ? (
             <p className="product-card__price">Sold Out</p>
-          ) : onSale && product.compareAtPrice ? (
+          ) : onSale && compareAt ? (
             <p className="product-card__price product-card__price--sale">
-              <span className="product-card__price-now">{formatKrw(product.price)}</span>
+              <span className="product-card__price-now">{formatKrw(listPrice)}</span>
               <span className="product-card__price-was">
-                {formatKrw(product.compareAtPrice)}
+                {formatKrw(compareAt)}
               </span>
               <span className="product-card__price-pct">{salePct}%</span>
             </p>
