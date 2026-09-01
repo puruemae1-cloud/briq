@@ -41,12 +41,9 @@ TARGET = np.array(TARGET_RGB, dtype=np.float32)
 DEFAULT_DIRS = [
     # bb-pdp excluded — Burberry official Scene7 crops must stay untouched
     # (greymat/rembg damaged on-model lifestyle shots).
+    # ax-* excluded — Arc'teryx uses warm tan / light-grey studio mats; keep CDN bytes.
     "ps-pdp",
     "bs-pdp",
-    "ax-pdp",
-    "axa-pdp",
-    "axg-pdp",
-    "axo-pdp",
     "gg-pdp",
     "lu-pdp",
     "cw-pdp",

@@ -2,6 +2,7 @@
 """Build ax-outlet-catalog.ts from outlet raw + PDP + translations."""
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -131,7 +132,16 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
         ],
         key=lambda p: int(p.stem),
     )
-    out = [f"/products/axo-pdp/{pid}/{cslug}/{p.name}" for p in nums if p.stat().st_size > 800]
+    out = []
+    seen: set[str] = set()
+    for p in nums:
+        if p.stat().st_size <= 800:
+            continue
+        digest = hashlib.md5(p.read_bytes()).hexdigest()
+        if digest in seen:
+            continue
+        seen.add(digest)
+        out.append(f"/products/axo-pdp/{pid}/{cslug}/{p.name}")
     if not out:
         thumb = d / "thumb.jpg"
         if thumb.exists() and thumb.stat().st_size > 800:

@@ -24,7 +24,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from studio_whiten import whiten_file  # noqa: E402
+from ax_image_common import save_colour_gallery, slugify  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-gear-raw.json"
 OUT_PATH = ROOT / "src/data/ax/ax-gear-pdp-cache.json"
@@ -41,11 +41,6 @@ UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
-
-
-def slugify(text: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
-    return s[:80] or "item"
 
 
 def size_label(raw: str) -> str:
@@ -283,42 +278,18 @@ def gallery_count(pid: str, color: str) -> int:
     )
 
 
-def download_images(pid: str, colour_images: dict[str, list[str]]) -> None:
-    jobs = []
+def download_images(
+    pid: str, colour_images: dict[str, list[str]], *, force: bool = False
+) -> None:
     for color, urls in colour_images.items():
-        if gallery_count(pid, color) >= min(6, len(urls)):
+        urls = [u for u in (urls or []) if u and "placeholder" not in u.lower()]
+        if not urls:
+            continue
+        want = min(8, len(urls))
+        if not force and gallery_count(pid, color) >= want and gallery_count(pid, color) >= min(6, want):
             continue
         cslug = slugify(color)
-        d = IMG_ROOT / pid / cslug
-        d.mkdir(parents=True, exist_ok=True)
-        for i, url in enumerate(urls[:8], start=1):
-            jobs.append((url, d / f"{i}.jpg"))
-        if urls:
-            jobs.append((urls[0], d / "thumb.jpg"))
-    if not jobs:
-        return
-
-    def one(url: str, dest: Path) -> bool:
-        if dest.exists() and dest.stat().st_size > 800:
-            return True
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/*"})
-            with urllib.request.urlopen(req, timeout=40) as r:
-                data = r.read()
-            if len(data) < 800:
-                return False
-            tmp = dest.with_suffix(".tmp.jpg")
-            tmp.write_bytes(data)
-            tmp.replace(dest)
-            whiten_file(dest)
-            return True
-        except Exception:
-            return False
-
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        futs = [ex.submit(one, u, p) for u, p in jobs]
-        for _ in as_completed(futs):
-            pass
+        save_colour_gallery(IMG_ROOT / pid / cslug, urls, greymat=False)
 
 
 def compress_new_jpegs(root: Path) -> None:
@@ -415,7 +386,11 @@ def main() -> None:
             else:
                 cache[pid] = row
                 if not args.skip_images:
-                    download_images(pid, row.get("colourImages") or {})
+                    download_images(
+                        pid,
+                        row.get("colourImages") or {},
+                        force=bool(args.only or refresh),
+                    )
                 in_c = sum(1 for v in row.get("variants") or [] if v.get("inStock"))
                 print(
                     f"  colours={len(row.get('colours') or [])} "

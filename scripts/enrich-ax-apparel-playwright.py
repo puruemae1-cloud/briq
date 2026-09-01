@@ -24,8 +24,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from studio_whiten import save_product_image  # noqa: E402
-from ax_pale_colour import is_pale_ax_colour  # noqa: E402
+from ax_image_common import save_colour_gallery, slugify  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-apparel-raw.json"
 OUT_PATH = ROOT / "src/data/ax/ax-apparel-pdp-cache.json"
@@ -42,11 +41,6 @@ UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
-
-
-def slugify(text: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
-    return s[:80] or "item"
 
 
 def size_label(raw: str) -> str:
@@ -310,7 +304,6 @@ def purge_space_named_images(d: Path) -> int:
 def download_images(
     pid: str, colour_images: dict[str, list[str]], *, force: bool = False
 ) -> None:
-    jobs = []
     for color, urls in colour_images.items():
         urls = [u for u in (urls or []) if u and "placeholder" not in u.lower()]
         if not urls:
@@ -323,46 +316,7 @@ def download_images(
         want = min(8, len(urls))
         if not force and have >= want and have >= min(6, want):
             continue
-        # Pale colourways keep official CDN bytes (no greymat/rembg).
-        use_gm = not is_pale_ax_colour(color=color, color_key=cslug)
-        for i, url in enumerate(urls[:8], start=1):
-            dest = d / f"{i}.jpg"
-            if force or not dest.exists() or dest.stat().st_size <= 800:
-                jobs.append((url, dest, True, use_gm))
-            else:
-                jobs.append((url, dest, False, use_gm))
-        jobs.append(
-            (
-                urls[0],
-                d / "thumb.jpg",
-                force or not (d / "thumb.jpg").exists(),
-                use_gm,
-            )
-        )
-    if not jobs:
-        return
-
-    def one(url: str, dest: Path, overwrite: bool, greymat: bool) -> bool:
-        if not overwrite and dest.exists() and dest.stat().st_size > 800:
-            return True
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/*"})
-            with urllib.request.urlopen(req, timeout=40) as r:
-                data = r.read()
-            if len(data) < 800:
-                return False
-            # Atomic write avoids macOS creating "1 2.jpg" duplicates
-            tmp = dest.with_suffix(".tmp.jpg")
-            save_product_image(tmp, data, greymat=greymat)
-            tmp.replace(dest)
-            return True
-        except Exception:
-            return False
-
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        futs = [ex.submit(one, u, p, ow, gm) for u, p, ow, gm in jobs]
-        for _ in as_completed(futs):
-            pass
+        save_colour_gallery(d, urls, greymat=False)
 
 
 def compress_new_jpegs(root: Path) -> None:

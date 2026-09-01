@@ -2,6 +2,7 @@
 """Build ax-catalog.ts from Arc'teryx footwear raw + PDP + translations."""
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -130,7 +131,14 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
         ],
         key=lambda p: int(p.stem),
     )
-    out = [f"/products/ax-pdp/{pid}/{cslug}/{p.name}" for p in nums]
+    out = []
+    seen: set[str] = set()
+    for p in nums:
+        digest = hashlib.md5(p.read_bytes()).hexdigest()
+        if digest in seen:
+            continue
+        seen.add(digest)
+        out.append(f"/products/ax-pdp/{pid}/{cslug}/{p.name}")
     thumb = d / "thumb.jpg"
     if thumb.exists():
         tpath = f"/products/ax-pdp/{pid}/{cslug}/thumb.jpg"
