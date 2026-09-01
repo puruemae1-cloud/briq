@@ -140,11 +140,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Dior",
     nameKo: "디올",
     logoSrc: "/brands/dior.svg",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    // Locked women's RTW campaign — grass / countryside (all-ready-to-wear PLP).
+    images: ["/banners/brand-dior-womens-rtw.jpg"],
   },
   "dior-watches": {
     key: "dior-watches",

@@ -223,6 +223,10 @@ assert FIXED_DIOR_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Dior bags brand 
 FIXED_DIOR_MENS_RTW_BRAND_BANNER = "brand-dior-mens-rtw.jpg"
 assert FIXED_DIOR_MENS_RTW_BRAND_BANNER not in SLOT_THEMES, "locked Dior mens RTW brand banner must not be in SLOT_THEMES"
 
+# Dior women's RTW brand hero — locked all-ready-to-wear grass campaign.
+FIXED_DIOR_WOMENS_RTW_BRAND_BANNER = "brand-dior-womens-rtw.jpg"
+assert FIXED_DIOR_WOMENS_RTW_BRAND_BANNER not in SLOT_THEMES, "locked Dior womens RTW brand banner must not be in SLOT_THEMES"
+
 # Locked homepage / brand creatives — never rotated or dropped from manifest.
 LOCKED_BANNERS = {
     FIXED_HOME_HERO,
@@ -241,6 +245,7 @@ LOCKED_BANNERS = {
     FIXED_ARC_BRAND_BANNER,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
+    FIXED_DIOR_WOMENS_RTW_BRAND_BANNER,
 }
 
 # Curated free London panoramas (Wikimedia / Unsplash) — converted to B&W on export.
