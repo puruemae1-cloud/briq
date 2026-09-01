@@ -2,7 +2,6 @@
 """Build ax-apparel-catalog.ts from outdoor apparel raw + enriched PDP + translations."""
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 import sys
@@ -13,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_charts import chart_for  # noqa: E402
 from ax_size_order import sort_ax_sizes  # noqa: E402
+from ax_translate_common import load_ax_translate_cache, make_translate_fn  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-apparel-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-apparel-pdp-cache.json"
@@ -31,18 +31,7 @@ ACCENTS = [
     "#1E3A4A",
 ]
 
-_KO: dict[str, str] = {}
-if TRANSLATE_CACHE.exists():
-    _KO = json.loads(TRANSLATE_CACHE.read_text())
-
-
-def t(text: str | None) -> str:
-    if not text:
-        return ""
-    s = str(text).strip()
-    s = re.sub(r"<[^>]+>", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return _KO.get(s, s)
+t = make_translate_fn(load_ax_translate_cache(TRANSLATE_CACHE))
 
 
 def parse_gbp(val) -> float:
@@ -103,9 +92,11 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     out = []
     seen: set[str] = set()
     for p in nums:
-        if p.stat().st_size <= 800:
+        st = p.stat()
+        if st.st_size <= 800:
             continue
-        digest = hashlib.md5(p.read_bytes()).hexdigest()
+        # Size+mtime dedup — avoids reading 10k+ JPG bytes each weekly rebuild.
+        digest = f"{st.st_size}:{st.st_mtime_ns}"
         if digest in seen:
             continue
         seen.add(digest)
@@ -182,7 +173,7 @@ def colour_name_ko(cname: str) -> str:
     if raw in basic:
         return basic[raw]
     # Prefer cache only when it kept English / basic KO — never Koreanize fancy names
-    cached = _KO.get(raw)
+    cached = t(raw)
     if cached and cached == raw:
         return raw
     if cached and raw in basic:

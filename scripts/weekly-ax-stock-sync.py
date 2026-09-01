@@ -119,20 +119,15 @@ def main() -> None:
     run("build-ax-gear-catalog.py")
     # Ensure gear size charts survive rebuilds / partial image skips.
     run("patch-ax-gear-size-charts.py")
-    # Hard-fail on leftover English in footwear PDP copy (the live "신발 제작" bug class).
-    import json as _json
-
-    fw = _json.loads((ROOT / "src/data/ax/ax-catalog.json").read_text())
-    fw_ids = ",".join(p["id"] for p in fw if isinstance(p, dict) and p.get("id"))
-    print(f"Checking Korean copy for Arc'teryx footwear ({len(fw)} styles)…", flush=True)
+    # Hard-fail on leftover English in all Arc'teryx PDP copy (apparel, footwear, gear).
+    print("Checking Korean copy for all Arc'teryx catalogues…", flush=True)
     subprocess.check_call(
         [
             sys.executable,
             str(ROOT / "scripts" / "check-catalog-korean.py"),
             "--brand",
             "ax",
-            "--ids",
-            fw_ids,
+            "--strict",
             "--fail",
             "--max-ratio",
             "0.40",

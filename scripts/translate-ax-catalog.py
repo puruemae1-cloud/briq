@@ -22,6 +22,7 @@ from ko_qa import (  # noqa: E402
     is_good_korean,
     translate_en_to_ko,
 )
+from ax_translate_common import normalize_en, load_ax_translate_cache  # noqa: E402
 
 CACHE_PATH = ROOT / "src/data/ax/ax-translate-cache.json"
 PDP_PATHS = [
@@ -67,12 +68,30 @@ GLOSSARY: dict[str, str] = {
     "Activity": "활동",
     "Features": "특징",
     "Construction": "구조",
+    "Regular": "레귤러",
+    "Relaxed": "릴랙스드",
+    "Oversized": "오버사이즈",
+    "Slim": "슬림",
+    "Fitted": "핏",
+    "Next to Skin": "스킨핏",
+    "Micro-serged seams": "마이크로 오버로크 솔기",
+    "Fitted sleeves": "슬림핏 소매",
+    "Two side pockets": "양옆 포켓 2개",
+    "Stowable hood": "수납형 후드",
+    "Mid-calf length": "종아리 중간 길이",
+    "Shaped cuffs": "쉐입드 커프",
+    "Laminated elastic hem": "라미네이트 탄성 밑단",
+    "A-line design": "A라인 실루엣",
+    "Adjustable waist drawcord": "조절 가능한 허리 드로우코드",
+    "Adjustable hood drawcords": "조절 가능한 후드 드로우코드",
+    "Low profile thumbholes": "로우 프로파일 엄지손가락 구멍",
+    "Helmet compatible": "헬멧 호환",
+    "Our classic fit is cut comfortably throughout the chest, waist, hip, and thigh. It allows freedom of movement, provides shape, and layers comfortably under our regular and relaxed fit shells.": "클래식 핏은 가슴, 허리, 엉덩이, 허벅지 전체에 걸쳐 편안하게 재단됩니다. 이는 자유로운 움직임을 허용하고, 레귤러하고 편안한 핏의 쉘 아래에 편안하게 모양과 레이어를 제공합니다.",
 }
 
 
 def strip_html(text: str) -> str:
-    s = re.sub(r"<[^>]+>", " ", text or "")
-    return re.sub(r"\s+", " ", s).strip()
+    return normalize_en(text)
 
 
 def collect_strings() -> set[str]:
@@ -181,24 +200,36 @@ def needs_translate(src: str, cached: str | None) -> bool:
 
 
 def main() -> None:
-    cache: dict[str, str] = {}
-    if CACHE_PATH.exists():
-        cache = json.loads(CACHE_PATH.read_text())
+    cache: dict[str, str] = load_ax_translate_cache(CACHE_PATH)
 
     # Seed / refresh glossary first so builds never fall back to awkward MT titles.
     for en, ko in GLOSSARY.items():
-        cache[en] = ko
+        cache[normalize_en(en)] = ko
 
     strings = sorted(collect_strings())
-    todo = [s for s in strings if needs_translate(s, cache.get(s))]
+    todo = [s for s in strings if needs_translate(s, cache.get(normalize_en(s)))]
     print(f"strings={len(strings)} todo={len(todo)} cached={len(cache)}", flush=True)
+
+    def cache_hit(src: str) -> str | None:
+        nk = normalize_en(src)
+        if nk in cache and cache[nk] != nk:
+            return cache[nk]
+        extended = [k for k in cache if k.startswith(nk) and len(k) > len(nk)]
+        if extended:
+            return cache[max(extended, key=len)]
+        return None
 
     done = 0
     failed = 0
     rate_limited = 0
     for s in todo:
         if s in GLOSSARY:
-            cache[s] = GLOSSARY[s]
+            cache[normalize_en(s)] = GLOSSARY[s]
+            done += 1
+            continue
+        pref = cache_hit(s)
+        if pref and is_good_korean(pref, max_ratio=MAX_KO_EN_RATIO):
+            cache[normalize_en(s)] = pref
             done += 1
             continue
         try:
@@ -221,7 +252,7 @@ def main() -> None:
                 time.sleep(1.2)
             continue
         if ko and is_good_korean(ko, max_ratio=0.45):
-            cache[s] = ko
+            cache[normalize_en(s)] = ko
             done += 1
             rate_limited = 0
             if done <= 12 or done % 25 == 0:
@@ -258,7 +289,7 @@ def main() -> None:
         f"Wrote {CACHE_PATH} entries={len(cache)} new/updated={done} weak/fail={failed}",
         flush=True,
     )
-    if failed and done == 0:
+    if failed and done == 0 and rate_limited == 0:
         raise SystemExit(1)
 
 

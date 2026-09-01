@@ -87,11 +87,11 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "bs": [ROOT / "src/data/bs/bs-catalog.json"],
     "ps": [ROOT / "src/data/ps/ps-catalog.json"],
     "ax": [
-        # Prefer JSON companions written by build-ax-*-catalog.py (used by KO gate).
-        ROOT / "src/data/ax/ax-catalog.json",
-        ROOT / "src/data/ax/ax-apparel-catalog.json",
-        ROOT / "src/data/ax/ax-gear-catalog.json",
-        ROOT / "src/data/ax/ax-outlet-catalog.json",
+        # Generated .ts files are what the app imports; JSON companions are optional/stale.
+        ROOT / "src/data/ax/ax-catalog.ts",
+        ROOT / "src/data/ax/ax-apparel-catalog.ts",
+        ROOT / "src/data/ax/ax-gear-catalog.ts",
+        ROOT / "src/data/ax/ax-outlet-catalog.ts",
     ],
     "gg": [ROOT / "src/data/gg/gg-catalog.json"],
     "lu": [

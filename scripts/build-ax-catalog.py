@@ -2,7 +2,6 @@
 """Build ax-catalog.ts from Arc'teryx footwear raw + PDP + translations."""
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 import sys
@@ -12,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_order import sort_ax_sizes  # noqa: E402
+from ax_translate_common import load_ax_translate_cache, make_translate_fn  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-catalog-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-pdp-cache.json"
@@ -31,16 +31,7 @@ ACCENTS = [
     "#1E3A4A",
 ]
 
-_KO: dict[str, str] = {}
-if TRANSLATE_CACHE.exists():
-    _KO = json.loads(TRANSLATE_CACHE.read_text())
-
-
-def t(text: str | None) -> str:
-    if not text:
-        return ""
-    s = str(text).strip()
-    return _KO.get(s, s)
+t = make_translate_fn(load_ax_translate_cache(TRANSLATE_CACHE))
 
 
 def _en_ratio(s: str) -> float:
@@ -77,7 +68,7 @@ def colour_name_ko(cname: str) -> str:
         return " / ".join(colour_name_ko(p) for p in parts if p)
     if raw in basic:
         return basic[raw]
-    cached = _KO.get(raw)
+    cached = t(raw)
     if cached and cached == raw:
         return raw
     if cached and raw in basic:
@@ -134,7 +125,10 @@ def list_gallery(pid: str, cslug: str) -> list[str]:
     out = []
     seen: set[str] = set()
     for p in nums:
-        digest = hashlib.md5(p.read_bytes()).hexdigest()
+        st = p.stat()
+        if st.st_size <= 800:
+            continue
+        digest = f"{st.st_size}:{st.st_mtime_ns}"
         if digest in seen:
             continue
         seen.add(digest)
