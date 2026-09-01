@@ -11,7 +11,7 @@ When the user pastes a **Dior** (`dior.com`) PLP/PDP link or asks to sync Dior:
 2. **All photos** — download every gallery frame into `public/products/di-pdp/<sku>/` (Algolia `damAssets` + PLP views); push via `push-product-images-tag.py --dirs di-pdp`.
 3. **Sizes / options** — for apparel, shoes, and accessories with size or colour options, map variants clearly (`colorKey`, `size`, separate colourways). Prefer official Dior option labels.
 4. **Size charts** — when Dior publishes a size guide for that category, scrape or mirror it into `sizeChart` matching the official GB chart. Home / tableware / objects one-size items stay `원 사이즈`.
-5. **Nav** — Accessories → Dior → Home / Jewelry (& Dior Icons); **Bags → Dior → 여성용 / 남성용**; **Watches → Dior** for timepieces-by-collection; **Luxury → Dior → 남성용** for men's ready-to-wear.
+5. **Nav** — Accessories → Dior → Home / Jewelry (& Dior Icons) / **남성 SLG**; **Bags → Dior → 여성용 / 남성용**; **Watches → Dior** for timepieces-by-collection; **Luxury → Dior → 남성용** for men's ready-to-wear.
 6. **Staged runs** — large Maison PLPs: scrape one stage, pause (machine stability), then continue.
    - Objects: 1 Books+Notebooks · 2 Desk+Leisure · 3 Candles · 4 Small+Trinket · 5 Trays+All gaps.
    - Decor: 1 Decorative Pieces+Vases · 2 Lighting+Baskets+Wallpapers · 3 Furniture+All gaps (~5 min pause between).
@@ -21,6 +21,7 @@ When the user pastes a **Dior** (`dior.com`) PLP/PDP link or asks to sync Dior:
    - Women's bags: 3 stages (~388 SKUs) — 1 Handbags+Crossbody+Totes · 2 Bucket+Clutches+Mini · 3 Accessorize+All (`scrape-di-bags.py`, 5 min pause).
    - Men's bags: 3 stages (~163 SKUs) — 1 Crossbody+Backpacks+Small · 2 Totes+Travel+Briefcases · 3 Accessorize+All (`scrape-di-bags-men.py`, 5 min pause).
    - Men's RTW: 4 stages (~549 SKUs) — 1 T-shirts&Polos · 2 Shirts+Knitwear · 3 Trousers+Denim+Swim · 4 Outerwear+Jackets+Leather+Suits+All (`scrape-di-men-rtw.py`, 5 min pause). Attach official GB `sizeChart` (IT / SML / denim) via `di_size_charts.py`.
+   - Men's SLG: 3 stages (~198 SKUs) — 1 Card Holders+Compact Wallets · 2 Long Wallets+Pouches · 3 Tech+All (`scrape-di-men-slg.py`, 5 min pause). Enrich PDP via `enrich-di-men-slg-pdp.py` (One Size, dimensions in copy).
    - Timepieces: single run (~26 SKUs) — All Pieces + La D de Dior + Straps → category `watches`.
 7. **Never** rewrite `di-catalog.ts` as an inlined JSON blob — always import `./di-catalog.json` (large TS modules crash Cursor / OOM Vercel).
 8. **Deploy** — commit, push `main`, and push `product-images` for `di-pdp` (see `auto-deploy-commit.mdc`).

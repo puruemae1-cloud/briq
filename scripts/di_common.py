@@ -653,6 +653,68 @@ PARENT_COLS_MEN_RTW = [
     "di-mens",
 ]
 
+# Official Men's Small Leather Goods (Accessories → Dior → 남성 SLG).
+# ~198 SKUs — 3 stages with pause between:
+#   1 — Card Holders + Compact Wallets
+#   2 — Long Wallets + Pouches & Wearable Wallets
+#   3 — Tech Accessories + All SLG (gap fill)
+MEN_SLG_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-men-slg-all",
+        "slug": "all-small-leather-goods",
+        "label": "All Small Leather Goods",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/all-small-leather-goods",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-card-holders",
+        "slug": "card-holders",
+        "label": "Card Holders",
+        "labelKo": "카드 홀더",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/card-holders",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-compact-wallets",
+        "slug": "compact-wallets",
+        "label": "Compact Wallets",
+        "labelKo": "컴팩트 월렛",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/compact-wallets",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-long-wallets",
+        "slug": "long-wallets",
+        "label": "Long Wallets",
+        "labelKo": "롱 월렛",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/long-wallets",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-pouches",
+        "slug": "pouches-wearable-wallets",
+        "label": "Pouches & Wearable Wallets",
+        "labelKo": "파우치 & 웨어러블 월렛",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/pouches-wearable-wallets",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-tech-accessories",
+        "slug": "tech",
+        "label": "Tech Accessories",
+        "labelKo": "테크 액세서리",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/small-leather-goods/tech",
+        "stage": "3",
+    },
+]
+
+PARENT_COLS_MEN_SLG = [
+    "dior",
+    "dior-accessories",
+    "di-men-slg",
+]
+
 
 PARENT_COLS = [
     "dior",

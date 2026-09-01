@@ -42,6 +42,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-bags-women-catalog-raw.json",
     ROOT / "src/data/di/di-bags-men-catalog-raw.json",
     ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
+    ROOT / "src/data/di/di-men-slg-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -135,6 +136,16 @@ RTWISH = {
     "di-men-suits-tuxedos",
 }
 
+SLGISH = {
+    "di-men-slg",
+    "di-men-slg-all",
+    "di-men-card-holders",
+    "di-men-compact-wallets",
+    "di-men-long-wallets",
+    "di-men-pouches",
+    "di-men-tech-accessories",
+}
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -175,6 +186,11 @@ LEAF_PREF = [
     "di-clutches",
     "di-mini-bags",
     "di-accessorize-bag",
+    "di-men-tech-accessories",
+    "di-men-pouches",
+    "di-men-long-wallets",
+    "di-men-compact-wallets",
+    "di-men-card-holders",
     "di-men-crossbody-shoulder-bags",
     "di-men-backpacks",
     "di-men-small-bags",
@@ -190,6 +206,7 @@ LEAF_PREF = [
     "di-timepieces-all",
     "di-bags-all",
     "di-men-bags-all",
+    "di-men-slg-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -423,6 +440,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["bags", "handbags", "가방", "핸드백"]
     elif any(c in RTWISH for c in cols):
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
+    elif any(c in SLGISH for c in cols):
+        tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
     elif any(c in JEWELRYISH for c in cols):
         tags += ["jewelry", "jewellery", "쥬얼리"]
     else:

@@ -48,6 +48,28 @@ def ensure_git_identity(cwd: Path) -> None:
     )
 
 
+def add_worktree(tmp: Path, *, sparse_paths: list[str] | None = None) -> bool:
+    """Check out the product-images tag into a temp worktree.
+
+    When ``sparse_paths`` is set (e.g. ``["public/banners"]``), only those
+    trees are materialized — ~600 files instead of 128k+ product PDP paths.
+    """
+    if sparse_paths:
+        added = run(
+            ["git", "worktree", "add", "--detach", "--no-checkout", str(tmp), TAG],
+            check=False,
+        )
+        if added.returncode != 0:
+            return False
+        run(["git", "sparse-checkout", "init", "--cone"], cwd=tmp, check=False)
+        run(["git", "sparse-checkout", "set", *sparse_paths], cwd=tmp, check=False)
+        checkout = run(["git", "checkout", TAG], cwd=tmp, check=False)
+        return checkout.returncode == 0
+
+    added = run(["git", "worktree", "add", "--detach", str(tmp), TAG], check=False)
+    return added.returncode == 0
+
+
 def sync_banners(tmp: Path, src: Path) -> bool:
     """Replace public/banners on the tag with the local tree (desktop/m/t)."""
     dest = tmp / "public" / "banners"
@@ -343,11 +365,11 @@ def main() -> int:
 
     tmp = Path(tempfile.mkdtemp(prefix="briq-product-images-"))
     try:
-        added = run(
-            ["git", "worktree", "add", "--detach", str(tmp), TAG],
-            check=False,
-        )
-        if added.returncode != 0:
+        banner_only = {n for n, _ in src_roots} == {"banners"}
+        sparse = ["public/banners"] if banner_only else None
+        if sparse:
+            print("Using sparse checkout (public/banners only).", flush=True)
+        if not add_worktree(tmp, sparse_paths=sparse):
             print(
                 f"ERROR: could not check out tag {TAG} — abort image tag update.",
                 flush=True,

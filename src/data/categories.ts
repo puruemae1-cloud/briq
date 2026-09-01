@@ -876,6 +876,13 @@ export type SubcategoryId =
   | "di-men-tailored-jackets"
   | "di-men-leather"
   | "di-men-suits-tuxedos"
+  | "di-men-slg"
+  | "di-men-slg-all"
+  | "di-men-card-holders"
+  | "di-men-compact-wallets"
+  | "di-men-long-wallets"
+  | "di-men-pouches"
+  | "di-men-tech-accessories"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1147,6 +1154,16 @@ export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "di-men-tailored-jackets",
   "di-men-leather",
   "di-men-suits-tuxedos",
+];
+
+/** Dior men's small leather goods (official GB mens SLG PLPs). */
+export const DI_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "di-men-slg-all",
+  "di-men-card-holders",
+  "di-men-compact-wallets",
+  "di-men-long-wallets",
+  "di-men-pouches",
+  "di-men-tech-accessories",
 ];
 
 
@@ -2518,6 +2535,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TEXTILE_LEAF_IDS,
     "di-jewelry-timepieces",
     ...DI_JEWELRY_LEAF_IDS,
+    "di-men-slg",
+    ...DI_MEN_SLG_LEAF_IDS,
   ],
   "di-home": [
     "di-home",
@@ -2614,6 +2633,13 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-tailored-jackets": ["di-men-tailored-jackets"],
   "di-men-leather": ["di-men-leather"],
   "di-men-suits-tuxedos": ["di-men-suits-tuxedos"],
+  "di-men-slg": ["di-men-slg", ...DI_MEN_SLG_LEAF_IDS],
+  "di-men-slg-all": ["di-men-slg-all"],
+  "di-men-card-holders": ["di-men-card-holders"],
+  "di-men-compact-wallets": ["di-men-compact-wallets"],
+  "di-men-long-wallets": ["di-men-long-wallets"],
+  "di-men-pouches": ["di-men-pouches"],
+  "di-men-tech-accessories": ["di-men-tech-accessories"],
   "ch-jewellery": ["ch-jewellery", ...CH_JEWELLERY_LEAF_IDS],
   "ch-high-jewellery": ["ch-high-jewellery"],
   "ch-fine-jewellery": ["ch-fine-jewellery"],
@@ -6137,6 +6163,44 @@ export const navCategories: NavCategory[] = [
                 id: "di-dior-icons",
                 labelKo: "디올 아이콘즈",
                 href: "/shop?category=accessories&sub=di-dior-icons",
+              },
+            ],
+          },
+          {
+            id: "di-men-slg",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=di-men-slg",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-men-slg-all",
+                labelKo: "전체",
+                href: "/shop?category=accessories&sub=di-men-slg-all",
+              },
+              {
+                id: "di-men-card-holders",
+                labelKo: "카드 홀더",
+                href: "/shop?category=accessories&sub=di-men-card-holders",
+              },
+              {
+                id: "di-men-compact-wallets",
+                labelKo: "컴팩트 월렛",
+                href: "/shop?category=accessories&sub=di-men-compact-wallets",
+              },
+              {
+                id: "di-men-long-wallets",
+                labelKo: "롱 월렛",
+                href: "/shop?category=accessories&sub=di-men-long-wallets",
+              },
+              {
+                id: "di-men-pouches",
+                labelKo: "파우치 & 웨어러블 월렛",
+                href: "/shop?category=accessories&sub=di-men-pouches",
+              },
+              {
+                id: "di-men-tech-accessories",
+                labelKo: "테크 액세서리",
+                href: "/shop?category=accessories&sub=di-men-tech-accessories",
               },
             ],
           },
