@@ -39,7 +39,7 @@ if p.stat().st_size > 2000 or "di-catalog.json" not in p.read_text():
         'import type { Product } from "@/data/product-types";\n'
         'import data from "./di-catalog.json";\n'
         "\n"
-        "/** Dior Maison + Jewelry + Bags + Men's RTW catalog (JSON import keeps TS small). */\n"
+        "/** Dior Maison + Jewelry + Bags + mens RTW catalog (JSON import keeps TS small). */\n"
         "export const diCatalogProducts = data as unknown as Product[];\n"
     )
 print("ts", p.stat().st_size)
@@ -85,7 +85,7 @@ git add \
 
 if ! git diff --cached --quiet; then
   git commit -m "$(cat <<'EOF'
-Add Dior men's ready-to-wear under Luxury → 디올 → 남성용 (~549 SKUs).
+Add Dior mens ready-to-wear under Luxury / Dior / men (~549 SKUs).
 
 Official by-category leaves with Korean PDP copy and Dior GB size charts; publish di-pdp images on the product-images CDN tag.
 EOF
@@ -96,16 +96,34 @@ fi
 python3 - <<'PY'
 import json
 from pathlib import Path
-raw=json.load(open('src/data/di/di-men-rtw-catalog-raw.json'))
-cat=json.load(open('src/data/di/di-catalog.json'))
-leaf={
- 'di-mens','di-men-rtw-all','di-men-tshirts-polos','di-men-shirts','di-men-knitwear-sweatshirts',
- 'di-men-trousers-shorts','di-men-denim','di-men-beachwear','di-men-outerwear',
- 'di-men-tailored-jackets','di-men-leather','di-men-suits-tuxedos'
+raw = json.load(open("src/data/di/di-men-rtw-catalog-raw.json"))
+cat = json.load(open("src/data/di/di-catalog.json"))
+leaf = {
+    "di-mens",
+    "di-men-rtw-all",
+    "di-men-tshirts-polos",
+    "di-men-shirts",
+    "di-men-knitwear-sweatshirts",
+    "di-men-trousers-shorts",
+    "di-men-denim",
+    "di-men-beachwear",
+    "di-men-outerwear",
+    "di-men-tailored-jackets",
+    "di-men-leather",
+    "di-men-suits-tuxedos",
 }
-n=sum(1 for p in cat if leaf.intersection(p.get('diCollections') or []))
-charts=sum(1 for p in cat if leaf.intersection(p.get('diCollections') or []) and p.get('sizeChart'))
-print('raw', len(raw.get('products') or []), 'catalog_men_rtw', n, 'with_chart', charts, 'ts', Path('src/data/di/di-catalog.ts').stat().st_size)
+n = sum(1 for p in cat if leaf.intersection(p.get("diCollections") or []))
+charts = sum(1 for p in cat if leaf.intersection(p.get("diCollections") or []) and p.get("sizeChart"))
+print(
+    "raw",
+    len(raw.get("products") or []),
+    "catalog_men_rtw",
+    n,
+    "with_chart",
+    charts,
+    "ts",
+    Path("src/data/di/di-catalog.ts").stat().st_size,
+)
 PY
 
 echo "PIPELINE_DONE $(date -u +%Y-%m-%dT%H:%M:%SZ)" | tee /tmp/di-men-rtw-READY
