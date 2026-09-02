@@ -18,13 +18,14 @@ Applies to:
 When adding products:
 
 1. Set `registeredAt` to the registration time, e.g. `new Date().toISOString()`.
-2. Prefer appending new SKUs to the hand-authored catalogue.
-3. Do not leave new products without `registeredAt` if they must appear above older stock.
-4. Collection filler SKUs (`briq-col-*`) keep older dates on purpose.
-5. 100 Collection sections (see `src/lib/collection-edit.ts`):
+2. Set `name` to the official English (maison) title and `nameKo` to Korean — PDP shows both.
+3. Prefer appending new SKUs to the hand-authored catalogue.
+4. Do not leave new products without `registeredAt` if they must appear above older stock.
+5. Collection filler SKUs (`briq-col-*`) keep older dates on purpose.
+6. 100 Collection sections (see `src/lib/collection-edit.ts`):
    - **하이엔드**: price ≥ 1,000,000 — newest first
   - **첫 구매자 만족도 1위**: 결제 1회 이상 — 구매수 → 최신등록순
   - **신상품 큐레이션**: catalogue-wide newest by `registeredAt` (server-rendered; overlaps OK)
-6. **Never re-stamp `registeredAt` on weekly stock syncs** for existing product ids.
+7. **Never re-stamp `registeredAt` on weekly stock syncs** for existing product ids.
    Only brand-new SKUs get “now”. Re-stamping old styles (e.g. Galvin Green variant-id
    parse bug) dumps them back into 신상품 큐레이션 incorrectly.

@@ -102,6 +102,9 @@ export default function ProductScreen() {
       <View style={styles.body}>
         <Text style={styles.brand}>{product.brand}</Text>
         <Text style={styles.name}>{product.nameKo}</Text>
+        {product.name && product.name !== product.nameKo ? (
+          <Text style={styles.nameEn}>{product.name}</Text>
+        ) : null}
         <Text style={styles.price}>{formatKrw(unitPrice)}</Text>
 
         {variants.length > 0 ? (
@@ -225,6 +228,14 @@ const styles = StyleSheet.create({
   body: { padding: 16, gap: 10 },
   brand: { fontSize: 12, letterSpacing: 1, color: "#666", textTransform: "uppercase" },
   name: { fontSize: 22, fontWeight: "700", color: "#0b1210" },
+  nameEn: {
+    fontSize: 14,
+    fontWeight: "400",
+    color: "rgba(11,18,16,0.62)",
+    marginTop: -4,
+    marginBottom: 2,
+    lineHeight: 20,
+  },
   price: { fontSize: 18, fontWeight: "650", marginBottom: 4 },
   variantBlock: { marginTop: 8, gap: 8 },
   variantLabel: { fontSize: 14, color: "#444" },

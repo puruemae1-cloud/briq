@@ -35,7 +35,7 @@ from di_common import (  # noqa: E402
     normalize_di_product_prices,
     slugify,
 )
-from ko_qa import is_good_korean, translate_en_to_ko  # noqa: E402
+from ko_qa import is_good_korean, translate_en_to_ko, ensure_official_english_name  # noqa: E402
 
 CAT = ROOT / "src/data/di/di-catalog.json"
 PDP_CACHE = ROOT / "src/data/di/di-timepieces-pdp-cache.json"
@@ -397,6 +397,7 @@ def apply_enrich(product: dict, pdp: dict, cache: dict[str, str]) -> None:
         product["image"] = product["images"][0]
 
     product["name"] = title_en or product.get("name")
+    ensure_official_english_name(product, title_en or product.get("name"))
     if is_good_korean(title_ko):
         product["nameKo"] = title_ko
     product["descriptionKo"] = description_ko

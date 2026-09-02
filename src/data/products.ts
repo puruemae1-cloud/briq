@@ -26,6 +26,7 @@ export {
   isVariantInStock,
   productCompareAtPrice,
   productDisplayPrice,
+  productOfficialEnglishName,
   productSalePercent,
 } from "@/data/product-utils";
 import type { Product } from "@/data/product-types";

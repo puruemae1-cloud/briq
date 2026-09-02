@@ -197,6 +197,7 @@ def _load_ts_products(path: Path) -> list[dict[str, Any]]:
 
 
 def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
+    """Readable Korean body fields on a product dict (excludes official EN `name`)."""
     """Fields that must be natural Korean on the PDP (body copy, not fashion titles)."""
     out: list[tuple[str, str]] = []
     # nameKo often keeps English style names / colourways on purpose — skip.
@@ -228,6 +229,27 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
             continue
         out.append((f"story[{i}].bodyKo", body.strip()))
     return out
+
+
+def ensure_official_english_name(
+    product: dict[str, Any],
+    title_en: str | None = None,
+) -> None:
+    """Keep maison EN in product['name']; never replace it with Korean nameKo.
+
+    Call from scrape/merge/weekly sync when writing catalog rows so PDP can show
+    Korean heading + smaller English subtitle.
+    """
+    en = (title_en or product.get("name") or "").strip()
+    ko = (product.get("nameKo") or "").strip()
+    if not en:
+        return
+    # Don't clobber a good EN with a Hangul-only string
+    if re.search(r"[\uac00-\ud7a3]", en) and not re.search(r"[A-Za-z]", en):
+        return
+    if ko and en == ko:
+        return
+    product["name"] = en
 
 
 def find_hybrid_fields(

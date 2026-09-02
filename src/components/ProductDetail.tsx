@@ -18,6 +18,7 @@ import {
   formatKrw,
   isProductInStock,
   isVariantInStock,
+  productOfficialEnglishName,
   productSalePercent,
 } from "@/data/product-utils";
 import { cartUnitPrice } from "@/lib/cart-price";
@@ -289,6 +290,7 @@ export function ProductDetail({
 
   const [braceletCm, setBraceletCm] = useState("no");
   const unitPrice = cartUnitPrice(product, selected, braceletCm);
+  const officialEnglishName = productOfficialEnglishName(product);
   const primaryImage = resolveProductImage(product.image, selected?.image);
   const galleryImages = (() => {
     const variantGallery = selected?.images?.filter(Boolean) ?? [];
@@ -435,8 +437,8 @@ export function ProductDetail({
               className="product-detail__share"
             />
           </div>
-          {product.brand === "프라다" && product.name ? (
-            <p className="product-detail__official-name">{product.name}</p>
+          {officialEnglishName ? (
+            <p className="product-detail__official-name">{officialEnglishName}</p>
           ) : null}
           {selected ? (
             <p className="product-detail__color-name">
@@ -619,8 +621,8 @@ export function ProductDetail({
           )}
           <div className="pdp-dock__summary">
             <p className="pdp-dock__name">{product.nameKo}</p>
-            {product.brand === "프라다" && product.name ? (
-              <p className="pdp-dock__official-name">{product.name}</p>
+            {officialEnglishName ? (
+              <p className="pdp-dock__official-name">{officialEnglishName}</p>
             ) : null}
             <p className="pdp-dock__meta">
               {selected ? <span>{optionLabel}</span> : null}

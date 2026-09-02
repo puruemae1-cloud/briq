@@ -36,7 +36,7 @@ from di_size_charts import (  # noqa: E402
     size_chart_for_di_mens_shoes,
     size_chart_for_di_womens_rtw,
 )
-from ko_qa import en_ratio, is_good_korean  # noqa: E402
+from ko_qa import en_ratio, ensure_official_english_name, is_good_korean  # noqa: E402
 
 RAW_PATHS = [
     ROOT / "src/data/di/di-tableware-catalog-raw.json",
@@ -794,6 +794,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
             rtw=any(c in RTWISH or c in MEN_SHOESISH for c in collections + [leaf]),
         ),
     }
+    ensure_official_english_name(product, title_en)
     feats = features_from_ko_hit(h)
     if feats:
         product["featuresKo"] = feats
@@ -875,6 +876,7 @@ def main() -> None:
         if not is_good_korean(p.get("nameKo") or ""):
             p["nameKo"] = translate(row.get("title") or p.get("name") or "") or p["nameKo"]
             time.sleep(0.8)
+        ensure_official_english_name(p, row.get("title") or p.get("name"))
         en = ((row.get("details") or {}).get("paragraphs") or [""])[0]
         sub = row.get("subtitle") or ""
         parts: list[str] = []

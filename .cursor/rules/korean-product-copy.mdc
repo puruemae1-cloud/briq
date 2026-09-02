@@ -7,14 +7,18 @@ alwaysApply: true
 
 When adding or updating **any** Briq products (Prada, Gucci, Chanel, Burberry, Belstaff, Paul Smith, Arc'teryx, Galvin Green, London Undercover, Christopher Ward, Louis Vuitton, Dior, etc.):
 
-1. **Translate everything the shopper reads as body copy** into natural Korean:
+1. **Keep dual titles**
+   - `name` = official English (or source-locale) title from the maison site — **never overwrite with Korean**
+   - `nameKo` = natural Korean title for the primary PDP heading
+   - PDP UI shows `nameKo` then smaller `name` underneath (`productOfficialEnglishName`)
+2. **Translate everything the shopper reads as body copy** into natural Korean:
    - `descriptionKo`, `featuresKo`
    - `storySections[].titleKo` / `bodyKo` (except short “갤러리” placeholders)
    - materials, care, detail bullets
    - Prefer Korean `nameKo` / `colorNameKo` when a natural fashion translation exists; short style names may stay Latin when intentional.
-2. **Do not ship hybrid EN/KO** (glossary word-swap on English sentences). If the translate API fails, use curated phrase maps / copy JSON or retry — never cache leftover English as success.
-3. Brand/tech tokens may stay Latin when intentional (`Re-Nylon`, `GORE-TEX`, `Chanel`, sizes, mm/cm).
-4. After rebuilding a catalogue, **always verify**:
+3. **Do not ship hybrid EN/KO** (glossary word-swap on English sentences). If the translate API fails, use curated phrase maps / copy JSON or retry — never cache leftover English as success.
+4. Brand/tech tokens may stay Latin when intentional (`Re-Nylon`, `GORE-TEX`, `Chanel`, sizes, mm/cm).
+5. After rebuilding a catalogue, **always verify**:
    ```bash
    python3 scripts/check-catalog-korean.py --brand <pr|gc|ch|bb|bs|ps|ax|gg|lu|cw|lv|di> --fail
    ```
@@ -26,5 +30,6 @@ When adding or updating **any** Briq products (Prada, Gucci, Chanel, Burberry, B
    ```bash
    python3 scripts/check-catalog-korean.py --brand <brand> --ids id1,id2 --fail
    ```
-5. Shared helpers live in `scripts/ko_qa.py`. Weekly syncs call `weekly_korean_gate.check_new_korean` after build — do not remove that gate.
-6. Prefer curated Korean copy files (`*-ko-copy.json`, translate caches with polish) for long editorial text when gtx is rate-limited.
+6. Shared helpers live in `scripts/ko_qa.py`. Weekly syncs call `weekly_korean_gate.check_new_korean` after build — do not remove that gate.
+7. Prefer curated Korean copy files (`*-ko-copy.json`, translate caches with polish) for long editorial text when gtx is rate-limited.
+8. Weekly brand syncs must preserve `name` (EN) while refreshing `nameKo` / body KO — never set `name = nameKo`.

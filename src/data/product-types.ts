@@ -91,7 +91,9 @@ export type ProductSizeChart = {
 
 export type Product = {
   id: string;
+  /** Official maison / source-site title (usually English). Shown under `nameKo` on PDP. */
   name: string;
+  /** Primary Korean display title on PDP / cards. */
   nameKo: string;
   brand: string;
   /** Selling price (KRW). When on sale this is the discounted amount. */

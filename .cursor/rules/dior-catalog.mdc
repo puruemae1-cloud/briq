@@ -7,7 +7,7 @@ alwaysApply: true
 
 When the user pastes a **Dior** (`dior.com`) PLP/PDP link or asks to sync Dior:
 
-1. **Korean PDP copy** — prefer native Korean from Algolia `merch_prod_live_ko_kr` (`scripts/build-di-catalog-from-ko-algolia.py`). Fall back to EN merch + translate (`deep-translator` / `ko_qa.gtx_translate`). Never ship hybrid EN/KO. Run `python3 scripts/check-catalog-korean.py --brand di --fail`.
+1. **Korean PDP copy** — prefer native Korean from Algolia `merch_prod_live_ko_kr` (`scripts/build-di-catalog-from-ko-algolia.py`). Fall back to EN merch + translate (`deep-translator` / `ko_qa.gtx_translate`). Never ship hybrid EN/KO. Keep `name` as official English title and `nameKo` as Korean (PDP shows both). Run `python3 scripts/check-catalog-korean.py --brand di --fail`.
 2. **All photos** — download every gallery frame into `public/products/di-pdp/<sku>/` (Algolia `damAssets` + PLP views); push via `push-product-images-tag.py --dirs di-pdp`.
 3. **Sizes / options** — for apparel, shoes, and accessories with size or colour options, map variants clearly (`colorKey`, `size`, separate colourways). Prefer official Dior option labels.
 4. **Size charts** — when Dior publishes a size guide for that category, scrape or mirror it into `sizeChart` matching the official GB chart. Home / tableware / objects one-size items stay `원 사이즈`.

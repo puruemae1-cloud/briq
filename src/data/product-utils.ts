@@ -80,4 +80,21 @@ export function formatKrw(price: number) {
   }).format(price)}원`;
 }
 
+/**
+ * Official maison English product title for PDP (under Korean `nameKo`).
+ * Returns null when missing, identical to Korean, or Hangul-only (no Latin).
+ */
+export function productOfficialEnglishName(
+  product: Pick<Product, "name" | "nameKo">,
+): string | null {
+  const en = (product.name || "").trim();
+  const ko = (product.nameKo || "").trim();
+  if (!en) return null;
+  if (en === ko) return null;
+  // Hangul-only "English" field → nothing useful to show under Korean title
+  if (/[\uac00-\ud7a3]/.test(en) && !/[A-Za-z]/.test(en)) return null;
+  return en;
+}
+
+
 export type { Product, ProductVariant, ProductSizeChart, ProductSizeChartTab, ProductStorySection, ProductTechSpec } from "@/data/product-types";
