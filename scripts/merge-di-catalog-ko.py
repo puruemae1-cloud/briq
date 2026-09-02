@@ -43,6 +43,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-bags-men-catalog-raw.json",
     ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
+    ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -146,6 +147,24 @@ SLGISH = {
     "di-men-tech-accessories",
 }
 
+MEN_ACCISH = {
+    "di-men-accessories",
+    "di-men-acc-all",
+    "di-men-sunglasses",
+    "di-men-belts",
+    "di-men-ties-pocket-squares",
+    "di-men-scarves",
+    "di-men-hats-gloves",
+    "di-men-socks",
+    "di-men-fashion-jewelry",
+    "di-men-silver-jewelry",
+    "di-men-key-rings",
+    "di-men-charm-jewelry",
+    "di-men-lifestyle",
+    "di-men-acc-tech",
+    "di-men-pet-accessories",
+}
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -191,6 +210,19 @@ LEAF_PREF = [
     "di-men-long-wallets",
     "di-men-compact-wallets",
     "di-men-card-holders",
+    "di-men-sunglasses",
+    "di-men-belts",
+    "di-men-ties-pocket-squares",
+    "di-men-scarves",
+    "di-men-hats-gloves",
+    "di-men-socks",
+    "di-men-fashion-jewelry",
+    "di-men-silver-jewelry",
+    "di-men-key-rings",
+    "di-men-charm-jewelry",
+    "di-men-lifestyle",
+    "di-men-acc-tech",
+    "di-men-pet-accessories",
     "di-men-crossbody-shoulder-bags",
     "di-men-backpacks",
     "di-men-small-bags",
@@ -207,6 +239,7 @@ LEAF_PREF = [
     "di-bags-all",
     "di-men-bags-all",
     "di-men-slg-all",
+    "di-men-acc-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -442,6 +475,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
     elif any(c in SLGISH for c in cols):
         tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
+    elif any(c in MEN_ACCISH for c in cols):
+        tags += ["accessories", "악세서리", "남성"]
     elif any(c in JEWELRYISH for c in cols):
         tags += ["jewelry", "jewellery", "쥬얼리"]
     else:

@@ -876,6 +876,21 @@ export type SubcategoryId =
   | "di-men-tailored-jackets"
   | "di-men-leather"
   | "di-men-suits-tuxedos"
+  | "di-men-accessories"
+  | "di-men-acc-all"
+  | "di-men-sunglasses"
+  | "di-men-belts"
+  | "di-men-ties-pocket-squares"
+  | "di-men-scarves"
+  | "di-men-hats-gloves"
+  | "di-men-socks"
+  | "di-men-fashion-jewelry"
+  | "di-men-silver-jewelry"
+  | "di-men-key-rings"
+  | "di-men-charm-jewelry"
+  | "di-men-lifestyle"
+  | "di-men-acc-tech"
+  | "di-men-pet-accessories"
   | "di-men-slg"
   | "di-men-slg-all"
   | "di-men-card-holders"
@@ -1154,6 +1169,24 @@ export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "di-men-tailored-jackets",
   "di-men-leather",
   "di-men-suits-tuxedos",
+];
+
+/** Dior men's accessories (official GB all-accessories PLPs). */
+export const DI_MEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "di-men-acc-all",
+  "di-men-sunglasses",
+  "di-men-belts",
+  "di-men-ties-pocket-squares",
+  "di-men-scarves",
+  "di-men-hats-gloves",
+  "di-men-socks",
+  "di-men-fashion-jewelry",
+  "di-men-silver-jewelry",
+  "di-men-key-rings",
+  "di-men-charm-jewelry",
+  "di-men-lifestyle",
+  "di-men-acc-tech",
+  "di-men-pet-accessories",
 ];
 
 /** Dior men's small leather goods (official GB mens SLG PLPs). */
@@ -2535,6 +2568,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TEXTILE_LEAF_IDS,
     "di-jewelry-timepieces",
     ...DI_JEWELRY_LEAF_IDS,
+    "di-men-accessories",
+    ...DI_MEN_ACCESSORIES_LEAF_IDS,
     "di-men-slg",
     ...DI_MEN_SLG_LEAF_IDS,
   ],
@@ -2635,6 +2670,26 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-suits-tuxedos": ["di-men-suits-tuxedos"],
   "di-men-slg": ["di-men-slg", ...DI_MEN_SLG_LEAF_IDS],
   "di-men-slg-all": ["di-men-slg-all"],
+  "di-men-accessories": [
+    "di-men-accessories",
+    ...DI_MEN_ACCESSORIES_LEAF_IDS,
+    "di-men-slg",
+    ...DI_MEN_SLG_LEAF_IDS,
+  ],
+  "di-men-acc-all": ["di-men-acc-all"],
+  "di-men-sunglasses": ["di-men-sunglasses"],
+  "di-men-belts": ["di-men-belts"],
+  "di-men-ties-pocket-squares": ["di-men-ties-pocket-squares"],
+  "di-men-scarves": ["di-men-scarves"],
+  "di-men-hats-gloves": ["di-men-hats-gloves"],
+  "di-men-socks": ["di-men-socks"],
+  "di-men-fashion-jewelry": ["di-men-fashion-jewelry"],
+  "di-men-silver-jewelry": ["di-men-silver-jewelry"],
+  "di-men-key-rings": ["di-men-key-rings"],
+  "di-men-charm-jewelry": ["di-men-charm-jewelry"],
+  "di-men-lifestyle": ["di-men-lifestyle"],
+  "di-men-acc-tech": ["di-men-acc-tech"],
+  "di-men-pet-accessories": ["di-men-pet-accessories"],
   "di-men-card-holders": ["di-men-card-holders"],
   "di-men-compact-wallets": ["di-men-compact-wallets"],
   "di-men-long-wallets": ["di-men-long-wallets"],
@@ -6167,40 +6222,118 @@ export const navCategories: NavCategory[] = [
             ],
           },
           {
-            id: "di-men-slg",
+            id: "di-men-accessories",
             labelKo: "남성용",
-            href: "/shop?category=accessories&sub=di-men-slg",
+            href: "/shop?category=accessories&sub=di-men-accessories",
             navLeaf: true,
             children: [
               {
-                id: "di-men-slg-all",
+                id: "di-men-acc-all",
                 labelKo: "전체",
-                href: "/shop?category=accessories&sub=di-men-slg-all",
+                href: "/shop?category=accessories&sub=di-men-acc-all",
               },
               {
-                id: "di-men-card-holders",
-                labelKo: "카드 홀더",
-                href: "/shop?category=accessories&sub=di-men-card-holders",
+                id: "di-men-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=di-men-sunglasses",
               },
               {
-                id: "di-men-compact-wallets",
-                labelKo: "컴팩트 월렛",
-                href: "/shop?category=accessories&sub=di-men-compact-wallets",
+                id: "di-men-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=di-men-belts",
               },
               {
-                id: "di-men-long-wallets",
-                labelKo: "롱 월렛",
-                href: "/shop?category=accessories&sub=di-men-long-wallets",
+                id: "di-men-ties-pocket-squares",
+                labelKo: "타이 & 포켓스퀘어",
+                href: "/shop?category=accessories&sub=di-men-ties-pocket-squares",
               },
               {
-                id: "di-men-pouches",
-                labelKo: "파우치 & 웨어러블 월렛",
-                href: "/shop?category=accessories&sub=di-men-pouches",
+                id: "di-men-fashion-jewelry",
+                labelKo: "패션 주얼리 & 커프링크",
+                href: "/shop?category=accessories&sub=di-men-fashion-jewelry",
               },
               {
-                id: "di-men-tech-accessories",
+                id: "di-men-silver-jewelry",
+                labelKo: "실버 주얼리",
+                href: "/shop?category=accessories&sub=di-men-silver-jewelry",
+              },
+              {
+                id: "di-men-scarves",
+                labelKo: "스카프",
+                href: "/shop?category=accessories&sub=di-men-scarves",
+              },
+              {
+                id: "di-men-hats-gloves",
+                labelKo: "모자 & 장갑",
+                href: "/shop?category=accessories&sub=di-men-hats-gloves",
+              },
+              {
+                id: "di-men-socks",
+                labelKo: "양말",
+                href: "/shop?category=accessories&sub=di-men-socks",
+              },
+              {
+                id: "di-men-key-rings",
+                labelKo: "키링 & 백 참",
+                href: "/shop?category=accessories&sub=di-men-key-rings",
+              },
+              {
+                id: "di-men-charm-jewelry",
+                labelKo: "커스터마이저블 참 주얼리",
+                href: "/shop?category=accessories&sub=di-men-charm-jewelry",
+              },
+              {
+                id: "di-men-lifestyle",
+                labelKo: "라이프스타일",
+                href: "/shop?category=accessories&sub=di-men-lifestyle",
+              },
+              {
+                id: "di-men-acc-tech",
                 labelKo: "테크 액세서리",
-                href: "/shop?category=accessories&sub=di-men-tech-accessories",
+                href: "/shop?category=accessories&sub=di-men-acc-tech",
+              },
+              {
+                id: "di-men-pet-accessories",
+                labelKo: "펫 액세서리",
+                href: "/shop?category=accessories&sub=di-men-pet-accessories",
+              },
+              {
+                id: "di-men-slg",
+                labelKo: "스몰 레더 굿즈",
+                href: "/shop?category=accessories&sub=di-men-slg",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-men-slg-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-men-slg-all",
+                  },
+                  {
+                    id: "di-men-card-holders",
+                    labelKo: "카드 홀더",
+                    href: "/shop?category=accessories&sub=di-men-card-holders",
+                  },
+                  {
+                    id: "di-men-compact-wallets",
+                    labelKo: "컴팩트 월렛",
+                    href: "/shop?category=accessories&sub=di-men-compact-wallets",
+                  },
+                  {
+                    id: "di-men-long-wallets",
+                    labelKo: "롱 월렛",
+                    href: "/shop?category=accessories&sub=di-men-long-wallets",
+                  },
+                  {
+                    id: "di-men-pouches",
+                    labelKo: "파우치 & 웨어러블 월렛",
+                    href: "/shop?category=accessories&sub=di-men-pouches",
+                  },
+                  {
+                    id: "di-men-tech-accessories",
+                    labelKo: "테크 액세서리",
+                    href: "/shop?category=accessories&sub=di-men-tech-accessories",
+                  },
+                ],
               },
             ],
           },
