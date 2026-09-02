@@ -151,11 +151,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Dior",
     nameKo: "디올",
     logoSrc: "/brands/dior.svg",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    // Locked All Pieces timepieces campaign — La D de Dior pastel straps.
+    images: ["/banners/brand-dior-watches.jpg"],
   },
   "dior-bags": {
     key: "dior-bags",
