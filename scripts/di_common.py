@@ -922,6 +922,28 @@ def gbp_to_krw(gbp: float | None) -> int:
     return int(round(raw / 10_000) * 10_000)
 
 
+def algolia_variant_gbp(price_obj: dict | None, fallback_gbp: float) -> float:
+    """Resolve variant list GBP — ignore KRW amounts from the KO Algolia index."""
+    if not isinstance(price_obj, dict):
+        return fallback_gbp
+    amount = price_obj.get("amount")
+    if amount is None:
+        return fallback_gbp
+    try:
+        val = float(amount)
+    except (TypeError, ValueError):
+        return fallback_gbp
+    cur = str(price_obj.get("currency") or "GBP").upper()
+    if cur == "GBP":
+        return val
+    if cur in ("KRW", "KR"):
+        return fallback_gbp
+    # Heuristic: luxury GBP list prices stay well below £5000.
+    if val >= 5000:
+        return fallback_gbp
+    return val
+
+
 def slugify(text: str, *, max_len: int = 72) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
     return (s[:max_len] or "item").strip("-")

@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from di_common import algolia_merch_hits_by_codes, gbp_to_krw, slugify  # noqa: E402
+from di_common import algolia_merch_hits_by_codes, algolia_variant_gbp, gbp_to_krw, slugify  # noqa: E402
 from di_size_charts import size_chart_for_di_mens_rtw  # noqa: E402
 from ko_qa import gtx_translate, is_good_korean  # noqa: E402
 
@@ -520,13 +520,7 @@ def rebuild_variants(
         sz = str(vv.get("sizeFormatted") or vv.get("size") or "").strip()
         if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
             continue
-        v_gbp = gbp_f
-        vp = vv.get("price") or {}
-        if isinstance(vp, dict) and vp.get("amount") is not None:
-            try:
-                v_gbp = float(vp["amount"])
-            except (TypeError, ValueError):
-                pass
+        v_gbp = algolia_variant_gbp(vv.get("price") if isinstance(vv.get("price"), dict) else None, gbp_f)
         in_stock = True
         status = str(vv.get("status") or vv.get("stockLevel") or "").lower()
         if status in ("outofstock", "out_of_stock", "unavailable"):

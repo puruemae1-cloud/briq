@@ -24,6 +24,7 @@ from di_common import (  # noqa: E402
     ALGOLIA_MERCH_API_KEY,
     ALGOLIA_MERCH_APP_ID,
     ALGOLIA_MERCH_INDEX_KO,
+    algolia_variant_gbp,
     dior_code_to_object_id,
     gbp_to_krw,
     slugify,
@@ -639,13 +640,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         sz = str(vv.get("sizeFormatted") or vv.get("size") or "").strip()
         if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
             continue
-        v_gbp = gbp_f
-        vp = vv.get("price") or {}
-        if isinstance(vp, dict) and vp.get("amount") is not None:
-            try:
-                v_gbp = float(vp["amount"])
-            except (TypeError, ValueError):
-                pass
+        v_gbp = algolia_variant_gbp(vv.get("price") if isinstance(vv.get("price"), dict) else None, gbp_f)
         variants.append(
             {
                 "id": f"{pid}-sz-{slugify(sz, max_len=24)}",

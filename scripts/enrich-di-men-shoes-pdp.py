@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from di_common import MEN_SHOES_LEAVES, algolia_merch_hits_by_codes  # noqa: E402
+from di_common import MEN_SHOES_LEAVES, algolia_merch_hits_by_codes, gbp_to_krw  # noqa: E402
 from di_size_charts import size_chart_for_di_mens_shoes  # noqa: E402
 from ko_qa import is_good_korean  # noqa: E402
 
