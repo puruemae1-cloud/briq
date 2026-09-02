@@ -367,8 +367,12 @@ def main() -> int:
     try:
         banner_only = {n for n, _ in src_roots} == {"banners"}
         sparse = ["public/banners"] if banner_only else None
+        if sparse is None and src_roots:
+            # Partial brand pushes only need that tree on the tag (~hundreds of
+            # folders), not the full 128k+ product-images checkout.
+            sparse = [f"public/products/{name}" for name, _ in src_roots]
         if sparse:
-            print("Using sparse checkout (public/banners only).", flush=True)
+            print(f"Using sparse checkout ({len(sparse)} path(s)).", flush=True)
         if not add_worktree(tmp, sparse_paths=sparse):
             print(
                 f"ERROR: could not check out tag {TAG} — abort image tag update.",

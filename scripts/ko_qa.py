@@ -69,6 +69,7 @@ _WHITELIST_TOKENS = (
     "TSA",
     "EVA",
     "TPU",
+    "PVC",
     "SKU",
     "GB",
     "UK",
@@ -77,6 +78,37 @@ _WHITELIST_TOKENS = (
     "mm",
     "cm",
     "kg",
+    # Dior maison / mens acc & shoes (proper nouns & collection names)
+    "Christian Dior Paris",
+    "Christian Dior Couture",
+    "Christian Dior",
+    "Avenue Montaigne",
+    "Montaigne",
+    "30 Montaigne",
+    "Toile de Jouy",
+    "Sauvage",
+    "Moulures",
+    "Colibri",
+    "Trèfle",
+    "Grosgrain",
+    "Swarovski",
+    "RIMOWA",
+    "Multiwheel",
+    "Assouline",
+    "Rizzoli",
+    "Thames",
+    "Hudson",
+    "Delpire",
+    "Gravity",
+    "CD Lock",
+    "CD Icon",
+    "Resines",
+    "Boisées",
+    "Ambre",
+    "Muguet",
+    "Encens",
+    "Couture Charms",
+    "Gravity",
 )
 
 CATALOG_PATHS: dict[str, list[Path]] = {
@@ -107,7 +139,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
 def en_ratio(s: str) -> float:
     """Latin-letter ratio; whitelisted brand/tech tokens are ignored."""
     cleaned = s or ""
-    for tok in _WHITELIST_TOKENS:
+    for tok in sorted(_WHITELIST_TOKENS, key=len, reverse=True):
         cleaned = re.sub(re.escape(tok), "", cleaned, flags=re.I)
     letters = [c for c in cleaned if c.isalpha()]
     if not letters:
@@ -176,6 +208,9 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
         if isinstance(feat, str) and feat.strip():
             # Colourway / logo callouts keep Latin colour names on purpose.
             if feat.startswith("로고") or "Logos" in feat:
+                continue
+            # Book / lifestyle publisher imprint — Latin house name is intentional.
+            if feat.startswith("출판사:"):
                 continue
             out.append(("featuresKo", feat.strip()))
     for i, sec in enumerate(p.get("storySections") or []):
