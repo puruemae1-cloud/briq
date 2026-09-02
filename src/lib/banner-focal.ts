@@ -30,6 +30,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Women's RTW grass campaign — three models centred in the strip */
   "brand-dior-womens-rtw.jpg": "50% 52%",
   "brand-dior-womens-rtw.webp": "50% 52%",
+  /* Accessories jewelry — Rose des Vents necklace + face */
+  "brand-dior-accessories.jpg": "66% 34%",
+  "brand-dior-accessories.webp": "66% 34%",
 };
 
 /**

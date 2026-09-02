@@ -11,6 +11,7 @@ export type BrandKey =
   | "dior-watches"
   | "dior-bags"
   | "dior-mens-rtw"
+  | "dior-accessories"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -170,6 +171,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     // Locked men's RTW campaign — boat / technical jacket (all-ready-to-wear PLP).
     images: ["/banners/brand-dior-mens-rtw.jpg"],
   },
+  "dior-accessories": {
+    key: "dior-accessories",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    // Locked jewelry campaign — Rose des Vents necklace (necklaces PLP).
+    images: ["/banners/brand-dior-accessories.jpg"],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -232,7 +241,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "lv-home-lifestyle": "louis-vuitton",
   "lv-furniture-lighting": "louis-vuitton",
   dior: "dior",
-  "dior-accessories": "dior",
+  "dior-accessories": "dior-accessories",
   "di-home": "dior",
   "di-tableware": "dior",
   "di-objects": "dior",
@@ -260,13 +269,13 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-bath-linen": "dior",
   "di-table-linen": "dior",
   "di-throws": "dior",
-  "di-jewelry-timepieces": "dior",
-  "di-jewelry-all": "dior",
-  "di-earrings": "dior",
-  "di-bracelets": "dior",
-  "di-rings": "dior",
-  "di-necklaces": "dior",
-  "di-dior-icons": "dior",
+  "di-jewelry-timepieces": "dior-accessories",
+  "di-jewelry-all": "dior-accessories",
+  "di-earrings": "dior-accessories",
+  "di-bracelets": "dior-accessories",
+  "di-rings": "dior-accessories",
+  "di-necklaces": "dior-accessories",
+  "di-dior-icons": "dior-accessories",
   "dior-watches": "dior-watches",
   "di-timepieces-all": "dior-watches",
   "di-la-d-de-dior": "dior-watches",
