@@ -876,6 +876,19 @@ export type SubcategoryId =
   | "di-men-tailored-jackets"
   | "di-men-leather"
   | "di-men-suits-tuxedos"
+  | "di-womens"
+  | "di-women-rtw-all"
+  | "di-women-tshirts"
+  | "di-women-shirts"
+  | "di-women-sweaters-cardigans"
+  | "di-women-dresses"
+  | "di-women-skirts"
+  | "di-women-trousers-shorts"
+  | "di-women-denim"
+  | "di-women-swimsuits"
+  | "di-women-homewear-lingerie"
+  | "di-women-coats"
+  | "di-women-jackets"
   | "dior-shoes"
   | "di-men-shoes"
   | "di-men-shoes-all"
@@ -1177,6 +1190,22 @@ export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "di-men-tailored-jackets",
   "di-men-leather",
   "di-men-suits-tuxedos",
+];
+
+/** Dior women's ready-to-wear by category (official GB womens RTW PLPs). */
+export const DI_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "di-women-rtw-all",
+  "di-women-tshirts",
+  "di-women-shirts",
+  "di-women-sweaters-cardigans",
+  "di-women-dresses",
+  "di-women-skirts",
+  "di-women-trousers-shorts",
+  "di-women-denim",
+  "di-women-swimsuits",
+  "di-women-homewear-lingerie",
+  "di-women-coats",
+  "di-women-jackets",
 ];
 
 /** Dior men's shoes (official GB all-shoes PLPs). */
@@ -2572,6 +2601,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_BAGS_MEN_LEAF_IDS,
     "di-mens",
     ...DI_MEN_RTW_LEAF_IDS,
+    "di-womens",
+    ...DI_WOMEN_RTW_LEAF_IDS,
     "dior-shoes",
     "di-men-shoes",
     ...DI_MEN_SHOES_LEAF_IDS,
@@ -2690,6 +2721,19 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-accessorize-bag": ["di-men-accessorize-bag"],
 
   "di-mens": ["di-mens", ...DI_MEN_RTW_LEAF_IDS],
+  "di-womens": ["di-womens", ...DI_WOMEN_RTW_LEAF_IDS],
+  "di-women-rtw-all": ["di-women-rtw-all"],
+  "di-women-tshirts": ["di-women-tshirts"],
+  "di-women-shirts": ["di-women-shirts"],
+  "di-women-sweaters-cardigans": ["di-women-sweaters-cardigans"],
+  "di-women-dresses": ["di-women-dresses"],
+  "di-women-skirts": ["di-women-skirts"],
+  "di-women-trousers-shorts": ["di-women-trousers-shorts"],
+  "di-women-denim": ["di-women-denim"],
+  "di-women-swimsuits": ["di-women-swimsuits"],
+  "di-women-homewear-lingerie": ["di-women-homewear-lingerie"],
+  "di-women-coats": ["di-women-coats"],
+  "di-women-jackets": ["di-women-jackets"],
   "di-men-rtw-all": ["di-men-rtw-all"],
   "di-men-tshirts-polos": ["di-men-tshirts-polos"],
   "di-men-shirts": ["di-men-shirts"],
@@ -3783,6 +3827,74 @@ export const navCategories: NavCategory[] = [
         labelKo: "디올",
         href: "/shop?category=luxury&sub=dior",
         children: [
+          {
+            id: "di-womens",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=di-womens",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-women-rtw-all",
+                labelKo: "전체",
+                href: "/shop?category=luxury&sub=di-women-rtw-all",
+              },
+              {
+                id: "di-women-coats",
+                labelKo: "코트",
+                href: "/shop?category=luxury&sub=di-women-coats",
+              },
+              {
+                id: "di-women-jackets",
+                labelKo: "재킷",
+                href: "/shop?category=luxury&sub=di-women-jackets",
+              },
+              {
+                id: "di-women-sweaters-cardigans",
+                labelKo: "스웨터 & 가디건",
+                href: "/shop?category=luxury&sub=di-women-sweaters-cardigans",
+              },
+              {
+                id: "di-women-shirts",
+                labelKo: "셔츠",
+                href: "/shop?category=luxury&sub=di-women-shirts",
+              },
+              {
+                id: "di-women-tshirts",
+                labelKo: "탑 & 티셔츠",
+                href: "/shop?category=luxury&sub=di-women-tshirts",
+              },
+              {
+                id: "di-women-dresses",
+                labelKo: "원피스",
+                href: "/shop?category=luxury&sub=di-women-dresses",
+              },
+              {
+                id: "di-women-skirts",
+                labelKo: "스커트",
+                href: "/shop?category=luxury&sub=di-women-skirts",
+              },
+              {
+                id: "di-women-trousers-shorts",
+                labelKo: "팬츠 & 쇼츠",
+                href: "/shop?category=luxury&sub=di-women-trousers-shorts",
+              },
+              {
+                id: "di-women-denim",
+                labelKo: "데님",
+                href: "/shop?category=luxury&sub=di-women-denim",
+              },
+              {
+                id: "di-women-homewear-lingerie",
+                labelKo: "홈웨어 & 란제리",
+                href: "/shop?category=luxury&sub=di-women-homewear-lingerie",
+              },
+              {
+                id: "di-women-swimsuits",
+                labelKo: "스윔웨어",
+                href: "/shop?category=luxury&sub=di-women-swimsuits",
+              },
+            ],
+          },
           {
             id: "di-mens",
             labelKo: "남성용",

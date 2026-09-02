@@ -34,6 +34,7 @@ from di_common import (  # noqa: E402
 from di_size_charts import (  # noqa: E402
     size_chart_for_di_mens_rtw,
     size_chart_for_di_mens_shoes,
+    size_chart_for_di_womens_rtw,
 )
 from ko_qa import en_ratio, is_good_korean  # noqa: E402
 
@@ -48,6 +49,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-bags-women-catalog-raw.json",
     ROOT / "src/data/di/di-bags-men-catalog-raw.json",
     ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
+    ROOT / "src/data/di/di-women-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
@@ -143,6 +145,35 @@ RTWISH = {
     "di-men-tailored-jackets",
     "di-men-leather",
     "di-men-suits-tuxedos",
+    "di-womens",
+    "di-women-rtw-all",
+    "di-women-tshirts",
+    "di-women-shirts",
+    "di-women-sweaters-cardigans",
+    "di-women-dresses",
+    "di-women-skirts",
+    "di-women-trousers-shorts",
+    "di-women-denim",
+    "di-women-swimsuits",
+    "di-women-homewear-lingerie",
+    "di-women-coats",
+    "di-women-jackets",
+}
+
+WOMEN_RTWISH = {
+    "di-womens",
+    "di-women-rtw-all",
+    "di-women-tshirts",
+    "di-women-shirts",
+    "di-women-sweaters-cardigans",
+    "di-women-dresses",
+    "di-women-skirts",
+    "di-women-trousers-shorts",
+    "di-women-denim",
+    "di-women-swimsuits",
+    "di-women-homewear-lingerie",
+    "di-women-coats",
+    "di-women-jackets",
 }
 
 SLGISH = {
@@ -247,6 +278,17 @@ LEAF_PREF = [
     "di-men-loafers",
     "di-men-lace-ups",
     "di-men-boots",
+    "di-women-tshirts",
+    "di-women-shirts",
+    "di-women-sweaters-cardigans",
+    "di-women-dresses",
+    "di-women-skirts",
+    "di-women-trousers-shorts",
+    "di-women-denim",
+    "di-women-swimsuits",
+    "di-women-homewear-lingerie",
+    "di-women-coats",
+    "di-women-jackets",
     "di-men-crossbody-shoulder-bags",
     "di-men-backpacks",
     "di-men-small-bags",
@@ -265,6 +307,7 @@ LEAF_PREF = [
     "di-men-slg-all",
     "di-men-acc-all",
     "di-men-shoes-all",
+    "di-women-rtw-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -520,6 +563,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["watches", "timepieces", "시계", "타임피스"]
     elif any(c in BAGISH for c in cols):
         tags += ["bags", "handbags", "가방", "핸드백"]
+    elif any(c in WOMEN_RTWISH for c in cols):
+        tags += ["luxury", "rtw", "ready-to-wear", "의류", "여성"]
     elif any(c in RTWISH for c in cols):
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
     elif any(c in SLGISH for c in cols):
@@ -601,7 +646,15 @@ def refresh_existing(existing: dict, row: dict) -> dict:
         p["variants"] = new_vars
     p["price"] = list_price_from_variants(p.get("variants") or [], price)
     normalize_di_product_prices(p, gbp_f if gbp_f else None)
-    if any(c in RTWISH for c in collections + [leaf]):
+    if any(c in WOMEN_RTWISH for c in collections + [leaf]):
+        chart = size_chart_for_di_womens_rtw(
+            p.get("variants") or [],
+            leaf_id=leaf,
+            title_en=p.get("name") or "",
+        )
+        if chart:
+            p["sizeChart"] = chart
+    elif any(c in RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_mens_rtw(
             p.get("variants") or [],
             leaf_id=leaf,
@@ -744,7 +797,15 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
     feats = features_from_ko_hit(h)
     if feats:
         product["featuresKo"] = feats
-    if any(c in RTWISH for c in collections + [leaf]):
+    if any(c in WOMEN_RTWISH for c in collections + [leaf]):
+        chart = size_chart_for_di_womens_rtw(
+            variants,
+            leaf_id=leaf,
+            title_en=title_en,
+        )
+        if chart:
+            product["sizeChart"] = chart
+    elif any(c in RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_mens_rtw(
             variants,
             leaf_id=leaf,

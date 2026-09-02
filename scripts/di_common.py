@@ -653,6 +653,117 @@ PARENT_COLS_MEN_RTW = [
     "di-mens",
 ]
 
+# Official Women's Ready-to-Wear (Luxury → Dior → 여성용).
+# Hub: /fashion/womens-fashion/ready-to-wear/all-ready-to-wear (~900 SKUs).
+# Stages (pause between for stability):
+#   1 — tops: t-shirts + shirts + sweaters-cardigans
+#   2 — dresses + skirts
+#   3 — bottoms + swim + lingerie: trousers-shorts + denim + swimsuits + homewear-lingerie
+#   4 — outerwear + all gap fill: coats + jackets + all-ready-to-wear
+WOMEN_RTW_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-women-rtw-all",
+        "slug": "all-ready-to-wear",
+        "label": "All Ready-to-Wear",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/all-ready-to-wear",
+        "stage": "4",
+    },
+    {
+        "id": "di-women-tshirts",
+        "slug": "t-shirts",
+        "label": "Tops & T-shirts",
+        "labelKo": "탑 & 티셔츠",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/t-shirts",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-shirts",
+        "slug": "shirts",
+        "label": "Shirts",
+        "labelKo": "셔츠",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/shirts",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-sweaters-cardigans",
+        "slug": "sweaters-cardigans",
+        "label": "Sweaters and Cardigans",
+        "labelKo": "스웨터 & 가디건",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/sweaters-cardigans",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-dresses",
+        "slug": "dresses",
+        "label": "Dresses",
+        "labelKo": "원피스",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/dresses",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-skirts",
+        "slug": "skirts",
+        "label": "Skirts",
+        "labelKo": "스커트",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/skirts",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-trousers-shorts",
+        "slug": "trousers-shorts",
+        "label": "Pants & Shorts",
+        "labelKo": "팬츠 & 쇼츠",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/trousers-shorts",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-denim",
+        "slug": "denim",
+        "label": "Denim",
+        "labelKo": "데님",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/denim",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-swimsuits",
+        "slug": "swimsuits",
+        "label": "Swimsuits",
+        "labelKo": "스윔웨어",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/swimsuits",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-homewear-lingerie",
+        "slug": "homewear-lingerie",
+        "label": "Homewear & Lingerie",
+        "labelKo": "홈웨어 & 란제리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/homewear-lingerie",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-coats",
+        "slug": "coats",
+        "label": "Coats",
+        "labelKo": "코트",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/coats",
+        "stage": "4",
+    },
+    {
+        "id": "di-women-jackets",
+        "slug": "jackets",
+        "label": "Jackets",
+        "labelKo": "재킷",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/ready-to-wear/jackets",
+        "stage": "4",
+    },
+]
+
+PARENT_COLS_WOMEN_RTW = [
+    "dior",
+    "di-womens",
+]
+
 # Official Men's Small Leather Goods (Accessories → Dior → 남성 SLG).
 # ~198 SKUs — 3 stages with pause between:
 #   1 — Card Holders + Compact Wallets

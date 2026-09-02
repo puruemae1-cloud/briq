@@ -307,3 +307,116 @@ DI_MEN_SHOES = {
 
 def size_chart_for_di_mens_shoes() -> dict:
     return copy.deepcopy(DI_MEN_SHOES)
+
+
+# Official Dior women RTW conversion (FR base) — aligned with dior.com GB size
+# drawers / House equivalences (FR ↔ IT ↔ UK ↔ US ↔ SML + body cm).
+DI_WOMEN_RTW_FR = {
+    "id": "di-women-rtw-fr",
+    "titleKo": "디올 여성 레디투웨어 사이즈 가이드",
+    "noteKo": (
+        "dior.com(영국) 공식 사이즈 환산을 기준으로 정리한 가이드입니다. "
+        "Briq 사이즈 선택란의 숫자(34·36 등)는 아래 Dior Size (FR) 열과 대응합니다. "
+        "스타일·소재에 따라 핏이 다를 수 있으니 참고용으로 확인해 주세요."
+    ),
+    "headers": ["Dior Size (FR)", "IT", "UK", "US", "SML", "가슴 (cm)", "허리 (cm)", "힙 (cm)"],
+    "rows": [
+        ["32", "36", "4", "0", "XXS", "78", "58", "84"],
+        ["34", "38", "6", "2", "XS", "82", "62", "88"],
+        ["36", "40", "8", "4", "S", "86", "66", "92"],
+        ["38", "42", "10", "6", "M", "90", "70", "96"],
+        ["40", "44", "12", "8", "L", "94", "74", "100"],
+        ["42", "46", "14", "10", "XL", "98", "78", "104"],
+        ["44", "48", "16", "12", "XXL", "104", "84", "110"],
+        ["46", "50", "18", "14", "3XL", "110", "90", "116"],
+    ],
+}
+
+DI_WOMEN_RTW_SML = {
+    "id": "di-women-rtw-sml",
+    "titleKo": "디올 여성 레디투웨어 사이즈 가이드",
+    "noteKo": (
+        "dior.com(영국) 공식 사이즈 환산을 기준으로 정리한 가이드입니다. "
+        "Briq 사이즈 선택란의 S·M·L 등은 아래 Dior Size (SML) 열과 대응합니다."
+    ),
+    "headers": ["Dior Size (SML)", "FR", "IT", "UK", "US", "가슴 (cm)", "허리 (cm)", "힙 (cm)"],
+    "rows": [
+        ["XXS", "32", "36", "4", "0", "78", "58", "84"],
+        ["XS", "34", "38", "6", "2", "82", "62", "88"],
+        ["S", "36", "40", "8", "4", "86", "66", "92"],
+        ["M", "38", "42", "10", "6", "90", "70", "96"],
+        ["L", "40", "44", "12", "8", "94", "74", "100"],
+        ["XL", "42", "46", "14", "10", "98", "78", "104"],
+        ["XXL", "44", "48", "16", "12", "104", "84", "110"],
+        ["3XL", "46", "50", "18", "14", "110", "90", "116"],
+    ],
+}
+
+DI_WOMEN_RTW_DENIM = {
+    "id": "di-women-rtw-denim",
+    "titleKo": "디올 여성 데님 사이즈 가이드",
+    "noteKo": (
+        "dior.com(영국) 공식 사이즈 환산을 기준으로 정리한 가이드입니다. "
+        "데님 표기 숫자(또는 FR)는 아래 열과 대응하며, 핏은 스타일마다 다를 수 있습니다."
+    ),
+    "headers": ["Dior Size (FR)", "IT", "UK", "US", "허리 (cm)", "힙 (cm)"],
+    "rows": [
+        ["32", "36", "4", "0", "58", "84"],
+        ["34", "38", "6", "2", "62", "88"],
+        ["36", "40", "8", "4", "66", "92"],
+        ["38", "42", "10", "6", "70", "96"],
+        ["40", "44", "12", "8", "74", "100"],
+        ["42", "46", "14", "10", "78", "104"],
+        ["44", "48", "16", "12", "84", "110"],
+        ["46", "50", "18", "14", "90", "116"],
+    ],
+}
+
+_WOMEN_LETTER = re.compile(
+    r"^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|3XL|4XL)$",
+    re.I,
+)
+_WOMEN_SML_LEAVES = {
+    "di-women-tshirts",
+    "di-women-sweaters-cardigans",
+    "di-women-swimsuits",
+    "di-women-homewear-lingerie",
+}
+_WOMEN_DENIM_LEAVES = {"di-women-denim"}
+_WOMEN_FR_LEAVES = {
+    "di-women-shirts",
+    "di-women-dresses",
+    "di-women-skirts",
+    "di-women-trousers-shorts",
+    "di-women-coats",
+    "di-women-jackets",
+    "di-women-rtw-all",
+}
+
+
+def size_chart_for_di_womens_rtw(
+    variants: list[dict],
+    *,
+    leaf_id: str = "",
+    title_en: str = "",
+) -> dict | None:
+    """Pick FR / SML / denim chart for Dior women's RTW."""
+    labels = _variant_labels(variants)
+    leaf = leaf_id or ""
+    title = (title_en or "").lower()
+
+    if leaf in _WOMEN_DENIM_LEAVES or "denim" in leaf or "jean" in title:
+        return copy.deepcopy(DI_WOMEN_RTW_DENIM)
+
+    letterish = False
+    if labels:
+        letterish = sum(1 for lab in labels if _WOMEN_LETTER.match(lab.strip())) >= max(
+            1, len(labels) // 2
+        )
+
+    if leaf in _WOMEN_SML_LEAVES or letterish:
+        return copy.deepcopy(DI_WOMEN_RTW_SML)
+
+    if leaf in _WOMEN_FR_LEAVES or leaf or labels or title:
+        return copy.deepcopy(DI_WOMEN_RTW_FR)
+    return None

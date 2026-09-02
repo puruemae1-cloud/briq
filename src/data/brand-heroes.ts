@@ -11,6 +11,7 @@ export type BrandKey =
   | "dior-watches"
   | "dior-bags"
   | "dior-mens-rtw"
+  | "dior-womens-rtw"
   | "dior-accessories"
   | "dior-shoes"
   | "prada"
@@ -171,6 +172,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/dior.svg",
     // Locked men's RTW campaign — boat / technical jacket (all-ready-to-wear PLP).
     images: ["/banners/brand-dior-mens-rtw.jpg"],
+  },
+  "dior-womens-rtw": {
+    key: "dior-womens-rtw",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    // Locked women's RTW campaign creative.
+    images: ["/banners/brand-dior-womens-rtw.jpg"],
   },
   "dior-accessories": {
     key: "dior-accessories",
@@ -350,6 +359,19 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-men-tailored-jackets": "dior-mens-rtw",
   "di-men-leather": "dior-mens-rtw",
   "di-men-suits-tuxedos": "dior-mens-rtw",
+  "di-womens": "dior-womens-rtw",
+  "di-women-rtw-all": "dior-womens-rtw",
+  "di-women-tshirts": "dior-womens-rtw",
+  "di-women-shirts": "dior-womens-rtw",
+  "di-women-sweaters-cardigans": "dior-womens-rtw",
+  "di-women-dresses": "dior-womens-rtw",
+  "di-women-skirts": "dior-womens-rtw",
+  "di-women-trousers-shorts": "dior-womens-rtw",
+  "di-women-denim": "dior-womens-rtw",
+  "di-women-swimsuits": "dior-womens-rtw",
+  "di-women-homewear-lingerie": "dior-womens-rtw",
+  "di-women-coats": "dior-womens-rtw",
+  "di-women-jackets": "dior-womens-rtw",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };
