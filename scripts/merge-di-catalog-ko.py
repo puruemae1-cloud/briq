@@ -28,7 +28,10 @@ from di_common import (  # noqa: E402
     gbp_to_krw,
     slugify,
 )
-from di_size_charts import size_chart_for_di_mens_rtw  # noqa: E402
+from di_size_charts import (  # noqa: E402
+    size_chart_for_di_mens_rtw,
+    size_chart_for_di_mens_shoes,
+)
 from ko_qa import en_ratio, is_good_korean  # noqa: E402
 
 RAW_PATHS = [
@@ -44,6 +47,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
+    ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -165,6 +169,17 @@ MEN_ACCISH = {
     "di-men-pet-accessories",
 }
 
+MEN_SHOESISH = {
+    "dior-shoes",
+    "di-men-shoes",
+    "di-men-shoes-all",
+    "di-men-sneakers",
+    "di-men-sandals-mules",
+    "di-men-loafers",
+    "di-men-lace-ups",
+    "di-men-boots",
+}
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -223,6 +238,11 @@ LEAF_PREF = [
     "di-men-lifestyle",
     "di-men-acc-tech",
     "di-men-pet-accessories",
+    "di-men-sneakers",
+    "di-men-sandals-mules",
+    "di-men-loafers",
+    "di-men-lace-ups",
+    "di-men-boots",
     "di-men-crossbody-shoulder-bags",
     "di-men-backpacks",
     "di-men-small-bags",
@@ -240,6 +260,7 @@ LEAF_PREF = [
     "di-men-bags-all",
     "di-men-slg-all",
     "di-men-acc-all",
+    "di-men-shoes-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
 
@@ -477,6 +498,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
     elif any(c in MEN_ACCISH for c in cols):
         tags += ["accessories", "악세서리", "남성"]
+    elif any(c in MEN_SHOESISH for c in cols):
+        tags += ["shoes", "슈즈", "남성", "sneakers", "footwear"]
     elif any(c in JEWELRYISH for c in cols):
         tags += ["jewelry", "jewellery", "쥬얼리"]
     else:
@@ -506,6 +529,8 @@ def _category_for(collections: list[str], leaf: str, fallback: str = "accessorie
         return "watches"
     if any(c in BAGISH for c in cols):
         return "bags"
+    if any(c in MEN_SHOESISH for c in cols):
+        return "shoes"
     if any(c in RTWISH for c in cols):
         return "luxury"
     return fallback
@@ -552,6 +577,8 @@ def refresh_existing(existing: dict, row: dict) -> dict:
         )
         if chart:
             p["sizeChart"] = chart
+    elif any(c in MEN_SHOESISH for c in collections + [leaf]):
+        p["sizeChart"] = size_chart_for_di_mens_shoes()
     return p
 
 
@@ -685,7 +712,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "storySections": story_sections_for_di(
             description_ko or title_ko,
             images,
-            rtw=any(c in RTWISH for c in collections + [leaf]),
+            rtw=any(c in RTWISH or c in MEN_SHOESISH for c in collections + [leaf]),
         ),
     }
     feats = features_from_ko_hit(h)
@@ -699,6 +726,8 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         )
         if chart:
             product["sizeChart"] = chart
+    elif any(c in MEN_SHOESISH for c in collections + [leaf]):
+        product["sizeChart"] = size_chart_for_di_mens_shoes()
     return product
 
 

@@ -843,6 +843,69 @@ PARENT_COLS_MEN_ACCESSORIES = [
     "di-men-accessories",
 ]
 
+# Official Men's Shoes (Shoes → Dior → 남성용).
+# Hub: /fashion/mens-fashion/shoes/all-shoes (~207 SKUs).
+# Stages:
+#   1 — sneakers + sandals-slippers
+#   2 — loafers + lace-up + boots
+#   3 — all-shoes gap fill
+MEN_SHOES_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-men-shoes-all",
+        "slug": "all-shoes",
+        "label": "All Shoes",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/all-shoes",
+        "stage": "3",
+    },
+    {
+        "id": "di-men-sneakers",
+        "slug": "sneakers",
+        "label": "Sneakers",
+        "labelKo": "스니커즈",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/sneakers",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-sandals-mules",
+        "slug": "sandals-slippers",
+        "label": "Sandals & Mules",
+        "labelKo": "샌들 & 뮬",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/sandals-slippers",
+        "stage": "1",
+    },
+    {
+        "id": "di-men-loafers",
+        "slug": "loafers",
+        "label": "Loafers",
+        "labelKo": "로퍼",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/loafers",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-lace-ups",
+        "slug": "lace-up-shoes",
+        "label": "Lace-up Shoes",
+        "labelKo": "레이스업 슈즈",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/lace-up-shoes",
+        "stage": "2",
+    },
+    {
+        "id": "di-men-boots",
+        "slug": "boots",
+        "label": "Boots & Ankle Boots",
+        "labelKo": "부츠 & 앵클부츠",
+        "url": f"{BASE}/{LANG}/fashion/mens-fashion/shoes/boots",
+        "stage": "2",
+    },
+]
+
+PARENT_COLS_MEN_SHOES = [
+    "dior",
+    "dior-shoes",
+    "di-men-shoes",
+]
+
 
 PARENT_COLS = [
     "dior",

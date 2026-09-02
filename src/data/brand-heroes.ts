@@ -12,6 +12,7 @@ export type BrandKey =
   | "dior-bags"
   | "dior-mens-rtw"
   | "dior-accessories"
+  | "dior-shoes"
   | "prada"
   | "arcteryx"
   | "paul-smith"
@@ -179,6 +180,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     // Locked jewelry campaign — Rose des Vents necklace (necklaces PLP).
     images: ["/banners/brand-dior-accessories.jpg"],
   },
+  "dior-shoes": {
+    key: "dior-shoes",
+    nameEn: "Dior",
+    nameKo: "디올",
+    logoSrc: "/brands/dior.svg",
+    // Reuse men's fashion campaign until a dedicated shoes PLP hero is locked.
+    images: ["/banners/brand-dior-mens-rtw.jpg"],
+  },
   "london-undercover": {
     key: "london-undercover",
     nameEn: "London Undercover",
@@ -242,6 +251,14 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "lv-furniture-lighting": "louis-vuitton",
   dior: "dior",
   "dior-accessories": "dior-accessories",
+  "dior-shoes": "dior-shoes",
+  "di-men-shoes": "dior-shoes",
+  "di-men-shoes-all": "dior-shoes",
+  "di-men-sneakers": "dior-shoes",
+  "di-men-sandals-mules": "dior-shoes",
+  "di-men-loafers": "dior-shoes",
+  "di-men-lace-ups": "dior-shoes",
+  "di-men-boots": "dior-shoes",
   "di-home": "dior",
   "di-tableware": "dior",
   "di-objects": "dior",

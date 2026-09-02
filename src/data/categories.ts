@@ -876,6 +876,14 @@ export type SubcategoryId =
   | "di-men-tailored-jackets"
   | "di-men-leather"
   | "di-men-suits-tuxedos"
+  | "dior-shoes"
+  | "di-men-shoes"
+  | "di-men-shoes-all"
+  | "di-men-sneakers"
+  | "di-men-sandals-mules"
+  | "di-men-loafers"
+  | "di-men-lace-ups"
+  | "di-men-boots"
   | "di-men-accessories"
   | "di-men-acc-all"
   | "di-men-sunglasses"
@@ -1169,6 +1177,16 @@ export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "di-men-tailored-jackets",
   "di-men-leather",
   "di-men-suits-tuxedos",
+];
+
+/** Dior men's shoes (official GB all-shoes PLPs). */
+export const DI_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "di-men-shoes-all",
+  "di-men-sneakers",
+  "di-men-sandals-mules",
+  "di-men-loafers",
+  "di-men-lace-ups",
+  "di-men-boots",
 ];
 
 /** Dior men's accessories (official GB all-accessories PLPs). */
@@ -2554,7 +2572,22 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_BAGS_MEN_LEAF_IDS,
     "di-mens",
     ...DI_MEN_RTW_LEAF_IDS,
+    "dior-shoes",
+    "di-men-shoes",
+    ...DI_MEN_SHOES_LEAF_IDS,
   ],
+  "dior-shoes": [
+    "dior-shoes",
+    "di-men-shoes",
+    ...DI_MEN_SHOES_LEAF_IDS,
+  ],
+  "di-men-shoes": ["di-men-shoes", ...DI_MEN_SHOES_LEAF_IDS],
+  "di-men-shoes-all": ["di-men-shoes-all"],
+  "di-men-sneakers": ["di-men-sneakers"],
+  "di-men-sandals-mules": ["di-men-sandals-mules"],
+  "di-men-loafers": ["di-men-loafers"],
+  "di-men-lace-ups": ["di-men-lace-ups"],
+  "di-men-boots": ["di-men-boots"],
   "dior-accessories": [
     "dior-accessories",
     "di-home",
@@ -5035,6 +5068,51 @@ export const navCategories: NavCategory[] = [
             labelKo: "스니커즈",
             href: "/shop?category=shoes&sub=ch-women-sneakers",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "dior-shoes",
+        labelKo: "디올",
+        href: "/shop?category=shoes&sub=dior-shoes",
+        children: [
+          {
+            id: "di-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=di-men-shoes",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-men-shoes-all",
+                labelKo: "전체",
+                href: "/shop?category=shoes&sub=di-men-shoes-all",
+              },
+              {
+                id: "di-men-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=di-men-sneakers",
+              },
+              {
+                id: "di-men-sandals-mules",
+                labelKo: "샌들 & 뮬",
+                href: "/shop?category=shoes&sub=di-men-sandals-mules",
+              },
+              {
+                id: "di-men-loafers",
+                labelKo: "로퍼",
+                href: "/shop?category=shoes&sub=di-men-loafers",
+              },
+              {
+                id: "di-men-lace-ups",
+                labelKo: "레이스업 슈즈",
+                href: "/shop?category=shoes&sub=di-men-lace-ups",
+              },
+              {
+                id: "di-men-boots",
+                labelKo: "부츠 & 앵클부츠",
+                href: "/shop?category=shoes&sub=di-men-boots",
+              },
+            ],
           },
         ],
       },
