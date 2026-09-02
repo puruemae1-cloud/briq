@@ -123,8 +123,8 @@ def sync_brand(
                 shutil.rmtree(target)
             shutil.copytree(child, target)
             copied += 1
+            run(["git", "add", "-f", f"public/products/{name}/{sku}"], cwd=tmp)
         print(f"copied {copied}/{len(only)} ids → public/products/{name}", flush=True)
-        run(["git", "add", "-f", f"public/products/{name}"], cwd=tmp)
         status = subprocess.run(
             ["git", "status", "--porcelain", "--", f"public/products/{name}"],
             cwd=str(tmp),

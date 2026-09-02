@@ -51,6 +51,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
+    ROOT / "src/data/di/di-men-essentials-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
@@ -406,18 +407,42 @@ def load_raw() -> dict[str, dict]:
         if not path.is_file():
             continue
         raw = json.loads(path.read_text())
+        is_essentials = path.name == "di-men-essentials-catalog-raw.json"
         for row in raw.get("products") or []:
             code = row.get("id")
             if not code or not row.get("images"):
                 continue
             prev = by.get(code)
             if prev:
-                cols = list(
-                    dict.fromkeys(
-                        (prev.get("collections") or []) + (row.get("collections") or [])
+                if is_essentials:
+                    # Essentials hub is authoritative for shoes/RTW/accessories routing.
+                    cols = list(dict.fromkeys(row.get("collections") or []))
+                    merged = {**prev, **row, "collections": cols}
+                    if "di-men-essentials" not in merged["collections"]:
+                        merged["collections"].append("di-men-essentials")
+                else:
+                    cols = list(
+                        dict.fromkeys(
+                            (prev.get("collections") or [])
+                            + (row.get("collections") or [])
+                        )
                     )
-                )
-                merged = {**prev, **row, "collections": cols}
+                    merged = {**prev, **row, "collections": cols}
+                    # Don't let later category raws wipe an Essentials route.
+                    if prev.get("essentialsBucket") and "di-men-essentials" in (
+                        prev.get("collections") or []
+                    ):
+                        merged["collections"] = list(
+                            dict.fromkeys(prev.get("collections") or [])
+                        )
+                        merged["leafId"] = prev.get("leafId") or merged.get("leafId")
+                        merged["leafLabel"] = prev.get("leafLabel") or merged.get(
+                            "leafLabel"
+                        )
+                        merged["leafLabelKo"] = prev.get("leafLabelKo") or merged.get(
+                            "leafLabelKo"
+                        )
+                        merged["essentialsBucket"] = prev.get("essentialsBucket")
                 if len(prev.get("images") or []) > len(merged.get("images") or []):
                     merged["images"] = prev["images"]
                 by[code] = merged

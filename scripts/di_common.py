@@ -906,6 +906,168 @@ PARENT_COLS_MEN_SHOES = [
     "di-men-shoes",
 ]
 
+# Curated mixed hub: Men's Fashion → Dior Essentials
+MEN_ESSENTIALS_HUB = (
+    f"{BASE}/{LANG}/fashion/mens-fashion/dior-essentials"
+)
+MEN_ESSENTIALS_LEAF = {
+    "id": "di-men-essentials",
+    "slug": "dior-essentials",
+    "label": "Dior Essentials",
+    "labelKo": "디올 에센셜",
+    "url": MEN_ESSENTIALS_HUB,
+}
+
+
+def _leaf_by_id(leaves: list[dict[str, str]], leaf_id: str) -> dict[str, str]:
+    for leaf in leaves:
+        if leaf["id"] == leaf_id:
+            return leaf
+    raise KeyError(leaf_id)
+
+
+def classify_di_men_essentials(
+    *,
+    title: str = "",
+    subtitle: str = "",
+    url: str = "",
+    merch: dict | None = None,
+) -> tuple[str, list[str], dict[str, str]]:
+    """Route an Essentials hub SKU into shoes / RTW / accessories.
+
+    Returns ``(bucket, collections, leaf)`` where bucket is
+    ``shoes`` | ``rtw`` | ``accessories``.
+    """
+    merch = merch or {}
+    cat = merch.get("category") or merch.get("category_int") or {}
+    lvl1 = str((cat.get("lvl1") if isinstance(cat, dict) else "") or "").strip().lower()
+    lvl2 = str((cat.get("lvl2") if isinstance(cat, dict) else "") or "").strip().lower()
+    family = str(merch.get("product_family") or "").strip().lower()
+    url_l = (url or "").lower()
+    blob = " ".join(
+        [
+            title,
+            subtitle,
+            url_l,
+            lvl1,
+            lvl2,
+            family,
+            str(merch.get("subtitle") or ""),
+        ]
+    ).lower()
+
+    def _shoes(leaf_id: str = "di-men-shoes-all") -> tuple[str, list[str], dict[str, str]]:
+        if "sneaker" in lvl2 or "sneaker" in blob:
+            leaf_id = "di-men-sneakers"
+        elif any(k in lvl2 or k in blob for k in ("sandal", "mule", "slipper")):
+            leaf_id = "di-men-sandals-mules"
+        elif "loafer" in lvl2 or "loafer" in blob:
+            leaf_id = "di-men-loafers"
+        elif any(k in lvl2 or k in blob for k in ("lace-up", "lace up", "derby", "oxford")):
+            leaf_id = "di-men-lace-ups"
+        elif "boot" in lvl2 or "boot" in blob:
+            leaf_id = "di-men-boots"
+        leaf = _leaf_by_id(MEN_SHOES_LEAVES, leaf_id)
+        return "shoes", [*PARENT_COLS_MEN_SHOES, leaf["id"]], leaf
+
+    def _rtw(leaf_id: str = "di-men-rtw-all") -> tuple[str, list[str], dict[str, str]]:
+        if any(k in lvl2 for k in ("t-shirt", "tshirt", "polo")) or any(
+            k in blob for k in ("t-shirt", "polo shirt")
+        ):
+            leaf_id = "di-men-tshirts-polos"
+        elif "shirt" in lvl2 or (" shirt" in f" {blob}" and "t-shirt" not in blob):
+            leaf_id = "di-men-shirts"
+        elif any(k in lvl2 or k in blob for k in ("knitwear", "sweatshirt", "sweater", "hoodie")):
+            leaf_id = "di-men-knitwear-sweatshirts"
+        elif any(k in lvl2 or k in blob for k in ("trouser", "short", "pant")):
+            leaf_id = "di-men-trousers-shorts"
+        elif any(k in lvl2 or k in blob for k in ("denim", "jean")):
+            leaf_id = "di-men-denim"
+        elif any(k in lvl2 or k in blob for k in ("beachwear", "swim")):
+            leaf_id = "di-men-beachwear"
+        elif any(k in lvl2 or k in blob for k in ("outerwear", "coat", "parka")):
+            leaf_id = "di-men-outerwear"
+        elif "jacket" in lvl2 or "blazer" in blob or "jacket" in blob:
+            leaf_id = "di-men-tailored-jackets"
+        elif lvl2 == "leather" or ("leather" in lvl2 and "bag" not in blob):
+            leaf_id = "di-men-leather"
+        elif any(k in lvl2 or k in blob for k in ("suit", "tuxedo")):
+            leaf_id = "di-men-suits-tuxedos"
+        leaf = _leaf_by_id(MEN_RTW_LEAVES, leaf_id)
+        return "rtw", [*PARENT_COLS_MEN_RTW, leaf["id"]], leaf
+
+    def _acc() -> tuple[str, list[str], dict[str, str]]:
+        slg_map = (
+            (("card-holder", "card holder", "cardholder"), "di-men-card-holders"),
+            (("compact wallet", "bi-fold", "bifold"), "di-men-compact-wallets"),
+            (("long wallet", "zip wallet"), "di-men-long-wallets"),
+            (("pouch", "wearable wallet"), "di-men-pouches"),
+            (("phone case", "airpods"), "di-men-tech-accessories"),
+        )
+        for keys, leaf_id in slg_map:
+            if any(k in lvl2 or k in blob for k in keys):
+                leaf = _leaf_by_id(MEN_SLG_LEAVES, leaf_id)
+                return "accessories", [*PARENT_COLS_MEN_SLG, leaf_id], leaf
+
+        acc_map = (
+            (("sunglass", "eyewear"), "di-men-sunglasses"),
+            (("belt",), "di-men-belts"),
+            (("tie", "pocket square"), "di-men-ties-pocket-squares"),
+            (("scarf", "blanket"), "di-men-scarves"),
+            (("hat", "glove", "beanie", "cap"), "di-men-hats-gloves"),
+            (("sock",), "di-men-socks"),
+            (("cufflink", "fashion jewel"), "di-men-fashion-jewelry"),
+            (("silver",), "di-men-silver-jewelry"),
+            (("key ring", "keyring", "bag charm"), "di-men-key-rings"),
+            (("charm",), "di-men-charm-jewelry"),
+            (("lifestyle",), "di-men-lifestyle"),
+            (("tech",), "di-men-acc-tech"),
+            (("pet",), "di-men-pet-accessories"),
+        )
+        for keys, leaf_id in acc_map:
+            if any(k in lvl2 or k in blob for k in keys):
+                leaf = _leaf_by_id(MEN_ACCESSORIES_LEAVES, leaf_id)
+                return "accessories", [*PARENT_COLS_MEN_ACCESSORIES, leaf_id], leaf
+
+        leaf = _leaf_by_id(MEN_ACCESSORIES_LEAVES, "di-men-acc-all")
+        return "accessories", [*PARENT_COLS_MEN_ACCESSORIES, "di-men-acc-all"], leaf
+
+    # Primary: Algolia merch category.lvl1 wins over product_family
+    # (some accessories e.g. caps are tagged family=pap).
+    if lvl1 == "shoes":
+        return _shoes()
+    if lvl1 == "clothing":
+        return _rtw()
+    if lvl1 in {"accessories", "leather goods"}:
+        return _acc()
+
+    if family in {"souliers_homme", "souliers"}:
+        return _shoes()
+    if family in {"pap", "pret_a_porter", "rtw"}:
+        return _rtw()
+
+    # Fallbacks from URL / title when merch is missing
+    if "/shoes/" in url_l or any(
+        k in blob
+        for k in ("sneaker", "loafer", "derby", "oxford", "ankle boot", "sandal", "mule")
+    ):
+        return _shoes()
+    if "/ready-to-wear/" in url_l or any(
+        k in blob
+        for k in (
+            "t-shirt",
+            "polo shirt",
+            "sweatshirt",
+            "hoodie",
+            "trouser",
+            "outerwear",
+            "blazer",
+            "tuxedo",
+        )
+    ):
+        return _rtw()
+    return _acc()
+
 
 PARENT_COLS = [
     "dior",
