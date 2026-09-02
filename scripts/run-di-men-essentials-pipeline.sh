@@ -62,7 +62,21 @@ print("buckets", raw.get("bucketCounts"))
 PY
 
 if [[ -s /tmp/di-men-essentials-cdn-only.txt ]]; then
-  python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file /tmp/di-men-essentials-cdn-only.txt | tee /tmp/di-men-essentials-cdn.log
+  split -l 80 /tmp/di-men-essentials-cdn-only.txt /tmp/di-men-essentials-cdn-batch-
+  batches=(/tmp/di-men-essentials-cdn-batch-*)
+  total=${#batches[@]}
+  n=0
+  for batch in "${batches[@]}"; do
+    [[ -f "$batch" ]] || continue
+    n=$((n + 1))
+    echo "=== CDN batch $n/$total $(wc -l < "$batch") folders ==="
+    skip_purge=--skip-purge
+    if [[ "$n" -eq "$total" ]]; then
+      skip_purge=
+    fi
+    python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file "$batch" $skip_purge \
+      | tee -a /tmp/di-men-essentials-cdn.log
+  done
   echo "EXIT_CDN:$?"
 else
   echo "EXIT_CDN:0 (no folders)"
