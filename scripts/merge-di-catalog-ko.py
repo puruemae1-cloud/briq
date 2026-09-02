@@ -25,8 +25,10 @@ from di_common import (  # noqa: E402
     ALGOLIA_MERCH_APP_ID,
     ALGOLIA_MERCH_INDEX_KO,
     algolia_variant_gbp,
+    di_price_anomalies,
     dior_code_to_object_id,
     gbp_to_krw,
+    normalize_di_product_prices,
     slugify,
 )
 from di_size_charts import (  # noqa: E402
@@ -561,15 +563,19 @@ def refresh_existing(existing: dict, row: dict) -> dict:
     p["tags"] = tags_for(collections, leaf)
     p["sourceUrl"] = row.get("url") or p.get("sourceUrl") or ""
     if p.get("variants"):
-        v = dict(p["variants"][0])
-        v["images"] = images
-        v["image"] = image
-        v["gbpPrice"] = gbp_f
-        v["price"] = price
-        v["diCollections"] = collections
-        v["sourceUrl"] = p["sourceUrl"]
-        p["variants"] = [v]
+        new_vars: list[dict] = []
+        for v in p["variants"]:
+            vv = dict(v)
+            vv["images"] = images
+            vv["image"] = image
+            vv["gbpPrice"] = gbp_f
+            vv["price"] = price
+            vv["diCollections"] = collections
+            vv["sourceUrl"] = p["sourceUrl"]
+            new_vars.append(vv)
+        p["variants"] = new_vars
     p["price"] = list_price_from_variants(p.get("variants") or [], price)
+    normalize_di_product_prices(p, gbp_f if gbp_f else None)
     if any(c in RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_mens_rtw(
             p.get("variants") or [],
@@ -723,6 +729,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
             product["sizeChart"] = chart
     elif any(c in MEN_SHOESISH for c in collections + [leaf]):
         product["sizeChart"] = size_chart_for_di_mens_shoes()
+    normalize_di_product_prices(product, gbp_f if gbp_f else None)
     return product
 
 
@@ -807,6 +814,13 @@ def main() -> None:
             print("--- pause 25s ---", flush=True)
             time.sleep(25)
 
+    raw_gbp = {
+        code: float(row["gbpPrice"])
+        for code, row in by_raw.items()
+        if row.get("gbpPrice") is not None
+    }
+    for p in out:
+        normalize_di_product_prices(p, raw_gbp.get(str(p.get("sku") or "")))
     CAT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     # Keep di-catalog.ts tiny (JSON import) — embedding 1000+ SKUs inline OOMs Cursor/Vercel.
     OUT_TS.write_text(
@@ -823,7 +837,15 @@ def main() -> None:
         if is_good_korean(p.get("descriptionKo") or "")
         and is_good_korean(p.get("nameKo") or "")
     )
-    print(f"DONE {len(out)} good={good}", flush=True)
+    bad_prices = di_price_anomalies(out)
+    print(f"DONE {len(out)} good={good} price_anomalies={len(bad_prices)}", flush=True)
+    if bad_prices:
+        for pid, gbp, pr, exp, vgbp in bad_prices[:15]:
+            print(
+                f"  price bad: {pid} gbp={gbp} krw={pr} expected={exp} var_gbp={vgbp}",
+                flush=True,
+            )
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

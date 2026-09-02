@@ -24,6 +24,9 @@ echo "=== MERGE ==="
 python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-men-shoes-merge.log
 echo "EXIT_MERGE:$?"
 
+python3 scripts/fix-di-catalog-prices.py --check | tee /tmp/di-men-shoes-prices.log
+echo "EXIT_PRICES:$?"
+
 echo "=== ENRICH ==="
 python3 scripts/enrich-di-men-shoes-pdp.py --translate | tee /tmp/di-men-shoes-enrich.log
 echo "EXIT_ENRICH:$?"

@@ -939,9 +939,80 @@ def algolia_variant_gbp(price_obj: dict | None, fallback_gbp: float) -> float:
     if cur in ("KRW", "KR"):
         return fallback_gbp
     # Heuristic: luxury GBP list prices stay well below £5000.
-    if val >= 5000:
+    if val >= 5000 and fallback_gbp > 0 and val > fallback_gbp * 5:
+        return fallback_gbp
+    if val >= 5000 and fallback_gbp <= 0:
         return fallback_gbp
     return val
+
+
+def is_krw_polluted_gbp(val: float, anchor_gbp: float) -> bool:
+    """True when *val* looks like a KRW list price stored in a GBP field."""
+    if val <= 0:
+        return False
+    if anchor_gbp <= 0:
+        return val >= 50_000
+    if val >= 10_000 and val > anchor_gbp * 5:
+        return True
+    return False
+
+
+def resolve_product_gbp(product: dict, raw_gbp: float | None = None) -> float:
+    """Pick canonical GBP list price (Gucci rule: scraped / product-level GBP)."""
+    gbp = float(product.get("gbpPrice") or 0)
+    if raw_gbp and raw_gbp > 0:
+        if gbp <= 0 or is_krw_polluted_gbp(gbp, raw_gbp) or (
+            gbp > raw_gbp * 3 and gbp >= 5000
+        ):
+            gbp = float(raw_gbp)
+    if gbp <= 0 or is_krw_polluted_gbp(gbp, 500):
+        for v in product.get("variants") or []:
+            vg = float(v.get("gbpPrice") or 0)
+            if 0 < vg < 10_000 and not is_krw_polluted_gbp(vg, 500):
+                gbp = vg
+                break
+    return gbp
+
+
+def normalize_di_product_prices(product: dict, raw_gbp: float | None = None) -> bool:
+    """Apply Gucci GBP→KRW formula to product + all variants. Returns True if changed."""
+    gbp = resolve_product_gbp(product, raw_gbp)
+    if gbp <= 0:
+        return False
+    krw = gbp_to_krw(gbp)
+    changed = False
+    if float(product.get("gbpPrice") or 0) != gbp:
+        product["gbpPrice"] = gbp
+        changed = True
+    if int(product.get("price") or 0) != krw:
+        product["price"] = krw
+        changed = True
+    for v in product.get("variants") or []:
+        if float(v.get("gbpPrice") or 0) != gbp or int(v.get("price") or 0) != krw:
+            v["gbpPrice"] = gbp
+            v["price"] = krw
+            changed = True
+    return changed
+
+
+def di_price_anomalies(
+    products: list[dict],
+) -> list[tuple[str, float, int, int, float]]:
+    """Return (product_id, gbp, price, expected_krw, variant_gbp) for mismatches."""
+    bad: list[tuple[str, float, int, int, float]] = []
+    for p in products:
+        gbp = float(p.get("gbpPrice") or 0)
+        if gbp <= 0:
+            continue
+        exp = gbp_to_krw(gbp)
+        pr = int(p.get("price") or 0)
+        vgbp = float((p.get("variants") or [{}])[0].get("gbpPrice") or 0)
+        if pr > exp * 1.15 or (pr > 0 and pr < exp * 0.85):
+            bad.append((str(p.get("id") or ""), gbp, pr, exp, vgbp))
+            continue
+        if is_krw_polluted_gbp(vgbp, gbp):
+            bad.append((str(p.get("id") or ""), gbp, pr, exp, vgbp))
+    return bad
 
 
 def slugify(text: str, *, max_len: int = 72) -> str:
