@@ -294,6 +294,11 @@ def main() -> int:
         "--only-file",
         help="Newline-separated product-id folder names (same as --only)",
     )
+    ap.add_argument(
+        "--skip-purge",
+        action="store_true",
+        help="Skip jsDelivr purge (use for batched pushes; purge once at end)",
+    )
     args = ap.parse_args()
     only_ids: list[str] = list(args.only or [])
     if args.only_file:
@@ -454,7 +459,8 @@ def main() -> int:
 
         # Same path on @product-images keeps a stale jsDelivr HIT otherwise
         # (homepage banners looked unchanged after refresh).
-        purge_jsdelivr([name for name, _ in src_roots])
+        if not args.skip_purge:
+            purge_jsdelivr([name for name, _ in src_roots])
         return 0
     finally:
         run(["git", "worktree", "remove", "--force", str(tmp)], check=False)

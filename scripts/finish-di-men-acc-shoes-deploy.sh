@@ -103,15 +103,25 @@ PY
   # Batches of 80 — each run uses sparse checkout (fast).
   split -l 80 /tmp/di-men-acc-shoes-cdn-only.txt /tmp/di-men-acc-shoes-cdn-batch-
   batch_n=0
+  total_batches=0
+  for _ in /tmp/di-men-acc-shoes-cdn-batch-*; do total_batches=$((total_batches+1)); done
   for batch in /tmp/di-men-acc-shoes-cdn-batch-*; do
     [[ -f "$batch" ]] || continue
     batch_n=$((batch_n+1))
-    echo "=== CDN batch $batch_n $(wc -l < "$batch") folders ==="
+    if grep -q "BATCH_${batch_n}_OK" "$STATUS" 2>/dev/null; then
+      echo "skip batch $batch_n (already done)"
+      continue
+    fi
+    echo "=== CDN batch $batch_n/$total_batches $(wc -l < "$batch") folders ==="
+    skip_purge=--skip-purge
+    if [[ "$batch_n" -eq "$total_batches" ]]; then
+      skip_purge=
+    fi
     python3 scripts/push-product-images-tag.py \
-      --dirs di-pdp --skip-whiten --only-file "$batch" \
+      --dirs di-pdp --skip-whiten --only-file "$batch" $skip_purge \
       | tee -a /tmp/di-men-acc-shoes-cdn.log
-    echo "BATCH_${batch_n}_OK"
-    sleep 3
+    echo "BATCH_${batch_n}_OK" >> "$STATUS"
+    sleep 2
   done
   echo "CDN_OK $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$STATUS"
 fi
