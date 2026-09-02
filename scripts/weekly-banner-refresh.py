@@ -1,20 +1,13 @@
 #!/usr/bin/env python3
-"""Weekly refresh of Briq homepage / category banners.
+"""Weekly refresh of Briq sports banners only.
 
-- Homepage hero (rot-hero-*): black-and-white London panoramas
-  (Parliament / Big Ben / Thames / bridges) — never apparel or accessories.
-- "Now in London" homepage rail uses locked creative event-now-london.jpg
-  (not rotated). Legacy rot-event-* slots remain available for shop / other rails.
-- Fashion rails (shoes / bags / clothing / luxury / accessories): prefer
-  campaign / on-model / staged lifestyle frames — not flat grey packshot thumbs.
-  Look-banner crops are taller (~2:1 desktop) so legs, bags, and outfits stay in frame.
-- Other rails: official product galleries on the `product-images` CDN.
+Default: only SPORTS_SLOTS rotate (golf / cycle / swim / run / tennis + related
+shop & sports-brand chips). Every other banner stays fixed — either an
+explicitly locked creative in LOCKED_BANNERS, or the last committed frame.
 
-PC frames are panoramic (hero ~4:1, look-banners ~2:1) with desktop / tablet /
-mobile crops via banner_smart_crop.
-
-  python3 scripts/weekly-banner-refresh.py
-  python3 scripts/weekly-banner-refresh.py --only rot-hero,rot-event --seed 42
+  python3 scripts/weekly-banner-refresh.py              # sports only (CI default)
+  python3 scripts/weekly-banner-refresh.py --all        # emergency full refresh
+  python3 scripts/weekly-banner-refresh.py --only rot-golf --seed 42
 """
 from __future__ import annotations
 
@@ -291,7 +284,9 @@ LONDON_BW_SOURCES: list[dict[str, str]] = [
     },
 ]
 
-# Sports imagery stays on sports / outdoor rails and brand chips only.
+# Sports imagery stays on sports / outdoor rails and Galvin Green chips only.
+# Arc'teryx brand hero is locked (brand-arcteryx-ridge.jpg) — do not rotate
+# unused brand-arcteryx-{1,2,3} slots.
 SPORTS_SLOTS = {
     n
     for n in SLOT_THEMES
@@ -303,7 +298,6 @@ SPORTS_SLOTS = {
     or n.startswith("shop-golf-")
     or n.startswith("shop-run-")
     or n.startswith("shop-shoe-train-")
-    or n.startswith("brand-arcteryx-")
     or n.startswith("brand-galvin-green-")
 }
 
@@ -1254,6 +1248,11 @@ def main() -> int:
         default="",
         help="Only refresh slots whose filename contains this substring",
     )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="Refresh every SLOT_THEMES entry (not just sports). Opt-in only.",
+    )
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -1262,6 +1261,15 @@ def main() -> int:
     print(f"week_seed={seed}", flush=True)
 
     slots = [s for s in referenced_slots() if s in SLOT_THEMES]
+    # Default: sports rails only — locked homepage/brand creatives never rotate.
+    if not args.all and not args.only:
+        slots = [s for s in slots if s in SPORTS_SLOTS]
+        print(
+            f"mode=sports-only locked={len(LOCKED_BANNERS)} sports_slots={len(SPORTS_SLOTS)}",
+            flush=True,
+        )
+    elif args.all:
+        print("mode=all (emergency full refresh)", flush=True)
     if args.only:
         needles = [n.strip() for n in args.only.split(",") if n.strip()]
         slots = [s for s in slots if any(n in s for n in needles)]
@@ -1482,13 +1490,24 @@ def main() -> int:
 
     if not args.dry_run:
         merged = {**prev_slots, **new_slots}
-        # Drop stale keys only on full weekly runs (no --only filter)
-        if not args.only:
+        # Drop stale keys only on intentional full (--all) runs.
+        # Sports-only / --only runs must keep locked + frozen non-sports frames.
+        if args.all and not args.only:
             keep = set(referenced_slots()) | set(SLOT_THEMES) | LOCKED_BANNERS
             merged = {k: v for k, v in merged.items() if k in keep}
+        # Always ensure locked creatives are retained in the manifest index.
+        for name in LOCKED_BANNERS:
+            if name not in merged and name in prev_slots:
+                merged[name] = prev_slots[name]
+            elif name not in merged:
+                merged[name] = {
+                    "locked": True,
+                    "note": "fixed creative — not rotated by weekly sports refresh",
+                }
         manifest = {
             "refreshedAt": datetime.now(timezone.utc).isoformat(),
             "weekSeed": seed,
+            "mode": "all" if args.all else ("only" if args.only else "sports-only"),
             "slots": merged,
         }
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")

@@ -26,7 +26,7 @@ export type LookBanner = {
   support: string;
   href: string;
   cta: string;
-  /** Rotates to the next photo every week */
+  /** Rotating sports rails only (golf / run / swim / cycle / tennis). */
   images: string[];
   focal?: string;
   align?: "left" | "center" | "right";
@@ -110,7 +110,7 @@ export function pickRotating(
 /**
  * Fixed homepage hero ("London to Your Door").
  * Not rotated weekly — keep a single locked asset under /banners/hero-london-door.jpg
- * (plus /t/ and /m/ variants). Weekly banner refresh only touches rot-hero-* slots.
+ * (plus /t/ and /m/ variants). Weekly refresh only rotates sports rails.
  */
 export const heroImage = "/banners/hero-london-door.jpg";
 

@@ -1,6 +1,7 @@
 /**
  * Brand hero banners for shop category pages when a brand chip is selected.
- * Images live under `/banners/brand-<key>-N.jpg` (PC / t / m via weekly refresh).
+ * Images live under `/banners/brand-<key>-N.jpg` (PC / t / m).
+ * Locked brand creatives stay fixed; only sports-brand chips may rotate weekly.
  */
 
 export type BrandKey =
@@ -30,7 +31,7 @@ export type BrandHeroDef = {
   nameKo: string;
   /** Elegant wordmark / monogram SVG (ships with the app, not the media tag). */
   logoSrc: string;
-  /** Shop-strip banners — weekly refresh rotates source photography. */
+  /** Shop-strip banners. Sports brands may rotate weekly; others stay fixed. */
   images: string[];
 };
 
