@@ -461,10 +461,79 @@ BAGS_WOMEN_LEAVES: list[dict[str, str]] = [
         "id": "di-accessorize-bag",
         "slug": "accessorize-your-bag",
         "label": "Accessorize Your Bag",
-        "labelKo": "백 액세서리",
+        "labelKo": "악세서리 Your Bag",
         "url": f"{BASE}/{LANG}/fashion/womens-fashion/bags/accessorize-your-bag",
         "stage": "3",
     },
+]
+
+# Official Accessorize Your Bag → category.lvl2 leaves (Bags → Dior → 여성용 → 악세서리 Your Bag).
+ACCESSORIZE_BAG_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-acc-bag-jewelry",
+        "algoliaLvl2": "Bag Jewelry",
+        "label": "Bag Jewelry",
+        "labelKo": "백 주얼리",
+    },
+    {
+        "id": "di-acc-bag-totes",
+        "algoliaLvl2": "Totes",
+        "label": "Totes",
+        "labelKo": "토트용",
+    },
+    {
+        "id": "di-acc-bag-mini",
+        "algoliaLvl2": "Mini Bags",
+        "label": "Mini Bags",
+        "labelKo": "미니백용",
+    },
+    {
+        "id": "di-acc-bag-shoulder",
+        "algoliaLvl2": "Shoulder bags and Crossbody",
+        "label": "Shoulder & Crossbody",
+        "labelKo": "숄더·크로스바디용",
+    },
+    {
+        "id": "di-acc-bag-bucket",
+        "algoliaLvl2": "Bucket bags",
+        "label": "Bucket bags",
+        "labelKo": "버킷용",
+    },
+    {
+        "id": "di-acc-bag-clutches",
+        "algoliaLvl2": "Clutches and Pouches",
+        "label": "Clutches and Pouches",
+        "labelKo": "클러치·파우치용",
+    },
+    {
+        "id": "di-acc-bag-key-rings",
+        "algoliaLvl2": "Key Rings",
+        "label": "Key Rings",
+        "labelKo": "키링",
+    },
+    {
+        "id": "di-acc-bag-mitzah",
+        "algoliaLvl2": "Mitzah",
+        "label": "Mitzah",
+        "labelKo": "미차",
+    },
+    {
+        "id": "di-acc-bag-purse",
+        "algoliaLvl2": "Purse",
+        "label": "Purse",
+        "labelKo": "퍼스",
+    },
+]
+
+ACCESSORIZE_BAG_LVL2_TO_ID = {
+    L["algoliaLvl2"].strip(): L["id"] for L in ACCESSORIZE_BAG_LEAVES
+}
+
+PARENT_COLS_ACCESSORIZE_BAG = [
+    "dior",
+    "dior-bags",
+    "di-bags-womens",
+    "di-accessorize-bag",
 ]
 
 PARENT_COLS_BAGS_WOMEN = [

@@ -855,6 +855,15 @@ export type SubcategoryId =
   | "di-clutches"
   | "di-mini-bags"
   | "di-accessorize-bag"
+  | "di-acc-bag-jewelry"
+  | "di-acc-bag-totes"
+  | "di-acc-bag-mini"
+  | "di-acc-bag-shoulder"
+  | "di-acc-bag-bucket"
+  | "di-acc-bag-clutches"
+  | "di-acc-bag-key-rings"
+  | "di-acc-bag-mitzah"
+  | "di-acc-bag-purse"
   | "di-bags-mens"
   | "di-men-bags-all"
   | "di-men-crossbody-shoulder-bags"
@@ -1152,6 +1161,19 @@ export const DI_TIMEPIECE_LEAF_IDS: SubcategoryId[] = [
   "di-straps",
 ];
 
+/** Dior Accessorize Your Bag leaves (official GB category.lvl2). */
+export const DI_ACCESSORIZE_BAG_LEAF_IDS: SubcategoryId[] = [
+  "di-acc-bag-jewelry",
+  "di-acc-bag-totes",
+  "di-acc-bag-mini",
+  "di-acc-bag-shoulder",
+  "di-acc-bag-bucket",
+  "di-acc-bag-clutches",
+  "di-acc-bag-key-rings",
+  "di-acc-bag-mitzah",
+  "di-acc-bag-purse",
+];
+
 /** Dior women's bags by category (official GB bags PLPs). */
 export const DI_BAGS_WOMEN_LEAF_IDS: SubcategoryId[] = [
   "di-bags-all",
@@ -1162,6 +1184,7 @@ export const DI_BAGS_WOMEN_LEAF_IDS: SubcategoryId[] = [
   "di-clutches",
   "di-mini-bags",
   "di-accessorize-bag",
+  ...DI_ACCESSORIZE_BAG_LEAF_IDS,
 ];
 
 /** Dior men's bags by category (official GB mens bags PLPs). */
@@ -2709,7 +2732,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-bucket-bags": ["di-bucket-bags"],
   "di-clutches": ["di-clutches"],
   "di-mini-bags": ["di-mini-bags"],
-  "di-accessorize-bag": ["di-accessorize-bag"],
+  "di-accessorize-bag": ["di-accessorize-bag", ...DI_ACCESSORIZE_BAG_LEAF_IDS],
+  "di-acc-bag-jewelry": ["di-acc-bag-jewelry"],
+  "di-acc-bag-totes": ["di-acc-bag-totes"],
+  "di-acc-bag-mini": ["di-acc-bag-mini"],
+  "di-acc-bag-shoulder": ["di-acc-bag-shoulder"],
+  "di-acc-bag-bucket": ["di-acc-bag-bucket"],
+  "di-acc-bag-clutches": ["di-acc-bag-clutches"],
+  "di-acc-bag-key-rings": ["di-acc-bag-key-rings"],
+  "di-acc-bag-mitzah": ["di-acc-bag-mitzah"],
+  "di-acc-bag-purse": ["di-acc-bag-purse"],
   "di-bags-mens": ["di-bags-mens", ...DI_BAGS_MEN_LEAF_IDS],
   "di-men-bags-all": ["di-men-bags-all"],
   "di-men-crossbody-shoulder-bags": ["di-men-crossbody-shoulder-bags"],
@@ -4593,8 +4625,56 @@ export const navCategories: NavCategory[] = [
               },
               {
                 id: "di-accessorize-bag",
-                labelKo: "백 액세서리",
+                labelKo: "악세서리 Your Bag",
                 href: "/shop?category=bags&sub=di-accessorize-bag",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-acc-bag-jewelry",
+                    labelKo: "백 주얼리",
+                    href: "/shop?category=bags&sub=di-acc-bag-jewelry",
+                  },
+                  {
+                    id: "di-acc-bag-totes",
+                    labelKo: "토트용",
+                    href: "/shop?category=bags&sub=di-acc-bag-totes",
+                  },
+                  {
+                    id: "di-acc-bag-mini",
+                    labelKo: "미니백용",
+                    href: "/shop?category=bags&sub=di-acc-bag-mini",
+                  },
+                  {
+                    id: "di-acc-bag-shoulder",
+                    labelKo: "숄더·크로스바디용",
+                    href: "/shop?category=bags&sub=di-acc-bag-shoulder",
+                  },
+                  {
+                    id: "di-acc-bag-bucket",
+                    labelKo: "버킷용",
+                    href: "/shop?category=bags&sub=di-acc-bag-bucket",
+                  },
+                  {
+                    id: "di-acc-bag-clutches",
+                    labelKo: "클러치·파우치용",
+                    href: "/shop?category=bags&sub=di-acc-bag-clutches",
+                  },
+                  {
+                    id: "di-acc-bag-key-rings",
+                    labelKo: "키링",
+                    href: "/shop?category=bags&sub=di-acc-bag-key-rings",
+                  },
+                  {
+                    id: "di-acc-bag-mitzah",
+                    labelKo: "미차",
+                    href: "/shop?category=bags&sub=di-acc-bag-mitzah",
+                  },
+                  {
+                    id: "di-acc-bag-purse",
+                    labelKo: "퍼스",
+                    href: "/shop?category=bags&sub=di-acc-bag-purse",
+                  },
+                ],
               },
             ],
           },
