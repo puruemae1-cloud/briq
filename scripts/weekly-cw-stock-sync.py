@@ -317,15 +317,35 @@ def main() -> int:
 
     summary["live_clearance"] = len(live["cw-clearance"])
 
-    print("3) Ensuring product rows for new clearance SKUs…")
+    # Step 3: ensure product rows + downloadable PDP galleries for any SKU that
+    # exists on the official CW PLPs but is missing from our catalog row store.
+    #
+    # Previously we only ensured clearance ("cw-clearance") new SKUs, which
+    # meant newly announced watches (e.g. Trident) could appear on PLPs
+    # (and in category membership) but never become real PDP products because
+    # we didn't download images / create the raw["products"] row.
+    print("3) Ensuring product rows for newly seen SKUs…")
     by = {p["sku"]: p for p in raw["products"]}
-    for sku in raw["categories"]["cw-clearance"]:
-        if sku not in by:
-            ensure_product(raw, sku, "cw-clearance")
-            by = {p["sku"]: p for p in raw["products"]}
-            sync_gallery_and_enrich(sku, enr_products, force=True)
-        elif sku in summary["added"]:
-            sync_gallery_and_enrich(sku, enr_products, force=False)
+
+    all_cat_skus: set[str] = set()
+    for skus in raw["categories"].values():
+        all_cat_skus.update(skus)
+
+    new_skus = sorted([sku for sku in all_cat_skus if sku not in by])
+    print(f"  missing products: {len(new_skus)}")
+
+    def primary_collection_for(sku: str) -> str:
+        # Pick the highest priority category where this SKU is present.
+        for c in COL_PRIORITY:
+            if sku in raw["categories"].get(c, []):
+                return c
+        return COL_PRIORITY[-1]
+
+    for sku in new_skus:
+        primary = primary_collection_for(sku)
+        ensure_product(raw, sku, primary)
+        by = {p["sku"]: p for p in raw["products"]}
+        sync_gallery_and_enrich(sku, enr_products, force=True)
 
     rebuild_collections(raw)
 
