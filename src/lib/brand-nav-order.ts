@@ -82,13 +82,17 @@ export function brandRankForId(id: string): number {
 /**
  * Best (lowest) brand rank across a product's subcategory + tags.
  * Used so homepage rails lead with preferred brands (e.g. CW before Chanel).
+ *
+ * Structural nav ids (`womens` / `mens` / sport leaves) are ignored — they are
+ * gender/type chips for menus, not brand signals. Ranking them would let any
+ * Arc'teryx row tagged `womens` jump ahead of Chanel / Dior.
  */
 export function brandRankForProduct(product: {
   subcategory?: string;
   tags?: string[];
 }): number {
   const keys = [product.subcategory, ...(product.tags ?? [])].filter(
-    (k): k is string => Boolean(k),
+    (k): k is string => Boolean(k) && !STRUCTURAL_IDS.has(k),
   );
   if (keys.length === 0) return FAMILY_RANK._new;
   let best = Number.POSITIVE_INFINITY;

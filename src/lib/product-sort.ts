@@ -1,6 +1,5 @@
 import type { Product } from "@/data/product-types";
 import { isProductInStock } from "@/data/product-utils";
-import { brandRankForProduct } from "@/lib/brand-nav-order";
 
 export type ProductSort = "new" | "orders" | "price-asc" | "price-desc";
 
@@ -118,9 +117,9 @@ export function getNewArrivalsProducts(list: Product[]): Product[] {
 }
 
 /**
- * Homepage lookbook rails — preferred brands first (e.g. CW before Chanel),
- * then newest registered within each brand band.
+ * Homepage lookbook rails — newest catalogue registration first.
  * Prefers in-stock styles so OOS newest items don't occupy the rail.
+ * Matches each rail's "전체 보기" (`sort=new`) and weekly brand sync stamps.
  * `registeredAt` is Briq catalogue registration time (set when a SKU is first
  * imported); rebuilds must preserve it so newly added brands stay on top.
  */
@@ -130,15 +129,7 @@ export function getHomepageRailProducts(
 ): Product[] {
   const inStock = list.filter((p) => isProductInStock(p));
   const pool = inStock.length >= limit ? inStock : list;
-  return [...pool]
-    .sort(
-      withSoldOutLast((a, b) => {
-        const brand = brandRankForProduct(a) - brandRankForProduct(b);
-        if (brand !== 0) return brand;
-        return compareProductsByNewest(a, b);
-      }),
-    )
-    .slice(0, limit);
+  return sortProducts(pool, "new").slice(0, limit);
 }
 
 /** Build a /shop href while preserving filters and updating sort. */
