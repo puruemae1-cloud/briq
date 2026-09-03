@@ -6,6 +6,7 @@ Designed for GitHub Actions (cron) and local runs:
 """
 from __future__ import annotations
 
+import argparse
 import html as H
 import json
 import re
@@ -98,6 +99,12 @@ def is_watch_sku(pid: str) -> bool:
     if re.match(r"^N\d{2}-(STL|TIT|RUB|HYB|MAS|TIDE)-", pid, re.I):
         return False
     return True
+
+
+def is_full_watch_sku(pid: str) -> bool:
+    """Configurable variant ids are full SKUs (C60-42AGM1-S0BW0-HB), not model codes (C642)."""
+    s = (pid or "").strip()
+    return is_watch_sku(s) and s.count("-") >= 2 and len(s) > 10
 
 
 def scrape_category(cgid: str, extra: str | None, sz: int = 36) -> list[str]:
@@ -249,6 +256,69 @@ def fetch_stock(sku: str) -> dict:
         return {"sku": sku, "ok": False, "error": str(e), "available": False}
 
 
+def variation_urls(product: dict) -> list[str]:
+    urls: list[str] = []
+    for attr in product.get("variationAttributes") or []:
+        for v in attr.get("values") or []:
+            if not isinstance(v, dict):
+                continue
+            if not v.get("selectable"):
+                continue
+            u = v.get("url")
+            if isinstance(u, str) and u.strip():
+                urls.append(u.strip())
+    # stable uniq
+    out: list[str] = []
+    seen: set[str] = set()
+    for u in urls:
+        if u in seen:
+            continue
+        seen.add(u)
+        out.append(u)
+    return out
+
+
+def discover_family_skus(seed_sku: str, max_requests: int = 80) -> list[str]:
+    """Discover sibling SKUs across selectable variation URLs (size/strap axes)."""
+    out: list[str] = []
+    seen_sku: set[str] = set()
+    seen_url: set[str] = set()
+
+    try:
+        root = fetch_json(f"{API}?pid={urllib.parse.quote(seed_sku)}&quantity=1").get("product") or {}
+    except Exception:
+        return []
+
+    root_id = str(root.get("id") or seed_sku).strip()
+    if is_full_watch_sku(root_id):
+        out.append(root_id)
+        seen_sku.add(root_id)
+
+    queue = variation_urls(root)
+    for u in queue:
+        seen_url.add(u)
+
+    reqs = 0
+    while queue and reqs < max_requests:
+        u = queue.pop(0)
+        reqs += 1
+        try:
+            row = fetch_json(u).get("product") or {}
+        except Exception:
+            continue
+        rid = str(row.get("id") or "").strip()
+        if is_full_watch_sku(rid) and rid not in seen_sku:
+            seen_sku.add(rid)
+            out.append(rid)
+        for nu in variation_urls(row):
+            if nu in seen_url:
+                continue
+            seen_url.add(nu)
+            queue.append(nu)
+        time.sleep(0.03)
+    return out
+
+
 def rebuild_collections(raw: dict) -> None:
     membership: dict[str, list[str]] = {}
     for cat, skus in raw["categories"].items():
@@ -270,6 +340,14 @@ def rebuild_collections(raw: dict) -> None:
 def main() -> int:
     from weekly_korean_gate import check_new_korean, utc_now_iso
 
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--family-only",
+        action="store_true",
+        help="Skip PLP scrape; expand size/strap families then rebuild.",
+    )
+    args = ap.parse_args()
+
     since = utc_now_iso()
     raw = json.loads(RAW_PATH.read_text())
     enr = json.loads(ENR_PATH.read_text()) if ENR_PATH.exists() else {"scrapedAt": "", "products": {}}
@@ -279,41 +357,47 @@ def main() -> int:
 
     print("1) Scraping CW category PLPs…")
     live: dict[str, list[str]] = {}
-    for briq_id, cgid, extra in CATEGORIES:
-        pids = scrape_category(cgid, extra)
-        watches = [p for p in pids if is_watch_sku(p)]
-        live[briq_id] = watches
-        print(f"  {briq_id}: {len(watches)} watches")
+    if args.family_only:
+        print("  skip PLP scrape (--family-only)", flush=True)
+        for briq_id, _, _ in CATEGORIES:
+            live[briq_id] = [s for s in (raw["categories"].get(briq_id) or []) if is_watch_sku(s)]
+        print("2) Merging category membership… skip")
+    else:
+        for briq_id, cgid, extra in CATEGORIES:
+            pids = scrape_category(cgid, extra)
+            watches = [p for p in pids if is_watch_sku(p)]
+            live[briq_id] = watches
+            print(f"  {briq_id}: {len(watches)} watches")
 
-    print("2) Merging category membership…")
-    for briq_id, watches in live.items():
-        prev = list(raw["categories"].get(briq_id, []))
-        if briq_id == "cw-clearance":
-            # Keep previous Nearly New watches so sold-out stay listed (marked out of stock below)
-            keep = [
-                s
-                for s in prev
-                if s not in watches
-                and is_watch_sku(s)
-                and (
-                    s.upper().startswith("N")
-                    or "nearly new"
-                    in (
-                        (next((p for p in raw["products"] if p["sku"] == s), {}) or {}).get("name") or ""
-                    ).lower()
-                )
-            ]
-            merged = list(dict.fromkeys(watches + keep))
-            added = [s for s in watches if s not in prev]
-        else:
-            merged = list(dict.fromkeys(prev + watches))
-            added = [s for s in watches if s not in prev]
-        raw["categories"][briq_id] = merged
-        raw["categoryCounts"][briq_id] = len(merged)
-        if added:
-            print(f"  {briq_id} +{len(added)} {added[:8]}")
+        print("2) Merging category membership…")
+        for briq_id, watches in live.items():
+            prev = list(raw["categories"].get(briq_id, []))
             if briq_id == "cw-clearance":
-                summary["added"].extend(added)
+                # Keep previous Nearly New watches so sold-out stay listed (marked out of stock below)
+                keep = [
+                    s
+                    for s in prev
+                    if s not in watches
+                    and is_watch_sku(s)
+                    and (
+                        s.upper().startswith("N")
+                        or "nearly new"
+                        in (
+                            (next((p for p in raw["products"] if p["sku"] == s), {}) or {}).get("name") or ""
+                        ).lower()
+                    )
+                ]
+                merged = list(dict.fromkeys(watches + keep))
+                added = [s for s in watches if s not in prev]
+            else:
+                merged = list(dict.fromkeys(prev + watches))
+                added = [s for s in watches if s not in prev]
+            raw["categories"][briq_id] = merged
+            raw["categoryCounts"][briq_id] = len(merged)
+            if added:
+                print(f"  {briq_id} +{len(added)} {added[:8]}")
+                if briq_id == "cw-clearance":
+                    summary["added"].extend(added)
 
     summary["live_clearance"] = len(live["cw-clearance"])
 
@@ -347,16 +431,48 @@ def main() -> int:
         by = {p["sku"]: p for p in raw["products"]}
         sync_gallery_and_enrich(sku, enr_products, force=True)
 
+    # Also expand new-release families so dial size × strap siblings do not get
+    # dropped when PLP only lists a subset of configurable options.
+    print("3b) Expanding new-release variant families (size/strap)…")
+    family_added = 0
+    seeds = list(dict.fromkeys(raw["categories"].get("cw-new-releases", [])))
+    for i, seed in enumerate(seeds, 1):
+        if not is_full_watch_sku(seed):
+            continue
+        siblings = discover_family_skus(seed)
+        if i % 5 == 0:
+            print(
+                f"  family {i}/{len(seeds)} seed={seed} found={len(siblings)} added={family_added}",
+                flush=True,
+            )
+        if not siblings:
+            continue
+        seed_row = by.get(seed) or {}
+        seed_cols = list(seed_row.get("collections") or [primary_collection_for(seed)])
+        for sib in siblings:
+            if sib in by:
+                continue
+            primary = primary_collection_for(seed)
+            ensure_product(raw, sib, primary)
+            by = {p["sku"]: p for p in raw["products"]}
+            sib_row = by.get(sib)
+            if sib_row:
+                sib_row["collections"] = list(dict.fromkeys(seed_cols + [primary]))
+                sib_row["primaryCollection"] = seed_row.get("primaryCollection") or primary
+            sync_gallery_and_enrich(sib, enr_products, force=True)
+            family_added += 1
+        sync_gallery_and_enrich(seed, enr_products, force=False)
+        RAW_PATH.write_text(json.dumps(raw, indent=2, ensure_ascii=False) + "\n")
+        ENR_PATH.write_text(json.dumps(enr, indent=2, ensure_ascii=False) + "\n")
+    if family_added:
+        print(f"  + family siblings added {family_added}")
+
     rebuild_collections(raw)
 
-    print("4) Refreshing stock + prices (clearance + all Nearly New)…")
+    print("4) Refreshing stock + prices (all full watch SKUs, incl. family straps)…")
     stock_skus = sorted(
-        set(raw["categories"]["cw-clearance"])
-        | {p["sku"] for p in raw["products"] if (p.get("sku") or "").upper().startswith("N")}
+        {p["sku"] for p in raw["products"] if is_full_watch_sku(p.get("sku") or "")}
     )
-    # Also refresh stock for every SKU that is currently in any category (keeps PLP items accurate)
-    for skus in raw["categories"].values():
-        stock_skus = sorted(set(stock_skus) | set(skus))
 
     results: dict[str, dict] = {}
     with ThreadPoolExecutor(max_workers=6) as ex:

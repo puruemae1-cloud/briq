@@ -682,6 +682,9 @@ def refresh_existing(existing: dict, row: dict) -> dict:
             new_vars.append(vv)
         p["variants"] = new_vars
     p["price"] = list_price_from_variants(p.get("variants") or [], price)
+    # Preserve first-seen catalogue date so homepage 최신등록순 is not wiped on weekly merge.
+    if not p.get("registeredAt"):
+        p["registeredAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
     normalize_di_product_prices(p, gbp_f if gbp_f else None)
     if any(c in WOMEN_RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_womens_rtw(
@@ -824,6 +827,7 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
         "price": list_price_from_variants(variants, price),
         "sku": sku,
         "sourceUrl": source_url,
+        "registeredAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
         "variants": variants,
         "storySections": story_sections_for_di(
             description_ko or title_ko,

@@ -196,6 +196,25 @@ def dial_family_key(sku: str, line: str) -> str:
     return f"{line}|{prefix}|{model_code}"
 
 
+def cw_model_group_key(url: str) -> str | None:
+    """
+    For CW model landing pages (e.g. /trident-biscay-gmt/C642.html), use
+    the parent slug + short model code so 39/42 + strap SKUs are grouped.
+    """
+    if not url:
+        return None
+    path = re.sub(r"[?#].*$", "", url).strip("/")
+    parts = [p for p in path.split("/") if p]
+    if len(parts) < 2:
+        return None
+    tail = parts[-1].replace(".html", "")
+    parent = parts[-2].lower()
+    # Model pages look like C640/C641/C642; SKU pages look like full C60-... codes.
+    if re.fullmatch(r"[A-Z]\d{3,5}", tail, re.I):
+        return f"{parent}|{tail.upper()}"
+    return None
+
+
 def strap_color_key(sku: str) -> str:
     """Stable strap axis across case sizes (last SKU token)."""
     return slugify((sku or "").split("-")[-1] or sku)
@@ -492,7 +511,8 @@ for raw in RAW["products"]:
     size = normalize_case_size(size, sku)
     # Group strap sisters across case diameters (official WSize axis).
     line = "nn" if (sku.upper().startswith("N") or is_nearly_new(raw.get("name"))) else "new"
-    group_key = dial_family_key(sku, line)
+    model_key = cw_model_group_key(raw.get("url") or "")
+    group_key = f"{line}|model|{model_key}" if model_key else dial_family_key(sku, line)
     grouped.setdefault(
         group_key,
         {
@@ -607,6 +627,11 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             if (ROOT / "public" / plp.lstrip("/")).exists():
                 vimgs = [plp]
         if not vimgs:
+            # Keep option selectable even when only the parent gallery is present.
+            prim = local_gallery(primary_sku) or existing_images(en.get("images"))
+            if prim:
+                vimgs = prim
+        if not vimgs:
             continue
         vsize = normalize_case_size(men.get("size") or (None if multi_case else primary_size), msku)
         vrow = {
@@ -619,7 +644,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "image": vimgs[0],
             "images": vimgs[:10],
             "sourceUrl": m.get("url") or "",
-            "inStock": True,
+            "inStock": bool(m.get("inStock", True)),
         }
         if multi_case and vsize:
             vrow["size"] = vsize
