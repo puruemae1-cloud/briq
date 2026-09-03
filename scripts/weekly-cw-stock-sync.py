@@ -145,15 +145,21 @@ def parse_price(product: dict) -> tuple[float | None, float | None]:
     return gbp, list_gbp
 
 
-def download_imgs(sku: str, urls: list[str]) -> list[str]:
+def download_imgs(sku: str, urls: list[str], *, force: bool = False) -> list[str]:
     out: list[str] = []
     folder = IMG / slugify(sku)
     folder.mkdir(parents=True, exist_ok=True)
+    if force:
+        for stale in folder.glob("*.jpg"):
+            try:
+                stale.unlink()
+            except OSError:
+                pass
     for i, url in enumerate(urls[:8], 1):
         url = H.unescape(url.split("?")[0]) + "?sw=1200&sh=1500"
         dest = folder / f"{i}.jpg"
         local = f"/products/cw-pdp/{slugify(sku)}/{i}.jpg"
-        if dest.exists() and dest.stat().st_size > 2500:
+        if not force and dest.exists() and dest.stat().st_size > 2500:
             out.append(local)
             continue
         try:
@@ -233,7 +239,7 @@ def sync_gallery_and_enrich(sku: str, enr_products: dict, force: bool = False) -
             if not zoom:
                 zoom = [i["url"] for i in (ap.get("images") or {}).get("large") or []]
             if force or len(good) < 3:
-                imgs = download_imgs(sku, zoom)
+                imgs = download_imgs(sku, zoom, force=force)
                 if imgs:
                     e["images"] = imgs
             if ap.get("productName"):

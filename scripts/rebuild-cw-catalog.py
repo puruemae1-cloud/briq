@@ -692,11 +692,8 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             if (ROOT / "public" / plp.lstrip("/")).exists():
                 vimgs = [plp]
         if not vimgs:
-            # Keep option selectable even when only the parent gallery is present.
-            prim = local_gallery(primary_sku) or existing_images(en.get("images"))
-            if prim:
-                vimgs = prim
-        if not vimgs:
+            # Never borrow another strap/dial gallery — wrong hero + broken CDN
+            # expectations when only the primary SKU was published.
             continue
         vsize = normalize_case_size(men.get("size") or (None if multi_case else primary_size), msku)
         vrow = {

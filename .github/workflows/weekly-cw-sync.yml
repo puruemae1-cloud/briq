@@ -50,6 +50,7 @@ jobs:
           scripts/ci-commit-push.sh \
             "chore: weekly Christopher Ward stock + clearance sync" \
             src/data/cw \
+            src/data/product-images-manifest.json \
             scripts/weekly-cw-stock-sync.py \
             scripts/studio_whiten.py \
             scripts/whiten-product-studio-bg.py \
