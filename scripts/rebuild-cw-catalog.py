@@ -745,7 +745,9 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         sub_bits.append(primary_size)
     elif not multi_case and case_sizes:
         sub_bits.append(case_sizes[0])
-    if g.get("colour"):
+    # Multi-dial PDPs expose colour on chips — omit from the title so it
+    # does not pin a single dial (e.g. Sand/Blue) onto a Black/Red primary.
+    if g.get("colour") and not multi_dial:
         sub_bits.append(g["colour"])
     sub_en = " · ".join(sub_bits)
     name_ko = to_ko(name_en) + (f" · {to_ko(sub_en)}" if sub_en else "")
