@@ -58,7 +58,9 @@ RAW_PATHS = [
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
 OUT_TS = ROOT / "src/data/di/di-catalog.ts"
+ACCESSORIZE_RAW = ROOT / "src/data/di/di-accessorize-bag-catalog-raw.json"
 ACCENTS = ["#1A1A1A", "#2C2420", "#243028", "#3A2F28", "#1E2830", "#2A2028"]
+ACC_BAG_LEAF_PREFIX = "di-acc-bag-"
 
 OBJECTISH = {
     "di-objects",
@@ -275,7 +277,7 @@ LEAF_PREF = [
     "di-bucket-bags",
     "di-clutches",
     "di-mini-bags",
-    "di-accessorize-bag",
+    # Specific Accessorize Your Bag leaves before the parent hub.
     "di-acc-bag-jewelry",
     "di-acc-bag-totes",
     "di-acc-bag-mini",
@@ -285,6 +287,7 @@ LEAF_PREF = [
     "di-acc-bag-key-rings",
     "di-acc-bag-mitzah",
     "di-acc-bag-purse",
+    "di-accessorize-bag",
     "di-men-tech-accessories",
     "di-men-pouches",
     "di-men-long-wallets",
@@ -479,6 +482,63 @@ def prefer_leaf(collections: list[str], fallback: str) -> tuple[str, list[str]]:
     return best, list(dict.fromkeys(ordered))
 
 
+def load_accessorize_leaf_by_id() -> dict[str, str]:
+    """Map product id / sku keys → specific Accessorize Your Bag leaf (di-acc-bag-*)."""
+    if not ACCESSORIZE_RAW.is_file():
+        return {}
+    raw = json.loads(ACCESSORIZE_RAW.read_text())
+    out: dict[str, str] = {}
+
+    def put(key: str | None, leaf: str) -> None:
+        if not key:
+            return
+        out[str(key)] = leaf
+        out[str(key).upper()] = leaf
+        out[str(key).lower()] = leaf
+
+    for row in raw.get("products") or []:
+        leaf = row.get("leaf") or ""
+        if not (isinstance(leaf, str) and leaf.startswith(ACC_BAG_LEAF_PREFIX)):
+            continue
+        put(row.get("id"), leaf)
+        sku = row.get("sku") or ""
+        put(sku, leaf)
+        put(sku.replace("_TU", ""), leaf)
+        if sku:
+            put(f"di-{slugify(sku.replace('_TU', ''))}", leaf)
+    return out
+
+
+def with_accessorize_leaf(
+    collections: list[str],
+    *,
+    product_id: str | None = None,
+    sku: str | None = None,
+    existing_cols: list[str] | None = None,
+    leaf_by_id: dict[str, str] | None = None,
+) -> list[str]:
+    """Keep specific accessorize leaves across bags-women merges that only tag the hub."""
+    cols = list(dict.fromkeys(collections or []))
+    # Preserve any leaf already on the catalog row.
+    for c in existing_cols or []:
+        if isinstance(c, str) and c.startswith(ACC_BAG_LEAF_PREFIX) and c not in cols:
+            cols.append(c)
+    lookup = leaf_by_id or {}
+    leaf = None
+    for key in (product_id, sku, (sku or "").replace("_TU", "")):
+        if not key:
+            continue
+        leaf = lookup.get(key) or lookup.get(str(key).upper()) or lookup.get(str(key).lower())
+        if leaf:
+            break
+    if leaf:
+        if leaf not in cols:
+            cols.append(leaf)
+        if "di-accessorize-bag" not in cols:
+            cols.append("di-accessorize-bag")
+    return cols
+
+
 def load_raw() -> dict[str, dict]:
     by: dict[str, dict] = {}
     for path in RAW_PATHS:
@@ -646,13 +706,25 @@ def _category_for(collections: list[str], leaf: str, fallback: str = "accessorie
     return fallback
 
 
-def refresh_existing(existing: dict, row: dict) -> dict:
+def refresh_existing(
+    existing: dict,
+    row: dict,
+    *,
+    leaf_by_id: dict[str, str] | None = None,
+) -> dict:
     images = [img for img in (row.get("images") or []) if img]
     image = images[0]
     raw_leaf = row.get("leafId") or existing.get("subcategory") or "di-tableware-all"
     collections = list(dict.fromkeys(row.get("collections") or existing.get("diCollections") or []))
     if raw_leaf not in collections:
         collections.append(raw_leaf)
+    collections = with_accessorize_leaf(
+        collections,
+        product_id=existing.get("id"),
+        sku=existing.get("sku") or row.get("id") or row.get("sku"),
+        existing_cols=list(existing.get("diCollections") or []),
+        leaf_by_id=leaf_by_id,
+    )
     leaf, collections = prefer_leaf(collections, raw_leaf)
     gbp = row.get("gbpPrice")
     try:
@@ -707,7 +779,13 @@ def refresh_existing(existing: dict, row: dict) -> dict:
     return p
 
 
-def build_new(row: dict, idx: int, h: dict | None) -> dict:
+def build_new(
+    row: dict,
+    idx: int,
+    h: dict | None,
+    *,
+    leaf_by_id: dict[str, str] | None = None,
+) -> dict:
     h = h or {}
     images = [img for img in (row.get("images") or []) if img]
     image = images[0]
@@ -723,6 +801,12 @@ def build_new(row: dict, idx: int, h: dict | None) -> dict:
     collections = list(dict.fromkeys(row.get("collections") or []))
     if raw_leaf not in collections:
         collections.append(raw_leaf)
+    collections = with_accessorize_leaf(
+        collections,
+        product_id=pid,
+        sku=sku,
+        leaf_by_id=leaf_by_id,
+    )
     leaf, collections = prefer_leaf(collections, raw_leaf)
     color = row.get("color") or {}
     title_en = (row.get("title") or sku).strip()
@@ -865,7 +949,11 @@ def main() -> None:
     by_raw = load_raw()
     prev = json.loads(CAT.read_text()) if CAT.is_file() else []
     prev_by = {p["sku"]: p for p in prev if p.get("sku")}
-    print(f"raw={len(by_raw)} prev={len(prev_by)}", flush=True)
+    leaf_by_id = load_accessorize_leaf_by_id()
+    print(
+        f"raw={len(by_raw)} prev={len(prev_by)} accessorizeLeaves={len(set(leaf_by_id.values()))}",
+        flush=True,
+    )
 
     need = [
         c
@@ -898,9 +986,9 @@ def main() -> None:
             and is_good_korean(existing.get("descriptionKo") or "")
             and is_good_korean(existing.get("nameKo") or "")
         ):
-            out.append(refresh_existing(existing, row))
+            out.append(refresh_existing(existing, row, leaf_by_id=leaf_by_id))
         else:
-            out.append(build_new(row, i, ko.get(code)))
+            out.append(build_new(row, i, ko.get(code), leaf_by_id=leaf_by_id))
         if (i + 1) % 40 == 0:
             print(f"built {i+1}/{len(by_raw)}", flush=True)
 

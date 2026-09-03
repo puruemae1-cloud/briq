@@ -261,7 +261,7 @@ def main() -> int:
         else:
             counts[leaf] += 1
 
-        cols = list(dict.fromkeys([*PARENT_COLS_ACCESSORIZE_BAG, leaf]))
+        cols = list(dict.fromkeys([*(p.get("diCollections") or []), *PARENT_COLS_ACCESSORIZE_BAG, leaf]))
         p["category"] = "bags"
         p["subcategory"] = leaf
         p["diCollections"] = cols
