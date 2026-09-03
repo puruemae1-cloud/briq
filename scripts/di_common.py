@@ -896,6 +896,60 @@ PARENT_COLS_MEN_SLG = [
     "di-men-slg",
 ]
 
+# Official Women's Small Leather Goods (Accessories → Dior → 여성용).
+# Hub: /fashion/womens-fashion/small-leather-goods/all-small-leather-goods (~296 SKUs).
+# Stages:
+#   1 — Card Holders & Small Accessories + Wallets
+#   2 — Pouches + Tech + All (gap fill)
+WOMEN_SLG_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-women-slg-all",
+        "slug": "all-small-leather-goods",
+        "label": "All Small Leather Goods",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/small-leather-goods/all-small-leather-goods",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-card-holders",
+        "slug": "card-holders-small-accessories",
+        "label": "Card Holders & Small Accessories",
+        "labelKo": "카드 홀더 & 스몰 악세서리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/small-leather-goods/card-holders-small-accessories",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-wallets",
+        "slug": "wallets",
+        "label": "Wallets",
+        "labelKo": "월렛",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/small-leather-goods/wallets",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-pouches",
+        "slug": "pouches",
+        "label": "Pouches",
+        "labelKo": "파우치",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/small-leather-goods/pouches",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-slg-tech",
+        "slug": "tech",
+        "label": "Tech Accessories",
+        "labelKo": "테크 액세서리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/small-leather-goods/tech",
+        "stage": "2",
+    },
+]
+
+PARENT_COLS_WOMEN_SLG = [
+    "dior",
+    "dior-accessories",
+    "di-women-slg",
+]
+
 # Official Men's Accessories (Accessories → Dior → 남성용).
 # Hub: /fashion/mens-fashion/accessories/all-accessories (~377 SKUs).
 # Stages sized for pause-between-runs:

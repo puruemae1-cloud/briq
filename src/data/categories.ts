@@ -928,6 +928,12 @@ export type SubcategoryId =
   | "di-men-long-wallets"
   | "di-men-pouches"
   | "di-men-tech-accessories"
+  | "di-women-slg"
+  | "di-women-slg-all"
+  | "di-women-card-holders"
+  | "di-women-wallets"
+  | "di-women-pouches"
+  | "di-women-slg-tech"
   | "chanel-watches"
   | "ch-watches"
   | "ch-watches-j12"
@@ -1269,7 +1275,14 @@ export const DI_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
   "di-men-tech-accessories",
 ];
 
-
+/** Dior women's small leather goods (official GB womens SLG PLPs). */
+export const DI_WOMEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "di-women-slg-all",
+  "di-women-card-holders",
+  "di-women-wallets",
+  "di-women-pouches",
+  "di-women-slg-tech",
+];
 
 /** Gucci Handbags leaf collections (official UK handbag PLPs). */
 export const GC_HANDBAG_LEAF_IDS: SubcategoryId[] = [
@@ -2655,6 +2668,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TEXTILE_LEAF_IDS,
     "di-jewelry-timepieces",
     ...DI_JEWELRY_LEAF_IDS,
+    "di-women-slg",
+    ...DI_WOMEN_SLG_LEAF_IDS,
     "di-men-accessories",
     ...DI_MEN_ACCESSORIES_LEAF_IDS,
     "di-men-slg",
@@ -2779,6 +2794,12 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-suits-tuxedos": ["di-men-suits-tuxedos"],
   "di-men-slg": ["di-men-slg", ...DI_MEN_SLG_LEAF_IDS],
   "di-men-slg-all": ["di-men-slg-all"],
+  "di-women-slg": ["di-women-slg", ...DI_WOMEN_SLG_LEAF_IDS],
+  "di-women-slg-all": ["di-women-slg-all"],
+  "di-women-card-holders": ["di-women-card-holders"],
+  "di-women-wallets": ["di-women-wallets"],
+  "di-women-pouches": ["di-women-pouches"],
+  "di-women-slg-tech": ["di-women-slg-tech"],
   "di-men-accessories": [
     "di-men-accessories",
     ...DI_MEN_ACCESSORIES_LEAF_IDS,
@@ -6488,6 +6509,39 @@ export const navCategories: NavCategory[] = [
                 id: "di-dior-icons",
                 labelKo: "디올 아이콘즈",
                 href: "/shop?category=accessories&sub=di-dior-icons",
+              },
+            ],
+          },
+          {
+            id: "di-women-slg",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=di-women-slg",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-women-slg-all",
+                labelKo: "전체",
+                href: "/shop?category=accessories&sub=di-women-slg-all",
+              },
+              {
+                id: "di-women-card-holders",
+                labelKo: "카드 홀더 & 스몰 악세서리",
+                href: "/shop?category=accessories&sub=di-women-card-holders",
+              },
+              {
+                id: "di-women-wallets",
+                labelKo: "월렛",
+                href: "/shop?category=accessories&sub=di-women-wallets",
+              },
+              {
+                id: "di-women-pouches",
+                labelKo: "파우치",
+                href: "/shop?category=accessories&sub=di-women-pouches",
+              },
+              {
+                id: "di-women-slg-tech",
+                labelKo: "테크 액세서리",
+                href: "/shop?category=accessories&sub=di-women-slg-tech",
               },
             ],
           },

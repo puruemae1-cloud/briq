@@ -51,6 +51,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-men-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-women-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
+    ROOT / "src/data/di/di-women-slg-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
     ROOT / "src/data/di/di-men-essentials-catalog-raw.json",
@@ -185,7 +186,7 @@ WOMEN_RTWISH = {
     "di-women-jackets",
 }
 
-SLGISH = {
+MEN_SLGISH = {
     "di-men-slg",
     "di-men-slg-all",
     "di-men-card-holders",
@@ -194,6 +195,17 @@ SLGISH = {
     "di-men-pouches",
     "di-men-tech-accessories",
 }
+
+WOMEN_SLGISH = {
+    "di-women-slg",
+    "di-women-slg-all",
+    "di-women-card-holders",
+    "di-women-wallets",
+    "di-women-pouches",
+    "di-women-slg-tech",
+}
+
+SLGISH = MEN_SLGISH | WOMEN_SLGISH
 
 MEN_ACCISH = {
     "di-men-accessories",
@@ -278,6 +290,10 @@ LEAF_PREF = [
     "di-men-long-wallets",
     "di-men-compact-wallets",
     "di-men-card-holders",
+    "di-women-slg-tech",
+    "di-women-pouches",
+    "di-women-wallets",
+    "di-women-card-holders",
     "di-men-sunglasses",
     "di-men-belts",
     "di-men-ties-pocket-squares",
@@ -323,6 +339,7 @@ LEAF_PREF = [
     "di-bags-all",
     "di-men-bags-all",
     "di-men-slg-all",
+    "di-women-slg-all",
     "di-men-acc-all",
     "di-men-shoes-all",
     "di-women-rtw-all",
@@ -585,7 +602,9 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "여성"]
     elif any(c in RTWISH for c in cols):
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
-    elif any(c in SLGISH for c in cols):
+    elif any(c in WOMEN_SLGISH for c in cols):
+        tags += ["slg", "small leather goods", "악세서리", "여성", "wallet", "card holder"]
+    elif any(c in MEN_SLGISH for c in cols):
         tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
     elif any(c in MEN_ACCISH for c in cols):
         tags += ["accessories", "악세서리", "남성"]
