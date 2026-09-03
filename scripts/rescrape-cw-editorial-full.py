@@ -167,15 +167,17 @@ def scrape_editorial(url: str, key: str) -> dict:
                 cand = H.unescape(commented.group(1)).rstrip('"').replace("%22", "")
                 if "autoplay=1" not in cand and "controls=0" not in cand:
                     video = cand
-        paras = [clean_text(p) for p in re.findall(r"<p[^>]*>([\s\S]*?)</p>", ctx[:4200])]
+        paras = [clean_text(p) for p in re.findall(r"<p[^>]*>([\s\S]*?)</p>", ctx[:9000])]
         paras = [
             p
             for p in paras
-            if len(p) > 50
+            if len(p) > 40
             and not is_css_junk(p)
             and title not in p[: len(title) + 2]
+            and p not in ("&nbsp;",)
         ]
-        body = max(paras, key=len) if paras else ""
+        # Keep multi-paragraph story copy (Biscay / newer long-desc layouts)
+        body = "\n\n".join(paras) if paras else ""
         # If h2 has no paragraph, borrow untitled following copy (not an h3 caption card)
         if not body:
             after = chunk[m.end() : m.end() + 5000]
@@ -184,7 +186,7 @@ def scrape_editorial(url: str, key: str) -> dict:
                 tparas = [clean_text(p) for p in re.findall(r"<p[^>]*>([\s\S]*?)</p>", tb.group(1))]
                 tparas = [p for p in tparas if len(p) > 40 and not is_css_junk(p)]
                 if tparas:
-                    body = tparas[0]
+                    body = "\n\n".join(tparas)
         # Prefer movement / story image near h2, not numbered caption assets
         urls = extract_picture_urls(ctx[:5000])
         story_urls = [u for u in urls if re.search(r"(movement|story|hero|video-replacement)", u, re.I)] or urls
@@ -234,7 +236,7 @@ def scrape_editorial(url: str, key: str) -> dict:
         local = save_img(remote, "caption")
         if not body and not local and not title:
             continue
-        # Deduplicate identical bodies
+        # Deduplicate identical bodies (caption cards may have empty titles)
         key_t = title or body[:40]
         if key_t in seen_titles:
             continue

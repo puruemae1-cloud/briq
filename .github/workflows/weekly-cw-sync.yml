@@ -32,14 +32,14 @@ jobs:
       - name: Install image whitening deps
         run: pip install -r scripts/requirements-images.txt
 
-      - name: Restore cw-pdp images from product-images tag
-        run: python3 scripts/restore-product-images-tag.py --dirs cw-pdp
+      - name: Restore cw-pdp + editorial images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs cw-pdp cw-editorial
 
       - name: Sync CW categories + stock
         run: python3 scripts/weekly-cw-stock-sync.py
 
-      - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs cw-pdp
+      - name: Push PDP + editorial images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs cw-pdp cw-editorial
 
       - name: Verify catalogue images are on the product-images tag
         run: python3 scripts/verify-product-images.py --brand cw --remote --skip-local --all-images
@@ -52,6 +52,9 @@ jobs:
             src/data/cw \
             src/data/product-images-manifest.json \
             scripts/weekly-cw-stock-sync.py \
+            scripts/enrich-cw-missing-editorial-and-copy.py \
+            scripts/rescrape-cw-editorial-full.py \
+            scripts/rebuild-cw-catalog.py \
             scripts/studio_whiten.py \
             scripts/whiten-product-studio-bg.py \
             scripts/push-product-images-tag.py \

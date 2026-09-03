@@ -563,7 +563,13 @@ def main() -> int:
     RAW_PATH.write_text(json.dumps(raw, indent=2, ensure_ascii=False) + "\n")
     ENR_PATH.write_text(json.dumps(enr, indent=2, ensure_ascii=False) + "\n")
 
-    print("5) Rebuilding cw-catalog.ts…")
+    print("5) Filling missing editorial + PDP copy…")
+    subprocess.check_call(
+        [sys.executable, str(ROOT / "scripts/enrich-cw-missing-editorial-and-copy.py")],
+        cwd=str(ROOT),
+    )
+
+    print("6) Rebuilding cw-catalog.ts…")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/rebuild-cw-catalog.py")], cwd=str(ROOT))
     check_new_korean("cw", since)
 

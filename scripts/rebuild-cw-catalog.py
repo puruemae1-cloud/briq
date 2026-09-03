@@ -309,6 +309,10 @@ def existing_images(paths: list[str] | None) -> list[str]:
         fp = ROOT / "public" / p.lstrip("/")
         if fp.exists() and fp.stat().st_size >= 2500:
             out.append(p)
+            continue
+        # Editorial assets live on the product-images CDN and are gitignored locally.
+        if p.startswith("/products/cw-editorial/"):
+            out.append(p)
     return out
 
 
@@ -460,13 +464,34 @@ def polish_ko(out: str) -> str:
     return out
 
 
+def _looks_untranslated(src: str, out: str) -> bool:
+    """True when a long English source barely gained Hangul (gtx failure / to_ko stub)."""
+    if len(src) < 24:
+        return False
+    src_latin = len(re.findall(r"[A-Za-z]", src))
+    if src_latin < 20:
+        return False
+    hangul = len(re.findall(r"[가-힣]", out or ""))
+    out_latin = len(re.findall(r"[A-Za-z]", out or ""))
+    return hangul < max(8, int(src_latin * 0.25)) and out_latin > hangul * 2
+
+
 def translate_en(text: str) -> str:
-    """Google Translate (gtx) with CW term post-pass."""
+    """Google Translate (gtx) with CW term post-pass; MyMemory fallback on 429."""
+    import os
+    import time as _time
+    import urllib.request, urllib.parse, json as _json
+
     text = (text or "").strip()
     if not text:
         return ""
-    if text in _TX_CACHE:
-        return polish_ko(_TX_CACHE[text])
+    cached = _TX_CACHE.get(text)
+    if cached is not None and not _looks_untranslated(text, cached):
+        return polish_ko(cached)
+    # Offline / CI-safe: use phrase dictionary only (avoid rate limits mid-rebuild)
+    if os.environ.get("BRIQ_TX_OFFLINE") == "1":
+        out = polish_ko(to_ko(text))
+        return out
     # Protect model codes
     protected = {}
     def hold(m):
@@ -474,22 +499,64 @@ def translate_en(text: str) -> str:
         protected[k] = m.group(0)
         return k
     held = re.sub(r"\b(?:C\d{2}|C\d|N\d{2}|Mk\.?\s*[IVX]+|GMT|COSC|Ti|Loco)\b", hold, text)
-    try:
-        import urllib.request, urllib.parse, json as _json
-        q = urllib.parse.quote(held[:4500])
+
+    def _gtx(src: str) -> str:
+        q = urllib.parse.quote(src[:4500])
         url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ko&dt=t&q={q}"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=25) as r:
             data = _json.loads(r.read().decode())
-        out = "".join(part[0] for part in data[0] if part and part[0])
-    except Exception:
-        out = to_ko(text)
+        return "".join(part[0] for part in data[0] if part and part[0])
+
+    def _mymemory(src: str) -> str:
+        # Free endpoint caps ~500 chars — chunk long stories.
+        chunks: list[str] = []
+        buf = src
+        while buf:
+            piece, buf = buf[:450], buf[450:]
+            # Prefer break on paragraph / sentence
+            if buf:
+                cut = max(piece.rfind("\n\n"), piece.rfind(". "), piece.rfind("? "))
+                if cut > 120:
+                    buf = piece[cut + (2 if piece[cut:cut+2] == "\n\n" else 1) :] + buf
+                    piece = piece[: cut + (1 if piece[cut] == "." else 0)]
+            q = urllib.parse.quote(piece)
+            url = f"https://api.mymemory.translated.net/get?q={q}&langpair=en|ko"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = _json.loads(r.read().decode())
+            part = (data.get("responseData") or {}).get("translatedText") or ""
+            if not part or part.lower().startswith("query length limit"):
+                raise RuntimeError(part or "mymemory empty")
+            chunks.append(part)
+            _time.sleep(0.35)
+        return "".join(chunks)
+
+    out = ""
+    last_err = None
+    for attempt in range(4):
+        try:
+            out = _gtx(held)
+            if out:
+                break
+        except Exception as e:
+            last_err = e
+            _time.sleep(1.0 * (attempt + 1))
+    if not out or _looks_untranslated(text, out):
+        try:
+            out = _mymemory(held)
+        except Exception as e:
+            last_err = e
+            if not out:
+                out = to_ko(text)
     for k, v in protected.items():
         out = out.replace(k, v)
     out = polish_ko(out)
-    _TX_CACHE[text] = out
-    if len(_TX_CACHE) % 25 == 0:
-        _TX_CACHE_PATH.write_text(json.dumps(_TX_CACHE, ensure_ascii=False, indent=2))
+    # Never persist rate-limit stubs — rebuild can retry later
+    if not _looks_untranslated(text, out):
+        _TX_CACHE[text] = out
+        if len(_TX_CACHE) % 25 == 0:
+            _TX_CACHE_PATH.write_text(json.dumps(_TX_CACHE, ensure_ascii=False, indent=2))
     return out
 
 
@@ -821,6 +888,9 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 "Charm bracelet": "매혹의 브레이슬릿",
                 "Strap battle": "스트랩의 선택",
                 "A revolution in motion": "움직이는 혁명",
+                "Storm warning": "폭풍 경보",
+                "Sellita SW330-2 GMT": "Sellita SW330-2 GMT",
+                "Sellita SW330-2 Automatic": "Sellita SW330-2 Automatic",
             }
             if title_en in TITLE_KO:
                 title_ko = TITLE_KO[title_en]

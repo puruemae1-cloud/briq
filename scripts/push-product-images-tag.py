@@ -328,7 +328,17 @@ def main() -> int:
     # in weekly CI (use --skip-whiten only when images were already greymatted).
     # Banner trees are lifestyle photos — never greymat them.
     # Burberry Scene7 and Gucci DarkGray packshots must stay official bytes.
-    skip_greymat = {"banners", "bb-pdp", "gc-pdp", "ax-pdp", "axa-pdp", "axg-pdp", "axo-pdp"}
+    skip_greymat = {
+        "banners",
+        "bb-pdp",
+        "gc-pdp",
+        "ax-pdp",
+        "axa-pdp",
+        "axg-pdp",
+        "axo-pdp",
+        # Lifestyle / story photography — never studio-mat
+        "cw-editorial",
+    }
     product_dirs = [n for n, _ in src_roots if n not in skip_greymat]
     if not args.skip_whiten and product_dirs:
         print(f"Greymatting studio backgrounds → DarkGray: {product_dirs}", flush=True)
