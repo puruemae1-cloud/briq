@@ -19,41 +19,45 @@ for stage in 1 2 3 4; do
     continue
   fi
   echo "=== STAGE $stage ==="
+  set +e
   python3 scripts/scrape-di-women-rtw.py --stage "$stage" | tee "/tmp/di-women-rtw-s${stage}.log"
-  echo "EXIT_STAGE_${stage}:$?"
+  st=$?
+  set -e
+  echo "EXIT_STAGE_${stage}:$st"
+  if [[ "$st" -ne 0 ]]; then
+    echo "STAGE_${stage}_FAIL:$st" >> "$STATUS"
+    exit "$st"
+  fi
   echo "STAGE_${stage}_OK" >> "$STATUS"
   if [[ "$stage" != "4" ]]; then
     echo "pause ${PAUSE_SEC}s"
-    sleep "$PAUSE_SEC"
+    sleep "$PAUSE_SEC" || true
   fi
 done
 
-if ! grep -q "MERGE_OK" "$STATUS" 2>/dev/null; then
-  echo "=== MERGE ==="
-  python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-women-rtw-merge.log
-  echo "EXIT_MERGE:$?"
-  echo "MERGE_OK" >> "$STATUS"
-fi
+run_step() {
+  local stamp="$1"; shift
+  if grep -q "${stamp}_OK" "$STATUS" 2>/dev/null; then
+    echo "skip $stamp"
+    return 0
+  fi
+  echo "=== $stamp ==="
+  set +e
+  "$@"
+  local st=$?
+  set -e
+  echo "EXIT_${stamp}:$st"
+  if [[ "$st" -ne 0 ]]; then
+    echo "${stamp}_FAIL:$st" >> "$STATUS"
+    exit "$st"
+  fi
+  echo "${stamp}_OK" >> "$STATUS"
+}
 
-if ! grep -q "ENRICH_OK" "$STATUS" 2>/dev/null; then
-  echo "=== RTW PDP ENRICH ==="
-  python3 scripts/enrich-di-women-rtw-pdp.py --translate | tee /tmp/di-women-rtw-enrich.log
-  echo "EXIT_ENRICH:$?"
-  echo "ENRICH_OK" >> "$STATUS"
-fi
-
-if ! grep -q "PRICES_OK" "$STATUS" 2>/dev/null; then
-  python3 scripts/fix-di-catalog-prices.py --check | tee /tmp/di-women-rtw-prices.log
-  echo "EXIT_PRICES:$?"
-  echo "PRICES_OK" >> "$STATUS"
-fi
-
-if ! grep -q "KO_OK" "$STATUS" 2>/dev/null; then
-  echo "=== KO ==="
-  python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-women-rtw-ko.log
-  echo "EXIT_KO:$?"
-  echo "KO_OK" >> "$STATUS"
-fi
+run_step MERGE python3 scripts/merge-di-catalog-ko.py
+run_step ENRICH python3 scripts/enrich-di-women-rtw-pdp.py --translate
+run_step PRICES python3 scripts/fix-di-catalog-prices.py --check
+run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
 
 python3 - <<'PY'
 from pathlib import Path
