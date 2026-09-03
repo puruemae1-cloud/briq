@@ -211,26 +211,46 @@ def ensure_product(raw: dict, sku: str, collection: str) -> dict:
     return p
 
 
+def selected_attr(product: dict, attr_id: str) -> str:
+    for a in product.get("variationAttributes") or []:
+        if a.get("attributeId") == attr_id or a.get("id") == attr_id:
+            for v in a.get("values") or []:
+                if v.get("selected"):
+                    return str(v.get("displayValue") or v.get("value") or "").strip()
+    return ""
+
+
 def sync_gallery_and_enrich(sku: str, enr_products: dict, force: bool = False) -> dict:
     e = enr_products.setdefault(sku, {"sku": sku})
     folder = IMG / slugify(sku)
     good = [f for f in folder.glob("*.jpg") if f.stat().st_size >= 2500] if folder.exists() else []
-    if force or len(good) < 3:
+    need_attrs = not (e.get("size") and e.get("strap"))
+    if force or len(good) < 3 or need_attrs:
         try:
             data = fetch_json(f"{API}?pid={urllib.parse.quote(sku)}&quantity=1")
             ap = data.get("product") or {}
             zoom = [i["url"] for i in (ap.get("images") or {}).get("zoomImage") or []]
             if not zoom:
                 zoom = [i["url"] for i in (ap.get("images") or {}).get("large") or []]
-            imgs = download_imgs(sku, zoom)
-            if imgs:
-                e["images"] = imgs
+            if force or len(good) < 3:
+                imgs = download_imgs(sku, zoom)
+                if imgs:
+                    e["images"] = imgs
             if ap.get("productName"):
                 e["nameEn"] = ap["productName"]
+            size = selected_attr(ap, "WSize")
+            colour = selected_attr(ap, "WDialBezelColour")
+            strap = selected_attr(ap, "WStrapColourMaterialType")
+            if size:
+                e["size"] = size
+            if colour:
+                e["colour"] = colour
+            if strap:
+                e["strap"] = strap
             time.sleep(0.1)
         except Exception as ex:
             print(f"  gallery ERR {sku}: {ex}")
-    else:
+    if not e.get("images"):
         e["images"] = [
             f"/products/cw-pdp/{slugify(sku)}/{f.name}"
             for f in sorted(good, key=lambda x: int(re.sub(r"\D", "", x.stem) or "0"))

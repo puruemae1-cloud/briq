@@ -216,8 +216,68 @@ def cw_model_group_key(url: str) -> str | None:
 
 
 def strap_color_key(sku: str) -> str:
-    """Stable strap axis across case sizes (last SKU token)."""
-    return slugify((sku or "").split("-")[-1] or sku)
+    """Stable option key across case sizes (dial + strap tokens when present)."""
+    parts = (sku or "").split("-")
+    if len(parts) >= 4:
+        return slugify(f"{parts[2]}-{parts[-1]}")
+    return slugify(parts[-1] if parts else sku)
+
+
+STRAP_SUFFIX_LABELS = {
+    "B0": "Bader Bracelet",
+    "B0R": "Bader Bracelet",
+    "B1": "Consort Bracelet",
+    "B1R": "Consort Bracelet",
+    "HB": "Blue Hybrid Rubber",
+    "HV": "Khaki Hybrid Rubber",
+    "HK": "Black Hybrid Rubber",
+    "VT1": "Tan Vintage Oak Leather",
+    "RB": "Blue Rubber Strap",
+    "RW": "White Rubber Strap",
+    "RK": "Black Rubber Strap",
+    "RO": "Orange Rubber Strap",
+    "RG": "Green Rubber Strap",
+    "RY": "Yellow Rubber Strap",
+    "RLB": "Light Blue Rubber Strap",
+    "RV": "Green Rubber Strap",
+}
+
+DIAL_CODE_LABELS = {
+    "S0BW0": "Sand/Blue",
+    "S0RK0": "Black/Red",
+    "S0KK0": "Black",
+    "S0KW0": "Black/White",
+    "B0KK0": "Bronze/Black",
+    "B0VV0": "Bronze/Green",
+}
+
+
+def strap_label_from_sku(sku: str, enrich: dict | None = None) -> str:
+    en = enrich or {}
+    if en.get("strap") and isinstance(en.get("strap"), str):
+        return en["strap"].strip()
+    suf = (sku or "").split("-")[-1].upper()
+    if suf in STRAP_SUFFIX_LABELS:
+        return STRAP_SUFFIX_LABELS[suf]
+    if suf.startswith("B"):
+        return "Steel Bracelet"
+    if suf.startswith("R"):
+        return "Rubber Strap"
+    if suf.startswith("M") or suf.startswith("VT"):
+        return "Leather Strap"
+    return sku
+
+
+def option_label_from_sku(sku: str, enrich: dict | None = None, *, multi_dial: bool) -> str:
+    """Human label for the colour/strap chip (include dial when the model has multiple)."""
+    en = enrich or {}
+    strap = strap_label_from_sku(sku, en)
+    parts = (sku or "").split("-")
+    dial_code = parts[2].upper() if len(parts) >= 4 else ""
+    dial = (en.get("colour") or "").strip() or DIAL_CODE_LABELS.get(dial_code, "")
+    if multi_dial and dial:
+        return f"{dial} · {strap}"
+    return strap
 
 
 def normalize_case_size(size: str | None, sku: str = "") -> str | None:
@@ -541,20 +601,36 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         g.get("sizes") or set(),
         key=lambda s: int(re.sub(r"\D", "", s) or "0"),
     )
-    # Prefer primary from the richest gallery; fall back across sizes
-    primary_sku = next(
-        (
+    # Prefer primary from new-releases order, then richest gallery; fall back across sizes
+    new_order = RAW["categories"].get("cw-new-releases", [])
+    new_rank = {s: i for i, s in enumerate(new_order)}
+    primary_sku = None
+    ranked = sorted(
+        [
             m["sku"]
             for m in members
             if is_full_sku(m.get("sku") or "")
             and not m["sku"].upper().startswith("N")
             and local_gallery(m["sku"])
-        ),
-        None,
-    ) or next(
-        (m["sku"] for m in members if is_full_sku(m.get("sku") or "")),
-        members[0]["sku"],
+        ],
+        key=lambda s: (new_rank.get(s, 10_000), 0 if "42" in (s.split("-")[1] if "-" in s else "") else 1, s),
     )
+    if ranked:
+        primary_sku = ranked[0]
+    if not primary_sku:
+        primary_sku = next(
+            (
+                m["sku"]
+                for m in members
+                if is_full_sku(m.get("sku") or "")
+                and not m["sku"].upper().startswith("N")
+                and local_gallery(m["sku"])
+            ),
+            None,
+        ) or next(
+            (m["sku"] for m in members if is_full_sku(m.get("sku") or "")),
+            members[0]["sku"],
+        )
     primary_size = normalize_case_size(
         (ENR.get(primary_sku) or {}).get("size"), primary_sku
     )
@@ -574,6 +650,12 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
 
     variants = []
     seen_vids = set()
+    dial_codes = {
+        (m.get("sku") or "").split("-")[2].upper()
+        for m in members
+        if is_full_sku(m.get("sku") or "") and (m.get("sku") or "").count("-") >= 3
+    }
+    multi_dial = len(dial_codes) > 1
     for m in members:
         msku = m.get("sku") or ""
         if not is_full_sku(msku):
@@ -590,31 +672,14 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 break
         if not label:
             sub = clean_sub(m.get("subtitle") or "")
-            label = sub.split("·")[-1].strip() if sub else ""
-        if not label or "attribute" in label.lower() or len(label) < 3:
-            suf = msku.split("-")[-1].upper()
-            strap_map = {
-                "B0": "Steel Bracelet",
-                "B0R": "Steel Bracelet",
-                "B1": "Steel Bracelet",
-                "B1R": "Steel Bracelet",
-                "RB": "Blue Rubber Strap",
-                "RW": "White Rubber Strap",
-                "RK": "Black Rubber Strap",
-                "RO": "Orange Rubber Strap",
-                "RG": "Green Rubber Strap",
-                "RY": "Yellow Rubber Strap",
-            }
-            if suf in strap_map:
-                label = strap_map[suf]
-            elif suf.startswith("B"):
-                label = "Steel Bracelet"
-            elif suf.startswith("R"):
-                label = "Rubber Strap"
-            elif suf.startswith("M"):
-                label = "Leather Strap"
-            else:
-                label = msku
+            cand = sub.split("·")[-1].strip() if sub else ""
+            if cand and "attribute" not in cand.lower() and len(cand) >= 3 and not cand.upper().startswith("C60-"):
+                label = cand
+        if not label:
+            label = option_label_from_sku(msku, men, multi_dial=multi_dial)
+        # Avoid dumping raw SKUs into the option picker.
+        if label.upper().startswith("C60-") or label.upper().startswith("C63-") or label.upper().startswith("C12-"):
+            label = option_label_from_sku(msku, men, multi_dial=multi_dial)
         vgbp = gbp_for_sku(msku, m.get("gbpPrice") or gbp)
         vimgs = local_gallery(msku)
         if not vimgs:
@@ -648,6 +713,10 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         }
         if multi_case and vsize:
             vrow["size"] = vsize
+            vrow["colorKey"] = strap_color_key(msku)
+            vrow["colorNameKo"] = to_ko(label)
+        elif multi_dial:
+            # Single-case but multi-dial: still expose dial×strap chips.
             vrow["colorKey"] = strap_color_key(msku)
             vrow["colorNameKo"] = to_ko(label)
         variants.append(vrow)
