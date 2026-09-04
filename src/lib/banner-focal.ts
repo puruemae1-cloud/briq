@@ -21,6 +21,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Who We Are ridge — keep climbers on the diagonal */
   "brand-arcteryx-ridge.jpg": "38% 55%",
   "brand-arcteryx-ridge.webp": "38% 55%",
+  /* Primavera handbags — model face + GG Marmont bag */
+  "brand-gucci-handbags.jpg": "52% 42%",
+  "brand-gucci-handbags.webp": "52% 42%",
   /* All Bags forest bench — keep models + Promenade bag centred */
   "brand-dior-bags.jpg": "50% 58%",
   "brand-dior-bags.webp": "50% 58%",

@@ -6,6 +6,7 @@
 
 export type BrandKey =
   | "gucci"
+  | "gucci-bags"
   | "burberry"
   | "chanel"
   | "chanel-watches"
@@ -46,6 +47,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/brand-gucci-2.jpg",
       "/banners/brand-gucci-3.jpg",
     ],
+  },
+  "gucci-bags": {
+    key: "gucci-bags",
+    nameEn: "Gucci",
+    nameKo: "구찌",
+    logoSrc: "/brands/gucci.svg",
+    // Locked handbags PLP creative — Primavera / GG Marmont bedroom campaign.
+    images: ["/banners/brand-gucci-handbags.jpg"],
   },
   burberry: {
     key: "burberry",
@@ -211,7 +220,23 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
 /** Top-level shop nav brand nodes → canonical brand key. */
 export const brandRootToKey: Record<string, BrandKey> = {
   gucci: "gucci",
-  "gucci-bags": "gucci",
+  "gucci-bags": "gucci-bags",
+  "gc-handbags": "gucci-bags",
+  "gc-women-shoulder-bags": "gucci-bags",
+  "gc-women-mini-bags": "gucci-bags",
+  "gc-women-crossbody-bags": "gucci-bags",
+  "gc-women-tote-bags": "gucci-bags",
+  "gc-women-top-handle-bags": "gucci-bags",
+  "gc-women-backpacks-beltbags": "gucci-bags",
+  "gc-women-clutches-evening": "gucci-bags",
+  "gc-women-personalised": "gucci-bags",
+  "gc-mens-handbags": "gucci-bags",
+  "gc-men-crossbody-messengers": "gucci-bags",
+  "gc-men-backpacks": "gucci-bags",
+  "gc-men-tote-bags": "gucci-bags",
+  "gc-men-small-bags-pouches": "gucci-bags",
+  "gc-men-belt-slingbags": "gucci-bags",
+  "gc-men-duffle-bags": "gucci-bags",
   "gucci-shoes": "gucci",
   "gucci-accessories": "gucci",
   burberry: "burberry",
