@@ -12,6 +12,9 @@ type Manifest = {
 const FOCAL_OVERRIDES: Record<string, string> = {
   "brand-burberry-scarf.jpg": "center 28%",
   "brand-burberry-scarf.webp": "center 28%",
+  /* Bags PLP night check tote — face + tote */
+  "brand-burberry-bags.jpg": "52% 38%",
+  "brand-burberry-bags.webp": "52% 38%",
   /* CC logo sits ~36% x / 42% y after crop — keep it in the shop-hero strip */
   "brand-chanel-como-bag.jpg": "36% 42%",
   "brand-chanel-como-bag.webp": "36% 42%",

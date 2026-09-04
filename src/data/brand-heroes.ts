@@ -8,6 +8,7 @@ export type BrandKey =
   | "gucci"
   | "gucci-bags"
   | "burberry"
+  | "burberry-bags"
   | "chanel"
   | "chanel-watches"
   | "dior-watches"
@@ -64,6 +65,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/burberry.svg",
     // Locked scarf campaign creative (A Good Sport / Romeo Beckham) — head to shoulders.
     images: ["/banners/brand-burberry-scarf.jpg"],
+  },
+  "burberry-bags": {
+    key: "burberry-bags",
+    nameEn: "Burberry",
+    nameKo: "버버리",
+    logoSrc: "/brands/burberry.svg",
+    // Locked bags PLP creative — night check tote / knight medallion campaign.
+    images: ["/banners/brand-burberry-bags.jpg"],
   },
   chanel: {
     key: "chanel",
@@ -249,7 +258,34 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "gucci-shoes": "gucci",
   "gucci-accessories": "gucci",
   burberry: "burberry",
-  "burberry-bags": "burberry",
+  "burberry-bags": "burberry-bags",
+  "bb-bags-womens": "burberry-bags",
+  "bb-women-bags": "burberry-bags",
+  "bb-women-mini-bags": "burberry-bags",
+  "bb-women-tote-bags": "burberry-bags",
+  "bb-women-crossbody-bags": "burberry-bags",
+  "bb-women-shoulder-bags": "burberry-bags",
+  "bb-women-top-handle-bags": "burberry-bags",
+  "bb-women-backpacks": "burberry-bags",
+  "bb-bags-collections": "burberry-bags",
+  "bb-bags-collections-check": "burberry-bags",
+  "bb-bags-collections-check-men": "burberry-bags",
+  "bb-bags-collections-cotswolds": "burberry-bags",
+  "bb-bags-collections-highlands": "burberry-bags",
+  "bb-bags-collections-horseshoe": "burberry-bags",
+  "bb-bags-collections-bloomsbury": "burberry-bags",
+  "bb-bags-collections-b-clip": "burberry-bags",
+  "bb-bags-collections-margate": "burberry-bags",
+  "bb-bags-mens": "burberry-bags",
+  "bb-men-bags": "burberry-bags",
+  "bb-men-crossbody-bags": "burberry-bags",
+  "bb-men-backpacks": "burberry-bags",
+  "bb-men-belt-bags": "burberry-bags",
+  "bb-men-tote-bags": "burberry-bags",
+  "bb-men-holdall-bags": "burberry-bags",
+  "bb-men-briefcases": "burberry-bags",
+  "bb-bags-kids": "burberry-bags",
+  "bb-kids-bags": "burberry-bags",
   "burberry-shoes": "burberry",
   "burberry-accessories": "burberry",
   "burberry-gifts": "burberry",
