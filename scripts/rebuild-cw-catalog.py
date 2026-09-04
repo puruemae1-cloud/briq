@@ -950,7 +950,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
 
     desc = f"크리스토퍼와드 {name_ko}."
     if en.get("shortDescriptionEn") and not is_nearly_new(en.get("nameEn")):
-        desc = translate_en(en["shortDescriptionEn"])[:320]
+        desc = translate_en(en["shortDescriptionEn"])  # full official short description (no hard truncate)
 
     source_url = best_source_url(members, en)
 
