@@ -237,8 +237,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Dior",
     nameKo: "디올",
     logoSrc: "/brands/dior.svg",
-    // Reuse men's fashion campaign until a dedicated shoes PLP hero is locked.
-    images: ["/banners/brand-dior-mens-rtw.jpg"],
+    // Locked women's all-shoes PLP creative — outdoor cot / Dior boots (feet framed).
+    images: ["/banners/brand-dior-shoes.jpg"],
   },
   "london-undercover": {
     key: "london-undercover",

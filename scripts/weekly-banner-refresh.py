@@ -234,6 +234,10 @@ assert FIXED_DIOR_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Dior bags brand 
 FIXED_DIOR_MENS_RTW_BRAND_BANNER = "brand-dior-mens-rtw.jpg"
 assert FIXED_DIOR_MENS_RTW_BRAND_BANNER not in SLOT_THEMES, "locked Dior mens RTW brand banner must not be in SLOT_THEMES"
 
+# Dior shoes brand hero — locked women's all-shoes outdoor boots creative.
+FIXED_DIOR_SHOES_BRAND_BANNER = "brand-dior-shoes.jpg"
+assert FIXED_DIOR_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Dior shoes brand banner must not be in SLOT_THEMES"
+
 # Dior women's RTW brand hero — locked all-ready-to-wear grass campaign.
 FIXED_DIOR_WOMENS_RTW_BRAND_BANNER = "brand-dior-womens-rtw.jpg"
 assert FIXED_DIOR_WOMENS_RTW_BRAND_BANNER not in SLOT_THEMES, "locked Dior womens RTW brand banner must not be in SLOT_THEMES"
@@ -269,6 +273,7 @@ LOCKED_BANNERS = {
     FIXED_GUCCI_SHOES_BRAND_BANNER,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
+    FIXED_DIOR_SHOES_BRAND_BANNER,
     FIXED_DIOR_WOMENS_RTW_BRAND_BANNER,
     FIXED_DIOR_ACCESSORIES_BRAND_BANNER,
     FIXED_DIOR_WATCHES_BRAND_BANNER,
