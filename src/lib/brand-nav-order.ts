@@ -90,7 +90,7 @@ export function brandRankForProduct(product: {
   tags?: string[];
 }): number {
   const keys = [product.subcategory, ...(product.tags ?? [])].filter(
-    (k): k is string => Boolean(k) && !STRUCTURAL_IDS.has(k),
+    (k): k is string => typeof k === "string" && !STRUCTURAL_IDS.has(k),
   );
   if (keys.length === 0) return FAMILY_RANK._new;
   let best = Number.POSITIVE_INFINITY;
