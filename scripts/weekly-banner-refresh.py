@@ -214,6 +214,10 @@ assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
 
+# Gucci shoes brand hero — locked Primavera GG Supreme slingbacks creative.
+FIXED_GUCCI_SHOES_BRAND_BANNER = "brand-gucci-shoes.jpg"
+assert FIXED_GUCCI_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Gucci shoes brand banner must not be in SLOT_THEMES"
+
 # Burberry bags brand hero — locked night check tote campaign creative.
 FIXED_BURBERRY_BAGS_BRAND_BANNER = "brand-burberry-bags.jpg"
 assert FIXED_BURBERRY_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Burberry bags brand banner must not be in SLOT_THEMES"
@@ -262,6 +266,7 @@ LOCKED_BANNERS = {
     FIXED_PRADA_BAGS_BRAND_BANNER,
     FIXED_ARC_BRAND_BANNER,
     FIXED_GUCCI_BAGS_BRAND_BANNER,
+    FIXED_GUCCI_SHOES_BRAND_BANNER,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
     FIXED_DIOR_WOMENS_RTW_BRAND_BANNER,

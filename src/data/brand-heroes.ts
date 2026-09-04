@@ -7,6 +7,7 @@
 export type BrandKey =
   | "gucci"
   | "gucci-bags"
+  | "gucci-shoes"
   | "burberry"
   | "burberry-bags"
   | "chanel"
@@ -58,6 +59,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/gucci.svg",
     // Locked handbags PLP creative — Primavera / GG Marmont bedroom campaign.
     images: ["/banners/brand-gucci-handbags.jpg"],
+  },
+  "gucci-shoes": {
+    key: "gucci-shoes",
+    nameEn: "Gucci",
+    nameKo: "구찌",
+    logoSrc: "/brands/gucci.svg",
+    // Locked women's shoes PLP creative — Primavera GG Supreme slingbacks.
+    images: ["/banners/brand-gucci-shoes.jpg"],
   },
   burberry: {
     key: "burberry",
@@ -264,7 +273,25 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "gc-men-small-bags-pouches": "gucci-bags",
   "gc-men-belt-slingbags": "gucci-bags",
   "gc-men-duffle-bags": "gucci-bags",
-  "gucci-shoes": "gucci",
+  "gucci-shoes": "gucci-shoes",
+  "gc-shoes-womens": "gucci-shoes",
+  "gc-women-shoes": "gucci-shoes",
+  "gc-women-sneakers": "gucci-shoes",
+  "gc-women-moccasins": "gucci-shoes",
+  "gc-women-slippers-mules": "gucci-shoes",
+  "gc-women-sandals": "gucci-shoes",
+  "gc-women-slides": "gucci-shoes",
+  "gc-women-pumps": "gucci-shoes",
+  "gc-women-ballet-flats": "gucci-shoes",
+  "gc-women-boots": "gucci-shoes",
+  "gc-shoes-mens": "gucci-shoes",
+  "gc-men-shoes": "gucci-shoes",
+  "gc-men-sneakers": "gucci-shoes",
+  "gc-men-loafers-moccasins": "gucci-shoes",
+  "gc-men-slides-sandals": "gucci-shoes",
+  "gc-men-driving": "gucci-shoes",
+  "gc-men-lace-ups": "gucci-shoes",
+  "gc-men-boots": "gucci-shoes",
   "gucci-accessories": "gucci",
   burberry: "burberry",
   "burberry-bags": "burberry-bags",

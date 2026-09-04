@@ -33,6 +33,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Primavera handbags — model face + GG Marmont bag */
   "brand-gucci-handbags.jpg": "52% 42%",
   "brand-gucci-handbags.webp": "52% 42%",
+  /* Women's shoes PLP — GG Supreme slingbacks on carpet */
+  "brand-gucci-shoes.jpg": "38% 58%",
+  "brand-gucci-shoes.webp": "38% 58%",
   /* All Bags forest bench — keep models + Promenade bag centred */
   "brand-dior-bags.jpg": "50% 58%",
   "brand-dior-bags.webp": "50% 58%",
