@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-09-02T21:54:05.882231+00:00",
-  "stage": "4",
+  "scrapedAt": "2026-09-03T21:47:11.286883+00:00",
+  "stage": "di-women-homewear-lingerie",
   "hub": "https://www.dior.com/en_gb/fashion/womens-fashion/ready-to-wear/all-ready-to-wear",
   "leaves": [
     {
@@ -2235,19 +2235,23 @@
       "subtitle": "White Ribbed Cotton Jersey",
       "gbpPrice": 710,
       "url": "https://www.dior.com/en_gb/fashion/products/343T50B4086_X0200",
-      "leafId": "di-women-tshirts",
-      "leafLabel": "Tops & T-shirts",
-      "leafLabelKo": "탑 & 티셔츠",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
         "di-women-tshirts",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "White",
         "code": "X0200",
-        "label": "White"
+        "description": "0200 Ecru",
+        "group": "blanc",
+        "label": "White",
+        "hexa_code": "{\"code_hexa\":\"rgba(254, 252, 252, 1)\",\"rank\":30}"
       },
       "details": {
         "paragraphs": [
@@ -2335,19 +2339,23 @@
       "subtitle": "Black Ribbed Cotton Jersey",
       "gbpPrice": 710,
       "url": "https://www.dior.com/en_gb/fashion/products/343T50B4086_X9000",
-      "leafId": "di-women-tshirts",
-      "leafLabel": "Tops & T-shirts",
-      "leafLabelKo": "탑 & 티셔츠",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
         "di-women-tshirts",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Black",
         "code": "X9000",
-        "label": "Black"
+        "description": "9000 Noir",
+        "group": "noir",
+        "label": "Black",
+        "hexa_code": "{\"code_hexa\":\"rgba(17, 17, 0, 1)\",\"rank\":10}"
       },
       "details": {
         "paragraphs": [
@@ -5574,19 +5582,23 @@
       "subtitle": "Blue Dior Oblique Silk Twill",
       "gbpPrice": 2150,
       "url": "https://www.dior.com/en_gb/fashion/products/141V48A6608_X5803",
-      "leafId": "di-women-shirts",
-      "leafLabel": "Shirts",
-      "leafLabelKo": "셔츠",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
         "di-women-shirts",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Blue",
         "code": "X5803",
-        "label": "Blue"
+        "description": "5803 Fantaisie Bleu",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
       },
       "details": {
         "paragraphs": [
@@ -26632,19 +26644,23 @@
       "subtitle": "Blue Dior Oblique Silk Twill",
       "gbpPrice": 1800,
       "url": "https://www.dior.com/en_gb/fashion/products/121P23A6608_X5803",
-      "leafId": "di-women-trousers-shorts",
-      "leafLabel": "Pants & Shorts",
-      "leafLabelKo": "팬츠 & 쇼츠",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
         "di-women-trousers-shorts",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Blue",
         "code": "X5803",
-        "label": "Blue"
+        "description": "5803 Fantaisie Bleu",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
       },
       "details": {
         "paragraphs": [
@@ -36281,18 +36297,22 @@
       "subtitle": "Blue Dior Oblique Silk Twill",
       "gbpPrice": 1550,
       "url": "https://www.dior.com/en_gb/fashion/products/121P20A6608_X5803",
-      "leafId": "di-women-rtw-all",
-      "leafLabel": "All Ready-to-Wear",
-      "leafLabelKo": "전체",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Blue",
         "code": "X5803",
-        "label": "Blue"
+        "description": "5803 Fantaisie Bleu",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
       },
       "details": {
         "paragraphs": [
@@ -36382,18 +36402,22 @@
       "subtitle": "White and Navy Blue Toile de Jouy Silk Twill",
       "gbpPrice": 2050,
       "url": "https://www.dior.com/en_gb/fashion/products/341V33A6759_X0861",
-      "leafId": "di-women-rtw-all",
-      "leafLabel": "All Ready-to-Wear",
-      "leafLabelKo": "전체",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Blue",
         "code": "X0861",
-        "label": "Blue"
+        "description": "0861 Fantaisie Blanc",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
       },
       "details": {
         "paragraphs": [
@@ -36424,18 +36448,22 @@
       "subtitle": "White and Navy Blue Toile de Jouy Silk Twill",
       "gbpPrice": 1750,
       "url": "https://www.dior.com/en_gb/fashion/products/341P49A6759_X0861",
-      "leafId": "di-women-rtw-all",
-      "leafLabel": "All Ready-to-Wear",
-      "leafLabelKo": "전체",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
       "collections": [
         "dior",
         "di-womens",
-        "di-women-rtw-all"
+        "di-women-rtw-all",
+        "di-women-homewear-lingerie"
       ],
       "color": {
         "label_int": "Blue",
         "code": "X0861",
-        "label": "Blue"
+        "description": "0861 Fantaisie Blanc",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
       },
       "details": {
         "paragraphs": [
@@ -36571,6 +36599,186 @@
         "https://assets.christiandior.com/is/image/diorprod/LOOK_F_26_3_LOOK_160_E13?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
         "https://assets.christiandior.com/is/image/diorprod/LOOK_F_26_3_LOOK_160_E17?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
         "https://diorama.dam-broadcast.com/pm_11872_1401_1401285-aqd3ho1vno-whr.jpg"
+      ]
+    },
+    {
+      "id": "121V46A6608_X5803",
+      "sku": "121V46A6608_X5803",
+      "title": "Dior Chez Moi Short-Sleeved Shirt",
+      "subtitle": "Blue Dior Oblique Silk Twill",
+      "gbpPrice": 2050,
+      "url": "https://www.dior.com/en_gb/fashion/products/121V46A6608_X5803",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
+      "collections": [
+        "dior",
+        "di-womens",
+        "di-women-homewear-lingerie"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "X5803",
+        "description": "5803 Fantaisie Bleu",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
+      },
+      "details": {
+        "paragraphs": [
+          "The shirt highlights the hallmark blue Dior Oblique motif. Crafted in silk twill, the design is embellished with a Christian Dior signature contrasting hem, while a button closure and two pockets adorn the front. The lightweight and refined short-sleeved shirt may be paired with the matching pants or shorts to complete the look."
+        ],
+        "bullets": [
+          "Blue Dior Oblique Silk Twill"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/121v46a6608-x5803/1.jpg",
+        "/products/di-pdp/121v46a6608-x5803/2.jpg",
+        "/products/di-pdp/121v46a6608-x5803/3.jpg",
+        "/products/di-pdp/121v46a6608-x5803/4.jpg",
+        "/products/di-pdp/121v46a6608-x5803/5.jpg",
+        "/products/di-pdp/121v46a6608-x5803/6.jpg",
+        "/products/di-pdp/121v46a6608-x5803/7.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/121V46A6608X5803_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/121V46A6608X5803_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/121V46A6608X5803_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_518_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_518_E04?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_518_E06?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_518_E12?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "443T50C4086_X0200",
+      "sku": "443T50C4086_X0200",
+      "title": "Dioriviera Tank Top",
+      "subtitle": "Ecru Cotton Ribbed Jersey",
+      "gbpPrice": 730,
+      "url": "https://www.dior.com/en_gb/fashion/products/443T50C4086_X0200",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
+      "collections": [
+        "dior",
+        "di-womens",
+        "di-women-homewear-lingerie"
+      ],
+      "color": {
+        "label_int": "White",
+        "code": "X0200",
+        "description": "0200 Ecru",
+        "group": "blanc",
+        "label": "White",
+        "hexa_code": "{\"code_hexa\":\"rgba(254, 252, 252, 1)\",\"rank\":30}"
+      },
+      "details": {
+        "paragraphs": [
+          "Part of the Dioriviera capsule, the tank top is both modern and elegant. Made in ecru cotton ribbed jersey, it showcases Mr. Dior's lucky star symbol and the CD signature on the front. The tank top can be styled with other Dioriviera creations to complete the look."
+        ],
+        "bullets": [
+          "Ecru Cotton Ribbed Jersey"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/443t50c4086-x0200/1.jpg",
+        "/products/di-pdp/443t50c4086-x0200/2.jpg",
+        "/products/di-pdp/443t50c4086-x0200/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/443T50C4086X0200_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/443T50C4086X0200_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/443T50C4086X0200_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "341V29A6759_X0861",
+      "sku": "341V29A6759_X0861",
+      "title": "Dior Chez Moi Short-Sleeved Shirt",
+      "subtitle": "White and Navy Blue Toile de Jouy Silk Twill",
+      "gbpPrice": 2100,
+      "url": "https://www.dior.com/en_gb/fashion/products/341V29A6759_X0861",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
+      "collections": [
+        "dior",
+        "di-womens",
+        "di-women-homewear-lingerie"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "X0861",
+        "description": "0861 Fantaisie Blanc",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
+      },
+      "details": {
+        "paragraphs": [
+          "The shirt is part of the Dior Chez Moi capsule collection and highlights the hallmark Toile de Jouy motif. Cut in white and navy blue silk twill, the design is embellished with piping that creates an elegant contrast, while a button closure and two pockets adorn the front. The lightweight and refined short-sleeved shirt can be worn with other Dior Chez Moi creations."
+        ],
+        "bullets": [
+          "White and Navy Blue Toile de Jouy Silk Twill"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/341v29a6759-x0861/1.jpg",
+        "/products/di-pdp/341v29a6759-x0861/2.jpg",
+        "/products/di-pdp/341v29a6759-x0861/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/341V29A6759X0861_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/341V29A6759X0861_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/341V29A6759X0861_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
+      ]
+    },
+    {
+      "id": "341P42A6759_X0861",
+      "sku": "341P42A6759_X0861",
+      "title": "Dior Chez Moi Shorts",
+      "subtitle": "White and Navy Blue Toile de Jouy Silk Twill",
+      "gbpPrice": 1400,
+      "url": "https://www.dior.com/en_gb/fashion/products/341P42A6759_X0861",
+      "leafId": "di-women-homewear-lingerie",
+      "leafLabel": "Homewear & Lingerie",
+      "leafLabelKo": "홈웨어 & 란제리",
+      "collections": [
+        "dior",
+        "di-womens",
+        "di-women-homewear-lingerie"
+      ],
+      "color": {
+        "label_int": "Blue",
+        "code": "X0861",
+        "description": "0861 Fantaisie Blanc",
+        "group": "bleu",
+        "label": "Blue",
+        "hexa_code": "{\"code_hexa\":\"rgba(107, 151, 211, 1)\",\"rank\":20}"
+      },
+      "details": {
+        "paragraphs": [
+          "The Dior Chez Moi shorts highlight the hallmark Toile de Jouy motif. Cut in white and navy blue silk twill, they are embellished with piping that creates an elegant contrast. The lightweight and refined shorts can be worn with the matching jacket to complete the Dior Chez Moi look."
+        ],
+        "bullets": [
+          "White and Navy Blue Toile de Jouy Silk Twill"
+        ],
+        "specs": []
+      },
+      "images": [
+        "/products/di-pdp/341p42a6759-x0861/1.jpg",
+        "/products/di-pdp/341p42a6759-x0861/2.jpg",
+        "/products/di-pdp/341p42a6759-x0861/3.jpg"
+      ],
+      "remoteImages": [
+        "https://assets.christiandior.com/is/image/diorprod/341P42A6759X0861_E01?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/341P42A6759X0861_E08?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90",
+        "https://assets.christiandior.com/is/image/diorprod/341P42A6759X0861_E09?$r2x3_default$&wid=1334&hei=2000&bfc=on&qlt=90"
       ]
     }
   ]

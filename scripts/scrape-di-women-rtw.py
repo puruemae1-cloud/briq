@@ -35,6 +35,7 @@ from di_common import (  # noqa: E402
     PARENT_COLS_WOMEN_RTW,
     UA,
     algolia_merch_hits_by_codes,
+    algolia_search_product_hits,
     clean_dior_description,
     download_image,
     extract_next_data,
@@ -119,6 +120,45 @@ def scrape_plp_hits(page, leaf: dict) -> list[dict]:
         by_code[code] = h
     log(f"  hits={len(by_code)}")
     return list(by_code.values())
+
+
+def scrape_leaf_hits(page, leaf: dict) -> list[dict]:
+    """PLP SSR hits, with Algolia fallback for discovery pages that ship an empty grid.
+
+    Homewear & Lingerie is currently a discovery landing page whose GB merchandising
+    namespace is empty; the live assortment is the Dior Chez Moi clothing capsule.
+    """
+    hits = scrape_plp_hits(page, leaf)
+    if hits:
+        return hits
+    leaf_id = leaf.get("id") or ""
+    fallbacks: list[tuple[str, str]] = []
+    if leaf_id == "di-women-homewear-lingerie":
+        fallbacks = [
+            (
+                "namespaces:women-dior-chez-moi AND type:PRODUCT AND category.lvl1:Clothing",
+                "",
+            ),
+            (
+                "type:PRODUCT AND category.lvl0:Women AND category.lvl1:Clothing",
+                "Chez Moi",
+            ),
+        ]
+    if not fallbacks:
+        return hits
+    merged: dict[str, dict] = {}
+    for filters, query in fallbacks:
+        try:
+            more = algolia_search_product_hits(filters=filters, query=query)
+            log(f"  algolia fallback ({query or filters[:48]}) hits={len(more)}")
+        except Exception as e:
+            log(f"  WARN algolia fallback: {e}")
+            continue
+        for h in more:
+            code = (h.get("code") or h.get("sku") or "").strip()
+            if code:
+                merged[code] = h
+    return list(merged.values())
 
 
 def materialize_images(code: str, urls: list[str]) -> list[str]:
@@ -227,8 +267,8 @@ def main() -> None:
         time.sleep(2)
 
         for leaf in leaves:
-            hits = scrape_plp_hits(page, leaf)
-            codes = [(h.get("code") or "").strip() for h in hits]
+            hits = scrape_leaf_hits(page, leaf)
+            codes = [(h.get("code") or h.get("sku") or "").strip() for h in hits]
             codes = [c for c in codes if c]
             merch: dict[str, dict] = {}
             if not args.skip_pdp:
@@ -238,7 +278,7 @@ def main() -> None:
                 except Exception as e:
                     log(f"  WARN algolia: {e}")
             for i, hit in enumerate(hits, start=1):
-                code = (hit.get("code") or "").strip()
+                code = (hit.get("code") or hit.get("sku") or "").strip()
                 if not code:
                     continue
                 link = (hit.get("productLink") or {}).get("uri") or ""
@@ -278,18 +318,40 @@ def main() -> None:
                         )
                     )
                     row["collections"] = cols
-                    if leaf["id"] == "di-women-rtw-all" and prev.get("leafId"):
-                        pl = prev["leafId"]
-                        if pl != "di-women-rtw-all":
-                            row["leafId"] = pl
-                            row["leafLabel"] = prev.get("leafLabel", row["leafLabel"])
-                            row["leafLabelKo"] = prev.get(
-                                "leafLabelKo", row["leafLabelKo"]
-                            )
+                    # Preserve specialized leaves when a broader PLP (shirts/pants/all)
+                    # re-scrapes the same SKU — otherwise homewear/lingerie empties out.
+                    SPECIALIZED = {
+                        "di-women-homewear-lingerie",
+                        "di-women-swimsuits",
+                        "di-women-denim",
+                    }
+                    prev_leaf = prev.get("leafId") or ""
+                    new_leaf = leaf["id"]
+                    if new_leaf == "di-women-rtw-all" and prev_leaf and prev_leaf != "di-women-rtw-all":
+                        row["leafId"] = prev_leaf
+                        row["leafLabel"] = prev.get("leafLabel", row["leafLabel"])
+                        row["leafLabelKo"] = prev.get(
+                            "leafLabelKo", row["leafLabelKo"]
+                        )
+                    elif (
+                        prev_leaf in SPECIALIZED
+                        and new_leaf not in SPECIALIZED
+                        and new_leaf != "di-women-rtw-all"
+                    ):
+                        row["leafId"] = prev_leaf
+                        row["leafLabel"] = prev.get("leafLabel", row["leafLabel"])
+                        row["leafLabelKo"] = prev.get(
+                            "leafLabelKo", row["leafLabelKo"]
+                        )
+                        if prev_leaf not in row["collections"]:
+                            row["collections"].append(prev_leaf)
                     if len(prev.get("images") or []) > len(row.get("images") or []):
                         row["images"] = prev["images"]
                     if not (row.get("details") or {}).get("paragraphs"):
                         row["details"] = prev.get("details") or row["details"]
+                    # Always keep every leaf membership we have ever seen
+                    if prev_leaf and prev_leaf not in row["collections"]:
+                        row["collections"].append(prev_leaf)
                 by_id[code] = row
                 if i % 15 == 0:
                     log(f"  progress {i}/{len(hits)} saved={len(by_id)}")

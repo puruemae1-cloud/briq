@@ -1558,6 +1558,69 @@ def algolia_merch_hits_by_codes(codes: list[str], *, batch: int = 15) -> dict[st
     return by_code
 
 
+def algolia_search_product_hits(
+    *,
+    filters: str,
+    query: str = "",
+    hits_per_page: int = 100,
+) -> list[dict]:
+    """Search merch index for PRODUCT hits (used when a discovery PLP has no SSR grid)."""
+    import urllib.parse
+
+    url = f"https://{ALGOLIA_MERCH_APP_ID}-dsn.algolia.net/1/indexes/*/queries"
+    params = urllib.parse.urlencode(
+        {
+            "query": query,
+            "filters": filters,
+            "hitsPerPage": hits_per_page,
+            "attributesToRetrieve": "*",
+        }
+    )
+    body = json.dumps(
+        {"requests": [{"indexName": ALGOLIA_MERCH_INDEX, "params": params}]}
+    ).encode()
+    req = urllib.request.Request(
+        url,
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "X-Algolia-Application-Id": ALGOLIA_MERCH_APP_ID,
+            "X-Algolia-API-Key": ALGOLIA_MERCH_API_KEY,
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=45) as resp:
+        data = json.loads(resp.read())
+    hits = (data.get("results") or [{}])[0].get("hits") or []
+    out: list[dict] = []
+    for h in hits:
+        typ = (h.get("type") or "").upper()
+        if typ and typ not in ("PRODUCT",):
+            continue
+        sku = (h.get("sku") or h.get("code") or "").strip()
+        if not sku:
+            continue
+        # Normalize to PLP-shaped hit for shared scrape helpers
+        price = h.get("price")
+        if not isinstance(price, dict):
+            mp = h.get("minimumPrice") or {}
+            if isinstance(mp, dict) and mp.get("amount") is not None:
+                price = {"value": mp.get("amount"), "currency": mp.get("currency") or "GBP"}
+        out.append(
+            {
+                **h,
+                "code": sku,
+                "sku": sku,
+                "title": h.get("title") or h.get("titleInt") or "",
+                "subtitle": h.get("subtitle") or h.get("subtitleInt") or "",
+                "price": price or {},
+                "productLink": h.get("productLink")
+                or {"uri": f"/{LANG}/fashion/products/{sku}"},
+            }
+        )
+    return out
+
+
 def gallery_urls_from_merch_hit(hit: dict) -> list[str]:
     """Scene7 gallery from Algolia merch damAssets (+ views fallback)."""
     seen: set[str] = set()
