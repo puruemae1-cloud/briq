@@ -17,6 +17,7 @@ export type BrandKey =
   | "dior-accessories"
   | "dior-shoes"
   | "prada"
+  | "prada-bags"
   | "arcteryx"
   | "paul-smith"
   | "belstaff"
@@ -87,6 +88,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/prada.svg",
     // Locked Linea Rossa campaign creative — head to chest.
     images: ["/banners/brand-prada-linea-rossa.jpg"],
+  },
+  "prada-bags": {
+    key: "prada-bags",
+    nameEn: "Prada",
+    nameKo: "프라다",
+    logoSrc: "/brands/prada.svg",
+    // Locked women's bags PLP creative — FW26 crocodile bag / rotary phone.
+    images: ["/banners/brand-prada-bags.jpg"],
   },
   arcteryx: {
     key: "arcteryx",
@@ -251,7 +260,22 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "chanel-watches": "chanel-watches",
   "ch-watches": "chanel-watches",
   prada: "prada",
-  "prada-bags": "prada",
+  "prada-bags": "prada-bags",
+  "pr-handbags": "prada-bags",
+  "pr-women-shoulder-bags": "prada-bags",
+  "pr-women-top-handle-bags": "prada-bags",
+  "pr-women-tote-bags": "prada-bags",
+  "pr-women-mini-bags": "prada-bags",
+  "pr-women-backpacks": "prada-bags",
+  "pr-women-briefcases": "prada-bags",
+  "pr-women-travel": "prada-bags",
+  "pr-women-travel-bags": "prada-bags",
+  "pr-women-luggage-carry-on": "prada-bags",
+  "pr-women-travel-accessories": "prada-bags",
+  "pr-mens-handbags": "prada-bags",
+  "pr-men-backpacks-belt-bags": "prada-bags",
+  "pr-men-briefcases": "prada-bags",
+  "pr-men-clutches": "prada-bags",
   "prada-luxury": "prada",
   "prada-shoes": "prada",
   "prada-accessories": "prada",

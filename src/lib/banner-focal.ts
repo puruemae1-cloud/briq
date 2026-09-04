@@ -18,6 +18,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Linea Rossa model — keep crown + red temple mark in frame */
   "brand-prada-linea-rossa.jpg": "48% 18%",
   "brand-prada-linea-rossa.webp": "48% 18%",
+  /* Women's bags PLP — crocodile bag + PRADA MILANO logo */
+  "brand-prada-bags.jpg": "70% 50%",
+  "brand-prada-bags.webp": "70% 50%",
   /* Who We Are ridge — keep climbers on the diagonal */
   "brand-arcteryx-ridge.jpg": "38% 55%",
   "brand-arcteryx-ridge.webp": "38% 55%",
