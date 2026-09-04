@@ -4262,6 +4262,28 @@ body:has(.nav-drawer-toggle:checked) {
   white-space: pre-line;
 }
 
+.product-detail__desc > p {
+  margin: 0 0 0.85rem;
+}
+
+.product-detail__desc > p:last-child,
+.product-detail__desc > ul:last-child {
+  margin-bottom: 0;
+}
+
+.product-detail__desc-list,
+.product-story__bullets {
+  margin: 0.35rem 0 0.85rem;
+  padding-left: 1.15rem;
+  color: rgba(11, 18, 16, 0.72);
+  line-height: 1.65;
+}
+
+.product-detail__desc-list li,
+.product-story__bullets li {
+  margin: 0.2rem 0;
+}
+
 .product-detail__sold-panel {
   margin-top: 1.65rem;
   padding: 1.35rem 1.25rem 1.4rem;

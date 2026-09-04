@@ -479,7 +479,33 @@ export function ProductDetail({
           ) : null}
 
           {product.descriptionKo ? (
-            <p className="product-detail__desc">{product.descriptionKo}</p>
+            <div className="product-detail__desc">
+              {product.descriptionKo
+                .split(/\n\n+/)
+                .map((para) => para.trim())
+                .filter(Boolean)
+                .map((para, idx) => {
+                  const lines = para
+                    .split(/\n+/)
+                    .map((l) => l.trim())
+                    .filter(Boolean);
+                  const bullets = lines.filter((l) => /^[•\-\*·]/.test(l));
+                  if (bullets.length >= 2 && bullets.length === lines.length) {
+                    return (
+                      <ul key={`desc-bullets-${idx}`} className="product-detail__desc-list">
+                        {bullets.map((line) => (
+                          <li key={line}>{line.replace(/^[•\-\*·]\s*/, "")}</li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  return (
+                    <p key={`desc-${idx}`} style={{ whiteSpace: "pre-line" }}>
+                      {para}
+                    </p>
+                  );
+                })}
+            </div>
           ) : null}
 
           {optionBlocks}

@@ -69,9 +69,27 @@ export function ProductStorySections({
                     .split(/\n\n+/)
                     .map((para) => para.trim())
                     .filter(Boolean)
-                    .map((para) => (
-                      <p key={para.slice(0, 32)}>{para}</p>
-                    ))
+                    .map((para, paraIdx) => {
+                      const lines = para
+                        .split(/\n+/)
+                        .map((l) => l.trim())
+                        .filter(Boolean);
+                      const bullets = lines.filter((l) => /^[•\-\*·]/.test(l));
+                      if (bullets.length >= 2 && bullets.length === lines.length) {
+                        return (
+                          <ul key={`bullets-${paraIdx}`} className="product-story__bullets">
+                            {bullets.map((line) => (
+                              <li key={line}>{line.replace(/^[•\-\*·]\s*/, "")}</li>
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p key={para.slice(0, 32)} style={{ whiteSpace: "pre-line" }}>
+                          {para}
+                        </p>
+                      );
+                    })
                 : null}
             </div>
           </article>

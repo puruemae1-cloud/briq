@@ -150,8 +150,15 @@ def build_story_sections(
         "구성 디테일",
     ]
     for i, img in enumerate(local_imgs[1:7], start=0):
-        feat = features[i] if i < len(features) else ""
-        body = feat or "벨스타프 공식 제품 컷입니다."
+        # First gallery caption carries the full details list; later frames
+        # keep a single highlight so every official photo has Korean copy.
+        if i == 0 and features:
+            body = "\n".join(f"• {line}" for line in features)
+            if fit_lines:
+                body = body + "\n" + "\n".join(f"• {line}" for line in fit_lines)
+        else:
+            feat = features[i] if i < len(features) else ""
+            body = feat or "벨스타프 공식 제품 컷입니다."
         sections.append(
             {
                 "titleKo": captions[i] if i < len(captions) else f"갤러리 {i + 2}",
@@ -792,6 +799,15 @@ def build() -> None:
             fit_lines=fit_ko,
             local_imgs=local_imgs,
         )
+        # Above-fold copy: official intro + Details/Fit accordion (Korean).
+        desc_parts: list[str] = []
+        if desc_ko:
+            desc_parts.append(desc_ko)
+        if features:
+            desc_parts.append("\n".join(f"• {line}" for line in features))
+        if fit_ko:
+            desc_parts.append("\n".join(f"• {line}" for line in fit_ko))
+        full_desc_ko = "\n\n".join(desc_parts).strip() or desc_ko
         product = {
             "id": pid,
             "name": title,
@@ -803,7 +819,7 @@ def build() -> None:
             "subcategory": leaf,
             "bsCollections": cols,
             "tags": ["belstaff", "벨스타프", *cols],
-            "descriptionKo": desc_ko,
+            "descriptionKo": full_desc_ko,
             "image": local_imgs[0],
             "images": local_imgs,
             "hoverImage": local_imgs[1] if len(local_imgs) > 1 else local_imgs[0],
