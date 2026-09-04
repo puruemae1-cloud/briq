@@ -11,6 +11,7 @@ export type BrandKey =
   | "burberry-bags"
   | "chanel"
   | "chanel-watches"
+  | "chanel-shoes"
   | "dior-watches"
   | "dior-bags"
   | "dior-mens-rtw"
@@ -79,7 +80,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    // Locked Como cruise bag creative — bags / shoes / accessories (not watches).
+    // Locked Como cruise bag creative — bags / accessories (not watches/shoes).
     images: ["/banners/brand-chanel-como-bag.jpg"],
   },
   "chanel-watches": {
@@ -89,6 +90,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/chanel.svg",
     // Locked Première creative — watches only.
     images: ["/banners/brand-chanel-premiere.jpg"],
+  },
+  "chanel-shoes": {
+    key: "chanel-shoes",
+    nameEn: "Chanel",
+    nameKo: "샤넬",
+    logoSrc: "/brands/chanel.svg",
+    // Locked shoes creative — barefoot sandals / CC heel editorial.
+    images: ["/banners/brand-chanel-shoes.jpg"],
   },
   prada: {
     key: "prada",
@@ -291,7 +300,15 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "burberry-gifts": "burberry",
   chanel: "chanel",
   "chanel-bags": "chanel",
-  "chanel-shoes": "chanel",
+  "chanel-shoes": "chanel-shoes",
+  "ch-shoes": "chanel-shoes",
+  "ch-women-pumps-slingbacks": "chanel-shoes",
+  "ch-women-ballet-mary-janes": "chanel-shoes",
+  "ch-women-elegant-sandals": "chanel-shoes",
+  "ch-women-casual-sandals": "chanel-shoes",
+  "ch-women-loafers": "chanel-shoes",
+  "ch-women-boots": "chanel-shoes",
+  "ch-women-sneakers": "chanel-shoes",
   "chanel-accessories": "chanel",
   "chanel-watches": "chanel-watches",
   "ch-watches": "chanel-watches",

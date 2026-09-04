@@ -18,6 +18,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* CC logo sits ~36% x / 42% y after crop — keep it in the shop-hero strip */
   "brand-chanel-como-bag.jpg": "36% 42%",
   "brand-chanel-como-bag.webp": "36% 42%",
+  /* Shoes barefoot sandals — CC heel + feet */
+  "brand-chanel-shoes.jpg": "42% 55%",
+  "brand-chanel-shoes.webp": "42% 55%",
   /* Linea Rossa model — keep crown + red temple mark in frame */
   "brand-prada-linea-rossa.jpg": "48% 18%",
   "brand-prada-linea-rossa.webp": "48% 18%",
