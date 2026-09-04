@@ -226,6 +226,9 @@ assert FIXED_BURBERRY_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Burberry bag
 FIXED_PRADA_BAGS_BRAND_BANNER = "brand-prada-bags.jpg"
 assert FIXED_PRADA_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Prada bags brand banner must not be in SLOT_THEMES"
 
+FIXED_PRADA_SHOES_BRAND_BANNER = "brand-prada-shoes.jpg"
+assert FIXED_PRADA_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Prada shoes brand banner must not be in SLOT_THEMES"
+
 # Dior bags brand hero — locked All Bags forest bench creative.
 FIXED_DIOR_BAGS_BRAND_BANNER = "brand-dior-bags.jpg"
 assert FIXED_DIOR_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Dior bags brand banner must not be in SLOT_THEMES"
@@ -268,6 +271,7 @@ LOCKED_BANNERS = {
     FIXED_BURBERRY_BAGS_BRAND_BANNER,
     FIXED_PRADA_BRAND_BANNER,
     FIXED_PRADA_BAGS_BRAND_BANNER,
+    FIXED_PRADA_SHOES_BRAND_BANNER,
     FIXED_ARC_BRAND_BANNER,
     FIXED_GUCCI_BAGS_BRAND_BANNER,
     FIXED_GUCCI_SHOES_BRAND_BANNER,

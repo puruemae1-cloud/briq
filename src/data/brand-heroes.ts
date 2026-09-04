@@ -21,6 +21,7 @@ export type BrandKey =
   | "dior-shoes"
   | "prada"
   | "prada-bags"
+  | "prada-shoes"
   | "arcteryx"
   | "paul-smith"
   | "belstaff"
@@ -123,6 +124,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/prada.svg",
     // Locked women's bags PLP creative — FW26 crocodile bag / rotary phone.
     images: ["/banners/brand-prada-bags.jpg"],
+  },
+  "prada-shoes": {
+    key: "prada-shoes",
+    nameEn: "Prada",
+    nameKo: "프라다",
+    logoSrc: "/brands/prada.svg",
+    // Locked women's shoes PLP creative — FW26 green slingbacks / floral socks.
+    images: ["/banners/brand-prada-shoes.jpg"],
   },
   arcteryx: {
     key: "arcteryx",
@@ -357,7 +366,22 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "pr-men-briefcases": "prada-bags",
   "pr-men-clutches": "prada-bags",
   "prada-luxury": "prada",
-  "prada-shoes": "prada",
+  "prada-shoes": "prada-shoes",
+  "pr-women-shoes": "prada-shoes",
+  "pr-women-ankle-boots-boots": "prada-shoes",
+  "pr-women-loafers-lace-ups": "prada-shoes",
+  "pr-women-pumps-ballerinas": "prada-shoes",
+  "pr-women-sneakers": "prada-shoes",
+  "pr-women-sandals-mules": "prada-shoes",
+  "pr-women-new-formal": "prada-shoes",
+  "pr-women-chocolate": "prada-shoes",
+  "pr-men-shoes": "prada-shoes",
+  "pr-men-loafers": "prada-shoes",
+  "pr-men-sneakers": "prada-shoes",
+  "pr-men-sandals": "prada-shoes",
+  "pr-men-lace-ups": "prada-shoes",
+  "pr-men-boots": "prada-shoes",
+  "pr-men-americas-cup": "prada-shoes",
   "prada-accessories": "prada",
   "pr-linea-rossa": "prada",
   "pr-linea-rossa-women": "prada",

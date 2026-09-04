@@ -27,6 +27,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Women's bags PLP — crocodile bag + PRADA MILANO logo */
   "brand-prada-bags.jpg": "70% 50%",
   "brand-prada-bags.webp": "70% 50%",
+  /* Women's shoes — green slingbacks / floral socks */
+  "brand-prada-shoes.jpg": "52% 72%",
+  "brand-prada-shoes.webp": "52% 72%",
   /* Who We Are ridge — keep climbers on the diagonal */
   "brand-arcteryx-ridge.jpg": "38% 55%",
   "brand-arcteryx-ridge.webp": "38% 55%",
