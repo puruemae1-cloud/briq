@@ -28,6 +28,7 @@ RAW_PATH = ROOT / "src/data/bs/bs-catalog-raw.json"
 OUT_JSON = ROOT / "src/data/bs/bs-catalog.json"
 OUT_TS = ROOT / "src/data/bs/bs-catalog.ts"
 CACHE_PATH = ROOT / "src/data/bs/bs-translate-cache.json"
+DETAILS_HANDLE = ROOT / "src/data/bs/bs-details-cache.json"
 
 
 def gbp_to_krw(gbp: float | None) -> int:
@@ -81,6 +82,91 @@ def accent_for(color: str) -> str:
     g = 40 + int(h[2:4], 16) % 80
     b = 40 + int(h[4:6], 16) % 80
     return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def load_details_cache() -> dict[str, dict]:
+    if not DETAILS_HANDLE.exists():
+        return {}
+    try:
+        data = json.loads(DETAILS_HANDLE.read_text())
+    except Exception:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def merge_pdp_details(row: dict, cache: dict[str, dict]) -> dict:
+    """Attach official accordion details/fit/care onto a raw product row."""
+    handle = str(row.get("handle") or "")
+    cached = cache.get(handle) if handle else None
+    if not isinstance(cached, dict):
+        cached = {}
+    out = dict(row)
+    for key in ("details", "fit", "care"):
+        cur = out.get(key)
+        if isinstance(cur, list) and cur:
+            continue
+        val = cached.get(key)
+        if isinstance(val, list) and val:
+            out[key] = val
+    return out
+
+
+def build_story_sections(
+    *,
+    name_ko: str,
+    desc_ko: str,
+    features: list[str],
+    fit_lines: list[str],
+    local_imgs: list[str],
+) -> list[dict] | None:
+    """Richer PDP story: intro + detail bullets + remaining gallery frames."""
+    if not desc_ko and not features and not local_imgs:
+        return None
+    sections: list[dict] = []
+    body_parts: list[str] = []
+    if desc_ko:
+        body_parts.append(desc_ko)
+    if features:
+        body_parts.append("\n".join(f"• {line}" for line in features))
+    if fit_lines:
+        body_parts.append("\n".join(f"• {line}" for line in fit_lines))
+    intro_body = "\n\n".join(body_parts).strip()
+    if intro_body or local_imgs:
+        sections.append(
+            {
+                "titleKo": name_ko,
+                "bodyKo": intro_body or name_ko,
+                "image": local_imgs[0] if local_imgs else None,
+                "imageAlt": name_ko,
+            }
+        )
+    captions = [
+        "제품 디테일",
+        "측면 디테일",
+        "후면 디테일",
+        "디테일 클로즈업",
+        "추가 컷",
+        "착용 컷",
+        "구성 디테일",
+    ]
+    for i, img in enumerate(local_imgs[1:7], start=0):
+        feat = features[i] if i < len(features) else ""
+        body = feat or "벨스타프 공식 제품 컷입니다."
+        sections.append(
+            {
+                "titleKo": captions[i] if i < len(captions) else f"갤러리 {i + 2}",
+                "bodyKo": body,
+                "image": img,
+                "imageAlt": f"{name_ko} {i + 2}",
+                "layout": "caption",
+                "reverse": bool(i % 2),
+            }
+        )
+    for s in sections:
+        if not s.get("image"):
+            s.pop("image", None)
+            s.pop("imageAlt", None)
+    return sections or None
 
 
 def slugify(text: str) -> str:
@@ -508,6 +594,7 @@ def to_size_chart(
 def build() -> None:
     raw = json.loads(RAW_PATH.read_text())
     products_in = raw.get("products") or []
+    details_cache = load_details_cache()
     now = datetime.now(timezone.utc)
     out: list[dict] = []
 
@@ -544,7 +631,8 @@ def build() -> None:
 
     new_stamp_i = 0
 
-    for idx, row in enumerate(products_in):
+    for idx, row_in in enumerate(products_in):
+        row = merge_pdp_details(row_in, details_cache)
         handle = row.get("handle") or ""
         if not handle:
             continue
@@ -647,11 +735,15 @@ def build() -> None:
                 if len(features) >= 6:
                     break
 
-        specs = []
+        fit_ko = []
         for line in row.get("fit") or []:
             line = re.sub(r"\s+", " ", str(line)).strip()
             if line:
-                specs.append({"labelKo": "핏", "valueKo": t(line)})
+                fit_ko.append(t(line))
+
+        specs = []
+        for line in fit_ko:
+            specs.append({"labelKo": "핏", "valueKo": line})
         for line in (row.get("care") or [])[:6]:
             line = re.sub(r"\s+", " ", str(line)).strip()
             if line:
@@ -693,6 +785,13 @@ def build() -> None:
             badge = "Sale"
 
         in_stock = any(v["inStock"] for v in variants_out)
+        story = build_story_sections(
+            name_ko=name_ko,
+            desc_ko=desc_ko,
+            features=features,
+            fit_lines=fit_ko,
+            local_imgs=local_imgs,
+        )
         product = {
             "id": pid,
             "name": title,
@@ -720,16 +819,7 @@ def build() -> None:
             "registeredAt": reg.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "featuresKo": features or None,
             "techSpecs": specs or None,
-            "storySections": [
-                {
-                    "titleKo": name_ko,
-                    "bodyKo": desc_ko,
-                    "image": local_imgs[0],
-                    "imageAlt": name_ko,
-                }
-            ]
-            if desc_ko
-            else None,
+            "storySections": story,
         }
         # drop None features
         if not product.get("featuresKo"):

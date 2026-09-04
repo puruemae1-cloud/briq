@@ -10,6 +10,10 @@ catalogue, and prunes orphan PDP image folders.
 
 Designed for GitHub Actions (cron) and local runs:
   python3 scripts/weekly-bs-stock-sync.py
+
+Pale colourways (white / chalk / pale-stone / silver / sand / …) skip
+greymat/rembg on scrape and on product-images push (see bs_pale_colour.py).
+If washed packshots reappear, run: python3 scripts/redownload-bs-pale.py
 """
 from __future__ import annotations
 

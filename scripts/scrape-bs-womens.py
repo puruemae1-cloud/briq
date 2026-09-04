@@ -16,6 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from studio_whiten import save_product_image  # noqa: E402
+from bs_pale_colour import is_pale_bs_row  # noqa: E402
 RAW_PATH = ROOT / "src/data/bs/bs-catalog-raw.json"
 IMG_ROOT = ROOT / "public/products/bs-pdp"
 CHART_CACHE = ROOT / "src/data/bs/bs-sizechart-cache.json"
@@ -238,6 +239,7 @@ def download_images(products: list[dict]) -> tuple[int, int]:
         folder = IMG_ROOT / handle
         folder.mkdir(parents=True, exist_ok=True)
         urls = (p.get("images") or [])[:8]
+        pale = is_pale_bs_row(p)
         if idx == 1 or idx % 20 == 0 or idx == total:
             print(f"  images {idx}/{total} {handle}", flush=True)
         for i, src in enumerate(urls, 1):
@@ -249,7 +251,7 @@ def download_images(products: list[dict]) -> tuple[int, int]:
                 data = fetch(cdn_url(src, 1200), "*/*")
                 if len(data) < 500:
                     continue
-                save_product_image(dest, data)
+                save_product_image(dest, data, greymat=not pale)
                 saved += 1
             except Exception as e:
                 print(f"  warn image {handle}/{i}: {e}", flush=True)

@@ -20,6 +20,9 @@ passes --dirs gc-pdp we must still exclude pale SKUs from rembg.
 Arc'teryx pale apparel colourways (White Light / Arctic Silk / Sea Salt / …)
 keep images.arcteryx.com bytes (see ax_pale_colour.py).
 
+Belstaff pale colourways (white / chalk / pale-stone / silver / sand / …)
+keep Shopify CDN bytes (see bs_pale_colour.py) — rembg washed Walton trainers.
+
 Importable helpers for scrapers / weekly syncs / image tag pushes.
 """
 from __future__ import annotations
@@ -234,7 +237,7 @@ def save_product_image(
 ) -> str:
     """Write downloaded PDP bytes then optionally greymat studio mats in place.
 
-    Pass greymat=False for pale PS / GC / AX colourways (and Burberry-style
+    Pass greymat=False for pale PS / GC / AX / BS colourways (and Burberry-style
     official crops) — rembg/soft remap turns white garments into grey blocks.
     """
     dest = Path(path)
@@ -274,6 +277,9 @@ def greymat_dirs(
 
     Arc'teryx pale apparel colourways are excluded the same way
     (ax_pale_colour.py) under axa-pdp.
+
+    Belstaff pale colourways are excluded the same way (bs_pale_colour.py)
+    under bs-pdp.
     """
     files = collect_images(dirs)
     if "ps-pdp" in dirs:
@@ -334,6 +340,26 @@ def greymat_dirs(
             print(
                 f"AX pale skip: excluded {before - len(files)} images "
                 f"across {len(skip_dirs)} white-ish colour dirs",
+                flush=True,
+            )
+    if "bs-pdp" in dirs:
+        try:
+            from bs_pale_colour import pale_bs_handles  # type: ignore
+
+            skip_handles = pale_bs_handles()
+        except Exception as e:
+            print(f"WARN: could not load BS pale handles ({e})", flush=True)
+            skip_handles = set()
+        if skip_handles:
+            before = len(files)
+            files = [
+                p
+                for p in files
+                if p.parent.name not in skip_handles
+            ]
+            print(
+                f"BS pale skip: excluded {before - len(files)} images "
+                f"across {len(skip_handles)} white/pale handles",
                 flush=True,
             )
     if limit:
