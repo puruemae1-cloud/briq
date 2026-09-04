@@ -222,6 +222,10 @@ assert FIXED_GUCCI_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Gucci shoes br
 FIXED_BURBERRY_BAGS_BRAND_BANNER = "brand-burberry-bags.jpg"
 assert FIXED_BURBERRY_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Burberry bags brand banner must not be in SLOT_THEMES"
 
+# Burberry shoes brand hero — locked Vintage Check platform sneakers creative.
+FIXED_BURBERRY_SHOES_BRAND_BANNER = "brand-burberry-shoes.jpg"
+assert FIXED_BURBERRY_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Burberry shoes brand banner must not be in SLOT_THEMES"
+
 # Prada bags brand hero — locked FW26 women's bags crocodile / phone creative.
 FIXED_PRADA_BAGS_BRAND_BANNER = "brand-prada-bags.jpg"
 assert FIXED_PRADA_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Prada bags brand banner must not be in SLOT_THEMES"
@@ -269,6 +273,7 @@ LOCKED_BANNERS = {
     FIXED_CHANEL_SHOES_BRAND_BANNER,
     FIXED_BURBERRY_BRAND_BANNER,
     FIXED_BURBERRY_BAGS_BRAND_BANNER,
+    FIXED_BURBERRY_SHOES_BRAND_BANNER,
     FIXED_PRADA_BRAND_BANNER,
     FIXED_PRADA_BAGS_BRAND_BANNER,
     FIXED_PRADA_SHOES_BRAND_BANNER,

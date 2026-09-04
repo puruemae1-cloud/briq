@@ -15,6 +15,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Bags PLP night check tote — face + tote */
   "brand-burberry-bags.jpg": "52% 38%",
   "brand-burberry-bags.webp": "52% 38%",
+  /* Shoes PLP — Vintage Check platform sneakers */
+  "brand-burberry-shoes.jpg": "50% 72%",
+  "brand-burberry-shoes.webp": "50% 72%",
   /* CC logo sits ~36% x / 42% y after crop — keep it in the shop-hero strip */
   "brand-chanel-como-bag.jpg": "36% 42%",
   "brand-chanel-como-bag.webp": "36% 42%",

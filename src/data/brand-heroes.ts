@@ -10,6 +10,7 @@ export type BrandKey =
   | "gucci-shoes"
   | "burberry"
   | "burberry-bags"
+  | "burberry-shoes"
   | "chanel"
   | "chanel-watches"
   | "chanel-shoes"
@@ -84,6 +85,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/burberry.svg",
     // Locked bags PLP creative — night check tote / knight medallion campaign.
     images: ["/banners/brand-burberry-bags.jpg"],
+  },
+  "burberry-shoes": {
+    key: "burberry-shoes",
+    nameEn: "Burberry",
+    nameKo: "버버리",
+    logoSrc: "/brands/burberry.svg",
+    // Locked shoes PLP creative — Vintage Check platform sneakers.
+    images: ["/banners/brand-burberry-shoes.jpg"],
   },
   chanel: {
     key: "chanel",
@@ -331,7 +340,26 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "bb-men-briefcases": "burberry-bags",
   "bb-bags-kids": "burberry-bags",
   "bb-kids-bags": "burberry-bags",
-  "burberry-shoes": "burberry",
+  "burberry-shoes": "burberry-shoes",
+  "bb-shoes-womens": "burberry-shoes",
+  "bb-women-shoes": "burberry-shoes",
+  "bb-women-sneakers": "burberry-shoes",
+  "bb-women-sandals": "burberry-shoes",
+  "bb-women-loafers-ballerinas": "burberry-shoes",
+  "bb-women-boots": "burberry-shoes",
+  "bb-women-pumps": "burberry-shoes",
+  "bb-shoes-mens": "burberry-shoes",
+  "bb-men-shoes": "burberry-shoes",
+  "bb-men-sneakers": "burberry-shoes",
+  "bb-men-sandals": "burberry-shoes",
+  "bb-men-boots": "burberry-shoes",
+  "bb-men-loafers-lace-ups": "burberry-shoes",
+  "bb-shoes-kids": "burberry-shoes",
+  "bb-kids-shoes": "burberry-shoes",
+  "bb-kids-newborn-shoes-accessories": "burberry-shoes",
+  "bb-kids-baby-shoes-accessories": "burberry-shoes",
+  "bb-kids-girls-shoes-accessories": "burberry-shoes",
+  "bb-kids-boys-shoes-accessories": "burberry-shoes",
   "burberry-accessories": "burberry",
   "burberry-gifts": "burberry",
   chanel: "chanel",
