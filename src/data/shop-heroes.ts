@@ -68,36 +68,6 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/rot-shoe-2.jpg",
     "/banners/rot-shoe-3.jpg",
   ],
-  "shoes:luxury-shoes": [
-    "/banners/shop-shoe-lux-w-1.jpg",
-    "/banners/shop-shoe-lux-m-1.jpg",
-    "/banners/rot-shoe-1.jpg",
-  ],
-  "shoes:luxury-womens": [
-    "/banners/shop-shoe-lux-w-1.jpg",
-    "/banners/rot-shoe-3.jpg",
-    "/banners/shop-shoe-lux-w-1.jpg",
-  ],
-  "shoes:luxury-mens": [
-    "/banners/shop-shoe-lux-m-1.jpg",
-    "/banners/rot-shoe-1.jpg",
-    "/banners/shop-shoe-lux-m-1.jpg",
-  ],
-  "shoes:training-shoes": [
-    "/banners/shop-shoe-train-w-1.jpg",
-    "/banners/shop-shoe-train-m-1.jpg",
-    "/banners/rot-shoe-2.jpg",
-  ],
-  "shoes:training-womens": [
-    "/banners/shop-shoe-train-w-1.jpg",
-    "/banners/rot-run-2.jpg",
-    "/banners/shop-shoe-train-w-1.jpg",
-  ],
-  "shoes:training-mens": [
-    "/banners/shop-shoe-train-m-1.jpg",
-    "/banners/rot-shoe-2.jpg",
-    "/banners/shop-shoe-train-m-1.jpg",
-  ],
 
   accessories: [
     "/banners/rot-acc-1.jpg",

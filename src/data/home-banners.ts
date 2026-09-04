@@ -51,11 +51,7 @@ export type LookBanner = {
  * Shop nav still mixes product-type / gender leaves with brands.
  * Homepage rails (except sports) should show brand names only.
  */
-const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set([
-  // shoes — type groupings, not brands
-  "luxury-shoes",
-  "training-shoes",
-]);
+const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set<string>();
 
 /** Homepage rail brand chips — mirrors top-level children under each shop category. */
 export function homeRailLinksForCategory(

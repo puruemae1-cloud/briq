@@ -11,8 +11,6 @@
 const STRUCTURAL_IDS = new Set([
   "womens",
   "mens",
-  "luxury-shoes",
-  "training-shoes",
   "golf",
   "running",
   "swimming",

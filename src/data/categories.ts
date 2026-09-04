@@ -43,12 +43,6 @@ export type SubcategoryId =
   | "galvin-green"
   | "gg-new-arrivals"
   | "gg-bestsellers"
-  | "luxury-shoes"
-  | "training-shoes"
-  | "luxury-womens"
-  | "luxury-mens"
-  | "training-womens"
-  | "training-mens"
   | "burberry"
   | "bb-women"
   | "bb-women-latest"
@@ -2296,7 +2290,7 @@ export type NavCategory = {
   children?: NavChild[];
 };
 
-/** Expands group subcategory ids (e.g. luxury-shoes → womens/mens leaf ids). */
+/** Expands group subcategory ids (e.g. brand hubs → leaf collection ids). */
 export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> = {
 
   "paul-smith": ["ps-men", "ps-women", ...PS_MEN_CLOTHING_IDS, ...PS_WOMEN_CLOTHING_IDS],
@@ -3137,8 +3131,6 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-watches": ["gc-watches", ...GC_WATCHES_LEAF_IDS],
   "gc-watches-women": ["gc-watches-women"],
   "gc-watches-men": ["gc-watches-men"],
-  "luxury-shoes": ["luxury-womens", "luxury-mens"],
-  "training-shoes": ["training-womens", "training-mens"],
   "christopher-ward": [...CW_COLLECTION_IDS],
   golf: [
     "golf",
@@ -5572,40 +5564,6 @@ export const navCategories: NavCategory[] = [
                 ],
               },
             ],
-          },
-        ],
-      },
-      {
-        id: "luxury-shoes",
-        labelKo: "럭셔리 슈즈",
-        href: "/shop?category=shoes&sub=luxury-shoes",
-        children: [
-          {
-            id: "luxury-womens",
-            labelKo: "여성용",
-            href: "/shop?category=shoes&sub=luxury-womens",
-          },
-          {
-            id: "luxury-mens",
-            labelKo: "남성용",
-            href: "/shop?category=shoes&sub=luxury-mens",
-          },
-        ],
-      },
-      {
-        id: "training-shoes",
-        labelKo: "트레이닝 슈즈",
-        href: "/shop?category=shoes&sub=training-shoes",
-        children: [
-          {
-            id: "training-womens",
-            labelKo: "여성용",
-            href: "/shop?category=shoes&sub=training-womens",
-          },
-          {
-            id: "training-mens",
-            labelKo: "남성용",
-            href: "/shop?category=shoes&sub=training-mens",
           },
         ],
       },
