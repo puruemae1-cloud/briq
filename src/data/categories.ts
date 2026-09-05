@@ -922,6 +922,25 @@ export type SubcategoryId =
   | "di-men-long-wallets"
   | "di-men-pouches"
   | "di-men-tech-accessories"
+  | "di-women-accessories"
+  | "di-women-acc-all"
+  | "di-women-sunglasses"
+  | "di-women-optical-glasses"
+  | "di-women-belts"
+  | "di-women-jewelry"
+  | "di-women-jewelry-all"
+  | "di-women-earrings"
+  | "di-women-necklaces"
+  | "di-women-brooches"
+  | "di-women-bracelets"
+  | "di-women-rings"
+  | "di-women-dior-tribales"
+  | "di-women-hats-gloves"
+  | "di-women-hair-accessories"
+  | "di-women-silk-scarves-mitzah"
+  | "di-women-scarves-shawls"
+  | "di-women-beach-accessories"
+  | "di-women-key-rings"
   | "di-women-slg"
   | "di-women-slg-all"
   | "di-women-card-holders"
@@ -1267,6 +1286,31 @@ export const DI_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
   "di-men-long-wallets",
   "di-men-pouches",
   "di-men-tech-accessories",
+];
+
+/** Dior women's accessories (official GB all-accessories PLPs). */
+export const DI_WOMEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "di-women-acc-all",
+  "di-women-sunglasses",
+  "di-women-optical-glasses",
+  "di-women-belts",
+  "di-women-hats-gloves",
+  "di-women-hair-accessories",
+  "di-women-silk-scarves-mitzah",
+  "di-women-scarves-shawls",
+  "di-women-beach-accessories",
+  "di-women-key-rings",
+];
+
+/** Dior women's fashion jewellery (official GB womens-fashion leaves). */
+export const DI_WOMEN_JEWELRY_LEAF_IDS: SubcategoryId[] = [
+  "di-women-jewelry-all",
+  "di-women-earrings",
+  "di-women-necklaces",
+  "di-women-brooches",
+  "di-women-bracelets",
+  "di-women-rings",
+  "di-women-dior-tribales",
 ];
 
 /** Dior women's small leather goods (official GB womens SLG PLPs). */
@@ -2662,6 +2706,10 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_TEXTILE_LEAF_IDS,
     "di-jewelry-timepieces",
     ...DI_JEWELRY_LEAF_IDS,
+    "di-women-accessories",
+    ...DI_WOMEN_ACCESSORIES_LEAF_IDS,
+    "di-women-jewelry",
+    ...DI_WOMEN_JEWELRY_LEAF_IDS,
     "di-women-slg",
     ...DI_WOMEN_SLG_LEAF_IDS,
     "di-men-accessories",
@@ -2788,6 +2836,32 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-suits-tuxedos": ["di-men-suits-tuxedos"],
   "di-men-slg": ["di-men-slg", ...DI_MEN_SLG_LEAF_IDS],
   "di-men-slg-all": ["di-men-slg-all"],
+  "di-women-accessories": [
+    "di-women-accessories",
+    ...DI_WOMEN_ACCESSORIES_LEAF_IDS,
+    "di-women-jewelry",
+    ...DI_WOMEN_JEWELRY_LEAF_IDS,
+    "di-women-slg",
+    ...DI_WOMEN_SLG_LEAF_IDS,
+  ],
+  "di-women-acc-all": ["di-women-acc-all"],
+  "di-women-sunglasses": ["di-women-sunglasses"],
+  "di-women-optical-glasses": ["di-women-optical-glasses"],
+  "di-women-belts": ["di-women-belts"],
+  "di-women-jewelry": ["di-women-jewelry", ...DI_WOMEN_JEWELRY_LEAF_IDS],
+  "di-women-jewelry-all": ["di-women-jewelry-all"],
+  "di-women-earrings": ["di-women-earrings"],
+  "di-women-necklaces": ["di-women-necklaces"],
+  "di-women-brooches": ["di-women-brooches"],
+  "di-women-bracelets": ["di-women-bracelets"],
+  "di-women-rings": ["di-women-rings"],
+  "di-women-dior-tribales": ["di-women-dior-tribales"],
+  "di-women-hats-gloves": ["di-women-hats-gloves"],
+  "di-women-hair-accessories": ["di-women-hair-accessories"],
+  "di-women-silk-scarves-mitzah": ["di-women-silk-scarves-mitzah"],
+  "di-women-scarves-shawls": ["di-women-scarves-shawls"],
+  "di-women-beach-accessories": ["di-women-beach-accessories"],
+  "di-women-key-rings": ["di-women-key-rings"],
   "di-women-slg": ["di-women-slg", ...DI_WOMEN_SLG_LEAF_IDS],
   "di-women-slg-all": ["di-women-slg-all"],
   "di-women-card-holders": ["di-women-card-holders"],
@@ -6471,35 +6545,136 @@ export const navCategories: NavCategory[] = [
             ],
           },
           {
-            id: "di-women-slg",
+            id: "di-women-accessories",
             labelKo: "여성용",
-            href: "/shop?category=accessories&sub=di-women-slg",
+            href: "/shop?category=accessories&sub=di-women-accessories",
             navLeaf: true,
             children: [
               {
-                id: "di-women-slg-all",
+                id: "di-women-acc-all",
                 labelKo: "전체",
-                href: "/shop?category=accessories&sub=di-women-slg-all",
+                href: "/shop?category=accessories&sub=di-women-acc-all",
               },
               {
-                id: "di-women-card-holders",
-                labelKo: "카드 홀더 & 스몰 악세서리",
-                href: "/shop?category=accessories&sub=di-women-card-holders",
+                id: "di-women-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=di-women-sunglasses",
               },
               {
-                id: "di-women-wallets",
-                labelKo: "월렛",
-                href: "/shop?category=accessories&sub=di-women-wallets",
+                id: "di-women-jewelry",
+                labelKo: "패션 주얼리",
+                href: "/shop?category=accessories&sub=di-women-jewelry",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-women-jewelry-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-women-jewelry-all",
+                  },
+                  {
+                    id: "di-women-earrings",
+                    labelKo: "이어링",
+                    href: "/shop?category=accessories&sub=di-women-earrings",
+                  },
+                  {
+                    id: "di-women-necklaces",
+                    labelKo: "네크리스",
+                    href: "/shop?category=accessories&sub=di-women-necklaces",
+                  },
+                  {
+                    id: "di-women-brooches",
+                    labelKo: "브로치",
+                    href: "/shop?category=accessories&sub=di-women-brooches",
+                  },
+                  {
+                    id: "di-women-bracelets",
+                    labelKo: "브레이슬릿",
+                    href: "/shop?category=accessories&sub=di-women-bracelets",
+                  },
+                  {
+                    id: "di-women-rings",
+                    labelKo: "링",
+                    href: "/shop?category=accessories&sub=di-women-rings",
+                  },
+                  {
+                    id: "di-women-dior-tribales",
+                    labelKo: "Dior Tribales",
+                    href: "/shop?category=accessories&sub=di-women-dior-tribales",
+                  },
+                ],
               },
               {
-                id: "di-women-pouches",
-                labelKo: "파우치",
-                href: "/shop?category=accessories&sub=di-women-pouches",
+                id: "di-women-optical-glasses",
+                labelKo: "옵티컬 안경",
+                href: "/shop?category=accessories&sub=di-women-optical-glasses",
               },
               {
-                id: "di-women-slg-tech",
-                labelKo: "테크 액세서리",
-                href: "/shop?category=accessories&sub=di-women-slg-tech",
+                id: "di-women-belts",
+                labelKo: "벨트",
+                href: "/shop?category=accessories&sub=di-women-belts",
+              },
+              {
+                id: "di-women-silk-scarves-mitzah",
+                labelKo: "실크 스카프 & 미차",
+                href: "/shop?category=accessories&sub=di-women-silk-scarves-mitzah",
+              },
+              {
+                id: "di-women-scarves-shawls",
+                labelKo: "스카프 & 쇼울",
+                href: "/shop?category=accessories&sub=di-women-scarves-shawls",
+              },
+              {
+                id: "di-women-hats-gloves",
+                labelKo: "모자 & 장갑",
+                href: "/shop?category=accessories&sub=di-women-hats-gloves",
+              },
+              {
+                id: "di-women-hair-accessories",
+                labelKo: "헤어 악세서리",
+                href: "/shop?category=accessories&sub=di-women-hair-accessories",
+              },
+              {
+                id: "di-women-beach-accessories",
+                labelKo: "비치 악세서리",
+                href: "/shop?category=accessories&sub=di-women-beach-accessories",
+              },
+              {
+                id: "di-women-key-rings",
+                labelKo: "키링 & 백 참",
+                href: "/shop?category=accessories&sub=di-women-key-rings",
+              },
+              {
+                id: "di-women-slg",
+                labelKo: "스몰 레더 굿즈",
+                href: "/shop?category=accessories&sub=di-women-slg",
+                navLeaf: true,
+                children: [
+                  {
+                    id: "di-women-slg-all",
+                    labelKo: "전체",
+                    href: "/shop?category=accessories&sub=di-women-slg-all",
+                  },
+                  {
+                    id: "di-women-card-holders",
+                    labelKo: "카드 홀더 & 스몰 악세서리",
+                    href: "/shop?category=accessories&sub=di-women-card-holders",
+                  },
+                  {
+                    id: "di-women-wallets",
+                    labelKo: "월렛",
+                    href: "/shop?category=accessories&sub=di-women-wallets",
+                  },
+                  {
+                    id: "di-women-pouches",
+                    labelKo: "파우치",
+                    href: "/shop?category=accessories&sub=di-women-pouches",
+                  },
+                  {
+                    id: "di-women-slg-tech",
+                    labelKo: "테크 액세서리",
+                    href: "/shop?category=accessories&sub=di-women-slg-tech",
+                  },
+                ],
               },
             ],
           },

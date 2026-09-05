@@ -64,6 +64,7 @@ run_step MERGE python3 scripts/merge-di-catalog-ko.py
 run_step ENRICH python3 scripts/enrich-di-women-slg-pdp.py
 run_step PRICES python3 scripts/fix-di-catalog-prices.py --check
 run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
+run_step THUMBS python3 scripts/recenter-di-women-card-holder-thumbs.py
 
 python3 - <<'PY'
 from pathlib import Path
@@ -137,6 +138,7 @@ git add \
   scripts/run-di-women-slg-pipeline.sh \
   scripts/watch-di-women-slg.sh \
   scripts/merge-di-catalog-ko.py \
+  scripts/recenter-di-women-card-holder-thumbs.py \
   src/data/categories.ts \
   src/data/brand-heroes.ts \
   src/data/di/di-catalog.json \

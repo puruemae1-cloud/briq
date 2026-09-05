@@ -36,7 +36,7 @@ from di_size_charts import (  # noqa: E402
     size_chart_for_di_mens_shoes,
     size_chart_for_di_womens_rtw,
 )
-from ko_qa import en_ratio, ensure_official_english_name, is_good_korean  # noqa: E402
+from ko_qa import en_ratio, ensure_official_english_name, has_hangul, is_good_korean  # noqa: E402
 
 RAW_PATHS = [
     ROOT / "src/data/di/di-tableware-catalog-raw.json",
@@ -44,6 +44,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-decor-catalog-raw.json",
     ROOT / "src/data/di/di-textile-catalog-raw.json",
     ROOT / "src/data/di/di-jewelry-catalog-raw.json",
+    ROOT / "src/data/di/di-women-jewelry-catalog-raw.json",
     ROOT / "src/data/di/di-timepieces-catalog-raw.json",
     ROOT / "src/data/di/di-icons-catalog-raw.json",
     ROOT / "src/data/di/di-bags-women-catalog-raw.json",
@@ -52,6 +53,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-women-rtw-catalog-raw.json",
     ROOT / "src/data/di/di-men-slg-catalog-raw.json",
     ROOT / "src/data/di/di-women-slg-catalog-raw.json",
+    ROOT / "src/data/di/di-women-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
     ROOT / "src/data/di/di-men-essentials-catalog-raw.json",
@@ -104,6 +106,14 @@ JEWELRYISH = {
     "di-rings",
     "di-necklaces",
     "di-dior-icons",
+    "di-women-jewelry",
+    "di-women-jewelry-all",
+    "di-women-earrings",
+    "di-women-necklaces",
+    "di-women-brooches",
+    "di-women-bracelets",
+    "di-women-rings",
+    "di-women-dior-tribales",
 }
 
 TIMEPIECEISH = {
@@ -209,6 +219,28 @@ WOMEN_SLGISH = {
 
 SLGISH = MEN_SLGISH | WOMEN_SLGISH
 
+WOMEN_ACCISH = {
+    "di-women-accessories",
+    "di-women-acc-all",
+    "di-women-sunglasses",
+    "di-women-optical-glasses",
+    "di-women-belts",
+    "di-women-jewelry",
+    "di-women-jewelry-all",
+    "di-women-earrings",
+    "di-women-necklaces",
+    "di-women-brooches",
+    "di-women-bracelets",
+    "di-women-rings",
+    "di-women-dior-tribales",
+    "di-women-hats-gloves",
+    "di-women-hair-accessories",
+    "di-women-silk-scarves-mitzah",
+    "di-women-scarves-shawls",
+    "di-women-beach-accessories",
+    "di-women-key-rings",
+}
+
 MEN_ACCISH = {
     "di-men-accessories",
     "di-men-acc-all",
@@ -288,11 +320,27 @@ LEAF_PREF = [
     "di-acc-bag-mitzah",
     "di-acc-bag-purse",
     "di-accessorize-bag",
+    "di-women-dior-tribales",
+    "di-women-rings",
+    "di-women-bracelets",
+    "di-women-brooches",
+    "di-women-necklaces",
+    "di-women-earrings",
+    "di-women-jewelry-all",
     "di-men-tech-accessories",
     "di-men-pouches",
     "di-men-long-wallets",
     "di-men-compact-wallets",
     "di-men-card-holders",
+    "di-women-key-rings",
+    "di-women-beach-accessories",
+    "di-women-scarves-shawls",
+    "di-women-silk-scarves-mitzah",
+    "di-women-hair-accessories",
+    "di-women-hats-gloves",
+    "di-women-belts",
+    "di-women-optical-glasses",
+    "di-women-sunglasses",
     "di-women-slg-tech",
     "di-women-pouches",
     "di-women-wallets",
@@ -338,11 +386,13 @@ LEAF_PREF = [
     "di-decor-all",
     "di-textile-all",
     "di-jewelry-all",
+    "di-women-jewelry-all",
     "di-timepieces-all",
     "di-bags-all",
     "di-men-bags-all",
     "di-men-slg-all",
     "di-women-slg-all",
+    "di-women-acc-all",
     "di-men-acc-all",
     "di-men-shoes-all",
     "di-women-rtw-all",
@@ -651,6 +701,13 @@ def translate(text: str) -> str:
     return ""
 
 
+def needs_korean_title(text: str | None) -> bool:
+    s = (text or "").strip()
+    if not s:
+        return True
+    return not has_hangul(s)
+
+
 def tags_for(collections: list[str], leaf: str) -> list[str]:
     tags = ["dior", "디올"]
     cols = collections + [leaf]
@@ -664,6 +721,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["luxury", "rtw", "ready-to-wear", "의류", "남성"]
     elif any(c in WOMEN_SLGISH for c in cols):
         tags += ["slg", "small leather goods", "악세서리", "여성", "wallet", "card holder"]
+    elif any(c in WOMEN_ACCISH for c in cols):
+        tags += ["accessories", "악세서리", "여성"]
     elif any(c in MEN_SLGISH for c in cols):
         tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
     elif any(c in MEN_ACCISH for c in cols):
@@ -997,12 +1056,12 @@ def main() -> None:
         p
         for p in out
         if not is_good_korean(p.get("descriptionKo") or "")
-        or not is_good_korean(p.get("nameKo") or "")
+        or needs_korean_title(p.get("nameKo"))
     ]
     print(f"translate remaining {len(bad)}", flush=True)
     for i, p in enumerate(bad, 1):
         row = by_raw[p["sku"]]
-        if not is_good_korean(p.get("nameKo") or ""):
+        if needs_korean_title(p.get("nameKo")):
             p["nameKo"] = translate(row.get("title") or p.get("name") or "") or p["nameKo"]
             time.sleep(0.8)
         ensure_official_english_name(p, row.get("title") or p.get("name"))

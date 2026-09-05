@@ -343,6 +343,73 @@ PARENT_COLS_JEWELRY = [
     "di-jewelry-timepieces",
 ]
 
+# Official Women's Fashion Jewellery leaves (Accessories → Dior → 여성용).
+WOMEN_JEWELRY_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-women-jewelry-all",
+        "slug": "jewellery",
+        "label": "All Fashion Jewelry",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/jewellery",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-earrings",
+        "slug": "earrings",
+        "label": "Earrings",
+        "labelKo": "이어링",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/earrings",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-necklaces",
+        "slug": "necklaces",
+        "label": "Necklaces",
+        "labelKo": "네크리스",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/necklaces",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-brooches",
+        "slug": "brooches",
+        "label": "Brooches",
+        "labelKo": "브로치",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/brooches",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-bracelets",
+        "slug": "bracelets",
+        "label": "Bracelets",
+        "labelKo": "브레이슬릿",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/bracelets",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-rings",
+        "slug": "rings",
+        "label": "Rings",
+        "labelKo": "링",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/rings",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-dior-tribales",
+        "slug": "dior-tribales",
+        "label": "Dior Tribales",
+        "labelKo": "Dior Tribales",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/fashion-jewellery/dior-tribales",
+        "stage": "2",
+    },
+]
+
+PARENT_COLS_WOMEN_JEWELRY = [
+    "dior",
+    "dior-accessories",
+    "di-women-accessories",
+    "di-women-jewelry",
+]
+
 # Official Dior Icons hub (Jewelry & Timepieces → Dior Icons). ~14 curated SKUs.
 ICONS_LEAVES: list[dict[str, str]] = [
     {
@@ -947,7 +1014,104 @@ WOMEN_SLG_LEAVES: list[dict[str, str]] = [
 PARENT_COLS_WOMEN_SLG = [
     "dior",
     "dior-accessories",
+    "di-women-accessories",
     "di-women-slg",
+]
+
+# Official Women's Accessories (Accessories → Dior → 여성용).
+# Hub: /fashion/womens-fashion/accessories/all-accessories.
+# Nested SLG remains under 스몰 레더 굿즈 (di-women-slg).
+# Stages:
+#   1 — eyewear / belts / hats / hair
+#   2 — scarves / beach / key rings
+#   3 — All Accessories gap fill
+WOMEN_ACCESSORIES_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-women-acc-all",
+        "slug": "all-accessories",
+        "label": "All Accessories",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/all-accessories",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-sunglasses",
+        "slug": "sunglasses",
+        "label": "Sunglasses and Glasses",
+        "labelKo": "선글라스",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/sunglasses",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-optical-glasses",
+        "slug": "optical-glasses",
+        "label": "Optical Glasses",
+        "labelKo": "옵티컬 안경",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/optical-glasses",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-belts",
+        "slug": "belts",
+        "label": "Belts",
+        "labelKo": "벨트",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/belts",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-hats-gloves",
+        "slug": "hats-gloves",
+        "label": "Hats & Gloves",
+        "labelKo": "모자 & 장갑",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/hats-gloves",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-hair-accessories",
+        "slug": "hair-accessories",
+        "label": "Hair Accessories",
+        "labelKo": "헤어 악세서리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/hair-accessories",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-silk-scarves-mitzah",
+        "slug": "silk-scarves-mitzah",
+        "label": "Silk Scarves & Mitzah",
+        "labelKo": "실크 스카프 & 미차",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/silk-scarves-mitzah",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-scarves-shawls",
+        "slug": "scarves-shawls",
+        "label": "Scarves & Shawls",
+        "labelKo": "스카프 & 쇼울",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/scarves-shawls",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-beach-accessories",
+        "slug": "beach-accessories",
+        "label": "Beach Accessories",
+        "labelKo": "비치 악세서리",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/beach-accessories",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-key-rings",
+        "slug": "key-rings-and-bag-charms",
+        "label": "Key Rings & Bag Charms",
+        "labelKo": "키링 & 백 참",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/accessories/key-rings-and-bag-charms",
+        "stage": "2",
+    },
+]
+
+PARENT_COLS_WOMEN_ACCESSORIES = [
+    "dior",
+    "dior-accessories",
+    "di-women-accessories",
 ]
 
 # Official Men's Accessories (Accessories → Dior → 남성용).
