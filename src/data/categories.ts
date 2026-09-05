@@ -900,6 +900,14 @@ export type SubcategoryId =
   | "di-men-loafers"
   | "di-men-lace-ups"
   | "di-men-boots"
+  | "di-women-shoes"
+  | "di-women-shoes-all"
+  | "di-women-pumps"
+  | "di-women-sandals"
+  | "di-women-loafers-flats"
+  | "di-women-ballerinas"
+  | "di-women-sneakers"
+  | "di-women-boots"
   | "di-men-accessories"
   | "di-men-acc-all"
   | "di-men-sunglasses"
@@ -1258,6 +1266,17 @@ export const DI_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
   "di-men-loafers",
   "di-men-lace-ups",
   "di-men-boots",
+];
+
+/** Dior women's shoes (official GB all-shoes PLPs). */
+export const DI_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "di-women-shoes-all",
+  "di-women-pumps",
+  "di-women-sandals",
+  "di-women-loafers-flats",
+  "di-women-ballerinas",
+  "di-women-sneakers",
+  "di-women-boots",
 ];
 
 /** Dior men's accessories (official GB all-accessories PLPs). */
@@ -2680,11 +2699,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     "dior-shoes",
     "di-men-shoes",
     ...DI_MEN_SHOES_LEAF_IDS,
+    "di-women-shoes",
+    ...DI_WOMEN_SHOES_LEAF_IDS,
   ],
   "dior-shoes": [
     "dior-shoes",
     "di-men-shoes",
     ...DI_MEN_SHOES_LEAF_IDS,
+    "di-women-shoes",
+    ...DI_WOMEN_SHOES_LEAF_IDS,
   ],
   "di-men-shoes": ["di-men-shoes", ...DI_MEN_SHOES_LEAF_IDS],
   "di-men-shoes-all": ["di-men-shoes-all"],
@@ -2693,6 +2716,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "di-men-loafers": ["di-men-loafers"],
   "di-men-lace-ups": ["di-men-lace-ups"],
   "di-men-boots": ["di-men-boots"],
+  "di-women-shoes": ["di-women-shoes", ...DI_WOMEN_SHOES_LEAF_IDS],
+  "di-women-shoes-all": ["di-women-shoes-all"],
+  "di-women-pumps": ["di-women-pumps"],
+  "di-women-sandals": ["di-women-sandals"],
+  "di-women-loafers-flats": ["di-women-loafers-flats"],
+  "di-women-ballerinas": ["di-women-ballerinas"],
+  "di-women-sneakers": ["di-women-sneakers"],
+  "di-women-boots": ["di-women-boots"],
   "dior-accessories": [
     "dior-accessories",
     "di-home",
@@ -5390,6 +5421,49 @@ export const navCategories: NavCategory[] = [
                 id: "di-men-boots",
                 labelKo: "부츠 & 앵클부츠",
                 href: "/shop?category=shoes&sub=di-men-boots",
+              },
+            ],
+          },
+          {
+            id: "di-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=di-women-shoes",
+            navLeaf: true,
+            children: [
+              {
+                id: "di-women-shoes-all",
+                labelKo: "전체",
+                href: "/shop?category=shoes&sub=di-women-shoes-all",
+              },
+              {
+                id: "di-women-pumps",
+                labelKo: "펌프스",
+                href: "/shop?category=shoes&sub=di-women-pumps",
+              },
+              {
+                id: "di-women-sandals",
+                labelKo: "샌들",
+                href: "/shop?category=shoes&sub=di-women-sandals",
+              },
+              {
+                id: "di-women-loafers-flats",
+                labelKo: "로퍼 & 플랫 슈즈",
+                href: "/shop?category=shoes&sub=di-women-loafers-flats",
+              },
+              {
+                id: "di-women-ballerinas",
+                labelKo: "발레리나",
+                href: "/shop?category=shoes&sub=di-women-ballerinas",
+              },
+              {
+                id: "di-women-sneakers",
+                labelKo: "스니커즈",
+                href: "/shop?category=shoes&sub=di-women-sneakers",
+              },
+              {
+                id: "di-women-boots",
+                labelKo: "부츠 & 로우부츠",
+                href: "/shop?category=shoes&sub=di-women-boots",
               },
             ],
           },

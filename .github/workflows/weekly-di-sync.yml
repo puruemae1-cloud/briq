@@ -1,0 +1,45 @@
+name: Weekly Dior sync
+
+on:
+  schedule:
+    # Every Friday 12:00 UTC (13:00 UK / BST) — after Chanel
+    - cron: "0 12 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-di-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1440
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: |
+          pip install -r scripts/requirements-images.txt || true
+          pip install playwright
+
+      - name: Install Playwright WebKit
+        run: python3 -m playwright install --with-deps webkit
+
+      - name: Run Dior weekly sync
+        env:
+          PAUSE_SEC: "30"
+        run: |
+          chmod +x scripts/run-di-weekly-sync.sh
+          scripts/run-di-weekly-sync.sh

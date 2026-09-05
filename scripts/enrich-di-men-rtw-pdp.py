@@ -189,6 +189,7 @@ _PHRASE_KO = {
     "100% cotton 120/2": "100% 면 120/2",
     "Allover Dior Oblique motif on the reverse side": "리버서블 톤온톤 Dior Oblique 모티프",
     "52% viscose and 48% cotton": "52% 비스코스, 48% 면",
+    "Tonal Dior signature on the side": "측면 톤온톤 Dior 시그니처",
 }
 
 

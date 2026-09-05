@@ -24,6 +24,7 @@ from di_common import (  # noqa: E402
     ALGOLIA_MERCH_API_KEY,
     ALGOLIA_MERCH_APP_ID,
     ALGOLIA_MERCH_INDEX_KO,
+    algolia_merch_hits_by_codes,
     algolia_variant_gbp,
     di_price_anomalies,
     dior_code_to_object_id,
@@ -34,6 +35,7 @@ from di_common import (  # noqa: E402
 from di_size_charts import (  # noqa: E402
     size_chart_for_di_mens_rtw,
     size_chart_for_di_mens_shoes,
+    size_chart_for_di_womens_shoes,
     size_chart_for_di_womens_rtw,
 )
 from ko_qa import en_ratio, ensure_official_english_name, has_hangul, is_good_korean  # noqa: E402
@@ -56,6 +58,7 @@ RAW_PATHS = [
     ROOT / "src/data/di/di-women-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-accessories-catalog-raw.json",
     ROOT / "src/data/di/di-men-shoes-catalog-raw.json",
+    ROOT / "src/data/di/di-women-shoes-catalog-raw.json",
     ROOT / "src/data/di/di-men-essentials-catalog-raw.json",
 ]
 CAT = ROOT / "src/data/di/di-catalog.json"
@@ -270,6 +273,20 @@ MEN_SHOESISH = {
     "di-men-boots",
 }
 
+WOMEN_SHOESISH = {
+    "dior-shoes",
+    "di-women-shoes",
+    "di-women-shoes-all",
+    "di-women-pumps",
+    "di-women-sandals",
+    "di-women-loafers-flats",
+    "di-women-ballerinas",
+    "di-women-sneakers",
+    "di-women-boots",
+}
+
+SHOESISH = MEN_SHOESISH | WOMEN_SHOESISH
+
 # Prefer specific Maison / jewelry leaves over *-all when picking subcategory.
 LEAF_PREF = [
     "di-plates-bowls",
@@ -363,6 +380,12 @@ LEAF_PREF = [
     "di-men-loafers",
     "di-men-lace-ups",
     "di-men-boots",
+    "di-women-pumps",
+    "di-women-sandals",
+    "di-women-loafers-flats",
+    "di-women-ballerinas",
+    "di-women-sneakers",
+    "di-women-boots",
     "di-women-homewear-lingerie",
     "di-women-swimsuits",
     "di-women-tshirts",
@@ -395,6 +418,7 @@ LEAF_PREF = [
     "di-women-acc-all",
     "di-men-acc-all",
     "di-men-shoes-all",
+    "di-women-shoes-all",
     "di-women-rtw-all",
 ]
 _LEAF_RANK = {lid: i for i, lid in enumerate(LEAF_PREF)}
@@ -663,10 +687,29 @@ def fetch_ko_one(code: str) -> dict | None:
     )
     with urllib.request.urlopen(req, timeout=30) as r:
         hits = json.loads(r.read())["results"][0].get("hits") or []
+    ko_hit = None
     for h in hits:
         if h.get("objectID") == oid:
-            return h
-    return None
+            ko_hit = h
+            break
+    merch_hit = None
+    try:
+        merch_hit = algolia_merch_hits_by_codes([code]).get(code)
+    except Exception:
+        merch_hit = None
+    if merch_hit and ko_hit:
+        merged = dict(merch_hit)
+        merged.update(ko_hit)
+        if not isinstance(merged.get("variants"), list) or not merged.get("variants"):
+            merged["variants"] = merch_hit.get("variants") or []
+        if not merged.get("characteristics"):
+            merged["characteristics"] = merch_hit.get("characteristics")
+        if not merged.get("material"):
+            merged["material"] = merch_hit.get("material")
+        if not merged.get("madein"):
+            merged["madein"] = merch_hit.get("madein")
+        return merged
+    return ko_hit or merch_hit
 
 
 def translate(text: str) -> str:
@@ -727,6 +770,8 @@ def tags_for(collections: list[str], leaf: str) -> list[str]:
         tags += ["slg", "small leather goods", "악세서리", "남성", "wallet", "card holder"]
     elif any(c in MEN_ACCISH for c in cols):
         tags += ["accessories", "악세서리", "남성"]
+    elif any(c in WOMEN_SHOESISH for c in cols):
+        tags += ["shoes", "슈즈", "여성", "footwear"]
     elif any(c in MEN_SHOESISH for c in cols):
         tags += ["shoes", "슈즈", "남성", "sneakers", "footwear"]
     elif any(c in JEWELRYISH for c in cols):
@@ -758,7 +803,7 @@ def _category_for(collections: list[str], leaf: str, fallback: str = "accessorie
         return "watches"
     if any(c in BAGISH for c in cols):
         return "bags"
-    if any(c in MEN_SHOESISH for c in cols):
+    if any(c in SHOESISH for c in cols):
         return "shoes"
     if any(c in RTWISH for c in cols):
         return "luxury"
@@ -833,6 +878,8 @@ def refresh_existing(
         )
         if chart:
             p["sizeChart"] = chart
+    elif any(c in WOMEN_SHOESISH for c in collections + [leaf]):
+        p["sizeChart"] = size_chart_for_di_womens_shoes()
     elif any(c in MEN_SHOESISH for c in collections + [leaf]):
         p["sizeChart"] = size_chart_for_di_mens_shoes()
     return p
@@ -975,7 +1022,7 @@ def build_new(
         "storySections": story_sections_for_di(
             description_ko or title_ko,
             images,
-            rtw=any(c in RTWISH or c in MEN_SHOESISH for c in collections + [leaf]),
+            rtw=any(c in RTWISH or c in SHOESISH for c in collections + [leaf]),
         ),
     }
     ensure_official_english_name(product, title_en)
@@ -998,6 +1045,8 @@ def build_new(
         )
         if chart:
             product["sizeChart"] = chart
+    elif any(c in WOMEN_SHOESISH for c in collections + [leaf]):
+        product["sizeChart"] = size_chart_for_di_womens_shoes()
     elif any(c in MEN_SHOESISH for c in collections + [leaf]):
         product["sizeChart"] = size_chart_for_di_mens_shoes()
     normalize_di_product_prices(product, gbp_f if gbp_f else None)

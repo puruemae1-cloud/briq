@@ -1304,6 +1304,77 @@ PARENT_COLS_MEN_SHOES = [
     "di-men-shoes",
 ]
 
+# Official Women's Shoes (Shoes → Dior → 여성용).
+# Hub: /fashion/womens-fashion/shoes/all-shoes (~402 SKUs).
+# Stages:
+#   1 — pumps + sandals + loafers/flat shoes
+#   2 — ballerinas + sneakers + boots
+#   3 — all-shoes gap fill
+WOMEN_SHOES_LEAVES: list[dict[str, str]] = [
+    {
+        "id": "di-women-shoes-all",
+        "slug": "all-shoes",
+        "label": "All Shoes",
+        "labelKo": "전체",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/all-shoes",
+        "stage": "3",
+    },
+    {
+        "id": "di-women-pumps",
+        "slug": "pumps",
+        "label": "Pumps",
+        "labelKo": "펌프스",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/pumps",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-sandals",
+        "slug": "sandals",
+        "label": "Sandals",
+        "labelKo": "샌들",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/sandals",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-loafers-flats",
+        "slug": "loafers-and-flat-shoes",
+        "label": "Loafers & Flat Shoes",
+        "labelKo": "로퍼 & 플랫 슈즈",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/loafers-and-flat-shoes",
+        "stage": "1",
+    },
+    {
+        "id": "di-women-ballerinas",
+        "slug": "ballerinas",
+        "label": "Ballerinas",
+        "labelKo": "발레리나",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/ballerinas",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-sneakers",
+        "slug": "sneakers",
+        "label": "Sneakers",
+        "labelKo": "스니커즈",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/sneakers",
+        "stage": "2",
+    },
+    {
+        "id": "di-women-boots",
+        "slug": "boots-low-boots",
+        "label": "Boots & Low Boots",
+        "labelKo": "부츠 & 로우부츠",
+        "url": f"{BASE}/{LANG}/fashion/womens-fashion/shoes/boots-low-boots",
+        "stage": "2",
+    },
+]
+
+PARENT_COLS_WOMEN_SHOES = [
+    "dior",
+    "dior-shoes",
+    "di-women-shoes",
+]
+
 # Curated mixed hub: Men's Fashion → Dior Essentials
 MEN_ESSENTIALS_HUB = (
     f"{BASE}/{LANG}/fashion/mens-fashion/dior-essentials"
