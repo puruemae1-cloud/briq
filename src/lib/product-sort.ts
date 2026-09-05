@@ -32,15 +32,24 @@ function registeredAtMs(product: Product): number {
   return Number.isFinite(ms) ? ms : 0;
 }
 
+function updatedAtMs(product: Product): number {
+  const raw = product.updatedAt || product.registeredAt;
+  if (!raw) return 0;
+  const ms = Date.parse(raw);
+  return Number.isFinite(ms) ? ms : 0;
+}
+
 /** In-stock first (0), sold-out last (1) — applied to every PLP / collection sort. */
 export function stockSortRank(product: Product): number {
   return isProductInStock(product) ? 0 : 1;
 }
 
-/** Newest first by `registeredAt` (ISO). Missing dates sort last. */
+/** Newest first by `updatedAt ?? registeredAt` (ISO). Missing dates sort last. */
 export function compareProductsByNewest(a: Product, b: Product): number {
-  const diff = registeredAtMs(b) - registeredAtMs(a);
+  const diff = updatedAtMs(b) - updatedAtMs(a);
   if (diff !== 0) return diff;
+  const registeredDiff = registeredAtMs(b) - registeredAtMs(a);
+  if (registeredDiff !== 0) return registeredDiff;
   return a.id.localeCompare(b.id);
 }
 
@@ -117,11 +126,11 @@ export function getNewArrivalsProducts(list: Product[]): Product[] {
 }
 
 /**
- * Homepage lookbook rails — newest catalogue registration first.
+ * Homepage lookbook rails — newest catalogue update first.
  * Prefers in-stock styles so OOS newest items don't occupy the rail.
  * Matches each rail's "전체 보기" (`sort=new`) and weekly brand sync stamps.
- * `registeredAt` is Briq catalogue registration time (set when a SKU is first
- * imported); rebuilds must preserve it so newly added brands stay on top.
+ * `updatedAt` lets weekly syncs refresh homepage order without losing the
+ * original `registeredAt` chronology for first-import history.
  */
 export function getHomepageRailProducts(
   list: Product[],

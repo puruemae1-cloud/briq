@@ -181,6 +181,13 @@ export type Product = {
    */
   registeredAt?: string;
   /**
+   * Most recent catalogue update time on Briq (ISO).
+   * Weekly syncs should stamp this when a product row is rebuilt so homepage
+   * rails can surface the latest refreshed products without losing the original
+   * registration chronology.
+   */
+  updatedAt?: string;
+  /**
    * 100 Collection / homepage edit bucket.
    * Set when registering: "signature" | "bestseller" | "new".
    * If omitted, inferred from price / badge / recency.

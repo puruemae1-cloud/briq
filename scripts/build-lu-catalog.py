@@ -441,6 +441,7 @@ def main() -> None:
             f"    sku: {js_str(variants_out[0]['sku'])},",
             f"    sourceUrl: {js_str(source_url)},",
             f"    registeredAt: {js_str(registered)},",
+            f"    updatedAt: {js_str((batch_start - timedelta(seconds=idx)).strftime('%Y-%m-%dT%H:%M:%S.000Z'))},",
             '    editTier: "signature",',
             f"    storySections: {js_json(story)},",
             f"    featuresKo: {js_json(features)},",
