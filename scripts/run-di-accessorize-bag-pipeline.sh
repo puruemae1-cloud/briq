@@ -39,6 +39,7 @@ fi
 
 run_step RECLASS python3 scripts/reclassify-di-accessorize-bag.py
 run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
+run_step IMAGES python3 scripts/check-di-image-integrity.py
 
 python3 - <<'PY'
 from pathlib import Path

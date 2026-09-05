@@ -64,6 +64,7 @@ run_step MERGE python3 scripts/merge-di-catalog-ko.py
 run_step ENRICH python3 scripts/enrich-di-women-jewelry-pdp.py
 run_step PRICES python3 scripts/fix-di-catalog-prices.py --check
 run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
+run_step IMAGES python3 scripts/check-di-image-integrity.py
 
 run_step TS python3 - <<'PY'
 from pathlib import Path

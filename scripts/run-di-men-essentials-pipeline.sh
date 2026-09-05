@@ -27,6 +27,10 @@ echo "=== KO ==="
 python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-essentials-ko.log
 echo "EXIT_KO:$?"
 
+echo "=== IMAGES ==="
+python3 scripts/check-di-image-integrity.py | tee /tmp/di-men-essentials-images.log
+echo "EXIT_IMAGES:$?"
+
 python3 - <<'PY'
 from pathlib import Path
 p = Path("src/data/di/di-catalog.ts")

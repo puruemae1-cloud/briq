@@ -24,12 +24,25 @@ import type {  Product, ProductVariant  } from "@/data/product-types";
 import { bannerMediaVersion } from "@/lib/banner-media-version";
 import { productMediaVersion } from "@/lib/product-media-version";
 
-/** Primary CDN for Vercel (GitHub `product-images` tag). */
+/** Primary CDN for Vercel (`product-images` tag mirrored by jsDelivr). */
 export const MEDIA_ORIGIN_PRIMARY =
-  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
-/** Secondary CDN if primary fails (jsDelivr mirrors the same tag). */
-export const MEDIA_ORIGIN_FALLBACK =
   "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
+/** Secondary CDN if primary fails (raw GitHub tag URL). */
+export const MEDIA_ORIGIN_FALLBACK =
+  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
+
+function preferredMediaOrigin(origin: string): string {
+  const clean = origin.replace(/\/$/, "");
+  if (!clean) return clean;
+  if (
+    clean.includes(
+      "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
+    )
+  ) {
+    return MEDIA_ORIGIN_PRIMARY;
+  }
+  return clean;
+}
 
 /**
  * On Vercel, heavy `/products/*` and `/banners/*` assets are not shipped in the
@@ -42,7 +55,7 @@ export function mediaUrl(src: string | undefined | null): string {
   if (/^https?:\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) {
     return src;
   }
-  const origin = (process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "").replace(/\/$/, "");
+  const origin = preferredMediaOrigin(process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "");
   if (!origin) return src;
   if (src.startsWith("/products/") || src.startsWith("/banners/")) {
     let url = `${origin}${src}`;
@@ -82,10 +95,10 @@ export function mediaUrlFallback(src: string | undefined | null): string {
     return "";
   }
   if (!src.startsWith("/products/") && !src.startsWith("/banners/")) return "";
-  const origin = (process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "").replace(/\/$/, "");
+  const origin = preferredMediaOrigin(process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "");
   if (!origin) return "";
   const alt =
-    origin.includes("jsdelivr") ? MEDIA_ORIGIN_PRIMARY : MEDIA_ORIGIN_FALLBACK;
+    origin.includes("jsdelivr") ? MEDIA_ORIGIN_FALLBACK : MEDIA_ORIGIN_PRIMARY;
   let url = `${alt}${src}`;
   if (src.startsWith("/banners/")) {
     const v = bannerMediaVersion();

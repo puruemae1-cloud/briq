@@ -33,6 +33,10 @@ echo "=== KO ==="
 python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-rtw-ko.log
 echo "EXIT_KO:$?"
 
+echo "=== IMAGES ==="
+python3 scripts/check-di-image-integrity.py | tee /tmp/di-men-rtw-images.log
+echo "EXIT_IMAGES:$?"
+
 # thin ts guard
 python3 - <<'PY'
 from pathlib import Path

@@ -8,7 +8,7 @@ import {
   type TouchEvent,
 } from "react";
 import { ProductImage } from "@/components/ProductImage";
-import { mediaUrl } from "@/lib/product-image";
+import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 
 const SWIPE_THRESHOLD = 40;
 
@@ -41,6 +41,12 @@ export function ProductGallery({
 
   const safeIndex = list.length ? Math.min(active, list.length - 1) : 0;
   const src = list[safeIndex] ?? list[0];
+  const resolvedSrc = mediaUrl(src);
+  const [lightboxSrc, setLightboxSrc] = useState(resolvedSrc);
+
+  useEffect(() => {
+    setLightboxSrc(resolvedSrc);
+  }, [resolvedSrc]);
 
   const go = useCallback(
     (dir: -1 | 1) => {
@@ -241,8 +247,14 @@ export function ProductGallery({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="product-lightbox__img"
-            src={mediaUrl(src)}
+            src={lightboxSrc}
             alt={alt}
+            onError={() => {
+              const altUrl = mediaUrlFallback(resolvedSrc);
+              if (altUrl && altUrl !== lightboxSrc) {
+                setLightboxSrc(altUrl);
+              }
+            }}
             onClick={(e) => e.stopPropagation()}
             draggable={false}
             referrerPolicy="no-referrer"
