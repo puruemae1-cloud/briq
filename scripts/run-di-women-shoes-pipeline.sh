@@ -63,7 +63,32 @@ run_step() {
 run_step MERGE python3 scripts/merge-di-catalog-ko.py
 run_step ENRICH python3 scripts/enrich-di-women-shoes-pdp.py --translate
 run_step PRICES python3 scripts/fix-di-catalog-prices.py --check
-run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
+run_step KO python3 - <<'PY'
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path.cwd()
+sys.path.insert(0, str(ROOT / "scripts"))
+from ko_qa import MAX_KO_EN_RATIO, check_brand  # type: ignore
+
+raw = json.loads((ROOT / "src/data/di/di-women-shoes-catalog-raw.json").read_text())
+ids = {str(row.get("id", "")).strip() for row in (raw.get("products") or []) if row.get("id")}
+bad = check_brand("di", max_ratio=MAX_KO_EN_RATIO, ids=ids)
+print(f"di: bad={len(bad)} (ids={len(ids)})", flush=True)
+for brand, pid, field, ratio, snippet in bad[:40]:
+    print(f"  {brand} {pid} {field} en_ratio={ratio:.2f} {snippet}", flush=True)
+if len(bad) > 40:
+    print(f"  … +{len(bad) - 40} more", flush=True)
+if bad:
+    print(
+        f"Korean QA failed ({len(bad)} fields). "
+        "Translate all English PDP copy to natural Korean before shipping.",
+        flush=True,
+    )
+    raise SystemExit(1)
+print("OK — checked Korean PDP fields look good.", flush=True)
+PY
 run_step IMAGES python3 scripts/check-di-image-integrity.py
 
 run_step TS python3 - <<'PY'
