@@ -28,5 +28,7 @@ run "MEN_SLG" bash scripts/run-di-men-slg-pipeline.sh
 run "MEN_ACCESSORIES" bash scripts/run-di-men-accessories-pipeline.sh
 run "MEN_ESSENTIALS" bash scripts/run-di-men-essentials-pipeline.sh
 run "MEN_BAGS" bash scripts/run-di-bags-men-pipeline.sh
+run "POST_FIX_RTW" python3 scripts/enrich-di-men-rtw-pdp.py --translate
+run "POST_FIX_WOMEN_RTW" python3 scripts/enrich-di-women-rtw-pdp.py --translate
 
 echo "=== DIOR_WEEKLY_DONE $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="

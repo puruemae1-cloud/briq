@@ -1,9 +1,9 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { BannerImage } from "@/components/BannerImage";
 import { BrandWordmark } from "@/components/BrandWordmark";
 import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
+import { ShopNavLink } from "@/components/ShopNavLink";
 import { ShopProductGrid } from "@/components/ShopProductGrid";
 import {
   categoryLabel,
@@ -268,32 +268,34 @@ export default async function ShopPage({ searchParams }: Props) {
         <div className="shop-browse__layout">
           <div className="shop-browse__main">
             <div className="category-row">
-              <Link
+              <ShopNavLink
                 href="/shop"
                 scroll={false}
+                replace
                 className={`chip ${category === "all" && !sub ? "is-active" : ""}`}
               >
                 Shop (전체상품)
-              </Link>
+              </ShopNavLink>
               {navCategories.map((c) => (
-                <Link
+                <ShopNavLink
                   key={c.id}
                   href={buildShopHref({
                     category: c.id,
                     sort,
                   })}
                   scroll={false}
+                  replace
                   className={`chip ${category === c.id && !sub ? "is-active" : ""}`}
                 >
                   {c.labelKo}
-                </Link>
+                </ShopNavLink>
               ))}
             </div>
 
             {current?.children ? (
               <div className="category-row category-row--sub">
                 {sortNavChildrenByBrandOrder(current.children).map((child) => (
-                  <Link
+                  <ShopNavLink
                     key={child.id}
                     href={buildShopHref({
                       category,
@@ -301,12 +303,13 @@ export default async function ShopPage({ searchParams }: Props) {
                       sort,
                     })}
                     scroll={false}
+                    replace
                     className={`chip chip--sub ${
                       sub === child.id || pathIds.has(child.id) ? "is-active" : ""
                     }`}
                   >
                     {child.labelKo}
-                  </Link>
+                  </ShopNavLink>
                 ))}
               </div>
             ) : null}
@@ -329,7 +332,7 @@ export default async function ShopPage({ searchParams }: Props) {
                   ) : null}
                   <div className="category-row category-row--sub category-row--nested category-row--nest-chips">
                     {row.map((nested) => (
-                      <Link
+                      <ShopNavLink
                         key={nested.id}
                         href={buildShopHref({
                           category,
@@ -337,10 +340,11 @@ export default async function ShopPage({ searchParams }: Props) {
                           sort,
                         })}
                         scroll={false}
+                        replace
                         className={chipClass(nested, sub, pathIds)}
                       >
                         {nested.labelKo}
-                      </Link>
+                      </ShopNavLink>
                     ))}
                   </div>
                 </div>
@@ -357,17 +361,18 @@ export default async function ShopPage({ searchParams }: Props) {
               )}
               <div className="shop-browse__sort" role="list">
                 {PRODUCT_SORTS.map((option) => (
-                  <Link
+                  <ShopNavLink
                     key={option.id}
                     href={buildShopHref({ ...sortBase, sort: option.id })}
                     scroll={false}
+                    replace
                     role="listitem"
                     className={`shop-browse__sort-btn ${
                       sort === option.id ? "is-active" : ""
                     }`}
                   >
                     {option.label}
-                  </Link>
+                  </ShopNavLink>
                 ))}
               </div>
             </div>

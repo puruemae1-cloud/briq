@@ -59,6 +59,10 @@ export type ProductVariant = {
   gcCollections?: SubcategoryId[];
   /** Chanel PLP memberships. */
   chCollections?: SubcategoryId[];
+  /** Celine PLP memberships. */
+  ceCollections?: SubcategoryId[];
+  /** Vivienne Westwood PLP memberships. */
+  vwCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */
@@ -124,6 +128,10 @@ export type Product = {
   gcCollections?: SubcategoryId[];
   /** Chanel Ready-to-Wear PLP memberships. */
   chCollections?: SubcategoryId[];
+  /** Celine PLP memberships. */
+  ceCollections?: SubcategoryId[];
+  /** Vivienne Westwood PLP memberships. */
+  vwCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */

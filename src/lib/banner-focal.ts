@@ -57,6 +57,36 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Accessories jewelry — Rose des Vents necklace + face */
   "brand-dior-accessories.jpg": "66% 34%",
   "brand-dior-accessories.webp": "66% 34%",
+  /* Celine Hiver 2026 accessories creative — centered face / glasses */
+  "brand-celine-accessories.jpg": "50% 43%",
+  "brand-celine-accessories.webp": "50% 43%",
+  /* Celine Hiver 2026 RTW creative — keep face / shoulders centered */
+  "brand-celine-signature.jpg": "50% 36%",
+  "brand-celine-signature.webp": "50% 36%",
+  /* Celine handbags creative — keep Triomphe hardware centred */
+  "brand-celine-bags.jpg": "50.5% 54%",
+  "brand-celine-bags.webp": "50.5% 54%",
+  /* Celine Winter 2026 shoes creative — keep both shoes framed */
+  "brand-celine-shoes.jpg": "50% 53%",
+  "brand-celine-shoes.webp": "50% 53%",
+  /* Vivienne Westwood x George Cox creative — keep both shoes centered */
+  "brand-vivienne-westwood-shoes.jpg": "50% 47%",
+  "brand-vivienne-westwood-shoes.webp": "50% 47%",
+  /* Vivienne Westwood homepage AW2728 bags — keep both bag silhouettes centered */
+  "brand-vivienne-westwood-bags.jpg": "50% 56%",
+  "brand-vivienne-westwood-bags.webp": "50% 56%",
+  /* Vivienne Westwood Spring Cherubs — keep face and upper torso in frame */
+  "brand-vivienne-westwood-womens-rtw.jpg": "50% 23%",
+  "brand-vivienne-westwood-womens-rtw.webp": "50% 23%",
+  /* Vivienne Westwood mens RTW — keep face and jacket torso in frame */
+  "brand-vivienne-westwood-mens-rtw.jpg": "50% 24%",
+  "brand-vivienne-westwood-mens-rtw.webp": "50% 24%",
+  /* Vivienne Westwood Tavistock watch — keep the watch centered in frame */
+  "brand-vivienne-westwood-watches.jpg": "43% 50%",
+  "brand-vivienne-westwood-watches.webp": "43% 50%",
+  /* Vivienne Westwood homepage accessories — keep the lower jewelry detail visible */
+  "brand-vivienne-westwood-accessories.jpg": "52% 60%",
+  "brand-vivienne-westwood-accessories.webp": "52% 60%",
 };
 
 /**

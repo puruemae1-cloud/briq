@@ -18,6 +18,7 @@ export const SEO_KEYWORDS = [
   "영국 명품",
   "명품 셀렉트숍",
   "샤넬",
+  "셀린느",
   "구찌",
   "버버리",
   "프라다",
@@ -84,6 +85,24 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     keywords: ["구찌", "Gucci", "구찌 직구", "구찌 의류"],
     blurb:
       "구찌 레디투웨어·가방·슈즈·악세서리를 Briq에서 영국 셀렉션 기준으로 만나보세요.",
+  },
+  celine: {
+    slug: "celine",
+    nameEn: "Celine",
+    nameKo: "셀린느",
+    shopHref: "/shop?category=luxury&sub=celine",
+    keywords: ["셀린느", "Celine", "셀린느 남성", "셀린느 여성", "셀린느 직구"],
+    blurb:
+      "셀린느 여성·남성 레디투웨어·가방·슈즈·악세서리를 Briq 영국 셀렉션으로 만나보세요.",
+  },
+  "vivienne-westwood": {
+    slug: "vivienne-westwood",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안 웨스트우드",
+    shopHref: "/shop?category=luxury&sub=vivienne-westwood",
+    keywords: ["비비안 웨스트우드", "Vivienne Westwood", "VW", "비비안 직구"],
+    blurb:
+      "비비안 웨스트우드 의류·가방·슈즈·주얼리·워치를 Briq 영국 셀렉션으로 만나보세요.",
   },
   prada: {
     slug: "prada",

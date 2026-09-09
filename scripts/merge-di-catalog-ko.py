@@ -744,11 +744,155 @@ def translate(text: str) -> str:
     return ""
 
 
+TITLE_PHRASE_KO = {
+    "Book:": "도서:",
+    "Set of Three Scented Mini Candles": "센티드 미니 캔들 3개 세트",
+    "Dioriviera": "디올리비에라",
+    "Lady Dior": "레이디 디올",
+    "DiorTravel": "디올트래블",
+    "Walk'n'Dior": "워크앤디올",
+    "J'Adior": "J'Adior",
+    "Dior Cœur": "디올 쿠르",
+    "Dior Chrono": "디올 크로노",
+    "Diorly": "디올리",
+    "D-Quest": "D-Quest",
+    "D-Town": "D-Town",
+    "Belle Dior": "벨 디올",
+    "Dior Flora": "디올 플로라",
+    "Dior Nymphéas": "디올 님페아",
+    "Dior Bloom": "디올 블룸",
+    "Dior Qixi": "디올 칠석",
+    "Dior Dentelle": "디올 당텔",
+    "Dior Aurore": "디올 오로르",
+    "Dior Palais": "디올 팔레",
+    "Dior Ride": "디올 라이드",
+    "Dior Black Suit": "디올 블랙수트",
+    "DiorBlackSuit": "디올 블랙수트",
+    "DiorTag": "디올태그",
+    "Dior Timeless": "디올 타임리스",
+    "Dior Or": "디올 오르",
+    "Dio(r)evolution": "디오(레볼루션)",
+    "Dior Infini": "디올 인피니",
+    "Dior Avenue": "디올 애비뉴",
+    "Inside Dior Avenue": "인사이드 디올 애비뉴",
+    "Dior Treasures": "디올 트레저",
+    "Dior Infini Tartan": "디올 인피니 타탄",
+    "Diortwin": "디올트윈",
+    "Dior Jardin": "디올 자르댕",
+    "Voyageur": "보야주르",
+    "Sun Stripes": "선 스트라이프",
+    "Heeled Thong Sandal": "힐드 통 샌들",
+    "Heeled Slingback Sandal": "힐드 슬링백 샌들",
+    "Heeled Sandal": "힐드 샌들",
+    "Heeled Slide": "힐드 슬라이드",
+    "Wedge Sandal": "웨지 샌들",
+    "Slingback Sandal": "슬링백 샌들",
+    "Slingback Pump": "슬링백 펌프스",
+    "Pump": "펌프스",
+    "Ballet Flat": "발레 플랫",
+    "Triangle Scarf": "트라이앵글 스카프",
+    "Denim Shawl": "데님 숄",
+    "Reversible Scarf": "리버서블 스카프",
+    "Platform Sneaker": "플랫폼 스니커즈",
+    "Platform Sandal": "플랫폼 샌들",
+    "Sneaker": "스니커즈",
+    "Swim Shorts": "스윔 쇼츠",
+    "T-Shirt": "티셔츠",
+    "Windbreaker": "윈드브레이커",
+    "Jacket": "재킷",
+    "Shirt": "셔츠",
+    "Pants": "팬츠",
+    "Shorts": "쇼츠",
+    "Sarong": "사롱",
+    "Passport Cover": "패스포트 커버",
+    "Coin Purse": "코인 퍼스",
+    "Slim Wallet": "슬림 월렛",
+    "Long Wallet": "롱 월렛",
+    "Wallet": "월렛",
+    "Zipped Pouch": "지퍼 파우치",
+    "Pouch": "파우치",
+    "Travel Kit": "트래블 키트",
+    "Zipped Key Case": "지퍼 키 케이스",
+    "Belt": "벨트",
+    "Bucket Hat": "버킷 햇",
+    "Large Brim Hat": "라지 브림 햇",
+    "Small Brim Hat": "스몰 브림 햇",
+    "Slide": "슬라이드",
+    "Square Scarf": "스퀘어 스카프",
+    "Chelsea Boot": "첼시 부츠",
+    "Heeled Boot": "힐드 부츠",
+    "Ankle Boot": "앵클 부츠",
+    "Mule": "뮬",
+    "Loafer": "로퍼",
+    "Derby shoe": "더비 슈즈",
+    "Oxford Shoe": "옥스퍼드 슈즈",
+    "Cloche": "클로슈",
+    "Visor": "바이저",
+    "Mitzah": "미차",
+    "Pumps": "펌프스",
+    "Sandals": "샌들",
+    "Sneakers": "스니커즈",
+    "Bio-Acetate": "바이오 아세테이트",
+    "BioAcetate": "바이오 아세테이트",
+    "Bag Charm": "백 참",
+    "Earrings": "이어링",
+    "Bangle": "뱅글",
+    "Bracelet": "브레이슬릿",
+    "Scented Candle": "센티드 캔들",
+    "Portable Lantern": "포터블 랜턴",
+}
+
+
+def translate_title(text: str) -> str:
+    s = re.sub(r"\s+", " ", (text or "").strip())
+    if not s or has_hangul(s):
+        return s
+    out = s
+    for en in sorted(TITLE_PHRASE_KO, key=len, reverse=True):
+        out = out.replace(en, TITLE_PHRASE_KO[en])
+    if has_hangul(out):
+        return out
+    ko = translate(s)
+    if ko and is_good_korean(ko):
+        return ko
+    return ko or s
+
+
 def needs_korean_title(text: str | None) -> bool:
     s = (text or "").strip()
     if not s:
         return True
     return not has_hangul(s)
+
+
+def needs_korean_text(text: str | None) -> bool:
+    s = (text or "").strip()
+    if not s:
+        return True
+    return not is_good_korean(s)
+
+
+def translated_color_label(label: str | None) -> str:
+    s = (label or "").strip()
+    if not s:
+        return "기본"
+    if has_hangul(s):
+        return s
+    ko = translate(s) or s
+    time.sleep(0.3)
+    return ko.strip() or s
+
+
+def di_variant_sort_key(size: str | None) -> tuple:
+    s = str(size or "").strip()
+    m = re.search(r"(\d+(?:\.\d+)?)", s)
+    if m:
+        return (0, float(m.group(1)), s)
+    order = ["XXXS", "XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "4XL"]
+    su = s.upper()
+    if su in order:
+        return (1, order.index(su), s)
+    return (2, s)
 
 
 def tags_for(collections: list[str], leaf: str) -> list[str]:
@@ -855,8 +999,15 @@ def refresh_existing(
             vv["price"] = price
             vv["diCollections"] = collections
             vv["sourceUrl"] = p["sourceUrl"]
+            vv["colorNameKo"] = translated_color_label(vv.get("colorNameKo"))
             new_vars.append(vv)
-        p["variants"] = new_vars
+        p["variants"] = sorted(
+            new_vars,
+            key=lambda v: di_variant_sort_key(v.get("size")),
+        )
+    if needs_korean_title(p.get("nameKo")):
+        p["nameKo"] = translate_title(row.get("title") or p.get("name") or "") or p.get("nameKo") or p.get("name") or ""
+        time.sleep(0.6)
     p["price"] = list_price_from_variants(p.get("variants") or [], price)
     # Preserve first-seen catalogue date so homepage 최신등록순 is not wiped on weekly merge.
     if not p.get("registeredAt"):
@@ -922,7 +1073,7 @@ def build_new(
     desc_ko = re.sub(r"\s+", " ", (h.get("description") or "").strip())
 
     if not title_ko or not is_good_korean(title_ko):
-        title_ko = translate(title_en) or title_en
+        title_ko = translate_title(title_en) or title_en
         time.sleep(0.7)
     if not desc_ko or en_ratio(desc_ko) > 0.45:
         en = ((row.get("details") or {}).get("paragraphs") or [""])[0]
@@ -942,7 +1093,7 @@ def build_new(
     color_ko = None
     if isinstance(h.get("color"), dict):
         color_ko = h["color"].get("label")
-    color_ko = color_ko or color.get("label") or "기본"
+    color_ko = translated_color_label(color_ko or color.get("label") or "기본")
     color_key = color.get("code") or "default"
     source_url = row.get("url") or ""
 
@@ -974,13 +1125,7 @@ def build_new(
             }
         )
     if variants:
-        def _sz_key(v: dict):
-            try:
-                return (0, float(v["size"]))
-            except (TypeError, ValueError):
-                return (1, str(v.get("size") or ""))
-
-        variants = sorted(variants, key=_sz_key)
+        variants = sorted(variants, key=lambda v: di_variant_sort_key(v.get("size")))
     else:
         variants = [
             {
@@ -1111,7 +1256,7 @@ def main() -> None:
     for i, p in enumerate(bad, 1):
         row = by_raw[p["sku"]]
         if needs_korean_title(p.get("nameKo")):
-            p["nameKo"] = translate(row.get("title") or p.get("name") or "") or p["nameKo"]
+            p["nameKo"] = translate_title(row.get("title") or p.get("name") or "") or p["nameKo"]
             time.sleep(0.8)
         ensure_official_english_name(p, row.get("title") or p.get("name"))
         en = ((row.get("details") or {}).get("paragraphs") or [""])[0]

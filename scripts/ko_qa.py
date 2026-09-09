@@ -53,6 +53,10 @@ _WHITELIST_TOKENS = (
     "Sea Island",
     "Arc'teryx",
     "Belstaff",
+    "Celine",
+    "CELINE",
+    "CELINE PARIS",
+    "Triomphe",
     "Vibram",
     "Megagrip",
     "Matryx",
@@ -133,6 +137,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "cw": [ROOT / "src/data/cw/cw-catalog.ts"],
     "lv": [ROOT / "src/data/lv/lv-catalog.json"],
     "di": [ROOT / "src/data/di/di-catalog.json"],
+    "ce": [ROOT / "src/data/ce/ce-catalog.json"],
 }
 
 

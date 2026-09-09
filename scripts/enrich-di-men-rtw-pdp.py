@@ -207,6 +207,9 @@ def _load_merge():
 _merge = _load_merge()
 list_price_from_variants = _merge.list_price_from_variants
 translate = _merge.translate
+needs_korean_title = _merge.needs_korean_title
+translate_title = _merge.translate_title
+translated_color_label = _merge.translated_color_label
 
 
 def is_rtw(product: dict) -> bool:
@@ -511,7 +514,7 @@ def rebuild_variants(
     source_url = product.get("sourceUrl") or ""
     prev_vars = product.get("variants") or []
     color_key = prev_vars[0].get("colorKey") if prev_vars else "default"
-    color_ko = prev_vars[0].get("colorNameKo") if prev_vars else "기본"
+    color_ko = translated_color_label(prev_vars[0].get("colorNameKo") if prev_vars else "기본")
 
     raw_vars = hit.get("variants") if isinstance(hit.get("variants"), list) else []
     variants: list[dict] = []
@@ -683,6 +686,8 @@ def enrich_product(
     leaf = pick_leaf(product, raw_row)
     images = product.get("images") or []
     title_en = product.get("name") or pdp.get("title") or ""
+    if needs_korean_title(product.get("nameKo")) and title_en:
+        product["nameKo"] = translate_title(title_en) or product.get("nameKo") or title_en
 
     variants = rebuild_variants(product, hit, collections=collections)
     product["variants"] = variants
@@ -729,7 +734,7 @@ def enrich_product(
     mat_en = material_label(pdp.get("material") or hit.get("material"))
     if _is_internal_code(mat_en):
         mat_en = ""
-    mat_ko = tr(mat_en, cache, live=False) if mat_en else ""
+    mat_ko = tr(mat_en, cache, live=live_translate) if mat_en else ""
     origin = madein_ko(pdp.get("madein") or hit.get("madein"))
     tech: list[dict] = []
     if mat_ko or mat_en:
@@ -738,6 +743,8 @@ def enrich_product(
         tech.append({"labelKo": "제조국", "valueKo": origin})
     if tech:
         product["techSpecs"] = tech
+    for vv in product.get("variants") or []:
+        vv["colorNameKo"] = translated_color_label(vv.get("colorNameKo"))
 
     product["storySections"] = story_sections_for_rtw(
         description_ko,

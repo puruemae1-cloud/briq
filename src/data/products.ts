@@ -13,6 +13,8 @@ import { psCatalogProducts } from "@/data/ps/ps-catalog";
 import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 import { gcCatalogProducts } from "@/data/gc/gc-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
+import { ceCatalogProducts } from "@/data/ce/ce-catalog";
+import { vwCatalogProducts } from "@/data/vw/vw-catalog";
 import { prCatalogProducts } from "@/data/pr/pr-catalog";
 import { lvCatalogProducts } from "@/data/lv/lv-catalog";
 import { diCatalogProducts } from "@/data/di/di-catalog";
@@ -45,6 +47,8 @@ export const products: Product[] = [
   ...bsCatalogProducts,
   ...gcCatalogProducts,
   ...chCatalogProducts,
+  ...ceCatalogProducts,
+  ...vwCatalogProducts,
   ...prCatalogProducts,
   ...lvCatalogProducts,
   ...diCatalogProducts,
@@ -457,6 +461,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.bsCollections?.some((c) => expanded.includes(c))) return true;
       if (p.gcCollections?.some((c) => expanded.includes(c))) return true;
       if (p.chCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.ceCollections?.some((c) => expanded.includes(c))) return true;
       if (p.prCollections?.some((c) => expanded.includes(c))) return true;
       if (p.lvCollections?.some((c) => expanded.includes(c))) return true;
       if (p.diCollections?.some((c) => expanded.includes(c))) return true;
@@ -475,6 +480,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.gcCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.chCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.ceCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.prCollections?.some((c) => expanded.includes(c))))
         return true;

@@ -53,6 +53,14 @@ function brandFamily(id: string): string | null {
     return "chanel";
   }
   if (x === "gucci" || x.startsWith("gucci-") || x.startsWith("gc-")) return "gucci";
+  if (x === "celine" || x.startsWith("celine-") || x.startsWith("ce-")) return "_new";
+  if (
+    x === "vivienne-westwood" ||
+    x.startsWith("vivienne-westwood") ||
+    x.startsWith("vw-")
+  ) {
+    return "_new";
+  }
   if (x === "burberry" || x.startsWith("burberry-")) return "burberry";
   if (x === "paul-smith" || x.startsWith("paul-smith-")) return "paul-smith";
   if (x === "arcteryx" || x.startsWith("arcteryx-") || x.startsWith("ax-") || x.startsWith("axa-")) {
@@ -129,6 +137,8 @@ export const SEO_BRAND_SLUG_ORDER = [
   "christopher-ward",
   "chanel",
   "gucci",
+  "celine",
+  "vivienne-westwood",
   "louis-vuitton",
   "dior",
   // new brands insert here

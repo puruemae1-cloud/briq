@@ -8,6 +8,16 @@ export type BrandKey =
   | "gucci"
   | "gucci-bags"
   | "gucci-shoes"
+  | "celine"
+  | "celine-bags"
+  | "celine-shoes"
+  | "celine-accessories"
+  | "vivienne-westwood"
+  | "vivienne-westwood-accessories"
+  | "vivienne-westwood-bags"
+  | "vivienne-westwood-mens-rtw"
+  | "vivienne-westwood-shoes"
+  | "vivienne-westwood-watches"
   | "burberry"
   | "burberry-bags"
   | "burberry-shoes"
@@ -69,6 +79,86 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/gucci.svg",
     // Locked women's shoes PLP creative — Primavera GG Supreme slingbacks.
     images: ["/banners/brand-gucci-shoes.jpg"],
+  },
+  celine: {
+    key: "celine",
+    nameEn: "Celine",
+    nameKo: "셀린느",
+    logoSrc: "/brands/celine.svg",
+    // Locked Hiver 2026 campaign creative for signature ready-to-wear.
+    images: ["/banners/brand-celine-signature.jpg"],
+  },
+  "celine-bags": {
+    key: "celine-bags",
+    nameEn: "Celine",
+    nameKo: "셀린느",
+    logoSrc: "/brands/celine.svg",
+    // Locked handbags campaign creative with centered Triomphe hardware.
+    images: ["/banners/brand-celine-bags.jpg"],
+  },
+  "celine-shoes": {
+    key: "celine-shoes",
+    nameEn: "Celine",
+    nameKo: "셀린느",
+    logoSrc: "/brands/celine.svg",
+    // Locked Winter 2026 show creative for shoes.
+    images: ["/banners/brand-celine-shoes.jpg"],
+  },
+  "celine-accessories": {
+    key: "celine-accessories",
+    nameEn: "Celine",
+    nameKo: "셀린느",
+    logoSrc: "/brands/celine.svg",
+    // Locked Hiver 2026 campaign creative for accessories.
+    images: ["/banners/brand-celine-accessories.jpg"],
+  },
+  "vivienne-westwood": {
+    key: "vivienne-westwood",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked Spring Cherubs womens RTW campaign creative.
+    images: ["/banners/brand-vivienne-westwood-womens-rtw.jpg"],
+  },
+  "vivienne-westwood-accessories": {
+    key: "vivienne-westwood-accessories",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked homepage accessories campaign creative.
+    images: ["/banners/brand-vivienne-westwood-accessories.jpg"],
+  },
+  "vivienne-westwood-mens-rtw": {
+    key: "vivienne-westwood-mens-rtw",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked mens RTW campaign creative.
+    images: ["/banners/brand-vivienne-westwood-mens-rtw.jpg"],
+  },
+  "vivienne-westwood-watches": {
+    key: "vivienne-westwood-watches",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked Tavistock watch campaign creative.
+    images: ["/banners/brand-vivienne-westwood-watches.jpg"],
+  },
+  "vivienne-westwood-shoes": {
+    key: "vivienne-westwood-shoes",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked George Cox shoes campaign creative.
+    images: ["/banners/brand-vivienne-westwood-shoes.jpg"],
+  },
+  "vivienne-westwood-bags": {
+    key: "vivienne-westwood-bags",
+    nameEn: "Vivienne Westwood",
+    nameKo: "비비안웨스트우드",
+    logoSrc: "/brands/vivienne-westwood.svg",
+    // Locked bags campaign creative with full bag silhouette retained.
+    images: ["/banners/brand-vivienne-westwood-bags.jpg"],
   },
   burberry: {
     key: "burberry",
@@ -311,6 +401,42 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "gc-men-lace-ups": "gucci-shoes",
   "gc-men-boots": "gucci-shoes",
   "gucci-accessories": "gucci",
+  celine: "celine",
+  "celine-bags": "celine-bags",
+  "celine-shoes": "celine-shoes",
+  "celine-accessories": "celine-accessories",
+  "vivienne-westwood": "vivienne-westwood",
+  "vivienne-westwood-accessories": "vivienne-westwood-accessories",
+  "vivienne-westwood-bags": "vivienne-westwood-bags",
+  "vivienne-westwood-mens-rtw": "vivienne-westwood-mens-rtw",
+  "vivienne-westwood-shoes": "vivienne-westwood-shoes",
+  "vivienne-westwood-watches": "vivienne-westwood-watches",
+  "vw-women": "vivienne-westwood",
+  "vw-women-clothing": "vivienne-westwood",
+  "vw-women-rtw": "vivienne-westwood",
+  "vw-men": "vivienne-westwood-mens-rtw",
+  "vw-men-clothing": "vivienne-westwood-mens-rtw",
+  "vw-men-rtw": "vivienne-westwood-mens-rtw",
+  "vw-accessories": "vivienne-westwood-accessories",
+  "vw-women-accessories": "vivienne-westwood-accessories",
+  "vw-men-accessories": "vivienne-westwood-accessories",
+  "vw-watches": "vivienne-westwood-watches",
+  "vw-bags": "vivienne-westwood-bags",
+  "vw-men-bags": "vivienne-westwood-bags",
+  "vw-women-bags": "vivienne-westwood-bags",
+  "vw-shoes": "vivienne-westwood-shoes",
+  "vw-men-shoes": "vivienne-westwood-shoes",
+  "vw-women-shoes": "vivienne-westwood-shoes",
+  "ce-men": "celine",
+  "ce-men-bags": "celine-bags",
+  "ce-men-shoes": "celine-shoes",
+  "ce-men-accessories": "celine-accessories",
+  "ce-women": "celine",
+  "ce-women-bags": "celine-bags",
+  "ce-women-shoes": "celine-shoes",
+  "ce-women-accessories": "celine-accessories",
+  "ce-gifts-her": "celine-accessories",
+  "ce-gifts-him": "celine-accessories",
   burberry: "burberry",
   "burberry-bags": "burberry-bags",
   "bb-bags-womens": "burberry-bags",

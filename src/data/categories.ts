@@ -793,6 +793,179 @@ export type SubcategoryId =
   | "lv-tables"
   | "lv-lighting"
   | "lv-storage"
+  | "celine"
+  | "ce-men"
+  | "ce-men-rtw-all"
+  | "ce-men-shirts"
+  | "ce-men-tshirts-tops"
+  | "ce-men-sweatshirts"
+  | "ce-men-knitwear"
+  | "ce-men-denim"
+  | "ce-men-pants-shorts"
+  | "ce-men-tailoring"
+  | "ce-men-coats"
+  | "ce-men-jackets"
+  | "ce-men-leather"
+  | "celine-bags"
+  | "ce-men-bags"
+  | "ce-men-bags-all"
+  | "ce-men-crossbody-bags"
+  | "ce-men-tote-bags"
+  | "ce-men-travel-bags"
+  | "ce-men-backpacks"
+  | "ce-men-mini-bags"
+  | "ce-men-triomphe-canvas"
+  | "ce-men-luggage"
+  | "ce-men-take-away"
+  | "ce-men-celine-padded"
+  | "ce-men-triomphe"
+  | "celine-shoes"
+  | "ce-men-shoes"
+  | "ce-men-shoes-all"
+  | "ce-men-loafers"
+  | "ce-men-lace-ups"
+  | "ce-men-sneakers"
+  | "ce-men-boots"
+  | "ce-men-sandals"
+  | "celine-accessories"
+  | "ce-men-accessories"
+  | "ce-men-acc-all"
+  | "ce-men-belts"
+  | "ce-men-silks-scarves"
+  | "ce-men-hats-soft-accessories"
+  | "ce-men-other-accessories"
+  | "ce-men-jewellery"
+  | "ce-men-jewellery-all"
+  | "ce-men-earrings"
+  | "ce-men-bracelets-rings"
+  | "ce-men-necklaces"
+  | "ce-men-rings"
+  | "ce-men-charms"
+  | "ce-men-sunglasses"
+  | "ce-men-sunglasses-all"
+  | "ce-men-sunglasses-rectangular"
+  | "ce-men-sunglasses-round"
+  | "ce-men-sunglasses-aviator"
+  | "ce-men-sunglasses-mask"
+  | "ce-men-slg"
+  | "ce-men-slg-all"
+  | "ce-men-wallets"
+  | "ce-men-card-holders"
+  | "ce-men-coin-holders"
+  | "ce-men-tech-accessories"
+  | "ce-women"
+  | "ce-women-rtw-all"
+  | "ce-women-coats"
+  | "ce-women-jackets"
+  | "ce-women-knitwear"
+  | "ce-women-shirts-blouses"
+  | "ce-women-tops-tshirts"
+  | "ce-women-dresses"
+  | "ce-women-skirts"
+  | "ce-women-pants-shorts"
+  | "ce-women-denim"
+  | "ce-women-leather"
+  | "ce-women-swimwear"
+  | "ce-women-bags"
+  | "ce-women-bags-all"
+  | "ce-women-shoulder-bags"
+  | "ce-women-cross-body-bags"
+  | "ce-women-tote-bags"
+  | "ce-women-bucket-bags"
+  | "ce-women-clutches"
+  | "ce-women-mini-bags"
+  | "ce-women-triomphe-canvas"
+  | "ce-women-luggage"
+  | "ce-women-16"
+  | "ce-women-ava"
+  | "ce-women-triomphe"
+  | "ce-women-shoes"
+  | "ce-women-shoes-all"
+  | "ce-women-pumps"
+  | "ce-women-loafers"
+  | "ce-women-sandals"
+  | "ce-women-sneakers"
+  | "ce-women-boots-ankle-boots"
+  | "ce-women-ballerinas"
+  | "ce-women-accessories"
+  | "ce-women-acc-all"
+  | "ce-women-belts"
+  | "ce-women-silk-squares-accessories"
+  | "ce-women-hats"
+  | "ce-women-hair-accessories"
+  | "ce-women-other-accessories"
+  | "ce-women-jewellery"
+  | "ce-women-jewellery-all"
+  | "ce-women-earrings"
+  | "ce-women-necklaces"
+  | "ce-women-bracelets"
+  | "ce-women-rings"
+  | "ce-women-charms"
+  | "ce-women-sunglasses"
+  | "ce-women-sunglasses-all"
+  | "ce-women-sunglasses-rectangular"
+  | "ce-women-sunglasses-round"
+  | "ce-women-sunglasses-aviator"
+  | "ce-women-sunglasses-cat-eye"
+  | "ce-women-sunglasses-mask"
+  | "ce-women-slg"
+  | "ce-women-slg-all"
+  | "ce-women-wallets"
+  | "ce-women-coin-card-holders"
+  | "ce-women-pouches-tech-accessories"
+  | "ce-women-wallets-on-chain"
+  | "ce-gifts-her"
+  | "ce-gifts-her-bags"
+  | "ce-gifts-her-small-leather-goods"
+  | "ce-gifts-her-shoes"
+  | "ce-gifts-her-ready-to-wear"
+  | "ce-gifts-her-sunglasses"
+  | "ce-gifts-her-jewellery"
+  | "ce-gifts-her-accessories"
+  | "ce-gifts-him"
+  | "ce-gifts-him-bags"
+  | "ce-gifts-him-small-leather-goods"
+  | "ce-gifts-him-shoes"
+  | "ce-gifts-him-ready-to-wear"
+  | "ce-gifts-him-sunglasses"
+  | "ce-gifts-him-jewellery"
+  | "ce-gifts-him-accessories"
+  | "vivienne-westwood"
+  | "vivienne-westwood-bags"
+  | "vivienne-westwood-shoes"
+  | "vivienne-westwood-accessories"
+  | "vivienne-westwood-watches"
+  | "vivienne-westwood-mens-rtw"
+  | "vw-women"
+  | "vw-women-rtw"
+  | "vw-women-rtw-all"
+  | "vw-women-bags"
+  | "vw-women-bags-all"
+  | "vw-women-shoes"
+  | "vw-women-shoes-all"
+  | "vw-women-jewellery"
+  | "vw-women-jewellery-all"
+  | "vw-women-accessories"
+  | "vw-women-acc-all"
+  | "vw-women-watches"
+  | "vw-women-watches-all"
+  | "vw-men"
+  | "vw-men-rtw"
+  | "vw-men-rtw-all"
+  | "vw-men-bags"
+  | "vw-men-bags-all"
+  | "vw-men-shoes"
+  | "vw-men-shoes-all"
+  | "vw-men-accessories"
+  | "vw-men-acc-all"
+  | "vw-worlds-end"
+  | "vw-worlds-end-all"
+  | "vw-gifts"
+  | "vw-gifts-all"
+  | "vw-bags"
+  | "vw-shoes"
+  | "vw-accessories"
+  | "vw-watches"
   | "dior"
   | "dior-accessories"
   | "di-home"
@@ -1226,6 +1399,236 @@ export const DI_BAGS_MEN_LEAF_IDS: SubcategoryId[] = [
   "di-men-accessorize-bag",
 ];
 
+
+/** Celine men's ready-to-wear by category (official GB mens RTW PLPs). */
+export const CE_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-rtw-all",
+  "ce-men-shirts",
+  "ce-men-tshirts-tops",
+  "ce-men-sweatshirts",
+  "ce-men-knitwear",
+  "ce-men-denim",
+  "ce-men-pants-shorts",
+  "ce-men-tailoring",
+  "ce-men-coats",
+  "ce-men-jackets",
+  "ce-men-leather",
+];
+
+/** Celine men's bags by category (official GB mens bags PLPs). */
+export const CE_MEN_BAGS_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-bags-all",
+  "ce-men-crossbody-bags",
+  "ce-men-tote-bags",
+  "ce-men-travel-bags",
+  "ce-men-backpacks",
+  "ce-men-mini-bags",
+  "ce-men-triomphe-canvas",
+  "ce-men-luggage",
+  "ce-men-take-away",
+  "ce-men-celine-padded",
+  "ce-men-triomphe",
+];
+
+/** Celine men's shoes (official GB mens shoes PLPs). */
+export const CE_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-shoes-all",
+  "ce-men-loafers",
+  "ce-men-lace-ups",
+  "ce-men-sneakers",
+  "ce-men-boots",
+  "ce-men-sandals",
+];
+
+/** Celine men's accessories (official GB mens accessories PLPs). */
+export const CE_MEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-acc-all",
+  "ce-men-belts",
+  "ce-men-silks-scarves",
+  "ce-men-hats-soft-accessories",
+  "ce-men-other-accessories",
+];
+
+/** Celine men's jewellery (official GB mens jewellery PLPs). */
+export const CE_MEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-jewellery-all",
+  "ce-men-earrings",
+  "ce-men-bracelets-rings",
+  "ce-men-necklaces",
+  "ce-men-rings",
+  "ce-men-charms",
+];
+
+/** Celine men's sunglasses (official GB mens sunglasses PLPs). */
+export const CE_MEN_SUNGLASSES_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-sunglasses-all",
+  "ce-men-sunglasses-rectangular",
+  "ce-men-sunglasses-round",
+  "ce-men-sunglasses-aviator",
+  "ce-men-sunglasses-mask",
+];
+
+/** Celine men's small leather goods (official GB mens SLG PLPs). */
+export const CE_MEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "ce-men-slg-all",
+  "ce-men-wallets",
+  "ce-men-card-holders",
+  "ce-men-coin-holders",
+  "ce-men-tech-accessories",
+];
+
+/** Celine women's ready-to-wear (official GB women RTW PLPs). */
+export const CE_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-rtw-all",
+  "ce-women-coats",
+  "ce-women-jackets",
+  "ce-women-knitwear",
+  "ce-women-shirts-blouses",
+  "ce-women-tops-tshirts",
+  "ce-women-dresses",
+  "ce-women-skirts",
+  "ce-women-pants-shorts",
+  "ce-women-denim",
+  "ce-women-leather",
+  "ce-women-swimwear",
+];
+
+/** Celine women's bags (official GB women handbags PLPs). */
+export const CE_WOMEN_BAGS_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-bags-all",
+  "ce-women-shoulder-bags",
+  "ce-women-cross-body-bags",
+  "ce-women-tote-bags",
+  "ce-women-bucket-bags",
+  "ce-women-clutches",
+  "ce-women-mini-bags",
+  "ce-women-triomphe-canvas",
+  "ce-women-luggage",
+  "ce-women-16",
+  "ce-women-ava",
+  "ce-women-triomphe",
+];
+
+/** Celine women's shoes (official GB women shoes PLPs). */
+export const CE_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-shoes-all",
+  "ce-women-pumps",
+  "ce-women-loafers",
+  "ce-women-sandals",
+  "ce-women-sneakers",
+  "ce-women-boots-ankle-boots",
+  "ce-women-ballerinas",
+];
+
+/** Celine women's accessories (official GB women accessories PLPs). */
+export const CE_WOMEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-acc-all",
+  "ce-women-belts",
+  "ce-women-silk-squares-accessories",
+  "ce-women-hats",
+  "ce-women-hair-accessories",
+  "ce-women-other-accessories",
+];
+
+/** Celine women's jewellery (official GB women jewellery PLPs). */
+export const CE_WOMEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-jewellery-all",
+  "ce-women-earrings",
+  "ce-women-necklaces",
+  "ce-women-bracelets",
+  "ce-women-rings",
+  "ce-women-charms",
+];
+
+/** Celine women's sunglasses (official GB women sunglasses PLPs). */
+export const CE_WOMEN_SUNGLASSES_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-sunglasses-all",
+  "ce-women-sunglasses-rectangular",
+  "ce-women-sunglasses-round",
+  "ce-women-sunglasses-aviator",
+  "ce-women-sunglasses-cat-eye",
+  "ce-women-sunglasses-mask",
+];
+
+/** Celine women's small leather goods (official GB women SLG PLPs). */
+export const CE_WOMEN_SLG_LEAF_IDS: SubcategoryId[] = [
+  "ce-women-slg-all",
+  "ce-women-wallets",
+  "ce-women-coin-card-holders",
+  "ce-women-pouches-tech-accessories",
+  "ce-women-wallets-on-chain",
+];
+
+/** Celine gifts for her — crosslist hubs only (canonical leaves stay on source PLPs). */
+export const CE_GIFTS_HER_LEAF_IDS: SubcategoryId[] = [
+  "ce-gifts-her-bags",
+  "ce-gifts-her-small-leather-goods",
+  "ce-gifts-her-shoes",
+  "ce-gifts-her-ready-to-wear",
+  "ce-gifts-her-sunglasses",
+  "ce-gifts-her-jewellery",
+  "ce-gifts-her-accessories",
+];
+
+/** Celine gifts for him — crosslist hubs only. */
+export const CE_GIFTS_HIM_LEAF_IDS: SubcategoryId[] = [
+  "ce-gifts-him-bags",
+  "ce-gifts-him-small-leather-goods",
+  "ce-gifts-him-shoes",
+  "ce-gifts-him-ready-to-wear",
+  "ce-gifts-him-sunglasses",
+  "ce-gifts-him-jewellery",
+  "ce-gifts-him-accessories",
+];
+
+/** Vivienne Westwood women's RTW hub leaves. */
+export const VW_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-rtw-all",
+];
+
+export const VW_WOMEN_BAGS_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-bags-all",
+];
+
+export const VW_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-shoes-all",
+];
+
+export const VW_WOMEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-jewellery-all",
+];
+
+export const VW_WOMEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-acc-all",
+];
+
+export const VW_WOMEN_WATCHES_LEAF_IDS: SubcategoryId[] = [
+  "vw-women-watches-all",
+];
+
+export const VW_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "vw-men-rtw-all",
+];
+
+export const VW_MEN_BAGS_LEAF_IDS: SubcategoryId[] = [
+  "vw-men-bags-all",
+];
+
+export const VW_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "vw-men-shoes-all",
+];
+
+export const VW_MEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
+  "vw-men-acc-all",
+];
+
+export const VW_WORLDS_END_LEAF_IDS: SubcategoryId[] = [
+  "vw-worlds-end-all",
+];
+
+export const VW_GIFTS_LEAF_IDS: SubcategoryId[] = [
+  "vw-gifts-all",
+];
 
 /** Dior men's ready-to-wear by category (official GB mens RTW PLPs). */
 export const DI_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -2673,6 +3076,345 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "lv-tables": ["lv-tables"],
   "lv-lighting": ["lv-lighting"],
   "lv-storage": ["lv-storage"],
+  celine: [
+    "celine",
+    "ce-women",
+    ...CE_WOMEN_RTW_LEAF_IDS,
+    "ce-men",
+    ...CE_MEN_RTW_LEAF_IDS,
+    "celine-bags",
+    "ce-women-bags",
+    ...CE_WOMEN_BAGS_LEAF_IDS,
+    "ce-men-bags",
+    ...CE_MEN_BAGS_LEAF_IDS,
+    "celine-shoes",
+    "ce-women-shoes",
+    ...CE_WOMEN_SHOES_LEAF_IDS,
+    "ce-men-shoes",
+    ...CE_MEN_SHOES_LEAF_IDS,
+    "celine-accessories",
+    "ce-women-accessories",
+    ...CE_WOMEN_ACCESSORIES_LEAF_IDS,
+    "ce-women-jewellery",
+    ...CE_WOMEN_JEWELLERY_LEAF_IDS,
+    "ce-women-sunglasses",
+    ...CE_WOMEN_SUNGLASSES_LEAF_IDS,
+    "ce-women-slg",
+    ...CE_WOMEN_SLG_LEAF_IDS,
+    "ce-gifts-her",
+    ...CE_GIFTS_HER_LEAF_IDS,
+    "ce-men-accessories",
+    ...CE_MEN_ACCESSORIES_LEAF_IDS,
+    "ce-men-jewellery",
+    ...CE_MEN_JEWELLERY_LEAF_IDS,
+    "ce-men-sunglasses",
+    ...CE_MEN_SUNGLASSES_LEAF_IDS,
+    "ce-men-slg",
+    ...CE_MEN_SLG_LEAF_IDS,
+    "ce-gifts-him",
+    ...CE_GIFTS_HIM_LEAF_IDS,
+  ],
+  "ce-women": ["ce-women", ...CE_WOMEN_RTW_LEAF_IDS],
+  "ce-women-rtw-all": ["ce-women-rtw-all"],
+  "ce-women-coats": ["ce-women-coats"],
+  "ce-women-jackets": ["ce-women-jackets"],
+  "ce-women-knitwear": ["ce-women-knitwear"],
+  "ce-women-shirts-blouses": ["ce-women-shirts-blouses"],
+  "ce-women-tops-tshirts": ["ce-women-tops-tshirts"],
+  "ce-women-dresses": ["ce-women-dresses"],
+  "ce-women-skirts": ["ce-women-skirts"],
+  "ce-women-pants-shorts": ["ce-women-pants-shorts"],
+  "ce-women-denim": ["ce-women-denim"],
+  "ce-women-leather": ["ce-women-leather"],
+  "ce-women-swimwear": ["ce-women-swimwear"],
+  "ce-men": ["ce-men", ...CE_MEN_RTW_LEAF_IDS],
+  "ce-men-rtw-all": ["ce-men-rtw-all"],
+  "ce-men-shirts": ["ce-men-shirts"],
+  "ce-men-tshirts-tops": ["ce-men-tshirts-tops"],
+  "ce-men-sweatshirts": ["ce-men-sweatshirts"],
+  "ce-men-knitwear": ["ce-men-knitwear"],
+  "ce-men-denim": ["ce-men-denim"],
+  "ce-men-pants-shorts": ["ce-men-pants-shorts"],
+  "ce-men-tailoring": ["ce-men-tailoring"],
+  "ce-men-coats": ["ce-men-coats"],
+  "ce-men-jackets": ["ce-men-jackets"],
+  "ce-men-leather": ["ce-men-leather"],
+  "celine-bags": [
+    "celine-bags",
+    "ce-women-bags",
+    ...CE_WOMEN_BAGS_LEAF_IDS,
+    "ce-men-bags",
+    ...CE_MEN_BAGS_LEAF_IDS,
+  ],
+  "ce-women-bags": ["ce-women-bags", ...CE_WOMEN_BAGS_LEAF_IDS],
+  "ce-women-bags-all": ["ce-women-bags-all"],
+  "ce-women-shoulder-bags": ["ce-women-shoulder-bags"],
+  "ce-women-cross-body-bags": ["ce-women-cross-body-bags"],
+  "ce-women-tote-bags": ["ce-women-tote-bags"],
+  "ce-women-bucket-bags": ["ce-women-bucket-bags"],
+  "ce-women-clutches": ["ce-women-clutches"],
+  "ce-women-mini-bags": ["ce-women-mini-bags"],
+  "ce-women-triomphe-canvas": ["ce-women-triomphe-canvas"],
+  "ce-women-luggage": ["ce-women-luggage"],
+  "ce-women-16": ["ce-women-16"],
+  "ce-women-ava": ["ce-women-ava"],
+  "ce-women-triomphe": ["ce-women-triomphe"],
+  "ce-men-bags": ["ce-men-bags", ...CE_MEN_BAGS_LEAF_IDS],
+  "ce-men-bags-all": ["ce-men-bags-all"],
+  "ce-men-crossbody-bags": ["ce-men-crossbody-bags"],
+  "ce-men-tote-bags": ["ce-men-tote-bags"],
+  "ce-men-travel-bags": ["ce-men-travel-bags"],
+  "ce-men-backpacks": ["ce-men-backpacks"],
+  "ce-men-mini-bags": ["ce-men-mini-bags"],
+  "ce-men-triomphe-canvas": ["ce-men-triomphe-canvas"],
+  "ce-men-luggage": ["ce-men-luggage"],
+  "ce-men-take-away": ["ce-men-take-away"],
+  "ce-men-celine-padded": ["ce-men-celine-padded"],
+  "ce-men-triomphe": ["ce-men-triomphe"],
+  "celine-shoes": [
+    "celine-shoes",
+    "ce-women-shoes",
+    ...CE_WOMEN_SHOES_LEAF_IDS,
+    "ce-men-shoes",
+    ...CE_MEN_SHOES_LEAF_IDS,
+  ],
+  "ce-women-shoes": ["ce-women-shoes", ...CE_WOMEN_SHOES_LEAF_IDS],
+  "ce-women-shoes-all": ["ce-women-shoes-all"],
+  "ce-women-pumps": ["ce-women-pumps"],
+  "ce-women-loafers": ["ce-women-loafers"],
+  "ce-women-sandals": ["ce-women-sandals"],
+  "ce-women-sneakers": ["ce-women-sneakers"],
+  "ce-women-boots-ankle-boots": ["ce-women-boots-ankle-boots"],
+  "ce-women-ballerinas": ["ce-women-ballerinas"],
+  "ce-men-shoes": ["ce-men-shoes", ...CE_MEN_SHOES_LEAF_IDS],
+  "ce-men-shoes-all": ["ce-men-shoes-all"],
+  "ce-men-loafers": ["ce-men-loafers"],
+  "ce-men-lace-ups": ["ce-men-lace-ups"],
+  "ce-men-sneakers": ["ce-men-sneakers"],
+  "ce-men-boots": ["ce-men-boots"],
+  "ce-men-sandals": ["ce-men-sandals"],
+  "celine-accessories": [
+    "celine-accessories",
+    "ce-women-accessories",
+    ...CE_WOMEN_ACCESSORIES_LEAF_IDS,
+    "ce-women-jewellery",
+    ...CE_WOMEN_JEWELLERY_LEAF_IDS,
+    "ce-women-sunglasses",
+    ...CE_WOMEN_SUNGLASSES_LEAF_IDS,
+    "ce-women-slg",
+    ...CE_WOMEN_SLG_LEAF_IDS,
+    "ce-gifts-her",
+    ...CE_GIFTS_HER_LEAF_IDS,
+    "ce-men-accessories",
+    ...CE_MEN_ACCESSORIES_LEAF_IDS,
+    "ce-men-jewellery",
+    ...CE_MEN_JEWELLERY_LEAF_IDS,
+    "ce-men-sunglasses",
+    ...CE_MEN_SUNGLASSES_LEAF_IDS,
+    "ce-men-slg",
+    ...CE_MEN_SLG_LEAF_IDS,
+    "ce-gifts-him",
+    ...CE_GIFTS_HIM_LEAF_IDS,
+  ],
+  "ce-women-accessories": [
+    "ce-women-accessories",
+    ...CE_WOMEN_ACCESSORIES_LEAF_IDS,
+    "ce-women-jewellery",
+    ...CE_WOMEN_JEWELLERY_LEAF_IDS,
+    "ce-women-sunglasses",
+    ...CE_WOMEN_SUNGLASSES_LEAF_IDS,
+    "ce-women-slg",
+    ...CE_WOMEN_SLG_LEAF_IDS,
+    "ce-gifts-her",
+    ...CE_GIFTS_HER_LEAF_IDS,
+  ],
+  "ce-women-acc-all": ["ce-women-acc-all"],
+  "ce-women-belts": ["ce-women-belts"],
+  "ce-women-silk-squares-accessories": ["ce-women-silk-squares-accessories"],
+  "ce-women-hats": ["ce-women-hats"],
+  "ce-women-hair-accessories": ["ce-women-hair-accessories"],
+  "ce-women-other-accessories": ["ce-women-other-accessories"],
+  "ce-women-jewellery": ["ce-women-jewellery", ...CE_WOMEN_JEWELLERY_LEAF_IDS],
+  "ce-women-jewellery-all": ["ce-women-jewellery-all"],
+  "ce-women-earrings": ["ce-women-earrings"],
+  "ce-women-necklaces": ["ce-women-necklaces"],
+  "ce-women-bracelets": ["ce-women-bracelets"],
+  "ce-women-rings": ["ce-women-rings"],
+  "ce-women-charms": ["ce-women-charms"],
+  "ce-women-sunglasses": ["ce-women-sunglasses", ...CE_WOMEN_SUNGLASSES_LEAF_IDS],
+  "ce-women-sunglasses-all": ["ce-women-sunglasses-all"],
+  "ce-women-sunglasses-rectangular": ["ce-women-sunglasses-rectangular"],
+  "ce-women-sunglasses-round": ["ce-women-sunglasses-round"],
+  "ce-women-sunglasses-aviator": ["ce-women-sunglasses-aviator"],
+  "ce-women-sunglasses-cat-eye": ["ce-women-sunglasses-cat-eye"],
+  "ce-women-sunglasses-mask": ["ce-women-sunglasses-mask"],
+  "ce-women-slg": ["ce-women-slg", ...CE_WOMEN_SLG_LEAF_IDS],
+  "ce-women-slg-all": ["ce-women-slg-all"],
+  "ce-women-wallets": ["ce-women-wallets"],
+  "ce-women-coin-card-holders": ["ce-women-coin-card-holders"],
+  "ce-women-pouches-tech-accessories": ["ce-women-pouches-tech-accessories"],
+  "ce-women-wallets-on-chain": ["ce-women-wallets-on-chain"],
+  "ce-gifts-her": ["ce-gifts-her", ...CE_GIFTS_HER_LEAF_IDS],
+  "ce-gifts-her-bags": ["ce-gifts-her-bags"],
+  "ce-gifts-her-small-leather-goods": ["ce-gifts-her-small-leather-goods"],
+  "ce-gifts-her-shoes": ["ce-gifts-her-shoes"],
+  "ce-gifts-her-ready-to-wear": ["ce-gifts-her-ready-to-wear"],
+  "ce-gifts-her-sunglasses": ["ce-gifts-her-sunglasses"],
+  "ce-gifts-her-jewellery": ["ce-gifts-her-jewellery"],
+  "ce-gifts-her-accessories": ["ce-gifts-her-accessories"],
+  "ce-men-accessories": [
+    "ce-men-accessories",
+    ...CE_MEN_ACCESSORIES_LEAF_IDS,
+    "ce-men-jewellery",
+    ...CE_MEN_JEWELLERY_LEAF_IDS,
+    "ce-men-sunglasses",
+    ...CE_MEN_SUNGLASSES_LEAF_IDS,
+    "ce-men-slg",
+    ...CE_MEN_SLG_LEAF_IDS,
+    "ce-gifts-him",
+    ...CE_GIFTS_HIM_LEAF_IDS,
+  ],
+  "ce-men-acc-all": ["ce-men-acc-all"],
+  "ce-men-belts": ["ce-men-belts"],
+  "ce-men-silks-scarves": ["ce-men-silks-scarves"],
+  "ce-men-hats-soft-accessories": ["ce-men-hats-soft-accessories"],
+  "ce-men-other-accessories": ["ce-men-other-accessories"],
+  "ce-men-jewellery": ["ce-men-jewellery", ...CE_MEN_JEWELLERY_LEAF_IDS],
+  "ce-men-jewellery-all": ["ce-men-jewellery-all"],
+  "ce-men-earrings": ["ce-men-earrings"],
+  "ce-men-bracelets-rings": ["ce-men-bracelets-rings"],
+  "ce-men-necklaces": ["ce-men-necklaces"],
+  "ce-men-rings": ["ce-men-rings"],
+  "ce-men-charms": ["ce-men-charms"],
+  "ce-men-sunglasses": ["ce-men-sunglasses", ...CE_MEN_SUNGLASSES_LEAF_IDS],
+  "ce-men-sunglasses-all": ["ce-men-sunglasses-all"],
+  "ce-men-sunglasses-rectangular": ["ce-men-sunglasses-rectangular"],
+  "ce-men-sunglasses-round": ["ce-men-sunglasses-round"],
+  "ce-men-sunglasses-aviator": ["ce-men-sunglasses-aviator"],
+  "ce-men-sunglasses-mask": ["ce-men-sunglasses-mask"],
+  "ce-men-slg": ["ce-men-slg", ...CE_MEN_SLG_LEAF_IDS],
+  "ce-men-slg-all": ["ce-men-slg-all"],
+  "ce-men-wallets": ["ce-men-wallets"],
+  "ce-men-card-holders": ["ce-men-card-holders"],
+  "ce-men-coin-holders": ["ce-men-coin-holders"],
+  "ce-men-tech-accessories": ["ce-men-tech-accessories"],
+  "ce-gifts-him": ["ce-gifts-him", ...CE_GIFTS_HIM_LEAF_IDS],
+  "ce-gifts-him-bags": ["ce-gifts-him-bags"],
+  "ce-gifts-him-small-leather-goods": ["ce-gifts-him-small-leather-goods"],
+  "ce-gifts-him-shoes": ["ce-gifts-him-shoes"],
+  "ce-gifts-him-ready-to-wear": ["ce-gifts-him-ready-to-wear"],
+  "ce-gifts-him-sunglasses": ["ce-gifts-him-sunglasses"],
+  "ce-gifts-him-jewellery": ["ce-gifts-him-jewellery"],
+  "ce-gifts-him-accessories": ["ce-gifts-him-accessories"],
+  "vivienne-westwood": [
+    "vivienne-westwood",
+    "vw-women",
+    "vw-women-rtw",
+    ...VW_WOMEN_RTW_LEAF_IDS,
+    "vw-men",
+    "vw-men-rtw",
+    ...VW_MEN_RTW_LEAF_IDS,
+    "vw-worlds-end",
+    ...VW_WORLDS_END_LEAF_IDS,
+    "vw-gifts",
+    ...VW_GIFTS_LEAF_IDS,
+  ],
+  "vw-women": [
+    "vw-women",
+    "vw-women-rtw",
+    ...VW_WOMEN_RTW_LEAF_IDS,
+  ],
+  "vw-women-rtw": ["vw-women-rtw", ...VW_WOMEN_RTW_LEAF_IDS],
+  "vw-women-rtw-all": ["vw-women-rtw-all"],
+  "vw-men": [
+    "vw-men",
+    "vw-men-rtw",
+    ...VW_MEN_RTW_LEAF_IDS,
+  ],
+  "vw-men-rtw": ["vw-men-rtw", ...VW_MEN_RTW_LEAF_IDS],
+  "vw-men-rtw-all": ["vw-men-rtw-all"],
+  "vivienne-westwood-mens-rtw": [
+    "vivienne-westwood-mens-rtw",
+    "vw-men",
+    "vw-men-rtw",
+    ...VW_MEN_RTW_LEAF_IDS,
+  ],
+  "vivienne-westwood-bags": [
+    "vivienne-westwood-bags",
+    "vw-bags",
+    "vw-women-bags",
+    ...VW_WOMEN_BAGS_LEAF_IDS,
+    "vw-men-bags",
+    ...VW_MEN_BAGS_LEAF_IDS,
+  ],
+  "vw-bags": [
+    "vw-bags",
+    "vw-women-bags",
+    ...VW_WOMEN_BAGS_LEAF_IDS,
+    "vw-men-bags",
+    ...VW_MEN_BAGS_LEAF_IDS,
+  ],
+  "vw-women-bags": ["vw-women-bags", ...VW_WOMEN_BAGS_LEAF_IDS],
+  "vw-women-bags-all": ["vw-women-bags-all"],
+  "vw-men-bags": ["vw-men-bags", ...VW_MEN_BAGS_LEAF_IDS],
+  "vw-men-bags-all": ["vw-men-bags-all"],
+  "vivienne-westwood-shoes": [
+    "vivienne-westwood-shoes",
+    "vw-shoes",
+    "vw-women-shoes",
+    ...VW_WOMEN_SHOES_LEAF_IDS,
+    "vw-men-shoes",
+    ...VW_MEN_SHOES_LEAF_IDS,
+  ],
+  "vw-shoes": [
+    "vw-shoes",
+    "vw-women-shoes",
+    ...VW_WOMEN_SHOES_LEAF_IDS,
+    "vw-men-shoes",
+    ...VW_MEN_SHOES_LEAF_IDS,
+  ],
+  "vw-women-shoes": ["vw-women-shoes", ...VW_WOMEN_SHOES_LEAF_IDS],
+  "vw-women-shoes-all": ["vw-women-shoes-all"],
+  "vw-men-shoes": ["vw-men-shoes", ...VW_MEN_SHOES_LEAF_IDS],
+  "vw-men-shoes-all": ["vw-men-shoes-all"],
+  "vivienne-westwood-accessories": [
+    "vivienne-westwood-accessories",
+    "vw-accessories",
+    "vw-women-accessories",
+    ...VW_WOMEN_ACCESSORIES_LEAF_IDS,
+    "vw-women-jewellery",
+    ...VW_WOMEN_JEWELLERY_LEAF_IDS,
+    "vw-men-accessories",
+    ...VW_MEN_ACCESSORIES_LEAF_IDS,
+  ],
+  "vw-accessories": [
+    "vw-accessories",
+    "vw-women-accessories",
+    ...VW_WOMEN_ACCESSORIES_LEAF_IDS,
+    "vw-women-jewellery",
+    ...VW_WOMEN_JEWELLERY_LEAF_IDS,
+    "vw-men-accessories",
+    ...VW_MEN_ACCESSORIES_LEAF_IDS,
+  ],
+  "vw-women-accessories": ["vw-women-accessories", ...VW_WOMEN_ACCESSORIES_LEAF_IDS],
+  "vw-women-acc-all": ["vw-women-acc-all"],
+  "vw-women-jewellery": ["vw-women-jewellery", ...VW_WOMEN_JEWELLERY_LEAF_IDS],
+  "vw-women-jewellery-all": ["vw-women-jewellery-all"],
+  "vw-men-accessories": ["vw-men-accessories", ...VW_MEN_ACCESSORIES_LEAF_IDS],
+  "vw-men-acc-all": ["vw-men-acc-all"],
+  "vivienne-westwood-watches": [
+    "vivienne-westwood-watches",
+    "vw-watches",
+    "vw-women-watches",
+    ...VW_WOMEN_WATCHES_LEAF_IDS,
+  ],
+  "vw-watches": ["vw-watches", "vw-women-watches", ...VW_WOMEN_WATCHES_LEAF_IDS],
+  "vw-women-watches": ["vw-women-watches", ...VW_WOMEN_WATCHES_LEAF_IDS],
+  "vw-women-watches-all": ["vw-women-watches-all"],
+  "vw-worlds-end": ["vw-worlds-end", ...VW_WORLDS_END_LEAF_IDS],
+  "vw-worlds-end-all": ["vw-worlds-end-all"],
+  "vw-gifts": ["vw-gifts", ...VW_GIFTS_LEAF_IDS],
+  "vw-gifts-all": ["vw-gifts-all"],
   dior: [
     "dior",
     "dior-accessories",
@@ -2710,14 +3452,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...DI_WOMEN_SHOES_LEAF_IDS,
   ],
   "di-men-shoes": ["di-men-shoes", ...DI_MEN_SHOES_LEAF_IDS],
-  "di-men-shoes-all": ["di-men-shoes-all"],
+  "di-men-shoes-all": ["di-men-shoes", ...DI_MEN_SHOES_LEAF_IDS],
   "di-men-sneakers": ["di-men-sneakers"],
   "di-men-sandals-mules": ["di-men-sandals-mules"],
   "di-men-loafers": ["di-men-loafers"],
   "di-men-lace-ups": ["di-men-lace-ups"],
   "di-men-boots": ["di-men-boots"],
   "di-women-shoes": ["di-women-shoes", ...DI_WOMEN_SHOES_LEAF_IDS],
-  "di-women-shoes-all": ["di-women-shoes-all"],
+  "di-women-shoes-all": ["di-women-shoes", ...DI_WOMEN_SHOES_LEAF_IDS],
   "di-women-pumps": ["di-women-pumps"],
   "di-women-sandals": ["di-women-sandals"],
   "di-women-loafers-flats": ["di-women-loafers-flats"],
@@ -3973,6 +4715,95 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "celine",
+        labelKo: "셀린",
+        href: "/shop?category=luxury&sub=celine",
+        children: [
+          {
+            id: "ce-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=ce-women",
+            navLeaf: true,
+            children: [
+              { id: "ce-women-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=ce-women-rtw-all" },
+              { id: "ce-women-coats", labelKo: "코트", href: "/shop?category=luxury&sub=ce-women-coats" },
+              { id: "ce-women-jackets", labelKo: "재킷", href: "/shop?category=luxury&sub=ce-women-jackets" },
+              { id: "ce-women-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=ce-women-knitwear" },
+              { id: "ce-women-shirts-blouses", labelKo: "셔츠 & 블라우스", href: "/shop?category=luxury&sub=ce-women-shirts-blouses" },
+              { id: "ce-women-tops-tshirts", labelKo: "탑 & 티셔츠", href: "/shop?category=luxury&sub=ce-women-tops-tshirts" },
+              { id: "ce-women-dresses", labelKo: "드레스", href: "/shop?category=luxury&sub=ce-women-dresses" },
+              { id: "ce-women-skirts", labelKo: "스커트", href: "/shop?category=luxury&sub=ce-women-skirts" },
+              { id: "ce-women-pants-shorts", labelKo: "팬츠 & 쇼츠", href: "/shop?category=luxury&sub=ce-women-pants-shorts" },
+              { id: "ce-women-denim", labelKo: "데님", href: "/shop?category=luxury&sub=ce-women-denim" },
+              { id: "ce-women-leather", labelKo: "레더", href: "/shop?category=luxury&sub=ce-women-leather" },
+              { id: "ce-women-swimwear", labelKo: "스윔웨어", href: "/shop?category=luxury&sub=ce-women-swimwear" },
+            ],
+          },
+          {
+            id: "ce-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=ce-men",
+            navLeaf: true,
+            children: [
+              { id: "ce-men-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=ce-men-rtw-all" },
+              { id: "ce-men-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=ce-men-shirts" },
+              { id: "ce-men-tshirts-tops", labelKo: "티셔츠 & 탑", href: "/shop?category=luxury&sub=ce-men-tshirts-tops" },
+              { id: "ce-men-sweatshirts", labelKo: "스웨트셔츠", href: "/shop?category=luxury&sub=ce-men-sweatshirts" },
+              { id: "ce-men-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=ce-men-knitwear" },
+              { id: "ce-men-denim", labelKo: "데님", href: "/shop?category=luxury&sub=ce-men-denim" },
+              { id: "ce-men-pants-shorts", labelKo: "팬츠 & 쇼츠", href: "/shop?category=luxury&sub=ce-men-pants-shorts" },
+              { id: "ce-men-tailoring", labelKo: "테일러링", href: "/shop?category=luxury&sub=ce-men-tailoring" },
+              { id: "ce-men-coats", labelKo: "코트", href: "/shop?category=luxury&sub=ce-men-coats" },
+              { id: "ce-men-jackets", labelKo: "재킷", href: "/shop?category=luxury&sub=ce-men-jackets" },
+              { id: "ce-men-leather", labelKo: "레더", href: "/shop?category=luxury&sub=ce-men-leather" },
+            ],
+          },
+        ],
+      },
+      {
+        id: "vivienne-westwood",
+        labelKo: "비비안 웨스트우드",
+        href: "/shop?category=luxury&sub=vivienne-westwood",
+        children: [
+          {
+            id: "vw-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=vw-women",
+            navLeaf: true,
+            children: [
+              { id: "vw-women-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=vw-women-rtw-all" },
+            ],
+          },
+          {
+            id: "vw-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=vw-men",
+            navLeaf: true,
+            children: [
+              { id: "vw-men-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=vw-men-rtw-all" },
+            ],
+          },
+          {
+            id: "vw-worlds-end",
+            labelKo: "Worlds End",
+            href: "/shop?category=luxury&sub=vw-worlds-end",
+            navLeaf: true,
+            children: [
+              { id: "vw-worlds-end-all", labelKo: "전체", href: "/shop?category=luxury&sub=vw-worlds-end-all" },
+            ],
+          },
+          {
+            id: "vw-gifts",
+            labelKo: "선물",
+            href: "/shop?category=luxury&sub=vw-gifts",
+            navLeaf: true,
+            children: [
+              { id: "vw-gifts-all", labelKo: "전체", href: "/shop?category=luxury&sub=vw-gifts-all" },
+            ],
+          },
+        ],
+      },
+      {
         id: "dior",
         labelKo: "디올",
         href: "/shop?category=luxury&sub=dior",
@@ -4608,6 +5439,26 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+      {
+        id: "vivienne-westwood-watches",
+        labelKo: "비비안 웨스트우드",
+        href: "/shop?category=watches&sub=vivienne-westwood-watches",
+        children: [
+          {
+            id: "vw-women-watches",
+            labelKo: "여성용",
+            href: "/shop?category=watches&sub=vw-women-watches",
+            navLeaf: true,
+            children: [
+              {
+                id: "vw-women-watches-all",
+                labelKo: "전체",
+                href: "/shop?category=watches&sub=vw-women-watches-all",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -4842,6 +5693,77 @@ export const navCategories: NavCategory[] = [
                 labelKo: "백 액세서리",
                 href: "/shop?category=bags&sub=di-men-accessorize-bag",
               },
+            ],
+          },
+        ],
+      },
+      {
+        id: "celine-bags",
+        labelKo: "셀린",
+        href: "/shop?category=bags&sub=celine-bags",
+        children: [
+          {
+            id: "ce-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=ce-women-bags",
+            navLeaf: true,
+            children: [
+              { id: "ce-women-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=ce-women-bags-all" },
+              { id: "ce-women-shoulder-bags", labelKo: "숄더백", href: "/shop?category=bags&sub=ce-women-shoulder-bags" },
+              { id: "ce-women-cross-body-bags", labelKo: "크로스바디 백", href: "/shop?category=bags&sub=ce-women-cross-body-bags" },
+              { id: "ce-women-tote-bags", labelKo: "토트백", href: "/shop?category=bags&sub=ce-women-tote-bags" },
+              { id: "ce-women-bucket-bags", labelKo: "버킷백", href: "/shop?category=bags&sub=ce-women-bucket-bags" },
+              { id: "ce-women-clutches", labelKo: "클러치", href: "/shop?category=bags&sub=ce-women-clutches" },
+              { id: "ce-women-mini-bags", labelKo: "미니백", href: "/shop?category=bags&sub=ce-women-mini-bags" },
+              { id: "ce-women-triomphe-canvas", labelKo: "트리옹프 캔버스", href: "/shop?category=bags&sub=ce-women-triomphe-canvas" },
+              { id: "ce-women-luggage", labelKo: "러기지", href: "/shop?category=bags&sub=ce-women-luggage" },
+              { id: "ce-women-16", labelKo: "16", href: "/shop?category=bags&sub=ce-women-16" },
+              { id: "ce-women-ava", labelKo: "AVA", href: "/shop?category=bags&sub=ce-women-ava" },
+              { id: "ce-women-triomphe", labelKo: "트리옹프", href: "/shop?category=bags&sub=ce-women-triomphe" },
+            ],
+          },
+          {
+            id: "ce-men-bags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=ce-men-bags",
+            navLeaf: true,
+            children: [
+              { id: "ce-men-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=ce-men-bags-all" },
+              { id: "ce-men-crossbody-bags", labelKo: "크로스바디 백", href: "/shop?category=bags&sub=ce-men-crossbody-bags" },
+              { id: "ce-men-tote-bags", labelKo: "토트백", href: "/shop?category=bags&sub=ce-men-tote-bags" },
+              { id: "ce-men-travel-bags", labelKo: "트래블 백", href: "/shop?category=bags&sub=ce-men-travel-bags" },
+              { id: "ce-men-backpacks", labelKo: "백팩", href: "/shop?category=bags&sub=ce-men-backpacks" },
+              { id: "ce-men-mini-bags", labelKo: "미니백", href: "/shop?category=bags&sub=ce-men-mini-bags" },
+              { id: "ce-men-triomphe-canvas", labelKo: "트리옹프 캔버스", href: "/shop?category=bags&sub=ce-men-triomphe-canvas" },
+              { id: "ce-men-luggage", labelKo: "러기지", href: "/shop?category=bags&sub=ce-men-luggage" },
+              { id: "ce-men-take-away", labelKo: "테이크 어웨이", href: "/shop?category=bags&sub=ce-men-take-away" },
+              { id: "ce-men-celine-padded", labelKo: "셀린 패디드", href: "/shop?category=bags&sub=ce-men-celine-padded" },
+              { id: "ce-men-triomphe", labelKo: "트리옹프", href: "/shop?category=bags&sub=ce-men-triomphe" },
+            ],
+          },
+        ],
+      },
+      {
+        id: "vivienne-westwood-bags",
+        labelKo: "비비안 웨스트우드",
+        href: "/shop?category=bags&sub=vivienne-westwood-bags",
+        children: [
+          {
+            id: "vw-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=vw-women-bags",
+            navLeaf: true,
+            children: [
+              { id: "vw-women-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=vw-women-bags-all" },
+            ],
+          },
+          {
+            id: "vw-men-bags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=vw-men-bags",
+            navLeaf: true,
+            children: [
+              { id: "vw-men-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=vw-men-bags-all" },
             ],
           },
         ],
@@ -5378,6 +6300,67 @@ export const navCategories: NavCategory[] = [
             labelKo: "스니커즈",
             href: "/shop?category=shoes&sub=ch-women-sneakers",
             navLeaf: true,
+          },
+        ],
+      },
+      {
+        id: "celine-shoes",
+        labelKo: "셀린",
+        href: "/shop?category=shoes&sub=celine-shoes",
+        children: [
+          {
+            id: "ce-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=ce-women-shoes",
+            navLeaf: true,
+            children: [
+              { id: "ce-women-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=ce-women-shoes-all" },
+              { id: "ce-women-pumps", labelKo: "펌프스", href: "/shop?category=shoes&sub=ce-women-pumps" },
+              { id: "ce-women-loafers", labelKo: "로퍼", href: "/shop?category=shoes&sub=ce-women-loafers" },
+              { id: "ce-women-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=ce-women-sandals" },
+              { id: "ce-women-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=ce-women-sneakers" },
+              { id: "ce-women-boots-ankle-boots", labelKo: "부츠 & 앵클 부츠", href: "/shop?category=shoes&sub=ce-women-boots-ankle-boots" },
+              { id: "ce-women-ballerinas", labelKo: "발레리나", href: "/shop?category=shoes&sub=ce-women-ballerinas" },
+            ],
+          },
+          {
+            id: "ce-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=ce-men-shoes",
+            navLeaf: true,
+            children: [
+              { id: "ce-men-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=ce-men-shoes-all" },
+              { id: "ce-men-loafers", labelKo: "로퍼", href: "/shop?category=shoes&sub=ce-men-loafers" },
+              { id: "ce-men-lace-ups", labelKo: "레이스업 슈즈", href: "/shop?category=shoes&sub=ce-men-lace-ups" },
+              { id: "ce-men-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=ce-men-sneakers" },
+              { id: "ce-men-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=ce-men-boots" },
+              { id: "ce-men-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=ce-men-sandals" },
+            ],
+          },
+        ],
+      },
+      {
+        id: "vivienne-westwood-shoes",
+        labelKo: "비비안 웨스트우드",
+        href: "/shop?category=shoes&sub=vivienne-westwood-shoes",
+        children: [
+          {
+            id: "vw-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=vw-women-shoes",
+            navLeaf: true,
+            children: [
+              { id: "vw-women-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=vw-women-shoes-all" },
+            ],
+          },
+          {
+            id: "vw-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=vw-men-shoes",
+            navLeaf: true,
+            children: [
+              { id: "vw-men-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=vw-men-shoes-all" },
+            ],
           },
         ],
       },
@@ -6392,6 +7375,176 @@ export const navCategories: NavCategory[] = [
                   },
                 ],
               },
+            ],
+          },
+        ],
+      },
+      {
+        id: "celine-accessories",
+        labelKo: "셀린",
+        href: "/shop?category=accessories&sub=celine-accessories",
+        children: [
+          {
+            id: "ce-women-accessories",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=ce-women-accessories",
+            navLeaf: true,
+            children: [
+              { id: "ce-women-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-women-acc-all" },
+              { id: "ce-women-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=ce-women-belts" },
+              { id: "ce-women-silk-squares-accessories", labelKo: "실크 스퀘어 & 액세서리", href: "/shop?category=accessories&sub=ce-women-silk-squares-accessories" },
+              { id: "ce-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=ce-women-hats" },
+              { id: "ce-women-hair-accessories", labelKo: "헤어 액세서리", href: "/shop?category=accessories&sub=ce-women-hair-accessories" },
+              { id: "ce-women-other-accessories", labelKo: "기타 액세서리", href: "/shop?category=accessories&sub=ce-women-other-accessories" },
+              {
+                id: "ce-women-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=ce-women-jewellery",
+                children: [
+                  { id: "ce-women-jewellery-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-women-jewellery-all" },
+                  { id: "ce-women-earrings", labelKo: "이어링", href: "/shop?category=accessories&sub=ce-women-earrings" },
+                  { id: "ce-women-necklaces", labelKo: "네크리스", href: "/shop?category=accessories&sub=ce-women-necklaces" },
+                  { id: "ce-women-bracelets", labelKo: "브레이슬릿", href: "/shop?category=accessories&sub=ce-women-bracelets" },
+                  { id: "ce-women-rings", labelKo: "링", href: "/shop?category=accessories&sub=ce-women-rings" },
+                  { id: "ce-women-charms", labelKo: "참", href: "/shop?category=accessories&sub=ce-women-charms" },
+                ],
+              },
+              {
+                id: "ce-women-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=ce-women-sunglasses",
+                children: [
+                  { id: "ce-women-sunglasses-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-women-sunglasses-all" },
+                  { id: "ce-women-sunglasses-rectangular", labelKo: "직사각형", href: "/shop?category=accessories&sub=ce-women-sunglasses-rectangular" },
+                  { id: "ce-women-sunglasses-round", labelKo: "라운드", href: "/shop?category=accessories&sub=ce-women-sunglasses-round" },
+                  { id: "ce-women-sunglasses-aviator", labelKo: "에비에이터", href: "/shop?category=accessories&sub=ce-women-sunglasses-aviator" },
+                  { id: "ce-women-sunglasses-cat-eye", labelKo: "캣아이", href: "/shop?category=accessories&sub=ce-women-sunglasses-cat-eye" },
+                  { id: "ce-women-sunglasses-mask", labelKo: "마스크", href: "/shop?category=accessories&sub=ce-women-sunglasses-mask" },
+                ],
+              },
+              {
+                id: "ce-women-slg",
+                labelKo: "스몰 레더 굿즈",
+                href: "/shop?category=accessories&sub=ce-women-slg",
+                children: [
+                  { id: "ce-women-slg-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-women-slg-all" },
+                  { id: "ce-women-wallets", labelKo: "월렛", href: "/shop?category=accessories&sub=ce-women-wallets" },
+                  { id: "ce-women-coin-card-holders", labelKo: "코인 & 카드 홀더", href: "/shop?category=accessories&sub=ce-women-coin-card-holders" },
+                  { id: "ce-women-pouches-tech-accessories", labelKo: "파우치 & 테크", href: "/shop?category=accessories&sub=ce-women-pouches-tech-accessories" },
+                  { id: "ce-women-wallets-on-chain", labelKo: "월렛 온 체인", href: "/shop?category=accessories&sub=ce-women-wallets-on-chain" },
+                ],
+              },
+              {
+                id: "ce-gifts-her",
+                labelKo: "선물",
+                href: "/shop?category=accessories&sub=ce-gifts-her",
+                children: [
+                  { id: "ce-gifts-her-bags", labelKo: "백", href: "/shop?category=accessories&sub=ce-gifts-her-bags" },
+                  { id: "ce-gifts-her-small-leather-goods", labelKo: "스몰 레더 굿즈", href: "/shop?category=accessories&sub=ce-gifts-her-small-leather-goods" },
+                  { id: "ce-gifts-her-shoes", labelKo: "슈즈", href: "/shop?category=accessories&sub=ce-gifts-her-shoes" },
+                  { id: "ce-gifts-her-ready-to-wear", labelKo: "레디 투 웨어", href: "/shop?category=accessories&sub=ce-gifts-her-ready-to-wear" },
+                  { id: "ce-gifts-her-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=ce-gifts-her-sunglasses" },
+                  { id: "ce-gifts-her-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=ce-gifts-her-jewellery" },
+                  { id: "ce-gifts-her-accessories", labelKo: "액세서리", href: "/shop?category=accessories&sub=ce-gifts-her-accessories" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "ce-men-accessories",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=ce-men-accessories",
+            navLeaf: true,
+            children: [
+              { id: "ce-men-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-men-acc-all" },
+              { id: "ce-men-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=ce-men-belts" },
+              { id: "ce-men-silks-scarves", labelKo: "실크 & 스카프", href: "/shop?category=accessories&sub=ce-men-silks-scarves" },
+              { id: "ce-men-hats-soft-accessories", labelKo: "모자 & 소프트 액세서리", href: "/shop?category=accessories&sub=ce-men-hats-soft-accessories" },
+              { id: "ce-men-other-accessories", labelKo: "기타 액세서리", href: "/shop?category=accessories&sub=ce-men-other-accessories" },
+              {
+                id: "ce-men-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=ce-men-jewellery",
+                children: [
+                  { id: "ce-men-jewellery-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-men-jewellery-all" },
+                  { id: "ce-men-earrings", labelKo: "이어링", href: "/shop?category=accessories&sub=ce-men-earrings" },
+                  { id: "ce-men-bracelets-rings", labelKo: "브레이슬릿 & 링", href: "/shop?category=accessories&sub=ce-men-bracelets-rings" },
+                  { id: "ce-men-necklaces", labelKo: "네크리스", href: "/shop?category=accessories&sub=ce-men-necklaces" },
+                  { id: "ce-men-rings", labelKo: "링", href: "/shop?category=accessories&sub=ce-men-rings" },
+                  { id: "ce-men-charms", labelKo: "참", href: "/shop?category=accessories&sub=ce-men-charms" },
+                ],
+              },
+              {
+                id: "ce-men-sunglasses",
+                labelKo: "선글라스",
+                href: "/shop?category=accessories&sub=ce-men-sunglasses",
+                children: [
+                  { id: "ce-men-sunglasses-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-men-sunglasses-all" },
+                  { id: "ce-men-sunglasses-rectangular", labelKo: "직사각형", href: "/shop?category=accessories&sub=ce-men-sunglasses-rectangular" },
+                  { id: "ce-men-sunglasses-round", labelKo: "라운드", href: "/shop?category=accessories&sub=ce-men-sunglasses-round" },
+                  { id: "ce-men-sunglasses-aviator", labelKo: "에비에이터", href: "/shop?category=accessories&sub=ce-men-sunglasses-aviator" },
+                  { id: "ce-men-sunglasses-mask", labelKo: "마스크", href: "/shop?category=accessories&sub=ce-men-sunglasses-mask" },
+                ],
+              },
+              {
+                id: "ce-men-slg",
+                labelKo: "스몰 레더 굿즈",
+                href: "/shop?category=accessories&sub=ce-men-slg",
+                children: [
+                  { id: "ce-men-slg-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-men-slg-all" },
+                  { id: "ce-men-wallets", labelKo: "월렛", href: "/shop?category=accessories&sub=ce-men-wallets" },
+                  { id: "ce-men-card-holders", labelKo: "카드 홀더", href: "/shop?category=accessories&sub=ce-men-card-holders" },
+                  { id: "ce-men-coin-holders", labelKo: "코인 홀더", href: "/shop?category=accessories&sub=ce-men-coin-holders" },
+                  { id: "ce-men-tech-accessories", labelKo: "테크 액세서리", href: "/shop?category=accessories&sub=ce-men-tech-accessories" },
+                ],
+              },
+              {
+                id: "ce-gifts-him",
+                labelKo: "선물",
+                href: "/shop?category=accessories&sub=ce-gifts-him",
+                children: [
+                  { id: "ce-gifts-him-bags", labelKo: "백", href: "/shop?category=accessories&sub=ce-gifts-him-bags" },
+                  { id: "ce-gifts-him-small-leather-goods", labelKo: "스몰 레더 굿즈", href: "/shop?category=accessories&sub=ce-gifts-him-small-leather-goods" },
+                  { id: "ce-gifts-him-shoes", labelKo: "슈즈", href: "/shop?category=accessories&sub=ce-gifts-him-shoes" },
+                  { id: "ce-gifts-him-ready-to-wear", labelKo: "레디 투 웨어", href: "/shop?category=accessories&sub=ce-gifts-him-ready-to-wear" },
+                  { id: "ce-gifts-him-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=ce-gifts-him-sunglasses" },
+                  { id: "ce-gifts-him-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=ce-gifts-him-jewellery" },
+                  { id: "ce-gifts-him-accessories", labelKo: "액세서리", href: "/shop?category=accessories&sub=ce-gifts-him-accessories" },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "vivienne-westwood-accessories",
+        labelKo: "비비안 웨스트우드",
+        href: "/shop?category=accessories&sub=vivienne-westwood-accessories",
+        children: [
+          {
+            id: "vw-women-accessories",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=vw-women-accessories",
+            navLeaf: true,
+            children: [
+              { id: "vw-women-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=vw-women-acc-all" },
+              {
+                id: "vw-women-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=vw-women-jewellery",
+                children: [
+                  { id: "vw-women-jewellery-all", labelKo: "전체", href: "/shop?category=accessories&sub=vw-women-jewellery-all" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "vw-men-accessories",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=vw-men-accessories",
+            navLeaf: true,
+            children: [
+              { id: "vw-men-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=vw-men-acc-all" },
             ],
           },
         ],
