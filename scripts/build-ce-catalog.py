@@ -17,7 +17,15 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from celine_config import celine_raw_paths  # noqa: E402
-from celine_common import clean_html_text, load_json, save_json, slugify  # noqa: E402
+from celine_common import (  # noqa: E402
+    IMG_ROOT,
+    clean_html_text,
+    is_blocked_pdp_title,
+    load_json,
+    save_json,
+    slugify,
+    title_from_pdp_url,
+)
 from di_common import gbp_to_krw  # noqa: E402
 from ko_qa import gtx_translate, has_hangul, is_good_korean  # noqa: E402
 
@@ -28,25 +36,61 @@ CACHE = ROOT / "src/data/ce/ce-translate-cache.json"
 ACCENTS = ["#1A1A1A", "#291f1d", "#302722", "#382e29", "#1f2529"]
 TITLE_MAP = {
     "celine": "셀린느",
+    "triomphe": "트리옹프",
+    "vivienne": "비비안",
+    "scarves": "스카프",
+    "scarf": "스카프",
+    "shawls": "숄",
+    "shawl": "숄",
+    "cashmere": "캐시미어",
+    "skirts": "스커트",
+    "skirt": "스커트",
+    "dresses": "드레스",
+    "dress": "드레스",
     "shirts": "셔츠",
     "shirt": "셔츠",
+    "blouses": "블라우스",
+    "blouse": "블라우스",
     "t-shirt": "티셔츠",
     "t-shirts": "티셔츠",
     "tops": "탑",
+    "top": "탑",
     "classic": "클래식",
     "loose": "루즈",
     "oversized": "오버사이즈",
     "overshirt": "오버셔츠",
     "cotton poplin": "코튼 포플린",
     "cotton denim": "코튼 데님",
+    "cotton twill": "코튼 트윌",
+    "cotton jersey": "코튼 저지",
+    "cotton": "코튼",
+    "viscose satin": "비스코스 새틴",
+    "viscose": "비스코스",
+    "satin": "새틴",
+    "mohair wool": "모헤어 울",
+    "mohair": "모헤어",
     "wool": "울",
+    "silk twill": "실크 트윌",
+    "silk": "실크",
     "corduroy": "코듀로이",
     "light cotton gabardine": "라이트 코튼 개버딘",
+    "gabardine": "개버딘",
     "pants": "팬츠",
     "shorts": "쇼츠",
     "jacket": "재킷",
+    "jackets": "재킷",
     "coat": "코트",
+    "coats": "코트",
     "leather": "레더",
+    "shearling": "시어링",
+    "lambskin": "램스킨",
+    "calfskin": "카프스킨",
+    "suede": "스웨이드",
+    "nubuck": "누벅",
+    "grained": "그레인",
+    "vintage": "빈티지",
+    "canvas": "캔버스",
+    "denim": "데님",
     "sweatshirt": "스웨트셔츠",
     "knitwear": "니트웨어",
     "jewellery": "주얼리",
@@ -55,6 +99,20 @@ TITLE_MAP = {
     "wallet": "월렛",
     "bags": "가방",
     "bag": "백",
+    "belt": "벨트",
+    "belts": "벨트",
+    "boots": "부츠",
+    "sandals": "샌들",
+    "sneakers": "스니커즈",
+    "pumps": "펌프스",
+    "loafers": "로퍼",
+    "ballerinas": "발레리나",
+    "peplum": "페플럼",
+    "racer": "레이서",
+    "flared": "플레어",
+    "cropped": "크롭",
+    "embroidered": "자수",
+    "western": "웨스턴",
 }
 LINE_MAP = {
     "100% cotton": "100% 면",
@@ -119,8 +177,14 @@ def tr(text: str | None, cache: dict[str, str], *, allow_remote: bool = True) ->
 
 def clean_title_ko(text: str) -> str:
     out = text.strip()
-    for en, ko in TITLE_MAP.items():
+    # Longer phrases first
+    for en, ko in sorted(TITLE_MAP.items(), key=lambda kv: -len(kv[0])):
         out = re.sub(re.escape(en), ko, out, flags=re.I)
+    # "Name IN material" → "material Name"
+    m = re.match(r"^(.*?)\s+IN\s+(.+)$", out, flags=re.I)
+    if m:
+        left, right = m.group(1).strip(" ;,-"), m.group(2).strip(" ;,-")
+        out = f"{right} {left}".strip()
     out = re.sub(r"\bIN\b", "", out, flags=re.I)
     out = re.sub(r"\bTHE\b", "", out, flags=re.I)
     out = re.sub(r"\s{2,}", " ", out).strip(" ;,-")
@@ -220,11 +284,38 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
 
 
 def leaf_to_category(leaf: str) -> str:
+    leaf = leaf or ""
     if "bags" in leaf:
         return "bags"
-    if "shoes" in leaf or any(x in leaf for x in ["boots", "sneakers", "loafers", "sandals", "pumps"]):
+    if "shoes" in leaf or any(
+        x in leaf for x in ["boots", "sneakers", "loafers", "sandals", "pumps", "ballet", "ballerina"]
+    ):
         return "shoes"
-    if any(x in leaf for x in ["shirts", "tshirts", "sweatshirts", "knitwear", "denim", "pants", "tailoring", "coats", "jackets", "leather", "rtw"]):
+    # All Celine RTW leaves (incl. skirts/dresses/tops/swim) must stay under luxury
+    # so /shop?category=luxury&sub=ce-women-skirts matches.
+    if any(
+        x in leaf
+        for x in [
+            "shirts",
+            "blouses",
+            "tshirts",
+            "tops",
+            "sweatshirts",
+            "knitwear",
+            "denim",
+            "pants",
+            "shorts",
+            "skirts",
+            "dresses",
+            "tailoring",
+            "coats",
+            "jackets",
+            "leather",
+            "swim",
+            "rtw",
+            "-rtw",
+        ]
+    ):
         return "luxury"
     return "accessories"
 
@@ -250,11 +341,42 @@ def build_story(description_ko: str, images: list[str], features_ko: list[str]) 
     return sections
 
 
+def local_ce_images(sku_or_id: str) -> list[str]:
+    folder = slugify(str(sku_or_id or "").replace(".", "-"))
+    if not folder:
+        return []
+    paths = sorted((IMG_ROOT / folder).glob("*.jpg"))
+    return [f"/products/ce-pdp/{folder}/{p.name}" for p in paths if p.stat().st_size >= 800]
+
+
+def heal_raw_row(row: dict) -> dict:
+    """Repair Access Denied poison + missing images before catalog build."""
+    row = dict(row)
+    title = (row.get("title") or "").strip()
+    sku = str(row.get("sku") or row.get("id") or "").strip()
+    if is_blocked_pdp_title(title) or not title:
+        recovered = title_from_pdp_url(row.get("url") or "")
+        if recovered:
+            row["title"] = recovered
+            title = recovered
+    images = [x for x in (row.get("images") or []) if x and "placeholder" not in x]
+    if not images:
+        images = local_ce_images(sku) or local_ce_images(str(row.get("id") or ""))
+    row["images"] = images
+    return row
+
+
 def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
+    row = heal_raw_row(row)
     sku = str(row.get("sku") or row.get("id") or "").strip()
     pid = f"ce-{slugify(sku.replace('.', '-'))}"
     title_en = (row.get("title") or sku).strip()
+    if is_blocked_pdp_title(title_en):
+        title_en = title_from_pdp_url(row.get("url") or "") or sku
     title_ko = tr(title_en, cache, allow_remote=True) or clean_title_ko(title_en) or title_en
+    # Force another translate pass when nameKo is still English-only.
+    if title_ko and not has_hangul(title_ko) and title_en:
+        title_ko = tr(title_en, cache, allow_remote=True) or title_ko
     gbp = float(row.get("gbpPrice") or 0)
     price = gbp_to_krw(gbp)
     images = row.get("images") or []

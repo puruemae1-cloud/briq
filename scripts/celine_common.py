@@ -267,6 +267,71 @@ def paginated_plp_urls(url: str, *, pages: int = 6, page_size: int = 24) -> list
     return uniq
 
 
+def is_blocked_pdp_title(title: str | None) -> bool:
+    """True when Akamai/WAF HTML was scraped instead of a real PDP."""
+    t = (title or "").strip().lower()
+    return t in {"access denied", "access denied.", "forbidden", "403"} or t.startswith(
+        "access denied"
+    )
+
+
+def title_from_plp_card(card: dict) -> str:
+    """Best-effort product name from PLP card text (before price)."""
+    text = str(card.get("text") or "").strip()
+    if not text:
+        return ""
+    # Strip trailing "1 234 GBP" / "£1,234" style prices from PLP blobs.
+    text = re.sub(
+        r"(?i)(?:£\s*)?[0-9][0-9,]*(?:\.[0-9]{2})?\s*GBP.*$",
+        "",
+        text,
+    ).strip()
+    text = re.sub(r"(?i)^CELINE\s+", "", text).strip()
+    if is_blocked_pdp_title(text):
+        return ""
+    return text[:160]
+
+
+def title_from_pdp_url(url: str) -> str:
+    """Recover English title from Celine PDP slug when scrape is blocked."""
+    path = (url or "").split("?")[0].rstrip("/")
+    slug = path.rsplit("/", 1)[-1]
+    slug = re.sub(r"\.html?$", "", slug, flags=re.I)
+    parts = [p for p in slug.split("-") if p]
+    # Drop trailing SKU token(s): last hyphen chunk that contains a digit and
+    # looks like a maison code (has a dot colourway or is long), e.g. AA0FP2K77.38NO.
+    # Never strip material words like "cashmere".
+    cut = None
+    for i in range(len(parts) - 1, -1, -1):
+        tok = parts[i]
+        if re.search(r"\d", tok) and ("." in tok or len(tok) >= 6):
+            cut = i
+            break
+    if cut is not None and cut > 0:
+        parts = parts[:cut]
+    slug = " ".join(parts).strip()
+    if not slug or is_blocked_pdp_title(slug):
+        return ""
+    out = []
+    for w in slug.split():
+        if w.isupper() and len(w) <= 5:
+            out.append(w)
+        else:
+            out.append(w.capitalize())
+    return " ".join(out)
+
+
+def is_blocked_pdp(pdp: dict, *, title: str | None = None) -> bool:
+    t = title if title is not None else (pdp.get("title") or "")
+    if is_blocked_pdp_title(str(t)):
+        return True
+    # Empty PDP body with no commerce signals
+    if not (pdp.get("details") or pdp.get("images") or pdp.get("sku") or pdp.get("priceText")):
+        if is_blocked_pdp_title(str(t)) or not str(t).strip():
+            return True
+    return False
+
+
 def scrape_pdp(page, url: str) -> dict:
     page.goto(url, wait_until="domcontentloaded", timeout=90000)
     accept_cookies(page)
@@ -362,14 +427,58 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
         for card in cards:
             cid = str(card.get("id") or "").strip()
             if cid and cid.lower() in skip:
+                # Still record leaf membership so category leaves (e.g. leather)
+                # stay populated even when the PDP was scraped under another leaf.
+                rows.append(
+                    {
+                        "id": cid,
+                        "sku": cid,
+                        "title": "",
+                        "gbpPrice": float(card.get("gbpPrice") or 0) or None,
+                        "url": card.get("href") or "",
+                        "leafId": leaf["id"],
+                        "leafLabel": leaf.get("label") or "",
+                        "leafLabelKo": leaf.get("leafLabelKo") or leaf.get("labelKo") or "",
+                        "collections": list(dict.fromkeys(leaf.get("collections") or [leaf["id"]])),
+                        "color": {},
+                        "details": [],
+                        "sizes": [],
+                        "sizeGuideUrl": "",
+                        "sizeGuide": {},
+                        "images": [],
+                        "remoteImages": [],
+                        "availability": None,
+                        "membershipOnly": True,
+                        "breadcrumb": [],
+                        "categoryLabel": "",
+                    }
+                )
                 continue
             seen += 1
             if limit and seen > limit:
                 break
             pdp = scrape_pdp(page, card["href"])
             sku = (pdp.get("sku") or card.get("id") or "").strip()
+            title = (pdp.get("title") or "").strip()
+            blocked = is_blocked_pdp(pdp, title=title)
+            if blocked:
+                # Prefer PLP / URL name over "Access Denied" so weekly sync
+                # cannot poison the catalogue with WAF HTML.
+                title = (
+                    title_from_plp_card(card)
+                    or title_from_pdp_url(card.get("href") or "")
+                    or title
+                )
+            if is_blocked_pdp_title(title):
+                print(f"skip blocked PDP {card.get('href')}", flush=True)
+                continue
             remote_images = filter_product_images(sku or card["id"], pdp.get("images") or [])
             local_images = materialize_images(sku or card["id"], remote_images)
+            # If WAF blocked image scrape but we already have local files, keep going.
+            if blocked and not local_images:
+                folder = slugify((sku or card["id"]).replace(".", "-"))
+                cached = sorted((IMG_ROOT / folder).glob("*.jpg"))
+                local_images = [f"/products/ce-pdp/{folder}/{p.name}" for p in cached]
             size_guide_url = pdp.get("sizeGuideUrl") or ""
             size_guide_html = fetch_size_guide_html(size_guide_url) if size_guide_url else ""
             size_guide = extract_size_guide(size_guide_html)
@@ -380,7 +489,7 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
                 {
                     "id": sku or card["id"],
                     "sku": sku or card["id"],
-                    "title": (pdp.get("title") or "").strip(),
+                    "title": title,
                     "gbpPrice": parse_gbp(pdp.get("priceText")) or float(card.get("gbpPrice") or 0),
                     "url": card["href"],
                     "leafId": leaf["id"],
@@ -388,13 +497,15 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
                     "leafLabelKo": leaf.get("leafLabelKo") or leaf.get("labelKo") or "",
                     "collections": list(dict.fromkeys(leaf.get("collections") or [leaf["id"]])),
                     "color": {"label": pdp.get("color") or ""},
-                    "details": pdp.get("details") or [],
+                    "details": [] if blocked else (pdp.get("details") or []),
                     "sizes": sizes,
                     "sizeGuideUrl": size_guide_url,
                     "sizeGuide": size_guide,
                     "images": local_images,
                     "remoteImages": remote_images,
-                    "availability": bool(pdp.get("availability")),
+                    # Don't mark WAF failures as sold-out — availability unknown.
+                    "availability": False if blocked else bool(pdp.get("availability")),
+                    "scrapeBlocked": bool(blocked),
                     "breadcrumb": pdp.get("breadcrumb") or [],
                     "categoryLabel": pdp.get("categoryLabel") or "",
                 }

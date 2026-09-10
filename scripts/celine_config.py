@@ -123,21 +123,21 @@ CE_WOMEN_RTW_LEAVES = [
         "id": "ce-women-shirts-blouses",
         "label": "Shirts and Blouses",
         "labelKo": "셔츠 & 블라우스",
-        "url": "https://www.celine.com/en-gb/women/ready-to-wear/shirts-and-blouses/",
+        "url": "https://www.celine.com/en-gb/women/ready-to-wear/shirts-and-tops/",
         "collections": [*CE_WOMEN_PARENT, "ce-women-shirts-blouses"],
     },
     {
         "id": "ce-women-tops-tshirts",
         "label": "Tops and T-Shirts",
         "labelKo": "탑 & 티셔츠",
-        "url": "https://www.celine.com/en-gb/women/ready-to-wear/tops-and-t-shirts/",
+        "url": "https://www.celine.com/en-gb/women/ready-to-wear/t-shirts-and-sweatshirts/",
         "collections": [*CE_WOMEN_PARENT, "ce-women-tops-tshirts"],
     },
     {
         "id": "ce-women-dresses",
         "label": "Dresses",
         "labelKo": "드레스",
-        "url": "https://www.celine.com/en-gb/women/ready-to-wear/dresses/",
+        "url": "https://www.celine.com/en-gb/women/ready-to-wear/dresses-and-skirts/",
         "collections": [*CE_WOMEN_PARENT, "ce-women-dresses"],
     },
     {
@@ -165,14 +165,14 @@ CE_WOMEN_RTW_LEAVES = [
         "id": "ce-women-leather",
         "label": "Leather",
         "labelKo": "레더",
-        "url": "https://www.celine.com/en-gb/women/ready-to-wear/leather/",
+        "url": "https://www.celine.com/en-gb/women/ready-to-wear/leather-and-shearling/",
         "collections": [*CE_WOMEN_PARENT, "ce-women-leather"],
     },
     {
         "id": "ce-women-swimwear",
         "label": "Swimwear",
         "labelKo": "스윔웨어",
-        "url": "https://www.celine.com/en-gb/women/ready-to-wear/swimwear/",
+        "url": "https://www.celine.com/en-gb/women/ready-to-wear/swimwear-and-lingerie/",
         "collections": [*CE_WOMEN_PARENT, "ce-women-swimwear"],
     },
 ]
@@ -696,9 +696,38 @@ def celine_raw_paths() -> list[Path]:
 
 
 def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> list[dict]:
+    from celine_common import is_blocked_pdp_title
+
     by_id = {p["id"]: p for p in existing_products if p.get("id")}
     for row in new_rows:
         prev = by_id.get(row["id"])
+        if row.get("membershipOnly"):
+            if not prev:
+                continue
+            prev = dict(prev)
+            prev["collections"] = list(
+                dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
+            )
+            # If product was only under rtw-all, promote subcategory when leaf is specific.
+            leaf = row.get("leafId") or ""
+            if leaf and leaf not in {"ce-women-rtw-all", "ce-men-rtw-all"} and not (
+                prev.get("leafId") and prev.get("leafId") not in {"ce-women-rtw-all", "ce-men-rtw-all"}
+            ):
+                # keep existing leafId if already a specific leaf; else adopt
+                if (prev.get("leafId") or "") in {"", "ce-women-rtw-all", "ce-men-rtw-all"}:
+                    prev["leafId"] = leaf
+            by_id[row["id"]] = prev
+            continue
+        new_blocked = is_blocked_pdp_title(row.get("title")) or bool(row.get("scrapeBlocked"))
+        prev_good = bool(prev) and not is_blocked_pdp_title((prev or {}).get("title"))
+        if new_blocked and prev_good:
+            # Never let a WAF/blocked scrape overwrite a known-good PDP.
+            prev = dict(prev)
+            prev["collections"] = list(
+                dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
+            )
+            by_id[row["id"]] = prev
+            continue
         if prev:
             row["collections"] = list(
                 dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
@@ -709,5 +738,12 @@ def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> l
                 row["sizes"] = prev.get("sizes") or row["sizes"]
             if prev.get("sizeGuide", {}).get("rows") and not row.get("sizeGuide", {}).get("rows"):
                 row["sizeGuide"] = prev.get("sizeGuide") or row.get("sizeGuide") or {}
+            # Prefer previous non-blocked title if new title is still bad.
+            if is_blocked_pdp_title(row.get("title")) and prev.get("title"):
+                row["title"] = prev["title"]
+            if not row.get("title") and prev.get("title"):
+                row["title"] = prev["title"]
+            if row.get("availability") is None and prev.get("availability") is not None:
+                row["availability"] = prev.get("availability")
         by_id[row["id"]] = row
     return list(by_id.values())

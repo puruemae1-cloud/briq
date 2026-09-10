@@ -30,11 +30,20 @@ def main() -> None:
     if not leaves:
         raise SystemExit(f"unknown leaf: {args.leaf}")
 
+    from celine_common import is_blocked_pdp_title
+
     out_raw = RAW_DIR / cfg["out"]
     existing = load_json(out_raw, {"products": []})
     products = existing.get("products") or []
 
-    skip_ids = {str(p.get("id") or p.get("sku") or "") for p in products}
+    # Skip healthy IDs, but ALWAYS retry Access Denied / blocked poison rows.
+    skip_ids = {
+        str(p.get("id") or p.get("sku") or "")
+        for p in products
+        if str(p.get("id") or p.get("sku") or "")
+        and not is_blocked_pdp_title(p.get("title"))
+        and not p.get("scrapeBlocked")
+    }
     for leaf in leaves:
         rows = scrape_leaf_rows(leaf, headed=args.headed, limit=args.limit, skip_ids=skip_ids)
         products = merge_product_rows(products, rows)
