@@ -24,7 +24,7 @@ import {
 import { cartUnitPrice } from "@/lib/cart-price";
 import { needsChanelMobilePackshotZoom, needsChanelPcPackshotZoom } from "@/lib/ch-packshot-zoom";
 import { resolveProductImage } from "@/lib/product-image";
-import { compareAxSizes, isArcteryxProduct } from "@/lib/ax-size-order";
+import { compareAxSizes } from "@/lib/ax-size-order";
 
 type ColorGroup = {
   key: string;
@@ -168,12 +168,12 @@ export function ProductDetail({
       }
     }
     const groups = Array.from(map.values());
-    if (isArcteryxProduct(product)) {
-      for (const g of groups) {
-        g.variants = [...g.variants].sort((a, b) =>
-          compareAxSizes(a.size || "", b.size || ""),
-        );
-      }
+    // Always sort size chips small→large (letter + numeric). Catalog scrape
+    // order is often wrong (e.g. Dior L/M/S/XL/XS…); AX inseam rules still apply.
+    for (const g of groups) {
+      g.variants = [...g.variants].sort((a, b) =>
+        compareAxSizes(a.size || "", b.size || ""),
+      );
     }
     if (isCw) {
       for (const g of groups) {
