@@ -148,6 +148,12 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
     image = images[0] if images else "/products/vw-pdp/placeholder.jpg"
     if not sizes:
         sizes = ["OS"]
+    # One colourway per SKU — shared colorKey so PDP size chips aren't
+    # mis-rendered as duplicate colour image swatches.
+    color = row.get("color") if isinstance(row.get("color"), dict) else {}
+    color_label = str((color or {}).get("label") or (color or {}).get("label_int") or "").strip()
+    color_key = product_id
+    color_name_ko = color_label if color_label else "기본"
     out = []
     for size in sizes:
         out.append(
@@ -162,6 +168,8 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
                 "images": images,
                 "sourceUrl": row.get("url") or "",
                 "inStock": bool(row.get("availability", True)),
+                "colorKey": color_key,
+                "colorNameKo": color_name_ko,
                 "size": size,
                 "vwCollections": row.get("collections") or [],
             }

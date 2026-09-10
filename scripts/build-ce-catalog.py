@@ -261,7 +261,13 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
     images = row.get("images") or []
     image = images[0] if images else "/products/ce-pdp/placeholder.jpg"
     if not sizes:
-      sizes = ["OS"]
+        sizes = ["OS"]
+    # Celine SKUs are one colourway each; sizes must share colorKey so PDP
+    # shows size chips instead of identical image swatches per size.
+    color = row.get("color") if isinstance(row.get("color"), dict) else {}
+    color_label = str((color or {}).get("label") or (color or {}).get("label_int") or "").strip()
+    color_key = product_id
+    color_name_ko = color_label if color_label else "기본"
     out = []
     for size in sizes:
         out.append(
@@ -276,6 +282,8 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
                 "images": images,
                 "sourceUrl": row.get("url") or "",
                 "inStock": bool(row.get("availability", True)),
+                "colorKey": color_key,
+                "colorNameKo": color_name_ko,
                 "size": size,
                 "ceCollections": row.get("collections") or [],
             }

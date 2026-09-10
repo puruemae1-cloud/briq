@@ -138,6 +138,9 @@ export function ProductDetail({
   const hasSizes = allVariants.some((v) => Boolean(v.size));
   const isCw = product.brand === "Christopher Ward";
   const productAvailable = isProductInStock(product);
+  // CE/VW historically omitted colorKey — without this, each size becomes its own
+  // "컬러" image swatch. Collapse to one colourway when no colorKey exists.
+  const hasExplicitColorKeys = allVariants.some((v) => Boolean(v.colorKey));
 
   const colorGroups: ColorGroup[] = useMemo(() => {
     if (!hasSizes) {
@@ -151,12 +154,14 @@ export function ProductDetail({
     }
     const map = new Map<string, ColorGroup>();
     for (const v of allVariants) {
-      const key = v.colorKey || v.id;
+      const key =
+        v.colorKey ||
+        (hasExplicitColorKeys ? v.id : product.id);
       const existing = map.get(key);
       if (!existing) {
         map.set(key, {
           key,
-          nameKo: v.colorNameKo || v.nameKo,
+          nameKo: v.colorNameKo || (hasExplicitColorKeys ? v.nameKo : "기본"),
           image: v.image,
           variants: [v],
           inStock: v.inStock,
@@ -185,7 +190,7 @@ export function ProductDetail({
       }
     }
     return groups;
-  }, [allVariants, hasSizes, product, isCw]);
+  }, [allVariants, hasSizes, hasExplicitColorKeys, product, isCw]);
 
   // CW: pick case size first (official WSize), then strap swatches for that size.
   const cwCaseSizeOptions = useMemo(() => {
@@ -310,20 +315,23 @@ export function ProductDetail({
   );
   const onSale = Boolean(salePct && displayCompareAt);
 
+  // One colourway → size chips only (no repeated identical swatches).
+  const showColorSwatches = colorGroupsForUi.length > 1;
+
   const optionLabel = selected
     ? hasSizes
       ? isCw
         ? `${selected.size || ""} · ${selected.colorNameKo || selectedColor?.nameKo || ""}`.trim()
-        : `${selected.colorNameKo || selectedColor?.nameKo || ""} · ${selected.size || ""}`.trim()
+        : showColorSwatches
+          ? `${selected.colorNameKo || selectedColor?.nameKo || ""} · ${selected.size || ""}`.trim()
+          : `${selected.size || ""}`.trim()
       : selected.nameKo
     : "";
 
   const variantLabel =
     product.brand === "Christopher Ward"
       ? "스트랩"
-      : hasSizes
-        ? "컬러"
-        : "컬러";
+      : "컬러";
 
   const sizeAxisLabel = isCw ? "케이스 사이즈" : "사이즈";
 
@@ -349,7 +357,7 @@ export function ProductDetail({
   ) : null;
 
   const colorBlock =
-    colorGroupsForUi.length > 0 ? (
+    showColorSwatches ? (
       <div className="variant-block">
         <p className="variant-block__label">
           {variantLabel} ·{" "}
@@ -596,7 +604,7 @@ export function ProductDetail({
                 selectedSize={selected?.size}
               />
             ) : null}
-            {colorGroupsForUi.length > 0 ? (
+            {showColorSwatches ? (
               <ColorSwatches
                 productId={product.id}
                 colors={colorGroupsForUi}
@@ -604,9 +612,11 @@ export function ProductDetail({
                 size={hasSizes ? selected?.size : undefined}
                 idPrefix="dock"
               />
-            ) : product.braceletResize ? null : (
+            ) : colorGroupsForUi.length === 0 &&
+              !hasSizes &&
+              !product.braceletResize ? (
               <p className="pdp-dock__empty">선택 가능한 옵션이 없습니다.</p>
-            )}
+            ) : null}
             {!isCw && hasSizes && sizeOptions.length > 0 && selectedColor ? (
               <>
                 <SizePicker
