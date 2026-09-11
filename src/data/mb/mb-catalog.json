@@ -139,7 +139,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.441582+00:00"
+    "updatedAt": "2026-09-11T20:18:21.674738+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -281,7 +281,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.445699+00:00"
+    "updatedAt": "2026-09-11T20:18:21.677443+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -423,7 +423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.448103+00:00"
+    "updatedAt": "2026-09-11T20:18:21.679342+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -616,7 +616,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.450688+00:00"
+    "updatedAt": "2026-09-11T20:18:21.682166+00:00"
   },
   {
     "id": "mb-alfie-sunglasses",
@@ -760,7 +760,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.452258+00:00"
+    "updatedAt": "2026-09-11T20:18:21.683743+00:00"
   },
   {
     "id": "mb-antony",
@@ -1185,7 +1185,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.457817+00:00"
+    "updatedAt": "2026-09-11T20:18:21.689391+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -1547,7 +1547,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.461938+00:00"
+    "updatedAt": "2026-09-11T20:18:21.693626+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1720,7 +1720,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.464346+00:00"
+    "updatedAt": "2026-09-11T20:18:21.696055+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -1861,7 +1861,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.465896+00:00"
+    "updatedAt": "2026-09-11T20:18:21.697914+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -2002,7 +2002,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.467434+00:00"
+    "updatedAt": "2026-09-11T20:18:21.699495+00:00"
   },
   {
     "id": "mb-carbon-lite-care-spray",
@@ -2137,7 +2137,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.471333+00:00"
+    "updatedAt": "2026-09-11T20:18:21.703345+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -2310,7 +2310,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.473840+00:00"
+    "updatedAt": "2026-09-11T20:18:21.705857+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2483,7 +2483,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.475870+00:00"
+    "updatedAt": "2026-09-11T20:18:21.707976+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -2495,7 +2495,9 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-wallets"
+      "mb-men-wallets",
+      "mb-women-acc",
+      "mb-women-purses"
     ],
     "tags": [
       "mulberry",
@@ -2619,6 +2621,118 @@
           "mb-men-acc",
           "mb-men-wallets"
         ]
+      },
+      {
+        "id": "mb-g-rl4644-205p187-sz-os",
+        "name": "Butter Small Classic Grain / OS",
+        "nameKo": "Butter 스몰 클래식 그레인",
+        "sku": "G_RL4644_205P187",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rl4644-205p187/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl4644-205p187/1.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/2.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/3.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/4.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/5.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/6.jpg",
+          "/products/mb-pdp/g-rl4644-205p187/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/credit-card-slip-butter-small-classic-grain",
+        "inStock": true,
+        "colorKey": "butter-small-classic-grain",
+        "colorNameKo": "Butter 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl4644-205u796-sz-os",
+        "name": "Portobello Blue Small Classic Grain / OS",
+        "nameKo": "Portobello Blue 스몰 클래식 그레인",
+        "sku": "G_RL4644_205U796",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rl4644-205u796/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl4644-205u796/1.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/2.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/3.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/4.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/5.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/6.jpg",
+          "/products/mb-pdp/g-rl4644-205u796/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/credit-card-slip-portobello-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "portobello-blue-small-classic-grain",
+        "colorNameKo": "Portobello Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl4644-205t629-sz-os",
+        "name": "Marina Blue Small Classic Grain / OS",
+        "nameKo": "Marina Blue 스몰 클래식 그레인",
+        "sku": "G_RL4644_205T629",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rl4644-205t629/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl4644-205t629/1.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/2.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/3.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/4.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/5.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/6.jpg",
+          "/products/mb-pdp/g-rl4644-205t629/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/credit-card-slip-marina-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "marina-blue-small-classic-grain",
+        "colorNameKo": "Marina Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl4644-205n663-sz-os",
+        "name": "Coral Orange Small Classic Grain / OS",
+        "nameKo": "Coral Orange 스몰 클래식 그레인",
+        "sku": "G_RL4644_205N663",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rl4644-205n663/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl4644-205n663/1.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/2.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/3.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/4.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/5.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/6.jpg",
+          "/products/mb-pdp/g-rl4644-205n663/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/credit-card-slip-coral-orange-small-classic-grain",
+        "inStock": true,
+        "colorKey": "coral-orange-small-classic-grain",
+        "colorNameKo": "Coral Orange 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
       }
     ],
     "storySections": [
@@ -2645,7 +2759,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "4가지"
+        "valueKo": "8가지"
       }
     ],
     "featuresKo": [
@@ -2697,7 +2811,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.478668+00:00"
+    "updatedAt": "2026-09-11T20:18:21.711560+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -2921,7 +3035,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.481823+00:00"
+    "updatedAt": "2026-09-11T20:18:21.714779+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -3152,7 +3266,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.486128+00:00"
+    "updatedAt": "2026-09-11T20:18:21.719202+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -3325,7 +3439,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.488627+00:00"
+    "updatedAt": "2026-09-11T20:18:21.721720+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -3469,7 +3583,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.490426+00:00"
+    "updatedAt": "2026-09-11T20:18:21.723581+00:00"
   },
   {
     "id": "mb-fantasy-mulberry-logo-stripe-towel",
@@ -3609,7 +3723,237 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.491932+00:00"
+    "updatedAt": "2026-09-11T20:18:21.725101+00:00"
+  },
+  {
+    "id": "mb-folded-multi-card-wallet",
+    "name": "Folded Multi-Card Wallet",
+    "nameKo": "Folded Multi-Card 월렛",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-women-purses",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-purses"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Neat and practical, with Mulberry's signature press stud closure, the Folded Multi-Card Wallet is perfect for popping inside your bag or pocket.",
+    "image": "/products/mb-pdp/g-rl6447-205p187/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl6447-205p187/1.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/2.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/3.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/4.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/5.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/6.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/7.jpg",
+      "/products/mb-pdp/g-rl6447-205p187/8.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 275.0,
+    "sku": "G_RL6447_205P187",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-butter-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl6447-205p187-sz-os",
+        "name": "Butter Small Classic Grain / OS",
+        "nameKo": "Butter 스몰 클래식 그레인",
+        "sku": "G_RL6447_205P187",
+        "gbpPrice": 275.0,
+        "price": 700000,
+        "image": "/products/mb-pdp/g-rl6447-205p187/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6447-205p187/1.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/2.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/3.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/4.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/5.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/6.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/7.jpg",
+          "/products/mb-pdp/g-rl6447-205p187/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-butter-small-classic-grain",
+        "inStock": true,
+        "colorKey": "butter-small-classic-grain",
+        "colorNameKo": "Butter 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl6447-205u796-sz-os",
+        "name": "Portobello Blue Small Classic Grain / OS",
+        "nameKo": "Portobello Blue 스몰 클래식 그레인",
+        "sku": "G_RL6447_205U796",
+        "gbpPrice": 275.0,
+        "price": 700000,
+        "image": "/products/mb-pdp/g-rl6447-205u796/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6447-205u796/1.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/2.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/3.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/4.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/5.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/6.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/7.jpg",
+          "/products/mb-pdp/g-rl6447-205u796/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-portobello-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "portobello-blue-small-classic-grain",
+        "colorNameKo": "Portobello Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl6447-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain / OS",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_RL6447_205D117",
+        "gbpPrice": 275.0,
+        "price": 700000,
+        "image": "/products/mb-pdp/g-rl6447-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6447-205d117/1.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/2.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/3.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/4.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/5.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/6.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/7.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
+      {
+        "id": "mb-g-rl6447-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_RL6447_205A100",
+        "gbpPrice": 275.0,
+        "price": 700000,
+        "image": "/products/mb-pdp/g-rl6447-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6447-205a100/1.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/2.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/3.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/4.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/5.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/6.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/7.jpg",
+          "/products/mb-pdp/g-rl6447-205a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/folded-multi-card-wallet-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Neat and practical, with Mulberry's signature press stud closure, the Folded Multi-Card Wallet is perfect for popping inside your bag or pocket.",
+        "image": "/products/mb-pdp/g-rl6447-205p187/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "Card wallet with signature press stud closure. Foil embossed Mulberry logo Mulberry tree signature press stud Foil embossed internal Mulberry tree One zipped compartment Two internal slip pockets Six internal credit card slots One note compartment Brass components with tumbled finish Nappa lining Our Monogramming service is available in the UK and across select global stores. In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 8cm Width 12.5cm Depth 3cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL6447-205A100",
+        "image": "/products/mb-pdp/g-rl6447-205p187/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "8cm · 12.5cm · 3cm",
+        "image": "/products/mb-pdp/g-rl6447-205p187/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "8cm · 12.5cm · 3cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "Card wallet with signature press stud closure. Foil embossed Mulberry logo Mulberry tree signature press stud Foil embossed internal Mulberry tree One zipped compartment Two internal slip pockets Six internal credit card slots One note compartment Brass components with tumbled finish Nappa lining Our Monogramming service is available in the UK and across select global stores. In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 8cm Width 12.5cm Depth 3cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL6447-205A100",
+      "8cm",
+      "12.5cm",
+      "3cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T20:18:21.726844+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -3639,7 +3983,7 @@
       "/products/mb-pdp/g-rk5988-000a500/6.jpg",
       "/products/mb-pdp/g-rk5988-000a500/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 145.0,
     "sku": "G_RK5988_000A500",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/football-keyring-black-white-mixed-material",
@@ -3749,7 +4093,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.493347+00:00"
+    "updatedAt": "2026-09-11T20:18:21.729942+00:00"
   },
   {
     "id": "mb-gift-card",
@@ -3773,7 +4117,7 @@
     "images": [
       "/products/mb-pdp/ap26-delta-s/1.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 50.0,
     "sku": "AP26_DELTA_S",
     "sourceUrl": "https://www.mulberry.com/gb/shop/gift-cards",
@@ -3859,7 +4203,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.495192+00:00"
+    "updatedAt": "2026-09-11T20:18:21.730674+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -3889,7 +4233,7 @@
       "/products/mb-pdp/g-hh9956-047a100/6.jpg",
       "/products/mb-pdp/g-hh9956-047a100/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1295.0,
     "sku": "G_HH9956_047A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-black-suede",
@@ -4086,7 +4430,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.497643+00:00"
+    "updatedAt": "2026-09-11T20:18:21.733695+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -4123,7 +4467,7 @@
       "/products/mb-pdp/g-hs5094-127q330/7.jpg",
       "/products/mb-pdp/g-hs5094-127q330/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 895.0,
     "sku": "G_HS5094_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-backpack-mole-cognac-bioveg-scotchgrain",
@@ -4323,7 +4667,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.501278+00:00"
+    "updatedAt": "2026-09-11T20:18:21.737337+00:00"
   },
   {
     "id": "mb-heritage-braided-belt",
@@ -4352,7 +4696,7 @@
       "/products/mb-pdp/g-mm6396-657g130/5.jpg",
       "/products/mb-pdp/g-mm6396-657g130/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 265.0,
     "sku": "G_MM6417_540A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-small-leather-goods/mens-belts/heritage-braided-belt-black-kansas-leather",
@@ -4472,7 +4816,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.503204+00:00"
+    "updatedAt": "2026-09-11T20:18:21.739267+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -4508,7 +4852,7 @@
       "/products/mb-pdp/g-hb5130-127q330/6.jpg",
       "/products/mb-pdp/g-hb5130-127q330/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 895.0,
     "sku": "G_HB5130_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-briefcase-mole-cognac-bio-based-scotchgrain",
@@ -4843,7 +5187,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.507527+00:00"
+    "updatedAt": "2026-09-11T20:18:21.744539+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -4877,7 +5221,7 @@
       "/products/mb-pdp/g-hs5195-127q330/7.jpg",
       "/products/mb-pdp/g-hs5195-127q330/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 845.0,
     "sku": "G_HS5195_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/luggage/heritage-day-clipper-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -5135,7 +5479,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.511578+00:00"
+    "updatedAt": "2026-09-11T20:18:21.748721+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -5172,7 +5516,7 @@
       "/products/mb-pdp/g-hl5136-127a340/7.jpg",
       "/products/mb-pdp/g-hl5136-127a340/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_HL5136_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/heritage-medium-clipper-black-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -5544,7 +5888,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.517774+00:00"
+    "updatedAt": "2026-09-11T20:18:21.754922+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -5575,7 +5919,7 @@
       "/products/mb-pdp/g-hs5202-179a100/7.jpg",
       "/products/mb-pdp/g-hs5202-179a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 795.0,
     "sku": "G_HS5202_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-nylon-backpack-black-nylon",
@@ -5688,7 +6032,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.520517+00:00"
+    "updatedAt": "2026-09-11T20:18:21.758144+00:00"
   },
   {
     "id": "mb-heritage-sunglasses",
@@ -5720,7 +6064,7 @@
       "/products/mb-pdp/g-rs5476-000a100/7.jpg",
       "/products/mb-pdp/g-rs5476-000a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 240.0,
     "sku": "G_RS5476_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/heritage-sunglasses-black-metal",
@@ -5862,7 +6206,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.522588+00:00"
+    "updatedAt": "2026-09-11T20:18:21.760505+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -5894,7 +6238,7 @@
       "/products/mb-pdp/g-rl8176-205d117/5.jpg",
       "/products/mb-pdp/g-rl8176-205d117/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 295.0,
     "sku": "G_RL8176_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/heritage-wash-case-foggy-grey-small-classic-grain",
@@ -6032,7 +6376,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.524154+00:00"
+    "updatedAt": "2026-09-11T20:18:21.764603+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -6064,7 +6408,7 @@
       "/products/mb-pdp/g-hp9659-206q129/7.jpg",
       "/products/mb-pdp/g-hp9659-206q129/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 635.0,
     "sku": "G_HP9659_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-waxed-backpack-dark-moss-waxed-cotton",
@@ -6205,7 +6549,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.528106+00:00"
+    "updatedAt": "2026-09-11T20:18:21.766925+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -6238,7 +6582,7 @@
       "/products/mb-pdp/g-hp5236-206q129/7.jpg",
       "/products/mb-pdp/g-hp5236-206q129/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 795.0,
     "sku": "G_HP5236_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/mens-holdalls/heritage-waxed-day-clipper-dark-moss-waxed-cotton",
@@ -6379,7 +6723,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.530390+00:00"
+    "updatedAt": "2026-09-11T20:18:21.769209+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -6411,7 +6755,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -6691,7 +7035,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.535069+00:00"
+    "updatedAt": "2026-09-11T20:18:21.773970+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -6722,7 +7066,7 @@
       "/products/mb-pdp/g-rl8312-127q330/7.jpg",
       "/products/mb-pdp/g-rl8312-127q330/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 175.0,
     "sku": "G_RL8312_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/heritage-zipped-long-card-holder-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -6834,7 +7178,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.536939+00:00"
+    "updatedAt": "2026-09-11T20:18:21.776111+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -6865,7 +7209,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -7175,7 +7519,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.541051+00:00"
+    "updatedAt": "2026-09-11T20:18:21.780605+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -7205,7 +7549,7 @@
       "/products/mb-pdp/g-rl8853-552g110/6.jpg",
       "/products/mb-pdp/g-rl8853-552g110/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 395.0,
     "sku": "G_RL8853_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
@@ -7345,7 +7689,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.542719+00:00"
+    "updatedAt": "2026-09-11T20:18:21.782163+00:00"
   },
   {
     "id": "mb-lily",
@@ -7373,7 +7717,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
     "sku": "G_HH3288_874A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/lily-black-glossy-goat",
@@ -7565,7 +7909,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.545235+00:00"
+    "updatedAt": "2026-09-11T20:18:21.784707+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -7597,7 +7941,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -7797,7 +8141,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.547098+00:00"
+    "updatedAt": "2026-09-11T20:18:21.786371+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -7827,7 +8171,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -8024,7 +8368,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.549790+00:00"
+    "updatedAt": "2026-09-11T20:18:21.789007+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -8055,7 +8399,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -8255,7 +8599,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.555253+00:00"
+    "updatedAt": "2026-09-11T20:18:21.796272+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -8286,7 +8630,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -8456,7 +8800,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.559222+00:00"
+    "updatedAt": "2026-09-11T20:18:21.798511+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -8487,7 +8831,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -8600,7 +8944,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.561642+00:00"
+    "updatedAt": "2026-09-11T20:18:21.800937+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -8630,7 +8974,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -8828,7 +9172,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.564103+00:00"
+    "updatedAt": "2026-09-11T20:18:21.803455+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -8859,7 +9203,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -9029,7 +9373,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.566756+00:00"
+    "updatedAt": "2026-09-11T20:18:21.806745+00:00"
   },
   {
     "id": "mb-monty-sunglasses",
@@ -9060,7 +9404,7 @@
       "/products/mb-pdp/g-rs5505-000a100/7.jpg",
       "/products/mb-pdp/g-rs5505-000a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 195.0,
     "sku": "G_RS5505_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-black-bio-acetate",
@@ -9231,7 +9575,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.569161+00:00"
+    "updatedAt": "2026-09-11T20:18:21.809216+00:00"
   },
   {
     "id": "mb-mulberry-leather-cream",
@@ -9259,7 +9603,7 @@
       "/products/mb-pdp/g-yl0500-000x100/4.jpg",
       "/products/mb-pdp/g-yl0500-000x100/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 13.0,
     "sku": "G_YL0500_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-cream-no-colour-mulberry-leather-cream",
@@ -9356,7 +9700,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.571123+00:00"
+    "updatedAt": "2026-09-11T20:18:21.811238+00:00"
   },
   {
     "id": "mb-mulberry-leather-gel",
@@ -9384,7 +9728,7 @@
       "/products/mb-pdp/g-yl0502-000x100/4.jpg",
       "/products/mb-pdp/g-yl0502-000x100/5.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 13.0,
     "sku": "G_YL0502_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-gel-no-colour-mulberry-leather-gel",
@@ -9481,7 +9825,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.573023+00:00"
+    "updatedAt": "2026-09-11T20:18:21.813152+00:00"
   },
   {
     "id": "mb-mulberry-leather-wax",
@@ -9509,7 +9853,7 @@
       "/products/mb-pdp/g-yl0501-000x100/4.jpg",
       "/products/mb-pdp/g-yl0501-000x100/5.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 13.0,
     "sku": "G_YL0501_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-wax-no-colour-leather-wax-mulberry",
@@ -9606,7 +9950,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.574954+00:00"
+    "updatedAt": "2026-09-11T20:18:21.815256+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -9637,7 +9981,7 @@
       "/products/mb-pdp/g-rl9045-205u931/7.jpg",
       "/products/mb-pdp/g-rl9045-205u931/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 295.0,
     "sku": "G_RL9045_205U931",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
@@ -9749,7 +10093,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.576515+00:00"
+    "updatedAt": "2026-09-11T20:18:21.816874+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap",
@@ -9780,7 +10124,7 @@
       "/products/mb-pdp/g-vh4167-176u888/7.jpg",
       "/products/mb-pdp/g-vh4167-176u888/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 95.0,
     "sku": "G_VH4167_176U888",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-him/mulberry-tree-baseball-cap-night-sky-cotton",
@@ -9880,7 +10224,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.577931+00:00"
+    "updatedAt": "2026-09-11T20:18:21.819916+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-denim",
@@ -9907,7 +10251,7 @@
       "/products/mb-pdp/g-vh4163-212u927/3.jpg",
       "/products/mb-pdp/g-vh4163-212u927/4.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 95.0,
     "sku": "G_VH4163_212U927",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-baseball-cap-denim-washed-black-denim-cotton",
@@ -10003,7 +10347,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.581335+00:00"
+    "updatedAt": "2026-09-11T20:18:21.821384+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-striped",
@@ -10031,7 +10375,7 @@
       "/products/mb-pdp/g-vh4164-213n663/4.jpg",
       "/products/mb-pdp/g-vh4164-213n663/5.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 95.0,
     "sku": "G_VH4164_213N663",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-tree-baseball-cap-striped-coral-orange-polyester",
@@ -10154,7 +10498,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.583263+00:00"
+    "updatedAt": "2026-09-11T20:18:21.823166+00:00"
   },
   {
     "id": "mb-mulberry-tree-jacquard-towel",
@@ -10185,7 +10529,7 @@
       "/products/mb-pdp/g-vy0007-944u889/6.jpg",
       "/products/mb-pdp/g-vy0007-944u889/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 195.0,
     "sku": "G_VY0007_944U889",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/mulberry-tree-jacquard-towel-navy-teak-cotton",
@@ -10296,7 +10640,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.584982+00:00"
+    "updatedAt": "2026-09-11T20:18:21.824742+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -10324,7 +10668,7 @@
       "/products/mb-pdp/g-rl9064-127a340/4.jpg",
       "/products/mb-pdp/g-rl9064-127a340/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 160.0,
     "sku": "G_RL9064_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
@@ -10488,7 +10832,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.587746+00:00"
+    "updatedAt": "2026-09-11T20:18:21.827231+00:00"
   },
   {
     "id": "mb-pen-pot",
@@ -10520,7 +10864,7 @@
       "/products/mb-pdp/g-th0023-493g924/7.jpg",
       "/products/mb-pdp/g-th0023-493g924/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 295.0,
     "sku": "G_TH0023_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/pen-pot-vintage-oak-nappa",
@@ -10632,7 +10976,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.589302+00:00"
+    "updatedAt": "2026-09-11T20:18:21.828635+00:00"
   },
   {
     "id": "mb-photo-frame-large",
@@ -10664,7 +11008,7 @@
       "/products/mb-pdp/g-th0025-000g924/7.jpg",
       "/products/mb-pdp/g-th0025-000g924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 395.0,
     "sku": "G_TH0025_000G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-large-vintage-oak-nappa",
@@ -10777,7 +11121,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.590916+00:00"
+    "updatedAt": "2026-09-11T20:18:21.830142+00:00"
   },
   {
     "id": "mb-photo-frame-medium",
@@ -10809,7 +11153,7 @@
       "/products/mb-pdp/g-th0026-000g924/7.jpg",
       "/products/mb-pdp/g-th0026-000g924/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 295.0,
     "sku": "G_TH0026_000G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-medium-vintage-oak-nappa",
@@ -10922,7 +11266,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.592552+00:00"
+    "updatedAt": "2026-09-11T20:18:21.831843+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -10954,7 +11298,7 @@
       "/products/mb-pdp/g-hg5161-205a100/7.jpg",
       "/products/mb-pdp/g-hg5161-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1795.0,
     "sku": "G_HG5161_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
@@ -11096,7 +11440,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.595066+00:00"
+    "updatedAt": "2026-09-11T20:18:21.834187+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -11130,7 +11474,7 @@
       "/products/mb-pdp/g-hh0241-205a100/7.jpg",
       "/products/mb-pdp/g-hh0241-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1495.0,
     "sku": "G_HH0241_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
@@ -11475,7 +11819,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.600061+00:00"
+    "updatedAt": "2026-09-11T20:18:21.838800+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -11505,7 +11849,7 @@
       "/products/mb-pdp/g-nr7345-205u888/6.jpg",
       "/products/mb-pdp/g-nr7345-205u888/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 325.0,
     "sku": "G_NR7345_205U888",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-accessories/mens-organisers-inserts/postman-s-lock-agenda-night-sky-small-classic-grain",
@@ -11701,7 +12045,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.603188+00:00"
+    "updatedAt": "2026-09-11T20:18:21.843311+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -11730,7 +12074,7 @@
       "/products/mb-pdp/g-nq7346-205a100/5.jpg",
       "/products/mb-pdp/g-nq7346-205a100/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 275.0,
     "sku": "G_NQ7346_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/organisers-inserts/postman-s-lock-pocket-book-black-small-classic-grain",
@@ -11840,7 +12184,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.607037+00:00"
+    "updatedAt": "2026-09-11T20:18:21.845221+00:00"
   },
   {
     "id": "mb-quinn-sunglasses",
@@ -11872,7 +12216,7 @@
       "/products/mb-pdp/g-rs5479-000p109/7.jpg",
       "/products/mb-pdp/g-rs5479-000p109/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 195.0,
     "sku": "G_RS5479_000P109",
     "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-dune-bio-acetate",
@@ -12072,7 +12416,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.610114+00:00"
+    "updatedAt": "2026-09-11T20:18:21.848239+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -12101,7 +12445,7 @@
       "/products/mb-pdp/g-rk6026-000p100/5.jpg",
       "/products/mb-pdp/g-rk6026-000p100/6.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 95.0,
     "sku": "G_RK6026_000P100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-yellow-out-of-the-blue-mixed-material",
@@ -12293,7 +12637,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.612794+00:00"
+    "updatedAt": "2026-09-11T20:18:21.850795+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -12323,7 +12667,7 @@
       "/products/mb-pdp/g-rk5989-000z100/6.jpg",
       "/products/mb-pdp/g-rk5989-000z100/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 175.0,
     "sku": "G_RK5989_000Z100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/rugby-ball-keyring-white-mulberry-green-mixed-material",
@@ -12433,7 +12777,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.614327+00:00"
+    "updatedAt": "2026-09-11T20:18:21.852232+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -12464,7 +12808,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -12664,7 +13008,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.617546+00:00"
+    "updatedAt": "2026-09-11T20:18:21.855205+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -12693,7 +13037,7 @@
       "/products/mb-pdp/g-hp5238-000w578/4.jpg",
       "/products/mb-pdp/g-hp5238-000w578/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 420.0,
     "sku": "G_HH9365_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-antony-foggy-grey-small-classic-grain",
@@ -12888,7 +13232,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.620335+00:00"
+    "updatedAt": "2026-09-11T20:18:21.858118+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -12919,7 +13263,7 @@
       "/products/mb-pdp/g-rl9062-127a340/7.jpg",
       "/products/mb-pdp/g-rl9062-127a340/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 195.0,
     "sku": "G_RL9062_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
@@ -13060,7 +13404,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.622008+00:00"
+    "updatedAt": "2026-09-11T20:18:21.859788+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -13091,7 +13435,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -13204,7 +13548,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.624676+00:00"
+    "updatedAt": "2026-09-11T20:18:21.862513+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -13235,7 +13579,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -13435,7 +13779,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.629992+00:00"
+    "updatedAt": "2026-09-11T20:18:21.868234+00:00"
   },
   {
     "id": "mb-small-leather-tray",
@@ -13467,7 +13811,7 @@
       "/products/mb-pdp/g-th0024-493g924/7.jpg",
       "/products/mb-pdp/g-th0024-493g924/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 350.0,
     "sku": "G_TH0024_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/small-leather-tray-vintage-oak-nappa",
@@ -13579,7 +13923,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.631446+00:00"
+    "updatedAt": "2026-09-11T20:18:21.871501+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -13608,7 +13952,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -13719,7 +14063,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.635016+00:00"
+    "updatedAt": "2026-09-11T20:18:21.873166+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -13750,7 +14094,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -13863,7 +14207,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.636628+00:00"
+    "updatedAt": "2026-09-11T20:18:21.874785+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -13896,7 +14240,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -14154,7 +14498,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.638901+00:00"
+    "updatedAt": "2026-09-11T20:18:21.877084+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -14186,7 +14530,7 @@
       "/products/mb-pdp/g-hh0230-047d117/7.jpg",
       "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1595.0,
     "sku": "G_HH0230_047D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
@@ -14502,7 +14846,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.642672+00:00"
+    "updatedAt": "2026-09-11T20:18:21.881035+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -14533,7 +14877,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -14733,7 +15077,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.645232+00:00"
+    "updatedAt": "2026-09-11T20:18:21.883708+00:00"
   },
   {
     "id": "mb-throw-blanket",
@@ -14764,7 +15108,7 @@
       "/products/mb-pdp/g-th0033-000q130/6.jpg",
       "/products/mb-pdp/g-th0033-000q130/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 395.0,
     "sku": "G_TH0033_000Q130",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/throw-blanket-heritage-check-wool",
@@ -14875,7 +15219,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.646654+00:00"
+    "updatedAt": "2026-09-11T20:18:21.885164+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -14910,7 +15254,7 @@
       "/products/mb-pdp/g-hh0140-736a100/7.jpg",
       "/products/mb-pdp/g-hh0140-736a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-black-heavy-grain",
@@ -15138,7 +15482,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.649656+00:00"
+    "updatedAt": "2026-09-11T20:18:21.888320+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -15169,7 +15513,7 @@
       "/products/mb-pdp/g-hh0135-000h709/5.jpg",
       "/products/mb-pdp/g-hh0135-000h709/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH0135_000H709",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
@@ -15306,7 +15650,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.651630+00:00"
+    "updatedAt": "2026-09-11T20:18:21.890766+00:00"
   },
   {
     "id": "mb-wine-carrier",
@@ -15338,7 +15682,7 @@
       "/products/mb-pdp/g-tl0012-493g924/7.jpg",
       "/products/mb-pdp/g-tl0012-493g924/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 495.0,
     "sku": "G_TL0012_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/wine-carrier-vintage-oak-bovine-leather",
@@ -15451,6 +15795,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:12:56.653151+00:00"
+    "updatedAt": "2026-09-11T20:18:21.892330+00:00"
   }
 ]
