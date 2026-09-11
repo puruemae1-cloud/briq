@@ -1,5 +1,229 @@
 [
   {
+    "id": "mb-darley-camera-bag",
+    "name": "Darley Camera Bag",
+    "nameKo": "달리 카메라 백",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-crossbody",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-crossbody"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Dress snappy with the Darley Camera Bag, an on-the-go iteration of our iconic evening bag. Stylish and functional, this camera bag can be worn multiple ways – over the shoulder or crossbody – and is big enough to fit the everyday essentials: phone, wallet, keys, makeup, and more.",
+    "image": "/products/mb-pdp/g-hh0276-552g110/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh0276-552g110/1.jpg",
+      "/products/mb-pdp/g-hh0276-552g110/2.jpg",
+      "/products/mb-pdp/g-hh0276-552g110/3.jpg",
+      "/products/mb-pdp/g-hh0276-552g110/4.jpg",
+      "/products/mb-pdp/g-hh0276-552g110/5.jpg",
+      "/products/mb-pdp/g-hh0276-552g110/6.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 895.0,
+    "sku": "G_HH0274_787K569",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-camera-bag-apple-red-waxed-snake-print",
+    "variants": [
+      {
+        "id": "mb-g-hh0274-787k569-sz-os",
+        "name": "Apple Red Waxed Snake Print / OS",
+        "nameKo": "Apple Red Waxed Snake Print",
+        "sku": "G_HH0274_787K569",
+        "gbpPrice": 1045.0,
+        "price": 2650000,
+        "image": "/products/mb-pdp/g-hh0274-787k569/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0274-787k569/1.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/2.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/3.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/4.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/5.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/6.jpg",
+          "/products/mb-pdp/g-hh0274-787k569/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-camera-bag-apple-red-waxed-snake-print",
+        "inStock": true,
+        "colorKey": "apple-red-waxed-snake-print",
+        "colorNameKo": "Apple Red Waxed Snake Print",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh0276-552g110-sz-os",
+        "name": "Oak Two-Tone Small Classic Grain / OS",
+        "nameKo": "Oak Two-Tone 스몰 클래식 그레인",
+        "sku": "G_HH0276_552G110",
+        "gbpPrice": 895.0,
+        "price": 2270000,
+        "image": "/products/mb-pdp/g-hh0276-552g110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0276-552g110/1.jpg",
+          "/products/mb-pdp/g-hh0276-552g110/2.jpg",
+          "/products/mb-pdp/g-hh0276-552g110/3.jpg",
+          "/products/mb-pdp/g-hh0276-552g110/4.jpg",
+          "/products/mb-pdp/g-hh0276-552g110/5.jpg",
+          "/products/mb-pdp/g-hh0276-552g110/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/darley-camera-bag-oak-two-tone-small-classic-grain",
+        "inStock": true,
+        "colorKey": "oak-two-tone-small-classic-grain",
+        "colorNameKo": "Oak Two-Tone 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh0272-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_HH0272_205A100",
+        "gbpPrice": 895.0,
+        "price": 2270000,
+        "image": "/products/mb-pdp/g-hh0272-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0272-205a100/1.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/2.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/3.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/4.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/5.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/6.jpg",
+          "/products/mb-pdp/g-hh0272-205a100/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/darley-camera-bag-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh0273-047d117-sz-os",
+        "name": "Foggy Grey Suede / OS",
+        "nameKo": "Foggy Grey 스웨이드",
+        "sku": "G_HH0273_047D117",
+        "gbpPrice": 945.0,
+        "price": 2400000,
+        "image": "/products/mb-pdp/g-hh0273-047d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0273-047d117/1.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/2.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/3.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/4.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/5.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/6.jpg",
+          "/products/mb-pdp/g-hh0273-047d117/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-camera-bag-foggy-grey-suede",
+        "inStock": true,
+        "colorKey": "foggy-grey-suede",
+        "colorNameKo": "Foggy Grey 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Dress snappy with the Darley Camera Bag, an on-the-go iteration of our iconic evening bag. Stylish and functional, this camera bag can be worn multiple ways – over the shoulder or crossbody – and is big enough to fit the everyday essentials: phone, wallet, keys, makeup, and more.",
+        "image": "/products/mb-pdp/g-hh0276-552g110/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A camera bag iteration of our Darley family. Front pocket with Postman's Lock closure Detachable Mulberry branded leather strap One detachable leather top handle Internal slip pocket Brass hardware finish Heritage Check lining Height 16cm Width 23cm Depth 7cm Strap Length 102cm Strap Drop (from middle hole) 27cm Weight 0.6kg, approximately Material Waxed Snake Print A waxed, snakeskin effect material with a mottled finish. Each skin is first drum-dyed to establish the base colour, then embossed to create the snake texture. Wax is applied to achieve the characteristic two-tone effect.Once the desired surface effect is reached, shiny paper is applied to refine both the emboss depth and surface sheen. The skins are then milled in drums to bring out the contrast between tones. This stage requires careful control: over-milling can flatten the emboss and reduce contrast, while under-milling will prevent the two-tone effect from fully emerging. This product's code is HH0274-787K569",
+        "image": "/products/mb-pdp/g-hh0276-552g110/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Detachable Mulberry branded leather strap · 16cm · 23cm · 7cm · 102cm · 27cm · Adjustable and detachable 레더 strap · Adjustable and detachable strap",
+        "image": "/products/mb-pdp/g-hh0276-552g110/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Detachable Mulberry branded leather strap · 16cm · 23cm · 7cm · 102cm · 27cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A camera bag iteration of our Darley family. Front pocket with Postman's Lock closure Detachable Mulberry branded leather strap One detachable leather top handle Internal slip pocket Brass hardware finish Heritage Check lining Height 16cm Width 23cm Depth 7cm Strap Length 102cm Strap Drop (from middle hole) 27cm Weight 0.6kg, approximately Material Waxed Snake Print A waxed, snakeskin effect material with a mottled finish. Each skin is first drum-dyed to establish the base colour, then embossed to create the snake texture. Wax is applied to achieve the characteristic two-tone effect.Once the desired surface effect is reached, shiny paper is applied to refine both the emboss depth and surface sheen. The skins are then milled in drums to bring out the contrast between tones. This stage requires careful control: over-milling can flatten the emboss and reduce contrast, while under-milling will prevent the two-tone effect from fully emerging. This product's code is HH0274-787K569",
+      "Detachable Mulberry branded leather strap",
+      "16cm",
+      "23cm",
+      "7cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:08:00.575815+00:00"
+  },
+  {
     "id": "mb-darley-clutch",
     "name": "Darley Clutch",
     "nameKo": "달리 클러치",
@@ -28,7 +252,7 @@
       "/products/mb-pdp/g-rl8971-205a100/7.jpg",
       "/products/mb-pdp/g-rl8971-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 595.0,
     "sku": "G_RL8971_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-clutch-black-small-classic-grain",
@@ -228,7 +452,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.074371+00:00"
+    "updatedAt": "2026-09-11T18:08:00.580508+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -259,7 +483,7 @@
       "/products/mb-pdp/g-rl9116-787k569/7.jpg",
       "/products/mb-pdp/g-rl9116-787k569/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 345.0,
     "sku": "G_RL9116_787K569",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-cosmetic-pouch-apple-red-waxed-snake-print",
@@ -401,7 +625,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.077262+00:00"
+    "updatedAt": "2026-09-11T18:08:00.583052+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -432,7 +656,7 @@
       "/products/mb-pdp/g-rl9114-782g234/7.jpg",
       "/products/mb-pdp/g-rl9114-782g234/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 495.0,
     "sku": "G_RL9114_782G234",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-cosmetic-pouch-mulberry-x-british-pasture-leather-vintage-ebony-british-pasture-leather",
@@ -545,7 +769,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.079127+00:00"
+    "updatedAt": "2026-09-11T18:08:00.584857+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -575,7 +799,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -771,7 +995,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.080694+00:00"
+    "updatedAt": "2026-09-11T18:08:00.588390+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -802,7 +1026,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -1112,7 +1336,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.084947+00:00"
+    "updatedAt": "2026-09-11T18:08:00.592490+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -1143,7 +1367,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -1285,7 +1509,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.086085+00:00"
+    "updatedAt": "2026-09-11T18:08:00.593513+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -1316,7 +1540,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -1516,7 +1740,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.091623+00:00"
+    "updatedAt": "2026-09-11T18:08:00.598975+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -1547,7 +1771,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -1717,7 +1941,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.092631+00:00"
+    "updatedAt": "2026-09-11T18:08:00.600952+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -1748,7 +1972,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -1861,7 +2085,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.093244+00:00"
+    "updatedAt": "2026-09-11T18:08:00.603470+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -1891,7 +2115,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -2089,7 +2313,238 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.095733+00:00"
+    "updatedAt": "2026-09-11T18:08:00.606889+00:00"
+  },
+  {
+    "id": "mb-small-amberley-satchel",
+    "name": "Small Amberley Satchel",
+    "nameKo": "스몰 앰벌리 사첼",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-crossbody",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-crossbody"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Inspired by British countryside pursuits, the Amberley borrows its shape and detailing from traditional equestrian styling. This small version was designed to be worn on the shoulder or hands-free across the body. The geometrical Rider's Lock closure is also a reinterpretation of our iconic Postman's Lock - a bold and modern signature for this collection.",
+    "image": "/products/mb-pdp/g-hh4966-205d117/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh4966-205d117/1.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/2.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/3.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/4.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/5.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/6.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/7.jpg",
+      "/products/mb-pdp/g-hh4966-205d117/8.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 845.0,
+    "sku": "G_HH4966_205D117",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-hh4966-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain / OS",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_HH4966_205D117",
+        "gbpPrice": 845.0,
+        "price": 2140000,
+        "image": "/products/mb-pdp/g-hh4966-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh4966-205d117/1.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/2.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/3.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/4.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/5.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/6.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/7.jpg",
+          "/products/mb-pdp/g-hh4966-205d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh4966-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_HH4966_205A100",
+        "gbpPrice": 845.0,
+        "price": 2140000,
+        "image": "/products/mb-pdp/g-hh4966-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh4966-205a100/1.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/2.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/3.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/4.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/5.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/6.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/7.jpg",
+          "/products/mb-pdp/g-hh4966-205a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-amberley-satchel-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh4966-205u939-sz-os",
+        "name": "Out of the Blue Small Classic Grain / OS",
+        "nameKo": "Out of the Blue 스몰 클래식 그레인",
+        "sku": "G_HH4966_205U939",
+        "gbpPrice": 845.0,
+        "price": 2140000,
+        "image": "/products/mb-pdp/g-hh4966-205u939/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh4966-205u939/1.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/2.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/3.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/4.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/5.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/6.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/7.jpg",
+          "/products/mb-pdp/g-hh4966-205u939/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/small-amberley-satchel-out-of-the-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "out-of-the-blue-small-classic-grain",
+        "colorNameKo": "Out of the Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      },
+      {
+        "id": "mb-g-hh4966-205w577-sz-os",
+        "name": "Crumpet Small Classic Grain / OS",
+        "nameKo": "Crumpet 스몰 클래식 그레인",
+        "sku": "G_HH4966_205W577",
+        "gbpPrice": 845.0,
+        "price": 2140000,
+        "image": "/products/mb-pdp/g-hh4966-205w577/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh4966-205w577/1.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/2.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/3.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/4.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/5.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/6.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/7.jpg",
+          "/products/mb-pdp/g-hh4966-205w577/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/small-amberley-satchel-crumpet-small-classic-grain",
+        "inStock": true,
+        "colorKey": "crumpet-small-classic-grain",
+        "colorNameKo": "Crumpet 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-crossbody"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Inspired by British countryside pursuits, the Amberley borrows its shape and detailing from traditional equestrian styling. This small version was designed to be worn on the shoulder or hands-free across the body. The geometrical Rider's Lock closure is also a reinterpretation of our iconic Postman's Lock - a bold and modern signature for this collection.",
+        "image": "/products/mb-pdp/g-hh4966-205d117/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A small satchel bag with our signature Rider's Lock closure. Foil embossed Mulberry signature Front flap with Rider's Lock closure Buckle-adjustable shoulder strap Refined belt detail on the side Internal slip pocket Suede lining Hardware in brass finish In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 18cm Width 20cm Depth 8cm Shoulder strap drop 47-52.5cm Weight 0.5kg, approximately Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is HH4966-205A100",
+        "image": "/products/mb-pdp/g-hh4966-205d117/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Adjustable shoulder strap with functional buckle detailing · 18cm · 20cm · 8cm · 47-52.5cm · Buckle-adjustable shoulder strap · Min 47 - Max 52.5cm",
+        "image": "/products/mb-pdp/g-hh4966-205d117/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Adjustable shoulder strap with functional buckle detailing · 18cm · 20cm · 8cm · 47-52.5cm · Buckle-adjustable shoulder strap"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A small satchel bag with our signature Rider's Lock closure. Foil embossed Mulberry signature Front flap with Rider's Lock closure Buckle-adjustable shoulder strap Refined belt detail on the side Internal slip pocket Suede lining Hardware in brass finish In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 18cm Width 20cm Depth 8cm Shoulder strap drop 47-52.5cm Weight 0.5kg, approximately Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is HH4966-205A100",
+      "Adjustable shoulder strap with functional buckle detailing",
+      "18cm",
+      "20cm",
+      "8cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:08:00.608378+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -2120,7 +2575,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -2233,7 +2688,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.099222+00:00"
+    "updatedAt": "2026-09-11T18:08:00.611080+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -2264,7 +2719,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -2464,7 +2919,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.104721+00:00"
+    "updatedAt": "2026-09-11T18:08:00.616370+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -2493,7 +2948,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -2604,7 +3059,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.106409+00:00"
+    "updatedAt": "2026-09-11T18:08:00.618016+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -2635,7 +3090,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -2748,7 +3203,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.108651+00:00"
+    "updatedAt": "2026-09-11T18:08:00.619613+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -2780,7 +3235,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -2980,6 +3435,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:04:16.110338+00:00"
+    "updatedAt": "2026-09-11T18:08:00.621220+00:00"
   }
 ]
