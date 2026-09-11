@@ -228,7 +228,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.420560+00:00"
+    "updatedAt": "2026-09-11T14:52:16.378859+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -401,7 +401,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.423466+00:00"
+    "updatedAt": "2026-09-11T14:52:16.381755+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -545,7 +545,348 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.425355+00:00"
+    "updatedAt": "2026-09-11T14:52:16.383605+00:00"
+  },
+  {
+    "id": "mb-islington-bucket",
+    "name": "Islington Bucket",
+    "nameKo": "이즐링턴 버킷",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-bucket",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-bucket"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Soft-yet-sturdy, the Islington Bucket’s refined silhouette and deep, roomy interior make it the perfect pick for everyday style. Crafted from sumptuously soft leather, it features a smart belt fastening finished with our iconic Postman’s Lock. Designed for life on the go, this easygoing bag features a robust top handle, and a long, adjustable strap for crossbody wear.",
+    "image": "/products/mb-pdp/g-hh9390-205w160/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh9390-205w160/1.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/2.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/3.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/4.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/5.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/6.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/7.jpg",
+      "/products/mb-pdp/g-hh9390-205w160/8.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 795.0,
+    "sku": "G_HH9390_205U939",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-hh9390-205u939-sz-os",
+        "name": "Out of the Blue Small Classic Grain / OS",
+        "nameKo": "Out of the Blue 스몰 클래식 그레인",
+        "sku": "G_HH9390_205U939",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9390-205u939/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9390-205u939/1.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/2.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/3.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/4.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/5.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/6.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/7.jpg",
+          "/products/mb-pdp/g-hh9390-205u939/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "out-of-the-blue-small-classic-grain",
+        "colorNameKo": "Out of the Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh0279-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain / OS",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_HH0279_205D117",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh0279-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0279-205d117/1.jpg",
+          "/products/mb-pdp/g-hh0279-205d117/2.jpg",
+          "/products/mb-pdp/g-hh0279-205d117/3.jpg",
+          "/products/mb-pdp/g-hh0279-205d117/4.jpg",
+          "/products/mb-pdp/g-hh0279-205d117/5.jpg",
+          "/products/mb-pdp/g-hh0279-205d117/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/islington-bucket-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9736-000h771-sz-os",
+        "name": "Oak & Natural Raffia & Leather / OS",
+        "nameKo": "Oak & Natural Raffia & 레더",
+        "sku": "G_HH9736_000H771",
+        "gbpPrice": 945.0,
+        "price": 2400000,
+        "image": "/products/mb-pdp/g-hh9736-000h771/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9736-000h771/1.jpg",
+          "/products/mb-pdp/g-hh9736-000h771/2.jpg",
+          "/products/mb-pdp/g-hh9736-000h771/3.jpg",
+          "/products/mb-pdp/g-hh9736-000h771/4.jpg",
+          "/products/mb-pdp/g-hh9736-000h771/5.jpg",
+          "/products/mb-pdp/g-hh9736-000h771/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/islington-bucket-oak-natural-raffia-leather",
+        "inStock": true,
+        "colorKey": "oak-natural-raffia-leather",
+        "colorNameKo": "Oak & Natural Raffia & 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9884-047p705-sz-os",
+        "name": "Salcombe Sand Suede / OS",
+        "nameKo": "Salcombe Sand 스웨이드",
+        "sku": "G_HH9884_047P705",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9884-047p705/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9884-047p705/1.jpg",
+          "/products/mb-pdp/g-hh9884-047p705/2.jpg",
+          "/products/mb-pdp/g-hh9884-047p705/3.jpg",
+          "/products/mb-pdp/g-hh9884-047p705/4.jpg",
+          "/products/mb-pdp/g-hh9884-047p705/5.jpg",
+          "/products/mb-pdp/g-hh9884-047p705/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/top-handle-bags/islington-bucket-salcombe-sand-suede",
+        "inStock": true,
+        "colorKey": "salcombe-sand-suede",
+        "colorNameKo": "Salcombe Sand 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9390-205j647-sz-os",
+        "name": "Pink Scrumpy Small Classic Grain / OS",
+        "nameKo": "Pink Scrumpy 스몰 클래식 그레인",
+        "sku": "G_HH9390_205J647",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9390-205j647/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9390-205j647/1.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/2.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/3.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/4.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/5.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/6.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/7.jpg",
+          "/products/mb-pdp/g-hh9390-205j647/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-her/islington-bucket-pink-scrumpy-small-classic-grain",
+        "inStock": true,
+        "colorKey": "pink-scrumpy-small-classic-grain",
+        "colorNameKo": "Pink Scrumpy 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9390-205a110-sz-os",
+        "name": "Ebony Small Classic Grain / OS",
+        "nameKo": "Ebony 스몰 클래식 그레인",
+        "sku": "G_HH9390_205A110",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9390-205a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9390-205a110/1.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/2.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/3.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/4.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/5.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/6.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/7.jpg",
+          "/products/mb-pdp/g-hh9390-205a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/islington/islington-bucket-ebony-small-classic-grain",
+        "inStock": true,
+        "colorKey": "ebony-small-classic-grain",
+        "colorNameKo": "Ebony 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9390-205w160-sz-os",
+        "name": "Chalk Small Classic Grain / OS",
+        "nameKo": "Chalk 스몰 클래식 그레인",
+        "sku": "G_HH9390_205W160",
+        "gbpPrice": 795.0,
+        "price": 2020000,
+        "image": "/products/mb-pdp/g-hh9390-205w160/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9390-205w160/1.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/2.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/3.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/4.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/5.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/6.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/7.jpg",
+          "/products/mb-pdp/g-hh9390-205w160/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/islington-bucket-chalk-small-classic-grain",
+        "inStock": true,
+        "colorKey": "chalk-small-classic-grain",
+        "colorNameKo": "Chalk 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      },
+      {
+        "id": "mb-g-hh9390-205f924-sz-os",
+        "name": "Cashmere Taupe Small Classic Grain / OS",
+        "nameKo": "Cashmere Taupe 스몰 클래식 그레인",
+        "sku": "G_HH9390_205F924",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9390-205f924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9390-205f924/1.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/2.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/3.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/4.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/5.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/6.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/7.jpg",
+          "/products/mb-pdp/g-hh9390-205f924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/islington-bucket-cashmere-taupe-small-classic-grain",
+        "inStock": true,
+        "colorKey": "cashmere-taupe-small-classic-grain",
+        "colorNameKo": "Cashmere Taupe 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-bucket"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Soft-yet-sturdy, the Islington Bucket’s refined silhouette and deep, roomy interior make it the perfect pick for everyday style. Crafted from sumptuously soft leather, it features a smart belt fastening finished with our iconic Postman’s Lock. Designed for life on the go, this easygoing bag features a robust top handle, and a long, adjustable strap for crossbody wear.",
+        "image": "/products/mb-pdp/g-hh9390-205w160/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A roomy, minimalist bucket bag for everyday wear. Soft Gold hardware finish Functional Postman's Lock detailing on belt Adjustable and detachable crossbody strap One top handle to allow for different wearability One internal slip pocket Foil embossed Mulberry signature In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 21.5cm Width 22cm Depth 12.5cm Top Handle Drop 8cm Strap Drop 42-50cm Weight 0.5kg, approximately Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is HH9390-205W160",
+        "image": "/products/mb-pdp/g-hh9390-205w160/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Adjustable crossbody strap · 21.5cm · 22cm · 12.5cm · 8cm · 42-50cm · Adjustable and detachable crossbody strap",
+        "image": "/products/mb-pdp/g-hh9390-205w160/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Adjustable crossbody strap · 21.5cm · 22cm · 12.5cm · 8cm · 42-50cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "8가지"
+      }
+    ],
+    "featuresKo": [
+      "A roomy, minimalist bucket bag for everyday wear. Soft Gold hardware finish Functional Postman's Lock detailing on belt Adjustable and detachable crossbody strap One top handle to allow for different wearability One internal slip pocket Foil embossed Mulberry signature In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 21.5cm Width 22cm Depth 12.5cm Top Handle Drop 8cm Strap Drop 42-50cm Weight 0.5kg, approximately Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is HH9390-205W160",
+      "Adjustable crossbody strap",
+      "21.5cm",
+      "22cm",
+      "12.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T14:52:16.385499+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -576,7 +917,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -718,7 +1059,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.426403+00:00"
+    "updatedAt": "2026-09-11T14:52:16.386553+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -749,7 +1090,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -949,7 +1290,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.431994+00:00"
+    "updatedAt": "2026-09-11T14:52:16.392330+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -979,7 +1320,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -1177,7 +1518,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.433077+00:00"
+    "updatedAt": "2026-09-11T14:52:16.394876+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -1208,7 +1549,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -1321,7 +1662,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.435752+00:00"
+    "updatedAt": "2026-09-11T14:52:16.397580+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -1352,7 +1693,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -1552,7 +1893,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.441082+00:00"
+    "updatedAt": "2026-09-11T14:52:16.402962+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -1581,7 +1922,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -1692,7 +2033,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.441439+00:00"
+    "updatedAt": "2026-09-11T14:52:16.404628+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -1723,7 +2064,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -1836,7 +2177,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.441972+00:00"
+    "updatedAt": "2026-09-11T14:52:16.409045+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -1868,7 +2209,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -2068,6 +2409,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T14:25:43.445086+00:00"
+    "updatedAt": "2026-09-11T14:52:16.410937+00:00"
   }
 ]
