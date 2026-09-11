@@ -139,7 +139,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.439607+00:00"
+    "updatedAt": "2026-09-11T20:45:00.648567+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -281,7 +281,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.441747+00:00"
+    "updatedAt": "2026-09-11T20:45:00.650796+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -423,7 +423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.443588+00:00"
+    "updatedAt": "2026-09-11T20:45:00.652707+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -645,7 +645,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.446520+00:00"
+    "updatedAt": "2026-09-11T20:45:00.656876+00:00"
   },
   {
     "id": "mb-alfie-sunglasses",
@@ -789,7 +789,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.448144+00:00"
+    "updatedAt": "2026-09-11T20:45:00.658585+00:00"
   },
   {
     "id": "mb-antony",
@@ -1214,7 +1214,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.453825+00:00"
+    "updatedAt": "2026-09-11T20:45:00.664747+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -1233,7 +1233,8 @@
       "mb-women-bags-all",
       "mb-women-icons",
       "mb-women-travel",
-      "mb-women-travel-all"
+      "mb-women-travel-all",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -1555,6 +1556,33 @@
           "mb-women-travel",
           "mb-women-travel-all"
         ]
+      },
+      {
+        "id": "mb-g-hh6601-748v185-sz-os",
+        "name": "Amethyst High Shine Leather / OS",
+        "nameKo": "Amethyst 하이 샤인 레더",
+        "sku": "G_HH6601_748V185",
+        "gbpPrice": 1195.0,
+        "price": 3030000,
+        "image": "/products/mb-pdp/g-hh6601-748v185/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh6601-748v185/1.jpg",
+          "/products/mb-pdp/g-hh6601-748v185/2.jpg",
+          "/products/mb-pdp/g-hh6601-748v185/3.jpg",
+          "/products/mb-pdp/g-hh6601-748v185/4.jpg",
+          "/products/mb-pdp/g-hh6601-748v185/5.jpg",
+          "/products/mb-pdp/g-hh6601-748v185/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/bayswater-amethyst-high-shine-leather",
+        "inStock": true,
+        "colorKey": "amethyst-high-shine-leather",
+        "colorNameKo": "Amethyst 하이 샤인 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -1581,7 +1609,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "11가지"
+        "valueKo": "12가지"
       }
     ],
     "featuresKo": [
@@ -1635,7 +1663,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.458658+00:00"
+    "updatedAt": "2026-09-11T20:45:00.670111+00:00"
   },
   {
     "id": "mb-bayswater-thin-bracelet",
@@ -1778,7 +1806,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.460356+00:00"
+    "updatedAt": "2026-09-11T20:45:00.671829+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1951,7 +1979,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.462817+00:00"
+    "updatedAt": "2026-09-11T20:45:00.674750+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -2092,7 +2120,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.464433+00:00"
+    "updatedAt": "2026-09-11T20:45:00.676383+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -2233,7 +2261,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.467964+00:00"
+    "updatedAt": "2026-09-11T20:45:00.680376+00:00"
   },
   {
     "id": "mb-carbon-lite-care-spray",
@@ -2368,7 +2396,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.470087+00:00"
+    "updatedAt": "2026-09-11T20:45:00.682477+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -2541,7 +2569,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.472665+00:00"
+    "updatedAt": "2026-09-11T20:45:00.685135+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2714,7 +2742,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.474745+00:00"
+    "updatedAt": "2026-09-11T20:45:00.687283+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -3042,7 +3070,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.478891+00:00"
+    "updatedAt": "2026-09-11T20:45:00.691973+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -3266,7 +3294,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.482164+00:00"
+    "updatedAt": "2026-09-11T20:45:00.695193+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -3497,7 +3525,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.486699+00:00"
+    "updatedAt": "2026-09-11T20:45:00.699634+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -3670,7 +3698,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.489256+00:00"
+    "updatedAt": "2026-09-11T20:45:00.702281+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -3814,7 +3842,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.491066+00:00"
+    "updatedAt": "2026-09-11T20:45:00.704239+00:00"
   },
   {
     "id": "mb-fantasy-mulberry-logo-stripe-towel",
@@ -3984,7 +4012,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.492916+00:00"
+    "updatedAt": "2026-09-11T20:45:00.706419+00:00"
   },
   {
     "id": "mb-folded-multi-card-wallet",
@@ -4214,7 +4242,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.497564+00:00"
+    "updatedAt": "2026-09-11T20:45:00.711426+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -4354,7 +4382,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.499018+00:00"
+    "updatedAt": "2026-09-11T20:45:00.712951+00:00"
   },
   {
     "id": "mb-gift-card",
@@ -4510,7 +4538,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.499654+00:00"
+    "updatedAt": "2026-09-11T20:45:00.713640+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -4737,7 +4765,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.502185+00:00"
+    "updatedAt": "2026-09-11T20:45:00.716288+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -4974,7 +5002,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.505800+00:00"
+    "updatedAt": "2026-09-11T20:45:00.720138+00:00"
   },
   {
     "id": "mb-heritage-braided-belt",
@@ -5123,7 +5151,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.507734+00:00"
+    "updatedAt": "2026-09-11T20:45:00.722434+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -5523,7 +5551,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.513140+00:00"
+    "updatedAt": "2026-09-11T20:45:00.728040+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -5815,7 +5843,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.517214+00:00"
+    "updatedAt": "2026-09-11T20:45:00.732259+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -6224,7 +6252,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.523240+00:00"
+    "updatedAt": "2026-09-11T20:45:00.739071+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -6368,7 +6396,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.526033+00:00"
+    "updatedAt": "2026-09-11T20:45:00.742549+00:00"
   },
   {
     "id": "mb-heritage-sunglasses",
@@ -6542,7 +6570,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.529650+00:00"
+    "updatedAt": "2026-09-11T20:45:00.746479+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -6712,7 +6740,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.531698+00:00"
+    "updatedAt": "2026-09-11T20:45:00.748792+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -6885,7 +6913,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.533914+00:00"
+    "updatedAt": "2026-09-11T20:45:00.751340+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -7059,7 +7087,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.536248+00:00"
+    "updatedAt": "2026-09-11T20:45:00.753736+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -7402,7 +7430,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.541230+00:00"
+    "updatedAt": "2026-09-11T20:45:00.759450+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -7545,7 +7573,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.543107+00:00"
+    "updatedAt": "2026-09-11T20:45:00.761478+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -7886,7 +7914,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.547244+00:00"
+    "updatedAt": "2026-09-11T20:45:00.765681+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -8056,7 +8084,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.548635+00:00"
+    "updatedAt": "2026-09-11T20:45:00.767070+00:00"
   },
   {
     "id": "mb-lily",
@@ -8071,7 +8099,8 @@
       "mb-gifts-her",
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-bags-all"
+      "mb-women-bags-all",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -8226,6 +8255,32 @@
           "mb-women-bags",
           "mb-women-bags-all"
         ]
+      },
+      {
+        "id": "mb-g-hh9878-018v699-sz-os",
+        "name": "Royal Amethyst Suede / OS",
+        "nameKo": "Royal Amethyst 스웨이드",
+        "sku": "G_HH9878_018V699",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh9878-018v699/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9878-018v699/1.jpg",
+          "/products/mb-pdp/g-hh9878-018v699/2.jpg",
+          "/products/mb-pdp/g-hh9878-018v699/3.jpg",
+          "/products/mb-pdp/g-hh9878-018v699/4.jpg",
+          "/products/mb-pdp/g-hh9878-018v699/5.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-royal-amethyst-suede",
+        "inStock": true,
+        "colorKey": "royal-amethyst-suede",
+        "colorNameKo": "Royal Amethyst 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -8252,7 +8307,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "5가지"
+        "valueKo": "6가지"
       }
     ],
     "featuresKo": [
@@ -8306,7 +8361,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.551494+00:00"
+    "updatedAt": "2026-09-11T20:45:00.770278+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -8538,7 +8593,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.553181+00:00"
+    "updatedAt": "2026-09-11T20:45:00.772148+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -8765,7 +8820,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.557715+00:00"
+    "updatedAt": "2026-09-11T20:45:00.776860+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -9022,7 +9077,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.563561+00:00"
+    "updatedAt": "2026-09-11T20:45:00.782775+00:00"
   },
   {
     "id": "mb-mini-bayswater",
@@ -9166,7 +9221,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.565060+00:00"
+    "updatedAt": "2026-09-11T20:45:00.784377+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -9367,7 +9422,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.567073+00:00"
+    "updatedAt": "2026-09-11T20:45:00.786476+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -9511,7 +9566,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.569512+00:00"
+    "updatedAt": "2026-09-11T20:45:00.788911+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -9739,7 +9794,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.572046+00:00"
+    "updatedAt": "2026-09-11T20:45:00.791548+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -9940,7 +9995,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.574754+00:00"
+    "updatedAt": "2026-09-11T20:45:00.794260+00:00"
   },
   {
     "id": "mb-monty-sunglasses",
@@ -10142,7 +10197,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.577188+00:00"
+    "updatedAt": "2026-09-11T20:45:00.796676+00:00"
   },
   {
     "id": "mb-mulberry-leather-cream",
@@ -10267,7 +10322,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.579216+00:00"
+    "updatedAt": "2026-09-11T20:45:00.798670+00:00"
   },
   {
     "id": "mb-mulberry-leather-gel",
@@ -10392,7 +10447,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.581171+00:00"
+    "updatedAt": "2026-09-11T20:45:00.800587+00:00"
   },
   {
     "id": "mb-mulberry-leather-wax",
@@ -10517,7 +10572,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.584682+00:00"
+    "updatedAt": "2026-09-11T20:45:00.804427+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -10660,7 +10715,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.586274+00:00"
+    "updatedAt": "2026-09-11T20:45:00.806183+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap",
@@ -10791,7 +10846,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.587751+00:00"
+    "updatedAt": "2026-09-11T20:45:00.807852+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-denim",
@@ -10914,7 +10969,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.589216+00:00"
+    "updatedAt": "2026-09-11T20:45:00.809327+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-striped",
@@ -11065,7 +11120,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.591007+00:00"
+    "updatedAt": "2026-09-11T20:45:00.811123+00:00"
   },
   {
     "id": "mb-mulberry-tree-jacquard-towel",
@@ -11238,7 +11293,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.592977+00:00"
+    "updatedAt": "2026-09-11T20:45:00.813017+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -11430,7 +11485,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.595540+00:00"
+    "updatedAt": "2026-09-11T20:45:00.815543+00:00"
   },
   {
     "id": "mb-pen-pot",
@@ -11606,7 +11661,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.597309+00:00"
+    "updatedAt": "2026-09-11T20:45:00.817299+00:00"
   },
   {
     "id": "mb-photo-frame-large",
@@ -11783,7 +11838,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.599133+00:00"
+    "updatedAt": "2026-09-11T20:45:00.819132+00:00"
   },
   {
     "id": "mb-photo-frame-medium",
@@ -11960,7 +12015,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.600984+00:00"
+    "updatedAt": "2026-09-11T20:45:00.820954+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -12166,7 +12221,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.605234+00:00"
+    "updatedAt": "2026-09-11T20:45:00.825509+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -12635,7 +12690,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.610952+00:00"
+    "updatedAt": "2026-09-11T20:45:00.831296+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -12861,7 +12916,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.613807+00:00"
+    "updatedAt": "2026-09-11T20:45:00.834436+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -13000,7 +13055,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.615782+00:00"
+    "updatedAt": "2026-09-11T20:45:00.836661+00:00"
   },
   {
     "id": "mb-quinn-sunglasses",
@@ -13232,7 +13287,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.618643+00:00"
+    "updatedAt": "2026-09-11T20:45:00.839671+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -13453,7 +13508,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.621225+00:00"
+    "updatedAt": "2026-09-11T20:45:00.842198+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -13593,7 +13648,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.622733+00:00"
+    "updatedAt": "2026-09-11T20:45:00.843637+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -13824,7 +13879,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.625815+00:00"
+    "updatedAt": "2026-09-11T20:45:00.846603+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -14080,7 +14135,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.629055+00:00"
+    "updatedAt": "2026-09-11T20:45:00.849898+00:00"
   },
   {
     "id": "mb-small-boston",
@@ -14220,7 +14275,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.630900+00:00"
+    "updatedAt": "2026-09-11T20:45:00.851740+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -14392,7 +14447,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.634175+00:00"
+    "updatedAt": "2026-09-11T20:45:00.872122+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -14536,7 +14591,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.636972+00:00"
+    "updatedAt": "2026-09-11T20:45:00.875096+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -14767,7 +14822,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.642437+00:00"
+    "updatedAt": "2026-09-11T20:45:00.880625+00:00"
   },
   {
     "id": "mb-small-leather-tray",
@@ -14943,7 +14998,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.644284+00:00"
+    "updatedAt": "2026-09-11T20:45:00.882426+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -14959,7 +15014,8 @@
       "mb-gifts-her",
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-mini"
+      "mb-women-mini",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -15147,6 +15203,33 @@
           "mb-women-bags",
           "mb-women-mini"
         ]
+      },
+      {
+        "id": "mb-g-hh0389-047v699-sz-os",
+        "name": "Royal Amethyst Suede / OS",
+        "nameKo": "Royal Amethyst 스웨이드",
+        "sku": "G_HH0389_047V699",
+        "gbpPrice": 1345.0,
+        "price": 3410000,
+        "image": "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/2.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/3.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/4.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/5.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
+        "inStock": true,
+        "colorKey": "royal-amethyst-suede",
+        "colorNameKo": "Royal Amethyst 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -15173,7 +15256,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "6가지"
+        "valueKo": "7가지"
       }
     ],
     "featuresKo": [
@@ -15227,7 +15310,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.647678+00:00"
+    "updatedAt": "2026-09-11T20:45:00.886141+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -15371,7 +15454,168 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.649370+00:00"
+    "updatedAt": "2026-09-11T20:45:00.887771+00:00"
+  },
+  {
+    "id": "mb-small-solid-merino-wool-scarf",
+    "name": "Small Solid Merino Wool Scarf",
+    "nameKo": "스몰 Solid Merino Wool Scarf",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-women-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "A timeless classic in 100% merino wool, this scarf is expertly crafted to keep you warm and cosy on those freezing winter days.",
+    "image": "/products/mb-pdp/g-vs4318-946v185/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-vs4318-946v185/1.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/2.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/3.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/4.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/5.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/6.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/7.jpg",
+      "/products/mb-pdp/g-vs4318-946v185/8.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 135.0,
+    "sku": "G_VS4318_946V185",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-solid-merino-wool-scarf-amethyst-merino-wool",
+    "variants": [
+      {
+        "id": "mb-g-vs4318-946v185-sz-os",
+        "name": "Amethyst Merino Wool / OS",
+        "nameKo": "Amethyst Merino Wool",
+        "sku": "G_VS4318_946V185",
+        "gbpPrice": 135.0,
+        "price": 340000,
+        "image": "/products/mb-pdp/g-vs4318-946v185/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vs4318-946v185/1.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/2.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/3.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/4.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/5.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/6.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/7.jpg",
+          "/products/mb-pdp/g-vs4318-946v185/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-solid-merino-wool-scarf-amethyst-merino-wool",
+        "inStock": true,
+        "colorKey": "amethyst-merino-wool",
+        "colorNameKo": "Amethyst Merino Wool",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "A timeless classic in 100% merino wool, this scarf is expertly crafted to keep you warm and cosy on those freezing winter days.",
+        "image": "/products/mb-pdp/g-vs4318-946v185/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A cosy merino wool scarf. Mulberry logo Woven scarf Self fringing at both ends Professional dry clean only Made in the UK Our Monogramming service is available in the UK and across select global stores. Length 200cm Width 30cm Material Merino Wool 100% Merino Wool This product's code is VS4318-946V185",
+        "image": "/products/mb-pdp/g-vs4318-946v185/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "200cm · 30cm",
+        "image": "/products/mb-pdp/g-vs4318-946v185/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "200cm · 30cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A cosy merino wool scarf. Mulberry logo Woven scarf Self fringing at both ends Professional dry clean only Made in the UK Our Monogramming service is available in the UK and across select global stores. Length 200cm Width 30cm Material Merino Wool 100% Merino Wool This product's code is VS4318-946V185",
+      "200cm",
+      "30cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Size",
+        "S",
+        "Size",
+        "M",
+        "Size",
+        "L"
+      ],
+      "rows": [
+        [
+          "UK Size",
+          "6-8"
+        ],
+        [
+          "EU Size",
+          "34-36"
+        ],
+        [
+          "IT Size",
+          "38-40"
+        ],
+        [
+          "US Size",
+          "2-4"
+        ],
+        [
+          "UK Size",
+          "10-12"
+        ],
+        [
+          "EU Size",
+          "38-40"
+        ],
+        [
+          "IT Size",
+          "42-44"
+        ],
+        [
+          "US Size",
+          "6-8"
+        ],
+        [
+          "UK Size",
+          "12-14"
+        ],
+        [
+          "EU Size",
+          "40-42"
+        ],
+        [
+          "IT Size",
+          "44-46"
+        ],
+        [
+          "US Size",
+          "8-10"
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T20:45:00.888399+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -15385,7 +15629,10 @@
       "mb-women-bags",
       "mb-women-clutches",
       "mb-women-mini",
-      "mb-women-top-handle"
+      "mb-women-top-handle",
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -15404,7 +15651,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -15582,6 +15829,64 @@
           "mb-women-bags",
           "mb-women-top-handle"
         ]
+      },
+      {
+        "id": "mb-g-hh0199-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0199_771A110",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
+      },
+      {
+        "id": "mb-g-hh0199-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0199_771A100",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -15608,7 +15913,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "6가지"
+        "valueKo": "8가지"
       }
     ],
     "featuresKo": [
@@ -15662,7 +15967,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.651775+00:00"
+    "updatedAt": "2026-09-11T20:45:00.891714+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -15675,7 +15980,10 @@
       "mulberry-bags",
       "mb-women-bags",
       "mb-women-shoulder",
-      "mb-women-top-handle"
+      "mb-women-top-handle",
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -15694,7 +16002,7 @@
       "/products/mb-pdp/g-hh0230-047d117/7.jpg",
       "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1595.0,
     "sku": "G_HH0230_047D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
@@ -15930,6 +16238,64 @@
           "mb-women-bags",
           "mb-women-top-handle"
         ]
+      },
+      {
+        "id": "mb-g-hh0197-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0197_771A110",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0197_771A100",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -15956,7 +16322,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "8가지"
+        "valueKo": "10가지"
       }
     ],
     "featuresKo": [
@@ -16010,7 +16376,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.655714+00:00"
+    "updatedAt": "2026-09-11T20:45:00.896502+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -16041,7 +16407,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -16241,7 +16607,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.658597+00:00"
+    "updatedAt": "2026-09-11T20:45:00.899264+00:00"
   },
   {
     "id": "mb-throw-blanket",
@@ -16274,7 +16640,7 @@
       "/products/mb-pdp/g-th0033-000q130/6.jpg",
       "/products/mb-pdp/g-th0033-000q130/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 395.0,
     "sku": "G_TH0033_000Q130",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/throw-blanket-heritage-check-wool",
@@ -16414,7 +16780,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.660418+00:00"
+    "updatedAt": "2026-09-11T20:45:00.902790+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -16449,7 +16815,7 @@
       "/products/mb-pdp/g-hh0140-736a100/7.jpg",
       "/products/mb-pdp/g-hh0140-736a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-black-heavy-grain",
@@ -16677,7 +17043,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.665146+00:00"
+    "updatedAt": "2026-09-11T20:45:00.905819+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -16712,7 +17078,7 @@
       "/products/mb-pdp/g-hh0135-000h709/5.jpg",
       "/products/mb-pdp/g-hh0135-000h709/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH0135_000H709",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
@@ -16902,7 +17268,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.668013+00:00"
+    "updatedAt": "2026-09-11T20:45:00.908627+00:00"
   },
   {
     "id": "mb-wine-carrier",
@@ -16936,7 +17302,7 @@
       "/products/mb-pdp/g-tl0012-493g924/7.jpg",
       "/products/mb-pdp/g-tl0012-493g924/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 495.0,
     "sku": "G_TL0012_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/wine-carrier-vintage-oak-bovine-leather",
@@ -17079,6 +17445,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:40:23.669990+00:00"
+    "updatedAt": "2026-09-11T20:45:00.910543+00:00"
   }
 ]
