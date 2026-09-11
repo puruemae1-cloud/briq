@@ -76,6 +76,9 @@ function brandFamily(id: string): string | null {
   if (x === "dior" || x.startsWith("dior-") || x.startsWith("di-")) {
     return "dior";
   }
+  if (x === "mulberry" || x.startsWith("mulberry-") || x.startsWith("mb-")) {
+    return "_new";
+  }
   if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) return "_new";
   return null;
 }
@@ -141,6 +144,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "vivienne-westwood",
   "louis-vuitton",
   "dior",
+  "mulberry",
   // new brands insert here
   "prada",
   "hermes",

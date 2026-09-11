@@ -63,6 +63,8 @@ export type ProductVariant = {
   ceCollections?: SubcategoryId[];
   /** Vivienne Westwood PLP memberships. */
   vwCollections?: SubcategoryId[];
+  /** Mulberry PLP memberships. */
+  mbCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */
@@ -132,6 +134,8 @@ export type Product = {
   ceCollections?: SubcategoryId[];
   /** Vivienne Westwood PLP memberships. */
   vwCollections?: SubcategoryId[];
+  /** Mulberry PLP memberships. */
+  mbCollections?: SubcategoryId[];
   /** Prada PLP memberships. */
   prCollections?: SubcategoryId[];
   /** Louis Vuitton Home PLP memberships. */

@@ -68,6 +68,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "루이 비통 홈 · 가구와 라이트닝 컬렉션을 Briq 영국 셀렉션으로 만나보세요.",
   },
+  mulberry: {
+    slug: "mulberry",
+    nameEn: "Mulberry",
+    nameKo: "멀버리",
+    shopHref: "/shop?category=bags&sub=mulberry-bags",
+    keywords: ["멀버리", "Mulberry", "멀버리 가방", "멀버리 직구"],
+    blurb:
+      "멀버리 가방·액세서리를 Briq 영국 셀렉션으로 만나보세요.",
+  },
   dior: {
     slug: "dior",
     nameEn: "Dior",

@@ -40,6 +40,7 @@ export type BrandKey =
   | "christopher-ward"
   | "louis-vuitton"
   | "dior"
+  | "mulberry"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -299,6 +300,17 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/dior.svg",
     // Locked women's RTW campaign — grass / countryside (all-ready-to-wear PLP).
     images: ["/banners/brand-dior-womens-rtw.jpg"],
+  },
+  mulberry: {
+    key: "mulberry",
+    nameEn: "Mulberry",
+    nameKo: "멀버리",
+    logoSrc: "/brands/mulberry.svg",
+    images: [
+      "/banners/rot-acc-1.jpg",
+      "/banners/rot-acc-2.jpg",
+      "/banners/rot-acc-3.jpg",
+    ],
   },
   "dior-watches": {
     key: "dior-watches",
@@ -719,6 +731,14 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-women-homewear-lingerie": "dior-womens-rtw",
   "di-women-coats": "dior-womens-rtw",
   "di-women-jackets": "dior-womens-rtw",
+  mulberry: "mulberry",
+  "mulberry-bags": "mulberry",
+  "mulberry-accessories": "mulberry",
+  "mb-women-bags": "mulberry",
+  "mb-men-bags": "mulberry",
+  "mb-women-acc": "mulberry",
+  "mb-men-acc": "mulberry",
+  "mb-gifts": "mulberry",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

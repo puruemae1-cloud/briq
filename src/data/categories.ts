@@ -936,6 +936,48 @@ export type SubcategoryId =
   | "vivienne-westwood-accessories"
   | "vivienne-westwood-watches"
   | "vivienne-westwood-mens-rtw"
+  | "mulberry-bags"
+  | "mb-women-bags"
+  | "mb-women-bags-all"
+  | "mb-women-crossbody"
+  | "mb-women-shoulder"
+  | "mb-women-top-handle"
+  | "mb-women-totes"
+  | "mb-women-bucket"
+  | "mb-women-mini"
+  | "mb-women-clutches"
+  | "mb-women-backpacks"
+  | "mb-women-icons"
+  | "mb-women-travel"
+  | "mb-women-travel-all"
+  | "mb-women-travel-holdalls"
+  | "mb-women-travel-luggage"
+  | "mb-women-travel-accessories"
+  | "mb-men-bags"
+  | "mb-men-bags-all"
+  | "mb-men-holdalls"
+  | "mb-men-backpacks"
+  | "mb-men-briefcases"
+  | "mb-men-messenger"
+  | "mb-men-travel"
+  | "mulberry-accessories"
+  | "mb-gifts"
+  | "mb-men-acc"
+  | "mb-men-whats-new"
+  | "mb-men-wallets"
+  | "mb-men-accessories-all"
+  | "mb-men-keyrings"
+  | "mb-men-organisers"
+  | "mb-men-sunglasses"
+  | "mb-men-care"
+  | "mb-men-lifestyle"
+  | "mb-gifts-him"
+  | "mb-women-acc"
+  | "mb-women-whats-new"
+  | "mb-women-purses"
+  | "mb-women-lifestyle"
+  | "mb-gifts-her"
+  | "mb-lifestyle"
   | "vw-women"
   | "vw-women-rtw"
   | "vw-women-rtw-all"
@@ -3306,6 +3348,137 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ce-gifts-him-sunglasses": ["ce-gifts-him-sunglasses"],
   "ce-gifts-him-jewellery": ["ce-gifts-him-jewellery"],
   "ce-gifts-him-accessories": ["ce-gifts-him-accessories"],
+
+  "mulberry-bags": [
+    "mulberry-bags",
+    "mb-women-bags",
+    "mb-women-bags-all",
+    "mb-women-crossbody",
+    "mb-women-shoulder",
+    "mb-women-top-handle",
+    "mb-women-totes",
+    "mb-women-bucket",
+    "mb-women-mini",
+    "mb-women-clutches",
+    "mb-women-backpacks",
+    "mb-women-icons",
+    "mb-women-travel",
+    "mb-women-travel-all",
+    "mb-women-travel-holdalls",
+    "mb-women-travel-luggage",
+    "mb-women-travel-accessories",
+    "mb-men-bags",
+    "mb-men-bags-all",
+    "mb-men-holdalls",
+    "mb-men-backpacks",
+    "mb-men-briefcases",
+    "mb-men-messenger",
+    "mb-men-travel",
+  ],
+  "mb-women-bags": [
+    "mb-women-bags",
+    "mb-women-bags-all",
+    "mb-women-crossbody",
+    "mb-women-shoulder",
+    "mb-women-top-handle",
+    "mb-women-totes",
+    "mb-women-bucket",
+    "mb-women-mini",
+    "mb-women-clutches",
+    "mb-women-backpacks",
+    "mb-women-icons",
+  ],
+  "mb-women-bags-all": ["mb-women-bags-all"],
+  "mb-women-crossbody": ["mb-women-crossbody"],
+  "mb-women-shoulder": ["mb-women-shoulder"],
+  "mb-women-top-handle": ["mb-women-top-handle"],
+  "mb-women-totes": ["mb-women-totes"],
+  "mb-women-bucket": ["mb-women-bucket"],
+  "mb-women-mini": ["mb-women-mini"],
+  "mb-women-clutches": ["mb-women-clutches"],
+  "mb-women-backpacks": ["mb-women-backpacks"],
+  "mb-women-icons": ["mb-women-icons"],
+  "mb-women-travel": [
+    "mb-women-travel",
+    "mb-women-travel-all",
+    "mb-women-travel-holdalls",
+    "mb-women-travel-luggage",
+    "mb-women-travel-accessories",
+  ],
+  "mb-women-travel-all": ["mb-women-travel-all"],
+  "mb-women-travel-holdalls": ["mb-women-travel-holdalls"],
+  "mb-women-travel-luggage": ["mb-women-travel-luggage"],
+  "mb-women-travel-accessories": ["mb-women-travel-accessories"],
+  "mb-men-bags": [
+    "mb-men-bags",
+    "mb-men-bags-all",
+    "mb-men-holdalls",
+    "mb-men-backpacks",
+    "mb-men-briefcases",
+    "mb-men-messenger",
+    "mb-men-travel",
+  ],
+  "mb-men-bags-all": ["mb-men-bags-all"],
+  "mb-men-holdalls": ["mb-men-holdalls"],
+  "mb-men-backpacks": ["mb-men-backpacks"],
+  "mb-men-briefcases": ["mb-men-briefcases"],
+  "mb-men-messenger": ["mb-men-messenger"],
+  "mb-men-travel": ["mb-men-travel"],
+  "mulberry-accessories": [
+    "mulberry-accessories",
+    "mb-gifts",
+    "mb-men-acc",
+    "mb-men-whats-new",
+    "mb-men-wallets",
+    "mb-men-accessories-all",
+    "mb-men-keyrings",
+    "mb-men-organisers",
+    "mb-men-sunglasses",
+    "mb-men-care",
+    "mb-men-lifestyle",
+    "mb-gifts-him",
+    "mb-women-acc",
+    "mb-women-whats-new",
+    "mb-women-purses",
+    "mb-women-lifestyle",
+    "mb-gifts-her",
+    "mb-lifestyle",
+  ],
+  "mb-gifts": ["mb-gifts"],
+  "mb-men-acc": [
+    "mb-men-acc",
+    "mb-men-whats-new",
+    "mb-men-wallets",
+    "mb-men-accessories-all",
+    "mb-men-keyrings",
+    "mb-men-organisers",
+    "mb-men-sunglasses",
+    "mb-men-care",
+    "mb-men-lifestyle",
+    "mb-gifts-him",
+  ],
+  "mb-men-whats-new": ["mb-men-whats-new"],
+  "mb-men-wallets": ["mb-men-wallets"],
+  "mb-men-accessories-all": ["mb-men-accessories-all"],
+  "mb-men-keyrings": ["mb-men-keyrings"],
+  "mb-men-organisers": ["mb-men-organisers"],
+  "mb-men-sunglasses": ["mb-men-sunglasses"],
+  "mb-men-care": ["mb-men-care"],
+  "mb-men-lifestyle": ["mb-men-lifestyle", "mb-lifestyle"],
+  "mb-gifts-him": ["mb-gifts-him"],
+  "mb-women-acc": [
+    "mb-women-acc",
+    "mb-women-whats-new",
+    "mb-women-purses",
+    "mb-women-lifestyle",
+    "mb-gifts-her",
+  ],
+  "mb-women-whats-new": ["mb-women-whats-new"],
+  "mb-women-purses": ["mb-women-purses"],
+  "mb-women-lifestyle": ["mb-women-lifestyle", "mb-lifestyle"],
+  "mb-gifts-her": ["mb-gifts-her"],
+  "mb-lifestyle": ["mb-lifestyle", "mb-men-lifestyle", "mb-women-lifestyle"],
+
   "vivienne-westwood": [
     "vivienne-westwood",
     "vw-women",
@@ -5743,6 +5916,58 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+
+      {
+        id: "mulberry-bags",
+        labelKo: "멀버리",
+        href: "/shop?category=bags&sub=mulberry-bags",
+        children: [
+          {
+            id: "mb-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=mb-women-bags",
+            navLeaf: true,
+            children: [
+              { id: "mb-women-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=mb-women-bags-all" },
+              { id: "mb-women-crossbody", labelKo: "크로스바디", href: "/shop?category=bags&sub=mb-women-crossbody" },
+              { id: "mb-women-shoulder", labelKo: "숄더백", href: "/shop?category=bags&sub=mb-women-shoulder" },
+              { id: "mb-women-top-handle", labelKo: "탑 핸들", href: "/shop?category=bags&sub=mb-women-top-handle" },
+              { id: "mb-women-totes", labelKo: "토트백", href: "/shop?category=bags&sub=mb-women-totes" },
+              { id: "mb-women-bucket", labelKo: "버킷백", href: "/shop?category=bags&sub=mb-women-bucket" },
+              { id: "mb-women-mini", labelKo: "미니 & 마이크로", href: "/shop?category=bags&sub=mb-women-mini" },
+              { id: "mb-women-clutches", labelKo: "클러치 & 이브닝", href: "/shop?category=bags&sub=mb-women-clutches" },
+              { id: "mb-women-backpacks", labelKo: "백팩", href: "/shop?category=bags&sub=mb-women-backpacks" },
+              { id: "mb-women-icons", labelKo: "아이콘즈", href: "/shop?category=bags&sub=mb-women-icons" },
+            ],
+          },
+          {
+            id: "mb-women-travel",
+            labelKo: "여성용 · 여행",
+            href: "/shop?category=bags&sub=mb-women-travel",
+            navLeaf: true,
+            children: [
+              { id: "mb-women-travel-all", labelKo: "전체", href: "/shop?category=bags&sub=mb-women-travel-all" },
+              { id: "mb-women-travel-holdalls", labelKo: "홀드올", href: "/shop?category=bags&sub=mb-women-travel-holdalls" },
+              { id: "mb-women-travel-luggage", labelKo: "러기지", href: "/shop?category=bags&sub=mb-women-travel-luggage" },
+              { id: "mb-women-travel-accessories", labelKo: "트래블 액세서리", href: "/shop?category=bags&sub=mb-women-travel-accessories" },
+            ],
+          },
+          {
+            id: "mb-men-bags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=mb-men-bags",
+            navLeaf: true,
+            children: [
+              { id: "mb-men-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=mb-men-bags-all" },
+              { id: "mb-men-messenger", labelKo: "메신저백", href: "/shop?category=bags&sub=mb-men-messenger" },
+              { id: "mb-men-briefcases", labelKo: "브리프케이스", href: "/shop?category=bags&sub=mb-men-briefcases" },
+              { id: "mb-men-backpacks", labelKo: "백팩", href: "/shop?category=bags&sub=mb-men-backpacks" },
+              { id: "mb-men-holdalls", labelKo: "홀드올", href: "/shop?category=bags&sub=mb-men-holdalls" },
+              { id: "mb-men-travel", labelKo: "여행", href: "/shop?category=bags&sub=mb-men-travel" },
+            ],
+          },
+        ],
+      },
       {
         id: "vivienne-westwood-bags",
         labelKo: "비비안 웨스트우드",
@@ -7512,6 +7737,49 @@ export const navCategories: NavCategory[] = [
                   { id: "ce-gifts-him-accessories", labelKo: "액세서리", href: "/shop?category=accessories&sub=ce-gifts-him-accessories" },
                 ],
               },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: "mulberry-accessories",
+        labelKo: "멀버리",
+        href: "/shop?category=accessories&sub=mulberry-accessories",
+        children: [
+          {
+            id: "mb-gifts",
+            labelKo: "선물용",
+            href: "/shop?category=accessories&sub=mb-gifts",
+            navLeaf: true,
+          },
+          {
+            id: "mb-men-acc",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=mb-men-acc",
+            navLeaf: true,
+            children: [
+              { id: "mb-men-whats-new", labelKo: "신상품", href: "/shop?category=accessories&sub=mb-men-whats-new" },
+              { id: "mb-men-wallets", labelKo: "월렛", href: "/shop?category=accessories&sub=mb-men-wallets" },
+              { id: "mb-men-accessories-all", labelKo: "전체", href: "/shop?category=accessories&sub=mb-men-accessories-all" },
+              { id: "mb-men-keyrings", labelKo: "키링", href: "/shop?category=accessories&sub=mb-men-keyrings" },
+              { id: "mb-men-organisers", labelKo: "오거나이저", href: "/shop?category=accessories&sub=mb-men-organisers" },
+              { id: "mb-men-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=mb-men-sunglasses" },
+              { id: "mb-men-care", labelKo: "레더 케어", href: "/shop?category=accessories&sub=mb-men-care" },
+              { id: "mb-men-lifestyle", labelKo: "라이프스타일", href: "/shop?category=accessories&sub=mb-men-lifestyle" },
+              { id: "mb-gifts-him", labelKo: "선물용", href: "/shop?category=accessories&sub=mb-gifts-him" },
+            ],
+          },
+          {
+            id: "mb-women-acc",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=mb-women-acc",
+            navLeaf: true,
+            children: [
+              { id: "mb-women-whats-new", labelKo: "신상품", href: "/shop?category=accessories&sub=mb-women-whats-new" },
+              { id: "mb-women-purses", labelKo: "퍼스", href: "/shop?category=accessories&sub=mb-women-purses" },
+              { id: "mb-women-lifestyle", labelKo: "라이프스타일", href: "/shop?category=accessories&sub=mb-women-lifestyle" },
+              { id: "mb-gifts-her", labelKo: "선물용", href: "/shop?category=accessories&sub=mb-gifts-her" },
             ],
           },
         ],
