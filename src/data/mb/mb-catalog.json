@@ -163,7 +163,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.731732+00:00"
+    "updatedAt": "2026-09-11T19:39:36.672188+00:00"
   },
   {
     "id": "mb-antony",
@@ -556,7 +556,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.737330+00:00"
+    "updatedAt": "2026-09-11T19:39:36.677833+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -918,7 +918,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.741461+00:00"
+    "updatedAt": "2026-09-11T19:39:36.681983+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1091,7 +1091,289 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.743871+00:00"
+    "updatedAt": "2026-09-11T19:39:36.684390+00:00"
+  },
+  {
+    "id": "mb-british-summer-keyring-bumblebee",
+    "name": "British Summer Keyring - Bumblebee",
+    "nameKo": "British Summer 키링 - Bumblebee",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-keyrings",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-keyrings"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Never lose your keys again with this playful Bumblebee keyring, inspired by the Great British Summertime. Who fancies a glass of Pimms?",
+    "image": "/products/mb-pdp/g-rk6012-000z115/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rk6012-000z115/1.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/2.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/3.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/4.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/5.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/6.jpg",
+      "/products/mb-pdp/g-rk6012-000z115/7.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 175.0,
+    "sku": "G_RK6012_000Z115",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/british-summer-keyring-bumblebee-multicolour-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rk6012-000z115-sz-os",
+        "name": "Multicolour Mixed Material / OS",
+        "nameKo": "Multicolour Mixed Material",
+        "sku": "G_RK6012_000Z115",
+        "gbpPrice": 175.0,
+        "price": 440000,
+        "image": "/products/mb-pdp/g-rk6012-000z115/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6012-000z115/1.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/2.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/3.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/4.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/5.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/6.jpg",
+          "/products/mb-pdp/g-rk6012-000z115/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/british-summer-keyring-bumblebee-multicolour-mixed-material",
+        "inStock": true,
+        "colorKey": "multicolour-mixed-material",
+        "colorNameKo": "Multicolour Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Never lose your keys again with this playful Bumblebee keyring, inspired by the Great British Summertime. Who fancies a glass of Pimms?",
+        "image": "/products/mb-pdp/g-rk6012-000z115/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A summery bumblebee keyring. Clip and split ring attachments Foil embossed Mulberry signature Silver hardware finish Height 10cm Width 11cm Depth 0.5cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK6012-000Z115",
+        "image": "/products/mb-pdp/g-rk6012-000z115/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "10cm · 11cm · 0.5cm",
+        "image": "/products/mb-pdp/g-rk6012-000z115/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "10cm · 11cm · 0.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A summery bumblebee keyring. Clip and split ring attachments Foil embossed Mulberry signature Silver hardware finish Height 10cm Width 11cm Depth 0.5cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK6012-000Z115",
+      "10cm",
+      "11cm",
+      "0.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:39:36.685005+00:00"
+  },
+  {
+    "id": "mb-british-summer-keyring-fish",
+    "name": "British Summer Keyring - Fish",
+    "nameKo": "British Summer 키링 - Fish",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-keyrings",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-keyrings"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Never lose your keys again with this playful Fish keyring, inspired by the Great British Seaside. Anyone for a stroll along the prom?",
+    "image": "/products/mb-pdp/g-rk6014-000z115/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rk6014-000z115/1.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/2.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/3.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/4.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/5.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/6.jpg",
+      "/products/mb-pdp/g-rk6014-000z115/7.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 95.0,
+    "sku": "G_RK6014_000Z115",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/british-summer-keyring-fish-multicolour-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rk6014-000z115-sz-os",
+        "name": "Multicolour Mixed Material / OS",
+        "nameKo": "Multicolour Mixed Material",
+        "sku": "G_RK6014_000Z115",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-rk6014-000z115/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6014-000z115/1.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/2.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/3.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/4.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/5.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/6.jpg",
+          "/products/mb-pdp/g-rk6014-000z115/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/british-summer-keyring-fish-multicolour-mixed-material",
+        "inStock": true,
+        "colorKey": "multicolour-mixed-material",
+        "colorNameKo": "Multicolour Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Never lose your keys again with this playful Fish keyring, inspired by the Great British Seaside. Anyone for a stroll along the prom?",
+        "image": "/products/mb-pdp/g-rk6014-000z115/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A summery fish keyring. Clip and split ring attachments Mulberry Tree medallion Foil embossed Mulberry signature Silver hardware finish Height 5cm Width 15.5cm Depth 0.5cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK6014-000Z115",
+        "image": "/products/mb-pdp/g-rk6014-000z115/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "5cm · 15.5cm · 0.5cm",
+        "image": "/products/mb-pdp/g-rk6014-000z115/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "5cm · 15.5cm · 0.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A summery fish keyring. Clip and split ring attachments Mulberry Tree medallion Foil embossed Mulberry signature Silver hardware finish Height 5cm Width 15.5cm Depth 0.5cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK6014-000Z115",
+      "5cm",
+      "15.5cm",
+      "0.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:39:36.685777+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -1122,7 +1404,7 @@
       "/products/mb-pdp/g-hh8734-552g110/7.jpg",
       "/products/mb-pdp/g-hh8734-552g110/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HH8734_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/chiltern-backpack-oak-two-tone-small-classic-grain",
@@ -1264,7 +1546,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.746379+00:00"
+    "updatedAt": "2026-09-11T19:39:36.688295+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -1295,7 +1577,7 @@
       "/products/mb-pdp/g-rl7975-205a100/7.jpg",
       "/products/mb-pdp/g-rl7975-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 185.0,
     "sku": "G_RL7975_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/continental-long-zipped-card-holder-black-small-classic-grain",
@@ -1407,7 +1689,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.747161+00:00"
+    "updatedAt": "2026-09-11T19:39:36.690076+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -1433,7 +1715,7 @@
       "/products/mb-pdp/g-rl8988-127a340/2.jpg",
       "/products/mb-pdp/g-rl8988-127a340/3.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 135.0,
     "sku": "G_RL4644_748A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-her/credit-card-slip-black-high-shine-leather",
@@ -1621,7 +1903,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.748830+00:00"
+    "updatedAt": "2026-09-11T19:39:36.692917+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -1650,7 +1932,7 @@
       "/products/mb-pdp/g-hh0276-552g110/5.jpg",
       "/products/mb-pdp/g-hh0276-552g110/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 895.0,
     "sku": "G_HH0274_787K569",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-camera-bag-apple-red-waxed-snake-print",
@@ -1845,7 +2127,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.752002+00:00"
+    "updatedAt": "2026-09-11T19:39:36.696099+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -1876,7 +2158,7 @@
       "/products/mb-pdp/g-rl8971-205a100/7.jpg",
       "/products/mb-pdp/g-rl8971-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_RL8971_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-clutch-black-small-classic-grain",
@@ -2076,7 +2358,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.756317+00:00"
+    "updatedAt": "2026-09-11T19:39:36.702049+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -2107,7 +2389,7 @@
       "/products/mb-pdp/g-rl9116-787k569/7.jpg",
       "/products/mb-pdp/g-rl9116-787k569/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 345.0,
     "sku": "G_RL9116_787K569",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-cosmetic-pouch-apple-red-waxed-snake-print",
@@ -2249,7 +2531,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.758850+00:00"
+    "updatedAt": "2026-09-11T19:39:36.704566+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -2280,7 +2562,7 @@
       "/products/mb-pdp/g-rl9114-782g234/7.jpg",
       "/products/mb-pdp/g-rl9114-782g234/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 495.0,
     "sku": "G_RL9114_782G234",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-cosmetic-pouch-mulberry-x-british-pasture-leather-vintage-ebony-british-pasture-leather",
@@ -2393,7 +2675,147 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.762172+00:00"
+    "updatedAt": "2026-09-11T19:39:36.706371+00:00"
+  },
+  {
+    "id": "mb-football-keyring",
+    "name": "Football Keyring",
+    "nameKo": "Football 키링",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-keyrings",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-keyrings"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Show your colours with this Football Keyring – compatible with AirTags and featuring a Mulberry logo in the middle.",
+    "image": "/products/mb-pdp/g-rk5988-000a500/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rk5988-000a500/1.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/2.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/3.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/4.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/5.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/6.jpg",
+      "/products/mb-pdp/g-rk5988-000a500/7.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 145.0,
+    "sku": "G_RK5988_000A500",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/football-keyring-black-white-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rk5988-000a500-sz-os",
+        "name": "Black & White Mixed Material / OS",
+        "nameKo": "Black & White Mixed Material",
+        "sku": "G_RK5988_000A500",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rk5988-000a500/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk5988-000a500/1.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/2.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/3.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/4.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/5.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/6.jpg",
+          "/products/mb-pdp/g-rk5988-000a500/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/football-keyring-black-white-mixed-material",
+        "inStock": true,
+        "colorKey": "black-white-mixed-material",
+        "colorNameKo": "Black & White Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Show your colours with this Football Keyring – compatible with AirTags and featuring a Mulberry logo in the middle.",
+        "image": "/products/mb-pdp/g-rk5988-000a500/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A football keyring. Silver hardware finish Height 7cm Height incl. attachment 12.5cm Width 7cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK5988-000A500",
+        "image": "/products/mb-pdp/g-rk5988-000a500/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "7cm · 12.5cm",
+        "image": "/products/mb-pdp/g-rk5988-000a500/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "7cm · 12.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A football keyring. Silver hardware finish Height 7cm Height incl. attachment 12.5cm Width 7cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK5988-000A500",
+      "7cm",
+      "12.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:39:36.706934+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -2423,7 +2845,7 @@
       "/products/mb-pdp/g-hh9956-047a100/6.jpg",
       "/products/mb-pdp/g-hh9956-047a100/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 1295.0,
     "sku": "G_HH9956_047A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-black-suede",
@@ -2620,7 +3042,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.764632+00:00"
+    "updatedAt": "2026-09-11T19:39:36.709387+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -2654,7 +3076,7 @@
       "/products/mb-pdp/g-hs5094-127q330/7.jpg",
       "/products/mb-pdp/g-hs5094-127q330/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 895.0,
     "sku": "G_HS5094_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-backpack-mole-cognac-bioveg-scotchgrain",
@@ -2825,7 +3247,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.767904+00:00"
+    "updatedAt": "2026-09-11T19:39:36.712770+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -2858,7 +3280,7 @@
       "/products/mb-pdp/g-hb5130-127a340/6.jpg",
       "/products/mb-pdp/g-hb5130-127a340/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 895.0,
     "sku": "G_HB5130_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-briefcase-black-cognac-bio-based-scotchgrain",
@@ -3137,7 +3559,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.772315+00:00"
+    "updatedAt": "2026-09-11T19:39:36.717186+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -3171,7 +3593,7 @@
       "/products/mb-pdp/g-hs5195-127q330/7.jpg",
       "/products/mb-pdp/g-hs5195-127q330/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 845.0,
     "sku": "G_HS5195_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/luggage/heritage-day-clipper-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -3429,7 +3851,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.776414+00:00"
+    "updatedAt": "2026-09-11T19:39:36.721244+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -3466,7 +3888,7 @@
       "/products/mb-pdp/g-hl5136-127a340/7.jpg",
       "/products/mb-pdp/g-hl5136-127a340/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HL5136_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/heritage-medium-clipper-black-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -3838,7 +4260,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.782585+00:00"
+    "updatedAt": "2026-09-11T19:39:36.727312+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -3869,7 +4291,7 @@
       "/products/mb-pdp/g-hs5202-179a100/7.jpg",
       "/products/mb-pdp/g-hs5202-179a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HS5202_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-nylon-backpack-black-nylon",
@@ -3982,7 +4404,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.785348+00:00"
+    "updatedAt": "2026-09-11T19:39:36.730076+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -4011,7 +4433,7 @@
       "/products/mb-pdp/g-rl8176-205q633/5.jpg",
       "/products/mb-pdp/g-rl8176-205q633/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 295.0,
     "sku": "G_RL8176_205Q633",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/heritage-wash-case-mulberry-green-small-classic-grain",
@@ -4121,7 +4543,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.787061+00:00"
+    "updatedAt": "2026-09-11T19:39:36.733244+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -4153,7 +4575,7 @@
       "/products/mb-pdp/g-hp9659-206q129/7.jpg",
       "/products/mb-pdp/g-hp9659-206q129/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 635.0,
     "sku": "G_HP9659_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-waxed-backpack-dark-moss-waxed-cotton",
@@ -4294,7 +4716,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.789287+00:00"
+    "updatedAt": "2026-09-11T19:39:36.735482+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -4327,7 +4749,7 @@
       "/products/mb-pdp/g-hp5236-206q129/7.jpg",
       "/products/mb-pdp/g-hp5236-206q129/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 795.0,
     "sku": "G_HP5236_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/mens-holdalls/heritage-waxed-day-clipper-dark-moss-waxed-cotton",
@@ -4468,7 +4890,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.791698+00:00"
+    "updatedAt": "2026-09-11T19:39:36.737926+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -4500,7 +4922,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -4780,7 +5202,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.797486+00:00"
+    "updatedAt": "2026-09-11T19:39:36.742485+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -4811,7 +5233,7 @@
       "/products/mb-pdp/g-rl8312-127q330/7.jpg",
       "/products/mb-pdp/g-rl8312-127q330/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 175.0,
     "sku": "G_RL8312_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/heritage-zipped-long-card-holder-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -4923,7 +5345,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.798364+00:00"
+    "updatedAt": "2026-09-11T19:39:36.744469+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -4954,7 +5376,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -5264,7 +5686,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.802503+00:00"
+    "updatedAt": "2026-09-11T19:39:36.748627+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -5294,7 +5716,7 @@
       "/products/mb-pdp/g-rl8853-552g110/6.jpg",
       "/products/mb-pdp/g-rl8853-552g110/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 395.0,
     "sku": "G_RL8853_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
@@ -5434,7 +5856,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.803877+00:00"
+    "updatedAt": "2026-09-11T19:39:36.750009+00:00"
   },
   {
     "id": "mb-lily",
@@ -5462,7 +5884,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_HH3288_874A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/lily-black-glossy-goat",
@@ -5654,7 +6076,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.806379+00:00"
+    "updatedAt": "2026-09-11T19:39:36.752515+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -5686,7 +6108,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -5886,7 +6308,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.808044+00:00"
+    "updatedAt": "2026-09-11T19:39:36.754185+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -5916,7 +6338,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -6113,7 +6535,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.810645+00:00"
+    "updatedAt": "2026-09-11T19:39:36.756801+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -6144,7 +6566,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -6344,7 +6766,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.816178+00:00"
+    "updatedAt": "2026-09-11T19:39:36.763709+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -6375,7 +6797,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -6545,7 +6967,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.818423+00:00"
+    "updatedAt": "2026-09-11T19:39:36.765677+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -6576,7 +6998,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -6689,7 +7111,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.821104+00:00"
+    "updatedAt": "2026-09-11T19:39:36.768081+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -6719,7 +7141,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -6917,7 +7339,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.825215+00:00"
+    "updatedAt": "2026-09-11T19:39:36.770601+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -6948,7 +7370,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -7118,7 +7540,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.831081+00:00"
+    "updatedAt": "2026-09-11T19:39:36.773259+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -7149,7 +7571,7 @@
       "/products/mb-pdp/g-rl9045-205u931/7.jpg",
       "/products/mb-pdp/g-rl9045-205u931/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 295.0,
     "sku": "G_RL9045_205U931",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
@@ -7261,7 +7683,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.872455+00:00"
+    "updatedAt": "2026-09-11T19:39:36.774828+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -7289,7 +7711,7 @@
       "/products/mb-pdp/g-rl9064-127a340/4.jpg",
       "/products/mb-pdp/g-rl9064-127a340/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 160.0,
     "sku": "G_RL9064_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
@@ -7453,7 +7875,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.878233+00:00"
+    "updatedAt": "2026-09-11T19:39:36.777317+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -7485,7 +7907,7 @@
       "/products/mb-pdp/g-hg5161-205a100/7.jpg",
       "/products/mb-pdp/g-hg5161-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 1795.0,
     "sku": "G_HG5161_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
@@ -7627,7 +8049,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.880541+00:00"
+    "updatedAt": "2026-09-11T19:39:36.779615+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -7661,7 +8083,7 @@
       "/products/mb-pdp/g-hh0241-205a100/7.jpg",
       "/products/mb-pdp/g-hh0241-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 1495.0,
     "sku": "G_HH0241_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
@@ -8006,7 +8428,368 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.886354+00:00"
+    "updatedAt": "2026-09-11T19:39:36.784244+00:00"
+  },
+  {
+    "id": "mb-rope-keyring",
+    "name": "Rope Keyring",
+    "nameKo": "Rope 키링",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-keyrings",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-keyrings"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Inspired by the British seaside, this rope keyring is the perfect way to keep your keys safe – or to accessorise your Mulberry bag.",
+    "image": "/products/mb-pdp/g-rk6026-000p100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rk6026-000p100/1.jpg",
+      "/products/mb-pdp/g-rk6026-000p100/2.jpg",
+      "/products/mb-pdp/g-rk6026-000p100/3.jpg",
+      "/products/mb-pdp/g-rk6026-000p100/4.jpg",
+      "/products/mb-pdp/g-rk6026-000p100/5.jpg",
+      "/products/mb-pdp/g-rk6026-000p100/6.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 95.0,
+    "sku": "G_RK6026_000P100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-yellow-out-of-the-blue-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rk6026-000p100-sz-os",
+        "name": "Yellow & Out of the Blue Mixed Material / OS",
+        "nameKo": "Yellow & Out of the Blue Mixed Material",
+        "sku": "G_RK6026_000P100",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-rk6026-000p100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6026-000p100/1.jpg",
+          "/products/mb-pdp/g-rk6026-000p100/2.jpg",
+          "/products/mb-pdp/g-rk6026-000p100/3.jpg",
+          "/products/mb-pdp/g-rk6026-000p100/4.jpg",
+          "/products/mb-pdp/g-rk6026-000p100/5.jpg",
+          "/products/mb-pdp/g-rk6026-000p100/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-yellow-out-of-the-blue-mixed-material",
+        "inStock": true,
+        "colorKey": "yellow-out-of-the-blue-mixed-material",
+        "colorNameKo": "Yellow & Out of the Blue Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      },
+      {
+        "id": "mb-g-rk6021-000z115-sz-os",
+        "name": "Pink & Coral Orange Mixed Material / OS",
+        "nameKo": "Pink & Coral Orange Mixed Material",
+        "sku": "G_RK6021_000Z115",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-rk6021-000z115/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6021-000z115/1.jpg",
+          "/products/mb-pdp/g-rk6021-000z115/2.jpg",
+          "/products/mb-pdp/g-rk6021-000z115/3.jpg",
+          "/products/mb-pdp/g-rk6021-000z115/4.jpg",
+          "/products/mb-pdp/g-rk6021-000z115/5.jpg",
+          "/products/mb-pdp/g-rk6021-000z115/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-pink-coral-orange-mixed-material",
+        "inStock": true,
+        "colorKey": "pink-coral-orange-mixed-material",
+        "colorNameKo": "Pink & Coral Orange Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      },
+      {
+        "id": "mb-g-rk6022-000z115-sz-os",
+        "name": "Dark Pink & Coral Orange Mixed Material / OS",
+        "nameKo": "Dark Pink & Coral Orange Mixed Material",
+        "sku": "G_RK6022_000Z115",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-rk6022-000z115/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6022-000z115/1.jpg",
+          "/products/mb-pdp/g-rk6022-000z115/2.jpg",
+          "/products/mb-pdp/g-rk6022-000z115/3.jpg",
+          "/products/mb-pdp/g-rk6022-000z115/4.jpg",
+          "/products/mb-pdp/g-rk6022-000z115/5.jpg",
+          "/products/mb-pdp/g-rk6022-000z115/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-dark-pink-coral-orange-mixed-material",
+        "inStock": true,
+        "colorKey": "dark-pink-coral-orange-mixed-material",
+        "colorNameKo": "Dark Pink & Coral Orange Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      },
+      {
+        "id": "mb-g-rk6019-000z115-sz-os",
+        "name": "Green & Coral Orange Mixed Material / OS",
+        "nameKo": "Green & Coral Orange Mixed Material",
+        "sku": "G_RK6019_000Z115",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-rk6019-000z115/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk6019-000z115/1.jpg",
+          "/products/mb-pdp/g-rk6019-000z115/2.jpg",
+          "/products/mb-pdp/g-rk6019-000z115/3.jpg",
+          "/products/mb-pdp/g-rk6019-000z115/4.jpg",
+          "/products/mb-pdp/g-rk6019-000z115/5.jpg",
+          "/products/mb-pdp/g-rk6019-000z115/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-green-coral-orange-mixed-material",
+        "inStock": true,
+        "colorKey": "green-coral-orange-mixed-material",
+        "colorNameKo": "Green & Coral Orange Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Inspired by the British seaside, this rope keyring is the perfect way to keep your keys safe – or to accessorise your Mulberry bag.",
+        "image": "/products/mb-pdp/g-rk6026-000p100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A rope keyring. Clip and split ring attachments Silver hardware finish Height 24.5cm Width 4.5cm Depth 1.3cm Material Mixed Material A cord keyring with metal attachments. This product's code is RK6022-000Z115",
+        "image": "/products/mb-pdp/g-rk6026-000p100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "21.5cm · 5cm · 0.5cm · 16cm · 6cm · 1.3cm · 24.5cm · 4.5cm · 25cm · 7.5cm",
+        "image": "/products/mb-pdp/g-rk6026-000p100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "21.5cm · 5cm · 0.5cm · 16cm · 6cm · 1.3cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A rope keyring. Clip and split ring attachments Silver hardware finish Height 24.5cm Width 4.5cm Depth 1.3cm Material Mixed Material A cord keyring with metal attachments. This product's code is RK6022-000Z115",
+      "21.5cm",
+      "5cm",
+      "0.5cm",
+      "16cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:39:36.785320+00:00"
+  },
+  {
+    "id": "mb-rugby-ball-keyring",
+    "name": "Rugby Ball Keyring",
+    "nameKo": "Rugby Ball 키링",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-keyrings",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-keyrings"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Show your colours with this Rugby Keyring – compatible with AirTags and featuring a Mulberry logo in the middle.",
+    "image": "/products/mb-pdp/g-rk5989-000z100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rk5989-000z100/1.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/2.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/3.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/4.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/5.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/6.jpg",
+      "/products/mb-pdp/g-rk5989-000z100/7.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 175.0,
+    "sku": "G_RK5989_000Z100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/rugby-ball-keyring-white-mulberry-green-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rk5989-000z100-sz-os",
+        "name": "White & Mulberry Green Mixed Material / OS",
+        "nameKo": "White & 멀버리 Green Mixed Material",
+        "sku": "G_RK5989_000Z100",
+        "gbpPrice": 175.0,
+        "price": 440000,
+        "image": "/products/mb-pdp/g-rk5989-000z100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rk5989-000z100/1.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/2.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/3.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/4.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/5.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/6.jpg",
+          "/products/mb-pdp/g-rk5989-000z100/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/rugby-ball-keyring-white-mulberry-green-mixed-material",
+        "inStock": true,
+        "colorKey": "white-mulberry-green-mixed-material",
+        "colorNameKo": "White & 멀버리 Green Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-keyrings"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Show your colours with this Rugby Keyring – compatible with AirTags and featuring a Mulberry logo in the middle.",
+        "image": "/products/mb-pdp/g-rk5989-000z100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A rugby keyring. Silver hardware finish Height incl. attachment 17.5cm Width 7cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK5989-000Z100",
+        "image": "/products/mb-pdp/g-rk5989-000z100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "17.5cm · 7cm",
+        "image": "/products/mb-pdp/g-rk5989-000z100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "17.5cm · 7cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A rugby keyring. Silver hardware finish Height incl. attachment 17.5cm Width 7cm Material Mixed Material A bovine leather keyring with metal attachments. This product's code is RK5989-000Z100",
+      "17.5cm",
+      "7cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:39:36.787075+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -8037,7 +8820,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -8237,7 +9020,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.889418+00:00"
+    "updatedAt": "2026-09-11T19:39:36.790036+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -8266,7 +9049,7 @@
       "/products/mb-pdp/g-hp5238-000w578/4.jpg",
       "/products/mb-pdp/g-hp5238-000w578/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 420.0,
     "sku": "G_HH9365_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-antony-foggy-grey-small-classic-grain",
@@ -8461,7 +9244,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.893114+00:00"
+    "updatedAt": "2026-09-11T19:39:36.792785+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -8492,7 +9275,7 @@
       "/products/mb-pdp/g-rl9062-127a340/7.jpg",
       "/products/mb-pdp/g-rl9062-127a340/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 195.0,
     "sku": "G_RL9062_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
@@ -8633,7 +9416,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.894843+00:00"
+    "updatedAt": "2026-09-11T19:39:36.794445+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -8664,7 +9447,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -8777,7 +9560,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.899570+00:00"
+    "updatedAt": "2026-09-11T19:39:36.797116+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -8808,7 +9591,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -9008,7 +9791,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.912942+00:00"
+    "updatedAt": "2026-09-11T19:39:36.802388+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -9037,7 +9820,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -9148,7 +9931,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.915225+00:00"
+    "updatedAt": "2026-09-11T19:39:36.804099+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -9179,7 +9962,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -9292,7 +10075,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.916914+00:00"
+    "updatedAt": "2026-09-11T19:39:36.805696+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -9325,7 +10108,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -9583,7 +10366,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.919241+00:00"
+    "updatedAt": "2026-09-11T19:39:36.807953+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -9615,7 +10398,7 @@
       "/products/mb-pdp/g-hh0230-047d117/7.jpg",
       "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1595.0,
     "sku": "G_HH0230_047D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
@@ -9931,7 +10714,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.923078+00:00"
+    "updatedAt": "2026-09-11T19:39:36.811706+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -9962,7 +10745,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -10162,7 +10945,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.925718+00:00"
+    "updatedAt": "2026-09-11T19:39:36.815441+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -10197,7 +10980,7 @@
       "/products/mb-pdp/g-hh0140-736a100/7.jpg",
       "/products/mb-pdp/g-hh0140-736a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-black-heavy-grain",
@@ -10425,7 +11208,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.928614+00:00"
+    "updatedAt": "2026-09-11T19:39:36.818361+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -10456,7 +11239,7 @@
       "/products/mb-pdp/g-hh0135-000h709/5.jpg",
       "/products/mb-pdp/g-hh0135-000h709/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 595.0,
     "sku": "G_HH0135_000H709",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
@@ -10593,6 +11376,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:33:46.930580+00:00"
+    "updatedAt": "2026-09-11T19:39:36.820335+00:00"
   }
 ]
