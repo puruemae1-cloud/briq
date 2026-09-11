@@ -181,6 +181,18 @@ def main() -> None:
     print(f"Done batch — added {added}, {remaining} still pending", flush=True)
 
     if args.rebuild and added > 0:
+        if remaining:
+            print(
+                "Skipping catalog rebuild for this retry batch "
+                f"({remaining} strings still pending).",
+                flush=True,
+            )
+            print(
+                "Cache/state were updated and can be committed safely; "
+                "full rebuild will run automatically when pending reaches 0.",
+                flush=True,
+            )
+            return
         print("Rebuilding Prada mens-rtw catalog…", flush=True)
         subprocess.run(
             [

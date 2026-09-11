@@ -228,7 +228,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:42:53.105105+00:00"
+    "updatedAt": "2026-09-11T14:25:43.420560+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -401,7 +401,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:01.447802+00:00"
+    "updatedAt": "2026-09-11T14:25:43.423466+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -545,7 +545,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:10.188149+00:00"
+    "updatedAt": "2026-09-11T14:25:43.425355+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -718,7 +718,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:14.084703+00:00"
+    "updatedAt": "2026-09-11T14:25:43.426403+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -949,7 +949,235 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:21.268333+00:00"
+    "updatedAt": "2026-09-11T14:25:43.431994+00:00"
+  },
+  {
+    "id": "mb-mini-roxanne-shoulder-bag",
+    "name": "Mini Roxanne Shoulder Bag",
+    "nameKo": "미니 록산느 숄더백",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-mini",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-mini"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "A versatile version of our 2004 icon, the Mini Roxanne Shoulder Bag takes many of the original's features and modernises them, with functional Mulberry Brass Buckles on the front pockets and the Mulberry tree rivets. Features an internal slip pocket, as well as two external front pockets ideal for smaller items.",
+    "image": "/products/mb-pdp/g-rl8904-205t629/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl8904-205t629/1.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/2.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/3.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/4.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/5.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/6.jpg",
+      "/products/mb-pdp/g-rl8904-205t629/7.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 635.0,
+    "sku": "G_RL8904_205T629",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl8904-205t629-sz-os",
+        "name": "Marina Blue Small Classic Grain / OS",
+        "nameKo": "Marina Blue 스몰 클래식 그레인",
+        "sku": "G_RL8904_205T629",
+        "gbpPrice": 635.0,
+        "price": 1610000,
+        "image": "/products/mb-pdp/g-rl8904-205t629/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8904-205t629/1.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/2.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/3.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/4.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/5.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/6.jpg",
+          "/products/mb-pdp/g-rl8904-205t629/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
+        "inStock": true,
+        "colorKey": "marina-blue-small-classic-grain",
+        "colorNameKo": "Marina Blue 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      },
+      {
+        "id": "mb-g-rl0226-771p187-sz-os",
+        "name": "Butter Supple Smooth Leather / OS",
+        "nameKo": "Butter Supple Smooth 레더",
+        "sku": "G_RL0226_771P187",
+        "gbpPrice": 795.0,
+        "price": 2020000,
+        "image": "/products/mb-pdp/g-rl0226-771p187/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl0226-771p187/1.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/2.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/3.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/4.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/5.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/6.jpg",
+          "/products/mb-pdp/g-rl0226-771p187/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/mini-bags/mini-roxanne-shoulder-bag-butter-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "butter-supple-smooth-leather",
+        "colorNameKo": "Butter Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      },
+      {
+        "id": "mb-g-rl8902-730q749-sz-os",
+        "name": "Juniper Green NVT / OS",
+        "nameKo": "Juniper Green NVT",
+        "sku": "G_RL8902_730Q749",
+        "gbpPrice": 795.0,
+        "price": 2020000,
+        "image": "/products/mb-pdp/g-rl8902-730q749/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8902-730q749/1.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/2.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/3.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/4.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/5.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/6.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/7.jpg",
+          "/products/mb-pdp/g-rl8902-730q749/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/roxanne/mini-roxanne-shoulder-bag-juniper-green-nvt",
+        "inStock": true,
+        "colorKey": "juniper-green-nvt",
+        "colorNameKo": "Juniper Green NVT",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      },
+      {
+        "id": "mb-g-rl8902-730g110-sz-os",
+        "name": "Oak NVT / OS",
+        "nameKo": "Oak NVT",
+        "sku": "G_RL8902_730G110",
+        "gbpPrice": 795.0,
+        "price": 2020000,
+        "image": "/products/mb-pdp/g-rl8902-730g110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8902-730g110/1.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/2.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/3.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/4.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/5.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/6.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/7.jpg",
+          "/products/mb-pdp/g-rl8902-730g110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/roxanne/mini-roxanne-shoulder-bag-oak-nvt",
+        "inStock": true,
+        "colorKey": "oak-nvt",
+        "colorNameKo": "Oak NVT",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "A versatile version of our 2004 icon, the Mini Roxanne Shoulder Bag takes many of the original's features and modernises them, with functional Mulberry Brass Buckles on the front pockets and the Mulberry tree rivets. Features an internal slip pocket, as well as two external front pockets ideal for smaller items.",
+        "image": "/products/mb-pdp/g-rl8904-205t629/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A Mini version of our Roxanne Shoulder bag. Brass hardware finish Adjustable strap Two external front pockets with magnetic closure Zip closure One internal slip pocket Mulberry Tree rivet detailing Buckle detailing Height 11cm Width 24.5cm Depth 2cm - 9cm Strap drop 17cm -26cm Weight 0.4kg, approximately Material NVT This product is made with our Legacy NVT leather, a renewed take on Mulberry’s most classic leather. This leather may soften and darken with age enhancing its natural characteristics and creating a unique patina of its own. This product's code is RL8902-730Q749",
+        "image": "/products/mb-pdp/g-rl8904-205t629/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Adjustable strap · 11cm · 24.5cm · 2cm - 9cm · 17cm -26cm · 2cm-9cm · 17cm-26cm",
+        "image": "/products/mb-pdp/g-rl8904-205t629/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Adjustable strap · 11cm · 24.5cm · 2cm - 9cm · 17cm -26cm · 2cm-9cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A Mini version of our Roxanne Shoulder bag. Brass hardware finish Adjustable strap Two external front pockets with magnetic closure Zip closure One internal slip pocket Mulberry Tree rivet detailing Buckle detailing Height 11cm Width 24.5cm Depth 2cm - 9cm Strap drop 17cm -26cm Weight 0.4kg, approximately Material NVT This product is made with our Legacy NVT leather, a renewed take on Mulberry’s most classic leather. This leather may soften and darken with age enhancing its natural characteristics and creating a unique patina of its own. This product's code is RL8902-730Q749",
+      "Adjustable strap",
+      "11cm",
+      "24.5cm",
+      "2cm - 9cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T14:25:43.433077+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -980,7 +1208,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -1093,7 +1321,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:26.936226+00:00"
+    "updatedAt": "2026-09-11T14:25:43.435752+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -1124,7 +1352,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -1324,7 +1552,291 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:34.005547+00:00"
+    "updatedAt": "2026-09-11T14:25:43.441082+00:00"
+  },
+  {
+    "id": "mb-small-roxanne",
+    "name": "Small Roxanne",
+    "nameKo": "스몰 록산느",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-mini",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-mini"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "A small version of our Roxanne bag, itself a modern update on our 2003 style, the Small Roxanne takes all the Y2K attitude of the original and updates it, with brass buckling and streamlined details. Features two front pockets ideal for smaller items, as well as a detachable and adjustable strap for multiple ways of wearing.",
+    "image": "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+      "/products/mb-pdp/g-hh0389-047v699/2.jpg",
+      "/products/mb-pdp/g-hh0389-047v699/3.jpg",
+      "/products/mb-pdp/g-hh0389-047v699/4.jpg",
+      "/products/mb-pdp/g-hh0389-047v699/5.jpg",
+      "/products/mb-pdp/g-hh0389-047v699/6.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 1345.0,
+    "sku": "G_HH0389_047V699",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
+    "variants": [
+      {
+        "id": "mb-g-hh0389-047v699-sz-os",
+        "name": "Royal Amethyst Suede / OS",
+        "nameKo": "Royal Amethyst 스웨이드",
+        "sku": "G_HH0389_047V699",
+        "gbpPrice": 1345.0,
+        "price": 3410000,
+        "image": "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0389-047v699/1.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/2.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/3.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/4.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/5.jpg",
+          "/products/mb-pdp/g-hh0389-047v699/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
+        "inStock": true,
+        "colorKey": "royal-amethyst-suede",
+        "colorNameKo": "Royal Amethyst 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "A small version of our Roxanne bag, itself a modern update on our 2003 style, the Small Roxanne takes all the Y2K attitude of the original and updates it, with brass buckling and streamlined details. Features two front pockets ideal for smaller items, as well as a detachable and adjustable strap for multiple ways of wearing.",
+        "image": "/products/mb-pdp/g-hh0389-047v699/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A Small version of our Y2K-inspired Roxanne style. Brass hardware finish Detachable and adjustable strap Two top handles Two external front pockets with magnetic closure One internal slip pocket Buckle detailing Foil embossed Mulberry signature Mulberry Tree lining Height 13.5cm - 17cm Width 24cm - 28cm Depth 6cm - 10cm Handle Drop 12cm Strap Length 69cm - 84cm Strap Drop (from middle hole) 50cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0389-047V699",
+        "image": "/products/mb-pdp/g-hh0389-047v699/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Detachable and adjustable strap · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm · 50cm",
+        "image": "/products/mb-pdp/g-hh0389-047v699/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Detachable and adjustable strap · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A Small version of our Y2K-inspired Roxanne style. Brass hardware finish Detachable and adjustable strap Two top handles Two external front pockets with magnetic closure One internal slip pocket Buckle detailing Foil embossed Mulberry signature Mulberry Tree lining Height 13.5cm - 17cm Width 24cm - 28cm Depth 6cm - 10cm Handle Drop 12cm Strap Length 69cm - 84cm Strap Drop (from middle hole) 50cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0389-047V699",
+      "Detachable and adjustable strap",
+      "13.5cm - 17cm",
+      "24cm - 28cm",
+      "6cm - 10cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T14:25:43.441439+00:00"
+  },
+  {
+    "id": "mb-small-scotchgrain-bucket",
+    "name": "Small Scotchgrain Bucket",
+    "nameKo": "스몰 스카치그레인 버킷",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-mini",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-mini"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "The Scotchgrain Bucket is Mulberry heritage. Durably designed, large enough for all the everyday essentials, and with an adjustable strap for multiple ways of wearing, this bucket bag is composed of our bio-based Scotchgrain, a textured, durable material made from recycled and bio-based materials.",
+    "image": "/products/mb-pdp/g-hh0017-127a340/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh0017-127a340/1.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/2.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/3.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/4.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/5.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/6.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/7.jpg",
+      "/products/mb-pdp/g-hh0017-127a340/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 795.0,
+    "sku": "G_HH0017_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-hh0017-127a340-sz-os",
+        "name": "Black & Cognac Bio-Based Scotchgrain / OS",
+        "nameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "sku": "G_HH0017_127A340",
+        "gbpPrice": 795.0,
+        "price": 2020000,
+        "image": "/products/mb-pdp/g-hh0017-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0017-127a340/1.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/2.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/3.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/4.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/5.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/6.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/7.jpg",
+          "/products/mb-pdp/g-hh0017-127a340/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "The Scotchgrain Bucket is Mulberry heritage. Durably designed, large enough for all the everyday essentials, and with an adjustable strap for multiple ways of wearing, this bucket bag is composed of our bio-based Scotchgrain, a textured, durable material made from recycled and bio-based materials.",
+        "image": "/products/mb-pdp/g-hh0017-127a340/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A small Scotchgrain bucket bag. Drawstring closure with Mulberry Tree medallion detail Brass hardware finish One internal slip pocket One leather top handle Adjustable and detachable strap Belt detailing at base Leather trim Heritage Check lining Height 21cm Width 20cm Depth 14cm Material Bio-Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HH0017-127A340",
+        "image": "/products/mb-pdp/g-hh0017-127a340/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Adjustable and detachable strap · 21cm · 20cm · 14cm",
+        "image": "/products/mb-pdp/g-hh0017-127a340/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Adjustable and detachable strap · 21cm · 20cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A small Scotchgrain bucket bag. Drawstring closure with Mulberry Tree medallion detail Brass hardware finish One internal slip pocket One leather top handle Adjustable and detachable strap Belt detailing at base Leather trim Heritage Check lining Height 21cm Width 20cm Depth 14cm Material Bio-Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HH0017-127A340",
+      "Adjustable and detachable strap",
+      "21cm",
+      "20cm",
+      "14cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T14:25:43.441972+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -1336,7 +1848,8 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-clutches"
+      "mb-women-clutches",
+      "mb-women-mini"
     ],
     "tags": [
       "mulberry",
@@ -1355,7 +1868,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -1417,6 +1930,64 @@
           "mb-women-bags",
           "mb-women-clutches"
         ]
+      },
+      {
+        "id": "mb-g-hh0199-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0199_771A100",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
+      },
+      {
+        "id": "mb-g-hh0199-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0199_771A110",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-mini"
+        ]
       }
     ],
     "storySections": [
@@ -1443,7 +2014,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "2가지"
+        "valueKo": "4가지"
       }
     ],
     "featuresKo": [
@@ -1497,6 +2068,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T13:43:40.292148+00:00"
+    "updatedAt": "2026-09-11T14:25:43.445086+00:00"
   }
 ]
