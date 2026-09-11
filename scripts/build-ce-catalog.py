@@ -27,6 +27,7 @@ from celine_common import (  # noqa: E402
     title_from_pdp_url,
 )
 from di_common import gbp_to_krw  # noqa: E402
+from ce_prose_ko import prose_to_ko  # noqa: E402
 from ko_qa import gtx_translate, has_hangul, is_good_korean  # noqa: E402
 
 OUT_JSON = ROOT / "src/data/ce/ce-catalog.json"
@@ -73,6 +74,7 @@ TITLE_MAP = {
     "cotton gabardine": "코튼 개버딘",
     "light cotton gabardine": "라이트 코튼 개버딘",
     "cotton": "코튼",
+    "fleece": "플리스",
     "viscose satin": "비스코스 새틴",
     "viscose": "비스코스",
     "satin": "새틴",
@@ -330,10 +332,44 @@ LINE_MAP = {
     "100% cotton": "100% 면",
     "100% wool": "100% 울",
     "triomphe embroidery": "트리옹프 자수",
+    "celine embroidery": "셀린느 자수",
     "classic fit": "클래식 핏",
     "regular fit": "레귤러 핏",
     "loose fit": "루즈 핏",
     "oversized fit": "오버사이즈 핏",
+    "mid rise": "미드 라이즈",
+    "high rise": "하이 라이즈",
+    "low rise": "로우 라이즈",
+    "2 side pockets": "사이드 포켓 2개",
+    "2 side pocket": "사이드 포켓 2개",
+    "1 back pocket": "백 포켓 1개",
+    "raw hems": "로우 헴",
+    "raw hem": "로우 헴",
+    "italy made": "이탈리아 제작",
+    "made in italy": "이탈리아 제작",
+    "portugal made": "포르투갈 제작",
+    "made in portugal": "포르투갈 제작",
+    "france made": "프랑스 제작",
+    "made in france": "프랑스 제작",
+    "japan made": "일본 제작",
+    "made in japan": "일본 제작",
+    "middle waist": "미들 웨이스트",
+    "calfskin lining": "카프스킨 안감",
+    "unlined": "안감 없음",
+    "lining": "안감",
+    "line dry.": "평평하게 건조해 주세요.",
+    "line dry": "평평하게 건조해 주세요.",
+    "line dry without spin.": "탈수 없이 평평하게 건조해 주세요.",
+    "line dry without spin": "탈수 없이 평평하게 건조해 주세요.",
+    "do not use steam.": "스팀을 사용하지 마십시오.",
+    "do not use steam": "스팀을 사용하지 마십시오.",
+    "elasticated waistband": "엘라스틱 웨이스트밴드",
+    "elasticated waistband with adjustable drawstrings and celine engraved metal aglets": "엘라스틱 웨이스트밴드, 조절 가능한 드로스트링, 셀린느 각인 메탈 애글리트",
+    "elasticated waistband adjustable drawstrings celine engraved metal aglets": "엘라스틱 웨이스트밴드, 조절 가능한 드로스트링, 셀린느 각인 메탈 애글리트",
+    "elasticated waistband with adjustable drawstrings": "엘라스틱 웨이스트밴드, 조절 가능한 드로스트링",
+    "elasticated waistband adjustable drawstrings": "엘라스틱 웨이스트밴드, 조절 가능한 드로스트링",
+    "the loose celine shape is a large fit with dropped shoulders.": "느슨한 셀린느 실루엣은 드롭 숄더의 여유 있는 핏입니다.",
+    "it is possible to take one size down from your usual size for a more fitted look.": "평소 사이즈보다 한 사이즈 아래로 선택하면 더 몸에 꼭 맞는 룩을 연출할 수 있습니다.",
     "shirt collar with collar stays": "카라 스테이가 포함된 셔츠 칼라",
     "buttoned cuffs": "버튼 커프스",
     "7 celine paris-engraved mother-of-pearl buttons": "CELINE PARIS 각인 자개 버튼 7개",
@@ -343,6 +379,7 @@ LINE_MAP = {
     "only use bleach-free laundry products.": "표백 성분이 없는 세제를 사용해 주세요.",
     "do not tumble dry.": "건조기 사용은 권장되지 않습니다.",
     "maximum ironing temperature: 150°c / 302°f": "다림질 최대 온도는 150°C입니다.",
+    "maximum ironing temperature: 110°c / 230°f": "최대 다림질 온도: 110°C/230°F",
     "the item can be delicately dry cleaned with hydrocarbons": "하이드로카본 계열로 약하게 드라이클리닝할 수 있습니다.",
     "we suggest taking your usual size.": "평소 선택하시는 사이즈를 권장합니다.",
     "fits true to size.": "정사이즈로 제안됩니다.",
@@ -355,36 +392,77 @@ def translate_cache() -> dict[str, str]:
     return load_json(CACHE, {})
 
 
-def tr(text: str | None, cache: dict[str, str], *, allow_remote: bool = True) -> str:
+def tr(
+    text: str | None,
+    cache: dict[str, str],
+    *,
+    allow_remote: bool = True,
+    prose: bool = False,
+) -> str:
+    """Translate copy. Titles may use TITLE_MAP; PDP prose must never (avoids EN/KO hybrids)."""
     s = clean_html_text(text or "")
     if not s:
         return ""
-    low = s.lower()
-    if low in LINE_MAP:
-        cache[s] = LINE_MAP[low]
+    low = re.sub(r"\s+", " ", re.sub(r"[-–—]+", " ", s.lower())).strip()
+    for key in (low, low.rstrip(" ."), low.rstrip("."), re.sub(r"[.]+$", "", low)):
+        if key in LINE_MAP:
+            cache[s] = LINE_MAP[key]
+            return cache[s]
+    # Common fit guidance patterns (keep natural KO, not glossary hybrids)
+    if "loose celine shape" in low and "dropped shoulders" in low:
+        cache[s] = "느슨한 셀린느 실루엣은 드롭 숄더의 여유 있는 핏입니다."
+        return cache[s]
+    if "one size down" in low and "fitted look" in low:
+        cache[s] = "평소 사이즈보다 한 사이즈 아래로 선택하면 더 몸에 꼭 맞는 룩을 연출할 수 있습니다."
         return cache[s]
     if "fits true to size" in low and "usual size" in low:
         cache[s] = "셀린느의 클래식 실루엣 기준 정사이즈로 제안됩니다. 평소 선택하시는 사이즈를 권장합니다."
         return cache[s]
     if s in cache and is_good_korean(cache[s]):
         return cache[s]
-    if has_hangul(s):
+    if has_hangul(s) and is_good_korean(s):
+        cache[s] = s
+        return s
+    # Pure codes / widths / symbols — keep as-is
+    if re.fullmatch(r"[\d\s./%°CFXx×:\-()CMWcmw]+", s):
         cache[s] = s
         return s
     fast = os.environ.get("BRIQ_FAST_BUILD") == "1"
-    if fast or not allow_remote or len(s) > 120:
-        out = clean_title_ko(s) or s
-        cache[s] = out
-        return out
+    if prose:
+        # Prefer offline prose map (stable KO). Remote gtx is optional — often 429.
+        local = prose_to_ko(s)
+        want_remote = allow_remote and os.environ.get("BRIQ_CE_REMOTE") == "1" and not fast
+        if local and is_good_korean(local):
+            cache[s] = local
+            return local
+        if not want_remote:
+            # Accept best local effort even if a few EN tokens remain (motif names, etc.).
+            cache[s] = local or s
+            return cache[s]
+        try:
+            out = gtx_translate(s)
+            time.sleep(0.05)
+        except Exception:
+            out = local or s
+        out = out or local or s
+        if out and is_good_korean(out):
+            cache[s] = out
+            return out
+        cache[s] = local or out
+        return cache[s]
+    dicted = clean_title_ko(s)
+    if fast or not allow_remote:
+        cache[s] = dicted or s
+        return cache[s]
     try:
         out = gtx_translate(s)
-        time.sleep(0.02)
+        time.sleep(0.05)
+        out = clean_title_ko(out or dicted or s)
     except Exception:
-        out = s
-    out = clean_title_ko(out or s)
+        out = dicted or s
     if out:
         cache[s] = out
-    return out
+    return out or s
 
 
 def clean_title_ko(text: str) -> str:
@@ -652,9 +730,17 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     details_en = extract_lines(row, "DETAILS")
     care_en = extract_lines(row, "CARE AND MAINTENANCE")
     fit_en = extract_lines(row, "Size and fit")
-    features_ko = [y for x in details_en[:10] if (y := tr(x, cache, allow_remote=False))]
-    care_ko = [y for x in care_en[:6] if (y := tr(x, cache, allow_remote=False))]
-    fit_ko = [y for x in fit_en[:4] if (y := tr(x, cache, allow_remote=False))]
+    features_ko = [
+        y for x in details_en[:10] if (y := tr(x, cache, allow_remote=True, prose=True))
+    ]
+    # Prefer one natural care summary when official copy is a long multi-bullet guide.
+    care_joined = " ".join(care_en)
+    care_summary = tr(care_joined, cache, allow_remote=True, prose=True) if care_joined else ""
+    if care_summary and len(care_joined) > 180:
+        care_ko = [care_summary]
+    else:
+        care_ko = [y for x in care_en[:6] if (y := tr(x, cache, allow_remote=True, prose=True))]
+    fit_ko = [y for x in fit_en[:4] if (y := tr(x, cache, allow_remote=True, prose=True))]
     desc_parts = []
     if features_ko:
         desc_parts.append(" / ".join(features_ko[:3]))
@@ -666,7 +752,12 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
 
     tech_specs = []
     if details_en:
-        tech_specs.append({"labelKo": "디테일", "valueKo": tr(details_en[0], cache)})
+        tech_specs.append(
+            {
+                "labelKo": "디테일",
+                "valueKo": tr(details_en[0], cache, allow_remote=True, prose=True),
+            }
+        )
     if row.get("categoryLabel"):
         category_ko = clean_title_ko(str(row["categoryLabel"]).replace("/", " / ").title())
         tech_specs.append({"labelKo": "카테고리", "valueKo": category_ko})
