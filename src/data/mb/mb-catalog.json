@@ -139,7 +139,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.560857+00:00"
+    "updatedAt": "2026-09-11T19:51:37.391543+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -281,7 +281,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.561949+00:00"
+    "updatedAt": "2026-09-11T19:51:37.393667+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -423,7 +423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.562733+00:00"
+    "updatedAt": "2026-09-11T19:51:37.395495+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -589,7 +589,151 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.564952+00:00"
+    "updatedAt": "2026-09-11T19:51:37.398042+00:00"
+  },
+  {
+    "id": "mb-alfie-sunglasses",
+    "name": "Alfie Sunglasses",
+    "nameKo": "Alfie 선글라스",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-sunglasses",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-sunglasses"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "A stylish, wire-framed shade composed of bio-acetate and metal, the round Alfie sunglasses are the perfect piece for a day in the sun.",
+    "image": "/products/mb-pdp/g-rs5491-000a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rs5491-000a100/1.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/2.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/3.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/4.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/5.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/6.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/7.jpg",
+      "/products/mb-pdp/g-rs5491-000a100/8.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 220.0,
+    "sku": "G_RS5491_000A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-accessories/alfie-sunglasses-black-mixed-material",
+    "variants": [
+      {
+        "id": "mb-g-rs5491-000a100-sz-os",
+        "name": "Black Mixed Material / OS",
+        "nameKo": "Black Mixed Material",
+        "sku": "G_RS5491_000A100",
+        "gbpPrice": 220.0,
+        "price": 560000,
+        "image": "/products/mb-pdp/g-rs5491-000a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5491-000a100/1.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/2.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/3.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/4.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/5.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/6.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/7.jpg",
+          "/products/mb-pdp/g-rs5491-000a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-accessories/alfie-sunglasses-black-mixed-material",
+        "inStock": true,
+        "colorKey": "black-mixed-material",
+        "colorNameKo": "Black Mixed Material",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "A stylish, wire-framed shade composed of bio-acetate and metal, the round Alfie sunglasses are the perfect piece for a day in the sun.",
+        "image": "/products/mb-pdp/g-rs5491-000a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A pair of round, wire-framed sunglasses. Engraved Mulberry signature detailing Enamel detailing on arms and frame Lens category: 3 Solid lenses UV400 These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.7cm Lens Width 5.8cm Bridge 2.2cm Arm Length 14cm Material Mixed Material Metal frames with enamel detailing This product's code is RS5491-000A100",
+        "image": "/products/mb-pdp/g-rs5491-000a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "4.7cm · 5.8cm · 2.2cm · 14cm",
+        "image": "/products/mb-pdp/g-rs5491-000a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "4.7cm · 5.8cm · 2.2cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A pair of round, wire-framed sunglasses. Engraved Mulberry signature detailing Enamel detailing on arms and frame Lens category: 3 Solid lenses UV400 These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.7cm Lens Width 5.8cm Bridge 2.2cm Arm Length 14cm Material Mixed Material Metal frames with enamel detailing This product's code is RS5491-000A100",
+      "4.7cm",
+      "5.8cm",
+      "2.2cm",
+      "14cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:51:37.398610+00:00"
   },
   {
     "id": "mb-antony",
@@ -619,7 +763,7 @@
       "/products/mb-pdp/g-hs5188-127q330/5.jpg",
       "/products/mb-pdp/g-hs5188-127q330/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 555.0,
     "sku": "G_HS5188_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/antony-black-cognac-bioveg-scotchgrain-flat-calf",
@@ -982,7 +1126,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.570983+00:00"
+    "updatedAt": "2026-09-11T19:51:37.403810+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -1014,7 +1158,7 @@
       "/products/mb-pdp/g-hh0014-127a340/5.jpg",
       "/products/mb-pdp/g-hh0014-127a340/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HH6601_748V185",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/bayswater-amethyst-high-shine-leather",
@@ -1344,7 +1488,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.575783+00:00"
+    "updatedAt": "2026-09-11T19:51:37.408002+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1375,7 +1519,7 @@
       "/products/mb-pdp/g-hh8735-552g110/7.jpg",
       "/products/mb-pdp/g-hh8735-552g110/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH4356_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/mens-briefcases/belgrave-single-document-holder-black-small-classic-grain",
@@ -1517,7 +1661,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.578410+00:00"
+    "updatedAt": "2026-09-11T19:51:37.410394+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -1547,7 +1691,7 @@
       "/products/mb-pdp/g-rk6012-000z115/6.jpg",
       "/products/mb-pdp/g-rk6012-000z115/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 175.0,
     "sku": "G_RK6012_000Z115",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/british-summer-keyring-bumblebee-multicolour-mixed-material",
@@ -1658,7 +1802,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.579975+00:00"
+    "updatedAt": "2026-09-11T19:51:37.411943+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -1688,7 +1832,7 @@
       "/products/mb-pdp/g-rk6014-000z115/6.jpg",
       "/products/mb-pdp/g-rk6014-000z115/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 95.0,
     "sku": "G_RK6014_000Z115",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/british-summer-keyring-fish-multicolour-mixed-material",
@@ -1799,7 +1943,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.581528+00:00"
+    "updatedAt": "2026-09-11T19:51:37.413488+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -1830,7 +1974,7 @@
       "/products/mb-pdp/g-hh8734-552g110/7.jpg",
       "/products/mb-pdp/g-hh8734-552g110/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HH8734_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/chiltern-backpack-oak-two-tone-small-classic-grain",
@@ -1972,7 +2116,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.584041+00:00"
+    "updatedAt": "2026-09-11T19:51:37.417592+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2003,7 +2147,7 @@
       "/products/mb-pdp/g-rl7975-205a100/7.jpg",
       "/products/mb-pdp/g-rl7975-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 185.0,
     "sku": "G_RL7975_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/continental-long-zipped-card-holder-black-small-classic-grain",
@@ -2115,7 +2259,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.587368+00:00"
+    "updatedAt": "2026-09-11T19:51:37.419302+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -2141,7 +2285,7 @@
       "/products/mb-pdp/g-rl8988-127a340/2.jpg",
       "/products/mb-pdp/g-rl8988-127a340/3.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 135.0,
     "sku": "G_RL4644_748A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-her/credit-card-slip-black-high-shine-leather",
@@ -2329,7 +2473,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.590191+00:00"
+    "updatedAt": "2026-09-11T19:51:37.422162+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -2358,7 +2502,7 @@
       "/products/mb-pdp/g-hh0276-552g110/5.jpg",
       "/products/mb-pdp/g-hh0276-552g110/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 895.0,
     "sku": "G_HH0274_787K569",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-camera-bag-apple-red-waxed-snake-print",
@@ -2553,7 +2697,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.593336+00:00"
+    "updatedAt": "2026-09-11T19:51:37.425304+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -2584,7 +2728,7 @@
       "/products/mb-pdp/g-rl8971-205a100/7.jpg",
       "/products/mb-pdp/g-rl8971-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_RL8971_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-clutch-black-small-classic-grain",
@@ -2784,7 +2928,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.597738+00:00"
+    "updatedAt": "2026-09-11T19:51:37.429699+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -2815,7 +2959,7 @@
       "/products/mb-pdp/g-rl9116-787k569/7.jpg",
       "/products/mb-pdp/g-rl9116-787k569/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 345.0,
     "sku": "G_RL9116_787K569",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/darley-cosmetic-pouch-apple-red-waxed-snake-print",
@@ -2957,7 +3101,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.600748+00:00"
+    "updatedAt": "2026-09-11T19:51:37.432369+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -2988,7 +3132,7 @@
       "/products/mb-pdp/g-rl9114-782g234/7.jpg",
       "/products/mb-pdp/g-rl9114-782g234/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 495.0,
     "sku": "G_RL9114_782G234",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/clutches/darley-cosmetic-pouch-mulberry-x-british-pasture-leather-vintage-ebony-british-pasture-leather",
@@ -3101,7 +3245,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.603013+00:00"
+    "updatedAt": "2026-09-11T19:51:37.434174+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -3131,7 +3275,7 @@
       "/products/mb-pdp/g-rk5988-000a500/6.jpg",
       "/products/mb-pdp/g-rk5988-000a500/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 145.0,
     "sku": "G_RK5988_000A500",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/football-keyring-black-white-mixed-material",
@@ -3241,7 +3385,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.604578+00:00"
+    "updatedAt": "2026-09-11T19:51:37.435579+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -3271,7 +3415,7 @@
       "/products/mb-pdp/g-hh9956-047a100/6.jpg",
       "/products/mb-pdp/g-hh9956-047a100/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1295.0,
     "sku": "G_HH9956_047A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-black-suede",
@@ -3468,7 +3612,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.607380+00:00"
+    "updatedAt": "2026-09-11T19:51:37.438022+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -3502,7 +3646,7 @@
       "/products/mb-pdp/g-hs5094-127q330/7.jpg",
       "/products/mb-pdp/g-hs5094-127q330/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 895.0,
     "sku": "G_HS5094_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-backpack-mole-cognac-bioveg-scotchgrain",
@@ -3673,7 +3817,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.611064+00:00"
+    "updatedAt": "2026-09-11T19:51:37.441327+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -3706,7 +3850,7 @@
       "/products/mb-pdp/g-hb5130-127a340/6.jpg",
       "/products/mb-pdp/g-hb5130-127a340/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 895.0,
     "sku": "G_HB5130_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-briefcase-black-cognac-bio-based-scotchgrain",
@@ -3985,7 +4129,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.615940+00:00"
+    "updatedAt": "2026-09-11T19:51:37.447218+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -4019,7 +4163,7 @@
       "/products/mb-pdp/g-hs5195-127q330/7.jpg",
       "/products/mb-pdp/g-hs5195-127q330/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 845.0,
     "sku": "G_HS5195_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/luggage/heritage-day-clipper-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -4277,7 +4421,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.624077+00:00"
+    "updatedAt": "2026-09-11T19:51:37.451248+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -4314,7 +4458,7 @@
       "/products/mb-pdp/g-hl5136-127a340/7.jpg",
       "/products/mb-pdp/g-hl5136-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HL5136_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/heritage-medium-clipper-black-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -4686,7 +4830,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.630153+00:00"
+    "updatedAt": "2026-09-11T19:51:37.457336+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -4717,7 +4861,7 @@
       "/products/mb-pdp/g-hs5202-179a100/7.jpg",
       "/products/mb-pdp/g-hs5202-179a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HS5202_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-nylon-backpack-black-nylon",
@@ -4830,7 +4974,151 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.633716+00:00"
+    "updatedAt": "2026-09-11T19:51:37.460110+00:00"
+  },
+  {
+    "id": "mb-heritage-sunglasses",
+    "name": "Heritage Sunglasses",
+    "nameKo": "Heritage 선글라스",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-sunglasses",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-sunglasses"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Our Heritage Bio Acetate Sunglasses feature a modern mixed metal and Bio Acetate frame. Their classic round shape is fitted with UV400 Bio Nylon lenses for full sun protection.",
+    "image": "/products/mb-pdp/g-rs5476-000a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rs5476-000a100/1.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/2.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/3.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/4.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/5.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/6.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/7.jpg",
+      "/products/mb-pdp/g-rs5476-000a100/8.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 240.0,
+    "sku": "G_RS5476_000A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/heritage-sunglasses-black-metal",
+    "variants": [
+      {
+        "id": "mb-g-rs5476-000a100-sz-os",
+        "name": "Black Metal / OS",
+        "nameKo": "Black Metal",
+        "sku": "G_RS5476_000A100",
+        "gbpPrice": 240.0,
+        "price": 610000,
+        "image": "/products/mb-pdp/g-rs5476-000a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5476-000a100/1.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/2.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/3.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/4.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/5.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/6.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/7.jpg",
+          "/products/mb-pdp/g-rs5476-000a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/heritage-sunglasses-black-metal",
+        "inStock": true,
+        "colorKey": "black-metal",
+        "colorNameKo": "Black Metal",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Our Heritage Bio Acetate Sunglasses feature a modern mixed metal and Bio Acetate frame. Their classic round shape is fitted with UV400 Bio Nylon lenses for full sun protection.",
+        "image": "/products/mb-pdp/g-rs5476-000a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "Classic round-shaped sunglasses with full sun protection. A round, unisex pair of sunglasses with a mix of metal and acetate Bio Nylon lenses Bio Acetate and metal frames UV400 lenses ensure full sun protection Lens Category: 3 Mulberry signature Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.5cm Lens Width 5.6cm Bridge 2.2cm Arm Length 14cm Material Metal Durable metal frame with Bio-nylon lenses which are biodegradable and use less energy than classic lenses. This product's code is RS5476-000A100",
+        "image": "/products/mb-pdp/g-rs5476-000a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "4.5cm · 5.6cm · 2.2cm · 14cm",
+        "image": "/products/mb-pdp/g-rs5476-000a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "4.5cm · 5.6cm · 2.2cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "Classic round-shaped sunglasses with full sun protection. A round, unisex pair of sunglasses with a mix of metal and acetate Bio Nylon lenses Bio Acetate and metal frames UV400 lenses ensure full sun protection Lens Category: 3 Mulberry signature Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.5cm Lens Width 5.6cm Bridge 2.2cm Arm Length 14cm Material Metal Durable metal frame with Bio-nylon lenses which are biodegradable and use less energy than classic lenses. This product's code is RS5476-000A100",
+      "4.5cm",
+      "5.6cm",
+      "2.2cm",
+      "14cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:51:37.460688+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -4859,7 +5147,7 @@
       "/products/mb-pdp/g-rl8176-205q633/5.jpg",
       "/products/mb-pdp/g-rl8176-205q633/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 295.0,
     "sku": "G_RL8176_205Q633",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/heritage-wash-case-mulberry-green-small-classic-grain",
@@ -4969,7 +5257,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.635841+00:00"
+    "updatedAt": "2026-09-11T19:51:37.462944+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -5001,7 +5289,7 @@
       "/products/mb-pdp/g-hp9659-206q129/7.jpg",
       "/products/mb-pdp/g-hp9659-206q129/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 635.0,
     "sku": "G_HP9659_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/backpacks/heritage-waxed-backpack-dark-moss-waxed-cotton",
@@ -5142,7 +5430,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.638085+00:00"
+    "updatedAt": "2026-09-11T19:51:37.466385+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -5175,7 +5463,7 @@
       "/products/mb-pdp/g-hp5236-206q129/7.jpg",
       "/products/mb-pdp/g-hp5236-206q129/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HP5236_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/mens-holdalls/heritage-waxed-day-clipper-dark-moss-waxed-cotton",
@@ -5316,7 +5604,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.640381+00:00"
+    "updatedAt": "2026-09-11T19:51:37.468680+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -5348,7 +5636,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -5628,7 +5916,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.644958+00:00"
+    "updatedAt": "2026-09-11T19:51:37.473494+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -5659,7 +5947,7 @@
       "/products/mb-pdp/g-rl8312-127q330/7.jpg",
       "/products/mb-pdp/g-rl8312-127q330/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 175.0,
     "sku": "G_RL8312_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/small-leather-goods/purses/heritage-zipped-long-card-holder-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -5771,7 +6059,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.646830+00:00"
+    "updatedAt": "2026-09-11T19:51:37.475710+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -5802,7 +6090,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -6112,7 +6400,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.650916+00:00"
+    "updatedAt": "2026-09-11T19:51:37.481417+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -6142,7 +6430,7 @@
       "/products/mb-pdp/g-rl8853-552g110/6.jpg",
       "/products/mb-pdp/g-rl8853-552g110/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 395.0,
     "sku": "G_RL8853_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
@@ -6282,7 +6570,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.652280+00:00"
+    "updatedAt": "2026-09-11T19:51:37.483134+00:00"
   },
   {
     "id": "mb-lily",
@@ -6310,7 +6598,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 995.0,
     "sku": "G_HH3288_874A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/lily-black-glossy-goat",
@@ -6502,7 +6790,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.656644+00:00"
+    "updatedAt": "2026-09-11T19:51:37.486130+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -6534,7 +6822,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -6734,7 +7022,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.658371+00:00"
+    "updatedAt": "2026-09-11T19:51:37.487868+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -6764,7 +7052,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -6961,7 +7249,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.661125+00:00"
+    "updatedAt": "2026-09-11T19:51:37.490824+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -6992,7 +7280,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -7192,7 +7480,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.666755+00:00"
+    "updatedAt": "2026-09-11T19:51:37.496886+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -7223,7 +7511,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -7393,7 +7681,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.668774+00:00"
+    "updatedAt": "2026-09-11T19:51:37.498884+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -7424,7 +7712,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -7537,7 +7825,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.671208+00:00"
+    "updatedAt": "2026-09-11T19:51:37.501301+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -7567,7 +7855,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -7765,7 +8053,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.673690+00:00"
+    "updatedAt": "2026-09-11T19:51:37.503768+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -7796,7 +8084,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -7966,7 +8254,209 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.676462+00:00"
+    "updatedAt": "2026-09-11T19:51:37.506772+00:00"
+  },
+  {
+    "id": "mb-monty-sunglasses",
+    "name": "Monty Sunglasses",
+    "nameKo": "Monty 선글라스",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-sunglasses",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-sunglasses"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "These Monty Sunglasses are the perfect way to keep cool in the sun. A classic aviator silhouette, this pair features a gold hardware finish and comes with a case and lens cloth.",
+    "image": "/products/mb-pdp/g-rs5505-000a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rs5505-000a100/1.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/2.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/3.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/4.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/5.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/6.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/7.jpg",
+      "/products/mb-pdp/g-rs5505-000a100/8.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 195.0,
+    "sku": "G_RS5505_000A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-black-bio-acetate",
+    "variants": [
+      {
+        "id": "mb-g-rs5505-000a100-sz-os",
+        "name": "Black Bio Acetate / OS",
+        "nameKo": "Black Bio Acetate",
+        "sku": "G_RS5505_000A100",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5505-000a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5505-000a100/1.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/2.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/3.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/4.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/5.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/6.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/7.jpg",
+          "/products/mb-pdp/g-rs5505-000a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-black-bio-acetate",
+        "inStock": true,
+        "colorKey": "black-bio-acetate",
+        "colorNameKo": "Black Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      },
+      {
+        "id": "mb-g-rs5505-000f175-sz-os",
+        "name": "Tortoiseshell Bio Acetate / OS",
+        "nameKo": "Tortoiseshell Bio Acetate",
+        "sku": "G_RS5505_000F175",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5505-000f175/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5505-000f175/1.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/2.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/3.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/4.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/5.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/6.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/7.jpg",
+          "/products/mb-pdp/g-rs5505-000f175/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-tortoiseshell-bio-acetate",
+        "inStock": true,
+        "colorKey": "tortoiseshell-bio-acetate",
+        "colorNameKo": "Tortoiseshell Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      },
+      {
+        "id": "mb-g-rs5505-000x120-sz-os",
+        "name": "Clear Bio Acetate / OS",
+        "nameKo": "Clear Bio Acetate",
+        "sku": "G_RS5505_000X120",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5505-000x120/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5505-000x120/1.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/2.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/3.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/4.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/5.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/6.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/7.jpg",
+          "/products/mb-pdp/g-rs5505-000x120/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-clear-bio-acetate",
+        "inStock": true,
+        "colorKey": "clear-bio-acetate",
+        "colorNameKo": "Clear Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "These Monty Sunglasses are the perfect way to keep cool in the sun. A classic aviator silhouette, this pair features a gold hardware finish and comes with a case and lens cloth.",
+        "image": "/products/mb-pdp/g-rs5505-000a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "Aviator-style sunglasses. Gold hardware finish Classic aviator silhouette Lens category: 3 Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and branded cardboard box. Lens Height 4cm Lens Width 5cm Bridge 2.4cm Arm Length 14cm Material Bio Acetate These frames are made from bio acetate, a biodegradable and recyclable cellulose acetate. This is gained from renewable resources such as seed fibres derived from cotton, and wood fibres derived from conifers and deciduous trees. This product's code is RS5505-000A100",
+        "image": "/products/mb-pdp/g-rs5505-000a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "4cm · 5cm · 2.4cm · 14cm",
+        "image": "/products/mb-pdp/g-rs5505-000a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "4cm · 5cm · 2.4cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "3가지"
+      }
+    ],
+    "featuresKo": [
+      "Aviator-style sunglasses. Gold hardware finish Classic aviator silhouette Lens category: 3 Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and branded cardboard box. Lens Height 4cm Lens Width 5cm Bridge 2.4cm Arm Length 14cm Material Bio Acetate These frames are made from bio acetate, a biodegradable and recyclable cellulose acetate. This is gained from renewable resources such as seed fibres derived from cotton, and wood fibres derived from conifers and deciduous trees. This product's code is RS5505-000A100",
+      "4cm",
+      "5cm",
+      "2.4cm",
+      "14cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:51:37.509163+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -7997,7 +8487,7 @@
       "/products/mb-pdp/g-rl9045-205u931/7.jpg",
       "/products/mb-pdp/g-rl9045-205u931/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 295.0,
     "sku": "G_RL9045_205U931",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
@@ -8109,7 +8599,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.678336+00:00"
+    "updatedAt": "2026-09-11T19:51:37.510896+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -8137,7 +8627,7 @@
       "/products/mb-pdp/g-rl9064-127a340/4.jpg",
       "/products/mb-pdp/g-rl9064-127a340/5.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 160.0,
     "sku": "G_RL9064_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
@@ -8301,7 +8791,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.681030+00:00"
+    "updatedAt": "2026-09-11T19:51:37.513639+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -8333,7 +8823,7 @@
       "/products/mb-pdp/g-hg5161-205a100/7.jpg",
       "/products/mb-pdp/g-hg5161-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 1795.0,
     "sku": "G_HG5161_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
@@ -8475,7 +8965,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.684765+00:00"
+    "updatedAt": "2026-09-11T19:51:37.516149+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -8509,7 +8999,7 @@
       "/products/mb-pdp/g-hh0241-205a100/7.jpg",
       "/products/mb-pdp/g-hh0241-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 1495.0,
     "sku": "G_HH0241_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
@@ -8854,7 +9344,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.689400+00:00"
+    "updatedAt": "2026-09-11T19:51:37.520890+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -8884,7 +9374,7 @@
       "/products/mb-pdp/g-nr7345-205u888/6.jpg",
       "/products/mb-pdp/g-nr7345-205u888/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 325.0,
     "sku": "G_NR7345_205U888",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-accessories/mens-organisers-inserts/postman-s-lock-agenda-night-sky-small-classic-grain",
@@ -9080,7 +9570,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.691018+00:00"
+    "updatedAt": "2026-09-11T19:51:37.523697+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -9109,7 +9599,7 @@
       "/products/mb-pdp/g-nq7346-205a100/5.jpg",
       "/products/mb-pdp/g-nq7346-205a100/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 275.0,
     "sku": "G_NQ7346_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/organisers-inserts/postman-s-lock-pocket-book-black-small-classic-grain",
@@ -9219,7 +9709,209 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.691786+00:00"
+    "updatedAt": "2026-09-11T19:51:37.525771+00:00"
+  },
+  {
+    "id": "mb-quinn-sunglasses",
+    "name": "Quinn Sunglasses",
+    "nameKo": "Quinn 선글라스",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-sunglasses",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-sunglasses"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Our Quinn Bio Acetate Sunglasses are the ultimate in classic, unisex club masters. Their Bio Acetate frame is fitted with UV400 Bio Nylon lenses for full sun protection.",
+    "image": "/products/mb-pdp/g-rs5479-000f177/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rs5479-000f177/1.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/2.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/3.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/4.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/5.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/6.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/7.jpg",
+      "/products/mb-pdp/g-rs5479-000f177/8.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 195.0,
+    "sku": "G_RS5479_000F177",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-dark-striped-tortoiseshell-bio-acetate",
+    "variants": [
+      {
+        "id": "mb-g-rs5479-000f177-sz-os",
+        "name": "Dark Striped Tortoiseshell Bio Acetate / OS",
+        "nameKo": "Dark Striped Tortoiseshell Bio Acetate",
+        "sku": "G_RS5479_000F177",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5479-000f177/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5479-000f177/1.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/2.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/3.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/4.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/5.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/6.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/7.jpg",
+          "/products/mb-pdp/g-rs5479-000f177/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-dark-striped-tortoiseshell-bio-acetate",
+        "inStock": true,
+        "colorKey": "dark-striped-tortoiseshell-bio-acetate",
+        "colorNameKo": "Dark Striped Tortoiseshell Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      },
+      {
+        "id": "mb-g-rs5479-000p109-sz-os",
+        "name": "Dune Bio Acetate / OS",
+        "nameKo": "Dune Bio Acetate",
+        "sku": "G_RS5479_000P109",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5479-000p109/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5479-000p109/1.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/2.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/3.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/4.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/5.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/6.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/7.jpg",
+          "/products/mb-pdp/g-rs5479-000p109/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-dune-bio-acetate",
+        "inStock": true,
+        "colorKey": "dune-bio-acetate",
+        "colorNameKo": "Dune Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      },
+      {
+        "id": "mb-g-rs5479-000c923-sz-os",
+        "name": "Asphalt Bio Acetate / OS",
+        "nameKo": "Asphalt Bio Acetate",
+        "sku": "G_RS5479_000C923",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rs5479-000c923/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rs5479-000c923/1.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/2.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/3.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/4.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/5.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/6.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/7.jpg",
+          "/products/mb-pdp/g-rs5479-000c923/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-asphalt-bio-acetate",
+        "inStock": true,
+        "colorKey": "asphalt-bio-acetate",
+        "colorNameKo": "Asphalt Bio Acetate",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-sunglasses"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Our Quinn Bio Acetate Sunglasses are the ultimate in classic, unisex club masters. Their Bio Acetate frame is fitted with UV400 Bio Nylon lenses for full sun protection.",
+        "image": "/products/mb-pdp/g-rs5479-000f177/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "Classic club masters with full sun protection. A classic. unisex, acetate club master style Bio Nylon lenses Bio Acetate Frame UV400 lenses ensure full sun protection Lens Category: 3 Mulberry signature Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.5cm Lens Width 5.7cm Bridge 2cm Arm Length 14cm Material Bio Acetate A durable bio acetate frame with bio-nylon lenses. These lenses are biodegradable and use less energy than classic lenses. This product's code is RS5479-000F177",
+        "image": "/products/mb-pdp/g-rs5479-000f177/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "4.5cm · 5.7cm · 2cm · 14cm",
+        "image": "/products/mb-pdp/g-rs5479-000f177/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "4.5cm · 5.7cm · 2cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "3가지"
+      }
+    ],
+    "featuresKo": [
+      "Classic club masters with full sun protection. A classic. unisex, acetate club master style Bio Nylon lenses Bio Acetate Frame UV400 lenses ensure full sun protection Lens Category: 3 Mulberry signature Store in case when not worn and clean regularly for longevity These sunglasses come with a case, a lens cloth or bag, and a branded cardboard box. Lens Height 4.5cm Lens Width 5.7cm Bridge 2cm Arm Length 14cm Material Bio Acetate A durable bio acetate frame with bio-nylon lenses. These lenses are biodegradable and use less energy than classic lenses. This product's code is RS5479-000F177",
+      "4.5cm",
+      "5.7cm",
+      "2cm",
+      "14cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T19:51:37.526734+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -9440,7 +10132,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.694333+00:00"
+    "updatedAt": "2026-09-11T19:51:37.529768+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -9580,7 +10272,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.695774+00:00"
+    "updatedAt": "2026-09-11T19:51:37.531230+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -9811,7 +10503,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.698992+00:00"
+    "updatedAt": "2026-09-11T19:51:37.535693+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -10035,7 +10727,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.701967+00:00"
+    "updatedAt": "2026-09-11T19:51:37.538485+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -10207,7 +10899,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.703647+00:00"
+    "updatedAt": "2026-09-11T19:51:37.540171+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -10351,7 +11043,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.706327+00:00"
+    "updatedAt": "2026-09-11T19:51:37.542835+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -10582,7 +11274,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.713758+00:00"
+    "updatedAt": "2026-09-11T19:51:37.548135+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -10722,7 +11414,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.715758+00:00"
+    "updatedAt": "2026-09-11T19:51:37.549790+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -10866,7 +11558,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.717432+00:00"
+    "updatedAt": "2026-09-11T19:51:37.551385+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -11157,7 +11849,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.719731+00:00"
+    "updatedAt": "2026-09-11T19:51:37.553650+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -11505,7 +12197,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.723520+00:00"
+    "updatedAt": "2026-09-11T19:51:37.557398+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -11736,7 +12428,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.726050+00:00"
+    "updatedAt": "2026-09-11T19:51:37.559933+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -11999,7 +12691,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.729034+00:00"
+    "updatedAt": "2026-09-11T19:51:37.565053+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -12167,6 +12859,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T19:45:34.731071+00:00"
+    "updatedAt": "2026-09-11T19:51:37.567030+00:00"
   }
 ]
