@@ -32,9 +32,7 @@ import {
 } from "@/lib/product-sort";
 
 const NEW_ARRIVALS_HERO_IMAGES = [
-  "/banners/rot-event-1.jpg",
-  "/banners/rot-event-2.jpg",
-  "/banners/rot-event-3.jpg",
+  "/banners/shop-new-arrivals.jpg",
 ];
 
 const ALL_PRODUCTS_HERO_IMAGES = [
