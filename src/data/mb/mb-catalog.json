@@ -221,7 +221,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.575815+00:00"
+    "updatedAt": "2026-09-11T18:13:28.192599+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -452,7 +452,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.580508+00:00"
+    "updatedAt": "2026-09-11T18:13:28.200249+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -625,7 +625,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.583052+00:00"
+    "updatedAt": "2026-09-11T18:13:28.205652+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -769,7 +769,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.584857+00:00"
+    "updatedAt": "2026-09-11T18:13:28.207470+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -995,7 +995,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.588390+00:00"
+    "updatedAt": "2026-09-11T18:13:28.211195+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -1336,7 +1336,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.592490+00:00"
+    "updatedAt": "2026-09-11T18:13:28.215198+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -1348,7 +1348,8 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-clutches"
+      "mb-women-clutches",
+      "mb-women-top-handle"
     ],
     "tags": [
       "mulberry",
@@ -1429,6 +1430,64 @@
           "mb-women-bags",
           "mb-women-clutches"
         ]
+      },
+      {
+        "id": "mb-g-rl9036-676a100-sz-os",
+        "name": "Black Vesta Nappa / OS",
+        "nameKo": "Black Vesta 나파",
+        "sku": "G_RL9036_676A100",
+        "gbpPrice": 695.0,
+        "price": 1760000,
+        "image": "/products/mb-pdp/g-rl9036-676a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9036-676a100/1.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/2.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/3.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/4.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/5.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/6.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/7.jpg",
+          "/products/mb-pdp/g-rl9036-676a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-black-vesta-nappa",
+        "inStock": true,
+        "colorKey": "black-vesta-nappa",
+        "colorNameKo": "Black Vesta 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      },
+      {
+        "id": "mb-g-rl9078-702h687-sz-os",
+        "name": "Eggshell Buttery Nappa / OS",
+        "nameKo": "Eggshell Buttery 나파",
+        "sku": "G_RL9078_702H687",
+        "gbpPrice": 695.0,
+        "price": 1760000,
+        "image": "/products/mb-pdp/g-rl9078-702h687/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9078-702h687/1.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/2.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/3.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/4.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/5.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/6.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/7.jpg",
+          "/products/mb-pdp/g-rl9078-702h687/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
+        "inStock": true,
+        "colorKey": "eggshell-buttery-nappa",
+        "colorNameKo": "Eggshell Buttery 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
       }
     ],
     "storySections": [
@@ -1455,7 +1514,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "2가지"
+        "valueKo": "4가지"
       }
     ],
     "featuresKo": [
@@ -1509,7 +1568,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.593513+00:00"
+    "updatedAt": "2026-09-11T18:13:28.216982+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -1740,7 +1799,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.598975+00:00"
+    "updatedAt": "2026-09-11T18:13:28.227026+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -1941,7 +2000,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.600952+00:00"
+    "updatedAt": "2026-09-11T18:13:28.229025+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -2085,7 +2144,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.603470+00:00"
+    "updatedAt": "2026-09-11T18:13:28.231333+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -2313,7 +2372,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.606889+00:00"
+    "updatedAt": "2026-09-11T18:13:28.235168+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -2544,7 +2603,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.608378+00:00"
+    "updatedAt": "2026-09-11T18:13:28.238195+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -2688,7 +2747,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.611080+00:00"
+    "updatedAt": "2026-09-11T18:13:28.240858+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -2919,7 +2978,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.616370+00:00"
+    "updatedAt": "2026-09-11T18:13:28.246465+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -3059,7 +3118,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.618016+00:00"
+    "updatedAt": "2026-09-11T18:13:28.248120+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -3203,7 +3262,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.619613+00:00"
+    "updatedAt": "2026-09-11T18:13:28.249722+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -3216,7 +3275,8 @@
       "mulberry-bags",
       "mb-women-bags",
       "mb-women-clutches",
-      "mb-women-mini"
+      "mb-women-mini",
+      "mb-women-top-handle"
     ],
     "tags": [
       "mulberry",
@@ -3355,6 +3415,64 @@
           "mb-women-bags",
           "mb-women-mini"
         ]
+      },
+      {
+        "id": "mb-g-hh0199-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0199_771A110",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      },
+      {
+        "id": "mb-g-hh0199-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0199_771A100",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0199-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0199-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
       }
     ],
     "storySections": [
@@ -3381,7 +3499,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "4가지"
+        "valueKo": "6가지"
       }
     ],
     "featuresKo": [
@@ -3435,6 +3553,237 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:08:00.621220+00:00"
+    "updatedAt": "2026-09-11T18:13:28.251988+00:00"
+  },
+  {
+    "id": "mb-stevie-top-handle",
+    "name": "Stevie Top Handle",
+    "nameKo": "스티비 탑 핸들",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-top-handle",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-top-handle"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Embody the Mulberry Spirit with the Stevie Top Handle, a modern, versatile style you won't be able to put down. Lightweight and softly structured, the Stevie is ideal for day-to-night dressing, and can be worn either on the shoulder or carried top handle as an evening bag.",
+    "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/2.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/3.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/4.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/5.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/6.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/7.jpg",
+      "/products/mb-pdp/g-hh0197-771a100/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 1595.0,
+    "sku": "G_HH0197_771A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-black-supple-smooth-leather",
+    "variants": [
+      {
+        "id": "mb-g-hh0197-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0197_771A100",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0197_771A110",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      },
+      {
+        "id": "mb-g-hh0230-047d117-sz-os",
+        "name": "Foggy Grey Suede / OS",
+        "nameKo": "Foggy Grey 스웨이드",
+        "sku": "G_HH0230_047D117",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0230-047d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0230-047d117/1.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/2.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/3.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/4.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/5.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/6.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/7.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
+        "inStock": true,
+        "colorKey": "foggy-grey-suede",
+        "colorNameKo": "Foggy Grey 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771v185-sz-os",
+        "name": "Amethyst Supple Smooth Leather / OS",
+        "nameKo": "Amethyst Supple Smooth 레더",
+        "sku": "G_HH0197_771V185",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771v185/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771v185/1.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/2.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/3.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/4.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/5.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/6.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/7.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-amethyst-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "amethyst-supple-smooth-leather",
+        "colorNameKo": "Amethyst Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-top-handle"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Embody the Mulberry Spirit with the Stevie Top Handle, a modern, versatile style you won't be able to put down. Lightweight and softly structured, the Stevie is ideal for day-to-night dressing, and can be worn either on the shoulder or carried top handle as an evening bag.",
+        "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A top handle day-to-night bag. Soft Gold hardware finish Front pocket with Postman's Lock closure Detachable top handle Adjustable and detachable strap External rear zipped pocket Internal hook keeper closure Adjustable belt detailing on sides Microfiber lining Height 24cm Width 36cm Depth 15cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0230-047D117",
+        "image": "/products/mb-pdp/g-hh0197-771a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Adjustable and detachable strap · 24cm · 36cm · 15cm",
+        "image": "/products/mb-pdp/g-hh0197-771a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Adjustable and detachable strap · 24cm · 36cm · 15cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A top handle day-to-night bag. Soft Gold hardware finish Front pocket with Postman's Lock closure Detachable top handle Adjustable and detachable strap External rear zipped pocket Internal hook keeper closure Adjustable belt detailing on sides Microfiber lining Height 24cm Width 36cm Depth 15cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0230-047D117",
+      "Adjustable and detachable strap",
+      "24cm",
+      "36cm",
+      "15cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:13:28.253454+00:00"
   }
 ]
