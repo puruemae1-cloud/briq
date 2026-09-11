@@ -10,7 +10,9 @@
       "mulberry-bags",
       "mb-women-bags",
       "mb-women-bags-all",
-      "mb-women-icons"
+      "mb-women-icons",
+      "mb-women-travel",
+      "mb-women-travel-all"
     ],
     "tags": [
       "mulberry",
@@ -18,17 +20,17 @@
       "bags"
     ],
     "descriptionKo": "The Bayswater is considered a Mulberry bag icon. A timeless and classic shoulder bag, it unites the very best of Mulberry’s craft heritage and effortless style. The understated shape and finish showcases the exceptional level of leather quality, proudly finished with our signature Postman’s Lock. The interior belted sides can be adjusted to give more space inside, making the Bayswater ideal for any lifestyle.",
-    "image": "/products/mb-pdp/g-hh6601-748v185/1.jpg",
+    "image": "/products/mb-pdp/g-hh0014-127a340/1.jpg",
     "images": [
-      "/products/mb-pdp/g-hh6601-748v185/1.jpg",
-      "/products/mb-pdp/g-hh6601-748v185/2.jpg",
-      "/products/mb-pdp/g-hh6601-748v185/3.jpg",
-      "/products/mb-pdp/g-hh6601-748v185/4.jpg",
-      "/products/mb-pdp/g-hh6601-748v185/5.jpg",
-      "/products/mb-pdp/g-hh6601-748v185/6.jpg"
+      "/products/mb-pdp/g-hh0014-127a340/1.jpg",
+      "/products/mb-pdp/g-hh0014-127a340/2.jpg",
+      "/products/mb-pdp/g-hh0014-127a340/3.jpg",
+      "/products/mb-pdp/g-hh0014-127a340/4.jpg",
+      "/products/mb-pdp/g-hh0014-127a340/5.jpg",
+      "/products/mb-pdp/g-hh0014-127a340/6.jpg"
     ],
     "accent": "#1A1A1A",
-    "gbpPrice": 1195.0,
+    "gbpPrice": 995.0,
     "sku": "G_HH6601_748V185",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/bayswater-amethyst-high-shine-leather",
     "variants": [
@@ -250,23 +252,50 @@
           "mb-women-bags",
           "mb-women-icons"
         ]
+      },
+      {
+        "id": "mb-g-hh0014-127a340-sz-os",
+        "name": "Black & Cognac Bio-Based Scotchgrain / OS",
+        "nameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "sku": "G_HH0014_127A340",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hh0014-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0014-127a340/1.jpg",
+          "/products/mb-pdp/g-hh0014-127a340/2.jpg",
+          "/products/mb-pdp/g-hh0014-127a340/3.jpg",
+          "/products/mb-pdp/g-hh0014-127a340/4.jpg",
+          "/products/mb-pdp/g-hh0014-127a340/5.jpg",
+          "/products/mb-pdp/g-hh0014-127a340/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/bayswater-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
       }
     ],
     "storySections": [
       {
         "titleKo": "제품 소개",
         "bodyKo": "The Bayswater is considered a Mulberry bag icon. A timeless and classic shoulder bag, it unites the very best of Mulberry’s craft heritage and effortless style. The understated shape and finish showcases the exceptional level of leather quality, proudly finished with our signature Postman’s Lock. The interior belted sides can be adjusted to give more space inside, making the Bayswater ideal for any lifestyle.",
-        "image": "/products/mb-pdp/g-hh6601-748v185/1.jpg"
+        "image": "/products/mb-pdp/g-hh0014-127a340/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "This iconic leather bag can be carried by the handle, in the crook of the arm or over the shoulder. Postman's Lock closure Mulberry tree signature padlock Two top handles One main compartment One zip pocket Two slip pockets Brass component finish Unlined Four base feet at the base In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 26.5cm Width 36cm Depth 16.5cm Handle drop 15.5cm Weight 1.2kg, approximately Material NVT This product is made with our Legacy NVT leather, a renewed take on Mulberry’s most classic leather. This leather may soften and darken with age enhancing its natural characteristics and creating a unique patina of its own. This product's code is HH7941-275G110",
-        "image": "/products/mb-pdp/g-hh6601-748v185/2.jpg"
+        "image": "/products/mb-pdp/g-hh0014-127a340/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
         "bodyKo": "26.5cm · 36cm · 16.5cm · 15.5cm",
-        "image": "/products/mb-pdp/g-hh6601-748v185/3.jpg"
+        "image": "/products/mb-pdp/g-hh0014-127a340/3.jpg"
       }
     ],
     "techSpecs": [
@@ -276,7 +305,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "8가지"
+        "valueKo": "9가지"
       }
     ],
     "featuresKo": [
@@ -330,7 +359,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.754836+00:00"
+    "updatedAt": "2026-09-11T18:57:58.652677+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -554,7 +583,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.758298+00:00"
+    "updatedAt": "2026-09-11T18:57:58.656164+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -785,7 +814,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.762604+00:00"
+    "updatedAt": "2026-09-11T18:57:58.660490+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -958,7 +987,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.765123+00:00"
+    "updatedAt": "2026-09-11T18:57:58.663052+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -1102,7 +1131,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.766931+00:00"
+    "updatedAt": "2026-09-11T18:57:58.664871+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -1329,7 +1358,293 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.769399+00:00"
+    "updatedAt": "2026-09-11T18:57:58.667355+00:00"
+  },
+  {
+    "id": "mb-heritage-backpack",
+    "name": "Heritage Backpack",
+    "nameKo": "Heritage 백팩",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-all",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-all"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "The Heritage collection was designed in tribute to the early bags of Mulberry, which were inspired by English country pursuits. The Heritage Backpack features practical pockets, belt and buckle strap detailing and a signature logo plaque. The straps can be adjusted to a personal fit and all your belongings are secured under the front flap.",
+    "image": "/products/mb-pdp/g-hs5094-127a340/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hs5094-127a340/1.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/2.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/3.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/4.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/5.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/6.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/7.jpg",
+      "/products/mb-pdp/g-hs5094-127a340/8.jpg"
+    ],
+    "accent": "#3a322c",
+    "gbpPrice": 895.0,
+    "sku": "G_HS5094_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/heritage-backpack-black-cognac-bioveg-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-hs5094-127a340-sz-os",
+        "name": "Black & Cognac BioVeg Scotchgrain / OS",
+        "nameKo": "Black & Cognac BioVeg 스카치그레인",
+        "sku": "G_HS5094_127A340",
+        "gbpPrice": 895.0,
+        "price": 2270000,
+        "image": "/products/mb-pdp/g-hs5094-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hs5094-127a340/1.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/2.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/3.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/4.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/5.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/6.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/7.jpg",
+          "/products/mb-pdp/g-hs5094-127a340/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/heritage-backpack-black-cognac-bioveg-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bioveg-scotchgrain",
+        "colorNameKo": "Black & Cognac BioVeg 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "The Heritage collection was designed in tribute to the early bags of Mulberry, which were inspired by English country pursuits. The Heritage Backpack features practical pockets, belt and buckle strap detailing and a signature logo plaque. The straps can be adjusted to a personal fit and all your belongings are secured under the front flap.",
+        "image": "/products/mb-pdp/g-hs5094-127a340/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "This bag features practical pockets, belt and buckle strap detailing. One internal zipped pocket, foil embossed with Mulberry signature Adjustable shoulder straps in webbing Two Sam Browne studs for quick opening of the flap (buckles are also functional) One main compartment with a drawstring closure under the flap Two external side pockets with a flap, and secured by a Sam Browne stud Canvas lined In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 38cm Width 29cm Depth 14cm Weight 1.2kg, approximately Material BioVeg Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HS5094-127A340",
+        "image": "/products/mb-pdp/g-hs5094-127a340/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "This bag features practical pockets, belt and buckle strap detailing. · Adjustable shoulder straps in webbing · 38cm · 29cm · 14cm",
+        "image": "/products/mb-pdp/g-hs5094-127a340/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "This bag features practical pockets, belt and buckle strap detailing. · Adjustable shoulder straps in webbing · 38cm · 29cm · 14cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "This bag features practical pockets, belt and buckle strap detailing. One internal zipped pocket, foil embossed with Mulberry signature Adjustable shoulder straps in webbing Two Sam Browne studs for quick opening of the flap (buckles are also functional) One main compartment with a drawstring closure under the flap Two external side pockets with a flap, and secured by a Sam Browne stud Canvas lined In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 38cm Width 29cm Depth 14cm Weight 1.2kg, approximately Material BioVeg Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HS5094-127A340",
+      "This bag features practical pockets, belt and buckle strap detailing.",
+      "Adjustable shoulder straps in webbing",
+      "38cm",
+      "29cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:57:58.668584+00:00"
+  },
+  {
+    "id": "mb-heritage-briefcase",
+    "name": "Heritage Briefcase",
+    "nameKo": "Heritage 브리프케이스",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-all",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-all"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Designed for the modern man who lives life on the go, this sleek Heritage Briefcase is composed of our Scotchgrain material, and features a large laptop pocket with Poursin stud closure, an external front pocket for documents, and two phone-sized slip pockets. Can be worn crossbody, off the shoulder, or as a classic top handle briefcase.",
+    "image": "/products/mb-pdp/g-hb5130-127a340/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hb5130-127a340/1.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/2.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/3.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/4.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/5.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/6.jpg",
+      "/products/mb-pdp/g-hb5130-127a340/7.jpg"
+    ],
+    "accent": "#241f1c",
+    "gbpPrice": 895.0,
+    "sku": "G_HB5130_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-briefcase-black-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-hb5130-127a340-sz-os",
+        "name": "Black & Cognac Bio-Based Scotchgrain / OS",
+        "nameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "sku": "G_HB5130_127A340",
+        "gbpPrice": 895.0,
+        "price": 2270000,
+        "image": "/products/mb-pdp/g-hb5130-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hb5130-127a340/1.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/2.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/3.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/4.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/5.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/6.jpg",
+          "/products/mb-pdp/g-hb5130-127a340/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/heritage-briefcase-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Designed for the modern man who lives life on the go, this sleek Heritage Briefcase is composed of our Scotchgrain material, and features a large laptop pocket with Poursin stud closure, an external front pocket for documents, and two phone-sized slip pockets. Can be worn crossbody, off the shoulder, or as a classic top handle briefcase.",
+        "image": "/products/mb-pdp/g-hb5130-127a340/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A Heritage Scotchgrain briefcase. Two leather top handles Brass hardware finish Detachable and adjustable leather strap Mulberry Tree medallion External front pocket with Poursin stud closure Leather trim Double zip closure External rear luggage strap Internal large slip pocket Internal laptop sleeve with Poursin stud closure Mulberry Tree cotton lining Two pen holders Height 28cm Width 38cm Depth 8cm Material Bio-Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HB5130-127A340",
+        "image": "/products/mb-pdp/g-hb5130-127a340/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Detachable and adjustable leather strap · External rear luggage strap · 28cm · 38cm · 8cm",
+        "image": "/products/mb-pdp/g-hb5130-127a340/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Detachable and adjustable leather strap · External rear luggage strap · 28cm · 38cm · 8cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A Heritage Scotchgrain briefcase. Two leather top handles Brass hardware finish Detachable and adjustable leather strap Mulberry Tree medallion External front pocket with Poursin stud closure Leather trim Double zip closure External rear luggage strap Internal large slip pocket Internal laptop sleeve with Poursin stud closure Mulberry Tree cotton lining Two pen holders Height 28cm Width 38cm Depth 8cm Material Bio-Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HB5130-127A340",
+      "Detachable and adjustable leather strap",
+      "External rear luggage strap",
+      "28cm",
+      "38cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:57:58.669380+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -1361,7 +1676,7 @@
       "/products/mb-pdp/g-hs5195-127q330/7.jpg",
       "/products/mb-pdp/g-hs5195-127q330/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 845.0,
     "sku": "G_HS5195_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/luggage/heritage-day-clipper-mole-cognac-printed-bioveg-scotchgrain-flat-calf",
@@ -1561,7 +1876,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.772726+00:00"
+    "updatedAt": "2026-09-11T18:57:58.672715+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -1569,10 +1884,11 @@
     "nameKo": "Heritage 미디엄 Clipper",
     "brand": "Mulberry",
     "category": "bags",
-    "subcategory": "mb-women-travel-holdalls",
+    "subcategory": "mb-women-travel-all",
     "mbCollections": [
       "mulberry-bags",
       "mb-women-travel",
+      "mb-women-travel-all",
       "mb-women-travel-holdalls",
       "mb-women-travel-luggage"
     ],
@@ -1582,22 +1898,51 @@
       "bags"
     ],
     "descriptionKo": "Nothing says 'classic Mulberry' like our Scotchgrain luggage collection. Its beautifully textured surface is accented by smooth leather trim. Travel pieces should be built to last, and look good while doing it. A timeless travel bag in a medium size, this clipper has two short handles and a detachable shoulder strap.",
-    "image": "/products/mb-pdp/g-hl5136-127q330/1.jpg",
+    "image": "/products/mb-pdp/g-hl5136-127a340/1.jpg",
     "images": [
-      "/products/mb-pdp/g-hl5136-127q330/1.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/2.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/3.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/4.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/5.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/6.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/7.jpg",
-      "/products/mb-pdp/g-hl5136-127q330/8.jpg"
+      "/products/mb-pdp/g-hl5136-127a340/1.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/2.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/3.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/4.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/5.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/6.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/7.jpg",
+      "/products/mb-pdp/g-hl5136-127a340/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
-    "sku": "G_HG5160_552G110",
-    "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/heritage-medium-clipper-oak-two-tone-small-classic-grain",
+    "sku": "G_HL5136_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/heritage-medium-clipper-black-cognac-printed-bioveg-scotchgrain-flat-calf",
     "variants": [
+      {
+        "id": "mb-g-hl5136-127a340-sz-os",
+        "name": "Black & Cognac Printed BioVeg Scotchgrain & Flat Calf / OS",
+        "nameKo": "Black & Cognac Printed BioVeg 스카치그레인 & Flat Calf",
+        "sku": "G_HL5136_127A340",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-hl5136-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hl5136-127a340/1.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/2.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/3.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/4.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/5.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/6.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/7.jpg",
+          "/products/mb-pdp/g-hl5136-127a340/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/heritage-medium-clipper-black-cognac-printed-bioveg-scotchgrain-flat-calf",
+        "inStock": true,
+        "colorKey": "black-cognac-printed-bioveg-scotchgrain",
+        "colorNameKo": "Black & Cognac Printed BioVeg 스카치그레인 & Flat Calf",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      },
       {
         "id": "mb-g-hg5160-552g110-sz-os",
         "name": "Oak Two-Tone Small Classic Grain / OS",
@@ -1718,32 +2063,32 @@
       {
         "titleKo": "제품 소개",
         "bodyKo": "Nothing says 'classic Mulberry' like our Scotchgrain luggage collection. Its beautifully textured surface is accented by smooth leather trim. Travel pieces should be built to last, and look good while doing it. A timeless travel bag in a medium size, this clipper has two short handles and a detachable shoulder strap.",
-        "image": "/products/mb-pdp/g-hl5136-127q330/1.jpg"
+        "image": "/products/mb-pdp/g-hl5136-127a340/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "Our Heritage Medium Clipper can be handheld, worn on the shoulder or across your body, and makes a great overnight, weekend or carry-on bag. Leather trim detailing Two canvas handles with leather detailing Detachable and adjustable canvas shoulder strap Metal feet at the base of bag Detachable luggage tag Internal Mulberry tree fabric lined interior One internal zip pocket Side D-rings with popper fastening Brushed gold hardware finish Height 32cm Width 55cm Depth 21cm Handle Drop 17cm Shoulder Strap Length 66-117cm Weight 1.6kg, approximately Material Printed BioVeg Scotchgrain & Flat Calf This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HL5136-127Q330",
-        "image": "/products/mb-pdp/g-hl5136-127q330/2.jpg"
+        "image": "/products/mb-pdp/g-hl5136-127a340/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "Adjustable and detachable 레더 strap · 32cm · 55cm · 21cm · 17cm · 67 - 117cm · Detachable and adjustable canvas shoulder strap · 66-117cm · Detachable and adjustable canvas strap",
-        "image": "/products/mb-pdp/g-hl5136-127q330/3.jpg"
+        "bodyKo": "Detachable and adjustable canvas strap · 32cm · 55cm · 21cm · 17cm · 66-117cm · Adjustable and detachable 레더 strap · 67 - 117cm · Detachable and adjustable canvas shoulder strap",
+        "image": "/products/mb-pdp/g-hl5136-127a340/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "Adjustable and detachable 레더 strap · 32cm · 55cm · 21cm · 17cm · 67 - 117cm"
+        "valueKo": "Detachable and adjustable canvas strap · 32cm · 55cm · 21cm · 17cm · 66-117cm"
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "4가지"
+        "valueKo": "5가지"
       }
     ],
     "featuresKo": [
       "Our Heritage Medium Clipper can be handheld, worn on the shoulder or across your body, and makes a great overnight, weekend or carry-on bag. Leather trim detailing Two canvas handles with leather detailing Detachable and adjustable canvas shoulder strap Metal feet at the base of bag Detachable luggage tag Internal Mulberry tree fabric lined interior One internal zip pocket Side D-rings with popper fastening Brushed gold hardware finish Height 32cm Width 55cm Depth 21cm Handle Drop 17cm Shoulder Strap Length 66-117cm Weight 1.6kg, approximately Material Printed BioVeg Scotchgrain & Flat Calf This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is HL5136-127Q330",
-      "Adjustable and detachable 레더 strap",
+      "Detachable and adjustable canvas strap",
       "32cm",
       "55cm",
       "21cm"
@@ -1792,7 +2137,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.776588+00:00"
+    "updatedAt": "2026-09-11T18:57:58.676945+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -1823,7 +2168,7 @@
       "/products/mb-pdp/g-hp5236-206q129/7.jpg",
       "/products/mb-pdp/g-hp5236-206q129/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 795.0,
     "sku": "G_HP5236_206Q129",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-bags/mens-holdalls/heritage-waxed-day-clipper-dark-moss-waxed-cotton",
@@ -1935,7 +2280,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.777206+00:00"
+    "updatedAt": "2026-09-11T18:57:58.680039+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -1965,7 +2310,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -2161,7 +2506,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.780750+00:00"
+    "updatedAt": "2026-09-11T18:57:58.683510+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -2192,7 +2537,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -2502,7 +2847,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.786044+00:00"
+    "updatedAt": "2026-09-11T18:57:58.687696+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -2532,7 +2877,7 @@
       "/products/mb-pdp/g-rl8853-552g110/6.jpg",
       "/products/mb-pdp/g-rl8853-552g110/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 395.0,
     "sku": "G_RL8853_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
@@ -2672,7 +3017,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.787506+00:00"
+    "updatedAt": "2026-09-11T18:57:58.689339+00:00"
   },
   {
     "id": "mb-lily",
@@ -2700,7 +3045,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 995.0,
     "sku": "G_HH3288_874A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/lily-black-glossy-goat",
@@ -2892,7 +3237,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.790015+00:00"
+    "updatedAt": "2026-09-11T18:57:58.691804+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -2924,7 +3269,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -3124,7 +3469,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.791679+00:00"
+    "updatedAt": "2026-09-11T18:57:58.693550+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -3154,7 +3499,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -3351,7 +3696,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.794286+00:00"
+    "updatedAt": "2026-09-11T18:57:58.696125+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -3382,7 +3727,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -3582,7 +3927,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.799758+00:00"
+    "updatedAt": "2026-09-11T18:57:58.701672+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -3613,7 +3958,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -3783,7 +4128,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.801733+00:00"
+    "updatedAt": "2026-09-11T18:57:58.703846+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -3814,7 +4159,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -3927,7 +4272,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.804138+00:00"
+    "updatedAt": "2026-09-11T18:57:58.706614+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -3957,7 +4302,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -4155,7 +4500,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.806603+00:00"
+    "updatedAt": "2026-09-11T18:57:58.710372+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -4186,7 +4531,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -4356,7 +4701,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.809254+00:00"
+    "updatedAt": "2026-09-11T18:57:58.713050+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -4387,7 +4732,7 @@
       "/products/mb-pdp/g-rl9045-205u931/7.jpg",
       "/products/mb-pdp/g-rl9045-205u931/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 295.0,
     "sku": "G_RL9045_205U931",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
@@ -4499,7 +4844,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.811943+00:00"
+    "updatedAt": "2026-09-11T18:57:58.714641+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -4527,7 +4872,7 @@
       "/products/mb-pdp/g-rl9064-127a340/4.jpg",
       "/products/mb-pdp/g-rl9064-127a340/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 160.0,
     "sku": "G_RL9064_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
@@ -4691,7 +5036,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.814421+00:00"
+    "updatedAt": "2026-09-11T18:57:58.717155+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -4699,10 +5044,11 @@
     "nameKo": "Piccadilly 홀드올",
     "brand": "Mulberry",
     "category": "bags",
-    "subcategory": "mb-women-travel-luggage",
+    "subcategory": "mb-women-travel-all",
     "mbCollections": [
       "mulberry-bags",
       "mb-women-travel",
+      "mb-women-travel-all",
       "mb-women-travel-luggage"
     ],
     "tags": [
@@ -4722,11 +5068,40 @@
       "/products/mb-pdp/g-hg5161-205a100/7.jpg",
       "/products/mb-pdp/g-hg5161-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1795.0,
     "sku": "G_HG5161_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
     "variants": [
+      {
+        "id": "mb-g-hg5161-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_HG5161_205A100",
+        "gbpPrice": 1795.0,
+        "price": 4550000,
+        "image": "/products/mb-pdp/g-hg5161-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hg5161-205a100/1.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/2.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/3.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/4.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/5.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/6.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/7.jpg",
+          "/products/mb-pdp/g-hg5161-205a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      },
       {
         "id": "mb-g-hg5161-205a100-sz-os",
         "name": "Black Small Classic Grain / OS",
@@ -4781,7 +5156,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -4835,7 +5210,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.815351+00:00"
+    "updatedAt": "2026-09-11T18:57:58.719424+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -4843,10 +5218,11 @@
     "nameKo": "Piccadilly 메신저",
     "brand": "Mulberry",
     "category": "bags",
-    "subcategory": "mb-women-travel-luggage",
+    "subcategory": "mb-women-travel-all",
     "mbCollections": [
       "mulberry-bags",
       "mb-women-travel",
+      "mb-women-travel-all",
       "mb-women-travel-luggage"
     ],
     "tags": [
@@ -4866,11 +5242,98 @@
       "/products/mb-pdp/g-hh0241-205a100/7.jpg",
       "/products/mb-pdp/g-hh0241-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 1495.0,
     "sku": "G_HH0241_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
     "variants": [
+      {
+        "id": "mb-g-hh0241-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_HH0241_205A100",
+        "gbpPrice": 1495.0,
+        "price": 3790000,
+        "image": "/products/mb-pdp/g-hh0241-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0241-205a100/1.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/2.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/3.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/4.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/5.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/6.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/7.jpg",
+          "/products/mb-pdp/g-hh0241-205a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      },
+      {
+        "id": "mb-g-hh0243-552g110-sz-os",
+        "name": "Oak Two-Tone Small Classic Grain / OS",
+        "nameKo": "Oak Two-Tone 스몰 클래식 그레인",
+        "sku": "G_HH0243_552G110",
+        "gbpPrice": 1495.0,
+        "price": 3790000,
+        "image": "/products/mb-pdp/g-hh0243-552g110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0243-552g110/1.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/2.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/3.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/4.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/5.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/6.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/7.jpg",
+          "/products/mb-pdp/g-hh0243-552g110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-oak-two-tone-small-classic-grain",
+        "inStock": true,
+        "colorKey": "oak-two-tone-small-classic-grain",
+        "colorNameKo": "Oak Two-Tone 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      },
+      {
+        "id": "mb-g-hh0241-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain / OS",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_HH0241_205D117",
+        "gbpPrice": 1495.0,
+        "price": 3790000,
+        "image": "/products/mb-pdp/g-hh0241-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0241-205d117/1.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/2.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/3.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/4.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/5.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/6.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/7.jpg",
+          "/products/mb-pdp/g-hh0241-205d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all"
+        ]
+      },
       {
         "id": "mb-g-hh0241-205a100-sz-os",
         "name": "Black Small Classic Grain / OS",
@@ -4983,7 +5446,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "3가지"
+        "valueKo": "6가지"
       }
     ],
     "featuresKo": [
@@ -5037,7 +5500,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.816931+00:00"
+    "updatedAt": "2026-09-11T18:57:58.723101+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -5068,7 +5531,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -5268,7 +5731,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.819879+00:00"
+    "updatedAt": "2026-09-11T18:57:58.726083+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -5299,7 +5762,7 @@
       "/products/mb-pdp/g-rl9062-127a340/7.jpg",
       "/products/mb-pdp/g-rl9062-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 195.0,
     "sku": "G_RL9062_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
@@ -5440,7 +5903,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.821548+00:00"
+    "updatedAt": "2026-09-11T18:57:58.727850+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -5471,7 +5934,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -5584,7 +6047,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.824253+00:00"
+    "updatedAt": "2026-09-11T18:57:58.730477+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -5615,7 +6078,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -5815,7 +6278,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.829544+00:00"
+    "updatedAt": "2026-09-11T18:57:58.735666+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -5844,7 +6307,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -5955,7 +6418,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.831190+00:00"
+    "updatedAt": "2026-09-11T18:57:58.738374+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -5986,7 +6449,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -6099,7 +6562,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.832796+00:00"
+    "updatedAt": "2026-09-11T18:57:58.739952+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -6132,7 +6595,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -6390,7 +6853,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.836103+00:00"
+    "updatedAt": "2026-09-11T18:57:58.742184+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -6422,7 +6885,7 @@
       "/products/mb-pdp/g-hh0230-047d117/7.jpg",
       "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 1595.0,
     "sku": "G_HH0230_047D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
@@ -6738,7 +7201,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.839856+00:00"
+    "updatedAt": "2026-09-11T18:57:58.745886+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -6769,7 +7232,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -6969,7 +7432,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.842395+00:00"
+    "updatedAt": "2026-09-11T18:57:58.748501+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -7002,7 +7465,7 @@
       "/products/mb-pdp/g-hh0140-736g222/7.jpg",
       "/products/mb-pdp/g-hh0140-736g222/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736G222",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-bright-oak-heavy-grain",
@@ -7172,7 +7635,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.844650+00:00"
+    "updatedAt": "2026-09-11T18:57:58.750723+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -7201,7 +7664,7 @@
       "/products/mb-pdp/g-hh0135-000h709/5.jpg",
       "/products/mb-pdp/g-hh0135-000h709/6.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 595.0,
     "sku": "G_HH0135_000H709",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
@@ -7311,6 +7774,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:52:50.846262+00:00"
+    "updatedAt": "2026-09-11T18:57:58.752306+00:00"
   }
 ]
