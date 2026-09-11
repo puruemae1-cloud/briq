@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-24T11:31:07Z",
+  "scrapedAt": "2026-09-11T09:41:14Z",
   "products": [
     {
       "id": "X000009613",
@@ -48,59 +48,6 @@
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009715-Vertex-Speed-Low-Shoe-Black-Arctic-Silk-Hover.jpg"
     },
     {
-      "id": "X000009602",
-      "name": "Vertex Alpine GTX Shoe Men's",
-      "slug": "mens/vertex-alpine-gtx-shoe-9602",
-      "url": "https://arcteryx.com/gb/en/shop/mens/vertex-alpine-gtx-shoe-9602",
-      "gender": "mens",
-      "collections": [
-        "ax-shoes-mens"
-      ],
-      "gbpPrice": 220,
-      "shortDescription": "Fast and light GORE-TEX approach shoe",
-      "isNew": false,
-      "colours": [
-        {
-          "color": "Black / Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S25-X000009602-Vertex-Alpine-GTX-Shoe-Black-Black-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S25/1350x1710/Vertex-Alpine-GTX-Shoe-Black-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S25-X000009602-Vertex-Alpine-GTX-Shoe-Black-Black-Hover.jpg",
-          "selected": true
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S25-X000009602-Vertex-Alpine-GTX-Shoe-Black-Black-Hover.jpg"
-    },
-    {
-      "id": "X000010504",
-      "name": "Konseal Trek Boot Men's",
-      "slug": "mens/konseal-trek-boot-0504",
-      "url": "https://arcteryx.com/gb/en/shop/mens/konseal-trek-boot-0504",
-      "gender": "mens",
-      "collections": [
-        "ax-shoes-mens"
-      ],
-      "gbpPrice": 260,
-      "shortDescription": "Sturdy approach boot for extra-rugged terrain",
-      "isNew": true,
-      "colours": [
-        {
-          "color": "Black/Graphite",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Black-Graphite-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Trek-Boot-Black-Graphite.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Black-Graphite-Hover.jpg",
-          "selected": true
-        },
-        {
-          "color": "Mid Bracken/Graphite",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Mid-Bracken-Graphite-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Trek-Boot-Mid-Bracken-Graphite.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Mid-Bracken-Graphite-Hover.jpg",
-          "selected": false
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Black-Graphite-Hover.jpg"
-    },
-    {
       "id": "X000009835",
       "name": "Norvan 4 Nivalis GTX Shoe Men's",
       "slug": "mens/norvan-4-nivalis-shoe-9835",
@@ -118,14 +65,14 @@
           "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009835-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Norvan-4-Nivalis-Shoe-Black-Arctic-Silk.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009835-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Hover.jpg",
-          "selected": false
+          "selected": true
         },
         {
           "color": "Black/Black",
           "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009835-Norvan-4-Nivalis-Shoe-Black-Black-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Norvan-4-Nivalis-Shoe-Black-Black.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009835-Norvan-4-Nivalis-Shoe-Black-Black-Hover.jpg",
-          "selected": true
+          "selected": false
         }
       ],
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009835-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Hover.jpg"
@@ -161,34 +108,41 @@
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009833-Konseal-GTX-Shoe-Void-Cloud-Hover.jpg"
     },
     {
-      "id": "X000009019",
-      "name": "Vertex Alpine Shoe Men's",
-      "slug": "mens/vertex-alpine-shoe",
-      "url": "https://arcteryx.com/gb/en/shop/mens/vertex-alpine-shoe",
+      "id": "X000010504",
+      "name": "Konseal Trek Boot Men's",
+      "slug": "mens/konseal-trek-boot-0504",
+      "url": "https://arcteryx.com/gb/en/shop/mens/konseal-trek-boot-0504",
       "gender": "mens",
       "collections": [
         "ax-shoes-mens"
       ],
-      "gbpPrice": 210,
-      "shortDescription": "Fast, light, supportive approach shoe",
-      "isNew": false,
+      "gbpPrice": 260,
+      "shortDescription": "Sturdy approach boot for extra-rugged terrain",
+      "isNew": true,
       "colours": [
         {
-          "color": "Solitude/Dk Solitude",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S25-X000009019-Vertex-Alpine-Shoe-Solitude-Dk-Solitude-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S25/1350x1710/Vertex-Alpine-Shoe-Solitude-Dk-Solitude.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S25-X000009019-Vertex-Alpine-Shoe-Solitude-Dk-Solitude-Hover.jpg",
+          "color": "Neptune/Black",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Neptune-Black-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Trek-Boot-Neptune-Black.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Neptune-Black-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "Black/Graphite",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Black-Graphite-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Trek-Boot-Black-Graphite.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Black-Graphite-Hover.jpg",
           "selected": true
         },
         {
-          "color": "Black/Solaris",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000009019-Vertex-Alpine-Shoe-Black-Solaris-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Vertex-Alpine-Shoe-Black-Solaris.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000009019-Vertex-Alpine-Shoe-Black-Solaris-Hover.jpg",
+          "color": "Mid Bracken/Graphite",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Mid-Bracken-Graphite-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Trek-Boot-Mid-Bracken-Graphite.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Mid-Bracken-Graphite-Hover.jpg",
           "selected": false
         }
       ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S25-X000009019-Vertex-Alpine-Shoe-Solitude-Dk-Solitude-Hover.jpg"
+      "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000010504-Konseal-Trek-Boot-Neptune-Black-Hover.jpg"
     },
     {
       "id": "X000010505",
@@ -215,13 +169,6 @@
           "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010505-Kragg-Aura-Shoe-Lt-Black-Sapphire-Lt-Black-Sapphire-Profile.jpg",
           "thumb": "https://images.arcteryx.com/S26/1350x1710/Kragg-Aura-Shoe-Lt-Black-Sapphire-Lt-Black-Sapphire.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010505-Kragg-Aura-Shoe-Lt-Black-Sapphire-Lt-Black-Sapphire-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Habitat/Habitat",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010505-Kragg-Aura-Shoe-Habitat-Habitat-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Kragg-Aura-Shoe-Habitat-Habitat.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010505-Kragg-Aura-Shoe-Habitat-Habitat-Hover.jpg",
           "selected": true
         },
         {
@@ -323,6 +270,50 @@
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Black-Black-Hover.jpg"
     },
     {
+      "id": "X000010155",
+      "name": "Sylan 2 Shoe Men's",
+      "slug": "mens/sylan-2-shoe-0155",
+      "url": "https://arcteryx.com/gb/en/shop/mens/sylan-2-shoe-0155",
+      "gender": "mens",
+      "collections": [
+        "ax-shoes-mens"
+      ],
+      "gbpPrice": 200,
+      "shortDescription": "Propulsive trail running shoe for confident speed",
+      "isNew": false,
+      "colours": [
+        {
+          "color": "Atmos/Atmos",
+          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Atmos-Atmos-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-Atmos-Atmos.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Atmos-Atmos-Hover.jpg",
+          "selected": true
+        },
+        {
+          "color": "Black/Black",
+          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Black-Black-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-Black-Black.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Black-Black-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "Lt Oakmoss/Lt Oakmoss",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "SL Forage/SL Forage",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-SL-Forage-SL-Forage-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-SL-Forage-SL-Forage.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-SL-Forage-SL-Forage-Hover.jpg",
+          "selected": false
+        }
+      ],
+      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Atmos-Atmos-Hover.jpg"
+    },
+    {
       "id": "X000010029",
       "name": "Kopec Mid GTX Boot Men's",
       "slug": "mens/kopec-mid-gtx-boot-0029",
@@ -391,14 +382,21 @@
           "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Sea-Salt-Sea-Salt-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-Sea-Salt-Sea-Salt.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Sea-Salt-Sea-Salt-Hover.jpg",
+          "selected": true
+        },
+        {
+          "color": "Fogstone/Fogstone",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Fogstone-Fogstone-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-Fogstone-Fogstone.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Fogstone-Fogstone-Hover.jpg",
           "selected": false
         },
         {
-          "color": "Lt Black Sapphire/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Lt-Black-Sapphire-Black-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Kragg-Shoe-Lt-Black-Sapphire-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Lt-Black-Sapphire-Black-Hover.jpg",
-          "selected": true
+          "color": "Dark Jade/Dark Jade",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dark-Jade-Dark-Jade-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-Dark-Jade-Dark-Jade.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dark-Jade-Dark-Jade-Hover.jpg",
+          "selected": false
         },
         {
           "color": "Oakmoss/Oakmoss",
@@ -409,64 +407,6 @@
         }
       ],
       "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Black-Black-Hover.jpg"
-    },
-    {
-      "id": "X000010155",
-      "name": "Sylan 2 Shoe Men's",
-      "slug": "mens/sylan-2-shoe-0155",
-      "url": "https://arcteryx.com/gb/en/shop/mens/sylan-2-shoe-0155",
-      "gender": "mens",
-      "collections": [
-        "ax-shoes-mens"
-      ],
-      "gbpPrice": 200,
-      "shortDescription": "Propulsive trail running shoe for confident speed",
-      "isNew": false,
-      "colours": [
-        {
-          "color": "Graphite/Graphite",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Graphite-Graphite-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-Graphite-Graphite.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Graphite-Graphite-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Atmos/Atmos",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Atmos-Atmos-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-Atmos-Atmos.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Atmos-Atmos-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Black/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Black-Black-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-Black-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Black-Black-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Mantis/Mantis",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Mantis-Mantis-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-Mantis-Mantis.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Mantis-Mantis-Hover.jpg",
-          "selected": true
-        },
-        {
-          "color": "Lt Oakmoss/Lt Oakmoss",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-Lt-Oakmoss-Lt-Oakmoss-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "SL Forage/SL Forage",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-SL-Forage-SL-Forage-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-SL-Forage-SL-Forage.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010155-Sylan-2-Shoe-SL-Forage-SL-Forage-Hover.jpg",
-          "selected": false
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010155-Sylan-2-Shoe-Graphite-Graphite-Hover.jpg"
     },
     {
       "id": "X000010397",
@@ -599,29 +539,6 @@
       "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010398-Norvan-LD-4-Shoe-Rune-Void-LT-Hover.jpg"
     },
     {
-      "id": "X000010960",
-      "name": "Konseal Subida Shoe Women's",
-      "slug": "womens/konseal-subida-shoe-0960",
-      "url": "https://arcteryx.com/gb/en/shop/womens/konseal-subida-shoe-0960",
-      "gender": "womens",
-      "collections": [
-        "ax-shoes-womens"
-      ],
-      "gbpPrice": 170,
-      "shortDescription": "Sturdy approach shoe for rugged, technical terrain",
-      "isNew": false,
-      "colours": [
-        {
-          "color": "Black/Arctic Silk",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010960-Konseal-Subida-Shoe-Black-Arctic-Silk-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Konseal-Subida-Shoe-W-Black-Arctic-Silk.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010960-Konseal-Subida-Shoe-Black-Arctic-Silk-Women-s-Hover.jpg",
-          "selected": true
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010960-Konseal-Subida-Shoe-Black-Arctic-Silk-Women-s-Hover.jpg"
-    },
-    {
       "id": "X000009619",
       "name": "Vertex Speed Shoe Women's",
       "slug": "womens/vertex-speed-shoe-9619",
@@ -715,14 +632,14 @@
           "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009967-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Women-s-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Norvan-4-Nivalis-Shoe-W-Black-Arctic-Silk.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009967-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Women-s-Hover.jpg",
-          "selected": false
+          "selected": true
         },
         {
           "color": "Black/Black",
           "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009967-Norvan-4-Nivalis-Shoe-Black-Black-Women-s-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Norvan-4-Nivalis-Shoe-W-Black-Black.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009967-Norvan-4-Nivalis-Shoe-Black-Black-Women-s-Hover.jpg",
-          "selected": true
+          "selected": false
         }
       ],
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009967-Norvan-4-Nivalis-Shoe-Black-Arctic-Silk-Women-s-Hover.jpg"
@@ -756,6 +673,36 @@
         }
       ],
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009972-Konseal-GTX-Shoe-Black-Black-Women-s-Hover.jpg"
+    },
+    {
+      "id": "X000009970",
+      "name": "Konseal Shoe Women's",
+      "slug": "womens/konseal-shoe-9970",
+      "url": "https://arcteryx.com/gb/en/shop/womens/konseal-shoe-9970",
+      "gender": "womens",
+      "collections": [
+        "ax-shoes-womens"
+      ],
+      "gbpPrice": 170,
+      "shortDescription": "Sturdy approach shoe for rugged, technical terrain",
+      "isNew": false,
+      "colours": [
+        {
+          "color": "Black/Black",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Shoe-W-Black-Black.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "Mid Bracken/Black",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Mid-Bracken-Black-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Shoe-W-Mid-Bracken-Black.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Mid-Bracken-Black-Women-s-Hover.jpg",
+          "selected": true
+        }
+      ],
+      "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Hover.jpg"
     },
     {
       "id": "X000010031",
@@ -793,43 +740,6 @@
         }
       ],
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000010031-Kopec-Mid-GTX-Boot-Black-Black-Women-s-Hover.jpg"
-    },
-    {
-      "id": "X000009970",
-      "name": "Konseal Shoe Women's",
-      "slug": "womens/konseal-shoe-9970",
-      "url": "https://arcteryx.com/gb/en/shop/womens/konseal-shoe-9970",
-      "gender": "womens",
-      "collections": [
-        "ax-shoes-womens"
-      ],
-      "gbpPrice": 170,
-      "shortDescription": "Sturdy approach shoe for rugged, technical terrain",
-      "isNew": false,
-      "colours": [
-        {
-          "color": "Black/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Shoe-W-Black-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Habitat/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000009970-Konseal-Shoe-Habitat-Black-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Konseal-Shoe-W-Habitat-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000009970-Konseal-Shoe-Habitat-Black-Women-s-Hover.jpg",
-          "selected": true
-        },
-        {
-          "color": "Mid Bracken/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Mid-Bracken-Black-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Konseal-Shoe-W-Mid-Bracken-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Mid-Bracken-Black-Women-s-Hover.jpg",
-          "selected": false
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000009970-Konseal-Shoe-Black-Black-Women-s-Hover.jpg"
     },
     {
       "id": "X000010503",
@@ -920,6 +830,50 @@
       "mainImage": "https://images.arcteryx.com/details/1350x1710/F26-X000010028-Kopec-GTX-Shoe-Black-Yukon-Women-s-Hover.jpg"
     },
     {
+      "id": "X000010153",
+      "name": "Sylan 2 Shoe Women's",
+      "slug": "womens/sylan-2-shoe-0153",
+      "url": "https://arcteryx.com/gb/en/shop/womens/sylan-2-shoe-0153",
+      "gender": "womens",
+      "collections": [
+        "ax-shoes-womens"
+      ],
+      "gbpPrice": 200,
+      "shortDescription": "Propulsive trail running shoe for confident speed",
+      "isNew": false,
+      "colours": [
+        {
+          "color": "Atmos/Atmos",
+          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Atmos-Atmos-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-W-Atmos-Atmos.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Atmos-Atmos-Women-s-Hover.jpg",
+          "selected": true
+        },
+        {
+          "color": "Black/Black",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-Black-Black-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-Black-Black.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-Black-Black-Women-s-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "SL Larch/SL Larch",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Larch-SL-Larch-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-SL-Larch-SL-Larch.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Larch-SL-Larch-Women-s-Hover.jpg",
+          "selected": false
+        },
+        {
+          "color": "SL Dark Jade/SL Dark Jade",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Dark-Jade-SL-Dark-Jade-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-SL-Dark-Jade-SL-Dark-Jade.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Dark-Jade-SL-Dark-Jade-Women-s-Hover.jpg",
+          "selected": false
+        }
+      ],
+      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Atmos-Atmos-Women-s-Hover.jpg"
+    },
+    {
       "id": "X000010399",
       "name": "Norvan LD 4 GTX Shoe Women's",
       "slug": "womens/norvan-ld-4-gtx-shoe-0399",
@@ -977,13 +931,6 @@
       "isNew": false,
       "colours": [
         {
-          "color": "Stratus/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Stratus-Black-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Kragg-Shoe-W-Stratus-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Stratus-Black-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
           "color": "Black/Black",
           "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Black-Black-Women-s-Profile.jpg",
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-W-Black-Black.jpg",
@@ -996,6 +943,13 @@
           "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-W-Arctic-Silk-Arctic-Silk.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Arctic-Silk-Arctic-Silk-Women-s-Hover.jpg",
           "selected": true
+        },
+        {
+          "color": "Fogstone/Fogstone",
+          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010081-Kragg-Shoe-Fogstone-Fogstone-Women-s-Profile.jpg",
+          "thumb": "https://images.arcteryx.com/F26/1350x1710/Kragg-Shoe-W-Fogstone-Fogstone.jpg",
+          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010081-Kragg-Shoe-Fogstone-Fogstone-Women-s-Hover.jpg",
+          "selected": false
         },
         {
           "color": "SL Larch/SL Forage",
@@ -1012,65 +966,7 @@
           "selected": false
         }
       ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Stratus-Black-Women-s-Hover.jpg"
-    },
-    {
-      "id": "X000010153",
-      "name": "Sylan 2 Shoe Women's",
-      "slug": "womens/sylan-2-shoe-0153",
-      "url": "https://arcteryx.com/gb/en/shop/womens/sylan-2-shoe-0153",
-      "gender": "womens",
-      "collections": [
-        "ax-shoes-womens"
-      ],
-      "gbpPrice": 200,
-      "shortDescription": "Propulsive trail running shoe for confident speed",
-      "isNew": false,
-      "colours": [
-        {
-          "color": "Graphite/Graphite",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Graphite-Graphite-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-W-Graphite-Graphite.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Graphite-Graphite-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Atmos/Atmos",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Atmos-Atmos-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-W-Atmos-Atmos.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Atmos-Atmos-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Shincha/Shincha",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Shincha-Shincha-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Sylan-2-Shoe-W-Shincha-Shincha.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Shincha-Shincha-Women-s-Hover.jpg",
-          "selected": true
-        },
-        {
-          "color": "Black/Black",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-Black-Black-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-Black-Black.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-Black-Black-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "SL Larch/SL Larch",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Larch-SL-Larch-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-SL-Larch-SL-Larch.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Larch-SL-Larch-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "SL Dark Jade/SL Dark Jade",
-          "profile": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Dark-Jade-SL-Dark-Jade-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/F26/1350x1710/Sylan-2-Shoe-W-SL-Dark-Jade-SL-Dark-Jade.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/F26-X000010153-Sylan-2-Shoe-SL-Dark-Jade-SL-Dark-Jade-Women-s-Hover.jpg",
-          "selected": false
-        }
-      ],
-      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010153-Sylan-2-Shoe-Graphite-Graphite-Women-s-Hover.jpg"
+      "mainImage": "https://images.arcteryx.com/details/1350x1710/S26-X000010081-Kragg-Shoe-Black-Black-Women-s-Hover.jpg"
     },
     {
       "id": "X000010400",
@@ -1090,13 +986,6 @@
           "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010400-Norvan-LD-4-Shoe-Rune-Void-LT-Women-s-Profile.jpg",
           "thumb": "https://images.arcteryx.com/S26/1350x1710/Norvan-LD-4-Shoe-W-Rune-Void-LT.jpg",
           "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010400-Norvan-LD-4-Shoe-Rune-Void-LT-Women-s-Hover.jpg",
-          "selected": false
-        },
-        {
-          "color": "Dk Stratus/Lt Stratus",
-          "profile": "https://images.arcteryx.com/details/1350x1710/S26-X000010400-Norvan-LD-4-Shoe-Dk-Stratus-Lt-Stratus-Women-s-Profile.jpg",
-          "thumb": "https://images.arcteryx.com/S26/1350x1710/Norvan-LD-4-Shoe-W-Dk-Stratus-Lt-Stratus.jpg",
-          "hover": "https://images.arcteryx.com/details/1350x1710/S26-X000010400-Norvan-LD-4-Shoe-Dk-Stratus-Lt-Stratus-Women-s-Hover.jpg",
           "selected": false
         },
         {
