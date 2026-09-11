@@ -59,35 +59,59 @@ def translate_cache() -> dict[str, str]:
     return load_json(CACHE, {})
 
 
-def tr(text: str | None, cache: dict[str, str], *, allow_remote: bool = True) -> str:
+def tr(
+    text: str | None,
+    cache: dict[str, str],
+    *,
+    allow_remote: bool = True,
+    prose: bool = False,
+) -> str:
+    """Translate copy. Titles may use TITLE_MAP; PDP prose must never (avoids EN/KO hybrids)."""
     s = clean_html_text(text or "")
     if not s:
         return ""
     if s in cache and is_good_korean(cache[s]):
         return cache[s]
-    if has_hangul(s):
+    if has_hangul(s) and is_good_korean(s):
         cache[s] = s
         return s
     fast = os.environ.get("BRIQ_FAST_BUILD") == "1"
-    if fast or not allow_remote or len(s) > 120:
-        out = clean_title_ko(s) or s
-        cache[s] = out
-        return out
+    if prose:
+        # Full-sentence PDP copy — never glossary-swap (creates "Featu링" / "워치 is" hybrids).
+        if fast or not allow_remote:
+            # Keep EN rather than caching a hybrid; weekly sync without FAST will translate.
+            return s
+        try:
+            out = gtx_translate(s)
+            time.sleep(0.05)
+        except Exception:
+            out = s
+        if out and is_good_korean(out):
+            cache[s] = out
+            return out
+        return out or s
+    dicted = clean_title_ko(s)
+    if fast or not allow_remote:
+        cache[s] = dicted or s
+        return cache[s]
     try:
         out = gtx_translate(s)
-        time.sleep(0.02)
+        time.sleep(0.05)
+        out = clean_title_ko(out or dicted or s)
     except Exception:
-        out = s
-    out = clean_title_ko(out or s)
-    if out:
+        out = dicted or s
+    if out and is_good_korean(out):
         cache[s] = out
-    return out
+    elif out:
+        # Title-style leftovers (e.g. "Little Seymour 워치") are acceptable for nameKo.
+        cache[s] = out
+    return out or s
 
 
 def clean_title_ko(text: str) -> str:
     out = text.strip()
-    for en, ko in TITLE_MAP.items():
-        out = re.sub(re.escape(en), ko, out, flags=re.I)
+    for en, ko in sorted(TITLE_MAP.items(), key=lambda kv: -len(kv[0])):
+        out = re.sub(rf"\b{re.escape(en)}\b", ko, out, flags=re.I)
     out = re.sub(r"\bIN\b", "", out, flags=re.I)
     out = re.sub(r"\bTHE\b", "", out, flags=re.I)
     out = re.sub(r"\s{2,}", " ", out).strip(" ;,-")
@@ -123,6 +147,10 @@ def extract_detail_lines(row: dict, label: str) -> list[str]:
             body = clean_html_text(item.get("body") or "")
             if not body or body.lower() == label.lower():
                 continue
+            # Keep description/care/composition as whole bodies so EN→KO prose
+            # stays coherent (sentence-splitting produced untranslated hybrids).
+            if label.lower() in {"description", "care instructions", "composition"}:
+                return [body]
             lines = [clean_html_text(x) for x in re.split(r"\n|\.(?=\s+[A-Z])", body)]
             lines = [x.strip() for x in lines if x.strip()]
             if lines:
@@ -222,8 +250,12 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     description_en = extract_detail_lines(row, "Description")
     composition_en = extract_detail_lines(row, "Composition")
     care_en = extract_detail_lines(row, "Care Instructions")
-    features_ko = [y for x in (description_en + composition_en)[:10] if (y := tr(x, cache, allow_remote=False))]
-    care_ko = [y for x in care_en[:6] if (y := tr(x, cache, allow_remote=False))]
+    features_ko = [
+        y
+        for x in (description_en + composition_en)[:10]
+        if (y := tr(x, cache, allow_remote=True, prose=True))
+    ]
+    care_ko = [y for x in care_en[:6] if (y := tr(x, cache, allow_remote=True, prose=True))]
     desc_parts = []
     if features_ko:
         desc_parts.append(" / ".join(features_ko[:3]))
@@ -232,9 +264,13 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
 
     tech_specs = []
     if composition_en:
-        tech_specs.append({"labelKo": "소재", "valueKo": tr(composition_en[0], cache)})
+        tech_specs.append(
+            {"labelKo": "소재", "valueKo": tr(composition_en[0], cache, allow_remote=True, prose=True)}
+        )
     elif description_en:
-        tech_specs.append({"labelKo": "디테일", "valueKo": tr(description_en[0], cache)})
+        tech_specs.append(
+            {"labelKo": "디테일", "valueKo": tr(description_en[0], cache, allow_remote=True, prose=True)}
+        )
     if row.get("categoryLabel"):
         category_ko = clean_title_ko(str(row["categoryLabel"]).replace("/", " / ").title())
         tech_specs.append({"labelKo": "카테고리", "valueKo": category_ko})
@@ -273,14 +309,37 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
 
 def main() -> None:
     cache = translate_cache()
+    # Drop hybrid glossary leftovers so prose can be re-translated cleanly.
+    purged = 0
+    for k, v in list(cache.items()):
+        if not isinstance(v, str):
+            continue
+        if len(v) >= 40 and not is_good_korean(v):
+            del cache[k]
+            purged += 1
+    if purged:
+        print(f"purged {purged} hybrid cache entries", flush=True)
+
     by_id: dict[str, dict] = {}
     rows: list[dict] = []
     raw_paths = vw_raw_paths()
+    leaf_filter = (os.environ.get("VW_LEAF_FILTER") or "").strip()
     if not raw_paths:
         raise SystemExit("no vw-*-catalog-raw.json files found")
     for path in raw_paths:
+        if leaf_filter and leaf_filter not in path.name:
+            continue
         payload = load_json(path, {"products": []})
         rows.extend(payload.get("products") or [])
+    if leaf_filter and not rows:
+        raise SystemExit(f"no rows for VW_LEAF_FILTER={leaf_filter!r}")
+
+    # When filtering a leaf, merge into existing catalog so other families stay intact.
+    if leaf_filter and OUT_JSON.is_file():
+        for p in load_json(OUT_JSON, []):
+            if isinstance(p, dict) and p.get("id"):
+                by_id[p["id"]] = p
+
     for idx, row in enumerate(rows):
         if not row.get("id"):
             continue

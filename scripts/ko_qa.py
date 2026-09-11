@@ -292,9 +292,24 @@ def gtx_translate(text: str) -> str:
             f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
         )
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=35) as r:
-            data = json.loads(r.read().decode())
-        return "".join(part[0] for part in data[0] if part and part[0])
+        last_err: Exception | None = None
+        for attempt in range(6):
+            try:
+                with urllib.request.urlopen(req, timeout=35) as r:
+                    data = json.loads(r.read().decode())
+                return "".join(part[0] for part in data[0] if part and part[0])
+            except urllib.error.HTTPError as e:
+                last_err = e
+                if e.code == 429:
+                    time.sleep(8 * (attempt + 1))
+                    continue
+                raise
+            except Exception as e:
+                last_err = e
+                time.sleep(2 * (attempt + 1))
+        if last_err:
+            raise last_err
+        return ""
 
     def _mymemory(chunk: str) -> str:
         url = (
@@ -302,9 +317,19 @@ def gtx_translate(text: str) -> str:
             f"?q={urllib.parse.quote(chunk[:480])}&langpair=en|ko"
         )
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=35) as r:
-            data = json.loads(r.read().decode())
-        return (data.get("responseData") or {}).get("translatedText") or ""
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=35) as r:
+                    data = json.loads(r.read().decode())
+                return (data.get("responseData") or {}).get("translatedText") or ""
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    time.sleep(10 * (attempt + 1))
+                    continue
+                return ""
+            except Exception:
+                time.sleep(2 * (attempt + 1))
+        return ""
 
     text = (text or "").strip()
     if not text:
@@ -341,7 +366,7 @@ def gtx_translate(text: str) -> str:
         if not out:
             raise RuntimeError("translate-failed")
         outs.append(out)
-        time.sleep(0.08)
+        time.sleep(0.12)
     return " ".join(outs)
 
 
