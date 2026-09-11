@@ -221,7 +221,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.440186+00:00"
+    "updatedAt": "2026-09-11T18:24:36.609472+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -452,7 +452,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.444793+00:00"
+    "updatedAt": "2026-09-11T18:24:36.613983+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -625,7 +625,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.447321+00:00"
+    "updatedAt": "2026-09-11T18:24:36.616450+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -769,7 +769,234 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.449139+00:00"
+    "updatedAt": "2026-09-11T18:24:36.618223+00:00"
+  },
+  {
+    "id": "mb-hackney-shoulder-bag",
+    "name": "Hackney Shoulder Bag",
+    "nameKo": "해크니 숄더백",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-shoulder",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-bags",
+      "mb-women-shoulder"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "We delved deep into the Mulberry archives to create the Hackney Shoulder Bag, a sleek, soft, and slouchy style that features a snap hook clasp and Mulberry Tree rivets. Each bag passes through the hands of 30 artisans – a lot of work for such an effortless, on-the-go style.",
+    "image": "/products/mb-pdp/g-hh9956-047a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh9956-047a100/1.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/2.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/3.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/4.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/5.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/6.jpg",
+      "/products/mb-pdp/g-hh9956-047a100/7.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 1295.0,
+    "sku": "G_HH9956_047A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-black-suede",
+    "variants": [
+      {
+        "id": "mb-g-hh9956-047a100-sz-os",
+        "name": "Black Suede / OS",
+        "nameKo": "Black 스웨이드",
+        "sku": "G_HH9956_047A100",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh9956-047a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9956-047a100/1.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/2.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/3.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/4.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/5.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/6.jpg",
+          "/products/mb-pdp/g-hh9956-047a100/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-black-suede",
+        "inStock": true,
+        "colorKey": "black-suede",
+        "colorNameKo": "Black 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh9956-047d117-sz-os",
+        "name": "Foggy Grey Suede / OS",
+        "nameKo": "Foggy Grey 스웨이드",
+        "sku": "G_HH9956_047D117",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh9956-047d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9956-047d117/1.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/2.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/3.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/4.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/5.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/6.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/7.jpg",
+          "/products/mb-pdp/g-hh9956-047d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/hackney-shoulder-bag-foggy-grey-suede",
+        "inStock": true,
+        "colorKey": "foggy-grey-suede",
+        "colorNameKo": "Foggy Grey 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh9963-726a110-sz-os",
+        "name": "Ebony Shiny Buffalo / OS",
+        "nameKo": "Ebony 샤이니 버팔로",
+        "sku": "G_HH9963_726A110",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh9963-726a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9963-726a110/1.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/2.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/3.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/4.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/5.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/6.jpg",
+          "/products/mb-pdp/g-hh9963-726a110/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/hackney-shoulder-bag-ebony-shiny-buffalo",
+        "inStock": true,
+        "colorKey": "ebony-shiny-buffalo",
+        "colorNameKo": "Ebony 샤이니 버팔로",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh0101-748u939-sz-os",
+        "name": "Out of the Blue High Shine Leather / OS",
+        "nameKo": "Out of the Blue 하이 샤인 레더",
+        "sku": "G_HH0101_748U939",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0101-748u939/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0101-748u939/1.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/2.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/3.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/4.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/5.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/6.jpg",
+          "/products/mb-pdp/g-hh0101-748u939/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/hackney-shoulder-bag-out-of-the-blue-high-shine-leather",
+        "inStock": true,
+        "colorKey": "out-of-the-blue-high-shine-leather",
+        "colorNameKo": "Out of the Blue 하이 샤인 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "We delved deep into the Mulberry archives to create the Hackney Shoulder Bag, a sleek, soft, and slouchy style that features a snap hook clasp and Mulberry Tree rivets. Each bag passes through the hands of 30 artisans – a lot of work for such an effortless, on-the-go style.",
+        "image": "/products/mb-pdp/g-hh9956-047a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A slouchy shoulder bag. Brass hardware finish Shoulder strap with signature snap hook detailing Magnetic closure One internal slip pocket Blind embossed Mulberry signature Microfibre lining Mulberry Tree rivet detailing Height 30cm Width 34cm-42cm Depth 10cm Handle drop 38cm Weight 1.1kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH9956-047D117",
+        "image": "/products/mb-pdp/g-hh9956-047a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "Shoulder strap with signature snap hook detailing · 30cm · 34cm-42cm · 10cm · 38cm · 34cm - 42cm",
+        "image": "/products/mb-pdp/g-hh9956-047a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "Shoulder strap with signature snap hook detailing · 30cm · 34cm-42cm · 10cm · 38cm · 34cm - 42cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "4가지"
+      }
+    ],
+    "featuresKo": [
+      "A slouchy shoulder bag. Brass hardware finish Shoulder strap with signature snap hook detailing Magnetic closure One internal slip pocket Blind embossed Mulberry signature Microfibre lining Mulberry Tree rivet detailing Height 30cm Width 34cm-42cm Depth 10cm Handle drop 38cm Weight 1.1kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH9956-047D117",
+      "Shoulder strap with signature snap hook detailing",
+      "30cm",
+      "34cm-42cm",
+      "10cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:24:36.619159+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -799,7 +1026,7 @@
       "/products/mb-pdp/g-hs5215-127q330/6.jpg",
       "/products/mb-pdp/g-hs5215-127q330/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 895.0,
     "sku": "G_HS5215_127Q330",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/holdalls/heritage-zipped-backpack-mole-cognac-bio-based-scotchgrain",
@@ -995,7 +1222,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.453060+00:00"
+    "updatedAt": "2026-09-11T18:24:36.622623+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -1026,7 +1253,7 @@
       "/products/mb-pdp/g-hh9390-205w160/7.jpg",
       "/products/mb-pdp/g-hh9390-205w160/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 795.0,
     "sku": "G_HH9390_205U939",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/islington-bucket-out-of-the-blue-small-classic-grain",
@@ -1336,7 +1563,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.457575+00:00"
+    "updatedAt": "2026-09-11T18:24:36.626686+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -1368,7 +1595,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -1568,7 +1795,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.459279+00:00"
+    "updatedAt": "2026-09-11T18:24:36.628304+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -1599,7 +1826,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -1799,7 +2026,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.465207+00:00"
+    "updatedAt": "2026-09-11T18:24:36.633659+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -1830,7 +2057,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -2000,7 +2227,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.467434+00:00"
+    "updatedAt": "2026-09-11T18:24:36.635585+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -2031,7 +2258,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -2144,7 +2371,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.470126+00:00"
+    "updatedAt": "2026-09-11T18:24:36.638878+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -2174,7 +2401,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -2372,7 +2599,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.473798+00:00"
+    "updatedAt": "2026-09-11T18:24:36.641389+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -2403,7 +2630,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -2573,7 +2800,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.474882+00:00"
+    "updatedAt": "2026-09-11T18:24:36.643987+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -2604,7 +2831,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -2804,7 +3031,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.478183+00:00"
+    "updatedAt": "2026-09-11T18:24:36.646870+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -2835,7 +3062,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -2948,7 +3175,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.481177+00:00"
+    "updatedAt": "2026-09-11T18:24:36.649773+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -2979,7 +3206,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -3179,7 +3406,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.486864+00:00"
+    "updatedAt": "2026-09-11T18:24:36.655043+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -3208,7 +3435,7 @@
       "/products/mb-pdp/g-hh0389-047v699/5.jpg",
       "/products/mb-pdp/g-hh0389-047v699/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1345.0,
     "sku": "G_HH0389_047V699",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-roxanne-royal-amethyst-suede",
@@ -3319,7 +3546,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.488828+00:00"
+    "updatedAt": "2026-09-11T18:24:36.656799+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -3350,7 +3577,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -3463,7 +3690,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.490735+00:00"
+    "updatedAt": "2026-09-11T18:24:36.658431+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -3496,7 +3723,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -3754,7 +3981,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.493075+00:00"
+    "updatedAt": "2026-09-11T18:24:36.660866+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -3762,10 +3989,11 @@
     "nameKo": "스티비 탑 핸들",
     "brand": "Mulberry",
     "category": "bags",
-    "subcategory": "mb-women-top-handle",
+    "subcategory": "mb-women-shoulder",
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
+      "mb-women-shoulder",
       "mb-women-top-handle"
     ],
     "tags": [
@@ -3774,22 +4002,138 @@
       "bags"
     ],
     "descriptionKo": "Embody the Mulberry Spirit with the Stevie Top Handle, a modern, versatile style you won't be able to put down. Lightweight and softly structured, the Stevie is ideal for day-to-night dressing, and can be worn either on the shoulder or carried top handle as an evening bag.",
-    "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+    "image": "/products/mb-pdp/g-hh0230-047d117/1.jpg",
     "images": [
-      "/products/mb-pdp/g-hh0197-771a100/1.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/2.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/3.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/4.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/5.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/6.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/7.jpg",
-      "/products/mb-pdp/g-hh0197-771a100/8.jpg"
+      "/products/mb-pdp/g-hh0230-047d117/1.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/2.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/3.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/4.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/5.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/6.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/7.jpg",
+      "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1595.0,
-    "sku": "G_HH0197_771A100",
-    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-black-supple-smooth-leather",
+    "sku": "G_HH0230_047D117",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
     "variants": [
+      {
+        "id": "mb-g-hh0230-047d117-sz-os",
+        "name": "Foggy Grey Suede / OS",
+        "nameKo": "Foggy Grey 스웨이드",
+        "sku": "G_HH0230_047D117",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0230-047d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0230-047d117/1.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/2.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/3.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/4.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/5.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/6.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/7.jpg",
+          "/products/mb-pdp/g-hh0230-047d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
+        "inStock": true,
+        "colorKey": "foggy-grey-suede",
+        "colorNameKo": "Foggy Grey 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771a100-sz-os",
+        "name": "Black Supple Smooth Leather / OS",
+        "nameKo": "Black Supple Smooth 레더",
+        "sku": "G_HH0197_771A100",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a100/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-black-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "black-supple-smooth-leather",
+        "colorNameKo": "Black Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771a110-sz-os",
+        "name": "Ebony Supple Smooth Leather / OS",
+        "nameKo": "Ebony Supple Smooth 레더",
+        "sku": "G_HH0197_771A110",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771a110/1.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/2.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/3.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/4.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/5.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/6.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/7.jpg",
+          "/products/mb-pdp/g-hh0197-771a110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-ebony-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "ebony-supple-smooth-leather",
+        "colorNameKo": "Ebony Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
+      {
+        "id": "mb-g-hh0197-771v185-sz-os",
+        "name": "Amethyst Supple Smooth Leather / OS",
+        "nameKo": "Amethyst Supple Smooth 레더",
+        "sku": "G_HH0197_771V185",
+        "gbpPrice": 1595.0,
+        "price": 4040000,
+        "image": "/products/mb-pdp/g-hh0197-771v185/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0197-771v185/1.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/2.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/3.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/4.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/5.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/6.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/7.jpg",
+          "/products/mb-pdp/g-hh0197-771v185/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-amethyst-supple-smooth-leather",
+        "inStock": true,
+        "colorKey": "amethyst-supple-smooth-leather",
+        "colorNameKo": "Amethyst Supple Smooth 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-shoulder"
+        ]
+      },
       {
         "id": "mb-g-hh0197-771a100-sz-os",
         "name": "Black Supple Smooth Leather / OS",
@@ -3911,17 +4255,17 @@
       {
         "titleKo": "제품 소개",
         "bodyKo": "Embody the Mulberry Spirit with the Stevie Top Handle, a modern, versatile style you won't be able to put down. Lightweight and softly structured, the Stevie is ideal for day-to-night dressing, and can be worn either on the shoulder or carried top handle as an evening bag.",
-        "image": "/products/mb-pdp/g-hh0197-771a100/1.jpg"
+        "image": "/products/mb-pdp/g-hh0230-047d117/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "A top handle day-to-night bag. Soft Gold hardware finish Front pocket with Postman's Lock closure Detachable top handle Adjustable and detachable strap External rear zipped pocket Internal hook keeper closure Adjustable belt detailing on sides Microfiber lining Height 24cm Width 36cm Depth 15cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0230-047D117",
-        "image": "/products/mb-pdp/g-hh0197-771a100/2.jpg"
+        "image": "/products/mb-pdp/g-hh0230-047d117/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
         "bodyKo": "Adjustable and detachable strap · 24cm · 36cm · 15cm",
-        "image": "/products/mb-pdp/g-hh0197-771a100/3.jpg"
+        "image": "/products/mb-pdp/g-hh0230-047d117/3.jpg"
       }
     ],
     "techSpecs": [
@@ -3931,7 +4275,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "4가지"
+        "valueKo": "8가지"
       }
     ],
     "featuresKo": [
@@ -3985,7 +4329,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.495936+00:00"
+    "updatedAt": "2026-09-11T18:24:36.664776+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -4016,7 +4360,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -4216,7 +4560,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.497339+00:00"
+    "updatedAt": "2026-09-11T18:24:36.668135+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -4247,7 +4591,7 @@
       "/products/mb-pdp/g-hh0140-736g222/7.jpg",
       "/products/mb-pdp/g-hh0140-736g222/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736G222",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-bright-oak-heavy-grain",
@@ -4359,6 +4703,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:18:58.498925+00:00"
+    "updatedAt": "2026-09-11T18:24:36.669775+00:00"
   }
 ]
