@@ -330,7 +330,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.601893+00:00"
+    "updatedAt": "2026-09-11T18:41:03.608860+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -554,7 +554,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.605360+00:00"
+    "updatedAt": "2026-09-11T18:41:03.612459+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -785,7 +785,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.609676+00:00"
+    "updatedAt": "2026-09-11T18:41:03.616756+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -958,7 +958,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.612193+00:00"
+    "updatedAt": "2026-09-11T18:41:03.619246+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -1102,7 +1102,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.614013+00:00"
+    "updatedAt": "2026-09-11T18:41:03.621033+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -1329,7 +1329,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.616489+00:00"
+    "updatedAt": "2026-09-11T18:41:03.623457+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -1555,7 +1555,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.620029+00:00"
+    "updatedAt": "2026-09-11T18:41:03.626940+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -1896,7 +1896,177 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.624143+00:00"
+    "updatedAt": "2026-09-11T18:41:03.631063+00:00"
+  },
+  {
+    "id": "mb-large-darley-cosmetic-pouch",
+    "name": "Large Darley Cosmetic Pouch",
+    "nameKo": "라지 달리 코스메틱 파우치",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-accessories",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-accessories"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Our classic style gets a whole lot bigger. The Large Darley Cosmetic Pouch is perfectly sized to hold all the essentials.",
+    "image": "/products/mb-pdp/g-rl8853-552g110/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl8853-552g110/1.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/2.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/3.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/4.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/5.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/6.jpg",
+      "/products/mb-pdp/g-rl8853-552g110/7.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 395.0,
+    "sku": "G_RL8853_552G110",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl8853-552g110-sz-os",
+        "name": "Oak Small Classic Grain / OS",
+        "nameKo": "Oak 스몰 클래식 그레인",
+        "sku": "G_RL8853_552G110",
+        "gbpPrice": 395.0,
+        "price": 1000000,
+        "image": "/products/mb-pdp/g-rl8853-552g110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8853-552g110/1.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/2.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/3.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/4.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/5.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/6.jpg",
+          "/products/mb-pdp/g-rl8853-552g110/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-oak-small-classic-grain",
+        "inStock": true,
+        "colorKey": "oak-small-classic-grain",
+        "colorNameKo": "Oak 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      },
+      {
+        "id": "mb-g-rl8849-205a100-sz-os",
+        "name": "Black Small Classic Grain / OS",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_RL8849_205A100",
+        "gbpPrice": 395.0,
+        "price": 1000000,
+        "image": "/products/mb-pdp/g-rl8849-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8849-205a100/1.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/2.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/3.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/4.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/5.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/6.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/7.jpg",
+          "/products/mb-pdp/g-rl8849-205a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/travel-accessories/large-darley-cosmetic-pouch-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Our classic style gets a whole lot bigger. The Large Darley Cosmetic Pouch is perfectly sized to hold all the essentials.",
+        "image": "/products/mb-pdp/g-rl8853-552g110/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A large cosmetic pouch finished with Postman's Lock. Top flap with Postman's Lock closure Internal foil embossed Mulberry signature One main compartment Soft Gold hardware finish Nappa lining In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 17.5cm Width 24cm Depth 8cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL8853-552G110",
+        "image": "/products/mb-pdp/g-rl8853-552g110/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "17.5cm · 24cm · 8cm",
+        "image": "/products/mb-pdp/g-rl8853-552g110/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "17.5cm · 24cm · 8cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "2가지"
+      }
+    ],
+    "featuresKo": [
+      "A large cosmetic pouch finished with Postman's Lock. Top flap with Postman's Lock closure Internal foil embossed Mulberry signature One main compartment Soft Gold hardware finish Nappa lining In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 17.5cm Width 24cm Depth 8cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL8853-552G110",
+      "17.5cm",
+      "24cm",
+      "8cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:41:03.631751+00:00"
   },
   {
     "id": "mb-lily",
@@ -1924,7 +2094,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
     "sku": "G_HH3288_874A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/lily-black-glossy-goat",
@@ -2116,7 +2286,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.626643+00:00"
+    "updatedAt": "2026-09-11T18:41:03.634217+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -2148,7 +2318,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -2348,7 +2518,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.628308+00:00"
+    "updatedAt": "2026-09-11T18:41:03.637032+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -2378,7 +2548,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -2575,7 +2745,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.630683+00:00"
+    "updatedAt": "2026-09-11T18:41:03.639601+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -2606,7 +2776,7 @@
       "/products/mb-pdp/g-rl6595-736f924/7.jpg",
       "/products/mb-pdp/g-rl6595-736f924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 995.0,
     "sku": "G_RL6595_736F924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
@@ -2806,7 +2976,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.636677+00:00"
+    "updatedAt": "2026-09-11T18:41:03.645254+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -2837,7 +3007,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -3007,7 +3177,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.638911+00:00"
+    "updatedAt": "2026-09-11T18:41:03.647337+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -3038,7 +3208,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -3151,7 +3321,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.641609+00:00"
+    "updatedAt": "2026-09-11T18:41:03.649734+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -3181,7 +3351,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -3379,7 +3549,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.644180+00:00"
+    "updatedAt": "2026-09-11T18:41:03.652159+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -3410,7 +3580,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -3580,7 +3750,342 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.646852+00:00"
+    "updatedAt": "2026-09-11T18:41:03.654801+00:00"
+  },
+  {
+    "id": "mb-mulberry-plaque-cosmetic-pouch",
+    "name": "Mulberry Plaque Cosmetic Pouch",
+    "nameKo": "멀버리 Plaque 코스메틱 파우치",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-accessories",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-accessories"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "This vibrant cosmetic pouch is part of our stylish, contemporary Plaque family, and features our iconic Mulberry Tree logo.",
+    "image": "/products/mb-pdp/g-rl9045-205u931/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9045-205u931/1.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/2.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/3.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/4.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/5.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/6.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/7.jpg",
+      "/products/mb-pdp/g-rl9045-205u931/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 295.0,
+    "sku": "G_RL9045_205U931",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl9045-205u931-sz-os",
+        "name": "Night Sky & Coral Orange Small Classic Grain / OS",
+        "nameKo": "Night Sky & Coral Orange 스몰 클래식 그레인",
+        "sku": "G_RL9045_205U931",
+        "gbpPrice": 295.0,
+        "price": 750000,
+        "image": "/products/mb-pdp/g-rl9045-205u931/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9045-205u931/1.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/2.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/3.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/4.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/5.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/6.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/7.jpg",
+          "/products/mb-pdp/g-rl9045-205u931/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-plaque-cosmetic-pouch-night-sky-coral-orange-small-classic-grain",
+        "inStock": true,
+        "colorKey": "night-sky-coral-orange-small-classic-gra",
+        "colorNameKo": "Night Sky & Coral Orange 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "This vibrant cosmetic pouch is part of our stylish, contemporary Plaque family, and features our iconic Mulberry Tree logo.",
+        "image": "/products/mb-pdp/g-rl9045-205u931/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A vibrant cosmetic pouch. Brass hardware finish Mulberry Logo plaque Zip closure Colour blocking design Height 16cm Width 22.5cm Depth 5.5cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL9045-205U931",
+        "image": "/products/mb-pdp/g-rl9045-205u931/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "16cm · 22.5cm · 5.5cm",
+        "image": "/products/mb-pdp/g-rl9045-205u931/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "16cm · 22.5cm · 5.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A vibrant cosmetic pouch. Brass hardware finish Mulberry Logo plaque Zip closure Colour blocking design Height 16cm Width 22.5cm Depth 5.5cm Material Small Classic Grain A soft cow leather with a small printed grain effect. The leather is lightly finished to protect the grain surface. This product's code is RL9045-205U931",
+      "16cm",
+      "22.5cm",
+      "5.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:41:03.655394+00:00"
+  },
+  {
+    "id": "mb-passport-cover",
+    "name": "Passport Cover",
+    "nameKo": "Passport Cover",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-accessories",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-accessories"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "The Mulberry Passport Cover is designed to fit standard sized passports and boasts a Nappa lined interior, four card slots, three slip pockets and is finished with our foil embossed Mulberry signature.",
+    "image": "/products/mb-pdp/g-rl9064-127a340/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9064-127a340/1.jpg",
+      "/products/mb-pdp/g-rl9064-127a340/2.jpg",
+      "/products/mb-pdp/g-rl9064-127a340/3.jpg",
+      "/products/mb-pdp/g-rl9064-127a340/4.jpg",
+      "/products/mb-pdp/g-rl9064-127a340/5.jpg"
+    ],
+    "accent": "#3a322c",
+    "gbpPrice": 160.0,
+    "sku": "G_RL9064_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-rl9064-127a340-sz-os",
+        "name": "Black & Cognac Bio Based Scotchgrain / OS",
+        "nameKo": "Black & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9064_127A340",
+        "gbpPrice": 160.0,
+        "price": 410000,
+        "image": "/products/mb-pdp/g-rl9064-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9064-127a340/1.jpg",
+          "/products/mb-pdp/g-rl9064-127a340/2.jpg",
+          "/products/mb-pdp/g-rl9064-127a340/3.jpg",
+          "/products/mb-pdp/g-rl9064-127a340/4.jpg",
+          "/products/mb-pdp/g-rl9064-127a340/5.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      },
+      {
+        "id": "mb-g-rl9064-127q330-sz-os",
+        "name": "Mole & Cognac Bio Based Scotchgrain / OS",
+        "nameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9064_127Q330",
+        "gbpPrice": 160.0,
+        "price": 410000,
+        "image": "/products/mb-pdp/g-rl9064-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9064-127q330/1.jpg",
+          "/products/mb-pdp/g-rl9064-127q330/2.jpg",
+          "/products/mb-pdp/g-rl9064-127q330/3.jpg",
+          "/products/mb-pdp/g-rl9064-127q330/4.jpg",
+          "/products/mb-pdp/g-rl9064-127q330/5.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      },
+      {
+        "id": "mb-g-rl6722-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain / OS",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_RL6722_205D117",
+        "gbpPrice": 185.0,
+        "price": 470000,
+        "image": "/products/mb-pdp/g-rl6722-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6722-205d117/1.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/2.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/3.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/4.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/5.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/6.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/7.jpg",
+          "/products/mb-pdp/g-rl6722-205d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/passport-cover-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "The Mulberry Passport Cover is designed to fit standard sized passports and boasts a Nappa lined interior, four card slots, three slip pockets and is finished with our foil embossed Mulberry signature.",
+        "image": "/products/mb-pdp/g-rl9064-127a340/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A classic passport cover finished with our foil embossed Mulberry signature. Blind embossed Mulberry signature Internal foil embossed Mulberry Tree logo Three credit card slip pockets Moire lining Height 14.5cm Width 11cm Depth 1cm Material Bio Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is RL9064-127A340",
+        "image": "/products/mb-pdp/g-rl9064-127a340/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "14.5cm · 11cm · 1cm",
+        "image": "/products/mb-pdp/g-rl9064-127a340/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "14.5cm · 11cm · 1cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "3가지"
+      }
+    ],
+    "featuresKo": [
+      "A classic passport cover finished with our foil embossed Mulberry signature. Blind embossed Mulberry signature Internal foil embossed Mulberry Tree logo Three credit card slip pockets Moire lining Height 14.5cm Width 11cm Depth 1cm Material Bio Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is RL9064-127A340",
+      "14.5cm",
+      "11cm",
+      "1cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:41:03.656461+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -3611,7 +4116,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -3811,7 +4316,179 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.649822+00:00"
+    "updatedAt": "2026-09-11T18:41:03.659367+00:00"
+  },
+  {
+    "id": "mb-small-cosmetic-pouch",
+    "name": "Small Cosmetic Pouch",
+    "nameKo": "스몰 코스메틱 파우치",
+    "brand": "Mulberry",
+    "category": "bags",
+    "subcategory": "mb-women-travel-accessories",
+    "mbCollections": [
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-accessories"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "bags"
+    ],
+    "descriptionKo": "Perfect for packing up your essential cosmetics, our uber-stylish Small Cosmetic Pouch is a must for travel. It features a functional zip closure with leather pull, a handy internal slip pocket, and classy Mulberry Tree fabric lining.",
+    "image": "/products/mb-pdp/g-rl9062-127a340/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9062-127a340/1.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/2.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/3.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/4.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/5.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/6.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/7.jpg",
+      "/products/mb-pdp/g-rl9062-127a340/8.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 195.0,
+    "sku": "G_RL9062_127A340",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-rl9062-127a340-sz-os",
+        "name": "Black & Cognac Bio Based Scotchgrain / OS",
+        "nameKo": "Black & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9062_127A340",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rl9062-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9062-127a340/1.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/2.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/3.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/4.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/5.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/6.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/7.jpg",
+          "/products/mb-pdp/g-rl9062-127a340/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      },
+      {
+        "id": "mb-g-rl9062-127q330-sz-os",
+        "name": "Mole & Cognac Bio Based Scotchgrain / OS",
+        "nameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9062_127Q330",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-rl9062-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9062-127q330/1.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/2.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/3.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/4.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/5.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/6.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/7.jpg",
+          "/products/mb-pdp/g-rl9062-127q330/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-accessories"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Perfect for packing up your essential cosmetics, our uber-stylish Small Cosmetic Pouch is a must for travel. It features a functional zip closure with leather pull, a handy internal slip pocket, and classy Mulberry Tree fabric lining.",
+        "image": "/products/mb-pdp/g-rl9062-127a340/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A compact washbag, perfect for travel. Brass hardware finish Zip closure with leather zip pull One internal slip pocket Blind embossed Mulberry signature Mulberry Tree lining Height 13.3cm Width 19.5cm Depth 5.5cm Material Bio Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is RL9062-127A340",
+        "image": "/products/mb-pdp/g-rl9062-127a340/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "13.3cm · 19.5cm · 5.5cm",
+        "image": "/products/mb-pdp/g-rl9062-127a340/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "13.3cm · 19.5cm · 5.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "2가지"
+      }
+    ],
+    "featuresKo": [
+      "A compact washbag, perfect for travel. Brass hardware finish Zip closure with leather zip pull One internal slip pocket Blind embossed Mulberry signature Mulberry Tree lining Height 13.3cm Width 19.5cm Depth 5.5cm Material Bio Based Scotchgrain This product features a heritage Mulberry material, Scotchgrain, which is durable, lightweight, made from recombined bio-based and recycled materials, and embossed with a distinctive pebble grain finish. The product is trimmed with a calf leather that has a very fine grain and a soft silky touch. This product's code is RL9062-127A340",
+      "13.3cm",
+      "19.5cm",
+      "5.5cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T18:41:03.661247+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -3955,7 +4632,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.652488+00:00"
+    "updatedAt": "2026-09-11T18:41:03.663861+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -4186,7 +4863,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.657789+00:00"
+    "updatedAt": "2026-09-11T18:41:03.669107+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -4326,7 +5003,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.659431+00:00"
+    "updatedAt": "2026-09-11T18:41:03.670722+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -4470,7 +5147,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.662124+00:00"
+    "updatedAt": "2026-09-11T18:41:03.672357+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -4761,7 +5438,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.664502+00:00"
+    "updatedAt": "2026-09-11T18:41:03.674587+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -5109,7 +5786,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.668274+00:00"
+    "updatedAt": "2026-09-11T18:41:03.678308+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -5340,7 +6017,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.670811+00:00"
+    "updatedAt": "2026-09-11T18:41:03.680807+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -5483,6 +6160,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T18:35:34.672423+00:00"
+    "updatedAt": "2026-09-11T18:41:03.682391+00:00"
   }
 ]
