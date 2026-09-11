@@ -502,7 +502,7 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
                 "image": image,
                 "images": images,
                 "sourceUrl": row.get("url") or "",
-                "inStock": bool(row.get("availability", True)),
+                "inStock": row_in_stock(row),
                 "colorKey": color_key,
                 "colorNameKo": color_name_ko,
                 "size": size,
@@ -579,7 +579,7 @@ def local_ce_images(sku_or_id: str) -> list[str]:
 
 
 def heal_raw_row(row: dict) -> dict:
-    """Repair Access Denied poison + missing images before catalog build."""
+    """Repair Access Denied poison, missing images, and false sold-out flags."""
     row = dict(row)
     title = (row.get("title") or "").strip()
     sku = str(row.get("sku") or row.get("id") or "").strip()
@@ -592,7 +592,46 @@ def heal_raw_row(row: dict) -> dict:
     if not images:
         images = local_ce_images(sku) or local_ce_images(str(row.get("id") or ""))
     row["images"] = images
+
+    # Legacy scrapes used only `AVAILABLE NOW` body text → mass false sold-outs.
+    # Fully scraped PDPs (images + details/sizes) with availability False and no
+    # confident OOS signal should be treated as in stock.
+    conf = str(row.get("availabilityConfidence") or "")
+    if row.get("scrapeBlocked") or is_blocked_pdp_title(title):
+        row["availability"] = None
+        row["availabilityConfidence"] = "blocked"
+    elif row.get("availability") is False and conf not in {
+        "sold_out",
+        "schema_oos",
+        "sfcc_oos",
+    }:
+        blob = " ".join(
+            [
+                title,
+                str(row.get("url") or ""),
+                " ".join(str(d.get("body") or "") for d in (row.get("details") or []) if isinstance(d, dict)),
+            ]
+        )
+        if re.search(r"\bsold[\s-]?out\b|\bout of stock\b|\bnotify me\b", blob, re.I):
+            row["availabilityConfidence"] = "sold_out"
+        elif images and (row.get("details") or row.get("sizes")):
+            row["availability"] = True
+            row["availabilityConfidence"] = "healed_full_pdp"
+        elif images:
+            # Listed with photos but weak availability scrape — stay available.
+            row["availability"] = True
+            row["availabilityConfidence"] = "healed_listed"
+        else:
+            row["availability"] = None
+            row["availabilityConfidence"] = "unknown"
     return row
+
+
+def row_in_stock(row: dict) -> bool:
+    """Missing/None availability ⇒ in stock (do not coerce None→False)."""
+    if "availability" not in row or row.get("availability") is None:
+        return True
+    return bool(row.get("availability"))
 
 
 def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
@@ -654,7 +693,7 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
         "gbpPrice": gbp,
         "sku": sku,
         "sourceUrl": row.get("url") or "",
-        "inStock": bool(row.get("availability", True)),
+        "inStock": row_in_stock(row),
         "variants": variants,
         "storySections": build_story(description_ko, images, features),
         "techSpecs": tech_specs,

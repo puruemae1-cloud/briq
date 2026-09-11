@@ -27,6 +27,10 @@ for fam in "${FAMILIES[@]}"; do
   python3 scripts/scrape-celine-family.py --family "$fam"
 done
 
+# Heal any legacy AVAILABLE-NOW-only false sold-outs, then refresh from SFCC.
+python3 scripts/repair-ce-availability.py
+python3 scripts/refresh-ce-stock-sfcc.py || true
+
 python3 scripts/build-ce-catalog.py
 
 # Keep CDN placeholder present so sold-out / incomplete rows never 404.

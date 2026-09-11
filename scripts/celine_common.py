@@ -15,6 +15,10 @@ UA = (
     "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
 )
 BASE = "https://www.celine.com"
+SFCC_VARIATION = (
+    "https://www.celine.com/on/demandware.store/"
+    "Sites-CELINE_GB-Site/en_GB/Product-Variation"
+)
 
 
 def slugify(text: str, *, max_len: int = 80) -> str:
@@ -267,6 +271,93 @@ def paginated_plp_urls(url: str, *, pages: int = 6, page_size: int = 24) -> list
     return uniq
 
 
+def fetch_sfcc_availability(pid: str) -> dict | None:
+    """Official GB stock via SFCC Product-Variation (works when HTML WAF blocks).
+
+    Returns dict with availability bool, confidence, and selectable sizes — or None
+    when the endpoint fails.
+    """
+    sku = (pid or "").strip()
+    if not sku:
+        return None
+    url = f"{SFCC_VARIATION}?{urllib.parse.urlencode({'pid': sku})}"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": UA, "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=28) as resp:
+            data = json.loads(resp.read().decode("utf-8", "ignore"))
+    except Exception:
+        return None
+    prod = data.get("product") if isinstance(data, dict) else None
+    if not isinstance(prod, dict):
+        return None
+    avail_block = prod.get("availability") if isinstance(prod.get("availability"), dict) else {}
+    msgs = " ".join(str(m) for m in (avail_block.get("messages") or []))
+    selectable_sizes: list[str] = []
+    for va in prod.get("variationAttributes") or []:
+        if not isinstance(va, dict):
+            continue
+        attr = str(va.get("attributeId") or "").lower()
+        if attr not in {"size", "sizechart", "sizes"}:
+            continue
+        for val in va.get("values") or []:
+            if not isinstance(val, dict):
+                continue
+            label = str(val.get("displayValue") or val.get("value") or val.get("id") or "").strip()
+            if val.get("selectable") or val.get("inStock") is True:
+                if label:
+                    selectable_sizes.append(label)
+    explicit_oos = bool(
+        re.search(r"sold out|out of stock|not available", msgs, re.I)
+        or prod.get("available") is False
+        or prod.get("inStock") is False
+    )
+    explicit_in = bool(
+        prod.get("available") is True
+        or prod.get("inStock") is True
+        or selectable_sizes
+        or re.search(r"\bin stock\b|\bavailable\b", msgs, re.I)
+    )
+    if explicit_oos and not selectable_sizes:
+        return {
+            "availability": False,
+            "availabilityConfidence": "sfcc_oos",
+            "sizes": selectable_sizes,
+            "messages": msgs,
+        }
+    if explicit_in:
+        return {
+            "availability": True,
+            "availabilityConfidence": "sfcc",
+            "sizes": selectable_sizes,
+            "messages": msgs,
+        }
+    return {
+        "availability": None,
+        "availabilityConfidence": "sfcc_unknown",
+        "sizes": selectable_sizes,
+        "messages": msgs,
+    }
+
+
+def apply_sfcc_availability(row: dict) -> dict:
+    """Prefer SFCC stock over fragile HTML body-text heuristics."""
+    row = dict(row)
+    pid = str(row.get("sku") or row.get("id") or "").strip()
+    info = fetch_sfcc_availability(pid)
+    if not info:
+        return row
+    if info.get("availability") is not None:
+        row["availability"] = info["availability"]
+        row["availabilityConfidence"] = info.get("availabilityConfidence") or "sfcc"
+    # Fill missing sizes from selectable SFCC values when HTML scrape was empty.
+    if info.get("sizes") and not (row.get("sizes") or []):
+        row["sizes"] = list(info["sizes"])
+    return row
+
+
 def is_blocked_pdp_title(title: str | None) -> bool:
     """True when Akamai/WAF HTML was scraped instead of a real PDP."""
     t = (title or "").strip().lower()
@@ -370,13 +461,75 @@ def scrape_pdp(page, url: str) -> dict:
             .map((el) => (el.textContent || '').replace(/\\s+/g, ' ').trim())
             .filter((t) => /^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|[0-9]{2}(?:\\.[0-9])?)$/i.test(t));
           const sizeGuideBtn = document.querySelector('#main-size-guide');
+          const bodyText = (document.body?.innerText || '');
+          const soldOutRe = /sold out|out of stock|notify me when available|currently unavailable|no longer available/i;
+          const availableRe = /available now|in stock|add to (bag|cart|basket)|ajouter au panier/i;
+          const sizeBtns = Array.from(document.querySelectorAll(
+            '.m-selector__list button, .m-selector button, [data-attr="size"] button, button[data-attr-value]'
+          ));
+          const sizeStates = sizeBtns.map((b) => {
+            const t = (b.textContent || '').replace(/\\s+/g, ' ').trim();
+            const disabled = !!(
+              b.disabled ||
+              b.getAttribute('aria-disabled') === 'true' ||
+              /is-disabled|disabled|unavailable|sold-?out|oos/i.test(b.className || '')
+            );
+            return { t, disabled };
+          }).filter((x) => /^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|OS|U|[0-9]{2}(?:\\.[0-9])?)$/i.test(x.t));
+          const enabledSizes = sizeStates.filter((x) => !x.disabled);
+          const addBtn = document.querySelector(
+            'button[data-gtm-track-interaction-type="add to cart"], button.add-to-cart, .o-product__add-to-cart button, form[action*="Cart"] button, button[name="add"]'
+          );
+          const addEnabled = !!(addBtn && !addBtn.disabled && !/disabled|sold/i.test(addBtn.className || ''));
+          const addText = (addBtn?.textContent || '').replace(/\\s+/g, ' ').trim();
+          let schemaInStock = null;
+          for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+            try {
+              const raw = JSON.parse(s.textContent || 'null');
+              const stack = Array.isArray(raw) ? raw.slice() : [raw];
+              while (stack.length) {
+                const node = stack.pop();
+                if (!node || typeof node !== 'object') continue;
+                const avail = node.availability || node.itemAvailability;
+                if (typeof avail === 'string') {
+                  if (/InStock|LimitedAvailability|OnlineOnly/i.test(avail)) schemaInStock = true;
+                  if (/OutOfStock|SoldOut|Discontinued/i.test(avail)) schemaInStock = false;
+                }
+                for (const v of Object.values(node)) {
+                  if (v && typeof v === 'object') stack.push(v);
+                }
+              }
+            } catch (e) {}
+          }
+          const explicitSoldOut = soldOutRe.test(bodyText) || /notify me|sold out/i.test(addText);
+          const explicitAvailable =
+            availableRe.test(bodyText) ||
+            addEnabled ||
+            enabledSizes.length > 0 ||
+            schemaInStock === true;
+          let availability = null;
+          let availabilityConfidence = 'unknown';
+          if (explicitSoldOut && !enabledSizes.length && schemaInStock !== true) {
+            availability = false;
+            availabilityConfidence = 'sold_out';
+          } else if (schemaInStock === false && !enabledSizes.length && !addEnabled) {
+            availability = false;
+            availabilityConfidence = 'schema_oos';
+          } else if (explicitAvailable) {
+            availability = true;
+            availabilityConfidence = enabledSizes.length ? 'sizes' : (addEnabled ? 'add_to_bag' : 'copy');
+          } else if (schemaInStock === true) {
+            availability = true;
+            availabilityConfidence = 'schema';
+          }
           return {
             sku: document.documentElement.getAttribute('data-sku') || text('.product-id'),
             categoryLabel: document.documentElement.getAttribute('data-category') || '',
             title: text('h1'),
             priceText: text('.o-product__price, .a-price, [data-gtm-track-interaction-type="add to cart"]'),
             color: text('.m-selector__current-value, .o-product__current-color, .o-product__color-name'),
-            availability: document.body.innerText.includes('AVAILABLE NOW'),
+            availability,
+            availabilityConfidence,
             images: uniqImages,
             details,
             sizes: Array.from(new Set(sizes)),
@@ -485,8 +638,7 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
             sizes = pdp.get("sizes") or []
             if not sizes and size_guide.get("rows"):
                 sizes = [str(row[0]).strip() for row in size_guide["rows"] if row]
-            rows.append(
-                {
+            row = {
                     "id": sku or card["id"],
                     "sku": sku or card["id"],
                     "title": title,
@@ -503,13 +655,33 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
                     "sizeGuide": size_guide,
                     "images": local_images,
                     "remoteImages": remote_images,
-                    # Don't mark WAF failures as sold-out — availability unknown.
-                    "availability": False if blocked else bool(pdp.get("availability")),
+                    # WAF / unknown → None (never force sold-out). Only False when
+                    # the PDP scrape returned an explicit out-of-stock signal.
+                    "availability": (
+                        None
+                        if blocked
+                        else (
+                            None
+                            if pdp.get("availability") is None
+                            else bool(pdp.get("availability"))
+                        )
+                    ),
+                    "availabilityConfidence": (
+                        "blocked"
+                        if blocked
+                        else (pdp.get("availabilityConfidence") or "unknown")
+                    ),
                     "scrapeBlocked": bool(blocked),
                     "breadcrumb": pdp.get("breadcrumb") or [],
                     "categoryLabel": pdp.get("categoryLabel") or "",
                 }
-            )
+            # Prefer official SFCC stock (reliable even when HTML WAF interferes).
+            try:
+                row = apply_sfcc_availability(row)
+                time.sleep(0.12)
+            except Exception:
+                pass
+            rows.append(row)
         return rows
 
     return with_browser(run, headed=headed)

@@ -59,7 +59,7 @@
         "https://image.celine.com/asset/00194210-fdc1-4fbc-b59f-b85c8f59fc5e/B101H6BRA-36SI_2_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/3322cfcf-2f0e-453b-a222-10d3f289b15b/B101H6BRA-36SI_3_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -67,7 +67,8 @@
         "EARRINGS",
         "Knot Hoops in Brass with Rhodium finish"
       ],
-      "categoryLabel": "EARRINGS"
+      "categoryLabel": "EARRINGS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10GB4W80.36SI",
@@ -111,7 +112,7 @@
         "https://image.celine.com/asset/5aaf1516-bcda-45ba-b3ce-0c7f85320910/B10GB4W80-36SI_2_FALL26_M_V2.jpg?V2",
         "https://image.celine.com/asset/6679b6eb-5c8a-4035-8c6a-05936a728922/B10GB4W80-36SI_3_FALL26_M_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -119,7 +120,8 @@
         "EARRINGS",
         "CELINE CHARMS HORN EARRING IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "EARRINGS"
+      "categoryLabel": "EARRINGS",
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10GC3P08.36BL",
@@ -163,7 +165,7 @@
         "https://image.celine.com/asset/ddd15d68-9e48-426b-a7d2-0f2730a18b7a/B10GC3P08-36BL_2_FALL26_M_V2.jpg?V2",
         "https://image.celine.com/asset/3f6b721d-d70c-420c-8446-8665ac9182c4/B10GC3P08-36BL_3_FALL26_M_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -171,7 +173,8 @@
         "EARRINGS",
         "CELINE CHARMS PENDULUM EARRING IN ONYX AND BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "EARRINGS"
+      "categoryLabel": "EARRINGS",
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B102Y6BRA.36SI",
@@ -249,7 +252,7 @@
         "https://image.celine.com/asset/852187a8-0d4d-4750-aa27-e84bf958bc79/B102Y6BRA-36SI_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0444e9ca-5531-46d4-a454-5ec1eb97ecc3/B102Y6BRA-36SI_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -257,7 +260,8 @@
         "CHARMS",
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B102Y6BRA.35OR",
@@ -331,7 +335,7 @@
       "remoteImages": [
         "https://image.celine.com/asset/e737cec8-0612-4e56-a85d-22341a878605/B102Y6BRA-35OR_1_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -339,7 +343,8 @@
         "CHARMS",
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101K6BRA.36SI",
@@ -408,7 +413,7 @@
       "remoteImages": [
         "https://image.celine.com/asset/b05bb9f4-5b0f-4b78-af6a-25ce0c67dbb7/B101K6BRA-36SI_1_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -416,7 +421,8 @@
         "CHARMS",
         "CHARMS HERITAGE CHUNKY BRACELET IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B102X6BRA.35OR",
@@ -496,7 +502,7 @@
         "https://image.celine.com/asset/cef7d5dd-9924-44cc-a273-37a92016bcef/B102X6BRA-35OR_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/ffc9ac3c-b38d-4801-a85a-b5cf912f5d5c/B102X6BRA-35OR_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -504,7 +510,8 @@
         "CHARMS",
         "CHARMS MODERN CHUNKY GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10GM4W95.36SI",
@@ -548,7 +555,7 @@
         "https://image.celine.com/asset/c8eb8739-9517-40f2-b845-5d2abfd82488/B10GM4W95-36SI_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/5256b4ae-b16f-4203-ad65-2249f1520994/B10GM4W95-36SI_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -556,7 +563,8 @@
         "BRACELETS & RINGS",
         "TRIOMPHE TAG BRACELET IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "460UR6BRA.36SI",
@@ -587,7 +595,9 @@
           "html": "\n                <div class=\"m-accordion__panel-wrapper f-body\">\n                    <div class=\"a-text f-body\">\n                        CELINE CREATED HIGH-END AND REFINED JEWELS WITH TIMELESS MATERIALS. TO CLEAN YOUR JEWEL, WE ADVISE TO USE A SOFT CLOTH. WHEN NOT WORN, ALL JEWELS<br>SHOULD BE PROTECTED IN THE CELINE POUCH TO PREVENT IMPACTS AND FRICTIONS. AVOID BENDING THE JEWELS ESPECIALLY RIGID BRACELETS TO PREVENT OXIDATION. PIECES WITH SPRING FUNCTIONALITY MUST NOT GET IN CONTACT WITH SEA WATER OR AGGRESSIVE CHEMICAL SUBSTANCES. ALL OUR JEWELS ARE NICKEL FREE AND HYPOALLERGENIC.\n                    </div>\n                </div>\n            "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "S"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -600,7 +610,7 @@
         "https://image.celine.com/asset/dc37f197-6a9d-46d4-b4f3-b92f253744fe/460UR6BRA-36SI_2_FW23_M.jpg?V2",
         "https://image.celine.com/asset/eb23852c-1401-4a38-a93e-f919285a4900/460UR6BRA-36SI_3_FW23_M.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -608,7 +618,8 @@
         "BRACELETS & RINGS",
         "Triomphe Small Gourmette Necklace in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461OK6BRA.36SI",
@@ -676,7 +687,7 @@
         "https://image.celine.com/asset/1d349e0f-2baf-4209-8357-d3e3acbe9788/461OK6BRA-36SI_2_FALL25_M.tif?V2",
         "https://image.celine.com/asset/0beef811-922e-4377-b599-4fde27c43836/461OK6BRA-36SI_3_FALL25_M.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -684,7 +695,8 @@
         "BRACELETS & RINGS",
         "Triomphe Small Octagon Bracelet in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "460PX6BRA.36SI",
@@ -752,7 +764,7 @@
         "https://image.celine.com/asset/753a1385-ef5c-41df-98a5-3eecd7a28ead/460PX6BRA-36SI_2_FW23_M.jpg?V2",
         "https://image.celine.com/asset/bc50c12b-f563-4251-b879-d9bf436f717c/460PX6BRA-36SI_3_FW23_M.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -760,7 +772,8 @@
         "BRACELETS & RINGS",
         "Triomphe Small Gourmette Bracelet in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461OQ6BRA.36SI",
@@ -830,7 +843,7 @@
         "https://image.celine.com/asset/395bfdb5-fc76-4a93-9c5b-ff5983b16082/461OQ6BRA-36SI_3_FALL25_M.tif?V2",
         "https://image.celine.com/asset/7c2f2cf3-15a3-4f83-95d1-90a847664801/461OQ6BRA-36SI_4_FALL25_M.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -838,7 +851,8 @@
         "BRACELETS & RINGS",
         "Knot Cord Patterned Cuff in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461OP6BRA.36SI",
@@ -908,7 +922,7 @@
         "https://image.celine.com/asset/156440f6-1197-4422-9873-4b62a08b8da2/461OP6BRA-36SI_3_FALL25_M.tif?V2",
         "https://image.celine.com/asset/01396a8b-b03f-4c41-83f5-35d035f22f37/461OP6BRA-36SI_4_FALL25_M.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -916,7 +930,8 @@
         "BRACELETS & RINGS",
         "Knot Cuff in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "BRACELETS"
+      "categoryLabel": "BRACELETS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101Y6BRA.36SI",
@@ -965,7 +980,7 @@
         "https://image.celine.com/asset/0096c81a-71fa-426c-aa13-6506138cb76b/B101Y6BRA-36SI_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/6b55e1ed-1a0d-4874-80e6-322c08df3a3a/B101Y6BRA-36SI_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -973,7 +988,8 @@
         "CHARMS",
         "CHARMS NECKLACE IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101Y6BRA.35OR",
@@ -1026,7 +1042,7 @@
         "https://image.celine.com/asset/4c844d31-808b-4f10-8d12-6d784b7dc25e/B101Y6BRA-35OR_4_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/146c1fc4-664a-48ca-8043-d270f3efb47e/B101Y6BRA-35OR_5_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1034,7 +1050,8 @@
         "CHARMS",
         "CHARMS NECKLACE IN BRASS WITH GOLD FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10DB4L93.GMF4",
@@ -1078,7 +1095,7 @@
         "https://image.celine.com/asset/c9336424-26a2-4521-97f0-03c5bbfd7367/B10DB4L93-GMF4_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/fd9daf10-acf8-4743-b662-3a1cc375768b/B10DB4L93-GMF4_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1086,7 +1103,8 @@
         "NECKLACES",
         "CELINE POUCH NECKLACE IN LAMBSKIN AND BRASS WITH GOLD FINISH"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101Z6BSL.01GS",
@@ -1135,7 +1153,7 @@
         "https://image.celine.com/asset/0d5d49da-487c-42cb-8da3-ad5d3a2cf5f7/B101Z6BSL-01GS_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8b43c91d-85a0-44ff-a48e-616aad166ee0/B101Z6BSL-01GS_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1143,7 +1161,8 @@
         "CHARMS",
         "CHARMS LONG NECKLACE IN BRASS WITH GOLD AND RHODIUM FINSIH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10G74W71.35OV",
@@ -1187,7 +1206,7 @@
         "https://image.celine.com/asset/faf23251-dbb6-426c-8f2d-8f754997daad/B10G74W71-35OV_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/aaf341b3-b50b-4ee6-a39e-445792c17c75/B10G74W71-35OV_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1195,7 +1214,8 @@
         "NECKLACES",
         "CELINE BOLT NECKLACE IN ENAMEL, STRASS AND BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10GA4W79.GKS6",
@@ -1239,7 +1259,7 @@
         "https://image.celine.com/asset/03af6ab8-8094-420f-a197-f21dc62a89ba/B10GA4W79-GKS6_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/f32c0d37-0fe1-41a8-aaa2-d743ab8212bc/B10GA4W79-GKS6_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1247,7 +1267,8 @@
         "NECKLACES",
         "ÉTÉ CELINE TRIOMPHE NECKLACE IN ONYX, HOWLITE AND BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10GK4W92.36BL",
@@ -1294,7 +1315,7 @@
         "https://image.celine.com/asset/a50dd464-4368-4ede-b555-bda0362c0ef3/B10GK4W92-36BL_1_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/f561067b-e7b8-4437-be3d-8f5f76f35603/B10GK4W92-36BL_2_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1302,7 +1323,8 @@
         "CHARMS",
         "CELINE CHARMS TRIOMPHE NECKLACE IN COTTON AND BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "CHARMS"
+      "categoryLabel": "CHARMS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10GN4W96.36SI",
@@ -1346,7 +1368,7 @@
         "https://image.celine.com/asset/aa2c3e03-7c73-4113-ba29-a6d32b9efe45/B10GN4W96-36SI_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/e432fa01-a3f0-4298-8685-ee342f94b700/B10GN4W96-36SI_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1354,7 +1376,8 @@
         "NECKLACES",
         "TRIOMPHE TAG NECKLACE IN BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461DV6ONB.38NS",
@@ -1385,7 +1408,9 @@
           "html": "\n                <div class=\"m-accordion__panel-wrapper f-body\">\n                    <div class=\"a-text f-body\">\n                        CELINE CREATED HIGH-END AND REFINED JEWELS WITH TIMELESS MATERIALS. TO CLEAN YOUR JEWEL, WE ADVISE TO USE A SOFT CLOTH. WHEN NOT WORN, ALL JEWELS<br>SHOULD BE PROTECTED IN THE CELINE POUCH TO PREVENT IMPACTS AND FRICTIONS. AVOID BENDING THE JEWELS ESPECIALLY RIGID BRACELETS TO PREVENT OXIDATION. PIECES WITH SPRING FUNCTIONALITY MUST NOT GET IN CONTACT WITH SEA WATER OR AGGRESSIVE CHEMICAL SUBSTANCES. ALL OUR JEWELS ARE NICKEL FREE AND HYPOALLERGENIC.\n                    </div>\n                </div>\n            "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -1398,7 +1423,7 @@
         "https://image.celine.com/asset/217b6697-1c3d-4c3e-9fcf-d78ccad2bff9/461DV6ONB-38NS_2_FW24_P1_M.jpg?V2",
         "https://image.celine.com/asset/e597b457-0a03-4a3f-bc56-2be46ad65a7f/461DV6ONB-38NS_3_FW24_P1_M.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1406,7 +1431,8 @@
         "NECKLACES",
         "Celine Monochroms Beads Necklace in Onyx and Brass with Rhodium Finish"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461OL6BRA.36SI",
@@ -1437,7 +1463,9 @@
           "html": "\n                <div class=\"m-accordion__panel-wrapper f-body\">\n                    <div class=\"a-text f-body\">\n                        CELINE CREATED HIGH-END AND REFINED JEWELS WITH TIMELESS MATERIALS. TO CLEAN YOUR JEWEL, WE ADVISE TO USE A SOFT CLOTH. WHEN NOT WORN, ALL JEWELS<br>SHOULD BE PROTECTED IN THE CELINE POUCH TO PREVENT IMPACTS AND FRICTIONS. AVOID BENDING THE JEWELS ESPECIALLY RIGID BRACELETS TO PREVENT OXIDATION. PIECES WITH SPRING FUNCTIONALITY MUST NOT GET IN CONTACT WITH SEA WATER OR AGGRESSIVE CHEMICAL SUBSTANCES. ALL OUR JEWELS ARE NICKEL FREE AND HYPOALLERGENIC.\n                    </div>\n                </div>\n            "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -1450,7 +1478,7 @@
         "https://image.celine.com/asset/940333ee-6c32-4d31-8d4a-34d264dd5b26/461OL6BRA-36SI_2_FALL25_M.tif?V2",
         "https://image.celine.com/asset/90c6b63e-5017-4139-98f5-340d109a0980/461OL6BRA-36SI_3_FALL25_M.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1458,7 +1486,8 @@
         "NECKLACES",
         "Triomphe Small Octagon Necklace in Brass with Rhodium Finish"
       ],
-      "categoryLabel": "NECKLACES"
+      "categoryLabel": "NECKLACES",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101W6BRA.36SI",
@@ -1640,7 +1669,7 @@
         "https://image.celine.com/asset/aecce99c-691c-4b71-9c5b-d6e794e1f13c/B101W6BRA-36SI_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/533cfcb0-deff-4ffe-b274-64f08507e0b7/B101W6BRA-36SI_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1648,7 +1677,8 @@
         "RINGS",
         "Triomphe Square Signet Ring IN Brass with Rhodium Finish"
       ],
-      "categoryLabel": "RINGS"
+      "categoryLabel": "RINGS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10G54W68.GLQ5",
@@ -1828,7 +1858,7 @@
         "https://image.celine.com/asset/c809aad0-8be6-405c-aa1f-bcfd782279b8/B10G54W68-GLQ5_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9368690f-2d52-4f43-92e2-cb92e1f01ff8/B10G54W68-GLQ5_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1836,7 +1866,8 @@
         "RINGS",
         "CELINE BOLT RINGS IN ENAMEL, STRASS AND BRASS WITH RHODIUM FINISH"
       ],
-      "categoryLabel": "RINGS"
+      "categoryLabel": "RINGS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B101X2P55.36SB",
@@ -2020,7 +2051,7 @@
         "https://image.celine.com/asset/2e078115-40ec-49fc-b2fe-d75ceb1a49df/B101X2P55-36SB_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9785f248-680c-4eaa-bfe9-f7c1ca05c236/B101X2P55-36SB_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2028,7 +2059,8 @@
         "RINGS",
         "CELINE SULKY Signet Ring IN Enamel and Brass with Rhodium Finish"
       ],
-      "categoryLabel": "RINGS"
+      "categoryLabel": "RINGS",
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B107N3F86.GKM5",
@@ -2210,7 +2242,7 @@
         "https://image.celine.com/asset/a6cd6cc8-680d-4f29-ad70-3c1c211a9471/B107N3F86-GKM5_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/12b14a5a-8ed1-4657-afb0-caafbf48af0f/B107N3F86-GKM5_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2218,7 +2250,8 @@
         "RINGS",
         "Triomphe Signet Ring in Varnish and Brass with Rhodium Finish"
       ],
-      "categoryLabel": "RINGS"
+      "categoryLabel": "RINGS",
+      "availabilityConfidence": "sfcc_oos"
     }
   ]
 }

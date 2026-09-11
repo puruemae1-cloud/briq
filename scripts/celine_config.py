@@ -743,7 +743,28 @@ def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> l
                 row["title"] = prev["title"]
             if not row.get("title") and prev.get("title"):
                 row["title"] = prev["title"]
-            if row.get("availability") is None and prev.get("availability") is not None:
-                row["availability"] = prev.get("availability")
+            # Stock: never let unknown/blocked scrapes mark a product sold-out.
+            # Only overwrite previous availability when the new scrape is confident.
+            new_conf = str(row.get("availabilityConfidence") or "")
+            confident = new_conf in {
+                "sold_out",
+                "schema_oos",
+                "sfcc_oos",
+                "sizes",
+                "add_to_bag",
+                "copy",
+                "schema",
+                "available_now",
+                "sfcc",
+            }
+            if row.get("availability") is None or not confident:
+                if prev.get("availability") is not None:
+                    row["availability"] = prev.get("availability")
+                    if prev.get("availabilityConfidence"):
+                        row["availabilityConfidence"] = prev.get("availabilityConfidence")
+            # Extra guard: weak False must not clobber a previous True.
+            if row.get("availability") is False and prev.get("availability") is True and not confident:
+                row["availability"] = True
+                row["availabilityConfidence"] = prev.get("availabilityConfidence") or "preserved"
         by_id[row["id"]] = row
     return list(by_id.values())
