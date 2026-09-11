@@ -139,7 +139,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.342361+00:00"
+    "updatedAt": "2026-09-11T20:35:37.869902+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -281,7 +281,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.344507+00:00"
+    "updatedAt": "2026-09-11T20:35:37.872057+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -423,7 +423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.346977+00:00"
+    "updatedAt": "2026-09-11T20:35:37.873933+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -616,7 +616,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.349999+00:00"
+    "updatedAt": "2026-09-11T20:35:37.876635+00:00"
   },
   {
     "id": "mb-alfie-sunglasses",
@@ -760,7 +760,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.351605+00:00"
+    "updatedAt": "2026-09-11T20:35:37.878320+00:00"
   },
   {
     "id": "mb-antony",
@@ -1185,7 +1185,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.358934+00:00"
+    "updatedAt": "2026-09-11T20:35:37.883967+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -1193,9 +1193,10 @@
     "nameKo": "베이즈워터",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts-her",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
+      "mb-gifts",
       "mb-women-acc",
       "mb-gifts-her",
       "mulberry-bags",
@@ -1225,6 +1226,33 @@
     "sku": "G_HH6592_736J647",
     "sourceUrl": "https://www.mulberry.com/gb/shop/gifts/bayswater-pink-scrumpy-heavy-grain",
     "variants": [
+      {
+        "id": "mb-g-hh6592-736j647-sz-os",
+        "name": "Pink Scrumpy Heavy Grain / OS",
+        "nameKo": "Pink Scrumpy 헤비 그레인",
+        "sku": "G_HH6592_736J647",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh6592-736j647/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh6592-736j647/1.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/2.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/3.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/4.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/5.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/6.jpg",
+          "/products/mb-pdp/g-hh6592-736j647/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/gifts/bayswater-pink-scrumpy-heavy-grain",
+        "inStock": true,
+        "colorKey": "pink-scrumpy-heavy-grain",
+        "colorNameKo": "Pink Scrumpy 헤비 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
       {
         "id": "mb-g-hh6592-736j647-sz-os",
         "name": "Pink Scrumpy Heavy Grain / OS",
@@ -1524,7 +1552,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "10가지"
+        "valueKo": "11가지"
       }
     ],
     "featuresKo": [
@@ -1578,7 +1606,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.363524+00:00"
+    "updatedAt": "2026-09-11T20:35:37.888799+00:00"
   },
   {
     "id": "mb-bayswater-thin-bracelet",
@@ -1721,7 +1749,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.364156+00:00"
+    "updatedAt": "2026-09-11T20:35:37.890482+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1894,7 +1922,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.366565+00:00"
+    "updatedAt": "2026-09-11T20:35:37.892966+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -2035,7 +2063,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.368107+00:00"
+    "updatedAt": "2026-09-11T20:35:37.894835+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -2176,7 +2204,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.371852+00:00"
+    "updatedAt": "2026-09-11T20:35:37.898841+00:00"
   },
   {
     "id": "mb-carbon-lite-care-spray",
@@ -2311,7 +2339,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.374172+00:00"
+    "updatedAt": "2026-09-11T20:35:37.900924+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -2484,7 +2512,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.377061+00:00"
+    "updatedAt": "2026-09-11T20:35:37.904112+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2657,7 +2685,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.379417+00:00"
+    "updatedAt": "2026-09-11T20:35:37.906492+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -2985,7 +3013,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.383707+00:00"
+    "updatedAt": "2026-09-11T20:35:37.911312+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -3209,7 +3237,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.387351+00:00"
+    "updatedAt": "2026-09-11T20:35:37.914546+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -3440,7 +3468,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.391710+00:00"
+    "updatedAt": "2026-09-11T20:35:37.918901+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -3613,7 +3641,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.394317+00:00"
+    "updatedAt": "2026-09-11T20:35:37.921478+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -3757,7 +3785,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.396328+00:00"
+    "updatedAt": "2026-09-11T20:35:37.923296+00:00"
   },
   {
     "id": "mb-fantasy-mulberry-logo-stripe-towel",
@@ -3927,7 +3955,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.398249+00:00"
+    "updatedAt": "2026-09-11T20:35:37.925171+00:00"
   },
   {
     "id": "mb-folded-multi-card-wallet",
@@ -4157,7 +4185,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.402887+00:00"
+    "updatedAt": "2026-09-11T20:35:37.930273+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -4297,7 +4325,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.404308+00:00"
+    "updatedAt": "2026-09-11T20:35:37.931845+00:00"
   },
   {
     "id": "mb-gift-card",
@@ -4305,9 +4333,10 @@
     "nameKo": "Gift Card",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts-her",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
+      "mb-gifts",
       "mb-women-acc",
       "mb-gifts-her",
       "mb-men-acc",
@@ -4328,6 +4357,27 @@
     "sku": "AP26_DELTA_S",
     "sourceUrl": "https://www.mulberry.com/gb/shop/gift-cards",
     "variants": [
+      {
+        "id": "mb-ap26-delta-s-sz-os",
+        "name": "기본 / OS",
+        "nameKo": "기본",
+        "sku": "AP26_DELTA_S",
+        "gbpPrice": 50.0,
+        "price": 130000,
+        "image": "/products/mb-pdp/ap26-delta-s/1.jpg",
+        "images": [
+          "/products/mb-pdp/ap26-delta-s/1.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/gift-cards",
+        "inStock": true,
+        "colorKey": "item",
+        "colorNameKo": "기본",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
       {
         "id": "mb-ap26-delta-s-sz-os",
         "name": "기본 / OS",
@@ -4383,7 +4433,7 @@
     "techSpecs": [
       {
         "labelKo": "컬러웨이",
-        "valueKo": "2가지"
+        "valueKo": "3가지"
       }
     ],
     "featuresKo": [],
@@ -4431,7 +4481,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.404901+00:00"
+    "updatedAt": "2026-09-11T20:35:37.932506+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -4658,7 +4708,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.407355+00:00"
+    "updatedAt": "2026-09-11T20:35:37.935086+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -4895,7 +4945,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.410990+00:00"
+    "updatedAt": "2026-09-11T20:35:37.938776+00:00"
   },
   {
     "id": "mb-heritage-braided-belt",
@@ -5044,7 +5094,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.413463+00:00"
+    "updatedAt": "2026-09-11T20:35:37.940715+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -5415,7 +5465,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.419053+00:00"
+    "updatedAt": "2026-09-11T20:35:37.946635+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -5707,7 +5757,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.423691+00:00"
+    "updatedAt": "2026-09-11T20:35:37.950762+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -6116,7 +6166,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.430622+00:00"
+    "updatedAt": "2026-09-11T20:35:37.956885+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -6260,7 +6310,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.433399+00:00"
+    "updatedAt": "2026-09-11T20:35:37.959933+00:00"
   },
   {
     "id": "mb-heritage-sunglasses",
@@ -6434,7 +6484,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.437275+00:00"
+    "updatedAt": "2026-09-11T20:35:37.963965+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -6604,7 +6654,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.439335+00:00"
+    "updatedAt": "2026-09-11T20:35:37.966028+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -6777,7 +6827,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.441552+00:00"
+    "updatedAt": "2026-09-11T20:35:37.968241+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -6951,7 +7001,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.443833+00:00"
+    "updatedAt": "2026-09-11T20:35:37.970543+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -7263,7 +7313,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.448571+00:00"
+    "updatedAt": "2026-09-11T20:35:37.975051+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -7406,7 +7456,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.450444+00:00"
+    "updatedAt": "2026-09-11T20:35:37.977697+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -7747,7 +7797,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.454540+00:00"
+    "updatedAt": "2026-09-11T20:35:37.981930+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -7917,7 +7967,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.455915+00:00"
+    "updatedAt": "2026-09-11T20:35:37.983531+00:00"
   },
   {
     "id": "mb-lily",
@@ -8167,7 +8217,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.458717+00:00"
+    "updatedAt": "2026-09-11T20:35:37.986461+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -8399,7 +8449,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.460364+00:00"
+    "updatedAt": "2026-09-11T20:35:37.988149+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -8626,16 +8676,18 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.465291+00:00"
+    "updatedAt": "2026-09-11T20:35:37.992601+00:00"
   },
   {
     "id": "mb-mini-alexa",
     "name": "Mini Alexa",
     "nameKo": "미니 알렉사",
     "brand": "Mulberry",
-    "category": "bags",
-    "subcategory": "mb-women-clutches",
+    "category": "accessories",
+    "subcategory": "mulberry-bags",
     "mbCollections": [
+      "mulberry-accessories",
+      "mb-gifts",
       "mulberry-bags",
       "mb-women-bags",
       "mb-women-clutches"
@@ -8643,25 +8695,49 @@
     "tags": [
       "mulberry",
       "멀버리",
-      "bags"
+      "accessories"
     ],
     "descriptionKo": "미니 알렉사는 베이스워터 백과 엘킹턴 서류 가방이라는 두 가지 아이코닉 멀버리 스타일의 요소를 손쉽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클 및 스트랩 하드웨어로 완성된 절제된 멋진 사첼의 미니어처 버전이 탄생했습니다. 플레이트 처리된 가죽 상단 손잡이로 운반하거나 조절 가능한 크로스 바디 스트랩으로 착용하십시오. 디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계는 신중한 제어가 필요합니다: 과밀 캔 플랫",
-    "image": "/products/mb-pdp/g-rl6595-736f924/1.jpg",
+    "image": "/products/mb-pdp/g-rl8995-047j647/1.jpg",
     "images": [
-      "/products/mb-pdp/g-rl6595-736f924/1.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/2.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/3.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/4.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/5.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/6.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/7.jpg",
-      "/products/mb-pdp/g-rl6595-736f924/8.jpg"
+      "/products/mb-pdp/g-rl8995-047j647/1.jpg",
+      "/products/mb-pdp/g-rl8995-047j647/2.jpg",
+      "/products/mb-pdp/g-rl8995-047j647/3.jpg",
+      "/products/mb-pdp/g-rl8995-047j647/4.jpg",
+      "/products/mb-pdp/g-rl8995-047j647/5.jpg",
+      "/products/mb-pdp/g-rl8995-047j647/6.jpg"
     ],
     "accent": "#2c241e",
     "gbpPrice": 995.0,
-    "sku": "G_RL6595_736F924",
-    "sourceUrl": "https://www.mulberry.com/gb/shop/women/classics/mini-alexa-cashmere-taupe-heavy-grain",
+    "sku": "G_RL8995_047J647",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/mini-alexa-pink-scrumpy-suede",
     "variants": [
+      {
+        "id": "mb-g-rl8995-047j647-sz-os",
+        "name": "Pink Scrumpy Suede / OS",
+        "nameKo": "Pink Scrumpy 스웨이드",
+        "sku": "G_RL8995_047J647",
+        "gbpPrice": 995.0,
+        "price": 2520000,
+        "image": "/products/mb-pdp/g-rl8995-047j647/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl8995-047j647/1.jpg",
+          "/products/mb-pdp/g-rl8995-047j647/2.jpg",
+          "/products/mb-pdp/g-rl8995-047j647/3.jpg",
+          "/products/mb-pdp/g-rl8995-047j647/4.jpg",
+          "/products/mb-pdp/g-rl8995-047j647/5.jpg",
+          "/products/mb-pdp/g-rl8995-047j647/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/mini-alexa-pink-scrumpy-suede",
+        "inStock": true,
+        "colorKey": "pink-scrumpy-suede",
+        "colorNameKo": "Pink Scrumpy 스웨이드",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
       {
         "id": "mb-g-rl6595-736f924-sz-os",
         "name": "Cashmere Taupe Heavy Grain / OS",
@@ -8783,35 +8859,35 @@
       {
         "titleKo": "제품 소개",
         "bodyKo": "미니 알렉사는 베이스워터 백과 엘킹턴 서류 가방이라는 두 가지 아이코닉 멀버리 스타일의 요소를 손쉽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클 및 스트랩 하드웨어로 완성된 절제된 멋진 사첼의 미니어처 버전이 탄생했습니다. 플레이트 처리된 가죽 상단 손잡이로 운반하거나 조절 가능한 크로스 바디 스트랩으로 착용하십시오. 디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계는 신중한 제어가 필요합니다: 과밀 캔 플랫",
-        "image": "/products/mb-pdp/g-rl6595-736f924/1.jpg"
+        "image": "/products/mb-pdp/g-rl8995-047j647/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계에서는 세심한 관리가 필요합니다. 과도하게 밀링하면 엠보스를 평평하게 하고 대비를 줄일 수 있으며, 과소 밀링하면 투톤 효과가 완전히 나타나지 않습니다. 이 제품 코드: RL0217-787K569",
-        "image": "/products/mb-pdp/g-rl6595-736f924/2.jpg"
+        "image": "/products/mb-pdp/g-rl8995-047j647/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Adjustable and detachable 레더 strap · 17cm · 22cm · 10cm · 5cm · 104cm · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Details A mini version of the cult bag that epitomises laidback luxury. Brass hardware finish Postman’s Lock closure Handcrafted braided top handle Adjustable and detachable leather strap One main compartment One internal slip pocket Height 17cm Width 22cm Depth 10cm Handle Drop 5cm Shoulder Strap 104cm Weight 0.6kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is RL8924-731P705 · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · 디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계에서는 세심한 관리가 필요합니다. 과도하게 밀링하면 엠보스를 평평하게 하고 대비를 줄일 수 있으며, 과소 밀링하면 투톤 효과가 완전히 나타나지 않습니다. 이 제품 코드: RL0217-787K569",
-        "image": "/products/mb-pdp/g-rl6595-736f924/3.jpg"
+        "bodyKo": "Adjustable and detachable 레더 strap · 17cm · 22cm · 10cm · 5cm · 104cm · The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Details A mini version of the cult bag that epitomises laidback luxury. Brass hardware finish Postman’s Lock closure Handcrafted braided top handle Adjustable and detachable leather strap One main compartment One internal slip pocket Height 17cm Width 22cm Depth 10cm Handle Drop 5cm Shoulder Strap 104cm Weight 0.6kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is RL8924-731P705 · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · 디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계에서는 세심한 관리가 필요합니다. 과도하게 밀링하면 엠보스를 평평하게 하고 대비를 줄일 수 있으며, 과소 밀링하면 투톤 효과가 완전히 나타나지 않습니다. 이 제품 코드: RL0217-787K569",
+        "image": "/products/mb-pdp/g-rl8995-047j647/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Adjustable and detachable 레더 strap · 17cm · 22cm · 10cm · 5cm"
+        "valueKo": "Adjustable and detachable 레더 strap · 17cm · 22cm · 10cm · 5cm · 104cm"
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "4가지"
+        "valueKo": "5가지"
       }
     ],
     "featuresKo": [
       "디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계에서는 세심한 관리가 필요합니다. 과도하게 밀링하면 엠보스를 평평하게 하고 대비를 줄일 수 있으며, 과소 밀링하면 투톤 효과가 완전히 나타나지 않습니다. 이 제품 코드: RL0217-787K569",
-      "The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap.",
       "Adjustable and detachable 레더 strap",
       "17cm",
-      "22cm"
+      "22cm",
+      "10cm"
     ],
     "sizeChart": {
       "id": "mb-size",
@@ -8857,7 +8933,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.471381+00:00"
+    "updatedAt": "2026-09-11T20:35:37.998987+00:00"
   },
   {
     "id": "mb-mini-bayswater",
@@ -9001,7 +9077,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.471932+00:00"
+    "updatedAt": "2026-09-11T20:35:38.000481+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -9202,7 +9278,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.474229+00:00"
+    "updatedAt": "2026-09-11T20:35:38.002480+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -9346,7 +9422,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.476788+00:00"
+    "updatedAt": "2026-09-11T20:35:38.004900+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -9574,7 +9650,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.479275+00:00"
+    "updatedAt": "2026-09-11T20:35:38.007382+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -9775,7 +9851,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.482066+00:00"
+    "updatedAt": "2026-09-11T20:35:38.010291+00:00"
   },
   {
     "id": "mb-monty-sunglasses",
@@ -9977,7 +10053,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.484471+00:00"
+    "updatedAt": "2026-09-11T20:35:38.012827+00:00"
   },
   {
     "id": "mb-mulberry-leather-cream",
@@ -10102,7 +10178,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.486455+00:00"
+    "updatedAt": "2026-09-11T20:35:38.014807+00:00"
   },
   {
     "id": "mb-mulberry-leather-gel",
@@ -10227,7 +10303,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.488356+00:00"
+    "updatedAt": "2026-09-11T20:35:38.016961+00:00"
   },
   {
     "id": "mb-mulberry-leather-wax",
@@ -10352,7 +10428,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.492123+00:00"
+    "updatedAt": "2026-09-11T20:35:38.020571+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -10495,7 +10571,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.493698+00:00"
+    "updatedAt": "2026-09-11T20:35:38.022168+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap",
@@ -10626,7 +10702,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.495108+00:00"
+    "updatedAt": "2026-09-11T20:35:38.023585+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-denim",
@@ -10749,7 +10825,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.497033+00:00"
+    "updatedAt": "2026-09-11T20:35:38.025037+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-striped",
@@ -10900,7 +10976,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.498852+00:00"
+    "updatedAt": "2026-09-11T20:35:38.026915+00:00"
   },
   {
     "id": "mb-mulberry-tree-jacquard-towel",
@@ -11073,7 +11149,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.500726+00:00"
+    "updatedAt": "2026-09-11T20:35:38.028903+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -11265,7 +11341,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.503331+00:00"
+    "updatedAt": "2026-09-11T20:35:38.031398+00:00"
   },
   {
     "id": "mb-pen-pot",
@@ -11441,7 +11517,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.505154+00:00"
+    "updatedAt": "2026-09-11T20:35:38.033258+00:00"
   },
   {
     "id": "mb-photo-frame-large",
@@ -11618,7 +11694,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.506958+00:00"
+    "updatedAt": "2026-09-11T20:35:38.035063+00:00"
   },
   {
     "id": "mb-photo-frame-medium",
@@ -11795,7 +11871,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.508770+00:00"
+    "updatedAt": "2026-09-11T20:35:38.036888+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -11969,7 +12045,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.513355+00:00"
+    "updatedAt": "2026-09-11T20:35:38.040850+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -12348,7 +12424,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.518274+00:00"
+    "updatedAt": "2026-09-11T20:35:38.045832+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -12574,7 +12650,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.521122+00:00"
+    "updatedAt": "2026-09-11T20:35:38.048738+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -12713,7 +12789,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.523043+00:00"
+    "updatedAt": "2026-09-11T20:35:38.050787+00:00"
   },
   {
     "id": "mb-quinn-sunglasses",
@@ -12945,7 +13021,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.525768+00:00"
+    "updatedAt": "2026-09-11T20:35:38.053574+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -13166,7 +13242,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.528358+00:00"
+    "updatedAt": "2026-09-11T20:35:38.056135+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -13306,7 +13382,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.530325+00:00"
+    "updatedAt": "2026-09-11T20:35:38.057564+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -13537,7 +13613,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.533653+00:00"
+    "updatedAt": "2026-09-11T20:35:38.060539+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -13761,7 +13837,147 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.537203+00:00"
+    "updatedAt": "2026-09-11T20:35:38.063339+00:00"
+  },
+  {
+    "id": "mb-small-boston",
+    "name": "Small Boston",
+    "nameKo": "스몰 Boston",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-gifts",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-gifts"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "Inspired by the archival Mabel style, our sleek, chic Small Boston bag is ideal for ferrying your everyday essentials about town. Featuring modern, equestrian-inspired buckling, a zipped closure, and a Mulberry Tree medallion, make the Small Boston your go-to city bag.",
+    "image": "/products/mb-pdp/g-hh0020-736a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-hh0020-736a100/1.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/2.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/3.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/4.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/5.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/6.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/7.jpg",
+      "/products/mb-pdp/g-hh0020-736a100/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 1095.0,
+    "sku": "G_HH0020_736A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/gifts/small-boston-black-heavy-grain",
+    "variants": [
+      {
+        "id": "mb-g-hh0020-736a100-sz-os",
+        "name": "Black Heavy Grain / OS",
+        "nameKo": "Black 헤비 그레인",
+        "sku": "G_HH0020_736A100",
+        "gbpPrice": 1095.0,
+        "price": 2780000,
+        "image": "/products/mb-pdp/g-hh0020-736a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0020-736a100/1.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/2.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/3.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/4.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/5.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/6.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/7.jpg",
+          "/products/mb-pdp/g-hh0020-736a100/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/gifts/small-boston-black-heavy-grain",
+        "inStock": true,
+        "colorKey": "black-heavy-grain",
+        "colorNameKo": "Black 헤비 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "Inspired by the archival Mabel style, our sleek, chic Small Boston bag is ideal for ferrying your everyday essentials about town. Featuring modern, equestrian-inspired buckling, a zipped closure, and a Mulberry Tree medallion, make the Small Boston your go-to city bag.",
+        "image": "/products/mb-pdp/g-hh0020-736a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "A small boston bag designed for the everyday. Two adjustable leather top handles Brass hardware finish Zip closure Mulberry Tree medallion fob One internal slip pocket Foil embossed Mulberry signature Mulberry Tree cotton lining Four feet on base Height 15cm Width 24cm Depth 15cm Weight 0.7kg, approximately Material Heavy Grain A soft heavy bovine leather with a beautiful soft and supple hand feel. The surface will gradually become even softer with use adding to the beauty of the leather. This product's code is HH0020-736A100",
+        "image": "/products/mb-pdp/g-hh0020-736a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "15cm · 24cm",
+        "image": "/products/mb-pdp/g-hh0020-736a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "15cm · 24cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "A small boston bag designed for the everyday. Two adjustable leather top handles Brass hardware finish Zip closure Mulberry Tree medallion fob One internal slip pocket Foil embossed Mulberry signature Mulberry Tree cotton lining Four feet on base Height 15cm Width 24cm Depth 15cm Weight 0.7kg, approximately Material Heavy Grain A soft heavy bovine leather with a beautiful soft and supple hand feel. The surface will gradually become even softer with use adding to the beauty of the leather. This product's code is HH0020-736A100",
+      "15cm",
+      "24cm"
+    ],
+    "sizeChart": {
+      "id": "mb-size",
+      "titleKo": "사이즈 가이드",
+      "noteKo": "멀버리 공식 사이즈 가이드를 기준으로 합니다.",
+      "headers": [
+        "Region",
+        "Service",
+        "Price",
+        "Delivery Time",
+        "UK"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "Free",
+          "2-5 working days delivery"
+        ],
+        [
+          "Express",
+          "£6.95",
+          "1-2 working days delivery"
+        ],
+        [
+          "Same Day",
+          "£12",
+          "Order by 3pm"
+        ],
+        [
+          "Saturday Delivery",
+          "£12",
+          "Delivery on a Saturday"
+        ],
+        [
+          "Stationery",
+          "Free",
+          "4-7 working days"
+        ],
+        [
+          "Collect in store",
+          "Free",
+          "1-2 working days delivery. Next working day on selected orders."
+        ]
+      ]
+    },
+    "updatedAt": "2026-09-11T20:35:38.064105+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -13792,7 +14008,7 @@
       "/products/mb-pdp/g-rl9062-127a340/7.jpg",
       "/products/mb-pdp/g-rl9062-127a340/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 195.0,
     "sku": "G_RL9062_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/small-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
@@ -13933,7 +14149,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.539531+00:00"
+    "updatedAt": "2026-09-11T20:35:38.067620+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -13964,7 +14180,7 @@
       "/products/mb-pdp/g-rl5004-205a100/7.jpg",
       "/products/mb-pdp/g-rl5004-205a100/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 645.0,
     "sku": "G_RL5004_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/darley/small-darley-black-small-classic-grain",
@@ -14077,7 +14293,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.544839+00:00"
+    "updatedAt": "2026-09-11T20:35:38.070283+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -14108,7 +14324,7 @@
       "/products/mb-pdp/g-hh6267-000a100/7.jpg",
       "/products/mb-pdp/g-hh6267-000a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1195.0,
     "sku": "G_HH6267_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/small-iris-black-midnight-heavy-grain",
@@ -14308,7 +14524,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.551623+00:00"
+    "updatedAt": "2026-09-11T20:35:38.075564+00:00"
   },
   {
     "id": "mb-small-leather-tray",
@@ -14342,7 +14558,7 @@
       "/products/mb-pdp/g-th0024-493g924/7.jpg",
       "/products/mb-pdp/g-th0024-493g924/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 350.0,
     "sku": "G_TH0024_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/small-leather-tray-vintage-oak-nappa",
@@ -14484,7 +14700,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.553653+00:00"
+    "updatedAt": "2026-09-11T20:35:38.077542+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -14492,9 +14708,10 @@
     "nameKo": "스몰 록산느",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts-her",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
+      "mb-gifts",
       "mb-women-acc",
       "mb-gifts-her",
       "mulberry-bags",
@@ -14507,21 +14724,103 @@
       "accessories"
     ],
     "descriptionKo": "A small version of our Roxanne bag, itself a modern update on our 2003 style, the Small Roxanne takes all the Y2K attitude of the original and updates it, with brass buckling and streamlined details. Features two front pockets ideal for smaller items, as well as a detachable and adjustable strap for multiple ways of wearing.",
-    "image": "/products/mb-pdp/g-hh9977-748h687/1.jpg",
+    "image": "/products/mb-pdp/g-hh0099-205n663/1.jpg",
     "images": [
-      "/products/mb-pdp/g-hh9977-748h687/1.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/2.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/3.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/4.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/5.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/6.jpg",
-      "/products/mb-pdp/g-hh9977-748h687/7.jpg"
+      "/products/mb-pdp/g-hh0099-205n663/1.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/2.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/3.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/4.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/5.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/6.jpg",
+      "/products/mb-pdp/g-hh0099-205n663/7.jpg"
     ],
-    "accent": "#2c241e",
-    "gbpPrice": 1345.0,
+    "accent": "#3a322c",
+    "gbpPrice": 1295.0,
     "sku": "G_HH9977_748H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/small-roxanne-eggshell-high-shine-leather",
     "variants": [
+      {
+        "id": "mb-g-hh9977-748h687-sz-os",
+        "name": "Eggshell High Shine Leather / OS",
+        "nameKo": "Eggshell 하이 샤인 레더",
+        "sku": "G_HH9977_748H687",
+        "gbpPrice": 1345.0,
+        "price": 3410000,
+        "image": "/products/mb-pdp/g-hh9977-748h687/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9977-748h687/1.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/2.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/3.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/4.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/5.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/6.jpg",
+          "/products/mb-pdp/g-hh9977-748h687/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/small-roxanne-eggshell-high-shine-leather",
+        "inStock": true,
+        "colorKey": "eggshell-high-shine-leather",
+        "colorNameKo": "Eggshell 하이 샤인 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
+      {
+        "id": "mb-g-hh9977-748u939-sz-os",
+        "name": "Out of the Blue High Shine Leather / OS",
+        "nameKo": "Out of the Blue 하이 샤인 레더",
+        "sku": "G_HH9977_748U939",
+        "gbpPrice": 1345.0,
+        "price": 3410000,
+        "image": "/products/mb-pdp/g-hh9977-748u939/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh9977-748u939/1.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/2.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/3.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/4.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/5.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/6.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/7.jpg",
+          "/products/mb-pdp/g-hh9977-748u939/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/crossbody-bags/small-roxanne-out-of-the-blue-high-shine-leather",
+        "inStock": true,
+        "colorKey": "out-of-the-blue-high-shine-leather",
+        "colorNameKo": "Out of the Blue 하이 샤인 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
+      {
+        "id": "mb-g-hh0099-205n663-sz-os",
+        "name": "Coral Orange Small Classic Grain / OS",
+        "nameKo": "Coral Orange 스몰 클래식 그레인",
+        "sku": "G_HH0099_205N663",
+        "gbpPrice": 1295.0,
+        "price": 3280000,
+        "image": "/products/mb-pdp/g-hh0099-205n663/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0099-205n663/1.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/2.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/3.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/4.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/5.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/6.jpg",
+          "/products/mb-pdp/g-hh0099-205n663/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/small-roxanne-coral-orange-small-classic-grain",
+        "inStock": true,
+        "colorKey": "coral-orange-small-classic-grain",
+        "colorNameKo": "Coral Orange 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
       {
         "id": "mb-g-hh9977-748h687-sz-os",
         "name": "Eggshell High Shine Leather / OS",
@@ -14611,17 +14910,17 @@
       {
         "titleKo": "제품 소개",
         "bodyKo": "A small version of our Roxanne bag, itself a modern update on our 2003 style, the Small Roxanne takes all the Y2K attitude of the original and updates it, with brass buckling and streamlined details. Features two front pockets ideal for smaller items, as well as a detachable and adjustable strap for multiple ways of wearing.",
-        "image": "/products/mb-pdp/g-hh9977-748h687/1.jpg"
+        "image": "/products/mb-pdp/g-hh0099-205n663/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "A Small version of our Y2K-inspired Roxanne style. Brass hardware finish Detachable and adjustable strap Two top handles Two external front pockets with magnetic closure One internal slip pocket Buckle detailing Foil embossed Mulberry signature Mulberry Tree lining Height 13.5cm - 17cm Width 24cm - 28cm Depth 6cm - 10cm Handle Drop 12cm Strap Length 69cm - 84cm Strap Drop (from middle hole) 50cm Weight 0.8kg, approximately Material Suede A bovine suede which has been finished with a clear resin backing to give a smooth, contrasted appearance and improve functionality. This backing reduces colour and fibre transfer and allows for gentle cleaning of the material. This product's code is HH0389-047V699",
-        "image": "/products/mb-pdp/g-hh9977-748h687/2.jpg"
+        "image": "/products/mb-pdp/g-hh0099-205n663/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
         "bodyKo": "Detachable and adjustable strap · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm · 50cm",
-        "image": "/products/mb-pdp/g-hh9977-748h687/3.jpg"
+        "image": "/products/mb-pdp/g-hh0099-205n663/3.jpg"
       }
     ],
     "techSpecs": [
@@ -14631,7 +14930,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "3가지"
+        "valueKo": "6가지"
       }
     ],
     "featuresKo": [
@@ -14685,7 +14984,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.556296+00:00"
+    "updatedAt": "2026-09-11T20:35:38.080839+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -14716,7 +15015,7 @@
       "/products/mb-pdp/g-hh0017-127a340/7.jpg",
       "/products/mb-pdp/g-hh0017-127a340/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 795.0,
     "sku": "G_HH0017_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-scotchgrain-bucket-black-cognac-bio-based-scotchgrain",
@@ -14829,7 +15128,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.558281+00:00"
+    "updatedAt": "2026-09-11T20:35:38.082564+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -14862,7 +15161,7 @@
       "/products/mb-pdp/g-hh0199-771a100/7.jpg",
       "/products/mb-pdp/g-hh0199-771a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 1295.0,
     "sku": "G_HH0199_771A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-stevie-top-handle-black-supple-smooth-leather",
@@ -15120,7 +15419,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.560693+00:00"
+    "updatedAt": "2026-09-11T20:35:38.085512+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -15152,7 +15451,7 @@
       "/products/mb-pdp/g-hh0230-047d117/7.jpg",
       "/products/mb-pdp/g-hh0230-047d117/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 1595.0,
     "sku": "G_HH0230_047D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/stevie-top-handle-foggy-grey-suede",
@@ -15468,7 +15767,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.564964+00:00"
+    "updatedAt": "2026-09-11T20:35:38.089536+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -15499,7 +15798,7 @@
       "/products/mb-pdp/g-hh9870-047q633/7.jpg",
       "/products/mb-pdp/g-hh9870-047q633/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH9870_047P705",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/suede-tree-tote-salcombe-sand-suede",
@@ -15699,7 +15998,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.567515+00:00"
+    "updatedAt": "2026-09-11T20:35:38.092131+00:00"
   },
   {
     "id": "mb-throw-blanket",
@@ -15732,7 +16031,7 @@
       "/products/mb-pdp/g-th0033-000q130/6.jpg",
       "/products/mb-pdp/g-th0033-000q130/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 395.0,
     "sku": "G_TH0033_000Q130",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/throw-blanket-heritage-check-wool",
@@ -15872,7 +16171,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.569316+00:00"
+    "updatedAt": "2026-09-11T20:35:38.094067+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -15907,7 +16206,7 @@
       "/products/mb-pdp/g-hh0140-736a100/7.jpg",
       "/products/mb-pdp/g-hh0140-736a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 645.0,
     "sku": "G_HH0140_736A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/tree-tote-black-heavy-grain",
@@ -16135,7 +16434,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.572225+00:00"
+    "updatedAt": "2026-09-11T20:35:38.099518+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -16143,9 +16442,10 @@
     "nameKo": "Tree 토트 - Raffia",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts-her",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
+      "mb-gifts",
       "mb-women-acc",
       "mb-gifts-her",
       "mulberry-bags",
@@ -16169,11 +16469,37 @@
       "/products/mb-pdp/g-hh0135-000h709/5.jpg",
       "/products/mb-pdp/g-hh0135-000h709/6.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#2c241e",
     "gbpPrice": 595.0,
     "sku": "G_HH0135_000H709",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
     "variants": [
+      {
+        "id": "mb-g-hh0135-000h709-sz-os",
+        "name": "Ecru & Bright Oak Raffia & Leather Trim / OS",
+        "nameKo": "Ecru & Bright Oak Raffia & 레더 Trim",
+        "sku": "G_HH0135_000H709",
+        "gbpPrice": 595.0,
+        "price": 1510000,
+        "image": "/products/mb-pdp/g-hh0135-000h709/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hh0135-000h709/1.jpg",
+          "/products/mb-pdp/g-hh0135-000h709/2.jpg",
+          "/products/mb-pdp/g-hh0135-000h709/3.jpg",
+          "/products/mb-pdp/g-hh0135-000h709/4.jpg",
+          "/products/mb-pdp/g-hh0135-000h709/5.jpg",
+          "/products/mb-pdp/g-hh0135-000h709/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/tree-tote-raffia-ecru-bright-oak-raffia-leather-trim",
+        "inStock": true,
+        "colorKey": "ecru-bright-oak-raffia-leather-trim",
+        "colorNameKo": "Ecru & Bright Oak Raffia & 레더 Trim",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-gifts"
+        ]
+      },
       {
         "id": "mb-g-hh0135-000h709-sz-os",
         "name": "Ecru & Bright Oak Raffia & Leather Trim / OS",
@@ -16280,7 +16606,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "3가지"
+        "valueKo": "4가지"
       }
     ],
     "featuresKo": [
@@ -16333,7 +16659,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.576363+00:00"
+    "updatedAt": "2026-09-11T20:35:38.102232+00:00"
   },
   {
     "id": "mb-wine-carrier",
@@ -16367,7 +16693,7 @@
       "/products/mb-pdp/g-tl0012-493g924/7.jpg",
       "/products/mb-pdp/g-tl0012-493g924/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 495.0,
     "sku": "G_TL0012_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/wine-carrier-vintage-oak-bovine-leather",
@@ -16510,6 +16836,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:30:18.578227+00:00"
+    "updatedAt": "2026-09-11T20:35:38.104101+00:00"
   }
 ]
