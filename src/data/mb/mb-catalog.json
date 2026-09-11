@@ -139,7 +139,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.674738+00:00"
+    "updatedAt": "2026-09-11T20:23:39.530489+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -281,7 +281,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.677443+00:00"
+    "updatedAt": "2026-09-11T20:23:39.533088+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -423,7 +423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.679342+00:00"
+    "updatedAt": "2026-09-11T20:23:39.535366+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -616,7 +616,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.682166+00:00"
+    "updatedAt": "2026-09-11T20:23:39.538584+00:00"
   },
   {
     "id": "mb-alfie-sunglasses",
@@ -760,7 +760,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.683743+00:00"
+    "updatedAt": "2026-09-11T20:23:39.540779+00:00"
   },
   {
     "id": "mb-antony",
@@ -1185,7 +1185,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.689391+00:00"
+    "updatedAt": "2026-09-11T20:23:39.548201+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -1547,7 +1547,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.693626+00:00"
+    "updatedAt": "2026-09-11T20:23:39.554539+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1720,7 +1720,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.696055+00:00"
+    "updatedAt": "2026-09-11T20:23:39.557547+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -1861,7 +1861,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.697914+00:00"
+    "updatedAt": "2026-09-11T20:23:39.559476+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -2002,7 +2002,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.699495+00:00"
+    "updatedAt": "2026-09-11T20:23:39.561419+00:00"
   },
   {
     "id": "mb-carbon-lite-care-spray",
@@ -2137,7 +2137,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.703345+00:00"
+    "updatedAt": "2026-09-11T20:23:39.567587+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -2310,7 +2310,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.705857+00:00"
+    "updatedAt": "2026-09-11T20:23:39.570732+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2483,7 +2483,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.707976+00:00"
+    "updatedAt": "2026-09-11T20:23:39.573264+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -2811,7 +2811,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.711560+00:00"
+    "updatedAt": "2026-09-11T20:23:39.580204+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -3035,7 +3035,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.714779+00:00"
+    "updatedAt": "2026-09-11T20:23:39.584960+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -3266,7 +3266,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.719202+00:00"
+    "updatedAt": "2026-09-11T20:23:39.591690+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -3439,7 +3439,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.721720+00:00"
+    "updatedAt": "2026-09-11T20:23:39.594964+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -3583,7 +3583,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.723581+00:00"
+    "updatedAt": "2026-09-11T20:23:39.597448+00:00"
   },
   {
     "id": "mb-fantasy-mulberry-logo-stripe-towel",
@@ -3596,7 +3596,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -3645,6 +3647,34 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-vy0013-063u910-sz-os",
+        "name": "Poplin Blue & White Cotton / OS",
+        "nameKo": "Poplin Blue & White Cotton",
+        "sku": "G_VY0013_063U910",
+        "gbpPrice": 295.0,
+        "price": 750000,
+        "image": "/products/mb-pdp/g-vy0013-063u910/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vy0013-063u910/1.jpg",
+          "/products/mb-pdp/g-vy0013-063u910/2.jpg",
+          "/products/mb-pdp/g-vy0013-063u910/3.jpg",
+          "/products/mb-pdp/g-vy0013-063u910/4.jpg",
+          "/products/mb-pdp/g-vy0013-063u910/5.jpg",
+          "/products/mb-pdp/g-vy0013-063u910/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/fantasy-mulberry-logo-stripe-towel-poplin-blue-white-cotton",
+        "inStock": true,
+        "colorKey": "poplin-blue-white-cotton",
+        "colorNameKo": "Poplin Blue & White Cotton",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -3671,7 +3701,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -3723,7 +3753,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.725101+00:00"
+    "updatedAt": "2026-09-11T20:23:39.599772+00:00"
   },
   {
     "id": "mb-folded-multi-card-wallet",
@@ -3953,7 +3983,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.726844+00:00"
+    "updatedAt": "2026-09-11T20:23:39.603367+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -4093,7 +4123,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.729942+00:00"
+    "updatedAt": "2026-09-11T20:23:39.607331+00:00"
   },
   {
     "id": "mb-gift-card",
@@ -4203,7 +4233,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.730674+00:00"
+    "updatedAt": "2026-09-11T20:23:39.608029+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -4430,7 +4460,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.733695+00:00"
+    "updatedAt": "2026-09-11T20:23:39.611584+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -4667,7 +4697,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.737337+00:00"
+    "updatedAt": "2026-09-11T20:23:39.616834+00:00"
   },
   {
     "id": "mb-heritage-braided-belt",
@@ -4816,7 +4846,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.739267+00:00"
+    "updatedAt": "2026-09-11T20:23:39.620400+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -5187,7 +5217,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.744539+00:00"
+    "updatedAt": "2026-09-11T20:23:39.629121+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -5479,7 +5509,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.748721+00:00"
+    "updatedAt": "2026-09-11T20:23:39.635426+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -5888,7 +5918,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.754922+00:00"
+    "updatedAt": "2026-09-11T20:23:39.643466+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -6032,7 +6062,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.758144+00:00"
+    "updatedAt": "2026-09-11T20:23:39.649177+00:00"
   },
   {
     "id": "mb-heritage-sunglasses",
@@ -6206,7 +6236,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.760505+00:00"
+    "updatedAt": "2026-09-11T20:23:39.652480+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -6376,7 +6406,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.764603+00:00"
+    "updatedAt": "2026-09-11T20:23:39.657159+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -6549,7 +6579,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.766925+00:00"
+    "updatedAt": "2026-09-11T20:23:39.659924+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -6723,7 +6753,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.769209+00:00"
+    "updatedAt": "2026-09-11T20:23:39.665194+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -7035,7 +7065,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.773970+00:00"
+    "updatedAt": "2026-09-11T20:23:39.673264+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -7178,7 +7208,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.776111+00:00"
+    "updatedAt": "2026-09-11T20:23:39.675615+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -7519,7 +7549,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.780605+00:00"
+    "updatedAt": "2026-09-11T20:23:39.681153+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -7689,7 +7719,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.782163+00:00"
+    "updatedAt": "2026-09-11T20:23:39.682893+00:00"
   },
   {
     "id": "mb-lily",
@@ -7909,7 +7939,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.784707+00:00"
+    "updatedAt": "2026-09-11T20:23:39.686120+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -8141,7 +8171,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.786371+00:00"
+    "updatedAt": "2026-09-11T20:23:39.688224+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -8368,7 +8398,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.789007+00:00"
+    "updatedAt": "2026-09-11T20:23:39.691458+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -8599,7 +8629,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.796272+00:00"
+    "updatedAt": "2026-09-11T20:23:39.702470+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -8800,7 +8830,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.798511+00:00"
+    "updatedAt": "2026-09-11T20:23:39.706120+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -8944,7 +8974,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.800937+00:00"
+    "updatedAt": "2026-09-11T20:23:39.709318+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -9172,7 +9202,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.803455+00:00"
+    "updatedAt": "2026-09-11T20:23:39.713397+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -9373,7 +9403,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.806745+00:00"
+    "updatedAt": "2026-09-11T20:23:39.717416+00:00"
   },
   {
     "id": "mb-monty-sunglasses",
@@ -9575,7 +9605,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.809216+00:00"
+    "updatedAt": "2026-09-11T20:23:39.720510+00:00"
   },
   {
     "id": "mb-mulberry-leather-cream",
@@ -9700,7 +9730,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.811238+00:00"
+    "updatedAt": "2026-09-11T20:23:39.723777+00:00"
   },
   {
     "id": "mb-mulberry-leather-gel",
@@ -9825,7 +9855,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.813152+00:00"
+    "updatedAt": "2026-09-11T20:23:39.727760+00:00"
   },
   {
     "id": "mb-mulberry-leather-wax",
@@ -9950,7 +9980,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.815256+00:00"
+    "updatedAt": "2026-09-11T20:23:39.732243+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -10093,7 +10123,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.816874+00:00"
+    "updatedAt": "2026-09-11T20:23:39.736074+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap",
@@ -10224,7 +10254,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.819916+00:00"
+    "updatedAt": "2026-09-11T20:23:39.740928+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-denim",
@@ -10347,7 +10377,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.821384+00:00"
+    "updatedAt": "2026-09-11T20:23:39.742731+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-striped",
@@ -10498,7 +10528,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.823166+00:00"
+    "updatedAt": "2026-09-11T20:23:39.746193+00:00"
   },
   {
     "id": "mb-mulberry-tree-jacquard-towel",
@@ -10511,7 +10541,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -10562,6 +10594,35 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-vy0007-944u889-sz-os",
+        "name": "Navy & Teak Cotton / OS",
+        "nameKo": "Navy & Teak Cotton",
+        "sku": "G_VY0007_944U889",
+        "gbpPrice": 195.0,
+        "price": 490000,
+        "image": "/products/mb-pdp/g-vy0007-944u889/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vy0007-944u889/1.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/2.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/3.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/4.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/5.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/6.jpg",
+          "/products/mb-pdp/g-vy0007-944u889/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/mulberry-tree-jacquard-towel-navy-teak-cotton",
+        "inStock": true,
+        "colorKey": "navy-teak-cotton",
+        "colorNameKo": "Navy & Teak Cotton",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -10588,7 +10649,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -10640,7 +10701,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.824742+00:00"
+    "updatedAt": "2026-09-11T20:23:39.749355+00:00"
   },
   {
     "id": "mb-passport-cover",
@@ -10832,7 +10893,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.827231+00:00"
+    "updatedAt": "2026-09-11T20:23:39.753474+00:00"
   },
   {
     "id": "mb-pen-pot",
@@ -10845,7 +10906,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -10898,6 +10961,36 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-th0023-493g924-sz-os",
+        "name": "Vintage Oak Nappa / OS",
+        "nameKo": "Vintage Oak 나파",
+        "sku": "G_TH0023_493G924",
+        "gbpPrice": 295.0,
+        "price": 750000,
+        "image": "/products/mb-pdp/g-th0023-493g924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-th0023-493g924/1.jpg",
+          "/products/mb-pdp/g-th0023-493g924/2.jpg",
+          "/products/mb-pdp/g-th0023-493g924/3.jpg",
+          "/products/mb-pdp/g-th0023-493g924/4.jpg",
+          "/products/mb-pdp/g-th0023-493g924/5.jpg",
+          "/products/mb-pdp/g-th0023-493g924/6.jpg",
+          "/products/mb-pdp/g-th0023-493g924/7.jpg",
+          "/products/mb-pdp/g-th0023-493g924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/pen-pot-vintage-oak-nappa",
+        "inStock": true,
+        "colorKey": "vintage-oak-nappa",
+        "colorNameKo": "Vintage Oak 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -10924,7 +11017,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -10976,7 +11069,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.828635+00:00"
+    "updatedAt": "2026-09-11T20:23:39.755813+00:00"
   },
   {
     "id": "mb-photo-frame-large",
@@ -10989,7 +11082,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -11042,6 +11137,36 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-th0025-000g924-sz-os",
+        "name": "Vintage Oak Nappa / OS",
+        "nameKo": "Vintage Oak 나파",
+        "sku": "G_TH0025_000G924",
+        "gbpPrice": 395.0,
+        "price": 1000000,
+        "image": "/products/mb-pdp/g-th0025-000g924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-th0025-000g924/1.jpg",
+          "/products/mb-pdp/g-th0025-000g924/2.jpg",
+          "/products/mb-pdp/g-th0025-000g924/3.jpg",
+          "/products/mb-pdp/g-th0025-000g924/4.jpg",
+          "/products/mb-pdp/g-th0025-000g924/5.jpg",
+          "/products/mb-pdp/g-th0025-000g924/6.jpg",
+          "/products/mb-pdp/g-th0025-000g924/7.jpg",
+          "/products/mb-pdp/g-th0025-000g924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-large-vintage-oak-nappa",
+        "inStock": true,
+        "colorKey": "vintage-oak-nappa",
+        "colorNameKo": "Vintage Oak 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -11068,7 +11193,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -11121,7 +11246,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.830142+00:00"
+    "updatedAt": "2026-09-11T20:23:39.759167+00:00"
   },
   {
     "id": "mb-photo-frame-medium",
@@ -11134,7 +11259,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -11187,6 +11314,36 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-th0026-000g924-sz-os",
+        "name": "Vintage Oak Nappa / OS",
+        "nameKo": "Vintage Oak 나파",
+        "sku": "G_TH0026_000G924",
+        "gbpPrice": 295.0,
+        "price": 750000,
+        "image": "/products/mb-pdp/g-th0026-000g924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-th0026-000g924/1.jpg",
+          "/products/mb-pdp/g-th0026-000g924/2.jpg",
+          "/products/mb-pdp/g-th0026-000g924/3.jpg",
+          "/products/mb-pdp/g-th0026-000g924/4.jpg",
+          "/products/mb-pdp/g-th0026-000g924/5.jpg",
+          "/products/mb-pdp/g-th0026-000g924/6.jpg",
+          "/products/mb-pdp/g-th0026-000g924/7.jpg",
+          "/products/mb-pdp/g-th0026-000g924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-medium-vintage-oak-nappa",
+        "inStock": true,
+        "colorKey": "vintage-oak-nappa",
+        "colorNameKo": "Vintage Oak 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -11213,7 +11370,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -11266,7 +11423,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.831843+00:00"
+    "updatedAt": "2026-09-11T20:23:39.762407+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -11440,7 +11597,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.834187+00:00"
+    "updatedAt": "2026-09-11T20:23:39.765586+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -11819,7 +11976,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.838800+00:00"
+    "updatedAt": "2026-09-11T20:23:39.771328+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -12045,7 +12202,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.843311+00:00"
+    "updatedAt": "2026-09-11T20:23:39.776693+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -12184,7 +12341,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.845221+00:00"
+    "updatedAt": "2026-09-11T20:23:39.780791+00:00"
   },
   {
     "id": "mb-quinn-sunglasses",
@@ -12416,7 +12573,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.848239+00:00"
+    "updatedAt": "2026-09-11T20:23:39.785193+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -12637,7 +12794,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.850795+00:00"
+    "updatedAt": "2026-09-11T20:23:39.789269+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -12777,7 +12934,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.852232+00:00"
+    "updatedAt": "2026-09-11T20:23:39.791061+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -13008,7 +13165,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.855205+00:00"
+    "updatedAt": "2026-09-11T20:23:39.797533+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -13232,7 +13389,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.858118+00:00"
+    "updatedAt": "2026-09-11T20:23:39.801963+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
@@ -13404,7 +13561,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.859788+00:00"
+    "updatedAt": "2026-09-11T20:23:39.804676+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -13548,7 +13705,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.862513+00:00"
+    "updatedAt": "2026-09-11T20:23:39.808549+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -13779,7 +13936,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.868234+00:00"
+    "updatedAt": "2026-09-11T20:23:39.815446+00:00"
   },
   {
     "id": "mb-small-leather-tray",
@@ -13792,7 +13949,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -13845,6 +14004,36 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-th0024-493g924-sz-os",
+        "name": "Vintage Oak Nappa / OS",
+        "nameKo": "Vintage Oak 나파",
+        "sku": "G_TH0024_493G924",
+        "gbpPrice": 350.0,
+        "price": 890000,
+        "image": "/products/mb-pdp/g-th0024-493g924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-th0024-493g924/1.jpg",
+          "/products/mb-pdp/g-th0024-493g924/2.jpg",
+          "/products/mb-pdp/g-th0024-493g924/3.jpg",
+          "/products/mb-pdp/g-th0024-493g924/4.jpg",
+          "/products/mb-pdp/g-th0024-493g924/5.jpg",
+          "/products/mb-pdp/g-th0024-493g924/6.jpg",
+          "/products/mb-pdp/g-th0024-493g924/7.jpg",
+          "/products/mb-pdp/g-th0024-493g924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/small-leather-tray-vintage-oak-nappa",
+        "inStock": true,
+        "colorKey": "vintage-oak-nappa",
+        "colorNameKo": "Vintage Oak 나파",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -13871,7 +14060,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -13923,7 +14112,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.871501+00:00"
+    "updatedAt": "2026-09-11T20:23:39.820061+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -14063,7 +14252,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.873166+00:00"
+    "updatedAt": "2026-09-11T20:23:39.822446+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -14207,7 +14396,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.874785+00:00"
+    "updatedAt": "2026-09-11T20:23:39.824432+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -14498,7 +14687,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.877084+00:00"
+    "updatedAt": "2026-09-11T20:23:39.827322+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -14846,7 +15035,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.881035+00:00"
+    "updatedAt": "2026-09-11T20:23:39.832354+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -15077,7 +15266,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.883708+00:00"
+    "updatedAt": "2026-09-11T20:23:39.835983+00:00"
   },
   {
     "id": "mb-throw-blanket",
@@ -15090,7 +15279,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -15141,6 +15332,35 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-th0033-000q130-sz-os",
+        "name": "Heritage Check Wool / OS",
+        "nameKo": "Heritage Check Wool",
+        "sku": "G_TH0033_000Q130",
+        "gbpPrice": 395.0,
+        "price": 1000000,
+        "image": "/products/mb-pdp/g-th0033-000q130/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-th0033-000q130/1.jpg",
+          "/products/mb-pdp/g-th0033-000q130/2.jpg",
+          "/products/mb-pdp/g-th0033-000q130/3.jpg",
+          "/products/mb-pdp/g-th0033-000q130/4.jpg",
+          "/products/mb-pdp/g-th0033-000q130/5.jpg",
+          "/products/mb-pdp/g-th0033-000q130/6.jpg",
+          "/products/mb-pdp/g-th0033-000q130/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/throw-blanket-heritage-check-wool",
+        "inStock": true,
+        "colorKey": "heritage-check-wool",
+        "colorNameKo": "Heritage Check Wool",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -15167,7 +15387,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -15219,7 +15439,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.885164+00:00"
+    "updatedAt": "2026-09-11T20:23:39.839253+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -15482,7 +15702,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.888320+00:00"
+    "updatedAt": "2026-09-11T20:23:39.844182+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -15650,7 +15870,7 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.890766+00:00"
+    "updatedAt": "2026-09-11T20:23:39.848315+00:00"
   },
   {
     "id": "mb-wine-carrier",
@@ -15663,7 +15883,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -15716,6 +15938,36 @@
           "mb-men-lifestyle",
           "mb-lifestyle"
         ]
+      },
+      {
+        "id": "mb-g-tl0012-493g924-sz-os",
+        "name": "Vintage Oak Bovine Leather / OS",
+        "nameKo": "Vintage Oak Bovine 레더",
+        "sku": "G_TL0012_493G924",
+        "gbpPrice": 495.0,
+        "price": 1260000,
+        "image": "/products/mb-pdp/g-tl0012-493g924/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-tl0012-493g924/1.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/2.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/3.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/4.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/5.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/6.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/7.jpg",
+          "/products/mb-pdp/g-tl0012-493g924/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/home/wine-carrier-vintage-oak-bovine-leather",
+        "inStock": true,
+        "colorKey": "vintage-oak-bovine-leather",
+        "colorNameKo": "Vintage Oak Bovine 레더",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-lifestyle",
+          "mb-lifestyle"
+        ]
       }
     ],
     "storySections": [
@@ -15742,7 +15994,7 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -15795,6 +16047,6 @@
         ]
       ]
     },
-    "updatedAt": "2026-09-11T20:18:21.892330+00:00"
+    "updatedAt": "2026-09-11T20:23:39.850562+00:00"
   }
 ]
