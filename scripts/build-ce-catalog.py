@@ -499,6 +499,8 @@ def tag_bundle(row: dict) -> list[str]:
         tags += ["women", "여성"]
     if any(x in leaf for x in ["shirts", "tshirts", "sweatshirts", "knitwear", "denim", "pants", "tailoring", "coats", "jackets", "leather", "rtw"]):
         tags += ["rtw", "ready-to-wear"]
+    elif "swim" in leaf and not is_ce_swim_accessory(str(row.get("title") or ""), leaf):
+        tags += ["rtw", "ready-to-wear", "swimwear", "스윔웨어"]
     elif "bags" in leaf or leaf.endswith("-bag"):
         tags += ["bags", "가방"]
     elif "shoes" in leaf or any(x in leaf for x in ["boots", "sneakers", "loafers", "sandals", "pumps"]):
@@ -598,8 +600,10 @@ def leaf_to_category(leaf: str) -> str:
         x in leaf for x in ["boots", "sneakers", "loafers", "sandals", "pumps", "ballet", "ballerina"]
     ):
         return "shoes"
-    # All Celine RTW leaves (incl. skirts/dresses/tops/swim) must stay under luxury
-    # so /shop?category=luxury&sub=ce-women-skirts matches.
+    # Beach wraps / towels scraped under swimwear are accessories, not apparel.
+    if "swim" in leaf:
+        return "luxury"  # apparel swimsuits only; accessories overridden in resolve_placement
+    # Celine RTW leaves must stay under luxury so /shop?category=luxury&sub=… matches.
     if any(
         x in leaf
         for x in [
@@ -618,13 +622,53 @@ def leaf_to_category(leaf: str) -> str:
             "coats",
             "jackets",
             "leather",
-            "swim",
             "rtw",
             "-rtw",
         ]
     ):
         return "luxury"
     return "accessories"
+
+
+_CE_SWIM_ACCESSORY_RE = re.compile(
+    r"\b(pareo|sarong|fouta|towel|beach\s*towel|beach\s*blanket)\b",
+    re.I,
+)
+_CE_SWIM_APPAREL_RE = re.compile(
+    r"\b(triangle|bandeau|balconette|swimsuit|swimwear|bikini|bottom|one[\s-]?piece)\b",
+    re.I,
+)
+
+
+def is_ce_swim_accessory(title: str, leaf: str = "") -> bool:
+    """Pareo / towel / fouta live under swim scrape but are not clothing."""
+    if "swim" not in (leaf or "") and not _CE_SWIM_ACCESSORY_RE.search(title or ""):
+        return False
+    if _CE_SWIM_ACCESSORY_RE.search(title or ""):
+        return True
+    return False
+
+
+def resolve_placement(row: dict) -> tuple[str, str, list[str]]:
+    """Return (category, subcategory, ceCollections) with non-apparel corrections."""
+    leaf = str(row.get("leafId") or "").strip() or "ce-men-rtw-all"
+    title = str(row.get("title") or "")
+    collections = list(dict.fromkeys(row.get("collections") or []))
+
+    if is_ce_swim_accessory(title, leaf) or (
+        "swim" in leaf and not _CE_SWIM_APPAREL_RE.search(title) and _CE_SWIM_ACCESSORY_RE.search(title)
+    ):
+        sub = "ce-women-other-accessories"
+        cols = [
+            "celine",
+            "celine-accessories",
+            "ce-women-accessories",
+            "ce-women-other-accessories",
+            "ce-women-acc-all",
+        ]
+        return "accessories", sub, list(dict.fromkeys(cols))
+
+    return leaf_to_category(leaf), leaf, collections
 
 
 def build_story(description_ko: str, images: list[str], features_ko: list[str]) -> list[dict]:
@@ -750,6 +794,8 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     size_chart = build_size_chart(row)
     variants = build_variants(pid, row, price)
 
+    category, subcategory, ce_collections = resolve_placement(row)
+
     tech_specs = []
     if details_en:
         tech_specs.append(
@@ -758,7 +804,9 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
                 "valueKo": tr(details_en[0], cache, allow_remote=True, prose=True),
             }
         )
-    if row.get("categoryLabel"):
+    if category == "accessories" and is_ce_swim_accessory(title_en, str(row.get("leafId") or "")):
+        tech_specs.append({"labelKo": "카테고리", "valueKo": "악세서리"})
+    elif row.get("categoryLabel"):
         category_ko = clean_title_ko(str(row["categoryLabel"]).replace("/", " / ").title())
         tech_specs.append({"labelKo": "카테고리", "valueKo": category_ko})
 
@@ -773,9 +821,9 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
         "name": title_en,
         "nameKo": title_ko,
         "brand": "Celine",
-        "category": leaf_to_category(row.get("leafId") or ""),
-        "subcategory": row.get("leafId") or "ce-men-rtw-all",
-        "ceCollections": list(dict.fromkeys(row.get("collections") or [])),
+        "category": category,
+        "subcategory": subcategory,
+        "ceCollections": ce_collections,
         "tags": tag_bundle(row),
         "descriptionKo": description_ko,
         "image": image,
