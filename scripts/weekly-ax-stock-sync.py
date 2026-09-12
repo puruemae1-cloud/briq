@@ -110,6 +110,10 @@ def main() -> None:
     prune_line("ax-catalog-raw.json", "ax-pdp-cache.json", "ax-pdp")
     prune_line("ax-gear-raw.json", "ax-gear-pdp-cache.json", "axg-pdp")
 
+    # 3b) Backfill colourways present in PDP cache but missing on disk
+    # (e.g. Ultima/Mongoose when only Black was downloaded).
+    run("repair-ax-missing-colour-images.py")
+
     # 4) Translate EN→KO then rebuild catalogues
     # Footwear curated seed (covers PDP when gtx is rate-limited / flaky)
     run("seed-ax-footwear-ko.py")
@@ -135,6 +139,58 @@ def main() -> None:
         cwd=str(ROOT),
     )
     check_new_korean("ax", since)
+
+    # 5) Publish any nested colour folders missing from the product-images CDN tag.
+    print("Checking Arc'teryx PDP folders on product-images CDN…", flush=True)
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "list-missing-pdp-on-cdn.py"),
+            "--dirs",
+            "axa-pdp",
+            "ax-pdp",
+            "axg-pdp",
+            "axo-pdp",
+            "--nested",
+            "--fetch",
+            "--write",
+            "tmp/ax-missing-on-cdn.txt",
+        ],
+        cwd=str(ROOT),
+        check=False,
+    )
+    missing = ROOT / "tmp/ax-missing-on-cdn.txt"
+    if missing.exists() and missing.stat().st_size > 0:
+        subprocess.check_call(
+            [
+                sys.executable,
+                "-u",
+                str(ROOT / "scripts" / "push-product-images-tag.py"),
+                "--dirs",
+                "axa-pdp",
+                "ax-pdp",
+                "axg-pdp",
+                "axo-pdp",
+                "--skip-whiten",
+                "--merge",
+                "--skip-purge",
+                "--only-file",
+                str(missing),
+            ],
+            cwd=str(ROOT),
+            env={**os.environ, "PYTHONUNBUFFERED": "1"},
+        )
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "verify-catalog-images.py"),
+            "--brand",
+            "ax",
+            "--check-cdn",
+        ],
+        cwd=str(ROOT),
+        check=False,
+    )
 
     print("Arc'teryx weekly sync complete.", flush=True)
 

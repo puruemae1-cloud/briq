@@ -20,6 +20,12 @@ TAG = "product-images"
 BRAND_CATALOGS = {
     "ce": [ROOT / "src/data/ce/ce-catalog.json"],
     "gg": [ROOT / "src/data/gg/gg-catalog.json"],
+    "ax": [
+        ROOT / "src/data/ax/ax-apparel-catalog.json",
+        ROOT / "src/data/ax/ax-catalog.json",
+        ROOT / "src/data/ax/ax-gear-catalog.json",
+        ROOT / "src/data/ax/ax-outlet-catalog.json",
+    ],
 }
 
 
@@ -79,6 +85,28 @@ def tag_has_folder(brand: str, folder: str, cache: dict[str, set[str]]) -> bool:
     return folder in cache[brand]
 
 
+def tag_has_file(rel: str, file_cache: dict[str, set[str]]) -> bool:
+    """``rel`` like /products/axa-pdp/SKU/colour/1.jpg — check file on tag."""
+    parts = rel.strip("/").split("/")
+    if len(parts) < 3 or parts[0] != "products":
+        return False
+    brand = parts[1]
+    rest = "/".join(parts[2:])
+    if brand not in file_cache:
+        r = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", f"{TAG}:public/products/{brand}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        file_cache[brand] = (
+            {line.strip() for line in r.stdout.splitlines() if line.strip()}
+            if r.returncode == 0
+            else set()
+        )
+    return rest in file_cache[brand]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--brand", choices=sorted(BRAND_CATALOGS), required=True)
@@ -91,8 +119,13 @@ def main() -> int:
     placeholder = 0
     checked = 0
     cdn_cache: dict[str, set[str]] = {}
+    cdn_files: dict[str, set[str]] = {}
+    # Nested colourway trees (Arc'teryx) need file-level CDN checks.
+    nested_brands = {"axa-pdp", "axg-pdp", "ax-pdp", "axo-pdp"}
 
     for path in BRAND_CATALOGS[args.brand]:
+        if not path.exists():
+            continue
         for p in load_products(path):
             for rel in image_paths(p):
                 checked += 1
@@ -106,10 +139,14 @@ def main() -> int:
                     continue
                 if args.check_cdn:
                     parsed = folder_of(rel)
-                    if parsed:
-                        brand, folder = parsed
-                        if not tag_has_folder(brand, folder, cdn_cache):
+                    if not parsed:
+                        continue
+                    brand, folder = parsed
+                    if brand in nested_brands:
+                        if not tag_has_file(rel, cdn_files):
                             missing_cdn.append(f"{p.get('id')}: {rel}")
+                    elif not tag_has_folder(brand, folder, cdn_cache):
+                        missing_cdn.append(f"{p.get('id')}: {rel}")
 
     print(
         f"{args.brand}: checked={checked} placeholder={placeholder} "
