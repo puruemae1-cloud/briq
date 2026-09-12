@@ -7625,8 +7625,16 @@
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
-      "images": [],
-      "remoteImages": [],
+      "images": [
+        "/products/ce-pdp/2ae2i423p-10an/1.jpg",
+        "/products/ce-pdp/2ae2i423p-10an/2.jpg",
+        "/products/ce-pdp/2ae2i423p-10an/3.jpg"
+      ],
+      "remoteImages": [
+        "https://image.celine.com/asset/5fdc6632-22ff-40af-b25f-bec49e3b3da2/2AE2I423P-10AN_1_FW24_P1_M.jpg?V2",
+        "https://image.celine.com/asset/e01974e5-954b-4fd7-a409-8e4bd535fd42/2AE2I423P-10AN_2_FW24_P1_M.jpg?V2",
+        "https://image.celine.com/asset/e8dc88e2-e039-4fb9-bcc8-2ae6e7789e4a/2AE2I423P-10AN_3_FW24_P1_M.jpg?V2"
+      ],
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",

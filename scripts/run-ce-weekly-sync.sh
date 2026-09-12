@@ -33,11 +33,15 @@ python3 scripts/refresh-ce-stock-sfcc.py || true
 
 python3 scripts/build-ce-catalog.py
 
-# Keep CDN placeholder present so sold-out / incomplete rows never 404.
-if [[ -f public/products/ce-pdp/placeholder.jpg ]]; then
+# Backfill any rows still on placeholder, then publish local PDP folders that
+# are not yet on the product-images CDN tag (prevents broken <img> in shop).
+python3 scripts/repair-ce-missing-images.py --category-hint all || true
+python3 scripts/list-missing-pdp-on-cdn.py --dirs ce-pdp --fetch --write tmp/ce-missing-on-cdn.txt || true
+if [[ -s tmp/ce-missing-on-cdn.txt ]]; then
   PYTHONUNBUFFERED=1 python3 scripts/push-product-images-tag.py \
     --dirs ce-pdp --skip-whiten --merge --skip-purge \
-    --only placeholder || true
+    --only-file tmp/ce-missing-on-cdn.txt
 fi
+python3 scripts/verify-catalog-images.py --brand ce --check-cdn || true
 
 echo "OK CE weekly sync"

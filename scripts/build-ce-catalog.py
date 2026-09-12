@@ -559,7 +559,7 @@ def size_sort_key(size: str) -> tuple:
 
 def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
     sizes = sorted({str(x).strip() for x in (row.get("sizes") or []) if str(x).strip()}, key=size_sort_key)
-    images = row.get("images") or []
+    images = existing_ce_images(row.get("images") or [])
     image = images[0] if images else "/products/ce-pdp/placeholder.jpg"
     if not sizes:
         sizes = ["OS"]
@@ -700,6 +700,18 @@ def local_ce_images(sku_or_id: str) -> list[str]:
     return [f"/products/ce-pdp/{folder}/{p.name}" for p in paths if p.stat().st_size >= 800]
 
 
+def existing_ce_images(images: list[str] | None) -> list[str]:
+    """Keep only gallery paths that exist on disk (avoids broken PDP thumbs)."""
+    out: list[str] = []
+    for rel in images or []:
+        if not rel or "placeholder" in rel:
+            continue
+        local = ROOT / "public" / str(rel).lstrip("/")
+        if local.is_file() and local.stat().st_size >= 800:
+            out.append(rel)
+    return out
+
+
 def heal_raw_row(row: dict) -> dict:
     """Repair Access Denied poison, missing images, and false sold-out flags."""
     row = dict(row)
@@ -713,6 +725,7 @@ def heal_raw_row(row: dict) -> dict:
     images = [x for x in (row.get("images") or []) if x and "placeholder" not in x]
     if not images:
         images = local_ce_images(sku) or local_ce_images(str(row.get("id") or ""))
+    images = existing_ce_images(images) or local_ce_images(sku) or local_ce_images(str(row.get("id") or ""))
     row["images"] = images
 
     # Legacy scrapes used only `AVAILABLE NOW` body text → mass false sold-outs.

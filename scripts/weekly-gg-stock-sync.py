@@ -119,13 +119,60 @@ def sync() -> None:
         print(f"Downloading images for {len(new_products)} new colorways…")
         download_images(new_products)
 
+    # Also backfill any catalogue image folders still missing locally
+    missing_local = [
+        p
+        for p in products
+        if p.get("handle")
+        and not (ROOT / "public/products/gg-pdp" / p["handle"] / "1.jpg").is_file()
+    ]
+    if missing_local:
+        print(f"Backfilling {len(missing_local)} missing local image folders…")
+        download_images(missing_local)
+
     raw["scrapedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    raw["collections"] = collections_meta
     raw["products"] = products
+    raw["collections"] = collections_meta
     RAW_PATH.write_text(json.dumps(raw, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print("Rebuilding gg-catalog.ts …")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/build-gg-catalog.py")], cwd=str(ROOT))
+
+    # Publish any local gg-pdp folders not yet on the product-images CDN tag
+    miss_file = ROOT / "tmp/gg-missing-on-cdn.txt"
+    list_rc = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts/list-missing-pdp-on-cdn.py"),
+            "--dirs",
+            "gg-pdp",
+            "--fetch",
+            "--write",
+            str(miss_file),
+        ],
+        cwd=str(ROOT),
+    )
+    if miss_file.is_file() and miss_file.stat().st_size > 0:
+        print("Pushing missing gg-pdp folders to product-images tag…")
+        subprocess.check_call(
+            [
+                sys.executable,
+                str(ROOT / "scripts/push-product-images-tag.py"),
+                "--dirs",
+                "gg-pdp",
+                "--skip-whiten",
+                "--merge",
+                "--skip-purge",
+                "--only-file",
+                str(miss_file),
+            ],
+            cwd=str(ROOT),
+        )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts/verify-catalog-images.py"), "--brand", "gg", "--check-cdn"],
+        cwd=str(ROOT),
+        check=False,
+    )
 
     men = len(collections_meta.get("men-new") or [])
     women = len(collections_meta.get("women-new") or [])

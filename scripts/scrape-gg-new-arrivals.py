@@ -433,6 +433,40 @@ def scrape_and_write() -> dict:
     saved, skipped = download_images(all_products)
     print(f"  images saved={saved} skipped_existing={skipped}")
 
+    print("Building gg-catalog.ts …")
+    subprocess.check_call([sys.executable, str(ROOT / "scripts/build-gg-catalog.py")], cwd=str(ROOT))
+
+    miss_file = ROOT / "tmp/gg-missing-on-cdn.txt"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts/list-missing-pdp-on-cdn.py"),
+            "--dirs",
+            "gg-pdp",
+            "--fetch",
+            "--write",
+            str(miss_file),
+        ],
+        cwd=str(ROOT),
+        check=False,
+    )
+    if miss_file.is_file() and miss_file.stat().st_size > 0:
+        print("Pushing missing gg-pdp folders to product-images tag…")
+        subprocess.check_call(
+            [
+                sys.executable,
+                str(ROOT / "scripts/push-product-images-tag.py"),
+                "--dirs",
+                "gg-pdp",
+                "--skip-whiten",
+                "--merge",
+                "--skip-purge",
+                "--only-file",
+                str(miss_file),
+            ],
+            cwd=str(ROOT),
+        )
+
     return {
         "men_new": len(collections_meta.get("men-new") or []),
         "women_new": len(collections_meta.get("women-new") or []),
@@ -450,8 +484,6 @@ def scrape_and_write() -> dict:
 
 def main() -> None:
     stats = scrape_and_write()
-    print("Building gg-catalog.ts …")
-    subprocess.check_call([sys.executable, str(ROOT / "scripts/build-gg-catalog.py")], cwd=str(ROOT))
     print(
         f"Done. new={stats['men_new']}/{stats['women_new']} "
         f"best={stats['men_best']}/{stats['women_best']} "
