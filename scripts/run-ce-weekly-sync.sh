@@ -31,6 +31,9 @@ done
 python3 scripts/repair-ce-availability.py
 python3 scripts/refresh-ce-stock-sfcc.py || true
 
+# Fill sparse DETAILS / CARE from SFCC longDescription (empty image-only rows).
+python3 scripts/enrich-ce-pdp-copy-sfcc.py || true
+
 python3 scripts/build-ce-catalog.py
 
 # Backfill any rows still on placeholder, then publish local PDP folders that

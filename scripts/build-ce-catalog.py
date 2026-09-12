@@ -418,8 +418,6 @@ def tr(
     if "fits true to size" in low and "usual size" in low:
         cache[s] = "셀린느의 클래식 실루엣 기준 정사이즈로 제안됩니다. 평소 선택하시는 사이즈를 권장합니다."
         return cache[s]
-    if s in cache and is_good_korean(cache[s]):
-        return cache[s]
     if has_hangul(s) and is_good_korean(s):
         cache[s] = s
         return s
@@ -429,7 +427,7 @@ def tr(
         return s
     fast = os.environ.get("BRIQ_FAST_BUILD") == "1"
     if prose:
-        # Prefer offline prose map (stable KO). Remote gtx is optional — often 429.
+        # Prefer offline prose map (stable KO). Skip stale cache hybrids.
         local = prose_to_ko(s)
         want_remote = allow_remote and os.environ.get("BRIQ_CE_REMOTE") == "1" and not fast
         if local and is_good_korean(local):
@@ -437,6 +435,14 @@ def tr(
             return local
         if not want_remote:
             # Accept best local effort even if a few EN tokens remain (motif names, etc.).
+            cache[s] = local or s
+            return cache[s]
+    if s in cache and is_good_korean(cache[s]):
+        return cache[s]
+    if prose:
+        want_remote = allow_remote and os.environ.get("BRIQ_CE_REMOTE") == "1" and not fast
+        local = prose_to_ko(s)
+        if not want_remote:
             cache[s] = local or s
             return cache[s]
         try:
@@ -671,14 +677,44 @@ def resolve_placement(row: dict) -> tuple[str, str, list[str]]:
     return leaf_to_category(leaf), leaf, collections
 
 
-def build_story(description_ko: str, images: list[str], features_ko: list[str]) -> list[dict]:
-    sections = [{"titleKo": "제품 소개", "bodyKo": description_ko, "image": images[0] if images else ""}]
-    if len(images) > 1 and features_ko:
+def build_story(
+    description_ko: str,
+    images: list[str],
+    features_ko: list[str],
+    *,
+    care_ko: list[str] | None = None,
+    fit_ko: list[str] | None = None,
+) -> list[dict]:
+    sections = [
+        {
+            "titleKo": "제품 소개",
+            "bodyKo": description_ko,
+            "image": images[0] if images else "",
+        }
+    ]
+    if features_ko:
         sections.append(
             {
                 "titleKo": "디테일 & 특징",
-                "bodyKo": " · ".join(features_ko[:8]),
-                "image": images[min(1, len(images) - 1)],
+                "bodyKo": " · ".join(features_ko[:10]),
+                "image": images[min(1, len(images) - 1)] if images else "",
+            }
+        )
+    if care_ko:
+        sections.append(
+            {
+                "titleKo": "케어 & 관리",
+                "bodyKo": " ".join(care_ko[:3]) if len(care_ko[0]) > 80 else " · ".join(care_ko[:4]),
+                "image": images[min(2, len(images) - 1)] if images else "",
+                "reverse": True,
+            }
+        )
+    if fit_ko:
+        sections.append(
+            {
+                "titleKo": "착용 & 스타일",
+                "bodyKo": " · ".join(fit_ko[:4]),
+                "image": images[min(3, len(images) - 1)] if images else "",
             }
         )
     if len(images) > 2:
@@ -686,7 +722,8 @@ def build_story(description_ko: str, images: list[str], features_ko: list[str]) 
             {
                 "titleKo": "스타일링",
                 "bodyKo": "셀린느 공식 이미지로 실루엣과 소재의 분위기를 확인할 수 있습니다.",
-                "image": images[min(2, len(images) - 1)],
+                "image": images[min(len(images) - 1, 4)] if images else "",
+                "reverse": True,
             }
         )
     return sections
@@ -788,7 +825,7 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     care_en = extract_lines(row, "CARE AND MAINTENANCE")
     fit_en = extract_lines(row, "Size and fit")
     features_ko = [
-        y for x in details_en[:10] if (y := tr(x, cache, allow_remote=True, prose=True))
+        y for x in details_en[:12] if (y := tr(x, cache, allow_remote=True, prose=True))
     ]
     # Prefer one natural care summary when official copy is a long multi-bullet guide.
     care_joined = " ".join(care_en)
@@ -797,31 +834,68 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
         care_ko = [care_summary]
     else:
         care_ko = [y for x in care_en[:6] if (y := tr(x, cache, allow_remote=True, prose=True))]
-    fit_ko = [y for x in fit_en[:4] if (y := tr(x, cache, allow_remote=True, prose=True))]
+    fit_ko = [y for x in fit_en[:6] if (y := tr(x, cache, allow_remote=True, prose=True))]
     desc_parts = []
     if features_ko:
-        desc_parts.append(" / ".join(features_ko[:3]))
+        desc_parts.append(" / ".join(features_ko[:4]))
     if fit_ko:
-        desc_parts.append(" ".join(fit_ko[:1]))
+        desc_parts.append(" ".join(fit_ko[:2]))
     description_ko = "\n\n".join([x for x in desc_parts if x]).strip() or title_ko
     size_chart = build_size_chart(row)
     variants = build_variants(pid, row, price)
 
     category, subcategory, ce_collections = resolve_placement(row)
 
-    tech_specs = []
-    if details_en:
-        tech_specs.append(
-            {
-                "labelKo": "디테일",
-                "valueKo": tr(details_en[0], cache, allow_remote=True, prose=True),
-            }
+    material_hit = [
+        x
+        for x in features_ko
+        if any(
+            k in x
+            for k in (
+                "%",
+                "면",
+                "레더",
+                "램스킨",
+                "카프스킨",
+                "울",
+                "캐시미어",
+                "실크",
+                "린넨",
+                "코튼",
+                "나일론",
+                "폴리",
+            )
         )
+    ][:1]
+    tech_specs = []
+    for label, values in (
+        ("디테일", features_ko[:1]),
+        ("소재", material_hit),
+    ):
+        if values:
+            tech_specs.append({"labelKo": label, "valueKo": values[0]})
+    cat_ko_by_bucket = {
+        "bags": "가방",
+        "shoes": "슈즈",
+        "accessories": "악세서리",
+        "luxury": "시그니처 의류",
+        "watches": "시계",
+    }
     if category == "accessories" and is_ce_swim_accessory(title_en, str(row.get("leafId") or "")):
         tech_specs.append({"labelKo": "카테고리", "valueKo": "악세서리"})
+    elif category in cat_ko_by_bucket:
+        tech_specs.append({"labelKo": "카테고리", "valueKo": cat_ko_by_bucket[category]})
     elif row.get("categoryLabel"):
         category_ko = clean_title_ko(str(row["categoryLabel"]).replace("/", " / ").title())
         tech_specs.append({"labelKo": "카테고리", "valueKo": category_ko})
+    elif subcategory:
+        tech_specs.append(
+            {
+                "labelKo": "카테고리",
+                "valueKo": clean_title_ko(subcategory.replace("ce-", "").replace("-", " ").title())
+                or subcategory,
+            }
+        )
 
     features = []
     for block in (features_ko, care_ko, fit_ko):
@@ -847,7 +921,9 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
         "sourceUrl": row.get("url") or "",
         "inStock": row_in_stock(row),
         "variants": variants,
-        "storySections": build_story(description_ko, images, features),
+        "storySections": build_story(
+            description_ko, images, features_ko, care_ko=care_ko, fit_ko=fit_ko
+        ),
         "techSpecs": tech_specs,
         "featuresKo": features,
         "sizeChart": size_chart,

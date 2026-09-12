@@ -165,6 +165,17 @@ PROSE_PHRASES: dict[str, str] = {
     "shirt collar": "셔츠 칼라",
     "notch collar": "노치 칼라",
     "peak collar": "피크 칼라",
+    "shoulder carry": "숄더 캐리",
+    "cross body carry": "크로스바디 캐리",
+    "cross-body carry": "크로스바디 캐리",
+    "one main compartment": "메인 수납공간 1개",
+    "gold finishing": "골드 마감",
+    "silver finishing": "실버 마감",
+    "textile with triomphe print lining": "트리옹프 프린트 텍스타일 안감",
+    "evening bag & clutches": "이브닝 백 & 클러치",
+    "evening bag and clutches": "이브닝 백 & 클러치",
+    "removable and adjustable strap": "탈부착·조절 가능 스트랩",
+    "lambskin": "램스킨",
     "crew neck": "크루넥",
     "v neck": "브이넥",
     "raglan sleeves": "래글런 소매",
@@ -810,6 +821,9 @@ PROSE_WORDS: dict[str, str] = {
     "heel": "힐",
     "visor": "바이저",
     "side": "사이드",
+    "evening": "이브닝",
+    "clutches": "클러치",
+    "clutch": "클러치",
     "nickel": "니켈",
 }
 # Keep as-is (units / codes). Matched case-insensitive as whole tokens.
@@ -977,6 +991,17 @@ def prose_to_ko(text: str) -> str:
         out = re.sub(r"(?i)\bthe\b", "", out)
         out = re.sub(r"(?i)\bon the side\b", "측면", out)
         out = re.sub(r"(?i)\bin\b", "IN", out)
+        # Prefer metric when both IN and CM are present
+        out = re.sub(
+            r"(?i)\b\d+(?:\.\d+)?\s*IN\s*\((\d+(?:\.\d+)?)\s*CM\)",
+            r"\1cm",
+            out,
+        )
+        out = re.sub(
+            r"(?i)\b[\d.]+\s*(?:[x×]\s*[\d.]+\s*){1,2}IN\s*\(([^)]*?)\s*CM\)",
+            r"\1cm",
+            out,
+        )
         return re.sub(r"\s+", " ", out).strip(" ,")
 
     # Normalize hyphenated compounds so phrase/word maps hit (mid-rise, celine-engraved).
