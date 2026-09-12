@@ -784,6 +784,7 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     price = gbp_to_krw(gbp)
     images = existing_ce_images(row.get("images") or [])
     image = images[0] if images else "/products/ce-pdp/placeholder.jpg"
+    details_en = extract_lines(row, "DETAILS")
     care_en = extract_lines(row, "CARE AND MAINTENANCE")
     fit_en = extract_lines(row, "Size and fit")
     features_ko = [
