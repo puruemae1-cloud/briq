@@ -74,9 +74,15 @@ done
 
 PYTHONUNBUFFERED=1 BRIQ_FAST_BUILD=0 python3 scripts/build-mb-catalog.py
 
-if [[ -d public/products/mb-pdp ]]; then
+# Publish any local mb-pdp folders missing from the product-images CDN tag
+# (Vercel serves photos from the tag — never rely on main for PDP bytes).
+python3 scripts/list-missing-pdp-on-cdn.py --dirs mb-pdp --fetch --write tmp/mb-missing-on-cdn.txt || true
+if [[ -s tmp/mb-missing-on-cdn.txt ]]; then
   PYTHONUNBUFFERED=1 python3 scripts/push-product-images-tag.py \
-    --dirs mb-pdp --skip-whiten --merge --skip-purge || true
+    --dirs mb-pdp --skip-whiten --merge --skip-purge \
+    --only-file tmp/mb-missing-on-cdn.txt
 fi
+python3 scripts/verify-catalog-images.py --brand mb --check-cdn || true
+python3 scripts/refresh-homepage-rail-picks.py --fail || true
 
 echo "OK MB weekly sync"

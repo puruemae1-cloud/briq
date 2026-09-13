@@ -26,6 +26,7 @@ BRAND_CATALOGS = {
         ROOT / "src/data/ax/ax-gear-catalog.json",
         ROOT / "src/data/ax/ax-outlet-catalog.json",
     ],
+    "mb": [ROOT / "src/data/mb/mb-catalog.json"],
 }
 
 

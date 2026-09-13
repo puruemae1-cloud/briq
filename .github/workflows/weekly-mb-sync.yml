@@ -24,12 +24,14 @@ jobs:
           scripts/run-mb-weekly-sync.sh
       - name: Commit catalog updates
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/mb public/products/mb-pdp src/data/product-images-manifest.json || true
-          if git diff --staged --quiet; then
-            echo "No MB catalog changes"
-          else
-            git commit -m "chore(mb): weekly catalog sync"
-            git push
-          fi
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore(mb): weekly catalog sync" \
+            src/data/mb \
+            src/data/product-images-manifest.json \
+            src/data/homepage-rail-picks.json \
+            scripts/run-mb-weekly-sync.sh \
+            scripts/build-mb-catalog.py \
+            scripts/refresh-homepage-rail-picks.py \
+            scripts/list-missing-pdp-on-cdn.py \
+            scripts/verify-catalog-images.py
