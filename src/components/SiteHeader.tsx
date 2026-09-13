@@ -141,10 +141,6 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
           </div>
 
           <nav className="site-nav" aria-label="Primary">
-            <Link href="/shop" className="site-nav__link">
-              Shop
-            </Link>
-
             {navCategories.map((c) =>
               c.children?.length ? (
                 <div key={c.id} className="nav-item">
