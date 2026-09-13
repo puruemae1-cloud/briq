@@ -535,21 +535,129 @@ def extract_lines(row: dict, label: str) -> list[str]:
     return []
 
 
-def build_size_chart(row: dict) -> dict | None:
-    guide = row.get("sizeGuide") or {}
-    headers = guide.get("headers") or []
-    rows = guide.get("rows") or []
-    if not headers or not rows:
-        return None
-    title = headers[1] if len(headers) > 1 else "사이즈 가이드"
-    title_ko = clean_title_ko(title.upper().title()) or title
+CE_SHOES_WOMEN_ROWS = [
+    ["34", "34.5"],
+    ["34.5", "35"],
+    ["35", "35.5"],
+    ["35.5", "36"],
+    ["36", "36.5"],
+    ["36.5", "37"],
+    ["37", "37.5"],
+    ["37.5", "38"],
+    ["38", "38.5"],
+    ["38.5", "39"],
+    ["39", "39.5"],
+    ["39.5", "40"],
+    ["40", "40.5"],
+    ["40.5", "41"],
+    ["41", "41.5"],
+    ["41.5", "42"],
+    ["42", "42.5"],
+    ["42.5", "43"],
+]
+
+CE_SHOES_MEN_ROWS = [
+    ["39", "40"],
+    ["39.5", "40.5"],
+    ["40", "41"],
+    ["40.5", "41.5"],
+    ["41", "42"],
+    ["41.5", "42.5"],
+    ["42", "43"],
+    ["42.5", "43.5"],
+    ["43", "44"],
+    ["43.5", "44.5"],
+    ["44", "45"],
+    ["44.5", "45.5"],
+    ["45", "46"],
+]
+
+
+def is_ce_men_row(row: dict) -> bool:
+    blob = " ".join(
+        [
+            str(row.get("leafId") or ""),
+            str(row.get("url") or ""),
+            " ".join(str(x) for x in (row.get("collections") or [])),
+            str(row.get("subcategory") or ""),
+        ]
+    ).lower()
+    # Avoid matching the substring "men" inside "women".
+    if re.search(r"(?:^|[^a-z])men(?:[^a-z]|$)", blob.replace("women", " ")):
+        return True
+    return any(x in blob for x in ("/men/", "ce-men-", "ce-men/", "-men-shoes", "-men-boots"))
+
+
+def is_ce_shoe_row(row: dict, *, category: str | None = None) -> bool:
+    cat = (category or row.get("category") or "").lower()
+    if cat == "shoes":
+        return True
+    blob = " ".join(
+        [
+            str(row.get("leafId") or ""),
+            str(row.get("url") or ""),
+            str(row.get("subcategory") or ""),
+            " ".join(str(x) for x in (row.get("collections") or [])),
+        ]
+    ).lower()
+    return any(
+        x in blob
+        for x in (
+            "/shoes/",
+            "/boots/",
+            "/sandals/",
+            "/pumps/",
+            "women-shoes",
+            "men-shoes",
+            "women-boots",
+            "women-sandals",
+            "women-pumps",
+            "men-boots",
+        )
+    )
+
+
+def ce_shoes_size_chart(*, men: bool) -> dict:
+    """Official CELINE GB Product-SizeGuide grids D04 (women) / D07 (men)."""
     return {
-        "id": f"ce-{slugify(title)}",
-        "titleKo": f"셀린느 {title_ko} 사이즈 가이드",
-        "noteKo": "공식 셀린느 사이즈 가이드를 기준으로 정리했습니다.",
-        "headers": headers,
-        "rows": rows,
+        "id": "ce-shoes-men" if men else "ce-shoes-women",
+        "titleKo": "셀린느 슈즈 사이즈 가이드",
+        "noteKo": "셀린느 공식 사이즈 가이드(CELINE SHOES IT → EU/FR) 기준입니다.",
+        "headers": ["CELINE SHOES (IT)", "EU/FR"],
+        "rows": [list(r) for r in (CE_SHOES_MEN_ROWS if men else CE_SHOES_WOMEN_ROWS)],
     }
+
+
+def build_size_chart(row: dict, *, category: str | None = None) -> dict | None:
+    guide = row.get("sizeGuide") or {}
+    headers = [str(h) for h in (guide.get("headers") or [])]
+    rows = guide.get("rows") or []
+    head0 = (headers[0] if headers else "").upper()
+    shoeish = is_ce_shoe_row(row, category=category)
+
+    # Official shoe grids (D04/D07) — normalize title/headers even when scrape succeeded.
+    if rows and "SHOES" in head0:
+        first = str(rows[0][0]) if rows and rows[0] else ""
+        men = first.startswith("39") or is_ce_men_row(row)
+        return ce_shoes_size_chart(men=men)
+
+    # Scraped non-shoe guide (belts, RTW, D08 CELINE IT, etc.)
+    if headers and rows:
+        title = headers[1] if len(headers) > 1 else "사이즈 가이드"
+        title_ko = clean_title_ko(title.upper().title()) or title
+        return {
+            "id": f"ce-{slugify(title)}",
+            "titleKo": f"셀린느 {title_ko} 사이즈 가이드",
+            "noteKo": "공식 셀린느 사이즈 가이드를 기준으로 정리했습니다.",
+            "headers": headers,
+            "rows": rows,
+        }
+
+    # Many women's sandal/boot PDPs omit sizeGuideUrl in scrape — fall back to D04/D07.
+    if shoeish:
+        return ce_shoes_size_chart(men=is_ce_men_row(row))
+    return None
+
 
 
 def size_sort_key(size: str) -> tuple:
@@ -841,10 +949,9 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
     if fit_ko:
         desc_parts.append(" ".join(fit_ko[:2]))
     description_ko = "\n\n".join([x for x in desc_parts if x]).strip() or title_ko
-    size_chart = build_size_chart(row)
-    variants = build_variants(pid, row, price)
-
     category, subcategory, ce_collections = resolve_placement(row)
+    size_chart = build_size_chart(row, category=category)
+    variants = build_variants(pid, row, price)
 
     material_hit = [
         x
