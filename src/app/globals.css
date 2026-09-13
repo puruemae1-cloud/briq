@@ -2662,10 +2662,22 @@ body:has(.nav-drawer-toggle:checked) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* Row gap when brands wrap (e.g. accessories) — keep readable, not airy */
+  /* Row gap when brands wrap — keep readable, not airy */
   gap: 0.5rem 0;
   margin: 0.65rem 0 0;
-  max-width: min(40rem, 100%);
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  /* Let the brand row use the head width (before 전체 보기); wrap only when full. */
+  .section__head > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .section__brands {
+    max-width: none;
+  }
 }
 
 .section__brands-item {
