@@ -60,10 +60,27 @@ def fetch_size_guide_html(size_guide_url: str) -> str:
 def extract_size_guide(size_guide_html: str) -> dict:
     if not size_guide_html:
         return {}
-    headers = re.findall(r"<th[^>]*>\s*<span[^>]*>(.*?)</span>", size_guide_html, re.I | re.S)
-    headers = [clean_html_text(h) for h in headers if clean_html_text(h)]
-    rows: list[list[str]] = []
+    # Prefer expanding country-value spans (shoes) into full columns.
+    country_order = ["EU/FR", "UK", "US", "JP", "CN", "KR"]
+    expanded_rows: list[list[str]] = []
     for tr in re.findall(r"<tr[^>]*role=\"row\"[^>]*>(.*?)</tr>", size_guide_html, re.I | re.S):
+        it_m = re.search(
+            r"<td[^>]*role=\"cell\"[^>]*>\s*<span>(.*?)</span>",
+            tr,
+            re.I | re.S,
+        )
+        country_vals = re.findall(
+            r'data-msizestable-country-value="([^"]+)"\s*(?:hidden)?\s*>(.*?)</span>',
+            tr,
+            re.I | re.S,
+        )
+        if it_m and country_vals:
+            it_size = clean_html_text(it_m.group(1))
+            by_c = {k: clean_html_text(v) for k, v in country_vals}
+            if any(by_c.get(c) for c in country_order):
+                expanded_rows.append([it_size] + [by_c.get(c, "") for c in country_order])
+                continue
+        # Fallback: plain cells (belts / RTW / single conversion column).
         cells = re.findall(r"<td[^>]*role=\"cell\"[^>]*>(.*?)</td>", tr, re.I | re.S)
         vals: list[str] = []
         for cell in cells:
@@ -78,10 +95,22 @@ def extract_size_guide(size_guide_html: str) -> dict:
             if txt:
                 vals.append(txt)
         if vals:
-            rows.append(vals)
+            expanded_rows.append(vals)
+
+    if expanded_rows and all(len(r) >= 7 for r in expanded_rows):
+        return {
+            "headers": ["CELINE SHOES (IT)", "EU/FR", "UK", "US", "JP", "CN", "KR"],
+            "rows": expanded_rows,
+            "html": size_guide_html,
+        }
+
+    headers = re.findall(r"<th[^>]*>\s*<span[^>]*>(.*?)</span>", size_guide_html, re.I | re.S)
+    headers = [clean_html_text(h) for h in headers if clean_html_text(h)]
+    # Collapse select-label noise in thead.
+    headers = [re.sub(r"\s+", " ", h).strip() for h in headers]
     return {
         "headers": headers,
-        "rows": rows,
+        "rows": expanded_rows,
         "html": size_guide_html,
     }
 
