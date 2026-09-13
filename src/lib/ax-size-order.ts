@@ -4,19 +4,21 @@
  */
 
 const LETTER_ORDER: Record<string, number> = {
-  XXS: 0,
-  XS: 1,
-  S: 2,
-  M: 3,
-  L: 4,
-  XL: 5,
-  XXL: 6,
-  "2XL": 6,
-  XXXL: 7,
-  "3XL": 7,
-  "4XL": 8,
-  OS: 9,
-  "ONE SIZE": 9,
+  XXXS: 0,
+  XXS: 1,
+  XS: 2,
+  S: 3,
+  M: 4,
+  L: 5,
+  XL: 6,
+  XXL: 7,
+  "2XL": 7,
+  XXXL: 8,
+  "3XL": 8,
+  "4XL": 9,
+  "5XL": 10,
+  OS: 11,
+  "ONE SIZE": 11,
 };
 
 const INSEAM_RE = /^(\d+(?:\.\d+)?)\s*[- ]?\s*([SRT])$/i;

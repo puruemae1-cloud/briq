@@ -348,6 +348,36 @@ def _is_women_cols(cols: list[str]) -> bool:
     )
 
 
+def _bb_size_sort_key(size: str) -> tuple:
+    """Match src/lib/ax-size-order.ts — XXXS first, then XXS…XL."""
+    letter = {
+        "XXXS": 0,
+        "XXS": 1,
+        "XS": 2,
+        "S": 3,
+        "M": 4,
+        "L": 5,
+        "XL": 6,
+        "XXL": 7,
+        "2XL": 7,
+        "XXXL": 8,
+        "3XL": 8,
+        "4XL": 9,
+        "5XL": 10,
+        "OS": 11,
+        "ONE SIZE": 11,
+        "프리사이즈": 11,
+    }
+    s = (size or "").strip()
+    u = s.upper()
+    if u in letter:
+        return (0, letter[u], s)
+    try:
+        return (1, float(s.replace(",", ".")), s)
+    except ValueError:
+        return (2, 0.0, s.lower())
+
+
 def size_chart_for_collections(cols: list[str], size_labels: list[str] | None = None) -> dict | None:
     """Pick shoe or apparel size chart for Burberry collections."""
     labels = [str(s).upper() for s in (size_labels or [])]
@@ -711,12 +741,13 @@ def main() -> None:
                 ]
 
             source = c.get("url") or ""
+            color_variants = []
             for sz in sizes:
                 label = str(sz.get("label") or "One size")
                 label_ko = "프리사이즈" if label.lower() in ("one size", "onesize", "os") else label
                 sku = str(sz.get("sku") or f"{c.get('id')}-{label}")
                 in_stock = bool(sz.get("isInStock"))
-                flat_variants.append(
+                color_variants.append(
                     {
                         "id": f"bb-{c.get('id')}-{slugify(label)}",
                         "name": f"{color} / {label}",
@@ -736,6 +767,9 @@ def main() -> None:
                         "bbCollections": color_cols,
                     }
                 )
+            # Smallest → largest (XXXS before XXS …), matching PDP chip order.
+            color_variants.sort(key=lambda v: _bb_size_sort_key(str(v.get("size") or "")))
+            flat_variants.extend(color_variants)
 
         in_stock_prices = [v["price"] for v in flat_variants if v.get("inStock") and v["price"]]
         price = min(in_stock_prices) if in_stock_prices else (min(prices_krw) if prices_krw else 0)
