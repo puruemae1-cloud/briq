@@ -128,9 +128,9 @@ export function getNewArrivalsProducts(list: Product[]): Product[] {
 /**
  * Homepage lookbook rails — newest catalogue update first.
  * Prefers in-stock styles so OOS newest items don't occupy the rail.
- * Matches each rail's "전체 보기" (`sort=new`) and weekly brand sync stamps.
- * `updatedAt` lets weekly syncs refresh homepage order without losing the
- * original `registeredAt` chronology for first-import history.
+ *
+ * Prefer ``assignHomepageCategoryRails`` / ``getHomepageRailProductsExclusive``
+ * on the homepage so the same brand cannot occupy multiple category rails.
  */
 export function getHomepageRailProducts(
   list: Product[],

@@ -192,6 +192,16 @@ def main() -> None:
         check=False,
     )
 
+    # Homepage rails: one brand per category (시그니처 vs 슈즈/악세서리 …).
+    subprocess.check_call(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "refresh-homepage-rail-picks.py"),
+            "--fail",
+        ],
+        cwd=str(ROOT),
+    )
+
     print("Arc'teryx weekly sync complete.", flush=True)
 
 

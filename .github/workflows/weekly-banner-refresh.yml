@@ -52,6 +52,8 @@ jobs:
             "chore: weekly sports banner refresh" \
             public/banners \
             src/data/banner-refresh-manifest.json \
+            src/data/homepage-rail-picks.json \
             scripts/weekly-banner-refresh.py \
             scripts/banner_smart_crop.py \
+            scripts/refresh-homepage-rail-picks.py \
             scripts/push-product-images-tag.py

@@ -73,4 +73,6 @@ jobs:
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
             scripts/verify-product-images.py \
-            scripts/ci-commit-push.sh
+            scripts/refresh-homepage-rail-picks.py \
+            scripts/ci-commit-push.sh \
+            src/data/homepage-rail-picks.json

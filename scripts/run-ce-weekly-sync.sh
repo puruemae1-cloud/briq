@@ -47,4 +47,7 @@ if [[ -s tmp/ce-missing-on-cdn.txt ]]; then
 fi
 python3 scripts/verify-catalog-images.py --brand ce --check-cdn || true
 
+# Homepage rails: keep brands exclusive across category sections.
+python3 scripts/refresh-homepage-rail-picks.py --fail || true
+
 echo "OK CE weekly sync"

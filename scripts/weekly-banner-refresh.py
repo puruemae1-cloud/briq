@@ -16,6 +16,7 @@ import hashlib
 import json
 import random
 import re
+import subprocess
 import sys
 import time
 import urllib.request
@@ -1549,6 +1550,17 @@ def main() -> int:
         }
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
         print(f"wrote {MANIFEST}", flush=True)
+
+    # Keep homepage category rails brand-exclusive after banner week rolls.
+    if not args.dry_run:
+        subprocess.check_call(
+            [
+                sys.executable,
+                str(ROOT / "scripts" / "refresh-homepage-rail-picks.py"),
+                "--fail",
+            ],
+            cwd=str(ROOT),
+        )
 
     print(f"done ok={ok} fail={fail}", flush=True)
     return 0 if ok > 0 and fail < ok else 1

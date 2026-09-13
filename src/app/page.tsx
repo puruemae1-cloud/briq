@@ -9,11 +9,20 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
-import { getHomepageRailProducts } from "@/lib/product-sort";
+import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
 export default async function HomePage() {
   // Fixed asset — do not pickRotating / weekly-refresh this slot.
   const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
+
+  // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
+  const categoryRails = homeLookBanners
+    .filter((b) => b.categoryId)
+    .map((b) => ({
+      railId: b.id,
+      products: getProductsByCategory(b.categoryId),
+    }));
+  const railProducts = assignHomepageCategoryRails(categoryRails, 4);
 
   return (
     <>
@@ -42,10 +51,7 @@ export default async function HomePage() {
       <div className="lookbook" aria-label="Briq lookbook">
         {homeLookBanners.map((banner, i) => {
           const products = banner.categoryId
-            ? getHomepageRailProducts(
-                getProductsByCategory(banner.categoryId),
-                4,
-              )
+            ? railProducts[banner.id] || []
             : [];
           const railLinks = resolveHomeRailLinks(banner);
 

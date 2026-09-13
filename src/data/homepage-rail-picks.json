@@ -1,0 +1,129 @@
+{
+  "generatedAt": "2026-09-13T11:06:31Z",
+  "limit": 4,
+  "rails": {
+    "luxury": {
+      "productIds": [
+        "axa-x000010565",
+        "axa-x000010737",
+        "axa-x000010744",
+        "axa-x000010748"
+      ],
+      "brands": [
+        "arcteryx",
+        "arcteryx",
+        "arcteryx",
+        "arcteryx"
+      ]
+    },
+    "watches": {
+      "productIds": [
+        "vw-vv240pkgd-xxx-ze-rose-gold",
+        "vw-vv328grgdw-xxx-gold",
+        "vw-vv328dpkslw-xxx-silver-pink",
+        "vw-vv261lblsl-xxx-ze-blue-silver"
+      ],
+      "brands": [
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood"
+      ]
+    },
+    "bags": {
+      "productIds": [
+        "ce-120693fx9-01cr",
+        "ce-123662j79-gfy5",
+        "ce-l107r4g77-04lu",
+        "ce-l104v3280-02nw"
+      ],
+      "brands": [
+        "celine",
+        "celine",
+        "celine",
+        "celine"
+      ]
+    },
+    "shoes": {
+      "productIds": [
+        "di-kct115vea-s900",
+        "di-kdf215lab-s900",
+        "di-kco512cst-s57u",
+        "di-kcb384tfl-s900"
+      ],
+      "brands": [
+        "dior",
+        "dior",
+        "dior",
+        "dior"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "mb-wine-carrier",
+        "mb-tree-tote-raffia",
+        "mb-throw-blanket",
+        "mb-small-solid-merino-wool-scarf"
+      ],
+      "brands": [
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
+      ]
+    },
+    "sports": {
+      "productIds": [
+        "gg-murdoch",
+        "gg-marsh",
+        "gg-legend",
+        "gg-lamar"
+      ],
+      "brands": [
+        "galvin-green",
+        "galvin-green",
+        "galvin-green",
+        "galvin-green"
+      ]
+    }
+  },
+  "brands": {
+    "arcteryx": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
+    "celine": [
+      "bags",
+      "bags",
+      "bags",
+      "bags"
+    ],
+    "dior": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
+    ],
+    "galvin-green": [
+      "sports",
+      "sports",
+      "sports",
+      "sports"
+    ],
+    "mulberry": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "vivienne-westwood": [
+      "watches",
+      "watches",
+      "watches",
+      "watches"
+    ]
+  },
+  "overlaps": {}
+}
