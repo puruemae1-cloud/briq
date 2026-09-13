@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_order import sort_ax_sizes  # noqa: E402
 from ax_translate_common import load_ax_translate_cache, make_translate_fn  # noqa: E402
+from ax_registered import load_prev_registered, resolve_registered_at, utc_now  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-catalog-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-pdp-cache.json"
@@ -235,7 +236,9 @@ def main() -> None:
     pdp_all = json.loads(PDP_PATH.read_text())
     products_out: list[str] = []
     products_json: list[dict] = []
-    batch_start = datetime.now(timezone.utc).replace(microsecond=0)
+    prev = load_prev_registered(OUT_PATH, OUT_JSON)
+    now = utc_now()
+    new_stamp_i = [0]
 
     for idx, p in enumerate(raw["products"]):
         pid = p["id"]
@@ -394,8 +397,13 @@ def main() -> None:
             if _en_ratio(f) > 0.35:
                 print(f"WARN EN feature left on {pid}: {f[:90]}", flush=True)
 
-        registered = (batch_start + timedelta(seconds=idx)).strftime(
-            "%Y-%m-%dT%H:%M:%S.000Z"
+        registered = resolve_registered_at(
+            f"ax-{pid.lower()}",
+            prev=prev,
+            is_new=bool(p.get("isNew")),
+            bump_is_new=True,
+            now=now,
+            new_stamp_i=new_stamp_i,
         )
         accent = ACCENTS[idx % len(ACCENTS)]
         style_id = f"ax-{pid.lower()}"

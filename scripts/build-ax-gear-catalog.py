@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from ax_size_order import sort_ax_sizes  # noqa: E402
 from ax_gear_size_charts import chart_for_gear_product  # noqa: E402
 from ax_translate_common import load_ax_translate_cache, make_translate_fn  # noqa: E402
+from ax_registered import load_prev_registered, resolve_registered_at, utc_now  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/ax/ax-gear-raw.json"
 PDP_PATH = ROOT / "src/data/ax/ax-gear-pdp-cache.json"
@@ -188,7 +189,10 @@ def main() -> None:
     raw = json.loads(RAW_PATH.read_text())
     pdp_all = json.loads(PDP_PATH.read_text()) if PDP_PATH.exists() else {}
     products_out: list[str] = []
-    batch_start = datetime.now(timezone.utc).replace(microsecond=0)
+    # Gear PLP marks almost everything is_new — only stamp brand-new SKUs.
+    prev = load_prev_registered(OUT_PATH)
+    now = utc_now()
+    new_stamp_i = [0]
 
     for idx, p in enumerate(raw["products"]):
         pid = p["id"]
@@ -359,8 +363,13 @@ def main() -> None:
             elif body:
                 features_ko.append(body)
 
-        registered = (batch_start + timedelta(seconds=idx)).strftime(
-            "%Y-%m-%dT%H:%M:%S.000Z"
+        registered = resolve_registered_at(
+            f"axg-{pid.lower()}",
+            prev=prev,
+            is_new=bool(p.get("isNew")),
+            bump_is_new=False,
+            now=now,
+            new_stamp_i=new_stamp_i,
         )
         accent = ACCENTS[idx % len(ACCENTS)]
         style_id = f"axg-{pid.lower()}"
