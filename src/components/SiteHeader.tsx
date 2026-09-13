@@ -188,9 +188,6 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
             </label>
           </div>
           <nav className="mobile-drawer__nav">
-            <a href="/shop" className="mobile-drawer__top-link">
-              Shop
-            </a>
             {navCategories.map((c) =>
               c.children?.length ? (
                 <details key={c.id} className="mobile-drawer__group">
