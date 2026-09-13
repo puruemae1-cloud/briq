@@ -138,6 +138,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "lv": [ROOT / "src/data/lv/lv-catalog.json"],
     "di": [ROOT / "src/data/di/di-catalog.json"],
     "ce": [ROOT / "src/data/ce/ce-catalog.json"],
+    "mb": [ROOT / "src/data/mb/mb-catalog.json"],
 }
 
 

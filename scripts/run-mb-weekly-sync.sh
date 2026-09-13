@@ -73,6 +73,15 @@ for leaf in "${LEAVES[@]}"; do
 done
 
 PYTHONUNBUFFERED=1 BRIQ_FAST_BUILD=0 python3 scripts/build-mb-catalog.py
+# Leftover EN features/story (rate-limited); safe to re-run.
+PYTHONUNBUFFERED=1 python3 scripts/fill-mb-ko-fields.py || {
+  echo "WARN: MB KO field fill incomplete — safe to re-run fill-mb-ko-fields.py"
+}
+
+python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55 || {
+  echo "WARN: MB Korean QA failed — re-run fill-mb-ko-fields.py"
+  exit 1
+}
 
 # Publish any local mb-pdp folders missing from the product-images CDN tag
 # (Vercel serves photos from the tag — never rely on main for PDP bytes).
