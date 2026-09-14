@@ -1679,9 +1679,10 @@ body:has(.nav-drawer-toggle:checked) {
     overflow: hidden;
   }
 
+  /* Beat inline desktop aspect ratios — wide frames clip eyebrow/CTA on phones */
   .look-banner--fullframe {
-    aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
-    min-height: 0;
+    aspect-ratio: 5 / 4 !important;
+    min-height: 17.5rem;
     max-height: none;
     height: auto;
     overflow: hidden;
@@ -1724,7 +1725,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe .look-banner__content {
     position: relative;
     flex: none;
-    padding: 0 1.15rem 1.15rem;
+    padding: 1.2rem 1.15rem 1.35rem;
     background: transparent;
     max-width: min(34rem, 100%);
   }
@@ -1767,7 +1768,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner__content {
-    padding: 0 1.15rem 1.15rem;
+    padding: 1.2rem 1.15rem 1.35rem;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
