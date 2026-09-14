@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { BannerImage } from "@/components/BannerImage";
 import { BrandWordmark } from "@/components/BrandWordmark";
-import { CollectionOrdersGrid } from "@/components/CollectionOrdersGrid";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { ShopNavLink } from "@/components/ShopNavLink";
 import { ShopProductGrid } from "@/components/ShopProductGrid";
@@ -13,22 +12,23 @@ import {
   navCategories,
   type NavChild,
 } from "@/data/categories";
-import { getProductsByCategory } from "@/data/products";
 import { pickRotating } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
-import { searchProducts } from "@/lib/product-search";
+import { toCardProduct } from "@/lib/product-card-dto";
 import { resolveShopBrand } from "@/lib/shop-brand";
+import {
+  SHOP_PAGE_SIZE,
+  getShopProductList,
+  sliceShopPage,
+} from "@/lib/shop-list";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
   buildShopHref,
-  getNewArrivalsProducts,
   parseProductSort,
-  preferGgApparelFirst,
-  sortProducts,
 } from "@/lib/product-sort";
 
 const NEW_ARRIVALS_HERO_IMAGES = [
@@ -50,8 +50,6 @@ type Props = {
     sort?: string;
   }>;
 };
-
-const LOAD_MORE_PAGE_SIZE = 24;
 
 export async function generateMetadata({
   searchParams,
@@ -131,17 +129,15 @@ export default async function ShopPage({ searchParams }: Props) {
       !sub,
   );
 
-  let list = getProductsByCategory(category, sub);
-  list = searchProducts(list, params.q);
-  if (isNewArrivals) {
-    list = getNewArrivalsProducts(list);
-  } else {
-    list = sortProducts(list, sort);
-  }
-  // Men/Women include unisex accessories — keep apparel first like the official PLP.
-  if (sub === "gg-men" || sub === "gg-women") {
-    list = preferGgApparelFirst(list);
-  }
+  // Never ship the full filtered catalogue to the client — mobile soft-nav
+  // OOMs on category-wide PLPs (~7k–22k products). First page only + API more.
+  const list = getShopProductList({
+    category,
+    sub,
+    q: params.q,
+    sort: params.sort,
+  });
+  const pageProducts = sliceShopPage(list, 0, SHOP_PAGE_SIZE).map(toCardProduct);
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
@@ -270,7 +266,7 @@ export default async function ShopPage({ searchParams }: Props) {
                 href="/shop"
                 scroll={false}
                 replace
-                className={`chip ${category === "all" && !sub ? "is-active" : ""}`}
+                className={`chip ${category === "all" && !sub && !isNewArrivals ? "is-active" : ""}`}
               >
                 Shop (전체상품)
               </ShopNavLink>
@@ -350,13 +346,9 @@ export default async function ShopPage({ searchParams }: Props) {
             })}
 
             <div className="shop-browse__controls" aria-label="상품 정렬 필터">
-              {sort !== "orders" ? (
-                <p className="shop-browse__count">
-                  총 {list.length.toLocaleString()}개 상품
-                </p>
-              ) : (
-                <span className="shop-browse__count" aria-hidden />
-              )}
+              <p className="shop-browse__count">
+                총 {list.length.toLocaleString()}개 상품
+              </p>
               <div className="shop-browse__sort" role="list">
                 {PRODUCT_SORTS.map((option) => (
                   <ShopNavLink
@@ -375,15 +367,19 @@ export default async function ShopPage({ searchParams }: Props) {
               </div>
             </div>
 
-            {sort === "orders" ? (
-              <CollectionOrdersGrid products={list} />
-            ) : (
-              <ShopProductGrid
-                key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}`}
-                products={list}
-                pageSize={LOAD_MORE_PAGE_SIZE}
-              />
-            )}
+            <ShopProductGrid
+              key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}`}
+              products={pageProducts}
+              totalCount={list.length}
+              pageSize={SHOP_PAGE_SIZE}
+              query={{
+                category,
+                sub,
+                q: params.q,
+                sort: isNewArrivals ? "new" : sort,
+              }}
+              liveOrdersRank={sort === "orders"}
+            />
           </div>
         </div>
       </section>

@@ -1,0 +1,37 @@
+import { NextRequest, NextResponse } from "next/server";
+import { toCardProduct } from "@/lib/product-card-dto";
+import {
+  SHOP_PAGE_SIZE,
+  getShopProductList,
+  sliceShopPage,
+} from "@/lib/shop-list";
+
+const MAX_LIMIT = 48;
+
+export async function GET(req: NextRequest) {
+  const sp = req.nextUrl.searchParams;
+  const category = sp.get("category") ?? "all";
+  const sub = sp.get("sub") ?? undefined;
+  const q = sp.get("q") ?? undefined;
+  const sort = sp.get("sort");
+  const offset = Math.max(0, Number.parseInt(sp.get("offset") || "0", 10) || 0);
+  const limitRaw = Number.parseInt(sp.get("limit") || String(SHOP_PAGE_SIZE), 10);
+  const limit = Math.min(MAX_LIMIT, Math.max(1, limitRaw || SHOP_PAGE_SIZE));
+
+  const list = getShopProductList({ category, sub, q, sort });
+  const products = sliceShopPage(list, offset, limit).map(toCardProduct);
+
+  return NextResponse.json(
+    {
+      products,
+      total: list.length,
+      offset,
+      limit,
+    },
+    {
+      headers: {
+        "Cache-Control": "public, s-maxage=30, stale-while-revalidate=120",
+      },
+    },
+  );
+}

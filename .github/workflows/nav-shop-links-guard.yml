@@ -1,0 +1,47 @@
+name: Nav shop links guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/data/categories.ts"
+      - "src/data/home-banners.ts"
+      - "src/lib/site.ts"
+      - "src/app/shop/**"
+      - "src/components/ShopProductGrid.tsx"
+      - "src/lib/shop-list.ts"
+      - "scripts/check-nav-shop-links.py"
+  pull_request:
+    paths:
+      - "src/data/categories.ts"
+      - "src/data/home-banners.ts"
+      - "src/lib/site.ts"
+      - "src/app/shop/**"
+      - "src/components/ShopProductGrid.tsx"
+      - "src/lib/shop-list.ts"
+      - "scripts/check-nav-shop-links.py"
+  schedule:
+    # After Friday weekly brand syncs settle
+    - cron: "30 14 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nav-shop-links-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit category shop links + PLP pagination guard
+        run: python3 scripts/check-nav-shop-links.py --fail

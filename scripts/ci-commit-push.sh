@@ -15,6 +15,11 @@ if git diff --staged --quiet; then
   exit 0
 fi
 
+# Re-run nav/PLP guard when weekly syncs touch shop routing surfaces.
+if git diff --staged --name-only | grep -Eq '(^|/)(src/data/categories\.ts|src/data/home-banners\.ts|src/app/shop/)'; then
+  python3 scripts/check-nav-shop-links.py --fail
+fi
+
 # Avoid non-fast-forward if another weekly job pushed first.
 pull_rebase() {
   git pull --rebase --autostash origin main || git pull --rebase --autostash origin HEAD || true

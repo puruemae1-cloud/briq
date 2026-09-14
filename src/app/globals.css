@@ -3360,11 +3360,23 @@ body:has(.nav-drawer-toggle:checked) {
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.shop-browse__sort-btn:hover,
+@media (hover: hover) and (pointer: fine) {
+  .shop-browse__sort-btn:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #f7f8f5;
+  }
+}
+
 .shop-browse__sort-btn.is-active {
   background: var(--ink);
   border-color: var(--ink);
   color: #f7f8f5;
+}
+
+.shop-browse__sort-btn.is-pending {
+  opacity: 0.72;
+  border-style: dashed;
 }
 
 .shop-browse__count {
@@ -3411,6 +3423,12 @@ body:has(.nav-drawer-toggle:checked) {
   letter-spacing: 0;
 }
 
+.shop-browse__more-error {
+  margin: 0.65rem 0 0;
+  color: #b42318;
+  font-size: 0.86rem;
+}
+
 .category-row::-webkit-scrollbar {
   display: none;
 }
@@ -3425,11 +3443,24 @@ body:has(.nav-drawer-toggle:checked) {
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.chip:hover,
+/* Touch devices stick :hover after tap — only paint hover on fine pointers. */
+@media (hover: hover) and (pointer: fine) {
+  .chip:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #f7f8f5;
+  }
+}
+
 .chip.is-active {
   background: var(--ink);
   border-color: var(--ink);
   color: #f7f8f5;
+}
+
+.chip.is-pending {
+  opacity: 0.72;
+  border-style: dashed;
 }
 
 .product-grid {
