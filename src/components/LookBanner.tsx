@@ -43,7 +43,7 @@ export function LookBannerBlock({
       style={
         banner.fullFrame && banner.aspectRatio
           ? ({
-              aspectRatio: banner.aspectRatio,
+              // Desktop only — mobile overrides via CSS (avoid inline aspect clipping CTAs).
               "--look-banner-aspect": banner.aspectRatio,
             } as CSSProperties)
           : undefined

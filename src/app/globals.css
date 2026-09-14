@@ -1679,10 +1679,10 @@ body:has(.nav-drawer-toggle:checked) {
     overflow: hidden;
   }
 
-  /* Beat inline desktop aspect ratios — wide frames clip eyebrow/CTA on phones */
+  /* Taller than desktop wide frames so eyebrow + CTA keep natural inset */
   .look-banner--fullframe {
-    aspect-ratio: 5 / 4 !important;
-    min-height: 17.5rem;
+    aspect-ratio: 3 / 4;
+    min-height: 22rem;
     max-height: none;
     height: auto;
     overflow: hidden;
@@ -1725,7 +1725,7 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--fullframe .look-banner__content {
     position: relative;
     flex: none;
-    padding: 1.2rem 1.15rem 1.35rem;
+    padding: 1.55rem 1.2rem 1.7rem;
     background: transparent;
     max-width: min(34rem, 100%);
   }
@@ -1737,7 +1737,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner--carousel .look-banner__content {
-    padding: 0 1.15rem 1.1rem;
+    padding: 1.55rem 1.2rem 1.7rem;
   }
 
   .look-banner__title-en {
@@ -1749,14 +1749,14 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner__support {
-    margin: 0.65rem 0 1rem;
+    margin: 0.55rem 0 0.95rem;
     font-size: 0.84rem;
     line-height: 1.45;
     max-width: 26rem;
   }
 
   .look-banner__eyebrow {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.45rem;
     font-size: 0.68rem;
     letter-spacing: 0.28em;
   }
@@ -1768,7 +1768,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .look-banner__content {
-    padding: 1.2rem 1.15rem 1.35rem;
+    padding: 1.55rem 1.2rem 1.7rem;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
