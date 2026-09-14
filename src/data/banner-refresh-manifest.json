@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-04T06:06:33.674547+00:00",
+  "refreshedAt": "2026-09-14T20:29:14.672929+00:00",
   "weekSeed": 202636,
   "mode": "sports-only",
   "slots": {
@@ -133,13 +133,14 @@
     },
     "event-now-london.jpg": {
       "sourceProductId": "fixed-now-in-london",
-      "sourceImage": "local:event-now-london",
-      "focal": "50% 42%",
+      "sourceImage": "local:chanel-fw26-turquoise-flap",
+      "focal": "50% 48%",
       "shop": false,
       "kind": "look",
       "tone": "fixed-color",
       "locked": true,
-      "sourceAspect": 1.8053596614950636
+      "sourceAspect": 0.7498535442296427,
+      "note": "fixed mobile creative — Chanel FW26 portrait; desktop separate"
     },
     "rot-event-1.jpg": {
       "sourceProductId": "gc-a003wdi46010926",
@@ -684,13 +685,14 @@
     },
     "luxury-heritage-modern.jpg": {
       "sourceProductId": "fixed-luxury-heritage-modern",
-      "sourceImage": "local:luxury-flight-mode-desert",
-      "focal": "50% 42%",
+      "sourceImage": "local:gucci-primavera-july26-35",
+      "focal": "50% 46%",
       "shop": false,
       "kind": "look",
       "tone": "fixed-color",
       "locked": true,
-      "sourceAspect": 1.7778
+      "sourceAspect": 1.499531396438613,
+      "note": "fixed mobile creative — Gucci Primavera July26-35; desktop separate"
     },
     "accessories-finishing-edit.jpg": {
       "sourceProductId": "fixed-accessories-finishing-edit",
