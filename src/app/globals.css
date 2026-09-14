@@ -1679,10 +1679,10 @@ body:has(.nav-drawer-toggle:checked) {
     overflow: hidden;
   }
 
-  /* Taller than desktop wide frames so eyebrow + CTA keep natural inset */
+  /* Match watches (2500/1875 ≈ 4/3) — taller than bags/accessories desktop crops */
   .look-banner--fullframe {
-    aspect-ratio: 3 / 4;
-    min-height: 22rem;
+    aspect-ratio: 4 / 3;
+    min-height: 0;
     max-height: none;
     height: auto;
     overflow: hidden;
@@ -2137,7 +2137,6 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner--fullframe {
   min-height: 0;
   max-height: none;
-  aspect-ratio: var(--look-banner-aspect, 2560 / 1418);
   height: auto;
 }
 
