@@ -15,12 +15,7 @@ type BannerImageProps = {
 };
 
 type BannerTier = "mobile" | "tablet" | "desktop";
-
-function tierForWidth(width: number): BannerTier {
-  if (width <= 899) return "mobile";
-  if (width <= 1199) return "tablet";
-  return "desktop";
-}
+type CdnPick = "primary" | "fallback";
 
 function catalogPath(catalogSrc: string, tier: BannerTier): string {
   if (tier === "mobile") return toMobileBannerSrc(catalogSrc);
@@ -31,34 +26,19 @@ function catalogPath(catalogSrc: string, tier: BannerTier): string {
 function absoluteBannerUrl(
   catalogSrc: string,
   tier: BannerTier,
-  useFallbackCdn: boolean,
+  cdn: CdnPick,
 ): string {
   const path = catalogPath(catalogSrc, tier);
-  return useFallbackCdn ? mediaUrlFallback(path) || mediaUrl(path) : mediaUrl(path);
-}
-
-/** Ordered fallbacks: current tier → larger tiers, primary CDN then jsDelivr. */
-function buildFallbackChain(catalogSrc: string, tier: BannerTier): string[] {
-  const tiers: BannerTier[] =
-    tier === "mobile"
-      ? ["mobile", "tablet", "desktop"]
-      : tier === "tablet"
-        ? ["tablet", "desktop"]
-        : ["desktop"];
-  const out: string[] = [];
-  for (const t of tiers) {
-    const primary = absoluteBannerUrl(catalogSrc, t, false);
-    const fallback = absoluteBannerUrl(catalogSrc, t, true);
-    if (primary) out.push(primary);
-    if (fallback && fallback !== primary) out.push(fallback);
+  if (cdn === "fallback") {
+    return mediaUrlFallback(path) || mediaUrl(path);
   }
-  return out;
+  return mediaUrl(path);
 }
 
 /**
- * Device-optimised banner JPEGs. Picks mobile/tablet/desktop URL from viewport
- * width (more reliable than `srcSet` + external CDN). Steps through CDN hosts
- * on error.
+ * Device-optimised banner JPEGs via `<picture>` media queries so the correct
+ * tier (m / t / desktop) is chosen on first paint — no desktop→mobile flash.
+ * CDN host fallbacks still step through on error.
  */
 export function BannerImage({
   src,
@@ -69,45 +49,64 @@ export function BannerImage({
   style,
   "aria-hidden": ariaHidden,
 }: BannerImageProps) {
-  const [tier, setTier] = useState<BannerTier>("desktop");
-  const [fallbackIndex, setFallbackIndex] = useState(0);
-  const [mounted, setMounted] = useState(false);
+  const [cdn, setCdn] = useState<CdnPick>("primary");
+  /** After both CDNs fail for a tier, drop to the next larger tier. */
+  const [tierFloor, setTierFloor] = useState<BannerTier>("mobile");
 
   useEffect(() => {
-    setMounted(true);
-    const update = () => setTier(tierForWidth(window.innerWidth));
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
+    setCdn("primary");
+    setTierFloor("mobile");
+  }, [src]);
 
-  useEffect(() => {
-    setFallbackIndex(0);
-  }, [src, tier]);
-
-  const chain = useMemo(() => buildFallbackChain(src, tier), [src, tier]);
-  const resolvedSrc = chain[fallbackIndex] ?? mediaUrl(src);
-  const displaySrc = mounted ? resolvedSrc : mediaUrl(src);
+  const urls = useMemo(
+    () => ({
+      mobile: absoluteBannerUrl(src, "mobile", cdn),
+      tablet: absoluteBannerUrl(src, "tablet", cdn),
+      desktop: absoluteBannerUrl(src, "desktop", cdn),
+    }),
+    [src, cdn],
+  );
 
   const onError = (_e: SyntheticEvent<HTMLImageElement>) => {
-    if (fallbackIndex + 1 < chain.length) {
-      setFallbackIndex((i) => i + 1);
+    if (cdn === "primary") {
+      setCdn("fallback");
+      return;
     }
+    // Both CDNs failed for the current floor — escalate tier so <picture>
+    // stops offering the broken smaller asset.
+    setCdn("primary");
+    setTierFloor((prev) =>
+      prev === "mobile" ? "tablet" : prev === "tablet" ? "desktop" : "desktop",
+    );
   };
 
+  const showMobile = tierFloor === "mobile";
+  const showTablet = tierFloor === "mobile" || tierFloor === "tablet";
+
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      className={className}
-      src={displaySrc}
-      alt={alt}
-      loading={loading}
-      decoding="async"
-      fetchPriority={fetchPriority}
-      style={style}
-      aria-hidden={ariaHidden}
-      referrerPolicy="no-referrer"
-      onError={onError}
-    />
+    <picture style={{ display: "contents" }}>
+      {showMobile ? (
+        <source media="(max-width: 899px)" srcSet={urls.mobile} />
+      ) : null}
+      {showTablet ? (
+        <source
+          media="(min-width: 900px) and (max-width: 1199px)"
+          srcSet={urls.tablet}
+        />
+      ) : null}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        className={className}
+        src={urls.desktop}
+        alt={alt}
+        loading={loading}
+        decoding="async"
+        fetchPriority={fetchPriority}
+        style={style}
+        aria-hidden={ariaHidden}
+        referrerPolicy="no-referrer"
+        onError={onError}
+      />
+    </picture>
   );
 }
