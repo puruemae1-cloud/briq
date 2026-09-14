@@ -77,7 +77,7 @@ def _new_page(playwright):
     return browser, page
 
 
-def scrape_plp(url: str, *, max_scroll: int = 14) -> list[dict]:
+def scrape_plp(url: str, *, max_scroll: int = 28) -> list[dict]:
     """Return PLP colourway cards: title, price, href, image."""
     from playwright.sync_api import sync_playwright
 

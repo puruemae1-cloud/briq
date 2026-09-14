@@ -305,24 +305,37 @@ def normalize_sizes(raw_sizes: list) -> list[str]:
 
 
 def dedupe_colourways(colourways: list[dict]) -> list[dict]:
-    """Same SKU appears in multiple leaf scrapes — keep one row per sku/id."""
+    """Same SKU appears in multiple leaf scrapes — keep one row per sku/id.
+
+    Merge `collections` from every leaf so nav filters (e.g. what's-new) still
+    match when a richer PDP row wins from another leaf file.
+    """
     best: dict[str, dict] = {}
+    merged_collections: dict[str, list[str]] = {}
     for row in colourways:
         key = str(row.get("sku") or row.get("id") or "").strip().upper()
         if not key:
             key = slugify(
                 f"{row.get('title') or ''}-{row.get('colour') or ''}", max_len=64
             )
+        cols = merged_collections.setdefault(key, [])
+        for c in row.get("collections") or []:
+            if c and c not in cols:
+                cols.append(c)
         prev = best.get(key)
         if not prev:
-            best[key] = row
+            best[key] = dict(row)
             continue
         # Prefer the row with more local images / longer copy.
         score = len(row.get("localImages") or []) + len(row.get("description") or "") // 50
         prev_score = len(prev.get("localImages") or []) + len(prev.get("description") or "") // 50
         if score > prev_score:
-            best[key] = row
-    return list(best.values())
+            best[key] = dict(row)
+    out: list[dict] = []
+    for key, row in best.items():
+        row["collections"] = list(merged_collections.get(key) or row.get("collections") or [])
+        out.append(row)
+    return out
 
 
 def build_story(desc_ko: str, details_ko: str, dims: list[str], images: list[str]) -> list[dict]:

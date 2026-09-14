@@ -91,7 +91,7 @@
       }
     ],
     "featuresKo": [
-      "이 종이 삽입물은 Agenda 크기의 Mulberry 정리함에 맞습니다.",
+      "이 종이 삽입물은 의제 크기의 Mulberry 정리를 가능하게 합니다.",
       "여행 정보, 세계 공휴일, 사교 행사, 세계 시간대 생일 및 기념일 페이지 개인 메모 페이지 연도 계획에 대한 연간 개요 모든 문구 품목은 FSC® 인증을 받았습니다.",
       "높이 15cm 너비 10.5cm 재료 종이 Mulberry의 접근 방식은 우리가 일하는 사람, 환경 및 지역 사회에 긍정적인 변화를 만드는 것입니다.",
       "우리의 모든 논문은 책임 있는 출처에서 제공됩니다.",
@@ -100,7 +100,7 @@
       "10.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.289209+00:00"
+    "updatedAt": "2026-09-14T10:08:58.637501+00:00"
   },
   {
     "id": "mb-2026-planner-diary-insert",
@@ -203,7 +203,7 @@
       "14.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.290660+00:00"
+    "updatedAt": "2026-09-14T10:08:58.639062+00:00"
   },
   {
     "id": "mb-2026-pocket-book-diary-insert",
@@ -297,7 +297,7 @@
       }
     ],
     "featuresKo": [
-      "이 종이 삽입물은 Pocket Book 크기의 Mulberry 정리함에 맞습니다.",
+      "이 종이 삽입물은 Pocket Book 크기의 Mulberry 정리를 가능하게 합니다.",
       "두 페이지로 펼쳐진 주 여행 정보, 세계 공휴일, 사교 행사, 세계 시간대 생일 및 기념일 페이지 개인 메모 페이지 연간 계획에 대한 연간 개요 모든 편지지 품목은 FSC® 인증을 받았습니다.",
       "높이 12cm 너비 7.5cm 재질 종이 Mulberry의 접근 방식은 우리가 일하는 사람, 환경 및 지역 사회에 긍정적인 변화를 가져오는 것입니다.",
       "우리의 모든 논문은 책임 있는 출처에서 제공됩니다.",
@@ -306,7 +306,7 @@
       "7.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.291761+00:00"
+    "updatedAt": "2026-09-14T10:08:58.640518+00:00"
   },
   {
     "id": "mb-8-card-wallet",
@@ -364,7 +364,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mb-men-wallets"
         ]
       },
       {
@@ -463,7 +464,7 @@
       "2cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.309999+00:00"
+    "updatedAt": "2026-09-14T10:08:58.658559+00:00"
   },
   {
     "id": "mb-alfie-sunglasses",
@@ -566,7 +567,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.311363+00:00"
+    "updatedAt": "2026-09-14T10:08:58.663835+00:00"
   },
   {
     "id": "mb-antony",
@@ -579,6 +580,7 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-gifts-him",
+      "mb-men-whats-new",
       "mulberry-bags",
       "mb-men-bags",
       "mb-men-bags-all",
@@ -630,7 +632,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -683,7 +686,11 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-bags-all"
+          "mb-men-bags-all",
+          "mb-men-messenger",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -925,7 +932,7 @@
       "7cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.314703+00:00"
+    "updatedAt": "2026-09-14T10:08:58.667247+00:00"
   },
   {
     "id": "mb-bayswater",
@@ -933,13 +940,16 @@
     "nameKo": "베이즈워터",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mulberry-bags",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
       "mb-gifts",
+      "mb-women-acc",
+      "mb-gifts-her",
       "mulberry-bags",
       "mb-women-bags",
       "mb-women-bags-all",
+      "mb-women-whats-new",
       "mb-women-icons",
       "mb-women-travel",
       "mb-women-travel-all"
@@ -988,7 +998,9 @@
         "size": "OS",
         "mbCollections": [
           "mulberry-accessories",
-          "mb-gifts"
+          "mb-gifts",
+          "mb-women-acc",
+          "mb-gifts-her"
         ]
       },
       {
@@ -1015,7 +1027,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-bags-all"
+          "mb-women-bags-all",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       },
       {
@@ -1042,7 +1057,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-bags-all"
+          "mb-women-bags-all",
+          "mb-women-icons"
         ]
       },
       {
@@ -1070,7 +1086,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-bags-all"
+          "mb-women-bags-all",
+          "mb-women-icons"
         ]
       },
       {
@@ -1212,7 +1229,7 @@
     ],
     "featuresKo": [
       "이 아이코닉한 가죽 백은 손잡이로 들고 다니거나 팔 안쪽에 걸치거나 어깨에 메고 다닐 수 있습니다.",
-      "Postman's Lock 잠금 Mulberry 나무 시그니처 자물쇠 상단 핸들 2개 메인 수납공간 1개 지퍼 포켓 2개 슬립 포켓 2개 황동 부품 마감 안감 없음 베이스의 베이스 피트 4개 당사가 다방면에 걸친 영국 라이프스타일 브랜드임을 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
+      "Postman's Lock 잠금 Mulberry 시그니처 자물쇠 상단 손잡이 나무 2개 메인 활동 공간 1개 지퍼 2개 클립 포켓 2개 끌어오기 부품 안감 없음 클립 피트 4개 당사가 다방면에 영국 생활스타일 이름을 알리는 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
       "높이 26.5cm 너비 36cm 깊이 16.5cm 핸들 드롭 15.5cm 무게 약 1.2kg 소재 NVT 이 제품은 Mulberry의 가장 클래식한 가죽을 새롭게 재해석한 Legacy NVT 가죽으로 제작되었습니다.",
       "이 가죽은 시간이 지나면서 부드러워지고 어두워질 수 있으며, 본연의 특성을 강화하고 고유한 녹청을 만들어냅니다.",
       "이 제품의 코드는 HH7941-275G110 입니다.",
@@ -1222,7 +1239,7 @@
       "15.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.319563+00:00"
+    "updatedAt": "2026-09-14T10:08:58.671732+00:00"
   },
   {
     "id": "mb-bayswater-thin-bracelet",
@@ -1323,7 +1340,7 @@
       "1.1cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.321629+00:00"
+    "updatedAt": "2026-09-14T10:08:58.673446+00:00"
   },
   {
     "id": "mb-belgrave-single-document-holder",
@@ -1456,7 +1473,7 @@
       "7cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.323656+00:00"
+    "updatedAt": "2026-09-14T10:08:58.675468+00:00"
   },
   {
     "id": "mb-british-summer-keyring-bumblebee",
@@ -1556,7 +1573,7 @@
       "0.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.326301+00:00"
+    "updatedAt": "2026-09-14T10:08:58.678046+00:00"
   },
   {
     "id": "mb-british-summer-keyring-fish",
@@ -1656,7 +1673,7 @@
       "0.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.327720+00:00"
+    "updatedAt": "2026-09-14T10:08:58.679412+00:00"
   },
   {
     "id": "mb-carbon-lite-care-spray",
@@ -1755,7 +1772,7 @@
       "약 15cm 간격으로 고르게 분사해줍니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.328061+00:00"
+    "updatedAt": "2026-09-14T10:08:58.679784+00:00"
   },
   {
     "id": "mb-chiltern-backpack",
@@ -1888,7 +1905,7 @@
       "15cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.332130+00:00"
+    "updatedAt": "2026-09-14T10:08:58.683526+00:00"
   },
   {
     "id": "mb-continental-long-zipped-card-holder",
@@ -2021,7 +2038,7 @@
       "1.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.334001+00:00"
+    "updatedAt": "2026-09-14T10:08:58.685487+00:00"
   },
   {
     "id": "mb-credit-card-slip",
@@ -2034,6 +2051,7 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-wallets",
+      "mb-men-whats-new",
       "mb-women-acc",
       "mb-women-purses"
     ],
@@ -2079,7 +2097,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-wallets"
+          "mb-men-wallets",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -2158,6 +2177,29 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-wallets"
+        ]
+      },
+      {
+        "id": "mb-g-rl4064-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_RL4064_205D117",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-rl4064-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl4064-205d117/1.jpg",
+          "/products/mb-pdp/g-rl4064-205d117/2.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/credit-card-slip-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -2297,20 +2339,20 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "8가지"
+        "valueKo": "9가지"
       }
     ],
     "featuresKo": [
       "포일 엠보싱 Mulberry 시그니처가 돋보이는 우아한 카드 슬립입니다.",
       "포일 엠보싱 Mulberry 시그니처 뒷면에 포일 엠보싱 Mulberry 나무 시그니처 뒷면에 4개의 신용 카드 슬롯 1개의 중앙 슬립 포켓 나파 안감 당사의 모노그램 서비스는 영국 및 일부 글로벌 매장에서 이용 가능합니다.",
-      "우리가 다방면에 걸친 영국 라이프스타일 브랜드임을 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
+      "우리가 다방면에 활동하는 영국 동물스타일로 유명한 동물로 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
       "높이 7.5cm 폭 10cm 소재 투톤 스몰 클래식 그레인 투톤 효과의 매끄럽고 플랫 그레인 가죽과 내추럴 프린트 그레인의 부드럽고 유연한 소가죽이 결합되었습니다.",
       "이 제품의 코드는 RL7422-552G110 입니다.",
       "7.5cm",
       "10cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.337056+00:00"
+    "updatedAt": "2026-09-14T10:08:58.688323+00:00"
   },
   {
     "id": "mb-darley-camera-bag",
@@ -2469,14 +2511,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "Detachable Mulberry branded leather strap · 16cm · 23cm · 7cm · 102cm · 27cm · 조절 및 탈착 가능한 가죽 스트랩 · 조절 및 탈부착 가능한 스트랩",
+        "bodyKo": "탈부착 가능한 Mulberry 브랜드 가죽 스트랩 · 16cm · 23cm · 7cm · 102cm · 27cm · 조절 및 탈착 가능한 가죽 스트랩 · 조절 및 탈부착 가능한 스트랩",
         "image": "/products/mb-pdp/g-hh0276-552g110/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "Detachable Mulberry branded leather strap · 16cm · 23cm · 7cm · 102cm · 27cm"
+        "valueKo": "탈부착 가능한 Mulberry 브랜드 가죽 스트랩 · 16cm · 23cm · 7cm · 102cm · 27cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -2493,13 +2535,13 @@
       "이 단계에서는 신중한 제어가 필요합니다.",
       "과도한 밀링은 엠보싱을 평평하게 하고 대비를 감소시킬 수 있는 반면, 언더 밀링은 투톤 효과가 완전히 나타나는 것을 방지합니다.",
       "이 상품의 코드는 HH0274-787K569 입니다.",
-      "Detachable Mulberry branded leather strap",
+      "탈부착 가능한 Mulberry 브랜드 가죽 스트랩",
       "16cm",
       "23cm",
       "7cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.340720+00:00"
+    "updatedAt": "2026-09-14T10:08:58.696132+00:00"
   },
   {
     "id": "mb-darley-clutch",
@@ -2681,7 +2723,6 @@
     ],
     "featuresKo": [
       "디테일 이스트 웨스트 클러치 백.",
-      "부드러운 골드 하드웨어 마감 Postman's Lock 클로저 내부 카드 슬립 포켓 6개 내부 슬립 포켓 1개 내부 지퍼 포켓 1개 멀티웨어 기능성을 위한 탈착식 체인 스트랩 Moire 안감 높이 12.5cm 폭 25cm 깊이 3cm - 4cm 체인 길이 117cm 스트랩 드롭 56cm 단축 스트랩 드롭 17cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 그레인 효과가 있는 부드러운 소가죽.",
       "그레인 표면을 보호하기 위해 가죽을 가볍게 마감했습니다.",
       "이 제품 코드: RL8971-205J647",
       "세부 정보 이스트 웨스트 클러치 백입니다. 황동 하드웨어 마감 Postman's Lock 잠금 내부 카드 슬립 포켓 6개 내부 슬립 포켓 1개 내부 지퍼 포켓 1개 다양한 착용 기능을 위한 탈착식 체인 스트랩 높이 12.5cm 너비 25cm 깊이 3cm - 4cm 체인 길이 117cm 스트랩 드롭 56cm 무게 약 0.5kg 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽. 가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다. 이 제품의 코드는 RL8971-205A100 입니다.",
@@ -2690,7 +2731,7 @@
       "25cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.344349+00:00"
+    "updatedAt": "2026-09-14T10:08:58.699713+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch",
@@ -2823,7 +2864,7 @@
       "얼룩덜룩한 마감 처리를 한 왁스 칠한 뱀가죽 효과 소재입니다. 각 피부는 먼저 드럼 염색을 통해 기본 색상을 정한 다음 양각 처리하여 뱀 질감을 만듭니다. 특유의 투톤 효과를 내기 위해 왁스를 도포합니다. 원하는 표면 효과에 도달하면 광택지를 도포하여 엠보싱 깊이와 표면 광택을 모두 다듬습니다. 그런 다음 스킨을 드럼에서 밀링하여 톤 간의 대비를 이끌어냅니다. 이 단계에서는 신중한 제어가 필요합니다. 과도한 밀링은 엠보싱을 평평하게 하고 대비를 감소시킬 수 있는 반면, 언더 밀링은 투톤 효과가 완전히 나타나는 것을 방지합니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.346279+00:00"
+    "updatedAt": "2026-09-14T10:08:58.701659+00:00"
   },
   {
     "id": "mb-darley-cosmetic-pouch-mulberry-x-british-pasture",
@@ -2922,13 +2963,12 @@
       "가죽의 자연스러운 특성을 기념하여 각 조각은 성장 자국, 가벼운 스크래치 또는 곡물 변형을 보여 고유하게 만들 수 있습니다.",
       "높이 12.5cm 폭 18.5cm 깊이 6.5cm 소재 영국 목초지 가죽 베지터블 태닝 가죽으로 천연 오일 마감으로 가죽의 결과 자국을 기념하며, 재생 원리를 실천하는 영국 농장에서 공급되어 각 제품에 개성과 차별성을 부여합니다.",
       "이 제품 코드: RL9114-782G234",
-      "디테일 브리티시 패스처 레더로 만든 달리 코스메틱 파우치. Postman의 잠금 장치가 있는 상단 플랩 내부 호일 엠보싱 멀버리 시그니처 하나의 메인 수납 브라스 하드웨어 마감 브리티시 패스처 가죽 브랜드로 만든 내부 멀버리 이 제품은 가죽 왁스와 천으로 구성된 멀버리 x 브리티시 패스처 가죽 더스트백 무료 케어 키트와 함께 제공됩니다. 가죽의 자연스러운 특성을 기념하여 각 조각은 성장 자국, 가벼운 스크래치 또는 곡물 변형을 보여 고유하게 만들 수 있습니다. 높이 12.5cm 폭 18.5cm 깊이 6.5cm 소재 영국 목초지 가죽 베지터블 태닝 가죽으로 천연 오일 마감으로 가죽의 결과 자국을 기념하며, 재생 원리를 실천하는 영국 농장에서 공급되어 각 제품에 개성과 차별성을 부여합니다. 이 제품 코드: RL9114-782G234",
       "12.5cm",
       "18.5cm",
       "6.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.349825+00:00"
+    "updatedAt": "2026-09-14T10:08:58.705348+00:00"
   },
   {
     "id": "mb-fantasy-mulberry-logo-stripe-towel",
@@ -2941,7 +2981,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -2988,7 +3030,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -3021,12 +3065,12 @@
     ],
     "featuresKo": [
       "여름 느낌의 파란색 줄무늬 면 수건입니다.",
-      "판타지 멀베리 로고 레터링 면 100% Made in Italy 길이 160cm 너비 95cm 소재 면 100% 본 상품 코드는 VY0013-063U910 입니다",
+      "메인베리 로고 레터링 셔츠 100% 판타지 Made in Italy 길이 160cm 너비 95cm 소재 셔츠 100% 본 코드는 VY0013-063U910 입니다",
       "160cm",
       "95cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.351085+00:00"
+    "updatedAt": "2026-09-14T10:08:58.706669+00:00"
   },
   {
     "id": "mb-folded-multi-card-wallet",
@@ -3034,9 +3078,11 @@
     "nameKo": "Folded Multi-Card 월렛",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-women-purses",
+    "subcategory": "mb-men-whats-new",
     "mbCollections": [
       "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new",
       "mb-women-acc",
       "mb-women-purses"
     ],
@@ -3046,22 +3092,53 @@
       "accessories"
     ],
     "descriptionKo": "깔끔하고 실용적인 Mulberry의 시그니처 프레스 스터드 잠금장치가 있는 접이식 멀티 카드 지갑은 가방이나 주머니에 넣어두기에 적합합니다.",
-    "image": "/products/mb-pdp/g-rl6447-205p187/1.jpg",
+    "image": "/products/mb-pdp/g-rl6447-205d117/1.jpg",
     "images": [
-      "/products/mb-pdp/g-rl6447-205p187/1.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/2.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/3.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/4.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/5.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/6.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/7.jpg",
-      "/products/mb-pdp/g-rl6447-205p187/8.jpg"
+      "/products/mb-pdp/g-rl6447-205d117/1.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/2.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/3.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/4.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/5.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/6.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/7.jpg",
+      "/products/mb-pdp/g-rl6447-205d117/8.jpg"
     ],
     "accent": "#1A1A1A",
     "gbpPrice": 275.0,
-    "sku": "G_RL6447_205P187",
-    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-butter-small-classic-grain",
+    "sku": "G_RL6447_205D117",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-foggy-grey-small-classic-grain",
     "variants": [
+      {
+        "id": "mb-g-rl6447-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_RL6447_205D117",
+        "gbpPrice": 275.0,
+        "price": 700000,
+        "image": "/products/mb-pdp/g-rl6447-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6447-205d117/1.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/2.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/3.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/4.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/5.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/6.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/7.jpg",
+          "/products/mb-pdp/g-rl6447-205d117/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-acc",
+          "mb-women-purses"
+        ]
+      },
       {
         "id": "mb-g-rl6447-205p187-sz-os",
         "name": "Butter Small Classic Grain",
@@ -3121,35 +3198,6 @@
         ]
       },
       {
-        "id": "mb-g-rl6447-205d117-sz-os",
-        "name": "Foggy Grey Small Classic Grain",
-        "nameKo": "Foggy Grey 스몰 클래식 그레인",
-        "sku": "G_RL6447_205D117",
-        "gbpPrice": 275.0,
-        "price": 700000,
-        "image": "/products/mb-pdp/g-rl6447-205d117/1.jpg",
-        "images": [
-          "/products/mb-pdp/g-rl6447-205d117/1.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/2.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/3.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/4.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/5.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/6.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/7.jpg",
-          "/products/mb-pdp/g-rl6447-205d117/8.jpg"
-        ],
-        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/folded-multi-card-wallet-foggy-grey-small-classic-grain",
-        "inStock": true,
-        "colorKey": "foggy-grey-small-classic-grain",
-        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
-        "size": "OS",
-        "mbCollections": [
-          "mulberry-accessories",
-          "mb-women-acc",
-          "mb-women-purses"
-        ]
-      },
-      {
         "id": "mb-g-rl6447-205a100-sz-os",
         "name": "Black Small Classic Grain",
         "nameKo": "Black 스몰 클래식 그레인",
@@ -3183,17 +3231,17 @@
       {
         "titleKo": "제품 소개",
         "bodyKo": "깔끔하고 실용적인 Mulberry의 시그니처 프레스 스터드 잠금장치가 있는 접이식 멀티 카드 지갑은 가방이나 주머니에 넣어두기에 적합합니다.",
-        "image": "/products/mb-pdp/g-rl6447-205p187/1.jpg"
+        "image": "/products/mb-pdp/g-rl6447-205d117/1.jpg"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "시그니처 프레스 스터드 잠금장치가 있는 카드 지갑. 포일 엠보싱 Mulberry 로고 Mulberry 트리 시그니처 프레스 스터드 포일 엠보싱 내부 Mulberry 트리 지퍼 수납공간 1개 내부 슬립 포켓 2개 내부 신용카드 슬롯 6개 지폐 수납칸 1개 텀블 마감 처리된 황동 구성품 나파 안감 모노그램 서비스는 영국 및 일부 글로벌 매장에서 제공됩니다. 우리가 다방면에 걸친 영국 라이프스타일 브랜드임을 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다. 높이 8cm 너비 12.5cm 깊이 3cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽입니다. 가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다. 이 제품의 코드는 RL6447-205A100 입니다.",
-        "image": "/products/mb-pdp/g-rl6447-205p187/2.jpg"
+        "image": "/products/mb-pdp/g-rl6447-205d117/2.jpg"
       },
       {
         "titleKo": "사이즈 & 디멘션",
         "bodyKo": "8cm · 12.5cm · 3cm",
-        "image": "/products/mb-pdp/g-rl6447-205p187/3.jpg"
+        "image": "/products/mb-pdp/g-rl6447-205d117/3.jpg"
       }
     ],
     "techSpecs": [
@@ -3209,7 +3257,7 @@
     "featuresKo": [
       "시그니처 프레스 스터드 잠금장치가 있는 카드 지갑.",
       "포일 엠보싱 Mulberry 로고 Mulberry 트리 시그니처 프레스 스터드 포일 엠보싱 내부 Mulberry 트리 지퍼 수납공간 1개 내부 슬립 포켓 2개 내부 신용카드 슬롯 6개 지폐 수납칸 1개 텀블 마감 처리된 황동 구성품 나파 안감 모노그램 서비스는 영국 및 일부 글로벌 매장에서 제공됩니다.",
-      "우리가 다방면에 걸친 영국 라이프스타일 브랜드임을 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
+      "우리가 다방면에 활동하는 영국 동물스타일로 유명한 동물로 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
       "높이 8cm 너비 12.5cm 깊이 3cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽입니다.",
       "가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다.",
       "이 제품의 코드는 RL6447-205A100 입니다.",
@@ -3218,7 +3266,7 @@
       "3cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.353783+00:00"
+    "updatedAt": "2026-09-14T10:08:58.709745+00:00"
   },
   {
     "id": "mb-football-keyring",
@@ -3230,7 +3278,8 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-keyrings"
+      "mb-men-keyrings",
+      "mb-men-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -3278,7 +3327,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-keyrings"
+          "mb-men-keyrings",
+          "mb-men-whats-new"
         ]
       }
     ],
@@ -3318,7 +3368,7 @@
       "12.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.355753+00:00"
+    "updatedAt": "2026-09-14T10:08:58.711947+00:00"
   },
   {
     "id": "mb-gift-card",
@@ -3326,10 +3376,14 @@
     "nameKo": "기프트 카드",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
-      "mb-gifts"
+      "mb-gifts",
+      "mb-women-acc",
+      "mb-gifts-her",
+      "mb-men-acc",
+      "mb-gifts-him"
     ],
     "tags": [
       "mulberry",
@@ -3364,7 +3418,11 @@
         "size": "OS",
         "mbCollections": [
           "mulberry-accessories",
-          "mb-gifts"
+          "mb-gifts",
+          "mb-women-acc",
+          "mb-gifts-her",
+          "mb-men-acc",
+          "mb-gifts-him"
         ]
       }
     ],
@@ -3383,7 +3441,7 @@
     ],
     "featuresKo": [],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.355807+00:00"
+    "updatedAt": "2026-09-14T10:08:58.712009+00:00"
   },
   {
     "id": "mb-hackney-shoulder-bag",
@@ -3570,7 +3628,7 @@
       "10cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.357649+00:00"
+    "updatedAt": "2026-09-14T10:08:58.714059+00:00"
   },
   {
     "id": "mb-heritage-backpack",
@@ -3585,7 +3643,10 @@
       "mb-gifts-him",
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-bags-all"
+      "mb-men-backpacks",
+      "mb-men-bags-all",
+      "mb-women-travel",
+      "mb-women-travel-all"
     ],
     "tags": [
       "mulberry",
@@ -3635,7 +3696,10 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mulberry-bags",
+          "mb-men-bags",
+          "mb-men-backpacks"
         ]
       },
       {
@@ -3664,7 +3728,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-bags-all"
+          "mb-men-bags-all",
+          "mb-women-travel",
+          "mb-women-travel-all"
         ]
       }
     ],
@@ -3706,7 +3772,7 @@
       "29cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.361331+00:00"
+    "updatedAt": "2026-09-14T10:08:58.718104+00:00"
   },
   {
     "id": "mb-heritage-braided-belt",
@@ -3823,14 +3889,14 @@
     ],
     "featuresKo": [
       "버클이 달린 남성용 벨트입니다.",
-      "부드러운 실크 송아지 가죽 소재의 브레이드 디테일 엠보싱 처리된 Mulberry England 로고 황동 하드웨어 마감 당사는 다방면에 걸친 영국 라이프스타일 브랜드임을 인식하여 브랜딩에 \"Mulberry\" 또는 \"Mulberry England\"로 표시될 수 있습니다.",
+      "부드러운 나무 송아지 가죽 소재의 브레이드 페인팅 엠보싱 처리된 Mulberry England 로고 처리 하드웨어는 다방면에 초기 영국식 스프레이스타일로 유명해진 인식 브랜딩에 \"Mulberry\" 또는 \"Mulberry England\"로 갈 수 있습니다.",
       "폭 3.5cm 소재 실키 송아지 가죽 결이 매우 곱고 부드럽고 실키한 촉감을 지닌 부드러운 송아지 가죽입니다.",
       "가죽은 가벼운 마감 처리와 부드럽고 매끄러운 표면을 가지고 있습니다.",
       "이 제품의 코드는 MM6396-657G130 입니다.",
       "3.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.362395+00:00"
+    "updatedAt": "2026-09-14T10:08:58.719179+00:00"
   },
   {
     "id": "mb-heritage-briefcase",
@@ -3845,8 +3911,11 @@
       "mb-gifts-him",
       "mulberry-bags",
       "mb-men-bags",
+      "mb-men-briefcases",
+      "mb-men-whats-new",
       "mb-men-bags-all",
-      "mb-men-briefcases"
+      "mb-women-travel",
+      "mb-women-travel-all"
     ],
     "tags": [
       "mulberry",
@@ -3894,7 +3963,11 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mulberry-bags",
+          "mb-men-bags",
+          "mb-men-briefcases",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -3922,7 +3995,11 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mulberry-bags",
+          "mb-men-bags",
+          "mb-men-briefcases",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -3950,7 +4027,13 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-bags-all"
+          "mb-men-bags-all",
+          "mb-men-briefcases",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-travel",
+          "mb-women-travel-all"
         ]
       },
       {
@@ -3978,7 +4061,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-briefcases"
+          "mb-men-briefcases",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -4005,7 +4091,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-briefcases"
+          "mb-men-briefcases",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
         ]
       }
     ],
@@ -4047,7 +4136,7 @@
       "38cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.364785+00:00"
+    "updatedAt": "2026-09-14T10:08:58.721866+00:00"
   },
   {
     "id": "mb-heritage-day-clipper",
@@ -4059,7 +4148,10 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-holdalls"
+      "mb-men-holdalls",
+      "mb-women-travel",
+      "mb-women-travel-holdalls",
+      "mb-women-travel-luggage"
     ],
     "tags": [
       "mulberry",
@@ -4109,7 +4201,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls",
+          "mb-women-travel-luggage"
         ]
       },
       {
@@ -4138,7 +4233,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls",
+          "mb-women-travel-luggage"
         ]
       }
     ],
@@ -4182,7 +4280,7 @@
       "18cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.367785+00:00"
+    "updatedAt": "2026-09-14T10:08:58.725035+00:00"
   },
   {
     "id": "mb-heritage-medium-clipper",
@@ -4195,7 +4293,12 @@
       "mulberry-bags",
       "mb-men-bags",
       "mb-men-bags-all",
-      "mb-men-holdalls"
+      "mb-men-holdalls",
+      "mb-women-travel",
+      "mb-women-travel-all",
+      "mb-women-travel-holdalls",
+      "mb-women-travel-luggage",
+      "mb-men-travel"
     ],
     "tags": [
       "mulberry",
@@ -4245,7 +4348,12 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-bags-all"
+          "mb-men-bags-all",
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-all",
+          "mb-women-travel-holdalls",
+          "mb-women-travel-luggage"
         ]
       },
       {
@@ -4273,7 +4381,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls"
         ]
       },
       {
@@ -4302,7 +4412,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-men-travel",
+          "mb-women-travel",
+          "mb-women-travel-holdalls"
         ]
       }
     ],
@@ -4344,7 +4457,7 @@
       "21cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.370366+00:00"
+    "updatedAt": "2026-09-14T10:08:58.727680+00:00"
   },
   {
     "id": "mb-heritage-nylon-backpack",
@@ -4423,14 +4536,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "이 가방은 실용적인 포켓, 벨트, 버클 스트랩 디테일이 특징입니다. · 벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · Mulberry branded leather strap on front. · 40cm · 30cm · 15cm",
+        "bodyKo": "이 가방은 실용적인 포켓, 벨트, 버클 스트랩 디테일이 특징입니다. · 벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · 앞면에 Mulberry 브랜드 가죽 스트랩이 있습니다. · 40cm · 30cm · 15cm",
         "image": "/products/mb-pdp/g-hs5202-179a100/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "이 가방은 실용적인 포켓, 벨트, 버클 스트랩 디테일이 특징입니다. · 벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · Mulberry branded leather strap on front. · 40cm · 30cm"
+        "valueKo": "이 가방은 실용적인 포켓, 벨트, 버클 스트랩이 특징입니다. · 벨트와 버클 스트랩 · 다루기 편한 자세로 조절 가능한 어깨 스트랩 · 앞면에 Mulberry 브랜드 가죽 스트랩. · 40cm · 30cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -4444,10 +4557,10 @@
       "이 제품의 코드는 HS5202-179A100 입니다.",
       "벨트와 버클 스트랩 디테일",
       "패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩",
-      "Mulberry branded leather strap on front."
+      "앞면에 Mulberry 브랜드 가죽 스트랩이 있습니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.372579+00:00"
+    "updatedAt": "2026-09-14T10:08:58.729444+00:00"
   },
   {
     "id": "mb-heritage-sunglasses",
@@ -4459,7 +4572,8 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-accessories-all"
+      "mb-men-accessories-all",
+      "mb-men-sunglasses"
     ],
     "tags": [
       "mulberry",
@@ -4509,7 +4623,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-accessories-all"
+          "mb-men-accessories-all",
+          "mb-men-sunglasses"
         ]
       }
     ],
@@ -4553,7 +4668,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.375713+00:00"
+    "updatedAt": "2026-09-14T10:08:58.732177+00:00"
   },
   {
     "id": "mb-heritage-wash-case",
@@ -4566,6 +4681,7 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-gifts-him",
+      "mb-men-whats-new",
       "mulberry-bags",
       "mb-men-bags",
       "mb-men-travel"
@@ -4614,7 +4730,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-gifts-him"
+          "mb-gifts-him",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -4683,7 +4800,7 @@
       "13.4cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.377247+00:00"
+    "updatedAt": "2026-09-14T10:08:58.733527+00:00"
   },
   {
     "id": "mb-heritage-waxed-backpack",
@@ -4695,7 +4812,8 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-backpacks"
+      "mb-men-backpacks",
+      "mb-men-travel"
     ],
     "tags": [
       "mulberry",
@@ -4745,7 +4863,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-backpacks"
+          "mb-men-backpacks",
+          "mb-men-travel"
         ]
       }
     ],
@@ -4785,7 +4904,7 @@
       "20cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.378790+00:00"
+    "updatedAt": "2026-09-14T10:08:58.735052+00:00"
   },
   {
     "id": "mb-heritage-waxed-day-clipper",
@@ -4797,7 +4916,9 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-travel"
+      "mb-men-travel",
+      "mb-women-travel",
+      "mb-women-travel-luggage"
     ],
     "tags": [
       "mulberry",
@@ -4847,7 +4968,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-travel"
+          "mb-men-travel",
+          "mb-women-travel",
+          "mb-women-travel-luggage"
         ]
       }
     ],
@@ -4888,7 +5011,7 @@
       "45cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.381318+00:00"
+    "updatedAt": "2026-09-14T10:08:58.737543+00:00"
   },
   {
     "id": "mb-heritage-zipped-backpack",
@@ -4901,6 +5024,8 @@
       "mulberry-bags",
       "mb-men-bags",
       "mb-men-backpacks",
+      "mb-women-bags",
+      "mb-women-backpacks",
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-whats-new"
@@ -4951,7 +5076,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-backpacks"
+          "mb-men-backpacks",
+          "mb-women-bags",
+          "mb-women-backpacks"
         ]
       },
       {
@@ -4979,7 +5106,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-backpacks"
+          "mb-men-backpacks",
+          "mb-women-bags",
+          "mb-women-backpacks"
         ]
       },
       {
@@ -5007,7 +5136,12 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-backpacks"
+          "mb-men-backpacks",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-bags",
+          "mb-women-backpacks"
         ]
       },
       {
@@ -5035,7 +5169,10 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-whats-new"
+          "mb-men-whats-new",
+          "mulberry-bags",
+          "mb-women-bags",
+          "mb-women-backpacks"
         ]
       }
     ],
@@ -5077,7 +5214,7 @@
       "38cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.383866+00:00"
+    "updatedAt": "2026-09-14T10:08:58.740244+00:00"
   },
   {
     "id": "mb-heritage-zipped-long-card-holder",
@@ -5181,7 +5318,7 @@
       "1.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.385660+00:00"
+    "updatedAt": "2026-09-14T10:08:58.741934+00:00"
   },
   {
     "id": "mb-islington-bucket",
@@ -5483,7 +5620,7 @@
       "12.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.390636+00:00"
+    "updatedAt": "2026-09-14T10:08:58.746440+00:00"
   },
   {
     "id": "mb-large-darley-cosmetic-pouch",
@@ -5604,8 +5741,8 @@
       }
     ],
     "featuresKo": [
-      "Postman's Lock으로 마감된 대형 화장품 파우치입니다.",
-      "Postman's Lock 잠금 장치가 포함된 상단 플랩 내부 포일 엠보싱 Mulberry 시그니처 메인 수납칸 1개 소프트 골드 하드웨어 마감 나파 안감 당사가 다방면에 걸친 영국 라이프스타일 브랜드임을 인정하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
+      "Postman's Lock으로 마감된 대형 화장품 용기입니다.",
+      "Postman's Lock 잠금 장치가 포함된 상단 플랩 내부 포일 엠보싱 Mulberry 시그니처 골드 메인으로 칸 1개 하드웨어 외장 나파 안감 외부가 다방면에 전투용 영국 라이프스타일 이름 인정을 받아 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
       "높이 17.5cm 폭 24cm 깊이 8cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽입니다.",
       "가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다.",
       "이 제품의 코드는 RL8853-552G110 입니다.",
@@ -5614,7 +5751,105 @@
       "8cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.392099+00:00"
+    "updatedAt": "2026-09-14T10:08:58.747956+00:00"
+  },
+  {
+    "id": "mb-large-zipped-flat-pouch",
+    "name": "Large Zipped Flat Pouch",
+    "nameKo": "대형 지퍼 플랫 파우치",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "세련되고 시크하며 일상생활에 적합하도록 제작된 대형 지퍼 플랫 파우치는 대부분의 노트북과 대부분의 가방에 들어갈 만큼 충분히 큽니다.",
+    "image": "/products/mb-pdp/g-rl9082-205a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9082-205a100/1.jpg",
+      "/products/mb-pdp/g-rl9082-205a100/2.jpg",
+      "/products/mb-pdp/g-rl9082-205a100/3.jpg",
+      "/products/mb-pdp/g-rl9082-205a100/4.jpg",
+      "/products/mb-pdp/g-rl9082-205a100/5.jpg",
+      "/products/mb-pdp/g-rl9082-205a100/6.jpg"
+    ],
+    "accent": "#3a322c",
+    "gbpPrice": 345.0,
+    "sku": "G_RL9082_205A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/large-zipped-flat-pouch-black-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl9082-205a100-sz-os",
+        "name": "Black Small Classic Grain",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_RL9082_205A100",
+        "gbpPrice": 345.0,
+        "price": 870000,
+        "image": "/products/mb-pdp/g-rl9082-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9082-205a100/1.jpg",
+          "/products/mb-pdp/g-rl9082-205a100/2.jpg",
+          "/products/mb-pdp/g-rl9082-205a100/3.jpg",
+          "/products/mb-pdp/g-rl9082-205a100/4.jpg",
+          "/products/mb-pdp/g-rl9082-205a100/5.jpg",
+          "/products/mb-pdp/g-rl9082-205a100/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/large-zipped-flat-pouch-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "세련되고 시크하며 일상생활에 적합하도록 제작된 대형 지퍼 플랫 파우치는 대부분의 노트북과 대부분의 가방에 들어갈 만큼 충분히 큽니다.",
+        "image": "/products/mb-pdp/g-rl9082-205a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "대형 지퍼 플랫 파우치. 포일 엠보싱 Mulberry 로고 가죽 지퍼 고리 메인 수납칸 1개 황동 하드웨어 마감 마이크로파이버 안감 높이 26.5cm 폭 37cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽. 가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다. 이 제품의 코드는 RL9082-205A100 입니다.",
+        "image": "/products/mb-pdp/g-rl9082-205a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "26.5cm · 37cm",
+        "image": "/products/mb-pdp/g-rl9082-205a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "26.5cm · 37cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "대형 지퍼 플랫 파우치.",
+      "포일 엠보싱 Mulberry 로고 가죽 지퍼 고리 메인 수납칸 1개 황동 하드웨어 마감 마이크로파이버 안감 높이 26.5cm 폭 37cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽.",
+      "가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다.",
+      "이 제품의 코드는 RL9082-205A100 입니다.",
+      "26.5cm",
+      "37cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:02.458431+00:00"
   },
   {
     "id": "mb-lily",
@@ -5646,7 +5881,7 @@
       "/products/mb-pdp/g-hh3288-874a100/4.jpg",
       "/products/mb-pdp/g-hh3288-874a100/5.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_HH6950_736J647",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-her/lily-pink-scrumpy-heavy-grain",
@@ -5852,7 +6087,7 @@
       "9cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.393437+00:00"
+    "updatedAt": "2026-09-14T10:09:02.461897+00:00"
   },
   {
     "id": "mb-lily-clutch",
@@ -5864,7 +6099,8 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-clutches"
+      "mb-women-clutches",
+      "mb-women-top-handle"
     ],
     "tags": [
       "mulberry",
@@ -5883,7 +6119,7 @@
       "/products/mb-pdp/g-rl9078-702h687/7.jpg",
       "/products/mb-pdp/g-rl9078-702h687/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#1A1A1A",
     "gbpPrice": 695.0,
     "sku": "G_RL9078_702H687",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/lily-clutch-eggshell-buttery-nappa",
@@ -5914,7 +6150,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-clutches"
+          "mb-women-clutches",
+          "mb-women-top-handle"
         ]
       },
       {
@@ -5943,7 +6180,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-clutches"
+          "mb-women-clutches",
+          "mb-women-top-handle"
         ]
       }
     ],
@@ -5984,7 +6222,139 @@
       "5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.395717+00:00"
+    "updatedAt": "2026-09-14T10:09:02.462658+00:00"
+  },
+  {
+    "id": "mb-medium-cosmetic-pouch",
+    "name": "Medium Cosmetic Pouch",
+    "nameKo": "중형 화장품 파우치",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "화장품을 포장하기에 완벽한 넉넉한 크기의 미디엄 화장품 파우치는 여행에 꼭 필요한 제품입니다. 가죽 손잡이가 달린 기능적인 지퍼 잠금장치, 대형 내부 슬립 포켓, 고급 멀버리 트리 패브릭 안감이 특징입니다.",
+    "image": "/products/mb-pdp/g-rl9061-127q330/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9061-127q330/1.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/2.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/3.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/4.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/5.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/6.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/7.jpg",
+      "/products/mb-pdp/g-rl9061-127q330/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 245.0,
+    "sku": "G_RL9061_127Q330",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/medium-cosmetic-pouch-mole-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-rl9061-127q330-sz-os",
+        "name": "Mole & Cognac Bio Based Scotchgrain",
+        "nameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9061_127Q330",
+        "gbpPrice": 245.0,
+        "price": 620000,
+        "image": "/products/mb-pdp/g-rl9061-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9061-127q330/1.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/2.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/3.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/4.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/5.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/6.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/7.jpg",
+          "/products/mb-pdp/g-rl9061-127q330/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/medium-cosmetic-pouch-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      },
+      {
+        "id": "mb-g-rl9061-127a340-sz-os",
+        "name": "Black & Cognac Bio Based Scotchgrain",
+        "nameKo": "Black & Cognac Bio Based 스카치그레인",
+        "sku": "G_RL9061_127A340",
+        "gbpPrice": 245.0,
+        "price": 620000,
+        "image": "/products/mb-pdp/g-rl9061-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9061-127a340/1.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/2.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/3.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/4.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/5.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/6.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/7.jpg",
+          "/products/mb-pdp/g-rl9061-127a340/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/medium-cosmetic-pouch-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "화장품을 포장하기에 완벽한 넉넉한 크기의 미디엄 화장품 파우치는 여행에 꼭 필요한 제품입니다. 가죽 손잡이가 달린 기능적인 지퍼 잠금장치, 대형 내부 슬립 포켓, 고급 멀버리 트리 패브릭 안감이 특징입니다.",
+        "image": "/products/mb-pdp/g-rl9061-127q330/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "여행에 딱 맞는 넉넉한 세면가방입니다. 황동 하드웨어 마감 가죽 지퍼 손잡이가 있는 지퍼 잠금 장치 대형 내부 슬립 포켓 1개 블라인드 엠보싱 Mulberry 시그니처 Mulberry 나무 안감 높이 16cm 폭 26.3cm 깊이 6.5cm 소재 바이오 기반 스카치그레인 이 제품은 내구성이 뛰어나고 가벼우며 바이오 기반 및 재활용 소재를 결합하여 제작되었으며 독특한 페블 그레인 마감으로 엠보싱 처리된 헤리티지 Mulberry 소재인 스카치그레인이 특징입니다. 송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다. 이 제품의 코드는 RL9061-127Q330 입니다.",
+        "image": "/products/mb-pdp/g-rl9061-127q330/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "16cm · 26.3cm · 6.5cm",
+        "image": "/products/mb-pdp/g-rl9061-127q330/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "16cm · 26.3cm · 6.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "2가지"
+      }
+    ],
+    "featuresKo": [
+      "여행에 딱 맞는 넉넉한 세면가방입니다.",
+      "황동 하드웨어 마감 가죽 지퍼 손잡이가 있는 지퍼 잠금 장치 대형 내부 슬립 포켓 1개 블라인드 엠보싱 Mulberry 시그니처 Mulberry 나무 안감 높이 16cm 폭 26.3cm 깊이 6.5cm 소재 바이오 기반 스카치그레인 이 제품은 내구성이 뛰어나고 가벼우며 바이오 기반 및 재활용 소재를 결합하여 제작되었으며 독특한 페블 그레인 마감으로 엠보싱 처리된 헤리티지 Mulberry 소재인 스카치그레인이 특징입니다.",
+      "송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다.",
+      "이 제품의 코드는 RL9061-127Q330 입니다.",
+      "16cm",
+      "26.3cm",
+      "6.5cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:06.976981+00:00"
   },
   {
     "id": "mb-medium-lily",
@@ -6014,7 +6384,7 @@
       "/products/mb-pdp/g-hh0022-552g110/6.jpg",
       "/products/mb-pdp/g-hh0022-552g110/7.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 1095.0,
     "sku": "G_HH0022_552G110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/medium-lily-oak-two-tone-small-classic-grain",
@@ -6172,7 +6542,7 @@
       "9cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.397493+00:00"
+    "updatedAt": "2026-09-14T10:09:06.981576+00:00"
   },
   {
     "id": "mb-mini-alexa",
@@ -6203,7 +6573,7 @@
       "/products/mb-pdp/g-rl8995-047j647/5.jpg",
       "/products/mb-pdp/g-rl8995-047j647/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 995.0,
     "sku": "G_RL8995_047J647",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/shoulder-bags/mini-alexa-pink-scrumpy-suede",
@@ -6364,7 +6734,7 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "조절 및 탈착 가능한 가죽 스트랩 · 17cm · 22cm · 10cm · 5cm · 104cm · The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles: the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · 디테일 여유로운 럭셔리함을 표현하는 컬트 백의 미니 버전입니다. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈부착 가능한 가죽 스트랩 메인 수납공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 104cm 무게 약 0.6kg 소재 스웨이드 투명 레진 뒷면으로 마감 처리하여 매끄럽고 대비되는 외관을 제공하고 기능성을 향상시킨 소 스웨이드. 이 뒷면은 색상과 섬유 이동을 줄이고 재료를 부드럽게 청소할 수 있습니다. 이 제품의 코드는 RL8924-731P705 입니다. · Description The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · The Mini Alexa effortlessly combines elements from two iconic Mulberry styles:the Bayswater bag and the Elkington briefcase. The result is a miniature version of an understatedly cool satchel complete with the signature Mulberry Postman’s Lock and belt buckle and strap hardware. Carry by the plaited leather top handle or wear with the adjustable cross body strap. · 디테일 여유로운 고급스러움을 상징하는 미니 버전의 컬트 백. 황동 하드웨어 마감 Postman's Lock 클로저 수제 브레이드 탑 핸들 조절 및 탈착 가능한 가죽 스트랩 메인 수납 공간 1개 내부 슬립 포켓 1개 높이 17cm 너비 22cm 깊이 10cm 핸들 드롭 5cm 어깨 스트랩 무게 104cm 약 0.6kg 소재 왁스 처리된 스네이크 프린트 얼룩덜룩한 마감의 왁스 처리된 뱀 가죽 효과 소재. 각 스킨을 먼저 드럼 염색하여 기본 색상을 확립한 다음 엠보싱 처리하여 뱀 텍스처를 만듭니다. 특징적인 투톤 효과를 내기 위해 왁스를 바릅니다. 원하는 표면 효과에 도달하면 반짝이는 종이를 도포하여 엠보싱 깊이와 표면 광택을 모두 정제합니다. 그런 다음 스킨을 드럼으로 밀링하여 음색 사이의 대비를 이끌어냅니다. 이 단계에서는 세심한 관리가 필요합니다. 과도하게 밀링하면 엠보스를 평평하게 하고 대비를 줄일 수 있으며, 과소 밀링하면 투톤 효과가 완전히 나타나지 않습니다. 이 제품 코드: RL0217-787K569",
+        "bodyKo": "조절 및 탈착 가능한 가죽 스트랩 · 17cm · 22cm · 10cm · 5cm · 104cm · Mini Alexa는 두 가지 상징적인 Mulberry 스타일인 Bayswater 백과 Elkington 서류 가방의 요소를 자연스럽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클, 스트랩 하드웨어를 갖춘 절제되고 멋진 가방의 미니어처 버전이 탄생했습니다. 엮은 가죽 탑 핸들로 들고 다니거나 조절 가능한 크로스 바디 스트랩으로 착용하세요. · 설명 Mini Alexa는 두 가지 상징적인 Mulberry 스타일인 Bayswater 가방과 Elkington 서류 가방의 요소를 자연스럽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클, 스트랩 하드웨어를 갖춘 절제되고 멋진 가방의 미니어처 버전이 탄생했습니다. 엮은 가죽 탑 핸들로 들고 다니거나 조절 가능한 크로스 바디 스트랩으로 착용하세요. · 반짝이는 컬러풀한 스타일을 표현하는 컬트 백의 미니 버전입니다. 견인 하드웨어 Postman's Lock 클로저 준비된 탑 핸들 조절 탈부착 가죽 스트랩 메인이 있는 공간 1개 내부 수납 1개 높이 17cm 너비 22cm 범위 10cm 핸들 드롭 5cm 스트랩 104cm 무게 약 0.6kg 보유 투명 스웨이드 레진으로 처리 및 배치 및 케이스에 넣을 수 있도록 제공하고 소를 위해 스웨이드. 이 뒷면은 색상과 섬유로 이동할 수 있는 재료를 부드럽게 청소할 수 있습니다. 이 제품의 코드는 RL8924-731P705 입니다. · 설명 Mini Alexa는 두 가지 상징적인 Mulberry 스타일인 Bayswater 가방과 Elkington 서류 가방의 요소를 자연스럽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클, 스트랩 하드웨어를 갖춘 절제되고 멋진 가방의 미니어처 버전이 탄생했습니다. 엮은 가죽 탑 핸들로 들고 다니거나 조절 가능한 크로스 바디 스트랩으로 착용하세요. · Mini Alexa는 두 가지 상징적인 Mulberry 스타일인 Bayswater 가방과 Elkington 서류 가방의 요소를 손쉽게 결합합니다. 그 결과, 시그니처 Mulberry Postman's Lock과 벨트 버클, 스트랩 하드웨어를 갖춘 절제되고 멋진 가방의 미니어처 버전이 탄생했습니다. pla로 운반",
         "image": "/products/mb-pdp/g-rl8995-047j647/3.jpg"
       }
     ],
@@ -6394,7 +6764,134 @@
       "10cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.401002+00:00"
+    "updatedAt": "2026-09-14T10:09:06.985138+00:00"
+  },
+  {
+    "id": "mb-mini-antony",
+    "name": "Mini Antony",
+    "nameKo": "미니 안토니",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "아이코닉한 베스트셀러 실루엣에 가벼운 무게를 더한 Mini Antony는 스타일에 필수품을 담았습니다.",
+    "image": "/products/mb-pdp/g-rl7772-127q330/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl7772-127q330/1.jpg",
+      "/products/mb-pdp/g-rl7772-127q330/2.jpg",
+      "/products/mb-pdp/g-rl7772-127q330/3.jpg",
+      "/products/mb-pdp/g-rl7772-127q330/4.jpg",
+      "/products/mb-pdp/g-rl7772-127q330/5.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 375.0,
+    "sku": "G_RL7772_127Q330",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-antony-mole-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-rl7772-127q330-sz-os",
+        "name": "Mole & Cognac Bio-Based Scotchgrain",
+        "nameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "sku": "G_RL7772_127Q330",
+        "gbpPrice": 375.0,
+        "price": 950000,
+        "image": "/products/mb-pdp/g-rl7772-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl7772-127q330/1.jpg",
+          "/products/mb-pdp/g-rl7772-127q330/2.jpg",
+          "/products/mb-pdp/g-rl7772-127q330/3.jpg",
+          "/products/mb-pdp/g-rl7772-127q330/4.jpg",
+          "/products/mb-pdp/g-rl7772-127q330/5.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-antony-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      },
+      {
+        "id": "mb-g-rl6872-205d117-sz-os",
+        "name": "Foggy Grey Small Classic Grain",
+        "nameKo": "Foggy Grey 스몰 클래식 그레인",
+        "sku": "G_RL6872_205D117",
+        "gbpPrice": 395.0,
+        "price": 1000000,
+        "image": "/products/mb-pdp/g-rl6872-205d117/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl6872-205d117/1.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/2.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/3.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/4.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/5.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/6.jpg",
+          "/products/mb-pdp/g-rl6872-205d117/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/mini-antony-foggy-grey-small-classic-grain",
+        "inStock": true,
+        "colorKey": "foggy-grey-small-classic-grain",
+        "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "아이코닉한 베스트셀러 실루엣에 가벼운 무게를 더한 Mini Antony는 스타일에 필수품을 담았습니다.",
+        "image": "/products/mb-pdp/g-rl7772-127q330/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "시대를 초월한 유니섹스 사첼백의 미니 버전으로, 조절 가능한 가죽 스트랩이 포함되어 있습니다. 황동 하드웨어 마감 Postman's Lock 잠금 메인 수납공간 1개 신용카드 슬립 포켓 2개 후면 외부 슬립 포켓 조절 가능한 가죽 스트랩 나파 및 무아레 안감 높이 19.5cm 폭 11cm 깊이 2.7cm 스트랩 드롭 최소 50cm - 최대 62cm 무게 약 0.2kg 소재 바이오 기반 스카치그레인 이 제품은 전통 멀버리 소재인 스카치그레인을 사용하며 내구성이 뛰어나고 가벼우며 재조합 바이오 기반으로 만들어졌습니다. 재활용 소재를 사용했으며 독특한 페블 그레인 마감 처리가 되어 있습니다. 송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다. 이 제품의 코드는 RL7772-127Q330 입니다.",
+        "image": "/products/mb-pdp/g-rl7772-127q330/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "시대를 초월한 유니섹스 사첼백의 미니 버전으로, 조절 가능한 가죽 스트랩이 포함되어 있습니다. · 조절 가능한 가죽 스트랩 · 19.5cm · 11cm · 2.7cm · 최소 50cm - 최대 62cm · 2.75cm · 최소 50cm 최대 62cm",
+        "image": "/products/mb-pdp/g-rl7772-127q330/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "시대를 초월한 유니섹스 사첼백의 미니 버전으로, 조절 가능한 가죽 스트랩이 포함되어 있습니다. · 조절 가능한 가죽 스트랩 · 19.5cm · 11cm · 2.7cm · 최소 50cm - 최대 62cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "2가지"
+      }
+    ],
+    "featuresKo": [
+      "시대를 초월한 유니섹스 사첼백의 미니 버전으로, 조절 가능한 가죽 스트랩이 포함되어 있습니다.",
+      "황동 하드웨어 마감 Postman's Lock 잠금 메인 수납공간 1개 신용카드 슬립 포켓 2개 후면 외부 슬립 포켓 조절 가능한 가죽 스트랩 나파 및 무아레 안감 높이 19.5cm 폭 11cm 깊이 2.7cm 스트랩 드롭 최소 50cm - 최대 62cm 무게 약 0.2kg 소재 바이오 기반 스카치그레인 이 제품은 전통 멀버리 소재인 스카치그레인을 사용하며 내구성이 뛰어나고 가벼우며 재조합 바이오 기반으로 만들어졌습니다.",
+      "재활용 소재를 사용했으며 독특한 페블 그레인 마감 처리가 되어 있습니다.",
+      "송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다.",
+      "이 제품의 코드는 RL7772-127Q330 입니다.",
+      "시대를 초월한 유니섹스 사첼백의 미니 버전으로, 조절 가능한 가죽 스트랩이 포함되어 있습니다.",
+      "조절 가능한 가죽 스트랩",
+      "19.5cm",
+      "11cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:12.869393+00:00"
   },
   {
     "id": "mb-mini-bayswater",
@@ -6425,7 +6922,7 @@
       "/products/mb-pdp/g-rl8928-205j647/7.jpg",
       "/products/mb-pdp/g-rl8928-205j647/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 995.0,
     "sku": "G_RL8928_205J647",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-all-gifts/gifts-for-her/mini-bayswater-pink-scrumpy-small-classic-grain",
@@ -6498,7 +6995,7 @@
       "8.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.403383+00:00"
+    "updatedAt": "2026-09-14T10:09:12.872407+00:00"
   },
   {
     "id": "mb-mini-bayswater-backpack",
@@ -6529,7 +7026,7 @@
       "/products/mb-pdp/g-hh9829-205a100/7.jpg",
       "/products/mb-pdp/g-hh9829-205a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 595.0,
     "sku": "G_HH9829_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/bayswater/mini-bayswater-backpack-black-small-classic-grain",
@@ -6659,7 +7156,7 @@
       "9.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.404357+00:00"
+    "updatedAt": "2026-09-14T10:09:12.873398+00:00"
   },
   {
     "id": "mb-mini-heritage-nylon-backpack",
@@ -6690,7 +7187,7 @@
       "/products/mb-pdp/g-hs5205-179a100/7.jpg",
       "/products/mb-pdp/g-hs5205-179a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 695.0,
     "sku": "G_HS5205_179A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/mini-heritage-nylon-backpack-black-nylon",
@@ -6738,14 +7235,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · Mulberry branded leather strap · 30cm · 12cm",
+        "bodyKo": "벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · Mulberry 브랜드 가죽 스트랩 · 30cm · 12cm",
         "image": "/products/mb-pdp/g-hs5205-179a100/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "벨트와 버클 스트랩 디테일 · 패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩 · Mulberry branded leather strap · 30cm · 12cm"
+        "valueKo": "버클과 버클 스트랩 · 패딩 처리된 벨트 자세를 유지하는 어깨 스트랩 · Mulberry 브랜드 가죽 스트랩 · 30cm · 12cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -6758,11 +7255,11 @@
       "이 제품의 코드는 HS5205-179A100 입니다.",
       "벨트와 버클 스트랩 디테일",
       "패딩 처리된 웨빙 소재의 조절 가능한 어깨 스트랩",
-      "Mulberry branded leather strap",
+      "Mulberry 브랜드 가죽 스트랩",
       "30cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.405838+00:00"
+    "updatedAt": "2026-09-14T10:09:12.875019+00:00"
   },
   {
     "id": "mb-mini-roxanne-shoulder-bag",
@@ -6792,7 +7289,7 @@
       "/products/mb-pdp/g-rl8904-205t629/6.jpg",
       "/products/mb-pdp/g-rl8904-205t629/7.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 635.0,
     "sku": "G_RL8904_205T629",
     "sourceUrl": "https://www.mulberry.com/gb/shop/occasionwear-edit/mini-roxanne-shoulder-bag-marina-blue-small-classic-grain",
@@ -6940,7 +7437,7 @@
       }
     ],
     "featuresKo": [
-      "Roxanne 숄더백의 미니 버전입니다.",
+      "Roxanne 참백의 미니 버전입니다.",
       "황동 하드웨어 마감 조절 가능한 스트랩 자석 잠금 장치가 있는 외부 전면 포켓 2개 지퍼 잠금 장치 내부 슬립 포켓 1개 Mulberry 나무 리벳 디테일 버클 디테일 높이 11cm 너비 24.5cm 깊이 2cm - 9cm 스트랩 높이 17cm -26cm 무게 약 0.4kg 소재 NVT 이 제품은 Mulberry의 가장 클래식한 가죽을 새롭게 재해석한 레거시 NVT 가죽으로 제작되었습니다.",
       "이 가죽은 시간이 지나면서 부드러워지고 어두워질 수 있으며, 본연의 특성을 강화하고 고유한 녹청을 만들어냅니다.",
       "이 제품의 코드는 RL8902-730Q749 입니다.",
@@ -6950,7 +7447,7 @@
       "2cm - 9cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.409104+00:00"
+    "updatedAt": "2026-09-14T10:09:12.880076+00:00"
   },
   {
     "id": "mb-mini-soft-tote",
@@ -6981,7 +7478,7 @@
       "/products/mb-pdp/g-hh0141-047p705/7.jpg",
       "/products/mb-pdp/g-hh0141-047p705/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 545.0,
     "sku": "G_HH0142_736A110",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/totes/mini-soft-tote-ebony-heavy-grain",
@@ -7112,7 +7609,7 @@
       "22.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.411289+00:00"
+    "updatedAt": "2026-09-14T10:09:12.882323+00:00"
   },
   {
     "id": "mb-monty-sunglasses",
@@ -7143,7 +7640,7 @@
       "/products/mb-pdp/g-rs5505-000a100/7.jpg",
       "/products/mb-pdp/g-rs5505-000a100/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 195.0,
     "sku": "G_RS5505_000A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/mens-sunglasses/monty-sunglasses-black-bio-acetate",
@@ -7276,7 +7773,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.412084+00:00"
+    "updatedAt": "2026-09-14T10:09:12.883285+00:00"
   },
   {
     "id": "mb-mulberry-leather-cream",
@@ -7304,7 +7801,7 @@
       "/products/mb-pdp/g-yl0500-000x100/4.jpg",
       "/products/mb-pdp/g-yl0500-000x100/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 13.0,
     "sku": "G_YL0500_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-cream-no-colour-mulberry-leather-cream",
@@ -7364,7 +7861,7 @@
       "이 상품의 코드는 YL0500-000X100 입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.414244+00:00"
+    "updatedAt": "2026-09-14T10:09:12.885655+00:00"
   },
   {
     "id": "mb-mulberry-leather-gel",
@@ -7392,7 +7889,7 @@
       "/products/mb-pdp/g-yl0502-000x100/4.jpg",
       "/products/mb-pdp/g-yl0502-000x100/5.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 13.0,
     "sku": "G_YL0502_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-gel-no-colour-mulberry-leather-gel",
@@ -7451,7 +7948,7 @@
       "이 상품의 코드는 YL0502-000X100 입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.415002+00:00"
+    "updatedAt": "2026-09-14T10:09:12.886348+00:00"
   },
   {
     "id": "mb-mulberry-leather-wax",
@@ -7479,7 +7976,7 @@
       "/products/mb-pdp/g-yl0501-000x100/4.jpg",
       "/products/mb-pdp/g-yl0501-000x100/5.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#2c241e",
     "gbpPrice": 13.0,
     "sku": "G_YL0501_000X100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/care-products/mulberry-leather-wax-no-colour-leather-wax-mulberry",
@@ -7539,7 +8036,96 @@
       "이 상품의 코드는 YL0501-000X100 입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.415679+00:00"
+    "updatedAt": "2026-09-14T10:09:12.887141+00:00"
+  },
+  {
+    "id": "mb-mulberry-patch-baseball-cap",
+    "name": "Mulberry Patch Baseball Cap",
+    "nameKo": "멀베리 패치 야구 모자",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "파파라치로부터 숨고 싶었던 적이 있나요? 이제 세련된 Mulberry 패치 야구 모자로 가능합니다. 사진이 없습니다.",
+    "image": "/products/mb-pdp/g-vh4168-177u888/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-vh4168-177u888/1.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/2.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/3.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/4.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/5.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/6.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/7.jpg",
+      "/products/mb-pdp/g-vh4168-177u888/8.jpg"
+    ],
+    "accent": "#3a322c",
+    "gbpPrice": 135.0,
+    "sku": "G_VH4168_177U888",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-patch-baseball-cap-night-sky-cotton",
+    "variants": [
+      {
+        "id": "mb-g-vh4168-177u888-sz-os",
+        "name": "Night Sky Cotton",
+        "nameKo": "나이트 스카이 코튼",
+        "sku": "G_VH4168_177U888",
+        "gbpPrice": 135.0,
+        "price": 340000,
+        "image": "/products/mb-pdp/g-vh4168-177u888/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vh4168-177u888/1.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/2.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/3.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/4.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/5.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/6.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/7.jpg",
+          "/products/mb-pdp/g-vh4168-177u888/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-patch-baseball-cap-night-sky-cotton",
+        "inStock": true,
+        "colorKey": "night-sky-cotton",
+        "colorNameKo": "나이트 스카이 코튼",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "파파라치로부터 숨고 싶었던 적이 있나요? 이제 세련된 Mulberry 패치 야구 모자로 가능합니다. 사진이 없습니다.",
+        "image": "/products/mb-pdp/g-vh4168-177u888/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "멀버리 패치(Mulberry Patch) 야구 모자. 헤리티지 체크 안감 버클 메탈 및 뒷면 가죽 잠금장치 사이즈 프리사이즈 소재 면 100% 오가닉 코튼 본 상품 코드는 VH4168-177U888",
+        "image": "/products/mb-pdp/g-vh4168-177u888/2.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "멀버리 패치(Mulberry Patch) 야구 모자입니다.",
+      "헤리티지 체크 안감 버클 메탈 및 뒷면 가죽 잠금장치 사이즈 프리사이즈 소재 면 100% 오가닉 코튼 본 상품 코드는 VH4168-177U888"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:17.248902+00:00"
   },
   {
     "id": "mb-mulberry-plaque-cosmetic-pouch",
@@ -7642,7 +8228,7 @@
       "5.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.418756+00:00"
+    "updatedAt": "2026-09-14T10:09:17.251207+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap",
@@ -7654,7 +8240,8 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-accessories-all"
+      "mb-men-accessories-all",
+      "mb-men-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -7706,6 +8293,35 @@
           "mb-men-acc",
           "mb-men-accessories-all"
         ]
+      },
+      {
+        "id": "mb-g-vh4167-176r110-sz-os",
+        "name": "Khaki Cotton",
+        "nameKo": "Khaki Cotton",
+        "sku": "G_VH4167_176R110",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-vh4167-176r110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vh4167-176r110/1.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/2.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/3.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/4.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/5.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/6.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/7.jpg",
+          "/products/mb-pdp/g-vh4167-176r110/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-baseball-cap-khaki-cotton",
+        "inStock": true,
+        "colorKey": "khaki-cotton",
+        "colorNameKo": "Khaki Cotton",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -7723,7 +8339,7 @@
     "techSpecs": [
       {
         "labelKo": "컬러웨이",
-        "valueKo": "1가지"
+        "valueKo": "2가지"
       }
     ],
     "featuresKo": [
@@ -7731,7 +8347,90 @@
       "뽕나무 브랜딩 자수 뒷면에 브랜드 메탈 잠금장치 사이즈 프리 사이즈 소재 면 100% 유기농 면 이 상품 코드는 VH4167-176U888입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.419638+00:00"
+    "updatedAt": "2026-09-14T10:09:17.252270+00:00"
+  },
+  {
+    "id": "mb-mulberry-tree-baseball-cap-colour-block",
+    "name": "Mulberry Tree Baseball Cap - Colour Block",
+    "nameKo": "멀버리 트리 야구 모자 - 컬러 블록",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "파파라치로부터 숨고 싶었던 적이 있나요? 이제 세련된 Mulberry Tree 야구 모자로 가능합니다. 사진이 없습니다.",
+    "image": "/products/mb-pdp/g-vh4166-215q761/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-vh4166-215q761/1.jpg",
+      "/products/mb-pdp/g-vh4166-215q761/2.jpg",
+      "/products/mb-pdp/g-vh4166-215q761/3.jpg",
+      "/products/mb-pdp/g-vh4166-215q761/4.jpg",
+      "/products/mb-pdp/g-vh4166-215q761/5.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 95.0,
+    "sku": "G_VH4166_215Q761",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-baseball-cap-colour-block-mulberry-green-ecru-cotton",
+    "variants": [
+      {
+        "id": "mb-g-vh4166-215q761-sz-os",
+        "name": "Mulberry Green & Ecru Cotton",
+        "nameKo": "멀버리 Green & Ecru Cotton",
+        "sku": "G_VH4166_215Q761",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-vh4166-215q761/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vh4166-215q761/1.jpg",
+          "/products/mb-pdp/g-vh4166-215q761/2.jpg",
+          "/products/mb-pdp/g-vh4166-215q761/3.jpg",
+          "/products/mb-pdp/g-vh4166-215q761/4.jpg",
+          "/products/mb-pdp/g-vh4166-215q761/5.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-baseball-cap-colour-block-mulberry-green-ecru-cotton",
+        "inStock": true,
+        "colorKey": "mulberry-green-ecru-cotton",
+        "colorNameKo": "멀버리 Green & Ecru Cotton",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "파파라치로부터 숨고 싶었던 적이 있나요? 이제 세련된 Mulberry Tree 야구 모자로 가능합니다. 사진이 없습니다.",
+        "image": "/products/mb-pdp/g-vh4166-215q761/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "멀버리 트리 야구 모자. 뽕나무 브랜딩 자수 뒷면에 브랜드 메탈 잠금장치 사이즈 프리 사이즈 소재 면 100% 유기농 면 이 상품 코드는 VH4166-215Q761입니다.",
+        "image": "/products/mb-pdp/g-vh4166-215q761/2.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "멀버리 트리 야구 모자.",
+      "뽕나무 브랜딩 자수 뒷면에 브랜드 메탈 잠금장치 사이즈 프리 사이즈 소재 면 100% 유기농 면 이 상품 코드는 VH4166-215Q761입니다."
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:20.047817+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-denim",
@@ -7758,7 +8457,7 @@
       "/products/mb-pdp/g-vh4163-212u927/3.jpg",
       "/products/mb-pdp/g-vh4163-212u927/4.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#3a322c",
     "gbpPrice": 95.0,
     "sku": "G_VH4163_212U927",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-baseball-cap-denim-washed-black-denim-cotton",
@@ -7812,7 +8511,7 @@
       "멀베리 나무 브랜딩 자수 뒷면에 브랜드 메탈 잠금장치 사이즈 프리사이즈 소재 면 100% 면 이 상품 코드는 VH4163-212U927 입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.421215+00:00"
+    "updatedAt": "2026-09-14T10:09:20.048770+00:00"
   },
   {
     "id": "mb-mulberry-tree-baseball-cap-striped",
@@ -7824,7 +8523,8 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-accessories-all"
+      "mb-men-accessories-all",
+      "mb-men-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -7840,7 +8540,7 @@
       "/products/mb-pdp/g-vh4164-213n663/4.jpg",
       "/products/mb-pdp/g-vh4164-213n663/5.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#241f1c",
     "gbpPrice": 95.0,
     "sku": "G_VH4164_213N663",
     "sourceUrl": "https://www.mulberry.com/gb/shop/summer-edit/mulberry-tree-baseball-cap-striped-coral-orange-polyester",
@@ -7894,7 +8594,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-accessories-all"
+          "mb-men-accessories-all",
+          "mb-men-whats-new"
         ]
       }
     ],
@@ -7921,7 +8622,94 @@
       "Mulberry Tree 브랜딩 자수 뒷면에 브랜드 금속 잠금장치 크기 프리사이즈 소재 폴리에스테르 100% 폴리에스테르 이 제품의 코드는 VH4164-213N663입니다."
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.424072+00:00"
+    "updatedAt": "2026-09-14T10:09:20.050041+00:00"
+  },
+  {
+    "id": "mb-mulberry-tree-bucket-hat",
+    "name": "Mulberry Tree Bucket Hat",
+    "nameKo": "멀베리 나무 버킷햇",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "축제와 여름 바비큐에 딱 맞는 Mulberry Tree Bucket Hat으로 열광적인 친구들.",
+    "image": "/products/mb-pdp/g-vh4170-225r110/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-vh4170-225r110/1.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/2.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/3.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/4.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/5.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/6.jpg",
+      "/products/mb-pdp/g-vh4170-225r110/7.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 95.0,
+    "sku": "G_VH4170_225R110",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-bucket-hat-khaki-cotton",
+    "variants": [
+      {
+        "id": "mb-g-vh4170-225r110-sz-os",
+        "name": "Khaki Cotton",
+        "nameKo": "Khaki Cotton",
+        "sku": "G_VH4170_225R110",
+        "gbpPrice": 95.0,
+        "price": 240000,
+        "image": "/products/mb-pdp/g-vh4170-225r110/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vh4170-225r110/1.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/2.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/3.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/4.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/5.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/6.jpg",
+          "/products/mb-pdp/g-vh4170-225r110/7.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/mulberry-tree-bucket-hat-khaki-cotton",
+        "inStock": true,
+        "colorKey": "khaki-cotton",
+        "colorNameKo": "Khaki Cotton",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "축제와 여름 바비큐에 딱 맞는 Mulberry Tree Bucket Hat으로 열광적인 친구들.",
+        "image": "/products/mb-pdp/g-vh4170-225r110/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "멀버리 트리 버킷햇입니다. 멀베리트리 브랜딩 사이즈 프리사이즈 소재 면 100% 오가닉 코튼 본 상품 코드는 VH4170-225R110 입니다.",
+        "image": "/products/mb-pdp/g-vh4170-225r110/2.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "멀버리 트리 버킷햇입니다.",
+      "멀베리트리 브랜딩 사이즈 프리사이즈 소재 면 100% 오가닉 코튼 본 상품 코드는 VH4170-225R110 입니다."
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:23.774845+00:00"
   },
   {
     "id": "mb-mulberry-tree-jacquard-towel",
@@ -7934,7 +8722,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -7952,7 +8742,7 @@
       "/products/mb-pdp/g-vy0007-944u889/6.jpg",
       "/products/mb-pdp/g-vy0007-944u889/7.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 195.0,
     "sku": "G_VY0007_944U889",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/mulberry-tree-jacquard-towel-navy-teak-cotton",
@@ -7983,7 +8773,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -8021,16 +8813,19 @@
       "95cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.425435+00:00"
+    "updatedAt": "2026-09-14T10:09:23.777170+00:00"
   },
   {
     "id": "mb-passport-cover",
     "name": "Passport Cover",
     "nameKo": "여권 커버",
     "brand": "Mulberry",
-    "category": "bags",
-    "subcategory": "mb-women-travel-accessories",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
     "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new",
       "mulberry-bags",
       "mb-women-travel",
       "mb-women-travel-accessories"
@@ -8038,7 +8833,7 @@
     "tags": [
       "mulberry",
       "멀버리",
-      "bags"
+      "accessories"
     ],
     "descriptionKo": "Mulberry 여권 커버는 표준 크기의 여권에 맞게 디자인되었으며 나파 가죽 안감이 있는 내부, 카드 슬롯 4개, 슬립 포켓 3개를 자랑하며 포일 엠보싱 Mulberry 시그니처로 마감되어 있습니다.",
     "image": "/products/mb-pdp/g-rl9064-127a340/1.jpg",
@@ -8049,7 +8844,7 @@
       "/products/mb-pdp/g-rl9064-127a340/4.jpg",
       "/products/mb-pdp/g-rl9064-127a340/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 160.0,
     "sku": "G_RL9064_127A340",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/travel/passport-cover-black-cognac-bio-based-scotchgrain",
@@ -8075,6 +8870,9 @@
         "colorNameKo": "Black & Cognac Bio Based 스카치그레인",
         "size": "OS",
         "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
           "mulberry-bags",
           "mb-women-travel",
           "mb-women-travel-accessories"
@@ -8101,6 +8899,9 @@
         "colorNameKo": "Mole & Cognac Bio Based 스카치그레인",
         "size": "OS",
         "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
           "mulberry-bags",
           "mb-women-travel",
           "mb-women-travel-accessories"
@@ -8130,6 +8931,9 @@
         "colorNameKo": "Foggy Grey 스몰 클래식 그레인",
         "size": "OS",
         "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
           "mulberry-bags",
           "mb-women-travel",
           "mb-women-travel-accessories"
@@ -8174,7 +8978,7 @@
       "1cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.427308+00:00"
+    "updatedAt": "2026-09-14T10:09:23.779236+00:00"
   },
   {
     "id": "mb-pen-pot",
@@ -8187,7 +8991,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -8206,7 +9012,7 @@
       "/products/mb-pdp/g-th0023-493g924/7.jpg",
       "/products/mb-pdp/g-th0023-493g924/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 295.0,
     "sku": "G_TH0023_493G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/pen-pot-vintage-oak-nappa",
@@ -8238,7 +9044,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -8276,7 +9084,7 @@
       "6.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.429097+00:00"
+    "updatedAt": "2026-09-14T10:09:23.782710+00:00"
   },
   {
     "id": "mb-photo-frame-large",
@@ -8289,7 +9097,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -8308,7 +9118,7 @@
       "/products/mb-pdp/g-th0025-000g924/7.jpg",
       "/products/mb-pdp/g-th0025-000g924/8.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 395.0,
     "sku": "G_TH0025_000G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-large-vintage-oak-nappa",
@@ -8340,7 +9150,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -8379,7 +9191,7 @@
       "1cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.430329+00:00"
+    "updatedAt": "2026-09-14T10:09:23.783887+00:00"
   },
   {
     "id": "mb-photo-frame-medium",
@@ -8392,7 +9204,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -8411,7 +9225,7 @@
       "/products/mb-pdp/g-th0026-000g924/7.jpg",
       "/products/mb-pdp/g-th0026-000g924/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 295.0,
     "sku": "G_TH0026_000G924",
     "sourceUrl": "https://www.mulberry.com/gb/shop/home/photo-frame-medium-vintage-oak-nappa",
@@ -8443,7 +9257,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -8475,14 +9291,14 @@
       }
     ],
     "featuresKo": [
-      "중간 크기의 Mulberry 사진 프레임입니다.",
+      "컴팩트 사이즈의 Mulberry 사진 프레임입니다.",
       "대비 스티치 디테일 엠보싱 브랜딩 6\" x 4\" 사진에 적합 높이 18cm 너비 23cm 깊이 1cm 소재 나파 가죽 50% 소가죽 25% 극세사 25% 유리 이 제품의 코드는 TH0026-000G924입니다.",
       "18cm",
       "23cm",
       "1cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.431555+00:00"
+    "updatedAt": "2026-09-14T10:09:23.785049+00:00"
   },
   {
     "id": "mb-piccadilly-holdall",
@@ -8494,7 +9310,11 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-whats-new"
+      "mb-men-whats-new",
+      "mulberry-bags",
+      "mb-women-travel",
+      "mb-women-travel-all",
+      "mb-women-travel-luggage"
     ],
     "tags": [
       "mulberry",
@@ -8513,7 +9333,7 @@
       "/products/mb-pdp/g-hg5161-205a100/7.jpg",
       "/products/mb-pdp/g-hg5161-205a100/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 1795.0,
     "sku": "G_HG5161_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-holdall-black-small-classic-grain",
@@ -8544,7 +9364,11 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-whats-new"
+          "mb-men-whats-new",
+          "mulberry-bags",
+          "mb-women-travel",
+          "mb-women-travel-all",
+          "mb-women-travel-luggage"
         ]
       }
     ],
@@ -8586,7 +9410,7 @@
       "18.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.434611+00:00"
+    "updatedAt": "2026-09-14T10:09:23.788028+00:00"
   },
   {
     "id": "mb-piccadilly-messenger",
@@ -8598,7 +9422,13 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-travel"
+      "mb-men-travel",
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new",
+      "mb-women-travel",
+      "mb-women-travel-all",
+      "mb-women-travel-luggage"
     ],
     "tags": [
       "mulberry",
@@ -8617,7 +9447,7 @@
       "/products/mb-pdp/g-hh0241-205a100/7.jpg",
       "/products/mb-pdp/g-hh0241-205a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 1495.0,
     "sku": "G_HH0241_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/piccadilly-messenger-black-small-classic-grain",
@@ -8648,7 +9478,13 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-travel"
+          "mb-men-travel",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-travel",
+          "mb-women-travel-all",
+          "mb-women-travel-luggage"
         ]
       },
       {
@@ -8677,7 +9513,13 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-travel"
+          "mb-men-travel",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-travel",
+          "mb-women-travel-all",
+          "mb-women-travel-luggage"
         ]
       },
       {
@@ -8706,7 +9548,13 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-travel"
+          "mb-men-travel",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
+          "mb-women-travel",
+          "mb-women-travel-all",
+          "mb-women-travel-luggage"
         ]
       }
     ],
@@ -8747,7 +9595,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.436960+00:00"
+    "updatedAt": "2026-09-14T10:09:23.790132+00:00"
   },
   {
     "id": "mb-postman-s-lock-agenda",
@@ -8777,7 +9625,7 @@
       "/products/mb-pdp/g-nr7345-205u888/6.jpg",
       "/products/mb-pdp/g-nr7345-205u888/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 325.0,
     "sku": "G_NR7345_205U888",
     "sourceUrl": "https://www.mulberry.com/gb/shop/men/mens-accessories/mens-organisers-inserts/postman-s-lock-agenda-night-sky-small-classic-grain",
@@ -8933,7 +9781,7 @@
       "3cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.438890+00:00"
+    "updatedAt": "2026-09-14T10:09:23.792085+00:00"
   },
   {
     "id": "mb-postman-s-lock-pocket-book",
@@ -8962,7 +9810,7 @@
       "/products/mb-pdp/g-nq7346-205a100/5.jpg",
       "/products/mb-pdp/g-nq7346-205a100/6.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#2c241e",
     "gbpPrice": 275.0,
     "sku": "G_NQ7346_205A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/organisers-inserts/postman-s-lock-pocket-book-black-small-classic-grain",
@@ -9032,7 +9880,7 @@
       "3cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.441643+00:00"
+    "updatedAt": "2026-09-14T10:09:23.795302+00:00"
   },
   {
     "id": "mb-quinn-sunglasses",
@@ -9064,7 +9912,7 @@
       "/products/mb-pdp/g-rs5479-000p109/7.jpg",
       "/products/mb-pdp/g-rs5479-000p109/8.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#3a322c",
     "gbpPrice": 195.0,
     "sku": "G_RS5479_000P109",
     "sourceUrl": "https://www.mulberry.com/gb/shop/sunglasses/quinn-sunglasses-dune-bio-acetate",
@@ -9095,7 +9943,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-accessories-all"
+          "mb-men-accessories-all",
+          "mb-men-sunglasses"
         ]
       },
       {
@@ -9198,7 +10047,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.443350+00:00"
+    "updatedAt": "2026-09-14T10:09:23.796947+00:00"
   },
   {
     "id": "mb-rope-keyring",
@@ -9227,7 +10076,7 @@
       "/products/mb-pdp/g-rk6026-000p100/5.jpg",
       "/products/mb-pdp/g-rk6026-000p100/6.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#241f1c",
     "gbpPrice": 95.0,
     "sku": "G_RK6026_000P100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/rope-keyring-yellow-out-of-the-blue-mixed-material",
@@ -9378,7 +10227,7 @@
       "16cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.444149+00:00"
+    "updatedAt": "2026-09-14T10:09:23.797719+00:00"
   },
   {
     "id": "mb-rugby-ball-keyring",
@@ -9390,7 +10239,8 @@
     "mbCollections": [
       "mulberry-accessories",
       "mb-men-acc",
-      "mb-men-keyrings"
+      "mb-men-keyrings",
+      "mb-men-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -9408,7 +10258,7 @@
       "/products/mb-pdp/g-rk5989-000z100/6.jpg",
       "/products/mb-pdp/g-rk5989-000z100/7.jpg"
     ],
-    "accent": "#3a322c",
+    "accent": "#1A1A1A",
     "gbpPrice": 175.0,
     "sku": "G_RK5989_000Z100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/keyrings/rugby-ball-keyring-white-mulberry-green-mixed-material",
@@ -9438,7 +10288,8 @@
         "mbCollections": [
           "mulberry-accessories",
           "mb-men-acc",
-          "mb-men-keyrings"
+          "mb-men-keyrings",
+          "mb-men-whats-new"
         ]
       }
     ],
@@ -9477,7 +10328,131 @@
       "7cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.446258+00:00"
+    "updatedAt": "2026-09-14T10:09:23.799723+00:00"
+  },
+  {
+    "id": "mb-scotchgrain-belt",
+    "name": "Scotchgrain Belt",
+    "nameKo": "스코틀랜드 곡물 허리띠",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "1980년대 후반의 아카이브 스타일을 바탕으로 한 이 스카치그레인 벨트는 실용성과 대담함을 동시에 갖추고 있습니다.",
+    "image": "/products/mb-pdp/g-mm6422-127q330/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-mm6422-127q330/1.jpg",
+      "/products/mb-pdp/g-mm6422-127q330/2.jpg",
+      "/products/mb-pdp/g-mm6422-127q330/3.jpg",
+      "/products/mb-pdp/g-mm6422-127q330/4.jpg",
+      "/products/mb-pdp/g-mm6422-127q330/5.jpg",
+      "/products/mb-pdp/g-mm6422-127q330/6.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 225.0,
+    "sku": "G_MM6422_127Q330",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/scotchgrain-belt-mole-cognac-bio-based-scotchgrain",
+    "variants": [
+      {
+        "id": "mb-g-mm6422-127q330-sz-os",
+        "name": "Mole & Cognac Bio-Based Scotchgrain",
+        "nameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "sku": "G_MM6422_127Q330",
+        "gbpPrice": 225.0,
+        "price": 570000,
+        "image": "/products/mb-pdp/g-mm6422-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-mm6422-127q330/1.jpg",
+          "/products/mb-pdp/g-mm6422-127q330/2.jpg",
+          "/products/mb-pdp/g-mm6422-127q330/3.jpg",
+          "/products/mb-pdp/g-mm6422-127q330/4.jpg",
+          "/products/mb-pdp/g-mm6422-127q330/5.jpg",
+          "/products/mb-pdp/g-mm6422-127q330/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/scotchgrain-belt-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      },
+      {
+        "id": "mb-g-mm6422-127a340-sz-os",
+        "name": "Black & Cognac Bio-Based Scotchgrain",
+        "nameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "sku": "G_MM6422_127A340",
+        "gbpPrice": 225.0,
+        "price": 570000,
+        "image": "/products/mb-pdp/g-mm6422-127a340/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-mm6422-127a340/1.jpg",
+          "/products/mb-pdp/g-mm6422-127a340/2.jpg",
+          "/products/mb-pdp/g-mm6422-127a340/3.jpg",
+          "/products/mb-pdp/g-mm6422-127a340/4.jpg",
+          "/products/mb-pdp/g-mm6422-127a340/5.jpg",
+          "/products/mb-pdp/g-mm6422-127a340/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/accessories/scotchgrain-belt-black-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "black-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Black & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "1980년대 후반의 아카이브 스타일을 바탕으로 한 이 스카치그레인 벨트는 실용성과 대담함을 동시에 갖추고 있습니다.",
+        "image": "/products/mb-pdp/g-mm6422-127q330/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "스카치그레인 벨트입니다. 황동 하드웨어 마감 스카치그레인 벨트(가죽 트리밍) 폭 3.5cm 소재 바이오 기반 스카치그레인 이 제품은 내구성이 뛰어나고 가벼우며 바이오 기반 소재와 재활용 소재를 결합하여 제작되었으며 독특한 페블 그레인 마감 처리로 엠보싱 처리된 헤리티지 멀버리 소재인 스카치그레인이 특징입니다. 송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다. 이 제품의 코드는 MM6422-127Q330 입니다.",
+        "image": "/products/mb-pdp/g-mm6422-127q330/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "3.5cm",
+        "image": "/products/mb-pdp/g-mm6422-127q330/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "3.5cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "2가지"
+      }
+    ],
+    "featuresKo": [
+      "스카치그레인 벨트입니다.",
+      "황동 하드웨어 마감 스카치그레인 벨트(가죽 트리밍) 폭 3.5cm 소재 바이오 기반 스카치그레인 이 제품은 내구성이 뛰어나고 가벼우며 바이오 기반 소재와 재활용 소재를 결합하여 제작되었으며 독특한 페블 그레인 마감 처리로 엠보싱 처리된 헤리티지 멀버리 소재인 스카치그레인이 특징입니다.",
+      "송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다.",
+      "이 제품의 코드는 MM6422-127Q330 입니다.",
+      "3.5cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:29.049468+00:00"
   },
   {
     "id": "mb-small-amberley-satchel",
@@ -9508,7 +10483,7 @@
       "/products/mb-pdp/g-hh4966-205d117/7.jpg",
       "/products/mb-pdp/g-hh4966-205d117/8.jpg"
     ],
-    "accent": "#241f1c",
+    "accent": "#3a322c",
     "gbpPrice": 845.0,
     "sku": "G_HH4966_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-amberley-satchel-foggy-grey-small-classic-grain",
@@ -9643,14 +10618,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "기능적인 버클 디테일이 있는 조절 가능한 어깨 스트랩 · 18cm · 20cm · 8cm · 47-52.5cm · Buckle-adjustable shoulder strap · Min 47 - Max 52.5cm",
+        "bodyKo": "기능적인 버클 디테일이 있는 조절 가능한 어깨 스트랩 · 18cm · 20cm · 8cm · 47-52.5cm · 버클로 조절 가능한 어깨 스트랩 · 최소 47 - 최대 52.5cm",
         "image": "/products/mb-pdp/g-hh4966-205d117/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "기능적인 버클 디테일이 있는 조절 가능한 어깨 스트랩 · 18cm · 20cm · 8cm · 47-52.5cm · Buckle-adjustable shoulder strap"
+        "valueKo": "버클이 있는 조절식 어깨 스트랩 · 18cm 기능 · 20cm · 8cm · 47-52.5cm · 버클 조절식 어깨 스트랩"
       },
       {
         "labelKo": "컬러웨이",
@@ -9658,7 +10633,7 @@
       }
     ],
     "featuresKo": [
-      "시그니처 라이더스 락(Rider's Lock) 잠금장치가 있는 스몰 사첼 백.",
+      "시그니처 충돌스 락(Rider's Lock) 잠금 장치가 있는 스몰 사첼 백.",
       "포일 엠보싱 Mulberry 시그니처 라이더 잠금 장치가 있는 전면 플랩 버클 조절 가능한 어깨 스트랩 측면의 세련된 벨트 디테일 내부 슬립 포켓 스웨이드 안감 황동 마감 하드웨어 우리가 다각적인 영국 라이프스타일 브랜드임을 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다.",
       "높이 18cm 너비 20cm 깊이 8cm 어깨끈 높이 47-52.5cm 무게 약 0.5kg 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽.",
       "가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다.",
@@ -9669,7 +10644,7 @@
       "8cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.448279+00:00"
+    "updatedAt": "2026-09-14T10:09:29.052021+00:00"
   },
   {
     "id": "mb-small-antony",
@@ -9681,7 +10656,11 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-men-bags",
-      "mb-men-messenger"
+      "mb-men-messenger",
+      "mb-men-travel",
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -9697,7 +10676,7 @@
       "/products/mb-pdp/g-hp5238-000w578/4.jpg",
       "/products/mb-pdp/g-hp5238-000w578/5.jpg"
     ],
-    "accent": "#1A1A1A",
+    "accent": "#241f1c",
     "gbpPrice": 420.0,
     "sku": "G_HH9365_205D117",
     "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-antony-foggy-grey-small-classic-grain",
@@ -9728,7 +10707,11 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-messenger"
+          "mb-men-messenger",
+          "mb-men-travel",
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
         ]
       },
       {
@@ -9783,6 +10766,33 @@
           "mb-men-bags",
           "mb-men-messenger"
         ]
+      },
+      {
+        "id": "mb-g-hs5189-127q330-sz-os",
+        "name": "Mole & Cognac Bio-Based Scotchgrain",
+        "nameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "sku": "G_HS5189_127Q330",
+        "gbpPrice": 435.0,
+        "price": 1100000,
+        "image": "/products/mb-pdp/g-hs5189-127q330/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-hs5189-127q330/1.jpg",
+          "/products/mb-pdp/g-hs5189-127q330/2.jpg",
+          "/products/mb-pdp/g-hs5189-127q330/3.jpg",
+          "/products/mb-pdp/g-hs5189-127q330/4.jpg",
+          "/products/mb-pdp/g-hs5189-127q330/5.jpg",
+          "/products/mb-pdp/g-hs5189-127q330/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/bags/small-antony-mole-cognac-bio-based-scotchgrain",
+        "inStock": true,
+        "colorKey": "mole-cognac-bio-based-scotchgrain",
+        "colorNameKo": "Mole & Cognac Bio-Based 스카치그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
       }
     ],
     "storySections": [
@@ -9793,7 +10803,7 @@
       },
       {
         "titleKo": "디테일 & 특징",
-        "bodyKo": "이 작은 스타일의 메신저 백은 어깨에 메거나 몸에 걸쳐 착용할 수 있습니다. Postman's Lock 클로저 황동 하드웨어 마감 메인 수납공간 1개 내부 포일 엠보싱 Mulberry 시그니처 조절 가능한 어깨 스트랩 외부 슬립 포켓 1개 스웨이드 및 면 안감 높이 20.2cm 폭 18cm 깊이 6.5cm 어깨 스트랩 높이 66cm 무게 약 0.4kg 소재 캔버스 이 내구성이 뛰어나고 중량감 있는 면 트윌 캔버스는 스코틀랜드 던디에 본사를 둔 유서 깊은 공장인 Halley Stevensons와 공동으로 제작되었습니다. 직물을 직조한 후 풍부하고 균일한 색상을 얻기 위해 직물을 후염 처리한 다음 레진 처리하여 구조와 내구성 및 약간의 기술적인 손 느낌을 부여합니다. 이 제품의 코드는 HP5238-000W578 입니다.",
+        "bodyKo": "이 작은 스타일의 메신저 백은 어깨에 메거나 몸에 걸쳐 착용할 수 있습니다. Postman's Lock 클로저 황동 하드웨어 마감 메인 수납공간 1개 내부 포일 엠보싱 Mulberry 시그니처 조절 가능한 가죽 숄더 스트랩 외부 슬립 포켓 1개 스웨이드 및 헤링본 안감 높이 20.2cm 폭 18cm 깊이 6.5cm 어깨 스트랩 드롭 66cm 무게 약 0.4kg 소재 바이오 기반 스카치그레인 재활용 소재를 사용했으며 독특한 페블 그레인 마감 처리가 되어 있습니다. 송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다. 이 제품의 코드는 HS5189-127Q330 입니다.",
         "image": "/products/mb-pdp/g-hp5238-000w578/2.jpg"
       },
       {
@@ -9809,21 +10819,21 @@
       },
       {
         "labelKo": "컬러웨이",
-        "valueKo": "3가지"
+        "valueKo": "4가지"
       }
     ],
     "featuresKo": [
       "이 작은 스타일의 메신저 백은 어깨에 메거나 몸에 걸쳐 착용할 수 있습니다.",
-      "Postman's Lock 클로저 황동 하드웨어 마감 메인 수납공간 1개 내부 포일 엠보싱 Mulberry 시그니처 조절 가능한 어깨 스트랩 외부 슬립 포켓 1개 스웨이드 및 면 안감 높이 20.2cm 폭 18cm 깊이 6.5cm 어깨 스트랩 높이 66cm 무게 약 0.4kg 소재 캔버스 이 내구성이 뛰어나고 중량감 있는 면 트윌 캔버스는 스코틀랜드 던디에 본사를 둔 유서 깊은 공장인 Halley Stevensons와 공동으로 제작되었습니다.",
-      "직물을 직조한 후 풍부하고 균일한 색상을 얻기 위해 직물을 후염 처리한 다음 레진 처리하여 구조와 내구성 및 약간의 기술적인 손 느낌을 부여합니다.",
-      "이 제품의 코드는 HP5238-000W578 입니다.",
+      "Postman's Lock 클로저 황동 하드웨어 마감 메인 수납공간 1개 내부 포일 엠보싱 Mulberry 시그니처 조절 가능한 가죽 숄더 스트랩 외부 슬립 포켓 1개 스웨이드 및 헤링본 안감 높이 20.2cm 폭 18cm 깊이 6.5cm 어깨 스트랩 드롭 66cm 무게 약 0.4kg 소재 바이오 기반 스카치그레인 재활용 소재를 사용했으며 독특한 페블 그레인 마감 처리가 되어 있습니다.",
+      "송아지 가죽으로 트리밍 처리되어 결이 매우 곱고 부드러운 실키한 촉감을 지닌 제품입니다.",
+      "이 제품의 코드는 HS5189-127Q330 입니다.",
       "조절 가능한 가죽 숄더 스트랩",
       "20.2cm",
       "18cm",
       "6.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.450244+00:00"
+    "updatedAt": "2026-09-14T10:09:32.651243+00:00"
   },
   {
     "id": "mb-small-boston",
@@ -9853,7 +10863,7 @@
       "/products/mb-pdp/g-hh0020-736a100/7.jpg",
       "/products/mb-pdp/g-hh0020-736a100/8.jpg"
     ],
-    "accent": "#2c241e",
+    "accent": "#1A1A1A",
     "gbpPrice": 1095.0,
     "sku": "G_HH0020_736A100",
     "sourceUrl": "https://www.mulberry.com/gb/shop/gifts/small-boston-black-heavy-grain",
@@ -9923,16 +10933,120 @@
       "24cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.453818+00:00"
+    "updatedAt": "2026-09-14T10:09:32.653082+00:00"
+  },
+  {
+    "id": "mb-small-check-merino-wool-scarf",
+    "name": "Small Check Merino Wool Scarf",
+    "nameKo": "스몰 체크 메리노 울 스카프",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "100% 메리노 울 소재로 영국에서 제작된 클래식 우븐 체크 스카프로, 프린지 장식과 Mulberry 시그니처 자수로 마감되었습니다.",
+    "image": "/products/mb-pdp/g-vs4319-890a938/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-vs4319-890a938/1.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/2.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/3.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/4.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/5.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/6.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/7.jpg",
+      "/products/mb-pdp/g-vs4319-890a938/8.jpg"
+    ],
+    "accent": "#2c241e",
+    "gbpPrice": 145.0,
+    "sku": "G_VS4319_890A938",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-check-merino-wool-scarf-black-foggy-grey-merino-wool",
+    "variants": [
+      {
+        "id": "mb-g-vs4319-890a938-sz-os",
+        "name": "Black & Foggy Grey Merino Wool",
+        "nameKo": "Black & Foggy Grey Merino Wool",
+        "sku": "G_VS4319_890A938",
+        "gbpPrice": 145.0,
+        "price": 370000,
+        "image": "/products/mb-pdp/g-vs4319-890a938/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-vs4319-890a938/1.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/2.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/3.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/4.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/5.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/6.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/7.jpg",
+          "/products/mb-pdp/g-vs4319-890a938/8.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/small-check-merino-wool-scarf-black-foggy-grey-merino-wool",
+        "inStock": true,
+        "colorKey": "black-foggy-grey-merino-wool",
+        "colorNameKo": "Black & Foggy Grey Merino Wool",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "100% 메리노 울 소재로 영국에서 제작된 클래식 우븐 체크 스카프로, 프린지 장식과 Mulberry 시그니처 자수로 마감되었습니다.",
+        "image": "/products/mb-pdp/g-vs4319-890a938/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "시대를 초월한 메리노 울 스카프. Mulberry 시그니처 자수 프린지 가장자리 영국산 당사의 모노그램 서비스는 영국 및 일부 글로벌 매장에서 이용 가능합니다. 길이 200cm 너비 30cm 소재 메리노울 100% 메리노울 상품코드는 VS4319-890A938 입니다",
+        "image": "/products/mb-pdp/g-vs4319-890a938/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "200cm · 30cm",
+        "image": "/products/mb-pdp/g-vs4319-890a938/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "200cm · 30cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "시대를 초월한 메리노 울 스카프.",
+      "Mulberry 시그니처 자수 프린지 가장자리 영국산 당사의 모노그램 서비스는 영국 및 일부 글로벌 매장에서 이용 가능합니다.",
+      "길이 200cm 너비 30cm 소재 메리노울 100% 메리노울 상품코드는 VS4319-890A938 입니다",
+      "200cm",
+      "30cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:36.402086+00:00"
   },
   {
     "id": "mb-small-cosmetic-pouch",
     "name": "Small Cosmetic Pouch",
     "nameKo": "스몰 코스메틱 파우치",
     "brand": "Mulberry",
-    "category": "bags",
-    "subcategory": "mb-women-travel-accessories",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
     "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new",
       "mulberry-bags",
       "mb-women-travel",
       "mb-women-travel-accessories"
@@ -9940,7 +11054,7 @@
     "tags": [
       "mulberry",
       "멀버리",
-      "bags"
+      "accessories"
     ],
     "descriptionKo": "필수 화장품을 담기에 완벽한 스타일리쉬한 소형 화장품 파우치는 여행에 꼭 필요한 아이템입니다. 가죽 손잡이가 달린 기능적인 지퍼 잠금장치, 편리한 내부 슬립 포켓, 고급 멀버리 트리 패브릭 안감이 특징입니다.",
     "image": "/products/mb-pdp/g-rl9062-127a340/1.jpg",
@@ -9983,6 +11097,9 @@
         "colorNameKo": "Black & Cognac Bio Based 스카치그레인",
         "size": "OS",
         "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
           "mulberry-bags",
           "mb-women-travel",
           "mb-women-travel-accessories"
@@ -10012,6 +11129,9 @@
         "colorNameKo": "Mole & Cognac Bio Based 스카치그레인",
         "size": "OS",
         "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new",
           "mulberry-bags",
           "mb-women-travel",
           "mb-women-travel-accessories"
@@ -10056,7 +11176,7 @@
       "5.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.457115+00:00"
+    "updatedAt": "2026-09-14T10:09:36.406136+00:00"
   },
   {
     "id": "mb-small-darley",
@@ -10135,14 +11255,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "Description The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap. · The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap. · 디테일 스몰 달리는 몸 전체에 착용하거나, 어깨에 착용하거나, 클러치로 휴대할 수 있습니다. 탈착식 체인 스트랩 Postman's Lock 잠금 장치 메인 수납 공간 1개 신용 카드 슬롯 8개 내부 지퍼 수납 공간 1개 내부 슬립 포켓 2개 거싯이 있는 외부 지퍼 포켓 1개 황동 구성 요소 마감 나파 안감 당사의 다각적인 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 13cm 폭 19cm 깊이 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽. 그레인 표면을 보호하기 위해 가죽을 가볍게 마감했습니다. 이 제품 코드는 RL5004-205A100입니다. · Removable chain strap · 13cm · 19cm · 4.5cm · 56cm",
+        "bodyKo": "설명 Small Darley는 당사의 아이코닉한 Postman's Lock을 기념하는 클래식 백입니다. 필수품을 운반하거나 대형 토트 안에 귀중품을 안전하게 보관하는 데 적합합니다. 우아한 엔벨로프 실루엣은 탈부착 가능한 체인 스트랩을 이용해 클러치로도 연출 가능합니다. · Small Darley는 당사의 아이코닉한 Postman's Lock을 기념하는 클래식 백입니다. 필수품을 운반하거나 대형 토트 안에 귀중품을 안전하게 보관하는 데 적합합니다. 우아한 엔벨로프 실루엣은 탈부착 가능한 체인 스트랩을 이용해 클러치로도 연출 가능합니다. · 유쾌한 스몰 운전은 몸 전체에 닿거나, 어깨에 닿거나, 압축기로 휴대할 수 있습니다. 체인 착식 스트랩 Postman's Lock 잠금 장치 메인 보호 공간 1개 신용 카드 슬롯 8개 내부 내부 공간 1개 내부 수납 포켓 2개 거싯이 있는 외부 지퍼 포켓 1개 필수 구성 요소 폴 나파 안감 내부의 다각적인 영국 스타일을 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\"를 사용할 수 있습니다. 높이 13cm 너비 19cm 기둥 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽. 곡물 표면을 보호하기 위해 가죽을 밀봉했습니다. 이 제품 코드는 RL5004-205A100입니다. · 탈부착 가능한 체인 스트랩 · 13cm · 19cm · 4.5cm · 56cm",
         "image": "/products/mb-pdp/g-rl5004-205a100/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "Description The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap. · The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap. · 디테일 스몰 달리는 몸 전체에 착용하거나, 어깨에 착용하거나, 클러치로 휴대할 수 있습니다. 탈착식 체인 스트랩 Postman's Lock 잠금 장치 메인 수납 공간 1개 신용 카드 슬롯 8개 내부 지퍼 수납 공간 1개 내부 슬립 포켓 2개 거싯이 있는 외부 지퍼 포켓 1개 황동 구성 요소 마감 나파 안감 당사의 다각적인 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 13cm 폭 19cm 깊이 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽. 그레인 표면을 보호하기 위해 가죽을 가볍게 마감했습니다. 이 제품 코드는 RL5004-205A100입니다. · Removable chain strap · 13cm · 19cm"
+        "valueKo": "설명 Small Darley는 당사의 아이코닉한 Postman's Lock을 기념하는 클래식 백입니다. 필수품을 운반하거나 대형 토트 안에 귀중품을 안전하게 보관하는 데 적합합니다. 우아한 엔벨로프 실루엣은 탈부착 가능한 체인 스트랩을 이용해 클러치로도 연출 가능합니다. · Small Darley는 당사의 아이코닉한 Postman's Lock을 기념하는 클래식 백입니다. 필수품을 운반하거나 대형 토트 안에 귀중품을 안전하게 보관하는 데 적합합니다. 우아한 엔벨로프 실루엣은 탈부착 가능한 체인 스트랩을 이용해 클러치로도 연출 가능합니다. · 유쾌한 스몰 운전은 몸 전체에 닿거나, 어깨에 닿거나, 압축기로 휴대할 수 있습니다. 체인 착식 스트랩 Postman's Lock 잠금 장치 메인 보호 공간 1개 신용 카드 슬롯 8개 내부 내부 공간 1개 내부 수납 포켓 2개 거싯이 있는 외부 지퍼 포켓 1개 필수 구성 요소 폴 나파 안감 내부의 다각적인 영국 스타일을 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\"를 사용할 수 있습니다. 높이 13cm 너비 19cm 기둥 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽. 곡물 표면을 보호하기 위해 가죽을 밀봉했습니다. 이 제품 코드는 RL5004-205A100입니다. · 탈부착 가능한 체인 스트랩 · 13cm · 19cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -10155,13 +11275,11 @@
       "높이 13cm 폭 19cm 깊이 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽.",
       "그레인 표면을 보호하기 위해 가죽을 가볍게 마감했습니다.",
       "이 제품 코드는 RL5004-205A100입니다.",
-      "Description The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap.",
-      "The Small Darley is a classic bag that celebrates our iconic Postman’s Lock. It’s perfect for carrying essentials or keeping valuables secure inside a large tote. Its elegant envelope silhouette can even be transformed into a clutch due to its detachable chain strap.",
-      "디테일 스몰 달리는 몸 전체에 착용하거나, 어깨에 착용하거나, 클러치로 휴대할 수 있습니다. 탈착식 체인 스트랩 Postman's Lock 잠금 장치 메인 수납 공간 1개 신용 카드 슬롯 8개 내부 지퍼 수납 공간 1개 내부 슬립 포켓 2개 거싯이 있는 외부 지퍼 포켓 1개 황동 구성 요소 마감 나파 안감 당사의 다각적인 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 13cm 폭 19cm 깊이 4.5cm 어깨끈 드롭 56cm 무게 0.5kg, 약 소재 스몰 클래식 그레인 작은 그레인 프린트 효과의 부드러운 소가죽. 그레인 표면을 보호하기 위해 가죽을 가볍게 마감했습니다. 이 제품 코드는 RL5004-205A100입니다.",
-      "Removable chain strap"
+      "Small Darley는 당사의 아이코닉한 Postman's Lock을 기념하는 클래식 백입니다. 필수품을 운반하거나 대형 토트 안에 귀중품을 안전하게 보관하는 데 적합합니다. 우아한 엔벨로프 실루엣은 탈부착 가능한 체인 스트랩을 이용해 클러치로도 연출 가능합니다.",
+      "탈부착 가능한 체인 스트랩"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.459309+00:00"
+    "updatedAt": "2026-09-14T10:09:36.408386+00:00"
   },
   {
     "id": "mb-small-iris",
@@ -10327,14 +11445,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "Description The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship. · The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship. · 디테일 조절 가능한 볼륨과 마그네틱 키스톤 락 잠금 장치가 있는 더블 핸들 백. 부드러운 구조의 키스톤 잠금 장치와 마젠틱 클로저 어깨 끈 브레이디드 핸들 포일 엠보싱 로고가 있는 탈착식 포브 앞면 패널에 조절 가능한 볼륨과 모양을 위한 두 개의 측면 타이 포일 엠보싱 로고 내부 슬립 포켓과 지퍼 포켓 안감 스웨이드 하나의 메인 수납 공간 우리가 자랑하는 다방면의 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 21cm 폭 24cm 깊이 15cm 손잡이 물방울 8cm 어깨끈 물방울 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 매우 미세한 그레인과 부드럽고 실크 같은 촉감을 지닌 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽. 이 제품 코드: HH6267-000A100 · Shoulder strap · 21cm · 24cm · 15cm · 8cm · 46-50cm · Details A double-handle bag with adjustable volume and magnetic Keystone Lock closure. Soft structure Keystone Lock with magentic closure Shoulder strap Braided handle Detachable fob with Foil embossed logo Two side ties for adjustable volume and shape Foil embossed logo on front panel One main compartment Internal slip pocket and zipped pocket Suede lined In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 21cm Width 24cm Depth 15cm Handle drop 8cm Shoulder strap drop 46-50cm Weight 0.7kg, approximately Material Heavy Grain A soft cow leather with a small printed grain effect with silky calf, which has a very fine grain and soft and silky touch. This product's code is HH6267-000Z671 · Details A bag with a modern, soft structure and natural versatility. Soft structure Keystone Lock with magnetic closure Shoulder strap Woven handle Detachable fob with foil embossed signature Two side ties for adjustable volume and shape Foil embossed signature on front panel One main compartment Internal slip pocket Internal zipped pocket Suede lined Brass hardware finish In recognition of the multifaceted British lifestyle brand that we are, branding may read either \"Mulberry\" or \"Mulberry England\". Height 21cm Width 24cm Depth 15cm Handle drop 8cm Shoulder strap drop 46-50cm Weight 0.7kg, approximately Material Heavy Grain & Silky Calf A bovine leather with a rounded grain and a soft, luxurious hand feel. This product's code is HH6267-000U888",
+        "bodyKo": "Description 아이리스는 현대적이고 부드러운 구조와 자연스러운 다용성을 선사합니다. 양쪽에 있는 이중 당김 코드는 가방의 촉감을 향상시키고 개인화된 모양을 가능하게 합니다. 브레이드 탑 핸들이나 긴 어깨 스트랩을 선택하여 여성스러운 실루엣을 더욱 강조하며, 키스톤 잠금장치는 영국 장인정신의 풍부한 역사를 반영합니다. · Iris는 현대적이고 부드러운 구조와 자연스러운 다양성을 선사합니다. 양쪽에 있는 이중 당김 코드는 가방의 촉감을 향상시키고 개인화된 모양을 가능하게 합니다. 브레이드 탑 핸들이나 긴 어깨 스트랩을 선택하여 여성스러운 실루엣을 더욱 강조하며, 키스톤 잠금장치는 영국 장인정신의 풍부한 역사를 반영합니다. · 끌리는 백조절형 볼륨과 마그네틱 키스톤 잠금 잠금 장치가 있는 양방향 손잡이가 있습니다. 구조의 부드러운 키스톤 잠금 장치와 마젠틱 클로저 뺨 끈 브레이디드 손잡이 포일 엠보싱 로고가 있는 탈착식 포브레이 패널에 조절 가능한 볼륨과 모양을 두 번째로 일러스트레이션 포일 엠보싱 로고 내부 클립 포켓과 포켓 안감 스웨이드 하나의 메인 티드 공간 우리가 자랑스러운 다방면의 영국 생활 스타일 유명인을 인정받은 브랜드는 \"Mulberry\" 또는 \"Mulberry England\"를 볼 수 있습니다. 높이 21cm 너비 24cm 너비 15cm 손잡이 폴 8cm 쇄도 펄 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 구형 그레인과 같은 모양의 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽. 이 제품 코드: HH6267-000A100 · 어깨 끈 · 21cm · 24cm · 15cm · 8cm · 46-50cm · 세부 정보 용량 조절이 가능하고 자석 키스톤 잠금 장치가 있는 이중 손잡이 가방입니다. 부드러운 구조 마젠틱 잠금 장치가 있는 키스톤 잠금 장치 어깨 끈 편조 핸들 포일 엠보싱 로고가 있는 탈착식 전자시계 볼륨 및 모양 조절이 가능한 두 개의 측면 타이 전면 패널에 포일 엠보싱 로고 메인 수납공간 1개 내부 슬립 포켓 및 지퍼 포켓 스웨이드 안감 다각적인 영국 라이프스타일 브랜드인 당사를 인식하여 브랜딩에는 \"Mulberry\" 또는 \"Mulberry England\"가 표시될 수 있습니다. 높이 21cm 폭 24cm 깊이 15cm 손잡이 높이 8cm 어깨끈 높이 46-50cm 무게 약 0.7kg 소재",
         "image": "/products/mb-pdp/g-hh6267-000a100/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "Description The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship. · The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship. · 디테일 조절 가능한 볼륨과 마그네틱 키스톤 락 잠금 장치가 있는 더블 핸들 백. 부드러운 구조의 키스톤 잠금 장치와 마젠틱 클로저 어깨 끈 브레이디드 핸들 포일 엠보싱 로고가 있는 탈착식 포브 앞면 패널에 조절 가능한 볼륨과 모양을 위한 두 개의 측면 타이 포일 엠보싱 로고 내부 슬립 포켓과 지퍼 포켓 안감 스웨이드 하나의 메인 수납 공간 우리가 자랑하는 다방면의 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 21cm 폭 24cm 깊이 15cm 손잡이 물방울 8cm 어깨끈 물방울 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 매우 미세한 그레인과 부드럽고 실크 같은 촉감을 지닌 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽. 이 제품 코드: HH6267-000A100 · Shoulder strap · 21cm · 24cm"
+        "valueKo": "Description 아이리스는 현대적이고 부드러운 구조와 자연스러운 다용성을 선사합니다. 양쪽에 있는 이중 당김 코드는 가방의 촉감을 향상시키고 개인화된 모양을 가능하게 합니다. 브레이드 탑 핸들이나 긴 어깨 스트랩을 선택하여 여성스러운 실루엣을 더욱 강조하며, 키스톤 잠금장치는 영국 장인정신의 풍부한 역사를 반영합니다. · Iris는 현대적이고 부드러운 구조와 자연스러운 다양성을 선사합니다. 양쪽에 있는 이중 당김 코드는 가방의 촉감을 향상시키고 개인화된 모양을 가능하게 합니다. 브레이드 탑 핸들이나 긴 어깨 스트랩을 선택하여 여성스러운 실루엣을 더욱 강조하며, 키스톤 잠금장치는 영국 장인정신의 풍부한 역사를 반영합니다. · 끌리는 백조절형 볼륨과 마그네틱 키스톤 잠금 잠금 장치가 있는 양방향 손잡이가 있습니다. 구조의 부드러운 키스톤 잠금 장치와 마젠틱 클로저 뺨 끈 브레이디드 손잡이 포일 엠보싱 로고가 있는 탈착식 포브레이 패널에 조절 가능한 볼륨과 모양을 두 번째로 일러스트레이션 포일 엠보싱 로고 내부 클립 포켓과 포켓 안감 스웨이드 하나의 메인 티드 공간 우리가 자랑스러운 다방면의 영국 생활 스타일 유명인을 인정받은 브랜드는 \"Mulberry\" 또는 \"Mulberry England\"를 볼 수 있습니다. 높이 21cm 너비 24cm 너비 15cm 손잡이 폴 8cm 쇄도 펄 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 구형 그레인과 같은 모양의 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽. 이 제품 코드: HH6267-000A100 · 어깨끈 · 21cm · 24cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -10343,16 +11461,13 @@
     ],
     "featuresKo": [
       "디테일 조절 가능한 볼륨과 마그네틱 키스톤 락 잠금 장치가 있는 더블 핸들 백.",
-      "부드러운 구조의 키스톤 잠금 장치와 마젠틱 클로저 어깨 끈 브레이디드 핸들 포일 엠보싱 로고가 있는 탈착식 포브 앞면 패널에 조절 가능한 볼륨과 모양을 위한 두 개의 측면 타이 포일 엠보싱 로고 내부 슬립 포켓과 지퍼 포켓 안감 스웨이드 하나의 메인 수납 공간 우리가 자랑하는 다방면의 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다.",
       "높이 21cm 폭 24cm 깊이 15cm 손잡이 물방울 8cm 어깨끈 물방울 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 매우 미세한 그레인과 부드럽고 실크 같은 촉감을 지닌 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽.",
       "이 제품 코드: HH6267-000A100",
-      "Description The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship.",
-      "The Iris presents a modern, soft structure and a natural versatility. Double pull cords to either side enhance the bag’s tactility and allow for a personalised shape. Its ladylike silhouette is enhanced with the choice of a braided top handle or a long shoulder strap, while the Keystone Lock reflects a rich history of British craftsmanship.",
-      "디테일 조절 가능한 볼륨과 마그네틱 키스톤 락 잠금 장치가 있는 더블 핸들 백. 부드러운 구조의 키스톤 잠금 장치와 마젠틱 클로저 어깨 끈 브레이디드 핸들 포일 엠보싱 로고가 있는 탈착식 포브 앞면 패널에 조절 가능한 볼륨과 모양을 위한 두 개의 측면 타이 포일 엠보싱 로고 내부 슬립 포켓과 지퍼 포켓 안감 스웨이드 하나의 메인 수납 공간 우리가 자랑하는 다방면의 영국 라이프스타일 브랜드를 인정받아 브랜드는 \"Mulberry\" 또는 \"Mulberry England\" 를 읽을 수 있습니다. 높이 21cm 폭 24cm 깊이 15cm 손잡이 물방울 8cm 어깨끈 물방울 46-50cm 무게 0.7kg, 약 재질 헤비 그레인 매우 미세한 그레인과 부드럽고 실크 같은 촉감을 지닌 실크 송아지가 작은 프린트 그레인 효과를 낸 부드러운 소가죽. 이 제품 코드: HH6267-000A100",
-      "Shoulder strap"
+      "Iris는 현대적이고 부드러운 구조와 자연스러운 다양성을 선사합니다. 양쪽에 있는 이중 당김 코드는 가방의 촉감을 향상시키고 개인화된 모양을 가능하게 합니다. 브레이드 탑 핸들이나 긴 어깨 스트랩을 선택하여 여성스러운 실루엣을 더욱 강조하며, 키스톤 잠금장치는 영국 장인정신의 풍부한 역사를 반영합니다.",
+      "어깨끈"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.463872+00:00"
+    "updatedAt": "2026-09-14T10:09:36.411411+00:00"
   },
   {
     "id": "mb-small-leather-tray",
@@ -10365,7 +11480,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -10416,7 +11533,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -10454,7 +11573,7 @@
       "3cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.464741+00:00"
+    "updatedAt": "2026-09-14T10:09:36.413749+00:00"
   },
   {
     "id": "mb-small-roxanne",
@@ -10462,13 +11581,16 @@
     "nameKo": "스몰 록산느",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mulberry-bags",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
       "mb-gifts",
+      "mb-women-acc",
+      "mb-gifts-her",
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-mini"
+      "mb-women-mini",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -10515,7 +11637,9 @@
         "size": "OS",
         "mbCollections": [
           "mulberry-accessories",
-          "mb-gifts"
+          "mb-gifts",
+          "mb-women-acc",
+          "mb-gifts-her"
         ]
       },
       {
@@ -10543,7 +11667,9 @@
         "size": "OS",
         "mbCollections": [
           "mulberry-accessories",
-          "mb-gifts"
+          "mb-gifts",
+          "mb-women-acc",
+          "mb-gifts-her"
         ]
       },
       {
@@ -10597,7 +11723,10 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-mini"
+          "mb-women-mini",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       }
     ],
@@ -10614,14 +11743,14 @@
       },
       {
         "titleKo": "사이즈 & 디멘션",
-        "bodyKo": "Detachable and adjustable strap · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm · 50cm",
+        "bodyKo": "탈부착 및 조절 가능한 스트랩 · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm · 50cm",
         "image": "/products/mb-pdp/g-hh0099-205n663/3.jpg"
       }
     ],
     "techSpecs": [
       {
         "labelKo": "디멘션",
-        "valueKo": "Detachable and adjustable strap · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm"
+        "valueKo": "탈부착 및 조절 가능한 스트랩 · 13.5cm - 17cm · 24cm - 28cm · 6cm - 10cm · 12cm · 69cm - 84cm"
       },
       {
         "labelKo": "컬러웨이",
@@ -10629,17 +11758,17 @@
       }
     ],
     "featuresKo": [
-      "Y2K에서 영감을 받은 Roxanne 스타일의 소형 버전입니다.",
+      "Y2K와 관련하여 Roxanne 스타일의 버전 버전입니다.",
       "황동 하드웨어 마감 탈부착 및 조절 가능한 스트랩 상단 핸들 2개 자석 잠금 장치가 있는 외부 전면 포켓 2개 내부 슬립 포켓 1개 버클 디테일 포일 엠보싱 Mulberry 시그니처 Mulberry 나무 안감 높이 13.5cm - 17cm 폭 24cm - 28cm 깊이 6cm - 10cm 핸들 높이 12cm 스트랩 길이 69cm - 84cm 스트랩 높이(중간 구멍에서) 50cm 무게 약 0.8kg 소재 스웨이드 투명한 레진 뒷면으로 마감 처리하여 부드럽고 대비되는 외관을 제공하고 기능성을 향상시킨 소 스웨이드입니다.",
       "이 뒷면은 색상과 섬유 이동을 줄이고 재료를 부드럽게 청소할 수 있습니다.",
       "이 상품의 코드는 HH0389-047V699 입니다.",
-      "Detachable and adjustable strap",
+      "탈부착 및 조절 가능한 스트랩",
       "13.5cm - 17cm",
       "24cm - 28cm",
       "6cm - 10cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.466765+00:00"
+    "updatedAt": "2026-09-14T10:09:36.415828+00:00"
   },
   {
     "id": "mb-small-scotchgrain-bucket",
@@ -10744,7 +11873,7 @@
       "14cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.468600+00:00"
+    "updatedAt": "2026-09-14T10:09:36.416123+00:00"
   },
   {
     "id": "mb-small-solid-merino-wool-scarf",
@@ -10845,7 +11974,7 @@
       "30cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.470264+00:00"
+    "updatedAt": "2026-09-14T10:09:36.418849+00:00"
   },
   {
     "id": "mb-small-stevie-top-handle",
@@ -10853,12 +11982,16 @@
     "nameKo": "스몰 스티비 탑 핸들",
     "brand": "Mulberry",
     "category": "bags",
-    "subcategory": "mb-women-mini",
+    "subcategory": "mb-women-clutches",
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
+      "mb-women-clutches",
       "mb-women-mini",
-      "mb-women-clutches"
+      "mb-women-top-handle",
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -10908,7 +12041,12 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-mini"
+          "mb-women-clutches",
+          "mb-women-mini",
+          "mb-women-top-handle",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       },
       {
@@ -10937,7 +12075,12 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-clutches"
+          "mb-women-clutches",
+          "mb-women-mini",
+          "mb-women-top-handle",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       }
     ],
@@ -10978,7 +12121,7 @@
       "11.5cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.470754+00:00"
+    "updatedAt": "2026-09-14T10:09:36.419365+00:00"
   },
   {
     "id": "mb-stevie-top-handle",
@@ -10990,7 +12133,11 @@
     "mbCollections": [
       "mulberry-bags",
       "mb-women-bags",
-      "mb-women-shoulder"
+      "mb-women-shoulder",
+      "mb-women-top-handle",
+      "mulberry-accessories",
+      "mb-women-acc",
+      "mb-women-whats-new"
     ],
     "tags": [
       "mulberry",
@@ -11040,7 +12187,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-shoulder"
+          "mb-women-shoulder",
+          "mb-women-top-handle"
         ]
       },
       {
@@ -11069,7 +12217,11 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-shoulder"
+          "mb-women-shoulder",
+          "mb-women-top-handle",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       },
       {
@@ -11098,7 +12250,11 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-shoulder"
+          "mb-women-shoulder",
+          "mb-women-top-handle",
+          "mulberry-accessories",
+          "mb-women-acc",
+          "mb-women-whats-new"
         ]
       },
       {
@@ -11127,7 +12283,8 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-women-bags",
-          "mb-women-shoulder"
+          "mb-women-shoulder",
+          "mb-women-top-handle"
         ]
       }
     ],
@@ -11169,7 +12326,7 @@
       "15cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.473266+00:00"
+    "updatedAt": "2026-09-14T10:09:36.420533+00:00"
   },
   {
     "id": "mb-suede-tree-tote",
@@ -11360,7 +12517,7 @@
       "37cm-51cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.475164+00:00"
+    "updatedAt": "2026-09-14T10:09:36.423931+00:00"
   },
   {
     "id": "mb-throw-blanket",
@@ -11373,7 +12530,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -11422,7 +12581,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -11449,13 +12610,13 @@
       }
     ],
     "featuresKo": [
-      "An 100% wool blanket.",
-      "100% wool blanket Heritage check print Fringed edges Made in Scotland Leather patch with Mulberry branding Length 177cm Width 157cm Material Wool 100% wool with bovine leather patch This product's code is TH0033-000Q130",
+      "울 100% 담요입니다.",
+      "울 100% 담요 헤리티지 체크 프린트 프린지 장식 코드 Made in Scotland Mulberry 브랜딩이 있는 가죽 패치 길이 177cm 너비 157cm 소재 울 100% 소가죽 패치가 있는 상품은 TH0033-000Q130 입니다.",
       "177cm",
       "157cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.475863+00:00"
+    "updatedAt": "2026-09-14T10:09:36.612462+00:00"
   },
   {
     "id": "mb-tree-tote",
@@ -11468,6 +12629,8 @@
       "mulberry-bags",
       "mb-men-bags",
       "mb-men-holdalls",
+      "mb-women-travel",
+      "mb-women-travel-holdalls",
       "mb-women-bags",
       "mb-women-totes"
     ],
@@ -11519,7 +12682,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls"
         ]
       },
       {
@@ -11548,7 +12713,9 @@
         "mbCollections": [
           "mulberry-bags",
           "mb-men-bags",
-          "mb-men-holdalls"
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls"
         ]
       },
       {
@@ -11618,7 +12785,7 @@
       "20cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.478342+00:00"
+    "updatedAt": "2026-09-14T10:09:36.614266+00:00"
   },
   {
     "id": "mb-tree-tote-raffia",
@@ -11626,10 +12793,17 @@
     "nameKo": "Tree 토트 - Raffia",
     "brand": "Mulberry",
     "category": "accessories",
-    "subcategory": "mb-gifts",
+    "subcategory": "mb-women-acc",
     "mbCollections": [
       "mulberry-accessories",
-      "mb-gifts"
+      "mb-gifts",
+      "mb-women-acc",
+      "mb-gifts-her",
+      "mulberry-bags",
+      "mb-men-bags",
+      "mb-men-holdalls",
+      "mb-women-travel",
+      "mb-women-travel-holdalls"
     ],
     "tags": [
       "mulberry",
@@ -11674,7 +12848,14 @@
         "size": "OS",
         "mbCollections": [
           "mulberry-accessories",
-          "mb-gifts"
+          "mb-gifts",
+          "mb-women-acc",
+          "mb-gifts-her",
+          "mulberry-bags",
+          "mb-men-bags",
+          "mb-men-holdalls",
+          "mb-women-travel",
+          "mb-women-travel-holdalls"
         ]
       }
     ],
@@ -11714,7 +12895,7 @@
       "20cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.479847+00:00"
+    "updatedAt": "2026-09-14T10:09:36.618180+00:00"
   },
   {
     "id": "mb-wine-carrier",
@@ -11727,7 +12908,9 @@
       "mulberry-accessories",
       "mb-men-acc",
       "mb-men-lifestyle",
-      "mb-lifestyle"
+      "mb-lifestyle",
+      "mb-women-acc",
+      "mb-women-lifestyle"
     ],
     "tags": [
       "mulberry",
@@ -11778,7 +12961,9 @@
           "mulberry-accessories",
           "mb-men-acc",
           "mb-men-lifestyle",
-          "mb-lifestyle"
+          "mb-lifestyle",
+          "mb-women-acc",
+          "mb-women-lifestyle"
         ]
       }
     ],
@@ -11817,6 +13002,104 @@
       "11cm"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-09-13T18:55:16.480842+00:00"
+    "updatedAt": "2026-09-14T10:09:36.619194+00:00"
+  },
+  {
+    "id": "mb-zipped-flat-pouch",
+    "name": "Zipped Flat Pouch",
+    "nameKo": "지퍼 플랫 파우치",
+    "brand": "Mulberry",
+    "category": "accessories",
+    "subcategory": "mb-men-whats-new",
+    "mbCollections": [
+      "mulberry-accessories",
+      "mb-men-acc",
+      "mb-men-whats-new"
+    ],
+    "tags": [
+      "mulberry",
+      "멀버리",
+      "accessories"
+    ],
+    "descriptionKo": "세련되고 시크하며 일상생활에 적합하도록 제작된 지퍼 플랫 파우치는 대부분의 노트북과 대부분의 가방에 들어갈 만큼 충분히 큽니다.",
+    "image": "/products/mb-pdp/g-rl9083-205a100/1.jpg",
+    "images": [
+      "/products/mb-pdp/g-rl9083-205a100/1.jpg",
+      "/products/mb-pdp/g-rl9083-205a100/2.jpg",
+      "/products/mb-pdp/g-rl9083-205a100/3.jpg",
+      "/products/mb-pdp/g-rl9083-205a100/4.jpg",
+      "/products/mb-pdp/g-rl9083-205a100/5.jpg",
+      "/products/mb-pdp/g-rl9083-205a100/6.jpg"
+    ],
+    "accent": "#1A1A1A",
+    "gbpPrice": 245.0,
+    "sku": "G_RL9083_205A100",
+    "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/zipped-flat-pouch-black-small-classic-grain",
+    "variants": [
+      {
+        "id": "mb-g-rl9083-205a100-sz-os",
+        "name": "Black Small Classic Grain",
+        "nameKo": "Black 스몰 클래식 그레인",
+        "sku": "G_RL9083_205A100",
+        "gbpPrice": 245.0,
+        "price": 620000,
+        "image": "/products/mb-pdp/g-rl9083-205a100/1.jpg",
+        "images": [
+          "/products/mb-pdp/g-rl9083-205a100/1.jpg",
+          "/products/mb-pdp/g-rl9083-205a100/2.jpg",
+          "/products/mb-pdp/g-rl9083-205a100/3.jpg",
+          "/products/mb-pdp/g-rl9083-205a100/4.jpg",
+          "/products/mb-pdp/g-rl9083-205a100/5.jpg",
+          "/products/mb-pdp/g-rl9083-205a100/6.jpg"
+        ],
+        "sourceUrl": "https://www.mulberry.com/gb/shop/women/whats-new/zipped-flat-pouch-black-small-classic-grain",
+        "inStock": true,
+        "colorKey": "black-small-classic-grain",
+        "colorNameKo": "Black 스몰 클래식 그레인",
+        "size": "OS",
+        "mbCollections": [
+          "mulberry-accessories",
+          "mb-men-acc",
+          "mb-men-whats-new"
+        ]
+      }
+    ],
+    "storySections": [
+      {
+        "titleKo": "제품 소개",
+        "bodyKo": "세련되고 시크하며 일상생활에 적합하도록 제작된 지퍼 플랫 파우치는 대부분의 노트북과 대부분의 가방에 들어갈 만큼 충분히 큽니다.",
+        "image": "/products/mb-pdp/g-rl9083-205a100/1.jpg"
+      },
+      {
+        "titleKo": "디테일 & 특징",
+        "bodyKo": "지퍼가 달린 플랫 파우치. 포일 엠보싱 Mulberry 로고 가죽 지퍼 손잡이 메인 수납칸 1개 황동 하드웨어 마감 마이크로파이버 안감 높이 20.5cm 폭 27cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽. 가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다. 이 제품의 코드는 RL9083-205A100 입니다.",
+        "image": "/products/mb-pdp/g-rl9083-205a100/2.jpg"
+      },
+      {
+        "titleKo": "사이즈 & 디멘션",
+        "bodyKo": "20.5cm · 27cm",
+        "image": "/products/mb-pdp/g-rl9083-205a100/3.jpg"
+      }
+    ],
+    "techSpecs": [
+      {
+        "labelKo": "디멘션",
+        "valueKo": "20.5cm · 27cm"
+      },
+      {
+        "labelKo": "컬러웨이",
+        "valueKo": "1가지"
+      }
+    ],
+    "featuresKo": [
+      "지퍼가 달린 플랫 파우치.",
+      "포일 엠보싱 Mulberry 로고 가죽 지퍼 손잡이 메인 수납칸 1개 황동 하드웨어 마감 마이크로파이버 안감 높이 20.5cm 폭 27cm 소재 스몰 클래식 그레인 작은 프린트 그레인 효과가 있는 부드러운 소가죽.",
+      "가죽은 결 표면을 보호하기 위해 가볍게 마감 처리되어 있습니다.",
+      "이 제품의 코드는 RL9083-205A100 입니다.",
+      "20.5cm",
+      "27cm"
+    ],
+    "sizeChart": null,
+    "updatedAt": "2026-09-14T10:09:41.871866+00:00"
   }
 ]

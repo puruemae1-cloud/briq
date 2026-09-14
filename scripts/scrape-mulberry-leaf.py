@@ -51,7 +51,24 @@ def main() -> int:
         url = card["url"]
         print(f"[{i}/{len(cards)}] {card.get('title')} {url}", flush=True)
         if args.skip_existing and url in existing:
-            print("  skip existing", flush=True)
+            # Keep nav tags current even when we skip PDP re-fetch.
+            idx = by_url.get(url)
+            if idx is not None:
+                prev = products[idx]
+                cols = list(prev.get("collections") or [])
+                for c in leaf.get("collections") or []:
+                    if c and c not in cols:
+                        cols.append(c)
+                if cols != list(prev.get("collections") or []):
+                    prev["collections"] = cols
+                    products[idx] = prev
+                    payload["products"] = products
+                    save_json(out_path, payload)
+                    print("  skip existing (collections refreshed)", flush=True)
+                else:
+                    print("  skip existing", flush=True)
+            else:
+                print("  skip existing", flush=True)
             continue
         try:
             pdp = scrape_pdp(url)
