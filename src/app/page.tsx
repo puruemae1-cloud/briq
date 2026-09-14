@@ -38,7 +38,10 @@ export default async function HomePage() {
           />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">
-            <h1 className="hero__brand">London to Your Door</h1>
+            <h1 className="hero__brand">
+              London to
+              <br className="hero__brand-break" /> Your&nbsp;Door
+            </h1>
             <p className="hero__headline">British Boutique. Unique edit.</p>
             <p className="hero__support">
               영국 현지 기준의 까다로운 셀렉션,

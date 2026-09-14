@@ -1496,6 +1496,17 @@ body:has(.nav-drawer-toggle:checked) {
   margin-bottom: 0.4rem;
 }
 
+/* Mobile-only break so "Your Door" stays one line under the brand. */
+.hero__brand-break {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  .hero__brand-break {
+    display: block;
+  }
+}
+
 .hero--fullframe .hero__headline {
   margin-bottom: 0.4rem;
 }
@@ -1841,8 +1852,9 @@ body:has(.nav-drawer-toggle:checked) {
     line-height: 1.4;
   }
 
+  /* Burberry Winter Wardrobing mobile creative — native 4:5 portrait */
   .hero--fullframe .hero__stage {
-    aspect-ratio: 1024 / 576;
+    aspect-ratio: 4 / 5;
     height: auto;
     min-height: 0;
     padding: 0;
@@ -1881,8 +1893,8 @@ body:has(.nav-drawer-toggle:checked) {
   .hero--fullframe .hero__content {
     position: absolute;
     left: 1.1rem;
-    top: 42%;
-    max-width: min(17.5rem, 58%);
+    top: 8%;
+    max-width: min(18rem, 78%);
     padding: 0 0 0.5rem;
     background: transparent;
     text-align: left;
@@ -1891,7 +1903,8 @@ body:has(.nav-drawer-toggle:checked) {
   .hero__brand {
     font-size: clamp(1.2rem, 5.8vw, 1.75rem);
     margin-bottom: 0.3rem;
-    line-height: 1.08;
+    line-height: 1.12;
+    white-space: normal;
   }
 
   .hero__headline {
