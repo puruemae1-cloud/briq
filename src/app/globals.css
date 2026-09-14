@@ -1902,18 +1902,19 @@ body:has(.nav-drawer-toggle:checked) {
 
   .hero__brand {
     font-size: clamp(1.2rem, 5.8vw, 1.75rem);
-    margin-bottom: 0.3rem;
+    /* ~4× previous gap so British sits clearly under Your Door */
+    margin-bottom: 1.2rem;
     line-height: 1.12;
     white-space: normal;
   }
 
   .hero__headline {
-    font-size: clamp(0.86rem, 3.4vw, 1rem);
+    font-size: clamp(1.032rem, 4.08vw, 1.2rem); /* +20% from British on */
     margin-bottom: 0.3rem;
   }
 
   .hero__support {
-    font-size: 0.8rem;
+    font-size: 0.96rem; /* +20% from British on */
     line-height: 1.4;
     margin-bottom: 0;
   }
@@ -2430,14 +2431,15 @@ body:has(.nav-drawer-toggle:checked) {
 
   .hero__brand {
     font-size: clamp(1.45rem, 3.8vw, 2.1rem);
+    margin-bottom: 1.2rem;
   }
 
   .hero__headline {
-    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+    font-size: clamp(1.14rem, 2.64vw, 1.38rem); /* +20% from British on */
   }
 
   .hero__support {
-    font-size: 0.88rem;
+    font-size: 1.056rem; /* +20% from British on */
   }
 
   .collection-100__banner-content {
