@@ -1690,6 +1690,11 @@ body:has(.nav-drawer-toggle:checked) {
     align-items: end;
   }
 
+  /* Now in London mobile creative is portrait — keep native vertical length */
+  .look-banner--event-new.look-banner--fullframe {
+    aspect-ratio: 3 / 4;
+  }
+
   .look-banner--fullframe .look-banner__hit {
     display: grid;
     align-items: end;

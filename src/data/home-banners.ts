@@ -124,9 +124,10 @@ export const homeLookBanners: LookBanner[] = [
     href: "/shop?sort=new",
     cta: "신상 보러가기",
     // Locked creative — weekly refresh only rotates rot-event-* (unused here).
+    // Desktop/tablet: event-now-london.jpg; mobile uses /banners/m/ portrait Chanel FW26.
     images: ["/banners/event-now-london.jpg"],
     align: "left",
-    focal: "50% 45%",
+    focal: "50% 48%",
     fullFrame: true,
     aspectRatio: "2560 / 1436",
   },
