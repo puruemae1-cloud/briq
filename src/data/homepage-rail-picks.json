@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T11:06:31Z",
+  "generatedAt": "2026-09-14T14:43:52Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,10 +32,24 @@
     },
     "bags": {
       "productIds": [
-        "ce-120693fx9-01cr",
-        "ce-123662j79-gfy5",
-        "ce-l107r4g77-04lu",
-        "ce-l104v3280-02nw"
+        "mb-tree-tote",
+        "mb-stevie-top-handle",
+        "mb-small-zipped-bayswater",
+        "mb-small-woven-leather-tote"
+      ],
+      "brands": [
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
+      ]
+    },
+    "shoes": {
+      "productIds": [
+        "ce-356834582c-38no",
+        "ce-352193676c-38no",
+        "ce-352213958c-38no",
+        "ce-352203886c-36ps"
       ],
       "brands": [
         "celine",
@@ -44,32 +58,18 @@
         "celine"
       ]
     },
-    "shoes": {
-      "productIds": [
-        "di-kct115vea-s900",
-        "di-kdf215lab-s900",
-        "di-kco512cst-s57u",
-        "di-kcb384tfl-s900"
-      ],
-      "brands": [
-        "dior",
-        "dior",
-        "dior",
-        "dior"
-      ]
-    },
     "accessories": {
       "productIds": [
-        "mb-wine-carrier",
-        "mb-tree-tote-raffia",
-        "mb-throw-blanket",
-        "mb-small-solid-merino-wool-scarf"
+        "lu-london-undercover-e-gift-card",
+        "lu-city-gent-umbrella",
+        "lu-toyo-steel-y350-toolbox-silver",
+        "lu-city-lux-umbrella"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "london-undercover",
+        "london-undercover",
+        "london-undercover",
+        "london-undercover"
       ]
     },
     "sports": {
@@ -95,12 +95,6 @@
       "luxury"
     ],
     "celine": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
-    ],
-    "dior": [
       "shoes",
       "shoes",
       "shoes",
@@ -112,11 +106,17 @@
       "sports",
       "sports"
     ],
-    "mulberry": [
+    "london-undercover": [
       "accessories",
       "accessories",
       "accessories",
       "accessories"
+    ],
+    "mulberry": [
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ],
     "vivienne-westwood": [
       "watches",
