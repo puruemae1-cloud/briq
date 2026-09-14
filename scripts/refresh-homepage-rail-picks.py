@@ -35,6 +35,34 @@ RAIL_BLOCKED_BRANDS = {
     "luxury": {"arcteryx", "belstaff"},
 }
 
+# Homepage-only swimwear exclusion (shop/search unchanged). Mirrors
+# src/lib/homepage-product-filters.ts
+SWIMWEAR_TAXONOMY_RE = re.compile(r"swimwear|swimsuit|swimsuits|스윔웨어|수영복", re.I)
+SWIMWEAR_NAME_RE = re.compile(
+    r"수영복|비키니|swimsuit|swimwear|swim\s*shorts?|스윔\s*쇼츠|bikini|"
+    r"one[-\s]?piece\s*swim|삼각\s*탑.*수영|수영.*삼각",
+    re.I,
+)
+
+COLLECTION_KEYS = (
+    "tags",
+    "cwCollections",
+    "ggCollections",
+    "bbCollections",
+    "axCollections",
+    "luCollections",
+    "psCollections",
+    "bsCollections",
+    "gcCollections",
+    "chCollections",
+    "ceCollections",
+    "vwCollections",
+    "mbCollections",
+    "prCollections",
+    "lvCollections",
+    "diCollections",
+)
+
 ID_PREFIX_BRAND = [
     ("axa-", "arcteryx"),
     ("axg-", "arcteryx"),
@@ -78,6 +106,20 @@ CATALOG_GLOBS = [
     "src/data/**/*catalog.json",
     "src/data/**/*-catalog.json",
 ]
+
+
+def is_homepage_swimwear(row: dict) -> bool:
+    sub = str(row.get("subcategory") or "")
+    if SWIMWEAR_TAXONOMY_RE.search(sub):
+        return True
+    for key in COLLECTION_KEYS:
+        vals = row.get(key) or []
+        if isinstance(vals, list) and any(
+            SWIMWEAR_TAXONOMY_RE.search(str(v)) for v in vals
+        ):
+            return True
+    name = f"{row.get('name') or ''} {row.get('nameKo') or ''}"
+    return bool(SWIMWEAR_NAME_RE.search(name))
 
 
 def brand_key(row: dict) -> str:
@@ -159,6 +201,8 @@ def load_products() -> list[dict]:
             cat_m = re.search(r'category:\s*"([^"]+)"', part)
             brand_m = re.search(r'brand:\s*"([^"]*)"', part)
             name_m = re.search(r'nameKo:\s*"([^"]*)"', part)
+            name_en_m = re.search(r'name:\s*"([^"]*)"', part)
+            sub_m = re.search(r'subcategory:\s*"([^"]*)"', part)
             reg_m = re.search(r'registeredAt:\s*"([^"]+)"', part)
             stock_m = re.search(r"inStock:\s*(true|false)", part)
             row = {
@@ -166,6 +210,8 @@ def load_products() -> list[dict]:
                 "category": cat_m.group(1) if cat_m else "",
                 "brand": brand_m.group(1) if brand_m else "",
                 "nameKo": name_m.group(1) if name_m else "",
+                "name": name_en_m.group(1) if name_en_m else "",
+                "subcategory": sub_m.group(1) if sub_m else "",
                 "registeredAt": reg_m.group(1) if reg_m else "",
                 "inStock": (stock_m.group(1) == "true") if stock_m else True,
             }
@@ -190,6 +236,8 @@ def assign(products: list[dict], limit: int = 4) -> dict[str, list[dict]]:
         blocked = RAIL_BLOCKED_BRANDS.get(rail_id) or set()
         picked: list[dict] = []
         for row in use:
+            if is_homepage_swimwear(row):
+                continue
             key = brand_key(row)
             if key in used or key in blocked:
                 continue
@@ -204,7 +252,11 @@ def assign(products: list[dict], limit: int = 4) -> dict[str, list[dict]]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--fail", action="store_true", help="Exit 1 on brand overlap")
+    ap.add_argument(
+        "--fail",
+        action="store_true",
+        help="Exit 1 on brand overlap or swimwear leak",
+    )
     ap.add_argument("--limit", type=int, default=4)
     args = ap.parse_args()
 
@@ -218,10 +270,13 @@ def main() -> int:
         "rails": {},
         "brands": {},
     }
+    swimwear_leaks: list[str] = []
     for rail_id, rows in rails.items():
         brands = []
         ids = []
         for row in rows:
+            if is_homepage_swimwear(row):
+                swimwear_leaks.append(f"{rail_id}:{row.get('id')}")
             key = brand_key(row)
             brands.append(key)
             ids.append(row.get("id"))
@@ -238,10 +293,20 @@ def main() -> int:
     overlaps = {b: rs for b, rs in brand_to_rails.items() if len(set(rs)) > 1}
     report["brands"] = {b: rs for b, rs in sorted(brand_to_rails.items())}
     report["overlaps"] = overlaps
+    report["swimwearLeaks"] = swimwear_leaks
 
     out_path = ROOT / "src/data/homepage-rail-picks.json"
     out_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    print(f"wrote {out_path.relative_to(ROOT)} overlaps={len(overlaps)}", flush=True)
+    print(
+        f"wrote {out_path.relative_to(ROOT)} overlaps={len(overlaps)} "
+        f"swimwearLeaks={len(swimwear_leaks)}",
+        flush=True,
+    )
+
+    if swimwear_leaks:
+        print("SWIMWEAR_LEAK", swimwear_leaks, flush=True)
+        if args.fail:
+            return 1
 
     if overlaps:
         print("OVERLAP", overlaps, flush=True)

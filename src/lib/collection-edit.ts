@@ -1,4 +1,5 @@
 import type { Product } from "@/data/product-types";
+import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
 import {
   compareProductsByNewest,
   sortProducts,
@@ -42,12 +43,15 @@ export function curateCollectionEdit(
   products: Product[],
   purchaseCounts: Record<string, number> = {},
 ): CuratedEdit {
+  // Homepage 100 Collection — exclude swimwear (shop/search unchanged).
+  const pool = products.filter((p) => !isHomepageSwimwearProduct(p));
+
   const signature = sortProducts(
-    products.filter((p) => p.price >= SIGNATURE_MIN),
+    pool.filter((p) => p.price >= SIGNATURE_MIN),
     "new",
   ).slice(0, SECTION_LIMIT);
 
-  const bestseller = products
+  const bestseller = pool
     .filter((p) => (purchaseCounts[p.id] ?? 0) >= 1)
     .sort((a, b) => {
       const stock = stockSortRank(a) - stockSortRank(b);
@@ -61,9 +65,8 @@ export function curateCollectionEdit(
 
   // Prefer filling with in-stock newest; sold-out still allowed as padding,
   // but sortProducts sinks them to the end of the section.
-  const inStock = products.filter((p) => p.inStock !== false);
-  const newPool =
-    inStock.length >= SECTION_LIMIT ? inStock : products;
+  const inStock = pool.filter((p) => p.inStock !== false);
+  const newPool = inStock.length >= SECTION_LIMIT ? inStock : pool;
   const newItems = sortProducts(newPool, "new").slice(0, SECTION_LIMIT);
 
   return { signature, bestseller, newItems };

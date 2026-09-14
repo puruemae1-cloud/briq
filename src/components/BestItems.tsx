@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
 import type { Product } from "@/data/product-types";
+import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
 import { stockSortRank } from "@/lib/product-sort";
 import { usePurchases } from "@/lib/purchase-store";
 
@@ -47,7 +48,11 @@ export function BestItems() {
         if (stock !== 0) return stock;
         return (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99);
       });
-      setList(products.slice(0, MAX_ITEMS));
+      setList(
+        products
+          .filter((p) => !isHomepageSwimwearProduct(p))
+          .slice(0, MAX_ITEMS),
+      );
     });
     return () => {
       cancelled = true;

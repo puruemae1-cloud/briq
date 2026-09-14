@@ -1,5 +1,6 @@
 import type { Product } from "@/data/product-types";
 import { isProductInStock } from "@/data/product-utils";
+import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
 
 export type ProductSort = "new" | "orders" | "price-asc" | "price-desc";
 
@@ -136,8 +137,9 @@ export function getHomepageRailProducts(
   list: Product[],
   limit = 4,
 ): Product[] {
-  const inStock = list.filter((p) => isProductInStock(p));
-  const pool = inStock.length >= limit ? inStock : list;
+  const eligible = list.filter((p) => !isHomepageSwimwearProduct(p));
+  const inStock = eligible.filter((p) => isProductInStock(p));
+  const pool = inStock.length >= limit ? inStock : eligible;
   return sortProducts(pool, "new").slice(0, limit);
 }
 

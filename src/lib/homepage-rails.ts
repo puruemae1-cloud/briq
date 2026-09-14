@@ -1,11 +1,6 @@
-/**
- * Homepage lookbook rails — newest first, but each brand may appear on
- * at most one category rail (시그니처 / 시계 / 가방 / 슈즈 / 악세서리 / 스포츠).
- *
- * Earlier rails in `homeLookBanners` claim brands first (luxury → … → sports).
- */
 import type { Product } from "@/data/product-types";
 import { isProductInStock } from "@/data/product-utils";
+import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
 import { sortProducts } from "@/lib/product-sort";
 
 export type HomepageRailSpec = {
@@ -13,6 +8,8 @@ export type HomepageRailSpec = {
   railId: string;
   products: Product[];
 };
+
+export { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
 
 /** Brands never shown on a given homepage lookbook rail (shop categories unchanged). */
 const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
@@ -88,7 +85,10 @@ export function getHomepageRailProductsExclusive(
   excludeBrands: ReadonlySet<string> = new Set(),
 ): Product[] {
   const inStock = list.filter((p) => isProductInStock(p));
-  const pool = sortProducts(inStock.length >= limit ? inStock : list, "new");
+  const eligible = (inStock.length >= limit ? inStock : list).filter(
+    (p) => !isHomepageSwimwearProduct(p),
+  );
+  const pool = sortProducts(eligible, "new");
   const out: Product[] = [];
   for (const product of pool) {
     const key = homepageBrandKey(product);
