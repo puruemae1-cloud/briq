@@ -1695,6 +1695,11 @@ body:has(.nav-drawer-toggle:checked) {
     aspect-ratio: 3 / 4;
   }
 
+  /* Signature RTW: tall mobile frame; cover crops sides only (no vertical cut) */
+  .look-banner--luxury.look-banner--fullframe {
+    aspect-ratio: 3 / 4;
+  }
+
   .look-banner--fullframe .look-banner__hit {
     display: grid;
     align-items: end;

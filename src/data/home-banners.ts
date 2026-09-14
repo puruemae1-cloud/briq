@@ -141,9 +141,11 @@ export const homeLookBanners: LookBanner[] = [
     support: "영국 헤리티지와 현대 럭셔리의 교차점.",
     href: "/shop?category=luxury&sort=new",
     cta: "시그니처 의류 컬렉션 쇼핑",
+    // Locked creative — desktop/tablet luxury-heritage-modern.jpg;
+    // mobile /banners/m/ uses Gucci Primavera July26-35 (full height, no vertical crop).
     images: ["/banners/luxury-heritage-modern.jpg"],
     align: "right",
-    focal: "50% 42%",
+    focal: "50% 46%",
     fullFrame: true,
     aspectRatio: "16 / 9",
   },
