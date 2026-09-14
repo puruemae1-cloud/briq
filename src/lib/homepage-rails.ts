@@ -14,6 +14,11 @@ export type HomepageRailSpec = {
   products: Product[];
 };
 
+/** Brands never shown on a given homepage lookbook rail (shop categories unchanged). */
+const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
+  luxury: new Set(["arcteryx", "belstaff"]),
+};
+
 const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "axa-", brand: "arcteryx" },
   { prefix: "axg-", brand: "arcteryx" },
@@ -106,10 +111,15 @@ export function assignHomepageCategoryRails(
   const result: Record<string, Product[]> = {};
 
   for (const rail of rails) {
+    const exclude = new Set(used);
+    const blocked = RAIL_BLOCKED_BRANDS[rail.railId];
+    if (blocked) {
+      for (const brand of blocked) exclude.add(brand);
+    }
     const picked = getHomepageRailProductsExclusive(
       rail.products,
       limit,
-      used,
+      exclude,
     );
     result[rail.railId] = picked;
     for (const product of picked) {

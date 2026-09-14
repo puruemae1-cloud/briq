@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-14T14:53:57Z",
+  "generatedAt": "2026-09-14T20:41:55Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "axa-x000010565",
-        "axa-x000010737",
-        "axa-x000010744",
-        "axa-x000010748"
+        "ce-rz00z152c-37gr",
+        "ce-rz01b152c-37gr",
+        "ce-rz00z152c-07be",
+        "ce-rz01b152c-07be"
       ],
       "brands": [
-        "arcteryx",
-        "arcteryx",
-        "arcteryx",
-        "arcteryx"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "watches": {
@@ -46,16 +46,16 @@
     },
     "shoes": {
       "productIds": [
-        "ce-356834582c-38no",
-        "ce-352193676c-38no",
-        "ce-352213958c-38no",
-        "ce-352203886c-36ps"
+        "ax-x000010504",
+        "ax-x000010502",
+        "ax-x000010400",
+        "ax-x000010081"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "arcteryx",
+        "arcteryx",
+        "arcteryx",
+        "arcteryx"
       ]
     },
     "accessories": {
@@ -89,16 +89,16 @@
   },
   "brands": {
     "arcteryx": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "celine": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
+    ],
+    "celine": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "galvin-green": [
       "sports",

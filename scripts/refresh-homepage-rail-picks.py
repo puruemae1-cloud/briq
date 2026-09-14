@@ -30,6 +30,11 @@ RAIL_ORDER = [
     ("sports", "sports"),
 ]
 
+# Brands never shown on a given homepage lookbook rail (shop categories unchanged).
+RAIL_BLOCKED_BRANDS = {
+    "luxury": {"arcteryx", "belstaff"},
+}
+
 ID_PREFIX_BRAND = [
     ("axa-", "arcteryx"),
     ("axg-", "arcteryx"),
@@ -182,10 +187,11 @@ def assign(products: list[dict], limit: int = 4) -> dict[str, list[dict]]:
         stocked = [p for p in pool if in_stock(p)]
         use = stocked if len(stocked) >= limit else pool
         use = sorted(use, key=registered_ms, reverse=True)
+        blocked = RAIL_BLOCKED_BRANDS.get(rail_id) or set()
         picked: list[dict] = []
         for row in use:
             key = brand_key(row)
-            if key in used:
+            if key in used or key in blocked:
                 continue
             picked.append(row)
             if len(picked) >= limit:
