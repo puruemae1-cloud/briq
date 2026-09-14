@@ -448,7 +448,24 @@ export function getProductsByCategory(category?: string, sub?: string) {
     ) ?? false;
   // Dior Icons hub mixes jewellery + timepieces on the official PLP.
   const isDiDiorIcons = sub === "di-dior-icons";
-  if (category && category !== "all" && !isPsGifts && !isGcGifts && !isDiDiorIcons) {
+  // Mulberry what's-new / gifts hubs mix bags + accessories on the official PLP.
+  const isMbMixedHub =
+    expanded?.some(
+      (c) =>
+        c === "mb-men-whats-new" ||
+        c === "mb-women-whats-new" ||
+        c === "mb-gifts" ||
+        c === "mb-gifts-him" ||
+        c === "mb-gifts-her",
+    ) ?? false;
+  if (
+    category &&
+    category !== "all" &&
+    !isPsGifts &&
+    !isGcGifts &&
+    !isDiDiorIcons &&
+    !isMbMixedHub
+  ) {
     list = list.filter((p) => p.category === category);
   }
   if (expanded) {

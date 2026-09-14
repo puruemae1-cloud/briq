@@ -391,6 +391,9 @@ def group_rows(rows: list[dict]) -> dict[str, list[dict]]:
 
 
 def build_product(style: str, colourways: list[dict], cache: dict[str, str], idx: int) -> dict:
+    # Category must be inferred before SKU dedupe — what's-new/gifts rows can
+    # outscore bag-leaf rows on images and would otherwise wipe `bags`.
+    cats = {(row.get("category") or "bags") for row in colourways}
     colourways = dedupe_colourways(colourways)
     lead = colourways[0]
     title_en = (lead.get("title") or style).strip()
@@ -408,7 +411,9 @@ def build_product(style: str, colourways: list[dict], cache: dict[str, str], idx
     if not is_good_korean(title_ko):
         title_ko = clean_title_ko(title_en) or title_ko
 
-    category = lead.get("category") or "bags"
+    # Prefer bags when any leaf tagged the style as a bag — what's-new/gifts
+    # leaves are configured as accessories but often include bag SKUs.
+    category = "bags" if "bags" in cats else (lead.get("category") or "bags")
     collections: list[str] = []
     for row in colourways:
         for c in row.get("collections") or []:

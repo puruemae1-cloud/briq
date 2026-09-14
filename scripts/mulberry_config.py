@@ -106,8 +106,8 @@ LEAVES: list[dict] = [
         "id": "mb-women-travel-accessories",
         "labelKo": "트래블 액세서리",
         "url": f"{BASE}/gb/shop/women/travel/travel-accessories",
-        "category": "bags",
-        "collections": ["mulberry-bags", "mb-women-travel", "mb-women-travel-accessories"],
+        "category": "accessories",
+        "collections": ["mulberry-accessories", "mb-women-acc", "mb-women-travel", "mb-women-travel-accessories"],
     },
     # —— Bags · Men ——
     {

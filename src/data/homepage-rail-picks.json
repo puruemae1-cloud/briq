@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T14:43:52Z",
+  "generatedAt": "2026-09-14T14:53:57Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,10 +32,10 @@
     },
     "bags": {
       "productIds": [
+        "mb-tree-tote-raffia",
         "mb-tree-tote",
-        "mb-stevie-top-handle",
-        "mb-small-zipped-bayswater",
-        "mb-small-woven-leather-tote"
+        "mb-suede-tree-tote",
+        "mb-stevie-top-handle"
       ],
       "brands": [
         "mulberry",
