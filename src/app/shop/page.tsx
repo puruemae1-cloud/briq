@@ -18,9 +18,9 @@ import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { resolveShopBrand } from "@/lib/shop-brand";
 import {
   SHOP_PAGE_SIZE,
-  getShopListBundle,
-  sliceShopPage,
+  getShopProductList,
 } from "@/lib/shop-list";
+import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import {
@@ -129,17 +129,18 @@ export default async function ShopPage({ searchParams }: Props) {
   );
 
   // Never ship the full filtered catalogue to the client — mobile soft-nav
-  // OOMs on category-wide PLPs (~7k–22k products). First page only + API more.
-  // Bundle cache warms the same list the "더보기" API will slice from.
-  const { list, cards } = getShopListBundle({
+  // OOMs on category-wide PLPs (~7k–22k products). First page + page-2 for
+  // instant "더보기", then API for the rest. Map only the sliced windows.
+  const list = getShopProductList({
     category,
     sub,
     q: params.q,
     sort: params.sort,
   });
-  const pageProducts = sliceShopPage(cards, 0, SHOP_PAGE_SIZE);
-  // First "더보기" resolves instantly from SSR — no cold /api/products/shop wait.
-  const nextPageProducts = sliceShopPage(cards, SHOP_PAGE_SIZE, SHOP_PAGE_SIZE);
+  const pageProducts = list.slice(0, SHOP_PAGE_SIZE).map(toCardProduct);
+  const nextPageProducts = list
+    .slice(SHOP_PAGE_SIZE, SHOP_PAGE_SIZE * 2)
+    .map(toCardProduct);
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;

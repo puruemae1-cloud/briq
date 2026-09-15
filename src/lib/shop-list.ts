@@ -1,4 +1,3 @@
-import { unstable_cache } from "next/cache";
 import { getProductsByCategory } from "@/data/products";
 import type { Product } from "@/data/product-types";
 import { toCardProduct } from "@/lib/product-card-dto";
@@ -23,10 +22,13 @@ export type ShopListQuery = {
 type CacheEntry = {
   at: number;
   list: Product[];
-  cards: Product[];
 };
 
-/** Warm-instance memo so /api/products/shop "더보기" does not rebuild + expand the full PLP each click. */
+/**
+ * Warm-instance memo for filtered/sorted PLP lists.
+ * Intentionally caches only `list` (not a second full `cards` copy) — mapping
+ * every colourway through `toCardProduct` OOM'd Vercel builds on large PLPs.
+ */
 const LIST_CACHE = new Map<string, CacheEntry>();
 const LIST_CACHE_TTL_MS = 90_000;
 const LIST_CACHE_MAX = 48;
@@ -51,10 +53,7 @@ function pruneCache(now: number) {
   }
 }
 
-function buildShopListBundle(params: ShopListQuery): {
-  list: Product[];
-  cards: Product[];
-} {
+function buildShopProductList(params: ShopListQuery): Product[] {
   const category = params.category ?? "all";
   const sub = params.sub;
   const sort = parseProductSort(params.sort);
@@ -75,70 +74,44 @@ function buildShopListBundle(params: ShopListQuery): {
   if (sub === "gg-men" || sub === "gg-women") {
     list = preferGgApparelFirst(list);
   }
-
-  const cards = list.map(toCardProduct);
-  return { list, cards };
+  return list;
 }
 
 /** Shared shop PLP filter/sort used by `/shop` and `/api/products/shop`. */
 export function getShopProductList(params: ShopListQuery): Product[] {
-  return getShopListBundle(params).list;
+  const key = cacheKey(params);
+  const now = Date.now();
+  const hit = LIST_CACHE.get(key);
+  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
+    return hit.list;
+  }
+
+  const list = buildShopProductList(params);
+  pruneCache(now);
+  LIST_CACHE.set(key, { at: now, list });
+  return list;
 }
 
-/** Filtered list + slim card DTOs (cached together for fast pagination). */
+/** Filtered list + slim card DTOs for the requested window only. */
 export function getShopListBundle(params: ShopListQuery): {
   list: Product[];
   cards: Product[];
 } {
-  const key = cacheKey(params);
-  const now = Date.now();
-  const hit = LIST_CACHE.get(key);
-  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
-    return { list: hit.list, cards: hit.cards };
-  }
-
-  const built = buildShopListBundle(params);
-  pruneCache(now);
-  LIST_CACHE.set(key, { at: now, list: built.list, cards: built.cards });
-  return built;
+  const list = getShopProductList(params);
+  // Keep `cards` as an alias for callers that still expect it — they must
+  // slice before mapping in hot paths. Full-list mapping is avoided here.
+  return { list, cards: list };
 }
 
-/**
- * Cross-isolate cache for the shop API — survives serverless cold starts better
- * than the in-memory Map (first miss still pays, warm fleet stays fast).
- */
-export async function getShopListBundleCached(params: ShopListQuery): Promise<{
-  list: Product[];
-  cards: Product[];
-}> {
-  const key = cacheKey(params);
-  const now = Date.now();
-  const hit = LIST_CACHE.get(key);
-  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
-    return { list: hit.list, cards: hit.cards };
-  }
-
-  const category = params.category ?? "all";
-  const sub = params.sub ?? "";
-  const q = (params.q ?? "").trim().toLowerCase();
-  const sort = params.sort ?? "";
-
-  const cached = unstable_cache(
-    async () =>
-      buildShopListBundle({
-        category,
-        sub: sub || undefined,
-        q: q || undefined,
-        sort,
-      }),
-    ["shop-list-bundle", category, sub, q, String(sort)],
-    { revalidate: 90 },
-  );
-
-  const built = await cached();
-  pruneCache(now);
-  LIST_CACHE.set(key, { at: now, list: built.list, cards: built.cards });
-  return built;
+/** Slim card page for API / SSR — map only the sliced window. */
+export function getShopCardPage(
+  params: ShopListQuery,
+  offset: number,
+  limit: number = SHOP_PAGE_SIZE,
+): { products: Product[]; total: number } {
+  const list = getShopProductList(params);
+  const products = sliceShopPage(list, offset, limit).map(toCardProduct);
+  return { products, total: list.length };
 }
 
 export function sliceShopPage(

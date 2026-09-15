@@ -1,9 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import {
-  SHOP_PAGE_SIZE,
-  getShopListBundleCached,
-  sliceShopPage,
-} from "@/lib/shop-list";
+import { SHOP_PAGE_SIZE, getShopCardPage } from "@/lib/shop-list";
 
 const MAX_LIMIT = 48;
 
@@ -17,13 +13,16 @@ export async function GET(req: NextRequest) {
   const limitRaw = Number.parseInt(sp.get("limit") || String(SHOP_PAGE_SIZE), 10);
   const limit = Math.min(MAX_LIMIT, Math.max(1, limitRaw || SHOP_PAGE_SIZE));
 
-  const { cards } = await getShopListBundleCached({ category, sub, q, sort });
-  const products = sliceShopPage(cards, offset, limit);
+  const { products, total } = getShopCardPage(
+    { category, sub, q, sort },
+    offset,
+    limit,
+  );
 
   return NextResponse.json(
     {
       products,
-      total: cards.length,
+      total,
       offset,
       limit,
     },
