@@ -62,6 +62,9 @@ _WHITELIST_TOKENS = (
     "Matryx",
     "LITEBASE",
     "Litebase",
+    "Vivienne Westwood",
+    "Westwood",
+    "Harris Tweed",
     "Fair Trade Certified",
     "PFAS",
     "Norvan",
@@ -139,6 +142,7 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "di": [ROOT / "src/data/di/di-catalog.json"],
     "ce": [ROOT / "src/data/ce/ce-catalog.json"],
     "mb": [ROOT / "src/data/mb/mb-catalog.json"],
+    "vw": [ROOT / "src/data/vw/vw-catalog.json"],
 }
 
 
@@ -302,13 +306,18 @@ def gtx_translate(text: str) -> str:
             except urllib.error.HTTPError as e:
                 last_err = e
                 if e.code == 429:
-                    time.sleep(8 * (attempt + 1))
-                    continue
+                    # Don't burn minutes on gtx backoff — MyMemory fallback handles load.
+                    if attempt == 0:
+                        time.sleep(1.5)
+                        continue
+                    break
                 raise
             except Exception as e:
                 last_err = e
                 time.sleep(2 * (attempt + 1))
-        if last_err:
+        if last_err and not isinstance(last_err, urllib.error.HTTPError):
+            raise last_err
+        if last_err and getattr(last_err, "code", None) != 429:
             raise last_err
         return ""
 

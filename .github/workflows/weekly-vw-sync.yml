@@ -8,13 +8,24 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run VW weekly sync scaffold
+      - name: Run VW weekly sync
         run: |
           chmod +x scripts/run-vw-weekly-sync.sh
           scripts/run-vw-weekly-sync.sh
+      - name: Commit catalog updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/vw || true
+          if git diff --staged --quiet; then
+            echo "No VW catalog changes"
+          else
+            git commit -m "chore(vw): weekly catalog sync"
+            git push
+          fi

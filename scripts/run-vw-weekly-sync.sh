@@ -37,6 +37,28 @@ r = subprocess.run(
     [sys.executable, "scripts/check-vw-accessories-coverage.py", "--fail"],
     cwd=str(Path.cwd()),
 )
-raise SystemExit(r.returncode)
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
+# PDP Korean copy for accessories must not stay English after scrape/build.
+# Retry loop: Bing/gtx flakes mid-batch; cache makes each round resume safely.
+last_rc = 1
+for attempt in range(1, 6):
+    print(f"== accessories KO retranslate attempt {attempt}/5 ==", flush=True)
+    r = subprocess.run(
+        [sys.executable, "scripts/retranslate-vw-ko.py", "--category", "accessories"],
+        cwd=str(Path.cwd()),
+    )
+    last_rc = r.returncode
+    qa = subprocess.run(
+        [sys.executable, "scripts/check-vw-accessories-korean.py", "--fail", "--max-bad", "0"],
+        cwd=str(Path.cwd()),
+    )
+    if qa.returncode == 0:
+        raise SystemExit(0)
+    print(f"WARN attempt {attempt}: retranslate_rc={last_rc} qa_rc={qa.returncode}", flush=True)
+
+print("ERROR accessories KO still English after 5 retranslate attempts", flush=True)
+raise SystemExit(last_rc or 1)
 PY
 echo "OK VW weekly sync"

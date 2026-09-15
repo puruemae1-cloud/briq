@@ -251,6 +251,23 @@ def leaf_to_category(leaf: str) -> str:
     return "accessories"
 
 
+def _pick_ko_field(prev_val, new_val):
+    """Prefer natural Korean over longer leftover English (weekly re-scrape safety)."""
+    prev_s = str(prev_val or "").strip()
+    new_s = str(new_val or "").strip()
+    prev_ok = bool(prev_s) and is_good_korean(prev_s)
+    new_ok = bool(new_s) and is_good_korean(new_s)
+    if new_ok and not prev_ok:
+        return new_val
+    if prev_ok and not new_ok:
+        return prev_val
+    if new_ok and prev_ok:
+        # Both OK — keep the richer copy.
+        return new_val if len(new_s) >= len(prev_s) else prev_val
+    # Neither is good Korean — take the rebuild result so retries can overwrite EN.
+    return new_val if new_s else prev_val
+
+
 def _merge_vw_product(prev: dict | None, new: dict) -> dict:
     """Keep the richer row; union collections; never downgrade bags → accessories."""
     if not prev:
@@ -266,14 +283,19 @@ def _merge_vw_product(prev: dict | None, new: dict) -> dict:
     new_sub = str(new.get("subcategory") or "")
     if prev_sub.endswith("bags-all") and not new_sub.endswith("bags-all"):
         out["subcategory"] = prev_sub
-    # Keep the longer image gallery / Korean copy when replacing a thinner row.
+    # Keep the longer image gallery when replacing a thinner row.
     if len(prev.get("images") or []) > len(new.get("images") or []):
         out["images"] = prev["images"]
         out["image"] = prev.get("image") or out.get("image")
-    if len(str(prev.get("descriptionKo") or "")) > len(str(new.get("descriptionKo") or "")):
-        out["descriptionKo"] = prev["descriptionKo"]
+    # Korean PDP copy: never keep longer English over a good translation.
+    picked = _pick_ko_field(prev.get("descriptionKo"), new.get("descriptionKo"))
+    out["descriptionKo"] = picked
+    if picked == prev.get("descriptionKo") and not is_good_korean(str(new.get("descriptionKo") or "")):
         out["storySections"] = prev.get("storySections") or out.get("storySections")
         out["featuresKo"] = prev.get("featuresKo") or out.get("featuresKo")
+    elif is_good_korean(str(new.get("descriptionKo") or "")):
+        out["storySections"] = new.get("storySections") or out.get("storySections")
+        out["featuresKo"] = new.get("featuresKo") or out.get("featuresKo")
     return out
 
 
