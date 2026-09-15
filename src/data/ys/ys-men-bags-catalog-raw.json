@@ -1,0 +1,3439 @@
+{
+  "scrapedAt": "2026-09-15T19:54:39.526680+00:00",
+  "brand": "Saint Laurent",
+  "hub": "men-bags",
+  "category": "bags",
+  "family": "ys-men-bags",
+  "leaves": [
+    {
+      "id": "ys-men-bags-all",
+      "label": "View All",
+      "labelKo": "전체",
+      "slug": "shop-men/bags/all-bags",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/all-bags",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ]
+    },
+    {
+      "id": "ys-men-backpacks",
+      "label": "Backpacks",
+      "labelKo": "백팩",
+      "slug": "shop-men/bags/backpacks",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/backpacks",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-backpacks"
+      ]
+    },
+    {
+      "id": "ys-men-briefcases",
+      "label": "Briefcases",
+      "labelKo": "브리프케이스",
+      "slug": "shop-men/bags/briefcases",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/briefcases",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-briefcases"
+      ]
+    },
+    {
+      "id": "ys-men-messengers",
+      "label": "Messengers",
+      "labelKo": "메신저",
+      "slug": "shop-men/bags/messengers",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/messengers",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-messengers"
+      ]
+    },
+    {
+      "id": "ys-men-totes",
+      "label": "Totes",
+      "labelKo": "토트",
+      "slug": "shop-men/bags/totes",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/totes",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-totes"
+      ]
+    },
+    {
+      "id": "ys-men-travel-bags",
+      "label": "Travel Bags",
+      "labelKo": "트래블 백",
+      "slug": "shop-men/bags/travel-bags",
+      "url": "https://www.ysl.com/en-gb/ca/shop-men/bags/travel-bags",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-travel-bags"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "649646DTI0E1000",
+      "sku": "649646DTI0E1000",
+      "masterId": "649646DTI0E",
+      "name": "Bowling Tote in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-grained-leather-649646DTI0E1000.html",
+      "path": "pr/bowling-tote-in-grained-leather-649646DTI0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1775.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/64441526fc884b3/eCom-649646DTI0E1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/173cd657e86e618c/eCom-649646DTI0E1000_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/555378b3a72b2c68/eCom-649646DTI0E1000_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/52a8a4148aa9dd58/eCom-649646DTI0E1000_D.jpg?v=5"
+      ],
+      "description": "oversized saint laurent paris embossed zip bowling bag with tubular leather top handles and an adjustable, detachable crossbody strap.",
+      "shortDescription": [
+        "Dimensions: 47/56 x 34 x 19 CM",
+        "silver-toned metal hardware",
+        "grosgrain lining",
+        "two-way zip closure",
+        "interior: one main compartment, one large zip pocket",
+        "handle drop: 13 CM",
+        "strap drop: 53 CM"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "809657652",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "649646DTI0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-grained-leather-649646DTI0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/649646dti0e1000/1.jpg",
+        "/products/ys-pdp/649646dti0e1000/2.jpg",
+        "/products/ys-pdp/649646dti0e1000/3.jpg",
+        "/products/ys-pdp/649646dti0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "6496460HYPW2407",
+      "sku": "6496460HYPW2407",
+      "masterId": "6496460HYPW",
+      "name": "Bowling Tote in suede",
+      "color": "Brown",
+      "microColor": "TAN BROWN",
+      "colorCode": "2407",
+      "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-suede-6496460HYPW2407.html",
+      "path": "pr/bowling-tote-in-suede-6496460HYPW2407.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2040.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a4609fbf-46ca-459d-80ea-25f50d4ce5fd/eCom/6496460HYPW2407_A.jpg?v=12",
+        "https://saint-laurent.dam.kering.com/asset/e8d62c2d-b5c9-458b-8a7b-c4816b186105/eCom/6496460HYPW2407_B.jpg?v=10",
+        "https://saint-laurent.dam.kering.com/asset/c0e04bcb-070a-41cc-8ea6-d6c438e4771d/eCom/6496460HYPW2407_C.jpg?v=10",
+        "https://saint-laurent.dam.kering.com/asset/e86ea984-68a0-49ef-875e-37f8a9a1ce90/eCom/6496460HYPW2407_D.jpg?v=11"
+      ],
+      "description": "oversized Saint Laurent Paris embossed zip bowling bag with tubular leather top handles and an adjustable, detachable crossbody strap.",
+      "shortDescription": [
+        "Dimensions: 47 X 34 X 19 CM / 18.5 x 13.4 x 7.5 INCHES",
+        "Bronze-toned metal hardware",
+        "grosgrain lining",
+        "two-way zip closure",
+        "interior: one main compartment, one large zip pocket",
+        "handle drop: 13 CM",
+        "strap drop: 53 CM"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_leathergoods",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "810016297",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "6496460HYPW2407",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-suede-6496460HYPW2407.html",
+          "hex": "663300"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/6496460hypw2407/1.jpg",
+        "/products/ys-pdp/6496460hypw2407/2.jpg",
+        "/products/ys-pdp/6496460hypw2407/3.jpg",
+        "/products/ys-pdp/6496460hypw2407/4.jpg"
+      ]
+    },
+    {
+      "id": "649646FAGIQ3455",
+      "sku": "649646FAGIQ3455",
+      "masterId": "649646FAGIQ",
+      "name": "BOWLING tote in cotton canvas",
+      "color": "Brown",
+      "microColor": "DEEP LEAF",
+      "colorCode": "3455",
+      "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-cotton-canvas-649646FAGIQ3455.html",
+      "path": "pr/bowling-tote-in-cotton-canvas-649646FAGIQ3455.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1590.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/9b8ed0f4-a6bd-4db8-9fac-f57230ccf01f/eCom/649646FAGIQ3455_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7e6247a2-52bd-4212-9dd8-af8e5246d196/eCom/649646FAGIQ3455_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/fefe403b-b70d-4bcd-ad3b-9eb9c097a7b1/eCom/649646FAGIQ3455_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/397b742f-802a-4f2f-b09b-c2a97842b95a/eCom/649646FAGIQ3455_D.jpg?v=1"
+      ],
+      "description": "oversized zip bowling bag decorated with the SAINT LAURENT PARIS signature. <br>This spacious bag features rolled leather top handles and an adjustable, detachable crossbody strap.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>zertifizierte Baumwolle</u></a> <a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>Futter aus zertifizierter Baumwolle</u></a> bronzefarbene Beschläge",
+        "Zwei-Wege-Reißverschluss",
+        "eine große Reißverschlusstasche",
+        "Maße: 47–56 x 34 x 19 cm",
+        "Länge des Griffs: 13 cm",
+        "Länge des Riemens: 53 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "814395128",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "649646FAGIQ3455",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-cotton-canvas-649646FAGIQ3455.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/649646fagiq3455/1.jpg",
+        "/products/ys-pdp/649646fagiq3455/2.jpg",
+        "/products/ys-pdp/649646fagiq3455/3.jpg",
+        "/products/ys-pdp/649646fagiq3455/4.jpg"
+      ]
+    },
+    {
+      "id": "649646DZE0E1000",
+      "sku": "649646DZE0E1000",
+      "masterId": "649646DZE0E",
+      "name": "Bowling Tote in crocodile-embossed leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-crocodile-embossed-leather-649646DZE0E1000.html",
+      "path": "pr/bowling-tote-in-crocodile-embossed-leather-649646DZE0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2000.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/d7e24883-dd97-42b0-ba44-0b0613d5a24b/eCom/649646DZE0E1000_A.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/asset/02ce37b8-d65d-446d-87ba-4721fdde480f/eCom/649646DZE0E1000_B.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/asset/07bf8b8e-4db2-4651-bfc5-63113a55ec14/eCom/649646DZE0E1000_C.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/asset/f4483843-2146-4053-882b-2fac5c6d9459/eCom/649646DZE0E1000_D.jpg?v=7"
+      ],
+      "description": "oversized Saint Laurent Paris embossed zip bowling bag with tubular leather top handles and an adjustable, detachable crossbody strap.",
+      "shortDescription": [
+        "Dimensions: 47 X 34 X 19 CM / 18.5 x 13.4 x 7.5 INCHES",
+        "silver-toned metal hardware",
+        "grosgrain lining",
+        "two-way zip closure",
+        "interior: one main compartment, one large zip pocket",
+        "handle drop: 13 CM",
+        "strap drop: 53 CM"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "809976158",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "649646DZE0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bowling-tote-in-crocodile-embossed-leather-649646DZE0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/649646dze0e1000/1.jpg",
+        "/products/ys-pdp/649646dze0e1000/2.jpg",
+        "/products/ys-pdp/649646dze0e1000/3.jpg",
+        "/products/ys-pdp/649646dze0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "819266C0X0W2916",
+      "sku": "819266C0X0W2916",
+      "masterId": "819266C0X0W",
+      "name": "LARGE BOWLING duffle in suede",
+      "color": "Brown",
+      "microColor": "CARAMEL COGNAC",
+      "colorCode": "2916",
+      "url": "https://www.ysl.com/en-gb/pr/large-bowling-duffle-in-suede-819266C0X0W2916.html",
+      "path": "pr/large-bowling-duffle-in-suede-819266C0X0W2916.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 3990.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/9b3a2aed-2864-4a17-b3b9-9116201fc056/eCom/819266C0X0W2916_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/f181487d-3810-40ce-81b8-ddb122988c23/eCom/819266C0X0W2916_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/88373bea-7925-4828-a3d2-645251599403/eCom/819266C0X0W2916_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/be7736a5-2c42-43cf-9a64-dc146e17aa42/eCom/819266C0X0W2916_D.jpg?v=2"
+      ],
+      "description": "bowling duffle bag decorated with the SAINT LAURENT PARIS signature and a brass padlock. <br>this spacious bag features one main compartment with two zip pockets.",
+      "shortDescription": [
+        "linen and cotton lining",
+        "bronze-tone hardware",
+        "two-way zip closure",
+        "two zip pockets",
+        "removable leather-encased padlock charm",
+        "DIMENSIONS: 48 X 30 X 26 CM / 18.9\" x 11.8\" x 10.6\"",
+        "HANDLE DROP: 19 CM / 7.4\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_travel",
+        "superMicroCategory": "ysl_super_micro_men_travel"
+      },
+      "sizes": [
+        {
+          "id": "814157583",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "819266C0X0W2916",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/large-bowling-duffle-in-suede-819266C0X0W2916.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/819266c0x0w2916/1.jpg",
+        "/products/ys-pdp/819266c0x0w2916/2.jpg",
+        "/products/ys-pdp/819266c0x0w2916/3.jpg",
+        "/products/ys-pdp/819266c0x0w2916/4.jpg"
+      ]
+    },
+    {
+      "id": "862256AAGAD1000",
+      "sku": "862256AAGAD1000",
+      "masterId": "862256AAGAD",
+      "name": "medium BOWLING duffle in grained leather with Strap",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/medium-bowling-duffle-in-grained-leather-with-strap-862256AAGAD1000.html",
+      "path": "pr/medium-bowling-duffle-in-grained-leather-with-strap-862256AAGAD1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 3105.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/623ba1d1-cb5d-4876-8fef-e09e7abe71e2/eCom/862256AAGAD1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/181bbc11-7c40-4162-b43c-0b26eff65a35/eCom/862256AAGAD1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/2e1305a4-9b35-4415-81ec-86aebfae36a2/eCom/862256AAGAD1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/9d41a8d9-99d2-41e0-86d9-a2e7cda25c3c/eCom/862256AAGAD1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b1592b14-8b8f-420c-8db2-4bcecf23a8f9/eCom/862256AAGAD1000_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/a66296e1-de50-4ccb-af75-6289c73affa0/eCom/862256AAGAD1000_E.jpg?v=1"
+      ],
+      "description": "bowling duffle bag decorated with the SAINT LAURENT PARIS signature and a brass padlock. <br>this spacious bag features one main compartment with two zip pockets. <br>Top handles and an adjustable and detachable shoulder strap provide bespoke carry options.",
+      "shortDescription": [
+        "linen and cotton lining",
+        "silver-tone hardware",
+        "two-way zip closure",
+        "two zip pockets",
+        "removable leather-encased padlock charm",
+        "detachable shoulder strap",
+        "dimensions: 45 x 28 x 23 cm / 17.7\" x 11\" x 9.1\"",
+        "handle drop: 18 cm / 7.1\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_travel",
+        "superMicroCategory": "ysl_super_micro_men_travel"
+      },
+      "sizes": [
+        {
+          "id": "814153179",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "862256AAGAD3212",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/medium-bowling-duffle-in-grained-leather-with-strap-862256AAGAD3212.html",
+          "hex": "693818"
+        },
+        {
+          "id": "862256AAGAD1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/medium-bowling-duffle-in-grained-leather-with-strap-862256AAGAD1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/862256aagad1000/1.jpg",
+        "/products/ys-pdp/862256aagad1000/2.jpg",
+        "/products/ys-pdp/862256aagad1000/3.jpg",
+        "/products/ys-pdp/862256aagad1000/4.jpg",
+        "/products/ys-pdp/862256aagad1000/5.jpg",
+        "/products/ys-pdp/862256aagad1000/6.jpg"
+      ]
+    },
+    {
+      "id": "820672FAGJQ1000",
+      "sku": "820672FAGJQ1000",
+      "masterId": "820672FAGJQ",
+      "name": "Y Large tote in nylon",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-nylon-820672FAGJQ1000.html",
+      "path": "pr/y-large-tote-in-nylon-820672FAGJQ1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2180.0,
+      "inStock": true,
+      "compositions": "T 100% POLYAMIDE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4f0cfdfd-48e9-4eea-95d9-e82d25c67405/eCom/820672FAGJQ1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/bad8714e-879d-4490-9a6a-e38c4002be18/eCom/820672FAGJQ1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f9ef4bf5-549c-43e2-96ea-fd7562ea355e/eCom/820672FAGJQ1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/88cc8311-704a-44ef-9556-a9aa83350c9c/eCom/820672FAGJQ1000_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/2e6e4b73-64f2-497e-8ae2-8e1d7708c4e1/eCom/820672FAGJQ1000_H.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/552eb3f3-23a9-4ab3-b6cc-5c0cfaf03ebb/eCom/820672FAGJQ1000_I.jpg?v=1"
+      ],
+      "description": "large tote in ECONYL® REGENERATED NYLON.<br>Decorated with a subtle Y stitched signature, inspired by the house’s archives.<br>THIS SPACIOUS, LIGHTWEIGHT SHOPPING BAG FEATURES AN INNER ZIP POCKET AND HOOK CLOSURE.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>REGENERIERTES ECONYL®-NYLON</u></a> silberfarbene Beschläge",
+        "Hakenverschluss",
+        "ein Reißverschlussfach",
+        "Maße: 46 x 38 x 18 cm",
+        "Länge des Griffs: 33 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "814411258",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "820672FAGJQ1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-nylon-820672FAGJQ1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/820672fagjq1000/1.jpg",
+        "/products/ys-pdp/820672fagjq1000/2.jpg",
+        "/products/ys-pdp/820672fagjq1000/3.jpg",
+        "/products/ys-pdp/820672fagjq1000/4.jpg",
+        "/products/ys-pdp/820672fagjq1000/5.jpg",
+        "/products/ys-pdp/820672fagjq1000/6.jpg"
+      ]
+    },
+    {
+      "id": "820672AAEC36359",
+      "sku": "820672AAEC36359",
+      "masterId": "820672AAEC3",
+      "name": "Y Large tote in leather",
+      "color": "Brown",
+      "microColor": "BRICK",
+      "colorCode": "6359",
+      "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-leather-820672AAEC36359.html",
+      "path": "pr/y-large-tote-in-leather-820672AAEC36359.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 3180.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/353751db2a520112/eCom-820672AAEC36359_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/345f07e1ac60eb0a/Original_Ecom-820672AAEC36359_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/3ef2ed7f884d8c59/eCom-820672AAEC36359_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/1b03083dd17150e4/eCom-820672AAEC36359_C.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/1783047439b94551/eCom-820672AAEC36359_D.jpg?v=4"
+      ],
+      "description": "TOTE IN FINELY GRAINED LEATHER, fully LINED IN TONAL SUEDE.<br>Decorated with a subtle Y stitched signature, inspired by the house’s archives.<br>THIS SPACIOUS, LIGHTWEIGHT SHOPPING BAG FEATURES AN INNER ZIP POCKET AND HOOK CLOSURE.",
+      "shortDescription": [
+        "SUEDE LINING",
+        "bronze-toned hardware",
+        "hook closure",
+        "one zip pocket",
+        "dimensions:46 X 38 X 18 CM / 18.1 \" x 14.9\" x 7.1\"",
+        "strap drop: 33 cm / 13\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_leathergoods",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "813765092",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "820672AAEC36359",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-leather-820672AAEC36359.html",
+          "hex": "754820"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/820672aaec36359/1.jpg",
+        "/products/ys-pdp/820672aaec36359/2.jpg",
+        "/products/ys-pdp/820672aaec36359/3.jpg",
+        "/products/ys-pdp/820672aaec36359/4.jpg",
+        "/products/ys-pdp/820672aaec36359/5.jpg"
+      ]
+    },
+    {
+      "id": "820672AAE5O3212",
+      "sku": "820672AAE5O3212",
+      "masterId": "820672AAE5O",
+      "name": "Y Large tote in smooth leather",
+      "color": "Green",
+      "microColor": "LIGHT MUSK",
+      "colorCode": "3212",
+      "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-smooth-leather-820672AAE5O3212.html",
+      "path": "pr/y-large-tote-in-smooth-leather-820672AAE5O3212.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 3180.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/3185d2edc4702527/eCom-820672AAE5O3212_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/ce7a78ec-1d5d-41dd-8cc6-a1146e8b19b4/Original-Ecom/820672AAE5O3212_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/28b96fccea2e1ee1/eCom-820672AAE5O3212_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/2283476a533ee5b1/eCom-820672AAE5O3212_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/58a14de71da8a1af/eCom-820672AAE5O3212_D.jpg?v=3"
+      ],
+      "description": "TOTE IN FINELY GRAINED LEATHER, fully LINED IN TONAL SUEDE.<br>Decorated with a subtle Y stitched signature, inspired by the house’s archives.<br>THIS SPACIOUS, LIGHTWEIGHT SHOPPING BAG FEATURES AN INNER ZIP POCKET AND HOOK CLOSURE.",
+      "shortDescription": [
+        "SUEDE LINING",
+        "bronze-toned hardware",
+        "hook closure",
+        "one zip pocket",
+        "dimensions:46 X 38 X 18 CM / 18.1 \" x 14.9\" x 7.1\"",
+        "strap drop: 33 cm / 13\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_handbags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "813985969",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "820672AAE5O3212",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-smooth-leather-820672AAE5O3212.html",
+          "hex": "807d7a"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/820672aae5o3212/1.jpg",
+        "/products/ys-pdp/820672aae5o3212/2.jpg",
+        "/products/ys-pdp/820672aae5o3212/3.jpg",
+        "/products/ys-pdp/820672aae5o3212/4.jpg",
+        "/products/ys-pdp/820672aae5o3212/5.jpg"
+      ]
+    },
+    {
+      "id": "732657AABRS1000",
+      "sku": "732657AABRS1000",
+      "masterId": "732657AABRS",
+      "name": "TAKE-AWAY BOX IN LEATHER",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-leather-732657AABRS1000.html",
+      "path": "pr/take-away-box-in-leather-732657AABRS1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1350.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/711ef1ff-6754-4efb-a1c0-290ba96f8117/eCom/732657AABRS1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/7e2d272a-8ee6-4fbf-bd8a-dee0ee06a1bf/eCom/732657AABRS1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/63d3e6bb-38c4-46e1-b049-5692388df8b5/eCom/732657AABRS1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/b7358680-cc2c-4f69-a431-ed5e64ed9051/eCom/732657AABRS1000_D.jpg?v=3"
+      ],
+      "description": "BOX BAG WITH HANDLE, ADORNED WITH THE CASSANDRE.",
+      "shortDescription": [
+        "DIMENSIONS: 19 X 21 X 10 CM / 7.4 X 8.2 X 3.9 INCHES",
+        "SILVER TONED METAL HARDWARE",
+        "INTERIOR: PATCH POCKET",
+        "SUEDE LINING"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_travel",
+        "superMicroCategory": "ysl_super_micro_men_travel"
+      },
+      "sizes": [
+        {
+          "id": "812810367",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "732657AABRS1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-leather-732657AABRS1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/732657aabrs1000/1.jpg",
+        "/products/ys-pdp/732657aabrs1000/2.jpg",
+        "/products/ys-pdp/732657aabrs1000/3.jpg",
+        "/products/ys-pdp/732657aabrs1000/4.jpg"
+      ]
+    },
+    {
+      "id": "732657AABQ62734",
+      "sku": "732657AABQ62734",
+      "masterId": "732657AABQ6",
+      "name": "TAKE-AWAY BOX IN VEGETABLE-TANNED LEATHER",
+      "color": "Brown",
+      "microColor": "DUSTY VINTAGE BROWN GOLD",
+      "colorCode": "2734",
+      "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-vegetable-tanned-leather-732657AABQ62734.html",
+      "path": "pr/take-away-box-in-vegetable-tanned-leather-732657AABQ62734.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1350.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/2a1a9fa1-6d6a-4a12-b55c-a1984cbdaf6f/eCom/732657AABQ62734_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/d9293c83-9a64-4554-ac6c-434b3e275160/eCom/732657AABQ62734_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/dae39581-d091-41c0-98b5-fb52fd0f661d/eCom/732657AABQ62734_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/4ecba4f1-5dc7-4cc5-9738-b79fc61a97c2/eCom/732657AABQ62734_D.jpg?v=3"
+      ],
+      "description": "BOX BAG WITH HANDLE, ADORNED WITH THE CASSANDRE.",
+      "shortDescription": [
+        "DIMENSIONS: 19 X 21 X 10 CM / 7.4 X 8.2 X 3.9 INCHES",
+        "LIGHT BRONZE TONED METAL HARDWARE",
+        "INTERIOR: PATCH POCKET",
+        "SUEDE LINING"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_travel",
+        "superMicroCategory": "ysl_super_micro_men_travel"
+      },
+      "sizes": [
+        {
+          "id": "812816307",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "732657AABQ62734",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-vegetable-tanned-leather-732657AABQ62734.html",
+          "hex": "ab774d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/732657aabq62734/1.jpg",
+        "/products/ys-pdp/732657aabq62734/2.jpg",
+        "/products/ys-pdp/732657aabq62734/3.jpg",
+        "/products/ys-pdp/732657aabq62734/4.jpg"
+      ]
+    },
+    {
+      "id": "844070AAFFX6259",
+      "sku": "844070AAFFX6259",
+      "masterId": "844070AAFFX",
+      "name": "TAKE-AWAY BOX IN LEATHER",
+      "color": "Red",
+      "microColor": "DARK RED WINE",
+      "colorCode": "6259",
+      "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-leather-844070AAFFX6259.html",
+      "path": "pr/take-away-box-in-leather-844070AAFFX6259.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1245.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b048f570-5d16-4bb0-a93f-824c9855985a/eCom/844070AAFFX6259_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/c2b87eb0-fe75-4a81-8ea9-4fee60bf3251/eCom/844070AAFFX6259_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/38b8507c-03f8-4cef-913f-332a8f2ba6bc/eCom/844070AAFFX6259_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/ef0cb4cb-310a-48ec-88b5-cbafcd0a2134/eCom/844070AAFFX6259_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/3f9308f2-b376-452e-9f7b-4e4fe0d1df7d/eCom/844070AAFFX6259_H.jpg?v=1"
+      ],
+      "description": "BOX BAG WITH HANDLE, ADORNED WITH THE CASSANDRE.",
+      "shortDescription": [
+        "DIMENSIONS: 19 X 21 X 10 CM / 7.4 X 8.2 X 3.9 INCHES",
+        "INTERIOR: PATCH POCKET",
+        "SUEDE LINING"
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_travel",
+        "superMicroCategory": "ysl_super_micro_men_travel"
+      },
+      "sizes": [
+        {
+          "id": "813967110",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "844070AAFFX6259",
+          "name": "Red",
+          "url": "https://www.ysl.com/en-gb/pr/take-away-box-in-leather-844070AAFFX6259.html",
+          "hex": "870202"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/844070aaffx6259/1.jpg",
+        "/products/ys-pdp/844070aaffx6259/2.jpg",
+        "/products/ys-pdp/844070aaffx6259/3.jpg",
+        "/products/ys-pdp/844070aaffx6259/4.jpg",
+        "/products/ys-pdp/844070aaffx6259/5.jpg"
+      ]
+    },
+    {
+      "id": "A0014WAAGZ41896",
+      "sku": "A0014WAAGZ41896",
+      "masterId": "A0014WAAGZ4",
+      "name": "LE 5 À 7 maxi hobo in grained leather",
+      "color": "Black",
+      "microColor": "BLACK AND RUSTIC CAMEL",
+      "colorCode": "1896",
+      "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-grained-leather-A0014WAAGZ41896.html",
+      "path": "pr/le-5-a-7-maxi-hobo-in-grained-leather-A0014WAAGZ41896.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2545.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/5b912769-8616-4239-a431-e8d867188cb9/eCom/A0014WAAGZ41896_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/47e1a7be-51dc-498e-8e9f-8b9631bfaf79/eCom/A0014WAAGZ41896_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/3cc2eb44-6d6b-4d51-ba12-01024e71ce86/eCom/A0014WAAGZ41896_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/30e17f7c-8582-4b48-9531-25a7be14f67e/eCom/A0014WAAGZ41896_E.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/30f5fff7-7e80-43fb-ac9f-5ebacf98b970/eCom/A0014WAAGZ41896_H.jpg?v=1"
+      ],
+      "description": "The maxi hobo version of the iconic LE 5 À 7 in grained leather, defined by its CASSANDRE hook closure. <br>Spacious and lined in leather and suede, it features one main compartment with a removable zip pouch. <br>An adjustable strap allows for bespoke carry options. ",
+      "shortDescription": [
+        "Futter aus Veloursleder und Leder",
+        "silberfarbene Beschläge",
+        "CASSANDRE Hakenverschluss",
+        "eine herausnehmbare Reißverschlusstasche",
+        "Maße: 38 x 34 x 11 cm",
+        "Länge des Griffs: 46 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_hobos",
+        "superMicroCategory": "ysl_super_micro_men_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814395135",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0014WAAGZ41896",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-grained-leather-A0014WAAGZ41896.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0014waagz41896/1.jpg",
+        "/products/ys-pdp/a0014waagz41896/2.jpg",
+        "/products/ys-pdp/a0014waagz41896/3.jpg",
+        "/products/ys-pdp/a0014waagz41896/4.jpg",
+        "/products/ys-pdp/a0014waagz41896/5.jpg"
+      ]
+    },
+    {
+      "id": "A0014WAAE8J2492",
+      "sku": "A0014WAAE8J2492",
+      "masterId": "A0014WAAE8J",
+      "name": "LE 5 À 7 maxi hobo in suede",
+      "color": "Brown",
+      "microColor": "SEED SUNFLOWER",
+      "colorCode": "2492",
+      "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-suede-A0014WAAE8J2492.html",
+      "path": "pr/le-5-a-7-maxi-hobo-in-suede-A0014WAAE8J2492.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2725.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/c00559ac-62ae-4e1f-8236-7fdab40453ec/eCom/A0014WAAE8J2492_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/3c6a4049-1e0b-4d91-acbe-e46e00597ad3/eCom/A0014WAAE8J2492_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/546b7fb0-6ba2-41f0-82a6-c3c1be8c09e1/eCom/A0014WAAE8J2492_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/43fb8015-539b-4066-82c5-9d6bc235b2e4/eCom/A0014WAAE8J2492_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e29f4e40-e199-40b6-bb48-e62f2ea080c8/eCom/A0014WAAE8J2492_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/17f2720c-0a28-4ac6-a935-e099ce24a7b8/eCom/A0014WAAE8J2492_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e5f5d0e3-82ab-4a9f-bb2e-0f89ea2a8f8a/eCom/A0014WAAE8J2492_H.jpg?v=1"
+      ],
+      "description": "The maxi hobo version of the iconic LE 5 À 7 in suede, defined by its CASSANDRE hook closure. <br>Spacious and lined in suede and leather, it features one main compartment with a removable zip pouch. <br>An adjustable strap allows for bespoke carry options. ",
+      "shortDescription": [
+        "Futter aus Veloursleder und Leder",
+        "silberfarbene Beschläge",
+        "CASSANDRE Hakenverschluss",
+        "eine herausnehmbare Reißverschlusstasche",
+        "Maße: 38 x 34 x 11 cm",
+        "Länge des Griffs: 46 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_hobos",
+        "superMicroCategory": "ysl_super_micro_men_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814411257",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0014WAAE8J2492",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-suede-A0014WAAE8J2492.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0014waae8j2492/1.jpg",
+        "/products/ys-pdp/a0014waae8j2492/2.jpg",
+        "/products/ys-pdp/a0014waae8j2492/3.jpg",
+        "/products/ys-pdp/a0014waae8j2492/4.jpg",
+        "/products/ys-pdp/a0014waae8j2492/5.jpg",
+        "/products/ys-pdp/a0014waae8j2492/6.jpg",
+        "/products/ys-pdp/a0014waae8j2492/7.jpg"
+      ]
+    },
+    {
+      "id": "A0014WEABO02588",
+      "sku": "A0014WEABO02588",
+      "masterId": "A0014WEABO0",
+      "name": "LE 5 À 7 maxi hobo in python",
+      "color": "Brown",
+      "microColor": "DARK BROWN",
+      "colorCode": "2588",
+      "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-python-A0014WEABO02588.html",
+      "path": "pr/le-5-a-7-maxi-hobo-in-python-A0014WEABO02588.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 4090.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/22dcab83-9208-4e95-97e6-ce1aa45dec9c/eCom/A0014WEABO02588_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/09c5152b-4e22-4570-b780-6095d18a5721/eCom/A0014WEABO02588_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/df21a56a-bb0e-4598-babb-18a6cd1305f2/eCom/A0014WEABO02588_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f9b33e35-f031-4052-9363-b9d171a1aaa6/eCom/A0014WEABO02588_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e3e24e73-0cfc-4aa8-b07f-17fbccef1efa/eCom/A0014WEABO02588_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e8384c6b-e378-4a65-b8e7-d29c2c5d9e6e/eCom/A0014WEABO02588_H.jpg?v=1"
+      ],
+      "description": "The maxi hobo version of the iconic LE 5 À 7 in python, defined by its CASSANDRE hook closure. <br>Spacious and lined in leather, it features one main compartment with a removable zip pouch. <br>An adjustable strap allows for bespoke carry options. ",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>metallfrei gegerbtes Leder</u></a> Lederfutter",
+        "silberfarbene Beschläge",
+        "CASSANDRE Hakenverschluss",
+        "eine herausnehmbare Reißverschlusstasche",
+        "Maße: 38 x 34 x 11 cm",
+        "Länge des Griffs: 46 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_hobos",
+        "superMicroCategory": "ysl_super_micro_men_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814404074",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0014WEABO02588",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/le-5-a-7-maxi-hobo-in-python-A0014WEABO02588.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0014weabo02588/1.jpg",
+        "/products/ys-pdp/a0014weabo02588/2.jpg",
+        "/products/ys-pdp/a0014weabo02588/3.jpg",
+        "/products/ys-pdp/a0014weabo02588/4.jpg",
+        "/products/ys-pdp/a0014weabo02588/5.jpg",
+        "/products/ys-pdp/a0014weabo02588/6.jpg"
+      ]
+    },
+    {
+      "id": "A003YDAAG4D1896",
+      "sku": "A003YDAAG4D1896",
+      "masterId": "A003YDAAG4D",
+      "name": "BOLD tote in leather",
+      "color": "Black",
+      "microColor": "BLACK AND RUSTIC CAMEL",
+      "colorCode": "1896",
+      "url": "https://www.ysl.com/en-gb/pr/bold-tote-in-leather-A003YDAAG4D1896.html",
+      "path": "pr/bold-tote-in-leather-A003YDAAG4D1896.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1365.0,
+      "inStock": true,
+      "compositions": "T 100% CROSTA DI VITELLO",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/8eacda70-eb0f-4aa5-bcaa-100ab1fad966/eCom/A003YDAAG4D1896_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/17dafdc9-6603-484a-9f2f-2e649ed35710/eCom/A003YDAAG4D1896_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/04b14165-30d8-4bc3-a63b-6de2616ab162/eCom/A003YDAAG4D1896_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e8e4e953-3486-46a5-abba-07ec8d8cc08f/eCom/A003YDAAG4D1896_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/a3389bd4-8d45-4728-a1a6-9b003203232c/eCom/A003YDAAG4D1896_H.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/9848c1bb-ebc4-4c1f-bcd1-cf59554280f8/eCom/A003YDAAG4D1896_I.jpg?v=1"
+      ],
+      "description": "North/South tote in vegetable-tanned leather, fully lined in contrasting suede. <br>This functional bag with removable zip pouch is designed to be carried on the shoulder.",
+      "shortDescription": [
+        "silberfarbene Beschläge",
+        "Magnetverschluss",
+        "eine herausnehmbare Reißverschlusstasche",
+        "Maße: 35 x 41 x 15 cm",
+        "Länge des Griffs: 23 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "814395145",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A003YDAAG4D1896",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bold-tote-in-leather-A003YDAAG4D1896.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a003ydaag4d1896/1.jpg",
+        "/products/ys-pdp/a003ydaag4d1896/2.jpg",
+        "/products/ys-pdp/a003ydaag4d1896/3.jpg",
+        "/products/ys-pdp/a003ydaag4d1896/4.jpg",
+        "/products/ys-pdp/a003ydaag4d1896/5.jpg",
+        "/products/ys-pdp/a003ydaag4d1896/6.jpg"
+      ]
+    },
+    {
+      "id": "845384AACIU1000",
+      "sku": "845384AACIU1000",
+      "masterId": "845384AACIU",
+      "name": "BOLD hobo bag in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/bold-hobo-bag-in-grained-leather-845384AACIU1000.html",
+      "path": "pr/bold-hobo-bag-in-grained-leather-845384AACIU1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1950.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b00caa82-fc29-4095-b183-23ee53648851/eCom/845384AACIU1000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/8743b9b1-c3c0-4fd0-8ce3-962ee199fb94/eCom/845384AACIU1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/27edd2b6-be34-4730-b544-df967dd9216f/eCom/845384AACIU1000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/215fc322-7ade-48ee-a5b4-ca2fe095d07d/eCom/845384AACIU1000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/5b2a4f5d-5992-4160-8559-21a2d728f27c/eCom/845384AACIU1000_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/9b706cc7-5373-4d76-9f55-3b1f916395b0/eCom/845384AACIU1000_E.jpg?v=2"
+      ],
+      "description": "large leather hobo bag decorated with the SAINT LAURENT PARIS signature. <br>This supple, elegant bag features a leather shoulder strap and inner zip pouch.",
+      "shortDescription": [
+        "suede lining",
+        "silver-tone hardware",
+        "snap-button closure",
+        "one zip pocket",
+        "dimensions: 42 x 40 x 18 cm / 16.5\" x 15.7\" x 7.1\"",
+        "strap drop: 26 cm / 10.2\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_hobos",
+        "superMicroCategory": "ysl_super_micro_men_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814145575",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "845384AACIU1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bold-hobo-bag-in-grained-leather-845384AACIU1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/845384aaciu1000/1.jpg",
+        "/products/ys-pdp/845384aaciu1000/2.jpg",
+        "/products/ys-pdp/845384aaciu1000/3.jpg",
+        "/products/ys-pdp/845384aaciu1000/4.jpg",
+        "/products/ys-pdp/845384aaciu1000/5.jpg",
+        "/products/ys-pdp/845384aaciu1000/6.jpg"
+      ]
+    },
+    {
+      "id": "864683AAGBR1897",
+      "sku": "864683AAGBR1897",
+      "masterId": "864683AAGBR",
+      "name": "SAINT LAURENT PARIS 4 CARRÉ tote in leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1897",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-paris-4-carre-tote-in-leather-864683AAGBR1897.html",
+      "path": "pr/saint-laurent-paris-4-carre-tote-in-leather-864683AAGBR1897.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2840.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/e7167d32-9745-41cb-b8da-b8766fa99860/eCom/864683AAGBR1897_A.jpg?v=1"
+      ],
+      "description": "tote in vegetable-tanned leather, fully lined in contrasting suede. <br>This functional bag is designed to be carried on the shoulder.",
+      "shortDescription": [
+        "suede lining",
+        "bronze-tone hardware",
+        "magnetic snap closure",
+        "one zip pocket",
+        "dimensions: 35 x 35 x 16.5 cm / 13.8\" x 13.8\" x 6.5\"",
+        "handle drop: 26.5 cm / 10.4\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "814157141",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "864683AAGBR1897",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-paris-4-carre-tote-in-leather-864683AAGBR1897.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/864683aagbr1897/1.jpg"
+      ]
+    },
+    {
+      "id": "862255AAF981011",
+      "sku": "862255AAF981011",
+      "masterId": "862255AAF98",
+      "name": "SAINT LAURENT small camera bag in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1011",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF981011.html",
+      "path": "pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF981011.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1685.0,
+      "inStock": true,
+      "compositions": "T 100% GOAT LEATHER",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/103d1dba-c97e-4d43-a2e2-0eb7a11519f8/eCom/862255AAF981011_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/a51bdc13-b652-444f-afe3-669120815561/eCom/862255AAF981011_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c2cbb7d7-792c-4a7b-b139-0fb8f6458080/eCom/862255AAF981011_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/9c06dd39-bee9-44ad-b6ce-4df84fb1d0f7/eCom/862255AAF981011_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/f8ea15f9-3522-4d40-910b-40609bc9bbb5/eCom/862255AAF981011_D.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/3955600a-d41a-4a9f-8034-362f581d706a/eCom/862255AAF981011_H.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/ea4e7a2e-bdb2-41ea-9c25-04d33baa9f9e/eCom/862255AAF981011_I.jpg?v=2"
+      ],
+      "description": "small camera bag with embossed SAINT LAURENT PARIS signature and contrast lining. <br>An adjustable and detachable strap provides bespoke carry options.",
+      "shortDescription": [
+        "leather lining",
+        "silver-tone hardware",
+        "one-way zip closure",
+        "one zip pocket",
+        "one flat pocket",
+        "one flat pocket at the back",
+        "adjustable and detachable strap",
+        "dimensions: 21.5 x 17 x 6 cm / 8.5\" x 6.7\" x 2.4\"",
+        "strap drop: 45 cm / 17.7\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814191969",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "862255AAF983229",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF983229.html",
+          "hex": "693818"
+        },
+        {
+          "id": "862255AAF981011",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF981011.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/862255aaf981011/1.jpg",
+        "/products/ys-pdp/862255aaf981011/2.jpg",
+        "/products/ys-pdp/862255aaf981011/3.jpg",
+        "/products/ys-pdp/862255aaf981011/4.jpg",
+        "/products/ys-pdp/862255aaf981011/5.jpg",
+        "/products/ys-pdp/862255aaf981011/6.jpg",
+        "/products/ys-pdp/862255aaf981011/7.jpg"
+      ]
+    },
+    {
+      "id": "862255AAF983229",
+      "sku": "862255AAF983229",
+      "masterId": "862255AAF98",
+      "name": "SAINT LAURENT small camera bag in grained leather",
+      "color": "Brown",
+      "microColor": "LIGHT MUSK",
+      "colorCode": "3229",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF983229.html",
+      "path": "pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF983229.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1685.0,
+      "inStock": true,
+      "compositions": "T 100% GOAT LEATHER",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/c0593888-92e4-4990-b014-540e2affadc1/eCom/862255AAF983229_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/89458d70-83c4-436a-aa77-ab7bc6f9d1b6/eCom/862255AAF983229_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/8f90e982-9da1-4424-b24f-8c6f4e78d95b/eCom/862255AAF983229_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/074d81d2-7f11-44a0-87b5-ae2dac8ea4e9/eCom/862255AAF983229_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/30e4887d-4fa3-45c9-a33d-5a94f8c25602/eCom/862255AAF983229_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/5ce1bae8-e1d5-402d-92b9-d11ef2849180/eCom/862255AAF983229_H.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/109482ab-47ba-46ba-a061-3a012ae95121/eCom/862255AAF983229_I.jpg?v=1"
+      ],
+      "description": "small camera bag with embossed SAINT LAURENT PARIS signature and contrast lining. <br>An adjustable and detachable strap provides bespoke carry options.",
+      "shortDescription": [
+        "leather lining",
+        "silver-tone hardware",
+        "one-way zip closure",
+        "one zip pocket",
+        "one flat pocket",
+        "one flat pocket at the back",
+        "adjustable and detachable strap",
+        "dimensions: 21.5 x 17 x 6 cm / 8.5\" x 6.7\" x 2.4\"",
+        "strap drop: 45 cm / 17.7\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814191970",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "862255AAF983229",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF983229.html",
+          "hex": "693818"
+        },
+        {
+          "id": "862255AAF981011",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-small-camera-bag-in-grained-leather-862255AAF981011.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/862255aaf983229/1.jpg",
+        "/products/ys-pdp/862255aaf983229/2.jpg",
+        "/products/ys-pdp/862255aaf983229/3.jpg",
+        "/products/ys-pdp/862255aaf983229/4.jpg",
+        "/products/ys-pdp/862255aaf983229/5.jpg",
+        "/products/ys-pdp/862255aaf983229/6.jpg",
+        "/products/ys-pdp/862255aaf983229/7.jpg"
+      ]
+    },
+    {
+      "id": "644276DTI0Z1000",
+      "sku": "644276DTI0Z1000",
+      "masterId": "644276DTI0Z",
+      "name": "Camp camera bag in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/camp-camera-bag-in-grained-leather-644276DTI0Z1000.html",
+      "path": "pr/camp-camera-bag-in-grained-leather-644276DTI0Z1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 935.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/53b85cfb-0f2b-435c-adc1-2eb3e95e8a40/eCom/644276DTI0Z1000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/42fd64a0-4ef9-449c-9bb7-7a3aca2c84e4/eCom/644276DTI0Z1000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/bc2dacb1-e793-48a8-836a-f853b5ac730e/eCom/644276DTI0Z1000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/ad9677f4-045e-4826-8700-461170e2afe0/eCom/644276DTI0Z1000_D.jpg?v=2"
+      ],
+      "description": "Saint Laurent Paris embossed camera bag with top zip closure, concealed front zip pocket and an adjustable leather shoulder strap.",
+      "shortDescription": [
+        "Dimensions:  23 X 17 X 7 cm / 9 x 6.6 x 2.7 inches",
+        "Strap drop: 47-53 cm",
+        "Silver-toned metal hardware",
+        "Canvas lining",
+        "Zip closure",
+        "Interior: one main compartment, one flat pocket, four card slots",
+        "Exterior: one concealed zip pocket at the front"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "810300916",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "644276DTI0Z1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/camp-camera-bag-in-grained-leather-644276DTI0Z1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/644276dti0z1000/1.jpg",
+        "/products/ys-pdp/644276dti0z1000/2.jpg",
+        "/products/ys-pdp/644276dti0z1000/3.jpg",
+        "/products/ys-pdp/644276dti0z1000/4.jpg"
+      ]
+    },
+    {
+      "id": "776611AAGWH2893",
+      "sku": "776611AAGWH2893",
+      "masterId": "776611AAGWH",
+      "name": "NIKI small messenger in grained goatskin",
+      "color": "Brown",
+      "microColor": "DARK BROWN",
+      "colorCode": "2893",
+      "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-goatskin-776611AAGWH2893.html",
+      "path": "pr/niki-small-messenger-in-grained-goatskin-776611AAGWH2893.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2000.0,
+      "inStock": true,
+      "compositions": "T 100% GOAT LEATHER",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/fc997600-680a-4f69-b785-3918224fa4f2/eCom/776611AAGWH2893_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/4bfd2a96-9429-4b82-9d23-e182b9f64544/Original-Ecom/776611AAGWH2893_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b0d8a7b6-80b2-4ed9-86a5-68a6c08498bc/eCom/776611AAGWH2893_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/9353eab7-2c3d-4ed6-a6b4-3e461351882a/eCom/776611AAGWH2893_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c3417957-34f9-451e-90d5-d2ffb653997e/eCom/776611AAGWH2893_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/57a76502-eb0a-4579-8349-cbb89be22ef0/eCom/776611AAGWH2893_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7246de17-0459-4b67-a2f6-792c5efc2f86/eCom/776611AAGWH2893_H.jpg?v=1"
+      ],
+      "description": "The grained goatskin version of the iconic NIKI bag, decorated with a tonal CASSANDRE and an adjustable strap. <br>This practical, lightweight bag features two compartments and a flat pocket at the back.",
+      "shortDescription": [
+        "Lederfutter",
+        "silberfarbene Beschläge",
+        "magnetischer Druckknopfverschluss",
+        "zwei Hauptfächer",
+        "ein flaches Fach hinten",
+        "MASSE: 21 cm x 15 cm x 6 cm",
+        "LÄNGE DES RIEMENS: 35–65 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814397941",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "776611AAGWH2893",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-goatskin-776611AAGWH2893.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/776611aagwh2893/1.jpg",
+        "/products/ys-pdp/776611aagwh2893/2.jpg",
+        "/products/ys-pdp/776611aagwh2893/3.jpg",
+        "/products/ys-pdp/776611aagwh2893/4.jpg",
+        "/products/ys-pdp/776611aagwh2893/5.jpg",
+        "/products/ys-pdp/776611aagwh2893/6.jpg",
+        "/products/ys-pdp/776611aagwh2893/7.jpg"
+      ]
+    },
+    {
+      "id": "776611AAF6C2002",
+      "sku": "776611AAF6C2002",
+      "masterId": "776611AAF6C",
+      "name": "NIKI small messenger in grained nubuck",
+      "color": "Brown",
+      "microColor": "CARAMEL",
+      "colorCode": "2002",
+      "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-nubuck-776611AAF6C2002.html",
+      "path": "pr/niki-small-messenger-in-grained-nubuck-776611AAF6C2002.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1695.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED LAMB LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a575cd99-01c5-4394-a337-2b62abb18f53/eCom/776611AAF6C2002_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/ecf83edb-c966-48f3-afd2-c76d829232f7/eCom/776611AAF6C2002_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b17de763-bf41-44b8-9b7a-6c6c651b60c0/eCom/776611AAF6C2002_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/d8e80da0-f18c-4e50-bf74-c025cb0b1987/eCom/776611AAF6C2002_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/0ef3a020-223f-4ef5-b2f5-8177287320db/eCom/776611AAF6C2002_E.jpg?v=1"
+      ],
+      "description": "The grained nubuck version of the iconic NIKI bag, decorated with the CASSANDRE and an adjustable strap. <br>This practical, lightweight bag features two compartments and a flat pocket at the back.",
+      "shortDescription": [
+        "leather lining",
+        "silver-tone hardware hardware",
+        "magnetic snap-button closure",
+        "two main compartments",
+        "one flat pocket at the back",
+        "DIMENSIONS: 21 X 15 X 6 CM / 8.3\" x 5.9\" x 2.4\"",
+        "STRAP DROP: 35–65 CM / 13.8–25.6\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814191971",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "776611AAF6C2002",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-nubuck-776611AAF6C2002.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/776611aaf6c2002/1.jpg",
+        "/products/ys-pdp/776611aaf6c2002/2.jpg",
+        "/products/ys-pdp/776611aaf6c2002/3.jpg",
+        "/products/ys-pdp/776611aaf6c2002/4.jpg",
+        "/products/ys-pdp/776611aaf6c2002/5.jpg"
+      ]
+    },
+    {
+      "id": "776611AAC3O1000",
+      "sku": "776611AAC3O1000",
+      "masterId": "776611AAC3O",
+      "name": "NIKI small messenger in grained lambskin",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-lambskin-776611AAC3O1000.html",
+      "path": "pr/niki-small-messenger-in-grained-lambskin-776611AAC3O1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1695.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a03cfdb3-119d-45dc-8a94-f447423e42a4/eCom/776611AAC3O1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/121148d3-53b0-4f88-82e6-8197b22eb962/Original-Ecom/776611AAC3O1000_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/bf932a16-d4a6-40bc-b2dc-2e660a5fbd4b/eCom/776611AAC3O1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/10a23253-e9f4-47a5-b621-a3b999aaf3a4/eCom/776611AAC3O1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/a764cb6f-c99e-4bb3-a165-0598268ebb9a/eCom/776611AAC3O1000_D.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/cd34621e-7af2-4b6a-a707-5d6538d8c891/eCom/776611AAC3O1000_E.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/695ae88f-9465-4cf9-8c52-c9955ac015b9/eCom/776611AAC3O1000_H.jpg?v=3"
+      ],
+      "description": "The grained leather version of the iconic NIKI bag, decorated with the CASSANDRE and an adjustable strap. <br>This practical, lightweight bag features two compartments and a flat pocket at the back.",
+      "shortDescription": [
+        "cotton lining",
+        "silver-toned hardware hardware",
+        "magnetic snap-button closure",
+        "two main compartments",
+        "one flat pocket",
+        "DIMENSIONS: 21 X 15 X 6 CM / 8.3\" x 5.9\" x 2.4\"",
+        "STRAP DROP: 35–65 CM / 13.8–25.6\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_leathergoods",
+        "microCategory": "ysl_micro_men_messenger_and_crossbody",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "813587589",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "776611AAC3O1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-grained-lambskin-776611AAC3O1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/776611aac3o1000/1.jpg",
+        "/products/ys-pdp/776611aac3o1000/2.jpg",
+        "/products/ys-pdp/776611aac3o1000/3.jpg",
+        "/products/ys-pdp/776611aac3o1000/4.jpg",
+        "/products/ys-pdp/776611aac3o1000/5.jpg",
+        "/products/ys-pdp/776611aac3o1000/6.jpg",
+        "/products/ys-pdp/776611aac3o1000/7.jpg"
+      ]
+    },
+    {
+      "id": "757146FACKH1000",
+      "sku": "757146FACKH1000",
+      "masterId": "757146FACKH",
+      "name": "NIKI messenger in ECONYL®",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/niki-messenger-in-econylr-757146FACKH1000.html",
+      "path": "pr/niki-messenger-in-econylr-757146FACKH1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2140.0,
+      "inStock": true,
+      "compositions": "T 100% POLYAMIDE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/0256eb83-629c-4d62-af14-b3f3c47b184f/eCom/757146FACKH1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/86691e78-8f84-4330-9ca3-702956ffb933/eCom/757146FACKH1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/46b2451808c48a9e/eCom-757146FACKH1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/2c09ba1a0ea81745/eCom-757146FACKH1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/7f2044001064501/eCom-757146FACKH1000_D.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/217ba12311c05a38/eCom-757146FACKH1000_E.jpg?v=4"
+      ],
+      "description": "The iconic Niki in ECONYL® REGENERATED NYLON, featuring a metal Cassandre and an adjustable shoulder strap. Practical and lightweight, it features two compartments and a patch back pocket.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>ECONYL® REGENERATED NYLON</u></a>",
+        "DIMENSIONS: 32.5 X 23 X 10 CM / 12.8 x 9.1 x 3.9 inches",
+        "STRAP DROP: 33–70 CM / 13–27.6 inches",
+        "MATTE BLACK HARDWARE",
+        "magnetic snap-button closure",
+        "exterior: one flat pocket at the back",
+        "one flat pocket and one zip pocket, one open pocket under flap",
+        "ECONYL® lining"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "813094650",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "757146FACKH1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/niki-messenger-in-econylr-757146FACKH1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/757146fackh1000/1.jpg",
+        "/products/ys-pdp/757146fackh1000/2.jpg",
+        "/products/ys-pdp/757146fackh1000/3.jpg",
+        "/products/ys-pdp/757146fackh1000/4.jpg",
+        "/products/ys-pdp/757146fackh1000/5.jpg",
+        "/products/ys-pdp/757146fackh1000/6.jpg"
+      ]
+    },
+    {
+      "id": "781935AAC8O1000",
+      "sku": "781935AAC8O1000",
+      "masterId": "781935AAC8O",
+      "name": "NIKI messenger in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/niki-messenger-in-grained-leather-781935AAC8O1000.html",
+      "path": "pr/niki-messenger-in-grained-leather-781935AAC8O1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2370.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b0cc6c0b-4c83-4f5c-83c0-6b0c8be5af90/eCom/781935AAC8O1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/737e8878-a84a-48f7-bbab-0af729cb6b96/eCom/781935AAC8O1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/451cfa75-8622-4822-a422-1b83640d2453/eCom/781935AAC8O1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/91d2ae40-e485-4e5b-b458-49eefd591a6f/eCom/781935AAC8O1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/d88d13f2-020b-46e6-b4fa-99eb5e6e771c/eCom/781935AAC8O1000_D.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/816b4847-e575-4079-8f11-7054a9b17ae0/eCom/781935AAC8O1000_E.jpg?v=3"
+      ],
+      "description": "The messenger version of the iconic NIKI bag, defined by its front flap decorated with the covered CASSANDRE.<br>This spacious bag features multiple pockets, while an adjustable strap allows for both shoulder and crossbody carry options.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>ORGANIC COTTON LINING</u></a>",
+        "MATTE BLACK HARDWARE",
+        "magnetic snap-button closure",
+        "two inner pockets",
+        "one open pocket under flap",
+        "DIMENSIONS: 31 X 23 X 9 CM / 12.2 x 9.1 x 3.5",
+        "STRAP DROP: 33–55 CM / 13–21.7"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "813323179",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "781935AAC8O1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/niki-messenger-in-grained-leather-781935AAC8O1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/781935aac8o1000/1.jpg",
+        "/products/ys-pdp/781935aac8o1000/2.jpg",
+        "/products/ys-pdp/781935aac8o1000/3.jpg",
+        "/products/ys-pdp/781935aac8o1000/4.jpg",
+        "/products/ys-pdp/781935aac8o1000/5.jpg",
+        "/products/ys-pdp/781935aac8o1000/6.jpg"
+      ]
+    },
+    {
+      "id": "776611FACKH1000",
+      "sku": "776611FACKH1000",
+      "masterId": "776611FACKH",
+      "name": "NIKI small messenger in ECONYL®",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-econylr-776611FACKH1000.html",
+      "path": "pr/niki-small-messenger-in-econylr-776611FACKH1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1535.0,
+      "inStock": true,
+      "compositions": "T 100% POLYAMIDE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4c07d251-da02-403b-bd71-903a31c4d068/eCom/776611FACKH1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/33c5bd07f04960d2/Original_Ecom-776611FACKH1000_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/3292e1aab542c47e/eCom-776611FACKH1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/4ecd794d3f966440/eCom-776611FACKH1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/3904f43d-1cde-418f-a2b4-d75c26f918db/eCom/776611FACKH1000_D.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/1c951bc49613a172/eCom-776611FACKH1000_E.jpg?v=3"
+      ],
+      "description": "The small messenger version of the iconic NIKI bag in ECONYL® REGENERATED NYLON, defined by its front flap decorated with the CASSANDRE.<br>This practical bag features multiple pockets, while an adjustable strap allows for both shoulder and crossbody carry options.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>ECONYL® REGENERATED NYLON</u></a>",
+        "MATTE BLACK HARDWARE",
+        "snap-button closure",
+        "two main compartments",
+        "one inner pocket",
+        "DIMENSIONS: 21 X 15 X 6 CM / 8.3 x 5.9 x 2.4",
+        "STRAP DROP: 35–65 CM / 13.8–25.6"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "813323145",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "776611FACKH1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/niki-small-messenger-in-econylr-776611FACKH1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/776611fackh1000/1.jpg",
+        "/products/ys-pdp/776611fackh1000/2.jpg",
+        "/products/ys-pdp/776611fackh1000/3.jpg",
+        "/products/ys-pdp/776611fackh1000/4.jpg",
+        "/products/ys-pdp/776611fackh1000/5.jpg",
+        "/products/ys-pdp/776611fackh1000/6.jpg"
+      ]
+    },
+    {
+      "id": "801490AACIU1000",
+      "sku": "801490AACIU1000",
+      "masterId": "801490AACIU",
+      "name": "CASSANDRE envelope messenger in lambskin",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-envelope-messenger-in-lambskin-801490AACIU1000.html",
+      "path": "pr/cassandre-envelope-messenger-in-lambskin-801490AACIU1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1090.0,
+      "inStock": true,
+      "compositions": "90% LAMBSKIN, 10% BRASS",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b17ee22e-c0a3-493a-8209-0bb08653fdc8/eCom/801490AACIU1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/ec869a5c-9443-465c-a9cc-686eafa8a265/eCom/801490AACIU1000_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/3274907b-0650-4850-91b8-060af3468174/eCom/801490AACIU1000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/c379e41b-9d91-46f9-ab40-6186cb4926db/eCom/801490AACIU1000_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/a9670eca-01e9-4fe6-aed2-d0724d0a9586/eCom/801490AACIU1000_E.jpg?v=2"
+      ],
+      "description": "envelope bag decorated with the CASSANDRE. <br>An adjustable and detachable strap provides bespoke carry options.",
+      "shortDescription": [
+        "leather lining",
+        "silver-toned hardware",
+        "one patch pocket",
+        "one removable zip pocket",
+        "Dimensions: 23 X 16.5 X 6 CM / 9.1\" x 6.5\" x 2.4\"",
+        "STRAP DROP: 56 CM / 22\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_smlg",
+        "microCategory": "ysl_micro_men_pouches",
+        "superMicroCategory": "ysl_super_micro_men_pouches"
+      },
+      "sizes": [
+        {
+          "id": "813587593",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "801490AACIU1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-envelope-messenger-in-lambskin-801490AACIU1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/801490aaciu1000/1.jpg",
+        "/products/ys-pdp/801490aaciu1000/2.jpg",
+        "/products/ys-pdp/801490aaciu1000/3.jpg",
+        "/products/ys-pdp/801490aaciu1000/4.jpg",
+        "/products/ys-pdp/801490aaciu1000/5.jpg"
+      ]
+    },
+    {
+      "id": "801490AAG322050",
+      "sku": "801490AAG322050",
+      "masterId": "801490AAG32",
+      "name": "CASSANDRE envelope messenger in leather",
+      "color": "Brown",
+      "microColor": "NUTMEG",
+      "colorCode": "2050",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-envelope-messenger-in-leather-801490AAG322050.html",
+      "path": "pr/cassandre-envelope-messenger-in-leather-801490AAG322050.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1455.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/29a9e367-2538-4b55-b00e-da54cc6872c9/eCom/801490AAG322050_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b2fa84db-648a-4240-87b1-46b513a03fe4/Original-Ecom/801490AAG322050_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/eb572170-38d3-417f-99e5-3d57099662ab/eCom/801490AAG322050_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b10dba93-d55b-40fc-b4f4-31e48bf64e60/eCom/801490AAG322050_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/d6337c68-bce0-4744-94fb-a394fe7d898e/eCom/801490AAG322050_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/80f108c4-b138-48e4-b091-68c0d18fbde7/eCom/801490AAG322050_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/0b5e86e8-66f8-4a35-9fe2-0c8c705857ad/eCom/801490AAG322050_F.jpg?v=1"
+      ],
+      "description": "envelope bag in supple calfskin, decorated with the CASSANDRE. <br>An adjustable and detachable strap provides bespoke carry options.",
+      "shortDescription": [
+        "silver-tone hardware",
+        "one flat pocket",
+        "one removable zip pouch",
+        "dimensions: 23 x 18 x 6.5 cm / 9.1\" x 7.1\" x 2.6\"",
+        "strap drop: 54 cm / 21.3\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured products, especially white and beige ones, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product in its protective flannel bag.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_smlg",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814395236",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "801490AAG322050",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-envelope-messenger-in-leather-801490AAG322050.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/801490aag322050/1.jpg",
+        "/products/ys-pdp/801490aag322050/2.jpg",
+        "/products/ys-pdp/801490aag322050/3.jpg",
+        "/products/ys-pdp/801490aag322050/4.jpg",
+        "/products/ys-pdp/801490aag322050/5.jpg",
+        "/products/ys-pdp/801490aag322050/6.jpg",
+        "/products/ys-pdp/801490aag322050/7.jpg"
+      ]
+    },
+    {
+      "id": "7539630SX0E1000",
+      "sku": "7539630SX0E1000",
+      "masterId": "7539630SX0E",
+      "name": "SOLFERINO mini bag in smooth leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/solferino-mini-bag-in-smooth-leather-7539630SX0E1000.html",
+      "path": "pr/solferino-mini-bag-in-smooth-leather-7539630SX0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1415.0,
+      "inStock": true,
+      "compositions": "95% CALFSKIN LEATHER, 5% BRASS",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/5841627d-584c-4928-b612-aebf2504c534/eCom/7539630SX0E1000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/e6d3e525-7a85-4fb4-b76e-092ba70ab238/eCom/7539630SX0E1000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/41a8a7b0-6fae-4eb7-9a1c-b9a43d683855/eCom/7539630SX0E1000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/4551b4f3-6520-4841-bb1d-6324dc43e3f1/eCom/7539630SX0E1000_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/458d8b27-6f41-4d2b-85cd-d95564e93467/eCom/7539630SX0E1000_E.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/95e0592d-c0e8-413e-85aa-8e72e4e83d55/eCom/7539630SX0E1000_F.jpg?v=2"
+      ],
+      "description": "mini satchel bag with front flap and pivoting CASSANDRE closure.",
+      "shortDescription": [
+        "Dimensions: 18 X 11 X 5 CM / 7.1 x 4.3 x 2 inches",
+        "STRAP DROP: 45–55 CM / 17.7 x 21.7 inches",
+        "silver-toned hardware",
+        "pivoting CASSANDRE closure",
+        "interior: one main compartment, two card slots",
+        "leather lining"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_smlg",
+        "microCategory": "ysl_micro_men_pouches",
+        "superMicroCategory": "ysl_super_micro_men_pouches"
+      },
+      "sizes": [
+        {
+          "id": "813094648",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "7539630SX0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/solferino-mini-bag-in-smooth-leather-7539630SX0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/7539630sx0e1000/1.jpg",
+        "/products/ys-pdp/7539630sx0e1000/2.jpg",
+        "/products/ys-pdp/7539630sx0e1000/3.jpg",
+        "/products/ys-pdp/7539630sx0e1000/4.jpg",
+        "/products/ys-pdp/7539630sx0e1000/5.jpg",
+        "/products/ys-pdp/7539630sx0e1000/6.jpg"
+      ]
+    },
+    {
+      "id": "A003UVFAGIO1000",
+      "sku": "A003UVFAGIO1000",
+      "masterId": "A003UVFAGIO",
+      "name": "SAINT LAURENT PARIS messenger in nylon",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-paris-messenger-in-nylon-A003UVFAGIO1000.html",
+      "path": "pr/saint-laurent-paris-messenger-in-nylon-A003UVFAGIO1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1455.0,
+      "inStock": true,
+      "compositions": "T 100% POLYAMIDE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/1568da94-c25a-43dc-810b-fc3af7c38e71/eCom/A003UVFAGIO1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/bc381349-0c86-47c3-bbca-be8a84371111/Original-Ecom/A003UVFAGIO1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/8c533cd1-49a9-4604-8f43-f2fb025d8bfd/eCom/A003UVFAGIO1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7bffcbb8-6c66-4e1a-92de-fc18b69e2294/eCom/A003UVFAGIO1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/92c86ddf-8019-490e-9f0e-fe8c312f0279/eCom/A003UVFAGIO1000_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/81400245-075d-45b8-98af-0bb15f1a2279/eCom/A003UVFAGIO1000_E.jpg?v=1"
+      ],
+      "description": "everyday messenger bag decorated with the SAINT LAURENT PARIS signature. <br>This practical, lightweight bag features an adjustable strap for shoulder and crossbody carry.",
+      "shortDescription": [
+        "mattschwarze Beschläge",
+        "Steckschnallenverschluss",
+        "ein Reißverschlussfach",
+        "ein großes Fach auf der Rückseite",
+        "Maße: 38 x 20 x 16 cm",
+        "Länge des Riemens: 26–63 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_messengers",
+        "superMicroCategory": "ysl_super_micro_men_messengers"
+      },
+      "sizes": [
+        {
+          "id": "814395137",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A003UVFAGIO1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-paris-messenger-in-nylon-A003UVFAGIO1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a003uvfagio1000/1.jpg",
+        "/products/ys-pdp/a003uvfagio1000/2.jpg",
+        "/products/ys-pdp/a003uvfagio1000/3.jpg",
+        "/products/ys-pdp/a003uvfagio1000/4.jpg",
+        "/products/ys-pdp/a003uvfagio1000/5.jpg",
+        "/products/ys-pdp/a003uvfagio1000/6.jpg"
+      ]
+    },
+    {
+      "id": "A003YOFAGE31000",
+      "sku": "A003YOFAGE31000",
+      "masterId": "A003YOFAGE3",
+      "name": "VENICE backpack in nylon",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/venice-backpack-in-nylon-A003YOFAGE31000.html",
+      "path": "pr/venice-backpack-in-nylon-A003YOFAGE31000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1730.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/ff9b1277-f07b-47b2-a9bd-7c7b544e50a4/eCom/A003YOFAGE31000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/5f34ec57-83e6-4b4c-b828-0c08c154b9f1/eCom/A003YOFAGE31000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/79c192c6-275c-4d74-a1ae-33c9d75cac28/eCom/A003YOFAGE31000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/11eafa0e-5c40-4a6d-b84e-8ac184c6fc16/eCom/A003YOFAGE31000_D.jpg?v=1"
+      ],
+      "description": "drawstring backpack in ECONYL® REGENERATED NYLON. <br>This practical, lightweight bag features multiple storage compartments secured with quick-release flaps.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>REGENERIERTES ECONYL®-NYLON</u></a>",
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>Riemen und Details aus recyceltem Nylon</u></a> mattschwarze Beschläge",
+        "Kordelzugverschluss mit Überschlag und Steckschnallen",
+        "eine große Tasche",
+        "zwei Cargotaschen mit Überschlag auf der Vorderseite mit seitlichem Schnallenverschluss",
+        "Maße: 38 x 40 x 16 cm",
+        "Länge des Griffs: 5 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "814395120",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A003YOFAGE31000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/venice-backpack-in-nylon-A003YOFAGE31000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a003yofage31000/1.jpg",
+        "/products/ys-pdp/a003yofage31000/2.jpg",
+        "/products/ys-pdp/a003yofage31000/3.jpg",
+        "/products/ys-pdp/a003yofage31000/4.jpg"
+      ]
+    },
+    {
+      "id": "534967FAEY21000",
+      "sku": "534967FAEY21000",
+      "masterId": "534967FAEY2",
+      "name": "City backpack in ECONYL®, smooth leather and nylon",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-econylr-smooth-leather-and-nylon-534967FAEY21000.html",
+      "path": "pr/city-backpack-in-econylr-smooth-leather-and-nylon-534967FAEY21000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1090.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/c48889a6-4120-4a2f-a4d1-72f81280abef/eCom/534967FAEY21000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/0dae5555-fb6d-4934-8cf1-18c2a02c27ef/eCom/534967FAEY21000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/d8e2218a-6ca3-4151-bb02-1e0decb78018/eCom/534967FAEY21000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/a02182d0-ea21-4c1e-96a4-64a82dd65820/eCom/534967FAEY21000_D.jpg?v=3"
+      ],
+      "description": "backpack made with ECONYL® REGENERATED NYLON, with saint laurent signature embossed exterior zip pocket and zip compartment and padded slot pocket",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>ECONYL® regenerated nylon</u></a>",
+        "Dimensions: 31 x 41 x 22 CM / 12.2 x 16.1 x 8.6 INCHES",
+        "double zip closure",
+        "oxidized nickel hardware",
+        "adjustable padded straps",
+        "top handle with removable leather strap with saint laurent signature engraved metal plaque",
+        "this product can also be shipped under code 534967FAAB41000"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "813986356",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "534967FAEY21000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-econylr-smooth-leather-and-nylon-534967FAEY21000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/534967faey21000/1.jpg",
+        "/products/ys-pdp/534967faey21000/2.jpg",
+        "/products/ys-pdp/534967faey21000/3.jpg",
+        "/products/ys-pdp/534967faey21000/4.jpg"
+      ]
+    },
+    {
+      "id": "534967AAE8M1000",
+      "sku": "534967AAE8M1000",
+      "masterId": "534967AAE8M",
+      "name": "city backpack in matte leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-matte-leather-534967AAE8M1000.html",
+      "path": "pr/city-backpack-in-matte-leather-534967AAE8M1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1455.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/8474892b-d4ea-4d8a-99a4-4acc63603e53/eCom/534967AAE8M1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c4d18126-22de-464e-882b-6a1b70d06857/eCom/534967AAE8M1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/da085d1c-0da1-4b1b-ba51-89ab6a064784/eCom/534967AAE8M1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/86a5fa0a-0794-41fc-a2bc-ad785b78cec7/eCom/534967AAE8M1000_D.jpg?v=1"
+      ],
+      "description": "backpack made with metal-free tanned leather, featuring a saint laurent signature embossed exterior zip pocket, zip compartment and padded slot pocket.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CHROME FREE AND METAL FREE TANNED LEATHER</u></a>",
+        "Dimensions: 31 x 41 x 22 CM / 12.2 x 16.1 x 8.6 INCHES",
+        "double zip closure",
+        "oxidized nickel hardware",
+        "adjustable padded straps"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "813986487",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "534967AAE8M1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-matte-leather-534967AAE8M1000.html",
+          "hex": "0"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/534967aae8m1000/1.jpg",
+        "/products/ys-pdp/534967aae8m1000/2.jpg",
+        "/products/ys-pdp/534967aae8m1000/3.jpg",
+        "/products/ys-pdp/534967aae8m1000/4.jpg"
+      ]
+    },
+    {
+      "id": "A00316FAGDN3211",
+      "sku": "A00316FAGDN3211",
+      "masterId": "A00316FAGDN",
+      "name": "CITY backpack in cotton canvas",
+      "color": "Brown",
+      "microColor": "DEEP LEAF",
+      "colorCode": "3211",
+      "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-cotton-canvas-A00316FAGDN3211.html",
+      "path": "pr/city-backpack-in-cotton-canvas-A00316FAGDN3211.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1365.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/369f8efd-6dac-4d5f-880b-a1f5725ad62b/eCom/A00316FAGDN3211_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/777af814-123d-4593-bfb6-cbbb2a450d0a/eCom/A00316FAGDN3211_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/8435d6da-820b-4097-b39e-46515547b10b/eCom/A00316FAGDN3211_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/6d7fe6b7-0ad2-4a8e-ba51-d79d28daea88/eCom/A00316FAGDN3211_D.jpg?v=1"
+      ],
+      "description": "backpack featuring a SAINT LAURENT PARIS front zip pocket, main zip compartment, and padded slot pocket.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>zertifizierte Baumwolle</u></a>",
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>Futter aus zertifizierter Baumwolle</u></a>",
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>Riemen aus recyceltem Nylon</u></a>",
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>Griff aus zertifizierter Viskose</u></a> silberfarbene Beschläge",
+        "Zwei-Wege-Reißverschluss",
+        "zwei Hauptfächer mit Reißverschluss",
+        "ein Reißverschlussfach",
+        "eine Fronttasche mit Reißverschluss",
+        "verstellbare, gepolsterte Träger",
+        "Maße: 31 x 41 x 15–22 cm",
+        "Länge des Griffs: 8 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "814395119",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00316FAGDN3211",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-cotton-canvas-A00316FAGDN3211.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00316fagdn3211/1.jpg",
+        "/products/ys-pdp/a00316fagdn3211/2.jpg",
+        "/products/ys-pdp/a00316fagdn3211/3.jpg",
+        "/products/ys-pdp/a00316fagdn3211/4.jpg"
+      ]
+    },
+    {
+      "id": "534967AAE8Z1000",
+      "sku": "534967AAE8Z1000",
+      "masterId": "534967AAE8Z",
+      "name": "city backpack in CROCODILE-EMBOSSED leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-crocodile-embossed-leather-534967AAE8Z1000.html",
+      "path": "pr/city-backpack-in-crocodile-embossed-leather-534967AAE8Z1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1635.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/38afff1e-2652-4c67-a6f2-c5b29d7f78af/eCom/534967AAE8Z1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/cd4d4bc2-f2ea-4f5f-a714-693b6af519d3/eCom/534967AAE8Z1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/6377d858-979d-4556-aa12-69eaabfa4168/eCom/534967AAE8Z1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/9e5c739a-6f3e-40e8-9a72-26355dbbd698/eCom/534967AAE8Z1000_D.jpg?v=3"
+      ],
+      "description": "leather backpack with saint laurent signature embossed exterior zip pocket, zip compartment and padded slot pocket.",
+      "shortDescription": [
+        "Dimensions: 31 x 41 x 22 CM / 12.2 x 16.1 x 8.6 INCHES",
+        "double zip closure",
+        "oxidized nickel hardware",
+        "adjustable padded straps",
+        "top handle with removable leather strap with saint laurent signature engraved metal plaque"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "814088342",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "534967AAE8Z1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-crocodile-embossed-leather-534967AAE8Z1000.html",
+          "hex": "0"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/534967aae8z1000/1.jpg",
+        "/products/ys-pdp/534967aae8z1000/2.jpg",
+        "/products/ys-pdp/534967aae8z1000/3.jpg",
+        "/products/ys-pdp/534967aae8z1000/4.jpg"
+      ]
+    },
+    {
+      "id": "625449BTY0E1000",
+      "sku": "625449BTY0E1000",
+      "masterId": "625449BTY0E",
+      "name": "DUFFLE briefcase in grain de poudre embossed leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/duffle-briefcase-in-grain-de-poudre-embossed-leather-625449BTY0E1000.html",
+      "path": "pr/duffle-briefcase-in-grain-de-poudre-embossed-leather-625449BTY0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1455.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/fc1e3ff0-521b-405b-91aa-c9a17d8192ee/eCom/625449BTY0E1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/23ae61f6-da83-4ff0-aa9f-cce1aa508c90/eCom/625449BTY0E1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/1a0f4e3a-0952-4460-bb33-aad5e2ef2a43/eCom/625449BTY0E1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/167611ca-7e82-44bf-8be3-6bf533043cec/eCom/625449BTY0E1000_D.jpg?v=3"
+      ],
+      "description": "Saint Laurent-embossed briefcase with leather handles and an adjustable shoulder strap made with metal-free tanned leather and certified cotton lining.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CHROME FREE, METAL FREE TANNED LEATHER AND ORGANIC COTTON LINING</u></a>",
+        "Dimensions: 37 x 28 x 8 CM / 14.5 x 11 x 3.1 INCHES",
+        "Antique nickel hardware",
+        "Grosgrain lining",
+        "Zipper closure",
+        "One flat interior pocket, one zippered interior pocket",
+        "One magnetized exterior pocket",
+        "Handle drop: 9 cm",
+        "Shoulder strap drop: 35 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "809342443",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "625449BTY0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/duffle-briefcase-in-grain-de-poudre-embossed-leather-625449BTY0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/625449bty0e1000/1.jpg",
+        "/products/ys-pdp/625449bty0e1000/2.jpg",
+        "/products/ys-pdp/625449bty0e1000/3.jpg",
+        "/products/ys-pdp/625449bty0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "625449DZE0E1000",
+      "sku": "625449DZE0E1000",
+      "masterId": "625449DZE0E",
+      "name": "DUFFLE SAINT LAURENT briefcase bag in crocodile-embossed matte leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/duffle-saint-laurent-briefcase-bag-in-crocodile-embossed-matte-leather-625449DZE0E1000.html",
+      "path": "pr/duffle-saint-laurent-briefcase-bag-in-crocodile-embossed-matte-leather-625449DZE0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1635.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/7fb40048448fbf5d/eCom-625449DZE0E1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/6da7946ebb646dcd/eCom-625449DZE0E1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/26d595be009bad2c/eCom-625449DZE0E1000_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/78df3af5e1135992/eCom-625449DZE0E1000_D.jpg?v=3"
+      ],
+      "description": "saint laurent paris-inscribed briefcase bag with tubular leather handles and an adjustable and detachable crossbody strap.",
+      "shortDescription": [
+        "Dimensions: 37 x 28 x 8 CM / 14.5 x 11 x 3.1 INCHES",
+        "silver-toned metal hardware",
+        "grosgrain lining",
+        "two-way zip closure",
+        "interior: one main compartment, one zip pocket, one large flat pocket, one small flat pocket",
+        "exterior: one magnetic flat pocket at the front",
+        "Handle drop: 9 cm",
+        "Shoulder strap drop: 35 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "809458741",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "625449DZE0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/duffle-saint-laurent-briefcase-bag-in-crocodile-embossed-matte-leather-625449DZE0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/625449dze0e1000/1.jpg",
+        "/products/ys-pdp/625449dze0e1000/2.jpg",
+        "/products/ys-pdp/625449dze0e1000/3.jpg",
+        "/products/ys-pdp/625449dze0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "377865BTY0N1000",
+      "sku": "377865BTY0N1000",
+      "masterId": "377865BTY0N",
+      "name": "museum small flat briefcase in black textured leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/museum-small-flat-briefcase-in-black-textured-leather-377865BTY0N1000.html",
+      "path": "pr/museum-small-flat-briefcase-in-black-textured-leather-377865BTY0N1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1500.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/811674f5-9224-47bf-90f0-a33133d95bfc/eCom/377865BTY0N1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/1938e7a9-0e2c-4e77-b3a3-b31e49ca4296/eCom/377865BTY0N1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/67d2dfaf-891d-4223-bfd7-02d08efff39a/eCom/377865BTY0N1000_C.jpg?v=3"
+      ],
+      "description": "signature saint laurent small briefcase made with metal free tanned leather and certified cotton lining featuring tubular handles, padlock with leather encased keys and embossed saint laurent signature.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CHROME FREE, METAL FREE TANNED LEATHER</u></a>",
+        "Dimensions : 37 X 28 X 6,5/5 CM",
+        "HANDLE DROP : 14 CM",
+        "grosgrain lining",
+        "double zip closure",
+        "silver-toned hardware",
+        "interior zip pocket and ipad compartment with snap-down strap"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "806303097",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "377865BTY0N1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/museum-small-flat-briefcase-in-black-textured-leather-377865BTY0N1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/377865bty0n1000/1.jpg",
+        "/products/ys-pdp/377865bty0n1000/2.jpg",
+        "/products/ys-pdp/377865bty0n1000/3.jpg"
+      ]
+    },
+    {
+      "id": "656669DTI0E1000",
+      "sku": "656669DTI0E1000",
+      "masterId": "656669DTI0E",
+      "name": "Sac de Jour Large briefcase in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-large-briefcase-in-grained-leather-656669DTI0E1000.html",
+      "path": "pr/sac-de-jour-large-briefcase-in-grained-leather-656669DTI0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2000.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/67dd9d27-4867-48fa-9841-c0d93e923337/eCom/656669DTI0E1000_A.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/asset/acfe7b81-b31c-4994-80c3-8466a9b9683a/eCom/656669DTI0E1000_B.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/asset/78374b6f-fbcb-4d9c-bf0e-5b84aba6b2fa/eCom/656669DTI0E1000_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/233c37e6-d4ee-4ec7-9e2a-6e25f7e88a93/eCom/656669DTI0E1000_D.jpg?v=6"
+      ],
+      "description": "Zippered satchel with tubular handles, with a central compartment, an adjustable and removable strap, a front pocket with zipper, a leather-encased padlock and an ID plaque.",
+      "shortDescription": [
+        "Dimensions: 40 x 32 x 8 CM / 15.7 x 12.5 x 3.1 INCHES",
+        "Cotton lining",
+        "Oxidized nickel hardware",
+        "Zippered inside pocket",
+        "Two open inside pockets",
+        "Snap hook key ring"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "809842186",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "656669DTI0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-large-briefcase-in-grained-leather-656669DTI0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/656669dti0e1000/1.jpg",
+        "/products/ys-pdp/656669dti0e1000/2.jpg",
+        "/products/ys-pdp/656669dti0e1000/3.jpg",
+        "/products/ys-pdp/656669dti0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "656670DTI0E1000",
+      "sku": "656670DTI0E1000",
+      "masterId": "656670DTI0E",
+      "name": "sac de jour briefcase in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0E1000.html",
+      "path": "pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1820.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a1b1cf68-780b-46bf-b7bf-33954b4b89fc/eCom/656670DTI0E1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/9ad5dad0-7b2e-498c-85fb-29cb20d83b94/eCom/656670DTI0E1000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/943613fc-015f-4a91-8aac-0bcb31fd16f0/eCom/656670DTI0E1000_C.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/720323b6-f09e-4d08-bad9-727ded2acd9b/eCom/656670DTI0E1000_D.jpg?v=4"
+      ],
+      "description": "softly constructed briefcase with tubular handles, removable and adjustable shoulder strap and embossed saint laurent signature.",
+      "shortDescription": [
+        "Dimensions: 36 x 27 x 7 CM / 14 x 10,6 x 2,7 INCHES",
+        "handle drop: 13 cm",
+        "strap drop: 48 cm",
+        "Oxidized nickel hardware",
+        "two-way zip closure",
+        "exterior: one zip pocket at the front, one concealed flat pocket at the back, one removable leather strap with saint laurent paris engraved metal plaque and leather encased padlock",
+        "interior: one main compartment, one large flat pocket, one zip pocket, one flat pocket, one key chain with padlock keys attached to the inside",
+        "grosgrain lining"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "809702455",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "656670DTI0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/656670dti0e1000/1.jpg",
+        "/products/ys-pdp/656670dti0e1000/2.jpg",
+        "/products/ys-pdp/656670dti0e1000/3.jpg",
+        "/products/ys-pdp/656670dti0e1000/4.jpg"
+      ]
+    },
+    {
+      "id": "656670DTI0Z1000",
+      "sku": "656670DTI0Z1000",
+      "masterId": "656670DTI0Z",
+      "name": "sac de jour briefcase in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0Z1000.html",
+      "path": "pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0Z1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 1820.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/3f258671080f94d0/eCom-656670DTI0Z1000_A.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/m/3d40e781cdd28413/eCom-656670DTI0Z1000_B.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/m/262692a081c36a26/eCom-656670DTI0Z1000_C.jpg?v=7",
+        "https://saint-laurent.dam.kering.com/m/3d7a1aea576d500a/eCom-656670DTI0Z1000_D.jpg?v=7"
+      ],
+      "description": "saint laurent paris embossed zip briefcase with a soft construction, featuring tubular handles, an adjustable and detachable shoulder strap and a removable leather strap with saint laurent paris engraved ID tag and padlock with keys.",
+      "shortDescription": [
+        "Dimensions: 36 x 27 x 7 CM / 14 x 10,6 x 2,7 INCHES",
+        "handle drop: 13 cm",
+        "strap drop: 48 cm",
+        "matte black metal hardware",
+        "two-way zip closure",
+        "exterior: one zip pocket at the front, one concealed flat pocket at the back, one removable leather strap with saint laurent paris engraved metal plaque and leather encased padlock",
+        "interior: one main compartment, one large flat pocket, one zip pocket, one flat pocket, one key chain with padlock keys attached to the inside",
+        "grosgrain lining"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_briefcases",
+        "superMicroCategory": "ysl_super_micro_men_briefcases"
+      },
+      "sizes": [
+        {
+          "id": "809702456",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "656670DTI0Z1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-briefcase-in-grained-leather-656670DTI0Z1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/656670dti0z1000/1.jpg",
+        "/products/ys-pdp/656670dti0z1000/2.jpg",
+        "/products/ys-pdp/656670dti0z1000/3.jpg",
+        "/products/ys-pdp/656670dti0z1000/4.jpg"
+      ]
+    },
+    {
+      "id": "631526DTI0E1000",
+      "sku": "631526DTI0E1000",
+      "masterId": "631526DTI0E",
+      "name": "SAC DE JOUR thin large in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0E1000.html",
+      "path": "pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2840.0,
+      "inStock": true,
+      "compositions": "95% CALFSKIN LEATHER, 5% BRASS",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/5fa781e161ef3eee/eCom-631526DTI0E1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/601d4603e8966737/eCom-631526DTI0E1000_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/48add71141cf1ddc/eCom-631526DTI0E1000_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/3ece5b0e7f2ec37e/eCom-631526DTI0E1000_D.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/36ae8b5fbe8a5bd5/eCom-631526DTI0E1000_E.jpg?v=3"
+      ],
+      "description": "signature saint laurent large bag with a soft construction featuring thin side gussets and compression straps with tabs, tubular handles with a removable leather-encased padlock charm and an adjustable and detachable shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 40 x 30 x 13,5 CM / 15.7 x 11.8 x 5.3 INCHES",
+        "silver-toned metal hardware",
+        "suede lining",
+        "open top",
+        "interior: two main compartments separated by a detachable zip pouch, one detachable snap-button key-ring tab for padlock keys"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "809452875",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "631526DTI0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/631526dti0e1000/1.jpg",
+        "/products/ys-pdp/631526dti0e1000/2.jpg",
+        "/products/ys-pdp/631526dti0e1000/3.jpg",
+        "/products/ys-pdp/631526dti0e1000/4.jpg",
+        "/products/ys-pdp/631526dti0e1000/5.jpg"
+      ]
+    },
+    {
+      "id": "631526DTI0Z1000",
+      "sku": "631526DTI0Z1000",
+      "masterId": "631526DTI0Z",
+      "name": "sac de jour thin large in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0Z1000.html",
+      "path": "pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0Z1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2840.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/5860ca2196b18464/eCom-631526DTI0Z1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/367d1d06ff259607/eCom-631526DTI0Z1000_B.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/b1513774ef1ae36/eCom-631526DTI0Z1000_C.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/bc7be5bda790d95/eCom-631526DTI0Z1000_D.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/8aeb3705305b6c3/eCom-631526DTI0Z1000_E.jpg?v=3"
+      ],
+      "description": "BAG in grained leather with soft construction, tubular handles, accordion sides, compression straps with tabs, embossed saint laurent signature and removable, adjustable shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 40 x 30 x 13,5 CM / 15.7 x 11.8 x 5.3 INCHES",
+        "matte black metal hardware",
+        "suede lining",
+        "open top",
+        "interior: two main compartments separated by a detachable zip pouch, one key chain with padlock keys attached to the inside with a snap",
+        "exterior: removable leather strap with saint laurent paris engraved metal plaque and leather encased padlock",
+        "handle drop: 9.5 cm",
+        "strap drop: 48 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_leathergoods",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "809657890",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "631526DTI0Z1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0Z1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/631526dti0z1000/1.jpg",
+        "/products/ys-pdp/631526dti0z1000/2.jpg",
+        "/products/ys-pdp/631526dti0z1000/3.jpg",
+        "/products/ys-pdp/631526dti0z1000/4.jpg",
+        "/products/ys-pdp/631526dti0z1000/5.jpg"
+      ]
+    },
+    {
+      "id": "631526DTI0W1000",
+      "sku": "631526DTI0W1000",
+      "masterId": "631526DTI0W",
+      "name": "Sac de Jour thin large in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0W1000.html",
+      "path": "pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0W1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2840.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/65d46d6b-9261-4106-8915-7f438cc3e842/eCom/631526DTI0W1000_A.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/0fc4dd33-57a1-47e8-98a1-2b565a94ae07/eCom/631526DTI0W1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/64f39d7f-db87-4300-870e-745e60b22206/eCom/631526DTI0W1000_C.jpg?v=6",
+        "https://saint-laurent.dam.kering.com/asset/96d59650-12bc-4ddd-84e8-cbbae3a642e0/eCom/631526DTI0W1000_D.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/a38a046a-549c-48f3-82a2-bdf65ea05aa3/eCom/631526DTI0W1000_E.jpg?v=4"
+      ],
+      "description": "Signature Saint Laurent large bag with a soft construction featuring thin side gussets and compression straps with tabs, tubular handles with a removable leather-encased padlock charm, and an adjustable and detachable shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 40 x 30 x 13.5 cm / 15.7 x 11.8 x 5.3 inches",
+        "Strap drop: 48 cm",
+        "Bronze-toned metal hardware",
+        "Suede lining",
+        "Open top",
+        "Interior: two main compartments separated by a detachable zip pouch"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "810299308",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "631526DTI0W2126",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-bag-in-grained-leather-631526DTI0W2126.html",
+          "hex": "693818"
+        },
+        {
+          "id": "631526DTI0W1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0W1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/631526dti0w1000/1.jpg",
+        "/products/ys-pdp/631526dti0w1000/2.jpg",
+        "/products/ys-pdp/631526dti0w1000/3.jpg",
+        "/products/ys-pdp/631526dti0w1000/4.jpg",
+        "/products/ys-pdp/631526dti0w1000/5.jpg"
+      ]
+    },
+    {
+      "id": "631526DTI0W2126",
+      "sku": "631526DTI0W2126",
+      "masterId": "631526DTI0W",
+      "name": "Sac de Jour thin large bag in grained leather",
+      "color": "Brown",
+      "microColor": "TOASTED BROWN",
+      "colorCode": "2126",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-bag-in-grained-leather-631526DTI0W2126.html",
+      "path": "pr/sac-de-jour-thin-large-bag-in-grained-leather-631526DTI0W2126.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2840.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/c737ae91bcb5f57/eCom-631526DTI0W2126_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/d032174d-a046-41bb-80bd-1f589a5f948b/eCom/631526DTI0W2126_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/4ec5bc3c1e6d4547/eCom-631526DTI0W2126_C.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/259310ea7198e61e/eCom-631526DTI0W2126_D.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/17f1d2bc60ac1825/eCom-631526DTI0W2126_E.jpg?v=4"
+      ],
+      "description": "Signature Saint Laurent large bag with a soft construction featuring thin side gussets and compression straps with tabs, tubular handles with a removable leather-encased padlock charm, and an adjustable and detachable shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 40 x 30 x 13.5 cm / 15.7 x 11.8 x 5.3 inches",
+        "Strap drop: 48 cm",
+        "Bronze-toned metal hardware",
+        "Suede lining",
+        "Open top",
+        "Interior: two main compartments separated by a detachable zip pouch"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "810299888",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "631526DTI0W2126",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-bag-in-grained-leather-631526DTI0W2126.html",
+          "hex": "693818"
+        },
+        {
+          "id": "631526DTI0W1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-thin-large-in-grained-leather-631526DTI0W1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/631526dti0w2126/1.jpg",
+        "/products/ys-pdp/631526dti0w2126/2.jpg",
+        "/products/ys-pdp/631526dti0w2126/3.jpg",
+        "/products/ys-pdp/631526dti0w2126/4.jpg",
+        "/products/ys-pdp/631526dti0w2126/5.jpg"
+      ]
+    },
+    {
+      "id": "441571B681U1000",
+      "sku": "441571B681U1000",
+      "masterId": "441571B681U",
+      "name": "sac de jour large in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-large-in-grained-leather-441571B681U1000.html",
+      "path": "pr/sac-de-jour-large-in-grained-leather-441571B681U1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2945.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/6688605459cd9816/eCom-441571B681U1000_A.jpg?v=6",
+        "https://saint-laurent.dam.kering.com/m/444b2dbb2e61d4ec/eCom-441571B681U1000_B.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/2233b0a208ea96a7/eCom-441571B681U1000_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/3ac392db15983cc8/eCom-441571B681U1000_D.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/m/5199819a7a6ae528/eCom-441571B681U1000_E.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/33e5be91963357ee/eCom-441571B681U1000_F.jpg?v=2"
+      ],
+      "description": "BAG with tubular handles, accordion sides, compression straps with tabs, embossed saint laurent signature and removable shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 40 x 31 x 20 CM / 15.7 x 12.2 x 7.8 INCHES",
+        "leather lining",
+        "black matte enamel hardware",
+        "removable leather encased padlock",
+        "removable central zip pouch",
+        "brass feet",
+        "handle drop: 9.5 cm",
+        "strap drop: 48 cm"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "807287371",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "441571B681U1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-large-in-grained-leather-441571B681U1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/441571b681u1000/1.jpg",
+        "/products/ys-pdp/441571b681u1000/2.jpg",
+        "/products/ys-pdp/441571b681u1000/3.jpg",
+        "/products/ys-pdp/441571b681u1000/4.jpg",
+        "/products/ys-pdp/441571b681u1000/5.jpg",
+        "/products/ys-pdp/441571b681u1000/6.jpg"
+      ]
+    },
+    {
+      "id": "480583DTI0E1000",
+      "sku": "480583DTI0E1000",
+      "masterId": "480583DTI0E",
+      "name": "sac de jour north/south in grained leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-northsouth-in-grained-leather-480583DTI0E1000.html",
+      "path": "pr/sac-de-jour-northsouth-in-grained-leather-480583DTI0E1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-bags-all"
+      ],
+      "leafId": "ys-men-bags-all",
+      "gbpPrice": 2280.0,
+      "inStock": true,
+      "compositions": "T_100_COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/0c09200b-f5b7-416a-9559-1a8fa4f5b86c/eCom/480583DTI0E1000_A.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/8d0e9bc1-673e-42ae-8171-ddf330b40fce/eCom/480583DTI0E1000_B.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/11648b35-6238-4a73-ab94-e2be24c7938e/eCom/480583DTI0E1000_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/cf0c39c2-f78e-4f39-a529-3dafa5768fa7/eCom/480583DTI0E1000_D.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/c00d1118-d7c4-4460-8f9c-2cefe2ed84b1/eCom/480583DTI0E1000_E.jpg?v=5"
+      ],
+      "description": "signature Saint Laurent tote bag with soft construction, tubular handles, gusseted sides, compression straps with tabs, embossed saint laurent Paris signature and removable, adjustable leather shoulder strap.",
+      "shortDescription": [
+        "Dimensions: 36 x 35 x 19 CM / 14.1 x 13.7 x 7.4 INCHES",
+        "can be worn crossbody or on the shoulder",
+        "leather lining",
+        "oxidized nickel hardware",
+        "zip closure",
+        "removable leather strap with saint laurent engraved metal plaque and leather encased padlock",
+        "leather feet",
+        "2 interior zip pockets, 1 slot pocket",
+        "handle drop: 12 cm, strap drop: 50 cm"
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "807851326",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "480583DTI0E1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sac-de-jour-northsouth-in-grained-leather-480583DTI0E1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/480583dti0e1000/1.jpg",
+        "/products/ys-pdp/480583dti0e1000/2.jpg",
+        "/products/ys-pdp/480583dti0e1000/3.jpg",
+        "/products/ys-pdp/480583dti0e1000/4.jpg",
+        "/products/ys-pdp/480583dti0e1000/5.jpg"
+      ]
+    },
+    {
+      "id": "534967FAEYY1000",
+      "sku": "534967FAEYY1000",
+      "masterId": "534967FAEYY",
+      "name": "city backpack in canvas, nylon and leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-canvas-nylon-and-leather-534967FAEYY1000.html",
+      "path": "pr/city-backpack-in-canvas-nylon-and-leather-534967FAEYY1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-backpacks"
+      ],
+      "leafId": "ys-men-backpacks",
+      "gbpPrice": 1000.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/8dc40124-325d-4770-8660-9b18ee39131d/eCom/534967FAEYY1000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/522eb322-cc42-46f1-a194-063ac683d387/eCom/534967FAEYY1000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/c1e16335-fee9-486b-a285-7a54c20c1129/eCom/534967FAEYY1000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/eaa114a1-a741-490b-81f1-137722d12170/eCom/534967FAEYY1000_D.jpg?v=2"
+      ],
+      "description": "backpack made with canvas, nylon and metal-free, featuring a saint laurent signature embossed exterior zip pocket, zip compartment and padded slot pocket.",
+      "shortDescription": [
+        "<a href=\"$url('Search-ShowContent','fdid','products')$\" target=\"_blank\"><u>CHROME FREE AND METAL FREE TANNED LEATHER DETAILS</u></a>",
+        "Dimensions: 31 x 41 x 22 CM / 12.2 x 16.1 x 8.6 INCHES",
+        "double zip closure",
+        "oxidized nickel hardware",
+        "adjustable padded straps"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_backpacks",
+        "superMicroCategory": "ysl_super_micro_men_backpacks"
+      },
+      "sizes": [
+        {
+          "id": "813985738",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "534967FAEYY1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/city-backpack-in-canvas-nylon-and-leather-534967FAEYY1000.html",
+          "hex": "0"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/534967faeyy1000/1.jpg",
+        "/products/ys-pdp/534967faeyy1000/2.jpg",
+        "/products/ys-pdp/534967faeyy1000/3.jpg",
+        "/products/ys-pdp/534967faeyy1000/4.jpg"
+      ]
+    },
+    {
+      "id": "820672AAEIF1000",
+      "sku": "820672AAEIF1000",
+      "masterId": "820672AAEIF",
+      "name": "Y Large tote in leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-leather-820672AAEIF1000.html",
+      "path": "pr/y-large-tote-in-leather-820672AAEIF1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-men-bags",
+        "ys-men-totes"
+      ],
+      "leafId": "ys-men-totes",
+      "gbpPrice": 3180.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/2cf4baf6-d247-43d0-8606-893113a6501f/eCom/820672AAEIF1000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/36bd1bf9-5070-4904-8130-b9f7d5c07389/Original-Ecom/820672AAEIF1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/dc0ef704-218e-4b86-be48-1f0b8f53d764/eCom/820672AAEIF1000_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/aee076c1-8608-4277-b3e2-db12abf436d2/eCom/820672AAEIF1000_C.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/fca7a02a-a128-4802-979d-0d4e319f829b/eCom/820672AAEIF1000_D.jpg?v=4"
+      ],
+      "description": "TOTE IN FINELY GRAINED LEATHER, fully LINED IN TONAL SUEDE.<br>Decorated with a subtle Y stitched signature, inspired by the house’s archives.<br>THIS SPACIOUS, LIGHTWEIGHT SHOPPING BAG FEATURES AN INNER ZIP POCKET AND HOOK CLOSURE.",
+      "shortDescription": [
+        "SUEDE LINING",
+        "bronze-toned hardware",
+        "hook closure",
+        "one zip pocket",
+        "dimensions:46 X 38 X 18 CM / 18.1 \" x 14.9\" x 7.1\"",
+        "strap drop: 33 cm / 13\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_bags",
+        "microCategory": "ysl_micro_men_totes",
+        "superMicroCategory": "ysl_super_micro_men_totes"
+      },
+      "sizes": [
+        {
+          "id": "813744366",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "820672AAEIF1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/y-large-tote-in-leather-820672AAEIF1000.html",
+          "hex": "0"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/820672aaeif1000/1.jpg",
+        "/products/ys-pdp/820672aaeif1000/2.jpg",
+        "/products/ys-pdp/820672aaeif1000/3.jpg",
+        "/products/ys-pdp/820672aaeif1000/4.jpg",
+        "/products/ys-pdp/820672aaeif1000/5.jpg"
+      ]
+    }
+  ]
+}

@@ -19,6 +19,8 @@ export const SEO_KEYWORDS = [
   "명품 셀렉트숍",
   "샤넬",
   "셀린느",
+  "생로랑",
+  "입생로랑",
   "구찌",
   "버버리",
   "프라다",
@@ -103,6 +105,23 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     keywords: ["셀린느", "Celine", "셀린느 남성", "셀린느 여성", "셀린느 직구"],
     blurb:
       "셀린느 여성·남성 레디투웨어·가방·슈즈·악세서리를 Briq 영국 셀렉션으로 만나보세요.",
+  },
+  "saint-laurent": {
+    slug: "saint-laurent",
+    nameEn: "Saint Laurent",
+    nameKo: "생로랑",
+    shopHref: "/shop?category=luxury&sub=saint-laurent",
+    keywords: [
+      "생로랑",
+      "입생로랑",
+      "Saint Laurent",
+      "YSL",
+      "생로랑 직구",
+      "생로랑 가방",
+      "생로랑 의류",
+    ],
+    blurb:
+      "생로랑(입생로랑) 남성·여성 레디투웨어·가방·슈즈·악세서리를 Briq 영국 셀렉션으로 만나보세요.",
   },
   "vivienne-westwood": {
     slug: "vivienne-westwood",

@@ -794,6 +794,76 @@ export type SubcategoryId =
   | "lv-lighting"
   | "lv-storage"
   | "celine"
+  | "saint-laurent"
+  | "ys-men"
+  | "ys-women"
+  | "ys-men-rtw-all"
+  | "ys-men-shirts"
+  | "ys-men-jersey"
+  | "ys-men-knitwear"
+  | "ys-men-denim"
+  | "ys-men-jackets-pants"
+  | "ys-men-outerwear"
+  | "ys-men-coats-trench"
+  | "ys-men-leather"
+  | "ys-women-rtw-all"
+  | "saint-laurent-bags"
+  | "ys-men-bags"
+  | "ys-women-bags"
+  | "ys-men-bags-all"
+  | "ys-men-backpacks"
+  | "ys-men-briefcases"
+  | "ys-men-messengers"
+  | "ys-men-totes"
+  | "ys-men-travel-bags"
+  | "ys-women-bags-all"
+  | "saint-laurent-shoes"
+  | "ys-men-shoes"
+  | "ys-women-shoes"
+  | "ys-men-shoes-all"
+  | "ys-men-sneakers"
+  | "ys-men-loafers"
+  | "ys-men-derbies"
+  | "ys-men-boots"
+  | "ys-men-sandals"
+  | "ys-women-shoes-all"
+  | "ys-women-sneakers"
+  | "ys-women-pumps"
+  | "ys-women-sandals"
+  | "ys-women-flat-sandals"
+  | "ys-women-flats-loafers"
+  | "ys-women-ballerinas"
+  | "ys-women-mules-wedges"
+  | "ys-women-boots"
+  | "ys-women-booties"
+  | "saint-laurent-accessories"
+  | "ys-men-accessories"
+  | "ys-women-accessories"
+  | "ys-men-slg-all"
+  | "ys-men-card-cases"
+  | "ys-men-wallets"
+  | "ys-men-pouches"
+  | "ys-men-cases-holders"
+  | "ys-men-slg-other"
+  | "ys-men-acc-all"
+  | "ys-men-belts"
+  | "ys-men-hats-gloves"
+  | "ys-men-jewelry"
+  | "ys-men-scarves-ties"
+  | "ys-men-sunglasses"
+  | "ys-women-slg-all"
+  | "ys-women-acc-all"
+  | "ys-women-belts"
+  | "ys-women-gloves"
+  | "ys-women-hats"
+  | "ys-women-scarves-silk"
+  | "ys-women-sunglasses"
+  | "ys-women-jewelry-all"
+  | "ys-women-earrings"
+  | "ys-women-necklaces"
+  | "ys-women-cuffs-bracelets"
+  | "ys-women-brooches-rings"
+  | "ys-women-lucky-charms"
   | "ce-men"
   | "ce-men-rtw-all"
   | "ce-men-shirts"
@@ -1443,6 +1513,33 @@ export const DI_BAGS_MEN_LEAF_IDS: SubcategoryId[] = [
 
 
 /** Celine men's ready-to-wear by category (official GB mens RTW PLPs). */
+
+export const YS_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "ys-men-rtw-all","ys-men-shirts","ys-men-jersey","ys-men-knitwear","ys-men-denim",
+  "ys-men-jackets-pants","ys-men-outerwear","ys-men-coats-trench","ys-men-leather",
+];
+export const YS_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = ["ys-women-rtw-all"];
+export const YS_MEN_BAGS_LEAF_IDS: SubcategoryId[] = [
+  "ys-men-bags-all","ys-men-backpacks","ys-men-briefcases","ys-men-messengers","ys-men-totes","ys-men-travel-bags",
+];
+export const YS_WOMEN_BAGS_LEAF_IDS: SubcategoryId[] = ["ys-women-bags-all"];
+export const YS_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "ys-men-shoes-all","ys-men-sneakers","ys-men-loafers","ys-men-derbies","ys-men-boots","ys-men-sandals",
+];
+export const YS_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "ys-women-shoes-all","ys-women-sneakers","ys-women-pumps","ys-women-sandals","ys-women-flat-sandals",
+  "ys-women-flats-loafers","ys-women-ballerinas","ys-women-mules-wedges","ys-women-boots","ys-women-booties",
+];
+export const YS_MEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "ys-men-slg-all","ys-men-card-cases","ys-men-wallets","ys-men-pouches","ys-men-cases-holders","ys-men-slg-other",
+  "ys-men-acc-all","ys-men-belts","ys-men-hats-gloves","ys-men-jewelry","ys-men-scarves-ties","ys-men-sunglasses",
+];
+export const YS_WOMEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "ys-women-slg-all",
+  "ys-women-acc-all","ys-women-belts","ys-women-gloves","ys-women-hats","ys-women-scarves-silk","ys-women-sunglasses",
+  "ys-women-jewelry-all","ys-women-earrings","ys-women-necklaces","ys-women-cuffs-bracelets","ys-women-brooches-rings","ys-women-lucky-charms",
+];
+
 export const CE_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "ce-men-rtw-all",
   "ce-men-shirts",
@@ -3118,6 +3215,77 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "lv-tables": ["lv-tables"],
   "lv-lighting": ["lv-lighting"],
   "lv-storage": ["lv-storage"],
+
+  "saint-laurent": ["saint-laurent", "ys-women", ...YS_WOMEN_RTW_LEAF_IDS, "ys-men", ...YS_MEN_RTW_LEAF_IDS],
+  "ys-women": ["ys-women", ...YS_WOMEN_RTW_LEAF_IDS],
+  "ys-men": ["ys-men", ...YS_MEN_RTW_LEAF_IDS],
+  "saint-laurent-bags": ["saint-laurent-bags", "ys-women-bags", ...YS_WOMEN_BAGS_LEAF_IDS, "ys-men-bags", ...YS_MEN_BAGS_LEAF_IDS],
+  "ys-women-bags": ["ys-women-bags", ...YS_WOMEN_BAGS_LEAF_IDS],
+  "ys-men-bags": ["ys-men-bags", ...YS_MEN_BAGS_LEAF_IDS],
+  "saint-laurent-shoes": ["saint-laurent-shoes", "ys-women-shoes", ...YS_WOMEN_SHOES_LEAF_IDS, "ys-men-shoes", ...YS_MEN_SHOES_LEAF_IDS],
+  "ys-women-shoes": ["ys-women-shoes", ...YS_WOMEN_SHOES_LEAF_IDS],
+  "ys-men-shoes": ["ys-men-shoes", ...YS_MEN_SHOES_LEAF_IDS],
+  "saint-laurent-accessories": ["saint-laurent-accessories", "ys-women-accessories", ...YS_WOMEN_ACC_LEAF_IDS, "ys-men-accessories", ...YS_MEN_ACC_LEAF_IDS],
+  "ys-women-accessories": ["ys-women-accessories", ...YS_WOMEN_ACC_LEAF_IDS],
+  "ys-men-accessories": ["ys-men-accessories", ...YS_MEN_ACC_LEAF_IDS],
+  "ys-men-rtw-all": ["ys-men-rtw-all"],
+  "ys-men-shirts": ["ys-men-shirts"],
+  "ys-men-jersey": ["ys-men-jersey"],
+  "ys-men-knitwear": ["ys-men-knitwear"],
+  "ys-men-denim": ["ys-men-denim"],
+  "ys-men-jackets-pants": ["ys-men-jackets-pants"],
+  "ys-men-outerwear": ["ys-men-outerwear"],
+  "ys-men-coats-trench": ["ys-men-coats-trench"],
+  "ys-men-leather": ["ys-men-leather"],
+  "ys-women-rtw-all": ["ys-women-rtw-all"],
+  "ys-men-bags-all": ["ys-men-bags-all"],
+  "ys-men-backpacks": ["ys-men-backpacks"],
+  "ys-men-briefcases": ["ys-men-briefcases"],
+  "ys-men-messengers": ["ys-men-messengers"],
+  "ys-men-totes": ["ys-men-totes"],
+  "ys-men-travel-bags": ["ys-men-travel-bags"],
+  "ys-women-bags-all": ["ys-women-bags-all"],
+  "ys-men-shoes-all": ["ys-men-shoes-all"],
+  "ys-men-sneakers": ["ys-men-sneakers"],
+  "ys-men-loafers": ["ys-men-loafers"],
+  "ys-men-derbies": ["ys-men-derbies"],
+  "ys-men-boots": ["ys-men-boots"],
+  "ys-men-sandals": ["ys-men-sandals"],
+  "ys-women-shoes-all": ["ys-women-shoes-all"],
+  "ys-women-sneakers": ["ys-women-sneakers"],
+  "ys-women-pumps": ["ys-women-pumps"],
+  "ys-women-sandals": ["ys-women-sandals"],
+  "ys-women-flat-sandals": ["ys-women-flat-sandals"],
+  "ys-women-flats-loafers": ["ys-women-flats-loafers"],
+  "ys-women-ballerinas": ["ys-women-ballerinas"],
+  "ys-women-mules-wedges": ["ys-women-mules-wedges"],
+  "ys-women-boots": ["ys-women-boots"],
+  "ys-women-booties": ["ys-women-booties"],
+  "ys-men-slg-all": ["ys-men-slg-all"],
+  "ys-men-card-cases": ["ys-men-card-cases"],
+  "ys-men-wallets": ["ys-men-wallets"],
+  "ys-men-pouches": ["ys-men-pouches"],
+  "ys-men-cases-holders": ["ys-men-cases-holders"],
+  "ys-men-slg-other": ["ys-men-slg-other"],
+  "ys-men-acc-all": ["ys-men-acc-all"],
+  "ys-men-belts": ["ys-men-belts"],
+  "ys-men-hats-gloves": ["ys-men-hats-gloves"],
+  "ys-men-jewelry": ["ys-men-jewelry"],
+  "ys-men-scarves-ties": ["ys-men-scarves-ties"],
+  "ys-men-sunglasses": ["ys-men-sunglasses"],
+  "ys-women-slg-all": ["ys-women-slg-all"],
+  "ys-women-acc-all": ["ys-women-acc-all"],
+  "ys-women-belts": ["ys-women-belts"],
+  "ys-women-gloves": ["ys-women-gloves"],
+  "ys-women-hats": ["ys-women-hats"],
+  "ys-women-scarves-silk": ["ys-women-scarves-silk"],
+  "ys-women-sunglasses": ["ys-women-sunglasses"],
+  "ys-women-jewelry-all": ["ys-women-jewelry-all"],
+  "ys-women-earrings": ["ys-women-earrings"],
+  "ys-women-necklaces": ["ys-women-necklaces"],
+  "ys-women-cuffs-bracelets": ["ys-women-cuffs-bracelets"],
+  "ys-women-brooches-rings": ["ys-women-brooches-rings"],
+  "ys-women-lucky-charms": ["ys-women-lucky-charms"],
   celine: [
     "celine",
     "ce-women",
@@ -4888,6 +5056,41 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+
+      {
+        id: "saint-laurent",
+        labelKo: "생로랑",
+        href: "/shop?category=luxury&sub=saint-laurent",
+        children: [
+          {
+            id: "ys-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=ys-women",
+            navLeaf: true,
+            children: [
+              { id: "ys-women-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=ys-women-rtw-all" },
+            ],
+          },
+          {
+            id: "ys-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=ys-men",
+            navLeaf: true,
+            children: [
+              { id: "ys-men-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=ys-men-rtw-all" },
+              { id: "ys-men-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=ys-men-shirts" },
+              { id: "ys-men-jersey", labelKo: "저지", href: "/shop?category=luxury&sub=ys-men-jersey" },
+              { id: "ys-men-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=ys-men-knitwear" },
+              { id: "ys-men-denim", labelKo: "데님", href: "/shop?category=luxury&sub=ys-men-denim" },
+              { id: "ys-men-jackets-pants", labelKo: "재킷 & 팬츠", href: "/shop?category=luxury&sub=ys-men-jackets-pants" },
+              { id: "ys-men-outerwear", labelKo: "아우터웨어", href: "/shop?category=luxury&sub=ys-men-outerwear" },
+              { id: "ys-men-coats-trench", labelKo: "코트 & 트렌치", href: "/shop?category=luxury&sub=ys-men-coats-trench" },
+              { id: "ys-men-leather", labelKo: "레더", href: "/shop?category=luxury&sub=ys-men-leather" },
+            ],
+          },
+        ],
+      },
+
         id: "celine",
         labelKo: "셀린",
         href: "/shop?category=luxury&sub=celine",
@@ -5871,6 +6074,38 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+
+      {
+        id: "saint-laurent-bags",
+        labelKo: "생로랑",
+        href: "/shop?category=bags&sub=saint-laurent-bags",
+        children: [
+          {
+            id: "ys-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=ys-women-bags",
+            navLeaf: true,
+            children: [
+              { id: "ys-women-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=ys-women-bags-all" },
+            ],
+          },
+          {
+            id: "ys-men-bags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=ys-men-bags",
+            navLeaf: true,
+            children: [
+              { id: "ys-men-bags-all", labelKo: "전체", href: "/shop?category=bags&sub=ys-men-bags-all" },
+              { id: "ys-men-backpacks", labelKo: "백팩", href: "/shop?category=bags&sub=ys-men-backpacks" },
+              { id: "ys-men-briefcases", labelKo: "브리프케이스", href: "/shop?category=bags&sub=ys-men-briefcases" },
+              { id: "ys-men-messengers", labelKo: "메신저", href: "/shop?category=bags&sub=ys-men-messengers" },
+              { id: "ys-men-totes", labelKo: "토트", href: "/shop?category=bags&sub=ys-men-totes" },
+              { id: "ys-men-travel-bags", labelKo: "트래블 백", href: "/shop?category=bags&sub=ys-men-travel-bags" },
+            ],
+          },
+        ],
+      },
+
         id: "celine-bags",
         labelKo: "셀린",
         href: "/shop?category=bags&sub=celine-bags",
@@ -6529,6 +6764,47 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+
+      {
+        id: "saint-laurent-shoes",
+        labelKo: "생로랑",
+        href: "/shop?category=shoes&sub=saint-laurent-shoes",
+        children: [
+          {
+            id: "ys-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=ys-women-shoes",
+            navLeaf: true,
+            children: [
+              { id: "ys-women-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=ys-women-shoes-all" },
+              { id: "ys-women-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=ys-women-sneakers" },
+              { id: "ys-women-pumps", labelKo: "펌프스 & 슬링백", href: "/shop?category=shoes&sub=ys-women-pumps" },
+              { id: "ys-women-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=ys-women-sandals" },
+              { id: "ys-women-flat-sandals", labelKo: "플랫 샌들", href: "/shop?category=shoes&sub=ys-women-flat-sandals" },
+              { id: "ys-women-flats-loafers", labelKo: "플랫 & 로퍼", href: "/shop?category=shoes&sub=ys-women-flats-loafers" },
+              { id: "ys-women-ballerinas", labelKo: "발레리나", href: "/shop?category=shoes&sub=ys-women-ballerinas" },
+              { id: "ys-women-mules-wedges", labelKo: "뮬 & 웨지", href: "/shop?category=shoes&sub=ys-women-mules-wedges" },
+              { id: "ys-women-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=ys-women-boots" },
+              { id: "ys-women-booties", labelKo: "부티", href: "/shop?category=shoes&sub=ys-women-booties" },
+            ],
+          },
+          {
+            id: "ys-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=ys-men-shoes",
+            navLeaf: true,
+            children: [
+              { id: "ys-men-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=ys-men-shoes-all" },
+              { id: "ys-men-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=ys-men-sneakers" },
+              { id: "ys-men-loafers", labelKo: "로퍼", href: "/shop?category=shoes&sub=ys-men-loafers" },
+              { id: "ys-men-derbies", labelKo: "더비", href: "/shop?category=shoes&sub=ys-men-derbies" },
+              { id: "ys-men-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=ys-men-boots" },
+              { id: "ys-men-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=ys-men-sandals" },
+            ],
+          },
+        ],
+      },
+
         id: "celine-shoes",
         labelKo: "셀린",
         href: "/shop?category=shoes&sub=celine-shoes",
@@ -7605,6 +7881,56 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+
+      {
+        id: "saint-laurent-accessories",
+        labelKo: "생로랑",
+        href: "/shop?category=accessories&sub=saint-laurent-accessories",
+        children: [
+          {
+            id: "ys-women-accessories",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=ys-women-accessories",
+            navLeaf: true,
+            children: [
+              { id: "ys-women-slg-all", labelKo: "SLG 전체", href: "/shop?category=accessories&sub=ys-women-slg-all" },
+              { id: "ys-women-acc-all", labelKo: "악세서리 전체", href: "/shop?category=accessories&sub=ys-women-acc-all" },
+              { id: "ys-women-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=ys-women-belts" },
+              { id: "ys-women-gloves", labelKo: "장갑", href: "/shop?category=accessories&sub=ys-women-gloves" },
+              { id: "ys-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=ys-women-hats" },
+              { id: "ys-women-scarves-silk", labelKo: "스카프 & 실크", href: "/shop?category=accessories&sub=ys-women-scarves-silk" },
+              { id: "ys-women-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=ys-women-sunglasses" },
+              { id: "ys-women-jewelry-all", labelKo: "주얼리 전체", href: "/shop?category=accessories&sub=ys-women-jewelry-all" },
+              { id: "ys-women-earrings", labelKo: "이어링", href: "/shop?category=accessories&sub=ys-women-earrings" },
+              { id: "ys-women-necklaces", labelKo: "네크리스", href: "/shop?category=accessories&sub=ys-women-necklaces" },
+              { id: "ys-women-cuffs-bracelets", labelKo: "커프 & 브레이슬릿", href: "/shop?category=accessories&sub=ys-women-cuffs-bracelets" },
+              { id: "ys-women-brooches-rings", labelKo: "브로치 & 링", href: "/shop?category=accessories&sub=ys-women-brooches-rings" },
+              { id: "ys-women-lucky-charms", labelKo: "럭키 참", href: "/shop?category=accessories&sub=ys-women-lucky-charms" },
+            ],
+          },
+          {
+            id: "ys-men-accessories",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=ys-men-accessories",
+            navLeaf: true,
+            children: [
+              { id: "ys-men-slg-all", labelKo: "SLG 전체", href: "/shop?category=accessories&sub=ys-men-slg-all" },
+              { id: "ys-men-card-cases", labelKo: "카드 케이스", href: "/shop?category=accessories&sub=ys-men-card-cases" },
+              { id: "ys-men-wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=ys-men-wallets" },
+              { id: "ys-men-pouches", labelKo: "파우치", href: "/shop?category=accessories&sub=ys-men-pouches" },
+              { id: "ys-men-cases-holders", labelKo: "케이스 & 홀더", href: "/shop?category=accessories&sub=ys-men-cases-holders" },
+              { id: "ys-men-slg-other", labelKo: "기타 SLG", href: "/shop?category=accessories&sub=ys-men-slg-other" },
+              { id: "ys-men-acc-all", labelKo: "악세서리 전체", href: "/shop?category=accessories&sub=ys-men-acc-all" },
+              { id: "ys-men-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=ys-men-belts" },
+              { id: "ys-men-hats-gloves", labelKo: "모자 & 장갑", href: "/shop?category=accessories&sub=ys-men-hats-gloves" },
+              { id: "ys-men-jewelry", labelKo: "주얼리", href: "/shop?category=accessories&sub=ys-men-jewelry" },
+              { id: "ys-men-scarves-ties", labelKo: "스카프 & 타이", href: "/shop?category=accessories&sub=ys-men-scarves-ties" },
+              { id: "ys-men-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=ys-men-sunglasses" },
+            ],
+          },
+        ],
+      },
+
         id: "celine-accessories",
         labelKo: "셀린",
         href: "/shop?category=accessories&sub=celine-accessories",

@@ -61,6 +61,8 @@ export type ProductVariant = {
   chCollections?: SubcategoryId[];
   /** Celine PLP memberships. */
   ceCollections?: SubcategoryId[];
+  /** Saint Laurent PLP memberships. */
+  ysCollections?: SubcategoryId[];
   /** Vivienne Westwood PLP memberships. */
   vwCollections?: SubcategoryId[];
   /** Mulberry PLP memberships. */
@@ -132,6 +134,8 @@ export type Product = {
   chCollections?: SubcategoryId[];
   /** Celine PLP memberships. */
   ceCollections?: SubcategoryId[];
+  /** Saint Laurent PLP memberships. */
+  ysCollections?: SubcategoryId[];
   /** Vivienne Westwood PLP memberships. */
   vwCollections?: SubcategoryId[];
   /** Mulberry PLP memberships. */

@@ -55,6 +55,13 @@ function brandFamily(id: string): string | null {
   if (x === "gucci" || x.startsWith("gucci-") || x.startsWith("gc-")) return "gucci";
   if (x === "celine" || x.startsWith("celine-") || x.startsWith("ce-")) return "_new";
   if (
+    x === "saint-laurent" ||
+    x.startsWith("saint-laurent") ||
+    x.startsWith("ys-")
+  ) {
+    return "_new";
+  }
+  if (
     x === "vivienne-westwood" ||
     x.startsWith("vivienne-westwood") ||
     x.startsWith("vw-")
@@ -141,6 +148,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "chanel",
   "gucci",
   "celine",
+  "saint-laurent",
   "vivienne-westwood",
   "louis-vuitton",
   "dior",

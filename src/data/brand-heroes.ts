@@ -12,6 +12,10 @@ export type BrandKey =
   | "celine-bags"
   | "celine-shoes"
   | "celine-accessories"
+  | "saint-laurent"
+  | "saint-laurent-bags"
+  | "saint-laurent-shoes"
+  | "saint-laurent-accessories"
   | "vivienne-westwood"
   | "vivienne-westwood-accessories"
   | "vivienne-westwood-bags"
@@ -113,6 +117,34 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
     // Locked Hiver 2026 campaign creative for accessories.
+    images: ["/banners/brand-celine-accessories.jpg"],
+  },
+  "saint-laurent": {
+    key: "saint-laurent",
+    nameEn: "Saint Laurent",
+    nameKo: "생로랑",
+    logoSrc: "/brands/saint-laurent.svg",
+    images: ["/banners/brand-celine-signature.jpg"],
+  },
+  "saint-laurent-bags": {
+    key: "saint-laurent-bags",
+    nameEn: "Saint Laurent",
+    nameKo: "생로랑",
+    logoSrc: "/brands/saint-laurent.svg",
+    images: ["/banners/brand-celine-bags.jpg"],
+  },
+  "saint-laurent-shoes": {
+    key: "saint-laurent-shoes",
+    nameEn: "Saint Laurent",
+    nameKo: "생로랑",
+    logoSrc: "/brands/saint-laurent.svg",
+    images: ["/banners/brand-celine-shoes.jpg"],
+  },
+  "saint-laurent-accessories": {
+    key: "saint-laurent-accessories",
+    nameEn: "Saint Laurent",
+    nameKo: "생로랑",
+    logoSrc: "/brands/saint-laurent.svg",
     images: ["/banners/brand-celine-accessories.jpg"],
   },
   "vivienne-westwood": {
@@ -435,6 +467,18 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "celine-bags": "celine-bags",
   "celine-shoes": "celine-shoes",
   "celine-accessories": "celine-accessories",
+  "saint-laurent": "saint-laurent",
+  "saint-laurent-bags": "saint-laurent-bags",
+  "saint-laurent-shoes": "saint-laurent-shoes",
+  "saint-laurent-accessories": "saint-laurent-accessories",
+  "ys-men": "saint-laurent",
+  "ys-women": "saint-laurent",
+  "ys-men-bags": "saint-laurent-bags",
+  "ys-women-bags": "saint-laurent-bags",
+  "ys-men-shoes": "saint-laurent-shoes",
+  "ys-women-shoes": "saint-laurent-shoes",
+  "ys-men-accessories": "saint-laurent-accessories",
+  "ys-women-accessories": "saint-laurent-accessories",
   "vivienne-westwood": "vivienne-westwood",
   "vivienne-westwood-accessories": "vivienne-westwood-accessories",
   "vivienne-westwood-bags": "vivienne-westwood-bags",
