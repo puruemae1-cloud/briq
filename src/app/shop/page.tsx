@@ -172,6 +172,9 @@ export default async function ShopPage({ searchParams }: Props) {
     : isAllCatalogue
       ? pickRotating(ALL_PRODUCTS_HERO_IMAGES, 0)
       : pickShopHero(category, sub);
+  const isVwBagsHero = /brand-vivienne-westwood-bags\.(jpg|webp)$/.test(
+    heroImage.split("/").pop() || "",
+  );
   const heroEyebrow = isNewArrivals
     ? "New Season Edit"
     : isAllCatalogue
@@ -197,7 +200,9 @@ export default async function ShopPage({ searchParams }: Props) {
   return (
     <>
       <section
-        className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}`}
+        className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}${
+          isVwBagsHero ? " shop-hero--vw-bags" : ""
+        }`}
         aria-label={heroTitle}
       >
         <BannerImage

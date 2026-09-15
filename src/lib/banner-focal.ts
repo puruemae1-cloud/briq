@@ -81,7 +81,8 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Vivienne Westwood x George Cox creative — keep both shoes centered */
   "brand-vivienne-westwood-shoes.jpg": "50% 47%",
   "brand-vivienne-westwood-shoes.webp": "50% 47%",
-  /* Vivienne Westwood homepage AW2728 bags — keep both bag silhouettes centered */
+  /* Vivienne Westwood homepage AW2728 bags — mobile/tablet keep lower stud detail;
+     PC framing is overridden in globals.css (.shop-hero--vw-bags). */
   "brand-vivienne-westwood-bags.jpg": "50% 56%",
   "brand-vivienne-westwood-bags.webp": "50% 56%",
   /* Vivienne Westwood Spring Cherubs — keep face and upper torso in frame */

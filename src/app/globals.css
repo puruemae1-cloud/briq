@@ -613,6 +613,11 @@ a.chip[href*="sub=gg-sale"].is-active {
   .brand-wordmark__word {
     gap: 0.3em;
   }
+
+  /* VW bags brand hero — PC cover crop was clipping the bag top (orb/studs only). */
+  .shop-hero--brand.shop-hero--vw-bags .shop-hero__img {
+    object-position: 50% 40% !important;
+  }
 }
 
 .shop-hero__content {
