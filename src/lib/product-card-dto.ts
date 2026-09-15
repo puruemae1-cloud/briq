@@ -1,10 +1,6 @@
 import type { Product } from "@/data/product-types";
 
-/**
- * Slim product for PLP/cards — omit heavy PDP-only fields and variant galleries.
- * Card media uses `image` / `images` / `hoverImage` (colourway expand already
- * promotes the lead colour onto those fields).
- */
+/** Slim product for PLP/cards — omit heavy PDP-only fields. */
 export function toCardProduct(p: Product): Product {
   return {
     id: p.id,
@@ -15,9 +11,9 @@ export function toCardProduct(p: Product): Product {
     compareAtPrice: p.compareAtPrice,
     category: p.category,
     subcategory: p.subcategory,
-    tags: p.tags?.slice(0, 12),
+    tags: p.tags,
     image: p.image,
-    images: p.images?.slice(0, 4),
+    images: p.images?.slice(0, 8),
     hoverImage: p.hoverImage,
     accent: p.accent,
     badge: p.badge,
@@ -28,15 +24,22 @@ export function toCardProduct(p: Product): Product {
     shopColorKey: p.shopColorKey,
     cwCollections: p.cwCollections,
     ggCollections: p.ggCollections,
-    // Prices + stock only — enough for `~` ranges and sold-out badges.
     variants: p.variants?.map((v) => ({
       id: v.id,
-      price: v.price,
-      compareAtPrice: v.compareAtPrice,
-      inStock: v.inStock,
-      colorKey: v.colorKey,
       name: v.name,
       nameKo: v.nameKo,
+      sku: v.sku,
+      gbpPrice: v.gbpPrice,
+      price: v.price,
+      compareAtPrice: v.compareAtPrice,
+      image: v.image,
+      images: v.images?.slice(0, 4),
+      hoverImage: v.hoverImage,
+      sourceUrl: v.sourceUrl,
+      inStock: v.inStock,
+      colorKey: v.colorKey,
+      colorNameKo: v.colorNameKo,
+      size: v.size,
     })),
   };
 }

@@ -52,12 +52,11 @@ export function ShopProductGrid({
   liveOrdersRank = false,
 }: {
   products: Product[];
-  /** SSR-warmed page 2 — first "더보기" is instant (no cold API). */
+  /** SSR page-2 cards — first "더보기" is instant. */
   nextPageProducts?: Product[];
   totalCount: number;
   pageSize?: number;
   query: ShopGridQuery;
-  /** Re-rank currently loaded cards by live purchase counts (주문많은순). */
   liveOrdersRank?: boolean;
 }) {
   const [products, setProducts] = useState(initialProducts);
@@ -72,7 +71,6 @@ export function ShopProductGrid({
     promise: Promise<ShopPagePayload | null>;
   } | null>(null);
 
-  // Reset when the PLP query changes (nav / sort / search).
   useEffect(() => {
     setProducts(initialProducts);
     setTotal(totalCount);
@@ -115,21 +113,16 @@ export function ShopProductGrid({
   const ensurePrefetch = useCallback(
     (offset: number) => {
       if (offset >= total) return;
-      const cur = prefetchRef.current;
-      if (cur?.offset === offset) return;
-      prefetchRef.current = {
-        offset,
-        promise: fetchPage(offset),
-      };
+      if (prefetchRef.current?.offset === offset) return;
+      prefetchRef.current = { offset, promise: fetchPage(offset) };
     },
     [fetchPage, total],
   );
 
-  // Warm the next network page immediately (skip idle — cold API is ~10s+).
+  // Prefetch the next *network* page (skip idle — cold API is slow).
   useEffect(() => {
     if (remaining <= 0) return;
     const nextOffset = products.length;
-    // Page 2 may already be in SSR props — prefetch page 3 instead.
     const target =
       !ssrNextConsumed.current &&
       nextPageProducts.length > 0 &&
@@ -146,30 +139,27 @@ export function ShopProductGrid({
     pageSize,
   ]);
 
-  const appendPage = useCallback(
-    (data: ShopPagePayload) => {
-      const next = Array.isArray(data.products) ? data.products : [];
-      startTransition(() => {
-        setProducts((prev) => {
-          const seen = new Set(
-            prev.map((p) =>
-              p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id,
-            ),
-          );
-          const merged = [...prev];
-          for (const p of next) {
-            const key = p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id;
-            if (seen.has(key)) continue;
-            seen.add(key);
-            merged.push(p);
-          }
-          return merged;
-        });
-        if (typeof data.total === "number") setTotal(data.total);
+  const appendPage = useCallback((data: ShopPagePayload) => {
+    const next = Array.isArray(data.products) ? data.products : [];
+    startTransition(() => {
+      setProducts((prev) => {
+        const seen = new Set(
+          prev.map((p) =>
+            p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id,
+          ),
+        );
+        const merged = [...prev];
+        for (const p of next) {
+          const key = p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          merged.push(p);
+        }
+        return merged;
       });
-    },
-    [],
-  );
+      if (typeof data.total === "number") setTotal(data.total);
+    });
+  }, []);
 
   const loadMore = useCallback(async () => {
     if (loadingMore || remaining <= 0) return;
@@ -177,7 +167,6 @@ export function ShopProductGrid({
     setError(null);
     const offset = products.length;
     try {
-      // Instant path: SSR-embedded page 2.
       if (
         !ssrNextConsumed.current &&
         nextPageProducts.length > 0 &&
@@ -195,9 +184,7 @@ export function ShopProductGrid({
         data = await pre.promise;
         prefetchRef.current = null;
       }
-      if (!data) {
-        data = await fetchPage(offset);
-      }
+      if (!data) data = await fetchPage(offset);
       if (!data?.products?.length && remaining > 0) {
         setError("더 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.");
         return;
@@ -223,35 +210,31 @@ export function ShopProductGrid({
   ]);
 
   return (
-    <div className="shop-grid-wrap">
+    <>
       <div className="product-grid">
-        {visible.map((product) => (
+        {visible.map((p) => (
           <ProductCard
-            key={
-              product.shopColorKey
-                ? `${product.id}-${product.shopColorKey}`
-                : product.id
-            }
-            product={product}
+            key={p.shopColorKey ? `${p.id}-${p.shopColorKey}` : p.id}
+            product={p}
           />
         ))}
       </div>
       {canShowMore ? (
-        <div className="shop-load-more">
-          <p className="shop-load-more__meta">
-            {remaining.toLocaleString("ko-KR")}개 남음
-          </p>
+        <div className="shop-browse__morebar">
           <button
             type="button"
-            className="shop-load-more__btn"
+            className="shop-browse__more-btn"
             disabled={loadingMore || isPending}
             onClick={() => void loadMore()}
           >
             {loadingMore ? "불러오는 중…" : "더보기"}
+            <span className="shop-browse__more-remaining">
+              {remaining.toLocaleString()}개 남음
+            </span>
           </button>
-          {error ? <p className="shop-load-more__error">{error}</p> : null}
+          {error ? <p className="shop-browse__more-error">{error}</p> : null}
         </div>
       ) : null}
-    </div>
+    </>
   );
 }

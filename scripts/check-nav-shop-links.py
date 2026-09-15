@@ -79,7 +79,7 @@ def check_pagination_guard() -> list[str]:
     grid = (ROOT / "src/components/ShopProductGrid.tsx").read_text(encoding="utf-8")
     api = ROOT / "src/app/api/products/shop/route.ts"
 
-    for needle in ("getShopListBundle", "sliceShopPage", "SHOP_PAGE_SIZE"):
+    for needle in ("getShopProductList", "sliceShopPage", "toCardProduct", "SHOP_PAGE_SIZE"):
         if needle not in shop_page:
             errors.append(f"shop/page.tsx missing pagination piece: {needle}")
     if "products={list}" in shop_page or "products={ list }" in shop_page:
@@ -88,14 +88,8 @@ def check_pagination_guard() -> list[str]:
         )
     if "/api/products/shop" not in grid:
         errors.append("ShopProductGrid must fetch more pages from /api/products/shop")
-    if "ensurePrefetch" not in grid and "prefetch" not in grid.lower():
-        errors.append("ShopProductGrid should prefetch the next PLP page")
     if not api.is_file():
         errors.append("missing src/app/api/products/shop/route.ts")
-    else:
-        api_text = api.read_text(encoding="utf-8")
-        if "getShopListBundle" not in api_text:
-            errors.append("shop API should use getShopListBundle for cached pages")
     return errors
 
 

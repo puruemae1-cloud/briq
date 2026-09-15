@@ -19,6 +19,7 @@ import { resolveShopBrand } from "@/lib/shop-brand";
 import {
   SHOP_PAGE_SIZE,
   getShopProductList,
+  sliceShopPage,
 } from "@/lib/shop-list";
 import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
@@ -129,18 +130,19 @@ export default async function ShopPage({ searchParams }: Props) {
   );
 
   // Never ship the full filtered catalogue to the client — mobile soft-nav
-  // OOMs on category-wide PLPs (~7k–22k products). First page + page-2 for
-  // instant "더보기", then API for the rest. Map only the sliced windows.
+  // OOMs on category-wide PLPs. Page 1 + SSR page 2 for instant "더보기".
   const list = getShopProductList({
     category,
     sub,
     q: params.q,
     sort: params.sort,
   });
-  const pageProducts = list.slice(0, SHOP_PAGE_SIZE).map(toCardProduct);
-  const nextPageProducts = list
-    .slice(SHOP_PAGE_SIZE, SHOP_PAGE_SIZE * 2)
-    .map(toCardProduct);
+  const pageProducts = sliceShopPage(list, 0, SHOP_PAGE_SIZE).map(toCardProduct);
+  const nextPageProducts = sliceShopPage(
+    list,
+    SHOP_PAGE_SIZE,
+    SHOP_PAGE_SIZE,
+  ).map(toCardProduct);
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
