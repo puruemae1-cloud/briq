@@ -2713,13 +2713,13 @@ body:has(.nav-drawer-toggle:checked) {
 .section__brands-sep {
   margin: 0 0.55rem;
   color: #b8b4ae;
-  font-size: 0.7rem;
+  font-size: 0.91rem; /* ~30% larger with brand links */
   line-height: 1;
 }
 
 .section__brands a {
   font-family: var(--font-pretendard);
-  font-size: 0.82rem;
+  font-size: 1.07rem; /* was 0.82rem — ~30% larger on all viewports */
   font-weight: 400;
   letter-spacing: 0.08em;
   color: #6a6560;
