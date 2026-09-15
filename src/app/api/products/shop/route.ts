@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { toCardProduct } from "@/lib/product-card-dto";
 import {
   SHOP_PAGE_SIZE,
-  getShopProductList,
+  getShopListBundle,
   sliceShopPage,
 } from "@/lib/shop-list";
 
@@ -18,19 +17,20 @@ export async function GET(req: NextRequest) {
   const limitRaw = Number.parseInt(sp.get("limit") || String(SHOP_PAGE_SIZE), 10);
   const limit = Math.min(MAX_LIMIT, Math.max(1, limitRaw || SHOP_PAGE_SIZE));
 
-  const list = getShopProductList({ category, sub, q, sort });
-  const products = sliceShopPage(list, offset, limit).map(toCardProduct);
+  const { cards } = getShopListBundle({ category, sub, q, sort });
+  const products = sliceShopPage(cards, offset, limit);
 
   return NextResponse.json(
     {
       products,
-      total: list.length,
+      total: cards.length,
       offset,
       limit,
     },
     {
       headers: {
-        "Cache-Control": "public, s-maxage=30, stale-while-revalidate=120",
+        // CDN + browser: warm "더보기" hits stay under ~1–2s.
+        "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300",
       },
     },
   );

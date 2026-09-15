@@ -15,11 +15,10 @@ import {
 import { pickRotating } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
-import { toCardProduct } from "@/lib/product-card-dto";
 import { resolveShopBrand } from "@/lib/shop-brand";
 import {
   SHOP_PAGE_SIZE,
-  getShopProductList,
+  getShopListBundle,
   sliceShopPage,
 } from "@/lib/shop-list";
 import { getSiteUrl } from "@/lib/site";
@@ -131,13 +130,14 @@ export default async function ShopPage({ searchParams }: Props) {
 
   // Never ship the full filtered catalogue to the client — mobile soft-nav
   // OOMs on category-wide PLPs (~7k–22k products). First page only + API more.
-  const list = getShopProductList({
+  // Bundle cache warms the same list the "더보기" API will slice from.
+  const { list, cards } = getShopListBundle({
     category,
     sub,
     q: params.q,
     sort: params.sort,
   });
-  const pageProducts = sliceShopPage(list, 0, SHOP_PAGE_SIZE).map(toCardProduct);
+  const pageProducts = sliceShopPage(cards, 0, SHOP_PAGE_SIZE);
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
