@@ -227,6 +227,10 @@ assert FIXED_BURBERRY_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Burberry bag
 FIXED_MULBERRY_BAGS_BRAND_BANNER = "brand-mulberry-bags.jpg"
 assert FIXED_MULBERRY_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Mulberry bags brand banner must not be in SLOT_THEMES"
 
+# Mulberry accessories brand hero — locked JA26 Lily snakeskin red editorial.
+FIXED_MULBERRY_ACCESSORIES_BRAND_BANNER = "brand-mulberry-accessories.jpg"
+assert FIXED_MULBERRY_ACCESSORIES_BRAND_BANNER not in SLOT_THEMES, "locked Mulberry accessories brand banner must not be in SLOT_THEMES"
+
 # Burberry shoes brand hero — locked Vintage Check platform sneakers creative.
 FIXED_BURBERRY_SHOES_BRAND_BANNER = "brand-burberry-shoes.jpg"
 assert FIXED_BURBERRY_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Burberry shoes brand banner must not be in SLOT_THEMES"
@@ -279,6 +283,7 @@ LOCKED_BANNERS = {
     FIXED_BURBERRY_BRAND_BANNER,
     FIXED_BURBERRY_BAGS_BRAND_BANNER,
     FIXED_MULBERRY_BAGS_BRAND_BANNER,
+    FIXED_MULBERRY_ACCESSORIES_BRAND_BANNER,
     FIXED_BURBERRY_SHOES_BRAND_BANNER,
     FIXED_PRADA_BRAND_BANNER,
     FIXED_PRADA_BAGS_BRAND_BANNER,

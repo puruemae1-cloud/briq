@@ -42,6 +42,7 @@ export type BrandKey =
   | "dior"
   | "mulberry"
   | "mulberry-bags"
+  | "mulberry-accessories"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -320,6 +321,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/mulberry.svg",
     // Locked bags PLP creative — JA26 Delta Bayswater satchel (fountain / park).
     images: ["/banners/brand-mulberry-bags.jpg"],
+  },
+  "mulberry-accessories": {
+    key: "mulberry-accessories",
+    nameEn: "Mulberry",
+    nameKo: "멀버리",
+    logoSrc: "/brands/mulberry.svg",
+    // Locked accessories PLP creative — JA26 Lily snakeskin red editorial.
+    images: ["/banners/brand-mulberry-accessories.jpg"],
   },
   "dior-watches": {
     key: "dior-watches",
@@ -742,12 +751,12 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-women-jackets": "dior-womens-rtw",
   mulberry: "mulberry",
   "mulberry-bags": "mulberry-bags",
-  "mulberry-accessories": "mulberry",
+  "mulberry-accessories": "mulberry-accessories",
   "mb-women-bags": "mulberry-bags",
   "mb-men-bags": "mulberry-bags",
-  "mb-women-acc": "mulberry",
-  "mb-men-acc": "mulberry",
-  "mb-gifts": "mulberry",
+  "mb-women-acc": "mulberry-accessories",
+  "mb-men-acc": "mulberry-accessories",
+  "mb-gifts": "mulberry-accessories",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };
