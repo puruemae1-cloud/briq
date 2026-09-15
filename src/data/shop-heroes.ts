@@ -37,6 +37,7 @@ const shopHeroImages: Record<string, string[]> = {
   "bags:gucci-bags": ["/banners/brand-gucci-handbags.jpg"],
   "bags:prada-bags": ["/banners/brand-prada-bags.jpg"],
   "bags:burberry-bags": ["/banners/brand-burberry-bags.jpg"],
+  "bags:mulberry-bags": ["/banners/brand-mulberry-bags.jpg"],
   "shoes:chanel-shoes": ["/banners/brand-chanel-shoes.jpg"],
   "shoes:gucci-shoes": ["/banners/brand-gucci-shoes.jpg"],
   "shoes:dior-shoes": ["/banners/brand-dior-shoes.jpg"],

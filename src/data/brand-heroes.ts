@@ -41,6 +41,7 @@ export type BrandKey =
   | "louis-vuitton"
   | "dior"
   | "mulberry"
+  | "mulberry-bags"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -311,6 +312,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/rot-acc-2.jpg",
       "/banners/rot-acc-3.jpg",
     ],
+  },
+  "mulberry-bags": {
+    key: "mulberry-bags",
+    nameEn: "Mulberry",
+    nameKo: "멀버리",
+    logoSrc: "/brands/mulberry.svg",
+    // Locked bags PLP creative — JA26 Delta Bayswater satchel (fountain / park).
+    images: ["/banners/brand-mulberry-bags.jpg"],
   },
   "dior-watches": {
     key: "dior-watches",
@@ -732,10 +741,10 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "di-women-coats": "dior-womens-rtw",
   "di-women-jackets": "dior-womens-rtw",
   mulberry: "mulberry",
-  "mulberry-bags": "mulberry",
+  "mulberry-bags": "mulberry-bags",
   "mulberry-accessories": "mulberry",
-  "mb-women-bags": "mulberry",
-  "mb-men-bags": "mulberry",
+  "mb-women-bags": "mulberry-bags",
+  "mb-men-bags": "mulberry-bags",
   "mb-women-acc": "mulberry",
   "mb-men-acc": "mulberry",
   "mb-gifts": "mulberry",

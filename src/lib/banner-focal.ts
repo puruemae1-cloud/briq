@@ -15,6 +15,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Bags PLP night check tote — face + tote */
   "brand-burberry-bags.jpg": "52% 38%",
   "brand-burberry-bags.webp": "52% 38%",
+  /* Mulberry bags PLP — Bayswater satchel on fountain rim */
+  "brand-mulberry-bags.jpg": "50% 48%",
+  "brand-mulberry-bags.webp": "50% 48%",
   /* Shoes PLP — Vintage Check platform sneakers */
   "brand-burberry-shoes.jpg": "50% 72%",
   "brand-burberry-shoes.webp": "50% 72%",
