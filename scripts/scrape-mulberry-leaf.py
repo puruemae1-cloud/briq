@@ -44,6 +44,13 @@ def main() -> int:
         cards = cards[: args.limit]
     print(f"PLP cards={len(cards)}", flush=True)
 
+    # Hard floor for the women-bags hub — DOM-only scrapes used to stop at 72.
+    if args.leaf == "mb-women-bags-all" and not args.limit and len(cards) < 300:
+        raise SystemExit(
+            f"FATAL: mb-women-bags-all PLP returned only {len(cards)} cards "
+            "(expected ≥300 colourways from Algolia). Aborting to avoid catalog regression."
+        )
+
     products = list(payload.get("products") or [])
     by_url = {p.get("url"): i for i, p in enumerate(products) if p.get("url")}
 

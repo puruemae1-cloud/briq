@@ -349,6 +349,98 @@ function isLuShopFilter(expanded?: string[]) {
   );
 }
 
+function isMbShopFilter(expanded?: string[]) {
+  if (!expanded?.length) return false;
+  return expanded.some(
+    (id) =>
+      id.startsWith("mb-") ||
+      id === "mulberry-bags" ||
+      id === "mulberry-accessories",
+  );
+}
+
+/** Official Mulberry PLPs list each colourway as its own card. */
+export function expandMbColourwayCards(
+  list: Product[],
+  expanded?: string[],
+): Product[] {
+  if (!isMbShopFilter(expanded)) return list;
+
+  const out: Product[] = [];
+  for (const product of list) {
+    if (!product.mbCollections?.length || !product.variants?.length) {
+      out.push(product);
+      continue;
+    }
+
+    const styleInStock = product.variants.some((v) => v.inStock);
+
+    const byColor = new Map<string, NonNullable<Product["variants"]>>();
+    for (const variant of product.variants) {
+      const key = variant.colorKey;
+      if (!key) continue;
+      const bucket = byColor.get(key);
+      if (bucket) bucket.push(variant);
+      else byColor.set(key, [variant]);
+    }
+
+    if (byColor.size <= 1) {
+      const only = byColor.size === 1 ? [...byColor.values()][0] : null;
+      const cols = only?.[0]?.mbCollections ?? product.mbCollections;
+      if (cols.some((c) => expanded!.includes(c))) {
+        out.push(
+          only
+            ? {
+                ...product,
+                mbCollections: cols,
+                shopColorKey: only[0]?.colorKey,
+                image: only[0]?.image || product.image,
+                images: only[0]?.images || product.images,
+                hoverImage: only[0]?.hoverImage || product.hoverImage,
+                price: only[0]?.price ?? product.price,
+                compareAtPrice: only[0]?.compareAtPrice,
+                gbpPrice: only[0]?.gbpPrice ?? product.gbpPrice,
+                inStock: styleInStock,
+              }
+            : product,
+        );
+      }
+      continue;
+    }
+
+    for (const [colorKey, variants] of byColor) {
+      const cols = variants[0]?.mbCollections ?? product.mbCollections;
+      if (!cols.some((c) => expanded!.includes(c))) continue;
+
+      const inStock = variants.filter((v) => v.inStock);
+      const priced = (inStock.length ? inStock : variants)
+        .slice()
+        .sort((a, b) => a.price - b.price);
+      const lead = priced[0] ?? variants[0];
+      const compareAt =
+        lead.compareAtPrice && lead.compareAtPrice > lead.price
+          ? lead.compareAtPrice
+          : undefined;
+
+      out.push({
+        ...product,
+        image: lead.image || product.image,
+        images: lead.images || product.images,
+        hoverImage: lead.hoverImage || product.hoverImage,
+        price: lead.price,
+        compareAtPrice: compareAt,
+        gbpPrice: lead.gbpPrice,
+        mbCollections: cols,
+        variants,
+        shopColorKey: colorKey,
+        sourceUrl: lead.sourceUrl || product.sourceUrl,
+        inStock: styleInStock,
+      });
+    }
+  }
+  return out;
+}
+
 /** London Undercover PLPs list each colourway as its own card. */
 export function expandLuColourwayCards(
   list: Product[],
@@ -517,6 +609,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
     list = expandBbColourwayCards(list, expanded);
     list = expandAxColourwayCards(list, expanded);
     list = expandLuColourwayCards(list, expanded);
+    list = expandMbColourwayCards(list, expanded);
   }
   return list;
 }

@@ -77,44 +77,111 @@ def _new_page(playwright):
     return browser, page
 
 
-def scrape_plp(url: str, *, max_scroll: int = 28) -> list[dict]:
-    """Return PLP colourway cards: title, price, href, image."""
-    from playwright.sync_api import sync_playwright
+def product_url_from_link(link: str) -> str:
+    """Normalise Mulberry relative/absolute PDP links to https://www.mulberry.com/gb/..."""
+    link = (link or "").split("?")[0].strip()
+    if not link:
+        return ""
+    if link.startswith("http://") or link.startswith("https://"):
+        href = link
+    elif link.startswith("/gb/"):
+        href = abs_url(link)
+    elif link.startswith("/"):
+        # Algolia returns /shop/... without the /gb locale prefix.
+        href = abs_url("/gb" + link)
+    else:
+        href = abs_url("/gb/" + link.lstrip("/"))
+    return href.split("?")[0]
 
-    with sync_playwright() as p:
-        browser, page = _new_page(p)
-        try:
-            page.goto(abs_url(url), wait_until="domcontentloaded", timeout=120000)
-            _accept_cookies(page)
-            page.wait_for_timeout(2500)
-            for _ in range(max_scroll):
-                page.mouse.wheel(0, 4200)
-                page.wait_for_timeout(550)
-            items = page.eval_on_selector_all(
-                ".list-item.product",
-                """els => els.map(el => {
-                  const a = el.querySelector('a.link-product, a.list-item__figure, a[href]');
-                  const title = (el.querySelector('.list-item__title')||{}).innerText||'';
-                  const price = (el.querySelector('.list-item__price')||{}).innerText||'';
-                  const img = el.querySelector('img');
-                  return {
-                    href: a && a.getAttribute('href'),
-                    title: (title||'').trim(),
-                    priceText: (price||'').trim(),
-                    image: img && (img.getAttribute('src')||img.getAttribute('data-src')||img.currentSrc||'')
-                  };
-                })""",
-            )
-        finally:
-            browser.close()
 
+def algolia_image_url(image_field: str) -> str:
+    """Build a CDN URL from an Algolia `image` token (e.g. HH0197_771A110_L?v=)."""
+    raw = (image_field or "").split("?")[0].strip()
+    if not raw:
+        return ""
+    if raw.startswith("http://") or raw.startswith("https://"):
+        return normalize_image(raw)
+    code = raw if raw.startswith("G_") else f"G_{raw}"
+    return normalize_image(f"https://images.mulberry.com/i/mulberrygroup/{code}")
+
+
+def _algolia_paginate(req_url: str, body_text: str) -> tuple[list[dict], int]:
+    """Fetch every Algolia page for a captured PLP query. Returns (hits, nbHits)."""
+    qs = urllib.parse.parse_qs(urllib.parse.urlparse(req_url).query)
+    app = (qs.get("x-algolia-application-id") or [None])[0]
+    key = (qs.get("x-algolia-api-key") or [None])[0]
+    if not app or not key:
+        raise RuntimeError("Algolia credentials missing from intercepted request URL")
+
+    body = json.loads(body_text)
+    requests = body.get("requests") or []
+    if not requests:
+        raise RuntimeError("Algolia body has no requests")
+    index = requests[0].get("indexName") or "UK_EN"
+    base_params = requests[0].get("params") or ""
+    flat = {k: v[0] for k, v in urllib.parse.parse_qs(base_params).items()}
+    flat["hitsPerPage"] = "72"
+
+    endpoint = f"https://{app}-dsn.algolia.net/1/indexes/*/queries"
+    all_hits: list[dict] = []
+    nb_hits = 0
+    nb_pages = 1
+    for page_n in range(40):
+        flat["page"] = str(page_n)
+        req_body = {
+            "requests": [
+                {"indexName": index, "params": urllib.parse.urlencode(flat)}
+            ]
+        }
+        req = urllib.request.Request(
+            endpoint,
+            data=json.dumps(req_body).encode(),
+            method="POST",
+            headers={
+                "Content-Type": "application/json",
+                "X-Algolia-Application-Id": app,
+                "X-Algolia-API-Key": key,
+                "User-Agent": UA,
+            },
+        )
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            out = json.loads(resp.read().decode())
+        r0 = (out.get("results") or [{}])[0]
+        hits = r0.get("hits") or []
+        nb_hits = int(r0.get("nbHits") or 0)
+        nb_pages = int(r0.get("nbPages") or 0) or 1
+        all_hits.extend(hits)
+        if page_n + 1 >= nb_pages:
+            break
+    return all_hits, nb_hits
+
+
+def _scrape_plp_dom(page, *, max_scroll: int = 28) -> list[dict]:
+    """Legacy DOM fallback when Algolia interception fails."""
+    for _ in range(max_scroll):
+        page.mouse.wheel(0, 4200)
+        page.wait_for_timeout(550)
+    items = page.eval_on_selector_all(
+        ".list-item.product",
+        """els => els.map(el => {
+          const a = el.querySelector('a.link-product, a.list-item__figure, a[href]');
+          const title = (el.querySelector('.list-item__title')||{}).innerText||'';
+          const price = (el.querySelector('.list-item__price')||{}).innerText||'';
+          const img = el.querySelector('img');
+          return {
+            href: a && a.getAttribute('href'),
+            title: (title||'').trim(),
+            priceText: (price||'').trim(),
+            image: img && (img.getAttribute('src')||img.getAttribute('data-src')||img.currentSrc||'')
+          };
+        })""",
+    )
     out: list[dict] = []
     seen: set[str] = set()
     for it in items or []:
-        href = abs_url((it.get("href") or "").split("?")[0])
+        href = product_url_from_link(it.get("href") or "")
         if not href or "/gb/" not in href:
             continue
-        # Skip non-product paths
         if any(
             x in href
             for x in (
@@ -144,6 +211,90 @@ def scrape_plp(url: str, *, max_scroll: int = 28) -> list[dict]:
                 "plpImage": it.get("image") or "",
             }
         )
+    return out
+
+
+def scrape_plp(url: str, *, max_scroll: int = 28) -> list[dict]:
+    """Return PLP colourway cards: title, price, href, image.
+
+    Mulberry GB PLPs are Algolia-backed (72 hits/page). DOM scroll alone stops at
+    the first page, so we intercept the PLP query and paginate all nbPages.
+    """
+    from playwright.sync_api import sync_playwright
+
+    meta: dict[str, str] = {}
+    dom_fallback: list[dict] = []
+
+    with sync_playwright() as p:
+        browser, page = _new_page(p)
+        try:
+
+            def on_request(req) -> None:
+                if meta.get("body"):
+                    return
+                if (
+                    "algolia.net" in req.url
+                    and "/queries" in req.url
+                    and req.post_data
+                    and "hitsPerPage=72" in req.post_data
+                    and "filters=" in req.post_data
+                ):
+                    meta["req_url"] = req.url
+                    meta["body"] = req.post_data
+
+            page.on("request", on_request)
+            page.goto(abs_url(url), wait_until="domcontentloaded", timeout=120000)
+            _accept_cookies(page)
+            for _ in range(48):
+                if meta.get("body"):
+                    break
+                page.wait_for_timeout(250)
+            if not meta.get("body"):
+                print(
+                    "WARN Mulberry PLP: Algolia not intercepted — falling back to DOM",
+                    flush=True,
+                )
+                dom_fallback = _scrape_plp_dom(page, max_scroll=max_scroll)
+        finally:
+            browser.close()
+
+    if not meta.get("body"):
+        return dom_fallback
+
+    hits, nb_hits = _algolia_paginate(meta["req_url"], meta["body"])
+    out: list[dict] = []
+    seen: set[str] = set()
+    for hit in hits:
+        href = product_url_from_link(hit.get("link") or "")
+        if not href or "/gb/" not in href:
+            continue
+        if href in seen:
+            continue
+        seen.add(href)
+        title = clean_text(hit.get("name") or "")
+        if not title:
+            continue
+        try:
+            gbp = float(hit.get("price") or 0)
+        except (TypeError, ValueError):
+            gbp = 0.0
+        out.append(
+            {
+                "url": href,
+                "title": title,
+                "gbpPrice": gbp,
+                "plpImage": algolia_image_url(hit.get("image") or ""),
+                "colour": clean_text(hit.get("colour") or ""),
+                "objectID": str(hit.get("objectID") or ""),
+            }
+        )
+
+    if nb_hits and len(out) < max(1, int(nb_hits * 0.9)):
+        raise RuntimeError(
+            f"Mulberry PLP incomplete for {url}: got {len(out)} cards, "
+            f"Algolia nbHits={nb_hits} (need ≥90%)"
+        )
+    print(f"Algolia PLP {url} → {len(out)} cards (nbHits={nb_hits})", flush=True)
     return out
 
 

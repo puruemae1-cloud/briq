@@ -83,6 +83,10 @@ python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0
   exit 1
 }
 
+# Women bags must stay near official Algolia size (~348 colourways).
+# Catches DOM-only scrape regressions that silently cap at 72.
+python3 scripts/check-mb-plp-coverage.py --fail
+
 # Publish any local mb-pdp folders missing from the product-images CDN tag
 # (Vercel serves photos from the tag — never rely on main for PDP bytes).
 python3 scripts/list-missing-pdp-on-cdn.py --dirs mb-pdp --fetch --write tmp/mb-missing-on-cdn.txt || true
