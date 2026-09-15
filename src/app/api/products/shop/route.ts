@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
   SHOP_PAGE_SIZE,
-  getShopListBundle,
+  getShopListBundleCached,
   sliceShopPage,
 } from "@/lib/shop-list";
 
@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
   const limitRaw = Number.parseInt(sp.get("limit") || String(SHOP_PAGE_SIZE), 10);
   const limit = Math.min(MAX_LIMIT, Math.max(1, limitRaw || SHOP_PAGE_SIZE));
 
-  const { cards } = getShopListBundle({ category, sub, q, sort });
+  const { cards } = await getShopListBundleCached({ category, sub, q, sort });
   const products = sliceShopPage(cards, offset, limit);
 
   return NextResponse.json(
@@ -29,8 +29,11 @@ export async function GET(req: NextRequest) {
     },
     {
       headers: {
-        // CDN + browser: warm "더보기" hits stay under ~1–2s.
-        "Cache-Control": "public, s-maxage=60, stale-while-revalidate=300",
+        // CDN edge: warm "더보기" hits should be sub-second after first miss.
+        "Cache-Control": "public, s-maxage=120, stale-while-revalidate=600",
+        "CDN-Cache-Control": "public, s-maxage=120, stale-while-revalidate=600",
+        "Vercel-CDN-Cache-Control":
+          "public, s-maxage=120, stale-while-revalidate=600",
       },
     },
   );

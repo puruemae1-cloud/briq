@@ -138,6 +138,8 @@ export default async function ShopPage({ searchParams }: Props) {
     sort: params.sort,
   });
   const pageProducts = sliceShopPage(cards, 0, SHOP_PAGE_SIZE);
+  // First "더보기" resolves instantly from SSR — no cold /api/products/shop wait.
+  const nextPageProducts = sliceShopPage(cards, SHOP_PAGE_SIZE, SHOP_PAGE_SIZE);
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
@@ -213,7 +215,10 @@ export default async function ShopPage({ searchParams }: Props) {
           loading="eager"
           fetchPriority="high"
           style={{
-            objectPosition: bannerFocalForSrc(heroImage, "center 45%"),
+            objectPosition: isVwBagsHero
+              ? "50% 50%"
+              : bannerFocalForSrc(heroImage, "center 45%"),
+            ...(isVwBagsHero ? { objectFit: "contain" as const } : {}),
           }}
         />
         <div className="shop-hero__shade" aria-hidden />
@@ -375,6 +380,7 @@ export default async function ShopPage({ searchParams }: Props) {
             <ShopProductGrid
               key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}`}
               products={pageProducts}
+              nextPageProducts={nextPageProducts}
               totalCount={list.length}
               pageSize={SHOP_PAGE_SIZE}
               query={{

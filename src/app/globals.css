@@ -614,9 +614,15 @@ a.chip[href*="sub=gg-sale"].is-active {
     gap: 0.3em;
   }
 
-  /* VW bags brand hero — PC cover crop was clipping the bag top (orb/studs only). */
+  /* VW bags brand hero — short cover strip clipped the bag/strap; show full product. */
+  .shop-hero--brand.shop-hero--vw-bags {
+    height: clamp(18rem, 42vw, 32rem);
+    background: #f3f1ec;
+  }
+
   .shop-hero--brand.shop-hero--vw-bags .shop-hero__img {
-    object-position: 50% 40% !important;
+    object-fit: contain !important;
+    object-position: 50% 50% !important;
   }
 }
 

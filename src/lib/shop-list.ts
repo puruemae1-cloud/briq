@@ -1,3 +1,4 @@
+import { unstable_cache } from "next/cache";
 import { getProductsByCategory } from "@/data/products";
 import type { Product } from "@/data/product-types";
 import { toCardProduct } from "@/lib/product-card-dto";
@@ -50,23 +51,10 @@ function pruneCache(now: number) {
   }
 }
 
-/** Shared shop PLP filter/sort used by `/shop` and `/api/products/shop`. */
-export function getShopProductList(params: ShopListQuery): Product[] {
-  return getShopListBundle(params).list;
-}
-
-/** Filtered list + slim card DTOs (cached together for fast pagination). */
-export function getShopListBundle(params: ShopListQuery): {
+function buildShopListBundle(params: ShopListQuery): {
   list: Product[];
   cards: Product[];
 } {
-  const key = cacheKey(params);
-  const now = Date.now();
-  const hit = LIST_CACHE.get(key);
-  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
-    return { list: hit.list, cards: hit.cards };
-  }
-
   const category = params.category ?? "all";
   const sub = params.sub;
   const sort = parseProductSort(params.sort);
@@ -89,9 +77,68 @@ export function getShopListBundle(params: ShopListQuery): {
   }
 
   const cards = list.map(toCardProduct);
-  pruneCache(now);
-  LIST_CACHE.set(key, { at: now, list, cards });
   return { list, cards };
+}
+
+/** Shared shop PLP filter/sort used by `/shop` and `/api/products/shop`. */
+export function getShopProductList(params: ShopListQuery): Product[] {
+  return getShopListBundle(params).list;
+}
+
+/** Filtered list + slim card DTOs (cached together for fast pagination). */
+export function getShopListBundle(params: ShopListQuery): {
+  list: Product[];
+  cards: Product[];
+} {
+  const key = cacheKey(params);
+  const now = Date.now();
+  const hit = LIST_CACHE.get(key);
+  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
+    return { list: hit.list, cards: hit.cards };
+  }
+
+  const built = buildShopListBundle(params);
+  pruneCache(now);
+  LIST_CACHE.set(key, { at: now, list: built.list, cards: built.cards });
+  return built;
+}
+
+/**
+ * Cross-isolate cache for the shop API — survives serverless cold starts better
+ * than the in-memory Map (first miss still pays, warm fleet stays fast).
+ */
+export async function getShopListBundleCached(params: ShopListQuery): Promise<{
+  list: Product[];
+  cards: Product[];
+}> {
+  const key = cacheKey(params);
+  const now = Date.now();
+  const hit = LIST_CACHE.get(key);
+  if (hit && now - hit.at < LIST_CACHE_TTL_MS) {
+    return { list: hit.list, cards: hit.cards };
+  }
+
+  const category = params.category ?? "all";
+  const sub = params.sub ?? "";
+  const q = (params.q ?? "").trim().toLowerCase();
+  const sort = params.sort ?? "";
+
+  const cached = unstable_cache(
+    async () =>
+      buildShopListBundle({
+        category,
+        sub: sub || undefined,
+        q: q || undefined,
+        sort,
+      }),
+    ["shop-list-bundle", category, sub, q, String(sort)],
+    { revalidate: 90 },
+  );
+
+  const built = await cached();
+  pruneCache(now);
+  LIST_CACHE.set(key, { at: now, list: built.list, cards: built.cards });
+  return built;
 }
 
 export function sliceShopPage(
