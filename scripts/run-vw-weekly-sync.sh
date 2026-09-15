@@ -21,6 +21,14 @@ for fam in VW_FAMILY_SCRAPERS:
         print(f"WARN {fam} failed rc={r.returncode}", flush=True)
 
 r = subprocess.run([sys.executable, "scripts/build-vw-catalog.py"])
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
+# Bags hub must keep colourways in category=bags (not accessories).
+r = subprocess.run(
+    [sys.executable, "scripts/check-vw-bags-coverage.py", "--fail"],
+    cwd=str(Path.cwd()),
+)
 raise SystemExit(r.returncode)
 PY
 echo "OK VW weekly sync"

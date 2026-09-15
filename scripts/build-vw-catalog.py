@@ -206,15 +206,75 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
 
 
 def leaf_to_category(leaf: str) -> str:
-    if "bags" in leaf:
+    """Map VW leaf id → Briq shop category.
+
+    Bag style leaves use names like crossbody/totes/clutches (no 'bags' substring),
+    so a naive `'bags' in leaf` check mis-filed them as accessories and hid them
+    from /shop?category=bags&sub=vivienne-westwood-bags.
+    """
+    l = (leaf or "").lower()
+    if any(
+        m in l
+        for m in (
+            "bags",
+            "handbag",
+            "crossbody",
+            "clutch",
+            "tote",
+            "backpack",
+            "satchel",
+            "shoulder",
+        )
+    ):
         return "bags"
-    if "shoes" in leaf:
+    if "shoes" in l or "boot" in l or "flat" in l or "pump" in l or "sandal" in l or "trainer" in l or "platform" in l:
         return "shoes"
-    if "watches" in leaf:
+    if "watch" in l:
         return "watches"
-    if any(x in leaf for x in ["rtw", "clothing", "coats", "jackets", "dresses", "knitwear", "shirts", "trousers", "skirts"]):
+    if any(
+        x in l
+        for x in (
+            "rtw",
+            "clothing",
+            "coats",
+            "jackets",
+            "dresses",
+            "knitwear",
+            "shirts",
+            "trousers",
+            "skirts",
+            "corset",
+            "sweat",
+        )
+    ):
         return "luxury"
     return "accessories"
+
+
+def _merge_vw_product(prev: dict | None, new: dict) -> dict:
+    """Keep the richer row; union collections; never downgrade bags → accessories."""
+    if not prev:
+        return new
+    out = dict(new)
+    cols = list(dict.fromkeys([*(prev.get("vwCollections") or []), *(new.get("vwCollections") or [])]))
+    out["vwCollections"] = cols
+    # Prefer bags category if either side is bags (leaf mis-order safety).
+    if prev.get("category") == "bags" or new.get("category") == "bags":
+        out["category"] = "bags"
+    # Prefer the bags-*all / more specific bag leaf as subcategory when available.
+    prev_sub = str(prev.get("subcategory") or "")
+    new_sub = str(new.get("subcategory") or "")
+    if prev_sub.endswith("bags-all") and not new_sub.endswith("bags-all"):
+        out["subcategory"] = prev_sub
+    # Keep the longer image gallery / Korean copy when replacing a thinner row.
+    if len(prev.get("images") or []) > len(new.get("images") or []):
+        out["images"] = prev["images"]
+        out["image"] = prev.get("image") or out.get("image")
+    if len(str(prev.get("descriptionKo") or "")) > len(str(new.get("descriptionKo") or "")):
+        out["descriptionKo"] = prev["descriptionKo"]
+        out["storySections"] = prev.get("storySections") or out.get("storySections")
+        out["featuresKo"] = prev.get("featuresKo") or out.get("featuresKo")
+    return out
 
 
 def build_story(description_ko: str, images: list[str], features_ko: list[str]) -> list[dict]:
@@ -344,7 +404,7 @@ def main() -> None:
         if not row.get("id"):
             continue
         p = build_product(row, cache, idx)
-        by_id[p["id"]] = p
+        by_id[p["id"]] = _merge_vw_product(by_id.get(p["id"]), p)
         if (idx + 1) % 10 == 0:
             save_json(CACHE, cache)
             print(f"built {idx+1}/{len(rows)}", flush=True)
