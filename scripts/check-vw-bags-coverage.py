@@ -127,6 +127,13 @@ def main() -> int:
             "(crossbody/totes/clutches must be category=bags)"
         )
 
+    products_ts = (ROOT / "src/data/products.ts").read_text(encoding="utf-8")
+    if "p.vwCollections?.some" not in products_ts:
+        errors.append(
+            "getProductsByCategory must filter on p.vwCollections "
+            "(otherwise bag style leaves stay hidden on vivienne-westwood-bags)"
+        )
+
     if errors:
         for e in errors:
             print(f"ERROR: {e}", flush=True)

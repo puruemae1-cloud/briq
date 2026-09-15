@@ -577,6 +577,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.lvCollections?.some((c) => expanded.includes(c))) return true;
       if (p.diCollections?.some((c) => expanded.includes(c))) return true;
       if (p.mbCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.vwCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
@@ -602,6 +603,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.diCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.mbCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.vwCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });

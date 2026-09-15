@@ -29,6 +29,14 @@ r = subprocess.run(
     [sys.executable, "scripts/check-vw-bags-coverage.py", "--fail"],
     cwd=str(Path.cwd()),
 )
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
+# Accessories/jewellery hub must keep full leaf scrape (not just *-all hubs).
+r = subprocess.run(
+    [sys.executable, "scripts/check-vw-accessories-coverage.py", "--fail"],
+    cwd=str(Path.cwd()),
+)
 raise SystemExit(r.returncode)
 PY
 echo "OK VW weekly sync"
