@@ -14,10 +14,13 @@ import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 import { gcCatalogProducts } from "@/data/gc/gc-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
 import { ceCatalogProducts } from "@/data/ce/ce-catalog";
-// Temporarily omit YS from the hot shop catalogue path — the 2.3k-SKU import
-// OOMs `/api/products/shop?category=all` on Vercel. Re-enable via
-// `ysCatalogProducts` once shop listing is lazy/chunked.
-// import { ysCatalogProducts } from "@/data/ys/ys-catalog";
+// Saint Laurent is lazy-merged in getProductsByCategory / getProduct — a static
+// `ysCatalogProducts` import parses ~14MB JSON into every shop serverless
+// cold start and OOMs `/api/products/shop?category=all` on Vercel.
+import {
+  getYsCatalogProducts,
+  isYsShopSub,
+} from "@/data/ys/ys-catalog-lazy";
 import { vwCatalogProducts } from "@/data/vw/vw-catalog";
 import { prCatalogProducts } from "@/data/pr/pr-catalog";
 import { lvCatalogProducts } from "@/data/lv/lv-catalog";
@@ -53,27 +56,61 @@ export const products: Product[] = [
   ...gcCatalogProducts,
   ...chCatalogProducts,
   ...ceCatalogProducts,
-  ...ysCatalogProducts,
   ...vwCatalogProducts,
   ...prCatalogProducts,
   ...lvCatalogProducts,
   ...diCatalogProducts,
   ...mbCatalogProducts,
 ];
+
+/** Re-export lazy YS accessor for callers that need the Saint Laurent catalogue. */
+export { getYsCatalogProducts };
+
+/**
+ * Include YS when the shop filter needs it. Never on `category=all` (no sub) —
+ * that is the memory-critical New Arrivals / 전체상품 API path.
+ */
+function shouldIncludeYsCatalog(category?: string, sub?: string): boolean {
+  if (isYsShopSub(sub)) return true;
+  if (sub) {
+    const expanded = expandSubcategoryFilter(sub);
+    if (expanded?.some((id) => isYsShopSub(id))) return true;
+    // Other brand/sub filters never need the YS catalogue.
+    return false;
+  }
+  // Category-wide PLPs (bags/luxury/…) include YS SKUs in that category.
+  // Never on category=all — that path is memory-critical on Vercel.
+  return Boolean(category && category !== "all");
+}
+
+function withYsCatalog(list: Product[]): Product[] {
+  return list.concat(getYsCatalogProducts());
+}
+
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
 export function getCollection100() {
   return products;
 }
 
-export function getProduct(id: string) {
-  const direct = products.find((p) => p.id === id);
+function findInList(list: Product[], id: string): Product | undefined {
+  const direct = list.find((p) => p.id === id);
   if (direct) return direct;
   // CW strap variants share a parent product — resolve by variant id or sku slug.
-  return products.find(
+  return list.find(
     (p) =>
       p.sku === id ||
       p.variants?.some((v) => v.id === id || `cw-${v.id}` === id || v.sku === id),
   );
+}
+
+export function getProduct(id: string) {
+  const fromCore = findInList(products, id);
+  if (fromCore) return fromCore;
+  // YS SKUs use the `ys-` prefix — load catalogue only for those PDPs.
+  if (id.startsWith("ys-")) {
+    return findInList(getYsCatalogProducts(), id);
+  }
+  return undefined;
 }
 
 function isGgShopFilter(expanded?: string[]) {
@@ -530,7 +567,9 @@ export function expandLuColourwayCards(
 }
 
 export function getProductsByCategory(category?: string, sub?: string) {
-  let list = products;
+  let list: Product[] = shouldIncludeYsCatalog(category, sub)
+    ? withYsCatalog(products)
+    : products;
   const expanded = expandSubcategoryFilter(sub);
   // Gift PLPs include apparel/bags/shoes tagged with gifts*; skip category gate.
   const isPsGifts =

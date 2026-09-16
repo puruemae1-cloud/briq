@@ -96,29 +96,51 @@ export function preferGgApparelFirst(list: Product[]): Product[] {
   return [...apparel, ...accessories];
 }
 
-/** Same ranking rules as the homepage 100 Collection / every shop category.
- * Sold-out styles always sink to the end, regardless of sort mode.
- */
-export function sortProducts(list: Product[], sort: ProductSort): Product[] {
-  const copy = [...list];
+function compareBySort(sort: ProductSort): (a: Product, b: Product) => number {
   switch (sort) {
     case "price-asc":
-      return copy.sort(withSoldOutLast((a, b) => a.price - b.price));
+      return withSoldOutLast((a, b) => a.price - b.price);
     case "price-desc":
-      return copy.sort(withSoldOutLast((a, b) => b.price - a.price));
+      return withSoldOutLast((a, b) => b.price - a.price);
     case "orders":
-      return copy.sort(
-        withSoldOutLast((a, b) => {
-          const ba = a.badge ? 1 : 0;
-          const bb = b.badge ? 1 : 0;
-          if (bb !== ba) return bb - ba;
-          return a.price - b.price;
-        }),
-      );
+      return withSoldOutLast((a, b) => {
+        const ba = a.badge ? 1 : 0;
+        const bb = b.badge ? 1 : 0;
+        if (bb !== ba) return bb - ba;
+        return a.price - b.price;
+      });
     case "new":
     default:
-      return copy.sort(withSoldOutLast(compareProductsByNewest));
+      return withSoldOutLast(compareProductsByNewest);
   }
+}
+
+/**
+ * Single-pass top-N for catalogue-wide shop surfaces.
+ * Avoids `[...list].sort(...)` on the full multi-brand catalogue (Vercel OOM).
+ */
+export function getTopSortedProducts(
+  list: Product[],
+  sort: ProductSort,
+  limit: number = NEW_ARRIVALS_LIMIT,
+): Product[] {
+  const cmp = compareBySort(sort);
+  const top: Product[] = [];
+  const cap = Math.max(1, limit);
+  for (const product of list) {
+    if (top.length < cap) {
+      top.push(product);
+      if (top.length === cap) top.sort(cmp);
+      continue;
+    }
+    const last = top[cap - 1];
+    if (cmp(product, last) < 0) {
+      top[cap - 1] = product;
+      top.sort(cmp);
+    }
+  }
+  if (top.length < cap) top.sort(cmp);
+  return top;
 }
 
 /**
@@ -127,22 +149,17 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
  * which OOMs the Vercel shop API after large brand imports).
  */
 export function getNewArrivalsProducts(list: Product[]): Product[] {
-  const cmp = withSoldOutLast(compareProductsByNewest);
-  const top: Product[] = [];
-  for (const product of list) {
-    if (top.length < NEW_ARRIVALS_LIMIT) {
-      top.push(product);
-      if (top.length === NEW_ARRIVALS_LIMIT) top.sort(cmp);
-      continue;
-    }
-    const last = top[NEW_ARRIVALS_LIMIT - 1];
-    if (cmp(product, last) < 0) {
-      top[NEW_ARRIVALS_LIMIT - 1] = product;
-      top.sort(cmp);
-    }
-  }
-  if (top.length < NEW_ARRIVALS_LIMIT) top.sort(cmp);
-  return top;
+  return getTopSortedProducts(list, "new", NEW_ARRIVALS_LIMIT);
+}
+
+/**
+ * Full sort for brand/category PLPs. For huge lists prefer
+ * {@link getTopSortedProducts} when only a capped window is needed.
+ */
+export function sortProducts(list: Product[], sort: ProductSort): Product[] {
+  // Copy before sort so we never mutate the shared `products` catalogue.
+  const copy = list.slice();
+  return copy.sort(compareBySort(sort));
 }
 
 /**

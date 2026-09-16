@@ -2,7 +2,9 @@ import { getProductsByCategory } from "@/data/products";
 import type { Product } from "@/data/product-types";
 import { searchProducts } from "@/lib/product-search";
 import {
+  NEW_ARRIVALS_LIMIT,
   getNewArrivalsProducts,
+  getTopSortedProducts,
   parseProductSort,
   preferGgApparelFirst,
   sortProducts,
@@ -23,16 +25,18 @@ export function getShopProductList(params: ShopListQuery): Product[] {
   const category = params.category ?? "all";
   const sub = params.sub;
   const sort = parseProductSort(params.sort);
-  // Default shop landing (category=all, 최신등록순) must NOT full-sort the
-  // entire catalogue — that OOMs serverless after Saint Laurent-scale imports.
-  const isNewArrivals = Boolean(
-    sort === "new" && !params.q?.trim() && category === "all" && !sub,
-  );
+  const q = params.q?.trim();
+  // Catalogue-wide surfaces must NOT full-sort/copy the multi-brand array —
+  // that OOMs Vercel after large brand imports (YS et al.).
+  const isCatalogueWide = Boolean(category === "all" && !sub && !q);
+  const isNewArrivals = Boolean(isCatalogueWide && sort === "new");
 
   let list = getProductsByCategory(category, sub);
   list = searchProducts(list, params.q);
   if (isNewArrivals) {
     list = getNewArrivalsProducts(list);
+  } else if (isCatalogueWide) {
+    list = getTopSortedProducts(list, sort, NEW_ARRIVALS_LIMIT);
   } else {
     list = sortProducts(list, sort);
   }

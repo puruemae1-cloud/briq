@@ -1,0 +1,27 @@
+import type { Product } from "@/data/product-types";
+
+/**
+ * Lazy Saint Laurent loader — keep the 14MB JSON out of the shop `category=all`
+ * cold path. Static imports of `ys-catalog` parse the whole file into the
+ * serverless heap and tip Vercel over the memory limit.
+ */
+let cached: Product[] | null = null;
+
+export function getYsCatalogProducts(): Product[] {
+  if (!cached) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ys-catalog") as typeof import("./ys-catalog");
+    cached = mod.ysCatalogProducts;
+  }
+  return cached;
+}
+
+/** True when the active shop filter is a Saint Laurent nav node. */
+export function isYsShopSub(sub?: string | null): boolean {
+  if (!sub) return false;
+  return (
+    sub === "saint-laurent" ||
+    sub.startsWith("saint-laurent-") ||
+    sub.startsWith("ys-")
+  );
+}
