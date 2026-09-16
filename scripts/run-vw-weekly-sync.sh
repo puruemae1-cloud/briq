@@ -40,25 +40,34 @@ r = subprocess.run(
 if r.returncode != 0:
     raise SystemExit(r.returncode)
 
-# PDP Korean copy for accessories must not stay English after scrape/build.
+# PDP Korean for ALL shop categories (luxury/RTW, bags, shoes, accessories, watches).
+# Build may leave EN when gtx flakes; Bing retranslate + merge preserve KO on re-scrape.
 # Retry loop: Bing/gtx flakes mid-batch; cache makes each round resume safely.
 last_rc = 1
 for attempt in range(1, 6):
-    print(f"== accessories KO retranslate attempt {attempt}/5 ==", flush=True)
+    print(f"== VW KO retranslate attempt {attempt}/5 (all categories) ==", flush=True)
     r = subprocess.run(
-        [sys.executable, "scripts/retranslate-vw-ko.py", "--category", "accessories"],
+        [sys.executable, "scripts/retranslate-vw-ko.py", "--category", "all"],
         cwd=str(Path.cwd()),
     )
     last_rc = r.returncode
     qa = subprocess.run(
-        [sys.executable, "scripts/check-vw-accessories-korean.py", "--fail", "--max-bad", "0"],
+        [
+            sys.executable,
+            "scripts/check-vw-korean.py",
+            "--category",
+            "all",
+            "--fail",
+            "--max-bad",
+            "0",
+        ],
         cwd=str(Path.cwd()),
     )
     if qa.returncode == 0:
         raise SystemExit(0)
     print(f"WARN attempt {attempt}: retranslate_rc={last_rc} qa_rc={qa.returncode}", flush=True)
 
-print("ERROR accessories KO still English after 5 retranslate attempts", flush=True)
+print("ERROR VW KO still English after 5 retranslate attempts", flush=True)
 raise SystemExit(last_rc or 1)
 PY
 echo "OK VW weekly sync"

@@ -288,15 +288,59 @@ def _merge_vw_product(prev: dict | None, new: dict) -> dict:
         out["images"] = prev["images"]
         out["image"] = prev.get("image") or out.get("image")
     # Korean PDP copy: never keep longer English over a good translation.
+    # Weekly scrape often rebuilds EN prose (gtx flakes / BRIQ_FAST_BUILD); keep
+    # prior KO for description, story, features, and techSpecs together.
     picked = _pick_ko_field(prev.get("descriptionKo"), new.get("descriptionKo"))
     out["descriptionKo"] = picked
     if picked == prev.get("descriptionKo") and not is_good_korean(str(new.get("descriptionKo") or "")):
         out["storySections"] = prev.get("storySections") or out.get("storySections")
         out["featuresKo"] = prev.get("featuresKo") or out.get("featuresKo")
+        out["techSpecs"] = prev.get("techSpecs") or out.get("techSpecs")
+        # Prefer KO title when rebuild left English product names.
+        out["nameKo"] = _pick_ko_field(prev.get("nameKo"), new.get("nameKo"))
     elif is_good_korean(str(new.get("descriptionKo") or "")):
         out["storySections"] = new.get("storySections") or out.get("storySections")
         out["featuresKo"] = new.get("featuresKo") or out.get("featuresKo")
+        out["techSpecs"] = new.get("techSpecs") or out.get("techSpecs")
+    else:
+        # Neither side has good descriptionKo — still prefer any good KO fragments.
+        out["featuresKo"] = _pick_ko_list(prev.get("featuresKo"), new.get("featuresKo"))
+        out["techSpecs"] = _pick_ko_tech_specs(prev.get("techSpecs"), new.get("techSpecs"))
+        out["nameKo"] = _pick_ko_field(prev.get("nameKo"), new.get("nameKo"))
     return out
+
+
+def _pick_ko_list(prev_val, new_val):
+    prev_list = [str(x).strip() for x in (prev_val or []) if str(x).strip()]
+    new_list = [str(x).strip() for x in (new_val or []) if str(x).strip()]
+    prev_ok = bool(prev_list) and all(is_good_korean(x) for x in prev_list)
+    new_ok = bool(new_list) and all(is_good_korean(x) for x in new_list)
+    if new_ok and not prev_ok:
+        return new_val
+    if prev_ok and not new_ok:
+        return prev_val
+    return new_val if new_list else prev_val
+
+
+def _pick_ko_tech_specs(prev_val, new_val):
+    def values(specs) -> list[str]:
+        out = []
+        for spec in specs or []:
+            if isinstance(spec, dict):
+                v = str(spec.get("valueKo") or "").strip()
+                if v:
+                    out.append(v)
+        return out
+
+    prev_vals = values(prev_val)
+    new_vals = values(new_val)
+    prev_ok = bool(prev_vals) and all(is_good_korean(x) for x in prev_vals)
+    new_ok = bool(new_vals) and all(is_good_korean(x) for x in new_vals)
+    if new_ok and not prev_ok:
+        return new_val
+    if prev_ok and not new_ok:
+        return prev_val
+    return new_val if new_vals else prev_val
 
 
 def build_story(description_ko: str, images: list[str], features_ko: list[str]) -> list[dict]:

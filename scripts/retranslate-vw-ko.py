@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Retranslate Vivienne Westwood Korean PDP copy for a shop category.
+"""Retranslate Vivienne Westwood Korean PDP copy for shop categories.
 
 Uses Bing Translator (gtx/MyMemory are often 429 under batch). Unique English
-strings are translated once, then applied across accessories products.
+strings are translated once, then applied across matching products.
 
 Usage:
   python3 scripts/retranslate-vw-ko.py --category accessories
+  python3 scripts/retranslate-vw-ko.py --category luxury,shoes,bags
+  python3 scripts/retranslate-vw-ko.py --category all
 """
 from __future__ import annotations
 
@@ -276,10 +278,27 @@ def translate_text(text: str) -> str:
 bing_translate = translate_text
 
 
-def collect_strings(products: list[dict], category: str) -> set[str]:
+VW_SHOP_CATEGORIES = ("accessories", "bags", "luxury", "shoes", "watches")
+
+
+def parse_categories(raw: str) -> list[str]:
+    s = (raw or "").strip().lower()
+    if not s or s == "all":
+        return list(VW_SHOP_CATEGORIES)
+    cats = [c.strip() for c in s.split(",") if c.strip()]
+    unknown = [c for c in cats if c not in VW_SHOP_CATEGORIES]
+    if unknown:
+        raise SystemExit(
+            f"unknown category {unknown!r}; expected one of {list(VW_SHOP_CATEGORIES)} or all"
+        )
+    return cats
+
+
+def collect_strings(products: list[dict], categories: set[str] | str) -> set[str]:
+    cats = {categories} if isinstance(categories, str) else set(categories)
     out: set[str] = set()
     for p in products:
-        if p.get("category") != category:
+        if p.get("category") not in cats:
             continue
         for val in (p.get("descriptionKo"),):
             if needs_ko(val):
@@ -377,11 +396,18 @@ def apply_translations(p: dict, cache: dict[str, str]) -> bool:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--category", default="accessories")
+    ap.add_argument(
+        "--category",
+        default="accessories",
+        help="One category, comma-separated list, or 'all'",
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--priority-id", default="", help="Translate this product's strings first")
     ap.add_argument("--workers", type=int, default=1)
     args = ap.parse_args()
+
+    categories = parse_categories(args.category)
+    cat_set = set(categories)
 
     products = load_json(CATALOG, [])
     cache = load_json(CACHE, {})
@@ -396,18 +422,23 @@ def main() -> int:
     for en, ko in _LOCAL_KO.items():
         cache.setdefault(en, ko)
 
-    todo = sorted(collect_strings(products, args.category))
+    pending = [t for t in todo if not (t in cache and is_good_korean(cache[t], max_ratio=0.45))]
+    # Short strings first — materials/care land quickly; long PDP bodies after.
+    # Keep --priority-id strings at the front so a target PDP is fixed early.
+    priority_set: set[str] = set()
     if args.priority_id:
         pri = next((p for p in products if p.get("id") == args.priority_id), None)
         if pri:
-            first = sorted(collect_strings([pri], args.category))
-            todo = first + [t for t in todo if t not in first]
-
-    pending = [t for t in todo if not (t in cache and is_good_korean(cache[t], max_ratio=0.45))]
-    # Short strings first — materials/care land quickly; long PDP bodies after.
-    pending.sort(key=lambda s: (len(s), s))
+            priority_set = collect_strings([pri], cat_set)
+    pending.sort(
+        key=lambda s: (0 if s in priority_set else 1, len(s), s)
+    )
     workers = max(1, min(args.workers, 8))
-    print(f"unique={len(todo)} pending={len(pending)} workers={workers}", flush=True)
+    print(
+        f"categories={','.join(categories)} unique={len(todo)} "
+        f"pending={len(pending)} workers={workers}",
+        flush=True,
+    )
 
     done = failed = 0
     completed = 0
@@ -431,7 +462,7 @@ def main() -> int:
         if completed % 100 == 0 or completed == len(pending):
             changed_mid = 0
             for p in products:
-                if p.get("category") != args.category:
+                if p.get("category") not in cat_set:
                     continue
                 if apply_translations(p, cache):
                     changed_mid += 1
@@ -462,7 +493,7 @@ def main() -> int:
 
     changed_n = still_bad = 0
     for p in products:
-        if p.get("category") != args.category:
+        if p.get("category") not in cat_set:
             continue
         if apply_translations(p, cache):
             changed_n += 1
