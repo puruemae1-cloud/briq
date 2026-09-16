@@ -1,4 +1,22 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "ignoreCommand": "bash scripts/vercel-skip-stale.sh"
+  "ignoreCommand": "bash scripts/vercel-skip-stale.sh",
+  "functions": {
+    "src/app/api/products/shop/route.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    },
+    "src/app/api/products/by-ids/route.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    },
+    "src/app/shop/page.tsx": {
+      "memory": 3008,
+      "maxDuration": 60
+    },
+    "src/app/page.tsx": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
 }

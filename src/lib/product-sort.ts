@@ -121,9 +121,28 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
   }
 }
 
-/** Catalogue-wide newest products for the New Arrivals shop surface. */
+/**
+ * Catalogue-wide newest products for the New Arrivals shop surface.
+ * Single-pass top-N (avoids copying+sorting the full multi-brand catalogue,
+ * which OOMs the Vercel shop API after large brand imports).
+ */
 export function getNewArrivalsProducts(list: Product[]): Product[] {
-  return sortProducts(list, "new").slice(0, NEW_ARRIVALS_LIMIT);
+  const cmp = withSoldOutLast(compareProductsByNewest);
+  const top: Product[] = [];
+  for (const product of list) {
+    if (top.length < NEW_ARRIVALS_LIMIT) {
+      top.push(product);
+      if (top.length === NEW_ARRIVALS_LIMIT) top.sort(cmp);
+      continue;
+    }
+    const last = top[NEW_ARRIVALS_LIMIT - 1];
+    if (cmp(product, last) < 0) {
+      top[NEW_ARRIVALS_LIMIT - 1] = product;
+      top.sort(cmp);
+    }
+  }
+  if (top.length < NEW_ARRIVALS_LIMIT) top.sort(cmp);
+  return top;
 }
 
 /**

@@ -23,11 +23,10 @@ export function getShopProductList(params: ShopListQuery): Product[] {
   const category = params.category ?? "all";
   const sub = params.sub;
   const sort = parseProductSort(params.sort);
+  // Default shop landing (category=all, 최신등록순) must NOT full-sort the
+  // entire catalogue — that OOMs serverless after Saint Laurent-scale imports.
   const isNewArrivals = Boolean(
-    params.sort === "new" &&
-      !params.q?.trim() &&
-      category === "all" &&
-      !sub,
+    sort === "new" && !params.q?.trim() && category === "all" && !sub,
   );
 
   let list = getProductsByCategory(category, sub);
