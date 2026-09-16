@@ -5056,8 +5056,6 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-
-      {
         id: "saint-laurent",
         labelKo: "생로랑",
         href: "/shop?category=luxury&sub=saint-laurent",
@@ -5090,7 +5088,7 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-
+      {
         id: "celine",
         labelKo: "셀린",
         href: "/shop?category=luxury&sub=celine",
@@ -6074,8 +6072,6 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-
-      {
         id: "saint-laurent-bags",
         labelKo: "생로랑",
         href: "/shop?category=bags&sub=saint-laurent-bags",
@@ -6105,7 +6101,7 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-
+      {
         id: "celine-bags",
         labelKo: "셀린",
         href: "/shop?category=bags&sub=celine-bags",
@@ -6764,8 +6760,6 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-
-      {
         id: "saint-laurent-shoes",
         labelKo: "생로랑",
         href: "/shop?category=shoes&sub=saint-laurent-shoes",
@@ -6804,7 +6798,7 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-
+      {
         id: "celine-shoes",
         labelKo: "셀린",
         href: "/shop?category=shoes&sub=celine-shoes",
@@ -7881,8 +7875,6 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-
-      {
         id: "saint-laurent-accessories",
         labelKo: "생로랑",
         href: "/shop?category=accessories&sub=saint-laurent-accessories",
@@ -7930,7 +7922,7 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-
+      {
         id: "celine-accessories",
         labelKo: "셀린",
         href: "/shop?category=accessories&sub=celine-accessories",
