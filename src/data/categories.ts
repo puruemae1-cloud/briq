@@ -807,6 +807,16 @@ export type SubcategoryId =
   | "ys-men-coats-trench"
   | "ys-men-leather"
   | "ys-women-rtw-all"
+  | "ys-women-shirts-tops"
+  | "ys-women-jersey"
+  | "ys-women-knitwear"
+  | "ys-women-dresses-skirts"
+  | "ys-women-jackets-pants"
+  | "ys-women-denim"
+  | "ys-women-outerwear"
+  | "ys-women-coats"
+  | "ys-women-leather-outerwear"
+  | "ys-women-lingerie-swimwear"
   | "saint-laurent-bags"
   | "ys-men-bags"
   | "ys-women-bags"
@@ -1518,7 +1528,19 @@ export const YS_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "ys-men-rtw-all","ys-men-shirts","ys-men-jersey","ys-men-knitwear","ys-men-denim",
   "ys-men-jackets-pants","ys-men-outerwear","ys-men-coats-trench","ys-men-leather",
 ];
-export const YS_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = ["ys-women-rtw-all"];
+export const YS_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "ys-women-rtw-all",
+  "ys-women-shirts-tops",
+  "ys-women-jersey",
+  "ys-women-knitwear",
+  "ys-women-dresses-skirts",
+  "ys-women-jackets-pants",
+  "ys-women-denim",
+  "ys-women-outerwear",
+  "ys-women-coats",
+  "ys-women-leather-outerwear",
+  "ys-women-lingerie-swimwear",
+];
 export const YS_MEN_BAGS_LEAF_IDS: SubcategoryId[] = [
   "ys-men-bags-all","ys-men-backpacks","ys-men-briefcases","ys-men-messengers","ys-men-totes","ys-men-travel-bags",
 ];
@@ -3238,6 +3260,16 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ys-men-coats-trench": ["ys-men-coats-trench"],
   "ys-men-leather": ["ys-men-leather"],
   "ys-women-rtw-all": ["ys-women-rtw-all"],
+  "ys-women-shirts-tops": ["ys-women-shirts-tops"],
+  "ys-women-jersey": ["ys-women-jersey"],
+  "ys-women-knitwear": ["ys-women-knitwear"],
+  "ys-women-dresses-skirts": ["ys-women-dresses-skirts"],
+  "ys-women-jackets-pants": ["ys-women-jackets-pants"],
+  "ys-women-denim": ["ys-women-denim"],
+  "ys-women-outerwear": ["ys-women-outerwear"],
+  "ys-women-coats": ["ys-women-coats"],
+  "ys-women-leather-outerwear": ["ys-women-leather-outerwear"],
+  "ys-women-lingerie-swimwear": ["ys-women-lingerie-swimwear"],
   "ys-men-bags-all": ["ys-men-bags-all"],
   "ys-men-backpacks": ["ys-men-backpacks"],
   "ys-men-briefcases": ["ys-men-briefcases"],
@@ -5067,6 +5099,16 @@ export const navCategories: NavCategory[] = [
             navLeaf: true,
             children: [
               { id: "ys-women-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=ys-women-rtw-all" },
+              { id: "ys-women-shirts-tops", labelKo: "셔츠 & 탑", href: "/shop?category=luxury&sub=ys-women-shirts-tops" },
+              { id: "ys-women-jersey", labelKo: "저지", href: "/shop?category=luxury&sub=ys-women-jersey" },
+              { id: "ys-women-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=ys-women-knitwear" },
+              { id: "ys-women-dresses-skirts", labelKo: "드레스 & 스커트", href: "/shop?category=luxury&sub=ys-women-dresses-skirts" },
+              { id: "ys-women-jackets-pants", labelKo: "재킷 & 팬츠", href: "/shop?category=luxury&sub=ys-women-jackets-pants" },
+              { id: "ys-women-denim", labelKo: "데님", href: "/shop?category=luxury&sub=ys-women-denim" },
+              { id: "ys-women-outerwear", labelKo: "아우터웨어", href: "/shop?category=luxury&sub=ys-women-outerwear" },
+              { id: "ys-women-coats", labelKo: "코트", href: "/shop?category=luxury&sub=ys-women-coats" },
+              { id: "ys-women-leather-outerwear", labelKo: "레더 & 아우터", href: "/shop?category=luxury&sub=ys-women-leather-outerwear" },
+              { id: "ys-women-lingerie-swimwear", labelKo: "란제리 & 스윔웨어", href: "/shop?category=luxury&sub=ys-women-lingerie-swimwear" },
             ],
           },
           {

@@ -85,9 +85,31 @@ YS_MEN_ACC_LEAVES = [
     _leaf("ys-men-sunglasses", "Sunglasses", "선글라스", "shop-men/accessories/sunglasses", YS_MEN_ACC),
 ]
 
-# --- Women RTW ---
+# --- Women RTW (official GB PLP leaves from all-ready-to-wear page) ---
 YS_WOMEN_RTW_LEAVES = [
     _leaf("ys-women-rtw-all", "View All", "전체", "shop-women/ready-to-wear/all-ready-to-wear", YS_WOMEN),
+    _leaf("ys-women-shirts-tops", "Shirts and Tops", "셔츠 & 탑", "shop-women/ready-to-wear/shirts-and-tops", YS_WOMEN),
+    _leaf("ys-women-jersey", "Jersey", "저지", "shop-women/ready-to-wear/jersey", YS_WOMEN),
+    _leaf("ys-women-knitwear", "Knitwear", "니트웨어", "shop-women/ready-to-wear/knitwear", YS_WOMEN),
+    _leaf("ys-women-dresses-skirts", "Dresses and Skirts", "드레스 & 스커트", "shop-women/ready-to-wear/dresses-and-skirts", YS_WOMEN),
+    _leaf("ys-women-jackets-pants", "Jackets and Pants", "재킷 & 팬츠", "shop-women/ready-to-wear/jackets-and-pants", YS_WOMEN),
+    _leaf("ys-women-denim", "Denim", "데님", "shop-women/ready-to-wear/denim-women", YS_WOMEN),
+    _leaf("ys-women-outerwear", "Outerwear", "아우터웨어", "shop-women/ready-to-wear/outerwear", YS_WOMEN),
+    _leaf("ys-women-coats", "Coats", "코트", "shop-women/ready-to-wear/coats", YS_WOMEN),
+    _leaf(
+        "ys-women-leather-outerwear",
+        "Leather and Outerwear",
+        "레더 & 아우터",
+        "shop-women/ready-to-wear/leather-and-outerwear",
+        YS_WOMEN,
+    ),
+    _leaf(
+        "ys-women-lingerie-swimwear",
+        "Lingerie and Swimwear",
+        "란제리 & 스윔웨어",
+        "shop-women/ready-to-wear/lingerie-and-swimwear",
+        YS_WOMEN,
+    ),
 ]
 
 # --- Women shoes ---

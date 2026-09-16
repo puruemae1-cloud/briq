@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-09-16T03:09:25.183928+00:00",
+  "scrapedAt": "2026-09-16T22:26:41.472217+00:00",
   "brand": "Saint Laurent",
   "hub": "women-rtw",
   "category": "luxury",
   "family": "ys-women-rtw",
-  "officialNbAlgoliaHits": 252,
-  "officialUnionCount": 252,
+  "officialNbAlgoliaHits": 258,
+  "officialUnionCount": 278,
   "leaves": [
     {
       "id": "ys-women-rtw-all",
@@ -17,6 +17,126 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all"
+      ]
+    },
+    {
+      "id": "ys-women-shirts-tops",
+      "label": "Shirts and Tops",
+      "labelKo": "셔츠 & 탑",
+      "slug": "shop-women/ready-to-wear/shirts-and-tops",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/shirts-and-tops",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-shirts-tops"
+      ]
+    },
+    {
+      "id": "ys-women-jersey",
+      "label": "Jersey",
+      "labelKo": "저지",
+      "slug": "shop-women/ready-to-wear/jersey",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jersey"
+      ]
+    },
+    {
+      "id": "ys-women-knitwear",
+      "label": "Knitwear",
+      "labelKo": "니트웨어",
+      "slug": "shop-women/ready-to-wear/knitwear",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/knitwear",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-knitwear"
+      ]
+    },
+    {
+      "id": "ys-women-dresses-skirts",
+      "label": "Dresses and Skirts",
+      "labelKo": "드레스 & 스커트",
+      "slug": "shop-women/ready-to-wear/dresses-and-skirts",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/dresses-and-skirts",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-dresses-skirts"
+      ]
+    },
+    {
+      "id": "ys-women-jackets-pants",
+      "label": "Jackets and Pants",
+      "labelKo": "재킷 & 팬츠",
+      "slug": "shop-women/ready-to-wear/jackets-and-pants",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/jackets-and-pants",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ]
+    },
+    {
+      "id": "ys-women-denim",
+      "label": "Denim",
+      "labelKo": "데님",
+      "slug": "shop-women/ready-to-wear/denim-women",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/denim-women",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-denim"
+      ]
+    },
+    {
+      "id": "ys-women-outerwear",
+      "label": "Outerwear",
+      "labelKo": "아우터웨어",
+      "slug": "shop-women/ready-to-wear/outerwear",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/outerwear",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-outerwear"
+      ]
+    },
+    {
+      "id": "ys-women-coats",
+      "label": "Coats",
+      "labelKo": "코트",
+      "slug": "shop-women/ready-to-wear/coats",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/coats",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-coats"
+      ]
+    },
+    {
+      "id": "ys-women-leather-outerwear",
+      "label": "Leather and Outerwear",
+      "labelKo": "레더 & 아우터",
+      "slug": "shop-women/ready-to-wear/leather-and-outerwear",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/leather-and-outerwear",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-leather-outerwear"
+      ]
+    },
+    {
+      "id": "ys-women-lingerie-swimwear",
+      "label": "Lingerie and Swimwear",
+      "labelKo": "란제리 & 스윔웨어",
+      "slug": "shop-women/ready-to-wear/lingerie-and-swimwear",
+      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/lingerie-and-swimwear",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-lingerie-swimwear"
       ]
     }
   ],
@@ -34,9 +154,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-outerwear",
       "gbpPrice": 2410.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
@@ -136,9 +257,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-outerwear",
       "gbpPrice": 2410.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
@@ -235,9 +357,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1240.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100% COTTONFP 100% COTTON",
@@ -320,9 +443,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-outerwear",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERFP 100% COTTON",
@@ -412,9 +536,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-outerwear",
       "gbpPrice": 2305.0,
       "inStock": true,
       "compositions": "T 100% COTTON DJ 100% COWHIDEF  62% VISCOSE F  38% COTTON",
@@ -490,9 +615,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-outerwear",
       "gbpPrice": 2130.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDE",
@@ -577,9 +703,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5230.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  60% CUPRO F  40% COTTON FP 100% COTTON",
@@ -676,9 +803,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5230.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  60% CUPRO F  40% COTTON FP 100% COTTON",
@@ -773,9 +901,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5350.0,
       "inStock": true,
       "compositions": "L 100% CROSTA DI VITELLOF  53% COTTON F  47% VISCOSE FP 100% COTTON",
@@ -866,9 +995,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5100.0,
       "inStock": true,
       "compositions": "L 100% COWHIDEF  62% VISCOSE F  38% COTTON FP 100% COTTON",
@@ -967,9 +1097,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5100.0,
       "inStock": true,
       "compositions": "L 100% COWHIDEF  62% VISCOSE F  38% COTTON FP 100% COTTON",
@@ -1066,9 +1197,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5100.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -1153,9 +1285,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5905.0,
       "inStock": true,
       "compositions": "L 100 CO 100 AL 100 BU 100% CROSTA DI VITELLO% LAMB FUR% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1239,9 +1372,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5250.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK",
@@ -1319,9 +1453,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 17500.0,
       "inStock": true,
       "compositions": "H 100 DT 100% LAMB FUR% LAMB LEATHERF  53% COTTON F  47% VISCOSE FP  53% COTTON FP  47% VISCOSE",
@@ -1407,9 +1542,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 6600.0,
       "inStock": true,
       "compositions": "H 100 L 100% LAMB FUR% LAMB LEATHERF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -1491,9 +1627,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5230.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  62% VISCOSE F  38% COTTON FP 100% COTTON",
@@ -1567,9 +1704,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 5055.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1656,9 +1794,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 6000.0,
       "inStock": true,
       "compositions": "L 100 AL 100 BU 100% LAMB LEATHER% LAMB LEATHER% BUBALUS BUBALIS O:INF  53% COTTON F  47% VISCOSE FP 100% COTTON",
@@ -1747,9 +1886,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 6000.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1829,9 +1969,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 6265.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1916,9 +2057,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1987,9 +2129,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "L 100 DT 100 BU 100% LAMB LEATHER% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -2072,9 +2215,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE",
@@ -2156,9 +2300,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  78% WOOL T  19% MOHAIR T   3% POLYAMIDEF  62% VISCOSE F  38% COTTON FP  97% COTTON FP   3% ELASTAN",
@@ -2239,9 +2384,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3350.0,
       "inStock": true,
       "compositions": "T 100% WOOL BU 100% BUBALUS BUBALIS O:INF 100% SILK",
@@ -2412,9 +2558,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3815.0,
       "inStock": true,
       "compositions": "T  78% WOOL T  19% MOHAIR T   3% POLYAMIDEF 100% SILK",
@@ -2503,9 +2650,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3815.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  13% POLYAMIDE T   1% ELASTANF 100% SILK",
@@ -2594,9 +2742,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3815.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  13% POLYAMIDE T   1% ELASTANF 100% SILK",
@@ -2685,9 +2834,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T  74% WOOL T  26% POLYAMIDEF 100% SILK",
@@ -2770,9 +2920,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK",
@@ -2855,9 +3006,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T  76% WOOL T  21% POLYAMIDE T   3% SILKF 100% SILK",
@@ -2940,9 +3092,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 10500.0,
       "inStock": true,
       "compositions": "H 100 T  98% COTTON T   2% ELASTAN% LAMB FURF 100% VISCOSE FP 100% COTTON",
@@ -3081,9 +3234,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 11000.0,
       "inStock": true,
       "compositions": "E0 100 H 100 IN 100% COTTON% LAMB FUR% WOOL",
@@ -3160,9 +3314,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3248,9 +3403,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3545.0,
       "inStock": true,
       "compositions": "CP 100% POLYAMIDEF 100% POLYESTER FP 100% POLYAMIDE",
@@ -3330,9 +3486,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3270.0,
       "inStock": true,
       "compositions": "T 100% WOOL CI 100 DJ 100% WOOL% LAMB LEATHERF 100% VISCOSE FM 100% VISCOSE",
@@ -3410,9 +3567,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 6115.0,
       "inStock": true,
       "compositions": "L 100 BU 100% COWHIDE% BUBALUS BUBALIS O:INF  60% CUPRO F  40% COTTON FP 100% COTTON",
@@ -3489,9 +3647,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE BU 100% BUBALUS BUBALIS O:IN",
@@ -3573,9 +3732,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "gbpPrice": 3370.0,
       "inStock": true,
       "compositions": "T  89% COTTON T  11% SILK DJ 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK",
@@ -3659,9 +3819,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3741,9 +3902,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3829,9 +3991,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3915,9 +4078,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -3985,9 +4149,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -4064,9 +4229,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -4140,9 +4306,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T  67% VIRGIN WOOL T  32% VISCOSE T   1% LUREX-METALLIC",
@@ -4230,9 +4397,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -4314,9 +4482,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  71% WOOL T  29% VISCOSEF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -4479,9 +4648,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2840.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK",
@@ -4558,9 +4728,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -4644,9 +4815,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -4794,9 +4966,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -4875,9 +5048,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2570.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK",
@@ -4961,9 +5135,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% CASHMEREF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -5105,9 +5280,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 860.0,
       "inStock": true,
       "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -5185,9 +5361,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1730.0,
       "inStock": true,
       "compositions": "T 100% CASHMEREFP  97% COTTON FP   3% ELASTAN",
@@ -5257,9 +5434,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T  79% WOOL T  14% POLYAMIDE T   7% SILKFP  97% COTTON FP   3% ELASTAN",
@@ -5432,9 +5610,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2750.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -5520,9 +5699,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -5785,9 +5965,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -5866,9 +6047,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -5954,9 +6136,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  71% WOOL T  29% VISCOSEF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -6028,9 +6211,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 2365.0,
       "inStock": true,
       "compositions": "T 100% CASHMEREFP  97% COTTON FP   3% ELASTAN",
@@ -6106,9 +6290,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1635.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE T1 100% SILKF 100% SILK",
@@ -6259,9 +6444,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jackets-pants",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T  68% VISCOSE T  32% CUPRO C 100% SILKFP 100% SILK",
@@ -6340,9 +6526,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7000.0,
       "inStock": true,
       "compositions": "T  69% COTTON T  20% VISCOSE T  11% POLYAMIDE",
@@ -6436,9 +6623,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7000.0,
       "inStock": true,
       "compositions": "T  69% COTTON T  20% VISCOSE T  11% POLYAMIDE",
@@ -6532,9 +6720,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7000.0,
       "inStock": true,
       "compositions": "T  69% COTTON T  20% VISCOSE T  11% POLYAMIDE",
@@ -6628,9 +6817,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  72% COTTON T  28% POLYAMIDE PZ  72 PZ  28% COTTON% POLYAMIDE",
@@ -6710,9 +6901,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  72% COTTON T  28% POLYAMIDE P1  72 P1  28% COTTON% POLYAMIDE",
@@ -6800,9 +6993,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  46% COTTON T  42% VISCOSE T  12% POLYAMIDE PZ  86 PZ  14% VISCOSE% POLYAMIDE",
@@ -6895,9 +7090,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  72% COTTON T  28% POLYAMIDE P1  72 P1  28% COTTON% POLYAMIDE",
@@ -6983,9 +7179,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  46% COTTON T  42% VISCOSE T  12% POLYAMIDE PZ  86 PZ  14% VISCOSE% POLYAMIDE",
@@ -7060,9 +7258,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  46% COTTON T  42% VISCOSE T  12% POLYAMIDE PZ  86 PZ  14% VISCOSE% POLYAMIDE",
@@ -7155,9 +7354,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 8600.0,
       "inStock": true,
       "compositions": "T  50% SILICONE T  34% COTTON T  16% POLYAMIDE",
@@ -7238,9 +7439,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 7800.0,
       "inStock": true,
       "compositions": "T  83% COTTON T  17% POLYAMIDE DV 100 PZ  80 PZ  20% POLYAMIDE% VISCOSE% POLYAMIDE",
@@ -7322,9 +7525,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 7800.0,
       "inStock": true,
       "compositions": "T  80% COTTON T  20% POLYAMIDE DT 100 PZ  80 PZ  20% POLYAMIDE% VISCOSE% POLYAMIDE",
@@ -7896,9 +8101,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2365.0,
       "inStock": true,
       "compositions": "T  42% POLYAMIDE T  35% POLYESTER T  15% METALIC POLYESTER T   8% ELASTANF  88% CUPRO F  12% ELASTAN",
@@ -7974,9 +8180,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -8050,9 +8257,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  42% POLYAMIDE T  35% POLYESTER T  15% METAL FIBRE T   8% ELASTANF  88% CUPRO F  12% ELASTAN",
@@ -8129,9 +8337,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T  51% VISCOSE T  37% POLYAMIDE T  12% METALIC POLYESTERF 100% SILK",
@@ -8205,9 +8414,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T  84% COTTON T  16% METAL FIBRE T1 100 PZ  55 PZ  30 PZ  15% POLYAMIDE% VISCOSE% POLYAMIDE% METAL FIBREF 100% SILK",
@@ -8290,9 +8500,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T  84% COTTON T  16% METAL FIBRE T1 100 PZ  55 PZ  30 PZ  15% POLYAMIDE% VISCOSE% POLYAMIDE% METAL FIBREF 100% SILK",
@@ -8458,9 +8669,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4450.0,
       "inStock": true,
       "compositions": "T 100% COTTON CI 100% COTTONF  97% COTTON F   3% ELASTAN",
@@ -8622,9 +8834,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T  48% VISCOSE T  44% ACETATE T   5% Poliammide Metalliz. T   3% POLYAMIDE T1 100% SILK",
@@ -8691,9 +8904,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% COTTONF 100% SILK",
@@ -8771,9 +8985,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1730.0,
       "inStock": true,
       "compositions": "T  48% VISCOSE T  44% ACETATE T   5% METALIC POLYESTER T   3% POLYAMIDEF 100% SILK",
@@ -8850,9 +9065,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  68% COTTON T  32% POLYAMIDE PZ  68 PZ  32% COTTON% POLYAMIDEF 100% SILK",
@@ -8927,9 +9143,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2365.0,
       "inStock": true,
       "compositions": "T  51% VISCOSE T  37% POLYAMIDE T  12% METALIC POLYESTERF 100% SILK",
@@ -9005,9 +9222,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1730.0,
       "inStock": true,
       "compositions": "T  60% WOOL T  26% SILK T  14% METALIC POLYESTERF 100% SILK",
@@ -9084,9 +9302,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5800.0,
       "inStock": true,
       "compositions": "T 100% SILK T1 100 PZ  63 PZ  37% SILK% POLYAMIDE% VISCOSEF 100% SILK",
@@ -9159,9 +9378,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5800.0,
       "inStock": true,
       "compositions": "T  77% POLYAMIDE T  23% Metal fiber T1 100% SILKF 100% SILK",
@@ -9239,9 +9459,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5800.0,
       "inStock": true,
       "compositions": "T  51% VISCOSE T  37% POLYAMIDE T  12% METALIC POLYESTER T1 100% SILKF 100% SILK",
@@ -9317,9 +9538,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2020.0,
       "inStock": true,
       "compositions": "T  94% WOOL T   4% POLYAMIDE T   2% ELASTANF 100% WOOL",
@@ -9394,9 +9616,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  77% POLYAMIDE T  23% METAL FIBRE T1 100 PZ  81 PZ  19% SILK% POLYAMIDE% Poliammide Metalliz.",
@@ -9467,9 +9690,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T  68% POLYAMIDE T  32% VISCOSE T1  57 T1  43 T2 100 PZ  35 PZ  33 PZ  32 P1 100 P2  55 P2  45% POLYAMIDE% VISCOSE% POLYAMIDE% COTTON% POLYESTER% POLY",
@@ -9544,9 +9768,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERFP 100% SILK",
@@ -9617,9 +9842,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1635.0,
       "inStock": true,
       "compositions": "T 100% SILK PZ  79 PZ  21% POLYAMIDE% VISCOSE",
@@ -9695,9 +9921,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2270.0,
       "inStock": true,
       "compositions": "T  68% VISCOSE T  32% CUPRO T1 100% SILKF 100% SILK",
@@ -9775,9 +10002,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 2545.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDEF 100% COTTON",
@@ -9852,9 +10081,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T  92% VISCOSE T   8% POLYESTER",
@@ -9930,9 +10161,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T  84% VISCOSE T  16% METALIC POLYESTER CO 100% POLYESTERF 100% SILK",
@@ -10013,9 +10245,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T  84% POLYESTER T  16% POLYAM./POLYA.F.FibeF 100% COTTON",
@@ -10092,9 +10326,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDEF 100% COTTON",
@@ -10169,9 +10405,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -10248,9 +10486,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 2485.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -10316,9 +10556,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -10397,9 +10639,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1685.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -10473,9 +10717,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3265.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -10553,9 +10798,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T  79% POLYAMIDE T  21% ELASTANF  88% POLYAMIDE F  12% ELASTAN",
@@ -10633,9 +10880,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3265.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -10717,9 +10965,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDEF  74% POLYAMIDE F  26% ELASTAN",
@@ -10793,9 +11043,12 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-knitwear",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1450.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -10874,9 +11127,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 2490.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDEF  74% POLYAMIDE F  26% ELASTAN",
@@ -11166,9 +11421,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1730.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -11250,9 +11507,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1730.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -11335,9 +11594,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN DT  94 DT   6% SILK% ELASTAN",
@@ -11413,9 +11673,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3865.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -11493,9 +11754,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% VISCOSEF 100% SILK",
@@ -11572,9 +11834,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3545.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -11651,9 +11914,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4290.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK",
@@ -11728,9 +11992,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 4290.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK",
@@ -11805,9 +12070,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3460.0,
       "inStock": true,
       "compositions": "T 100% SILK T1 100% SILK",
@@ -12052,9 +12318,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 4540.0,
       "inStock": true,
       "compositions": "H 100 DT 100% LAMB FUR% LAMB LEATHERFP 100% SILK",
@@ -12207,9 +12474,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 1950.0,
       "inStock": true,
       "compositions": "T 100% VISCOSEFP 100% SILK",
@@ -12282,9 +12550,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-dresses-skirts",
+        "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-dresses-skirts",
       "gbpPrice": 3605.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF 100% SILK",
@@ -12362,9 +12632,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T 100% SILK T1 100 PZ  37 PZ  33 PZ  30% POLYAMIDE% COTTON% POLYAMIDE% VISCOSE",
@@ -12456,9 +12727,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T 100% SILK T1 100 PZ  37 PZ  33 PZ  30% POLYAMIDE% COTTON% POLYAMIDE% VISCOSE",
@@ -12550,9 +12822,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
       "inStock": true,
       "compositions": "T 100% SILK T1 100 PZ  37 PZ  33 PZ  30% POLYAMIDE% COTTON% POLYAMIDE% VISCOSE",
@@ -12802,9 +13075,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% SILK PZ  90 PZ  10% COTTON% POLYESTER",
@@ -12950,9 +13224,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 2090.0,
       "inStock": true,
       "compositions": "T  77% POLYAMIDE T  23% METAL FIBRE T1 100 PZ  45 PZ  37 PZ  18 P1  55 P1  30 P1  15% POLYAMIDE% POLYAMIDE% VISCOSE% METAL FIBRE% VISCOSE% POLYAMIDE%",
@@ -13022,9 +13297,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1910.0,
       "inStock": true,
       "compositions": "T  68% POLYAMIDE T  32% VISCOSE T1  57 T1  43 T2 100 PZ  59 PZ  41 P1  55 P1  45 P2 100 P3  63 P3  3% POLYAMIDE% VISCOSE% POLYAMIDE% COTTON% POLYAMIDE",
@@ -13098,9 +13374,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 2090.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -13180,9 +13457,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1910.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -13262,9 +13540,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 2090.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -13344,9 +13623,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1455.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -13422,9 +13702,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -13586,9 +13867,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 860.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -13663,9 +13945,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 700.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -13748,9 +14031,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-shirts-tops"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-shirts-tops",
       "gbpPrice": 820.0,
       "inStock": true,
       "compositions": "T1 100% COTTON",
@@ -13833,9 +14117,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -13936,9 +14221,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -14141,9 +14427,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP  65% POLYESTER FP  35% COTTON",
@@ -14251,9 +14538,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -14360,9 +14648,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -14464,9 +14753,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP  65% POLYESTER FP  35% COTTON",
@@ -14567,9 +14857,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -14667,9 +14958,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -14764,9 +15056,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP  65% POLYESTER FP  35% COTTON",
@@ -14867,9 +15160,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP  65% POLYESTER FP  35% COTTON",
@@ -14967,9 +15261,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 810.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -15068,9 +15363,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 2180.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -15145,9 +15441,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15227,9 +15524,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP  65% POLYESTER FP  35% COTTON",
@@ -15330,9 +15628,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1700.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -15419,9 +15718,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1700.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -15502,9 +15802,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T  66% VISCOSE T  34% METALIC POLYESTER DT 100% LAMB FUR",
@@ -15579,9 +15880,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK DT  88 DT  12% POLYAMIDE% ELASTAN",
@@ -15663,9 +15965,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK DT  88 DT  12% POLYAMIDE% ELASTAN",
@@ -15747,9 +16050,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE DT 100% LAMB FUR",
@@ -15821,9 +16125,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -15918,9 +16223,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -16015,9 +16321,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -16098,91 +16405,6 @@
       ]
     },
     {
-      "id": "654478Y75AI1000",
-      "sku": "654478Y75AI1000",
-      "masterId": "654478Y75AI",
-      "name": "Ribbed Sweater Cassandre in Silk",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/ribbed-sweater-cassandre-in-silk-654478Y75AI1000.html",
-      "path": "pr/ribbed-sweater-cassandre-in-silk-654478Y75AI1000.html",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all"
-      ],
-      "leafId": "ys-women-rtw-all",
-      "gbpPrice": 1135.0,
-      "inStock": true,
-      "compositions": "T 100% SILK",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/29c623ad3820e3eb/eCom-654478Y75AI1000_A.jpg?v=5",
-        "https://saint-laurent.dam.kering.com/asset/11cd0ab0-9eed-4329-b6fa-3ddfe4d8f7ed/Original-Ecom/654478Y75AI1000_Y.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/m/aa131a8d80efd8e/eCom-654478Y75AI1000_B.jpg?v=5",
-        "https://saint-laurent.dam.kering.com/m/c6a323855eac687/eCom-654478Y75AI1000_H.jpg?v=5"
-      ],
-      "description": "Long-sleeve rib-knit sweater made with organic silk featuring a mock neck decorated with the metal Cassandre.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\">ORGANIC SILK</u></a>",
-        "mock neck",
-        "metal CASSANDRE AT THE NECK"
-      ],
-      "productCare": "Hand Wash. Protect Accessories Before Cleaning. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Steam Iron Only . Iron Without Pressing. Dry Cleaning In Tetrachloroethene Or Hydrocarbons - Mild Process.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_rtw",
-        "microCategory": "ysl_micro_women_knitwear",
-        "superMicroCategory": "ysl_super_micro_women_knitwear"
-      },
-      "sizes": [
-        {
-          "id": "809925803",
-          "value": "XS",
-          "displayValue": "YSL XS / GB XS",
-          "inStock": true
-        },
-        {
-          "id": "809925804",
-          "value": "S",
-          "displayValue": "YSL S / GB S",
-          "inStock": true
-        },
-        {
-          "id": "809925805",
-          "value": "M",
-          "displayValue": "YSL M / GB M",
-          "inStock": true
-        },
-        {
-          "id": "809926425",
-          "value": "L",
-          "displayValue": "YSL L / GB L",
-          "inStock": true
-        },
-        {
-          "id": "809926426",
-          "value": "XL",
-          "displayValue": "YSL XL / GB XL",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "654478Y75AI1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/ribbed-sweater-cassandre-in-silk-654478Y75AI1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/654478y75ai1000/1.jpg",
-        "/products/ys-pdp/654478y75ai1000/2.jpg",
-        "/products/ys-pdp/654478y75ai1000/3.jpg",
-        "/products/ys-pdp/654478y75ai1000/4.jpg"
-      ]
-    },
-    {
       "id": "A009RQY76PE2020",
       "sku": "A009RQY76PE2020",
       "masterId": "A009RQY76PE",
@@ -16195,9 +16417,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16283,9 +16506,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK DT  88 DT  12 DV 100% POLYAMIDE% ELASTAN% POLYAMIDE",
@@ -16361,9 +16585,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1000.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16446,9 +16671,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE",
@@ -16603,9 +16829,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -16689,9 +16916,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -16771,9 +16999,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE",
@@ -16863,9 +17092,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK",
@@ -16940,9 +17170,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T  80% VISCOSE T  18% POLYAMIDE T   2% ELASTAN",
@@ -17018,9 +17249,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE",
@@ -17110,9 +17342,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 885.0,
       "inStock": true,
       "compositions": "T  82% VISCOSE T  18% POLYAMIDE",
@@ -17199,9 +17432,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 860.0,
       "inStock": true,
       "compositions": "T  65% VISCOSE T  32% POLYAMIDE T   3% ELASTAN R  65% VISCOSE R  32% POLYAMIDE R   3% ELASTAN",
@@ -17289,9 +17524,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear",
+        "ys-women-jackets-pants"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 860.0,
       "inStock": true,
       "compositions": "T  65% VISCOSE T  32% POLYAMIDE T   3% ELASTAN R  65% VISCOSE R  32% POLYAMIDE R   3% ELASTAN",
@@ -17373,9 +17610,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1955.0,
       "inStock": true,
       "compositions": "T  84% POLYESTER T  16% POLYAM./POLYA.F.FibeF 100% COTTON",
@@ -17450,9 +17688,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -17537,9 +17776,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -17626,9 +17866,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T  88% CUPRO T  12% ELASTAN",
@@ -17711,9 +17952,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T  88% CUPRO T  12% ELASTAN",
@@ -17796,9 +18038,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 680.0,
       "inStock": true,
       "compositions": "T  87% CUPRO T  13% ELASTAN",
@@ -17879,9 +18122,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -17965,9 +18209,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -18057,9 +18302,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 820.0,
       "inStock": true,
       "compositions": "T 100% WOOL R 100% ACETATE",
@@ -18134,9 +18380,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% SILK R  94% SILK R   6% ELASTAN DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -18211,9 +18458,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -18293,9 +18541,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -18376,9 +18625,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 755.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
@@ -18488,9 +18738,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -18639,9 +18890,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% SILK R  94% SILK R   6% ELASTAN D 100 DT 100% COTTON% SILK",
@@ -18715,9 +18967,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 755.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
@@ -18825,9 +19078,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 755.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
@@ -18931,9 +19185,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -19003,9 +19258,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 595.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19079,9 +19335,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 500.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19154,9 +19411,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 880.0,
       "inStock": true,
       "compositions": "T 100% SILK R  94% SILK R   6% ELASTAN DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -19225,9 +19483,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% SILK R  94% SILK R   6% ELASTAN",
@@ -19379,9 +19638,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 595.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19453,9 +19713,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 490.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19537,9 +19798,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -19617,9 +19879,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 540.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19810,9 +20073,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 540.0,
       "inStock": true,
       "compositions": "T 100% WOOL RJ 100% POLYESTER",
@@ -19976,9 +20240,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 595.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -20059,9 +20324,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 540.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -20330,9 +20596,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 540.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -20426,9 +20693,11 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -20502,9 +20771,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 4725.0,
       "inStock": true,
       "compositions": "T  64% COTTON T  36% POLYAMIDE T1 100 PZ  37 PZ  33 PZ  30% SILK% COTTON% POLYAMIDE% VISCOSE",
@@ -20576,9 +20846,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 4450.0,
       "inStock": true,
       "compositions": "T  50% SILICONE T  28% COTTON T  22% POLYAMIDE",
@@ -20646,9 +20917,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1000.0,
       "inStock": true,
       "compositions": "T 100% COTTON R  97% COTTON R   3% ELASTAN RJ 100% POLYESTER",
@@ -20806,9 +21078,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1245.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -20950,87 +21223,6 @@
       ]
     },
     {
-      "id": "843031Y38AZ1365",
-      "sku": "843031Y38AZ1365",
-      "masterId": "843031Y38AZ",
-      "name": "STRAPLESS SWIMSUIT",
-      "color": "Green",
-      "microColor": "KHAKI",
-      "colorCode": "1365",
-      "url": "https://www.ysl.com/en-gb/pr/strapless-swimsuit-843031Y38AZ1365.html",
-      "path": "pr/strapless-swimsuit-843031Y38AZ1365.html",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all"
-      ],
-      "leafId": "ys-women-rtw-all",
-      "gbpPrice": 625.0,
-      "inStock": true,
-      "compositions": "T  73% POLYAMIDE T  27% ELASTAN",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/93fed753-5231-438b-a095-913dd7a1891a/eCom/843031Y38AZ1365_A.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/asset/4d0ddec9-fc61-4c14-9bab-fc2f7a20a893/eCom/843031Y38AZ1365_B.jpg?v=2"
-      ],
-      "description": "One-piece strapless swimsuit featuring a high-cut leg, brief bottom and waist cut-outs. ",
-      "shortDescription": [
-        "strapless neckline",
-        "DUE TO HYGIENE-RELATED REASONS, THIS PIECE MAY NOT BE RETURNED",
-        "SLRD EXCLUSIVE"
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_rtw",
-        "microCategory": "ysl_micro_women_jersey",
-        "superMicroCategory": "ysl_super_micro_women_jersey"
-      },
-      "sizes": [
-        {
-          "id": "814015184",
-          "value": "XS",
-          "displayValue": "YSL XS / GB XS",
-          "inStock": true
-        },
-        {
-          "id": "814015185",
-          "value": "S",
-          "displayValue": "YSL S / GB S",
-          "inStock": true
-        },
-        {
-          "id": "814015186",
-          "value": "M",
-          "displayValue": "YSL M / GB M",
-          "inStock": true
-        },
-        {
-          "id": "814015187",
-          "value": "L",
-          "displayValue": "YSL L / GB L",
-          "inStock": true
-        },
-        {
-          "id": "814015188",
-          "value": "XL",
-          "displayValue": "YSL XL / GB XL",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "843031Y38AZ1365",
-          "name": "Green",
-          "url": "https://www.ysl.com/en-gb/pr/strapless-swimsuit-843031Y38AZ1365.html",
-          "hex": "2e4e4d"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/843031y38az1365/1.jpg",
-        "/products/ys-pdp/843031y38az1365/2.jpg"
-      ]
-    },
-    {
       "id": "A003I3Y37WV1000",
       "sku": "A003I3Y37WV1000",
       "masterId": "A003I3Y37WV",
@@ -21099,6 +21291,2362 @@
         "/products/ys-pdp/a003i3y37wv1000/1.jpg",
         "/products/ys-pdp/a003i3y37wv1000/2.jpg",
         "/products/ys-pdp/a003i3y37wv1000/3.jpg"
+      ]
+    },
+    {
+      "id": "835063Y2H329860",
+      "sku": "835063Y2H329860",
+      "name": "long coat in brushed cashmere and wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-coats"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "835063Y2H32",
+      "color": "Brown",
+      "microColor": "CAMEL",
+      "colorCode": "9860",
+      "url": "https://www.ysl.com/en-gb/pr/long-coat-in-brushed-cashmere-and-wool-835063Y2H329860.html",
+      "path": "pr/long-coat-in-brushed-cashmere-and-wool-835063Y2H329860.html",
+      "gbpPrice": 5580.0,
+      "inStock": true,
+      "compositions": "T  60% CASHMERE T  40% WOOL BU 100% BUBALUS BUBALIS O:INFP 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/20803308-c93e-4f4d-bbdf-2ad77b12a1bb/eCom/835063Y2H329860_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/4ad18a69-dad1-4c62-8509-6aba704c4c90/eCom/835063Y2H329860_B.jpg?v=1"
+      ],
+      "description": "double-breasted, six-button long coat made with double-face certified cashmere and certified wool, featuring a notched collar, broad shoulders and tab cuffs.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED CASHMERE AND CERTIFIED WOOL</u></a>",
+        "double-breasted, six-button closure",
+        "two welt pockets at the front",
+        "notched collar",
+        "button-tab cuffs",
+        "single back vent"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_coats",
+        "superMicroCategory": "ysl_super_micro_women_coats"
+      },
+      "sizes": [
+        {
+          "id": "813961884",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "813960964",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "813960791",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "835063Y2H329860",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/long-coat-in-brushed-cashmere-and-wool-835063Y2H329860.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/835063y2h329860/1.jpg",
+        "/products/ys-pdp/835063y2h329860/2.jpg"
+      ]
+    },
+    {
+      "id": "A00ATUY38FY6481",
+      "sku": "A00ATUY38FY6481",
+      "name": "laced halter midi dress in silicone-coated ribbed silk jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "A00ATUY38FY",
+      "color": "Red",
+      "microColor": "ROUGE GRIOTTE / BEIGE GRISE",
+      "colorCode": "6481",
+      "url": "https://www.ysl.com/en-gb/pr/laced-halter-midi-dress-in-silicone-coated-ribbed-silk-jersey-A00ATUY38FY6481.html",
+      "path": "pr/laced-halter-midi-dress-in-silicone-coated-ribbed-silk-jersey-A00ATUY38FY6481.html",
+      "gbpPrice": 5450.0,
+      "inStock": true,
+      "compositions": "T 100% SILK DT  79 DT  21 DV  69 DV  31 DW 100% POLYAMIDE% VISCOSE% COTTON% POLYAMIDE% POLYAMIDE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/6681b2e8-a210-49c0-bc13-52077263f061/eCom/A00ATUY38FY6481_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/ea6fbbb9-5591-40dc-abec-52cd0c3a4468/eCom/A00ATUY38FY6481_H.jpg?v=1"
+      ],
+      "description": "semi-sheer halterneck midi dress, featuring a scalloped lace bust, hem, and front slit.",
+      "shortDescription": [
+        "side zip closure",
+        "button closure at the back neck",
+        "halter neckline",
+        "front slit"
+      ],
+      "productCare": "Do Not Wash. Spot Clean On Reverse Side Only. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Silicone Resin Coated.",
+      "madeIn": "FRANCE",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_dresses",
+        "superMicroCategory": "ysl_super_micro_women_dresses"
+      },
+      "sizes": [
+        {
+          "id": "814487452",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814487453",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814487454",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814487455",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814488186",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00ATUY38FY6481",
+          "name": "Red",
+          "url": "https://www.ysl.com/en-gb/pr/laced-halter-midi-dress-in-silicone-coated-ribbed-silk-jersey-A00ATUY38FY6481.html",
+          "hex": "e80000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00atuy38fy6481/1.jpg",
+        "/products/ys-pdp/a00atuy38fy6481/2.jpg"
+      ]
+    },
+    {
+      "id": "869630Y38BD9000",
+      "sku": "869630Y38BD9000",
+      "name": "CASSANDRE T-shirt in ribbed cotton jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-jersey"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "869630Y38BD",
+      "color": "White",
+      "microColor": "BLANC",
+      "colorCode": "9000",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-t-shirt-in-ribbed-cotton-jersey-869630Y38BD9000.html",
+      "path": "pr/cassandre-t-shirt-in-ribbed-cotton-jersey-869630Y38BD9000.html",
+      "gbpPrice": 490.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b674d1c4-8d8e-4365-9aed-01e78fe790ed/eCom/869630Y38BD9000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/cacdb203-3103-4a66-afcf-c51eaf277c5e/eCom/869630Y38BD9000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/b8494c0a-f609-4dd1-ad6d-e2670497b189/eCom/869630Y38BD9000_H.jpg?v=2"
+      ],
+      "description": "fitted crewneck T-shirt made with certified cotton, featuring a tonal CASSANDRE patch at the chest.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified cotton</u></a>",
+        "crewneck"
+      ],
+      "madeIn": "FRANCE",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jersey",
+        "superMicroCategory": "ysl_super_micro_women_jersey"
+      },
+      "sizes": [
+        {
+          "id": "814263259",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814263760",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814262325",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814263535",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814262326",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "869630Y38BD1403",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-fitted-t-shirt-869630Y38BD1403.html",
+          "hex": "693818"
+        },
+        {
+          "id": "869630Y38BD9000",
+          "name": "White",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-t-shirt-in-ribbed-cotton-jersey-869630Y38BD9000.html",
+          "hex": "ffffff"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/869630y38bd9000/1.jpg",
+        "/products/ys-pdp/869630y38bd9000/2.jpg",
+        "/products/ys-pdp/869630y38bd9000/3.jpg"
+      ]
+    },
+    {
+      "id": "A009RQY76PE1000",
+      "sku": "A009RQY76PE1000",
+      "name": "Ribbed Sweater Cassandre in Silk",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-knitwear"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "A009RQY76PE",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/ribbed-sweater-cassandre-in-silk-A009RQY76PE1000.html",
+      "path": "pr/ribbed-sweater-cassandre-in-silk-A009RQY76PE1000.html",
+      "gbpPrice": 1135.0,
+      "inStock": true,
+      "compositions": "T 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a2cdb2ce-3785-4246-bf28-77478fe1e905/eCom/A009RQY76PE1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/239726ca-4af0-427a-a08a-a17e876b051b/eCom/A009RQY76PE1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/318649fb-3a8e-47a5-915f-91b5e7e0e0f2/eCom/A009RQY76PE1000_H.jpg?v=1"
+      ],
+      "description": "Long-sleeve rib-knit sweater made with organic silk featuring a mock neck decorated with the metal Cassandre.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\">ORGANIC SILK</u></a>",
+        "mock neck",
+        "metal CASSANDRE AT THE NECK"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_knitwear",
+        "superMicroCategory": "ysl_super_micro_women_knitwear"
+      },
+      "sizes": [
+        {
+          "id": "814481616",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814479910",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814479911",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814479912",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814479913",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A009RQY76PE2020",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-stand-collar-top-in-ribbed-silk-A009RQY76PE2020.html",
+          "hex": "693818"
+        },
+        {
+          "id": "A009RQY76PE1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/ribbed-sweater-cassandre-in-silk-A009RQY76PE1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a009rqy76pe1000/1.jpg",
+        "/products/ys-pdp/a009rqy76pe1000/2.jpg",
+        "/products/ys-pdp/a009rqy76pe1000/3.jpg"
+      ]
+    },
+    {
+      "id": "873683YCVY27475",
+      "sku": "873683YCVY27475",
+      "name": "jacket in lambskin and shearling",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "873683YCVY2",
+      "color": "Orange",
+      "microColor": "ORANGE BRULEE/COGNAC/CHAMOIS/GRIS CLAIR",
+      "colorCode": "7475",
+      "url": "https://www.ysl.com/en-gb/pr/jacket-in-lambskin-and-shearling-873683YCVY27475.html",
+      "path": "pr/jacket-in-lambskin-and-shearling-873683YCVY27475.html",
+      "gbpPrice": 8800.0,
+      "inStock": true,
+      "compositions": "L 100 CO 100 BU 100 I6 100% LAMB LEATHER% LAMB FUR% BUBALUS BUBALIS O:IN% POLYESTERF  53% COTTON F  47% VISCOSE FP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/dde062c8-74f2-4767-86ae-dffb91c1228d/eCom/873683YCVY27475_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/980ee120-416d-4cc9-bd6d-1200ec55aee7/Original-Ecom/873683YCVY27475_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/9d13608c-fe8c-4562-a513-5826d2e02141/eCom/873683YCVY27475_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f8baeeec-f13f-44ec-ba1d-dce400a9a9bd/eCom/873683YCVY27475_H.jpg?v=1"
+      ],
+      "description": "double-breasted, six-button jacket with an oversized shearling collar and shearling cuffs.",
+      "shortDescription": [
+        "cotton and viscose lining",
+        "double-breasted, six-button closure",
+        "two welt pockets at the front",
+        "one inner welt pocket",
+        "shearling ulster collar",
+        "shearling cuffs",
+        "Real fur: Lamb fur (shearling)"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Use A Specialist Leather And Fur Cleaning Service Only.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_women_Leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814344074",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814344075",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814344076",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814344077",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "873683YCVY27475",
+          "name": "Orange",
+          "url": "https://www.ysl.com/en-gb/pr/jacket-in-lambskin-and-shearling-873683YCVY27475.html",
+          "hex": "fc802d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/873683ycvy27475/1.jpg",
+        "/products/ys-pdp/873683ycvy27475/2.jpg",
+        "/products/ys-pdp/873683ycvy27475/3.jpg",
+        "/products/ys-pdp/873683ycvy27475/4.jpg"
+      ]
+    },
+    {
+      "id": "835063Y060R1005",
+      "sku": "835063Y060R1005",
+      "name": "long coat in brushed cashmere and wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-coats"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "835063Y060R",
+      "color": "Black",
+      "microColor": "NOIR PROFOND",
+      "colorCode": "1005",
+      "url": "https://www.ysl.com/en-gb/pr/long-coat-in-brushed-cashmere-and-wool-835063Y060R1005.html",
+      "path": "pr/long-coat-in-brushed-cashmere-and-wool-835063Y060R1005.html",
+      "gbpPrice": 4205.0,
+      "inStock": true,
+      "compositions": "T 100% WOOL BU 100% BUBALUS BUBALIS O:INFP 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a855c1f4-e258-40e4-ae13-b4b4c3d788b6/eCom/835063Y060R1005_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7a34e781-2a28-4b55-8a30-98c336a50a6f/eCom/835063Y060R1005_B.jpg?v=2"
+      ],
+      "description": "double-breasted, six-button long coat made with double-face certified cashmere and certified wool, featuring a notched collar, broad shoulders and tab cuffs.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED WOOL</u></a>",
+        "double-breasted, six-button closure",
+        "two welt pockets at the front",
+        "notched collar",
+        "button-tab cuffs",
+        "single back vent"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_coats",
+        "superMicroCategory": "ysl_super_micro_women_coats"
+      },
+      "sizes": [
+        {
+          "id": "813962710",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "813962711",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "813962712",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "835063Y060R1005",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/long-coat-in-brushed-cashmere-and-wool-835063Y060R1005.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/835063y060r1005/1.jpg",
+        "/products/ys-pdp/835063y060r1005/2.jpg"
+      ]
+    },
+    {
+      "id": "824387YCSG22178",
+      "sku": "824387YCSG22178",
+      "name": "bomber jacket in suede",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "824387YCSG2",
+      "color": "Brown",
+      "microColor": "BRUN",
+      "colorCode": "2178",
+      "url": "https://www.ysl.com/en-gb/pr/bomber-jacket-in-suede-824387YCSG22178.html",
+      "path": "pr/bomber-jacket-in-suede-824387YCSG22178.html",
+      "gbpPrice": 4345.0,
+      "inStock": true,
+      "compositions": "L 100% COWHIDEF 100% SILK FM  97% SILK FM   3% POLYESTER FP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/3a2924c1ad477c40/eCom-824387YCSG22178_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/5179388af80cd14b/eCom-824387YCSG22178_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/22e6869edaa843a8/eCom-824387YCSG22178_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/46fb2522a0975f49/eCom-824387YCSG22178_D.jpg?v=2"
+      ],
+      "description": "bomber jacket with a pointed collar, drop shoulders, and a shirred waistband.",
+      "shortDescription": [
+        "bodice: silk lining",
+        "sleeves: silk and polyester lining",
+        "front zip closure with snap-button storm flap",
+        "two patch pockets at the front",
+        "one inner welt pocket",
+        "pointed collar",
+        "two snap-button cuffs",
+        "elasticized waist"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_women_Leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "813861970",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "813861971",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "813861972",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "813861973",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "824387YCSG22178",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/bomber-jacket-in-suede-824387YCSG22178.html",
+          "hex": "4d2e15"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/824387ycsg22178/1.jpg",
+        "/products/ys-pdp/824387ycsg22178/2.jpg",
+        "/products/ys-pdp/824387ycsg22178/3.jpg",
+        "/products/ys-pdp/824387ycsg22178/4.jpg"
+      ]
+    },
+    {
+      "id": "861886Y1G811000",
+      "sku": "861886Y1G811000",
+      "name": "trench coat in silk",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-coats"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "861886Y1G81",
+      "color": "Black",
+      "microColor": "NOIR",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/trench-coat-in-silk-861886Y1G811000.html",
+      "path": "pr/trench-coat-in-silk-861886Y1G811000.html",
+      "gbpPrice": 4345.0,
+      "inStock": true,
+      "compositions": "T 100% SILK DJ 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/1baac110-e9d4-425a-8ab5-610f9e4282ba/eCom/861886Y1G811000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/7cc939be-4e63-4478-bd2c-2396291ae4cb/eCom/861886Y1G811000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/08b02202-1ee0-4c68-9d08-07676e069e6f/eCom/861886Y1G811000_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/33bfd50c-0942-4871-b785-1e05cdbd926d/eCom/861886Y1G811000_D.jpg?v=2"
+      ],
+      "description": "double-breasted belted trench coat with a two-way ulster collar, featuring a storm flap, buttoned epaulets, and strapped cuffs.",
+      "shortDescription": [
+        "double-breasted, eight-button closure",
+        "two buttoned flap pockets at the front",
+        "two-way ulster collar",
+        "buttoned epaulets",
+        "strapped cuffs",
+        "adjustable and detachable belt"
+      ],
+      "productCare": "Do Not Wash, Do Not Bleach, Do Not Tumble Dry, Iron At Maximum Temperature 120°C, Dry Cleaning With Hydrocarbons - Mild Process,",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_outerwear",
+        "superMicroCategory": "ysl_super_micro_women_outerwear"
+      },
+      "sizes": [
+        {
+          "id": "814174721",
+          "value": "F34",
+          "displayValue": "F34",
+          "inStock": true
+        },
+        {
+          "id": "814159452",
+          "value": "F36",
+          "displayValue": "F36",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "861886Y1G811000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/trench-coat-in-silk-861886Y1G811000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/861886y1g811000/1.jpg",
+        "/products/ys-pdp/861886y1g811000/2.jpg",
+        "/products/ys-pdp/861886y1g811000/3.jpg",
+        "/products/ys-pdp/861886y1g811000/4.jpg"
+      ]
+    },
+    {
+      "id": "824387YCNX21628",
+      "sku": "824387YCNX21628",
+      "name": "bomber jacket in grained lambskin",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-leather-outerwear"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "824387YCNX2",
+      "color": "Black",
+      "microColor": "REGLISSE",
+      "colorCode": "1628",
+      "url": "https://www.ysl.com/en-gb/pr/bomber-jacket-in-grained-lambskin-824387YCNX21628.html",
+      "path": "pr/bomber-jacket-in-grained-lambskin-824387YCNX21628.html",
+      "gbpPrice": 4875.0,
+      "inStock": true,
+      "compositions": "L 100% LAMB LEATHERF  60% CUPRO F  40% COTTON FP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/64768da4b967fdb5/eCom-824387YCNX21628_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/4871a098f1c5747e/eCom-824387YCNX21628_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/49c66d858d38fb86/eCom-824387YCNX21628_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/3875c9a97fa20aa8/eCom-824387YCNX21628_D.jpg?v=1"
+      ],
+      "description": "bomber jacket with a pointed collar, drop shoulders, and a shirred waistband.",
+      "shortDescription": [
+        "cotton lining",
+        "front zip closure with snap-button storm flap",
+        "two patch pockets at the front",
+        "one inner welt pocket",
+        "pointed collar",
+        "two snap-button cuffs",
+        "elasticized waist"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_women_Leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "813863176",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "813861967",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "813861968",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "813861969",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "813866109",
+          "value": "F42",
+          "displayValue": "YSL F42 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "824387YCNX21628",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bomber-jacket-in-grained-lambskin-824387YCNX21628.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/824387ycnx21628/1.jpg",
+        "/products/ys-pdp/824387ycnx21628/2.jpg",
+        "/products/ys-pdp/824387ycnx21628/3.jpg",
+        "/products/ys-pdp/824387ycnx21628/4.jpg"
+      ]
+    },
+    {
+      "id": "823437Y14MJ4248",
+      "sku": "823437Y14MJ4248",
+      "name": "CASSANDRE SHIRT IN DENIM",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-denim"
+      ],
+      "leafId": "ys-women-rtw-all",
+      "needsPdp": true,
+      "masterId": "823437Y14MJ",
+      "color": "Blue",
+      "microColor": "DAY BLUE",
+      "colorCode": "4248",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-shirt-in-denim-823437Y14MJ4248.html",
+      "path": "pr/cassandre-shirt-in-denim-823437Y14MJ4248.html",
+      "gbpPrice": 845.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/4f45c85d46476f02/eCom-823437Y14MJ4248_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/51a37eb3719af487/eCom-823437Y14MJ4248_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/13d5515b88dfa81/eCom-823437Y14MJ4248_C.jpg?v=2"
+      ],
+      "description": "RELAXED-FIT DENIM SHIRT WITH A POINTED COLLAR, FRONT BUTTONS AND A CASSANDRE EMBROIDERY ON THE CHEST.",
+      "shortDescription": [
+        "front button closure",
+        "pointed collar",
+        "curved hem",
+        "one-button cuffs with one-button placket"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 110°C - Without Steam. Iron Inside Out. Dry Cleaning In Tetrachloroethene Or Hydrocarbons .",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_men_rtw",
+        "microCategory": "ysl_micro_men_denim",
+        "superMicroCategory": "ysl_super_micro_men_denim"
+      },
+      "sizes": [
+        {
+          "id": "813768689",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "813765513",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "813765514",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "813765515",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "813765516",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        },
+        {
+          "id": "813766568",
+          "value": "XXL",
+          "displayValue": "YSL XXL / GB XXL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "823437Y14MJ4248",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-shirt-in-denim-823437Y14MJ4248.html",
+          "hex": "414266"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/823437y14mj4248/1.jpg",
+        "/products/ys-pdp/823437y14mj4248/2.jpg",
+        "/products/ys-pdp/823437y14mj4248/3.jpg"
+      ]
+    },
+    {
+      "id": "870726Y1H489000",
+      "sku": "870726Y1H489000",
+      "name": "lavallière shirt in cotton poplin",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-shirts-tops"
+      ],
+      "leafId": "ys-women-shirts-tops",
+      "needsPdp": true,
+      "masterId": "870726Y1H48",
+      "color": "White",
+      "microColor": "BLANC",
+      "colorCode": "9000",
+      "url": "https://www.ysl.com/en-gb/pr/lavalliere-shirt-in-cotton-poplin-870726Y1H489000.html",
+      "path": "pr/lavalliere-shirt-in-cotton-poplin-870726Y1H489000.html",
+      "gbpPrice": 1595.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/2102637a-97f6-4f75-a438-8b53af725c78/eCom/870726Y1H489000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/3e9d0298-e3fc-4e99-a3bc-b1794a2221c2/eCom/870726Y1H489000_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/7ee362a9-e10d-442b-9cb9-24e98a314ac3/eCom/870726Y1H489000_C.jpg?v=2"
+      ],
+      "description": "oversized blouse featuring a plunging lavallière collar, exaggerated shoulders, and french cuffs.",
+      "shortDescription": [
+        "front button closure",
+        "plunging V neckline with lavallière collar",
+        "french cuffs",
+        "shoulder boning"
+      ],
+      "productCare": "Do Not Wash. Remove Detachable Parts Before Cleaning. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_shirts",
+        "superMicroCategory": "ysl_super_micro_women_shirts"
+      },
+      "sizes": [
+        {
+          "id": "814261113",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814261412",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814261114",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814262536",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "870726Y1H489000",
+          "name": "White",
+          "url": "https://www.ysl.com/en-gb/pr/lavalliere-shirt-in-cotton-poplin-870726Y1H489000.html",
+          "hex": "ffffff"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/870726y1h489000/1.jpg",
+        "/products/ys-pdp/870726y1h489000/2.jpg",
+        "/products/ys-pdp/870726y1h489000/3.jpg"
+      ]
+    },
+    {
+      "id": "823603Y37EC1472",
+      "sku": "823603Y37EC1472",
+      "name": "CASSANDRE TANK TOP",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jersey"
+      ],
+      "leafId": "ys-women-jersey",
+      "needsPdp": true,
+      "masterId": "823603Y37EC",
+      "color": "Black",
+      "microColor": "ANTHRACITE",
+      "colorCode": "1472",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-tank-top-823603Y37EC1472.html",
+      "path": "pr/cassandre-tank-top-823603Y37EC1472.html",
+      "gbpPrice": 540.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON RJ 100% POLYESTER",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/66bc5f8b6b1f71a2/eCom-823603Y37EC1472_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/5484bf3f12e4178b/Original_Ecom-823603Y37EC1472_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/m/4ffce4e9ed9cc76a/eCom-823603Y37EC1472_B.jpg?v=2"
+      ],
+      "description": "RIBBED TANK TOP MADE WITH CERTIFIED COTTON, FEATURING A ROUND SCOOP NECK AND CASSANDRE EMBROIDERY ON THE CHEST.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED COTTON</u></a>",
+        "round scoop neck",
+        "straight hem"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 110°C - Without Steam. Iron Inside Out. Dry Cleaning In Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jersey",
+        "superMicroCategory": "ysl_super_micro_women_jersey"
+      },
+      "sizes": [
+        {
+          "id": "813769743",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "813769744",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "813769745",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "813769746",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "813772395",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "823603Y37EC9469",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-tank-top-823603Y37EC9469.html",
+          "hex": "e3d4c1"
+        },
+        {
+          "id": "823603Y37EC1472",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-tank-top-823603Y37EC1472.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/823603y37ec1472/1.jpg",
+        "/products/ys-pdp/823603y37ec1472/2.jpg",
+        "/products/ys-pdp/823603y37ec1472/3.jpg"
+      ]
+    },
+    {
+      "id": "A0081JY38FQ5061",
+      "sku": "A0081JY38FQ5061",
+      "name": "laced tank top in silicone-coated silk jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
+      ],
+      "leafId": "ys-women-jersey",
+      "needsPdp": true,
+      "masterId": "A0081JY38FQ",
+      "color": "Bordeaux",
+      "microColor": "BORDEAUX",
+      "colorCode": "5061",
+      "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ5061.html",
+      "path": "pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ5061.html",
+      "gbpPrice": 2635.0,
+      "inStock": true,
+      "compositions": "T 100% SILK R 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4da42249-427c-4440-bd31-800864e75071/eCom/A0081JY38FQ5061_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/3c45f21d-0a0a-4b49-b95c-ec89538fc264/eCom/A0081JY38FQ5061_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/94d51857-c41f-484f-9245-ccf7faa5d7e8/eCom/A0081JY38FQ5061_H.jpg?v=2"
+      ],
+      "description": "semi-sheer tank top with a scalloped lace plunging V neckline and adjustable spaghetti straps.",
+      "shortDescription": [
+        "plunging V neckline",
+        "adjustable straps"
+      ],
+      "productCare": "Do Not Wash. Spot Clean On Reverse Side Only. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Silicone Resin Coated.",
+      "madeIn": "FRANCE",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jersey",
+        "superMicroCategory": "ysl_super_micro_women_jersey"
+      },
+      "sizes": [
+        {
+          "id": "814487408",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814484919",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814487409",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814487410",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814487411",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0081JY38FQ1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ1000.html",
+          "hex": "000000"
+        },
+        {
+          "id": "A0081JY38FQ5061",
+          "name": "Bordeaux",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ5061.html",
+          "hex": "5e0610"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0081jy38fq5061/1.jpg",
+        "/products/ys-pdp/a0081jy38fq5061/2.jpg",
+        "/products/ys-pdp/a0081jy38fq5061/3.jpg"
+      ]
+    },
+    {
+      "id": "A0081JY38FQ1000",
+      "sku": "A0081JY38FQ1000",
+      "name": "laced tank top in silicone-coated silk jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
+      ],
+      "leafId": "ys-women-jersey",
+      "needsPdp": true,
+      "masterId": "A0081JY38FQ",
+      "color": "Black",
+      "microColor": "NOIR",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ1000.html",
+      "path": "pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ1000.html",
+      "gbpPrice": 2635.0,
+      "inStock": true,
+      "compositions": "T 100% SILK R 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/ae1661c8-6f46-4a4f-974e-fd9a81cc5699/eCom/A0081JY38FQ1000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/d70e4def-4019-489f-b30b-75f7f890e09b/eCom/A0081JY38FQ1000_B.jpg?v=2"
+      ],
+      "description": "semi-sheer tank top with a scalloped lace plunging V neckline and adjustable spaghetti straps.",
+      "shortDescription": [
+        "plunging V neckline",
+        "adjustable straps"
+      ],
+      "productCare": "Do Not Wash. Spot Clean On Reverse Side Only. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Silicone Resin Coated.",
+      "madeIn": "FRANCE",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jersey",
+        "superMicroCategory": "ysl_super_micro_women_jersey"
+      },
+      "sizes": [
+        {
+          "id": "814485811",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814485812",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814485813",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814487406",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814487407",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0081JY38FQ1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ1000.html",
+          "hex": "000000"
+        },
+        {
+          "id": "A0081JY38FQ5061",
+          "name": "Bordeaux",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-silicone-coated-silk-jersey-A0081JY38FQ5061.html",
+          "hex": "5e0610"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0081jy38fq1000/1.jpg",
+        "/products/ys-pdp/a0081jy38fq1000/2.jpg"
+      ]
+    },
+    {
+      "id": "796843Y37SM9502",
+      "sku": "796843Y37SM9502",
+      "name": "Laced Tank Top in Ribbed Silk Jersey",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jersey"
+      ],
+      "leafId": "ys-women-jersey",
+      "needsPdp": true,
+      "masterId": "796843Y37SM",
+      "color": "Beige",
+      "microColor": "NATUREL",
+      "colorCode": "9502",
+      "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM9502.html",
+      "path": "pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM9502.html",
+      "gbpPrice": 755.0,
+      "inStock": true,
+      "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/3cc6c1bdb9e2ad41/eCom-796843Y37SM9502_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/3246c41e5c5d7289/eCom-796843Y37SM9502_B.jpg?v=3"
+      ],
+      "description": "Semi-sheer, fitted, knee-length slip dress with scalloped lace trim, featuring a V-neckline and adjustable spaghetti straps.",
+      "shortDescription": [
+        "V neckline",
+        "adjustable shoulder straps"
+      ],
+      "productCare": "Do Not Wash. Clean In Net Bag. Do Not Bleach. Do Not Tumble Dry. Dry Flat. Iron At Maximum Temperature 110°C - Without Steam. Dry Cleaning In Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jersey",
+        "superMicroCategory": "ysl_super_micro_women_jersey"
+      },
+      "sizes": [
+        {
+          "id": "813581216",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "813580155",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "813580156",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "813580157",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "813594529",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "796843Y37SM3011",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-796843Y37SM3011.html",
+          "hex": "1b5c1d"
+        },
+        {
+          "id": "796843Y37SM7442",
+          "name": "Yellow",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-796843Y37SM7442.html",
+          "hex": "FAD607"
+        },
+        {
+          "id": "796843Y37SM2574",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM2574.html",
+          "hex": "693818"
+        },
+        {
+          "id": "796843Y37SM2179",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM2179.html",
+          "hex": "693818"
+        },
+        {
+          "id": "796843Y37SM9502",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM9502.html",
+          "hex": "faf8e8"
+        },
+        {
+          "id": "796843Y37SM1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/laced-tank-top-in-ribbed-silk-jersey-796843Y37SM1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/796843y37sm9502/1.jpg",
+        "/products/ys-pdp/796843y37sm9502/2.jpg"
+      ]
+    },
+    {
+      "id": "858704YAPK26001",
+      "sku": "858704YAPK26001",
+      "name": "T-shirt sweater in cashmere, wool, and silk",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-knitwear"
+      ],
+      "leafId": "ys-women-knitwear",
+      "needsPdp": true,
+      "masterId": "858704YAPK2",
+      "color": "Bordeaux",
+      "microColor": "BORDEAUX",
+      "colorCode": "6001",
+      "url": "https://www.ysl.com/en-gb/pr/t-shirt-sweater-in-cashmere-wool-and-silk-858704YAPK26001.html",
+      "path": "pr/t-shirt-sweater-in-cashmere-wool-and-silk-858704YAPK26001.html",
+      "gbpPrice": 845.0,
+      "inStock": true,
+      "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/7dcdd9d1-04f3-4871-ba6a-b7a2a4f4fe78/eCom/858704YAPK26001_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/00061179-ab1c-4d03-9b26-b04bda6417d4/eCom/858704YAPK26001_B.jpg?v=3"
+      ],
+      "description": "knitted crewneck T-shirt with ribbed trims.",
+      "shortDescription": [
+        "crewneck",
+        "ribbed trims"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_knitwear",
+        "superMicroCategory": "ysl_super_micro_women_knitwear"
+      },
+      "sizes": [
+        {
+          "id": "814158097",
+          "value": "XS",
+          "displayValue": "YSL XS / GB XS",
+          "inStock": true
+        },
+        {
+          "id": "814149399",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814149400",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814149623",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        },
+        {
+          "id": "814163762",
+          "value": "XL",
+          "displayValue": "YSL XL / GB XL",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "858704YAPK26001",
+          "name": "Bordeaux",
+          "url": "https://www.ysl.com/en-gb/pr/t-shirt-sweater-in-cashmere-wool-and-silk-858704YAPK26001.html",
+          "hex": "5e0610"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/858704yapk26001/1.jpg",
+        "/products/ys-pdp/858704yapk26001/2.jpg"
+      ]
+    },
+    {
+      "id": "871696Y9J572000",
+      "sku": "871696Y9J572000",
+      "name": "saharienne prairie dress in coated cotton",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-dresses-skirts"
+      ],
+      "leafId": "ys-women-dresses-skirts",
+      "needsPdp": true,
+      "masterId": "871696Y9J57",
+      "color": "Brown",
+      "microColor": "MARRON",
+      "colorCode": "2000",
+      "url": "https://www.ysl.com/en-gb/pr/saharienne-prairie-dress-in-coated-cotton-871696Y9J572000.html",
+      "path": "pr/saharienne-prairie-dress-in-coated-cotton-871696Y9J572000.html",
+      "gbpPrice": 4725.0,
+      "inStock": true,
+      "compositions": "T  83% COTTON T  17% POLYAMIDEF  97% COTTON F   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/10b82030-d552-4cb6-bebf-e385d7056c89/eCom/871696Y9J572000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7bdc8dbb-2bfe-471b-9047-d68812ead551/Original-Ecom/871696Y9J572000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b304126f-d5e3-4142-989a-7b0d3877f190/eCom/871696Y9J572000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c7686f51-86e1-42f7-9ed8-556200c2e05d/eCom/871696Y9J572000_H.jpg?v=1"
+      ],
+      "description": "long belted saharienne dress with bouffant sleeves and a tiered skirt.",
+      "shortDescription": [
+        "front button closure",
+        "adjustable tied belt",
+        "two patch pockets at the front",
+        "round neck",
+        "one-button cuffs"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Iron Inside Out. Iron With A Cloth Between. Dry Cleaning With Hydrocarbons - Mild Process.",
+      "madeIn": "FRANCE",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_dresses",
+        "superMicroCategory": "ysl_super_micro_women_dresses"
+      },
+      "sizes": [
+        {
+          "id": "814343745",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814343746",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814343747",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814343748",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "871696Y9J572000",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saharienne-prairie-dress-in-coated-cotton-871696Y9J572000.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/871696y9j572000/1.jpg",
+        "/products/ys-pdp/871696y9j572000/2.jpg",
+        "/products/ys-pdp/871696y9j572000/3.jpg",
+        "/products/ys-pdp/871696y9j572000/4.jpg"
+      ]
+    },
+    {
+      "id": "874178Y03GB4240",
+      "sku": "874178Y03GB4240",
+      "name": "long skirt in indigo denim",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-dresses-skirts"
+      ],
+      "leafId": "ys-women-dresses-skirts",
+      "needsPdp": true,
+      "masterId": "874178Y03GB",
+      "color": "Blue",
+      "microColor": "INDIGO RINSE",
+      "colorCode": "4240",
+      "url": "https://www.ysl.com/en-gb/pr/long-skirt-in-indigo-denim-874178Y03GB4240.html",
+      "path": "pr/long-skirt-in-indigo-denim-874178Y03GB4240.html",
+      "gbpPrice": 2180.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/afa3f92a-bd96-47c5-b3cc-94fd9da292c9/eCom/874178Y03GB4240_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/fb979cd6-eb77-4f1d-bbfa-d5d638e4897c/Original-Ecom/874178Y03GB4240_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e0c99c60-8b70-4cba-bdc4-563f38f4d553/eCom/874178Y03GB4240_B.jpg?v=3"
+      ],
+      "description": "long tiered five-pocket jean skirt, made with certified cotton.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified cotton</u></a>",
+        "zip fly",
+        "five-pocket jean",
+        "waistband with belt loops",
+        "saint laurent paris embossed leather jacron"
+      ],
+      "productCare": "Wash Max 30°C - Mild Process. Clean Inside Out. Do Not Bleach. Do Not Tumble Dry. Line Dry. Iron At Maximum Temperature 120°C - Without Steam. Iron Inside Out. Do Not Dry Clean.",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_denim",
+        "superMicroCategory": "ysl_super_micro_women_denim"
+      },
+      "sizes": [
+        {
+          "id": "814343861",
+          "value": "24",
+          "displayValue": "YSL 24 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814343862",
+          "value": "25",
+          "displayValue": "YSL 25 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814343863",
+          "value": "26",
+          "displayValue": "YSL 26 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814343864",
+          "value": "27",
+          "displayValue": "YSL 27 / GB 8",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "874178Y03GB4240",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/long-skirt-in-indigo-denim-874178Y03GB4240.html",
+          "hex": "1d31c4"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/874178y03gb4240/1.jpg",
+        "/products/ys-pdp/874178y03gb4240/2.jpg",
+        "/products/ys-pdp/874178y03gb4240/3.jpg"
+      ]
+    },
+    {
+      "id": "871866Y2J021480",
+      "sku": "871866Y2J021480",
+      "name": "pants in wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "needsPdp": true,
+      "masterId": "871866Y2J02",
+      "color": "Brown",
+      "microColor": "TAUPE CHINE",
+      "colorCode": "1480",
+      "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-871866Y2J021480.html",
+      "path": "pr/pants-in-wool-871866Y2J021480.html",
+      "gbpPrice": 1155.0,
+      "inStock": true,
+      "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/3fd017b3-3965-4361-b214-bffb45cdcb80/eCom/871866Y2J021480_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/609c10f3-be18-444a-8f84-2769c7bf47cb/eCom/871866Y2J021480_B.jpg?v=2"
+      ],
+      "description": "mid-rise tailored pants made with certified wool, featuring a straight leg with single pleat and center crease.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified wool</u></a>",
+        "cotton and elastane lining",
+        "concealed front button, hook, and zip closure",
+        "two concealed side pockets two buttoned welt pockets at the back",
+        "waistband with belt loops"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_pants",
+        "superMicroCategory": "ysl_super_micro_women_pants"
+      },
+      "sizes": [
+        {
+          "id": "814267533",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814264483",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814264484",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814271127",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "871866Y2J021480",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-871866Y2J021480.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/871866y2j021480/1.jpg",
+        "/products/ys-pdp/871866y2j021480/2.jpg"
+      ]
+    },
+    {
+      "id": "871063Y3L805917",
+      "sku": "871063Y3L805917",
+      "name": "single-breasted jacket in tweed",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "needsPdp": true,
+      "masterId": "871063Y3L80",
+      "color": "Purple",
+      "microColor": "VIOLET KAKI VERT",
+      "colorCode": "5917",
+      "url": "https://www.ysl.com/en-gb/pr/single-breasted-jacket-in-tweed-871063Y3L805917.html",
+      "path": "pr/single-breasted-jacket-in-tweed-871063Y3L805917.html",
+      "gbpPrice": 3815.0,
+      "inStock": true,
+      "compositions": "T  86% WOOL T  13% POLYAMIDE T   1% ELASTANF 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/a162b3e9-07d8-4fb9-896f-8337b1b07f79/eCom/871063Y3L805917_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/a8743404-45a7-488c-9723-4a2cafc1d49f/eCom/871063Y3L805917_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/1fceaaf2-c459-40eb-a797-114de17c3a9b/eCom/871063Y3L805917_H.jpg?v=1"
+      ],
+      "description": "single-breasted, one-button jacket with a notched collar.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified wool</u></a>",
+        "silk lining",
+        "single-breasted, one-button closure",
+        "two welt pockets at the front",
+        "one welt pocket at the chest",
+        "two inner jetted pockets",
+        "notched collar",
+        "three-button cuffs",
+        "padded shoulders"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jackets",
+        "superMicroCategory": "ysl_super_micro_women_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814346497",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814346498",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814346499",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814346500",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814346501",
+          "value": "F42",
+          "displayValue": "YSL F42 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "871063Y3L805917",
+          "name": "Purple",
+          "url": "https://www.ysl.com/en-gb/pr/single-breasted-jacket-in-tweed-871063Y3L805917.html",
+          "hex": "6826ED"
+        },
+        {
+          "id": "871063Y3L802577",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/single-breasted-jacket-in-tweed-871063Y3L802577.html",
+          "hex": "693818"
+        },
+        {
+          "id": "871063Y3L803113",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/single-breasted-jacket-in-tweed-871063Y3L803113.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/871063y3l805917/1.jpg",
+        "/products/ys-pdp/871063y3l805917/2.jpg",
+        "/products/ys-pdp/871063y3l805917/3.jpg"
+      ]
+    },
+    {
+      "id": "871869Y2J021000",
+      "sku": "871869Y2J021000",
+      "name": "pants in wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "needsPdp": true,
+      "masterId": "871869Y2J02",
+      "color": "Black",
+      "microColor": "NOIR",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-871869Y2J021000.html",
+      "path": "pr/pants-in-wool-871869Y2J021000.html",
+      "gbpPrice": 1155.0,
+      "inStock": true,
+      "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/3449c812-274a-41ea-8034-5d9fc1d9a447/eCom/871869Y2J021000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/1720a155-2656-48e1-ac84-0bb75f3bcebe/Original-Ecom/871869Y2J021000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b18c739f-a9fd-4a6e-93e3-aced4599a74a/eCom/871869Y2J021000_B.jpg?v=2"
+      ],
+      "description": "mid-rise tailored pants made with certified wool, featuring a subtly flared leg with single pleat and center crease.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified wool</u></a>",
+        "cotton and elastane lining",
+        "concealed front button, hook, and zip closure",
+        "two concealed side pockets two jetted pockets at the back",
+        "waistband with belt loops"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_pants",
+        "superMicroCategory": "ysl_super_micro_women_pants"
+      },
+      "sizes": [
+        {
+          "id": "814271128",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814267534",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814263776",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814263778",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "871869Y2J021000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-871869Y2J021000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/871869y2j021000/1.jpg",
+        "/products/ys-pdp/871869y2j021000/2.jpg",
+        "/products/ys-pdp/871869y2j021000/3.jpg"
+      ]
+    },
+    {
+      "id": "860709Y5K171000",
+      "sku": "860709Y5K171000",
+      "name": "pants in wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "needsPdp": true,
+      "masterId": "860709Y5K17",
+      "color": "Black",
+      "microColor": "NOIR",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-860709Y5K171000.html",
+      "path": "pr/pants-in-wool-860709Y5K171000.html",
+      "gbpPrice": 1245.0,
+      "inStock": true,
+      "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/882602e2-ad14-4abe-ad0d-dde9dbe7f5ea/eCom/860709Y5K171000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/1a7c1cba-1123-4f47-8ffa-d6adb3ca5704/eCom/860709Y5K171000_B.jpg?v=1"
+      ],
+      "description": "mid-rise tailored pants made with certified wool, featuring a straight leg with single pleat and center crease.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED WOOL</u></a>",
+        "concealed front button and hook closure with zip fly",
+        "two slash pockets at the front",
+        "waistband with belt loops"
+      ],
+      "productCare": "Do Not Wash; Do Not Bleach; Do Not Tumble Dry; Iron At Maximum Temperature 120°C - Without Steam; Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process;",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_pants",
+        "superMicroCategory": "ysl_super_micro_women_pants"
+      },
+      "sizes": [
+        {
+          "id": "814099482",
+          "value": "F32",
+          "displayValue": "YSL F32 / GB 4",
+          "inStock": true
+        },
+        {
+          "id": "814099483",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814099484",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814099485",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814099486",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814099487",
+          "value": "F42",
+          "displayValue": "YSL F42 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "860709Y5K171000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/pants-in-wool-860709Y5K171000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/860709y5k171000/1.jpg",
+        "/products/ys-pdp/860709y5k171000/2.jpg"
+      ]
+    },
+    {
+      "id": "854457Y7K542003",
+      "sku": "854457Y7K542003",
+      "name": "wide-leg pants in wool",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "needsPdp": true,
+      "masterId": "854457Y7K54",
+      "color": "Brown",
+      "microColor": "MARRON NOIR",
+      "colorCode": "2003",
+      "url": "https://www.ysl.com/en-gb/pr/wide-leg-pants-in-wool-854457Y7K542003.html",
+      "path": "pr/wide-leg-pants-in-wool-854457Y7K542003.html",
+      "gbpPrice": 1285.0,
+      "inStock": true,
+      "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/0fbb2ff6-b1cb-4050-99f4-00f28d1e1e96/eCom/854457Y7K542003_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/730432b9-e012-4134-847f-2ace7ddcab8b/eCom/854457Y7K542003_B.jpg?v=1"
+      ],
+      "description": "mid-rise tailored pants featuring a wide leg with double pleat and center crease.",
+      "shortDescription": [
+        "cotton and elastane lining",
+        "concealed front button, hook, and zip closure",
+        "two slash pockets at the front two jetted pockets at the back",
+        "waistband with belt loops"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Iron At Maximum Temperature 120°C - Without Steam. Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_pants",
+        "superMicroCategory": "ysl_super_micro_women_pants"
+      },
+      "sizes": [
+        {
+          "id": "814277809",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814277810",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814277811",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814277812",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "854457Y7K542003",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/wide-leg-pants-in-wool-854457Y7K542003.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/854457y7k542003/1.jpg",
+        "/products/ys-pdp/854457y7k542003/2.jpg"
+      ]
+    },
+    {
+      "id": "851250Y6J983020",
+      "sku": "851250Y6J983020",
+      "name": "CASSANDRE half-zip jacket in cotton ",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-outerwear"
+      ],
+      "leafId": "ys-women-outerwear",
+      "needsPdp": true,
+      "masterId": "851250Y6J98",
+      "color": "Green",
+      "microColor": "VERT",
+      "colorCode": "3020",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-half-zip-jacket-in-cotton-851250Y6J983020.html",
+      "path": "pr/cassandre-half-zip-jacket-in-cotton-851250Y6J983020.html",
+      "gbpPrice": 1950.0,
+      "inStock": true,
+      "compositions": "T 100% COTTONF  62% VISCOSE F  38% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/e35d6abf-3b4c-4e6f-a0de-30d85945bc22/eCom/851250Y6J983020_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/0b8ded01-2422-4f10-b69a-43bf65cfc35b/eCom/851250Y6J983020_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/2a8c4728-9171-4754-be70-c50c7e814495/eCom/851250Y6J983020_C.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/67d7d85b-6166-49fe-8e92-e5efc40240e0/eCom/851250Y6J983020_H.jpg?v=2"
+      ],
+      "description": "color-block half-zip jacket with a stand collar, drop shoulders, and CASSANDRE embroidery at the chest.",
+      "shortDescription": [
+        "viscose and cotton lining",
+        "CASSANDRE half-zip closure",
+        "two welt pockets at the front",
+        "stand collar",
+        "elasticized shirred cuffs and hem"
+      ],
+      "productCare": "Do Not Wash, Do Not Bleach, Do Not Tumble Dry, Iron At Maximum Temperature 120°C, Dry Cleaning With Hydrocarbons,",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jackets",
+        "superMicroCategory": "ysl_super_micro_women_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814149578",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814149579",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814149580",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "851250Y6J983020",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-half-zip-jacket-in-cotton-851250Y6J983020.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/851250y6j983020/1.jpg",
+        "/products/ys-pdp/851250y6j983020/2.jpg",
+        "/products/ys-pdp/851250y6j983020/3.jpg",
+        "/products/ys-pdp/851250y6j983020/4.jpg"
+      ]
+    },
+    {
+      "id": "A003ILY4L634141",
+      "sku": "A003ILY4L634141",
+      "name": "coat in wool and shearling",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-coats"
+      ],
+      "leafId": "ys-women-coats",
+      "needsPdp": true,
+      "masterId": "A003ILY4L63",
+      "color": "Blue",
+      "microColor": "MARINE FONCE",
+      "colorCode": "4141",
+      "url": "https://www.ysl.com/en-gb/pr/coat-in-wool-and-shearling-A003ILY4L634141.html",
+      "path": "pr/coat-in-wool-and-shearling-A003ILY4L634141.html",
+      "gbpPrice": 8800.0,
+      "inStock": true,
+      "compositions": "H 100 T 100% WOOL I6 100% LAMB FUR% POLYESTERF 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4296c2a0-4ee0-4820-bccc-8a47f43e4e8f/eCom/A003ILY4L634141_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/c60870cb-d03d-4bcf-8d09-514686e898ea/Original-Ecom/A003ILY4L634141_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/742e5ac7-8d72-430f-a98e-650cc9edfe11/eCom/A003ILY4L634141_B.jpg?v=2"
+      ],
+      "description": "cocoon coat with shearling stand collar and placket.",
+      "shortDescription": [
+        "two welt pockets at the front",
+        "shearling V collar",
+        "buttoned single back vent with inverted box pleat"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Professional Clean Only.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_coats",
+        "superMicroCategory": "ysl_super_micro_women_coats"
+      },
+      "sizes": [
+        {
+          "id": "814351186",
+          "value": "F34",
+          "displayValue": "F34",
+          "inStock": true
+        },
+        {
+          "id": "814351187",
+          "value": "F36",
+          "displayValue": "F36",
+          "inStock": true
+        },
+        {
+          "id": "814351188",
+          "value": "F38",
+          "displayValue": "F38",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A003ILY4L634141",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/coat-in-wool-and-shearling-A003ILY4L634141.html",
+          "hex": "1d31c4"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a003ily4l634141/1.jpg",
+        "/products/ys-pdp/a003ily4l634141/2.jpg",
+        "/products/ys-pdp/a003ily4l634141/3.jpg"
+      ]
+    },
+    {
+      "id": "A000EOYC2NZ2631",
+      "sku": "A000EOYC2NZ2631",
+      "name": "belted coat in suede",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-leather-outerwear"
+      ],
+      "leafId": "ys-women-leather-outerwear",
+      "needsPdp": true,
+      "masterId": "A000EOYC2NZ",
+      "color": "Brown",
+      "microColor": "TABAC",
+      "colorCode": "2631",
+      "url": "https://www.ysl.com/en-gb/pr/belted-coat-in-suede-A000EOYC2NZ2631.html",
+      "path": "pr/belted-coat-in-suede-A000EOYC2NZ2631.html",
+      "gbpPrice": 7000.0,
+      "inStock": true,
+      "compositions": "L 100 AL 100 BU 100% LAMB LEATHER% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/19622ee3-4fbc-4a78-a4cb-e1bc846fc29f/eCom/A000EOYC2NZ2631_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/fba88362-368e-446c-b8ef-8820e08c5e4a/eCom/A000EOYC2NZ2631_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f5410782-5b7e-4db5-be62-663c2c11f242/eCom/A000EOYC2NZ2631_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/34d249f9-6f6a-4856-aeae-07d8f0dc3f74/eCom/A000EOYC2NZ2631_H.jpg?v=1"
+      ],
+      "description": "midi-length buttoned coat with a pointed collar, straight shoulders, and tied belt.",
+      "shortDescription": [
+        "silk lining",
+        "front button closure",
+        "adjustable and detachable belt",
+        "two welt pockets at the front",
+        "one inner welt pocket",
+        "pointed collar",
+        "two-button cuffs",
+        "single back vent"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Use A Specialist Leather And Fur Cleaning Service Only.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_women_Leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814346139",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814346140",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814346141",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814346142",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A000EOYC2NZ2631",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/belted-coat-in-suede-A000EOYC2NZ2631.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a000eoyc2nz2631/1.jpg",
+        "/products/ys-pdp/a000eoyc2nz2631/2.jpg",
+        "/products/ys-pdp/a000eoyc2nz2631/3.jpg",
+        "/products/ys-pdp/a000eoyc2nz2631/4.jpg"
+      ]
+    },
+    {
+      "id": "A000E5YF2BD9615",
+      "sku": "A000E5YF2BD9615",
+      "name": "short shearling coat",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-leather-outerwear"
+      ],
+      "leafId": "ys-women-leather-outerwear",
+      "needsPdp": true,
+      "masterId": "A000E5YF2BD",
+      "color": "Grey",
+      "microColor": "CRAIE/GRIS CLAIR/CHAMOIS/TAUPE CLAIR",
+      "colorCode": "9615",
+      "url": "https://www.ysl.com/en-gb/pr/short-shearling-coat-A000E5YF2BD9615.html",
+      "path": "pr/short-shearling-coat-A000E5YF2BD9615.html",
+      "gbpPrice": 16600.0,
+      "inStock": true,
+      "compositions": "H 100% LAMB FURF 100% SILK FP 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/8ecfe33d-3dc0-4108-b241-056dfdc7ef6f/eCom/A000E5YF2BD9615_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/3605d430-bd7f-4550-85b2-32bead75111d/eCom/A000E5YF2BD9615_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/ac63ed34-b0bc-4b3a-9752-d83b1a2cd302/eCom/A000E5YF2BD9615_H.jpg?v=3"
+      ],
+      "description": "short shearling coat with a stand collar and puffed shoulders.",
+      "shortDescription": [
+        "silk lining",
+        "concealed front hook closure",
+        "two patch pockets at the front",
+        "one inner welt pocket",
+        "stand collar",
+        "Real fur: Lamb fur (shearling)"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Use A Specialist Leather And Fur Cleaning Service Only.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_women_Leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814408421",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814408422",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814408423",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814408424",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814408425",
+          "value": "F42",
+          "displayValue": "YSL F42 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A000E5YF2BD9615",
+          "name": "Grey",
+          "url": "https://www.ysl.com/en-gb/pr/short-shearling-coat-A000E5YF2BD9615.html",
+          "hex": "807d7a"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a000e5yf2bd9615/1.jpg",
+        "/products/ys-pdp/a000e5yf2bd9615/2.jpg",
+        "/products/ys-pdp/a000e5yf2bd9615/3.jpg"
+      ]
+    },
+    {
+      "id": "A00B3EY5L351000",
+      "sku": "A00B3EY5L351000",
+      "name": "boat-neck bodysuit in silicone-coated lace",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-lingerie-swimwear"
+      ],
+      "leafId": "ys-women-lingerie-swimwear",
+      "needsPdp": true,
+      "masterId": "A00B3EY5L35",
+      "color": "Black",
+      "microColor": "NOIR",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/boat-neck-bodysuit-in-silicone-coated-lace-A00B3EY5L351000.html",
+      "path": "pr/boat-neck-bodysuit-in-silicone-coated-lace-A00B3EY5L351000.html",
+      "gbpPrice": 4075.0,
+      "inStock": true,
+      "compositions": "T  52% POLYAMIDE T  48% VISCOSE T1 100 PZ  54 PZ  46% POLYAMIDE% VISCOSE% POLYAMIDEF 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/d61a175c-e0a8-419f-acf6-2ca2a3871c09/eCom/A00B3EY5L351000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/dc81490b-ce59-4f58-9e22-805b32e97cca/eCom/A00B3EY5L351000_H.jpg?v=1"
+      ],
+      "description": "sheer scalloped lace bodysuit, featuring long sleeves, a high boat neckline, and plunging V back.",
+      "shortDescription": [
+        "side zip closure",
+        "snap-button closure between the legs",
+        "high boat neckline with plunging V back",
+        "five-button cuffs"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_lingerie",
+        "superMicroCategory": "ysl_super_micro_women_lingerie"
+      },
+      "sizes": [
+        {
+          "id": "814544626",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814544627",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814544628",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814544629",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00B3EY5L351000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/boat-neck-bodysuit-in-silicone-coated-lace-A00B3EY5L351000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00b3ey5l351000/1.jpg",
+        "/products/ys-pdp/a00b3ey5l351000/2.jpg"
       ]
     }
   ]

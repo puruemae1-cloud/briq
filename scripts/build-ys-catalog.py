@@ -17,6 +17,7 @@ from di_common import gbp_to_krw  # noqa: E402
 from ko_qa import en_ratio, is_good_korean  # noqa: E402
 from ysl_common import load_json, save_json, slugify  # noqa: E402
 from ysl_config import RAW_DIR, YS_FAMILY_ORDER, YS_FAMILY_SCRAPERS  # noqa: E402
+from ys_size_charts import parse_ys_size_token, size_chart_for_rtw  # noqa: E402
 
 OUT_JSON = ROOT / "src/data/ys/ys-catalog.json"
 OUT_TS = ROOT / "src/data/ys/ys-catalog.ts"
@@ -181,14 +182,12 @@ def color_ko(name: str | None, cache: dict[str, str]) -> str:
     return translate(s.title() if s.isupper() else s, cache)
 
 
+
+
+
 def parse_size_display(display: str) -> tuple[str, str]:
-    """'YSL 41 / GB 7' -> (41, 7)."""
-    m = re.search(r"YSL\s*([0-9._]+)\s*/\s*GB\s*([0-9._]+)", display or "", re.I)
-    if m:
-        return m.group(1).replace("_", "."), m.group(2).replace("_", ".")
-    m = re.search(r"([0-9]+(?:[._][0-9]+)?)", display or "")
-    v = m.group(1).replace("_", ".") if m else (display or "")
-    return v, ""
+    """'YSL F34 / GB 6' or 'YSL 41 / GB 16' -> (ysl, gb)."""
+    return parse_ys_size_token(display)
 
 
 def build_shoes_size_chart(sizes: list[dict], *, mens: bool) -> dict | None:
@@ -217,31 +216,13 @@ def build_shoes_size_chart(sizes: list[dict], *, mens: bool) -> dict | None:
     }
 
 
-def build_rtw_size_chart(sizes: list[dict]) -> dict | None:
-    rows = []
-    for s in sizes or []:
-        disp = str(s.get("displayValue") or s.get("value") or "")
-        ysl, gb = parse_size_display(disp)
-        val = ysl or disp
-        if not val or val.upper() in {"U", "TU", "OS"}:
-            continue
-        rows.append([val, gb or "—"])
-    if len(rows) < 2:
-        return None
-    seen = set()
-    uniq = []
-    for r in rows:
-        if r[0] in seen:
-            continue
-        seen.add(r[0])
-        uniq.append(r)
-    return {
-        "id": "ys-rtw",
-        "titleKo": "생로랑 의류 사이즈 가이드",
-        "noteKo": "공홈 사이즈 표기를 따릅니다. 핏은 스타일별로 다를 수 있습니다.",
-        "headers": ["YSL", "GB"],
-        "rows": uniq,
-    }
+def build_rtw_size_chart(
+    sizes: list[dict],
+    *,
+    mens: bool,
+    leaf_hint: str = "",
+) -> dict | None:
+    return size_chart_for_rtw(sizes, mens=mens, leaf_hint=leaf_hint)
 
 
 def build_story(desc_ko: str, bullets_ko: list[str], care_ko: str, images: list[str]) -> list[dict]:
@@ -329,16 +310,24 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
         for s in sizes:
             val = str(s.get("value") or "").replace("_", ".")
             disp = str(s.get("displayValue") or val)
+            ysl_tok, gb_tok = parse_size_display(disp)
             if val.upper() in {"U", "TU", "OS"} and len(sizes) == 1:
                 label = "OS"
+                size_label = "OS"
             else:
                 label = disp.replace("YSL ", "").strip() or val
+                # Prefer F34 / GB 6 style for chips; fall back to raw value.
+                if ysl_tok and gb_tok:
+                    size_label = label
+                else:
+                    size_label = label
             vid = f"ys-{pid}-{slugify(val)}"
             variants.append(
                 {
                     "id": vid,
                     "name": label,
                     "nameKo": label,
+                    "size": size_label,
                     "sku": str(s.get("id") or pid),
                     "gbpPrice": gbp,
                     "price": price,
@@ -372,11 +361,18 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
 
     cat = family_category(family)
     mens = "men" in family
+    leaf_hint = str(raw.get("leafId") or "")
+    cols = [str(c) for c in (raw.get("collections") or [])]
+    if not leaf_hint:
+        for c in reversed(cols):
+            if c.startswith("ys-") and c not in {"ys-men", "ys-women", "saint-laurent"}:
+                leaf_hint = c
+                break
     size_chart = None
     if cat == "shoes":
         size_chart = build_shoes_size_chart(sizes, mens=mens)
     elif cat == "luxury":
-        size_chart = build_rtw_size_chart(sizes)
+        size_chart = build_rtw_size_chart(sizes, mens=mens, leaf_hint=leaf_hint)
 
     features = [x for x in [comps_ko, *(bullets[:6])] if x]
     tech = []
