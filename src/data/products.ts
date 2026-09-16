@@ -14,7 +14,10 @@ import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 import { gcCatalogProducts } from "@/data/gc/gc-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
 import { ceCatalogProducts } from "@/data/ce/ce-catalog";
-import { ysCatalogProducts } from "@/data/ys/ys-catalog";
+// Temporarily omit YS from the hot shop catalogue path — the 2.3k-SKU import
+// OOMs `/api/products/shop?category=all` on Vercel. Re-enable via
+// `ysCatalogProducts` once shop listing is lazy/chunked.
+// import { ysCatalogProducts } from "@/data/ys/ys-catalog";
 import { vwCatalogProducts } from "@/data/vw/vw-catalog";
 import { prCatalogProducts } from "@/data/pr/pr-catalog";
 import { lvCatalogProducts } from "@/data/lv/lv-catalog";
