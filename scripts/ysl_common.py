@@ -87,9 +87,13 @@ def fetch_plp_page(slug: str, *, page: int = 0, hits_per_page: int = 60) -> dict
     return r.json()["pageProps"]
 
 
-def iter_plp_products(slug: str, *, hits_per_page: int = 60, limit: int = 0) -> list[dict]:
+def iter_plp_products(
+    slug: str, *, hits_per_page: int = 60, limit: int = 0, require_full: bool = True
+) -> list[dict]:
+    """Fetch every PLP page. Official count = stats.nbAlgoliaHits (YSL GB)."""
     first = fetch_plp_page(slug, page=0, hits_per_page=hits_per_page)
     stats = first["results"]["stats"]
+    official = int(stats.get("nbAlgoliaHits") or 0)
     products = list(first["results"]["products"] or [])
     prices = {p["id"]: p for p in (first["results"].get("prices") or []) if p.get("id")}
     hits = {h.get("objectID") or h.get("smId"): h for h in (first["results"].get("hitsAlgolia") or [])}
@@ -105,18 +109,27 @@ def iter_plp_products(slug: str, *, hits_per_page: int = 60, limit: int = 0) -> 
         for h in pp["results"].get("hitsAlgolia") or []:
             hits[h.get("objectID") or h.get("smId")] = h
         time.sleep(0.25)
-    # attach price/stock hints
-    out = []
+    # attach price/stock hints + dedupe (keep first)
+    out: list[dict] = []
+    seen: set[str] = set()
     for p in products:
-        pid = p.get("id")
+        pid = str(p.get("id") or "")
+        if not pid or pid in seen:
+            continue
+        seen.add(pid)
         row = dict(p)
         if pid in prices:
             row["_price"] = prices[pid]
         if pid in hits:
             row["_hit"] = hits[pid]
+        row["_officialNbHits"] = official
         out.append(row)
         if limit and len(out) >= limit:
             break
+    if require_full and not limit and official and len(out) != official:
+        raise RuntimeError(
+            f"PLP count mismatch {slug}: got {len(out)} != official nbAlgoliaHits={official}"
+        )
     return out
 
 
@@ -204,8 +217,9 @@ def scrape_leaf_rows(
     skip_ids = skip_ids or set()
     slug = leaf["slug"]
     print(f"  PLP {leaf['id']} {slug}", flush=True)
-    plp_rows = iter_plp_products(slug, limit=limit)
-    print(f"  plp products={len(plp_rows)}", flush=True)
+    plp_rows = iter_plp_products(slug, limit=limit, require_full=not bool(limit))
+    official = plp_rows[0].get("_officialNbHits") if plp_rows else 0
+    print(f"  plp products={len(plp_rows)} official_nbAlgoliaHits={official}", flush=True)
     rows: list[dict] = []
     for i, p in enumerate(plp_rows, start=1):
         pid = str(p.get("id") or "")

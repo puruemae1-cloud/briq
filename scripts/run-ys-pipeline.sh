@@ -50,5 +50,10 @@ for fam in "${FAMILIES[@]}"; do
 done
 
 PYTHONUNBUFFERED=1 python3 scripts/build-ys-catalog.py >>"$LOG" 2>&1
+# Coverage guard (union of View All + subcats). Do not abort overnight runs —
+# still mark DONE so deploy can proceed; mismatch is logged for follow-up.
+PYTHONUNBUFFERED=1 python3 scripts/check-ys-coverage.py --fail >>"$LOG" 2>&1 || {
+  echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) WARN coverage mismatch vs official PLP (continuing)" | tee -a "$LOG"
+}
 echo OK > "$DONE"
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) pipeline DONE" | tee -a "$LOG"
