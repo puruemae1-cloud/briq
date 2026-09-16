@@ -385,7 +385,13 @@ def main() -> int:
         if sparse is None and src_roots:
             # Partial brand pushes only need that tree on the tag (~hundreds of
             # folders), not the full 128k+ product-images checkout.
-            sparse = [f"public/products/{name}" for name, _ in src_roots]
+            # Always pair with an existing brand (mb-pdp) so cone mode
+            # materializes public/products/ — otherwise a *new* brand path
+            # (never on the tag) can be copied + `git add -f`'d yet still
+            # show empty `git status` under sparse-checkout.
+            sparse = ["public/products/mb-pdp"] + [
+                f"public/products/{name}" for name, _ in src_roots
+            ]
         if sparse:
             print(f"Using sparse checkout ({len(sparse)} path(s)).", flush=True)
         if not add_worktree(tmp, sparse_paths=sparse):
