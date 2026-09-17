@@ -20,6 +20,12 @@ for fam in AL_FAMILY_ORDER:
     )
     if r.returncode != 0:
         print(f"WARN {fam} failed rc={r.returncode}", flush=True)
+    r = subprocess.run(
+        [sys.executable, "scripts/retag-al-leaves.py", "--family", fam],
+        cwd=str(Path.cwd()),
+    )
+    if r.returncode != 0:
+        print(f"WARN {fam} retag failed rc={r.returncode}", flush=True)
 
 r = subprocess.run([sys.executable, "scripts/build-al-catalog.py"])
 if r.returncode != 0:

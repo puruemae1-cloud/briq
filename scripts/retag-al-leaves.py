@@ -25,10 +25,31 @@ def main() -> int:
         for pid in ids:
             row = by_id.get(pid)
             if not row:
+                # Stub so leaf filters work before/without full PDP scrape.
+                by_id[pid] = {
+                    "id": pid,
+                    "sku": pid,
+                    "collections": list(cols),
+                    "leafId": leaf["id"],
+                    "needsPdp": True,
+                }
+                hit += 1
                 continue
             row["collections"] = list(dict.fromkeys([*(row.get("collections") or []), *cols]))
             hit += 1
         print(f"  {leaf['id']}: plp={len(ids)} tagged={hit}", flush=True)
+
+    # Stamp family View-All onto every SKU so Briq '전체' matches gender/brand hubs.
+    all_id = next((l["id"] for l in cfg["leaves"] if str(l["id"]).endswith("-all")), None)
+    parent_ids = []
+    if cfg["leaves"]:
+        parent_ids = list(cfg["leaves"][0].get("collections") or [])[:-1]  # parents without leaf
+    for p in by_id.values():
+        cols = list(p.get("collections") or [])
+        if all_id:
+            cols = list(dict.fromkeys([*cols, *parent_ids, all_id]))
+        p["collections"] = cols
+
     save_json(
         out,
         {
