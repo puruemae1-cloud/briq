@@ -1,0 +1,33 @@
+name: Weekly AllSaints sync
+
+on:
+  schedule:
+    - cron: "0 14 * * 5"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install curl_cffi
+        run: pip install curl_cffi
+      - name: Run AL weekly sync
+        run: |
+          chmod +x scripts/run-al-weekly-sync.sh
+          scripts/run-al-weekly-sync.sh
+      - name: Commit catalog updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/al || true
+          if git diff --staged --quiet; then
+            echo "No AL catalog changes"
+          else
+            git commit -m "chore(al): weekly catalog sync"
+            git push
+          fi
