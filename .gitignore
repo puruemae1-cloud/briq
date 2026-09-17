@@ -77,11 +77,5 @@ pr-mens-rtw-stages.log
 /public/products/vw-pdp/
 /public/products/lv-pdp/
 /public/products/mb-pdp/
-
-# London B&W banner source cache (downloaded during weekly refresh)
-/public/banners/_cache/
-
-*.ts.bak
-*.bak
-.tools/
+/public/products/al-pdp/
 /public/products/ys-pdp/

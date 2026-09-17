@@ -22,6 +22,7 @@ import {
   isYsShopSub,
 } from "@/data/ys/ys-catalog-lazy";
 import { vwCatalogProducts } from "@/data/vw/vw-catalog";
+import { alCatalogProducts } from "@/data/al/al-catalog";
 import { prCatalogProducts } from "@/data/pr/pr-catalog";
 import { lvCatalogProducts } from "@/data/lv/lv-catalog";
 import { diCatalogProducts } from "@/data/di/di-catalog";
@@ -57,6 +58,7 @@ export const products: Product[] = [
   ...chCatalogProducts,
   ...ceCatalogProducts,
   ...vwCatalogProducts,
+  ...alCatalogProducts,
   ...prCatalogProducts,
   ...lvCatalogProducts,
   ...diCatalogProducts,
@@ -623,6 +625,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.diCollections?.some((c) => expanded.includes(c))) return true;
       if (p.mbCollections?.some((c) => expanded.includes(c))) return true;
       if (p.vwCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.alCollections?.some((c) => expanded.includes(c))) return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
@@ -652,6 +655,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.mbCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.vwCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.alCollections?.some((c) => expanded.includes(c))))
         return true;
       return false;
     });

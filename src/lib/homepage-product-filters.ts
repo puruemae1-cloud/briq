@@ -28,6 +28,7 @@ export function isHomepageSwimwearProduct(product: Product): boolean {
     ...(product.chCollections || []),
     ...(product.ceCollections || []),
     ...(product.vwCollections || []),
+    ...(product.alCollections || []),
     ...(product.mbCollections || []),
     ...(product.prCollections || []),
     ...(product.lvCollections || []),

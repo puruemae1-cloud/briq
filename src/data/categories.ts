@@ -410,6 +410,62 @@ export type SubcategoryId =
   | "ps-gifts-her"
   | "ps-gifts-homeware"
   | "belstaff"
+  | "all-saints"
+  | "al-men"
+  | "al-women"
+  | "al-men-rtw-all"
+  | "al-men-coats-jackets"
+  | "al-men-jeans"
+  | "al-men-knitwear"
+  | "al-men-leathers"
+  | "al-men-leather-jackets"
+  | "al-men-shirts"
+  | "al-men-sweatshirts-hoodies"
+  | "al-men-tshirts"
+  | "al-men-trousers"
+  | "al-men-sweatpants"
+  | "al-women-rtw-all"
+  | "al-women-coats-jackets"
+  | "al-women-dresses"
+  | "al-women-jeans"
+  | "al-women-knitwear"
+  | "al-women-leather"
+  | "al-women-leather-jackets"
+  | "al-women-shirts"
+  | "al-women-skirts-shorts"
+  | "al-women-sweatshirts-hoodies"
+  | "al-women-tshirts"
+  | "al-women-tops-shirts"
+  | "al-women-trousers-leggings"
+  | "all-saints-shoes"
+  | "al-men-shoes"
+  | "al-women-shoes"
+  | "al-men-shoes-all"
+  | "al-men-boots"
+  | "al-men-casual-shoes"
+  | "al-men-trainers"
+  | "al-women-shoes-all"
+  | "al-women-boots"
+  | "al-women-flats"
+  | "al-women-heels"
+  | "al-women-trainers"
+  | "all-saints-accessories"
+  | "al-men-accessories"
+  | "al-women-accessories"
+  | "al-men-acc-all"
+  | "al-men-sunglasses"
+  | "al-men-belts"
+  | "al-men-wallets"
+  | "al-men-hats"
+  | "al-men-jewellery"
+  | "al-men-bags"
+  | "al-women-acc-all"
+  | "al-women-sunglasses"
+  | "al-women-belts"
+  | "al-women-scarves"
+  | "al-women-hats"
+  | "al-women-jewellery"
+  | "al-women-handbags"
   | "bs-men"
   | "bs-men-new"
   | "bs-men-outerwear"
@@ -1523,6 +1579,32 @@ export const DI_BAGS_MEN_LEAF_IDS: SubcategoryId[] = [
 
 
 /** Celine men's ready-to-wear by category (official GB mens RTW PLPs). */
+
+
+export const AL_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "al-men-rtw-all","al-men-coats-jackets","al-men-jeans","al-men-knitwear","al-men-leathers",
+  "al-men-leather-jackets","al-men-shirts","al-men-sweatshirts-hoodies","al-men-tshirts",
+  "al-men-trousers","al-men-sweatpants",
+];
+export const AL_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
+  "al-women-rtw-all","al-women-coats-jackets","al-women-dresses","al-women-jeans","al-women-knitwear",
+  "al-women-leather","al-women-leather-jackets","al-women-shirts","al-women-skirts-shorts",
+  "al-women-sweatshirts-hoodies","al-women-tshirts","al-women-tops-shirts","al-women-trousers-leggings",
+];
+export const AL_MEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "al-men-shoes-all","al-men-boots","al-men-casual-shoes","al-men-trainers",
+];
+export const AL_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
+  "al-women-shoes-all","al-women-boots","al-women-flats","al-women-heels","al-women-trainers",
+];
+export const AL_MEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "al-men-acc-all","al-men-sunglasses","al-men-belts","al-men-wallets","al-men-hats",
+  "al-men-jewellery","al-men-bags",
+];
+export const AL_WOMEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "al-women-acc-all","al-women-sunglasses","al-women-belts","al-women-scarves","al-women-hats",
+  "al-women-jewellery","al-women-handbags",
+];
 
 export const YS_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "ys-men-rtw-all","ys-men-shirts","ys-men-jersey","ys-men-knitwear","ys-men-denim",
@@ -3238,6 +3320,62 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "lv-lighting": ["lv-lighting"],
   "lv-storage": ["lv-storage"],
 
+  "all-saints": ["all-saints", "al-women", ...AL_WOMEN_RTW_LEAF_IDS, "al-men", ...AL_MEN_RTW_LEAF_IDS],
+  "al-women": ["al-women", ...AL_WOMEN_RTW_LEAF_IDS],
+  "al-men": ["al-men", ...AL_MEN_RTW_LEAF_IDS],
+  "all-saints-shoes": ["all-saints-shoes", "al-women-shoes", ...AL_WOMEN_SHOES_LEAF_IDS, "al-men-shoes", ...AL_MEN_SHOES_LEAF_IDS],
+  "al-women-shoes": ["al-women-shoes", ...AL_WOMEN_SHOES_LEAF_IDS],
+  "al-men-shoes": ["al-men-shoes", ...AL_MEN_SHOES_LEAF_IDS],
+  "all-saints-accessories": ["all-saints-accessories", "al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS, "al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
+  "al-women-accessories": ["al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS],
+  "al-men-accessories": ["al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
+  "al-men-rtw-all": ["al-men-rtw-all"],
+  "al-men-coats-jackets": ["al-men-coats-jackets"],
+  "al-men-jeans": ["al-men-jeans"],
+  "al-men-knitwear": ["al-men-knitwear"],
+  "al-men-leathers": ["al-men-leathers"],
+  "al-men-leather-jackets": ["al-men-leather-jackets"],
+  "al-men-shirts": ["al-men-shirts"],
+  "al-men-sweatshirts-hoodies": ["al-men-sweatshirts-hoodies"],
+  "al-men-tshirts": ["al-men-tshirts"],
+  "al-men-trousers": ["al-men-trousers"],
+  "al-men-sweatpants": ["al-men-sweatpants"],
+  "al-women-rtw-all": ["al-women-rtw-all"],
+  "al-women-coats-jackets": ["al-women-coats-jackets"],
+  "al-women-dresses": ["al-women-dresses"],
+  "al-women-jeans": ["al-women-jeans"],
+  "al-women-knitwear": ["al-women-knitwear"],
+  "al-women-leather": ["al-women-leather"],
+  "al-women-leather-jackets": ["al-women-leather-jackets"],
+  "al-women-shirts": ["al-women-shirts"],
+  "al-women-skirts-shorts": ["al-women-skirts-shorts"],
+  "al-women-sweatshirts-hoodies": ["al-women-sweatshirts-hoodies"],
+  "al-women-tshirts": ["al-women-tshirts"],
+  "al-women-tops-shirts": ["al-women-tops-shirts"],
+  "al-women-trousers-leggings": ["al-women-trousers-leggings"],
+  "al-men-shoes-all": ["al-men-shoes-all"],
+  "al-men-boots": ["al-men-boots"],
+  "al-men-casual-shoes": ["al-men-casual-shoes"],
+  "al-men-trainers": ["al-men-trainers"],
+  "al-women-shoes-all": ["al-women-shoes-all"],
+  "al-women-boots": ["al-women-boots"],
+  "al-women-flats": ["al-women-flats"],
+  "al-women-heels": ["al-women-heels"],
+  "al-women-trainers": ["al-women-trainers"],
+  "al-men-acc-all": ["al-men-acc-all"],
+  "al-men-sunglasses": ["al-men-sunglasses"],
+  "al-men-belts": ["al-men-belts"],
+  "al-men-wallets": ["al-men-wallets"],
+  "al-men-hats": ["al-men-hats"],
+  "al-men-jewellery": ["al-men-jewellery"],
+  "al-men-bags": ["al-men-bags"],
+  "al-women-acc-all": ["al-women-acc-all"],
+  "al-women-sunglasses": ["al-women-sunglasses"],
+  "al-women-belts": ["al-women-belts"],
+  "al-women-scarves": ["al-women-scarves"],
+  "al-women-hats": ["al-women-hats"],
+  "al-women-jewellery": ["al-women-jewellery"],
+  "al-women-handbags": ["al-women-handbags"],
   "saint-laurent": ["saint-laurent", "ys-women", ...YS_WOMEN_RTW_LEAF_IDS, "ys-men", ...YS_MEN_RTW_LEAF_IDS],
   "ys-women": ["ys-women", ...YS_WOMEN_RTW_LEAF_IDS],
   "ys-men": ["ys-men", ...YS_MEN_RTW_LEAF_IDS],
@@ -5087,6 +5225,55 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+      
+      {
+        id: "all-saints",
+        labelKo: "올세인츠",
+        href: "/shop?category=luxury&sub=all-saints",
+        children: [
+          {
+            id: "al-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=al-women",
+            navLeaf: true,
+            children: [
+              { id: "al-women-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=al-women-rtw-all" },
+              { id: "al-women-coats-jackets", labelKo: "코트 & 재킷", href: "/shop?category=luxury&sub=al-women-coats-jackets" },
+              { id: "al-women-dresses", labelKo: "드레스", href: "/shop?category=luxury&sub=al-women-dresses" },
+              { id: "al-women-jeans", labelKo: "진", href: "/shop?category=luxury&sub=al-women-jeans" },
+              { id: "al-women-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=al-women-knitwear" },
+              { id: "al-women-leather", labelKo: "레더", href: "/shop?category=luxury&sub=al-women-leather" },
+              { id: "al-women-leather-jackets", labelKo: "레더 재킷", href: "/shop?category=luxury&sub=al-women-leather-jackets" },
+              { id: "al-women-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=al-women-shirts" },
+              { id: "al-women-skirts-shorts", labelKo: "스커트 & 쇼츠", href: "/shop?category=luxury&sub=al-women-skirts-shorts" },
+              { id: "al-women-sweatshirts-hoodies", labelKo: "스웨트셔츠 & 후디", href: "/shop?category=luxury&sub=al-women-sweatshirts-hoodies" },
+              { id: "al-women-tshirts", labelKo: "티셔츠", href: "/shop?category=luxury&sub=al-women-tshirts" },
+              { id: "al-women-tops-shirts", labelKo: "탑 & 셔츠", href: "/shop?category=luxury&sub=al-women-tops-shirts" },
+              { id: "al-women-trousers-leggings", labelKo: "트라우저 & 레깅스", href: "/shop?category=luxury&sub=al-women-trousers-leggings" },
+            ],
+          },
+          {
+            id: "al-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=al-men",
+            navLeaf: true,
+            children: [
+              { id: "al-men-rtw-all", labelKo: "전체", href: "/shop?category=luxury&sub=al-men-rtw-all" },
+              { id: "al-men-coats-jackets", labelKo: "코트 & 재킷", href: "/shop?category=luxury&sub=al-men-coats-jackets" },
+              { id: "al-men-jeans", labelKo: "진", href: "/shop?category=luxury&sub=al-men-jeans" },
+              { id: "al-men-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=al-men-knitwear" },
+              { id: "al-men-leathers", labelKo: "레더", href: "/shop?category=luxury&sub=al-men-leathers" },
+              { id: "al-men-leather-jackets", labelKo: "레더 재킷", href: "/shop?category=luxury&sub=al-men-leather-jackets" },
+              { id: "al-men-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=al-men-shirts" },
+              { id: "al-men-sweatshirts-hoodies", labelKo: "스웨트셔츠 & 후디", href: "/shop?category=luxury&sub=al-men-sweatshirts-hoodies" },
+              { id: "al-men-tshirts", labelKo: "티셔츠", href: "/shop?category=luxury&sub=al-men-tshirts" },
+              { id: "al-men-trousers", labelKo: "트라우저", href: "/shop?category=luxury&sub=al-men-trousers" },
+              { id: "al-men-sweatpants", labelKo: "스웨트팬츠", href: "/shop?category=luxury&sub=al-men-sweatpants" },
+            ],
+          },
+        ],
+      },
+
       {
         id: "saint-laurent",
         labelKo: "생로랑",
@@ -6801,6 +6988,40 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+      
+      {
+        id: "all-saints-shoes",
+        labelKo: "올세인츠",
+        href: "/shop?category=shoes&sub=all-saints-shoes",
+        children: [
+          {
+            id: "al-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=al-women-shoes",
+            navLeaf: true,
+            children: [
+              { id: "al-women-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=al-women-shoes-all" },
+              { id: "al-women-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=al-women-boots" },
+              { id: "al-women-flats", labelKo: "플랫", href: "/shop?category=shoes&sub=al-women-flats" },
+              { id: "al-women-heels", labelKo: "힐", href: "/shop?category=shoes&sub=al-women-heels" },
+              { id: "al-women-trainers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=al-women-trainers" },
+            ],
+          },
+          {
+            id: "al-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=al-men-shoes",
+            navLeaf: true,
+            children: [
+              { id: "al-men-shoes-all", labelKo: "전체", href: "/shop?category=shoes&sub=al-men-shoes-all" },
+              { id: "al-men-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=al-men-boots" },
+              { id: "al-men-casual-shoes", labelKo: "슈즈", href: "/shop?category=shoes&sub=al-men-casual-shoes" },
+              { id: "al-men-trainers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=al-men-trainers" },
+            ],
+          },
+        ],
+      },
+
       {
         id: "saint-laurent-shoes",
         labelKo: "생로랑",
@@ -7916,6 +8137,45 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+      
+      {
+        id: "all-saints-accessories",
+        labelKo: "올세인츠",
+        href: "/shop?category=accessories&sub=all-saints-accessories",
+        children: [
+          {
+            id: "al-women-accessories",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=al-women-accessories",
+            navLeaf: true,
+            children: [
+              { id: "al-women-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=al-women-acc-all" },
+              { id: "al-women-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=al-women-sunglasses" },
+              { id: "al-women-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=al-women-belts" },
+              { id: "al-women-scarves", labelKo: "스카프", href: "/shop?category=accessories&sub=al-women-scarves" },
+              { id: "al-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-women-hats" },
+              { id: "al-women-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-women-jewellery" },
+              { id: "al-women-handbags", labelKo: "핸드백", href: "/shop?category=accessories&sub=al-women-handbags" },
+            ],
+          },
+          {
+            id: "al-men-accessories",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=al-men-accessories",
+            navLeaf: true,
+            children: [
+              { id: "al-men-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=al-men-acc-all" },
+              { id: "al-men-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=al-men-sunglasses" },
+              { id: "al-men-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=al-men-belts" },
+              { id: "al-men-wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=al-men-wallets" },
+              { id: "al-men-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-men-hats" },
+              { id: "al-men-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-men-jewellery" },
+              { id: "al-men-bags", labelKo: "가방", href: "/shop?category=accessories&sub=al-men-bags" },
+            ],
+          },
+        ],
+      },
+
       {
         id: "saint-laurent-accessories",
         labelKo: "생로랑",
