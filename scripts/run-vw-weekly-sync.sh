@@ -32,6 +32,23 @@ r = subprocess.run(
 if r.returncode != 0:
     raise SystemExit(r.returncode)
 
+# Refresh clothing sizes/charts (fixes empty→OS and missing size guides).
+r = subprocess.run(
+    [sys.executable, "scripts/refresh-vw-rtw-sizes.py"],
+    cwd=str(Path.cwd()),
+)
+if r.returncode != 0:
+    print(f"WARN refresh-vw-rtw-sizes rc={r.returncode}", flush=True)
+    # Rebuild after partial refresh so catalog picks up whatever succeeded.
+subprocess.run([sys.executable, "scripts/build-vw-catalog.py"], cwd=str(Path.cwd()), check=False)
+
+r = subprocess.run(
+    [sys.executable, "scripts/check-vw-rtw-sizes.py", "--fail"],
+    cwd=str(Path.cwd()),
+)
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
 # Accessories/jewellery hub must keep full leaf scrape (not just *-all hubs).
 r = subprocess.run(
     [sys.executable, "scripts/check-vw-accessories-coverage.py", "--fail"],

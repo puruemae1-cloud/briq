@@ -7,114 +7,15 @@
   "officialNbAlgoliaHits": 321,
   "officialUnionCount": 335,
   "leaves": [
-    {
-      "id": "ys-men-rtw-all",
-      "label": "View All",
-      "labelKo": "전체",
-      "slug": "shop-men/ready-to-wear/all-ready-to-wear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/all-ready-to-wear",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-rtw-all"
-      ]
-    },
-    {
-      "id": "ys-men-shirts",
-      "label": "Shirts",
-      "labelKo": "셔츠",
-      "slug": "shop-men/ready-to-wear/shirts",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/shirts",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-shirts"
-      ]
-    },
-    {
-      "id": "ys-men-jersey",
-      "label": "Jersey",
-      "labelKo": "저지",
-      "slug": "shop-men/ready-to-wear/jersey",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/jersey",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-jersey"
-      ]
-    },
-    {
-      "id": "ys-men-knitwear",
-      "label": "Knitwear",
-      "labelKo": "니트웨어",
-      "slug": "shop-men/ready-to-wear/knitwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/knitwear",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-knitwear"
-      ]
-    },
-    {
-      "id": "ys-men-denim",
-      "label": "Denim",
-      "labelKo": "데님",
-      "slug": "shop-men/ready-to-wear/denim-men",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/denim-men",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-denim"
-      ]
-    },
-    {
-      "id": "ys-men-jackets-pants",
-      "label": "Jackets and Pants",
-      "labelKo": "재킷 & 팬츠",
-      "slug": "shop-men/ready-to-wear/jackets-and-pants",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/jackets-and-pants",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-jackets-pants"
-      ]
-    },
-    {
-      "id": "ys-men-outerwear",
-      "label": "Outerwear",
-      "labelKo": "아우터웨어",
-      "slug": "shop-men/ready-to-wear/outerwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/outerwear",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-outerwear"
-      ]
-    },
-    {
-      "id": "ys-men-coats-trench",
-      "label": "Coats and Trench",
-      "labelKo": "코트 & 트렌치",
-      "slug": "shop-men/ready-to-wear/coats-and-trench",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/coats-and-trench",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-coats-trench"
-      ]
-    },
-    {
-      "id": "ys-men-leather",
-      "label": "Leather",
-      "labelKo": "레더",
-      "slug": "shop-men/ready-to-wear/leather",
-      "url": "https://www.ysl.com/en-gb/ca/shop-men/ready-to-wear/leather",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-leather"
-      ]
-    }
+    "ys-men-rtw-all",
+    "ys-men-shirts",
+    "ys-men-jersey",
+    "ys-men-knitwear",
+    "ys-men-denim",
+    "ys-men-jackets-pants",
+    "ys-men-outerwear",
+    "ys-men-coats-trench",
+    "ys-men-leather"
   ],
   "products": [
     {
@@ -130,9 +31,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2410.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
@@ -225,9 +127,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2410.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
@@ -411,9 +314,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERFP 100% COTTON",
@@ -499,9 +403,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  84% VISCOSE T  12% POLYAMIDE T   4% ELASTAN R  90% VISCOSE R   5% ELASTAN R   5% POLYAMIDE DT 100% POLYAMIDEFP 100% COTTON",
@@ -587,9 +493,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  57% COTTON T  43% POLYAMIDE R  98% POLYAMIDE R   2% ELASTAN DT 100% POLYAMIDEFP 100% COTTON",
@@ -678,9 +586,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2395.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -765,9 +674,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2270.0,
       "inStock": true,
       "compositions": "T 100% POLYESTERF  58% CUPRO F  42% COTTON FP 100% POLYESTER",
@@ -950,9 +860,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2180.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDE T1 100 T2 100% POLYAMIDE% POLYAMIDEF 100% POLYAMIDE",
@@ -1038,9 +949,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2220.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:INF 100% CUPRO FM 100% VISCOSE FP 100% COTTON",
@@ -1132,9 +1044,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2130.0,
       "inStock": true,
       "compositions": "T 100% COTTONF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP  65% POLYESTER FP  35% COTTON",
@@ -1417,9 +1330,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-outerwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-outerwear",
       "gbpPrice": 2270.0,
       "inStock": true,
       "compositions": "CP  57 CP  43% POLYESTER% SILKF 100% VISCOSE FP 100% COTTON",
@@ -1610,9 +1524,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 6900.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FP 100% COTTON",
@@ -1685,9 +1600,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 6000.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -1766,9 +1682,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 5180.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF 100% SILK FP 100% COTTON",
@@ -1866,9 +1783,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 5180.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF 100% SILK FP 100% COTTON",
@@ -1952,9 +1870,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4345.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -2045,9 +1964,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "L 100% CROSTA DI VITELLOF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -2135,9 +2055,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4875.0,
       "inStock": true,
       "compositions": "L 100 I6 100% LAMB LEATHER% POLYESTERF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -2230,9 +2151,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4875.0,
       "inStock": true,
       "compositions": "L 100 R  50% ACRYLIC R  50% WOOL BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -2320,9 +2242,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4165.0,
       "inStock": true,
       "compositions": "L 100% COWHIDEF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -2413,9 +2336,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 3725.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF  73% ACETATE F  27% SILK",
@@ -2509,9 +2433,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 3410.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  60% CUPRO F  40% COTTON FP 100% COTTON",
@@ -2607,9 +2532,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 3865.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -2701,9 +2627,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4875.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  53% COTTON F  47% VISCOSE FP 100% COTTON",
@@ -2802,9 +2729,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 3865.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -2906,9 +2834,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4270.0,
       "inStock": true,
       "compositions": "L 100 CO 100 R 100% WOOL BU 100% LAMB LEATHER% LAMB FUR% BUBALUS BUBALIS O:INF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -3111,9 +3040,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 5150.0,
       "inStock": true,
       "compositions": "H 100 R 100% WOOL% LAMB FUR",
@@ -3203,9 +3133,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4270.0,
       "inStock": true,
       "compositions": "L 100 CO 100 R 100% WOOL BU 100% LAMB LEATHER% LAMB FUR% BUBALUS BUBALIS O:INF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -3610,9 +3541,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4450.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3689,9 +3621,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4450.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3774,9 +3707,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T  97% WOOL T   3% POLYAMIDEF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -3846,9 +3780,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4450.0,
       "inStock": true,
       "compositions": "CP  98 CP   2% WOOL% POLYAMIDEFM 100% VISCOSE FP 100% SILK",
@@ -3928,9 +3863,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "CP  60 CP  40% WOOL% CASHMEREFM 100% VISCOSE FP 100% SILK",
@@ -4010,9 +3946,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "CP  60 CP  40% WOOL% CASHMEREFM 100% VISCOSE FP 100% SILK",
@@ -4086,9 +4023,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "CP 100 CI 100% WOOL% WOOLFA 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -4162,9 +4100,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4725.0,
       "inStock": true,
       "compositions": "CP 100 AL 100% WOOL% LAMB LEATHERFA 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -4240,9 +4179,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3105.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDE BU 100% BUBALUS BUBALIS O:INF 100% VISCOSE",
@@ -4324,9 +4264,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3270.0,
       "inStock": true,
       "compositions": "CP 100 CI 100 B2 100 DJ 100% COTTON% COTTON% COWHIDE% LAMB LEATHERFP 100% COTTON",
@@ -4401,9 +4342,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3015.0,
       "inStock": true,
       "compositions": "E  60 E  40 NA 100 BU 100 IS 100% POLYESTER% COTTON% COTTON% BUBALUS BUBALIS O:IN% WOOL",
@@ -4494,9 +4436,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3545.0,
       "inStock": true,
       "compositions": "CP 100 DJ 100 I6 100% WOOL% COWHIDE% POLYESTERF1 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -4571,9 +4514,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3105.0,
       "inStock": true,
       "compositions": "T 100% COTTONF1  65% POLYESTER F1  35% COTTON F  62% VISCOSE F  38% COTTON",
@@ -4676,9 +4620,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3190.0,
       "inStock": true,
       "compositions": "T 100% SILKF1 100% COTTON F 100% POLYAMIDE",
@@ -4769,9 +4714,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 5760.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE BU 100% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -4839,9 +4785,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 6400.0,
       "inStock": true,
       "compositions": "L 100 BU 100% BUFALO% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -4946,9 +4893,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T 100% WOOL BU 100% BUBALUS BUBALIS O:INFP 100% SILK",
@@ -5444,9 +5392,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "CP 100% POLYURETHANE",
@@ -5541,9 +5490,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -5640,9 +5590,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6157,9 +6108,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2545.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6249,9 +6201,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2545.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6339,9 +6292,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2545.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  14% MOHAIRF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6427,9 +6381,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -6509,9 +6464,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -6587,9 +6543,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  14% MOHAIRF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -6669,9 +6626,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3180.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6760,9 +6718,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6843,9 +6802,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  98% WOOL T   2% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -6926,9 +6886,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T  69% WOOL T  30% VISCOSE T   1% POLYESTERF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -6998,9 +6959,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1455.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7072,9 +7034,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7142,9 +7105,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -7232,9 +7196,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -7319,9 +7284,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T  98% WOOL T   2% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -7402,9 +7368,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7488,9 +7455,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T  98% WOOL T   2% POLYESTERF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7564,9 +7532,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7648,9 +7617,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "CP  86 CP  14% WOOL% POLYAMIDEFM 100% VISCOSE",
@@ -7730,9 +7700,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -7822,9 +7793,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3995.0,
       "inStock": true,
       "compositions": "CP  60 CP  40% WOOL% CASHMEREFM 100% VISCOSE",
@@ -7901,9 +7873,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -7971,9 +7944,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1455.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -8250,9 +8224,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -8347,9 +8322,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2815.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -8989,9 +8965,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOLF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -9349,9 +9326,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2180.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF1 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -9492,9 +9470,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2570.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  14% MOHAIRF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -9579,9 +9558,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3105.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIRF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -9666,9 +9646,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3990.0,
       "inStock": true,
       "compositions": "T 100% SILKF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -9754,9 +9735,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1245.0,
       "inStock": true,
       "compositions": "T  86% WOOL T  14% MOHAIR C  86 C  14% WOOL% MOHAIRF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -9837,9 +9819,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIR C  75 C  25% WOOL% MOHAIRF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -9914,9 +9897,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2220.0,
       "inStock": true,
       "compositions": "T 100% SILK C 100% SILKFP  97% COTTON FP   3% ELASTAN",
@@ -10161,9 +10145,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2220.0,
       "inStock": true,
       "compositions": "T 100% SILK C 100% SILKFP  97% COTTON FP   3% ELASTAN",
@@ -10511,9 +10496,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3725.0,
       "inStock": true,
       "compositions": "T 100% SILKF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -10599,9 +10585,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2485.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIRF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -10688,9 +10675,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2545.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -10887,9 +10875,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1245.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIR C  75 C  25% WOOL% MOHAIRFP  97% COTTON FP   3% ELASTAN",
@@ -10958,9 +10947,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1245.0,
       "inStock": true,
       "compositions": "T 100% WOOL C 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -11411,9 +11401,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": "T  80% COTTON T  20% POLYESTER C  80 C  20% COTTON% POLYESTERFP  97% COTTON FP   3% ELASTAN",
@@ -11495,9 +11486,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": "T 100% COTTON C 100% COTTON",
@@ -11571,9 +11563,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3725.0,
       "inStock": true,
       "compositions": "T 100% SILKF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -11654,9 +11647,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2485.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -11755,9 +11749,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2485.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -11845,9 +11840,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1120.0,
       "inStock": true,
       "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -11942,9 +11938,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 970.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -12023,9 +12020,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -12320,9 +12318,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTONFP  97% COTTON FP   3% ELASTAN",
@@ -12414,9 +12413,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIR C  75 C  25% WOOL% MOHAIRFP  97% COTTON FP   3% ELASTAN",
@@ -12492,9 +12492,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  75% WOOL T  25% MOHAIR C  75 C  25% WOOL% MOHAIRFP  97% COTTON FP   3% ELASTAN",
@@ -12570,9 +12571,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T 100% WOOL C 100% WOOLFP  97% COTTON FP   3% ELASTAN",
@@ -12881,9 +12883,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK",
@@ -13313,9 +13316,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 3990.0,
       "inStock": true,
       "compositions": "T 100% CASHMEREF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -13423,9 +13427,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -13529,9 +13534,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2840.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -13733,9 +13739,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2570.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -13841,9 +13848,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERFP  97% COTTON FP   3% ELASTAN",
@@ -13937,9 +13945,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1080.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -14033,9 +14042,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1085.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% POLYESTERF 100% SILK FP  97% COTTON FP   3% ELASTAN",
@@ -14132,9 +14142,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100% COTTON",
@@ -14210,9 +14221,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -14299,9 +14311,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100% COTTON",
@@ -14376,9 +14389,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100% COTTON",
@@ -14454,9 +14468,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100% COTTON",
@@ -14538,9 +14553,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -14628,9 +14644,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 810.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -14718,9 +14735,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% COTTON DS  80 DS  20% POLYAMIDE% ELASTAN",
@@ -14795,9 +14813,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% COTTON DS  80 DS  20% POLYAMIDE% ELASTAN",
@@ -14878,9 +14897,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% COTTONFP 100% COTTON",
@@ -14950,9 +14970,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% COTTONFP 100% COTTON",
@@ -15028,9 +15049,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% COTTONFP 100% COTTON",
@@ -15100,9 +15122,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1240.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15194,9 +15217,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15289,9 +15313,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15392,9 +15417,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 810.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15482,9 +15508,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -15564,9 +15591,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 720.0,
       "inStock": true,
       "compositions": "CP 100% COTTON",
@@ -15652,9 +15680,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILKFP 100% SILK",
@@ -15725,9 +15754,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -15820,9 +15850,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "CP 100% SILK",
@@ -15890,9 +15921,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1950.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK",
@@ -15957,9 +15989,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1240.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16040,9 +16073,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1155.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16122,9 +16157,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1240.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDE",
@@ -16218,9 +16254,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1685.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16315,9 +16352,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1510.0,
       "inStock": true,
       "compositions": "T  59% VISCOSE T  41% SILK",
@@ -16418,9 +16456,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  80% COTTON T  20% LINEN BU 100% BUBALUS BUBALIS O:IN",
@@ -16523,9 +16563,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -16616,9 +16658,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  80% COTTON T  20% LINEN BU 100% BUBALUS BUBALIS O:IN",
@@ -16715,9 +16759,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 945.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16803,9 +16848,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 850.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -16896,9 +16942,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -16987,9 +17034,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1240.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -17083,9 +17131,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1000.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -17257,9 +17306,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -17357,9 +17407,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 975.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -17452,9 +17503,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1030.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -17772,9 +17824,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -17862,9 +17915,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 700.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19277,9 +19331,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1545.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -19762,9 +19817,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1270.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -20276,9 +20332,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 975.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -20364,9 +20421,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": "T 100% COTTON C 100% COTTONFP  97% COTTON FP   3% ELASTAN",
@@ -20447,9 +20505,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jackets-pants"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jackets-pants",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": "T 100% COTTON C 100% COTTONFP  97% COTTON FP   3% ELASTAN",
@@ -20530,9 +20589,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -20609,9 +20669,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -20789,9 +20850,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T  54% LYOCELL T  46% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -20879,9 +20941,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 1000.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -20969,9 +21032,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -21152,9 +21216,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -21242,9 +21307,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 1280.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -21336,9 +21402,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 1230.0,
       "inStock": true,
       "compositions": "T  98% COTTON T   2% POLYESTER ET 100% COWHIDE",
@@ -21429,9 +21496,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-shirts"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-shirts",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% COTTON DT 100% COWHIDEF 100% VISCOSE",
@@ -21516,9 +21584,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -21621,9 +21690,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEF 100% COTTON",
@@ -21726,9 +21796,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -21839,9 +21910,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -21953,9 +22025,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 770.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -22073,9 +22146,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -22192,9 +22266,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEF 100% COTTON",
@@ -22311,9 +22386,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -22430,9 +22506,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 700.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -22529,9 +22606,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -22644,9 +22722,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -22758,9 +22837,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 810.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -22864,9 +22944,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -22978,9 +23059,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 865.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -23084,9 +23166,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 500.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -23173,9 +23256,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -23288,9 +23372,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -23402,9 +23487,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -23480,9 +23566,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1500.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -23558,9 +23645,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -23638,9 +23726,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 880.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -23713,9 +23802,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1420.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -23788,9 +23878,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1245.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -23869,9 +23960,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1000.0,
       "inStock": true,
       "compositions": "T 100% COTTON DJ 100% COWHIDE",
@@ -23959,9 +24051,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -24036,9 +24129,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1185.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -24112,9 +24206,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% COWHIDE",
@@ -24209,9 +24304,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% WOOL DT 100% COWHIDE",
@@ -24306,9 +24402,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 850.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -24387,9 +24484,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE DT 100% CROSTA DI VITELLO",
@@ -24553,9 +24651,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": null,
       "inStock": true,
       "compositions": "T 100% CASHMERE",
@@ -24635,9 +24734,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1200.0,
       "inStock": true,
       "compositions": "T  60% SILK T  40% COTTON",
@@ -24719,9 +24819,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 935.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -24795,9 +24896,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1200.0,
       "inStock": true,
       "compositions": "T  60% SILK T  40% COTTON",
@@ -24883,9 +24985,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1030.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -24967,9 +25070,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1090.0,
       "inStock": true,
       "compositions": "T  42% CASHMERE T  36% SILK T  22% LINEN",
@@ -25056,9 +25160,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1080.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25145,9 +25250,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1110.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25220,9 +25326,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T  80% LINEN T  20% POLYAMIDE",
@@ -25288,9 +25395,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  35% WOOL T  35% CASHMERE T  30% SILK",
@@ -25363,9 +25471,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 905.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25456,9 +25566,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 905.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25621,9 +25733,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1065.0,
       "inStock": true,
       "compositions": "T 100% SILK",
@@ -25695,9 +25808,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25776,9 +25890,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 880.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -25857,9 +25972,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 2180.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -25921,9 +26037,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 1135.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -25988,9 +26105,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-knitwear",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -26064,9 +26182,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 435.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -26152,9 +26271,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 435.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -26240,9 +26360,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 390.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -26326,9 +26447,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 450.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -26427,9 +26549,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 450.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -26527,9 +26650,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 450.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -26628,9 +26752,11 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey",
+        "ys-men-knitwear"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -26719,9 +26845,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 490.0,
       "inStock": true,
       "compositions": "T 100% COTTON DT 100% COTTON",
@@ -26800,9 +26927,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -26879,9 +27007,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 355.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% MODAL A 100% POLYESTER",
@@ -26978,9 +27107,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 355.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% MODAL A 100% POLYESTER",
@@ -27075,9 +27205,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 355.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% MODAL A 100% POLYESTER",
@@ -27174,9 +27305,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 390.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -27274,9 +27406,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 390.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -27368,9 +27501,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 390.0,
       "inStock": true,
       "compositions": "T  50% COTTON T  50% POLYESTER",
@@ -27461,9 +27595,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 435.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -27633,9 +27768,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 435.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -27718,9 +27854,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 525.0,
       "inStock": true,
       "compositions": "T 100% WOOL R  70% WOOL R  30% SILK",
@@ -27798,9 +27935,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 410.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -27890,9 +28028,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T  62% SILK T  38% COTTON",
@@ -27979,9 +28118,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 900.0,
       "inStock": true,
       "compositions": "T 100% COTTON R  97% COTTON R   3% ELASTAN RJ 100% POLYESTER",
@@ -28081,9 +28221,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 990.0,
       "inStock": true,
       "compositions": "T  88% CUPRO T  12% ELASTAN",
@@ -28168,9 +28309,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 990.0,
       "inStock": true,
       "compositions": "T  88% CUPRO T  12% ELASTAN",
@@ -28251,9 +28393,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 475.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -28344,9 +28487,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 475.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -28536,9 +28680,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 880.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -28619,9 +28764,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 475.0,
       "inStock": true,
       "compositions": "T 100% WOOL RJ 100% POLYESTER",
@@ -28705,9 +28851,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-jersey"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 475.0,
       "inStock": true,
       "compositions": "T 100% COTTON RJ 100% POLYESTER",
@@ -28794,7 +28941,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-coats-trench"
+        "ys-men-coats-trench",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-coats-trench",
       "gbpPrice": 3105.0,
@@ -28883,7 +29031,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-denim"
+        "ys-men-denim",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-denim",
       "gbpPrice": 810.0,
@@ -28983,7 +29132,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-jackets-pants"
+        "ys-men-jackets-pants",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-jackets-pants",
       "gbpPrice": 2570.0,
@@ -29083,7 +29233,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-jersey"
+        "ys-men-jersey",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-jersey",
       "gbpPrice": 500.0,
@@ -29170,7 +29321,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-jersey"
+        "ys-men-jersey",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-jersey",
       "gbpPrice": 900.0,
@@ -29269,7 +29421,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-jersey"
+        "ys-men-jersey",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-jersey",
       "gbpPrice": 900.0,
@@ -29371,7 +29524,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-knitwear"
+        "ys-men-knitwear",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-knitwear",
       "gbpPrice": 1230.0,
@@ -29459,7 +29613,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-leather"
+        "ys-men-leather",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-leather",
       "gbpPrice": 10500.0,
@@ -29555,7 +29710,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-outerwear"
+        "ys-men-outerwear",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-outerwear",
       "gbpPrice": 1890.0,
@@ -29643,7 +29799,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-shirts"
+        "ys-men-shirts",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-shirts",
       "gbpPrice": 1275.0,
@@ -29738,7 +29895,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-shirts"
+        "ys-men-shirts",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-shirts",
       "gbpPrice": 970.0,
@@ -29840,7 +29998,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-shirts"
+        "ys-men-shirts",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-shirts",
       "gbpPrice": 1090.0,
@@ -29941,7 +30100,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-shirts"
+        "ys-men-shirts",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-shirts",
       "gbpPrice": 1455.0,
@@ -30008,7 +30168,8 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-shirts"
+        "ys-men-shirts",
+        "ys-men-rtw-all"
       ],
       "leafId": "ys-men-shirts",
       "gbpPrice": 665.0,

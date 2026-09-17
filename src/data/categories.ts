@@ -3388,7 +3388,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "saint-laurent-accessories": ["saint-laurent-accessories", "ys-women-accessories", ...YS_WOMEN_ACC_LEAF_IDS, "ys-men-accessories", ...YS_MEN_ACC_LEAF_IDS],
   "ys-women-accessories": ["ys-women-accessories", ...YS_WOMEN_ACC_LEAF_IDS],
   "ys-men-accessories": ["ys-men-accessories", ...YS_MEN_ACC_LEAF_IDS],
-  "ys-men-rtw-all": ["ys-men-rtw-all"],
+  // '전체' must match 남성용 hub (union of all men RTW leaves), not only View All PLP.
+  "ys-men-rtw-all": ["ys-men-rtw-all", ...YS_MEN_RTW_LEAF_IDS],
   "ys-men-shirts": ["ys-men-shirts"],
   "ys-men-jersey": ["ys-men-jersey"],
   "ys-men-knitwear": ["ys-men-knitwear"],
@@ -3397,7 +3398,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ys-men-outerwear": ["ys-men-outerwear"],
   "ys-men-coats-trench": ["ys-men-coats-trench"],
   "ys-men-leather": ["ys-men-leather"],
-  "ys-women-rtw-all": ["ys-women-rtw-all"],
+  // '전체' must match 여성용 hub (union of all women RTW leaves), not only View All PLP.
+  "ys-women-rtw-all": ["ys-women-rtw-all", ...YS_WOMEN_RTW_LEAF_IDS],
   "ys-women-shirts-tops": ["ys-women-shirts-tops"],
   "ys-women-jersey": ["ys-women-jersey"],
   "ys-women-knitwear": ["ys-women-knitwear"],

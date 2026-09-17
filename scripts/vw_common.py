@@ -293,18 +293,60 @@ def scrape_pdp(page, url: str) -> dict:
               html: panel?.innerHTML || '',
             };
           }).filter((x) => x.label);
-          const sizeCandidates = Array.from(document.querySelectorAll('button, option, [data-value]'))
-            .map((el) => (el.textContent || '').replace(/\\s+/g, ' ').trim())
-            .filter(Boolean);
-          const sizes = sizeCandidates
-            .map((t) => {
+          // Prefer official size swatches — generic button text is "XS Size: XS" and
+          // fails ^XS$ matching, which previously collapsed clothing to OS.
+          const sizeBtns = Array.from(
+            document.querySelectorAll(
+              '[id="variation-label-size"], [aria-labelledby*="variation-label-size"]'
+            )
+          );
+          let sizeRoot = document.querySelector('.b-variations_item.m-size, .b-variations_item.m-swatch.m-size');
+          if (!sizeRoot) {
+            sizeRoot = document.querySelector('[aria-labelledby*="variation-label-size"]');
+          }
+          const swatches = sizeRoot
+            ? Array.from(sizeRoot.querySelectorAll('button.b-variation_swatch[data-tau-size-id], button.b-variation_swatch'))
+            : Array.from(document.querySelectorAll('button.b-variation_swatch[data-tau-size-id]'));
+          const sizeEntries = swatches.map((btn) => {
+            const aria = (btn.getAttribute('aria-label') || '').trim();
+            const title = (btn.getAttribute('title') || '').replace(/\\(not available\\)/i, '').trim();
+            const span = (btn.querySelector('.b-variation_swatch-value')?.childNodes[0]?.textContent || '').trim();
+            const raw = aria || span || title;
+            const m = String(raw).match(/^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|3XL|4XL|One Size|OS|\\d{2}(?:\\.\\d)?)$/i);
+            const size = m
+              ? (m[1].toUpperCase() === 'ONE SIZE' ? 'OS' : m[1].toUpperCase() === '3XL' ? 'XXXL' : m[1].toUpperCase())
+              : '';
+            const disabled = btn.classList.contains('m-disabled')
+              || btn.getAttribute('aria-disabled') === 'true';
+            return size ? { size, inStock: !disabled } : null;
+          }).filter(Boolean);
+          let sizes = [...new Set(sizeEntries.map((x) => x.size))];
+          const sizeStock = Object.fromEntries(sizeEntries.map((x) => [x.size, x.inStock]));
+          if (!sizes.length) {
+            const sizeCandidates = Array.from(document.querySelectorAll('button, option, [data-value]'))
+              .map((el) => (el.textContent || '').replace(/\\s+/g, ' ').trim())
+              .filter(Boolean);
+            sizes = Array.from(new Set(sizeCandidates.map((t) => {
               const m = t.match(/Size:\\s*(\\d+(?:\\.\\d+)?)/i);
               if (m) return m[1];
-              if (/^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|One Size|OS)$/i.test(t)) return t.toUpperCase() === 'ONE SIZE' ? 'OS' : t.toUpperCase();
+              const letter = t.match(/\\b(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|3XL|One Size|OS)\\b/i);
+              if (letter) {
+                const v = letter[1].toUpperCase();
+                return v === 'ONE SIZE' ? 'OS' : v === '3XL' ? 'XXXL' : v;
+              }
               if (/^\\d{2}(?:\\.\\d)?$/.test(t)) return t;
               return '';
-            })
-            .filter(Boolean);
+            }).filter(Boolean)));
+          }
+          let sizeGuideUrl = '';
+          const guideBtn = document.querySelector('.b-size_guide_link, button[data-tau="size_guide_cta"]');
+          if (guideBtn) {
+            try {
+              const cfg = JSON.parse(guideBtn.getAttribute('data-modal-config') || '{}');
+              sizeGuideUrl = cfg.url || '';
+            } catch (e) {}
+            if (!sizeGuideUrl) sizeGuideUrl = guideBtn.getAttribute('href') || '';
+          }
           const availabilityText = String(primaryOffer.availability || '');
           const inStock = availabilityText.includes('InStock') || /add to bag/i.test(document.body.innerText);
           const urlSku = location.pathname.split('/').pop().replace('.html', '');
@@ -320,7 +362,9 @@ def scrape_pdp(page, url: str) -> dict:
             availability: inStock,
             images: uniqImages,
             details,
-            sizes: Array.from(new Set(sizes)),
+            sizes,
+            sizeStock,
+            sizeGuideUrl,
             breadcrumb: allText('.breadcrumb a, nav[aria-label*="breadcrumb"] a, [class*="breadcrumb"] a'),
             categoryLabel: (product.category || text('.breadcrumb li:last-child, .breadcrumb span:last-child')),
           };
@@ -328,6 +372,108 @@ def scrape_pdp(page, url: str) -> dict:
         """,
     )
     return data or {}
+
+
+_SIZE_GUIDE_CACHE: dict[str, dict | None] = {}
+
+_ROW_LABEL_KO = {
+    "united kingdom": "UK",
+    "uk": "UK",
+    "usa": "US",
+    "us": "US",
+    "italy/eu": "IT / EU",
+    "italy": "IT",
+    "eu": "EU",
+    "australia": "AU",
+    "france": "FR",
+    "germany": "DE",
+    "japan": "JP",
+    "korea": "KR",
+    "chest": "가슴 (cm)",
+    "bust": "가슴 (cm)",
+    "waist": "허리 (cm)",
+    "hip": "힙 (cm)",
+    "hips": "힙 (cm)",
+    "bottom": "밑단 (cm)",
+    "shoulder": "어깨 (cm)",
+    "sleeve": "소매 (cm)",
+    "length": "총기장 (cm)",
+    "inseam": "인심 (cm)",
+}
+
+
+def fetch_size_guide_chart(page, guide_url: str) -> dict | None:
+    """Parse official VW size-guide asset into Briq sizeChart shape."""
+    url = (guide_url or "").strip()
+    if not url:
+        return None
+    abs_url = _abs_url(url)
+    if abs_url in _SIZE_GUIDE_CACHE:
+        return _SIZE_GUIDE_CACHE[abs_url]
+    try:
+        page.goto(abs_url, wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(400)
+        tables = page.evaluate(
+            """
+            () => [...document.querySelectorAll('table')].map((t) =>
+              [...t.querySelectorAll('tr')].map((tr) =>
+                [...tr.querySelectorAll('th,td')].map((c) =>
+                  (c.textContent || '').replace(/\\s+/g, ' ').trim()
+                )
+              )
+            )
+            """
+        )
+        title = page.title() or ""
+    except Exception:
+        _SIZE_GUIDE_CACHE[abs_url] = None
+        return None
+
+    chart = tables_to_size_chart(tables or [], title=title, source_url=abs_url)
+    _SIZE_GUIDE_CACHE[abs_url] = chart
+    return chart
+
+
+def tables_to_size_chart(tables: list, *, title: str = "", source_url: str = "") -> dict | None:
+    best = None
+    for table in tables:
+        rows = [r for r in table if any(str(c).strip() for c in r)]
+        if len(rows) < 2 or len(rows[0]) < 3:
+            continue
+        headers = ["구분", *[str(c).strip() for c in rows[0][1:]]]
+        body = []
+        for r in rows[1:]:
+            if not r or not str(r[0]).strip():
+                continue
+            label = str(r[0]).strip()
+            key = label.lower()
+            label_ko = _ROW_LABEL_KO.get(key, label)
+            # Skip duplicate header rows like "SWEATSHIRTS / XXS XS ..."
+            if all(re.match(r"^(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|3XL|\d+)$", str(c).strip(), re.I) for c in r[1:] if str(c).strip()):
+                if not any(ch.isdigit() for ch in "".join(str(c) for c in r[1:])):
+                    continue
+            vals = [str(c).strip() for c in r[1 : len(headers)]]
+            while len(vals) < len(headers) - 1:
+                vals.append("")
+            body.append([label_ko, *vals[: len(headers) - 1]])
+        if len(body) >= 2:
+            best = {"headers": headers, "rows": body}
+            break
+    if not best:
+        return None
+    title_ko = "비비안 웨스트우드 사이즈 가이드"
+    if "men" in (title + source_url).lower():
+        title_ko = "비비안 웨스트우드 남성 사이즈 가이드"
+    elif "women" in (title + source_url).lower() or "womens" in (title + source_url).lower():
+        title_ko = "비비안 웨스트우드 여성 사이즈 가이드"
+    return {
+        "id": slugify(Path(urllib.parse.urlparse(source_url).path).stem or "vw-size"),
+        "titleKo": title_ko,
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": best["headers"],
+        "rows": best["rows"],
+        "sourceUrl": source_url,
+    }
 
 
 def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_ids: set | None = None) -> list[dict]:
@@ -349,6 +495,13 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
             sku = (pdp.get("sku") or card.get("id") or sku_from_url(card["href"])).strip()
             remote_images = filter_product_images(sku or card["id"], pdp.get("images") or [])
             local_images = materialize_images(page.request, sku or card["id"], remote_images)
+            size_chart = None
+            guide = (pdp.get("sizeGuideUrl") or "").strip()
+            if guide:
+                try:
+                    size_chart = fetch_size_guide_chart(page, guide)
+                except Exception:
+                    size_chart = None
             rows.append(
                 {
                     "id": sku or card["id"],
@@ -363,6 +516,9 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
                     "color": {"label": pdp.get("color") or ""},
                     "details": pdp.get("details") or [],
                     "sizes": pdp.get("sizes") or [],
+                    "sizeStock": pdp.get("sizeStock") or {},
+                    "sizeGuideUrl": guide,
+                    "sizeChart": size_chart,
                     "images": local_images,
                     "remoteImages": remote_images,
                     "availability": bool(pdp.get("availability")),

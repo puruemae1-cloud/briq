@@ -223,7 +223,19 @@ def scrape_leaf_rows(
     rows: list[dict] = []
     for i, p in enumerate(plp_rows, start=1):
         pid = str(p.get("id") or "")
-        if not pid or pid in skip_ids:
+        if not pid:
+            continue
+        # Already scraped elsewhere: still emit a collections-only stub so
+        # merge_product_rows unions leaf tags (leather/coats/etc.).
+        if pid in skip_ids:
+            rows.append(
+                {
+                    "id": pid,
+                    "sku": pid,
+                    "collections": list(leaf.get("collections") or []),
+                    "leafId": leaf["id"],
+                }
+            )
             continue
         url = p.get("url") or p.get("smcUrl") or ""
         source = urljoin(BASE, url) if url else ""

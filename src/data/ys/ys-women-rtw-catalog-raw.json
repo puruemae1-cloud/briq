@@ -7,138 +7,17 @@
   "officialNbAlgoliaHits": 258,
   "officialUnionCount": 278,
   "leaves": [
-    {
-      "id": "ys-women-rtw-all",
-      "label": "View All",
-      "labelKo": "전체",
-      "slug": "shop-women/ready-to-wear/all-ready-to-wear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/all-ready-to-wear",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all"
-      ]
-    },
-    {
-      "id": "ys-women-shirts-tops",
-      "label": "Shirts and Tops",
-      "labelKo": "셔츠 & 탑",
-      "slug": "shop-women/ready-to-wear/shirts-and-tops",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/shirts-and-tops",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-shirts-tops"
-      ]
-    },
-    {
-      "id": "ys-women-jersey",
-      "label": "Jersey",
-      "labelKo": "저지",
-      "slug": "shop-women/ready-to-wear/jersey",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/jersey",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-jersey"
-      ]
-    },
-    {
-      "id": "ys-women-knitwear",
-      "label": "Knitwear",
-      "labelKo": "니트웨어",
-      "slug": "shop-women/ready-to-wear/knitwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/knitwear",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-knitwear"
-      ]
-    },
-    {
-      "id": "ys-women-dresses-skirts",
-      "label": "Dresses and Skirts",
-      "labelKo": "드레스 & 스커트",
-      "slug": "shop-women/ready-to-wear/dresses-and-skirts",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/dresses-and-skirts",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-dresses-skirts"
-      ]
-    },
-    {
-      "id": "ys-women-jackets-pants",
-      "label": "Jackets and Pants",
-      "labelKo": "재킷 & 팬츠",
-      "slug": "shop-women/ready-to-wear/jackets-and-pants",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/jackets-and-pants",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-jackets-pants"
-      ]
-    },
-    {
-      "id": "ys-women-denim",
-      "label": "Denim",
-      "labelKo": "데님",
-      "slug": "shop-women/ready-to-wear/denim-women",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/denim-women",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-denim"
-      ]
-    },
-    {
-      "id": "ys-women-outerwear",
-      "label": "Outerwear",
-      "labelKo": "아우터웨어",
-      "slug": "shop-women/ready-to-wear/outerwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/outerwear",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-outerwear"
-      ]
-    },
-    {
-      "id": "ys-women-coats",
-      "label": "Coats",
-      "labelKo": "코트",
-      "slug": "shop-women/ready-to-wear/coats",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/coats",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-coats"
-      ]
-    },
-    {
-      "id": "ys-women-leather-outerwear",
-      "label": "Leather and Outerwear",
-      "labelKo": "레더 & 아우터",
-      "slug": "shop-women/ready-to-wear/leather-and-outerwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/leather-and-outerwear",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-leather-outerwear"
-      ]
-    },
-    {
-      "id": "ys-women-lingerie-swimwear",
-      "label": "Lingerie and Swimwear",
-      "labelKo": "란제리 & 스윔웨어",
-      "slug": "shop-women/ready-to-wear/lingerie-and-swimwear",
-      "url": "https://www.ysl.com/en-gb/ca/shop-women/ready-to-wear/lingerie-and-swimwear",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-lingerie-swimwear"
-      ]
-    }
+    "ys-women-rtw-all",
+    "ys-women-shirts-tops",
+    "ys-women-jersey",
+    "ys-women-knitwear",
+    "ys-women-dresses-skirts",
+    "ys-women-jackets-pants",
+    "ys-women-denim",
+    "ys-women-outerwear",
+    "ys-women-coats",
+    "ys-women-leather-outerwear",
+    "ys-women-lingerie-swimwear"
   ],
   "products": [
     {
@@ -21303,7 +21182,7 @@
         "ys-women-rtw-all",
         "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "needsPdp": true,
       "masterId": "835063Y2H32",
       "color": "Brown",
@@ -21460,7 +21339,7 @@
         "ys-women-rtw-all",
         "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "needsPdp": true,
       "masterId": "869630Y38BD",
       "color": "White",
@@ -21549,7 +21428,7 @@
         "ys-women-rtw-all",
         "ys-women-knitwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-knitwear",
       "needsPdp": true,
       "masterId": "A009RQY76PE",
       "color": "Black",
@@ -21639,7 +21518,7 @@
         "ys-women-rtw-all",
         "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "needsPdp": true,
       "masterId": "873683YCVY2",
       "color": "Orange",
@@ -21724,7 +21603,7 @@
         "ys-women-rtw-all",
         "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "needsPdp": true,
       "masterId": "835063Y060R",
       "color": "Black",
@@ -21798,7 +21677,7 @@
         "ys-women-rtw-all",
         "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "needsPdp": true,
       "masterId": "824387YCSG2",
       "color": "Brown",
@@ -21883,7 +21762,7 @@
         "ys-women-rtw-all",
         "ys-women-coats"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-coats",
       "needsPdp": true,
       "masterId": "861886Y1G81",
       "color": "Black",
@@ -21955,7 +21834,7 @@
         "ys-women-rtw-all",
         "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-leather-outerwear",
       "needsPdp": true,
       "masterId": "824387YCNX2",
       "color": "Black",
@@ -22045,7 +21924,7 @@
         "ys-women-rtw-all",
         "ys-women-denim"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-denim",
       "needsPdp": true,
       "masterId": "823437Y14MJ",
       "color": "Blue",
@@ -22134,7 +22013,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-shirts-tops",
       "needsPdp": true,
@@ -22213,7 +22093,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jersey",
       "needsPdp": true,
@@ -22304,7 +22185,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-jersey",
-        "ys-women-lingerie-swimwear"
+        "ys-women-lingerie-swimwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jersey",
       "needsPdp": true,
@@ -22394,7 +22276,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-jersey",
-        "ys-women-lingerie-swimwear"
+        "ys-women-lingerie-swimwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jersey",
       "needsPdp": true,
@@ -22481,7 +22364,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jersey",
       "needsPdp": true,
@@ -22592,7 +22476,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-knitwear"
+        "ys-women-knitwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-knitwear",
       "needsPdp": true,
@@ -22673,7 +22558,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-dresses-skirts"
+        "ys-women-dresses-skirts",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-dresses-skirts",
       "needsPdp": true,
@@ -22755,7 +22641,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-dresses-skirts"
+        "ys-women-dresses-skirts",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-dresses-skirts",
       "needsPdp": true,
@@ -22835,7 +22722,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jackets-pants"
+        "ys-women-jackets-pants",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jackets-pants",
       "needsPdp": true,
@@ -22913,7 +22801,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jackets-pants"
+        "ys-women-jackets-pants",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jackets-pants",
       "needsPdp": true,
@@ -23014,7 +22903,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jackets-pants"
+        "ys-women-jackets-pants",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jackets-pants",
       "needsPdp": true,
@@ -23094,7 +22984,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jackets-pants"
+        "ys-women-jackets-pants",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jackets-pants",
       "needsPdp": true,
@@ -23183,7 +23074,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-jackets-pants"
+        "ys-women-jackets-pants",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-jackets-pants",
       "needsPdp": true,
@@ -23260,7 +23152,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-outerwear"
+        "ys-women-outerwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-outerwear",
       "needsPdp": true,
@@ -23336,7 +23229,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-coats"
+        "ys-women-coats",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-coats",
       "needsPdp": true,
@@ -23408,7 +23302,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-leather-outerwear"
+        "ys-women-leather-outerwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-leather-outerwear",
       "needsPdp": true,
@@ -23493,7 +23388,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-leather-outerwear"
+        "ys-women-leather-outerwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-leather-outerwear",
       "needsPdp": true,
@@ -23580,7 +23476,8 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-lingerie-swimwear"
+        "ys-women-lingerie-swimwear",
+        "ys-women-rtw-all"
       ],
       "leafId": "ys-women-lingerie-swimwear",
       "needsPdp": true,
@@ -23648,6 +23545,19 @@
         "/products/ys-pdp/a00b3ey5l351000/1.jpg",
         "/products/ys-pdp/a00b3ey5l351000/2.jpg"
       ]
+    },
+    {
+      "id": "851251Y6J984230",
+      "sku": "851251Y6J984230",
+      "name": "851251Y6J984230",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
+      ],
+      "leafId": "ys-women-outerwear",
+      "needsPdp": true
     }
   ]
 }

@@ -182,8 +182,13 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
     color_label = str((color or {}).get("label") or (color or {}).get("label_int") or "").strip()
     color_key = product_id
     color_name_ko = color_label if color_label else "기본"
+    size_stock = row.get("sizeStock") if isinstance(row.get("sizeStock"), dict) else {}
     out = []
     for size in sizes:
+        stock = size_stock.get(size)
+        if stock is None:
+            stock = size_stock.get(size.upper())
+        in_stock = bool(row.get("availability", True)) if stock is None else bool(stock)
         out.append(
             {
                 "id": f"{product_id}-sz-{slugify(size, max_len=24)}",
@@ -195,7 +200,7 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
                 "image": image,
                 "images": images,
                 "sourceUrl": row.get("url") or "",
-                "inStock": bool(row.get("availability", True)),
+                "inStock": in_stock,
                 "colorKey": color_key,
                 "colorNameKo": color_name_ko,
                 "size": size,
@@ -307,6 +312,19 @@ def _merge_vw_product(prev: dict | None, new: dict) -> dict:
         out["featuresKo"] = _pick_ko_list(prev.get("featuresKo"), new.get("featuresKo"))
         out["techSpecs"] = _pick_ko_tech_specs(prev.get("techSpecs"), new.get("techSpecs"))
         out["nameKo"] = _pick_ko_field(prev.get("nameKo"), new.get("nameKo"))
+    # Prefer richer size variants (never keep OS-only when multi-size exists).
+    prev_vars = prev.get("variants") or []
+    new_vars = out.get("variants") or []
+    def _size_richness(vs: list) -> int:
+        sizes = {str(v.get("size") or v.get("name") or "") for v in vs}
+        sizes.discard("")
+        if sizes <= {"OS", "원 사이즈"}:
+            return 0
+        return len(sizes)
+    if _size_richness(prev_vars) > _size_richness(new_vars):
+        out["variants"] = prev_vars
+    if prev.get("sizeChart") and not out.get("sizeChart"):
+        out["sizeChart"] = prev["sizeChart"]
     return out
 
 
@@ -428,7 +446,7 @@ def build_product(row: dict, cache: dict[str, str], idx: int) -> dict:
         "storySections": build_story(description_ko, images, features),
         "techSpecs": tech_specs,
         "featuresKo": features,
-        "sizeChart": None,
+        "sizeChart": row.get("sizeChart") if isinstance(row.get("sizeChart"), dict) else None,
         "updatedAt": datetime.now(timezone.utc).isoformat(),
     }
 
