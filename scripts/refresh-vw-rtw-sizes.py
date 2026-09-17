@@ -57,6 +57,7 @@ def main() -> int:
                 if not args.force and not _needs_refresh(row):
                     continue
                 try:
+                    page.set_default_timeout(45000)
                     pdp = scrape_pdp(page, url)
                 except Exception as e:
                     print(f"  WARN pdp {row.get('id')}: {e}", flush=True)
@@ -76,9 +77,13 @@ def main() -> int:
                     except Exception as e:
                         print(f"  WARN guide {row.get('id')}: {e}", flush=True)
                 touched += 1
-                if touched % 10 == 0:
+                print(
+                    f"  {path.name} #{i+1}/{len(products)} {row.get('id')} sizes={row.get('sizes')}",
+                    flush=True,
+                )
+                if touched % 5 == 0:
                     save_json(path, {**data, "products": products})
-                    print(f"  refreshed {touched} …", flush=True)
+                    print(f"  checkpoint refreshed={touched}", flush=True)
             save_json(path, {**data, "products": products})
             filled = sum(1 for p in products if len(p.get("sizes") or []) > 1)
             charts = sum(1 for p in products if p.get("sizeChart"))

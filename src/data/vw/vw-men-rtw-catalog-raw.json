@@ -12062,7 +12062,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.&nbsp;</li><li>Avoid over-exposure to direct sunlight or heat.&nbsp;</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label.&nbsp;</li><li>Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3304000s-w01na-black/1.jpg",
         "/products/vw-pdp/3304000s-w01na-black/2.jpg",
@@ -12091,7 +12099,185 @@
         "Coats and Jackets",
         "Pourpoint Jacket"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-coats-and-jackets.html",
+      "sizeChart": {
+        "id": "size-chart-womens-coats-and-jackets",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "COATS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "33.6CM / 13.2IN",
+            "34.7CM / 13.6IN",
+            "35.8CM / 15.1IN",
+            "36.9CM / 14.5IN",
+            "38CM / 14.9IN",
+            "39.1CM / 15.39IN",
+            "40.2CM / 15.8IN"
+          ],
+          [
+            "가슴 (cm)",
+            "85CM / 33.4IN",
+            "89CM / 35IN",
+            "93CM / 36.6IN",
+            "97CM / 38.1IN",
+            "101CM / 39.7IN",
+            "105CM / 41.3IN",
+            "109CM / 42.9IN"
+          ],
+          [
+            "허리 (cm)",
+            "84CM / 33IN",
+            "88CM / 34.6IN",
+            "92CM / 36.2IN",
+            "96CM / 37.7IN",
+            "100CM / 39.3IN",
+            "104CM / 40.9IN",
+            "108CM / 42.5IN"
+          ],
+          [
+            "총기장 (cm)",
+            "100CM / 39.3IN",
+            "101CM / 39.7IN",
+            "102CM / 40.1IN",
+            "103CM / 40.5IN",
+            "104CM / 40.9IN",
+            "105CM / 41.3IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "JACKETS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "40CM / 13.22IN",
+            "41CM / 16.14IN",
+            "42CM / 16.53IN",
+            "43CM / 16.92IN",
+            "44CM / 17.32IN",
+            "45CM / 17.71IN",
+            "46CM / 18.11IN"
+          ],
+          [
+            "가슴 (cm)",
+            "84.5CM / 33.26IN",
+            "88.5CM / 34.84IN",
+            "92.5CM / 36.37IN",
+            "96.5CM / 37.99IN",
+            "100.5CM / 39.56IN",
+            "104.5CM / 41.14IN",
+            "108.5CM / 42.71IN"
+          ],
+          [
+            "허리 (cm)",
+            "76CM / 29.92IN",
+            "80CM / 31.49IN",
+            "84CM / 33.07IN",
+            "88CM / 34.64IN",
+            "92CM / 36.22IN",
+            "96CM / 38.79IN",
+            "100CM / 39.37IN"
+          ],
+          [
+            "총기장 (cm)",
+            "99CM / 38.97IN",
+            "103CM / 40.55IN",
+            "107CM / 42.12IN",
+            "111CM / 43.70IN",
+            "115CM / 45.27IN",
+            "119CM / 46.85IN",
+            "123CM / 48.42IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-coats-and-jackets.html"
+      }
     },
     {
       "id": "3G01006B-J00BL--GREY-MELANGE",
@@ -12128,7 +12314,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g01006b-j00bl-grey-melange/1.jpg",
         "/products/vw-pdp/3g01006b-j00bl-grey-melange/2.jpg",
@@ -12155,7 +12349,124 @@
         "T-Shirts and Polos",
         "Get A Life Box T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G01006C-J00BL--BLACK",
@@ -12192,7 +12503,14 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "images": [
         "/products/vw-pdp/3g01006c-j00bl-black/1.jpg",
         "/products/vw-pdp/3g01006c-j00bl-black/2.jpg",
@@ -12227,7 +12545,123 @@
         "T-Shirts and Polos",
         "Charming Oversized Box T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": false,
+        "XL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G010065-J00BL--WHITE",
@@ -12264,7 +12698,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g010065-j00bl-white/1.jpg",
         "/products/vw-pdp/3g010065-j00bl-white/2.jpg",
@@ -12297,7 +12739,179 @@
         "Tops and Shirts",
         "Monkeys Longline T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-tops-and-shirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-tops-and-shirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18"
+          ],
+          [
+            "TOPS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "가슴 (cm)",
+            "72",
+            "76",
+            "80",
+            "84",
+            "88",
+            "92",
+            "96",
+            "100"
+          ],
+          [
+            "허리 (cm)",
+            "60",
+            "64",
+            "68",
+            "72",
+            "76",
+            "80",
+            "84",
+            "88"
+          ],
+          [
+            "힙 (cm)",
+            "76",
+            "80",
+            "84",
+            "88",
+            "92",
+            "96",
+            "100",
+            "104"
+          ],
+          [
+            "SHIRTS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            ""
+          ],
+          [
+            "어깨 (cm)",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            ""
+          ],
+          [
+            "가슴 (cm)",
+            "90",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            ""
+          ],
+          [
+            "허리 (cm)",
+            "70",
+            "74",
+            "78",
+            "82",
+            "86",
+            "90",
+            "94",
+            ""
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-tops-and-shirts.html"
+      }
     },
     {
       "id": "2G01000L-J00BO--DARK-GREY-MELANGE",
@@ -12334,7 +12948,14 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.&nbsp;</li><li>Avoid over-exposure to direct sunlight or heat.&nbsp;</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label.&nbsp;</li><li>Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/2g01000l-j00bo-dark-grey-melange/1.jpg",
         "/products/vw-pdp/2g01000l-j00bo-dark-grey-melange/2.jpg",
@@ -12357,7 +12978,123 @@
         "T-Shirts and Polos",
         "Tegan T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XS": false,
+        "S": false,
+        "M": true,
+        "L": true,
+        "XL": false,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G01005T-J00BL--GREY-MELANGE",
@@ -12395,7 +13132,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g01005t-j00bl-grey-melange/1.jpg",
@@ -12431,7 +13175,136 @@
         "Sweatshirts and T-Shirts",
         "Gold Orb Classic T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true,
+        "XXXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
     },
     {
       "id": "3G01005T-J00BL--WHITE",
@@ -12469,7 +13342,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g01005t-j00bl-white/1.jpg",
@@ -12507,7 +13387,125 @@
         "T-Shirts and Polos",
         "Gold Orb Classic T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": false,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G010068-J00BL--BLACK",
@@ -12544,7 +13542,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g010068-j00bl-black/1.jpg",
         "/products/vw-pdp/3g010068-j00bl-black/2.jpg",
@@ -12585,7 +13591,135 @@
         "Sweatshirts and T-Shirts",
         "Upside Down Head Circle Hem T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": false,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
     },
     {
       "id": "3G01003L-J001M--WHITE",
@@ -12622,7 +13756,14 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g01003l-j001m-white/1.jpg",
         "/products/vw-pdp/3g01003l-j001m-white/2.jpg",
@@ -12651,7 +13792,15 @@
         "Worlds End",
         "Worlds End Classic Truth T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XS": false,
+        "S": false,
+        "M": false,
+        "L": false,
+        "XL": false,
+        "XXL": false
+      }
     },
     {
       "id": "3G010069-J00BL--BLACK",
@@ -12688,7 +13837,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g010069-j00bl-black/1.jpg",
         "/products/vw-pdp/3g010069-j00bl-black/2.jpg",
@@ -12725,7 +13882,135 @@
         "Sweatshirts and T-Shirts",
         "Still Life Orb Classic T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": false,
+        "S": true,
+        "M": false,
+        "L": true,
+        "XL": true,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
     },
     {
       "id": "3G010013-J00C9--ORB-FRAME-CHERUBS",
@@ -12763,7 +14048,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g010013-j00c9-orb-frame-cherubs/1.jpg",
@@ -12793,7 +14085,136 @@
         "Sweatshirts and T-Shirts",
         "Classic T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": false,
+        "S": false,
+        "M": false,
+        "L": false,
+        "XL": true,
+        "XXL": false,
+        "XXXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
     },
     {
       "id": "3G010013-J00BL--WHITE",
@@ -12831,7 +14252,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g010013-j00bl-white/1.jpg",
@@ -12869,7 +14297,125 @@
         "T-Shirts and Polos",
         "Classic T-shirt Multicolour Orb"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": false,
+        "L": false,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G010013-J001M--NAVY",
@@ -12907,7 +14453,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g010013-j001m-navy/1.jpg",
@@ -12933,7 +14486,125 @@
         "T-Shirts and Polos",
         "Classic T-shirt Multicolour Orb"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": false,
+        "S": true,
+        "M": false,
+        "L": false,
+        "XL": false,
+        "XXL": false,
+        "XXXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G010013-J001M--BLACK",
@@ -12971,7 +14642,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g010013-j001m-black/1.jpg",
@@ -13005,7 +14683,125 @@
         "T-Shirts and Polos",
         "Classic T-shirt Multicolour Orb"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true,
+        "XXXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "2G01000L-J00BO--BLACK",
@@ -13042,7 +14838,14 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.&nbsp;</li><li>Avoid over-exposure to direct sunlight or heat.&nbsp;</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label.&nbsp;</li><li>Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/2g01000l-j00bo-black/1.jpg",
         "/products/vw-pdp/2g01000l-j00bo-black/2.jpg",
@@ -13063,7 +14866,123 @@
         "T-Shirts and Polos",
         "Tegan T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": false,
+        "L": true,
+        "XL": true,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G01005W-J00BL--WHITE",
@@ -13101,7 +15020,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g01005w-j00bl-white/1.jpg",
@@ -13141,7 +15067,125 @@
         "T-Shirts and Polos",
         "Art Heart Classic T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": false,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G01005X-J00BL--BLACK",
@@ -13178,7 +15222,15 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/3g01005x-j00bl-black/1.jpg",
         "/products/vw-pdp/3g01005x-j00bl-black/2.jpg",
@@ -13211,7 +15263,124 @@
         "T-Shirts and Polos",
         "Art Heart Longline T-shirt"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "2G01000H-J00BM--BLACK",
@@ -13248,7 +15417,14 @@
           "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "images": [
         "/products/vw-pdp/2g01000h-j00bm-black/1.jpg",
         "/products/vw-pdp/2g01000h-j00bm-black/2.jpg",
@@ -13279,7 +15455,123 @@
         "T-Shirts and Polos",
         "Long Sleeve Squiggle Henley"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     },
     {
       "id": "3G01003Y-J00BO--BLACK",
@@ -13317,7 +15609,14 @@
         }
       ],
       "sizes": [
-        "3"
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/3g01003y-j00bo-black/1.jpg",
@@ -13349,7 +15648,136 @@
         "Sweatshirts and T-Shirts",
         "Long Sleeve Hebo Top"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": false,
+        "M": false,
+        "L": true,
+        "XL": true,
+        "XXL": false,
+        "XXXL": false
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
     },
     {
       "id": "2H01000Y-J00AU--WHITE",
@@ -13387,7 +15815,13 @@
         }
       ],
       "sizes": [
-        "3"
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
       ],
       "images": [
         "/products/vw-pdp/2h01000y-j00au-white/1.jpg",
@@ -13411,7 +15845,124 @@
         "T-Shirts and Polos",
         "Classic Polo"
       ],
-      "categoryLabel": ""
+      "categoryLabel": "",
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": false,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      }
     }
   ]
 }

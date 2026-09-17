@@ -249,7 +249,7 @@ def scrape_plp_cards(page, url: str) -> list[dict]:
 def scrape_pdp(page, url: str) -> dict:
     page.goto(url, wait_until="domcontentloaded", timeout=60000)
     dismiss_popups(page)
-    page.wait_for_timeout(150)
+    page.wait_for_timeout(400)
 
     for label in ("Description", "Composition", "Care Instructions"):
         try:
