@@ -2,6 +2,7 @@
 """Build Briq AllSaints catalog from scraped raw JSON."""
 from __future__ import annotations
 
+import os
 import re
 import sys
 import time
@@ -74,6 +75,9 @@ def translate(text: str, cache: dict[str, str]) -> str:
         return s
     if s in cache and is_good_korean(cache[s], max_ratio=0.4):
         return cache[s]
+    # Fast build: skip live Bing — retranslate-al-ko fills KO after.
+    if os.environ.get("BRIQ_FAST_BUILD") == "1":
+        return s
     low = s.lower()
     for en, ko in TITLE_MAP.items():
         if low == en:
