@@ -324,17 +324,16 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
         for s in sizes:
             val = str(s.get("value") or "").replace("_", ".")
             disp = str(s.get("displayValue") or val)
-            ysl_tok, gb_tok = parse_size_display(disp)
             if val.upper() in {"U", "TU", "OS"} and len(sizes) == 1:
                 label = "OS"
                 size_label = "OS"
             else:
-                label = disp.replace("YSL ", "").strip() or val
-                # Prefer F34 / GB 6 style for chips; fall back to raw value.
-                if ysl_tok and gb_tok:
-                    size_label = label
-                else:
-                    size_label = label
+                # Chip label: primary size only (XS, F36, 48) — drop " / GB …".
+                primary = re.sub(r"^YSL\s+", "", disp, flags=re.I).strip() or val
+                if " /" in primary:
+                    primary = primary.split(" /", 1)[0].strip()
+                label = primary or val
+                size_label = label
             vid = f"ys-{pid}-{slugify(val)}"
             variants.append(
                 {
