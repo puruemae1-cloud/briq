@@ -10,6 +10,7 @@ import {
   productSalePercent,
 } from "@/data/product-utils";
 import { needsChanelMobilePackshotZoom, needsChanelPcPackshotZoom } from "@/lib/ch-packshot-zoom";
+import { productCardBadgeText } from "@/lib/product-new-badge";
 
 function productCardPriceLabel(product: Product): string {
   const base = formatKrw(productDisplayPrice(product));
@@ -32,13 +33,16 @@ export function ProductCard({ product }: { product: Product }) {
   const compareAt = productCompareAtPrice(product);
   const salePct = productSalePercent(product);
   const onSale = Boolean(salePct && compareAt);
+  const badgeText = productCardBadgeText(product);
   const isClearance =
     product.subcategory === "cw-clearance" ||
     product.subcategory === "gg-sale" ||
     product.cwCollections?.includes("cw-clearance") ||
     Boolean(product.ggCollections?.includes("gg-sale")) ||
     product.badge === "Nearly New" ||
-    product.badge === "Sale";
+    product.badge === "Sale" ||
+    badgeText === "Sale" ||
+    badgeText === "Nearly New";
   const chPackshotZoom = needsChanelMobilePackshotZoom(product);
   const chPackshotZoomPc = needsChanelPcPackshotZoom(product);
   const href = productHref(product);
@@ -70,13 +74,13 @@ export function ProductCard({ product }: { product: Product }) {
             >
               {salePct}% OFF
             </span>
-          ) : product.badge ? (
+          ) : badgeText ? (
             <span
               className={`product-card__badge${
                 isClearance ? " product-card__badge--clearance" : ""
               }`}
             >
-              {product.badge}
+              {badgeText}
             </span>
           ) : null}
         </ProductCardMedia>

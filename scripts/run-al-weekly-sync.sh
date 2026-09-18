@@ -45,10 +45,21 @@ for attempt in range(1, 6):
         cwd=str(Path.cwd()),
     )
     if qa.returncode == 0:
-        raise SystemExit(0)
+        break
     print(f"WARN attempt {attempt}: retranslate_rc={last_rc} qa_rc={qa.returncode}", flush=True)
+else:
+    print("ERROR AL KO still English after 5 retranslate attempts", flush=True)
+    raise SystemExit(last_rc or 1)
 
-print("ERROR AL KO still English after 5 retranslate attempts", flush=True)
-raise SystemExit(last_rc or 1)
+# Local image guard — never leave catalogue pointing at missing PDP files.
+img = subprocess.run(
+    [sys.executable, "scripts/verify-product-images.py", "--brand", "al", "--all-images"],
+    cwd=str(Path.cwd()),
+)
+if img.returncode != 0:
+    print("ERROR AL local product images missing after build", flush=True)
+    raise SystemExit(img.returncode)
+
+print("OK AL weekly sync (local images verified; CDN push/verify is CI)", flush=True)
 PY
 echo "OK AL weekly sync"

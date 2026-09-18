@@ -20,6 +20,8 @@ export function toCardProduct(p: Product): Product {
     sku: p.sku,
     inStock: p.inStock,
     registeredAt: p.registeredAt,
+    newBadgeAt: p.newBadgeAt,
+    updatedAt: p.updatedAt,
     editTier: p.editTier,
     shopColorKey: p.shopColorKey,
     cwCollections: p.cwCollections,

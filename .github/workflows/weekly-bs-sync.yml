@@ -44,6 +44,9 @@ jobs:
       - name: Verify catalogue images are on the product-images tag
         run: python3 scripts/verify-product-images.py --brand bs --remote --skip-local --all-images
 
+
+      - name: Apply Briq NEW badge TTL (7 days)
+        run: python3 scripts/apply-new-badge-ttl.py --brand bs
       - name: Commit and push catalogue
         run: |
           chmod +x scripts/ci-commit-push.sh

@@ -34,6 +34,7 @@ FRIDAY = [
     ("weekly-gc-sync.yml", "구찌", "금 10:00 UTC / 11:00 UK(BST)"),
     ("weekly-ch-sync.yml", "샤넬", "금 11:00 UTC / 12:00 UK(BST)"),
     ("weekly-di-sync.yml", "디올", "금 12:00 UTC / 13:00 UK(BST)"),
+    ("weekly-al-sync.yml", "올세인츠", "금 14:00 UTC / 15:00 UK(BST)"),
 ]
 ALL = FRIDAY
 

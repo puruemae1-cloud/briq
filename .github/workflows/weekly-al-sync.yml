@@ -2,32 +2,71 @@ name: Weekly AllSaints sync
 
 on:
   schedule:
+    # Friday 14:00 UTC (15:00 UK / BST) — after Dior
     - cron: "0 14 * * 5"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-al-stock-sync
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install curl_cffi
-        run: pip install curl_cffi
+
+      - name: Install deps
+        run: |
+          pip install curl_cffi
+          pip install -r scripts/requirements-images.txt || true
+
+      - name: Restore al-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs al-pdp
+
       - name: Run AL weekly sync
         run: |
           chmod +x scripts/run-al-weekly-sync.sh
           scripts/run-al-weekly-sync.sh
-      - name: Commit catalog updates
+
+      # Hard fail — never commit catalogue paths for images not on the CDN tag.
+      # Skip studio whitening: AL packshots are already light-studio; whitening
+      # ~8k files regularly hits the Actions time budget and delayed the CDN tag.
+      - name: Push PDP images to product-images tag
+        run: python3 scripts/push-product-images-tag.py --dirs al-pdp --skip-whiten
+
+      - name: Verify catalogue images are on the product-images tag
+        run: python3 scripts/verify-product-images.py --brand al --remote --skip-local --all-images
+
+
+      - name: Apply Briq NEW badge TTL (7 days)
+        run: python3 scripts/apply-new-badge-ttl.py --brand al
+      - name: Commit and push if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/al || true
-          if git diff --staged --quiet; then
-            echo "No AL catalog changes"
-          else
-            git commit -m "chore(al): weekly catalog sync"
-            git push
-          fi
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore: weekly AllSaints catalog sync" \
+            src/data/al \
+            scripts/run-al-weekly-sync.sh \
+            scripts/build-al-catalog.py \
+            scripts/scrape-al-family.py \
+            scripts/retag-al-leaves.py \
+            scripts/retranslate-al-ko.py \
+            scripts/check-al-korean.py \
+            scripts/push-product-images-tag.py \
+            scripts/restore-product-images-tag.py \
+            scripts/verify-product-images.py \
+            scripts/ci-commit-push.sh

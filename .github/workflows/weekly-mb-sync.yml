@@ -22,6 +22,9 @@ jobs:
         run: |
           chmod +x scripts/run-mb-weekly-sync.sh
           scripts/run-mb-weekly-sync.sh
+
+      - name: Apply Briq NEW badge TTL (7 days)
+        run: python3 scripts/apply-new-badge-ttl.py --brand mb
       - name: Commit catalog updates
         run: |
           chmod +x scripts/ci-commit-push.sh

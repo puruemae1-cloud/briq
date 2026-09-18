@@ -291,13 +291,25 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
         "accentColor": "#111111",
         "registeredAt": now,
         "updatedAt": now,
+        "badge": "New",
+        "newBadgeAt": now,
+        "editTier": "new",
     }
 
 
 def main() -> int:
+    from briq_new_badge import apply_new_badge_ttl, stamp_new_badge, utc_now
+
     cache = load_json(CACHE, {})
+    prev_rows = load_json(OUT_JSON, [])
+    prev_by_id = {
+        str(p.get("id")): p
+        for p in (prev_rows if isinstance(prev_rows, list) else [])
+        if isinstance(p, dict) and p.get("id")
+    }
     products: list[dict] = []
     seen: set[str] = set()
+    now_dt = utc_now()
     for family in AL_FAMILY_ORDER:
         cfg = AL_FAMILY_SCRAPERS[family]
         raw_path = RAW_DIR / cfg["out"]
@@ -329,6 +341,20 @@ def main() -> int:
                         break
                 continue
             seen.add(p["id"])
+            old = prev_by_id.get(p["id"])
+            if old:
+                # Preserve registration / NEW window across weekly rebuilds.
+                if old.get("registeredAt"):
+                    p["registeredAt"] = old["registeredAt"]
+                if old.get("newBadgeAt"):
+                    p["newBadgeAt"] = old["newBadgeAt"]
+                if old.get("badge") and old.get("badge") != "New":
+                    p["badge"] = old["badge"]
+                if old.get("editTier") and old.get("editTier") != "new":
+                    p["editTier"] = old["editTier"]
+                apply_new_badge_ttl(p, now=now_dt, newly_synced=False)
+            else:
+                stamp_new_badge(p, now=now_dt, force=True)
             products.append(p)
             if i % 10 == 0 or i == len(rows):
                 save_json(CACHE, cache)

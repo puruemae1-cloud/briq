@@ -18,6 +18,9 @@ jobs:
         run: |
           chmod +x scripts/run-vw-weekly-sync.sh
           scripts/run-vw-weekly-sync.sh
+
+      - name: Apply Briq NEW badge TTL (7 days)
+        run: python3 scripts/apply-new-badge-ttl.py --brand vw
       - name: Commit catalog updates
         run: |
           git config user.name "github-actions[bot]"

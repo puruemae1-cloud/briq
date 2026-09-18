@@ -165,6 +165,12 @@ export type Product = {
   hoverImage?: string;
   accent: string;
   badge?: string;
+  /**
+   * When Briq stamped the NEW badge (ISO). Weekly sync sets this for newly
+   * imported / newly synced SKUs. PLP shows NEW for 7 days from this time
+   * (falls back to `registeredAt`). Cleared after expiry on catalog TTL pass.
+   */
+  newBadgeAt?: string;
   gbpPrice?: number;
   /** Original GBP list price when the CW site shows a reduction. */
   gbpListPrice?: number;
