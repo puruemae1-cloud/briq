@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-14T21:32:39Z",
+  "generatedAt": "2026-09-18T06:00:17Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ce-rr0lz3r49-38iv",
-        "ce-rr0rc2n91-07eu",
-        "ce-rr0k20v86-03sd",
-        "ce-rr0k10v86-03sd"
+        "al-w075dd-4103",
+        "al-w253dc-5",
+        "al-w044le-5",
+        "al-w029tf-5"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "all-saints",
+        "all-saints",
+        "all-saints",
+        "all-saints"
       ]
     },
     "watches": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "lu-london-undercover-e-gift-card",
-        "lu-city-gent-umbrella",
-        "lu-toyo-steel-y350-toolbox-silver",
-        "lu-city-lux-umbrella"
+        "ce-4s226cplb-19rh",
+        "ce-4s342cplb-38no",
+        "ce-4s342cplb-19sp",
+        "ce-4s342cplb-01av"
       ],
       "brands": [
-        "london-undercover",
-        "london-undercover",
-        "london-undercover",
-        "london-undercover"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "sports": {
@@ -88,6 +88,12 @@
     }
   },
   "brands": {
+    "all-saints": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
     "arcteryx": [
       "shoes",
       "shoes",
@@ -95,22 +101,16 @@
       "shoes"
     ],
     "celine": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "galvin-green": [
       "sports",
       "sports",
       "sports",
       "sports"
-    ],
-    "london-undercover": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
     ],
     "mulberry": [
       "bags",
