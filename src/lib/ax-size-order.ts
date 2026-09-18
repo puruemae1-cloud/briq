@@ -1,6 +1,7 @@
 /**
- * Arc'teryx size ordering — match official site:
- * inseam Short → Regular → Tall, then numeric ascending (00 before 0).
+ * Size chip ordering — small → large.
+ * Handles Arc'teryx inseam (28-S), letter sizes, and compound labels
+ * like YSL "XS / GB XS" or "F34 / GB 6".
  */
 
 const LETTER_ORDER: Record<string, number> = {
@@ -21,6 +22,8 @@ const LETTER_ORDER: Record<string, number> = {
   "ONE SIZE": 11,
 };
 
+const LETTER_RE =
+  /\b(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL|2XL|3XL|4XL|5XL|OS|ONE\s*SIZE)\b/i;
 const INSEAM_RE = /^(\d+(?:\.\d+)?)\s*[- ]?\s*([SRT])$/i;
 
 function waistRank(raw: string): number {
@@ -34,15 +37,32 @@ export function axSizeSortKey(size: string): [number, number, number, string] {
   const s = (size || "").trim();
   if (!s) return [9, 0, 0, ""];
 
-  const m = s.match(INSEAM_RE);
-  if (m) {
-    const waist = m[1];
-    const length = m[2].toUpperCase();
+  const inseam = s.match(INSEAM_RE);
+  if (inseam) {
+    const waist = inseam[1];
+    const length = inseam[2].toUpperCase();
     return [0, "SRT".indexOf(length), waistRank(waist), s];
   }
 
-  const letter = LETTER_ORDER[s.toUpperCase()];
-  if (letter !== undefined) return [1, letter, 0, s];
+  // Exact letter match (XS, M, …)
+  const exact = LETTER_ORDER[s.toUpperCase()];
+  if (exact !== undefined) return [1, exact, 0, s];
+
+  // Compound: "XS / GB XS", "YSL S / GB S", "L / GB L"
+  const letter = s.match(LETTER_RE);
+  if (letter) {
+    const tok = letter[1].toUpperCase().replace(/\s+/g, " ");
+    const rank = LETTER_ORDER[tok === "ONE SIZE" ? "ONE SIZE" : tok];
+    if (rank !== undefined) return [1, rank, 0, s];
+  }
+
+  // Fashion numeric: "F34 / GB 6", "IT 40", bare "34"
+  const f = s.match(/\bF(\d{2})\b/i);
+  if (f) return [2, Number(f[1]), 0, s];
+  const gb = s.match(/\bGB\s*(\d{1,2})\b/i);
+  if (gb) return [2, Number(gb[1]), 0, s];
+  const bare = s.match(/^(\d{2})(?:\.\d+)?$/);
+  if (bare) return [2, Number(bare[1]), 0, s];
 
   const n = Number(s);
   if (Number.isFinite(n)) return [2, n, 0, s];

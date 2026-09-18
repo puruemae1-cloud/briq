@@ -298,6 +298,20 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
     color_key = slugify(str(raw.get("colorCode") or raw.get("color") or "default"))
 
     sizes = raw.get("sizes") or []
+    # Stable small→large for letter + F/GB numeric labels (matches PDP chip order).
+    _letter = {"XXXS": 0, "XXS": 1, "XS": 2, "S": 3, "M": 4, "L": 5, "XL": 6, "XXL": 7, "XXXL": 8}
+
+    def _size_key(s: dict) -> tuple:
+        disp = str(s.get("displayValue") or s.get("value") or "")
+        m = re.search(r"\b(XXXS|XXS|XS|S|M|L|XL|XXL|XXXL)\b", disp, re.I)
+        if m:
+            return (0, _letter.get(m.group(1).upper(), 99), disp)
+        fm = re.search(r"\bF(\d{2})\b", disp, re.I)
+        if fm:
+            return (1, int(fm.group(1)), disp)
+        return (2, 0, disp)
+
+    sizes = sorted(list(sizes), key=_size_key)
     usable_sizes = [
         s
         for s in sizes
