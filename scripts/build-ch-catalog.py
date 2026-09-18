@@ -1070,6 +1070,51 @@ def size_slug(size: str) -> str:
     return s or "os"
 
 
+# Chanel shoe SKUs often end with {nn}{B|C}{EU size} (e.g. …10B38 / …10C38).
+# Hybris returns both fittings as separate variants with the same EU label — keep one.
+_SHOE_FITTING_RE = re.compile(r"(\d{2})([A-Z])(\d+(?:\.\d+)?)$", re.I)
+
+
+def shoe_fitting_rank(sku: str) -> tuple[int, str, str]:
+    """Lower is better. Prefer B (standard) over C / other letters."""
+    m = _SHOE_FITTING_RE.search(sku or "")
+    letter = m.group(2).upper() if m else "Z"
+    prefer = 0 if letter == "B" else (1 if letter == "C" else 2)
+    return (prefer, letter, sku or "")
+
+
+def dedupe_shoe_size_rows(size_rows: list) -> list[dict]:
+    """One row per EU size label; prefer in-stock, then sellable, then B fitting."""
+    best: dict[str, dict] = {}
+    order: list[str] = []
+    for sz in size_rows or []:
+        if not isinstance(sz, dict):
+            continue
+        size_raw = str(sz.get("orliSize") or sz.get("size") or "").strip()
+        if not size_raw:
+            continue
+        key = size_raw
+        sku = str(sz.get("sku") or sz.get("id") or "")
+        prev = best.get(key)
+        if prev is None:
+            best[key] = sz
+            order.append(key)
+            continue
+        prev_sku = str(prev.get("sku") or prev.get("id") or "")
+        better = False
+        if bool(sz.get("inStock")) and not bool(prev.get("inStock")):
+            better = True
+        elif bool(sz.get("inStock")) == bool(prev.get("inStock")):
+            if bool(sz.get("sellableOnline")) and not bool(prev.get("sellableOnline")):
+                better = True
+            elif bool(sz.get("sellableOnline")) == bool(prev.get("sellableOnline")):
+                if shoe_fitting_rank(sku) < shoe_fitting_rank(prev_sku):
+                    better = True
+        if better:
+            best[key] = sz
+    return [best[k] for k in order]
+
+
 def load_prev() -> dict[str, dict]:
     out: dict[str, dict] = {}
     if OUT_JSON.exists():
@@ -1359,6 +1404,10 @@ CHAR_LABEL_KO = {
     "Colour": "컬러",
     "Reference": "레퍼런스",
     "Volume": "용량",
+    "Heel Height": "굽 높이",
+    "Collection": "컬렉션",
+    "Made in": "원산지",
+    "Product": "제품",
     "Olfactory family": "향조",
     "Concentration": "농도",
     "Key ingredients": "주요 성분",
@@ -1369,6 +1418,31 @@ CHAR_LABEL_KO = {
     "Coverage": "커버리지",
     "Application": "사용법",
 }
+
+
+def format_shoe_heel_height(dims) -> str:
+    """Chanel shoe PDPs expose heel height as in + mm; prefer millimetres."""
+    if not dims:
+        return ""
+    rows = dims if isinstance(dims, list) else [dims]
+    mm = None
+    inch = None
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        unit = str(row.get("unit") or "").lower()
+        value = as_text(row.get("value"))
+        if not value:
+            continue
+        if unit == "mm":
+            mm = value
+        elif unit == "in":
+            inch = value
+    if mm:
+        return f"{mm}mm"
+    if inch:
+        return f"{inch} in"
+    return as_text(dims)
 
 
 def characteristics_list(details: dict | None) -> list[dict]:
@@ -1817,20 +1891,85 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     details = row.get("details") or {}
     if not isinstance(details, dict):
         details = {}
+    # Prefer official KR PDP strings when present (chanel.com/kr).
     color_en = as_text(details.get("color"))
     fabrics_en = as_text(details.get("fabrics"))
     desc_en = as_text(details.get("description"))
     ref = as_text(details.get("reference"))
+    heel_en = format_shoe_heel_height(details.get("dimensions")) or as_text(
+        details.get("heelHeightMm")
+    )
+    if heel_en and heel_en.isdigit():
+        heel_en = f"{heel_en}mm"
+    collection_en = as_text(details.get("collection") or row.get("collection"))
+    made_in_en = as_text(details.get("madeIn"))
+    if not made_in_en:
+        for sz in row.get("sizes") or []:
+            if isinstance(sz, dict) and sz.get("madeInLabel"):
+                made_in_en = as_text(sz.get("madeInLabel"))
+                break
+    category_en = as_text(row.get("categoryLabel") or details.get("categoryLabel"))
 
-    color_ko = t(color_en) if color_en else ""
-    fabrics_ko = t(fabrics_en) if fabrics_en else ""
-    desc_ko = t(desc_en) if desc_en else ""
+    color_ko = as_text(details.get("colorKo")) or (t(color_en) if color_en else "")
+    fabrics_ko = as_text(details.get("fabricsKo")) or (
+        t(fabrics_en) if fabrics_en else ""
+    )
+    desc_ko = as_text(details.get("descriptionKo")) or (t(desc_en) if desc_en else "")
+    collection_ko = as_text(details.get("collectionKo")) or (
+        t(collection_en) if collection_en else ""
+    )
+    made_in_ko = as_text(details.get("madeInKo")) or (
+        t(made_in_en) if made_in_en else ""
+    )
+    category_ko = as_text(details.get("categoryLabelKo")) or (
+        t(category_en) if category_en else ""
+    )
+    heel_ko = heel_en  # numeric unit label is shared
+
+    # Ensure characteristics cover heel / collection / origin for techSpecs.
+    chars = list(details.get("characteristics") or [])
+    have = {
+        as_text(c.get("label")).lower()
+        for c in chars
+        if isinstance(c, dict)
+    }
+
+    def ensure_char(label: str, value: str) -> None:
+        if not value or label.lower() in have:
+            return
+        chars.append({"label": label, "value": value})
+        have.add(label.lower())
+
+    if fabrics_en:
+        ensure_char("Material", fabrics_en)
+    if color_en:
+        ensure_char("Colour", color_en)
+    if heel_en:
+        ensure_char("Heel Height", heel_en)
+    if collection_en:
+        ensure_char("Collection", collection_en)
+    if made_in_en:
+        ensure_char("Made in", made_in_en)
+    if category_en:
+        ensure_char("Product", category_en)
+    if ref:
+        ensure_char("Reference", ref.replace("-", "").replace(" ", ""))
+    details["characteristics"] = chars
+    row = {**row, "details": details}
 
     parts = [desc_ko]
+    if collection_ko:
+        parts.append(f"컬렉션: {collection_ko}")
+    if category_ko:
+        parts.append(f"카테고리: {category_ko}")
     if color_ko:
         parts.append(f"컬러: {color_ko}")
     if fabrics_ko:
         parts.append(f"소재: {fabrics_ko}")
+    if heel_ko:
+        parts.append(f"굽 높이: {heel_ko}")
+    if made_in_ko:
+        parts.append(f"원산지: {made_in_ko}")
     if ref:
         parts.append(f"레퍼런스: {ref}")
     description_ko = "\n\n".join(p for p in parts if p)
@@ -1851,7 +1990,7 @@ def build_shoe_product(row: dict, prev: dict | None, now_iso: str) -> dict | Non
     pid = f"ch-{str(code).lower()}"
     registered = (prev or {}).get("registeredAt") or now_iso
 
-    size_rows = row.get("sizes") or []
+    size_rows = dedupe_shoe_size_rows(row.get("sizes") or [])
     variants: list[dict] = []
     for sz in size_rows:
         size_raw = str(sz.get("orliSize") or sz.get("size") or "").strip()

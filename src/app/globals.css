@@ -624,6 +624,11 @@ a.chip[href*="sub=gg-sale"].is-active {
     object-fit: contain !important;
     object-position: 50% 50% !important;
   }
+
+  /* Chanel shoes — wide PC cover crop clipped the CC heel logo; bias lower. */
+  .shop-hero--brand.shop-hero--chanel-shoes .shop-hero__img {
+    object-position: 42% 88% !important;
+  }
 }
 
 .shop-hero__content {

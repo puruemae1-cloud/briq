@@ -175,8 +175,15 @@ export function ProductDetail({
     const groups = Array.from(map.values());
     // Always sort size chips small→large (letter + numeric). Catalog scrape
     // order is often wrong (e.g. Dior L/M/S/XL/XS…); AX inseam rules still apply.
+    // Collapse duplicate size labels (e.g. Chanel B/C fittings) to one chip.
     for (const g of groups) {
-      g.variants = [...g.variants].sort((a, b) =>
+      const bySize = new Map<string, ProductVariant>();
+      for (const v of g.variants) {
+        const key = v.size || v.id;
+        const prev = bySize.get(key);
+        if (!prev || (!prev.inStock && v.inStock)) bySize.set(key, v);
+      }
+      g.variants = [...bySize.values()].sort((a, b) =>
         compareAxSizes(a.size || "", b.size || ""),
       );
     }

@@ -336,7 +336,17 @@ def parse_shoe_pdp(html: str, url: str, forced_leaves: set[str]) -> dict | None:
         }
 
     top_status, stock_by_id = availability_map(data.get("availability"))
-    variants_out: list[dict] = []
+    # Hybris often returns B+C fittings for the same EU size — keep one chip.
+    _fitting_re = re.compile(r"(\d{2})([A-Z])(\d+(?:\.\d+)?)$", re.I)
+
+    def _fitting_rank(vid: str) -> tuple[int, str, str]:
+        m = _fitting_re.search(vid or "")
+        letter = m.group(2).upper() if m else "Z"
+        prefer = 0 if letter == "B" else (1 if letter == "C" else 2)
+        return (prefer, letter, vid or "")
+
+    best_by_size: dict[str, dict] = {}
+    size_order: list[str] = []
     any_in = False
     for v in prod.get("variants") or []:
         if not isinstance(v, dict):
@@ -348,16 +358,31 @@ def parse_shoe_pdp(html: str, url: str, forced_leaves: set[str]) -> dict | None:
         in_stock = bool(stock_by_id.get(vid, False))
         if in_stock:
             any_in = True
-        variants_out.append(
-            {
-                "id": vid,
-                "size": size,
-                "orliSize": size,
-                "sku": vid,
-                "inStock": in_stock,
-                "sellableOnline": bool(v.get("sellableOnline")),
-            }
-        )
+        row = {
+            "id": vid,
+            "size": size,
+            "orliSize": size,
+            "sku": vid,
+            "inStock": in_stock,
+            "sellableOnline": bool(v.get("sellableOnline")),
+        }
+        prev = best_by_size.get(size)
+        if prev is None:
+            best_by_size[size] = row
+            size_order.append(size)
+            continue
+        better = False
+        if in_stock and not prev.get("inStock"):
+            better = True
+        elif in_stock == bool(prev.get("inStock")):
+            if row["sellableOnline"] and not prev.get("sellableOnline"):
+                better = True
+            elif row["sellableOnline"] == bool(prev.get("sellableOnline")):
+                if _fitting_rank(vid) < _fitting_rank(str(prev.get("id") or "")):
+                    better = True
+        if better:
+            best_by_size[size] = row
+    variants_out = [best_by_size[s] for s in size_order]
     if top_status == "IN_STOCK" and not any_in:
         any_in = True
 
