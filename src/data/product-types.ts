@@ -57,6 +57,8 @@ export type ProductVariant = {
   bsCollections?: SubcategoryId[];
   /** Gucci PLP memberships. */
   gcCollections?: SubcategoryId[];
+  /** Bottega Veneta PLP memberships. */
+  bvCollections?: SubcategoryId[];
   /** Chanel PLP memberships. */
   chCollections?: SubcategoryId[];
   /** Celine PLP memberships. */
@@ -131,6 +133,8 @@ export type Product = {
   bsCollections?: SubcategoryId[];
   /** Gucci PLP memberships. */
   gcCollections?: SubcategoryId[];
+  /** Bottega Veneta PLP memberships. */
+  bvCollections?: SubcategoryId[];
   /** Chanel Ready-to-Wear PLP memberships. */
   chCollections?: SubcategoryId[];
   /** Celine PLP memberships. */

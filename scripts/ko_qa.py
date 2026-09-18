@@ -143,6 +143,8 @@ CATALOG_PATHS: dict[str, list[Path]] = {
     "ce": [ROOT / "src/data/ce/ce-catalog.json"],
     "mb": [ROOT / "src/data/mb/mb-catalog.json"],
     "vw": [ROOT / "src/data/vw/vw-catalog.json"],
+    "al": [ROOT / "src/data/al/al-catalog.json"],
+    "bv": [ROOT / "src/data/bv/bv-catalog.json"],
 }
 
 
@@ -300,7 +302,7 @@ def gtx_translate(text: str) -> str:
         last_err: Exception | None = None
         for attempt in range(6):
             try:
-                with urllib.request.urlopen(req, timeout=35) as r:
+                with urllib.request.urlopen(req, timeout=12) as r:
                     data = json.loads(r.read().decode())
                 return "".join(part[0] for part in data[0] if part and part[0])
             except urllib.error.HTTPError as e:

@@ -79,6 +79,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "멀버리 가방·액세서리를 Briq 영국 셀렉션으로 만나보세요.",
   },
+  "bottega-veneta": {
+    slug: "bottega-veneta",
+    nameEn: "Bottega Veneta",
+    nameKo: "보테가 베네타",
+    shopHref: "/shop?category=bags&sub=bottega-veneta-bags",
+    keywords: ["보테가", "보테가 베네타", "Bottega Veneta", "BV", "인트레치아토"],
+    blurb:
+      "보테가 베네타 가방·슈즈·의류·액세서리를 Briq 영국 셀렉션으로 만나보세요.",
+  },
   dior: {
     slug: "dior",
     nameEn: "Dior",

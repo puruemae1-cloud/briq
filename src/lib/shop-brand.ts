@@ -8,6 +8,7 @@ import {
 
 const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(gc-|gucci)/i, key: "gucci" },
+  { re: /^(bv-|bottega)/i, key: "bottega-veneta" },
   { re: /^(ce-|celine)/i, key: "celine" },
   { re: /^(ys-|saint-laurent|ysl)/i, key: "saint-laurent" },
   { re: /^(vw-|vivienne)/i, key: "vivienne-westwood" },

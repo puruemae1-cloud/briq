@@ -8,6 +8,10 @@ export type BrandKey =
   | "gucci"
   | "gucci-bags"
   | "gucci-shoes"
+  | "bottega-veneta"
+  | "bottega-veneta-bags"
+  | "bottega-veneta-shoes"
+  | "bottega-veneta-accessories"
   | "celine"
   | "celine-bags"
   | "celine-shoes"
@@ -86,6 +90,34 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/gucci.svg",
     // Locked women's shoes PLP creative — Primavera GG Supreme slingbacks.
     images: ["/banners/brand-gucci-shoes.jpg"],
+  },
+  "bottega-veneta": {
+    key: "bottega-veneta",
+    nameEn: "Bottega Veneta",
+    nameKo: "보테가 베네타",
+    logoSrc: "/brands/bottega-veneta.svg",
+    images: ["/banners/brand-bottega-veneta-1.jpg"],
+  },
+  "bottega-veneta-bags": {
+    key: "bottega-veneta-bags",
+    nameEn: "Bottega Veneta",
+    nameKo: "보테가 베네타",
+    logoSrc: "/brands/bottega-veneta.svg",
+    images: ["/banners/brand-bottega-veneta-1.jpg"],
+  },
+  "bottega-veneta-shoes": {
+    key: "bottega-veneta-shoes",
+    nameEn: "Bottega Veneta",
+    nameKo: "보테가 베네타",
+    logoSrc: "/brands/bottega-veneta.svg",
+    images: ["/banners/brand-bottega-veneta-1.jpg"],
+  },
+  "bottega-veneta-accessories": {
+    key: "bottega-veneta-accessories",
+    nameEn: "Bottega Veneta",
+    nameKo: "보테가 베네타",
+    logoSrc: "/brands/bottega-veneta.svg",
+    images: ["/banners/brand-bottega-veneta-1.jpg"],
   },
   celine: {
     key: "celine",
@@ -463,6 +495,31 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "gc-men-lace-ups": "gucci-shoes",
   "gc-men-boots": "gucci-shoes",
   "gucci-accessories": "gucci",
+  "bottega-veneta": "bottega-veneta",
+  "bottega-veneta-bags": "bottega-veneta-bags",
+  "bv-men-bags": "bottega-veneta-bags",
+  "bv-women-bags": "bottega-veneta-bags",
+  "bottega-veneta-shoes": "bottega-veneta-shoes",
+  "bv-men-shoes": "bottega-veneta-shoes",
+  "bv-women-shoes": "bottega-veneta-shoes",
+  "bottega-veneta-accessories": "bottega-veneta-accessories",
+  "bv-men-wallets": "bottega-veneta-accessories",
+  "bv-women-wallets": "bottega-veneta-accessories",
+  "bv-men-travel": "bottega-veneta-accessories",
+  "bv-women-travel": "bottega-veneta-accessories",
+  "bv-men-accessories": "bottega-veneta-accessories",
+  "bv-women-accessories": "bottega-veneta-accessories",
+  "bv-men-eyewear": "bottega-veneta-accessories",
+  "bv-women-eyewear": "bottega-veneta-accessories",
+  "bv-men-jewellery": "bottega-veneta-accessories",
+  "bv-women-jewellery": "bottega-veneta-accessories",
+  "bv-home": "bottega-veneta-accessories",
+  "bv-fragrances": "bottega-veneta-accessories",
+  "bv-gifts": "bottega-veneta-accessories",
+  "bv-gifts-her": "bottega-veneta-accessories",
+  "bv-gifts-him": "bottega-veneta-accessories",
+  "bv-men-clothing": "bottega-veneta",
+  "bv-women-clothing": "bottega-veneta",
   celine: "celine",
   "celine-bags": "celine-bags",
   "celine-shoes": "celine-shoes",

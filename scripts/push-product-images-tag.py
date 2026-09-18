@@ -30,9 +30,16 @@ def run(
     cmd: list[str],
     cwd: Path | None = None,
     check: bool = True,
+    timeout: int | None = None,
 ) -> subprocess.CompletedProcess:
     print("+", " ".join(cmd), flush=True)
-    return subprocess.run(cmd, cwd=str(cwd or ROOT), check=check)
+    try:
+        return subprocess.run(
+            cmd, cwd=str(cwd or ROOT), check=check, timeout=timeout
+        )
+    except subprocess.TimeoutExpired:
+        print(f"ERROR: timed out after {timeout}s: {' '.join(cmd)}", flush=True)
+        return subprocess.CompletedProcess(cmd, returncode=124)
 
 
 def ensure_git_identity(cwd: Path) -> None:
@@ -61,9 +68,10 @@ def add_worktree(tmp: Path, *, sparse_paths: list[str] | None = None) -> bool:
         )
         if added.returncode != 0:
             return False
-        run(["git", "sparse-checkout", "init", "--cone"], cwd=tmp, check=False)
+        # --no-cone is much faster for many specific SKU folders
+        run(["git", "sparse-checkout", "init", "--no-cone"], cwd=tmp, check=False)
         run(["git", "sparse-checkout", "set", *sparse_paths], cwd=tmp, check=False)
-        checkout = run(["git", "checkout", TAG], cwd=tmp, check=False)
+        checkout = run(["git", "checkout", TAG], cwd=tmp, check=False, timeout=180)
         return checkout.returncode == 0
 
     added = run(["git", "worktree", "add", "--detach", str(tmp), TAG], check=False)
@@ -364,10 +372,16 @@ def main() -> int:
             print(f"ERROR: studio greymat failed: {e}", flush=True)
             return 1
 
-    fetched = run(
-        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
-        check=False,
-    )
+    # Large product-images tag can hang forever on slow links — cap wait.
+    if os.environ.get("SKIP_TAG_FETCH", "").strip() in {"1", "true", "yes"}:
+        print("SKIP_TAG_FETCH=1 — using local product-images tag", flush=True)
+        fetched = subprocess.CompletedProcess(["git", "fetch"], 0)
+    else:
+        fetched = run(
+            ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+            check=False,
+            timeout=120,
+        )
     if fetched.returncode != 0:
         show = run(["git", "rev-parse", "--verify", TAG], check=False)
         if show.returncode != 0:
@@ -389,9 +403,19 @@ def main() -> int:
             # materializes public/products/ — otherwise a *new* brand path
             # (never on the tag) can be copied + `git add -f`'d yet still
             # show empty `git status` under sparse-checkout.
-            sparse = ["public/products/mb-pdp"] + [
-                f"public/products/{name}" for name, _ in src_roots
-            ]
+            sparse = ["public/products/mb-pdp"]
+            if only_ids:
+                # Only materialize the SKU folders we are updating — full
+                # al-pdp / gc-pdp checkouts hang for tens of minutes locally.
+                for name, _ in src_roots:
+                    if name == "banners":
+                        continue
+                    for oid in only_ids:
+                        sparse.append(f"public/products/{name}/{oid}")
+            else:
+                sparse.extend(
+                    f"public/products/{name}" for name, _ in src_roots
+                )
         if sparse:
             print(f"Using sparse checkout ({len(sparse)} path(s)).", flush=True)
         if not add_worktree(tmp, sparse_paths=sparse):

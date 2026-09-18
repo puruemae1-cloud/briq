@@ -12,6 +12,7 @@ import { luLifestyleCatalogProducts } from "@/data/lu/lu-lifestyle-catalog";
 import { psCatalogProducts } from "@/data/ps/ps-catalog";
 import { bsCatalogProducts } from "@/data/bs/bs-catalog";
 import { gcCatalogProducts } from "@/data/gc/gc-catalog";
+import { bvCatalogProducts } from "@/data/bv/bv-catalog";
 import { chCatalogProducts } from "@/data/ch/ch-catalog";
 import { ceCatalogProducts } from "@/data/ce/ce-catalog";
 // Saint Laurent is lazy-merged in getProductsByCategory / getProduct — a static
@@ -55,6 +56,7 @@ export const products: Product[] = [
   ...psCatalogProducts,
   ...bsCatalogProducts,
   ...gcCatalogProducts,
+  ...bvCatalogProducts,
   ...chCatalogProducts,
   ...ceCatalogProducts,
   ...vwCatalogProducts,
@@ -584,6 +586,10 @@ export function getProductsByCategory(category?: string, sub?: string) {
         c === "gc-men-gifts" ||
         c.startsWith("gc-men-gifts-"),
     ) ?? false;
+  const isBvGifts =
+    expanded?.some(
+      (c) => c === "bv-gifts" || c.startsWith("bv-gifts-"),
+    ) ?? false;
   // Dior Icons hub mixes jewellery + timepieces on the official PLP.
   const isDiDiorIcons = sub === "di-dior-icons";
   // Mulberry what's-new / gifts hubs mix bags + accessories on the official PLP.
@@ -601,6 +607,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
     category !== "all" &&
     !isPsGifts &&
     !isGcGifts &&
+    !isBvGifts &&
     !isDiDiorIcons &&
     !isMbMixedHub
   ) {
@@ -617,6 +624,7 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.psCollections?.some((c) => expanded.includes(c))) return true;
       if (p.bsCollections?.some((c) => expanded.includes(c))) return true;
       if (p.gcCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.bvCollections?.some((c) => expanded.includes(c))) return true;
       if (p.chCollections?.some((c) => expanded.includes(c))) return true;
       if (p.ceCollections?.some((c) => expanded.includes(c))) return true;
       if (p.ysCollections?.some((c) => expanded.includes(c))) return true;
@@ -639,6 +647,8 @@ export function getProductsByCategory(category?: string, sub?: string) {
       if (p.variants?.some((v) => v.bsCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.gcCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.bvCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.chCollections?.some((c) => expanded.includes(c))))
         return true;

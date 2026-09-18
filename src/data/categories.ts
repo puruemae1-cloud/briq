@@ -1312,7 +1312,398 @@ export type SubcategoryId =
   | "ch-watches-premiere"
   | "ch-watches-boy-friend"
   | "ch-watches-monsieur"
-  | "ch-watches-code-coco";
+  | "ch-watches-code-coco"
+  | "bottega-veneta"
+  | "bottega-veneta-bags"
+  | "bottega-veneta-shoes"
+  | "bottega-veneta-accessories"
+  | "bv-men"
+  | "bv-women"
+  | "bv-men-bags"
+  | "bv-men-bags-intrecciato"
+  | "bv-men-bags-diago"
+  | "bv-men-bags-veneto"
+  | "bv-men-bags-andiamo"
+  | "bv-men-bags-cabat"
+  | "bv-men-bags-getaway"
+  | "bv-men-bags-crossbody"
+  | "bv-men-bags-tote"
+  | "bv-men-bags-backpack"
+  | "bv-men-bags-belt"
+  | "bv-men-bags-briefcase"
+  | "bv-men-bags-document-case"
+  | "bv-men-shoes"
+  | "bv-men-shoes-shot"
+  | "bv-men-shoes-orbit-flash"
+  | "bv-men-shoes-orbit"
+  | "bv-men-shoes-silenzio"
+  | "bv-men-shoes-astaire"
+  | "bv-men-shoes-palazzo"
+  | "bv-men-shoes-haddock"
+  | "bv-men-shoes-sneakers"
+  | "bv-men-shoes-loafers"
+  | "bv-men-shoes-lace-ups"
+  | "bv-men-shoes-boots"
+  | "bv-men-shoes-slippers"
+  | "bv-men-shoes-sandals"
+  | "bv-men-clothing"
+  | "bv-men-clothing-coats"
+  | "bv-men-clothing-jackets"
+  | "bv-men-clothing-knitwear"
+  | "bv-men-clothing-leather"
+  | "bv-men-clothing-trousers"
+  | "bv-men-clothing-denim"
+  | "bv-men-clothing-shirts"
+  | "bv-men-clothing-tshirts"
+  | "bv-men-clothing-polos"
+  | "bv-men-clothing-swimwear"
+  | "bv-men-wallets"
+  | "bv-men-wallets-small"
+  | "bv-men-wallets-long"
+  | "bv-men-wallets-card-cases"
+  | "bv-men-wallets-pouches"
+  | "bv-men-wallets-intrecciato"
+  | "bv-men-wallets-piccolo"
+  | "bv-men-wallets-cassette"
+  | "bv-men-travel"
+  | "bv-men-accessories"
+  | "bv-men-acc-key-rings"
+  | "bv-men-acc-belts"
+  | "bv-men-acc-tech"
+  | "bv-men-acc-scarves-ties"
+  | "bv-men-acc-gloves"
+  | "bv-men-acc-hats"
+  | "bv-men-acc-bathrobes"
+  | "bv-men-eyewear"
+  | "bv-men-eyewear-sunglasses"
+  | "bv-men-eyewear-opticals"
+  | "bv-men-eyewear-aviator"
+  | "bv-men-eyewear-panthos"
+  | "bv-men-eyewear-rectangular"
+  | "bv-men-eyewear-squared"
+  | "bv-men-jewellery"
+  | "bv-men-jewellery-earrings"
+  | "bv-men-jewellery-rings"
+  | "bv-men-jewellery-bracelets"
+  | "bv-men-jewellery-necklaces"
+  | "bv-men-jewellery-cufflinks"
+  | "bv-women-bags"
+  | "bv-women-bags-mini"
+  | "bv-women-bags-crossbody"
+  | "bv-women-bags-shoulder"
+  | "bv-women-bags-top-handle"
+  | "bv-women-bags-tote"
+  | "bv-women-bags-clutch"
+  | "bv-women-bags-jodie"
+  | "bv-women-bags-andiamo"
+  | "bv-women-bags-barbara"
+  | "bv-women-bags-campana"
+  | "bv-women-bags-pinacoteca"
+  | "bv-women-bags-sardine"
+  | "bv-women-bags-cabat"
+  | "bv-women-bags-bang-bang"
+  | "bv-women-bags-lauren"
+  | "bv-women-bags-parachute"
+  | "bv-women-bags-knot-clutch"
+  | "bv-women-bags-madison"
+  | "bv-women-shoes"
+  | "bv-women-shoes-sneakers"
+  | "bv-women-shoes-boots"
+  | "bv-women-shoes-pumps"
+  | "bv-women-shoes-sandals"
+  | "bv-women-shoes-loafers-laceups"
+  | "bv-women-shoes-ballerinas"
+  | "bv-women-shoes-shot"
+  | "bv-women-shoes-orbit"
+  | "bv-women-shoes-orbit-flash"
+  | "bv-women-shoes-silenzio"
+  | "bv-women-shoes-astaire"
+  | "bv-women-clothing"
+  | "bv-women-clothing-outerwear"
+  | "bv-women-clothing-jackets"
+  | "bv-women-clothing-knitwear"
+  | "bv-women-clothing-leather"
+  | "bv-women-clothing-dresses"
+  | "bv-women-clothing-skirts"
+  | "bv-women-clothing-trousers"
+  | "bv-women-clothing-denim"
+  | "bv-women-clothing-shirts"
+  | "bv-women-clothing-tops"
+  | "bv-women-clothing-swimwear"
+  | "bv-women-wallets"
+  | "bv-women-wallets-small"
+  | "bv-women-wallets-long"
+  | "bv-women-wallets-card-cases"
+  | "bv-women-wallets-pouches"
+  | "bv-women-wallets-intrecciato"
+  | "bv-women-wallets-cassette"
+  | "bv-women-travel"
+  | "bv-women-accessories"
+  | "bv-women-acc-key-rings"
+  | "bv-women-acc-belts"
+  | "bv-women-acc-tech"
+  | "bv-women-acc-scarves"
+  | "bv-women-acc-gloves"
+  | "bv-women-acc-hats"
+  | "bv-women-acc-bathrobes"
+  | "bv-women-eyewear"
+  | "bv-women-eyewear-sunglasses"
+  | "bv-women-eyewear-opticals"
+  | "bv-women-eyewear-aviator"
+  | "bv-women-eyewear-panthos"
+  | "bv-women-eyewear-rectangular"
+  | "bv-women-eyewear-squared"
+  | "bv-women-eyewear-cat-eye"
+  | "bv-women-eyewear-oval"
+  | "bv-women-jewellery"
+  | "bv-women-jewellery-earrings"
+  | "bv-women-jewellery-rings"
+  | "bv-women-jewellery-bracelets"
+  | "bv-women-jewellery-necklaces"
+  | "bv-women-jewellery-brooch"
+  | "bv-home"
+  | "bv-home-leather"
+  | "bv-home-textiles"
+  | "bv-home-games"
+  | "bv-home-pet"
+  | "bv-home-decor"
+  | "bv-fragrances"
+  | "bv-fragrances-edp"
+  | "bv-fragrances-parfum"
+  | "bv-fragrances-candles"
+  | "bv-fragrances-refill"
+  | "bv-fragrances-travel-set"
+  | "bv-gifts"
+  | "bv-gifts-her"
+  | "bv-gifts-him"
+  | "bv-gifts-her-bags"
+  | "bv-gifts-her-shoes"
+  | "bv-gifts-her-wallets"
+  | "bv-gifts-her-jewellery"
+  | "bv-gifts-her-accessories"
+  | "bv-gifts-him-bags"
+  | "bv-gifts-him-shoes"
+  | "bv-gifts-him-wallets"
+  | "bv-gifts-him-jewellery"
+  | "bv-gifts-him-accessories";
+
+/** Bottega Veneta men's bags leaves. */
+export const BV_MEN_BAG_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-bags-intrecciato",
+  "bv-men-bags-diago",
+  "bv-men-bags-veneto",
+  "bv-men-bags-andiamo",
+  "bv-men-bags-cabat",
+  "bv-men-bags-getaway",
+  "bv-men-bags-crossbody",
+  "bv-men-bags-tote",
+  "bv-men-bags-backpack",
+  "bv-men-bags-belt",
+  "bv-men-bags-briefcase",
+  "bv-men-bags-document-case",
+];
+
+/** Bottega Veneta women's bags leaves. */
+export const BV_WOMEN_BAG_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-bags-mini",
+  "bv-women-bags-crossbody",
+  "bv-women-bags-shoulder",
+  "bv-women-bags-top-handle",
+  "bv-women-bags-tote",
+  "bv-women-bags-clutch",
+  "bv-women-bags-jodie",
+  "bv-women-bags-andiamo",
+  "bv-women-bags-barbara",
+  "bv-women-bags-campana",
+  "bv-women-bags-pinacoteca",
+  "bv-women-bags-sardine",
+  "bv-women-bags-cabat",
+  "bv-women-bags-bang-bang",
+  "bv-women-bags-lauren",
+  "bv-women-bags-parachute",
+  "bv-women-bags-knot-clutch",
+  "bv-women-bags-madison",
+];
+
+/** Bottega Veneta men's shoes leaves. */
+export const BV_MEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-shoes-shot",
+  "bv-men-shoes-orbit-flash",
+  "bv-men-shoes-orbit",
+  "bv-men-shoes-silenzio",
+  "bv-men-shoes-astaire",
+  "bv-men-shoes-palazzo",
+  "bv-men-shoes-haddock",
+  "bv-men-shoes-sneakers",
+  "bv-men-shoes-loafers",
+  "bv-men-shoes-lace-ups",
+  "bv-men-shoes-boots",
+  "bv-men-shoes-slippers",
+  "bv-men-shoes-sandals",
+];
+
+/** Bottega Veneta women's shoes leaves. */
+export const BV_WOMEN_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-shoes-sneakers",
+  "bv-women-shoes-boots",
+  "bv-women-shoes-pumps",
+  "bv-women-shoes-sandals",
+  "bv-women-shoes-loafers-laceups",
+  "bv-women-shoes-ballerinas",
+  "bv-women-shoes-shot",
+  "bv-women-shoes-orbit",
+  "bv-women-shoes-orbit-flash",
+  "bv-women-shoes-silenzio",
+  "bv-women-shoes-astaire",
+];
+
+/** Bottega Veneta men's clothing leaves. */
+export const BV_MEN_CLOTHING_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-clothing-coats",
+  "bv-men-clothing-jackets",
+  "bv-men-clothing-knitwear",
+  "bv-men-clothing-leather",
+  "bv-men-clothing-trousers",
+  "bv-men-clothing-denim",
+  "bv-men-clothing-shirts",
+  "bv-men-clothing-tshirts",
+  "bv-men-clothing-polos",
+  "bv-men-clothing-swimwear",
+];
+
+/** Bottega Veneta women's clothing leaves. */
+export const BV_WOMEN_CLOTHING_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-clothing-outerwear",
+  "bv-women-clothing-jackets",
+  "bv-women-clothing-knitwear",
+  "bv-women-clothing-leather",
+  "bv-women-clothing-dresses",
+  "bv-women-clothing-skirts",
+  "bv-women-clothing-trousers",
+  "bv-women-clothing-denim",
+  "bv-women-clothing-shirts",
+  "bv-women-clothing-tops",
+  "bv-women-clothing-swimwear",
+];
+
+/** Bottega Veneta men's wallets leaves. */
+export const BV_MEN_WALLET_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-wallets-small",
+  "bv-men-wallets-long",
+  "bv-men-wallets-card-cases",
+  "bv-men-wallets-pouches",
+  "bv-men-wallets-intrecciato",
+  "bv-men-wallets-piccolo",
+  "bv-men-wallets-cassette",
+];
+
+/** Bottega Veneta women's wallets leaves. */
+export const BV_WOMEN_WALLET_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-wallets-small",
+  "bv-women-wallets-long",
+  "bv-women-wallets-card-cases",
+  "bv-women-wallets-pouches",
+  "bv-women-wallets-intrecciato",
+  "bv-women-wallets-cassette",
+];
+
+/** Bottega Veneta men's accessories leaves. */
+export const BV_MEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-acc-key-rings",
+  "bv-men-acc-belts",
+  "bv-men-acc-tech",
+  "bv-men-acc-scarves-ties",
+  "bv-men-acc-gloves",
+  "bv-men-acc-hats",
+  "bv-men-acc-bathrobes",
+];
+
+/** Bottega Veneta women's accessories leaves. */
+export const BV_WOMEN_ACC_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-acc-key-rings",
+  "bv-women-acc-belts",
+  "bv-women-acc-tech",
+  "bv-women-acc-scarves",
+  "bv-women-acc-gloves",
+  "bv-women-acc-hats",
+  "bv-women-acc-bathrobes",
+];
+
+/** Bottega Veneta men's eyewear leaves. */
+export const BV_MEN_EYEWEAR_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-eyewear-sunglasses",
+  "bv-men-eyewear-opticals",
+  "bv-men-eyewear-aviator",
+  "bv-men-eyewear-panthos",
+  "bv-men-eyewear-rectangular",
+  "bv-men-eyewear-squared",
+];
+
+/** Bottega Veneta women's eyewear leaves. */
+export const BV_WOMEN_EYEWEAR_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-eyewear-sunglasses",
+  "bv-women-eyewear-opticals",
+  "bv-women-eyewear-aviator",
+  "bv-women-eyewear-panthos",
+  "bv-women-eyewear-rectangular",
+  "bv-women-eyewear-squared",
+  "bv-women-eyewear-cat-eye",
+  "bv-women-eyewear-oval",
+];
+
+/** Bottega Veneta men's jewellery leaves. */
+export const BV_MEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "bv-men-jewellery-earrings",
+  "bv-men-jewellery-rings",
+  "bv-men-jewellery-bracelets",
+  "bv-men-jewellery-necklaces",
+  "bv-men-jewellery-cufflinks",
+];
+
+/** Bottega Veneta women's jewellery leaves. */
+export const BV_WOMEN_JEWELLERY_LEAF_IDS: SubcategoryId[] = [
+  "bv-women-jewellery-earrings",
+  "bv-women-jewellery-rings",
+  "bv-women-jewellery-bracelets",
+  "bv-women-jewellery-necklaces",
+  "bv-women-jewellery-brooch",
+];
+
+/** Bottega Veneta home leaves. */
+export const BV_HOME_LEAF_IDS: SubcategoryId[] = [
+  "bv-home-leather",
+  "bv-home-textiles",
+  "bv-home-games",
+  "bv-home-pet",
+  "bv-home-decor",
+];
+
+/** Bottega Veneta fragrance leaves. */
+export const BV_FRAGRANCE_LEAF_IDS: SubcategoryId[] = [
+  "bv-fragrances-edp",
+  "bv-fragrances-parfum",
+  "bv-fragrances-candles",
+  "bv-fragrances-refill",
+  "bv-fragrances-travel-set",
+];
+
+/** Bottega Veneta gifts for her leaves. */
+export const BV_GIFTS_HER_LEAF_IDS: SubcategoryId[] = [
+  "bv-gifts-her-bags",
+  "bv-gifts-her-shoes",
+  "bv-gifts-her-wallets",
+  "bv-gifts-her-jewellery",
+  "bv-gifts-her-accessories",
+];
+
+/** Bottega Veneta gifts for him leaves. */
+export const BV_GIFTS_HIM_LEAF_IDS: SubcategoryId[] = [
+  "bv-gifts-him-bags",
+  "bv-gifts-him-shoes",
+  "bv-gifts-him-wallets",
+  "bv-gifts-him-jewellery",
+  "bv-gifts-him-accessories",
+];
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
 export const CH_WOMEN_RTW_LEAF_IDS: SubcategoryId[] = [
@@ -4654,6 +5045,270 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bb-gifts-him": [...BB_GIFTS_HIM_IDS],
   "bb-gifts-children": [...BB_GIFTS_CHILDREN_IDS],
   "bb-gifts-home": [...BB_GIFTS_HOME_IDS],
+  "bottega-veneta-bags": [
+    "bottega-veneta-bags",
+    "bv-men-bags",
+    ...BV_MEN_BAG_LEAF_IDS,
+    "bv-women-bags",
+    ...BV_WOMEN_BAG_LEAF_IDS,
+  ],
+  "bv-men-bags": ["bv-men-bags", ...BV_MEN_BAG_LEAF_IDS],
+  "bv-women-bags": ["bv-women-bags", ...BV_WOMEN_BAG_LEAF_IDS],
+  "bv-men-bags-intrecciato": ["bv-men-bags-intrecciato"],
+  "bv-men-bags-diago": ["bv-men-bags-diago"],
+  "bv-men-bags-veneto": ["bv-men-bags-veneto"],
+  "bv-men-bags-andiamo": ["bv-men-bags-andiamo"],
+  "bv-men-bags-cabat": ["bv-men-bags-cabat"],
+  "bv-men-bags-getaway": ["bv-men-bags-getaway"],
+  "bv-men-bags-crossbody": ["bv-men-bags-crossbody"],
+  "bv-men-bags-tote": ["bv-men-bags-tote"],
+  "bv-men-bags-backpack": ["bv-men-bags-backpack"],
+  "bv-men-bags-belt": ["bv-men-bags-belt"],
+  "bv-men-bags-briefcase": ["bv-men-bags-briefcase"],
+  "bv-men-bags-document-case": ["bv-men-bags-document-case"],
+  "bv-women-bags-mini": ["bv-women-bags-mini"],
+  "bv-women-bags-crossbody": ["bv-women-bags-crossbody"],
+  "bv-women-bags-shoulder": ["bv-women-bags-shoulder"],
+  "bv-women-bags-top-handle": ["bv-women-bags-top-handle"],
+  "bv-women-bags-tote": ["bv-women-bags-tote"],
+  "bv-women-bags-clutch": ["bv-women-bags-clutch"],
+  "bv-women-bags-jodie": ["bv-women-bags-jodie"],
+  "bv-women-bags-andiamo": ["bv-women-bags-andiamo"],
+  "bv-women-bags-barbara": ["bv-women-bags-barbara"],
+  "bv-women-bags-campana": ["bv-women-bags-campana"],
+  "bv-women-bags-pinacoteca": ["bv-women-bags-pinacoteca"],
+  "bv-women-bags-sardine": ["bv-women-bags-sardine"],
+  "bv-women-bags-cabat": ["bv-women-bags-cabat"],
+  "bv-women-bags-bang-bang": ["bv-women-bags-bang-bang"],
+  "bv-women-bags-lauren": ["bv-women-bags-lauren"],
+  "bv-women-bags-parachute": ["bv-women-bags-parachute"],
+  "bv-women-bags-knot-clutch": ["bv-women-bags-knot-clutch"],
+  "bv-women-bags-madison": ["bv-women-bags-madison"],
+  "bottega-veneta-shoes": [
+    "bottega-veneta-shoes",
+    "bv-men-shoes",
+    ...BV_MEN_SHOE_LEAF_IDS,
+    "bv-women-shoes",
+    ...BV_WOMEN_SHOE_LEAF_IDS,
+  ],
+  "bv-men-shoes": ["bv-men-shoes", ...BV_MEN_SHOE_LEAF_IDS],
+  "bv-women-shoes": ["bv-women-shoes", ...BV_WOMEN_SHOE_LEAF_IDS],
+  "bv-men-shoes-shot": ["bv-men-shoes-shot"],
+  "bv-men-shoes-orbit-flash": ["bv-men-shoes-orbit-flash"],
+  "bv-men-shoes-orbit": ["bv-men-shoes-orbit"],
+  "bv-men-shoes-silenzio": ["bv-men-shoes-silenzio"],
+  "bv-men-shoes-astaire": ["bv-men-shoes-astaire"],
+  "bv-men-shoes-palazzo": ["bv-men-shoes-palazzo"],
+  "bv-men-shoes-haddock": ["bv-men-shoes-haddock"],
+  "bv-men-shoes-sneakers": ["bv-men-shoes-sneakers"],
+  "bv-men-shoes-loafers": ["bv-men-shoes-loafers"],
+  "bv-men-shoes-lace-ups": ["bv-men-shoes-lace-ups"],
+  "bv-men-shoes-boots": ["bv-men-shoes-boots"],
+  "bv-men-shoes-slippers": ["bv-men-shoes-slippers"],
+  "bv-men-shoes-sandals": ["bv-men-shoes-sandals"],
+  "bv-women-shoes-sneakers": ["bv-women-shoes-sneakers"],
+  "bv-women-shoes-boots": ["bv-women-shoes-boots"],
+  "bv-women-shoes-pumps": ["bv-women-shoes-pumps"],
+  "bv-women-shoes-sandals": ["bv-women-shoes-sandals"],
+  "bv-women-shoes-loafers-laceups": ["bv-women-shoes-loafers-laceups"],
+  "bv-women-shoes-ballerinas": ["bv-women-shoes-ballerinas"],
+  "bv-women-shoes-shot": ["bv-women-shoes-shot"],
+  "bv-women-shoes-orbit": ["bv-women-shoes-orbit"],
+  "bv-women-shoes-orbit-flash": ["bv-women-shoes-orbit-flash"],
+  "bv-women-shoes-silenzio": ["bv-women-shoes-silenzio"],
+  "bv-women-shoes-astaire": ["bv-women-shoes-astaire"],
+  "bottega-veneta": [
+    "bottega-veneta",
+    "bv-men",
+    "bv-men-clothing",
+    ...BV_MEN_CLOTHING_LEAF_IDS,
+    "bv-women",
+    "bv-women-clothing",
+    ...BV_WOMEN_CLOTHING_LEAF_IDS,
+  ],
+  "bv-men": [
+    "bv-men",
+    "bv-men-bags",
+    ...BV_MEN_BAG_LEAF_IDS,
+    "bv-men-shoes",
+    ...BV_MEN_SHOE_LEAF_IDS,
+    "bv-men-clothing",
+    ...BV_MEN_CLOTHING_LEAF_IDS,
+    "bv-men-wallets",
+    ...BV_MEN_WALLET_LEAF_IDS,
+    "bv-men-travel",
+    "bv-men-accessories",
+    ...BV_MEN_ACC_LEAF_IDS,
+    "bv-men-eyewear",
+    ...BV_MEN_EYEWEAR_LEAF_IDS,
+    "bv-men-jewellery",
+    ...BV_MEN_JEWELLERY_LEAF_IDS,
+  ],
+  "bv-women": [
+    "bv-women",
+    "bv-women-bags",
+    ...BV_WOMEN_BAG_LEAF_IDS,
+    "bv-women-shoes",
+    ...BV_WOMEN_SHOE_LEAF_IDS,
+    "bv-women-clothing",
+    ...BV_WOMEN_CLOTHING_LEAF_IDS,
+    "bv-women-wallets",
+    ...BV_WOMEN_WALLET_LEAF_IDS,
+    "bv-women-travel",
+    "bv-women-accessories",
+    ...BV_WOMEN_ACC_LEAF_IDS,
+    "bv-women-eyewear",
+    ...BV_WOMEN_EYEWEAR_LEAF_IDS,
+    "bv-women-jewellery",
+    ...BV_WOMEN_JEWELLERY_LEAF_IDS,
+  ],
+  "bv-men-clothing": ["bv-men-clothing", ...BV_MEN_CLOTHING_LEAF_IDS],
+  "bv-women-clothing": ["bv-women-clothing", ...BV_WOMEN_CLOTHING_LEAF_IDS],
+  "bv-men-clothing-coats": ["bv-men-clothing-coats"],
+  "bv-men-clothing-jackets": ["bv-men-clothing-jackets"],
+  "bv-men-clothing-knitwear": ["bv-men-clothing-knitwear"],
+  "bv-men-clothing-leather": ["bv-men-clothing-leather"],
+  "bv-men-clothing-trousers": ["bv-men-clothing-trousers"],
+  "bv-men-clothing-denim": ["bv-men-clothing-denim"],
+  "bv-men-clothing-shirts": ["bv-men-clothing-shirts"],
+  "bv-men-clothing-tshirts": ["bv-men-clothing-tshirts"],
+  "bv-men-clothing-polos": ["bv-men-clothing-polos"],
+  "bv-men-clothing-swimwear": ["bv-men-clothing-swimwear"],
+  "bv-women-clothing-outerwear": ["bv-women-clothing-outerwear"],
+  "bv-women-clothing-jackets": ["bv-women-clothing-jackets"],
+  "bv-women-clothing-knitwear": ["bv-women-clothing-knitwear"],
+  "bv-women-clothing-leather": ["bv-women-clothing-leather"],
+  "bv-women-clothing-dresses": ["bv-women-clothing-dresses"],
+  "bv-women-clothing-skirts": ["bv-women-clothing-skirts"],
+  "bv-women-clothing-trousers": ["bv-women-clothing-trousers"],
+  "bv-women-clothing-denim": ["bv-women-clothing-denim"],
+  "bv-women-clothing-shirts": ["bv-women-clothing-shirts"],
+  "bv-women-clothing-tops": ["bv-women-clothing-tops"],
+  "bv-women-clothing-swimwear": ["bv-women-clothing-swimwear"],
+  "bottega-veneta-accessories": [
+    "bottega-veneta-accessories",
+    "bv-men",
+    "bv-men-wallets",
+    ...BV_MEN_WALLET_LEAF_IDS,
+    "bv-men-travel",
+    "bv-men-accessories",
+    ...BV_MEN_ACC_LEAF_IDS,
+    "bv-men-eyewear",
+    ...BV_MEN_EYEWEAR_LEAF_IDS,
+    "bv-men-jewellery",
+    ...BV_MEN_JEWELLERY_LEAF_IDS,
+    "bv-women",
+    "bv-women-wallets",
+    ...BV_WOMEN_WALLET_LEAF_IDS,
+    "bv-women-travel",
+    "bv-women-accessories",
+    ...BV_WOMEN_ACC_LEAF_IDS,
+    "bv-women-eyewear",
+    ...BV_WOMEN_EYEWEAR_LEAF_IDS,
+    "bv-women-jewellery",
+    ...BV_WOMEN_JEWELLERY_LEAF_IDS,
+    "bv-home",
+    ...BV_HOME_LEAF_IDS,
+    "bv-fragrances",
+    ...BV_FRAGRANCE_LEAF_IDS,
+    "bv-gifts",
+    "bv-gifts-her",
+    ...BV_GIFTS_HER_LEAF_IDS,
+    "bv-gifts-him",
+    ...BV_GIFTS_HIM_LEAF_IDS,
+  ],
+  "bv-men-wallets": ["bv-men-wallets", ...BV_MEN_WALLET_LEAF_IDS],
+  "bv-women-wallets": ["bv-women-wallets", ...BV_WOMEN_WALLET_LEAF_IDS],
+  "bv-men-travel": ["bv-men-travel"],
+  "bv-women-travel": ["bv-women-travel"],
+  "bv-men-accessories": ["bv-men-accessories", ...BV_MEN_ACC_LEAF_IDS],
+  "bv-women-accessories": ["bv-women-accessories", ...BV_WOMEN_ACC_LEAF_IDS],
+  "bv-men-eyewear": ["bv-men-eyewear", ...BV_MEN_EYEWEAR_LEAF_IDS],
+  "bv-women-eyewear": ["bv-women-eyewear", ...BV_WOMEN_EYEWEAR_LEAF_IDS],
+  "bv-men-jewellery": ["bv-men-jewellery", ...BV_MEN_JEWELLERY_LEAF_IDS],
+  "bv-women-jewellery": ["bv-women-jewellery", ...BV_WOMEN_JEWELLERY_LEAF_IDS],
+  "bv-home": ["bv-home", ...BV_HOME_LEAF_IDS],
+  "bv-fragrances": ["bv-fragrances", ...BV_FRAGRANCE_LEAF_IDS],
+  "bv-gifts": [
+    "bv-gifts",
+    "bv-gifts-her",
+    ...BV_GIFTS_HER_LEAF_IDS,
+    "bv-gifts-him",
+    ...BV_GIFTS_HIM_LEAF_IDS,
+  ],
+  "bv-gifts-her": ["bv-gifts-her", ...BV_GIFTS_HER_LEAF_IDS],
+  "bv-gifts-him": ["bv-gifts-him", ...BV_GIFTS_HIM_LEAF_IDS],
+  "bv-men-wallets-small": ["bv-men-wallets-small"],
+  "bv-men-wallets-long": ["bv-men-wallets-long"],
+  "bv-men-wallets-card-cases": ["bv-men-wallets-card-cases"],
+  "bv-men-wallets-pouches": ["bv-men-wallets-pouches"],
+  "bv-men-wallets-intrecciato": ["bv-men-wallets-intrecciato"],
+  "bv-men-wallets-piccolo": ["bv-men-wallets-piccolo"],
+  "bv-men-wallets-cassette": ["bv-men-wallets-cassette"],
+  "bv-women-wallets-small": ["bv-women-wallets-small"],
+  "bv-women-wallets-long": ["bv-women-wallets-long"],
+  "bv-women-wallets-card-cases": ["bv-women-wallets-card-cases"],
+  "bv-women-wallets-pouches": ["bv-women-wallets-pouches"],
+  "bv-women-wallets-intrecciato": ["bv-women-wallets-intrecciato"],
+  "bv-women-wallets-cassette": ["bv-women-wallets-cassette"],
+  "bv-men-acc-key-rings": ["bv-men-acc-key-rings"],
+  "bv-men-acc-belts": ["bv-men-acc-belts"],
+  "bv-men-acc-tech": ["bv-men-acc-tech"],
+  "bv-men-acc-scarves-ties": ["bv-men-acc-scarves-ties"],
+  "bv-men-acc-gloves": ["bv-men-acc-gloves"],
+  "bv-men-acc-hats": ["bv-men-acc-hats"],
+  "bv-men-acc-bathrobes": ["bv-men-acc-bathrobes"],
+  "bv-women-acc-key-rings": ["bv-women-acc-key-rings"],
+  "bv-women-acc-belts": ["bv-women-acc-belts"],
+  "bv-women-acc-tech": ["bv-women-acc-tech"],
+  "bv-women-acc-scarves": ["bv-women-acc-scarves"],
+  "bv-women-acc-gloves": ["bv-women-acc-gloves"],
+  "bv-women-acc-hats": ["bv-women-acc-hats"],
+  "bv-women-acc-bathrobes": ["bv-women-acc-bathrobes"],
+  "bv-men-eyewear-sunglasses": ["bv-men-eyewear-sunglasses"],
+  "bv-men-eyewear-opticals": ["bv-men-eyewear-opticals"],
+  "bv-men-eyewear-aviator": ["bv-men-eyewear-aviator"],
+  "bv-men-eyewear-panthos": ["bv-men-eyewear-panthos"],
+  "bv-men-eyewear-rectangular": ["bv-men-eyewear-rectangular"],
+  "bv-men-eyewear-squared": ["bv-men-eyewear-squared"],
+  "bv-women-eyewear-sunglasses": ["bv-women-eyewear-sunglasses"],
+  "bv-women-eyewear-opticals": ["bv-women-eyewear-opticals"],
+  "bv-women-eyewear-aviator": ["bv-women-eyewear-aviator"],
+  "bv-women-eyewear-panthos": ["bv-women-eyewear-panthos"],
+  "bv-women-eyewear-rectangular": ["bv-women-eyewear-rectangular"],
+  "bv-women-eyewear-squared": ["bv-women-eyewear-squared"],
+  "bv-women-eyewear-cat-eye": ["bv-women-eyewear-cat-eye"],
+  "bv-women-eyewear-oval": ["bv-women-eyewear-oval"],
+  "bv-men-jewellery-earrings": ["bv-men-jewellery-earrings"],
+  "bv-men-jewellery-rings": ["bv-men-jewellery-rings"],
+  "bv-men-jewellery-bracelets": ["bv-men-jewellery-bracelets"],
+  "bv-men-jewellery-necklaces": ["bv-men-jewellery-necklaces"],
+  "bv-men-jewellery-cufflinks": ["bv-men-jewellery-cufflinks"],
+  "bv-women-jewellery-earrings": ["bv-women-jewellery-earrings"],
+  "bv-women-jewellery-rings": ["bv-women-jewellery-rings"],
+  "bv-women-jewellery-bracelets": ["bv-women-jewellery-bracelets"],
+  "bv-women-jewellery-necklaces": ["bv-women-jewellery-necklaces"],
+  "bv-women-jewellery-brooch": ["bv-women-jewellery-brooch"],
+  "bv-home-leather": ["bv-home-leather"],
+  "bv-home-textiles": ["bv-home-textiles"],
+  "bv-home-games": ["bv-home-games"],
+  "bv-home-pet": ["bv-home-pet"],
+  "bv-home-decor": ["bv-home-decor"],
+  "bv-fragrances-edp": ["bv-fragrances-edp"],
+  "bv-fragrances-parfum": ["bv-fragrances-parfum"],
+  "bv-fragrances-candles": ["bv-fragrances-candles"],
+  "bv-fragrances-refill": ["bv-fragrances-refill"],
+  "bv-fragrances-travel-set": ["bv-fragrances-travel-set"],
+  "bv-gifts-her-bags": ["bv-gifts-her-bags"],
+  "bv-gifts-her-shoes": ["bv-gifts-her-shoes"],
+  "bv-gifts-her-wallets": ["bv-gifts-her-wallets"],
+  "bv-gifts-her-jewellery": ["bv-gifts-her-jewellery"],
+  "bv-gifts-her-accessories": ["bv-gifts-her-accessories"],
+  "bv-gifts-him-bags": ["bv-gifts-him-bags"],
+  "bv-gifts-him-shoes": ["bv-gifts-him-shoes"],
+  "bv-gifts-him-wallets": ["bv-gifts-him-wallets"],
+  "bv-gifts-him-jewellery": ["bv-gifts-him-jewellery"],
+  "bv-gifts-him-accessories": ["bv-gifts-him-accessories"],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -5158,6 +5813,50 @@ export const navCategories: NavCategory[] = [
                 labelKo: "코트 & 재킷",
                 href: "/shop?category=luxury&sub=gc-men-coats-jackets",
               },
+            ],
+          },
+        ],
+      },
+      {
+        id: "bottega-veneta",
+        labelKo: "보테가 베네타",
+        href: "/shop?category=luxury&sub=bottega-veneta",
+        children: [
+          {
+            id: "bv-women-clothing",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=bv-women-clothing",
+            navLeaf: true,
+            children: [
+              { id: "bv-women-clothing-outerwear", labelKo: "아우터", href: "/shop?category=luxury&sub=bv-women-clothing-outerwear" },
+              { id: "bv-women-clothing-jackets", labelKo: "재킷", href: "/shop?category=luxury&sub=bv-women-clothing-jackets" },
+              { id: "bv-women-clothing-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=bv-women-clothing-knitwear" },
+              { id: "bv-women-clothing-leather", labelKo: "레더", href: "/shop?category=luxury&sub=bv-women-clothing-leather" },
+              { id: "bv-women-clothing-dresses", labelKo: "드레스", href: "/shop?category=luxury&sub=bv-women-clothing-dresses" },
+              { id: "bv-women-clothing-skirts", labelKo: "스커트", href: "/shop?category=luxury&sub=bv-women-clothing-skirts" },
+              { id: "bv-women-clothing-trousers", labelKo: "트라우저 & 쇼츠", href: "/shop?category=luxury&sub=bv-women-clothing-trousers" },
+              { id: "bv-women-clothing-denim", labelKo: "데님", href: "/shop?category=luxury&sub=bv-women-clothing-denim" },
+              { id: "bv-women-clothing-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=bv-women-clothing-shirts" },
+              { id: "bv-women-clothing-tops", labelKo: "탑 & 티셔츠", href: "/shop?category=luxury&sub=bv-women-clothing-tops" },
+              { id: "bv-women-clothing-swimwear", labelKo: "스윔웨어", href: "/shop?category=luxury&sub=bv-women-clothing-swimwear" },
+            ],
+          },
+          {
+            id: "bv-men-clothing",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=bv-men-clothing",
+            navLeaf: true,
+            children: [
+              { id: "bv-men-clothing-coats", labelKo: "코트", href: "/shop?category=luxury&sub=bv-men-clothing-coats" },
+              { id: "bv-men-clothing-jackets", labelKo: "재킷", href: "/shop?category=luxury&sub=bv-men-clothing-jackets" },
+              { id: "bv-men-clothing-knitwear", labelKo: "니트웨어", href: "/shop?category=luxury&sub=bv-men-clothing-knitwear" },
+              { id: "bv-men-clothing-leather", labelKo: "레더", href: "/shop?category=luxury&sub=bv-men-clothing-leather" },
+              { id: "bv-men-clothing-trousers", labelKo: "트라우저 & 쇼츠", href: "/shop?category=luxury&sub=bv-men-clothing-trousers" },
+              { id: "bv-men-clothing-denim", labelKo: "데님", href: "/shop?category=luxury&sub=bv-men-clothing-denim" },
+              { id: "bv-men-clothing-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=bv-men-clothing-shirts" },
+              { id: "bv-men-clothing-tshirts", labelKo: "티셔츠", href: "/shop?category=luxury&sub=bv-men-clothing-tshirts" },
+              { id: "bv-men-clothing-polos", labelKo: "폴로", href: "/shop?category=luxury&sub=bv-men-clothing-polos" },
+              { id: "bv-men-clothing-swimwear", labelKo: "스윔웨어", href: "/shop?category=luxury&sub=bv-men-clothing-swimwear" },
             ],
           },
         ],
@@ -6673,6 +7372,59 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "bottega-veneta-bags",
+        labelKo: "보테가 베네타",
+        href: "/shop?category=bags&sub=bottega-veneta-bags",
+        children: [
+          {
+            id: "bv-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=bv-women-bags",
+            navLeaf: true,
+            children: [
+              { id: "bv-women-bags-mini", labelKo: "미니 백", href: "/shop?category=bags&sub=bv-women-bags-mini" },
+              { id: "bv-women-bags-crossbody", labelKo: "크로스바디", href: "/shop?category=bags&sub=bv-women-bags-crossbody" },
+              { id: "bv-women-bags-shoulder", labelKo: "숄더백", href: "/shop?category=bags&sub=bv-women-bags-shoulder" },
+              { id: "bv-women-bags-top-handle", labelKo: "탑 핸들", href: "/shop?category=bags&sub=bv-women-bags-top-handle" },
+              { id: "bv-women-bags-tote", labelKo: "토트백", href: "/shop?category=bags&sub=bv-women-bags-tote" },
+              { id: "bv-women-bags-clutch", labelKo: "클러치", href: "/shop?category=bags&sub=bv-women-bags-clutch" },
+              { id: "bv-women-bags-jodie", labelKo: "조디", href: "/shop?category=bags&sub=bv-women-bags-jodie" },
+              { id: "bv-women-bags-andiamo", labelKo: "안디아모", href: "/shop?category=bags&sub=bv-women-bags-andiamo" },
+              { id: "bv-women-bags-barbara", labelKo: "바바라", href: "/shop?category=bags&sub=bv-women-bags-barbara" },
+              { id: "bv-women-bags-campana", labelKo: "캄파나", href: "/shop?category=bags&sub=bv-women-bags-campana" },
+              { id: "bv-women-bags-pinacoteca", labelKo: "피나코테카", href: "/shop?category=bags&sub=bv-women-bags-pinacoteca" },
+              { id: "bv-women-bags-sardine", labelKo: "사르딘", href: "/shop?category=bags&sub=bv-women-bags-sardine" },
+              { id: "bv-women-bags-cabat", labelKo: "카밧", href: "/shop?category=bags&sub=bv-women-bags-cabat" },
+              { id: "bv-women-bags-bang-bang", labelKo: "뱅뱅", href: "/shop?category=bags&sub=bv-women-bags-bang-bang" },
+              { id: "bv-women-bags-lauren", labelKo: "로렌", href: "/shop?category=bags&sub=bv-women-bags-lauren" },
+              { id: "bv-women-bags-parachute", labelKo: "패러슈트", href: "/shop?category=bags&sub=bv-women-bags-parachute" },
+              { id: "bv-women-bags-knot-clutch", labelKo: "노트 클러치", href: "/shop?category=bags&sub=bv-women-bags-knot-clutch" },
+              { id: "bv-women-bags-madison", labelKo: "매디슨", href: "/shop?category=bags&sub=bv-women-bags-madison" },
+            ],
+          },
+          {
+            id: "bv-men-bags",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=bv-men-bags",
+            navLeaf: true,
+            children: [
+              { id: "bv-men-bags-intrecciato", labelKo: "인트레치아토", href: "/shop?category=bags&sub=bv-men-bags-intrecciato" },
+              { id: "bv-men-bags-diago", labelKo: "디아고", href: "/shop?category=bags&sub=bv-men-bags-diago" },
+              { id: "bv-men-bags-veneto", labelKo: "베네토", href: "/shop?category=bags&sub=bv-men-bags-veneto" },
+              { id: "bv-men-bags-andiamo", labelKo: "안디아모", href: "/shop?category=bags&sub=bv-men-bags-andiamo" },
+              { id: "bv-men-bags-cabat", labelKo: "카밧", href: "/shop?category=bags&sub=bv-men-bags-cabat" },
+              { id: "bv-men-bags-getaway", labelKo: "겟어웨이", href: "/shop?category=bags&sub=bv-men-bags-getaway" },
+              { id: "bv-men-bags-crossbody", labelKo: "크로스바디", href: "/shop?category=bags&sub=bv-men-bags-crossbody" },
+              { id: "bv-men-bags-tote", labelKo: "토트백", href: "/shop?category=bags&sub=bv-men-bags-tote" },
+              { id: "bv-men-bags-backpack", labelKo: "백팩", href: "/shop?category=bags&sub=bv-men-bags-backpack" },
+              { id: "bv-men-bags-belt", labelKo: "벨트백", href: "/shop?category=bags&sub=bv-men-bags-belt" },
+              { id: "bv-men-bags-briefcase", labelKo: "브리프케이스", href: "/shop?category=bags&sub=bv-men-bags-briefcase" },
+              { id: "bv-men-bags-document-case", labelKo: "서류 케이스", href: "/shop?category=bags&sub=bv-men-bags-document-case" },
+            ],
+          },
+        ],
+      },
+      {
         id: "burberry-bags",
         labelKo: "버버리",
         href: "/shop?category=bags&sub=burberry-bags",
@@ -7301,6 +8053,53 @@ export const navCategories: NavCategory[] = [
                 labelKo: "부츠 & 앵클부츠",
                 href: "/shop?category=shoes&sub=gc-men-boots",
               },
+            ],
+          },
+        ],
+      },
+      {
+        id: "bottega-veneta-shoes",
+        labelKo: "보테가 베네타",
+        href: "/shop?category=shoes&sub=bottega-veneta-shoes",
+        children: [
+          {
+            id: "bv-women-shoes",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=bv-women-shoes",
+            navLeaf: true,
+            children: [
+              { id: "bv-women-shoes-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=bv-women-shoes-sneakers" },
+              { id: "bv-women-shoes-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=bv-women-shoes-boots" },
+              { id: "bv-women-shoes-pumps", labelKo: "펌프스", href: "/shop?category=shoes&sub=bv-women-shoes-pumps" },
+              { id: "bv-women-shoes-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=bv-women-shoes-sandals" },
+              { id: "bv-women-shoes-loafers-laceups", labelKo: "로퍼 & 레이스업", href: "/shop?category=shoes&sub=bv-women-shoes-loafers-laceups" },
+              { id: "bv-women-shoes-ballerinas", labelKo: "발레리나 & 슬리퍼", href: "/shop?category=shoes&sub=bv-women-shoes-ballerinas" },
+              { id: "bv-women-shoes-shot", labelKo: "샷", href: "/shop?category=shoes&sub=bv-women-shoes-shot" },
+              { id: "bv-women-shoes-orbit", labelKo: "오빗", href: "/shop?category=shoes&sub=bv-women-shoes-orbit" },
+              { id: "bv-women-shoes-orbit-flash", labelKo: "오빗 플래시", href: "/shop?category=shoes&sub=bv-women-shoes-orbit-flash" },
+              { id: "bv-women-shoes-silenzio", labelKo: "실렌치오", href: "/shop?category=shoes&sub=bv-women-shoes-silenzio" },
+              { id: "bv-women-shoes-astaire", labelKo: "아스테어", href: "/shop?category=shoes&sub=bv-women-shoes-astaire" },
+            ],
+          },
+          {
+            id: "bv-men-shoes",
+            labelKo: "남성용",
+            href: "/shop?category=shoes&sub=bv-men-shoes",
+            navLeaf: true,
+            children: [
+              { id: "bv-men-shoes-shot", labelKo: "샷", href: "/shop?category=shoes&sub=bv-men-shoes-shot" },
+              { id: "bv-men-shoes-orbit-flash", labelKo: "오빗 플래시", href: "/shop?category=shoes&sub=bv-men-shoes-orbit-flash" },
+              { id: "bv-men-shoes-orbit", labelKo: "오빗", href: "/shop?category=shoes&sub=bv-men-shoes-orbit" },
+              { id: "bv-men-shoes-silenzio", labelKo: "실렌치오", href: "/shop?category=shoes&sub=bv-men-shoes-silenzio" },
+              { id: "bv-men-shoes-astaire", labelKo: "아스테어", href: "/shop?category=shoes&sub=bv-men-shoes-astaire" },
+              { id: "bv-men-shoes-palazzo", labelKo: "팔라초", href: "/shop?category=shoes&sub=bv-men-shoes-palazzo" },
+              { id: "bv-men-shoes-haddock", labelKo: "해독", href: "/shop?category=shoes&sub=bv-men-shoes-haddock" },
+              { id: "bv-men-shoes-sneakers", labelKo: "스니커즈", href: "/shop?category=shoes&sub=bv-men-shoes-sneakers" },
+              { id: "bv-men-shoes-loafers", labelKo: "로퍼", href: "/shop?category=shoes&sub=bv-men-shoes-loafers" },
+              { id: "bv-men-shoes-lace-ups", labelKo: "레이스업", href: "/shop?category=shoes&sub=bv-men-shoes-lace-ups" },
+              { id: "bv-men-shoes-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=bv-men-shoes-boots" },
+              { id: "bv-men-shoes-slippers", labelKo: "슬리퍼", href: "/shop?category=shoes&sub=bv-men-shoes-slippers" },
+              { id: "bv-men-shoes-sandals", labelKo: "샌들", href: "/shop?category=shoes&sub=bv-men-shoes-sandals" },
             ],
           },
         ],
@@ -9579,6 +10378,214 @@ export const navCategories: NavCategory[] = [
                 id: "gc-gifts-children",
                 labelKo: "키즈 선물",
                 href: "/shop?category=accessories&sub=gc-gifts-children",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "bottega-veneta-accessories",
+        labelKo: "보테가 베네타",
+        href: "/shop?category=accessories&sub=bottega-veneta-accessories",
+        children: [
+          {
+            id: "bv-women",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=bv-women",
+            navLeaf: true,
+            children: [
+              {
+                id: "bv-women-wallets",
+                labelKo: "월렛",
+                href: "/shop?category=accessories&sub=bv-women-wallets",
+                navLeaf: true,
+                children: [
+                { id: "bv-women-wallets-small", labelKo: "스몰 월렛", href: "/shop?category=accessories&sub=bv-women-wallets-small" },
+                { id: "bv-women-wallets-long", labelKo: "롱 월렛", href: "/shop?category=accessories&sub=bv-women-wallets-long" },
+                { id: "bv-women-wallets-card-cases", labelKo: "카드 케이스", href: "/shop?category=accessories&sub=bv-women-wallets-card-cases" },
+                { id: "bv-women-wallets-pouches", labelKo: "파우치", href: "/shop?category=accessories&sub=bv-women-wallets-pouches" },
+                { id: "bv-women-wallets-intrecciato", labelKo: "인트레치아토", href: "/shop?category=accessories&sub=bv-women-wallets-intrecciato" },
+                { id: "bv-women-wallets-cassette", labelKo: "카세트", href: "/shop?category=accessories&sub=bv-women-wallets-cassette" },
+                ],
+              },
+              {
+                id: "bv-women-travel",
+                labelKo: "트래블",
+                href: "/shop?category=accessories&sub=bv-women-travel",
+              },
+              {
+                id: "bv-women-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=bv-women-jewellery",
+                navLeaf: true,
+                children: [
+                { id: "bv-women-jewellery-earrings", labelKo: "이어링", href: "/shop?category=accessories&sub=bv-women-jewellery-earrings" },
+                { id: "bv-women-jewellery-rings", labelKo: "링", href: "/shop?category=accessories&sub=bv-women-jewellery-rings" },
+                { id: "bv-women-jewellery-bracelets", labelKo: "브레이슬릿", href: "/shop?category=accessories&sub=bv-women-jewellery-bracelets" },
+                { id: "bv-women-jewellery-necklaces", labelKo: "네크리스", href: "/shop?category=accessories&sub=bv-women-jewellery-necklaces" },
+                { id: "bv-women-jewellery-brooch", labelKo: "브로치", href: "/shop?category=accessories&sub=bv-women-jewellery-brooch" },
+                ],
+              },
+              {
+                id: "bv-women-accessories",
+                labelKo: "액세서리",
+                href: "/shop?category=accessories&sub=bv-women-accessories",
+                navLeaf: true,
+                children: [
+                { id: "bv-women-acc-key-rings", labelKo: "키링", href: "/shop?category=accessories&sub=bv-women-acc-key-rings" },
+                { id: "bv-women-acc-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=bv-women-acc-belts" },
+                { id: "bv-women-acc-tech", labelKo: "테크", href: "/shop?category=accessories&sub=bv-women-acc-tech" },
+                { id: "bv-women-acc-scarves", labelKo: "스카프", href: "/shop?category=accessories&sub=bv-women-acc-scarves" },
+                { id: "bv-women-acc-gloves", labelKo: "장갑", href: "/shop?category=accessories&sub=bv-women-acc-gloves" },
+                { id: "bv-women-acc-hats", labelKo: "모자", href: "/shop?category=accessories&sub=bv-women-acc-hats" },
+                { id: "bv-women-acc-bathrobes", labelKo: "배스로브 & 타월", href: "/shop?category=accessories&sub=bv-women-acc-bathrobes" },
+                ],
+              },
+              {
+                id: "bv-women-eyewear",
+                labelKo: "아이웨어",
+                href: "/shop?category=accessories&sub=bv-women-eyewear",
+                navLeaf: true,
+                children: [
+                { id: "bv-women-eyewear-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=bv-women-eyewear-sunglasses" },
+                { id: "bv-women-eyewear-opticals", labelKo: "옵티컬", href: "/shop?category=accessories&sub=bv-women-eyewear-opticals" },
+                { id: "bv-women-eyewear-aviator", labelKo: "에비에이터", href: "/shop?category=accessories&sub=bv-women-eyewear-aviator" },
+                { id: "bv-women-eyewear-panthos", labelKo: "판토스", href: "/shop?category=accessories&sub=bv-women-eyewear-panthos" },
+                { id: "bv-women-eyewear-rectangular", labelKo: "레탱귤러", href: "/shop?category=accessories&sub=bv-women-eyewear-rectangular" },
+                { id: "bv-women-eyewear-squared", labelKo: "스퀘어드", href: "/shop?category=accessories&sub=bv-women-eyewear-squared" },
+                { id: "bv-women-eyewear-cat-eye", labelKo: "캣아이", href: "/shop?category=accessories&sub=bv-women-eyewear-cat-eye" },
+                { id: "bv-women-eyewear-oval", labelKo: "오발", href: "/shop?category=accessories&sub=bv-women-eyewear-oval" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bv-men",
+            labelKo: "남성용",
+            href: "/shop?category=accessories&sub=bv-men",
+            navLeaf: true,
+            children: [
+              {
+                id: "bv-men-wallets",
+                labelKo: "월렛",
+                href: "/shop?category=accessories&sub=bv-men-wallets",
+                navLeaf: true,
+                children: [
+                { id: "bv-men-wallets-small", labelKo: "스몰 월렛", href: "/shop?category=accessories&sub=bv-men-wallets-small" },
+                { id: "bv-men-wallets-long", labelKo: "롱 월렛", href: "/shop?category=accessories&sub=bv-men-wallets-long" },
+                { id: "bv-men-wallets-card-cases", labelKo: "카드 케이스", href: "/shop?category=accessories&sub=bv-men-wallets-card-cases" },
+                { id: "bv-men-wallets-pouches", labelKo: "파우치", href: "/shop?category=accessories&sub=bv-men-wallets-pouches" },
+                { id: "bv-men-wallets-intrecciato", labelKo: "인트레치아토", href: "/shop?category=accessories&sub=bv-men-wallets-intrecciato" },
+                { id: "bv-men-wallets-piccolo", labelKo: "인트레치아토 피콜로", href: "/shop?category=accessories&sub=bv-men-wallets-piccolo" },
+                { id: "bv-men-wallets-cassette", labelKo: "카세트", href: "/shop?category=accessories&sub=bv-men-wallets-cassette" },
+                ],
+              },
+              {
+                id: "bv-men-travel",
+                labelKo: "트래블",
+                href: "/shop?category=accessories&sub=bv-men-travel",
+              },
+              {
+                id: "bv-men-jewellery",
+                labelKo: "주얼리",
+                href: "/shop?category=accessories&sub=bv-men-jewellery",
+                navLeaf: true,
+                children: [
+                { id: "bv-men-jewellery-earrings", labelKo: "이어링", href: "/shop?category=accessories&sub=bv-men-jewellery-earrings" },
+                { id: "bv-men-jewellery-rings", labelKo: "링", href: "/shop?category=accessories&sub=bv-men-jewellery-rings" },
+                { id: "bv-men-jewellery-bracelets", labelKo: "브레이슬릿", href: "/shop?category=accessories&sub=bv-men-jewellery-bracelets" },
+                { id: "bv-men-jewellery-necklaces", labelKo: "네크리스", href: "/shop?category=accessories&sub=bv-men-jewellery-necklaces" },
+                { id: "bv-men-jewellery-cufflinks", labelKo: "커프링크스", href: "/shop?category=accessories&sub=bv-men-jewellery-cufflinks" },
+                ],
+              },
+              {
+                id: "bv-men-accessories",
+                labelKo: "액세서리",
+                href: "/shop?category=accessories&sub=bv-men-accessories",
+                navLeaf: true,
+                children: [
+                { id: "bv-men-acc-key-rings", labelKo: "키링", href: "/shop?category=accessories&sub=bv-men-acc-key-rings" },
+                { id: "bv-men-acc-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=bv-men-acc-belts" },
+                { id: "bv-men-acc-tech", labelKo: "테크", href: "/shop?category=accessories&sub=bv-men-acc-tech" },
+                { id: "bv-men-acc-scarves-ties", labelKo: "스카프 & 타이", href: "/shop?category=accessories&sub=bv-men-acc-scarves-ties" },
+                { id: "bv-men-acc-gloves", labelKo: "장갑", href: "/shop?category=accessories&sub=bv-men-acc-gloves" },
+                { id: "bv-men-acc-hats", labelKo: "모자", href: "/shop?category=accessories&sub=bv-men-acc-hats" },
+                { id: "bv-men-acc-bathrobes", labelKo: "배스로브 & 타월", href: "/shop?category=accessories&sub=bv-men-acc-bathrobes" },
+                ],
+              },
+              {
+                id: "bv-men-eyewear",
+                labelKo: "아이웨어",
+                href: "/shop?category=accessories&sub=bv-men-eyewear",
+                navLeaf: true,
+                children: [
+                { id: "bv-men-eyewear-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=bv-men-eyewear-sunglasses" },
+                { id: "bv-men-eyewear-opticals", labelKo: "옵티컬", href: "/shop?category=accessories&sub=bv-men-eyewear-opticals" },
+                { id: "bv-men-eyewear-aviator", labelKo: "에비에이터", href: "/shop?category=accessories&sub=bv-men-eyewear-aviator" },
+                { id: "bv-men-eyewear-panthos", labelKo: "판토스", href: "/shop?category=accessories&sub=bv-men-eyewear-panthos" },
+                { id: "bv-men-eyewear-rectangular", labelKo: "레탱귤러", href: "/shop?category=accessories&sub=bv-men-eyewear-rectangular" },
+                { id: "bv-men-eyewear-squared", labelKo: "스퀘어드", href: "/shop?category=accessories&sub=bv-men-eyewear-squared" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "bv-home",
+            labelKo: "아트 오브 리빙",
+            href: "/shop?category=accessories&sub=bv-home",
+            navLeaf: true,
+            children: [
+              { id: "bv-home-leather", labelKo: "레더", href: "/shop?category=accessories&sub=bv-home-leather" },
+              { id: "bv-home-textiles", labelKo: "텍스타일", href: "/shop?category=accessories&sub=bv-home-textiles" },
+              { id: "bv-home-games", labelKo: "게임", href: "/shop?category=accessories&sub=bv-home-games" },
+              { id: "bv-home-pet", labelKo: "펫 액세서리", href: "/shop?category=accessories&sub=bv-home-pet" },
+              { id: "bv-home-decor", labelKo: "데코", href: "/shop?category=accessories&sub=bv-home-decor" },
+            ],
+          },
+          {
+            id: "bv-fragrances",
+            labelKo: "향수",
+            href: "/shop?category=accessories&sub=bv-fragrances",
+            navLeaf: true,
+            children: [
+              { id: "bv-fragrances-edp", labelKo: "오 드 퍼퓸", href: "/shop?category=accessories&sub=bv-fragrances-edp" },
+              { id: "bv-fragrances-parfum", labelKo: "퍼퓸", href: "/shop?category=accessories&sub=bv-fragrances-parfum" },
+              { id: "bv-fragrances-candles", labelKo: "캔들", href: "/shop?category=accessories&sub=bv-fragrances-candles" },
+              { id: "bv-fragrances-refill", labelKo: "리필", href: "/shop?category=accessories&sub=bv-fragrances-refill" },
+              { id: "bv-fragrances-travel-set", labelKo: "트래블 세트", href: "/shop?category=accessories&sub=bv-fragrances-travel-set" },
+            ],
+          },
+          {
+            id: "bv-gifts",
+            labelKo: "선물",
+            href: "/shop?category=accessories&sub=bv-gifts",
+            navLeaf: true,
+            children: [
+              {
+                id: "bv-gifts-her",
+                labelKo: "그녀를 위한 선물",
+                href: "/shop?category=accessories&sub=bv-gifts-her",
+                navLeaf: true,
+                children: [
+                  { id: "bv-gifts-her-bags", labelKo: "백", href: "/shop?category=accessories&sub=bv-gifts-her-bags" },
+                  { id: "bv-gifts-her-shoes", labelKo: "슈즈", href: "/shop?category=accessories&sub=bv-gifts-her-shoes" },
+                  { id: "bv-gifts-her-wallets", labelKo: "월렛", href: "/shop?category=accessories&sub=bv-gifts-her-wallets" },
+                  { id: "bv-gifts-her-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=bv-gifts-her-jewellery" },
+                  { id: "bv-gifts-her-accessories", labelKo: "액세서리", href: "/shop?category=accessories&sub=bv-gifts-her-accessories" },
+                ],
+              },
+              {
+                id: "bv-gifts-him",
+                labelKo: "그를 위한 선물",
+                href: "/shop?category=accessories&sub=bv-gifts-him",
+                navLeaf: true,
+                children: [
+                  { id: "bv-gifts-him-bags", labelKo: "백", href: "/shop?category=accessories&sub=bv-gifts-him-bags" },
+                  { id: "bv-gifts-him-shoes", labelKo: "슈즈", href: "/shop?category=accessories&sub=bv-gifts-him-shoes" },
+                  { id: "bv-gifts-him-wallets", labelKo: "월렛", href: "/shop?category=accessories&sub=bv-gifts-him-wallets" },
+                  { id: "bv-gifts-him-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=bv-gifts-him-jewellery" },
+                  { id: "bv-gifts-him-accessories", labelKo: "액세서리", href: "/shop?category=accessories&sub=bv-gifts-him-accessories" },
+                ],
               },
             ],
           },

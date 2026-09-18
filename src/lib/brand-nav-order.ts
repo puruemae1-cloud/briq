@@ -53,6 +53,13 @@ function brandFamily(id: string): string | null {
     return "chanel";
   }
   if (x === "gucci" || x.startsWith("gucci-") || x.startsWith("gc-")) return "gucci";
+  if (
+    x === "bottega-veneta" ||
+    x.startsWith("bottega-veneta") ||
+    x.startsWith("bv-")
+  ) {
+    return "_new";
+  }
   if (x === "celine" || x.startsWith("celine-") || x.startsWith("ce-")) return "_new";
   if (
     x === "saint-laurent" ||
@@ -153,6 +160,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "louis-vuitton",
   "dior",
   "mulberry",
+  "bottega-veneta",
   // new brands insert here
   "prada",
   "hermes",

@@ -32,6 +32,7 @@ from briq_new_badge import (  # noqa: E402
 
 CATALOGS: dict[str, list[Path]] = {
     "al": [ROOT / "src/data/al/al-catalog.json"],
+    "bv": [ROOT / "src/data/bv/bv-catalog.json"],
     "bb": [ROOT / "src/data/bb/bb-catalog.json"],
     "bs": [ROOT / "src/data/bs/bs-catalog.json"],
     "ch": [ROOT / "src/data/ch/ch-catalog.json"],
