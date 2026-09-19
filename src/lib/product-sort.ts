@@ -78,6 +78,11 @@ export const NEW_ARRIVALS_MAX_PER_BRAND = 8;
 /**
  * Interleave newest products across brands (round-robin on newest-first
  * brand queues). Keeps chronological preference while mixing houses.
+ *
+ * If one weekly sync stamps an entire brand newer than everyone else, the
+ * per-brand soft cap alone would leave New Arrivals nearly empty — after the
+ * round-robin pass we fill remaining slots from the newest list (still
+ * preferring unseen brands, then any remaining newest rows).
  */
 export function diversifyByBrandNewestFirst(
   newestFirst: Product[],
@@ -113,6 +118,24 @@ export function diversifyByBrandNewestFirst(
       taken.add(next.id);
       out.push(next);
       progress = true;
+    }
+  }
+  // Pad to `limit` so a single-brand newest wave cannot shrink New Arrivals
+  // to maxPerBrand (e.g. 8). Prefer brands not yet represented, then any.
+  if (out.length < limit) {
+    const seenBrands = new Set(out.map((p) => brandKey(p) || "unknown"));
+    const rest = newestFirst.filter((p) => !taken.has(p.id));
+    const preferNewBrand = rest.filter(
+      (p) => !seenBrands.has(brandKey(p) || "unknown"),
+    );
+    const preferSame = rest.filter((p) =>
+      seenBrands.has(brandKey(p) || "unknown"),
+    );
+    for (const product of [...preferNewBrand, ...preferSame]) {
+      if (out.length >= limit) break;
+      if (taken.has(product.id)) continue;
+      taken.add(product.id);
+      out.push(product);
     }
   }
   return out;
@@ -191,17 +214,33 @@ export function getTopSortedProducts(
 
 /**
  * Catalogue-wide newest products for the New Arrivals shop surface.
- * Pulls a wider newest pool then interleaves brands so one weekly sync
- * cannot fill the entire New Arrivals rail.
+ * Uses `registeredAt` (not catalog-rebuild `updatedAt`) so a full brand
+ * rebuild cannot monopolize the rail, then interleaves brands and pads
+ * to {@link NEW_ARRIVALS_LIMIT}.
  */
 export function getNewArrivalsProducts(list: Product[]): Product[] {
-  const pool = getTopSortedProducts(
-    list,
-    "new",
-    NEW_ARRIVALS_LIMIT * 3,
-  );
+  const cmp = withSoldOutLast((a, b) => {
+    const byRegistered = registeredAtMs(b) - registeredAtMs(a);
+    if (byRegistered !== 0) return byRegistered;
+    return compareProductsByNewest(a, b);
+  });
+  const cap = Math.max(NEW_ARRIVALS_LIMIT * 4, 400);
+  const top: Product[] = [];
+  for (const product of list) {
+    if (top.length < cap) {
+      top.push(product);
+      if (top.length === cap) top.sort(cmp);
+      continue;
+    }
+    const last = top[cap - 1];
+    if (cmp(product, last) < 0) {
+      top[cap - 1] = product;
+      top.sort(cmp);
+    }
+  }
+  if (top.length < cap) top.sort(cmp);
   return diversifyByBrandNewestFirst(
-    pool,
+    top,
     NEW_ARRIVALS_LIMIT,
     NEW_ARRIVALS_MAX_PER_BRAND,
     (p) => (p.brand || p.subcategory || p.id || "unknown").toLowerCase(),
