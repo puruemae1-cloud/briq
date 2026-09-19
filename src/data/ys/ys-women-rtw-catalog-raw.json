@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-16T22:26:41.472217+00:00",
+  "scrapedAt": "2026-09-18T17:37:54.906834+00:00",
   "brand": "Saint Laurent",
   "hub": "women-rtw",
   "category": "luxury",
@@ -20,109 +20,6 @@
     "ys-women-lingerie-swimwear"
   ],
   "products": [
-    {
-      "id": "851251Y6J984003",
-      "sku": "851251Y6J984003",
-      "masterId": "851251Y6J98",
-      "name": "SAINT LAURENT jacket in brushed cotton canvas",
-      "color": "Blue",
-      "microColor": "NAVY",
-      "colorCode": "4003",
-      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-brushed-cotton-canvas-851251Y6J984003.html",
-      "path": "pr/saint-laurent-jacket-in-brushed-cotton-canvas-851251Y6J984003.html",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all",
-        "ys-women-outerwear"
-      ],
-      "leafId": "ys-women-outerwear",
-      "gbpPrice": 2410.0,
-      "inStock": true,
-      "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/1bc83fa3-87ef-4b57-afc3-53478af5ce00/eCom/851251Y6J984003_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/0f228eef-c2e8-4021-888a-eee3864d395d/Original-Ecom/851251Y6J984003_Y.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/568a97aa-a636-4e1b-be93-e6b0bcf67c84/eCom/851251Y6J984003_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/7d232af7-9b04-4190-8cd1-2f7e53ae2ef9/eCom/851251Y6J984003_C.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/12cc2949-7321-477c-95ae-79301b726758/eCom/851251Y6J984003_H.jpg?v=1"
-      ],
-      "description": "stand-collar jacket with a CASSANDRE zip pull, drop shoulders, and SAINT LAURENT embroidery at the chest.",
-      "shortDescription": [
-        "viscose and cotton lining",
-        "CASSANDRE front zip closure",
-        "two welt pockets at the front",
-        "two inner pockets",
-        "stand collar",
-        "snap-button cuffs"
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_rtw",
-        "microCategory": "ysl_micro_women_jackets",
-        "superMicroCategory": "ysl_super_micro_women_jackets"
-      },
-      "sizes": [
-        {
-          "id": "814487416",
-          "value": "F34",
-          "displayValue": "YSL F34 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814487417",
-          "value": "F36",
-          "displayValue": "YSL F36 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814487418",
-          "value": "F38",
-          "displayValue": "YSL F38 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814487419",
-          "value": "F40",
-          "displayValue": "YSL F40 / GB 12",
-          "inStock": true
-        },
-        {
-          "id": "814487420",
-          "value": "F42",
-          "displayValue": "YSL F42 / GB 14",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "851251Y6J984003",
-          "name": "Blue",
-          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-brushed-cotton-canvas-851251Y6J984003.html",
-          "hex": "1d31c4"
-        },
-        {
-          "id": "851251Y6J986560",
-          "name": "Brown",
-          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J986560.html",
-          "hex": "693818"
-        },
-        {
-          "id": "851251Y6J981701",
-          "name": "Beige",
-          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J981701.html",
-          "hex": "e3d4c1"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/851251y6j984003/1.jpg",
-        "/products/ys-pdp/851251y6j984003/2.jpg",
-        "/products/ys-pdp/851251y6j984003/3.jpg",
-        "/products/ys-pdp/851251y6j984003/4.jpg",
-        "/products/ys-pdp/851251y6j984003/5.jpg"
-      ]
-    },
     {
       "id": "851251Y6J981701",
       "sku": "851251Y6J981701",
@@ -497,7 +394,7 @@
         "ys-women-rtw-all",
         "ys-women-outerwear"
       ],
-      "leafId": "ys-women-outerwear",
+      "leafId": "ys-women-rtw-all",
       "gbpPrice": 2130.0,
       "inStock": true,
       "compositions": "T 100% POLYAMIDE",
@@ -6700,7 +6597,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  72% COTTON T  28% POLYAMIDE PZ  72 PZ  28% COTTON% POLYAMIDE",
@@ -6784,7 +6681,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  72% COTTON T  28% POLYAMIDE P1  72 P1  28% COTTON% POLYAMIDE",
@@ -6876,7 +6773,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  46% COTTON T  42% VISCOSE T  12% POLYAMIDE PZ  86 PZ  14% VISCOSE% POLYAMIDE",
@@ -7062,7 +6959,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "T  46% COTTON T  42% VISCOSE T  12% POLYAMIDE PZ  86 PZ  14% VISCOSE% POLYAMIDE",
@@ -7237,7 +7134,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 8600.0,
       "inStock": true,
       "compositions": "T  50% SILICONE T  34% COTTON T  16% POLYAMIDE",
@@ -7322,7 +7219,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7800.0,
       "inStock": true,
       "compositions": "T  83% COTTON T  17% POLYAMIDE DV 100 PZ  80 PZ  20% POLYAMIDE% VISCOSE% POLYAMIDE",
@@ -7408,7 +7305,7 @@
         "ys-women-dresses-skirts",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7800.0,
       "inStock": true,
       "compositions": "T  80% COTTON T  20% POLYAMIDE DT 100 PZ  80 PZ  20% POLYAMIDE% VISCOSE% POLYAMIDE",
@@ -7479,9 +7376,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 7000.0,
       "inStock": true,
       "compositions": "L 100 DT 100 PZ  38 PZ  31 PZ  31% LAMB LEATHER% POLYAMIDE% COTTON% POLYAMIDE% VISCOSE",
@@ -7553,9 +7451,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 6265.0,
       "inStock": true,
       "compositions": "T  83% COTTON T  17% POLYAMIDE PZ  75 PZ  25 P1  80 P1  20 P2  37 P2  33 P2  30% COTTON% POLYAMIDE% POLYAMIDE% COTTON% COTTON% POLYAMIDE% VISCOSE",
@@ -7637,9 +7536,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 3090.0,
       "inStock": true,
       "compositions": "T 100% SILK PZ  42 PZ  36 PZ  22% COTTON% VISCOSE% POLYAMIDE",
@@ -9496,9 +9396,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-dresses-skirts"
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 5360.0,
       "inStock": true,
       "compositions": "T  77% POLYAMIDE T  23% METAL FIBRE T1 100 PZ  81 PZ  19% SILK% POLYAMIDE% Poliammide Metalliz.",
@@ -9570,9 +9471,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-dresses-skirts"
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 2635.0,
       "inStock": true,
       "compositions": "T  68% POLYAMIDE T  32% VISCOSE T1  57 T1  43 T2 100 PZ  35 PZ  33 PZ  32 P1 100 P2  55 P2  45% POLYAMIDE% VISCOSE% POLYAMIDE% COTTON% POLYESTER% POLY",
@@ -9962,9 +9864,10 @@
         "ys-women",
         "ys-women-rtw-all",
         "ys-women-knitwear",
-        "ys-women-dresses-skirts"
+        "ys-women-dresses-skirts",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-knitwear",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 2000.0,
       "inStock": true,
       "compositions": "T  92% VISCOSE T   8% POLYESTER",
@@ -10927,7 +10830,7 @@
         "ys-women-knitwear",
         "ys-women-dresses-skirts"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-knitwear",
       "gbpPrice": 1450.0,
       "inStock": true,
       "compositions": "T 100% VISCOSE",
@@ -12433,7 +12336,7 @@
         "ys-women-dresses-skirts",
         "ys-women-leather-outerwear"
       ],
-      "leafId": "ys-women-dresses-skirts",
+      "leafId": "ys-women-leather-outerwear",
       "gbpPrice": 3605.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF 100% SILK",
@@ -12512,7 +12415,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
@@ -12607,7 +12511,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
@@ -12702,7 +12607,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1820.0,
@@ -12955,7 +12861,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1135.0,
@@ -13030,9 +12937,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 13100.0,
       "inStock": true,
       "compositions": "T1 100 TR  44 TR  37 TR  19 PZ  91 PZ   9% POLYAMIDE% POLYAMIDE% COTTON% VISCOSE% COTTON% POLYAMIDE",
@@ -13104,7 +13012,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 2090.0,
@@ -13177,7 +13086,8 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-shirts-tops"
+        "ys-women-shirts-tops",
+        "ys-women-lingerie-swimwear"
       ],
       "leafId": "ys-women-shirts-tops",
       "gbpPrice": 1910.0,
@@ -18002,9 +17912,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -18089,9 +18000,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T  97% VISCOSE T   3% ELASTAN R  94% SILK R   6% ELASTAN",
@@ -18505,9 +18417,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 755.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
@@ -18618,9 +18531,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -18847,9 +18761,10 @@
         "saint-laurent",
         "ys-women",
         "ys-women-rtw-all",
-        "ys-women-jersey"
+        "ys-women-jersey",
+        "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 755.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK R1  94 R1   6 DT  79 DT  21% SILK% ELASTAN% POLYAMIDE% VISCOSE",
@@ -20576,7 +20491,7 @@
         "ys-women-jersey",
         "ys-women-lingerie-swimwear"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "gbpPrice": 1275.0,
       "inStock": true,
       "compositions": "T 100% SILK R 100% SILK DT  79 DT  21% POLYAMIDE% VISCOSE",
@@ -20870,81 +20785,6 @@
       ]
     },
     {
-      "id": "860991Y3K313048",
-      "sku": "860991Y3K313048",
-      "masterId": "860991Y3K31",
-      "name": "shorts in parachute canvas",
-      "color": "Green",
-      "microColor": "EMERAUDE",
-      "colorCode": "3048",
-      "url": "https://www.ysl.com/en-gb/pr/shorts-in-parachute-canvas-860991Y3K313048.html",
-      "path": "pr/shorts-in-parachute-canvas-860991Y3K313048.html",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all"
-      ],
-      "leafId": "ys-women-rtw-all",
-      "gbpPrice": 1065.0,
-      "inStock": true,
-      "compositions": "T  52% POLYESTER T  48% POLYAMIDE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/c6a943ae-103a-479e-8529-02dd3338f526/eCom/860991Y3K313048_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/ef6681a7-6989-4c56-b958-b5a2154fae41/eCom/860991Y3K313048_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/2a6a5856-597a-4ce8-a38f-9f9d0d4a4c99/eCom/860991Y3K313048_H.jpg?v=2"
-      ],
-      "description": "color-block shorts with an elasticized shirred waist and curved hem.",
-      "shortDescription": [
-        "elasticized shirred waistband"
-      ],
-      "productCare": "Hand Wash Ambient Temperature, Do Not Bleach, Do Not Tumble Dry, Flat Dry In The Shade, Iron At Maximum Temperature 120°C, Dry Cleaning With Tetrachloroethene Or Hydrocarbons,",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_rtw",
-        "microCategory": "ysl_micro_women_pants",
-        "superMicroCategory": "ysl_super_micro_women_pants"
-      },
-      "sizes": [
-        {
-          "id": "814150507",
-          "value": "F36",
-          "displayValue": "YSL F36 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814150508",
-          "value": "F38",
-          "displayValue": "YSL F38 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814158005",
-          "value": "F40",
-          "displayValue": "YSL F40 / GB 12",
-          "inStock": true
-        },
-        {
-          "id": "814165308",
-          "value": "F42",
-          "displayValue": "YSL F42 / GB 14",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "860991Y3K313048",
-          "name": "Green",
-          "url": "https://www.ysl.com/en-gb/pr/shorts-in-parachute-canvas-860991Y3K313048.html",
-          "hex": "1b5c1d"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/860991y3k313048/1.jpg",
-        "/products/ys-pdp/860991y3k313048/2.jpg",
-        "/products/ys-pdp/860991y3k313048/3.jpg"
-      ]
-    },
-    {
       "id": "858566YZ9GA7600",
       "sku": "858566YZ9GA7600",
       "masterId": "858566YZ9GA",
@@ -21114,9 +20954,10 @@
       "collections": [
         "saint-laurent",
         "ys-women",
-        "ys-women-rtw-all"
+        "ys-women-rtw-all",
+        "ys-women-jersey"
       ],
-      "leafId": "ys-women-rtw-all",
+      "leafId": "ys-women-jersey",
       "gbpPrice": 1635.0,
       "inStock": true,
       "compositions": "T  75% POLYAMIDE T  25% ELASTAN",
@@ -22188,7 +22029,7 @@
         "ys-women-lingerie-swimwear",
         "ys-women-rtw-all"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "needsPdp": true,
       "masterId": "A0081JY38FQ",
       "color": "Bordeaux",
@@ -22279,7 +22120,7 @@
         "ys-women-lingerie-swimwear",
         "ys-women-rtw-all"
       ],
-      "leafId": "ys-women-jersey",
+      "leafId": "ys-women-lingerie-swimwear",
       "needsPdp": true,
       "masterId": "A0081JY38FQ",
       "color": "Black",
@@ -23549,7 +23390,7 @@
     {
       "id": "851251Y6J984230",
       "sku": "851251Y6J984230",
-      "name": "851251Y6J984230",
+      "name": "SAINT LAURENT jacket in cotton",
       "collections": [
         "saint-laurent",
         "ys-women",
@@ -23557,7 +23398,200 @@
         "ys-women-outerwear"
       ],
       "leafId": "ys-women-outerwear",
-      "needsPdp": true
+      "needsPdp": true,
+      "masterId": "851251Y6J98",
+      "color": "Brown",
+      "microColor": "MARINE/MARRON",
+      "colorCode": "4230",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J984230.html",
+      "path": "pr/saint-laurent-jacket-in-cotton-851251Y6J984230.html",
+      "gbpPrice": 2410.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/61ccaf96-5c3c-4ceb-8732-b2d38bc61dda/eCom/851251Y6J984230_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/d1d1141e-c064-4be1-8ab8-8459b61e10aa/eCom/851251Y6J984230_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/e9034c57-9170-4888-b068-a1f65ddaa1ca/eCom/851251Y6J984230_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/bf8b7ce0-81c6-45cc-85bf-8841250261d2/eCom/851251Y6J984230_H.jpg?v=1"
+      ],
+      "description": "stand-collar jacket with a CASSANDRE zip pull, drop shoulders, and SAINT LAURENT embroidery at the chest.",
+      "shortDescription": [
+        "viscose and cotton lining",
+        "CASSANDRE front zip closure",
+        "two welt pockets at the front",
+        "stand collar",
+        "one snap-button cuffs"
+      ],
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jackets",
+        "superMicroCategory": "ysl_super_micro_women_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814507720",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814507721",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814507722",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814507723",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814507724",
+          "value": "F42",
+          "displayValue": "YSL F42 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "851251Y6J984230",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J984230.html",
+          "hex": "693818"
+        },
+        {
+          "id": "851251Y6J984003",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-brushed-cotton-canvas-851251Y6J984003.html",
+          "hex": "1d31c4"
+        },
+        {
+          "id": "851251Y6J986560",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J986560.html",
+          "hex": "693818"
+        },
+        {
+          "id": "851251Y6J981701",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J981701.html",
+          "hex": "e3d4c1"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/851251y6j984230/1.jpg",
+        "/products/ys-pdp/851251y6j984230/2.jpg",
+        "/products/ys-pdp/851251y6j984230/3.jpg",
+        "/products/ys-pdp/851251y6j984230/4.jpg"
+      ]
+    },
+    {
+      "id": "851251Y6J986560",
+      "sku": "851251Y6J986560",
+      "masterId": "851251Y6J98",
+      "name": "SAINT LAURENT jacket in cotton ",
+      "color": "Brown",
+      "microColor": "COGNAC",
+      "colorCode": "6560",
+      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J986560.html",
+      "path": "pr/saint-laurent-jacket-in-cotton-851251Y6J986560.html",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-outerwear"
+      ],
+      "leafId": "ys-women-outerwear",
+      "gbpPrice": 2410.0,
+      "inStock": true,
+      "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/f472553e-8737-4bc6-87e9-1ef237ed6405/eCom/851251Y6J986560_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/32e69ca9-b542-4655-8580-5dca80b31c3f/eCom/851251Y6J986560_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/0c9021cd-72c1-42ff-9e5f-46d0e7692baf/eCom/851251Y6J986560_C.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/d8e64b39-4aa9-43dd-9176-d4710a148e57/eCom/851251Y6J986560_H.jpg?v=3"
+      ],
+      "description": "stand-collar jacket with a CASSANDRE zip pull, drop shoulders, and SAINT LAURENT embroidery at the chest.",
+      "shortDescription": [
+        "viscose and cotton lining",
+        "CASSANDRE front zip closure",
+        "two welt pockets at the front",
+        "stand collar",
+        "one snap-button cuffs"
+      ],
+      "productCare": "Do Not Wash, Do Not Bleach, Do Not Tumble Dry, Iron At Maximum Temperature 120°C, Dry Cleaning With Hydrocarbons,",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_jackets",
+        "superMicroCategory": "ysl_super_micro_women_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814152664",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814150102",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814149699",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814149700",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "851251Y6J984230",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J984230.html",
+          "hex": "693818"
+        },
+        {
+          "id": "851251Y6J984003",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-brushed-cotton-canvas-851251Y6J984003.html",
+          "hex": "1d31c4"
+        },
+        {
+          "id": "851251Y6J986560",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J986560.html",
+          "hex": "693818"
+        },
+        {
+          "id": "851251Y6J981701",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-jacket-in-cotton-851251Y6J981701.html",
+          "hex": "e3d4c1"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/851251y6j986560/1.jpg",
+        "/products/ys-pdp/851251y6j986560/2.jpg",
+        "/products/ys-pdp/851251y6j986560/3.jpg",
+        "/products/ys-pdp/851251y6j986560/4.jpg"
+      ]
     }
   ]
 }
