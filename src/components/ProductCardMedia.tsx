@@ -36,6 +36,13 @@ function CardSlide({
     setShown(resolved);
     setStatus("loading");
   }, [resolved]);
+
+  const markReady = (el: HTMLImageElement | null) => {
+    if (el && el.complete && el.naturalWidth > 0) {
+      setStatus("ready");
+    }
+  };
+
   return (
     <>
       {status !== "ready" ? (
@@ -53,6 +60,7 @@ function CardSlide({
       {status !== "failed" ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
+          ref={markReady}
           className={`product-frame__img product-card__img product-card-media__img${
             current ? " is-current" : ""
           }${status === "loading" ? " is-loading" : ""}`}

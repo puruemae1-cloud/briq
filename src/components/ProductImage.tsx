@@ -51,6 +51,13 @@ function CdnImg({
 
   if (!resolved) return null;
 
+  const markReady = (el: HTMLImageElement | null) => {
+    // Cached images often skip onLoad after hydration — check complete.
+    if (el && el.complete && el.naturalWidth > 0) {
+      setStatus("ready");
+    }
+  };
+
   return (
     <>
       {status !== "ready" ? (
@@ -66,6 +73,7 @@ function CdnImg({
       {status !== "failed" ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
+          ref={markReady}
           className={`${className}${status === "loading" ? " is-loading" : ""}`}
           src={src}
           alt={alt}
