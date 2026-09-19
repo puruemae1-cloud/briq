@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode, type SyntheticEvent } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import {
   mediaUrl,
   mediaUrlFallback,
@@ -41,31 +41,51 @@ function CdnImg({
   ariaHidden?: boolean;
 }) {
   const [src, setSrc] = useState(resolved);
+  const [status, setStatus] = useState<"loading" | "ready" | "failed">(
+    "loading",
+  );
   useEffect(() => {
     setSrc(resolved);
+    setStatus("loading");
   }, [resolved]);
-
-  const onError = (_e: SyntheticEvent<HTMLImageElement>) => {
-    const altUrl = mediaUrlFallback(resolved);
-    if (altUrl && altUrl !== src) {
-      setSrc(altUrl);
-    }
-  };
 
   if (!resolved) return null;
 
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      className={className}
-      src={src}
-      alt={alt}
-      aria-hidden={ariaHidden}
-      loading={loading}
-      decoding="async"
-      referrerPolicy="no-referrer"
-      onError={onError}
-    />
+    <>
+      {status !== "ready" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className={`product-frame__placeholder ${className}`}
+          src="/briq-mark.svg"
+          alt=""
+          aria-hidden
+          decoding="async"
+        />
+      ) : null}
+      {status !== "failed" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className={`${className}${status === "loading" ? " is-loading" : ""}`}
+          src={src}
+          alt={alt}
+          aria-hidden={ariaHidden}
+          loading={loading}
+          decoding="async"
+          referrerPolicy="no-referrer"
+          onLoad={() => setStatus("ready")}
+          onError={() => {
+            const altUrl = mediaUrlFallback(resolved);
+            if (altUrl && altUrl !== src) {
+              setSrc(altUrl);
+              setStatus("loading");
+              return;
+            }
+            setStatus("failed");
+          }}
+        />
+      ) : null}
+    </>
   );
 }
 

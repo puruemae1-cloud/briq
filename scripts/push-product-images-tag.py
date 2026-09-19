@@ -71,7 +71,8 @@ def add_worktree(tmp: Path, *, sparse_paths: list[str] | None = None) -> bool:
         # --no-cone is much faster for many specific SKU folders
         run(["git", "sparse-checkout", "init", "--no-cone"], cwd=tmp, check=False)
         run(["git", "sparse-checkout", "set", *sparse_paths], cwd=tmp, check=False)
-        checkout = run(["git", "checkout", TAG], cwd=tmp, check=False, timeout=180)
+        # Tag tip grows as we push; sparse checkout alone can still exceed 3m.
+        checkout = run(["git", "checkout", TAG], cwd=tmp, check=False, timeout=600)
         return checkout.returncode == 0
 
     added = run(["git", "worktree", "add", "--detach", str(tmp), TAG], check=False)
@@ -206,6 +207,146 @@ def reset_worktree_to_remote_tag(tmp: Path) -> None:
     rev = remote_tag_rev()
     if rev:
         run(["git", "reset", "--hard", rev], cwd=tmp)
+
+
+def push_tag_ref() -> bool:
+    """Force-push the local product-images tag from the main repo."""
+    pushed = run(
+        [
+            "git",
+            "-c",
+            "http.postBuffer=524288000",
+            "-c",
+            "http.version=HTTP/1.1",
+            "push",
+            "-f",
+            "origin",
+            f"refs/tags/{TAG}",
+        ],
+        check=False,
+        timeout=300,
+    )
+    return pushed.returncode == 0
+
+
+def push_only_ids_fast_import(
+    src_roots: list[tuple[str, Path]],
+    only_ids: list[str],
+    *,
+    skip_purge: bool,
+) -> int:
+    """Update product-images via git fast-import — no worktree checkout.
+
+    Full sparse checkouts of this tag now hang (tree is huge). fast-import
+    applies file adds on top of the current tag tip without materializing it.
+    """
+    import time
+
+    parent = subprocess.run(
+        ["git", "rev-parse", TAG],
+        cwd=str(ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if parent.returncode != 0 or not parent.stdout.strip():
+        print(f"ERROR: local tag {TAG} missing — cannot fast-import.", flush=True)
+        return 1
+    parent_rev = parent.stdout.strip()
+
+    # Collect (repo_path, file bytes)
+    files: list[tuple[str, bytes]] = []
+    brands: list[str] = []
+    for name, src in src_roots:
+        if name == "banners":
+            continue
+        brands.append(name)
+        for sku in only_ids:
+            sku_dir = src / sku
+            if not sku_dir.is_dir():
+                print(f"skip missing {sku_dir}", flush=True)
+                continue
+            for f in sorted(sku_dir.rglob("*")):
+                if not f.is_file():
+                    continue
+                if f.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
+                    continue
+                rel = f"public/products/{name}/{sku}/{f.relative_to(sku_dir).as_posix()}"
+                files.append((rel, f.read_bytes()))
+
+    if not files:
+        print("No image changes on product-images tag.", flush=True)
+        return 0
+
+    brand_label = ",".join(brands) or "products"
+    msg = f"chore: sync PDP images ({brand_label})\n"
+    ts = int(time.time())
+
+    print(
+        f"fast-import {len(files)} file(s) onto {TAG} ({parent_rev[:12]})…",
+        flush=True,
+    )
+
+    chunks: list[bytes] = []
+
+    def emit(s: str) -> None:
+        chunks.append(s.encode("utf-8"))
+
+    emit(f"commit refs/tags/{TAG}\n")
+    emit(f"committer briq-bot <briq-bot@users.noreply.github.com> {ts} +0000\n")
+    msg_b = msg.encode("utf-8")
+    emit(f"data {len(msg_b)}\n")
+    chunks.append(msg_b)
+    emit(f"from {parent_rev}\n")
+    # Replace each SKU folder wholesale so removed frames disappear.
+    seen_sku_dirs: set[str] = set()
+    for rel, _data in files:
+        # public/products/<brand>/<sku>/...
+        parts = rel.split("/")
+        if len(parts) >= 4:
+            sku_prefix = "/".join(parts[:4])
+            if sku_prefix not in seen_sku_dirs:
+                seen_sku_dirs.add(sku_prefix)
+                emit(f"D {sku_prefix}\n")
+    for rel, data in files:
+        emit(f"M 100644 inline {rel}\n")
+        emit(f"data {len(data)}\n")
+        chunks.append(data)
+        emit("\n")
+    emit("done\n")
+
+    proc = subprocess.run(
+        ["git", "fast-import", "--quiet", "--date-format=raw"],
+        cwd=str(ROOT),
+        input=b"".join(chunks),
+        capture_output=True,
+        timeout=600,
+    )
+    if proc.returncode != 0:
+        print(
+            f"ERROR: fast-import failed ({proc.returncode}): "
+            f"{proc.stderr.decode('utf-8', errors='replace')[:800]}",
+            flush=True,
+        )
+        return 1
+
+    new_rev = subprocess.run(
+        ["git", "rev-parse", TAG],
+        cwd=str(ROOT),
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    print(f"local tag {TAG} → {new_rev[:12]}", flush=True)
+
+    if not push_tag_ref():
+        print("ERROR: failed to push product-images tag.", flush=True)
+        return 1
+    print(f"product-images tag updated ({brand_label}).", flush=True)
+    update_product_images_manifest()
+    if not skip_purge:
+        purge_jsdelivr(brands)
+    return 0
 
 
 def push_tag(tmp: Path) -> bool:
@@ -392,18 +533,24 @@ def main() -> int:
             )
             return 1
 
+    # SKU-batched pushes: avoid worktree checkout (hangs on huge tag tip).
+    banner_only = {n for n, _ in src_roots} == {"banners"}
+    if only_ids and not banner_only:
+        return push_only_ids_fast_import(
+            src_roots, only_ids, skip_purge=args.skip_purge
+        )
+
     tmp = Path(tempfile.mkdtemp(prefix="briq-product-images-"))
     try:
-        banner_only = {n for n, _ in src_roots} == {"banners"}
         sparse = ["public/banners"] if banner_only else None
         if sparse is None and src_roots:
             # Partial brand pushes only need that tree on the tag (~hundreds of
             # folders), not the full 128k+ product-images checkout.
-            # Always pair with an existing brand (mb-pdp) so cone mode
-            # materializes public/products/ — otherwise a *new* brand path
-            # (never on the tag) can be copied + `git add -f`'d yet still
-            # show empty `git status` under sparse-checkout.
-            sparse = ["public/products/mb-pdp"]
+            # Anchor with public/banners (tiny, always on the tag) — NOT a full
+            # brand tree like mb-pdp, which makes `git checkout` time out.
+            # Listing SKU paths in sparse-checkout lets `git add -f` of new
+            # brand folders show up even when the brand is new on the tag.
+            sparse = ["public/banners"]
             if only_ids:
                 # Only materialize the SKU folders we are updating — full
                 # al-pdp / gc-pdp checkouts hang for tens of minutes locally.

@@ -6020,7 +6020,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "celine",
-        labelKo: "셀린",
+        labelKo: "셀린느",
         href: "/shop?category=luxury&sub=celine",
         children: [
           {
@@ -7033,7 +7033,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "celine-bags",
-        labelKo: "셀린",
+        labelKo: "셀린느",
         href: "/shop?category=bags&sub=celine-bags",
         children: [
           {
@@ -7071,7 +7071,7 @@ export const navCategories: NavCategory[] = [
               { id: "ce-men-triomphe-canvas", labelKo: "트리옹프 캔버스", href: "/shop?category=bags&sub=ce-men-triomphe-canvas" },
               { id: "ce-men-luggage", labelKo: "러기지", href: "/shop?category=bags&sub=ce-men-luggage" },
               { id: "ce-men-take-away", labelKo: "테이크 어웨이", href: "/shop?category=bags&sub=ce-men-take-away" },
-              { id: "ce-men-celine-padded", labelKo: "셀린 패디드", href: "/shop?category=bags&sub=ce-men-celine-padded" },
+              { id: "ce-men-celine-padded", labelKo: "셀린느 패디드", href: "/shop?category=bags&sub=ce-men-celine-padded" },
               { id: "ce-men-triomphe", labelKo: "트리옹프", href: "/shop?category=bags&sub=ce-men-triomphe" },
             ],
           },
@@ -7817,7 +7817,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "celine-shoes",
-        labelKo: "셀린",
+        labelKo: "셀린느",
         href: "/shop?category=shoes&sub=celine-shoes",
         children: [
           {
@@ -9027,7 +9027,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "celine-accessories",
-        labelKo: "셀린",
+        labelKo: "셀린느",
         href: "/shop?category=accessories&sub=celine-accessories",
         children: [
           {

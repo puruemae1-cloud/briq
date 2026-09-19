@@ -129,7 +129,19 @@ def tag_bundle(row: dict) -> list[str]:
         tags += ["rtw", "ready-to-wear"]
     elif "bags" in leaf:
         tags += ["bags", "가방"]
-    elif "shoes" in leaf:
+    elif any(
+        x in leaf
+        for x in (
+            "shoes",
+            "boots",
+            "flats",
+            "pumps",
+            "sandals",
+            "trainers",
+            "platforms",
+            "lace-ups",
+        )
+    ):
         tags += ["shoes", "슈즈"]
     elif "watches" in leaf:
         tags += ["watches", "워치"]
@@ -280,14 +292,45 @@ def _merge_vw_product(prev: dict | None, new: dict) -> dict:
     out = dict(new)
     cols = list(dict.fromkeys([*(prev.get("vwCollections") or []), *(new.get("vwCollections") or [])]))
     out["vwCollections"] = cols
-    # Prefer bags category if either side is bags (leaf mis-order safety).
+    # Prefer bags / shoes category if either side is that family
+    # (Worlds End leaf often overwrites shoe SKUs to accessories).
     if prev.get("category") == "bags" or new.get("category") == "bags":
         out["category"] = "bags"
+    elif prev.get("category") == "shoes" or new.get("category") == "shoes":
+        out["category"] = "shoes"
     # Prefer the bags-*all / more specific bag leaf as subcategory when available.
     prev_sub = str(prev.get("subcategory") or "")
     new_sub = str(new.get("subcategory") or "")
     if prev_sub.endswith("bags-all") and not new_sub.endswith("bags-all"):
         out["subcategory"] = prev_sub
+    if out.get("category") == "shoes":
+        # Prefer a dedicated shoes leaf over Worlds End / misc accessories.
+        def _shoe_sub_score(sub: str) -> int:
+            s = sub.lower()
+            if "worlds-end" in s:
+                return 0
+            if s.endswith("shoes-all") or "-shoes" in s:
+                return 3
+            if any(
+                k in s
+                for k in (
+                    "boot",
+                    "flat",
+                    "pump",
+                    "sandal",
+                    "trainer",
+                    "platform",
+                    "lace-up",
+                    "shoe",
+                )
+            ):
+                return 2
+            return 1
+
+        if _shoe_sub_score(prev_sub) > _shoe_sub_score(new_sub):
+            out["subcategory"] = prev_sub
+            if prev.get("category") == "shoes":
+                out["category"] = "shoes"
     # Keep the longer image gallery when replacing a thinner row.
     if len(prev.get("images") or []) > len(new.get("images") or []):
         out["images"] = prev["images"]

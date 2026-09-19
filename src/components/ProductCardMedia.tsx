@@ -29,26 +29,52 @@ function CardSlide({
 }) {
   const resolved = mediaUrl(src);
   const [shown, setShown] = useState(resolved);
+  const [status, setStatus] = useState<"loading" | "ready" | "failed">(
+    "loading",
+  );
   useEffect(() => {
     setShown(resolved);
+    setStatus("loading");
   }, [resolved]);
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      className={`product-frame__img product-card__img product-card-media__img${
-        current ? " is-current" : ""
-      }`}
-      src={shown}
-      alt={alt}
-      aria-hidden={!current && !alt}
-      loading="lazy"
-      decoding="async"
-      referrerPolicy="no-referrer"
-      onError={() => {
-        const altUrl = mediaUrlFallback(resolved);
-        if (altUrl && altUrl !== shown) setShown(altUrl);
-      }}
-    />
+    <>
+      {status !== "ready" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className={`product-frame__placeholder product-card-media__img${
+            current ? " is-current" : ""
+          }`}
+          src="/briq-mark.svg"
+          alt=""
+          aria-hidden
+          decoding="async"
+        />
+      ) : null}
+      {status !== "failed" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className={`product-frame__img product-card__img product-card-media__img${
+            current ? " is-current" : ""
+          }${status === "loading" ? " is-loading" : ""}`}
+          src={shown}
+          alt={alt}
+          aria-hidden={!current && !alt}
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
+          onLoad={() => setStatus("ready")}
+          onError={() => {
+            const altUrl = mediaUrlFallback(resolved);
+            if (altUrl && altUrl !== shown) {
+              setShown(altUrl);
+              setStatus("loading");
+              return;
+            }
+            setStatus("failed");
+          }}
+        />
+      ) : null}
+    </>
   );
 }
 

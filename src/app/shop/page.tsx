@@ -24,6 +24,7 @@ import {
 import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
+import { brandLogoSrcForNavId } from "@/lib/brand-logos";
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
@@ -302,24 +303,51 @@ export default async function ShopPage({ searchParams }: Props) {
             </div>
 
             {current?.children ? (
-              <div className="category-row category-row--sub">
-                {sortNavChildrenByBrandOrder(current.children).map((child) => (
-                  <ShopNavLink
-                    key={child.id}
-                    href={buildShopHref({
-                      category,
-                      sub: child.id,
-                      sort,
-                    })}
-                    scroll={false}
-                    replace
-                    className={`chip chip--sub ${
-                      sub === child.id || pathIds.has(child.id) ? "is-active" : ""
-                    }`}
-                  >
-                    {child.labelKo}
-                  </ShopNavLink>
-                ))}
+              <div
+                className={`category-row category-row--sub${
+                  sortNavChildrenByBrandOrder(current.children).some((c) =>
+                    brandLogoSrcForNavId(c.id),
+                  )
+                    ? " category-row--brands"
+                    : ""
+                }`}
+              >
+                {sortNavChildrenByBrandOrder(current.children).map((child) => {
+                  const logo = brandLogoSrcForNavId(child.id);
+                  const active =
+                    sub === child.id || pathIds.has(child.id);
+                  return (
+                    <ShopNavLink
+                      key={child.id}
+                      href={buildShopHref({
+                        category,
+                        sub: child.id,
+                        sort,
+                      })}
+                      scroll={false}
+                      replace
+                      className={
+                        logo
+                          ? `chip chip--brand${active ? " is-active" : ""}`
+                          : `chip chip--sub ${active ? "is-active" : ""}`
+                      }
+                      aria-label={child.labelKo}
+                    >
+                      {logo ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          className="chip__brand-logo"
+                          src={logo}
+                          alt=""
+                          aria-hidden
+                          decoding="async"
+                        />
+                      ) : (
+                        child.labelKo
+                      )}
+                    </ShopNavLink>
+                  );
+                })}
               </div>
             ) : null}
 

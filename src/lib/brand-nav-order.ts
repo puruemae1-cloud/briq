@@ -27,8 +27,17 @@ const FAMILY_RANK: Record<string, number> = {
   /** Louis Vuitton — after Chanel, before other _new brands. */
   "louis-vuitton": 220,
   dior: 230,
-  /** Slot for newly added brands — always after Gucci, before Burberry. */
-  _new: 250,
+  /** Luxury houses added after Gucci / LV / Dior. */
+  "bottega-veneta": 240,
+  celine: 245,
+  "saint-laurent": 250,
+  "vivienne-westwood": 255,
+  mulberry: 260,
+  prada: 265,
+  "all-saints": 270,
+  "galvin-green": 275,
+  /** Slot for newly added brands — always after known houses, before Burberry. */
+  _new: 280,
   burberry: 300,
   "paul-smith": 400,
   arcteryx: 900,
@@ -58,22 +67,28 @@ function brandFamily(id: string): string | null {
     x.startsWith("bottega-veneta") ||
     x.startsWith("bv-")
   ) {
-    return "_new";
+    return "bottega-veneta";
   }
-  if (x === "celine" || x.startsWith("celine-") || x.startsWith("ce-")) return "_new";
+  if (x === "celine" || x.startsWith("celine-") || x.startsWith("ce-")) return "celine";
   if (
     x === "saint-laurent" ||
     x.startsWith("saint-laurent") ||
     x.startsWith("ys-")
   ) {
-    return "_new";
+    return "saint-laurent";
   }
   if (
     x === "vivienne-westwood" ||
     x.startsWith("vivienne-westwood") ||
     x.startsWith("vw-")
   ) {
-    return "_new";
+    return "vivienne-westwood";
+  }
+  if (x === "all-saints" || x.startsWith("all-saints") || x.startsWith("al-")) {
+    return "all-saints";
+  }
+  if (x === "prada" || x.startsWith("prada-") || x.startsWith("pr-")) {
+    return "prada";
   }
   if (x === "burberry" || x.startsWith("burberry-")) return "burberry";
   if (x === "paul-smith" || x.startsWith("paul-smith-")) return "paul-smith";
@@ -91,10 +106,17 @@ function brandFamily(id: string): string | null {
     return "dior";
   }
   if (x === "mulberry" || x.startsWith("mulberry-") || x.startsWith("mb-")) {
-    return "_new";
+    return "mulberry";
   }
-  if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) return "_new";
+  if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) {
+    return "galvin-green";
+  }
   return null;
+}
+
+/** Public brand-family key for a nav / subcategory id (or null if structural). */
+export function navBrandFamily(id: string): string | null {
+  return brandFamily(id);
 }
 
 /** Brand rank for a nav / subcategory / tag id (lower = earlier). */

@@ -301,16 +301,16 @@ acc = f'''
 '''
 
 if 'id: "saint-laurent"' not in text:
-    text = text.replace('        id: "celine",\n        labelKo: "셀린",', luxury + '\n        id: "celine",\n        labelKo: "셀린",', 1)
+    text = text.replace('        id: "celine",\n        labelKo: "셀린느",', luxury + '\n        id: "celine",\n        labelKo: "셀린느",', 1)
     print("luxury nav OK")
 if 'id: "saint-laurent-bags"' not in text:
-    text = text.replace('        id: "celine-bags",\n        labelKo: "셀린",', bags + '\n        id: "celine-bags",\n        labelKo: "셀린",', 1)
+    text = text.replace('        id: "celine-bags",\n        labelKo: "셀린느",', bags + '\n        id: "celine-bags",\n        labelKo: "셀린느",', 1)
     print("bags nav OK")
 if 'id: "saint-laurent-shoes"' not in text:
-    text = text.replace('        id: "celine-shoes",\n        labelKo: "셀린",', shoes + '\n        id: "celine-shoes",\n        labelKo: "셀린",', 1)
+    text = text.replace('        id: "celine-shoes",\n        labelKo: "셀린느",', shoes + '\n        id: "celine-shoes",\n        labelKo: "셀린느",', 1)
     print("shoes nav OK")
 if 'id: "saint-laurent-accessories"' not in text:
-    text = text.replace('        id: "celine-accessories",\n        labelKo: "셀린",', acc + '\n        id: "celine-accessories",\n        labelKo: "셀린",', 1)
+    text = text.replace('        id: "celine-accessories",\n        labelKo: "셀린느",', acc + '\n        id: "celine-accessories",\n        labelKo: "셀린느",', 1)
     print("accessories nav OK")
 
 path.write_text(text, encoding="utf-8")

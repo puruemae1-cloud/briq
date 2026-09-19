@@ -72,6 +72,52 @@ function withSoldOutLast(
  */
 export const NEW_ARRIVALS_LIMIT = 100;
 
+/** Soft cap per brand inside New Arrivals so one weekly sync cannot dominate. */
+export const NEW_ARRIVALS_MAX_PER_BRAND = 8;
+
+/**
+ * Interleave newest products across brands (round-robin on newest-first
+ * brand queues). Keeps chronological preference while mixing houses.
+ */
+export function diversifyByBrandNewestFirst(
+  newestFirst: Product[],
+  limit: number,
+  maxPerBrand: number = NEW_ARRIVALS_MAX_PER_BRAND,
+  brandKey: (p: Product) => string = (p) =>
+    (p.brand || p.subcategory || p.id || "unknown").toLowerCase(),
+): Product[] {
+  if (limit <= 0 || newestFirst.length === 0) return [];
+  const queues = new Map<string, Product[]>();
+  const brandOrder: string[] = [];
+  for (const product of newestFirst) {
+    const key = brandKey(product) || "unknown";
+    let q = queues.get(key);
+    if (!q) {
+      q = [];
+      queues.set(key, q);
+      brandOrder.push(key);
+    }
+    if (q.length < maxPerBrand) q.push(product);
+  }
+  const out: Product[] = [];
+  const taken = new Set<string>();
+  let progress = true;
+  while (out.length < limit && progress) {
+    progress = false;
+    for (const key of brandOrder) {
+      if (out.length >= limit) break;
+      const q = queues.get(key);
+      if (!q || q.length === 0) continue;
+      const next = q.shift()!;
+      if (taken.has(next.id)) continue;
+      taken.add(next.id);
+      out.push(next);
+      progress = true;
+    }
+  }
+  return out;
+}
+
 const GG_ACCESSORY_NAME_RE =
   /\b(belt|cap|hat|glove|gloves|umbrella|towel|visor|bag|neck warmer|wrist warmer|wristwarmers?)\b/i;
 
@@ -145,11 +191,21 @@ export function getTopSortedProducts(
 
 /**
  * Catalogue-wide newest products for the New Arrivals shop surface.
- * Single-pass top-N (avoids copying+sorting the full multi-brand catalogue,
- * which OOMs the Vercel shop API after large brand imports).
+ * Pulls a wider newest pool then interleaves brands so one weekly sync
+ * cannot fill the entire New Arrivals rail.
  */
 export function getNewArrivalsProducts(list: Product[]): Product[] {
-  return getTopSortedProducts(list, "new", NEW_ARRIVALS_LIMIT);
+  const pool = getTopSortedProducts(
+    list,
+    "new",
+    NEW_ARRIVALS_LIMIT * 3,
+  );
+  return diversifyByBrandNewestFirst(
+    pool,
+    NEW_ARRIVALS_LIMIT,
+    NEW_ARRIVALS_MAX_PER_BRAND,
+    (p) => (p.brand || p.subcategory || p.id || "unknown").toLowerCase(),
+  );
 }
 
 /**

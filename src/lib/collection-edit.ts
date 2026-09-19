@@ -1,7 +1,9 @@
 import type { Product } from "@/data/product-types";
 import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
+import { homepageBrandKey } from "@/lib/homepage-rails";
 import {
   compareProductsByNewest,
+  diversifyByBrandNewestFirst,
   sortProducts,
   stockSortRank,
 } from "@/lib/product-sort";
@@ -67,7 +69,13 @@ export function curateCollectionEdit(
   // but sortProducts sinks them to the end of the section.
   const inStock = pool.filter((p) => p.inStock !== false);
   const newPool = inStock.length >= SECTION_LIMIT ? inStock : pool;
-  const newItems = sortProducts(newPool, "new").slice(0, SECTION_LIMIT);
+  const newest = sortProducts(newPool, "new").slice(0, SECTION_LIMIT * 3);
+  const newItems = diversifyByBrandNewestFirst(
+    newest,
+    SECTION_LIMIT,
+    3,
+    homepageBrandKey,
+  );
 
   return { signature, bestseller, newItems };
 }
