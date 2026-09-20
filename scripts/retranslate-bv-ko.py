@@ -481,6 +481,7 @@ def main() -> int:
     ap.add_argument("--priority-id", default="", help="Translate this product first")
     ap.add_argument("--limit", type=int, default=0, help="Max unique strings to translate")
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--max-chars", type=int, default=0, help="Only translate strings up to this length")
     args = ap.parse_args()
 
     products = load_json(CATALOG, [])
@@ -517,6 +518,8 @@ def main() -> int:
             if needs_ko(str(pri.get("name") or "")):
                 priority_set.add(str(pri.get("name")).strip())
     pending.sort(key=lambda s: (0 if s in priority_set else 1, len(s), s))
+    if args.max_chars and args.max_chars > 0:
+        pending = [s for s in pending if len(s) <= args.max_chars]
     if args.limit and args.limit > 0:
         pending = pending[: args.limit]
 
