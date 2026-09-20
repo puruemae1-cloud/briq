@@ -2709,6 +2709,29 @@ body:has(.nav-drawer-toggle:checked) {
   max-width: 100%;
 }
 
+/* Homepage: same Flannels-style black logo chips as shop category rows */
+.section__brands.section__brands--logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-items: center;
+  gap: 0.55rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.45rem;
+  margin: 0.75rem 0 0;
+  max-width: 100%;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+.section__brands.section__brands--logos::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 640px) {
   /* Let the brand row use the head width (before 전체 보기); wrap only when full. */
   .section__head > div:first-child {
@@ -2733,7 +2756,7 @@ body:has(.nav-drawer-toggle:checked) {
   line-height: 1;
 }
 
-.section__brands a {
+.section__brands a:not(.chip) {
   font-family: var(--font-pretendard);
   font-size: 1.07rem; /* was 0.82rem — ~30% larger on all viewports */
   font-weight: 400;
@@ -2743,7 +2766,7 @@ body:has(.nav-drawer-toggle:checked) {
   transition: color 0.2s ease;
 }
 
-.section__brands a:hover {
+.section__brands a:not(.chip):hover {
   color: #1a1a1a;
 }
 
@@ -3323,15 +3346,17 @@ body:has(.nav-drawer-toggle:checked) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 7.25rem;
-  height: 2.85rem;
-  padding: 0.45rem 0.95rem;
+  min-width: 9.4rem;
+  height: 3.7rem;
+  padding: 0.55rem 1.15rem;
   border-radius: 2px;
   background: #0a0a0a;
   border: 1px solid #0a0a0a;
   color: #fff;
   text-decoration: none;
   flex: 0 0 auto;
+  line-height: 0;
+  text-align: center;
 }
 .chip.chip--brand.is-active {
   background: #111;
@@ -3340,10 +3365,13 @@ body:has(.nav-drawer-toggle:checked) {
 }
 .chip__brand-logo {
   display: block;
-  height: 0.95rem;
+  height: 1.24rem; /* 0.95rem + 30% */
   width: auto;
-  max-width: 6.4rem;
+  max-width: 8.35rem; /* 6.4rem + 30% */
+  max-height: 1.24rem;
+  margin: 0 auto;
   object-fit: contain;
+  object-position: center;
   filter: brightness(0) invert(1);
   pointer-events: none;
 }

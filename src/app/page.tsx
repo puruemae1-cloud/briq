@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
+import { brandLogoSrcForNavId } from "@/lib/brand-logos";
 import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
 export default async function HomePage() {
@@ -68,21 +69,71 @@ export default async function HomePage() {
                       <div>
                         <h2>{banner.titleKo}</h2>
                         {railLinks.length > 0 ? (
-                          <nav
-                            className="section__brands"
-                            aria-label={`${banner.titleKo} 브랜드`}
-                          >
-                            {railLinks.map((link, idx) => (
-                              <span key={link.href} className="section__brands-item">
-                                <Link href={link.href}>{link.label}</Link>
-                                {idx < railLinks.length - 1 ? (
-                                  <span className="section__brands-sep" aria-hidden>
-                                    ·
-                                  </span>
-                                ) : null}
-                              </span>
-                            ))}
-                          </nav>
+                          (() => {
+                            const useLogos = railLinks.some((l) =>
+                              brandLogoSrcForNavId(l.id || ""),
+                            );
+                            return (
+                              <nav
+                                className={`section__brands${
+                                  useLogos ? " section__brands--logos" : ""
+                                }`}
+                                aria-label={`${banner.titleKo} 브랜드`}
+                              >
+                                {railLinks.map((link, idx) => {
+                                  const logo = brandLogoSrcForNavId(
+                                    link.id || "",
+                                  );
+                                  if (useLogos && logo) {
+                                    return (
+                                      <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className="chip chip--brand"
+                                        aria-label={link.label}
+                                      >
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img
+                                          className="chip__brand-logo"
+                                          src={logo}
+                                          alt=""
+                                          aria-hidden
+                                          decoding="async"
+                                        />
+                                      </Link>
+                                    );
+                                  }
+                                  if (useLogos) {
+                                    return (
+                                      <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className="chip chip--sub"
+                                      >
+                                        {link.label}
+                                      </Link>
+                                    );
+                                  }
+                                  return (
+                                    <span
+                                      key={link.href}
+                                      className="section__brands-item"
+                                    >
+                                      <Link href={link.href}>{link.label}</Link>
+                                      {idx < railLinks.length - 1 ? (
+                                        <span
+                                          className="section__brands-sep"
+                                          aria-hidden
+                                        >
+                                          ·
+                                        </span>
+                                      ) : null}
+                                    </span>
+                                  );
+                                })}
+                              </nav>
+                            );
+                          })()
                         ) : null}
                       </div>
                       <Link href={banner.href}>전체 보기</Link>

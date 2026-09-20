@@ -12,6 +12,8 @@ export type BannerSlide = {
 };
 
 export type LookBannerLink = {
+  /** Nav / subcategory id — used to resolve brand wordmark logos. */
+  id?: string;
   label: string;
   href: string;
 };
@@ -69,6 +71,7 @@ export function homeRailLinksForCategory(
           ),
         );
   return children.map((child) => ({
+    id: child.id,
     label: child.labelKo,
     href: child.href,
   }));
