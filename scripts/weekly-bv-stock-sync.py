@@ -63,6 +63,8 @@ def main() -> None:
     env = os.environ.copy()
     env.setdefault("PYTHONUNBUFFERED", "1")
     env["BV_REFRESH_STOCK"] = "1"
+    # Never build with offline KO — English leftovers were shipping to PDP.
+    env.pop("BV_OFFLINE_KO", None)
     env["PYTHONPATH"] = f"{ROOT / 'scripts'}:{env.get('PYTHONPATH', '')}"
     print("BV_REFRESH_STOCK=1 (re-fetch PLP availability + new SKUs)", flush=True)
     since = utc_now_iso()
@@ -75,6 +77,47 @@ def main() -> None:
 
     after = stock_map(OUT_JSON)
     print_delta(before, after)
+
+    # Full-catalog KO repair (Bing) — build-time gtx often leaves EN names/bodies.
+    last_rc = 1
+    for attempt in range(1, 6):
+        print(f"== BV KO retranslate attempt {attempt}/5 ==", flush=True)
+        r = subprocess.run(
+            [sys.executable, "-u", "scripts/retranslate-bv-ko.py", "--workers", "2"],
+            cwd=str(ROOT),
+            env=env,
+        )
+        last_rc = r.returncode
+        qa = subprocess.run(
+            [
+                sys.executable,
+                "scripts/check-catalog-korean.py",
+                "--brand",
+                "bv",
+                "--strict",
+                "--fail",
+            ],
+            cwd=str(ROOT),
+            env=env,
+        )
+        # Also fail when product titles are still English (nameKo).
+        name_qa = subprocess.run(
+            [sys.executable, "-u", "scripts/check-bv-nameko.py", "--fail"],
+            cwd=str(ROOT),
+            env=env,
+        )
+        if qa.returncode == 0 and name_qa.returncode == 0:
+            break
+        print(
+            f"WARN attempt {attempt}: retranslate_rc={last_rc} "
+            f"qa_rc={qa.returncode} name_rc={name_qa.returncode}",
+            flush=True,
+        )
+    else:
+        raise SystemExit(
+            last_rc or qa.returncode or name_qa.returncode or 1
+        )
+
     check_new_korean("bv", since)
     print("Bottega Veneta weekly sync complete.", flush=True)
 

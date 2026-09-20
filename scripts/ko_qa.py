@@ -116,6 +116,17 @@ _WHITELIST_TOKENS = (
     "Encens",
     "Couture Charms",
     "Gravity",
+    # Bottega Veneta — collection / construction nouns often left Latin on purpose
+    "Bottega Veneta",
+    "Intrecciato",
+    "Intreccio",
+    "Andiamo",
+    "Cassette",
+    "Jodie",
+    "Puddle",
+    "Tire",
+    "Stretch Knife",
+    "The Chain Cassette",
 )
 
 CATALOG_PATHS: dict[str, list[Path]] = {
