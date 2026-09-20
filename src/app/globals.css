@@ -2732,6 +2732,19 @@ body:has(.nav-drawer-toggle:checked) {
   display: none;
 }
 
+@media (min-width: 900px) {
+  .section__brands.section__brands--logos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+    overflow-x: visible;
+    overflow-y: visible;
+    touch-action: auto;
+    padding-bottom: 0.25rem;
+  }
+}
+
 @media (min-width: 640px) {
   /* Let the brand row use the head width (before 전체 보기); wrap only when full. */
   .section__head > div:first-child {
@@ -3322,12 +3335,13 @@ body:has(.nav-drawer-toggle:checked) {
   gap: 0.5rem 0.55rem;
 }
 
-/* Brand logo strip — Flannels-style horizontal swipe */
+/* Brand logo strip — swipe on mobile; wrap on desktop so chips aren't clipped */
 .category-row.category-row--sub.category-row--brands {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: max-content;
   flex-wrap: nowrap;
+  align-items: center;
   gap: 0.55rem;
   overflow-x: auto;
   overflow-y: hidden;
@@ -3346,9 +3360,12 @@ body:has(.nav-drawer-toggle:checked) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 9.4rem;
-  height: 3.7rem;
-  padding: 0.55rem 1.15rem;
+  box-sizing: border-box;
+  width: max-content;
+  min-width: 8.5rem;
+  min-height: 4.8rem;
+  height: 4.8rem;
+  padding: 0.65rem 1.35rem;
   border-radius: 2px;
   background: #0a0a0a;
   border: 1px solid #0a0a0a;
@@ -3365,10 +3382,11 @@ body:has(.nav-drawer-toggle:checked) {
 }
 .chip__brand-logo {
   display: block;
-  height: 1.24rem; /* 0.95rem + 30% */
+  height: 1.61rem; /* previous 1.24rem + 30% */
   width: auto;
-  max-width: 8.35rem; /* 6.4rem + 30% */
-  max-height: 1.24rem;
+  max-height: 1.61rem;
+  /* Wide wordmarks (BV, CW, …) must keep height — do not crush by max-width */
+  max-width: min(18rem, 72vw);
   margin: 0 auto;
   object-fit: contain;
   object-position: center;
@@ -3377,6 +3395,16 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 @media (min-width: 900px) {
+  .category-row.category-row--sub.category-row--brands {
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+    overflow-x: visible;
+    overflow-y: visible;
+    touch-action: auto;
+    padding-bottom: 0.35rem;
+  }
   /* CW nested row: keep ~2 lines so Military / Bel Canto / Twelve stay visible */
   .category-row.category-row--nested {
     display: grid;
