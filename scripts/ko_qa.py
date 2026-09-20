@@ -127,6 +127,18 @@ _WHITELIST_TOKENS = (
     "Tire",
     "Stretch Knife",
     "The Chain Cassette",
+    "iPhone",
+    "Pro Max",
+    "Pro",
+    "Kering",
+    "Rue de Sèvres",
+    "Sèvres",
+    "Paris",
+    "cœur de saison",
+    "Absolue",
+    "Absolu",
+    "Good Morning Midnight",
+    "T-bar",
 )
 
 CATALOG_PATHS: dict[str, list[Path]] = {
@@ -235,6 +247,9 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
                 continue
             # Book / lifestyle publisher imprint — Latin house name is intentional.
             if feat.startswith("출판사:"):
+                continue
+            # Fragrance / beauty importer address — street names stay Latin.
+            if feat.startswith("연락처:"):
                 continue
             out.append(("featuresKo", feat.strip()))
     for i, sec in enumerate(p.get("storySections") or []):
