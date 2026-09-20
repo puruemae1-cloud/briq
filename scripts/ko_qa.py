@@ -245,6 +245,9 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
             # Colourway / logo callouts keep Latin colour names on purpose.
             if feat.startswith("로고") or "Logos" in feat:
                 continue
+            # Maison colourways (Havana, Silica, Cruise…) keep Latin on purpose.
+            if re.match(r"^(?:색상|컬러)\s*:", feat) and has_hangul(feat):
+                continue
             # Book / lifestyle publisher imprint — Latin house name is intentional.
             if feat.startswith("출판사:"):
                 continue
@@ -265,6 +268,10 @@ def product_ko_fields(p: dict[str, Any]) -> list[tuple[str, str]]:
         # Colourway / logo callouts keep Latin colour names on purpose.
         if "Bird logo" in body or "로고가 있" in body or title.startswith("로고"):
             continue
+        # BV material/detail blocks often keep maison colour names in Latin.
+        if title in {"소재 & 케어", "소재", "케어 가이드", "디테일 & 특징", "디테일"} and has_hangul(body):
+            if en_ratio(body) <= 0.55:
+                continue
         out.append((f"story[{i}].bodyKo", body.strip()))
     return out
 

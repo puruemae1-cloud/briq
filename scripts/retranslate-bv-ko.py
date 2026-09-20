@@ -342,6 +342,12 @@ def translate_text(text: str) -> str:
             if out:
                 break
         if not out:
+            # Maison colour / proper noun — keep Latin rather than aborting the batch.
+            if len(chunk) <= 40 and re.fullmatch(
+                r"(?:색상:\s*)?[A-Za-z][A-Za-z0-9 /'\-]*", chunk
+            ):
+                outs.append(chunk)
+                continue
             raise RuntimeError(f"translate-failed: {last_err}")
         outs.append(out)
     return " ".join(outs)
@@ -427,8 +433,22 @@ def apply_translations(p: dict, cache: dict[str, str]) -> bool:
         title = str(s.get("titleKo") or "")
         body = str(s.get("bodyKo") or "")
         if title == "제품 소개" and is_good_korean(desc, max_ratio=0.55) and has_hangul(desc):
-            # Keep intro story in sync with translated description lead.
-            lead = desc.split("\n")[0].strip()
+            # Keep intro story in sync with description lead paragraphs
+            # (not only the first line — BV often has a 2-line artisan blurb).
+            feats = {str(x).strip() for x in (p.get("featuresKo") or [])}
+            lead_lines: list[str] = []
+            for line in desc.split("\n"):
+                line = line.strip()
+                if not line:
+                    if lead_lines:
+                        break
+                    continue
+                if line in feats and lead_lines:
+                    break
+                lead_lines.append(line)
+                if len(lead_lines) >= 3:
+                    break
+            lead = "\n".join(lead_lines).strip()
             if lead and body != lead and not needs_ko(lead):
                 s["bodyKo"] = lead
                 sec_changed = True

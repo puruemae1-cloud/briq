@@ -247,31 +247,43 @@ def list_gbp_price(product: dict | None) -> float | None:
 
 
 def image_urls(product: dict) -> list[str]:
-    """Prefer akeneoImages.packshot[].ecom URLs."""
+    """Collect official DAM URLs — packshot first, then other akeneo sets, then gallery."""
     urls: list[str] = []
-    ak = product.get("akeneoImages") or {}
-    pack = ak.get("packshot") if isinstance(ak, dict) else None
-    if isinstance(pack, list):
-        for img in pack:
+
+    def _add(u: str) -> None:
+        u = str(u or "").strip()
+        if u and u not in urls:
+            urls.append(u)
+
+    def _from_list(items) -> None:
+        if not isinstance(items, list):
+            return
+        for img in items:
             if not isinstance(img, dict) or img.get("missingImages"):
                 continue
-            u = str(img.get("ecom") or img.get("large") or img.get("small") or "")
-            if u and u not in urls:
-                urls.append(u)
-    if urls:
-        return urls
-    # Fallback gallery
-    for key in ("large", "hi-res", "medium"):
-        for img in ((product.get("images") or {}).get(key) or []):
+            _add(img.get("ecom") or img.get("large") or img.get("small") or "")
+
+    ak = product.get("akeneoImages") or {}
+    if isinstance(ak, dict):
+        # Packshots first (canonical PDP order A/B/C…)
+        _from_list(ak.get("packshot"))
+        for key, items in ak.items():
+            if key == "packshot":
+                continue
+            _from_list(items)
+    # Fallback / supplemental SFCC gallery
+    for key in ("hi-res", "large", "medium", "small"):
+        items = (product.get("images") or {}).get(key) or []
+        if not isinstance(items, list):
+            continue
+        for img in items:
             if not isinstance(img, dict):
                 continue
-            u = str(img.get("absURL") or img.get("url") or "")
-            if u and u not in urls:
-                urls.append(u)
+            _add(img.get("ecom") or img.get("absURL") or img.get("url") or img.get("large") or "")
     return urls
 
 
-def download_images(sku: str, urls: list[str], *, max_n: int = 8) -> list[str]:
+def download_images(sku: str, urls: list[str], *, max_n: int = 12) -> list[str]:
     folder = IMG_ROOT / slugify(sku)
     folder.mkdir(parents=True, exist_ok=True)
     local: list[str] = []
