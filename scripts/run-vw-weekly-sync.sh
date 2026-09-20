@@ -20,7 +20,21 @@ for fam in VW_FAMILY_SCRAPERS:
     if r.returncode != 0:
         print(f"WARN {fam} failed rc={r.returncode}", flush=True)
 
+# Strip recommendation-rail / other-colourway shots before catalog build.
+# Shared colourway codes (J00BL etc.) must not match foreign styles.
+r = subprocess.run([sys.executable, "scripts/sanitize-vw-images.py"])
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
 r = subprocess.run([sys.executable, "scripts/build-vw-catalog.py"])
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
+# Guard: mixed galleries must not ship (style+colourway filter).
+r = subprocess.run(
+    [sys.executable, "scripts/check-vw-images.py", "--fail"],
+    cwd=str(Path.cwd()),
+)
 if r.returncode != 0:
     raise SystemExit(r.returncode)
 

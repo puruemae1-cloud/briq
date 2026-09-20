@@ -58,22 +58,108 @@ def normalize_image_url(url: str) -> str:
     return urllib.parse.urlunparse(parsed._replace(query=new_query))
 
 
+_VW_COLOUR_WORDS = {
+    "BLACK",
+    "WHITE",
+    "GOLD",
+    "SILVER",
+    "NAVY",
+    "CREAM",
+    "BEIGE",
+    "BROWN",
+    "GREEN",
+    "BLUE",
+    "RED",
+    "PINK",
+    "GREY",
+    "GRAY",
+    "ORANGE",
+    "PURPLE",
+    "YELLOW",
+    "MULTI",
+    "PRINT",
+    "LEATHER",
+    "COTTON",
+    "PLATINUM",
+    "RUTHENIUM",
+    "CRYSTAL",
+    "PEARL",
+    "XXX",
+}
+
+
+def vw_style_and_colorway(sku: str) -> tuple[str, str]:
+    """Split a VW SKU into primary style + colourway codes.
+
+    Examples:
+      ``3G010069-J00BL--BLACK`` → (``3G010069``, ``J00BL``)
+      ``6302039G-01P346-SM-PLATINUM-…`` → (``6302039G``, ``01P346``)
+    """
+    sku_u = (sku or "").upper().replace("--", "-")
+    parts = [b for b in re.split(r"[-_]+", sku_u) if b]
+    style = ""
+    for p in parts:
+        if p in _VW_COLOUR_WORDS:
+            continue
+        if len(p) >= 6 and re.search(r"\d", p):
+            style = p
+            break
+    if not style and parts:
+        style = next((p for p in parts if p not in _VW_COLOUR_WORDS), parts[0])
+    colorway = ""
+    seen_style = False
+    for p in parts:
+        if p == style:
+            seen_style = True
+            continue
+        if not seen_style:
+            continue
+        if p in _VW_COLOUR_WORDS:
+            continue
+        # Shared colourway / finish codes (J00BL, 01P346, W009Q) — not product ids.
+        if 3 <= len(p) <= 10 and re.search(r"\d", p):
+            colorway = p
+            break
+    return style, colorway
+
+
 def filter_product_images(sku: str, remote_urls: list[str]) -> list[str]:
-    sku_norm = slugify((sku or "").replace(".", "-").replace("_", "-"))
-    sku_bits = [b for b in re.split(r"[-_]+", (sku or "").upper()) if len(b) >= 4]
+    """Keep only URLs that belong to this SKU's style (+ colourway).
+
+    Recommendation rails inject other styles and other colourways. Matching on
+    shared colourway codes alone (e.g. ``J00BL``) is wrong — require the
+    primary style id, and when a colourway code exists require that too.
+    Hashed demandware paths with no style token are kept only for short
+    LD/gallery lists.
+    """
+    style, colorway = vw_style_and_colorway(sku)
+
     out: list[str] = []
     seen: set[str] = set()
+    hashed: list[str] = []
     for raw in remote_urls:
         url = normalize_image_url(raw)
         if not url or url in seen:
             continue
         seen.add(url)
         upper = url.upper()
-        if sku_bits and any(bit in upper for bit in sku_bits):
+        fname = upper.rsplit("/", 1)[-1]
+        has_readable = bool(re.search(r"[0-9A-Z]{6,}[-_]", fname))
+        if style and style in upper:
+            if colorway and colorway not in upper:
+                # Same style, different colourway — drop.
+                continue
             out.append(url)
+        elif not has_readable:
+            hashed.append(url)
+
     if out:
         return out
-    return [normalize_image_url(u) for u in remote_urls if normalize_image_url(u)]
+
+    # No style token in any URL — trust short gallery/LD lists only.
+    if len(hashed) <= 12:
+        return hashed
+    return hashed[:1]
 
 
 def download_image(request, url: str, dest: Path) -> bool:
@@ -88,19 +174,33 @@ def download_image(request, url: str, dest: Path) -> bool:
     return True
 
 
-def materialize_images(request, sku: str, remote_urls: list[str]) -> list[str]:
+def materialize_images(
+    request,
+    sku: str,
+    remote_urls: list[str],
+    *,
+    force: bool = False,
+    max_n: int = 12,
+) -> list[str]:
     folder = slugify((sku or "item").replace(".", "-"))
+    folder_path = IMG_ROOT / folder
+    if force and folder_path.exists():
+        for child in folder_path.glob("*"):
+            try:
+                child.unlink()
+            except Exception:
+                pass
     out: list[str] = []
     seen: set[str] = set()
-    for i, raw in enumerate(remote_urls, start=1):
+    for i, raw in enumerate(remote_urls[:max_n], start=1):
         url = normalize_image_url(raw)
         if not url or url in seen:
             continue
         seen.add(url)
         rel = f"/products/vw-pdp/{folder}/{i}.jpg"
-        dest = IMG_ROOT / folder / f"{i}.jpg"
+        dest = folder_path / f"{i}.jpg"
         try:
-            if not dest.exists() or dest.stat().st_size < 800:
+            if force or not dest.exists() or dest.stat().st_size < 800:
                 ok = download_image(request, url, dest)
                 if not ok:
                     continue
@@ -279,10 +379,28 @@ def scrape_pdp(page, url: str) -> dict:
           const offerList = Array.isArray(offers) ? offers : [offers];
           const primaryOffer = offerList.find((o) => o && o.price) || offerList[0] || {};
           const imagesFromLd = Array.isArray(product.image) ? product.image : (product.image ? [product.image] : []);
-          const imagesFromDom = Array.from(document.querySelectorAll('img'))
-            .map((img) => img.currentSrc || img.src || '')
-            .filter((src) => src.includes('/images/') && src.includes('demandware'));
-          const uniqImages = Array.from(new Set([...imagesFromLd, ...imagesFromDom]));
+          // Never scrape every demandware <img> on the page — recommendation
+          // rails mix other colourways / products into the gallery.
+          const galleryRoots = Array.from(document.querySelectorAll(
+            '.b-product_details-images, .b-product_gallery, .b-pdp_gallery, [data-tau="product_images"], .l-pdp .b-product_image, .b-product_details .b-product_image'
+          ));
+          let imagesFromDom = [];
+          const pickSrc = (img) => img.currentSrc || img.src || img.getAttribute('data-src') || '';
+          if (galleryRoots.length) {
+            imagesFromDom = galleryRoots.flatMap((root) =>
+              Array.from(root.querySelectorAll('img, source')).map((el) =>
+                pickSrc(el) || (el.getAttribute && (el.getAttribute('srcset') || '').split(',')[0]?.trim().split(' ')[0]) || ''
+              )
+            );
+          }
+          imagesFromDom = imagesFromDom.filter((src) =>
+            src && (src.includes('demandware') || src.includes('/dw/image/'))
+          );
+          // Prefer JSON-LD Product.image (official gallery). Fall back to
+          // scoped gallery DOM only — never the full document image list.
+          const uniqImages = Array.from(new Set(
+            (imagesFromLd.length ? imagesFromLd : imagesFromDom).filter(Boolean)
+          ));
           const details = Array.from(document.querySelectorAll('.b-product_accordion-button')).map((btn) => {
             const label = (btn.textContent || '').replace(/\\s+/g, ' ').trim();
             const panelId = btn.getAttribute('aria-controls') || '';
@@ -494,7 +612,11 @@ def scrape_leaf_rows(leaf: dict, *, headed: bool = False, limit: int = 0, skip_i
             pdp = scrape_pdp(page, card["href"])
             sku = (pdp.get("sku") or card.get("id") or sku_from_url(card["href"])).strip()
             remote_images = filter_product_images(sku or card["id"], pdp.get("images") or [])
-            local_images = materialize_images(page.request, sku or card["id"], remote_images)
+            # Always rewrite local frames — hashed demandware URLs change and
+            # stale folders previously accumulated recommendation-rail shots.
+            local_images = materialize_images(
+                page.request, sku or card["id"], remote_images, force=True
+            )
             size_chart = None
             guide = (pdp.get("sizeGuideUrl") or "").strip()
             if guide:

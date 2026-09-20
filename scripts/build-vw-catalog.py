@@ -331,10 +331,15 @@ def _merge_vw_product(prev: dict | None, new: dict) -> dict:
             out["subcategory"] = prev_sub
             if prev.get("category") == "shoes":
                 out["category"] = "shoes"
-    # Keep the longer image gallery when replacing a thinner row.
-    if len(prev.get("images") or []) > len(new.get("images") or []):
+    # Keep the longer image gallery only when the new scrape is empty —
+    # never prefer a bloated mixed recommendation-rail gallery.
+    if not (new.get("images") or []) and (prev.get("images") or []):
         out["images"] = prev["images"]
         out["image"] = prev.get("image") or out.get("image")
+    elif (new.get("images") or []) and (prev.get("images") or []):
+        # Prefer the newer scrape when both exist (weekly sync re-download).
+        out["images"] = new["images"]
+        out["image"] = (new.get("images") or [None])[0] or out.get("image")
     # Korean PDP copy: never keep longer English over a good translation.
     # Weekly scrape often rebuilds EN prose (gtx flakes / BRIQ_FAST_BUILD); keep
     # prior KO for description, story, features, and techSpecs together.

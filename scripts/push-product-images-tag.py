@@ -215,7 +215,7 @@ def push_tag_ref() -> bool:
         [
             "git",
             "-c",
-            "http.postBuffer=524288000",
+            "http.postBuffer=1048576000",
             "-c",
             "http.version=HTTP/1.1",
             "push",
@@ -224,7 +224,7 @@ def push_tag_ref() -> bool:
             f"refs/tags/{TAG}",
         ],
         check=False,
-        timeout=300,
+        timeout=1800,
     )
     return pushed.returncode == 0
 
