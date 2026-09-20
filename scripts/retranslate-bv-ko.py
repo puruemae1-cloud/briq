@@ -145,6 +145,8 @@ _LOCAL_KO = {
     "Adjustable strap": "조절 가능한 스트랩",
     "Detachable strap": "탈착식 스트랩",
     "Made in Italy": "이탈리아 제작",
+    "The 70": "더 70",
+    "70": "70",
 }
 
 _BING = {"ig": "", "token": "", "key": "", "fetched_at": 0.0}
@@ -165,7 +167,7 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _rate_wait(min_gap: float = 1.1) -> None:
+def _rate_wait(min_gap: float = 1.6) -> None:
     global _NEXT_REQ_AT
     with _RATE_LOCK:
         now = time.time()
@@ -182,7 +184,16 @@ def needs_ko(text: str | None) -> bool:
     # Size-chart / region codes — leave as-is.
     if s in {"BV", "UK", "US", "KR", "EU", "IT", "FR", "OS", "TU"}:
         return False
-    if re.fullmatch(r"[A-Z0-9][A-Z0-9\-/]{0,12}", s) and not re.search(r"[a-z]{3,}", s):
+    # Eyewear / style codes like "BV1012S 007", "BV1401SA 004"
+    if re.fullmatch(r"BV\d{3,5}[A-Z]{0,3}\s*\d{0,4}", s, flags=re.I):
+        return False
+    # Measurements / hardware dims — keep Latin units
+    if re.search(r"\d+[\.,]\d+\s*[x×]\s*\d+", s) and len(s) < 80:
+        return False
+    if re.fullmatch(r"[•\-–]?\s*[A-Za-z \-]+:\s*[\d\.,x×/ \-mmcmd]+", s):
+        return False
+    # Short model tokens without lowercase words
+    if len(s) <= 18 and re.fullmatch(r"[A-Z0-9][A-Z0-9\-/ ]{0,16}", s) and not re.search(r"[a-z]{3,}", s):
         return False
     if is_good_korean(s, max_ratio=0.35) and has_hangul(s):
         return False
