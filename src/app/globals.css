@@ -54,8 +54,8 @@ body {
   max-width: 100%;
   overflow-x: clip;
   overscroll-behavior-x: none;
-  /* Vertical page scroll only — carousels opt back into pan-x locally */
-  touch-action: pan-y;
+  /* Allow native horizontal rails (brand chips) while keeping page pan/zoom sane */
+  touch-action: manipulation;
   color: var(--ink);
   background: #fff;
   font-family: var(--font-body), sans-serif;
@@ -2726,8 +2726,8 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  /* JS BrandChipRail handles pan-x; keep pan-y so page scroll still works */
-  touch-action: pan-y;
+  scroll-behavior: auto;
+  touch-action: pan-x pan-y;
 }
 .section__brands.section__brands--logos::-webkit-scrollbar {
   display: none;
@@ -3341,7 +3341,7 @@ body:has(.nav-drawer-toggle:checked) {
   gap: 0.5rem 0.55rem;
 }
 
-/* Brand logo strip — swipe on mobile via BrandChipRail; wrap on desktop */
+/* Brand logo strip — native swipe + momentum on mobile; wrap on desktop */
 .category-row.category-row--sub.category-row--brands {
   display: flex;
   flex-wrap: nowrap;
@@ -3357,7 +3357,8 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  touch-action: pan-y;
+  scroll-behavior: auto;
+  touch-action: pan-x pan-y;
 }
 .category-row.category-row--brands::-webkit-scrollbar {
   display: none;
@@ -3385,7 +3386,12 @@ body:has(.nav-drawer-toggle:checked) {
   text-align: center;
   overflow: hidden;
   isolation: isolate;
-  touch-action: pan-y;
+  touch-action: pan-x pan-y;
+  /* Helvetica on every device — beat body Outfit / Pretendard inheritance */
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans",
+    "Nimbus Sans L", sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
 }
 .chip.chip--brand.is-active {
   background: #111;
@@ -3395,13 +3401,16 @@ body:has(.nav-drawer-toggle:checked) {
 .chip__brand-label {
   display: block;
   color: #fff;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans",
+    "Nimbus Sans L", sans-serif !important;
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   line-height: 1.25;
   white-space: nowrap;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 899px) {
@@ -7878,7 +7887,8 @@ body:has(.pdp-dock) .back-to-top {
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
-    touch-action: pan-y;
+    scroll-behavior: auto;
+    touch-action: pan-x pan-y;
   }
   .seo-brand-grid.seo-brand-grid--tiles::-webkit-scrollbar {
     display: none;
@@ -7894,7 +7904,7 @@ body:has(.pdp-dock) .back-to-top {
     height: 2.765rem;
     margin-inline: 0;
     padding: 0.35rem 0.75rem;
-    touch-action: pan-y;
+    touch-action: pan-x pan-y;
   }
   .seo-brand-card--tile .seo-brand-card__ko {
     display: none;
@@ -7986,17 +7996,23 @@ body:has(.pdp-dock) .back-to-top {
 
 .seo-brand-card--tile .seo-brand-card__en {
   color: #fff;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans",
+    "Nimbus Sans L", sans-serif !important;
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 .seo-brand-card--tile .seo-brand-card__ko {
   color: rgba(255, 255, 255, 0.72);
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans",
+    "Nimbus Sans L", sans-serif !important;
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.04em;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
 }

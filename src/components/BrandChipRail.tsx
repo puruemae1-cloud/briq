@@ -10,8 +10,8 @@ type BrandChipRailProps = {
 };
 
 /**
- * Horizontal brand-chip scroller that works on mobile even when
- * `body { touch-action: pan-y }` blocks native pan-x.
+ * Brand chip rail — relies on native overflow scrolling (momentum + 1:1 finger
+ * tracking). Only suppresses link clicks after a horizontal drag.
  */
 export function BrandChipRail({
   as = "nav",
@@ -20,82 +20,48 @@ export function BrandChipRail({
   "aria-label": ariaLabel,
 }: BrandChipRailProps) {
   const ref = useRef<HTMLElement | null>(null);
-  const drag = useRef({
-    tracking: false,
-    axis: null as null | "h" | "v",
-    startX: 0,
-    startY: 0,
-    startScroll: 0,
-    moved: false,
-  });
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
+    let startX = 0;
+    let startScroll = 0;
+    let dragged = false;
+
     const onStart = (e: TouchEvent) => {
-      if (el.scrollWidth <= el.clientWidth + 2) {
-        drag.current.tracking = false;
-        return;
-      }
       const t = e.touches[0];
       if (!t) return;
-      drag.current = {
-        tracking: true,
-        axis: null,
-        startX: t.clientX,
-        startY: t.clientY,
-        startScroll: el.scrollLeft,
-        moved: false,
-      };
+      startX = t.clientX;
+      startScroll = el.scrollLeft;
+      dragged = false;
     };
 
     const onMove = (e: TouchEvent) => {
-      const s = drag.current;
-      if (!s.tracking) return;
       const t = e.touches[0];
       if (!t) return;
-      const dx = t.clientX - s.startX;
-      const dy = t.clientY - s.startY;
-
-      if (!s.axis) {
-        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
-        s.axis = Math.abs(dx) >= Math.abs(dy) ? "h" : "v";
-      }
-
-      if (s.axis === "h") {
-        e.preventDefault();
-        el.scrollLeft = s.startScroll - dx;
-        if (Math.abs(dx) > 6) s.moved = true;
-      } else {
-        s.tracking = false;
+      if (
+        Math.abs(t.clientX - startX) > 8 ||
+        Math.abs(el.scrollLeft - startScroll) > 2
+      ) {
+        dragged = true;
       }
     };
 
-    const onEnd = () => {
-      drag.current.tracking = false;
-      drag.current.axis = null;
+    const onClickCapture = (e: MouseEvent) => {
+      if (!dragged) return;
+      e.preventDefault();
+      e.stopPropagation();
+      dragged = false;
     };
 
     el.addEventListener("touchstart", onStart, { passive: true });
-    el.addEventListener("touchmove", onMove, { passive: false });
-    el.addEventListener("touchend", onEnd, { passive: true });
-    el.addEventListener("touchcancel", onEnd, { passive: true });
-
-    const onClickCapture = (e: MouseEvent) => {
-      if (drag.current.moved) {
-        e.preventDefault();
-        e.stopPropagation();
-        drag.current.moved = false;
-      }
-    };
+    el.addEventListener("touchmove", onMove, { passive: true });
     el.addEventListener("click", onClickCapture, true);
 
     return () => {
       el.removeEventListener("touchstart", onStart);
       el.removeEventListener("touchmove", onMove);
-      el.removeEventListener("touchend", onEnd);
-      el.removeEventListener("touchcancel", onEnd);
       el.removeEventListener("click", onClickCapture, true);
     };
   }, []);
