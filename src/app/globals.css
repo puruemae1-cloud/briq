@@ -2040,6 +2040,7 @@ body:has(.nav-drawer-toggle:checked) {
 .lookbook__rail-inner {
   width: 100%;
   max-width: none;
+  min-width: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -2711,33 +2712,38 @@ body:has(.nav-drawer-toggle:checked) {
 
 /* Homepage: same Flannels-style black logo chips as shop category rows */
 .section__brands.section__brands--logos {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-items: center;
   gap: 0.55rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 0.45rem;
   margin: 0.75rem 0 0;
-  max-width: 100%;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  touch-action: pan-x;
+  /* pan-x pan-y: intersects body pan-y and still allows this scroller to move */
+  touch-action: pan-x pan-y;
 }
 .section__brands.section__brands--logos::-webkit-scrollbar {
   display: none;
+}
+
+/* Constrain brand rail width on all viewports so overflow can scroll */
+.section__head > div:first-child {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
 }
 
 @media (min-width: 900px) {
   .section__brands.section__brands--logos {
     display: flex;
     flex-wrap: wrap;
-    grid-auto-flow: unset;
-    grid-auto-columns: unset;
     overflow-x: visible;
     overflow-y: visible;
     touch-action: auto;
@@ -3337,12 +3343,13 @@ body:has(.nav-drawer-toggle:checked) {
 
 /* Brand logo strip — swipe on mobile; wrap on desktop so chips aren't clipped */
 .category-row.category-row--sub.category-row--brands {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 0.55rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 0.55rem;
@@ -3350,7 +3357,7 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  touch-action: pan-x;
+  touch-action: pan-x pan-y;
 }
 .category-row.category-row--brands::-webkit-scrollbar {
   display: none;
@@ -3378,6 +3385,8 @@ body:has(.nav-drawer-toggle:checked) {
   text-align: center;
   overflow: hidden;
   isolation: isolate;
+  /* Let horizontal drags scroll the parent rail instead of being eaten by the link */
+  touch-action: pan-x pan-y;
 }
 .chip.chip--brand.is-active {
   background: #111;
@@ -3445,7 +3454,8 @@ body:has(.nav-drawer-toggle:checked) {
 .shop-browse__main {
   min-width: 0;
   max-width: 100%;
-  overflow-x: clip;
+  /* visible so nested brand rails can pan-x; rails themselves are width-bound */
+  overflow-x: visible;
 }
 
 .shop-browse__controls {
@@ -7845,6 +7855,44 @@ body:has(.pdp-dock) .back-to-top {
   gap: 0.55rem;
 }
 
+/* Mobile /brands: horizontal finger-swipe rail (same as shop/home chips) */
+@media (max-width: 899px) {
+  .seo-brand-grid.seo-brand-grid--tiles {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.55rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.45rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y;
+  }
+  .seo-brand-grid.seo-brand-grid--tiles::-webkit-scrollbar {
+    display: none;
+  }
+  .seo-brand-grid.seo-brand-grid--tiles > .seo-brand-card--tile {
+    flex: 0 0 auto;
+    width: 7.36rem;
+    min-width: 7.36rem;
+  }
+  .seo-brand-card--tile a {
+    width: 100%;
+    min-height: 3.456rem;
+    height: 3.456rem;
+    margin-inline: 0;
+    padding: 0.45rem 0.75rem;
+    touch-action: pan-x pan-y;
+  }
+  .seo-brand-card--tile .seo-brand-card__ko {
+    display: none;
+  }
+}
+
 @media (min-width: 700px) {
   .seo-brand-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -7853,8 +7901,10 @@ body:has(.pdp-dock) .back-to-top {
 
 @media (min-width: 900px) {
   .seo-brand-grid.seo-brand-grid--tiles {
+    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.45rem;
+    overflow: visible;
   }
 }
 
