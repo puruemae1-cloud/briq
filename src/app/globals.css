@@ -3608,9 +3608,82 @@ body:has(.nav-drawer-toggle:checked) {
   color: #f7f8f5;
 }
 
+/* Soft dim while the next shop filter RSC loads — no dashed "stuck" chips */
+html[data-shop-navigating] .shop-browse__main .product-grid,
+html[data-shop-navigating] .shop-browse__controls {
+  opacity: 0.4;
+  transition: opacity 0.12s ease;
+  pointer-events: none;
+}
+
 .chip.is-pending {
   opacity: 0.72;
   border-style: dashed;
+}
+
+.shop-loading {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.shop-loading__bar {
+  height: 0.2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 18, 16, 0.06),
+    rgba(11, 18, 16, 0.18),
+    rgba(11, 18, 16, 0.06)
+  );
+  background-size: 200% 100%;
+  animation: shop-loading-shine 1.1s ease-in-out infinite;
+}
+
+.shop-loading__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 0.85rem;
+}
+
+@media (min-width: 760px) {
+  .shop-loading__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .shop-loading__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.shop-loading__card {
+  aspect-ratio: 3 / 4;
+  border-radius: 2px;
+  background: rgba(11, 18, 16, 0.06);
+  animation: shop-loading-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes shop-loading-shine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes shop-loading-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .product-grid {
