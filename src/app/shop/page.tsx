@@ -25,6 +25,7 @@ import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { brandLogoSrcForNavId } from "@/lib/brand-logos";
+import { BrandChipContent } from "@/components/BrandChip";
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
@@ -334,13 +335,9 @@ export default async function ShopPage({ searchParams }: Props) {
                       aria-label={child.labelKo}
                     >
                       {logo ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          className="chip__brand-logo"
-                          src={logo}
-                          alt=""
-                          aria-hidden
-                          decoding="async"
+                        <BrandChipContent
+                          navId={child.id}
+                          label={child.labelKo}
                         />
                       ) : (
                         child.labelKo

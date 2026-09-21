@@ -185,6 +185,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "bottega-veneta",
   // new brands insert here
   "prada",
+  "all-saints",
   "hermes",
   "london-undercover",
   "galvin-green",

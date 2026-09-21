@@ -60,6 +60,25 @@ if img.returncode != 0:
     print("ERROR AL local product images missing after build", flush=True)
     raise SystemExit(img.returncode)
 
+# Record CDN gaps for CI (selective push). Local weekly does not force-push the
+# product-images tag — that step is owned by .github/workflows/weekly-al-sync.yml
+# so we never hang local sync on a large tag upload.
+missing = Path("tmp/al-cdn-missing.txt")
+missing.parent.mkdir(parents=True, exist_ok=True)
+subprocess.run(
+    [
+        sys.executable,
+        "scripts/list-missing-pdp-on-cdn.py",
+        "--dirs",
+        "al-pdp",
+        "--write",
+        str(missing),
+    ],
+    cwd=str(Path.cwd()),
+)
+n_miss = sum(1 for line in missing.read_text(encoding="utf-8").splitlines() if line.strip()) if missing.exists() else 0
+print(f"AL CDN gap report: {n_miss} SKUs missing (CI will push selectively)", flush=True)
+
 print("OK AL weekly sync (local images verified; CDN push/verify is CI)", flush=True)
 PY
 echo "OK AL weekly sync"

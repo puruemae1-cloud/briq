@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
+import { BrandChipLink } from "@/components/BrandChip";
 import { brandLogoSrcForNavId } from "@/lib/brand-logos";
 import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
@@ -86,21 +87,12 @@ export default async function HomePage() {
                                   );
                                   if (useLogos && logo) {
                                     return (
-                                      <Link
+                                      <BrandChipLink
                                         key={link.href}
                                         href={link.href}
-                                        className="chip chip--brand"
-                                        aria-label={link.label}
-                                      >
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
-                                          className="chip__brand-logo"
-                                          src={logo}
-                                          alt=""
-                                          aria-hidden
-                                          decoding="async"
-                                        />
-                                      </Link>
+                                        navId={link.id || ""}
+                                        label={link.label}
+                                      />
                                     );
                                   }
                                   if (useLogos) {

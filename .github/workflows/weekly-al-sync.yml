@@ -42,11 +42,18 @@ jobs:
           chmod +x scripts/run-al-weekly-sync.sh
           scripts/run-al-weekly-sync.sh
 
-      # Hard fail — never commit catalogue paths for images not on the CDN tag.
-      # Skip studio whitening: AL packshots are already light-studio; whitening
-      # ~8k files regularly hits the Actions time budget and delayed the CDN tag.
+      # Prefer selective missing-SKU push (run-al-weekly-sync.sh already
+      # lists+pushes gaps). Full-tree push remains as a safety net.
       - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs al-pdp --skip-whiten
+        run: |
+          python3 scripts/list-missing-pdp-on-cdn.py --dirs al-pdp --write /tmp/al-cdn-missing.txt || true
+          if [ -s /tmp/al-cdn-missing.txt ]; then
+            echo "Pushing $(wc -l < /tmp/al-cdn-missing.txt) missing AL SKUs"
+            python3 scripts/push-product-images-tag.py --dirs al-pdp --merge --only-file /tmp/al-cdn-missing.txt --skip-whiten
+          else
+            echo "No missing AL SKUs — full merge push"
+            python3 scripts/push-product-images-tag.py --dirs al-pdp --skip-whiten
+          fi
 
       - name: Verify catalogue images are on the product-images tag
         run: python3 scripts/verify-product-images.py --brand al --remote --skip-local --all-images

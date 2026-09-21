@@ -150,6 +150,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "프라다 여성 레디투웨어·가방을 Briq에서 영국 셀렉션 기준으로 만나보세요.",
   },
+  "all-saints": {
+    slug: "all-saints",
+    nameEn: "AllSaints",
+    nameKo: "올세인츠",
+    shopHref: "/shop?category=luxury&sub=all-saints",
+    keywords: ["올세인츠", "AllSaints", "All Saints", "올세인츠 직구", "올세인츠 가죽"],
+    blurb:
+      "올세인츠 가죽 재킷·로퍼·데님을 Briq 영국 셀렉션으로 만나보세요.",
+  },
   hermes: {
     slug: "hermes",
     nameEn: "Hermès",
