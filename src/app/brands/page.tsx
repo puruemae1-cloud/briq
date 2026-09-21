@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandChipRail } from "@/components/BrandChipRail";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
 
 const title = "명품 브랜드 | 샤넬·구찌·버버리·프라다·에르메스 — Briq";
@@ -41,7 +42,11 @@ export default function BrandsIndexPage() {
       </header>
 
       <div className="seo-guide__body">
-        <ul className="seo-brand-grid seo-brand-grid--tiles">
+        <BrandChipRail
+          as="ul"
+          className="seo-brand-grid seo-brand-grid--tiles"
+          aria-label="브랜드 목록"
+        >
           {SEO_BRANDS.map((b) => (
             <li key={b.slug} className="seo-brand-card seo-brand-card--tile">
               <Link href={b.shopHref || `/brands/${b.slug}`}>
@@ -52,7 +57,7 @@ export default function BrandsIndexPage() {
               </Link>
             </li>
           ))}
-        </ul>
+        </BrandChipRail>
       </div>
     </article>
   );

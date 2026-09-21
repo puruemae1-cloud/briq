@@ -25,6 +25,7 @@ import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
+import { BrandChipRail } from "@/components/BrandChipRail";
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
@@ -303,16 +304,13 @@ export default async function ShopPage({ searchParams }: Props) {
             </div>
 
             {current?.children ? (
-              <div
-                className={`category-row category-row--sub${
-                  sortNavChildrenByBrandOrder(current.children).some((c) =>
-                    isBrandChipNavId(c.id),
-                  )
-                    ? " category-row--brands"
-                    : ""
-                }`}
-              >
-                {sortNavChildrenByBrandOrder(current.children).map((child) => {
+              (() => {
+                const kids = sortNavChildrenByBrandOrder(current.children);
+                const isBrandRow = kids.some((c) => isBrandChipNavId(c.id));
+                const rowClass = `category-row category-row--sub${
+                  isBrandRow ? " category-row--brands" : ""
+                }`;
+                const chips = kids.map((child) => {
                   const isBrand = isBrandChipNavId(child.id);
                   const active =
                     sub === child.id || pathIds.has(child.id);
@@ -343,8 +341,15 @@ export default async function ShopPage({ searchParams }: Props) {
                       )}
                     </ShopNavLink>
                   );
-                })}
-              </div>
+                });
+                return isBrandRow ? (
+                  <BrandChipRail as="div" className={rowClass}>
+                    {chips}
+                  </BrandChipRail>
+                ) : (
+                  <div className={rowClass}>{chips}</div>
+                );
+              })()
             ) : null}
 
             {nestedRows.map((row, rowIndex) => {

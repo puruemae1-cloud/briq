@@ -2726,8 +2726,8 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  /* pan-x pan-y: intersects body pan-y and still allows this scroller to move */
-  touch-action: pan-x pan-y;
+  /* JS BrandChipRail handles pan-x; keep pan-y so page scroll still works */
+  touch-action: pan-y;
 }
 .section__brands.section__brands--logos::-webkit-scrollbar {
   display: none;
@@ -3341,7 +3341,7 @@ body:has(.nav-drawer-toggle:checked) {
   gap: 0.5rem 0.55rem;
 }
 
-/* Brand logo strip — swipe on mobile; wrap on desktop so chips aren't clipped */
+/* Brand logo strip — swipe on mobile via BrandChipRail; wrap on desktop */
 .category-row.category-row--sub.category-row--brands {
   display: flex;
   flex-wrap: nowrap;
@@ -3357,7 +3357,7 @@ body:has(.nav-drawer-toggle:checked) {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
-  touch-action: pan-x pan-y;
+  touch-action: pan-y;
 }
 .category-row.category-row--brands::-webkit-scrollbar {
   display: none;
@@ -3385,8 +3385,7 @@ body:has(.nav-drawer-toggle:checked) {
   text-align: center;
   overflow: hidden;
   isolation: isolate;
-  /* Let horizontal drags scroll the parent rail instead of being eaten by the link */
-  touch-action: pan-x pan-y;
+  touch-action: pan-y;
 }
 .chip.chip--brand.is-active {
   background: #111;
@@ -7879,7 +7878,7 @@ body:has(.pdp-dock) .back-to-top {
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
-    touch-action: pan-x pan-y;
+    touch-action: pan-y;
   }
   .seo-brand-grid.seo-brand-grid--tiles::-webkit-scrollbar {
     display: none;
@@ -7891,11 +7890,11 @@ body:has(.pdp-dock) .back-to-top {
   }
   .seo-brand-card--tile a {
     width: 100%;
-    min-height: 3.456rem;
-    height: 3.456rem;
+    min-height: 2.765rem;
+    height: 2.765rem;
     margin-inline: 0;
-    padding: 0.45rem 0.75rem;
-    touch-action: pan-x pan-y;
+    padding: 0.35rem 0.75rem;
+    touch-action: pan-y;
   }
   .seo-brand-card--tile .seo-brand-card__ko {
     display: none;

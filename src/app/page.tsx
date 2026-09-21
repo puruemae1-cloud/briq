@@ -10,6 +10,7 @@ import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-ba
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
+import { BrandChipRail } from "@/components/BrandChipRail";
 import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
 export default async function HomePage() {
@@ -74,7 +75,7 @@ export default async function HomePage() {
                               isBrandChipNavId(l.id || ""),
                             );
                             return (
-                              <nav
+                              <BrandChipRail
                                 className={`section__brands${
                                   useLogos ? " section__brands--logos" : ""
                                 }`}
@@ -124,7 +125,7 @@ export default async function HomePage() {
                                     </span>
                                   );
                                 })}
-                              </nav>
+                              </BrandChipRail>
                             );
                           })()
                         ) : null}
