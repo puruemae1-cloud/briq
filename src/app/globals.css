@@ -3405,6 +3405,15 @@ body:has(.nav-drawer-toggle:checked) {
   white-space: nowrap;
 }
 
+@media (max-width: 899px) {
+  .chip.chip--brand {
+    /* Previous 3.456rem −20% on mobile */
+    min-height: 2.765rem;
+    height: 2.765rem;
+    padding: 0.35rem 1rem;
+  }
+}
+
 @media (min-width: 900px) {
   .category-row.category-row--sub.category-row--brands {
     display: flex;
