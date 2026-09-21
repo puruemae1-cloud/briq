@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
-import { brandLogoSrcForNavId } from "@/lib/brand-logos";
-import { brandTileSrcForNavId } from "@/lib/brand-tiles";
 
 const title = "명품 브랜드 | 샤넬·구찌·버버리·프라다·에르메스 — Briq";
 const description =
@@ -44,45 +42,16 @@ export default function BrandsIndexPage() {
 
       <div className="seo-guide__body">
         <ul className="seo-brand-grid seo-brand-grid--tiles">
-          {SEO_BRANDS.map((b) => {
-            const tile = brandTileSrcForNavId(b.slug);
-            const logo = brandLogoSrcForNavId(b.slug);
-            return (
-              <li key={b.slug} className="seo-brand-card seo-brand-card--tile">
-                <Link href={b.shopHref || `/brands/${b.slug}`}>
-                  {tile ? (
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        className="seo-brand-card__bg"
-                        src={tile}
-                        alt=""
-                        aria-hidden
-                        decoding="async"
-                        loading="lazy"
-                      />
-                      <span className="seo-brand-card__shade" aria-hidden />
-                    </>
-                  ) : null}
-                  <span className="seo-brand-card__front">
-                    {logo ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        className="seo-brand-card__logo"
-                        src={logo}
-                        alt=""
-                        aria-hidden
-                        decoding="async"
-                      />
-                    ) : (
-                      <span className="seo-brand-card__en">{b.nameEn}</span>
-                    )}
-                    <span className="seo-brand-card__ko">{b.nameKo}</span>
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
+          {SEO_BRANDS.map((b) => (
+            <li key={b.slug} className="seo-brand-card seo-brand-card--tile">
+              <Link href={b.shopHref || `/brands/${b.slug}`}>
+                <span className="seo-brand-card__front">
+                  <span className="seo-brand-card__en">{b.nameEn}</span>
+                  <span className="seo-brand-card__ko">{b.nameKo}</span>
+                </span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </article>

@@ -9,8 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
 import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
-import { BrandChipLink } from "@/components/BrandChip";
-import { brandLogoSrcForNavId } from "@/lib/brand-logos";
+import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
 import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
 export default async function HomePage() {
@@ -72,7 +71,7 @@ export default async function HomePage() {
                         {railLinks.length > 0 ? (
                           (() => {
                             const useLogos = railLinks.some((l) =>
-                              brandLogoSrcForNavId(l.id || ""),
+                              isBrandChipNavId(l.id || ""),
                             );
                             return (
                               <nav
@@ -82,10 +81,10 @@ export default async function HomePage() {
                                 aria-label={`${banner.titleKo} 브랜드`}
                               >
                                 {railLinks.map((link, idx) => {
-                                  const logo = brandLogoSrcForNavId(
+                                  const isBrand = isBrandChipNavId(
                                     link.id || "",
                                   );
-                                  if (useLogos && logo) {
+                                  if (useLogos && isBrand) {
                                     return (
                                       <BrandChipLink
                                         key={link.href}
@@ -100,9 +99,11 @@ export default async function HomePage() {
                                       <Link
                                         key={link.href}
                                         href={link.href}
-                                        className="chip chip--sub"
+                                        className="chip chip--brand"
                                       >
-                                        {link.label}
+                                        <span className="chip__brand-label">
+                                          {link.label}
+                                        </span>
                                       </Link>
                                     );
                                   }

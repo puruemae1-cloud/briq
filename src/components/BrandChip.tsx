@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { brandLogoSrcForNavId } from "@/lib/brand-logos";
-import { brandTileSrcForNavId } from "@/lib/brand-tiles";
+import { brandDisplayNameForNavId } from "@/lib/brand-logos";
+import { navBrandFamily } from "@/lib/brand-nav-order";
 
 type BrandChipProps = {
   href: string;
@@ -12,9 +12,13 @@ type BrandChipProps = {
   children?: ReactNode;
 };
 
+/** True when this nav id should render as a solid black brand tile. */
+export function isBrandChipNavId(navId: string): boolean {
+  return Boolean(navBrandFamily(navId));
+}
+
 /**
- * Luxury brand tile: symbolic photo + dark wash + white wordmark.
- * Falls back to solid black chip when no tile/logo is known.
+ * Luxury brand tile: solid black + uniform white wordmark text.
  */
 export function BrandChipContent({
   navId,
@@ -23,39 +27,9 @@ export function BrandChipContent({
   navId: string;
   label: string;
 }) {
-  const logo = brandLogoSrcForNavId(navId);
-  const tile = brandTileSrcForNavId(navId);
+  const text = brandDisplayNameForNavId(navId) || label;
 
-  return (
-    <>
-      {tile ? (
-        <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="chip__brand-bg"
-            src={tile}
-            alt=""
-            aria-hidden
-            decoding="async"
-            loading="lazy"
-          />
-          <span className="chip__brand-shade" aria-hidden />
-        </>
-      ) : null}
-      {logo ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          className="chip__brand-logo"
-          src={logo}
-          alt=""
-          aria-hidden
-          decoding="async"
-        />
-      ) : (
-        <span className="chip__brand-label">{label}</span>
-      )}
-    </>
-  );
+  return <span className="chip__brand-label">{text}</span>;
 }
 
 export function BrandChipLink({
@@ -65,22 +39,20 @@ export function BrandChipLink({
   active,
   className,
 }: BrandChipProps) {
-  const logo = brandLogoSrcForNavId(navId);
-  const tile = brandTileSrcForNavId(navId);
-  const hasBrand = Boolean(logo || tile);
+  const isBrand = isBrandChipNavId(navId);
 
   return (
     <Link
       href={href}
       className={
         className ||
-        (hasBrand
+        (isBrand
           ? `chip chip--brand${active ? " is-active" : ""}`
           : `chip chip--sub${active ? " is-active" : ""}`)
       }
       aria-label={label}
     >
-      {hasBrand ? <BrandChipContent navId={navId} label={label} /> : label}
+      {isBrand ? <BrandChipContent navId={navId} label={label} /> : label}
     </Link>
   );
 }

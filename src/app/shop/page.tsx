@@ -24,8 +24,7 @@ import {
 import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
-import { brandLogoSrcForNavId } from "@/lib/brand-logos";
-import { BrandChipContent } from "@/components/BrandChip";
+import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
@@ -307,14 +306,14 @@ export default async function ShopPage({ searchParams }: Props) {
               <div
                 className={`category-row category-row--sub${
                   sortNavChildrenByBrandOrder(current.children).some((c) =>
-                    brandLogoSrcForNavId(c.id),
+                    isBrandChipNavId(c.id),
                   )
                     ? " category-row--brands"
                     : ""
                 }`}
               >
                 {sortNavChildrenByBrandOrder(current.children).map((child) => {
-                  const logo = brandLogoSrcForNavId(child.id);
+                  const isBrand = isBrandChipNavId(child.id);
                   const active =
                     sub === child.id || pathIds.has(child.id);
                   return (
@@ -328,13 +327,13 @@ export default async function ShopPage({ searchParams }: Props) {
                       scroll={false}
                       replace
                       className={
-                        logo
+                        isBrand
                           ? `chip chip--brand${active ? " is-active" : ""}`
                           : `chip chip--sub ${active ? "is-active" : ""}`
                       }
                       aria-label={child.labelKo}
                     >
-                      {logo ? (
+                      {isBrand ? (
                         <BrandChipContent
                           navId={child.id}
                           label={child.labelKo}

@@ -1,9 +1,42 @@
 /**
- * Brand wordmark assets for shop nav chips (black tile + white logo).
+ * Brand wordmark assets + display names for shop nav chips
+ * (solid black tile + uniform white text).
  * Paths live under /public/brands — not the product-images CDN tag.
  */
 
 import { navBrandFamily } from "@/lib/brand-nav-order";
+
+/** Uniform English wordmark shown on brand chips (same typeface via CSS). */
+const FAMILY_DISPLAY: Record<string, string> = {
+  "christopher-ward": "Christopher Ward",
+  chanel: "Chanel",
+  gucci: "Gucci",
+  "louis-vuitton": "Louis Vuitton",
+  dior: "Dior",
+  burberry: "Burberry",
+  "paul-smith": "Paul Smith",
+  arcteryx: "Arc'teryx",
+  "london-undercover": "London Undercover",
+  belstaff: "Belstaff",
+  "bottega-veneta": "Bottega Veneta",
+  celine: "Celine",
+  "saint-laurent": "Saint Laurent",
+  "vivienne-westwood": "Vivienne Westwood",
+  mulberry: "Mulberry",
+  "galvin-green": "Galvin Green",
+  prada: "Prada",
+  "all-saints": "AllSaints",
+  hermes: "Hermès",
+};
+
+/** Resolve a nav id to the uniform English brand label used on chips. */
+export function brandDisplayNameForNavId(id: string): string | null {
+  const family = navBrandFamily(id);
+  if (family && FAMILY_DISPLAY[family]) return FAMILY_DISPLAY[family];
+  const x = id.toLowerCase();
+  if (x === "hermes" || x.startsWith("hermes-")) return FAMILY_DISPLAY.hermes;
+  return FAMILY_DISPLAY[x] ?? null;
+}
 
 const FAMILY_LOGO: Record<string, string> = {
   "christopher-ward": "/brands/christopher-ward.svg",
