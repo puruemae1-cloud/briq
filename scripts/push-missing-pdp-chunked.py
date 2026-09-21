@@ -65,10 +65,23 @@ def sync_tag_to_remote() -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dirs", nargs="+", required=True)
-    ap.add_argument("--chunk", type=int, default=12)
+    ap.add_argument(
+        "--chunk",
+        type=int,
+        default=2,
+        help="SKUs per force-push wave (default 2 — larger packs often hang the product-images tag)",
+    )
     ap.add_argument("--max-waves", type=int, default=80)
     ap.add_argument("--skip-whiten", action="store_true", default=True)
     args = ap.parse_args()
+
+    # Bottega trees are large JPEGs — prefer even smaller waves unless overridden.
+    if args.chunk >= 4 and any(d.startswith("bv") for d in args.dirs):
+        print(
+            f"NOTE: lowering chunk {args.chunk} → 2 for BV (pack-objects stability)",
+            flush=True,
+        )
+        args.chunk = 2
 
     env = os.environ.copy()
     env["SKIP_TAG_FETCH"] = "1"

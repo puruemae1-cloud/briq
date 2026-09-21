@@ -42,11 +42,18 @@ jobs:
           chmod +x scripts/run-bv-weekly-sync.sh
           scripts/run-bv-weekly-sync.sh
 
+      # Selective CDN catch-up in small waves — full bv-pdp force-push hangs /
+      # disconnects on this giant tag. Keep chunks at 2 SKUs: packs of 4+ often
+      # die with pack-objects SIGBUS / hangup on this machine & GHA runners.
       - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs bv-pdp --skip-whiten
+        run: |
+          python3 scripts/push-missing-pdp-chunked.py --dirs bv-pdp --chunk 2 --max-waves 1000
 
       - name: Verify catalogue images are on the product-images tag
         run: python3 scripts/verify-product-images.py --brand bv --remote --skip-local --all-images
+
+      - name: Guard — fail if any local bv-pdp SKU is still missing on the tag
+        run: python3 scripts/list-missing-pdp-on-cdn.py --dirs bv-pdp
 
       - name: Apply Briq NEW badge TTL (7 days)
         run: python3 scripts/apply-new-badge-ttl.py --brand bv
@@ -57,6 +64,7 @@ jobs:
           scripts/ci-commit-push.sh \
             "chore: weekly Bottega Veneta catalog sync" \
             src/data/bv \
+            src/data/product-images-manifest.json \
             scripts/run-bv-weekly-sync.sh \
             scripts/build-bv-catalog.py \
             scripts/scrape-bv-hub.py \
@@ -64,6 +72,8 @@ jobs:
             scripts/bv_config.py \
             scripts/weekly-bv-stock-sync.py \
             scripts/push-product-images-tag.py \
+            scripts/push-missing-pdp-chunked.py \
+            scripts/list-missing-pdp-on-cdn.py \
             scripts/restore-product-images-tag.py \
             scripts/verify-product-images.py \
             scripts/ci-commit-push.sh
