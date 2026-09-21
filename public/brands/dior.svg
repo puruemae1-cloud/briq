@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" role="img" aria-label="Dior">
-  <text x="0" y="30" font-family="Times New Roman, Times, Georgia, serif" font-size="32" letter-spacing="0.28em" fill="#f7f4ec">DIOR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" role="img" aria-label="Dior">
+  <!-- Per-letter anchors avoid letter-spacing + text-anchor middle browser skew -->
+  <text
+    y="29"
+    font-family="Times New Roman, Times, Georgia, serif"
+    font-size="32"
+    fill="#f7f4ec"
+  >
+    <tspan x="41" text-anchor="middle">D</tspan>
+    <tspan x="80" text-anchor="middle">I</tspan>
+    <tspan x="120" text-anchor="middle">O</tspan>
+    <tspan x="159" text-anchor="middle">R</tspan>
+  </text>
 </svg>
