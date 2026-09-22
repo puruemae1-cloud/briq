@@ -5,30 +5,45 @@ on:
     - cron: "30 13 * * 5"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-vw-stock-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install deps
+        run: pip install -r scripts/requirements-images.txt || true
+      - name: Restore vw-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs vw-pdp || true
       - name: Run VW weekly sync
         run: |
           chmod +x scripts/run-vw-weekly-sync.sh
           scripts/run-vw-weekly-sync.sh
-
+      - name: Publish vw-pdp to product-images + verify
+        run: |
+          chmod +x scripts/ci-publish-pdp-cdn.sh
+          scripts/ci-publish-pdp-cdn.sh vw-pdp --brand vw --chunk 6 --max-waves 120
       - name: Apply Briq NEW badge TTL (7 days)
         run: python3 scripts/apply-new-badge-ttl.py --brand vw
       - name: Commit catalog updates
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/vw || true
-          if git diff --staged --quiet; then
-            echo "No VW catalog changes"
-          else
-            git commit -m "chore(vw): weekly catalog sync"
-            git push
-          fi
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore(vw): weekly catalog sync" \
+            src/data/vw \
+            src/data/product-images-manifest.json \
+            scripts/run-vw-weekly-sync.sh \
+            scripts/ci-publish-pdp-cdn.sh

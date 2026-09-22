@@ -5,32 +5,47 @@ on:
     - cron: "0 14 * * 5"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-ys-stock-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install curl_cffi
-        run: pip install curl_cffi
+      - name: Install deps
+        run: |
+          pip install curl_cffi
+          pip install -r scripts/requirements-images.txt || true
+      - name: Restore ys-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs ys-pdp
       - name: Run Saint Laurent weekly sync
         run: |
-          chmod +x scripts/run-ys-weekly-sync.sh
+          chmod +x scripts/run-ys-weekly-sync.sh scripts/ci-publish-pdp-cdn.sh
           scripts/run-ys-weekly-sync.sh
-
       - name: Apply Briq NEW badge TTL (7 days)
         run: python3 scripts/apply-new-badge-ttl.py --brand ys
       - name: Commit catalog updates
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/ys || true
-          if git diff --staged --quiet; then
-            echo "No YS catalog changes"
-          else
-            git commit -m "chore(ys): weekly catalog sync"
-            git push
-          fi
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh \
+            "chore(ys): weekly catalog sync" \
+            src/data/ys \
+            src/data/product-images-manifest.json \
+            scripts/run-ys-weekly-sync.sh \
+            scripts/repair-ys-missing-images.py \
+            scripts/ci-publish-pdp-cdn.sh \
+            scripts/push-missing-pdp-chunked.py \
+            scripts/list-missing-pdp-on-cdn.py \
+            scripts/verify-product-images.py

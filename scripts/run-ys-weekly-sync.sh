@@ -52,12 +52,10 @@ if not ok:
     sys.exit(1)
 PY
 
-python3 scripts/list-missing-pdp-on-cdn.py --dirs ys-pdp --fetch --write tmp/ys-missing-on-cdn.txt || true
-if [[ -s tmp/ys-missing-on-cdn.txt ]]; then
-  PYTHONUNBUFFERED=1 python3 scripts/push-product-images-tag.py \
-    --dirs ys-pdp --skip-whiten --merge --skip-purge \
-    --only-file tmp/ys-missing-on-cdn.txt || true
-fi
+# Re-download any catalog photos missing from disk/CDN, then publish.
+python3 scripts/repair-ys-missing-images.py || true
+chmod +x scripts/ci-publish-pdp-cdn.sh
+scripts/ci-publish-pdp-cdn.sh ys-pdp --brand ys --chunk 4 --max-waves 200
 
 python3 scripts/refresh-homepage-rail-picks.py --fail || true
 echo "OK YS weekly sync"

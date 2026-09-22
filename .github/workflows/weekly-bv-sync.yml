@@ -42,36 +42,10 @@ jobs:
           chmod +x scripts/run-bv-weekly-sync.sh
           scripts/run-bv-weekly-sync.sh
 
-      # Selective CDN catch-up in small waves — full bv-pdp force-push hangs /
-      # disconnects on this giant tag. Keep chunks at 2 SKUs: packs of 4+ often
-      # die with pack-objects SIGBUS / hangup on this machine & GHA runners.
-      # Outer retry: if the chunked runner exits early with leftovers, resume.
       - name: Push PDP images to product-images tag
         run: |
-          set -u
-          for attempt in 1 2 3 4 5 6 7 8; do
-            echo "=== BV CDN catch-up attempt $attempt ==="
-            tip=$(git ls-remote origin refs/tags/product-images | awk '{print $1}')
-            if [ -n "${tip:-}" ]; then
-              git update-ref refs/tags/product-images "$tip" || true
-            fi
-            python3 scripts/list-missing-pdp-on-cdn.py --dirs bv-pdp --write /tmp/bv-missing-on-cdn.txt || true
-            left=$(wc -l < /tmp/bv-missing-on-cdn.txt | tr -d ' ')
-            echo "remaining=$left"
-            if [ "${left:-1}" = "0" ]; then
-              echo "OK — no missing bv-pdp on product-images"
-              exit 0
-            fi
-            python3 scripts/push-missing-pdp-chunked.py --dirs bv-pdp --chunk 2 --max-waves 1000 || true
-            sleep 5
-          done
-          python3 scripts/list-missing-pdp-on-cdn.py --dirs bv-pdp
-
-      - name: Verify catalogue images are on the product-images tag
-        run: python3 scripts/verify-product-images.py --brand bv --remote --skip-local --all-images
-
-      - name: Guard — fail if any local bv-pdp SKU is still missing on the tag
-        run: python3 scripts/list-missing-pdp-on-cdn.py --dirs bv-pdp
+          chmod +x scripts/ci-publish-pdp-cdn.sh
+          scripts/ci-publish-pdp-cdn.sh bv-pdp --brand bv --chunk 2 --max-waves 1000
 
       - name: Apply Briq NEW badge TTL (7 days)
         run: python3 scripts/apply-new-badge-ttl.py --brand bv
@@ -89,6 +63,7 @@ jobs:
             scripts/bv_common.py \
             scripts/bv_config.py \
             scripts/weekly-bv-stock-sync.py \
+            scripts/ci-publish-pdp-cdn.sh \
             scripts/push-product-images-tag.py \
             scripts/push-missing-pdp-chunked.py \
             scripts/list-missing-pdp-on-cdn.py \

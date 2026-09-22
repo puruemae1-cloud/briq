@@ -46,10 +46,8 @@ jobs:
       # disconnects on this giant tag. Chunked push is the reliable path.
       - name: Push PDP images to product-images tag
         run: |
-          python3 scripts/push-missing-pdp-chunked.py --dirs al-pdp --chunk 12 --max-waves 80
-
-      - name: Verify catalogue images are on the product-images tag
-        run: python3 scripts/verify-product-images.py --brand al --remote --skip-local --all-images
+          chmod +x scripts/ci-publish-pdp-cdn.sh
+          scripts/ci-publish-pdp-cdn.sh al-pdp --brand al --chunk 12 --max-waves 80
 
 
       - name: Apply Briq NEW badge TTL (7 days)
