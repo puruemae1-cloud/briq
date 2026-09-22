@@ -1,5 +1,6 @@
-import type {  Product  } from "@/data/product-types";
+import type { Product } from "@/data/product-types";
 import { cwCatalogProducts } from "@/data/cw/cw-catalog";
+import { cwStrapProducts } from "@/data/cw/cw-straps-catalog";
 import {
   CW_BRACELET_RESIZE_FEE,
   CW_BRACELET_SIZES_CM,
@@ -100,26 +101,29 @@ function galleryFor(slug: string) {
   );
 }
 
-/** Full CW catalogue with Pic'n'Mix enrichment. */
-export const cwProducts: Product[] = cwCatalogProducts.map((product) => {
-  const sku = product.sku;
-  if (!sku) return product;
-  const mix = PICNMIX_BY_SKU[sku];
-  if (!mix) return product;
-  const images = galleryFor(mix.slug);
-  return {
-    ...product,
-    name: `The Twelve (Ti) Pic'n'Mix — ${mix.nameKo}`,
-    nameKo: `트웰브 (Ti) 픽앤믹스 · ${mix.nameKo}`,
-    descriptionKo: `크리스토퍼와드 트웰브(Ti) 픽앤믹스 ${mix.nameKo}. COSC 인증 Sellita SW300-1 오토매틱, 36mm 그레이드 2 티타늄 케이스, 슈가 크리스털 다이얼. 컬러당 한정 50피스. ${mix.blurbKo}`,
-    image: images[0],
-    images,
-    accent: mix.accent,
-    badge: "Limited",
-    braceletResize: {
-      feeKrw: CW_BRACELET_RESIZE_FEE,
-      sizesCm: [...CW_BRACELET_SIZES_CM],
-    },
-    storySections: STORY.map((s) => ({ ...s })),
-  };
-});
+/** Full CW catalogue with Pic'n'Mix enrichment + watch straps. */
+export const cwProducts: Product[] = [
+  ...cwCatalogProducts.map((product) => {
+    const sku = product.sku;
+    if (!sku) return product;
+    const mix = PICNMIX_BY_SKU[sku];
+    if (!mix) return product;
+    const images = galleryFor(mix.slug);
+    return {
+      ...product,
+      name: `The Twelve (Ti) Pic'n'Mix — ${mix.nameKo}`,
+      nameKo: `트웰브 (Ti) 픽앤믹스 · ${mix.nameKo}`,
+      descriptionKo: `크리스토퍼와드 트웰브(Ti) 픽앤믹스 ${mix.nameKo}. COSC 인증 Sellita SW300-1 오토매틱, 36mm 그레이드 2 티타늄 케이스, 슈가 크리스털 다이얼. 컬러당 한정 50피스. ${mix.blurbKo}`,
+      image: images[0],
+      images,
+      accent: mix.accent,
+      badge: "Limited",
+      braceletResize: {
+        feeKrw: CW_BRACELET_RESIZE_FEE,
+        sizesCm: [...CW_BRACELET_SIZES_CM],
+      },
+      storySections: STORY.map((s) => ({ ...s })),
+    };
+  }),
+  ...cwStrapProducts,
+];

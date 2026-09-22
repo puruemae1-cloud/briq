@@ -42,7 +42,8 @@ PHRASES = [
 WORDS = [
     ("Trident", "트라이던트"),
     ("Bronze", "브론즈"),
-    ("Sealander", "실랜더"),
+    ("Sealander", "시랜더"),
+    ("Biscay", "비스케이"),
     ("Twelve", "트웰브"),
     ("Moonphase", "문페이즈"),
     ("Aquitaine", "아키텐"),
@@ -63,13 +64,14 @@ WORDS = [
     ("Limited", "리미티드"),
     ("Edition", "에디션"),
     ("Steel", "스틸"),
+    ("Integrated", "통합"),
     ("Bracelet", "브레이슬릿"),
     ("Leather", "가죽"),
-    ("Rubber", "러버"),
+    ("Rubber", "고무"),
     ("Strap", "스트랩"),
     ("Hybrid", "하이브리드"),
     ("Aquaflex", "아쿠아플렉스"),
-    ("Consort", "콘소트"),
+    ("Consort", "콘솔트"),
     ("Bader", "베이더"),
     ("Vintage", "빈티지"),
     ("Oak", "오크"),
@@ -456,7 +458,9 @@ _TX_CACHE = json.loads(_TX_CACHE_PATH.read_text()) if _TX_CACHE_PATH.exists() el
 def polish_ko(out: str) -> str:
     out = out.replace("팔찌", "브레이슬릿").replace("검은 그림자", "블랙 섀도우")
     out = out.replace("사파이어 가장자리", "사파이어 엣지").replace("청동", "브론즈")
-    out = out.replace("삼지창", "트라이던트").replace("물개", "실랜더")
+    out = out.replace("삼지창", "트라이던트").replace("물개", "시랜더")
+    out = out.replace("실랜더", "시랜더").replace("콘소트", "콘솔트")
+    out = out.replace("러버", "고무")
     out = out.replace("크리스토퍼 워드", "크리스토퍼와드")
     out = out.replace("로꼬", "Loco").replace("로코", "Loco")
     out = out.replace("크리스토퍼와드(Christopher Ward)", "크리스토퍼와드")

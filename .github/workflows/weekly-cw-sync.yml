@@ -37,6 +37,7 @@ jobs:
 
       - name: Sync CW categories + stock
         run: python3 scripts/weekly-cw-stock-sync.py
+        # Includes watch-straps PLP → cw-straps (SRP×2100) via sync-cw-straps.py
 
       - name: Push PDP + editorial images to product-images tag
         run: python3 scripts/push-product-images-tag.py --dirs cw-pdp cw-editorial
@@ -51,10 +52,11 @@ jobs:
         run: |
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh \
-            "chore: weekly Christopher Ward stock + clearance sync" \
+            "chore: weekly Christopher Ward stock + clearance + straps sync" \
             src/data/cw \
             src/data/product-images-manifest.json \
             scripts/weekly-cw-stock-sync.py \
+            scripts/sync-cw-straps.py \
             scripts/enrich-cw-missing-editorial-and-copy.py \
             scripts/rescrape-cw-editorial-full.py \
             scripts/rebuild-cw-catalog.py \

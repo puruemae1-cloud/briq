@@ -32,6 +32,7 @@ export type SubcategoryId =
   | "cw-twelve"
   | "cw-trident"
   | "cw-moonphase"
+  | "cw-straps"
   | "gg-new-men"
   | "gg-new-women"
   | "gg-bestsellers-men"
@@ -2770,6 +2771,7 @@ export const CW_COLLECTION_IDS: SubcategoryId[] = [
   "cw-twelve",
   "cw-trident",
   "cw-moonphase",
+  "cw-straps",
 ];
 
 export const GG_NEW_ARRIVAL_IDS: SubcategoryId[] = [
@@ -4883,6 +4885,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "gc-watches-women": ["gc-watches-women"],
   "gc-watches-men": ["gc-watches-men"],
   "christopher-ward": [...CW_COLLECTION_IDS],
+  "cw-straps": ["cw-straps"],
   golf: [
     "golf",
     "galvin-green",
@@ -6672,6 +6675,11 @@ export const navCategories: NavCategory[] = [
             id: "cw-moonphase",
             labelKo: "Moonphase",
             href: "/shop?category=watches&sub=cw-moonphase",
+          },
+          {
+            id: "cw-straps",
+            labelKo: "스트랩",
+            href: "/shop?category=watches&sub=cw-straps",
           },
         ],
       },
