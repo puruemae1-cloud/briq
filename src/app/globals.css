@@ -81,6 +81,22 @@ a {
   background: #fff;
 }
 
+.collection-100-pending {
+  min-height: 40vh;
+  width: 100%;
+  background: #fff;
+}
+
+html[data-home-navigating] {
+  cursor: progress;
+}
+
+html[data-home-navigating] .shell__main {
+  opacity: 0.45;
+  transition: opacity 0.1s ease;
+  pointer-events: none;
+}
+
 .shell:has(.route-loading) .site-footer {
   display: none;
 }

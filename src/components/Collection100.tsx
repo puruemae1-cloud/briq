@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
 import { CollectionBestsellerTier } from "@/components/CollectionReveal";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
-import { getCollection100 } from "@/data/products";
+import { getCollection100, toProductCardProduct } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { curateCollectionEdit } from "@/lib/collection-edit";
 
@@ -13,6 +13,8 @@ export function Collection100() {
   const catalogue = getCollection100();
   // Server-side: 신상품 / 하이엔드 always reflect newest registeredAt in HTML.
   const curated = curateCollectionEdit(catalogue);
+  const signature = curated.signature.map(toProductCardProduct);
+  const newItems = curated.newItems.map(toProductCardProduct);
 
   return (
     <section className="collection-100" id="collection-100" aria-label="Briq 100 컬렉션">
@@ -38,9 +40,9 @@ export function Collection100() {
       </div>
 
       <div className="section collection-100__body">
-        <CollectionTierBlock tier="signature" products={curated.signature} />
+        <CollectionTierBlock tier="signature" products={signature} />
         <CollectionBestsellerTier />
-        <CollectionTierBlock tier="new" products={curated.newItems} />
+        <CollectionTierBlock tier="new" products={newItems} />
 
         <div className="collection-100__sentinel">
           <Link

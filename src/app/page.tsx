@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { BestItems } from "@/components/BestItems";
 import { BannerImage } from "@/components/BannerImage";
 import {
@@ -7,7 +8,10 @@ import {
 import { LookBannerBlock } from "@/components/LookBanner";
 import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
-import { getProductsByCategory } from "@/data/products";
+import {
+  getHomepageCategoryProducts,
+  toProductCardProduct,
+} from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
@@ -16,20 +20,27 @@ import {
   HOMEPAGE_WATCHES_COLLECTION,
 } from "@/lib/homepage-rails";
 
+/** Stream below-the-fold 100 Collection after hero + lookbook rails. */
+async function DeferredCollection100() {
+  await Promise.resolve();
+  return <Collection100 />;
+}
+
 export default async function HomePage() {
   // Fixed asset — do not pickRotating / weekly-refresh this slot.
   const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
   // Watches rail is locked to Christopher Ward New Releases on every device.
+  // Skip YS merge here — homepage soft-nav was waiting on the 14MB catalogue.
   const categoryRails = homeLookBanners
     .filter((b) => b.categoryId)
     .map((b) => ({
       railId: b.id,
       products:
         b.id === "watches"
-          ? getProductsByCategory("watches", HOMEPAGE_WATCHES_COLLECTION)
-          : getProductsByCategory(b.categoryId),
+          ? getHomepageCategoryProducts("watches", HOMEPAGE_WATCHES_COLLECTION)
+          : getHomepageCategoryProducts(b.categoryId),
     }));
   const railProducts = assignHomepageCategoryRails(categoryRails, 4);
 
@@ -141,7 +152,10 @@ export default async function HomePage() {
                     </div>
                     <div className="product-grid product-grid--lookbook">
                       {products.map((p) => (
-                        <ProductCard key={p.id} product={p} />
+                        <ProductCard
+                          key={p.id}
+                          product={toProductCardProduct(p)}
+                        />
                       ))}
                     </div>
                   </div>
@@ -200,7 +214,9 @@ export default async function HomePage() {
 
       <BestItems />
 
-      <Collection100 />
+      <Suspense fallback={<div className="collection-100-pending" aria-hidden />}>
+        <DeferredCollection100 />
+      </Suspense>
     </>
   );
 }

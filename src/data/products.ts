@@ -570,10 +570,14 @@ export function expandLuColourwayCards(
   return out;
 }
 
-export function getProductsByCategory(category?: string, sub?: string) {
-  let list: Product[] = shouldIncludeYsCatalog(category, sub)
-    ? withYsCatalog(products)
-    : products;
+export function getProductsByCategory(
+  category?: string,
+  sub?: string,
+  opts?: { includeYs?: boolean },
+) {
+  const includeYs =
+    opts?.includeYs !== false && shouldIncludeYsCatalog(category, sub);
+  let list: Product[] = includeYs ? withYsCatalog(products) : products;
   const expanded = expandSubcategoryFilter(sub);
   // Gift PLPs include apparel/bags/shoes tagged with gifts*; skip category gate.
   const isPsGifts =
@@ -677,6 +681,51 @@ export function getProductsByCategory(category?: string, sub?: string) {
     list = expandMbColourwayCards(list, expanded);
   }
   return list;
+}
+
+/** Homepage rails — never pull the Saint Laurent catalogue (soft-nav TTFB). */
+export function getHomepageCategoryProducts(category?: string, sub?: string) {
+  return getProductsByCategory(category, sub, { includeYs: false });
+}
+
+/** Strip PDP-only fields so homepage RSC / HTML stays small. */
+export function toProductCardProduct(product: Product): Product {
+  return {
+    id: product.id,
+    name: product.name,
+    nameKo: product.nameKo,
+    brand: product.brand,
+    price: product.price,
+    compareAtPrice: product.compareAtPrice,
+    category: product.category,
+    subcategory: product.subcategory,
+    tags: product.tags,
+    descriptionKo: product.descriptionKo,
+    image: product.image,
+    images: product.images?.slice(0, 2),
+    hoverImage: product.hoverImage,
+    accent: product.accent,
+    badge: product.badge,
+    inStock: product.inStock,
+    registeredAt: product.registeredAt,
+    updatedAt: product.updatedAt,
+    shopColorKey: product.shopColorKey,
+    cwCollections: product.cwCollections,
+    ggCollections: product.ggCollections,
+    variants: product.variants?.map((v) => ({
+      id: v.id,
+      name: v.name,
+      nameKo: v.nameKo,
+      sku: v.sku,
+      gbpPrice: v.gbpPrice,
+      price: v.price,
+      compareAtPrice: v.compareAtPrice,
+      image: v.image,
+      sourceUrl: v.sourceUrl,
+      inStock: v.inStock,
+      colorKey: v.colorKey,
+    })),
+  };
 }
 
 /** @deprecated use navCategories from categories.ts */

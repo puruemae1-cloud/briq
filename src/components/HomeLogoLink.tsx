@@ -4,6 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
+/**
+ * Header Briq mark → home.
+ *
+ * Soft RSC navigation to `/` waits on the heavy homepage catalogue and can sit
+ * on the current page for a long time with no chrome. Leaving other routes uses
+ * a full document navigation so the browser moves immediately.
+ */
 export function HomeLogoLink({
   children,
   className,
@@ -22,9 +29,14 @@ export function HomeLogoLink({
       className={className}
       aria-label={ariaLabel}
       onClick={(e) => {
-        if (pathname !== "/") return;
+        if (pathname === "/") {
+          e.preventDefault();
+          window.scrollTo(0, 0);
+          return;
+        }
         e.preventDefault();
-        window.scrollTo(0, 0);
+        document.documentElement.dataset.homeNavigating = "1";
+        window.location.assign("/");
       }}
     >
       {children}
