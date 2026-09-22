@@ -16,6 +16,20 @@ const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
   luxury: new Set(["arcteryx", "belstaff"]),
 };
 
+/** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
+export const HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases";
+export const HOMEPAGE_WATCHES_BRAND = "christopher-ward";
+
+/** True when a product belongs on the homepage watches lookbook rail. */
+export function isHomepageWatchesRailProduct(product: Product): boolean {
+  if (homepageBrandKey(product) !== HOMEPAGE_WATCHES_BRAND) return false;
+  if (product.subcategory === HOMEPAGE_WATCHES_COLLECTION) return true;
+  if (product.cwCollections?.some((c) => c === HOMEPAGE_WATCHES_COLLECTION)) {
+    return true;
+  }
+  return (product.tags || []).includes(HOMEPAGE_WATCHES_COLLECTION);
+}
+
 const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "axa-", brand: "arcteryx" },
   { prefix: "axg-", brand: "arcteryx" },
@@ -104,6 +118,9 @@ export function getHomepageRailProductsExclusive(
 /**
  * Assign products to every category rail in order. Brands claimed by an
  * earlier rail are excluded from later rails.
+ *
+ * Watches is special-cased: always Christopher Ward New Releases (newest
+ * in-stock), independent of other brands' `registeredAt` stamps.
  */
 export function assignHomepageCategoryRails(
   rails: HomepageRailSpec[],
@@ -118,10 +135,20 @@ export function assignHomepageCategoryRails(
     if (blocked) {
       for (const brand of blocked) exclude.add(brand);
     }
+    const pool =
+      rail.railId === "watches"
+        ? rail.products.filter(isHomepageWatchesRailProduct)
+        : rail.products;
+    // Watches is CW-only — do not let exclusivity empty the rail if CW somehow
+    // appeared earlier (it shouldn't; CW is watches-category only).
+    const railExclude =
+      rail.railId === "watches"
+        ? new Set([...exclude].filter((b) => b !== HOMEPAGE_WATCHES_BRAND))
+        : exclude;
     const picked = getHomepageRailProductsExclusive(
-      rail.products,
+      pool,
       limit,
-      exclude,
+      railExclude,
     );
     result[rail.railId] = picked;
     for (const product of picked) {

@@ -54,9 +54,11 @@ jobs:
           scripts/ci-commit-push.sh \
             "chore: weekly Christopher Ward stock + clearance + straps sync" \
             src/data/cw \
+            src/data/homepage-rail-picks.json \
             src/data/product-images-manifest.json \
             scripts/weekly-cw-stock-sync.py \
             scripts/sync-cw-straps.py \
+            scripts/refresh-homepage-rail-picks.py \
             scripts/enrich-cw-missing-editorial-and-copy.py \
             scripts/rescrape-cw-editorial-full.py \
             scripts/rebuild-cw-catalog.py \

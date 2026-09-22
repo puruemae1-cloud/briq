@@ -575,6 +575,12 @@ def main() -> int:
     print("7) Syncing CW watch straps (SRP×2100)…")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/sync-cw-straps.py")], cwd=str(ROOT))
 
+    print("8) Refreshing homepage rail picks (watches → CW New Releases)…")
+    subprocess.check_call(
+        [sys.executable, str(ROOT / "scripts/refresh-homepage-rail-picks.py")],
+        cwd=str(ROOT),
+    )
+
     check_new_korean("cw", since)
 
     print("\n=== Weekly CW sync summary ===")

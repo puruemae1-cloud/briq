@@ -11,18 +11,25 @@ import { getProductsByCategory } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
-import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
+import {
+  assignHomepageCategoryRails,
+  HOMEPAGE_WATCHES_COLLECTION,
+} from "@/lib/homepage-rails";
 
 export default async function HomePage() {
   // Fixed asset — do not pickRotating / weekly-refresh this slot.
   const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
+  // Watches rail is locked to Christopher Ward New Releases on every device.
   const categoryRails = homeLookBanners
     .filter((b) => b.categoryId)
     .map((b) => ({
       railId: b.id,
-      products: getProductsByCategory(b.categoryId),
+      products:
+        b.id === "watches"
+          ? getProductsByCategory("watches", HOMEPAGE_WATCHES_COLLECTION)
+          : getProductsByCategory(b.categoryId),
     }));
   const railProducts = assignHomepageCategoryRails(categoryRails, 4);
 

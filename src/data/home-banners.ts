@@ -161,7 +161,8 @@ export const homeLookBanners: LookBanner[] = [
     title: "Time, Refined",
     titleKo: "시계",
     support: "초침이 흐르는 순간까지, 시간에 품격을 더하는 셀렉트 워치.",
-    href: "/shop?category=watches",
+    // Product rail is locked to CW New Releases (see homepage-rails.ts).
+    href: "/shop?category=watches&sub=cw-new-releases",
     cta: "시계 쇼핑",
     // Locked Christopher Ward C12 Loco open-balance creative — not rotated weekly.
     images: ["/banners/watches-bel-canto.jpg"],

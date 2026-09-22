@@ -4,6 +4,8 @@
 Mirrors ``src/lib/homepage-rails.ts`` so weekly syncs keep the same exclusivity
 contract: if Arc'teryx fills 시그니처, it must not also fill 슈즈 / 악세서리 등.
 
+Watches rail is locked to Christopher Ward New Releases (``cw-new-releases``).
+
   python3 scripts/refresh-homepage-rail-picks.py
   python3 scripts/refresh-homepage-rail-picks.py --fail
 
@@ -34,6 +36,10 @@ RAIL_ORDER = [
 RAIL_BLOCKED_BRANDS = {
     "luxury": {"arcteryx", "belstaff"},
 }
+
+# Homepage watches rail is locked to Christopher Ward New Releases (mirrors homepage-rails.ts).
+HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases"
+HOMEPAGE_WATCHES_BRAND = "christopher-ward"
 
 # Homepage-only swimwear exclusion (shop/search unchanged). Mirrors
 # src/lib/homepage-product-filters.ts
@@ -207,6 +213,10 @@ def load_products() -> list[dict]:
             sub_m = re.search(r'subcategory:\s*"([^"]*)"', part)
             reg_m = re.search(r'registeredAt:\s*"([^"]+)"', part)
             stock_m = re.search(r"inStock:\s*(true|false)", part)
+            tags_m = re.search(r"tags:\s*\[([^\]]*)\]", part)
+            cols_m = re.search(r"cwCollections:\s*\[([^\]]*)\]", part)
+            tag_vals = re.findall(r'"([^"]+)"', tags_m.group(1)) if tags_m else []
+            col_vals = re.findall(r'"([^"]+)"', cols_m.group(1)) if cols_m else []
             row = {
                 "id": pid,
                 "category": cat_m.group(1) if cat_m else "",
@@ -216,10 +226,25 @@ def load_products() -> list[dict]:
                 "subcategory": sub_m.group(1) if sub_m else "",
                 "registeredAt": reg_m.group(1) if reg_m else "",
                 "inStock": (stock_m.group(1) == "true") if stock_m else True,
+                "tags": tag_vals,
+                "cwCollections": col_vals,
             }
             seen.add(pid)
             rows.append(row)
     return rows
+
+
+def is_homepage_watches_rail_product(row: dict) -> bool:
+    """Mirror ``isHomepageWatchesRailProduct`` in homepage-rails.ts."""
+    if brand_key(row) != HOMEPAGE_WATCHES_BRAND:
+        return False
+    if str(row.get("subcategory") or "") == HOMEPAGE_WATCHES_COLLECTION:
+        return True
+    tags = row.get("tags") or []
+    if isinstance(tags, list) and HOMEPAGE_WATCHES_COLLECTION in tags:
+        return True
+    cols = row.get("cwCollections") or []
+    return isinstance(cols, list) and HOMEPAGE_WATCHES_COLLECTION in cols
 
 
 def assign(products: list[dict], limit: int = 4) -> dict[str, list[dict]]:
@@ -232,16 +257,22 @@ def assign(products: list[dict], limit: int = 4) -> dict[str, list[dict]]:
     out: dict[str, list[dict]] = {}
     for rail_id, category in RAIL_ORDER:
         pool = by_cat.get(category) or []
+        if rail_id == "watches":
+            pool = [p for p in pool if is_homepage_watches_rail_product(p)]
         stocked = [p for p in pool if in_stock(p)]
         use = stocked if len(stocked) >= limit else pool
         use = sorted(use, key=registered_ms, reverse=True)
-        blocked = RAIL_BLOCKED_BRANDS.get(rail_id) or set()
+        blocked = set(RAIL_BLOCKED_BRANDS.get(rail_id) or set())
+        # Watches is CW-only — never empty the rail via exclusivity.
+        exclude = set(used) | blocked
+        if rail_id == "watches":
+            exclude.discard(HOMEPAGE_WATCHES_BRAND)
         picked: list[dict] = []
         for row in use:
             if is_homepage_swimwear(row):
                 continue
             key = brand_key(row)
-            if key in used or key in blocked:
+            if key in exclude:
                 continue
             picked.append(row)
             if len(picked) >= limit:

@@ -1,27 +1,41 @@
 {
-  "generatedAt": "2026-09-18T06:00:17Z",
+  "generatedAt": "2026-09-22T14:07:54Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "al-w075dd-4103",
-        "al-w253dc-5",
-        "al-w044le-5",
-        "al-w029tf-5"
+        "bv-a003brv6zf02201",
+        "bv-871198v6or01010",
+        "bv-875219v6oe01010",
+        "bv-871316v6ko02549"
       ],
       "brands": [
-        "all-saints",
-        "all-saints",
-        "all-saints",
-        "all-saints"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
       "productIds": [
-        "vw-vv240pkgd-xxx-ze-rose-gold",
-        "vw-vv328grgdw-xxx-gold",
-        "vw-vv328dpkslw-xxx-silver-pink",
-        "vw-vv261lblsl-xxx-ze-blue-silver"
+        "cw-c60-39agm1-s0rk0-b1",
+        "cw-c60-39c3h1-b0kk0-vt1",
+        "cw-c60-42c3h1-s0kk0-b0",
+        "cw-c60-41a3h1-sbmfb-b0"
+      ],
+      "brands": [
+        "christopher-ward",
+        "christopher-ward",
+        "christopher-ward",
+        "christopher-ward"
+      ]
+    },
+    "bags": {
+      "productIds": [
+        "vw-4e010002-w00wg-burnt-orange",
+        "vw-43010072u-w001y-dark-blue",
+        "vw-4a010006u-l00bx-black",
+        "vw-4a02000cu-w01ay-army-green"
       ],
       "brands": [
         "vivienne-westwood",
@@ -30,46 +44,32 @@
         "vivienne-westwood"
       ]
     },
-    "bags": {
-      "productIds": [
-        "mb-tree-tote-raffia",
-        "mb-tree-tote",
-        "mb-suede-tree-tote",
-        "mb-stevie-top-handle"
-      ],
-      "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
-      ]
-    },
     "shoes": {
       "productIds": [
-        "ax-x000010504",
-        "ax-x000010502",
-        "ax-x000010400",
-        "ax-x000010081"
+        "al-w110ff-1049",
+        "al-w133ff-4090",
+        "al-w111ff-1049",
+        "al-w117ff-10409"
       ],
       "brands": [
-        "arcteryx",
-        "arcteryx",
-        "arcteryx",
-        "arcteryx"
+        "all-saints",
+        "all-saints",
+        "all-saints",
+        "all-saints"
       ]
     },
     "accessories": {
       "productIds": [
-        "ce-4s226cplb-19rh",
-        "ce-4s342cplb-38no",
-        "ce-4s342cplb-19sp",
-        "ce-4s342cplb-01av"
+        "lu-london-undercover-e-gift-card",
+        "lu-city-gent-umbrella",
+        "lu-toyo-steel-y350-toolbox-silver",
+        "lu-city-lux-umbrella"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "london-undercover",
+        "london-undercover",
+        "london-undercover",
+        "london-undercover"
       ]
     },
     "sports": {
@@ -89,22 +89,16 @@
   },
   "brands": {
     "all-saints": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "arcteryx": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
     ],
-    "celine": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+    "christopher-ward": [
+      "watches",
+      "watches",
+      "watches",
+      "watches"
     ],
     "galvin-green": [
       "sports",
@@ -112,17 +106,23 @@
       "sports",
       "sports"
     ],
-    "mulberry": [
+    "london-undercover": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "vivienne-westwood": [
       "bags",
       "bags",
       "bags",
       "bags"
     ],
-    "vivienne-westwood": [
-      "watches",
-      "watches",
-      "watches",
-      "watches"
+    "보테가-베네타": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ]
   },
   "overlaps": {},
