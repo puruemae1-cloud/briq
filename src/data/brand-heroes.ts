@@ -127,7 +127,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Locked Hiver 2026 campaign creative for signature ready-to-wear.
+    // Lamb shearling jacket (2F5381802) — CELINE PARIS neck label still.
     images: ["/banners/brand-celine-signature.jpg"],
   },
   "celine-bags": {
@@ -159,7 +159,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
-    images: ["/banners/brand-celine-signature.jpg"],
+    images: ["/banners/brand-saint-laurent.jpg"],
   },
   "saint-laurent-bags": {
     key: "saint-laurent-bags",
