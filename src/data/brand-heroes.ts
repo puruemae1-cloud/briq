@@ -143,7 +143,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Locked Winter 2026 show creative for shoes.
+    // Runner sneaker (368287041C) top-down still — both shoes + laces.
     images: ["/banners/brand-celine-shoes.jpg"],
   },
   "celine-accessories": {
@@ -173,7 +173,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
-    images: ["/banners/brand-celine-shoes.jpg"],
+    images: ["/banners/brand-saint-laurent-shoes.jpg"],
   },
   "saint-laurent-accessories": {
     key: "saint-laurent-accessories",

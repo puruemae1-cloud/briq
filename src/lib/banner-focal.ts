@@ -75,9 +75,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
   "brand-celine-bags.jpg": "50% 32%",
   "brand-celine-bags.webp": "50% 32%",
-  /* Celine Winter 2026 shoes creative — keep both shoes framed */
-  "brand-celine-shoes.jpg": "50% 53%",
-  "brand-celine-shoes.webp": "50% 53%",
+  /* Celine shoes — Runner calfskin/suede/mesh top-down pair */
+  "brand-celine-shoes.jpg": "50% 48%",
+  "brand-celine-shoes.webp": "50% 48%",
   /* Vivienne Westwood x George Cox creative — keep both shoes centered */
   "brand-vivienne-westwood-shoes.jpg": "50% 47%",
   "brand-vivienne-westwood-shoes.webp": "50% 47%",
