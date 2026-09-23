@@ -111,7 +111,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Bottega Veneta",
     nameKo: "보테가 베네타",
     logoSrc: "/brands/bottega-veneta.svg",
-    images: ["/banners/brand-bottega-veneta-1.jpg"],
+    // Locked Silenzio loafer on-foot still — bottom-biased crop keeps shoes prominent.
+    images: ["/banners/brand-bottega-veneta-shoes.jpg"],
   },
   "bottega-veneta-accessories": {
     key: "bottega-veneta-accessories",
