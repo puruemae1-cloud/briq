@@ -72,9 +72,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine Hiver 2026 RTW creative — keep face / shoulders centered */
   "brand-celine-signature.jpg": "50% 36%",
   "brand-celine-signature.webp": "50% 36%",
-  /* Celine handbags creative — keep Triomphe hardware centred */
-  "brand-celine-bags.jpg": "50.5% 54%",
-  "brand-celine-bags.webp": "50.5% 54%",
+  /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
+  "brand-celine-bags.jpg": "50% 32%",
+  "brand-celine-bags.webp": "50% 32%",
   /* Celine Winter 2026 shoes creative — keep both shoes framed */
   "brand-celine-shoes.jpg": "50% 53%",
   "brand-celine-shoes.webp": "50% 53%",

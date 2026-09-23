@@ -135,7 +135,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Locked handbags campaign creative with centered Triomphe hardware.
+    // Small Flair XL grained calfskin (L10BF5C12) open-bag still — mid-upper Triomphe.
     images: ["/banners/brand-celine-bags.jpg"],
   },
   "celine-shoes": {
@@ -166,7 +166,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
-    images: ["/banners/brand-celine-bags.jpg"],
+    images: ["/banners/brand-saint-laurent-bags.jpg"],
   },
   "saint-laurent-shoes": {
     key: "saint-laurent-shoes",
