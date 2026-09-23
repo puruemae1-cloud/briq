@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T13:39:19.000Z",
+  "refreshedAt": "2026-09-23T13:45:59.000Z",
   "weekSeed": 202638,
   "mode": "sports-only",
   "slots": {
@@ -870,6 +870,12 @@
     },
     "bags:bottega-veneta-bags": [
       "/banners/brand-bottega-veneta-bags.jpg"
+    ],
+    "luxury:bottega-veneta": [
+      "/banners/brand-bottega-veneta-clothing.jpg"
+    ],
+    "brand:bottega-veneta": [
+      "/banners/brand-bottega-veneta-clothing.jpg"
     ]
   }
 }

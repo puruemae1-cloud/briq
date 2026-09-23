@@ -96,7 +96,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Bottega Veneta",
     nameKo: "보테가 베네타",
     logoSrc: "/brands/bottega-veneta.svg",
-    images: ["/banners/brand-bottega-veneta-1.jpg"],
+    // Locked W26 campaign still (shearling + bag) for ready-to-wear / signature.
+    images: ["/banners/brand-bottega-veneta-clothing.jpg"],
   },
   "bottega-veneta-bags": {
     key: "bottega-veneta-bags",
