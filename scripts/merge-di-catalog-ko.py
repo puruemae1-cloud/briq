@@ -33,6 +33,9 @@ from di_common import (  # noqa: E402
     slugify,
 )
 from di_size_charts import (  # noqa: E402
+    format_di_belt_size,
+    is_di_belt_leaf,
+    size_chart_for_di_belts,
     size_chart_for_di_mens_rtw,
     size_chart_for_di_mens_shoes,
     size_chart_for_di_womens_shoes,
@@ -989,6 +992,7 @@ def refresh_existing(
     p["category"] = _category_for(collections, leaf, p.get("category") or "accessories")
     p["tags"] = tags_for(collections, leaf)
     p["sourceUrl"] = row.get("url") or p.get("sourceUrl") or ""
+    beltish = is_di_belt_leaf(leaf, collections)
     if p.get("variants"):
         new_vars: list[dict] = []
         for v in p["variants"]:
@@ -1000,6 +1004,11 @@ def refresh_existing(
             vv["diCollections"] = collections
             vv["sourceUrl"] = p["sourceUrl"]
             vv["colorNameKo"] = translated_color_label(vv.get("colorNameKo"))
+            if beltish:
+                sz = format_di_belt_size(vv.get("size"))
+                vv["size"] = sz
+                vv["name"] = sz
+                vv["nameKo"] = sz
             new_vars.append(vv)
         p["variants"] = sorted(
             new_vars,
@@ -1013,7 +1022,13 @@ def refresh_existing(
     if not p.get("registeredAt"):
         p["registeredAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
     normalize_di_product_prices(p, gbp_f if gbp_f else None)
-    if any(c in WOMEN_RTWISH for c in collections + [leaf]):
+    if beltish:
+        chart = size_chart_for_di_belts(p.get("variants") or [])
+        if chart:
+            p["sizeChart"] = chart
+        elif (p.get("sizeChart") or {}).get("id") == "di-belts":
+            p.pop("sizeChart", None)
+    elif any(c in WOMEN_RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_womens_rtw(
             p.get("variants") or [],
             leaf_id=leaf,
@@ -1097,6 +1112,7 @@ def build_new(
     color_key = color.get("code") or "default"
     source_url = row.get("url") or ""
 
+    beltish = is_di_belt_leaf(leaf, collections)
     variants: list[dict] = []
     raw_vars = h.get("variantsWithStocks")
     stock_known = isinstance(raw_vars, list) and bool(raw_vars)
@@ -1110,6 +1126,8 @@ def build_new(
             sz = sz[1:]
         if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
             continue
+        if beltish:
+            sz = format_di_belt_size(sz)
         v_gbp = algolia_variant_gbp(vv.get("price") if isinstance(vv.get("price"), dict) else None, gbp_f)
         in_stock = True
         if stock_known:
@@ -1186,7 +1204,11 @@ def build_new(
     feats = features_from_ko_hit(h)
     if feats:
         product["featuresKo"] = feats
-    if any(c in WOMEN_RTWISH for c in collections + [leaf]):
+    if beltish:
+        chart = size_chart_for_di_belts(variants)
+        if chart:
+            product["sizeChart"] = chart
+    elif any(c in WOMEN_RTWISH for c in collections + [leaf]):
         chart = size_chart_for_di_womens_rtw(
             variants,
             leaf_id=leaf,

@@ -30,8 +30,11 @@ run "MEN_ESSENTIALS" bash scripts/run-di-men-essentials-pipeline.sh
 run "MEN_BAGS" bash scripts/run-di-bags-men-pipeline.sh
 run "POST_FIX_RTW" python3 scripts/enrich-di-men-rtw-pdp.py --translate
 run "POST_FIX_WOMEN_RTW" python3 scripts/enrich-di-women-rtw-pdp.py --translate
-# Fast Algolia size rebuild for any RTW/homewear/swim SKUs still stuck on OS
-run "POST_FIX_RTW_SIZES" python3 scripts/patch-di-rtw-sizes-from-algolia.py
+# Full size runs + OOS chips from Algolia variantsWithStocks (RTW + shoes + belts).
+# Must run after enrich/merge so in-stock-only `variants` cannot shrink the PDP.
+# Belts also get '{n} cm' labels + cm↔inch size chart (dior.com unit).
+run "POST_FIX_SIZES_STOCK" python3 scripts/patch-di-rtw-sizes-from-algolia.py
+run "AUDIT_SIZE_STOCK" python3 scripts/audit-brand-size-stock.py --brand di || true
 run "NEW_BADGE_TTL" python3 scripts/apply-new-badge-ttl.py --brand di
 
 echo "=== DIOR_WEEKLY_DONE $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="

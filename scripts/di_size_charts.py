@@ -433,6 +433,76 @@ _WOMEN_FR_LEAVES = {
 
 _WOMEN_FR_NUMERIC = re.compile(r"^\d{2}(?:\.\d)?$")
 
+# Belts — dior.com size picker uses centimetre waist length (numeric 65–120).
+# US PDPs show the inch equivalent under each size (e.g. 80 → 31.5'' US).
+# Dior does not publish a separate multi-region belt conversion table like Gucci;
+# cm is the official size key, with US inches from the same PDP display.
+_DI_BELT_CM_IN = [
+    # cm, US inch (dior.com US size subtitle, cm/2.54 rounded to 1 decimal)
+    ("65", "25.6"),
+    ("70", "27.6"),
+    ("75", "29.5"),
+    ("80", "31.5"),
+    ("85", "33.5"),
+    ("90", "35.4"),
+    ("95", "37.4"),
+    ("100", "39.4"),
+    ("105", "41.3"),
+    ("110", "43.3"),
+    ("115", "45.3"),
+    ("120", "47.2"),
+]
+
+DI_BELTS = {
+    "id": "di-belts",
+    "titleKo": "디올 벨트 사이즈 가이드",
+    "noteKo": (
+        "dior.com 벨트 사이즈는 센티미터(cm) 허리 길이 기준입니다. "
+        "Briq 사이즈 선택란의 숫자는 공홈과 동일한 cm 표기이며, "
+        "US(inch)는 dior.com US PDP 사이즈 선택란에 함께 표시되는 환산값입니다. "
+        "중간 사이즈일 경우 더 큰 쪽을 권장합니다. "
+        "S·M·L 표기 벨트는 해당 문자 사이즈를 그대로 선택하세요."
+    ),
+    "headers": ["SIZE (CM)", "US (inch)"],
+    "rows": [[cm, inch] for cm, inch in _DI_BELT_CM_IN],
+}
+
+_BELT_LEAVES = {"di-women-belts", "di-men-belts"}
+_BELT_NUMERIC = re.compile(r"^(\d{2,3})(?:\s*cm)?$", re.I)
+_BELT_OS = {"OS", "ONE SIZE", "TU", "U", "ONESIZE", "ONE-SIZE"}
+
+
+def format_di_belt_size(size: object) -> str:
+    """Label numeric belt sizes as '{n} cm' (Chanel/Gucci pattern). Leave SML/OS alone."""
+    s = str(size or "").strip()
+    if not s:
+        return s
+    if s.upper() in _BELT_OS:
+        return "OS" if s.upper() != "OS" else s
+    m = _BELT_NUMERIC.match(s)
+    if m:
+        return f"{m.group(1)} cm"
+    return s
+
+
+def size_chart_for_di_belts(variants: list[dict] | None = None) -> dict | None:
+    """Attach cm↔inch chart when the product sells numeric cm belt sizes."""
+    labels = _variant_labels(variants or [])
+    numeric = sum(
+        1
+        for lab in labels
+        if lab.strip().upper() not in _BELT_OS and _BELT_NUMERIC.match(lab.strip())
+    )
+    if numeric >= 1:
+        return copy.deepcopy(DI_BELTS)
+    return None
+
+
+def is_di_belt_leaf(leaf_id: str | None, collections: list[str] | None = None) -> bool:
+    leaf = str(leaf_id or "")
+    cols = set(collections or [])
+    return leaf in _BELT_LEAVES or bool(cols & _BELT_LEAVES)
+
 
 def size_chart_for_di_womens_rtw(
     variants: list[dict],
