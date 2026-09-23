@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
-"""Weekly CW sync: refresh category PLPs, add new clearance watches, update stock/prices.
+"""Weekly CW sync: refresh category PLPs, clearance/Nearly New, stock/prices.
 
-Designed for GitHub Actions (cron) and local runs:
+Clearance notes (christopherward.com):
+  - Sale PLP can be empty; `/sale` may redirect to `/watches`.
+  - Scrape unions UpdateGrid + ShowAjax across sale / Nearly New filters.
+  - Nearly New uniques that are OOS and off the live sale PLP are pruned
+    (they do not restock — keeping them made Clearance look permanently sold-out).
+  - New Nearly New SKUs are added when they reappear on the sale PLP.
+
   python3 scripts/weekly-cw-stock-sync.py
+  python3 scripts/weekly-cw-stock-sync.py --clearance-only
 """
 from __future__ import annotations
 
@@ -31,14 +38,17 @@ UA = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
     "Accept-Language": "en-GB,en;q=0.9",
 }
-BASE = "https://www.christopherward.com/on/demandware.store/Sites-cwgross-Site/en_GB/Search-UpdateGrid"
-QV = "https://www.christopherward.com/on/demandware.store/Sites-cwgross-Site/en_GB/Product-ShowQuickView"
-API = "https://www.christopherward.com/on/demandware.store/Sites-cwgross-Site/en_GB/Product-Variation"
+DW = "https://www.christopherward.com/on/demandware.store/Sites-cwgross-Site/en_GB"
+BASE = f"{DW}/Search-UpdateGrid"  # legacy alias; scrape_category tries UpdateGrid + ShowAjax
+SHOW_AJAX = f"{DW}/Search-ShowAjax"
+QV = f"{DW}/Product-ShowQuickView"
+API = f"{DW}/Product-Variation"
 
 CATEGORIES = [
     ("cw-new-releases", "new-watches", None),
     ("cw-bestsellers", "most-popular-watches", None),
     ("cw-hidden-gems", "hidden-gems", None),
+    # Clearance uses scrape_clearance() — multi-endpoint (sale can be empty / redirect).
     ("cw-clearance", "sale", "prefn1=ID&prefv1=All%20watches"),
     ("cw-atelier", "atelier-watches", None),
     ("cw-dive", "dive-watches", None),
@@ -50,6 +60,14 @@ CATEGORIES = [
     ("cw-twelve", "the-twelve-watches", None),
     ("cw-trident", "trident-watches", None),
     ("cw-moonphase", "moonphase-watches", None),
+]
+
+# CW sale/Nearly New PLPs have moved filters over time; try all known shapes.
+CLEARANCE_SCRAPE_STRATEGIES: list[tuple[str, str | None]] = [
+    ("sale", "prefn1=ID&prefv1=All%20watches"),
+    ("sale", "prefn1=ID&prefv1=Nearly%20New"),
+    ("sale", None),
+    ("watches", "prefn1=ID&prefv1=Nearly%20New"),
 ]
 
 COL_PRIORITY = [
@@ -107,14 +125,14 @@ def is_full_watch_sku(pid: str) -> bool:
     return is_watch_sku(s) and s.count("-") >= 2 and len(s) > 10
 
 
-def scrape_category(cgid: str, extra: str | None, sz: int = 36) -> list[str]:
+def _scrape_endpoint(endpoint: str, cgid: str, extra: str | None, sz: int = 36) -> list[str]:
     all_pids: list[str] = []
     start = 0
     while True:
         q = f"cgid={urllib.parse.quote(cgid)}&srule=most-popular&start={start}&sz={sz}"
         if extra:
             q = f"{q}&{extra}"
-        html = fetch(f"{BASE}?{q}")
+        html = fetch(f"{endpoint}?{q}")
         pids = list(dict.fromkeys(re.findall(r'data-pid="([^"]+)"', html)))
         if not pids:
             break
@@ -130,6 +148,43 @@ def scrape_category(cgid: str, extra: str | None, sz: int = 36) -> list[str]:
             seen.add(p)
             out.append(p)
     return out
+
+
+def scrape_category(cgid: str, extra: str | None, sz: int = 36) -> list[str]:
+    """PLP scrape — try UpdateGrid first, fall back to ShowAjax (sale often empty on UpdateGrid)."""
+    for endpoint in (BASE, SHOW_AJAX):
+        pids = _scrape_endpoint(endpoint, cgid, extra, sz=sz)
+        if pids:
+            return pids
+    return []
+
+
+def scrape_clearance() -> list[str]:
+    """Live clearance / Nearly New watches from every known CW sale PLP shape.
+
+    christopherward.com `/sale` currently redirects when empty; UpdateGrid with
+    cgid=sale often returns an empty fragment even when ShowAjax reports
+    "no results". When Nearly New returns, any of these strategies may work —
+    union them so weekly sync never misses restocks.
+    """
+    seen: set[str] = set()
+    out: list[str] = []
+    for cgid, extra in CLEARANCE_SCRAPE_STRATEGIES:
+        for endpoint in (BASE, SHOW_AJAX):
+            pids = _scrape_endpoint(endpoint, cgid, extra)
+            for p in pids:
+                if not is_watch_sku(p) or p in seen:
+                    continue
+                seen.add(p)
+                out.append(p)
+            if pids:
+                label = extra or "(no filter)"
+                print(f"    clearance via {endpoint.rsplit('/', 1)[-1]} cgid={cgid} {label}: +{len(pids)}")
+    return out
+
+
+def is_nearly_new_sku(sku: str, name: str = "") -> bool:
+    return sku.upper().startswith("N") or "nearly new" in (name or "").lower()
 
 
 def parse_price(product: dict) -> tuple[float | None, float | None]:
@@ -304,8 +359,12 @@ def variation_urls(product: dict) -> list[str]:
     return out
 
 
-def discover_family_skus(seed_sku: str, max_requests: int = 80) -> list[str]:
-    """Discover sibling SKUs across selectable variation URLs (size/strap axes)."""
+def discover_family_skus(seed_sku: str, max_requests: int = 40, timeout_s: float = 45.0) -> list[str]:
+    """Discover sibling SKUs across selectable variation URLs (size/strap axes).
+
+    Soft-timeout per seed so one hung CW variation crawl cannot stall the weekly job.
+    """
+    deadline = time.monotonic() + timeout_s
     out: list[str] = []
     seen_sku: set[str] = set()
     seen_url: set[str] = set()
@@ -326,6 +385,9 @@ def discover_family_skus(seed_sku: str, max_requests: int = 80) -> list[str]:
 
     reqs = 0
     while queue and reqs < max_requests:
+        if time.monotonic() > deadline:
+            print(f"  family timeout seed={seed_sku} after {reqs} reqs", flush=True)
+            break
         u = queue.pop(0)
         reqs += 1
         try:
@@ -372,6 +434,16 @@ def main() -> int:
         action="store_true",
         help="Skip PLP scrape; expand size/strap families then rebuild.",
     )
+    ap.add_argument(
+        "--skip-family",
+        action="store_true",
+        help="Skip new-release family expansion (faster; clearance/stock still run).",
+    )
+    ap.add_argument(
+        "--clearance-only",
+        action="store_true",
+        help="Only refresh clearance PLP membership + stock for clearance SKUs, then rebuild.",
+    )
     args = ap.parse_args()
 
     since = utc_now_iso()
@@ -379,7 +451,13 @@ def main() -> int:
     enr = json.loads(ENR_PATH.read_text()) if ENR_PATH.exists() else {"scrapedAt": "", "products": {}}
     enr_products = enr.setdefault("products", {})
 
-    summary = {"added": [], "restocked": [], "sold_out": [], "live_clearance": 0}
+    summary = {
+        "added": [],
+        "restocked": [],
+        "sold_out": [],
+        "pruned": [],
+        "live_clearance": 0,
+    }
 
     print("1) Scraping CW category PLPs…")
     live: dict[str, list[str]] = {}
@@ -388,33 +466,67 @@ def main() -> int:
         for briq_id, _, _ in CATEGORIES:
             live[briq_id] = [s for s in (raw["categories"].get(briq_id) or []) if is_watch_sku(s)]
         print("2) Merging category membership… skip")
+    elif args.clearance_only:
+        print("  clearance-only mode", flush=True)
+        for briq_id, _, _ in CATEGORIES:
+            live[briq_id] = [s for s in (raw["categories"].get(briq_id) or []) if is_watch_sku(s)]
+        live["cw-clearance"] = scrape_clearance()
+        print(f"  cw-clearance: {len(live['cw-clearance'])} watches")
+        print("2) Merging clearance membership…")
+        by_prev = {p["sku"]: p for p in raw["products"]}
+        prev = list(raw["categories"].get("cw-clearance", []))
+        watches = live["cw-clearance"]
+        keep = []
+        for s in prev:
+            if s in watches or not is_watch_sku(s):
+                continue
+            row = by_prev.get(s) or {}
+            if row.get("inStock") is True:
+                keep.append(s)
+        merged = list(dict.fromkeys(watches + keep))
+        added = [s for s in watches if s not in prev]
+        dropped = [s for s in prev if s not in merged]
+        if dropped:
+            summary["pruned"].extend(dropped)
+            print(f"  cw-clearance pruned {len(dropped)} off-PLP OOS: {dropped[:8]}")
+        raw["categories"]["cw-clearance"] = merged
+        raw["categoryCounts"]["cw-clearance"] = len(merged)
+        if added:
+            print(f"  cw-clearance +{len(added)} {added[:8]}")
+            summary["added"].extend(added)
+        summary["live_clearance"] = len(watches)
     else:
         for briq_id, cgid, extra in CATEGORIES:
-            pids = scrape_category(cgid, extra)
-            watches = [p for p in pids if is_watch_sku(p)]
+            if briq_id == "cw-clearance":
+                watches = scrape_clearance()
+            else:
+                pids = scrape_category(cgid, extra)
+                watches = [p for p in pids if is_watch_sku(p)]
             live[briq_id] = watches
             print(f"  {briq_id}: {len(watches)} watches")
 
         print("2) Merging category membership…")
+        by_prev = {p["sku"]: p for p in raw["products"]}
         for briq_id, watches in live.items():
             prev = list(raw["categories"].get(briq_id, []))
             if briq_id == "cw-clearance":
-                # Keep previous Nearly New watches so sold-out stay listed (marked out of stock below)
-                keep = [
-                    s
-                    for s in prev
-                    if s not in watches
-                    and is_watch_sku(s)
-                    and (
-                        s.upper().startswith("N")
-                        or "nearly new"
-                        in (
-                            (next((p for p in raw["products"] if p["sku"] == s), {}) or {}).get("name") or ""
-                        ).lower()
-                    )
-                ]
+                # Keep only previous clearance SKUs that are still buyable.
+                # Nearly New pieces are unique — once off the live sale PLP and
+                # OOS they will not restock; keeping them forever made Clearance
+                # look permanently sold-out even when CW sale was empty.
+                keep = []
+                for s in prev:
+                    if s in watches or not is_watch_sku(s):
+                        continue
+                    row = by_prev.get(s) or {}
+                    if row.get("inStock") is True:
+                        keep.append(s)
                 merged = list(dict.fromkeys(watches + keep))
                 added = [s for s in watches if s not in prev]
+                dropped = [s for s in prev if s not in merged]
+                if dropped:
+                    summary["pruned"].extend(dropped)
+                    print(f"  cw-clearance pruned {len(dropped)} off-PLP OOS: {dropped[:8]}")
             else:
                 merged = list(dict.fromkeys(prev + watches))
                 added = [s for s in watches if s not in prev]
@@ -459,46 +571,67 @@ def main() -> int:
 
     # Also expand new-release families so dial size × strap siblings do not get
     # dropped when PLP only lists a subset of configurable options.
-    print("3b) Expanding new-release variant families (size/strap)…")
-    family_added = 0
-    seeds = list(dict.fromkeys(raw["categories"].get("cw-new-releases", [])))
-    for i, seed in enumerate(seeds, 1):
-        if not is_full_watch_sku(seed):
-            continue
-        siblings = discover_family_skus(seed)
-        if i % 5 == 0:
-            print(
-                f"  family {i}/{len(seeds)} seed={seed} found={len(siblings)} added={family_added}",
-                flush=True,
-            )
-        if not siblings:
-            continue
-        seed_row = by.get(seed) or {}
-        seed_cols = list(seed_row.get("collections") or [primary_collection_for(seed)])
-        for sib in siblings:
-            if sib in by:
+    if args.skip_family or args.clearance_only:
+        print("3b) Expanding new-release variant families… skip", flush=True)
+    else:
+        print("3b) Expanding new-release variant families (size/strap)…")
+        family_added = 0
+        seeds = list(dict.fromkeys(raw["categories"].get("cw-new-releases", [])))
+        for i, seed in enumerate(seeds, 1):
+            if not is_full_watch_sku(seed):
                 continue
-            primary = primary_collection_for(seed)
-            ensure_product(raw, sib, primary)
-            by = {p["sku"]: p for p in raw["products"]}
-            sib_row = by.get(sib)
-            if sib_row:
-                sib_row["collections"] = list(dict.fromkeys(seed_cols + [primary]))
-                sib_row["primaryCollection"] = seed_row.get("primaryCollection") or primary
-            sync_gallery_and_enrich(sib, enr_products, force=True)
-            family_added += 1
-        sync_gallery_and_enrich(seed, enr_products, force=False)
-        RAW_PATH.write_text(json.dumps(raw, indent=2, ensure_ascii=False) + "\n")
-        ENR_PATH.write_text(json.dumps(enr, indent=2, ensure_ascii=False) + "\n")
-    if family_added:
-        print(f"  + family siblings added {family_added}")
+            siblings = discover_family_skus(seed)
+            if i % 5 == 0:
+                print(
+                    f"  family {i}/{len(seeds)} seed={seed} found={len(siblings)} added={family_added}",
+                    flush=True,
+                )
+            if not siblings:
+                continue
+            seed_row = by.get(seed) or {}
+            seed_cols = list(seed_row.get("collections") or [primary_collection_for(seed)])
+            for sib in siblings:
+                if sib in by:
+                    continue
+                primary = primary_collection_for(seed)
+                ensure_product(raw, sib, primary)
+                by = {p["sku"]: p for p in raw["products"]}
+                sib_row = by.get(sib)
+                if sib_row:
+                    sib_row["collections"] = list(dict.fromkeys(seed_cols + [primary]))
+                    sib_row["primaryCollection"] = seed_row.get("primaryCollection") or primary
+                sync_gallery_and_enrich(sib, enr_products, force=True)
+                family_added += 1
+            sync_gallery_and_enrich(seed, enr_products, force=False)
+            RAW_PATH.write_text(json.dumps(raw, indent=2, ensure_ascii=False) + "\n")
+            ENR_PATH.write_text(json.dumps(enr, indent=2, ensure_ascii=False) + "\n")
+        if family_added:
+            print(f"  + family siblings added {family_added}")
 
     rebuild_collections(raw)
 
-    print("4) Refreshing stock + prices (all full watch SKUs, incl. family straps)…")
-    stock_skus = sorted(
-        {p["sku"] for p in raw["products"] if is_full_watch_sku(p.get("sku") or "")}
-    )
+    print("4) Refreshing stock + prices…")
+    if args.clearance_only:
+        stock_skus = sorted(
+            {
+                s
+                for s in raw["categories"].get("cw-clearance", [])
+                if is_full_watch_sku(s)
+            }
+            | {
+                # Also re-check any previously known NN that we just pruned, so
+                # restocks aren't missed if QV flips before the next PLP list.
+                p["sku"]
+                for p in raw["products"]
+                if is_nearly_new_sku(p.get("sku") or "", p.get("name") or "")
+                and is_full_watch_sku(p.get("sku") or "")
+            }
+        )
+        print(f"  clearance-only stock targets: {len(stock_skus)}", flush=True)
+    else:
+        stock_skus = sorted(
+            {p["sku"] for p in raw["products"] if is_full_watch_sku(p.get("sku") or "")}
+        )
 
     results: dict[str, dict] = {}
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -558,41 +691,76 @@ def main() -> int:
             if (not avail) and prev:
                 summary["sold_out"].append(sku)
 
+    # After stock refresh: drop clearance SKUs that are OOS and not on the live
+    # sale PLP (Nearly New uniques will not return; stale OOS cluttered the PLP).
+    live_clearance = set(live.get("cw-clearance") or [])
+    clearance_now = list(raw["categories"].get("cw-clearance") or [])
+    pruned_after: list[str] = []
+    kept_clearance: list[str] = []
+    by = {p["sku"]: p for p in raw["products"]}
+    for sku in clearance_now:
+        if sku in live_clearance:
+            kept_clearance.append(sku)
+            continue
+        row = by.get(sku) or {}
+        if row.get("inStock") is True:
+            kept_clearance.append(sku)
+            continue
+        pruned_after.append(sku)
+    if pruned_after:
+        raw["categories"]["cw-clearance"] = list(dict.fromkeys(kept_clearance))
+        raw["categoryCounts"]["cw-clearance"] = len(raw["categories"]["cw-clearance"])
+        for sku in pruned_after:
+            if sku not in summary["pruned"]:
+                summary["pruned"].append(sku)
+        print(f"  pruned {len(pruned_after)} OOS off-PLP from clearance after stock refresh")
+        rebuild_collections(raw)
+
     raw["scrapedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     enr["scrapedAt"] = raw["scrapedAt"]
     RAW_PATH.write_text(json.dumps(raw, indent=2, ensure_ascii=False) + "\n")
     ENR_PATH.write_text(json.dumps(enr, indent=2, ensure_ascii=False) + "\n")
 
     print("5) Filling missing editorial + PDP copy…")
-    subprocess.check_call(
-        [sys.executable, str(ROOT / "scripts/enrich-cw-missing-editorial-and-copy.py")],
-        cwd=str(ROOT),
-    )
+    if args.clearance_only:
+        print("  skip enrich (--clearance-only)", flush=True)
+    else:
+        subprocess.check_call(
+            [sys.executable, str(ROOT / "scripts/enrich-cw-missing-editorial-and-copy.py")],
+            cwd=str(ROOT),
+        )
 
     print("6) Rebuilding cw-catalog.ts…")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/rebuild-cw-catalog.py")], cwd=str(ROOT))
 
-    print("7) Syncing CW watch straps (SRP×2100)…")
-    subprocess.check_call([sys.executable, str(ROOT / "scripts/sync-cw-straps.py")], cwd=str(ROOT))
+    if args.clearance_only:
+        print("7) Syncing CW watch straps… skip (--clearance-only)")
+        print("8) Refreshing homepage rail picks… skip (--clearance-only)")
+    else:
+        print("7) Syncing CW watch straps (SRP×2100)…")
+        subprocess.check_call([sys.executable, str(ROOT / "scripts/sync-cw-straps.py")], cwd=str(ROOT))
 
-    print("8) Refreshing homepage rail picks (watches → CW New Releases)…")
-    subprocess.check_call(
-        [sys.executable, str(ROOT / "scripts/refresh-homepage-rail-picks.py")],
-        cwd=str(ROOT),
-    )
+        print("8) Refreshing homepage rail picks (watches → CW New Releases)…")
+        subprocess.check_call(
+            [sys.executable, str(ROOT / "scripts/refresh-homepage-rail-picks.py")],
+            cwd=str(ROOT),
+        )
 
-    check_new_korean("cw", since)
+    if not args.clearance_only:
+        check_new_korean("cw", since)
 
+    by = {p["sku"]: p for p in raw["products"]}
     print("\n=== Weekly CW sync summary ===")
-    print(f"Live clearance watches: {summary['live_clearance']}")
-    print(f"Clearance total (incl. sold-out kept): {len(raw['categories']['cw-clearance'])}")
+    print(f"Live clearance watches (CW sale PLP): {summary['live_clearance']}")
+    print(f"Clearance listed on Briq: {len(raw['categories']['cw-clearance'])}")
     print(f"Added: {summary['added'] or '—'}")
     print(f"Restocked: {summary['restocked'] or '—'}")
     print(f"Sold out: {summary['sold_out'] or '—'}")
+    print(f"Pruned (OOS + off sale PLP): {summary['pruned'] or '—'}")
     in_stock = sum(
         1
         for s in raw["categories"]["cw-clearance"]
-        if (by.get(s) or {}).get("inStock", True)
+        if (by.get(s) or {}).get("inStock") is True
     )
     print(f"Clearance in stock now: {in_stock}")
     return 0

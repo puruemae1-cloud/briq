@@ -24,7 +24,8 @@ CATEGORIES = [
     ("cw-new-releases", "new-watches", None),
     ("cw-bestsellers", "most-popular-watches", None),
     ("cw-hidden-gems", "hidden-gems", None),
-    # Sale "All watches" refinement — excludes straps/bracelets
+    # Sale / Nearly New — prefer weekly-cw-stock-sync.scrape_clearance (multi-endpoint).
+    # Kept here for manual sync-cw-categories runs; empty when CW has no sale stock.
     ("cw-clearance", "sale", "prefn1=ID&prefv1=All%20watches"),
     ("cw-atelier", "atelier-watches", None),
     ("cw-dive", "dive-watches", None),
