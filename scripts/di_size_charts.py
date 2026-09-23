@@ -431,13 +431,20 @@ _WOMEN_FR_LEAVES = {
 }
 
 
+_WOMEN_FR_NUMERIC = re.compile(r"^\d{2}(?:\.\d)?$")
+
+
 def size_chart_for_di_womens_rtw(
     variants: list[dict],
     *,
     leaf_id: str = "",
     title_en: str = "",
 ) -> dict | None:
-    """Pick FR / SML / denim chart for Dior women's RTW."""
+    """Pick FR / SML / denim chart for Dior women's RTW.
+
+    Prefer the variant size system actually sold (FR numeric vs S/M/L) over the
+    leaf default — e.g. Chez Moi shirts under homewear use FR 34–46, not SML.
+    """
     labels = _variant_labels(variants)
     leaf = leaf_id or ""
     title = (title_en or "").lower()
@@ -446,14 +453,21 @@ def size_chart_for_di_womens_rtw(
         return copy.deepcopy(DI_WOMEN_RTW_DENIM)
 
     letterish = False
+    numeric_fr = False
     if labels:
         letterish = sum(1 for lab in labels if _WOMEN_LETTER.match(lab.strip())) >= max(
             1, len(labels) // 2
         )
+        numeric_fr = sum(1 for lab in labels if _WOMEN_FR_NUMERIC.match(lab.strip())) >= max(
+            1, len(labels) // 2
+        )
 
-    if leaf in _WOMEN_SML_LEAVES or letterish:
+    if letterish:
         return copy.deepcopy(DI_WOMEN_RTW_SML)
-
+    if numeric_fr:
+        return copy.deepcopy(DI_WOMEN_RTW_FR)
+    if leaf in _WOMEN_SML_LEAVES:
+        return copy.deepcopy(DI_WOMEN_RTW_SML)
     if leaf in _WOMEN_FR_LEAVES or leaf or labels or title:
         return copy.deepcopy(DI_WOMEN_RTW_FR)
     return None
