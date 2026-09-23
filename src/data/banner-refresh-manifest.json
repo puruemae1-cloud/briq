@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-18T06:00:11.058466+00:00",
+  "refreshedAt": "2026-09-23T13:39:19.000Z",
   "weekSeed": 202638,
   "mode": "sports-only",
   "slots": {
@@ -867,6 +867,9 @@
     "brand-burberry-shoes.jpg": {
       "locked": true,
       "note": "fixed creative — not rotated by weekly sports refresh"
-    }
+    },
+    "bags:bottega-veneta-bags": [
+      "/banners/brand-bottega-veneta-bags.jpg"
+    ]
   }
 }

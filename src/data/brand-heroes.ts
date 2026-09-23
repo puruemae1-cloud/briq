@@ -103,7 +103,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Bottega Veneta",
     nameKo: "보테가 베네타",
     logoSrc: "/brands/bottega-veneta.svg",
-    images: ["/banners/brand-bottega-veneta-1.jpg"],
+    images: ["/banners/brand-bottega-veneta-bags.jpg"],
   },
   "bottega-veneta-shoes": {
     key: "bottega-veneta-shoes",
