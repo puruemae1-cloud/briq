@@ -65,7 +65,64 @@ TITLE_MAP = {
     "red": "레드",
     "gold": "골드",
     "silver": "실버",
+    "high-waisted five-pocket jeans": "하이웨이스트 파이브 포켓 진",
+    "five-pocket jeans": "파이브 포켓 진",
+    "v-waist baggy jeans": "V-웨이스트 배기 진",
+    "baggy jeans": "배기 진",
+    "selvedge denim": "셀비지 데님",
+    "wide-leg fit": "와이드 레그 핏",
+    "v-cut waistline": "V컷 웨이스트라인",
+    "v-cut waistband": "V컷 허리밴드",
 }
+
+
+def _soften_all_caps(text: str) -> str:
+    """MT engines often leave ALL CAPS English — soften to title case first."""
+
+    def repl(m: re.Match[str]) -> str:
+        chunk = m.group(0)
+        if len(chunk) < 4:
+            return chunk
+        return chunk.title()
+
+    return re.sub(r"\b[A-Z][A-Z0-9]{2,}(?:\s+[A-Z0-9][A-Z0-9']*)*\b", repl, text)
+
+
+def translate(text: str, cache: dict[str, str], *, force: bool = False) -> str:
+    s = re.sub(r"\s+", " ", (text or "").strip())
+    if not s:
+        return ""
+    if not force and s in cache and is_good_korean(cache[s], max_ratio=0.42):
+        return cache[s]
+    if is_good_korean(s, max_ratio=0.30):
+        cache[s] = s
+        return s
+    low = s.lower()
+    out = s
+    for en, ko in sorted(TITLE_MAP.items(), key=lambda kv: -len(kv[0])):
+        if en in low:
+            out = re.sub(re.escape(en), ko, out, flags=re.I)
+    if out != s and is_good_korean(out, max_ratio=0.42):
+        cache[s] = out
+        return out
+    mt_in = _soften_all_caps(out if out != s else s)
+    try:
+        ko = mt_translate(mt_in)
+    except Exception:
+        ko = out if out != s else s
+    if ko and is_good_korean(ko, max_ratio=0.42):
+        cache[s] = ko
+        return ko
+    # Second pass: full lowercase sentence for stubborn ALL-CAPS leads.
+    try:
+        ko2 = mt_translate(s.lower().capitalize() if s.isupper() else s[:1].upper() + s[1:].lower())
+        if ko2 and is_good_korean(ko2, max_ratio=0.42):
+            cache[s] = ko2
+            return ko2
+    except Exception:
+        pass
+    cache[s] = out if out != s else s
+    return cache[s]
 
 
 def _refresh_bing() -> None:
@@ -145,34 +202,6 @@ def mt_translate(text: str) -> str:
     if last:
         raise last
     return ""
-
-
-def translate(text: str, cache: dict[str, str]) -> str:
-    s = re.sub(r"\s+", " ", (text or "").strip())
-    if not s:
-        return ""
-    if s in cache and is_good_korean(cache[s], max_ratio=0.50):
-        return cache[s]
-    if is_good_korean(s, max_ratio=0.35):
-        cache[s] = s
-        return s
-    low = s.lower()
-    out = s
-    for en, ko in sorted(TITLE_MAP.items(), key=lambda kv: -len(kv[0])):
-        if en in low:
-            out = re.sub(re.escape(en), ko, out, flags=re.I)
-    if out != s and is_good_korean(out, max_ratio=0.55):
-        cache[s] = out
-        return out
-    try:
-        ko = mt_translate(s)
-    except Exception:
-        ko = out if out != s else s
-    if ko and is_good_korean(ko, max_ratio=0.55):
-        cache[s] = ko
-        return ko
-    cache[s] = out if out != s else s
-    return cache[s]
 
 
 def color_ko(name: str | None, cache: dict[str, str]) -> str:
@@ -373,14 +402,24 @@ def build_product(raw: dict, family: str, cache: dict[str, str]) -> dict | None:
         )
 
     cat = family_category(family)
-    mens = "men" in family
-    leaf_hint = str(raw.get("leafId") or "")
     cols = [str(c) for c in (raw.get("collections") or [])]
+    leaf_hint = str(raw.get("leafId") or "")
     if not leaf_hint:
         for c in reversed(cols):
             if c.startswith("ys-") and c not in {"ys-men", "ys-women", "saint-laurent"}:
                 leaf_hint = c
                 break
+    # Prefer collection gender over scrape family — View-All merges can cross-list.
+    if any(c == "ys-women" or c.startswith("ys-women-") for c in cols) or leaf_hint.startswith(
+        "ys-women"
+    ):
+        mens = False
+    elif any(c == "ys-men" or c.startswith("ys-men-") for c in cols) or leaf_hint.startswith(
+        "ys-men"
+    ):
+        mens = True
+    else:
+        mens = "men" in family
     size_chart = None
     if cat == "shoes":
         size_chart = build_shoes_size_chart(sizes, mens=mens)

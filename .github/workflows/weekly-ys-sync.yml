@@ -44,6 +44,9 @@ jobs:
             src/data/ys \
             src/data/product-images-manifest.json \
             scripts/run-ys-weekly-sync.sh \
+            scripts/patch-ys-size-charts-and-copy.py \
+            scripts/ys_size_charts.py \
+            scripts/build-ys-catalog.py \
             scripts/repair-ys-missing-images.py \
             scripts/ci-publish-pdp-cdn.sh \
             scripts/push-missing-pdp-chunked.py \

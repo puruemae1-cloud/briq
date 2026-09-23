@@ -31,6 +31,10 @@ python3 scripts/retag-ys-women-rtw-leaves.py || echo "WARN women RTW retag faile
 
 python3 scripts/build-ys-catalog.py
 
+# Size charts must match PDP option chips (denim waist / F34 / shoes); refresh KO copy.
+python3 scripts/patch-ys-size-charts-and-copy.py
+python3 scripts/check-catalog-korean.py --brand ys --fail || echo "WARN ys korean check"
+
 # Guard: men leather / coats must not collapse to View-All-only leftovers.
 python3 - <<'PY' || exit 1
 import json, sys

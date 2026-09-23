@@ -65,6 +65,20 @@ def collect_ysl_sizes(sizes: Iterable[dict] | None) -> list[str]:
     return out
 
 
+def sizes_use_f_prefix(sizes: Iterable[dict] | None) -> bool:
+    for s in sizes or []:
+        blob = f"{s.get('displayValue') or ''} {s.get('value') or ''}"
+        if re.search(r"\bF\s*\d", blob, re.I):
+            return True
+    return False
+
+
+def _header_labels(ysl: list[str], *, f_prefix: bool) -> list[str]:
+    if not f_prefix:
+        return ysl
+    return [f"F{y}" if re.fullmatch(r"\d+", y) else y for y in ysl]
+
+
 # --- Women RTW (official conversion + body cm) ---
 _WOMEN_YSL = ["32", "34", "36", "38", "40", "42", "44", "46", "48"]
 _WOMEN_LETTER = ["XXS", "XS", "S", "M", "L", "XL", "XXL", "XXL", ""]
@@ -119,9 +133,10 @@ def women_rtw_size_chart(sizes: list[dict] | None = None) -> dict:
     wanted = collect_ysl_sizes(sizes)
     idxs = _filter_indices(_WOMEN_YSL, wanted)
     ysl = _pick(_WOMEN_YSL, idxs)
-    conv_headers = ["구분", *ysl]
+    labels = _header_labels(ysl, f_prefix=sizes_use_f_prefix(sizes))
+    conv_headers = ["구분", *labels]
     conv_rows = [
-        ["YSL", *ysl],
+        ["YSL", *labels],
         ["국제", *_pick(_WOMEN_LETTER, idxs)],
         ["FR", *_pick(_WOMEN_FR, idxs)],
         ["IT", *_pick(_WOMEN_IT, idxs)],
@@ -133,7 +148,7 @@ def women_rtw_size_chart(sizes: list[dict] | None = None) -> dict:
         ["ES", *_pick(_WOMEN_ES, idxs)],
     ]
     body_rows = [
-        ["YSL", *ysl],
+        ["YSL", *labels],
         ["가슴 (cm)", *_pick(_WOMEN_CHEST, idxs)],
         ["허리 (cm)", *_pick(_WOMEN_WAIST, idxs)],
         ["엉덩이 (cm)", *_pick(_WOMEN_HIP, idxs)],
@@ -250,6 +265,81 @@ def men_shirt_size_chart(sizes: list[dict] | None = None) -> dict:
     }
 
 
+def _size_pairs_from_raw(sizes: list[dict] | None) -> list[tuple[str, str]]:
+    """Ordered unique (YSL, GB) pairs from official PDP displayValue."""
+    out: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for s in sizes or []:
+        disp = str(s.get("displayValue") or s.get("value") or "")
+        ysl, gb = parse_ys_size_token(disp)
+        key = _norm_ysl(ysl)
+        if not key or key in {"U", "TU", "OS"} or key in seen:
+            continue
+        seen.add(key)
+        out.append((key, gb))
+    return out
+
+
+def is_denim_waist_sizes(sizes: list[dict] | None, *, leaf_hint: str = "") -> bool:
+    """True for inch-waist denim (YSL 24–36), not FR F34 or IT 46 jackets."""
+    hint = (leaf_hint or "").lower()
+    if "denim" in hint or "jean" in hint:
+        pairs = _size_pairs_from_raw(sizes)
+        if pairs and all(re.fullmatch(r"\d+", y) for y, _ in pairs):
+            nums = [int(y) for y, _ in pairs]
+            return min(nums) >= 23 and max(nums) <= 40
+    pairs = _size_pairs_from_raw(sizes)
+    if not pairs:
+        return False
+    # Bare numeric waist inches (no leading F) in the denim range.
+    if any(
+        re.search(r"\bF\s*\d", str(s.get("displayValue") or s.get("value") or ""), re.I)
+        for s in (sizes or [])
+    ):
+        return False
+    if not all(re.fullmatch(r"\d+", y) for y, _ in pairs):
+        return False
+    nums = [int(y) for y, _ in pairs]
+    return min(nums) >= 23 and max(nums) <= 40 and (max(nums) - min(nums)) <= 18
+
+
+def denim_waist_size_chart(
+    sizes: list[dict] | None = None,
+    *,
+    mens: bool = False,
+) -> dict | None:
+    """Build chart columns from the product's own YSL / GB labels (official PDP)."""
+    pairs = _size_pairs_from_raw(sizes)
+    if len(pairs) < 1:
+        return None
+    ysl = [y for y, _ in pairs]
+    gb = [g if g else "—" for _, g in pairs]
+    waist_in = ysl[:]  # YSL denim label == waist inches
+    waist_cm = [str(round(int(y) * 2.54)) if y.isdigit() else "—" for y in ysl]
+    headers = ["구분", *ysl]
+    conv_rows = [
+        ["YSL", *ysl],
+        ["GB", *gb],
+        ["허리 (inch)", *waist_in],
+        ["허리 (cm)", *waist_cm],
+    ]
+    return {
+        "id": "ys-men-denim" if mens else "ys-women-denim",
+        "titleKo": "생로랑 데님 사이즈 가이드" + (" (남성)" if mens else " (여성)"),
+        "noteKo": "공홈 표기(YSL 허리 / GB) 기준입니다. 컷·원단에 따라 핏이 달라질 수 있습니다.",
+        "headers": headers,
+        "rows": conv_rows,
+        "tabs": [
+            {
+                "id": "conversion",
+                "labelKo": "사이즈 환산",
+                "headers": headers,
+                "rows": conv_rows,
+            },
+        ],
+    }
+
+
 def size_chart_for_rtw(
     sizes: list[dict] | None,
     *,
@@ -260,6 +350,9 @@ def size_chart_for_rtw(
     if len(usable) < 1:
         return None
     hint = (leaf_hint or "").lower()
+    # Inch-waist denim must not fall through to FR/IT RTW charts (24≠42).
+    if is_denim_waist_sizes(sizes, leaf_hint=hint):
+        return denim_waist_size_chart(sizes, mens=mens)
     if mens:
         if "shirt" in hint:
             return men_shirt_size_chart(sizes)
