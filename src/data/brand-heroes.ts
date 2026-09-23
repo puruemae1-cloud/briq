@@ -119,7 +119,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Bottega Veneta",
     nameKo: "보테가 베네타",
     logoSrc: "/brands/bottega-veneta.svg",
-    images: ["/banners/brand-bottega-veneta-1.jpg"],
+    // Locked collections runway still — upper crop keeps faces + eyewear/jewellery.
+    images: ["/banners/brand-bottega-veneta-accessories.jpg"],
   },
   celine: {
     key: "celine",
