@@ -517,19 +517,32 @@ def rebuild_variants(
     color_key = prev_vars[0].get("colorKey") if prev_vars else "default"
     color_ko = translated_color_label(prev_vars[0].get("colorNameKo") if prev_vars else "기본")
 
-    raw_vars = hit.get("variants") if isinstance(hit.get("variants"), list) else []
+    # Prefer variantsWithStocks so OOS sizes stay visible as 품절 chips.
+    raw_vars = hit.get("variantsWithStocks")
+    stock_known = isinstance(raw_vars, list) and bool(raw_vars)
+    if not stock_known:
+        raw_vars = hit.get("variants") if isinstance(hit.get("variants"), list) else []
     variants: list[dict] = []
     for vv in raw_vars:
         if not isinstance(vv, dict):
             continue
         sz = str(vv.get("sizeFormatted") or vv.get("size") or "").strip()
+        if sz.upper().startswith("T") and sz[1:].isdigit():
+            sz = sz[1:]
         if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
             continue
         v_gbp = algolia_variant_gbp(vv.get("price") if isinstance(vv.get("price"), dict) else None, gbp_f)
         in_stock = True
-        status = str(vv.get("status") or vv.get("stockLevel") or "").lower()
-        if status in ("outofstock", "out_of_stock", "unavailable"):
-            in_stock = False
+        if stock_known:
+            stock = vv.get("stock") if isinstance(vv.get("stock"), dict) else {}
+            if "hasStock" in stock:
+                in_stock = bool(stock.get("hasStock"))
+            elif isinstance(stock.get("stockUnits"), (int, float)):
+                in_stock = stock.get("stockUnits") > 0
+        else:
+            status = str(vv.get("status") or vv.get("stockLevel") or "").lower()
+            if status in ("outofstock", "out_of_stock", "unavailable"):
+                in_stock = False
         variants.append(
             {
                 "id": f"{pid}-sz-{slugify(sz, max_len=24)}",

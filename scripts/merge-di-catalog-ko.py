@@ -1098,14 +1098,26 @@ def build_new(
     source_url = row.get("url") or ""
 
     variants: list[dict] = []
-    raw_vars = h.get("variants") if isinstance(h.get("variants"), list) else []
+    raw_vars = h.get("variantsWithStocks")
+    stock_known = isinstance(raw_vars, list) and bool(raw_vars)
+    if not stock_known:
+        raw_vars = h.get("variants") if isinstance(h.get("variants"), list) else []
     for vv in raw_vars:
         if not isinstance(vv, dict):
             continue
         sz = str(vv.get("sizeFormatted") or vv.get("size") or "").strip()
+        if sz.upper().startswith("T") and sz[1:].isdigit():
+            sz = sz[1:]
         if not sz or sz.upper() in ("OS", "ONE SIZE", "TU", "U", "ONESIZE"):
             continue
         v_gbp = algolia_variant_gbp(vv.get("price") if isinstance(vv.get("price"), dict) else None, gbp_f)
+        in_stock = True
+        if stock_known:
+            stock = vv.get("stock") if isinstance(vv.get("stock"), dict) else {}
+            if "hasStock" in stock:
+                in_stock = bool(stock.get("hasStock"))
+            elif isinstance(stock.get("stockUnits"), (int, float)):
+                in_stock = stock.get("stockUnits") > 0
         variants.append(
             {
                 "id": f"{pid}-sz-{slugify(sz, max_len=24)}",
@@ -1117,7 +1129,7 @@ def build_new(
                 "image": image,
                 "images": images,
                 "sourceUrl": source_url,
-                "inStock": True,
+                "inStock": in_stock,
                 "colorKey": color_key,
                 "colorNameKo": color_ko,
                 "size": sz,
