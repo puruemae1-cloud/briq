@@ -66,9 +66,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Accessories jewelry — Rose des Vents necklace + face */
   "brand-dior-accessories.jpg": "66% 34%",
   "brand-dior-accessories.webp": "66% 34%",
-  /* Celine Hiver 2026 accessories creative — centered face / glasses */
-  "brand-celine-accessories.jpg": "50% 43%",
-  "brand-celine-accessories.webp": "50% 43%",
+  /* Celine accessories — Francoise temple still; keep CELINE gold wordmark */
+  "brand-celine-accessories.jpg": "39% 58%",
+  "brand-celine-accessories.webp": "39% 58%",
   /* Celine signature RTW — shearling jacket CELINE PARIS neck label (upper centre) */
   "brand-celine-signature.jpg": "50% 28%",
   "brand-celine-signature.webp": "50% 28%",

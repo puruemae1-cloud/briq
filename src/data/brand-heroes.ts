@@ -151,7 +151,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Locked Hiver 2026 campaign creative for accessories.
+    // Francoise sunglasses (EP001CPLB) temple still — CELINE wordmark.
     images: ["/banners/brand-celine-accessories.jpg"],
   },
   "saint-laurent": {
@@ -180,7 +180,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
-    images: ["/banners/brand-celine-accessories.jpg"],
+    images: ["/banners/brand-saint-laurent-accessories.jpg"],
   },
   "vivienne-westwood": {
     key: "vivienne-westwood",
