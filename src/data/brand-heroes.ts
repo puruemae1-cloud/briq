@@ -42,6 +42,7 @@ export type BrandKey =
   | "prada-bags"
   | "prada-shoes"
   | "arcteryx"
+  | "arcteryx-shoes"
   | "paul-smith"
   | "paul-smith-shoes"
   | "belstaff"
@@ -315,6 +316,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/arcteryx.svg",
     // Locked Who We Are ridge creative — all Arc'teryx category heroes.
     images: ["/banners/brand-arcteryx-ridge.jpg"],
+  },
+  "arcteryx-shoes": {
+    key: "arcteryx-shoes",
+    nameEn: "Arc'teryx",
+    nameKo: "아크테릭스",
+    logoSrc: "/brands/arcteryx.svg",
+    // Locked trail runners ridge still — mid-lower shoes on rock.
+    images: ["/banners/brand-arcteryx-shoes.jpg"],
   },
   "paul-smith": {
     key: "paul-smith",
@@ -728,8 +737,10 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "pr-linea-rossa-fragrances": "prada",
   arcteryx: "arcteryx",
   "arcteryx-bags": "arcteryx",
-  "arcteryx-shoes": "arcteryx",
+  "arcteryx-shoes": "arcteryx-shoes",
   "arcteryx-accessories": "arcteryx",
+  "ax-shoes-womens": "arcteryx-shoes",
+  "ax-shoes-mens": "arcteryx-shoes",
   "ax-climbing-gear": "arcteryx",
   "ax-climbing-womens": "arcteryx",
   "ax-climbing-mens": "arcteryx",

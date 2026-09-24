@@ -205,6 +205,10 @@ assert FIXED_PRADA_BRAND_BANNER not in SLOT_THEMES, "locked Prada brand banner m
 FIXED_ARC_BRAND_BANNER = "brand-arcteryx-ridge.jpg"
 assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner must not be in SLOT_THEMES"
 
+# Arc'teryx shoes brand hero — locked trail runners ridge still (mid-lower shoes).
+FIXED_ARC_SHOES_BRAND_BANNER = "brand-arcteryx-shoes.jpg"
+assert FIXED_ARC_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx shoes brand banner must not be in SLOT_THEMES"
+
 # Gucci brand hero — locked Primavera RTW (signature clothing).
 FIXED_GUCCI_BRAND_BANNER = "brand-gucci.jpg"
 assert FIXED_GUCCI_BRAND_BANNER not in SLOT_THEMES, "locked Gucci brand banner must not be in SLOT_THEMES"
@@ -341,6 +345,7 @@ LOCKED_BANNERS = {
     FIXED_PRADA_BAGS_BRAND_BANNER,
     FIXED_PRADA_SHOES_BRAND_BANNER,
     FIXED_ARC_BRAND_BANNER,
+    FIXED_ARC_SHOES_BRAND_BANNER,
     FIXED_GUCCI_BRAND_BANNER,
     FIXED_GUCCI_BAGS_BRAND_BANNER,
     FIXED_GUCCI_SHOES_BRAND_BANNER,
