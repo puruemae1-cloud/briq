@@ -13,8 +13,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   "brand-burberry-scarf.jpg": "center 28%",
   "brand-burberry-scarf.webp": "center 28%",
   /* Bags PLP night check tote — face + tote */
-  "brand-burberry-bags.jpg": "52% 38%",
-  "brand-burberry-bags.webp": "52% 38%",
+  /* Burberry night check tote — keep bag body + knight medallion (lower mid) */
+  "brand-burberry-bags.jpg": "50% 70%",
+  "brand-burberry-bags.webp": "50% 70%",
   /* Mulberry bags PLP — Bayswater satchel on fountain rim */
   "brand-mulberry-bags.jpg": "50% 48%",
   "brand-mulberry-bags.webp": "50% 48%",
