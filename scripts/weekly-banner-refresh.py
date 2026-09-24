@@ -249,6 +249,10 @@ FIXED_PAUL_SMITH_BRAND_BANNERS = (
 for _ps in FIXED_PAUL_SMITH_BRAND_BANNERS:
     assert _ps not in SLOT_THEMES, "locked Paul Smith brand banner must not be in SLOT_THEMES"
 
+# Paul Smith shoes brand hero — locked Cream Chilly trainers (red tongue logo).
+FIXED_PAUL_SMITH_SHOES_BRAND_BANNER = "brand-paul-smith-shoes.jpg"
+assert FIXED_PAUL_SMITH_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Paul Smith shoes brand banner must not be in SLOT_THEMES"
+
 # Gucci handbags brand hero — locked Primavera / GG Marmont bedroom creative.
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
@@ -349,6 +353,7 @@ LOCKED_BANNERS = {
     FIXED_ALL_SAINTS_BRAND_BANNER,
     FIXED_ALL_SAINTS_SHOES_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
+    FIXED_PAUL_SMITH_SHOES_BRAND_BANNER,
     *FIXED_GALVIN_GREEN_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,

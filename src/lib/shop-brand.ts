@@ -17,6 +17,7 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(ch-|chanel)/i, key: "chanel" },
   { re: /^(pr-|prada)/i, key: "prada" },
   { re: /^(ax-|axa-|arcteryx)/i, key: "arcteryx" },
+  { re: /^(paul-smith-shoes|ps-shoes)/i, key: "paul-smith-shoes" },
   { re: /^(ps-|paul-smith)/i, key: "paul-smith" },
   { re: /^(bs-|belstaff)/i, key: "belstaff" },
   { re: /^(gg-|galvin)/i, key: "galvin-green" },
@@ -24,6 +25,19 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(lv-|louis-vuitton)/i, key: "louis-vuitton" },
   { re: /^(di-|dior)/i, key: "dior" },
   { re: /^(mb-|mulberry)/i, key: "mulberry" },
+  {
+    re: /^(all-saints-accessori|al-(men|women)-(accessori|acc-|sunglass|belt|hat|jewell|wallet|scarf))/i,
+    key: "all-saints-accessories",
+  },
+  {
+    re: /^(all-saints-bags|al-(men|women)-(bags|handbags|bags-group))/i,
+    key: "all-saints-bags",
+  },
+  {
+    re: /^(all-saints-shoes|al-(men|women)-(shoes|boots|flats|heels|trainers|casual-shoes))/i,
+    key: "all-saints-shoes",
+  },
+  { re: /^(all-saints|al-(men|women))/i, key: "all-saints" },
   { re: /^(lu-|london-undercover|umbrellas)/i, key: "london-undercover" },
 ];
 

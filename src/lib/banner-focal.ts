@@ -107,6 +107,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Paul Smith AW26 campaign — tailoring still; face sits right-upper */
   "brand-paul-smith-2.jpg": "62% 18%",
   "brand-paul-smith-2.webp": "62% 18%",
+  /* Paul Smith shoes — Cream Chilly trainers; red tongue logo lower-left */
+  "brand-paul-smith-shoes.jpg": "40% 72%",
+  "brand-paul-smith-shoes.webp": "40% 72%",
   /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
   "brand-celine-bags.jpg": "50% 32%",
   "brand-celine-bags.webp": "50% 32%",

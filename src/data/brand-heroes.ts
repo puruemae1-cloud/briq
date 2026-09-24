@@ -43,6 +43,7 @@ export type BrandKey =
   | "prada-shoes"
   | "arcteryx"
   | "paul-smith"
+  | "paul-smith-shoes"
   | "belstaff"
   | "galvin-green"
   | "christopher-ward"
@@ -325,6 +326,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/brand-paul-smith-1.jpg",
       "/banners/brand-paul-smith-2.jpg",
     ],
+  },
+  "paul-smith-shoes": {
+    key: "paul-smith-shoes",
+    nameEn: "Paul Smith",
+    nameKo: "폴 스미스",
+    logoSrc: "/brands/paul-smith.svg",
+    // Locked Cream Chilly trainers — red tongue logo lower-left.
+    images: ["/banners/brand-paul-smith-shoes.jpg"],
   },
   belstaff: {
     key: "belstaff",
@@ -725,8 +734,28 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "ax-climbing-womens": "arcteryx",
   "ax-climbing-mens": "arcteryx",
   "paul-smith": "paul-smith",
-  "paul-smith-shoes": "paul-smith",
+  "paul-smith-shoes": "paul-smith-shoes",
   "paul-smith-accessories": "paul-smith",
+  "ps-shoes-men": "paul-smith-shoes",
+  "ps-shoes-women": "paul-smith-shoes",
+  "ps-shoes-boots": "paul-smith-shoes",
+  "ps-shoes-brogues": "paul-smith-shoes",
+  "ps-shoes-derby": "paul-smith-shoes",
+  "ps-shoes-espadrilles": "paul-smith-shoes",
+  "ps-shoes-loafers": "paul-smith-shoes",
+  "ps-shoes-oxford": "paul-smith-shoes",
+  "ps-shoes-sandals": "paul-smith-shoes",
+  "ps-shoes-care": "paul-smith-shoes",
+  "ps-shoes-slides": "paul-smith-shoes",
+  "ps-shoes-trainers": "paul-smith-shoes",
+  "ps-shoes-other": "paul-smith-shoes",
+  "ps-shoes-women-boots": "paul-smith-shoes",
+  "ps-shoes-women-flats": "paul-smith-shoes",
+  "ps-shoes-women-loafers": "paul-smith-shoes",
+  "ps-shoes-women-sandals": "paul-smith-shoes",
+  "ps-shoes-women-care": "paul-smith-shoes",
+  "ps-shoes-women-trainers": "paul-smith-shoes",
+  "ps-shoes-women-other": "paul-smith-shoes",
   belstaff: "belstaff",
   "belstaff-bags": "belstaff",
   "belstaff-shoes": "belstaff",
