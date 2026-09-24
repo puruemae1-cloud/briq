@@ -10,6 +10,7 @@ import {
 // `ysCatalogProducts` import parses ~14MB JSON into every shop serverless
 // cold start and OOMs `/api/products/shop?category=all` on Vercel.
 import {
+  getYsBagsCatalogProducts,
   getYsCatalogProducts,
   isYsShopSub,
 } from "@/data/ys/ys-catalog-lazy";
@@ -76,7 +77,9 @@ function shouldIncludeYsCatalog(category?: string, sub?: string): boolean {
   return Boolean(category && category !== "all");
 }
 
-function withYsCatalog(list: Product[]): Product[] {
+function withYsCatalog(list: Product[], category?: string): Product[] {
+  // Bags PLPs use the bags-only YS slice so TTFB matches other bag brands.
+  if (category === "bags") return list.concat(getYsBagsCatalogProducts());
   return list.concat(getYsCatalogProducts());
 }
 
@@ -571,7 +574,7 @@ export function getProductsByCategory(
   // Brand / leaf PLPs load only that brand's JSON — weekly catalogue growth
   // must not slow every header brand click.
   let list: Product[] = loadCatalogsForShop(category, sub);
-  if (includeYs) list = withYsCatalog(list);
+  if (includeYs) list = withYsCatalog(list, category);
   const expanded = expandSubcategoryFilter(sub);
   // Gift PLPs include apparel/bags/shoes tagged with gifts*; skip category gate.
   const isPsGifts =

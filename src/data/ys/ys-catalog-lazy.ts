@@ -6,6 +6,7 @@ import type { Product } from "@/data/product-types";
  * serverless heap and tip Vercel over the memory limit.
  */
 let cached: Product[] | null = null;
+let bagsCached: Product[] | null = null;
 
 export function getYsCatalogProducts(): Product[] {
   if (!cached) {
@@ -14,6 +15,17 @@ export function getYsCatalogProducts(): Product[] {
     cached = mod.ysCatalogProducts;
   }
   return cached;
+}
+
+/** Bags-only YS slice — bags brand clicks must not parse the full YS catalogue. */
+export function getYsBagsCatalogProducts(): Product[] {
+  if (!bagsCached) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod =
+      require("./ys-bags-catalog") as typeof import("./ys-bags-catalog");
+    bagsCached = mod.ysBagsCatalogProducts;
+  }
+  return bagsCached;
 }
 
 /** True when the active shop filter is a Saint Laurent nav node. */

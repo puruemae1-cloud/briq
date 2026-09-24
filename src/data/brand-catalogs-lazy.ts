@@ -52,13 +52,34 @@ const ALL_KEYS: BrandCatalogKey[] = [
 type Loader = () => Product[];
 
 const cache = new Map<BrandCatalogKey, Product[]>();
+const bagsCache = new Map<BrandCatalogKey, Product[]>();
 let allCache: Product[] | null = null;
+let allBagsCache: Product[] | null = null;
 
-function cached(key: BrandCatalogKey, load: Loader): Product[] {
-  let hit = cache.get(key);
+/** Brands with a bags-only JSON slice (bags PLPs must not parse full catalogues). */
+const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
+  "bb",
+  "ax",
+  "bs",
+  "gc",
+  "bv",
+  "ch",
+  "ce",
+  "vw",
+  "pr",
+  "di",
+  "mb",
+];
+
+function cached(
+  map: Map<BrandCatalogKey, Product[]>,
+  key: BrandCatalogKey,
+  load: Loader,
+): Product[] {
+  let hit = map.get(key);
   if (!hit) {
     hit = load();
-    cache.set(key, hit);
+    map.set(key, hit);
   }
   return hit;
 }
@@ -171,7 +192,83 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
 };
 
 export function loadBrandCatalog(key: BrandCatalogKey): Product[] {
-  return cached(key, LOADERS[key]);
+  return cached(cache, key, LOADERS[key]);
+}
+
+/** Bags-only loaders — keep bags brand clicks ~same TTFB regardless of RTW/acc size. */
+const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
+  bb: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bb/bb-bags-catalog") as typeof import("./bb/bb-bags-catalog");
+    return mod.bbBagsCatalogProducts;
+  },
+  ax: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ax/ax-bags-catalog") as typeof import("./ax/ax-bags-catalog");
+    return mod.axBagsCatalogProducts;
+  },
+  bs: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bs/bs-bags-catalog") as typeof import("./bs/bs-bags-catalog");
+    return mod.bsBagsCatalogProducts;
+  },
+  gc: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./gc/gc-bags-catalog") as typeof import("./gc/gc-bags-catalog");
+    return mod.gcBagsCatalogProducts;
+  },
+  bv: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bv/bv-bags-catalog") as typeof import("./bv/bv-bags-catalog");
+    return mod.bvBagsCatalogProducts;
+  },
+  ch: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ch/ch-bags-catalog") as typeof import("./ch/ch-bags-catalog");
+    return mod.chBagsCatalogProducts;
+  },
+  ce: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ce/ce-bags-catalog") as typeof import("./ce/ce-bags-catalog");
+    return mod.ceBagsCatalogProducts;
+  },
+  vw: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./vw/vw-bags-catalog") as typeof import("./vw/vw-bags-catalog");
+    return mod.vwBagsCatalogProducts;
+  },
+  pr: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./pr/pr-bags-catalog") as typeof import("./pr/pr-bags-catalog");
+    return mod.prBagsCatalogProducts;
+  },
+  di: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./di/di-bags-catalog") as typeof import("./di/di-bags-catalog");
+    return mod.diBagsCatalogProducts;
+  },
+  mb: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./mb/mb-bags-catalog") as typeof import("./mb/mb-bags-catalog");
+    return mod.mbBagsCatalogProducts;
+  },
+};
+
+export function loadBrandBagsCatalog(key: BrandCatalogKey): Product[] {
+  const loader = BAGS_LOADERS[key];
+  if (!loader) return [];
+  return cached(bagsCache, key, loader);
+}
+
+export function loadAllBagsCatalogs(): Product[] {
+  if (!allBagsCache) {
+    const out: Product[] = [];
+    for (const key of BAGS_BRAND_KEYS) {
+      out.push(...loadBrandBagsCatalog(key));
+    }
+    allBagsCache = out;
+  }
+  return allBagsCache;
 }
 
 /** Core multi-brand catalogue (excludes Saint Laurent — still YS-lazy). */
@@ -284,6 +381,8 @@ export function resolveBrandCatalogKeys(
   if (!sub) {
     // Watches category is Christopher Ward only — do not parse luxury JSON.
     if (category === "watches") return ["cw"];
+    // Bags hub — only brands with bag SKUs (bags slices), not every RTW catalogue.
+    if (category === "bags") return [...BAGS_BRAND_KEYS];
     return "all";
   }
   if (isYsShopSub(sub)) return [];
@@ -303,8 +402,22 @@ export function loadCatalogsForShop(
   sub?: string,
 ): Product[] {
   const keys = resolveBrandCatalogKeys(category, sub);
-  if (keys === "all") return loadAllBrandCatalogs();
+  const bagsOnly = category === "bags";
+
+  if (keys === "all") {
+    return bagsOnly ? loadAllBagsCatalogs() : loadAllBrandCatalogs();
+  }
   if (keys.length === 0) return [];
+
+  if (bagsOnly) {
+    const out: Product[] = [];
+    for (const key of keys) {
+      // Prefer bags slice; empty when brand has no bags file (e.g. AllSaints WIP).
+      out.push(...loadBrandBagsCatalog(key));
+    }
+    return out;
+  }
+
   if (keys.length === 1) return loadBrandCatalog(keys[0]);
   const out: Product[] = [];
   for (const key of keys) {
