@@ -317,10 +317,10 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Paul Smith",
     nameKo: "폴 스미스",
     logoSrc: "/brands/paul-smith.svg",
+    // Locked AW26 campaign pair (headphones + tailoring) — top-anchored faces.
     images: [
       "/banners/brand-paul-smith-1.jpg",
       "/banners/brand-paul-smith-2.jpg",
-      "/banners/brand-paul-smith-3.jpg",
     ],
   },
   belstaff: {

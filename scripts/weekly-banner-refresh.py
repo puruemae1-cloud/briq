@@ -120,9 +120,7 @@ SLOT_THEMES: dict[str, list[str]] = {
     "brand-arcteryx-1.jpg": ["brand:arcteryx"],
     "brand-arcteryx-2.jpg": ["brand:arcteryx"],
     "brand-arcteryx-3.jpg": ["brand:arcteryx"],
-    "brand-paul-smith-1.jpg": ["brand:paul-smith"],
-    "brand-paul-smith-2.jpg": ["brand:paul-smith"],
-    "brand-paul-smith-3.jpg": ["brand:paul-smith"],
+    # brand-paul-smith-1/2 locked (FIXED_PAUL_SMITH_BRAND_BANNERS) — not rotated weekly
     "brand-belstaff-1.jpg": ["brand:belstaff"],
     "brand-belstaff-2.jpg": ["brand:belstaff"],
     "brand-belstaff-3.jpg": ["brand:belstaff"],
@@ -225,6 +223,14 @@ assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Lauren
 FIXED_ALL_SAINTS_BRAND_BANNER = "brand-all-saints.jpg"
 assert FIXED_ALL_SAINTS_BRAND_BANNER not in SLOT_THEMES, "locked AllSaints brand banner must not be in SLOT_THEMES"
 
+# Paul Smith brand heroes — locked AW26 campaign pair (clothing).
+FIXED_PAUL_SMITH_BRAND_BANNERS = (
+    "brand-paul-smith-1.jpg",
+    "brand-paul-smith-2.jpg",
+)
+for _ps in FIXED_PAUL_SMITH_BRAND_BANNERS:
+    assert _ps not in SLOT_THEMES, "locked Paul Smith brand banner must not be in SLOT_THEMES"
+
 # Gucci handbags brand hero — locked Primavera / GG Marmont bedroom creative.
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
@@ -309,6 +315,7 @@ LOCKED_BANNERS = {
     FIXED_CELINE_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
+    *FIXED_PAUL_SMITH_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
     FIXED_DIOR_SHOES_BRAND_BANNER,

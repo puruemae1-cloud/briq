@@ -648,16 +648,26 @@
       "shop": true
     },
     "brand-paul-smith-1.jpg": {
-      "sourceProductId": "ps-the-soho-tailored-fit-black-wool-a-suit-to-travel-in-suit-suit2",
-      "sourceImage": "/products/ps-pdp/the-soho-tailored-fit-black-wool-a-suit-to-travel-in-suit-suit2/5.jpg",
-      "focal": "46% 22%",
-      "shop": true
+      "locked": true,
+      "sourceProductId": "fixed-paulsmith-aw26-headphones",
+      "sourceImage": "local:paulsmith-aw26-headphones",
+      "focal": "50% 18%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "sourceAspect": 0.714,
+      "note": "fixed creative — Paul Smith AW26 campaign 5x7_18 headphones; top-anchored face"
     },
     "brand-paul-smith-2.jpg": {
-      "sourceProductId": "ps-susan-bijl-x-paul-smith-blue-mixed-stripe-the-new-pouch-medium",
-      "sourceImage": "/products/ps-pdp/susan-bijl-x-paul-smith-blue-mixed-stripe-the-new-pouch-medium/3.jpg",
-      "focal": "75% 42%",
-      "shop": true
+      "locked": true,
+      "sourceProductId": "fixed-paulsmith-aw26-tailoring",
+      "sourceImage": "local:paulsmith-aw26-tailoring",
+      "focal": "62% 18%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "sourceAspect": 0.714,
+      "note": "fixed creative — Paul Smith AW26 campaign 5x7_13 tailoring; face-right upper"
     },
     "brand-paul-smith-3.jpg": {
       "sourceProductId": "ps-regular-fit-blue-stripe-shirt",

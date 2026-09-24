@@ -91,6 +91,12 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Saint Laurent RTW — Winter 26 lookbook #44; top-anchored faces + jewelry */
   "brand-saint-laurent.jpg": "48% 18%",
   "brand-saint-laurent.webp": "48% 18%",
+  /* Paul Smith AW26 campaign — headphones still; keep face + orange cans upper */
+  "brand-paul-smith-1.jpg": "50% 18%",
+  "brand-paul-smith-1.webp": "50% 18%",
+  /* Paul Smith AW26 campaign — tailoring still; face sits right-upper */
+  "brand-paul-smith-2.jpg": "62% 18%",
+  "brand-paul-smith-2.webp": "62% 18%",
   /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
   "brand-celine-bags.jpg": "50% 32%",
   "brand-celine-bags.webp": "50% 32%",
