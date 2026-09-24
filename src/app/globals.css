@@ -630,17 +630,6 @@ a.chip[href*="sub=gg-sale"].is-active {
     gap: 0.3em;
   }
 
-  /* VW bags brand hero — short cover strip clipped the bag/strap; show full product. */
-  .shop-hero--brand.shop-hero--vw-bags {
-    height: clamp(18rem, 42vw, 32rem);
-    background: #f3f1ec;
-  }
-
-  .shop-hero--brand.shop-hero--vw-bags .shop-hero__img {
-    object-fit: contain !important;
-    object-position: 50% 50% !important;
-  }
-
   /* Chanel shoes — wide PC cover crop clipped the CC heel logo; bias lower. */
   .shop-hero--brand.shop-hero--chanel-shoes .shop-hero__img {
     object-position: 42% 88% !important;
@@ -1667,10 +1656,6 @@ body:has(.nav-drawer-toggle:checked) {
   .lookbook__block {
     content-visibility: visible;
     contain: none;
-  }
-
-  .back-to-top {
-    display: none;
   }
 
   /* Blur filters are expensive while scrolling product grids */
@@ -3630,6 +3615,11 @@ html[data-shop-navigating] .shop-browse__controls {
   opacity: 0.4;
   transition: opacity 0.12s ease;
   pointer-events: none;
+}
+
+/* Header / hard shop nav — same progress cue as home logo */
+html[data-shop-navigating] {
+  cursor: progress;
 }
 
 .chip.is-pending {
@@ -6935,14 +6925,34 @@ body:has(.pdp-dock) .back-to-top {
   justify-content: center;
   width: 2.85rem;
   height: 2.85rem;
+  margin: 0;
+  padding: 0;
   border: 1px solid rgba(247, 244, 236, 0.28);
   background: rgba(11, 18, 16, 0.88);
   color: #f7f4ec;
+  font: inherit;
   font-size: 1.15rem;
   line-height: 1;
+  cursor: pointer;
   text-decoration: none;
   box-shadow: 0 10px 28px rgba(11, 18, 16, 0.28);
-  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 @media (min-width: 900px) {
@@ -6954,6 +6964,10 @@ body:has(.pdp-dock) .back-to-top {
 .back-to-top:hover {
   background: #000;
   border-color: rgba(183, 161, 106, 0.55);
+  transform: translateY(-2px);
+}
+
+.back-to-top.is-visible:hover {
   transform: translateY(-2px);
 }
 

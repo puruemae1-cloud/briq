@@ -180,9 +180,6 @@ export default async function ShopPage({ searchParams }: Props) {
       ? pickRotating(ALL_PRODUCTS_HERO_IMAGES, 0)
       : pickShopHero(category, sub);
   const heroFile = heroImage.split("/").pop() || "";
-  const isVwBagsHero = /brand-vivienne-westwood-bags\.(jpg|webp)$/.test(
-    heroFile,
-  );
   const isChanelShoesHero = /brand-chanel-shoes\.(jpg|webp)$/.test(heroFile);
   const heroEyebrow = isNewArrivals
     ? "New Season Edit"
@@ -210,8 +207,8 @@ export default async function ShopPage({ searchParams }: Props) {
     <>
       <section
         className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}${
-          isVwBagsHero ? " shop-hero--vw-bags" : ""
-        }${isChanelShoesHero ? " shop-hero--chanel-shoes" : ""}`}
+          isChanelShoesHero ? " shop-hero--chanel-shoes" : ""
+        }`}
         aria-label={heroTitle}
       >
         <BannerImage
@@ -222,10 +219,7 @@ export default async function ShopPage({ searchParams }: Props) {
           loading="eager"
           fetchPriority="high"
           style={{
-            objectPosition: isVwBagsHero
-              ? "50% 50%"
-              : bannerFocalForSrc(heroImage, "center 45%"),
-            ...(isVwBagsHero ? { objectFit: "contain" as const } : {}),
+            objectPosition: bannerFocalForSrc(heroImage, "center 45%"),
           }}
         />
         <div className="shop-hero__shade" aria-hidden />

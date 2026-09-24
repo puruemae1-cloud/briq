@@ -230,7 +230,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Vivienne Westwood",
     nameKo: "비비안웨스트우드",
     logoSrc: "/brands/vivienne-westwood.svg",
-    // Locked bags campaign creative with full bag silhouette retained.
+    // Locked Tasha Shoulder Phone Bag pastel pink — mid Orb logo.
     images: ["/banners/brand-vivienne-westwood-bags.jpg"],
   },
   burberry: {
