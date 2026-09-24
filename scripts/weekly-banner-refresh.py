@@ -229,6 +229,10 @@ assert FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Saint 
 FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER = "brand-vivienne-westwood-bags.jpg"
 assert FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Vivienne Westwood bags brand banner must not be in SLOT_THEMES"
 
+# Vivienne Westwood shoes brand hero — locked George Cox pair (embossed strap).
+FIXED_VIVIENNE_WESTWOOD_SHOES_BRAND_BANNER = "brand-vivienne-westwood-shoes.jpg"
+assert FIXED_VIVIENNE_WESTWOOD_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Vivienne Westwood shoes brand banner must not be in SLOT_THEMES"
+
 # AllSaints brand hero — locked AW26 campaign RTW.
 FIXED_ALL_SAINTS_BRAND_BANNER = "brand-all-saints.jpg"
 assert FIXED_ALL_SAINTS_BRAND_BANNER not in SLOT_THEMES, "locked AllSaints brand banner must not be in SLOT_THEMES"
@@ -337,6 +341,7 @@ LOCKED_BANNERS = {
     FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
     FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER,
     FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER,
+    FIXED_VIVIENNE_WESTWOOD_SHOES_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
     *FIXED_GALVIN_GREEN_BRAND_BANNERS,

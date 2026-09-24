@@ -113,9 +113,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine shoes — Runner calfskin/suede/mesh top-down pair */
   "brand-celine-shoes.jpg": "50% 48%",
   "brand-celine-shoes.webp": "50% 48%",
-  /* Vivienne Westwood x George Cox creative — keep both shoes centered */
-  "brand-vivienne-westwood-shoes.jpg": "50% 47%",
-  "brand-vivienne-westwood-shoes.webp": "50% 47%",
+  /* Vivienne Westwood x George Cox — bias lower so embossed Vivienne strap stays in PC strip */
+  "brand-vivienne-westwood-shoes.jpg": "50% 66%",
+  "brand-vivienne-westwood-shoes.webp": "50% 66%",
   /* Vivienne Westwood Tasha pastel pink — mid-frame Orb logo */
   "brand-vivienne-westwood-bags.jpg": "42% 55%",
   "brand-vivienne-westwood-bags.webp": "42% 55%",
