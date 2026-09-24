@@ -14,6 +14,18 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(vw-|vivienne)/i, key: "vivienne-westwood" },
   { re: /^(bb-|burberry)/i, key: "burberry" },
   { re: /^(ch-watches|chanel-watches)/i, key: "chanel-watches" },
+  {
+    re: /^(chanel-shoes|ch-shoes|ch-women-(pumps|ballet|elegant-sandals|casual-sandals|loafers|boots|sneakers))/i,
+    key: "chanel-shoes",
+  },
+  {
+    re: /^(chanel-bags|ch-handbags|ch-women-(flap-bags|hobo-bags|tote-bowling-bags|bucket-bags|backpacks|evening-bags|mini-bags))/i,
+    key: "chanel-bags",
+  },
+  {
+    re: /^(chanel-accessories|ch-jewellery|ch-slg|ch-sunglasses|ch-fragrance|ch-makeup|ch-skincare|ch-other|ch-high-jewellery|ch-fine-jewellery|ch-women-(earrings|necklaces|bracelets|rings|brooches))/i,
+    key: "chanel-accessories",
+  },
   { re: /^(ch-|chanel)/i, key: "chanel" },
   { re: /^(pr-|prada)/i, key: "prada" },
   { re: /^(arcteryx-shoes|ax-shoes)/i, key: "arcteryx-shoes" },

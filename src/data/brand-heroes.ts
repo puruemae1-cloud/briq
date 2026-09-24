@@ -32,6 +32,8 @@ export type BrandKey =
   | "chanel"
   | "chanel-watches"
   | "chanel-shoes"
+  | "chanel-bags"
+  | "chanel-accessories"
   | "dior-watches"
   | "dior-bags"
   | "dior-mens-rtw"
@@ -285,6 +287,22 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/chanel.svg",
     // Locked shoes creative — barefoot sandals / CC heel editorial.
     images: ["/banners/brand-chanel-shoes.jpg"],
+  },
+  "chanel-bags": {
+    key: "chanel-bags",
+    nameEn: "Chanel",
+    nameKo: "샤넬",
+    logoSrc: "/brands/chanel.svg",
+    // Locked Como cruise bag creative — bags PLP (not RTW clothing).
+    images: ["/banners/brand-chanel-como-bag.jpg"],
+  },
+  "chanel-accessories": {
+    key: "chanel-accessories",
+    nameEn: "Chanel",
+    nameKo: "샤넬",
+    logoSrc: "/brands/chanel.svg",
+    // Same Como bag still used before RTW split — accessories PLP.
+    images: ["/banners/brand-chanel-como-bag.jpg"],
   },
   prada: {
     key: "prada",
@@ -690,7 +708,15 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "burberry-accessories": "burberry",
   "burberry-gifts": "burberry",
   chanel: "chanel",
-  "chanel-bags": "chanel",
+  "chanel-bags": "chanel-bags",
+  "ch-handbags": "chanel-bags",
+  "ch-women-flap-bags": "chanel-bags",
+  "ch-women-hobo-bags": "chanel-bags",
+  "ch-women-tote-bowling-bags": "chanel-bags",
+  "ch-women-bucket-bags": "chanel-bags",
+  "ch-women-backpacks": "chanel-bags",
+  "ch-women-evening-bags": "chanel-bags",
+  "ch-women-mini-bags": "chanel-bags",
   "chanel-shoes": "chanel-shoes",
   "ch-shoes": "chanel-shoes",
   "ch-women-pumps-slingbacks": "chanel-shoes",
@@ -700,7 +726,14 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "ch-women-loafers": "chanel-shoes",
   "ch-women-boots": "chanel-shoes",
   "ch-women-sneakers": "chanel-shoes",
-  "chanel-accessories": "chanel",
+  "chanel-accessories": "chanel-accessories",
+  "ch-jewellery": "chanel-accessories",
+  "ch-slg": "chanel-accessories",
+  "ch-sunglasses": "chanel-accessories",
+  "ch-fragrance": "chanel-accessories",
+  "ch-makeup": "chanel-accessories",
+  "ch-skincare": "chanel-accessories",
+  "ch-other-accessories": "chanel-accessories",
   "chanel-watches": "chanel-watches",
   "ch-watches": "chanel-watches",
   prada: "prada",
