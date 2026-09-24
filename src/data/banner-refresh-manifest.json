@@ -787,6 +787,26 @@
       "focal": "39% 58%",
       "note": "fixed creative — Celine Francoise EP001CPLB temple CELINE wordmark"
     },
+    "brand-all-saints.jpg": {
+      "locked": true,
+      "focal": "50% 28%",
+      "note": "fixed creative — AllSaints AW26 editorial leather pea coat (JR LB_4x5_00033), upper face+collar"
+    },
+    "brand-all-saints-shoes.jpg": {
+      "locked": true,
+      "focal": "50% 72%",
+      "note": "fixed creative — AllSaints Lila W129FF-5 side packshot (lower shoe)"
+    },
+    "brand-all-saints-bags.jpg": {
+      "locked": true,
+      "focal": "50% 50%",
+      "note": "fixed creative — AllSaints bags PLP black field + white wordmark"
+    },
+    "brand-all-saints-accessories.jpg": {
+      "locked": true,
+      "focal": "43% 64%",
+      "note": "fixed creative — AllSaints Emrys Aviator M203XF-5 3/4 temple still (mid-lower)"
+    },
     "brand-celine-signature.jpg": {
       "locked": true,
       "focal": "50% 28%",
@@ -886,6 +906,17 @@
     ],
     "accessories:bottega-veneta-accessories": [
       "/banners/brand-bottega-veneta-accessories.jpg"
-    ]
+    ],
+    "brand-chanel.jpg": {
+      "sourceProductId": "fixed-chanel-rtw-header",
+      "sourceImage": "local:chanel-rtw-header",
+      "focal": "62% 22%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 2.057,
+      "note": "Chanel GB RTW header — staircase/mirrors; upper-face focal"
+    }
   }
 }

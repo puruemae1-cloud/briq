@@ -25,6 +25,8 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   "brand-burberry-shoes.jpg": "50% 72%",
   "brand-burberry-shoes.webp": "50% 72%",
   /* CC logo sits ~36% x / 42% y after crop — keep it in the shop-hero strip */
+  "brand-chanel.jpg": "62% 22%",
+  "brand-chanel.webp": "62% 22%",
   "brand-chanel-como-bag.jpg": "36% 42%",
   "brand-chanel-como-bag.webp": "36% 42%",
   /* Shoes barefoot sandals — CC heel + feet (mobile/tablet). PC overrides to 42% 88% in globals.css */
@@ -69,6 +71,18 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine accessories — Francoise temple still; keep CELINE gold wordmark */
   "brand-celine-accessories.jpg": "39% 58%",
   "brand-celine-accessories.webp": "39% 58%",
+  /* AllSaints clothing — AW26 editorial leather pea coat; keep face + collar upper */
+  "brand-all-saints.jpg": "50% 28%",
+  "brand-all-saints.webp": "50% 28%",
+  /* AllSaints shoes — Lila W129FF-5 side packshot; keep stiletto + ankle strap lower */
+  "brand-all-saints-shoes.jpg": "50% 72%",
+  "brand-all-saints-shoes.webp": "50% 72%",
+  /* AllSaints bags — black field + white ALLSAINTS wordmark */
+  "brand-all-saints-bags.jpg": "50% 50%",
+  "brand-all-saints-bags.webp": "50% 50%",
+  /* AllSaints accessories — Emrys Aviator M203XF-5 3/4 still; mid-lower + temple wordmark */
+  "brand-all-saints-accessories.jpg": "43% 64%",
+  "brand-all-saints-accessories.webp": "43% 64%",
   /* Celine signature RTW — shearling jacket CELINE PARIS neck label (upper centre) */
   "brand-celine-signature.jpg": "50% 28%",
   "brand-celine-signature.webp": "50% 28%",

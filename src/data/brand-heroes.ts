@@ -51,6 +51,10 @@ export type BrandKey =
   | "mulberry"
   | "mulberry-bags"
   | "mulberry-accessories"
+  | "all-saints"
+  | "all-saints-shoes"
+  | "all-saints-bags"
+  | "all-saints-accessories"
   | "london-undercover";
 
 export type BrandHeroDef = {
@@ -259,8 +263,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    // Locked Como cruise bag creative — bags / accessories (not watches/shoes).
-    images: ["/banners/brand-chanel-como-bag.jpg"],
+    // Locked RTW staircase / mirror hero (GB ready-to-wear header) — upper face focal.
+    images: ["/banners/brand-chanel.jpg"],
   },
   "chanel-watches": {
     key: "chanel-watches",
@@ -396,6 +400,38 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/mulberry.svg",
     // Locked accessories PLP creative — JA26 Lily snakeskin red editorial.
     images: ["/banners/brand-mulberry-accessories.jpg"],
+  },
+  "all-saints": {
+    key: "all-saints",
+    nameEn: "AllSaints",
+    nameKo: "올세인츠",
+    logoSrc: "/brands/all-saints.svg",
+    // AW26 editorial leather pea coat (JR … LB_4x5_00033) — upper face + collar.
+    images: ["/banners/brand-all-saints.jpg"],
+  },
+  "all-saints-shoes": {
+    key: "all-saints-shoes",
+    nameEn: "AllSaints",
+    nameKo: "올세인츠",
+    logoSrc: "/brands/all-saints.svg",
+    // Lila ankle-strap leather heeled sandal (W129FF-5) side packshot — lower shoe.
+    images: ["/banners/brand-all-saints-shoes.jpg"],
+  },
+  "all-saints-bags": {
+    key: "all-saints-bags",
+    nameEn: "AllSaints",
+    nameKo: "올세인츠",
+    logoSrc: "/brands/all-saints.svg",
+    // Locked black field + white ALLSAINTS wordmark for bags PLP.
+    images: ["/banners/brand-all-saints-bags.jpg"],
+  },
+  "all-saints-accessories": {
+    key: "all-saints-accessories",
+    nameEn: "AllSaints",
+    nameKo: "올세인츠",
+    logoSrc: "/brands/all-saints.svg",
+    // Emrys Aviator (M203XF-5) 3/4 temple still — mid-lower gold arm + ALLSAINTS.
+    images: ["/banners/brand-all-saints-accessories.jpg"],
   },
   "dior-watches": {
     key: "dior-watches",
@@ -861,6 +897,65 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "mb-women-acc": "mulberry-accessories",
   "mb-men-acc": "mulberry-accessories",
   "mb-gifts": "mulberry-accessories",
+  "all-saints": "all-saints",
+  "al-women": "all-saints",
+  "al-men": "all-saints",
+  "al-men-rtw-all": "all-saints",
+  "al-women-rtw-all": "all-saints",
+  "al-men-coats-jackets": "all-saints",
+  "al-men-jeans": "all-saints",
+  "al-men-knitwear": "all-saints",
+  "al-men-leathers": "all-saints",
+  "al-men-leather-jackets": "all-saints",
+  "al-men-shirts": "all-saints",
+  "al-men-sweatshirts-hoodies": "all-saints",
+  "al-men-tshirts": "all-saints",
+  "al-men-trousers": "all-saints",
+  "al-men-sweatpants": "all-saints",
+  "al-women-coats-jackets": "all-saints",
+  "al-women-dresses": "all-saints",
+  "al-women-jeans": "all-saints",
+  "al-women-knitwear": "all-saints",
+  "al-women-leather": "all-saints",
+  "al-women-leather-jackets": "all-saints",
+  "al-women-shirts": "all-saints",
+  "al-women-skirts-shorts": "all-saints",
+  "al-women-sweatshirts-hoodies": "all-saints",
+  "al-women-tshirts": "all-saints",
+  "al-women-tops-shirts": "all-saints",
+  "al-women-trousers-leggings": "all-saints",
+  "all-saints-shoes": "all-saints-shoes",
+  "al-women-shoes": "all-saints-shoes",
+  "al-men-shoes": "all-saints-shoes",
+  "al-women-shoes-all": "all-saints-shoes",
+  "al-men-shoes-all": "all-saints-shoes",
+  "al-women-boots": "all-saints-shoes",
+  "al-men-boots": "all-saints-shoes",
+  "al-women-flats": "all-saints-shoes",
+  "al-women-heels": "all-saints-shoes",
+  "al-women-trainers": "all-saints-shoes",
+  "al-men-casual-shoes": "all-saints-shoes",
+  "al-men-trainers": "all-saints-shoes",
+  "all-saints-bags": "all-saints-bags",
+  "al-women-bags": "all-saints-bags",
+  "al-men-bags-group": "all-saints-bags",
+  "al-women-handbags": "all-saints-bags",
+  "al-men-bags": "all-saints-bags",
+  "all-saints-accessories": "all-saints-accessories",
+  "al-women-accessories": "all-saints-accessories",
+  "al-men-accessories": "all-saints-accessories",
+  "al-women-acc-all": "all-saints-accessories",
+  "al-men-acc-all": "all-saints-accessories",
+  "al-women-sunglasses": "all-saints-accessories",
+  "al-men-sunglasses": "all-saints-accessories",
+  "al-women-belts": "all-saints-accessories",
+  "al-men-belts": "all-saints-accessories",
+  "al-women-scarves": "all-saints-accessories",
+  "al-women-hats": "all-saints-accessories",
+  "al-men-hats": "all-saints-accessories",
+  "al-women-jewellery": "all-saints-accessories",
+  "al-men-jewellery": "all-saints-accessories",
+  "al-men-wallets": "all-saints-accessories",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };

@@ -193,7 +193,7 @@ assert FIXED_CW_BRAND_BANNER not in SLOT_THEMES, "locked CW brand banner must no
 
 # Chanel brand heroes — locked creatives (watches vs bags/shoes/accessories).
 FIXED_CHANEL_WATCH_BANNER = "brand-chanel-premiere.jpg"
-FIXED_CHANEL_BRAND_BANNER = "brand-chanel-como-bag.jpg"
+FIXED_CHANEL_BRAND_BANNER = "brand-chanel.jpg"
 FIXED_CHANEL_SHOES_BRAND_BANNER = "brand-chanel-shoes.jpg"
 assert FIXED_CHANEL_WATCH_BANNER not in SLOT_THEMES, "locked Chanel watch banner must not be in SLOT_THEMES"
 assert FIXED_CHANEL_BRAND_BANNER not in SLOT_THEMES, "locked Chanel brand banner must not be in SLOT_THEMES"
