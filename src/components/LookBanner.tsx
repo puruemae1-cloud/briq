@@ -1,7 +1,7 @@
-import Link from "next/link";
 import type { CSSProperties } from "react";
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { BannerImage } from "@/components/BannerImage";
+import { ShopFastLink } from "@/components/ShopFastLink";
 import { pickRotating, type LookBanner } from "@/data/home-banners";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 
@@ -55,13 +55,13 @@ export function LookBannerBlock({
           <BannerCarousel slides={slides} />
           <div className="look-banner__content">
             {titleBlock}
-            <Link href={banner.href} className="look-banner__cta">
+            <ShopFastLink href={banner.href} className="look-banner__cta">
               {banner.cta}
-            </Link>
+            </ShopFastLink>
           </div>
         </>
       ) : (
-        <Link
+        <ShopFastLink
           href={banner.href}
           className="look-banner__hit"
           aria-label={banner.cta}
@@ -80,7 +80,7 @@ export function LookBannerBlock({
             {titleBlock}
             <span className="look-banner__cta">{banner.cta}</span>
           </div>
-        </Link>
+        </ShopFastLink>
       )}
     </section>
   );

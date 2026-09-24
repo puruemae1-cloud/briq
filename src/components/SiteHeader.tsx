@@ -4,6 +4,7 @@ import { navCategories, type NavChild } from "@/data/categories";
 import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
+import { ShopFastLink } from "@/components/ShopFastLink";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 
 function brandLinkClass(id: string, extra?: string) {
@@ -39,7 +40,7 @@ function BrandLinks({
 
         return (
           <div key={child.id} className="nav-dropdown__group">
-            <Link
+            <ShopFastLink
               href={child.href}
               className={brandLinkClass(
                 child.id,
@@ -49,17 +50,17 @@ function BrandLinks({
               )}
             >
               {child.labelKo}
-            </Link>
+            </ShopFastLink>
             {showNest ? (
               <div className="nav-dropdown__nest nav-dropdown__nest--d1">
                 {nest!.map((sub) => (
-                  <Link
+                  <ShopFastLink
                     key={sub.id}
                     href={sub.href}
                     className={brandLinkClass(sub.id)}
                   >
                     {sub.labelKo}
-                  </Link>
+                  </ShopFastLink>
                 ))}
               </div>
             ) : null}
@@ -83,6 +84,7 @@ function MobileBrandBranch({
 
   return (
     <div className="mobile-drawer__brand">
+      {/* Native <a> = hard navigation (instant leave); no client handler needed. */}
       <a
         href={child.href}
         className={[
@@ -144,10 +146,10 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
             {navCategories.map((c) =>
               c.children?.length ? (
                 <div key={c.id} className="nav-item">
-                  <Link href={c.href} className="site-nav__link">
+                  <ShopFastLink href={c.href} className="site-nav__link">
                     {c.labelKo}
                     <ChevronDown size={14} aria-hidden />
-                  </Link>
+                  </ShopFastLink>
                   <div className="nav-dropdown">
                     <BrandLinks
                       items={c.children}
@@ -156,9 +158,9 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
                   </div>
                 </div>
               ) : (
-                <Link key={c.id} href={c.href} className="site-nav__link">
+                <ShopFastLink key={c.id} href={c.href} className="site-nav__link">
                   {c.labelKo}
-                </Link>
+                </ShopFastLink>
               ),
             )}
           </nav>

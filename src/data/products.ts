@@ -1,20 +1,11 @@
-import type { SubcategoryId } from "@/data/categories";
 import { expandSubcategoryFilter } from "@/data/categories";
-import { cwProducts } from "@/data/cw/cw-products";
-import { ggCatalogProducts } from "@/data/gg/gg-catalog";
-import { bbCatalogProducts } from "@/data/bb/bb-catalog";
-import { axCatalogProducts } from "@/data/ax/ax-catalog";
-import { axApparelCatalogProducts } from "@/data/ax/ax-apparel-catalog";
-import { axOutletCatalogProducts } from "@/data/ax/ax-outlet-catalog";
-import { axGearCatalogProducts } from "@/data/ax/ax-gear-catalog";
-import { luCatalogProducts } from "@/data/lu/lu-catalog";
-import { luLifestyleCatalogProducts } from "@/data/lu/lu-lifestyle-catalog";
-import { psCatalogProducts } from "@/data/ps/ps-catalog";
-import { bsCatalogProducts } from "@/data/bs/bs-catalog";
-import { gcCatalogProducts } from "@/data/gc/gc-catalog";
-import { bvCatalogProducts } from "@/data/bv/bv-catalog";
-import { chCatalogProducts } from "@/data/ch/ch-catalog";
-import { ceCatalogProducts } from "@/data/ce/ce-catalog";
+import {
+  brandCatalogKeyFromProductId,
+  loadAllBrandCatalogs,
+  loadBrandCatalog,
+  loadCatalogsForShop,
+  type BrandCatalogKey,
+} from "@/data/brand-catalogs-lazy";
 // Saint Laurent is lazy-merged in getProductsByCategory / getProduct — a static
 // `ysCatalogProducts` import parses ~14MB JSON into every shop serverless
 // cold start and OOMs `/api/products/shop?category=all` on Vercel.
@@ -22,12 +13,6 @@ import {
   getYsCatalogProducts,
   isYsShopSub,
 } from "@/data/ys/ys-catalog-lazy";
-import { vwCatalogProducts } from "@/data/vw/vw-catalog";
-import { alCatalogProducts } from "@/data/al/al-catalog";
-import { prCatalogProducts } from "@/data/pr/pr-catalog";
-import { lvCatalogProducts } from "@/data/lv/lv-catalog";
-import { diCatalogProducts } from "@/data/di/di-catalog";
-import { mbCatalogProducts } from "@/data/mb/mb-catalog";
 
 export type * from "@/data/product-types";
 export {
@@ -43,29 +28,33 @@ export {
 } from "@/data/product-utils";
 import type { Product } from "@/data/product-types";
 
-export const products: Product[] = [
-  ...cwProducts,
-  ...ggCatalogProducts,
-  ...bbCatalogProducts,
-  ...axCatalogProducts,
-  ...axApparelCatalogProducts,
-  ...axOutletCatalogProducts,
-  ...axGearCatalogProducts,
-  ...luCatalogProducts,
-  ...luLifestyleCatalogProducts,
-  ...psCatalogProducts,
-  ...bsCatalogProducts,
-  ...gcCatalogProducts,
-  ...bvCatalogProducts,
-  ...chCatalogProducts,
-  ...ceCatalogProducts,
-  ...vwCatalogProducts,
-  ...alCatalogProducts,
-  ...prCatalogProducts,
-  ...lvCatalogProducts,
-  ...diCatalogProducts,
-  ...mbCatalogProducts,
-];
+/**
+ * Lazy multi-brand catalogue (excludes YS). Prefer {@link getAllProducts} /
+ * {@link getProductsByCategory} so brand PLPs do not parse every JSON.
+ *
+ * Kept as a getter-backed array for sitemap / feed / Naver Pay callers.
+ */
+export const products: Product[] = new Proxy([] as Product[], {
+  get(_target, prop, receiver) {
+    const all = loadAllBrandCatalogs();
+    const value = Reflect.get(all, prop, all);
+    return typeof value === "function" ? (value as (...a: unknown[]) => unknown).bind(all) : value;
+  },
+  has(_target, prop) {
+    return Reflect.has(loadAllBrandCatalogs(), prop);
+  },
+  ownKeys() {
+    return Reflect.ownKeys(loadAllBrandCatalogs());
+  },
+  getOwnPropertyDescriptor(_target, prop) {
+    return Reflect.getOwnPropertyDescriptor(loadAllBrandCatalogs(), prop);
+  },
+});
+
+/** Explicit accessor — same catalogue as {@link products}. */
+export function getAllProducts(): Product[] {
+  return loadAllBrandCatalogs();
+}
 
 /** Re-export lazy YS accessor for callers that need the Saint Laurent catalogue. */
 export { getYsCatalogProducts };
@@ -93,7 +82,7 @@ function withYsCatalog(list: Product[]): Product[] {
 
 /** Homepage 100 Collection — full live catalogue (curation picks newest / tiers). */
 export function getCollection100() {
-  return products;
+  return loadAllBrandCatalogs();
 }
 
 function findInList(list: Product[], id: string): Product | undefined {
@@ -108,13 +97,15 @@ function findInList(list: Product[], id: string): Product | undefined {
 }
 
 export function getProduct(id: string) {
-  const fromCore = findInList(products, id);
-  if (fromCore) return fromCore;
-  // YS SKUs use the `ys-` prefix — load catalogue only for those PDPs.
-  if (id.startsWith("ys-")) {
+  const key = brandCatalogKeyFromProductId(id);
+  if (key === "ys") {
     return findInList(getYsCatalogProducts(), id);
   }
-  return undefined;
+  if (key) {
+    return findInList(loadBrandCatalog(key as BrandCatalogKey), id);
+  }
+  // Unknown prefix — fall back to full core scan (rare legacy SKUs).
+  return findInList(loadAllBrandCatalogs(), id);
 }
 
 function isGgShopFilter(expanded?: string[]) {
@@ -577,7 +568,10 @@ export function getProductsByCategory(
 ) {
   const includeYs =
     opts?.includeYs !== false && shouldIncludeYsCatalog(category, sub);
-  let list: Product[] = includeYs ? withYsCatalog(products) : products;
+  // Brand / leaf PLPs load only that brand's JSON — weekly catalogue growth
+  // must not slow every header brand click.
+  let list: Product[] = loadCatalogsForShop(category, sub);
+  if (includeYs) list = withYsCatalog(list);
   const expanded = expandSubcategoryFilter(sub);
   // Gift PLPs include apparel/bags/shoes tagged with gifts*; skip category gate.
   const isPsGifts =

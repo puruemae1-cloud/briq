@@ -1,5 +1,5 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
+import { ShopFastLink } from "@/components/ShopFastLink";
 import { brandDisplayNameForNavId } from "@/lib/brand-logos";
 import { navBrandFamily } from "@/lib/brand-nav-order";
 
@@ -42,7 +42,7 @@ export function BrandChipLink({
   const isBrand = isBrandChipNavId(navId);
 
   return (
-    <Link
+    <ShopFastLink
       href={href}
       className={
         className ||
@@ -53,6 +53,6 @@ export function BrandChipLink({
       aria-label={label}
     >
       {isBrand ? <BrandChipContent navId={navId} label={label} /> : label}
-    </Link>
+    </ShopFastLink>
   );
 }

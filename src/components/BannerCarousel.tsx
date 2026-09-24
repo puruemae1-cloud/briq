@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BannerImage } from "@/components/BannerImage";
+import { ShopFastLink } from "@/components/ShopFastLink";
 
 /**
  * Swipeable sports carousel with scroll-snap.
@@ -134,12 +134,11 @@ export function BannerCarousel({
         onTouchStart={pause}
       >
         {slides.map((slide, i) => (
-          <Link
+          <ShopFastLink
             key={slide.id}
             href={slide.href}
             className="banner-slide"
             aria-label={`${slide.labelKo} 카테고리로 이동`}
-            draggable={false}
           >
             <BannerImage
               src={slide.image}
@@ -148,7 +147,7 @@ export function BannerCarousel({
               loading={i === 0 ? "eager" : "lazy"}
             />
             <span className="banner-slide__label">{slide.labelKo}</span>
-          </Link>
+          </ShopFastLink>
         ))}
       </div>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShopFastLink } from "@/components/ShopFastLink";
 import { navCategories } from "@/data/categories";
 
 const bizNo = "725-86-02737";
@@ -26,11 +27,11 @@ export function SiteFooter() {
         </div>
         <div>
           <h4>Shop</h4>
-          <Link href="/shop">Shop (전체상품)</Link>
+          <ShopFastLink href="/shop">Shop (전체상품)</ShopFastLink>
           {navCategories.map((c) => (
-            <Link key={c.id} href={c.href}>
+            <ShopFastLink key={c.id} href={c.href}>
               {c.labelKo}
-            </Link>
+            </ShopFastLink>
           ))}
         </div>
         <div>

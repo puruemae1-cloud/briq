@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { BannerImage } from "@/components/BannerImage";
 import { CollectionBestsellerTier } from "@/components/CollectionReveal";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
+import { ShopFastLink } from "@/components/ShopFastLink";
 import { getCollection100, toProductCardProduct } from "@/data/products";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { curateCollectionEdit } from "@/lib/collection-edit";
@@ -45,12 +45,12 @@ export function Collection100() {
         <CollectionTierBlock tier="new" products={newItems} />
 
         <div className="collection-100__sentinel">
-          <Link
+          <ShopFastLink
             href="/shop?sort=new"
             className="btn btn-solid collection-100__more-btn"
           >
             신상 보러가기
-          </Link>
+          </ShopFastLink>
         </div>
       </div>
     </section>
