@@ -80,9 +80,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* AllSaints clothing — AW26 campaign denim; top-anchored face */
   "brand-all-saints.jpg": "52% 18%",
   "brand-all-saints.webp": "52% 18%",
-  /* AllSaints shoes — Lila W129FF-5 side packshot; keep stiletto + ankle strap lower */
-  "brand-all-saints-shoes.jpg": "50% 72%",
-  "brand-all-saints-shoes.webp": "50% 72%",
+  /* AllSaints shoes — Lila W129FF-5 side packshot; centered full shoe */
+  "brand-all-saints-shoes.jpg": "50% 50%",
+  "brand-all-saints-shoes.webp": "50% 50%",
   /* AllSaints bags — black field + white ALLSAINTS wordmark */
   "brand-all-saints-bags.jpg": "50% 50%",
   "brand-all-saints-bags.webp": "50% 50%",

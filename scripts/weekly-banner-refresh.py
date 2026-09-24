@@ -237,6 +237,10 @@ assert FIXED_VIVIENNE_WESTWOOD_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Vi
 FIXED_ALL_SAINTS_BRAND_BANNER = "brand-all-saints.jpg"
 assert FIXED_ALL_SAINTS_BRAND_BANNER not in SLOT_THEMES, "locked AllSaints brand banner must not be in SLOT_THEMES"
 
+# AllSaints shoes brand hero — locked Lila side packshot (full shoe).
+FIXED_ALL_SAINTS_SHOES_BRAND_BANNER = "brand-all-saints-shoes.jpg"
+assert FIXED_ALL_SAINTS_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked AllSaints shoes brand banner must not be in SLOT_THEMES"
+
 # Paul Smith brand heroes — locked AW26 campaign pair (clothing).
 FIXED_PAUL_SMITH_BRAND_BANNERS = (
     "brand-paul-smith-1.jpg",
@@ -343,6 +347,7 @@ LOCKED_BANNERS = {
     FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER,
     FIXED_VIVIENNE_WESTWOOD_SHOES_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
+    FIXED_ALL_SAINTS_SHOES_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
     *FIXED_GALVIN_GREEN_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
