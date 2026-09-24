@@ -85,9 +85,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* AllSaints accessories — Emrys Aviator M203XF-5 3/4 still; mid-lower + temple wordmark */
   "brand-all-saints-accessories.jpg": "43% 64%",
   "brand-all-saints-accessories.webp": "43% 64%",
-  /* Celine signature RTW — shearling jacket CELINE PARIS neck label (upper centre) */
-  "brand-celine-signature.jpg": "50% 28%",
-  "brand-celine-signature.webp": "50% 28%",
+  /* Celine signature RTW — Hiver 2026 lying model; keep face on the right */
+  "brand-celine-signature.jpg": "73% 28%",
+  "brand-celine-signature.webp": "73% 28%",
   /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
   "brand-celine-bags.jpg": "50% 32%",
   "brand-celine-bags.webp": "50% 32%",

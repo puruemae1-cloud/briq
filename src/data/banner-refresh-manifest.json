@@ -809,8 +809,14 @@
     },
     "brand-celine-signature.jpg": {
       "locked": true,
-      "focal": "50% 28%",
-      "note": "fixed creative — Celine lamb shearling 2F5381802 neck label still"
+      "sourceProductId": "fixed-celine-hiver-2026-rtw",
+      "sourceImage": "local:celine-hiver-2026-rotated",
+      "focal": "73% 28%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "sourceAspect": 1.25,
+      "note": "fixed creative — Celine Hiver 2026 Zoë Ghertner still, 90° CW; face-right focal"
     },
     "brand-celine-bags.jpg": {
       "locked": true,

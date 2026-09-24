@@ -128,7 +128,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Lamb shearling jacket (2F5381802) — CELINE PARIS neck label still.
+    // Locked Hiver 2026 Zoë Ghertner still — rotated 90° CW; face-right focal.
     images: ["/banners/brand-celine-signature.jpg"],
   },
   "celine-bags": {

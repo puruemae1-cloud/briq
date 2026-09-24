@@ -213,6 +213,10 @@ assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner
 FIXED_GUCCI_BRAND_BANNER = "brand-gucci.jpg"
 assert FIXED_GUCCI_BRAND_BANNER not in SLOT_THEMES, "locked Gucci brand banner must not be in SLOT_THEMES"
 
+# Celine brand hero — locked Hiver 2026 RTW (signature clothing).
+FIXED_CELINE_BRAND_BANNER = "brand-celine-signature.jpg"
+assert FIXED_CELINE_BRAND_BANNER not in SLOT_THEMES, "locked Celine brand banner must not be in SLOT_THEMES"
+
 # Gucci handbags brand hero — locked Primavera / GG Marmont bedroom creative.
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
@@ -294,6 +298,7 @@ LOCKED_BANNERS = {
     FIXED_GUCCI_BRAND_BANNER,
     FIXED_GUCCI_BAGS_BRAND_BANNER,
     FIXED_GUCCI_SHOES_BRAND_BANNER,
+    FIXED_CELINE_BRAND_BANNER,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
     FIXED_DIOR_SHOES_BRAND_BANNER,
