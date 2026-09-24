@@ -107,10 +107,10 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/rot-tennis-1.jpg",
   ],
   "sports:golf": [
-    "/banners/rot-golf-1.jpg",
-    "/banners/rot-golf-2.jpg",
-    "/banners/rot-golf-3.jpg",
-    "/banners/shop-golf-1.jpg",
+    "/banners/brand-galvin-green.jpg",
+  ],
+  "sports:galvin-green": [
+    "/banners/brand-galvin-green.jpg",
   ],
   "sports:running": [
     "/banners/rot-run-1.jpg",

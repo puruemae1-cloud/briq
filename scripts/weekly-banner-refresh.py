@@ -124,9 +124,7 @@ SLOT_THEMES: dict[str, list[str]] = {
     "brand-belstaff-1.jpg": ["brand:belstaff"],
     "brand-belstaff-2.jpg": ["brand:belstaff"],
     "brand-belstaff-3.jpg": ["brand:belstaff"],
-    "brand-galvin-green-1.jpg": ["brand:galvin-green"],
-    "brand-galvin-green-2.jpg": ["brand:galvin-green"],
-    "brand-galvin-green-3.jpg": ["brand:galvin-green"],
+    # brand-galvin-green-* locked (FIXED_GALVIN_GREEN_BRAND_BANNERS) — DryVR video
     "brand-christopher-ward-1.jpg": ["brand:christopher-ward"],
     "brand-christopher-ward-2.jpg": ["brand:christopher-ward"],
     "brand-christopher-ward-3.jpg": ["brand:christopher-ward"],
@@ -270,6 +268,16 @@ assert FIXED_PRADA_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Prada bags bran
 FIXED_PRADA_SHOES_BRAND_BANNER = "brand-prada-shoes.jpg"
 assert FIXED_PRADA_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Prada shoes brand banner must not be in SLOT_THEMES"
 
+# Galvin Green brand hero — locked DryVR Two collection video + poster.
+FIXED_GALVIN_GREEN_BRAND_BANNERS = (
+    "brand-galvin-green.jpg",
+    "brand-galvin-green-1.jpg",
+    "brand-galvin-green-2.jpg",
+    "brand-galvin-green-3.jpg",
+)
+for _gg in FIXED_GALVIN_GREEN_BRAND_BANNERS:
+    assert _gg not in SLOT_THEMES, "locked Galvin Green brand banner must not be in SLOT_THEMES"
+
 # Dior bags brand hero — locked All Bags forest bench creative.
 FIXED_DIOR_BAGS_BRAND_BANNER = "brand-dior-bags.jpg"
 assert FIXED_DIOR_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Dior bags brand banner must not be in SLOT_THEMES"
@@ -326,6 +334,7 @@ LOCKED_BANNERS = {
     FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
+    *FIXED_GALVIN_GREEN_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,
     FIXED_DIOR_SHOES_BRAND_BANNER,
@@ -381,7 +390,6 @@ SPORTS_SLOTS = {
     or n.startswith("shop-golf-")
     or n.startswith("shop-run-")
     or n.startswith("shop-shoe-train-")
-    or n.startswith("brand-galvin-green-")
 }
 
 # Product stills — shoes / bags / accessories / watches must stay readable after the PC crop.

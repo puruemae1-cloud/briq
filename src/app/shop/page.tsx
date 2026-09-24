@@ -15,6 +15,7 @@ import {
 import { pickRotating } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
+import { mediaUrl } from "@/lib/product-image";
 import { resolveShopBrand } from "@/lib/shop-brand";
 import {
   SHOP_PAGE_SIZE,
@@ -181,6 +182,10 @@ export default async function ShopPage({ searchParams }: Props) {
       : pickShopHero(category, sub);
   const heroFile = heroImage.split("/").pop() || "";
   const isChanelShoesHero = /brand-chanel-shoes\.(jpg|webp)$/.test(heroFile);
+  const heroVideoSrc = shopBrand?.videoSrc
+    ? mediaUrl(shopBrand.videoSrc)
+    : null;
+  const heroPosterSrc = heroVideoSrc ? mediaUrl(heroImage) : null;
   const heroEyebrow = isNewArrivals
     ? "New Season Edit"
     : isAllCatalogue
@@ -207,21 +212,35 @@ export default async function ShopPage({ searchParams }: Props) {
     <>
       <section
         className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}${
-          isChanelShoesHero ? " shop-hero--chanel-shoes" : ""
-        }`}
+          heroVideoSrc ? " shop-hero--video" : ""
+        }${isChanelShoesHero ? " shop-hero--chanel-shoes" : ""}`}
         aria-label={heroTitle}
       >
-        <BannerImage
-          className="shop-hero__img"
-          src={heroImage}
-          alt=""
-          aria-hidden
-          loading="eager"
-          fetchPriority="high"
-          style={{
-            objectPosition: bannerFocalForSrc(heroImage, "center 45%"),
-          }}
-        />
+        {heroVideoSrc ? (
+          <video
+            className="shop-hero__img shop-hero__video"
+            src={heroVideoSrc}
+            poster={heroPosterSrc || undefined}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden
+          />
+        ) : (
+          <BannerImage
+            className="shop-hero__img"
+            src={heroImage}
+            alt=""
+            aria-hidden
+            loading="eager"
+            fetchPriority="high"
+            style={{
+              objectPosition: bannerFocalForSrc(heroImage, "center 45%"),
+            }}
+          />
+        )}
         <div className="shop-hero__shade" aria-hidden />
         <div className="shop-hero__content">
           {shopBrand ? (

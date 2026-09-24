@@ -116,6 +116,15 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Vivienne Westwood Tasha pastel pink — mid-frame Orb logo */
   "brand-vivienne-westwood-bags.jpg": "42% 55%",
   "brand-vivienne-westwood-bags.webp": "42% 55%",
+  /* Galvin Green DryVR Two hero — poster still behind autoplay video */
+  "brand-galvin-green.jpg": "50% 45%",
+  "brand-galvin-green.webp": "50% 45%",
+  "brand-galvin-green-1.jpg": "50% 45%",
+  "brand-galvin-green-1.webp": "50% 45%",
+  "brand-galvin-green-2.jpg": "50% 45%",
+  "brand-galvin-green-2.webp": "50% 45%",
+  "brand-galvin-green-3.jpg": "50% 45%",
+  "brand-galvin-green-3.webp": "50% 45%",
   /* Vivienne Westwood Spring Cherubs — keep face and upper torso in frame */
   "brand-vivienne-westwood-womens-rtw.jpg": "50% 23%",
   "brand-vivienne-westwood-womens-rtw.webp": "50% 23%",

@@ -65,6 +65,8 @@ export type BrandHeroDef = {
   logoSrc: string;
   /** Shop-strip banners. Sports brands may rotate weekly; others stay fixed. */
   images: string[];
+  /** Optional autoplay muted loop (mp4) — used instead of stills when set. */
+  videoSrc?: string;
 };
 
 export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
@@ -340,11 +342,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Galvin Green",
     nameKo: "갈빈 그린",
     logoSrc: "/brands/galvin-green.svg",
+    // Locked DryVR Two collection hero (autoplay mp4 + poster stills).
     images: [
+      "/banners/brand-galvin-green.jpg",
       "/banners/brand-galvin-green-1.jpg",
       "/banners/brand-galvin-green-2.jpg",
       "/banners/brand-galvin-green-3.jpg",
     ],
+    videoSrc: "/banners/brand-galvin-green.mp4",
   },
   "christopher-ward": {
     key: "christopher-ward",
@@ -727,6 +732,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "belstaff-shoes": "belstaff",
   "belstaff-accessories": "belstaff",
   "galvin-green": "galvin-green",
+  golf: "galvin-green",
   "christopher-ward": "christopher-ward",
   "louis-vuitton": "louis-vuitton",
   "louis-vuitton-accessories": "louis-vuitton",

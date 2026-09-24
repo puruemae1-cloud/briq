@@ -560,6 +560,16 @@ a.chip[href*="sub=gg-sale"].is-active {
   display: block;
 }
 
+.shop-hero__video {
+  object-position: center center;
+  background: #0b1210;
+}
+
+.shop-hero--brand.shop-hero--video {
+  /* 16:9 DryVR hero — keep motion readable on all viewports */
+  height: clamp(14rem, 42vw, 30rem);
+}
+
 .shop-hero__shade {
   position: absolute;
   inset: 0;
