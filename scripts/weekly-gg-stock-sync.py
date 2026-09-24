@@ -3,6 +3,9 @@
 
 Re-fetches New Arrivals + Bestsellers products.json, updates matching variants by SKU,
 adds new handles, rebuilds gg-catalog.ts.
+
+Pale colourways (White / Sand / …) skip soft greymat on the product-images
+push; downloads rembg-composite onto #e7e7e7 instead (gg_pale_rembg.py).
 """
 from __future__ import annotations
 

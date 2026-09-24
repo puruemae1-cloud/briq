@@ -15,6 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from gg_pale_colour import is_pale_gg_row  # noqa: E402
+from gg_pale_rembg import rembg_only_greymat  # noqa: E402
 from studio_whiten import save_product_image  # noqa: E402
 
 RAW_PATH = ROOT / "src/data/gg/gg-catalog-raw.json"
@@ -367,7 +369,12 @@ def download_images(products: list[dict]) -> tuple[int, int]:
                     data = r.read()
                 if len(data) < 500:
                     continue
-                save_product_image(dest, data)
+                # Pale GG: keep Shopify bytes first, then rembg-only onto
+                # #e7e7e7. Soft remap washes white fabric (see gg_pale_rembg).
+                pale = is_pale_gg_row(p)
+                save_product_image(dest, data, greymat=not pale)
+                if pale:
+                    rembg_only_greymat(dest)
                 saved += 1
             except (urllib.error.URLError, TimeoutError, OSError) as e:
                 print(f"  warn image {handle}/{i}: {e}", flush=True)

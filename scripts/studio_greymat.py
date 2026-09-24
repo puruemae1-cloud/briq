@@ -23,6 +23,10 @@ keep images.arcteryx.com bytes (see ax_pale_colour.py).
 Belstaff pale colourways (white / chalk / pale-stone / silver / sand / …)
 keep Shopify CDN bytes (see bs_pale_colour.py) — rembg washed Walton trainers.
 
+Galvin Green pale colourways (white / sand / …) use rembg-only onto #e7e7e7
+(see gg_pale_colour.py / gg_pale_rembg.py) — soft remap washes white fabric,
+so greymat_dirs excludes pale GG handles (download path rembgs them).
+
 Importable helpers for scrapers / weekly syncs / image tag pushes.
 """
 from __future__ import annotations
@@ -280,6 +284,9 @@ def greymat_dirs(
 
     Belstaff pale colourways are excluded the same way (bs_pale_colour.py)
     under bs-pdp.
+
+    Galvin Green pale colourways are excluded the same way (gg_pale_colour.py)
+    under gg-pdp.
     """
     files = collect_images(dirs)
     if "ps-pdp" in dirs:
@@ -360,6 +367,26 @@ def greymat_dirs(
             print(
                 f"BS pale skip: excluded {before - len(files)} images "
                 f"across {len(skip_handles)} white/pale handles",
+                flush=True,
+            )
+    if "gg-pdp" in dirs:
+        try:
+            from gg_pale_colour import pale_gg_handles  # type: ignore
+
+            skip_handles = pale_gg_handles()
+        except Exception as e:
+            print(f"WARN: could not load GG pale handles ({e})", flush=True)
+            skip_handles = set()
+        if skip_handles:
+            before = len(files)
+            files = [
+                p
+                for p in files
+                if p.parent.name not in skip_handles
+            ]
+            print(
+                f"GG pale skip: excluded {before - len(files)} images "
+                f"across {len(skip_handles)} white/sand handles",
                 flush=True,
             )
     if limit:
