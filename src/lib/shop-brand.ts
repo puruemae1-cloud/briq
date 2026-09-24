@@ -20,6 +20,7 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(ax-|axa-|arcteryx)/i, key: "arcteryx" },
   { re: /^(paul-smith-shoes|ps-shoes)/i, key: "paul-smith-shoes" },
   { re: /^(ps-|paul-smith)/i, key: "paul-smith" },
+  { re: /^(belstaff-shoes|bs-shoes)/i, key: "belstaff-shoes" },
   { re: /^(bs-|belstaff)/i, key: "belstaff" },
   { re: /^(gg-|galvin)/i, key: "galvin-green" },
   { re: /^(cw-|christopher-ward)/i, key: "christopher-ward" },

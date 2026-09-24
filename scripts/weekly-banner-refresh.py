@@ -257,6 +257,10 @@ for _ps in FIXED_PAUL_SMITH_BRAND_BANNERS:
 FIXED_PAUL_SMITH_SHOES_BRAND_BANNER = "brand-paul-smith-shoes.jpg"
 assert FIXED_PAUL_SMITH_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Paul Smith shoes brand banner must not be in SLOT_THEMES"
 
+# Belstaff shoes brand hero — locked Munro Boot lifestyle (full boots lower crop).
+FIXED_BELSTAFF_SHOES_BRAND_BANNER = "brand-belstaff-shoes.jpg"
+assert FIXED_BELSTAFF_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Belstaff shoes brand banner must not be in SLOT_THEMES"
+
 # Gucci handbags brand hero — locked Primavera / GG Marmont bedroom creative.
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
@@ -359,6 +363,7 @@ LOCKED_BANNERS = {
     FIXED_ALL_SAINTS_SHOES_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
     FIXED_PAUL_SMITH_SHOES_BRAND_BANNER,
+    FIXED_BELSTAFF_SHOES_BRAND_BANNER,
     *FIXED_GALVIN_GREEN_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
     FIXED_DIOR_MENS_RTW_BRAND_BANNER,

@@ -46,6 +46,7 @@ export type BrandKey =
   | "paul-smith"
   | "paul-smith-shoes"
   | "belstaff"
+  | "belstaff-shoes"
   | "galvin-green"
   | "christopher-ward"
   | "louis-vuitton"
@@ -354,6 +355,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
       "/banners/brand-belstaff-2.jpg",
       "/banners/brand-belstaff-3.jpg",
     ],
+  },
+  "belstaff-shoes": {
+    key: "belstaff-shoes",
+    nameEn: "Belstaff",
+    nameKo: "벨스타프",
+    logoSrc: "/brands/belstaff.svg",
+    // Locked Munro Boot lifestyle still — full boots from lower crop.
+    images: ["/banners/brand-belstaff-shoes.jpg"],
   },
   "galvin-green": {
     key: "galvin-green",
@@ -769,8 +778,10 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "ps-shoes-women-other": "paul-smith-shoes",
   belstaff: "belstaff",
   "belstaff-bags": "belstaff",
-  "belstaff-shoes": "belstaff",
+  "belstaff-shoes": "belstaff-shoes",
   "belstaff-accessories": "belstaff",
+  "bs-shoes-men": "belstaff-shoes",
+  "bs-shoes-women": "belstaff-shoes",
   "galvin-green": "galvin-green",
   golf: "galvin-green",
   "christopher-ward": "christopher-ward",

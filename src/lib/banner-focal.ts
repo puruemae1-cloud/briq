@@ -51,6 +51,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Arc'teryx shoes — trail runners on rock; mid-lower footwear */
   "brand-arcteryx-shoes.jpg": "48% 70%",
   "brand-arcteryx-shoes.webp": "48% 70%",
+  /* Belstaff shoes — Munro Boot lifestyle; full boots lower crop */
+  "brand-belstaff-shoes.jpg": "42% 72%",
+  "brand-belstaff-shoes.webp": "42% 72%",
   /* Primavera handbags — model face + GG Marmont bag */
   "brand-gucci.jpg": "48% 20%",
   "brand-gucci.webp": "48% 20%",
