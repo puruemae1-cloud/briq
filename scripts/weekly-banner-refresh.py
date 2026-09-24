@@ -110,9 +110,7 @@ SLOT_THEMES: dict[str, list[str]] = {
     "shop-golf-1.jpg": ["golf"],
     "shop-run-1.jpg": ["outdoor"],
     # Brand category heroes (shop strip aspect) — one brand per key
-    "brand-gucci-1.jpg": ["brand:gucci"],
-    "brand-gucci-2.jpg": ["brand:gucci"],
-    "brand-gucci-3.jpg": ["brand:gucci"],
+    # brand-gucci.jpg is locked (FIXED_GUCCI_BRAND_BANNER) — not rotated weekly
     "brand-burberry-1.jpg": ["brand:burberry"],
     "brand-burberry-2.jpg": ["brand:burberry"],
     "brand-burberry-3.jpg": ["brand:burberry"],
@@ -211,6 +209,10 @@ assert FIXED_PRADA_BRAND_BANNER not in SLOT_THEMES, "locked Prada brand banner m
 FIXED_ARC_BRAND_BANNER = "brand-arcteryx-ridge.jpg"
 assert FIXED_ARC_BRAND_BANNER not in SLOT_THEMES, "locked Arc'teryx brand banner must not be in SLOT_THEMES"
 
+# Gucci brand hero — locked Primavera RTW (signature clothing).
+FIXED_GUCCI_BRAND_BANNER = "brand-gucci.jpg"
+assert FIXED_GUCCI_BRAND_BANNER not in SLOT_THEMES, "locked Gucci brand banner must not be in SLOT_THEMES"
+
 # Gucci handbags brand hero — locked Primavera / GG Marmont bedroom creative.
 FIXED_GUCCI_BAGS_BRAND_BANNER = "brand-gucci-handbags.jpg"
 assert FIXED_GUCCI_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Gucci bags brand banner must not be in SLOT_THEMES"
@@ -289,6 +291,7 @@ LOCKED_BANNERS = {
     FIXED_PRADA_BAGS_BRAND_BANNER,
     FIXED_PRADA_SHOES_BRAND_BANNER,
     FIXED_ARC_BRAND_BANNER,
+    FIXED_GUCCI_BRAND_BANNER,
     FIXED_GUCCI_BAGS_BRAND_BANNER,
     FIXED_GUCCI_SHOES_BRAND_BANNER,
     FIXED_DIOR_BAGS_BRAND_BANNER,

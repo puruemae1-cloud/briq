@@ -73,11 +73,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Gucci",
     nameKo: "구찌",
     logoSrc: "/brands/gucci.svg",
-    images: [
-      "/banners/brand-gucci-1.jpg",
-      "/banners/brand-gucci-2.jpg",
-      "/banners/brand-gucci-3.jpg",
-    ],
+    // Locked Primavera RTW still (July26-34) — upper-face focal for signature clothing.
+    images: ["/banners/brand-gucci.jpg"],
   },
   "gucci-bags": {
     key: "gucci-bags",

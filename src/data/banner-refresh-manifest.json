@@ -917,6 +917,17 @@
       "locked": true,
       "sourceAspect": 2.057,
       "note": "Chanel GB RTW header — staircase/mirrors; upper-face focal"
+    },
+    "brand-gucci.jpg": {
+      "sourceProductId": "fixed-gucci-primavera-rtw",
+      "sourceImage": "local:gucci-primavera-rtw",
+      "focal": "48% 20%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "locked": true,
+      "sourceAspect": 1.5,
+      "note": "Gucci Primavera July26-34 RTW — upper-face focal for signature clothing"
     }
   }
 }

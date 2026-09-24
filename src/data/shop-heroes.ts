@@ -25,6 +25,7 @@ const shopHeroImages: Record<string, string[]> = {
   ],
   "luxury:bottega-veneta": ["/banners/brand-bottega-veneta-clothing.jpg"],
   "luxury:chanel": ["/banners/brand-chanel.jpg"],
+  "luxury:gucci": ["/banners/brand-gucci.jpg"],
 
   watches: [
     "/banners/rot-watch-1.jpg",
