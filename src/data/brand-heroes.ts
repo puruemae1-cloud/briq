@@ -8,6 +8,7 @@ export type BrandKey =
   | "gucci"
   | "gucci-bags"
   | "gucci-shoes"
+  | "gucci-accessories"
   | "bottega-veneta"
   | "bottega-veneta-bags"
   | "bottega-veneta-shoes"
@@ -98,6 +99,18 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/gucci.svg",
     // Locked women's shoes PLP creative — Primavera GG Supreme slingbacks.
     images: ["/banners/brand-gucci-shoes.jpg"],
+  },
+  "gucci-accessories": {
+    key: "gucci-accessories",
+    nameEn: "Gucci",
+    nameKo: "구찌",
+    logoSrc: "/brands/gucci.svg",
+    // Restored rotating accessories set (pre–Primavera RTW clothing split).
+    images: [
+      "/banners/brand-gucci-1.jpg",
+      "/banners/brand-gucci-2.jpg",
+      "/banners/brand-gucci-3.jpg",
+    ],
   },
   "bottega-veneta": {
     key: "bottega-veneta",
@@ -582,7 +595,36 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "gc-men-driving": "gucci-shoes",
   "gc-men-lace-ups": "gucci-shoes",
   "gc-men-boots": "gucci-shoes",
-  "gucci-accessories": "gucci",
+  "gucci-accessories": "gucci-accessories",
+  "gc-accessories-womens": "gucci-accessories",
+  "gc-accessories-mens": "gucci-accessories",
+  "gc-women-fashion-accessories": "gucci-accessories",
+  "gc-men-fashion-accessories": "gucci-accessories",
+  "gc-women-tech-accessories": "gucci-accessories",
+  "gc-men-tech-accessories": "gucci-accessories",
+  "gc-women-travel-accessories": "gucci-accessories",
+  "gc-men-travel-accessories": "gucci-accessories",
+  "gc-women-travel": "gucci-accessories",
+  "gc-men-travel": "gucci-accessories",
+  "gc-women-wallets": "gucci-accessories",
+  "gc-men-wallets": "gucci-accessories",
+  "gc-women-belts": "gucci-accessories",
+  "gc-women-hair-accessories": "gucci-accessories",
+  "gc-jewellery-watches": "gucci-accessories",
+  "gc-gold-jewellery": "gucci-accessories",
+  "gc-silver-jewellery": "gucci-accessories",
+  "gc-fashion-jewellery": "gucci-accessories",
+  "gc-watches": "gucci-accessories",
+  "gc-men-jewellery": "gucci-accessories",
+  "gc-men-gifts": "gucci-accessories",
+  "gc-men-gifts-small-accessories": "gucci-accessories",
+  "gc-gifts": "gucci-accessories",
+  "gc-gifts-her": "gucci-accessories",
+  "gc-gifts-him": "gucci-accessories",
+  "gc-gifts-personalised": "gucci-accessories",
+  "gc-gifts-beauty": "gucci-accessories",
+  "gc-gifts-jewellery": "gucci-accessories",
+  "gc-gifts-children": "gucci-accessories",
   "bottega-veneta": "bottega-veneta",
   "bottega-veneta-bags": "bottega-veneta-bags",
   "bv-men-bags": "bottega-veneta-bags",

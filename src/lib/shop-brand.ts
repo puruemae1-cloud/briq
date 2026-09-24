@@ -7,6 +7,18 @@ import {
 } from "@/data/brand-heroes";
 
 const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
+  {
+    re: /^(gucci-accessories|gc-accessories|gc-jewellery|gc-gold-jewellery|gc-silver-jewellery|gc-fashion-jewellery|gc-watches|gc-gifts|gc-women-(fashion-accessories|tech-accessories|travel|wallets|belts|hair-accessories)|gc-men-(fashion-accessories|tech-accessories|travel|wallets|jewellery|gifts))/i,
+    key: "gucci-accessories",
+  },
+  {
+    re: /^(gucci-shoes|gc-shoes|gc-women-(shoes|sneakers|moccasins|slippers|sandals|slides|pumps|ballet|boots)|gc-men-(shoes|sneakers|loafers|slides|driving|lace-ups|boots))/i,
+    key: "gucci-shoes",
+  },
+  {
+    re: /^(gucci-bags|gc-handbags|gc-women-(shoulder-bags|mini-bags|crossbody-bags|tote-bags|top-handle-bags|backpacks-beltbags|clutches-evening|personalised)|gc-mens-handbags|gc-men-(crossbody-messengers|backpacks|tote-bags|small-bags-pouches|belt-slingbags|duffle-bags))/i,
+    key: "gucci-bags",
+  },
   { re: /^(gc-|gucci)/i, key: "gucci" },
   { re: /^(bv-|bottega)/i, key: "bottega-veneta" },
   { re: /^(ce-|celine)/i, key: "celine" },
