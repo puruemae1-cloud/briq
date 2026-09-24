@@ -27,6 +27,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* CC logo sits ~36% x / 42% y after crop — keep it in the shop-hero strip */
   "brand-chanel.jpg": "62% 22%",
   "brand-chanel.webp": "62% 22%",
+  /* J12 new-watches PLP — watch fills height; subject sits left-centre */
+  "brand-chanel-premiere.jpg": "27% 50%",
+  "brand-chanel-premiere.webp": "27% 50%",
   "brand-chanel-como-bag.jpg": "36% 42%",
   "brand-chanel-como-bag.webp": "36% 42%",
   /* Shoes barefoot sandals — CC heel + feet (mobile/tablet). PC overrides to 42% 88% in globals.css */

@@ -737,14 +737,15 @@
       "sourceAspect": 2.0
     },
     "brand-chanel-premiere.jpg": {
-      "sourceProductId": "fixed-chanel-premiere",
-      "sourceImage": "local:chanel-premiere",
-      "focal": "50% 50%",
+      "sourceProductId": "fixed-chanel-j12-new-watches",
+      "sourceImage": "local:chanel-j12-new-watches",
+      "focal": "27% 50%",
       "shop": false,
       "kind": "look",
       "tone": "fixed-color",
       "locked": true,
-      "sourceAspect": 2.0
+      "sourceAspect": 2.834,
+      "note": "fixed creative — Chanel J12 new-watches PLP fullwidth; watch fills height"
     },
     "brand-chanel-como-bag.jpg": {
       "sourceProductId": "fixed-chanel-como-bag",

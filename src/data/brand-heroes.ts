@@ -269,7 +269,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    // Locked Première creative — watches only.
+    // Locked J12 new-watches PLP fullwidth — watch fills height on every device.
     images: ["/banners/brand-chanel-premiere.jpg"],
   },
   "chanel-shoes": {
