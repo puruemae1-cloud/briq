@@ -2,6 +2,8 @@
 """Shared Christian Dior (GB) Maison / tableware scrape helpers."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json
 import re
 import time
@@ -1550,9 +1552,7 @@ def gbp_to_krw(gbp: float | None) -> int:
     if gbp is None:
         return 0
     raw = float(gbp) * 2100 * 1.05 * 1.15
-    return int(round(raw / 10_000) * 10_000)
-
-
+    return apply_site_price(int(round(raw / 10_000) * 10_000))
 def algolia_variant_gbp(price_obj: dict | None, fallback_gbp: float) -> float:
     """Resolve variant list GBP — ignore KRW amounts from the KO Algolia index."""
     if not isinstance(price_obj, dict):

@@ -1,13 +1,23 @@
 import type { Product, ProductVariant } from "@/data/product-types";
 
-/** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
-export function gbpToBriqKrw(gbp: number) {
-  return Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
+/** Site-wide list price: 5% off converted KRW, round to nearest 1,000원. */
+export const SITE_PRICE_FACTOR = 0.95;
+
+export function applySitePrice(krw: number): number {
+  if (!krw || krw <= 0) return 0;
+  return Math.round((krw * SITE_PRICE_FACTOR) / 1_000) * 1_000;
 }
 
-/** Addon fees (bracelet resize etc.) — no +200,000 base, still 만원 rounding. */
+/** KRW = applySitePrice(round_만원(GBP × 2100 × 1.05 + 200,000)) */
+export function gbpToBriqKrw(gbp: number) {
+  const base = Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
+  return applySitePrice(base);
+}
+
+/** Addon fees (bracelet resize etc.) — no +200,000 base; still site 5% + 천원. */
 export function gbpToBriqAddonKrw(gbp: number) {
-  return Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
+  const base = Math.round((gbp * 2100 * 1.05) / 10_000) * 10_000;
+  return applySitePrice(base);
 }
 
 /** Lowest purchasable KRW for PLP cards / metadata (variant → product → gbp fallback). */

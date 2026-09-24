@@ -2,6 +2,8 @@
 """Build bb-catalog.ts from bb-catalog-raw.json (Burberry Women)."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json
 import re
 import sys
@@ -178,9 +180,7 @@ def gbp_to_krw(gbp: float, cols: list[str] | None = None) -> int:
     else:
         markup = 1.10 if is_trench_product(cols) else 1.18
         base = g * 2100 * markup * 1.05 + 20_000
-    return int(round(base / 1_000) * 1_000)
-
-
+    return apply_site_price(int(round(base / 1_000) * 1_000))
 KIDS_PRICE_SURCHARGE_KRW = 100_000
 
 # Adult Burberry shoe size charts (mirrors src/data/bb/bb-shoe-size-charts.ts).

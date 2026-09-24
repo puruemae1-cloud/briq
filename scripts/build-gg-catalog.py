@@ -2,6 +2,8 @@
 """Build gg-catalog.ts from gg-catalog-raw.json (Galvin Green new arrivals)."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import html as H
 import json
 import re
@@ -278,9 +280,7 @@ def gbp_to_krw(gbp: float) -> int:
     base = gbp * 2100 * 1.06 + 20_000
     if gbp <= 100:
         base += 15_000
-    return int(round(base / 1_000) * 1_000)
-
-
+    return apply_site_price(int(round(base / 1_000) * 1_000))
 def title_case_color(slug: str) -> str:
     return " ".join(w.capitalize() for w in slug.replace("_", "-").split("-") if w)
 

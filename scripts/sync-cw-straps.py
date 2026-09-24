@@ -7,6 +7,8 @@ Pricing: KRW = round(GBP × 2100 / 1000) × 1000  (no 1.16 / no +200k / no 1.05)
 
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import html as H
 import json
 import re
@@ -138,9 +140,7 @@ def parse_price(product: dict) -> tuple[float | None, float | None]:
 
 def round_strap_krw(gbp: float) -> int:
     """SRP × 2100, round to nearest 1,000원. No VAT/markup add-ons."""
-    return int(round(float(gbp) * 2100 / 1000.0) * 1000)
-
-
+    return apply_site_price(int(round(float(gbp) * 2100 / 1000.0) * 1000))
 def to_ko(s: str) -> str:
     if not s:
         return ""

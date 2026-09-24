@@ -2,6 +2,8 @@
 """Rebuild cw-catalog.ts from raw (+ optional enriched) with KO names, rounded prices, variants, stories."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json, re, html as H
 from pathlib import Path
 
@@ -157,7 +159,7 @@ def clean_sub(s: str) -> str:
 
 
 def round_krw(gbp: float) -> int:
-    return int(round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000)
+    return apply_site_price(int(round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000))
 
 
 def slugify(s: str) -> str:

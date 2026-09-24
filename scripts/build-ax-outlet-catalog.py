@@ -2,6 +2,8 @@
 """Build ax-outlet-catalog.ts from outlet raw + PDP + translations."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json
 import re
 import sys
@@ -86,9 +88,7 @@ def gbp_to_krw(gbp: float | None) -> int:
     if gbp is None:
         return 0
     base = float(gbp) * 2100 * 1.18 + 20_000
-    return int(round(base / 1_000) * 1_000)
-
-
+    return apply_site_price(int(round(base / 1_000) * 1_000))
 def slugify(text: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
     return s[:80] or "item"

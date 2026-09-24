@@ -2,6 +2,8 @@
 """Build lu-catalog.ts — London Undercover umbrellas (Auto Compact / Telescopic / Full Length)."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json
 import re
 from datetime import datetime, timedelta, timezone
@@ -19,9 +21,7 @@ def gbp_to_krw(gbp: float | None) -> int:
     if gbp is None:
         return 0
     base = float(gbp) * 2100 * 1.06 + 50_000
-    return int(round(base / 1_000) * 1_000)
-
-
+    return apply_site_price(int(round(base / 1_000) * 1_000))
 ACCENTS = [
     "#1A2E28",
     "#2C241C",

@@ -2,6 +2,8 @@
 """Build Paul Smith catalogue TypeScript from scraped raw JSON."""
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import json
 import re
 import sys
@@ -29,9 +31,7 @@ def gbp_to_krw(gbp: float | None) -> int:
         base = g * 2100 * 1.06 + 20_000
     else:
         base = g * 2100 * 1.10 * 1.05 + 20_000
-    return int(round(base / 1_000) * 1_000)
-
-
+    return apply_site_price(int(round(base / 1_000) * 1_000))
 CLOTHING_TYPE_MAP = {
     "All in One": ("ps-men-all-in-one", "올인원"),
     "Coats": ("ps-men-coats", "코트"),

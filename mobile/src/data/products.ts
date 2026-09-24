@@ -37,9 +37,10 @@ export type Product = {
   techSpecs?: Array<{ labelKo: string; valueKo: string }>;
 };
 
-/** KRW = round_만원(GBP × 2100 × 1.05 + 200,000) */
+/** KRW = applySitePrice(round_만원(GBP × 2100 × 1.05 + 200,000)) — mirrors web. */
 export function gbpToBriqKrw(gbp: number) {
-  return Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
+  const base = Math.round((gbp * 2100 * 1.05 + 200_000) / 10_000) * 10_000;
+  return Math.round((base * 0.95) / 1_000) * 1_000;
 }
 
 export const categories: { id: CategoryId | "all"; labelKo: string }[] = [

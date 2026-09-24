@@ -6,6 +6,8 @@ Pricing matches Chanel/Gucci luxury bags:
 """
 from __future__ import annotations
 
+from briq_pricing import apply_site_price  # noqa: E402
+
 import hashlib
 import json
 import os
@@ -412,9 +414,7 @@ def gbp_to_krw(gbp: float | None) -> int:
     if gbp is None:
         return 0
     base = float(gbp) * 2100 * 1.05 * 1.15
-    return int(round(base / 10_000) * 10_000)
-
-
+    return apply_site_price(int(round(base / 10_000) * 10_000))
 _KO: dict[str, str] = {}
 if CACHE_PATH.exists():
     _KO = json.loads(CACHE_PATH.read_text())
