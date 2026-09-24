@@ -98,6 +98,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Saint Laurent bags — Icare quilted hobo; mid-lower Cassandre logo */
   "brand-saint-laurent-bags.jpg": "42% 66%",
   "brand-saint-laurent-bags.webp": "42% 66%",
+  /* Saint Laurent shoes — red croc peep-toe; bottom shoe + ankle straps */
+  "brand-saint-laurent-shoes.jpg": "42% 72%",
+  "brand-saint-laurent-shoes.webp": "42% 72%",
   /* Paul Smith AW26 campaign — headphones still; keep face + orange cans upper */
   "brand-paul-smith-1.jpg": "50% 18%",
   "brand-paul-smith-1.webp": "50% 18%",

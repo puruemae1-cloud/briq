@@ -221,6 +221,10 @@ assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Lauren
 FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER = "brand-saint-laurent-bags.jpg"
 assert FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent bags brand banner must not be in SLOT_THEMES"
 
+# Saint Laurent shoes brand hero — locked red croc peep-toe (bottom shoe).
+FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER = "brand-saint-laurent-shoes.jpg"
+assert FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent shoes brand banner must not be in SLOT_THEMES"
+
 # Vivienne Westwood bags brand hero — locked Tasha pastel pink mid-Orb.
 FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER = "brand-vivienne-westwood-bags.jpg"
 assert FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Vivienne Westwood bags brand banner must not be in SLOT_THEMES"
@@ -331,6 +335,7 @@ LOCKED_BANNERS = {
     FIXED_CELINE_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
+    FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER,
     FIXED_VIVIENNE_WESTWOOD_BAGS_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
