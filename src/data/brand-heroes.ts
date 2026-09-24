@@ -168,6 +168,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
+    // Locked Icare quilted hobo — mid-lower crop keeps Cassandre logo in frame.
     images: ["/banners/brand-saint-laurent-bags.jpg"],
   },
   "saint-laurent-shoes": {

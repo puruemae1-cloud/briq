@@ -219,6 +219,10 @@ assert FIXED_CELINE_BRAND_BANNER not in SLOT_THEMES, "locked Celine brand banner
 FIXED_SAINT_LAURENT_BRAND_BANNER = "brand-saint-laurent.jpg"
 assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent brand banner must not be in SLOT_THEMES"
 
+# Saint Laurent bags brand hero — locked Icare quilted hobo.
+FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER = "brand-saint-laurent-bags.jpg"
+assert FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent bags brand banner must not be in SLOT_THEMES"
+
 # AllSaints brand hero — locked AW26 campaign RTW.
 FIXED_ALL_SAINTS_BRAND_BANNER = "brand-all-saints.jpg"
 assert FIXED_ALL_SAINTS_BRAND_BANNER not in SLOT_THEMES, "locked AllSaints brand banner must not be in SLOT_THEMES"
@@ -314,6 +318,7 @@ LOCKED_BANNERS = {
     FIXED_GUCCI_SHOES_BRAND_BANNER,
     FIXED_CELINE_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
+    FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
     FIXED_ALL_SAINTS_BRAND_BANNER,
     *FIXED_PAUL_SMITH_BRAND_BANNERS,
     FIXED_DIOR_BAGS_BRAND_BANNER,
