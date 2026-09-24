@@ -6,7 +6,9 @@ import {
   getNewArrivalsProducts,
   getTopSortedProducts,
   parseProductSort,
+  preferCwWatchesFirst,
   preferGgApparelFirst,
+  isCwStrapProduct,
   sortProducts,
   type ProductSort,
 } from "@/lib/product-sort";
@@ -31,6 +33,7 @@ export function getShopProductList(params: ShopListQuery): Product[] {
   const isCatalogueWide = Boolean(category === "all" && !sub && !q);
   const isNewArrivals = Boolean(isCatalogueWide && sort === "new");
 
+  // Brand/leaf PLPs resolve to a single lazy catalogue (see brand-catalogs-lazy).
   let list = getProductsByCategory(category, sub);
   list = searchProducts(list, params.q);
   if (isNewArrivals) {
@@ -42,6 +45,14 @@ export function getShopProductList(params: ShopListQuery): Product[] {
   }
   if (sub === "gg-men" || sub === "gg-women") {
     list = preferGgApparelFirst(list);
+  }
+  // CW brand PLP (and any mixed watch+strap list): straps stay last even when
+  // weekly sync stamps fresh registeredAt on strap SKUs.
+  if (
+    sub === "christopher-ward" ||
+    (list.some(isCwStrapProduct) && list.some((p) => !isCwStrapProduct(p)))
+  ) {
+    list = preferCwWatchesFirst(list);
   }
   return list;
 }

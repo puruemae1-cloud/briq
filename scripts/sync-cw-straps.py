@@ -448,7 +448,9 @@ def build_product(row: dict, idx: int) -> dict | None:
         "sku": sku,
         "sourceUrl": row.get("url") or f"{SITE}/watch-straps/{sku}.html",
         "inStock": bool(row.get("inStock", True)),
-        "registeredAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+        # Keep straps below watches on CW brand PLP (최신등록순). Weekly sync
+        # must not stamp "now" or straps float to the top of christopher-ward.
+        "registeredAt": "2020-01-01T00:00:00.000Z",
         "editTier": "signature",
         "storySections": story,
         "techSpecs": tech_specs,

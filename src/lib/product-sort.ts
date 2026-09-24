@@ -145,6 +145,28 @@ export function preferGgApparelFirst(list: Product[]): Product[] {
   return [...apparel, ...accessories];
 }
 
+/** CW watch straps — weekly sync refreshes `registeredAt`, which would otherwise float them first. */
+export function isCwStrapProduct(product: Product): boolean {
+  if (product.subcategory === "cw-straps") return true;
+  if (product.id.startsWith("cw-strap-")) return true;
+  return Boolean(product.cwCollections?.some((c) => c === "cw-straps"));
+}
+
+/**
+ * Christopher Ward brand PLP: watches first, straps always last.
+ * Preserves relative order within each group after the active sort.
+ */
+export function preferCwWatchesFirst(list: Product[]): Product[] {
+  const watches: Product[] = [];
+  const straps: Product[] = [];
+  for (const product of list) {
+    if (isCwStrapProduct(product)) straps.push(product);
+    else watches.push(product);
+  }
+  if (straps.length === 0) return list;
+  return [...watches, ...straps];
+}
+
 function compareBySort(sort: ProductSort): (a: Product, b: Product) => number {
   switch (sort) {
     case "price-asc":
