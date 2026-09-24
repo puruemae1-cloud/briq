@@ -53,8 +53,10 @@ type Loader = () => Product[];
 
 const cache = new Map<BrandCatalogKey, Product[]>();
 const bagsCache = new Map<BrandCatalogKey, Product[]>();
+const shoesCache = new Map<BrandCatalogKey, Product[]>();
 let allCache: Product[] | null = null;
 let allBagsCache: Product[] | null = null;
+let allShoesCache: Product[] | null = null;
 
 /** Brands with a bags-only JSON slice (bags PLPs must not parse full catalogues). */
 const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
@@ -69,6 +71,22 @@ const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
   "pr",
   "di",
   "mb",
+];
+
+/** Brands with a shoes-only JSON slice (shoes PLPs must not parse full catalogues). */
+const SHOES_BRAND_KEYS: BrandCatalogKey[] = [
+  "bb",
+  "ax",
+  "ps",
+  "bs",
+  "gc",
+  "bv",
+  "ch",
+  "al",
+  "ce",
+  "vw",
+  "pr",
+  "di",
 ];
 
 function cached(
@@ -271,6 +289,87 @@ export function loadAllBagsCatalogs(): Product[] {
   return allBagsCache;
 }
 
+/** Shoes-only loaders — keep shoes brand clicks ~same TTFB regardless of RTW/bags size. */
+const SHOES_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
+  bb: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bb/bb-shoes-catalog") as typeof import("./bb/bb-shoes-catalog");
+    return mod.bbShoesCatalogProducts;
+  },
+  ax: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ax/ax-shoes-catalog") as typeof import("./ax/ax-shoes-catalog");
+    return mod.axShoesCatalogProducts;
+  },
+  ps: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ps/ps-shoes-catalog") as typeof import("./ps/ps-shoes-catalog");
+    return mod.psShoesCatalogProducts;
+  },
+  bs: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bs/bs-shoes-catalog") as typeof import("./bs/bs-shoes-catalog");
+    return mod.bsShoesCatalogProducts;
+  },
+  gc: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./gc/gc-shoes-catalog") as typeof import("./gc/gc-shoes-catalog");
+    return mod.gcShoesCatalogProducts;
+  },
+  bv: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bv/bv-shoes-catalog") as typeof import("./bv/bv-shoes-catalog");
+    return mod.bvShoesCatalogProducts;
+  },
+  ch: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ch/ch-shoes-catalog") as typeof import("./ch/ch-shoes-catalog");
+    return mod.chShoesCatalogProducts;
+  },
+  al: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./al/al-shoes-catalog") as typeof import("./al/al-shoes-catalog");
+    return mod.alShoesCatalogProducts;
+  },
+  ce: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./ce/ce-shoes-catalog") as typeof import("./ce/ce-shoes-catalog");
+    return mod.ceShoesCatalogProducts;
+  },
+  vw: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./vw/vw-shoes-catalog") as typeof import("./vw/vw-shoes-catalog");
+    return mod.vwShoesCatalogProducts;
+  },
+  pr: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./pr/pr-shoes-catalog") as typeof import("./pr/pr-shoes-catalog");
+    return mod.prShoesCatalogProducts;
+  },
+  di: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./di/di-shoes-catalog") as typeof import("./di/di-shoes-catalog");
+    return mod.diShoesCatalogProducts;
+  },
+};
+
+export function loadBrandShoesCatalog(key: BrandCatalogKey): Product[] {
+  const loader = SHOES_LOADERS[key];
+  if (!loader) return [];
+  return cached(shoesCache, key, loader);
+}
+
+export function loadAllShoesCatalogs(): Product[] {
+  if (!allShoesCache) {
+    const out: Product[] = [];
+    for (const key of SHOES_BRAND_KEYS) {
+      out.push(...loadBrandShoesCatalog(key));
+    }
+    allShoesCache = out;
+  }
+  return allShoesCache;
+}
+
 /** Core multi-brand catalogue (excludes Saint Laurent — still YS-lazy). */
 export function loadAllBrandCatalogs(): Product[] {
   if (!allCache) {
@@ -383,6 +482,8 @@ export function resolveBrandCatalogKeys(
     if (category === "watches") return ["cw"];
     // Bags hub — only brands with bag SKUs (bags slices), not every RTW catalogue.
     if (category === "bags") return [...BAGS_BRAND_KEYS];
+    // Shoes hub — only brands with shoe SKUs (shoes slices), not every RTW catalogue.
+    if (category === "shoes") return [...SHOES_BRAND_KEYS];
     return "all";
   }
   if (isYsShopSub(sub)) return [];
@@ -403,9 +504,12 @@ export function loadCatalogsForShop(
 ): Product[] {
   const keys = resolveBrandCatalogKeys(category, sub);
   const bagsOnly = category === "bags";
+  const shoesOnly = category === "shoes";
 
   if (keys === "all") {
-    return bagsOnly ? loadAllBagsCatalogs() : loadAllBrandCatalogs();
+    if (bagsOnly) return loadAllBagsCatalogs();
+    if (shoesOnly) return loadAllShoesCatalogs();
+    return loadAllBrandCatalogs();
   }
   if (keys.length === 0) return [];
 
@@ -414,6 +518,15 @@ export function loadCatalogsForShop(
     for (const key of keys) {
       // Prefer bags slice; empty when brand has no bags file (e.g. AllSaints WIP).
       out.push(...loadBrandBagsCatalog(key));
+    }
+    return out;
+  }
+
+  if (shoesOnly) {
+    const out: Product[] = [];
+    for (const key of keys) {
+      // Prefer shoes slice; empty when brand has no shoes file.
+      out.push(...loadBrandShoesCatalog(key));
     }
     return out;
   }

@@ -12,6 +12,7 @@ import {
 import {
   getYsBagsCatalogProducts,
   getYsCatalogProducts,
+  getYsShoesCatalogProducts,
   isYsShopSub,
 } from "@/data/ys/ys-catalog-lazy";
 
@@ -78,8 +79,9 @@ function shouldIncludeYsCatalog(category?: string, sub?: string): boolean {
 }
 
 function withYsCatalog(list: Product[], category?: string): Product[] {
-  // Bags PLPs use the bags-only YS slice so TTFB matches other bag brands.
+  // Bags/shoes PLPs use category-only YS slices so TTFB matches other brands.
   if (category === "bags") return list.concat(getYsBagsCatalogProducts());
+  if (category === "shoes") return list.concat(getYsShoesCatalogProducts());
   return list.concat(getYsCatalogProducts());
 }
 

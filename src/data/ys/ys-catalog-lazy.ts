@@ -7,6 +7,7 @@ import type { Product } from "@/data/product-types";
  */
 let cached: Product[] | null = null;
 let bagsCached: Product[] | null = null;
+let shoesCached: Product[] | null = null;
 
 export function getYsCatalogProducts(): Product[] {
   if (!cached) {
@@ -26,6 +27,17 @@ export function getYsBagsCatalogProducts(): Product[] {
     bagsCached = mod.ysBagsCatalogProducts;
   }
   return bagsCached;
+}
+
+/** Shoes-only YS slice — shoes brand clicks must not parse the full YS catalogue. */
+export function getYsShoesCatalogProducts(): Product[] {
+  if (!shoesCached) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod =
+      require("./ys-shoes-catalog") as typeof import("./ys-shoes-catalog");
+    shoesCached = mod.ysShoesCatalogProducts;
+  }
+  return shoesCached;
 }
 
 /** True when the active shop filter is a Saint Laurent nav node. */
