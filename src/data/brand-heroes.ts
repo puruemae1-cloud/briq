@@ -404,7 +404,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "AllSaints",
     nameKo: "올세인츠",
     logoSrc: "/brands/all-saints.svg",
-    // AW26 editorial leather pea coat (JR … LB_4x5_00033) — upper face + collar.
+    // Locked AW26 campaign 16:9 denim still — top-anchored face.
     images: ["/banners/brand-all-saints.jpg"],
   },
   "all-saints-shoes": {

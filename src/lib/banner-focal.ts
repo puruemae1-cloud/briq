@@ -73,9 +73,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine accessories — Francoise temple still; keep CELINE gold wordmark */
   "brand-celine-accessories.jpg": "39% 58%",
   "brand-celine-accessories.webp": "39% 58%",
-  /* AllSaints clothing — AW26 editorial leather pea coat; keep face + collar upper */
-  "brand-all-saints.jpg": "50% 28%",
-  "brand-all-saints.webp": "50% 28%",
+  /* AllSaints clothing — AW26 campaign denim; top-anchored face */
+  "brand-all-saints.jpg": "52% 18%",
+  "brand-all-saints.webp": "52% 18%",
   /* AllSaints shoes — Lila W129FF-5 side packshot; keep stiletto + ankle strap lower */
   "brand-all-saints-shoes.jpg": "50% 72%",
   "brand-all-saints-shoes.webp": "50% 72%",

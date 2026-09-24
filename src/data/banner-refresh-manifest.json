@@ -789,8 +789,14 @@
     },
     "brand-all-saints.jpg": {
       "locked": true,
-      "focal": "50% 28%",
-      "note": "fixed creative — AllSaints AW26 editorial leather pea coat (JR LB_4x5_00033), upper face+collar"
+      "sourceProductId": "fixed-allsaints-aw26-campaign",
+      "sourceImage": "local:allsaints-aw26-16x9",
+      "focal": "52% 18%",
+      "shop": true,
+      "kind": "shop",
+      "tone": "fixed-color",
+      "sourceAspect": 1.778,
+      "note": "fixed creative — AllSaints AW26 campaign 16:9 denim still; top-anchored face"
     },
     "brand-all-saints-shoes.jpg": {
       "locked": true,
