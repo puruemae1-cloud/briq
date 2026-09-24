@@ -27,6 +27,7 @@ const shopHeroImages: Record<string, string[]> = {
   "luxury:chanel": ["/banners/brand-chanel.jpg"],
   "luxury:gucci": ["/banners/brand-gucci.jpg"],
   "luxury:celine": ["/banners/brand-celine-signature.jpg"],
+  "luxury:saint-laurent": ["/banners/brand-saint-laurent.jpg"],
 
   watches: [
     "/banners/rot-watch-1.jpg",

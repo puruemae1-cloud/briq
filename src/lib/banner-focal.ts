@@ -88,6 +88,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine signature RTW — Hiver 2026 lying model; keep face on the right */
   "brand-celine-signature.jpg": "73% 28%",
   "brand-celine-signature.webp": "73% 28%",
+  /* Saint Laurent RTW — Winter 26 lookbook #44; top-anchored faces + jewelry */
+  "brand-saint-laurent.jpg": "48% 18%",
+  "brand-saint-laurent.webp": "48% 18%",
   /* Celine handbags — Small Flair open-bag still; mid-upper Triomphe / CELINE PARIS */
   "brand-celine-bags.jpg": "50% 32%",
   "brand-celine-bags.webp": "50% 32%",

@@ -160,6 +160,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Saint Laurent",
     nameKo: "생로랑",
     logoSrc: "/brands/saint-laurent.svg",
+    // Locked Winter 26 lookbook #44 — top-anchored so faces + jewelry stay in frame.
     images: ["/banners/brand-saint-laurent.jpg"],
   },
   "saint-laurent-bags": {
