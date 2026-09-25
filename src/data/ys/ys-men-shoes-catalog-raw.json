@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-09-18T17:25:45.361018+00:00",
+  "scrapedAt": "2026-09-25T18:28:49.322566+00:00",
   "brand": "Saint Laurent",
   "hub": "men-shoes",
   "category": "shoes",
   "family": "ys-men-shoes",
-  "officialNbAlgoliaHits": 90,
-  "officialUnionCount": 91,
+  "officialNbAlgoliaHits": 81,
+  "officialUnionCount": 82,
   "leaves": [
     {
       "id": "ys-men-shoes-all",
@@ -331,7 +331,7 @@
         "ys-men-shoes-all",
         "ys-men-derbies"
       ],
-      "leafId": "ys-men-derbies",
+      "leafId": "ys-men-shoes-all",
       "gbpPrice": 1230.0,
       "inStock": true,
       "compositions": null,
@@ -848,132 +848,6 @@
       ]
     },
     {
-      "id": "A002D1AAB9S1000",
-      "sku": "A002D1AAB9S1000",
-      "masterId": "A002D1AAB9S",
-      "name": "CONNOR monk straps in patent leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/connor-monk-straps-in-patent-leather-A002D1AAB9S1000.html",
-      "path": "pr/connor-monk-straps-in-patent-leather-A002D1AAB9S1000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-derbies"
-      ],
-      "leafId": "ys-men-derbies",
-      "gbpPrice": 1275.0,
-      "inStock": true,
-      "compositions": null,
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/8b9d4f60-68f8-4156-b23c-5b91adb3b582/eCom/A002D1AAB9S1000_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/6fdc41aa-3d6d-4d37-9672-b8b5c67e9c9f/eCom/A002D1AAB9S1000_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/7ed1206a-de2f-4d5d-80f3-c90843a6888b/eCom/A002D1AAB9S1000_C.jpg?v=1"
-      ],
-      "description": "monk strap shoes with an elongated square toe, single monk strap, and stacked heel.",
-      "shortDescription": [
-        "leather sole",
-        "adjustable buckle closure",
-        "HEEL HEIGHT: 2.5 CM / 1 INCH"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_derbies",
-        "superMicroCategory": "ysl_super_micro_men_derbies"
-      },
-      "sizes": [
-        {
-          "id": "814389954",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814389955",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814389956",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814389957",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "814389958",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814389959",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "814389960",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814389961",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "814389962",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814389963",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "814389964",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "814390319",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "A002D1AAB9S1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/connor-monk-straps-in-patent-leather-A002D1AAB9S1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/a002d1aab9s1000/1.jpg",
-        "/products/ys-pdp/a002d1aab9s1000/2.jpg",
-        "/products/ys-pdp/a002d1aab9s1000/3.jpg"
-      ]
-    },
-    {
       "id": "A005ETAAAPI1000",
       "sku": "A005ETAAAPI1000",
       "masterId": "A005ETAAAPI",
@@ -1126,7 +1000,7 @@
         "ys-men-shoes-all",
         "ys-men-derbies"
       ],
-      "leafId": "ys-men-derbies",
+      "leafId": "ys-men-shoes-all",
       "gbpPrice": 3545.0,
       "inStock": true,
       "compositions": null,
@@ -1336,7 +1210,7 @@
         "ys-men-shoes-all",
         "ys-men-derbies"
       ],
-      "leafId": "ys-men-derbies",
+      "leafId": "ys-men-shoes-all",
       "gbpPrice": 4000.0,
       "inStock": true,
       "compositions": null,
@@ -1538,7 +1412,7 @@
         "ys-men-shoes-all",
         "ys-men-derbies"
       ],
-      "leafId": "ys-men-derbies",
+      "leafId": "ys-men-shoes-all",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "P 100% DOMESTICATED CALF LE",
@@ -2443,143 +2317,6 @@
         "/products/ys-pdp/754752aaapi1000/1.jpg",
         "/products/ys-pdp/754752aaapi1000/2.jpg",
         "/products/ys-pdp/754752aaapi1000/3.jpg"
-      ]
-    },
-    {
-      "id": "7547211OO001000",
-      "sku": "7547211OO001000",
-      "masterId": "7547211OO00",
-      "name": "ARMY derbies in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/army-derbies-in-smooth-leather-7547211OO001000.html",
-      "path": "pr/army-derbies-in-smooth-leather-7547211OO001000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-derbies"
-      ],
-      "leafId": "ys-men-derbies",
-      "gbpPrice": 725.0,
-      "inStock": true,
-      "compositions": "T 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/6226fd36383efc49/eCom-7547211OO001000_A.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/m/7979469083f406b7/eCom-7547211OO001000_B.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/m/3d47be2c4c55f68a/eCom-7547211OO001000_C.jpg?v=3"
-      ],
-      "description": "laced derby shoes with a rounded toe and chunky sole.",
-      "shortDescription": [
-        "rubber sole",
-        "TOTAL HEEL HEIGHT: 2 CM / 0.7 INCHES"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_derbies",
-        "superMicroCategory": "ysl_super_micro_men_derbies"
-      },
-      "sizes": [
-        {
-          "id": "813083441",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "813097291",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "813083442",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "813083443",
-          "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "813083444",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "813083445",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "813083446",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "813083447",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "813083448",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "813083449",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "813083450",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "813083451",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "813083452",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "813089290",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "7547211OO001000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/army-derbies-in-smooth-leather-7547211OO001000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/7547211oo001000/1.jpg",
-        "/products/ys-pdp/7547211oo001000/2.jpg",
-        "/products/ys-pdp/7547211oo001000/3.jpg"
       ]
     },
     {
@@ -6839,152 +6576,6 @@
       ]
     },
     {
-      "id": "818108DWEDD1000",
-      "sku": "818108DWEDD1000",
-      "masterId": "818108DWEDD",
-      "name": "CASSANDRE sandals in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/cassandre-sandals-in-smooth-leather-818108DWEDD1000.html",
-      "path": "pr/cassandre-sandals-in-smooth-leather-818108DWEDD1000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sandals"
-      ],
-      "leafId": "ys-men-sandals",
-      "gbpPrice": 810.0,
-      "inStock": true,
-      "compositions": "P 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/d2801825-0282-4135-be7e-e13fd4479617/eCom/818108DWEDD1000_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/259457d3-7f0c-493c-ac14-3101c6b14e1a/eCom/818108DWEDD1000_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/f0264f48-38d2-4ded-9b32-a22c7d9694b4/eCom/818108DWEDD1000_C.jpg?v=2"
-      ],
-      "description": "flat sandals with a thick T-strap arch band and adjustable buckle, decorated with a metal CASSANDRE on the front.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>metal free and chrome free tanned leather</u></a>",
-        "leather sole",
-        "adjustable ankle strap",
-        "TOTAL HEEL HEIGHT: 0.5 CM / 0.2 INCHES",
-        "CASSANDRE in gold-tone metal"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sandals",
-        "superMicroCategory": "ysl_super_micro_men_sandals"
-      },
-      "sizes": [
-        {
-          "id": "813761501",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "813776025",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "813761502",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "813768802",
-          "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "813761503",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "813768293",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "813761504",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "813766827",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "813761505",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "813766828",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "813761506",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "813768681",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "813761507",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "813776026",
-          "value": "45_5",
-          "displayValue": "YSL 45.5 / GB 11.5",
-          "inStock": true
-        },
-        {
-          "id": "813766030",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "818108DWEDD1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/cassandre-sandals-in-smooth-leather-818108DWEDD1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/818108dwedd1000/1.jpg",
-        "/products/ys-pdp/818108dwedd1000/2.jpg",
-        "/products/ys-pdp/818108dwedd1000/3.jpg"
-      ]
-    },
-    {
       "id": "A002DWAAGZH1000",
       "sku": "A002DWAAGZH1000",
       "masterId": "A002DWAAGZH",
@@ -7346,355 +6937,6 @@
         "/products/ys-pdp/800731aadf01000/1.jpg",
         "/products/ys-pdp/800731aadf01000/2.jpg",
         "/products/ys-pdp/800731aadf01000/3.jpg"
-      ]
-    },
-    {
-      "id": "671904DWE001000",
-      "sku": "671904DWE001000",
-      "masterId": "671904DWE00",
-      "name": "CULVER slides in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/culver-slides-in-smooth-leather-671904DWE001000.html",
-      "path": "pr/culver-slides-in-smooth-leather-671904DWE001000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sandals"
-      ],
-      "leafId": "ys-men-sandals",
-      "gbpPrice": 580.0,
-      "inStock": true,
-      "compositions": "P 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/4d90e2aadaed38a1/eCom-671904DWE001000_A.jpg?v=12",
-        "https://saint-laurent.dam.kering.com/m/65752b9543c98683/eCom-671904DWE001000_B.jpg?v=12",
-        "https://saint-laurent.dam.kering.com/m/c69a042b7bead10/eCom-671904DWE001000_C.jpg?v=11"
-      ],
-      "description": "Slide sandals made with metal-free tanned leather, featuring a thick leather arch band and crossed toehold straps.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CHROME FREE AND METAL FREE TANNED LEATHER</u></a>",
-        "TOTAL HEEL HEIGHT: 0,5 CM / 0.2 INCHES",
-        "Leather sole"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sandals",
-        "superMicroCategory": "ysl_super_micro_men_sandals"
-      },
-      "sizes": [
-        {
-          "id": "809979857",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "809979060",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "809979061",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "809979062",
-          "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "809979063",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "809979064",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "809979065",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "809981426",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "809981427",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "809981428",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "809981429",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "809981430",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "809981431",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "809981432",
-          "value": "45_5",
-          "displayValue": "YSL 45.5 / GB 11.5",
-          "inStock": true
-        },
-        {
-          "id": "809981433",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "671904DWE001000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/culver-slides-in-smooth-leather-671904DWE001000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/671904dwe001000/1.jpg",
-        "/products/ys-pdp/671904dwe001000/2.jpg",
-        "/products/ys-pdp/671904dwe001000/3.jpg"
-      ]
-    },
-    {
-      "id": "861077DWE006023",
-      "sku": "861077DWE006023",
-      "masterId": "861077DWE00",
-      "name": "IOS sandals in smooth leather",
-      "color": "Brown",
-      "microColor": "DARK CHOCOLATE",
-      "colorCode": "6023",
-      "url": "https://www.ysl.com/en-gb/pr/ios-sandals-in-smooth-leather-861077DWE006023.html",
-      "path": "pr/ios-sandals-in-smooth-leather-861077DWE006023.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sandals"
-      ],
-      "leafId": "ys-men-sandals",
-      "gbpPrice": 845.0,
-      "inStock": true,
-      "compositions": "P 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/ec0e2710-277f-4d1c-9107-b50ff13435eb/eCom/861077DWE006023_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/2cd7bd9f-a79d-4e59-889e-02a9fc8782e0/eCom/861077DWE006023_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/9b6bcbb9-ce8f-4ea8-9ad2-bf2a776b7025/eCom/861077DWE006023_C.jpg?v=1"
-      ],
-      "description": "flat sandals with a thick arch band and crossed toehold straps.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>metal-free tanned leather</u></a>",
-        "leather sole",
-        "adjustable strap",
-        "HEEL HEIGHT: 0.5 CM / 0.2 INCHES"
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sandals",
-        "superMicroCategory": "ysl_super_micro_men_sandals"
-      },
-      "sizes": [
-        {
-          "id": "814155816",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814155818",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814155820",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814155822",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814155824",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "861077DWE006023",
-          "name": "Brown",
-          "url": "https://www.ysl.com/en-gb/pr/ios-sandals-in-smooth-leather-861077DWE006023.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/861077dwe006023/1.jpg",
-        "/products/ys-pdp/861077dwe006023/2.jpg",
-        "/products/ys-pdp/861077dwe006023/3.jpg"
-      ]
-    },
-    {
-      "id": "861304DWE001000",
-      "sku": "861304DWE001000",
-      "masterId": "861304DWE00",
-      "name": "POOL flip-flops in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/pool-flip-flops-in-smooth-leather-861304DWE001000.html",
-      "path": "pr/pool-flip-flops-in-smooth-leather-861304DWE001000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sandals"
-      ],
-      "leafId": "ys-men-sandals",
-      "gbpPrice": 525.0,
-      "inStock": true,
-      "compositions": "P 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/aea01781-f864-4735-8cb1-45a9547402db/eCom/861304DWE001000_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/5fd84c8b-1c29-4371-93dc-825f6f4b2547/eCom/861304DWE001000_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/732e95b4-ccab-4dd4-91a1-fdc38a8d8c86/eCom/861304DWE001000_C.jpg?v=1"
-      ],
-      "description": "flip-flop sandals featuring a Y-shaped strap in leather with a gold-tone SAINT LAURENT signature on the side and a rubber sole.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>metal-free tanned leather</u></a>",
-        "rubber sole",
-        "gold-tone SAINT LAURENT signature at the side"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sandals",
-        "superMicroCategory": "ysl_super_micro_men_sandals"
-      },
-      "sizes": [
-        {
-          "id": "814150522",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814150941",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814151984",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814152751",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "814150524",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814150525",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "814150942",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814150526",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "814151985",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814153167",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "814152119",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "861304DWE001000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/pool-flip-flops-in-smooth-leather-861304DWE001000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/861304dwe001000/1.jpg",
-        "/products/ys-pdp/861304dwe001000/2.jpg",
-        "/products/ys-pdp/861304dwe001000/3.jpg"
       ]
     },
     {
@@ -8881,349 +8123,6 @@
       ]
     },
     {
-      "id": "862577AAGB69099",
-      "sku": "862577AAGB69099",
-      "masterId": "862577AAGB6",
-      "name": "BUMP sneakers in smooth leather and suede",
-      "color": "White",
-      "microColor": "OPTIC WHITE",
-      "colorCode": "9099",
-      "url": "https://www.ysl.com/en-gb/pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB69099.html",
-      "path": "pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB69099.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sneakers"
-      ],
-      "leafId": "ys-men-sneakers",
-      "gbpPrice": 810.0,
-      "inStock": true,
-      "compositions": "T 100% POLYESTER",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/723169a3-cc01-4bc9-8f81-96b43387b3d6/eCom/862577AAGB69099_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/049908f1-64e5-4b1c-90ed-6baf37b50705/eCom/862577AAGB69099_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/e327b8dd-ce1e-4458-aaf9-96afd2efdeee/eCom/862577AAGB69099_D.jpg?v=1"
-      ],
-      "description": "low-top drawstring laced sneakers with a rubber SAINT LAURENT signature on the tongue and back tab.",
-      "shortDescription": [
-        "rubber sole"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sneakers",
-        "superMicroCategory": "ysl_super_micro_men_sneakers"
-      },
-      "sizes": [
-        {
-          "id": "814152772",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814152773",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814152774",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "814152775",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814153183",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "814152776",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814152777",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "814152778",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814152779",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "814152780",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "814155864",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "862577AAGB69099",
-          "name": "White",
-          "url": "https://www.ysl.com/en-gb/pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB69099.html",
-          "hex": "ffffff"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/862577aagb69099/1.jpg",
-        "/products/ys-pdp/862577aagb69099/2.jpg",
-        "/products/ys-pdp/862577aagb69099/3.jpg"
-      ]
-    },
-    {
-      "id": "862577AAGB79264",
-      "sku": "862577AAGB79264",
-      "masterId": "862577AAGB7",
-      "name": "BUMP sneakers in smooth leather and suede",
-      "color": "White",
-      "microColor": "WHITE, GREY & DARK BASIL",
-      "colorCode": "9264",
-      "url": "https://www.ysl.com/en-gb/pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB79264.html",
-      "path": "pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB79264.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sneakers"
-      ],
-      "leafId": "ys-men-sneakers",
-      "gbpPrice": 810.0,
-      "inStock": true,
-      "compositions": "T 100% POLYESTER",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/85aaebe3-e394-41a2-b78b-f47f9149c738/eCom/862577AAGB79264_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/6ee31e0f-fdf6-4883-88b2-36d5b1230497/eCom/862577AAGB79264_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/8b282363-400b-4ba6-9013-061ffd74f8b7/eCom/862577AAGB79264_D.jpg?v=1"
-      ],
-      "description": "low-top drawstring laced sneakers with a rubber SAINT LAURENT signature on the tongue and back tab.",
-      "shortDescription": [
-        "rubber sole"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sneakers",
-        "superMicroCategory": "ysl_super_micro_men_sneakers"
-      },
-      "sizes": [
-        {
-          "id": "814155865",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814155867",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814155868",
-          "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "814155869",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814155870",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "814155871",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814155872",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "814155873",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814155874",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "814155875",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814155876",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "814155877",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "814155879",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "862577AAGB79264",
-          "name": "White",
-          "url": "https://www.ysl.com/en-gb/pr/bump-sneakers-in-smooth-leather-and-suede-862577AAGB79264.html",
-          "hex": "ffffff"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/862577aagb79264/1.jpg",
-        "/products/ys-pdp/862577aagb79264/2.jpg",
-        "/products/ys-pdp/862577aagb79264/3.jpg"
-      ]
-    },
-    {
-      "id": "862660AAGCD1000",
-      "sku": "862660AAGCD1000",
-      "masterId": "862660AAGCD",
-      "name": "ALTMAN sneakers in satin",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/altman-sneakers-in-satin-862660AAGCD1000.html",
-      "path": "pr/altman-sneakers-in-satin-862660AAGCD1000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-sneakers"
-      ],
-      "leafId": "ys-men-sneakers",
-      "gbpPrice": 975.0,
-      "inStock": true,
-      "compositions": "T 100% POLYESTER",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/5115a90a-df82-41c9-9e0f-e49047c3c44b/eCom/862660AAGCD1000_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/c927903f-49f6-4cff-8a17-00d90a1c524a/eCom/862660AAGCD1000_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/911ec37e-fd89-449c-a769-c52dab2cece6/eCom/862660AAGCD1000_C.jpg?v=1"
-      ],
-      "description": "low-top laced sneakers featuring a tongue pull loop.",
-      "shortDescription": [
-        "rubber sole",
-        "HEEL HEIGHT: 1 CM / 0.4 INCHES"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_shoes",
-        "microCategory": "ysl_micro_men_sneakers",
-        "superMicroCategory": "ysl_super_micro_men_sneakers"
-      },
-      "sizes": [
-        {
-          "id": "814151476",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814151477",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814151478",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "814151480",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "814151481",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "814151482",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "814155211",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "862660AAGCD1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/altman-sneakers-in-satin-862660AAGCD1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/862660aagcd1000/1.jpg",
-        "/products/ys-pdp/862660aagcd1000/2.jpg",
-        "/products/ys-pdp/862660aagcd1000/3.jpg"
-      ]
-    },
-    {
       "id": "84553700NI09061",
       "sku": "84553700NI09061",
       "masterId": "84553700NI0",
@@ -10402,167 +9301,6 @@
       ]
     },
     {
-      "id": "6342251YL001000",
-      "sku": "6342251YL001000",
-      "masterId": "6342251YL00",
-      "name": "wyatt harness boots in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/wyatt-harness-boots-in-smooth-leather-6342251YL001000.html",
-      "path": "pr/wyatt-harness-boots-in-smooth-leather-6342251YL001000.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-men-shoes",
-        "ys-men-shoes-all",
-        "ys-men-boots"
-      ],
-      "leafId": "ys-men-boots",
-      "gbpPrice": 1185.0,
-      "inStock": true,
-      "compositions": "P 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/38a3c2a62362813e/eCom-6342251YL001000_A.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/m/66fcbaba5456ec6a/eCom-6342251YL001000_B.jpg?v=2"
-      ],
-      "description": "boots with a western stitched vamp, stacked heel, double-chain harness strap, zip closure and leather Blake-stitched sole.",
-      "shortDescription": [
-        "TOTAL HEEL HEIGHT: 4 CM / 1.5 INCHES",
-        "leather sole",
-        "back pull-on tab",
-        "this product can also be shipped under code 6813311YL001000"
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_unisex_shoes",
-        "microCategory": "ysl_micro_men_boots",
-        "superMicroCategory": "ysl_super_micro_men_boots"
-      },
-      "sizes": [
-        {
-          "id": "809455505",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "809459046",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "809452740",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "809455649",
-          "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "809452741",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "809455650",
-          "value": "41_5",
-          "displayValue": "YSL 41.5 / GB 7.5",
-          "inStock": true
-        },
-        {
-          "id": "809452742",
-          "value": "42",
-          "displayValue": "YSL 42 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "809452743",
-          "value": "42_5",
-          "displayValue": "YSL 42.5 / GB 8.5",
-          "inStock": true
-        },
-        {
-          "id": "809452744",
-          "value": "43",
-          "displayValue": "YSL 43 / GB 9",
-          "inStock": true
-        },
-        {
-          "id": "809452745",
-          "value": "43_5",
-          "displayValue": "YSL 43.5 / GB 9.5",
-          "inStock": true
-        },
-        {
-          "id": "809452746",
-          "value": "44",
-          "displayValue": "YSL 44 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "809468418",
-          "value": "44_5",
-          "displayValue": "YSL 44.5 / GB 10.5",
-          "inStock": true
-        },
-        {
-          "id": "809452747",
-          "value": "45",
-          "displayValue": "YSL 45 / GB 11",
-          "inStock": true
-        },
-        {
-          "id": "809475694",
-          "value": "45_5",
-          "displayValue": "YSL 45.5 / GB 11.5",
-          "inStock": true
-        },
-        {
-          "id": "809453519",
-          "value": "46",
-          "displayValue": "YSL 46 / GB 12",
-          "inStock": true
-        },
-        {
-          "id": "809612442",
-          "value": "46_5",
-          "displayValue": "YSL 46.5 / GB 12.5",
-          "inStock": true
-        },
-        {
-          "id": "809604551",
-          "value": "47",
-          "displayValue": "YSL 47 / GB 13",
-          "inStock": true
-        },
-        {
-          "id": "809604552",
-          "value": "50",
-          "displayValue": "YSL 50 / GB 16",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "6342251YL001000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/wyatt-harness-boots-in-smooth-leather-6342251YL001000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/6342251yl001000/1.jpg",
-        "/products/ys-pdp/6342251yl001000/2.jpg"
-      ]
-    },
-    {
       "id": "86130125V002128",
       "sku": "86130125V002128",
       "masterId": "86130125V00",
@@ -11652,148 +10390,265 @@
       ]
     },
     {
-      "id": "8592599QNAG6303",
-      "sku": "8592599QNAG6303",
-      "masterId": "8592599QNAG",
-      "name": "KATE sandals in satin crepe",
-      "color": "Red",
-      "microColor": "DARK RUGGINE",
-      "colorCode": "6303",
-      "url": "https://www.ysl.com/en-gb/pr/kate-sandals-in-satin-crepe-8592599QNAG6303.html",
-      "path": "pr/kate-sandals-in-satin-crepe-8592599QNAG6303.html",
+      "id": "443208BT3001000",
+      "sku": "443208BT3001000",
+      "masterId": "443208BT300",
+      "name": "wyatt chelsea boots in suede",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/wyatt-chelsea-boots-in-suede-443208BT3001000.html",
+      "path": "pr/wyatt-chelsea-boots-in-suede-443208BT3001000.html",
       "collections": [
         "saint-laurent-shoes",
         "ys-men-shoes",
-        "ys-men-sandals"
+        "ys-men-shoes-all",
+        "ys-men-boots"
       ],
-      "leafId": "ys-men-sandals",
-      "gbpPrice": 840.0,
+      "leafId": "ys-men-boots",
+      "gbpPrice": 955.0,
       "inStock": true,
-      "compositions": "T  72% VISCOSE T  28% SILK",
+      "compositions": "P 100% DOMESTICATED CALF LE",
       "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/035f7522-6e73-4d7f-afc9-88a5f6270f19/eCom/8592599QNAG6303_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/45d4cffa-eeec-44cf-8f2c-a5097045f211/eCom/8592599QNAG6303_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/6af26605-de4e-478b-bfc8-a546e14300a7/eCom/8592599QNAG6303_C.jpg?v=1"
+        "https://saint-laurent.dam.kering.com/m/3953c36c545877d3/eCom-443208BT3001000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/74951dcc42dc971a/eCom-443208BT3001000_B.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/m/520c21552a1dcfc2/eCom-443208BT3001000_C.jpg?v=3"
       ],
-      "description": "slingback sandals with a crisscrossed almond toe and stiletto heel.",
+      "description": "chelsea boots with a stacked block heel, elasticized side panels, and leather Blake-stitched sole.",
       "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>certified silk and viscose</u></a>",
-        "leather sole",
-        "round saint laurent-engraved metal plaque on the insole",
-        "elasticized slingback strap",
-        "HEEL HEIGHT: 11 CM / 4.3 INCHES"
+        "TOTAL HEEL HEIGHT: 3 CM / 1.1 INCHES",
+        "back pull-on tab",
+        "leather sole"
       ],
       "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
       "madeIn": "ITALY",
       "categories": {
-        "macroCategory": "ysl_macro_women_shoes",
-        "microCategory": "ysl_micro_women_sandals",
-        "superMicroCategory": "ysl_super_micro_women_sandals"
+        "macroCategory": "ysl_macro_men_shoes",
+        "microCategory": "ysl_micro_men_boots",
+        "superMicroCategory": "ysl_super_micro_men_boots"
       },
       "sizes": [
         {
-          "id": "814159389",
-          "value": "35",
-          "displayValue": "YSL 35 / GB 2",
-          "inStock": true
-        },
-        {
-          "id": "814159391",
-          "value": "36",
-          "displayValue": "YSL 36 / GB 3",
-          "inStock": true
-        },
-        {
-          "id": "814159545",
-          "value": "36_5",
-          "displayValue": "YSL 36.5 / GB 3.5",
-          "inStock": true
-        },
-        {
-          "id": "814159392",
-          "value": "37",
-          "displayValue": "YSL 37 / GB 4",
-          "inStock": true
-        },
-        {
-          "id": "814159393",
-          "value": "37_5",
-          "displayValue": "YSL 37.5 / GB 4.5",
-          "inStock": true
-        },
-        {
-          "id": "814159394",
-          "value": "38",
-          "displayValue": "YSL 38 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814159395",
-          "value": "38_5",
-          "displayValue": "YSL 38.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "814159396",
+          "id": "807343198",
           "value": "39",
-          "displayValue": "YSL 39 / GB 6",
+          "displayValue": "YSL 39 / GB 5",
           "inStock": true
         },
         {
-          "id": "814159397",
+          "id": "807343201",
           "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 6.5",
+          "displayValue": "YSL 39.5 / GB 5.5",
           "inStock": true
         },
         {
-          "id": "814159483",
+          "id": "807343190",
           "value": "40",
-          "displayValue": "YSL 40 / GB 7",
+          "displayValue": "YSL 40 / GB 6",
           "inStock": true
         },
         {
-          "id": "814159398",
+          "id": "807343235",
           "value": "40_5",
-          "displayValue": "YSL 40.5 / GB 7.5",
+          "displayValue": "YSL 40.5 / GB 6.5",
           "inStock": true
         },
         {
-          "id": "814159547",
+          "id": "807343191",
           "value": "41",
-          "displayValue": "YSL 41 / GB 8",
+          "displayValue": "YSL 41 / GB 7",
           "inStock": true
         },
         {
-          "id": "814173038",
+          "id": "807343192",
+          "value": "41_5",
+          "displayValue": "YSL 41.5 / GB 7.5",
+          "inStock": true
+        },
+        {
+          "id": "807343193",
           "value": "42",
-          "displayValue": "YSL 42 / GB 9",
+          "displayValue": "YSL 42 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "807343194",
+          "value": "42_5",
+          "displayValue": "YSL 42.5 / GB 8.5",
+          "inStock": true
+        },
+        {
+          "id": "807343195",
+          "value": "43",
+          "displayValue": "YSL 43 / GB 9",
+          "inStock": true
+        },
+        {
+          "id": "807343196",
+          "value": "43_5",
+          "displayValue": "YSL 43.5 / GB 9.5",
+          "inStock": true
+        },
+        {
+          "id": "807343197",
+          "value": "44",
+          "displayValue": "YSL 44 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "807506038",
+          "value": "44_5",
+          "displayValue": "YSL 44.5 / GB 10.5",
+          "inStock": true
+        },
+        {
+          "id": "807343199",
+          "value": "45",
+          "displayValue": "YSL 45 / GB 11",
+          "inStock": true
+        },
+        {
+          "id": "807512126",
+          "value": "45_5",
+          "displayValue": "YSL 45.5 / GB 11.5",
           "inStock": true
         }
       ],
       "colors": [
         {
-          "id": "8592599QNAG6303",
-          "name": "Red",
-          "url": "https://www.ysl.com/en-gb/pr/kate-sandals-in-satin-crepe-8592599QNAG6303.html",
-          "hex": "e80000"
+          "id": "443208BT3009870",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/wyatt-chelsea-boots-in-suede-443208BT3009870.html",
+          "hex": "997957"
         },
         {
-          "id": "8592599QNAG2309",
-          "name": "Gold",
-          "url": "https://www.ysl.com/en-gb/pr/kate-sandals-in-satin-crepe-8592599QNAG2309.html",
-          "hex": "edda0c"
-        },
-        {
-          "id": "8592599QNAG2097",
-          "name": "Green",
-          "url": "https://www.ysl.com/en-gb/pr/kate-sandals-in-satin-crepe-8592599QNAG2097.html",
-          "hex": "1b5c1d"
+          "id": "443208BT3001000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/wyatt-chelsea-boots-in-suede-443208BT3001000.html",
+          "hex": "000000"
         }
       ],
       "localImages": [
-        "/products/ys-pdp/8592599qnag6303/1.jpg",
-        "/products/ys-pdp/8592599qnag6303/2.jpg",
-        "/products/ys-pdp/8592599qnag6303/3.jpg"
+        "/products/ys-pdp/443208bt3001000/1.jpg",
+        "/products/ys-pdp/443208bt3001000/2.jpg",
+        "/products/ys-pdp/443208bt3001000/3.jpg"
+      ]
+    },
+    {
+      "id": "861781AADF02245",
+      "sku": "861781AADF02245",
+      "masterId": "861781AADF0",
+      "name": "CARLYLE SLIDES in smooth leather",
+      "color": "Brown",
+      "microColor": "HARRIS EAGLE BROWN",
+      "colorCode": "2245",
+      "url": "https://www.ysl.com/en-gb/pr/carlyle-slides-in-smooth-leather-861781AADF02245.html",
+      "path": "pr/carlyle-slides-in-smooth-leather-861781AADF02245.html",
+      "collections": [
+        "saint-laurent-shoes",
+        "ys-men-shoes",
+        "ys-men-shoes-all",
+        "ys-men-sandals"
+      ],
+      "leafId": "ys-men-sandals",
+      "gbpPrice": 700.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/1d330228-2413-4334-8ddc-a48749ea4206/eCom/861781AADF02245_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/bb4cd351-01b5-499c-9a73-d616dbd9be87/eCom/861781AADF02245_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b2306f13-53e9-4151-b412-43432b51cd47/eCom/861781AADF02245_C.jpg?v=1"
+      ],
+      "description": "flat sandals with a round toe and thick, crossed straps.",
+      "shortDescription": [
+        "leather sole"
+      ],
+      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_shoes",
+        "microCategory": "ysl_micro_men_sandals",
+        "superMicroCategory": "ysl_super_micro_men_sandals"
+      },
+      "sizes": [
+        {
+          "id": "814155276",
+          "value": "39",
+          "displayValue": "YSL 39 / GB 5",
+          "inStock": true
+        },
+        {
+          "id": "814155278",
+          "value": "40",
+          "displayValue": "YSL 40 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814155280",
+          "value": "41",
+          "displayValue": "YSL 41 / GB 7",
+          "inStock": true
+        },
+        {
+          "id": "814150536",
+          "value": "41_5",
+          "displayValue": "YSL 41.5 / GB 7.5",
+          "inStock": true
+        },
+        {
+          "id": "814150537",
+          "value": "42",
+          "displayValue": "YSL 42 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814150538",
+          "value": "42_5",
+          "displayValue": "YSL 42.5 / GB 8.5",
+          "inStock": true
+        },
+        {
+          "id": "814150539",
+          "value": "43",
+          "displayValue": "YSL 43 / GB 9",
+          "inStock": true
+        },
+        {
+          "id": "814150540",
+          "value": "43_5",
+          "displayValue": "YSL 43.5 / GB 9.5",
+          "inStock": true
+        },
+        {
+          "id": "814150541",
+          "value": "44",
+          "displayValue": "YSL 44 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814155281",
+          "value": "45",
+          "displayValue": "YSL 45 / GB 11",
+          "inStock": true
+        },
+        {
+          "id": "814155283",
+          "value": "46",
+          "displayValue": "YSL 46 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "861781AADF02245",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/carlyle-slides-in-smooth-leather-861781AADF02245.html",
+          "hex": "693818"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/861781aadf02245/1.jpg",
+        "/products/ys-pdp/861781aadf02245/2.jpg",
+        "/products/ys-pdp/861781aadf02245/3.jpg"
       ]
     }
   ]

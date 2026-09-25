@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-09-18T17:27:37.215304+00:00",
+  "scrapedAt": "2026-09-25T18:30:06.017935+00:00",
   "brand": "Saint Laurent",
   "hub": "men-slg",
   "category": "accessories",
   "family": "ys-men-slg",
   "officialNbAlgoliaHits": 156,
-  "officialUnionCount": 164,
+  "officialUnionCount": 163,
   "leaves": [
     {
       "id": "ys-men-slg-all",
@@ -5693,7 +5693,7 @@
         "ys-men-slg-all",
         "ys-men-card-cases"
       ],
-      "leafId": "ys-men-card-cases",
+      "leafId": "ys-men-slg-all",
       "gbpPrice": 270.0,
       "inStock": true,
       "compositions": "95% CALFSKIN LEATHER, 5% METAL",
@@ -7001,7 +7001,7 @@
         "ys-men-slg-all",
         "ys-men-card-cases"
       ],
-      "leafId": "ys-men-card-cases",
+      "leafId": "ys-men-slg-all",
       "gbpPrice": 285.0,
       "inStock": true,
       "compositions": "95% CALFSKIN LEATHER, 5% METAL",
@@ -7063,7 +7063,7 @@
         "ys-men-slg-all",
         "ys-men-card-cases"
       ],
-      "leafId": "ys-men-card-cases",
+      "leafId": "ys-men-slg-all",
       "gbpPrice": 300.0,
       "inStock": true,
       "compositions": "100% CALFSKIN LEATHER",
@@ -7566,9 +7566,10 @@
       "collections": [
         "saint-laurent-accessories",
         "ys-men-accessories",
-        "ys-men-slg-all"
+        "ys-men-slg-all",
+        "ys-men-cases-holders"
       ],
-      "leafId": "ys-men-slg-all",
+      "leafId": "ys-men-cases-holders",
       "gbpPrice": 385.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED CALF LE",
@@ -10058,67 +10059,6 @@
         "/products/ys-pdp/604008bty0u1000/2.jpg",
         "/products/ys-pdp/604008bty0u1000/3.jpg",
         "/products/ys-pdp/604008bty0u1000/4.jpg"
-      ]
-    },
-    {
-      "id": "607659DZEDW1000",
-      "sku": "607659DZEDW1000",
-      "masterId": "607659DZEDW",
-      "name": "TINY CASSANDRE PASSPORT CASE IN CROCODILE-EMBOSSED LEATHER",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/tiny-cassandre-passport-case-in-crocodile-embossed-leather-607659DZEDW1000.html",
-      "path": "pr/tiny-cassandre-passport-case-in-crocodile-embossed-leather-607659DZEDW1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-cases-holders"
-      ],
-      "leafId": "ys-men-cases-holders",
-      "gbpPrice": 385.0,
-      "inStock": true,
-      "compositions": "T 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/e7da9f4250e2413/eCom-607659DZEDW1000_A.jpg?v=4",
-        "https://saint-laurent.dam.kering.com/m/1e1d4c7e1c99a893/eCom-607659DZEDW1000_B.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/m/6fed9f77438e2e6c/eCom-607659DZEDW1000_C.jpg?v=3"
-      ],
-      "description": "passport cover with internal card slots, decorated with small metal CASSANDRE.",
-      "shortDescription": [
-        "Dimensions: 10 x 14 x 1,5 CM / 3.9 x 5.5 x 0.5 INCHES",
-        "LIGHT bronze-toned metal hardware",
-        "internal: two passport inserts, four card slots",
-        "LEATHER LINING",
-        "this product can also be shipped under code 863679DZEDW1000"
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_smlg",
-        "microCategory": "ysl_micro_men_cases",
-        "superMicroCategory": "ysl_super_micro_men_cases"
-      },
-      "sizes": [
-        {
-          "id": "809374367",
-          "value": "U",
-          "displayValue": "YSL U / GB U",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "607659DZEDW1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/tiny-cassandre-passport-case-in-crocodile-embossed-leather-607659DZEDW1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/607659dzedw1000/1.jpg",
-        "/products/ys-pdp/607659dzedw1000/2.jpg",
-        "/products/ys-pdp/607659dzedw1000/3.jpg"
       ]
     },
     {

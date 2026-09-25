@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-18T17:37:54.906834+00:00",
+  "scrapedAt": "2026-09-25T18:34:14.765895+00:00",
   "brand": "Saint Laurent",
   "hub": "women-rtw",
   "category": "luxury",
@@ -14634,107 +14634,6 @@
       ]
     },
     {
-      "id": "823599YI8634293",
-      "sku": "823599YI8634293",
-      "masterId": "823599YI863",
-      "name": "70'S high-rise jeans",
-      "color": "Blue",
-      "microColor": "AUTHENTIC MEDIUM BLUE",
-      "colorCode": "4293",
-      "url": "https://www.ysl.com/en-gb/pr/70s-high-rise-jeans-823599YI8634293.html",
-      "path": "pr/70s-high-rise-jeans-823599YI8634293.html",
-      "collections": [
-        "saint-laurent",
-        "ys-women",
-        "ys-women-rtw-all",
-        "ys-women-denim"
-      ],
-      "leafId": "ys-women-denim",
-      "gbpPrice": 865.0,
-      "inStock": true,
-      "compositions": "T 100% COTTON ET 100% COWHIDE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/52a75d8eac26bcea/eCom-823599YI8634293_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/m/3e2acdf5fbdd7630/eCom-823599YI8634293_B.jpg?v=1"
-      ],
-      "description": "HIGH-WAISTED FIVE-POCKET JEANS in authentic medium blue made with certified cotton, featuring a flared boot-cut leg and zip fly.",
-      "shortDescription": [
-        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED COTTON</u></a>",
-        "button closure with zip fly",
-        "five-pocket jeans",
-        "waistband with belt loops"
-      ],
-      "productCare": "Wash Max 30°C - Mild Process. Clean Inside Out. Do Not Bleach. Do Not Tumble Dry. Line Dry. Iron At Maximum Temperature 110°C - Without Steam. Iron Inside Out. Do Not Dry Clean.",
-      "madeIn": "JAPAN",
-      "categories": {
-        "macroCategory": "ysl_macro_women_rtw",
-        "microCategory": "ysl_micro_women_denim",
-        "superMicroCategory": "ysl_super_micro_women_denim"
-      },
-      "sizes": [
-        {
-          "id": "813772261",
-          "value": "24",
-          "displayValue": "YSL 24 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "813769736",
-          "value": "25",
-          "displayValue": "YSL 25 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "813769737",
-          "value": "26",
-          "displayValue": "YSL 26 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "813769467",
-          "value": "27",
-          "displayValue": "YSL 27 / GB 8",
-          "inStock": true
-        },
-        {
-          "id": "813769468",
-          "value": "28",
-          "displayValue": "YSL 28 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "813769469",
-          "value": "29",
-          "displayValue": "YSL 29 / GB 10",
-          "inStock": true
-        },
-        {
-          "id": "813769738",
-          "value": "30",
-          "displayValue": "YSL 30 / GB 12",
-          "inStock": true
-        },
-        {
-          "id": "813772394",
-          "value": "31",
-          "displayValue": "YSL 31 / GB 12",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "823599YI8634293",
-          "name": "Blue",
-          "url": "https://www.ysl.com/en-gb/pr/70s-high-rise-jeans-823599YI8634293.html",
-          "hex": "414266"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/823599yi8634293/1.jpg",
-        "/products/ys-pdp/823599yi8634293/2.jpg"
-      ]
-    },
-    {
       "id": "873630Y19PA5170",
       "sku": "873630Y19PA5170",
       "masterId": "873630Y19PA",
@@ -23591,6 +23490,115 @@
         "/products/ys-pdp/851251y6j986560/2.jpg",
         "/products/ys-pdp/851251y6j986560/3.jpg",
         "/products/ys-pdp/851251y6j986560/4.jpg"
+      ]
+    },
+    {
+      "id": "A00BPTYI8634293",
+      "sku": "A00BPTYI8634293",
+      "masterId": "A00BPTYI863",
+      "name": "70'S high-rise jeans",
+      "color": "Blue",
+      "microColor": "AUTHENTIC MEDIUM BLUE",
+      "colorCode": "4293",
+      "url": "https://www.ysl.com/en-gb/pr/70s-high-rise-jeans-A00BPTYI8634293.html",
+      "path": "pr/70s-high-rise-jeans-A00BPTYI8634293.html",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-denim"
+      ],
+      "leafId": "ys-women-denim",
+      "gbpPrice": null,
+      "inStock": true,
+      "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b41414f9-6ceb-402f-95b4-fd5c44799c57/eCom/A00BPTYI8634293_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/604d40b6-496a-4165-ac39-c94ee4402d82/eCom/A00BPTYI8634293_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/ba85847d-6bdb-47f8-8298-eec5d1bf37c2/eCom/A00BPTYI8634293_I.jpg?v=1"
+      ],
+      "description": "HIGH-WAISTED FIVE-POCKET JEANS in authentic medium blue made with certified cotton, featuring a flared boot-cut leg and zip fly.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED COTTON</u></a>",
+        "button closure with zip fly",
+        "five-pocket jeans",
+        "waistband with belt loops"
+      ],
+      "productCare": "",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_denim",
+        "superMicroCategory": "ysl_super_micro_women_denim"
+      },
+      "sizes": [
+        {
+          "id": "814603925",
+          "value": "24",
+          "displayValue": "YSL 24 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814603926",
+          "value": "25",
+          "displayValue": "YSL 25 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "814603927",
+          "value": "26",
+          "displayValue": "YSL 26 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814603928",
+          "value": "27",
+          "displayValue": "YSL 27 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "814603929",
+          "value": "28",
+          "displayValue": "YSL 28 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814603930",
+          "value": "29",
+          "displayValue": "YSL 29 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "814603931",
+          "value": "30",
+          "displayValue": "YSL 30 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814603932",
+          "value": "31",
+          "displayValue": "YSL 31 / GB 12",
+          "inStock": true
+        },
+        {
+          "id": "814603933",
+          "value": "32",
+          "displayValue": "YSL 32 / GB 14",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00BPTYI8634293",
+          "name": "Blue",
+          "url": "https://www.ysl.com/en-gb/pr/70s-high-rise-jeans-A00BPTYI8634293.html",
+          "hex": "414266"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00bptyi8634293/1.jpg",
+        "/products/ys-pdp/a00bptyi8634293/2.jpg",
+        "/products/ys-pdp/a00bptyi8634293/3.jpg"
       ]
     }
   ]

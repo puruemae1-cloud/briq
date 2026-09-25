@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-09-18T17:36:31.792476+00:00",
+  "scrapedAt": "2026-09-25T18:33:02.972207+00:00",
   "brand": "Saint Laurent",
   "hub": "women-shoes",
   "category": "shoes",
   "family": "ys-women-shoes",
   "officialNbAlgoliaHits": 249,
-  "officialUnionCount": 265,
+  "officialUnionCount": 263,
   "leaves": [
     {
       "id": "ys-women-shoes-all",
@@ -5492,7 +5492,7 @@
         "ys-women-shoes-all",
         "ys-women-pumps"
       ],
-      "leafId": "ys-women-pumps",
+      "leafId": "ys-women-shoes-all",
       "gbpPrice": 2910.0,
       "inStock": true,
       "compositions": null,
@@ -5779,7 +5779,7 @@
         "ys-women-shoes-all",
         "ys-women-pumps"
       ],
-      "leafId": "ys-women-pumps",
+      "leafId": "ys-women-shoes-all",
       "gbpPrice": 1045.0,
       "inStock": true,
       "compositions": "T  72% VISCOSE T  28% SILK",
@@ -5923,9 +5923,10 @@
       "collections": [
         "saint-laurent-shoes",
         "ys-women-shoes",
-        "ys-women-shoes-all"
+        "ys-women-shoes-all",
+        "ys-women-pumps"
       ],
-      "leafId": "ys-women-shoes-all",
+      "leafId": "ys-women-pumps",
       "gbpPrice": 1020.0,
       "inStock": true,
       "compositions": null,
@@ -34769,238 +34770,6 @@
         "/products/ys-pdp/a005pp1f4a29987/2.jpg",
         "/products/ys-pdp/a005pp1f4a29987/3.jpg",
         "/products/ys-pdp/a005pp1f4a29987/4.jpg"
-      ]
-    },
-    {
-      "id": "A001H01F4AG2550",
-      "sku": "A001H01F4AG2550",
-      "masterId": "A001H01F4AG",
-      "name": "FOLIE pumps in TPU",
-      "color": "Brown",
-      "microColor": "PAPAYA",
-      "colorCode": "2550",
-      "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG2550.html",
-      "path": "pr/folie-pumps-in-tpu-A001H01F4AG2550.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-women-shoes",
-        "ys-women-pumps"
-      ],
-      "leafId": "ys-women-pumps",
-      "gbpPrice": 1090.0,
-      "inStock": true,
-      "compositions": "T 100% POLYURETHANE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/5be9b6bf-5acf-44b5-bcc6-1de13d97687e/eCom/A001H01F4AG2550_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/937df0ed-60df-421e-b2a4-149967c6e753/eCom/A001H01F4AG2550_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/fb00f455-3b63-4031-8f62-de51f6287be6/eCom/A001H01F4AG2550_C.jpg?v=2"
-      ],
-      "description": "translucent pumps with a pointed toe and stiletto heel.",
-      "shortDescription": [
-        "leather sole",
-        "round saint laurent-engraved metal plaque on the insole",
-        "HEEL HEIGHT: 11 CM / 4.3 INCHES"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_shoes",
-        "microCategory": "ysl_micro_women_pumps",
-        "superMicroCategory": "ysl_super_micro_women_pumps"
-      },
-      "sizes": [
-        {
-          "id": "814342612",
-          "value": "36",
-          "displayValue": "YSL 36 / GB 3",
-          "inStock": true
-        },
-        {
-          "id": "814342613",
-          "value": "36_5",
-          "displayValue": "YSL 36.5 / GB 3.5",
-          "inStock": true
-        },
-        {
-          "id": "814342614",
-          "value": "37",
-          "displayValue": "YSL 37 / GB 4",
-          "inStock": true
-        },
-        {
-          "id": "814342615",
-          "value": "37_5",
-          "displayValue": "YSL 37.5 / GB 4.5",
-          "inStock": true
-        },
-        {
-          "id": "814342616",
-          "value": "38",
-          "displayValue": "YSL 38 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814342617",
-          "value": "38_5",
-          "displayValue": "YSL 38.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "814342618",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814342619",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "814342620",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814342622",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 8",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "A001H01F4AG7735",
-          "name": "Yellow",
-          "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG7735.html",
-          "hex": "FAD607"
-        },
-        {
-          "id": "A001H01F4AG2550",
-          "name": "Brown",
-          "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG2550.html",
-          "hex": "693818"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/a001h01f4ag2550/1.jpg",
-        "/products/ys-pdp/a001h01f4ag2550/2.jpg",
-        "/products/ys-pdp/a001h01f4ag2550/3.jpg"
-      ]
-    },
-    {
-      "id": "A001H01F4AG7735",
-      "sku": "A001H01F4AG7735",
-      "masterId": "A001H01F4AG",
-      "name": "FOLIE pumps in TPU",
-      "color": "Yellow",
-      "microColor": "YUKA YELLOW",
-      "colorCode": "7735",
-      "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG7735.html",
-      "path": "pr/folie-pumps-in-tpu-A001H01F4AG7735.html",
-      "collections": [
-        "saint-laurent-shoes",
-        "ys-women-shoes",
-        "ys-women-pumps"
-      ],
-      "leafId": "ys-women-pumps",
-      "gbpPrice": 1090.0,
-      "inStock": true,
-      "compositions": "T 100% POLYURETHANE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/dafef47b-8347-4ad8-9e85-955cbf8cecc1/eCom/A001H01F4AG7735_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/1241e914-1f6d-4f84-b571-61664707acef/eCom/A001H01F4AG7735_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/c1a8ab9f-4fe1-47aa-8854-33799014b77a/eCom/A001H01F4AG7735_C.jpg?v=2"
-      ],
-      "description": "translucent pumps with a pointed toe and stiletto heel.",
-      "shortDescription": [
-        "leather sole",
-        "round saint laurent-engraved metal plaque on the insole",
-        "HEEL HEIGHT: 11 CM / 4.3 INCHES"
-      ],
-      "productCare": "To maintain the value and preserve the beauty of your footwear, please observe the following precautions: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - Avoid contact with rough or abrasive surfaces. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral-colored cloth. Avoid excessive rubbing. - If traces of dirt or stains appear, avoid using generic cleaning products, such as stain removers or solvents. - Store the product in its protective flannel bag.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_shoes",
-        "microCategory": "ysl_micro_women_pumps",
-        "superMicroCategory": "ysl_super_micro_women_pumps"
-      },
-      "sizes": [
-        {
-          "id": "814342625",
-          "value": "36",
-          "displayValue": "YSL 36 / GB 3",
-          "inStock": true
-        },
-        {
-          "id": "814342627",
-          "value": "37",
-          "displayValue": "YSL 37 / GB 4",
-          "inStock": true
-        },
-        {
-          "id": "814342628",
-          "value": "37_5",
-          "displayValue": "YSL 37.5 / GB 4.5",
-          "inStock": true
-        },
-        {
-          "id": "814342629",
-          "value": "38",
-          "displayValue": "YSL 38 / GB 5",
-          "inStock": true
-        },
-        {
-          "id": "814342630",
-          "value": "38_5",
-          "displayValue": "YSL 38.5 / GB 5.5",
-          "inStock": true
-        },
-        {
-          "id": "814342631",
-          "value": "39",
-          "displayValue": "YSL 39 / GB 6",
-          "inStock": true
-        },
-        {
-          "id": "814342632",
-          "value": "39_5",
-          "displayValue": "YSL 39.5 / GB 6.5",
-          "inStock": true
-        },
-        {
-          "id": "814342633",
-          "value": "40",
-          "displayValue": "YSL 40 / GB 7",
-          "inStock": true
-        },
-        {
-          "id": "814342635",
-          "value": "41",
-          "displayValue": "YSL 41 / GB 8",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "A001H01F4AG7735",
-          "name": "Yellow",
-          "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG7735.html",
-          "hex": "FAD607"
-        },
-        {
-          "id": "A001H01F4AG2550",
-          "name": "Brown",
-          "url": "https://www.ysl.com/en-gb/pr/folie-pumps-in-tpu-A001H01F4AG2550.html",
-          "hex": "693818"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/a001h01f4ag7735/1.jpg",
-        "/products/ys-pdp/a001h01f4ag7735/2.jpg",
-        "/products/ys-pdp/a001h01f4ag7735/3.jpg"
       ]
     },
     {
