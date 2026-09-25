@@ -11,8 +11,9 @@ import {
   writeCartLines,
 } from "@/lib/cart-server";
 
+// Do not revalidate "/" + "layout": that purges every cached static page on
+// each cart edit. The header badge updates client-side from `briq-cart-n`.
 function revalidateCart() {
-  revalidatePath("/", "layout");
   revalidatePath("/cart");
   revalidatePath("/checkout");
 }

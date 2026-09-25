@@ -3,6 +3,7 @@ import { ChevronDown, Menu, ShoppingBag, X } from "lucide-react";
 import { navCategories, type NavChild } from "@/data/categories";
 import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
+import { HeaderCartCount } from "@/components/HeaderCartCount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
 import { ShopFastLink } from "@/components/ShopFastLink";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
@@ -115,7 +116,7 @@ function MobileBrandBranch({
   );
 }
 
-export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
+export function SiteHeader() {
   return (
     <>
       <input
