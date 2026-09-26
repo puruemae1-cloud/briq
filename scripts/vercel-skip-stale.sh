@@ -18,8 +18,9 @@ fi
 # commit after the whole sync batch, so each sync must not build on its own.
 MSG="${VERCEL_GIT_COMMIT_MESSAGE:-}"
 if [ -z "$MSG" ] && command -v git >/dev/null 2>&1; then
-  MSG="$(git log -1 --pretty=%B 2>/dev/null || true)"
+  MSG="$(git log -1 --pretty=%s 2>/dev/null || true)"
 fi
+MSG="$(printf '%s\n' "$MSG" | head -n 1)"
 case "$MSG" in
   *"[catalog-sync]"*)
     echo "vercel-skip-stale: catalogue-sync commit — skipping (batched deploy)"

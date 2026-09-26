@@ -36,7 +36,7 @@ jobs:
           EVENT: ${{ github.event_name }}
         run: |
           set -euo pipefail
-          msg=$(git log -1 --pretty=%B)
+          msg=$(git log -1 --pretty=%s)
           case "$msg" in
             *"[catalog-sync]"*) ;;
             *) echo "main HEAD is not a pending catalogue sync — nothing to deploy."; exit 0 ;;
@@ -70,7 +70,7 @@ jobs:
               exit 0
             fi
             git fetch origin main
-            case "$(git log -1 --pretty=%B FETCH_HEAD)" in
+            case "$(git log -1 --pretty=%s FETCH_HEAD)" in
               *"[catalog-sync]"*)
                 git reset --hard FETCH_HEAD
                 git commit --allow-empty -m "chore: deploy catalogue sync batch" ;;
