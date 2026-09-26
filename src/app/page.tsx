@@ -11,7 +11,7 @@ import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-ba
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
-import { getHomepageRailCards } from "@/lib/homepage-data";
+import { getHomepageData } from "@/lib/homepage-feed";
 
 /** Stream below-the-fold 100 Collection after hero + lookbook rails. */
 async function DeferredCollection100() {
@@ -25,7 +25,7 @@ export default async function HomePage() {
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
   // Watches rail is locked to Christopher Ward New Releases on every device.
-  const railProducts = await getHomepageRailCards();
+  const { rails: railProducts } = await getHomepageData();
 
   return (
     <>

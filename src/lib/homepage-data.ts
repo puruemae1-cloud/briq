@@ -1,4 +1,3 @@
-import { unstable_cache } from "next/cache";
 import type { Product } from "@/data/product-types";
 import { homeLookBanners } from "@/data/home-banners";
 import {
@@ -13,51 +12,43 @@ import {
 } from "@/lib/homepage-rails";
 
 /**
- * Homepage product data, cached in the Vercel Data Cache.
+ * Builds the homepage product cards from the full brand catalogues.
  *
- * Building these parses every brand catalogue (hundreds of MB); doing it per
- * request made cold starts ~15s. Only the trimmed card fields are cached
- * (a few KB), and the key includes the deployment so catalogue syncs show up
- * on the next deploy instead of waiting for the TTL.
- *
- * Keep `@/data/products` a static import: switching it to `await import()`
- * inside these callbacks made every request recompute (~9s total, Sep 2026).
+ * Heavy (parses hundreds of MB). Only `app/api/home-data/route.ts` and the
+ * dynamic-import fallback in `homepage-feed.ts` may import this module — a
+ * static import from the page/layout bundles every catalogue into the `/`
+ * chunk and makes each cold boot ~9s.
  */
-const DEPLOY_KEY =
-  process.env.VERCEL_DEPLOYMENT_ID ||
-  process.env.VERCEL_GIT_COMMIT_SHA ||
-  "local";
-const TTL_SECONDS = 3600;
+export type HomepageData = {
+  rails: Record<string, Product[]>;
+  signature: Product[];
+  newItems: Product[];
+};
 
-export const getHomepageRailCards = unstable_cache(
-  async (): Promise<Record<string, Product[]>> => {
-    // Skip YS merge here — homepage soft-nav was waiting on the 14MB catalogue.
-    const categoryRails = homeLookBanners
-      .filter((b) => b.categoryId)
-      .map((b) => ({
-        railId: b.id,
-        products:
-          b.id === "watches"
-            ? getHomepageCategoryProducts("watches", HOMEPAGE_WATCHES_COLLECTION)
-            : getHomepageCategoryProducts(b.categoryId),
-      }));
-    const rails = assignHomepageCategoryRails(categoryRails, 4);
-    return Object.fromEntries(
+let memo: HomepageData | null = null;
+
+export function buildHomepageData(): HomepageData {
+  if (memo) return memo;
+
+  // Skip YS merge here — homepage soft-nav was waiting on the 14MB catalogue.
+  const categoryRails = homeLookBanners
+    .filter((b) => b.categoryId)
+    .map((b) => ({
+      railId: b.id,
+      products:
+        b.id === "watches"
+          ? getHomepageCategoryProducts("watches", HOMEPAGE_WATCHES_COLLECTION)
+          : getHomepageCategoryProducts(b.categoryId),
+    }));
+  const rails = assignHomepageCategoryRails(categoryRails, 4);
+  const curated = curateCollectionEdit(getCollection100());
+
+  memo = {
+    rails: Object.fromEntries(
       Object.entries(rails).map(([id, list]) => [id, list.map(toProductCardProduct)]),
-    );
-  },
-  ["home-rail-cards-v1", DEPLOY_KEY],
-  { revalidate: TTL_SECONDS },
-);
-
-export const getCollection100Cards = unstable_cache(
-  async (): Promise<{ signature: Product[]; newItems: Product[] }> => {
-    const curated = curateCollectionEdit(getCollection100());
-    return {
-      signature: curated.signature.map(toProductCardProduct),
-      newItems: curated.newItems.map(toProductCardProduct),
-    };
-  },
-  ["home-collection100-cards-v1", DEPLOY_KEY],
-  { revalidate: TTL_SECONDS },
-);
+    ),
+    signature: curated.signature.map(toProductCardProduct),
+    newItems: curated.newItems.map(toProductCardProduct),
+  };
+  return memo;
+}

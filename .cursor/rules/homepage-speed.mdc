@@ -1,38 +1,34 @@
 ---
-description: briq.kr homepage speed — never load full brand catalogues per request on /
-globs: src/app/page.tsx,src/app/layout.tsx,src/components/Collection100.tsx,src/components/LookBanner.tsx,src/lib/homepage-*.ts,src/data/products.ts,src/data/brand-catalogs-lazy.ts
+description: briq.kr homepage speed — keep brand catalogues out of the / and layout bundles
+globs: src/app/page.tsx,src/app/layout.tsx,src/components/Collection100.tsx,src/components/LookBanner.tsx,src/lib/homepage-*.ts,src/app/api/home-data/**,src/lib/cart-*.ts,vercel.json
 alwaysApply: false
 ---
 
 # Homepage speed
 
-`/` renders per request (root layout reads the cart cookie). Building its
-product lists parses every brand catalogue (hundreds of MB) — uncached, cold
-starts hit ~15s TTFB (Sep 2026 incident).
+The brand catalogues are hundreds of MB. Any static import chain from a route
+to `@/data/products` bundles them into that route's chunk, and every cold
+instance parses it (~9s). Per-request catalogue work made `/` take ~15s
+(Sep 2026 incident).
 
-- Homepage product data must come from `src/lib/homepage-data.ts`
-  (`unstable_cache`, trimmed card fields, 1h TTL, keyed per deployment).
-  Do not call `getCollection100`, `loadAllBrandCatalogs`,
-  `getHomepageCategoryProducts` or `getProductsByCategory` directly from
-  `src/app/page.tsx` or components it renders. Add new homepage sections as
-  another cached function in `homepage-data.ts`.
-- Keep `@/data/products` out of the static import graph of `app/layout.tsx`:
-  anything the layout imports is bundled into every page chunk and parsed on
-  every cold boot. `app/page.tsx` reaches it only via `homepage-data.ts`
-  (the 10-min speed-guard ping keeps `/` warm). The layout reads the
-  cart badge via `@/lib/cart-count` (cookie only) — never `@/lib/cart-server`.
-  `homepage-data.ts` keeps a static products import — `await import()` inside
-  the cached callbacks made every homepage request recompute (~9s).
+- `/` gets product cards from `getHomepageData()` in `src/lib/homepage-feed.ts`,
+  which fetches `/api/home-data?v=<deployment>` (CDN + Next Data Cache, 1h).
+  Only `app/api/home-data/route.ts` statically imports `src/lib/homepage-data.ts`
+  (the heavy builder). `homepage-feed.ts` may only type-import it plus the
+  dynamic-import fallback.
+- Never import `@/data/products`, `@/lib/homepage-data` or `@/lib/cart-server`
+  from `app/layout.tsx`, `app/page.tsx` or anything they render. The layout
+  reads the cart badge via `@/lib/cart-count` (cookie only).
+- New homepage sections: add fields to `HomepageData` / `buildHomepageData`,
+  read them via `getHomepageData()`. Cache card fields only
+  (`toProductCardProduct`) — Data Cache items are capped at 2MB.
 - Functions run in `icn1` (Seoul, `vercel.json` `regions`) — customers are in
   Korea; do not remove.
-- Cache only what the page renders (`toProductCardProduct`), never full
-  catalogue arrays — Vercel Data Cache items are capped at 2MB.
-- Bump the `-vN` cache key when the cached shape changes.
 - `.github/workflows/homepage-speed-guard.yml` pings `/` every 10 min (keeps
   it warm) and fails if TTFB > 8s. A failing run means a regression — fix it.
-- Ship risky homepage/layout changes via a preview branch first
-  (`scripts/ship-home-cache.sh` pattern): a failed build on `main` blocks all
-  deploys, including catalogue syncs.
-- Making the root layout static (client cart badge + ISR) was tried and failed
-  the Vercel build late (prerender stage, cause not captured). Re-attempt only
-  on a preview branch with the build log in hand.
+- Ship homepage/layout changes via a preview branch first
+  (`scripts/ship-*.sh` pattern): a failed build on `main` blocks all deploys,
+  including catalogue syncs.
+- Tried and failed: static layout + ISR (Vercel build failed at prerender,
+  log not captured); `await import()` inside `unstable_cache` callbacks (every
+  request recomputed).

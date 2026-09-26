@@ -3,14 +3,14 @@ import { CollectionBestsellerTier } from "@/components/CollectionReveal";
 import { CollectionTierBlock } from "@/components/CollectionTierBlock";
 import { ShopFastLink } from "@/components/ShopFastLink";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
-import { getCollection100Cards } from "@/lib/homepage-data";
+import { getHomepageData } from "@/lib/homepage-feed";
 
 /** Locked Gucci Primavera hero — not rotated weekly. */
 const COLLECTION_100_BANNER = "/banners/collection-100-gucci.jpg";
 
 export async function Collection100() {
   // Server-side: 신상품 / 하이엔드 always reflect newest registeredAt in HTML.
-  const { signature, newItems } = await getCollection100Cards();
+  const { signature, newItems } = await getHomepageData();
 
   return (
     <section className="collection-100" id="collection-100" aria-label="Briq 100 컬렉션">
