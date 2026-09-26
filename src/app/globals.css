@@ -646,6 +646,14 @@ a.chip[href*="sub=gg-sale"].is-active {
   }
 }
 
+/* Face in the top ~31% of a 2.3:1 frame: on wide screens the default 22rem
+   strip shows too little height, so grow with width to keep the chin in. */
+@media (min-width: 1200px) {
+  .shop-hero--face-top {
+    height: max(22rem, 17.5vw);
+  }
+}
+
 .shop-hero__content {
   position: relative;
   z-index: 1;

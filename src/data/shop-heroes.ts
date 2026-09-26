@@ -8,11 +8,7 @@ import { resolveShopBrand } from "@/lib/shop-brand";
  * Key: `category` or `category:sub`.
  */
 const shopHeroImages: Record<string, string[]> = {
-  luxury: [
-    "/banners/rot-luxury-1.jpg",
-    "/banners/rot-luxury-2.jpg",
-    "/banners/rot-luxury-3.jpg",
-  ],
+  luxury: ["/banners/shop-luxury-signature.jpg"],
   "luxury:womens": [
     "/banners/shop-lux-w-1.jpg",
     "/banners/shop-lux-w-2.jpg",
