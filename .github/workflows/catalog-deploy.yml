@@ -1,0 +1,80 @@
+name: Catalogue batch deploy
+
+# Sync bots commit with "[catalog-sync]" and vercel-skip-stale.sh skips those
+# builds. This job ships them all with a single Vercel deploy once the batch is
+# done: HEAD of main is still a marked commit (nothing newer has built it) and
+# no sync workflow is queued or running. On odd-ISO-week Fridays (biweekly sync
+# day) it waits until 16:00 UTC so the staggered brand syncs are not deployed
+# one by one in the gaps between them.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: catalog-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Deploy pending catalogue syncs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          msg=$(git log -1 --pretty=%B)
+          case "$msg" in
+            *"[catalog-sync]"*) ;;
+            *) echo "main HEAD is not a pending catalogue sync — nothing to deploy."; exit 0 ;;
+          esac
+
+          if [ "$EVENT" = "schedule" ]; then
+            week=$(date -u +%V); dow=$(date -u +%u); hour=$(date -u +%H)
+            if [ "$dow" = "5" ] && [ $((10#$week % 2)) -eq 1 ] && [ $((10#$hour)) -lt 16 ]; then
+              echo "Biweekly sync day before 16:00 UTC — waiting for the full batch."
+              exit 0
+            fi
+          fi
+
+          busy=0
+          for st in queued in_progress; do
+            n=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?status=${st}&per_page=100" \
+              --jq '[.workflow_runs[] | select(.path | test("workflows/(weekly-|scrape-ch-|retry-|banner-cdn-guard)"))] | length')
+            busy=$((busy + n))
+          done
+          if [ "$busy" -gt 0 ]; then
+            echo "$busy catalogue workflow run(s) still active — deploy on a later run."
+            exit 0
+          fi
+
+          git config user.name "briq-bot"
+          git config user.email "briq-bot@users.noreply.github.com"
+          git commit --allow-empty -m "chore: deploy catalogue sync batch"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Pushed batch deploy commit."
+              exit 0
+            fi
+            git fetch origin main
+            case "$(git log -1 --pretty=%B FETCH_HEAD)" in
+              *"[catalog-sync]"*)
+                git reset --hard FETCH_HEAD
+                git commit --allow-empty -m "chore: deploy catalogue sync batch" ;;
+              *) echo "main moved to a normal commit — it deploys everything."; exit 0 ;;
+            esac
+          done
+          exit 1

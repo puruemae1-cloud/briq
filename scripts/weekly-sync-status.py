@@ -4,8 +4,9 @@
 Exit 0: safe to push/deploy agent updates.
 Exit 2: freeze — do not push main or product-images; tell the user to wait.
 
-Friday UTC (UK early morning): banner + all brand weekly syncs, staggered from
-01:00 UTC (02:00 UK during BST; 01:00 UK during GMT).
+Odd-ISO-week Friday UTC (UK early morning): banner + all brand syncs (biweekly),
+staggered from 01:00 UTC (02:00 UK during BST; 01:00 UK during GMT). On even
+weeks every sync workflow exits in its gate job without pushing.
 Other days: freeze only if a weekly job is still queued or in progress.
 """
 from __future__ import annotations
@@ -21,21 +22,23 @@ REPO = "puruemae1-cloud/briq"
 API = f"https://api.github.com/repos/{REPO}/actions/workflows"
 
 # GitHub cron is UTC. UK local ≈ UTC+1 in BST, UTC+0 in GMT.
+# Every sync fires each Friday, but the gate job no-ops on even ISO weeks and
+# does not push — so only odd-week Fridays block deploys.
 FRIDAY = [
-    ("weekly-banner-refresh.yml", "배너 리프레시", "금 01:00 UTC / 02:00 UK(BST)"),
-    ("weekly-cw-sync.yml", "크리스토퍼 워드", "금 02:00 UTC / 03:00 UK(BST)"),
-    ("weekly-gg-sync.yml", "갈빈 그린", "금 03:00 UTC / 04:00 UK(BST)"),
-    ("weekly-bb-sync.yml", "버버리", "금 04:00 UTC / 05:00 UK(BST)"),
-    ("weekly-ax-sync.yml", "아크테릭스", "금 05:00 UTC / 06:00 UK(BST)"),
-    ("weekly-pr-sync.yml", "프라다", "금 06:00 UTC / 07:00 UK(BST)"),
-    ("weekly-bs-sync.yml", "벨스태프", "금 07:00 UTC / 08:00 UK(BST)"),
-    ("weekly-ps-sync.yml", "폴 스미스", "금 08:00 UTC / 09:00 UK(BST)"),
-    ("weekly-lu-sync.yml", "런던언더커버", "금 09:00 UTC / 10:00 UK(BST)"),
-    ("weekly-gc-sync.yml", "구찌", "금 10:00 UTC / 11:00 UK(BST)"),
-    ("weekly-ch-sync.yml", "샤넬", "금 11:00 UTC / 12:00 UK(BST)"),
-    ("weekly-di-sync.yml", "디올", "금 12:00 UTC / 13:00 UK(BST)"),
-    ("weekly-bv-sync.yml", "보테가 베네타", "금 13:30 UTC / 14:30 UK(BST)"),
-    ("weekly-al-sync.yml", "올세인츠", "금 14:00 UTC / 15:00 UK(BST)"),
+    ("weekly-banner-refresh.yml", "배너 리프레시", "격주(홀수 ISO 주) 금 01:00 UTC / 02:00 UK(BST)"),
+    ("weekly-cw-sync.yml", "크리스토퍼 워드", "격주(홀수 ISO 주) 금 02:00 UTC / 03:00 UK(BST)"),
+    ("weekly-gg-sync.yml", "갈빈 그린", "격주(홀수 ISO 주) 금 03:00 UTC / 04:00 UK(BST)"),
+    ("weekly-bb-sync.yml", "버버리", "격주(홀수 ISO 주) 금 04:00 UTC / 05:00 UK(BST)"),
+    ("weekly-ax-sync.yml", "아크테릭스", "격주(홀수 ISO 주) 금 05:00 UTC / 06:00 UK(BST)"),
+    ("weekly-pr-sync.yml", "프라다", "격주(홀수 ISO 주) 금 06:00 UTC / 07:00 UK(BST)"),
+    ("weekly-bs-sync.yml", "벨스태프", "격주(홀수 ISO 주) 금 07:00 UTC / 08:00 UK(BST)"),
+    ("weekly-ps-sync.yml", "폴 스미스", "격주(홀수 ISO 주) 금 08:00 UTC / 09:00 UK(BST)"),
+    ("weekly-lu-sync.yml", "런던언더커버", "격주(홀수 ISO 주) 금 09:00 UTC / 10:00 UK(BST)"),
+    ("weekly-gc-sync.yml", "구찌", "격주(홀수 ISO 주) 금 10:00 UTC / 11:00 UK(BST)"),
+    ("weekly-ch-sync.yml", "샤넬", "격주(홀수 ISO 주) 금 11:00 UTC / 12:00 UK(BST)"),
+    ("weekly-di-sync.yml", "디올", "격주(홀수 ISO 주) 금 12:00 UTC / 13:00 UK(BST)"),
+    ("weekly-bv-sync.yml", "보테가 베네타", "격주(홀수 ISO 주) 금 13:30 UTC / 14:30 UK(BST)"),
+    ("weekly-al-sync.yml", "올세인츠", "격주(홀수 ISO 주) 금 14:00 UTC / 15:00 UK(BST)"),
 ]
 ALL = FRIDAY
 
@@ -101,8 +104,9 @@ def main() -> int:
     weekday = now.weekday()  # Mon=0 … Fri=4
 
     if weekday == 4:
-        required = FRIDAY
-        day_ko = "금요일 주간 동기화(영국 새벽 2시부터)"
+        odd_iso_week = int(now.strftime("%V")) % 2 == 1
+        required = FRIDAY if odd_iso_week else []
+        day_ko = "격주 금요일 동기화(영국 새벽 2시부터)" if odd_iso_week else None
     else:
         required = []
         day_ko = None

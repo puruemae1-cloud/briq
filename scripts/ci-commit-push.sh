@@ -6,6 +6,14 @@ set -euo pipefail
 SUBJECT="${1:?commit subject required}"
 shift
 
+# vercel-skip-stale.sh skips builds for this marker; catalog-deploy.yml ships
+# all marked commits with one deploy after the sync batch finishes.
+MARKER="[catalog-sync]"
+case "$SUBJECT" in
+  *"$MARKER"*) ;;
+  *) SUBJECT="${SUBJECT} ${MARKER}" ;;
+esac
+
 git config user.name "briq-bot"
 git config user.email "briq-bot@users.noreply.github.com"
 

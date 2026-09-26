@@ -33,6 +33,13 @@ Do not ask “지금 강행할까요?”. Wait until `weekly-sync-status.py` exi
 
 ## Schedule (UTC ≈ UK BST = UTC+1)
 
-All weekly brand syncs run **Friday**, staggered from **01:00 UTC (02:00 UK / BST)**:
+All brand syncs are **biweekly**: they fire every Friday but a `gate` job lets them run only on **odd ISO weeks**. Even weeks exit before any catalogue push, so they do not block deploys. Staggered from **01:00 UTC (02:00 UK / BST)**:
 
-- banner 01:00, CW 02:00, GG 03:00, BB 04:00, AX 05:00, PR 06:00, BS 07:00, PS 08:00, LU 09:00, GC 10:00, CH 11:00, DI 12:00
+- banner 01:00, CW 02:00, GG 03:00, BB 04:00, AX 05:00, PR 06:00, BS 07:00, PS 08:00, LU 09:00, GC 10:00, CH 11:00, DI 12:00, CE 13:00, BV/VW 13:30, AL/YS 14:00, MB 14:30
+- Keep the `gate` job when adding a new brand sync workflow.
+
+## Vercel build cost — batched deploys
+
+- Sync bots commit through `scripts/ci-commit-push.sh`, which appends `[catalog-sync]`. `scripts/vercel-skip-stale.sh` skips Vercel builds for those commits.
+- `.github/workflows/catalog-deploy.yml` (hourly) pushes one empty `chore: deploy catalogue sync batch` commit when main HEAD is still a `[catalog-sync]` commit and no sync/scrape workflow is queued or running (odd-week Fridays: not before 16:00 UTC). Result: one Vercel build per sync batch instead of one per brand.
+- New bot workflows that push catalogue data must use `ci-commit-push.sh` (or include `[catalog-sync]`). Never put `[catalog-sync]` on human/agent code commits — they would not deploy until the next batch run.

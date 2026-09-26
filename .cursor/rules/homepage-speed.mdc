@@ -24,8 +24,12 @@ instance parses it (~9s). Per-request catalogue work made `/` take ~15s
   (`toProductCardProduct`) — Data Cache items are capped at 2MB.
 - Functions run in `icn1` (Seoul, `vercel.json` `regions`) — customers are in
   Korea; do not remove.
-- `.github/workflows/homepage-speed-guard.yml` pings `/` every 10 min (keeps
-  it warm) and fails if TTFB > 8s. A failing run means a regression — fix it.
+- `.github/workflows/homepage-speed-guard.yml` self-heals: fills the cache
+  right after each Production deploy (`deployment_status`), keeps `/` warm
+  (every 10 min × 3 rounds), and on slow/non-200/no `product-grid--lookbook`
+  bursts requests to refill. A run that fails after healing is a real
+  regression — fix the code. Keep the `product-grid--lookbook` class (the
+  guard's health marker) or update the workflow with it.
 - Ship homepage/layout changes via a preview branch first
   (`scripts/ship-*.sh` pattern): a failed build on `main` blocks all deploys,
   including catalogue syncs.

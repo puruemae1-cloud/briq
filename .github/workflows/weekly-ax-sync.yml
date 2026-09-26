@@ -1,8 +1,9 @@
-name: Weekly Arc'teryx stock sync
+name: Biweekly Arc'teryx stock sync
 
 on:
   schedule:
-    # Every Friday 05:00 UTC (06:00 UK / BST) — after Burberry
+    # Friday 05:00 UTC (06:00 UK / BST) — after Burberry. Odd ISO weeks only —
+    # even weeks exit before any catalogue commit so Vercel is not rebuilt.
     - cron: "0 5 * * 5"
   workflow_dispatch:
 
@@ -14,7 +15,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Odd ISO week only
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run — syncing Arc'teryx."
+            exit 0
+          fi
+          week=$(date -u +%V)
+          if [ $((10#$week % 2)) -eq 1 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "ISO week $week — syncing Arc'teryx."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "ISO week $week — skip Arc'teryx (biweekly). No catalogue push."
+          fi
+
   sync:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 720
     steps:

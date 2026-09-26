@@ -14,6 +14,19 @@ if [ -z "$HEAD" ]; then
   exit 1
 fi
 
+# Catalogue-sync bot commits are batched: catalog-deploy.yml pushes one deploy
+# commit after the whole sync batch, so each sync must not build on its own.
+MSG="${VERCEL_GIT_COMMIT_MESSAGE:-}"
+if [ -z "$MSG" ] && command -v git >/dev/null 2>&1; then
+  MSG="$(git log -1 --pretty=%B 2>/dev/null || true)"
+fi
+case "$MSG" in
+  *"[catalog-sync]"*)
+    echo "vercel-skip-stale: catalogue-sync commit — skipping (batched deploy)"
+    exit 0
+    ;;
+esac
+
 json="$(curl -fsS -H "Accept: application/vnd.github+json" -H "User-Agent: briq-vercel-skip-stale" \
   "https://api.github.com/repos/${REPO}/compare/${HEAD}...main" || true)"
 if [ -z "$json" ]; then

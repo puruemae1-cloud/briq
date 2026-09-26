@@ -1,8 +1,9 @@
-name: Weekly GC stock sync
+name: Biweekly GC stock sync
 
 on:
   schedule:
-    # Every Friday 10:00 UTC (11:00 UK / BST) — Gucci after apparel rails
+    # Friday 10:00 UTC (11:00 UK / BST) — Gucci after apparel rails
+    # Odd ISO weeks only (gate job) — even weeks exit before any catalogue commit.
     - cron: "0 10 * * 5"
   workflow_dispatch:
 
@@ -14,7 +15,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Odd ISO week only
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run — syncing."
+            exit 0
+          fi
+          week=$(date -u +%V)
+          if [ $((10#$week % 2)) -eq 1 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "ISO week $week — syncing."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "ISO week $week — skip (biweekly). No catalogue push."
+          fi
+
   sync:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 720
     steps:
