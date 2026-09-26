@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { removeFromCart, updateCartQty } from "@/app/cart/actions";
-import { CartCountSync } from "@/components/HeaderCartCount";
 import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
 import { ProductImage } from "@/components/ProductImage";
 import { formatBraceletLabel } from "@/data/cw-twelve-picnmix";
@@ -20,7 +19,6 @@ export default async function CartPage() {
   if (items.length === 0) {
     return (
       <section className="section">
-        <CartCountSync count={0} />
         <div className="panel">
           <h2 style={{ marginTop: 0, fontFamily: "var(--font-display)" }}>Cart</h2>
           <p>장바구니가 비어 있습니다.</p>
@@ -41,7 +39,6 @@ export default async function CartPage() {
 
   return (
     <section className="section">
-      <CartCountSync count={items.reduce((sum, i) => sum + i.qty, 0)} />
       <div className="section__head">
         <div>
           <h2>Cart</h2>

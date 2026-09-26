@@ -2,10 +2,8 @@ import { cookies } from "next/headers";
 import type { Product, ProductVariant } from "@/data/product-types";
 import { getProduct } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
-import { CART_COOKIE } from "@/lib/cart-count";
-import { CART_COUNT_COOKIE, cartCountFromLines } from "@/lib/cart-count-cookie";
 
-export { CART_COOKIE, getCartCount } from "@/lib/cart-count";
+export const CART_COOKIE = "briq-cart";
 
 export type CartLine = {
   productId: string;
@@ -64,12 +62,6 @@ export async function writeCartLines(lines: CartLine[]) {
     sameSite: "lax",
     maxAge: 60 * 60 * 24 * 30,
   });
-  jar.set(CART_COUNT_COOKIE, String(cartCountFromLines(lines)), {
-    path: "/",
-    httpOnly: false,
-    sameSite: "lax",
-    maxAge: 60 * 60 * 24 * 30,
-  });
 }
 
 export function resolveCartItems(lines: CartLine[]): CartItem[] {
@@ -93,6 +85,11 @@ export function resolveCartItems(lines: CartLine[]): CartItem[] {
 
 export async function getCartItems(): Promise<CartItem[]> {
   return resolveCartItems(await readCartLines());
+}
+
+export async function getCartCount(): Promise<number> {
+  const lines = await readCartLines();
+  return lines.reduce((sum, line) => sum + line.qty, 0);
 }
 
 export function cartSubtotal(items: CartItem[]): number {

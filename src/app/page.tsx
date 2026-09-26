@@ -20,13 +20,6 @@ import {
   HOMEPAGE_WATCHES_COLLECTION,
 } from "@/lib/homepage-rails";
 
-/**
- * ISR: serve `/` from the CDN and rebuild in the background hourly (banner
- * rotation is time-based). Per-request SSR here parses every brand catalogue
- * and cold starts took ~15s. Build fails if `/` is not prerendered.
- */
-export const revalidate = 3600;
-
 /** Stream below-the-fold 100 Collection after hero + lookbook rails. */
 async function DeferredCollection100() {
   await Promise.resolve();
