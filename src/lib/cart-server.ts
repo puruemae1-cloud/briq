@@ -3,7 +3,9 @@ import type { Product, ProductVariant } from "@/data/product-types";
 import { getProduct } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
 
-export const CART_COOKIE = "briq-cart";
+import { CART_COOKIE } from "@/lib/cart-count";
+
+export { CART_COOKIE };
 
 export type CartLine = {
   productId: string;

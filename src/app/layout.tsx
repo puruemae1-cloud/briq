@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
+import { BackToTop } from "@/components/BackToTop";
 import { JsonLd } from "@/components/JsonLd";
 import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getCartCount } from "@/lib/cart-server";
+import { getCartCount } from "@/lib/cart-count";
 import { rootMetadata } from "@/lib/seo-metadata";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
 import "./globals.css";
@@ -106,9 +107,7 @@ export default async function RootLayout({
           <main className="shell__main">{children}</main>
           <SiteFooter />
         </div>
-        <a href="#top" className="back-to-top" aria-label="맨 위로">
-          <span aria-hidden="true">↑</span>
-        </a>
+        <BackToTop />
         <NaverWcsScript />
       </body>
     </html>

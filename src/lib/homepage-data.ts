@@ -1,11 +1,6 @@
 import { unstable_cache } from "next/cache";
 import type { Product } from "@/data/product-types";
 import { homeLookBanners } from "@/data/home-banners";
-import {
-  getCollection100,
-  getHomepageCategoryProducts,
-  toProductCardProduct,
-} from "@/data/products";
 import { curateCollectionEdit } from "@/lib/collection-edit";
 import {
   assignHomepageCategoryRails,
@@ -19,6 +14,10 @@ import {
  * request made cold starts ~15s. Only the trimmed card fields are cached
  * (a few KB), and the key includes the deployment so catalogue syncs show up
  * on the next deploy instead of waiting for the TTL.
+ *
+ * `@/data/products` must stay a dynamic import: a static import bundles the
+ * catalogue modules into the homepage chunk, and Node parses that chunk on
+ * every cold boot even when the cache hits.
  */
 const DEPLOY_KEY =
   process.env.VERCEL_DEPLOYMENT_ID ||
@@ -28,6 +27,9 @@ const TTL_SECONDS = 3600;
 
 export const getHomepageRailCards = unstable_cache(
   async (): Promise<Record<string, Product[]>> => {
+    const { getHomepageCategoryProducts, toProductCardProduct } = await import(
+      "@/data/products"
+    );
     // Skip YS merge here — homepage soft-nav was waiting on the 14MB catalogue.
     const categoryRails = homeLookBanners
       .filter((b) => b.categoryId)
@@ -49,6 +51,9 @@ export const getHomepageRailCards = unstable_cache(
 
 export const getCollection100Cards = unstable_cache(
   async (): Promise<{ signature: Product[]; newItems: Product[] }> => {
+    const { getCollection100, toProductCardProduct } = await import(
+      "@/data/products"
+    );
     const curated = curateCollectionEdit(getCollection100());
     return {
       signature: curated.signature.map(toProductCardProduct),

@@ -1,0 +1,44 @@
+name: Homepage speed guard
+
+# Keeps the homepage function warm and alerts (failed run → GitHub email) when
+# briq.kr is slow. Cold homepage renders once took ~15s TTFB; see
+# src/lib/homepage-data.ts and .cursor/rules/homepage-speed.mdc.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: homepage-speed-guard
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Warm + measure homepage
+        run: |
+          set -u
+          LIMIT=8
+          slow=0
+          for i in 1 2 3; do
+            out=$(curl -sL -o /dev/null -m 60 \
+              -w "%{http_code} %{time_starttransfer}" \
+              -H "User-Agent: briq-speed-guard" \
+              "https://www.briq.kr/?speedguard=$(date +%s)$i" || echo "000 60")
+            code=${out%% *}; ttfb=${out##* }
+            echo "try$i status=$code ttfb=${ttfb}s"
+            if [ "$code" != "200" ]; then slow=$((slow+1)); fi
+            if awk "BEGIN{exit !($ttfb > $LIMIT)}"; then slow=$((slow+1)); fi
+            sleep 2
+          done
+          # One slow cold hit is tolerated; a warm retry must be fast too.
+          if [ "$slow" -ge 2 ]; then
+            echo "::error::Homepage slow or failing (>${LIMIT}s TTFB or non-200 on 2+ of 3 tries)"
+            exit 1
+          fi
