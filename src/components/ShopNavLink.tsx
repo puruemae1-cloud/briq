@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState, type MouseEvent } from "react";
+import { rememberScrollFor } from "@/lib/keep-scroll";
 
 type Props = {
   href: string;
@@ -72,6 +73,7 @@ export function ShopNavLink({
     setOptimistic(true);
     setShopNavigating(true);
     document.documentElement.dataset.homeNavigating = "1";
+    if (!scroll) rememberScrollFor(href);
     if (replace) window.location.replace(href);
     else window.location.assign(href);
   };

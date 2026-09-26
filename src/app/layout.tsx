@@ -7,6 +7,7 @@ import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCartCount } from "@/lib/cart-count";
+import { KEEP_SCROLL_RESTORE_SCRIPT } from "@/lib/keep-scroll";
 import { rootMetadata } from "@/lib/seo-metadata";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
 import "./globals.css";
@@ -97,6 +98,9 @@ export default async function RootLayout({
 
   return (
     <html lang="ko">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: KEEP_SCROLL_RESTORE_SCRIPT }} />
+      </head>
       <body
         className={`${display.variable} ${classic.variable} ${body.variable} antialiased`}
       >
