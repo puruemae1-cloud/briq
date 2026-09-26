@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "ignoreCommand": "bash scripts/vercel-skip-stale.sh",
+  "regions": ["icn1"],
   "functions": {
     "src/app/api/products/shop/route.ts": {
       "maxDuration": 60

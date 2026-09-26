@@ -16,11 +16,15 @@ starts hit ~15s TTFB (Sep 2026 incident).
   `getHomepageCategoryProducts` or `getProductsByCategory` directly from
   `src/app/page.tsx` or components it renders. Add new homepage sections as
   another cached function in `homepage-data.ts`.
-- Keep `@/data/products` out of the static import graph of `app/layout.tsx`
-  and `app/page.tsx`: anything imported there is bundled into the route chunk
-  and parsed on every cold boot (~9s with the catalogues). The layout reads the
+- Keep `@/data/products` out of the static import graph of `app/layout.tsx`:
+  anything the layout imports is bundled into every page chunk and parsed on
+  every cold boot. `app/page.tsx` reaches it only via `homepage-data.ts`
+  (the 10-min speed-guard ping keeps `/` warm). The layout reads the
   cart badge via `@/lib/cart-count` (cookie only) — never `@/lib/cart-server`.
-  `homepage-data.ts` loads products with `await import()` for the same reason.
+  `homepage-data.ts` keeps a static products import — `await import()` inside
+  the cached callbacks made every homepage request recompute (~9s).
+- Functions run in `icn1` (Seoul, `vercel.json` `regions`) — customers are in
+  Korea; do not remove.
 - Cache only what the page renders (`toProductCardProduct`), never full
   catalogue arrays — Vercel Data Cache items are capped at 2MB.
 - Bump the `-vN` cache key when the cached shape changes.
