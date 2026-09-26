@@ -3,7 +3,8 @@ import { pickRotating } from "@/data/home-banners";
 import { resolveShopBrand } from "@/lib/shop-brand";
 
 /**
- * Shop / subcategory page heroes — rotate every week via pickRotating.
+ * Shop / subcategory page heroes — picked via pickRotating (frozen; see
+ * rotationIndex in home-banners.ts).
  * Brand chips (Gucci, Burberry, …) use dedicated brand-* banners.
  * Key: `category` or `category:sub`.
  */

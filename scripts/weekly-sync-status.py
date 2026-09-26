@@ -25,7 +25,6 @@ API = f"https://api.github.com/repos/{REPO}/actions/workflows"
 # Every sync fires each Friday, but the gate job no-ops on even ISO weeks and
 # does not push — so only odd-week Fridays block deploys.
 FRIDAY = [
-    ("weekly-banner-refresh.yml", "배너 리프레시", "격주(홀수 ISO 주) 금 01:00 UTC / 02:00 UK(BST)"),
     ("weekly-cw-sync.yml", "크리스토퍼 워드", "격주(홀수 ISO 주) 금 02:00 UTC / 03:00 UK(BST)"),
     ("weekly-gg-sync.yml", "갈빈 그린", "격주(홀수 ISO 주) 금 03:00 UTC / 04:00 UK(BST)"),
     ("weekly-bb-sync.yml", "버버리", "격주(홀수 ISO 주) 금 04:00 UTC / 05:00 UK(BST)"),

@@ -88,14 +88,18 @@ export function resolveHomeRailLinks(banner: LookBanner): LookBannerLink[] {
   return [];
 }
 
-const ONE_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+/**
+ * Banners are frozen: every rotating list keeps showing the image picked in
+ * epoch week 2960 (2026-09-24 → 09-30 UTC). Change a banner only on request by
+ * editing its list — do not bring back date-based rotation.
+ */
+const FROZEN_ROTATION_INDEX = 2960;
 
-/** Advances once every week so the artwork refreshes itself. */
-export function rotationIndex(now: number = Date.now()) {
-  return Math.floor(now / ONE_WEEK_MS);
+export function rotationIndex(_now?: number) {
+  return FROZEN_ROTATION_INDEX;
 }
 
-/** Picks this week's photo; `offset` keeps banners out of sync. */
+/** Picks the frozen photo; `offset` keeps banners sharing a list different. */
 export function pickRotating(
   images: string[],
   offset = 0,

@@ -1,10 +1,8 @@
-name: Biweekly sports banner refresh
+name: Sports banner refresh (manual only)
 
+# Banners are frozen — no schedule. Run by hand only when a banner change is
+# explicitly requested.
 on:
-  schedule:
-    # Friday 01:00 UTC (02:00 UK / BST) — sports rails only
-    # Odd ISO weeks only (gate job) — even weeks exit before any catalogue commit.
-    - cron: "0 1 * * 5"
   workflow_dispatch:
 
 permissions:
