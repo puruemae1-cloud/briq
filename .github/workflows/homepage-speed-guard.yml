@@ -1,44 +1,99 @@
 name: Homepage speed guard
 
-# Keeps the homepage function warm and alerts (failed run → GitHub email) when
-# briq.kr is slow. Cold homepage renders once took ~15s TTFB; see
-# src/lib/homepage-data.ts and .cursor/rules/homepage-speed.mdc.
+# Self-healing homepage guard for Korean customers (see
+# .cursor/rules/homepage-speed.mdc):
+# - After every Production deploy: fill the homepage cache before customers do
+#   (the first hit after a deploy builds the product cards, ~15s).
+# - Every 10 min: keep instances warm for ~9 min (3 rounds, cron is best-effort).
+# - Slow / broken / no product rails: burst requests to spin up instances and
+#   refill the cache, re-check. Only a failure that survives healing fails the
+#   run (GitHub email = last resort).
 
 on:
   schedule:
     - cron: "*/10 * * * *"
+  deployment_status:
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: homepage-speed-guard
-  cancel-in-progress: true
+  group: homepage-speed-guard-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'schedule' }}
 
 jobs:
-  ping:
+  guard:
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
+    env:
+      SITE: https://www.briq.kr
+      LIMIT: "8"
+      ROUNDS: ${{ github.event_name == 'schedule' && '3' || '1' }}
     steps:
-      - name: Warm + measure homepage
+      - name: Fill cache after deploy
+        if: github.event_name == 'deployment_status'
+        run: |
+          # First request after a deploy builds + caches the cards; take that
+          # hit here (and spin up a few instances) instead of a customer.
+          for i in 1 2 3; do
+            curl -s -o /dev/null -m 90 -w "fill$i status=%{http_code} ttfb=%{time_starttransfer}s total=%{time_total}s\n" "$SITE/" || true
+          done
+
+      - name: Warm, check, self-heal
         run: |
           set -u
-          LIMIT=8
-          slow=0
-          for i in 1 2 3; do
-            out=$(curl -sL -o /dev/null -m 60 \
-              -w "%{http_code} %{time_starttransfer}" \
-              -H "User-Agent: briq-speed-guard" \
-              "https://www.briq.kr/?speedguard=$(date +%s)$i" || echo "000 60")
-            code=${out%% *}; ttfb=${out##* }
-            echo "try$i status=$code ttfb=${ttfb}s"
-            if [ "$code" != "200" ]; then slow=$((slow+1)); fi
-            if awk "BEGIN{exit !($ttfb > $LIMIT)}"; then slow=$((slow+1)); fi
-            sleep 2
+
+          # 0 = healthy. Healthy = HTTP 200, TTFB <= LIMIT, product rails rendered.
+          check() {
+            local bad=0 out code ttfb
+            for i in 1 2 3; do
+              out=$(curl -sL -m 60 -o /tmp/home.html \
+                -w "%{http_code} %{time_starttransfer}" \
+                -H "User-Agent: briq-speed-guard" "$SITE/" || echo "000 60")
+              code=${out%% *}; ttfb=${out##* }
+              rails=$(grep -o "product-grid--lookbook" /tmp/home.html 2>/dev/null | wc -l | tr -d ' ')
+              echo "  try$i status=$code ttfb=${ttfb}s rails=$rails"
+              if [ "$code" != "200" ] || [ "$rails" = "0" ] \
+                || awk "BEGIN{exit !($ttfb > $LIMIT)}"; then
+                bad=$((bad+1))
+              fi
+              sleep 2
+            done
+            # One slow cold hit per round is tolerated.
+            [ "$bad" -lt 2 ]
+          }
+
+          heal() {
+            echo "  healing: parallel burst to spin up instances + refill cache"
+            for i in 1 2 3 4 5 6; do
+              curl -s -o /dev/null -m 90 "$SITE/?heal=$(date +%s)$i" &
+            done
+            wait
+            sleep 20
+          }
+
+          failed=0
+          for round in $(seq 1 "$ROUNDS"); do
+            echo "round $round"
+            if ! check; then
+              heal
+              if check; then
+                echo "  recovered after heal"
+              else
+                heal
+                if check; then
+                  echo "  recovered after second heal"
+                else
+                  echo "::error::Homepage still slow/broken after 2 heal attempts (round $round)"
+                  failed=1
+                fi
+              fi
+            fi
+            [ "$round" -lt "$ROUNDS" ] && sleep 170
           done
-          # One slow cold hit is tolerated; a warm retry must be fast too.
-          if [ "$slow" -ge 2 ]; then
-            echo "::error::Homepage slow or failing (>${LIMIT}s TTFB or non-200 on 2+ of 3 tries)"
-            exit 1
-          fi
+          exit $failed
