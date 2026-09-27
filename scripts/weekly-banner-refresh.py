@@ -229,6 +229,10 @@ assert FIXED_BAGS_CHANEL_BANNER not in SLOT_THEMES, "locked bags banner must not
 FIXED_ACCESSORIES_PRADA_BANNER = "shop-accessories-prada.jpg"
 assert FIXED_ACCESSORIES_PRADA_BANNER not in SLOT_THEMES, "locked accessories banner must not be in SLOT_THEMES"
 
+# Gucci accessories brand hero — locked sunglasses model on a widened studio frame.
+FIXED_GUCCI_ACCESSORIES_BRAND_BANNER = "brand-gucci-accessories.jpg"
+assert FIXED_GUCCI_ACCESSORIES_BRAND_BANNER not in SLOT_THEMES, "locked Gucci accessories brand banner must not be in SLOT_THEMES"
+
 # Saint Laurent brand hero — locked Winter 26 lookbook RTW.
 FIXED_SAINT_LAURENT_BRAND_BANNER = "brand-saint-laurent.jpg"
 assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent brand banner must not be in SLOT_THEMES"
@@ -369,6 +373,7 @@ LOCKED_BANNERS = {
     FIXED_LUXURY_SIGNATURE_BANNER,
     FIXED_BAGS_CHANEL_BANNER,
     FIXED_ACCESSORIES_PRADA_BANNER,
+    FIXED_GUCCI_ACCESSORIES_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
     FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER,

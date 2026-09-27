@@ -105,12 +105,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Gucci",
     nameKo: "구찌",
     logoSrc: "/brands/gucci.svg",
-    // Restored rotating accessories set (pre–Primavera RTW clothing split).
-    images: [
-      "/banners/brand-gucci-1.jpg",
-      "/banners/brand-gucci-2.jpg",
-      "/banners/brand-gucci-3.jpg",
-    ],
+    // Locked accessories creative — square-frame sunglasses, wide studio frame.
+    images: ["/banners/brand-gucci-accessories.jpg"],
   },
   "bottega-veneta": {
     key: "bottega-veneta",

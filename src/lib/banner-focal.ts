@@ -62,6 +62,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Women's shoes PLP — GG Supreme slingbacks on carpet */
   "brand-gucci-shoes.jpg": "38% 58%",
   "brand-gucci-shoes.webp": "38% 58%",
+  /* Gucci accessories — sunglasses model placed at 62% across a grey studio extension */
+  "brand-gucci-accessories.jpg": "62% 45%",
+  "brand-gucci-accessories.webp": "62% 45%",
   /* All Bags forest bench — keep models + Promenade bag centred */
   "brand-dior-bags.jpg": "50% 58%",
   "brand-dior-bags.webp": "50% 58%",
