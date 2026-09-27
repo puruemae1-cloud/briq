@@ -18,7 +18,7 @@ const shopHeroImages: Record<string, string[]> = {
   "luxury:all-saints": ["/banners/brand-all-saints.jpg"],
   "luxury:paul-smith": ["/banners/brand-paul-smith-1.jpg"],
 
-  watches: ["/banners/rot-watch-3.jpg"],
+  watches: ["/banners/shop-watches-cw.jpg"],
   "watches:christopher-ward": [
     "/banners/brand-christopher-ward-moonphase.jpg",
   ],
@@ -50,7 +50,7 @@ const shopHeroImages: Record<string, string[]> = {
 
   bags: ["/banners/shop-bags-chanel.jpg"],
 
-  shoes: ["/banners/rot-shoe-3.jpg"],
+  shoes: ["/banners/shop-shoes-prada.jpg"],
 
   accessories: ["/banners/shop-accessories-prada.jpg"],
 

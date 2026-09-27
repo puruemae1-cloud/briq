@@ -659,6 +659,19 @@ a.chip[href*="sub=gg-sale"].is-active {
   .shop-hero--portrait-wide {
     height: clamp(22rem, 27vw, 40rem);
   }
+
+  /* 2:1 still whose subject spans ~75% of the height (shoes PLP Prada slingbacks). */
+  .shop-hero--subject-tall {
+    height: clamp(22rem, 32vw, 44rem);
+  }
+}
+
+/* ~5.7:1 panorama (watches PLP Christopher Ward): match the frame ratio so both
+   watches at the edges stay whole instead of cover-cropping the sides. */
+@media (min-width: 900px) {
+  .shop-hero--panorama {
+    height: max(13.5rem, 17.6vw);
+  }
 }
 
 .shop-hero__content {
