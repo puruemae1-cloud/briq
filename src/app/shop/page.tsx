@@ -182,7 +182,7 @@ export default async function ShopPage({ searchParams }: Props) {
       : pickShopHero(category, sub);
   const heroFile = heroImage.split("/").pop() || "";
   const isChanelShoesHero = /brand-chanel-shoes\.(jpg|webp)$/.test(heroFile);
-  const isFaceTopHero = /^shop-luxury-signature\.(jpg|webp)$/.test(heroFile);
+  const isTallWideHero = /^shop-(luxury-signature|bags-chanel)\.(jpg|webp)$/.test(heroFile);
   const heroVideoSrc = shopBrand?.videoSrc
     ? mediaUrl(shopBrand.videoSrc)
     : null;
@@ -215,7 +215,7 @@ export default async function ShopPage({ searchParams }: Props) {
         className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}${
           heroVideoSrc ? " shop-hero--video" : ""
         }${isChanelShoesHero ? " shop-hero--chanel-shoes" : ""}${
-          isFaceTopHero ? " shop-hero--face-top" : ""
+          isTallWideHero ? " shop-hero--tall-wide" : ""
         }`}
         aria-label={heroTitle}
       >

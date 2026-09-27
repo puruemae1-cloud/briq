@@ -96,6 +96,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   "brand-all-saints-accessories.jpg": "43% 64%",
   "brand-all-saints-accessories.webp": "43% 64%",
   /* Celine signature RTW — Hiver 2026 lying model; keep face on the right */
+  /* Bags PLP — Chanel FW26 header; bag sits in the lower frame (PC shows the bottom). PC height in globals.css */
+  "shop-bags-chanel.jpg": "30% 90%",
+  "shop-bags-chanel.webp": "30% 90%",
   /* Signature clothing PLP — face sits in the top ~31%; pin to top. PC height in globals.css */
   "shop-luxury-signature.jpg": "30% 0%",
   "shop-luxury-signature.webp": "30% 0%",

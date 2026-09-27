@@ -646,10 +646,11 @@ a.chip[href*="sub=gg-sale"].is-active {
   }
 }
 
-/* Face in the top ~31% of a 2.3:1 frame: on wide screens the default 22rem
-   strip shows too little height, so grow with width to keep the chin in. */
+/* ~2:1 frames whose subject needs >30% of the height (signature face, bags
+   PLP bag): on wide screens the default 22rem strip shows too little height,
+   so grow with width to keep the subject whole. */
 @media (min-width: 1200px) {
-  .shop-hero--face-top {
+  .shop-hero--tall-wide {
     height: max(22rem, 17.5vw);
   }
 }

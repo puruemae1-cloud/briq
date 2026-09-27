@@ -77,12 +77,7 @@ const shopHeroImages: Record<string, string[]> = {
     "/banners/shop-cloth-1.jpg",
   ],
 
-  bags: [
-    "/banners/rot-bag-1.jpg",
-    "/banners/rot-bag-2.jpg",
-    "/banners/rot-bag-3.jpg",
-    "/banners/shop-bag-1.jpg",
-  ],
+  bags: ["/banners/shop-bags-chanel.jpg"],
 
   shoes: [
     "/banners/rot-shoe-1.jpg",

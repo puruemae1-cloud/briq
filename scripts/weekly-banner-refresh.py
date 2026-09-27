@@ -221,6 +221,10 @@ assert FIXED_CELINE_BRAND_BANNER not in SLOT_THEMES, "locked Celine brand banner
 FIXED_LUXURY_SIGNATURE_BANNER = "shop-luxury-signature.jpg"
 assert FIXED_LUXURY_SIGNATURE_BANNER not in SLOT_THEMES, "locked signature clothing banner must not be in SLOT_THEMES"
 
+# Bags PLP hero — locked Chanel FW26 handbags header.
+FIXED_BAGS_CHANEL_BANNER = "shop-bags-chanel.jpg"
+assert FIXED_BAGS_CHANEL_BANNER not in SLOT_THEMES, "locked bags banner must not be in SLOT_THEMES"
+
 # Saint Laurent brand hero — locked Winter 26 lookbook RTW.
 FIXED_SAINT_LAURENT_BRAND_BANNER = "brand-saint-laurent.jpg"
 assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent brand banner must not be in SLOT_THEMES"
@@ -359,6 +363,7 @@ LOCKED_BANNERS = {
     FIXED_GUCCI_SHOES_BRAND_BANNER,
     FIXED_CELINE_BRAND_BANNER,
     FIXED_LUXURY_SIGNATURE_BANNER,
+    FIXED_BAGS_CHANEL_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
     FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER,
