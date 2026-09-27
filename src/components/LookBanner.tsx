@@ -2,21 +2,15 @@ import type { CSSProperties } from "react";
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { BannerImage } from "@/components/BannerImage";
 import { ShopFastLink } from "@/components/ShopFastLink";
-import { pickRotating, type LookBanner } from "@/data/home-banners";
+import { pickBanner, type LookBanner } from "@/data/home-banners";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 
-export function LookBannerBlock({
-  banner,
-  rotationOffset = 0,
-}: {
-  banner: LookBanner;
-  rotationOffset?: number;
-}) {
+export function LookBannerBlock({ banner }: { banner: LookBanner }) {
   const align = banner.align ?? "left";
-  const image = pickRotating(banner.images, rotationOffset);
+  const image = pickBanner(banner.images);
   const focal = bannerFocalForSrc(image, banner.focal);
-  const slides = banner.slides?.map((slide, i) => {
-    const slideImage = pickRotating(slide.images, rotationOffset + i);
+  const slides = banner.slides?.map((slide) => {
+    const slideImage = pickBanner(slide.images);
     return {
       id: slide.id,
       labelKo: slide.labelKo,

@@ -1,41 +1,24 @@
-import { brandHeroes } from "@/data/brand-heroes";
-import { pickRotating } from "@/data/home-banners";
+import { pickBanner } from "@/data/home-banners";
 import { resolveShopBrand } from "@/lib/shop-brand";
 
 /**
- * Shop / subcategory page heroes — picked via pickRotating (frozen; see
- * rotationIndex in home-banners.ts).
+ * Shop / subcategory page heroes — one fixed image per slot (no rotation).
  * Brand chips (Gucci, Burberry, …) use dedicated brand-* banners.
  * Key: `category` or `category:sub`.
  */
 const shopHeroImages: Record<string, string[]> = {
   luxury: ["/banners/shop-luxury-signature.jpg"],
-  "luxury:womens": [
-    "/banners/shop-lux-w-1.jpg",
-    "/banners/shop-lux-w-2.jpg",
-    "/banners/rot-luxury-1.jpg",
-  ],
-  "luxury:mens": [
-    "/banners/shop-lux-m-1.jpg",
-    "/banners/shop-lux-m-2.jpg",
-    "/banners/rot-luxury-2.jpg",
-  ],
+  "luxury:womens": ["/banners/rot-luxury-1.jpg"],
+  "luxury:mens": ["/banners/rot-luxury-2.jpg"],
   "luxury:bottega-veneta": ["/banners/brand-bottega-veneta-clothing.jpg"],
   "luxury:chanel": ["/banners/brand-chanel.jpg"],
   "luxury:gucci": ["/banners/brand-gucci.jpg"],
   "luxury:celine": ["/banners/brand-celine-signature.jpg"],
   "luxury:saint-laurent": ["/banners/brand-saint-laurent.jpg"],
   "luxury:all-saints": ["/banners/brand-all-saints.jpg"],
-  "luxury:paul-smith": [
-    "/banners/brand-paul-smith-1.jpg",
-    "/banners/brand-paul-smith-2.jpg",
-  ],
+  "luxury:paul-smith": ["/banners/brand-paul-smith-1.jpg"],
 
-  watches: [
-    "/banners/rot-watch-1.jpg",
-    "/banners/rot-watch-2.jpg",
-    "/banners/rot-watch-3.jpg",
-  ],
+  watches: ["/banners/rot-watch-3.jpg"],
   "watches:christopher-ward": [
     "/banners/brand-christopher-ward-moonphase.jpg",
   ],
@@ -61,73 +44,30 @@ const shopHeroImages: Record<string, string[]> = {
   "accessories:mulberry-accessories": ["/banners/brand-mulberry-accessories.jpg"],
   "accessories:bottega-veneta-accessories": ["/banners/brand-bottega-veneta-accessories.jpg"],
 
-  clothing: [
-    "/banners/rot-cloth-1.jpg",
-    "/banners/rot-cloth-2.jpg",
-    "/banners/rot-cloth-3.jpg",
-  ],
-  "clothing:womens": [
-    "/banners/shop-cloth-w-1.jpg",
-    "/banners/rot-cloth-1.jpg",
-    "/banners/shop-cloth-1.jpg",
-  ],
-  "clothing:mens": [
-    "/banners/shop-cloth-m-1.jpg",
-    "/banners/rot-cloth-2.jpg",
-    "/banners/shop-cloth-1.jpg",
-  ],
+  clothing: ["/banners/rot-cloth-3.jpg"],
+  "clothing:womens": ["/banners/shop-cloth-1.jpg"],
+  "clothing:mens": ["/banners/shop-cloth-1.jpg"],
 
   bags: ["/banners/shop-bags-chanel.jpg"],
 
-  shoes: [
-    "/banners/rot-shoe-1.jpg",
-    "/banners/rot-shoe-2.jpg",
-    "/banners/rot-shoe-3.jpg",
-  ],
+  shoes: ["/banners/rot-shoe-3.jpg"],
 
   accessories: ["/banners/shop-accessories-prada.jpg"],
 
-  sports: [
-    "/banners/rot-golf-1.jpg",
-    "/banners/rot-cycle-1.jpg",
-    "/banners/rot-swim-1.jpg",
-    "/banners/rot-run-1.jpg",
-    "/banners/rot-tennis-1.jpg",
-  ],
+  sports: ["/banners/rot-golf-1.jpg"],
   "sports:golf": [
     "/banners/brand-galvin-green.jpg",
   ],
   "sports:galvin-green": [
     "/banners/brand-galvin-green.jpg",
   ],
-  "sports:running": [
-    "/banners/rot-run-1.jpg",
-    "/banners/rot-run-2.jpg",
-    "/banners/rot-run-3.jpg",
-    "/banners/shop-run-1.jpg",
-  ],
-  "sports:swimming": [
-    "/banners/rot-swim-1.jpg",
-    "/banners/rot-swim-2.jpg",
-    "/banners/rot-swim-3.jpg",
-  ],
-  "sports:cycling": [
-    "/banners/rot-cycle-1.jpg",
-    "/banners/rot-cycle-2.jpg",
-    "/banners/rot-cycle-3.jpg",
-  ],
-  "sports:tennis": [
-    "/banners/rot-tennis-1.jpg",
-    "/banners/rot-tennis-2.jpg",
-    "/banners/rot-tennis-3.jpg",
-  ],
+  "sports:running": ["/banners/rot-run-1.jpg"],
+  "sports:swimming": ["/banners/rot-swim-3.jpg"],
+  "sports:cycling": ["/banners/rot-cycle-3.jpg"],
+  "sports:tennis": ["/banners/rot-tennis-3.jpg"],
 };
 
-const FALLBACK = [
-  "/banners/rot-hero-1.jpg",
-  "/banners/rot-hero-2.jpg",
-  "/banners/rot-hero-3.jpg",
-];
+const FALLBACK = ["/banners/rot-hero-3.jpg"];
 
 export function getShopHeroImages(category?: string, sub?: string): string[] {
   const brand = resolveShopBrand(category, sub);
@@ -144,11 +84,6 @@ export function getShopHeroImages(category?: string, sub?: string): string[] {
   return FALLBACK;
 }
 
-/** Re-export so banner refresh can discover brand-* paths via this module. */
-export const brandHeroImagePaths = Object.values(brandHeroes).flatMap(
-  (b) => b.images,
-);
-
-export function pickShopHero(category?: string, sub?: string, offset = 0): string {
-  return pickRotating(getShopHeroImages(category, sub), offset);
+export function pickShopHero(category?: string, sub?: string): string {
+  return pickBanner(getShopHeroImages(category, sub));
 }

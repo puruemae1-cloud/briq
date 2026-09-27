@@ -28,7 +28,7 @@ export type LookBanner = {
   support: string;
   href: string;
   cta: string;
-  /** Rotating sports rails only (golf / run / swim / cycle / tennis). */
+  /** Single fixed image (first entry is shown). */
   images: string[];
   focal?: string;
   align?: "left" | "center" | "right";
@@ -89,32 +89,18 @@ export function resolveHomeRailLinks(banner: LookBanner): LookBannerLink[] {
 }
 
 /**
- * Banners are frozen: every rotating list keeps showing the image picked in
- * epoch week 2960 (2026-09-24 → 09-30 UTC). Change a banner only on request by
- * editing its list — do not bring back date-based rotation.
+ * Every banner slot is a single fixed image. Change a banner only on request
+ * by editing its entry — there is no rotation.
  */
-const FROZEN_ROTATION_INDEX = 2960;
-
-export function rotationIndex(_now?: number) {
-  return FROZEN_ROTATION_INDEX;
-}
-
-/** Picks the frozen photo; `offset` keeps banners sharing a list different. */
-export function pickRotating(
-  images: string[],
-  offset = 0,
-  now?: number,
-): string {
-  if (images.length === 0) return "";
-  const index = (rotationIndex(now) + offset) % images.length;
-  return images[index];
+export function pickBanner(images: string[]): string {
+  return images[0] ?? "";
 }
 
 /**
  * Fixed homepage hero ("London to Your Door").
  * Not rotated weekly — keep a single locked asset under /banners/hero-london-door.jpg
  * (plus /t/ and /m/ variants). Mobile /banners/m/ uses Burberry Winter Wardrobing
- * portrait (asset 9B28806E). Weekly refresh only rotates sports rails.
+ * portrait (asset 9B28806E).
  */
 export const heroImage = "/banners/hero-london-door.jpg";
 
@@ -131,7 +117,6 @@ export const homeLookBanners: LookBanner[] = [
     support: "남들보다 빠르게 선점하는 영국 실시간 프리미엄 트렌드.",
     href: "/shop?sort=new",
     cta: "신상 보러가기",
-    // Locked creative — weekly refresh only rotates rot-event-* (unused here).
     // Desktop/tablet: event-now-london.jpg; mobile uses /banners/m/ portrait Chanel FW26.
     images: ["/banners/event-now-london.jpg"],
     align: "left",
@@ -242,55 +227,35 @@ export const homeLookBanners: LookBanner[] = [
         id: "golf",
         labelKo: "골프",
         href: "/shop?category=sports&sub=golf",
-        images: [
-          "/banners/rot-golf-1.jpg",
-          "/banners/rot-golf-2.jpg",
-          "/banners/rot-golf-3.jpg",
-        ],
+        images: ["/banners/rot-golf-3.jpg"],
         focal: "center 36%",
       },
       {
         id: "cycling",
         labelKo: "자전거",
         href: "/shop?category=sports&sub=cycling",
-        images: [
-          "/banners/rot-cycle-1.jpg",
-          "/banners/rot-cycle-2.jpg",
-          "/banners/rot-cycle-3.jpg",
-        ],
+        images: ["/banners/rot-cycle-1.jpg"],
         focal: "center 42%",
       },
       {
         id: "swimming",
         labelKo: "수영",
         href: "/shop?category=sports&sub=swimming",
-        images: [
-          "/banners/rot-swim-1.jpg",
-          "/banners/rot-swim-2.jpg",
-          "/banners/rot-swim-3.jpg",
-        ],
+        images: ["/banners/rot-swim-2.jpg"],
         focal: "center 48%",
       },
       {
         id: "running",
         labelKo: "러닝",
         href: "/shop?category=sports&sub=running",
-        images: [
-          "/banners/rot-run-1.jpg",
-          "/banners/rot-run-2.jpg",
-          "/banners/rot-run-3.jpg",
-        ],
+        images: ["/banners/rot-run-3.jpg"],
         focal: "center 78%",
       },
       {
         id: "tennis",
         labelKo: "테니스",
         href: "/shop?category=sports&sub=tennis",
-        images: [
-          "/banners/rot-tennis-1.jpg",
-          "/banners/rot-tennis-2.jpg",
-          "/banners/rot-tennis-3.jpg",
-        ],
+        images: ["/banners/rot-tennis-1.jpg"],
         focal: "center 55%",
       },
     ],

@@ -1,7 +1,7 @@
 /**
  * Brand hero banners for shop category pages when a brand chip is selected.
  * Images live under `/banners/brand-<key>-N.jpg` (PC / t / m).
- * Locked brand creatives stay fixed; only sports-brand chips may rotate weekly.
+ * Every brand banner is a single fixed image; change it only on request.
  */
 
 export type BrandKey =
@@ -69,7 +69,7 @@ export type BrandHeroDef = {
   nameKo: string;
   /** Elegant wordmark / monogram SVG (ships with the app, not the media tag). */
   logoSrc: string;
-  /** Shop-strip banners. Sports brands may rotate weekly; others stay fixed. */
+  /** Shop-strip banner (single fixed image). */
   images: string[];
   /** Optional autoplay muted loop (mp4) — used instead of stills when set. */
   videoSrc?: string;
@@ -359,10 +359,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameKo: "폴 스미스",
     logoSrc: "/brands/paul-smith.svg",
     // Locked AW26 campaign pair (headphones + tailoring) — top-anchored faces.
-    images: [
-      "/banners/brand-paul-smith-1.jpg",
-      "/banners/brand-paul-smith-2.jpg",
-    ],
+    images: ["/banners/brand-paul-smith-1.jpg"],
   },
   "paul-smith-shoes": {
     key: "paul-smith-shoes",
@@ -377,11 +374,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Belstaff",
     nameKo: "벨스타프",
     logoSrc: "/brands/belstaff.svg",
-    images: [
-      "/banners/brand-belstaff-1.jpg",
-      "/banners/brand-belstaff-2.jpg",
-      "/banners/brand-belstaff-3.jpg",
-    ],
+    images: ["/banners/brand-belstaff-3.jpg"],
   },
   "belstaff-shoes": {
     key: "belstaff-shoes",
@@ -397,12 +390,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameKo: "갈빈 그린",
     logoSrc: "/brands/galvin-green.svg",
     // Locked DryVR Two collection hero (autoplay mp4 + poster stills).
-    images: [
-      "/banners/brand-galvin-green.jpg",
-      "/banners/brand-galvin-green-1.jpg",
-      "/banners/brand-galvin-green-2.jpg",
-      "/banners/brand-galvin-green-3.jpg",
-    ],
+    images: ["/banners/brand-galvin-green.jpg"],
     videoSrc: "/banners/brand-galvin-green.mp4",
   },
   "christopher-ward": {
@@ -418,11 +406,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Louis Vuitton",
     nameKo: "루이 비통",
     logoSrc: "/brands/louis-vuitton.svg",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    images: ["/banners/rot-acc-3.jpg"],
   },
   dior: {
     key: "dior",
@@ -437,11 +421,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Mulberry",
     nameKo: "멀버리",
     logoSrc: "/brands/mulberry.svg",
-    images: [
-      "/banners/rot-acc-1.jpg",
-      "/banners/rot-acc-2.jpg",
-      "/banners/rot-acc-3.jpg",
-    ],
+    images: ["/banners/rot-acc-3.jpg"],
   },
   "mulberry-bags": {
     key: "mulberry-bags",
@@ -544,11 +524,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "London Undercover",
     logoSrc: "/brands/london-undercover.svg",
     nameKo: "런던언더커버",
-    images: [
-      "/banners/brand-london-undercover-1.jpg",
-      "/banners/brand-london-undercover-2.jpg",
-      "/banners/brand-london-undercover-3.jpg",
-    ],
+    images: ["/banners/brand-london-undercover-3.jpg"],
   },
 };
 
@@ -1086,8 +1062,3 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
 };
-
-/** Flat list of every brand banner path (for weekly refresh references). */
-export const allBrandHeroImages: string[] = Object.values(brandHeroes).flatMap(
-  (b) => b.images,
-);

@@ -1,6 +1,6 @@
 ---
 description: Homepage/category banners prefer campaign lifestyle photos and taller crops — not flat packshot thumbs
-globs: scripts/weekly-banner-refresh.py,scripts/banner_smart_crop.py,src/app/globals.css,src/data/home-banners.ts,src/data/shop-heroes.ts
+globs: scripts/banner_smart_crop.py,src/app/globals.css,src/data/home-banners.ts,src/data/shop-heroes.ts,src/data/brand-heroes.ts
 alwaysApply: false
 ---
 
@@ -15,7 +15,7 @@ Prefer **Prada-like campaign / lifestyle** frames over grey studio packshots.
 - Bags: staged still-life or on-model carry; avoid flat `/1.jpg` packshots when better frames exist
 - Watches: packshot dials remain OK
 - Look-banner crops are **taller** (~2:1 desktop, more vertical on mobile) so subjects are not cropped
-- Weekly job: `python3 scripts/weekly-banner-refresh.py` (same rules)
+- Banners are fixed single images; replace one only when the user asks
 
 ## Do not
 

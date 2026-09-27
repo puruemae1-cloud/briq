@@ -12,7 +12,7 @@ import {
   navCategories,
   type NavChild,
 } from "@/data/categories";
-import { pickRotating } from "@/data/home-banners";
+import { pickBanner } from "@/data/home-banners";
 import { pickShopHero } from "@/data/shop-heroes";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { mediaUrl } from "@/lib/product-image";
@@ -38,12 +38,7 @@ const NEW_ARRIVALS_HERO_IMAGES = [
   "/banners/shop-new-arrivals.jpg",
 ];
 
-const ALL_PRODUCTS_HERO_IMAGES = [
-  "/banners/rot-hero-1.jpg",
-  "/banners/rot-hero-2.jpg",
-  "/banners/rot-hero-3.jpg",
-  "/banners/rot-hero-4.jpg",
-];
+const ALL_PRODUCTS_HERO_IMAGES = ["/banners/rot-hero-1.jpg"];
 
 type Props = {
   searchParams: Promise<{
@@ -176,9 +171,9 @@ export default async function ShopPage({ searchParams }: Props) {
     ? resolveShopBrand(category, sub)
     : null;
   const heroImage = isNewArrivals
-    ? pickRotating(NEW_ARRIVALS_HERO_IMAGES, 1)
+    ? pickBanner(NEW_ARRIVALS_HERO_IMAGES)
     : isAllCatalogue
-      ? pickRotating(ALL_PRODUCTS_HERO_IMAGES, 0)
+      ? pickBanner(ALL_PRODUCTS_HERO_IMAGES)
       : pickShopHero(category, sub);
   const heroFile = heroImage.split("/").pop() || "";
   const isChanelShoesHero = /brand-chanel-shoes\.(jpg|webp)$/.test(heroFile);

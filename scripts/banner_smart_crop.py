@@ -11,7 +11,7 @@ Desktop / tablet / mobile targets match the live CSS frames:
 
 Crops bias toward the subject (and faces in the upper half) so models and
 product don't get cut off awkwardly under CSS object-fit: cover.
-Prefer campaign / lifestyle sources over flat packshots — see weekly-banner-refresh.
+Prefer campaign / lifestyle sources over flat packshots.
 """
 from __future__ import annotations
 

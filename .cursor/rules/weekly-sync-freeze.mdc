@@ -40,8 +40,8 @@ All brand syncs are **biweekly**: they fire every Friday but a `gate` job lets t
 
 ## Banners are frozen
 
-- `weekly-banner-refresh.yml` has no schedule (manual `workflow_dispatch` only) and `rotationIndex()` in `src/data/home-banners.ts` is pinned, so every banner stays as it is.
-- Change a banner only when the user explicitly asks for that banner. Do not re-enable the schedule or date-based rotation.
+- Banner auto-rotation has been removed: there is no refresh workflow/script, and every banner slot (`home-banners.ts`, `shop-heroes.ts`, `brand-heroes.ts`) holds a single image picked by `pickBanner()` (first entry).
+- Change a banner only when the user explicitly asks for that banner. Do not add rotation lists, date-based picking, or a scheduled banner job.
 
 ## Vercel build cost — batched deploys
 

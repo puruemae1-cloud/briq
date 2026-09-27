@@ -20,7 +20,6 @@ async function DeferredCollection100() {
 }
 
 export default async function HomePage() {
-  // Fixed asset — do not pickRotating / weekly-refresh this slot.
   const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
@@ -55,7 +54,7 @@ export default async function HomePage() {
       </section>
 
       <div className="lookbook" aria-label="Briq lookbook">
-        {homeLookBanners.map((banner, i) => {
+        {homeLookBanners.map((banner) => {
           const products = banner.categoryId
             ? railProducts[banner.id] || []
             : [];
@@ -63,7 +62,7 @@ export default async function HomePage() {
 
           return (
             <div key={banner.id} className="lookbook__block">
-              <LookBannerBlock banner={banner} rotationOffset={i} />
+              <LookBannerBlock banner={banner} />
               {products.length > 0 ? (
                 <section className="section lookbook__rail lookbook__rail--bleed">
                   <div className="lookbook__rail-inner">
