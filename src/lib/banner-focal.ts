@@ -99,6 +99,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Bags PLP — Chanel FW26 header; bag sits in the lower frame (PC shows the bottom). PC height in globals.css */
   "shop-bags-chanel.jpg": "30% 90%",
   "shop-bags-chanel.webp": "30% 90%",
+  /* Accessories PLP — Prada fine jewellery (Rings); eyes → earring drops + ring. PC height in globals.css */
+  "shop-accessories-prada.jpg": "50% 45%",
+  "shop-accessories-prada.webp": "50% 45%",
   /* Signature clothing PLP — face sits in the top ~31%; pin to top. PC height in globals.css */
   "shop-luxury-signature.jpg": "30% 0%",
   "shop-luxury-signature.webp": "30% 0%",
@@ -110,9 +113,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Saint Laurent bags — Icare quilted hobo; mid-lower Cassandre logo */
   "brand-saint-laurent-bags.jpg": "42% 66%",
   "brand-saint-laurent-bags.webp": "42% 66%",
-  /* Saint Laurent shoes — red croc peep-toe; bottom shoe + ankle straps */
-  "brand-saint-laurent-shoes.jpg": "42% 72%",
-  "brand-saint-laurent-shoes.webp": "42% 72%",
+  /* Saint Laurent shoes — red croc peep-toe; upper shoe stays whole in the wide PC strip */
+  "brand-saint-laurent-shoes.jpg": "42% 33%",
+  "brand-saint-laurent-shoes.webp": "42% 33%",
   /* Paul Smith AW26 campaign — headphones still; bias low so nose→mouth stay in
      the wide PC strip (top of hair may clip) */
   "brand-paul-smith-1.jpg": "50% 55%",

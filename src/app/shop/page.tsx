@@ -183,6 +183,7 @@ export default async function ShopPage({ searchParams }: Props) {
   const heroFile = heroImage.split("/").pop() || "";
   const isChanelShoesHero = /brand-chanel-shoes\.(jpg|webp)$/.test(heroFile);
   const isTallWideHero = /^shop-(luxury-signature|bags-chanel)\.(jpg|webp)$/.test(heroFile);
+  const isPortraitWideHero = /^shop-accessories-prada\.(jpg|webp)$/.test(heroFile);
   const heroVideoSrc = shopBrand?.videoSrc
     ? mediaUrl(shopBrand.videoSrc)
     : null;
@@ -216,7 +217,7 @@ export default async function ShopPage({ searchParams }: Props) {
           heroVideoSrc ? " shop-hero--video" : ""
         }${isChanelShoesHero ? " shop-hero--chanel-shoes" : ""}${
           isTallWideHero ? " shop-hero--tall-wide" : ""
-        }`}
+        }${isPortraitWideHero ? " shop-hero--portrait-wide" : ""}`}
         aria-label={heroTitle}
       >
         {heroVideoSrc ? (

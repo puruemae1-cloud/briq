@@ -225,6 +225,10 @@ assert FIXED_LUXURY_SIGNATURE_BANNER not in SLOT_THEMES, "locked signature cloth
 FIXED_BAGS_CHANEL_BANNER = "shop-bags-chanel.jpg"
 assert FIXED_BAGS_CHANEL_BANNER not in SLOT_THEMES, "locked bags banner must not be in SLOT_THEMES"
 
+# Accessories PLP hero — locked Prada fine jewellery (Rings) campaign.
+FIXED_ACCESSORIES_PRADA_BANNER = "shop-accessories-prada.jpg"
+assert FIXED_ACCESSORIES_PRADA_BANNER not in SLOT_THEMES, "locked accessories banner must not be in SLOT_THEMES"
+
 # Saint Laurent brand hero — locked Winter 26 lookbook RTW.
 FIXED_SAINT_LAURENT_BRAND_BANNER = "brand-saint-laurent.jpg"
 assert FIXED_SAINT_LAURENT_BRAND_BANNER not in SLOT_THEMES, "locked Saint Laurent brand banner must not be in SLOT_THEMES"
@@ -364,6 +368,7 @@ LOCKED_BANNERS = {
     FIXED_CELINE_BRAND_BANNER,
     FIXED_LUXURY_SIGNATURE_BANNER,
     FIXED_BAGS_CHANEL_BANNER,
+    FIXED_ACCESSORIES_PRADA_BANNER,
     FIXED_SAINT_LAURENT_BRAND_BANNER,
     FIXED_SAINT_LAURENT_BAGS_BRAND_BANNER,
     FIXED_SAINT_LAURENT_SHOES_BRAND_BANNER,

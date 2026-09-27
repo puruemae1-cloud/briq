@@ -653,6 +653,12 @@ a.chip[href*="sub=gg-sale"].is-active {
   .shop-hero--tall-wide {
     height: max(22rem, 17.5vw);
   }
+
+  /* 2:1 close-up portrait (accessories Prada jewellery): eyes to earring drops
+     span ~50% of the frame height, so keep the strip near 3.7:1. */
+  .shop-hero--portrait-wide {
+    height: clamp(22rem, 27vw, 40rem);
+  }
 }
 
 .shop-hero__content {
