@@ -110,9 +110,10 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Saint Laurent shoes — red croc peep-toe; bottom shoe + ankle straps */
   "brand-saint-laurent-shoes.jpg": "42% 72%",
   "brand-saint-laurent-shoes.webp": "42% 72%",
-  /* Paul Smith AW26 campaign — headphones still; keep face + orange cans upper */
-  "brand-paul-smith-1.jpg": "50% 18%",
-  "brand-paul-smith-1.webp": "50% 18%",
+  /* Paul Smith AW26 campaign — headphones still; bias low so nose→mouth stay in
+     the wide PC strip (top of hair may clip) */
+  "brand-paul-smith-1.jpg": "50% 55%",
+  "brand-paul-smith-1.webp": "50% 55%",
   /* Paul Smith AW26 campaign — tailoring still; face sits right-upper */
   "brand-paul-smith-2.jpg": "62% 18%",
   "brand-paul-smith-2.webp": "62% 18%",
