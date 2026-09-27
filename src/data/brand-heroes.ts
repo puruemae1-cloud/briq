@@ -168,8 +168,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Celine",
     nameKo: "셀린느",
     logoSrc: "/brands/celine.svg",
-    // Francoise sunglasses (EP001CPLB) temple still — CELINE wordmark.
-    images: ["/banners/brand-celine-accessories.jpg"],
+    // Francoise sunglasses (EP001CPLB) 3/4 still on a widened studio frame.
+    images: ["/banners/brand-celine-accessories-frame.jpg"],
   },
   "saint-laurent": {
     key: "saint-laurent",
@@ -406,7 +406,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Louis Vuitton",
     nameKo: "루이 비통",
     logoSrc: "/brands/louis-vuitton.svg",
-    images: ["/banners/rot-acc-3.jpg"],
+    // Milan Design Week 26 showroom blanket — LOUIS VUITTON hem wordmark.
+    images: ["/banners/brand-louis-vuitton-blanket.jpg"],
   },
   dior: {
     key: "dior",

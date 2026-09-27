@@ -86,6 +86,12 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Celine accessories — Francoise temple still; keep CELINE gold wordmark */
   "brand-celine-accessories.jpg": "39% 58%",
   "brand-celine-accessories.webp": "39% 58%",
+  /* Celine accessories — whole sunglasses placed at 60% across a grey studio extension */
+  "brand-celine-accessories-frame.jpg": "60% 50%",
+  "brand-celine-accessories-frame.webp": "60% 50%",
+  /* Louis Vuitton — blanket hem wordmark sits low; phones (m/) also show the yellow dots */
+  "brand-louis-vuitton-blanket.jpg": "50% 65%",
+  "brand-louis-vuitton-blanket.webp": "50% 65%",
   /* AllSaints clothing — AW26 campaign denim; top-anchored face */
   "brand-all-saints.jpg": "52% 18%",
   "brand-all-saints.webp": "52% 18%",
