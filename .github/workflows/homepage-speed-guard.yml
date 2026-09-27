@@ -44,6 +44,24 @@ jobs:
             curl -s -o /dev/null -m 90 -w "fill$i status=%{http_code} ttfb=%{time_starttransfer}s total=%{time_total}s\n" "$SITE/" || true
           done
 
+      - name: Hero headline word spacing
+        if: github.event_name != 'schedule'
+        run: |
+          # Desktop shows "London to Your Door" on one line; a missing space
+          # between "to" and "Your" renders as "toYour".
+          curl -sL -m 90 -H "User-Agent: briq-speed-guard" "$SITE/" -o /tmp/hero.html
+          python3 - <<'PY'
+          import re, sys
+          html = open("/tmp/hero.html", encoding="utf-8").read()
+          m = re.search(r'<h1 class="hero__brand">(.*?)</h1>', html, re.S)
+          if not m:
+              sys.exit("::error::hero__brand headline not found on homepage")
+          text = re.sub(r"<[^>]+>", "", m.group(1)).replace("&nbsp;", " ").replace("\u00a0", " ")
+          print("headline:", repr(text))
+          if not re.fullmatch(r"\s*London to Your Door\s*", text):
+              sys.exit("::error::Homepage headline spacing broken (expected 'London to Your Door')")
+          PY
+
       - name: Warm, check, self-heal
         run: |
           set -u

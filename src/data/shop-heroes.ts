@@ -54,7 +54,7 @@ const shopHeroImages: Record<string, string[]> = {
 
   accessories: ["/banners/shop-accessories-prada.jpg"],
 
-  sports: ["/banners/rot-golf-1.jpg"],
+  sports: ["/banners/shop-sports-galvin-green.jpg"],
   "sports:golf": [
     "/banners/brand-galvin-green.jpg",
   ],

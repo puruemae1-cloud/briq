@@ -40,9 +40,10 @@ export default async function HomePage() {
           />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">
+            {/* The word space must stay an explicit {" "}: JSX drops whitespace next to line breaks. */}
             <h1 className="hero__brand">
-              London to
-              <br className="hero__brand-break" /> Your&nbsp;Door
+              London to{" "}
+              <span className="hero__brand-line">Your&nbsp;Door</span>
             </h1>
             <p className="hero__headline">British Boutique. Unique edit.</p>
             <p className="hero__support">

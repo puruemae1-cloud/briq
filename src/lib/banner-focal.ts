@@ -114,6 +114,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Watches PLP — Christopher Ward panorama; phones (m/) show the red-bezel dial */
   "shop-watches-cw.jpg": "50% 50%",
   "shop-watches-cw.webp": "50% 50%",
+  /* Sports PLP — Galvin Green golfer on the links; m/ is a tighter crop on the golfer. PC height in globals.css */
+  "shop-sports-galvin-green.jpg": "50% 55%",
+  "shop-sports-galvin-green.webp": "50% 55%",
   /* Accessories PLP — Prada fine jewellery (Rings); eyes → earring drops + ring. PC height in globals.css */
   "shop-accessories-prada.jpg": "50% 45%",
   "shop-accessories-prada.webp": "50% 45%",

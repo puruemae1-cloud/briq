@@ -664,6 +664,12 @@ a.chip[href*="sub=gg-sale"].is-active {
   .shop-hero--subject-tall {
     height: clamp(22rem, 32vw, 44rem);
   }
+
+  /* 16:9 landscape with a small figure on the horizon (sports PLP Galvin Green):
+     ~2.9:1 keeps sky, sea and fairway instead of a thin strip. */
+  .shop-hero--scenic {
+    height: clamp(22rem, 34vw, 44rem);
+  }
 }
 
 /* ~5.7:1 panorama (watches PLP Christopher Ward): match the frame ratio so both
@@ -1555,13 +1561,9 @@ body:has(.nav-drawer-toggle:checked) {
   margin-bottom: 0.4rem;
 }
 
-/* Mobile-only break so "Your Door" stays one line under the brand. */
-.hero__brand-break {
-  display: none;
-}
-
+/* Mobile puts "Your Door" on its own line; desktop keeps one line with a normal word space. */
 @media (max-width: 899px) {
-  .hero__brand-break {
+  .hero__brand-line {
     display: block;
   }
 }
