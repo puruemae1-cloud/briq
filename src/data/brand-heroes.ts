@@ -303,8 +303,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    // Locked Como cruise bag creative — bags PLP (not RTW clothing).
-    images: ["/banners/brand-chanel-como-bag.jpg"],
+    // Locked handbags PLP creative — turquoise croc flap (backdrop widened for PC).
+    images: ["/banners/brand-chanel-bags-croc-flap.jpg"],
   },
   "chanel-accessories": {
     key: "chanel-accessories",

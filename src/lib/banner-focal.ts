@@ -112,6 +112,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Bags PLP — Chanel FW26 header; bag sits in the lower frame (PC shows the bottom). PC height in globals.css */
   "shop-bags-chanel.jpg": "30% 90%",
   "shop-bags-chanel.webp": "30% 90%",
+  /* Chanel bags brand PLP — croc flap sits right of centre; m/ is a taller crop with the hand */
+  "brand-chanel-bags-croc-flap.jpg": "60% 50%",
+  "brand-chanel-bags-croc-flap.webp": "60% 50%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",
