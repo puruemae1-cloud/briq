@@ -436,20 +436,6 @@ CE_WOMEN_ACC_LEAVES = [
         "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-acc-all"],
     },
     {
-        "id": "ce-women-scarves",
-        "label": "Scarves & Shawls",
-        "labelKo": "스카프/숄",
-        "url": "https://www.celine.com/en-gb/women/accessories/scarves-and-shawls/",
-        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-scarves"],
-    },
-    {
-        "id": "ce-women-silk-scarves",
-        "label": "Silk Scarves",
-        "labelKo": "실크 스카프",
-        "url": "https://www.celine.com/en-gb/women/accessories/silk-scarves/",
-        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-silk-scarves"],
-    },
-    {
         "id": "ce-women-belts",
         "label": "Belts",
         "labelKo": "벨트",
@@ -457,18 +443,39 @@ CE_WOMEN_ACC_LEAVES = [
         "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-belts"],
     },
     {
+        "id": "ce-women-silk-squares-accessories",
+        "label": "Silk Squares & Accessories",
+        "labelKo": "실크 스퀘어 & 액세서리",
+        "url": "https://www.celine.com/en-gb/women/accessories/silk-scarves/",
+        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-silk-squares-accessories"],
+    },
+    {
+        "id": "ce-women-scarves",
+        "label": "Scarves & Shawls",
+        "labelKo": "스카프 & 숄",
+        "url": "https://www.celine.com/en-gb/women/accessories/scarves-and-shawls/",
+        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-scarves"],
+    },
+    {
         "id": "ce-women-hats",
         "label": "Hats & Gloves",
-        "labelKo": "모자/장갑",
+        "labelKo": "모자",
         "url": "https://www.celine.com/en-gb/women/accessories/hats-and-gloves/",
         "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-hats"],
     },
     {
-        "id": "ce-women-hair",
+        "id": "ce-women-hair-accessories",
         "label": "Hair Accessories",
-        "labelKo": "헤어 악세서리",
+        "labelKo": "헤어 액세서리",
         "url": "https://www.celine.com/en-gb/women/accessories/hair-accessories/",
-        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-hair"],
+        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-hair-accessories"],
+    },
+    {
+        "id": "ce-women-bag-charms",
+        "label": "Bag Charms",
+        "labelKo": "백 참",
+        "url": "https://www.celine.com/en-gb/women/accessories/bag-charms/",
+        "collections": [*CE_WOMEN_ACC_PARENT, "ce-women-bag-charms"],
     },
 ]
 CE_MEN_ACC_PARENT = ["celine-accessories", "ce-men-accessories"]
@@ -481,13 +488,6 @@ CE_MEN_ACC_LEAVES = [
         "collections": [*CE_MEN_ACC_PARENT, "ce-men-acc-all"],
     },
     {
-        "id": "ce-men-scarves",
-        "label": "Silks & Scarves",
-        "labelKo": "실크/스카프",
-        "url": "https://www.celine.com/en-gb/men/accessories/silks-and-scarves/",
-        "collections": [*CE_MEN_ACC_PARENT, "ce-men-scarves"],
-    },
-    {
         "id": "ce-men-belts",
         "label": "Belts",
         "labelKo": "벨트",
@@ -495,11 +495,18 @@ CE_MEN_ACC_LEAVES = [
         "collections": [*CE_MEN_ACC_PARENT, "ce-men-belts"],
     },
     {
-        "id": "ce-men-hats",
-        "label": "Hats",
-        "labelKo": "모자",
+        "id": "ce-men-silks-scarves",
+        "label": "Silks & Scarves",
+        "labelKo": "실크/스카프",
+        "url": "https://www.celine.com/en-gb/men/accessories/silks-and-scarves/",
+        "collections": [*CE_MEN_ACC_PARENT, "ce-men-silks-scarves"],
+    },
+    {
+        "id": "ce-men-hats-soft-accessories",
+        "label": "Hats & Soft Accessories",
+        "labelKo": "모자 & 소프트 액세서리",
         "url": "https://www.celine.com/en-gb/men/accessories/hats-and-soft-accessories/",
-        "collections": [*CE_MEN_ACC_PARENT, "ce-men-hats"],
+        "collections": [*CE_MEN_ACC_PARENT, "ce-men-hats-soft-accessories"],
     },
 ]
 
@@ -542,6 +549,13 @@ CE_WOMEN_JEW_LEAVES = [
         "collections": [*CE_WOMEN_JEW_PARENT, "ce-women-bracelets"],
     },
     {
+        "id": "ce-women-charms",
+        "label": "Celine Charms",
+        "labelKo": "참",
+        "url": "https://www.celine.com/en-gb/women/jewellery/celine-charms/",
+        "collections": [*CE_WOMEN_JEW_PARENT, "ce-women-charms"],
+    },
+    {
         "id": "ce-women-fine-jewellery",
         "label": "Fine Jewellery",
         "labelKo": "파인 주얼리",
@@ -557,13 +571,50 @@ CE_WOMEN_JEW_LEAVES = [
     },
 ]
 CE_WOMEN_SUN_PARENT = ["celine-accessories", "ce-women-sunglasses"]
-CE_WOMEN_SUN_LEAVES = [{
-    "id": "ce-women-sunglasses-all",
-    "label": "View All",
-    "labelKo": "전체",
-    "url": "https://www.celine.com/en-gb/women/sunglasses/?nav=A006-VIEW-ALL",
-    "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-all"],
-}]
+CE_WOMEN_SUN_LEAVES = [
+    {
+        "id": "ce-women-sunglasses-all",
+        "label": "View All",
+        "labelKo": "전체",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/?nav=A006-VIEW-ALL",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-all"],
+    },
+    {
+        "id": "ce-women-sunglasses-rectangular",
+        "label": "Rectangular",
+        "labelKo": "직사각형",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/rectangular/",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-rectangular"],
+    },
+    {
+        "id": "ce-women-sunglasses-round",
+        "label": "Round",
+        "labelKo": "라운드",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/round/",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-round"],
+    },
+    {
+        "id": "ce-women-sunglasses-aviator",
+        "label": "Aviator",
+        "labelKo": "에비에이터",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/aviator/",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-aviator"],
+    },
+    {
+        "id": "ce-women-sunglasses-cat-eye",
+        "label": "Cat Eye",
+        "labelKo": "캣아이",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/cat-eye/",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-cat-eye"],
+    },
+    {
+        "id": "ce-women-sunglasses-mask",
+        "label": "Mask",
+        "labelKo": "마스크",
+        "url": "https://www.celine.com/en-gb/women/sunglasses/mask/",
+        "collections": [*CE_WOMEN_SUN_PARENT, "ce-women-sunglasses-mask"],
+    },
+]
 CE_WOMEN_SLG_PARENT = ["celine-accessories", "ce-women-slg"]
 CE_WOMEN_SLG_LEAVES = [
     {
@@ -574,11 +625,11 @@ CE_WOMEN_SLG_LEAVES = [
         "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-slg-all"],
     },
     {
-        "id": "ce-women-card-holders",
-        "label": "Card Holders",
-        "labelKo": "카드홀더",
+        "id": "ce-women-coin-card-holders",
+        "label": "Coin & Card Holders",
+        "labelKo": "코인 & 카드 홀더",
         "url": "https://www.celine.com/en-gb/women/small-leather-goods/coin-and-card-holders/",
-        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-card-holders"],
+        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-coin-card-holders"],
     },
     {
         "id": "ce-women-wallets",
@@ -588,34 +639,143 @@ CE_WOMEN_SLG_LEAVES = [
         "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-wallets"],
     },
     {
-        "id": "ce-women-woc",
+        "id": "ce-women-wallets-on-chain",
         "label": "Wallets on Chain",
         "labelKo": "체인 지갑",
         "url": "https://www.celine.com/en-gb/women/small-leather-goods/wallets-on-chain/",
-        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-woc"],
+        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-wallets-on-chain"],
     },
     {
-        "id": "ce-women-pouches",
-        "label": "Pouches",
-        "labelKo": "파우치",
+        "id": "ce-women-pouches-tech-accessories",
+        "label": "Pouches & Tech",
+        "labelKo": "파우치 & 테크",
         "url": "https://www.celine.com/en-gb/women/small-leather-goods/pouches-and-tech-accessories/",
-        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-pouches"],
+        "collections": [*CE_WOMEN_SLG_PARENT, "ce-women-pouches-tech-accessories"],
     },
 ]
 
 
 CE_MEN_JEW_PARENT = ["celine-accessories", "ce-men-jewellery"]
-CE_MEN_JEW_LEAVES = [{"id": "ce-men-jewellery-all", "label": "View All", "labelKo": "전체",
-    "url": "https://www.celine.com/en-gb/men/jewellery/?nav=E005-VIEW-ALL",
-    "collections": [*CE_MEN_JEW_PARENT, "ce-men-jewellery-all"]}]
+CE_MEN_JEW_LEAVES = [
+    {
+        "id": "ce-men-jewellery-all",
+        "label": "View All",
+        "labelKo": "전체",
+        "url": "https://www.celine.com/en-gb/men/jewellery/?nav=E005-VIEW-ALL",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-jewellery-all"],
+    },
+    {
+        "id": "ce-men-earrings",
+        "label": "Earrings",
+        "labelKo": "이어링",
+        "url": "https://www.celine.com/en-gb/men/jewellery/earrings/",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-earrings"],
+    },
+    {
+        "id": "ce-men-bracelets-rings",
+        "label": "Bracelets & Rings",
+        "labelKo": "브레이슬릿 & 링",
+        "url": "https://www.celine.com/en-gb/men/jewellery/bracelets-and-rings/",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-bracelets-rings"],
+    },
+    {
+        "id": "ce-men-necklaces",
+        "label": "Necklaces",
+        "labelKo": "네크리스",
+        "url": "https://www.celine.com/en-gb/men/jewellery/necklaces/",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-necklaces"],
+    },
+    {
+        "id": "ce-men-rings",
+        "label": "Rings",
+        "labelKo": "링",
+        "url": "https://www.celine.com/en-gb/men/jewellery/rings/",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-rings"],
+    },
+    {
+        "id": "ce-men-charms",
+        "label": "Charms",
+        "labelKo": "참",
+        "url": "https://www.celine.com/en-gb/men/jewellery/charms/",
+        "collections": [*CE_MEN_JEW_PARENT, "ce-men-charms"],
+    },
+]
 CE_MEN_SUN_PARENT = ["celine-accessories", "ce-men-sunglasses"]
-CE_MEN_SUN_LEAVES = [{"id": "ce-men-sunglasses-all", "label": "View All", "labelKo": "전체",
-    "url": "https://www.celine.com/en-gb/men/sunglasses/?nav=E006-VIEW-ALL",
-    "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-all"]}]
+CE_MEN_SUN_LEAVES = [
+    {
+        "id": "ce-men-sunglasses-all",
+        "label": "View All",
+        "labelKo": "전체",
+        "url": "https://www.celine.com/en-gb/men/sunglasses/?nav=E006-VIEW-ALL",
+        "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-all"],
+    },
+    {
+        "id": "ce-men-sunglasses-rectangular",
+        "label": "Rectangular",
+        "labelKo": "직사각형",
+        "url": "https://www.celine.com/en-gb/men/sunglasses/rectangular/",
+        "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-rectangular"],
+    },
+    {
+        "id": "ce-men-sunglasses-round",
+        "label": "Round",
+        "labelKo": "라운드",
+        "url": "https://www.celine.com/en-gb/men/sunglasses/round/",
+        "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-round"],
+    },
+    {
+        "id": "ce-men-sunglasses-aviator",
+        "label": "Aviator",
+        "labelKo": "에비에이터",
+        "url": "https://www.celine.com/en-gb/men/sunglasses/aviator/",
+        "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-aviator"],
+    },
+    {
+        "id": "ce-men-sunglasses-mask",
+        "label": "Mask",
+        "labelKo": "마스크",
+        "url": "https://www.celine.com/en-gb/men/sunglasses/mask/",
+        "collections": [*CE_MEN_SUN_PARENT, "ce-men-sunglasses-mask"],
+    },
+]
 CE_MEN_SLG2_PARENT = ["celine-accessories", "ce-men-slg"]
-CE_MEN_SLG_LEAVES = [{"id": "ce-men-slg-all", "label": "View All", "labelKo": "전체",
-    "url": "https://www.celine.com/en-gb/men/small-leather-goods/?nav=E004-VIEW-ALL",
-    "collections": [*CE_MEN_SLG2_PARENT, "ce-men-slg-all"]}]
+CE_MEN_SLG_LEAVES = [
+    {
+        "id": "ce-men-slg-all",
+        "label": "View All",
+        "labelKo": "전체",
+        "url": "https://www.celine.com/en-gb/men/small-leather-goods/?nav=E004-VIEW-ALL",
+        "collections": [*CE_MEN_SLG2_PARENT, "ce-men-slg-all"],
+    },
+    {
+        "id": "ce-men-wallets",
+        "label": "Wallets",
+        "labelKo": "월렛",
+        "url": "https://www.celine.com/en-gb/men/small-leather-goods/wallets/",
+        "collections": [*CE_MEN_SLG2_PARENT, "ce-men-wallets"],
+    },
+    {
+        "id": "ce-men-card-holders",
+        "label": "Card Holders",
+        "labelKo": "카드 홀더",
+        "url": "https://www.celine.com/en-gb/men/small-leather-goods/coin-and-card-holders/",
+        "collections": [*CE_MEN_SLG2_PARENT, "ce-men-card-holders"],
+    },
+    {
+        "id": "ce-men-coin-holders",
+        "label": "Coin Holders",
+        "labelKo": "코인 홀더",
+        "url": "https://www.celine.com/en-gb/men/small-leather-goods/coin-holders/",
+        "collections": [*CE_MEN_SLG2_PARENT, "ce-men-coin-holders"],
+    },
+    {
+        "id": "ce-men-tech-accessories",
+        "label": "Tech Accessories",
+        "labelKo": "테크 액세서리",
+        "url": "https://www.celine.com/en-gb/men/small-leather-goods/tech-accessories/",
+        "collections": [*CE_MEN_SLG2_PARENT, "ce-men-tech-accessories"],
+    },
+]
 
 CE_FAMILY_SCRAPERS = {
     "ce-men-rtw": {
@@ -697,6 +857,7 @@ def celine_raw_paths() -> list[Path]:
 
 def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> list[dict]:
     from celine_common import is_blocked_pdp_title
+    from ce_accessory_membership import CE_HUB_LEAF_IDS, canonicalize_leaf_id
 
     by_id = {p["id"]: p for p in existing_products if p.get("id")}
     for row in new_rows:
@@ -705,17 +866,24 @@ def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> l
             if not prev:
                 continue
             prev = dict(prev)
+            leaf = canonicalize_leaf_id(row.get("leafId") or "")
+            row_cols = [
+                canonicalize_leaf_id(c) for c in (row.get("collections") or [])
+            ]
             prev["collections"] = list(
-                dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
+                dict.fromkeys(
+                    [canonicalize_leaf_id(c) for c in (prev.get("collections") or [])]
+                    + row_cols
+                )
             )
-            # If product was only under rtw-all, promote subcategory when leaf is specific.
-            leaf = row.get("leafId") or ""
-            if leaf and leaf not in {"ce-women-rtw-all", "ce-men-rtw-all"} and not (
-                prev.get("leafId") and prev.get("leafId") not in {"ce-women-rtw-all", "ce-men-rtw-all"}
-            ):
-                # keep existing leafId if already a specific leaf; else adopt
-                if (prev.get("leafId") or "") in {"", "ce-women-rtw-all", "ce-men-rtw-all"}:
+            # Promote off any hub/view-all leaf when a specific PLP membership arrives.
+            prev_leaf = canonicalize_leaf_id(prev.get("leafId") or "")
+            if leaf and leaf not in CE_HUB_LEAF_IDS:
+                if prev_leaf in {"", *CE_HUB_LEAF_IDS}:
                     prev["leafId"] = leaf
+                elif leaf not in (prev.get("collections") or []):
+                    # keep specific leaf; membership still recorded in collections
+                    pass
             by_id[row["id"]] = prev
             continue
         new_blocked = is_blocked_pdp_title(row.get("title")) or bool(row.get("scrapeBlocked"))
@@ -724,13 +892,20 @@ def merge_product_rows(existing_products: list[dict], new_rows: list[dict]) -> l
             # Never let a WAF/blocked scrape overwrite a known-good PDP.
             prev = dict(prev)
             prev["collections"] = list(
-                dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
+                dict.fromkeys(
+                    [canonicalize_leaf_id(c) for c in (prev.get("collections") or [])]
+                    + [canonicalize_leaf_id(c) for c in (row.get("collections") or [])]
+                )
             )
             by_id[row["id"]] = prev
             continue
         if prev:
+            row["leafId"] = canonicalize_leaf_id(row.get("leafId") or prev.get("leafId") or "")
             row["collections"] = list(
-                dict.fromkeys((prev.get("collections") or []) + (row.get("collections") or []))
+                dict.fromkeys(
+                    [canonicalize_leaf_id(c) for c in (prev.get("collections") or [])]
+                    + [canonicalize_leaf_id(c) for c in (row.get("collections") or [])]
+                )
             )
             if len(prev.get("images") or []) > len(row.get("images") or []):
                 row["images"] = prev.get("images") or row["images"]

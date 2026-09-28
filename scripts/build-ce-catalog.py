@@ -674,7 +674,22 @@ def size_sort_key(size: str) -> tuple:
 
 
 def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
-    sizes = sorted({str(x).strip() for x in (row.get("sizes") or []) if str(x).strip()}, key=size_sort_key)
+    size_stock_rows = [
+        s
+        for s in (row.get("sizeStock") or [])
+        if isinstance(s, dict) and str(s.get("size") or "").strip()
+    ]
+    if size_stock_rows:
+        sizes = [str(s["size"]).strip() for s in size_stock_rows]
+        stock_by = {
+            str(s["size"]).strip(): bool(s.get("inStock")) for s in size_stock_rows
+        }
+    else:
+        sizes = sorted(
+            {str(x).strip() for x in (row.get("sizes") or []) if str(x).strip()},
+            key=size_sort_key,
+        )
+        stock_by = {}
     images = existing_ce_images(row.get("images") or [])
     image = images[0] if images else "/products/ce-pdp/placeholder.jpg"
     if not sizes:
@@ -685,8 +700,9 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
     color_label = str((color or {}).get("label") or (color or {}).get("label_int") or "").strip()
     color_key = product_id
     color_name_ko = color_label if color_label else "기본"
+    fallback_stock = row_in_stock(row)
     out = []
-    for size in sizes:
+    for size in sorted(set(sizes), key=size_sort_key):
         out.append(
             {
                 "id": f"{product_id}-sz-{slugify(size, max_len=24)}",
@@ -698,7 +714,7 @@ def build_variants(product_id: str, row: dict, price: int) -> list[dict]:
                 "image": image,
                 "images": images,
                 "sourceUrl": row.get("url") or "",
-                "inStock": row_in_stock(row),
+                "inStock": stock_by.get(size, fallback_stock),
                 "colorKey": color_key,
                 "colorNameKo": color_name_ko,
                 "size": size,
@@ -767,9 +783,12 @@ def is_ce_swim_accessory(title: str, leaf: str = "") -> bool:
 
 def resolve_placement(row: dict) -> tuple[str, str, list[str]]:
     """Return (category, subcategory, ceCollections) with non-apparel corrections."""
-    leaf = str(row.get("leafId") or "").strip() or "ce-men-rtw-all"
-    title = str(row.get("title") or "")
-    collections = list(dict.fromkeys(row.get("collections") or []))
+    from ce_accessory_membership import enrich_row_membership
+
+    enriched = enrich_row_membership(row)
+    leaf = str(enriched.get("leafId") or "").strip() or "ce-men-rtw-all"
+    title = str(enriched.get("title") or row.get("title") or "")
+    collections = list(dict.fromkeys(enriched.get("collections") or []))
 
     if is_ce_swim_accessory(title, leaf) or (
         "swim" in leaf and not _CE_SWIM_APPAREL_RE.search(title) and _CE_SWIM_ACCESSORY_RE.search(title)

@@ -303,8 +303,7 @@ def paginated_plp_urls(url: str, *, pages: int = 6, page_size: int = 24) -> list
 def fetch_sfcc_availability(pid: str) -> dict | None:
     """Official GB stock via SFCC Product-Variation (works when HTML WAF blocks).
 
-    Returns dict with availability bool, confidence, and selectable sizes — or None
-    when the endpoint fails.
+    Returns availability plus full size run with per-size inStock (selectable).
     """
     sku = (pid or "").strip()
     if not sku:
@@ -324,6 +323,7 @@ def fetch_sfcc_availability(pid: str) -> dict | None:
         return None
     avail_block = prod.get("availability") if isinstance(prod.get("availability"), dict) else {}
     msgs = " ".join(str(m) for m in (avail_block.get("messages") or []))
+    size_stock: list[dict] = []
     selectable_sizes: list[str] = []
     for va in prod.get("variationAttributes") or []:
         if not isinstance(va, dict):
@@ -335,9 +335,13 @@ def fetch_sfcc_availability(pid: str) -> dict | None:
             if not isinstance(val, dict):
                 continue
             label = str(val.get("displayValue") or val.get("value") or val.get("id") or "").strip()
-            if val.get("selectable") or val.get("inStock") is True:
-                if label:
-                    selectable_sizes.append(label)
+            if not label:
+                continue
+            in_stock = bool(val.get("selectable") or val.get("inStock") is True)
+            size_stock.append({"size": label, "inStock": in_stock})
+            if in_stock:
+                selectable_sizes.append(label)
+    all_sizes = [s["size"] for s in size_stock]
     explicit_oos = bool(
         re.search(r"sold out|out of stock|not available", msgs, re.I)
         or prod.get("available") is False
@@ -353,26 +357,33 @@ def fetch_sfcc_availability(pid: str) -> dict | None:
         return {
             "availability": False,
             "availabilityConfidence": "sfcc_oos",
-            "sizes": selectable_sizes,
+            "sizes": all_sizes or selectable_sizes,
+            "sizeStock": size_stock,
             "messages": msgs,
         }
     if explicit_in:
         return {
             "availability": True,
             "availabilityConfidence": "sfcc",
-            "sizes": selectable_sizes,
+            "sizes": all_sizes or selectable_sizes,
+            "sizeStock": size_stock,
             "messages": msgs,
         }
     return {
         "availability": None,
         "availabilityConfidence": "sfcc_unknown",
-        "sizes": selectable_sizes,
+        "sizes": all_sizes or selectable_sizes,
+        "sizeStock": size_stock,
         "messages": msgs,
     }
 
 
 def apply_sfcc_availability(row: dict) -> dict:
-    """Prefer SFCC stock over fragile HTML body-text heuristics."""
+    """Prefer SFCC stock over fragile HTML body-text heuristics.
+
+    Always keep the full official size run; mark OOS sizes via sizeStock so
+    Briq PDP can show 품절 chips instead of dropping them.
+    """
     row = dict(row)
     pid = str(row.get("sku") or row.get("id") or "").strip()
     info = fetch_sfcc_availability(pid)
@@ -381,8 +392,11 @@ def apply_sfcc_availability(row: dict) -> dict:
     if info.get("availability") is not None:
         row["availability"] = info["availability"]
         row["availabilityConfidence"] = info.get("availabilityConfidence") or "sfcc"
-    # Fill missing sizes from selectable SFCC values when HTML scrape was empty.
-    if info.get("sizes") and not (row.get("sizes") or []):
+    # Prefer full SFCC size run (includes OOS) over HTML/selectable-only lists.
+    if info.get("sizeStock"):
+        row["sizeStock"] = list(info["sizeStock"])
+        row["sizes"] = [s["size"] for s in info["sizeStock"]]
+    elif info.get("sizes") and not (row.get("sizes") or []):
         row["sizes"] = list(info["sizes"])
     return row
 

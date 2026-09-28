@@ -36,6 +36,17 @@ python3 scripts/enrich-ce-pdp-copy-sfcc.py || true
 
 python3 scripts/build-ce-catalog.py
 
+# Align nav leaf IDs + backfill belts/silk/hair/SLG/jewellery from titles when
+# leaf PLP scrapes missed membership (prevents empty shop chips).
+python3 scripts/patch-ce-accessory-membership.py
+
+# Guard: shop nav accessory leaves must not stay empty after sync.
+python3 scripts/validate-ce-accessory-leaves.py
+
+# Bags / shoes PLPs read slices, not the full catalogue.
+python3 scripts/extract-bags-catalogs.py ce
+python3 scripts/extract-shoes-catalogs.py ce
+
 # Backfill any rows still on placeholder, then publish local PDP folders that
 # are not yet on the product-images CDN tag (prevents broken <img> in shop).
 python3 scripts/repair-ce-missing-images.py --category-hint all || true
