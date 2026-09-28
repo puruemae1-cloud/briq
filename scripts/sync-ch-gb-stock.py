@@ -93,15 +93,23 @@ def fashion_sold_out(html: str) -> bool:
 
 
 def apply_stock(row: dict, in_stock: bool) -> None:
+    """Apply product-level GB stock.
+
+    When the product is sold out, stamp every size OOS. When it is still
+    available, do NOT overwrite per-size flags — broadcasting True hides
+    official 품절 chips.
+    """
     row["inStock"] = in_stock
     sizes = row.get("sizes")
     if not isinstance(sizes, list):
+        return
+    if in_stock:
         return
     new = []
     for sz in sizes:
         if isinstance(sz, dict):
             sz = dict(sz)
-            sz["inStock"] = in_stock
+            sz["inStock"] = False
             new.append(sz)
         else:
             new.append(sz)
