@@ -115,6 +115,12 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Chanel bags brand PLP — croc flap sits right of centre; m/ is a taller crop with the hand */
   "brand-chanel-bags-croc-flap.jpg": "60% 50%",
   "brand-chanel-bags-croc-flap.webp": "60% 50%",
+  /* Chanel accessories — wing tiara framed inside every tier's cover crop (backdrop widened) */
+  "brand-chanel-acc-wing-tiara.jpg": "50% 50%",
+  "brand-chanel-acc-wing-tiara.webp": "50% 50%",
+  /* Burberry accessories — face sits at the top of the frame; keep hair in on wide PC */
+  "brand-burberry-acc-fur-scarf.jpg": "50% 0%",
+  "brand-burberry-acc-fur-scarf.webp": "50% 0%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",

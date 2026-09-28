@@ -40,7 +40,7 @@ const shopHeroImages: Record<string, string[]> = {
   "shoes:dior-shoes": ["/banners/brand-dior-shoes.jpg"],
   "shoes:prada-shoes": ["/banners/brand-prada-shoes.jpg"],
   "shoes:burberry-shoes": ["/banners/brand-burberry-shoes.jpg"],
-  "accessories:chanel-accessories": ["/banners/brand-chanel-como-bag.jpg"],
+  "accessories:chanel-accessories": ["/banners/brand-chanel-acc-wing-tiara.jpg"],
   "accessories:mulberry-accessories": ["/banners/brand-mulberry-accessories.jpg"],
   "accessories:bottega-veneta-accessories": ["/banners/brand-bottega-veneta-accessories.jpg"],
 

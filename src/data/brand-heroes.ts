@@ -30,6 +30,7 @@ export type BrandKey =
   | "burberry"
   | "burberry-bags"
   | "burberry-shoes"
+  | "burberry-accessories"
   | "chanel"
   | "chanel-watches"
   | "chanel-shoes"
@@ -274,6 +275,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     // Locked shoes PLP creative — Vintage Check platform sneakers.
     images: ["/banners/brand-burberry-shoes.jpg"],
   },
+  "burberry-accessories": {
+    key: "burberry-accessories",
+    nameEn: "Burberry",
+    nameKo: "버버리",
+    logoSrc: "/brands/burberry.svg",
+    // Locked scarves PLP creative — Winter Runway 2026 white coat / fur check scarf, face on PC.
+    images: ["/banners/brand-burberry-acc-fur-scarf.jpg"],
+  },
   chanel: {
     key: "chanel",
     nameEn: "Chanel",
@@ -311,8 +320,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Chanel",
     nameKo: "샤넬",
     logoSrc: "/brands/chanel.svg",
-    // Same Como bag still used before RTW split — accessories PLP.
-    images: ["/banners/brand-chanel-como-bag.jpg"],
+    // Locked Reach for the Stars wing tiara — backdrop widened so PC never crops it.
+    images: ["/banners/brand-chanel-acc-wing-tiara.jpg"],
   },
   prada: {
     key: "prada",
@@ -729,7 +738,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "bb-kids-baby-shoes-accessories": "burberry-shoes",
   "bb-kids-girls-shoes-accessories": "burberry-shoes",
   "bb-kids-boys-shoes-accessories": "burberry-shoes",
-  "burberry-accessories": "burberry",
+  "burberry-accessories": "burberry-accessories",
   "burberry-gifts": "burberry",
   chanel: "chanel",
   "chanel-bags": "chanel-bags",
