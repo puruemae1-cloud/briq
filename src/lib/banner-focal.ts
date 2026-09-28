@@ -121,6 +121,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Burberry accessories — face sits at the top of the frame; keep hair in on wide PC */
   "brand-burberry-acc-fur-scarf.jpg": "50% 0%",
   "brand-burberry-acc-fur-scarf.webp": "50% 0%",
+  /* Paul Smith accessories — Floral Street sign + door 43 sit right of centre */
+  "brand-paul-smith-acc-floral-st.jpg": "70% 35%",
+  "brand-paul-smith-acc-floral-st.webp": "70% 35%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",

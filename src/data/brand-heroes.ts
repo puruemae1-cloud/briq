@@ -50,6 +50,7 @@ export type BrandKey =
   | "arcteryx-shoes"
   | "paul-smith"
   | "paul-smith-shoes"
+  | "paul-smith-accessories"
   | "belstaff"
   | "belstaff-shoes"
   | "galvin-green"
@@ -386,6 +387,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/paul-smith.svg",
     // Locked Cream Chilly trainers — red tongue logo lower-left.
     images: ["/banners/brand-paul-smith-shoes.jpg"],
+  },
+  "paul-smith-accessories": {
+    key: "paul-smith-accessories",
+    nameEn: "Paul Smith",
+    nameKo: "폴 스미스",
+    logoSrc: "/brands/paul-smith.svg",
+    // Locked What's On hero — Floral Street store; m/ uses the shopfront portrait.
+    images: ["/banners/brand-paul-smith-acc-floral-st.jpg"],
   },
   belstaff: {
     key: "belstaff",
@@ -821,7 +830,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "ax-climbing-mens": "arcteryx",
   "paul-smith": "paul-smith",
   "paul-smith-shoes": "paul-smith-shoes",
-  "paul-smith-accessories": "paul-smith",
+  "paul-smith-accessories": "paul-smith-accessories",
   "ps-shoes-men": "paul-smith-shoes",
   "ps-shoes-women": "paul-smith-shoes",
   "ps-shoes-boots": "paul-smith-shoes",
