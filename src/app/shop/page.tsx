@@ -128,6 +128,13 @@ export default async function ShopPage({ searchParams }: Props) {
       }),
     );
   }
+  if (
+    category === "sports" &&
+    (sub === "running" || sub === "swimming" || sub === "cycling" || sub === "tennis")
+  ) {
+    // Sports is golf-only (Galvin Green) since Sep 2026; old sport links land on the hub.
+    redirect(buildShopHref({ category: "sports" }));
+  }
   const sort = parseProductSort(params.sort);
 
   /** New Arrivals = newest 100 only (신상 보러가기); full catalogue stays on /shop. */

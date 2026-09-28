@@ -13,10 +13,6 @@ export type SubcategoryId =
   | "womens"
   | "mens"
   | "golf"
-  | "running"
-  | "swimming"
-  | "cycling"
-  | "tennis"
   | "christopher-ward"
   | "cw-new-releases"
   | "cw-bestsellers"
@@ -11131,10 +11127,6 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
-      { id: "running", labelKo: "러닝", href: "/shop?category=sports&sub=running" },
-      { id: "swimming", labelKo: "수영", href: "/shop?category=sports&sub=swimming" },
-      { id: "cycling", labelKo: "자전거", href: "/shop?category=sports&sub=cycling" },
-      { id: "tennis", labelKo: "테니스", href: "/shop?category=sports&sub=tennis" },
     ],
   },
 ];

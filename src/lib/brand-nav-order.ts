@@ -12,10 +12,6 @@ const STRUCTURAL_IDS = new Set([
   "womens",
   "mens",
   "golf",
-  "running",
-  "swimming",
-  "cycling",
-  "tennis",
 ]);
 
 /** Lower = further left / higher in the list. */

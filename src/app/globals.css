@@ -2344,6 +2344,10 @@ body:has(.nav-drawer-toggle:checked) {
   }
 }
 
+.banner-carousel[data-slides="1"] .banner-carousel__dots {
+  display: none;
+}
+
 .banner-dot {
   appearance: none;
   width: 0.7rem;
