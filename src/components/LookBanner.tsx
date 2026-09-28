@@ -4,6 +4,7 @@ import { BannerImage } from "@/components/BannerImage";
 import { ShopFastLink } from "@/components/ShopFastLink";
 import { pickBanner, type LookBanner } from "@/data/home-banners";
 import { bannerFocalForSrc } from "@/lib/banner-focal";
+import { mediaUrl } from "@/lib/product-image";
 
 export function LookBannerBlock({ banner }: { banner: LookBanner }) {
   const align = banner.align ?? "left";
@@ -17,6 +18,7 @@ export function LookBannerBlock({ banner }: { banner: LookBanner }) {
       href: slide.href,
       image: slideImage,
       focal: bannerFocalForSrc(slideImage, slide.focal),
+      video: slide.videoSrc ? mediaUrl(slide.videoSrc) : undefined,
     };
   });
 

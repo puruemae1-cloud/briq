@@ -14,6 +14,8 @@ export type CarouselSlide = {
   href: string;
   image: string;
   focal?: string;
+  /** Resolved mp4 URL layered over `image`. */
+  video?: string;
 };
 
 export function BannerCarousel({
@@ -119,6 +121,32 @@ export function BannerCarousel({
     return () => el.removeEventListener("wheel", onWheel);
   }, [pause]);
 
+  /** Videos stay unloaded until the carousel scrolls into view (homepage speed). */
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+    const videos = Array.from(el.querySelectorAll<HTMLVideoElement>("video"));
+    if (!videos.length) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        for (const v of videos) {
+          if (entry.isIntersecting) {
+            if (!v.src && v.dataset.src) v.src = v.dataset.src;
+            v.muted = true;
+            v.play().catch(() => {});
+          } else {
+            v.pause();
+          }
+        }
+      },
+      { rootMargin: "200px 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [slides]);
+
   if (slides.length === 0) return null;
 
   return (
@@ -146,6 +174,18 @@ export function BannerCarousel({
               style={slide.focal ? { objectPosition: slide.focal } : undefined}
               loading={i === 0 ? "eager" : "lazy"}
             />
+            {slide.video ? (
+              <video
+                className="banner-slide__video"
+                data-src={slide.video}
+                muted
+                loop
+                playsInline
+                preload="none"
+                aria-hidden
+                style={slide.focal ? { objectPosition: slide.focal } : undefined}
+              />
+            ) : null}
             <span className="banner-slide__label">{slide.labelKo}</span>
           </ShopFastLink>
         ))}

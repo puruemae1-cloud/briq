@@ -9,6 +9,8 @@ export type BannerSlide = {
   images: string[];
   /** CSS object-position so the subject stays in frame when cropped */
   focal?: string;
+  /** Muted looping mp4 over the image; plays only while the carousel is on screen. */
+  videoSrc?: string;
 };
 
 export type LookBannerLink = {
@@ -227,8 +229,10 @@ export const homeLookBanners: LookBanner[] = [
         id: "golf",
         labelKo: "골프",
         href: "/shop?category=sports&sub=golf",
-        images: ["/banners/rot-golf-3.jpg"],
-        focal: "center 36%",
+        // Same DryVR Two mp4 + poster as the Galvin Green shop hero.
+        images: ["/banners/brand-galvin-green.jpg"],
+        videoSrc: "/banners/brand-galvin-green.mp4",
+        focal: "center center",
       },
     ],
   },

@@ -2348,6 +2348,17 @@ body:has(.nav-drawer-toggle:checked) {
   display: none;
 }
 
+.banner-slide__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  pointer-events: none;
+}
+
 .banner-dot {
   appearance: none;
   width: 0.7rem;
