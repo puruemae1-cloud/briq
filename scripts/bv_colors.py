@@ -460,54 +460,47 @@ def _base_name(p: dict, color: str) -> str:
     return nk
 
 
-def disambiguate_names_by_color(products: list[dict]) -> int:
-    """Append the Korean colour when several products share one nameKo but differ in colour.
-
-    Idempotent: the uncoloured title is kept in ``nameKoBase`` so re-runs never stack suffixes.
-    """
+def disambiguate_names_by_color(products: list[dict], bases: dict[int, str]) -> None:
+    """Set nameKo to base + Korean colour when several products share a base but differ in colour."""
     groups: dict[str, list[tuple[dict, str]]] = defaultdict(list)
     for p in products:
-        color = product_color_ko(p)
-        groups[_base_name(p, color)].append((p, color))
-    changed = 0
+        groups[bases[id(p)]].append((p, product_color_ko(p)))
     for base, rows in groups.items():
         colors = {c for _, c in rows if c}
         suffix = len(rows) > 1 and len(colors) > 1
         for p, color in rows:
-            want = f"{base} {color}" if suffix and color else base
-            if p.get("nameKo") != want:
-                p["nameKo"] = want
-                changed += 1
-            if want != base:
-                p["nameKoBase"] = base
-            else:
-                p.pop("nameKoBase", None)
-    return changed
+            p["nameKo"] = f"{base} {color}" if suffix and color else base
 
 
-def raw_colors_by_id() -> dict[str, str]:
-    """Official English colour per catalogue id, read from the scraped hub JSON."""
+def raw_rows_by_id() -> dict[str, dict]:
+    """Scraped official row (English colour, copy, gender) per catalogue id."""
     from bv_common import load_json, slugify
     from bv_config import HUB_ORDER, HUBS_BY_ID, RAW_DIR
 
-    out: dict[str, str] = {}
+    out: dict[str, dict] = {}
     for hub_id in HUB_ORDER:
         data = load_json(RAW_DIR / HUBS_BY_ID[hub_id]["out"], {})
         for row in (data.get("products") if isinstance(data, dict) else None) or []:
             smc = str(row.get("id") or row.get("sku") or "")
-            color = str(row.get("color") or "").strip()
-            if smc and color:
-                out.setdefault(f"bv-{slugify(smc)}", color)
+            if smc:
+                out.setdefault(f"bv-{slugify(smc)}", row)
     return out
 
 
-def normalize_bv_names(products: list[dict], colors_en: dict[str, str] | None = None) -> dict:
-    """Glossary colours + colour-suffixed titles for same-name products. Returns stats."""
-    colors_en = raw_colors_by_id() if colors_en is None else colors_en
+def normalize_bv_names(products: list[dict], raw_by_id: dict[str, dict] | None = None) -> dict:
+    """Glossary colours, then make every Korean title unique (colour first, then real differences).
+
+    Idempotent: the plain title is kept in ``nameKoBase`` so re-runs never stack suffixes.
+    """
+    from bv_name_diff import distinguish_same_names
+
+    raw_by_id = raw_rows_by_id() if raw_by_id is None else raw_by_id
+    before = {id(p): p.get("nameKo") for p in products}
+    bases = {id(p): _base_name(p, product_color_ko(p)) for p in products}
     recolored = 0
     unknown: set[str] = set()
     for p in products:
-        en = colors_en.get(str(p.get("id") or ""))
+        en = str((raw_by_id.get(str(p.get("id") or "")) or {}).get("color") or "").strip()
         if not en:
             continue
         ko = color_ko_from_en(en)
@@ -516,18 +509,20 @@ def normalize_bv_names(products: list[dict], colors_en: dict[str, str] | None = 
             continue
         if apply_color_ko(p, ko):
             recolored += 1
-    renamed = disambiguate_names_by_color(products)
+    disambiguate_names_by_color(products, bases)
+    distinguish_same_names(products, raw_by_id)
+    for p in products:
+        if p["nameKo"] != bases[id(p)]:
+            p["nameKoBase"] = bases[id(p)]
+        else:
+            p.pop("nameKoBase", None)
+    renamed = sum(1 for p in products if p.get("nameKo") != before[id(p)])
     return {"recolored": recolored, "renamed": renamed, "unknown": sorted(unknown)}
 
 
 def duplicate_name_groups(products: list[dict]) -> list[tuple[str, int]]:
-    """nameKo groups that still share a title while their colours differ (should be empty)."""
-    groups: dict[str, set[str]] = defaultdict(set)
+    """Korean titles still shared by more than one product (should be empty)."""
     counts: dict[str, int] = defaultdict(int)
     for p in products:
-        nk = str(p.get("nameKo") or "").strip()
-        color = product_color_ko(p)
-        if color:
-            groups[nk].add(color)
-        counts[nk] += 1
-    return sorted((k, counts[k]) for k, cs in groups.items() if counts[k] > 1 and len(cs) > 1)
+        counts[str(p.get("nameKo") or "").strip()] += 1
+    return sorted((k, n) for k, n in counts.items() if n > 1 and k)

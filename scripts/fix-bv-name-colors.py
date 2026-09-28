@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Colour-suffix Bottega Veneta titles that share one Korean name (조디 → 조디 블랙).
+"""Make every Bottega Veneta Korean title unique.
 
+Same name, other colour → colour suffix (조디 → 조디 블랙). Same name and colour →
+the real difference from the official copy (아스테어 로퍼 블랙 (여성 · 오픈백)).
 Runs after the KO repair pass in the weekly sync, which can rewrite nameKo.
 
   python3 scripts/fix-bv-name-colors.py          # fix bv-catalog.json in place
-  python3 scripts/fix-bv-name-colors.py --check  # exit 1 if same-name colourways remain
+  python3 scripts/fix-bv-name-colors.py --check  # exit 1 if any title is still shared
 """
 from __future__ import annotations
 
@@ -38,7 +40,7 @@ def main() -> int:
             flush=True,
         )
     left = duplicate_name_groups(products)
-    print(f"bv same-name colourway groups left: {len(left)}", flush=True)
+    print(f"bv shared titles left: {len(left)}", flush=True)
     for name, n in left[:20]:
         print(f"  {name} ×{n}", flush=True)
     return 1 if left and args.check else 0

@@ -118,7 +118,7 @@ def main() -> None:
             last_rc or qa.returncode or name_qa.returncode or 1
         )
 
-    # KO repair can rewrite nameKo, so colour-suffix same-name colourways last.
+    # KO repair can rewrite nameKo, so make every title unique (colour, then real differences) last.
     run([sys.executable, "-u", "scripts/fix-bv-name-colors.py"], env)
     # Bags/shoes PLPs read slices, not bv-catalog.json — keep them in step.
     run([sys.executable, "-u", "scripts/extract-bags-catalogs.py", "bv"], env)

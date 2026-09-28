@@ -88,6 +88,7 @@ jobs:
             scripts/bv_common.py \
             scripts/bv_config.py \
             scripts/bv_colors.py \
+            scripts/bv_name_diff.py \
             scripts/fix-bv-name-colors.py \
             scripts/weekly-bv-stock-sync.py \
             scripts/ci-publish-pdp-cdn.sh \
