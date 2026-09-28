@@ -130,9 +130,10 @@ export function BannerCarousel({
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const io = new IntersectionObserver(
-      ([entry]) => {
+      (entries) => {
+        const visible = entries[entries.length - 1].isIntersecting;
         for (const v of videos) {
-          if (entry.isIntersecting) {
+          if (visible) {
             if (!v.src && v.dataset.src) v.src = v.dataset.src;
             v.muted = true;
             v.play().catch(() => {});
