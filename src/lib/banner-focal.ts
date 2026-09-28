@@ -124,6 +124,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Paul Smith accessories — Floral Street sign + door 43 sit right of centre */
   "brand-paul-smith-acc-floral-st.jpg": "70% 35%",
   "brand-paul-smith-acc-floral-st.webp": "70% 35%",
+  /* Arc'teryx accessories — fitting still; 33% keeps the hood + both faces at 2560px */
+  "brand-arcteryx-acc-fitting.jpg": "50% 33%",
+  "brand-arcteryx-acc-fitting.webp": "50% 33%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",

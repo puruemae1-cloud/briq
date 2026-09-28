@@ -48,6 +48,7 @@ export type BrandKey =
   | "prada-accessories"
   | "arcteryx"
   | "arcteryx-shoes"
+  | "arcteryx-accessories"
   | "paul-smith"
   | "paul-smith-shoes"
   | "paul-smith-accessories"
@@ -371,6 +372,14 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/arcteryx.svg",
     // Locked trail runners ridge still — mid-lower shoes on rock.
     images: ["/banners/brand-arcteryx-shoes.jpg"],
+  },
+  "arcteryx-accessories": {
+    key: "arcteryx-accessories",
+    nameEn: "Arc'teryx",
+    nameKo: "아크테릭스",
+    logoSrc: "/brands/arcteryx.svg",
+    // Locked Who We Are fitting still — red shell + shoe wall; all three faces on PC.
+    images: ["/banners/brand-arcteryx-acc-fitting.jpg"],
   },
   "paul-smith": {
     key: "paul-smith",
@@ -822,12 +831,12 @@ export const brandRootToKey: Record<string, BrandKey> = {
   arcteryx: "arcteryx",
   "arcteryx-bags": "arcteryx",
   "arcteryx-shoes": "arcteryx-shoes",
-  "arcteryx-accessories": "arcteryx",
+  "arcteryx-accessories": "arcteryx-accessories",
   "ax-shoes-womens": "arcteryx-shoes",
   "ax-shoes-mens": "arcteryx-shoes",
-  "ax-climbing-gear": "arcteryx",
-  "ax-climbing-womens": "arcteryx",
-  "ax-climbing-mens": "arcteryx",
+  "ax-climbing-gear": "arcteryx-accessories",
+  "ax-climbing-womens": "arcteryx-accessories",
+  "ax-climbing-mens": "arcteryx-accessories",
   "paul-smith": "paul-smith",
   "paul-smith-shoes": "paul-smith-shoes",
   "paul-smith-accessories": "paul-smith-accessories",
