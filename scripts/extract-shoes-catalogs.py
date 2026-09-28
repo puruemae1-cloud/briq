@@ -3,6 +3,7 @@
 
 Shoes PLPs must not parse 20–60MB full brand catalogues (RTW + bags +
 accessories). Re-run after weekly brand syncs that rewrite *-catalog.json.
+Pass brand keys (``extract-shoes-catalogs.py bv``) to rebuild only those slices.
 """
 from __future__ import annotations
 
@@ -66,9 +67,12 @@ def load_products(paths: list[Path]) -> list[dict]:
 
 
 def main() -> None:
+    only = set(sys.argv[1:])
     total_n = 0
     total_bytes = 0
     for key, paths in SOURCES.items():
+        if only and key not in only:
+            continue
         products = load_products(paths)
         shoes = [p for p in products if p.get("category") == "shoes"]
         seen: set[str] = set()
