@@ -62,7 +62,6 @@ let allShoesCache: Product[] | null = null;
 const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
   "bb",
   "ax",
-  "bs",
   "gc",
   "bv",
   "ch",
@@ -224,11 +223,6 @@ const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("./ax/ax-bags-catalog") as typeof import("./ax/ax-bags-catalog");
     return mod.axBagsCatalogProducts;
-  },
-  bs: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bs/bs-bags-catalog") as typeof import("./bs/bs-bags-catalog");
-    return mod.bsBagsCatalogProducts;
   },
   gc: () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports

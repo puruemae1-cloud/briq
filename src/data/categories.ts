@@ -485,7 +485,7 @@ export type SubcategoryId =
   | "belstaff-shoes"
   | "bs-shoes-men"
   | "bs-shoes-women"
-  | "belstaff-bags"
+  | "bs-acc-bags"
   | "belstaff-accessories"
   | "bs-acc-men"
   | "bs-acc-women"
@@ -3417,8 +3417,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bs-women": [...BS_WOMEN_CLOTHING_IDS],
   "bs-sale": [...BS_SALE_IDS],
   "belstaff-shoes": [...BS_MEN_SHOE_IDS, ...BS_WOMEN_SHOE_IDS],
-  "belstaff-bags": ["belstaff-bags"],
-  "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS],
+  "belstaff-accessories": [...BS_MEN_ACC_IDS, ...BS_WOMEN_ACC_IDS, "bs-acc-bags"],
   "gucci-bags": [
     "gc-handbags",
     ...GC_HANDBAG_LEAF_IDS,
@@ -6811,12 +6810,6 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
-        id: "belstaff-bags",
-        labelKo: "벨스타프",
-        href: "/shop?category=bags&sub=belstaff-bags",
-        navLeaf: true,
-      },
-      {
         id: "chanel-bags",
         labelKo: "샤넬",
         href: "/shop?category=bags&sub=chanel-bags",
@@ -8536,6 +8529,12 @@ export const navCategories: NavCategory[] = [
             id: "bs-acc-women",
             labelKo: "여성용",
             href: "/shop?category=accessories&sub=bs-acc-women",
+            navLeaf: true,
+          },
+          {
+            id: "bs-acc-bags",
+            labelKo: "가방",
+            href: "/shop?category=accessories&sub=bs-acc-bags",
             navLeaf: true,
           },
         ],

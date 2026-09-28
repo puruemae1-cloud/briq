@@ -21,7 +21,6 @@ SOURCES: dict[str, list[Path]] = {
         DATA / "ax/ax-outlet-catalog.json",
         DATA / "ax/ax-gear-catalog.json",
     ],
-    "bs": [DATA / "bs/bs-catalog.json"],
     "gc": [DATA / "gc/gc-catalog.json"],
     "bv": [DATA / "bv/bv-catalog.json"],
     "ch": [DATA / "ch/ch-catalog.json"],
@@ -36,7 +35,6 @@ SOURCES: dict[str, list[Path]] = {
 EXPORT_NAME = {
     "bb": "bbBagsCatalogProducts",
     "ax": "axBagsCatalogProducts",
-    "bs": "bsBagsCatalogProducts",
     "gc": "gcBagsCatalogProducts",
     "bv": "bvBagsCatalogProducts",
     "ch": "chBagsCatalogProducts",

@@ -834,7 +834,6 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "ps-shoes-women-trainers": "paul-smith-shoes",
   "ps-shoes-women-other": "paul-smith-shoes",
   belstaff: "belstaff",
-  "belstaff-bags": "belstaff",
   "belstaff-shoes": "belstaff-shoes",
   "belstaff-accessories": "belstaff",
   "bs-shoes-men": "belstaff-shoes",

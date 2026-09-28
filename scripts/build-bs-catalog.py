@@ -375,8 +375,9 @@ def classify(row: dict) -> tuple[str, str, list[str]]:
             cols.append(leaf)
         return "shoes", leaf, _dedupe(cols)
 
+    # Belstaff has no bags PLP; bags live under 악세서리 · 벨스타프 · 가방.
     if bag_like and not force_luxury:
-        return "bags", "belstaff-bags", ["belstaff-bags"]
+        return "accessories", "bs-acc-bags", ["belstaff-accessories", "bs-acc-bags"]
 
     if acc_like and not force_luxury:
         cols = ["belstaff-accessories"]
@@ -616,7 +617,7 @@ def build() -> None:
         "bs-women-motorcycle",
         "bs-sale-men",
         "bs-sale-women",
-        "belstaff-bags",
+        "bs-acc-bags",
     }
     prev_registered: dict[str, str] = {}
     prev_collections: dict[str, set[str]] = {}

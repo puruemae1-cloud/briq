@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { BannerImage } from "@/components/BannerImage";
 import { BrandWordmark } from "@/components/BrandWordmark";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
@@ -117,6 +118,16 @@ export default async function ShopPage({ searchParams }: Props) {
   const params = await searchParams;
   const category = params.category ?? "all";
   const sub = params.sub;
+  if (sub === "belstaff-bags") {
+    // Belstaff bags moved to 악세서리 · 벨스타프 · 가방 (Sep 2026); keep old links working.
+    redirect(
+      buildShopHref({
+        category: "accessories",
+        sub: "bs-acc-bags",
+        sort: params.sort === "new" ? "new" : undefined,
+      }),
+    );
+  }
   const sort = parseProductSort(params.sort);
 
   /** New Arrivals = newest 100 only (신상 보러가기); full catalogue stays on /shop. */
