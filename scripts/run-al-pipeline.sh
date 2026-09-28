@@ -31,6 +31,7 @@ done
 
 echo "== build catalog =="
 python3 scripts/build-al-catalog.py
+python3 scripts/patch-al-size-charts.py --refresh --check
 
 echo "== KO QA / retranslate =="
 for i in 1 2 3 4 5; do

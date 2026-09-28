@@ -31,6 +31,11 @@ r = subprocess.run([sys.executable, "scripts/build-al-catalog.py"])
 if r.returncode != 0:
     raise SystemExit(r.returncode)
 
+# Official size guide tabs on every sized clothing PDP (fails if one is left without).
+r = subprocess.run([sys.executable, "scripts/patch-al-size-charts.py", "--refresh", "--check"])
+if r.returncode != 0:
+    raise SystemExit(r.returncode)
+
 # Korean QA — fail weekly sync if EN leftovers remain.
 last_rc = 1
 for attempt in range(1, 6):
