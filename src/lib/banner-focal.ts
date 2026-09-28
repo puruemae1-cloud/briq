@@ -10,8 +10,9 @@ type Manifest = {
 
 /** Locked creatives with a preferred object-position (head/product framing). */
 const FOCAL_OVERRIDES: Record<string, string> = {
-  "brand-burberry-scarf.jpg": "center 28%",
-  "brand-burberry-scarf.webp": "center 28%",
+  /* Burberry RTW — scarf hood; eyes to mouth on 1920 PC */
+  "brand-burberry-scarf.jpg": "center 46%",
+  "brand-burberry-scarf.webp": "center 46%",
   /* Bags PLP night check tote — face + tote */
   /* Burberry night check tote — keep bag body + knight medallion (lower mid) */
   "brand-burberry-bags.jpg": "50% 70%",
@@ -39,6 +40,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Linea Rossa model — keep crown + red temple mark in frame */
   "brand-prada-linea-rossa.jpg": "48% 18%",
   "brand-prada-linea-rossa.webp": "48% 18%",
+  /* Prada RTW — FW26 women's card; face near the top, m/ is the portrait creative's top */
+  "brand-prada-rtw-fw26.jpg": "54% 6%",
+  "brand-prada-rtw-fw26.webp": "54% 6%",
   /* Women's bags PLP — crocodile bag + PRADA MILANO logo */
   "brand-prada-bags.jpg": "70% 50%",
   "brand-prada-bags.webp": "70% 50%",
