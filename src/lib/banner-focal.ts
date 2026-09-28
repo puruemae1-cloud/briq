@@ -130,6 +130,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* London Undercover — crook + hand sit right and at the top; keep both on every width */
   "brand-london-undercover-tube-crook.jpg": "80% 0%",
   "brand-london-undercover-tube-crook.webp": "80% 0%",
+  /* Belstaff Phoenix trench — belt band sits low; keep it in at 5.7:1 */
+  "brand-belstaff-phoenix.jpg": "55% 60%",
+  "brand-belstaff-phoenix.webp": "55% 60%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",

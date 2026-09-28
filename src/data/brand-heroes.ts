@@ -410,7 +410,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Belstaff",
     nameKo: "벨스타프",
     logoSrc: "/brands/belstaff.svg",
-    images: ["/banners/brand-belstaff-3.jpg"],
+    // Locked Phoenix Collection trench (belt detail, no text) — RTW + accessories.
+    images: ["/banners/brand-belstaff-phoenix.jpg"],
   },
   "belstaff-shoes": {
     key: "belstaff-shoes",
