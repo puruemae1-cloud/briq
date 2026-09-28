@@ -127,6 +127,9 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Arc'teryx accessories — fitting still; 33% keeps the hood + both faces at 2560px */
   "brand-arcteryx-acc-fitting.jpg": "50% 33%",
   "brand-arcteryx-acc-fitting.webp": "50% 33%",
+  /* London Undercover — crook + hand sit right and at the top; keep both on every width */
+  "brand-london-undercover-tube-crook.jpg": "80% 0%",
+  "brand-london-undercover-tube-crook.webp": "80% 0%",
   /* Shoes PLP — Prada slingbacks; bows + toes low in frame. PC height in globals.css */
   "shop-shoes-prada.jpg": "50% 60%",
   "shop-shoes-prada.webp": "50% 60%",

@@ -561,7 +561,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "London Undercover",
     logoSrc: "/brands/london-undercover.svg",
     nameKo: "런던언더커버",
-    images: ["/banners/brand-london-undercover-3.jpg"],
+    // Locked homepage hero (tube handrail + crook umbrella) — top of frame, left backdrop widened for PC.
+    images: ["/banners/brand-london-undercover-tube-crook.jpg"],
   },
 };
 
