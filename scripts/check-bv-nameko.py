@@ -9,6 +9,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from bv_model_names import is_model_english  # noqa: E402
+
 CATALOG = ROOT / "src/data/bv/bv-catalog.json"
 
 
@@ -27,7 +31,7 @@ def main() -> int:
         nk = str(p.get("nameKo") or "").strip()
         if not nk:
             continue
-        if has_hangul(nk):
+        if has_hangul(nk) or is_model_english(nk):
             continue
         if re.search(r"[A-Za-z]{3,}", nk):
             bad.append((p.get("id"), nk))

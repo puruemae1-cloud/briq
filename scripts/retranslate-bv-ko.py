@@ -29,6 +29,7 @@ socket.setdefaulttimeout(10)
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from bv_model_names import is_model_english  # noqa: E402
 from ko_qa import en_ratio, has_hangul, is_good_korean  # noqa: E402
 
 CATALOG = ROOT / "src/data/bv/bv-catalog.json"
@@ -353,12 +354,18 @@ def translate_text(text: str) -> str:
     return " ".join(outs)
 
 
+def name_needs_ko(text: str | None) -> bool:
+    """Titles keep BV line names in English (Jodie, Andiamo) — only untranslated copy counts."""
+    return needs_ko(text) and not is_model_english(str(text or ""))
+
+
 def collect_strings(products: list[dict]) -> set[str]:
     out: set[str] = set()
     for p in products:
-        for val in (p.get("nameKo"), p.get("descriptionKo")):
-            if needs_ko(val):
-                out.add(str(val).strip())
+        if name_needs_ko(p.get("nameKo")):
+            out.add(str(p.get("nameKo")).strip())
+        if needs_ko(p.get("descriptionKo")):
+            out.add(str(p.get("descriptionKo")).strip())
         for f in p.get("featuresKo") or []:
             if needs_ko(f):
                 out.add(str(f).strip())
@@ -397,7 +404,7 @@ def apply_translations(p: dict, cache: dict[str, str]) -> bool:
         return cached or s
 
     name = str(p.get("nameKo") or "")
-    if needs_ko(name):
+    if name_needs_ko(name):
         # Prefer translating official EN title when nameKo is still English.
         src = str(p.get("name") or name).strip() or name
         new_name = swap(name) if name in cache or local_ko(name) else swap(src)
@@ -624,7 +631,7 @@ def main() -> int:
     still_bad_name = sum(
         1
         for p in products
-        if needs_ko(str(p.get("nameKo") or ""))
+        if name_needs_ko(str(p.get("nameKo") or ""))
     )
     still_bad_desc = sum(
         1

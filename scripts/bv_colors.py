@@ -492,11 +492,17 @@ def normalize_bv_names(products: list[dict], raw_by_id: dict[str, dict] | None =
 
     Idempotent: the plain title is kept in ``nameKoBase`` so re-runs never stack suffixes.
     """
+    from bv_model_names import anglicize_models
     from bv_name_diff import distinguish_same_names
 
     raw_by_id = raw_rows_by_id() if raw_by_id is None else raw_by_id
     before = {id(p): p.get("nameKo") for p in products}
-    bases = {id(p): _base_name(p, product_color_ko(p)) for p in products}
+    bases = {
+        id(p): anglicize_models(
+            _base_name(p, product_color_ko(p)), str(p.get("name") or ""), str(p.get("category") or "")
+        )
+        for p in products
+    }
     recolored = 0
     unknown: set[str] = set()
     for p in products:
