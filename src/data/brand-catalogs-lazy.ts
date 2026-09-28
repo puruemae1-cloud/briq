@@ -65,6 +65,7 @@ const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
   "gc",
   "bv",
   "ch",
+  "al",
   "ce",
   "vw",
   "pr",
@@ -238,6 +239,11 @@ const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("./ch/ch-bags-catalog") as typeof import("./ch/ch-bags-catalog");
     return mod.chBagsCatalogProducts;
+  },
+  al: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./al/al-bags-catalog") as typeof import("./al/al-bags-catalog");
+    return mod.alBagsCatalogProducts;
   },
   ce: () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -510,7 +516,7 @@ export function loadCatalogsForShop(
   if (bagsOnly) {
     const out: Product[] = [];
     for (const key of keys) {
-      // Prefer bags slice; empty when brand has no bags file (e.g. AllSaints WIP).
+      // Prefer bags slice; empty when brand has no bags file.
       out.push(...loadBrandBagsCatalog(key));
     }
     return out;

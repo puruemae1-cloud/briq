@@ -13,8 +13,10 @@ echo "==== AL pipeline start $(date -u +%Y-%m-%dT%H:%M:%SZ) ===="
 
 FAMILIES=(
   al-men-accessories
+  al-men-bags
   al-men-shoes
   al-women-accessories
+  al-women-bags
   al-women-shoes
   al-men-rtw
   al-women-rtw

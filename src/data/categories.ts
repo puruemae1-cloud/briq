@@ -435,6 +435,9 @@ export type SubcategoryId =
   | "al-women-tops-shirts"
   | "al-women-trousers-leggings"
   | "all-saints-shoes"
+  | "all-saints-bags"
+  | "al-women-bags"
+  | "al-men-bags-group"
   | "al-men-shoes"
   | "al-women-shoes"
   | "al-men-shoes-all"
@@ -965,7 +968,9 @@ export type SubcategoryId =
   | "ce-men-acc-all"
   | "ce-men-belts"
   | "ce-men-silks-scarves"
+  | "ce-men-scarves"
   | "ce-men-hats-soft-accessories"
+  | "ce-men-hats"
   | "ce-men-other-accessories"
   | "ce-men-jewellery"
   | "ce-men-jewellery-all"
@@ -1024,8 +1029,12 @@ export type SubcategoryId =
   | "ce-women-acc-all"
   | "ce-women-belts"
   | "ce-women-silk-squares-accessories"
+  | "ce-women-silk-scarves"
+  | "ce-women-scarves"
   | "ce-women-hats"
   | "ce-women-hair-accessories"
+  | "ce-women-hair"
+  | "ce-women-bag-charms"
   | "ce-women-other-accessories"
   | "ce-women-jewellery"
   | "ce-women-jewellery-all"
@@ -1045,8 +1054,11 @@ export type SubcategoryId =
   | "ce-women-slg-all"
   | "ce-women-wallets"
   | "ce-women-coin-card-holders"
+  | "ce-women-card-holders"
   | "ce-women-pouches-tech-accessories"
+  | "ce-women-pouches"
   | "ce-women-wallets-on-chain"
+  | "ce-women-woc"
   | "ce-gifts-her"
   | "ce-gifts-her-bags"
   | "ce-gifts-her-small-leather-goods"
@@ -1987,12 +1999,14 @@ export const AL_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
 ];
 export const AL_MEN_ACC_LEAF_IDS: SubcategoryId[] = [
   "al-men-acc-all","al-men-sunglasses","al-men-belts","al-men-wallets","al-men-hats",
-  "al-men-jewellery","al-men-bags",
+  "al-men-jewellery",
 ];
 export const AL_WOMEN_ACC_LEAF_IDS: SubcategoryId[] = [
   "al-women-acc-all","al-women-sunglasses","al-women-belts","al-women-scarves","al-women-hats",
-  "al-women-jewellery","al-women-handbags",
+  "al-women-jewellery",
 ];
+export const AL_MEN_BAGS_LEAF_IDS: SubcategoryId[] = ["al-men-bags"];
+export const AL_WOMEN_BAGS_LEAF_IDS: SubcategoryId[] = ["al-women-handbags"];
 
 export const YS_MEN_RTW_LEAF_IDS: SubcategoryId[] = [
   "ys-men-rtw-all","ys-men-shirts","ys-men-jersey","ys-men-knitwear","ys-men-denim",
@@ -2156,8 +2170,10 @@ export const CE_WOMEN_ACCESSORIES_LEAF_IDS: SubcategoryId[] = [
   "ce-women-acc-all",
   "ce-women-belts",
   "ce-women-silk-squares-accessories",
+  "ce-women-scarves",
   "ce-women-hats",
   "ce-women-hair-accessories",
+  "ce-women-bag-charms",
   "ce-women-other-accessories",
 ];
 
@@ -3714,6 +3730,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "all-saints-shoes": ["all-saints-shoes", "al-women-shoes", ...AL_WOMEN_SHOES_LEAF_IDS, "al-men-shoes", ...AL_MEN_SHOES_LEAF_IDS],
   "al-women-shoes": ["al-women-shoes", ...AL_WOMEN_SHOES_LEAF_IDS],
   "al-men-shoes": ["al-men-shoes", ...AL_MEN_SHOES_LEAF_IDS],
+  "all-saints-bags": ["all-saints-bags", "al-women-bags", ...AL_WOMEN_BAGS_LEAF_IDS, "al-men-bags-group", ...AL_MEN_BAGS_LEAF_IDS],
+  "al-women-bags": ["al-women-bags", ...AL_WOMEN_BAGS_LEAF_IDS],
+  "al-men-bags-group": ["al-men-bags-group", ...AL_MEN_BAGS_LEAF_IDS],
   "all-saints-accessories": ["all-saints-accessories", "al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS, "al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
   "al-women-accessories": ["al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS],
   "al-men-accessories": ["al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
@@ -4000,9 +4019,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "ce-women-acc-all": ["ce-women-acc-all"],
   "ce-women-belts": ["ce-women-belts"],
-  "ce-women-silk-squares-accessories": ["ce-women-silk-squares-accessories"],
+  // Nav ID + legacy scrape IDs (silk-scarves / scarves kept for older catalog rows)
+  "ce-women-silk-squares-accessories": [
+    "ce-women-silk-squares-accessories",
+    "ce-women-silk-scarves",
+  ],
+  "ce-women-scarves": ["ce-women-scarves"],
   "ce-women-hats": ["ce-women-hats"],
-  "ce-women-hair-accessories": ["ce-women-hair-accessories"],
+  "ce-women-hair-accessories": ["ce-women-hair-accessories", "ce-women-hair"],
+  "ce-women-bag-charms": ["ce-women-bag-charms"],
   "ce-women-other-accessories": ["ce-women-other-accessories"],
   "ce-women-jewellery": ["ce-women-jewellery", ...CE_WOMEN_JEWELLERY_LEAF_IDS],
   "ce-women-jewellery-all": ["ce-women-jewellery-all"],
@@ -4021,17 +4046,37 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ce-women-slg": ["ce-women-slg", ...CE_WOMEN_SLG_LEAF_IDS],
   "ce-women-slg-all": ["ce-women-slg-all"],
   "ce-women-wallets": ["ce-women-wallets"],
-  "ce-women-coin-card-holders": ["ce-women-coin-card-holders"],
-  "ce-women-pouches-tech-accessories": ["ce-women-pouches-tech-accessories"],
-  "ce-women-wallets-on-chain": ["ce-women-wallets-on-chain"],
-  "ce-gifts-her": ["ce-gifts-her", ...CE_GIFTS_HER_LEAF_IDS],
-  "ce-gifts-her-bags": ["ce-gifts-her-bags"],
-  "ce-gifts-her-small-leather-goods": ["ce-gifts-her-small-leather-goods"],
-  "ce-gifts-her-shoes": ["ce-gifts-her-shoes"],
-  "ce-gifts-her-ready-to-wear": ["ce-gifts-her-ready-to-wear"],
-  "ce-gifts-her-sunglasses": ["ce-gifts-her-sunglasses"],
-  "ce-gifts-her-jewellery": ["ce-gifts-her-jewellery"],
-  "ce-gifts-her-accessories": ["ce-gifts-her-accessories"],
+  "ce-women-coin-card-holders": ["ce-women-coin-card-holders", "ce-women-card-holders"],
+  "ce-women-pouches-tech-accessories": [
+    "ce-women-pouches-tech-accessories",
+    "ce-women-pouches",
+  ],
+  "ce-women-wallets-on-chain": ["ce-women-wallets-on-chain", "ce-women-woc"],
+  // Gifts hubs cross-list source PLPs (no dedicated gifts scrape)
+  "ce-gifts-her": [
+    "ce-gifts-her",
+    ...CE_GIFTS_HER_LEAF_IDS,
+    ...CE_WOMEN_BAGS_LEAF_IDS,
+    ...CE_WOMEN_SLG_LEAF_IDS,
+    ...CE_WOMEN_SHOES_LEAF_IDS,
+    ...CE_WOMEN_RTW_LEAF_IDS,
+    ...CE_WOMEN_SUNGLASSES_LEAF_IDS,
+    ...CE_WOMEN_JEWELLERY_LEAF_IDS,
+    ...CE_WOMEN_ACCESSORIES_LEAF_IDS,
+  ],
+  "ce-gifts-her-bags": ["ce-gifts-her-bags", ...CE_WOMEN_BAGS_LEAF_IDS],
+  "ce-gifts-her-small-leather-goods": [
+    "ce-gifts-her-small-leather-goods",
+    ...CE_WOMEN_SLG_LEAF_IDS,
+  ],
+  "ce-gifts-her-shoes": ["ce-gifts-her-shoes", ...CE_WOMEN_SHOES_LEAF_IDS],
+  "ce-gifts-her-ready-to-wear": ["ce-gifts-her-ready-to-wear", ...CE_WOMEN_RTW_LEAF_IDS],
+  "ce-gifts-her-sunglasses": ["ce-gifts-her-sunglasses", ...CE_WOMEN_SUNGLASSES_LEAF_IDS],
+  "ce-gifts-her-jewellery": ["ce-gifts-her-jewellery", ...CE_WOMEN_JEWELLERY_LEAF_IDS],
+  "ce-gifts-her-accessories": [
+    "ce-gifts-her-accessories",
+    ...CE_WOMEN_ACCESSORIES_LEAF_IDS,
+  ],
   "ce-men-accessories": [
     "ce-men-accessories",
     ...CE_MEN_ACCESSORIES_LEAF_IDS,
@@ -4046,8 +4091,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   ],
   "ce-men-acc-all": ["ce-men-acc-all"],
   "ce-men-belts": ["ce-men-belts"],
-  "ce-men-silks-scarves": ["ce-men-silks-scarves"],
-  "ce-men-hats-soft-accessories": ["ce-men-hats-soft-accessories"],
+  "ce-men-silks-scarves": ["ce-men-silks-scarves", "ce-men-scarves"],
+  "ce-men-hats-soft-accessories": ["ce-men-hats-soft-accessories", "ce-men-hats"],
   "ce-men-other-accessories": ["ce-men-other-accessories"],
   "ce-men-jewellery": ["ce-men-jewellery", ...CE_MEN_JEWELLERY_LEAF_IDS],
   "ce-men-jewellery-all": ["ce-men-jewellery-all"],
@@ -4068,14 +4113,30 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "ce-men-card-holders": ["ce-men-card-holders"],
   "ce-men-coin-holders": ["ce-men-coin-holders"],
   "ce-men-tech-accessories": ["ce-men-tech-accessories"],
-  "ce-gifts-him": ["ce-gifts-him", ...CE_GIFTS_HIM_LEAF_IDS],
-  "ce-gifts-him-bags": ["ce-gifts-him-bags"],
-  "ce-gifts-him-small-leather-goods": ["ce-gifts-him-small-leather-goods"],
-  "ce-gifts-him-shoes": ["ce-gifts-him-shoes"],
-  "ce-gifts-him-ready-to-wear": ["ce-gifts-him-ready-to-wear"],
-  "ce-gifts-him-sunglasses": ["ce-gifts-him-sunglasses"],
-  "ce-gifts-him-jewellery": ["ce-gifts-him-jewellery"],
-  "ce-gifts-him-accessories": ["ce-gifts-him-accessories"],
+  "ce-gifts-him": [
+    "ce-gifts-him",
+    ...CE_GIFTS_HIM_LEAF_IDS,
+    ...CE_MEN_BAGS_LEAF_IDS,
+    ...CE_MEN_SLG_LEAF_IDS,
+    ...CE_MEN_SHOES_LEAF_IDS,
+    ...CE_MEN_RTW_LEAF_IDS,
+    ...CE_MEN_SUNGLASSES_LEAF_IDS,
+    ...CE_MEN_JEWELLERY_LEAF_IDS,
+    ...CE_MEN_ACCESSORIES_LEAF_IDS,
+  ],
+  "ce-gifts-him-bags": ["ce-gifts-him-bags", ...CE_MEN_BAGS_LEAF_IDS],
+  "ce-gifts-him-small-leather-goods": [
+    "ce-gifts-him-small-leather-goods",
+    ...CE_MEN_SLG_LEAF_IDS,
+  ],
+  "ce-gifts-him-shoes": ["ce-gifts-him-shoes", ...CE_MEN_SHOES_LEAF_IDS],
+  "ce-gifts-him-ready-to-wear": ["ce-gifts-him-ready-to-wear", ...CE_MEN_RTW_LEAF_IDS],
+  "ce-gifts-him-sunglasses": ["ce-gifts-him-sunglasses", ...CE_MEN_SUNGLASSES_LEAF_IDS],
+  "ce-gifts-him-jewellery": ["ce-gifts-him-jewellery", ...CE_MEN_JEWELLERY_LEAF_IDS],
+  "ce-gifts-him-accessories": [
+    "ce-gifts-him-accessories",
+    ...CE_MEN_ACCESSORIES_LEAF_IDS,
+  ],
 
   "mulberry-bags": [
     "mulberry-bags",
@@ -7042,6 +7103,39 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "all-saints-bags",
+        labelKo: "올세인츠",
+        href: "/shop?category=bags&sub=all-saints-bags",
+        children: [
+          {
+            id: "al-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=al-women-bags",
+            navLeaf: true,
+            children: [
+              {
+                id: "al-women-handbags",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=al-women-handbags",
+              },
+            ],
+          },
+          {
+            id: "al-men-bags-group",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=al-men-bags-group",
+            navLeaf: true,
+            children: [
+              {
+                id: "al-men-bags",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=al-men-bags",
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: "celine-bags",
         labelKo: "셀린느",
         href: "/shop?category=bags&sub=celine-bags",
@@ -8972,7 +9066,6 @@ export const navCategories: NavCategory[] = [
               { id: "al-women-scarves", labelKo: "스카프", href: "/shop?category=accessories&sub=al-women-scarves" },
               { id: "al-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-women-hats" },
               { id: "al-women-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-women-jewellery" },
-              { id: "al-women-handbags", labelKo: "핸드백", href: "/shop?category=accessories&sub=al-women-handbags" },
             ],
           },
           {
@@ -8987,7 +9080,6 @@ export const navCategories: NavCategory[] = [
               { id: "al-men-wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=al-men-wallets" },
               { id: "al-men-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-men-hats" },
               { id: "al-men-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-men-jewellery" },
-              { id: "al-men-bags", labelKo: "가방", href: "/shop?category=accessories&sub=al-men-bags" },
             ],
           },
         ],
@@ -9055,8 +9147,10 @@ export const navCategories: NavCategory[] = [
               { id: "ce-women-acc-all", labelKo: "전체", href: "/shop?category=accessories&sub=ce-women-acc-all" },
               { id: "ce-women-belts", labelKo: "벨트", href: "/shop?category=accessories&sub=ce-women-belts" },
               { id: "ce-women-silk-squares-accessories", labelKo: "실크 스퀘어 & 액세서리", href: "/shop?category=accessories&sub=ce-women-silk-squares-accessories" },
+              { id: "ce-women-scarves", labelKo: "스카프 & 숄", href: "/shop?category=accessories&sub=ce-women-scarves" },
               { id: "ce-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=ce-women-hats" },
               { id: "ce-women-hair-accessories", labelKo: "헤어 액세서리", href: "/shop?category=accessories&sub=ce-women-hair-accessories" },
+              { id: "ce-women-bag-charms", labelKo: "백 참", href: "/shop?category=accessories&sub=ce-women-bag-charms" },
               { id: "ce-women-other-accessories", labelKo: "기타 액세서리", href: "/shop?category=accessories&sub=ce-women-other-accessories" },
               {
                 id: "ce-women-jewellery",

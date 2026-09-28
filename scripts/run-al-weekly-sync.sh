@@ -51,6 +51,12 @@ else:
     print("ERROR AL KO still English after 5 retranslate attempts", flush=True)
     raise SystemExit(last_rc or 1)
 
+# Bags / shoes PLPs read slices, not the full catalogue.
+for script in ("extract-bags-catalogs.py", "extract-shoes-catalogs.py"):
+    r = subprocess.run([sys.executable, f"scripts/{script}", "al"], cwd=str(Path.cwd()))
+    if r.returncode != 0:
+        raise SystemExit(r.returncode)
+
 # Local image guard — never leave catalogue pointing at missing PDP files.
 img = subprocess.run(
     [sys.executable, "scripts/verify-product-images.py", "--brand", "al", "--all-images"],

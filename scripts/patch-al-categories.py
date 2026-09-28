@@ -56,14 +56,17 @@ AL_IDS = [
     "al-men-wallets",
     "al-men-hats",
     "al-men-jewellery",
-    "al-men-bags",
     "al-women-acc-all",
     "al-women-sunglasses",
     "al-women-belts",
     "al-women-scarves",
     "al-women-hats",
     "al-women-jewellery",
+    "all-saints-bags",
+    "al-women-bags",
+    "al-men-bags-group",
     "al-women-handbags",
+    "al-men-bags",
 ]
 
 LEAF_CONSTS = '''
@@ -85,12 +88,14 @@ export const AL_WOMEN_SHOES_LEAF_IDS: SubcategoryId[] = [
 ];
 export const AL_MEN_ACC_LEAF_IDS: SubcategoryId[] = [
   "al-men-acc-all","al-men-sunglasses","al-men-belts","al-men-wallets","al-men-hats",
-  "al-men-jewellery","al-men-bags",
+  "al-men-jewellery",
 ];
 export const AL_WOMEN_ACC_LEAF_IDS: SubcategoryId[] = [
   "al-women-acc-all","al-women-sunglasses","al-women-belts","al-women-scarves","al-women-hats",
-  "al-women-jewellery","al-women-handbags",
+  "al-women-jewellery",
 ];
+export const AL_MEN_BAGS_LEAF_IDS: SubcategoryId[] = ["al-men-bags"];
+export const AL_WOMEN_BAGS_LEAF_IDS: SubcategoryId[] = ["al-women-handbags"];
 
 '''
 
@@ -130,6 +135,9 @@ def patch_categories() -> None:
   "all-saints-accessories": ["all-saints-accessories", "al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS, "al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
   "al-women-accessories": ["al-women-accessories", ...AL_WOMEN_ACC_LEAF_IDS],
   "al-men-accessories": ["al-men-accessories", ...AL_MEN_ACC_LEAF_IDS],
+  "all-saints-bags": ["all-saints-bags", "al-women-bags", ...AL_WOMEN_BAGS_LEAF_IDS, "al-men-bags-group", ...AL_MEN_BAGS_LEAF_IDS],
+  "al-women-bags": ["al-women-bags", ...AL_WOMEN_BAGS_LEAF_IDS],
+  "al-men-bags-group": ["al-men-bags-group", ...AL_MEN_BAGS_LEAF_IDS],
 '''
         # leaf self-maps
         for i in AL_IDS:
@@ -140,6 +148,8 @@ def patch_categories() -> None:
                 "al-women-shoes",
                 "al-men-accessories",
                 "al-women-accessories",
+                "al-women-bags",
+                "al-men-bags-group",
             }:
                 expand += f'  "{i}": ["{i}"],\n'
         text = text.replace(
@@ -274,7 +284,6 @@ def patch_categories() -> None:
               { id: "al-women-scarves", labelKo: "스카프", href: "/shop?category=accessories&sub=al-women-scarves" },
               { id: "al-women-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-women-hats" },
               { id: "al-women-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-women-jewellery" },
-              { id: "al-women-handbags", labelKo: "핸드백", href: "/shop?category=accessories&sub=al-women-handbags" },
             ],
           },
           {
@@ -289,7 +298,6 @@ def patch_categories() -> None:
               { id: "al-men-wallets", labelKo: "지갑", href: "/shop?category=accessories&sub=al-men-wallets" },
               { id: "al-men-hats", labelKo: "모자", href: "/shop?category=accessories&sub=al-men-hats" },
               { id: "al-men-jewellery", labelKo: "주얼리", href: "/shop?category=accessories&sub=al-men-jewellery" },
-              { id: "al-men-bags", labelKo: "가방", href: "/shop?category=accessories&sub=al-men-bags" },
             ],
           },
         ],
@@ -301,6 +309,49 @@ def patch_categories() -> None:
             1,
         )
         print("accessories nav OK")
+
+    if 'id: "all-saints-bags"' not in text:
+        bags_nav = '''
+      {
+        id: "all-saints-bags",
+        labelKo: "올세인츠",
+        href: "/shop?category=bags&sub=all-saints-bags",
+        children: [
+          {
+            id: "al-women-bags",
+            labelKo: "여성용",
+            href: "/shop?category=bags&sub=al-women-bags",
+            navLeaf: true,
+            children: [
+              {
+                id: "al-women-handbags",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=al-women-handbags",
+              },
+            ],
+          },
+          {
+            id: "al-men-bags-group",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=al-men-bags-group",
+            navLeaf: true,
+            children: [
+              {
+                id: "al-men-bags",
+                labelKo: "전체",
+                href: "/shop?category=bags&sub=al-men-bags",
+              },
+            ],
+          },
+        ],
+      },
+'''
+        text = text.replace(
+            '{\n        id: "celine-bags",\n        labelKo: "셀린느",',
+            bags_nav + '\n      {\n        id: "celine-bags",\n        labelKo: "셀린느",',
+            1,
+        )
+        print("bags nav OK")
 
     path.write_text(text, encoding="utf-8")
     print("wrote", path)

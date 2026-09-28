@@ -18,6 +18,8 @@ AL_MEN_SHOES = ["all-saints-shoes", "al-men-shoes"]
 AL_WOMEN_SHOES = ["all-saints-shoes", "al-women-shoes"]
 AL_MEN_ACC = ["all-saints-accessories", "al-men-accessories"]
 AL_WOMEN_ACC = ["all-saints-accessories", "al-women-accessories"]
+AL_MEN_BAGS = ["all-saints-bags", "al-men-bags-group"]
+AL_WOMEN_BAGS = ["all-saints-bags", "al-women-bags"]
 
 
 def _leaf(
@@ -47,7 +49,11 @@ AL_MEN_ACC_LEAVES = [
     _leaf("al-men-wallets", "Wallets", "지갑", "/men/accessories/wallets", "21840", AL_MEN_ACC),
     _leaf("al-men-hats", "Hats", "모자", "/men/accessories/hats", "320", AL_MEN_ACC),
     _leaf("al-men-jewellery", "Jewellery", "주얼리", "/men/jewellery", "21935", AL_MEN_ACC),
-    _leaf("al-men-bags", "Bags", "가방", "/men/bags", "316", AL_MEN_ACC),
+]
+
+# --- Men bags (Bags category) ---
+AL_MEN_BAGS_LEAVES = [
+    _leaf("al-men-bags", "Bags", "가방", "/men/bags", "316", AL_MEN_BAGS),
 ]
 
 # --- Men shoes ---
@@ -66,7 +72,11 @@ AL_WOMEN_ACC_LEAVES = [
     _leaf("al-women-scarves", "Scarves", "스카프", "/women/accessories/scarves", "21838", AL_WOMEN_ACC),
     _leaf("al-women-hats", "Hats", "모자", "/women/accessories/hats", "21932", AL_WOMEN_ACC),
     _leaf("al-women-jewellery", "Jewellery", "주얼리", "/women/jewellery", "21848", AL_WOMEN_ACC),
-    _leaf("al-women-handbags", "Handbags", "핸드백", "/women/handbags", "8606", AL_WOMEN_ACC),
+]
+
+# --- Women bags (Bags category) ---
+AL_WOMEN_BAGS_LEAVES = [
+    _leaf("al-women-handbags", "Handbags", "핸드백", "/women/handbags", "8606", AL_WOMEN_BAGS),
 ]
 
 # --- Women shoes ---
@@ -118,8 +128,10 @@ def _family(out: str, hub: str, category: str, leaves: list[dict]) -> dict:
 # Smallest first for scrape / weekly.
 AL_FAMILY_SCRAPERS: dict[str, dict] = {
     "al-men-accessories": _family("al-men-accessories-catalog-raw.json", "men-acc", "accessories", AL_MEN_ACC_LEAVES),
+    "al-men-bags": _family("al-men-bags-catalog-raw.json", "men-bags", "bags", AL_MEN_BAGS_LEAVES),
     "al-men-shoes": _family("al-men-shoes-catalog-raw.json", "men-shoes", "shoes", AL_MEN_SHOES_LEAVES),
     "al-women-accessories": _family("al-women-accessories-catalog-raw.json", "women-acc", "accessories", AL_WOMEN_ACC_LEAVES),
+    "al-women-bags": _family("al-women-bags-catalog-raw.json", "women-bags", "bags", AL_WOMEN_BAGS_LEAVES),
     "al-women-shoes": _family("al-women-shoes-catalog-raw.json", "women-shoes", "shoes", AL_WOMEN_SHOES_LEAVES),
     "al-men-rtw": _family("al-men-rtw-catalog-raw.json", "men-rtw", "luxury", AL_MEN_RTW_LEAVES),
     "al-women-rtw": _family("al-women-rtw-catalog-raw.json", "women-rtw", "luxury", AL_WOMEN_RTW_LEAVES),

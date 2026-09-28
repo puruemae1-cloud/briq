@@ -1,0 +1,489 @@
+{
+  "family": "al-men-bags",
+  "category": "bags",
+  "hub": "men-bags",
+  "scrapedAt": "2026-09-17T08:28:12.819126+00:00",
+  "leaves": [
+    "al-men-bags"
+  ],
+  "officialUnion": 7,
+  "products": [
+    {
+      "id": "M116XF-4195",
+      "sku": "M116XF-4195",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M116XF-4195",
+      "name": "Canvas Tote Bag",
+      "brand": "AllSaints",
+      "link": "/menswear/canvas-tote-bag/5063320997981.html",
+      "gbpPrice": 89.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Two top handles",
+        "Depth: 20cm",
+        "Width: 51cm",
+        "Height: 44cm"
+      ],
+      "longDescription": [
+        "Body: 100% cotton",
+        "Wipe clean only"
+      ],
+      "description": "Tote bag made from lightweight, unlined cotton-canvas. Trimmed with recycled polyester webbing and detailed with branded press snaps.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Cloud White",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-4195.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-4195.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-4195.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-4195.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-4195.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320997981",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 89.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m116xf-4195/1.jpg",
+        "/products/al-pdp/m116xf-4195/2.jpg",
+        "/products/al-pdp/m116xf-4195/3.jpg",
+        "/products/al-pdp/m116xf-4195/4.jpg",
+        "/products/al-pdp/m116xf-4195/5.jpg"
+      ]
+    },
+    {
+      "id": "M110XF-5",
+      "sku": "M110XF-5",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M110XF-5",
+      "name": "Leather Crossbody Messenger Bag",
+      "brand": "AllSaints",
+      "link": "/menswear/leather-crossbody-messenger-bag/5063320997943.html",
+      "gbpPrice": 299.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Buckle fastenings at front flap",
+        "Interior pocket",
+        "Depth: 8cm",
+        "Width: 27cm",
+        "Height: 22cm"
+      ],
+      "longDescription": [
+        "Body: 100% cow leather",
+        "Lining: 100% cow suede",
+        "Wipe clean only"
+      ],
+      "description": "Messenger bag made from grained-leather with an expandable interior, polished silver hardware and an adjustable strap.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320997943",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 299.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m110xf-5/1.jpg",
+        "/products/al-pdp/m110xf-5/2.jpg",
+        "/products/al-pdp/m110xf-5/3.jpg",
+        "/products/al-pdp/m110xf-5/4.jpg",
+        "/products/al-pdp/m110xf-5/5.jpg"
+      ]
+    },
+    {
+      "id": "M116XF-5",
+      "sku": "M116XF-5",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M116XF-5",
+      "name": "Canvas Tote Bag",
+      "brand": "AllSaints",
+      "link": "/menswear/canvas-tote-bag/5063320997974.html",
+      "gbpPrice": 89.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Two top handles",
+        "Depth: 20cm",
+        "Width: 51cm",
+        "Height: 44cm"
+      ],
+      "longDescription": [
+        "Body: 100% cotton",
+        "Wipe clean only"
+      ],
+      "description": "Tote bag made from lightweight, unlined cotton-canvas. Trimmed with recycled polyester webbing and detailed with branded press snaps.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M116XF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320997974",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 89.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m116xf-5/1.jpg",
+        "/products/al-pdp/m116xf-5/2.jpg",
+        "/products/al-pdp/m116xf-5/3.jpg",
+        "/products/al-pdp/m116xf-5/4.jpg",
+        "/products/al-pdp/m116xf-5/5.jpg",
+        "/products/al-pdp/m116xf-5/6.jpg"
+      ]
+    },
+    {
+      "id": "M093XF-5",
+      "sku": "M093XF-5",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M093XF-5",
+      "name": "Cassius Zipped Suede Tote Bag",
+      "brand": "AllSaints",
+      "link": "/menswear/cassius-zipped-suede-tote-bag/5063320980563.html",
+      "gbpPrice": 249.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lined",
+        "Depth: 9cm",
+        "Width: 46cm",
+        "Height: 31cm"
+      ],
+      "longDescription": [
+        "Body: 100% cow suede",
+        "Lining: 100% organic cotton",
+        "Wipe clean only"
+      ],
+      "description": "Zipped tote bag crafted from cow suede with overlapped stitched panels. Removable strap and a zipped internal pocket.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320980563",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 249.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m093xf-5/1.jpg",
+        "/products/al-pdp/m093xf-5/2.jpg",
+        "/products/al-pdp/m093xf-5/3.jpg",
+        "/products/al-pdp/m093xf-5/4.jpg",
+        "/products/al-pdp/m093xf-5/5.jpg"
+      ]
+    },
+    {
+      "id": "M094XF-5",
+      "sku": "M094XF-5",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M094XF-5",
+      "name": "Cassius N/S Suede Tote",
+      "brand": "AllSaints",
+      "link": "/menswear/cassius-n%2Fs-suede-tote/5063320886063.html",
+      "gbpPrice": 229.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Two shoulder straps"
+      ],
+      "longDescription": [
+        "Body: 100% cow suede",
+        "Lining: 100% organic cotton",
+        "Wipe clean only"
+      ],
+      "description": "Suede tote bag with an internal pocket and organic cotton lining.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M094XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M094XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M094XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M094XF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M094XF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320886063",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 229.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m094xf-5/1.jpg",
+        "/products/al-pdp/m094xf-5/2.jpg",
+        "/products/al-pdp/m094xf-5/3.jpg",
+        "/products/al-pdp/m094xf-5/4.jpg",
+        "/products/al-pdp/m094xf-5/5.jpg"
+      ]
+    },
+    {
+      "id": "M170XB-3202",
+      "sku": "M170XB-3202",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M170XB-3202",
+      "name": "Underground Cotton Tote Bag",
+      "brand": "AllSaints",
+      "link": "/menswear/underground-cotton-tote-bag/5063320239647.html",
+      "gbpPrice": 39.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Depth: 12cm",
+        "Width: 49cm",
+        "Height: 35cm"
+      ],
+      "longDescription": [
+        "100% cotton",
+        "Mild machine wash"
+      ],
+      "description": "Made from cotton to a spacious silhouette. Underground graphic printed across the centre front.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Black/chalk",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M170XB-3202.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320239647",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 39.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m170xb-3202/1.jpg",
+        "/products/al-pdp/m170xb-3202/2.jpg",
+        "/products/al-pdp/m170xb-3202/3.jpg",
+        "/products/al-pdp/m170xb-3202/4.jpg",
+        "/products/al-pdp/m170xb-3202/5.jpg",
+        "/products/al-pdp/m170xb-3202/6.jpg"
+      ]
+    },
+    {
+      "id": "M093XD-5",
+      "sku": "M093XD-5",
+      "collections": [
+        "al-men-bags",
+        "all-saints-bags",
+        "al-men-bags-group"
+      ],
+      "leafId": "al-men-bags",
+      "cgid": "695",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M093XD-5",
+      "name": "Finn Leather Backpack",
+      "brand": "AllSaints",
+      "link": "/menswear/finn-leather-backpack/5063320540873.html",
+      "gbpPrice": 249.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Zip closure",
+        "One front pocket",
+        "Turned seams",
+        "Antique-effect silver hardware"
+      ],
+      "longDescription": [
+        "Height: 44cm, depth: 45cm",
+        "Shell: 100% sheep leather",
+        "Trim: 100% cow leather",
+        "Lining: 100% organic cotton",
+        "Wipe clean only",
+        "AllSaints leather products support responsible manufacturing via the Leather Working Group - Find out more"
+      ],
+      "description": "Roomy and stylish – this is the Finn Leather Backpack. Finished with turned seams, this bag is an ideal companion for your work day or a weekend away.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%209%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M093XD-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320540873",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 249.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m093xd-5/1.jpg",
+        "/products/al-pdp/m093xd-5/2.jpg",
+        "/products/al-pdp/m093xd-5/3.jpg",
+        "/products/al-pdp/m093xd-5/4.jpg",
+        "/products/al-pdp/m093xd-5/5.jpg",
+        "/products/al-pdp/m093xd-5/6.jpg",
+        "/products/al-pdp/m093xd-5/7.jpg",
+        "/products/al-pdp/m093xd-5/8.jpg"
+      ]
+    }
+  ]
+}

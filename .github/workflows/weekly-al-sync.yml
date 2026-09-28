@@ -89,6 +89,9 @@ jobs:
             scripts/retag-al-leaves.py \
             scripts/retranslate-al-ko.py \
             scripts/check-al-korean.py \
+            scripts/al_config.py \
+            scripts/extract-bags-catalogs.py \
+            scripts/extract-shoes-catalogs.py \
             scripts/push-product-images-tag.py \
             scripts/restore-product-images-tag.py \
             scripts/verify-product-images.py \
