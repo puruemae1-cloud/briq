@@ -106,6 +106,33 @@ def prune_images(raw: dict[str, dict]) -> int:
     return removed
 
 
+def hold_back_missing_images(raw: dict[str, dict]) -> dict[str, dict]:
+    """Drop the few rows whose PDP images failed to download this run.
+
+    One broken product must not block stock updates for the whole brand;
+    they return on the next sync. Many missing rows still fail (see
+    assert_local_images) because that means the image pipeline is broken.
+    """
+    bad = {
+        key
+        for key, row in raw.items()
+        if not row.get("images")
+        or any(
+            not (ROOT / "public" / str(img).lstrip("/")).is_file()
+            or (ROOT / "public" / str(img).lstrip("/")).stat().st_size < 800
+            for img in row["images"]
+        )
+    }
+    if not bad or len(bad) > max(10, len(raw) // 20):
+        return raw
+    print(
+        f"held back {len(bad)} products with missing images: "
+        f"{sorted(raw[k].get('handle') or k for k in bad)[:12]}",
+        flush=True,
+    )
+    return {k: v for k, v in raw.items() if k not in bad}
+
+
 def assert_local_images(raw: dict[str, dict]) -> None:
     """Fail the weekly job if catalogue points at missing PDP files."""
     missing: list[str] = []
@@ -144,6 +171,7 @@ def main() -> None:
 
     stock_updates = apply_plp_stock(pruned)
     print(f"entity stock fields updated: {stock_updates}", flush=True)
+    pruned = hold_back_missing_images(pruned)
 
     RAW_PATH.write_text(
         json.dumps(pruned, ensure_ascii=False) + "\n", encoding="utf-8"
