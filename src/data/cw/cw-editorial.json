@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-03T21:16:43Z",
+  "scrapedAt": "2026-09-29T12:52:29Z",
   "models": {
     "c1-bel-canto-lumi%C3%A8re": {
       "modelKey": "c1-bel-canto-lumi%C3%A8re",
@@ -1730,8 +1730,81 @@
     "the-twelve-660": {
       "modelKey": "the-twelve-660",
       "sourceUrl": "https://www.christopherward.com/homage-watches/the-twelve-660/C12-38H2H1-SK0K0-B0.html",
-      "sections": [],
-      "sectionCount": 0
+      "sections": [
+        {
+          "titleEn": "Less is more (much more)",
+          "bodyEn": "--> Less is more (much more) A sports watch. A formal watch. A watch so sleek you could forget you’re wearing it.\n\nBut The Twelve 660 isn’t just thin for the sake of it. This is a quietly sophisticated dress piece whose minimal design is considered and intentional in every way, letting the details speak for themselves.\n\nBoth the case and integrated bracelet have been redesigned for the Twelve 660. Not only are they slimmer than on previous Twelves, but also more comfortable. The metal flows seamlessly from case to link to clasp, where you’ll find a new super-thin buckle with hidden pushers.\n\nOn the dial, the signature 3D surface has been replaced with a granular texture that gives the brushed and polished indexes space – and makes the watch feel more luxurious. While printed indexes would have enabled us to go thinner, the applied indexes and twin-flags logo concentrate the mind on the purity of the timekeeping experience.\n\nThis all-watch sleekness is only possible due to the Sellita SW210 handwound movement, extensively modified by Christopher Ward. Through the clear caseback you can see unique high-grade finish on the wheels with a new, custom-designed, custom-made train bridge. These were designed in-house, machined at Palouzzo and finished at APJ, making use of key suppliers CW worked with on the C1 Bel Canto.\n\nAvailable in an ultra-black DLC version or three stainless steel models in blue, green and silver. Which one’s for you?\n\nSellita SW210 handwound movement The Sellita SW210 movement is a slim, 18-jewel, handwound calibre with power reserve of 42 hours that beats at 28,800vph. Its height is just 3.35mm high and has a diameter of 26mm. It’s noted for its reliability, accuracy and longevity.",
+          "image": "/products/cw-editorial/the-twelve-660/story-1.png",
+          "videoUrl": "https://player.vimeo.com/video/1113153307?badge=0&autopause=0&player_id=0&app_id=58479",
+          "layout": "default",
+          "reverse": true
+        },
+        {
+          "titleEn": "Sellita SW210 handwound movement",
+          "bodyEn": "Face it, it’s beautiful The dial is an exercise in pared-down simplicity. The subtle granular finish provides a subtle backing for the ultra-polished hands, indexes and applied logo, giving them space to breathe and increasing the luxury feel.\n\nWatch the wheels turn The exhibition caseback provides an uninterrupted view of the Sellita SW210 movement. Notice how the custom-made train bridge – machined by Palouzzo and finished at APJ – catches the light, delivering a pitchside view of mechanical watchmaking at its most intricate.",
+          "image": "/products/cw-editorial/the-twelve-660/story-2.png",
+          "videoUrl": null,
+          "layout": "default",
+          "reverse": true
+        },
+        {
+          "titleEn": "Face it, it’s beautiful",
+          "bodyEn": "The dial is an exercise in pared-down simplicity. The subtle granular finish provides a subtle backing for the ultra-polished hands, indexes and applied logo, giving them space to breathe and increasing the luxury feel.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-3.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Watch the wheels turn",
+          "bodyEn": "The exhibition caseback provides an uninterrupted view of the Sellita SW210 movement. Notice how the custom-made train bridge – machined by Palouzzo and finished at APJ – catches the light, delivering a pitchside view of mechanical watchmaking at its most intricate.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-4.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "Small order!",
+          "bodyEn": "At just 6.6mm tall, the Twelve 660 is Christopher Ward’s second thinnest watch ever. The unmistakable Twelve case has been re-proportioned and redesigned, while the flat surface of the bezel provides the perfect ’70s-style frame to the dial.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-5.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "The so-slim bracelet",
+          "bodyEn": "The redesigned bracelet creates an uninterrupted stream of metal that goes from case to link to clasp, where you’ll find a new super-thin buckle with hidden pushers. Product director Jörg Bader Jnr, says: “The new bracelet contributes hugely to how comfortable this watch is.”",
+          "image": "/products/cw-editorial/the-twelve-660/caption-6.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "DLC: Blacker than black",
+          "bodyEn": "For those who value stealth, this is the one. The watch head, bracelet and clasp are all covered in Diamond-Like Carbon (DLC) coating, which is so wear-resistant that it’ll never chip. Everything’s the deepest, inkiest black – except for the silver dial furniture.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-7.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "Love colour? Step this way",
+          "bodyEn": "When you bring the architectural angles of the Twelve 660 together with the muted green, deep blue or shimmering silver dial options, you’ve got a timepiece that recalls the integrated watches of the 1970s – remixed for the 21st century.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-8.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "The story of The 660",
+          "bodyEn": "A subtle remix of the Twelve that delivers a 6.6mm case, a slimmer integrated bracelet and a dial that’s the last word in understated sophistication.",
+          "image": "/products/cw-editorial/the-twelve-660/caption-9.jpg",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        }
+      ],
+      "sectionCount": 9
     },
     "c60-trident-reef": {
       "modelKey": "c60-trident-reef",
@@ -2515,6 +2588,85 @@
         }
       ],
       "sectionCount": 8
+    },
+    "c63-sealander-chronograph": {
+      "modelKey": "c63-sealander-chronograph",
+      "sourceUrl": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
+      "sections": [
+        {
+          "titleEn": "The search for the perfect chronograph.",
+          "bodyEn": "Every serious watch collection has a great chronograph at its heart.\n\nFew complications engage the wearer quite like this one: not just beautiful and clever, but, thanks to its stopwatch function, useful too. The C63 Sealander Chronograph is born from our love of the great chronographs of the past – watches that played starring roles in films from The Wolf of Wall Street to Kill Bill , and which graced the wrists of icons like Steve McQueen and Paul Newman.\n\nWith that pedigree, it’s no surprise the Sealander Chronograph has the classic three-subdial layout at 3, 6 and 9, powered by Sellita’s SW510, a robust automatic chronograph movement with up to 62 hours of power reserve. And which sits in the 41mm Light-catcher™ case, which, at 13.9mm high, is our slimmest yet.\n\nFrom the polished rhodium rings around the counters to the tapered, integrated pushers, the sandblasted ceramic bezel to the sleek Bader bracelet, it shows the attention to detail expected of the Sealander series. Even the colours are special: five options, from classic Black, and White to Pistachio, Sky Blue and Pink.\n\nIt’s built to be worn, too. Pair it with our iLink™ Bader bracelet, complete with quick-release and a newly slimmed clasp, or reach for one of four durable rubber straps when the mood, or the motorsport, calls for it.\n\nBeneath the closed case back sits a newly designed rotor: proof that the care runs as deep as the movement, not only across the dial. Watches are about storytelling, and chronographs have always had the best tales. With the C63 Sealander Chronograph, Christopher Ward’s first mechanical chrono in years, we’re writing a new one.\n\nSellita SW510 Great chronograph movements are robust and reliable, which is why the Sealander Chronograph is powered by Sellita's SW510, a 28,800vph cam-operated automatic with at least 56 hours of power reserve (and, more typically, an impressive 62). It has the elegant and preferred 3-6-9 sub-dial layout, with small seconds at 9 o'clock, the 30-minute counter at 3, and 12 hours at 6. Job done.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/story-1.webp",
+          "videoUrl": "https://player.vimeo.com/video/1187335135?h=affe0ba918&badge=0&autopause=0&player_id=0&app_id=58479",
+          "layout": "default",
+          "reverse": true
+        },
+        {
+          "titleEn": "Storm warning",
+          "bodyEn": "It’s built to be worn, too. Pair it with our iLink™ Bader bracelet, complete with quick-release and a newly slimmed clasp, or reach for one of four durable rubber straps when the mood, or the motorsport, calls for it.\n\nBeneath the closed case back sits a newly designed rotor: proof that the care runs as deep as the movement, not only across the dial. Watches are about storytelling, and chronographs have always had the best tales. With the C63 Sealander Chronograph, Christopher Ward’s first mechanical chrono in years, we’re writing a new one.\n\nSellita SW510 Great chronograph movements are robust and reliable, which is why the Sealander Chronograph is powered by Sellita's SW510, a 28,800vph cam-operated automatic with at least 56 hours of power reserve (and, more typically, an impressive 62). It has the elegant and preferred 3-6-9 sub-dial layout, with small seconds at 9 o'clock, the 30-minute counter at 3, and 12 hours at 6. Job done.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/story-2.webp",
+          "videoUrl": "https://player.vimeo.com/video/1187335135?h=affe0ba918&badge=0&autopause=0&player_id=0&app_id=58479",
+          "layout": "default",
+          "reverse": true
+        },
+        {
+          "titleEn": "Sellita SW510",
+          "bodyEn": "Slim, fixed, sandblasted ceramic bezel with a tachymeter scale.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/story-3.webp",
+          "videoUrl": null,
+          "layout": "default",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Slim, fixed, sandblasted ceramic bezel with a tachymeter scale.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-4.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "The case is 13.9mm – 1.1mm less than on previous chronographs.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-5.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Three sub-dials, perfectly symmetrical: running seconds at 9, chronograph minutes at 3, hours at 6.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-6.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "Go classic with 'panda' black-on-white or black-on-black, or add colour: pink, pistachio and sky blue.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-7.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "The new iLink™ tool-less adjustment system.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-8.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": true
+        },
+        {
+          "titleEn": "",
+          "bodyEn": "The pushers – one at 2, the other at 4, control all the stopwatch functions.",
+          "image": "/products/cw-editorial/c63-sealander-chronograph/caption-9.webp",
+          "videoUrl": null,
+          "layout": "caption",
+          "reverse": false
+        }
+      ],
+      "sectionCount": 9
     }
   }
 }

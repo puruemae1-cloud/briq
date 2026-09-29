@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-09-25T06:19:15Z",
+  "generatedAt": "2026-09-29T12:56:01Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010",
-        "bv-871316v6ko02549"
+        "ce-ry14l5d33-19le",
+        "ce-ry13h5590-28bl",
+        "ce-ry1365593-07rd",
+        "ce-ry11m0x73-38no"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "watches": {
       "productIds": [
+        "cw-c63-41ach4-s0kk0-b0",
         "cw-c60-39agm1-s0rk0-b1",
         "cw-c60-39c3h1-b0kk0-vt1",
-        "cw-c60-42c3h1-s0kk0-b0",
-        "cw-c60-41a3h1-sbmfb-b0"
+        "cw-c60-42c3h1-s0kk0-b0"
       ],
       "brands": [
         "christopher-ward",
@@ -32,30 +32,30 @@
     },
     "bags": {
       "productIds": [
-        "vw-4e010002-w00wg-burnt-orange",
-        "vw-43010072u-w001y-dark-blue",
-        "vw-4a010006u-l00bx-black",
-        "vw-4a02000cu-w01ay-army-green"
+        "bv-855504v2hl12166",
+        "bv-855504v2hl11913",
+        "bv-857931v2hl08803",
+        "bv-795628v2hl14330"
+      ],
+      "brands": [
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
+      ]
+    },
+    "shoes": {
+      "productIds": [
+        "vw-72030040-41454-am-beige",
+        "vw-72010006-41671-am-black",
+        "vw-72010006-41007-am-red",
+        "vw-74010021-41013-am-black"
       ],
       "brands": [
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood"
-      ]
-    },
-    "shoes": {
-      "productIds": [
-        "al-w110ff-1049",
-        "al-w133ff-4090",
-        "al-w111ff-1049",
-        "al-w117ff-10409"
-      ],
-      "brands": [
-        "all-saints",
-        "all-saints",
-        "all-saints",
-        "all-saints"
       ]
     },
     "accessories": {
@@ -74,10 +74,10 @@
     },
     "sports": {
       "productIds": [
+        "gg-arissa",
         "gg-murdoch",
         "gg-marsh",
-        "gg-legend",
-        "gg-lamar"
+        "gg-legend"
       ],
       "brands": [
         "galvin-green",
@@ -88,11 +88,11 @@
     }
   },
   "brands": {
-    "all-saints": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+    "celine": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "christopher-ward": [
       "watches",
@@ -113,16 +113,16 @@
       "accessories"
     ],
     "vivienne-westwood": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
+    ],
+    "보테가-베네타": [
       "bags",
       "bags",
       "bags",
       "bags"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},
