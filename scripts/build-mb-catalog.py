@@ -30,7 +30,9 @@ _GTX_LAST = 0.0
 # it after consecutive misses or when the per-process budget is spent so the
 # weekly stock sync finishes inside the runner limit.
 _GTX_MAX_MISSES = 5
-_GTX_BUDGET_SEC = float(os.environ.get("GTX_BUDGET_SEC", "2700"))
+_GTX_BUDGET_SEC = float(
+    os.environ.get("GTX_BUDGET_SEC", "2700" if os.environ.get("CI") else "inf")
+)
 _GTX_STARTED = 0.0
 _GTX_MISSES = 0
 _GTX_DEAD = False

@@ -9,6 +9,7 @@ Goals:
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -322,8 +323,35 @@ def find_hybrid_fields(
     return bad
 
 
+# When both gtx and MyMemory rate-limit the runner, each string costs minutes of
+# backoff and a weekly build can stall for hours (Belstaff hit the 6h runner
+# limit). After consecutive failures or once the per-process budget is spent,
+# fail fast so stock syncs finish; untranslated rows are handled by the gates.
+_TR_MAX_MISSES = 6
+_TR_BUDGET_SEC = float(
+    os.environ.get("TRANSLATE_BUDGET_SEC", "2700" if os.environ.get("CI") else "inf")
+)
+_TR_STATE = {"started": 0.0, "misses": 0, "dead": False}
+
+
+def translation_disabled() -> bool:
+    return bool(_TR_STATE["dead"])
+
+
+def _disable_translation(reason: str) -> None:
+    if not _TR_STATE["dead"]:
+        _TR_STATE["dead"] = True
+        print(f"translation disabled ({reason}) — remaining strings left for the next sync", flush=True)
+
+
 def gtx_translate(text: str) -> str:
     """Google gtx EN→KO with MyMemory fallback."""
+    if not _TR_STATE["started"]:
+        _TR_STATE["started"] = time.time()
+    if not _TR_STATE["dead"] and time.time() - _TR_STATE["started"] > _TR_BUDGET_SEC:
+        _disable_translation(f"time budget {int(_TR_BUDGET_SEC)}s spent")
+    if _TR_STATE["dead"]:
+        raise RuntimeError("translate-disabled")
 
     def _gtx(chunk: str) -> str:
         q = urllib.parse.quote(chunk[:4500])
@@ -409,7 +437,11 @@ def gtx_translate(text: str) -> str:
             except Exception:
                 out = out or ""
         if not out:
+            _TR_STATE["misses"] += 1
+            if _TR_STATE["misses"] >= _TR_MAX_MISSES:
+                _disable_translation(f"{_TR_STATE['misses']} consecutive failures")
             raise RuntimeError("translate-failed")
+        _TR_STATE["misses"] = 0
         outs.append(out)
         time.sleep(0.12)
     return " ".join(outs)
@@ -441,6 +473,8 @@ def translate_en_to_ko(
         return s
     last = s
     for attempt in range(retries):
+        if translation_disabled():
+            break
         try:
             ko = gtx_translate(s).strip()
             if ko and is_good_korean(ko, max_ratio=max_ratio):
