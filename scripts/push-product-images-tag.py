@@ -209,6 +209,36 @@ def reset_worktree_to_remote_tag(tmp: Path) -> None:
         run(["git", "reset", "--hard", rev], cwd=tmp)
 
 
+def squash_tag(rev: str, cwd: Path = ROOT) -> str:
+    """Point the tag at a parentless commit holding ``rev``'s tree.
+
+    Chained image commits made every full-history checkout download all past
+    image versions (checkout went from seconds to over an hour). Nothing reads
+    the tag's history, and the push still only sends blobs the remote tip lacks.
+    """
+    tree = subprocess.run(
+        ["git", "rev-parse", f"{rev}^{{tree}}"],
+        cwd=str(cwd),
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    env = os.environ.copy()
+    for role in ("AUTHOR", "COMMITTER"):
+        env.setdefault(f"GIT_{role}_NAME", "briq-bot")
+        env.setdefault(f"GIT_{role}_EMAIL", "briq-bot@users.noreply.github.com")
+    snap = subprocess.run(
+        ["git", "commit-tree", tree, "-m", "chore: product-images snapshot"],
+        cwd=str(cwd),
+        check=True,
+        capture_output=True,
+        text=True,
+        env=env,
+    ).stdout.strip()
+    run(["git", "update-ref", f"refs/tags/{TAG}", snap], cwd=cwd)
+    return snap
+
+
 def push_tag_ref() -> bool:
     """Force-push the local product-images tag from the main repo."""
     pushed = run(
@@ -330,13 +360,7 @@ def push_only_ids_fast_import(
         )
         return 1
 
-    new_rev = subprocess.run(
-        ["git", "rev-parse", TAG],
-        cwd=str(ROOT),
-        check=True,
-        capture_output=True,
-        text=True,
-    ).stdout.strip()
+    new_rev = squash_tag(f"refs/tags/{TAG}")
     print(f"local tag {TAG} → {new_rev[:12]}", flush=True)
 
     if not push_tag_ref():
@@ -351,8 +375,7 @@ def push_only_ids_fast_import(
 
 def push_tag(tmp: Path) -> bool:
     """Force-push the product-images tag. True only when remote matches our HEAD."""
-    head = commit_head(tmp)
-    run(["git", "tag", "-f", TAG], cwd=tmp)
+    head = squash_tag(commit_head(tmp), cwd=tmp)
     pushed = run(
         [
             "git",
