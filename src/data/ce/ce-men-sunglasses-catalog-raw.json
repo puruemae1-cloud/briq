@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T17:32:22.739717+00:00",
+  "scrapedAt": "2026-09-29T10:35:42.296431+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/sunglasses/?nav=E006-VIEW-ALL",
   "family": "ce-men-sunglasses",
@@ -13,6 +13,50 @@
         "celine-accessories",
         "ce-men-sunglasses",
         "ce-men-sunglasses-all"
+      ]
+    },
+    {
+      "id": "ce-men-sunglasses-rectangular",
+      "label": "Rectangular",
+      "labelKo": "직사각형",
+      "url": "https://www.celine.com/en-gb/men/sunglasses/rectangular/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-sunglasses",
+        "ce-men-sunglasses-rectangular"
+      ]
+    },
+    {
+      "id": "ce-men-sunglasses-round",
+      "label": "Round",
+      "labelKo": "라운드",
+      "url": "https://www.celine.com/en-gb/men/sunglasses/round/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-sunglasses",
+        "ce-men-sunglasses-round"
+      ]
+    },
+    {
+      "id": "ce-men-sunglasses-aviator",
+      "label": "Aviator",
+      "labelKo": "에비에이터",
+      "url": "https://www.celine.com/en-gb/men/sunglasses/aviator/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-sunglasses",
+        "ce-men-sunglasses-aviator"
+      ]
+    },
+    {
+      "id": "ce-men-sunglasses-mask",
+      "label": "Mask",
+      "labelKo": "마스크",
+      "url": "https://www.celine.com/en-gb/men/sunglasses/mask/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-sunglasses",
+        "ce-men-sunglasses-mask"
       ]
     }
   ],
@@ -81,7 +125,13 @@
         "Black Frame 64 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S355CPLB.19LH",
@@ -147,7 +197,13 @@
         "Black Frame 64 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S355CPLB.07OC",
@@ -213,7 +269,13 @@
         "Black Frame 64 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S344CPMB.38NS",
@@ -281,7 +343,13 @@
         "Black Frame 63 sunglasses in Acetate and Metal"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S344CPMB.19SF",
@@ -347,7 +415,13 @@
         "Black Frame 63 sunglasses in Acetate and Metal"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S344CPMB.18RJ",
@@ -383,7 +457,9 @@
           "html": "Acetate with Metal<br>Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "Universal fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -411,7 +487,13 @@
         "Black Frame 63 sunglasses in Acetate and Metal"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "4S232CPLB.38NO",
@@ -480,7 +562,13 @@
         "Black Frame 41 Sunglasses in Acetate"
       ],
       "categoryLabel": "AGE OF INDIENESS COLLECTION",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S232CPLB.19TR",
@@ -550,7 +638,13 @@
         "Black Frame 41 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S232CPLB.19SH",
@@ -586,7 +680,9 @@
           "html": "Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "International fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -614,7 +710,13 @@
         "Black Frame 41 Sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "4S232CPLB.27TD",
@@ -684,7 +786,13 @@
         "Black Frame 41 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S335CPLB.38BL",
@@ -720,7 +828,10 @@
           "html": "\n                <div class=\"m-accordion__panel-wrapper f-body\">\n                    <div class=\"a-text f-body\">\n                        CELINE HAS SELECTED MATERIALS OF THE HIGHEST QUALITY TO CREATE YOUR SUNGLASSES. TO PRESERVE THEIR CONDITION, WE RECOMMEND OBSERVING THE FOLLOWING INSTRUCTIONS: <br><br>- USE A DAMP CLOTH AND MILD SOAP TO CLEAN YOUR SUNGLASSES, THEN DRY THEM WITH A SOFT, CLEAN CLOTH. <br>- DO NOT USE SOLVENTS (ALCOHOL, ACETONE, ETC.) OR AGGRESSIVE DETERGENTS THAT MAY ALTER THEIR FEATURES.<br>- STORE YOUR SUNGLASSES IN THEIR CASE, IN A DRY PLACE, AT A TEMPERATURE BETWEEN -10°C AND +35°C.\n                    </div>\n                </div>\n            "
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "Adjusted fit",
+        "International fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -739,7 +850,7 @@
         "https://image.celine.com/asset/802dbb20-84d3-43cb-a695-dfd69bd3e67c/4S335CPLB-38BL_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/d59020d2-b597-4d6f-847d-f9efc29d884a/4S335CPLB-38BL_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -748,7 +859,17 @@
         "Triomphe Men 01 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "International fit",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "4S335CPLB.08WA",
@@ -785,6 +906,7 @@
         }
       ],
       "sizes": [
+        "Adjusted fit",
         "International fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -814,7 +936,17 @@
         "Triomphe Men 01 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": false
+        },
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S356CPLB.38NO",
@@ -880,7 +1012,13 @@
         "Black Frame 65 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S356CPLB.19HD",
@@ -946,7 +1084,13 @@
         "Black Frame 65 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S356CPLB.30GY",
@@ -1012,7 +1156,13 @@
         "Black Frame 65 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S327CPLB.38NO",
@@ -1078,7 +1228,13 @@
         "Black Frame 61 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S327CPLB.15KT",
@@ -1144,7 +1300,13 @@
         "Black Frame 61 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S248CPLB.38NO",
@@ -1214,7 +1376,13 @@
         "Black Frame 45 Sunglasses in Acetate"
       ],
       "categoryLabel": "SMALL GIFTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S248CPLB.19CH",
@@ -1250,7 +1418,9 @@
           "html": "Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "International fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -1281,7 +1451,13 @@
         "Black Frame 45 Sunglasses in Acetate"
       ],
       "categoryLabel": "CELINE SURF",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": false
+        }
+      ]
     }
   ]
 }

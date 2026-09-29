@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:02:19.532497+00:00",
+  "scrapedAt": "2026-09-29T10:34:42.940825+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/jewellery/?nav=E005-VIEW-ALL",
   "family": "ce-men-jewellery",
@@ -13,6 +13,61 @@
         "celine-accessories",
         "ce-men-jewellery",
         "ce-men-jewellery-all"
+      ]
+    },
+    {
+      "id": "ce-men-earrings",
+      "label": "Earrings",
+      "labelKo": "이어링",
+      "url": "https://www.celine.com/en-gb/men/jewellery/earrings/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-jewellery",
+        "ce-men-earrings"
+      ]
+    },
+    {
+      "id": "ce-men-bracelets-rings",
+      "label": "Bracelets & Rings",
+      "labelKo": "브레이슬릿 & 링",
+      "url": "https://www.celine.com/en-gb/men/jewellery/bracelets-and-rings/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-jewellery",
+        "ce-men-bracelets-rings"
+      ]
+    },
+    {
+      "id": "ce-men-necklaces",
+      "label": "Necklaces",
+      "labelKo": "네크리스",
+      "url": "https://www.celine.com/en-gb/men/jewellery/necklaces/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-jewellery",
+        "ce-men-necklaces"
+      ]
+    },
+    {
+      "id": "ce-men-rings",
+      "label": "Rings",
+      "labelKo": "링",
+      "url": "https://www.celine.com/en-gb/men/jewellery/rings/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-jewellery",
+        "ce-men-rings"
+      ]
+    },
+    {
+      "id": "ce-men-charms",
+      "label": "Charms",
+      "labelKo": "참",
+      "url": "https://www.celine.com/en-gb/men/jewellery/charms/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-jewellery",
+        "ce-men-charms"
       ]
     }
   ],
@@ -226,10 +281,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -276,7 +330,21 @@
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B102Y6BRA.35OR",
@@ -313,10 +381,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -359,7 +426,21 @@
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B101K6BRA.36SI",
@@ -396,9 +477,8 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "M2",
+        "M3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -437,7 +517,17 @@
         "CHARMS HERITAGE CHUNKY BRACELET IN BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "M2",
+          "inStock": true
+        },
+        {
+          "size": "M3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B102X6BRA.35OR",
@@ -474,10 +564,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C2"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -526,7 +613,13 @@
         "CHARMS MODERN CHUNKY GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C2",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10GM4W95.36SI",
@@ -621,7 +714,11 @@
         }
       ],
       "sizes": [
-        "S"
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -644,7 +741,29 @@
         "Triomphe Small Gourmette Necklace in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "461OK6BRA.36SI",
@@ -681,9 +800,7 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -726,7 +843,13 @@
         "Triomphe Small Octagon Bracelet in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "460PX6BRA.36SI",
@@ -763,9 +886,9 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "M1",
+        "M2",
+        "M3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -808,7 +931,21 @@
         "Triomphe Small Gourmette Bracelet in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "M1",
+          "inStock": false
+        },
+        {
+          "size": "M2",
+          "inStock": true
+        },
+        {
+          "size": "M3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461OQ6BRA.36SI",
@@ -845,9 +982,8 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "M2",
+        "M3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -892,7 +1028,17 @@
         "Knot Cord Patterned Cuff in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "M2",
+          "inStock": true
+        },
+        {
+          "size": "M3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461OP6BRA.36SI",
@@ -929,9 +1075,8 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "M2",
+        "M3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -976,7 +1121,17 @@
         "Knot Cuff in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "M2",
+          "inStock": true
+        },
+        {
+          "size": "M3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B101Y6BRA.36SI",
@@ -1203,7 +1358,7 @@
         "https://image.celine.com/asset/0d5d49da-487c-42cb-8da3-ad5d3a2cf5f7/B101Z6BSL-01GS_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8b43c91d-85a0-44ff-a48e-616aad166ee0/B101Z6BSL-01GS_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1212,7 +1367,7 @@
         "CHARMS LONG NECKLACE IN BRASS WITH GOLD AND RHODIUM FINSIH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10G74W71.35OV",
@@ -1502,7 +1657,13 @@
         "Celine Monochroms Beads Necklace in Onyx and Brass with Rhodium Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461OL6BRA.36SI",
@@ -1562,7 +1723,13 @@
         "Triomphe Small Octagon Necklace in Brass with Rhodium Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B101W6BRA.36SI",
@@ -1599,27 +1766,8 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
-        "50",
-        "51",
-        "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -1758,7 +1906,17 @@
         "Triomphe Square Signet Ring IN Brass with Rhodium Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "58",
+          "inStock": true
+        },
+        {
+          "size": "60",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10G54W68.GLQ5",
@@ -1795,27 +1953,7 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
-        "50",
-        "51",
-        "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
-        "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -1952,7 +2090,13 @@
         "CELINE BOLT RINGS IN ENAMEL, STRASS AND BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "60",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B101X2P55.36SB",
@@ -1989,27 +2133,8 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
-        "50",
-        "51",
-        "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2150,7 +2275,17 @@
         "CELINE SULKY Signet Ring IN Enamel and Brass with Rhodium Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "58",
+          "inStock": true
+        },
+        {
+          "size": "60",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107N3F86.GKM5",
@@ -2187,27 +2322,11 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
         "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2346,7 +2465,29 @@
         "Triomphe Signet Ring in Varnish and Brass with Rhodium Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        }
+      ]
     }
   ]
 }

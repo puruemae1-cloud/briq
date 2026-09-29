@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:21:42.374196+00:00",
+  "scrapedAt": "2026-09-29T10:32:45.075435+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/shoes/?nav=E002-VIEW-ALL",
   "family": "ce-men-shoes",
@@ -108,18 +108,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -275,7 +270,41 @@
         "LOAFER AURA IN CROCODILE STAMPED LAMBSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365555278C.19VT",
@@ -313,18 +342,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -480,7 +504,41 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365557029C.02SV",
@@ -518,17 +576,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -685,7 +737,37 @@
         "AURA LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "365555278C.38NO",
@@ -723,18 +805,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -888,7 +965,41 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "367225479C.07OZ",
@@ -926,17 +1037,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -1091,7 +1196,37 @@
         "AURA LOAFER IN COLLEGE EMBROIDERED VELVET"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365555284C.33VI",
@@ -1128,19 +1263,11 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
-        "44",
-        "44.5",
-        "45"
+        "44"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -1294,7 +1421,29 @@
         "AURA LOAFER WITH TRIOMPHE IN Velvet"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365555278C.07QH",
@@ -1332,18 +1481,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -1499,7 +1643,41 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365555278C.01CK",
@@ -1537,18 +1715,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -1704,7 +1877,41 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368823602C.38NO",
@@ -1742,18 +1949,20 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -1907,7 +2116,69 @@
         "NEW CLASSIC LOAFER IN POLISHED BULLSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368823602C.19DK",
@@ -1945,18 +2216,20 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -2112,7 +2385,69 @@
         "NEW CLASSIC LOAFER IN POLISHED BULLSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364707029C.19DK",
@@ -2150,18 +2485,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -2317,7 +2647,41 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364707029C.09GG",
@@ -2355,18 +2719,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -2522,7 +2881,41 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364707029C.29CN",
@@ -2560,18 +2953,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2727,7 +3115,41 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364707029C.02BG",
@@ -2765,18 +3187,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -2932,7 +3349,41 @@
         "LOAFER EN SUEDE"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "364707029C.11PY",
@@ -2970,18 +3421,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3137,7 +3583,41 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "334773602C.38NS",
@@ -3175,18 +3655,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -3340,7 +3816,45 @@
         "LOAFER LUCO in POLISHED BULL"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "368663602C.38NO",
@@ -3378,18 +3892,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -3534,7 +4043,7 @@
         "https://image.celine.com/asset/18169665-3f85-40f2-b64d-5845ca5b0a17/368663602C-38NO_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/47c0cd34-59ec-41b0-9ff7-45c8be0d887b/368663602C-38NO_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3543,7 +4052,41 @@
         "FLAT DERBY IN POLISHED BULLSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368725488C.38NO",
@@ -3581,18 +4124,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -3746,7 +4284,41 @@
         "DERBY IN CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368725488C.27RU",
@@ -3784,18 +4356,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -3949,7 +4516,41 @@
         "DERBY IN CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368725465C.GDL8",
@@ -3987,18 +4588,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -4152,7 +4748,41 @@
         "DERBY IN CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365775295C.38NO",
@@ -4190,18 +4820,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -4357,7 +4982,41 @@
         "JAZZ SHOE IN CROCODILE STAMPED LAMBSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365775272C.38NO",
@@ -4395,17 +5054,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -4566,7 +5219,37 @@
         "JAZZ SHOE IN LAMBSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "365777029C.02SV",
@@ -4604,18 +5287,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -4771,7 +5449,41 @@
         "JAZZ SHOE IN SUEDE"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365775272C.OOIA",
@@ -4809,17 +5521,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -4980,7 +5686,37 @@
         "JAZZ SHOE IN LAMBSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368097029C.19DK",
@@ -5017,19 +5753,13 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -5185,7 +5915,37 @@
         "ADAM LACE-UP LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368097029C.GLY0",
@@ -5222,19 +5982,13 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -5390,7 +6144,37 @@
         "ADAM LACE-UP LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368097029C.02BG",
@@ -5427,19 +6211,13 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -5595,7 +6373,37 @@
         "ADAM LACE-UP LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365875523C.38NO",
@@ -5628,18 +6436,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
-        "44",
-        "44.5",
-        "45"
+        "44"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5797,7 +6598,33 @@
         "MILES LOAFER IN SUPPLE CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365605276C.38NO",
@@ -5834,19 +6661,11 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
-        "44",
-        "44.5",
-        "45"
+        "44"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6000,7 +6819,29 @@
         "DECK LOAFER IN SUPPLE CALFSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368255500C.01OP",
@@ -6038,18 +6879,22 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46",
+        "46,5",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -6205,7 +7050,77 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "46,5",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368255500C.09EC",
@@ -6243,18 +7158,22 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46",
+        "46,5",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -6410,7 +7329,77 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "46,5",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368255500C.38NO",
@@ -6448,18 +7437,22 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46",
+        "46,5",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6615,7 +7608,77 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "46,5",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368255500C.15KH",
@@ -6653,18 +7716,22 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
+        "43,5",
         "44",
-        "44.5",
-        "45"
+        "44,5",
+        "45",
+        "45,5",
+        "46",
+        "46,5",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -6820,7 +7887,77 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "43,5",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "44,5",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "45,5",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "46,5",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368255497C.11FF",
@@ -6857,18 +7994,11 @@
         }
       ],
       "sizes": [
-        "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -7023,7 +8153,33 @@
         "RUNNER SNEAKER IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "367355351C.GKQ0",
@@ -7061,18 +8217,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -7228,7 +8379,41 @@
         "SOFT SNEAKER IN STRETCH LAMBSKIN, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "367355351C.03AA",
@@ -7266,18 +8451,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -7433,7 +8613,41 @@
         "SOFT SNEAKER IN STRETCH LAMBSKIN, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "367355351C.GKQ1",
@@ -7471,18 +8685,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -7640,7 +8849,41 @@
         "SOFT SNEAKER IN STRETCH LAMBSKIN, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368405495C.09GW",
@@ -7678,18 +8921,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -7845,7 +9083,41 @@
         "THE FLAT SNEAKER IN SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368405495C.01EA",
@@ -7883,18 +9155,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -8050,7 +9317,41 @@
         "THE FLAT SNEAKER IN SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368405495C.GLY3",
@@ -8088,18 +9389,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -8255,7 +9551,41 @@
         "THE FLAT SNEAKER IN SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364577037C.01ED",
@@ -8293,17 +9623,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -8462,7 +9786,37 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364577032C.GKP3",
@@ -8500,17 +9854,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -8667,7 +10015,37 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364577032C.33VI",
@@ -8705,17 +10083,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -8872,7 +10244,37 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364577032C.38AO",
@@ -8910,17 +10312,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -9079,7 +10475,37 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "368265484C.01BC",
@@ -9117,18 +10543,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -9284,7 +10706,45 @@
         "ALAN SNEAKER IN CANVAS AND SUEDE CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.16KE",
@@ -9322,18 +10782,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -9493,7 +10948,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "364945257C.38AW",
@@ -9531,18 +11020,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -9698,7 +11182,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "364945257C.09GB",
@@ -9736,18 +11254,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -9903,7 +11416,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.01BC",
@@ -9941,18 +11488,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10108,7 +11650,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "364945257C.09GG",
@@ -10146,18 +11722,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10321,7 +11892,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.01PW",
@@ -10359,18 +11964,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10528,7 +12128,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.03AA",
@@ -10566,18 +12200,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10735,7 +12364,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.31OV",
@@ -10773,18 +12436,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10940,7 +12598,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364945257C.GGF1",
@@ -10978,18 +12670,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -11145,7 +12832,41 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "361564995C.27RW",
@@ -11183,18 +12904,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -11350,7 +13067,45 @@
         "SNEAKER TRAINER CT-09 IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "361555469C.01EB",
@@ -11388,18 +13143,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -11555,7 +13306,45 @@
         "CT-09 TRAINER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "361554995C.01DQ",
@@ -11593,18 +13382,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -11760,7 +13545,45 @@
         "CT-09 TRAINER SNEAKER in CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "361554995C.GLA0",
@@ -11798,18 +13621,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -11965,7 +13784,45 @@
         "CT-09 TRAINER SNEAKER IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "361564995C.01OP",
@@ -12003,18 +13860,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -12170,7 +14023,45 @@
         "SNEAKER TRAINER CT-09 IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "346483338C.01OP",
@@ -12208,18 +14099,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmenlong&sgImage=",
       "sizeGuide": {
@@ -12373,7 +14260,45 @@
         "CELINE TRAINER CT-04 LOW LACE-UP SNEAKER in CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "349223721C.09OP",
@@ -12411,18 +14336,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -12576,7 +14497,45 @@
         "SNEAKER TRAINER in SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "353143840C.01OK",
@@ -12614,18 +14573,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmenlong&sgImage=",
       "sizeGuide": {
@@ -12781,7 +14736,45 @@
         "CELINE TRAINER CT-07 LOW LACE-UP SNEAKER in CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "361564995C.38NO",
@@ -12819,18 +14812,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -12986,7 +14975,45 @@
         "SNEAKER TRAINER CT-09 IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364755306C.01DY",
@@ -13024,18 +15051,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -13191,7 +15213,41 @@
         "CELINE LOU LOW LACE-UP SNEAKER WITH TRIOMPHE IN LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "364755306C.09BG",
@@ -13229,18 +15285,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -13396,7 +15447,41 @@
         "CELINE LOU LOW LACE-UP SNEAKER WITH TRIOMPHE IN LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "361015019C.02GR",
@@ -13434,18 +15519,14 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -13601,7 +15682,45 @@
         "CELINE HUNTINGTON LOW LACE-UP SNEAKER in SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "47",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "361015089C.38NO",
@@ -13639,18 +15758,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -13806,7 +15920,41 @@
         "CELINE HUNTINGTON LOW LACE-UP SNEAKER IN TUMBLED LEATHER AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "368415265C.38NO",
@@ -13844,17 +15992,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -14009,7 +16151,37 @@
         "HECTOR ZIPPED BOOT IN Stretch Lambskin"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368445465C.GDL8",
@@ -14047,17 +16219,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -14212,7 +16378,37 @@
         "HECTOR ZIPPED BOOT IN CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "350933492C.38NO",
@@ -14250,18 +16446,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -14415,7 +16606,41 @@
         "WESTERN BOOT IN CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368877029C.02SV",
@@ -14453,17 +16678,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -14618,7 +16837,37 @@
         "WESTERN BOOT IN SUEDE"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "368444505C.38NO",
@@ -14656,17 +16905,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
@@ -14821,7 +17064,37 @@
         "PITCHED BOOT IN CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365495270C.38NO",
@@ -14859,17 +17132,11 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -15026,7 +17293,37 @@
         "FLOW ZIPPED BOOT IN Stretch Lambskin"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365495320C.02SV",
@@ -15064,18 +17361,13 @@
       ],
       "sizes": [
         "39",
-        "39.5",
         "40",
-        "40.5",
         "41",
-        "41.5",
         "42",
-        "42.5",
         "43",
-        "43.5",
         "44",
-        "44.5",
-        "45"
+        "45",
+        "46"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
       "sizeGuide": {
@@ -15231,7 +17523,41 @@
         "FLOW ZIPPED BOOT IN Stretch Suede Lambskin"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365547029C.19DK",
@@ -15269,17 +17595,15 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -15434,7 +17758,53 @@
         "SIROCCO CHUKKA BOOT IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "365547029C.02SV",
@@ -15472,17 +17842,15 @@
       ],
       "sizes": [
         "39",
-        "39.5",
+        "39,5",
         "40",
-        "40.5",
+        "40,5",
         "41",
-        "41.5",
+        "41,5",
         "42",
-        "42.5",
+        "42,5",
         "43",
-        "43.5",
         "44",
-        "44.5",
         "45"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=&sgImage=",
@@ -15637,7 +18005,53 @@
         "SIROCCO CHUKKA BOOT IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "39,5",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "40,5",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "41,5",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "42,5",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "45",
+          "inStock": false
+        }
+      ]
     }
   ]
 }

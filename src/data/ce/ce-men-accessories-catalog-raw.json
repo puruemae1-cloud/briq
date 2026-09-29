@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:03:10.974294+00:00",
+  "scrapedAt": "2026-09-29T10:33:32.247224+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/accessories/?nav=E007-VIEW-ALL",
   "family": "ce-men-accessories",
@@ -16,17 +16,6 @@
       ]
     },
     {
-      "id": "ce-men-scarves",
-      "label": "Silks & Scarves",
-      "labelKo": "실크/스카프",
-      "url": "https://www.celine.com/en-gb/men/accessories/silks-and-scarves/",
-      "collections": [
-        "celine-accessories",
-        "ce-men-accessories",
-        "ce-men-scarves"
-      ]
-    },
-    {
       "id": "ce-men-belts",
       "label": "Belts",
       "labelKo": "벨트",
@@ -38,14 +27,25 @@
       ]
     },
     {
-      "id": "ce-men-hats",
-      "label": "Hats",
-      "labelKo": "모자",
+      "id": "ce-men-silks-scarves",
+      "label": "Silks & Scarves",
+      "labelKo": "실크/스카프",
+      "url": "https://www.celine.com/en-gb/men/accessories/silks-and-scarves/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-accessories",
+        "ce-men-silks-scarves"
+      ]
+    },
+    {
+      "id": "ce-men-hats-soft-accessories",
+      "label": "Hats & Soft Accessories",
+      "labelKo": "모자 & 소프트 액세서리",
       "url": "https://www.celine.com/en-gb/men/accessories/hats-and-soft-accessories/",
       "collections": [
         "celine-accessories",
         "ce-men-accessories",
-        "ce-men-hats"
+        "ce-men-hats-soft-accessories"
       ]
     }
   ],
@@ -85,17 +85,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -170,7 +163,25 @@
         "Vivienne Belt 25 IN GRAINED NUBUCK CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10CQ3A01.18CV",
@@ -207,17 +218,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -292,7 +297,29 @@
         "VIVIENNE BELT 30 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10CQ3A01.38SI",
@@ -329,17 +356,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -414,7 +435,29 @@
         "VIVIENNE BELT 30 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": false
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10853ATS.19DE",
@@ -451,17 +494,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -536,7 +572,25 @@
         "Vivienne Belt 25 IN Vintage Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BLZ3APC.38TA.B100L6ATZ.35OR",
@@ -668,7 +722,7 @@
         "https://image.celine.com/asset/e5791ae2-4cdd-432b-b1d1-b4a142f4f152/B10A73APD-GHI4-B10A96ATZ-36SI_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/07ab9391-5d7c-4947-8905-b46e587bd189/B10A73APD-GHI4-B10A96ATZ-36SI_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -677,7 +731,7 @@
         "CELINE DISC BUCKLE 18MM IN METAL & Reversible Strap 18MM IN TAURILLON"
       ],
       "categoryLabel": "LA BOUCLE CELINE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10CX3A01.38SI",
@@ -714,17 +768,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -799,7 +846,25 @@
         "BC-28 BELT 30 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B109C3A01.38NO",
@@ -836,17 +901,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -921,7 +979,25 @@
         "BC-27 BELT 25 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BNG3ATS.38KI",
@@ -953,17 +1029,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -1038,7 +1107,25 @@
         "BC-21 BELT 35 IN Vintage Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BNG3ATV.19UI",
@@ -1070,17 +1157,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -1155,7 +1235,25 @@
         "BC-21 BELT 35 IN Suede Calfskin with waxed effect"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10IR3A01.38SI",
@@ -1192,17 +1290,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -1277,7 +1368,25 @@
         "BC-25 BELT 18 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45AGM3A01.38SI",
@@ -1314,17 +1423,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
         "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -1399,7 +1502,29 @@
         "BC-03 BELT 25 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "75",
+          "inStock": false
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BMH3A01.38SI",
@@ -1436,17 +1561,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -1521,7 +1639,25 @@
         "BC-17 BELT 25 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BBX3AJG.38SI",
@@ -1558,17 +1694,12 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
         "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-western&sgImage=",
       "sizeGuide": {
@@ -1645,7 +1776,33 @@
         "Western Belt 25 IN VINTAGE CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "75",
+          "inStock": true
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BBX3AUX.GFX6",
@@ -1682,17 +1839,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-western&sgImage=",
       "sizeGuide": {
@@ -1767,7 +1917,25 @@
         "Western Belt 25 IN Suede Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": false
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45AKA3A01.38SI",
@@ -1804,17 +1972,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -1889,7 +2050,25 @@
         "Triomphe Belt 25 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45AKA2ACO.38SI",
@@ -1926,17 +2105,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2011,7 +2184,29 @@
         "Triomphe Belt 25 IN Triomphe Canvas"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BIE3AUY.38SI",
@@ -2048,17 +2243,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2133,7 +2322,29 @@
         "Triomphe Belt 30 IN Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BIE3AUY.19ES",
@@ -2170,17 +2381,11 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2255,7 +2460,29 @@
         "Triomphe Belt 30 IN Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": false
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BIE3H70.38SI",
@@ -2292,17 +2519,9 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
-        "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2377,7 +2596,21 @@
         "Triomphe Belt 30 IN Crocodile Embossed Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BIE3AJG.38SI",
@@ -2414,7 +2647,6 @@
         }
       ],
       "sizes": [
-        "65",
         "70",
         "75",
         "80",
@@ -2499,7 +2731,49 @@
         "Triomphe Belt 30 IN VINTAGE CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "70",
+          "inStock": false
+        },
+        {
+          "size": "75",
+          "inStock": true
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        },
+        {
+          "size": "105",
+          "inStock": false
+        },
+        {
+          "size": "110",
+          "inStock": false
+        },
+        {
+          "size": "115",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BIE3ATS.04SI",
@@ -2531,17 +2805,10 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2616,7 +2883,25 @@
         "Triomphe Belt 30 IN Vintage Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": false
+        },
+        {
+          "size": "95",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BIE3AUW.02SW",
@@ -2653,17 +2938,9 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
-        "80",
         "85",
         "90",
-        "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "95"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts-triomphe&sgImage=",
       "sizeGuide": {
@@ -2738,7 +3015,21 @@
         "Triomphe Belt 30 IN Suede Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BLZ3APE.38NO.45BND6ATZ.36SI",
@@ -3051,17 +3342,12 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
         "100",
-        "105",
-        "110",
-        "115"
+        "105"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3148,7 +3434,33 @@
         "Reversible Strap 30 IN Smooth and Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": true
+        },
+        {
+          "size": "105",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10A33R00.GKX5",
@@ -3185,17 +3497,12 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
         "100",
-        "105",
-        "110",
-        "115"
+        "105"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3282,7 +3589,33 @@
         "Reversible Strap 30 IN Smooth and Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": false
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": false
+        },
+        {
+          "size": "105",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10A33APC.38TA",
@@ -3319,17 +3652,12 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
         "100",
-        "105",
-        "110",
-        "115"
+        "105"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3410,7 +3738,33 @@
         "Reversible Strap 30 IN TAURILLON AND NATURAL CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        },
+        {
+          "size": "105",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10A33R00.GKX4",
@@ -3447,17 +3801,12 @@
         }
       ],
       "sizes": [
-        "65",
-        "70",
-        "75",
         "80",
         "85",
         "90",
         "95",
         "100",
-        "105",
-        "110",
-        "115"
+        "105"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3538,7 +3887,33 @@
         "Reversible Strap 30 IN Smooth and Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": false
+        },
+        {
+          "size": "105",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "45BLZ3APC.38TA",
@@ -3666,7 +4041,53 @@
         "Reversible Strap 25 IN TAURILLON AND NATURAL CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "70",
+          "inStock": true
+        },
+        {
+          "size": "75",
+          "inStock": true
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        },
+        {
+          "size": "105",
+          "inStock": false
+        },
+        {
+          "size": "110",
+          "inStock": false
+        },
+        {
+          "size": "115",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10A73APC.38TA",
@@ -3710,10 +4131,7 @@
         "85",
         "90",
         "95",
-        "100",
-        "105",
-        "110",
-        "115"
+        "100"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=cel-sizeguide-belts&sgImage=",
       "sizeGuide": {
@@ -3790,7 +4208,41 @@
         "Reversible Strap 18 IN TAURILLON AND NATURAL CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "65",
+          "inStock": true
+        },
+        {
+          "size": "70",
+          "inStock": true
+        },
+        {
+          "size": "75",
+          "inStock": true
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": true
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": true
+        },
+        {
+          "size": "100",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "45BLZ3APE.38NO",
@@ -3835,9 +4287,7 @@
         "90",
         "95",
         "100",
-        "105",
-        "110",
-        "115"
+        "105"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3918,7 +4368,45 @@
         "Reversible Strap 25 IN Taurillon Leather and Triomphe Canvas"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "70",
+          "inStock": true
+        },
+        {
+          "size": "75",
+          "inStock": false
+        },
+        {
+          "size": "80",
+          "inStock": true
+        },
+        {
+          "size": "85",
+          "inStock": false
+        },
+        {
+          "size": "90",
+          "inStock": true
+        },
+        {
+          "size": "95",
+          "inStock": false
+        },
+        {
+          "size": "100",
+          "inStock": false
+        },
+        {
+          "size": "105",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0NM5652.GNF8",
@@ -4040,7 +4528,13 @@
         "PATCHED C CALÈCHE FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902Q32.GGO0",
@@ -4106,7 +4600,13 @@
         "PATCHED C CALÈCHE FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902S39.GDU3",
@@ -4164,7 +4664,13 @@
         "NIGHT&DAY FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902S41.GDS1",
@@ -4222,7 +4728,13 @@
         "NIGHT&DAY FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW903J70.38MU",
@@ -4258,7 +4770,9 @@
           "html": "RIBBONS SILK TWILL<br>SILK AND COTTON ACCESSORIES"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -4288,7 +4802,13 @@
         "ROSEMARY FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2AW903M02.11YB",
@@ -4324,7 +4844,9 @@
           "html": "PRINTED SILK TWILL<br>SILK AND COTTON ACCESSORIES"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -4348,7 +4870,13 @@
         "VENT FOU FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2AW902R51.GGT4",
@@ -4410,7 +4938,13 @@
         "6 JUILLET FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902R51.GGT7",
@@ -4472,7 +5006,13 @@
         "6 JUILLET FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902Q71.14ML",
@@ -4530,7 +5070,13 @@
         "BELTS AND TIES FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902R86.GHO6",
@@ -4592,7 +5138,13 @@
         "RIBBONS IN THE SKY FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW902R92.01VK",
@@ -4654,7 +5206,13 @@
         "LITTLE C CALÈCHE FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AW905N55.38WN",
@@ -4707,7 +5265,7 @@
         "https://image.celine.com/asset/be21e4c1-bea9-43fd-a33b-4cfed2a5b2dc/2AW905N55-38WN_3_WIN26_W_V1.jpg?V2",
         "https://image.celine.com/asset/788a44cd-a9a1-4b47-b904-1696b99c61fa/2AW905N55-38WN_4_WIN26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4716,7 +5274,13 @@
         "PRIZE FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0HP2R30.01WB",
@@ -4752,7 +5316,9 @@
           "html": "“CADRE CHAIN” FOULARD, 90<br>SILK AND COTTON ACCESSORIES"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -4776,7 +5342,13 @@
         "PIANO FRINGE FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2AWB60ZV1.24BY",
@@ -4836,7 +5408,13 @@
         "bandana in heritage silk twill"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0NP6700.38NO",
@@ -4896,7 +5474,13 @@
         "scarf IN DOUBLE FACE CASHMERE"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.38NO",
@@ -4932,7 +5516,9 @@
           "html": "CASHMERE WOOL<br>SCARVES &amp; STOLES"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -4943,7 +5529,7 @@
         "https://image.celine.com/asset/0c7b23eb-6d86-40ea-b972-1da59e0809a0/AA0PG5I40-38NO_1_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9446d75b-0e3c-49bc-bebf-d0ca2e84bf83/AA0PG5I40-38NO_2_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -4952,7 +5538,13 @@
         "SCARF IN CASHMERE WOOL"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.FZL8",
@@ -5008,7 +5600,13 @@
         "scarf IN cashmere wool"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.03NE",
@@ -5066,7 +5664,13 @@
         "scarf IN cashmere wool"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.02CM",
@@ -5124,7 +5728,13 @@
         "scarf IN cashmere wool"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.27LK",
@@ -5182,7 +5792,13 @@
         "scarf IN cashmere wool"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0PG5I40.09GM",
@@ -5240,7 +5856,13 @@
         "scarf IN cashmere wool"
       ],
       "categoryLabel": "SILKS AND SCARVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.27LK",
@@ -5300,7 +5922,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.FZL8",
@@ -5360,7 +5988,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.07MR",
@@ -5420,7 +6054,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.38NO",
@@ -5480,7 +6120,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.09GM",
@@ -5540,7 +6186,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.02CM",
@@ -5600,7 +6252,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.03NE",
@@ -5660,7 +6318,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.11JA",
@@ -5720,7 +6384,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0FP2K77.01BC",
@@ -5780,7 +6450,13 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0J54Y68.38NO",
@@ -5817,12 +6493,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5902,7 +6576,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0J54Y68.GMT5",
@@ -5939,12 +6631,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6024,7 +6714,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0HW2U74.29BR",
@@ -6056,7 +6764,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6115,7 +6822,25 @@
         "VIVIENNE CAP IN cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0J54Y68.01BC",
@@ -6152,12 +6877,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6237,7 +6960,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0HW2U69.27RW",
@@ -6269,7 +7010,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6328,7 +7068,25 @@
         "VIVIENNE CAP IN corduroy"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0HW2U69.GHG4",
@@ -6360,7 +7118,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6419,7 +7176,25 @@
         "VIVIENNE CAP IN corduroy"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA06FD038.38NO",
@@ -6456,7 +7231,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6515,7 +7289,25 @@
         "triomphe baseball cap IN COTTON DRILL"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA06F234X.GJN4",
@@ -6552,7 +7344,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6611,7 +7402,25 @@
         "triomphe baseball cap IN WASHED COTTON GABARDINE"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0AG4U25.38NO",
@@ -6648,7 +7457,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6707,7 +7515,25 @@
         "vivienne cap IN light gabardine"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0AG4U25.GBN2",
@@ -6744,7 +7570,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6803,7 +7628,25 @@
         "vivienne cap IN light gabardine"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0IV2U74.38NO",
@@ -6840,7 +7683,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -6899,7 +7741,25 @@
         "richelieu cap IN cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0N64Y68.33BD",
@@ -6936,12 +7796,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7021,7 +7879,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0N64Y68.07EE",
@@ -7058,12 +7934,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7143,7 +8017,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0IV2U74.06TU",
@@ -7180,7 +8072,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -7239,7 +8130,25 @@
         "richelieu cap IN cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0IN2M89.25BB",
@@ -7276,7 +8185,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -7335,7 +8243,25 @@
         "RICHELIEU CAP IN cotton"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0H12M86.07BA",
@@ -7372,7 +8298,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -7431,7 +8356,25 @@
         "racine cap IN cotton jacquard"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0N44Y68.GMT4",
@@ -7468,12 +8411,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7553,7 +8494,25 @@
         "richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0O84Y68.38NO",
@@ -7590,12 +8549,10 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7675,7 +8632,25 @@
         "Harry’s Bar richelieu cap IN light cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2AUY8969P.38NO",
@@ -7712,7 +8687,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -7771,7 +8745,25 @@
         "Initial baseball cap in cotton"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "AA0HW2U74.37BW",
@@ -7803,7 +8795,6 @@
         }
       ],
       "sizes": [
-        "XS",
         "S",
         "M",
         "L",
@@ -7862,7 +8853,25 @@
         "VIVIENNE CAP IN cotton twill"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "AA0H92I93.GFW0",
@@ -7899,12 +8908,7 @@
         }
       ],
       "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7980,7 +8984,13 @@
         "celine beanie IN wool cashmere"
       ],
       "categoryLabel": "HATS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2AE2I423P.10AN",
@@ -8034,7 +9044,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     }
   ]
 }

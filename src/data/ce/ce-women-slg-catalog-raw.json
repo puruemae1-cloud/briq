@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:21:34.190284+00:00",
+  "scrapedAt": "2026-09-29T10:48:32.418329+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/small-leather-goods/?nav=A004-VIEW-ALL",
   "family": "ce-women-slg",
@@ -16,14 +16,14 @@
       ]
     },
     {
-      "id": "ce-women-card-holders",
-      "label": "Card Holders",
-      "labelKo": "카드홀더",
+      "id": "ce-women-coin-card-holders",
+      "label": "Coin & Card Holders",
+      "labelKo": "코인 & 카드 홀더",
       "url": "https://www.celine.com/en-gb/women/small-leather-goods/coin-and-card-holders/",
       "collections": [
         "celine-accessories",
         "ce-women-slg",
-        "ce-women-card-holders"
+        "ce-women-coin-card-holders"
       ]
     },
     {
@@ -38,25 +38,25 @@
       ]
     },
     {
-      "id": "ce-women-woc",
+      "id": "ce-women-wallets-on-chain",
       "label": "Wallets on Chain",
       "labelKo": "체인 지갑",
       "url": "https://www.celine.com/en-gb/women/small-leather-goods/wallets-on-chain/",
       "collections": [
         "celine-accessories",
         "ce-women-slg",
-        "ce-women-woc"
+        "ce-women-wallets-on-chain"
       ]
     },
     {
-      "id": "ce-women-pouches",
-      "label": "Pouches",
-      "labelKo": "파우치",
+      "id": "ce-women-pouches-tech-accessories",
+      "label": "Pouches & Tech",
+      "labelKo": "파우치 & 테크",
       "url": "https://www.celine.com/en-gb/women/small-leather-goods/pouches-and-tech-accessories/",
       "collections": [
         "celine-accessories",
         "ce-women-slg",
-        "ce-women-pouches"
+        "ce-women-pouches-tech-accessories"
       ]
     }
   ],
@@ -1775,7 +1775,7 @@
         "https://image.celine.com/asset/21ea26d2-c731-4e83-bcba-28ae79b8b559/10D783DPV-18BZ_4_FW24_P2_W.tif?V2",
         "https://image.celine.com/asset/c6bc7fab-edf2-4954-a7ab-823dd0adf40a/10D783DPV-18BZ_5_FW24_P2_W.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1784,7 +1784,7 @@
         "Small Flap Wallet TRIOMPHE in Shiny calfskin"
       ],
       "categoryLabel": "WALLETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "10D783DPV.03SA",
@@ -5248,7 +5248,7 @@
         "https://image.celine.com/asset/c68ed69d-2b25-468d-97e4-ca912865ae83/10P625Q18-GMU4_3_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0e695b25-494f-4455-9c96-48d447b3bdc0/10P625Q18-GMU4_4_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5257,7 +5257,7 @@
         "ENVELOPE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "POUCHES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "M10072T45.GGX9",
@@ -6782,10 +6782,10 @@
         "/products/ce-pdp/10p625q18-gmu2/5.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L100D2N92.11CU",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:23:56.294811+00:00",
+  "scrapedAt": "2026-09-29T10:29:59.757275+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/ready-to-wear/?nav=E001-VIEW-ALL",
   "family": "ce-men-rtw",
@@ -266,7 +266,7 @@
         "https://image.celine.com/asset/9dada18a-feae-410b-bd7f-6557e77512d8/RC0C60T01-06LO_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/033d746f-8368-4cf9-a64f-a91a2f893141/RC0C60T01-06LO_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -275,7 +275,45 @@
         "jed shirt IN COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LM0T01.27VI",
@@ -419,7 +457,45 @@
         "LOOSE SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0C60T01.01BC",
@@ -561,7 +637,45 @@
         "jed shirt IN COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": true
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LM0T01.11EU",
@@ -703,7 +817,45 @@
         "LOOSE SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LK0T01.38NO",
@@ -740,7 +892,6 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
@@ -845,7 +996,41 @@
         "CLASSIC SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BW0Y81.38NO",
@@ -882,15 +1067,12 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -989,7 +1171,33 @@
         "shirt IN WOOL"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BD216T.GBQ4",
@@ -1109,7 +1317,33 @@
         "shirt IN CORDUROY"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0CA204I.38NO",
@@ -1153,8 +1387,7 @@
         "40",
         "41",
         "42",
-        "43",
-        "44"
+        "43"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -1253,7 +1486,41 @@
         "SCOUT SHIRT IN LIGHT COTTON GABARDINE"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0D6324M.01RI",
@@ -1371,7 +1638,33 @@
         "overshirt IN COTTON DENIM"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LY4J65.07DG",
@@ -1515,7 +1808,45 @@
         "OVERSIZED SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": true
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LM1389.01CX",
@@ -1659,7 +1990,45 @@
         "LOOSE SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0D82N91.07EU",
@@ -1703,8 +2072,7 @@
         "40",
         "41",
         "42",
-        "43",
-        "44"
+        "43"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=cel-sizeguide-A14&sgImage=",
       "sizeGuide": {
@@ -1801,7 +2169,41 @@
         "CLASSIC SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": true
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RC0MZ2N91.07EU",
@@ -1945,7 +2347,45 @@
         "loose shirt IN cotton poplin"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0AZ0T01.01BC",
@@ -2089,7 +2529,45 @@
         "shirt IN COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RC0BZ2N91.07EU",
@@ -2233,7 +2711,45 @@
         "CLASSIC SHIRT IN cotton poplin"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0LK0712.07EH",
@@ -2270,7 +2786,6 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
@@ -2377,7 +2892,41 @@
         "CLASSIC SHIRT"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BX1389.CBA0",
@@ -2414,15 +2963,12 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2521,7 +3067,33 @@
         "classic shirt IN striped cotton poplin"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0D93I03.GDL1",
@@ -2665,7 +3237,45 @@
         "CLASSIC SHIRT IN STRIPED COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0ND852C.11EU",
@@ -2702,7 +3312,6 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
@@ -2809,7 +3418,41 @@
         "HARRY'S BAR SHIRT IN TOILE VISCOSE"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0DE1312.18CS",
@@ -2846,7 +3489,6 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
@@ -2951,7 +3593,41 @@
         "LIBERTY SHIRT IN COTTON SATIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0MX219I.02MK",
@@ -2988,7 +3664,6 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
@@ -3093,7 +3768,41 @@
         "overshirt IN COTTON AND LINEN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BW0Y81.02KK",
@@ -3130,15 +3839,12 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3237,7 +3943,33 @@
         "shirt IN WOOL"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0DT0T01.01BC",
@@ -3280,9 +4012,7 @@
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3383,7 +4113,37 @@
         "shirt IN COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BE2N67.GGG3",
@@ -3503,7 +4263,33 @@
         "overshirt IN cotton denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0BH1546.GDO1",
@@ -3540,15 +4326,12 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3645,7 +4428,33 @@
         "shirt IN TARTAN COTTON"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0AZ1393.GDL5",
@@ -3682,15 +4491,12 @@
         }
       ],
       "sizes": [
-        "36",
         "37",
         "38",
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3789,7 +4595,33 @@
         "shirt IN tartan cotton cloth"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0DS4J54.FZT2",
@@ -3832,9 +4664,7 @@
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=cel-sizeguide-A14&sgImage=",
       "sizeGuide": {
@@ -3931,7 +4761,37 @@
         "scout shirt IN cotton taffeta"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0DS4J54.GJV6",
@@ -3974,9 +4834,7 @@
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=cel-sizeguide-A14&sgImage=",
       "sizeGuide": {
@@ -4073,7 +4931,37 @@
         "scout shirt IN cotton taffeta"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0N52N67.GDP1",
@@ -4193,7 +5081,33 @@
         "shirt IN COTTON DENIM"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0DS3K46.07NJ",
@@ -4237,8 +5151,7 @@
         "40",
         "41",
         "42",
-        "43",
-        "44"
+        "43"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -4335,7 +5248,41 @@
         "scout shirt IN SILK TWILL"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "43",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0D62N68.GGG4",
@@ -4455,7 +5402,33 @@
         "overshirt IN cotton denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RC0N42N68.GGG2",
@@ -4575,7 +5548,33 @@
         "shirt IN cotton denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0D7208I.07UO",
@@ -4695,7 +5694,33 @@
         "short-sleeved shirt IN cotton denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RC0LZ2N68.GGG4",
@@ -4815,7 +5840,33 @@
         "scout shirt IN cotton denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV1942N67.GGG3",
@@ -4933,7 +5984,33 @@
         "shirt IN COTTON DENIM"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0CA204I.02BG",
@@ -4977,8 +6054,7 @@
         "40",
         "41",
         "42",
-        "43",
-        "44"
+        "43"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5085,7 +6161,41 @@
         "SCOUT SHIRT IN LIGHT COTTON GABARDINE"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0CO3318.07MR",
@@ -5128,9 +6238,7 @@
         "39",
         "40",
         "41",
-        "42",
-        "43",
-        "44"
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A14&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5229,7 +6337,37 @@
         "SCOUT SHIRT IN COTTON AND LINEN CLOTH"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "39",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0890T01.07NI",
@@ -5367,7 +6505,45 @@
         "bowling shirt IN COTTON POPLIN"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "37",
+          "inStock": true
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "39",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "41",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
+        },
+        {
+          "size": "43",
+          "inStock": false
+        },
+        {
+          "size": "44",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RC0B6851C.38NO",
@@ -5493,7 +6669,33 @@
         "polo shirt IN viscose satin"
       ],
       "categoryLabel": "SHIRTS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0IJ1012.38NO",
@@ -5613,7 +6815,33 @@
         "COTTON JERSEY TURTLENECK"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0WG1242.38AW",
@@ -5733,7 +6961,33 @@
         "HARRY’S BAR t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LE1242.38AW",
@@ -5857,7 +7111,33 @@
         "long sleeved t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0HU1242.38AW",
@@ -5975,7 +7255,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0IJ1012.01OP",
@@ -6093,7 +7399,33 @@
         "COTTON JERSEY TURTLENECK"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HX1242.GFP9",
@@ -6213,7 +7545,33 @@
         "LONG-SLEEVED T-SHIRT IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0UN1242.01YE",
@@ -6333,7 +7691,33 @@
         "T-SHIRT"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0M73O24.GGN4",
@@ -6451,7 +7835,33 @@
         "regular t-shirt IN RIBBED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HU1242.02BL",
@@ -6569,7 +7979,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HU1242.02KF",
@@ -6687,7 +8123,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LA1242.38AW",
@@ -6724,6 +8186,7 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
@@ -6805,7 +8268,37 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LF2L55.GHV2",
@@ -6925,7 +8418,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0A90F43.38AW",
@@ -7045,7 +8564,33 @@
         "long sleeved t-shirt IN RIBBED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LB1242.38AW",
@@ -7165,7 +8710,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0I31242.GDX7",
@@ -7285,7 +8856,33 @@
         "T-SHIRT IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HV1242.GDU0",
@@ -7403,7 +9000,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LF2L55.27EB",
@@ -7523,7 +9146,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0UN1242.GML3",
@@ -7643,7 +9292,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HU1242.FZU1",
@@ -7761,7 +9436,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0VK1407.30RV",
@@ -7870,7 +9571,7 @@
         "https://image.celine.com/asset/5e56e977-4c4e-4bff-805b-0ae63a3da34f/RX0VK1407-30RV_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/c9aff9d2-3f96-4f04-891d-deb3818d109b/RX0VK1407-30RV_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -7879,7 +9580,33 @@
         "HARRY’S BAR PARIS t-shirt IN ribbed cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0M83Q53.27NW",
@@ -7999,7 +9726,33 @@
         "regular t-shirt IN STRIPED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0EV2L55.GJL8",
@@ -8125,7 +9878,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0WI1242.01OP",
@@ -8245,7 +10024,33 @@
         "HARRY’S BAR t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HU1242.GFP9",
@@ -8375,7 +10180,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0HW1243.GDJ2",
@@ -8495,7 +10326,33 @@
         "loose T-SHIRT IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0A90F43.01OB",
@@ -8615,7 +10472,33 @@
         "long sleeved t-shirt IN RIBBED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0LA1242.01OK",
@@ -8652,6 +10535,7 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
@@ -8733,7 +10617,37 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0LB1242.01OK",
@@ -8853,7 +10767,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0UQ4Z02.GMJ7",
@@ -8973,7 +10913,33 @@
         "LONG-SLEEVED T-SHIRT IN STRIPED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HU1242.GLX6",
@@ -9091,7 +11057,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0T7367Y.21BO",
@@ -9211,7 +11203,33 @@
         "short-sleeved polo sweater IN fine cotton"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LF2L55.GKS4",
@@ -9330,7 +11348,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2ADDT367Y.06BB",
@@ -9450,7 +11494,33 @@
         "POLO IN fine cotton"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0UJ3B21.GLI0",
@@ -9491,8 +11561,7 @@
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=cel-sizeguide-A11A12&sgImage=",
       "sizeGuide": {
@@ -9570,7 +11639,29 @@
         "polo IN striped cotton"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0WP1242.38AW",
@@ -9688,7 +11779,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0UN1242.38NY",
@@ -9808,7 +11925,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2X681671Q.38AW",
@@ -9850,6 +11993,7 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
@@ -9933,7 +12077,37 @@
         "CELINE LOOSE T-SHIRT IN COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0LF2L55.FYZ2",
@@ -10053,7 +12227,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0M12K06.GDV4",
@@ -10181,7 +12381,33 @@
         "polo shirt IN STRIPED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0UP4Z02.GGN5",
@@ -10301,7 +12527,33 @@
         "t-shirt IN STRIPED COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0WP1242.GOB2",
@@ -10419,7 +12671,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0XN3B21.GLI1",
@@ -10460,8 +12738,7 @@
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=cel-sizeguide-A11A12&sgImage=",
       "sizeGuide": {
@@ -10539,7 +12816,29 @@
         "POLO SWEATER IN striped cotton"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2X04I671Q.01OB",
@@ -10664,7 +12963,33 @@
         "triomphe loose t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2X681671Q.01CC",
@@ -10706,6 +13031,7 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
@@ -10789,7 +13115,37 @@
         "CELINE LOOSE T-SHIRT IN COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0DT0F17.01OB",
@@ -10921,7 +13277,33 @@
         "double layered t-shirt IN FINE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0HV1242.GJL3",
@@ -11039,7 +13421,33 @@
         "t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0LF2L55.01DP",
@@ -11159,7 +13567,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RX0EV2L55.GDJ2",
@@ -11279,7 +13713,33 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RX0HW1243.GHC1",
@@ -11399,7 +13859,33 @@
         "loose T-SHIRT IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0Y53B59.07MR",
@@ -11519,7 +14005,33 @@
         "POLO SWEATER IN FINE SILK AND COTTON"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2X75H0ZWR.38AW",
@@ -11639,7 +14151,33 @@
         "classic polo shirt in cotton piqué"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0Y53B59.38NO",
@@ -11759,7 +14297,33 @@
         "POLO SWEATER IN FINE SILK AND COTTON"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2X04I671Q.38AW",
@@ -11884,7 +14448,33 @@
         "triomphe loose t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY11A1233.GMS0",
@@ -11998,7 +14588,33 @@
         "COLLEGE HOODIE"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY10U1233.01XR",
@@ -12112,7 +14728,33 @@
         "SWEATSHIRT IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY1191233.07GK",
@@ -12226,7 +14868,33 @@
         "SWEATSHIRT IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY1191233.01RB",
@@ -12340,7 +15008,33 @@
         "SWEATSHIRT IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY12I1233.GKE7",
@@ -12454,7 +15148,33 @@
         "sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY0S5345F.38AW",
@@ -12572,7 +15292,33 @@
         "zipped hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0T9510Z.07RV",
@@ -12692,7 +15438,33 @@
         "shorts IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0U1510Z.38AW",
@@ -12812,7 +15584,33 @@
         "hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV1S6225S.01OK",
@@ -12932,7 +15730,33 @@
         "TRACKSUIT JACKET IN double-face jersey"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0U1510Z.GFP9",
@@ -13052,7 +15876,33 @@
         "hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY12I1233.01KR",
@@ -13166,7 +16016,33 @@
         "sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0T9510Z.GKT0",
@@ -13286,7 +16162,33 @@
         "shorts IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY12I1233.05BW",
@@ -13400,7 +16302,33 @@
         "sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0TZ1233.GKJ7",
@@ -13518,7 +16446,33 @@
         "sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0S1510Z.07RV",
@@ -13638,7 +16592,33 @@
         "SWEATSHIRT IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0OM1233.GJK9",
@@ -13749,7 +16729,7 @@
         "https://image.celine.com/asset/bdddd784-f9b6-43eb-b083-f4d4d16d609d/RY0OM1233-GJK9_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/2d238521-b4aa-4d88-ae3b-d1ae1ffc2649/RY0OM1233-GJK9_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -13758,7 +16738,33 @@
         "oversized crewneck sweater IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0U1510Z.GKJ5",
@@ -13878,7 +16884,33 @@
         "hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY12I1233.GNC2",
@@ -13992,7 +17024,33 @@
         "sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0U71233.GGK6",
@@ -14110,7 +17168,33 @@
         "SWEATSHIRT IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY12L510Z.GNC6",
@@ -14224,7 +17308,33 @@
         "HARRY’S BAR PARIS sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2Y11D1233.10PB",
@@ -14261,10 +17371,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14277,7 +17389,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0U01233.10PB",
@@ -14318,7 +17456,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14331,7 +17470,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0TY1233.GKJ3",
@@ -14387,7 +17552,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY0S2670Q.GJL2",
@@ -14428,7 +17619,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14441,7 +17633,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV14X748Q.38AW",
@@ -14481,7 +17699,9 @@
         "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14495,7 +17715,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0S2670Q.GDU0",
@@ -14534,8 +17780,10 @@
       "sizes": [
         "XS",
         "S",
+        "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14548,7 +17796,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2Y321670Q.38AW",
@@ -14585,11 +17859,13 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14603,7 +17879,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2Y490121O.38NO",
@@ -14659,7 +17965,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY0U21233.38NY",
@@ -14697,8 +18029,11 @@
       ],
       "sizes": [
         "XS",
+        "S",
+        "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14711,7 +18046,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2Y497670Q.38AW",
@@ -14767,7 +18128,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": true
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV1S5748Q.38NG",
@@ -14804,10 +18195,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14821,7 +18214,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0IS670Q.GGU2",
@@ -14862,7 +18281,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14875,7 +18295,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY05K3G77.18CC",
@@ -14916,7 +18362,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14927,7 +18374,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY13J4J34.02BA",
@@ -14964,10 +18437,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -14978,7 +18453,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY05K3G77.38NO",
@@ -15031,7 +18532,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY0X14G47.09GM",
@@ -15086,7 +18613,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY10T4S88.01BC",
@@ -15127,7 +18680,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15138,7 +18692,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0FA0ZPV.38NO",
@@ -15179,7 +18759,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15193,7 +18774,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0SV1261.01W1",
@@ -15230,6 +18837,9 @@
         }
       ],
       "sizes": [
+        "XS",
+        "S",
+        "M",
         "L",
         "XL",
         "XXL"
@@ -15248,7 +18858,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "2AH80322U.38NO",
@@ -15304,7 +18940,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY05K3G77.20BG",
@@ -15341,9 +19003,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15357,7 +19022,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0SV1261.14YD",
@@ -15394,8 +19085,12 @@
         }
       ],
       "sizes": [
+        "XS",
+        "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15408,7 +19103,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0X14G47.27ED",
@@ -15464,7 +19185,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY05K3G77.27PY",
@@ -15501,9 +19248,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15514,7 +19264,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0YA4S87.GMY2",
@@ -15555,7 +19331,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15568,7 +19345,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0JF0ZTQ.08MG",
@@ -15609,7 +19412,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15623,7 +19427,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY10S4S85.07MR",
@@ -15664,7 +19494,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15675,7 +19506,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0YA4S87.FYM0",
@@ -15716,7 +19573,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -15729,7 +19587,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY0QT0Y09.07NG",
@@ -15770,8 +19654,7 @@
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A11&sgContent=&sgImage=",
       "sizeGuide": {
@@ -15849,7 +19732,29 @@
         "polo sweater IN striped wool"
       ],
       "categoryLabel": "KNITWEAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RY05K3G77.07MR",
@@ -15910,7 +19815,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RY0T43G77.07MR",
@@ -16030,7 +19961,33 @@
         "cardigan IN fine wool"
       ],
       "categoryLabel": "KNITWEAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV1T2617R.GFV7",
@@ -16070,7 +20027,9 @@
         "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16087,7 +20046,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV14T932F.GDN6",
@@ -16124,6 +20109,7 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
         "M",
         "L",
@@ -16147,7 +20133,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV14T930F.GDO5",
@@ -16184,6 +20196,11 @@
         }
       ],
       "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
         "XXL"
       ],
       "sizeGuideUrl": "",
@@ -16203,7 +20220,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV18I4H43.07MR",
@@ -16241,9 +20284,12 @@
       ],
       "sizes": [
         "44",
+        "46",
         "48",
         "50",
-        "52"
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16262,7 +20308,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV18M1474.38NO",
@@ -16304,7 +20380,8 @@
         "48",
         "50",
         "52",
-        "54"
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16321,7 +20398,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV1402T28.38NO",
@@ -16358,11 +20465,13 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
         "48",
         "50",
         "52",
-        "54"
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16389,7 +20498,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV15I282D.38NO",
@@ -16426,6 +20565,7 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
         "48",
         "50",
@@ -16447,7 +20587,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV14D599E.38NO",
@@ -16485,9 +20651,12 @@
       ],
       "sizes": [
         "44",
+        "46",
         "48",
         "50",
-        "52"
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16504,7 +20673,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV19F3A87.38NO",
@@ -16540,7 +20739,13 @@
           "html": "JACKET"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "44",
+        "46",
+        "48",
+        "50",
+        "52"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -16556,7 +20761,29 @@
       "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV14I1437.38NO",
@@ -16593,6 +20820,7 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
         "48",
         "50",
@@ -16613,7 +20841,29 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RV14H1437.38NO",
@@ -16654,8 +20904,7 @@
         "46",
         "48",
         "50",
-        "52",
-        "54"
+        "52"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A12&sgContent=&sgImage=",
       "sizeGuide": {
@@ -16731,7 +20980,29 @@
         "overshirt IN lambskin"
       ],
       "categoryLabel": "JACKETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV1WW978W.38NO",
@@ -16768,7 +21039,13 @@
         }
       ],
       "sizes": [
-        "48"
+        "44",
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16785,7 +21062,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV1790E17.38NO",
@@ -16822,8 +21129,11 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
-        "48"
+        "48",
+        "50",
+        "52"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16840,7 +21150,29 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RM0FP3A87.18TB",
@@ -16876,7 +21208,13 @@
           "html": "PLONGE LAMBSKIN<br>COAT"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "44",
+        "46",
+        "48",
+        "50",
+        "52"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -16892,7 +21230,29 @@
       "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV14I1438.18TB",
@@ -16929,8 +21289,11 @@
         }
       ],
       "sizes": [
+        "44",
+        "46",
         "48",
-        "50"
+        "50",
+        "52"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -16947,7 +21310,29 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV17O841Y.19BS",
@@ -16984,10 +21369,13 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
         "48",
         "50",
-        "52"
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17004,7 +21392,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RV14D599E.19CO",
@@ -17043,7 +21461,11 @@
       "sizes": [
         "44",
         "46",
-        "48"
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17062,7 +21484,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2G378280D.38NO",
@@ -17100,8 +21552,14 @@
       ],
       "sizes": [
         "26",
+        "27",
+        "28",
+        "29",
         "30",
-        "32"
+        "31",
+        "32",
+        "33",
+        "34"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17118,7 +21576,45 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "26",
+          "inStock": true
+        },
+        {
+          "size": "27",
+          "inStock": false
+        },
+        {
+          "size": "28",
+          "inStock": false
+        },
+        {
+          "size": "29",
+          "inStock": false
+        },
+        {
+          "size": "30",
+          "inStock": true
+        },
+        {
+          "size": "31",
+          "inStock": false
+        },
+        {
+          "size": "32",
+          "inStock": true
+        },
+        {
+          "size": "33",
+          "inStock": false
+        },
+        {
+          "size": "34",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2E158599E.38NO",
@@ -17158,7 +21654,10 @@
         "44",
         "46",
         "48",
-        "50"
+        "50",
+        "52",
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17175,7 +21674,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2P096043R.38NO",
@@ -17222,7 +21751,8 @@
         "48",
         "50",
         "52",
-        "54"
+        "54",
+        "56"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=A12&sgContent=cel-sizeguide-A11A12&sgImage=",
       "sizeGuide": {
@@ -17298,7 +21828,37 @@
         "PANTALON CLASSIQUE TUX IN grain de poudre wool"
       ],
       "categoryLabel": "TAILORING",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": true
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RP0RW4G72.18NG",
@@ -17335,10 +21895,12 @@
         }
       ],
       "sizes": [
+        "44",
         "46",
         "48",
         "50",
-        "52"
+        "52",
+        "54"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17355,7 +21917,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "44",
+          "inStock": false
+        },
+        {
+          "size": "46",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0IL670Q.38AB",
@@ -17392,9 +21980,12 @@
         }
       ],
       "sizes": [
+        "XS",
         "S",
+        "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17413,7 +22004,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0CV670Q.38AW",
@@ -17453,7 +22070,9 @@
         "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17472,7 +22091,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0IS670Q.GGU3",
@@ -17512,7 +22157,9 @@
         "XS",
         "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17525,7 +22172,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0IS670Q.GGU1",
@@ -17563,8 +22236,11 @@
       ],
       "sizes": [
         "XS",
+        "S",
         "M",
-        "L"
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17577,7 +22253,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0CV670Q.10PB",
@@ -17615,7 +22317,11 @@
       ],
       "sizes": [
         "XS",
-        "L"
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17634,7 +22340,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": false
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RP0IL670Q.10PB",
@@ -17671,7 +22403,12 @@
         }
       ],
       "sizes": [
-        "XL"
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -17690,7 +22427,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": false
+        },
+        {
+          "size": "L",
+          "inStock": false
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2Z412121O.38AW",
@@ -17750,7 +22513,37 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": true
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "RP0FA748Q.38AW",
@@ -17870,7 +22663,33 @@
         "TRACKSUIT PANTS IN velvet jersey"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RZ0183M34.38NO",
@@ -17990,7 +22809,33 @@
         "swimsuit shorts IN nylon"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": false
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RZ0183M34.07MR",
@@ -18110,7 +22955,33 @@
         "swim shorts IN nylon"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": false
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "2Z063670Q.38AW",
@@ -18152,6 +23023,7 @@
         }
       ],
       "sizes": [
+        "XXS",
         "XS",
         "S",
         "M",
@@ -18233,7 +23105,37 @@
         "celine shorts in cotton fleece"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "XXS",
+          "inStock": false
+        },
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        },
+        {
+          "size": "XXL",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "RZ01O3K54.GKL5",
@@ -18287,10 +23189,10 @@
         "https://image.celine.com/asset/d95b0c97-b061-406b-9fe5-2920cfd52e67/RZ01O3K54-GKL5_2_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/d06f220c-e596-4fc7-b58a-b1a5b77d60b8/RZ01O3K54-GKL5_3_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     }
   ]
 }

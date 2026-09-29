@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:22:31.949935+00:00",
+  "scrapedAt": "2026-09-29T10:46:22.568692+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/jewellery/?nav=A005-VIEW-ALL",
   "family": "ce-women-jewellery",
@@ -57,6 +57,17 @@
         "celine-accessories",
         "ce-women-jewellery",
         "ce-women-bracelets"
+      ]
+    },
+    {
+      "id": "ce-women-charms",
+      "label": "Celine Charms",
+      "labelKo": "참",
+      "url": "https://www.celine.com/en-gb/women/jewellery/celine-charms/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-jewellery",
+        "ce-women-charms"
       ]
     },
     {
@@ -244,7 +255,7 @@
         "https://image.celine.com/asset/a61e953a-e57e-46b1-bd3e-b76a2fe0b600/B10EL4V17-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0dd2f544-10c6-4e7f-a2d6-fc4ad91022bf/B10EL4V17-35OR_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -253,7 +264,7 @@
         "TRIOMPHE MEDAL EARRINGS IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B109M3P08.38DK",
@@ -710,7 +721,7 @@
         "https://image.celine.com/asset/aae16711-1dcd-4a77-8867-48fedf20a41c/B109Z3Q19-38DK_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/affc5652-403f-4e8f-9d5e-2b002dee38b1/B109Z3Q19-38DK_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -719,7 +730,7 @@
         "Celine Défilé Bold Hoops in Glass Beads and Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10236BRA.35OR",
@@ -1230,7 +1241,7 @@
         "https://image.celine.com/asset/b179c9c5-dd80-4c78-beaa-7e0cb9004c6b/B10E94V03-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d4444b20-6227-4487-af60-1682d21ead0f/B10E94V03-35OR_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1239,7 +1250,7 @@
         "CHUNKY TRIOMPHE EARRINGS IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10EB4V05.35OR",
@@ -2086,10 +2097,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2132,7 +2142,21 @@
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B102Y6BRA.36SI",
@@ -2169,10 +2193,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2219,7 +2242,21 @@
         "CHARMS MODERN THIN GOURMETTE IN BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B101K6BRA.36SI",
@@ -2256,9 +2293,8 @@
         }
       ],
       "sizes": [
-        "S (M1)",
-        "M (M2)",
-        "L (M3)"
+        "M2",
+        "M3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X09&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2297,7 +2333,17 @@
         "CHARMS HERITAGE CHUNKY BRACELET IN BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "M2",
+          "inStock": true
+        },
+        {
+          "size": "M3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B102X6BRA.35OR",
@@ -2334,10 +2380,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C2"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2386,7 +2429,13 @@
         "CHARMS MODERN CHUNKY GOURMETTE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C2",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107C3F68.01IG",
@@ -2423,10 +2472,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2475,7 +2523,21 @@
         "CELINE RIBBON SMALL CUFF IN BRASS WITH GOLD FINISH AND ENAMEL"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107E3F70.35OR",
@@ -2512,10 +2574,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2564,7 +2625,21 @@
         "Celine Ribbon Small Cuff in Brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107C3F68.27RG",
@@ -2601,10 +2676,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2653,7 +2727,21 @@
         "Celine Ribbon Small Cuff in Enamel and Brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107C3F68.GJZ1",
@@ -2690,10 +2778,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2742,7 +2829,21 @@
         "Celine Ribbon Small Cuff in Enamel and Brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107B3F67.GJZ0",
@@ -2779,10 +2880,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C2"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2831,7 +2929,13 @@
         "Celine Ribbon Knotted Cuff in Enamel and Brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C2",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461NJ6BRE.GAY7",
@@ -2868,10 +2972,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -2918,7 +3019,13 @@
         "Triomphe Articulated Bracelet in Enamel and Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107A3F66.38DK",
@@ -2955,10 +3062,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C2"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3007,7 +3111,13 @@
         "Celine Ribbon Large Cuff in Enamel and Brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C2",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46Z676BRA.35OR",
@@ -3044,10 +3154,13 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3096,7 +3209,37 @@
         "Triomphe Articulated Bracelet in Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": false
+        },
+        {
+          "size": "C2",
+          "inStock": false
+        },
+        {
+          "size": "C3",
+          "inStock": false
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        },
+        {
+          "size": "C6",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46Z676BRA.36SI",
@@ -3133,10 +3276,13 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3185,7 +3331,37 @@
         "Triomphe Articulated Bracelet in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": false
+        },
+        {
+          "size": "C2",
+          "inStock": false
+        },
+        {
+          "size": "C3",
+          "inStock": false
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        },
+        {
+          "size": "C6",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461CZ6BZI.35OR",
@@ -3222,10 +3398,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3272,7 +3445,13 @@
         "Triomphe Articulated Sparkle Bracelet in Strass and Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "460PQ6BRA.35OR",
@@ -3309,10 +3488,11 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3361,7 +3541,29 @@
         "Triomphe Asymmetric Cuff in Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "460PQ6BRA.36SI",
@@ -3398,10 +3600,11 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3450,7 +3653,29 @@
         "Triomphe Asymmetric Cuff in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": false
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "460MT6BRA.35OR",
@@ -3487,10 +3712,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3537,7 +3759,13 @@
         "Triomphe Mini Triomphe Bracelet in Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461DO6BRA.36SI",
@@ -3574,10 +3802,7 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3624,7 +3849,13 @@
         "Triomphe Mini Triomphe Bracelet in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461FV6SBR.36SI",
@@ -3661,10 +3892,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3713,7 +3943,21 @@
         "Knot Double Cuff in Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": false
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461FV6BRA.35OR",
@@ -3750,10 +3994,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3802,7 +4045,21 @@
         "Knot Double Cuff in Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46P466BRA.35OR",
@@ -3839,10 +4096,12 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3891,7 +4150,33 @@
         "Knot extra-thin bracelet in brass with gold finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        },
+        {
+          "size": "C6",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46P466BRA.36SI",
@@ -3928,10 +4213,12 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -3980,7 +4267,33 @@
         "Knot extra-thin bracelet in brass with rhodium finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": true
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        },
+        {
+          "size": "C6",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "461PM6BCZ.36SI",
@@ -4017,10 +4330,9 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -4069,7 +4381,21 @@
         "Knot Sparkle Cuff in Strass and Brass with Rhodium Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": true
+        },
+        {
+          "size": "C2",
+          "inStock": true
+        },
+        {
+          "size": "C3",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B101Y6BRA.35OR",
@@ -4238,7 +4564,7 @@
         "https://image.celine.com/asset/0d5d49da-487c-42cb-8da3-ad5d3a2cf5f7/B101Z6BSL-01GS_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8b43c91d-85a0-44ff-a48e-616aad166ee0/B101Z6BSL-01GS_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4247,7 +4573,7 @@
         "CHARMS LONG NECKLACE IN BRASS WITH GOLD AND RHODIUM FINSIH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10FS4V94.35OR",
@@ -4814,7 +5140,7 @@
         "https://image.celine.com/asset/0fa5b475-1210-448e-97af-1d070d709e4b/B10EK4V15-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/9726eb85-13fb-4171-8b51-7aada930be00/B10EK4V15-35OR_2_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4823,7 +5149,7 @@
         "TRIOMPHE MEDAL NECKLACE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B104U6PRB.01GI",
@@ -4999,7 +5325,13 @@
         "Les Perles Celine Necklace in Resin Pearl and Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461DN6BRA.36SI",
@@ -5349,7 +5681,13 @@
         "Triomphe Twinkle Necklace in Strass and Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461HH6BRA.35OR",
@@ -5409,7 +5747,13 @@
         "Triomphe Lock Necklace in Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10MT5O07.01GI",
@@ -5446,27 +5790,9 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
-        "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "54"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5601,7 +5927,21 @@
         "LES PERLES OVAL RING IN RESIN PEARL AND BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107N3F86.33GE",
@@ -5638,27 +5978,11 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
         "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5793,7 +6117,29 @@
         "TRIOMPHE SIGNET RING IN VARNISH AND BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B104W6BRA.35OR",
@@ -5830,27 +6176,9 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
-        "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "54"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -5991,7 +6319,21 @@
         "Triomphe Square Signet Ring in Brass with Gold Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B107N3F86.01IG",
@@ -6028,27 +6370,11 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
         "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6187,7 +6513,29 @@
         "Triomphe Signet Ring in Varnish and Brass with Gold Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B107N3F86.GJY8",
@@ -6224,27 +6572,11 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
         "54",
-        "55",
-        "56",
-        "57",
         "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "60"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -6374,7 +6706,7 @@
         "https://image.celine.com/asset/0bea85e2-edea-4a41-ba0f-b494ad7081d0/B107N3F86-GJY8_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/703e7c1b-c913-4e81-94fc-e11af6a7ce2a/B107N3F86-GJY8_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6383,7 +6715,29 @@
         "Triomphe Signet Ring in Varnish and Brass with Gold Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B105C6BRA.35OR",
@@ -6420,7 +6774,8 @@
         }
       ],
       "sizes": [
-        "52"
+        "52",
+        "54"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -6439,7 +6794,17 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B107N3F86.GGX5",
@@ -6476,8 +6841,11 @@
         }
       ],
       "sizes": [
+        "50",
         "52",
-        "54"
+        "54",
+        "58",
+        "60"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -6496,7 +6864,29 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10EE4V08.27RG",
@@ -6554,7 +6944,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10EE4V08.01IG",
@@ -6612,7 +7016,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10EH4V11.35OR",
@@ -6669,7 +7087,17 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B105C6BRA.36SI",
@@ -6706,7 +7134,8 @@
         }
       ],
       "sizes": [
-        "52"
+        "52",
+        "54"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -6725,7 +7154,17 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "B10EF4V09.38DK",
@@ -6782,7 +7221,17 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "B10EG4V10.35OR",
@@ -6840,7 +7289,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "460PP6BRA.35OR",
@@ -6898,7 +7361,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461NL6BRE.GAY7",
@@ -6956,7 +7433,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "460PP6BRA.36SI",
@@ -6993,7 +7484,9 @@
         }
       ],
       "sizes": [
-        "50"
+        "50",
+        "52",
+        "54"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7012,7 +7505,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "461NT6BCZ.35OR",
@@ -7070,7 +7577,21 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46N636BRA.35OR",
@@ -7109,7 +7630,12 @@
       "sizes": [
         "50",
         "52",
-        "54"
+        "54",
+        "56",
+        "58",
+        "60",
+        "62",
+        "64"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7126,7 +7652,41 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46N636BRA.36SI",
@@ -7165,7 +7725,12 @@
       "sizes": [
         "50",
         "52",
-        "54"
+        "54",
+        "56",
+        "58",
+        "60",
+        "62",
+        "64"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7182,7 +7747,41 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "461FW6BRA.35OR",
@@ -7219,27 +7818,9 @@
         }
       ],
       "sizes": [
-        "47",
-        "48",
-        "49",
         "50",
-        "51",
         "52",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
-        "58",
-        "59",
-        "60",
-        "61",
-        "62",
-        "63",
-        "64",
-        "65",
-        "66",
-        "67"
+        "54"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X05&sgContent=&sgImage=",
       "sizeGuide": {
@@ -7376,7 +7957,21 @@
         "Knot Double Ring in Brass with Gold Finish"
       ],
       "categoryLabel": "RINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46P146GYD.37YW",
@@ -7569,7 +8164,12 @@
         }
       ],
       "sizes": [
-        "14,5"
+        "14,5",
+        "15,5",
+        "16,5",
+        "17,5",
+        "18,5",
+        "19,5"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7588,7 +8188,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "14,5",
+          "inStock": true
+        },
+        {
+          "size": "15,5",
+          "inStock": false
+        },
+        {
+          "size": "16,5",
+          "inStock": false
+        },
+        {
+          "size": "17,5",
+          "inStock": false
+        },
+        {
+          "size": "18,5",
+          "inStock": false
+        },
+        {
+          "size": "19,5",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q856GLY.37AU",
@@ -7624,7 +8250,14 @@
           "html": "Bracelets"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "14,5",
+        "15,5",
+        "16,5",
+        "17,5",
+        "18,5",
+        "19,5"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -7642,7 +8275,33 @@
       "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "14,5",
+          "inStock": false
+        },
+        {
+          "size": "15,5",
+          "inStock": false
+        },
+        {
+          "size": "16,5",
+          "inStock": false
+        },
+        {
+          "size": "17,5",
+          "inStock": false
+        },
+        {
+          "size": "18,5",
+          "inStock": false
+        },
+        {
+          "size": "19,5",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q856GWD.37WW",
@@ -7680,7 +8339,11 @@
       ],
       "sizes": [
         "14,5",
-        "15,5"
+        "15,5",
+        "16,5",
+        "17,5",
+        "18,5",
+        "19,5"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7699,7 +8362,33 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "14,5",
+          "inStock": true
+        },
+        {
+          "size": "15,5",
+          "inStock": true
+        },
+        {
+          "size": "16,5",
+          "inStock": false
+        },
+        {
+          "size": "17,5",
+          "inStock": false
+        },
+        {
+          "size": "18,5",
+          "inStock": false
+        },
+        {
+          "size": "19,5",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q836GYD.37YW",
@@ -7841,14 +8530,27 @@
       ],
       "sizes": [
         "47",
+        "48",
         "49",
+        "50",
         "51",
         "52",
         "53",
         "54",
         "55",
         "56",
-        "57"
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7865,7 +8567,97 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": true
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "51",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": true
+        },
+        {
+          "size": "57",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q826GLY.37AU",
@@ -7902,8 +8694,28 @@
         }
       ],
       "sizes": [
+        "47",
         "48",
-        "49"
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7920,7 +8732,97 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": true
+        },
+        {
+          "size": "49",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "51",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "53",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q826GWD.37WW",
@@ -7957,6 +8859,9 @@
         }
       ],
       "sizes": [
+        "47",
+        "48",
+        "49",
         "50",
         "51",
         "52",
@@ -7964,7 +8869,18 @@
         "54",
         "55",
         "56",
-        "57"
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -7981,7 +8897,97 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "51",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": true
+        },
+        {
+          "size": "56",
+          "inStock": true
+        },
+        {
+          "size": "57",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q786GYD.37YW",
@@ -8122,7 +9128,28 @@
         }
       ],
       "sizes": [
-        "57"
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -8141,7 +9168,97 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "51",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "53",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": true
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q476GWD.37WW",
@@ -8230,7 +9347,27 @@
         }
       ],
       "sizes": [
-        "50"
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -8249,7 +9386,93 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "51",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": false
+        },
+        {
+          "size": "53",
+          "inStock": false
+        },
+        {
+          "size": "54",
+          "inStock": false
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q526GWD.37WW",
@@ -8337,7 +9560,9 @@
           "html": "White Gold &amp; White Diamond<br>Bracelets"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "ONE SIZE"
+      ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
       "images": [
@@ -8353,7 +9578,13 @@
       "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Q756GYD.37YW",
@@ -8494,9 +9725,24 @@
         }
       ],
       "sizes": [
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
         "52",
         "53",
-        "54"
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -8515,7 +9761,81 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": false
+        },
+        {
+          "size": "50",
+          "inStock": false
+        },
+        {
+          "size": "51",
+          "inStock": false
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Z216VOK.35OB",
@@ -8570,10 +9890,10 @@
         "https://image.celine.com/asset/3f15c10f-023c-4faf-98e2-79e3ffa7e758/46Z216VOK-35OB_5_SP22.jpg?V2",
         "https://image.celine.com/asset/49c80551-8e29-4afb-89d7-102b1792a29e/46Z216VOK-35OB_6_SP22.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Z216SOK.36SB",
@@ -8739,7 +10059,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "S",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461GC6GWD.37WW",
@@ -8776,12 +10102,7 @@
         }
       ],
       "sizes": [
-        "14.5",
-        "15.5",
-        "16.5",
-        "17.5",
-        "18.5",
-        "19.5"
+        "16,5"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X08&sgContent=&sgImage=",
       "sizeGuide": {
@@ -8838,7 +10159,13 @@
         "Tennis Bracelet in White Gold and Diamonds"
       ],
       "categoryLabel": "FINE JEWELLERY",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "16,5",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46S986GWD.37WW",
@@ -8998,7 +10325,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46Z596GYD.37YW",
@@ -9139,12 +10472,17 @@
         }
       ],
       "sizes": [
+        "47",
+        "48",
         "49",
         "50",
         "51",
         "52",
         "53",
-        "54"
+        "54",
+        "55",
+        "56",
+        "57"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -9161,7 +10499,53 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "51",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46X756GLY.37AU",
@@ -9269,7 +10653,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46Z586GLY.37AU",
@@ -9410,12 +10800,17 @@
         }
       ],
       "sizes": [
+        "47",
+        "48",
         "49",
         "50",
         "51",
         "52",
         "53",
-        "54"
+        "54",
+        "55",
+        "56",
+        "57"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -9432,7 +10827,53 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "51",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46Y176GLY.37AU",
@@ -9818,7 +11259,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "460LR6GYD.37YW",
@@ -9907,12 +11354,27 @@
         }
       ],
       "sizes": [
+        "47",
+        "48",
         "49",
         "50",
         "51",
         "52",
         "53",
-        "54"
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
       ],
       "sizeGuideUrl": "",
       "sizeGuide": {},
@@ -9929,7 +11391,93 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "47",
+          "inStock": false
+        },
+        {
+          "size": "48",
+          "inStock": false
+        },
+        {
+          "size": "49",
+          "inStock": true
+        },
+        {
+          "size": "50",
+          "inStock": true
+        },
+        {
+          "size": "51",
+          "inStock": true
+        },
+        {
+          "size": "52",
+          "inStock": true
+        },
+        {
+          "size": "53",
+          "inStock": true
+        },
+        {
+          "size": "54",
+          "inStock": true
+        },
+        {
+          "size": "55",
+          "inStock": false
+        },
+        {
+          "size": "56",
+          "inStock": false
+        },
+        {
+          "size": "57",
+          "inStock": false
+        },
+        {
+          "size": "58",
+          "inStock": false
+        },
+        {
+          "size": "59",
+          "inStock": false
+        },
+        {
+          "size": "60",
+          "inStock": false
+        },
+        {
+          "size": "61",
+          "inStock": false
+        },
+        {
+          "size": "62",
+          "inStock": false
+        },
+        {
+          "size": "63",
+          "inStock": false
+        },
+        {
+          "size": "64",
+          "inStock": false
+        },
+        {
+          "size": "65",
+          "inStock": false
+        },
+        {
+          "size": "66",
+          "inStock": false
+        },
+        {
+          "size": "67",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "46P016GWD.37WW",
@@ -10018,10 +11566,13 @@
         }
       ],
       "sizes": [
-        "S (C1)",
-        "M (C2)",
-        "L (C3)",
-        "XL (C4)"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "ONE SIZE"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -10068,7 +11619,37 @@
         "Celine Sentimental Brillant Bracelet in Yellow Gold and Diamond"
       ],
       "categoryLabel": "FINE JEWELLERY",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "C1",
+          "inStock": false
+        },
+        {
+          "size": "C2",
+          "inStock": false
+        },
+        {
+          "size": "C3",
+          "inStock": false
+        },
+        {
+          "size": "C4",
+          "inStock": false
+        },
+        {
+          "size": "C5",
+          "inStock": false
+        },
+        {
+          "size": "C6",
+          "inStock": false
+        },
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "46W136STL.36SI",
@@ -10298,7 +11879,13 @@
       "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "ONE SIZE",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "461DM6PRB.01GI",

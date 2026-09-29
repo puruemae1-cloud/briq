@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:02:10.326317+00:00",
+  "scrapedAt": "2026-09-29T10:47:33.548611+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/sunglasses/?nav=A006-VIEW-ALL",
   "family": "ce-women-sunglasses",
@@ -13,6 +13,61 @@
         "celine-accessories",
         "ce-women-sunglasses",
         "ce-women-sunglasses-all"
+      ]
+    },
+    {
+      "id": "ce-women-sunglasses-rectangular",
+      "label": "Rectangular",
+      "labelKo": "직사각형",
+      "url": "https://www.celine.com/en-gb/women/sunglasses/rectangular/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-sunglasses",
+        "ce-women-sunglasses-rectangular"
+      ]
+    },
+    {
+      "id": "ce-women-sunglasses-round",
+      "label": "Round",
+      "labelKo": "라운드",
+      "url": "https://www.celine.com/en-gb/women/sunglasses/round/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-sunglasses",
+        "ce-women-sunglasses-round"
+      ]
+    },
+    {
+      "id": "ce-women-sunglasses-aviator",
+      "label": "Aviator",
+      "labelKo": "에비에이터",
+      "url": "https://www.celine.com/en-gb/women/sunglasses/aviator/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-sunglasses",
+        "ce-women-sunglasses-aviator"
+      ]
+    },
+    {
+      "id": "ce-women-sunglasses-cat-eye",
+      "label": "Cat Eye",
+      "labelKo": "캣아이",
+      "url": "https://www.celine.com/en-gb/women/sunglasses/cat-eye/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-sunglasses",
+        "ce-women-sunglasses-cat-eye"
+      ]
+    },
+    {
+      "id": "ce-women-sunglasses-mask",
+      "label": "Mask",
+      "labelKo": "마스크",
+      "url": "https://www.celine.com/en-gb/women/sunglasses/mask/",
+      "collections": [
+        "celine-accessories",
+        "ce-women-sunglasses",
+        "ce-women-sunglasses-mask"
       ]
     }
   ],
@@ -85,7 +140,13 @@
         "Françoise Lunettes"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "EP001CPLB.19KE",
@@ -151,7 +212,13 @@
         "Françoise Lunettes"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S365CPLB.19DT",
@@ -216,7 +283,13 @@
         "Riff sunglasses"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S365CPLB.38NO",
@@ -282,7 +355,13 @@
         "Riff sunglasses"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S354CMLB.35LS",
@@ -346,7 +425,13 @@
         "Wire 01 sunglasses in Metal"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S354CMLB.35RP",
@@ -410,7 +495,13 @@
         "Wire 01 sunglasses in Metal"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S235CMLB.35RB",
@@ -476,7 +567,13 @@
         "Triomphe Metal 01 Sunglasses in Metal"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S235CMLB.36SM",
@@ -544,7 +641,13 @@
         "Triomphe Metal 01 Sunglasses in Metal"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S235CMLB.35SG",
@@ -612,7 +715,13 @@
         "Triomphe Metal 01 sunglasses in Metal"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.38NO",
@@ -678,7 +787,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.19BV",
@@ -744,7 +859,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.19HO",
@@ -810,7 +931,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S353CPLB.18TA",
@@ -877,7 +1004,17 @@
         "Triomphe Mini 02 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S353CPLB.01VA",
@@ -914,6 +1051,7 @@
         }
       ],
       "sizes": [
+        "Adjusted fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -943,7 +1081,17 @@
         "Triomphe Mini 02 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S353CPLB.38NO",
@@ -1008,7 +1156,17 @@
         "Triomphe Mini 02 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S353CPLB.00EB",
@@ -1045,6 +1203,7 @@
         }
       ],
       "sizes": [
+        "Adjusted fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -1074,7 +1233,17 @@
         "Triomphe Mini 02 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.00EB",
@@ -1140,7 +1309,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.02CM",
@@ -1176,7 +1351,9 @@
           "html": "Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "Universal fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -1204,7 +1381,13 @@
         "Triomphe 01 Sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "4S194CPLB.24HP",
@@ -1270,7 +1453,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.33PH",
@@ -1336,7 +1525,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.01BC",
@@ -1402,7 +1597,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S194CPLB.38MN",
@@ -1468,7 +1669,13 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S347CPLB.38NO",
@@ -1538,7 +1745,13 @@
         "Journey sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S347CPLB.19SP",
@@ -1608,7 +1821,13 @@
         "Journey sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S347CPLB.01AV",
@@ -1674,7 +1893,13 @@
         "Journey sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S348CMLB.35LU",
@@ -1740,7 +1965,13 @@
         "Roundup sunglasses in blue"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S348CMLB.35BU",
@@ -1806,7 +2037,13 @@
         "Optical Roundup Glasses"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S348CMLB.35LO",
@@ -1870,7 +2107,13 @@
         "Roundup sunglasses"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S348CMLB.35LR",
@@ -1942,7 +2185,13 @@
         "Roundup sunglasses"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S346CMLB.35LS",
@@ -2011,7 +2260,13 @@
         "Roundup sunglasses"
       ],
       "categoryLabel": "GIFTS FOR HIM",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S338CPLB.19TR",
@@ -2078,7 +2333,17 @@
         "Triomphe Mini 01 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S338CPLB.38NO",
@@ -2145,7 +2410,17 @@
         "Triomphe Mini 01 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S338CPLB.18TA",
@@ -2182,6 +2457,7 @@
         }
       ],
       "sizes": [
+        "Adjusted fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -2211,7 +2487,17 @@
         "Triomphe Mini 01 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S338CPLB.20ML",
@@ -2247,7 +2533,10 @@
           "html": "Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "Adjusted fit",
+        "Universal fit"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -2266,7 +2555,7 @@
         "https://image.celine.com/asset/12f2987b-fac9-49c8-b88c-5192a0b39a76/4S338CPLB-20ML_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/96a01cf0-1612-4d88-a29c-c2492f282eda/4S338CPLB-20ML_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2275,7 +2564,17 @@
         "Triomphe Mini 01 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S332CPLB.38NO",
@@ -2341,7 +2640,13 @@
         "Round S332 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "I",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S332CPLB.19HD",
@@ -2411,7 +2716,13 @@
         "Round S332 sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "I",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S345CPLB.19HD",
@@ -2447,7 +2758,9 @@
           "html": "Sunglasses-plastic"
         }
       ],
-      "sizes": [],
+      "sizes": [
+        "I"
+      ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
       "sizeGuide": {
         "headers": [],
@@ -2475,7 +2788,13 @@
         "Disc sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc_oos",
+      "sizeStock": [
+        {
+          "size": "I",
+          "inStock": false
+        }
+      ]
     },
     {
       "id": "4S346CMLB.36BU",
@@ -2540,7 +2859,13 @@
         "Optical Roundup Glasses"
       ],
       "categoryLabel": "MEN",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S352CPLB.38NO",
@@ -2608,7 +2933,13 @@
         "Triomphe 19 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S352CPLB.19TR",
@@ -2678,7 +3009,13 @@
         "Triomphe 19 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S352CPLB.28BP",
@@ -2744,7 +3081,13 @@
         "Triomphe 19 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S359CPLB.38NO",
@@ -2810,7 +3153,13 @@
         "Cat Eye S359 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S359CPLB.19TR",
@@ -2876,7 +3225,13 @@
         "Cat Eye S359 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S359CPLB.20TA",
@@ -2942,7 +3297,13 @@
         "Cat Eye S359 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S253CPLB.38NO",
@@ -3009,7 +3370,17 @@
         "Triomphe 09 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S253CPLB.19HD",
@@ -3080,7 +3451,17 @@
         "Triomphe 09 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S323CPLB.19HD",
@@ -3148,7 +3529,13 @@
         "Triomphe 17 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S323CPLB.38NO",
@@ -3216,7 +3603,13 @@
         "Triomphe 17 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.38NO",
@@ -3282,7 +3675,13 @@
         "Triomphe 15 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.19DT",
@@ -3348,7 +3747,13 @@
         "Triomphe 15 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.28BP",
@@ -3414,7 +3819,13 @@
         "TRIOMPHE 15 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.18MI",
@@ -3480,7 +3891,13 @@
         "TRIOMPHE 15 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.03ND",
@@ -3546,7 +3963,13 @@
         "TRIOMPHE 15 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S308CPLB.18GT",
@@ -3612,7 +4035,13 @@
         "Triomphe 15 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "U",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S253CPLB.01AV",
@@ -3679,7 +4108,17 @@
         "Triomphe 09 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Adjusted fit",
+          "inStock": true
+        },
+        {
+          "size": "International fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S342CPLB.19TR",
@@ -3716,6 +4155,7 @@
         }
       ],
       "sizes": [
+        "International fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -3745,7 +4185,17 @@
         "Cat Eye S342 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S342CPLB.01AV",
@@ -3812,7 +4262,17 @@
         "Cat Eye S342 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": true
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S342CPLB.19SP",
@@ -3849,6 +4309,7 @@
         }
       ],
       "sizes": [
+        "International fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -3878,7 +4339,17 @@
         "Cat Eye S342 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S342CPLB.38NO",
@@ -3915,6 +4386,7 @@
         }
       ],
       "sizes": [
+        "International fit",
         "Universal fit"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=S01&sgContent=cel-sizeguide-sunglasses&sgImage=",
@@ -3948,7 +4420,17 @@
         "Cat Eye S342 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "International fit",
+          "inStock": false
+        },
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "4S226CPLB.19RH",
@@ -4014,7 +4496,13 @@
         "Triomphe 06 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc",
+      "sizeStock": [
+        {
+          "size": "Universal fit",
+          "inStock": true
+        }
+      ]
     }
   ]
 }

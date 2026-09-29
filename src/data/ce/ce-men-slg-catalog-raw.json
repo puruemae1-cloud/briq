@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T17:32:10.837744+00:00",
+  "scrapedAt": "2026-09-29T10:36:41.174536+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/small-leather-goods/?nav=E004-VIEW-ALL",
   "family": "ce-men-slg",
@@ -13,6 +13,50 @@
         "celine-accessories",
         "ce-men-slg",
         "ce-men-slg-all"
+      ]
+    },
+    {
+      "id": "ce-men-wallets",
+      "label": "Wallets",
+      "labelKo": "월렛",
+      "url": "https://www.celine.com/en-gb/men/small-leather-goods/wallets/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-slg",
+        "ce-men-wallets"
+      ]
+    },
+    {
+      "id": "ce-men-card-holders",
+      "label": "Card Holders",
+      "labelKo": "카드 홀더",
+      "url": "https://www.celine.com/en-gb/men/small-leather-goods/coin-and-card-holders/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-slg",
+        "ce-men-card-holders"
+      ]
+    },
+    {
+      "id": "ce-men-coin-holders",
+      "label": "Coin Holders",
+      "labelKo": "코인 홀더",
+      "url": "https://www.celine.com/en-gb/men/small-leather-goods/coin-holders/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-slg",
+        "ce-men-coin-holders"
+      ]
+    },
+    {
+      "id": "ce-men-tech-accessories",
+      "label": "Tech Accessories",
+      "labelKo": "테크 액세서리",
+      "url": "https://www.celine.com/en-gb/men/small-leather-goods/tech-accessories/",
+      "collections": [
+        "celine-accessories",
+        "ce-men-slg",
+        "ce-men-tech-accessories"
       ]
     }
   ],
