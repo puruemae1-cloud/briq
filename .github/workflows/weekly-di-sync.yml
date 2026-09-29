@@ -89,4 +89,5 @@ jobs:
           scripts/run-di-weekly-sync.sh
 
       - name: Commit catalog updates
-        run: scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di
+        run: |
+          scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di
