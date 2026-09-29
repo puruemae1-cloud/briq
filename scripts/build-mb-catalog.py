@@ -26,16 +26,49 @@ CACHE = ROOT / "src/data/mb/mb-translate-cache.json"
 
 # GTX via urllib often 429-spins for minutes; curl + short backoff stays responsive.
 _GTX_LAST = 0.0
+# Once gtx blocks the runner IP, every string burns ~40s of backoff; stop calling
+# it after consecutive misses or when the per-process budget is spent so the
+# weekly stock sync finishes inside the runner limit.
+_GTX_MAX_MISSES = 5
+_GTX_BUDGET_SEC = float(os.environ.get("GTX_BUDGET_SEC", "2700"))
+_GTX_STARTED = 0.0
+_GTX_MISSES = 0
+_GTX_DEAD = False
+
+
+def _gtx_give_up(reason: str) -> None:
+    global _GTX_DEAD
+    if not _GTX_DEAD:
+        _GTX_DEAD = True
+        print(f"gtx disabled ({reason}) — remaining strings left for the next sync", flush=True)
 
 
 def gtx_translate(text: str) -> str:
     """EN→KO via Google gtx using curl (timeout-bounded, rate-limited)."""
-    global _GTX_LAST
+    global _GTX_LAST, _GTX_STARTED
     text = (text or "").strip()
     if not text:
         return ""
+    if not _GTX_STARTED:
+        _GTX_STARTED = time.time()
 
     def _one(chunk: str) -> str:
+        global _GTX_LAST, _GTX_MISSES
+        if _GTX_DEAD:
+            return ""
+        if time.time() - _GTX_STARTED > _GTX_BUDGET_SEC:
+            _gtx_give_up(f"time budget {int(_GTX_BUDGET_SEC)}s spent")
+            return ""
+        out = _one_attempts(chunk)
+        if out:
+            _GTX_MISSES = 0
+        else:
+            _GTX_MISSES += 1
+            if _GTX_MISSES >= _GTX_MAX_MISSES:
+                _gtx_give_up(f"{_GTX_MISSES} consecutive failures")
+        return out
+
+    def _one_attempts(chunk: str) -> str:
         global _GTX_LAST
         gap = 1.2 - (time.time() - _GTX_LAST)
         if gap > 0:

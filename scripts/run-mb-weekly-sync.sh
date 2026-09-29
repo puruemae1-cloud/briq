@@ -78,10 +78,23 @@ PYTHONUNBUFFERED=1 python3 scripts/fill-mb-ko-fields.py || {
   echo "WARN: MB KO field fill incomplete — safe to re-run fill-mb-ko-fields.py"
 }
 
-python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55 || {
-  echo "WARN: MB Korean QA failed — re-run fill-mb-ko-fields.py"
-  exit 1
-}
+if ! python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55; then
+  echo "WARN: MB Korean QA failed — keeping committed copy for untranslated rows, shipping stock/options"
+  python3 - <<'PY'
+import sys
+from pathlib import Path
+
+sys.path.insert(0, "scripts")
+from ko_qa import find_hybrid_fields
+from stock_only_fallback import apply_fallback
+
+apply_fallback(
+    Path("src/data/mb/mb-catalog.json"),
+    lambda p: not find_hybrid_fields([p], max_ratio=0.55),
+)
+PY
+  python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55
+fi
 
 # Women bags must stay near official Algolia size (~348 colourways).
 # Catches DOM-only scrape regressions that silently cap at 72.
