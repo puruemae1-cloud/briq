@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-29T03:20:23.940050+00:00",
+  "scrapedAt": "2026-09-29T10:49:42.251976+00:00",
   "hub": "https://www.chanel.com/gb/makeup/",
   "note": "Chanel GB makeup hub — Complexion / Eyes / Lips / Nails / Brushes & Accessories under Accessories→샤넬→메이크업.",
   "leaves": [
@@ -207,7 +207,7 @@
     "ch-makeup-nails": 69,
     "ch-makeup-lip-balms": 37,
     "ch-makeup-complexion": 384,
-    "ch-makeup-highlighter": 91,
+    "ch-makeup-highlighter": 23,
     "ch-makeup-powders": 66,
     "ch-makeup-concealer": 80,
     "ch-makeup-base": 7,
@@ -215,14 +215,14 @@
     "ch-makeup-complexion-brushes": 16,
     "ch-makeup-eye-brushes": 11,
     "ch-makeup-lip-brushes": 2,
-    "ch-makeup-blush": 125,
+    "ch-makeup-blush": 58,
     "ch-makeup-foundations": 169,
     "ch-makeup-eye-palette": 40,
     "ch-makeup-eyes": 126,
     "ch-makeup-eyeshadows": 53,
     "ch-makeup-liquid-lipsticks": 52,
     "ch-makeup-eyeliners": 44,
-    "ch-makeup-healthy-glow": 172,
+    "ch-makeup-healthy-glow": 171,
     "ch-makeup-manicure": 4,
     "ch-makeup-lip-gloss": 39,
     "ch-makeup-brows": 21,
@@ -17696,7 +17696,6 @@
         "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
@@ -17704,8 +17703,7 @@
       "leaves": [
         "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -43957,13 +43955,17 @@
       "new": false,
       "collections": [
         "ch-makeup",
+        "ch-makeup-complexion",
+        "ch-makeup-healthy-glow",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-lipsticks",
+      "leaf": "ch-makeup-healthy-glow",
       "leaves": [
+        "ch-makeup-complexion",
+        "ch-makeup-healthy-glow",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44063,10 +44065,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44074,10 +44074,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44177,21 +44175,13 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-healthy-glow",
+      "leaf": "ch-makeup-lipsticks",
       "leaves": [
-        "ch-makeup-blush",
-        "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44291,10 +44281,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44302,10 +44290,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44405,10 +44391,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44416,10 +44400,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44519,10 +44501,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44530,10 +44510,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44633,10 +44611,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44644,10 +44620,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44747,10 +44721,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44758,10 +44730,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44861,10 +44831,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44872,10 +44840,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -44975,10 +44941,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -44986,10 +44950,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45089,10 +45051,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45100,10 +45060,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45203,10 +45161,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45214,10 +45170,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45317,10 +45271,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45328,10 +45280,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45431,10 +45381,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45442,10 +45390,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45545,10 +45491,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45556,10 +45500,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45659,10 +45601,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45670,10 +45610,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45773,10 +45711,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45784,10 +45720,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45881,10 +45815,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -45892,10 +45824,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -45989,10 +45919,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46000,10 +45928,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -46101,10 +46027,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46112,10 +46036,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -46213,10 +46135,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46224,10 +46144,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -46326,19 +46244,15 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -46434,10 +46348,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46445,10 +46357,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -46547,10 +46457,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46558,10 +46466,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -46659,10 +46565,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks",
         "chanel",
@@ -46670,10 +46574,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-lips",
         "ch-makeup-lipsticks"
       ],
@@ -56335,10 +56237,8 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-nail-colour",
         "ch-makeup-nails",
         "chanel",
@@ -56346,10 +56246,8 @@
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "ch-makeup-nail-colour",
         "ch-makeup-nails"
       ],
@@ -61408,23 +61306,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -61634,19 +61528,15 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -61740,23 +61630,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -61850,23 +61736,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -61960,23 +61842,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62070,23 +61948,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62180,23 +62054,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62290,23 +62160,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62400,23 +62266,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62510,23 +62372,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62620,23 +62478,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62730,23 +62584,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62840,23 +62690,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -62952,25 +62798,21 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63066,25 +62908,21 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63180,25 +63018,21 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eye-palette",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63404,23 +63238,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-healthy-glow",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-eyes",
         "ch-makeup-eyeshadows",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63516,23 +63346,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63628,21 +63454,17 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63846,23 +63668,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -63958,23 +63776,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64070,23 +63884,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64177,23 +63987,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64284,23 +64090,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64391,23 +64193,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64498,23 +64296,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64605,23 +64399,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64712,23 +64502,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64819,23 +64605,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -64926,23 +64708,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -65033,23 +64811,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -65140,23 +64914,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69339,23 +69109,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69450,23 +69216,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69561,23 +69323,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69667,23 +69425,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69773,23 +69527,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69879,23 +69629,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -69985,23 +69731,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -70091,23 +69833,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -70197,23 +69935,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -70303,23 +70037,19 @@
       "new": false,
       "collections": [
         "ch-makeup",
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
         "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-makeup-foundations",
       "leaves": [
-        "ch-makeup-blush",
         "ch-makeup-complexion",
         "ch-makeup-concealer",
         "ch-makeup-foundations",
-        "ch-makeup-healthy-glow",
-        "ch-makeup-highlighter"
+        "ch-makeup-healthy-glow"
       ],
       "kind": "makeup",
       "localImages": [
@@ -72383,15 +72113,13 @@
         "ch-makeup",
         "ch-makeup-bronzers",
         "ch-makeup-complexion",
-        "ch-makeup-healthy-glow",
         "chanel",
         "chanel-accessories"
       ],
-      "leaf": "ch-makeup-healthy-glow",
+      "leaf": "ch-makeup-bronzers",
       "leaves": [
         "ch-makeup-bronzers",
-        "ch-makeup-complexion",
-        "ch-makeup-healthy-glow"
+        "ch-makeup-complexion"
       ],
       "kind": "makeup",
       "localImages": [

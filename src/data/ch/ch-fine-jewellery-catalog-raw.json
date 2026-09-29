@@ -1,9 +1,9 @@
 {
-  "scrapedAt": "2026-08-29T04:00:24.358699+00:00",
+  "scrapedAt": "2026-09-29T13:22:29.862785+00:00",
   "hub": "https://www.chanel.com/gb/fine-jewellery/",
   "note": "Chanel GB Fine Jewellery from official hub/PLPs + sitemap; High Jewellery SKUs excluded (kept under ch-high-jewellery).",
   "leafCounts": {
-    "ch-fine-jewellery": 232
+    "ch-fine-jewellery": 243
   },
   "skipped": [],
   "failed": [],
@@ -21871,6 +21871,812 @@
       "subtitle": "18K yellow gold, diamonds"
     },
     {
+      "id": "J13842",
+      "productCode": "J13842",
+      "sku": "J13842",
+      "title": "Extrait de Camélia supple bracelet",
+      "priceLabel": "£8,400",
+      "gbpPrice": 8400.0,
+      "categoryLabel": "bracelets",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13842/extrait-de-camelia-supple-bracelet/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "bracelets",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Yellow",
+        "description": "18K yellow gold, diamond",
+        "fabrics": "Yellow gold",
+        "reference": "J13842",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-default-j13842-9599159500830.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-fermoir-j13842-9594124697630.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-portee-4-j13842-79537486.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-portee-j13842-78089916.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-plat-j13842-9594125090846.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-default-j13842-9599159500830.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-fermoir-j13842-9594124697630.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-portee-4-j13842-79537486.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-portee-j13842-78089916.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-yellow-yellow-gold-diamond-packshot-plat-j13842-9594125090846.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13842",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13842",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "bracelets",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13842/1.jpg",
+        "/products/ch-pdp/j13842/2.jpg",
+        "/products/ch-pdp/j13842/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13842/1.jpg",
+      "localHover": "/products/ch-pdp/j13842/2.jpg"
+    },
+    {
+      "id": "J13843",
+      "productCode": "J13843",
+      "sku": "J13843",
+      "title": "Extrait de Camélia supple bracelet",
+      "priceLabel": "£8,400",
+      "gbpPrice": 8400.0,
+      "categoryLabel": "bracelets",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13843/extrait-de-camelia-supple-bracelet/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "bracelets",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamond",
+        "fabrics": "Rose gold",
+        "reference": "J13843",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-default-j13843-9599159599134.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-fermoir-j13843-9594124402718.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-2-j13843-76770404.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-j13843-76590880.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-plat-j13843-9594124599326.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-default-j13843-9599159599134.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-fermoir-j13843-9594124402718.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-2-j13843-76770404.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-j13843-76590880.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/extrait-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-plat-j13843-9594124599326.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13843",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13843",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "bracelets",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13843/1.jpg",
+        "/products/ch-pdp/j13843/2.jpg",
+        "/products/ch-pdp/j13843/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13843/1.jpg",
+      "localHover": "/products/ch-pdp/j13843/2.jpg"
+    },
+    {
+      "id": "J13844",
+      "productCode": "J13844",
+      "sku": "J13844",
+      "title": "Camélia Bloom plastron necklace",
+      "priceLabel": "£52,000",
+      "gbpPrice": 52000.0,
+      "categoryLabel": "necklaces",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13844/camelia-bloom-plastron-necklace/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "necklaces",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "18K white gold, diamonds",
+        "fabrics": "White gold",
+        "reference": "J13844",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-default-j13844-9599159631902.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-fermoir-j13844-9594124304414.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-portee-2-j13844-79754927.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-portee-j13844-79754931.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-motif-j13844-9594125811742.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-default-j13844-9599159631902.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-fermoir-j13844-9594124304414.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-portee-2-j13844-79754927.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-portee-j13844-79754931.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-white-white-gold-diamond-packshot-motif-j13844-9594125811742.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13844",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13844",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "necklaces",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13844/1.jpg",
+        "/products/ch-pdp/j13844/2.jpg",
+        "/products/ch-pdp/j13844/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13844/1.jpg",
+      "localHover": "/products/ch-pdp/j13844/2.jpg"
+    },
+    {
+      "id": "J13845",
+      "productCode": "J13845",
+      "sku": "J13845",
+      "title": "Camélia Bloom plastron necklace",
+      "priceLabel": "£48,500",
+      "gbpPrice": 48500.0,
+      "categoryLabel": "necklaces",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13845/camelia-bloom-plastron-necklace/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "necklaces",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Yellow",
+        "description": "18K yellow gold, diamonds",
+        "fabrics": "Yellow gold",
+        "reference": "J13845",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-default-j13845-9599159697438.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-fermoir-j13845-9594125025310.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-portee-1-j13845-77176021.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-portee-j13845-79754930.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-motif-j13845-9594124271646.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-default-j13845-9599159697438.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-fermoir-j13845-9594125025310.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-portee-1-j13845-77176021.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-portee-j13845-79754930.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/camelia-bloom-plastron-necklace-yellow-yellow-gold-diamond-packshot-motif-j13845-9594124271646.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13845",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13845",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "necklaces",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13845/1.jpg",
+        "/products/ch-pdp/j13845/2.jpg",
+        "/products/ch-pdp/j13845/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13845/1.jpg",
+      "localHover": "/products/ch-pdp/j13845/2.jpg"
+    },
+    {
+      "id": "J13846",
+      "productCode": "J13846",
+      "sku": "J13846",
+      "title": "Bouton de Camélia necklace",
+      "priceLabel": "£7,050",
+      "gbpPrice": 7050.0,
+      "categoryLabel": "necklaces",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13846/bouton-de-camelia-necklace/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "necklaces",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13846",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-default-j13846-9599551340574.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-face-trois-quart-j13846-9594206093342.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-fermoir-j13846-9594206191646.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-1-j13846-79537529.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-2-j13846-78089900.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-j13846-77176943.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-transformable-j13846-9599159468062.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-default-j13846-9599551340574.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-face-trois-quart-j13846-9594206093342.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-fermoir-j13846-9594206191646.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-1-j13846-79537529.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-2-j13846-78089900.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-portee-j13846-77176943.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-necklace-pink-rose-gold-diamond-packshot-transformable-j13846-9599159468062.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13846",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13846",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "necklaces",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13846/1.jpg",
+        "/products/ch-pdp/j13846/2.jpg",
+        "/products/ch-pdp/j13846/3.jpg",
+        "/products/ch-pdp/j13846/7.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13846/1.jpg",
+      "localHover": "/products/ch-pdp/j13846/2.jpg"
+    },
+    {
+      "id": "J13847",
+      "productCode": "J13847",
+      "sku": "J13847",
+      "title": "Bouton de Camélia supple choker",
+      "priceLabel": "£38,500",
+      "gbpPrice": 38500.0,
+      "categoryLabel": "necklaces",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13847/bouton-de-camelia-supple-choker/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "necklaces",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13847",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-default-j13847-9599159533598.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-face-trois-quart-j13847-9594205863966.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-fermoir-j13847-9594205896734.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-portee-1-j13847-79754915.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-portee-j13847-77177183.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-default-j13847-9599159533598.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-face-trois-quart-j13847-9594205863966.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-fermoir-j13847-9594205896734.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-portee-1-j13847-79754915.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-choker-pink-rose-gold-diamond-packshot-portee-j13847-77177183.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13847",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13847",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "necklaces",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13847/1.jpg",
+        "/products/ch-pdp/j13847/2.jpg",
+        "/products/ch-pdp/j13847/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13847/1.jpg",
+      "localHover": "/products/ch-pdp/j13847/2.jpg"
+    },
+    {
+      "id": "J13848",
+      "productCode": "J13848",
+      "sku": "J13848",
+      "title": "Bouton de Camélia ring",
+      "priceLabel": "£6,150",
+      "gbpPrice": 6150.0,
+      "categoryLabel": "rings",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13848/bouton-de-camelia-ring/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "rings",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13848",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-default-j13848-9599159566366.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-2-j13848-78089900.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-j13848-77176953.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-arriere-j13848-9594124927006.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-default-j13848-9599159566366.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-2-j13848-78089900.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-j13848-77176953.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-arriere-j13848-9594124927006.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13848",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13848",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "rings",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13848/1.jpg",
+        "/products/ch-pdp/j13848/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13848/1.jpg",
+      "localHover": "/products/ch-pdp/j13848/4.jpg"
+    },
+    {
+      "id": "J13849",
+      "productCode": "J13849",
+      "sku": "J13849",
+      "title": "Bouton de Camélia ring",
+      "priceLabel": "£14,900",
+      "gbpPrice": 14900.0,
+      "categoryLabel": "rings",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13849/bouton-de-camelia-ring/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "rings",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13849",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-default-j13849-9599159402526.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-j13849-77176936.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-arriere-j13849-9594125877278.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-default-j13849-9599159402526.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-portee-j13849-77176936.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-ring-pink-rose-gold-diamond-packshot-arriere-j13849-9594125877278.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13849",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13849",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "rings",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13849/1.jpg",
+        "/products/ch-pdp/j13849/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13849/1.jpg",
+      "localHover": "/products/ch-pdp/j13849/3.jpg"
+    },
+    {
+      "id": "J13850",
+      "productCode": "J13850",
+      "sku": "J13850",
+      "title": "Bouton de Camélia earrings",
+      "priceLabel": "£11,400",
+      "gbpPrice": 11400.0,
+      "categoryLabel": "earrings",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13850/bouton-de-camelia-earrings/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "earrings",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13850",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-default-j13850-9599159435294.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-face-trois-quart-j13850-9594206388254.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-fermoir-1-j13850-9594205962270.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-1-j13850-79754915.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-2-j13850-78089851.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-j13850-77176945.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-arriere-j13850-9594205798430.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-default-j13850-9599159435294.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-face-trois-quart-j13850-9594206388254.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-fermoir-1-j13850-9594205962270.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-1-j13850-79754915.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-2-j13850-78089851.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-portee-j13850-77176945.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-earrings-pink-rose-gold-diamond-packshot-arriere-j13850-9594205798430.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13850",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13850",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "earrings",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13850/1.jpg",
+        "/products/ch-pdp/j13850/2.jpg",
+        "/products/ch-pdp/j13850/3.jpg",
+        "/products/ch-pdp/j13850/7.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13850/1.jpg",
+      "localHover": "/products/ch-pdp/j13850/2.jpg"
+    },
+    {
       "id": "J13854",
       "productCode": "J13854",
       "sku": "J13854",
@@ -22318,6 +23124,185 @@
       "localHover": "/products/ch-pdp/j13862/2.jpg",
       "titleShort": "Eternal N°5 hoops",
       "subtitle": "Medium version, 18K BEIGE GOLD, diamonds"
+    },
+    {
+      "id": "J13901",
+      "productCode": "J13901",
+      "sku": "J13901",
+      "title": "Bouton de Camélia crawling earrings",
+      "priceLabel": "£29,700",
+      "gbpPrice": 29700.0,
+      "categoryLabel": "earrings",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13901/bouton-de-camelia-crawling-earrings/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "earrings",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13901",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-default-j13901-9599593218078.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-face-trois-quart-j13901-9584749674526.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-fermoir-1-j13901-9584750198814.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-fermoir-j13901-9584753442846.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-portee-j13901-77176958.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-default-j13901-9599593218078.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-face-trois-quart-j13901-9584749674526.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-fermoir-1-j13901-9584750198814.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-fermoir-j13901-9584753442846.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-crawling-earrings-pink-rose-gold-diamond-packshot-portee-j13901-77176958.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13901",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13901",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "earrings",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13901/1.jpg",
+        "/products/ch-pdp/j13901/2.jpg",
+        "/products/ch-pdp/j13901/3.jpg",
+        "/products/ch-pdp/j13901/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13901/1.jpg",
+      "localHover": "/products/ch-pdp/j13901/2.jpg"
+    },
+    {
+      "id": "J13902",
+      "productCode": "J13902",
+      "sku": "J13902",
+      "title": "Bouton de Camélia supple bracelet",
+      "priceLabel": "£22,800",
+      "gbpPrice": 22800.0,
+      "categoryLabel": "bracelets",
+      "collection": "Camelia",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fine-jewellery/p/J13902/bouton-de-camelia-supple-bracelet/",
+      "hierarchy": [
+        {
+          "label": "Fine Jewellery",
+          "url": "/gb/fine-jewellery/"
+        },
+        {
+          "label": "bracelets",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Pink",
+        "description": "18K rose gold, diamonds",
+        "fabrics": "Rose gold",
+        "reference": "J13902",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-default-j13902-9599593185310.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-fermoir-j13902-9594206421022.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-1-j13902-78089892.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-j13902-77176964.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-plat-j13902-9594205929502.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-default-j13902-9599593185310.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-fermoir-j13902-9594206421022.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-1-j13902-78089892.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-portee-j13902-77176964.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bouton-de-camelia-supple-bracelet-pink-rose-gold-diamond-packshot-plat-j13902-9594205929502.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "J13902",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "J13902",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-fine-jewellery",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-fine-jewellery",
+      "leaves": [
+        "ch-fine-jewellery"
+      ],
+      "shape": "bracelets",
+      "kind": "fine-jewellery",
+      "localImages": [
+        "/products/ch-pdp/j13902/1.jpg",
+        "/products/ch-pdp/j13902/2.jpg",
+        "/products/ch-pdp/j13902/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/j13902/1.jpg",
+      "localHover": "/products/ch-pdp/j13902/2.jpg"
     },
     {
       "id": "J1611",

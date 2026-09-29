@@ -1,10 +1,10 @@
 {
-  "scrapedAt": "2026-08-29T04:04:35.556179+00:00",
+  "scrapedAt": "2026-09-29T13:32:02.926051+00:00",
   "hub": "https://www.chanel.com/gb/watches/",
   "note": "Chanel GB Watches from official Collections PLPs + sitemap (J12 / Première / BOY·FRIEND / Monsieur / Code Coco).",
   "leafCounts": {
     "ch-watches-j12": 44,
-    "ch-watches-premiere": 24,
+    "ch-watches-premiere": 26,
     "ch-watches-boy-friend": 14,
     "ch-watches-code-coco": 6,
     "ch-watches-monsieur": 4
@@ -798,6 +798,72 @@
       "localHover": "/products/ch-pdp/h10166/2.jpg",
       "titleShort": "PREMIÈRE SOUND watch",
       "subtitle": "Steel coated with yellow gold (0.1 micron) and black leather, black-lacquered dial, steel earphones coated with black and yellow gold colours"
+    },
+    {
+      "id": "H10285",
+      "productCode": "H10285",
+      "sku": "H10285",
+      "title": "PREMIÈRE RIBBON DIAMONDS WATCH",
+      "priceLabel": "£91,500",
+      "gbpPrice": 91500.0,
+      "categoryLabel": "Première",
+      "collection": "Premiere",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/watches/p/H10285/premiere-ribbon-diamonds-watch/",
+      "hierarchy": [
+        {
+          "label": "Watches",
+          "url": "/gb/watches/"
+        },
+        {
+          "label": "Première",
+          "url": "https://www.chanel.com/gb/watches/premiere/c/4x2x2/"
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "White gold and diamonds",
+        "fabrics": "Diamond",
+        "reference": "H10285",
+        "dimensions": "white/19.7 x 15.2 x 7.5 mm"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-ribbon-diamonds-watch-white-diamond-white-gold-packshot-default-h10285-9599132762142.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-ribbon-diamonds-watch-white-diamond-white-gold-packshot-default-h10285-9599132762142.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "H10285",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "H10285",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-watches",
+        "ch-watches-premiere",
+        "chanel-watches"
+      ],
+      "leaf": "ch-watches-premiere",
+      "leaves": [
+        "ch-watches-premiere"
+      ],
+      "shape": "ch-watches-premiere",
+      "kind": "watches",
+      "localImages": [
+        "/products/ch-pdp/h10285/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/h10285/1.jpg"
     },
     {
       "id": "H10288",
@@ -3373,6 +3439,79 @@
       "localHover": "/products/ch-pdp/h11151/2.jpg",
       "titleShort": "PREMIÈRE COCO GAME watch",
       "subtitle": "Steel with black coating and white calfskin leather, black-lacquered dial"
+    },
+    {
+      "id": "H11152",
+      "productCode": "H11152",
+      "sku": "H11152",
+      "title": "Première Iconic Chain Golden Brown Watch",
+      "priceLabel": "£5,250",
+      "gbpPrice": 5250.0,
+      "categoryLabel": "Première",
+      "collection": "Premiere",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/watches/p/H11152/premiere-iconic-chain-golden-brown-watch/",
+      "hierarchy": [
+        {
+          "label": "Watches",
+          "url": "/gb/watches/"
+        },
+        {
+          "label": "Première",
+          "url": "https://www.chanel.com/gb/watches/premiere/c/4x2x2/"
+        }
+      ],
+      "details": {
+        "color": "Gold",
+        "description": "Steel coated with yellow gold (0.1 micron) and golden brown leather, golden brown-lacquered sunray dial",
+        "fabrics": "Gold coating",
+        "reference": "H11152",
+        "dimensions": "gold/26.1 x 20 x 7.6 mm"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-iconic-chain-golden-brown-watch-gold-gold-coating-packshot-default-h11152-9600422969374.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-iconic-chain-golden-brown-watch-gold-gold-coating-packshot-portee-h11152-9599145050142.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-iconic-chain-golden-brown-watch-gold-gold-coating-packshot-default-h11152-9600422969374.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-iconic-chain-golden-brown-watch-gold-gold-coating-packshot-portee-h11152-9599145050142.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "H11152",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "H11152",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-watches",
+        "ch-watches-premiere",
+        "chanel-watches"
+      ],
+      "leaf": "ch-watches-premiere",
+      "leaves": [
+        "ch-watches-premiere"
+      ],
+      "shape": "ch-watches-premiere",
+      "kind": "watches",
+      "localImages": [
+        "/products/ch-pdp/h11152/1.jpg",
+        "/products/ch-pdp/h11152/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/h11152/1.jpg",
+      "localHover": "/products/ch-pdp/h11152/2.jpg"
     },
     {
       "id": "H11683",

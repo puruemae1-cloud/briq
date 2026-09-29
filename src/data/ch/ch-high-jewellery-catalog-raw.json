@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-29T04:02:43.275074+00:00",
+  "scrapedAt": "2026-09-29T13:24:58.230688+00:00",
   "source": "https://www.chanel.com/gb/high-jewellery/",
   "note": "Chanel GB High Jewellery from official hub collection pages; shopable PDPs under /gb/fine-jewellery/p/J*.",
   "collections": {
@@ -19,7 +19,7 @@
       "label": "Lion",
       "labelKo": "라이온",
       "url": "https://www.chanel.com/gb/high-jewellery/lion-collection/",
-      "count": 4
+      "count": 3
     },
     "ch-hj-plume": {
       "label": "Plume de CHANEL",
@@ -76,11 +76,11 @@
       "count": 0
     }
   },
-  "count": 43,
+  "count": 42,
   "skippedCount": 0,
   "failedCount": 0,
   "leafCounts": {
-    "ch-high-jewellery": 43
+    "ch-high-jewellery": 42
   },
   "collectionCounts": {
     "ch-hj-plume": 6,
@@ -88,7 +88,7 @@
     "ch-hj-n5": 8,
     "ch-hj-camelia": 11,
     "ch-hj-comete": 9,
-    "ch-hj-lion": 4
+    "ch-hj-lion": 3
   },
   "products": [
     {
@@ -3875,104 +3875,6 @@
       ],
       "localImage": "/products/ch-pdp/j65377/1.jpg",
       "titleShort": "LION SOLAIRE DE CHANEL NECKLACE",
-      "subtitle": "18K white gold, diamonds"
-    },
-    {
-      "id": "J65422",
-      "productCode": "J65422",
-      "sku": "J65422",
-      "title": "LION SOLAIRE DE CHANEL EARRINGS 18K white gold, diamonds",
-      "priceLabel": "£76,500",
-      "gbpPrice": 76500.0,
-      "categoryLabel": "earrings",
-      "collection": "Lion",
-      "collectionCode": null,
-      "url": "https://www.chanel.com/gb/fine-jewellery/p/J65422/lion-solaire-de-chanel-earrings/",
-      "hierarchy": [
-        {
-          "label": "Fine Jewellery",
-          "url": "/gb/fine-jewellery/"
-        },
-        {
-          "label": "earrings",
-          "url": ""
-        }
-      ],
-      "details": {
-        "color": "White",
-        "description": "Transformable earrings in long or short versions.",
-        "fabrics": "White gold",
-        "reference": "J65422",
-        "dimensions": null,
-        "editorial": "Transformable earrings in long or short versions.",
-        "characteristics": [
-          {
-            "label": "Diamonds",
-            "value": "172 brilliant-cut diamonds totalling 3.03 carats · including 2 GIA-certified brilliant-cut centre diamonds, each weighing 0.25 carat"
-          },
-          {
-            "label": "Material",
-            "value": "18K white gold"
-          },
-          {
-            "label": "Diamonds",
-            "value": "172 brilliant-cut diamonds totalling 3.03 carats"
-          }
-        ],
-        "subtitle": "18K white gold, diamonds"
-      },
-      "images": [
-        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-default-j65422-9588129988638.jpg",
-        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-portee-1-j65422-66798476.jpg",
-        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-portee-j65422-66798488.jpg"
-      ],
-      "imageMeta": [
-        {
-          "typology": "PACKSHOT_DEFAULT",
-          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-default-j65422-9588129988638.jpg"
-        },
-        {
-          "typology": "PACKSHOT_OTHER",
-          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-portee-1-j65422-66798476.jpg"
-        },
-        {
-          "typology": "PACKSHOT_OTHER",
-          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/lion-solaire-de-chanel-earrings-white-white-gold-diamond-packshot-portee-j65422-66798488.jpg"
-        }
-      ],
-      "sizes": [
-        {
-          "id": "J65422",
-          "size": "UNI",
-          "orliSize": "UNI",
-          "sku": "J65422",
-          "inStock": true,
-          "sellableOnline": false
-        }
-      ],
-      "availabilityStatus": "IN_STOCK",
-      "inStock": true,
-      "new": false,
-      "collections": [
-        "ch-high-jewellery",
-        "ch-hj-lion",
-        "chanel",
-        "chanel-accessories"
-      ],
-      "leaf": "ch-high-jewellery",
-      "leaves": [
-        "ch-high-jewellery"
-      ],
-      "hjCollections": [
-        "ch-hj-lion"
-      ],
-      "shape": "earrings",
-      "kind": "high-jewellery",
-      "localImages": [
-        "/products/ch-pdp/j65422/1.jpg"
-      ],
-      "localImage": "/products/ch-pdp/j65422/1.jpg",
-      "titleShort": "LION SOLAIRE DE CHANEL EARRINGS",
       "subtitle": "18K white gold, diamonds"
     },
     {

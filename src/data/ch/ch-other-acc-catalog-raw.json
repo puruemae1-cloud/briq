@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-29T04:04:04.776190+00:00",
+  "scrapedAt": "2026-09-29T13:31:23.527525+00:00",
   "hub": "https://www.chanel.com/gb/fashion/other-accessories/c/1x1x4/",
   "note": "Chanel GB other accessories by official PLP leaves (Headwear / Belts / Scarves / Camellias / Winter / Summer).",
   "leaves": [
@@ -41,12 +41,12 @@
     }
   ],
   "leafCounts": {
-    "ch-women-belts": 14,
+    "ch-women-belts": 16,
     "ch-women-summer-accessories": 5,
-    "ch-women-headwear": 18,
-    "ch-women-scarves": 28,
-    "ch-women-winter-accessories": 6,
-    "ch-women-camellias": 10
+    "ch-women-headwear": 26,
+    "ch-women-scarves": 40,
+    "ch-women-winter-accessories": 8,
+    "ch-women-camellias": 13
   },
   "skipped": [],
   "failed": [],
@@ -9007,6 +9007,216 @@
       "subtitle": "Silk Twill"
     },
     {
+      "id": "AAC343B26034UD683",
+      "productCode": "AAC343B26034UD683",
+      "sku": "AAC343B26034UD683",
+      "title": "Cap",
+      "priceLabel": "£1,120",
+      "gbpPrice": 1120.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC343B26034UD683/cap-tweed-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Multicolour & Gold",
+        "description": "The sportswear elegance of a cap in full tweed, adorned with a golden double C.​",
+        "fabrics": "Tweed & Metal",
+        "reference": "AAC343-B26034-UD683",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862185.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83136984.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862181.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862184.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862184.jpg",
+          "id": "83862184"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862185.jpg",
+          "id": "83862185"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862181.jpg",
+          "id": "83862181"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83136984.jpg",
+          "id": "83136984"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC343B26034UD683UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC343B26034UD683UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac343b26034ud683/1.jpg",
+        "/products/ch-pdp/aac343b26034ud683/2.jpg",
+        "/products/ch-pdp/aac343b26034ud683/3.jpg",
+        "/products/ch-pdp/aac343b26034ud683/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac343b26034ud683/1.jpg",
+      "localHover": "/products/ch-pdp/aac343b26034ud683/2.jpg"
+    },
+    {
+      "id": "AAC353B26070UD737",
+      "productCode": "AAC353B26070UD737",
+      "sku": "AAC353B26070UD737",
+      "title": "Bucket Hat",
+      "priceLabel": "£930",
+      "gbpPrice": 930.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC353B26070UD737/bucket-hat-tweed-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Multicolour & Gold",
+        "description": "On a bucket hat, the emblematic tweed of the House is adorned with a golden double C.​",
+        "fabrics": "Tweed & Metal",
+        "reference": "AAC353-B26070-UD737",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862190.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83136986.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862191.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862187.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862187.jpg",
+          "id": "83862187"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862190.jpg",
+          "id": "83862190"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862191.jpg",
+          "id": "83862191"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83136986.jpg",
+          "id": "83136986"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC353B26070UD737S",
+          "size": "S",
+          "orliSize": "S",
+          "sku": "AAC353B26070UD737S",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC353B26070UD737M",
+          "size": "M",
+          "orliSize": "M",
+          "sku": "AAC353B26070UD737M",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC353B26070UD737L",
+          "size": "L",
+          "orliSize": "L",
+          "sku": "AAC353B26070UD737L",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac353b26070ud737/1.jpg",
+        "/products/ch-pdp/aac353b26070ud737/2.jpg",
+        "/products/ch-pdp/aac353b26070ud737/3.jpg",
+        "/products/ch-pdp/aac353b26070ud737/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac353b26070ud737/1.jpg",
+      "localHover": "/products/ch-pdp/aac353b26070ud737/2.jpg"
+    },
+    {
       "sku": "AAC356B26074UD738",
       "id": "AAC356B26074UD738",
       "productCode": "AAC356B26074UD738",
@@ -9122,6 +9332,105 @@
       "new": false,
       "titleShort": "Ponytail holder",
       "subtitle": "Lambskin & Metal"
+    },
+    {
+      "id": "AAC358B26078UD884",
+      "productCode": "AAC358B26078UD884",
+      "sku": "AAC358B26078UD884",
+      "title": "Hair Accessory",
+      "priceLabel": "£425",
+      "gbpPrice": 425.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC358B26078UD884/hair-accessory-tweed-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Multicolour & Gold",
+        "description": "A hair accessory in the timeless tweed of the House, enhanced with a golden double C.​",
+        "fabrics": "Tweed & Metal",
+        "reference": "AAC358-B26078-UD884",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862211.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83536552.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862210.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862201.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862201.jpg",
+          "id": "83862201"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862211.jpg",
+          "id": "83862211"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862210.jpg",
+          "id": "83862210"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83536552.jpg",
+          "id": "83536552"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC358B26078UD884UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC358B26078UD884UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-summer-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac358b26078ud884/1.jpg",
+        "/products/ch-pdp/aac358b26078ud884/2.jpg",
+        "/products/ch-pdp/aac358b26078ud884/3.jpg",
+        "/products/ch-pdp/aac358b26078ud884/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac358b26078ud884/1.jpg",
+      "localHover": "/products/ch-pdp/aac358b26078ud884/2.jpg"
     },
     {
       "id": "AAC360B26080UD917",
@@ -9990,6 +10299,103 @@
       "subtitle": "Cashmere"
     },
     {
+      "id": "AAC395B26157UF219",
+      "productCode": "AAC395B26157UF219",
+      "sku": "AAC395B26157UF219",
+      "title": "Headband",
+      "priceLabel": "£1,380",
+      "gbpPrice": 1380.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC395B26157UF219/headband-lambskin-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Black & Gold",
+        "description": null,
+        "fabrics": "Lambskin & Metal",
+        "reference": "AAC395-B26157-UF219",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862236.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83136992.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862231.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862221.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862221.jpg",
+          "id": "83862221"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862236.jpg",
+          "id": "83862236"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862231.jpg",
+          "id": "83862231"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83136992.jpg",
+          "id": "83136992"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC395B26157UF219UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC395B26157UF219UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac395b26157uf219/1.jpg",
+        "/products/ch-pdp/aac395b26157uf219/2.jpg",
+        "/products/ch-pdp/aac395b26157uf219/3.jpg",
+        "/products/ch-pdp/aac395b26157uf219/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac395b26157uf219/1.jpg",
+      "localHover": "/products/ch-pdp/aac395b26157uf219/2.jpg"
+    },
+    {
       "id": "AAC400B26160UD893",
       "productCode": "AAC400B26160UD893",
       "sku": "AAC400B26160UD893",
@@ -10739,6 +11145,103 @@
       "subtitle": "Calfskin & Metal"
     },
     {
+      "id": "AAC406B26613UF048",
+      "productCode": "AAC406B26613UF048",
+      "sku": "AAC406B26613UF048",
+      "title": "Leather belt",
+      "priceLabel": "£860",
+      "gbpPrice": 860.0,
+      "categoryLabel": "Leather Belts",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC406B26613UF048/leather-belt-calfskin-gold-tone-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Belts",
+          "url": "/gb/fashion/belts/c/1x1x6/"
+        }
+      ],
+      "details": {
+        "color": "Dark Brown & Gold",
+        "description": "Adorned with the emblematic double C clasp, a leather belt with adjustable straps brings a touch of elegance to the silhouette.​",
+        "fabrics": "Calfskin & Gold-Tone Metal",
+        "reference": "AAC406-B26613-UF048",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862269.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83136991.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862266.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862250.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862250.jpg",
+          "id": "83862250"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862269.jpg",
+          "id": "83862269"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862266.jpg",
+          "id": "83862266"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83136991.jpg",
+          "id": "83136991"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC406B26613UF048UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC406B26613UF048UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-belts",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-belts",
+      "leaves": [
+        "ch-women-belts"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac406b26613uf048/1.jpg",
+        "/products/ch-pdp/aac406b26613uf048/2.jpg",
+        "/products/ch-pdp/aac406b26613uf048/3.jpg",
+        "/products/ch-pdp/aac406b26613uf048/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac406b26613uf048/1.jpg",
+      "localHover": "/products/ch-pdp/aac406b26613uf048/2.jpg"
+    },
+    {
       "id": "AAC425B26193UD908",
       "productCode": "AAC425B26193UD908",
       "sku": "AAC425B26193UD908",
@@ -10853,6 +11356,301 @@
       "localHover": "/products/ch-pdp/aac425b26193ud908/2.jpg",
       "titleShort": "Hair Clip",
       "subtitle": "Acetate & Metal"
+    },
+    {
+      "id": "AAC439B2623094305",
+      "productCode": "AAC439B2623094305",
+      "sku": "AAC439B2623094305",
+      "title": "Hair Accessory",
+      "priceLabel": "£365",
+      "gbpPrice": 365.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC439B2623094305/hair-accessory-acetate/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": null,
+        "fabrics": "Acetate",
+        "reference": "AAC439-B26230-94305",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862303.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84160973.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862287.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862277.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862277.jpg",
+          "id": "83862277"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862303.jpg",
+          "id": "83862303"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862287.jpg",
+          "id": "83862287"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-84160973.jpg",
+          "id": "84160973"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC439B2623094305UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC439B2623094305UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-summer-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac439b2623094305/1.jpg",
+        "/products/ch-pdp/aac439b2623094305/2.jpg",
+        "/products/ch-pdp/aac439b2623094305/3.jpg",
+        "/products/ch-pdp/aac439b2623094305/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac439b2623094305/1.jpg",
+      "localHover": "/products/ch-pdp/aac439b2623094305/2.jpg"
+    },
+    {
+      "id": "AAC440B26231UE107",
+      "productCode": "AAC440B26231UE107",
+      "sku": "AAC440B26231UE107",
+      "title": "Set of 2 Hair Clips",
+      "priceLabel": "£390",
+      "gbpPrice": 390.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC440B26231UE107/set-of-2-hair-clips-acetate-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Black & Gold",
+        "description": null,
+        "fabrics": "Acetate & Metal",
+        "reference": "AAC440-B26231-UE107",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862318.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83136990.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862321.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862301.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862301.jpg",
+          "id": "83862301"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862318.jpg",
+          "id": "83862318"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862321.jpg",
+          "id": "83862321"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83136990.jpg",
+          "id": "83136990"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC440B26231UE107UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC440B26231UE107UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-summer-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac440b26231ue107/1.jpg",
+        "/products/ch-pdp/aac440b26231ue107/2.jpg",
+        "/products/ch-pdp/aac440b26231ue107/3.jpg",
+        "/products/ch-pdp/aac440b26231ue107/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac440b26231ue107/1.jpg",
+      "localHover": "/products/ch-pdp/aac440b26231ue107/2.jpg"
+    },
+    {
+      "id": "AAC446B26253UF661",
+      "productCode": "AAC446B26253UF661",
+      "sku": "AAC446B26253UF661",
+      "title": "Collar",
+      "priceLabel": "£1,130",
+      "gbpPrice": 1130.0,
+      "categoryLabel": "Other Accessories",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC446B26253UF661/collar-wool-gold-tone-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Other Accessories",
+          "url": "/gb/fashion/other-accessories/c/1x1x4/"
+        }
+      ],
+      "details": {
+        "color": "Black, Burgundy & Gold",
+        "description": "Between extravagance and sophistication, the accessories of the collection revisit the emblematic codes of the House.​",
+        "fabrics": "Wool & Gold-Tone Metal",
+        "reference": "AAC446-B26253-UF661",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862347.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137010.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862349.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862325.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862325.jpg",
+          "id": "83862325"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862347.jpg",
+          "id": "83862347"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862349.jpg",
+          "id": "83862349"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137010.jpg",
+          "id": "83137010"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC446B26253UF661UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC446B26253UF661UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac446b26253uf661/1.jpg",
+        "/products/ch-pdp/aac446b26253uf661/2.jpg",
+        "/products/ch-pdp/aac446b26253uf661/3.jpg",
+        "/products/ch-pdp/aac446b26253uf661/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac446b26253uf661/1.jpg",
+      "localHover": "/products/ch-pdp/aac446b26253uf661/2.jpg"
     },
     {
       "id": "AAC453B26301UE223",
@@ -11261,6 +12059,2135 @@
       "localHover": "/products/ch-pdp/aac454b26303ue226/2.jpg",
       "titleShort": "Leather bandana",
       "subtitle": "Lambskin"
+    },
+    {
+      "id": "AAC455B26395UF660",
+      "productCode": "AAC455B26395UF660",
+      "sku": "AAC455B26395UF660",
+      "title": "Beanie",
+      "priceLabel": "£600",
+      "gbpPrice": 600.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC455B26395UF660/beanie-wool-cashmere/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Black, Ecru & Gold",
+        "description": null,
+        "fabrics": "Wool & Cashmere",
+        "reference": "AAC455-B26395-UF660",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862377.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137008.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862369.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862353.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862353.jpg",
+          "id": "83862353"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862377.jpg",
+          "id": "83862377"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862369.jpg",
+          "id": "83862369"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137008.jpg",
+          "id": "83137008"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC455B26395UF660UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC455B26395UF660UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac455b26395uf660/1.jpg",
+        "/products/ch-pdp/aac455b26395uf660/2.jpg",
+        "/products/ch-pdp/aac455b26395uf660/3.jpg",
+        "/products/ch-pdp/aac455b26395uf660/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac455b26395uf660/1.jpg",
+      "localHover": "/products/ch-pdp/aac455b26395uf660/2.jpg"
+    },
+    {
+      "id": "AAC456B26396UF660",
+      "productCode": "AAC456B26396UF660",
+      "sku": "AAC456B26396UF660",
+      "title": "Scarf",
+      "priceLabel": "£1,120",
+      "gbpPrice": 1120.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC456B26396UF660/scarf-wool-cashmere/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Black, Ecru & Gold",
+        "description": null,
+        "fabrics": "Wool & Cashmere",
+        "reference": "AAC456-B26396-UF660",
+        "dimensions": [
+          {
+            "value": "190 x 30",
+            "unit": "cm"
+          },
+          {
+            "value": "74.8 x 11.8",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257114.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137011.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257115.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257116.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257116.jpg",
+          "id": "84257116"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257114.jpg",
+          "id": "84257114"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257115.jpg",
+          "id": "84257115"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137011.jpg",
+          "id": "83137011"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC456B26396UF660UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC456B26396UF660UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves",
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac456b26396uf660/1.jpg",
+        "/products/ch-pdp/aac456b26396uf660/2.jpg",
+        "/products/ch-pdp/aac456b26396uf660/3.jpg",
+        "/products/ch-pdp/aac456b26396uf660/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac456b26396uf660/1.jpg",
+      "localHover": "/products/ch-pdp/aac456b26396uf660/2.jpg"
+    },
+    {
+      "id": "AAC463B26528UE695",
+      "productCode": "AAC463B26528UE695",
+      "sku": "AAC463B26528UE695",
+      "title": "Hair Clip",
+      "priceLabel": "£365",
+      "gbpPrice": 365.0,
+      "categoryLabel": "Headwear",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC463B26528UE695/hair-clip-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Headwear",
+          "url": "/gb/fashion/headwear/c/1x1x11/"
+        }
+      ],
+      "details": {
+        "color": "Golden & Black",
+        "description": null,
+        "fabrics": "Metal",
+        "reference": "AAC463-B26528-UE695",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862400.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83536551.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862401.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862376.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862376.jpg",
+          "id": "83862376"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862400.jpg",
+          "id": "83862400"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862401.jpg",
+          "id": "83862401"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83536551.jpg",
+          "id": "83536551"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC463B26528UE695UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC463B26528UE695UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-summer-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-summer-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac463b26528ue695/1.jpg",
+        "/products/ch-pdp/aac463b26528ue695/2.jpg",
+        "/products/ch-pdp/aac463b26528ue695/3.jpg",
+        "/products/ch-pdp/aac463b26528ue695/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac463b26528ue695/1.jpg",
+      "localHover": "/products/ch-pdp/aac463b26528ue695/2.jpg"
+    },
+    {
+      "id": "AAC472B26575UF126",
+      "productCode": "AAC472B26575UF126",
+      "sku": "AAC472B26575UF126",
+      "title": "Square Scarf",
+      "priceLabel": "£680",
+      "gbpPrice": 680.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC472B26575UF126/square-scarf-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Light Beige & Multicolor",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC472-B26575-UF126",
+        "dimensions": [
+          {
+            "value": "90 x 90",
+            "unit": "cm"
+          },
+          {
+            "value": "35.4 x 35.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83137026.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137026.jpg",
+          "id": "83137026"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC472B26575UF126UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC472B26575UF126UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac472b26575uf126/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac472b26575uf126/1.jpg"
+    },
+    {
+      "id": "AAC473B26576UF126",
+      "productCode": "AAC473B26576UF126",
+      "sku": "AAC473B26576UF126",
+      "title": "Slim Bandeau",
+      "priceLabel": "£310",
+      "gbpPrice": 310.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC473B26576UF126/slim-bandeau-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Light Beige & Multicolor",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC473-B26576-UF126",
+        "dimensions": [
+          {
+            "value": "160 x 6",
+            "unit": "cm"
+          },
+          {
+            "value": "63 x 2.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257122.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137024.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257120.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257125.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257130.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257119.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257119.jpg",
+          "id": "84257119"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257122.jpg",
+          "id": "84257122"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257120.jpg",
+          "id": "84257120"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257125.jpg",
+          "id": "84257125"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE4",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257130.jpg",
+          "id": "84257130"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137024.jpg",
+          "id": "83137024"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC473B26576UF126UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC473B26576UF126UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac473b26576uf126/1.jpg",
+        "/products/ch-pdp/aac473b26576uf126/2.jpg",
+        "/products/ch-pdp/aac473b26576uf126/3.jpg",
+        "/products/ch-pdp/aac473b26576uf126/4.jpg",
+        "/products/ch-pdp/aac473b26576uf126/5.jpg",
+        "/products/ch-pdp/aac473b26576uf126/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac473b26576uf126/1.jpg",
+      "localHover": "/products/ch-pdp/aac473b26576uf126/2.jpg"
+    },
+    {
+      "id": "AAC477B26584UF134",
+      "productCode": "AAC477B26584UF134",
+      "sku": "AAC477B26584UF134",
+      "title": "Square Scarf",
+      "priceLabel": "£460",
+      "gbpPrice": 460.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC477B26584UF134/square-scarf-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Ecru & Black",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC477-B26584-UF134",
+        "dimensions": [
+          {
+            "value": "90 x 90",
+            "unit": "cm"
+          },
+          {
+            "value": "35.4 x 35.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257146.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137037.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83796839.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257152.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257140.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257140.jpg",
+          "id": "84257140"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257146.jpg",
+          "id": "84257146"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83796839.jpg",
+          "id": "83796839"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257152.jpg",
+          "id": "84257152"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137037.jpg",
+          "id": "83137037"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC477B26584UF134UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC477B26584UF134UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac477b26584uf134/1.jpg",
+        "/products/ch-pdp/aac477b26584uf134/2.jpg",
+        "/products/ch-pdp/aac477b26584uf134/3.jpg",
+        "/products/ch-pdp/aac477b26584uf134/4.jpg",
+        "/products/ch-pdp/aac477b26584uf134/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac477b26584uf134/1.jpg",
+      "localHover": "/products/ch-pdp/aac477b26584uf134/2.jpg"
+    },
+    {
+      "id": "AAC479B26586UF135",
+      "productCode": "AAC479B26586UF135",
+      "sku": "AAC479B26586UF135",
+      "title": "Slim Bandeau",
+      "priceLabel": "£310",
+      "gbpPrice": 310.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC479B26586UF135/slim-bandeau-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Beige, Red & Black",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC479-B26586-UF135",
+        "dimensions": [
+          {
+            "value": "160 x 6",
+            "unit": "cm"
+          },
+          {
+            "value": "63 x 2.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257161.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137051.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257162.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257175.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257177.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257159.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257159.jpg",
+          "id": "84257159"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257161.jpg",
+          "id": "84257161"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257162.jpg",
+          "id": "84257162"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257175.jpg",
+          "id": "84257175"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE4",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257177.jpg",
+          "id": "84257177"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137051.jpg",
+          "id": "83137051"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC479B26586UF135UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC479B26586UF135UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac479b26586uf135/1.jpg",
+        "/products/ch-pdp/aac479b26586uf135/2.jpg",
+        "/products/ch-pdp/aac479b26586uf135/3.jpg",
+        "/products/ch-pdp/aac479b26586uf135/4.jpg",
+        "/products/ch-pdp/aac479b26586uf135/5.jpg",
+        "/products/ch-pdp/aac479b26586uf135/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac479b26586uf135/1.jpg",
+      "localHover": "/products/ch-pdp/aac479b26586uf135/2.jpg"
+    },
+    {
+      "id": "AAC486B26594UF537",
+      "productCode": "AAC486B26594UF537",
+      "sku": "AAC486B26594UF537",
+      "title": "Square Scarf",
+      "priceLabel": "£460",
+      "gbpPrice": 460.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC486B26594UF537/square-scarf-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Black, Ecru & Grey",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC486-B26594-UF537",
+        "dimensions": [
+          {
+            "value": "90 x 90",
+            "unit": "cm"
+          },
+          {
+            "value": "35.4 x 35.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257190.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137075.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83796874.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257205.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257187.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257187.jpg",
+          "id": "84257187"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257190.jpg",
+          "id": "84257190"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83796874.jpg",
+          "id": "83796874"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257205.jpg",
+          "id": "84257205"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137075.jpg",
+          "id": "83137075"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC486B26594UF537UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC486B26594UF537UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac486b26594uf537/1.jpg",
+        "/products/ch-pdp/aac486b26594uf537/2.jpg",
+        "/products/ch-pdp/aac486b26594uf537/3.jpg",
+        "/products/ch-pdp/aac486b26594uf537/4.jpg",
+        "/products/ch-pdp/aac486b26594uf537/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac486b26594uf537/1.jpg",
+      "localHover": "/products/ch-pdp/aac486b26594uf537/2.jpg"
+    },
+    {
+      "id": "AAC487B26595UF538",
+      "productCode": "AAC487B26595UF538",
+      "sku": "AAC487B26595UF538",
+      "title": "Slim Bandeau",
+      "priceLabel": "£310",
+      "gbpPrice": 310.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC487B26595UF538/slim-bandeau-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Black, Ecru & Grey",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC487-B26595-UF538",
+        "dimensions": [
+          {
+            "value": "160 x 6",
+            "unit": "cm"
+          },
+          {
+            "value": "63 x 2.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257206.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137080.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257209.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257216.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257223.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257207.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257207.jpg",
+          "id": "84257207"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257206.jpg",
+          "id": "84257206"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257209.jpg",
+          "id": "84257209"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257216.jpg",
+          "id": "84257216"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE4",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257223.jpg",
+          "id": "84257223"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137080.jpg",
+          "id": "83137080"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC487B26595UF538UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC487B26595UF538UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac487b26595uf538/1.jpg",
+        "/products/ch-pdp/aac487b26595uf538/2.jpg",
+        "/products/ch-pdp/aac487b26595uf538/3.jpg",
+        "/products/ch-pdp/aac487b26595uf538/4.jpg",
+        "/products/ch-pdp/aac487b26595uf538/5.jpg",
+        "/products/ch-pdp/aac487b26595uf538/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac487b26595uf538/1.jpg",
+      "localHover": "/products/ch-pdp/aac487b26595uf538/2.jpg"
+    },
+    {
+      "id": "AAC491B26608UF036",
+      "productCode": "AAC491B26608UF036",
+      "sku": "AAC491B26608UF036",
+      "title": "Leather belt",
+      "priceLabel": "£860",
+      "gbpPrice": 860.0,
+      "categoryLabel": "Leather Belts",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC491B26608UF036/leather-belt-crocodile-embossed-calfskin-metal/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Belts",
+          "url": "/gb/fashion/belts/c/1x1x6/"
+        }
+      ],
+      "details": {
+        "color": "Black & Gold",
+        "description": null,
+        "fabrics": "Crocodile Embossed Calfskin & Metal",
+        "reference": "AAC491-B26608-UF036",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862443.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83271464.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862439.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862409.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862409.jpg",
+          "id": "83862409"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862443.jpg",
+          "id": "83862443"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862439.jpg",
+          "id": "83862439"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83271464.jpg",
+          "id": "83271464"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC491B26608UF03695",
+          "size": "95",
+          "orliSize": "95",
+          "sku": "AAC491B26608UF03695",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03690",
+          "size": "90",
+          "orliSize": "90",
+          "sku": "AAC491B26608UF03690",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03685",
+          "size": "85",
+          "orliSize": "85",
+          "sku": "AAC491B26608UF03685",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03680",
+          "size": "80",
+          "orliSize": "80",
+          "sku": "AAC491B26608UF03680",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03675",
+          "size": "75",
+          "orliSize": "75",
+          "sku": "AAC491B26608UF03675",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03670",
+          "size": "70",
+          "orliSize": "70",
+          "sku": "AAC491B26608UF03670",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF03665",
+          "size": "65",
+          "orliSize": "65",
+          "sku": "AAC491B26608UF03665",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF036120",
+          "size": "120",
+          "orliSize": "120",
+          "sku": "AAC491B26608UF036120",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF036115",
+          "size": "115",
+          "orliSize": "115",
+          "sku": "AAC491B26608UF036115",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF036110",
+          "size": "110",
+          "orliSize": "110",
+          "sku": "AAC491B26608UF036110",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF036105",
+          "size": "105",
+          "orliSize": "105",
+          "sku": "AAC491B26608UF036105",
+          "inStock": false,
+          "sellableOnline": false
+        },
+        {
+          "id": "AAC491B26608UF036100",
+          "size": "100",
+          "orliSize": "100",
+          "sku": "AAC491B26608UF036100",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-belts",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-belts",
+      "leaves": [
+        "ch-women-belts"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac491b26608uf036/1.jpg",
+        "/products/ch-pdp/aac491b26608uf036/2.jpg",
+        "/products/ch-pdp/aac491b26608uf036/3.jpg",
+        "/products/ch-pdp/aac491b26608uf036/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac491b26608uf036/1.jpg",
+      "localHover": "/products/ch-pdp/aac491b26608uf036/2.jpg"
+    },
+    {
+      "id": "AAC505B26633UF192",
+      "productCode": "AAC505B26633UF192",
+      "sku": "AAC505B26633UF192",
+      "title": "Square Scarf",
+      "priceLabel": "£460",
+      "gbpPrice": 460.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC505B26633UF192/square-scarf-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Beige, Black & Red",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC505-B26633-UF192",
+        "dimensions": [
+          {
+            "value": "90 x 90",
+            "unit": "cm"
+          },
+          {
+            "value": "35.4 x 35.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257235.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137125.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257239.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257244.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257233.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257233.jpg",
+          "id": "84257233"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257235.jpg",
+          "id": "84257235"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257239.jpg",
+          "id": "84257239"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257244.jpg",
+          "id": "84257244"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137125.jpg",
+          "id": "83137125"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC505B26633UF192UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC505B26633UF192UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac505b26633uf192/1.jpg",
+        "/products/ch-pdp/aac505b26633uf192/2.jpg",
+        "/products/ch-pdp/aac505b26633uf192/3.jpg",
+        "/products/ch-pdp/aac505b26633uf192/4.jpg",
+        "/products/ch-pdp/aac505b26633uf192/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac505b26633uf192/1.jpg",
+      "localHover": "/products/ch-pdp/aac505b26633uf192/2.jpg"
+    },
+    {
+      "id": "AAC506B26634UF190",
+      "productCode": "AAC506B26634UF190",
+      "sku": "AAC506B26634UF190",
+      "title": "Square Scarf",
+      "priceLabel": "£460",
+      "gbpPrice": 460.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC506B26634UF190/square-scarf-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "White & Multicolour",
+        "description": "On a silk square scarf, graphic patterns with pop colours evoke childhood construction games and the set of the show.​",
+        "fabrics": "Silk Twill",
+        "reference": "AAC506-B26634-UF190",
+        "dimensions": [
+          {
+            "value": "90 x 90",
+            "unit": "cm"
+          },
+          {
+            "value": "35.4 x 35.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257256.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137127.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257265.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257269.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257258.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257258.jpg",
+          "id": "84257258"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257256.jpg",
+          "id": "84257256"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257265.jpg",
+          "id": "84257265"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257269.jpg",
+          "id": "84257269"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137127.jpg",
+          "id": "83137127"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC506B26634UF190UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC506B26634UF190UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac506b26634uf190/1.jpg",
+        "/products/ch-pdp/aac506b26634uf190/2.jpg",
+        "/products/ch-pdp/aac506b26634uf190/3.jpg",
+        "/products/ch-pdp/aac506b26634uf190/4.jpg",
+        "/products/ch-pdp/aac506b26634uf190/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac506b26634uf190/1.jpg",
+      "localHover": "/products/ch-pdp/aac506b26634uf190/2.jpg"
+    },
+    {
+      "id": "AAC516B26647UF198",
+      "productCode": "AAC516B26647UF198",
+      "sku": "AAC516B26647UF198",
+      "title": "Slim Bandeau",
+      "priceLabel": "£310",
+      "gbpPrice": 310.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC516B26647UF198/slim-bandeau-silk-twill/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "White & Multicolour",
+        "description": "On a slim silk scarf, graphic patterns in pop colors evoke childhood construction games and the set of the show.​",
+        "fabrics": "Silk Twill",
+        "reference": "AAC516-B26647-UF198",
+        "dimensions": [
+          {
+            "value": "160 x 6",
+            "unit": "cm"
+          },
+          {
+            "value": "63 x 2.4",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257277.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137153.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257280.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257286.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257294.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257276.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257276.jpg",
+          "id": "84257276"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257277.jpg",
+          "id": "84257277"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257280.jpg",
+          "id": "84257280"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE3",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257286.jpg",
+          "id": "84257286"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE4",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257294.jpg",
+          "id": "84257294"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137153.jpg",
+          "id": "83137153"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC516B26647UF198UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC516B26647UF198UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac516b26647uf198/1.jpg",
+        "/products/ch-pdp/aac516b26647uf198/2.jpg",
+        "/products/ch-pdp/aac516b26647uf198/3.jpg",
+        "/products/ch-pdp/aac516b26647uf198/4.jpg",
+        "/products/ch-pdp/aac516b26647uf198/5.jpg",
+        "/products/ch-pdp/aac516b26647uf198/6.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac516b26647uf198/1.jpg",
+      "localHover": "/products/ch-pdp/aac516b26647uf198/2.jpg"
+    },
+    {
+      "id": "AAC519B26650UF356",
+      "productCode": "AAC519B26650UF356",
+      "sku": "AAC519B26650UF356",
+      "title": "Scarf",
+      "priceLabel": "£1,200",
+      "gbpPrice": 1200.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC519B26650UF356/scarf-cashmere/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Ecru & Gold",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC519-B26650-UF356",
+        "dimensions": [
+          {
+            "value": "205 x 20",
+            "unit": "cm"
+          },
+          {
+            "value": "80.7 x 7.9",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257303.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137163.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257313.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257299.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257299.jpg",
+          "id": "84257299"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257303.jpg",
+          "id": "84257303"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257313.jpg",
+          "id": "84257313"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137163.jpg",
+          "id": "83137163"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC519B26650UF356UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC519B26650UF356UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves",
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac519b26650uf356/1.jpg",
+        "/products/ch-pdp/aac519b26650uf356/2.jpg",
+        "/products/ch-pdp/aac519b26650uf356/3.jpg",
+        "/products/ch-pdp/aac519b26650uf356/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac519b26650uf356/1.jpg",
+      "localHover": "/products/ch-pdp/aac519b26650uf356/2.jpg"
+    },
+    {
+      "id": "AAC524B26655UF359",
+      "productCode": "AAC524B26655UF359",
+      "sku": "AAC524B26655UF359",
+      "title": "Scarf",
+      "priceLabel": "£1,200",
+      "gbpPrice": 1200.0,
+      "categoryLabel": "Scarves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC524B26655UF359/scarf-cashmere/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Scarves",
+          "url": "/gb/fashion/scarves/c/1x1x8/"
+        }
+      ],
+      "details": {
+        "color": "Burgundy & Light Blue",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC524-B26655-UF359",
+        "dimensions": [
+          {
+            "value": "185 x 25",
+            "unit": "cm"
+          },
+          {
+            "value": "72.8 x 9.8",
+            "unit": "in"
+          }
+        ]
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84257317.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83271470.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257326.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84257316.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257316.jpg",
+          "id": "84257316"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257317.jpg",
+          "id": "84257317"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84257326.jpg",
+          "id": "84257326"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83271470.jpg",
+          "id": "83271470"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC524B26655UF359UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC524B26655UF359UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves",
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac524b26655uf359/1.jpg",
+        "/products/ch-pdp/aac524b26655uf359/2.jpg",
+        "/products/ch-pdp/aac524b26655uf359/3.jpg",
+        "/products/ch-pdp/aac524b26655uf359/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac524b26655uf359/1.jpg",
+      "localHover": "/products/ch-pdp/aac524b26655uf359/2.jpg"
+    },
+    {
+      "id": "AAC525B26705UF352",
+      "productCode": "AAC525B26705UF352",
+      "sku": "AAC525B26705UF352",
+      "title": "Gloves",
+      "priceLabel": "£600",
+      "gbpPrice": 600.0,
+      "categoryLabel": "Gloves",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC525B26705UF352/gloves-cashmere/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Other Accessories",
+          "url": "/gb/fashion/other-accessories/c/1x1x4/"
+        }
+      ],
+      "details": {
+        "color": "Black & Ecru",
+        "description": "Between extravagance and sophistication, the accessories of the collection revisit the emblematic codes of the House.​",
+        "fabrics": "Cashmere",
+        "reference": "AAC525-B26705-UF352",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862555.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83137171.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862559.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862542.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862542.jpg",
+          "id": "83862542"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862555.jpg",
+          "id": "83862555"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862559.jpg",
+          "id": "83862559"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83137171.jpg",
+          "id": "83137171"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC525B26705UF352UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC525B26705UF352UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-winter-accessories"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac525b26705uf352/1.jpg",
+        "/products/ch-pdp/aac525b26705uf352/2.jpg",
+        "/products/ch-pdp/aac525b26705uf352/3.jpg",
+        "/products/ch-pdp/aac525b26705uf352/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac525b26705uf352/1.jpg",
+      "localHover": "/products/ch-pdp/aac525b26705uf352/2.jpg"
+    },
+    {
+      "id": "AAC557B2677410601",
+      "productCode": "AAC557B2677410601",
+      "sku": "AAC557B2677410601",
+      "title": "Camellia",
+      "priceLabel": "£1,430",
+      "gbpPrice": 1430.0,
+      "categoryLabel": "Camellias",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC557B2677410601/camellia-silk/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Camellias",
+          "url": "/gb/fashion/camellias/c/1x1x7/"
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "Handcrafted from silk by the Maison d’art Lemarié, the reinterpretation of the camellia blossoms in statement brooches.​",
+        "fabrics": "Silk",
+        "reference": "AAC557-B26774-10601",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84145491.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84160974.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84145494.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84160699.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84160699.jpg",
+          "id": "84160699"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84145491.jpg",
+          "id": "84145491"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84145494.jpg",
+          "id": "84145494"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-84160974.jpg",
+          "id": "84160974"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC557B2677410601UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC557B2677410601UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-camellias",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-camellias",
+      "leaves": [
+        "ch-women-camellias"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac557b2677410601/1.jpg",
+        "/products/ch-pdp/aac557b2677410601/2.jpg",
+        "/products/ch-pdp/aac557b2677410601/3.jpg",
+        "/products/ch-pdp/aac557b2677410601/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac557b2677410601/1.jpg",
+      "localHover": "/products/ch-pdp/aac557b2677410601/2.jpg"
+    },
+    {
+      "id": "AAC561B26771UF581",
+      "productCode": "AAC561B26771UF581",
+      "sku": "AAC561B26771UF581",
+      "title": "Camellia",
+      "priceLabel": "£1,950",
+      "gbpPrice": 1950.0,
+      "categoryLabel": "Camellias",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC561B26771UF581/camellia-silk/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Camellias",
+          "url": "/gb/fashion/camellias/c/1x1x7/"
+        }
+      ],
+      "details": {
+        "color": "Pink & Orange",
+        "description": "Handcrafted from silk by the Maison d’art Lemarié, the reinterpretation of the camellia blossoms in statement brooches.​",
+        "fabrics": "Silk",
+        "reference": "AAC561-B26771-UF581",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-83862578.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83271473.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862581.jpg",
+        "https://www.chanel.com/images/as/f_auto/-83862562.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862562.jpg",
+          "id": "83862562"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862578.jpg",
+          "id": "83862578"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-83862581.jpg",
+          "id": "83862581"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-83271473.jpg",
+          "id": "83271473"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC561B26771UF581UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC561B26771UF581UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-camellias",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-camellias",
+      "leaves": [
+        "ch-women-camellias"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac561b26771uf581/1.jpg",
+        "/products/ch-pdp/aac561b26771uf581/2.jpg",
+        "/products/ch-pdp/aac561b26771uf581/3.jpg",
+        "/products/ch-pdp/aac561b26771uf581/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac561b26771uf581/1.jpg",
+      "localHover": "/products/ch-pdp/aac561b26771uf581/2.jpg"
+    },
+    {
+      "id": "AAC562B2677494305",
+      "productCode": "AAC562B2677494305",
+      "sku": "AAC562B2677494305",
+      "title": "Camellia",
+      "priceLabel": "£1,000",
+      "gbpPrice": 1000.0,
+      "categoryLabel": "Camellias",
+      "collection": "Fall-Winter 2026",
+      "collectionCode": "26K",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC562B2677494305/camellia-silk/",
+      "hierarchy": [
+        {
+          "label": "Fall-Winter 2026",
+          "url": "/gb/fashion/fall-winter-2026/l/1x2x86/the-looks/"
+        },
+        {
+          "label": "Camellias",
+          "url": "/gb/fashion/camellias/c/1x1x7/"
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "Handcrafted from silk by the Maison d’art Lemarié, the reinterpretation of the camellia blossoms in statement brooches.​",
+        "fabrics": "Silk",
+        "reference": "AAC562-B26774-94305",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/as/f_auto/-84145489.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84160975.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84145500.jpg",
+        "https://www.chanel.com/images/as/f_auto/-84160698.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1_LARGE",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84160698.jpg",
+          "id": "84160698"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE1",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84145489.jpg",
+          "id": "84145489"
+        },
+        {
+          "typology": "PACKSHOT_ARTISTIQUE_VUE2",
+          "viewAngle": null,
+          "viewLabel": null,
+          "source": "https://www.chanel.com/images/as/f_auto/-84145500.jpg",
+          "id": "84145500"
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "viewAngle": null,
+          "viewLabel": "Default view",
+          "source": "https://www.chanel.com/images/as/f_auto/-84160975.jpg",
+          "id": "84160975"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC562B2677494305UNI",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC562B2677494305UNI",
+          "inStock": false,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "OUT_OF_STOCK",
+      "inStock": false,
+      "new": false,
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-camellias",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-women-camellias",
+      "leaves": [
+        "ch-women-camellias"
+      ],
+      "kind": "other-acc",
+      "localImages": [
+        "/products/ch-pdp/aac562b2677494305/1.jpg",
+        "/products/ch-pdp/aac562b2677494305/2.jpg",
+        "/products/ch-pdp/aac562b2677494305/3.jpg",
+        "/products/ch-pdp/aac562b2677494305/4.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac562b2677494305/1.jpg",
+      "localHover": "/products/ch-pdp/aac562b2677494305/2.jpg"
     }
   ]
 }
