@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-29T20:27:45Z",
+  "generatedAt": "2026-09-29T23:26:37Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bb-long-cashmere-kensington-trench-coat-5",
-        "bb-wool-lancashire-jacket-3",
-        "bb-long-cashmere-kensington-trench-coat-4",
-        "bb-quilted-nylon-parka-2"
+        "ps-ecru-stripe-cashmere-polo-sweater",
+        "ps-brown-corduroy-work-jacket",
+        "ps-ecru-mix-up-stripe-cotton-shirt",
+        "ps-relaxed-fit-brown-wool-twill-trousers"
       ],
       "brands": [
-        "burberry",
-        "burberry",
-        "burberry",
-        "burberry"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -32,30 +32,30 @@
     },
     "bags": {
       "productIds": [
-        "gc-65857418ysg9068",
-        "gc-658574huhhg8565",
-        "gc-70744921hrg2687",
-        "gc-792082fadja1042"
+        "mb-waxed-baseball-cap",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote",
+        "mb-suede-tree-tote"
       ],
       "brands": [
-        "gucci",
-        "gucci",
-        "gucci",
-        "gucci"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "shoes": {
       "productIds": [
         "ax-x000010504",
         "ax-x000010502",
-        "ce-356834582c-38no",
-        "ce-352193676c-38no"
+        "bb-leather-pillar-ankle-boots",
+        "gc-431467fafzd8548"
       ],
       "brands": [
         "arcteryx",
         "arcteryx",
-        "celine",
-        "celine"
+        "burberry",
+        "gucci"
       ]
     },
     "accessories": {
@@ -93,13 +93,6 @@
       "shoes"
     ],
     "burberry": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "celine": [
-      "shoes",
       "shoes"
     ],
     "christopher-ward": [
@@ -115,10 +108,19 @@
       "sports"
     ],
     "gucci": [
+      "shoes"
+    ],
+    "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "paul-smith": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "prada": [
       "accessories",
