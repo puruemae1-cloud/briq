@@ -27,7 +27,7 @@ def main() -> int:
     args = ap.parse_args()
 
     fetched = subprocess.run(
-        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+        ["git", "fetch", "--depth=1", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
         cwd=ROOT,
         check=False,
     )
@@ -42,21 +42,24 @@ def main() -> int:
     for name in args.dirs:
         dest = ROOT / "public" / "products" / name
         dest.parent.mkdir(parents=True, exist_ok=True)
-        # Extract only this brand tree from the tag
-        proc = subprocess.run(
+        # Extract only this brand tree from the tag. Stream archive → tar:
+        # multi-GB brand trees exhausted runner memory when buffered.
+        archive = subprocess.Popen(
             ["git", "archive", TAG, f"public/products/{name}"],
             cwd=ROOT,
-            check=False,
-            capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
         )
-        if proc.returncode != 0:
-            print(f"skip restore {name} (not on tag yet)", flush=True)
-            continue
         tar = subprocess.run(
             ["tar", "-x", "-C", str(ROOT)],
-            input=proc.stdout,
+            stdin=archive.stdout,
             check=False,
+            stderr=subprocess.DEVNULL,
         )
+        archive.stdout.close()
+        if archive.wait() != 0:
+            print(f"skip restore {name} (not on tag yet)", flush=True)
+            continue
         if tar.returncode != 0:
             print(f"WARN: tar extract failed for {name}", flush=True)
             continue

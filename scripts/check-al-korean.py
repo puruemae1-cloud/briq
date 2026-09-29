@@ -15,37 +15,57 @@ CATALOG = ROOT / "src/data/al/al-catalog.json"
 MAX_EN_RATIO = 0.40
 
 
+def product_bad_fields(p: dict) -> list[tuple[str, str, float]]:
+    pid = str(p.get("id") or "")
+    fields = [("descriptionKo", p.get("descriptionKo"))]
+    for i, sec in enumerate(p.get("storySections") or []):
+        if str(sec.get("titleKo") or "") == "스타일링":
+            continue
+        fields.append((f"story[{i}].bodyKo", sec.get("bodyKo")))
+    for i, feat in enumerate(p.get("featuresKo") or []):
+        fields.append((f"featuresKo[{i}]", feat))
+    for i, spec in enumerate(p.get("techSpecs") or []):
+        if (spec or {}).get("labelKo") == "제품 코드":
+            continue
+        fields.append((f"techSpecs[{i}].valueKo", (spec or {}).get("valueKo")))
+    bad: list[tuple[str, str, float]] = []
+    for field, val in fields:
+        s = str(val or "").strip()
+        if not s:
+            continue
+        if is_good_korean(s, max_ratio=MAX_EN_RATIO):
+            continue
+        bad.append((pid, field, en_ratio(s)))
+    return bad
+
+
+def product_copy_ok(p: dict) -> bool:
+    return not product_bad_fields(p)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fail", action="store_true")
     ap.add_argument("--max-bad", type=int, default=0)
+    ap.add_argument(
+        "--baseline-ref",
+        help="git ref whose committed catalogue sets --max-bad (no new regressions)",
+    )
     ap.add_argument("--category", default="all")
     args = ap.parse_args()
     products = json.loads(CATALOG.read_text(encoding="utf-8")) if CATALOG.exists() else []
+    if args.baseline_ref:
+        from stock_only_fallback import committed_catalog
+
+        base = committed_catalog(str(CATALOG.relative_to(ROOT)), args.baseline_ref)
+        args.max_bad = sum(len(product_bad_fields(p)) for p in base)
+        print(f"AL Korean baseline {args.baseline_ref} bad_fields={args.max_bad}", flush=True)
     if args.category != "all":
         cats = {c.strip() for c in args.category.split(",") if c.strip()}
         products = [p for p in products if p.get("category") in cats]
     bad: list[tuple[str, str, float]] = []
     for p in products:
-        pid = str(p.get("id") or "")
-        fields = [("descriptionKo", p.get("descriptionKo"))]
-        for i, sec in enumerate(p.get("storySections") or []):
-            if str(sec.get("titleKo") or "") == "스타일링":
-                continue
-            fields.append((f"story[{i}].bodyKo", sec.get("bodyKo")))
-        for i, feat in enumerate(p.get("featuresKo") or []):
-            fields.append((f"featuresKo[{i}]", feat))
-        for i, spec in enumerate(p.get("techSpecs") or []):
-            if (spec or {}).get("labelKo") == "제품 코드":
-                continue
-            fields.append((f"techSpecs[{i}].valueKo", (spec or {}).get("valueKo")))
-        for field, val in fields:
-            s = str(val or "").strip()
-            if not s:
-                continue
-            if is_good_korean(s, max_ratio=MAX_EN_RATIO):
-                continue
-            bad.append((pid, field, en_ratio(s)))
+        bad.extend(product_bad_fields(p))
     print(f"AL Korean QA — products={len(products)} bad_fields={len(bad)}", flush=True)
     for pid, field, ratio in bad[:25]:
         print(f"  {pid} {field} en_ratio={ratio:.2f}", flush=True)

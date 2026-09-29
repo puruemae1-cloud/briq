@@ -76,11 +76,7 @@ def main() -> None:
             mens.content_image_urls(prev) or mens.gallery_image_urls(prev)
         ):
             handle = prev.get("handle") or link.replace("/", "-") or key
-            use_gm = mens.should_greymat_row(
-                prev.get("entity") or {},
-                handle,
-                channels=prev.get("channels") or membership.get(key, set()),
-            )
+            use_gm = mens.should_greymat_row(prev.get("entity") or {}, handle)
             local = mens.download_images(
                 handle,
                 mens.image_urls_for_row(prev, greymat=use_gm),
@@ -119,7 +115,7 @@ def main() -> None:
             urls = mens.plp_image_urls(p)
         entity = (pdp or {}).get("entity") or {}
         ch = sorted(membership.get(key, set()))
-        use_gm = mens.should_greymat_row(entity, handle, channels=ch)
+        use_gm = mens.should_greymat_row(entity, handle)
         row_for_urls = {"content": (pdp or {}).get("content") or {}}
         plp_urls = mens.plp_image_urls(p)
         if not mens.gallery_image_urls(row_for_urls) and not mens.content_image_urls(
@@ -201,10 +197,7 @@ def main() -> None:
                 "images": mens.download_images(
                     handle,
                     mens.plp_image_urls(p),
-                    greymat=mens.should_greymat_row(
-                        handle=handle,
-                        channels=membership.get(key, set()),
-                    ),
+                    greymat=mens.should_greymat_row(handle=handle),
                 ),
                 "sourceUrl": f"{mens.BASE}/uk/{link}",
             }

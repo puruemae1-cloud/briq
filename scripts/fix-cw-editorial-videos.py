@@ -9,7 +9,7 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
 
-ROOT = Path("/Users/jeonghyunlee/Documents/briq")
+ROOT = Path(__file__).resolve().parents[1]
 ED_PATH = ROOT / "src/data/cw/cw-editorial.json"
 RAW = json.loads((ROOT / "src/data/cw/cw-catalog-raw.json").read_text())["products"]
 

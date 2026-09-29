@@ -53,8 +53,25 @@ for attempt in range(1, 6):
         break
     print(f"WARN attempt {attempt}: retranslate_rc={last_rc} qa_rc={qa.returncode}", flush=True)
 else:
-    print("ERROR AL KO still English after 5 retranslate attempts", flush=True)
-    raise SystemExit(last_rc or 1)
+    # Ship stock/size/price on the committed Korean copy rather than dropping
+    # the whole sync; untranslated new styles wait for the next run.
+    print("WARN AL KO still English after 5 attempts — stock-only fallback", flush=True)
+    import importlib.util
+
+    sys.path.insert(0, str(Path.cwd() / "scripts"))
+    from stock_only_fallback import apply_fallback
+
+    spec = importlib.util.spec_from_file_location("check_al_korean", "scripts/check-al-korean.py")
+    check_al = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(check_al)
+    apply_fallback(Path("src/data/al/al-catalog.json"), check_al.product_copy_ok)
+    qa = subprocess.run(
+        [sys.executable, "scripts/check-al-korean.py", "--fail", "--baseline-ref", "HEAD"],
+        cwd=str(Path.cwd()),
+    )
+    if qa.returncode != 0:
+        print("ERROR AL KO regressed past the committed catalogue", flush=True)
+        raise SystemExit(qa.returncode)
 
 # Bags / shoes PLPs read slices, not the full catalogue.
 for script in ("extract-bags-catalogs.py", "extract-shoes-catalogs.py"):

@@ -34,6 +34,9 @@ jobs:
     if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    env:
+      # run-ce-*.sh default to the macOS cache path when this is unset.
+      PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,7 +45,7 @@ jobs:
       - name: Install Playwright
         run: |
           pip install playwright
-          python3 -m playwright install chromium
+          python3 -m playwright install --with-deps webkit chromium
       - name: Run Celine weekly sync
         run: |
           chmod +x scripts/run-ce-weekly-sync.sh
@@ -52,12 +55,5 @@ jobs:
         run: python3 scripts/apply-new-badge-ttl.py --brand ce
       - name: Commit catalog updates
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/ce || true
-          if git diff --staged --quiet; then
-            echo "No CE catalog changes"
-          else
-            git commit -m "chore(ce): weekly catalog sync [catalog-sync]"
-            git push
-          fi
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh "chore(ce): weekly catalog sync" src/data/ce

@@ -11,7 +11,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-ROOT = Path("/Users/jeonghyunlee/Documents/briq")
+ROOT = Path(__file__).resolve().parents[1]
 RAW = json.loads((ROOT / "src/data/cw/cw-catalog-raw.json").read_text())
 OUT = ROOT / "src/data/cw/cw-pdp-enriched.json"
 IMG = ROOT / "public/products/cw-pdp"

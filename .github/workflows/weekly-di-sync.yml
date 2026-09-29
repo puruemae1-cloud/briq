@@ -41,18 +41,27 @@ jobs:
     needs: gate
     if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 1440
+    # GitHub-hosted runners stop at 360 minutes regardless of a higher value.
+    timeout-minutes: 360
+    env:
+      # run-di-*.sh default to the macOS cache path when this is unset.
+      PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Git identity for pipeline commits
+        run: |
+          git config user.name "briq-bot"
+          git config user.email "briq-bot@users.noreply.github.com"
 
       - name: Install Python deps
         run: |
@@ -62,9 +71,22 @@ jobs:
       - name: Install Playwright WebKit
         run: python3 -m playwright install --with-deps webkit
 
+      # Option-level stock first, so a long scrape hitting the runner limit
+      # cannot leave sold-out sizes purchasable.
+      - name: Refresh Dior per-size stock (Algolia)
+        run: python3 scripts/patch-di-rtw-sizes-from-algolia.py
+
+      - name: Commit per-size stock
+        run: |
+          chmod +x scripts/ci-commit-push.sh
+          scripts/ci-commit-push.sh "chore(di): per-size stock refresh" src/data/di
+
       - name: Run Dior weekly sync
         env:
           PAUSE_SEC: "30"
         run: |
           chmod +x scripts/run-di-weekly-sync.sh
           scripts/run-di-weekly-sync.sh
+
+      - name: Commit catalog updates
+        run: scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di

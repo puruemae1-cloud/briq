@@ -498,7 +498,7 @@ def main() -> None:
             urls = plp_urls
         entity = (pdp or {}).get("entity") or {}
         ch = sorted(membership.get(key, set()))
-        use_gm = should_greymat_row(entity, handle, channels=ch)
+        use_gm = should_greymat_row(entity, handle)
         row_for_urls = {
             "content": (pdp or {}).get("content") or {},
         }
@@ -584,10 +584,7 @@ def main() -> None:
                 "images": download_images(
                     handle,
                     plp_image_urls(p),
-                    greymat=should_greymat_row(
-                        handle=handle,
-                        channels=membership.get(key, set()),
-                    ),
+                    greymat=should_greymat_row(handle=handle),
                 ),
                 "sourceUrl": f"{BASE}/uk/{link}",
             }

@@ -38,26 +38,29 @@ if git diff --staged --name-only | grep -Eq '(^|/)(src/data/categories\.ts|src/d
   python3 scripts/check-nav-shop-links.py --fail
 fi
 
-# Avoid non-fast-forward if another weekly job pushed first.
-pull_rebase() {
-  git pull --rebase --autostash origin main || git pull --rebase --autostash origin HEAD || true
-}
-
-pull_rebase
-
+# Commit before rebasing: an autostash pull would unstage the sync output
+# and leave nothing to commit when another weekly job pushed first.
 git commit -m "$(cat <<EOF
 ${SUBJECT}
 
 EOF
 )"
 
+pull_rebase() {
+  if ! git pull --rebase --autostash origin main; then
+    git rebase --abort || true
+    echo "Rebase onto origin/main failed." >&2
+    return 1
+  fi
+}
+
 for attempt in 1 2 3; do
+  pull_rebase || continue
   if git push origin HEAD:main; then
     echo "Pushed catalogue changes to main."
     exit 0
   fi
   echo "Push attempt ${attempt} failed — rebasing and retrying…" >&2
-  pull_rebase
 done
 
 echo "Push failed after 3 attempts." >&2

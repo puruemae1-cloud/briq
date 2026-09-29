@@ -45,12 +45,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install deps
-        run: pip install -r scripts/requirements-images.txt || true
+        run: |
+          pip install -r scripts/requirements-images.txt || true
+          pip install playwright
+          python3 -m playwright install --with-deps chromium webkit
       - name: Restore vw-pdp images from product-images tag
         run: python3 scripts/restore-product-images-tag.py --dirs vw-pdp || true
       - name: Run VW weekly sync
