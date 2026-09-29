@@ -27,7 +27,7 @@ def main() -> int:
     args = ap.parse_args()
 
     fetched = subprocess.run(
-        ["git", "fetch", "--depth=1", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
         cwd=ROOT,
         check=False,
     )
