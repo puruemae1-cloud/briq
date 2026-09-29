@@ -1,141 +1,34 @@
 {
-  "scrapedAt": "2026-08-25T20:02:07.386559+00:00",
+  "scrapedAt": "2026-09-29T12:38:38.643030+00:00",
   "source": "https://www.prada.com/gb/en/mens/travel/c/10175EU",
   "collections": {
     "pr-men-travel": {
       "label": "Men's travel",
       "categoryCode": "10175EU",
-      "count": 32,
+      "count": 25,
       "url": "https://www.prada.com/gb/en/mens/travel/c/10175EU"
     },
     "pr-men-travel-bags": {
       "label": "Travel bags",
       "categoryCode": "10178EU",
-      "count": 18,
+      "count": 14,
       "url": "https://www.prada.com/gb/en/mens/travel/travel-bags/c/10178EU"
     },
     "pr-men-luggage-carry-on": {
       "label": "Luggage and carry-on",
       "categoryCode": "10176EU",
-      "count": 5,
+      "count": 4,
       "url": "https://www.prada.com/gb/en/mens/travel/luggage-and-carry-on/c/10176EU"
     },
     "pr-men-travel-accessories": {
       "label": "Travel accessories",
       "categoryCode": "10177EU",
-      "count": 10,
+      "count": 8,
       "url": "https://www.prada.com/gb/en/mens/travel/travel-accessories/c/10177EU"
     }
   },
-  "count": 32,
+  "count": 25,
   "products": [
-    {
-      "id": "2NA002_2HE1_F0008",
-      "productCode": "2NA002_2HE1_F0008",
-      "sku": "2NA002_2HE1_F0008",
-      "parentProduct": "2NA002_2HE1",
-      "officialNameEn": "Prada Speedrock Re-Nylon and leather pouch",
-      "title": "Prada Speedrock Re-Nylon and leather pouch",
-      "color": "Navy",
-      "colorCode": "F0008",
-      "colorHex": "#2F394C",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Navy",
-            "raw": "BLEU"
-          },
-          "Code": "F0008",
-          "Hexadecimal": "#2F394C",
-          "UrlReconstructed": {
-            "en_GB": "/p/prada-speedrock-re-nylon-and-leather-pouch/2NA002_2HE1_F0008"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/prada-speedrock-re-nylon-and-leather-pouch/2NA002_2HE1_F0008",
-      "gbpPrice": 720.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLR.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-accessories",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-accessories",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "12.5 cm",
-        "width": "22 cm",
-        "length": "11 cm"
-      },
-      "material": "Fabric/Leather",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10129EU",
-          "10156EU",
-          "10175EU",
-          "10177EU",
-          "10179EU",
-          "10182EU",
-          "10301EU",
-          "10527EU",
-          "10719EU"
-        ],
-        "categoriesEnriched": [
-          "10129EU|false|false",
-          "10719EU|false|false",
-          "10156EU|false|false",
-          "10179EU|false|false",
-          "10182EU|false|true",
-          "10301EU|false|false",
-          "10527EU|false|false",
-          "10177EU|false|false",
-          "10175EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "New In"
-          },
-          "level_3": {
-            "en_GB": "Travel accessories"
-          }
-        }
-      },
-      "description": "This refined and functional Re-Nylon accessory has a compact yet roomy design with an external and internal zipper pocket. Technical details inspired by the outdoor world complete the leather-trimmed pouch decorated with the emblematic triangle logo. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and follow the washing instructions on the label.",
-      "details": [
-        "Leather handle",
-        "Enameled metal triangle logo",
-        "Zipper closure",
-        "One external zipper pocket",
-        "Internal zipper pocket",
-        "Re-nylon lining"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA002/2HE1F0008/2NA002_2HE1_F0008_SLO.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:02:00.512611+00:00",
-      "localImages": [
-        "/products/pr-pdp/2NA002_2HE1_F0008/1.jpg",
-        "/products/pr-pdp/2NA002_2HE1_F0008/2.jpg",
-        "/products/pr-pdp/2NA002_2HE1_F0008/3.jpg",
-        "/products/pr-pdp/2NA002_2HE1_F0008/4.jpg",
-        "/products/pr-pdp/2NA002_2HE1_F0008/5.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2NA002_2HE1_F0008/1.jpg",
-      "localHover": "/products/pr-pdp/2NA002_2HE1_F0008/2.jpg"
-    },
     {
       "id": "2NA030_2DMH_F0002",
       "productCode": "2NA030_2DMH_F0002",
@@ -233,7 +126,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA030/2DMHF0002/2NA030_2DMH_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA030/2DMHF0002/2NA030_2DMH_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.529909+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.100810+00:00",
       "localImages": [
         "/products/pr-pdp/2NA030_2DMH_F0002/1.jpg",
         "/products/pr-pdp/2NA030_2DMH_F0002/2.jpg",
@@ -339,7 +232,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA045/2DMHF0002/2NA045_2DMH_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA045/2DMHF0002/2NA045_2DMH_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.476609+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.101310+00:00",
       "localImages": [
         "/products/pr-pdp/2NA045_2DMH_F0002/1.jpg",
         "/products/pr-pdp/2NA045_2DMH_F0002/2.jpg",
@@ -448,7 +341,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA055/2DMIF0002/2NA055_2DMI_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA055/2DMIF0002/2NA055_2DMI_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.423193+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.101538+00:00",
       "localImages": [
         "/products/pr-pdp/2NA055_2DMI_F0002/1.jpg",
         "/products/pr-pdp/2NA055_2DMI_F0002/2.jpg",
@@ -555,7 +448,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA057/2DMIF0002/2NA057_2DMI_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA057/2DMIF0002/2NA057_2DMI_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.554552+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.101904+00:00",
       "localImages": [
         "/products/pr-pdp/2NA057_2DMI_F0002/1.jpg",
         "/products/pr-pdp/2NA057_2DMI_F0002/2.jpg",
@@ -662,7 +555,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA059/2DMIF0002/2NA059_2DMI_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA059/2DMIF0002/2NA059_2DMI_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.579374+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.102196+00:00",
       "localImages": [
         "/products/pr-pdp/2NA059_2DMI_F0002/1.jpg",
         "/products/pr-pdp/2NA059_2DMI_F0002/2.jpg",
@@ -672,107 +565,6 @@
       ],
       "localImage": "/products/pr-pdp/2NA059_2DMI_F0002/1.jpg",
       "localHover": "/products/pr-pdp/2NA059_2DMI_F0002/2.jpg"
-    },
-    {
-      "id": "2NA068_2DEY_F03MQ",
-      "productCode": "2NA068_2DEY_F03MQ",
-      "sku": "2NA068_2DEY_F03MQ",
-      "parentProduct": "2NA068_2DEY",
-      "officialNameEn": "Re-Nylon pouch",
-      "title": "Re-Nylon pouch",
-      "color": "Black/Burnt",
-      "colorCode": "F03MQ",
-      "colorHex": "#000000#43372F",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Black/Burnt",
-            "raw": "NERO+BRUCIATO 1"
-          },
-          "Code": "F03MQ",
-          "Hexadecimal": "#000000#43372F",
-          "UrlReconstructed": {
-            "en_GB": "/p/re-nylon-pouch/2NA068_2DEY_F03MQ"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/re-nylon-pouch/2NA068_2DEY_F03MQ",
-      "gbpPrice": 710.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLR.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-accessories",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-accessories",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "14 cm",
-        "width": "22 cm",
-        "length": "6.5 cm"
-      },
-      "material": "Fabric",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10129EU",
-          "10156EU",
-          "10175EU",
-          "10177EU",
-          "10179EU",
-          "10182EU",
-          "10527EU"
-        ],
-        "categoriesEnriched": [
-          "10179EU|false|false",
-          "10129EU|false|false",
-          "10156EU|false|false",
-          "10182EU|false|true",
-          "10527EU|false|false",
-          "10177EU|false|false",
-          "10175EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "New In"
-          },
-          "level_3": {
-            "en_GB": "Travel accessories"
-          }
-        }
-      },
-      "description": "This refined and functional accessory made of Re-Nylon has a light, compact design with zipper closure. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and follow the washing instructions on the label.",
-      "details": [
-        "Enameled metal triangle logo",
-        "Zipper closure"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA068/2DEYF03MQ/2NA068_2DEY_F03MQ_SLO.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:02:00.041719+00:00",
-      "localImages": [
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/1.jpg",
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/2.jpg",
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/3.jpg",
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/4.jpg",
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/5.jpg",
-        "/products/pr-pdp/2NA068_2DEY_F03MQ/6.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2NA068_2DEY_F03MQ/1.jpg",
-      "localHover": "/products/pr-pdp/2NA068_2DEY_F03MQ/2.jpg"
     },
     {
       "id": "2NA819_2DMH_F0002",
@@ -885,7 +677,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA819/2DMHF0002/2NA819_2DMH_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA819/2DMHF0002/2NA819_2DMH_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.850184+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.102594+00:00",
       "localImages": [
         "/products/pr-pdp/2NA819_2DMH_F0002/1.jpg",
         "/products/pr-pdp/2NA819_2DMH_F0002/2.jpg",
@@ -993,7 +785,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA819/PN9F0002/2NA819_PN9_F0002_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NA/2NA819/PN9F0002/2NA819_PN9_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.790979+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.103094+00:00",
       "localImages": [
         "/products/pr-pdp/2NA819_PN9_F0002/1.jpg",
         "/products/pr-pdp/2NA819_PN9_F0002/2.jpg",
@@ -1115,7 +907,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2NE/2NE789/2DMHF0002/2NE789_2DMH_F0002_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2NE/2NE789/2DMHF0002/2NE789_2DMH_F0002_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.877949+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.102935+00:00",
       "localImages": [
         "/products/pr-pdp/2NE789_2DMH_F0002/1.jpg",
         "/products/pr-pdp/2NE789_2DMH_F0002/2.jpg",
@@ -1128,12 +920,12 @@
       "localHover": "/products/pr-pdp/2NE789_2DMH_F0002/2.jpg"
     },
     {
-      "id": "2VC014_2DMH_F0002_V_XOO",
-      "productCode": "2VC014_2DMH_F0002_V_XOO",
-      "sku": "2VC014_2DMH_F0002_V_XOO",
-      "parentProduct": "2VC014_2DMH_V_XOO",
-      "officialNameEn": "Re-Nylon and Saffiano leather duffel bag",
-      "title": "Re-Nylon and Saffiano leather duffel bag",
+      "id": "2VC013_2DMH_F0002_V_XOO",
+      "productCode": "2VC013_2DMH_F0002_V_XOO",
+      "sku": "2VC013_2DMH_F0002_V_XOO",
+      "parentProduct": "2VC013_2DMH_V_XOO",
+      "officialNameEn": "Re-Nylon and Saffiano leather duffle bag",
+      "title": "Re-Nylon and Saffiano leather duffle bag",
       "color": "Black",
       "colorCode": "F0002",
       "colorHex": "#000000",
@@ -1146,14 +938,14 @@
           "Code": "F0002",
           "Hexadecimal": "#000000",
           "UrlReconstructed": {
-            "en_GB": "/p/re-nylon-and-saffiano-leather-duffel-bag/2VC014_2DMH_F0002_V_XOO"
+            "en_GB": "/p/re-nylon-and-saffiano-leather-duffle-bag/2VC013_2DMH_F0002_V_XOO"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-duffel-bag/2VC014_2DMH_F0002_V_XOO",
-      "gbpPrice": 2400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_MDL.jpg",
+      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-duffle-bag/2VC013_2DMH_F0002_V_XOO",
+      "gbpPrice": 2800.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_MDL.jpg",
       "collections": [
         "pr-men-travel",
         "pr-men-travel-bags",
@@ -1165,9 +957,9 @@
       "inStock": true,
       "availability": "Green",
       "dimensions": {
-        "height": "27 cm",
-        "width": "45 cm",
-        "length": "23 cm"
+        "height": "33 cm",
+        "width": "55 cm",
+        "length": "27 cm"
       },
       "material": "Fabric/Leather",
       "kind": "mens-travel",
@@ -1182,8 +974,7 @@
           "10179EU",
           "10525EU",
           "10527EU",
-          "10542EU",
-          "10811EU"
+          "10542EU"
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
@@ -1195,8 +986,7 @@
           "10178EU|false|false",
           "10179EU|false|false",
           "10525EU|false|false",
-          "10527EU|false|false",
-          "10811EU|false|false"
+          "10527EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -1210,40 +1000,40 @@
           }
         }
       },
-      "description": "This Re-Nylon duffel bag with fine Saffiano leather trim expresses contemporary elegance. Provided with a convenient detachable shoulder strap, the bag is decorated with the iconic metal triangle logo. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
+      "description": "In Prada collections, traditional materials are combined with technologically innovative, recycled fibers to create hybrid designs. This duffle bag, accented with sophisticated details that make it functional yet elegant, is made of two of the brand's most iconic materials: Saffiano leather, synonymous with luxury, a very high quality leather defined by its crosshatch texture, and Re-Nylon, a regenerated nylon yarn produced from recycled, purified plastic materials collected in the ocean, fishing nets, and textile fabrics. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
       "details": [
         "Leather handles",
-        "Detachable, adjustable woven nylon tape and leather shoulder strap",
-        "Enameled metal triangle logo on front",
+        "Detachable adjustable woven nylon shoulder strap with shoulder pad",
+        "Enameled metal triangle logo on the front",
         "Zipper closure with lock",
         "Removable leather name tag and keychain",
-        "Two inner zipper pockets",
-        "Re-Nylon logo-print lining"
+        "Interior with two zipper pockets",
+        "Logo-print Re-Nylon lining"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC014/2DMHF0002/2VC014_2DMH_F0002_V_XOO_MDLA.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLR.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLB.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_SLO.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_MDL.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC013/2DMHF0002/2VC013_2DMH_F0002_V_XOO_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:57.907004+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.446815+00:00",
       "localImages": [
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/1.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/2.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/3.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/4.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/5.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/6.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/7.jpg",
-        "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/8.jpg"
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/1.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/2.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/3.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/4.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/5.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/6.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/7.jpg",
+        "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/8.jpg"
       ],
-      "localImage": "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC014_2DMH_F0002_V_XOO/7.jpg"
+      "localImage": "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/1.jpg",
+      "localHover": "/products/pr-pdp/2VC013_2DMH_F0002_V_XOO/7.jpg"
     },
     {
       "id": "2VC015_2DMG_F0002_V_MON",
@@ -1346,7 +1136,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC015/2DMGF0002/2VC015_2DMG_F0002_V_MON_MDL.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC015/2DMGF0002/2VC015_2DMG_F0002_V_MON_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.110064+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.103910+00:00",
       "localImages": [
         "/products/pr-pdp/2VC015_2DMG_F0002_V_MON/1.jpg",
         "/products/pr-pdp/2VC015_2DMG_F0002_V_MON/2.jpg",
@@ -1358,179 +1148,6 @@
       ],
       "localImage": "/products/pr-pdp/2VC015_2DMG_F0002_V_MON/1.jpg",
       "localHover": "/products/pr-pdp/2VC015_2DMG_F0002_V_MON/6.jpg"
-    },
-    {
-      "id": "2VC018_9Z2_F0002_V_OOO",
-      "productCode": "2VC018_9Z2_F0002_V_OOO",
-      "sku": "2VC018_9Z2_F0002_V_OOO",
-      "parentProduct": "2VC018_9Z2_V_OOO",
-      "officialNameEn": "Saffiano Leather Travel Bag",
-      "title": "Saffiano Leather Travel Bag",
-      "color": "Black",
-      "colorCode": "F0002",
-      "colorHex": "#000000",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Black",
-            "raw": "NERO"
-          },
-          "Code": "F0002",
-          "Hexadecimal": "#000000",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0002_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "White",
-            "raw": "BIANCO N"
-          },
-          "Code": "F0PG7",
-          "Hexadecimal": "#FFFFFF",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0PG7_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Caramel",
-            "raw": "CARAMEL X N"
-          },
-          "Code": "F03OF",
-          "Hexadecimal": "#CE9860",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03OF_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Coffee",
-            "raw": "CAFFE' N"
-          },
-          "Code": "F03X0",
-          "Hexadecimal": "#51342D",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03X0_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Loden",
-            "raw": "LODEN N"
-          },
-          "Code": "F03QJ",
-          "Hexadecimal": "#36432C",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03QJ_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Bamboo/Cork beige",
-            "raw": "FUMO N"
-          },
-          "Code": "F03SG",
-          "Hexadecimal": "#999A95",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03SG_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Burgundy",
-            "raw": "BORDEAUX N"
-          },
-          "Code": "F0LV7",
-          "Hexadecimal": "#71182C",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0LV7_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/saffiano-leather-travel-bag/2VC018_9Z2_F0002_V_OOO",
-      "gbpPrice": 3400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "27.5 cm",
-        "width": "50 cm",
-        "length": "25 cm"
-      },
-      "material": "Leather",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10099EU",
-          "10129EU",
-          "10175EU",
-          "10178EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10129EU|false|false",
-          "10094EU|false|false",
-          "10099EU|false|false",
-          "10175EU|false|false",
-          "10178EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Travel bags"
-          }
-        }
-      },
-      "description": "This elegant duffle bag in Saffiano leather with all-around zipper and nylon shoulder strap has rigorous design. The leather name tag and metal lock engraved with the lettering logo decorate this accessory.",
-      "details": [
-        "Leather handles",
-        "Detachable adjustable woven nylon shoulder strap",
-        "Enameled metal triangle logo on the front",
-        "Zipper closure",
-        "Removable leather name tag",
-        "Interior with two zipped pockets",
-        "Prada logo nylon lining",
-        "Small metal feet"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F0002/2VC018_9Z2_F0002_V_OOO_MDLA.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.144149+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/7.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC018_9Z2_F0002_V_OOO/6.jpg"
     },
     {
       "id": "2VC018_9Z2_F03OF_V_OOO",
@@ -1693,7 +1310,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03OF/2VC018_9Z2_F03OF_V_OOO_MDL.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03OF/2VC018_9Z2_F03OF_V_OOO_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.211841+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.104223+00:00",
       "localImages": [
         "/products/pr-pdp/2VC018_9Z2_F03OF_V_OOO/1.jpg",
         "/products/pr-pdp/2VC018_9Z2_F03OF_V_OOO/2.jpg",
@@ -1706,513 +1323,6 @@
       ],
       "localImage": "/products/pr-pdp/2VC018_9Z2_F03OF_V_OOO/1.jpg",
       "localHover": "/products/pr-pdp/2VC018_9Z2_F03OF_V_OOO/7.jpg"
-    },
-    {
-      "id": "2VC018_9Z2_F03QJ_V_OOO",
-      "productCode": "2VC018_9Z2_F03QJ_V_OOO",
-      "sku": "2VC018_9Z2_F03QJ_V_OOO",
-      "parentProduct": "2VC018_9Z2_V_OOO",
-      "officialNameEn": "Saffiano Leather Travel Bag",
-      "title": "Saffiano Leather Travel Bag",
-      "color": "Loden",
-      "colorCode": "F03QJ",
-      "colorHex": "#36432C",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Loden",
-            "raw": "LODEN N"
-          },
-          "Code": "F03QJ",
-          "Hexadecimal": "#36432C",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03QJ_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Black",
-            "raw": "NERO"
-          },
-          "Code": "F0002",
-          "Hexadecimal": "#000000",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0002_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "White",
-            "raw": "BIANCO N"
-          },
-          "Code": "F0PG7",
-          "Hexadecimal": "#FFFFFF",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0PG7_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Caramel",
-            "raw": "CARAMEL X N"
-          },
-          "Code": "F03OF",
-          "Hexadecimal": "#CE9860",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03OF_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Coffee",
-            "raw": "CAFFE' N"
-          },
-          "Code": "F03X0",
-          "Hexadecimal": "#51342D",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03X0_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Bamboo/Cork beige",
-            "raw": "FUMO N"
-          },
-          "Code": "F03SG",
-          "Hexadecimal": "#999A95",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F03SG_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Burgundy",
-            "raw": "BORDEAUX N"
-          },
-          "Code": "F0LV7",
-          "Hexadecimal": "#71182C",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-travel-bag/2VC018_9Z2_F0LV7_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/saffiano-leather-travel-bag/2VC018_9Z2_F03QJ_V_OOO",
-      "gbpPrice": 3400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "27.5 cm",
-        "width": "50 cm",
-        "length": "25 cm"
-      },
-      "material": "Leather",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10129EU",
-          "10175EU"
-        ],
-        "categoriesEnriched": [
-          "10175EU|false|false",
-          "10047EU|false|false",
-          "10094EU|true|false",
-          "10129EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          }
-        }
-      },
-      "description": "This elegant duffle bag in Saffiano leather with all-around zipper and nylon shoulder strap has rigorous design. The leather name tag and metal lock engraved with the lettering logo decorate this accessory.",
-      "details": [
-        "Leather handles",
-        "Detachable adjustable woven nylon shoulder strap",
-        "Enameled metal triangle logo on the front",
-        "Zipper closure",
-        "Removable leather name tag",
-        "Interior with two zipped pockets",
-        "Prada logo nylon lining",
-        "Small metal feet"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC018/9Z2F03QJ/2VC018_9Z2_F03QJ_V_OOO_MDLA.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.172038+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/7.jpg",
-        "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/8.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC018_9Z2_F03QJ_V_OOO/7.jpg"
-    },
-    {
-      "id": "2VC051_2CX9_F0018_V_OOO",
-      "productCode": "2VC051_2CX9_F0018_V_OOO",
-      "sku": "2VC051_2CX9_F0018_V_OOO",
-      "parentProduct": "2VC051_2CX9_V_OOO",
-      "officialNameEn": "Linen blend duffle bag",
-      "title": "Linen blend duffle bag",
-      "color": "Natural",
-      "colorCode": "F0018",
-      "colorHex": "#F0E5D6",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Natural",
-            "raw": "NATURALE"
-          },
-          "Code": "F0018",
-          "Hexadecimal": "#F0E5D6",
-          "UrlReconstructed": {
-            "en_GB": "/p/linen-blend-duffle-bag/2VC051_2CX9_F0018_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/linen-blend-duffle-bag/2VC051_2CX9_F0018_V_OOO",
-      "gbpPrice": 2400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "32 cm",
-        "width": "53 cm",
-        "length": "65 cm"
-      },
-      "material": "Fabric",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10129EU",
-          "10175EU",
-          "10178EU",
-          "10749EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10129EU|false|false",
-          "10094EU|false|false",
-          "10175EU|false|false",
-          "10178EU|false|false",
-          "10749EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Travel bags"
-          }
-        }
-      },
-      "description": "This linen blend duffle bag with a light design and sporty style is enhanced with refined leather details. The roomy, versatile style is characterized by a removable shoulder strap, while the tonal embroidered logo completes the accessory with a distinctive note.",
-      "details": [
-        "Linen blend handles",
-        "Detachable, adjustable woven cotton tape shoulder strap. Maximum length 120 cm - Minimum length: 65 cm - Maximum drop 60 cm - Minimum drop 30 cm",
-        "Embroidered logo on the front",
-        "Zipper closure",
-        "Removable leather key chain with hot-stamped lettering logo",
-        "Linen blend interior with zipper pocket and patch pocket"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CX9F0018/2VC051_2CX9_F0018_V_OOO_MDLA.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.294632+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/7.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC051_2CX9_F0018_V_OOO/6.jpg"
-    },
-    {
-      "id": "2VC051_2CYA_F0216_V_OOO",
-      "productCode": "2VC051_2CYA_F0216_V_OOO",
-      "sku": "2VC051_2CYA_F0216_V_OOO",
-      "parentProduct": "2VC051_2CYA_V_OOO",
-      "officialNameEn": "Canvas duffle bag",
-      "title": "Canvas duffle bag",
-      "color": "Baltic Blue",
-      "colorCode": "F0216",
-      "colorHex": "#0E4573",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Baltic Blue",
-            "raw": "BALTICO"
-          },
-          "Code": "F0216",
-          "Hexadecimal": "#0E4573",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffle-bag/2VC051_2CYA_F0216_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Tabacco",
-            "raw": "TABACCO C"
-          },
-          "Code": "F04MO",
-          "Hexadecimal": "#AB7C44",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffle-bag/2VC051_2CYA_F04MO_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/canvas-duffle-bag/2VC051_2CYA_F0216_V_OOO",
-      "gbpPrice": 2400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "32 cm",
-        "width": "53 cm",
-        "length": "65 cm"
-      },
-      "material": "Fabric",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10129EU",
-          "10175EU",
-          "10178EU",
-          "10749EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10129EU|false|false",
-          "10094EU|false|false",
-          "10175EU|false|false",
-          "10178EU|false|false",
-          "10749EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Travel bags"
-          }
-        }
-      },
-      "description": "This canvas duffle bag with a light design and sporty style is enhanced with refined leather details. The roomy, versatile style is characterized by a removable shoulder strap, while the tonal embroidered logo completes the accessory with a distinctive note.",
-      "details": [
-        "Canvas handles",
-        "Detachable, adjustable woven cotton tape shoulder strap. Maximum length 120 cm - Minimum length: 65 cm - Maximum drop 60 cm - Minimum drop 30 cm",
-        "Embroidered logo on the front",
-        "Zipper closure",
-        "Removable leather key ring with hot-stamped lettering logo",
-        "Canvas interior with zipper pocket and patch pocket"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF0216/2VC051_2CYA_F0216_V_OOO_MDLA.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.539188+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/7.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC051_2CYA_F0216_V_OOO/6.jpg"
-    },
-    {
-      "id": "2VC051_2CYA_F04MO_V_OOO",
-      "productCode": "2VC051_2CYA_F04MO_V_OOO",
-      "sku": "2VC051_2CYA_F04MO_V_OOO",
-      "parentProduct": "2VC051_2CYA_V_OOO",
-      "officialNameEn": "Canvas duffle bag",
-      "title": "Canvas duffle bag",
-      "color": "Tabacco",
-      "colorCode": "F04MO",
-      "colorHex": "#AB7C44",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Tabacco",
-            "raw": "TABACCO C"
-          },
-          "Code": "F04MO",
-          "Hexadecimal": "#AB7C44",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffle-bag/2VC051_2CYA_F04MO_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Baltic Blue",
-            "raw": "BALTICO"
-          },
-          "Code": "F0216",
-          "Hexadecimal": "#0E4573",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffle-bag/2VC051_2CYA_F0216_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/canvas-duffle-bag/2VC051_2CYA_F04MO_V_OOO",
-      "gbpPrice": 2400.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "32 cm",
-        "width": "53 cm",
-        "length": "65 cm"
-      },
-      "material": "Fabric",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10175EU",
-          "10178EU",
-          "10749EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10094EU|false|false",
-          "10175EU|false|false",
-          "10178EU|false|false",
-          "10749EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Womens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Travel bags"
-          }
-        }
-      },
-      "description": "This canvas duffle bag with a light design and sporty style is enhanced with refined leather details. The roomy, versatile style is characterized by a removable shoulder strap, while the tonal embroidered logo completes the accessory with a distinctive note.",
-      "details": [
-        "Canvas handles",
-        "Detachable, adjustable woven cotton tape shoulder strap. Maximum length 120 cm - Minimum length: 65 cm - Maximum drop 60 cm - Minimum drop 30 cm",
-        "Embroidered logo on the front",
-        "Zipper closure",
-        "Removable leather key ring with hot-stamped lettering logo",
-        "Canvas interior with zipper pocket and patch pocket"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_MDLA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC051/2CYAF04MO/2VC051_2CYA_F04MO_V_OOO_MDLB.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.513459+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/7.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/8.jpg",
-        "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/9.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC051_2CYA_F04MO_V_OOO/7.jpg"
     },
     {
       "id": "2VC055_2HIK_F0002_V_OOO",
@@ -2315,7 +1425,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC055/2HIKF0002/2VC055_2HIK_F0002_V_OOO_MDLA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC055/2HIKF0002/2VC055_2HIK_F0002_V_OOO_MDLB.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.474939+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.104520+00:00",
       "localImages": [
         "/products/pr-pdp/2VC055_2HIK_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VC055_2HIK_F0002_V_OOO/2.jpg",
@@ -2438,7 +1548,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0002/2VC056_010_F0002_V_OOO_MDL.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0002/2VC056_010_F0002_V_OOO_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.564639+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.104923+00:00",
       "localImages": [
         "/products/pr-pdp/2VC056_010_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VC056_010_F0002_V_OOO/2.jpg",
@@ -2451,128 +1561,6 @@
       ],
       "localImage": "/products/pr-pdp/2VC056_010_F0002_V_OOO/1.jpg",
       "localHover": "/products/pr-pdp/2VC056_010_F0002_V_OOO/7.jpg"
-    },
-    {
-      "id": "2VC056_010_F0F24_V_OOO",
-      "productCode": "2VC056_010_F0F24_V_OOO",
-      "sku": "2VC056_010_F0F24_V_OOO",
-      "parentProduct": "2VC056_010_V_OOO",
-      "officialNameEn": "Canvas duffel bag",
-      "title": "Canvas duffel bag",
-      "color": "Desert Beige",
-      "colorCode": "F0F24",
-      "colorHex": "#E5D5BD",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Desert Beige",
-            "raw": "DESERTO"
-          },
-          "Code": "F0F24",
-          "Hexadecimal": "#E5D5BD",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffel-bag/2VC056_010_F0F24_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Black",
-            "raw": "NERO"
-          },
-          "Code": "F0002",
-          "Hexadecimal": "#000000",
-          "UrlReconstructed": {
-            "en_GB": "/p/canvas-duffel-bag/2VC056_010_F0002_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/canvas-duffel-bag/2VC056_010_F0F24_V_OOO",
-      "gbpPrice": 1890.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_MDL.jpg",
-      "collections": [
-        "pr-men-travel",
-        "pr-men-travel-bags",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-travel-bags",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "27 cm",
-        "width": "53 cm",
-        "length": "140 cm"
-      },
-      "material": "Fabric",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10129EU",
-          "10143EU",
-          "10175EU",
-          "10178EU",
-          "10182EU",
-          "10853EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10094EU|false|false",
-          "10182EU|false|false",
-          "10853EU|false|false",
-          "10129EU|false|false",
-          "10143EU|false|false",
-          "10175EU|false|false",
-          "10178EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Travel bags"
-          }
-        }
-      },
-      "description": "This duffel bag with clean, graphic lines and bold notes interprets functionality as an authentic expression of style. The soft and compact volume adapts to everyday use, while the cotton canvas gives it a sleek yet sporty look. The design is completed by an adjustable shoulder strap and metal hardware that underline the pragmatic essence of an accessory designed for contemporary dynamism.",
-      "details": [
-        "Woven cotton tape handles",
-        "Adjustable woven cotton tape shoulder strap. Maximum length: 140 cm - Minimum length: 77 cm - Maximum drop: 70 cm - Minimum drop: 35 cm",
-        "Printed logo on front and enameled metal triangle logo on the side",
-        "Zipper closure",
-        "Interior with zipper pocket",
-        "Canvas lining"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC056/010F0F24/2VC056_010_F0F24_V_OOO_MDLA.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:58.791376+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/1.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/2.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/3.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/4.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/5.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/6.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/7.jpg",
-        "/products/pr-pdp/2VC056_010_F0F24_V_OOO/8.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VC056_010_F0F24_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VC056_010_F0F24_V_OOO/7.jpg"
     },
     {
       "id": "2VC057_2DW3_F0002_V_OOO",
@@ -2668,7 +1656,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC057/2DW3F0002/2VC057_2DW3_F0002_V_OOO_MDL.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC057/2DW3F0002/2VC057_2DW3_F0002_V_OOO_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.777080+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.105192+00:00",
       "localImages": [
         "/products/pr-pdp/2VC057_2DW3_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VC057_2DW3_F0002_V_OOO/2.jpg",
@@ -2733,7 +1721,6 @@
           "10175EU",
           "10178EU",
           "10882EU",
-          "10997EU",
           "11042EU",
           "11045EU"
         ],
@@ -2742,7 +1729,6 @@
           "10047EU|false|false",
           "10094EU|false|false",
           "10178EU|false|false",
-          "10997EU|false|false",
           "11042EU|false|false",
           "11045EU|false|false",
           "10882EU|false|false"
@@ -2779,7 +1765,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC058/2C75F0003/2VC058_2C75_F0003_V_OOO_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC058/2C75F0003/2VC058_2C75_F0003_V_OOO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.835678+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.105657+00:00",
       "localImages": [
         "/products/pr-pdp/2VC058_2C75_F0003_V_OOO/1.jpg",
         "/products/pr-pdp/2VC058_2C75_F0003_V_OOO/2.jpg",
@@ -2904,7 +1890,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC796/2DMHF0002/2VC796_2DMH_F0002_V_OOO_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VC/2VC796/2DMHF0002/2VC796_2DMH_F0002_V_OOO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:58.732577+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.105936+00:00",
       "localImages": [
         "/products/pr-pdp/2VC796_2DMH_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VC796_2DMH_F0002_V_OOO/2.jpg",
@@ -3020,7 +2006,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/2DMHF0002/2VQ005_2DMH_F0002_V_OOO_MDL.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/2DMHF0002/2VQ005_2DMH_F0002_V_OOO_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.036780+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.106433+00:00",
       "localImages": [
         "/products/pr-pdp/2VQ005_2DMH_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VQ005_2DMH_F0002_V_OOO/2.jpg",
@@ -3033,134 +2019,6 @@
       ],
       "localImage": "/products/pr-pdp/2VQ005_2DMH_F0002_V_OOO/1.jpg",
       "localHover": "/products/pr-pdp/2VQ005_2DMH_F0002_V_OOO/7.jpg"
-    },
-    {
-      "id": "2VQ005_9Z2_F03X0_V_OOO",
-      "productCode": "2VQ005_9Z2_F03X0_V_OOO",
-      "sku": "2VQ005_9Z2_F03X0_V_OOO",
-      "parentProduct": "2VQ005_9Z2_V_OOO",
-      "officialNameEn": "Saffiano leather trolley",
-      "title": "Saffiano leather trolley",
-      "color": "Coffee",
-      "colorCode": "F03X0",
-      "colorHex": "#51342D",
-      "otherColors": [
-        {
-          "Label": {
-            "en_GB": "Coffee",
-            "raw": "CAFFE' N"
-          },
-          "Code": "F03X0",
-          "Hexadecimal": "#51342D",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-trolley/2VQ005_9Z2_F03X0_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Bamboo/Cork beige",
-            "raw": "FUMO N"
-          },
-          "Code": "F03SG",
-          "Hexadecimal": "#999A95",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-trolley/2VQ005_9Z2_F03SG_V_OOO"
-          }
-        },
-        {
-          "Label": {
-            "en_GB": "Burgundy",
-            "raw": "BORDEAUX N"
-          },
-          "Code": "F0LV7",
-          "Hexadecimal": "#71182C",
-          "UrlReconstructed": {
-            "en_GB": "/p/saffiano-leather-trolley/2VQ005_9Z2_F0LV7_V_OOO"
-          }
-        }
-      ],
-      "url": "https://www.prada.com/gb/en/p/saffiano-leather-trolley/2VQ005_9Z2_F03X0_V_OOO",
-      "gbpPrice": 3950.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLR.jpg",
-      "collections": [
-        "pr-men-luggage-carry-on",
-        "pr-men-travel",
-        "pr-mens-handbags",
-        "prada",
-        "prada-bags"
-      ],
-      "leaf": "pr-men-luggage-carry-on",
-      "inStock": true,
-      "availability": "Green",
-      "dimensions": {
-        "height": "56 cm",
-        "width": "36 cm",
-        "length": "22 cm"
-      },
-      "material": "Leather",
-      "kind": "mens-travel",
-      "algolia": {
-        "categories": [
-          "10047EU",
-          "10094EU",
-          "10097EU",
-          "10129EU",
-          "10175EU",
-          "10176EU"
-        ],
-        "categoriesEnriched": [
-          "10047EU|false|false",
-          "10129EU|false|false",
-          "10094EU|false|false",
-          "10097EU|false|false",
-          "10175EU|false|false",
-          "10176EU|false|false"
-        ],
-        "breadcrumbs": {
-          "level_1": {
-            "en_GB": "Mens"
-          },
-          "level_2": {
-            "en_GB": "Travel"
-          },
-          "level_3": {
-            "en_GB": "Luggage and carry on"
-          }
-        }
-      },
-      "description": "This trolley with an elegant, functional design is made of Saffiano leather, an iconic Prada material that enhances the design with its unmistakable crosshatch pattern with waxed finish.",
-      "details": [
-        "Leather handles",
-        "Enameled metal triangle logo on the front",
-        "Zipper closure with TSA combination lock",
-        "Removable leather name tag",
-        "Telescopic handle on the back",
-        "Internal zipper compartment and compartment with elasticized straps",
-        "Logo-print Re-Nylon lining",
-        "Capacity: 33.5 L",
-        "Four wheels"
-      ],
-      "materialsCare": [],
-      "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ005/9Z2F03X0/2VQ005_9Z2_F03X0_V_OOO_SLO.jpg"
-      ],
-      "scrapedAt": "2026-08-25T20:01:59.063689+00:00",
-      "localImages": [
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/1.jpg",
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/2.jpg",
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/3.jpg",
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/4.jpg",
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/5.jpg",
-        "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/6.jpg"
-      ],
-      "localImage": "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VQ005_9Z2_F03X0_V_OOO/2.jpg"
     },
     {
       "id": "2VQ006_2C0N_F0002_V_OCO",
@@ -3258,7 +2116,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ006/2C0NF0002/2VQ006_2C0N_F0002_V_OCO_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ006/2C0NF0002/2VQ006_2C0N_F0002_V_OCO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.117703+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.106868+00:00",
       "localImages": [
         "/products/pr-pdp/2VQ006_2C0N_F0002_V_OCO/1.jpg",
         "/products/pr-pdp/2VQ006_2C0N_F0002_V_OCO/2.jpg",
@@ -3365,7 +2223,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ006/2C0NF0002/2VQ006_2C0N_F0002_V_OOO_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VQ/2VQ006/2C0NF0002/2VQ006_2C0N_F0002_V_OOO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.090996+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.107108+00:00",
       "localImages": [
         "/products/pr-pdp/2VQ006_2C0N_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VQ006_2C0N_F0002_V_OOO/2.jpg",
@@ -3475,7 +2333,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VV/2VV41B/2DMHF0002/2VV41B_2DMH_F0002_V_OOO_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VV/2VV41B/2DMHF0002/2VV41B_2DMH_F0002_V_OOO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.281446+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.107367+00:00",
       "localImages": [
         "/products/pr-pdp/2VV41B_2DMH_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VV41B_2DMH_F0002_V_OOO/2.jpg",
@@ -3590,7 +2448,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2VV/2VV41C/2DMHF0002/2VV41C_2DMH_F0002_V_OOO_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2VV/2VV41C/2DMHF0002/2VV41C_2DMH_F0002_V_OOO_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:02:01.635164+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.107562+00:00",
       "localImages": [
         "/products/pr-pdp/2VV41C_2DMH_F0002_V_OOO/1.jpg",
         "/products/pr-pdp/2VV41C_2DMH_F0002_V_OOO/2.jpg",
@@ -3603,32 +2461,32 @@
       "localHover": "/products/pr-pdp/2VV41C_2DMH_F0002_V_OOO/2.jpg"
     },
     {
-      "id": "2VY011_2CX9_F0018_V_OOO",
-      "productCode": "2VY011_2CX9_F0018_V_OOO",
-      "sku": "2VY011_2CX9_F0018_V_OOO",
-      "parentProduct": "2VY011_2CX9_V_OOO",
-      "officialNameEn": "Linen blend drawstring duffel bag",
-      "title": "Linen blend drawstring duffel bag",
-      "color": "Natural",
-      "colorCode": "F0018",
-      "colorHex": "#F0E5D6",
+      "id": "2VZ019_2DMG_F0002_V_OOL",
+      "productCode": "2VZ019_2DMG_F0002_V_OOL",
+      "sku": "2VZ019_2DMG_F0002_V_OOL",
+      "parentProduct": "2VZ019_2DMG_V_OOL",
+      "officialNameEn": "Re-Nylon and Saffiano leather backpack",
+      "title": "Re-Nylon and Saffiano leather backpack",
+      "color": "Black",
+      "colorCode": "F0002",
+      "colorHex": "#000000",
       "otherColors": [
         {
           "Label": {
-            "en_GB": "Natural",
-            "raw": "NATURALE"
+            "en_GB": "Black",
+            "raw": "NERO"
           },
-          "Code": "F0018",
-          "Hexadecimal": "#F0E5D6",
+          "Code": "F0002",
+          "Hexadecimal": "#000000",
           "UrlReconstructed": {
-            "en_GB": "/p/linen-blend-drawstring-duffel-bag/2VY011_2CX9_F0018_V_OOO"
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ019_2DMG_F0002_V_OOL"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/linen-blend-drawstring-duffel-bag/2VY011_2CX9_F0018_V_OOO",
-      "gbpPrice": 2050.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_MDL.jpg",
+      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-backpack/2VZ019_2DMG_F0002_V_OOL",
+      "gbpPrice": 3050.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_MDL.jpg",
       "collections": [
         "pr-men-travel",
         "pr-men-travel-bags",
@@ -3640,32 +2498,38 @@
       "inStock": true,
       "availability": "Green",
       "dimensions": {
-        "height": "55 cm",
-        "width": "34 cm",
-        "length": "55 cm"
+        "height": "53.5 cm",
+        "width": "32 cm",
+        "length": "16.5 cm"
       },
       "material": "Fabric",
       "kind": "mens-travel",
       "algolia": {
         "categories": [
-          "10094EU",
-          "10099EU",
           "10129EU",
           "10143EU",
           "10144EU",
           "10175EU",
           "10178EU",
-          "10749EU"
+          "10184EU",
+          "10527EU",
+          "10542EU",
+          "10811EU",
+          "11042EU",
+          "11048EU"
         ],
         "categoriesEnriched": [
           "10129EU|false|false",
-          "10094EU|false|false",
-          "10099EU|false|false",
+          "10542EU|false|false",
           "10143EU|false|false",
           "10144EU|false|false",
+          "10527EU|false|false",
+          "10811EU|false|false",
+          "11042EU|false|false",
+          "11048EU|false|false",
+          "10184EU|false|false",
           "10175EU|false|false",
-          "10178EU|false|false",
-          "10749EU|false|false"
+          "10178EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3675,83 +2539,223 @@
             "en_GB": "Travel"
           },
           "level_3": {
-            "en_GB": "Travel bags"
+            "en_GB": "Men's Leather Goods"
           }
         }
       },
-      "description": "This linen blend drawstring duffel bag with a light, sporty design is characterized by the adjustable shoulder strap and enriched with leather trim. The embroidered tonal lettering logo gives the accessory distinctive, timeless style.",
+      "description": "This roomy backpack with a technical look is made of Re-Nylon, the innovative technical fabric produced from recycled plastic trash recovered in the ocean. The design of the accessory, with the main compartment with a flap closure and buckles, stands out for its Saffiano leather details. Saffiano leather, an iconic material of Prada, is synonymous with luxury and identifies with traditional Italian leather goods production. The calf leather of the highest quality is defined by a crosshatch pattern and wax finish. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
       "details": [
-        "Linen blend handle",
-        "Detachable, adjustable woven cotton tape shoulder strap. Maximum length 100 cm - Minimum length: 55 cm",
-        "Embroidered lettering logo on the front",
-        "Drawstring closure",
-        "Detachable leather key ring with lettering logo",
-        "Interior with zipper pocket",
-        "Canvas lining"
+        "With strap and side-release buckle",
+        "Leather handle",
+        "Adjustable woven nylon tape harness straps",
+        "Enameled metal triangle logo on the front",
+        "Flap closure with side-release buckle",
+        "Five external zipper pockets",
+        "Padded mesh fabric on the back",
+        "Interior with zipper pocket and patch pocket",
+        "Re-Nylon lining"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_MDLA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CX9F0018/2VY011_2CX9_F0018_V_OOO_MDLB.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLR.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLB.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_SLO.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_MDL.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ019/2DMGF0002/2VZ019_2DMG_F0002_V_OOL_MDLA.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.369111+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.375609+00:00",
       "localImages": [
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/1.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/2.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/3.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/4.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/5.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/6.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/7.jpg",
-        "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/8.jpg"
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/1.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/2.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/3.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/4.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/5.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/6.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/7.jpg",
+        "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/8.jpg"
       ],
-      "localImage": "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VY011_2CX9_F0018_V_OOO/6.jpg"
+      "localImage": "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/1.jpg",
+      "localHover": "/products/pr-pdp/2VZ019_2DMG_F0002_V_OOL/7.jpg"
     },
     {
-      "id": "2VY011_2CYA_F04MO_V_OOO",
-      "productCode": "2VY011_2CYA_F04MO_V_OOO",
-      "sku": "2VY011_2CYA_F04MO_V_OOO",
-      "parentProduct": "2VY011_2CYA_V_OOO",
-      "officialNameEn": "Canvas drawstring duffle bag",
-      "title": "Canvas drawstring duffle bag",
-      "color": "Tabacco",
-      "colorCode": "F04MO",
-      "colorHex": "#AB7C44",
+      "id": "2VZ101_2DMG_F0002_V_OOO",
+      "productCode": "2VZ101_2DMG_F0002_V_OOO",
+      "sku": "2VZ101_2DMG_F0002_V_OOO",
+      "parentProduct": "2VZ101_2DMG_V_OOO",
+      "officialNameEn": "Re-Nylon and Saffiano leather backpack",
+      "title": "Re-Nylon and Saffiano leather backpack",
+      "color": "Black",
+      "colorCode": "F0002",
+      "colorHex": "#000000",
       "otherColors": [
         {
           "Label": {
-            "en_GB": "Tabacco",
-            "raw": "TABACCO C"
+            "en_GB": "Black",
+            "raw": "NERO"
           },
-          "Code": "F04MO",
-          "Hexadecimal": "#AB7C44",
+          "Code": "F0002",
+          "Hexadecimal": "#000000",
           "UrlReconstructed": {
-            "en_GB": "/p/canvas-drawstring-duffle-bag/2VY011_2CYA_F04MO_V_OOO"
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ101_2DMG_F0002_V_OOO"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-backpack/2VZ101_2DMG_F0002_V_OOO",
+      "gbpPrice": 2400.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_MDL.jpg",
+      "collections": [
+        "pr-men-travel",
+        "pr-men-travel-bags",
+        "pr-mens-handbags",
+        "prada",
+        "prada-bags"
+      ],
+      "leaf": "pr-men-travel-bags",
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {
+        "height": "45 cm",
+        "width": "26.5 cm",
+        "length": "21.5 cm"
+      },
+      "material": "Fabric",
+      "kind": "mens-travel",
+      "algolia": {
+        "categories": [
+          "10047EU",
+          "10062EU",
+          "10063EU",
+          "10129EU",
+          "10143EU",
+          "10144EU",
+          "10175EU",
+          "10178EU",
+          "10184EU",
+          "10527EU",
+          "10542EU",
+          "10811EU",
+          "11042EU",
+          "11048EU"
+        ],
+        "categoriesEnriched": [
+          "10047EU|false|false",
+          "10129EU|false|false",
+          "10542EU|false|false",
+          "10062EU|true|false",
+          "10063EU|false|false",
+          "10143EU|true|false",
+          "10144EU|false|false",
+          "10527EU|true|false",
+          "10811EU|false|false",
+          "11042EU|false|false",
+          "11048EU|false|false",
+          "10184EU|true|false",
+          "10175EU|false|false",
+          "10178EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "Bags"
+          },
+          "level_3": {
+            "en_GB": "Backpacks"
+          }
+        }
+      },
+      "description": "This roomy backpack with a technical look is made of Re-Nylon, the innovative fabric produced from recycled plastic materials collected in the ocean. The design of the accessory, with a main compartment with zipper closure and buckles, stands out for its Saffiano leather details. Saffiano leather, an iconic material of Prada, is synonymous with luxury and identified with a traditional production of Italian leather goods. The calf leather of the highest quality is defined by its crosshatch texture and wax finish. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
+      "details": [
+        "With two compartments",
+        "Leather handle",
+        "Adjustable padded nylon straps",
+        "Enameled metal triangle logo on the front",
+        "Zipper closure",
+        "Three external zipper pockets",
+        "Back made of padded mesh fabric",
+        "Interior with zipper pocket, patch pocket, leather straps and buckle",
+        "Re-Nylon lining",
+        "Side-release buckles and straps on the sides"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLR.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLB.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_SLO.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_MDL.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_MDLA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ101/2DMGF0002/2VZ101_2DMG_F0002_V_OOO_MDLB.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:38:38.512184+00:00",
+      "localImages": [
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/1.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/2.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/3.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/4.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/5.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/6.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/7.jpg",
+        "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/8.jpg"
+      ],
+      "localImage": "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/1.jpg",
+      "localHover": "/products/pr-pdp/2VZ101_2DMG_F0002_V_OOO/6.jpg"
+    },
+    {
+      "id": "2VZ135_2DMG_F0002_V_HOL",
+      "productCode": "2VZ135_2DMG_F0002_V_HOL",
+      "sku": "2VZ135_2DMG_F0002_V_HOL",
+      "parentProduct": "2VZ135_2DMG_V_HOL",
+      "officialNameEn": "Re-Nylon and Saffiano leather backpack",
+      "title": "Re-Nylon and Saffiano leather backpack",
+      "color": "Black",
+      "colorCode": "F0002",
+      "colorHex": "#000000",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Black",
+            "raw": "NERO"
+          },
+          "Code": "F0002",
+          "Hexadecimal": "#000000",
+          "UrlReconstructed": {
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0002_V_HOL"
           }
         },
         {
           "Label": {
-            "en_GB": "Baltic Blue",
-            "raw": "BALTICO"
+            "en_GB": "Navy",
+            "raw": "BLEU"
           },
-          "Code": "F0216",
-          "Hexadecimal": "#0E4573",
+          "Code": "F0008",
+          "Hexadecimal": "#2F394C",
           "UrlReconstructed": {
-            "en_GB": "/p/canvas-drawstring-duffle-bag/2VY011_2CYA_F0216_V_OOO"
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0008_V_HOL"
+          }
+        },
+        {
+          "Label": {
+            "en_GB": "Sienna",
+            "raw": "BRUCIATO"
+          },
+          "Code": "F0038",
+          "Hexadecimal": "#422e26",
+          "UrlReconstructed": {
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0038_V_HOL"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/canvas-drawstring-duffle-bag/2VY011_2CYA_F04MO_V_OOO",
-      "gbpPrice": 2050.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_MDL.jpg",
+      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0002_V_HOL",
+      "gbpPrice": 1890.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_MDL.jpg",
       "collections": [
         "pr-men-travel",
         "pr-men-travel-bags",
@@ -3763,79 +2767,229 @@
       "inStock": true,
       "availability": "Green",
       "dimensions": {
-        "height": "55 cm",
-        "width": "34 cm",
-        "length": "55 cm"
+        "height": "45 cm",
+        "width": "27 cm",
+        "length": "17 cm"
       },
       "material": "Fabric",
       "kind": "mens-travel",
       "algolia": {
         "categories": [
-          "10094EU",
-          "10099EU",
+          "10047EU",
+          "10062EU",
+          "10063EU",
           "10129EU",
           "10143EU",
           "10144EU",
           "10175EU",
           "10178EU",
-          "10749EU"
+          "10179EU",
+          "10184EU",
+          "10527EU",
+          "10542EU",
+          "10811EU",
+          "11042EU",
+          "11048EU"
         ],
         "categoriesEnriched": [
+          "10047EU|false|false",
           "10129EU|false|false",
-          "10094EU|false|false",
-          "10099EU|false|false",
+          "10542EU|false|false",
+          "10062EU|true|false",
+          "10063EU|false|false",
           "10143EU|false|false",
           "10144EU|false|false",
+          "10179EU|false|false",
+          "10527EU|true|false",
+          "10811EU|false|false",
+          "11042EU|false|false",
+          "11048EU|false|false",
+          "10184EU|false|false",
           "10175EU|false|false",
-          "10178EU|false|false",
-          "10749EU|false|false"
+          "10178EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
             "en_GB": "Mens"
           },
           "level_2": {
-            "en_GB": "Travel"
+            "en_GB": "Bags"
+          },
+          "level_3": {
+            "en_GB": "Backpacks"
+          }
+        }
+      },
+      "description": "The evolution of an iconic Prada style since the eighties, this nylon backpack is made of Re-Nylon, a regenerated yarn produced from recycled, purified plastic trash collected in the ocean, fishing nets, and textile waste fibers. This technologically innovative fabric is paired with Saffiano leather, an historic material of Prada tradition defined by its crosshatch pattern and waxed finish. The enameled metal triangle logo accents the compact design with flap and oversized front pocket. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
+      "details": [
+        "Leather handle",
+        "Adjustable woven nylon straps",
+        "Enameled metal triangle logo on flap",
+        "Push-lock clasp on the flap",
+        "Four external zipper pockets",
+        "Padded mesh fabric back",
+        "Interior with zipper pocket and patch pocket",
+        "Re-Nylon lining"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLR.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLB.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_SLO.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_MDL.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0002/2VZ135_2DMG_F0002_V_HOL_MDLA.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:38:38.537395+00:00",
+      "localImages": [
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/1.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/2.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/3.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/4.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/5.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/6.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/7.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/8.jpg"
+      ],
+      "localImage": "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/1.jpg",
+      "localHover": "/products/pr-pdp/2VZ135_2DMG_F0002_V_HOL/7.jpg"
+    },
+    {
+      "id": "2VZ135_2DMG_F0038_V_HOL",
+      "productCode": "2VZ135_2DMG_F0038_V_HOL",
+      "sku": "2VZ135_2DMG_F0038_V_HOL",
+      "parentProduct": "2VZ135_2DMG_V_HOL",
+      "officialNameEn": "Re-Nylon and Saffiano leather backpack",
+      "title": "Re-Nylon and Saffiano leather backpack",
+      "color": "Sienna",
+      "colorCode": "F0038",
+      "colorHex": "#422e26",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Sienna",
+            "raw": "BRUCIATO"
+          },
+          "Code": "F0038",
+          "Hexadecimal": "#422e26",
+          "UrlReconstructed": {
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0038_V_HOL"
+          }
+        },
+        {
+          "Label": {
+            "en_GB": "Black",
+            "raw": "NERO"
+          },
+          "Code": "F0002",
+          "Hexadecimal": "#000000",
+          "UrlReconstructed": {
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0002_V_HOL"
+          }
+        },
+        {
+          "Label": {
+            "en_GB": "Navy",
+            "raw": "BLEU"
+          },
+          "Code": "F0008",
+          "Hexadecimal": "#2F394C",
+          "UrlReconstructed": {
+            "en_GB": "/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0008_V_HOL"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/re-nylon-and-saffiano-leather-backpack/2VZ135_2DMG_F0038_V_HOL",
+      "gbpPrice": 1890.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLR.jpg",
+      "collections": [
+        "pr-men-travel",
+        "pr-men-travel-bags",
+        "pr-mens-handbags",
+        "prada",
+        "prada-bags"
+      ],
+      "leaf": "pr-men-travel-bags",
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {
+        "height": "45 cm",
+        "width": "27 cm",
+        "length": "17 cm"
+      },
+      "material": "Fabric",
+      "kind": "mens-travel",
+      "algolia": {
+        "categories": [
+          "10129EU",
+          "10143EU",
+          "10144EU",
+          "10175EU",
+          "10178EU",
+          "10179EU",
+          "10182EU",
+          "10527EU",
+          "11042EU",
+          "11048EU"
+        ],
+        "categoriesEnriched": [
+          "10527EU|false|true",
+          "10129EU|false|false",
+          "10143EU|false|false",
+          "10144EU|false|false",
+          "10182EU|false|false",
+          "10179EU|false|true",
+          "11042EU|false|false",
+          "11048EU|false|false",
+          "10175EU|false|false",
+          "10178EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "New In"
           },
           "level_3": {
             "en_GB": "Travel bags"
           }
         }
       },
-      "description": "This canvas drawstring duffle bag with a light design and sporty character is characterized by its adjustable shoulder strap and enriched with leather details. The tonal embroidered lettering logo gives the accessory a distinctive, timeless style.",
+      "description": "The evolution of an iconic Prada style since the eighties, this nylon backpack is made of Re-Nylon, a regenerated yarn produced from recycled, purified plastic trash collected in the ocean, fishing nets, and textile waste fibers. This technologically innovative fabric is paired with Saffiano leather, an historic material of Prada tradition defined by its crosshatch pattern and waxed finish. The enameled metal triangle logo accents the compact design with flap and oversized front pocket. For sustainable care to preserve the product's characteristics and reduce microfiber shedding, we recommend not washing the item too often. Let the product air out after every use and have it dry cleaned at a specialized ecological dry cleaners.",
       "details": [
-        "Canvas handle",
-        "Detachable, adjustable woven cotton tape shoulder strap. Maximum length 100 cm - Minimum length: 55 cm",
-        "Embroidered logo on the front",
-        "Drawstring closure",
-        "Removable leather key ring with lettering logo",
-        "Interior with zipper pocket",
-        "Canvas lining"
+        "Leather handle",
+        "Adjustable woven nylon straps",
+        "Enameled metal triangle logo on flap",
+        "Push-lock clasp on the flap",
+        "Four external zipper pockets",
+        "Padded mesh fabric back",
+        "Interior with zipper pocket and patch pocket",
+        "Re-Nylon lining"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLR.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLB.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_SLO.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_MDL.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_MDLA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/2/2VY/2VY011/2CYAF04MO/2VY011_2CYA_F04MO_V_OOO_MDLB.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLR.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLB.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/2/2VZ/2VZ135/2DMGF0038/2VZ135_2DMG_F0038_V_HOL_SLO.jpg"
       ],
-      "scrapedAt": "2026-08-25T20:01:59.309019+00:00",
+      "scrapedAt": "2026-09-29T12:38:38.561680+00:00",
       "localImages": [
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/1.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/2.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/3.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/4.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/5.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/6.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/7.jpg",
-        "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/8.jpg"
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/1.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/2.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/3.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/4.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/5.jpg",
+        "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/6.jpg"
       ],
-      "localImage": "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/1.jpg",
-      "localHover": "/products/pr-pdp/2VY011_2CYA_F04MO_V_OOO/6.jpg"
+      "localImage": "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/1.jpg",
+      "localHover": "/products/pr-pdp/2VZ135_2DMG_F0038_V_HOL/2.jpg"
     }
   ]
 }

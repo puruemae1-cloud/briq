@@ -1,33 +1,33 @@
 {
-  "scrapedAt": "2026-08-26T11:44:32.593814+00:00",
+  "scrapedAt": "2026-09-29T12:40:05.962461+00:00",
   "source": "https://www.prada.com/gb/en/perfumes-and-beauty/fragrances/c/10566EU",
   "collections": {
     "pr-fragrances": {
       "label": "Fragrances",
       "categoryCode": "10566EU",
-      "count": 70,
+      "count": 74,
       "url": "https://www.prada.com/gb/en/perfumes-and-beauty/fragrances/c/10566EU"
     },
     "pr-fragrances-women": {
       "label": "Women's fragrances",
       "categoryCode": "10573EU",
       "url": "https://www.prada.com/gb/en/perfumes-and-beauty/fragrances/womens-fragrances/c/10573EU",
-      "count": 44
+      "count": 41
     },
     "pr-fragrances-men": {
       "label": "Men's fragrances",
       "categoryCode": "10574EU",
       "url": "https://www.prada.com/gb/en/perfumes-and-beauty/fragrances/mens-fragrances/c/10574EU",
-      "count": 50
+      "count": 47
     },
     "pr-fragrances-exclusive": {
       "label": "Exclusive collections",
       "categoryCode": "10707EU",
       "url": "https://www.prada.com/gb/en/perfumes-and-beauty/fragrances/exclusive-collections/c/10707EU",
-      "count": 24
+      "count": 28
     }
   },
-  "count": 70,
+  "count": 74,
   "products": [
     {
       "id": "1A1041_2HCQ_F0Z99_P_ML100",
@@ -65,9 +65,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -126,7 +132,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1041/2HCQF0Z99/1A1041_2HCQ_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1041/2HCQF0Z99/1A1041_2HCQ_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.077780+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.352318+00:00",
       "localImages": [
         "/products/pr-pdp/1A1041_2HCQ_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1041_2HCQ_F0Z99_P_ML100/2.jpg",
@@ -199,8 +205,7 @@
           "10573EU",
           "10574EU",
           "10707EU",
-          "10996EU",
-          "10997EU"
+          "10996EU"
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
@@ -217,8 +222,7 @@
           "10573EU|false|false",
           "10574EU|false|false",
           "10707EU|false|false",
-          "10996EU|false|true",
-          "10997EU|false|false"
+          "10996EU|false|true"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -244,7 +248,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1042/2HCPF0Z99/1A1042_2HCP_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1042/2HCPF0Z99/1A1042_2HCP_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.113812+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.352725+00:00",
       "localImages": [
         "/products/pr-pdp/1A1042_2HCP_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1042_2HCP_F0Z99_P_ML100/2.jpg",
@@ -289,9 +293,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -310,8 +320,7 @@
           "10573EU",
           "10574EU",
           "10707EU",
-          "10996EU",
-          "10997EU"
+          "10996EU"
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
@@ -327,8 +336,7 @@
           "10573EU|false|false",
           "10574EU|false|false",
           "10707EU|false|false",
-          "10996EU|false|false",
-          "10997EU|false|false"
+          "10996EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -354,7 +362,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1043/2HCJF0Z99/1A1043_2HCJ_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1043/2HCJF0Z99/1A1043_2HCJ_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:18.969185+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.352909+00:00",
       "localImages": [
         "/products/pr-pdp/1A1043_2HCJ_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1043_2HCJ_F0Z99_P_ML100/2.jpg",
@@ -399,15 +407,9 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [
-        {
-          "size": "TU",
-          "code": "1501",
-          "inStock": true
-        }
-      ],
-      "inStock": true,
-      "availability": "Green",
+      "sizes": [],
+      "inStock": false,
+      "availability": "Red",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -464,7 +466,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1044/2HCIF0Z99/1A1044_2HCI_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1044/2HCIF0Z99/1A1044_2HCI_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.043056+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.353310+00:00",
       "localImages": [
         "/products/pr-pdp/1A1044_2HCI_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1044_2HCI_F0Z99_P_ML100/2.jpg",
@@ -534,7 +536,7 @@
         "categoriesEnriched": [
           "10047EU|false|false",
           "10081EU|false|false",
-          "10108EU|true|false",
+          "10108EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
           "10179EU|false|true",
@@ -570,7 +572,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1046/2HCNF0Z99/1A1046_2HCN_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1046/2HCNF0Z99/1A1046_2HCN_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:18.929796+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.353473+00:00",
       "localImages": [
         "/products/pr-pdp/1A1046_2HCN_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1046_2HCN_F0Z99_P_ML100/2.jpg",
@@ -683,7 +685,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1048/2HCMF0Z99/1A1048_2HCM_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1048/2HCMF0Z99/1A1048_2HCM_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.005422+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.353827+00:00",
       "localImages": [
         "/products/pr-pdp/1A1048_2HCM_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1048_2HCM_F0Z99_P_ML100/2.jpg",
@@ -795,7 +797,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1050/2HDXF0Z99/1A1050_2HDX_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1050/2HDXF0Z99/1A1050_2HDX_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.297877+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.354007+00:00",
       "localImages": [
         "/products/pr-pdp/1A1050_2HDX_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1050_2HDX_F0Z99_P_ML100/2.jpg",
@@ -840,9 +842,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -899,7 +907,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1051/2HDWF0Z99/1A1051_2HDW_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1051/2HDWF0Z99/1A1051_2HDW_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.367865+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.354432+00:00",
       "localImages": [
         "/products/pr-pdp/1A1051_2HDW_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1051_2HDW_F0Z99_P_ML100/2.jpg",
@@ -1011,7 +1019,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1052/2HEAF0Z99/1A1052_2HEA_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1052/2HEAF0Z99/1A1052_2HEA_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.518412+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.354612+00:00",
       "localImages": [
         "/products/pr-pdp/1A1052_2HEA_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1052_2HEA_F0Z99_P_ML100/2.jpg",
@@ -1085,8 +1093,7 @@
           "10573EU",
           "10574EU",
           "10707EU",
-          "10996EU",
-          "10997EU"
+          "10996EU"
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
@@ -1104,8 +1111,7 @@
           "10573EU|false|false",
           "10574EU|false|false",
           "10707EU|false|false",
-          "10996EU|false|true",
-          "10997EU|false|false"
+          "10996EU|false|true"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -1131,7 +1137,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1053/2HEDF0Z99/1A1053_2HED_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1053/2HEDF0Z99/1A1053_2HED_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.482921+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.354781+00:00",
       "localImages": [
         "/products/pr-pdp/1A1053_2HED_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1053_2HED_F0Z99_P_ML100/2.jpg",
@@ -1241,7 +1247,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1054/2HEEF0Z99/1A1054_2HEE_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1054/2HEEF0Z99/1A1054_2HEE_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.553689+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.355218+00:00",
       "localImages": [
         "/products/pr-pdp/1A1054_2HEE_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1054_2HEE_F0Z99_P_ML100/2.jpg",
@@ -1311,6 +1317,12 @@
           "10707EU"
         ],
         "categoriesEnriched": [
+          "10047EU|false|false",
+          "10081EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
           "10573EU|false|false",
           "10574EU|false|false",
           "10707EU|false|false"
@@ -1339,7 +1351,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1055/B007F0Z99/1A1055_B007_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1055/B007F0Z99/1A1055_B007_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.590152+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.355373+00:00",
       "localImages": [
         "/products/pr-pdp/1A1055_B007_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1055_B007_F0Z99_P_ML100/2.jpg",
@@ -1349,12 +1361,12 @@
       "localHover": "/products/pr-pdp/1A1055_B007_F0Z99_P_ML100/2.jpg"
     },
     {
-      "id": "1A1318_2HCC_F0Z99_P_ML100",
-      "productCode": "1A1318_2HCC_F0Z99_P_ML100",
-      "sku": "1A1318_2HCC_F0Z99_P_ML100",
-      "parentProduct": "1A1318_2HCC_P_ML100",
-      "officialNameEn": "Olfactories - Cargo De Nuit EDP 100 ml",
-      "title": "Olfactories - Cargo De Nuit EDP 100 ml",
+      "id": "1A1318_B00C_F0Z99_P_ML100",
+      "productCode": "1A1318_B00C_F0Z99_P_ML100",
+      "sku": "1A1318_B00C_F0Z99_P_ML100",
+      "parentProduct": "1A1318_B00C_P_ML100",
+      "officialNameEn": "Olfactories - Compulsion EDP 100 ml",
+      "title": "Olfactories - Compulsion EDP 100 ml",
       "color": "Neutral",
       "colorCode": "F0Z99",
       "colorHex": "#D8C7B0",
@@ -1367,26 +1379,30 @@
           "Code": "F0Z99",
           "Hexadecimal": "#D8C7B0",
           "UrlReconstructed": {
-            "en_GB": "/p/olfactories-cargo-de-nuit-edp-100-ml/1A1318_2HCC_F0Z99_P_ML100"
+            "en_GB": "/p/olfactories-compulsion-edp-100-ml/1A1318_B00C_F0Z99_P_ML100"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/olfactories-cargo-de-nuit-edp-100-ml/1A1318_2HCC_F0Z99_P_ML100",
+      "url": "https://www.prada.com/gb/en/p/olfactories-compulsion-edp-100-ml/1A1318_B00C_F0Z99_P_ML100",
       "gbpPrice": 280.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLD.jpg",
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLD.jpg",
       "collections": [
         "pr-fragrances",
         "pr-fragrances-exclusive",
-        "pr-fragrances-men",
-        "pr-fragrances-women",
         "prada",
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -1394,67 +1410,51 @@
         "categories": [
           "10047EU",
           "10081EU",
-          "10108EU",
-          "10129EU",
-          "10159EU",
-          "10179EU",
-          "10351EU",
           "10562EU",
           "10566EU",
-          "10573EU",
-          "10574EU",
           "10707EU"
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
           "10081EU|false|false",
-          "10108EU|false|false",
-          "10129EU|false|false",
-          "10159EU|false|false",
-          "10179EU|false|false",
-          "10351EU|false|false",
           "10562EU|false|false",
-          "10566EU|false|true",
-          "10573EU|false|false",
-          "10574EU|false|false",
+          "10566EU|false|false",
           "10707EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
-            "en_GB": "Mens"
+            "en_GB": "Womens"
           },
           "level_2": {
-            "en_GB": "Gifts"
+            "en_GB": "Fragrances"
           },
           "level_3": {
-            "en_GB": "Women's fragrances"
+            "en_GB": "Exclusive collections"
           }
         }
       },
-      "description": "Inspired by the mystery of a night voyage in the ocean, Cargo de Nuit opens with soft notes of Musk and Aldehydes that crash into woody and mineral notes.",
+      "description": "Compulsion is a woody-musky fragrance that interprets sensuality according to Prada: a discreet intensity that never needs to assert itself to make an impression. Aldehydes open the composition with vibrant luminosity, then make room for the warm and enveloping depth of Tonka Bean. In the base, Ambrofix adds a mineral and woody nuance that is intimate and sensual. \nAlready part of the Prada Olfactories universe with the name Cargo de Night, the fragrance returns today under the name Compulsion, reaffirming its character through a new identity.",
       "details": [
-        "Top notes: Musk and Aldehydes",
-        "Heart notes: Woody and mineral notes",
-        "Base notes: Amber",
-        "(Ambroxan, Coumarin)",
-        "100 ml"
+        "Top Notes: Aldehydes",
+        "Heart Notes: Tonka Bean",
+        "Base Notes: Ambrofix"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/2HCCF0Z99/1A1318_2HCC_F0Z99_P_ML100_SLP.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1318/B00CF0Z99/1A1318_B00C_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.927097+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.789535+00:00",
       "localImages": [
-        "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/1.jpg",
-        "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/2.jpg",
-        "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/3.jpg",
-        "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/4.jpg"
+        "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/4.jpg"
       ],
-      "localImage": "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/1.jpg",
-      "localHover": "/products/pr-pdp/1A1318_2HCC_F0Z99_P_ML100/2.jpg"
+      "localImage": "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1318_B00C_F0Z99_P_ML100/2.jpg"
     },
     {
       "id": "1A1319_2HCE_F0Z99_P_ML100",
@@ -1557,7 +1557,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1319/2HCEF0Z99/1A1319_2HCE_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1319/2HCEF0Z99/1A1319_2HCE_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.707525+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.356715+00:00",
       "localImages": [
         "/products/pr-pdp/1A1319_2HCE_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1319_2HCE_F0Z99_P_ML100/2.jpg",
@@ -1568,12 +1568,12 @@
       "localHover": "/products/pr-pdp/1A1319_2HCE_F0Z99_P_ML100/2.jpg"
     },
     {
-      "id": "1A1320_2HDF_F0Z99_P_ML100",
-      "productCode": "1A1320_2HDF_F0Z99_P_ML100",
-      "sku": "1A1320_2HDF_F0Z99_P_ML100",
-      "parentProduct": "1A1320_2HDF_P_ML100",
-      "officialNameEn": "Olfactories - Pink Flamingos EDP 100 ml",
-      "title": "Olfactories - Pink Flamingos EDP 100 ml",
+      "id": "1A1320_B00D_F0Z99_P_ML100",
+      "productCode": "1A1320_B00D_F0Z99_P_ML100",
+      "sku": "1A1320_B00D_F0Z99_P_ML100",
+      "parentProduct": "1A1320_B00D_P_ML100",
+      "officialNameEn": "Olfactories - Pink Flamboyance EDP 100 ml",
+      "title": "Olfactories - Pink Flamboyance EDP 100 ml",
       "color": "Neutral",
       "colorCode": "F0Z99",
       "colorHex": "#D8C7B0",
@@ -1586,19 +1586,17 @@
           "Code": "F0Z99",
           "Hexadecimal": "#D8C7B0",
           "UrlReconstructed": {
-            "en_GB": "/p/olfactories-pink-flamingos-edp-100-ml/1A1320_2HDF_F0Z99_P_ML100"
+            "en_GB": "/p/olfactories-pink-flamboyance-edp-100-ml/1A1320_B00D_F0Z99_P_ML100"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/olfactories-pink-flamingos-edp-100-ml/1A1320_2HDF_F0Z99_P_ML100",
+      "url": "https://www.prada.com/gb/en/p/olfactories-pink-flamboyance-edp-100-ml/1A1320_B00D_F0Z99_P_ML100",
       "gbpPrice": 280.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLD.jpg",
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLD.jpg",
       "collections": [
         "pr-fragrances",
         "pr-fragrances-exclusive",
-        "pr-fragrances-men",
-        "pr-fragrances-women",
         "prada",
         "prada-accessories"
       ],
@@ -1621,69 +1619,61 @@
           "10081EU",
           "10129EU",
           "10159EU",
-          "10179EU",
-          "10351EU",
           "10562EU",
           "10566EU",
-          "10573EU",
-          "10574EU",
           "10707EU"
         ],
         "categoriesEnriched": [
+          "10707EU|false|false",
           "10047EU|false|false",
-          "10081EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
-          "10179EU|false|false",
-          "10351EU|false|false",
           "10562EU|false|false",
           "10566EU|true|false",
-          "10573EU|false|false",
-          "10574EU|false|false",
-          "10707EU|false|false"
+          "10081EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
             "en_GB": "Mens"
           },
           "level_2": {
-            "en_GB": "Gifts"
+            "en_GB": "Fragrances"
           },
           "level_3": {
-            "en_GB": "Women's fragrances"
+            "en_GB": "Fragrances"
           }
         }
       },
-      "description": "Natural and synthetic elements combine to create a fragrance that is an imaginary fantasy, a cloud of pink bubbles. Pink Flamingos opens with citrus, continues with Cherry accord softened with Rose and Iris, leaving traces of powder, sugar and Musk.",
+      "description": "Pink Flamboyance is a floral-fruity fragrance that expresses Prada's eccentricity through the unexpected combination of rose and cherry. The Cherry Accord opens the composition with a lively, juicy and slightly acidic note before it makes way for the richness of Rose. In the base, Neroli Accord illuminates the fragrance with a delicate and airy nuance. Already known as Pink Flamingos, the fragrance returns to the Prada Olfactories collection as Pink Flamboyance, a new name that renews its presence and underlines its bold nature.",
       "details": [
-        "Notes: Citrus, Cherry accord softened with Rose",
-        "and Iris",
-        "100 ml"
+        "Top Notes: Cherry Accord",
+        "Heart Notes: Rose",
+        "Base Notes: Neroli Accord"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/2HDFF0Z99/1A1320_2HDF_F0Z99_P_ML100_SLP.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1320/B00DF0Z99/1A1320_B00D_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:19.978286+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.711258+00:00",
       "localImages": [
-        "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/1.jpg",
-        "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/2.jpg",
-        "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/3.jpg",
-        "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/4.jpg"
+        "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/4.jpg"
       ],
-      "localImage": "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/1.jpg",
-      "localHover": "/products/pr-pdp/1A1320_2HDF_F0Z99_P_ML100/2.jpg"
+      "localImage": "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1320_B00D_F0Z99_P_ML100/2.jpg"
     },
     {
-      "id": "1A1321_2HDG_F0Z99_P_ML100",
-      "productCode": "1A1321_2HDG_F0Z99_P_ML100",
-      "sku": "1A1321_2HDG_F0Z99_P_ML100",
-      "parentProduct": "1A1321_2HDG_P_ML100",
-      "officialNameEn": "Olfactories - Purple Rain EDP 100 ml",
-      "title": "Olfactories - Purple Rain EDP 100 ml",
+      "id": "1A1321_B00E_F0Z99_P_ML100",
+      "productCode": "1A1321_B00E_F0Z99_P_ML100",
+      "sku": "1A1321_B00E_F0Z99_P_ML100",
+      "parentProduct": "1A1321_B00E_P_ML100",
+      "officialNameEn": "Olfactories - Tainted Violet EDP 100 ml",
+      "title": "Olfactories - Tainted Violet EDP 100 ml",
       "color": "Neutral",
       "colorCode": "F0Z99",
       "colorHex": "#D8C7B0",
@@ -1696,84 +1686,86 @@
           "Code": "F0Z99",
           "Hexadecimal": "#D8C7B0",
           "UrlReconstructed": {
-            "en_GB": "/p/olfactories-purple-rain-edp-100-ml/1A1321_2HDG_F0Z99_P_ML100"
+            "en_GB": "/p/olfactories-tainted-violet-edp-100-ml/1A1321_B00E_F0Z99_P_ML100"
           }
         }
       ],
-      "url": "https://www.prada.com/gb/en/p/olfactories-purple-rain-edp-100-ml/1A1321_2HDG_F0Z99_P_ML100",
+      "url": "https://www.prada.com/gb/en/p/olfactories-tainted-violet-edp-100-ml/1A1321_B00E_F0Z99_P_ML100",
       "gbpPrice": 280.0,
-      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLF.jpg",
-      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLD.jpg",
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLD.jpg",
       "collections": [
         "pr-fragrances",
         "pr-fragrances-exclusive",
-        "pr-fragrances-men",
-        "pr-fragrances-women",
         "prada",
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-exclusive",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
       "algolia": {
         "categories": [
-          "10108EU",
-          "10179EU",
-          "10351EU",
+          "10047EU",
+          "10081EU",
+          "10129EU",
+          "10159EU",
           "10562EU",
           "10566EU",
-          "10573EU",
-          "10574EU",
           "10707EU"
         ],
         "categoriesEnriched": [
-          "10108EU|false|true",
-          "10179EU|false|false",
-          "10351EU|false|false",
+          "10047EU|false|false",
+          "10081EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
           "10562EU|false|false",
-          "10566EU|true|false",
-          "10573EU|false|false",
-          "10574EU|false|false",
+          "10566EU|false|false",
           "10707EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
-            "en_GB": "Perfumes and Beauty"
+            "en_GB": "Mens"
           },
           "level_2": {
-            "en_GB": "Gifts"
+            "en_GB": "Fragrances"
           },
           "level_3": {
-            "en_GB": "Women's fragrances"
+            "en_GB": "Fragrances"
           }
         }
       },
-      "description": "Purple Rain is a reworking of the Prada's iconic Iris scent. The fragile perennial becames an opulent bloom. The intoxicating encounter of fresh and dry notes blended with Iris as a link between land and sky, heaven and humanity. Purple Rain opens with fresh and green notes of Neroli, warmed from Iris and Orange Blossom, then gives way to the dry freshness of Vetiver.",
+      "description": "Tainted Violet is a floral-woody fragrance that celebrates the Iris, the emblematic flower from which Prada's olfactive story began. Galbanum opens the composition with a fresh green note that is intense and bright, while Iris emerges with soft, powdery and radiant nuances. In the base, Vetiver adds depth and a dark and persistent, earthy character. \n\nFormerly known as Purple Rain, the fragrance returns to the Prada Olfactories collection under the name Tainted Violet, rediscovering through this new identity all the sophisticated strength of its character.",
       "details": [
-        "Notes: Fresh and dry",
-        "notes blended with Iris, Orange Blossom, Vetiver",
-        "100 ml"
+        "Top Notes: Galbanum",
+        "Heart Notes: Iris",
+        "Base Notes: Vetiver"
       ],
       "materialsCare": [],
       "images": [
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLF.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLD.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLDA.jpg",
-        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/2HDGF0Z99/1A1321_2HDG_F0Z99_P_ML100_SLP.jpg"
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1321/B00EF0Z99/1A1321_B00E_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.280928+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.856083+00:00",
       "localImages": [
-        "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/1.jpg",
-        "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/2.jpg",
-        "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/3.jpg",
-        "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/4.jpg"
+        "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/4.jpg"
       ],
-      "localImage": "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/1.jpg",
-      "localHover": "/products/pr-pdp/1A1321_2HDG_F0Z99_P_ML100/2.jpg"
+      "localImage": "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1321_B00E_F0Z99_P_ML100/2.jpg"
     },
     {
       "id": "1A1322_2HDA_F0Z99_P_ML100",
@@ -1829,7 +1821,7 @@
           "10707EU"
         ],
         "categoriesEnriched": [
-          "10108EU|false|false",
+          "10108EU|true|false",
           "10179EU|false|false",
           "10351EU|false|false",
           "10562EU|false|false",
@@ -1863,7 +1855,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1322/2HDAF0Z99/1A1322_2HDA_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1322/2HDAF0Z99/1A1322_2HDA_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.323361+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.358044+00:00",
       "localImages": [
         "/products/pr-pdp/1A1322_2HDA_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1322_2HDA_F0Z99_P_ML100/2.jpg",
@@ -1974,7 +1966,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1323/2HDKF0Z99/1A1323_2HDK_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1323/2HDKF0Z99/1A1323_2HDK_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.577516+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.358300+00:00",
       "localImages": [
         "/products/pr-pdp/1A1323_2HDK_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1323_2HDK_F0Z99_P_ML100/2.jpg",
@@ -2082,7 +2074,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1324/2HDCF0Z99/1A1324_2HDC_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1324/2HDCF0Z99/1A1324_2HDC_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.192363+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.360180+00:00",
       "localImages": [
         "/products/pr-pdp/1A1324_2HDC_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1324_2HDC_F0Z99_P_ML100/2.jpg",
@@ -2190,7 +2182,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1325/2HDHF0Z99/1A1325_2HDH_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1325/2HDHF0Z99/1A1325_2HDH_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.245455+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.358671+00:00",
       "localImages": [
         "/products/pr-pdp/1A1325_2HDH_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1325_2HDH_F0Z99_P_ML100/2.jpg",
@@ -2298,7 +2290,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1326/2HCDF0Z99/1A1326_2HCD_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1326/2HCDF0Z99/1A1326_2HCD_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.453323+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.359126+00:00",
       "localImages": [
         "/products/pr-pdp/1A1326_2HCD_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1326_2HCD_F0Z99_P_ML100/2.jpg",
@@ -2406,7 +2398,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1327/2HDIF0Z99/1A1327_2HDI_F0Z99_P_ML100_SLDA.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1327/2HDIF0Z99/1A1327_2HDI_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.496913+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.359789+00:00",
       "localImages": [
         "/products/pr-pdp/1A1327_2HDI_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/1A1327_2HDI_F0Z99_P_ML100/2.jpg",
@@ -2415,6 +2407,406 @@
       ],
       "localImage": "/products/pr-pdp/1A1327_2HDI_F0Z99_P_ML100/1.jpg",
       "localHover": "/products/pr-pdp/1A1327_2HDI_F0Z99_P_ML100/2.jpg"
+    },
+    {
+      "id": "1A1329_B00F_F0Z99_P_ML100",
+      "productCode": "1A1329_B00F_F0Z99_P_ML100",
+      "sku": "1A1329_B00F_F0Z99_P_ML100",
+      "parentProduct": "1A1329_B00F_P_ML100",
+      "officialNameEn": "Olfactories Nylon Noir EDP 100 ml",
+      "title": "Olfactories Nylon Noir EDP 100 ml",
+      "color": "Neutral",
+      "colorCode": "F0Z99",
+      "colorHex": "#D8C7B0",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Neutral",
+            "raw": "NEUTRI"
+          },
+          "Code": "F0Z99",
+          "Hexadecimal": "#D8C7B0",
+          "UrlReconstructed": {
+            "en_GB": "/p/olfactories-nylon-noir-edp-100-ml/1A1329_B00F_F0Z99_P_ML100"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/olfactories-nylon-noir-edp-100-ml/1A1329_B00F_F0Z99_P_ML100",
+      "gbpPrice": 280.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLD.jpg",
+      "collections": [
+        "pr-fragrances",
+        "pr-fragrances-exclusive",
+        "prada",
+        "prada-accessories"
+      ],
+      "leaf": "pr-fragrances-exclusive",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {},
+      "material": "Fragrances",
+      "kind": "fragrances",
+      "algolia": {
+        "categories": [
+          "10047EU",
+          "10081EU",
+          "10129EU",
+          "10159EU",
+          "10562EU",
+          "10566EU",
+          "10707EU"
+        ],
+        "categoriesEnriched": [
+          "10047EU|false|false",
+          "10081EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10707EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "Fragrances"
+          },
+          "level_3": {
+            "en_GB": "Fragrances"
+          }
+        }
+      },
+      "description": "Nylon Noir is a floral musk fragrance that interprets the sensation of Prada's iconic nylon on the skin. Luminous Jasmine opens the composition, then makes way for the clean and enveloping Nylon Accord. In the dry down, Musk adds a soft trail that is elegant and irresistibly refined.",
+      "details": [
+        "Top Notes: Jasmine",
+        "Heart Notes: Nylon Accord",
+        "Base Notes: Musk"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1329/B00FF0Z99/1A1329_B00F_F0Z99_P_ML100_SLP.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:40:00.753226+00:00",
+      "localImages": [
+        "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/4.jpg"
+      ],
+      "localImage": "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1329_B00F_F0Z99_P_ML100/2.jpg"
+    },
+    {
+      "id": "1A1335_B00G_F0Z99_P_ML100",
+      "productCode": "1A1335_B00G_F0Z99_P_ML100",
+      "sku": "1A1335_B00G_F0Z99_P_ML100",
+      "parentProduct": "1A1335_B00G_P_ML100",
+      "officialNameEn": "Olfactories Trembled Blossoms EDP 100 ml",
+      "title": "Olfactories Trembled Blossoms EDP 100 ml",
+      "color": "Neutral",
+      "colorCode": "F0Z99",
+      "colorHex": "#D8C7B0",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Neutral",
+            "raw": "NEUTRI"
+          },
+          "Code": "F0Z99",
+          "Hexadecimal": "#D8C7B0",
+          "UrlReconstructed": {
+            "en_GB": "/p/olfactories-trembled-blossoms-edp-100-ml/1A1335_B00G_F0Z99_P_ML100"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/olfactories-trembled-blossoms-edp-100-ml/1A1335_B00G_F0Z99_P_ML100",
+      "gbpPrice": 280.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLD.jpg",
+      "collections": [
+        "pr-fragrances",
+        "pr-fragrances-exclusive",
+        "prada",
+        "prada-accessories"
+      ],
+      "leaf": "pr-fragrances-exclusive",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {},
+      "material": "Fragrances",
+      "kind": "fragrances",
+      "algolia": {
+        "categories": [
+          "10047EU",
+          "10081EU",
+          "10129EU",
+          "10159EU",
+          "10562EU",
+          "10566EU",
+          "10707EU"
+        ],
+        "categoriesEnriched": [
+          "10047EU|false|false",
+          "10081EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10707EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "Fragrances"
+          },
+          "level_3": {
+            "en_GB": "Fragrances"
+          }
+        }
+      },
+      "description": "Trembled Blossoms is a green chypre fragrance that celebrates nature in its most authentic essence. Black Currant Buds and Peppermint create a fresh, vibrant heart, while Vegetal Leather Accord adds depth with a soft, earthy and delicately musky touch.",
+      "details": [
+        "Top Notes: Blackcurrant Buds",
+        "Heart Notes: Peppermint",
+        "Base Notes: Vegetal Leather Accord"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1335/B00GF0Z99/1A1335_B00G_F0Z99_P_ML100_SLP.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:40:00.823751+00:00",
+      "localImages": [
+        "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/4.jpg"
+      ],
+      "localImage": "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1335_B00G_F0Z99_P_ML100/2.jpg"
+    },
+    {
+      "id": "1A1336_B00H_F0Z99_P_ML100",
+      "productCode": "1A1336_B00H_F0Z99_P_ML100",
+      "sku": "1A1336_B00H_F0Z99_P_ML100",
+      "parentProduct": "1A1336_B00H_P_ML100",
+      "officialNameEn": "Olfactories Les Mirages - Malombra EDP 100 ml",
+      "title": "Olfactories Les Mirages - Malombra EDP 100 ml",
+      "color": "Neutral",
+      "colorCode": "F0Z99",
+      "colorHex": "#D8C7B0",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Neutral",
+            "raw": "NEUTRI"
+          },
+          "Code": "F0Z99",
+          "Hexadecimal": "#D8C7B0",
+          "UrlReconstructed": {
+            "en_GB": "/p/olfactories-les-mirages-malombra-edp-100-ml/1A1336_B00H_F0Z99_P_ML100"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/olfactories-les-mirages-malombra-edp-100-ml/1A1336_B00H_F0Z99_P_ML100",
+      "gbpPrice": 280.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLD.jpg",
+      "collections": [
+        "pr-fragrances",
+        "pr-fragrances-exclusive",
+        "prada",
+        "prada-accessories"
+      ],
+      "leaf": "pr-fragrances-exclusive",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {},
+      "material": "Fragrances",
+      "kind": "fragrances",
+      "algolia": {
+        "categories": [
+          "10047EU",
+          "10081EU",
+          "10129EU",
+          "10159EU",
+          "10562EU",
+          "10566EU",
+          "10707EU"
+        ],
+        "categoriesEnriched": [
+          "10707EU|false|false",
+          "10047EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10566EU|true|false",
+          "10081EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "Fragrances"
+          },
+          "level_3": {
+            "en_GB": "Fragrances"
+          }
+        }
+      },
+      "description": "Malombra is a leathery amber fragrance inspired by Prada's iconic Saffiano leather. Saffiano Leather Accord blends with the dry elegance of Oak Wood, while Liquorous Notes deliver an intense, warm and enveloping dry down that is full of character.",
+      "details": [
+        "Top Notes: Saffiano Leather Accord",
+        "Heart Notes: Oak Wood",
+        "Base Notes: Liquorous Notes"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1336/B00HF0Z99/1A1336_B00H_F0Z99_P_ML100_SLP.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:40:00.675855+00:00",
+      "localImages": [
+        "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/4.jpg"
+      ],
+      "localImage": "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1336_B00H_F0Z99_P_ML100/2.jpg"
+    },
+    {
+      "id": "1A1337_B00I_F0Z99_P_ML100",
+      "productCode": "1A1337_B00I_F0Z99_P_ML100",
+      "sku": "1A1337_B00I_F0Z99_P_ML100",
+      "parentProduct": "1A1337_B00I_P_ML100",
+      "officialNameEn": "Olfactories Les Mirages - Troubled Midnight EDP 100 ml",
+      "title": "Olfactories Les Mirages - Troubled Midnight EDP 100 ml",
+      "color": "Neutral",
+      "colorCode": "F0Z99",
+      "colorHex": "#D8C7B0",
+      "otherColors": [
+        {
+          "Label": {
+            "en_GB": "Neutral",
+            "raw": "NEUTRI"
+          },
+          "Code": "F0Z99",
+          "Hexadecimal": "#D8C7B0",
+          "UrlReconstructed": {
+            "en_GB": "/p/olfactories-les-mirages-troubled-midnight-edp-100-ml/1A1337_B00I_F0Z99_P_ML100"
+          }
+        }
+      ],
+      "url": "https://www.prada.com/gb/en/p/olfactories-les-mirages-troubled-midnight-edp-100-ml/1A1337_B00I_F0Z99_P_ML100",
+      "gbpPrice": 280.0,
+      "plpImage": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLF.jpg",
+      "plpHoverUrl": "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLD.jpg",
+      "collections": [
+        "pr-fragrances",
+        "pr-fragrances-exclusive",
+        "prada",
+        "prada-accessories"
+      ],
+      "leaf": "pr-fragrances-exclusive",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
+      "dimensions": {},
+      "material": "Fragrances",
+      "kind": "fragrances",
+      "algolia": {
+        "categories": [
+          "10047EU",
+          "10081EU",
+          "10129EU",
+          "10159EU",
+          "10562EU",
+          "10566EU",
+          "10707EU"
+        ],
+        "categoriesEnriched": [
+          "10047EU|false|false",
+          "10081EU|false|false",
+          "10129EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10707EU|false|false"
+        ],
+        "breadcrumbs": {
+          "level_1": {
+            "en_GB": "Mens"
+          },
+          "level_2": {
+            "en_GB": "Fragrances"
+          },
+          "level_3": {
+            "en_GB": "Fragrances"
+          }
+        }
+      },
+      "description": "Troubled Midnight is a musky amber fragrance that recalls the allure of the city at night. The Musk and Incense Accord creates a contrast between light and shadow, while Patchouli intensifies its character and Date Accord envelops the composition with warm sensuality.",
+      "details": [
+        "Top Notes: Musk and Incense Accord",
+        "Heart Notes: Patchouli",
+        "Base Notes: Date Accord"
+      ],
+      "materialsCare": [],
+      "images": [
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLF.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLD.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLDA.jpg",
+        "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1337/B00IF0Z99/1A1337_B00I_F0Z99_P_ML100_SLP.jpg"
+      ],
+      "scrapedAt": "2026-09-29T12:40:01.126735+00:00",
+      "localImages": [
+        "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/1.jpg",
+        "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/2.jpg",
+        "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/3.jpg",
+        "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/4.jpg"
+      ],
+      "localImage": "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/1.jpg",
+      "localHover": "/products/pr-pdp/1A1337_B00I_F0Z99_P_ML100/2.jpg"
     },
     {
       "id": "1A1351_2HDZ_F0Z99_P_ML030",
@@ -2475,13 +2867,13 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10386EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
           "10108EU|false|false",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10386EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2507,7 +2899,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML030_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.901844+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.712929+00:00",
       "localImages": [
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML030/2.jpg",
@@ -2575,13 +2967,13 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10386EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
           "10108EU|true|false",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10386EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2607,7 +2999,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.638961+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.713097+00:00",
       "localImages": [
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML050/2.jpg",
@@ -2675,13 +3067,13 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10386EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
           "10108EU|false|true",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10386EU|false|false",
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2707,7 +3099,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML090_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_P_ML090_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.684899+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.713363+00:00",
       "localImages": [
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML090/1.jpg",
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_P_ML090/2.jpg",
@@ -2772,10 +3164,10 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10566EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2802,7 +3194,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_R_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1351/2HDZF0Z99/1A1351_2HDZ_F0Z99_R_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.825360+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.713580+00:00",
       "localImages": [
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_R_ML100/1.jpg",
         "/products/pr-pdp/1A1351_2HDZ_F0Z99_R_ML100/2.jpg",
@@ -2868,13 +3260,13 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
-          "10081EU|false|false",
           "10108EU|false|false",
+          "10081EU|false|false",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2900,7 +3292,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML030_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.950004+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.713755+00:00",
       "localImages": [
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML030/2.jpg",
@@ -2966,13 +3358,13 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
-          "10081EU|false|false",
           "10108EU|false|true",
+          "10081EU|false|false",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -2998,7 +3390,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:20.866994+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.713916+00:00",
       "localImages": [
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML050/2.jpg",
@@ -3064,13 +3456,13 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
-          "10081EU|false|false",
           "10108EU|true|false",
+          "10081EU|false|false",
           "10351EU|false|true",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3096,7 +3488,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML090_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_P_ML090_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.107296+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.714074+00:00",
       "localImages": [
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML090/1.jpg",
         "/products/pr-pdp/1A1352_2HEC_F0Z99_P_ML090/2.jpg",
@@ -3139,9 +3531,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-women",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -3154,11 +3552,11 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3184,7 +3582,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_R_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1352/2HECF0Z99/1A1352_2HEC_F0Z99_R_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.052277+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.720311+00:00",
       "localImages": [
         "/products/pr-pdp/1A1352_2HEC_F0Z99_R_ML100/1.jpg",
         "/products/pr-pdp/1A1352_2HEC_F0Z99_R_ML100/2.jpg",
@@ -3248,11 +3646,11 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3278,7 +3676,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML030_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.406143+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.720491+00:00",
       "localImages": [
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML030/2.jpg",
@@ -3342,11 +3740,11 @@
           "10573EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3372,7 +3770,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML050_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.164576+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.720675+00:00",
       "localImages": [
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML050/2.jpg",
@@ -3437,12 +3835,12 @@
           "10718EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10047EU|false|false",
-          "10562EU|false|false",
           "10718EU|false|false",
-          "10573EU|false|false",
           "10081EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3468,7 +3866,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML090_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1353/2HEGF0Z99/1A1353_2HEG_F0Z99_P_ML090_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.371432+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.720837+00:00",
       "localImages": [
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML090/1.jpg",
         "/products/pr-pdp/1A1353_2HEG_F0Z99_P_ML090/2.jpg",
@@ -3511,9 +3909,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-women",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -3528,11 +3932,11 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
+          "10566EU|true|false",
+          "10565EU|false|true",
           "10081EU|false|false",
           "10562EU|false|false",
-          "10566EU|true|false",
-          "10573EU|false|false",
-          "10565EU|false|true"
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3556,7 +3960,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1354/2H0OF0Z99/1A1354_2H0O_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1354/2H0OF0Z99/1A1354_2H0O_F0Z99_P_ML030_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.470322+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721011+00:00",
       "localImages": [
         "/products/pr-pdp/1A1354_2H0O_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1354_2H0O_F0Z99_P_ML030/2.jpg",
@@ -3622,11 +4026,11 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
-          "10573EU|false|false",
+          "10108EU|false|false",
           "10081EU|false|false",
-          "10108EU|false|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3652,7 +4056,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML030_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.536353+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721215+00:00",
       "localImages": [
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML030/2.jpg",
@@ -3718,11 +4122,11 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
-          "10573EU|false|false",
+          "10108EU|true|false",
           "10081EU|false|false",
-          "10108EU|true|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3748,7 +4152,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.500750+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721383+00:00",
       "localImages": [
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML050/2.jpg",
@@ -3814,11 +4218,11 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
-          "10573EU|false|false",
+          "10108EU|false|false",
           "10081EU|false|false",
-          "10108EU|false|false"
+          "10562EU|false|false",
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3844,7 +4248,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML090_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_P_ML090_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.996101+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721559+00:00",
       "localImages": [
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML090/1.jpg",
         "/products/pr-pdp/1A1355_2H0P_F0Z99_P_ML090/2.jpg",
@@ -3910,11 +4314,11 @@
         ],
         "categoriesEnriched": [
           "10047EU|false|false",
+          "10566EU|true|false",
+          "10108EU|true|false",
           "10081EU|false|false",
           "10562EU|false|false",
-          "10566EU|true|false",
-          "10573EU|false|false",
-          "10108EU|true|false"
+          "10573EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -3940,7 +4344,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_R_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1355/2H0PF0Z99/1A1355_2H0P_F0Z99_R_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.946135+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721758+00:00",
       "localImages": [
         "/products/pr-pdp/1A1355_2H0P_F0Z99_R_ML100/1.jpg",
         "/products/pr-pdp/1A1355_2H0P_F0Z99_R_ML100/2.jpg",
@@ -4034,7 +4438,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML030_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML030_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.819436+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.721922+00:00",
       "localImages": [
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML030/1.jpg",
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML030/2.jpg",
@@ -4128,7 +4532,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML050_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.781682+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.722094+00:00",
       "localImages": [
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML050/2.jpg",
@@ -4222,7 +4626,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML090_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_P_ML090_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.041717+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.722303+00:00",
       "localImages": [
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML090/1.jpg",
         "/products/pr-pdp/1A1356_B00A_F0Z99_P_ML090/2.jpg",
@@ -4314,7 +4718,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_R_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1A1/1A1356/B00AF0Z99/1A1356_B00A_F0Z99_R_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:21.907206+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.722462+00:00",
       "localImages": [
         "/products/pr-pdp/1A1356_B00A_F0Z99_R_ML100/1.jpg",
         "/products/pr-pdp/1A1356_B00A_F0Z99_R_ML100/2.jpg",
@@ -4384,15 +4788,15 @@
           "10707EU"
         ],
         "categoriesEnriched": [
-          "10707EU|true|false",
           "10047EU|false|false",
-          "10081EU|false|false",
           "10129EU|false|false",
-          "10159EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
           "10573EU|true|false",
-          "10574EU|false|false"
+          "10081EU|false|false",
+          "10159EU|false|false",
+          "10562EU|false|false",
+          "10574EU|false|false",
+          "10707EU|true|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -4416,7 +4820,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1AH/1AH053/2HDXF0Z99/1AH053_2HDX_F0Z99_P_GR165_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1AH/1AH053/2HDXF0Z99/1AH053_2HDX_F0Z99_P_GR165_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.389928+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.722648+00:00",
       "localImages": [
         "/products/pr-pdp/1AH053_2HDX_F0Z99_P_GR165/1.jpg",
         "/products/pr-pdp/1AH053_2HDX_F0Z99_P_GR165/2.jpg",
@@ -4488,12 +4892,12 @@
         "categoriesEnriched": [
           "10707EU|true|false",
           "10047EU|false|false",
-          "10081EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
           "10573EU|true|false",
+          "10081EU|false|false",
+          "10562EU|false|false",
           "10574EU|false|false"
         ],
         "breadcrumbs": {
@@ -4518,7 +4922,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/1/1AH/1AH055/2HDYF0Z99/1AH055_2HDY_F0Z99_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/1/1AH/1AH055/2HDYF0Z99/1AH055_2HDY_F0Z99_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.158683+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.722833+00:00",
       "localImages": [
         "/products/pr-pdp/1AH055_2HDY_F0Z99/1.jpg",
         "/products/pr-pdp/1AH055_2HDY_F0Z99/2.jpg",
@@ -4584,13 +4988,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
           "10187EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -4615,7 +5019,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1151/2HC8F0Z99/2A1151_2HC8_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1151/2HC8F0Z99/2A1151_2HC8_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.317573+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723007+00:00",
       "localImages": [
         "/products/pr-pdp/2A1151_2HC8_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1151_2HC8_F0Z99_P_ML050/2.jpg",
@@ -4676,14 +5080,14 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10530EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
           "10187EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -4707,7 +5111,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1151/2HC8F0Z99/2A1151_2HC8_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1151/2HC8F0Z99/2A1151_2HC8_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.528076+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723232+00:00",
       "localImages": [
         "/products/pr-pdp/2A1151_2HC8_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1151_2HC8_F0Z99_P_ML100/2.jpg",
@@ -4767,12 +5171,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
-          "10187EU|false|false",
           "10129EU|false|false",
+          "10566EU|true|false",
           "10159EU|false|false",
+          "10187EU|false|false",
           "10292EU|false|false",
           "10562EU|false|false",
-          "10566EU|true|false",
           "10574EU|false|false"
         ],
         "breadcrumbs": {
@@ -4798,7 +5202,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1152/2HC9F0Z99/2A1152_2HC9_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1152/2HC9F0Z99/2A1152_2HC9_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.352844+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723419+00:00",
       "localImages": [
         "/products/pr-pdp/2A1152_2HC9_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1152_2HC9_F0Z99_P_ML050/2.jpg",
@@ -4858,13 +5262,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
           "10187EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -4889,7 +5293,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1152/2HC9F0Z99/2A1152_2HC9_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1152/2HC9F0Z99/2A1152_2HC9_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.448954+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723591+00:00",
       "localImages": [
         "/products/pr-pdp/2A1152_2HC9_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1152_2HC9_F0Z99_P_ML100/2.jpg",
@@ -4955,13 +5359,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
           "10187EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -4985,7 +5389,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1154/2HC6F0Z99/2A1154_2HC6_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1154/2HC6F0Z99/2A1154_2HC6_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.602010+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723785+00:00",
       "localImages": [
         "/products/pr-pdp/2A1154_2HC6_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1154_2HC6_F0Z99_P_ML050/2.jpg",
@@ -5028,9 +5432,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-men",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -5046,13 +5456,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10530EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false",
+          "10562EU|false|false",
+          "10574EU|false|false",
           "10179EU|false|false"
         ],
         "breadcrumbs": {
@@ -5077,7 +5487,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1154/2HC6F0Z99/2A1154_2HC6_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1154/2HC6F0Z99/2A1154_2HC6_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.038671+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.723974+00:00",
       "localImages": [
         "/products/pr-pdp/2A1154_2HC6_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1154_2HC6_F0Z99_P_ML100/2.jpg",
@@ -5144,14 +5554,14 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10187EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
+          "10187EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5175,7 +5585,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1155/2HC5F0Z99/2A1155_2HC5_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1155/2HC5F0Z99/2A1155_2HC5_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.653646+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.724145+00:00",
       "localImages": [
         "/products/pr-pdp/2A1155_2HC5_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1155_2HC5_F0Z99_P_ML050/2.jpg",
@@ -5243,15 +5653,15 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10530EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10187EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
+          "10187EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5275,7 +5685,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1155/2HC5F0Z99/2A1155_2HC5_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1155/2HC5F0Z99/2A1155_2HC5_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.819855+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.734518+00:00",
       "localImages": [
         "/products/pr-pdp/2A1155_2HC5_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1155_2HC5_F0Z99_P_ML100/2.jpg",
@@ -5344,16 +5754,16 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
           "10530EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10187EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
+          "10187EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5379,7 +5789,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1156/2D00F0Z99/2A1156_2D00_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1156/2D00F0Z99/2A1156_2D00_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.784424+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.734686+00:00",
       "localImages": [
         "/products/pr-pdp/2A1156_2D00_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1156_2D00_F0Z99_P_ML050/2.jpg",
@@ -5448,16 +5858,16 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
           "10530EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10187EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
+          "10187EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5483,7 +5893,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1156/2D00F0Z99/2A1156_2D00_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1156/2D00F0Z99/2A1156_2D00_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:22.964030+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.734879+00:00",
       "localImages": [
         "/products/pr-pdp/2A1156_2D00_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1156_2D00_F0Z99_P_ML100/2.jpg",
@@ -5549,13 +5959,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5581,7 +5991,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1157/2HEBF0Z99/2A1157_2HEB_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1157/2HEBF0Z99/2A1157_2HEB_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.003450+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735037+00:00",
       "localImages": [
         "/products/pr-pdp/2A1157_2HEB_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1157_2HEB_F0Z99_P_ML050/2.jpg",
@@ -5648,14 +6058,14 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5681,7 +6091,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1157/2HEBF0Z99/2A1157_2HEB_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1157/2HEBF0Z99/2A1157_2HEB_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.107629+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735226+00:00",
       "localImages": [
         "/products/pr-pdp/2A1157_2HEB_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1157_2HEB_F0Z99_P_ML100/2.jpg",
@@ -5749,15 +6159,15 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
-          "10562EU|false|false",
-          "10159EU|false|false",
-          "10574EU|false|false",
           "10565EU|true|false",
+          "10159EU|false|false",
           "10179EU|false|false",
           "10292EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5781,7 +6191,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1158/2HEFF0Z99/2A1158_2HEF_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1158/2HEFF0Z99/2A1158_2HEF_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.521376+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735419+00:00",
       "localImages": [
         "/products/pr-pdp/2A1158_2HEF_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1158_2HEF_F0Z99_P_ML050/2.jpg",
@@ -5851,17 +6261,17 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
           "10388EU|false|false",
-          "10562EU|false|false",
-          "10159EU|false|false",
-          "10574EU|false|false",
           "10565EU|true|false",
-          "10179EU|false|false",
-          "10292EU|false|false",
-          "10566EU|true|false",
           "10156EU|false|false",
-          "10187EU|false|false"
+          "10159EU|false|false",
+          "10179EU|false|false",
+          "10187EU|false|false",
+          "10292EU|false|false",
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -5885,7 +6295,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1158/2HEFF0Z99/2A1158_2HEF_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1158/2HEFF0Z99/2A1158_2HEF_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.143193+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735572+00:00",
       "localImages": [
         "/products/pr-pdp/2A1158_2HEF_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1158_2HEF_F0Z99_P_ML100/2.jpg",
@@ -5979,7 +6389,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1159/B008F0Z99/2A1159_B008_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1159/B008F0Z99/2A1159_B008_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.615524+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735722+00:00",
       "localImages": [
         "/products/pr-pdp/2A1159_B008_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1159_B008_F0Z99_P_ML100/2.jpg",
@@ -6038,12 +6448,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6068,7 +6478,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1251/2HC0F0Z99/2A1251_2HC0_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1251/2HC0F0Z99/2A1251_2HC0_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.544394+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.735880+00:00",
       "localImages": [
         "/products/pr-pdp/2A1251_2HC0_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1251_2HC0_F0Z99_P_ML100/2.jpg",
@@ -6126,11 +6536,11 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|true|false",
-          "10574EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6155,7 +6565,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1251/2HC0F0Z99/2A1251_2HC0_F0Z99_P_ML150_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1251/2HC0F0Z99/2A1251_2HC0_F0Z99_P_ML150_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.580391+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.736032+00:00",
       "localImages": [
         "/products/pr-pdp/2A1251_2HC0_F0Z99_P_ML150/1.jpg",
         "/products/pr-pdp/2A1251_2HC0_F0Z99_P_ML150/2.jpg",
@@ -6198,9 +6608,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-men",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -6214,12 +6630,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6244,7 +6660,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1252/2HC1F0Z99/2A1252_2HC1_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1252/2HC1F0Z99/2A1252_2HC1_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.475041+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.736198+00:00",
       "localImages": [
         "/products/pr-pdp/2A1252_2HC1_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1252_2HC1_F0Z99_P_ML100/2.jpg",
@@ -6309,12 +6725,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6338,7 +6754,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.064316+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.747554+00:00",
       "localImages": [
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML050/2.jpg",
@@ -6381,9 +6797,15 @@
         "prada-accessories"
       ],
       "leaf": "pr-fragrances-men",
-      "sizes": [],
-      "inStock": false,
-      "availability": "Red",
+      "sizes": [
+        {
+          "size": "TU",
+          "code": "1501",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "availability": "Green",
       "dimensions": {},
       "material": "Fragrances",
       "kind": "fragrances",
@@ -6397,12 +6819,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6426,7 +6848,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.142040+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.754266+00:00",
       "localImages": [
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML100/2.jpg",
@@ -6484,11 +6906,11 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|true|false",
-          "10574EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6512,7 +6934,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML150_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1253/2HC2F0Z99/2A1253_2HC2_F0Z99_P_ML150_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.914704+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.755493+00:00",
       "localImages": [
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML150/1.jpg",
         "/products/pr-pdp/2A1253_2HC2_F0Z99_P_ML150/2.jpg",
@@ -6577,12 +6999,12 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10566EU|true|false",
           "10129EU|false|false",
-          "10562EU|false|false",
           "10159EU|false|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10566EU|true|false"
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6607,7 +7029,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1266/2HC0F0Z99/2A1266_2HC0_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1266/2HC0F0Z99/2A1266_2HC0_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:23.880096+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.757126+00:00",
       "localImages": [
         "/products/pr-pdp/2A1266_2HC0_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1266_2HC0_F0Z99_P_ML050/2.jpg",
@@ -6673,13 +7095,13 @@
           "10574EU"
         ],
         "categoriesEnriched": [
-          "10574EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
           "10179EU|false|false",
-          "10182EU|false|false"
+          "10182EU|false|false",
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6705,7 +7127,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1451/2H0QF0Z99/2A1451_2H0Q_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1451/2H0QF0Z99/2A1451_2H0Q_F0Z99_P_ML050_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.107544+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.757314+00:00",
       "localImages": [
         "/products/pr-pdp/2A1451_2H0Q_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1451_2H0Q_F0Z99_P_ML050/2.jpg",
@@ -6773,11 +7195,11 @@
         "categoriesEnriched": [
           "10129EU|false|false",
           "10159EU|false|false",
-          "10562EU|false|false",
           "10566EU|true|false",
-          "10574EU|false|false",
           "10179EU|false|false",
-          "10182EU|false|false"
+          "10182EU|false|false",
+          "10562EU|false|false",
+          "10574EU|false|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6803,7 +7225,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1451/2H0QF0Z99/2A1451_2H0Q_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1451/2H0QF0Z99/2A1451_2H0Q_F0Z99_P_ML100_SLDA.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.029859+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.757501+00:00",
       "localImages": [
         "/products/pr-pdp/2A1451_2H0Q_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1451_2H0Q_F0Z99_P_ML100/2.jpg",
@@ -6867,11 +7289,11 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10574EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
           "10562EU|false|false",
-          "10566EU|false|false",
-          "10574EU|false|false"
+          "10566EU|true|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6897,7 +7319,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1452/B00BF0Z99/2A1452_B00B_F0Z99_P_ML050_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1452/B00BF0Z99/2A1452_B00B_F0Z99_P_ML050_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.294134+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.757648+00:00",
       "localImages": [
         "/products/pr-pdp/2A1452_B00B_F0Z99_P_ML050/1.jpg",
         "/products/pr-pdp/2A1452_B00B_F0Z99_P_ML050/2.jpg",
@@ -6961,11 +7383,11 @@
           "10574EU"
         ],
         "categoriesEnriched": [
+          "10574EU|false|false",
           "10129EU|false|false",
           "10159EU|false|false",
           "10562EU|false|false",
-          "10566EU|false|false",
-          "10574EU|false|false"
+          "10566EU|true|false"
         ],
         "breadcrumbs": {
           "level_1": {
@@ -6991,7 +7413,7 @@
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1452/B00BF0Z99/2A1452_B00B_F0Z99_P_ML100_SLD.jpg",
         "https://www.prada.com/content/dam/pradabkg_products/2/2A1/2A1452/B00BF0Z99/2A1452_B00B_F0Z99_P_ML100_SLP.jpg"
       ],
-      "scrapedAt": "2026-08-26T11:44:24.230515+00:00",
+      "scrapedAt": "2026-09-29T12:40:00.757801+00:00",
       "localImages": [
         "/products/pr-pdp/2A1452_B00B_F0Z99_P_ML100/1.jpg",
         "/products/pr-pdp/2A1452_B00B_F0Z99_P_ML100/2.jpg",
