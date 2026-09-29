@@ -323,8 +323,8 @@
         "variantSku": "X000010184004",
         "color": "Sea Salt",
         "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 36,
         "gbpListPrice": 36
       },
@@ -1093,8 +1093,8 @@
         "variantSku": "X000006756042",
         "color": "Nucleus / Mongoose",
         "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 55,
         "gbpListPrice": 55
       },
@@ -1830,8 +1830,8 @@
         "variantSku": "X000010466015",
         "color": "Sea Salt / White",
         "size": "L",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 23,
         "gbpListPrice": 23
       },
@@ -2352,8 +2352,8 @@
         "variantSku": "X000009463034",
         "color": "Mongoose",
         "size": "SM",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2388,8 +2388,8 @@
         "variantSku": "X000009463026",
         "color": "Cosmic Bloom",
         "size": "SM",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2541,8 +2541,8 @@
         "variantSku": "X000010464021",
         "color": "Mongoose",
         "size": "S",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 25,
         "gbpListPrice": 25
       },
@@ -2649,8 +2649,8 @@
         "variantSku": "X000010464024",
         "color": "Mongoose",
         "size": "XL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 25,
         "gbpListPrice": 25
       }
@@ -2772,8 +2772,8 @@
         "variantSku": "X000009934031",
         "color": "Moondrop",
         "size": "XS",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 70,
         "gbpListPrice": 70
       },
@@ -2952,8 +2952,8 @@
         "variantSku": "X000009934016",
         "color": "Black",
         "size": "XXS",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 70,
         "gbpListPrice": 70
       },
@@ -3940,8 +3940,8 @@
         "variantSku": "X000007284022",
         "color": "Dark Jade",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       },
@@ -3958,7 +3958,7 @@
         "variantSku": "X000007284021",
         "color": "Dark Jade",
         "size": "SM",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 40,
         "gbpListPrice": 40
@@ -4144,8 +4144,8 @@
         "variantSku": "X000009935024",
         "color": "Dark Jade / Black",
         "size": "XS",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 140,
         "gbpListPrice": 140
       },
@@ -4253,7 +4253,7 @@
         "variantSku": "X000007397002",
         "color": "Black",
         "size": "SM",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 32,
         "gbpListPrice": 32
@@ -4908,12 +4908,12 @@
       "Dark Jade": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Dark-Jade-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Dark-Jade-Hover.jpg",
-        "https://images.arcteryx.com/F26/1350x1710/Rho-Glove-Dark-Jade.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Dark-Jade-Back.jpg"
       ],
       "Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Black-Hover.jpg",
-        "https://images.arcteryx.com/F26/1350x1710/Rho-Glove-Black.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006583-Rho-Glove-Black-Back.jpg"
       ]
     },
     "variants": [
@@ -5678,6 +5678,12 @@
       "Dark Jade": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010636-Mantis-16-Backpack-Dark-Jade-Side.jpg"
       ]
     },
@@ -8515,7 +8521,7 @@
         "variantSku": "X000009982006",
         "color": "Black / Mantis",
         "size": "1A",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
@@ -8838,8 +8844,8 @@
         "variantSku": "X000010388015",
         "color": "Forage / Mantis",
         "size": "XL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 140,
         "gbpListPrice": 140
       },
@@ -8856,8 +8862,8 @@
         "variantSku": "X000010388013",
         "color": "Forage / Mantis",
         "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 140,
         "gbpListPrice": 140
       },
@@ -9491,7 +9497,8 @@
       "label": "Weight",
       "value": "90g / 3.2 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no __NEXT_DATA__"
   },
   "X000010980": {
     "url": "https://arcteryx.com/gb/en/shop/grotto-toque-0980",
@@ -9640,8 +9647,8 @@
         "variantSku": "X000007254003",
         "color": "Black",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       },
@@ -9649,8 +9656,8 @@
         "variantSku": "X000007254002",
         "color": "Black",
         "size": "SM",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       }
@@ -9720,7 +9727,7 @@
       "Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006539-Gothic-Glove-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006539-Gothic-Glove-Black-Hover.jpg",
-        "https://images.arcteryx.com/F26/1350x1710/Gothic-Glove-Black.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006539-Gothic-Glove-Black-Back.jpg"
       ]
     },
     "variants": [
@@ -10263,8 +10270,8 @@
         "variantSku": "X000010708002",
         "color": "Black",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 110,
         "gbpListPrice": 110
       },
@@ -10774,8 +10781,8 @@
         "variantSku": "X000010718003",
         "color": "Dark Jade",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 90,
         "gbpListPrice": 90
       },
@@ -11266,8 +11273,8 @@
         "variantSku": "X000007228001",
         "color": "Black",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       }

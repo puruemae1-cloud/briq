@@ -450,7 +450,7 @@
         "variantSku": "X000010504037",
         "color": "Neptune/Black",
         "size": "11.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
@@ -486,8 +486,8 @@
         "variantSku": "X000010504026",
         "color": "Mid Bracken/Graphite",
         "size": "12.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -558,8 +558,8 @@
         "variantSku": "X000010504023",
         "color": "Mid Bracken/Graphite",
         "size": "11",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -567,7 +567,7 @@
         "variantSku": "X000010504027",
         "color": "Neptune/Black",
         "size": "6.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
@@ -783,8 +783,8 @@
         "variantSku": "X000010504039",
         "color": "Neptune/Black",
         "size": "12.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -1548,8 +1548,8 @@
         "variantSku": "X000010023122",
         "color": "Stratus/Passport Grey",
         "size": "12",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -2585,7 +2585,7 @@
         "variantSku": "X000010029111",
         "color": "Atmos/Dk Arctic Silk",
         "size": "6.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -2612,7 +2612,7 @@
         "variantSku": "X000010029150",
         "color": "Graphite/Moondrop DK",
         "size": "11",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -2675,7 +2675,7 @@
         "variantSku": "X000010029145",
         "color": "Graphite/Moondrop DK",
         "size": "8.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -2729,7 +2729,7 @@
         "variantSku": "X000010029141",
         "color": "Graphite/Moondrop DK",
         "size": "6.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -2864,8 +2864,8 @@
         "variantSku": "X000010029143",
         "color": "Graphite/Moondrop DK",
         "size": "7.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -3108,8 +3108,8 @@
     "colours": [
       "Forage/Black",
       "Black/Black",
-      "Rune/Black",
-      "Passport/Black"
+      "Passport/Black",
+      "Rune/Black"
     ],
     "sizes": [
       "6.5",
@@ -3139,16 +3139,17 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Black-Black-Pair.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Black-Black-Sole.jpg"
       ],
-      "Rune/Black": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Profile.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Sole.jpg"
-      ],
       "Passport/Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Passport-Black-Profile.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Passport-Black-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Passport-Black-Pair.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Passport-Black-Sole.jpg"
+      ],
+      "Rune/Black": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Profile.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Pair.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009834-Konseal-Shoe-Rune-Black-Sole.jpg"
       ]
     },
     "variants": [
@@ -3174,24 +3175,6 @@
         "variantSku": "X000009834010",
         "color": "Black/Black",
         "size": "11",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834049",
-        "color": "Rune/Black",
-        "size": "11",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834043",
-        "color": "Rune/Black",
-        "size": "8",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3261,27 +3244,9 @@
         "gbpListPrice": 170
       },
       {
-        "variantSku": "X000009834048",
-        "color": "Rune/Black",
-        "size": "10.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
         "variantSku": "X000009834079",
         "color": "Forage/Black",
         "size": "10",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834052",
-        "color": "Rune/Black",
-        "size": "12.5",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3315,36 +3280,9 @@
         "gbpListPrice": 170
       },
       {
-        "variantSku": "X000009834050",
-        "color": "Rune/Black",
-        "size": "11.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834051",
-        "color": "Rune/Black",
-        "size": "12",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
         "variantSku": "X000009834082",
         "color": "Forage/Black",
         "size": "11.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834040",
-        "color": "Rune/Black",
-        "size": "6.5",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3387,27 +3325,9 @@
         "gbpListPrice": 170
       },
       {
-        "variantSku": "X000009834046",
-        "color": "Rune/Black",
-        "size": "9.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
         "variantSku": "X000009834078",
         "color": "Forage/Black",
         "size": "9.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834041",
-        "color": "Rune/Black",
-        "size": "7",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3432,33 +3352,6 @@
         "gbpListPrice": 170
       },
       {
-        "variantSku": "X000009834044",
-        "color": "Rune/Black",
-        "size": "8.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834047",
-        "color": "Rune/Black",
-        "size": "10",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834042",
-        "color": "Rune/Black",
-        "size": "7.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
         "variantSku": "X000009834072",
         "color": "Forage/Black",
         "size": "6.5",
@@ -3471,15 +3364,6 @@
         "variantSku": "X000009834005",
         "color": "Black/Black",
         "size": "8.5",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 170,
-        "gbpListPrice": 170
-      },
-      {
-        "variantSku": "X000009834045",
-        "color": "Rune/Black",
-        "size": "9",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3615,6 +3499,123 @@
         "variantSku": "X000009834096",
         "color": "Passport/Black",
         "size": "12",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834049",
+        "color": "Rune/Black",
+        "size": "11",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834043",
+        "color": "Rune/Black",
+        "size": "8",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834048",
+        "color": "Rune/Black",
+        "size": "10.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834052",
+        "color": "Rune/Black",
+        "size": "12.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834050",
+        "color": "Rune/Black",
+        "size": "11.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834051",
+        "color": "Rune/Black",
+        "size": "12",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834040",
+        "color": "Rune/Black",
+        "size": "6.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834046",
+        "color": "Rune/Black",
+        "size": "9.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834041",
+        "color": "Rune/Black",
+        "size": "7",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834044",
+        "color": "Rune/Black",
+        "size": "8.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834047",
+        "color": "Rune/Black",
+        "size": "10",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834042",
+        "color": "Rune/Black",
+        "size": "7.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 170,
+        "gbpListPrice": 170
+      },
+      {
+        "variantSku": "X000009834045",
+        "color": "Rune/Black",
+        "size": "9",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 170,
@@ -3790,8 +3791,8 @@
         "variantSku": "X000010397062",
         "color": "Arctic Silk/Arctic Silk",
         "size": "9.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -3853,8 +3854,8 @@
         "variantSku": "X000010397061",
         "color": "Arctic Silk/Arctic Silk",
         "size": "9",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -3970,8 +3971,8 @@
         "variantSku": "X000010397059",
         "color": "Arctic Silk/Arctic Silk",
         "size": "8",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4267,8 +4268,8 @@
         "variantSku": "X000010397060",
         "color": "Arctic Silk/Arctic Silk",
         "size": "8.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4294,8 +4295,8 @@
         "variantSku": "X000010397058",
         "color": "Arctic Silk/Arctic Silk",
         "size": "7.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4330,8 +4331,8 @@
         "variantSku": "X000010397129",
         "color": "Mid Bracken/Mid Bracken",
         "size": "10.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4795,7 +4796,7 @@
         "variantSku": "X000010398348",
         "color": "Fogstone/Neptune",
         "size": "10.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 150,
         "gbpListPrice": 150
@@ -5643,8 +5644,8 @@
         "variantSku": "X000010155088",
         "color": "Atmos/Atmos",
         "size": "8",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5661,8 +5662,8 @@
         "variantSku": "X000010155092",
         "color": "Atmos/Atmos",
         "size": "10",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5670,8 +5671,8 @@
         "variantSku": "X000010155093",
         "color": "Atmos/Atmos",
         "size": "10.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5679,8 +5680,8 @@
         "variantSku": "X000010155086",
         "color": "Atmos/Atmos",
         "size": "7",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5724,8 +5725,8 @@
         "variantSku": "X000010155091",
         "color": "Atmos/Atmos",
         "size": "9.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5733,8 +5734,8 @@
         "variantSku": "X000010155089",
         "color": "Atmos/Atmos",
         "size": "8.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5877,8 +5878,8 @@
         "variantSku": "X000010155144",
         "color": "SL Forage/SL Forage",
         "size": "7",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -5895,7 +5896,7 @@
         "variantSku": "X000010155143",
         "color": "SL Forage/SL Forage",
         "size": "6.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
@@ -6458,7 +6459,7 @@
         "variantSku": "X000010078192",
         "color": "Fogstone/Fogstone",
         "size": "11",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 130,
         "gbpListPrice": 130
@@ -7338,8 +7339,8 @@
         "variantSku": "X000010502069",
         "color": "Mid Bracken/Void",
         "size": "7.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -7410,7 +7411,7 @@
         "variantSku": "X000010502068",
         "color": "Mid Bracken/Void",
         "size": "7",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
@@ -7865,7 +7866,7 @@
         "variantSku": "X000010031080",
         "color": "Atmos/Dk Arctic Silk",
         "size": "4.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -7910,7 +7911,7 @@
         "variantSku": "X000010031067",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "5.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -7928,8 +7929,8 @@
         "variantSku": "X000010031072",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "8",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -7955,8 +7956,8 @@
         "variantSku": "X000010031063",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "3.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -7991,8 +7992,8 @@
         "variantSku": "X000010031070",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "7",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -8072,7 +8073,7 @@
         "variantSku": "X000010031069",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "6.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -8266,7 +8267,7 @@
         "variantSku": "X000010028097",
         "color": "Void TT/Stratus",
         "size": "4",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8320,7 +8321,7 @@
         "variantSku": "X000010028076",
         "color": "Atmos/Lt Rune",
         "size": "4.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8329,7 +8330,7 @@
         "variantSku": "X000010028086",
         "color": "Moondrop Grey/Moondrop DK",
         "size": "4",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8347,7 +8348,7 @@
         "variantSku": "X000010028098",
         "color": "Void TT/Stratus",
         "size": "4.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8410,8 +8411,8 @@
         "variantSku": "X000010028106",
         "color": "Void TT/Stratus",
         "size": "8.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -8419,8 +8420,8 @@
         "variantSku": "X000010028087",
         "color": "Moondrop Grey/Moondrop DK",
         "size": "4.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -8500,8 +8501,8 @@
         "variantSku": "X000010028103",
         "color": "Void TT/Stratus",
         "size": "7",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -8518,7 +8519,7 @@
         "variantSku": "X000010028102",
         "color": "Void TT/Stratus",
         "size": "6.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8527,7 +8528,7 @@
         "variantSku": "X000010028082",
         "color": "Atmos/Lt Rune",
         "size": "7.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -8554,8 +8555,8 @@
         "variantSku": "X000010028085",
         "color": "Moondrop Grey/Moondrop DK",
         "size": "3.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -9129,7 +9130,7 @@
         "variantSku": "X000010503025",
         "color": "Stone Red LT/Stone Red LT",
         "size": "4.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 130,
         "gbpListPrice": 130
@@ -9612,7 +9613,7 @@
         "variantSku": "X000010399006",
         "color": "Arctic Silk/Arctic Silk",
         "size": "6",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -9648,7 +9649,7 @@
         "variantSku": "X000010399005",
         "color": "Arctic Silk/Arctic Silk",
         "size": "5.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -9675,7 +9676,7 @@
         "variantSku": "X000010399008",
         "color": "Arctic Silk/Arctic Silk",
         "size": "7",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -9702,8 +9703,8 @@
         "variantSku": "X000010399004",
         "color": "Arctic Silk/Arctic Silk",
         "size": "5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },

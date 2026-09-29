@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-29T12:56:01Z",
+  "generatedAt": "2026-09-29T20:27:45Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ce-ry14l5d33-19le",
-        "ce-ry13h5590-28bl",
-        "ce-ry1365593-07rd",
-        "ce-ry11m0x73-38no"
+        "bb-long-cashmere-kensington-trench-coat-5",
+        "bb-wool-lancashire-jacket-3",
+        "bb-long-cashmere-kensington-trench-coat-4",
+        "bb-quilted-nylon-parka-2"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "burberry",
+        "burberry",
+        "burberry",
+        "burberry"
       ]
     },
     "watches": {
@@ -32,44 +32,44 @@
     },
     "bags": {
       "productIds": [
-        "bv-855504v2hl12166",
-        "bv-855504v2hl11913",
-        "bv-857931v2hl08803",
-        "bv-795628v2hl14330"
+        "gc-65857418ysg9068",
+        "gc-658574huhhg8565",
+        "gc-70744921hrg2687",
+        "gc-792082fadja1042"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "gucci",
+        "gucci",
+        "gucci",
+        "gucci"
       ]
     },
     "shoes": {
       "productIds": [
-        "vw-72030040-41454-am-beige",
-        "vw-72010006-41671-am-black",
-        "vw-72010006-41007-am-red",
-        "vw-74010021-41013-am-black"
+        "ax-x000010504",
+        "ax-x000010502",
+        "ce-356834582c-38no",
+        "ce-352193676c-38no"
       ],
       "brands": [
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood"
+        "arcteryx",
+        "arcteryx",
+        "celine",
+        "celine"
       ]
     },
     "accessories": {
       "productIds": [
-        "lu-city-gent-umbrella",
-        "lu-london-undercover-e-gift-card",
-        "lu-city-lux-umbrella",
-        "lu-toyo-steel-y350-toolbox-silver"
+        "pr-122048_1210_f0002_s_aao",
+        "pr-126241_1210_f0324_s_aao",
+        "pr-132333_1yun_f0009_s_202",
+        "pr-1a1318_b00c_f0z99_p_ml100"
       ],
       "brands": [
-        "london-undercover",
-        "london-undercover",
-        "london-undercover",
-        "london-undercover"
+        "prada",
+        "prada",
+        "prada",
+        "prada"
       ]
     },
     "sports": {
@@ -88,11 +88,19 @@
     }
   },
   "brands": {
-    "celine": [
+    "arcteryx": [
+      "shoes",
+      "shoes"
+    ],
+    "burberry": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
+    ],
+    "celine": [
+      "shoes",
+      "shoes"
     ],
     "christopher-ward": [
       "watches",
@@ -106,23 +114,17 @@
       "sports",
       "sports"
     ],
-    "london-undercover": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "vivienne-westwood": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
-    "보테가-베네타": [
+    "gucci": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "prada": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ]
   },
   "overlaps": {},
