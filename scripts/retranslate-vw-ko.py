@@ -422,6 +422,7 @@ def main() -> int:
     for en, ko in _LOCAL_KO.items():
         cache.setdefault(en, ko)
 
+    todo = collect_strings(products, cat_set)
     pending = [t for t in todo if not (t in cache and is_good_korean(cache[t], max_ratio=0.45))]
     # Short strings first — materials/care land quickly; long PDP bodies after.
     # Keep --priority-id strings at the front so a target PDP is fixed early.

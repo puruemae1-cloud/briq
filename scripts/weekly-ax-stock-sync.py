@@ -87,7 +87,12 @@ def main() -> None:
 
     # 1) Feeds — discover new styles / drop discontinued
     run("scrape-ax-outdoor-apparel.py")
-    run("scrape-ax-footwear.py")
+    try:
+        run("scrape-ax-footwear.py")
+    except subprocess.CalledProcessError:
+        # Bloomreach 403s GitHub runner IPs; keep the committed footwear feed
+        # so the PDP stock refresh below still runs for existing styles.
+        print("WARN footwear feed unavailable — reusing previous ax-catalog-raw.json", flush=True)
     run("scrape-ax-gear.py")
 
     # 2) PDP enrich — stock + galleries for new; refresh stock for existing

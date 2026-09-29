@@ -721,6 +721,19 @@ def purge_weak_cache(threshold: float = _MAX_KO_EN_RATIO) -> int:
 
 def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
     """Fail the build if Prada PDP body copy still looks like hybrid EN/KO."""
+    bad = prada_korean_problems(products, scope)
+    if bad:
+        bad.sort(key=lambda x: -x[2])
+        print("Prada Korean QA failed — hybrid English detected:", flush=True)
+        for pid, field, ratio in bad[:12]:
+            print(f"  {pid} {field} en_ratio={ratio:.2f}", flush=True)
+        raise SystemExit(
+            f"Prada Korean QA failed ({len(bad)} fields). "
+            "Add curated copy or fix translate pipeline."
+        )
+
+
+def prada_korean_problems(products: list[dict], scope: str = "all") -> list[tuple[str, str, float]]:
     bad: list[tuple[str, str, float]] = []
     for p in products:
         if p.get("brand") != "프라다":
@@ -831,15 +844,7 @@ def validate_prada_korean(products: list[dict], scope: str = "all") -> None:
             body = str(sec.get("bodyKo") or "").strip()
             if body and en_ratio(body) > _MAX_KO_EN_RATIO:
                 bad.append((pid, f"story[{i}].bodyKo", en_ratio(body)))
-    if bad:
-        bad.sort(key=lambda x: -x[2])
-        print("Prada Korean QA failed — hybrid English detected:", flush=True)
-        for pid, field, ratio in bad[:12]:
-            print(f"  {pid} {field} en_ratio={ratio:.2f}", flush=True)
-        raise SystemExit(
-            f"Prada Korean QA failed ({len(bad)} fields). "
-            "Add curated copy or fix translate pipeline."
-        )
+    return bad
 
 
 def validate_prada_rtw_sizes(products: list[dict], scope: str = "all") -> None:
@@ -3311,6 +3316,19 @@ def main() -> None:
         products = _preserve_no_price_catalog(existing, products, no_price_skus)
     validate_prada_rtw_sizes(products, scope=only)
     products = dedupe_merge_products(products)
+    if os.environ.get("PR_STOCK_ONLY_FALLBACK") == "1":
+        bad_ids = {pid for pid, _, _ in prada_korean_problems(products, scope=only)}
+        if bad_ids:
+            # Weekly sync: keep committed Korean copy for these SKUs but ship
+            # their stock/price, and hold back untranslated new ones.
+            from stock_only_fallback import committed_catalog, merge_stock_only
+
+            products, stats = merge_stock_only(
+                committed_catalog("src/data/pr/pr-catalog.json"),
+                products,
+                lambda p: str(p.get("id")) not in bad_ids,
+            )
+            print(f"Prada stock-only fallback: {stats}", flush=True)
     validate_prada_korean(products, scope=only)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")

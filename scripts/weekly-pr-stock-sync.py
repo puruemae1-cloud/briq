@@ -94,6 +94,7 @@ def main() -> None:
     env.setdefault("PYTHONUNBUFFERED", "1")
     env["PR_REFRESH_STOCK"] = "1"
     env["PR_SKIP_NO_PRICE_UPDATE"] = "1"
+    env["PR_STOCK_ONLY_FALLBACK"] = "1"
     print(
         "PR_REFRESH_STOCK=1 PR_SKIP_NO_PRICE_UPDATE=1 "
         "(re-fetch PLP availability; skip no-price updates)",

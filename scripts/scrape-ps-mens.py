@@ -15,7 +15,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ps_pale_colour import should_skip_ps_greymat  # noqa: E402
+from ps_pale_colour import is_pale_ps_colour, should_skip_ps_greymat  # noqa: E402
 from studio_whiten import save_product_image  # noqa: E402
 OUT_DIR = ROOT / "src/data/ps"
 RAW_PATH = OUT_DIR / "ps-catalog-raw.json"
