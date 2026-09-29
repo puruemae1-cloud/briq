@@ -280,6 +280,18 @@ def enrich_one(
     return pdp
 
 
+def merge_sizes(pdp: dict, prev: dict) -> list:
+    """Sizes for the raw row. A fetched PDP with no sizes means Burberry
+    delisted the style (URL redirects to a PLP), so keep the previous size
+    labels but mark every option sold out instead of carrying stale stock."""
+    if pdp.get("sizes"):
+        return pdp["sizes"]
+    old = prev.get("sizes") or []
+    if not pdp:
+        return old
+    return [{**s, "isInStock": False, "stockQuantity": 0} for s in old]
+
+
 def main() -> None:
     RAW_PATH.parent.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)

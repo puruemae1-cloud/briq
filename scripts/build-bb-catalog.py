@@ -378,6 +378,26 @@ def _bb_size_sort_key(size: str) -> tuple:
         return (2, 0.0, s.lower())
 
 
+def one_size_chart(measurements: str | None) -> dict | None:
+    """One-size styles (capes, ponchos …) get the official flat measurements
+    instead of a body-size chart that has no matching size chip."""
+    m = re.match(
+        r"\s*([\d.]+)\s*x\s*([\d.]+)\s*cm\s*/\s*([\d.]+)\.?\s*x\s*([\d.]+)\s*in",
+        str(measurements or ""),
+        re.I,
+    )
+    if not m:
+        return None
+    w_cm, h_cm, w_in, h_in = (g.rstrip(".") for g in m.groups())
+    return {
+        "id": "bb-one-size-measurements",
+        "titleKo": "버버리 원사이즈 제품 실측",
+        "noteKo": "공식 제품 실측(가로 × 세로) 기준입니다. 원사이즈 단일 옵션으로 판매됩니다.",
+        "headers": ["사이즈", "가로 × 세로 (cm)", "가로 × 세로 (inch)"],
+        "rows": [["프리사이즈", f"{w_cm} × {h_cm}", f"{w_in} × {h_in}"]],
+    }
+
+
 def size_chart_for_collections(cols: list[str], size_labels: list[str] | None = None) -> dict | None:
     """Pick shoe or apparel size chart for Burberry collections."""
     labels = [str(s).upper() for s in (size_labels or [])]
@@ -736,7 +756,7 @@ def main() -> None:
                     {
                         "sku": c.get("id"),
                         "label": "One size",
-                        "isInStock": True,
+                        "isInStock": False,
                     }
                 ]
 
@@ -855,7 +875,9 @@ def main() -> None:
                         for v in flat_variants
                         if v.get("size") and v.get("size") != "프리사이즈"
                     ],
-                ),
+                )
+                if any(v.get("size") != "프리사이즈" for v in flat_variants)
+                else one_size_chart(primary.get("measurements")),
                 "variants": flat_variants,
                 "inStock": any(v.get("inStock") for v in flat_variants),
             }

@@ -16,6 +16,7 @@ Designed for GitHub Actions (cron) and local runs:
 """
 from __future__ import annotations
 
+import importlib.util
 import os
 import subprocess
 import sys
@@ -44,6 +45,16 @@ def run(script: str, env: dict[str, str]) -> None:
     subprocess.check_call(cmd, cwd=str(ROOT), env=env)
 
 
+def load_translate_module():
+    spec = importlib.util.spec_from_file_location(
+        "translate_bb_catalog", ROOT / "scripts" / "translate-bb-catalog.py"
+    )
+    mod = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def main() -> None:
     from weekly_korean_gate import check_new_korean, utc_now_iso
 
@@ -57,15 +68,19 @@ def main() -> None:
         run(script, env)
 
     print("Checking Burberry Korean copy…", flush=True)
-    subprocess.check_call(
-        [
-            sys.executable,
-            str(ROOT / "scripts" / "translate-bb-catalog.py"),
-            "--check-catalog",
-        ],
-        cwd=str(ROOT),
-        env=env,
-    )
+    check = [
+        sys.executable,
+        str(ROOT / "scripts" / "translate-bb-catalog.py"),
+        "--check-catalog",
+    ]
+    if subprocess.call(check, cwd=str(ROOT), env=env) != 0:
+        # Translation was cut short (usually gtx 429). Ship stock/size/price
+        # changes on top of the committed Korean copy instead of losing them.
+        from stock_only_fallback import apply_fallback
+
+        translate = load_translate_module()
+        apply_fallback(ROOT / "src/data/bb/bb-catalog.json", translate.product_copy_ok)
+        subprocess.check_call(check, cwd=str(ROOT), env=env)
     check_new_korean("bb", since)
     print("Burberry weekly sync complete.", flush=True)
 

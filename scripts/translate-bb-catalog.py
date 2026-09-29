@@ -11,7 +11,9 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import threading
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -137,22 +139,43 @@ def is_good_ko(src: str, ko: str | None) -> bool:
     return True
 
 
+RATE_LIMITED = threading.Event()
+
+
+class RateLimited(RuntimeError):
+    pass
+
+
 def gtx(text: str) -> str:
     q = urllib.parse.quote(text[:4500])
     url = (
         "https://translate.googleapis.com/translate_a/single"
         f"?client=gtx&sl=en&tl=ko&dt=t&q={q}"
     )
+    if RATE_LIMITED.is_set():
+        raise RateLimited("gtx rate limit — skipped")
     last_err: Exception | None = None
+    limited = 0
     for attempt in range(4):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=45) as r:
                 data = json.loads(r.read().decode())
             return "".join(part[0] for part in data[0] if part and part[0])
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code == 429:
+                limited += 1
+                # gtx blocks the runner IP for minutes, not seconds.
+                time.sleep(30 * (attempt + 1))
+            else:
+                time.sleep(0.6 * (attempt + 1))
         except Exception as e:  # noqa: BLE001
             last_err = e
             time.sleep(0.6 * (attempt + 1))
+    if limited == 4:
+        RATE_LIMITED.set()
+        raise RateLimited(str(last_err))
     raise RuntimeError(last_err)
 
 
@@ -241,6 +264,27 @@ def catalog_field_ok(text: str | None) -> bool:
     return False
 
 
+def product_copy_problems(p: dict) -> list[str]:
+    pid = str(p.get("id") or "")
+    bad: list[str] = []
+    if not catalog_field_ok(p.get("nameKo")):
+        bad.append(f"nameKo {pid}: {p.get('nameKo')}")
+    if not catalog_field_ok(p.get("descriptionKo")):
+        snippet = str(p.get("descriptionKo") or "")[:90]
+        bad.append(f"descriptionKo {pid}: {snippet}")
+    for i, sec in enumerate(p.get("storySections") or []):
+        if not catalog_field_ok(sec.get("titleKo")):
+            bad.append(f"story.title {pid}#{i}: {sec.get('titleKo')}")
+        if not catalog_field_ok(sec.get("bodyKo")):
+            snippet = str(sec.get("bodyKo") or "")[:90]
+            bad.append(f"story.body {pid}#{i}: {snippet}")
+    return bad
+
+
+def product_copy_ok(p: dict) -> bool:
+    return not product_copy_problems(p)
+
+
 def check_catalog() -> int:
     if not CATALOG_JSON.is_file():
         print(f"missing {CATALOG_JSON}", flush=True)
@@ -248,18 +292,7 @@ def check_catalog() -> int:
     products = json.loads(CATALOG_JSON.read_text())
     bad: list[str] = []
     for p in products:
-        pid = str(p.get("id") or "")
-        if not catalog_field_ok(p.get("nameKo")):
-            bad.append(f"nameKo {pid}: {p.get('nameKo')}")
-        if not catalog_field_ok(p.get("descriptionKo")):
-            snippet = str(p.get("descriptionKo") or "")[:90]
-            bad.append(f"descriptionKo {pid}: {snippet}")
-        for i, sec in enumerate(p.get("storySections") or []):
-            if not catalog_field_ok(sec.get("titleKo")):
-                bad.append(f"story.title {pid}#{i}: {sec.get('titleKo')}")
-            if not catalog_field_ok(sec.get("bodyKo")):
-                snippet = str(sec.get("bodyKo") or "")[:90]
-                bad.append(f"story.body {pid}#{i}: {snippet}")
+        bad.extend(product_copy_problems(p))
     print(f"bb korean check products={len(products)} bad={len(bad)}", flush=True)
     for row in bad[:40]:
         print(f"  {row}", flush=True)
@@ -427,6 +460,8 @@ def main() -> None:
         print("SAMPLE EN:", sample[:160], flush=True)
         print("SAMPLE KO:", cache.get(sample, "")[:220], flush=True)
     print(f"wrote {CACHE_PATH} entries={len(cache)}", flush=True)
+    if RATE_LIMITED.is_set():
+        print("gtx rate limited — remaining strings left for the next sync", flush=True)
 
 
 if __name__ == "__main__":

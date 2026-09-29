@@ -17,6 +17,16 @@ esac
 git config user.name "briq-bot"
 git config user.email "briq-bot@users.noreply.github.com"
 
+# Bags/shoes PLPs read per-brand slices, so option-level stock must be
+# re-extracted whenever a sync rewrites the full brand catalogue.
+for path in "$@"; do
+  if [[ "$path" =~ ^src/data/([a-z]{2})/?$ ]]; then
+    key="${BASH_REMATCH[1]}"
+    python3 scripts/extract-bags-catalogs.py "$key" >/dev/null
+    python3 scripts/extract-shoes-catalogs.py "$key" >/dev/null
+  fi
+done
+
 git add -A "$@"
 if git diff --staged --quiet; then
   echo "No catalog changes."

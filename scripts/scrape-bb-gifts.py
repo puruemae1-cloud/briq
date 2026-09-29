@@ -200,7 +200,7 @@ def main() -> None:
                 or "",
                 "images": local_imgs or prev.get("images") or [],
                 "remoteImages": pdp.get("images") or prev.get("remoteImages") or [],
-                "sizes": pdp.get("sizes") or prev.get("sizes") or [],
+                "sizes": _scrape.merge_sizes(pdp, prev),
                 "swatches": pdp.get("swatches") or prev.get("swatches") or [],
                 "description": pdp.get("description") or prev.get("description") or "",
                 "accordion": pdp.get("accordion") or prev.get("accordion") or [],
