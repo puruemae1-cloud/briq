@@ -20,21 +20,20 @@ def has_hangul(s: str) -> bool:
     return any("\uac00" <= c <= "\ud7a3" for c in (s or ""))
 
 
+def name_ok(p: dict) -> bool:
+    nk = str(p.get("nameKo") or "").strip()
+    if not nk or has_hangul(nk) or is_model_english(nk):
+        return True
+    return not re.search(r"[A-Za-z]{3,}", nk)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fail", action="store_true")
     ap.add_argument("--max-bad", type=int, default=0)
     args = ap.parse_args()
     products = json.loads(CATALOG.read_text(encoding="utf-8"))
-    bad = []
-    for p in products:
-        nk = str(p.get("nameKo") or "").strip()
-        if not nk:
-            continue
-        if has_hangul(nk) or is_model_english(nk):
-            continue
-        if re.search(r"[A-Za-z]{3,}", nk):
-            bad.append((p.get("id"), nk))
+    bad = [(p.get("id"), p.get("nameKo")) for p in products if not name_ok(p)]
     print(f"bv nameKo english_rows={len(bad)} / {len(products)}", flush=True)
     for pid, nk in bad[:20]:
         print(f"  {pid}: {nk}", flush=True)

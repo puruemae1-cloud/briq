@@ -8,9 +8,15 @@ LOG=/tmp/di-weekly-sync.log
 exec > >(tee -a "$LOG") 2>&1
 
 run() {
-  echo "=== $1 $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
+  local name="$1"
+  echo "=== $name $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
   shift
-  "$@"
+  if ! "$@"; then
+    # Stage scripts log to /tmp/di-*.log only; surface them in CI.
+    echo "!!! $name failed — recent /tmp/di-*.log output:"
+    tail -n 60 /tmp/di-*.log 2>/dev/null || true
+    return 1
+  fi
 }
 
 run "WOMEN_BAGS_STAGES" bash scripts/run-di-bags-stages.sh

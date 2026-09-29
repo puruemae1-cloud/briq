@@ -114,9 +114,24 @@ def main() -> None:
             flush=True,
         )
     else:
-        raise SystemExit(
-            last_rc or qa.returncode or name_qa.returncode or 1
+        # Ship stock on the committed Korean copy instead of dropping the sync;
+        # untranslated new SKUs wait for the next run.
+        import importlib.util
+
+        from ko_qa import find_hybrid_fields
+        from stock_only_fallback import apply_fallback
+
+        spec = importlib.util.spec_from_file_location(
+            "check_bv_nameko", ROOT / "scripts" / "check-bv-nameko.py"
         )
+        names = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(names)
+        apply_fallback(
+            OUT_JSON,
+            lambda p: names.name_ok(p) and not find_hybrid_fields([p]),
+        )
+        run([sys.executable, "scripts/check-catalog-korean.py", "--brand", "bv", "--strict", "--fail"], env)
+        run([sys.executable, "-u", "scripts/check-bv-nameko.py", "--fail"], env)
 
     # KO repair can rewrite nameKo, so make every title unique (colour, then real differences) last.
     run([sys.executable, "-u", "scripts/fix-bv-name-colors.py"], env)
