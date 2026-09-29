@@ -207,6 +207,10 @@ def main() -> int:
         default="",
         help="Only products whose subcategory/tags start with this (e.g. gc-men)",
     )
+    ap.add_argument(
+        "--write-missing-dirs",
+        help="Write SKU folder names with files missing on the tag (one per line)",
+    )
     args = ap.parse_args()
     if args.skip_local and not args.remote:
         raise SystemExit("--skip-local requires --remote")
@@ -270,6 +274,13 @@ def main() -> int:
                     missing_remote.append((pid, web))
 
     print(f"Checked {checked} image path(s) across {len(products)} product(s).", flush=True)
+
+    if args.write_missing_dirs:
+        # /products/<brand>-pdp/<sku>/<n>.jpg → <sku>
+        dirs = sorted(
+            {web.strip("/").split("/")[2] for _pid, web in missing_remote if web.count("/") >= 4}
+        )
+        Path(args.write_missing_dirs).write_text("".join(f"{d}\n" for d in dirs))
 
     if missing_local:
         print(f"\nMISSING LOCAL ({len(missing_local)}):", flush=True)

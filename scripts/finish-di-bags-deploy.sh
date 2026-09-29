@@ -26,7 +26,7 @@ if ! grep -q 'PIPELINE_DONE' /tmp/di-bags-pipeline.log 2>/dev/null; then
   if [[ -f src/data/di/di-bags-women-catalog-raw.json ]] && ! grep -q 'EXIT_MERGE:0' /tmp/di-bags-pipeline.log 2>/dev/null; then
     echo "=== fallback MERGE ==="
     python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-bags-merge.log
-    python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-bags-ko.log
+    python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-bags-ko.log
     python3 scripts/weekly-sync-status.py
     python3 scripts/push-product-images-tag.py --dirs di-pdp | tee /tmp/di-bags-cdn.log
   fi
@@ -98,12 +98,9 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
-git commit -m "$(cat <<'EOF'
-Add Dior women's bags under Bags → 디올 → 여성용 (~388 SKUs).
-
-Import official by-category leaves (handbags, crossbody, totes, bucket, clutches, mini, accessorize) with Korean copy and PDP images.
-EOF
-)"
+git commit \
+  -m "Add Dior women's bags under Bags → 디올 → 여성용 (~388 SKUs)." \
+  -m "Import official by-category leaves (handbags, crossbody, totes, bucket, clutches, mini, accessorize) with Korean copy and PDP images."
 
 git push origin main
 echo "DEPLOYED $(date -u +%Y-%m-%dT%H:%M:%SZ)" | tee /tmp/di-bags-DEPLOYED

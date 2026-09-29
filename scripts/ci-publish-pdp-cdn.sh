@@ -41,6 +41,10 @@ echo "=== CDN publish dirs=${DIRS[*]} brands=${BRANDS[*]:-none} chunk=$CHUNK ===
 for attempt in 1 2 3 4 5 6 7 8; do
   tip=$(git ls-remote origin refs/tags/product-images | awk '{print $1}' || true)
   if [[ -n "${tip:-}" ]]; then
+    # Other brand syncs move the tag concurrently; building on a stale tip
+    # makes the next push re-upload the whole image tree (HTTP 500).
+    git cat-file -e "${tip}^{commit}" 2>/dev/null \
+      || git fetch --no-tags origin refs/tags/product-images || true
     git update-ref refs/tags/product-images "$tip" || true
   fi
 
@@ -66,6 +70,15 @@ if [[ ${#BRANDS[@]} -gt 0 ]]; then
   for b in "${BRANDS[@]}"; do
     args+=(--brand "$b")
   done
+  # The folder-level gap check misses new frames added to folders already on
+  # the tag; republish those folders before the hard check.
+  python3 scripts/verify-product-images.py "${args[@]}" --remote --skip-local --all-images \
+    --write-missing-dirs /tmp/ci-tag-file-gaps.txt >/dev/null || true
+  if [[ -s /tmp/ci-tag-file-gaps.txt ]]; then
+    echo "republishing $(wc -l < /tmp/ci-tag-file-gaps.txt | tr -d ' ') folder(s) with files missing on the tag"
+    python3 scripts/push-product-images-tag.py --dirs "${DIRS[@]}" --merge \
+      --only-file /tmp/ci-tag-file-gaps.txt --skip-purge --skip-whiten || true
+  fi
   python3 scripts/verify-product-images.py "${args[@]}" --remote --skip-local --all-images
 fi
 

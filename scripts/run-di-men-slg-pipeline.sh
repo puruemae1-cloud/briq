@@ -29,7 +29,7 @@ python3 scripts/enrich-di-men-slg-pdp.py | tee /tmp/di-men-slg-enrich.log
 echo "EXIT_ENRICH:$?"
 
 echo "=== KO ==="
-python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-slg-ko.log
+python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-men-slg-ko.log
 echo "EXIT_KO:$?"
 
 echo "=== IMAGES ==="

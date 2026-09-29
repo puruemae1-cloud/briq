@@ -32,7 +32,7 @@ python3 scripts/enrich-di-men-shoes-pdp.py --translate | tee /tmp/di-men-shoes-e
 echo "EXIT_ENRICH:$?"
 
 echo "=== KO ==="
-python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-shoes-ko.log
+python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-men-shoes-ko.log
 echo "EXIT_KO:$?"
 
 echo "=== IMAGES ==="

@@ -24,7 +24,7 @@ python3 scripts/fix-di-catalog-prices.py --check | tee /tmp/di-men-essentials-pr
 echo "EXIT_PRICES:$?"
 
 echo "=== KO ==="
-python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-men-essentials-ko.log
+python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-men-essentials-ko.log
 echo "EXIT_KO:$?"
 
 echo "=== IMAGES ==="

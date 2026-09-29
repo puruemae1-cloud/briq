@@ -38,7 +38,7 @@ if [[ -f "$DEPLOYED" ]]; then
 fi
 
 run_step RECLASS python3 scripts/reclassify-di-accessorize-bag.py
-run_step KO python3 scripts/check-catalog-korean.py --brand di --fail
+run_step KO python3 scripts/ko_stock_fallback_gate.py --brand di
 run_step IMAGES python3 scripts/check-di-image-integrity.py
 
 python3 - <<'PY'

@@ -81,19 +81,26 @@ PYTHONUNBUFFERED=1 python3 scripts/fill-mb-ko-fields.py || {
 if ! python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55; then
   echo "WARN: MB Korean QA failed — keeping committed copy for untranslated rows, shipping stock/options"
   python3 - <<'PY'
+import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, "scripts")
 from ko_qa import find_hybrid_fields
-from stock_only_fallback import apply_fallback
+from stock_only_fallback import apply_fallback, committed_catalog
 
-apply_fallback(
-    Path("src/data/mb/mb-catalog.json"),
-    lambda p: not find_hybrid_fields([p], max_ratio=0.55),
-)
+path = Path("src/data/mb/mb-catalog.json")
+apply_fallback(path, lambda p: not find_hybrid_fields([p], max_ratio=0.55))
+
+# Rows that kept committed copy may carry older QA debt; only new problems fail.
+def bad(products):
+    return {(pid, field) for pid, field, _r, _s in find_hybrid_fields(products, max_ratio=0.55)}
+
+extra = bad(json.loads(path.read_text())) - bad(committed_catalog(str(path)))
+if extra:
+    print(f"Korean QA regressions after fallback: {sorted(extra)[:20]}")
+    sys.exit(1)
 PY
-  python3 scripts/check-catalog-korean.py --brand mb --strict --fail --max-ratio 0.55
 fi
 
 # Women bags must stay near official Algolia size (~348 colourways).

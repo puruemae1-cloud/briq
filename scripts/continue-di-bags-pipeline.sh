@@ -55,7 +55,7 @@ python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-bags-merge.log
 echo "EXIT_MERGE:$?"
 
 echo "=== KO CHECK ==="
-python3 scripts/check-catalog-korean.py --brand di --fail | tee /tmp/di-bags-ko.log
+python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-bags-ko.log
 echo "EXIT_KO:$?"
 
 echo "=== CDN di-pdp ==="
