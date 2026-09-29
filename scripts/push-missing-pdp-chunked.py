@@ -54,6 +54,18 @@ def sync_tag_to_remote() -> None:
     if not tip:
         print("WARN: could not read remote product-images tip", flush=True)
         return
+    have = subprocess.run(
+        ["git", "cat-file", "-e", f"{tip}^{{commit}}"],
+        cwd=str(ROOT),
+        capture_output=True,
+    )
+    if have.returncode != 0:
+        # Other brand syncs push to the same tag concurrently.
+        subprocess.run(
+            ["git", "fetch", "--no-tags", "origin", "refs/tags/product-images"],
+            cwd=str(ROOT),
+            check=True,
+        )
     subprocess.run(
         ["git", "update-ref", "refs/tags/product-images", tip],
         cwd=str(ROOT),
