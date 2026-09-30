@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-09-18T19:11:05.075326+00:00",
+  "scrapedAt": "2026-09-30T20:11:04.943166+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -13,12 +13,12 @@
   ],
   "leafCounts": {
     "bv-men-acc-key-rings": {
-      "official": 68,
-      "scraped": 68
+      "official": 70,
+      "scraped": 70
     },
     "bv-men-acc-belts": {
-      "official": 23,
-      "scraped": 23
+      "official": 24,
+      "scraped": 24
     },
     "bv-men-acc-tech": {
       "official": 6,
@@ -72,11 +72,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/64a17241-ac5a-4af1-8a30-3637d020eafc/eCom/A006VMV5AM16222_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/fb8556c5-b70f-4edb-b904-e2634486e229/eCom/A006VMV5AM16222_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/fb8556c5-b70f-4edb-b904-e2634486e229/eCom/A006VMV5AM16222_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/64a17241-ac5a-4af1-8a30-3637d020eafc/Small/A006VMV5AM16222_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a006vmv5am16222/1.jpg",
-        "/products/bv-pdp/a006vmv5am16222/2.jpg"
+        "/products/bv-pdp/a006vmv5am16222/2.jpg",
+        "/products/bv-pdp/a006vmv5am16222/3.jpg"
       ],
       "sizes": [
         {
@@ -130,12 +132,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0466ca92-0c30-49f4-9218-b853b724de41/eCom/807068V3D813107_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/6997cf61-7de5-4b46-abac-f4b03932cc1c/eCom/807068V3D813107_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/872e3505-439d-4644-ae90-024cf9d0986d/eCom/807068V3D813107_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/872e3505-439d-4644-ae90-024cf9d0986d/eCom/807068V3D813107_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0466ca92-0c30-49f4-9218-b853b724de41/Small/807068V3D813107_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d813107/1.jpg",
         "/products/bv-pdp/807068v3d813107/2.jpg",
-        "/products/bv-pdp/807068v3d813107/3.jpg"
+        "/products/bv-pdp/807068v3d813107/3.jpg",
+        "/products/bv-pdp/807068v3d813107/4.jpg"
       ],
       "sizes": [
         {
@@ -187,10 +191,14 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/8c868f76-9260-4b0c-8bff-595e0f1c8ca3/eCom/A006M4V5AM17137_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/8c868f76-9260-4b0c-8bff-595e0f1c8ca3/eCom/A006M4V5AM17137_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9b37e1b0-5d74-4c70-8f61-f5279e68dc33/eCom/A006M4V5AM17137_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8c868f76-9260-4b0c-8bff-595e0f1c8ca3/Small/A006M4V5AM17137_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/a006m4v5am17137/1.jpg"
+        "/products/bv-pdp/a006m4v5am17137/1.jpg",
+        "/products/bv-pdp/a006m4v5am17137/2.jpg",
+        "/products/bv-pdp/a006m4v5am17137/3.jpg"
       ],
       "sizes": [
         {
@@ -243,11 +251,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/98c9722b-aa47-4193-a499-1622dea5f426/eCom/867134V64A02328_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/18d54169-7249-4e1e-805d-0d1c9714bbe6/eCom/867134V64A02328_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/18d54169-7249-4e1e-805d-0d1c9714bbe6/eCom/867134V64A02328_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/98c9722b-aa47-4193-a499-1622dea5f426/Small/867134V64A02328_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v64a02328/1.jpg",
-        "/products/bv-pdp/867134v64a02328/2.jpg"
+        "/products/bv-pdp/867134v64a02328/2.jpg",
+        "/products/bv-pdp/867134v64a02328/3.jpg"
       ],
       "sizes": [
         {
@@ -300,7 +310,7 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/71568f36-7865-40b2-b2de-ccd2b5a94946/eCom/A006MAV5AM13806_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/eeaa916b-fe39-4d6a-b990-4690b60c0431/eCom/A006MAV5AM13806_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/71568f36-7865-40b2-b2de-ccd2b5a94946/Small/A006MAV5AM13806_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a006mav5am13806/1.jpg",
@@ -358,12 +368,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/a52db643-4359-48e6-aa6d-bb46130cf4e0/eCom/835969V5AM19562_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/6ee15735-6b03-4b8d-8d2c-76790b99fce0/eCom/835969V5AM19562_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/743be52e-2ff8-4b7a-887a-6cb5acd811f2/eCom/835969V5AM19562_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/743be52e-2ff8-4b7a-887a-6cb5acd811f2/eCom/835969V5AM19562_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a52db643-4359-48e6-aa6d-bb46130cf4e0/Small/835969V5AM19562_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/835969v5am19562/1.jpg",
         "/products/bv-pdp/835969v5am19562/2.jpg",
-        "/products/bv-pdp/835969v5am19562/3.jpg"
+        "/products/bv-pdp/835969v5am19562/3.jpg",
+        "/products/bv-pdp/835969v5am19562/4.jpg"
       ],
       "sizes": [
         {
@@ -420,12 +432,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/eCom/A006LVV6TO08803_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d4909080-b8e7-432c-ac1d-ba17aaa4fcd1/eCom/A006LVV6TO08803_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d1e9a35c-8578-4108-ad25-c142da078247/eCom/A006LVV6TO08803_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/d1e9a35c-8578-4108-ad25-c142da078247/eCom/A006LVV6TO08803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/Small/A006LVV6TO08803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a006lvv6to08803/1.jpg",
         "/products/bv-pdp/a006lvv6to08803/2.jpg",
-        "/products/bv-pdp/a006lvv6to08803/3.jpg"
+        "/products/bv-pdp/a006lvv6to08803/3.jpg",
+        "/products/bv-pdp/a006lvv6to08803/4.jpg"
       ],
       "sizes": [
         {
@@ -472,7 +486,7 @@
         "Compatible with personalisation clips"
       ],
       "compactedLongDesc": "Woven tab key ring crafted using a low-impact material made from mycelium.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: Mycelium",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
       "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 3 cm | 1.2\"\n\n• Depth: 0.5 cm | 0.2\"",
@@ -480,11 +494,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/f78ba2b3-f8d3-47fd-9adb-c77d4f805ee9/eCom/A003A7V6U301674_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/dff5a82e-5b81-426e-8847-f7b4a963abfa/eCom/A003A7V6U301674_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/dff5a82e-5b81-426e-8847-f7b4a963abfa/eCom/A003A7V6U301674_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f78ba2b3-f8d3-47fd-9adb-c77d4f805ee9/Small/A003A7V6U301674_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003a7v6u301674/1.jpg",
-        "/products/bv-pdp/a003a7v6u301674/2.jpg"
+        "/products/bv-pdp/a003a7v6u301674/2.jpg",
+        "/products/bv-pdp/a003a7v6u301674/3.jpg"
       ],
       "sizes": [
         {
@@ -543,14 +559,16 @@
         "https://bottega-veneta.dam.kering.com/asset/0903fda3-9162-4054-b7b8-40ea80698298/eCom/A006LVV6TO03770_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b096950a-0c8b-402e-8df0-130361314ccf/eCom/A006LVV6TO03770_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/aea65b57-f1da-4ec4-9147-9204ff626338/eCom/A006LVV6TO03770_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/c1972797-4526-41ef-b310-28c7e20c30a7/eCom/A006LVV6TO03770_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c1972797-4526-41ef-b310-28c7e20c30a7/eCom/A006LVV6TO03770_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/795e4d8f-f530-4b74-b610-a27b35714d74/Small/A006LVV6TO03770_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a006lvv6to03770/1.jpg",
         "/products/bv-pdp/a006lvv6to03770/2.jpg",
         "/products/bv-pdp/a006lvv6to03770/3.jpg",
         "/products/bv-pdp/a006lvv6to03770/4.jpg",
-        "/products/bv-pdp/a006lvv6to03770/5.jpg"
+        "/products/bv-pdp/a006lvv6to03770/5.jpg",
+        "/products/bv-pdp/a006lvv6to03770/6.jpg"
       ],
       "sizes": [
         {
@@ -597,7 +615,7 @@
         "Compatible with personalisation clips"
       ],
       "compactedLongDesc": "Woven tab key ring crafted using a low-impact material made from mycelium.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: Mycelium",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
       "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 3 cm | 1.2\"\n\n• Depth: 0.5 cm | 0.2\"",
@@ -605,11 +623,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/4c6bdafd-782d-4a43-b9ef-445907603ad5/eCom/A003A7V6U306546_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/301e0790-0b2a-474b-bf33-c217e0663b27/eCom/A003A7V6U306546_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/301e0790-0b2a-474b-bf33-c217e0663b27/eCom/A003A7V6U306546_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4c6bdafd-782d-4a43-b9ef-445907603ad5/Small/A003A7V6U306546_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003a7v6u306546/1.jpg",
-        "/products/bv-pdp/a003a7v6u306546/2.jpg"
+        "/products/bv-pdp/a003a7v6u306546/2.jpg",
+        "/products/bv-pdp/a003a7v6u306546/3.jpg"
       ],
       "sizes": [
         {
@@ -655,7 +675,7 @@
         "Single metal hook"
       ],
       "compactedLongDesc": "Woven tab key ring crafted using a low-impact material made from mycelium.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: Mycelium",
       "material": "",
       "productCare": "USE AND CARE\n\nThis item is the product of artisanal craftsmanship and made with our finest materials. Any variations or irregularities are normal characteristics that make each piece unique. \n\nStore and handle with care. We recommend using the fabric bag provided. Avoid contact with any liquids, moisture, direct sunlight, sources of heat and abrasive surfaces.",
       "sizeModel": "• Height: 12 cm\n\n• Width: 3 cm\n\n• Depth: 0,5 cm",
@@ -663,11 +683,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/bd1298a3-9093-4cfa-9dc7-ad6f0a3c678e/eCom/A003A7V6U303827_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2246deca-afb4-4ce5-a7bf-a5467cbeb99d/eCom/A003A7V6U303827_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2246deca-afb4-4ce5-a7bf-a5467cbeb99d/eCom/A003A7V6U303827_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bd1298a3-9093-4cfa-9dc7-ad6f0a3c678e/Small/A003A7V6U303827_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003a7v6u303827/1.jpg",
-        "/products/bv-pdp/a003a7v6u303827/2.jpg"
+        "/products/bv-pdp/a003a7v6u303827/2.jpg",
+        "/products/bv-pdp/a003a7v6u303827/3.jpg"
       ],
       "sizes": [
         {
@@ -713,7 +735,7 @@
         "Single metal hook"
       ],
       "compactedLongDesc": "Woven tab key ring crafted using a low-impact material made from mycelium.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: Mycelium",
       "material": "",
       "productCare": "USE AND CARE\n\nThis item is the product of artisanal craftsmanship and made with our finest materials. Any variations or irregularities are normal characteristics that make each piece unique. \n\nStore and handle with care. We recommend using the fabric bag provided. Avoid contact with any liquids, moisture, direct sunlight, sources of heat and abrasive surfaces.",
       "sizeModel": "• Height: 12 cm\n\n• Width: 3 cm\n\n• Depth: 0,5 cm",
@@ -721,11 +743,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/554dd8a0-33ee-4c3d-b2d2-f1f4335e8758/eCom/A003A7V6U304298_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/001c50ec-1760-4fbc-9185-279ed9078172/eCom/A003A7V6U304298_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/001c50ec-1760-4fbc-9185-279ed9078172/eCom/A003A7V6U304298_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/554dd8a0-33ee-4c3d-b2d2-f1f4335e8758/Small/A003A7V6U304298_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003a7v6u304298/1.jpg",
-        "/products/bv-pdp/a003a7v6u304298/2.jpg"
+        "/products/bv-pdp/a003a7v6u304298/2.jpg",
+        "/products/bv-pdp/a003a7v6u304298/3.jpg"
       ],
       "sizes": [
         {
@@ -778,11 +802,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/f8a1b8c9-58b7-47d9-bc7a-41d34f156287/eCom/807068V3D814037_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/773c6b2d-380b-42df-bdc8-5b6dc163f1df/eCom/807068V3D814037_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/773c6b2d-380b-42df-bdc8-5b6dc163f1df/eCom/807068V3D814037_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f8a1b8c9-58b7-47d9-bc7a-41d34f156287/Small/807068V3D814037_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d814037/1.jpg",
-        "/products/bv-pdp/807068v3d814037/2.jpg"
+        "/products/bv-pdp/807068v3d814037/2.jpg",
+        "/products/bv-pdp/807068v3d814037/3.jpg"
       ],
       "sizes": [
         {
@@ -835,11 +861,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/b3d91de6-936a-4f1d-8e00-cc96293806e0/eCom/807068V3D815306_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d40859d2-c66b-45cc-bb09-766bdf9090d2/eCom/807068V3D815306_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/d40859d2-c66b-45cc-bb09-766bdf9090d2/eCom/807068V3D815306_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b3d91de6-936a-4f1d-8e00-cc96293806e0/Small/807068V3D815306_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d815306/1.jpg",
-        "/products/bv-pdp/807068v3d815306/2.jpg"
+        "/products/bv-pdp/807068v3d815306/2.jpg",
+        "/products/bv-pdp/807068v3d815306/3.jpg"
       ],
       "sizes": [
         {
@@ -893,11 +921,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/c9dcdaa9-2074-4f29-b2fd-f1f403b09448/eCom/807068V64A06337_A.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/asset/dc547b59-02fb-48a9-bbd6-4293007b79e3/eCom/807068V64A06337_B.jpg?v=4"
+        "https://bottega-veneta.dam.kering.com/asset/dc547b59-02fb-48a9-bbd6-4293007b79e3/eCom/807068V64A06337_B.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/c9dcdaa9-2074-4f29-b2fd-f1f403b09448/Small/807068V64A06337_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/807068v64a06337/1.jpg",
-        "/products/bv-pdp/807068v64a06337/2.jpg"
+        "/products/bv-pdp/807068v64a06337/2.jpg",
+        "/products/bv-pdp/807068v64a06337/3.jpg"
       ],
       "sizes": [
         {
@@ -951,11 +981,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/18e69eb0-da87-4200-8de8-1feeb8554ca1/eCom/807068V3D812113_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/d08f36c9-5b04-46b4-bac3-e9a419abbf15/eCom/807068V3D812113_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/d08f36c9-5b04-46b4-bac3-e9a419abbf15/eCom/807068V3D812113_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/18e69eb0-da87-4200-8de8-1feeb8554ca1/Small/807068V3D812113_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d812113/1.jpg",
-        "/products/bv-pdp/807068v3d812113/2.jpg"
+        "/products/bv-pdp/807068v3d812113/2.jpg",
+        "/products/bv-pdp/807068v3d812113/3.jpg"
       ],
       "sizes": [
         {
@@ -1009,11 +1041,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/3a97f718-55fa-41f8-8bdb-5f738df87b0b/eCom/867134V64A06452_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/22c77fbc-7d65-47d8-bcc8-96c8926d28bd/eCom/867134V64A06452_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/22c77fbc-7d65-47d8-bcc8-96c8926d28bd/eCom/867134V64A06452_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3a97f718-55fa-41f8-8bdb-5f738df87b0b/Small/867134V64A06452_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v64a06452/1.jpg",
-        "/products/bv-pdp/867134v64a06452/2.jpg"
+        "/products/bv-pdp/867134v64a06452/2.jpg",
+        "/products/bv-pdp/867134v64a06452/3.jpg"
       ],
       "sizes": [
         {
@@ -1067,11 +1101,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/ac5e43ce-6469-47d9-8959-6bc75da5292b/eCom/867134V3D803116_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/74ce62e9-7294-4506-89bc-8f716ac65455/eCom/867134V3D803116_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/74ce62e9-7294-4506-89bc-8f716ac65455/eCom/867134V3D803116_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ac5e43ce-6469-47d9-8959-6bc75da5292b/Small/867134V3D803116_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v3d803116/1.jpg",
-        "/products/bv-pdp/867134v3d803116/2.jpg"
+        "/products/bv-pdp/867134v3d803116/2.jpg",
+        "/products/bv-pdp/867134v3d803116/3.jpg"
       ],
       "sizes": [
         {
@@ -1125,11 +1161,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/a3a3d1d1-cb91-4153-a81b-2419833b3029/eCom/867134V6FJ09000_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/86a24a98-71fb-419c-ab29-642f6f2c3fc4/eCom/867134V6FJ09000_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/86a24a98-71fb-419c-ab29-642f6f2c3fc4/eCom/867134V6FJ09000_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a3a3d1d1-cb91-4153-a81b-2419833b3029/Small/867134V6FJ09000_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v6fj09000/1.jpg",
-        "/products/bv-pdp/867134v6fj09000/2.jpg"
+        "/products/bv-pdp/867134v6fj09000/2.jpg",
+        "/products/bv-pdp/867134v6fj09000/3.jpg"
       ],
       "sizes": [
         {
@@ -1182,11 +1220,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/095f2789-34ac-4101-9616-ecfff9ae8bb0/eCom/835969V3D811800_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/e0c86fa6-1ea4-48e8-86ef-7ee3133934fa/eCom/835969V3D811800_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/e0c86fa6-1ea4-48e8-86ef-7ee3133934fa/eCom/835969V3D811800_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/095f2789-34ac-4101-9616-ecfff9ae8bb0/Small/835969V3D811800_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/835969v3d811800/1.jpg",
-        "/products/bv-pdp/835969v3d811800/2.jpg"
+        "/products/bv-pdp/835969v3d811800/2.jpg",
+        "/products/bv-pdp/835969v3d811800/3.jpg"
       ],
       "sizes": [
         {
@@ -1240,11 +1280,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/1b9d619c-9508-4d9e-bf6a-7d96e4b3c885/eCom/867134V64A07400_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/0fe07149-a744-4d21-acf1-7d19d0f3ece3/eCom/867134V64A07400_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/0fe07149-a744-4d21-acf1-7d19d0f3ece3/eCom/867134V64A07400_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1b9d619c-9508-4d9e-bf6a-7d96e4b3c885/Small/867134V64A07400_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v64a07400/1.jpg",
-        "/products/bv-pdp/867134v64a07400/2.jpg"
+        "/products/bv-pdp/867134v64a07400/2.jpg",
+        "/products/bv-pdp/867134v64a07400/3.jpg"
       ],
       "sizes": [
         {
@@ -1297,11 +1339,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/693c6ab9-5918-451d-a0dd-fc2089b76971/eCom/835969V3D816260_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/cc657145-c31e-41bd-97ea-a1909e80a9b8/eCom/835969V3D816260_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/cc657145-c31e-41bd-97ea-a1909e80a9b8/eCom/835969V3D816260_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/693c6ab9-5918-451d-a0dd-fc2089b76971/Small/835969V3D816260_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/835969v3d816260/1.jpg",
-        "/products/bv-pdp/835969v3d816260/2.jpg"
+        "/products/bv-pdp/835969v3d816260/2.jpg",
+        "/products/bv-pdp/835969v3d816260/3.jpg"
       ],
       "sizes": [
         {
@@ -1354,11 +1398,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/d54022d9-495b-4d9c-bf32-8c3fdcee5ee0/eCom/835969V64A06337_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/72839aa8-9f64-4ef1-b7e3-dc76856df065/eCom/835969V64A06337_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/72839aa8-9f64-4ef1-b7e3-dc76856df065/eCom/835969V64A06337_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d54022d9-495b-4d9c-bf32-8c3fdcee5ee0/Small/835969V64A06337_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/835969v64a06337/1.jpg",
-        "/products/bv-pdp/835969v64a06337/2.jpg"
+        "/products/bv-pdp/835969v64a06337/2.jpg",
+        "/products/bv-pdp/835969v64a06337/3.jpg"
       ],
       "sizes": [
         {
@@ -1413,12 +1459,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/120b69fd-9a71-4fc9-9c05-1d31325b2f7f/eCom/835969V6FJ09000_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d8db2911-d102-4de7-8b54-17ea7a80e9c7/eCom/835969V6FJ09000_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/c69c9f2c-eaea-4769-b106-9cd4baa1585a/eCom/835969V6FJ09000_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c69c9f2c-eaea-4769-b106-9cd4baa1585a/eCom/835969V6FJ09000_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/120b69fd-9a71-4fc9-9c05-1d31325b2f7f/Small/835969V6FJ09000_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/835969v6fj09000/1.jpg",
         "/products/bv-pdp/835969v6fj09000/2.jpg",
-        "/products/bv-pdp/835969v6fj09000/3.jpg"
+        "/products/bv-pdp/835969v6fj09000/3.jpg",
+        "/products/bv-pdp/835969v6fj09000/4.jpg"
       ],
       "sizes": [
         {
@@ -1471,11 +1519,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/2a2a406d-3314-4c6b-b340-33afe7d859fe/eCom/A000BQV5FG08662_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/9c15171e-73b6-4b1e-be26-b39bd6084b84/eCom/A000BQV5FG08662_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/9c15171e-73b6-4b1e-be26-b39bd6084b84/eCom/A000BQV5FG08662_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2a2a406d-3314-4c6b-b340-33afe7d859fe/Small/A000BQV5FG08662_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a000bqv5fg08662/1.jpg",
-        "/products/bv-pdp/a000bqv5fg08662/2.jpg"
+        "/products/bv-pdp/a000bqv5fg08662/2.jpg",
+        "/products/bv-pdp/a000bqv5fg08662/3.jpg"
       ],
       "sizes": [
         {
@@ -1510,7 +1560,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/crab-charm-cardinal-black-876855V5FG08649.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Cardinal/Black"
       ],
@@ -1528,18 +1578,20 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/976398b1-37b1-4878-92a6-ec0ec540e1db/eCom/876855V5FG08649_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/5aa8ec8a-de67-4d21-85bf-98edd2fec66f/eCom/876855V5FG08649_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/5aa8ec8a-de67-4d21-85bf-98edd2fec66f/eCom/876855V5FG08649_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/976398b1-37b1-4878-92a6-ec0ec540e1db/Small/876855V5FG08649_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876855v5fg08649/1.jpg",
-        "/products/bv-pdp/876855v5fg08649/2.jpg"
+        "/products/bv-pdp/876855v5fg08649/2.jpg",
+        "/products/bv-pdp/876855v5fg08649/3.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         }
@@ -1585,11 +1637,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/c8443b4d-896d-41c3-9370-37c45c3fde98/eCom/876854V3LI08344_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b83d778f-6228-46d4-a6fe-a2f98ae5f6b6/eCom/876854V3LI08344_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b83d778f-6228-46d4-a6fe-a2f98ae5f6b6/eCom/876854V3LI08344_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c8443b4d-896d-41c3-9370-37c45c3fde98/Small/876854V3LI08344_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876854v3li08344/1.jpg",
-        "/products/bv-pdp/876854v3li08344/2.jpg"
+        "/products/bv-pdp/876854v3li08344/2.jpg",
+        "/products/bv-pdp/876854v3li08344/3.jpg"
       ],
       "sizes": [
         {
@@ -1642,11 +1696,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/2aac5fc5-2bbc-47bd-a821-c32f5b2e19b3/eCom/876856V5AM18665_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/bc63f0ac-aec0-4ca8-ad54-f215e784fa40/eCom/876856V5AM18665_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/bc63f0ac-aec0-4ca8-ad54-f215e784fa40/eCom/876856V5AM18665_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2aac5fc5-2bbc-47bd-a821-c32f5b2e19b3/Small/876856V5AM18665_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/876856v5am18665/1.jpg",
-        "/products/bv-pdp/876856v5am18665/2.jpg"
+        "/products/bv-pdp/876856v5am18665/2.jpg",
+        "/products/bv-pdp/876856v5am18665/3.jpg"
       ],
       "sizes": [
         {
@@ -1701,12 +1757,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/14b57d10-3452-4500-b67a-27ffc643847a/eCom/873759V3D804386_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/616c8275-ebb9-4ee4-a6ed-b5a0bc34bee4/eCom/873759V3D804386_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/8d4b8930-45b2-4cab-9a58-14c9332bfb61/eCom/873759V3D804386_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/8d4b8930-45b2-4cab-9a58-14c9332bfb61/eCom/873759V3D804386_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/14b57d10-3452-4500-b67a-27ffc643847a/Small/873759V3D804386_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873759v3d804386/1.jpg",
         "/products/bv-pdp/873759v3d804386/2.jpg",
-        "/products/bv-pdp/873759v3d804386/3.jpg"
+        "/products/bv-pdp/873759v3d804386/3.jpg",
+        "/products/bv-pdp/873759v3d804386/4.jpg"
       ],
       "sizes": [
         {
@@ -1761,12 +1819,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0f21dae0-3869-40fd-95bd-104e737c7352/eCom/873759V3D802006_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/a1cbfd46-063e-4cff-8453-99c4ba4d6be5/eCom/873759V3D802006_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/a9b0a606-53c1-4830-8674-6f6f5d42a6ef/eCom/873759V3D802006_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/a9b0a606-53c1-4830-8674-6f6f5d42a6ef/eCom/873759V3D802006_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0f21dae0-3869-40fd-95bd-104e737c7352/Small/873759V3D802006_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873759v3d802006/1.jpg",
         "/products/bv-pdp/873759v3d802006/2.jpg",
-        "/products/bv-pdp/873759v3d802006/3.jpg"
+        "/products/bv-pdp/873759v3d802006/3.jpg",
+        "/products/bv-pdp/873759v3d802006/4.jpg"
       ],
       "sizes": [
         {
@@ -1820,11 +1880,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/43114fc2-b5f0-4576-86bb-656e7f2258fb/eCom/876160V5B701242_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b3320a8e-190b-441d-bf07-f031e97c1adc/eCom/876160V5B701242_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b3320a8e-190b-441d-bf07-f031e97c1adc/eCom/876160V5B701242_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/43114fc2-b5f0-4576-86bb-656e7f2258fb/Small/876160V5B701242_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876160v5b701242/1.jpg",
-        "/products/bv-pdp/876160v5b701242/2.jpg"
+        "/products/bv-pdp/876160v5b701242/2.jpg",
+        "/products/bv-pdp/876160v5b701242/3.jpg"
       ],
       "sizes": [
         {
@@ -1877,11 +1939,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/6b7195a1-0eae-4a75-99fb-8a2e16c54ad6/eCom/876160V5B703770_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/ca3f1355-0764-4064-bc4d-835ecd8ed365/eCom/876160V5B703770_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/ca3f1355-0764-4064-bc4d-835ecd8ed365/eCom/876160V5B703770_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6b7195a1-0eae-4a75-99fb-8a2e16c54ad6/Small/876160V5B703770_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876160v5b703770/1.jpg",
-        "/products/bv-pdp/876160v5b703770/2.jpg"
+        "/products/bv-pdp/876160v5b703770/2.jpg",
+        "/products/bv-pdp/876160v5b703770/3.jpg"
       ],
       "sizes": [
         {
@@ -1936,11 +2000,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/fa46f691-3521-49de-ae36-cd2532de6f96/eCom/873237V2EZ09538_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/5b71ac59-f7b4-4977-9b16-ce3ec56c2b96/eCom/873237V2EZ09538_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/5b71ac59-f7b4-4977-9b16-ce3ec56c2b96/eCom/873237V2EZ09538_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fa46f691-3521-49de-ae36-cd2532de6f96/Small/873237V2EZ09538_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873237v2ez09538/1.jpg",
-        "/products/bv-pdp/873237v2ez09538/2.jpg"
+        "/products/bv-pdp/873237v2ez09538/2.jpg",
+        "/products/bv-pdp/873237v2ez09538/3.jpg"
       ],
       "sizes": [
         {
@@ -1995,12 +2061,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0c75dad8-2029-499b-ae82-100829f2bd2f/eCom/867410V3D806176_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ad292fd9-5139-4bf1-96a1-a4a2a1ce5614/eCom/867410V3D806176_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d53127c6-5b14-4b0b-b70a-75e77b5872ae/eCom/867410V3D806176_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/d53127c6-5b14-4b0b-b70a-75e77b5872ae/eCom/867410V3D806176_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0c75dad8-2029-499b-ae82-100829f2bd2f/Small/867410V3D806176_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867410v3d806176/1.jpg",
         "/products/bv-pdp/867410v3d806176/2.jpg",
-        "/products/bv-pdp/867410v3d806176/3.jpg"
+        "/products/bv-pdp/867410v3d806176/3.jpg",
+        "/products/bv-pdp/867410v3d806176/4.jpg"
       ],
       "sizes": [
         {
@@ -2057,13 +2125,15 @@
         "https://bottega-veneta.dam.kering.com/asset/0e0b2a7a-0f39-4415-93ca-079a10323b80/eCom/873234V2EZ01647_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d8faa9f0-4658-492a-8efc-6c90bb78f6fc/eCom/873234V2EZ01647_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/95b57ed2-ec52-4c67-9f86-6b3b6b4af04b/eCom/873234V2EZ01647_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/aa3d3f98-9d27-4b1c-8377-1d6009785fcf/eCom/873234V2EZ01647_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/aa3d3f98-9d27-4b1c-8377-1d6009785fcf/eCom/873234V2EZ01647_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0e0b2a7a-0f39-4415-93ca-079a10323b80/Small/873234V2EZ01647_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873234v2ez01647/1.jpg",
         "/products/bv-pdp/873234v2ez01647/2.jpg",
         "/products/bv-pdp/873234v2ez01647/3.jpg",
-        "/products/bv-pdp/873234v2ez01647/4.jpg"
+        "/products/bv-pdp/873234v2ez01647/4.jpg",
+        "/products/bv-pdp/873234v2ez01647/5.jpg"
       ],
       "sizes": [
         {
@@ -2117,11 +2187,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0c1148b8-154f-4338-bafa-505cea83f28a/eCom/867410V3D804015_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/0ea70909-9a1a-4c50-a84d-30275fc46a96/eCom/867410V3D804015_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/0ea70909-9a1a-4c50-a84d-30275fc46a96/eCom/867410V3D804015_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0c1148b8-154f-4338-bafa-505cea83f28a/Small/867410V3D804015_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867410v3d804015/1.jpg",
-        "/products/bv-pdp/867410v3d804015/2.jpg"
+        "/products/bv-pdp/867410v3d804015/2.jpg",
+        "/products/bv-pdp/867410v3d804015/3.jpg"
       ],
       "sizes": [
         {
@@ -2172,10 +2244,12 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/f52175b3-3e01-45ff-8549-5de88d297e7d/eCom/651052V00508803_A.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/f52175b3-3e01-45ff-8549-5de88d297e7d/eCom/651052V00508803_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/f52175b3-3e01-45ff-8549-5de88d297e7d/Small/651052V00508803_A.jpg?v=3"
       ],
       "localImages": [
-        "/products/bv-pdp/651052v00508803/1.jpg"
+        "/products/bv-pdp/651052v00508803/1.jpg",
+        "/products/bv-pdp/651052v00508803/2.jpg"
       ],
       "sizes": [
         {
@@ -2227,10 +2301,12 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/9ccd5612-49d0-4e1b-b315-ae7925e7c674/eCom/651052V00504093_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/9ccd5612-49d0-4e1b-b315-ae7925e7c674/eCom/651052V00504093_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9ccd5612-49d0-4e1b-b315-ae7925e7c674/Small/651052V00504093_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/651052v00504093/1.jpg"
+        "/products/bv-pdp/651052v00504093/1.jpg",
+        "/products/bv-pdp/651052v00504093/2.jpg"
       ],
       "sizes": [
         {
@@ -2265,7 +2341,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/onda-key-ring-deep-mahogany-867867V3D806149.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Deep Mahogany",
         "Hardware: Brass Vibrato finish",
@@ -2283,17 +2359,19 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/72dfd019-0906-41f0-a1e7-ce31c8e95d65/eCom/867867V3D806149_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/72dfd019-0906-41f0-a1e7-ce31c8e95d65/eCom/867867V3D806149_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/72dfd019-0906-41f0-a1e7-ce31c8e95d65/Small/867867V3D806149_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/867867v3d806149/1.jpg"
+        "/products/bv-pdp/867867v3d806149/1.jpg",
+        "/products/bv-pdp/867867v3d806149/2.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -2339,10 +2417,12 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/9b40fcf0-c86f-48ef-a239-7ef6a9e52c34/eCom/867867V3D803714_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/9b40fcf0-c86f-48ef-a239-7ef6a9e52c34/eCom/867867V3D803714_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9b40fcf0-c86f-48ef-a239-7ef6a9e52c34/Small/867867V3D803714_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/867867v3d803714/1.jpg"
+        "/products/bv-pdp/867867v3d803714/1.jpg",
+        "/products/bv-pdp/867867v3d803714/2.jpg"
       ],
       "sizes": [
         {
@@ -2398,11 +2478,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/75e687b3-b5c0-4482-bfa7-2a384880cebe/eCom/867407V6HU03123_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/44676933-d64e-48fb-ae17-98cdef90ddf6/eCom/867407V6HU03123_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/44676933-d64e-48fb-ae17-98cdef90ddf6/eCom/867407V6HU03123_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/75e687b3-b5c0-4482-bfa7-2a384880cebe/Small/867407V6HU03123_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867407v6hu03123/1.jpg",
-        "/products/bv-pdp/867407v6hu03123/2.jpg"
+        "/products/bv-pdp/867407v6hu03123/2.jpg",
+        "/products/bv-pdp/867407v6hu03123/3.jpg"
       ],
       "sizes": [
         {
@@ -2455,11 +2537,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/1fa2d928-8116-44b6-9f60-81d9248f65c2/eCom/867134V64A07129_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2451909b-3a78-4a02-a2eb-f1c42d8eed18/eCom/867134V64A07129_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/2451909b-3a78-4a02-a2eb-f1c42d8eed18/eCom/867134V64A07129_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/1fa2d928-8116-44b6-9f60-81d9248f65c2/Small/867134V64A07129_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867134v64a07129/1.jpg",
-        "/products/bv-pdp/867134v64a07129/2.jpg"
+        "/products/bv-pdp/867134v64a07129/2.jpg",
+        "/products/bv-pdp/867134v64a07129/3.jpg"
       ],
       "sizes": [
         {
@@ -2515,11 +2599,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/9e112a9c-98d4-4fd0-8a20-16b21ae6e97a/eCom/867407V6HU08803_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/bea0e4c0-e4e7-44a9-be42-653c5ab17807/eCom/867407V6HU08803_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/bea0e4c0-e4e7-44a9-be42-653c5ab17807/eCom/867407V6HU08803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9e112a9c-98d4-4fd0-8a20-16b21ae6e97a/Small/867407V6HU08803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867407v6hu08803/1.jpg",
-        "/products/bv-pdp/867407v6hu08803/2.jpg"
+        "/products/bv-pdp/867407v6hu08803/2.jpg",
+        "/products/bv-pdp/867407v6hu08803/3.jpg"
       ],
       "sizes": [
         {
@@ -2574,12 +2660,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/06a517b2-2891-4e81-88bf-88409521e2a9/eCom/807068V64A03101_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/186b50b2-54b8-4fcf-8206-e265903a2c6b/eCom/807068V64A03101_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/764e2709-9cbb-4c7b-8314-c7c2e62d73e3/eCom/807068V64A03101_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/764e2709-9cbb-4c7b-8314-c7c2e62d73e3/eCom/807068V64A03101_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/06a517b2-2891-4e81-88bf-88409521e2a9/Small/807068V64A03101_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/807068v64a03101/1.jpg",
         "/products/bv-pdp/807068v64a03101/2.jpg",
-        "/products/bv-pdp/807068v64a03101/3.jpg"
+        "/products/bv-pdp/807068v64a03101/3.jpg",
+        "/products/bv-pdp/807068v64a03101/4.jpg"
       ],
       "sizes": [
         {
@@ -2634,12 +2722,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/2f55822f-00b1-4ac4-a7f4-8f14f5068a66/eCom/855187V4L312113_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/d799af81-12a4-4cc3-8659-cdb93250accd/eCom/855187V4L312113_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/dd888ff1-7fdc-4272-b7e2-ed9b2437bf1b/eCom/855187V4L312113_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/dd888ff1-7fdc-4272-b7e2-ed9b2437bf1b/eCom/855187V4L312113_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/2f55822f-00b1-4ac4-a7f4-8f14f5068a66/Small/855187V4L312113_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/855187v4l312113/1.jpg",
         "/products/bv-pdp/855187v4l312113/2.jpg",
-        "/products/bv-pdp/855187v4l312113/3.jpg"
+        "/products/bv-pdp/855187v4l312113/3.jpg",
+        "/products/bv-pdp/855187v4l312113/4.jpg"
       ],
       "sizes": [
         {
@@ -2694,12 +2784,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/03fde961-fe42-4e71-9456-edcd84ab494f/eCom/855187V4L313247_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/264a695f-4c5a-47a8-8dc8-24f510d5ea82/eCom/855187V4L313247_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d4fe2530-2c8a-430d-b7a0-14ef02aa1ef6/eCom/855187V4L313247_C.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/d4fe2530-2c8a-430d-b7a0-14ef02aa1ef6/eCom/855187V4L313247_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/03fde961-fe42-4e71-9456-edcd84ab494f/Small/855187V4L313247_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/855187v4l313247/1.jpg",
         "/products/bv-pdp/855187v4l313247/2.jpg",
-        "/products/bv-pdp/855187v4l313247/3.jpg"
+        "/products/bv-pdp/855187v4l313247/3.jpg",
+        "/products/bv-pdp/855187v4l313247/4.jpg"
       ],
       "sizes": [
         {
@@ -2755,12 +2847,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0739e07c-a81b-48fb-ac4a-9499c9e95948/eCom/701460VCQC48425_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/c8b17974-96a6-4ad3-823c-32972160b448/eCom/701460VCQC48425_B.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/asset/2e076fb8-44b5-402d-9dd8-9218b821c695/eCom/701460VCQC48425_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/2e076fb8-44b5-402d-9dd8-9218b821c695/eCom/701460VCQC48425_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/0739e07c-a81b-48fb-ac4a-9499c9e95948/Small/701460VCQC48425_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/701460vcqc48425/1.jpg",
         "/products/bv-pdp/701460vcqc48425/2.jpg",
-        "/products/bv-pdp/701460vcqc48425/3.jpg"
+        "/products/bv-pdp/701460vcqc48425/3.jpg",
+        "/products/bv-pdp/701460vcqc48425/4.jpg"
       ],
       "sizes": [
         {
@@ -2814,12 +2908,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/3e484fc5-5aab-4514-8e87-38586eae3ddb/eCom/785985VCPQ38803_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/3bfdc151-24c2-4e9d-a177-a369ad131c93/eCom/785985VCPQ38803_B.jpg?v=5",
-        "https://bottega-veneta.dam.kering.com/asset/8e5af647-9084-4d38-8534-a380c7c413c3/eCom/785985VCPQ38803_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/8e5af647-9084-4d38-8534-a380c7c413c3/eCom/785985VCPQ38803_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/3e484fc5-5aab-4514-8e87-38586eae3ddb/Small/785985VCPQ38803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/785985vcpq38803/1.jpg",
         "/products/bv-pdp/785985vcpq38803/2.jpg",
-        "/products/bv-pdp/785985vcpq38803/3.jpg"
+        "/products/bv-pdp/785985vcpq38803/3.jpg",
+        "/products/bv-pdp/785985vcpq38803/4.jpg"
       ],
       "sizes": [
         {
@@ -2866,7 +2962,7 @@
         "Compatible with personalisation clips"
       ],
       "compactedLongDesc": "Woven tab key ring crafted using a low-impact material made from mycelium.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: Mycelium",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
       "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 3 cm | 1.2\"\n\n• Depth: 0.5 cm | 0.2\"",
@@ -2874,11 +2970,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/51a5cd65-e93a-4d58-b8a5-983e82ab06c0/eCom/A003A7V6U302008_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/e5c1816e-9d8a-4a9a-8110-f10b16d2a4ff/eCom/A003A7V6U302008_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/e5c1816e-9d8a-4a9a-8110-f10b16d2a4ff/eCom/A003A7V6U302008_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/51a5cd65-e93a-4d58-b8a5-983e82ab06c0/Small/A003A7V6U302008_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003a7v6u302008/1.jpg",
-        "/products/bv-pdp/a003a7v6u302008/2.jpg"
+        "/products/bv-pdp/a003a7v6u302008/2.jpg",
+        "/products/bv-pdp/a003a7v6u302008/3.jpg"
       ],
       "sizes": [
         {
@@ -2913,7 +3011,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/double-knot-key-ring-black-619100V00508425.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Black",
         "Hardware: Gold finish"
@@ -2931,18 +3029,20 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/7cf833db-b701-4163-89ce-3c3e2fe85113/eCom/619100V00508425_A.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/asset/2fa7d641-4d78-4c29-90d3-bc9012c7f8fe/eCom/619100V00508425_B.jpg?v=4"
+        "https://bottega-veneta.dam.kering.com/asset/2fa7d641-4d78-4c29-90d3-bc9012c7f8fe/eCom/619100V00508425_B.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/7cf833db-b701-4163-89ce-3c3e2fe85113/Small/619100V00508425_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/619100v00508425/1.jpg",
-        "/products/bv-pdp/619100v00508425/2.jpg"
+        "/products/bv-pdp/619100v00508425/2.jpg",
+        "/products/bv-pdp/619100v00508425/3.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -2988,11 +3088,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/4163b863-329d-487c-a4cc-039cf2f0d17f/eCom/709727VAPI23823_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/4a8950ce-1df4-451b-bbcc-c082afaa2501/eCom/709727VAPI23823_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/4a8950ce-1df4-451b-bbcc-c082afaa2501/eCom/709727VAPI23823_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4163b863-329d-487c-a4cc-039cf2f0d17f/Small/709727VAPI23823_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/709727vapi23823/1.jpg",
-        "/products/bv-pdp/709727vapi23823/2.jpg"
+        "/products/bv-pdp/709727vapi23823/2.jpg",
+        "/products/bv-pdp/709727vapi23823/3.jpg"
       ],
       "sizes": [
         {
@@ -3044,11 +3146,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/3035d059-d1fd-4d5c-98a4-0c6e1aa344a6/eCom/709727VMAY18803_A.jpg?v=6",
-        "https://bottega-veneta.dam.kering.com/asset/50fde3e7-68df-42e8-98bd-c25b4bcf9a1f/eCom/709727VMAY18803_B.jpg?v=6"
+        "https://bottega-veneta.dam.kering.com/asset/50fde3e7-68df-42e8-98bd-c25b4bcf9a1f/eCom/709727VMAY18803_B.jpg?v=6",
+        "https://bottega-veneta.dam.kering.com/asset/3035d059-d1fd-4d5c-98a4-0c6e1aa344a6/Small/709727VMAY18803_A.jpg?v=6"
       ],
       "localImages": [
         "/products/bv-pdp/709727vmay18803/1.jpg",
-        "/products/bv-pdp/709727vmay18803/2.jpg"
+        "/products/bv-pdp/709727vmay18803/2.jpg",
+        "/products/bv-pdp/709727vmay18803/3.jpg"
       ],
       "sizes": [
         {
@@ -3101,11 +3205,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e380da58-39ce-4f92-8271-79a76d368be1/eCom/800553V2HL08803_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/b60460df-fdbd-478e-a554-1f534d80f715/eCom/800553V2HL08803_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/b60460df-fdbd-478e-a554-1f534d80f715/eCom/800553V2HL08803_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/e380da58-39ce-4f92-8271-79a76d368be1/Small/800553V2HL08803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/800553v2hl08803/1.jpg",
-        "/products/bv-pdp/800553v2hl08803/2.jpg"
+        "/products/bv-pdp/800553v2hl08803/2.jpg",
+        "/products/bv-pdp/800553v2hl08803/3.jpg"
       ],
       "sizes": [
         {
@@ -3150,7 +3256,7 @@
         "Single metal hook"
       ],
       "compactedLongDesc": "Key ring in Intreccio coaxial nappa leather.",
-      "composition": "• Material: 100% lambskin",
+      "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 13.5 cm | 5.3\" \n\n• Width: 3.5 cm | 1.4\" \n\n• Depth: 0.5 cm | 0.2\"",
@@ -3158,11 +3264,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/caa858b1-6148-4101-b065-1c36afc6ca20/eCom/651820V0HW18425_A.jpg?v=5",
-        "https://bottega-veneta.dam.kering.com/asset/51d37ecd-8f9a-4f65-ac7e-a3784a2211da/eCom/651820V0HW18425_B.jpg?v=5"
+        "https://bottega-veneta.dam.kering.com/asset/51d37ecd-8f9a-4f65-ac7e-a3784a2211da/eCom/651820V0HW18425_B.jpg?v=5",
+        "https://bottega-veneta.dam.kering.com/asset/caa858b1-6148-4101-b065-1c36afc6ca20/Small/651820V0HW18425_A.jpg?v=5"
       ],
       "localImages": [
         "/products/bv-pdp/651820v0hw18425/1.jpg",
-        "/products/bv-pdp/651820v0hw18425/2.jpg"
+        "/products/bv-pdp/651820v0hw18425/2.jpg",
+        "/products/bv-pdp/651820v0hw18425/3.jpg"
       ],
       "sizes": [
         {
@@ -3214,11 +3322,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/2cfc51ae-2fa1-4ea5-8a0f-aac8d88ec7d4/eCom/709727VMAY12145_A.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/asset/80da0985-7713-4d1c-9a12-449dd02b4f30/eCom/709727VMAY12145_B.jpg?v=4"
+        "https://bottega-veneta.dam.kering.com/asset/80da0985-7713-4d1c-9a12-449dd02b4f30/eCom/709727VMAY12145_B.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/2cfc51ae-2fa1-4ea5-8a0f-aac8d88ec7d4/Small/709727VMAY12145_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/709727vmay12145/1.jpg",
-        "/products/bv-pdp/709727vmay12145/2.jpg"
+        "/products/bv-pdp/709727vmay12145/2.jpg",
+        "/products/bv-pdp/709727vmay12145/3.jpg"
       ],
       "sizes": [
         {
@@ -3263,7 +3373,7 @@
         "Single metal hook"
       ],
       "compactedLongDesc": "Key ring in Intreccio coaxial nappa leather.",
-      "composition": "• Material: 100% lambskin",
+      "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 13.5 cm | 5.3\" \n\n• Width: 3.5 cm | 1.4\" \n\n• Depth: 0.5 cm | 0.2\"",
@@ -3271,11 +3381,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/c666baf8-d2cf-46ad-8eeb-0cc26e479248/eCom/651820V0HW12916_A.jpg?v=6",
-        "https://bottega-veneta.dam.kering.com/asset/60daa909-9c4a-4197-9b11-0c0f18b55dd1/eCom/651820V0HW12916_B.jpg?v=8"
+        "https://bottega-veneta.dam.kering.com/asset/60daa909-9c4a-4197-9b11-0c0f18b55dd1/eCom/651820V0HW12916_B.jpg?v=8",
+        "https://bottega-veneta.dam.kering.com/asset/c666baf8-d2cf-46ad-8eeb-0cc26e479248/Small/651820V0HW12916_A.jpg?v=6"
       ],
       "localImages": [
         "/products/bv-pdp/651820v0hw12916/1.jpg",
-        "/products/bv-pdp/651820v0hw12916/2.jpg"
+        "/products/bv-pdp/651820v0hw12916/2.jpg",
+        "/products/bv-pdp/651820v0hw12916/3.jpg"
       ],
       "sizes": [
         {
@@ -3328,10 +3440,12 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/2e0300e8-9719-4286-9d50-c78ee183098c/eCom/867410V3D807806_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2e0300e8-9719-4286-9d50-c78ee183098c/eCom/867410V3D807806_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2e0300e8-9719-4286-9d50-c78ee183098c/Small/867410V3D807806_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/867410v3d807806/1.jpg"
+        "/products/bv-pdp/867410v3d807806/1.jpg",
+        "/products/bv-pdp/867410v3d807806/2.jpg"
       ],
       "sizes": [
         {
@@ -3385,11 +3499,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/ad377efd-7868-454c-a7a8-41ed888429e4/eCom/835969V3D811000_A.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/88d0d117-6c97-4b47-bbdd-c4b13669d2fc/eCom/835969V3D811000_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/88d0d117-6c97-4b47-bbdd-c4b13669d2fc/eCom/835969V3D811000_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ad377efd-7868-454c-a7a8-41ed888429e4/Small/835969V3D811000_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/835969v3d811000/1.jpg",
-        "/products/bv-pdp/835969v3d811000/2.jpg"
+        "/products/bv-pdp/835969v3d811000/2.jpg",
+        "/products/bv-pdp/835969v3d811000/3.jpg"
       ],
       "sizes": [
         {
@@ -3445,13 +3561,15 @@
         "https://bottega-veneta.dam.kering.com/asset/ec27cdfa-e753-4bc1-8ac2-32690c01bb48/eCom/873759V3D806260_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/359d922c-b910-47e2-960b-b2fa5f7eb51f/eCom/873759V3D806260_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3bef7dbf-b015-42b0-967b-1e9c42ef598b/eCom/873759V3D806260_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/7a3ab226-159c-41ef-9a7b-cd486e20e429/eCom/873759V3D806260_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/7a3ab226-159c-41ef-9a7b-cd486e20e429/eCom/873759V3D806260_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ec27cdfa-e753-4bc1-8ac2-32690c01bb48/Small/873759V3D806260_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873759v3d806260/1.jpg",
         "/products/bv-pdp/873759v3d806260/2.jpg",
         "/products/bv-pdp/873759v3d806260/3.jpg",
-        "/products/bv-pdp/873759v3d806260/4.jpg"
+        "/products/bv-pdp/873759v3d806260/4.jpg",
+        "/products/bv-pdp/873759v3d806260/5.jpg"
       ],
       "sizes": [
         {
@@ -3506,12 +3624,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/64a887fe-e9f3-4eff-86c3-7eb881488392/eCom/807068V64A07400_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/dd041526-339a-49d7-8ae5-846e388021a1/eCom/807068V64A07400_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/6c00d167-d0a8-4c82-b914-a3fb4e593cc0/eCom/807068V64A07400_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/6c00d167-d0a8-4c82-b914-a3fb4e593cc0/eCom/807068V64A07400_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/64a887fe-e9f3-4eff-86c3-7eb881488392/Small/807068V64A07400_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/807068v64a07400/1.jpg",
         "/products/bv-pdp/807068v64a07400/2.jpg",
-        "/products/bv-pdp/807068v64a07400/3.jpg"
+        "/products/bv-pdp/807068v64a07400/3.jpg",
+        "/products/bv-pdp/807068v64a07400/4.jpg"
       ],
       "sizes": [
         {
@@ -3564,11 +3684,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/c85d7c7f-d548-48dc-9e0e-bc0d84a46c4c/eCom/807068V3D811000_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/1cb5d96f-c3b2-42ad-a72f-395baf870ce6/eCom/807068V3D811000_C.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/1cb5d96f-c3b2-42ad-a72f-395baf870ce6/eCom/807068V3D811000_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/c85d7c7f-d548-48dc-9e0e-bc0d84a46c4c/Small/807068V3D811000_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d811000/1.jpg",
-        "/products/bv-pdp/807068v3d811000/2.jpg"
+        "/products/bv-pdp/807068v3d811000/2.jpg",
+        "/products/bv-pdp/807068v3d811000/3.jpg"
       ],
       "sizes": [
         {
@@ -3621,10 +3743,12 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/963a8082-c9ea-495f-8e74-b89c1ed9b536/eCom/807068V3D813112_A.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/963a8082-c9ea-495f-8e74-b89c1ed9b536/eCom/807068V3D813112_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/963a8082-c9ea-495f-8e74-b89c1ed9b536/Small/807068V3D813112_A.jpg?v=2"
       ],
       "localImages": [
-        "/products/bv-pdp/807068v3d813112/1.jpg"
+        "/products/bv-pdp/807068v3d813112/1.jpg",
+        "/products/bv-pdp/807068v3d813112/2.jpg"
       ],
       "sizes": [
         {
@@ -3680,12 +3804,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e022d2cf-c1b4-4c02-b23a-554db4011891/eCom/873237V2EZ06273_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/503dd095-19c3-4014-b456-6890bd88fd79/eCom/873237V2EZ06273_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b6650d98-d9a0-4389-bd90-87247b3f87ff/eCom/873237V2EZ06273_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b6650d98-d9a0-4389-bd90-87247b3f87ff/eCom/873237V2EZ06273_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e022d2cf-c1b4-4c02-b23a-554db4011891/Small/873237V2EZ06273_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/873237v2ez06273/1.jpg",
         "/products/bv-pdp/873237v2ez06273/2.jpg",
-        "/products/bv-pdp/873237v2ez06273/3.jpg"
+        "/products/bv-pdp/873237v2ez06273/3.jpg",
+        "/products/bv-pdp/873237v2ez06273/4.jpg"
       ],
       "sizes": [
         {
@@ -3739,11 +3865,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/decd9220-8975-4ea6-a189-3d6c358ad891/eCom/807068V3D819196_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/4d29217d-ea32-4407-aeef-1c89b22d0ee0/eCom/807068V3D819196_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/4d29217d-ea32-4407-aeef-1c89b22d0ee0/eCom/807068V3D819196_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/decd9220-8975-4ea6-a189-3d6c358ad891/Small/807068V3D819196_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d819196/1.jpg",
-        "/products/bv-pdp/807068v3d819196/2.jpg"
+        "/products/bv-pdp/807068v3d819196/2.jpg",
+        "/products/bv-pdp/807068v3d819196/3.jpg"
       ],
       "sizes": [
         {
@@ -3797,11 +3925,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/bce70dd4-5b79-4971-983e-d0032f04a8f6/eCom/807068V3D815830_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/ba08ec66-9295-47d8-ad94-87417bbbedec/eCom/807068V3D815830_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/ba08ec66-9295-47d8-ad94-87417bbbedec/eCom/807068V3D815830_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bce70dd4-5b79-4971-983e-d0032f04a8f6/Small/807068V3D815830_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/807068v3d815830/1.jpg",
-        "/products/bv-pdp/807068v3d815830/2.jpg"
+        "/products/bv-pdp/807068v3d815830/2.jpg",
+        "/products/bv-pdp/807068v3d815830/3.jpg"
       ],
       "sizes": [
         {
@@ -3855,11 +3985,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/6644476b-107f-4893-9d34-51fe9f4a9af3/eCom/835969V3D814296_A.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/2f58989f-00c1-43ca-aa15-fa4dc9628bb6/eCom/835969V3D814296_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2f58989f-00c1-43ca-aa15-fa4dc9628bb6/eCom/835969V3D814296_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6644476b-107f-4893-9d34-51fe9f4a9af3/Small/835969V3D814296_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/835969v3d814296/1.jpg",
-        "/products/bv-pdp/835969v3d814296/2.jpg"
+        "/products/bv-pdp/835969v3d814296/2.jpg",
+        "/products/bv-pdp/835969v3d814296/3.jpg"
       ],
       "sizes": [
         {
@@ -3913,11 +4045,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/3055b5de-bf93-47c2-bdf7-b22100030b1e/eCom/867134V64A02614_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/c4ad5ce0-df6a-45c3-987d-d87263ad311d/eCom/867134V64A02614_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c4ad5ce0-df6a-45c3-987d-d87263ad311d/eCom/867134V64A02614_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3055b5de-bf93-47c2-bdf7-b22100030b1e/Small/867134V64A02614_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/867134v64a02614/1.jpg",
-        "/products/bv-pdp/867134v64a02614/2.jpg"
+        "/products/bv-pdp/867134v64a02614/2.jpg",
+        "/products/bv-pdp/867134v64a02614/3.jpg"
       ],
       "sizes": [
         {
@@ -3964,7 +4098,7 @@
         "Press stud closure"
       ],
       "compactedLongDesc": "Intrecciato leather key case.",
-      "composition": "• Material: 100% calfskin",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 11 cm \n\n• Width: 7.3 cm \n\n• Depth: 2 cm",
@@ -3975,14 +4109,16 @@
         "https://bottega-veneta.dam.kering.com/asset/4e09ab41-f27c-4d83-9162-ee1f79945c43/eCom/630336VCPQ48803_B.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/05c59951-0fee-432f-9aca-b7c689a0326d/eCom/630336VCPQ48803_C.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/35e4d005-08fa-48a8-9111-f10a9097d6e5/eCom/630336VCPQ48803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2f409b10-6d2d-4f34-b17e-825e7275b064/eCom/630336VCPQ48803_E.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/2f409b10-6d2d-4f34-b17e-825e7275b064/eCom/630336VCPQ48803_E.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/fa08efbf-823d-41e4-a9eb-b5294ac83bac/Small/630336VCPQ48803_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/630336vcpq48803/1.jpg",
         "/products/bv-pdp/630336vcpq48803/2.jpg",
         "/products/bv-pdp/630336vcpq48803/3.jpg",
         "/products/bv-pdp/630336vcpq48803/4.jpg",
-        "/products/bv-pdp/630336vcpq48803/5.jpg"
+        "/products/bv-pdp/630336vcpq48803/5.jpg",
+        "/products/bv-pdp/630336vcpq48803/6.jpg"
       ],
       "sizes": [
         {
@@ -4017,7 +4153,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/solo-belt-black-867640V2EZ08803.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -4090,21 +4226,23 @@
         "https://bottega-veneta.dam.kering.com/asset/61da3781-63f8-4dbf-93ed-7c15923ce3cd/eCom/867640V2EZ08803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/fb7ea287-45e3-4144-8344-2d830f94c9bf/eCom/867640V2EZ08803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/990c51e1-c85d-4278-a653-87547c1bb73b/eCom/867640V2EZ08803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/8aa06a0e-f291-4f09-a93c-f1dd3dd53e4e/eCom/867640V2EZ08803_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/8aa06a0e-f291-4f09-a93c-f1dd3dd53e4e/eCom/867640V2EZ08803_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d9051a96-be3f-490e-b5c2-b371923f7d77/Small/867640V2EZ08803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/867640v2ez08803/1.jpg",
         "/products/bv-pdp/867640v2ez08803/2.jpg",
         "/products/bv-pdp/867640v2ez08803/3.jpg",
         "/products/bv-pdp/867640v2ez08803/4.jpg",
-        "/products/bv-pdp/867640v2ez08803/5.jpg"
+        "/products/bv-pdp/867640v2ez08803/5.jpg",
+        "/products/bv-pdp/867640v2ez08803/6.jpg"
       ],
       "sizes": [
         {
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -4112,7 +4250,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -4221,21 +4359,23 @@
         "https://bottega-veneta.dam.kering.com/asset/728e8d28-e051-4c49-bc24-2d76f5626e44/eCom/867640V2EZ01638_B.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/b471e6d7-8496-47ac-89d9-e7397a832431/eCom/867640V2EZ01638_C.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/6db30c6b-9a6c-4486-829d-d86df27b636b/eCom/867640V2EZ01638_D.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/1497cd64-fc80-453d-bbde-239108e12026/eCom/867640V2EZ01638_E.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/1497cd64-fc80-453d-bbde-239108e12026/eCom/867640V2EZ01638_E.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/3a03241a-59f9-48ee-9b2a-ea2facd0bbe0/Small/867640V2EZ01638_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/867640v2ez01638/1.jpg",
         "/products/bv-pdp/867640v2ez01638/2.jpg",
         "/products/bv-pdp/867640v2ez01638/3.jpg",
         "/products/bv-pdp/867640v2ez01638/4.jpg",
-        "/products/bv-pdp/867640v2ez01638/5.jpg"
+        "/products/bv-pdp/867640v2ez01638/5.jpg",
+        "/products/bv-pdp/867640v2ez01638/6.jpg"
       ],
       "sizes": [
         {
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -4251,7 +4391,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         }
@@ -4351,13 +4491,15 @@
         "https://bottega-veneta.dam.kering.com/asset/719c77f1-a4d7-43e9-a486-6558cc905ef9/eCom/A003ANVCPQ48803_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3e2c357d-952d-484b-8913-7bc6f8e88d48/eCom/A003ANVCPQ48803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e903167b-9683-49e7-9271-fc5df91bb717/eCom/A003ANVCPQ48803_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/18dfde7b-6c79-4da6-b996-3e2f16b50382/eCom/A003ANVCPQ48803_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/18dfde7b-6c79-4da6-b996-3e2f16b50382/eCom/A003ANVCPQ48803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/719c77f1-a4d7-43e9-a486-6558cc905ef9/Small/A003ANVCPQ48803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a003anvcpq48803/1.jpg",
         "/products/bv-pdp/a003anvcpq48803/2.jpg",
         "/products/bv-pdp/a003anvcpq48803/3.jpg",
-        "/products/bv-pdp/a003anvcpq48803/4.jpg"
+        "/products/bv-pdp/a003anvcpq48803/4.jpg",
+        "/products/bv-pdp/a003anvcpq48803/5.jpg"
       ],
       "sizes": [
         {
@@ -4529,14 +4671,16 @@
         "https://bottega-veneta.dam.kering.com/asset/9c3e84ab-ca95-4436-98e8-9655dc248213/eCom/876749V5B718966_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/0a20ea48-ce2a-429e-92dc-803817bb4fc5/eCom/876749V5B718966_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/01354261-c39e-4e63-aad9-815e12beeb0c/eCom/876749V5B718966_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/172c5533-762e-4d2e-9091-b5a45eb580e4/eCom/876749V5B718966_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/172c5533-762e-4d2e-9091-b5a45eb580e4/eCom/876749V5B718966_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ad4f137b-6523-4f98-9bc0-fadd4c68be8d/Small/876749V5B718966_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876749v5b718966/1.jpg",
         "/products/bv-pdp/876749v5b718966/2.jpg",
         "/products/bv-pdp/876749v5b718966/3.jpg",
         "/products/bv-pdp/876749v5b718966/4.jpg",
-        "/products/bv-pdp/876749v5b718966/5.jpg"
+        "/products/bv-pdp/876749v5b718966/5.jpg",
+        "/products/bv-pdp/876749v5b718966/6.jpg"
       ],
       "sizes": [
         {
@@ -4551,7 +4695,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -4583,7 +4727,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -4699,13 +4843,15 @@
         "https://bottega-veneta.dam.kering.com/asset/c1beaa40-73d9-4922-aa87-760a4200afd4/eCom/876758VALKO2217_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/69c3a2a1-b3fa-4f51-bba4-b49d114c2e13/eCom/876758VALKO2217_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ea1b6268-1d89-429b-b3e8-9a93ceb296e3/eCom/876758VALKO2217_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/4fffc3d0-2788-4b6e-9621-574598b8c1fe/eCom/876758VALKO2217_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/4fffc3d0-2788-4b6e-9621-574598b8c1fe/eCom/876758VALKO2217_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c1beaa40-73d9-4922-aa87-760a4200afd4/Small/876758VALKO2217_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876758valko2217/1.jpg",
         "/products/bv-pdp/876758valko2217/2.jpg",
         "/products/bv-pdp/876758valko2217/3.jpg",
-        "/products/bv-pdp/876758valko2217/4.jpg"
+        "/products/bv-pdp/876758valko2217/4.jpg",
+        "/products/bv-pdp/876758valko2217/5.jpg"
       ],
       "sizes": [
         {
@@ -4788,7 +4934,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-belt-fondant-855892VCPQ42145.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Fondant",
         "Hardware: Silver finish",
@@ -4861,14 +5007,16 @@
         "https://bottega-veneta.dam.kering.com/asset/34814e21-2c86-4484-8a22-19c15f735fae/eCom/855892VCPQ42145_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/dfdc0954-e7eb-47d2-a495-a6cdf5713f96/eCom/855892VCPQ42145_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/cc0484e3-7b47-4dc6-ae2f-5fa0700e2ae2/eCom/855892VCPQ42145_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/60ade8eb-f9c1-42ce-a2a9-ab489c73cf9a/eCom/855892VCPQ42145_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/60ade8eb-f9c1-42ce-a2a9-ab489c73cf9a/eCom/855892VCPQ42145_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/70bda926-760a-44ba-a493-c2e9c067d566/Small/855892VCPQ42145_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/855892vcpq42145/1.jpg",
         "/products/bv-pdp/855892vcpq42145/2.jpg",
         "/products/bv-pdp/855892vcpq42145/3.jpg",
         "/products/bv-pdp/855892vcpq42145/4.jpg",
-        "/products/bv-pdp/855892vcpq42145/5.jpg"
+        "/products/bv-pdp/855892vcpq42145/5.jpg",
+        "/products/bv-pdp/855892vcpq42145/6.jpg"
       ],
       "sizes": [
         {
@@ -4891,7 +5039,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4899,7 +5047,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4915,7 +5063,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4971,7 +5119,7 @@
         "Prong closure"
       ],
       "compactedLongDesc": "Reversible belt in Intrecciato calf leather with metal buckle.",
-      "composition": "• Material: Calfskin",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 3.5 cm | 1.4\"\n\n• Depth: 0.5 cm | 0.2\"",
@@ -5032,14 +5180,16 @@
         "https://bottega-veneta.dam.kering.com/asset/e12889f8-a0b5-422b-b0f4-571268f4d361/eCom/652944VCPQ13829_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/30e46c73-c48f-4597-8975-1dec5d4ac533/eCom/652944VCPQ13829_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1a7fec97-7712-40f6-b85d-7fbc5ada9a7a/eCom/652944VCPQ13829_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/1105b7a8-19db-4950-b1d8-5f79408ee985/eCom/652944VCPQ13829_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/1105b7a8-19db-4950-b1d8-5f79408ee985/eCom/652944VCPQ13829_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/27fb2995-b679-4f73-9803-20358d1f49c1/Small/652944VCPQ13829_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/652944vcpq13829/1.jpg",
         "/products/bv-pdp/652944vcpq13829/2.jpg",
         "/products/bv-pdp/652944vcpq13829/3.jpg",
         "/products/bv-pdp/652944vcpq13829/4.jpg",
-        "/products/bv-pdp/652944vcpq13829/5.jpg"
+        "/products/bv-pdp/652944vcpq13829/5.jpg",
+        "/products/bv-pdp/652944vcpq13829/6.jpg"
       ],
       "sizes": [
         {
@@ -5202,14 +5352,16 @@
         "https://bottega-veneta.dam.kering.com/m/1e36c5a5d0bf99fd/eCom-609182VCPQ38838_B.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/m/24d6c413c3ca0d7e/eCom-609182VCPQ38838_C.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/m/7f21f2d5d4c6b75a/eCom-609182VCPQ38838_D.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/m/380b0025ef732041/eCom-609182VCPQ38838_G.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/380b0025ef732041/eCom-609182VCPQ38838_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/5fc27510ebf6ee2e/Small-609182VCPQ38838_A.jpg?v=5"
       ],
       "localImages": [
         "/products/bv-pdp/609182vcpq38838/1.jpg",
         "/products/bv-pdp/609182vcpq38838/2.jpg",
         "/products/bv-pdp/609182vcpq38838/3.jpg",
         "/products/bv-pdp/609182vcpq38838/4.jpg",
-        "/products/bv-pdp/609182vcpq38838/5.jpg"
+        "/products/bv-pdp/609182vcpq38838/5.jpg",
+        "/products/bv-pdp/609182vcpq38838/6.jpg"
       ],
       "sizes": [
         {
@@ -5272,7 +5424,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -5389,14 +5541,16 @@
         "https://bottega-veneta.dam.kering.com/asset/3b567a16-a4bb-4625-8f3f-355237abf7ec/eCom/843902V5XN14330_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d2c15951-1811-48b9-88f3-6081248eaac0/eCom/843902V5XN14330_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/778d44b4-3c2b-4744-b696-7025ff93f988/eCom/843902V5XN14330_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/df89fda6-c110-4f4f-a695-ad2924fddb75/eCom/843902V5XN14330_G.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/df89fda6-c110-4f4f-a695-ad2924fddb75/eCom/843902V5XN14330_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/13aee72e-6bbe-40df-8823-edb6ae8ca129/Small/843902V5XN14330_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/843902v5xn14330/1.jpg",
         "/products/bv-pdp/843902v5xn14330/2.jpg",
         "/products/bv-pdp/843902v5xn14330/3.jpg",
         "/products/bv-pdp/843902v5xn14330/4.jpg",
-        "/products/bv-pdp/843902v5xn14330/5.jpg"
+        "/products/bv-pdp/843902v5xn14330/5.jpg",
+        "/products/bv-pdp/843902v5xn14330/6.jpg"
       ],
       "sizes": [
         {
@@ -5560,14 +5714,16 @@
         "https://bottega-veneta.dam.kering.com/asset/d5cb5c12-219b-4066-9844-9a262d6e8d67/eCom/876745V6U018803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/9eff37c6-ea31-4083-bc3b-b23ea5a91844/eCom/876745V6U018803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f9fdad5d-7d46-4f21-99bf-d28d5fd6acc0/eCom/876745V6U018803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b2aba257-57a0-43ff-a56a-c3e81d505ad4/eCom/876745V6U018803_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b2aba257-57a0-43ff-a56a-c3e81d505ad4/eCom/876745V6U018803_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/08303294-1ba2-464b-b24f-9feb42d04a29/Small/876745V6U018803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876745v6u018803/1.jpg",
         "/products/bv-pdp/876745v6u018803/2.jpg",
         "/products/bv-pdp/876745v6u018803/3.jpg",
         "/products/bv-pdp/876745v6u018803/4.jpg",
-        "/products/bv-pdp/876745v6u018803/5.jpg"
+        "/products/bv-pdp/876745v6u018803/5.jpg",
+        "/products/bv-pdp/876745v6u018803/6.jpg"
       ],
       "sizes": [
         {
@@ -5730,7 +5886,8 @@
         "https://bottega-veneta.dam.kering.com/m/da829ff8c975e60/eCom-652944VCPQ11205_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/4179b22f71fe0474/eCom-652944VCPQ11205_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/16451b44-2c75-4796-8076-ef86927c8255/eCom/652944VCPQ11205_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/23d8f738864466ac/eCom-652944VCPQ11205_G.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/m/23d8f738864466ac/eCom-652944VCPQ11205_G.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/431b99852cdff16/Small-652944VCPQ11205_A.jpg?v=6"
       ],
       "localImages": [
         "/products/bv-pdp/652944vcpq11205/1.jpg",
@@ -5738,7 +5895,8 @@
         "/products/bv-pdp/652944vcpq11205/3.jpg",
         "/products/bv-pdp/652944vcpq11205/4.jpg",
         "/products/bv-pdp/652944vcpq11205/5.jpg",
-        "/products/bv-pdp/652944vcpq11205/6.jpg"
+        "/products/bv-pdp/652944vcpq11205/6.jpg",
+        "/products/bv-pdp/652944vcpq11205/7.jpg"
       ],
       "sizes": [
         {
@@ -5777,7 +5935,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -5785,7 +5943,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -5900,14 +6058,16 @@
         "https://bottega-veneta.dam.kering.com/asset/0214d03d-796e-4c26-9b50-ea80303305cd/eCom/829228V5I518803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/7ca8961d-0d2d-4309-b3de-a53f3c43b96a/eCom/829228V5I518803_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/4dfff920-b598-4390-9346-0f76050780cf/eCom/829228V5I518803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/e06d9696-1248-43a2-9910-b3bbd2a722ac/eCom/829228V5I518803_G.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/e06d9696-1248-43a2-9910-b3bbd2a722ac/eCom/829228V5I518803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/41f680d0-86c3-4902-8d46-563aa5c1fec8/Small/829228V5I518803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/829228v5i518803/1.jpg",
         "/products/bv-pdp/829228v5i518803/2.jpg",
         "/products/bv-pdp/829228v5i518803/3.jpg",
         "/products/bv-pdp/829228v5i518803/4.jpg",
-        "/products/bv-pdp/829228v5i518803/5.jpg"
+        "/products/bv-pdp/829228v5i518803/5.jpg",
+        "/products/bv-pdp/829228v5i518803/6.jpg"
       ],
       "sizes": [
         {
@@ -5954,7 +6114,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -6082,10 +6242,12 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/m/66a02994272e0363/eCom-793876V3RQ12145_A.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/66a02994272e0363/eCom-793876V3RQ12145_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/66a02994272e0363/Small-793876V3RQ12145_A.jpg?v=2"
       ],
       "localImages": [
-        "/products/bv-pdp/793876v3rq12145/1.jpg"
+        "/products/bv-pdp/793876v3rq12145/1.jpg",
+        "/products/bv-pdp/793876v3rq12145/2.jpg"
       ],
       "sizes": [
         {
@@ -6155,7 +6317,7 @@
         "Our VN Preserve calfskin leather is realised through the BioBasedLeather® process, which ensures a limited presence of petrol-based components and exclusive reliance on renewable energy sources."
       ],
       "compactedLongDesc": "Intrecciato Piccolo calfskin leather belt.",
-      "composition": "• Material: Calfskin",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 3.5 cm | 1.4” \n\n• Depth: 0.5 cm | 0.2”",
@@ -6214,12 +6376,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/371175e116599dbb/eCom-796783V4LQ18803_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/53caf1eaef37d9ef/eCom-796783V4LQ18803_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/63ec1fda37403564/eCom-796783V4LQ18803_D.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/63ec1fda37403564/eCom-796783V4LQ18803_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/371175e116599dbb/Small-796783V4LQ18803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/796783v4lq18803/1.jpg",
         "/products/bv-pdp/796783v4lq18803/2.jpg",
-        "/products/bv-pdp/796783v4lq18803/3.jpg"
+        "/products/bv-pdp/796783v4lq18803/3.jpg",
+        "/products/bv-pdp/796783v4lq18803/4.jpg"
       ],
       "sizes": [
         {
@@ -6274,7 +6438,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 530.0,
           "listGbpPrice": null
         },
@@ -6399,14 +6563,16 @@
         "https://bottega-veneta.dam.kering.com/asset/e4a38a66-42c9-44a5-8b56-5724e49c6e67/eCom/796783V6PD11263_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/4c5f6079-3d2c-409d-ae51-bd1934a5bfd6/eCom/796783V6PD11263_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3c0318a7-bf69-4458-9dea-52710e90d9bb/eCom/796783V6PD11263_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/96badfdd-3a3d-45cc-838a-b63f189371a0/eCom/796783V6PD11263_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/96badfdd-3a3d-45cc-838a-b63f189371a0/eCom/796783V6PD11263_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d944bbb4-6532-4f4f-bfdc-98105b8d371f/Small/796783V6PD11263_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/796783v6pd11263/1.jpg",
         "/products/bv-pdp/796783v6pd11263/2.jpg",
         "/products/bv-pdp/796783v6pd11263/3.jpg",
         "/products/bv-pdp/796783v6pd11263/4.jpg",
-        "/products/bv-pdp/796783v6pd11263/5.jpg"
+        "/products/bv-pdp/796783v6pd11263/5.jpg",
+        "/products/bv-pdp/796783v6pd11263/6.jpg"
       ],
       "sizes": [
         {
@@ -6505,7 +6671,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/watch-buckle-belt-black-799046V4KF18803.html",
       "gbpPrice": 525.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -6576,13 +6742,15 @@
         "https://bottega-veneta.dam.kering.com/m/94dd83bfff1c699/eCom-799046V4KF18803_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/3cfbb5c1f1873ff5/eCom-799046V4KF18803_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/326e44d525aea21f/eCom-799046V4KF18803_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/73b9eaa77feacccc/eCom-799046V4KF18803_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/73b9eaa77feacccc/eCom-799046V4KF18803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/94dd83bfff1c699/Small-799046V4KF18803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/799046v4kf18803/1.jpg",
         "/products/bv-pdp/799046v4kf18803/2.jpg",
         "/products/bv-pdp/799046v4kf18803/3.jpg",
-        "/products/bv-pdp/799046v4kf18803/4.jpg"
+        "/products/bv-pdp/799046v4kf18803/4.jpg",
+        "/products/bv-pdp/799046v4kf18803/5.jpg"
       ],
       "sizes": [
         {
@@ -6597,7 +6765,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6605,7 +6773,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6613,7 +6781,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6621,7 +6789,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6629,7 +6797,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6637,7 +6805,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6645,7 +6813,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6653,7 +6821,7 @@
           "id": "115",
           "value": "115",
           "displayValue": "115",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -6762,14 +6930,16 @@
         "https://bottega-veneta.dam.kering.com/asset/6b8c6ece-d03b-45a8-9031-d699f02ce432/eCom/796783V5I411148_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c4f7849b-fb55-44af-a313-a5a2a65b5e8e/eCom/796783V5I411148_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/6ecbe8e5-4da9-44a9-81e4-dccbe9e98d1d/eCom/796783V5I411148_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/536dad26-b768-473a-9bb4-b1b78df16b6d/eCom/796783V5I411148_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/536dad26-b768-473a-9bb4-b1b78df16b6d/eCom/796783V5I411148_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/22bfe9e8-ba1d-411c-8b32-4fa0b1411be0/Small/796783V5I411148_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/796783v5i411148/1.jpg",
         "/products/bv-pdp/796783v5i411148/2.jpg",
         "/products/bv-pdp/796783v5i411148/3.jpg",
         "/products/bv-pdp/796783v5i411148/4.jpg",
-        "/products/bv-pdp/796783v5i411148/5.jpg"
+        "/products/bv-pdp/796783v5i411148/5.jpg",
+        "/products/bv-pdp/796783v5i411148/6.jpg"
       ],
       "sizes": [
         {
@@ -6925,14 +7095,16 @@
         "https://bottega-veneta.dam.kering.com/asset/57a79cd2-cf3a-4b83-8e2a-1982a6a80056/eCom/856080V63U18803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d1911780-9569-4578-a1e1-66f6a8aa5ec3/eCom/856080V63U18803_C.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/e82770d3-de1d-40a8-9b6c-41c82cf558ac/eCom/856080V63U18803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/3ca53077-9fef-475e-9b64-a13be988a648/eCom/856080V63U18803_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/3ca53077-9fef-475e-9b64-a13be988a648/eCom/856080V63U18803_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e0d822b4-cdeb-4c6c-9a92-e24faa7f48fb/Small/856080V63U18803_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/856080v63u18803/1.jpg",
         "/products/bv-pdp/856080v63u18803/2.jpg",
         "/products/bv-pdp/856080v63u18803/3.jpg",
         "/products/bv-pdp/856080v63u18803/4.jpg",
-        "/products/bv-pdp/856080v63u18803/5.jpg"
+        "/products/bv-pdp/856080v63u18803/5.jpg",
+        "/products/bv-pdp/856080v63u18803/6.jpg"
       ],
       "sizes": [
         {
@@ -7028,7 +7200,7 @@
         "Our VN Preserve calfskin leather is realised through the BioBasedLeather® process, which ensures a limited presence of petrol-based components and exclusive reliance on renewable energy sources."
       ],
       "compactedLongDesc": "Belt in Intrecciato piccolo calf leather.",
-      "composition": "• Material: Calfskin",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 3.5 cm | 1.4\" \n\n• Depth: 0.5 cm | 0.2\"",
@@ -7088,13 +7260,15 @@
         "https://bottega-veneta.dam.kering.com/m/29562f9f4c054e8/eCom-796783V4LQ13009_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/6f6c8a5a1284b3c/eCom-796783V4LQ13009_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/4780d2acf327e7e5/eCom-796783V4LQ13009_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/7929a7205c865f8b/eCom-796783V4LQ13009_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/7929a7205c865f8b/eCom-796783V4LQ13009_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/29562f9f4c054e8/Small-796783V4LQ13009_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/796783v4lq13009/1.jpg",
         "/products/bv-pdp/796783v4lq13009/2.jpg",
         "/products/bv-pdp/796783v4lq13009/3.jpg",
-        "/products/bv-pdp/796783v4lq13009/4.jpg"
+        "/products/bv-pdp/796783v4lq13009/4.jpg",
+        "/products/bv-pdp/796783v4lq13009/5.jpg"
       ],
       "sizes": [
         {
@@ -7141,7 +7315,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 530.0,
           "listGbpPrice": null
         },
@@ -7265,14 +7439,16 @@
         "https://bottega-veneta.dam.kering.com/asset/6fdb7c73-7f77-4577-bed5-b871c7fa732f/eCom/609182V4KF18803_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/abe2d280-a8ef-4502-91c0-2718f13ae410/eCom/609182V4KF18803_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/24275764-bd97-45b9-91d3-15bec4fdc4fb/eCom/609182V4KF18803_D.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/d160f36d-a41b-49c8-8ce8-80941d0429de/eCom/609182V4KF18803_G.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/d160f36d-a41b-49c8-8ce8-80941d0429de/eCom/609182V4KF18803_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/d87828e9-f8a6-4f45-b005-ee0c9ae528ce/Small/609182V4KF18803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/609182v4kf18803/1.jpg",
         "/products/bv-pdp/609182v4kf18803/2.jpg",
         "/products/bv-pdp/609182v4kf18803/3.jpg",
         "/products/bv-pdp/609182v4kf18803/4.jpg",
-        "/products/bv-pdp/609182v4kf18803/5.jpg"
+        "/products/bv-pdp/609182v4kf18803/5.jpg",
+        "/products/bv-pdp/609182v4kf18803/6.jpg"
       ],
       "sizes": [
         {
@@ -7311,7 +7487,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7450,13 +7626,15 @@
         "https://bottega-veneta.dam.kering.com/asset/49d3df7a-536e-4ed1-a68f-d243d150f8c7/eCom/609182V4KF18984_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/110458bd-a29d-4d6e-9dab-36538694c9cb/eCom/609182V4KF18984_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/a0320cc5-4a97-479e-8539-907fd3342cd9/eCom/609182V4KF18984_D.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/af7fba96-3cdc-4b8f-93c6-666622651752/eCom/609182V4KF18984_G.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/af7fba96-3cdc-4b8f-93c6-666622651752/eCom/609182V4KF18984_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/49d3df7a-536e-4ed1-a68f-d243d150f8c7/Small/609182V4KF18984_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/609182v4kf18984/1.jpg",
         "/products/bv-pdp/609182v4kf18984/2.jpg",
         "/products/bv-pdp/609182v4kf18984/3.jpg",
-        "/products/bv-pdp/609182v4kf18984/4.jpg"
+        "/products/bv-pdp/609182v4kf18984/4.jpg",
+        "/products/bv-pdp/609182v4kf18984/5.jpg"
       ],
       "sizes": [
         {
@@ -7471,7 +7649,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7563,7 +7741,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-belt-nocturnal-829228V5I514182.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Nocturnal",
@@ -7636,14 +7814,16 @@
         "https://bottega-veneta.dam.kering.com/asset/a02ccd26-584b-4821-b1d5-c977d802a01e/eCom/829228V5I514182_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1e719e2e-ee00-4748-a4fb-ff91aa79ff66/eCom/829228V5I514182_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/7aa68fd2-7dda-41cd-a2e3-9d3bb3933a51/eCom/829228V5I514182_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/1dada531-2ed5-4021-89fb-16f7533f630b/eCom/829228V5I514182_G.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/1dada531-2ed5-4021-89fb-16f7533f630b/eCom/829228V5I514182_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/6e75d781-04a4-41e5-9c92-d6fbee04ef28/Small/829228V5I514182_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/829228v5i514182/1.jpg",
         "/products/bv-pdp/829228v5i514182/2.jpg",
         "/products/bv-pdp/829228v5i514182/3.jpg",
         "/products/bv-pdp/829228v5i514182/4.jpg",
-        "/products/bv-pdp/829228v5i514182/5.jpg"
+        "/products/bv-pdp/829228v5i514182/5.jpg",
+        "/products/bv-pdp/829228v5i514182/6.jpg"
       ],
       "sizes": [
         {
@@ -7658,7 +7838,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7805,13 +7985,15 @@
         "https://bottega-veneta.dam.kering.com/m/2b1e39f81ef66fa2/eCom-609182VCPQ32145_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/m/7e61849732807d9b/eCom-609182VCPQ32145_B.jpg?v=5",
         "https://bottega-veneta.dam.kering.com/m/5b76c601d882f0fc/eCom-609182VCPQ32145_C.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/m/1ea085ee46d441a8/eCom-609182VCPQ32145_G.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/m/1ea085ee46d441a8/eCom-609182VCPQ32145_G.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/2b1e39f81ef66fa2/Small-609182VCPQ32145_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/609182vcpq32145/1.jpg",
         "/products/bv-pdp/609182vcpq32145/2.jpg",
         "/products/bv-pdp/609182vcpq32145/3.jpg",
-        "/products/bv-pdp/609182vcpq32145/4.jpg"
+        "/products/bv-pdp/609182vcpq32145/4.jpg",
+        "/products/bv-pdp/609182vcpq32145/5.jpg"
       ],
       "sizes": [
         {
@@ -7842,7 +8024,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7890,7 +8072,7 @@
           "id": "120",
           "value": "120",
           "displayValue": "120",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         }
@@ -7935,11 +8117,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/448c008fc6b16e6f/eCom-839824VCRL01000_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/6c0fbaae7689dace/eCom-839824VCRL01000_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/6c0fbaae7689dace/eCom-839824VCRL01000_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/448c008fc6b16e6f/Small-839824VCRL01000_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/839824vcrl01000/1.jpg",
-        "/products/bv-pdp/839824vcrl01000/2.jpg"
+        "/products/bv-pdp/839824vcrl01000/2.jpg",
+        "/products/bv-pdp/839824vcrl01000/3.jpg"
       ],
       "sizes": [
         {
@@ -7991,11 +8175,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/17945868-c1e9-41fb-9238-3b8965def528/eCom/839825VCRL03247_A.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/d2f3cb08-c26e-4356-a7cd-ff6b4e5f65b2/eCom/839825VCRL03247_B.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/d2f3cb08-c26e-4356-a7cd-ff6b4e5f65b2/eCom/839825VCRL03247_B.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/17945868-c1e9-41fb-9238-3b8965def528/Small/839825VCRL03247_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/839825vcrl03247/1.jpg",
-        "/products/bv-pdp/839825vcrl03247/2.jpg"
+        "/products/bv-pdp/839825vcrl03247/2.jpg",
+        "/products/bv-pdp/839825vcrl03247/3.jpg"
       ],
       "sizes": [
         {
@@ -8049,12 +8235,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/34464fd71b7c8862/eCom-844615V2HL08803_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/df486530b943bf9/eCom-844615V2HL08803_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/736b874b82becbd3/eCom-844615V2HL08803_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/736b874b82becbd3/eCom-844615V2HL08803_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/34464fd71b7c8862/Small-844615V2HL08803_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/844615v2hl08803/1.jpg",
         "/products/bv-pdp/844615v2hl08803/2.jpg",
-        "/products/bv-pdp/844615v2hl08803/3.jpg"
+        "/products/bv-pdp/844615v2hl08803/3.jpg",
+        "/products/bv-pdp/844615v2hl08803/4.jpg"
       ],
       "sizes": [
         {
@@ -8108,12 +8296,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/bd6eb879-5ec5-4abf-9192-651f02c609c0/eCom/838801VCRL04185_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/8457580a-f818-41d8-bb31-78d2c03a93e9/eCom/838801VCRL04185_B.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/c502ac0a-111e-49d5-86b1-e87646bd4a8f/eCom/838801VCRL04185_C.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/c502ac0a-111e-49d5-86b1-e87646bd4a8f/eCom/838801VCRL04185_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/bd6eb879-5ec5-4abf-9192-651f02c609c0/Small/838801VCRL04185_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/838801vcrl04185/1.jpg",
         "/products/bv-pdp/838801vcrl04185/2.jpg",
-        "/products/bv-pdp/838801vcrl04185/3.jpg"
+        "/products/bv-pdp/838801vcrl04185/3.jpg",
+        "/products/bv-pdp/838801vcrl04185/4.jpg"
       ],
       "sizes": [
         {
@@ -8165,11 +8355,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/b691fe29-9289-4499-ae7b-c088bfed2422/eCom/872964VCRL02006_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/003c44be-a61e-480e-ace8-244a0446a146/eCom/872964VCRL02006_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/003c44be-a61e-480e-ace8-244a0446a146/eCom/872964VCRL02006_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b691fe29-9289-4499-ae7b-c088bfed2422/Small/872964VCRL02006_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872964vcrl02006/1.jpg",
-        "/products/bv-pdp/872964vcrl02006/2.jpg"
+        "/products/bv-pdp/872964vcrl02006/2.jpg",
+        "/products/bv-pdp/872964vcrl02006/3.jpg"
       ],
       "sizes": [
         {
@@ -8221,11 +8413,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e71b036d-ffd1-48e6-81ae-9804d9937ab5/eCom/872964VCRL01000_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d7f17630-0999-4f1b-975a-adb778d2a82c/eCom/872964VCRL01000_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/d7f17630-0999-4f1b-975a-adb778d2a82c/eCom/872964VCRL01000_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e71b036d-ffd1-48e6-81ae-9804d9937ab5/Small/872964VCRL01000_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872964vcrl01000/1.jpg",
-        "/products/bv-pdp/872964vcrl01000/2.jpg"
+        "/products/bv-pdp/872964vcrl01000/2.jpg",
+        "/products/bv-pdp/872964vcrl01000/3.jpg"
       ],
       "sizes": [
         {
@@ -8279,12 +8473,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/4f2b59527d6f3bf0/eCom-813612V2JG02113_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/13b620941422d0e/eCom-813612V2JG02113_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/6cc723ff3a385386/eCom-813612V2JG02113_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/6cc723ff3a385386/eCom-813612V2JG02113_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/4f2b59527d6f3bf0/Small-813612V2JG02113_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/813612v2jg02113/1.jpg",
         "/products/bv-pdp/813612v2jg02113/2.jpg",
-        "/products/bv-pdp/813612v2jg02113/3.jpg"
+        "/products/bv-pdp/813612v2jg02113/3.jpg",
+        "/products/bv-pdp/813612v2jg02113/4.jpg"
       ],
       "sizes": [
         {
@@ -8336,12 +8532,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/997f4c5d-dc30-4954-9177-0424f6a79d28/eCom/813612V2JG01000_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3b2cb486-3d49-4a96-a8ab-9cb220c3db98/eCom/813612V2JG01000_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b035fd8a-42e5-4e41-92c9-d2adddf848d7/eCom/813612V2JG01000_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b035fd8a-42e5-4e41-92c9-d2adddf848d7/eCom/813612V2JG01000_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/997f4c5d-dc30-4954-9177-0424f6a79d28/Small/813612V2JG01000_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/813612v2jg01000/1.jpg",
         "/products/bv-pdp/813612v2jg01000/2.jpg",
-        "/products/bv-pdp/813612v2jg01000/3.jpg"
+        "/products/bv-pdp/813612v2jg01000/3.jpg",
+        "/products/bv-pdp/813612v2jg01000/4.jpg"
       ],
       "sizes": [
         {
@@ -8393,12 +8591,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/27089f39-4a46-4cb7-bc97-7873d6335acb/eCom/875276V6AR02240_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/4438b466-48f6-4cc2-8d36-fd72d6222f58/eCom/875276V6AR02240_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/047187e9-8755-41ee-98dd-2dec0c422c95/eCom/875276V6AR02240_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/047187e9-8755-41ee-98dd-2dec0c422c95/eCom/875276V6AR02240_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/27089f39-4a46-4cb7-bc97-7873d6335acb/Small/875276V6AR02240_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/875276v6ar02240/1.jpg",
         "/products/bv-pdp/875276v6ar02240/2.jpg",
-        "/products/bv-pdp/875276v6ar02240/3.jpg"
+        "/products/bv-pdp/875276v6ar02240/3.jpg",
+        "/products/bv-pdp/875276v6ar02240/4.jpg"
       ],
       "sizes": [
         {
@@ -8450,12 +8650,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/d04f493d-3002-4b08-beb9-efe4d7f9c98e/eCom/875276V6AR01010_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3fd9fe89-8851-41b4-a70d-b211d6cfc6d3/eCom/875276V6AR01010_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/9210ed4d-f3ea-43f2-8630-6c624f8f9875/eCom/875276V6AR01010_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/9210ed4d-f3ea-43f2-8630-6c624f8f9875/eCom/875276V6AR01010_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d04f493d-3002-4b08-beb9-efe4d7f9c98e/Small/875276V6AR01010_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/875276v6ar01010/1.jpg",
         "/products/bv-pdp/875276v6ar01010/2.jpg",
-        "/products/bv-pdp/875276v6ar01010/3.jpg"
+        "/products/bv-pdp/875276v6ar01010/3.jpg",
+        "/products/bv-pdp/875276v6ar01010/4.jpg"
       ],
       "sizes": [
         {
@@ -8498,7 +8700,7 @@
         "Smooth leather tie"
       ],
       "compactedLongDesc": "Tie realised in smooth lambskin leather.",
-      "composition": "• Material: 100% lambskin",
+      "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "Do Not Wash. \nDo Not Bleach. \nDo Not Tumble Dry. \nDo Not Iron. \nDo Not Dry Clean. \nUse A Specialist Leather And Fur Cleaning Service Only.",
       "sizeModel": "• Length: 150 cm | 59.1\"",
@@ -8507,12 +8709,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/67bee6ee-7b22-4702-a8af-dbcf89097a12/eCom/762027V3Y602113_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/913d53b6-ffe8-473d-a3a5-7af68c087d8e/eCom/762027V3Y602113_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d899c3d6-f219-4145-a80c-046d3ef7bf4a/eCom/762027V3Y602113_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/d899c3d6-f219-4145-a80c-046d3ef7bf4a/eCom/762027V3Y602113_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/67bee6ee-7b22-4702-a8af-dbcf89097a12/Small/762027V3Y602113_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/762027v3y602113/1.jpg",
         "/products/bv-pdp/762027v3y602113/2.jpg",
-        "/products/bv-pdp/762027v3y602113/3.jpg"
+        "/products/bv-pdp/762027v3y602113/3.jpg",
+        "/products/bv-pdp/762027v3y602113/4.jpg"
       ],
       "sizes": [
         {
@@ -8564,12 +8768,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/ae0b367c638e981/eCom-762027V3VS02181_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/1b91d14541cedb9c/eCom-762027V3VS02181_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/883ab1494baa038/eCom-762027V3VS02181_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/883ab1494baa038/eCom-762027V3VS02181_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/ae0b367c638e981/Small-762027V3VS02181_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/762027v3vs02181/1.jpg",
         "/products/bv-pdp/762027v3vs02181/2.jpg",
-        "/products/bv-pdp/762027v3vs02181/3.jpg"
+        "/products/bv-pdp/762027v3vs02181/3.jpg",
+        "/products/bv-pdp/762027v3vs02181/4.jpg"
       ],
       "sizes": [
         {
@@ -8621,12 +8827,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/5ac71105c136ee29/eCom-762027VKLC03312_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/676e090b0671d803/eCom-762027VKLC03312_B.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/m/3b624c45131407f4/eCom-762027VKLC03312_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/3b624c45131407f4/eCom-762027VKLC03312_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/5ac71105c136ee29/Small-762027VKLC03312_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/762027vklc03312/1.jpg",
         "/products/bv-pdp/762027vklc03312/2.jpg",
-        "/products/bv-pdp/762027vklc03312/3.jpg"
+        "/products/bv-pdp/762027vklc03312/3.jpg",
+        "/products/bv-pdp/762027vklc03312/4.jpg"
       ],
       "sizes": [
         {
@@ -8678,12 +8886,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e6a15764-558a-4c48-8d6b-0875996f1f2d/eCom/A0056TV77L01010_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/bf3dab94-aa6d-4b30-b31f-e3ec0a9ed675/eCom/A0056TV77L01010_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2764e024-dba4-45c4-b6a8-028ae6902165/eCom/A0056TV77L01010_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2764e024-dba4-45c4-b6a8-028ae6902165/eCom/A0056TV77L01010_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e6a15764-558a-4c48-8d6b-0875996f1f2d/Small/A0056TV77L01010_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a0056tv77l01010/1.jpg",
         "/products/bv-pdp/a0056tv77l01010/2.jpg",
-        "/products/bv-pdp/a0056tv77l01010/3.jpg"
+        "/products/bv-pdp/a0056tv77l01010/3.jpg",
+        "/products/bv-pdp/a0056tv77l01010/4.jpg"
       ],
       "sizes": [
         {
@@ -8737,13 +8947,15 @@
         "https://bottega-veneta.dam.kering.com/asset/83f4c055-082c-4929-b519-86fd1ce9f8aa/eCom/A004T4V76P01390_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d8348f17-5d8f-4a88-a6a4-a8ec4a0d77e1/eCom/A004T4V76P01390_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ad305d43-e224-4053-ac7c-ebffc8d9e4c3/eCom/A004T4V76P01390_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/c9b69b06-43b2-4b42-b3b0-ac9b4df9bbf4/eCom/A004T4V76P01390_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c9b69b06-43b2-4b42-b3b0-ac9b4df9bbf4/eCom/A004T4V76P01390_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/83f4c055-082c-4929-b519-86fd1ce9f8aa/Small/A004T4V76P01390_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a004t4v76p01390/1.jpg",
         "/products/bv-pdp/a004t4v76p01390/2.jpg",
         "/products/bv-pdp/a004t4v76p01390/3.jpg",
-        "/products/bv-pdp/a004t4v76p01390/4.jpg"
+        "/products/bv-pdp/a004t4v76p01390/4.jpg",
+        "/products/bv-pdp/a004t4v76p01390/5.jpg"
       ],
       "sizes": [
         {
@@ -8796,12 +9008,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/735e1e35b2cfc1f0/eCom-837676V5TX01033_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/7c260e2c7526ddea/eCom-837676V5TX01033_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/df0c9166-a532-4c0c-9e98-9c15cd73dbf4/eCom/837676V5TX01033_C.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/df0c9166-a532-4c0c-9e98-9c15cd73dbf4/eCom/837676V5TX01033_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/735e1e35b2cfc1f0/Small-837676V5TX01033_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/837676v5tx01033/1.jpg",
         "/products/bv-pdp/837676v5tx01033/2.jpg",
-        "/products/bv-pdp/837676v5tx01033/3.jpg"
+        "/products/bv-pdp/837676v5tx01033/3.jpg",
+        "/products/bv-pdp/837676v5tx01033/4.jpg"
       ],
       "sizes": [
         {
@@ -8853,12 +9067,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/d9c635fd-61ec-4bbe-9e4c-ae0e17ab428d/eCom/A0056TV77L01160_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/cc103be5-2ce4-45e5-95e1-cc5c7b13bf8c/eCom/A0056TV77L01160_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/c9c12096-f02d-4d05-9748-bdac2030b0d2/eCom/A0056TV77L01160_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c9c12096-f02d-4d05-9748-bdac2030b0d2/eCom/A0056TV77L01160_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d9c635fd-61ec-4bbe-9e4c-ae0e17ab428d/Small/A0056TV77L01160_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a0056tv77l01160/1.jpg",
         "/products/bv-pdp/a0056tv77l01160/2.jpg",
-        "/products/bv-pdp/a0056tv77l01160/3.jpg"
+        "/products/bv-pdp/a0056tv77l01160/3.jpg",
+        "/products/bv-pdp/a0056tv77l01160/4.jpg"
       ],
       "sizes": [
         {
@@ -8902,7 +9118,7 @@
         "Length: 150 cm"
       ],
       "compactedLongDesc": "Tie realised in smooth lambskin leather.",
-      "composition": "• Material: 100% lambskin",
+      "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "Do Not Wash. \nDo Not Bleach. \nDo Not Tumble Dry. \nDo Not Iron. \nDo Not Dry Clean. \nUse A Specialist Leather And Fur Cleaning Service Only.",
       "sizeModel": "• Length: 150 cm | 59.1\"",
@@ -8911,12 +9127,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/3767f104ab98ef6d/eCom-762027V3Y603350_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/2e84c2d07dc26f4e/eCom-762027V3Y603350_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/405df6c383e9a01e/eCom-762027V3Y603350_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/405df6c383e9a01e/eCom-762027V3Y603350_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/3767f104ab98ef6d/Small-762027V3Y603350_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/762027v3y603350/1.jpg",
         "/products/bv-pdp/762027v3y603350/2.jpg",
-        "/products/bv-pdp/762027v3y603350/3.jpg"
+        "/products/bv-pdp/762027v3y603350/3.jpg",
+        "/products/bv-pdp/762027v3y603350/4.jpg"
       ],
       "sizes": [
         {
@@ -8969,12 +9187,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/7374d5f29a30f37a/eCom-837676V5TX01722_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/1c1ef7e802e6e845/eCom-837676V5TX01722_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/44a7c871c2999f83/eCom-837676V5TX01722_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/44a7c871c2999f83/eCom-837676V5TX01722_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/7374d5f29a30f37a/Small-837676V5TX01722_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/837676v5tx01722/1.jpg",
         "/products/bv-pdp/837676v5tx01722/2.jpg",
-        "/products/bv-pdp/837676v5tx01722/3.jpg"
+        "/products/bv-pdp/837676v5tx01722/3.jpg",
+        "/products/bv-pdp/837676v5tx01722/4.jpg"
       ],
       "sizes": [
         {
@@ -9027,12 +9247,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/2cf4a036aa18d1cc/eCom-837679V5TY01100_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/7d7195a643045da4/eCom-837679V5TY01100_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/1960535e03e69c2a/eCom-837679V5TY01100_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/1960535e03e69c2a/eCom-837679V5TY01100_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/2cf4a036aa18d1cc/Small-837679V5TY01100_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/837679v5ty01100/1.jpg",
         "/products/bv-pdp/837679v5ty01100/2.jpg",
-        "/products/bv-pdp/837679v5ty01100/3.jpg"
+        "/products/bv-pdp/837679v5ty01100/3.jpg",
+        "/products/bv-pdp/837679v5ty01100/4.jpg"
       ],
       "sizes": [
         {
@@ -9085,12 +9307,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/9cb857cd-ace5-44f7-b4ed-198f871b4aef/eCom/845830V3VU01307_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f3fb5625-413b-4509-923b-6ec33f5fbb70/eCom/845830V3VU01307_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/dfe6e67b-d1d2-43d7-ae77-0ca9f7ec4c8a/eCom/845830V3VU01307_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/dfe6e67b-d1d2-43d7-ae77-0ca9f7ec4c8a/eCom/845830V3VU01307_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9cb857cd-ace5-44f7-b4ed-198f871b4aef/Small/845830V3VU01307_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/845830v3vu01307/1.jpg",
         "/products/bv-pdp/845830v3vu01307/2.jpg",
-        "/products/bv-pdp/845830v3vu01307/3.jpg"
+        "/products/bv-pdp/845830v3vu01307/3.jpg",
+        "/products/bv-pdp/845830v3vu01307/4.jpg"
       ],
       "sizes": [
         {
@@ -9143,12 +9367,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/26423e5c-8399-4ffe-aaa6-f2a508a20f2e/eCom/845830V3VU09903_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3d7c9f87-ef6c-4ba2-8273-139755dfc902/eCom/845830V3VU09903_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/be87406b-8a72-4aba-909b-b59295b030b5/eCom/845830V3VU09903_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/be87406b-8a72-4aba-909b-b59295b030b5/eCom/845830V3VU09903_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/26423e5c-8399-4ffe-aaa6-f2a508a20f2e/Small/845830V3VU09903_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/845830v3vu09903/1.jpg",
         "/products/bv-pdp/845830v3vu09903/2.jpg",
-        "/products/bv-pdp/845830v3vu09903/3.jpg"
+        "/products/bv-pdp/845830v3vu09903/3.jpg",
+        "/products/bv-pdp/845830v3vu09903/4.jpg"
       ],
       "sizes": [
         {
@@ -9183,7 +9409,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cashmere-scarf-with-leather-patch-navy-melange-781015V3VU09903.html",
       "gbpPrice": 610.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Navy Melange"
       ],
@@ -9202,19 +9428,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/m/1864404a058d1a4f/eCom-781015V3VU09903_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/7bbdbf2420c01973/eCom-781015V3VU09903_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/m/33813666e7d21a5b/eCom-781015V3VU09903_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/33813666e7d21a5b/eCom-781015V3VU09903_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/1864404a058d1a4f/Small-781015V3VU09903_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/781015v3vu09903/1.jpg",
         "/products/bv-pdp/781015v3vu09903/2.jpg",
-        "/products/bv-pdp/781015v3vu09903/3.jpg"
+        "/products/bv-pdp/781015v3vu09903/3.jpg",
+        "/products/bv-pdp/781015v3vu09903/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 610.0,
           "listGbpPrice": null
         }
@@ -9242,7 +9470,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-foulard-midnight-prosecco-875774V6RL04537.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Midnight/Prosecco"
       ],
@@ -9260,19 +9488,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e8eb8350-9086-4701-be81-82530fa45947/eCom/875774V6RL04537_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/65ad0bab-50a6-4f5c-a238-c99410577afa/eCom/875774V6RL04537_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2e62f8b8-c804-4534-b6d3-1bc07030dfca/eCom/875774V6RL04537_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2e62f8b8-c804-4534-b6d3-1bc07030dfca/eCom/875774V6RL04537_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e8eb8350-9086-4701-be81-82530fa45947/Small/875774V6RL04537_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/875774v6rl04537/1.jpg",
         "/products/bv-pdp/875774v6rl04537/2.jpg",
-        "/products/bv-pdp/875774v6rl04537/3.jpg"
+        "/products/bv-pdp/875774v6rl04537/3.jpg",
+        "/products/bv-pdp/875774v6rl04537/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         }
@@ -9318,12 +9548,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/8daf5c36-b67f-44a6-9d5b-d74f6fcc9728/eCom/875782V6RM03286_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/5147379e-395d-467f-9bad-fb0bf9edb9a0/eCom/875782V6RM03286_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/6b001ee2-c91c-4a21-9724-a80d2c3811a9/eCom/875782V6RM03286_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/6b001ee2-c91c-4a21-9724-a80d2c3811a9/eCom/875782V6RM03286_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8daf5c36-b67f-44a6-9d5b-d74f6fcc9728/Small/875782V6RM03286_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/875782v6rm03286/1.jpg",
         "/products/bv-pdp/875782v6rm03286/2.jpg",
-        "/products/bv-pdp/875782v6rm03286/3.jpg"
+        "/products/bv-pdp/875782v6rm03286/3.jpg",
+        "/products/bv-pdp/875782v6rm03286/4.jpg"
       ],
       "sizes": [
         {
@@ -9358,7 +9590,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-chalk-grass-green-870804V6KX03285.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Chalk/Grass Green"
       ],
@@ -9376,19 +9608,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/7142eaf7-62ab-421d-9391-786ff71215a7/eCom/870804V6KX03285_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/7b622b1a-511c-44b6-b17a-fedc79e5d0b1/eCom/870804V6KX03285_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/b63bc8ad-c749-445f-8787-35bf71d6d624/eCom/870804V6KX03285_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/b63bc8ad-c749-445f-8787-35bf71d6d624/eCom/870804V6KX03285_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7142eaf7-62ab-421d-9391-786ff71215a7/Small/870804V6KX03285_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870804v6kx03285/1.jpg",
         "/products/bv-pdp/870804v6kx03285/2.jpg",
-        "/products/bv-pdp/870804v6kx03285/3.jpg"
+        "/products/bv-pdp/870804v6kx03285/3.jpg",
+        "/products/bv-pdp/870804v6kx03285/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -9416,7 +9650,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-grass-green-870801V6KX03138.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Grass Green"
       ],
@@ -9436,21 +9670,23 @@
         "https://bottega-veneta.dam.kering.com/asset/8c71b267-797c-4160-9a65-dd26b3d8881b/eCom/870801V6KX03138_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/15ca9efa-5580-4377-9888-1200399589da/eCom/870801V6KX03138_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/37d1ce1d-7b77-4872-b49a-2c1489456012/eCom/870801V6KX03138_F.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/8a9a6c01-766b-4831-8a87-7b17a3d4bb8a/eCom/870801V6KX03138_G.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/8a9a6c01-766b-4831-8a87-7b17a3d4bb8a/eCom/870801V6KX03138_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/20a8cd93-41db-45ed-afdb-a94e5d1681aa/Small/870801V6KX03138_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870801v6kx03138/1.jpg",
         "/products/bv-pdp/870801v6kx03138/2.jpg",
         "/products/bv-pdp/870801v6kx03138/3.jpg",
         "/products/bv-pdp/870801v6kx03138/4.jpg",
-        "/products/bv-pdp/870801v6kx03138/5.jpg"
+        "/products/bv-pdp/870801v6kx03138/5.jpg",
+        "/products/bv-pdp/870801v6kx03138/6.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -9478,7 +9714,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-oxford-blue-870799V6KX04052.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Oxford Blue"
       ],
@@ -9496,19 +9732,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/1fe8cbd2-b416-482a-9a48-86de26657690/eCom/870799V6KX04052_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e1548038-ffb2-4ac7-85c1-8892e9280f4e/eCom/870799V6KX04052_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/e3199efe-eddc-455b-9d92-04402bca379d/eCom/870799V6KX04052_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/e3199efe-eddc-455b-9d92-04402bca379d/eCom/870799V6KX04052_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1fe8cbd2-b416-482a-9a48-86de26657690/Small/870799V6KX04052_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870799v6kx04052/1.jpg",
         "/products/bv-pdp/870799v6kx04052/2.jpg",
-        "/products/bv-pdp/870799v6kx04052/3.jpg"
+        "/products/bv-pdp/870799v6kx04052/3.jpg",
+        "/products/bv-pdp/870799v6kx04052/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -9536,7 +9774,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-barolo-870799V6KX02240.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Barolo"
       ],
@@ -9555,20 +9793,22 @@
         "https://bottega-veneta.dam.kering.com/asset/e23a1c0e-573d-48f1-aeb7-41d266d3e58f/eCom/870799V6KX02240_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/407a3139-1651-43da-9228-f25f8272bf1e/eCom/870799V6KX02240_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/d82877bb-9bcf-43f3-96cd-8099874f7278/eCom/870799V6KX02240_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/9137a4a7-ac47-46b8-86d4-29f5718ba790/eCom/870799V6KX02240_F.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/9137a4a7-ac47-46b8-86d4-29f5718ba790/eCom/870799V6KX02240_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/e23a1c0e-573d-48f1-aeb7-41d266d3e58f/Small/870799V6KX02240_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870799v6kx02240/1.jpg",
         "/products/bv-pdp/870799v6kx02240/2.jpg",
         "/products/bv-pdp/870799v6kx02240/3.jpg",
-        "/products/bv-pdp/870799v6kx02240/4.jpg"
+        "/products/bv-pdp/870799v6kx02240/4.jpg",
+        "/products/bv-pdp/870799v6kx02240/5.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -9596,7 +9836,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-intrecciato-foulard-barolo-872858V6AR02240.html",
       "gbpPrice": 1330.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Barolo"
       ],
@@ -9613,18 +9853,20 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/ccf174ec-edd7-4d98-af0a-d3a6fb80f3bc/eCom/872858V6AR02240_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/1a474a5e-5781-4b89-ad4b-391af772dc81/eCom/872858V6AR02240_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/1a474a5e-5781-4b89-ad4b-391af772dc81/eCom/872858V6AR02240_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/ccf174ec-edd7-4d98-af0a-d3a6fb80f3bc/Small/872858V6AR02240_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872858v6ar02240/1.jpg",
-        "/products/bv-pdp/872858v6ar02240/2.jpg"
+        "/products/bv-pdp/872858v6ar02240/2.jpg",
+        "/products/bv-pdp/872858v6ar02240/3.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1330.0,
           "listGbpPrice": null
         }
@@ -9671,13 +9913,15 @@
         "https://bottega-veneta.dam.kering.com/asset/544226e1-6810-40d5-b13b-00af207f6882/eCom/871583V6KX01973_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/76624026-58d2-434f-a67c-0387b7090ff3/eCom/871583V6KX01973_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/fcbf642c-8946-4474-9390-9d2ab6644665/eCom/871583V6KX01973_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/7aa1d5e0-d467-406f-a0cf-158c4053712c/eCom/871583V6KX01973_F.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/7aa1d5e0-d467-406f-a0cf-158c4053712c/eCom/871583V6KX01973_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/544226e1-6810-40d5-b13b-00af207f6882/Small/871583V6KX01973_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/871583v6kx01973/1.jpg",
         "/products/bv-pdp/871583v6kx01973/2.jpg",
         "/products/bv-pdp/871583v6kx01973/3.jpg",
-        "/products/bv-pdp/871583v6kx01973/4.jpg"
+        "/products/bv-pdp/871583v6kx01973/4.jpg",
+        "/products/bv-pdp/871583v6kx01973/5.jpg"
       ],
       "sizes": [
         {
@@ -9729,11 +9973,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/02deb426-d4eb-4fb0-9e30-462dd061ed15/eCom/872858V6AR09071_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/9630fdde-165c-48e8-80f6-379a507d5bde/eCom/872858V6AR09071_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/9630fdde-165c-48e8-80f6-379a507d5bde/eCom/872858V6AR09071_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/02deb426-d4eb-4fb0-9e30-462dd061ed15/Small/872858V6AR09071_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872858v6ar09071/1.jpg",
-        "/products/bv-pdp/872858v6ar09071/2.jpg"
+        "/products/bv-pdp/872858v6ar09071/2.jpg",
+        "/products/bv-pdp/872858v6ar09071/3.jpg"
       ],
       "sizes": [
         {
@@ -9785,11 +10031,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e739450f-b4af-4948-a79f-e03cc81725cd/eCom/872858V6AR06113_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/7c247e68-eb78-4887-b2bd-d4df3c5f5c0f/eCom/872858V6AR06113_B.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/7c247e68-eb78-4887-b2bd-d4df3c5f5c0f/eCom/872858V6AR06113_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e739450f-b4af-4948-a79f-e03cc81725cd/Small/872858V6AR06113_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872858v6ar06113/1.jpg",
-        "/products/bv-pdp/872858v6ar06113/2.jpg"
+        "/products/bv-pdp/872858v6ar06113/2.jpg",
+        "/products/bv-pdp/872858v6ar06113/3.jpg"
       ],
       "sizes": [
         {
@@ -9824,7 +10072,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-butter-870799V6KX09311.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Butter"
       ],
@@ -9842,19 +10090,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/cac109dc-101d-4fdb-b483-d8b5cced2bea/eCom/870799V6KX09311_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/39f1ab5b-aab8-4b35-afb4-6d5a2d75c588/eCom/870799V6KX09311_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/e2a454c1-85f3-4f14-af02-2f3a7f0dc5d7/eCom/870799V6KX09311_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/e2a454c1-85f3-4f14-af02-2f3a7f0dc5d7/eCom/870799V6KX09311_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cac109dc-101d-4fdb-b483-d8b5cced2bea/Small/870799V6KX09311_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870799v6kx09311/1.jpg",
         "/products/bv-pdp/870799v6kx09311/2.jpg",
-        "/products/bv-pdp/870799v6kx09311/3.jpg"
+        "/products/bv-pdp/870799v6kx09311/3.jpg",
+        "/products/bv-pdp/870799v6kx09311/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -9900,12 +10150,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/571bcb3b-b0a6-45c8-814a-56524b340c2a/eCom/872028V6KY09071_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e4860954-17c7-4569-91a8-9aa440e5e467/eCom/872028V6KY09071_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/ea539145-8b26-4a95-b089-c5f0aaa579c6/eCom/872028V6KY09071_F.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/ea539145-8b26-4a95-b089-c5f0aaa579c6/eCom/872028V6KY09071_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/571bcb3b-b0a6-45c8-814a-56524b340c2a/Small/872028V6KY09071_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/872028v6ky09071/1.jpg",
         "/products/bv-pdp/872028v6ky09071/2.jpg",
-        "/products/bv-pdp/872028v6ky09071/3.jpg"
+        "/products/bv-pdp/872028v6ky09071/3.jpg",
+        "/products/bv-pdp/872028v6ky09071/4.jpg"
       ],
       "sizes": [
         {
@@ -9940,7 +10192,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-necktie-midnight-blue-870793V6KX04071.html",
       "gbpPrice": 180.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Midnight Blue"
       ],
@@ -9958,19 +10210,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/9604a5eb-f3c2-4515-bbd1-87bce320f568/eCom/870793V6KX04071_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d80fa7de-9128-4756-8b4d-97c9da93c567/eCom/870793V6KX04071_B.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/11315e85-619a-4271-9118-b101b7222e81/eCom/870793V6KX04071_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/11315e85-619a-4271-9118-b101b7222e81/eCom/870793V6KX04071_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9604a5eb-f3c2-4515-bbd1-87bce320f568/Small/870793V6KX04071_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870793v6kx04071/1.jpg",
         "/products/bv-pdp/870793v6kx04071/2.jpg",
-        "/products/bv-pdp/870793v6kx04071/3.jpg"
+        "/products/bv-pdp/870793v6kx04071/3.jpg",
+        "/products/bv-pdp/870793v6kx04071/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 180.0,
           "listGbpPrice": null
         }
@@ -9998,7 +10252,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/silk-twill-necktie-pop-red-870793V6KX06134.html",
       "gbpPrice": 180.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Pop Red"
       ],
@@ -10016,19 +10270,21 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/e8962b71-79ef-4928-9730-ba179107eb05/eCom/870793V6KX06134_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b55f21ba-7c1a-43fa-9487-7c364b26342f/eCom/870793V6KX06134_B.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/33ff789e-7a6f-4ca7-a9ad-7b5ed9145c78/eCom/870793V6KX06134_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/33ff789e-7a6f-4ca7-a9ad-7b5ed9145c78/eCom/870793V6KX06134_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e8962b71-79ef-4928-9730-ba179107eb05/Small/870793V6KX06134_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/870793v6kx06134/1.jpg",
         "/products/bv-pdp/870793v6kx06134/2.jpg",
-        "/products/bv-pdp/870793v6kx06134/3.jpg"
+        "/products/bv-pdp/870793v6kx06134/3.jpg",
+        "/products/bv-pdp/870793v6kx06134/4.jpg"
       ],
       "sizes": [
         {
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 180.0,
           "listGbpPrice": null
         }
@@ -10102,10 +10358,12 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/162260ee-7d7e-4ecc-90c3-bc471427e02b/eCom/A00A1RV6WU11044_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/162260ee-7d7e-4ecc-90c3-bc471427e02b/eCom/A00A1RV6WU11044_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/162260ee-7d7e-4ecc-90c3-bc471427e02b/Small/A00A1RV6WU11044_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/a00a1rv6wu11044/1.jpg"
+        "/products/bv-pdp/a00a1rv6wu11044/1.jpg",
+        "/products/bv-pdp/a00a1rv6wu11044/2.jpg"
       ],
       "sizes": [
         {
@@ -10218,17 +10476,19 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/411f8d6b-d371-439e-847b-0a2ff4c67197/eCom/804440V01712113_A.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/411f8d6b-d371-439e-847b-0a2ff4c67197/eCom/804440V01712113_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/411f8d6b-d371-439e-847b-0a2ff4c67197/Small/804440V01712113_A.jpg?v=3"
       ],
       "localImages": [
-        "/products/bv-pdp/804440v01712113/1.jpg"
+        "/products/bv-pdp/804440v01712113/1.jpg",
+        "/products/bv-pdp/804440v01712113/2.jpg"
       ],
       "sizes": [
         {
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10244,7 +10504,7 @@
           "id": "8_5",
           "value": "8_5",
           "displayValue": "8.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10252,7 +10512,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10288,7 +10548,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-gloves-black-804440V01711000.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black"
       ],
@@ -10334,17 +10594,19 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/m/71d9d3dfcecc8cd1/eCom-804440V01711000_A.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/m/71d9d3dfcecc8cd1/eCom-804440V01711000_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/71d9d3dfcecc8cd1/Small-804440V01711000_A.jpg?v=3"
       ],
       "localImages": [
-        "/products/bv-pdp/804440v01711000/1.jpg"
+        "/products/bv-pdp/804440v01711000/1.jpg",
+        "/products/bv-pdp/804440v01711000/2.jpg"
       ],
       "sizes": [
         {
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10352,7 +10614,7 @@
           "id": "8",
           "value": "8",
           "displayValue": "8",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10360,7 +10622,7 @@
           "id": "8_5",
           "value": "8_5",
           "displayValue": "8.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10368,7 +10630,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -10376,7 +10638,7 @@
           "id": "9_5",
           "value": "9_5",
           "displayValue": "9.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -10450,10 +10712,12 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/2770d61c-1f3e-43d6-aa8e-bd2efa308442/eCom/A00A1RV6WU11010_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2770d61c-1f3e-43d6-aa8e-bd2efa308442/eCom/A00A1RV6WU11010_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2770d61c-1f3e-43d6-aa8e-bd2efa308442/Small/A00A1RV6WU11010_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/a00a1rv6wu11010/1.jpg"
+        "/products/bv-pdp/a00a1rv6wu11010/1.jpg",
+        "/products/bv-pdp/a00a1rv6wu11010/2.jpg"
       ],
       "sizes": [
         {
@@ -10574,10 +10838,12 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/m/469c455b9bc1f246/eCom-804440V01711792_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/469c455b9bc1f246/eCom-804440V01711792_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/469c455b9bc1f246/Small-804440V01711792_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/804440v01711792/1.jpg"
+        "/products/bv-pdp/804440v01711792/1.jpg",
+        "/products/bv-pdp/804440v01711792/2.jpg"
       ],
       "sizes": [
         {
@@ -10682,10 +10948,12 @@
         ]
       },
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/m/45b29cd113f7e92a/eCom-804440V01713350_A.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/m/45b29cd113f7e92a/eCom-804440V01713350_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/45b29cd113f7e92a/Small-804440V01713350_A.jpg?v=1"
       ],
       "localImages": [
-        "/products/bv-pdp/804440v01713350/1.jpg"
+        "/products/bv-pdp/804440v01713350/1.jpg",
+        "/products/bv-pdp/804440v01713350/2.jpg"
       ],
       "sizes": [
         {
@@ -10771,12 +11039,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/61b41121-76f7-4868-bcbc-ebcd581f5203/eCom/A00470V72Z01230_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/75342b14-35be-4dc0-852b-d406d595f52a/eCom/A00470V72Z01230_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/2b663a7b-5293-4df4-8af8-3aea6fb81fb2/eCom/A00470V72Z01230_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/2b663a7b-5293-4df4-8af8-3aea6fb81fb2/eCom/A00470V72Z01230_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/61b41121-76f7-4868-bcbc-ebcd581f5203/Small/A00470V72Z01230_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/a00470v72z01230/1.jpg",
         "/products/bv-pdp/a00470v72z01230/2.jpg",
-        "/products/bv-pdp/a00470v72z01230/3.jpg"
+        "/products/bv-pdp/a00470v72z01230/3.jpg",
+        "/products/bv-pdp/a00470v72z01230/4.jpg"
       ],
       "sizes": [
         {
@@ -10847,13 +11117,15 @@
         "https://bottega-veneta.dam.kering.com/asset/9ef34786-bcb7-4732-bcb2-5a709cea93a4/eCom/A00470V72Z01000_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d31b37c8-9a4d-4ca4-a5b9-a09d0c948c61/eCom/A00470V72Z01000_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/76516e76-0b9e-47c6-9f00-7b9b495f644a/eCom/A00470V72Z01000_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/bf84d03c-2f4e-4c7d-a153-272b2e5b9dbd/eCom/A00470V72Z01000_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/bf84d03c-2f4e-4c7d-a153-272b2e5b9dbd/eCom/A00470V72Z01000_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9ef34786-bcb7-4732-bcb2-5a709cea93a4/Small/A00470V72Z01000_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/a00470v72z01000/1.jpg",
         "/products/bv-pdp/a00470v72z01000/2.jpg",
         "/products/bv-pdp/a00470v72z01000/3.jpg",
-        "/products/bv-pdp/a00470v72z01000/4.jpg"
+        "/products/bv-pdp/a00470v72z01000/4.jpg",
+        "/products/bv-pdp/a00470v72z01000/5.jpg"
       ],
       "sizes": [
         {
@@ -10922,13 +11194,15 @@
         "https://bottega-veneta.dam.kering.com/m/28c2649436de4b88/eCom-815346V5BX06840_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/17b69767c83d2469/eCom-815346V5BX06840_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/614d434f95025d3c/eCom-815346V5BX06840_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/m/264d16a545c953ae/eCom-815346V5BX06840_D.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/m/264d16a545c953ae/eCom-815346V5BX06840_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/28c2649436de4b88/Small-815346V5BX06840_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/815346v5bx06840/1.jpg",
         "/products/bv-pdp/815346v5bx06840/2.jpg",
         "/products/bv-pdp/815346v5bx06840/3.jpg",
-        "/products/bv-pdp/815346v5bx06840/4.jpg"
+        "/products/bv-pdp/815346v5bx06840/4.jpg",
+        "/products/bv-pdp/815346v5bx06840/5.jpg"
       ],
       "sizes": [
         {
@@ -11008,7 +11282,8 @@
         "https://bottega-veneta.dam.kering.com/m/4ccd599f0a588e37/eCom-687343VZQO53350_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/6526bae85fa12ca4/eCom-687343VZQO53350_E.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/m/4c297708a5c9c6a5/eCom-687343VZQO53350_F.jpg?v=4",
-        "https://bottega-veneta.dam.kering.com/m/682d783588072662/eCom-687343VZQO53350_G.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/m/682d783588072662/eCom-687343VZQO53350_G.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/47b54b751add11a6/Small-687343VZQO53350_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/687343vzqo53350/1.jpg",
@@ -11016,7 +11291,8 @@
         "/products/bv-pdp/687343vzqo53350/3.jpg",
         "/products/bv-pdp/687343vzqo53350/4.jpg",
         "/products/bv-pdp/687343vzqo53350/5.jpg",
-        "/products/bv-pdp/687343vzqo53350/6.jpg"
+        "/products/bv-pdp/687343vzqo53350/6.jpg",
+        "/products/bv-pdp/687343vzqo53350/7.jpg"
       ],
       "sizes": [
         {
@@ -11093,11 +11369,13 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/326cfc49-8972-49d0-92e8-d9f70bb58fbf/eCom/814097V5TQ05259_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/c0ce36c1-1904-4910-9259-d657780f6a31/eCom/814097V5TQ05259_C.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/c0ce36c1-1904-4910-9259-d657780f6a31/eCom/814097V5TQ05259_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/326cfc49-8972-49d0-92e8-d9f70bb58fbf/Small/814097V5TQ05259_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/814097v5tq05259/1.jpg",
-        "/products/bv-pdp/814097v5tq05259/2.jpg"
+        "/products/bv-pdp/814097v5tq05259/2.jpg",
+        "/products/bv-pdp/814097v5tq05259/3.jpg"
       ],
       "sizes": [
         {
@@ -11150,12 +11428,14 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/5fb575d7-b020-421f-b81a-2615592c0b61/eCom/875533V6R704644_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e677475e-5b8d-4f1e-98d9-3ff9a74bd5e0/eCom/875533V6R704644_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/19800693-2c5d-45a4-b92d-037ed98f826d/eCom/875533V6R704644_D.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/19800693-2c5d-45a4-b92d-037ed98f826d/eCom/875533V6R704644_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5fb575d7-b020-421f-b81a-2615592c0b61/Small/875533V6R704644_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/875533v6r704644/1.jpg",
         "/products/bv-pdp/875533v6r704644/2.jpg",
-        "/products/bv-pdp/875533v6r704644/3.jpg"
+        "/products/bv-pdp/875533v6r704644/3.jpg",
+        "/products/bv-pdp/875533v6r704644/4.jpg"
       ],
       "sizes": [
         {
@@ -11176,6 +11456,302 @@
       ],
       "leafId": "bv-men-acc-bathrobes",
       "cgid": "men-bathrobe",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "651052V00505153",
+      "sku": "651052V00505153",
+      "internalId": "814400048",
+      "name": "Triangle Key Ring",
+      "brand": "bottega veneta",
+      "color": "Terra pink",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/triangle-key-ring-terra-pink-651052V00505153.html",
+      "url": "https://www.bottegaveneta.com/en-gb/triangle-key-ring-terra-pink-651052V00505153.html",
+      "gbpPrice": 260.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Terra Pink",
+        "Hardware: Silver"
+      ],
+      "longDescription": [
+        "Triangle key ring with woven nappa leather detail."
+      ],
+      "compactedLongDesc": "Triangle key ring with woven nappa leather detail.",
+      "composition": "• Material: Lambskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 14,5 cm\n\n• Width: 4 cm\n\n• Depth: 0,5 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b262151c-8e71-433d-acbf-1e3a962f95ca/eCom/651052V00505153_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c0e3c7ca-ea50-4cf5-9342-53c290a91e64/eCom/651052V00505153_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b262151c-8e71-433d-acbf-1e3a962f95ca/Small/651052V00505153_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/651052v00505153/1.jpg",
+        "/products/bv-pdp/651052v00505153/2.jpg",
+        "/products/bv-pdp/651052v00505153/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 260.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-key-rings"
+      ],
+      "leafId": "bv-men-acc-key-rings",
+      "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006A7V3D841927",
+      "sku": "A006A7V3D841927",
+      "internalId": "814398268",
+      "name": "Sheep Charm ",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/dark truffle",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/sheep-charm--obsidian-grey-dark-truffle-A006A7V3D841927.html",
+      "url": "https://www.bottegaveneta.com/en-gb/sheep-charm--obsidian-grey-dark-truffle-A006A7V3D841927.html",
+      "gbpPrice": 580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Obsidian Grey/Dark Truffle"
+      ],
+      "longDescription": [
+        "Intreccio nappa leather and shearling sheep charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with sheep shape, featuring a leather lanyard.",
+      "composition": "• Material: Lambskin leather",
+      "material": "",
+      "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
+      "sizeModel": "• Height: 7 cm\n\n• Width: 7,5 cm\n\n• Depth: 3 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2905dc08-d22f-46f9-ae87-6e85f62fdb8d/eCom/A006A7V3D841927_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/149de90b-7042-4322-a48e-05e74f3c8daa/eCom/A006A7V3D841927_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2905dc08-d22f-46f9-ae87-6e85f62fdb8d/Small/A006A7V3D841927_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006a7v3d841927/1.jpg",
+        "/products/bv-pdp/a006a7v3d841927/2.jpg",
+        "/products/bv-pdp/a006a7v3d841927/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-key-rings"
+      ],
+      "leafId": "bv-men-acc-key-rings",
+      "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A007A7V77G11101",
+      "sku": "A007A7V77G11101",
+      "internalId": "A007A7V77G11101",
+      "name": "Tile Belt",
+      "brand": "bottega veneta",
+      "color": "Black/brown",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/tile-belt-black-brown-A007A7V77G11101.html",
+      "url": "https://www.bottegaveneta.com/en-gb/tile-belt-black-brown-A007A7V77G11101.html",
+      "gbpPrice": 580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black/Brown",
+        "Hardware: Silver",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato weathered leather belt",
+        "Metal elongated buckle",
+        "Prong closure"
+      ],
+      "compactedLongDesc": "Belt in weathered Intrecciato leather with elongated metal buckle.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 2 cm\n\n• Depth: 0,5 cm",
+      "sizeChartId": "default-M-BELTS",
+      "sizeGuide": {
+        "id": "default-M-BELTS",
+        "titleKo": "Men's Belts",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "75",
+            "S"
+          ],
+          [
+            "80",
+            "S"
+          ],
+          [
+            "85",
+            "S"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
+            "M"
+          ],
+          [
+            "100",
+            "M"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
+            "L"
+          ],
+          [
+            "115",
+            "L"
+          ],
+          [
+            "120",
+            "L"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e045c1e8-2779-4ac9-b447-34231ffae83f/eCom/A007A7V77G11101_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/277ddfff-00c4-43fc-89be-6a060f449749/eCom/A007A7V77G11101_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/36ec8c62-e70b-4731-8146-dfe60d09b43b/eCom/A007A7V77G11101_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/6bb3d4e7-f664-415e-a8a7-f467afcbd840/eCom/A007A7V77G11101_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/e045c1e8-2779-4ac9-b447-34231ffae83f/Small/A007A7V77G11101_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a007a7v77g11101/1.jpg",
+        "/products/bv-pdp/a007a7v77g11101/2.jpg",
+        "/products/bv-pdp/a007a7v77g11101/3.jpg",
+        "/products/bv-pdp/a007a7v77g11101/4.jpg",
+        "/products/bv-pdp/a007a7v77g11101/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "80",
+          "value": "80",
+          "displayValue": "80",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "85",
+          "value": "85",
+          "displayValue": "85",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "90",
+          "value": "90",
+          "displayValue": "90",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "95",
+          "value": "95",
+          "displayValue": "95",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "100",
+          "value": "100",
+          "displayValue": "100",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "105",
+          "value": "105",
+          "displayValue": "105",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "110",
+          "value": "110",
+          "displayValue": "110",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "115",
+          "value": "115",
+          "displayValue": "115",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "120",
+          "value": "120",
+          "displayValue": "120",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-belts"
+      ],
+      "leafId": "bv-men-acc-belts",
+      "cgid": "men-belts",
       "hubCategory": "accessories"
     }
   ]
