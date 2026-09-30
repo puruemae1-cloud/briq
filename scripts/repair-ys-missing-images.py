@@ -29,7 +29,7 @@ CATALOG = ROOT / "src/data/ys/ys-catalog.json"
 
 def tag_paths() -> set[str]:
     subprocess.run(
-        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+        ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
         cwd=ROOT,
         capture_output=True,
     )

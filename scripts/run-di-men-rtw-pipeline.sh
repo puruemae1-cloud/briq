@@ -75,6 +75,11 @@ python3 scripts/weekly-sync-status.py
 python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file /tmp/di-men-rtw-cdn-only.txt | tee /tmp/di-men-rtw-cdn.log
 echo "EXIT_CDN:$?"
 
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  echo "CI run — the workflow's final step commits catalogue changes"
+  exit 0
+fi
+
 python3 scripts/weekly-sync-status.py
 git add \
   .cursor/rules/dior-catalog.mdc \

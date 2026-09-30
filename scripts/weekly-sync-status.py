@@ -97,6 +97,11 @@ def _succeeded_today(runs: list[dict]) -> dict | None:
 
 
 def main() -> int:
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        # The freeze guards manual/agent deploys; inside a sync job the job
+        # itself is always "in progress" and its final step commits results.
+        print("weekly-sync-status: running inside a sync workflow — not blocking.")
+        return 0
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
     created_from = f"{today}T00:00:00Z"

@@ -148,7 +148,7 @@ def tag_blob_path(web_path: str) -> str:
 
 def list_tag_paths(prefix: str = PRODUCTS_PREFIX) -> set[str]:
     subprocess.run(
-        ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+        ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
         cwd=ROOT,
         check=False,
         capture_output=True,

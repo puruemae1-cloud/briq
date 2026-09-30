@@ -76,6 +76,11 @@ if grep -q 'No image changes' /tmp/di-bags-men-cdn.log; then
   echo "CDN no-op — verifying remote tag has sample"
 fi
 
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  echo "CI run — the workflow's final step commits catalogue changes"
+  exit 0
+fi
+
 python3 scripts/weekly-sync-status.py
 git add \
   .cursor/rules/dior-catalog.mdc \

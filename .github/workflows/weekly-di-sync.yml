@@ -100,4 +100,5 @@ jobs:
 
       - name: Commit catalog updates
         run: |
-          scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di
+          scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di \
+            src/data/product-images-manifest.json

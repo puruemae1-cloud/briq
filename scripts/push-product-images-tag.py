@@ -191,7 +191,7 @@ def commit_head(tmp: Path) -> str:
 
 
 def remote_tag_rev() -> str:
-    run(["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"], check=False)
+    run(["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"], check=False)
     show = subprocess.run(
         ["git", "rev-parse", TAG],
         cwd=str(ROOT),
@@ -542,7 +542,7 @@ def main() -> int:
         fetched = subprocess.CompletedProcess(["git", "fetch"], 0)
     else:
         fetched = run(
-            ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+            ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
             check=False,
             timeout=120,
         )

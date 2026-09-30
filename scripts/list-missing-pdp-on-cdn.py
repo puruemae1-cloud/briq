@@ -102,7 +102,7 @@ def main() -> int:
 
     if args.fetch:
         subprocess.run(
-            ["git", "fetch", "origin", f"refs/tags/{TAG}:refs/tags/{TAG}"],
+            ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
             cwd=ROOT,
             check=False,
         )

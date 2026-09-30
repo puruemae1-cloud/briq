@@ -66,6 +66,11 @@ n = sum(1 for p in cat if leaf.intersection(p.get("diCollections") or []))
 print("raw", len(raw.get("products") or []), "catalog_bags", n, "ts", Path("src/data/di/di-catalog.ts").stat().st_size)
 PY
 
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  echo "CI run — the workflow's final step commits catalogue changes"
+  exit 0
+fi
+
 git add \
   scripts/di_common.py \
   scripts/scrape-di-bags.py \

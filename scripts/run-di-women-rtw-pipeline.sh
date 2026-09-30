@@ -117,6 +117,10 @@ if [[ -s /tmp/di-women-rtw-cdn-only.txt ]]; then
 fi
 
 echo "=== COMMIT / PUSH ==="
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  echo "CI run — the workflow's final step commits catalogue changes"
+  exit 0
+fi
 git add \
   scripts/di_common.py \
   scripts/di_size_charts.py \
