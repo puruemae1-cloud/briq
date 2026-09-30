@@ -36,19 +36,22 @@ if [[ "$need_s1" -eq 1 ]]; then
   echo "EXIT_STAGE_1:$?"
 fi
 
-echo "pause ${PAUSE_SEC}s before stage 2"
-sleep "$PAUSE_SEC"
+# SKIP_BAGS_SCRAPE=1: run-di-bags-stages.sh already scraped stages 1-3.
+if [[ "${SKIP_BAGS_SCRAPE:-}" != "1" ]]; then
+  echo "pause ${PAUSE_SEC}s before stage 2"
+  sleep "$PAUSE_SEC"
 
-echo "=== STAGE 2 ==="
-python3 scripts/scrape-di-bags.py --stage 2 | tee /tmp/di-bags-s2.log
-echo "EXIT_STAGE_2:$?"
+  echo "=== STAGE 2 ==="
+  python3 scripts/scrape-di-bags.py --stage 2 | tee /tmp/di-bags-s2.log
+  echo "EXIT_STAGE_2:$?"
 
-echo "pause ${PAUSE_SEC}s before stage 3"
-sleep "$PAUSE_SEC"
+  echo "pause ${PAUSE_SEC}s before stage 3"
+  sleep "$PAUSE_SEC"
 
-echo "=== STAGE 3 ==="
-python3 scripts/scrape-di-bags.py --stage 3 | tee /tmp/di-bags-s3.log
-echo "EXIT_STAGE_3:$?"
+  echo "=== STAGE 3 ==="
+  python3 scripts/scrape-di-bags.py --stage 3 | tee /tmp/di-bags-s3.log
+  echo "EXIT_STAGE_3:$?"
+fi
 
 echo "=== MERGE ==="
 python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-bags-merge.log

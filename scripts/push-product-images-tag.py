@@ -190,8 +190,45 @@ def commit_head(tmp: Path) -> str:
     ).stdout.strip()
 
 
+def sync_local_tag() -> bool:
+    """Point the local tag at the remote tip, fetching only objects it lacks."""
+    tip = subprocess.run(
+        ["git", "ls-remote", "origin", f"refs/tags/{TAG}"],
+        cwd=str(ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    ).stdout.split()
+    if not tip:
+        return False
+    have = subprocess.run(
+        ["git", "cat-file", "-e", f"{tip[0]}^{{commit}}"],
+        cwd=str(ROOT),
+        capture_output=True,
+    )
+    if have.returncode != 0:
+        has_local = subprocess.run(
+            ["git", "rev-parse", "--verify", "-q", TAG],
+            cwd=str(ROOT),
+            capture_output=True,
+        ).returncode == 0
+        # A first fetch downloads the whole image tree (~30 min on CI runners);
+        # later ones only bring what other brand syncs pushed since. Only a
+        # first fetch on a slow local link gets capped.
+        timeout = None if has_local or os.environ.get("CI") else 120
+        fetched = run(
+            ["git", "fetch", "--no-tags", "origin", f"refs/tags/{TAG}"],
+            check=False,
+            timeout=timeout,
+        )
+        if fetched.returncode != 0:
+            return False
+    run(["git", "update-ref", f"refs/tags/{TAG}", tip[0]])
+    return True
+
+
 def remote_tag_rev() -> str:
-    run(["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"], check=False)
+    sync_local_tag()
     show = subprocess.run(
         ["git", "rev-parse", TAG],
         cwd=str(ROOT),
@@ -239,7 +276,14 @@ def squash_tag(rev: str, cwd: Path = ROOT) -> str:
     return snap
 
 
-def push_tag_ref() -> bool:
+def lease_flag(expect: str | None) -> str:
+    # Snapshots are parentless, so every tag push is a force push; the lease
+    # stops one brand's push from dropping images another brand pushed after
+    # our fetch.
+    return f"--force-with-lease=refs/tags/{TAG}:{expect}" if expect else "-f"
+
+
+def push_tag_ref(expect: str | None = None) -> bool:
     """Force-push the local product-images tag from the main repo."""
     pushed = run(
         [
@@ -249,7 +293,7 @@ def push_tag_ref() -> bool:
             "-c",
             "http.version=HTTP/1.1",
             "push",
-            "-f",
+            lease_flag(expect),
             "origin",
             f"refs/tags/{TAG}",
         ],
@@ -271,18 +315,6 @@ def push_only_ids_fast_import(
     applies file adds on top of the current tag tip without materializing it.
     """
     import time
-
-    parent = subprocess.run(
-        ["git", "rev-parse", TAG],
-        cwd=str(ROOT),
-        check=False,
-        capture_output=True,
-        text=True,
-    )
-    if parent.returncode != 0 or not parent.stdout.strip():
-        print(f"ERROR: local tag {TAG} missing — cannot fast-import.", flush=True)
-        return 1
-    parent_rev = parent.stdout.strip()
 
     # Collect (repo_path, file bytes)
     files: list[tuple[str, bytes]] = []
@@ -309,9 +341,47 @@ def push_only_ids_fast_import(
         return 0
 
     brand_label = ",".join(brands) or "products"
-    msg = f"chore: sync PDP images ({brand_label})\n"
-    ts = int(time.time())
+    for attempt in range(5):
+        parent = subprocess.run(
+            ["git", "rev-parse", TAG],
+            cwd=str(ROOT),
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if parent.returncode != 0 or not parent.stdout.strip():
+            print(f"ERROR: local tag {TAG} missing — cannot fast-import.", flush=True)
+            return 1
+        parent_rev = parent.stdout.strip()
+        rc = fast_import_onto(parent_rev, files, brand_label, int(time.time()))
+        if rc != 0:
+            return rc
+        if push_tag_ref(expect=parent_rev):
+            break
+        print(
+            f"WARN: product-images tag moved or push failed "
+            f"(attempt {attempt + 1}/5) — rebuilding on the remote tip",
+            flush=True,
+        )
+        if not sync_local_tag():
+            print("ERROR: could not re-sync the product-images tag.", flush=True)
+            return 1
+        time.sleep(10 * (attempt + 1))
+    else:
+        print("ERROR: failed to push product-images tag.", flush=True)
+        return 1
+    print(f"product-images tag updated ({brand_label}).", flush=True)
+    update_product_images_manifest()
+    if not skip_purge:
+        purge_jsdelivr(brands)
+    return 0
 
+
+def fast_import_onto(
+    parent_rev: str, files: list[tuple[str, bytes]], brand_label: str, ts: int
+) -> int:
+    """Commit ``files`` onto ``parent_rev`` as a new snapshot of the local tag."""
+    msg = f"chore: sync PDP images ({brand_label})\n"
     print(
         f"fast-import {len(files)} file(s) onto {TAG} ({parent_rev[:12]})…",
         flush=True,
@@ -362,19 +432,17 @@ def push_only_ids_fast_import(
 
     new_rev = squash_tag(f"refs/tags/{TAG}")
     print(f"local tag {TAG} → {new_rev[:12]}", flush=True)
-
-    if not push_tag_ref():
-        print("ERROR: failed to push product-images tag.", flush=True)
-        return 1
-    print(f"product-images tag updated ({brand_label}).", flush=True)
-    update_product_images_manifest()
-    if not skip_purge:
-        purge_jsdelivr(brands)
     return 0
 
 
 def push_tag(tmp: Path) -> bool:
     """Force-push the product-images tag. True only when remote matches our HEAD."""
+    base = subprocess.run(
+        ["git", "rev-parse", "--verify", "-q", "HEAD^"],
+        cwd=str(tmp),
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
     head = squash_tag(commit_head(tmp), cwd=tmp)
     pushed = run(
         [
@@ -384,7 +452,7 @@ def push_tag(tmp: Path) -> bool:
             "-c",
             "http.version=HTTP/1.1",
             "push",
-            "-f",
+            lease_flag(base or None),
             "origin",
             f"refs/tags/{TAG}",
         ],
@@ -536,17 +604,12 @@ def main() -> int:
             print(f"ERROR: studio greymat failed: {e}", flush=True)
             return 1
 
-    # Large product-images tag can hang forever on slow links — cap wait.
     if os.environ.get("SKIP_TAG_FETCH", "").strip() in {"1", "true", "yes"}:
         print("SKIP_TAG_FETCH=1 — using local product-images tag", flush=True)
-        fetched = subprocess.CompletedProcess(["git", "fetch"], 0)
+        fetched = True
     else:
-        fetched = run(
-            ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
-            check=False,
-            timeout=120,
-        )
-    if fetched.returncode != 0:
+        fetched = sync_local_tag()
+    if not fetched:
         show = run(["git", "rev-parse", "--verify", TAG], check=False)
         if show.returncode != 0:
             print(

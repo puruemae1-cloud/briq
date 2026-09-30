@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # Weekly Dior sync orchestrator. Runs all Dior category pipelines sequentially.
+#
+# In CI the whole sync does not fit one runner (6h cap), so each finished unit
+# is committed and recorded in PROGRESS. Once DI_BUDGET_MIN has elapsed no new
+# unit starts; the workflow re-dispatches itself with DI_RESUME=1 and the next
+# run skips units already done this cycle.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-$HOME/Library/Caches/ms-playwright}"
@@ -7,21 +12,73 @@ export PYTHONUNBUFFERED=1
 LOG=/tmp/di-weekly-sync.log
 exec > >(tee -a "$LOG") 2>&1
 
+CI_RUN=0
+[[ "${GITHUB_ACTIONS:-}" == "true" ]] && CI_RUN=1
+PROGRESS=src/data/di/weekly-progress.json
+BUDGET_SEC=$(( ${DI_BUDGET_MIN:-0} * 60 ))
+STARTED=$(date +%s)
+FAILED=""
+MORE=0
+
+if [[ "${DI_RESUME:-}" != "1" || ! -f "$PROGRESS" ]]; then
+  echo '{"done": [], "failed": []}' > "$PROGRESS"
+fi
+
+progress_has() {
+  python3 -c 'import json, sys
+p = json.load(open(sys.argv[1]))
+sys.exit(0 if sys.argv[2] in p["done"] + p["failed"] else 1)' "$PROGRESS" "$1"
+}
+
+progress_add() {
+  python3 -c 'import json, sys
+f, key, name = sys.argv[1:]
+p = json.load(open(f))
+p[key].append(name)
+open(f, "w").write(json.dumps(p, indent=2) + "\n")' "$PROGRESS" "$2" "$1"
+}
+
+checkpoint() {
+  [[ "$CI_RUN" == "1" ]] || return 0
+  scripts/ci-commit-push.sh "chore(di): weekly sync — $1" src/data/di \
+    src/data/product-images-manifest.json
+}
+
 run() {
   local name="$1"
-  echo "=== $name $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
   shift
-  if ! "$@"; then
+  if progress_has "$name"; then
+    echo "=== $name skipped (already ran this cycle) ==="
+    return 0
+  fi
+  [[ "$MORE" == "1" ]] && return 0
+  if (( BUDGET_SEC > 0 && $(date +%s) - STARTED > BUDGET_SEC )); then
+    echo "=== time budget reached before $name — continuing in a new run ==="
+    MORE=1
+    return 0
+  fi
+  echo "=== $name $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
+  if "$@"; then
+    progress_add "$name" done
+  else
     # Stage scripts log to /tmp/di-*.log only; surface them in CI.
     echo "!!! $name failed — recent /tmp/di-*.log output:"
     tail -n 60 /tmp/di-*.log 2>/dev/null || true
-    return 1
+    [[ "$CI_RUN" == "1" ]] || return 1
+    # Earlier units are already committed; drop this unit's partial output
+    # and keep going so one broken category cannot block the others.
+    git checkout -- src/data/di
+    git clean -fdq src/data/di
+    FAILED="$FAILED $name"
+    progress_add "$name" failed
   fi
+  checkpoint "$name"
 }
 
 run "WOMEN_BAGS_STAGES" bash scripts/run-di-bags-stages.sh
-run "WOMEN_BAGS_PIPELINE" bash scripts/continue-di-bags-pipeline.sh
-run "WOMEN_BAGS_DEPLOY" bash scripts/finish-di-bags-deploy.sh
+# Stages 1-3 just ran above; the pipeline only merges, checks and publishes.
+run "WOMEN_BAGS_PIPELINE" bash -c \
+  'SKIP_BAGS_SCRAPE=1 bash scripts/continue-di-bags-pipeline.sh && bash scripts/finish-di-bags-deploy.sh'
 run "ACCESSORIZE_BAG" bash scripts/run-di-accessorize-bag-pipeline.sh
 run "WOMEN_RTW" bash scripts/run-di-women-rtw-pipeline.sh
 run "WOMEN_SHOES" bash scripts/run-di-women-shoes-pipeline.sh
@@ -40,7 +97,16 @@ run "POST_FIX_WOMEN_RTW" python3 scripts/enrich-di-women-rtw-pdp.py --translate
 # Must run after enrich/merge so in-stock-only `variants` cannot shrink the PDP.
 # Belts also get '{n} cm' labels + cm↔inch size chart (dior.com unit).
 run "POST_FIX_SIZES_STOCK" python3 scripts/patch-di-rtw-sizes-from-algolia.py
-run "AUDIT_SIZE_STOCK" python3 scripts/audit-brand-size-stock.py --brand di || true
+run "AUDIT_SIZE_STOCK" bash -c 'python3 scripts/audit-brand-size-stock.py --brand di || true'
 run "NEW_BADGE_TTL" python3 scripts/apply-new-badge-ttl.py --brand di
 
+if [[ "$MORE" == "1" ]]; then
+  [[ -n "${GITHUB_OUTPUT:-}" ]] && echo "more=true" >> "$GITHUB_OUTPUT"
+  exit 0
+fi
+
 echo "=== DIOR_WEEKLY_DONE $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
+if [[ -n "$FAILED" ]]; then
+  echo "Failed units:$FAILED" >&2
+  exit 1
+fi

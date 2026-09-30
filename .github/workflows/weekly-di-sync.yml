@@ -6,9 +6,21 @@ on:
     # Odd ISO weeks only (gate job) — even weeks exit before any catalogue commit.
     - cron: "0 12 * * 5"
   workflow_dispatch:
+    inputs:
+      resume:
+        description: "1 = continue the current cycle (auto-filled when a run hits its time budget)"
+        required: false
+        default: "0"
+        type: string
+      part:
+        description: "Continuation number (auto-filled)"
+        required: false
+        default: "1"
+        type: string
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: weekly-di-sync
@@ -91,9 +103,18 @@ jobs:
           chmod +x scripts/ci-commit-push.sh
           scripts/ci-commit-push.sh "chore(di): per-size stock refresh" src/data/di
 
+      # Also leaves the product-images tag objects local, so each stage's image
+      # push only fetches what other brands pushed since.
+      - name: Restore di-pdp images from product-images tag
+        run: python3 scripts/restore-product-images-tag.py --dirs di-pdp
+
       - name: Run Dior weekly sync
+        id: sync
         env:
           PAUSE_SEC: "30"
+          # No new category starts after this; the longest stage runs ~2h.
+          DI_BUDGET_MIN: "180"
+          DI_RESUME: ${{ inputs.resume == '1' && '1' || '0' }}
         run: |
           chmod +x scripts/run-di-weekly-sync.sh
           scripts/run-di-weekly-sync.sh
@@ -102,3 +123,22 @@ jobs:
         run: |
           scripts/ci-commit-push.sh "chore(di): weekly catalog sync" src/data/di \
             src/data/product-images-manifest.json
+
+      - name: Continue remaining categories in a new run
+        if: steps.sync.outputs.more == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const part = Math.max(1, parseInt(String((context.payload.inputs || {}).part || '1'), 10) || 1);
+            if (part >= 6) {
+              core.setFailed(`Dior sync still unfinished after ${part} runs — check Actions logs`);
+              return;
+            }
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'weekly-di-sync.yml',
+              ref: 'main',
+              inputs: { resume: '1', part: String(part + 1) },
+            });
+            core.info(`Dispatched Dior sync part ${part + 1}`);
