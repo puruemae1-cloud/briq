@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:03:38.864471+00:00",
+  "scrapedAt": "2026-09-30T07:59:23.316941+00:00",
   "brand": "Vivienne Westwood",
   "hub": "https://www.viviennewestwood.com/en-gb/women/clothing/",
   "family": "vw-women-rtw",
@@ -1929,10 +1929,118 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "10": false,
+        "10": true,
         "12": true,
-        "14": true,
+        "14": false,
         "16": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-bridal.html",
+      "sizeChart": {
+        "id": "size-guide-bridal",
+        "titleKo": "비비안 웨스트우드 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "WAIST",
+          "HIP",
+          "UK",
+          "US",
+          "IT",
+          "FR"
+        ],
+        "rows": [
+          [
+            "80CM / 31.5IN",
+            "58CM / 22.83IN",
+            "86CM / 33.85IN",
+            "4",
+            "0",
+            "36",
+            "32"
+          ],
+          [
+            "84CM / 33.07IN",
+            "62CM / 24.40IN",
+            "90CM / 35.43IN",
+            "6",
+            "2",
+            "38",
+            "34"
+          ],
+          [
+            "88CM / 34.64IN",
+            "66CM / 25.98IN",
+            "94CM / 37IN",
+            "8",
+            "4",
+            "40",
+            "36"
+          ],
+          [
+            "93CM / 36.61IN",
+            "71CM / 27.95IN",
+            "99CM / 38.97IN",
+            "10",
+            "6",
+            "42",
+            "38"
+          ],
+          [
+            "98CM / 38.58IN",
+            "76CM / 29.92IN",
+            "104CM / 40.94IN",
+            "12",
+            "8",
+            "44",
+            "40"
+          ],
+          [
+            "104.4CM / 41.10IN",
+            "82.4CM / 32.44IN",
+            "110.4CM / 43.46IN",
+            "14",
+            "10",
+            "46",
+            "42"
+          ],
+          [
+            "110.8CM / 43.62IN",
+            "88.8CM / 34.96IN",
+            "116.8CM / 45.98IN",
+            "16",
+            "12",
+            "48",
+            "44"
+          ],
+          [
+            "117.2CM / 46.14IN",
+            "95.2CM / 37.48IN",
+            "123.2CM / 48.50IN",
+            "18",
+            "14",
+            "50",
+            "46"
+          ],
+          [
+            "123.6CM /48.66IN",
+            "101.6CM / 40IN",
+            "129.6CM / 51.02IN",
+            "20",
+            "16",
+            "52",
+            "48"
+          ],
+          [
+            "130CM / 51.18IN",
+            "108CM /45.51IN",
+            "136CM / 53.4IN",
+            "22",
+            "18",
+            "54",
+            "50"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-bridal.html"
       }
     },
     {
@@ -4137,7 +4245,7 @@
       "categoryLabel": "",
       "sizeStock": {
         "36": false,
-        "38": true,
+        "38": false,
         "40": true,
         "42": true,
         "44": true,
@@ -8135,6 +8243,115 @@
         "S": true,
         "M": true,
         "L": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-dresses.html",
+      "sizeChart": {
+        "id": "size-chart-womens-dresses",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "DRESSES",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "가슴 (cm)",
+            "77",
+            "81",
+            "85",
+            "89",
+            "93",
+            "97",
+            "101"
+          ],
+          [
+            "허리 (cm)",
+            "58",
+            "62",
+            "66",
+            "70",
+            "74",
+            "78",
+            "82"
+          ],
+          [
+            "힙 (cm)",
+            "86",
+            "90",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-dresses.html"
       }
     },
     {
@@ -8381,10 +8598,118 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "10": true,
-        "12": false,
+        "10": false,
+        "12": true,
         "14": false,
         "16": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-bridal.html",
+      "sizeChart": {
+        "id": "size-guide-bridal",
+        "titleKo": "비비안 웨스트우드 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "WAIST",
+          "HIP",
+          "UK",
+          "US",
+          "IT",
+          "FR"
+        ],
+        "rows": [
+          [
+            "80CM / 31.5IN",
+            "58CM / 22.83IN",
+            "86CM / 33.85IN",
+            "4",
+            "0",
+            "36",
+            "32"
+          ],
+          [
+            "84CM / 33.07IN",
+            "62CM / 24.40IN",
+            "90CM / 35.43IN",
+            "6",
+            "2",
+            "38",
+            "34"
+          ],
+          [
+            "88CM / 34.64IN",
+            "66CM / 25.98IN",
+            "94CM / 37IN",
+            "8",
+            "4",
+            "40",
+            "36"
+          ],
+          [
+            "93CM / 36.61IN",
+            "71CM / 27.95IN",
+            "99CM / 38.97IN",
+            "10",
+            "6",
+            "42",
+            "38"
+          ],
+          [
+            "98CM / 38.58IN",
+            "76CM / 29.92IN",
+            "104CM / 40.94IN",
+            "12",
+            "8",
+            "44",
+            "40"
+          ],
+          [
+            "104.4CM / 41.10IN",
+            "82.4CM / 32.44IN",
+            "110.4CM / 43.46IN",
+            "14",
+            "10",
+            "46",
+            "42"
+          ],
+          [
+            "110.8CM / 43.62IN",
+            "88.8CM / 34.96IN",
+            "116.8CM / 45.98IN",
+            "16",
+            "12",
+            "48",
+            "44"
+          ],
+          [
+            "117.2CM / 46.14IN",
+            "95.2CM / 37.48IN",
+            "123.2CM / 48.50IN",
+            "18",
+            "14",
+            "50",
+            "46"
+          ],
+          [
+            "123.6CM /48.66IN",
+            "101.6CM / 40IN",
+            "129.6CM / 51.02IN",
+            "20",
+            "16",
+            "52",
+            "48"
+          ],
+          [
+            "130CM / 51.18IN",
+            "108CM /45.51IN",
+            "136CM / 53.4IN",
+            "22",
+            "18",
+            "54",
+            "50"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-bridal.html"
       }
     },
     {
@@ -8452,9 +8777,117 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "10": true,
+        "10": false,
         "12": true,
         "14": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-bridal.html",
+      "sizeChart": {
+        "id": "size-guide-bridal",
+        "titleKo": "비비안 웨스트우드 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "WAIST",
+          "HIP",
+          "UK",
+          "US",
+          "IT",
+          "FR"
+        ],
+        "rows": [
+          [
+            "80CM / 31.5IN",
+            "58CM / 22.83IN",
+            "86CM / 33.85IN",
+            "4",
+            "0",
+            "36",
+            "32"
+          ],
+          [
+            "84CM / 33.07IN",
+            "62CM / 24.40IN",
+            "90CM / 35.43IN",
+            "6",
+            "2",
+            "38",
+            "34"
+          ],
+          [
+            "88CM / 34.64IN",
+            "66CM / 25.98IN",
+            "94CM / 37IN",
+            "8",
+            "4",
+            "40",
+            "36"
+          ],
+          [
+            "93CM / 36.61IN",
+            "71CM / 27.95IN",
+            "99CM / 38.97IN",
+            "10",
+            "6",
+            "42",
+            "38"
+          ],
+          [
+            "98CM / 38.58IN",
+            "76CM / 29.92IN",
+            "104CM / 40.94IN",
+            "12",
+            "8",
+            "44",
+            "40"
+          ],
+          [
+            "104.4CM / 41.10IN",
+            "82.4CM / 32.44IN",
+            "110.4CM / 43.46IN",
+            "14",
+            "10",
+            "46",
+            "42"
+          ],
+          [
+            "110.8CM / 43.62IN",
+            "88.8CM / 34.96IN",
+            "116.8CM / 45.98IN",
+            "16",
+            "12",
+            "48",
+            "44"
+          ],
+          [
+            "117.2CM / 46.14IN",
+            "95.2CM / 37.48IN",
+            "123.2CM / 48.50IN",
+            "18",
+            "14",
+            "50",
+            "46"
+          ],
+          [
+            "123.6CM /48.66IN",
+            "101.6CM / 40IN",
+            "129.6CM / 51.02IN",
+            "20",
+            "16",
+            "52",
+            "48"
+          ],
+          [
+            "130CM / 51.18IN",
+            "108CM /45.51IN",
+            "136CM / 53.4IN",
+            "22",
+            "18",
+            "54",
+            "50"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-bridal.html"
       }
     },
     {
@@ -16671,7 +17104,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "images": [
         "/products/vw-pdp/3304000p-l00b3-white/1.jpg",
@@ -16695,11 +17129,181 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "XS": false,
+        "XS": true,
         "S": true,
         "M": false,
         "L": true,
-        "XL": false
+        "XL": false,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-coats-and-jackets.html",
+      "sizeChart": {
+        "id": "size-chart-womens-coats-and-jackets",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "COATS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "33.6CM / 13.2IN",
+            "34.7CM / 13.6IN",
+            "35.8CM / 15.1IN",
+            "36.9CM / 14.5IN",
+            "38CM / 14.9IN",
+            "39.1CM / 15.39IN",
+            "40.2CM / 15.8IN"
+          ],
+          [
+            "가슴 (cm)",
+            "85CM / 33.4IN",
+            "89CM / 35IN",
+            "93CM / 36.6IN",
+            "97CM / 38.1IN",
+            "101CM / 39.7IN",
+            "105CM / 41.3IN",
+            "109CM / 42.9IN"
+          ],
+          [
+            "허리 (cm)",
+            "84CM / 33IN",
+            "88CM / 34.6IN",
+            "92CM / 36.2IN",
+            "96CM / 37.7IN",
+            "100CM / 39.3IN",
+            "104CM / 40.9IN",
+            "108CM / 42.5IN"
+          ],
+          [
+            "총기장 (cm)",
+            "100CM / 39.3IN",
+            "101CM / 39.7IN",
+            "102CM / 40.1IN",
+            "103CM / 40.5IN",
+            "104CM / 40.9IN",
+            "105CM / 41.3IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "JACKETS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "40CM / 13.22IN",
+            "41CM / 16.14IN",
+            "42CM / 16.53IN",
+            "43CM / 16.92IN",
+            "44CM / 17.32IN",
+            "45CM / 17.71IN",
+            "46CM / 18.11IN"
+          ],
+          [
+            "가슴 (cm)",
+            "84.5CM / 33.26IN",
+            "88.5CM / 34.84IN",
+            "92.5CM / 36.37IN",
+            "96.5CM / 37.99IN",
+            "100.5CM / 39.56IN",
+            "104.5CM / 41.14IN",
+            "108.5CM / 42.71IN"
+          ],
+          [
+            "허리 (cm)",
+            "76CM / 29.92IN",
+            "80CM / 31.49IN",
+            "84CM / 33.07IN",
+            "88CM / 34.64IN",
+            "92CM / 36.22IN",
+            "96CM / 38.79IN",
+            "100CM / 39.37IN"
+          ],
+          [
+            "총기장 (cm)",
+            "99CM / 38.97IN",
+            "103CM / 40.55IN",
+            "107CM / 42.12IN",
+            "111CM / 43.70IN",
+            "115CM / 45.27IN",
+            "119CM / 46.85IN",
+            "123CM / 48.42IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-coats-and-jackets.html"
       }
     },
     {
@@ -20202,8 +20806,8 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "XS": true,
-        "S": true,
+        "XS": false,
+        "S": false,
         "M": true,
         "L": false,
         "XL": true
@@ -22300,72 +22904,8 @@
         "L": false,
         "XL": false,
         "XXL": false
-      }
-    },
-    {
-      "id": "3G01006E-J00CN--WHITE",
-      "sku": "3G01006E-J00CN--WHITE",
-      "title": "Backstage T-shirt",
-      "gbpPrice": 165.0,
-      "url": "https://www.viviennewestwood.com/en-gb/women/clothing/sweatshirts-and-t-shirts/backstage-t-shirt-white/3G01006E-J00CN--WHITE.html",
-      "leafId": "vw-women-sweats",
-      "leafLabel": "Sweatshirts & T-shirts",
-      "leafLabelKo": "스웻/티셔츠",
-      "collections": [
-        "vivienne-westwood",
-        "vw-women",
-        "vw-women-rtw",
-        "vw-women-rtw-all"
-      ],
-      "color": {
-        "label": ""
       },
-      "details": [
-        {
-          "label": "Description",
-          "body": "Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art. Features side slits Tonal stitchingRolled hemAsymmetric cap sleevesPrinted back Cut-out draped neckline detailCap sleevesMade in Italy Code: 8053195693344",
-          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features side slits&nbsp;</li><li>Tonal stitching</li><li>Rolled hem</li><li>Asymmetric cap sleeves</li><li>Printed back&nbsp;</li><li>Cut-out draped neckline detail</li><li>Cap sleeves</li><li>Made in Italy&nbsp;</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8053195693344</span>\n                    </p>\n                    \n                </div>\n            "
-        },
-        {
-          "label": "Composition",
-          "body": "100% Cotton",
-          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
-        },
-        {
-          "label": "Care Instructions",
-          "body": "Please wash each garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
-          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
-        }
-      ],
-      "sizes": [
-        "OS"
-      ],
-      "images": [
-        "/products/vw-pdp/3g01006e-j00cn-white/1.jpg",
-        "/products/vw-pdp/3g01006e-j00cn-white/2.jpg",
-        "/products/vw-pdp/3g01006e-j00cn-white/3.jpg",
-        "/products/vw-pdp/3g01006e-j00cn-white/4.jpg",
-        "/products/vw-pdp/3g01006e-j00cn-white/5.jpg",
-        "/products/vw-pdp/3g01006e-j00cn-white/6.jpg"
-      ],
-      "remoteImages": [
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf16e1ff3/images/3G01006E-J00CN-_WHITE_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw7d25c444/images/3G01006E-J00CN-_WHITE_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8c14af6b/images/3G01006E-J00CN-_WHITE_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8f3cee48/images/3G01006E-J00CN-_WHITE_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw3dc1f78a/images/3G01006E-J00CN-_WHITE_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
-        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw002987cc/images/3G01006E-J00CN-_WHITE_006_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
-      ],
-      "availability": true,
-      "breadcrumb": [
-        "Home",
-        "Women",
-        "Clothing",
-        "Sweatshirts and T-Shirts",
-        "Backstage T-shirt"
-      ],
-      "categoryLabel": "",
-      "sizeGuideUrl": "/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
       "sizeChart": {
         "id": "size-chart-womens-sweatshirts-tshirts",
         "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
@@ -22482,7 +23022,190 @@
             "109CM / 42.91IN"
           ]
         ],
-        "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      }
+    },
+    {
+      "id": "3G01006E-J00CN--WHITE",
+      "sku": "3G01006E-J00CN--WHITE",
+      "title": "Backstage T-shirt",
+      "gbpPrice": 165.0,
+      "url": "https://www.viviennewestwood.com/en-gb/women/clothing/sweatshirts-and-t-shirts/backstage-t-shirt-white/3G01006E-J00CN--WHITE.html",
+      "leafId": "vw-women-sweats",
+      "leafLabel": "Sweatshirts & T-shirts",
+      "leafLabelKo": "스웻/티셔츠",
+      "collections": [
+        "vivienne-westwood",
+        "vw-women",
+        "vw-women-rtw",
+        "vw-women-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art. Features side slits Tonal stitchingRolled hemAsymmetric cap sleevesPrinted back Cut-out draped neckline detailCap sleevesMade in Italy Code: 8053195693344",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features side slits&nbsp;</li><li>Tonal stitching</li><li>Rolled hem</li><li>Asymmetric cap sleeves</li><li>Printed back&nbsp;</li><li>Cut-out draped neckline detail</li><li>Cap sleeves</li><li>Made in Italy&nbsp;</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8053195693344</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash each garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "OS"
+      ],
+      "images": [
+        "/products/vw-pdp/3g01006e-j00cn-white/1.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/2.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/3.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/4.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/5.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/6.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf16e1ff3/images/3G01006E-J00CN-_WHITE_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw7d25c444/images/3G01006E-J00CN-_WHITE_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8c14af6b/images/3G01006E-J00CN-_WHITE_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8f3cee48/images/3G01006E-J00CN-_WHITE_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw3dc1f78a/images/3G01006E-J00CN-_WHITE_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw002987cc/images/3G01006E-J00CN-_WHITE_006_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Clothing",
+        "Sweatshirts and T-Shirts",
+        "Backstage T-shirt"
+      ],
+      "categoryLabel": "",
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
       }
     },
     {
@@ -22656,6 +23379,660 @@
         ],
         "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-sweatshirts.html"
       }
+    },
+    {
+      "id": "O110103ML-W00NU--WINE",
+      "sku": "O110103ML-W00NU--WINE",
+      "title": "Nova Camille Dress",
+      "gbpPrice": 6930.0,
+      "url": "https://www.viviennewestwood.com/en-us/bridal/bridal-and-eveningwear-boutique/nova-camille-dress-wine/O110103ML-W00NU--WINE.html",
+      "leafId": "vw-women-rtw-all",
+      "leafLabel": "View All",
+      "leafLabelKo": "전체",
+      "collections": [
+        "vivienne-westwood",
+        "vw-women",
+        "vw-women-rtw",
+        "vw-women-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "The Nova Camille dress reimagines the house's iconic Camille design, as seen in the Vivienne Westwood 2022 bridal collection. The corset is reminiscent of fashionable high society women of the 15th-century – with a scoop neckline that sweeps across the shoulders and cinches at the waist, complete with an A-line skirt that wraps around the body with structured folds that converge at the back and extend into a sweeping train. Features an empire waistline SleevelessStructural corset boningDraped detail at the hipsInternal liningPlease note that the train can be shortened or removed entirely upon request, but it cannot be extended. Code: O110103ML-W00NU--WINE",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>The&nbsp;Nova&nbsp;Camille&nbsp;dress&nbsp;reimagines&nbsp;the&nbsp;house's&nbsp;iconic&nbsp;Camille&nbsp;design,&nbsp;as&nbsp;seen&nbsp;in&nbsp;the&nbsp;Vivienne&nbsp;Westwood&nbsp;2022&nbsp;bridal&nbsp;collection.&nbsp;The&nbsp;corset&nbsp;is&nbsp;reminiscent&nbsp;of&nbsp;fashionable&nbsp;high&nbsp;society&nbsp;women&nbsp;of&nbsp;the&nbsp;15th-century&nbsp;–&nbsp;with&nbsp;a&nbsp;scoop&nbsp;neckline&nbsp;that&nbsp;sweeps&nbsp;across&nbsp;the&nbsp;shoulders&nbsp;and&nbsp;cinches&nbsp;at&nbsp;the&nbsp;waist,&nbsp;complete&nbsp;with&nbsp;an&nbsp;A-line&nbsp;skirt&nbsp;that&nbsp;wraps&nbsp;around&nbsp;the&nbsp;body&nbsp;with&nbsp;structured&nbsp;folds&nbsp;that&nbsp;converge&nbsp;at&nbsp;the&nbsp;back&nbsp;and&nbsp;extend&nbsp;into&nbsp;a&nbsp;sweeping&nbsp;train.&nbsp;</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features&nbsp;an&nbsp;empire&nbsp;waistline&nbsp;</li><li>Sleeveless</li><li>Structural&nbsp;corset&nbsp;boning</li><li>Draped&nbsp;detail&nbsp;at&nbsp;the&nbsp;hips</li><li>Internal&nbsp;lining</li><li>Please&nbsp;note&nbsp;that&nbsp;the&nbsp;train&nbsp;can&nbsp;be&nbsp;shortened&nbsp;or&nbsp;removed&nbsp;entirely&nbsp;upon&nbsp;request,&nbsp;but&nbsp;it&nbsp;cannot&nbsp;be&nbsp;extended.</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">O110103ML-W00NU--WINE</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "57% Acetate 37% Polyamide 6% Elastane",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>57%&nbsp;Acetate&nbsp;</li><li>37%&nbsp;Polyamide&nbsp;</li><li>6%&nbsp;Elastane</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please&nbsp;wash&nbsp;garment&nbsp;separately&nbsp;–&nbsp;and&nbsp;do&nbsp;not&nbsp;use&nbsp;bleach.</li><li>Avoid&nbsp;over-exposure&nbsp;to&nbsp;direct&nbsp;sunlight&nbsp;or&nbsp;heat.</li><li>Avoid&nbsp;tumble&nbsp;drying&nbsp;–&nbsp;and&nbsp;follow&nbsp;the&nbsp;temperature&nbsp;instructions&nbsp;strictly.</li><li>Please&nbsp;follow&nbsp;the&nbsp;ironing&nbsp;technique,&nbsp;as&nbsp;written&nbsp;on&nbsp;the&nbsp;label.&nbsp;Iron&nbsp;the&nbsp;garments&nbsp;inside&nbsp;out,&nbsp;or&nbsp;with&nbsp;a&nbsp;cloth.</li><li>Please&nbsp;protect&nbsp;metal&nbsp;accessories&nbsp;when&nbsp;washing&nbsp;by&nbsp;hand&nbsp;or&nbsp;by&nbsp;dry-cleaning.&nbsp;</li><li>If&nbsp;professional&nbsp;dry&nbsp;cleaning&nbsp;is&nbsp;permitted,&nbsp;please&nbsp;proceed&nbsp;with&nbsp;a&nbsp;trusted&nbsp;dry&nbsp;cleaner.&nbsp;</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "10",
+        "12",
+        "14"
+      ],
+      "sizeStock": {
+        "10": true,
+        "12": true,
+        "14": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-bridal.html",
+      "sizeChart": {
+        "id": "size-guide-bridal",
+        "titleKo": "비비안 웨스트우드 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "WAIST",
+          "HIP",
+          "UK",
+          "US",
+          "IT",
+          "FR"
+        ],
+        "rows": [
+          [
+            "80CM / 31.5IN",
+            "58CM / 22.83IN",
+            "86CM / 33.85IN",
+            "4",
+            "0",
+            "36",
+            "32"
+          ],
+          [
+            "84CM / 33.07IN",
+            "62CM / 24.40IN",
+            "90CM / 35.43IN",
+            "6",
+            "2",
+            "38",
+            "34"
+          ],
+          [
+            "88CM / 34.64IN",
+            "66CM / 25.98IN",
+            "94CM / 37IN",
+            "8",
+            "4",
+            "40",
+            "36"
+          ],
+          [
+            "93CM / 36.61IN",
+            "71CM / 27.95IN",
+            "99CM / 38.97IN",
+            "10",
+            "6",
+            "42",
+            "38"
+          ],
+          [
+            "98CM / 38.58IN",
+            "76CM / 29.92IN",
+            "104CM / 40.94IN",
+            "12",
+            "8",
+            "44",
+            "40"
+          ],
+          [
+            "104.4CM / 41.10IN",
+            "82.4CM / 32.44IN",
+            "110.4CM / 43.46IN",
+            "14",
+            "10",
+            "46",
+            "42"
+          ],
+          [
+            "110.8CM / 43.62IN",
+            "88.8CM / 34.96IN",
+            "116.8CM / 45.98IN",
+            "16",
+            "12",
+            "48",
+            "44"
+          ],
+          [
+            "117.2CM / 46.14IN",
+            "95.2CM / 37.48IN",
+            "123.2CM / 48.50IN",
+            "18",
+            "14",
+            "50",
+            "46"
+          ],
+          [
+            "123.6CM /48.66IN",
+            "101.6CM / 40IN",
+            "129.6CM / 51.02IN",
+            "20",
+            "16",
+            "52",
+            "48"
+          ],
+          [
+            "130CM / 51.18IN",
+            "108CM /45.51IN",
+            "136CM / 53.4IN",
+            "22",
+            "18",
+            "54",
+            "50"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-bridal.html"
+      },
+      "images": [
+        "/products/vw-pdp/o110103ml-w00nu-wine/1.jpg",
+        "/products/vw-pdp/o110103ml-w00nu-wine/2.jpg",
+        "/products/vw-pdp/o110103ml-w00nu-wine/3.jpg",
+        "/products/vw-pdp/o110103ml-w00nu-wine/4.jpg",
+        "/products/vw-pdp/o110103ml-w00nu-wine/5.jpg",
+        "/products/vw-pdp/o110103ml-w00nu-wine/6.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8a2d57be/images/O110103ML-W00NU-_WINE_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw1630219d/images/O110103ML-W00NU-_WINE_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwbfa7f66a/images/O110103ML-W00NU-_WINE_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw1347a501/images/O110103ML-W00NU-_WINE_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwaf67be5c/images/O110103ML-W00NU-_WINE_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6d71c8d8/images/O110103ML-W00NU-_WINE_006_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Bridal",
+        "Bridal & Eveningwear Boutique",
+        "Nova Camille Dress"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "3F01000C-W01NH--MIDNIGHT-BLUE-BLACK",
+      "sku": "3F01000C-W01NH--MIDNIGHT-BLUE-BLACK",
+      "title": "Culottes",
+      "gbpPrice": 1105.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/clothing/trousers-and-shorts/culottes-midnight-blue-black/3F01000C-W01NH--MIDNIGHT-BLUE-BLACK.html",
+      "leafId": "vw-women-trousers",
+      "leafLabel": "Trousers",
+      "leafLabelKo": "팬츠",
+      "collections": [
+        "vivienne-westwood",
+        "vw-women",
+        "vw-women-rtw",
+        "vw-women-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our culottes are crafted from satin stripe wool, recalling the tailoring featured in the Vivienne Westwood Autumn-Winter 1996/97 collection, 'Storm in a Teacup'. Cut to a wide-leg silhouette with delicate front pleats and turned-up cuffs, the design is complete with an orb-embossed metal tab on the front belt loop. Features a mid-rise waistbandConcealed side pocketsFront zip and button fasteningPressed pleatsTonal stitchingOrb-embossed tabModel is 5'9/177cm and is wearing a size SModel is 6’0/183cm and is wearing a size MMade in Italy Code: 3F01000C-W01NH--MIDNIGHT-BLUE-BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our culottes are crafted from satin stripe wool, recalling the tailoring featured in the Vivienne Westwood Autumn-Winter 1996/97 collection, 'Storm in a Teacup'. Cut to a wide-leg silhouette with delicate front pleats and turned-up cuffs, the design is complete with an orb-embossed metal tab on the front belt loop.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a mid-rise waistband</li><li>Concealed side pockets</li><li>Front zip and button fastening</li><li>Pressed pleats</li><li>Tonal stitching</li><li>Orb-embossed tab</li><li>Model is 5'9/177cm and is wearing a size S</li><li>Model is 6’0/183cm and is wearing a size M</li><li><span dir=\"ltr\">Made in Italy</span></li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">3F01000C-W01NH--MIDNIGHT-BLUE-BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Virgin wool",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Virgin wool</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach. Avoid over-exposure to direct sunlight or heat. Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning.If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.&nbsp;</li><li>Avoid over-exposure to direct sunlight or heat.&nbsp;</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label.&nbsp;</li><li>Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": false,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-womens-trousers-shorts.html",
+      "sizeChart": {
+        "id": "size-guide-womens-trousers-shorts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "",
+            ""
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "",
+            ""
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "",
+            ""
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "",
+            ""
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "",
+            ""
+          ],
+          [
+            "TROUSERS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "",
+            ""
+          ],
+          [
+            "허리 (cm)",
+            "64",
+            "68",
+            "72",
+            "76",
+            "80",
+            "84",
+            "88",
+            "92",
+            "",
+            ""
+          ],
+          [
+            "힙 (cm)",
+            "92",
+            "96",
+            "100",
+            "104",
+            "108",
+            "112",
+            "116",
+            "120",
+            "",
+            ""
+          ],
+          [
+            "Inner Leg Length",
+            "86.5",
+            "87.5",
+            "88.5",
+            "89.5",
+            "90.5",
+            "91.5",
+            "92.5",
+            "93.5",
+            "",
+            ""
+          ],
+          [
+            "DENIM XL-3XL",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL",
+            "",
+            ""
+          ],
+          [
+            "허리 (cm)",
+            "70",
+            "76",
+            "82",
+            "88",
+            "92",
+            "96",
+            "100",
+            "104",
+            "",
+            ""
+          ],
+          [
+            "Inner Leg Length",
+            "80.5",
+            "81.5",
+            "82.5",
+            "83.5",
+            "84.5",
+            "85.5",
+            "86.5",
+            "87.5",
+            "",
+            ""
+          ],
+          [
+            "DENIM 23-32",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+          ],
+          [
+            "허리 (cm)",
+            "64",
+            "66",
+            "68",
+            "70.5",
+            "73",
+            "76",
+            "78.5",
+            "81",
+            "84",
+            "86.5"
+          ],
+          [
+            "Inner Leg Length",
+            "87",
+            "87",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-womens-trousers-shorts.html"
+      },
+      "images": [
+        "/products/vw-pdp/3f01000c-w01nh-midnight-blue-black/1.jpg",
+        "/products/vw-pdp/3f01000c-w01nh-midnight-blue-black/2.jpg",
+        "/products/vw-pdp/3f01000c-w01nh-midnight-blue-black/3.jpg",
+        "/products/vw-pdp/3f01000c-w01nh-midnight-blue-black/4.jpg",
+        "/products/vw-pdp/3f01000c-w01nh-midnight-blue-black/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw947ad76a/images/3F01000C-W01NH-_MIDNIGHT-BLUE-BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwef4776b0/images/3F01000C-W01NH-_MIDNIGHT-BLUE-BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw245036b6/images/3F01000C-W01NH-_MIDNIGHT-BLUE-BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc07d58ef/images/3F01000C-W01NH-_MIDNIGHT-BLUE-BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwe1c54cf3/images/3F01000C-W01NH-_MIDNIGHT-BLUE-BLACK_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Clothing",
+        "Trousers and Shorts",
+        "Culottes"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "3G01003P-C006F--FLAG",
+      "sku": "3G01003P-C006F--FLAG",
+      "title": "Worlds End Drunken Top",
+      "gbpPrice": 360.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/clothing/sweatshirts-and-t-shirts/worlds-end-drunken-top-flag/3G01003P-C006F--FLAG.html",
+      "leafId": "vw-women-sweats",
+      "leafLabel": "Sweatshirts & T-shirts",
+      "leafLabelKo": "스웻/티셔츠",
+      "collections": [
+        "vivienne-westwood",
+        "vw-women",
+        "vw-women-rtw",
+        "vw-women-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "The Worlds End Drunken top is crafted from soft jersey cotton and features this season’s vibrant multi-coloured print. Cut with long sleeves and an asymmetrical silhouette, it’s detailed with twisted seams at the neckline and cuffs, complete with the ‘Arm and Cutlass’ archive embroidery at the chest. Features multi-coloured patternLong sleeves‘Arm and Cutlass’ embroideryWorlds End woven labelRelaxed, oversized silhouetteCasual fitDropped shouldersAsymmetric design Unisex design Code: 8053195209651",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p><span style=\"font-kerning: none;\">The Worlds End Drunken top is crafted from soft jersey cotton and features this season’s vibrant multi-coloured print. Cut with long sleeves and an asymmetrical silhouette, it’s detailed with twisted seams at the neckline and cuffs, complete with the ‘Arm and Cutlass’ archive embroidery at the chest.</span></p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features multi-coloured pattern</li><li>Long sleeves</li><li>‘Arm and Cutlass’ embroidery</li><li>Worlds End woven label</li><li>Relaxed, oversized silhouette</li><li>Casual fit</li><li>Dropped shoulders</li><li>Asymmetric design&nbsp;</li><li>Unisex design</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8053195209651</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach. Avoid over-exposure to direct sunlight or heat. Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning.If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.&nbsp;</li><li>Avoid over-exposure to direct sunlight or heat.&nbsp;</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label.&nbsp;</li><li>Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "OS"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      },
+      "images": [
+        "/products/vw-pdp/3g01003p-c006f-flag/1.jpg",
+        "/products/vw-pdp/3g01003p-c006f-flag/2.jpg",
+        "/products/vw-pdp/3g01003p-c006f-flag/3.jpg",
+        "/products/vw-pdp/3g01003p-c006f-flag/4.jpg",
+        "/products/vw-pdp/3g01003p-c006f-flag/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw81b304ce/images/3G01003P-C006F-_FLAG_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd0ceafe7/images/3G01003P-C006F-_FLAG_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6f241735/images/3G01003P-C006F-_FLAG_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw32af3c2e/images/3G01003P-C006F-_FLAG_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd7a8827e/images/3G01003P-C006F-_FLAG_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Clothing",
+        "Sweatshirts and T-Shirts",
+        "Worlds End Drunken Top"
+      ],
+      "categoryLabel": ""
     }
   ]
 }

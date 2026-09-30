@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:03:06.326935+00:00",
+  "scrapedAt": "2026-09-30T08:41:52.553133+00:00",
   "brand": "Vivienne Westwood",
   "hub": "https://www.viviennewestwood.com/en-gb/men/shoes/",
   "family": "vw-men-shoes",
@@ -1012,6 +1012,563 @@
         "Shoes",
         "Trainers",
         "Trucker Trainer"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "72050016M-C009T--BLACK",
+      "sku": "72050016M-C009T--BLACK",
+      "title": "Francis Monk Shoe",
+      "gbpPrice": 905.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/shoes/lace-up-shoes/francis-monk-shoe-black/72050016M-C009T--BLACK.html",
+      "leafId": "vw-men-shoes-all",
+      "leafLabel": "View All",
+      "leafLabelKo": "전체",
+      "collections": [
+        "vivienne-westwood-shoes",
+        "vw-shoes",
+        "vw-men-shoes",
+        "vw-men-shoes-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Francis Monk shoes feature a smooth leather upper, contrasted with a grained, cracked strap across the foot. Designed with an elongated toe shape, first seen in the Andreas Kronthaler for Vivienne Westwood Autumn-Winter 2025/26 show, the piece is finished with silver-tone branded buckles, reminiscent of the house’s signature belt buckles. Features a smooth leather upperGrained cracked strapElongated toe shapeMonk-strap silhouetteSilver-tone branded buckleBelt buckle-inspired hardwareLow stacked heel Code: 72050016M-C009T--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Francis Monk shoes feature a smooth leather upper, contrasted with a grained, cracked strap across the foot. Designed with an elongated toe shape, first seen in the Andreas Kronthaler for Vivienne Westwood Autumn-Winter 2025/26 show, the piece is finished with silver-tone branded buckles, reminiscent of the house’s signature belt buckles.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li data-end=\"27\" data-section-id=\"1ti75yb\" data-start=\"0\">Features a smooth leather upper</li><li data-end=\"60\" data-section-id=\"14q4ltc\" data-start=\"28\">Grained cracked strap</li><li data-end=\"82\" data-section-id=\"43b62q\" data-start=\"61\">Elongated toe shape</li><li data-end=\"106\" data-section-id=\"i909cy\" data-start=\"83\">Monk-strap silhouette</li><li data-end=\"135\" data-section-id=\"s61m9a\" data-start=\"107\">Silver-tone branded buckle</li><li data-end=\"167\" data-section-id=\"1tot3os\" data-start=\"136\">Belt buckle-inspired hardware</li><li data-end=\"186\" data-section-id=\"izk06v\" data-start=\"168\">Low stacked heel</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">72050016M-C009T--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "Main material: 100% leather",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Main material: 100% leather</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Our shoes may have natural leather marks and variations, adding to their unique look. Print irregularities can also occur and are part of the product's character. Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading. If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Our shoes may have natural leather marks and variations, adding to their unique look.&nbsp;</li><li>Print irregularities can also occur and are part of the product's character.&nbsp;</li><li>Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading.&nbsp;</li><li>If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/sizechart-mens-shoes.html",
+      "sizeChart": {
+        "id": "sizechart-mens-shoes",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "US/AUS",
+          "UK",
+          "EU"
+        ],
+        "rows": [
+          [
+            "259.68",
+            "6.5",
+            "6",
+            "39"
+          ],
+          [
+            "263.01",
+            "7",
+            "",
+            "39.5"
+          ],
+          [
+            "266.34",
+            "7.5",
+            "6.5",
+            "40"
+          ],
+          [
+            "269.67",
+            "",
+            "",
+            "40.5"
+          ],
+          [
+            "273.00",
+            "8",
+            "7",
+            "41"
+          ],
+          [
+            "276.33",
+            "8.5",
+            "7.5",
+            "41.5"
+          ],
+          [
+            "279,66",
+            "9",
+            "8",
+            "42"
+          ],
+          [
+            "282.99",
+            "9.5",
+            "8.5",
+            "42.5"
+          ],
+          [
+            "286.32",
+            "10",
+            "9",
+            "43"
+          ],
+          [
+            "289.65",
+            "",
+            "9.5",
+            "43.5"
+          ],
+          [
+            "292.98",
+            "10.5",
+            "10",
+            "44"
+          ],
+          [
+            "296.31",
+            "11",
+            "10.5",
+            "44.5"
+          ],
+          [
+            "299.64",
+            "11.5",
+            "11",
+            "45"
+          ],
+          [
+            "302.97",
+            "12",
+            "11.5",
+            "45.5"
+          ],
+          [
+            "306.30",
+            "",
+            "12",
+            "46"
+          ],
+          [
+            "312.96",
+            "13",
+            "12.5",
+            "47"
+          ],
+          [
+            "319.62",
+            "14",
+            "13",
+            "48"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/sizechart-mens-shoes.html"
+      },
+      "images": [
+        "/products/vw-pdp/72050016m-c009t-black/1.jpg",
+        "/products/vw-pdp/72050016m-c009t-black/2.jpg",
+        "/products/vw-pdp/72050016m-c009t-black/3.jpg",
+        "/products/vw-pdp/72050016m-c009t-black/4.jpg",
+        "/products/vw-pdp/72050016m-c009t-black/5.jpg",
+        "/products/vw-pdp/72050016m-c009t-black/6.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd3216f04/images/72050016M-C009T-_BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwadbca26f/images/72050016M-C009T-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5d2cad02/images/72050016M-C009T-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc05f0130/images/72050016M-C009T-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw414d314c/images/72050016M-C009T-_BLACK_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwb5439cc9/images/72050016M-C009T-_BLACK_006_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Shoes",
+        "Lace Up Shoes",
+        "Francis Monk Shoe"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "7102003QM-C007G--BLACK",
+      "sku": "7102003QM-C007G--BLACK",
+      "title": "Animal Pirate Boot",
+      "gbpPrice": 655.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/shoes/boots/animal-pirate-boot-black/7102003QM-C007G--BLACK.html",
+      "leafId": "vw-men-shoes-all",
+      "leafLabel": "View All",
+      "leafLabelKo": "전체",
+      "collections": [
+        "vivienne-westwood-shoes",
+        "vw-shoes",
+        "vw-men-shoes",
+        "vw-men-shoes-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our signature Pirate boots, first revealed in the Autumn-Winter 'Pirate' collection from 1981, were designed to capture the rebellious spirit of 17th and 18th-century pirate tales. This season's Animal Pirate boots pay homage to the original design, featuring a slouchy leather profile with oversized buckles, complete with an animal-inspired toe shape - a signature detail from the house's archives. Features buckled strapsAnimal-toe shapeLow heelTonal stitchingGunmetal hardwareLeather soleWashed finishWider silhouette, this style offers a generous fit Code: 7102003QM-C007G--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our signature Pirate boots, first revealed in the Autumn-Winter 'Pirate' collection from 1981, were designed to capture the rebellious spirit of 17th and 18th-century pirate tales. This season's Animal Pirate boots pay homage to the original design, featuring a slouchy leather profile with oversized buckles, complete with an animal-inspired toe shape - a signature detail from the house's archives.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features buckled straps</li><li>Animal-toe shape</li><li>Low heel</li><li>Tonal stitching</li><li>Gunmetal hardware</li><li>Leather sole</li><li>Washed finish</li><li>Wider silhouette, this style offers a generous fit</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">7102003QM-C007G--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Vegetable-tanned leatherVegetable tanning is a process that doesn't utilise chrome or heavy metals. With a natural look and an elegant polished shine, the beauty of this leather increases more with wear over time.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Vegetable-tanned leather</li><li>Vegetable tanning is a process that doesn't utilise chrome or heavy metals. With a natural look and an elegant polished shine, the beauty of this leather increases more with wear over time.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Our shoes may have natural leather marks and variations, adding to their unique look. Print irregularities can also occur and are part of the product's character. Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading. If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Our shoes may have natural leather marks and variations, adding to their unique look.&nbsp;</li><li>Print irregularities can also occur and are part of the product's character.&nbsp;</li><li>Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading.&nbsp;</li><li>If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/sizechart-mens-shoes.html",
+      "sizeChart": {
+        "id": "sizechart-mens-shoes",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "US/AUS",
+          "UK",
+          "EU"
+        ],
+        "rows": [
+          [
+            "259.68",
+            "6.5",
+            "6",
+            "39"
+          ],
+          [
+            "263.01",
+            "7",
+            "",
+            "39.5"
+          ],
+          [
+            "266.34",
+            "7.5",
+            "6.5",
+            "40"
+          ],
+          [
+            "269.67",
+            "",
+            "",
+            "40.5"
+          ],
+          [
+            "273.00",
+            "8",
+            "7",
+            "41"
+          ],
+          [
+            "276.33",
+            "8.5",
+            "7.5",
+            "41.5"
+          ],
+          [
+            "279,66",
+            "9",
+            "8",
+            "42"
+          ],
+          [
+            "282.99",
+            "9.5",
+            "8.5",
+            "42.5"
+          ],
+          [
+            "286.32",
+            "10",
+            "9",
+            "43"
+          ],
+          [
+            "289.65",
+            "",
+            "9.5",
+            "43.5"
+          ],
+          [
+            "292.98",
+            "10.5",
+            "10",
+            "44"
+          ],
+          [
+            "296.31",
+            "11",
+            "10.5",
+            "44.5"
+          ],
+          [
+            "299.64",
+            "11.5",
+            "11",
+            "45"
+          ],
+          [
+            "302.97",
+            "12",
+            "11.5",
+            "45.5"
+          ],
+          [
+            "306.30",
+            "",
+            "12",
+            "46"
+          ],
+          [
+            "312.96",
+            "13",
+            "12.5",
+            "47"
+          ],
+          [
+            "319.62",
+            "14",
+            "13",
+            "48"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/sizechart-mens-shoes.html"
+      },
+      "images": [
+        "/products/vw-pdp/7102003qm-c007g-black/1.jpg",
+        "/products/vw-pdp/7102003qm-c007g-black/2.jpg",
+        "/products/vw-pdp/7102003qm-c007g-black/3.jpg",
+        "/products/vw-pdp/7102003qm-c007g-black/4.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwe6e466ba/images/7102003QM-C007G-_BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0c69aee1/images/7102003QM-C007G-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw0bf9683c/images/7102003QM-C007G-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw746ad564/images/7102003QM-C007G-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Shoes",
+        "Boots",
+        "Animal Pirate Boot"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "7102003QM-C006W--ELEPHANT",
+      "sku": "7102003QM-C006W--ELEPHANT",
+      "title": "Animal Pirate Boot",
+      "gbpPrice": 655.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/shoes/boots/animal-pirate-boot-elephant/7102003QM-C006W--ELEPHANT.html",
+      "leafId": "vw-men-shoes-all",
+      "leafLabel": "View All",
+      "leafLabelKo": "전체",
+      "collections": [
+        "vivienne-westwood-shoes",
+        "vw-shoes",
+        "vw-men-shoes",
+        "vw-men-shoes-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our signature Pirate boots, first revealed in the Autumn-Winter 'Pirate' collection from 1981, were designed to capture the rebellious spirit of 17th and 18th-century pirate tales. This season's Animal Pirate boots pay homage to the original design, featuring a slouchy leather profile with oversized buckles, complete with an animal-inspired toe shape - a signature detail from the house's archives. Features buckled strapsAnimal-toe shapeLow heelTonal stitchingGunmetal hardwareLeather soleWashed finishWider silhouette, this style offers a generous fit Code: 7102003QM-C006W--ELEPHANT",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our signature Pirate boots, first revealed in the Autumn-Winter 'Pirate' collection from 1981, were designed to capture the rebellious spirit of 17th and 18th-century pirate tales. This season's Animal Pirate boots pay homage to the original design, featuring a slouchy leather profile with oversized buckles, complete with an animal-inspired toe shape - a signature detail from the house's archives.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features buckled straps</li><li>Animal-toe shape</li><li>Low heel</li><li>Tonal stitching</li><li>Gunmetal hardware</li><li>Leather sole</li><li>Washed finish</li><li>Wider silhouette, this style offers a generous fit</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">7102003QM-C006W--ELEPHANT</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Vegetable-tanned leatherVegetable tanning is a process that doesn't utilise chrome or heavy metals. With a natural look and an elegant polished shine, the beauty of this leather increases more with wear over time.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Vegetable-tanned leather</li><li>Vegetable tanning is a process that doesn't utilise chrome or heavy metals. With a natural look and an elegant polished shine, the beauty of this leather increases more with wear over time.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Our shoes may have natural leather marks and variations, adding to their unique look. Print irregularities can also occur and are part of the product's character. Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading. If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Our shoes may have natural leather marks and variations, adding to their unique look.&nbsp;</li><li>Print irregularities can also occur and are part of the product's character.&nbsp;</li><li>Handle fabric and delicate materials with care. Avoid direct heat or sunlight to prevent fading.&nbsp;</li><li>If shoes get wet, gently dry with a cloth, stuff with paper, and let them air dry away from heat sources.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/sizechart-mens-shoes.html",
+      "sizeChart": {
+        "id": "sizechart-mens-shoes",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "US/AUS",
+          "UK",
+          "EU"
+        ],
+        "rows": [
+          [
+            "259.68",
+            "6.5",
+            "6",
+            "39"
+          ],
+          [
+            "263.01",
+            "7",
+            "",
+            "39.5"
+          ],
+          [
+            "266.34",
+            "7.5",
+            "6.5",
+            "40"
+          ],
+          [
+            "269.67",
+            "",
+            "",
+            "40.5"
+          ],
+          [
+            "273.00",
+            "8",
+            "7",
+            "41"
+          ],
+          [
+            "276.33",
+            "8.5",
+            "7.5",
+            "41.5"
+          ],
+          [
+            "279,66",
+            "9",
+            "8",
+            "42"
+          ],
+          [
+            "282.99",
+            "9.5",
+            "8.5",
+            "42.5"
+          ],
+          [
+            "286.32",
+            "10",
+            "9",
+            "43"
+          ],
+          [
+            "289.65",
+            "",
+            "9.5",
+            "43.5"
+          ],
+          [
+            "292.98",
+            "10.5",
+            "10",
+            "44"
+          ],
+          [
+            "296.31",
+            "11",
+            "10.5",
+            "44.5"
+          ],
+          [
+            "299.64",
+            "11.5",
+            "11",
+            "45"
+          ],
+          [
+            "302.97",
+            "12",
+            "11.5",
+            "45.5"
+          ],
+          [
+            "306.30",
+            "",
+            "12",
+            "46"
+          ],
+          [
+            "312.96",
+            "13",
+            "12.5",
+            "47"
+          ],
+          [
+            "319.62",
+            "14",
+            "13",
+            "48"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/sizechart-mens-shoes.html"
+      },
+      "images": [
+        "/products/vw-pdp/7102003qm-c006w-elephant/1.jpg",
+        "/products/vw-pdp/7102003qm-c006w-elephant/2.jpg",
+        "/products/vw-pdp/7102003qm-c006w-elephant/3.jpg",
+        "/products/vw-pdp/7102003qm-c006w-elephant/4.jpg",
+        "/products/vw-pdp/7102003qm-c006w-elephant/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw190253f7/images/7102003QM-C006W-_ELEPHANT_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8901e43d/images/7102003QM-C006W-_ELEPHANT_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd861fe85/images/7102003QM-C006W-_ELEPHANT_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw5882fc97/images/7102003QM-C006W-_ELEPHANT_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc3a742ea/images/7102003QM-C006W-_ELEPHANT_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Shoes",
+        "Boots",
+        "Animal Pirate Boot"
       ],
       "categoryLabel": ""
     }

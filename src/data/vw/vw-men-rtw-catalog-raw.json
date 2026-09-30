@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-09T18:03:26.198066+00:00",
+  "scrapedAt": "2026-09-30T08:38:32.144522+00:00",
   "brand": "Vivienne Westwood",
   "hub": "https://www.viviennewestwood.com/en-gb/men/clothing/",
   "family": "vw-men-rtw",
@@ -3312,7 +3312,8 @@
         "S",
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "images": [
         "/products/vw-pdp/3304000p-l00b3-white/1.jpg",
@@ -3336,11 +3337,181 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "XS": false,
+        "XS": true,
         "S": true,
         "M": false,
         "L": true,
-        "XL": false
+        "XL": false,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-coats-and-jackets.html",
+      "sizeChart": {
+        "id": "size-chart-womens-coats-and-jackets",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "COATS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "33.6CM / 13.2IN",
+            "34.7CM / 13.6IN",
+            "35.8CM / 15.1IN",
+            "36.9CM / 14.5IN",
+            "38CM / 14.9IN",
+            "39.1CM / 15.39IN",
+            "40.2CM / 15.8IN"
+          ],
+          [
+            "가슴 (cm)",
+            "85CM / 33.4IN",
+            "89CM / 35IN",
+            "93CM / 36.6IN",
+            "97CM / 38.1IN",
+            "101CM / 39.7IN",
+            "105CM / 41.3IN",
+            "109CM / 42.9IN"
+          ],
+          [
+            "허리 (cm)",
+            "84CM / 33IN",
+            "88CM / 34.6IN",
+            "92CM / 36.2IN",
+            "96CM / 37.7IN",
+            "100CM / 39.3IN",
+            "104CM / 40.9IN",
+            "108CM / 42.5IN"
+          ],
+          [
+            "총기장 (cm)",
+            "100CM / 39.3IN",
+            "101CM / 39.7IN",
+            "102CM / 40.1IN",
+            "103CM / 40.5IN",
+            "104CM / 40.9IN",
+            "105CM / 41.3IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "JACKETS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "어깨 (cm)",
+            "40CM / 13.22IN",
+            "41CM / 16.14IN",
+            "42CM / 16.53IN",
+            "43CM / 16.92IN",
+            "44CM / 17.32IN",
+            "45CM / 17.71IN",
+            "46CM / 18.11IN"
+          ],
+          [
+            "가슴 (cm)",
+            "84.5CM / 33.26IN",
+            "88.5CM / 34.84IN",
+            "92.5CM / 36.37IN",
+            "96.5CM / 37.99IN",
+            "100.5CM / 39.56IN",
+            "104.5CM / 41.14IN",
+            "108.5CM / 42.71IN"
+          ],
+          [
+            "허리 (cm)",
+            "76CM / 29.92IN",
+            "80CM / 31.49IN",
+            "84CM / 33.07IN",
+            "88CM / 34.64IN",
+            "92CM / 36.22IN",
+            "96CM / 38.79IN",
+            "100CM / 39.37IN"
+          ],
+          [
+            "총기장 (cm)",
+            "99CM / 38.97IN",
+            "103CM / 40.55IN",
+            "107CM / 42.12IN",
+            "111CM / 43.70IN",
+            "115CM / 45.27IN",
+            "119CM / 46.85IN",
+            "123CM / 48.42IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-coats-and-jackets.html"
       }
     },
     {
@@ -3761,8 +3932,8 @@
       ],
       "categoryLabel": "",
       "sizeStock": {
-        "XS": true,
-        "S": true,
+        "XS": false,
+        "S": false,
         "M": true,
         "L": false,
         "XL": true
@@ -10353,8 +10524,225 @@
         "S": true,
         "M": true,
         "L": true,
-        "XL": true,
+        "XL": false,
         "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-womens-trousers-shorts.html",
+      "sizeChart": {
+        "id": "size-guide-womens-trousers-shorts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "",
+            ""
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "",
+            ""
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "",
+            ""
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "",
+            ""
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "",
+            ""
+          ],
+          [
+            "TROUSERS",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "",
+            ""
+          ],
+          [
+            "허리 (cm)",
+            "64",
+            "68",
+            "72",
+            "76",
+            "80",
+            "84",
+            "88",
+            "92",
+            "",
+            ""
+          ],
+          [
+            "힙 (cm)",
+            "92",
+            "96",
+            "100",
+            "104",
+            "108",
+            "112",
+            "116",
+            "120",
+            "",
+            ""
+          ],
+          [
+            "Inner Leg Length",
+            "86.5",
+            "87.5",
+            "88.5",
+            "89.5",
+            "90.5",
+            "91.5",
+            "92.5",
+            "93.5",
+            "",
+            ""
+          ],
+          [
+            "DENIM XL-3XL",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL",
+            "",
+            ""
+          ],
+          [
+            "허리 (cm)",
+            "70",
+            "76",
+            "82",
+            "88",
+            "92",
+            "96",
+            "100",
+            "104",
+            "",
+            ""
+          ],
+          [
+            "Inner Leg Length",
+            "80.5",
+            "81.5",
+            "82.5",
+            "83.5",
+            "84.5",
+            "85.5",
+            "86.5",
+            "87.5",
+            "",
+            ""
+          ],
+          [
+            "DENIM 23-32",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+          ],
+          [
+            "허리 (cm)",
+            "64",
+            "66",
+            "68",
+            "70.5",
+            "73",
+            "76",
+            "78.5",
+            "81",
+            "84",
+            "86.5"
+          ],
+          [
+            "Inner Leg Length",
+            "87",
+            "87",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-womens-trousers-shorts.html"
       }
     },
     {
@@ -13356,6 +13744,125 @@
         "L": false,
         "XL": false,
         "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
       }
     },
     {
@@ -15425,6 +15932,971 @@
         ],
         "sourceUrl": "https://www.viviennewestwood.com/en-gb/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
       }
+    },
+    {
+      "id": "27010012-Y0037--BLACK",
+      "sku": "27010012-Y0037--BLACK",
+      "title": "Alex Round Neck Sweater",
+      "gbpPrice": 530.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/knitwear-and-sweatshirts/alex-round-neck-sweater-black/27010012-Y0037--BLACK.html",
+      "leafId": "vw-men-knitwear",
+      "leafLabel": "Knitwear",
+      "leafLabelKo": "니트웨어",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Alex Round Neck sweater returns this season in a soft wool-blend fabric, complemented by intricately ribbed trim details and cuffed finishes on the long-sleeve design. The piece is adorned with our signature orb embroidery, finished in a multi-coloured thread, embodying the house's ethos of linking to the past and culture, to inform ideas. Features a relaxed fit, take your normal sizeBoxy silhouetteRound necklineStraight hemlineExtra-fine knitLong sleevesModel is 6’0/183cm and is wearing a size MMade in Italy Code: 27010012-Y0037--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Alex Round Neck sweater returns this season in a soft wool-blend fabric, complemented by intricately ribbed trim details and cuffed finishes on the long-sleeve design. The piece is adorned with our signature orb embroidery, finished in a multi-coloured thread, embodying the house's ethos of linking to the past and culture, to inform ideas. &nbsp;</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li><span data-teams=\"true\"><span dir=\"ltr\">Features a relaxed fit, take your normal size</span></span></li><li>Boxy silhouette</li><li>Round neckline</li><li>Straight hemline</li><li>Extra-fine knit</li><li>Long sleeves</li><li>Model is 6’0/183cm and is wearing a size M</li><li>Made in Italy</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">27010012-Y0037--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "90% Wool 10% Cashmere",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>90% Wool&nbsp;</li><li>10% Cashmere</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeStock": {
+        "S": false,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-sweatshirts.html",
+      "sizeChart": {
+        "id": "size-guide-mens-sweatshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "SWEATSHIRTS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "가슴 (cm)",
+            "108",
+            "112",
+            "116",
+            "120",
+            "124",
+            "128",
+            "132",
+            "136"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "92",
+            "96",
+            "100",
+            "104",
+            "108",
+            "112",
+            "116"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-sweatshirts.html"
+      },
+      "images": [
+        "/products/vw-pdp/27010012-y0037-black/1.jpg",
+        "/products/vw-pdp/27010012-y0037-black/2.jpg",
+        "/products/vw-pdp/27010012-y0037-black/3.jpg",
+        "/products/vw-pdp/27010012-y0037-black/4.jpg",
+        "/products/vw-pdp/27010012-y0037-black/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw3f026c22/images/27010012-Y0037-_BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8b0fbe43/images/27010012-Y0037-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwdf217127/images/27010012-Y0037-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw59b726f0/images/27010012-Y0037-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw7c595bca/images/27010012-Y0037-_BLACK_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "Knitwear and Sweatshirts",
+        "Alex Round Neck Sweater"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "2801000N-W01PA--GREY",
+      "sku": "2801000N-W01PA--GREY",
+      "title": "Broad Denim Jacket",
+      "gbpPrice": 1105.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/coats-and-jackets/broad-denim-jacket-grey/2801000N-W01PA--GREY.html",
+      "leafId": "vw-men-coats",
+      "leafLabel": "Coats & Jackets",
+      "leafLabelKo": "코트/재킷",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Broad Denim jacket draws inspiration from a Vivienne Westwood Autumn-Winter 2008 Gold Label shirt, featuring oversized shoulder pockets that accentuate the batwing silhouette. Offered in this season's washed cord denim, the piece features orb-embossed button fastenings through the front, while the back is finished with the new 'Westwood' leather patch. Features long sleevesPointed collarOversized shoulder pocketsBatwing silhouetteOrb-embossed button details Westwood leather patchTonal topstitchingWashed finishMade in Italy Code: 2801000N-W01PA--GREY",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Broad Denim jacket draws inspiration from a Vivienne Westwood Autumn-Winter 2008 Gold Label shirt, featuring oversized shoulder pockets that accentuate the batwing silhouette. Offered in this season's washed cord denim, the piece features orb-embossed button fastenings through the front, while the back is finished with the new 'Westwood' leather patch.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features long sleeves</li><li>Pointed collar</li><li>Oversized shoulder pockets</li><li>Batwing silhouette</li><li>Orb-embossed button details&nbsp;</li><li>Westwood leather patch</li><li>Tonal topstitching</li><li>Washed finish</li><li>Made in Italy</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">2801000N-W01PA--GREY</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "78% Cotton 20% Modal 2% Elastane",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>78% Cotton&nbsp;</li><li>20% Modal&nbsp;</li><li>2% Elastane</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-coats-and-jackets.html",
+      "sizeChart": {
+        "id": "size-guide-mens-coats-and-jackets",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "COATS",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "어깨 (cm)",
+            "96.4",
+            "97.6",
+            "98.8",
+            "100",
+            "101.2",
+            "102.4",
+            "103.6",
+            "104.8"
+          ],
+          [
+            "가슴 (cm)",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122",
+            "126"
+          ],
+          [
+            "허리 (cm)",
+            "96",
+            "100",
+            "104",
+            "108",
+            "112",
+            "116",
+            "120",
+            "124"
+          ],
+          [
+            "총기장 (cm)",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106"
+          ],
+          [
+            "JACKETS",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "어깨 (cm)",
+            "89.4",
+            "90.6",
+            "91.8",
+            "93",
+            "94.2",
+            "95.4",
+            "96.8",
+            "97.8"
+          ],
+          [
+            "가슴 (cm)",
+            "91",
+            "95",
+            "99",
+            "103",
+            "107",
+            "111",
+            "115",
+            "119"
+          ],
+          [
+            "허리 (cm)",
+            "79",
+            "83",
+            "87",
+            "91",
+            "95",
+            "99",
+            "103",
+            "107"
+          ],
+          [
+            "밑단 (cm)",
+            "87",
+            "91",
+            "95",
+            "99",
+            "103",
+            "107",
+            "111",
+            "115"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-coats-and-jackets.html"
+      },
+      "images": [
+        "/products/vw-pdp/2801000n-w01pa-grey/1.jpg",
+        "/products/vw-pdp/2801000n-w01pa-grey/2.jpg",
+        "/products/vw-pdp/2801000n-w01pa-grey/3.jpg",
+        "/products/vw-pdp/2801000n-w01pa-grey/4.jpg",
+        "/products/vw-pdp/2801000n-w01pa-grey/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwecf53970/images/2801000N-W01PA-_GREY_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw7c40f556/images/2801000N-W01PA-_GREY_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwddcd1684/images/2801000N-W01PA-_GREY_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8829ba18/images/2801000N-W01PA-_GREY_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9871ca7a/images/2801000N-W01PA-_GREY_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "Coats and Jackets",
+        "Broad Denim Jacket"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "3G01006E-J00CN--WHITE",
+      "sku": "3G01006E-J00CN--WHITE",
+      "title": "Backstage T-shirt",
+      "gbpPrice": 265.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/clothing/sweatshirts-and-t-shirts/backstage-t-shirt-white/3G01006E-J00CN--WHITE.html",
+      "leafId": "vw-men-tees",
+      "leafLabel": "T-shirts & Polos",
+      "leafLabelKo": "티셔츠/폴로",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art. Features side slits Tonal stitchingRolled hemAsymmetric cap sleevesPrinted back Cut-out draped neckline detailCap sleevesMade in Italy Code: 8053195693344",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Backstage t-shirt is crafted from two rectangular cotton panels with visible seam detailing, complete with a rolled hemline and asymmetric cap sleeves, recalling the house’s archival ‘Pillow Case’ cut top. Finished with a twisted draped detail at the neckline, the design is completed with a printed cherub motif at the back, referencing themes of love and innocence, as depicted in Renaissance art.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features side slits&nbsp;</li><li>Tonal stitching</li><li>Rolled hem</li><li>Asymmetric cap sleeves</li><li>Printed back&nbsp;</li><li>Cut-out draped neckline detail</li><li>Cap sleeves</li><li>Made in Italy&nbsp;</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8053195693344</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash each garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "OS"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html",
+      "sizeChart": {
+        "id": "size-chart-womens-sweatshirts-tshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "US",
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "FR",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
+          [
+            "IT / EU",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          [
+            "AU",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          [
+            "가슴 (cm)",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 34IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN"
+          ],
+          [
+            "밑단 (cm)",
+            "78CM / 30.70IN",
+            "82CM / 32.28IN",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38.58IN",
+            "102CM / 40.15IN"
+          ],
+          [
+            "어깨 (cm)",
+            "78.5CM / 30.90IN",
+            "80CM / 31.49IN",
+            "81.5CM / 32.08IN",
+            "83CM / 32.67IN",
+            "84.5CM / 33.36IN",
+            "86CM / 33.85IN",
+            "87.5CM / 34.44IN"
+          ],
+          [
+            "가슴 (cm)",
+            "86CM / 33.85IN",
+            "90CM / 35.43IN",
+            "94CM / 37IN",
+            "98CM / 38IN",
+            "102CM / 40.1IN",
+            "106CM / 41.7IN",
+            "110CM / 43.30IN"
+          ],
+          [
+            "밑단 (cm)",
+            "85CM / 33.46IN",
+            "89CM / 35.03IN",
+            "93CM / 36.61IN",
+            "97CM / 38.18IN",
+            "101CM / 39.76IN",
+            "105CM / 41.33IN",
+            "109CM / 42.91IN"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-chart-womens-sweatshirts-tshirts.html"
+      },
+      "images": [
+        "/products/vw-pdp/3g01006e-j00cn-white/1.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/2.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/3.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/4.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/5.jpg",
+        "/products/vw-pdp/3g01006e-j00cn-white/6.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf16e1ff3/images/3G01006E-J00CN-_WHITE_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw7d25c444/images/3G01006E-J00CN-_WHITE_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8c14af6b/images/3G01006E-J00CN-_WHITE_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw8f3cee48/images/3G01006E-J00CN-_WHITE_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw3dc1f78a/images/3G01006E-J00CN-_WHITE_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw002987cc/images/3G01006E-J00CN-_WHITE_006_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Clothing",
+        "Sweatshirts and T-Shirts",
+        "Backstage T-shirt"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "2H01000Y-J00AU--BLACK",
+      "sku": "2H01000Y-J00AU--BLACK",
+      "title": "Classic Polo",
+      "gbpPrice": 280.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/t-shirts-and-polos/classic-polo-black/2H01000Y-J00AU--BLACK.html",
+      "leafId": "vw-men-tees",
+      "leafLabel": "T-shirts & Polos",
+      "leafLabelKo": "티셔츠/폴로",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Classic polo is reimagined this season in a soft cotton finish, complete with a signature striped detail at the collar. Designed with short sleeves that fall to ribbed cuffs, the piece is finished with a multi-coloured embroidered orb motif at the chest, symbolising Vivienne’s vision of launching tradition into the future. Features a classic polo collarShort-sleeve silhouetteTwo-button placketEmbroidered orb motifSoft cotton piqué finishStraight hemSide-split detailingRegular fitWoven internal branded labelModel is 6’0/183cm and is wearing a size M Code: 2H01000Y-J00AU--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Classic polo is reimagined this season in a soft cotton finish, complete with a signature striped detail at the collar. Designed with short sleeves that fall to ribbed cuffs, the piece is finished with a multi-coloured embroidered orb motif at the chest, symbolising Vivienne’s vision of launching tradition into the future.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a classic polo collar</li><li>Short-sleeve silhouette</li><li>Two-button placket</li><li>Embroidered orb motif</li><li>Soft cotton piqué finish</li><li>Straight hem</li><li>Side-split detailing</li><li>Regular fit</li><li>Woven internal branded label</li><li>Model is 6’0/183cm and is wearing a size M</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">2H01000Y-J00AU--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": false,
+        "L": false,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      },
+      "images": [
+        "/products/vw-pdp/2h01000y-j00au-black/1.jpg",
+        "/products/vw-pdp/2h01000y-j00au-black/2.jpg",
+        "/products/vw-pdp/2h01000y-j00au-black/3.jpg",
+        "/products/vw-pdp/2h01000y-j00au-black/4.jpg",
+        "/products/vw-pdp/2h01000y-j00au-black/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf46ee340/images/2H01000Y-J00AU-_BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw660976e4/images/2H01000Y-J00AU-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd9f1b402/images/2H01000Y-J00AU-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw11610678/images/2H01000Y-J00AU-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwd2baae6c/images/2H01000Y-J00AU-_BLACK_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "T-Shirts and Polos",
+        "Classic Polo"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "2H01000Y-J00AU--NAVY",
+      "sku": "2H01000Y-J00AU--NAVY",
+      "title": "Classic Polo",
+      "gbpPrice": 280.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/t-shirts-and-polos/classic-polo-navy/2H01000Y-J00AU--NAVY.html",
+      "leafId": "vw-men-tees",
+      "leafLabel": "T-shirts & Polos",
+      "leafLabelKo": "티셔츠/폴로",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Classic polo is reimagined this season in a soft cotton finish, complete with a signature striped detail at the collar. Designed with short sleeves that fall to ribbed cuffs, the piece is finished with a multi-coloured embroidered orb motif at the chest, symbolising Vivienne’s vision of launching tradition into the future. Features a classic polo collarShort-sleeve silhouetteTwo-button placketEmbroidered orb motifSoft cotton piqué finishStraight hemSide-split detailingRegular fitWoven internal branded labelModel is 6’0/183cm and is wearing a size M Code: 2H01000Y-J00AU--NAVY",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Classic polo is reimagined this season in a soft cotton finish, complete with a signature striped detail at the collar. Designed with short sleeves that fall to ribbed cuffs, the piece is finished with a multi-coloured embroidered orb motif at the chest, symbolising Vivienne’s vision of launching tradition into the future.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a classic polo collar</li><li>Short-sleeve silhouette</li><li>Two-button placket</li><li>Embroidered orb motif</li><li>Soft cotton piqué finish</li><li>Straight hem</li><li>Side-split detailing</li><li>Regular fit</li><li>Woven internal branded label</li><li>Model is 6’0/183cm and is wearing a size M</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">2H01000Y-J00AU--NAVY</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "sizeStock": {
+        "XS": false,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      },
+      "images": [
+        "/products/vw-pdp/2h01000y-j00au-navy/1.jpg",
+        "/products/vw-pdp/2h01000y-j00au-navy/2.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw881288c1/images/2H01000Y-J00AU-_NAVY_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw1081de75/images/2H01000Y-J00AU-_NAVY_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "T-Shirts and Polos",
+        "Classic Polo"
+      ],
+      "categoryLabel": ""
     }
   ]
 }
