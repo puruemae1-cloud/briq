@@ -59,6 +59,9 @@ jobs:
       # run-di-*.sh default to the macOS cache path when this is unset.
       PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
     steps:
+      - name: Record job start
+        run: echo "JOB_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+
       - name: Free runner disk space
         run: |
           # Full-history checkout + restored PDP images overflow the default
@@ -112,8 +115,11 @@ jobs:
         id: sync
         env:
           PAUSE_SEC: "30"
-          # No new category starts after this; the longest stage runs ~2h.
-          DI_BUDGET_MIN: "180"
+          # Minutes since job start (the image restore alone can take an hour):
+          # no new category starts after the budget, and a running one is
+          # stopped at the hard limit so the commit still lands before 6h.
+          DI_BUDGET_MIN: "240"
+          DI_HARD_MIN: "335"
           DI_RESUME: ${{ inputs.resume == '1' && '1' || '0' }}
         run: |
           chmod +x scripts/run-di-weekly-sync.sh

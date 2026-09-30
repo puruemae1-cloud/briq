@@ -15,10 +15,36 @@ exec > >(tee -a "$LOG") 2>&1
 CI_RUN=0
 [[ "${GITHUB_ACTIONS:-}" == "true" ]] && CI_RUN=1
 PROGRESS=src/data/di/weekly-progress.json
+# Both limits count from JOB_STARTED (set by the workflow) so restore time is
+# included: no unit starts after DI_BUDGET_MIN, and a running unit is stopped
+# at DI_HARD_MIN so the job still gets to commit before the runner cap.
+STARTED="${JOB_STARTED:-$(date +%s)}"
 BUDGET_SEC=$(( ${DI_BUDGET_MIN:-0} * 60 ))
-STARTED=$(date +%s)
+HARD_SEC=$(( ${DI_HARD_MIN:-0} * 60 ))
 FAILED=""
 MORE=0
+
+if [[ "$CI_RUN" == "1" ]]; then
+  # These stages log only to their own files; mirror them into the job log.
+  STAGE_LOGS=(/tmp/di-bags-pipeline.log /tmp/di-bags-deploy.log /tmp/di-acc-bag-pipeline.log
+    /tmp/di-women-accessories-pipeline.log /tmp/di-women-jewelry-pipeline.log
+    /tmp/di-women-shoes-pipeline.log /tmp/di-women-slg-pipeline.log)
+  touch "${STAGE_LOGS[@]}"
+  tail -n0 -F "${STAGE_LOGS[@]}" 2>/dev/null &
+  TAIL_PID=$!
+  trap 'kill "$TAIL_PID" 2>/dev/null || true' EXIT
+fi
+
+run_unit() {
+  local left
+  if (( HARD_SEC > 0 )) && command -v timeout >/dev/null; then
+    left=$(( STARTED + HARD_SEC - $(date +%s) ))
+    (( left > 60 )) || left=60
+    timeout --kill-after=60 "$left" "$@"
+  else
+    "$@"
+  fi
+}
 
 if [[ "${DI_RESUME:-}" != "1" || ! -f "$PROGRESS" ]]; then
   echo '{"done": [], "failed": []}' > "$PROGRESS"
@@ -58,11 +84,17 @@ run() {
     return 0
   fi
   echo "=== $name $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
-  if "$@"; then
+  local rc=0
+  run_unit "$@" || rc=$?
+  if (( rc == 0 )); then
     progress_add "$name" done
   else
+    if (( rc == 124 || rc == 137 )); then
+      echo "!!! $name hit the hard time limit — remaining units continue in a new run"
+      MORE=1
+    fi
     # Stage scripts log to /tmp/di-*.log only; surface them in CI.
-    echo "!!! $name failed — recent /tmp/di-*.log output:"
+    echo "!!! $name failed (exit $rc) — recent /tmp/di-*.log output:"
     tail -n 60 /tmp/di-*.log 2>/dev/null || true
     [[ "$CI_RUN" == "1" ]] || return 1
     # Earlier units are already committed; drop this unit's partial output

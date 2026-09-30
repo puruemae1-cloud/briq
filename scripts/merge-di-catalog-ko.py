@@ -8,6 +8,7 @@ Preserves existing good Korean rows. Use after each scrape stage.
 """
 from __future__ import annotations
 
+import functools
 import json
 import re
 import sys
@@ -715,6 +716,7 @@ def fetch_ko_one(code: str) -> dict | None:
     return ko_hit or merch_hit
 
 
+@functools.lru_cache(maxsize=None)
 def translate(text: str) -> str:
     s = re.sub(r"\s+", " ", (text or "").strip())
     if not s:
@@ -726,9 +728,13 @@ def translate(text: str) -> str:
 
         tr = GoogleTranslator(source="en", target="ko")
     except Exception:
-        from ko_qa import gtx_translate
+        from ko_qa import gtx_translate, translation_disabled
 
         for attempt in range(4):
+            # Once the shared breaker trips every call fails fast; retrying
+            # with sleeps per colour label stalled the weekly sync for hours.
+            if translation_disabled():
+                break
             try:
                 ko = gtx_translate(s)
                 if is_good_korean(ko):
@@ -881,8 +887,10 @@ def translated_color_label(label: str | None) -> str:
         return "기본"
     if has_hangul(s):
         return s
+    hits = translate.cache_info().hits
     ko = translate(s) or s
-    time.sleep(0.3)
+    if translate.cache_info().hits == hits:
+        time.sleep(0.3)
     return ko.strip() or s
 
 

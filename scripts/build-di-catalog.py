@@ -19,7 +19,7 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from di_common import gbp_to_krw, slugify  # noqa: E402
-from ko_qa import gtx_translate, is_good_korean  # noqa: E402
+from ko_qa import gtx_translate, is_good_korean, translation_disabled  # noqa: E402
 
 RAW = ROOT / "src/data/di/di-tableware-catalog-raw.json"
 CACHE = ROOT / "src/data/di/di-translate-cache.json"
@@ -71,6 +71,9 @@ def t(text: str | None, cache: dict[str, str]) -> str:
         return cache[s]
     last_err: Exception | None = None
     for attempt in range(4):
+        if translation_disabled():
+            last_err = RuntimeError("translate-disabled")
+            break
         try:
             ko = gtx_translate(s)
             ko = apply_phrases(ko)
