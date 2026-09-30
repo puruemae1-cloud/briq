@@ -47,21 +47,25 @@ EOF
 )"
 
 pull_rebase() {
-  if ! git pull --rebase --autostash origin main; then
+  # Every brand sync bumps product-images-manifest.json (a cache-bust token), so
+  # concurrent syncs conflict there; keep this sync's side of any overlap
+  # (during a rebase "theirs" is the commit being replayed).
+  if ! git pull --rebase --autostash -X theirs origin main; then
     git rebase --abort || true
     echo "Rebase onto origin/main failed." >&2
     return 1
   fi
 }
 
-for attempt in 1 2 3; do
-  pull_rebase || continue
+for attempt in 1 2 3 4 5; do
+  pull_rebase || { sleep $((attempt * 15)); continue; }
   if git push origin HEAD:main; then
     echo "Pushed catalogue changes to main."
     exit 0
   fi
   echo "Push attempt ${attempt} failed — rebasing and retrying…" >&2
+  sleep $((attempt * 15))
 done
 
-echo "Push failed after 3 attempts." >&2
+echo "Push failed after 5 attempts." >&2
 exit 1
