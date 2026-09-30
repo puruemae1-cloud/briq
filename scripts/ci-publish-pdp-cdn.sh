@@ -78,8 +78,13 @@ if [[ ${#BRANDS[@]} -gt 0 ]]; then
     --write-missing-dirs /tmp/ci-tag-file-gaps.txt >/dev/null || true
   if [[ -s /tmp/ci-tag-file-gaps.txt ]]; then
     echo "republishing $(wc -l < /tmp/ci-tag-file-gaps.txt | tr -d ' ') folder(s) with files missing on the tag"
-    python3 scripts/push-product-images-tag.py --dirs "${DIRS[@]}" --merge \
-      --only-file /tmp/ci-tag-file-gaps.txt --skip-purge --skip-whiten || true
+    # One push per batch: a whole-brand pack (GBs) fails on GitHub's side.
+    rm -f /tmp/ci-tag-gap-batch.*
+    split -l "${GAP_BATCH:-40}" /tmp/ci-tag-file-gaps.txt /tmp/ci-tag-gap-batch.
+    for batch in /tmp/ci-tag-gap-batch.*; do
+      python3 scripts/push-product-images-tag.py --dirs "${DIRS[@]}" --merge \
+        --only-file "$batch" --skip-purge --skip-whiten || true
+    done
   fi
   python3 scripts/verify-product-images.py "${args[@]}" --remote --skip-local --all-images
 fi

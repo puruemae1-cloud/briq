@@ -316,8 +316,8 @@ def push_only_ids_fast_import(
     """
     import time
 
-    # Collect (repo_path, file bytes)
-    files: list[tuple[str, bytes]] = []
+    # Collect (repo_path, file on disk)
+    files: list[tuple[str, Path]] = []
     brands: list[str] = []
     for name, src in src_roots:
         if name == "banners":
@@ -334,7 +334,7 @@ def push_only_ids_fast_import(
                 if f.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
                     continue
                 rel = f"public/products/{name}/{sku}/{f.relative_to(sku_dir).as_posix()}"
-                files.append((rel, f.read_bytes()))
+                files.append((rel, f))
 
     if not files:
         print("No image changes on product-images tag.", flush=True)
@@ -378,7 +378,7 @@ def push_only_ids_fast_import(
 
 
 def fast_import_onto(
-    parent_rev: str, files: list[tuple[str, bytes]], brand_label: str, ts: int
+    parent_rev: str, files: list[tuple[str, Path]], brand_label: str, ts: int
 ) -> int:
     """Commit ``files`` onto ``parent_rev`` as a new snapshot of the local tag."""
     msg = f"chore: sync PDP images ({brand_label})\n"
@@ -387,48 +387,60 @@ def fast_import_onto(
         flush=True,
     )
 
-    chunks: list[bytes] = []
-
-    def emit(s: str) -> None:
-        chunks.append(s.encode("utf-8"))
-
-    emit(f"commit refs/tags/{TAG}\n")
-    emit(f"committer briq-bot <briq-bot@users.noreply.github.com> {ts} +0000\n")
-    msg_b = msg.encode("utf-8")
-    emit(f"data {len(msg_b)}\n")
-    chunks.append(msg_b)
-    emit(f"from {parent_rev}\n")
-    # Replace each SKU folder wholesale so removed frames disappear.
-    seen_sku_dirs: set[str] = set()
-    for rel, _data in files:
-        # public/products/<brand>/<sku>/...
-        parts = rel.split("/")
-        if len(parts) >= 4:
-            sku_prefix = "/".join(parts[:4])
-            if sku_prefix not in seen_sku_dirs:
-                seen_sku_dirs.add(sku_prefix)
-                emit(f"D {sku_prefix}\n")
-    for rel, data in files:
-        emit(f"M 100644 inline {rel}\n")
-        emit(f"data {len(data)}\n")
-        chunks.append(data)
-        emit("\n")
-    emit("done\n")
-
-    proc = subprocess.run(
-        ["git", "fast-import", "--quiet", "--date-format=raw"],
-        cwd=str(ROOT),
-        input=b"".join(chunks),
-        capture_output=True,
-        timeout=600,
-    )
-    if proc.returncode != 0:
-        print(
-            f"ERROR: fast-import failed ({proc.returncode}): "
-            f"{proc.stderr.decode('utf-8', errors='replace')[:800]}",
-            flush=True,
+    # Stream from disk: whole-brand republishes are GBs and buffering them in
+    # memory killed CI runners.
+    with tempfile.TemporaryFile() as err:
+        proc = subprocess.Popen(
+            ["git", "fast-import", "--quiet", "--date-format=raw"],
+            cwd=str(ROOT),
+            stdin=subprocess.PIPE,
+            stderr=err,
         )
-        return 1
+        assert proc.stdin is not None
+        out = proc.stdin
+
+        def emit(s: str) -> None:
+            out.write(s.encode("utf-8"))
+
+        try:
+            emit(f"commit refs/tags/{TAG}\n")
+            emit(f"committer briq-bot <briq-bot@users.noreply.github.com> {ts} +0000\n")
+            msg_b = msg.encode("utf-8")
+            emit(f"data {len(msg_b)}\n")
+            out.write(msg_b)
+            emit(f"from {parent_rev}\n")
+            # Replace each SKU folder wholesale so removed frames disappear.
+            seen_sku_dirs: set[str] = set()
+            for rel, _path in files:
+                # public/products/<brand>/<sku>/...
+                parts = rel.split("/")
+                if len(parts) >= 4:
+                    sku_prefix = "/".join(parts[:4])
+                    if sku_prefix not in seen_sku_dirs:
+                        seen_sku_dirs.add(sku_prefix)
+                        emit(f"D {sku_prefix}\n")
+            for rel, path in files:
+                data = path.read_bytes()
+                emit(f"M 100644 inline {rel}\n")
+                emit(f"data {len(data)}\n")
+                out.write(data)
+                emit("\n")
+            emit("done\n")
+            out.close()
+            rc = proc.wait(timeout=1800)
+        except (BrokenPipeError, subprocess.TimeoutExpired) as e:
+            proc.kill()
+            proc.wait()
+            rc = proc.returncode or 1
+            print(f"ERROR: fast-import aborted: {e}", flush=True)
+        if rc != 0:
+            err.seek(0)
+            print(
+                f"ERROR: fast-import failed ({rc}): "
+                f"{err.read().decode('utf-8', errors='replace')[:800]}",
+                flush=True,
+            )
+            return 1
 
     new_rev = squash_tag(f"refs/tags/{TAG}")
     print(f"local tag {TAG} → {new_rev[:12]}", flush=True)
