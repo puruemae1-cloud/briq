@@ -2,14 +2,14 @@
   "family": "al-men-shoes",
   "category": "shoes",
   "hub": "men-shoes",
-  "scrapedAt": "2026-09-17T08:49:20.367737+00:00",
+  "scrapedAt": "2026-09-29T21:24:23.060030+00:00",
   "leaves": [
     "al-men-shoes-all",
     "al-men-boots",
     "al-men-casual-shoes",
     "al-men-trainers"
   ],
-  "officialUnion": 37,
+  "officialUnion": 41,
   "products": [
     {
       "id": "M044FF-4874",
@@ -7067,6 +7067,771 @@
         "/products/al-pdp/m058fb-9214/4.jpg",
         "/products/al-pdp/m058fb-9214/5.jpg",
         "/products/al-pdp/m058fb-9214/6.jpg"
+      ]
+    },
+    {
+      "id": "M045FF-4874",
+      "sku": "M045FF-4874",
+      "collections": [
+        "all-saints-shoes",
+        "al-men-shoes",
+        "al-men-shoes-all",
+        "al-men-trainers"
+      ],
+      "leafId": "al-men-trainers",
+      "cgid": "21771",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M045FF-4874",
+      "name": "Robin Nylon And Suede Runner Trainers",
+      "brand": "AllSaints",
+      "link": "/menswear/robin-nylon-and-suede-runner-trainers/M045FF-4874.html",
+      "gbpPrice": 149.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Zip closure",
+        "Round toe",
+        "Heel height: 3cm",
+        "Platform height: 1.5cm"
+      ],
+      "longDescription": [
+        "Upper: 80% cow leather, 20% polyester",
+        "Lining: 100% polyester",
+        "Strap: 100% EVA",
+        "Wipe clean only"
+      ],
+      "description": "Runner trainsers made a cow leather, the Runner trainers take inspiration from classic athletic silhouettes. ontrast stripes and a geometric sole.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-shoes-2",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_subtitle {\n        margin-top: 16px;\n        font-size: 14px;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n        cursor: pointer;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n        margin-top: 24px;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 728px; /* Adjusted to 140px + (7 * 84px) to preserve dot pattern alignment */\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, \n    .sizeGuide_container td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n</style>\n\n<div class=\"sizeGuide_container\">\n    <div class=\"sizeGuide_header\">\n        <h1 class=\"sizeGuide_title\">Size guide</h1>\n        <button class=\"sizeGuide_closeBtn\" aria-label=\"Close size guide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n              <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n            </svg>\n        </button>\n    </div>\n\n    <p class=\"sizeGuide_subtitle sizeGuide_text-body-bold\">Size Conversion: Shoes</p>\n\n    <div class=\"sizeGuide_tableContainer\">\n        <div class=\"table-scroll\">\n            <table>\n                <colgroup>\n                    <col style=\"width: 140px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                </colgroup>\n                <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">UK</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">6</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">7</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">8</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">9</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">10</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">11</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">12</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">EU</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">42</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">US</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">13</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">AUSTRALIA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">CHINA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">47.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JAPAN</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">25</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">26</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">27</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">28</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">29</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">30</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">31</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">KOREA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">250</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">260</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">270</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">280</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">290</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">300</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">310</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "rows": [
+          [
+            "EU",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ],
+          [
+            "US",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          [
+            "AUSTRALIA",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          [
+            "CHINA",
+            "40",
+            "41.5",
+            "43",
+            "44",
+            "45.5",
+            "46.5",
+            "47.5"
+          ],
+          [
+            "JAPAN",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          [
+            "KOREA",
+            "250",
+            "260",
+            "270",
+            "280",
+            "290",
+            "300",
+            "310"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Chalk White/white",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4874.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320987296",
+          "value": "UK 6/US 7/EU 40",
+          "displayValue": "6",
+          "inStock": false,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987302",
+          "value": "UK 7/US 8/EU 41",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987319",
+          "value": "UK 8/US 9/EU 42",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987326",
+          "value": "UK 9/US 10/EU 43",
+          "displayValue": "9",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987333",
+          "value": "UK 10/US 11/EU 44",
+          "displayValue": "10",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987340",
+          "value": "UK 11/US 12/EU 45",
+          "displayValue": "11",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987357",
+          "value": "UK 12/US 13/EU 46",
+          "displayValue": "12",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m045ff-4874/1.jpg",
+        "/products/al-pdp/m045ff-4874/2.jpg",
+        "/products/al-pdp/m045ff-4874/3.jpg",
+        "/products/al-pdp/m045ff-4874/4.jpg",
+        "/products/al-pdp/m045ff-4874/5.jpg",
+        "/products/al-pdp/m045ff-4874/6.jpg"
+      ]
+    },
+    {
+      "id": "M045FF-4411",
+      "sku": "M045FF-4411",
+      "collections": [
+        "all-saints-shoes",
+        "al-men-shoes",
+        "al-men-shoes-all",
+        "al-men-trainers"
+      ],
+      "leafId": "al-men-trainers",
+      "cgid": "21771",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M045FF-4411",
+      "name": "Robin Nylon And Suede Runner Trainers",
+      "brand": "AllSaints",
+      "link": "/menswear/robin-nylon-and-suede-runner-trainers/M045FF-4411.html",
+      "gbpPrice": 149.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Zip closure",
+        "Round toe",
+        "Heel height: 3cm",
+        "Platform height: 1.5cm"
+      ],
+      "longDescription": [
+        "Upper: 80% cow leather, 20% polyester",
+        "Lining: 100% polyester",
+        "Strap: 100% EVA",
+        "Wipe clean only"
+      ],
+      "description": "Made from premium cow leather, the Runner trainers take inspiration from classic athletic silhouettes. Featuring contrast stripes and a geometric sole.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-shoes-2",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_subtitle {\n        margin-top: 16px;\n        font-size: 14px;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n        cursor: pointer;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n        margin-top: 24px;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 728px; /* Adjusted to 140px + (7 * 84px) to preserve dot pattern alignment */\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, \n    .sizeGuide_container td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n</style>\n\n<div class=\"sizeGuide_container\">\n    <div class=\"sizeGuide_header\">\n        <h1 class=\"sizeGuide_title\">Size guide</h1>\n        <button class=\"sizeGuide_closeBtn\" aria-label=\"Close size guide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n              <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n            </svg>\n        </button>\n    </div>\n\n    <p class=\"sizeGuide_subtitle sizeGuide_text-body-bold\">Size Conversion: Shoes</p>\n\n    <div class=\"sizeGuide_tableContainer\">\n        <div class=\"table-scroll\">\n            <table>\n                <colgroup>\n                    <col style=\"width: 140px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                </colgroup>\n                <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">UK</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">6</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">7</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">8</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">9</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">10</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">11</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">12</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">EU</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">42</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">US</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">13</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">AUSTRALIA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">CHINA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">47.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JAPAN</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">25</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">26</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">27</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">28</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">29</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">30</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">31</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">KOREA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">250</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">260</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">270</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">280</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">290</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">300</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">310</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "rows": [
+          [
+            "EU",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ],
+          [
+            "US",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          [
+            "AUSTRALIA",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          [
+            "CHINA",
+            "40",
+            "41.5",
+            "43",
+            "44",
+            "45.5",
+            "46.5",
+            "47.5"
+          ],
+          [
+            "JAPAN",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          [
+            "KOREA",
+            "250",
+            "260",
+            "270",
+            "280",
+            "290",
+            "300",
+            "310"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Navy Blue",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M045FF-4411.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320993976",
+          "value": "UK 6/US 7/EU 40",
+          "displayValue": "6",
+          "inStock": false,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993983",
+          "value": "UK 7/US 8/EU 41",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993990",
+          "value": "UK 8/US 9/EU 42",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320994003",
+          "value": "UK 9/US 10/EU 43",
+          "displayValue": "9",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320994010",
+          "value": "UK 10/US 11/EU 44",
+          "displayValue": "10",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320994027",
+          "value": "UK 11/US 12/EU 45",
+          "displayValue": "11",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320994034",
+          "value": "UK 12/US 13/EU 46",
+          "displayValue": "12",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m045ff-4411/1.jpg",
+        "/products/al-pdp/m045ff-4411/2.jpg",
+        "/products/al-pdp/m045ff-4411/3.jpg",
+        "/products/al-pdp/m045ff-4411/4.jpg",
+        "/products/al-pdp/m045ff-4411/5.jpg",
+        "/products/al-pdp/m045ff-4411/6.jpg"
+      ]
+    },
+    {
+      "id": "M064FF-5",
+      "sku": "M064FF-5",
+      "collections": [
+        "all-saints-shoes",
+        "al-men-shoes",
+        "al-men-shoes-all",
+        "al-men-boots"
+      ],
+      "leafId": "al-men-boots",
+      "cgid": "21998",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M064FF-5",
+      "name": "Cliff Leather Chelsea Boots",
+      "brand": "AllSaints",
+      "link": "/menswear/cliff-leather-chelsea-boots/M064FF-5.html",
+      "gbpPrice": 199.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Round toe",
+        "Heel height: 2cm"
+      ],
+      "longDescription": [
+        "Upper: 100% cow leather",
+        "Lining: 100% goat leather",
+        "Sole: 100% split cow leather",
+        "Wipe clean only"
+      ],
+      "description": "Leather Chelsea boots with exposed stitching.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-shoes-2",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_subtitle {\n        margin-top: 16px;\n        font-size: 14px;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n        cursor: pointer;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n        margin-top: 24px;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 728px; /* Adjusted to 140px + (7 * 84px) to preserve dot pattern alignment */\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, \n    .sizeGuide_container td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n</style>\n\n<div class=\"sizeGuide_container\">\n    <div class=\"sizeGuide_header\">\n        <h1 class=\"sizeGuide_title\">Size guide</h1>\n        <button class=\"sizeGuide_closeBtn\" aria-label=\"Close size guide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n              <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n            </svg>\n        </button>\n    </div>\n\n    <p class=\"sizeGuide_subtitle sizeGuide_text-body-bold\">Size Conversion: Shoes</p>\n\n    <div class=\"sizeGuide_tableContainer\">\n        <div class=\"table-scroll\">\n            <table>\n                <colgroup>\n                    <col style=\"width: 140px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                </colgroup>\n                <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">UK</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">6</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">7</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">8</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">9</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">10</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">11</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">12</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">EU</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">42</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">US</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">13</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">AUSTRALIA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">CHINA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">47.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JAPAN</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">25</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">26</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">27</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">28</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">29</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">30</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">31</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">KOREA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">250</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">260</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">270</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">280</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">290</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">300</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">310</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "rows": [
+          [
+            "EU",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ],
+          [
+            "US",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          [
+            "AUSTRALIA",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          [
+            "CHINA",
+            "40",
+            "41.5",
+            "43",
+            "44",
+            "45.5",
+            "46.5",
+            "47.5"
+          ],
+          [
+            "JAPAN",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          [
+            "KOREA",
+            "250",
+            "260",
+            "270",
+            "280",
+            "290",
+            "300",
+            "310"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Portugal",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M064FF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975058723",
+          "value": "UK 6/US 7/EU 40",
+          "displayValue": "6",
+          "inStock": false,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058730",
+          "value": "UK 7/US 8/EU 41",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058747",
+          "value": "UK 8/US 9/EU 42",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058754",
+          "value": "UK 9/US 10/EU 43",
+          "displayValue": "9",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058761",
+          "value": "UK 10/US 11/EU 44",
+          "displayValue": "10",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058778",
+          "value": "UK 11/US 12/EU 45",
+          "displayValue": "11",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975058785",
+          "value": "UK 12/US 13/EU 46",
+          "displayValue": "12",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m064ff-5/1.jpg",
+        "/products/al-pdp/m064ff-5/2.jpg",
+        "/products/al-pdp/m064ff-5/3.jpg",
+        "/products/al-pdp/m064ff-5/4.jpg",
+        "/products/al-pdp/m064ff-5/5.jpg",
+        "/products/al-pdp/m064ff-5/6.jpg"
+      ]
+    },
+    {
+      "id": "M050FF-5",
+      "sku": "M050FF-5",
+      "collections": [
+        "all-saints-shoes",
+        "al-men-shoes",
+        "al-men-shoes-all",
+        "al-men-boots"
+      ],
+      "leafId": "al-men-boots",
+      "cgid": "21998",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M050FF-5",
+      "name": "Bailey Leather Engineer Boots",
+      "brand": "AllSaints",
+      "link": "/menswear/bailey-leather-engineer-boots/M050FF-5.html",
+      "gbpPrice": 279.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Round toe",
+        "Heel height: 4.1cm",
+        "Platform height: 1.5cm"
+      ],
+      "longDescription": [
+        "Upper: 100% cow leather",
+        "Lining: 100% goat leather",
+        "Sole: 100% split cow leather",
+        "Wipe clean only"
+      ],
+      "description": "Leather boots with a zip closure, top split and buckled front.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-shoes-2",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_subtitle {\n        margin-top: 16px;\n        font-size: 14px;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n        cursor: pointer;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n        margin-top: 24px;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 728px; /* Adjusted to 140px + (7 * 84px) to preserve dot pattern alignment */\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, \n    .sizeGuide_container td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n</style>\n\n<div class=\"sizeGuide_container\">\n    <div class=\"sizeGuide_header\">\n        <h1 class=\"sizeGuide_title\">Size guide</h1>\n        <button class=\"sizeGuide_closeBtn\" aria-label=\"Close size guide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n              <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n            </svg>\n        </button>\n    </div>\n\n    <p class=\"sizeGuide_subtitle sizeGuide_text-body-bold\">Size Conversion: Shoes</p>\n\n    <div class=\"sizeGuide_tableContainer\">\n        <div class=\"table-scroll\">\n            <table>\n                <colgroup>\n                    <col style=\"width: 140px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                </colgroup>\n                <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">UK</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">6</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">7</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">8</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">9</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">10</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">11</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">12</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">EU</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">42</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">US</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">13</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">AUSTRALIA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">12</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">CHINA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">43</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">44</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">45.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">46.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">47.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JAPAN</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">25</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">26</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">27</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">28</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">29</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">30</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">31</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">KOREA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">250</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">260</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">270</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">280</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">290</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">300</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">310</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "rows": [
+          [
+            "EU",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ],
+          [
+            "US",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          [
+            "AUSTRALIA",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          [
+            "CHINA",
+            "40",
+            "41.5",
+            "43",
+            "44",
+            "45.5",
+            "46.5",
+            "47.5"
+          ],
+          [
+            "JAPAN",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          [
+            "KOREA",
+            "250",
+            "260",
+            "270",
+            "280",
+            "290",
+            "300",
+            "310"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Portugal",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M050FF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320987920",
+          "value": "UK 6/US 7/EU 40",
+          "displayValue": "6",
+          "inStock": false,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987937",
+          "value": "UK 7/US 8/EU 41",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987944",
+          "value": "UK 8/US 9/EU 42",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987951",
+          "value": "UK 9/US 10/EU 43",
+          "displayValue": "9",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987968",
+          "value": "UK 10/US 11/EU 44",
+          "displayValue": "10",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987975",
+          "value": "UK 11/US 12/EU 45",
+          "displayValue": "11",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320987982",
+          "value": "UK 12/US 13/EU 46",
+          "displayValue": "12",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m050ff-5/1.jpg",
+        "/products/al-pdp/m050ff-5/2.jpg",
+        "/products/al-pdp/m050ff-5/3.jpg",
+        "/products/al-pdp/m050ff-5/4.jpg",
+        "/products/al-pdp/m050ff-5/5.jpg",
+        "/products/al-pdp/m050ff-5/6.jpg"
       ]
     }
   ]

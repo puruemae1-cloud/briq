@@ -2,7 +2,7 @@
   "family": "al-women-shoes",
   "category": "shoes",
   "hub": "women-shoes",
-  "scrapedAt": "2026-09-17T10:18:59.814888+00:00",
+  "scrapedAt": "2026-09-29T22:10:18.487099+00:00",
   "leaves": [
     "al-women-shoes-all",
     "al-women-boots",
@@ -10,7 +10,7 @@
     "al-women-heels",
     "al-women-trainers"
   ],
-  "officialUnion": 70,
+  "officialUnion": 74,
   "products": [
     {
       "id": "W110FF-1049",
@@ -10624,6 +10624,538 @@
         "/products/al-pdp/w119fb-5571/6.jpg",
         "/products/al-pdp/w119fb-5571/7.jpg",
         "/products/al-pdp/w119fb-5571/8.jpg"
+      ]
+    },
+    {
+      "id": "W139FF-203",
+      "sku": "W139FF-203",
+      "collections": [
+        "all-saints-shoes",
+        "al-women-shoes",
+        "al-women-shoes-all",
+        "al-women-flats",
+        "al-women-trainers"
+      ],
+      "leafId": "al-women-trainers",
+      "cgid": "21767",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=W139FF-203",
+      "name": "Numont Vulcanised High-Top Trainers",
+      "brand": "AllSaints",
+      "link": "/womenswear/numont-vulcanised-high-top-trainers/W139FF-203.html",
+      "gbpPrice": 139.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Round toe",
+        "Heel height: 3.5cm"
+      ],
+      "longDescription": [
+        "Upper: 100% cow leather",
+        "Lining: 100% cotton",
+        "Sole: 100% rubber",
+        "Wipe clean only"
+      ],
+      "description": "High-top trainers made from leather. Complete with a vulcanised rubber sole and a branded woven label.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-women-shoes-2",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Off White",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-203.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320996311",
+          "value": "UK 3/US 6/EU 36",
+          "displayValue": "3",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996335",
+          "value": "UK 4/ US 7/ EU 37",
+          "displayValue": "4",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996359",
+          "value": "UK 5/US 8/EU 38",
+          "displayValue": "5",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996373",
+          "value": "UK 6/US 9/EU 39",
+          "displayValue": "6",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996397",
+          "value": "UK 7/US 10/EU 40",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996410",
+          "value": "UK 8/US 11/EU 41",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/w139ff-203/1.jpg",
+        "/products/al-pdp/w139ff-203/2.jpg",
+        "/products/al-pdp/w139ff-203/3.jpg",
+        "/products/al-pdp/w139ff-203/4.jpg",
+        "/products/al-pdp/w139ff-203/5.jpg",
+        "/products/al-pdp/w139ff-203/6.jpg"
+      ]
+    },
+    {
+      "id": "W139FF-5",
+      "sku": "W139FF-5",
+      "collections": [
+        "all-saints-shoes",
+        "al-women-shoes",
+        "al-women-shoes-all",
+        "al-women-flats",
+        "al-women-trainers"
+      ],
+      "leafId": "al-women-trainers",
+      "cgid": "21767",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=W139FF-5",
+      "name": "Numont Vulcanised High-Top Trainers",
+      "brand": "AllSaints",
+      "link": "/womenswear/numont-vulcanised-high-top-trainers/W139FF-5.html",
+      "gbpPrice": 139.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Round toe",
+        "Heel height: 3.5cm"
+      ],
+      "longDescription": [
+        "Upper: 100% cow leather",
+        "Lining: 100% cotton",
+        "Sole: 100% rubber",
+        "Wipe clean only"
+      ],
+      "description": "High-top trainers made from leather. Complete with a vulcanised rubber sole and a branded woven label.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-women-shoes-2",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W139FF-5.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320996076",
+          "value": "UK 3/US 6/EU 36",
+          "displayValue": "3",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996090",
+          "value": "UK 4/ US 7/ EU 37",
+          "displayValue": "4",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996113",
+          "value": "UK 5/US 8/EU 38",
+          "displayValue": "5",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996137",
+          "value": "UK 6/US 9/EU 39",
+          "displayValue": "6",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996151",
+          "value": "UK 7/US 10/EU 40",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320996175",
+          "value": "UK 8/US 11/EU 41",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 139.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/w139ff-5/1.jpg",
+        "/products/al-pdp/w139ff-5/2.jpg",
+        "/products/al-pdp/w139ff-5/3.jpg",
+        "/products/al-pdp/w139ff-5/4.jpg",
+        "/products/al-pdp/w139ff-5/5.jpg",
+        "/products/al-pdp/w139ff-5/6.jpg"
+      ]
+    },
+    {
+      "id": "W140FF-4061",
+      "sku": "W140FF-4061",
+      "collections": [
+        "all-saints-shoes",
+        "al-women-shoes",
+        "al-women-shoes-all",
+        "al-women-flats",
+        "al-women-trainers"
+      ],
+      "leafId": "al-women-trainers",
+      "cgid": "21767",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=W140FF-4061",
+      "name": "Robin Nylon And Suede Runner Trainers",
+      "brand": "AllSaints",
+      "link": "/womenswear/robin-nylon-and-suede-runner-trainers/W140FF-4061.html",
+      "gbpPrice": 149.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Round toe",
+        "Heel height: 1.5cm"
+      ],
+      "longDescription": [
+        "Upper: 80% cow leather, 20% cotton",
+        "Lining: 100% polyester",
+        "Sole: 100% rubber",
+        "Wipe clean only"
+      ],
+      "description": "Runner trainers made from panels of suede and nylon with side stripes, exaggerated cleated rubber outsoles and Ramskull stitching at heel counter.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-women-shoes-2",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Rust Red",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W140FF-4061.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320997271",
+          "value": "UK 3/US 6/EU 36",
+          "displayValue": "3",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320997295",
+          "value": "UK 4/ US 7/ EU 37",
+          "displayValue": "4",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320997318",
+          "value": "UK 5/US 8/EU 38",
+          "displayValue": "5",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320997332",
+          "value": "UK 6/US 9/EU 39",
+          "displayValue": "6",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320997356",
+          "value": "UK 7/US 10/EU 40",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320997370",
+          "value": "UK 8/US 11/EU 41",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 149.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/w140ff-4061/1.jpg",
+        "/products/al-pdp/w140ff-4061/2.jpg",
+        "/products/al-pdp/w140ff-4061/3.jpg",
+        "/products/al-pdp/w140ff-4061/4.jpg",
+        "/products/al-pdp/w140ff-4061/5.jpg",
+        "/products/al-pdp/w140ff-4061/6.jpg"
+      ]
+    },
+    {
+      "id": "W151FF-5870",
+      "sku": "W151FF-5870",
+      "collections": [
+        "all-saints-shoes",
+        "al-women-shoes",
+        "al-women-shoes-all",
+        "al-women-boots",
+        "al-women-heels"
+      ],
+      "leafId": "al-women-heels",
+      "cgid": "21768",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=W151FF-5870",
+      "name": "Jura Suede Zip-Up Dress Boots",
+      "brand": "AllSaints",
+      "link": "/womenswear/jura-suede-zip-up-dress-boots/W151FF-5870.html",
+      "gbpPrice": 279.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Almond toe",
+        "Heel height: 5cm",
+        "Platform height: 1cm"
+      ],
+      "longDescription": [
+        "Upper: 100% cow suede",
+        "Lining: 100% goat leather",
+        "Sole: 80% resin, 20% masonite",
+        "Wipe clean only"
+      ],
+      "description": "Dress boots made from suede with a leather lining, pull tab and zip closure.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-women-shoes-2",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_subtitle {\n        margin-top: 16px;\n        font-size: 14px;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n        cursor: pointer;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n        margin-top: 24px;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 728px;\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, \n    .sizeGuide_container td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n    .sizeGuide_infoContainer {\n        margin-top: 48px;\n    }\n    .sizeGuide_infoSection {\n        margin-top: 24px;\n    }\n    .sizeGuide_infoSection p {\n        margin: 0 0 8px 0;\n    }\n    .sizeGuide_infoSection ul {\n        margin: 0;\n        padding-left: 20px;\n    }\n    .sizeGuide_infoSection li {\n        margin-bottom: 6px;\n        line-height: 1.4;\n    }\n</style>\n\n<div class=\"sizeGuide_container\">\n    <div class=\"sizeGuide_header\">\n        <h1 class=\"sizeGuide_title\">Size guide</h1>\n        <button class=\"sizeGuide_closeBtn\" aria-label=\"Close size guide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n              <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n            </svg>\n        </button>\n    </div>\n\n    <p class=\"sizeGuide_subtitle sizeGuide_text-body-bold\">Size Conversion: Shoes</p>\n\n    <div class=\"sizeGuide_tableContainer\">\n        <div class=\"table-scroll\">\n            <table>\n                <colgroup>\n                    <col style=\"width: 140px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                    <col style=\"width: 84px\">\n                </colgroup>\n                <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">UK</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">2</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">3</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">4</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">5</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">6</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">7</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">8</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">EU</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">35</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">36</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">37</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">38</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">39</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">40</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">41</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">US</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">11</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">AUSTRALIA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">4.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">5.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">6.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">7.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">8.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">9.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">10.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">CHINA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">225</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">230</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">235</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">240</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">245</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">250</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">255</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JAPAN</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">21.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">22.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">23.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">24.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">25.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">26.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">27.5</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">KOREA</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">215</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">225</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">235</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">245</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">255</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">265</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">275</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">FOOT LENGTH (MM)</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">220</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">227</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">233</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">240</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">247</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">254</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">260</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">JOINT WIDTH (MM)</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">218</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">223</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">228</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">233</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">238</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">243</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\">248</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n\n    <div class=\"sizeGuide_infoContainer\">\n        <div class=\"sizeGuide_infoSection\">\n            <p class=\"sizeGuide_text-body sizeGuide_text-body-bold\">FITTING TIPS:</p>\n            <ul>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">In-between sizes? Full or half insoles can offer a better fit.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Ensure the shoe fits comfortably in length and width.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Over time leather shoes can stretch to the width of your foot but won’t lengthen.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">For styles with laces and a side zip, fully unlace prior to stepping in.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Adjust buckles and laces when standing for a comfortable fit.</li>\n            </ul>\n        </div>\n\n        <div class=\"sizeGuide_infoSection\">\n            <p class=\"sizeGuide_text-body sizeGuide_text-body-bold\">HOW TO MEASURE:</p>\n            <ul>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Stand upright on paper taped to the floor, and have someone draw around each bare foot with a ballpoint pen.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure length from heel to longest toe.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">For width, use measuring tape across the widest part of your joint (just before your toes) - the tape should be snug but not tight.</li>\n                <li class=\"sizeGuide_text-body sizeGuide_text-body-light\">Compare measurements to our chart.</li>\n            </ul>\n        </div>\n    </div>\n</div>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "rows": [
+          [
+            "EU",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41"
+          ],
+          [
+            "US",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          [
+            "AUSTRALIA",
+            "4.5",
+            "5.5",
+            "6.5",
+            "7.5",
+            "8.5",
+            "9.5",
+            "10.5"
+          ],
+          [
+            "CHINA",
+            "225",
+            "230",
+            "235",
+            "240",
+            "245",
+            "250",
+            "255"
+          ],
+          [
+            "JAPAN",
+            "21.5",
+            "22.5",
+            "23.5",
+            "24.5",
+            "25.5",
+            "26.5",
+            "27.5"
+          ],
+          [
+            "KOREA",
+            "215",
+            "225",
+            "235",
+            "245",
+            "255",
+            "265",
+            "275"
+          ],
+          [
+            "FOOT LENGTH (MM)",
+            "220",
+            "227",
+            "233",
+            "240",
+            "247",
+            "254",
+            "260"
+          ],
+          [
+            "JOINT WIDTH (MM)",
+            "218",
+            "223",
+            "228",
+            "233",
+            "238",
+            "243",
+            "248"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Portugal",
+      "color": "Tobacco Brown",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W151FF-5870.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W151FF-5870.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W151FF-5870.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W151FF-5870.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/W151FF-5870.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320993525",
+          "value": "UK 3/US 6/EU 36",
+          "displayValue": "3",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993549",
+          "value": "UK 4/ US 7/ EU 37",
+          "displayValue": "4",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993563",
+          "value": "UK 5/US 8/EU 38",
+          "displayValue": "5",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993587",
+          "value": "UK 6/US 9/EU 39",
+          "displayValue": "6",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993600",
+          "value": "UK 7/US 10/EU 40",
+          "displayValue": "7",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063320993624",
+          "value": "UK 8/US 11/EU 41",
+          "displayValue": "8",
+          "inStock": true,
+          "gbpPrice": 279.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/w151ff-5870/1.jpg",
+        "/products/al-pdp/w151ff-5870/2.jpg",
+        "/products/al-pdp/w151ff-5870/3.jpg",
+        "/products/al-pdp/w151ff-5870/4.jpg",
+        "/products/al-pdp/w151ff-5870/5.jpg"
       ]
     }
   ]
