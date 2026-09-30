@@ -39,6 +39,8 @@ export PYTHONUNBUFFERED=1
 echo "=== CDN publish dirs=${DIRS[*]} brands=${BRANDS[*]:-none} chunk=$CHUNK ==="
 
 for attempt in 1 2 3 4 5 6 7 8; do
+  df -h / | tail -1
+  free -m 2>/dev/null | sed -n 2p || true
   tip=$(git ls-remote origin refs/tags/product-images | awk '{print $1}' || true)
   if [[ -n "${tip:-}" ]]; then
     # Other brand syncs move the tag concurrently; building on a stale tip

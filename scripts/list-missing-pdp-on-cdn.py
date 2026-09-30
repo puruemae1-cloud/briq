@@ -60,11 +60,21 @@ def tag_nested_colour_dirs(brand: str) -> set[str]:
     return out
 
 
+IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
+
+
 def local_dirs(brand: str) -> set[str]:
     root = ROOT / "public" / "products" / brand
     if not root.is_dir():
         return set()
-    return {p.name for p in root.iterdir() if p.is_dir()}
+    # Folders without images never reach the tag (the pusher skips them), so
+    # counting them as missing makes the chunked pusher retry them forever.
+    return {
+        p.name
+        for p in root.iterdir()
+        if p.is_dir()
+        and any(f.suffix.lower() in IMAGE_SUFFIXES for f in p.rglob("*") if f.is_file())
+    }
 
 
 def local_nested_colour_dirs(brand: str) -> set[str]:

@@ -104,6 +104,8 @@ def main() -> int:
     for wave in range(args.max_waves):
         skus = list_missing(args.dirs, miss_path)
         print(f"WAVE {wave}: missing={len(skus)}", flush=True)
+        if wave % 10 == 0:
+            subprocess.run(["df", "-h", "/"], check=False)
         if not skus:
             print("OK — no missing SKUs on product-images tag", flush=True)
             return 0
