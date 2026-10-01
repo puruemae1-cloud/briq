@@ -4,7 +4,8 @@
     "POST_FIX_RTW",
     "POST_FIX_WOMEN_RTW",
     "POST_FIX_SIZES_STOCK",
-    "AUDIT_SIZE_STOCK"
+    "AUDIT_SIZE_STOCK",
+    "NEW_BADGE_TTL"
   ],
   "failed": [
     "WOMEN_BAGS_PIPELINE",
