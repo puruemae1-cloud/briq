@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-$HOME/Library/Caches/ms-playwright}"
 export PYTHONUNBUFFERED=1
-export PATH="/usr/bin:/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.local/node/bin:$PATH"
+export PATH="$PATH:/usr/bin:/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.local/node/bin"
 LOG=/tmp/ce-men-rtw-pipeline.log
 STATUS=/tmp/ce-men-rtw-STATUS
 exec >>"$LOG" 2>&1

@@ -20,7 +20,7 @@ echo "EXIT_MERGE:$?"
 python3 scripts/fix-di-essentials-routing.py | tee /tmp/di-men-essentials-routing.log
 echo "EXIT_ROUTING:$?"
 
-python3 scripts/fix-di-catalog-prices.py --check | tee /tmp/di-men-essentials-prices.log
+python3 scripts/fix-di-catalog-prices.py | tee /tmp/di-men-essentials-prices.log
 echo "EXIT_PRICES:$?"
 
 echo "=== KO ==="

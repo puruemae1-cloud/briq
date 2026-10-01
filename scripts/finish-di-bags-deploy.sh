@@ -28,7 +28,11 @@ if ! grep -q 'PIPELINE_DONE' /tmp/di-bags-pipeline.log 2>/dev/null; then
     python3 scripts/merge-di-catalog-ko.py | tee /tmp/di-bags-merge.log
     python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-bags-ko.log
     python3 scripts/weekly-sync-status.py
-    python3 scripts/push-product-images-tag.py --dirs di-pdp | tee /tmp/di-bags-cdn.log
+    if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+      bash scripts/ci-publish-pdp-cdn.sh di-pdp --brand di | tee /tmp/di-bags-cdn.log
+    else
+      python3 scripts/push-product-images-tag.py --dirs di-pdp | tee /tmp/di-bags-cdn.log
+    fi
   fi
 fi
 

@@ -76,6 +76,22 @@ def main() -> int:
         "underscore",
         len(underscore),
     )
+    # Raw scrapes list every gallery frame dior.com advertises, but frames that
+    # never downloaded (dior.com answers 403 to some CI fetches) are dropped
+    # from the catalogue build. Only frames the site serves must exist.
+    served: set[str] = set()
+    catalog = ROOT / "src/data/di/di-catalog.json"
+    if catalog.exists():
+        for product in json.loads(catalog.read_text()):
+            if isinstance(product, dict):
+                served.update(iter_image_paths(product))
+    raw_only = [src for src in missing if src not in served]
+    missing = [src for src in missing if src in served]
+    tiny = [item for item in tiny if item.split(" ", 1)[0] in served]
+    underscore = [src for src in underscore if src in served]
+    if raw_only:
+        print("raw-only frames not on disk (not in catalogue):", len(raw_only))
+
     for label, items in (
         ("missing", missing),
         ("tiny", tiny),

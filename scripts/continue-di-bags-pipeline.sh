@@ -62,7 +62,13 @@ python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-bags-ko.log
 echo "EXIT_KO:$?"
 
 echo "=== CDN di-pdp ==="
-python3 scripts/push-product-images-tag.py --dirs di-pdp | tee /tmp/di-bags-cdn.log
+if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  # A whole-brand re-whitened push is GBs and GitHub answers HTTP 500; publish
+  # only folders missing on the tag, in small waves, then verify the catalogue.
+  bash scripts/ci-publish-pdp-cdn.sh di-pdp --brand di | tee /tmp/di-bags-cdn.log
+else
+  python3 scripts/push-product-images-tag.py --dirs di-pdp | tee /tmp/di-bags-cdn.log
+fi
 echo "EXIT_CDN:$?"
 
 echo "=== PIPELINE_DONE $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="

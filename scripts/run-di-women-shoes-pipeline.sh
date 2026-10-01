@@ -4,7 +4,7 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-$HOME/Library/Caches/ms-playwright}"
 export PYTHONUNBUFFERED=1
-export PATH="/usr/bin:/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.local/node/bin:$PATH"
+export PATH="$PATH:/usr/bin:/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.local/node/bin"
 LOG=/tmp/di-women-shoes-pipeline.log
 STATUS=/tmp/di-women-shoes-STATUS
 DEPLOYED=/tmp/di-women-shoes-DEPLOYED
@@ -62,7 +62,7 @@ run_step() {
 
 run_step MERGE python3 scripts/merge-di-catalog-ko.py
 run_step ENRICH python3 scripts/enrich-di-women-shoes-pdp.py --translate
-run_step PRICES python3 scripts/fix-di-catalog-prices.py --check
+run_step PRICES python3 scripts/fix-di-catalog-prices.py
 run_step KO python3 - <<'PY'
 import json
 import sys
