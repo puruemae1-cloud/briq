@@ -61,6 +61,9 @@ echo "=== KO CHECK ==="
 python3 scripts/ko_stock_fallback_gate.py --brand di | tee /tmp/di-bags-ko.log
 echo "EXIT_KO:$?"
 
+echo "=== IMAGES ==="
+python3 scripts/check-di-image-integrity.py | tee /tmp/di-bags-images.log
+
 echo "=== CDN di-pdp ==="
 if [[ "${GITHUB_ACTIONS:-}" == "true" ]]; then
   # A whole-brand re-whitened push is GBs and GitHub answers HTTP 500; publish

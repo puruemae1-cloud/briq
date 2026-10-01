@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -33,6 +34,49 @@ def local_path(src: str) -> Path:
 
 def folder_from_src(src: str) -> str:
     return src.split("/products/di-pdp/", 1)[1].split("/", 1)[0]
+
+
+def prune_frames(catalog: Path, gone: set[str]) -> list[str]:
+    """Drop ``gone`` frames from the catalogue; return those that can't be dropped."""
+    products = json.loads(catalog.read_text())
+    stuck: list[str] = []
+    pruned = 0
+
+    def fix(node: dict) -> None:
+        nonlocal pruned
+        images = node.get("images")
+        if isinstance(images, list):
+            kept = [x for x in images if x not in gone]
+            pruned += len(images) - len(kept)
+            node["images"] = kept
+        else:
+            kept = []
+        for key in ("image", "hoverImage"):
+            value = node.get(key)
+            if value not in gone:
+                continue
+            spare = [x for x in kept if x != node.get("image")]
+            if key == "image" and kept:
+                node[key] = kept[0]
+            elif key == "hoverImage" and spare:
+                node[key] = spare[0]
+            elif key == "hoverImage":
+                node.pop(key)
+            else:
+                stuck.append(value)
+                continue
+            pruned += 1
+
+    for product in products:
+        if not isinstance(product, dict):
+            continue
+        fix(product)
+        for variant in product.get("variants") or []:
+            if isinstance(variant, dict):
+                fix(variant)
+    catalog.write_text(json.dumps(products, ensure_ascii=False, indent=2) + "\n")
+    print(f"pruned {pruned} catalogue reference(s) to frames missing everywhere")
+    return stuck
 
 
 def main() -> int:
@@ -87,6 +131,10 @@ def main() -> int:
                 served.update(iter_image_paths(product))
     raw_only = [src for src in missing if src not in served]
     missing = [src for src in missing if src in served]
+    if missing and os.environ.get("GITHUB_ACTIONS") == "true":
+        # CI restores every published frame from the tag first, so a served
+        # frame absent here exists nowhere and renders as a broken image.
+        missing = prune_frames(catalog, set(missing))
     tiny = [item for item in tiny if item.split(" ", 1)[0] in served]
     underscore = [src for src in underscore if src in served]
     if raw_only:
