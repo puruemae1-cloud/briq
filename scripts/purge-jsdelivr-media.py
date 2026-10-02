@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import sys
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor
 import urllib.request
 from pathlib import Path
 
@@ -52,6 +53,10 @@ def main() -> int:
         ),
     )
     ap.add_argument(
+        "--paths-file",
+        help="File with one repo-relative path per line (same as --paths)",
+    )
+    ap.add_argument(
         "--package-only",
         action="store_true",
         help="Only purge the package tip (no per-file URLs)",
@@ -60,6 +65,8 @@ def main() -> int:
 
     urls = [PURGE_BASE]
     paths: list[str] = list(args.paths or [])
+    if args.paths_file:
+        paths += [ln.strip() for ln in Path(args.paths_file).read_text().splitlines() if ln.strip()]
 
     for name in args.dirs or []:
         if name == "banners":
@@ -84,7 +91,8 @@ def main() -> int:
             urls.append(f"{PURGE_BASE}/{rel}")
 
     print(f"Purging {len(urls)} jsDelivr URL(s) for @{TAG}…", flush=True)
-    ok = sum(1 for u in urls if purge(u))
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        ok = sum(pool.map(purge, urls))
     print(f"purge done {ok}/{len(urls)}", flush=True)
     return 0 if ok else 1
 

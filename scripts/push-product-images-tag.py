@@ -373,7 +373,8 @@ def push_only_ids_fast_import(
     print(f"product-images tag updated ({brand_label}).", flush=True)
     update_product_images_manifest()
     if not skip_purge:
-        purge_jsdelivr(brands)
+        # Only the pushed files can be stale; a whole-brand purge outlasts CI.
+        purge_jsdelivr(brands, paths=[rel for rel, _path in files])
     return 0
 
 
@@ -502,13 +503,18 @@ def update_product_images_manifest() -> None:
     print(f"Updated {path.name} tagRev={manifest['tagRev']}", flush=True)
 
 
-def purge_jsdelivr(dirs: list[str]) -> None:
+def purge_jsdelivr(dirs: list[str], paths: list[str] | None = None) -> None:
     """Invalidate jsDelivr so same-path updates show on the live shop."""
     script = ROOT / "scripts" / "purge-jsdelivr-media.py"
     if not script.is_file():
         print("WARN: purge-jsdelivr-media.py missing — skip CDN purge", flush=True)
         return
-    cmd = [sys.executable, str(script), "--dirs", *dirs]
+    if paths is not None:
+        listing = Path(tempfile.mkstemp(prefix="briq-purge-", suffix=".txt")[1])
+        listing.write_text("".join(f"{p}\n" for p in paths))
+        cmd = [sys.executable, str(script), "--paths-file", str(listing)]
+    else:
+        cmd = [sys.executable, str(script), "--dirs", *dirs]
     print("+", " ".join(cmd), flush=True)
     subprocess.run(cmd, cwd=str(ROOT), check=False)
 
