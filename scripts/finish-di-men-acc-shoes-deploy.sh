@@ -113,12 +113,8 @@ PY
       continue
     fi
     echo "=== CDN batch $batch_n/$total_batches $(wc -l < "$batch") folders ==="
-    skip_purge=--skip-purge
-    if [[ "$batch_n" -eq "$total_batches" ]]; then
-      skip_purge=
-    fi
     python3 scripts/push-product-images-tag.py \
-      --dirs di-pdp --skip-whiten --only-file "$batch" $skip_purge \
+      --dirs di-pdp --skip-whiten --only-file "$batch" \
       | tee -a /tmp/di-men-acc-shoes-cdn.log
     echo "BATCH_${batch_n}_OK" >> "$STATUS"
     sleep 2

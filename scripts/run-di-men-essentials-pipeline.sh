@@ -74,11 +74,7 @@ if [[ -s /tmp/di-men-essentials-cdn-only.txt ]]; then
     [[ -f "$batch" ]] || continue
     n=$((n + 1))
     echo "=== CDN batch $n/$total $(wc -l < "$batch") folders ==="
-    skip_purge=--skip-purge
-    if [[ "$n" -eq "$total" ]]; then
-      skip_purge=
-    fi
-    python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file "$batch" $skip_purge \
+    python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file "$batch" \
       | tee -a /tmp/di-men-essentials-cdn.log
   done
   echo "EXIT_CDN:$?"

@@ -58,8 +58,10 @@ PY
 echo "=== CDN folders ==="
 python3 - <<'PY'
 import json
+import sys
 from pathlib import Path
-from scripts.di_common import slugify
+sys.path.insert(0, "scripts")
+from di_common import slugify
 prods = json.loads(Path("src/data/di/di-catalog.json").read_text())
 folders = []
 for p in prods:

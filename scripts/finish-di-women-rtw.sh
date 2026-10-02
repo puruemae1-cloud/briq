@@ -71,12 +71,8 @@ if [[ -s /tmp/di-women-rtw-cdn-only.txt ]]; then
       continue
     fi
     echo "=== CDN batch $n/$total $(wc -l < "$batch" | tr -d ' ') folders ==="
-    skip_purge=--skip-purge
-    if [[ "$n" -eq "$total" ]]; then
-      skip_purge=
-    fi
     set +e
-    python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file "$batch" $skip_purge
+    python3 scripts/push-product-images-tag.py --dirs di-pdp --skip-whiten --only-file "$batch"
     st=$?
     set -e
     echo "EXIT_CDN_${n}:$st"
