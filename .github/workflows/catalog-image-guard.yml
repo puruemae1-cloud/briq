@@ -44,9 +44,15 @@ jobs:
         if: steps.audit.outputs.rc != '0'
         env:
           GH_TOKEN: ${{ github.token }}
+          # Multi-hour syncs that should not be re-run for a stray story image.
+          NO_REDISPATCH: di
         run: |
           since=$(date -u -d '-20 hours' +%Y-%m-%dT%H:%M:%SZ)
           for brand in $(cut -d/ -f1 missing.txt | sed -E 's/-(pdp|editorial)$//' | sort -u); do
+            if [[ " $NO_REDISPATCH " == *" $brand "* ]]; then
+              echo "::warning::$brand has missing photos; left to its weekly sync"
+              continue
+            fi
             wf="weekly-${brand}-sync.yml"
             if [ ! -f ".github/workflows/$wf" ]; then
               echo "::warning::no sync workflow for $brand"
