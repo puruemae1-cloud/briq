@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/vercel-slim-public.mjs && NODE_OPTIONS='--max-old-space-size=7168' next build",
+    "dev": "node --expose-gc scripts/build-catalog-dist.mjs && next dev",
+    "build": "node scripts/vercel-slim-public.mjs && node --expose-gc scripts/build-catalog-dist.mjs && NODE_OPTIONS='--max-old-space-size=7168' next build",
     "start": "next start",
     "lint": "next lint",
     "mobile": "npm --prefix mobile start",

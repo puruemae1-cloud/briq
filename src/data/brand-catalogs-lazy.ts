@@ -1,5 +1,6 @@
 import type { Product } from "@/data/product-types";
 import { expandSubcategoryFilter } from "@/data/categories";
+import { readCatalogJson } from "@/data/catalog-json";
 import { isYsShopSub } from "@/data/ys/ys-catalog-lazy";
 
 /**
@@ -114,9 +115,7 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     return mod.ggCatalogProducts;
   },
   bb: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bb/bb-catalog") as typeof import("./bb/bb-catalog");
-    return mod.bbCatalogProducts;
+    return readCatalogJson("bb/bb-catalog.json");
   },
   ax: () => {
     /* eslint-disable @typescript-eslint/no-require-imports */
@@ -148,64 +147,40 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     ];
   },
   ps: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ps/ps-catalog") as typeof import("./ps/ps-catalog");
-    return mod.psCatalogProducts;
+    return readCatalogJson("ps/ps-catalog.json");
   },
   bs: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bs/bs-catalog") as typeof import("./bs/bs-catalog");
-    return mod.bsCatalogProducts;
+    return readCatalogJson("bs/bs-catalog.json");
   },
   gc: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./gc/gc-catalog") as typeof import("./gc/gc-catalog");
-    return mod.gcCatalogProducts;
+    return readCatalogJson("gc/gc-catalog.json");
   },
   bv: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bv/bv-catalog") as typeof import("./bv/bv-catalog");
-    return mod.bvCatalogProducts;
+    return readCatalogJson("bv/bv-catalog.json");
   },
   ch: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ch/ch-catalog") as typeof import("./ch/ch-catalog");
-    return mod.chCatalogProducts;
+    return readCatalogJson("ch/ch-catalog.json");
   },
   ce: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ce/ce-catalog") as typeof import("./ce/ce-catalog");
-    return mod.ceCatalogProducts;
+    return readCatalogJson("ce/ce-catalog.json");
   },
   vw: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./vw/vw-catalog") as typeof import("./vw/vw-catalog");
-    return mod.vwCatalogProducts;
+    return readCatalogJson("vw/vw-catalog.json");
   },
   al: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./al/al-catalog") as typeof import("./al/al-catalog");
-    return mod.alCatalogProducts;
+    return readCatalogJson("al/al-catalog.json");
   },
   pr: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./pr/pr-catalog") as typeof import("./pr/pr-catalog");
-    return mod.prCatalogProducts;
+    return readCatalogJson("pr/pr-catalog.json");
   },
   lv: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./lv/lv-catalog") as typeof import("./lv/lv-catalog");
-    return mod.lvCatalogProducts;
+    return readCatalogJson("lv/lv-catalog.json");
   },
   di: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./di/di-catalog") as typeof import("./di/di-catalog");
-    return mod.diCatalogProducts;
+    return readCatalogJson("di/di-catalog.json");
   },
   mb: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./mb/mb-catalog") as typeof import("./mb/mb-catalog");
-    return mod.mbCatalogProducts;
+    return readCatalogJson("mb/mb-catalog.json");
   },
 };
 
@@ -216,59 +191,37 @@ export function loadBrandCatalog(key: BrandCatalogKey): Product[] {
 /** Bags-only loaders — keep bags brand clicks ~same TTFB regardless of RTW/acc size. */
 const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
   bb: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bb/bb-bags-catalog") as typeof import("./bb/bb-bags-catalog");
-    return mod.bbBagsCatalogProducts;
+    return readCatalogJson("bb/bb-bags-catalog.json");
   },
   ax: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ax/ax-bags-catalog") as typeof import("./ax/ax-bags-catalog");
-    return mod.axBagsCatalogProducts;
+    return readCatalogJson("ax/ax-bags-catalog.json");
   },
   gc: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./gc/gc-bags-catalog") as typeof import("./gc/gc-bags-catalog");
-    return mod.gcBagsCatalogProducts;
+    return readCatalogJson("gc/gc-bags-catalog.json");
   },
   bv: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bv/bv-bags-catalog") as typeof import("./bv/bv-bags-catalog");
-    return mod.bvBagsCatalogProducts;
+    return readCatalogJson("bv/bv-bags-catalog.json");
   },
   ch: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ch/ch-bags-catalog") as typeof import("./ch/ch-bags-catalog");
-    return mod.chBagsCatalogProducts;
+    return readCatalogJson("ch/ch-bags-catalog.json");
   },
   al: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./al/al-bags-catalog") as typeof import("./al/al-bags-catalog");
-    return mod.alBagsCatalogProducts;
+    return readCatalogJson("al/al-bags-catalog.json");
   },
   ce: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ce/ce-bags-catalog") as typeof import("./ce/ce-bags-catalog");
-    return mod.ceBagsCatalogProducts;
+    return readCatalogJson("ce/ce-bags-catalog.json");
   },
   vw: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./vw/vw-bags-catalog") as typeof import("./vw/vw-bags-catalog");
-    return mod.vwBagsCatalogProducts;
+    return readCatalogJson("vw/vw-bags-catalog.json");
   },
   pr: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./pr/pr-bags-catalog") as typeof import("./pr/pr-bags-catalog");
-    return mod.prBagsCatalogProducts;
+    return readCatalogJson("pr/pr-bags-catalog.json");
   },
   di: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./di/di-bags-catalog") as typeof import("./di/di-bags-catalog");
-    return mod.diBagsCatalogProducts;
+    return readCatalogJson("di/di-bags-catalog.json");
   },
   mb: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./mb/mb-bags-catalog") as typeof import("./mb/mb-bags-catalog");
-    return mod.mbBagsCatalogProducts;
+    return readCatalogJson("mb/mb-bags-catalog.json");
   },
 };
 
@@ -292,64 +245,40 @@ export function loadAllBagsCatalogs(): Product[] {
 /** Shoes-only loaders — keep shoes brand clicks ~same TTFB regardless of RTW/bags size. */
 const SHOES_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
   bb: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bb/bb-shoes-catalog") as typeof import("./bb/bb-shoes-catalog");
-    return mod.bbShoesCatalogProducts;
+    return readCatalogJson("bb/bb-shoes-catalog.json");
   },
   ax: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ax/ax-shoes-catalog") as typeof import("./ax/ax-shoes-catalog");
-    return mod.axShoesCatalogProducts;
+    return readCatalogJson("ax/ax-shoes-catalog.json");
   },
   ps: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ps/ps-shoes-catalog") as typeof import("./ps/ps-shoes-catalog");
-    return mod.psShoesCatalogProducts;
+    return readCatalogJson("ps/ps-shoes-catalog.json");
   },
   bs: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bs/bs-shoes-catalog") as typeof import("./bs/bs-shoes-catalog");
-    return mod.bsShoesCatalogProducts;
+    return readCatalogJson("bs/bs-shoes-catalog.json");
   },
   gc: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./gc/gc-shoes-catalog") as typeof import("./gc/gc-shoes-catalog");
-    return mod.gcShoesCatalogProducts;
+    return readCatalogJson("gc/gc-shoes-catalog.json");
   },
   bv: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./bv/bv-shoes-catalog") as typeof import("./bv/bv-shoes-catalog");
-    return mod.bvShoesCatalogProducts;
+    return readCatalogJson("bv/bv-shoes-catalog.json");
   },
   ch: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ch/ch-shoes-catalog") as typeof import("./ch/ch-shoes-catalog");
-    return mod.chShoesCatalogProducts;
+    return readCatalogJson("ch/ch-shoes-catalog.json");
   },
   al: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./al/al-shoes-catalog") as typeof import("./al/al-shoes-catalog");
-    return mod.alShoesCatalogProducts;
+    return readCatalogJson("al/al-shoes-catalog.json");
   },
   ce: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ce/ce-shoes-catalog") as typeof import("./ce/ce-shoes-catalog");
-    return mod.ceShoesCatalogProducts;
+    return readCatalogJson("ce/ce-shoes-catalog.json");
   },
   vw: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./vw/vw-shoes-catalog") as typeof import("./vw/vw-shoes-catalog");
-    return mod.vwShoesCatalogProducts;
+    return readCatalogJson("vw/vw-shoes-catalog.json");
   },
   pr: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./pr/pr-shoes-catalog") as typeof import("./pr/pr-shoes-catalog");
-    return mod.prShoesCatalogProducts;
+    return readCatalogJson("pr/pr-shoes-catalog.json");
   },
   di: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./di/di-shoes-catalog") as typeof import("./di/di-shoes-catalog");
-    return mod.diShoesCatalogProducts;
+    return readCatalogJson("di/di-shoes-catalog.json");
   },
 };
 

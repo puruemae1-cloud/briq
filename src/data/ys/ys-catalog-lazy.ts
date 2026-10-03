@@ -1,3 +1,4 @@
+import { readCatalogJson } from "@/data/catalog-json";
 import type { Product } from "@/data/product-types";
 
 /**
@@ -11,9 +12,7 @@ let shoesCached: Product[] | null = null;
 
 export function getYsCatalogProducts(): Product[] {
   if (!cached) {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./ys-catalog") as typeof import("./ys-catalog");
-    cached = mod.ysCatalogProducts;
+    cached = readCatalogJson("ys/ys-catalog.json");
   }
   return cached;
 }
@@ -21,10 +20,7 @@ export function getYsCatalogProducts(): Product[] {
 /** Bags-only YS slice — bags brand clicks must not parse the full YS catalogue. */
 export function getYsBagsCatalogProducts(): Product[] {
   if (!bagsCached) {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod =
-      require("./ys-bags-catalog") as typeof import("./ys-bags-catalog");
-    bagsCached = mod.ysBagsCatalogProducts;
+    bagsCached = readCatalogJson("ys/ys-bags-catalog.json");
   }
   return bagsCached;
 }
@@ -32,10 +28,7 @@ export function getYsBagsCatalogProducts(): Product[] {
 /** Shoes-only YS slice — shoes brand clicks must not parse the full YS catalogue. */
 export function getYsShoesCatalogProducts(): Product[] {
   if (!shoesCached) {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod =
-      require("./ys-shoes-catalog") as typeof import("./ys-shoes-catalog");
-    shoesCached = mod.ysShoesCatalogProducts;
+    shoesCached = readCatalogJson("ys/ys-shoes-catalog.json");
   }
   return shoesCached;
 }

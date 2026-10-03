@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+  // Catalogue JSON is read from disk at runtime (src/data/catalog-json.ts).
+  outputFileTracingIncludes: {
+    "/": ["./catalog-dist/**/*.json.gz"],
+    "/**/*": ["./catalog-dist/**/*.json.gz"],
+  },
   env: {
     // Empty locally so `public/` paths keep working in next dev.
     NEXT_PUBLIC_MEDIA_ORIGIN: process.env.VERCEL ? MEDIA_ORIGIN : "",
