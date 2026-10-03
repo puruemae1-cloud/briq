@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
     "/": ["./catalog-dist/**/*.json.gz"],
     "/**/*": ["./catalog-dist/**/*.json.gz"],
   },
+  async redirects() {
+    return [
+      { source: "/sitemap.xml", destination: "/sitemap-index.xml", permanent: true },
+    ];
+  },
   env: {
     // Empty locally so `public/` paths keep working in next dev.
     NEXT_PUBLIC_MEDIA_ORIGIN: process.env.VERCEL ? MEDIA_ORIGIN : "",

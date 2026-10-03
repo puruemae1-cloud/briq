@@ -147,12 +147,33 @@ def tag_blob_path(web_path: str) -> str:
 
 
 def list_tag_paths(prefix: str = PRODUCTS_PREFIX) -> set[str]:
-    subprocess.run(
-        ["git", "fetch", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
+    # Must list the REMOTE tag: a stale local tag (failed fetch, or a local
+    # snapshot whose push errored) once passed verification for 2,500 Paul
+    # Smith images that never reached the CDN.
+    remote = subprocess.run(
+        ["git", "ls-remote", "origin", f"refs/tags/{TAG}"],
         cwd=ROOT,
         check=False,
         capture_output=True,
+        text=True,
+    ).stdout.split()
+    if not remote:
+        raise SystemExit(f"Cannot read remote {TAG} tip (git ls-remote failed).")
+    fetched = subprocess.run(
+        ["git", "fetch", "--no-tags", "origin", f"+refs/tags/{TAG}:refs/tags/{TAG}"],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
     )
+    local = subprocess.run(
+        ["git", "rev-parse", TAG], cwd=ROOT, check=False, capture_output=True, text=True
+    ).stdout.strip()
+    if local != remote[0]:
+        raise SystemExit(
+            f"Local {TAG} ({local[:12] or 'missing'}) != remote ({remote[0][:12]}); "
+            f"fetch failed: {fetched.stderr.strip()[:300]}"
+        )
     proc = subprocess.run(
         ["git", "ls-tree", "-r", "--name-only", TAG, prefix],
         cwd=ROOT,

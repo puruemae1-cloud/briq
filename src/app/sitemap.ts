@@ -1,21 +1,20 @@
 import type { MetadataRoute } from "next";
 import { navCategories } from "@/data/categories";
 import { products } from "@/data/products";
+import { PRODUCT_CHUNK, sitemapCount } from "@/lib/sitemap-chunks";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
 
-const PRODUCT_CHUNK = 4000;
-
 export async function generateSitemaps() {
-  const productPages = Math.max(1, Math.ceil(products.length / PRODUCT_CHUNK));
   // id 0 = static pages; 1..N = product chunks
-  return Array.from({ length: productPages + 1 }, (_, id) => ({ id }));
+  return Array.from({ length: sitemapCount() }, (_, id) => ({ id }));
 }
 
-export default async function sitemap({
-  id,
-}: {
-  id: number;
+export default async function sitemap(props: {
+  id: Promise<string>;
 }): Promise<MetadataRoute.Sitemap> {
+  // Next 16 passes the id as a Promise<string>; comparing it to a number
+  // silently produced empty sitemaps.
+  const id = Number(await props.id);
   const site = getSiteUrl();
   const now = new Date();
 

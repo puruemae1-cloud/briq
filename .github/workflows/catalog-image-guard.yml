@@ -1,0 +1,65 @@
+name: Catalog image guard
+
+# Every catalogue photo must exist on the product-images tag (the CDN source).
+# Production builds already hide products whose photos are missing
+# (scripts/build-catalog-dist.mjs), so customers never see broken images; this
+# guard brings those products back by re-running the brand sync, which
+# re-downloads the photos and republishes them to the tag.
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  deployment_status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: catalog-image-guard
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Audit catalogue images against the product-images tag
+        id: audit
+        run: |
+          set +e
+          python3 scripts/audit-catalog-images.py --write missing.txt
+          echo "rc=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Re-run brand syncs for missing photos
+        if: steps.audit.outputs.rc != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '-20 hours' +%Y-%m-%dT%H:%M:%SZ)
+          for brand in $(cut -d/ -f1 missing.txt | sed -E 's/-(pdp|editorial)$//' | sort -u); do
+            wf="weekly-${brand}-sync.yml"
+            if [ ! -f ".github/workflows/$wf" ]; then
+              echo "::warning::no sync workflow for $brand"
+              continue
+            fi
+            busy=$(gh run list --workflow "$wf" -L 10 --json createdAt,event,status \
+              --jq "[.[] | select(.status != \"completed\" or (.event == \"workflow_dispatch\" and .createdAt >= \"$since\"))] | length")
+            if [ "$busy" != "0" ]; then
+              echo "$brand: sync running or re-run in the last 20h — not dispatching again"
+              continue
+            fi
+            echo "dispatching $wf ($(grep -c "^$brand-\|^$brand/" missing.txt) missing file(s))"
+            gh workflow run "$wf" --ref main
+          done
+          # Failed run = GitHub email; the photos are hidden on the site meanwhile.
+          exit 1

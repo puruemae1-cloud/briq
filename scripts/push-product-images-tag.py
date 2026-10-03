@@ -279,8 +279,10 @@ def squash_tag(rev: str, cwd: Path = ROOT) -> str:
 def lease_flag(expect: str | None) -> str:
     # Snapshots are parentless, so every tag push is a force push; the lease
     # stops one brand's push from dropping images another brand pushed after
-    # our fetch.
-    return f"--force-with-lease=refs/tags/{TAG}:{expect}" if expect else "-f"
+    # our fetch. A bare -f here wiped ~7,500 images on 2026-09-29.
+    if not expect:
+        raise SystemExit(f"refusing to force-push {TAG} without a lease")
+    return f"--force-with-lease=refs/tags/{TAG}:{expect}"
 
 
 def push_tag_ref(expect: str | None = None) -> bool:
