@@ -1,7 +1,9 @@
 {
-  "scrapedAt": "2026-09-29T10:46:27Z",
+  "scrapedAt": "2026-10-03T19:29:43Z",
   "collections": {
     "men-new": [
+      "dwayne-limited-insulating-golf-mid-layer-blue-navy",
+      "dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
       "austin-windproof-and-water-repellent-insulating-golf-parka-jungle-green",
       "austin-windproof-and-water-repellent-insulating-golf-parka-navy",
       "marsh-breathable-short-sleeve-golf-shirt-jungle-green",
@@ -137,6 +139,18 @@
       "ella-uv-protection-top-white"
     ],
     "men": [
+      "dwayne-limited-insulating-golf-mid-layer-blue-navy",
+      "dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+      "murdoch-breathable-long-sleeve-golf-shirt-blue-slate",
+      "murdoch-breathable-long-sleeve-golf-shirt-jungle-green",
+      "danby-insulating-golf-mid-layer-jungle-green",
+      "danby-insulating-golf-mid-layer-navy",
+      "lamar-windproof-and-water-repellent-golf-vest-jungle-green",
+      "lamar-windproof-and-water-repellent-golf-vest-navy",
+      "legend-windproof-and-water-repellent-golf-shirt-jungle-green",
+      "legend-windproof-and-water-repellent-golf-shirt-navy",
+      "austin-windproof-and-water-repellent-insulating-golf-parka-jungle-green",
+      "austin-windproof-and-water-repellent-insulating-golf-parka-navy",
       "arlo-waterproof-golf-jacket-black-orange",
       "merry-breathable-short-sleeve-golf-shirt-orange-black",
       "dean-insulating-golf-mid-layer-black-white-orange",
@@ -319,7 +333,6 @@
       "leo-windproof-and-water-repellant-golf-vest-forged-iron-black",
       "air-waterproof-golf-jacket-navy-moonlight-blue",
       "arthur-waterproof-pants-black",
-      "dalton-insulating-golf-mid-layer-black-royal-blue",
       "sanford-lightweight-solid-golf-cap-white",
       "mason-breathable-short-sleeve-shirt-super-pink",
       "laurent-windproof-and-water-repellant-golf-jacket-forged-iron-black",
@@ -334,18 +347,8 @@
       "alonzo-storm-blue-navy-white",
       "leandro-windproof-and-water-repellent-golf-jacket-navy-storm-blue",
       "marshall-breathable-short-sleeve-golf-shirt-storm-blue-navy-white",
-      "murdoch-breathable-long-sleeve-golf-shirt-blue-slate",
-      "danby-insulating-golf-mid-layer-navy",
       "marsh-breathable-short-sleeve-golf-shirt-navy",
-      "danby-insulating-golf-mid-layer-jungle-green",
-      "murdoch-breathable-long-sleeve-golf-shirt-jungle-green",
       "marsh-breathable-short-sleeve-golf-shirt-jungle-green",
-      "lamar-windproof-and-water-repellent-golf-vest-jungle-green",
-      "legend-windproof-and-water-repellent-golf-shirt-jungle-green",
-      "lamar-windproof-and-water-repellent-golf-vest-navy",
-      "austin-windproof-and-water-repellent-insulating-golf-parka-navy",
-      "legend-windproof-and-water-repellent-golf-shirt-navy",
-      "austin-windproof-and-water-repellent-insulating-golf-parka-jungle-green",
       "air-waterproof-short-sleeve-golf-jacket-navy-white",
       "edwin-thermal-base-layer-top-black",
       "edwin-thermal-base-layer-top-navy",
@@ -379,7 +382,6 @@
       "abby-waterproof-golf-jacket-navy-white",
       "darla-insulating-golf-mid-layer-navy",
       "april-waterproof-pants-navy",
-      "lilly-windproof-and-water-repellant-golf-jacket-navy",
       "ava-waterproof-jacket-navy",
       "diora-insulating-golf-mid-layer-navy",
       "marielle-breathable-golf-skirt-with-inner-shorts-white",
@@ -468,7 +470,8 @@
       "mirelle-breathable-short-sleeve-shirt-navy-white",
       "sanford-lightweight-solid-golf-cap-black",
       "leighton-insulating-hat-black-forged-iron-white",
-      "sanford-lightweight-solid-golf-cap-royal-blue"
+      "sanford-lightweight-solid-golf-cap-royal-blue",
+      "lilly-windproof-and-water-repellant-golf-jacket-navy"
     ],
     "accessories": [
       "lemmy-cap-navy",
@@ -663,7 +666,6 @@
       "lawrence-windproof-and-water-repellent-jacket-blue-navy-white",
       "enzo-uv-protection-top-navy-blue",
       "ella-uv-protection-top-navy-white",
-      "donald-insulating-mid-layer-forged-iron-black",
       "dolly-insulating-mid-layer-blue",
       "dixon-insulating-mid-layer-blue",
       "dina-insulating-mid-layer-light-coral",
@@ -699,7 +701,6 @@
       "dolly-insulating-mid-layer-holly-green",
       "albert-waterproof-jacket-cool-grey",
       "ebba-thermal-base-layer-leggings-navy-blue-bell",
-      "percy-breathable-shorts-black",
       "percy-breathable-shorts-light-grey",
       "nixon-breathable-pants-navy",
       "nixon-breathable-pants-black",
@@ -759,7 +760,11 @@
       "marley-breathable-short-sleeve-golf-shirt-navy-white",
       "donald-insulating-mid-layer-blue-navy-white",
       "dolly-insulating-mid-layer-red",
-      "arissa-waterproof-jacket-black"
+      "arnie-waterproof-cap-black",
+      "armstrong-waterproof-jacket-black-base",
+      "donald-insulating-mid-layer-forged-iron-black",
+      "percy-breathable-shorts-navy",
+      "percy-breathable-shorts-black"
     ]
   },
   "products": [
@@ -3406,7 +3411,7 @@
           "size": "M",
           "price": "139.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 55877788500346,
@@ -5608,7 +5613,7 @@
           "size": "M",
           "price": "249.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 56062527996282,
@@ -8307,7 +8312,7 @@
           "size": "M",
           "price": "329.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 56986926809466,
@@ -9063,7 +9068,7 @@
           "size": "M",
           "price": "139.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 56987022524794,
@@ -10855,7 +10860,7 @@
           "size": "L",
           "price": "35.40",
           "compare_at_price": "59.00",
-          "available": false
+          "available": true
         },
         {
           "id": 55891543589242,
@@ -15809,7 +15814,7 @@
           "size": "32/32",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279038189726,
@@ -17832,7 +17837,7 @@
           "size": "M",
           "price": "179.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 56981714927994,
@@ -22387,7 +22392,7 @@
           "size": "XL",
           "price": "249.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 54973692051834,
@@ -22833,7 +22838,7 @@
           "size": "32/32",
           "price": "139.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 48960479199580,
@@ -27404,7 +27409,7 @@
           "size": "M",
           "price": "169.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 54973842260346,
@@ -28636,7 +28641,7 @@
           "size": "M",
           "price": "139.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 57065924198778,
@@ -28788,7 +28793,7 @@
           "size": "S",
           "price": "259.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 56981710831994,
@@ -29246,7 +29251,7 @@
           "size": "M - Short",
           "price": "249.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 55429909873018,
@@ -29401,7 +29406,7 @@
           "size": "XS",
           "price": "149.00",
           "compare_at_price": null,
-          "available": false
+          "available": true
         },
         {
           "id": 54973869752698,
@@ -29417,7 +29422,7 @@
           "size": "M",
           "price": "149.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 54973869818234,
@@ -30956,7 +30961,7 @@
           "size": "S",
           "price": "67.50",
           "compare_at_price": "135.00",
-          "available": false
+          "available": true
         },
         {
           "id": 46880631783772,
@@ -31461,7 +31466,7 @@
         "Men",
         "MEN TORSO",
         "Outlet",
-        "Outlet/Rea - B2B",
+        "Outlet GORE-TEX produkter",
         "PFAS",
         "Rainy & Warm",
         "stretch",
@@ -32805,7 +32810,7 @@
           "size": "M",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": false
+          "available": true
         },
         {
           "id": 55887505162618,
@@ -34487,7 +34492,7 @@
           "size": "L",
           "price": "95.40",
           "compare_at_price": "159.00",
-          "available": true
+          "available": false
         },
         {
           "id": 54976532152698,
@@ -41066,7 +41071,7 @@
           "size": "3XL",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Michael",
@@ -42595,7 +42600,7 @@
           "size": "XXL",
           "price": "89.40",
           "compare_at_price": "149.00",
-          "available": true
+          "available": false
         },
         {
           "id": 46881460224348,
@@ -47135,7 +47140,7 @@
           "size": "L",
           "price": "67.50",
           "compare_at_price": "135.00",
-          "available": false
+          "available": true
         },
         {
           "id": 42365991846046,
@@ -51226,7 +51231,7 @@
           "size": "30/32",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279039074462,
@@ -51250,7 +51255,7 @@
           "size": "36/32",
           "price": "65.40",
           "compare_at_price": "109.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279039172766,
@@ -51866,7 +51871,7 @@
         "GORE-TEX with lining",
         "Hats",
         "Outlet",
-        "Outlet/Rea - B2B",
+        "Outlet GORE-TEX produkter",
         "PFAS",
         "Unisex",
         "Waterproofs"
@@ -51904,7 +51909,7 @@
           "size": "58/L",
           "price": "34.30",
           "compare_at_price": "49.00",
-          "available": true
+          "available": false
         }
       ],
       "styleName": "Arnie",
@@ -63214,7 +63219,7 @@
           "size": "34",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279046217886,
@@ -63222,7 +63227,7 @@
           "size": "36",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279046250654,
@@ -63230,7 +63235,7 @@
           "size": "38",
           "price": "53.40",
           "compare_at_price": "89.00",
-          "available": true
+          "available": false
         },
         {
           "id": 42279046283422,
@@ -65045,7 +65050,7 @@
           "size": "XL",
           "price": "99.00",
           "compare_at_price": null,
-          "available": true
+          "available": false
         },
         {
           "id": 57220126343546,
@@ -65671,6 +65676,154 @@
       "collection": "gg-sale",
       "collections": [
         "gg-sale"
+      ]
+    },
+    {
+      "id": 16198131155322,
+      "handle": "dwayne-limited-insulating-golf-mid-layer-blue-navy",
+      "title": "Dwayne - Limited Edition Insulating golf mid layer",
+      "body_html": "Available exclusively online, Dwayne is a lightweight men’s golf hoodie designed to keep you warm without restricting your freedom of movement. Soft, flexible, and highly breathable, it provides comfortable insulation beneath a jacket in colder conditions or works perfectly as an outer layer over a shirt on milder days.\n\n\nDwayne is made from Galvin Green’s INSULA™ fabric with warming effect #2. The stretchy, quick-drying material offers excellent breathability and an exceptionally soft feel against the skin. This bluesign® approved Online Exclusive hoodie is a versatile choice for golf, training, walks, and other everyday activities.\n",
+      "tags": [
+        "Blue",
+        "INSULA™ Warming effect #2",
+        "Men",
+        "MEN TORSO",
+        "Mid Layer - Hoodie"
+      ],
+      "published_at": "2026-09-30T08:00:24+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_BLANK_FRONT_BLANK_F6F6F6_BLANK_2000x2000_BLANK_PNG.webp?v=1789401769",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_S_1_C01002239259.webp?v=1789047544",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_S_2_C01002239259.webp?v=1789047543",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_S_3_C01002239259.webp?v=1789047544",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_S_4_C01002239259.webp?v=1789047544",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_S_5_C01002239259.webp?v=1789047543",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DWAYNE_BLANK_BACK_BLANK_F6F6F6_BLANK_2000x2000_BLANK_PNG.webp?v=1789401768"
+      ],
+      "variants": [
+        {
+          "id": 57253535056250,
+          "sku": "C01002239259001",
+          "size": "S",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57253535089018,
+          "sku": "C01002239259002",
+          "size": "M",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57253535121786,
+          "sku": "C01002239259003",
+          "size": "L",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57253535154554,
+          "sku": "C01002239259004",
+          "size": "XL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57253535187322,
+          "sku": "C01002239259005",
+          "size": "XXL",
+          "price": "99.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Dwayne",
+      "colorName": "Blue Navy",
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-men"
+      ]
+    },
+    {
+      "id": 16199062749562,
+      "handle": "dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+      "title": "Dayton - Limited Edition Insulating golf mid layer",
+      "body_html": "Dayton is an Online Exclusive, high-tech men’s golf mid layer designed to provide warmth, comfort, and freedom of movement. Made from a new generation of INSULA™ fabric using recycled plastic bottles, the soft and stretchy material is also bluesign® approved. We recommend sizing up if you prefer a looser fit.\n\n\nThis versatile half-zip is highly breathable and provides warming effect #2 for excellent thermal insulation. Wear Dayton as an insulating mid layer on cooler days or as an outer layer in milder conditions, both on and off the golf course.",
+      "tags": [
+        "Blue",
+        "Halfzip",
+        "INSULA™ Warming effect #2",
+        "Men",
+        "MEN TORSO",
+        "Mid layer - Half Zip",
+        "Rainy & Cold",
+        "Sunny & Cold",
+        "Windy & Cold"
+      ],
+      "published_at": "2026-09-30T08:00:00+02:00",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_BLANK_FRONT_BLANK_F6F6F6_BLANK_2000x2000_BLANK_PNG.webp?v=1789401762",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_S_1_C01002229259.webp?v=1789118359",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_S_2_C01002229259.webp?v=1789118357",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_S_3_C01002229259.webp?v=1789118360",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_S_5_C01002229259.webp?v=1789118358",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_S_6_C01002229259.webp?v=1789118357",
+        "https://cdn.shopify.com/s/files/1/0607/9430/6718/files/DAYTON_BLANK_BACK_BLANK_F6F6F6_BLANK_2000x2000_BLANK_PNG.webp?v=1789401764"
+      ],
+      "variants": [
+        {
+          "id": 57255855882618,
+          "sku": "C01002229259001",
+          "size": "S",
+          "price": "89.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57255855915386,
+          "sku": "C01002229259002",
+          "size": "M",
+          "price": "89.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57255855948154,
+          "sku": "C01002229259003",
+          "size": "L",
+          "price": "89.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57255855980922,
+          "sku": "C01002229259004",
+          "size": "XL",
+          "price": "89.00",
+          "compare_at_price": null,
+          "available": true
+        },
+        {
+          "id": 57255856013690,
+          "sku": "C01002229259005",
+          "size": "XXL",
+          "price": "89.00",
+          "compare_at_price": null,
+          "available": true
+        }
+      ],
+      "styleName": "Dayton",
+      "colorName": "Blue Navy",
+      "collection": "gg-new-men",
+      "collections": [
+        "gg-new-men",
+        "gg-men"
       ]
     }
   ],

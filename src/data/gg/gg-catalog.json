@@ -1532,10 +1532,13 @@
     "price": 105000,
     "compareAtPrice": 137000,
     "category": "sports",
-    "subcategory": "gg-accessories",
-    "ggCollections": [],
+    "subcategory": "gg-sale",
+    "ggCollections": [
+      "gg-sale"
+    ],
     "tags": [
-      "galvin-green"
+      "galvin-green",
+      "gg-sale"
     ],
     "descriptionKo": "Arnie 방수 골프 모자에는 플리스 안감과 이어플랩이 있어 따뜻함을 더해줍니다. 뒷면의 벨크로와 고무줄로 너비를 조절할 수 있어 꼭 맞는 핏을 보장합니다. 소형 사이즈의 둘레는 54~56cm(21.3~22인치), 중형 사이즈는 56~58cm(22~22.8인치), 대형 사이즈는 60~62cm(23.6~24.4인치)입니다. Arnie는 따뜻한 안감과 이어 플랩이 있는 솔기가 완전히 밀봉된 방수 골프 모자입니다. 비와 추위 속에서 플레이하는 골퍼를 위해 디자인된 이 방수 및 방풍 GORE-TEX 모자는 통기성이 뛰어나고 가벼워 방해 요소를 최소화하고 편안함을 극대화합니다. DRYVR™ 방수 컬렉션의 수상 경력에 빛나는 골프 비옷으로 건조한 상태를 유지하세요.",
     "image": "/products/gg-pdp/arnie-waterproof-cap-black/1.jpg",
@@ -1549,7 +1552,7 @@
     ],
     "hoverImage": "/products/gg-pdp/arnie-waterproof-cap-black/2.jpg",
     "accent": "#243447",
-    "badge": null,
+    "badge": "Sale",
     "gbpPrice": 34.3,
     "sku": "A01000309403001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/arnie-waterproof-cap-black",
@@ -1624,7 +1627,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "54/S",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-arnie-waterproof-cap-black-56-m",
@@ -1649,7 +1654,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "56/M",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-arnie-waterproof-cap-black-58-l",
@@ -1670,11 +1677,13 @@
         ],
         "hoverImage": "/products/gg-pdp/arnie-waterproof-cap-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/arnie-waterproof-cap-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "58/L",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       }
     ]
   },
@@ -7468,7 +7477,7 @@
         ],
         "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-storm-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-storm-blue-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "storm-blue-navy",
         "colorNameKo": "스톰 블루 네이비",
         "size": "M",
@@ -10515,7 +10524,7 @@
         ],
         "hoverImage": "/products/gg-pdp/air-waterproof-golf-jacket-black-forged-iron/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/air-waterproof-golf-jacket-black-forged-iron",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black-forged-iron",
         "colorNameKo": "블랙 포지드 아이언",
         "size": "XL",
@@ -10731,7 +10740,7 @@
         ],
         "hoverImage": "/products/gg-pdp/air-waterproof-short-sleeve-golf-jacket-navy-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/air-waterproof-short-sleeve-golf-jacket-navy-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy-white",
         "colorNameKo": "네이비 화이트",
         "size": "M",
@@ -20614,7 +20623,7 @@
         ],
         "hoverImage": "/products/gg-pdp/april-waterproof-pants-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/april-waterproof-pants-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "M - Short",
@@ -21227,13 +21236,10 @@
     "price": 373000,
     "compareAtPrice": 609000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "안감이 있는 여성용 GORE-TEX 골프 재킷입니다.",
     "image": "/products/gg-pdp/arissa-waterproof-jacket-black/1.jpg",
@@ -21247,7 +21253,7 @@
     ],
     "hoverImage": "/products/gg-pdp/arissa-waterproof-jacket-black/2.jpg",
     "accent": "#1A2E28",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 167.4,
     "sku": "G89039403B3",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/arissa-waterproof-jacket-black",
@@ -21304,9 +21310,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arissa-waterproof-jacket-black-s",
@@ -21331,9 +21335,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arissa-waterproof-jacket-black-m",
@@ -21358,9 +21360,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arissa-waterproof-jacket-black-l",
@@ -21385,9 +21385,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -23030,7 +23028,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-m",
@@ -23055,7 +23055,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-l",
@@ -23080,7 +23082,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-xl",
@@ -23105,7 +23109,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-xxl",
@@ -23130,7 +23136,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-3xl",
@@ -23155,7 +23163,9 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-black-white-red-s",
@@ -29152,7 +29162,7 @@
         ],
         "hoverImage": "/products/gg-pdp/chester-merino-sweater-blue-melange/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/chester-merino-sweater-blue-melange",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "blue-melange",
         "colorNameKo": "블루 Melange",
         "size": "XXL",
@@ -30636,9 +30646,7 @@
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "S",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dalton-insulating-golf-mid-layer-black-royal-blue-m",
@@ -30663,9 +30671,7 @@
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "M",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dalton-insulating-golf-mid-layer-black-royal-blue-l",
@@ -30690,9 +30696,7 @@
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "L",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dalton-insulating-golf-mid-layer-black-royal-blue-xl",
@@ -30717,9 +30721,7 @@
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "XL",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dalton-insulating-golf-mid-layer-black-royal-blue-xxl",
@@ -30744,9 +30746,7 @@
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "XXL",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dalton-insulating-golf-mid-layer-black-white-orange-s",
@@ -30934,7 +30934,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dalton-insulating-golf-mid-layer-crystal-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dalton-insulating-golf-mid-layer-crystal-blue-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "crystal-blue-navy",
         "colorNameKo": "크리스탈 블루 네이비",
         "size": "M",
@@ -31597,7 +31597,7 @@
         ],
         "hoverImage": "/products/gg-pdp/danby-insulating-golf-mid-layer-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/danby-insulating-golf-mid-layer-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XL",
@@ -36228,7 +36228,7 @@
         ],
         "hoverImage": "/products/gg-pdp/daxton-insulating-mid-layer-orange/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/daxton-insulating-mid-layer-orange",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "orange",
         "colorNameKo": "오렌지",
         "size": "L",
@@ -36636,7 +36636,7 @@
         ],
         "hoverImage": "/products/gg-pdp/daxton-insulating-mid-layer-sunny-lime-cool-grey-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/daxton-insulating-mid-layer-sunny-lime-cool-grey-white",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "sunny-lime-cool-grey-white",
         "colorNameKo": "Sunny 라임 Cool 그레이 화이트",
         "size": "S",
@@ -36782,6 +36782,211 @@
     ]
   },
   {
+    "id": "gg-dayton",
+    "name": "Dayton - Limited Edition Insulating golf mid layer",
+    "nameKo": "Dayton - Limited Edition 보온 golf 미드레이어",
+    "brand": "Galvin Green",
+    "price": 221000,
+    "compareAtPrice": null,
+    "category": "sports",
+    "subcategory": "gg-new-men",
+    "ggCollections": [
+      "gg-new-men",
+      "gg-men"
+    ],
+    "tags": [
+      "galvin-green",
+      "gg-new-men",
+      "gg-men"
+    ],
+    "descriptionKo": "Dayton은 따뜻함, 편안함, 자유로운 움직임을 제공하도록 설계된 온라인 전용 하이테크 남성용 골프 미드 레이어입니다. 재활용 플라스틱 병을 사용하는 차세대 INSULA™ 패브릭으로 제작된 부드럽고 신축성 있는 소재는 bluesign® 승인을 받았습니다. 좀 더 루즈한 핏을 선호한다면 사이즈업을 권장합니다. 이 다재다능한 하프 지퍼는 통기성이 뛰어나며 보온 효과 #2를 제공하여 뛰어난 보온성을 제공합니다. 추운 날에는 Dayton을 단열 중간 레이어로 착용하고, 골프장 안팎에서 온화한 날씨에는 외부 레이어로 착용하세요.",
+    "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+    "images": [
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+      "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+    ],
+    "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+    "accent": "#1F4D3A",
+    "badge": "New",
+    "gbpPrice": 89.0,
+    "sku": "C01002229259001",
+    "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+    "registeredAt": "2026-10-03T19:31:14.000Z",
+    "editTier": "new",
+    "storySections": [
+      {
+        "titleKo": "Dayton - Limited Edition 보온 golf 미드레이어",
+        "bodyKo": "Dayton은 따뜻함, 편안함, 자유로운 움직임을 제공하도록 설계된 온라인 전용 하이테크 남성용 골프 미드 레이어입니다. 재활용 플라스틱 병을 사용하는 차세대 INSULA™ 패브릭으로 제작된 부드럽고 신축성 있는 소재는 bluesign® 승인을 받았습니다. 좀 더 루즈한 핏을 선호한다면 사이즈업을 권장합니다.",
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "reverse": false
+      },
+      {
+        "titleKo": "소재 · 테크",
+        "bodyKo": "이 다재다능한 하프 지퍼는 통기성이 뛰어나며 보온 효과 #2를 제공하여 뛰어난 보온성을 제공합니다. 추운 날에는 Dayton을 단열 중간 레이어로 착용하고, 골프장 안팎에서 온화한 날씨에는 외부 레이어로 착용하세요.",
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "reverse": true
+      }
+    ],
+    "featuresKo": null,
+    "techSpecs": [
+      {
+        "labelKo": "소재 · 테크",
+        "valueKo": "INSULA™ Warming effect #2"
+      },
+      {
+        "labelKo": "소재 · 테크",
+        "valueKo": "Mid layer - Half Zip"
+      }
+    ],
+    "variants": [
+      {
+        "id": "gg-dayton-limited-edition-insulating-golf-mid-layer-blue-navy-s",
+        "name": "Blue Navy / S",
+        "nameKo": "블루 네이비 / S",
+        "sku": "C01002229259001",
+        "gbpPrice": 89.0,
+        "price": 221000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "S",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dayton-limited-edition-insulating-golf-mid-layer-blue-navy-m",
+        "name": "Blue Navy / M",
+        "nameKo": "블루 네이비 / M",
+        "sku": "C01002229259002",
+        "gbpPrice": 89.0,
+        "price": 221000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "M",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dayton-limited-edition-insulating-golf-mid-layer-blue-navy-l",
+        "name": "Blue Navy / L",
+        "nameKo": "블루 네이비 / L",
+        "sku": "C01002229259003",
+        "gbpPrice": 89.0,
+        "price": 221000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "L",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dayton-limited-edition-insulating-golf-mid-layer-blue-navy-xl",
+        "name": "Blue Navy / XL",
+        "nameKo": "블루 네이비 / XL",
+        "sku": "C01002229259004",
+        "gbpPrice": 89.0,
+        "price": 221000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "XL",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dayton-limited-edition-insulating-golf-mid-layer-blue-navy-xxl",
+        "name": "Blue Navy / XXL",
+        "nameKo": "블루 네이비 / XXL",
+        "sku": "C01002229259005",
+        "gbpPrice": 89.0,
+        "price": 221000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dayton-limited-edition-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dayton-limited-edition-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "XXL",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      }
+    ],
+    "newBadgeAt": "2026-10-03T19:31:14.000Z"
+  },
+  {
     "id": "gg-dean",
     "name": "Dean - Insulating golf mid layer",
     "nameKo": "Dean - 보온 golf 미드레이어",
@@ -36818,7 +37023,7 @@
       "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-orange/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#24302A",
     "badge": "Best",
     "gbpPrice": 83.4,
     "sku": "C01000848669001",
@@ -37221,7 +37426,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dean-insulating-golf-mid-layer-crystal-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dean-insulating-golf-mid-layer-crystal-blue-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "crystal-blue-navy",
         "colorNameKo": "크리스탈 블루 네이비",
         "size": "M",
@@ -37857,7 +38062,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dean-insulating-golf-mid-layer-sand-navy-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dean-insulating-golf-mid-layer-sand-navy-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "sand-navy-white",
         "colorNameKo": "샌드 네이비 화이트",
         "size": "M",
@@ -38478,7 +38683,7 @@
       "/products/gg-pdp/del-insulating-vest-atlantis-green-melange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/del-insulating-golf-vest-crystal-blue-melange/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2A4038",
     "badge": "Best",
     "gbpPrice": 39.0,
     "sku": "C01000439390001",
@@ -39188,7 +39393,7 @@
       "/products/gg-pdp/denise-insulating-sweatshirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/denise-insulating-golf-sweatshirt-crystal-blue/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "C01000538759001",
@@ -39568,7 +39773,7 @@
       "/products/gg-pdp/dennis-insulating-mid-layer-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dennis-insulating-mid-layer-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 83.3,
     "sku": "G12519403B4",
@@ -39939,7 +40144,7 @@
       "/products/gg-pdp/desmond-insulating-sweatshirt-grey-melange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/desmond-insulating-sweatshirt-grey-melange/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#243447",
     "badge": null,
     "gbpPrice": 76.3,
     "sku": "C01000289112001",
@@ -40132,7 +40337,7 @@
       "/products/gg-pdp/dexter-insulating-mid-layer-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dexter-insulating-mid-layer-black-white/2.jpg",
-    "accent": "#243447",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 118.3,
     "sku": "C01000309020001",
@@ -40512,7 +40717,7 @@
       "/products/gg-pdp/dina-insulating-mid-layer-light-coral/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dina-insulating-mid-layer-light-blue/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 76.3,
     "sku": "C01000339379001",
@@ -40908,7 +41113,7 @@
       "/products/gg-pdp/dion-insulating-golf-mid-layer-crystal-blue-melange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dion-insulating-golf-mid-layer-black/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2428",
     "badge": "Best",
     "gbpPrice": 47.4,
     "sku": "C01000429403001",
@@ -41796,7 +42001,7 @@
       "/products/gg-pdp/diora-insulating-golf-mid-layer-crystal-blue-melange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/diora-insulating-golf-mid-layer-black/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1A2E28",
     "gbpPrice": 47.4,
     "sku": "C01000449403001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/diora-insulating-golf-mid-layer-black",
@@ -43345,7 +43550,7 @@
       "/products/gg-pdp/dixie-insulating-golf-mid-layer-fuchsia-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#1F4D3A",
     "gbpPrice": 83.4,
     "sku": "C01000698705001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-crystal-blue-white",
@@ -43950,7 +44155,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dixie-insulating-golf-mid-layer-storm-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-storm-blue-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "storm-blue-navy",
         "colorNameKo": "스톰 블루 네이비",
         "size": "M",
@@ -44240,7 +44445,7 @@
       "/products/gg-pdp/dixon-insulating-mid-layer-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dixon-insulating-mid-layer-black/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "C01000329403001",
@@ -45010,7 +45215,7 @@
       "/products/gg-pdp/dolly-insulating-mid-layer-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dolly-insulating-mid-layer-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 59.4,
     "sku": "C01000119403001",
@@ -45711,7 +45916,7 @@
       "/products/gg-pdp/upe-dolly-insulating-mid-layer-multicolor-na/3.jpg"
     ],
     "hoverImage": "/products/gg-pdp/upe-dolly-insulating-mid-layer-multicolor-na/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 49.0,
     "sku": "S21459995B3",
@@ -45899,7 +46104,7 @@
       "/products/gg-pdp/don-insulating-golf-mid-layer-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/don-insulating-golf-mid-layer-black-white/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#1E3A4A",
     "badge": null,
     "gbpPrice": 109.0,
     "sku": "C01001009020001",
@@ -46366,7 +46571,7 @@
       "/products/gg-pdp/donald-insulating-mid-layer-forged-iron-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/donald-insulating-mid-layer-blue-navy-white/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 89.4,
     "sku": "C01000019167001",
@@ -46758,7 +46963,7 @@
       "/products/gg-pdp/donella-insulating-mid-layer-blue-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/donella-insulating-mid-layer-black-white-cool-grey/2.jpg",
-    "accent": "#243447",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 77.4,
     "sku": "C01000059376001",
@@ -47636,7 +47841,7 @@
       "/products/gg-pdp/donnie-insulating-golf-sweatshirt-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#3A2F28",
     "badge": null,
     "gbpPrice": 119.0,
     "sku": "C01000518759001",
@@ -48664,7 +48869,7 @@
       "/products/gg-pdp/donya-insulating-mid-layer-sugar-alaskan-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/donya-insulating-mid-layer-navy/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "C01000149405001",
@@ -49377,7 +49582,7 @@
       "/products/gg-pdp/dorali-insulating-mid-layer-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dorali-insulating-mid-layer-cool-grey/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1A2E28",
     "badge": null,
     "gbpPrice": 53.4,
     "sku": "G21509408B3",
@@ -49745,7 +49950,7 @@
       "/products/gg-pdp/douglas-insulating-mid-layer-sharkskin-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/douglas-insulating-mid-layer-cool-grey-navy/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 95.4,
     "sku": "C01000549094001",
@@ -50111,7 +50316,7 @@
         ],
         "hoverImage": "/products/gg-pdp/douglas-insulating-mid-layer-white-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/douglas-insulating-mid-layer-white-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "white-black",
         "colorNameKo": "화이트 블랙",
         "size": "L",
@@ -50212,7 +50417,7 @@
       "/products/gg-pdp/drake-insulating-golf-mid-layer-atlantis-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/drake-insulating-golf-mid-layer-alaskan-blue/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#24302A",
     "badge": "Best",
     "gbpPrice": 59.4,
     "sku": "C01000219645001",
@@ -51659,7 +51864,7 @@
       "/products/gg-pdp/duncan-insulating-golf-mid-layer-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/duncan-insulating-golf-mid-layer-white/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 95.4,
     "sku": "C01000799409001",
@@ -51850,7 +52055,7 @@
       "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 95.4,
     "sku": "C01001048746001",
@@ -52041,7 +52246,7 @@
       "/products/gg-pdp/durante-insulating-mid-layer-blue-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/durante-insulating-mid-layer-blue-navy-white/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 111.3,
     "sku": "C01000079167001",
@@ -52239,6 +52444,211 @@
     ]
   },
   {
+    "id": "gg-dwayne",
+    "name": "Dwayne - Limited Edition Insulating golf mid layer",
+    "nameKo": "Dwayne - Limited Edition 보온 golf 미드레이어",
+    "brand": "Galvin Green",
+    "price": 242000,
+    "compareAtPrice": null,
+    "category": "sports",
+    "subcategory": "gg-new-men",
+    "ggCollections": [
+      "gg-new-men",
+      "gg-men"
+    ],
+    "tags": [
+      "galvin-green",
+      "gg-new-men",
+      "gg-men"
+    ],
+    "descriptionKo": "온라인으로만 독점 판매되는 Dwayne은 움직임의 자유를 제한하지 않으면서도 따뜻함을 유지하도록 디자인된 가벼운 남성용 골프 후드티입니다. 부드럽고 유연하며 통기성이 뛰어난 이 소재는 추운 날씨에는 재킷 아래에 편안한 보온 기능을 제공하고, 온화한 날에는 셔츠 위에 아우터 레이어로 완벽하게 작동합니다. 드웨인은 갈빈 그린의 INSULA™ 보온효과 #2 원단으로 제작되었습니다. 신축성이 있고 속건성이 뛰어난 소재는 통기성이 뛰어나며 피부에 닿는 느낌이 매우 부드럽습니다. 이 bluesign® 승인 온라인 독점 후드티는 골프, 훈련, 산책 및 기타 일상 활동을 위한 다양한 선택입니다.",
+    "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+    "images": [
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+      "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+    ],
+    "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+    "accent": "#243447",
+    "badge": "New",
+    "gbpPrice": 99.0,
+    "sku": "C01002239259001",
+    "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+    "registeredAt": "2026-10-03T19:31:39.000Z",
+    "editTier": "new",
+    "storySections": [
+      {
+        "titleKo": "Dwayne - Limited Edition 보온 golf 미드레이어",
+        "bodyKo": "온라인으로만 독점 판매되는 Dwayne은 움직임의 자유를 제한하지 않으면서도 따뜻함을 유지하도록 디자인된 가벼운 남성용 골프 후드티입니다. 부드럽고 유연하며 통기성이 뛰어난 이 소재는 추운 날씨에는 재킷 아래에 편안한 보온 기능을 제공하고, 온화한 날에는 셔츠 위에 아우터 레이어로 완벽하게 작동합니다.",
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "reverse": false
+      },
+      {
+        "titleKo": "소재 · 테크",
+        "bodyKo": "드웨인은 갈빈 그린의 INSULA™ 보온효과 #2 원단으로 제작되었습니다. 신축성이 있고 속건성이 뛰어난 소재는 통기성이 뛰어나며 피부에 닿는 느낌이 매우 부드럽습니다. 이 bluesign® 승인 온라인 독점 후드티는 골프, 훈련, 산책 및 기타 일상 활동을 위한 다양한 선택입니다.",
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "reverse": true
+      }
+    ],
+    "featuresKo": null,
+    "techSpecs": [
+      {
+        "labelKo": "소재 · 테크",
+        "valueKo": "INSULA™ Warming effect #2"
+      },
+      {
+        "labelKo": "소재 · 테크",
+        "valueKo": "Mid Layer - Hoodie"
+      }
+    ],
+    "variants": [
+      {
+        "id": "gg-dwayne-limited-insulating-golf-mid-layer-blue-navy-s",
+        "name": "Blue Navy / S",
+        "nameKo": "블루 네이비 / S",
+        "sku": "C01002239259001",
+        "gbpPrice": 99.0,
+        "price": 242000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "S",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dwayne-limited-insulating-golf-mid-layer-blue-navy-m",
+        "name": "Blue Navy / M",
+        "nameKo": "블루 네이비 / M",
+        "sku": "C01002239259002",
+        "gbpPrice": 99.0,
+        "price": 242000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "M",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dwayne-limited-insulating-golf-mid-layer-blue-navy-l",
+        "name": "Blue Navy / L",
+        "nameKo": "블루 네이비 / L",
+        "sku": "C01002239259003",
+        "gbpPrice": 99.0,
+        "price": 242000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "L",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dwayne-limited-insulating-golf-mid-layer-blue-navy-xl",
+        "name": "Blue Navy / XL",
+        "nameKo": "블루 네이비 / XL",
+        "sku": "C01002239259004",
+        "gbpPrice": 99.0,
+        "price": 242000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "XL",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      },
+      {
+        "id": "gg-dwayne-limited-insulating-golf-mid-layer-blue-navy-xxl",
+        "name": "Blue Navy / XXL",
+        "nameKo": "블루 네이비 / XXL",
+        "sku": "C01002239259005",
+        "gbpPrice": 99.0,
+        "price": 242000,
+        "compareAtPrice": null,
+        "image": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+        "images": [
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/1.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/3.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/4.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/5.jpg",
+          "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/dwayne-limited-insulating-golf-mid-layer-blue-navy/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/dwayne-limited-insulating-golf-mid-layer-blue-navy",
+        "inStock": true,
+        "colorKey": "blue-navy",
+        "colorNameKo": "블루 네이비",
+        "size": "XXL",
+        "ggCollections": [
+          "gg-new-men",
+          "gg-men"
+        ]
+      }
+    ],
+    "newBadgeAt": "2026-10-03T19:31:39.000Z"
+  },
+  {
     "id": "gg-ebba",
     "name": "Ebba - Thermal base layer golf leggings",
     "nameKo": "Ebba - Thermal base 레이어 golf leggings",
@@ -52273,7 +52683,7 @@
       "/products/gg-pdp/ebba-thermal-base-layer-leggings-navy-blue-bell/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/ebba-thermal-base-layer-leggings-black-red/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 41.4,
     "sku": "E01000079107001",
@@ -52630,7 +53040,7 @@
       "/products/gg-pdp/edwin-thermal-base-layer-top-navy-blue-bell/2.jpg"
     ],
     "hoverImage": "/products/gg-pdp/edwin-thermal-base-layer-top-black/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": null,
     "gbpPrice": 69.0,
     "sku": "E01000089403001",
@@ -53355,7 +53765,7 @@
       "/products/gg-pdp/elaine-thermal-base-layer-top-navy-blue-bell/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/elaine-thermal-base-layer-top-black-red/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Best",
     "gbpPrice": 41.4,
     "sku": "E01000059107001",
@@ -53837,7 +54247,7 @@
       "/products/gg-pdp/elias-uv-protection-top-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/elias-uv-protection-top-white/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": null,
     "gbpPrice": 69.0,
     "sku": "E01000129409001",
@@ -54063,7 +54473,7 @@
       "/products/gg-pdp/ella-uv-protection-top-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/ella-uv-protection-top-navy-white/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Best",
     "gbpPrice": 48.3,
     "sku": "E01000049349001",
@@ -54484,7 +54894,7 @@
       "/products/gg-pdp/elmo-thermal-base-layer-top-navy-blue-bell/2.jpg"
     ],
     "hoverImage": "/products/gg-pdp/elmo-thermal-base-layer-top-black/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Best",
     "gbpPrice": 39.0,
     "sku": "E01000019403001",
@@ -55217,7 +55627,7 @@
       "/products/gg-pdp/elof-thermal-base-layer-leggings-navy-blue-bell/2.jpg"
     ],
     "hoverImage": "/products/gg-pdp/elof-thermal-base-layer-leggings-black/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": null,
     "gbpPrice": 69.0,
     "sku": "E01000069403001",
@@ -55804,7 +56214,7 @@
       "/products/gg-pdp/emilio-thermal-base-layer-top-navy-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/emilio-thermal-base-layer-top-black-sharkskin/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 45.0,
     "sku": "E01000139350001",
@@ -56145,7 +56555,7 @@
       "/products/gg-pdp/enzo-uv-protection-top-navy-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/enzo-uv-protection-top-navy-blue/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 45.5,
     "sku": "E01000039650001",
@@ -56367,7 +56777,7 @@
       "/products/gg-pdp/ethan-thermal-base-layer-top-blue-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/ethan-thermal-base-layer-top-black-sharkskin/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 52.5,
     "sku": "E01000029350001",
@@ -56718,7 +57128,7 @@
       "/products/gg-pdp/harry-waterproof-jacket-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/harry-waterproof-jacket-black/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 314.3,
     "sku": "G11039403B3",
@@ -56977,7 +57387,7 @@
       "/products/gg-pdp/hugo-windproof-and-water-repellent-jacket-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/hugo-windproof-and-water-repellent-jacket-black/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 251.3,
     "sku": "A50209403000",
@@ -57231,7 +57641,7 @@
       "/products/gg-pdp/lamar-windproof-and-water-repellent-golf-vest-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lamar-windproof-and-water-repellent-golf-vest-jungle-green/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "gbpPrice": 229.0,
     "sku": "B01000668668001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/lamar-windproof-and-water-repellent-golf-vest-jungle-green",
@@ -57578,7 +57988,7 @@
       "/products/gg-pdp/lane-windproof-and-water-repellent-pants-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lane-windproof-and-water-repellent-pants-black/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Best",
     "gbpPrice": 139.0,
     "sku": "B01000089403002",
@@ -58363,7 +58773,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lane-windproof-and-water-repellent-pants-sharkskin/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lane-windproof-and-water-repellent-pants-sharkskin",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "32/32",
@@ -58568,7 +58978,7 @@
       "/products/gg-pdp/larissa-windproof-and-water-repellent-jacket-blue-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/larissa-windproof-and-water-repellent-jacket-alaskan-blue-white/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 153.3,
     "sku": "B01000189851001",
@@ -59477,7 +59887,7 @@
       "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/larry-windproof-and-water-repellant-golf-jacket-black/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": null,
     "gbpPrice": 139.0,
     "sku": "B01000439403001",
@@ -59964,7 +60374,7 @@
       "/products/gg-pdp/lathan-windproof-and-water-repellent-vest-cool-grey-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lathan-windproof-and-water-repellent-vest-cool-grey-navy/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 118.3,
     "sku": "B01000029094001",
@@ -60219,7 +60629,7 @@
       "/products/gg-pdp/laurent-windproof-and-water-repellant-golf-jacket-fresh-green-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/laurent-windproof-and-water-repellant-golf-jacket-forged-iron-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 119.4,
     "sku": "B01000349237001",
@@ -60715,7 +61125,7 @@
       "/products/gg-pdp/lauro-windproof-and-water-repellent-vest-white-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lauro-windproof-and-water-repellent-vest-navy/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 139.3,
     "sku": "B01000259405001",
@@ -61076,7 +61486,7 @@
       "/products/gg-pdp/lawrence-windproof-and-water-repellent-jacket-cool-grey-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lawrence-windproof-and-water-repellent-jacket-blue-navy-white/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 139.3,
     "sku": "B01000059167001",
@@ -61790,7 +62200,7 @@
       "/products/gg-pdp/layton-windproof-and-water-repellent-jacket-white-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/layton-windproof-and-water-repellent-jacket-cool-grey-navy/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 174.3,
     "sku": "B01000249094001",
@@ -62141,7 +62551,7 @@
       "/products/gg-pdp/lea-windproof-and-water-repellant-golf-vest-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lea-windproof-and-water-repellant-golf-vest-navy-white/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 118.3,
     "sku": "B01000369349001",
@@ -62562,7 +62972,7 @@
       "/products/gg-pdp/leandro-windproof-and-water-repellent-golf-jacket-navy-storm-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/leandro-windproof-and-water-repellent-golf-jacket-black-forged-iron/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": null,
     "gbpPrice": 188.3,
     "sku": "B01000559366001",
@@ -62910,7 +63320,7 @@
       "/products/gg-pdp/legend-windproof-and-water-repellent-golf-shirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/legend-windproof-and-water-repellent-golf-shirt-jungle-green/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "gbpPrice": 269.0,
     "sku": "B01000598668001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/legend-windproof-and-water-repellent-golf-shirt-jungle-green",
@@ -63249,7 +63659,7 @@
       "/products/gg-pdp/lene-windproof-and-water-repellent-vest-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lene-windproof-and-water-repellent-vest-black/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 146.3,
     "sku": "B01000169403001",
@@ -63490,7 +63900,7 @@
       "/products/gg-pdp/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": null,
     "gbpPrice": 174.3,
     "sku": "B01000458743001",
@@ -63701,7 +64111,7 @@
       "/products/gg-pdp/lennox-windproof-and-water-repellent-vest-navy-white-red/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lennox-windproof-and-water-repellent-vest-black/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 160.3,
     "sku": "B01000469403001",
@@ -64057,7 +64467,7 @@
       "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": null,
     "gbpPrice": 169.0,
     "sku": "B01000339403001",
@@ -64293,7 +64703,7 @@
         ],
         "hoverImage": "/products/gg-pdp/leo-windproof-and-water-repellant-golf-vest-forged-iron-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/leo-windproof-and-water-repellant-golf-vest-forged-iron-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "M",
@@ -64687,7 +65097,7 @@
       "/products/gg-pdp/leonard-windproof-and-water-repellent-jacket-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/leonard-windproof-and-water-repellent-jacket-black/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 174.3,
     "sku": "B01000049403001",
@@ -65269,7 +65679,7 @@
       "/products/gg-pdp/leora-windproof-and-water-repellent-jacket-camelia-rose/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/leora-windproof-and-water-repellent-jacket-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 143.4,
     "sku": "B01000039403001",
@@ -65848,7 +66258,7 @@
       "/products/gg-pdp/leroy-windproof-and-water-repellent-vest-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/leroy-windproof-and-water-repellent-vest-cool-grey/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 146.3,
     "sku": "B01000149408001",
@@ -66207,7 +66617,7 @@
       "/products/gg-pdp/levana-windproof-and-water-repellent-pants-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Best",
     "gbpPrice": 139.0,
     "sku": "B01000099403001",
@@ -66681,7 +67091,7 @@
       "/products/gg-pdp/lilly-windproof-and-water-repellant-golf-jacket-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lilly-windproof-and-water-repellant-golf-jacket-moonlight-blue/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": null,
     "gbpPrice": 149.0,
     "sku": "B01000428840001",
@@ -66906,7 +67316,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lilly-windproof-and-water-repellant-golf-jacket-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lilly-windproof-and-water-repellant-golf-jacket-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XS",
@@ -66960,7 +67370,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lilly-windproof-and-water-repellant-golf-jacket-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lilly-windproof-and-water-repellant-golf-jacket-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "M",
@@ -67078,7 +67488,7 @@
       "/products/gg-pdp/linc-windproof-and-water-repellent-jacket-sharkskin/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/linc-windproof-and-water-repellent-jacket-sharkskin/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 149.4,
     "sku": "G11289407B4",
@@ -67291,7 +67701,7 @@
       "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/linden-hooded-golf-windbreaker-white-sand/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 174.3,
     "sku": "B01000568741001",
@@ -67518,7 +67928,7 @@
       "/products/gg-pdp/lion-windproof-and-water-repellent-vest-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lion-windproof-and-water-repellent-vest-black/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 101.4,
     "sku": "G12249403B4",
@@ -68072,7 +68482,7 @@
       "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-moonlight-blue-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lissy-windproof-and-water-repellant-golf-jacket-fresh-green-white/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 160.3,
     "sku": "B01000378828001",
@@ -68995,7 +69405,7 @@
       "/products/gg-pdp/livingston-windproof-and-water-repellent-short-sleeve-jacket-white-navy-orange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/livingston-windproof-and-water-repellent-short-sleeve-jacket-white-navy-orange/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 132.3,
     "sku": "B01000179238001",
@@ -69223,7 +69633,7 @@
       "/products/gg-pdp/lloyd-windproof-and-water-repellant-golf-jacket-navy-red-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lloyd-windproof-and-water-repellant-golf-jacket-black-forged-iron/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "gbpPrice": 160.3,
     "sku": "B01000449366001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/lloyd-windproof-and-water-repellant-golf-jacket-black-forged-iron",
@@ -70282,7 +70692,7 @@
       "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "gbpPrice": 259.0,
     "sku": "B01000609403001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/london-windproof-and-water-repellent-golf-jacket-black",
@@ -70484,7 +70894,7 @@
         ],
         "hoverImage": "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/london-windproof-and-water-repellent-golf-jacket-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "S",
@@ -70777,7 +71187,7 @@
       "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-forged-iron-black/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "gbpPrice": 219.0,
     "sku": "B01000619237001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/luca-windproof-and-water-repellent-golf-vest-forged-iron-black",
@@ -71269,7 +71679,7 @@
       "/products/gg-pdp/lucien-windproof-and-water-repellent-jacket-navy-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lucien-windproof-and-water-repellent-jacket-blue-white-cool-grey/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 131.4,
     "sku": "B01000019257001",
@@ -71624,7 +72034,7 @@
       "/products/gg-pdp/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 131.4,
     "sku": "B01000269645001",
@@ -71881,7 +72291,7 @@
       "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/luis-windproof-and-water-repellent-golf-jacket-black/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Best",
     "gbpPrice": 129.0,
     "sku": "B01000549403001",
@@ -72374,7 +72784,7 @@
       "/products/gg-pdp/luke-windbreaker-jacket-duck-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/luke-windbreaker-jacket-duck-green/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": null,
     "gbpPrice": 160.3,
     "sku": "B01000209990001",
@@ -72591,7 +73001,7 @@
       "/products/gg-pdp/luna-windproof-and-water-repellent-vest-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/luna-windproof-and-water-repellent-vest-navy/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "gbpPrice": 229.0,
     "sku": "B01000489405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/luna-windproof-and-water-repellent-vest-navy",
@@ -73185,7 +73595,7 @@
       "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lydia-windproof-and-water-repellent-jacket-navy/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "gbpPrice": 239.0,
     "sku": "B01000479405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/lydia-windproof-and-water-repellent-jacket-navy",
@@ -73761,7 +74171,7 @@
       "/products/gg-pdp/lyle-windproof-and-water-repellent-jacket-sharkskin/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/lyle-windproof-and-water-repellent-jacket-sharkskin/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": null,
     "gbpPrice": 153.3,
     "sku": "G12219407B4",
@@ -74001,7 +74411,7 @@
       "/products/gg-pdp/macoy-breathable-short-sleeve-shirt-navy-red/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/macoy-breathable-short-sleeve-shirt-cool-grey-coral/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000818876001",
@@ -74329,7 +74739,7 @@
       "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-red-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maggio-breathable-short-sleeve-golf-shirt-crystal-blue-navy/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01001368712001",
@@ -74786,7 +75196,7 @@
       "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-royal-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maguire-breathable-short-sleeve-golf-shirt-crystal-blue/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01001318759001",
@@ -75251,7 +75661,7 @@
       "/products/gg-pdp/maia-breathable-short-sleeve-shirt-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maia-breathable-short-sleeve-shirt-blue-bell/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 49.0,
     "sku": "G21719410B3",
@@ -75625,7 +76035,7 @@
       "/products/gg-pdp/mallory-breathable-short-sleeve-shirt-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mallory-breathable-short-sleeve-shirt-navy-white/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000499349001",
@@ -75849,7 +76259,7 @@
       "/products/gg-pdp/mannix-breathable-short-sleeve-shirt-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mannix-breathable-short-sleeve-shirt-white-cool-grey/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01000759235001",
@@ -76054,7 +76464,7 @@
       "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Best",
     "gbpPrice": 53.4,
     "sku": "D01001338792001",
@@ -76127,7 +76537,7 @@
         ],
         "hoverImage": "/products/gg-pdp/mansfield-breathable-short-sleeve-golf-shirt-sand/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/mansfield-breathable-short-sleeve-golf-shirt-sand",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "sand",
         "colorNameKo": "샌드",
         "size": "M",
@@ -76656,7 +77066,7 @@
       "/products/gg-pdp/manuel-breathable-short-sleeve-golf-shirt-moonlight-blue-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/manuel-breathable-short-sleeve-golf-shirt-fresh-green-white/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000958828001",
@@ -76969,7 +77379,7 @@
       "/products/gg-pdp/maple-breathable-short-sleeve-golf-shirt-sharkskin/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maple-breathable-short-sleeve-golf-shirt-sharkskin/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": null,
     "gbpPrice": 53.4,
     "sku": "D01001219407001",
@@ -77156,7 +77566,7 @@
       "/products/gg-pdp/marco-breathable-short-sleeve-golf-shirt-white-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marco-breathable-short-sleeve-golf-shirt-black-orange/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "D01001468708001",
@@ -77479,7 +77889,7 @@
       "/products/gg-pdp/marie-breathable-skirt-with-inner-shorts-golf-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marie-breathable-skirt-with-inner-shorts-golf-green/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": null,
     "gbpPrice": 47.4,
     "sku": "G21769411B3",
@@ -77703,7 +78113,7 @@
       "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "gbpPrice": 41.4,
     "sku": "D01001458712001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy",
@@ -78586,7 +78996,7 @@
       "/products/gg-pdp/marlene-breathable-short-sleeve-golf-shirt-fresh-green-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marlene-breathable-short-sleeve-golf-shirt-fresh-green-white/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 45.0,
     "sku": "D01001258828001",
@@ -78810,7 +79220,7 @@
       "/products/gg-pdp/marley-breathable-short-sleeve-golf-shirt-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marley-breathable-short-sleeve-golf-shirt-moonlight-blue-white/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 41.4,
     "sku": "D01001168839001",
@@ -79348,7 +79758,7 @@
       "/products/gg-pdp/marsh-breathable-short-sleeve-golf-shirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marsh-breathable-short-sleeve-golf-shirt-jungle-green/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "gbpPrice": 109.0,
     "sku": "D01001608668001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/marsh-breathable-short-sleeve-golf-shirt-jungle-green",
@@ -79689,7 +80099,7 @@
       "/products/gg-pdp/marsha-breathable-skirt-with-inner-shorts-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marsha-breathable-skirt-with-inner-shorts-multicolor/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": null,
     "gbpPrice": 65.0,
     "sku": "D01000538829001",
@@ -80381,7 +80791,7 @@
       "/products/gg-pdp/marshall-breathable-short-sleeve-golf-shirt-white-navy-storm-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marshall-breathable-short-sleeve-golf-shirt-storm-blue-navy-white/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": null,
     "gbpPrice": 109.0,
     "sku": "D01001348674001",
@@ -80713,7 +81123,7 @@
       "/products/gg-pdp/martinez-breathable-short-sleeve-golf-shirt-pink-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/martinez-breathable-short-sleeve-golf-shirt-crystal-blue-green/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01001378730001",
@@ -81049,7 +81459,7 @@
       "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-crystal-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marty-breathable-short-sleeve-golf-shirt-black/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Best",
     "gbpPrice": 41.4,
     "sku": "D01001309403001",
@@ -82817,7 +83227,7 @@
       "/products/gg-pdp/marwin-breathable-long-sleeve-shirt-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/marwin-breathable-long-sleeve-shirt-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": null,
     "gbpPrice": 76.3,
     "sku": "D01000359403001",
@@ -83037,7 +83447,7 @@
       "/products/gg-pdp/mason-breathable-short-sleeve-shirt-super-pink/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mason-breathable-short-sleeve-shirt-orange/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 48.3,
     "sku": "D01000869394001",
@@ -83619,7 +84029,7 @@
       "/products/gg-pdp/mate-breathable-short-sleeve-shirt-sunny-lime-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mate-breathable-short-sleeve-shirt-sunny-lime-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000459845001",
@@ -83843,7 +84253,7 @@
       "/products/gg-pdp/mathew-breathable-short-sleeve-shirt-pink-base/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mathew-breathable-short-sleeve-shirt-pink-base/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 34.5,
     "sku": "G12719991B4",
@@ -84037,7 +84447,7 @@
       "/products/gg-pdp/matteo-breathable-short-sleeve-shirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/matteo-breathable-short-sleeve-shirt-navy/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": null,
     "gbpPrice": 55.3,
     "sku": "G13769405B4",
@@ -84230,7 +84640,7 @@
       "/products/gg-pdp/maxwell-breathable-short-sleeve-golf-shirt-cool-grey-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maxwell-breathable-short-sleeve-golf-shirt-black-fresh-green/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01000978810001",
@@ -84554,7 +84964,7 @@
       "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-storm-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/maya-breathable-sleeveless-golf-shirt-navy/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "gbpPrice": 79.0,
     "sku": "D01001659405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/maya-breathable-sleeveless-golf-shirt-navy",
@@ -84951,7 +85361,7 @@
       "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-royal-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-black-orange/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": null,
     "gbpPrice": 89.0,
     "sku": "D01001688708001",
@@ -85661,7 +86071,7 @@
       "/products/gg-pdp/meg-breathable-sleeveless-shirt-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/meg-breathable-sleeveless-shirt-black-white/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 39.0,
     "sku": "D01000149020001",
@@ -86197,7 +86607,7 @@
       "/products/gg-pdp/melanie-breathable-short-sleeve-shirt-navy-white-cool-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/melanie-breathable-short-sleeve-shirt-navy-white-cool-grey/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 39.0,
     "sku": "D01000169255001",
@@ -86427,7 +86837,7 @@
       "/products/gg-pdp/melody-breathable-short-sleeve-shirt-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/melody-breathable-short-sleeve-shirt-alaskan-blue/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 39.0,
     "sku": "D01000159645001",
@@ -87287,7 +87697,7 @@
       "/products/gg-pdp/melvin-breathable-short-sleeve-shirt-black-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/melvin-breathable-short-sleeve-shirt-atlantis-green-white/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000778874001",
@@ -87751,7 +88161,7 @@
       "/products/gg-pdp/memo-breathable-short-sleeve-golf-shirt-moonlight-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/memo-breathable-short-sleeve-golf-shirt-moonlight-blue/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": null,
     "gbpPrice": 47.4,
     "sku": "D01000988840001",
@@ -87932,7 +88342,7 @@
       "/products/gg-pdp/mendez-breathable-short-sleeve-golf-shirt-crystal-blue-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mendez-breathable-short-sleeve-golf-shirt-crystal-blue-green/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01001388730001",
@@ -88123,7 +88533,7 @@
       "/products/gg-pdp/mendoza-breathable-short-sleeve-golf-shirt-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mendoza-breathable-short-sleeve-golf-shirt-white/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01001559409001",
@@ -88322,7 +88732,7 @@
       "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "gbpPrice": 89.0,
     "sku": "D01001628712001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/merry-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
@@ -88928,7 +89338,7 @@
       "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-white-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 35.4,
     "sku": "D01001408699001",
@@ -89055,7 +89465,7 @@
         ],
         "hoverImage": "/products/gg-pdp/mia-breathable-sleeveless-golf-shirt-pink-fuchsia/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/mia-breathable-sleeveless-golf-shirt-pink-fuchsia",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "pink-fuchsia",
         "colorNameKo": "핑크 퓨시아",
         "size": "L",
@@ -89464,7 +89874,7 @@
       "/products/gg-pdp/michael-breathable-long-sleeve-shirt-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/michael-breathable-long-sleeve-shirt-black/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "D01000609403001",
@@ -89651,7 +90061,7 @@
         ],
         "hoverImage": "/products/gg-pdp/michael-breathable-long-sleeve-shirt-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/michael-breathable-long-sleeve-shirt-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL",
@@ -89847,7 +90257,7 @@
       "/products/gg-pdp/miguel-breathable-short-sleeve-golf-shirt-golf-green-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/miguel-breathable-short-sleeve-golf-shirt-golf-green-white/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": null,
     "gbpPrice": 53.4,
     "sku": "D01001008836001",
@@ -90028,7 +90438,7 @@
       "/products/gg-pdp/mile-breathable-short-sleeve-shirt-sunny-lime-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mile-breathable-short-sleeve-shirt-sunny-lime-white/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01000439400001",
@@ -90222,7 +90632,7 @@
       "/products/gg-pdp/miles-breathable-short-sleeve-golf-shirt-navy-golf-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/miles-breathable-short-sleeve-golf-shirt-navy-golf-green/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": null,
     "gbpPrice": 47.4,
     "sku": "D01001198765001",
@@ -90438,7 +90848,7 @@
       "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-delphinium-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "gbpPrice": 47.4,
     "sku": "D01001418705001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/miley-breathable-short-sleeve-golf-shirt-crystal-blue-white",
@@ -91309,7 +91719,7 @@
       "/products/gg-pdp/miller-breathable-short-sleeve-shirt-black-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/miller-breathable-short-sleeve-shirt-black-atlantis-green/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000768892001",
@@ -91857,7 +92267,7 @@
       "/products/gg-pdp/mills-breathable-short-sleeve-shirt-black-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mills-breathable-short-sleeve-shirt-black-white/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000789020001",
@@ -92087,7 +92497,7 @@
       "/products/gg-pdp/mio-breathable-short-sleeve-shirt-sunny-lime-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mio-breathable-short-sleeve-shirt-sharkskin-black/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01000449093001",
@@ -92425,7 +92835,7 @@
       "/products/gg-pdp/miran-breathable-short-sleeve-golf-shirt-navy-moonlight-blue/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/miran-breathable-short-sleeve-golf-shirt-black-royal-blue/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01001228756001",
@@ -92751,7 +93161,7 @@
       "/products/gg-pdp/mo-breathable-short-sleeve-shirt-sunny-lime-white-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mo-breathable-short-sleeve-shirt-sunny-lime-white-black/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01000119855001",
@@ -92954,7 +93364,7 @@
       "/products/gg-pdp/mirelle-breathable-short-sleeve-shirt-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mirelle-breathable-short-sleeve-shirt-black-white/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": null,
     "gbpPrice": 75.0,
     "sku": "D01000489020001",
@@ -93487,7 +93897,7 @@
       "/products/gg-pdp/mireya-breathable-short-sleeve-shirt-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mireya-breathable-short-sleeve-shirt-white/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": null,
     "gbpPrice": 39.0,
     "sku": "G88589409B3",
@@ -93705,7 +94115,7 @@
       "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mitchell-breathable-short-sleeve-golf-shirt-black-white-royal-blue/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 47.4,
     "sku": "D01001238743001",
@@ -94418,7 +94828,7 @@
       "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/molly-breathable-short-sleeve-golf-shirt-fuchsia/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "gbpPrice": 41.4,
     "sku": "D01001448707001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/molly-breathable-short-sleeve-golf-shirt-fuchsia",
@@ -94993,7 +95403,7 @@
       "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-delphinium-blue-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mona-breathable-short-sleeve-golf-shirt-crystal-blue-white/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "gbpPrice": 47.4,
     "sku": "D01001428705001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/mona-breathable-short-sleeve-golf-shirt-crystal-blue-white",
@@ -95552,7 +95962,7 @@
       "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-moonlight-blue-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/moon-breathable-short-sleeve-golf-shirt-crystal-blue-sand/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": null,
     "gbpPrice": 89.0,
     "sku": "D01001268760001",
@@ -96370,7 +96780,7 @@
       "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-orange/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/muir-breathable-short-sleeve-golf-shirt-crystal-blue/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": null,
     "gbpPrice": 79.0,
     "sku": "D01001638759001",
@@ -97082,7 +97492,7 @@
       "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-crystal-blue-white-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "gbpPrice": 89.0,
     "sku": "D01001618669001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/mulligan-breathable-short-sleeve-golf-shirt-black-white-orange",
@@ -97961,7 +98371,7 @@
       "/products/gg-pdp/murdoch-breathable-long-sleeve-golf-shirt-jungle-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/murdoch-breathable-long-sleeve-golf-shirt-blue-slate/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "gbpPrice": 119.0,
     "sku": "D01001598652001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/murdoch-breathable-long-sleeve-golf-shirt-blue-slate",
@@ -98296,7 +98706,7 @@
       "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/myles-breathable-short-sleeve-golf-shirt-sand-white/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "D01001498746001",
@@ -98493,7 +98903,7 @@
       "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-white-sunny-lime/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/myron-breathable-short-sleeve-golf-shirt-sand-white/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "D01001488746001",
@@ -98819,7 +99229,7 @@
       "/products/gg-pdp/nathan-breathable-pants-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nathan-breathable-pants-black/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 83.4,
     "sku": "D01000639403011",
@@ -99026,7 +99436,7 @@
       "/products/gg-pdp/nea-breathable-golf-pants-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nea-breathable-golf-pants-navy/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "gbpPrice": 109.0,
     "sku": "D01001539405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/nea-breathable-golf-pants-navy",
@@ -99488,7 +99898,7 @@
       "/products/gg-pdp/nellie-breathable-pants-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nellie-breathable-pants-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Best",
     "gbpPrice": 129.0,
     "sku": "D01000689403001",
@@ -99948,7 +100358,7 @@
       "/products/gg-pdp/nessa-breathable-skirt-with-inner-shorts-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nessa-breathable-skirt-with-inner-shorts-navy/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": null,
     "gbpPrice": 110.0,
     "sku": "D01000309405001",
@@ -100380,7 +100790,7 @@
       "/products/gg-pdp/nicci-breathable-and-stretchy-leggings-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nicci-breathable-and-stretchy-leggings-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Sale",
     "gbpPrice": 45.5,
     "sku": "D01000219403001",
@@ -100774,7 +101184,7 @@
       "/products/gg-pdp/nick-breathable-golf-pants-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nick-breathable-golf-pants-black/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Best",
     "gbpPrice": 99.0,
     "sku": "D01001549403001",
@@ -102312,7 +102722,7 @@
       "/products/gg-pdp/nicole-breathable-pants-navy-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nicole-breathable-pants-black-steel-grey/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 71.4,
     "sku": "D01000239557001",
@@ -102758,7 +103168,7 @@
       "/products/gg-pdp/nicoline-breathable-and-stretchy-leggings-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nicoline-breathable-and-stretchy-leggings-alaskan-blue-white/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 39.0,
     "sku": "D01000729851001",
@@ -103142,7 +103552,7 @@
       "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nina-breathable-golf-skirt-with-inner-shorts-navy/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "gbpPrice": 109.0,
     "sku": "D01001519405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/nina-breathable-golf-skirt-with-inner-shorts-navy",
@@ -103611,7 +104021,7 @@
       "/products/gg-pdp/nixon-breathable-pants-light-grey/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nixon-breathable-pants-black/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Best",
     "gbpPrice": 65.4,
     "sku": "D01000209403002",
@@ -103771,7 +104181,7 @@
         ],
         "hoverImage": "/products/gg-pdp/nixon-breathable-pants-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/nixon-breathable-pants-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "30/32",
@@ -103852,7 +104262,7 @@
         ],
         "hoverImage": "/products/gg-pdp/nixon-breathable-pants-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/nixon-breathable-pants-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "36/32",
@@ -104235,7 +104645,7 @@
         ],
         "hoverImage": "/products/gg-pdp/nixon-breathable-pants-light-grey/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/nixon-breathable-pants-light-grey",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "light-grey",
         "colorNameKo": "Light 그레이",
         "size": "32/32",
@@ -104995,7 +105405,7 @@
       "/products/gg-pdp/noah-breathable-pants-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/noah-breathable-golf-pants-blue-bell/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Best",
     "gbpPrice": 65.4,
     "sku": "D01000298763001",
@@ -108530,7 +108940,7 @@
       "/products/gg-pdp/nova-breathable-golf-shorts-sand/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/nova-breathable-golf-shorts-navy/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "gbpPrice": 89.0,
     "sku": "D01001529405001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/nova-breathable-golf-shorts-navy",
@@ -108979,7 +109389,7 @@
       "/products/gg-pdp/organotex-garment-care-kit/4.jpg"
     ],
     "hoverImage": "/products/gg-pdp/organotex-garment-care-kit/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Best",
     "gbpPrice": 25.0,
     "sku": "1040140000001",
@@ -109077,7 +109487,7 @@
       "/products/gg-pdp/paolo-black/3.jpg"
     ],
     "hoverImage": "/products/gg-pdp/paolo-black/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 59.4,
     "sku": "G7894W9403003",
@@ -109263,7 +109673,7 @@
       "/products/gg-pdp/paul-breathable-shorts-blue-bell/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/paul-breathable-shorts-black/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": "Best",
     "gbpPrice": 59.4,
     "sku": "D01000269403002",
@@ -110670,7 +111080,7 @@
       "/products/gg-pdp/pedro-breathable-golf-shorts-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/pedro-breathable-golf-shorts-black/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Best",
     "gbpPrice": 89.0,
     "sku": "D01001569403002",
@@ -111306,7 +111716,7 @@
       "/products/gg-pdp/percy-breathable-shorts-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/percy-breathable-shorts-aqua/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 53.4,
     "sku": "D01000229373002",
@@ -111915,7 +112325,9 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "30",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-32",
@@ -111940,7 +112352,9 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "32",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-34",
@@ -111961,11 +112375,13 @@
         ],
         "hoverImage": "/products/gg-pdp/percy-breathable-shorts-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/percy-breathable-shorts-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "34",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-36",
@@ -111986,11 +112402,13 @@
         ],
         "hoverImage": "/products/gg-pdp/percy-breathable-shorts-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/percy-breathable-shorts-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "36",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-38",
@@ -112011,11 +112429,13 @@
         ],
         "hoverImage": "/products/gg-pdp/percy-breathable-shorts-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/percy-breathable-shorts-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "38",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-40",
@@ -112040,7 +112460,9 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "40",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-percy-breathable-shorts-navy-42",
@@ -112065,7 +112487,9 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "42",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       }
     ]
   },
@@ -112096,7 +112520,7 @@
       "/products/gg-pdp/perry-breathable-shorts-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/perry-breathable-shorts-black/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 71.4,
     "sku": "D01000649403002",
@@ -112299,7 +112723,7 @@
       "/products/gg-pdp/petra-breathable-shorts-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/petra-breathable-shorts-navy/2.jpg",
-    "accent": "#3A2F28",
+    "accent": "#1A2E28",
     "badge": "Sale",
     "gbpPrice": 65.4,
     "sku": "D01000349405001",
@@ -112739,7 +113163,7 @@
       "/products/gg-pdp/raul-breathable-shorts-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/raul-breathable-shorts-black/2.jpg",
-    "accent": "#1A2428",
+    "accent": "#1F4D3A",
     "badge": "Sale",
     "gbpPrice": 39.0,
     "sku": "D01000409403001",
@@ -112990,7 +113414,7 @@
       "/products/gg-pdp/raymond-windproof-and-water-repellent-vest-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/raymond-windproof-and-water-repellent-vest-navy/2.jpg",
-    "accent": "#1A2E28",
+    "accent": "#24302A",
     "badge": "Sale",
     "gbpPrice": 77.4,
     "sku": "G13279405Z3",
@@ -113186,7 +113610,7 @@
       "/products/gg-pdp/raz-insulating-mid-layer-golf-green/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/raz-insulating-mid-layer-black/2.jpg",
-    "accent": "#1F4D3A",
+    "accent": "#2A4038",
     "badge": "Sale",
     "gbpPrice": 45.0,
     "sku": "C01000179403002",
@@ -113570,7 +113994,7 @@
       "/products/gg-pdp/rico-insulating-sweatshirt-camelia-rose/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/rico-insulating-sweatshirt-black/2.jpg",
-    "accent": "#24302A",
+    "accent": "#2F5A3E",
     "badge": "Sale",
     "gbpPrice": 45.0,
     "sku": "C01000529403002",
@@ -113948,7 +114372,7 @@
       "/products/gg-pdp/rob-insulating-sweatshirt-navy/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/rob-insulating-sweatshirt-navy/2.jpg",
-    "accent": "#2A4038",
+    "accent": "#1E3A4A",
     "badge": "Sale",
     "gbpPrice": 52.5,
     "sku": "G77869405Z3",
@@ -114115,7 +114539,7 @@
       "/products/gg-pdp/robert-waterproof-jacket-black-red/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/robert-waterproof-jacket-black-red/2.jpg",
-    "accent": "#2F5A3E",
+    "accent": "#243447",
     "badge": null,
     "gbpPrice": 118.3,
     "sku": "A01000349107002",
@@ -114303,7 +114727,7 @@
       "/products/gg-pdp/rowan-breathable-short-sleeve-shirt-red-black/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/rowan-breathable-short-sleeve-shirt-blue-navy/2.jpg",
-    "accent": "#1E3A4A",
+    "accent": "#2C2A28",
     "badge": "Sale",
     "gbpPrice": 35.4,
     "sku": "D01000379259002",
@@ -114695,7 +115119,7 @@
       "/products/gg-pdp/rylan-breathable-short-sleeve-shirt-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/rylan-breathable-short-sleeve-shirt-navy/2.jpg",
-    "accent": "#243447",
+    "accent": "#3A2F28",
     "badge": "Sale",
     "gbpPrice": 35.4,
     "sku": "D01000369405002",
@@ -114971,7 +115395,7 @@
       "/products/gg-pdp/tate-sling-bag-golf-green/4.jpg"
     ],
     "hoverImage": "/products/gg-pdp/tate-sling-bag-golf-green/2.jpg",
-    "accent": "#2C2A28",
+    "accent": "#1A2428",
     "badge": "Sale",
     "gbpPrice": 29.4,
     "sku": "G12989411U0",
