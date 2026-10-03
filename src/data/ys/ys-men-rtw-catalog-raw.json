@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-25T18:35:15.631254+00:00",
+  "scrapedAt": "2026-10-03T19:36:38.258715+00:00",
   "brand": "Saint Laurent",
   "hub": "men-rtw",
   "category": "luxury",
@@ -34,7 +34,7 @@
         "ys-men-rtw-all",
         "ys-men-outerwear"
       ],
-      "leafId": "ys-men-outerwear",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 2410.0,
       "inStock": true,
       "compositions": "T 100% COTTON T1 100 RJ 100% COTTON% POLYESTERF  62% VISCOSE F  38% COTTON",
@@ -497,7 +497,7 @@
         "ys-men-jersey",
         "ys-men-outerwear"
       ],
-      "leafId": "ys-men-outerwear",
+      "leafId": "ys-men-jersey",
       "gbpPrice": 1330.0,
       "inStock": true,
       "compositions": "T  57% COTTON T  43% POLYAMIDE R  98% POLYAMIDE R   2% ELASTAN DT 100% POLYAMIDEFP 100% COTTON",
@@ -846,7 +846,7 @@
         "ys-men-rtw-all",
         "ys-men-outerwear"
       ],
-      "leafId": "ys-men-outerwear",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 2220.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:INF 100% CUPRO FM 100% VISCOSE FP 100% COTTON",
@@ -1570,7 +1570,7 @@
         "ys-men-rtw-all",
         "ys-men-leather"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 4875.0,
       "inStock": true,
       "compositions": "L 100 R  50% ACRYLIC R  50% WOOL BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF 100% SILK FM 100% VISCOSE FP 100% COTTON",
@@ -2046,7 +2046,7 @@
         "ys-men-rtw-all",
         "ys-men-leather"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 4875.0,
       "inStock": true,
       "compositions": "L 100% LAMB LEATHERF  53% COTTON F  47% VISCOSE FP 100% COTTON",
@@ -2253,7 +2253,7 @@
         "ys-men-rtw-all",
         "ys-men-leather"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 4270.0,
       "inStock": true,
       "compositions": "L 100 CO 100 R 100% WOOL BU 100% LAMB LEATHER% LAMB FUR% BUBALUS BUBALIS O:INF  56% COTTON F  44% VISCOSE FP 100% COTTON",
@@ -3589,7 +3589,7 @@
         "ys-men-rtw-all",
         "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-coats-trench",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 3015.0,
       "inStock": true,
       "compositions": "E  60 E  40 NA 100 BU 100 IS 100% POLYESTER% COTTON% COTTON% BUBALUS BUBALIS O:IN% WOOL",
@@ -3761,7 +3761,7 @@
         "ys-men-rtw-all",
         "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-coats-trench",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 3105.0,
       "inStock": true,
       "compositions": "T 100% COTTONF1  65% POLYESTER F1  35% COTTON F  62% VISCOSE F  38% COTTON",
@@ -3867,7 +3867,7 @@
         "ys-men-rtw-all",
         "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-coats-trench",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 5760.0,
       "inStock": true,
       "compositions": "T 100% CASHMERE BU 100% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -3936,9 +3936,10 @@
         "saint-laurent",
         "ys-men",
         "ys-men-rtw-all",
-        "ys-men-coats-trench"
+        "ys-men-coats-trench",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-coats-trench",
+      "leafId": "ys-men-leather",
       "gbpPrice": 6400.0,
       "inStock": true,
       "compositions": "L 100 BU 100% BUFALO% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -4046,7 +4047,7 @@
         "ys-men-rtw-all",
         "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-coats-trench",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 3455.0,
       "inStock": true,
       "compositions": "T 100% WOOL BU 100% BUBALUS BUBALIS O:INFP 100% SILK",
@@ -4125,9 +4126,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-leather"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-leather",
       "gbpPrice": 5760.0,
       "inStock": true,
       "compositions": "L 100 BU 100% LAMB LEATHER% BUBALUS BUBALIS O:INF  62% VISCOSE F  38% COTTON FM 100% VISCOSE FP 100% COTTON",
@@ -4329,9 +4331,10 @@
         "saint-laurent",
         "ys-men",
         "ys-men-rtw-all",
-        "ys-men-leather"
+        "ys-men-leather",
+        "ys-men-coats-trench"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-coats-trench",
       "gbpPrice": 4995.0,
       "inStock": true,
       "compositions": "CP 100% POLYURETHANE",
@@ -4429,7 +4432,7 @@
         "ys-men-rtw-all",
         "ys-men-leather"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -4529,7 +4532,7 @@
         "ys-men-rtw-all",
         "ys-men-leather"
       ],
-      "leafId": "ys-men-leather",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 4090.0,
       "inStock": true,
       "compositions": "T 100% WOOLF 100% SILK FM 100% VISCOSE FP  97% COTTON FP   3% ELASTAN",
@@ -16123,9 +16126,10 @@
       "collections": [
         "saint-laurent",
         "ys-men",
-        "ys-men-rtw-all"
+        "ys-men-rtw-all",
+        "ys-men-denim"
       ],
-      "leafId": "ys-men-rtw-all",
+      "leafId": "ys-men-denim",
       "gbpPrice": 1365.0,
       "inStock": true,
       "compositions": "T 100% COTTON BU 100% BUBALUS BUBALIS O:IN",
@@ -16302,7 +16306,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 845.0,
       "inStock": true,
       "compositions": "T 100% COTTON",
@@ -16672,7 +16676,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 1230.0,
       "inStock": true,
       "compositions": "T  98% COTTON T   2% POLYESTER ET 100% COWHIDE",
@@ -17066,7 +17070,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -17295,7 +17299,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 770.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -17992,7 +17996,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 730.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -18214,7 +18218,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 685.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -18526,7 +18530,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 790.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDEFP 100% COTTON",
@@ -18642,7 +18646,7 @@
         "ys-men-rtw-all",
         "ys-men-denim"
       ],
-      "leafId": "ys-men-denim",
+      "leafId": "ys-men-rtw-all",
       "gbpPrice": 775.0,
       "inStock": true,
       "compositions": "T 100% COTTON ET 100% COWHIDE",
@@ -23666,96 +23670,6 @@
       ]
     },
     {
-      "id": "858573YZ9CV1000",
-      "sku": "858573YZ9CV1000",
-      "masterId": "858573YZ9CV",
-      "name": "coat in cotton serge",
-      "color": "Black",
-      "microColor": "NOIR",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/coat-in-cotton-serge-858573YZ9CV1000.html",
-      "path": "pr/coat-in-cotton-serge-858573YZ9CV1000.html",
-      "collections": [
-        "saint-laurent",
-        "ys-men",
-        "ys-men-coats-trench",
-        "ys-men-rtw-all"
-      ],
-      "leafId": "ys-men-coats-trench",
-      "gbpPrice": 3105.0,
-      "inStock": true,
-      "compositions": "T 100% COTTONF1  65% POLYESTER F1  35% COTTON F  62% VISCOSE F  38% COTTON",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/24e0addc-5488-4e4b-9a16-251131312208/eCom/858573YZ9CV1000_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/0227245f-caa0-4ab4-94cb-7b60e6a19f6e/eCom/858573YZ9CV1000_Y.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/64e14330-b4ad-4fc9-a0d2-f232fc967ac3/eCom/858573YZ9CV1000_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/b22c6779-037a-4187-b16d-7bf7417fe9cd/eCom/858573YZ9CV1000_C.jpg?v=1"
-      ],
-      "description": "knee-length coat featuring a pointed collar.",
-      "shortDescription": [
-        "upper bodice: viscose and cotton lining",
-        "lower bodice: polyester and cotton lining",
-        "concealed front button closure",
-        "two welt pockets at the front",
-        "one inner welt pocket",
-        "pointed collar",
-        "single back vent"
-      ],
-      "productCare": "Wash Max 30°C - Very Mild Process, Do Not Bleach, Do Not Tumble Dry, Line Dry, Iron At Maximum Temperature 120°C, Dry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process,",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_rtw",
-        "microCategory": "ysl_micro_men_coats",
-        "superMicroCategory": "ysl_super_micro_men_coats"
-      },
-      "sizes": [
-        {
-          "id": "814153095",
-          "value": "48",
-          "displayValue": "48",
-          "inStock": true
-        },
-        {
-          "id": "814153096",
-          "value": "50",
-          "displayValue": "50",
-          "inStock": true
-        },
-        {
-          "id": "814153097",
-          "value": "52",
-          "displayValue": "52",
-          "inStock": true
-        },
-        {
-          "id": "814154391",
-          "value": "54",
-          "displayValue": "54",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "858573YZ9CV2412",
-          "name": "Beige",
-          "url": "https://www.ysl.com/en-gb/pr/padded-coat-in-cotton-serge-858573YZ9CV2412.html",
-          "hex": "e3d4c1"
-        },
-        {
-          "id": "858573YZ9CV1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/coat-in-cotton-serge-858573YZ9CV1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/858573yz9cv1000/1.jpg",
-        "/products/ys-pdp/858573yz9cv1000/2.jpg",
-        "/products/ys-pdp/858573yz9cv1000/3.jpg",
-        "/products/ys-pdp/858573yz9cv1000/4.jpg"
-      ]
-    },
-    {
       "id": "795478Y09XK4338",
       "sku": "795478Y09XK4338",
       "masterId": "795478Y09XK",
@@ -25004,6 +24918,103 @@
       "localImages": [
         "/products/ys-pdp/863128y1n452021/1.jpg",
         "/products/ys-pdp/863128y1n452021/2.jpg"
+      ]
+    },
+    {
+      "id": "A0038HYF2AM3352",
+      "sku": "A0038HYF2AM3352",
+      "masterId": "A0038HYF2AM",
+      "name": "balmacaan coat in shearling",
+      "color": "Green",
+      "microColor": "KAKI FONCE",
+      "colorCode": "3352",
+      "url": "https://www.ysl.com/en-gb/pr/balmacaan-coat-in-shearling-A0038HYF2AM3352.html",
+      "path": "pr/balmacaan-coat-in-shearling-A0038HYF2AM3352.html",
+      "collections": [
+        "saint-laurent",
+        "ys-men",
+        "ys-men-leather",
+        "ys-men-rtw-all"
+      ],
+      "leafId": "ys-men-leather",
+      "gbpPrice": 13100.0,
+      "inStock": true,
+      "compositions": "H 100 BU 100% LAMB FUR% BUBALUS BUBALIS O:INF  56% COTTON F  44% VISCOSE FP 100% COTTON",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/e79b113b-8007-4a06-aee1-504907654cf2/eCom/A0038HYF2AM3352_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/81e5b17b-f6fa-4590-8b36-e606fdd25fe2/eCom/A0038HYF2AM3352_H.jpg?v=1"
+      ],
+      "description": "midi-length balmacaan coat, featuring a pointed collar.",
+      "shortDescription": [
+        "cotton and viscose lining",
+        "front button closure",
+        "two concealed side pockets",
+        "one inner jetted pocket with button",
+        "pointed collar",
+        "single back vent"
+      ],
+      "productCare": "Do Not Wash. Do Not Bleach. Do Not Tumble Dry. Do Not Iron. Do Not Dry Clean. Use A Specialist Leather And Fur Cleaning Service Only.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_rtw",
+        "microCategory": "ysl_micro_men_leather_jackets",
+        "superMicroCategory": "ysl_super_micro_men_leather_jackets"
+      },
+      "sizes": [
+        {
+          "id": "814393149",
+          "value": "42",
+          "displayValue": "YSL 42 / GB 32",
+          "inStock": true
+        },
+        {
+          "id": "814393150",
+          "value": "44",
+          "displayValue": "YSL 44 / GB 34",
+          "inStock": true
+        },
+        {
+          "id": "814393151",
+          "value": "46",
+          "displayValue": "YSL 46 / GB 36",
+          "inStock": true
+        },
+        {
+          "id": "814393152",
+          "value": "48",
+          "displayValue": "YSL 48 / GB 38",
+          "inStock": true
+        },
+        {
+          "id": "814393153",
+          "value": "50",
+          "displayValue": "YSL 50 / GB 40",
+          "inStock": true
+        },
+        {
+          "id": "814393154",
+          "value": "52",
+          "displayValue": "YSL 52 / GB 42",
+          "inStock": true
+        },
+        {
+          "id": "814393155",
+          "value": "54",
+          "displayValue": "YSL 54 / GB 44",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A0038HYF2AM3352",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/balmacaan-coat-in-shearling-A0038HYF2AM3352.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a0038hyf2am3352/1.jpg",
+        "/products/ys-pdp/a0038hyf2am3352/2.jpg"
       ]
     }
   ]

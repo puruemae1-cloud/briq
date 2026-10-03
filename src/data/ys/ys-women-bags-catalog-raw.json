@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-09-25T18:36:07.039069+00:00",
+  "scrapedAt": "2026-10-03T19:37:47.675147+00:00",
   "brand": "Saint Laurent",
   "hub": "women-bags",
   "category": "bags",
   "family": "ys-women-bags",
-  "officialNbAlgoliaHits": 321,
-  "officialUnionCount": 321,
+  "officialNbAlgoliaHits": 330,
+  "officialUnionCount": 330,
   "leaves": [
     {
       "id": "ys-women-bags-all",
@@ -25812,6 +25812,663 @@
         "/products/ys-pdp/871618aae4y1000/3.jpg",
         "/products/ys-pdp/871618aae4y1000/4.jpg",
         "/products/ys-pdp/871618aae4y1000/5.jpg"
+      ]
+    },
+    {
+      "id": "A00FMUAAHXH1000",
+      "sku": "A00FMUAAHXH1000",
+      "masterId": "A00FMUAAHXH",
+      "name": "SIMONE medium in soft leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH1000.html",
+      "path": "pr/simone-medium-in-soft-leather-A00FMUAAHXH1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 2900.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/ba997059-975d-4e64-b3db-7b15dfb980a8/eCom/A00FMUAAHXH1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/174899c5-b201-401e-b058-059957fd99a2/eCom/A00FMUAAHXH1000_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/b81e1860-20c4-41a6-8d18-40177c95fc3b/eCom/A00FMUAAHXH1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/7b8a5f14-1c5a-46b0-aede-3d1baa2e2937/eCom/A00FMUAAHXH1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/35a19171-6dd1-4c90-83d6-a89488bb83eb/eCom/A00FMUAAHXH1000_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/53f97104-5485-4ab4-9839-e3a4c3eaa846/eCom/A00FMUAAHXH1000_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/4cbef4c1-3ece-4281-b344-cc720d9aab4d/eCom/A00FMUAAHXH1000_H.jpg?v=2"
+      ],
+      "description": "The medium version of the SIMONE shoulder bag in supple leather, decorated with the double CASSANDRE. <br>Fully lined in suede, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "suede linning",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: 38 x 22.5 x 4–11 cm / 15.0\" x 8.9\" x 1.6–4.3\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814558788",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMUAAHXH6178",
+          "name": "Pink",
+          "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH6178.html",
+          "hex": "CF2387"
+        },
+        {
+          "id": "A00FMUAAHXH1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmuaahxh1000/1.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/2.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/3.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/4.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/5.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/6.jpg",
+        "/products/ys-pdp/a00fmuaahxh1000/7.jpg"
+      ]
+    },
+    {
+      "id": "A00FMU008IW3675",
+      "sku": "A00FMU008IW3675",
+      "masterId": "A00FMU008IW",
+      "name": "SIMONE medium in suede",
+      "color": "Green",
+      "microColor": "OMBRE OLIVE",
+      "colorCode": "3675",
+      "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-suede-A00FMU008IW3675.html",
+      "path": "pr/simone-medium-in-suede-A00FMU008IW3675.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 2715.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/31e79314-ac52-4466-864a-38d3c54357af/eCom/A00FMU008IW3675_A.jpg?v=1"
+      ],
+      "description": "The medium version of the SIMONE shoulder bag in supple suede, decorated with the double CASSANDRE. <br>Fully lined in leather, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "leather lining",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: 38 x 22.5 x 4–11 cm / 15.0\" x 8.9\" x 1.6–4.3\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814559439",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMU008IW3675",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-suede-A00FMU008IW3675.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmu008iw3675/1.jpg"
+      ]
+    },
+    {
+      "id": "A00FMUAAHXH6178",
+      "sku": "A00FMUAAHXH6178",
+      "masterId": "A00FMUAAHXH",
+      "name": "SIMONE medium in soft leather",
+      "color": "Pink",
+      "microColor": "SOUR RASPBERRY",
+      "colorCode": "6178",
+      "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH6178.html",
+      "path": "pr/simone-medium-in-soft-leather-A00FMUAAHXH6178.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 2900.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/00115dac-8c6c-441f-be31-9d9d672e7efc/eCom/A00FMUAAHXH6178_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/3687a7be-b96c-4155-bd15-dc3c2cd2d943/eCom/A00FMUAAHXH6178_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/4c225da5-5584-4cef-9058-2d4b563b53a8/eCom/A00FMUAAHXH6178_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/4c873c01-e167-4a41-b11c-5bbf5ba85792/eCom/A00FMUAAHXH6178_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/74eacb95-dbb2-46b3-8a1e-e8d1a3e08581/eCom/A00FMUAAHXH6178_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/a658f47f-e1bb-44b5-9fc1-36e288a698d6/eCom/A00FMUAAHXH6178_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/32ee00c8-3743-4b12-90e8-901ce3445c1b/eCom/A00FMUAAHXH6178_H.jpg?v=2"
+      ],
+      "description": "The medium version of the SIMONE shoulder bag in supple leather, decorated with the double CASSANDRE. <br>Fully lined in suede, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "suede linning",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: dimensions: 38 x 22.5 x 4–11 cm / 15.0\" x 8.9\" x 1.6–4.3\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814559438",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMUAAHXH6178",
+          "name": "Pink",
+          "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH6178.html",
+          "hex": "CF2387"
+        },
+        {
+          "id": "A00FMUAAHXH1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/simone-medium-in-soft-leather-A00FMUAAHXH1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmuaahxh6178/1.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/2.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/3.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/4.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/5.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/6.jpg",
+        "/products/ys-pdp/a00fmuaahxh6178/7.jpg"
+      ]
+    },
+    {
+      "id": "A00FMTAAHXH1000",
+      "sku": "A00FMTAAHXH1000",
+      "masterId": "A00FMTAAHXH",
+      "name": "SIMONE large in soft leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/simone-large-in-soft-leather-A00FMTAAHXH1000.html",
+      "path": "pr/simone-large-in-soft-leather-A00FMTAAHXH1000.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 3440.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/bc42d3ca-6b5a-48eb-b0b3-d81174a9fa85/eCom/A00FMTAAHXH1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/6d2b10a8-dc02-4f2b-9e03-637b92e4d0d5/eCom/A00FMTAAHXH1000_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/aadfccd2-60bf-4ac3-b12b-7a595379f2d7/eCom/A00FMTAAHXH1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/25646d88-35fe-4b0a-8558-c651b646a737/eCom/A00FMTAAHXH1000_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/331a375f-a194-47bd-87f5-caeeb8e7c84e/eCom/A00FMTAAHXH1000_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/1911683d-bfc2-4062-b6d6-9eef0dc08902/eCom/A00FMTAAHXH1000_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c5190366-fad6-447f-9e45-8891fac2c8fa/eCom/A00FMTAAHXH1000_H.jpg?v=2"
+      ],
+      "description": "The large version of the SIMONE shoulder bag in supple leather, decorated with the double CASSANDRE. <br>Fully lined in suede, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "suede linning",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: 43 x 24.5 x 5–13 cm / 16.9\" x 9.6\" x 2–5.1\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814558787",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMTAAHXH1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/simone-large-in-soft-leather-A00FMTAAHXH1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmtaahxh1000/1.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/2.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/3.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/4.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/5.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/6.jpg",
+        "/products/ys-pdp/a00fmtaahxh1000/7.jpg"
+      ]
+    },
+    {
+      "id": "A00FMT008IW3675",
+      "sku": "A00FMT008IW3675",
+      "masterId": "A00FMT008IW",
+      "name": "SIMONE large in suede",
+      "color": "Green",
+      "microColor": "OMBRE OLIVE",
+      "colorCode": "3675",
+      "url": "https://www.ysl.com/en-gb/pr/simone-large-in-suede-A00FMT008IW3675.html",
+      "path": "pr/simone-large-in-suede-A00FMT008IW3675.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 3260.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/9cbe76d7-085a-4aab-b609-2d4efb84a882/eCom/A00FMT008IW3675_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/10c8112a-b180-438e-b835-ae5627976416/eCom/A00FMT008IW3675_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/aa1213c7-93c5-4164-8fb1-e5186f9f418f/eCom/A00FMT008IW3675_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/2ab9e440-396d-480f-8020-22c3a0b10dfa/eCom/A00FMT008IW3675_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/85003414-404e-4469-8d5c-93b24245a022/eCom/A00FMT008IW3675_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/3e4eff3b-4709-4978-8a6e-6e485276702e/eCom/A00FMT008IW3675_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/09feec03-1007-4ff3-a7d1-96213bd62f7f/eCom/A00FMT008IW3675_H.jpg?v=2"
+      ],
+      "description": "The large version of the SIMONE shoulder bag in supple suede, decorated with the double CASSANDRE. <br>Fully lined in leather, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "leather lining",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: 43 x 24.5 x 5–13 cm / 16.9\" x 9.6\" x 2–5.1\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814559437",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMT008IW3675",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/simone-large-in-suede-A00FMT008IW3675.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmt008iw3675/1.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/2.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/3.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/4.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/5.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/6.jpg",
+        "/products/ys-pdp/a00fmt008iw3675/7.jpg"
+      ]
+    },
+    {
+      "id": "A00FMTAAG1R7348",
+      "sku": "A00FMTAAG1R7348",
+      "masterId": "A00FMTAAG1R",
+      "name": "SIMONE large in soft leather",
+      "color": "Orange",
+      "microColor": "DARK MANDARIN",
+      "colorCode": "7348",
+      "url": "https://www.ysl.com/en-gb/pr/simone-large-in-soft-leather-A00FMTAAG1R7348.html",
+      "path": "pr/simone-large-in-soft-leather-A00FMTAAG1R7348.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 3440.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/585c2074-40ce-43dc-a793-f92864ecaae3/eCom/A00FMTAAG1R7348_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/78794f8c-7f88-47c1-80cc-cb58106c7e44/eCom/A00FMTAAG1R7348_Y.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/b1317348-a466-411f-ad11-f03b0e2d9e15/eCom/A00FMTAAG1R7348_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/1c80616a-e4f1-49c8-be8d-08d2e63098a5/eCom/A00FMTAAG1R7348_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/6d23c694-8862-493f-bcd2-c10965808e6e/eCom/A00FMTAAG1R7348_D.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/5eea1393-09e7-4a83-bab6-78d1c2d69c08/eCom/A00FMTAAG1R7348_E.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/d3cdadb7-2098-405b-8263-1b2ed7f386fa/eCom/A00FMTAAG1R7348_H.jpg?v=2"
+      ],
+      "description": "The large version of the SIMONE shoulder bag in supple leather, decorated with the double CASSANDRE. <br>Fully lined in suede, a sleek envelope silhouette unfolds to reveal two compartments and a zip pocket for added organization.<br>Delicate double straps allow this spacious yet lightweight bag to be worn on the shoulder.",
+      "shortDescription": [
+        "suede linning",
+        "bronze-tone brass hardware",
+        "magnetic closure",
+        "one document compartment at the front",
+        "one zip pocket",
+        "dimensions: 43 x 24.5 x 5–13 cm / 16.9\" x 9.6\" x 2–5.1\"",
+        "strap drop: 30 cm / 11.8\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814575856",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A00FMTAAG1R7348",
+          "name": "Orange",
+          "url": "https://www.ysl.com/en-gb/pr/simone-large-in-soft-leather-A00FMTAAG1R7348.html",
+          "hex": "fc802d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a00fmtaag1r7348/1.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/2.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/3.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/4.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/5.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/6.jpg",
+        "/products/ys-pdp/a00fmtaag1r7348/7.jpg"
+      ]
+    },
+    {
+      "id": "851689AAANG1997",
+      "sku": "851689AAANG1997",
+      "masterId": "851689AAANG",
+      "name": "ICARINO in quilted nappa",
+      "color": "Grey",
+      "microColor": "URBAN GREY",
+      "colorCode": "1997",
+      "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG1997.html",
+      "path": "pr/icarino-in-quilted-nappa-851689AAANG1997.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 2140.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED LAMB LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/10bc40b4-aee9-4feb-a07c-6552574477ea/eCom/851689AAANG1997_A.jpg?v=6",
+        "https://saint-laurent.dam.kering.com/asset/96763bae-7160-4c04-aa90-64f27e474a63/Original-Ecom/851689AAANG1997_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/0bdaf01f-75fa-4600-abb6-7d310f719bf0/eCom/851689AAANG1997_B.jpg?v=6",
+        "https://saint-laurent.dam.kering.com/asset/24458869-1348-461f-8c0f-fb91444b5962/eCom/851689AAANG1997_C.jpg?v=6",
+        "https://saint-laurent.dam.kering.com/asset/87ee49cc-c798-4594-9290-18515a0a2cc2/eCom/851689AAANG1997_D.jpg?v=6"
+      ],
+      "description": "The baby version of the iconic ICARE, in nappa lambskin decorated with the CASSANDRE and diamond-quilted topstitching. <br>This modern, lightweight bag is designed to be carried by hand.",
+      "shortDescription": [
+        "leather lining",
+        "bronze-tone hardware",
+        "zip closure",
+        "dimensions: 27 x 17 x 7.5 cm / 10.6\" x 6.7\" x 3\"",
+        "handle drop: 13.5 cm / 5.3\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_hobos",
+        "superMicroCategory": "ysl_super_micro_women_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814084389",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "851689AAANG6197",
+          "name": "Bordeaux",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG6197.html",
+          "hex": "5e0610"
+        },
+        {
+          "id": "851689AAANG2721",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG2721.html",
+          "hex": "e3d4c1"
+        },
+        {
+          "id": "851689AAANG1997",
+          "name": "Grey",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG1997.html",
+          "hex": "807d7a"
+        },
+        {
+          "id": "851689AAANG1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/851689aaang1997/1.jpg",
+        "/products/ys-pdp/851689aaang1997/2.jpg",
+        "/products/ys-pdp/851689aaang1997/3.jpg",
+        "/products/ys-pdp/851689aaang1997/4.jpg",
+        "/products/ys-pdp/851689aaang1997/5.jpg"
+      ]
+    },
+    {
+      "id": "851689AAANG2721",
+      "sku": "851689AAANG2721",
+      "masterId": "851689AAANG",
+      "name": "ICARINO in quilted nappa",
+      "color": "Beige",
+      "microColor": "DARK BEIGE",
+      "colorCode": "2721",
+      "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG2721.html",
+      "path": "pr/icarino-in-quilted-nappa-851689AAANG2721.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 2140.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED LAMB LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/3ba9fb63-8614-4292-83e9-985c4b4404fc/eCom/851689AAANG2721_A.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/a06ff796-f195-4ccc-ad3e-5d270489a446/Original-Ecom/851689AAANG2721_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/a03fd013-8537-4821-96c7-49b644d9380c/eCom/851689AAANG2721_B.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/7a6ced84-efa3-4755-9968-3d9288df4cdc/eCom/851689AAANG2721_C.jpg?v=5",
+        "https://saint-laurent.dam.kering.com/asset/8aa29f84-7ead-41a4-9570-24985aa3bfdb/eCom/851689AAANG2721_D.jpg?v=5"
+      ],
+      "description": "The baby version of the iconic ICARE, in nappa lambskin decorated with the CASSANDRE and diamond-quilted topstitching. <br>This modern, lightweight bag is designed to be carried by hand.",
+      "shortDescription": [
+        "leather lining",
+        "bronze-tone hardware",
+        "zip closure",
+        "dimensions: 27 x 17 x 7.5 cm / 10.6\" x 6.7\" x 3\"",
+        "handle drop: 13.5 cm / 5.3\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_hobos",
+        "superMicroCategory": "ysl_super_micro_women_hobos"
+      },
+      "sizes": [
+        {
+          "id": "814084390",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "851689AAANG6197",
+          "name": "Bordeaux",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG6197.html",
+          "hex": "5e0610"
+        },
+        {
+          "id": "851689AAANG2721",
+          "name": "Beige",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG2721.html",
+          "hex": "e3d4c1"
+        },
+        {
+          "id": "851689AAANG1997",
+          "name": "Grey",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG1997.html",
+          "hex": "807d7a"
+        },
+        {
+          "id": "851689AAANG1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/icarino-in-quilted-nappa-851689AAANG1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/851689aaang2721/1.jpg",
+        "/products/ys-pdp/851689aaang2721/2.jpg",
+        "/products/ys-pdp/851689aaang2721/3.jpg",
+        "/products/ys-pdp/851689aaang2721/4.jpg",
+        "/products/ys-pdp/851689aaang2721/5.jpg"
+      ]
+    },
+    {
+      "id": "858160AAF9P2916",
+      "sku": "858160AAF9P2916",
+      "masterId": "858160AAF9P",
+      "name": "ICARE hobo in quilted suede",
+      "color": "Brown",
+      "microColor": "CARAMEL COGNAC",
+      "colorCode": "2916",
+      "url": "https://www.ysl.com/en-gb/pr/icare-hobo-in-quilted-suede-858160AAF9P2916.html",
+      "path": "pr/icare-hobo-in-quilted-suede-858160AAF9P2916.html",
+      "collections": [
+        "saint-laurent-bags",
+        "ys-women-bags",
+        "ys-women-bags-all"
+      ],
+      "leafId": "ys-women-bags-all",
+      "gbpPrice": 3350.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b8cf7c88-e072-4c71-90e9-f209b44178c3/eCom/858160AAF9P2916_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/d0cffb19-0878-41ee-8aa3-769ce4c3ead6/Original-Ecom/858160AAF9P2916_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/8fe5c955-4647-44eb-8e88-73555c6736aa/eCom/858160AAF9P2916_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/c6d5a32e-e0be-4f44-816f-fc3f92afbb90/eCom/858160AAF9P2916_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/101cfafd-edd0-4de1-a6d3-0d14c97907e3/eCom/858160AAF9P2916_D.jpg?v=1"
+      ],
+      "description": "The hobo version of the iconic ICARE, in suede decorated with diamond-quilted topstitching. <br>This modern, spacious bag allows for multiple carry options.",
+      "shortDescription": [
+        "leather lining",
+        "bronze-tone hardware",
+        "zip closure",
+        "dimensions: 30–47 x 30.5 x 2–12 cm / 11.8–18.5\" x 12\" x 0.8–4.7\"",
+        "handle drop: 16 cm / 6.3\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_bags",
+        "microCategory": "ysl_micro_women_shoulder_bags",
+        "superMicroCategory": "ysl_super_micro_women_shoulder_bags"
+      },
+      "sizes": [
+        {
+          "id": "814150123",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "858160AAF9P2916",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/icare-hobo-in-quilted-suede-858160AAF9P2916.html",
+          "hex": "fc802d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/858160aaf9p2916/1.jpg",
+        "/products/ys-pdp/858160aaf9p2916/2.jpg",
+        "/products/ys-pdp/858160aaf9p2916/3.jpg",
+        "/products/ys-pdp/858160aaf9p2916/4.jpg",
+        "/products/ys-pdp/858160aaf9p2916/5.jpg"
       ]
     }
   ]
