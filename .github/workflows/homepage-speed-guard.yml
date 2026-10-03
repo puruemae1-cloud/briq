@@ -44,6 +44,34 @@ jobs:
             curl -s -o /dev/null -m 90 -w "fill$i status=%{http_code} ttfb=%{time_starttransfer}s total=%{time_total}s\n" "$SITE/" || true
           done
 
+      - name: Shop and product pages
+        run: |
+          # The homepage can still answer while catalogue-heavy routes crash
+          # (OOM-killed functions return 500 on /shop and every product page).
+          set -u
+          get() {
+            local code
+            for i in 1 2 3; do
+              code=$(curl -s -o /tmp/page.html -m 60 -w "%{http_code}" \
+                -H "User-Agent: briq-speed-guard" "$SITE$1" || echo 000)
+              echo "  $1 try$i status=$code"
+              [ "$code" = "200" ] && return 0
+              sleep 10
+            done
+            echo "::error::$1 returned $code after 3 tries"
+            return 1
+          }
+          failed=0
+          get "/api/products/shop?category=all" || failed=1
+          get "/shop" || failed=1
+          products=$(grep -o 'href="/product/[^"?]*' /tmp/page.html | sed 's/^href="//' | sort -u | head -3)
+          if [ -z "$products" ]; then
+            echo "::error::no product links on /shop"
+            failed=1
+          fi
+          for p in $products; do get "$p" || failed=1; done
+          exit $failed
+
       - name: Hero headline word spacing
         if: github.event_name != 'schedule'
         run: |
