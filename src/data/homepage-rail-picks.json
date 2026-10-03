@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-09-29T23:26:37Z",
+  "generatedAt": "2026-10-03T19:38:33Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-ecru-stripe-cashmere-polo-sweater",
-        "ps-brown-corduroy-work-jacket",
-        "ps-ecru-mix-up-stripe-cotton-shirt",
-        "ps-relaxed-fit-brown-wool-twill-trousers"
+        "di-657c81a2f28-x9000",
+        "di-683d481a3050-c530",
+        "di-683d490a3053-c587",
+        "di-713m636a0g29-c580"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "dior",
+        "dior",
+        "dior",
+        "dior"
       ]
     },
     "watches": {
       "productIds": [
+        "cw-c01-39ajh5-s00w0-mt",
         "cw-c63-41ach4-s0kk0-b0",
         "cw-c60-39agm1-s0rk0-b1",
-        "cw-c60-39c3h1-b0kk0-vt1",
-        "cw-c60-42c3h1-s0kk0-b0"
+        "cw-c60-39c3h1-b0kk0-vt1"
       ],
       "brands": [
         "christopher-ward",
@@ -32,44 +32,44 @@
     },
     "bags": {
       "productIds": [
-        "mb-waxed-baseball-cap",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote",
-        "mb-suede-tree-tote"
+        "bv-857931v2hl03123",
+        "bv-855504v2hl12166",
+        "bv-855504v2hl11913",
+        "bv-857931v2hl08803"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "shoes": {
       "productIds": [
-        "ax-x000010504",
-        "ax-x000010502",
-        "bb-leather-pillar-ankle-boots",
-        "gc-431467fafzd8548"
+        "vw-71010061-11010-am-red",
+        "vw-72030040-41454-am-beige",
+        "vw-72010006-41671-am-black",
+        "vw-72010006-41007-am-red"
       ],
       "brands": [
-        "arcteryx",
-        "arcteryx",
-        "burberry",
-        "gucci"
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood"
       ]
     },
     "accessories": {
       "productIds": [
-        "pr-122048_1210_f0002_s_aao",
-        "pr-126241_1210_f0324_s_aao",
-        "pr-132333_1yun_f0009_s_202",
-        "pr-1a1318_b00c_f0z99_p_ml100"
+        "ch-a71795x06081s516355nocci",
+        "ch-a71803x08101s221400pocci",
+        "ch-a71819x02110s501449rocci",
+        "ch-a71820x02110s501454pocci"
       ],
       "brands": [
-        "prada",
-        "prada",
-        "prada",
-        "prada"
+        "chanel",
+        "chanel",
+        "chanel",
+        "chanel"
       ]
     },
     "sports": {
@@ -88,12 +88,11 @@
     }
   },
   "brands": {
-    "arcteryx": [
-      "shoes",
-      "shoes"
-    ],
-    "burberry": [
-      "shoes"
+    "chanel": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "christopher-ward": [
       "watches",
@@ -101,32 +100,29 @@
       "watches",
       "watches"
     ],
+    "dior": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
     "galvin-green": [
       "sports",
       "sports",
       "sports",
       "sports"
     ],
-    "gucci": [
+    "vivienne-westwood": [
+      "shoes",
+      "shoes",
+      "shoes",
       "shoes"
     ],
-    "mulberry": [
+    "보테가-베네타": [
       "bags",
       "bags",
       "bags",
       "bags"
-    ],
-    "paul-smith": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "prada": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
     ]
   },
   "overlaps": {},
