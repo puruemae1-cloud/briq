@@ -129,7 +129,6 @@ run "POST_FIX_WOMEN_RTW" python3 scripts/enrich-di-women-rtw-pdp.py --translate
 # Must run after enrich/merge so in-stock-only `variants` cannot shrink the PDP.
 # Belts also get '{n} cm' labels + cm↔inch size chart (dior.com unit).
 run "POST_FIX_SIZES_STOCK" python3 scripts/patch-di-rtw-sizes-from-algolia.py
-run "AUDIT_SIZE_STOCK" bash -c 'python3 scripts/audit-brand-size-stock.py --brand di || true'
 run "NEW_BADGE_TTL" python3 scripts/apply-new-badge-ttl.py --brand di
 
 if [[ "$MORE" == "1" ]]; then
