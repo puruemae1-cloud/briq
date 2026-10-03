@@ -1,7 +1,7 @@
 {
   "hub": "women-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-09-30T21:05:06.363185+00:00",
+  "scrapedAt": "2026-10-03T21:14:35.800392+00:00",
   "leaves": [
     "bv-women-wallets-small",
     "bv-women-wallets-long",
@@ -24,12 +24,12 @@
       "scraped": 35
     },
     "bv-women-wallets-pouches": {
-      "official": 27,
-      "scraped": 27
+      "official": 26,
+      "scraped": 26
     },
     "bv-women-wallets-intrecciato": {
-      "official": 69,
-      "scraped": 69
+      "official": 61,
+      "scraped": 61
     },
     "bv-women-wallets-cassette": {
       "official": 20,
@@ -1929,8 +1929,8 @@
         "bv-women-wallets-long",
         "bv-women-wallets-intrecciato"
       ],
-      "leafId": "bv-women-wallets-intrecciato",
-      "cgid": "women-wallets-intrecciato",
+      "leafId": "bv-women-wallets-long",
+      "cgid": "women-long-wallets",
       "hubCategory": "accessories"
     },
     {
@@ -2869,14 +2869,16 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/03009b18-390a-4f85-9b46-42604deab028/eCom/814674VCPP28425_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/m/20553622861333e1/eCom-814674VCPP28425_B.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/m/6e4d7bef0ae9d507/eCom-814674VCPP28425_D.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/m/20553622861333e1/Small-814674VCPP28425_B.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/03009b18-390a-4f85-9b46-42604deab028/Small/814674VCPP28425_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/814674vcpp28425/1.jpg",
         "/products/bv-pdp/814674vcpp28425/2.jpg",
-        "/products/bv-pdp/814674vcpp28425/3.jpg"
+        "/products/bv-pdp/814674vcpp28425/3.jpg",
+        "/products/bv-pdp/814674vcpp28425/4.jpg"
       ],
       "sizes": [
         {
@@ -3107,7 +3109,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-medium-bi-fold-wallet-emerald-green-750262VCQC13049.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Emerald Green",
@@ -3144,7 +3146,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         }
@@ -4971,7 +4973,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-zipped-card-case-black-765460VCQC48425.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -5002,7 +5004,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -7683,7 +7685,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-black-796324VCPP38425.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -7715,7 +7717,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -8559,7 +8561,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-barolo-814091VCPP32247.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Barolo",
@@ -8594,7 +8596,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -9163,8 +9165,8 @@
         "bv-women-wallets-small",
         "bv-women-wallets-intrecciato"
       ],
-      "leafId": "bv-women-wallets-intrecciato",
-      "cgid": "women-wallets-intrecciato",
+      "leafId": "bv-women-wallets-small",
+      "cgid": "women-small-wallets",
       "hubCategory": "accessories"
     },
     {
@@ -9295,8 +9297,8 @@
         "bv-women-wallets-long",
         "bv-women-wallets-intrecciato"
       ],
-      "leafId": "bv-women-wallets-intrecciato",
-      "cgid": "women-wallets-intrecciato",
+      "leafId": "bv-women-wallets-long",
+      "cgid": "women-long-wallets",
       "hubCategory": "accessories"
     },
     {
@@ -9483,8 +9485,8 @@
         "bv-women-wallets-card-cases",
         "bv-women-wallets-intrecciato"
       ],
-      "leafId": "bv-women-wallets-intrecciato",
-      "cgid": "women-wallets-intrecciato",
+      "leafId": "bv-women-wallets-card-cases",
+      "cgid": "women-card-cases",
       "hubCategory": "accessories"
     },
     {

@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-09-30T20:07:52.107471+00:00",
+  "scrapedAt": "2026-10-03T20:13:22.376427+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -24,7 +24,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/odyssey-cabin-suitcase-midnight-black-822479V5AO14248.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Midnight/Black",
@@ -74,7 +74,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }
@@ -1081,7 +1081,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/vanity-case-espresso-869368V5B702028.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Espresso",
         "Hardware: Brass",
@@ -1121,7 +1121,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
@@ -3954,7 +3954,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-with-travel-case-black-837952V2ED01000.html",
       "gbpPrice": 1690.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Black",
@@ -4115,7 +4115,7 @@
           "id": "39",
           "value": "39",
           "displayValue": "39",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1690.0,
           "listGbpPrice": null
         },
@@ -4131,7 +4131,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1690.0,
           "listGbpPrice": null
         },
@@ -4331,7 +4331,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-mahogany-805971V2HL16144.html",
       "gbpPrice": 3740.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Deep mahogany",
@@ -4369,7 +4369,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
@@ -5080,6 +5080,80 @@
           "displayValue": "U",
           "inStock": false,
           "gbpPrice": 4640.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-travel"
+      ],
+      "leafId": "bv-men-travel",
+      "cgid": "men-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00B7ZV56Y18803",
+      "sku": "A00B7ZV56Y18803",
+      "internalId": "814491610",
+      "name": "Odyssey Intrecciato Cabin Suitcase",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-black-A00B7ZV56Y18803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-black-A00B7ZV56Y18803.html",
+      "gbpPrice": 6640.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Cabin trolley with durable, custom-moulded ABS shell wrapped in supple Intrecciato calfskin leather",
+        "Cabin size",
+        "Volume: 38L",
+        "Calfskin leather handles and trims",
+        "Detachable Intrecciato leather tag holder",
+        "Organised canvas interior composed of one zipped compartment and one strapped compartment featuring a detachable divider with a flat zipped pocket",
+        "Comes with a custom rain cover in water-repellent mackintosh fabric",
+        "Zip closure with TSA lock system",
+        "Four 360° wheels and telescopic handle"
+      ],
+      "compactedLongDesc": "Suitcase realised using signature Intrecciato craftsmaship in smooth leather. Features seamlessly integrated calfskin handles, trims, and a detachable Intrecciato tag holder.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ff7936dd-80bb-43a1-8396-4976d56fbed2/eCom/A00B7ZV56Y18803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f660c6a2-4c57-4b53-b7bd-8e8541dbb2c8/eCom/A00B7ZV56Y18803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/870ea321-793d-4ea7-86c4-b9964af8a151/eCom/A00B7ZV56Y18803_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1970b578-4463-4250-a007-25dd38488571/eCom/A00B7ZV56Y18803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d46c87fa-39e6-4062-8c36-60a5dc4fa17f/eCom/A00B7ZV56Y18803_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e5276fa4-73b5-454d-b807-cc655fa77831/eCom/A00B7ZV56Y18803_I.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ff7936dd-80bb-43a1-8396-4976d56fbed2/Small/A00B7ZV56Y18803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00b7zv56y18803/1.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/2.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/3.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/4.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/5.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/6.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 6640.0,
           "listGbpPrice": null
         }
       ],

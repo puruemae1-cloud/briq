@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-09-30T20:06:50.175341+00:00",
+  "scrapedAt": "2026-10-03T20:12:17.202483+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -5021,7 +5021,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/long-cassette-wallet-black-749463VBWD28803.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black"
@@ -5052,7 +5052,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -6053,7 +6053,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-midnight-basalt-795612V5FC14363.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Midnight/Basalt",
         "Lining: Calfskin"
@@ -6084,7 +6084,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -6598,7 +6598,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-barolo-814091VCPP32247.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Barolo",
@@ -6633,7 +6633,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -8122,10 +8122,10 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/6d51db36-21f2-4bc1-8805-1fb47a51235d/eCom/795712V7EV01268_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/2315ef82-3c93-4340-b552-fecc52fabd3d/eCom/795712V7EV01268_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/4f957cba-db30-465e-a223-13014a2e845f/eCom/795712V7EV01268_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4f957cba-db30-465e-a223-13014a2e845f/eCom/795712V7EV01268_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/041edb46-bf6e-4c40-b0c2-c367d7141653/eCom/795712V7EV01268_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/00a08729-2b15-422b-bbcb-b01aae78d836/eCom/795712V7EV01268_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/0ec0f627-1715-496c-99de-1c3a34caf23b/eCom/795712V7EV01268_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0ec0f627-1715-496c-99de-1c3a34caf23b/eCom/795712V7EV01268_F.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/6d51db36-21f2-4bc1-8805-1fb47a51235d/Small/795712V7EV01268_A.jpg?v=1"
       ],
       "localImages": [
@@ -8576,7 +8576,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-midnight-857931V2HL04330.html",
       "gbpPrice": 1730.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Midnight",
         "Hardware: Silver finish",
@@ -8618,7 +8618,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1730.0,
           "listGbpPrice": null
         }
@@ -8788,7 +8788,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-medium-organizer-black-765809V2HL08803.html",
       "gbpPrice": 860.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -8822,7 +8822,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 860.0,
           "listGbpPrice": null
         }
@@ -8985,7 +8985,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-phone-pouch-black-837120V5AJ38803.html",
       "gbpPrice": 1240.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Unlined",
         "Colour: Black",
@@ -9028,7 +9028,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1240.0,
           "listGbpPrice": null
         }
@@ -12153,7 +12153,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo--card-case-black-817397V4LQ18803.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black"
@@ -12184,7 +12184,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }

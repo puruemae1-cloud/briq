@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-09-30T19:29:40.683440+00:00",
+  "scrapedAt": "2026-10-03T19:35:49.773630+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -42,8 +42,8 @@
       "scraped": 16
     },
     "bv-men-bags-crossbody": {
-      "official": 65,
-      "scraped": 65
+      "official": 69,
+      "scraped": 69
     },
     "bv-men-bags-tote": {
       "official": 58,
@@ -708,7 +708,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-mahogany-805971V2HL16144.html",
       "gbpPrice": 3740.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Deep mahogany",
@@ -746,7 +746,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
@@ -2512,7 +2512,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-midnight-857931V2HL04330.html",
       "gbpPrice": 1730.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Midnight",
         "Hardware: Silver finish",
@@ -2554,7 +2554,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1730.0,
           "listGbpPrice": null
         }
@@ -2582,7 +2582,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-north-south-tote-ardoise-815783V2HL12077.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Ardoise",
@@ -2619,7 +2619,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -3937,7 +3937,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-briefcase-black-A006APV4FV08803.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -3976,7 +3976,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -10693,7 +10693,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-black-parakeet-737950V29E01091.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Black/Parakeet",
@@ -10734,7 +10734,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }
@@ -11848,7 +11848,8 @@
         "bottega-veneta-bags",
         "bv-men",
         "bv-men-bags",
-        "bv-men-bags-tote"
+        "bv-men-bags-tote",
+        "bv-men-bags-crossbody"
       ],
       "leafId": "bv-men-bags-tote",
       "cgid": "men-tote-bags",
@@ -13089,6 +13090,348 @@
       ],
       "leafId": "bv-men-bags-tote",
       "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00B7ZV56Y18803",
+      "sku": "A00B7ZV56Y18803",
+      "internalId": "814491610",
+      "name": "Odyssey Intrecciato Cabin Suitcase",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-black-A00B7ZV56Y18803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-black-A00B7ZV56Y18803.html",
+      "gbpPrice": 6640.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Cabin trolley with durable, custom-moulded ABS shell wrapped in supple Intrecciato calfskin leather",
+        "Cabin size",
+        "Volume: 38L",
+        "Calfskin leather handles and trims",
+        "Detachable Intrecciato leather tag holder",
+        "Organised canvas interior composed of one zipped compartment and one strapped compartment featuring a detachable divider with a flat zipped pocket",
+        "Comes with a custom rain cover in water-repellent mackintosh fabric",
+        "Zip closure with TSA lock system",
+        "Four 360° wheels and telescopic handle"
+      ],
+      "compactedLongDesc": "Suitcase realised using signature Intrecciato craftsmaship in smooth leather. Features seamlessly integrated calfskin handles, trims, and a detachable Intrecciato tag holder.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ff7936dd-80bb-43a1-8396-4976d56fbed2/eCom/A00B7ZV56Y18803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f660c6a2-4c57-4b53-b7bd-8e8541dbb2c8/eCom/A00B7ZV56Y18803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/870ea321-793d-4ea7-86c4-b9964af8a151/eCom/A00B7ZV56Y18803_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1970b578-4463-4250-a007-25dd38488571/eCom/A00B7ZV56Y18803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d46c87fa-39e6-4062-8c36-60a5dc4fa17f/eCom/A00B7ZV56Y18803_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e5276fa4-73b5-454d-b807-cc655fa77831/eCom/A00B7ZV56Y18803_I.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ff7936dd-80bb-43a1-8396-4976d56fbed2/Small/A00B7ZV56Y18803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00b7zv56y18803/1.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/2.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/3.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/4.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/5.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/6.jpg",
+        "/products/bv-pdp/a00b7zv56y18803/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 6640.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato"
+      ],
+      "leafId": "bv-men-bags-intrecciato",
+      "cgid": "men-intrecciato",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "844018V4TD13770",
+      "sku": "844018V4TD13770",
+      "internalId": "814400465",
+      "name": "Traveler Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Bark green",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-bark-green-844018V4TD13770.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-bark-green-844018V4TD13770.html",
+      "gbpPrice": 1520.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Bark Green",
+        "Hardware: Silver",
+        "Lining: Suede"
+      ],
+      "longDescription": [
+        "Intrecciato deer leather phone pouch",
+        "Adjustable cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato deer leather with adjustable cross-body strap.",
+      "composition": "• Material: Deer leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 12 cm\n\n• Width: 20 cm\n\n• Depth: 5,5 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2a9ca723-465a-4ee0-8260-48729cdc7f3b/eCom/844018V4TD13770_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bb4d8959-c9ca-491d-b701-0103bda58dc6/eCom/844018V4TD13770_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a48eec3f-ba65-4b6c-adaa-a4b2fac4b108/eCom/844018V4TD13770_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f66357ec-465b-4ff3-928b-c927963f57e3/eCom/844018V4TD13770_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2a9ca723-465a-4ee0-8260-48729cdc7f3b/Small/844018V4TD13770_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844018v4td13770/1.jpg",
+        "/products/bv-pdp/844018v4td13770/2.jpg",
+        "/products/bv-pdp/844018v4td13770/3.jpg",
+        "/products/bv-pdp/844018v4td13770/4.jpg",
+        "/products/bv-pdp/844018v4td13770/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "815748V4TD18803",
+      "sku": "815748V4TD18803",
+      "internalId": "813723008",
+      "name": "Small Traveler",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-traveler-black-815748V4TD18803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-traveler-black-815748V4TD18803.html",
+      "gbpPrice": 3120.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato deer skin small hobo bag with adjustable strap",
+        "Two interior open pockets, one zipped pocket and key-hook on strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Hobo bag in Intrecciato deer skin with adjustable strap.",
+      "composition": "• Material: Deer skin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 29.5 cm | 11.6” \n\n• Width: 35 cm | 13.8” \n\n• Depth: 8.5 cm | 3.3” \n\n• Strap drop: 46 cm | 18.1”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b8afbdf6-5607-4f23-8de4-98e1cca1b5b7/eCom/815748V4TD18803_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/d025ed16-c712-4e16-9c42-f3513fc9d259/eCom/815748V4TD18803_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/9f743d71-2141-4147-8665-10fdd319a3dd/eCom/815748V4TD18803_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/b97e2024-6f91-4c2e-b9dd-65f937de4039/eCom/815748V4TD18803_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/f41f5eab-7517-4275-bb4f-59cb26f03f85/eCom/815748V4TD18803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b8afbdf6-5607-4f23-8de4-98e1cca1b5b7/Small/815748V4TD18803_A.jpg?v=3"
+      ],
+      "localImages": [
+        "/products/bv-pdp/815748v4td18803/1.jpg",
+        "/products/bv-pdp/815748v4td18803/2.jpg",
+        "/products/bv-pdp/815748v4td18803/3.jpg",
+        "/products/bv-pdp/815748v4td18803/4.jpg",
+        "/products/bv-pdp/815748v4td18803/5.jpg",
+        "/products/bv-pdp/815748v4td18803/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3120.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "806974V4TD12116",
+      "sku": "806974V4TD12116",
+      "internalId": "814085022",
+      "name": "Traveler",
+      "brand": "bottega veneta",
+      "color": "Old wood",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-old-wood-806974V4TD12116.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-old-wood-806974V4TD12116.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Old wood",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato deerskin leather hobo bag with adjustable strap",
+        "Two interior open pockets, one zipped pocket and key-hook on strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Hobo bag in Intrecciato deer skin with adjustable strap.",
+      "composition": "• Material: deerskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 33 cm | 13 in\n\n• Width: 44 cm | 17.3 in\n\n• Depth: 9 cm | 3.5 in\n\n• Strap drop: 25 cm | 9.8 in",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1ca564c1-438c-4e21-86aa-910bc1bbc6f9/eCom/806974V4TD12116_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/05433baa-67f2-4156-ac1f-5be2110d594a/eCom/806974V4TD12116_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6927909e-ae25-4e52-998e-5203bcfd6a03/eCom/806974V4TD12116_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/819bc74a-3ece-44f7-983b-b1f1f83ca18a/eCom/806974V4TD12116_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/7dad56b4-cda6-4a36-8b3b-294188fa8470/eCom/806974V4TD12116_E.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/1ca564c1-438c-4e21-86aa-910bc1bbc6f9/Small/806974V4TD12116_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/806974v4td12116/1.jpg",
+        "/products/bv-pdp/806974v4td12116/2.jpg",
+        "/products/bv-pdp/806974v4td12116/3.jpg",
+        "/products/bv-pdp/806974v4td12116/4.jpg",
+        "/products/bv-pdp/806974v4td12116/5.jpg",
+        "/products/bv-pdp/806974v4td12116/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "806974V4TD13386",
+      "sku": "806974V4TD13386",
+      "internalId": "813605698",
+      "name": "Traveler",
+      "brand": "bottega veneta",
+      "color": "Kaki",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-kaki-806974V4TD13386.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-kaki-806974V4TD13386.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Kaki",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato deer skin hobo bag with adjustable strap",
+        "Two interior open pockets, one zipped pocket and key-hook on strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Hobo bag in Intrecciato deer skin with adjustable strap.",
+      "composition": "• Material: deerskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 33 cm | 13\" \n\n• Width: 44 cm | 17.3 \n\n• Depth: 9 cm | 3.5\" \n\n• Strap drop: 25 cm | 9.8”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/32c51898-b436-4819-80a6-0463df871700/eCom/806974V4TD13386_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/5e6b86c4-f5c3-4e08-a349-774f39772b95/eCom/806974V4TD13386_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cfd8983c-7256-42d4-91b9-6275ed7e2e53/eCom/806974V4TD13386_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/e5d2af19-0a4b-4d39-99c4-5da33a8c1ef5/eCom/806974V4TD13386_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/c35ebcee-3068-4f2e-b88a-0ac5c1df6263/eCom/806974V4TD13386_E.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/32c51898-b436-4819-80a6-0463df871700/Small/806974V4TD13386_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/806974v4td13386/1.jpg",
+        "/products/bv-pdp/806974v4td13386/2.jpg",
+        "/products/bv-pdp/806974v4td13386/3.jpg",
+        "/products/bv-pdp/806974v4td13386/4.jpg",
+        "/products/bv-pdp/806974v4td13386/5.jpg",
+        "/products/bv-pdp/806974v4td13386/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
       "hubCategory": "bags"
     }
   ]

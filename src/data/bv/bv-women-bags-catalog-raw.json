@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-09-30T20:24:47.849117+00:00",
+  "scrapedAt": "2026-10-03T20:30:30.476497+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -32,8 +32,8 @@
       "scraped": 55
     },
     "bv-women-bags-shoulder": {
-      "official": 63,
-      "scraped": 63
+      "official": 64,
+      "scraped": 64
     },
     "bv-women-bags-top-handle": {
       "official": 60,
@@ -76,8 +76,8 @@
       "scraped": 20
     },
     "bv-women-bags-bang-bang": {
-      "official": 7,
-      "scraped": 7
+      "official": 12,
+      "scraped": 12
     },
     "bv-women-bags-lauren": {
       "official": 12,
@@ -92,8 +92,8 @@
       "scraped": 13
     },
     "bv-women-bags-madison": {
-      "official": 9,
-      "scraped": 9
+      "official": 10,
+      "scraped": 10
     }
   },
   "products": [
@@ -2640,12 +2640,13 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1696f455-8ae0-4e7f-9bb8-bb329e628ac6/eCom/857657V6FQ14545_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/38f52afa-c71d-4253-9bd4-be2c6a401ee7/eCom/857657V6FQ14545_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/6d38f52d-9816-464c-8337-09f523d1e38c/eCom/857657V6FQ14545_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/5eabc517-f5e3-494e-966a-544dee9c56e0/eCom/857657V6FQ14545_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/a996340d-8a2a-43f1-a56b-0d21dea9ca20/eCom/857657V6FQ14545_E.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/e5da53fb-c07f-47e5-8cee-06de05f7b0b1/eCom/857657V6FQ14545_F.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/38f52afa-c71d-4253-9bd4-be2c6a401ee7/Small/857657V6FQ14545_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/1696f455-8ae0-4e7f-9bb8-bb329e628ac6/Small/857657V6FQ14545_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/857657v6fq14545/1.jpg",
@@ -2653,7 +2654,8 @@
         "/products/bv-pdp/857657v6fq14545/3.jpg",
         "/products/bv-pdp/857657v6fq14545/4.jpg",
         "/products/bv-pdp/857657v6fq14545/5.jpg",
-        "/products/bv-pdp/857657v6fq14545/6.jpg"
+        "/products/bv-pdp/857657v6fq14545/6.jpg",
+        "/products/bv-pdp/857657v6fq14545/7.jpg"
       ],
       "sizes": [
         {
@@ -5204,10 +5206,11 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-mini",
-        "bv-women-bags-crossbody"
+        "bv-women-bags-crossbody",
+        "bv-women-bags-bang-bang"
       ],
-      "leafId": "bv-women-bags-crossbody",
-      "cgid": "women-crossbody-bags",
+      "leafId": "bv-women-bags-bang-bang",
+      "cgid": "women-bang-bang",
       "hubCategory": "bags"
     },
     {
@@ -21843,7 +21846,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/bang-bang-fondant-gold-789109V3IV12132.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Fondant",
@@ -21884,7 +21887,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }
@@ -24851,7 +24854,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-blue-royal-766019V5ZZ14303.html",
       "gbpPrice": 6380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede bonded Intrecciato",
         "Colour: Blue Royal",
@@ -24888,7 +24891,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6380.0,
           "listGbpPrice": null
         }
@@ -25526,6 +25529,351 @@
       ],
       "leafId": "bv-women-bags-clutch",
       "cgid": "women-clutches",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A008QVV6P109874",
+      "sku": "A008QVV6P109874",
+      "internalId": "814479389",
+      "name": "Small Madison",
+      "brand": "bottega veneta",
+      "color": "Dark caramel 20",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-madison-dark-caramel-20-A008QVV6P109874.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-madison-dark-caramel-20-A008QVV6P109874.html",
+      "gbpPrice": 3300.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Dark Caramel 20",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato suede leather shoulder bag with sliding chain",
+        "The memory flap can be reshaped and adapted to hold countless forms",
+        "Leather shoulder pads",
+        "One main interior compartment with one zipped pocket and an external flat open pocket at the back of the bag",
+        "Metallic knot lock closure"
+      ],
+      "compactedLongDesc": "Shoulder bag in Intrecciato leather with malleable memory flap, sculptural knot closure, and sliding cross-body chain featuring a leather shoulder pad.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 25.5 cm | 10\"\n\n• Depth: 5.5 cm | 2.2\"\n\n• Handle drop: 26 cm | 10.2\"\n\n• Strap drop: 53 cm | 20.9”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/02c0c5c7-f501-49ca-8e47-78573ac3c724/eCom/A008QVV6P109874_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/abb04b6c-0fe6-44bb-b3bd-19883a92c39e/eCom/A008QVV6P109874_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/defe05d6-f92e-4f53-831f-2e1ff229bab0/eCom/A008QVV6P109874_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fbb949d0-bd4b-4ff4-a2c1-710bddd3142c/eCom/A008QVV6P109874_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2f47a23e-066e-44d6-8b69-0c7fdee43f1e/eCom/A008QVV6P109874_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/02c0c5c7-f501-49ca-8e47-78573ac3c724/Small/A008QVV6P109874_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a008qvv6p109874/1.jpg",
+        "/products/bv-pdp/a008qvv6p109874/2.jpg",
+        "/products/bv-pdp/a008qvv6p109874/3.jpg",
+        "/products/bv-pdp/a008qvv6p109874/4.jpg",
+        "/products/bv-pdp/a008qvv6p109874/5.jpg",
+        "/products/bv-pdp/a008qvv6p109874/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3300.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-shoulder",
+        "bv-women-bags-madison"
+      ],
+      "leafId": "bv-women-bags-madison",
+      "cgid": "women-madison",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "875454V0HW09534",
+      "sku": "875454V0HW09534",
+      "internalId": "814304710",
+      "name": "Candy Bang Bang",
+      "brand": "bottega veneta",
+      "color": "Alabaster",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-alabaster-875454V0HW09534.html",
+      "url": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-alabaster-875454V0HW09534.html",
+      "gbpPrice": 1340.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Alabaster",
+        "Hardware: Brass finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Candy Intrecciato piccolo nappa leather vanity case",
+        "One main compartment",
+        "Double Zip closure",
+        "Shoulder strap"
+      ],
+      "compactedLongDesc": "Candy vanity case in Intrecciato piccolo nappa leather with shoulder strap featuring knot detailing.",
+      "composition": "• Material: Lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 12.5 cm | 4.9\"\n\n• Depth: 3.5 cm | 1.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/9c6c6361-76b3-4232-b49c-4fc4cf91a8a3/eCom/875454V0HW09534_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f78225fc-cec0-4baf-994c-64244e7d3aa4/eCom/875454V0HW09534_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c22147bb-4cb0-44be-a1a8-933b8f9cc580/eCom/875454V0HW09534_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e52721bc-71d4-467a-ad9a-0d9fa992a479/eCom/875454V0HW09534_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/32182ce4-70d6-4989-ad83-37eacf9fbd11/eCom/875454V0HW09534_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9c6c6361-76b3-4232-b49c-4fc4cf91a8a3/Small/875454V0HW09534_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/875454v0hw09534/1.jpg",
+        "/products/bv-pdp/875454v0hw09534/2.jpg",
+        "/products/bv-pdp/875454v0hw09534/3.jpg",
+        "/products/bv-pdp/875454v0hw09534/4.jpg",
+        "/products/bv-pdp/875454v0hw09534/5.jpg",
+        "/products/bv-pdp/875454v0hw09534/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1340.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-bang-bang"
+      ],
+      "leafId": "bv-women-bags-bang-bang",
+      "cgid": "women-bang-bang",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "875454V0HW03020",
+      "sku": "875454V0HW03020",
+      "internalId": "814324775",
+      "name": "Candy Bang Bang",
+      "brand": "bottega veneta",
+      "color": "Basil",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-basil-875454V0HW03020.html",
+      "url": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-basil-875454V0HW03020.html",
+      "gbpPrice": 1340.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Basil",
+        "Hardware: Brass finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Candy Intrecciato piccolo nappa leather vanity case",
+        "One main compartment",
+        "Double Zip closure",
+        "Shoulder strap"
+      ],
+      "compactedLongDesc": "Candy vanity case in Intrecciato piccolo nappa leather with shoulder strap featuring knot detailing.",
+      "composition": "• Material: Lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 12.5 cm | 4.9\"\n\n• Depth: 3.5 cm | 1.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/058a72ba-f8f8-4287-8317-c8c2b4331020/eCom/875454V0HW03020_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4128377a-ffa9-447b-8a5d-0c49c5df21b9/eCom/875454V0HW03020_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b65bc7e4-75f8-4227-92a1-cdd401eb2290/eCom/875454V0HW03020_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/543c8256-13fe-48d3-8c89-2f97df3dcf36/eCom/875454V0HW03020_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e38d5848-0704-46b8-908f-e0f5f4d2d239/eCom/875454V0HW03020_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/058a72ba-f8f8-4287-8317-c8c2b4331020/Small/875454V0HW03020_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/875454v0hw03020/1.jpg",
+        "/products/bv-pdp/875454v0hw03020/2.jpg",
+        "/products/bv-pdp/875454v0hw03020/3.jpg",
+        "/products/bv-pdp/875454v0hw03020/4.jpg",
+        "/products/bv-pdp/875454v0hw03020/5.jpg",
+        "/products/bv-pdp/875454v0hw03020/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1340.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-bang-bang"
+      ],
+      "leafId": "bv-women-bags-bang-bang",
+      "cgid": "women-bang-bang",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "875454V0HW06585",
+      "sku": "875454V0HW06585",
+      "internalId": "814304709",
+      "name": "Candy Bang Bang",
+      "brand": "bottega veneta",
+      "color": "Lava red",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-lava-red-875454V0HW06585.html",
+      "url": "https://www.bottegaveneta.com/en-gb/candy-bang-bang-lava-red-875454V0HW06585.html",
+      "gbpPrice": 1340.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Lava Red",
+        "Hardware: Brass finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Candy Intrecciato piccolo nappa leather vanity case",
+        "One main compartment",
+        "Double Zip closure",
+        "Shoulder strap"
+      ],
+      "compactedLongDesc": "Candy vanity case in Intrecciato piccolo nappa leather with shoulder strap featuring knot detailing.",
+      "composition": "• Material: Lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 12.5 cm | 4.9\"\n\n• Depth: 3.5 cm | 1.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/da04acfb-a9bc-462b-8670-65524327c739/eCom/875454V0HW06585_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2295f15e-86a5-4612-816a-2235163d7db6/eCom/875454V0HW06585_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/078e7915-569c-4465-b560-8d20573c4a50/eCom/875454V0HW06585_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2f98dced-fa71-4992-9e03-619cdb024d4d/eCom/875454V0HW06585_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e36c683c-6e01-4848-89c0-6bfc00d09a13/eCom/875454V0HW06585_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d3cb7242-6c1d-4dc8-aec5-3ac568d513d2/eCom/875454V0HW06585_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/da04acfb-a9bc-462b-8670-65524327c739/Small/875454V0HW06585_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/875454v0hw06585/1.jpg",
+        "/products/bv-pdp/875454v0hw06585/2.jpg",
+        "/products/bv-pdp/875454v0hw06585/3.jpg",
+        "/products/bv-pdp/875454v0hw06585/4.jpg",
+        "/products/bv-pdp/875454v0hw06585/5.jpg",
+        "/products/bv-pdp/875454v0hw06585/6.jpg",
+        "/products/bv-pdp/875454v0hw06585/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1340.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-bang-bang"
+      ],
+      "leafId": "bv-women-bags-bang-bang",
+      "cgid": "women-bang-bang",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "789109V3IV18425",
+      "sku": "789109V3IV18425",
+      "internalId": "813375073",
+      "name": "Bang Bang",
+      "brand": "bottega veneta",
+      "color": "Black/gold",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/bang-bang-black-gold-789109V3IV18425.html",
+      "url": "https://www.bottegaveneta.com/en-gb/bang-bang-black-gold-789109V3IV18425.html",
+      "gbpPrice": 2400.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin",
+        "Colour: Black",
+        "Hardware: Gold finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather vanity case with detachable strap",
+        "One main compartment, one flat pocket",
+        "Zippered closure"
+      ],
+      "compactedLongDesc": "Intrecciato leather vanity case with detachable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 12.5 cm | 4.9\" \n\n• Width: 22 cm | 8.7\" \n\n• Depth: 5 cm | 2\" \n\n•Handle drop: 4.5 cm | 1.8\" \n\n•Strap drop: 45 cm | 17.7\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/m/169ac9e0c23e1b41/eCom-789109V3IV18425_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/21e962189b519333/eCom-789109V3IV18425_B.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/5be8da09cd6b6c30/eCom-789109V3IV18425_C.jpg?v=5",
+        "https://bottega-veneta.dam.kering.com/m/509ef5648fcc3c8c/eCom-789109V3IV18425_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/508a2867ba50dc36/eCom-789109V3IV18425_E.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/m/e2c136027450050/eCom-789109V3IV18425_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/169ac9e0c23e1b41/Small-789109V3IV18425_A.jpg?v=3"
+      ],
+      "localImages": [
+        "/products/bv-pdp/789109v3iv18425/1.jpg",
+        "/products/bv-pdp/789109v3iv18425/2.jpg",
+        "/products/bv-pdp/789109v3iv18425/3.jpg",
+        "/products/bv-pdp/789109v3iv18425/4.jpg",
+        "/products/bv-pdp/789109v3iv18425/5.jpg",
+        "/products/bv-pdp/789109v3iv18425/6.jpg",
+        "/products/bv-pdp/789109v3iv18425/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2400.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-bang-bang"
+      ],
+      "leafId": "bv-women-bags-bang-bang",
+      "cgid": "women-bang-bang",
       "hubCategory": "bags"
     }
   ]

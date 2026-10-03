@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-09-30T21:16:53.382269+00:00",
+  "scrapedAt": "2026-10-03T21:27:02.355527+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -816,7 +816,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/bare-morning---eau-de-parfum-50-ml-%7C-1.75-fl.-oz.-bare-morning-A006XZVV5709980.html",
       "gbpPrice": 170.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -853,7 +853,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 170.0,
           "listGbpPrice": null
         }
@@ -1854,7 +1854,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/lantern-glaze-candle-yellow-white-black-788704VV5709980.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Fragrance notes: incense essence, suede rose, vetiver essence",
         "Volcanic glazes are high temperature glazes. Artisans have studied and developed them to be able to apply them to the low temperature clays, following two years of research",
@@ -1898,7 +1898,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
