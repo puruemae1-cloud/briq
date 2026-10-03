@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:38:33Z",
+  "generatedAt": "2026-10-03T20:12:31Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "vw-71010061-11010-am-red",
-        "vw-72030040-41454-am-beige",
-        "vw-72010006-41671-am-black",
-        "vw-72010006-41007-am-red"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
+      ],
+      "brands": [
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "vw-3g01003p-c006f-flag",
+        "vw-1f020001-w012o-giant-mac-andy-blue",
+        "vw-3101000h-c006d-sex",
+        "vw-8102002b-j009m-black"
       ],
       "brands": [
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood"
-      ]
-    },
-    "accessories": {
-      "productIds": [
-        "ch-a71795x06081s516355nocci",
-        "ch-a71803x08101s221400pocci",
-        "ch-a71819x02110s501449rocci",
-        "ch-a71820x02110s501454pocci"
-      ],
-      "brands": [
-        "chanel",
-        "chanel",
-        "chanel",
-        "chanel"
       ]
     },
     "sports": {
@@ -88,12 +88,6 @@
     }
   },
   "brands": {
-    "chanel": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -112,17 +106,23 @@
       "sports",
       "sports"
     ],
-    "vivienne-westwood": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
-    "보테가-베네타": [
+    "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "vivienne-westwood": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "보테가-베네타": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
