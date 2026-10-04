@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-03T21:27:02.355527+00:00",
+  "scrapedAt": "2026-10-04T18:52:22.084574+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -3160,7 +3160,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/goodmorning-midnight-refill-lava-red-863890VV5709980.html",
       "gbpPrice": 270.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -3198,7 +3198,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 270.0,
           "listGbpPrice": null
         }
