@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-03T20:12:31Z",
+  "generatedAt": "2026-10-04T16:10:17Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "di-657c81a2f28-x9000",
-        "di-683d481a3050-c530",
-        "di-683d490a3053-c587",
-        "di-713m636a0g29-c580"
+        "al-w198df-2869",
+        "al-w037ef-2999",
+        "al-w246jf-437",
+        "al-w249jf-162"
       ],
       "brands": [
-        "dior",
-        "dior",
-        "dior",
-        "dior"
+        "all-saints",
+        "all-saints",
+        "all-saints",
+        "all-saints"
       ]
     },
     "watches": {
@@ -32,24 +32,38 @@
     },
     "bags": {
       "productIds": [
-        "bv-857931v2hl03123",
-        "bv-855504v2hl12166",
-        "bv-855504v2hl11913",
-        "bv-857931v2hl08803"
+        "mb-waxed-baseball-cap",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote",
+        "mb-suede-tree-tote"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "ps-black-alfie-loafers",
+        "ps-black-campbell-boots",
+        "ps-black-emory-tassel-loafers",
+        "ps-burgundy-emory-tassel-loafers"
+      ],
+      "brands": [
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "bv-876811v6u302006",
+        "bv-796966v4lq22145",
+        "bv-743211vcpq42145",
+        "bv-796966v2bea4032"
       ],
       "brands": [
         "보테가-베네타",
@@ -58,26 +72,12 @@
         "보테가-베네타"
       ]
     },
-    "accessories": {
-      "productIds": [
-        "vw-3g01003p-c006f-flag",
-        "vw-1f020001-w012o-giant-mac-andy-blue",
-        "vw-3101000h-c006d-sex",
-        "vw-8102002b-j009m-black"
-      ],
-      "brands": [
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood"
-      ]
-    },
     "sports": {
       "productIds": [
+        "gg-dwayne",
+        "gg-dayton",
         "gg-arissa",
-        "gg-murdoch",
-        "gg-marsh",
-        "gg-legend"
+        "gg-murdoch"
       ],
       "brands": [
         "galvin-green",
@@ -88,17 +88,17 @@
     }
   },
   "brands": {
+    "all-saints": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
-    ],
-    "dior": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ],
     "galvin-green": [
       "sports",
@@ -112,17 +112,17 @@
       "bags",
       "bags"
     ],
-    "vivienne-westwood": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "보테가-베네타": [
+    "paul-smith": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
+    ],
+    "보테가-베네타": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ]
   },
   "overlaps": {},
