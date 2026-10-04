@@ -179,6 +179,8 @@ export type Product = {
   /** Original GBP list price when the CW site shows a reduction. */
   gbpListPrice?: number;
   sku?: string;
+  /** Brand style code shown small beside the English name on the PDP (not in nameKo). */
+  productCode?: string;
   sourceUrl?: string;
   size?: string;
   variants?: ProductVariant[];

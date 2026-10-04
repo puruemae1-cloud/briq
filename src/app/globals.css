@@ -4423,6 +4423,13 @@ html[data-shop-navigating] {
   font-weight: 400;
 }
 
+.product-detail__product-code {
+  margin-left: 0.5em;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: rgba(11, 18, 16, 0.42);
+}
+
 .pdp-dock__official-name {
   margin: 0.12rem 0 0;
   font-size: 0.78rem;

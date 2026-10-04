@@ -453,7 +453,12 @@ export function ProductDetail({
             />
           </div>
           {officialEnglishName ? (
-            <p className="product-detail__official-name">{officialEnglishName}</p>
+            <p className="product-detail__official-name">
+              {officialEnglishName}
+              {product.productCode ? (
+                <span className="product-detail__product-code">{product.productCode}</span>
+              ) : null}
+            </p>
           ) : null}
           {selected ? (
             <p className="product-detail__color-name">
