@@ -1,6 +1,6 @@
 import type { Product, ProductVariant } from "@/data/product-types";
 import { getProduct } from "@/data/products";
-import { isVariantInStock } from "@/data/product-utils";
+import { isVariantInStock, productDisplayPrice } from "@/data/product-utils";
 import {
   getNaverPayReturnInfo,
   NAVERPAY_SHIPPING_DEFAULTS,
@@ -208,7 +208,10 @@ function combinationXml(product: Product, variant: ProductVariant): string {
   const manageCode = variantManageCode(variant.id);
   const inStock = isVariantInStock(product, variant.id);
   // Relative to product.basePrice; order XML uses full unit as basePrice + option price 0.
-  const optionPrice = Math.max(0, variant.price - product.price);
+  const optionPrice = Math.max(
+    0,
+    productDisplayPrice(product, variant) - productDisplayPrice(product),
+  );
   const isCw = product.brand === "Christopher Ward";
   const colorAxisName = isCw ? "스트랩" : "컬러";
   const sizeAxisName = isCw ? "케이스 사이즈" : "사이즈";
@@ -257,7 +260,7 @@ function productXml(query: ProductInfoQuery): string | null {
     `<id>${escapeXml(toNaverProductId(product.id))}</id>`,
     `<merchantProductId>${escapeXml(product.id.slice(0, 100))}</merchantProductId>`,
     `<name>${cdata(name)}</name>`,
-    `<basePrice>${product.price}</basePrice>`,
+    `<basePrice>${productDisplayPrice(product)}</basePrice>`,
     `<taxType>${NAVERPAY_TAX_TYPE}</taxType>`,
     `<infoUrl>${cdata(absoluteUrl(`/product/${product.id}`))}</infoUrl>`,
     `<imageUrl>${cdata(absoluteUrl(image))}</imageUrl>`,
