@@ -2,7 +2,7 @@
   "family": "al-men-rtw",
   "category": "luxury",
   "hub": "men-rtw",
-  "scrapedAt": "2026-09-29T22:49:37.280309+00:00",
+  "scrapedAt": "2026-10-04T09:53:38.087129+00:00",
   "leaves": [
     "al-men-rtw-all",
     "al-men-coats-jackets",
@@ -16,7 +16,7 @@
     "al-men-trousers",
     "al-men-sweatpants"
   ],
-  "officialUnion": 570,
+  "officialUnion": 578,
   "products": [
     {
       "id": "M046LF-398",
@@ -9485,10 +9485,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=W088LF-827",
       "name": "Seyka Double-Layer Shearling Coat",
       "brand": "AllSaints",
@@ -15240,185 +15241,6 @@
         "/products/al-pdp/m039tf-9722/6.jpg",
         "/products/al-pdp/m039tf-9722/7.jpg",
         "/products/al-pdp/m039tf-9722/8.jpg"
-      ]
-    },
-    {
-      "id": "M089PF-162",
-      "sku": "M089PF-162",
-      "collections": [
-        "all-saints",
-        "al-men",
-        "al-men-rtw-all",
-        "al-men-tshirts"
-      ],
-      "leafId": "al-men-tshirts",
-      "cgid": "13",
-      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M089PF-162",
-      "name": "Shadow Relaxed Graphic T-Shirt",
-      "brand": "AllSaints",
-      "link": "/menswear/shadow-relaxed-graphic-t-shirt/M089PF-162.html",
-      "gbpPrice": 59.0,
-      "listGbpPrice": null,
-      "inStock": true,
-      "shortDescription": [
-        "Short sleeves",
-        "Ribbed crew neck",
-        "Stitching across arms",
-        "Measurements shown may vary slightly between individual items"
-      ],
-      "longDescription": [
-        "100% organic cotton",
-        "Mild machine wash at 30"
-      ],
-      "description": "Relaxed organic cotton T-shirt screenprinted with the AllSaints Spitalfields logo and a fragmented logo across the back.",
-      "modelCopy": "Model wears size M and is 6'2",
-      "stylistsTips": "",
-      "notesFromAtelier": "",
-      "sizeChartId": "sizechart-men-clothing",
-      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .sizeGuide_measurementContainer {\n        margin-top: 48px;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 644px;\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n    }\n    .sizeGuide_container th, td {\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n    .sizeGuide_container tbody tr:nth-child(even) td {\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_button-unitToggle {\n        margin-top: 24px;\n        padding: 0;\n        font-size: 12px;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        font-weight: 600;\n        background-color: #fff;\n        border: none;\n        text-decoration: underline;\n        color: #000;\n        border-radius: 2px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"sizeGuide_container\">\n        <div class=\"sizeGuide_header\">\n            <h1 class=\"sizeGuide_title\">Size guide</h1>\n            <button class=\"sizeGuide_closeBtn\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n                  <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n                </svg>\n            </button>\n        </div>\n        <div class=\"sizeGuide_tableContainer\">\n            <div class=\"table-scroll\">\n                <table>\n                    <colgroup>\n                        <col style=\"width: 140px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                    </colgroup>\n                    <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">&nbsp;</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XS</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">S</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">M</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">L</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XL</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XXL</th>\n                    </tr>\n                    </thead>\n                    <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Chest</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"111\">111</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"116\">116</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"121\">121</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"126\">126</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"131\">131</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"136\">136</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Hem</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"111\">111</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"116\">116</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"121\">121</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"126\">126</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"131\">131</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"136\">136</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Sleeve Length</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"23\">23</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Shoulder Width</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"57.1\">57.1</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"58.3\">58.3</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"59.5\">59.5</td>\\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"60.7\">60.7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"61.9\">61.9</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"63.1\">63.1</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Length</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Sleeve Opening</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"18.2\">18.2</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"18.7\">18.7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"19.2\">19.2</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"19.7\">19.7</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"20.2\">20.2</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"20.7\">20.7</td>\n                    </tr>\n                    </tbody>\n                </table>\n            </div>\n            <button type=\"button\" class=\"sizeGuide_button-unitToggle\" aria-pressed=\"false\">\n                See in inches\n            </button>\n        </div>\n        <div class=\"sizeGuide_measurementContainer\">\n            <h2 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">How to take measurements</h2>\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Chest</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure the chest at the widest part.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Hem</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure around the very bottom edge of the garment.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Sleeve Length</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure the longest part of your arm.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Shoulder Width</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure straight across the width of the back, from one shoulder point to the other.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Length</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure from the highest point of the shoulder down to the hemline.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Sleeve Opening</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure around the opening at the bottom of the sleeve.</p>\n            </div>\n        </div>\n    </div>\n\n<script>\n    (function () {\n        const button = document.querySelector('.sizeGuide_button-unitToggle');\n        const cells = document.querySelectorAll('td[data-cm]');\n        let unit = 'cm';\n\n        function render() {\n            cells.forEach(function (cell) {\n                const cm = parseFloat(cell.getAttribute('data-cm'));\n                if (unit === 'cm') {\n                    cell.textContent = cm;\n                } else {\n                    const inches = cm / 2.54;\n                    cell.textContent = (Math.round(inches * 10) / 10).toString();\n                }\n            });\n\n            const showingInches = unit === 'in';\n            button.textContent = showingInches ? 'See in cm' : 'See  in inches';\n            button.setAttribute('aria-pressed', String(showingInches));\n        }\n\n        button.addEventListener('click', function () {\n            unit = unit === 'cm' ? 'in' : 'cm';\n            render();\n        });\n\n        render();\n    })();\n</script>",
-      "sizeGuide": {
-        "headers": [
-          "구분",
-          "XS",
-          "S",
-          "M",
-          "L",
-          "XL",
-          "XXL"
-        ],
-        "rows": [
-          [
-            "Chest",
-            "111",
-            "116",
-            "121",
-            "126",
-            "131",
-            "136"
-          ],
-          [
-            "Hem",
-            "111",
-            "116",
-            "121",
-            "126",
-            "131",
-            "136"
-          ],
-          [
-            "Sleeve Length",
-            "23",
-            "23",
-            "23",
-            "23",
-            "23",
-            "23"
-          ],
-          [
-            "Shoulder Width",
-            "57.1",
-            "58.3",
-            "59.5",
-            "60.7",
-            "61.9",
-            "63.1"
-          ],
-          [
-            "Length",
-            "72",
-            "72",
-            "72",
-            "72",
-            "72",
-            "72"
-          ],
-          [
-            "Sleeve Opening",
-            "18.2",
-            "18.7",
-            "19.2",
-            "19.7",
-            "20.2",
-            "20.7"
-          ]
-        ]
-      },
-      "fabricAndCare": {
-        "fabricAndCareTitle": "Fabric & care",
-        "fabricAndCareCopy": "",
-        "fabricAndCareURL": ""
-      },
-      "originCountry": "Portugal",
-      "color": "Washed Black",
-      "imageUrls": [
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M089PF-162.json?_i=AG"
-      ],
-      "sizes": [
-        {
-          "id": "5063975034710",
-          "value": "XS",
-          "displayValue": "XS",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063975034345",
-          "value": "S",
-          "displayValue": "S",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063975034864",
-          "value": "M",
-          "displayValue": "M",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063975034659",
-          "value": "L",
-          "displayValue": "L",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063975034314",
-          "value": "XL",
-          "displayValue": "XL",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063975034727",
-          "value": "XXL",
-          "displayValue": "XXL",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        }
-      ],
-      "localImages": [
-        "/products/al-pdp/m089pf-162/1.jpg",
-        "/products/al-pdp/m089pf-162/2.jpg",
-        "/products/al-pdp/m089pf-162/3.jpg",
-        "/products/al-pdp/m089pf-162/4.jpg",
-        "/products/al-pdp/m089pf-162/5.jpg",
-        "/products/al-pdp/m089pf-162/6.jpg",
-        "/products/al-pdp/m089pf-162/7.jpg",
-        "/products/al-pdp/m089pf-162/8.jpg"
       ]
     },
     {
@@ -58798,119 +58620,6 @@
       ]
     },
     {
-      "id": "M013PF-162",
-      "sku": "M013PF-162",
-      "collections": [
-        "all-saints",
-        "al-men",
-        "al-men-rtw-all",
-        "al-men-tshirts"
-      ],
-      "leafId": "al-men-tshirts",
-      "cgid": "13",
-      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M013PF-162",
-      "name": "Scimitar Short Sleeve Boxy Graphic T-Shirt",
-      "brand": "AllSaints",
-      "link": "/menswear/scimitar-short-sleeve-boxy-graphic-t-shirt/M013PF-162.html",
-      "gbpPrice": 59.0,
-      "listGbpPrice": null,
-      "inStock": true,
-      "shortDescription": [
-        "Short sleeves",
-        "Ribbed crew neck",
-        "Hand drawn and screen printed graphic",
-        "Model is 6'2\" and wearing size Medium"
-      ],
-      "longDescription": [
-        "100% organic cotton",
-        "Mild machine wash at 30"
-      ],
-      "description": "The graphic t-shirt remains an essential wardrobe staple. Featuring an AllSaints hand-drawn graphic across the chest and centre back, the Scimitar t-shirt is crafted from breathable cotton and cut to a boxy silhouette.",
-      "modelCopy": "",
-      "stylistsTips": "",
-      "notesFromAtelier": "",
-      "sizeChartId": "sizechart-men-clothing",
-      "sizeAndFit": "",
-      "sizeGuide": null,
-      "fabricAndCare": {
-        "fabricAndCareTitle": "Fabric & care",
-        "fabricAndCareCopy": "",
-        "fabricAndCareURL": ""
-      },
-      "originCountry": "Portugal",
-      "color": "Washed Black",
-      "imageUrls": [
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M013PF-162.json?_i=AG"
-      ],
-      "sizes": [
-        {
-          "id": "5063320862791",
-          "value": "XS",
-          "displayValue": "XS",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063320863040",
-          "value": "S",
-          "displayValue": "S",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063320863170",
-          "value": "M",
-          "displayValue": "M",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063320863163",
-          "value": "L",
-          "displayValue": "L",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063320862944",
-          "value": "XL",
-          "displayValue": "XL",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "5063320862951",
-          "value": "XXL",
-          "displayValue": "XXL",
-          "inStock": true,
-          "gbpPrice": 59.0,
-          "listGbpPrice": null
-        }
-      ],
-      "localImages": [
-        "/products/al-pdp/m013pf-162/1.jpg",
-        "/products/al-pdp/m013pf-162/2.jpg",
-        "/products/al-pdp/m013pf-162/3.jpg",
-        "/products/al-pdp/m013pf-162/4.jpg",
-        "/products/al-pdp/m013pf-162/5.jpg",
-        "/products/al-pdp/m013pf-162/6.jpg",
-        "/products/al-pdp/m013pf-162/7.jpg",
-        "/products/al-pdp/m013pf-162/8.jpg"
-      ]
-    },
-    {
       "id": "M013PF-437",
       "sku": "M013PF-437",
       "collections": [
@@ -75112,10 +74821,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M049LF-5",
       "name": "Tilson Leather Peacoat",
       "brand": "AllSaints",
@@ -75227,10 +74937,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M047LF-5",
       "name": "Reed Leather Jacket",
       "brand": "AllSaints",
@@ -75342,10 +75053,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M034LF-4732",
       "name": "Cora slim fit leather jacket",
       "brand": "AllSaints",
@@ -84062,10 +83774,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M045LF-5",
       "name": "Miro Perforated Leather Bomber Jacket",
       "brand": "AllSaints",
@@ -84253,10 +83966,11 @@
         "al-men",
         "al-men-rtw-all",
         "al-men-coats-jackets",
-        "al-men-leather-jackets"
+        "al-men-leather-jackets",
+        "al-men-leathers"
       ],
-      "leafId": "al-men-leather-jackets",
-      "cgid": "21974",
+      "leafId": "al-men-leathers",
+      "cgid": "9",
       "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M075LF-4178",
       "name": "Chaiyo Slim-Fit Trucker Jacket",
       "brand": "AllSaints",
@@ -84549,6 +84263,1139 @@
         "/products/al-pdp/m050ff-5/4.jpg",
         "/products/al-pdp/m050ff-5/5.jpg",
         "/products/al-pdp/m050ff-5/6.jpg"
+      ]
+    },
+    {
+      "id": "M083KF-10784",
+      "sku": "M083KF-10784",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-knitwear"
+      ],
+      "leafId": "al-men-knitwear",
+      "cgid": "10",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M083KF-10784",
+      "name": "Galactic Jacquard-Knit Alpaca-Blend Cardigan",
+      "brand": "AllSaints",
+      "link": "/menswear/galactic-jacquard-knit-alpaca-blend-cardigan/M083KF-10784.html",
+      "gbpPrice": 179.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Long sleeves",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "Body: 32% recycled polyamide, 31% viscose, 22% wool (sheep), 11% mohair (Angora goat), 4% alpaca",
+        "Cuff: 45% recycled polyamide, 28% wool (sheep), 26% mohair (Angora goat), 1% elastane",
+        "Dry clean only"
+      ],
+      "description": "Regular-fit cardigan with an abstract jacquard, made from a brushed alpaca-mohair blend. Ribbed trims, V-neck and button fastenings.",
+      "modelCopy": "Model wears size M and is 6'2",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Stone Grey/black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-10784.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975069088",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069095",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069101",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069118",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069125",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069132",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m083kf-10784/1.jpg",
+        "/products/al-pdp/m083kf-10784/2.jpg",
+        "/products/al-pdp/m083kf-10784/3.jpg",
+        "/products/al-pdp/m083kf-10784/4.jpg",
+        "/products/al-pdp/m083kf-10784/5.jpg",
+        "/products/al-pdp/m083kf-10784/6.jpg",
+        "/products/al-pdp/m083kf-10784/7.jpg",
+        "/products/al-pdp/m083kf-10784/8.jpg"
+      ]
+    },
+    {
+      "id": "M083KF-9845",
+      "sku": "M083KF-9845",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-knitwear"
+      ],
+      "leafId": "al-men-knitwear",
+      "cgid": "10",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M083KF-9845",
+      "name": "Galactic Jacquard-Knit Alpaca-Blend Cardigan",
+      "brand": "AllSaints",
+      "link": "/menswear/galactic-jacquard-knit-alpaca-blend-cardigan/M083KF-9845.html",
+      "gbpPrice": 179.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Long sleeves",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "Body: 40% polyamide, 27% wool (sheep), 18% viscose, 10% mohair (Angora goat), 5% alpaca",
+        "Cuff: 54% polyamide, 34% wool (sheep), 11% alpaca, 1% elastane",
+        "Dry clean only"
+      ],
+      "description": "Regular-fit cardigan with an abstract jacquard, made from a brushed alpaca-mohair blend. Ribbed trims, V-neck and button fastenings.",
+      "modelCopy": "Model wears size M and is 6'2",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Black/stone Grey",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M083KF-9845.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975069026",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069033",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069040",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069057",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069064",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975069071",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 179.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m083kf-9845/1.jpg",
+        "/products/al-pdp/m083kf-9845/2.jpg",
+        "/products/al-pdp/m083kf-9845/3.jpg",
+        "/products/al-pdp/m083kf-9845/4.jpg",
+        "/products/al-pdp/m083kf-9845/5.jpg",
+        "/products/al-pdp/m083kf-9845/6.jpg",
+        "/products/al-pdp/m083kf-9845/7.jpg",
+        "/products/al-pdp/m083kf-9845/8.jpg"
+      ]
+    },
+    {
+      "id": "M074KF-898",
+      "sku": "M074KF-898",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-knitwear"
+      ],
+      "leafId": "al-men-knitwear",
+      "cgid": "10",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M074KF-898",
+      "name": "Storm Relaxed-Fit Striped Jumper",
+      "brand": "AllSaints",
+      "link": "/menswear/storm-relaxed-fit-striped-jumper/M074KF-898.html",
+      "gbpPrice": 199.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Crew neck",
+        "Long sleeves",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "33% mohair (Angora goat), 32% wool (Sheep) 31% recycled polyamide, 4% elastane",
+        "Mild hand wash inside out"
+      ],
+      "description": "Relaxed striped jumper knitted from a mohair-blend with a heavily brushed finish for softness.",
+      "modelCopy": "Model wears size M and is 6'1",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Brown/black",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M074KF-898.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975008001",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975008018",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975008025",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975008032",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975008049",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975008056",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 199.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m074kf-898/1.jpg",
+        "/products/al-pdp/m074kf-898/2.jpg",
+        "/products/al-pdp/m074kf-898/3.jpg",
+        "/products/al-pdp/m074kf-898/4.jpg",
+        "/products/al-pdp/m074kf-898/5.jpg",
+        "/products/al-pdp/m074kf-898/6.jpg",
+        "/products/al-pdp/m074kf-898/7.jpg",
+        "/products/al-pdp/m074kf-898/8.jpg"
+      ]
+    },
+    {
+      "id": "M082EF-723",
+      "sku": "M082EF-723",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-jeans"
+      ],
+      "leafId": "al-men-jeans",
+      "cgid": "7",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M082EF-723",
+      "name": "Slim-Fit Straight-Leg Jeans",
+      "brand": "AllSaints",
+      "link": "/menswear/slim-fit-straight-leg-jeans/M082EF-723.html",
+      "gbpPrice": 129.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Button closure",
+        "Five pockets",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "70% organic cotton, 30% recycled cotton",
+        "Lining: 65% polyester, 35% cotton",
+        "Mild machine wash at 30"
+      ],
+      "description": "Slim-fit, straight-leg jeans made from non-stretch denim. Horn embroidery at back pockets.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-jeans",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Turkey",
+      "color": "Dark Indigo",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M082EF-723.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975039906",
+          "value": "Size 28/L30",
+          "displayValue": "W28/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039432",
+          "value": "Size 28/L32",
+          "displayValue": "W28/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039807",
+          "value": "Size 30/L30",
+          "displayValue": "W30/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975040186",
+          "value": "Size 30/L32",
+          "displayValue": "W30/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039616",
+          "value": "Size 31/L30",
+          "displayValue": "W31/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975040117",
+          "value": "Size 31/L32",
+          "displayValue": "W31/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039999",
+          "value": "Size 32/L30",
+          "displayValue": "W32/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039739",
+          "value": "Size 32/L32",
+          "displayValue": "W32/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975040094",
+          "value": "Size 33/L30",
+          "displayValue": "W33/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039630",
+          "value": "Size 33/L32",
+          "displayValue": "W33/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039852",
+          "value": "Size 34/L30",
+          "displayValue": "W34/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039654",
+          "value": "Size 34/L32",
+          "displayValue": "W34/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039876",
+          "value": "Size 36/L30",
+          "displayValue": "W36/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975040100",
+          "value": "Size 36/L32",
+          "displayValue": "W36/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039487",
+          "value": "Size 38/L30",
+          "displayValue": "W38/L30",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975039708",
+          "value": "Size 38/L32",
+          "displayValue": "W38/L32",
+          "inStock": true,
+          "gbpPrice": 129.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m082ef-723/1.jpg",
+        "/products/al-pdp/m082ef-723/2.jpg",
+        "/products/al-pdp/m082ef-723/3.jpg",
+        "/products/al-pdp/m082ef-723/4.jpg",
+        "/products/al-pdp/m082ef-723/5.jpg",
+        "/products/al-pdp/m082ef-723/6.jpg",
+        "/products/al-pdp/m082ef-723/7.jpg",
+        "/products/al-pdp/m082ef-723/8.jpg"
+      ]
+    },
+    {
+      "id": "M124SF-4411",
+      "sku": "M124SF-4411",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-shirts"
+      ],
+      "leafId": "al-men-shirts",
+      "cgid": "11",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M124SF-4411",
+      "name": "Foley Regular-Fit Military Shirt",
+      "brand": "AllSaints",
+      "link": "/menswear/foley-regular-fit-military-shirt/M124SF-4411.html",
+      "gbpPrice": 99.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Corozo buttons",
+        "Point collar",
+        "Long sleeves",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "97% cotton, 3% elastane",
+        "Mild machine wash at 30"
+      ],
+      "description": "Lightweight military shirt made from garment-dyed stretch-cotton piqué.",
+      "modelCopy": "Model wears size M and is 6'2",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Vietnam",
+      "color": "Navy Blue",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M124SF-4411.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975028252",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975028788",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975028542",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975029006",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975028405",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975028283",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m124sf-4411/1.jpg",
+        "/products/al-pdp/m124sf-4411/2.jpg",
+        "/products/al-pdp/m124sf-4411/3.jpg",
+        "/products/al-pdp/m124sf-4411/4.jpg",
+        "/products/al-pdp/m124sf-4411/5.jpg",
+        "/products/al-pdp/m124sf-4411/6.jpg",
+        "/products/al-pdp/m124sf-4411/7.jpg",
+        "/products/al-pdp/m124sf-4411/8.jpg"
+      ]
+    },
+    {
+      "id": "M166OF-6",
+      "sku": "M166OF-6",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-coats-jackets"
+      ],
+      "leafId": "al-men-coats-jackets",
+      "cgid": "814",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M166OF-6",
+      "name": "Beacon Single-Breasted Wool-Blend Coat ",
+      "brand": "AllSaints",
+      "link": "/menswear/beacon-single-breasted-wool-blend-coat-/M166OF-6.html",
+      "gbpPrice": 379.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Long sleeves",
+        "Concealed button placket",
+        "Zig-zag stitching at the undercollar",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "Shell: 51% wool (sheep) (including 44% recycled sheep wool), 27% recycled polyester, 11% recycled polyamide, 6% acrylic, 5% other fibres",
+        "Body lining: 100% organic cotton",
+        "Sleeve lining: 100% recycled polyester",
+        "Dry clean only"
+      ],
+      "description": "Regular-fit, single-breasted coat made from an Italian wool-blend. Two front welt pockets, back vent and buttoned cuff tabs.",
+      "modelCopy": "Model wears size M and is 6'1",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "China",
+      "color": "Brown",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M166OF-6.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975112104",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975112111",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975112128",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975112135",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975112142",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975112159",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 379.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m166of-6/1.jpg",
+        "/products/al-pdp/m166of-6/2.jpg",
+        "/products/al-pdp/m166of-6/3.jpg",
+        "/products/al-pdp/m166of-6/4.jpg",
+        "/products/al-pdp/m166of-6/5.jpg",
+        "/products/al-pdp/m166of-6/6.jpg",
+        "/products/al-pdp/m166of-6/7.jpg",
+        "/products/al-pdp/m166of-6/8.jpg"
+      ]
+    },
+    {
+      "id": "M020JF-4061",
+      "sku": "M020JF-4061",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-rtw-all",
+        "al-men-tshirts"
+      ],
+      "leafId": "al-men-tshirts",
+      "cgid": "13",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M020JF-4061",
+      "name": "Raine Waffle-Knit Long-Sleeve T-Shirt",
+      "brand": "AllSaints",
+      "link": "/menswear/raine-waffle-knit-long-sleeve-t-shirt/M020JF-4061.html",
+      "gbpPrice": 99.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Ribbed crewneck",
+        "Long sleeves",
+        "Measurements shown may vary slightly between individual items"
+      ],
+      "longDescription": [
+        "Body: 100% organic cotton",
+        "Mild machine wash at 30"
+      ],
+      "description": "Slim-cut long-sleeve T-shirt made from waffle-knit organic cotton in a faded wash with AllSaints logo script embroidery.",
+      "modelCopy": "Model wears size M and is 6'2",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "sizechart-men-clothing",
+      "sizeAndFit": "<style>\n    .sizeGuide_container {\n        font-family: \"new-rail-alphabet\", sans-serif;\n    }\n    .sizeGuide_header {\n        position: sticky;\n        top: 0;\n        width: 100%;\n        background: #fff;\n        z-index: 3;\n        padding: 6.5px 0;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n    }\n    .sizeGuide_title {\n        margin: 0;\n        font-size: 16px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .sizeGuide_closeBtn {\n        background: none;\n        border: none;\n        padding: 7px;\n    }\n    .sizeGuide_text-body {\n        font-size: 14px;\n    }\n    .sizeGuide_text-body-light {\n        font-weight: 300;\n    }\n    .sizeGuide_text-body-bold {\n        font-weight: 500;\n    }\n    .sizeGuide_measurementContainer {\n        margin-top: 48px;\n    }\n    .table-scroll {\n        overflow-x: auto;\n        overflow-y: hidden;\n        -webkit-overflow-scrolling: touch;\n    }\n    .sizeGuide_container table {\n        border-collapse: separate;\n        border-spacing: 0;\n        background-color: #ffffff;\n        width: 644px;\n        table-layout: fixed;\n    }\n    .sizeGuide_container th, td {\n        padding: 14px 16px;\n        text-align: center;\n        font-variant-numeric: tabular-nums;\n        font-size: 14px;\n        white-space: nowrap;\n    }\n    .sizeGuide_container th, td {\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_container thead th {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n        padding: 23px 0 16px;\n    }\n    .sizeGuide_container th.row-label {\n        position: sticky;\n        left: 0;\n        z-index: 2;\n        text-align: left;\n        background-color: #ffffff;\n    }\n    .sizeGuide_container tbody tr:nth-child(even) td {\n        background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='2' viewBox='0 0 7 2'%3E%3Ccircle cx='1' cy='1' r='1' fill='black'/%3E%3C/svg%3E\");\n        background-size: 7px 2px;\n        background-position: left bottom;\n        background-repeat: repeat-x;\n    }\n    .sizeGuide_button-unitToggle {\n        margin-top: 24px;\n        padding: 0;\n        font-size: 12px;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        font-weight: 600;\n        background-color: #fff;\n        border: none;\n        text-decoration: underline;\n        color: #000;\n        border-radius: 2px;\n        cursor: pointer;\n    }\n</style>\n\n\n    <div class=\"sizeGuide_container\">\n        <div class=\"sizeGuide_header\">\n            <h1 class=\"sizeGuide_title\">Size guide</h1>\n            <button class=\"sizeGuide_closeBtn\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\">\n                  <path d=\"M9.41203 0.219646C9.70492 0.512533 9.70489 0.987405 9.41197 1.28026L6.24563 4.44583C6.04148 4.64994 6.04146 4.98091 6.24559 5.18504L9.41209 8.35155C9.70496 8.64441 9.70496 9.11923 9.41209 9.41209C9.11923 9.70496 8.64441 9.70496 8.35155 9.41209L5.18504 6.24559C4.98091 6.04146 4.64994 6.04148 4.44583 6.24563L1.28026 9.41197C0.987405 9.70489 0.512533 9.70492 0.219646 9.41203C-0.0731906 9.11919 -0.0732191 8.64442 0.219583 8.35155L3.38537 5.185C3.58944 4.98088 3.58942 4.64997 3.38532 4.44587L0.21971 1.28026C-0.0731522 0.987395 -0.0731518 0.512572 0.21971 0.21971C0.512572 -0.0731518 0.987395 -0.0731518 1.28026 0.21971L4.44587 3.38532C4.64997 3.58942 4.98088 3.58944 5.185 3.38537L8.35155 0.219583C8.64442 -0.0732191 9.11919 -0.0731906 9.41203 0.219646Z\" fill=\"black\"/>\n                </svg>\n            </button>\n        </div>\n        <div class=\"sizeGuide_tableContainer\">\n            <div class=\"table-scroll\">\n                <table>\n                    <colgroup>\n                        <!-- Every column width below is a multiple of 7px (the dot +\n                             gap period: 2px dot, 5px gap). Each cell's background\n                             pattern resets to \"left bottom\" independently, but because\n                             every column boundary lands on a 7px multiple, the pattern\n                             is always back in phase at the start of the next cell -\n                             producing one visually continuous dotted line instead of\n                             a phase-shift at every join. -->\n                        <col style=\"width: 140px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                        <col style=\"width: 84px\">\n                    </colgroup>\n                    <thead>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold row-label\" scope=\"col\">&nbsp;</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XS</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">S</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">M</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">L</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XL</th>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-bold\" scope=\"col\">XXL</th>\n                    </tr>\n                    </thead>\n                    <tbody>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Chest</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"96\">96</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"101\">101</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"106\">106</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"111\">111</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"116\">116</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"121\">121</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Hem</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"94\">94</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"99\">99</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"104\">104</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"109\">109</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"114\">114</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"119\">119</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Sleeve Length</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"65\">65</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"66\">66</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"67\">67</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"68\">68</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"69\">69</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"70\">70</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Shoulder Width</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"45.6\">45.6</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"46.8\">46.8</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"48\">48</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"49.2\">49.2</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"50.4\">50.4</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"51.6\">51.6</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Length</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"70\">70</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"71\">71</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"72\">72</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"73\">73</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"74\">74</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"75\">75</td>\n                    </tr>\n                    <tr>\n                        <th class=\"sizeGuide_text-body sizeGuide_text-body-light row-label\" scope=\"row\">Sleeve Opening</th>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"9.5\">9.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"10\">10</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"10.5\">10.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"11\">11</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"11.5\">11.5</td>\n                        <td class=\"sizeGuide_text-body sizeGuide_text-body-light\" data-cm=\"12\">12</td>\n                    </tr>\n                    </tbody>\n                </table>\n            </div>\n            <button type=\"button\" class=\"sizeGuide_button-unitToggle\" aria-pressed=\"false\">\n                See in inches\n            </button>\n        </div>\n        <div class=\"sizeGuide_measurementContainer\">\n            <h2 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">How to take measurements</h2>\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Chest</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure the chest at the widest part.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Hem</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure around the very bottom edge of the garment.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Sleeve length</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure the longest part of your arm.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Shoulder width</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure straight across the width of the back, from one shoulder point to the other.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Length</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure from the highest point of the shoulder down to the hemline.</p>\n            </div>\n\n            <div>\n                <h3 class=\"sizeGuide_text-body sizeGuide_text-body-bold\">Sleeve opening</h3>\n                <p class=\"sizeGuide_text-body sizeGuide_text-body-light\">Measure around the opening at the bottom of the sleeve.</p>\n            </div>\n        </div>\n    </div>\n\n<script>\n    (function () {\n        const button = document.querySelector('.sizeGuide_button-unitToggle');\n        const cells = document.querySelectorAll('td[data-cm]');\n        let unit = 'cm';\n\n        function render() {\n            cells.forEach(function (cell) {\n                const cm = parseFloat(cell.getAttribute('data-cm'));\n                if (unit === 'cm') {\n                    cell.textContent = cm;\n                } else {\n                    const inches = cm / 2.54;\n                    cell.textContent = (Math.round(inches * 10) / 10).toString();\n                }\n            });\n\n            const showingInches = unit === 'in';\n            button.textContent = showingInches ? 'See in cm' : 'See  in inches';\n            button.setAttribute('aria-pressed', String(showingInches));\n        }\n\n        button.addEventListener('click', function () {\n            unit = unit === 'cm' ? 'in' : 'cm';\n            render();\n        });\n\n        render();\n    })();\n</script>",
+      "sizeGuide": {
+        "headers": [
+          "구분",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "rows": [
+          [
+            "Chest",
+            "96",
+            "101",
+            "106",
+            "111",
+            "116",
+            "121"
+          ],
+          [
+            "Hem",
+            "94",
+            "99",
+            "104",
+            "109",
+            "114",
+            "119"
+          ],
+          [
+            "Sleeve Length",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70"
+          ],
+          [
+            "Shoulder Width",
+            "45.6",
+            "46.8",
+            "48",
+            "49.2",
+            "50.4",
+            "51.6"
+          ],
+          [
+            "Length",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ],
+          [
+            "Sleeve Opening",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        ]
+      },
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "Portugal",
+      "color": "Rust Red",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M020JF-4061.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063975059102",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975059119",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975059126",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975059133",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975059140",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "5063975059157",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": true,
+          "gbpPrice": 99.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m020jf-4061/1.jpg",
+        "/products/al-pdp/m020jf-4061/2.jpg",
+        "/products/al-pdp/m020jf-4061/3.jpg",
+        "/products/al-pdp/m020jf-4061/4.jpg",
+        "/products/al-pdp/m020jf-4061/5.jpg",
+        "/products/al-pdp/m020jf-4061/6.jpg",
+        "/products/al-pdp/m020jf-4061/7.jpg",
+        "/products/al-pdp/m020jf-4061/8.jpg"
+      ]
+    },
+    {
+      "id": "M179XF-1279",
+      "sku": "M179XF-1279",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-leathers",
+        "al-men-rtw-all"
+      ],
+      "leafId": "al-men-leathers",
+      "cgid": "9",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M179XF-1279",
+      "name": "Clymer Leather Zip-Up Wallet",
+      "brand": "AllSaints",
+      "link": "/menswear/clymer-leather-zip-up-wallet/5063320997998.html",
+      "gbpPrice": 69.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Depth: 2cm",
+        "Width: 9.5cm",
+        "Height: 1.1cm"
+      ],
+      "longDescription": [
+        "Body: 100% cow leather",
+        "Lining: 100% organic cotton",
+        "Wipe clean only"
+      ],
+      "description": "Zip-up leather wallet with a cotton lining. Internal card slots and snap-fastening coin pouch.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Ash Grey",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M179XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M179XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M179XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M179XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M179XF-1279.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320997998",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 69.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m179xf-1279/1.jpg",
+        "/products/al-pdp/m179xf-1279/2.jpg",
+        "/products/al-pdp/m179xf-1279/3.jpg",
+        "/products/al-pdp/m179xf-1279/4.jpg",
+        "/products/al-pdp/m179xf-1279/5.jpg"
+      ]
+    },
+    {
+      "id": "M181XF-1279",
+      "sku": "M181XF-1279",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-leathers",
+        "al-men-rtw-all"
+      ],
+      "leafId": "al-men-leathers",
+      "cgid": "9",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M181XF-1279",
+      "name": "Axis Leather Bi-fold Wallet",
+      "brand": "AllSaints",
+      "link": "/menswear/axis-leather-bi-fold-wallet/5063320998049.html",
+      "gbpPrice": 49.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Depth: 1cm",
+        "Width: 8cm",
+        "Height: 11.5cm"
+      ],
+      "longDescription": [
+        "Body: 100% cow leather",
+        "Wipe clean only"
+      ],
+      "description": "Bifold wallet inspired by an archive design, made from unlined milled leather for a soft, supple finish. Raw-cut top edges, five internal card slots and a slip pocket.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Ash Grey",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M181XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M181XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M181XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M181XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M181XF-1279.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320998049",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 49.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m181xf-1279/1.jpg",
+        "/products/al-pdp/m181xf-1279/2.jpg",
+        "/products/al-pdp/m181xf-1279/3.jpg",
+        "/products/al-pdp/m181xf-1279/4.jpg",
+        "/products/al-pdp/m181xf-1279/5.jpg"
+      ]
+    },
+    {
+      "id": "M180XF-1279",
+      "sku": "M180XF-1279",
+      "collections": [
+        "all-saints",
+        "al-men",
+        "al-men-leathers",
+        "al-men-rtw-all"
+      ],
+      "leafId": "al-men-leathers",
+      "cgid": "9",
+      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M180XF-1279",
+      "name": "Axis Leather Bi-fold Wallet",
+      "brand": "AllSaints",
+      "link": "/menswear/axis-leather-bi-fold-wallet/5063320998025.html",
+      "gbpPrice": 69.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Width: 11.5cm",
+        "Height: 11.6cm"
+      ],
+      "longDescription": [
+        "Body: 100% cow leather",
+        "Wipe clean only"
+      ],
+      "description": "Bifold wallet inspired by an archive design, made from unlined milled leather for a soft, supple finish. Raw-cut top edges, six internal card slots and a slip pocket.",
+      "modelCopy": "",
+      "stylistsTips": "",
+      "notesFromAtelier": "",
+      "sizeChartId": "",
+      "sizeAndFit": "",
+      "sizeGuide": null,
+      "fabricAndCare": {
+        "fabricAndCareTitle": "Fabric & care",
+        "fabricAndCareCopy": "",
+        "fabricAndCareURL": ""
+      },
+      "originCountry": "India",
+      "color": "Ash Grey",
+      "imageUrls": [
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M180XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M180XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M180XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M180XF-1279.json?_i=AG",
+        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M180XF-1279.json?_i=AG"
+      ],
+      "sizes": [
+        {
+          "id": "5063320998025",
+          "value": "One Size",
+          "displayValue": "One Size",
+          "inStock": true,
+          "gbpPrice": 69.0,
+          "listGbpPrice": null
+        }
+      ],
+      "localImages": [
+        "/products/al-pdp/m180xf-1279/1.jpg",
+        "/products/al-pdp/m180xf-1279/2.jpg",
+        "/products/al-pdp/m180xf-1279/3.jpg",
+        "/products/al-pdp/m180xf-1279/4.jpg",
+        "/products/al-pdp/m180xf-1279/5.jpg"
       ]
     }
   ]
