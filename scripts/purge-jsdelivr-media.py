@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import sys
 import urllib.error
+import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request
 from pathlib import Path
@@ -26,11 +27,13 @@ PURGE_BASE = f"https://purge.jsdelivr.net/gh/{REPO}@{TAG}"
 
 
 def purge(url: str) -> bool:
+    # File names with spaces (e.g. "1 2.jpg") aborted the whole purge.
+    url = urllib.parse.quote(url, safe=":/@?=&%")
     try:
         with urllib.request.urlopen(url, timeout=45) as r:
             r.read(200)
         return True
-    except (urllib.error.URLError, TimeoutError, OSError) as e:
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
         print(f"  purge fail {url}: {e}", flush=True)
         return False
 
