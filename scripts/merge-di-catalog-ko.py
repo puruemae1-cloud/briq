@@ -42,6 +42,7 @@ from di_size_charts import (  # noqa: E402
     size_chart_for_di_womens_shoes,
     size_chart_for_di_womens_rtw,
 )
+from catalog_category_guard import demote_non_bag  # noqa: E402
 from ko_qa import en_ratio, ensure_official_english_name, has_hangul, is_good_korean  # noqa: E402
 
 RAW_PATHS = [
@@ -1333,6 +1334,7 @@ def main() -> None:
     }
     for p in out:
         normalize_di_product_prices(p, raw_gbp.get(str(p.get("sku") or "")))
+        demote_non_bag(p)
     CAT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     # Keep di-catalog.ts tiny (JSON import) — embedding 1000+ SKUs inline OOMs Cursor/Vercel.
     OUT_TS.write_text(

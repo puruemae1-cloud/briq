@@ -13,6 +13,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "data"
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from catalog_category_guard import is_non_bag  # noqa: E402
 
 SOURCES: dict[str, list[Path]] = {
     "bb": [DATA / "bb/bb-catalog.json"],
@@ -71,6 +74,10 @@ def main() -> None:
             continue
         products = load_products(paths)
         bags = [p for p in products if p.get("category") == "bags"]
+        misfiled = [p.get("id") for p in bags if is_non_bag(p)]
+        if misfiled:
+            print(f"WARN {key}: {len(misfiled)} non-bag item(s) filed as bags, skipped: {misfiled[:5]}", file=sys.stderr)
+            bags = [p for p in bags if not is_non_bag(p)]
         seen: set[str] = set()
         uniq: list[dict] = []
         for p in bags:

@@ -28,6 +28,8 @@ const SIGNATURE_MIN = 1_000_000;
 export const SECTION_LIMIT = 20;
 /** Cap per brand in 신상품 큐레이션 so one sync cannot own the grid. */
 export const NEW_EDIT_MAX_PER_BRAND = 2;
+/** Cap per brand in 하이엔드 컬렉션 so every brand gets shelf space. */
+export const SIGNATURE_MAX_PER_BRAND = 2;
 
 export type CuratedEdit = {
   signature: Product[];
@@ -43,7 +45,7 @@ function isCwStrapProduct(product: Product): boolean {
 
 /**
  * Build the three 100 Collection sections — up to SECTION_LIMIT each.
- * - signature: ≥100만 원, 최신등록순 (품절은 맨 뒤)
+ * - signature: ≥100만 원, 브랜드별 최대 2개씩 최신등록순으로 섞음 (재고 우선)
  * - bestseller: 실제 결제 1회 이상인 상품만, 구매수 → 최신순 (품절은 맨 뒤)
  * - new: catalogue-wide 최신등록순 (`registeredAt`), brand-mixed, 품절은 맨 뒤
  *
@@ -56,10 +58,21 @@ export function curateCollectionEdit(
   // Homepage 100 Collection — exclude swimwear (shop/search unchanged).
   const pool = products.filter((p) => !isHomepageSwimwearProduct(p));
 
-  const signature = sortProducts(
-    pool.filter((p) => p.price >= SIGNATURE_MIN),
-    "new",
-  ).slice(0, SECTION_LIMIT);
+  // Brand round-robin like 신상품: plain newest-first let one brand's weekly
+  // import fill all 20 cards.
+  const signaturePool = pool.filter(
+    (p) => p.price >= SIGNATURE_MIN && !isCwStrapProduct(p),
+  );
+  const signatureInStock = signaturePool.filter((p) => p.inStock !== false);
+  const signature = diversifyByBrandNewestFirst(
+    sortProducts(
+      signatureInStock.length >= SECTION_LIMIT ? signatureInStock : signaturePool,
+      "new",
+    ),
+    SECTION_LIMIT,
+    SIGNATURE_MAX_PER_BRAND,
+    homepageBrandKey,
+  );
 
   const bestseller = pool
     .filter((p) => (purchaseCounts[p.id] ?? 0) >= 1)

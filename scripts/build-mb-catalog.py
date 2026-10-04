@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import subprocess
 import urllib.parse
 
+from catalog_category_guard import is_non_bag  # noqa: E402
 from di_common import gbp_to_krw  # noqa: E402
 from ko_qa import has_hangul, is_good_korean  # noqa: E402
 from mulberry_common import RAW_DIR, load_json, save_json, slugify  # noqa: E402
@@ -449,6 +450,9 @@ def build_product(style: str, colourways: list[dict], cache: dict[str, str], idx
     # Prefer bags when any leaf tagged the style as a bag — what's-new/gifts
     # leaves are configured as accessories but often include bag SKUs.
     category = "bags" if "bags" in cats else (lead.get("category") or "bags")
+    # …but bag leaves (e.g. women/travel) also list caps and hats.
+    if category == "bags" and is_non_bag({"name": title_en, "nameKo": title_ko}):
+        category = "accessories"
     collections: list[str] = []
     for row in colourways:
         for c in row.get("collections") or []:

@@ -110,6 +110,49 @@ function guardImages(rel, products, onTag) {
   return kept;
 }
 
+/**
+ * Site-wide Korean wording, applied to every catalogue so re-syncs and
+ * machine translations cannot bring old terms back.
+ */
+const KO_TERMS = [
+  [/왁스\s?칠한/g, "왁스드"],
+  [/왁스\s?칠하여/g, "왁스 처리하여"],
+];
+
+function applyKoTerms(text) {
+  for (const [from, to] of KO_TERMS) text = text.replace(from, to);
+  return text;
+}
+
+// Keep in sync with scripts/catalog_category_guard.py.
+const NON_BAG_RE =
+  /\b(caps?|baseball|hats?|beanies?|berets?|scarf|scarves|gloves?|mittens?|snoods?|headbands?|bandanas?|balaclavas?|stoles?)\b|모자|비니|버킷\s?햇|베레모|스카프|머플러|장갑/i;
+const BAG_RE =
+  /\b(bags?|totes?|pouch(es)?|clutch(es)?|backpacks?|satchels?|crossbody|holdall|duffel|duffle|wallets?|purses?)\b|가방|백팩|핸드백|토트|파우치|클러치/i;
+const BAG_TAGS = new Set(["bags", "handbags", "가방", "핸드백"]);
+
+/**
+ * Brand bag listings also carry caps and scarves; scrapers that let any bag
+ * leaf win file them under bags. Move them to accessories (and out of the
+ * bags-only slices).
+ */
+function guardBagCategory(rel, products) {
+  const misfiled = new Set();
+  for (const p of products) {
+    if (p?.category !== "bags") continue;
+    const text = `${p.name ?? ""} ${p.nameKo ?? ""}`;
+    if (!NON_BAG_RE.test(text) || BAG_RE.test(text)) continue;
+    p.category = "accessories";
+    const tags = (p.tags ?? []).filter((t) => !BAG_TAGS.has(t));
+    if (!tags.includes("accessories")) tags.push("accessories");
+    p.tags = tags;
+    misfiled.add(p);
+  }
+  if (!misfiled.size) return products;
+  console.warn(`[catalog-dist] ${rel}: moved ${misfiled.size} non-bag item(s) from bags to accessories`);
+  return rel.endsWith("-bags-catalog.json") ? products.filter((p) => !misfiled.has(p)) : products;
+}
+
 const onTag = tagImagePaths();
 if (onTag) console.log(`[catalog-dist] image guard: ${onTag.size} files on product-images tag`);
 
@@ -124,11 +167,12 @@ for (const rel of [...rels].sort()) {
     console.error(`[catalog-dist] missing ${path.relative(ROOT, src)}`);
     process.exit(1);
   }
-  let data = JSON.parse(fs.readFileSync(src, "utf8"));
+  let data = JSON.parse(applyKoTerms(fs.readFileSync(src, "utf8")));
   if (!Array.isArray(data)) {
     console.error(`[catalog-dist] ${rel} is not a product array`);
     process.exit(1);
   }
+  data = guardBagCategory(rel, data);
   if (onTag) data = guardImages(rel, data, onTag);
   const gz = zlib.gzipSync(JSON.stringify(data), { level: 6 });
   const dest = path.join(OUT, `${rel}.gz`);
