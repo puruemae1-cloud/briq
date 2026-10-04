@@ -139,6 +139,8 @@ for (const rel of [...rels].sort()) {
 }
 global.gc?.();
 const heapMb = (process.memoryUsage().heapUsed - heapBefore) / 1e6;
+// Keep the catalogues reachable until measured (V8 may free dead locals early).
+parsed.length;
 console.log(
   `[catalog-dist] ${rels.size} file(s), ${(bytes / 1e6).toFixed(0)}MB gzipped, ` +
     `~${heapMb.toFixed(0)}MB heap with every catalogue loaded (budget ${HEAP_BUDGET_MB}MB)`,
@@ -149,4 +151,18 @@ if (heapMb > HEAP_BUDGET_MB) {
       "catalogue JSON (or split loaders) before deploying",
   );
   process.exit(1);
+}
+
+if (onTag) {
+  // TS-literal catalogues (cw, gg, ax, lu) are filtered at load time by
+  // dropMissingImages() in src/data/catalog-json.ts using this list.
+  const missing = new Set();
+  for (const file of sourceFiles(DATA)) {
+    const text = fs.readFileSync(file, "utf8");
+    for (const m of text.matchAll(/["'`](\/products\/[\w.-]+\/[^"'`\s?#\\]+?\.(?:jpe?g|png|webp|gif|avif))/gi)) {
+      if (!m[1].includes("${") && !onTag.has(m[1])) missing.add(m[1]);
+    }
+  }
+  fs.writeFileSync(path.join(OUT, "missing-images.json.gz"), zlib.gzipSync(JSON.stringify([...missing])));
+  if (missing.size) console.warn(`[catalog-dist] ${missing.size} TS-catalogue photo(s) missing on the CDN — hidden at runtime`);
 }

@@ -1,6 +1,6 @@
 import type { Product } from "@/data/product-types";
 import { expandSubcategoryFilter } from "@/data/categories";
-import { readCatalogJson } from "@/data/catalog-json";
+import { dropMissingImages, readCatalogJson } from "@/data/catalog-json";
 import { isYsShopSub } from "@/data/ys/ys-catalog-lazy";
 
 /**
@@ -107,12 +107,12 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
   cw: () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("./cw/cw-products") as typeof import("./cw/cw-products");
-    return mod.cwProducts;
+    return dropMissingImages(mod.cwProducts);
   },
   gg: () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("./gg/gg-catalog") as typeof import("./gg/gg-catalog");
-    return mod.ggCatalogProducts;
+    return dropMissingImages(mod.ggCatalogProducts);
   },
   bb: () => {
     return readCatalogJson("bb/bb-catalog.json");
@@ -127,12 +127,12 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     const gear =
       require("./ax/ax-gear-catalog") as typeof import("./ax/ax-gear-catalog");
     /* eslint-enable @typescript-eslint/no-require-imports */
-    return [
+    return dropMissingImages([
       ...shoes.axCatalogProducts,
       ...apparel.axApparelCatalogProducts,
       ...outlet.axOutletCatalogProducts,
       ...gear.axGearCatalogProducts,
-    ];
+    ]);
   },
   lu: () => {
     /* eslint-disable @typescript-eslint/no-require-imports */
@@ -141,10 +141,10 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     const lifestyle =
       require("./lu/lu-lifestyle-catalog") as typeof import("./lu/lu-lifestyle-catalog");
     /* eslint-enable @typescript-eslint/no-require-imports */
-    return [
+    return dropMissingImages([
       ...umbrellas.luCatalogProducts,
       ...lifestyle.luLifestyleCatalogProducts,
-    ];
+    ]);
   },
   ps: () => {
     return readCatalogJson("ps/ps-catalog.json");
