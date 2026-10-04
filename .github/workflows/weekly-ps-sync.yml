@@ -74,7 +74,17 @@ jobs:
         run: python3 scripts/weekly-ps-stock-sync.py
 
       - name: Push PDP images to product-images tag
-        run: python3 scripts/push-product-images-tag.py --dirs ps-pdp
+        run: |
+          # Only folders with photos missing on the tag: republishing all of
+          # ps-pdp through a worktree filled the runner disk.
+          python3 scripts/verify-product-images.py --brand ps --remote --skip-local --all-images \
+            --write-missing-dirs /tmp/ps-push.txt >/dev/null || true
+          if [ -s /tmp/ps-push.txt ]; then
+            echo "publishing $(wc -l < /tmp/ps-push.txt) ps-pdp folder(s)"
+            python3 scripts/push-product-images-tag.py --dirs ps-pdp --only-file /tmp/ps-push.txt
+          else
+            echo "every catalogue photo is already on the tag"
+          fi
 
       - name: Verify catalogue images are on the product-images tag
         run: python3 scripts/verify-product-images.py --brand ps --remote --skip-local --all-images

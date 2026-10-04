@@ -73,6 +73,13 @@ else:
         print("ERROR AL KO regressed past the committed catalogue", flush=True)
         raise SystemExit(qa.returncode)
 
+# A gallery frame that never downloaded must not fail the whole stock sync.
+subprocess.run(
+    [sys.executable, "scripts/trim-missing-local-images.py", "src/data/al/al-catalog.json"],
+    cwd=str(Path.cwd()),
+    check=True,
+)
+
 # Bags / shoes PLPs read slices, not the full catalogue.
 for script in ("extract-bags-catalogs.py", "extract-shoes-catalogs.py"):
     r = subprocess.run([sys.executable, f"scripts/{script}", "al"], cwd=str(Path.cwd()))
