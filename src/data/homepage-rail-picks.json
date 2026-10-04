@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T16:10:17Z",
+  "generatedAt": "2026-10-04T16:10:09Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "bv-876811v6u302006",
-        "bv-796966v4lq22145",
-        "bv-743211vcpq42145",
-        "bv-796966v2bea4032"
+        "bb-skinny-blooms-of-britain-silk-scarf",
+        "bb-skinny-check-cotton-towel",
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "burberry",
+        "burberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -94,6 +94,10 @@
       "luxury",
       "luxury"
     ],
+    "burberry": [
+      "accessories",
+      "accessories"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -107,10 +111,8 @@
       "sports"
     ],
     "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
+      "accessories",
+      "accessories"
     ],
     "paul-smith": [
       "shoes",
@@ -119,10 +121,10 @@
       "shoes"
     ],
     "보테가-베네타": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ]
   },
   "overlaps": {},
