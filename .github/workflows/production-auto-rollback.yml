@@ -1,0 +1,61 @@
+name: Production auto-rollback
+
+# When the homepage guard fails, confirm www.briq.kr is really down and roll
+# Production back to the newest earlier deployment that passes a smoke test.
+# After every Production deploy, if we are rolled back, promote the new
+# deployment once it passes the same smoke test (resumes auto-promotion).
+# See scripts/vercel-auto-rollback.py. Needs the VERCEL_TOKEN secret.
+
+on:
+  workflow_run:
+    workflows: ["Homepage speed guard"]
+    types: [completed]
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      action:
+        type: choice
+        options: [rollback, restore]
+        default: restore
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-auto-rollback
+  cancel-in-progress: false
+
+jobs:
+  rollback:
+    if: >-
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure') ||
+      (github.event_name == 'workflow_dispatch' && inputs.action == 'rollback')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: scripts
+      - name: Roll back if the site is down
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: python3 scripts/vercel-auto-rollback.py rollback
+
+  restore:
+    if: >-
+      (github.event_name == 'deployment_status' &&
+       github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production') ||
+      (github.event_name == 'workflow_dispatch' && inputs.action == 'restore')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: scripts
+      - name: Promote the new deployment if we are rolled back
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: python3 scripts/vercel-auto-rollback.py restore
