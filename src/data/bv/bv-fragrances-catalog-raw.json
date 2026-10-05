@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-04T18:52:22.084574+00:00",
+  "scrapedAt": "2026-10-05T17:20:30.563883+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -1854,7 +1854,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/lantern-glaze-candle-yellow-white-black-788704VV5709980.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Fragrance notes: incense essence, suede rose, vetiver essence",
         "Volcanic glazes are high temperature glazes. Artisans have studied and developed them to be able to apply them to the low temperature clays, following two years of research",
@@ -1898,7 +1898,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }

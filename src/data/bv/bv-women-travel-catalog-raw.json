@@ -1,7 +1,7 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-04T18:40:24.370140+00:00",
+  "scrapedAt": "2026-10-05T17:05:29.895058+00:00",
   "leaves": [
     "bv-women-travel"
   ],
@@ -255,7 +255,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/odyssey-cabin-suitcase-midnight-black-822479V5AO14248.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Midnight/Black",
@@ -305,7 +305,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }
@@ -870,7 +870,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/vanity-case-espresso-869368V5B702028.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso",
         "Hardware: Brass",
@@ -910,7 +910,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }

@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-04T18:37:56.175998+00:00",
+  "scrapedAt": "2026-10-05T17:02:52.041927+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -1264,7 +1264,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         }
@@ -1864,7 +1864,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/semi-shiny-leather-trench-rubber-866183V61D07723.html",
       "gbpPrice": 14880.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Rubber"
       ],
@@ -1976,7 +1976,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 14880.0,
           "listGbpPrice": null
         },
@@ -2417,7 +2417,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4610.0,
           "listGbpPrice": null
         },
@@ -3788,7 +3788,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 8910.0,
           "listGbpPrice": null
         },
@@ -3812,7 +3812,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8910.0,
           "listGbpPrice": null
         }
@@ -3941,7 +3941,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6150.0,
           "listGbpPrice": null
         },
@@ -5314,7 +5314,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/suede-leather-jacket-intense-carrubo-874930V4LG02135.html",
       "gbpPrice": 6240.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Intense Carrubo"
       ],
@@ -5418,7 +5418,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6240.0,
           "listGbpPrice": null
         },
@@ -6345,7 +6345,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         },
@@ -6353,7 +6353,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         },
@@ -6361,7 +6361,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         }
@@ -6512,7 +6512,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5170.0,
           "listGbpPrice": null
         },
@@ -8007,7 +8007,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/tech-nylon-puffer-jacket-camo-837028V5O303749.html",
       "gbpPrice": 2960.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Camo"
       ],
@@ -8123,7 +8123,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2960.0,
           "listGbpPrice": null
         },
@@ -8131,7 +8131,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2960.0,
           "listGbpPrice": null
         },
@@ -8281,7 +8281,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4840.0,
           "listGbpPrice": null
         },
@@ -8451,7 +8451,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2960.0,
           "listGbpPrice": null
         },
@@ -10056,7 +10056,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-blouson-jam-837205V2JG06206.html",
       "gbpPrice": 8240.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Jam"
       ],
@@ -10149,7 +10149,7 @@
           "id": "34",
           "value": "34",
           "displayValue": "34",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         },
@@ -10157,7 +10157,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         },
@@ -10165,7 +10165,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         },
@@ -10173,7 +10173,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         },
@@ -10181,7 +10181,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         }
@@ -10379,7 +10379,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/toscana-shearling-cropped-gilet-metallic-mist-837465V27W08399.html",
       "gbpPrice": 4430.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Metallic Mist"
       ],
@@ -10484,7 +10484,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4430.0,
           "listGbpPrice": null
         },
@@ -11578,7 +11578,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/wool-and-cashmere-cardigan-ardoise-melange-A004ODV6WI01994.html",
       "gbpPrice": 1700.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Ardoise Melange"
       ],
@@ -11675,7 +11675,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -11683,7 +11683,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -11691,7 +11691,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -17627,7 +17627,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         }
@@ -18928,7 +18928,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 9300.0,
           "listGbpPrice": null
         },
@@ -22067,7 +22067,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/viscose-fil-coupe-dress-flash-red-A007SWV71E06513.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Flash Red"
       ],
@@ -22182,7 +22182,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
@@ -24414,7 +24414,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         },
@@ -24449,7 +24449,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/crepe-viscose-jersey-dress-camo-867623V4YX03749.html",
       "gbpPrice": 2480.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Camo"
       ],
@@ -24563,7 +24563,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2480.0,
           "listGbpPrice": null
         },
@@ -24571,7 +24571,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2480.0,
           "listGbpPrice": null
         },
@@ -32238,7 +32238,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/suede-leather-trousers-grass-green-874763V4LG03138.html",
       "gbpPrice": 4280.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Grass Green"
       ],
@@ -32339,7 +32339,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         },
@@ -32687,7 +32687,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/wool-and-nylon-trousers-double-black-853567V6BZ01010.html",
       "gbpPrice": 1070.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Double Black"
       ],
@@ -32796,7 +32796,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -33145,7 +33145,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/light-wool-and-cotton-trousers-linen-melange-866704V6DG02159.html",
       "gbpPrice": 1420.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Linen Melange"
       ],
@@ -33262,7 +33262,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1420.0,
           "listGbpPrice": null
         },
@@ -35492,7 +35492,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -36122,7 +36122,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -36466,7 +36466,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/indigo-straight-jeans-indigo-831607V5SN04245.html",
       "gbpPrice": 810.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Indigo"
       ],
@@ -36580,7 +36580,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 810.0,
           "listGbpPrice": null
         },
@@ -37393,7 +37393,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mohair-and-silk-shirt-rice-A003WBV6ZL09709.html",
       "gbpPrice": 1700.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Rice"
       ],
@@ -37492,7 +37492,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -37500,7 +37500,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -37508,7 +37508,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -37748,7 +37748,7 @@
           "id": "34",
           "value": "34",
           "displayValue": "34",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         },
@@ -38241,7 +38241,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1250.0,
           "listGbpPrice": null
         }
@@ -38268,7 +38268,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/suede-leather-shirt-double-black-871530V64Z01010.html",
       "gbpPrice": 5530.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Double Black"
       ],
@@ -38353,7 +38353,7 @@
           "id": "34",
           "value": "34",
           "displayValue": "34",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         },
@@ -38369,7 +38369,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         },
@@ -42158,7 +42158,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 810.0,
           "listGbpPrice": null
         },
@@ -46031,7 +46031,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -46039,7 +46039,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -46350,7 +46350,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -47076,7 +47076,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2410.0,
           "listGbpPrice": null
         },

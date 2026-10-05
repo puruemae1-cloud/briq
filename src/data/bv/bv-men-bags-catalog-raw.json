@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-04T16:58:36.404552+00:00",
+  "scrapedAt": "2026-10-05T15:21:57.900265+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -3727,7 +3727,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-belt-bag-espresso-lava-red-805773V56A12008.html",
       "gbpPrice": 1710.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Espresso/Lava Red",
@@ -3766,7 +3766,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1710.0,
           "listGbpPrice": null
         }
