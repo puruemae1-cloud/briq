@@ -3599,7 +3599,7 @@ export const cwCatalogProducts: Product[] = [
         image: "/products/cw-pdp/c12-38ada1-s00b1-rk/1.jpg",
         images: ["/products/cw-pdp/c12-38ada1-s00b1-rk/1.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/2.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/3.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/4.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/5.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/6.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/7.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/1 2.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/1 3.jpg", "/products/cw-pdp/c12-38ada1-s00b1-rk/2 2.jpg"],
         sourceUrl: "https://www.christopherward.com/sports-watches/the-twelve/C12-38ADA1-S00B1-RK.html",
-        inStock: false,
+        inStock: true,
         size: "38mm",
         colorKey: "s00b1-rk",
         colorNameKo: "블랙 트웰브 고무",
