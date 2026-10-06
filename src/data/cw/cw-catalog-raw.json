@@ -1,10 +1,10 @@
 {
-  "scrapedAt": "2026-10-05T15:44:47Z",
+  "scrapedAt": "2026-10-06T18:58:44Z",
   "categoryCounts": {
     "cw-new-releases": 60,
     "cw-bestsellers": 43,
     "cw-hidden-gems": 7,
-    "cw-clearance": 517,
+    "cw-clearance": 515,
     "cw-atelier": 128,
     "cw-dive": 153,
     "cw-integrated-sports": 39,
@@ -134,7 +134,6 @@
       "C65-38A3H4-S00E0-B0"
     ],
     "cw-clearance": [
-      "C01-39AJH5-S00W0-MT",
       "C63-41ACH4-S0KB0-RW",
       "C63-41ACH4-S0KW0-B0",
       "C60-39AGM1-S0RK0-B0",
@@ -167,7 +166,6 @@
       "C12-36AHC1-T00B1-B0R",
       "C60-42ADA31S0BB3-B0",
       "C60-40ADA31S00W1-B0",
-      "C01-39AJH5-S00W0-B1",
       "C63-41ACH4-S0KK0-B0",
       "C63-41ACH4-S0KB0-B0",
       "C63-41ACH4-S0KW0-RO",
@@ -204,7 +202,6 @@
       "C01-41APT4-T00W0-RV",
       "C60-42ADC31B0KK0-VT1",
       "C12-41H6D1-S00K0-B0",
-      "C01-39AJH5-S00W0-MB",
       "C63-41ACH4-S0KK0-RB",
       "C63-41ACH4-S0KB0-RK",
       "C63-41ACH4-S0KW0-RK",
@@ -274,6 +271,7 @@
       "C65-38A3H4-S00G0-B0",
       "C12-40ADC2-T00B2-B0",
       "C63-36ADA4-S00V0-B0",
+      "C12-38ADA1-MXII-B0",
       "C01-41APT0-T00K0-B0",
       "C12-38H2H1-S00B0-B0",
       "C63-39AGM4-S00B0-B0",
@@ -363,7 +361,6 @@
       "C63-36ADA4-S00K0-B1",
       "C60-41C3H31T0KK0-RKO",
       "C60-40AGM31S0KK0-B0",
-      "C12-38ADA1-S00B3-RK",
       "C01-41APT0-T00B1-B0",
       "C12-38H2H1-SK0K0-RK",
       "C63-41AGM4-S0KV0-NO",
@@ -399,7 +396,6 @@
       "C60-41C3H31T0BB0-RBO",
       "C12-40ADA1-S00W1-RK",
       "C60-40AGM31S0BB0-B0",
-      "C12-38ADA1-S00W1-RK",
       "C01-41APT0-T00A0-VT",
       "C12-38H2H1-S00V0-RK",
       "C60-42C3H1-S0KK0-HV",
@@ -452,7 +448,6 @@
       "C65-38A3H4-S00E0-WC",
       "C63-36ADA4-S00B0-VK",
       "C60-40AGM31S0BW0-RBB",
-      "C12-38ADA1-S00B4-RK",
       "C01-41APT0-T00P0-B0",
       "C63-41AGM4-S0KK0-NK",
       "C60-42ADA31S0KK1-RK",
@@ -649,8 +644,11 @@
       "C60-41C3H31T0BB0-RBW",
       "C60-41C3H31T0KK0-RKW",
       "C60-41C3H31T0KO0-RKW",
-      "C01-39AJH5-S00W0-MK",
-      "C01-44HPR-AL02-BT"
+      "C01-44HPR-AL02-BT",
+      "C01-39AJH5-S00W0-MT",
+      "C01-39AJH5-S00W0-B1",
+      "C01-39AJH5-S00W0-MB",
+      "C01-39AJH5-S00W0-MK"
     ],
     "cw-atelier": [
       "C01-41APT4-T00W0-RV",
@@ -5914,11 +5912,12 @@
       "gbpPrice": 1495.0,
       "gbpListPrice": null,
       "collections": [
+        "cw-clearance",
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve",
-      "inStock": false
+      "primaryCollection": "cw-clearance",
+      "inStock": true
     },
     {
       "sku": "C12-40ADC1-T00P0-B0",
@@ -7138,7 +7137,7 @@
         "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C60-42ADA31S0KW1-RO2",
@@ -7391,7 +7390,7 @@
         "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C60-42ADA31S0BB1-HB",
@@ -7821,7 +7820,7 @@
         "cw-twelve"
       ],
       "primaryCollection": "cw-twelve",
-      "inStock": true
+      "inStock": false
     },
     {
       "sku": "C60-42ADA31S0KK1-RK",
@@ -11132,11 +11131,9 @@
       "badge": null,
       "gbpPrice": 1350.0,
       "gbpListPrice": null,
-      "collections": [
-        "cw-clearance"
-      ],
-      "primaryCollection": "cw-clearance",
-      "inStock": true
+      "collections": [],
+      "primaryCollection": null,
+      "inStock": false
     },
     {
       "sku": "C12-38ADA1-S00B4-RK",
@@ -11147,11 +11144,9 @@
       "badge": null,
       "gbpPrice": 1350.0,
       "gbpListPrice": null,
-      "collections": [
-        "cw-clearance"
-      ],
-      "primaryCollection": "cw-clearance",
-      "inStock": true
+      "collections": [],
+      "primaryCollection": null,
+      "inStock": false
     },
     {
       "sku": "C12-38ADA1-S00W1-RK",
@@ -11162,11 +11157,9 @@
       "badge": null,
       "gbpPrice": 1350.0,
       "gbpListPrice": null,
-      "collections": [
-        "cw-clearance"
-      ],
-      "primaryCollection": "cw-clearance",
-      "inStock": true
+      "collections": [],
+      "primaryCollection": null,
+      "inStock": false
     }
   ]
 }

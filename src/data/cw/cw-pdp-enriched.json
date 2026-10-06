@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-05T15:44:52Z",
+  "scrapedAt": "2026-10-06T18:58:51Z",
   "products": {
     "C12-36AHC1-T00R0-B0R": {
       "sku": "C12-36AHC1-T00R0-B0R",
@@ -67543,13 +67543,14 @@
       ],
       "braceletResize": true,
       "braceletResizeFeeKrw": 20000,
-      "inStock": false,
+      "inStock": true,
       "sourceUrl": "https://www.christopherward.com/the-twelve-midnight/C1225.html?dwopt_C12-38ADA1-MXII-B0_braceletResizing=no-resize&dwvar_C1225_WStrapColourMaterialType=Steel%20Bracelet&pid=C12-38ADA1-MXII-B0&quantity=1",
       "collections": [
+        "cw-clearance",
         "cw-integrated-sports",
         "cw-twelve"
       ],
-      "primaryCollection": "cw-twelve"
+      "primaryCollection": "cw-clearance"
     },
     "C65-38C3H4-B00V0-VT": {
       "nameEn": "C65 Dune Aeolian Bronze",
@@ -85928,7 +85929,7 @@
           "size": "38mm"
         }
       ],
-      "inStock": true,
+      "inStock": false,
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00W0-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=White&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00W0-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00W0-B0",
       "collections": [
@@ -89615,7 +89616,7 @@
           "size": "38mm"
         }
       ],
-      "inStock": true,
+      "inStock": false,
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00B0-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Nordic%20Blue&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00B0-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00B0-B0",
       "collections": [
@@ -96026,7 +96027,7 @@
           "size": "38mm"
         }
       ],
-      "inStock": true,
+      "inStock": false,
       "sourceUrl": "https://www.christopherward.com/the-twelve/C1210.html?dwopt_C12-38ADA1-S00B1-RK_watchEngraving=no-watch-engraving&dwvar_C1210_WDialBezelColour=Glacier%20Blue&dwvar_C1210_WSize=38mm&dwvar_C1210_WStrapColourMaterialType=Black%20The%20Twelve%20Rubber&pid=C12-38ADA1-S00B1-RK&quantity=1",
       "derivedFrom": "C12-38ADA1-S00B1-B0",
       "collections": [
@@ -135071,7 +135072,7 @@
       "size": "38mm",
       "colour": "Nordic Blue",
       "strap": "Black The Twelve Rubber",
-      "inStock": true,
+      "inStock": false,
       "gbpPrice": 1350.0,
       "collections": [
         "cw-clearance"
@@ -135204,7 +135205,7 @@
       "size": "38mm",
       "colour": "Glacier Blue",
       "strap": "Black The Twelve Rubber",
-      "inStock": true,
+      "inStock": false,
       "gbpPrice": 1350.0,
       "collections": [
         "cw-clearance"
@@ -135337,7 +135338,7 @@
       "size": "38mm",
       "colour": "White",
       "strap": "Black The Twelve Rubber",
-      "inStock": true,
+      "inStock": false,
       "gbpPrice": 1350.0,
       "collections": [
         "cw-clearance"

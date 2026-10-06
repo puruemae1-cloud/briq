@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-05T15:46:31Z",
+  "generatedAt": "2026-10-06T19:00:11Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-relaxed-fit-blue-corduroy-trousers",
-        "bv-a003brv6zf02201",
-        "bv-875133v6ib02188",
-        "bv-871198v6or01010"
+        "ps-tan-shetland-wool-argyle-sweater",
+        "ps-dark-grey-donegal-wool-overcoat",
+        "ps-grey-herringbone-wool-cashmere-zip-jacket",
+        "ps-navy-shetland-wool-argyle-sweater"
       ],
       "brands": [
         "paul-smith",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -32,16 +32,16 @@
     },
     "bags": {
       "productIds": [
-        "mb-tree-tote-raffia",
-        "mb-tree-tote",
-        "mb-suede-tree-tote",
-        "mb-stevie-top-handle"
+        "bv-857931v2hl03123",
+        "bv-855504v2hl12166",
+        "bv-855504v2hl11913",
+        "bv-857931v2hl08803"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "shoes": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "bb-skinny-blooms-of-britain-silk-scarf",
-        "bb-skinny-check-cotton-towel",
-        "di-14cdo301i985-c540",
-        "di-34dbp923g153-c086"
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip",
+        "mb-wine-carrier",
+        "mb-waxed-baseball-cap"
       ],
       "brands": [
-        "burberry",
-        "burberry",
-        "dior",
-        "dior"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -94,19 +94,11 @@
       "shoes",
       "shoes"
     ],
-    "burberry": [
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
-    ],
-    "dior": [
-      "accessories",
-      "accessories"
     ],
     "galvin-green": [
       "sports",
@@ -115,18 +107,22 @@
       "sports"
     ],
     "mulberry": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "paul-smith": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
+    "보테가-베네타": [
       "bags",
       "bags",
       "bags",
       "bags"
-    ],
-    "paul-smith": [
-      "luxury"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},
