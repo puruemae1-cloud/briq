@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-05T15:21:57.900265+00:00",
+  "scrapedAt": "2026-10-06T18:57:29.853594+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -2239,7 +2239,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-black-795287V2HL18803.html",
       "gbpPrice": 4720.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2277,7 +2277,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4720.0,
           "listGbpPrice": null
         }
@@ -2582,7 +2582,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-north-south-tote-ardoise-815783V2HL12077.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Ardoise",
@@ -2619,7 +2619,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -3937,7 +3937,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-briefcase-black-A006APV4FV08803.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -3976,7 +3976,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -11304,7 +11304,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-corso-deep-mahogany-A00A4PV60G06149.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Deep Mahogany",
@@ -11341,7 +11341,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         }

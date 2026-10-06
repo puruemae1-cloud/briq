@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-05T17:02:52.041927+00:00",
+  "scrapedAt": "2026-10-06T20:39:34.843817+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -463,7 +463,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         },
@@ -1240,7 +1240,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         },
@@ -7331,7 +7331,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4960.0,
           "listGbpPrice": null
         }
@@ -17627,7 +17627,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5530.0,
           "listGbpPrice": null
         }
@@ -34239,7 +34239,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },

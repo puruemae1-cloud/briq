@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-05T15:57:53.308406+00:00",
+  "scrapedAt": "2026-10-06T19:34:25.605596+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -4080,7 +4080,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         },
@@ -10543,7 +10543,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -11605,7 +11605,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-blouson-liana-811525V2JG09523.html",
       "gbpPrice": 8240.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Liana"
       ],
@@ -11726,7 +11726,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8240.0,
           "listGbpPrice": null
         },
@@ -14815,7 +14815,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         },
@@ -21164,7 +21164,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
