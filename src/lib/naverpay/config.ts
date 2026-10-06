@@ -32,6 +32,18 @@ export function isNaverPaySandbox() {
   return process.env.NEXT_PUBLIC_NAVERPAY_SANDBOX !== "false";
 }
 
+/**
+ * Naver review rule: while in sandbox the live site must show the Npay button
+ * only to testers. Opening any page with ?npaytest=1 sets this cookie
+ * (?npaytest=0 clears it).
+ */
+export const NAVERPAY_TEST_PARAM = "npaytest";
+export const NAVERPAY_TEST_COOKIE = "briq_npay_test";
+
+export function isNaverPayTesterOnly() {
+  return isNaverPaySandbox() && process.env.NEXT_PUBLIC_NAVERPAY_TESTER_ONLY !== "false";
+}
+
 /** Site origin used for product/info URLs and WCS whitelist. */
 export function getNaverPaySiteOrigin() {
   return (

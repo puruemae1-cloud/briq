@@ -4924,6 +4924,10 @@ html[data-shop-navigating] {
   box-sizing: border-box;
 }
 
+.pdp-dock__actions:not(:has(.npay-order-button)) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .pdp-dock__actions > * {
   min-width: 0;
   width: 100%;

@@ -1,12 +1,34 @@
 "use client";
 
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import {
   getNaverPayButtonKey,
   getNaverPaySiteOrigin,
   getNaverPayUrls,
   isNaverPayOrderEnabled,
+  isNaverPayTesterOnly,
+  NAVERPAY_TEST_COOKIE,
+  NAVERPAY_TEST_PARAM,
 } from "@/lib/naverpay/config";
+
+/** False until mounted so SSR never renders the button for the public. */
+function useNaverPayTesterAccess(): boolean {
+  const [allowed, setAllowed] = useState(false);
+  useEffect(() => {
+    if (!isNaverPayTesterOnly()) {
+      setAllowed(true);
+      return;
+    }
+    const flag = new URLSearchParams(window.location.search).get(NAVERPAY_TEST_PARAM);
+    if (flag === "1") {
+      document.cookie = `${NAVERPAY_TEST_COOKIE}=1; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax; secure`;
+    } else if (flag === "0") {
+      document.cookie = `${NAVERPAY_TEST_COOKIE}=; path=/; max-age=0`;
+    }
+    setAllowed(document.cookie.split("; ").includes(`${NAVERPAY_TEST_COOKIE}=1`));
+  }, []);
+  return allowed;
+}
 
 type OrderItem = {
   productId: string;
@@ -110,8 +132,10 @@ export function NaverPayOrderButton({
   const itemsRef = useRef(items);
   itemsRef.current = items;
   const itemsKey = JSON.stringify(items);
+  const testerAccess = useNaverPayTesterAccess();
 
   const show =
+    testerAccess &&
     isNaverPayOrderEnabled() &&
     enabled &&
     items.length > 0 &&
