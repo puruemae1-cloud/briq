@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T19:00:11Z",
+  "generatedAt": "2026-10-06T19:11:57Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "al-w153ff-140",
-        "al-w119fb-5571",
-        "al-w139ff-203",
-        "al-w139ff-5"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
+      ],
+      "brands": [
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "al-w378xf-5",
+        "al-w377xf-6760",
+        "al-w246xf-5",
+        "al-w108xf-5"
       ],
       "brands": [
         "all-saints",
         "all-saints",
         "all-saints",
         "all-saints"
-      ]
-    },
-    "accessories": {
-      "productIds": [
-        "mb-zipped-flat-pouch",
-        "mb-zipped-credit-card-slip",
-        "mb-wine-carrier",
-        "mb-waxed-baseball-cap"
-      ],
-      "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
       ]
     },
     "sports": {
@@ -89,10 +89,10 @@
   },
   "brands": {
     "all-saints": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "christopher-ward": [
       "watches",
@@ -123,6 +123,18 @@
       "bags",
       "bags",
       "bags"
+    ],
+    "paul-smith": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
+    "보테가-베네타": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
