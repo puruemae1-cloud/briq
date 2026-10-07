@@ -6,12 +6,14 @@ import {
   isNaverPayServerReady,
 } from "@/lib/naverpay/config";
 import {
-  absoluteUrl,
+  naverBasePrice,
+  naverImageUrl,
+  naverInfoUrl,
+  naverProductName,
   resolveOrderLines,
   toNaverProductId,
   type NaverPayOrderLineInput,
 } from "@/lib/naverpay/order-xml";
-import { resolveProductImage } from "@/lib/product-image";
 
 export const runtime = "nodejs";
 
@@ -68,16 +70,9 @@ export async function POST(req: Request) {
   const line = lines[0]!;
   const merchantId = getNaverPayMerchantId();
   const certiKey = getNaverPayCertiKey();
-  const name = (
-    line.optionLabel
-      ? `${line.product.brand} ${line.product.nameKo} (${line.optionLabel})`
-      : `${line.product.brand} ${line.product.nameKo}`
-  ).slice(0, 100);
-  const imageUrl = absoluteUrl(
-    resolveProductImage(line.product.image, line.variant?.image),
-  );
-  // Keep PDP URL stable (no option query) so wishlist deep-links stay consistent.
-  const itemUrl = absoluteUrl(`/product/${line.product.id}`);
+  const name = naverProductName(line.product);
+  const imageUrl = naverImageUrl(line.product);
+  const itemUrl = naverInfoUrl(line.product);
   const itemId = toNaverProductId(line.product.id);
 
   const params = new URLSearchParams();
@@ -90,7 +85,7 @@ export async function POST(req: Request) {
   params.set("RESERVE5", "");
   params.set("ITEM_ID", itemId);
   params.set("ITEM_NAME", name);
-  params.set("ITEM_UPRICE", String(line.unitPrice));
+  params.set("ITEM_UPRICE", String(naverBasePrice(line.product)));
   params.set("ITEM_IMAGE", imageUrl);
   params.set("ITEM_URL", itemUrl);
 
