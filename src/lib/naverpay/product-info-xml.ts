@@ -1,25 +1,30 @@
 import type { Product, ProductVariant } from "@/data/product-types";
 import { getProduct } from "@/data/products";
-import { isVariantInStock, productDisplayPrice } from "@/data/product-utils";
+import { isVariantInStock } from "@/data/product-utils";
 import {
   getNaverPayReturnInfo,
   NAVERPAY_SHIPPING_DEFAULTS,
   NAVERPAY_TAX_TYPE,
 } from "@/lib/naverpay/config";
 import {
-  absoluteUrl,
+  braceletSupplements,
   cdata,
   escapeXml,
+  naverBasePrice,
+  naverImageUrl,
+  naverInfoUrl,
+  naverOptionPrice,
+  naverProductName,
   resolveBriqProductId,
   toNaverManageCode,
   toNaverProductId,
   variantManageCode,
 } from "@/lib/naverpay/order-xml";
-import { resolveProductImage } from "@/lib/product-image";
 
 export type ProductInfoQuery = {
   id: string;
   optionManageCodes?: string[];
+  supplementIds?: string[];
 };
 
 /**
@@ -31,16 +36,20 @@ export function parseProductInfoQuery(url: URL): ProductInfoQuery[] {
   const indexed = new Map<number, ProductInfoQuery>();
 
   for (const [key, value] of url.searchParams.entries()) {
-    const m = key.match(/^product\[(\d+)]\[(id|optionManageCodes|optionManageCode)]$/i);
+    const m = key.match(
+      /^product\[(\d+)]\[(id|optionManageCodes|optionManageCode|supplementIds)]$/i,
+    );
     if (m) {
       const idx = Number(m[1]);
       const field = m[2].toLowerCase();
       const row = indexed.get(idx) ?? { id: "", optionManageCodes: [] };
+      // Support comma-separated codes in a single param.
+      const parts = value.split(",").map((s) => s.trim()).filter(Boolean);
       if (field === "id") {
         row.id = value;
+      } else if (field === "supplementids") {
+        row.supplementIds = [...(row.supplementIds ?? []), ...parts];
       } else {
-        // Support comma-separated codes in a single param.
-        const parts = value.split(",").map((s) => s.trim()).filter(Boolean);
         row.optionManageCodes = [...(row.optionManageCodes ?? []), ...parts];
       }
       indexed.set(idx, row);
@@ -207,11 +216,7 @@ function optionBlockXml(
 function combinationXml(product: Product, variant: ProductVariant): string {
   const manageCode = variantManageCode(variant.id);
   const inStock = isVariantInStock(product, variant.id);
-  // Relative to product.basePrice; order XML uses full unit as basePrice + option price 0.
-  const optionPrice = Math.max(
-    0,
-    productDisplayPrice(product, variant) - productDisplayPrice(product),
-  );
+  const optionPrice = naverOptionPrice(product, variant);
   const isCw = product.brand === "Christopher Ward";
   const colorAxisName = isCw ? "스트랩" : "컬러";
   const sizeAxisName = isCw ? "케이스 사이즈" : "사이즈";
@@ -232,10 +237,31 @@ function combinationXml(product: Product, variant: ProductVariant): string {
   return [
     "<combination>",
     `<manageCode>${escapeXml(manageCode)}</manageCode>`,
-    optionPrice ? `<price>${optionPrice}</price>` : "<price>0</price>",
+    `<price>${optionPrice}</price>`,
     `<status>${inStock}</status>`,
     ...options,
     "</combination>",
+  ].join("");
+}
+
+function supplementBlockXml(product: Product, supplementIds?: string[]): string {
+  const all = braceletSupplements(product);
+  if (all.length === 0) return "<supplementSupport>false</supplementSupport>";
+  const wanted = supplementIds?.length ? new Set(supplementIds) : null;
+  const list = wanted ? all.filter((s) => wanted.has(s.id)) : all;
+  return [
+    "<supplementSupport>true</supplementSupport>",
+    ...(list.length > 0 ? list : all).map((s) =>
+      [
+        "<supplement>",
+        `<id>${escapeXml(s.id)}</id>`,
+        `<name>${cdata(s.name)}</name>`,
+        `<price>${s.price}</price>`,
+        "<stockQuantity>99</stockQuantity>",
+        "<status>true</status>",
+        "</supplement>",
+      ].join(""),
+    ),
   ].join("");
 }
 
@@ -245,7 +271,6 @@ function productXml(query: ProductInfoQuery): string | null {
   const product = getProduct(briqId);
   if (!product) return null;
 
-  const image = resolveProductImage(product.image, product.variants?.[0]?.image);
   const hasVariants = Boolean(product.variants && product.variants.length > 0);
   const anyInStock = hasVariants
     ? product.variants!.some((v) => v.inStock)
@@ -253,20 +278,19 @@ function productXml(query: ProductInfoQuery): string | null {
   const status = anyInStock ? "ON_SALE" : "SOLD_OUT";
   // Soft stock for private-order UK→KR; real availability is variant.inStock flags.
   const stockQuantity = anyInStock ? 99 : 0;
-  const name = `${product.brand} ${product.nameKo}`.slice(0, 100);
 
   return [
     "<product>",
     `<id>${escapeXml(toNaverProductId(product.id))}</id>`,
     `<merchantProductId>${escapeXml(product.id.slice(0, 100))}</merchantProductId>`,
-    `<name>${cdata(name)}</name>`,
-    `<basePrice>${productDisplayPrice(product)}</basePrice>`,
+    `<name>${cdata(naverProductName(product))}</name>`,
+    `<basePrice>${naverBasePrice(product)}</basePrice>`,
     `<taxType>${NAVERPAY_TAX_TYPE}</taxType>`,
-    `<infoUrl>${cdata(absoluteUrl(`/product/${product.id}`))}</infoUrl>`,
-    `<imageUrl>${cdata(absoluteUrl(image))}</imageUrl>`,
+    `<infoUrl>${cdata(naverInfoUrl(product))}</infoUrl>`,
+    `<imageUrl>${cdata(naverImageUrl(product))}</imageUrl>`,
     `<status>${status}</status>`,
     `<stockQuantity>${stockQuantity}</stockQuantity>`,
-    "<supplementSupport>false</supplementSupport>",
+    supplementBlockXml(product, query.supplementIds),
     hasVariants
       ? optionBlockXml(product, query.optionManageCodes)
       : "<optionSupport>false</optionSupport>",

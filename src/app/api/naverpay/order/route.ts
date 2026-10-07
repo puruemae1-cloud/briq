@@ -6,6 +6,7 @@ import {
   getNaverPaySiteOrigin,
   getNaverPayUrls,
   isNaverPayServerReady,
+  NAVERPAY_NAPM_COOKIE,
 } from "@/lib/naverpay/config";
 import {
   buildOrderRegisterXml,
@@ -23,6 +24,18 @@ type Body = {
 
 function cookieValue(jar: Awaited<ReturnType<typeof cookies>>, name: string) {
   return jar.get(name)?.value?.trim() || undefined;
+}
+
+/** Naver review: NaPm must not ride on backUrl; it goes to <naverInflowCode>. */
+function stripNaPm(raw: string): { backUrl: string; naPm?: string } {
+  try {
+    const url = new URL(raw);
+    const naPm = url.searchParams.get("NaPm")?.trim() || undefined;
+    url.searchParams.delete("NaPm");
+    return { backUrl: url.toString(), naPm };
+  } catch {
+    return { backUrl: raw };
+  }
 }
 
 export async function POST(req: Request) {
@@ -54,10 +67,9 @@ export async function POST(req: Request) {
   }
 
   const origin = getNaverPaySiteOrigin();
-  const backUrl =
-    body.backUrl && /^https?:\/\//i.test(body.backUrl)
-      ? body.backUrl
-      : `${origin}/cart`;
+  const { backUrl, naPm } = stripNaPm(
+    body.backUrl && /^https?:\/\//i.test(body.backUrl) ? body.backUrl : `${origin}/cart`,
+  );
 
   const jar = await cookies();
   const xml = buildOrderRegisterXml({
@@ -67,7 +79,8 @@ export async function POST(req: Request) {
     lines,
     interfaceCodes: {
       cpaInflowCode: cookieValue(jar, "CPAValidator"),
-      naverInflowCode: cookieValue(jar, "NA_CO"),
+      naverInflowCode:
+        naPm || cookieValue(jar, NAVERPAY_NAPM_COOKIE) || cookieValue(jar, "NA_CO"),
       saClickId: cookieValue(jar, "NVADID"),
     },
   });

@@ -37,6 +37,9 @@ export function isNaverPaySandbox() {
  * only to testers. Opening any page with ?npaytest=1 sets this cookie
  * (?npaytest=0 clears it).
  */
+/** First-touch Naver inflow param (?NaPm=…) kept for <naverInflowCode>. */
+export const NAVERPAY_NAPM_COOKIE = "briq_napm";
+
 export const NAVERPAY_TEST_PARAM = "npaytest";
 export const NAVERPAY_TEST_COOKIE = "briq_npay_test";
 

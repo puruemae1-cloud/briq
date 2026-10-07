@@ -1,7 +1,11 @@
 "use client";
 
 import Script from "next/script";
-import { getNaverWcsAccount, isNaverPayOrderEnabled } from "@/lib/naverpay/config";
+import {
+  getNaverWcsAccount,
+  isNaverPayOrderEnabled,
+  NAVERPAY_NAPM_COOKIE,
+} from "@/lib/naverpay/config";
 
 /**
  * Naver common inflow (wcs) — must run before Npay button SDK.
@@ -20,6 +24,13 @@ export function NaverWcsScript() {
       />
       <Script id="briq-naver-wcs-init" strategy="afterInteractive">
         {`
+          try {
+            var naPm = new URLSearchParams(location.search).get("NaPm");
+            if (naPm) {
+              document.cookie = ${JSON.stringify(NAVERPAY_NAPM_COOKIE)} + "=" + encodeURIComponent(naPm) +
+                "; path=/; max-age=86400; samesite=lax; secure";
+            }
+          } catch (e) {}
           if (!window.wcs_add) window.wcs_add = {};
           ${account ? `window.wcs_add["wa"] = ${JSON.stringify(account)};` : ""}
           if (window.wcs) {
