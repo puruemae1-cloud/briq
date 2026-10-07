@@ -141,8 +141,8 @@ const RETURN_INFO_DEFAULTS: NaverPayReturnInfo = {
   address1: "경기도 김포시 고촌읍 은행영사정로23번길 46",
   address2: "(주)리치몬드인터내셔널 / Briq",
   sellername: "(주)리치몬드인터내셔널",
-  // SiteFooter: +44 7897 535888 (digits only for Npay contact1)
-  contact1: "447897535888",
+  // Npay requires a domestic number, digits only.
+  contact1: "01068777107",
 };
 
 function envOr(key: string, fallback: string) {
