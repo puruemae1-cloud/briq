@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-06T18:57:29.853594+00:00",
+  "scrapedAt": "2026-10-07T23:36:06.721059+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -2171,7 +2171,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-fondant-781053V2HL12145.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -2211,7 +2211,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -3937,7 +3937,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-briefcase-black-A006APV4FV08803.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -3976,7 +3976,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -6286,7 +6286,7 @@
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
-      "sizeModel": "",
+      "sizeModel": "• Height: 13,5 cm\n\n• Width: 32,5 cm\n\n• Depth: 5 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -10693,7 +10693,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-black-parakeet-737950V29E01091.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Black/Parakeet",
@@ -10734,7 +10734,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }

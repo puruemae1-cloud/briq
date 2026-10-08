@@ -1,7 +1,7 @@
 {
   "hub": "gifts",
   "category": "accessories",
-  "scrapedAt": "2026-10-06T21:15:10.859141+00:00",
+  "scrapedAt": "2026-10-08T01:29:43.641234+00:00",
   "leaves": [
     "bv-gifts-her-bags",
     "bv-gifts-her-shoes",
@@ -2545,7 +2545,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-obsidian-grey-868114V0P601689.html",
       "gbpPrice": 5760.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Obsidian Grey",
@@ -2592,7 +2592,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5760.0,
           "listGbpPrice": null
         }
@@ -5129,7 +5129,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mini-jodie-chalk-gold-651876VCPP59143.html",
       "gbpPrice": 2220.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Chalk",
@@ -5166,7 +5166,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2220.0,
           "listGbpPrice": null
         }
@@ -5257,7 +5257,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/baby-sardine-ecru-867666V2ZL69101.html",
       "gbpPrice": 5320.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Ecru"
@@ -5300,7 +5300,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5320.0,
           "listGbpPrice": null
         }
@@ -7825,7 +7825,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
@@ -14930,7 +14930,7 @@
           "id": "39",
           "value": "39",
           "displayValue": "39",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -15584,7 +15584,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 880.0,
           "listGbpPrice": null
         },
@@ -20518,7 +20518,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/rosa-ballerina-blu-venezia-837887V4VE04015.html",
       "gbpPrice": 880.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Blu Venezia",
@@ -20664,7 +20664,7 @@
           "id": "35",
           "value": "35",
           "displayValue": "35",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 880.0,
           "listGbpPrice": null
         },
@@ -21095,12 +21095,12 @@
       "id": "749954VCPP64279",
       "sku": "749954VCPP64279",
       "internalId": "814400107",
-      "name": "Intrecciato Passport Case",
+      "name": "Cassette Bi-Fold Wallet",
       "brand": "bottega veneta",
       "color": "Petroleum/glacial",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-passport-case-petroleum-glacial-749954VCPP64279.html",
-      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-passport-case-petroleum-glacial-749954VCPP64279.html",
+      "link": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-petroleum-glacial-749954VCPP64279.html",
+      "url": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-petroleum-glacial-749954VCPP64279.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -21658,12 +21658,12 @@
       "id": "749940VCPP21743",
       "sku": "749940VCPP21743",
       "internalId": "814433774",
-      "name": "Intrecciato Medium Bi-Fold Wallet",
+      "name": "Cassette Bi-Fold Wallet",
       "brand": "bottega veneta",
       "color": "Silica grey",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-medium-bi-fold-wallet-silica-grey-749940VCPP21743.html",
-      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-medium-bi-fold-wallet-silica-grey-749940VCPP21743.html",
+      "link": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-silica-grey-749940VCPP21743.html",
+      "url": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-silica-grey-749940VCPP21743.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -21792,7 +21792,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-boat-pouch-black-876344VCPP01019.html",
       "gbpPrice": 1340.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black",
         "Hardware: Brass finish",
@@ -21830,7 +21830,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1340.0,
           "listGbpPrice": null
         }
@@ -24289,7 +24289,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-small-flat-pouch-black-749919VCPP98425.html",
       "gbpPrice": 770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Cotton",
         "Colour: Black",
@@ -24322,7 +24322,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 770.0,
           "listGbpPrice": null
         }
@@ -38085,11 +38085,11 @@
         "Key ring",
         "Calfskin lining"
       ],
-      "compactedLongDesc": "",
+      "compactedLongDesc": "Key holder necklace in Intrecciato piccolo leather.",
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
-      "sizeModel": "",
+      "sizeModel": "• Height: 9,5 cm\n\n• Width: 6,5 cm\n\n• Depth: 0,5 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -43545,7 +43545,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-briefcase-black-A006APV4FV08803.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -43584,7 +43584,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -44782,7 +44782,7 @@
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
-      "sizeModel": "",
+      "sizeModel": "• Height: 13,5 cm\n\n• Width: 32,5 cm\n\n• Depth: 5 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -52322,7 +52322,7 @@
           "id": "43",
           "value": "43",
           "displayValue": "43",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1600.0,
           "listGbpPrice": null
         },
@@ -69632,7 +69632,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-black-grass-814838VCPQ61027.html",
       "gbpPrice": 770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black/Grass",
@@ -69667,7 +69667,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 770.0,
           "listGbpPrice": null
         }
@@ -70434,7 +70434,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-small-bi-fold-wallet-with-zip-black-819207VBWD28803.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -70470,7 +70470,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         }
