@@ -66,8 +66,11 @@ export function productSalePercent(
 
 /** True if the product (or any of its variants) can be purchased. */
 export function isProductInStock(product: Product) {
-  if (product.shopColorKey != null && typeof product.inStock === "boolean") {
-    return product.inStock;
+  if (product.shopColorKey != null) {
+    // A colourway card links to that colour, so only its sizes count.
+    const colour = product.variants?.filter((v) => v.colorKey === product.shopColorKey) ?? [];
+    if (colour.length > 0) return colour.some((v) => v.inStock);
+    if (typeof product.inStock === "boolean") return product.inStock;
   }
   if (product.variants && product.variants.length > 0) {
     return product.variants.some((v) => v.inStock);

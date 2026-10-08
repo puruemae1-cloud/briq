@@ -195,8 +195,7 @@ export function expandGgColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
-        // Style-level stock for listing badges (other colours may still sell).
-        inStock: styleInStock,
+        inStock: inStock.length > 0,
       });
     }
   }
@@ -296,7 +295,7 @@ export function expandBbColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
-        inStock: styleInStock,
+        inStock: inStock.length > 0,
       });
     }
   }
@@ -373,7 +372,7 @@ export function expandAxColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
-        inStock: styleInStock,
+        inStock: inStock.length > 0,
       });
     }
   }
@@ -476,7 +475,7 @@ export function expandMbColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
-        inStock: styleInStock,
+        inStock: inStock.length > 0,
       });
     }
   }
@@ -559,7 +558,7 @@ export function expandLuColourwayCards(
         variants,
         shopColorKey: colorKey,
         sourceUrl: lead.sourceUrl || product.sourceUrl,
-        inStock: styleInStock,
+        inStock: inStock.length > 0,
       });
     }
   }
