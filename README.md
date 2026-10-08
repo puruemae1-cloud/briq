@@ -43,14 +43,14 @@ cp .env.example .env.local
 
 코드 자리: `src/lib/payments.ts` (기존 데모 체크아웃)
 
-### 네이버페이 주문형 V2.1 (샌드박스)
+### 네이버페이 주문형 V2.1 (운영)
 
-독립몰 주문형 연동이 포함되어 있습니다 (`NEXT_PUBLIC_NAVERPAY_SANDBOX=true` 기본).
+독립몰 주문형 연동이 포함되어 있습니다 (기본 운영 도메인, 실결제).
 
 | 환경변수 | 공개 | 설명 |
 |---------|------|------|
 | `NEXT_PUBLIC_NAVERPAY_ORDER` | yes | `true`면 버튼 강제 노출 (Vercel production에 키 있을 때 `true`) |
-| `NEXT_PUBLIC_NAVERPAY_SANDBOX` | yes | `false`만 운영 URL (검수 승인 후) |
+| `NEXT_PUBLIC_NAVERPAY_MODE` | yes | `sandbox`면 test- 도메인 (미설정 시 운영) |
 | `NEXT_PUBLIC_SITE_URL` | yes | 상품/이미지 absolute URL origin |
 | `NEXT_PUBLIC_NAVER_WCS_ACCOUNT` | yes | 네이버공통인증키 (wcs) |
 | `NEXT_PUBLIC_NAVERPAY_BUTTON_KEY` | yes | 버튼 인증키 (SDK용) |

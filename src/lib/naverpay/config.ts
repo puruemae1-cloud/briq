@@ -1,5 +1,5 @@
 /**
- * Naver Pay 주문형 V2.1 — sandbox-first config.
+ * Naver Pay 주문형 V2.1 config (production by default).
  * certiKey / merchant secrets stay server-only; button key is public (SDK requirement).
  */
 
@@ -28,8 +28,9 @@ const PROD_URLS: NaverPayUrls = {
   wishlistRegister: "https://pay.naver.com/customer/api/wishlist.nhn",
 };
 
+/** Real payments unless NEXT_PUBLIC_NAVERPAY_MODE=sandbox (test-* domains). */
 export function isNaverPaySandbox() {
-  return process.env.NEXT_PUBLIC_NAVERPAY_SANDBOX !== "false";
+  return process.env.NEXT_PUBLIC_NAVERPAY_MODE === "sandbox";
 }
 
 /**
