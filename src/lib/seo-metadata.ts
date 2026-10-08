@@ -65,14 +65,12 @@ export const rootMetadata: Metadata = {
     ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
       ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
       : {}),
-    ...(process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION
-      ? {
-          other: {
-            "naver-site-verification":
-              process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION,
-          },
-        }
-      : {}),
+    other: {
+      // Naver Search Advisor ownership for https://www.briq.kr
+      "naver-site-verification":
+        process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION ||
+        "f415445cd59da5434295472fba2c82d8dc9c635a",
+    },
   },
   icons: {
     icon: [
