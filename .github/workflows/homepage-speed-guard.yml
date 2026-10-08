@@ -44,6 +44,19 @@ jobs:
             curl -s -o /dev/null -m 90 -w "fill$i status=%{http_code} ttfb=%{time_starttransfer}s total=%{time_total}s\n" "$SITE/" || true
           done
 
+      - name: Warm shop menus after deploy
+        if: github.event_name == 'deployment_status'
+        run: |
+          # /shop HTML is edge-cached per region, so this mainly loads the
+          # catalogues into the icn1 functions before the first Korean visitor.
+          curl -s -m 90 "$SITE/" -o /tmp/menu.html || true
+          { echo "/shop"; grep -o 'href="/shop?[^"]*' /tmp/menu.html | sed 's/^href="//; s/&amp;/\&/g'; } \
+            | sort -u > /tmp/menus.txt
+          echo "warming $(wc -l < /tmp/menus.txt) shop pages"
+          xargs -P 6 -I{} curl -s -o /dev/null -m 90 \
+            -w "%{http_code} %{time_starttransfer}s {}\n" \
+            -H "User-Agent: briq-speed-guard" "$SITE{}" < /tmp/menus.txt || true
+
       - name: Shop and product pages
         run: |
           # The homepage can still answer while catalogue-heavy routes crash
