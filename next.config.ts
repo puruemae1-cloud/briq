@@ -23,6 +23,21 @@ const nextConfig: NextConfig = {
     "/": ["./catalog-dist/**/*.json.gz"],
     "/**/*": ["./catalog-dist/**/*.json.gz"],
   },
+  // Shop/product HTML only changes with a deploy (catalogue is bundled, cart badge
+  // is client-side) and Vercel purges the CDN on deploy, so serve it from the edge
+  // instead of waking a cold function that has to load every catalogue.
+  async headers() {
+    const edgeCache = [
+      {
+        key: "Vercel-CDN-Cache-Control",
+        value: "public, s-maxage=3600, stale-while-revalidate=86400",
+      },
+    ];
+    return [
+      { source: "/shop", headers: edgeCache },
+      { source: "/product/:id", headers: edgeCache },
+    ];
+  },
   async redirects() {
     return [
       { source: "/sitemap.xml", destination: "/sitemap-index.xml", permanent: true },

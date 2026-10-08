@@ -6,7 +6,6 @@ import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getCartCount } from "@/lib/cart-count";
 import { KEEP_SCROLL_RESTORE_SCRIPT } from "@/lib/keep-scroll";
 import { rootMetadata } from "@/lib/seo-metadata";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
@@ -46,7 +45,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cartCount = await getCartCount();
   const site = getSiteUrl();
 
   const orgLd = {
@@ -107,7 +105,7 @@ export default async function RootLayout({
         <JsonLd data={[orgLd, websiteLd, storeLd]} />
         <PretendardStylesheet />
         <div id="top" className="shell">
-          <SiteHeader cartCount={cartCount} />
+          <SiteHeader />
           <main className="shell__main">{children}</main>
           <SiteFooter />
         </div>

@@ -3,7 +3,12 @@ import type { Product, ProductVariant } from "@/data/product-types";
 import { getProduct } from "@/data/products";
 import { cartUnitPrice } from "@/lib/cart-price";
 
-import { CART_COOKIE } from "@/lib/cart-count";
+import {
+  CART_COOKIE,
+  CART_COOKIE_MAX_AGE,
+  CART_COUNT_COOKIE,
+  sumCartQty,
+} from "@/lib/cart-cookie";
 
 export { CART_COOKIE };
 
@@ -62,7 +67,12 @@ export async function writeCartLines(lines: CartLine[]) {
     path: "/",
     httpOnly: true,
     sameSite: "lax",
-    maxAge: 60 * 60 * 24 * 30,
+    maxAge: CART_COOKIE_MAX_AGE,
+  });
+  jar.set(CART_COUNT_COOKIE, String(sumCartQty(lines)), {
+    path: "/",
+    sameSite: "lax",
+    maxAge: CART_COOKIE_MAX_AGE,
   });
 }
 

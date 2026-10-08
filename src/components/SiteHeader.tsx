@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronDown, Menu, ShoppingBag, X } from "lucide-react";
 import { navCategories, type NavChild } from "@/data/categories";
+import { CartCountBadge } from "@/components/CartCountBadge";
 import { HeaderSearch } from "@/components/HeaderSearch";
 import { HeaderAccount } from "@/components/HeaderAccount";
 import { HomeLogoLink } from "@/components/HomeLogoLink";
@@ -115,7 +116,7 @@ function MobileBrandBranch({
   );
 }
 
-export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
+export function SiteHeader() {
   return (
     <>
       <input
@@ -170,7 +171,7 @@ export function SiteHeader({ cartCount = 0 }: { cartCount?: number }) {
             <HeaderAccount />
             <Link href="/cart" className="icon-btn cart-btn" aria-label="장바구니">
               <ShoppingBag size={20} />
-              {cartCount > 0 ? <span className="cart-count">{cartCount}</span> : null}
+              <CartCountBadge />
             </Link>
           </div>
         </div>
