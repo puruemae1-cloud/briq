@@ -2,10 +2,14 @@
 
 import { SEO_BRAND_SLUG_ORDER } from "@/lib/brand-nav-order";
 
+/**
+ * Canonical origin for SEO. Vercel serves www (briq.kr 308-redirects there), and
+ * Naver/Google drop canonical, sitemap and RSS URLs that redirect.
+ */
 export function getSiteUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://briq.kr"
-  );
+  const site =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.briq.kr";
+  return site.replace(/^https?:\/\/briq\.kr$/, "https://www.briq.kr");
 }
 
 /** Primary Korean discovery keywords (used in metadata + copy, not stuffed). */
