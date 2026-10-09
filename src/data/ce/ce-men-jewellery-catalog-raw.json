@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:34:42.940825+00:00",
+  "scrapedAt": "2026-10-09T18:45:44.481603+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/jewellery/?nav=E005-VIEW-ALL",
   "family": "ce-men-jewellery",
@@ -1474,7 +1474,7 @@
         "https://image.celine.com/asset/03af6ab8-8094-420f-a197-f21dc62a89ba/B10GA4W79-GKS6_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/f32c0d37-0fe1-41a8-aaa2-d743ab8212bc/B10GA4W79-GKS6_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1483,7 +1483,7 @@
         "ÉTÉ CELINE TRIOMPHE NECKLACE IN ONYX, HOWLITE AND BRASS WITH RHODIUM FINISH"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10GK4W92.36BL",

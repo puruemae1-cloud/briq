@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:42:02.135527+00:00",
+  "scrapedAt": "2026-10-09T18:52:06.831214+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/handbags/?nav=A003-VIEW-ALL",
   "family": "ce-women-bags",
@@ -701,7 +701,7 @@
         "https://image.celine.com/asset/5359a0f7-7309-4830-b565-d05abaad294e/10P625Q18-38NO_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/946e7960-af70-41e1-8692-5d914654ce5f/10P625Q18-38NO_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -710,7 +710,7 @@
         "ENVELOPE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "POUCHES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "10P625Q18.33VI",
@@ -885,7 +885,7 @@
         "https://image.celine.com/asset/9c6733f5-8b54-4d67-bef3-727b35ff83ec/10P625Q18-GMU2_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/a9f9a8aa-5c22-4df4-8a5e-9590d54cb502/10P625Q18-GMU2_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -894,7 +894,7 @@
         "ENVELOPE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "POUCHES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "L109U5L96.GNZ5",
@@ -943,7 +943,7 @@
         "https://image.celine.com/asset/f84850ca-9186-476c-8e90-5c4dfac07d27/L109U5L96-GNZ5_2_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/018d8151-ce7f-4218-a218-ce7d5770ab84/L109U5L96-GNZ5_3_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -952,7 +952,7 @@
         "LITTLE BUCKET IN TRIOMPHE CANVAS"
       ],
       "categoryLabel": "MINI BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "123845D58.GNZ5",
@@ -1263,7 +1263,7 @@
         "https://image.celine.com/asset/40343988-1dbd-4442-a234-ad81605b7388/L101J3163-28PO_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/94f8d7e2-8cca-4fd3-b804-34647f2317f1/L101J3163-28PO_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1272,7 +1272,7 @@
         "HOT DOG IN natural calfskin"
       ],
       "categoryLabel": "MORE LINES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "123542J80.04LU",
@@ -1645,7 +1645,7 @@
         "https://image.celine.com/asset/681ace31-b913-4e55-96a0-4cfde79ccaa1/L105F5E02-38NO_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/06010f25-0ca8-4804-b66e-8bae826c78a2/L105F5E02-38NO_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1654,7 +1654,7 @@
         "LE 17 IN GRAINED CALFSKIN"
       ],
       "categoryLabel": "LE 17",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L10BF5B53.33VI",
@@ -1901,7 +1901,7 @@
         "https://image.celine.com/asset/0e5c76b2-ae5e-4edf-a6cb-840c49991a54/L10BF5C12-38NO_5_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/9735881b-2ef8-4ae8-b941-1fc5d1131bc0/L10BF5C12-38NO_7_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1910,7 +1910,7 @@
         "SMALL FLAIR IN XL GRAINED CALFSKIN"
       ],
       "categoryLabel": "Flair",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L10BF5B53.18CH",
@@ -1965,7 +1965,7 @@
         "https://image.celine.com/asset/ddd2f394-3b14-48df-ab50-4952dc4e3d96/L10BF5B53-18CH_5_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/b970fd93-e997-4555-94e5-999229e30d69/L10BF5B53-18CH_7_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1974,7 +1974,7 @@
         "SMALL FLAIR IN SHINY CALFSKIN"
       ],
       "categoryLabel": "Flair",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L10BF5B53.27AG",
@@ -2475,7 +2475,7 @@
         "https://image.celine.com/asset/992ed9f0-3bca-44ad-83cb-42fcefbec7f9/124235426-GMU4_6_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/1d3f2e0a-0486-418a-8a3a-5e61c17f8995/124235426-GMU4_7_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2484,7 +2484,7 @@
         "CUBE FRAME IN GLOSSY LAMBSKIN"
       ],
       "categoryLabel": "FRAME",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "124235426.GMU5",
@@ -2789,7 +2789,7 @@
         "https://image.celine.com/asset/854f0659-caec-4cd1-ba8c-25f8366f1513/124232J75-00WC_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/636f0239-75e4-4ded-98ae-a274d4bf94b5/124232J75-00WC_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2798,7 +2798,7 @@
         "CUBE FRAME IN SUPPLE CALFSKIN"
       ],
       "categoryLabel": "FRAME",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "123702J75.38NO",
@@ -4434,7 +4434,7 @@
         "https://image.celine.com/asset/4d644283-d2b5-41c7-ae0d-bdad3ba13880/10P862O86-33VI_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/fd3095c4-2988-43f0-8327-da978c54a86b/10P862O86-33VI_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4443,7 +4443,7 @@
         "TRIO IN Smooth Lambskin"
       ],
       "categoryLabel": "MINI BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "10P862O86.28PO",
@@ -8883,7 +8883,7 @@
         "https://image.celine.com/asset/80b867d4-54df-47b3-862e-0aafe58aaad7/10L033DPV-00WC_4_FW24_P1_W.jpg?V2",
         "https://image.celine.com/asset/1694bede-4148-402a-96e4-9cc4d24e1957/10L033DPV-00WC_5_FW24_P1_W.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -8892,7 +8892,7 @@
         "WALLET ON CHAIN MARGO in Shiny calfskin"
       ],
       "categoryLabel": "MINI BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "10P663DPV.38NO",
@@ -9575,7 +9575,7 @@
         "https://image.celine.com/asset/77fc4b97-13c0-4560-b87d-a5d896de8c73/191242BZ4-04LU_4_LIB_W.jpg?V2",
         "https://image.celine.com/asset/298d696d-3264-467f-903f-1568e27453b9/191242BZ4-04LU_5_LIB_W.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -9584,7 +9584,7 @@
         "CLASSIQUE TRIOMPHE BAG IN Triomphe Canvas and Calfskin"
       ],
       "categoryLabel": "TRIOMPHE CANVAS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "118112FRH.04LU",
@@ -12876,10 +12876,10 @@
         "https://image.celine.com/asset/bd6390b7-352b-496a-8282-8c06a8197d07/L104J3G40-04LU_4_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/a107f43c-cc84-4923-afc7-a393f4af7a0f/L104J3G40-04LU_5_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L104J3G40.38NO",

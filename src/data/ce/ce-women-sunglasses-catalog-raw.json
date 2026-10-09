@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:47:33.548611+00:00",
+  "scrapedAt": "2026-10-09T18:57:55.469474+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/sunglasses/?nav=A006-VIEW-ALL",
   "family": "ce-women-sunglasses",
@@ -1300,7 +1300,7 @@
         "https://image.celine.com/asset/9c9b0fc4-5af3-4b7c-9d48-7477506b629c/4S194CPLB-00EB_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8d6092ab-83a9-4384-a033-c743225bdee7/4S194CPLB-00EB_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1309,11 +1309,11 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "Universal fit",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -2779,7 +2779,7 @@
         "https://image.celine.com/asset/d8672665-cc0b-41d6-bbe7-30d317d1f150/4S345CPLB-19HD_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/538521fb-3610-4876-a825-d1c090df40fc/4S345CPLB-19HD_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2788,11 +2788,11 @@
         "Disc sunglasses in Acetate"
       ],
       "categoryLabel": "ROUND",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "I",
-          "inStock": false
+          "inStock": true
         }
       ]
     },

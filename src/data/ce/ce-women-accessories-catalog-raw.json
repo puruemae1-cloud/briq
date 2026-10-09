@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:44:47.548690+00:00",
+  "scrapedAt": "2026-10-09T18:54:58.873390+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/accessories/?nav=A007-VIEW-ALL",
   "family": "ce-women-accessories",
@@ -193,7 +193,7 @@
         "https://image.celine.com/asset/82d5c7c3-2999-4647-9eff-04ba66bd20de/B10HM3A01-GHQ8_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/4d1ff992-b3e2-4835-8447-6afa2e893d8b/B10HM3A01-GHQ8_6_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -202,15 +202,15 @@
         "MINI MAISON CELINE BELT IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -337,7 +337,7 @@
         "https://image.celine.com/asset/43d455b5-d18e-417b-aea6-e095c531deb0/B10HO5705-27AG_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/ef4eba50-261c-441d-9124-00509f6f8458/B10HO5705-27AG_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -346,19 +346,19 @@
         "LITTLE MAISON CELINE BELT IN TAURILLON LEATHER WITH VARNISHED BUCKLE"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -484,11 +484,11 @@
         },
         {
           "size": "80",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -623,7 +623,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -631,7 +631,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -643,7 +643,7 @@
         },
         {
           "size": "105",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -2283,11 +2283,11 @@
       "sizeStock": [
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -3086,7 +3086,7 @@
         },
         {
           "size": "70",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "75",
@@ -3388,11 +3388,11 @@
       "sizeStock": [
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -3971,7 +3971,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -4446,7 +4446,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4724,7 +4724,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -5774,7 +5774,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -5790,7 +5790,7 @@
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "100",
@@ -6372,7 +6372,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "70",
@@ -6404,7 +6404,7 @@
         },
         {
           "size": "105",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "110",
@@ -6412,7 +6412,7 @@
         },
         {
           "size": "115",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -6544,7 +6544,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "70",
@@ -6564,7 +6564,7 @@
         },
         {
           "size": "90",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "95",
@@ -6708,7 +6708,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -6716,11 +6716,11 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -7329,7 +7329,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -7637,7 +7637,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -7790,7 +7790,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -11005,10 +11005,10 @@
         "/products/ce-pdp/aa0fp2k77-38no/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11061,10 +11061,10 @@
         "/products/ce-pdp/aa0fp2k77-09gm/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11117,10 +11117,10 @@
         "/products/ce-pdp/aa0fp2k77-27lk/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11173,10 +11173,10 @@
         "/products/ce-pdp/aa0fp2k77-01bc/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11229,10 +11229,10 @@
         "/products/ce-pdp/aa0fp2k77-03ne/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11285,10 +11285,10 @@
         "/products/ce-pdp/aa0fp2k77-07mr/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11341,10 +11341,10 @@
         "/products/ce-pdp/aa0fp2k77-fzl8/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11397,10 +11397,10 @@
         "/products/ce-pdp/aa0fp2k77-11ja/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11639,10 +11639,10 @@
         "/products/ce-pdp/aa0fp2k77-02cm/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -12636,7 +12636,7 @@
         },
         {
           "size": "59",
-          "inStock": false
+          "inStock": true
         }
       ]
     },

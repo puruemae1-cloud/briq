@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:31:34.610832+00:00",
+  "scrapedAt": "2026-10-09T18:42:35.381691+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/bags/?nav=E003-VIEW-ALL",
   "family": "ce-men-bags",
@@ -633,7 +633,7 @@
         "https://image.celine.com/asset/5054da3b-2f16-4c73-a54a-15c39c73b2df/L103B2K05-38SI_6_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/2313b871-88da-4d04-a3e5-05ad47fba7a4/L103B2K05-38SI_7_SUM26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -642,7 +642,7 @@
         "SHARP POUCH TAKE AWAY IN SMOOTH LAMBSKIN"
       ],
       "categoryLabel": "TAKE AWAY",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "L103B2K05.19KE",
@@ -2967,7 +2967,7 @@
         "https://image.celine.com/asset/fbc7a018-646d-467f-b796-347673c6e8b5/L102A3300-GKW6_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/1bd0ebbf-9d99-4cad-a585-0442d48ed0b1/L102A3300-GKW6_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2976,7 +2976,7 @@
         "VERTICAL CABAS LUGGAGE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "TOTE BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L102A3300.18CH",
@@ -3514,7 +3514,7 @@
         "https://image.celine.com/asset/6efa7ba5-2a4e-4238-b434-53348b9da686/L104M2X81-GFY5_5_FW26_M_V2.jpg?V2",
         "https://image.celine.com/asset/89b68857-a557-4c9a-a5fc-115962dfecfa/L104M2X81-GFY5_6_FW26_M_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3523,7 +3523,7 @@
         "BIG BACKPACK IN SHINY LAMBSKIN"
       ],
       "categoryLabel": "BACKPACKS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L104M2X81.38SI",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:32:45.075435+00:00",
+  "scrapedAt": "2026-10-09T18:43:51.514299+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/shoes/?nav=E002-VIEW-ALL",
   "family": "ce-men-shoes",
@@ -1663,7 +1663,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -1868,7 +1868,7 @@
         "https://image.celine.com/asset/ca664292-4fa6-4149-bd8f-a317e416c749/365555278C-01CK_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/dc28f731-d5be-4b27-89fe-8b3b45adf1f6/365555278C-01CK_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1877,7 +1877,7 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -1889,7 +1889,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -1897,7 +1897,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -3848,11 +3848,11 @@
         },
         {
           "size": "46",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "47",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4973,7 +4973,7 @@
         "https://image.celine.com/asset/74333485-9537-4c2c-b2f8-c76a38a46d66/365775295C-38NO_4_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ea66e0f2-562e-406a-8d7c-f7b9acc5efd5/365775295C-38NO_5_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -4982,7 +4982,7 @@
         "JAZZ SHOE IN CROCODILE STAMPED LAMBSKIN"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -5006,7 +5006,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "45",
@@ -5465,7 +5465,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -5702,7 +5702,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -6618,7 +6618,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -7389,7 +7389,7 @@
         },
         {
           "size": "46",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "46,5",
@@ -7599,7 +7599,7 @@
         "https://image.celine.com/asset/233817cc-23ef-4769-84be-b02086ae0583/368255500C-38NO_4_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/e2a35b85-43fc-46e0-9ade-70aa40990b76/368255500C-38NO_5_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -7608,11 +7608,11 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
@@ -7620,7 +7620,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40,5",
@@ -7628,7 +7628,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41,5",
@@ -7636,7 +7636,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42,5",
@@ -7644,7 +7644,7 @@
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43,5",
@@ -7652,7 +7652,7 @@
         },
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44,5",
@@ -7660,7 +7660,7 @@
         },
         {
           "size": "45",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "45,5",
@@ -9345,7 +9345,7 @@
         },
         {
           "size": "45",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "46",
@@ -11432,7 +11432,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -12136,7 +12136,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -12368,7 +12368,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -14280,7 +14280,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -15233,7 +15233,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -16142,7 +16142,7 @@
         "https://image.celine.com/asset/66d8d10c-a856-4f97-903d-b29d5469a4c7/368415265C-38NO_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9c342ecb-689d-4c8b-9181-bfe2d42630a0/368415265C-38NO_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -16151,7 +16151,7 @@
         "HECTOR ZIPPED BOOT IN Stretch Lambskin"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -16163,11 +16163,11 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -16369,7 +16369,7 @@
         "https://image.celine.com/asset/5664c08d-cdf6-466a-82fe-bbb1116fb14c/368445465C-GDL8_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/a05ab999-3d22-4755-8091-b598a374bf42/368445465C-GDL8_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -16378,7 +16378,7 @@
         "HECTOR ZIPPED BOOT IN CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -16386,7 +16386,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -17305,7 +17305,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -17786,7 +17786,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42,5",

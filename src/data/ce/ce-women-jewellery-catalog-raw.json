@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T10:46:22.568692+00:00",
+  "scrapedAt": "2026-10-09T18:56:46.694513+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/jewellery/?nav=A005-VIEW-ALL",
   "family": "ce-women-jewellery",
@@ -663,7 +663,7 @@
         "https://image.celine.com/asset/0e1a929b-8d66-4760-96bc-fcec92902d0a/B102W6PRB-01GI_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/41de66d5-ae9e-4014-a736-0a5899616faa/B102W6PRB-01GI_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -672,7 +672,7 @@
         "Les Perles Celine Straight Earrings in Resin Pearls and Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B109Z3Q19.38DK",
@@ -779,7 +779,7 @@
         "https://image.celine.com/asset/10dea82f-09ea-4202-8e11-d688aae9df2f/B10236BRA-35OR_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/3b7bb147-b806-4f1d-b4e2-da916733ec4f/B10236BRA-35OR_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -788,7 +788,7 @@
         "Celine Défilé Torsade Hoops in Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "460TZ6PRB.01GI",
@@ -1241,7 +1241,7 @@
         "https://image.celine.com/asset/b179c9c5-dd80-4c78-beaa-7e0cb9004c6b/B10E94V03-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d4444b20-6227-4487-af60-1682d21ead0f/B10E94V03-35OR_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1250,7 +1250,7 @@
         "CHUNKY TRIOMPHE EARRINGS IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10EB4V05.35OR",
@@ -1529,7 +1529,7 @@
         "https://image.celine.com/asset/64502830-b55a-405a-b9b3-90e0f2792354/460RD6BRA-35OR_2_FW23_W.jpg?V2",
         "https://image.celine.com/asset/3d6527c0-f311-4b54-90be-e9ab7d039bd4/460RD6BRA-35OR_3_FW23_W.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1538,7 +1538,7 @@
         "Triomphe Asymmetric Hoops in Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "461EZ6BZI.36SI",
@@ -2943,13 +2943,14 @@
       "title": "Triomphe Articulated Bracelet In Enamel And Brass With Gold Finish",
       "gbpPrice": 460.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-articulated-bracelet-in-enamel-and-brass-with-gold-finish-461NJ6BRE.GAY7.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3125,13 +3126,14 @@
       "title": "Triomphe Articulated Bracelet In Brass With Gold Finish",
       "gbpPrice": 395.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-articulated-bracelet-in-brass-with-gold-finish-46Z676BRA.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3247,13 +3249,14 @@
       "title": "Triomphe Articulated Bracelet In Brass With Rhodium Finish",
       "gbpPrice": 395.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-articulated-bracelet-in-brass-with-rhodium-finish-46Z676BRA.36SI.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3369,13 +3372,14 @@
       "title": "Triomphe Articulated Sparkle Bracelet In Strass And Brass With Gold Finish",
       "gbpPrice": 485.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-articulated-sparkle-bracelet-in-strass-and-brass-with-gold-finish-461CZ6BZI.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3459,13 +3463,14 @@
       "title": "Triomphe Asymmetric Cuff In Brass With Gold Finish",
       "gbpPrice": 355.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-asymmetric-cuff-in-brass-with-gold-finish-460PQ6BRA.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3571,13 +3576,14 @@
       "title": "Triomphe Asymmetric Cuff In Brass With Rhodium Finish",
       "gbpPrice": 355.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-asymmetric-cuff-in-brass-with-rhodium-finish-460PQ6BRA.36SI.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3683,13 +3689,14 @@
       "title": "Triomphe Mini Triomphe Bracelet In Brass With Gold Finish",
       "gbpPrice": 395.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-mini-triomphe-bracelet-in-brass-with-gold-finish-460MT6BRA.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3773,13 +3780,14 @@
       "title": "Triomphe Mini Triomphe Bracelet In Brass With Rhodium Finish",
       "gbpPrice": 395.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/bracelets/triomphe-mini-triomphe-bracelet-in-brass-with-rhodium-finish-461DO6BRA.36SI.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -3951,7 +3959,7 @@
         },
         {
           "size": "C2",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "C3",
@@ -4620,7 +4628,7 @@
         "https://image.celine.com/asset/8b02e0e6-0357-466d-81b5-0ab2d927fff3/B10FS4V94-35OR_1_FALL26_W_V2.jpg?V2",
         "https://image.celine.com/asset/8e1ef7c5-e398-4629-af43-64622090463a/B10FS4V94-35OR_2_FALL26_W_V2.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4629,7 +4637,7 @@
         "CELINE CHARMS TRIOMPHE NECKLACE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "CHARMS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10FS4V94.36SI",
@@ -5215,13 +5223,14 @@
       "title": "Triomphe Mini Triomphe Necklace In Brass With Gold Finish",
       "gbpPrice": 460.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/necklaces/triomphe-mini-triomphe-necklace-in-brass-with-gold-finish-460MS6BRA.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -5256,7 +5265,7 @@
         "https://image.celine.com/asset/63a357e4-cc13-4df7-bcdc-1fb6add659ae/460MS6BRA-35OR_2_SUM23.jpg?V2",
         "https://image.celine.com/asset/198531c9-6d73-44dd-bd6b-38d97550b232/460MS6BRA-35OR_3_SUM23.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5265,7 +5274,7 @@
         "Triomphe Mini Triomphe Necklace in Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "461GZ6PRB.01GI",
@@ -5339,13 +5348,14 @@
       "title": "Triomphe Mini Triomphe Necklace In Brass With Rhodium Finish",
       "gbpPrice": 460.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/necklaces/triomphe-mini-triomphe-necklace-in-brass-with-rhodium-finish-461DN6BRA.36SI.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -5695,13 +5705,14 @@
       "title": "Triomphe Lock Necklace In Brass With Gold Finish",
       "gbpPrice": 460.0,
       "url": "https://www.celine.com/en-gb/women/jewellery/necklaces/triomphe-lock-necklace-in-brass-with-gold-finish-461HH6BRA.35OR.html",
-      "leafId": "ce-women-jewellery-all",
+      "leafId": "ce-women-jew-triomphe",
       "leafLabel": "View All",
       "leafLabelKo": "전체",
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-jewellery-all"
+        "ce-women-jewellery-all",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -5738,7 +5749,7 @@
         "https://image.celine.com/asset/ee74bfb4-3370-446e-803f-4143068c697c/461HH6BRA-35OR_2_SPR25_P1_W.tif?V2",
         "https://image.celine.com/asset/287ff502-b181-40cf-a372-6e8bfe8eaaa1/461HH6BRA-35OR_3_SPR25_P1_W.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5747,11 +5758,11 @@
         "Triomphe Lock Necklace in Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -5955,7 +5966,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -6153,7 +6165,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -6347,7 +6360,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -6818,7 +6832,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -7317,7 +7332,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -7389,7 +7405,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -7461,7 +7478,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -7517,7 +7535,7 @@
         },
         {
           "size": "54",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -7533,7 +7551,8 @@
       "collections": [
         "celine-accessories",
         "ce-women-jewellery",
-        "ce-women-rings"
+        "ce-women-rings",
+        "ce-women-jew-triomphe"
       ],
       "color": {
         "label": ""
@@ -8740,7 +8759,7 @@
         },
         {
           "size": "48",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "49",
@@ -10000,10 +10019,10 @@
         "https://image.celine.com/asset/b706ecab-9cd5-436b-a358-c88d31f1c109/46W136VEL-35OR_2_WIN20.jpg?V2",
         "https://image.celine.com/asset/71a76114-5686-4b1a-a520-d44f6a1f9c06/46W136VEL-35OR_9_WIN20_882175.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461GD6GWD.37WW",
