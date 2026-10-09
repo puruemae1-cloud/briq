@@ -2581,7 +2581,9 @@
         "/products/di-pdp/m1412omql-m925/9.jpg",
         "/products/di-pdp/m1412omql-m925/10.jpg",
         "/products/di-pdp/m1412omql-m925/11.jpg",
-        "/products/di-pdp/m1412omql-m925/12.jpg"
+        "/products/di-pdp/m1412omql-m925/12.jpg",
+        "/products/di-pdp/m1412omql-m925/13.jpg",
+        "/products/di-pdp/m1412omql-m925/14.jpg"
       ]
     },
     {
@@ -2627,6 +2629,20 @@
         "/products/di-pdp/v1867womcl-d84v/4.jpg",
         "/products/di-pdp/v1867womcl-d84v/5.jpg"
       ]
+    },
+    {
+      "sku": "V1975WOMMF_D301",
+      "id": "di-v1975wommf-d301",
+      "lvl2": "Bag Jewelry",
+      "leaf": "di-acc-bag-jewelry",
+      "name": "DiorAlps Dior Icon Bag Charm",
+      "nameKo": "디올알프스 디올 아이콘 백 참",
+      "images": [
+        "/products/di-pdp/v1975wommf-d301/1.jpg",
+        "/products/di-pdp/v1975wommf-d301/2.jpg",
+        "/products/di-pdp/v1975wommf-d301/3.jpg",
+        "/products/di-pdp/v1975wommf-d301/4.jpg"
+      ]
     }
   ],
   "counts": {
@@ -2635,7 +2651,7 @@
     "di-acc-bag-clutches": 8,
     "di-acc-bag-mini": 18,
     "di-acc-bag-bucket": 7,
-    "di-acc-bag-jewelry": 48,
+    "di-acc-bag-jewelry": 49,
     "di-acc-bag-mitzah": 6,
     "di-acc-bag-purse": 2,
     "di-acc-bag-key-rings": 6
