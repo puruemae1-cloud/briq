@@ -1532,13 +1532,10 @@
     "price": 105000,
     "compareAtPrice": 137000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "Arnie 방수 골프 모자에는 플리스 안감과 이어플랩이 있어 따뜻함을 더해줍니다. 뒷면의 벨크로와 고무줄로 너비를 조절할 수 있어 꼭 맞는 핏을 보장합니다. 소형 사이즈의 둘레는 54~56cm(21.3~22인치), 중형 사이즈는 56~58cm(22~22.8인치), 대형 사이즈는 60~62cm(23.6~24.4인치)입니다. Arnie는 따뜻한 안감과 이어 플랩이 있는 솔기가 완전히 밀봉된 방수 골프 모자입니다. 비와 추위 속에서 플레이하는 골퍼를 위해 디자인된 이 방수 및 방풍 GORE-TEX 모자는 통기성이 뛰어나고 가벼워 방해 요소를 최소화하고 편안함을 극대화합니다. DRYVR™ 방수 컬렉션의 수상 경력에 빛나는 골프 비옷으로 건조한 상태를 유지하세요.",
     "image": "/products/gg-pdp/arnie-waterproof-cap-black/1.jpg",
@@ -1552,7 +1549,7 @@
     ],
     "hoverImage": "/products/gg-pdp/arnie-waterproof-cap-black/2.jpg",
     "accent": "#243447",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 34.3,
     "sku": "A01000309403001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/arnie-waterproof-cap-black",
@@ -1627,9 +1624,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "54/S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arnie-waterproof-cap-black-56-m",
@@ -1654,9 +1649,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "56/M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arnie-waterproof-cap-black-58-l",
@@ -1681,9 +1674,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "58/L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -2731,10 +2722,13 @@
     "price": 90000,
     "compareAtPrice": 128000,
     "category": "sports",
-    "subcategory": "gg-accessories",
-    "ggCollections": [],
+    "subcategory": "gg-sale",
+    "ggCollections": [
+      "gg-sale"
+    ],
     "tags": [
-      "galvin-green"
+      "galvin-green",
+      "gg-sale"
     ],
     "descriptionKo": "더욱 편안한 착용감을 위해 신축성 있는 스웨트 밴드가 있는 Astro 골프 레인 모자는 갈빈 그린의 수상 경력에 빛나는 골퍼용 비옷 컬렉션의 일부입니다. bluesign® 승인 직물로 제작된 이 모자는 비를 맞을 위험이 있는 경우 필수품입니다. Astro Upcycled는 통기성이 뛰어나고 가벼운 GORE-TEX 원단으로 제작된 완전히 솔기가 밀봉된 골프 레인 모자입니다. 이 골프 버킷 모자는 100% 방수 및 방풍 기능을 갖추고 있으며 비오는 날 착용하거나 예상치 못한 소나기가 내릴 경우 골프 가방에 휴대하도록 디자인되었습니다. 갈빈 그린 업사이클링 컬렉션은 당사의 주요 생산 과정에서 남은 직물로 만든 다양한 골프 의류 및 액세서리입니다. 이 첨단 기술의 프리미엄 원단은 낭비되는 대신 일부 베스트 셀러 스타일의 한정판 생산에 사용됩니다.",
     "image": "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/1.jpg",
@@ -2748,7 +2742,7 @@
     ],
     "hoverImage": "/products/gg-pdp/upe-astro-waterproof-hat-sharkskin/2.jpg",
     "accent": "#1A2E28",
-    "badge": null,
+    "badge": "Sale",
     "gbpPrice": 27.0,
     "sku": "S13879407F4",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/upe-astro-waterproof-hat-sharkskin",
@@ -2828,7 +2822,9 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "54/S",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-upe-astro-waterproof-hat-sharkskin-56-m",
@@ -2853,7 +2849,9 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "56/M",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-upe-astro-waterproof-hat-sharkskin-58-l",
@@ -2878,7 +2876,9 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "58/L",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-upe-astro-waterproof-hat-sharkskin-60-xl",
@@ -2903,7 +2903,9 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "60/XL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-upe-astro-waterproof-hat-sharkskin-62-xxl",
@@ -2928,7 +2930,9 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "62/XXL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       }
     ]
   },
@@ -6841,12 +6845,12 @@
       "/products/gg-pdp/abby-waterproof-golf-jacket-black/4.jpg",
       "/products/gg-pdp/abby-waterproof-golf-jacket-black/5.jpg",
       "/products/gg-pdp/abby-waterproof-golf-jacket-black/6.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/1.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/2.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/3.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/4.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/5.jpg",
-      "/products/gg-pdp/abby-waterproof-golf-jacket-fuchsia-white/6.jpg"
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+      "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
     ],
     "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-black/2.jpg",
     "accent": "#243447",
@@ -7064,6 +7068,174 @@
         "size": "XXL",
         "ggCollections": [
           "gg-women"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xs",
+        "name": "Crystal Blue White / XS",
+        "nameKo": "크리스탈 블루 화이트 / XS",
+        "sku": "A01000758705001",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": false,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "XS",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-s",
+        "name": "Crystal Blue White / S",
+        "nameKo": "크리스탈 블루 화이트 / S",
+        "sku": "A01000758705002",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": false,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "S",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-m",
+        "name": "Crystal Blue White / M",
+        "nameKo": "크리스탈 블루 화이트 / M",
+        "sku": "A01000758705003",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": false,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "M",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-l",
+        "name": "Crystal Blue White / L",
+        "nameKo": "크리스탈 블루 화이트 / L",
+        "sku": "A01000758705004",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": false,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "L",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xl",
+        "name": "Crystal Blue White / XL",
+        "nameKo": "크리스탈 블루 화이트 / XL",
+        "sku": "A01000758705005",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": true,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "XL",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
+        ]
+      },
+      {
+        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xxl",
+        "name": "Crystal Blue White / XXL",
+        "nameKo": "크리스탈 블루 화이트 / XXL",
+        "sku": "A01000758705006",
+        "gbpPrice": 230.3,
+        "price": 506000,
+        "compareAtPrice": 714000,
+        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+        "images": [
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
+          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
+        ],
+        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
+        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
+        "inStock": true,
+        "colorKey": "crystal-blue-white",
+        "colorNameKo": "크리스탈 블루 화이트",
+        "size": "XXL",
+        "ggCollections": [
+          "gg-bestsellers-women",
+          "gg-sale"
         ]
       },
       {
@@ -7477,7 +7649,7 @@
         ],
         "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-storm-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-storm-blue-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "storm-blue-navy",
         "colorNameKo": "스톰 블루 네이비",
         "size": "M",
@@ -7569,168 +7741,6 @@
           "gg-new-women",
           "gg-women"
         ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xs",
-        "name": "Crystal Blue White / XS",
-        "nameKo": "크리스탈 블루 화이트 / XS",
-        "sku": "A01000758705001",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "XS",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-s",
-        "name": "Crystal Blue White / S",
-        "nameKo": "크리스탈 블루 화이트 / S",
-        "sku": "A01000758705002",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "S",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-m",
-        "name": "Crystal Blue White / M",
-        "nameKo": "크리스탈 블루 화이트 / M",
-        "sku": "A01000758705003",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "M",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-l",
-        "name": "Crystal Blue White / L",
-        "nameKo": "크리스탈 블루 화이트 / L",
-        "sku": "A01000758705004",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "L",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xl",
-        "name": "Crystal Blue White / XL",
-        "nameKo": "크리스탈 블루 화이트 / XL",
-        "sku": "A01000758705005",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "XL",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
-      },
-      {
-        "id": "gg-abby-waterproof-golf-jacket-crystal-blue-white-xxl",
-        "name": "Crystal Blue White / XXL",
-        "nameKo": "크리스탈 블루 화이트 / XXL",
-        "sku": "A01000758705006",
-        "gbpPrice": 230.3,
-        "price": 506000,
-        "compareAtPrice": 714000,
-        "image": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-        "images": [
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/1.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/3.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/4.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/5.jpg",
-          "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/6.jpg"
-        ],
-        "hoverImage": "/products/gg-pdp/abby-waterproof-golf-jacket-crystal-blue-white/2.jpg",
-        "sourceUrl": "https://www.galvingreen.com/en-gb/products/abby-waterproof-golf-jacket-crystal-blue-white",
-        "inStock": false,
-        "colorKey": "crystal-blue-white",
-        "colorNameKo": "크리스탈 블루 화이트",
-        "size": "XXL",
-        "ggCollections": [
-          "gg-bestsellers-women"
-        ]
       }
     ]
   },
@@ -7742,13 +7752,10 @@
     "price": 652000,
     "compareAtPrice": 1074000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "액션 재킷의 어깨와 허리는 내구성이 매우 뛰어난 TECHSTEEL™ 원단으로 강화되어 골프 가방을 들고 다닐 때 발생하는 마모를 쉽게 견딜 수 있습니다. GORE-TEX 슈퍼 스트레치 패브릭 인서트가 등 중앙과 팔꿈치에 배치되어 편안함을 높이고 자유로운 움직임을 가능하게 합니다. 이 재킷에는 또한 카본 프린트 지퍼, 골퍼가 플레이 중에 가슴 너비를 조절할 수 있는 가슴 탭, 쉽게 움직일 수 있도록 모양이 지정된 소매가 포함되어 있습니다. 특별한 남성용 방수 골프 재킷을 찾고 계시다면 Action보다 더 나은 곳은 없습니다. 액션은 소재 성능과 의류 디자인의 위업입니다. DRYVR™ 기술로 제작된 이 풀집 재킷은 완전 방수 및 방풍 기능을 갖춘 GORE-TEX C-knit™ 원단으로 제작되었습니다. 또한 통기성이 뛰어나고 가벼워 모든 라운드에서 편안함을 보장합니다. 어깨 부분의 TECHSTEEL™ 인서트(골프 가방을 들고 있는 동안 천이 마모되는 것을 방지하기 위해), 등과 팔꿈치 부분의 신축성 인서트 등의 디테일을 갖춘 Action 재킷은 내구성이 뛰어나고 편안하며 골프 코스에서 완전한 움직임의 자유를 허용하도록 설계되었습니다. 그것도 멋져 보인다고 언급했었나요? 이 남성용 방수 골프 재킷은 매끄럽고 유선형이며 날카롭습니다.",
     "image": "/products/gg-pdp/action-waterproof-jacket-forged-iron/1.jpg",
@@ -7768,7 +7775,7 @@
     ],
     "hoverImage": "/products/gg-pdp/action-waterproof-jacket-forged-iron/2.jpg",
     "accent": "#2C2A28",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 299.4,
     "sku": "G11019406B4",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/action-waterproof-jacket-forged-iron",
@@ -8001,9 +8008,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-navy-m",
@@ -8028,9 +8033,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-navy-l",
@@ -8055,9 +8058,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-navy-xl",
@@ -8082,9 +8083,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-navy-xxl",
@@ -8109,9 +8108,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-navy-3xl",
@@ -8136,9 +8133,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-s",
@@ -8163,9 +8158,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-m",
@@ -8190,9 +8183,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-l",
@@ -8217,9 +8208,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-xl",
@@ -8244,9 +8233,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-xxl",
@@ -8271,9 +8258,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-action-waterproof-jacket-sharkskin-3xl",
@@ -8298,9 +8283,7 @@
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -9026,13 +9009,10 @@
     "price": 386000,
     "compareAtPrice": 630000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "Aden 하프 지퍼 골프 레인 재킷은 날씨가 어떻게 될지 모르는 날 가방에 들고 다니기에 완벽한 제품입니다. GORE-TEX Paclite® 스트레치 원단의 장점은 정말 가볍다는 것입니다. 그리고 완벽한 방수, 방풍 및 통기성이 뛰어난 멤브레인을 갖춘 Aden은 비오는 날에도 편안함을 제공하는 열쇠입니다. 신축성 있는 원단은 모든 범위의 움직임을 허용하므로 골프 레인 재킷이 스윙을 방해하지 않습니다. Aden은 조절 가능한 가슴과 칼라 너비, 재배치된 측면 솔기, 편안함을 더해주는 모양의 소매 등 다양한 실용적이고 성능 중심적인 기능을 자랑합니다. 방수 바지와 미드레이어를 함께 착용하면 골프장에서 따뜻하고 편안하게 착용할 수 있습니다. 그리고 해가 뜨면 Aden을 말아서 가방에 넣고 폭우 재킷을 입지 않고도 나머지 게임을 즐길 수 있습니다.",
     "image": "/products/gg-pdp/aden-waterproof-jacket-red/1.jpg",
@@ -9046,7 +9026,7 @@
     ],
     "hoverImage": "/products/gg-pdp/aden-waterproof-jacket-red/2.jpg",
     "accent": "#1A2E28",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 173.4,
     "sku": "G11099413B4",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/aden-waterproof-jacket-red",
@@ -9125,9 +9105,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aden-waterproof-jacket-red-m",
@@ -9152,9 +9130,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aden-waterproof-jacket-red-l",
@@ -9179,9 +9155,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aden-waterproof-jacket-red-xl",
@@ -9206,9 +9180,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aden-waterproof-jacket-red-xxl",
@@ -9233,9 +9205,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aden-waterproof-jacket-red-3xl",
@@ -9260,9 +9230,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -9628,13 +9596,10 @@
     "price": 386000,
     "compareAtPrice": 630000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "디자인 기능과 편리한 디테일이 가득한 Aila 여성용 골프 레인 재킷은 골프 코스에서 테스트되었습니다. 재배치된 측면 솔기와 모양의 소매는 움직임 범위를 제한하지 않는 핏을 보장합니다. 전면 포켓, 양방향 지퍼, 신축성 있는 원단으로 인해 이 스타일은 골퍼가 가장 좋아하는 스타일입니다. 이중 색상 조합은 갈빈 그린 컬렉션의 미드 레이어, 셔츠, 하의와 잘 어울리도록 디자인되어 다음에 빗속에서 놀 때 편안함과 스타일리시함을 보장합니다. 골프장에서 비오는 날에는 고품질 여성용 골프 레인 재킷이 필요합니다. Aila 재킷은 가볍고 통기성이 뛰어난 스포티한 풀지퍼 GORE-TEX Paclite® 스트레치 스타일로, 자유로운 움직임을 제한하지 않으면서 착용자를 보호할 수 있도록 설계되었습니다. DRYVR™ 방수 제품군의 일부인 GORE-TEX Paclite® 스트레치는 이상적인 골프용 소재입니다. 플레이하는 동안 가볍고 해가 뜰 때 가방에 쉽게 넣을 수 있습니다.",
     "image": "/products/gg-pdp/aila-waterproof-jacket-black/1.jpg",
@@ -9654,7 +9619,7 @@
     ],
     "hoverImage": "/products/gg-pdp/aila-waterproof-jacket-black/2.jpg",
     "accent": "#24302A",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 173.4,
     "sku": "G21039403B3",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/aila-waterproof-jacket-black",
@@ -9732,9 +9697,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-black-s",
@@ -9759,9 +9722,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-black-m",
@@ -9786,9 +9747,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-black-l",
@@ -9813,9 +9772,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-black-xl",
@@ -9840,9 +9797,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-black-xxl",
@@ -9867,9 +9822,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-xs",
@@ -9894,9 +9847,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-s",
@@ -9921,9 +9872,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-m",
@@ -9948,9 +9897,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-l",
@@ -9975,9 +9922,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-xl",
@@ -10002,9 +9947,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-blue-base-multi-colour-xxl",
@@ -10029,9 +9972,7 @@
         "colorKey": "blue-multi-colour",
         "colorNameKo": "블루 Multi Colour",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-aila-waterproof-jacket-cool-grey-xs",
@@ -12651,13 +12592,10 @@
     "price": 565000,
     "compareAtPrice": 799000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "30년 동안 골프 비옷을 디자인해온 당사는 갈빈 그린 DRYVR™ 골프 비옷이 깊은 인상을 남길 것이라고 확신하실 수 있습니다. Albert는 방풍 기능과 가벼움, 통기성이 뛰어난 100% 방수 GORE-TEX 스트레치 원단으로 제작된 안감이 있는 풀지퍼 골프 재킷입니다. 이 투톤 재킷은 매끄럽고 스타일리시할 수 있지만 조절 가능한 가슴 폭, 가슴 내부 포켓, 위치가 조정된 측면 솔기 등 최적의 편안함을 포함한 디테일이 마음에 드실 것입니다. Albert GORE-TEX 골프 재킷은 가슴 패널에 은은한 프린트가 있고 신축성 있는 GORE-TEX 원단이 골프 코스에서 자유롭게 움직일 수 있도록 디자인되었습니다. 가벼운 메쉬 안감으로 몸과 재킷 사이에 공기 주머니가 있어 추운 날에도 체온을 유지하는 데 중요합니다. 조절 가능한 가슴 너비, 커프스, 밑단의 신축성 있는 조임끈으로 꼭 맞는 핏을 쉽게 얻을 수 있습니다.",
     "image": "/products/gg-pdp/albert-waterproof-jacket-cool-grey/1.jpg",
@@ -12677,7 +12615,7 @@
     ],
     "hoverImage": "/products/gg-pdp/albert-waterproof-jacket-cool-grey/2.jpg",
     "accent": "#243447",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 258.3,
     "sku": "G13009408B4",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/albert-waterproof-jacket-cool-grey",
@@ -12757,9 +12695,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-m",
@@ -12784,9 +12720,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-l",
@@ -12811,9 +12745,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-xl",
@@ -12838,9 +12770,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-xxl",
@@ -12865,9 +12795,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-3xl",
@@ -12892,9 +12820,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-cool-grey-4xl",
@@ -12919,9 +12845,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "4XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-albert-waterproof-jacket-navy-white-s",
@@ -13283,13 +13207,10 @@
     "price": 388000,
     "compareAtPrice": 545000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "골프 코스에서 테스트된 Alice 여성용 방수 골프 재킷은 모양이 잡힌 소매와 재배치된 측면 솔기가 특징입니다. 편안함을 위해 디자인되었으며 옷이 아닌 게임에 집중할 수 있도록 해줍니다. 앞면 포켓과 신축성 있는 조임끈 밑단이 특징입니다. 골프장에서나 비오는 날 심부름을 할 때 쉽게 착용할 수 있는 이 첨단 기술의 다재다능한 재킷은 어떤 옷장에도 가치를 더해줍니다. 비오는 날 골프에는 안정적이고 편안한 비옷이 필요하며 Alice 재킷이 바로 그것입니다. GORE-TEX Paclite® 소재로 제작된 이 클래식 여성용 방수 골프 재킷은 완전 방수 및 방풍 기능을 갖추고 있으며 뛰어난 통기성을 제공합니다. 갈빈 그린의 DRYVR™ 방수 컬렉션 중 하나인 이 재킷은 베이스 레이어, 셔츠, 미드 레이어 위에 레이어드할 수 있도록 디자인되었습니다. Alice는 가볍고 휴대성이 뛰어나 날씨가 예측할 수 없는 날에도 가방에 쉽게 휴대할 수 있는 제품입니다.",
     "image": "/products/gg-pdp/alice-waterproof-jacket-cool-grey/1.jpg",
@@ -13309,7 +13230,7 @@
     ],
     "hoverImage": "/products/gg-pdp/alice-waterproof-jacket-cool-grey/2.jpg",
     "accent": "#2C2A28",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 174.3,
     "sku": "A01000259408001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/alice-waterproof-jacket-cool-grey",
@@ -13538,9 +13459,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-sugar-coral-s",
@@ -13565,9 +13484,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-sugar-coral-m",
@@ -13592,9 +13509,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-sugar-coral-l",
@@ -13619,9 +13534,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-sugar-coral-xl",
@@ -13646,9 +13559,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-sugar-coral-xxl",
@@ -13673,9 +13584,7 @@
         "colorKey": "sugar-coral",
         "colorNameKo": "Sugar 코랄",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-xs",
@@ -13700,9 +13609,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-s",
@@ -13727,9 +13634,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-m",
@@ -13754,9 +13659,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-l",
@@ -13781,9 +13684,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-xl",
@@ -13808,9 +13709,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alice-waterproof-jacket-white-xxl",
@@ -13835,9 +13734,7 @@
         "colorKey": "white",
         "colorNameKo": "화이트",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -15173,13 +15070,10 @@
     "price": 411000,
     "compareAtPrice": 673000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "갈빈 그린의 수상 경력에 빛나는 DRYVR™ 골프 레인웨어 컬렉션의 일부인 Ally 프리미엄 여성용 골프 재킷은 방수 스트레치 원단으로 제작되어 플레이하는 동안 자유롭게 움직일 수 있습니다. 대비되는 패널이 유선형 실루엣을 만들고 전면 포켓이 있어 이 재킷은 스타일리시하면서도 실용적입니다. 골프를 치는 동안 마찰을 줄이기 위해 양방향 지퍼와 재배치된 측면 솔기가 특징입니다. 모양이 잡힌 소매는 움직임이 더욱 유동적임을 의미하며 이 신축성 있는 원단은 bluesign® 승인을 받았습니다. 조절 가능한 커프스와 밑단의 신축성 있는 조임끈이 이 프리미엄 여성용 레인 재킷의 편안함을 더해줍니다. 최고의 성능을 위해 특별히 디자인된 골프웨어로 자신감을 가지세요. 거추장스러운 겉옷을 입지 않고도 골프장에서 어떻게 건조하고 따뜻하게 지낼 수 있나요? 100% 방수 및 방풍 기능을 갖춘 프리미엄 여성용 레인 재킷 Ally를 소개합니다. 이 스포티한 재킷은 가벼운 무게와 뛰어난 통기성 및 휴대성으로 가장 잘 알려진 GORE-TEX Paclite® 신축성 원단으로 제작되었습니다.",
     "image": "/products/gg-pdp/ally-waterproof-jacket-black-cool-grey-white/1.jpg",
@@ -15199,7 +15093,7 @@
     ],
     "hoverImage": "/products/gg-pdp/ally-waterproof-jacket-black-cool-grey-white/2.jpg",
     "accent": "#1A2E28",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 185.4,
     "sku": "A01000079369001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/ally-waterproof-jacket-black-cool-grey-white",
@@ -15584,9 +15478,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-ally-waterproof-jacket-navy-cool-grey-white-s",
@@ -15611,9 +15503,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-ally-waterproof-jacket-navy-cool-grey-white-m",
@@ -15638,9 +15528,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-ally-waterproof-jacket-navy-cool-grey-white-l",
@@ -15665,9 +15553,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-ally-waterproof-jacket-navy-cool-grey-white-xl",
@@ -15692,9 +15578,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-ally-waterproof-jacket-navy-cool-grey-white-xxl",
@@ -15719,9 +15603,7 @@
         "colorKey": "navy-cool-grey-white",
         "colorNameKo": "네이비 Cool 그레이 화이트",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -16087,13 +15969,10 @@
     "price": 472000,
     "compareAtPrice": 926000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "알파 팬츠는 조임끈, 신축성 있는 허리 등 디테일이 특징으로 편안하고 착용하기 쉽습니다. 다리 밑단에는 내구성을 보장하는 Techsteel™ 패브릭이 포함되어 있으며, 내마모성을 높이기 위해 분할된 안쪽 솔기가 있습니다. 양털 안감 처리된 앞면 포켓과 뒷면 포켓이 특징입니다. 이 바지는 수십 년간 고성능 골프 의류를 디자인한 결과입니다. 건조한 상태를 유지하도록 디자인된 첨단 남성용 방수 골프 바지를 만나보세요. 알파는 남성용 DRYVR™ 방수 골프팬츠입니다. GORE-TEX C-knit™로 제작된 이 신축성 있는 원단은 부드러운 감촉을 갖고 있어 아래 의류 위로 쉽게 미끄러집니다. 이 바지는 완전 방수 및 방풍 기능을 갖추고 있으면서도 가볍고 통기성이 뛰어납니다. 빗속에서 정기적으로 골프를 친다면 알파 남성용 방수 골프 바지가 마음에 드실 것입니다.",
     "image": "/products/gg-pdp/alpha-waterproof-pants-black/1.jpg",
@@ -16107,7 +15986,7 @@
     ],
     "hoverImage": "/products/gg-pdp/alpha-waterproof-pants-black/2.jpg",
     "accent": "#24302A",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 214.5,
     "sku": "A01000129403001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/alpha-waterproof-pants-black",
@@ -16190,9 +16069,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alpha-waterproof-pants-black-m",
@@ -16217,9 +16094,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alpha-waterproof-pants-black-l",
@@ -16244,9 +16119,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alpha-waterproof-pants-black-xl",
@@ -16271,9 +16144,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alpha-waterproof-pants-black-xxl",
@@ -16298,9 +16169,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-alpha-waterproof-pants-black-3xl",
@@ -16325,9 +16194,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -19193,7 +19060,7 @@
         ],
         "hoverImage": "/products/gg-pdp/angie-waterproof-golf-pants-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/angie-waterproof-golf-pants-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "S - Short",
@@ -21980,7 +21847,7 @@
         ],
         "hoverImage": "/products/gg-pdp/arlo-waterproof-golf-jacket-black-royal-blue/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/arlo-waterproof-golf-jacket-black-royal-blue",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black-royal-blue",
         "colorNameKo": "블랙 로열 블루",
         "size": "M",
@@ -22772,13 +22639,10 @@
     "price": 398000,
     "compareAtPrice": 652000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "우리는 골프 코스에 약간의 색상을 사용하는 것을 좋아합니다. 이것이 바로 암스트롱이 클래식 톤과 밝은 계절 색상을 특징으로 하는 다양한 색상 차단 옵션을 제공하는 이유입니다. 골프 친화적인 기능으로 디자인된 암스트롱은 조절 가능한 가슴 너비, 전면 포켓, 부분적으로 신축성 있는 커프스, 모양이 잡힌 소매가 있어 자유로운 움직임이 가능합니다. 편안함, 움직임의 용이성 및 스타일에 중점을 둔 암스트롱 방수 골프 재킷은 진지한 골퍼를 위해 설계(및 테스트)되었습니다. 지루한 방수 골프 재킷이 마음에 들지 않는다면 완벽한 방수, 방풍 및 통기성이 뛰어난 매끄러운 풀 지퍼 재킷인 암스트롱을 확인해 보세요. 가볍고 포장하기 쉬운 프리미엄 첨단 소재인 GORE-TEX Paclite®로 제작되어 비가 내리지 않을 때 골프 가방 안에서 시간을 보내는 골프 재킷에 완벽한 원단입니다. 수상 경력에 빛나는 골프 비옷을 제작한 30년 이상의 경험과 세계 최고의 방수 소재를 활용한 갈빈 그린 DRYVR™ 제품군은 귀하의 게임에 혁명을 일으키도록 설계된 방수 골프 비옷 컬렉션입니다.",
     "image": "/products/gg-pdp/armstrong-waterproof-amazing-blue/1.jpg",
@@ -22798,7 +22662,7 @@
     ],
     "hoverImage": "/products/gg-pdp/armstrong-waterproof-amazing-blue/2.jpg",
     "accent": "#2A4038",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 179.4,
     "sku": "G12029994B4",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/armstrong-waterproof-amazing-blue",
@@ -23028,9 +22892,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-m",
@@ -23055,9 +22917,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-l",
@@ -23082,9 +22942,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-xl",
@@ -23109,9 +22967,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-xxl",
@@ -23136,9 +22992,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-base-3xl",
@@ -23163,9 +23017,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-black-white-red-s",
@@ -23340,9 +23192,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-cool-grey-m",
@@ -23367,9 +23217,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-cool-grey-l",
@@ -23394,9 +23242,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-cool-grey-xl",
@@ -23421,9 +23267,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-cool-grey-xxl",
@@ -23448,9 +23292,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-cool-grey-3xl",
@@ -23475,9 +23317,7 @@
         "colorKey": "black-sharkskin-cool-grey",
         "colorNameKo": "블랙 Sharkskin Cool 그레이",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-s",
@@ -23502,9 +23342,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-m",
@@ -23529,9 +23367,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-l",
@@ -23556,9 +23392,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-xl",
@@ -23583,9 +23417,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-xxl",
@@ -23610,9 +23442,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-cool-grey-3xl",
@@ -23637,9 +23467,7 @@
         "colorKey": "cool-grey",
         "colorNameKo": "Cool 그레이",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-s",
@@ -23664,9 +23492,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-m",
@@ -23691,9 +23517,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-l",
@@ -23718,9 +23542,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-xl",
@@ -23745,9 +23567,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-xxl",
@@ -23772,9 +23592,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-forged-iron-red-white-3xl",
@@ -23799,9 +23617,7 @@
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -23813,13 +23629,10 @@
     "price": 491000,
     "compareAtPrice": 694000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "골프 친화적인 기능으로 디자인된 암스트롱은 조절 가능한 가슴 너비, 전면 포켓, 부분적으로 신축성 있는 커프스, 모양이 잡힌 소매가 있어 자유로운 움직임이 가능합니다. 편안함, 움직임의 용이성 및 스타일에 중점을 둔 암스트롱 방수 골프 재킷은 진지한 골퍼를 위해 설계(및 테스트)되었습니다. 지루한 방수 골프 재킷이 마음에 들지 않는다면 완벽한 방수, 방풍 및 통기성이 뛰어난 매끄러운 풀 지퍼 재킷인 암스트롱을 확인해 보세요. 가볍고 포장하기 쉬운 프리미엄 첨단 소재인 GORE-TEX Paclite®로 제작되어 비가 내리지 않을 때 골프 가방 안에서 시간을 보내는 골프 재킷에 완벽한 원단입니다. 수상 경력에 빛나는 골프 비옷을 제작한 30년 이상의 경험과 세계 최고의 방수 소재를 활용한 갈빈 그린 DRYVR™ 제품군은 귀하의 게임에 혁명을 일으키도록 설계된 방수 골프 비옷 컬렉션입니다.",
     "image": "/products/gg-pdp/armstrong-waterproof-jacket-black-sharkskin/1.jpg",
@@ -23839,7 +23652,7 @@
     ],
     "hoverImage": "/products/gg-pdp/armstrong-waterproof-jacket-black-sharkskin/2.jpg",
     "accent": "#2F5A3E",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 223.3,
     "sku": "A01000059350001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/armstrong-waterproof-jacket-black-sharkskin",
@@ -23919,9 +23732,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-m",
@@ -23946,9 +23757,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-l",
@@ -23973,9 +23782,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-xl",
@@ -24000,9 +23807,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-xxl",
@@ -24027,9 +23832,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-black-sharkskin-3xl",
@@ -24054,9 +23857,7 @@
         "colorKey": "black-sharkskin",
         "colorNameKo": "블랙 Sharkskin",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-armstrong-waterproof-jacket-navy-white-s",
@@ -25043,13 +24844,10 @@
     "price": 335000,
     "compareAtPrice": 545000,
     "category": "sports",
-    "subcategory": "gg-men",
-    "ggCollections": [
-      "gg-men"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-men"
+      "galvin-green"
     ],
     "descriptionKo": "Arthur 남성용 GORE-TEX 골프 바지는 골프 코스에서 편안함과 자유로운 움직임을 최적화하는 기능으로 디자인되었습니다. 신축성 있는 원단은 퍼팅 라인을 읽기 위해 무릎을 구부릴 때 이상적입니다. 조절 가능한 다리 너비와 신축성 있는 허리로 완벽한 핏을 쉽게 얻을 수 있으며, 안감이 있는 앞면 포켓과 뒷면 포켓이 있어 실용성이 뛰어납니다. 다양한 색상으로 제공되는 Arthur 팬츠는 비오는 날에 이상적인 남성용 GORE-TEX 골프 팬츠입니다. 빗속에서 골프를 칠 계획이신가요? 이 인기 있는 남성용 DRYVR™ 기술 골프 바지는 매우 가벼운 신축성 소재로 제작되어 완전 방수, 방풍, 통기성이 뛰어나고 매우 가볍습니다. 무게가 320그램 또는 11온스에 불과한 이 GORE-TEX Paclite® 바지는 게임 중에 부담을 주거나 가방에 너무 많은 무게를 추가하지 않습니다. 이 바지는 갈빈 그린의 정교한 골프 레이어링 시스템의 일부를 구성하며 일반 바지 또는 베이스 레이어 위에 착용하도록 디자인되었습니다. DRYVR™를 만나보세요 — 백만 번 이상 골퍼들의 신뢰를 받아온 최첨단 프리미엄 골프 비옷입니다.",
     "image": "/products/gg-pdp/arthur-waterproof-pants-black/1.jpg",
@@ -25151,9 +24949,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M - Short",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-l-short",
@@ -25178,9 +24974,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L - Short",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xl-short",
@@ -25205,9 +24999,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL - Short",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xxl-short",
@@ -25232,9 +25024,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL - Short",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-3xl-short",
@@ -25259,9 +25049,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL - Short",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-s-regular",
@@ -25286,9 +25074,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-m-regular",
@@ -25313,9 +25099,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-l-regular",
@@ -25340,9 +25124,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xl-regular",
@@ -25367,9 +25149,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xxl-regular",
@@ -25394,9 +25174,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-3xl-regular",
@@ -25421,9 +25199,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL - Regular",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-s-long",
@@ -25448,9 +25224,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "S - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-m-long",
@@ -25475,9 +25249,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "M - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-l-long",
@@ -25502,9 +25274,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "L - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xl-long",
@@ -25529,9 +25299,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-xxl-long",
@@ -25556,9 +25324,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-black-3xl-long",
@@ -25583,9 +25349,7 @@
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "3XL - Long",
-        "ggCollections": [
-          "gg-men"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-arthur-waterproof-pants-white-m-short",
@@ -27695,13 +27459,10 @@
     "price": 491000,
     "compareAtPrice": 694000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "Axley는 골프를 치는 동안 편안함과 자유로운 움직임을 위해 디자인된 하이테크 남성용 하프 지퍼 골프 레인 재킷입니다. 조절 가능한 커프스, 가슴 너비를 조절할 수 있는 가슴 탭, 쉽게 움직일 수 있는 형태의 소매, 밑단의 신축성 있는 조임끈이 특징인 이 재킷은 게임 성능을 향상시키기 위해 설계된 성능 중심의 디테일을 고려했습니다. 일부 골퍼는 하프 지퍼 재킷을 선호합니다. 지퍼가 밑단까지 확장되지 않으면 전면 중앙의 부피가 줄어들기 때문입니다. PFC(EC) 무료 발수 처리된 이 오래 지속되는 남성용 하프 지퍼 골프 레인 재킷은 앞으로 몇 년 동안 골프 코스에서 편안함을 유지할 수 있는 투자 제품입니다. Axley는 가벼운 메쉬 라이닝을 사용하여 외부 레이어와 라이닝 사이에 공기를 가두어 재킷의 보온성을 높입니다. bluesign® 승인을 받은 100% 방수, 방풍 및 통기성이 뛰어난 원단으로 제작되었습니다.\nPFC(EC) 무료 발수 처리된 이 오래 지속되는 남성용 하프 지퍼 골프 레인 재킷은 앞으로 몇 년 동안 골프 코스에서 편안함을 유지할 수 있는 투자 제품입니다.",
     "image": "/products/gg-pdp/axley-waterproof-jacket-black-forged-iron/1.jpg",
@@ -27721,7 +27482,7 @@
     ],
     "hoverImage": "/products/gg-pdp/axley-waterproof-jacket-black-forged-iron/2.jpg",
     "accent": "#24302A",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 223.3,
     "sku": "A01000029366001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/axley-waterproof-jacket-black-forged-iron",
@@ -27962,9 +27723,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-blue-white-m",
@@ -27989,9 +27748,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-blue-white-l",
@@ -28016,9 +27773,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-blue-white-xl",
@@ -28043,9 +27798,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-blue-white-xxl",
@@ -28070,9 +27823,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-blue-white-3xl",
@@ -28097,9 +27848,7 @@
         "colorKey": "navy-blue-white",
         "colorNameKo": "네이비 블루 화이트",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-axley-waterproof-jacket-navy-red-white-s",
@@ -30077,7 +29826,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dagmar-insulating-sweatshirt-navy-melange/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dagmar-insulating-sweatshirt-navy-melange",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy-melange",
         "colorNameKo": "네이비 Melange",
         "size": "XL",
@@ -31303,7 +31052,7 @@
       "gg-new-men",
       "gg-men"
     ],
-    "descriptionKo": "Danby는 깔끔하고 운동적인 미학으로 유선형의 따뜻함을 선사합니다. 편안함과 보호 기능을 더해주는 후드가 특징인 이 미드 레이어는 100% 재활용 INSULA™ 패브릭으로 제작되었으며 상쾌한 아침 라운드나 레이어드 플레이에 이상적인 보온 효과 #2를 제공합니다. 이 소재는 쉽게 늘어나고 효율적으로 통기성을 제공하여 코스에서 장시간 세션을 진행하는 동안 체온을 조절하는 데 도움이 됩니다. 속건성 기능과 섬세한 디테일 덕분에 Danby는 단순함, 편안함, 책임감 있는 디자인을 중시하는 골퍼에게 실용적인 제품입니다.",
+    "descriptionKo": "Danby는 깔끔하고 운동적인 미학으로 유선형의 따뜻함을 선사합니다. 편안함과 보호 기능을 더해주는 후드가 특징인 이 미드 레이어는 100% 재활용 INSULA™ 패브릭으로 제작되었으며 상쾌한 아침 라운드나 레이어드 플레이에 이상적인 보온 효과 #2를 제공합니다. 이 소재는 쉽게 늘어나고 효율적으로 통기성을 제공하여 코스에서 장시간 세션을 진행하는 동안 체온을 조절하는 데 도움이 됩니다. 속건성 기능과 미묘한 디테일로 인해 Danby는 단순함과 편안함을 중시하는 골퍼에게 실용적인 제품입니다.",
     "image": "/products/gg-pdp/danby-insulating-golf-mid-layer-jungle-green/1.jpg",
     "images": [
       "/products/gg-pdp/danby-insulating-golf-mid-layer-jungle-green/1.jpg",
@@ -31329,7 +31078,7 @@
     "storySections": [
       {
         "titleKo": "Danby - 보온 golf 미드레이어",
-        "bodyKo": "Danby는 깔끔하고 운동적인 미학으로 유선형의 따뜻함을 선사합니다. 편안함과 보호 기능을 더해주는 후드가 특징인 이 미드 레이어는 100% 재활용 INSULA™ 패브릭으로 제작되었으며 상쾌한 아침 라운드나 레이어드 플레이에 이상적인 보온 효과 #2를 제공합니다. 이 소재는 쉽게 늘어나고 효율적으로 통기성을 제공하여 코스에서 장시간 세션을 진행하는 동안 체온을 조절하는 데 도움이 됩니다. 속건성 기능과 섬세한 디테일 덕분에 Danby는 단순함, 편안함, 책임감 있는 디자인을 중시하는 골퍼에게 실용적인 제품입니다.",
+        "bodyKo": "Danby는 깔끔하고 운동적인 미학으로 유선형의 따뜻함을 선사합니다. 편안함과 보호 기능을 더해주는 후드가 특징인 이 미드 레이어는 100% 재활용 INSULA™ 패브릭으로 제작되었으며 상쾌한 아침 라운드나 레이어드 플레이에 이상적인 보온 효과 #2를 제공합니다. 이 소재는 쉽게 늘어나고 효율적으로 통기성을 제공하여 코스에서 장시간 세션을 진행하는 동안 체온을 조절하는 데 도움이 됩니다. 속건성 기능과 미묘한 디테일로 인해 Danby는 단순함과 편안함을 중시하는 골퍼에게 실용적인 제품입니다.",
         "image": "/products/gg-pdp/danby-insulating-golf-mid-layer-jungle-green/1.jpg",
         "reverse": false
       }
@@ -31485,7 +31234,7 @@
         ],
         "hoverImage": "/products/gg-pdp/danby-insulating-golf-mid-layer-jungle-green/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/danby-insulating-golf-mid-layer-jungle-green",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "jungle-green",
         "colorNameKo": "Jungle 그린",
         "size": "XXL",
@@ -31541,7 +31290,7 @@
         ],
         "hoverImage": "/products/gg-pdp/danby-insulating-golf-mid-layer-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/danby-insulating-golf-mid-layer-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "M",
@@ -34968,7 +34717,7 @@
         ],
         "hoverImage": "/products/gg-pdp/daxton-insulating-mid-layer-aqua-cool-grey-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/daxton-insulating-mid-layer-aqua-cool-grey-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "aqua-cool-grey-white",
         "colorNameKo": "Aqua Cool 그레이 화이트",
         "size": "L",
@@ -35631,7 +35380,7 @@
         ],
         "hoverImage": "/products/gg-pdp/daxton-insulating-mid-layer-forged-iron-red-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/daxton-insulating-mid-layer-forged-iron-red-white",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "forged-iron-red-white",
         "colorNameKo": "포지드 아이언 레드 화이트",
         "size": "XL",
@@ -37371,7 +37120,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dean-insulating-golf-mid-layer-black-white-royal-blue/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dean-insulating-golf-mid-layer-black-white-royal-blue",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "3XL",
@@ -39933,7 +39682,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dennis-insulating-mid-layer-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dennis-insulating-mid-layer-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XXL",
@@ -40497,7 +40246,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dexter-insulating-mid-layer-black-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dexter-insulating-mid-layer-black-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black-white",
         "colorNameKo": "블랙 화이트",
         "size": "XXL",
@@ -42824,7 +42573,7 @@
         ],
         "hoverImage": "/products/gg-pdp/diora-insulating-golf-mid-layer-storm-blue-melange/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/diora-insulating-golf-mid-layer-storm-blue-melange",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "storm-blue-melange",
         "colorNameKo": "스톰 블루 Melange",
         "size": "XL",
@@ -43709,7 +43458,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dixie-insulating-golf-mid-layer-crystal-blue-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-crystal-blue-white",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "crystal-blue-white",
         "colorNameKo": "크리스탈 블루 화이트",
         "size": "XL",
@@ -44155,7 +43904,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dixie-insulating-golf-mid-layer-storm-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dixie-insulating-golf-mid-layer-storm-blue-navy",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "storm-blue-navy",
         "colorNameKo": "스톰 블루 네이비",
         "size": "M",
@@ -45756,9 +45505,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dolly-insulating-mid-layer-red-s",
@@ -45782,9 +45529,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dolly-insulating-mid-layer-red-m",
@@ -45808,9 +45553,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dolly-insulating-mid-layer-red-l",
@@ -45834,9 +45577,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dolly-insulating-mid-layer-red-xl",
@@ -45860,9 +45601,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-dolly-insulating-mid-layer-red-xxl",
@@ -45886,9 +45625,7 @@
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -46789,9 +46526,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-donald-insulating-mid-layer-forged-iron-black-m",
@@ -46816,9 +46551,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-donald-insulating-mid-layer-forged-iron-black-l",
@@ -46843,9 +46576,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-donald-insulating-mid-layer-forged-iron-black-xl",
@@ -46870,9 +46601,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-donald-insulating-mid-layer-forged-iron-black-xxl",
@@ -46897,9 +46626,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-donald-insulating-mid-layer-forged-iron-black-3xl",
@@ -46924,9 +46651,7 @@
         "colorKey": "forged-iron-black",
         "colorNameKo": "포지드 아이언 블랙",
         "size": "3XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -47920,7 +47645,7 @@
         ],
         "hoverImage": "/products/gg-pdp/donnie-insulating-golf-sweatshirt-crystal-blue/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/donnie-insulating-golf-sweatshirt-crystal-blue",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "crystal-blue",
         "colorNameKo": "크리스탈 블루",
         "size": "M",
@@ -51665,7 +51390,7 @@
         ],
         "hoverImage": "/products/gg-pdp/drake-insulating-mid-layer-red/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/drake-insulating-mid-layer-red",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "red",
         "colorNameKo": "레드",
         "size": "3XL",
@@ -52128,7 +51853,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dunn-insulating-golf-sweatshirt-sand-white",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "sand-white",
         "colorNameKo": "샌드 화이트",
         "size": "M",
@@ -52155,7 +51880,7 @@
         ],
         "hoverImage": "/products/gg-pdp/dunn-insulating-golf-sweatshirt-sand-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/dunn-insulating-golf-sweatshirt-sand-white",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "sand-white",
         "colorNameKo": "샌드 화이트",
         "size": "L",
@@ -53335,7 +53060,7 @@
         ],
         "hoverImage": "/products/gg-pdp/edwin-thermal-base-layer-top-black-red/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/edwin-thermal-base-layer-top-black-red",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "black-red",
         "colorNameKo": "블랙 레드",
         "size": "XXL",
@@ -57624,7 +57349,7 @@
       "gg-new-men",
       "gg-men"
     ],
-    "descriptionKo": "Lamar는 세련된 INTERFACE-1™ 구조를 통해 현대적인 코어 워밍 솔루션을 선보입니다. Thermore® Invisiloft ®, 초박형 재활용 패딩은 이동성을 제한하지 않고 보온성을 강화하는 동시에 방풍 및 발수성 외장은 갑작스러운 날씨 변화로부터 보호합니다. 섬세한 패널 디테일과 깔끔한 ​​전면 지퍼가 조끼에 현대적인 매력을 더해줍니다. 통기성이 뛰어나고 내구성이 뛰어나며 책임감 있게 제작된 Lamar는 코스 안팎의 과도기적 조건에 쉽게 적응합니다.",
+    "descriptionKo": "Lamar는 세련된 INTERFACE-1™ 구조를 통해 현대적인 코어 워밍 솔루션을 선보입니다. Thermore® Invisiloft® 얇은 재활용 패딩은 이동성을 제한하지 않으면서 보온성을 강화하는 동시에 방풍, 발수성 외장은 갑작스러운 날씨 변화로부터 보호합니다. 섬세한 패널 디테일과 깔끔한 ​​전면 지퍼가 조끼에 현대적인 매력을 더해줍니다. 통기성과 내구성이 뛰어난 Lamar는 코스 안팎의 과도기적 조건에 쉽게 적응합니다.",
     "image": "/products/gg-pdp/lamar-windproof-and-water-repellent-golf-vest-jungle-green/1.jpg",
     "images": [
       "/products/gg-pdp/lamar-windproof-and-water-repellent-golf-vest-jungle-green/1.jpg",
@@ -57650,7 +57375,7 @@
     "storySections": [
       {
         "titleKo": "Lamar - 방풍 and 발수 골프 베스트",
-        "bodyKo": "Lamar는 세련된 INTERFACE-1™ 구조를 통해 현대적인 코어 워밍 솔루션을 선보입니다. Thermore® Invisiloft ®, 초박형 재활용 패딩은 이동성을 제한하지 않고 보온성을 강화하는 동시에 방풍 및 발수성 외장은 갑작스러운 날씨 변화로부터 보호합니다. 섬세한 패널 디테일과 깔끔한 ​​전면 지퍼가 조끼에 현대적인 매력을 더해줍니다. 통기성이 뛰어나고 내구성이 뛰어나며 책임감 있게 제작된 Lamar는 코스 안팎의 과도기적 조건에 쉽게 적응합니다.",
+        "bodyKo": "Lamar는 세련된 INTERFACE-1™ 구조를 통해 현대적인 코어 워밍 솔루션을 선보입니다. Thermore® Invisiloft® 얇은 재활용 패딩은 이동성을 제한하지 않으면서 보온성을 강화하는 동시에 방풍, 발수성 외장은 갑작스러운 날씨 변화로부터 보호합니다. 섬세한 패널 디테일과 깔끔한 ​​전면 지퍼가 조끼에 현대적인 매력을 더해줍니다. 통기성과 내구성이 뛰어난 Lamar는 코스 안팎의 과도기적 조건에 쉽게 적응합니다.",
         "image": "/products/gg-pdp/lamar-windproof-and-water-repellent-golf-vest-jungle-green/1.jpg",
         "reverse": false
       }
@@ -58908,7 +58633,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lane-windproof-and-water-repellent-pants-sharkskin/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lane-windproof-and-water-repellent-pants-sharkskin",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "34/34",
@@ -59628,7 +59353,7 @@
         ],
         "hoverImage": "/products/gg-pdp/larissa-windproof-and-water-repellent-jacket-navy-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/larissa-windproof-and-water-repellent-jacket-navy-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy-white",
         "colorNameKo": "네이비 화이트",
         "size": "L",
@@ -61695,7 +61420,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lawrence-windproof-and-water-repellent-jacket-blue-navy-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lawrence-windproof-and-water-repellent-jacket-blue-navy-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "blue-navy-white",
         "colorNameKo": "블루 네이비 화이트",
         "size": "3XL",
@@ -63303,7 +63028,7 @@
       "gg-new-men",
       "gg-men"
     ],
-    "descriptionKo": "날카로운 칼라, 구조적인 솔기, 기술적인 앞면 가슴 지퍼 포켓으로 정의된 자신감 넘치는 미적 감각을 지닌 Legend가 탄생했습니다. INTERFACE-1™ 원단은 방풍 보호 기능과 발수 마감 처리를 제공하는 동시에 활동적인 라운드에서 통기성을 유지합니다. 재활용 나일론은 책임감 있는 발자국으로 내구성을 제공합니다. 멋진 전환과 활발한 라운드를 위해 디자인된 Legend는 자유로운 움직임과 현대적인 스타일을 중시하는 플레이어를 위한 정교한 아우터 레이어로 돋보입니다.",
+    "descriptionKo": "날카로운 칼라, 구조적인 솔기, 기술적인 앞면 가슴 지퍼 포켓으로 정의된 자신감 넘치는 미학을 갖춘 Legend가 출시되었습니다. INTERFACE-1™ 원단은 방풍 보호 기능과 발수 마감 처리를 제공하는 동시에 활동적인 라운드에서 통기성을 유지합니다. 재활용 나일론은 내구성을 제공합니다. 멋진 전환과 활발한 라운드를 위해 디자인된 Legend는 자유로운 움직임과 현대적인 스타일을 중시하는 플레이어를 위한 정교한 아우터 레이어로 돋보입니다.",
     "image": "/products/gg-pdp/legend-windproof-and-water-repellent-golf-shirt-jungle-green/1.jpg",
     "images": [
       "/products/gg-pdp/legend-windproof-and-water-repellent-golf-shirt-jungle-green/1.jpg",
@@ -63329,7 +63054,7 @@
     "storySections": [
       {
         "titleKo": "Legend - 방풍 and 발수 골프 셔츠",
-        "bodyKo": "날카로운 칼라, 구조적인 솔기, 기술적인 앞면 가슴 지퍼 포켓으로 정의된 자신감 넘치는 미적 감각을 지닌 Legend가 탄생했습니다. INTERFACE-1™ 원단은 방풍 보호 기능과 발수 마감 처리를 제공하는 동시에 활동적인 라운드에서 통기성을 유지합니다. 재활용 나일론은 책임감 있는 발자국으로 내구성을 제공합니다. 멋진 전환과 활발한 라운드를 위해 디자인된 Legend는 자유로운 움직임과 현대적인 스타일을 중시하는 플레이어를 위한 정교한 아우터 레이어로 돋보입니다.",
+        "bodyKo": "날카로운 칼라, 구조적인 솔기, 기술적인 앞면 가슴 지퍼 포켓으로 정의된 자신감 넘치는 미학을 갖춘 Legend가 출시되었습니다. INTERFACE-1™ 원단은 방풍 보호 기능과 발수 마감 처리를 제공하는 동시에 활동적인 라운드에서 통기성을 유지합니다. 재활용 나일론은 내구성을 제공합니다. 멋진 전환과 활발한 라운드를 위해 디자인된 Legend는 자유로운 움직임과 현대적인 스타일을 중시하는 플레이어를 위한 정교한 아우터 레이어로 돋보입니다.",
         "image": "/products/gg-pdp/legend-windproof-and-water-repellent-golf-shirt-jungle-green/1.jpg",
         "reverse": false
       }
@@ -63884,10 +63609,13 @@
     "price": 388000,
     "compareAtPrice": 545000,
     "category": "sports",
-    "subcategory": "gg-accessories",
-    "ggCollections": [],
+    "subcategory": "gg-sale",
+    "ggCollections": [
+      "gg-sale"
+    ],
     "tags": [
-      "galvin-green"
+      "galvin-green",
+      "gg-sale"
     ],
     "descriptionKo": "Lennon은 보온성을 더해주는 Thermore® 패딩이 적용된 하이테크 골프용 윈드브레이커로, 스포티한 뒷면 스트라이프가 특징이며 대담한 대비 색상 또는 솔리드 네이비 색상으로 제공됩니다. 100% 재활용 폴리에스터와 PET 멤브레인을 사용한 INTERFACE-1™ 기술로 제작된 이 제품은 방풍, 발수 및 통기성이 뛰어납니다. bluesign® 승인 스트레치 패브릭은 자유로운 움직임을 제공하며, 전면 포켓과 신축성 있는 조임끈 밑단은 실용적인 편안함을 보장합니다. 최적의 핏과 Warming Effect #3 단열재를 위해 재배치된 측면 솔기를 통해 Lennon은 보호를 유지하고 최상의 성능을 발휘합니다.",
     "image": "/products/gg-pdp/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue/1.jpg",
@@ -63901,7 +63629,7 @@
     ],
     "hoverImage": "/products/gg-pdp/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue/2.jpg",
     "accent": "#24302A",
-    "badge": null,
+    "badge": "Sale",
     "gbpPrice": 174.3,
     "sku": "B01000458743001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue",
@@ -63974,7 +63702,9 @@
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "S",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue-m",
@@ -63999,7 +63729,9 @@
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "M",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue-l",
@@ -64024,7 +63756,9 @@
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "L",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue-xl",
@@ -64049,7 +63783,9 @@
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "XL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       },
       {
         "id": "gg-lennon-windproof-and-water-repellant-golf-jacket-black-white-royal-blue-xxl",
@@ -64074,7 +63810,9 @@
         "colorKey": "black-white-royal-blue",
         "colorNameKo": "블랙 화이트 로열 블루",
         "size": "XXL",
-        "ggCollections": []
+        "ggCollections": [
+          "gg-sale"
+        ]
       }
     ]
   },
@@ -65864,7 +65602,7 @@
         ],
         "hoverImage": "/products/gg-pdp/leora-windproof-and-water-repellent-jacket-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/leora-windproof-and-water-repellent-jacket-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "XL",
@@ -66798,7 +66536,7 @@
         ],
         "hoverImage": "/products/gg-pdp/levana-windproof-and-water-repellent-pants-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/levana-windproof-and-water-repellent-pants-black",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "black",
         "colorNameKo": "블랙",
         "size": "42",
@@ -69912,7 +69650,7 @@
         ],
         "hoverImage": "/products/gg-pdp/lloyd-windproof-and-water-repellant-golf-jacket-navy-red-white/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/lloyd-windproof-and-water-repellant-golf-jacket-navy-red-white",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy-red-white",
         "colorNameKo": "네이비 레드 화이트",
         "size": "L",
@@ -70894,7 +70632,7 @@
         ],
         "hoverImage": "/products/gg-pdp/london-windproof-and-water-repellent-golf-jacket-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/london-windproof-and-water-repellent-golf-jacket-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "S",
@@ -71635,7 +71373,7 @@
         ],
         "hoverImage": "/products/gg-pdp/luca-windproof-and-water-repellent-golf-vest-orange-black/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/luca-windproof-and-water-repellent-golf-vest-orange-black",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "orange-black",
         "colorNameKo": "오렌지 블랙",
         "size": "XXL",
@@ -72015,13 +71753,10 @@
     "price": 296000,
     "compareAtPrice": 482000,
     "category": "sports",
-    "subcategory": "gg-sale",
-    "ggCollections": [
-      "gg-sale"
-    ],
+    "subcategory": "gg-accessories",
+    "ggCollections": [],
     "tags": [
-      "galvin-green",
-      "gg-sale"
+      "galvin-green"
     ],
     "descriptionKo": "갈빈 그린의 INTERFACE-1™ 제품군은 추운 날씨, 바람, 약한 비 등 일반적인 골프 조건에서 골퍼에게 의류를 제공하도록 설계되었습니다. 비바람으로부터 보호하도록 디자인된 첨단 패딩 처리된 여성용 골프 조끼 Lucille을 만나보세요. 통기성이 뛰어나고 신축성이 뛰어난 가벼운 소재로 제작된 이 제품은 골프 코스에서 매우 실용적인 제품으로, 좋아하는 미드레이어, 재킷, 셔츠와 함께 레이어드할 수 있습니다. bluesign® 승인 INTERFACE-1™ 패브릭으로 제작된 Lucille은 방풍 및 방수 기능을 갖추고 있습니다. 디테일에는 전면 포켓, 양방향 전면 지퍼, 밑단의 신축성 있는 조임끈이 포함됩니다. 이 패딩 처리된 여성용 골프 조끼는 측면 솔기의 위치가 조정되어 최적의 편안함을 제공하고 스윙하는 동안 마찰을 줄입니다.",
     "image": "/products/gg-pdp/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue/1.jpg",
@@ -72035,7 +71770,7 @@
     ],
     "hoverImage": "/products/gg-pdp/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue/2.jpg",
     "accent": "#1A2428",
-    "badge": "Sale",
+    "badge": null,
     "gbpPrice": 131.4,
     "sku": "B01000269645001",
     "sourceUrl": "https://www.galvingreen.com/en-gb/products/lucille-windproof-and-water-repellent-golf-vest-alaskan-blue",
@@ -72115,9 +71850,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "XS",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-lucille-windproof-and-water-repellent-golf-vest-alaskan-blue-s",
@@ -72142,9 +71875,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "S",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-lucille-windproof-and-water-repellent-golf-vest-alaskan-blue-m",
@@ -72169,9 +71900,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "M",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-lucille-windproof-and-water-repellent-golf-vest-alaskan-blue-l",
@@ -72196,9 +71925,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "L",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-lucille-windproof-and-water-repellent-golf-vest-alaskan-blue-xl",
@@ -72223,9 +71950,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "XL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-lucille-windproof-and-water-repellent-golf-vest-alaskan-blue-xxl",
@@ -72250,9 +71975,7 @@
         "colorKey": "blue",
         "colorNameKo": "블루",
         "size": "XXL",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
@@ -78266,7 +77989,7 @@
         ],
         "hoverImage": "/products/gg-pdp/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/marielle-breathable-golf-skirt-with-inner-shorts-crystal-blue-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "crystal-blue-navy",
         "colorNameKo": "크리스탈 블루 네이비",
         "size": "XL",
@@ -85758,7 +85481,7 @@
         ],
         "hoverImage": "/products/gg-pdp/medley-breathable-short-sleeve-golf-shirt-crystal-blue-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/medley-breathable-short-sleeve-golf-shirt-crystal-blue-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "crystal-blue-navy",
         "colorNameKo": "크리스탈 블루 네이비",
         "size": "M",
@@ -87465,7 +87188,7 @@
         ],
         "hoverImage": "/products/gg-pdp/melody-breathable-short-sleeve-shirt-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/melody-breathable-short-sleeve-shirt-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XL",
@@ -101112,7 +100835,7 @@
         ],
         "hoverImage": "/products/gg-pdp/nicci-breathable-and-stretchy-leggings-navy/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/nicci-breathable-and-stretchy-leggings-navy",
-        "inStock": true,
+        "inStock": false,
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "XL",
@@ -107823,7 +107546,7 @@
         ],
         "hoverImage": "/products/gg-pdp/noah-breathable-pants-sharkskin/2.jpg",
         "sourceUrl": "https://www.galvingreen.com/en-gb/products/noah-breathable-pants-sharkskin",
-        "inStock": false,
+        "inStock": true,
         "colorKey": "grey",
         "colorNameKo": "그레이",
         "size": "34/30",
@@ -112325,9 +112048,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "30",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-32",
@@ -112352,9 +112073,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "32",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-34",
@@ -112379,9 +112098,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "34",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-36",
@@ -112406,9 +112123,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "36",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-38",
@@ -112433,9 +112148,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "38",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-40",
@@ -112460,9 +112173,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "40",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       },
       {
         "id": "gg-percy-breathable-shorts-navy-42",
@@ -112487,9 +112198,7 @@
         "colorKey": "navy",
         "colorNameKo": "네이비",
         "size": "42",
-        "ggCollections": [
-          "gg-sale"
-        ]
+        "ggCollections": []
       }
     ]
   },
