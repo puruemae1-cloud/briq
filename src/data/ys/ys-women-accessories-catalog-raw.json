@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-10-03T19:33:09.122868+00:00",
+  "scrapedAt": "2026-10-09T19:43:48.900301+00:00",
   "brand": "Saint Laurent",
   "hub": "women-acc",
   "category": "accessories",
   "family": "ys-women-accessories",
-  "officialNbAlgoliaHits": 204,
-  "officialUnionCount": 211,
+  "officialNbAlgoliaHits": 203,
+  "officialUnionCount": 212,
   "leaves": [
     {
       "id": "ys-women-acc-all",
@@ -1775,7 +1775,7 @@
         "ys-women-acc-all",
         "ys-women-belts"
       ],
-      "leafId": "ys-women-belts",
+      "leafId": "ys-women-acc-all",
       "gbpPrice": 540.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED CALF LE",
@@ -3969,76 +3969,6 @@
       ]
     },
     {
-      "id": "A007YLAAG5X1866",
-      "sku": "A007YLAAG5X1866",
-      "masterId": "A007YLAAG5X",
-      "name": "CASSANDRE reversible belt in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK AND DARK WET CLAY",
-      "colorCode": "1866",
-      "url": "https://www.ysl.com/en-gb/pr/cassandre-reversible-belt-in-smooth-leather-A007YLAAG5X1866.html",
-      "path": "pr/cassandre-reversible-belt-in-smooth-leather-A007YLAAG5X1866.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-women-accessories",
-        "ys-women-acc-all",
-        "ys-women-belts"
-      ],
-      "leafId": "ys-women-belts",
-      "gbpPrice": 595.0,
-      "inStock": true,
-      "compositions": null,
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/bb2dd55a-0b58-42af-bbeb-6c43837ee2e0/eCom/A007YLAAG5X1866_A.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/656210a8-cabb-4606-8b84-d692eddff715/eCom/A007YLAAG5X1866_B.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/29aaf003-aa07-4066-b8d1-e6d0d5621d93/eCom/A007YLAAG5X1866_C.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/f826bdac-893a-4f33-9508-e63d887296f5/eCom/A007YLAAG5X1866_D.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/asset/e8b3fdf3-869c-48a4-9806-2d857ed6d6ba/eCom/A007YLAAG5X1866_H.jpg?v=1"
-      ],
-      "description": "reversible belt featuring a square buckle and CASSANDRE loop.",
-      "shortDescription": [
-        "adjustable pin-buckle",
-        "bronze-tone hardware",
-        "width: 3 cm / 1.2\""
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_accessories",
-        "microCategory": "ysl_micro_women_belts",
-        "superMicroCategory": "ysl_super_micro_women_belts"
-      },
-      "sizes": [
-        {
-          "id": "814561714",
-          "value": "70",
-          "displayValue": "YSL 70 / GB 28",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "A007YLAAG5X1866",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/cassandre-reversible-belt-in-smooth-leather-A007YLAAG5X1866.html",
-          "hex": "000000"
-        },
-        {
-          "id": "A007YLAAG5X2905",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/cassandre-reversible-belt-in-smooth-leather-A007YLAAG5X2905.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/a007ylaag5x1866/1.jpg",
-        "/products/ys-pdp/a007ylaag5x1866/2.jpg",
-        "/products/ys-pdp/a007ylaag5x1866/3.jpg",
-        "/products/ys-pdp/a007ylaag5x1866/4.jpg",
-        "/products/ys-pdp/a007ylaag5x1866/5.jpg"
-      ]
-    },
-    {
       "id": "634437BOO0E1000",
       "sku": "634437BOO0E1000",
       "masterId": "634437BOO0E",
@@ -5334,7 +5264,7 @@
         "ys-women-acc-all",
         "ys-women-belts"
       ],
-      "leafId": "ys-women-belts",
+      "leafId": "ys-women-acc-all",
       "gbpPrice": 355.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED CALF LE",
@@ -17031,6 +16961,214 @@
         "/products/ys-pdp/8646083yt512900/2.jpg",
         "/products/ys-pdp/8646083yt512900/3.jpg",
         "/products/ys-pdp/8646083yt512900/4.jpg"
+      ]
+    },
+    {
+      "id": "634437DTI0W1000",
+      "sku": "634437DTI0W1000",
+      "masterId": "634437DTI0W",
+      "name": "CASSANDRE BELT IN GRAINED LEATHER",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-grained-leather-634437DTI0W1000.html",
+      "path": "pr/cassandre-belt-in-grained-leather-634437DTI0W1000.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-belts"
+      ],
+      "leafId": "ys-women-belts",
+      "gbpPrice": 450.0,
+      "inStock": true,
+      "compositions": "T 100% DOMESTICATED CALF LE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/79b6dd5a-5ccb-4c16-818d-76c676e14670/eCom/634437DTI0W1000_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/45b6836d-abf7-43ab-8032-dada78818b71/eCom/634437DTI0W1000_B.jpg?v=2"
+      ],
+      "description": "BELT WITH ADJUSTABLE SQUARE BUCKLE FEATURING A CASSANDRE LOOP.",
+      "shortDescription": [
+        "Dimensions: 3 cm / 1.2 inches",
+        "Bronze-toned metal hardware",
+        "Adjustable buckle closure"
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_belts",
+        "superMicroCategory": "ysl_super_micro_women_belts"
+      },
+      "sizes": [
+        {
+          "id": "810311304",
+          "value": "65",
+          "displayValue": "YSL 65 / GB 26",
+          "inStock": true
+        },
+        {
+          "id": "810299335",
+          "value": "70",
+          "displayValue": "YSL 70 / GB 28",
+          "inStock": true
+        },
+        {
+          "id": "810294217",
+          "value": "75",
+          "displayValue": "YSL 75 / GB 30",
+          "inStock": true
+        },
+        {
+          "id": "810294218",
+          "value": "80",
+          "displayValue": "YSL 80 / GB 32",
+          "inStock": true
+        },
+        {
+          "id": "810294219",
+          "value": "85",
+          "displayValue": "YSL 85 / GB 34",
+          "inStock": true
+        },
+        {
+          "id": "810294220",
+          "value": "90",
+          "displayValue": "YSL 90 / GB 36",
+          "inStock": true
+        },
+        {
+          "id": "810294221",
+          "value": "95",
+          "displayValue": "YSL 95 / GB 38",
+          "inStock": true
+        },
+        {
+          "id": "810303126",
+          "value": "100",
+          "displayValue": "YSL 100 / GB 100",
+          "inStock": true
+        },
+        {
+          "id": "810303127",
+          "value": "105",
+          "displayValue": "YSL 105 / GB 105",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "634437DTI0W1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-grained-leather-634437DTI0W1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/634437dti0w1000/1.jpg",
+        "/products/ys-pdp/634437dti0w1000/2.jpg"
+      ]
+    },
+    {
+      "id": "A005ABAAEJE1000",
+      "sku": "A005ABAAEJE1000",
+      "masterId": "A005ABAAEJE",
+      "name": "minimal belt in smooth leather",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/minimal-belt-in-smooth-leather-A005ABAAEJE1000.html",
+      "path": "pr/minimal-belt-in-smooth-leather-A005ABAAEJE1000.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-belts"
+      ],
+      "leafId": "ys-women-belts",
+      "gbpPrice": 445.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/92248605-c83c-4502-9b46-1c0de3ff35da/eCom/A005ABAAEJE1000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/fd663195-688c-4d7e-8bfa-d8d9aecb60c7/Original-Ecom/A005ABAAEJE1000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/bb9c20eb-3617-4e4b-a9f5-33a35b434e97/Original-Ecom/A005ABAAEJE1000_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f7d9ac7f-1959-4082-84b1-c518d389abec/eCom/A005ABAAEJE1000_H.jpg?v=1"
+      ],
+      "description": "belt featuring a minimal buckle engraved with the SAINT LAURENT signature.",
+      "shortDescription": [
+        "silver-tone hardware",
+        "adjustable pin-buckle closure",
+        "width: 3 cm / 1.2\""
+      ],
+      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured products, especially white and beige ones, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product in its protective flannel bag.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_accessories",
+        "microCategory": "ysl_micro_men_belts",
+        "superMicroCategory": "ysl_super_micro_men_belts"
+      },
+      "sizes": [
+        {
+          "id": "814395369",
+          "value": "70",
+          "displayValue": "YSL 70 / GB 28",
+          "inStock": true
+        },
+        {
+          "id": "814395370",
+          "value": "75",
+          "displayValue": "YSL 75 / GB 30",
+          "inStock": true
+        },
+        {
+          "id": "814395371",
+          "value": "80",
+          "displayValue": "YSL 80 / GB 32",
+          "inStock": true
+        },
+        {
+          "id": "814395372",
+          "value": "85",
+          "displayValue": "YSL 85 / GB 34",
+          "inStock": true
+        },
+        {
+          "id": "814395373",
+          "value": "90",
+          "displayValue": "YSL 90 / GB 36",
+          "inStock": true
+        },
+        {
+          "id": "814395374",
+          "value": "95",
+          "displayValue": "YSL 95 / GB 38",
+          "inStock": true
+        },
+        {
+          "id": "814395375",
+          "value": "100",
+          "displayValue": "YSL 100 / GB 100",
+          "inStock": true
+        },
+        {
+          "id": "814395376",
+          "value": "105",
+          "displayValue": "YSL 105 / GB 105",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A005ABAAEJE1000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/minimal-belt-in-smooth-leather-A005ABAAEJE1000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a005abaaeje1000/1.jpg",
+        "/products/ys-pdp/a005abaaeje1000/2.jpg",
+        "/products/ys-pdp/a005abaaeje1000/3.jpg",
+        "/products/ys-pdp/a005abaaeje1000/4.jpg"
       ]
     }
   ]

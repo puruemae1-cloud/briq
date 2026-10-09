@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-10-03T19:31:12.394358+00:00",
+  "scrapedAt": "2026-10-09T19:40:12.494320+00:00",
   "brand": "Saint Laurent",
   "hub": "men-acc",
   "category": "accessories",
   "family": "ys-men-accessories",
   "officialNbAlgoliaHits": 156,
-  "officialUnionCount": 165,
+  "officialUnionCount": 160,
   "leaves": [
     {
       "id": "ys-men-acc-all",
@@ -711,7 +711,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 400.0,
       "inStock": true,
       "compositions": null,
@@ -807,7 +807,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 400.0,
       "inStock": true,
       "compositions": null,
@@ -903,7 +903,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 445.0,
       "inStock": true,
       "compositions": null,
@@ -1983,7 +1983,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 300.0,
       "inStock": true,
       "compositions": null,
@@ -2069,7 +2069,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 355.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED CALF LE",
@@ -2378,9 +2378,10 @@
       "collections": [
         "saint-laurent-accessories",
         "ys-men-accessories",
-        "ys-men-acc-all"
+        "ys-men-acc-all",
+        "ys-men-belts"
       ],
-      "leafId": "ys-men-acc-all",
+      "leafId": "ys-men-belts",
       "gbpPrice": 595.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED CALF LE",
@@ -2577,7 +2578,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 400.0,
       "inStock": true,
       "compositions": null,
@@ -2769,7 +2770,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 450.0,
       "inStock": true,
       "compositions": "T 100% DOMESTICATED LAMB LE",
@@ -2882,7 +2883,7 @@
         "ys-men-acc-all",
         "ys-men-belts"
       ],
-      "leafId": "ys-men-belts",
+      "leafId": "ys-men-acc-all",
       "gbpPrice": 480.0,
       "inStock": true,
       "compositions": null,
@@ -11838,518 +11839,6 @@
       ],
       "localImages": [
         "/products/ys-pdp/8589643y0019579/1.jpg"
-      ]
-    },
-    {
-      "id": "634440AAC8A1000",
-      "sku": "634440AAC8A1000",
-      "masterId": "634440AAC8A",
-      "name": "CASSANDRE belt in lambskin",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-lambskin-634440AAC8A1000.html",
-      "path": "pr/cassandre-belt-in-lambskin-634440AAC8A1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-belts"
-      ],
-      "leafId": "ys-men-belts",
-      "gbpPrice": 450.0,
-      "inStock": true,
-      "compositions": null,
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/443b5c18e7e00001/eCom-634440AAC8A1000_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/m/1476f60fe4dab0a6/eCom-634440AAC8A1000_B.jpg?v=2"
-      ],
-      "description": "belt with an adjustable square buckle and CASSANDRE loop.",
-      "shortDescription": [
-        "DIMENSIONS: 3 CM / 1.1\"",
-        "silver-toned hardware",
-        "adjustable buckle closure"
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_accessories",
-        "microCategory": "ysl_micro_men_belts",
-        "superMicroCategory": "ysl_super_micro_men_belts"
-      },
-      "sizes": [
-        {
-          "id": "813592053",
-          "value": "70",
-          "displayValue": "YSL 70 / GB 28",
-          "inStock": true
-        },
-        {
-          "id": "813591738",
-          "value": "75",
-          "displayValue": "YSL 75 / GB 30",
-          "inStock": true
-        },
-        {
-          "id": "813587578",
-          "value": "80",
-          "displayValue": "YSL 80 / GB 32",
-          "inStock": true
-        },
-        {
-          "id": "813587579",
-          "value": "85",
-          "displayValue": "YSL 85 / GB 34",
-          "inStock": true
-        },
-        {
-          "id": "813587580",
-          "value": "90",
-          "displayValue": "YSL 90 / GB 36",
-          "inStock": true
-        },
-        {
-          "id": "813587581",
-          "value": "95",
-          "displayValue": "YSL 95 / GB 38",
-          "inStock": true
-        },
-        {
-          "id": "813587582",
-          "value": "100",
-          "displayValue": "YSL 100 / GB 100",
-          "inStock": true
-        },
-        {
-          "id": "813587600",
-          "value": "105",
-          "displayValue": "YSL 105 / GB 105",
-          "inStock": true
-        },
-        {
-          "id": "813589143",
-          "value": "110",
-          "displayValue": "YSL 110 / GB 110",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "634440AAC8A1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-lambskin-634440AAC8A1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/634440aac8a1000/1.jpg",
-        "/products/ys-pdp/634440aac8a1000/2.jpg"
-      ]
-    },
-    {
-      "id": "756409AACJG1000",
-      "sku": "756409AACJG1000",
-      "masterId": "756409AACJG",
-      "name": "oval buckle thin belt in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJG1000.html",
-      "path": "pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJG1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-belts"
-      ],
-      "leafId": "ys-men-belts",
-      "gbpPrice": 320.0,
-      "inStock": true,
-      "compositions": "T 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/4d71222fc2181381/eCom-756409AACJG1000_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/5380984a-f161-489a-8f3b-140fbd30577e/Original-Ecom/756409AACJG1000_Y.jpg?v=1",
-        "https://saint-laurent.dam.kering.com/m/108e66078664a974/eCom-756409AACJG1000_B.jpg?v=2"
-      ],
-      "description": "thin belt with an oval buckle engraved with the SAINT LAURENT PARIS signature.",
-      "shortDescription": [
-        "Dimensions: 1.5 cm / 0.6 inches",
-        "gold-toned hardware",
-        "adjustable buckle closure"
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_accessories",
-        "microCategory": "ysl_micro_women_belts",
-        "superMicroCategory": "ysl_super_micro_women_belts"
-      },
-      "sizes": [
-        {
-          "id": "813086995",
-          "value": "65",
-          "displayValue": "YSL 65 / GB 26",
-          "inStock": true
-        },
-        {
-          "id": "813086512",
-          "value": "70",
-          "displayValue": "YSL 70 / GB 28",
-          "inStock": true
-        },
-        {
-          "id": "813086513",
-          "value": "75",
-          "displayValue": "YSL 75 / GB 30",
-          "inStock": true
-        },
-        {
-          "id": "813086514",
-          "value": "80",
-          "displayValue": "YSL 80 / GB 32",
-          "inStock": true
-        },
-        {
-          "id": "813086515",
-          "value": "85",
-          "displayValue": "YSL 85 / GB 34",
-          "inStock": true
-        },
-        {
-          "id": "813086516",
-          "value": "90",
-          "displayValue": "YSL 90 / GB 36",
-          "inStock": true
-        },
-        {
-          "id": "813087241",
-          "value": "95",
-          "displayValue": "YSL 95 / GB 38",
-          "inStock": true
-        },
-        {
-          "id": "813090607",
-          "value": "100",
-          "displayValue": "YSL 100 / GB 100",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "756409AACJG6988",
-          "name": "Purple",
-          "url": "https://www.ysl.com/en-gb/pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJG6988.html",
-          "hex": "bd9e75"
-        },
-        {
-          "id": "756409AACJG1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJG1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/756409aacjg1000/1.jpg",
-        "/products/ys-pdp/756409aacjg1000/2.jpg",
-        "/products/ys-pdp/756409aacjg1000/3.jpg"
-      ]
-    },
-    {
-      "id": "756409AACJH1000",
-      "sku": "756409AACJH1000",
-      "masterId": "756409AACJH",
-      "name": "oval buckle thin belt in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJH1000.html",
-      "path": "pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJH1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-belts"
-      ],
-      "leafId": "ys-men-belts",
-      "gbpPrice": 320.0,
-      "inStock": true,
-      "compositions": "T 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/33b4ab2a9f945c37/eCom-756409AACJH1000_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/m/1ed94f31ec00739b/eCom-756409AACJH1000_B.jpg?v=2"
-      ],
-      "description": "thin belt with an oval buckle engraved with the SAINT LAURENT PARIS signature.",
-      "shortDescription": [
-        "Dimensions: 1.5 cm / 0.6 inches",
-        "silver-toned hardware",
-        "adjustable buckle closure"
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_women_accessories",
-        "microCategory": "ysl_micro_women_belts",
-        "superMicroCategory": "ysl_super_micro_women_belts"
-      },
-      "sizes": [
-        {
-          "id": "813086996",
-          "value": "65",
-          "displayValue": "YSL 65 / GB 26",
-          "inStock": true
-        },
-        {
-          "id": "813086517",
-          "value": "70",
-          "displayValue": "YSL 70 / GB 28",
-          "inStock": true
-        },
-        {
-          "id": "813086518",
-          "value": "75",
-          "displayValue": "YSL 75 / GB 30",
-          "inStock": true
-        },
-        {
-          "id": "813086519",
-          "value": "80",
-          "displayValue": "YSL 80 / GB 32",
-          "inStock": true
-        },
-        {
-          "id": "813086520",
-          "value": "85",
-          "displayValue": "YSL 85 / GB 34",
-          "inStock": true
-        },
-        {
-          "id": "813086521",
-          "value": "90",
-          "displayValue": "YSL 90 / GB 36",
-          "inStock": true
-        },
-        {
-          "id": "813088329",
-          "value": "95",
-          "displayValue": "YSL 95 / GB 38",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "756409AACJH1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/oval-buckle-thin-belt-in-smooth-leather-756409AACJH1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/756409aacjh1000/1.jpg",
-        "/products/ys-pdp/756409aacjh1000/2.jpg"
-      ]
-    },
-    {
-      "id": "839769AAEJE1000",
-      "sku": "839769AAEJE1000",
-      "masterId": "839769AAEJE",
-      "name": "FOLK belt in smooth leather",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/folk-belt-in-smooth-leather-839769AAEJE1000.html",
-      "path": "pr/folk-belt-in-smooth-leather-839769AAEJE1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-belts"
-      ],
-      "leafId": "ys-men-belts",
-      "gbpPrice": 445.0,
-      "inStock": true,
-      "compositions": null,
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/1bfec0bba5f33e99/eCom-839769AAEJE1000_A.jpg?v=3",
-        "https://saint-laurent.dam.kering.com/m/30150ec74e089aed/eCom-839769AAEJE1000_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/m/2a93a1896ea2d898/eCom-839769AAEJE1000_H.jpg?v=1"
-      ],
-      "description": "belt in lightly polished leather, featuring a folk buckle, SAINT LAURENT engraved metal loop, and pointed end tip.",
-      "shortDescription": [
-        "silver-tone hardware",
-        "adjustable buckle",
-        "Dimensions: 2.5 CM / 1\""
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_accessories",
-        "microCategory": "ysl_micro_men_belts",
-        "superMicroCategory": "ysl_super_micro_men_belts"
-      },
-      "sizes": [
-        {
-          "id": "813986837",
-          "value": "75",
-          "displayValue": "YSL 75 / GB 30",
-          "inStock": true
-        },
-        {
-          "id": "813986609",
-          "value": "80",
-          "displayValue": "YSL 80 / GB 32",
-          "inStock": true
-        },
-        {
-          "id": "813986610",
-          "value": "85",
-          "displayValue": "YSL 85 / GB 34",
-          "inStock": true
-        },
-        {
-          "id": "813986611",
-          "value": "90",
-          "displayValue": "YSL 90 / GB 36",
-          "inStock": true
-        },
-        {
-          "id": "813986838",
-          "value": "95",
-          "displayValue": "YSL 95 / GB 38",
-          "inStock": true
-        },
-        {
-          "id": "813986839",
-          "value": "100",
-          "displayValue": "YSL 100 / GB 100",
-          "inStock": true
-        },
-        {
-          "id": "813986840",
-          "value": "105",
-          "displayValue": "YSL 105 / GB 105",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "839769AAEJE1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/folk-belt-in-smooth-leather-839769AAEJE1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/839769aaeje1000/1.jpg",
-        "/products/ys-pdp/839769aaeje1000/2.jpg",
-        "/products/ys-pdp/839769aaeje1000/3.jpg"
-      ]
-    },
-    {
-      "id": "634440DTI0E1000",
-      "sku": "634440DTI0E1000",
-      "masterId": "634440DTI0E",
-      "name": "Cassandre BELT IN GRAINED LEATHER",
-      "color": "Black",
-      "microColor": "BLACK",
-      "colorCode": "1000",
-      "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-grained-leather-634440DTI0E1000.html",
-      "path": "pr/cassandre-belt-in-grained-leather-634440DTI0E1000.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-belts"
-      ],
-      "leafId": "ys-men-belts",
-      "gbpPrice": 450.0,
-      "inStock": true,
-      "compositions": "T 100% DOMESTICATED CALF LE",
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/m/45e1f4685d4d4485/eCom-634440DTI0E1000_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/m/2833f52783d3d9c/eCom-634440DTI0E1000_B.jpg?v=2"
-      ],
-      "description": "BELT WITH ADJUSTABLE SQUARE BUCKLE AND Cassandre LOOP.",
-      "shortDescription": [
-        "Dimensions: 3 CM / 1.1 INCHES",
-        "Oxidized nickel hardware",
-        "Adjustable buckle",
-        "this product can also be shipped under code 554773DTI0E1000"
-      ],
-      "productCare": "To maintain the value and appearance of your goods, please observe the following guidelines: - Avoid contact with water, oily substances, perfumes, make-up and other liquid, alcoholic or fatty substances. - Avoid using generic cleaning products such as shoe polish, trichlorethylene, oils, stain removers, alcohol and solvents. - Avoid contact with rough or abrasive surfaces. - Avoid allowing light-coloured products to come into contact with dark or brightly coloured clothing and vice versa. Colours may transfer from one object to another. - Light-coloured bags, especially white and beige bags, are particularly sensitive to light, dust and stains. - Avoid prolonged exposure to light, direct heat and humidity. Materials may be damaged, and their appearance altered. - In case of contact with water, gently pat the area to absorb moisture with a soft, neutral coloured cloth. Avoid excessive rubbing. - Store the product upright in its protective flannel bag. We recommend padding your bag with tissue paper to maintain its shape.",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_accessories",
-        "microCategory": "ysl_micro_men_belts",
-        "superMicroCategory": "ysl_super_micro_men_belts"
-      },
-      "sizes": [
-        {
-          "id": "809640983",
-          "value": "65",
-          "displayValue": "YSL 65 / GB 26",
-          "inStock": true
-        },
-        {
-          "id": "809640984",
-          "value": "70",
-          "displayValue": "YSL 70 / GB 28",
-          "inStock": true
-        },
-        {
-          "id": "809459031",
-          "value": "75",
-          "displayValue": "YSL 75 / GB 30",
-          "inStock": true
-        },
-        {
-          "id": "809457654",
-          "value": "80",
-          "displayValue": "YSL 80 / GB 32",
-          "inStock": true
-        },
-        {
-          "id": "809457655",
-          "value": "85",
-          "displayValue": "YSL 85 / GB 34",
-          "inStock": true
-        },
-        {
-          "id": "809457656",
-          "value": "90",
-          "displayValue": "YSL 90 / GB 36",
-          "inStock": true
-        },
-        {
-          "id": "809457657",
-          "value": "95",
-          "displayValue": "YSL 95 / GB 38",
-          "inStock": true
-        },
-        {
-          "id": "809457658",
-          "value": "100",
-          "displayValue": "YSL 100 / GB 100",
-          "inStock": true
-        },
-        {
-          "id": "809457659",
-          "value": "105",
-          "displayValue": "YSL 105 / GB 105",
-          "inStock": true
-        },
-        {
-          "id": "809458962",
-          "value": "110",
-          "displayValue": "YSL 110 / GB 110",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "634440DTI0E1000",
-          "name": "Black",
-          "url": "https://www.ysl.com/en-gb/pr/cassandre-belt-in-grained-leather-634440DTI0E1000.html",
-          "hex": "000000"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/634440dti0e1000/1.jpg",
-        "/products/ys-pdp/634440dti0e1000/2.jpg"
       ]
     },
     {
