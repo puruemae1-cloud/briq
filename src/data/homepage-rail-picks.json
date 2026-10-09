@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-09T20:02:06Z",
+  "generatedAt": "2026-10-09T23:11:58Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "di-657j80b1k17-x0400",
-        "di-654v20a3j61-x9000",
-        "di-657b87f7443-x8800",
-        "di-654v63a5i95-x4020"
+        "bv-a003brv6zf02201",
+        "bv-874364v6n602112",
+        "bv-875133v6ib02188",
+        "bv-871198v6or01010"
       ],
       "brands": [
-        "dior",
-        "dior",
-        "dior",
-        "dior"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "ce-356834582c-38no",
-        "ce-352193676c-38no",
-        "ce-352213958c-38no",
-        "ce-352213886c-36ps"
+        "di-3sn342abf-h014",
+        "di-kct351vvv-s20x",
+        "di-3sn342abf-h968",
+        "di-kct292qcs-s900"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "dior",
+        "dior",
+        "dior",
+        "dior"
       ]
     },
     "accessories": {
       "productIds": [
-        "gc-455447cpwp09085",
-        "gc-455448cpwp09085",
-        "gc-463088facyf4055",
-        "gc-463088facyf9753"
+        "vw-3g01003p-c006f-flag",
+        "vw-1f020001-w012o-giant-mac-andy-blue",
+        "vw-3101000h-c006d-sex",
+        "vw-8102002b-j009m-black"
       ],
       "brands": [
-        "gucci",
-        "gucci",
-        "gucci",
-        "gucci"
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood"
       ]
     },
     "sports": {
@@ -88,12 +88,6 @@
     }
   },
   "brands": {
-    "celine": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -101,10 +95,10 @@
       "watches"
     ],
     "dior": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ],
     "galvin-green": [
       "sports",
@@ -112,17 +106,23 @@
       "sports",
       "sports"
     ],
-    "gucci": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "vivienne-westwood": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "보테가-베네타": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ]
   },
   "overlaps": {},
