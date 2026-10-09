@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-09T00:08:01Z",
+  "generatedAt": "2026-10-09T09:00:54Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-oversized-brown-wool-twill-double-breasted-coat",
-        "ps-brown-crepe-viscose-wool-two-piece-suit",
-        "ps-men-s-dark-navy-signature-stripe-trim-polo-shirt",
-        "ps-green-two-tone-textured-cotton-blend-trousers"
+        "bv-a003brv6zf02201",
+        "bv-874364v6n602112",
+        "bv-875133v6ib02188",
+        "bv-871198v6or01010"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -32,44 +32,44 @@
     },
     "bags": {
       "productIds": [
-        "bv-857931v2hl03123",
-        "bv-855504v2hl12166",
-        "bv-855504v2hl11913",
-        "bv-857931v2hl08803"
+        "mb-xl-delilah",
+        "mb-woven-tote",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "ps-womens-black-campbell-boots",
+        "al-w153ff-140",
+        "al-w119fb-5571",
+        "al-w139ff-203"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "paul-smith",
+        "all-saints",
+        "all-saints",
+        "all-saints"
       ]
     },
     "accessories": {
       "productIds": [
-        "al-w378xf-5",
-        "al-w377xf-6760",
-        "al-w246xf-5",
-        "al-w108xf-5"
+        "bb-skinny-blooms-of-britain-silk-scarf",
+        "bb-skinny-check-cotton-towel",
+        "di-14cdo301i985-c540",
+        "di-34dbp923g153-c086"
       ],
       "brands": [
-        "all-saints",
-        "all-saints",
-        "all-saints",
-        "all-saints"
+        "burberry",
+        "burberry",
+        "dior",
+        "dior"
       ]
     },
     "sports": {
@@ -89,8 +89,11 @@
   },
   "brands": {
     "all-saints": [
-      "accessories",
-      "accessories",
+      "shoes",
+      "shoes",
+      "shoes"
+    ],
+    "burberry": [
       "accessories",
       "accessories"
     ],
@@ -100,6 +103,10 @@
       "watches",
       "watches"
     ],
+    "dior": [
+      "accessories",
+      "accessories"
+    ],
     "galvin-green": [
       "sports",
       "sports",
@@ -107,34 +114,19 @@
       "sports"
     ],
     "mulberry": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "paul-smith": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "보테가-베네타": [
       "bags",
       "bags",
       "bags",
       "bags"
     ],
     "paul-smith": [
+      "shoes"
+    ],
+    "보테가-베네타": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
-    ],
-    "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
     ]
   },
   "overlaps": {},
