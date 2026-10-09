@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30T08:25:07.162993+00:00",
+  "scrapedAt": "2026-10-09T19:45:18.577307+00:00",
   "brand": "Vivienne Westwood",
   "hub": "https://www.viviennewestwood.com/en-gb/women/jewellery/",
   "family": "vw-women-jewellery",
@@ -17507,6 +17507,585 @@
         "Jewellery",
         "Necklaces",
         "Feodora Pendant Necklace"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "6402001X-01P796--PLATINUM-BLUE-Glass-Eye",
+      "sku": "6402001X-01P796--PLATINUM-BLUE-Glass-Eye",
+      "title": "Deanna Ring",
+      "gbpPrice": 320.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/jewellery/rings/deanna-ring-platinum-blue-glass-eye/6402001X-01P796--PLATINUM-BLUE-Glass-Eye.html",
+      "leafId": "vw-women-rings",
+      "leafLabel": "Rings",
+      "leafLabelKo": "반지",
+      "collections": [
+        "vivienne-westwood-accessories",
+        "vw-accessories",
+        "vw-women-jewellery",
+        "vw-women-jewellery-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "The Deanna ring reimagines the house’s signature orb motif with an intricate blue glass eye, adding an ornate-inspired finish to the design. Crafted in platinum-tone plated sterling silver, the piece features a delicate band subtly engraved with the house’s signature lettering along the interior. Features platinum-tone platingPolished designSignature orb-shaped faceCut-out detailingThick bandEngraved inner bandFace height: 1.8cm Code: 6402001X-01P796--PLATINUM-BLUE-Glass-Eye",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>The Deanna ring reimagines the house’s signature orb motif with an intricate blue glass eye, adding an ornate-inspired finish to the design. Crafted in platinum-tone plated sterling silver, the piece features a delicate band subtly engraved with the house’s signature lettering along the interior.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features platinum-tone plating</li><li>Polished design</li><li>Signature orb-shaped face</li><li>Cut-out detailing</li><li>Thick band</li><li>Engraved inner band</li><li>Face height: 1.8cm</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">6402001X-01P796--PLATINUM-BLUE-Glass-Eye</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "Main material: sterling silver",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Main material: sterling silver</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Sterling silver is a precious metal and will tarnish over time. To prevent oxidisation and revive the item’s lustre, clean items with a soft, dry polishing cloth.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Sterling&nbsp;silver&nbsp;is&nbsp;a&nbsp;precious&nbsp;metal&nbsp;and&nbsp;will&nbsp;tarnish&nbsp;over&nbsp;time.&nbsp;To&nbsp;prevent&nbsp;oxidisation&nbsp;and&nbsp;revive&nbsp;the&nbsp;item’s&nbsp;lustre,&nbsp;clean&nbsp;items&nbsp;with&nbsp;a&nbsp;soft,&nbsp;dry&nbsp;polishing&nbsp;cloth.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeStock": {
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-chart-rings.html",
+      "sizeChart": {
+        "id": "size-chart-rings",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "BRITAIN",
+          "EUROPE",
+          "JAPAN",
+          "USA",
+          "CIRCUMFERENCE",
+          "DIAMETER"
+        ],
+        "rows": [
+          [
+            "XXS",
+            "G",
+            "45",
+            "5",
+            "3 3/8",
+            "45 MM",
+            "14.3 MM"
+          ],
+          [
+            "XS",
+            "K 1/2",
+            "50",
+            "10",
+            "5 3/8",
+            "50 MM",
+            "15.92 MM"
+          ],
+          [
+            "S",
+            "M",
+            "52",
+            "12",
+            "6",
+            "52 MM",
+            "16.55 MM"
+          ],
+          [
+            "M",
+            "N 1/2",
+            "54",
+            "14",
+            "6 3/4",
+            "54 MM",
+            "17.19 MM"
+          ],
+          [
+            "L",
+            "P",
+            "56",
+            "15",
+            "7 1/2",
+            "56 MM",
+            "17.83MM"
+          ],
+          [
+            "XL",
+            "R 1/2",
+            "59",
+            "18",
+            "8 7/8",
+            "59 MM",
+            "18.78 MM"
+          ],
+          [
+            "XXL",
+            "T",
+            "61",
+            "19",
+            "9 5/8",
+            "61 MM",
+            "19.42 MM"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-chart-rings.html"
+      },
+      "images": [
+        "/products/vw-pdp/6402001x-01p796-platinum-blue-glass-eye/1.jpg",
+        "/products/vw-pdp/6402001x-01p796-platinum-blue-glass-eye/2.jpg",
+        "/products/vw-pdp/6402001x-01p796-platinum-blue-glass-eye/3.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw465f24ca/images/6402001X-01P796-_PLATINUM-BLUE-Glass-Eye_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw9b731985/images/6402001X-01P796-_PLATINUM-BLUE-Glass-Eye_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw6142a358/images/6402001X-01P796-_PLATINUM-BLUE-Glass-Eye_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Jewellery",
+        "Rings",
+        "Deanna Ring"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "6402001X-01RA39--GOLD-GREEN-Glass-Eye",
+      "sku": "6402001X-01RA39--GOLD-GREEN-Glass-Eye",
+      "title": "Deanna Ring",
+      "gbpPrice": 320.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/jewellery/rings/deanna-ring-gold-green-glass-eye/6402001X-01RA39--GOLD-GREEN-Glass-Eye.html",
+      "leafId": "vw-women-rings",
+      "leafLabel": "Rings",
+      "leafLabelKo": "반지",
+      "collections": [
+        "vivienne-westwood-accessories",
+        "vw-accessories",
+        "vw-women-jewellery",
+        "vw-women-jewellery-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "The Deanna ring reimagines the house’s signature orb motif with an intricate green glass eye, adding an ornate-inspired finish to the design. Crafted in gold-tone plated sterling silver, the piece features a delicate band subtly engraved with the house’s signature lettering along the interior. Features gold-tone platingPolished designSignature orb-shaped faceCut-out detailingThick bandEngraved inner bandFace height: 1.8cm Code: 6402001X-01RA39--GOLD-GREEN-Glass-Eye",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>The Deanna ring reimagines the house’s signature orb motif with an intricate green glass eye, adding an ornate-inspired finish to the design. Crafted in gold-tone plated sterling silver, the piece features a delicate band subtly engraved with the house’s signature lettering along the interior.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features gold-tone plating</li><li>Polished design</li><li>Signature orb-shaped face</li><li>Cut-out detailing</li><li>Thick band</li><li>Engraved inner band</li><li>Face height: 1.8cm</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">6402001X-01RA39--GOLD-GREEN-Glass-Eye</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "Main material: sterling silver",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Main material: sterling silver</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Sterling silver is a precious metal and will tarnish over time. To prevent oxidisation and revive the item’s lustre, clean items with a soft, dry polishing cloth.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Sterling silver is a precious metal and will tarnish over time. To prevent oxidisation and revive the item’s lustre, clean items with a soft, dry polishing cloth.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeStock": {
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-chart-rings.html",
+      "sizeChart": {
+        "id": "size-chart-rings",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "BRITAIN",
+          "EUROPE",
+          "JAPAN",
+          "USA",
+          "CIRCUMFERENCE",
+          "DIAMETER"
+        ],
+        "rows": [
+          [
+            "XXS",
+            "G",
+            "45",
+            "5",
+            "3 3/8",
+            "45 MM",
+            "14.3 MM"
+          ],
+          [
+            "XS",
+            "K 1/2",
+            "50",
+            "10",
+            "5 3/8",
+            "50 MM",
+            "15.92 MM"
+          ],
+          [
+            "S",
+            "M",
+            "52",
+            "12",
+            "6",
+            "52 MM",
+            "16.55 MM"
+          ],
+          [
+            "M",
+            "N 1/2",
+            "54",
+            "14",
+            "6 3/4",
+            "54 MM",
+            "17.19 MM"
+          ],
+          [
+            "L",
+            "P",
+            "56",
+            "15",
+            "7 1/2",
+            "56 MM",
+            "17.83MM"
+          ],
+          [
+            "XL",
+            "R 1/2",
+            "59",
+            "18",
+            "8 7/8",
+            "59 MM",
+            "18.78 MM"
+          ],
+          [
+            "XXL",
+            "T",
+            "61",
+            "19",
+            "9 5/8",
+            "61 MM",
+            "19.42 MM"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-chart-rings.html"
+      },
+      "images": [
+        "/products/vw-pdp/6402001x-01ra39-gold-green-glass-eye/1.jpg",
+        "/products/vw-pdp/6402001x-01ra39-gold-green-glass-eye/2.jpg",
+        "/products/vw-pdp/6402001x-01ra39-gold-green-glass-eye/3.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw99aaf7d6/images/6402001X-01RA39-_GOLD-GREEN-Glass-Eye_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw34a66cf1/images/6402001X-01RA39-_GOLD-GREEN-Glass-Eye_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw42cf3c9a/images/6402001X-01RA39-_GOLD-GREEN-Glass-Eye_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Jewellery",
+        "Rings",
+        "Deanna Ring"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "61020274-02P102---PLATINUM-WHITE-CZ",
+      "sku": "61020274-02P102---PLATINUM-WHITE-CZ",
+      "title": "VW Bracelet",
+      "gbpPrice": 190.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/jewellery/bracelets/vw-bracelet--platinum-white-cz/61020274-02P102---PLATINUM-WHITE-CZ.html",
+      "leafId": "vw-women-bracelets",
+      "leafLabel": "Bracelets",
+      "leafLabelKo": "팔찌",
+      "collections": [
+        "vivienne-westwood-accessories",
+        "vw-accessories",
+        "vw-women-jewellery",
+        "vw-women-jewellery-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our VW bracelet revives the house’s archival initials motif in signature typography, accented by a dangling orb on the delicate trace chain, reflecting Vivienne’s vision of launching the past into the future. Adorned with cubic zirconia crystals, the piece is finished with an embossed lobster clasp, oval tag and classic extender chain. Features the archival VW initialsPolished finish Silver-tone platingSignature typographyDangling orb emblemCubic zirconia crystalsDelicate trace chainEmbossed lobster claspOval branded tagExtender functionTotal chain length: 17.5cm Code: 8053195613762",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our VW bracelet revives the house’s archival initials motif in signature typography, accented by a dangling orb on the delicate trace chain, reflecting Vivienne’s vision of launching the past into the future. Adorned with cubic zirconia crystals, the piece is finished with an embossed lobster clasp, oval tag and classic extender chain.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features the archival VW initials</li><li>Polished finish </li><li>Silver-tone plating</li><li>Signature typography</li><li>Dangling orb emblem</li><li>Cubic zirconia crystals</li><li>Delicate trace chain</li><li>Embossed lobster clasp</li><li>Oval branded tag</li><li>Extender function</li><li>Total chain length: 17.5cm</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8053195613762</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "Main material: brass",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Main&nbsp;material:&nbsp;brass</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "By means of maintaining the item's appearance over time, we recommend avoiding contact with water or abrasive materials.To maintain the integrity of your jewellery pieces, we advise you to take the following precautions:Remember to only put costume jewellery on as a final touch – If cosmetics are applied whilst wearing jewellery, they build up on the surface, dulling their appearance. The alcohol and acids in perfume may cause permanent damage.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>By&nbsp;means&nbsp;of&nbsp;maintaining&nbsp;the&nbsp;item's&nbsp;appearance&nbsp;over&nbsp;time,&nbsp;we&nbsp;recommend&nbsp;avoiding&nbsp;contact&nbsp;with&nbsp;water&nbsp;or&nbsp;abrasive&nbsp;materials.</li><li>To&nbsp;maintain&nbsp;the&nbsp;integrity&nbsp;of&nbsp;your&nbsp;jewellery&nbsp;pieces,&nbsp;we&nbsp;advise&nbsp;you&nbsp;to&nbsp;take&nbsp;the&nbsp;following&nbsp;precautions:</li><li>Remember&nbsp;to&nbsp;only&nbsp;put&nbsp;costume&nbsp;jewellery&nbsp;on&nbsp;as&nbsp;a&nbsp;final&nbsp;touch&nbsp;–&nbsp;If&nbsp;cosmetics&nbsp;are&nbsp;applied&nbsp;whilst&nbsp;wearing&nbsp;jewellery,&nbsp;they&nbsp;build&nbsp;up&nbsp;on&nbsp;the&nbsp;surface,&nbsp;dulling&nbsp;their&nbsp;appearance.&nbsp;The&nbsp;alcohol&nbsp;and&nbsp;acids&nbsp;in&nbsp;perfume&nbsp;may&nbsp;cause&nbsp;permanent&nbsp;damage.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "OS"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-bracelets-womens.html",
+      "sizeChart": {
+        "id": "size-guide-bracelets-womens",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "SIZES AVAILABLE IN",
+          "MEASUREMENTS"
+        ],
+        "rows": [
+          [
+            "AMELIA BRACELET",
+            "ONE SIZE",
+            "'VIVIENNE' - TOTAL LENGTH 16.0/17.0/18.0 CM 'WESTWOOD' - TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "BATTERSEA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "BATTERSEA CORD BRACELET",
+            "CLASSIC",
+            "SMALLEST SETTING: 14.0CM LARGEST SETTING: 25.5CM"
+          ],
+          [
+            "CIRCE BRACELET",
+            "W1,W2",
+            "W1 – INNER CIRCUMFERENCE 15.5 CM, TOTAL LENGTH 16.5 CM W2 – INNER CIRCUMFERNECE 17.5 CM, TOTAL LENGTH 18.5 CM"
+          ],
+          [
+            "CLAPHAM BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "CLAPHAM CORD BRACELET",
+            "CLASSIC",
+            "SMALLEST SETTING: 14.0 CM LARGEST SETTING: 24.5 CM"
+          ],
+          [
+            "CORETTA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "CRISPIN BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "GABY BRACELET",
+            "W1, W2",
+            "W1 - INNER CIRCUMFERENCE 16.0 CM, TOTAL LENGTH 17.0 CM W2 - INNER CIRCUMFERENCE 18.5 CM, TOTAL LENGTH 21.2 CM"
+          ],
+          [
+            "JOSELITA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 17.5 CM"
+          ],
+          [
+            "KIKA ORB BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 17.5 CM"
+          ],
+          [
+            "LEE BRACELET",
+            "W1, W2",
+            "W1 – INNER CIRCUMFERENCE 15.5 CM, TOTAL LENGTH 16.5 CM W2 – INNER CIRCUMFERNECE 17.5 CM, TOTAL LENGTH 18.5 CM"
+          ],
+          [
+            "LEE ORB BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "LEWIS BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "LILITH BRACELET",
+            "W1,W2",
+            "W1 INNER CIRCUMFERENCE 16.0 CM W2 - INNER CIRCUMFERENCE 17.5 CM"
+          ],
+          [
+            "LUCILLE BRACELET",
+            "ONE SIZE",
+            "TOTAL LENGTH 17.50 CM INNER CIRCUMFERENCE 16.50 CM"
+          ],
+          [
+            "LUCILLE PEARL BRACELET",
+            "ONE SIZE",
+            "TOTAL LENGTH 19 CM INNER CIRCUMFERENCE 17.50 CM"
+          ],
+          [
+            "MARE BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "MILA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "MILLIE BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "NOELLA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "ODETTA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "OFELIA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "PIMLICO BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5 - 17.5 CM"
+          ],
+          [
+            "PIMLICO CORD BRACELET",
+            "CLASSIC",
+            "SMALLEST SETTING: 14.0 CM LARGEST SETTING: 24.5 CM"
+          ],
+          [
+            "POLLY BRACELET",
+            "W1,W2",
+            "W1 - INNER CIRCUMFERENCE 15.5 - 17.5 CM, TOTAL LENGTH - 21.5 CM W2 - INNER CIRCUMFERENCE 17 - 18.5 CM, TOTAL LENGTH - 22.5 CM"
+          ],
+          [
+            "RIGOBERTA BRACELET",
+            "CLASSIC",
+            "TOTAL LENGTH 15.5/16.5/17.5 CM"
+          ],
+          [
+            "RIGOBERTA PEARL BRACELET",
+            "W1, W2",
+            "W1 - INNER CIRCUMFERENCE 15.5 CM, TOTAL LENGTH 17.0 CM W2 - INNER CIRCUMFERENCE 17.5 CM, TOTAL LENGTH 19.0 CM"
+          ],
+          [
+            "THAMES MINI BAS RELIEF BRACELET",
+            "ONE SIZE WITH EXTENDER",
+            "TOTAL LENGTH 15.5 CM/17.0 CM/18.5 CM"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-bracelets-womens.html"
+      },
+      "images": [
+        "/products/vw-pdp/61020274-02p102-platinum-white-cz/1.jpg",
+        "/products/vw-pdp/61020274-02p102-platinum-white-cz/2.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfbb1bfa7/images/61020274-02P102-_-PLATINUM-WHITE-CZ_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwc9f59655/images/61020274-02P102-_-PLATINUM-WHITE-CZ_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Jewellery",
+        "Bracelets",
+        "VW Bracelet"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "63020225-02S378--RUTHENIUM-MINT-GREEN-CZ-EMERALD-SIAM-MONTANA",
+      "sku": "63020225-02S378--RUTHENIUM-MINT-GREEN-CZ-EMERALD-SIAM-MONTANA",
+      "title": "New Petite Orb Pendant Necklace",
+      "gbpPrice": 220.0,
+      "url": "https://www.viviennewestwood.com/en-us/women/jewellery/necklaces/new-petite-orb-pendant-necklace-ruthenium-mint-green-cz-emerald-siam-montana/63020225-02S378--RUTHENIUM-MINT-GREEN-CZ-EMERALD-SIAM-MONTANA.html",
+      "leafId": "vw-women-jew-silver",
+      "leafLabel": "Silver",
+      "leafLabelKo": "실버",
+      "collections": [
+        "vivienne-westwood-accessories",
+        "vw-accessories",
+        "vw-women-jewellery",
+        "vw-women-jewellery-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our classic New Petite Orb Pendant necklace is a classic style of the house, with a distinct three-dimensional green orb in the centre of the design, inspired by our house's orb-shaped motif. Encrusted with glistening multi-coloured crystals, the piece recalls Vivienne's vision of taking tradition into the future. Features a secure lobster clasp closureOrb motif Crystal detailsEmbossed oval tagDelicate trace chainMid-length style Unisex piecePolished plating Total chain length 47.5cmOrb height: 1.4cm, width: 1.6 Code: 8050889945925",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our classic New Petite Orb Pendant necklace is a classic style of the house, with a distinct three-dimensional green orb in the centre of the design, inspired by our house's orb-shaped motif. Encrusted with glistening multi-coloured crystals, the piece recalls Vivienne's vision of taking tradition into the future.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a secure lobster clasp closure</li><li>Orb motif&nbsp;</li><li>Crystal details</li><li>Embossed oval tag</li><li>Delicate trace chain</li><li>Mid-length style&nbsp;</li><li>Unisex piece</li><li>Polished plating&nbsp;</li><li>Total chain length 47.5cm</li><li>Orb height: 1.4cm, width: 1.6</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">8050889945925</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "Main material: 100% brassGunmetal-tone platingCrystal detailing",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Main material: 100% brass</li><li>Gunmetal-tone plating</li><li>Crystal detailing</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "By means of maintaining the item's appearance over time, we recommend avoiding contact with water or abrasive materials.To maintain the integrity of your jewellery pieces, we advise you to take the following precautions:Remember to only put costume jewellery on as a final touch – If cosmetics are applied whilst wearing jewellery, they build up on the surface, dulling their appearance. The alcohol and acids in perfume may cause permanent damage.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>By means of maintaining the item's appearance over time, we recommend avoiding contact with water or abrasive materials.</li><li>To maintain the integrity of your jewellery pieces, we advise you to take the following precautions:</li><li>Remember to only put costume jewellery on as a final touch – If cosmetics are applied whilst wearing jewellery, they build up on the surface, dulling their appearance. The alcohol and acids in perfume may cause permanent damage.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "OS"
+      ],
+      "sizeStock": {},
+      "sizeGuideUrl": "",
+      "sizeChart": null,
+      "images": [
+        "/products/vw-pdp/63020225-02s378-ruthenium-mint-green-cz-emerald-siam-montana/1.jpg",
+        "/products/vw-pdp/63020225-02s378-ruthenium-mint-green-cz-emerald-siam-montana/2.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw57007f41/images/63020225-02S378-_RUTHENIUM-MINT-GREEN-CZ-EMERALD-SIAM-MONTANA_000_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw53e42400/images/63020225-02S378-_RUTHENIUM-MINT-GREEN-CZ-EMERALD-SIAM-MONTANA_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Women",
+        "Jewellery",
+        "Necklaces",
+        "New Petite Orb Pendant Necklace"
       ],
       "categoryLabel": ""
     }
