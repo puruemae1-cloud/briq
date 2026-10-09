@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T23:11:58Z",
+  "generatedAt": "2026-10-09T23:18:43Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,24 +32,10 @@
     },
     "bags": {
       "productIds": [
-        "mb-xl-delilah",
-        "mb-woven-tote",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote"
-      ],
-      "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
-      ]
-    },
-    "shoes": {
-      "productIds": [
-        "di-3sn342abf-h014",
-        "di-kct351vvv-s20x",
-        "di-3sn342abf-h968",
-        "di-kct292qcs-s900"
+        "di-v2219womrs-d41g",
+        "di-v2031womlq-d01x",
+        "di-v2199womcy-d001",
+        "di-v2196womlm-d216"
       ],
       "brands": [
         "dior",
@@ -58,18 +44,32 @@
         "dior"
       ]
     },
-    "accessories": {
+    "shoes": {
       "productIds": [
-        "vw-3g01003p-c006f-flag",
-        "vw-1f020001-w012o-giant-mac-andy-blue",
-        "vw-3101000h-c006d-sex",
-        "vw-8102002b-j009m-black"
+        "vw-71010061-11010-am-red",
+        "vw-72030040-41454-am-beige",
+        "vw-72010006-41671-am-black",
+        "vw-72010006-41007-am-red"
       ],
       "brands": [
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood",
         "vivienne-westwood"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip",
+        "mb-wine-carrier",
+        "mb-waxed-baseball-cap"
+      ],
+      "brands": [
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -95,10 +95,10 @@
       "watches"
     ],
     "dior": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ],
     "galvin-green": [
       "sports",
@@ -107,16 +107,16 @@
       "sports"
     ],
     "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
-    ],
-    "vivienne-westwood": [
       "accessories",
       "accessories",
       "accessories",
       "accessories"
+    ],
+    "vivienne-westwood": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ],
     "보테가-베네타": [
       "luxury",
