@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:00:54Z",
+  "generatedAt": "2026-10-09T13:19:57Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -46,15 +46,15 @@
     },
     "shoes": {
       "productIds": [
+        "ax-x000010504",
+        "ax-x000010502",
         "ps-womens-black-campbell-boots",
-        "al-w153ff-140",
-        "al-w119fb-5571",
-        "al-w139ff-203"
+        "al-w153ff-140"
       ],
       "brands": [
+        "arcteryx",
+        "arcteryx",
         "paul-smith",
-        "all-saints",
-        "all-saints",
         "all-saints"
       ]
     },
@@ -89,7 +89,9 @@
   },
   "brands": {
     "all-saints": [
-      "shoes",
+      "shoes"
+    ],
+    "arcteryx": [
       "shoes",
       "shoes"
     ],
