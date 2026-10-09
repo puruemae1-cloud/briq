@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-09T13:19:57Z",
+  "generatedAt": "2026-10-09T20:02:06Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-875133v6ib02188",
-        "bv-871198v6or01010"
+        "di-657j80b1k17-x0400",
+        "di-654v20a3j61-x9000",
+        "di-657b87f7443-x8800",
+        "di-654v63a5i95-x4020"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "dior",
+        "dior",
+        "dior",
+        "dior"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "ax-x000010504",
-        "ax-x000010502",
-        "ps-womens-black-campbell-boots",
-        "al-w153ff-140"
+        "ce-356834582c-38no",
+        "ce-352193676c-38no",
+        "ce-352213958c-38no",
+        "ce-352213886c-36ps"
       ],
       "brands": [
-        "arcteryx",
-        "arcteryx",
-        "paul-smith",
-        "all-saints"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "accessories": {
       "productIds": [
-        "bb-skinny-blooms-of-britain-silk-scarf",
-        "bb-skinny-check-cotton-towel",
-        "di-14cdo301i985-c540",
-        "di-34dbp923g153-c086"
+        "gc-455447cpwp09085",
+        "gc-455448cpwp09085",
+        "gc-463088facyf4055",
+        "gc-463088facyf9753"
       ],
       "brands": [
-        "burberry",
-        "burberry",
-        "dior",
-        "dior"
+        "gucci",
+        "gucci",
+        "gucci",
+        "gucci"
       ]
     },
     "sports": {
@@ -88,16 +88,11 @@
     }
   },
   "brands": {
-    "all-saints": [
-      "shoes"
-    ],
-    "arcteryx": [
+    "celine": [
+      "shoes",
+      "shoes",
       "shoes",
       "shoes"
-    ],
-    "burberry": [
-      "accessories",
-      "accessories"
     ],
     "christopher-ward": [
       "watches",
@@ -106,8 +101,10 @@
       "watches"
     ],
     "dior": [
-      "accessories",
-      "accessories"
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "galvin-green": [
       "sports",
@@ -115,20 +112,17 @@
       "sports",
       "sports"
     ],
+    "gucci": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
     "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
-    ],
-    "paul-smith": [
-      "shoes"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},
