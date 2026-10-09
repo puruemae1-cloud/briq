@@ -1,7 +1,7 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-08T01:02:24.923010+00:00",
+  "scrapedAt": "2026-10-09T01:13:57.292578+00:00",
   "leaves": [
     "bv-women-travel"
   ],
@@ -809,7 +809,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/woven-mycelium-passport-case-lava-red-876813V6U306525.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Lava Red",
         "Lining: Mycelium"
@@ -843,7 +843,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }

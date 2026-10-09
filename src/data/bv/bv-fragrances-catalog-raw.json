@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-08T01:13:24.359657+00:00",
+  "scrapedAt": "2026-10-09T01:26:04.157240+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -3030,7 +3030,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/acqua-sale---refill-frassino-790059VV5709980.html",
       "gbpPrice": 250.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -3068,7 +3068,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 250.0,
           "listGbpPrice": null
         }

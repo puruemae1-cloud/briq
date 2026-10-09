@@ -1,7 +1,7 @@
 {
   "hub": "men-jewellery",
   "category": "accessories",
-  "scrapedAt": "2026-10-08T00:18:55.716079+00:00",
+  "scrapedAt": "2026-10-09T00:30:47.921588+00:00",
   "leaves": [
     "bv-men-jewellery-earrings",
     "bv-men-jewellery-rings",
@@ -44,7 +44,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-earrings-silver-708285V50708117.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver",
         "Due to hygiene-related reasons, this piece may not be returned"
@@ -170,7 +170,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         }
@@ -477,7 +477,7 @@
           "id": "13",
           "value": "13",
           "displayValue": "13",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -485,7 +485,7 @@
           "id": "15",
           "value": "15",
           "displayValue": "15",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -493,7 +493,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -1084,7 +1084,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -1267,7 +1267,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -1275,7 +1275,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -1468,7 +1468,7 @@
           "id": "21",
           "value": "21",
           "displayValue": "21",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -2239,7 +2239,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 680.0,
           "listGbpPrice": null
         },
@@ -2407,7 +2407,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2415,7 +2415,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2753,7 +2753,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -3083,7 +3083,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -3091,7 +3091,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -3268,7 +3268,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -3596,7 +3596,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         },
@@ -4107,7 +4107,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }
@@ -4273,7 +4273,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         }
@@ -4591,7 +4591,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4765,7 +4765,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -5437,7 +5437,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -5951,7 +5951,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }
@@ -6956,7 +6956,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-avocado-815941V58O13132.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Avocado"
       ],
@@ -7081,7 +7081,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7264,7 +7264,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lake-815941V58O14189.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lake"
       ],
@@ -7391,7 +7391,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7574,7 +7574,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-teal-815941V58O14419.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Teal"
       ],
@@ -7699,7 +7699,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7882,7 +7882,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lilac-815941V58O15202.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lilac"
       ],
@@ -8009,7 +8009,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -8194,7 +8194,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lighthouse-815941V58O17193.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lighthouse"
       ],
@@ -8321,7 +8321,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -8694,7 +8694,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/chain-necklace-silver-875948V50708117.html",
       "gbpPrice": 720.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -8814,7 +8814,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 720.0,
           "listGbpPrice": null
         }
@@ -9147,7 +9147,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/rope-chain-necklace-espresso-876407V507C2006.html",
       "gbpPrice": 980.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -9269,7 +9269,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         }
@@ -9449,7 +9449,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/stack-necklace-silver-yellow-gold-857500V507D8119.html",
       "gbpPrice": 760.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Yellow Gold"
       ],
@@ -9569,7 +9569,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -9900,7 +9900,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/sardine-cufflinks-silver-854538V50708117.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -10019,7 +10019,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         }
@@ -10325,7 +10325,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -10858,7 +10858,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-orange-815941V58O17582.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Orange"
       ],
@@ -10985,7 +10985,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -11013,7 +11013,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-necklace-silver-A005TMV50708117.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -11135,7 +11135,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -11288,7 +11288,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -11296,7 +11296,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -11607,7 +11607,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -11623,7 +11623,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         }
@@ -11774,7 +11774,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -11979,7 +11979,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-talc-815941V58O19193.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Talc"
       ],
@@ -12104,7 +12104,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -12265,7 +12265,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },

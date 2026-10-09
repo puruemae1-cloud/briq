@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-07T23:36:06.721059+00:00",
+  "scrapedAt": "2026-10-08T23:52:50.049240+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -2171,7 +2171,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-fondant-781053V2HL12145.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -2211,7 +2211,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -7349,7 +7349,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-fondant-815781V2HLD2364.html",
       "gbpPrice": 3650.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -7392,7 +7392,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3650.0,
           "listGbpPrice": null
         }

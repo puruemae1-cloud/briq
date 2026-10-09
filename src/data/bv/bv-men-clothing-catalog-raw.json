@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-08T00:09:09.196171+00:00",
+  "scrapedAt": "2026-10-09T00:21:46.072484+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -4072,7 +4072,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         },
@@ -8526,7 +8526,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
@@ -10747,7 +10747,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -37811,7 +37811,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 630.0,
           "listGbpPrice": null
         },
