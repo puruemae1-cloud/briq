@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-09T00:21:46.072484+00:00",
+  "scrapedAt": "2026-10-09T20:00:21.587959+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -1537,7 +1537,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3480.0,
           "listGbpPrice": null
         },
@@ -1702,7 +1702,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3370.0,
           "listGbpPrice": null
         },
@@ -1742,7 +1742,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3370.0,
           "listGbpPrice": null
         },
@@ -1750,7 +1750,7 @@
           "id": "56",
           "value": "56",
           "displayValue": "56",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3370.0,
           "listGbpPrice": null
         }
@@ -3028,7 +3028,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3320.0,
           "listGbpPrice": null
         },
@@ -4278,7 +4278,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/suede-leather-jacket-deep-moss-852568V4LG03467.html",
       "gbpPrice": 5700.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Deep Moss"
       ],
@@ -4399,7 +4399,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5700.0,
           "listGbpPrice": null
         },
@@ -4705,7 +4705,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 6770.0,
           "listGbpPrice": null
         }
@@ -5627,7 +5627,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         },
@@ -5949,7 +5949,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5260.0,
           "listGbpPrice": null
         },
@@ -6268,7 +6268,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1250.0,
           "listGbpPrice": null
         },
@@ -7365,7 +7365,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         },
@@ -7687,7 +7687,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         },
@@ -7885,7 +7885,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2500.0,
           "listGbpPrice": null
         },
@@ -8233,7 +8233,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-leather-blouson-pearl-grey-873908V6Q401427.html",
       "gbpPrice": 8460.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Pearl Grey"
       ],
@@ -8345,7 +8345,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8460.0,
           "listGbpPrice": null
         },
@@ -8902,7 +8902,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/light-wool-pinstripes-jacket-medium-grey-white-862216V6E001532.html",
       "gbpPrice": 2480.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Medium Grey/White"
       ],
@@ -9004,7 +9004,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2480.0,
           "listGbpPrice": null
         },
@@ -9012,7 +9012,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2480.0,
           "listGbpPrice": null
         },
@@ -10240,7 +10240,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2220.0,
           "listGbpPrice": null
         },
@@ -12990,7 +12990,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -13006,7 +13006,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -13022,7 +13022,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -13996,7 +13996,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1510.0,
           "listGbpPrice": null
         },
@@ -14653,7 +14653,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1210.0,
           "listGbpPrice": null
         },
@@ -15593,7 +15593,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2140.0,
           "listGbpPrice": null
         },
@@ -15927,7 +15927,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2590.0,
           "listGbpPrice": null
         }
@@ -16200,7 +16200,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         },
@@ -16224,7 +16224,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         },
@@ -17453,7 +17453,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1440.0,
           "listGbpPrice": null
         },
@@ -17820,7 +17820,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/wool-rib-cardigan-abyss-838111V5L704140.html",
       "gbpPrice": 1160.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Abyss"
       ],
@@ -17915,7 +17915,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -17923,7 +17923,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -19421,7 +19421,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 6470.0,
           "listGbpPrice": null
         },
@@ -19755,7 +19755,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2570.0,
           "listGbpPrice": null
         }
@@ -20807,7 +20807,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -20823,7 +20823,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -23216,7 +23216,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
@@ -25333,7 +25333,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         },
@@ -26157,7 +26157,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -26333,7 +26333,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -26341,7 +26341,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -27491,7 +27491,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -27499,7 +27499,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -27507,7 +27507,7 @@
           "id": "56",
           "value": "56",
           "displayValue": "56",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -27810,7 +27810,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -27818,7 +27818,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -28486,7 +28486,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -28494,7 +28494,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -28828,7 +28828,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -30503,7 +30503,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2140.0,
           "listGbpPrice": null
         },
@@ -30676,7 +30676,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         }
@@ -30868,7 +30868,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-gabardine-shirt-dark-juniper-A0040ZV7BG03321.html",
       "gbpPrice": 1610.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Dark Juniper"
       ],
@@ -30964,7 +30964,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1610.0,
           "listGbpPrice": null
         },
@@ -31151,7 +31151,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -31585,7 +31585,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -31644,7 +31644,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/wool-grain-de-poudre-shirt-double-black-874800V66I01010.html",
       "gbpPrice": 2230.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Double Black"
       ],
@@ -31751,7 +31751,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2230.0,
           "listGbpPrice": null
         },
@@ -32250,7 +32250,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
@@ -32895,7 +32895,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -33064,7 +33064,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -33194,7 +33194,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1250.0,
           "listGbpPrice": null
         },
@@ -35039,7 +35039,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1240.0,
           "listGbpPrice": null
         },
@@ -35055,7 +35055,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1240.0,
           "listGbpPrice": null
         },
@@ -36179,7 +36179,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -36211,7 +36211,7 @@
           "id": "54",
           "value": "54",
           "displayValue": "54",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -36541,7 +36541,7 @@
           "id": "XXL",
           "value": "XXL",
           "displayValue": "XXL",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 630.0,
           "listGbpPrice": null
         }
@@ -36724,7 +36724,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-jersey-t-shirt-double-black-A0073UV4N501010.html",
       "gbpPrice": 630.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Double Black"
       ],
@@ -36828,7 +36828,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 630.0,
           "listGbpPrice": null
         },
@@ -37641,7 +37641,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 540.0,
           "listGbpPrice": null
         },
