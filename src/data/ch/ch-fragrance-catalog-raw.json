@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-29T23:08:53.541913+00:00",
+  "scrapedAt": "2026-10-09T23:34:02.404957+00:00",
   "hub": "https://www.chanel.com/gb/fragrance/",
   "note": "Chanel GB fragrance hub — Women + Men + Les Exclusifs + Les Eaux under Accessories→샤넬→향수.",
   "leaves": [
@@ -11,7 +11,7 @@
     }
   ],
   "leafCounts": {
-    "ch-fragrance": 313
+    "ch-fragrance": 315
   },
   "skipped": [],
   "failed": [],
@@ -1892,6 +1892,75 @@
       "localHover": "/products/ch-pdp/102440/2.jpg"
     },
     {
+      "id": "102450",
+      "productCode": "102450",
+      "sku": "102450",
+      "title": "PARIS - ST. MORITZ LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+      "titleShort": "PARIS - ST. MORITZ",
+      "subtitle": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+      "priceLabel": "£145",
+      "gbpPrice": 145.0,
+      "categoryLabel": "Les Eaux de CHANEL",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/102450/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Les Eaux de CHANEL",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "102450"
+          }
+        ],
+        "subtitle": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+        "editorial": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+        "reference": "102450"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray-4-2fl-oz--packshot-default-102450-9587389890590.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray-4-2fl-oz--packshot-alternative-v1-102450-9587389595678.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "102450",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/102450/1.jpg",
+        "/products/ch-pdp/102450/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/102450/1.jpg",
+      "localHover": "/products/ch-pdp/102450/2.jpg"
+    },
+    {
       "id": "102600",
       "productCode": "102600",
       "sku": "102600",
@@ -2424,6 +2493,75 @@
       ],
       "localImage": "/products/ch-pdp/102650/1.jpg",
       "localHover": "/products/ch-pdp/102650/2.jpg"
+    },
+    {
+      "id": "102660",
+      "productCode": "102660",
+      "sku": "102660",
+      "title": "PARIS - ST. MORITZ LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+      "titleShort": "PARIS - ST. MORITZ",
+      "subtitle": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+      "priceLabel": "£102",
+      "gbpPrice": 102.0,
+      "categoryLabel": "Les Eaux de CHANEL",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/102660/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Les Eaux de CHANEL",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "102660"
+          }
+        ],
+        "subtitle": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+        "editorial": "LES EAUX DE CHANEL – EAU DE TOILETTE SPRAY",
+        "reference": "102660"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray-1-7fl-oz--packshot-default-102660-9587389693982.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/paris-st-moritz-les-eaux-de-chanel-eau-de-toilette-spray-1-7fl-oz--packshot-alternative-v1-102660-9587389759518.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "102660",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/102660/1.jpg",
+        "/products/ch-pdp/102660/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/102660/1.jpg",
+      "localHover": "/products/ch-pdp/102660/2.jpg"
     },
     {
       "id": "102747",
