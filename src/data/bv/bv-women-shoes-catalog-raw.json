@@ -1,7 +1,7 @@
 {
   "hub": "women-shoes",
   "category": "shoes",
-  "scrapedAt": "2026-10-09T20:44:27.611320+00:00",
+  "scrapedAt": "2026-10-10T23:30:07.094987+00:00",
   "leaves": [
     "bv-women-shoes-sneakers",
     "bv-women-shoes-boots",
@@ -28685,7 +28685,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -28709,7 +28709,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         }
@@ -29368,7 +29368,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         }
@@ -37115,7 +37115,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -43468,7 +43468,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },

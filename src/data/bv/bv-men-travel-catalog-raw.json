@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-09T20:04:01.257845+00:00",
+  "scrapedAt": "2026-10-10T22:55:42.660763+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -899,7 +899,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-petroleum-glacial-749954VCPP64279.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Petroleum/Glacial",
         "Hardware: Gold",
@@ -933,7 +933,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }
