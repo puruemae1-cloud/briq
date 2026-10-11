@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T22:30:09Z",
+  "generatedAt": "2026-10-11T22:46:43Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,24 +32,10 @@
     },
     "bags": {
       "productIds": [
-        "mb-xl-delilah",
-        "mb-woven-tote",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote"
-      ],
-      "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
-      ]
-    },
-    "shoes": {
-      "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "bv-857931v2hl03123",
+        "bv-855504v2hl12166",
+        "bv-855504v2hl11913",
+        "bv-857931v2hl08803"
       ],
       "brands": [
         "보테가-베네타",
@@ -58,18 +44,32 @@
         "보테가-베네타"
       ]
     },
-    "accessories": {
+    "shoes": {
       "productIds": [
-        "ch-j3882",
-        "ch-j65421",
-        "ch-j66143",
-        "ch-j66149"
+        "di-3sn342abf-h014",
+        "di-3sn342abf-h968",
+        "di-kct115vea-s900",
+        "di-3bo389aba-h900"
       ],
       "brands": [
-        "chanel",
-        "chanel",
-        "chanel",
-        "chanel"
+        "dior",
+        "dior",
+        "dior",
+        "dior"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip",
+        "mb-wine-carrier",
+        "mb-waxed-baseball-cap"
+      ],
+      "brands": [
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -88,17 +88,17 @@
     }
   },
   "brands": {
-    "chanel": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
+    ],
+    "dior": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ],
     "galvin-green": [
       "sports",
@@ -107,10 +107,10 @@
       "sports"
     ],
     "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "paul-smith": [
       "luxury",
@@ -119,10 +119,10 @@
       "luxury"
     ],
     "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ]
   },
   "overlaps": {},
