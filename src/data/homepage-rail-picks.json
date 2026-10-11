@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-10T22:32:17Z",
+  "generatedAt": "2026-10-11T22:30:09Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-regular-fit-brown-pears-and-polka-dot-lyocell-shirt",
-        "ps-rust-red-double-breasted-linen-blazer",
-        "ps-white-viscose-blend-placement-daisy-shirt",
-        "di-657c81a2f28-x9000"
+        "ps-men-s-tapered-fit-indigo-rinse-crosshatch-stretch-jeans",
+        "ps-slim-fit-light-blue-linen-shirt-26",
+        "ps-slim-fit-white-linen-shirt-26",
+        "ps-black-wool-mohair-evening-blazer"
       ],
       "brands": [
         "paul-smith",
         "paul-smith",
         "paul-smith",
-        "dior"
+        "paul-smith"
       ]
     },
     "watches": {
@@ -100,9 +100,6 @@
       "watches",
       "watches"
     ],
-    "dior": [
-      "luxury"
-    ],
     "galvin-green": [
       "sports",
       "sports",
@@ -116,6 +113,7 @@
       "bags"
     ],
     "paul-smith": [
+      "luxury",
       "luxury",
       "luxury",
       "luxury"
