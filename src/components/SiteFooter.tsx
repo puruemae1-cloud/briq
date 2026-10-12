@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 import { ShopFastLink } from "@/components/ShopFastLink";
 import { navCategories } from "@/data/categories";
 
@@ -98,6 +99,16 @@ export function SiteFooter() {
             <Link href="/terms">이용약관</Link>
             <Link href="/privacy">개인정보처리방침</Link>
           </div>
+          <a
+            className="site-footer__instagram"
+            href="https://www.instagram.com/briq.kr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Briq 인스타그램"
+          >
+            <Instagram aria-hidden strokeWidth={1.25} />
+            <span>Instagram</span>
+          </a>
           <p className="site-footer__legal">
             © {new Date().getFullYear()} Briq. All rights reserved.
           </p>
