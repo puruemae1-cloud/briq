@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-11T22:46:43Z",
+  "generatedAt": "2026-10-12T19:39:08Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-men-s-tapered-fit-indigo-rinse-crosshatch-stretch-jeans",
-        "ps-slim-fit-light-blue-linen-shirt-26",
-        "ps-slim-fit-white-linen-shirt-26",
-        "ps-black-wool-mohair-evening-blazer"
+        "bv-a003brv6zf02201",
+        "bv-875133v6ib02188",
+        "bv-871198v6or01010",
+        "bv-875219v6oe01010"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -32,16 +32,16 @@
     },
     "bags": {
       "productIds": [
-        "bv-857931v2hl03123",
-        "bv-855504v2hl12166",
-        "bv-855504v2hl11913",
-        "bv-857931v2hl08803"
+        "mb-xl-delilah",
+        "mb-woven-tote",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "shoes": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "mb-zipped-flat-pouch",
-        "mb-zipped-credit-card-slip",
-        "mb-wine-carrier",
-        "mb-waxed-baseball-cap"
+        "ps-men-s-cotton-signature-stripe-boxer-shorts",
+        "ps-paul-smith-for-the-rug-company-carnival-pale-rug-medium",
+        "ps-paul-smith-for-the-rug-company-carnival-rug-small",
+        "ps-paul-smith-for-the-rug-company-paint-stripe-rugs"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "sports": {
@@ -107,22 +107,22 @@
       "sports"
     ],
     "mulberry": [
+      "bags",
+      "bags",
+      "bags",
+      "bags"
+    ],
+    "paul-smith": [
       "accessories",
       "accessories",
       "accessories",
       "accessories"
     ],
-    "paul-smith": [
+    "보테가-베네타": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
-    ],
-    "보테가-베네타": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
     ]
   },
   "overlaps": {},
