@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-11T00:08:36.332555+00:00",
+  "scrapedAt": "2026-10-12T00:34:49.971933+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -366,7 +366,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/montebello---eau-de-parfum-100-ml-%7C-3.3-fl.-oz.-montebello-A006YWVV5709980.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -405,7 +405,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
@@ -1854,7 +1854,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/lantern-glaze-candle-yellow-white-black-788704VV5709980.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Fragrance notes: incense essence, suede rose, vetiver essence",
         "Volcanic glazes are high temperature glazes. Artisans have studied and developed them to be able to apply them to the low temperature clays, following two years of research",
@@ -1898,7 +1898,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -2835,7 +2835,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/deja-minuit---refill-noce-790061VV5709980.html",
       "gbpPrice": 250.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -2873,7 +2873,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 250.0,
           "listGbpPrice": null
         }
