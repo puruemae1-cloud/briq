@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-11T23:34:11.874686+00:00",
+  "scrapedAt": "2026-10-12T20:49:59.935866+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -1667,7 +1667,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-basalt-844626V3IV01653.html",
       "gbpPrice": 2310.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Basalt",
         "Hardware: Muse Brass finish",
@@ -1708,7 +1708,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2310.0,
           "listGbpPrice": null
         }
@@ -11581,7 +11581,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-fondant-873189V66V02009.html",
       "gbpPrice": 4080.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Fondant",
@@ -11618,7 +11618,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4080.0,
           "listGbpPrice": null
         }
@@ -16076,7 +16076,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-deep-mahogany-844249V4SC06147.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Deep mahogany",
@@ -16114,7 +16114,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
@@ -20437,7 +20437,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-fondant-844249V4SC02190.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Fondant",
@@ -20475,7 +20475,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }

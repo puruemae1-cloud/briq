@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-12T00:21:10.559733+00:00",
+  "scrapedAt": "2026-10-12T21:33:59.755860+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -187,7 +187,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         },
@@ -1240,7 +1240,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         },
@@ -10379,7 +10379,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/toscana-shearling-cropped-gilet-metallic-mist-837465V27W08399.html",
       "gbpPrice": 4430.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Metallic Mist"
       ],
@@ -10484,7 +10484,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4430.0,
           "listGbpPrice": null
         },
@@ -42019,7 +42019,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 810.0,
           "listGbpPrice": null
         },
@@ -47111,7 +47111,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-skirt-double-black-A005BSV6WX01010.html",
       "gbpPrice": 7930.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Double Black"
       ],
@@ -47220,7 +47220,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 7930.0,
           "listGbpPrice": null
         }
