@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-12T20:01:52Z",
+  "generatedAt": "2026-10-13T23:17:37Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
         "bv-a003brv6zf02201",
+        "bv-874364v6n602112",
         "bv-875133v6ib02188",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010"
+        "bv-871198v6or01010"
       ],
       "brands": [
         "보테가-베네타",
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
+        "ps-black-butler-loafers",
+        "ps-brown-butler-loafers",
         "di-3sn342abf-h014",
-        "di-3sn342abf-h968",
-        "di-kct115vea-s900",
-        "di-3bo389aba-h900"
+        "di-3sn342abf-h968"
       ],
       "brands": [
-        "dior",
-        "dior",
+        "paul-smith",
+        "paul-smith",
         "dior",
         "dior"
       ]
     },
     "accessories": {
       "productIds": [
-        "ps-men-s-cotton-signature-stripe-boxer-shorts",
-        "ps-paul-smith-for-the-rug-company-carnival-pale-rug-medium",
-        "ps-paul-smith-for-the-rug-company-carnival-rug-small",
-        "ps-paul-smith-for-the-rug-company-paint-stripe-rugs"
+        "ch-j3882",
+        "ch-j65421",
+        "ch-j66143",
+        "ch-j66149"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "chanel",
+        "chanel",
+        "chanel",
+        "chanel"
       ]
     },
     "sports": {
@@ -88,6 +88,12 @@
     }
   },
   "brands": {
+    "chanel": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -95,8 +101,6 @@
       "watches"
     ],
     "dior": [
-      "shoes",
-      "shoes",
       "shoes",
       "shoes"
     ],
@@ -113,10 +117,8 @@
       "bags"
     ],
     "paul-smith": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+      "shoes",
+      "shoes"
     ],
     "보테가-베네타": [
       "luxury",
