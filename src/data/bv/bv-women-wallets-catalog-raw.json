@@ -1,7 +1,7 @@
 {
   "hub": "women-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-10-12T21:35:52.941887+00:00",
+  "scrapedAt": "2026-10-14T01:02:42.634872+00:00",
   "leaves": [
     "bv-women-wallets-small",
     "bv-women-wallets-long",
@@ -4791,7 +4791,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-credit-card-case-emerald-green-742693VCQC43049.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Emerald Green"
@@ -4822,7 +4822,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -5550,7 +5550,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-boat-pouch-black-876344VCPP01019.html",
       "gbpPrice": 1340.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black",
         "Hardware: Brass finish",
@@ -5588,7 +5588,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1340.0,
           "listGbpPrice": null
         }

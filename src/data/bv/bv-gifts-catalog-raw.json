@@ -1,7 +1,7 @@
 {
   "hub": "gifts",
   "category": "accessories",
-  "scrapedAt": "2026-10-12T22:06:56.947671+00:00",
+  "scrapedAt": "2026-10-14T01:33:35.649439+00:00",
   "leaves": [
     "bv-gifts-her-bags",
     "bv-gifts-her-shoes",
@@ -16,8 +16,8 @@
   ],
   "leafCounts": {
     "bv-gifts-her-bags": {
-      "official": 102,
-      "scraped": 102
+      "official": 98,
+      "scraped": 98
     },
     "bv-gifts-her-shoes": {
       "official": 60,
@@ -2262,7 +2262,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/notturno-fondant-843893VCPP02132.html",
       "gbpPrice": 1870.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Fondant",
         "Hardware: Gold",
@@ -2302,7 +2302,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
@@ -5944,7 +5944,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-basalt-844626V3IV01653.html",
       "gbpPrice": 2310.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Basalt",
         "Hardware: Muse Brass finish",
@@ -5985,7 +5985,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2310.0,
           "listGbpPrice": null
         }
@@ -8939,7 +8939,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
@@ -11114,7 +11114,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -12270,7 +12270,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -14190,7 +14190,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -14932,7 +14932,7 @@
           "id": "39",
           "value": "39",
           "displayValue": "39",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -15578,7 +15578,7 @@
           "id": "35",
           "value": "35",
           "displayValue": "35",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 880.0,
           "listGbpPrice": null
         },
@@ -15610,7 +15610,7 @@
           "id": "39",
           "value": "39",
           "displayValue": "39",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 880.0,
           "listGbpPrice": null
         },
@@ -21794,7 +21794,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-boat-pouch-black-876344VCPP01019.html",
       "gbpPrice": 1340.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black",
         "Hardware: Brass finish",
@@ -21832,7 +21832,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1340.0,
           "listGbpPrice": null
         }
@@ -23509,7 +23509,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -50685,7 +50685,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/orbit-sneaker-black-silver-741357V2X401350.html",
       "gbpPrice": 800.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Technical fabric",
         "Colour: Black/Silver",
@@ -50904,7 +50904,7 @@
           "id": "47",
           "value": "47",
           "displayValue": "47",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },

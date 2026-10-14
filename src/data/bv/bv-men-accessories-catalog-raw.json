@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-12T20:33:37.051088+00:00",
+  "scrapedAt": "2026-10-14T00:04:22.133477+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -3363,7 +3363,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-key-ring-travertine-651820V0HW12916.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Travertine",
         "Hardware: Gold finish"
@@ -3394,7 +3394,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -5951,7 +5951,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },

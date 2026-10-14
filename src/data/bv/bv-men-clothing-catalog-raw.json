@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-12T20:26:40.372630+00:00",
+  "scrapedAt": "2026-10-13T23:57:18.236842+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -10543,7 +10543,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -18823,7 +18823,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         },
@@ -27885,7 +27885,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/medium-indigo-wide-leg-jeans-mid-blue-A00559V69P04300.html",
       "gbpPrice": 850.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Mid Blue"
       ],
@@ -27989,7 +27989,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
