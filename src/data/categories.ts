@@ -1524,7 +1524,14 @@ export type SubcategoryId =
   | "mc-acc-men"
   | "mc-acc-hats"
   | "mc-acc-scarves"
-  | "mc-acc-bags";
+  | "mc-acc-small"
+  | "moncler-bags"
+  | "mc-bags-men"
+  | "mc-bags-backpack"
+  | "mc-bags-crossbody"
+  | "mc-bags-tote"
+  | "mc-bags-belt"
+  | "mc-bags-travel";
 
 /** Bottega Veneta men's bags leaves. */
 export const BV_MEN_BAG_LEAF_IDS: SubcategoryId[] = [
@@ -1778,11 +1785,22 @@ export const MC_SHOE_LEAF_IDS: SubcategoryId[] = [
   "mc-shoes-sandals",
 ];
 
-/** Moncler men's accessory leaves (official /men/accessories). */
+/** Moncler men's accessory leaves (official /men/accessories).
+ * Bags are not here. Backpacks, totes, and other bags belong under moncler-bags.
+ */
 export const MC_ACC_LEAF_IDS: SubcategoryId[] = [
   "mc-acc-hats",
   "mc-acc-scarves",
-  "mc-acc-bags",
+  "mc-acc-small",
+];
+
+/** Moncler men's bag leaves. Official site files these under accessories; Briq uses 가방. */
+export const MC_BAG_LEAF_IDS: SubcategoryId[] = [
+  "mc-bags-backpack",
+  "mc-bags-crossbody",
+  "mc-bags-tote",
+  "mc-bags-belt",
+  "mc-bags-travel",
 ];
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
@@ -5476,6 +5494,8 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "mc-shoes-men": [...MC_SHOE_LEAF_IDS],
   "moncler-accessories": ["mc-acc-men", ...MC_ACC_LEAF_IDS],
   "mc-acc-men": [...MC_ACC_LEAF_IDS],
+  "moncler-bags": ["mc-bags-men", ...MC_BAG_LEAF_IDS],
+  "mc-bags-men": [...MC_BAG_LEAF_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -6992,6 +7012,25 @@ export const navCategories: NavCategory[] = [
     labelKo: "가방",
     href: "/shop?category=bags",
     children: [
+      {
+        id: "moncler-bags",
+        labelKo: "몽클레어",
+        href: "/shop?category=bags&sub=moncler-bags",
+        children: [
+          {
+            id: "mc-bags-men",
+            labelKo: "남성용",
+            href: "/shop?category=bags&sub=mc-bags-men",
+            children: [
+              { id: "mc-bags-backpack", labelKo: "백팩", href: "/shop?category=bags&sub=mc-bags-backpack" },
+              { id: "mc-bags-crossbody", labelKo: "크로스바디", href: "/shop?category=bags&sub=mc-bags-crossbody" },
+              { id: "mc-bags-tote", labelKo: "토트", href: "/shop?category=bags&sub=mc-bags-tote" },
+              { id: "mc-bags-belt", labelKo: "벨트백", href: "/shop?category=bags&sub=mc-bags-belt" },
+              { id: "mc-bags-travel", labelKo: "트래블 백", href: "/shop?category=bags&sub=mc-bags-travel" },
+            ],
+          },
+        ],
+      },
       {
         id: "arcteryx-bags",
         labelKo: "아크테릭스",
@@ -8542,7 +8581,7 @@ export const navCategories: NavCategory[] = [
             children: [
               { id: "mc-acc-hats", labelKo: "햇 & 비니", href: "/shop?category=accessories&sub=mc-acc-hats" },
               { id: "mc-acc-scarves", labelKo: "스카프 & 장갑", href: "/shop?category=accessories&sub=mc-acc-scarves" },
-              { id: "mc-acc-bags", labelKo: "백 & 스몰 액세서리", href: "/shop?category=accessories&sub=mc-acc-bags" },
+              { id: "mc-acc-small", labelKo: "스몰 액세서리", href: "/shop?category=accessories&sub=mc-acc-small" },
             ],
           },
         ],

@@ -153,6 +153,34 @@ function guardBagCategory(rel, products) {
   return rel.endsWith("-bags-catalog.json") ? products.filter((p) => !misfiled.has(p)) : products;
 }
 
+/**
+ * Moncler lists backpacks under accessories on the official site. On Briq those
+ * products belong in 가방 (moncler-bags). Fail the build so a later import
+ * cannot file them back under 악세서리.
+ * Keep in sync with moncler_bag_misfile in scripts/catalog_category_guard.py.
+ */
+const MC_BAG_RE =
+  /\b(backpacks?|totes?|pouch(?:es)?|clutch(?:es)?|satchels?|crossbody|holdalls?|duffels?|duffles?|briefcases?|messengers?|belt\s*bags?)\b|백팩|토트|파우치|클러치|크로스바디|벨트백|메신저|더플/i;
+
+function assertMonclerBags(rel, products) {
+  if (rel !== "mc/mc-catalog.json") return;
+  for (const p of products) {
+    const text = `${p.name ?? ""} ${p.nameKo ?? ""}`;
+    if (!MC_BAG_RE.test(text)) continue;
+    const cols = Array.isArray(p.mcCollections) ? p.mcCollections : [];
+    const inAccessories = cols.some(
+      (c) => c === "moncler-accessories" || String(c).startsWith("mc-acc-"),
+    );
+    if (p.category !== "bags" || !cols.includes("moncler-bags") || inAccessories) {
+      console.error(
+        `[catalog-dist] ${p.id} is a Moncler bag and must use category "bags" ` +
+          `and mcCollections moncler-bags. Accessories is for hats, scarves, and small accessories only.`,
+      );
+      process.exit(1);
+    }
+  }
+}
+
 const onTag = tagImagePaths();
 if (onTag) console.log(`[catalog-dist] image guard: ${onTag.size} files on product-images tag`);
 
@@ -173,6 +201,7 @@ for (const rel of [...rels].sort()) {
     process.exit(1);
   }
   data = guardBagCategory(rel, data);
+  assertMonclerBags(rel, data);
   if (onTag) data = guardImages(rel, data, onTag);
   const gz = zlib.gzipSync(JSON.stringify(data), { level: 6 });
   const dest = path.join(OUT, `${rel}.gz`);

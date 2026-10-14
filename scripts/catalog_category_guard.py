@@ -26,6 +26,35 @@ def is_non_bag(product: dict) -> bool:
     return bool(NON_BAG_RE.search(text)) and not BAG_RE.search(text)
 
 
+# Backpacks and other bags sold under Moncler's accessories nav still belong
+# in Briq's bags category. Keep in sync with MC_BAG_RE in build-catalog-dist.mjs.
+MONCLER_BAG_RE = re.compile(
+    r"\b(backpacks?|totes?|pouch(?:es)?|clutch(?:es)?|satchels?|crossbody|holdalls?"
+    r"|duffels?|duffles?|briefcases?|messengers?|belt\s*bags?)\b"
+    r"|백팩|토트|파우치|클러치|크로스바디|벨트백|메신저|더플",
+    re.I,
+)
+
+
+def moncler_bag_misfile(product: dict) -> str | None:
+    """Return an error when a Moncler bag is filed under accessories."""
+    if not str(product.get("id") or "").startswith("mc-"):
+        return None
+    text = f"{product.get('name') or ''} {product.get('nameKo') or ''}"
+    if not MONCLER_BAG_RE.search(text):
+        return None
+    cols = product.get("mcCollections") or []
+    in_accessories = any(
+        c == "moncler-accessories" or str(c).startswith("mc-acc-") for c in cols
+    )
+    if product.get("category") != "bags" or "moncler-bags" not in cols or in_accessories:
+        return (
+            f"{product.get('id')} is a Moncler bag and must use category 'bags' "
+            "and mcCollections moncler-bags"
+        )
+    return None
+
+
 def demote_non_bag(product: dict) -> bool:
     """Move a misfiled non-bag product from bags to accessories (in place)."""
     if product.get("category") != "bags" or not is_non_bag(product):

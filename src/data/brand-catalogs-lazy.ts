@@ -74,6 +74,7 @@ const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
   "pr",
   "di",
   "mb",
+  "mc",
 ];
 
 /** Brands with a shoes-only JSON slice (shoes PLPs must not parse full catalogues). */
@@ -229,6 +230,8 @@ const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
   mb: () => {
     return readCatalogJson("mb/mb-bags-catalog.json");
   },
+  mc: () =>
+    readCatalogJson("mc/mc-catalog.json").filter((p) => p.category === "bags"),
 };
 
 export function loadBrandBagsCatalog(key: BrandCatalogKey): Product[] {
