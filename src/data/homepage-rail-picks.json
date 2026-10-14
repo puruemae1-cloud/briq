@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-13T23:24:19Z",
+  "generatedAt": "2026-10-14T19:26:10Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-875133v6ib02188",
-        "bv-871198v6or01010"
+        "mc-w-guyane-hooded-insulated-ski-jacket",
+        "mc-w-danses-insulated-ski-jacket",
+        "mc-w-larosiere-insulated-ski-jacket",
+        "mc-w-lamouras-hooded-down-ski-jacket"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "몽클레어",
+        "몽클레어",
+        "몽클레어",
+        "몽클레어"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "ps-black-butler-loafers",
-        "ps-brown-butler-loafers",
-        "di-3sn342abf-h014",
-        "di-3sn342abf-h968"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "dior",
-        "dior"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "accessories": {
       "productIds": [
-        "ch-j3882",
-        "ch-j65421",
-        "ch-j66143",
-        "ch-j66149"
+        "ce-4s226cplb-19rh",
+        "ps-bright-orange-cotton-blend-ribbed-socks",
+        "ps-maroon-cotton-blend-ribbed-socks",
+        "ps-charcoal-cotton-blend-ribbed-socks"
       ],
       "brands": [
-        "chanel",
-        "chanel",
-        "chanel",
-        "chanel"
+        "celine",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "sports": {
@@ -88,10 +88,7 @@
     }
   },
   "brands": {
-    "chanel": [
-      "accessories",
-      "accessories",
-      "accessories",
+    "celine": [
       "accessories"
     ],
     "christopher-ward": [
@@ -99,10 +96,6 @@
       "watches",
       "watches",
       "watches"
-    ],
-    "dior": [
-      "shoes",
-      "shoes"
     ],
     "galvin-green": [
       "sports",
@@ -117,14 +110,21 @@
       "bags"
     ],
     "paul-smith": [
-      "shoes",
-      "shoes"
+      "accessories",
+      "accessories",
+      "accessories"
     ],
-    "보테가-베네타": [
+    "몽클레어": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
+    ],
+    "보테가-베네타": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
