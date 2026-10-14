@@ -154,27 +154,29 @@ function guardBagCategory(rel, products) {
 }
 
 /**
- * Moncler lists backpacks under accessories on the official site. On Briq those
- * products belong in 가방 (moncler-bags). Fail the build so a later import
- * cannot file them back under 악세서리.
+ * Moncler has no bags department. Backpacks and other bags live under
+ * official Accessories → Bags & Small Accessories (mc-acc-bags).
  * Keep in sync with moncler_bag_misfile in scripts/catalog_category_guard.py.
  */
 const MC_BAG_RE =
   /\b(backpacks?|totes?|pouch(?:es)?|clutch(?:es)?|satchels?|crossbody|holdalls?|duffels?|duffles?|briefcases?|messengers?|belt\s*bags?)\b|백팩|토트|파우치|클러치|크로스바디|벨트백|메신저|더플/i;
 
-function assertMonclerBags(rel, products) {
+function assertMonclerOfficialNav(rel, products) {
   if (rel !== "mc/mc-catalog.json") return;
   for (const p of products) {
     const text = `${p.name ?? ""} ${p.nameKo ?? ""}`;
     if (!MC_BAG_RE.test(text)) continue;
     const cols = Array.isArray(p.mcCollections) ? p.mcCollections : [];
-    const inAccessories = cols.some(
-      (c) => c === "moncler-accessories" || String(c).startsWith("mc-acc-"),
-    );
-    if (p.category !== "bags" || !cols.includes("moncler-bags") || inAccessories) {
+    const official =
+      p.category === "accessories" &&
+      p.subcategory === "mc-acc-bags" &&
+      cols.includes("moncler-accessories") &&
+      cols.includes("mc-acc-bags") &&
+      !cols.some((c) => c === "moncler-bags" || String(c).startsWith("mc-bags-"));
+    if (!official) {
       console.error(
-        `[catalog-dist] ${p.id} is a Moncler bag and must use category "bags" ` +
-          `and mcCollections moncler-bags. Accessories is for hats, scarves, and small accessories only.`,
+        `[catalog-dist] ${p.id} is a Moncler bag. Keep the official site nav: ` +
+          `category "accessories", subcategory "mc-acc-bags". Do not use Briq's bags category.`,
       );
       process.exit(1);
     }
@@ -201,7 +203,7 @@ for (const rel of [...rels].sort()) {
     process.exit(1);
   }
   data = guardBagCategory(rel, data);
-  assertMonclerBags(rel, data);
+  assertMonclerOfficialNav(rel, data);
   if (onTag) data = guardImages(rel, data, onTag);
   const gz = zlib.gzipSync(JSON.stringify(data), { level: 6 });
   const dest = path.join(OUT, `${rel}.gz`);

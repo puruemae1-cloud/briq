@@ -26,8 +26,8 @@ def is_non_bag(product: dict) -> bool:
     return bool(NON_BAG_RE.search(text)) and not BAG_RE.search(text)
 
 
-# Backpacks and other bags sold under Moncler's accessories nav still belong
-# in Briq's bags category. Keep in sync with MC_BAG_RE in build-catalog-dist.mjs.
+# Moncler has no bags department. Backpacks stay under Accessories →
+# Bags & Small Accessories. Keep in sync with MC_BAG_RE in build-catalog-dist.mjs.
 MONCLER_BAG_RE = re.compile(
     r"\b(backpacks?|totes?|pouch(?:es)?|clutch(?:es)?|satchels?|crossbody|holdalls?"
     r"|duffels?|duffles?|briefcases?|messengers?|belt\s*bags?)\b"
@@ -37,22 +37,26 @@ MONCLER_BAG_RE = re.compile(
 
 
 def moncler_bag_misfile(product: dict) -> str | None:
-    """Return an error when a Moncler bag is filed under accessories."""
+    """Return an error when a Moncler bag leaves the official accessories nav."""
     if not str(product.get("id") or "").startswith("mc-"):
         return None
     text = f"{product.get('name') or ''} {product.get('nameKo') or ''}"
     if not MONCLER_BAG_RE.search(text):
         return None
     cols = product.get("mcCollections") or []
-    in_accessories = any(
-        c == "moncler-accessories" or str(c).startswith("mc-acc-") for c in cols
+    official = (
+        product.get("category") == "accessories"
+        and product.get("subcategory") == "mc-acc-bags"
+        and "moncler-accessories" in cols
+        and "mc-acc-bags" in cols
+        and not any(c == "moncler-bags" or str(c).startswith("mc-bags-") for c in cols)
     )
-    if product.get("category") != "bags" or "moncler-bags" not in cols or in_accessories:
-        return (
-            f"{product.get('id')} is a Moncler bag and must use category 'bags' "
-            "and mcCollections moncler-bags"
-        )
-    return None
+    if official:
+        return None
+    return (
+        f"{product.get('id')} is a Moncler bag and must stay on the official "
+        "accessories nav (category 'accessories', subcategory 'mc-acc-bags')"
+    )
 
 
 def demote_non_bag(product: dict) -> bool:
