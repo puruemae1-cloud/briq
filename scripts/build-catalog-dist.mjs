@@ -161,6 +161,51 @@ function guardBagCategory(rel, products) {
 const MC_BAG_RE =
   /\b(backpacks?|totes?|pouch(?:es)?|clutch(?:es)?|satchels?|crossbody|holdalls?|duffels?|duffles?|briefcases?|messengers?|belt\s*bags?)\b|백팩|토트|파우치|클러치|크로스바디|벨트백|메신저|더플/i;
 
+/**
+ * Moncler sunglasses publish one lens caliber (for example 57) as the only
+ * "size". The official page has no size picker, so that number must not become
+ * a selectable Briq size. A colourway with more than one size is left alone.
+ */
+function normalizeMonclerSunglasses(rel, products) {
+  if (rel !== "mc/mc-catalog.json") return 0;
+  let fixed = 0;
+  for (const p of products) {
+    if (p.subcategory !== "mc-acc-sunglasses") continue;
+    const variants = Array.isArray(p.variants) ? p.variants : [];
+    const byColor = new Map();
+    for (const v of variants) {
+      const key = v.colorKey || v.colorNameKo || "";
+      if (!byColor.has(key)) byColor.set(key, new Set());
+      byColor.get(key).add(String(v.size || ""));
+    }
+    const groups = [...byColor.values()];
+    if (!groups.length || groups.some((sizes) => sizes.size !== 1)) continue;
+    const lenses = [...new Set(groups.map((sizes) => [...sizes][0]))];
+    if (!lenses.every((size) => /^\d+$/.test(size))) continue;
+    for (const v of variants) {
+      const lens = String(v.size);
+      v.size = "원사이즈";
+      if (typeof v.name === "string") v.name = v.name.replace(new RegExp(`\\s*/\\s*${lens}$`), " / One size");
+      if (typeof v.nameKo === "string") v.nameKo = v.nameKo.replace(new RegExp(`\\s*/\\s*${lens}$`), " / 원사이즈");
+    }
+    delete p.sizeChart;
+    const specs = Array.isArray(p.techSpecs) ? p.techSpecs : [];
+    if (!specs.some((s) => s.labelKo === "렌즈")) {
+      specs.push({ labelKo: "렌즈", valueKo: lenses.join(", ") });
+      p.techSpecs = specs;
+    }
+    const note = `렌즈 사이즈는 ${lenses.join(", ")}입니다.`;
+    if (typeof p.descriptionKo === "string" && !p.descriptionKo.includes("렌즈 사이즈")) {
+      p.descriptionKo = p.descriptionKo ? `${p.descriptionKo}\n\n${note}` : note;
+    }
+    fixed += 1;
+  }
+  if (fixed) {
+    console.warn(`[catalog-dist] ${rel}: lens caliber is not a size on ${fixed} Moncler sunglasses`);
+  }
+  return fixed;
+}
+
 function assertMonclerOfficialNav(rel, products) {
   if (rel !== "mc/mc-catalog.json") return;
   for (const p of products) {
@@ -204,6 +249,7 @@ for (const rel of [...rels].sort()) {
   }
   data = guardBagCategory(rel, data);
   assertMonclerOfficialNav(rel, data);
+  normalizeMonclerSunglasses(rel, data);
   if (onTag) data = guardImages(rel, data, onTag);
   const gz = zlib.gzipSync(JSON.stringify(data), { level: 6 });
   const dest = path.join(OUT, `${rel}.gz`);
