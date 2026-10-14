@@ -206,6 +206,33 @@ function normalizeMonclerSunglasses(rel, products) {
   return fixed;
 }
 
+const MC_HANDWRITTEN_STORIES = new Set([
+  "mc-bretagne-hooded-mid-length-down-jacket",
+  "mc-logo-knit-sweatshirt",
+  "mc-vernon-hooded-goretex-ski-jacket",
+  "mc-vera-pulse-ankle-boots",
+  "mc-carlo-backpack",
+]);
+
+function assertMonclerStoryCaptions(rel, products) {
+  if (rel !== "mc/mc-catalog.json") return;
+  const dupes = [];
+  for (const p of products) {
+    if (MC_HANDWRITTEN_STORIES.has(p.id)) continue;
+    const bodies = (Array.isArray(p.storySections) ? p.storySections : [])
+      .map((section) => String(section.bodyKo || "").replace(/\s+/g, ""))
+      .filter(Boolean);
+    if (bodies.length < 2) continue;
+    if (new Set(bodies).size !== bodies.length) dupes.push(p.id);
+  }
+  if (dupes.length) {
+    console.error(
+      `[catalog-dist] ${rel}: repeated story captions on ${dupes.length} Moncler products (${dupes.slice(0, 5).join(", ")})`,
+    );
+    process.exit(1);
+  }
+}
+
 function assertMonclerOfficialNav(rel, products) {
   if (rel !== "mc/mc-catalog.json") return;
   for (const p of products) {
@@ -250,6 +277,7 @@ for (const rel of [...rels].sort()) {
   data = guardBagCategory(rel, data);
   assertMonclerOfficialNav(rel, data);
   normalizeMonclerSunglasses(rel, data);
+  assertMonclerStoryCaptions(rel, data);
   if (onTag) data = guardImages(rel, data, onTag);
   const gz = zlib.gzipSync(JSON.stringify(data), { level: 6 });
   const dest = path.join(OUT, `${rel}.gz`);
