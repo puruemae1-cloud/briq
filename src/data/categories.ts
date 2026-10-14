@@ -1509,6 +1509,7 @@ export type SubcategoryId =
   | "mc-rtw-knit"
   | "mc-rtw-sweatshirts"
   | "mc-rtw-shirts"
+  | "mc-rtw-pants"
   | "mc-rtw-swim"
   | "mc-men-grenoble"
   | "mc-gren-jackets"
@@ -1524,6 +1525,9 @@ export type SubcategoryId =
   | "mc-acc-men"
   | "mc-acc-hats"
   | "mc-acc-scarves"
+  | "mc-acc-sunglasses"
+  | "mc-acc-perfume"
+  | "mc-acc-helmets"
   | "mc-acc-bags";
 
 /** Bottega Veneta men's bags leaves. */
@@ -1760,6 +1764,7 @@ export const MC_RTW_LEAF_IDS: SubcategoryId[] = [
   "mc-rtw-knit",
   "mc-rtw-sweatshirts",
   "mc-rtw-shirts",
+  "mc-rtw-pants",
   "mc-rtw-swim",
 ];
 
@@ -1784,6 +1789,9 @@ export const MC_SHOE_LEAF_IDS: SubcategoryId[] = [
 export const MC_ACC_LEAF_IDS: SubcategoryId[] = [
   "mc-acc-hats",
   "mc-acc-scarves",
+  "mc-acc-sunglasses",
+  "mc-acc-perfume",
+  "mc-acc-helmets",
   "mc-acc-bags",
 ];
 
@@ -5774,6 +5782,7 @@ export const navCategories: NavCategory[] = [
                   { id: "mc-rtw-knit", labelKo: "스웨터 & 카디건", href: "/shop?category=luxury&sub=mc-rtw-knit" },
                   { id: "mc-rtw-sweatshirts", labelKo: "스웻셔츠", href: "/shop?category=luxury&sub=mc-rtw-sweatshirts" },
                   { id: "mc-rtw-shirts", labelKo: "셔츠", href: "/shop?category=luxury&sub=mc-rtw-shirts" },
+                  { id: "mc-rtw-pants", labelKo: "팬츠 & 쇼츠", href: "/shop?category=luxury&sub=mc-rtw-pants" },
                   { id: "mc-rtw-swim", labelKo: "스윔웨어", href: "/shop?category=luxury&sub=mc-rtw-swim" },
                 ],
               },
@@ -8544,6 +8553,9 @@ export const navCategories: NavCategory[] = [
             children: [
               { id: "mc-acc-hats", labelKo: "햇 & 비니", href: "/shop?category=accessories&sub=mc-acc-hats" },
               { id: "mc-acc-scarves", labelKo: "스카프 & 장갑", href: "/shop?category=accessories&sub=mc-acc-scarves" },
+              { id: "mc-acc-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=mc-acc-sunglasses" },
+              { id: "mc-acc-perfume", labelKo: "향수", href: "/shop?category=accessories&sub=mc-acc-perfume" },
+              { id: "mc-acc-helmets", labelKo: "스키 헬멧", href: "/shop?category=accessories&sub=mc-acc-helmets" },
               { id: "mc-acc-bags", labelKo: "백 & 스몰 액세서리", href: "/shop?category=accessories&sub=mc-acc-bags" },
             ],
           },
