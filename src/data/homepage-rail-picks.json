@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:26:10Z",
+  "generatedAt": "2026-10-14T19:59:47Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,16 +32,16 @@
     },
     "bags": {
       "productIds": [
-        "mb-xl-delilah",
-        "mb-woven-tote",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote"
+        "bv-857931v2hl03123",
+        "bv-855504v2hl12166",
+        "bv-855504v2hl11913",
+        "bv-857931v2hl08803"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "shoes": {
@@ -61,15 +61,15 @@
     "accessories": {
       "productIds": [
         "ce-4s226cplb-19rh",
-        "ps-bright-orange-cotton-blend-ribbed-socks",
-        "ps-maroon-cotton-blend-ribbed-socks",
-        "ps-charcoal-cotton-blend-ribbed-socks"
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip",
+        "mb-wine-carrier"
       ],
       "brands": [
         "celine",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -104,10 +104,9 @@
       "sports"
     ],
     "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "paul-smith": [
       "accessories",
@@ -121,10 +120,10 @@
       "luxury"
     ],
     "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ]
   },
   "overlaps": {},
