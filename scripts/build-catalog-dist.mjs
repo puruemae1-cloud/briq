@@ -17,6 +17,9 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import zlib from "node:zlib";
+import { assertMonclerNumericSizeOrder } from "../src/lib/apparel-size-rank.mjs";
+
+assertMonclerNumericSizeOrder();
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "src");

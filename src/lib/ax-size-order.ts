@@ -1,7 +1,10 @@
+import { apparelSizeRank } from "./apparel-size-rank.mjs";
+
 /**
  * Size chip ordering — small → large.
  * Handles Arc'teryx inseam (28-S), letter sizes, and compound labels
  * like YSL "XS / GB XS" or "F34 / GB 6".
+ * Moncler clothing uses 000 < 00 < 0 < 1 (see apparelSizeRank).
  */
 
 const LETTER_ORDER: Record<string, number> = {
@@ -27,10 +30,7 @@ const LETTER_RE =
 const INSEAM_RE = /^(\d+(?:\.\d+)?)\s*[- ]?\s*([SRT])$/i;
 
 function waistRank(raw: string): number {
-  const s = raw.trim();
-  if (s === "00") return -1;
-  const n = Number(s);
-  return Number.isFinite(n) ? n : 9999;
+  return apparelSizeRank(raw);
 }
 
 export function axSizeSortKey(size: string): [number, number, number, string] {
@@ -61,11 +61,8 @@ export function axSizeSortKey(size: string): [number, number, number, string] {
   if (f) return [2, Number(f[1]), 0, s];
   const gb = s.match(/\bGB\s*(\d{1,2})\b/i);
   if (gb) return [2, Number(gb[1]), 0, s];
-  const bare = s.match(/^(\d{2})(?:\.\d+)?$/);
-  if (bare) return [2, Number(bare[1]), 0, s];
-
-  const n = Number(s);
-  if (Number.isFinite(n)) return [2, n, 0, s];
+  const bare = s.match(/^(\d+(?:\.\d+)?)$/);
+  if (bare) return [2, apparelSizeRank(bare[1]), 0, s];
 
   return [3, 0, 0, s.toLowerCase()];
 }
@@ -77,6 +74,15 @@ export function compareAxSizes(a: string, b: string): number {
     if (ka[i] !== kb[i]) return (ka[i] as number) - (kb[i] as number);
   }
   return ka[3] < kb[3] ? -1 : ka[3] > kb[3] ? 1 : 0;
+}
+
+const MONCLER_NUMERIC = ["000", "00", "0", "1", "2", "3", "4", "5", "6", "7"];
+for (let i = 1; i < MONCLER_NUMERIC.length; i++) {
+  if (compareAxSizes(MONCLER_NUMERIC[i - 1], MONCLER_NUMERIC[i]) >= 0) {
+    throw new Error(
+      `Moncler clothing sizes must show ${MONCLER_NUMERIC.join(" then ")} from left to right`,
+    );
+  }
 }
 
 export function isArcteryxProduct(product: {
