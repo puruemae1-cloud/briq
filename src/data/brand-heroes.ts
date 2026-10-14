@@ -573,6 +573,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Moncler",
     nameKo: "몽클레어",
     logoSrc: "/brands/moncler.svg",
+    // Locked FW26 women's clothing campaign — men and women clothing hubs.
     images: ["/banners/brand-moncler.jpg"],
   },
   "moncler-shoes": {
@@ -580,6 +581,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Moncler",
     nameKo: "몽클레어",
     logoSrc: "/brands/moncler.svg",
+    // Locked homepage FW26 boots — full sole and toe on PC.
     images: ["/banners/brand-moncler-shoes.jpg"],
   },
   "moncler-accessories": {
@@ -587,6 +589,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "Moncler",
     nameKo: "몽클레어",
     logoSrc: "/brands/moncler.svg",
+    // Locked FW26 men's clothing hero.
     images: ["/banners/brand-moncler-accessories.jpg"],
   },
 };

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-14T19:50:00.000000+00:00",
+  "refreshedAt": "2026-10-14T22:10:00.000000+00:00",
   "weekSeed": 202639,
   "mode": "sports-only",
   "slots": {
@@ -994,6 +994,24 @@
     "brand-belstaff-shoes.jpg": {
       "locked": true,
       "note": "fixed creative — not rotated by weekly sports refresh"
+    },
+    "brand-moncler.jpg": {
+      "locked": true,
+      "focal": "50% 38%",
+      "sourceAspect": 1.7778,
+      "note": "fixed creative — Moncler FW26 women's clothing 16:9; men and women clothing hubs"
+    },
+    "brand-moncler-accessories.jpg": {
+      "locked": true,
+      "focal": "50% 36%",
+      "sourceAspect": 1.7778,
+      "note": "fixed creative — Moncler FW26 men's clothing hero used on accessories"
+    },
+    "brand-moncler-shoes.jpg": {
+      "locked": true,
+      "focal": "50% 58%",
+      "sourceAspect": 1.7778,
+      "note": "fixed creative — Moncler homepage FW26 boots; full sole and toe"
     }
   }
 }

@@ -680,6 +680,32 @@ a.chip[href*="sub=gg-sale"].is-active {
   }
 }
 
+/* Moncler campaign stills. PC and tablet match the official 16:9 so the hat
+   tip, chin, and jacket below the shoulders stay in frame. Phones use the
+   official 9:16 crop at 4:5. */
+.shop-hero--brand.shop-hero--moncler {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .shop-hero--brand.shop-hero--moncler {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (min-width: 900px) {
+  .shop-hero--brand.shop-hero--moncler {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    max-height: none;
+  }
+}
+
 .shop-hero__content {
   position: relative;
   z-index: 1;
@@ -2035,6 +2061,12 @@ body:has(.nav-drawer-toggle:checked) {
 
   .shop-hero--brand {
     min-height: 15.5rem;
+  }
+
+  .shop-hero--brand.shop-hero--moncler {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
   }
 
   .shop-hero__support {

@@ -202,6 +202,15 @@ const FOCAL_OVERRIDES: Record<string, string> = {
   /* Vivienne Westwood homepage accessories — keep the lower jewelry detail visible */
   "brand-vivienne-westwood-accessories.jpg": "52% 60%",
   "brand-vivienne-westwood-accessories.webp": "52% 60%",
+  /* Moncler clothing — official 16:9; keep the beanie tip if the strip clips */
+  "brand-moncler.jpg": "50% 38%",
+  "brand-moncler.webp": "50% 38%",
+  /* Moncler accessories — men's campaign; keep the hat bow */
+  "brand-moncler-accessories.jpg": "50% 36%",
+  "brand-moncler-accessories.webp": "50% 36%",
+  /* Moncler shoes — keep the sole and toe in the frame */
+  "brand-moncler-shoes.jpg": "50% 58%",
+  "brand-moncler-shoes.webp": "50% 58%",
 };
 
 /**

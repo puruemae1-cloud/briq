@@ -200,6 +200,9 @@ export default async function ShopPage({ searchParams }: Props) {
   const isSubjectTallHero = /^shop-shoes-prada\.(jpg|webp)$/.test(heroFile);
   const isPanoramaHero = /^shop-watches-cw\.(jpg|webp)$/.test(heroFile);
   const isScenicHero = /^shop-sports-galvin-green\.(jpg|webp)$/.test(heroFile);
+  const isMonclerHero = /^brand-moncler(-shoes|-accessories)?\.(jpg|webp)$/.test(
+    heroFile,
+  );
   const heroVideoSrc = shopBrand?.videoSrc
     ? mediaUrl(shopBrand.videoSrc)
     : null;
@@ -237,7 +240,7 @@ export default async function ShopPage({ searchParams }: Props) {
           isSubjectTallHero ? " shop-hero--subject-tall" : ""
         }${isPanoramaHero ? " shop-hero--panorama" : ""}${
           isScenicHero ? " shop-hero--scenic" : ""
-        }`}
+        }${isMonclerHero ? " shop-hero--moncler" : ""}`}
         aria-label={heroTitle}
       >
         {heroVideoSrc ? (
