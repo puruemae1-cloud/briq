@@ -1,7 +1,7 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-14T01:03:35.910366+00:00",
+  "scrapedAt": "2026-10-14T21:36:11.548913+00:00",
   "leaves": [
     "bv-women-travel"
   ],
@@ -255,7 +255,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/odyssey-cabin-suitcase-midnight-black-822479V5AO14248.html",
       "gbpPrice": 2400.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Midnight/Black",
@@ -305,7 +305,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2400.0,
           "listGbpPrice": null
         }

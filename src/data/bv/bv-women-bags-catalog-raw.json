@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-14T00:21:52.285846+00:00",
+  "scrapedAt": "2026-10-14T20:47:01.517969+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -1602,7 +1602,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-black-844626V3IV01019.html",
       "gbpPrice": 2310.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Black",
@@ -1639,7 +1639,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2310.0,
           "listGbpPrice": null
         }
@@ -1667,7 +1667,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-basalt-844626V3IV01653.html",
       "gbpPrice": 2310.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Basalt",
         "Hardware: Muse Brass finish",
@@ -1708,7 +1708,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2310.0,
           "listGbpPrice": null
         }
@@ -9271,7 +9271,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-campana-green-tweed-844250V5ZZ03783.html",
       "gbpPrice": 4900.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede bonded Intrecciato",
         "Colour: Green Tweed",
@@ -9312,7 +9312,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
@@ -19795,7 +19795,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
       "gbpPrice": 6380.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -19840,7 +19840,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 6380.0,
           "listGbpPrice": null
         }
@@ -20437,7 +20437,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-fondant-844249V4SC02190.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Fondant",
@@ -20475,7 +20475,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
@@ -24862,7 +24862,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-blue-royal-766019V5ZZ14303.html",
       "gbpPrice": 6380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede bonded Intrecciato",
         "Colour: Blue Royal",
@@ -24899,7 +24899,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6380.0,
           "listGbpPrice": null
         }
