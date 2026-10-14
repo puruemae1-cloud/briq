@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { addToCart, buyNow } from "@/app/cart/actions";
 import { BraceletResizeControls } from "@/components/BraceletResizeControls";
 import { ProductEngagement } from "@/components/ProductEngagement";
 import { ProductGallery } from "@/components/ProductGallery";
@@ -342,19 +341,6 @@ export function ProductDetail({
 
   const sizeAxisLabel = isCw ? "케이스 사이즈" : "사이즈";
 
-  const hiddenFields = (
-    <>
-      <input type="hidden" name="productId" value={product.id} />
-      {selected ? (
-        <input type="hidden" name="variantId" value={selected.id} />
-      ) : null}
-      {product.braceletResize ? (
-        <input type="hidden" name="braceletCm" value={braceletCm} />
-      ) : null}
-      <input type="hidden" name="qty" value="1" />
-    </>
-  );
-
   const braceletBlock = product.braceletResize ? (
     <BraceletResizeControls
       config={product.braceletResize}
@@ -542,21 +528,6 @@ export function ProductDetail({
             </div>
           ) : (
             <div className="product-detail__actions">
-              <form action={buyNow}>
-                {hiddenFields}
-                <button type="submit" className="btn btn-solid">
-                  구매하기
-                </button>
-              </form>
-              <form action={addToCart}>
-                {hiddenFields}
-                <button type="submit" className="btn btn-primary">
-                  장바구니 담기
-                </button>
-              </form>
-              <Link href="/cart" className="btn btn-outline">
-                장바구니 보기
-              </Link>
               <NaverPayOrderButton
                 page="product"
                 enabled={!soldOut}
@@ -691,36 +662,22 @@ export function ProductDetail({
                 Sold Out
               </button>
             ) : (
-              <>
-                <NaverPayOrderButton
-                  page="dock"
-                  enabled={!soldOut}
-                  className="npay-order-button npay-order-button--dock"
-                  items={[
-                    {
-                      productId: product.id,
-                      variantId: selected?.id,
-                      braceletCm:
-                        product.braceletResize && braceletCm !== "no"
-                          ? braceletCm
-                          : undefined,
-                      qty: 1,
-                    },
-                  ]}
-                />
-                <form action={buyNow}>
-                  {hiddenFields}
-                  <button type="submit" className="btn btn-solid pdp-dock__buy">
-                    구매하기
-                  </button>
-                </form>
-                <form action={addToCart}>
-                  {hiddenFields}
-                  <button type="submit" className="btn btn-primary pdp-dock__cart">
-                    장바구니
-                  </button>
-                </form>
-              </>
+              <NaverPayOrderButton
+                page="dock"
+                enabled={!soldOut}
+                className="npay-order-button npay-order-button--dock"
+                items={[
+                  {
+                    productId: product.id,
+                    variantId: selected?.id,
+                    braceletCm:
+                      product.braceletResize && braceletCm !== "no"
+                        ? braceletCm
+                        : undefined,
+                    qty: 1,
+                  },
+                ]}
+              />
             )}
           </div>
         </div>

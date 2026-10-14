@@ -162,20 +162,13 @@ export function NaverPayOrderButton({
       const root = document.getElementById(containerId);
       if (!root || cancelled) return;
 
-      // SDK sizes from container width. Dock: fill shared CTA slot; avoid
-      // undersized mounts that clip the buy chrome to the right.
-      const dock = page === "dock";
-      if (dock) {
-        root.style.minWidth = "0";
-        root.style.width = "100%";
-        root.style.height = "100%";
-        root.style.display = "block";
-        root.style.overflow = "hidden";
-      } else {
-        root.style.minWidth = "168px";
-        root.style.width = "100%";
-      }
-      await waitForLayout(root, dock ? 80 : 120);
+      // SDK sizes from container width. Give it room so the buy image is not clipped.
+      root.style.minWidth = "168px";
+      root.style.width = "100%";
+      root.style.height = "auto";
+      root.style.display = "block";
+      root.style.overflow = "visible";
+      await waitForLayout(root, 168);
       if (cancelled) return;
 
       try {
@@ -253,69 +246,24 @@ export function NaverPayOrderButton({
           .forEach((el) => el.remove());
       };
 
-      const fitDockButton = () => {
+      const fitBuyOnly = () => {
         stripSideButtons();
-
         // SDK keeps type_three_button even when wishlist/talkTalk are false,
-        // which locks .npay_main_cell to 60% width — force buy-only layout.
+        // which locks the buy image to about 60% width.
         root.querySelectorAll(".npay_button_sdk_wrapper").forEach((node) => {
           const el = node as HTMLElement;
-          el.classList.remove(
-            "type_three_button",
-            "type_two_button",
-            "size_medium",
-            "size_large",
-          );
-          el.classList.add("type_one_button", "size_small");
+          el.classList.remove("type_three_button", "type_two_button");
+          el.classList.add("type_one_button");
         });
-
-        const fill = (el: HTMLElement) => {
-          el.style.setProperty("position", "absolute", "important");
-          el.style.setProperty("inset", "0", "important");
-          el.style.setProperty("top", "0", "important");
-          el.style.setProperty("right", "0", "important");
-          el.style.setProperty("bottom", "0", "important");
-          el.style.setProperty("left", "0", "important");
-          el.style.setProperty("width", "100%", "important");
-          el.style.setProperty("min-width", "0", "important");
-          el.style.setProperty("max-width", "100%", "important");
-          el.style.setProperty("height", "100%", "important");
-          el.style.setProperty("min-height", "0", "important");
-          el.style.setProperty("max-height", "100%", "important");
-          el.style.setProperty("margin", "0", "important");
-          el.style.setProperty("padding", "0", "important");
-          el.style.setProperty("box-sizing", "border-box", "important");
-          el.style.setProperty("display", "flex", "important");
-          el.style.setProperty("align-items", "center", "important");
-          el.style.setProperty("justify-content", "center", "important");
-          el.style.setProperty("line-height", "1", "important");
-          el.style.setProperty("overflow", "hidden", "important");
-          el.style.setProperty("border-radius", "0", "important");
-        };
-
-        root
-          .querySelectorAll(
-            [
-              ".npay_button_sdk_wrapper",
-              ".npay_button_area",
-              ".npay_btn_container",
-              ".npay_main_cell",
-              ".npay_main_cell > a",
-              ".npay_btn_pay",
-              ".npay_link_order",
-            ].join(", "),
-          )
-          .forEach((node) => fill(node as HTMLElement));
       };
 
-      const polish = dock ? fitDockButton : stripSideButtons;
-      polish();
+      fitBuyOnly();
       timers.push(
-        window.setTimeout(polish, 250),
-        window.setTimeout(polish, 800),
-        window.setTimeout(polish, 1600),
+        window.setTimeout(fitBuyOnly, 250),
+        window.setTimeout(fitBuyOnly, 800),
+        window.setTimeout(fitBuyOnly, 1600),
       );
-      sideObs = new MutationObserver(polish);
+      sideObs = new MutationObserver(fitBuyOnly);
       sideObs.observe(root, { childList: true, subtree: true });
     }
 
