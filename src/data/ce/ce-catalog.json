@@ -418725,8 +418725,13 @@
       "악세서리"
     ],
     "descriptionKo": "템플 기장 13.5cm / 렌즈 너비 5.5cm / 노즈 브릿지 너비 1.9cm / 아세테이트 프레임\n\nSunglasses 플라스틱",
-    "image": "/products/ce-pdp/placeholder.jpg",
-    "images": [],
+    "image": "https://image.celine.com/asset/00000dc5-2bff-4c4c-8707-813f9af5042f/4S226CPLB-19RH_1_FALL22.jpg?V2",
+    "images": [
+      "https://image.celine.com/asset/00000dc5-2bff-4c4c-8707-813f9af5042f/4S226CPLB-19RH_1_FALL22.jpg?V2",
+      "https://image.celine.com/asset/0801f5ce-8377-4a98-b782-9b94c2639ef5/4S226CPLB-19RH_2_FALL22.jpg?V2",
+      "https://image.celine.com/asset/6f373580-dd71-460b-864e-2b85e571d01a/4S226CPLB-19RH_3_FALL22.jpg?V2",
+      "https://image.celine.com/asset/a9bdebfd-56ec-4e98-b6d9-97cd8be0bf71/4S226CPLB-19RH_4_FALL22.jpg?V2"
+    ],
     "accent": "#302722",
     "gbpPrice": 400.0,
     "sku": "4S226CPLB.19RH",
@@ -418740,8 +418745,13 @@
         "sku": "4S226CPLB.19RH",
         "gbpPrice": 400.0,
         "price": 960000,
-        "image": "/products/ce-pdp/placeholder.jpg",
-        "images": [],
+        "image": "https://image.celine.com/asset/00000dc5-2bff-4c4c-8707-813f9af5042f/4S226CPLB-19RH_1_FALL22.jpg?V2",
+        "images": [
+          "https://image.celine.com/asset/00000dc5-2bff-4c4c-8707-813f9af5042f/4S226CPLB-19RH_1_FALL22.jpg?V2",
+          "https://image.celine.com/asset/0801f5ce-8377-4a98-b782-9b94c2639ef5/4S226CPLB-19RH_2_FALL22.jpg?V2",
+          "https://image.celine.com/asset/6f373580-dd71-460b-864e-2b85e571d01a/4S226CPLB-19RH_3_FALL22.jpg?V2",
+          "https://image.celine.com/asset/a9bdebfd-56ec-4e98-b6d9-97cd8be0bf71/4S226CPLB-19RH_4_FALL22.jpg?V2"
+        ],
         "sourceUrl": "https://www.celine.com/en-gb/women/sunglasses/cat-eye/triomphe-06-sunglasses-in-acetate-4S226CPLB.19RH.html",
         "inStock": true,
         "colorKey": "ce-4s226cplb-19rh",
@@ -418751,30 +418761,35 @@
           "celine-accessories",
           "ce-women-sunglasses",
           "ce-women-sunglasses-all"
-        ]
+        ],
+        "hoverImage": "https://image.celine.com/asset/0801f5ce-8377-4a98-b782-9b94c2639ef5/4S226CPLB-19RH_2_FALL22.jpg?V2"
       }
     ],
     "storySections": [
       {
         "titleKo": "제품 소개",
         "bodyKo": "템플 기장 13.5cm / 렌즈 너비 5.5cm / 노즈 브릿지 너비 1.9cm / 아세테이트 프레임\n\nSunglasses 플라스틱",
-        "image": ""
+        "image": "https://image.celine.com/asset/00000dc5-2bff-4c4c-8707-813f9af5042f/4S226CPLB-19RH_1_FALL22.jpg?V2",
+        "imageAlt": "트리옹프 06 아세테이트 선글라스"
       },
       {
         "titleKo": "디테일 & 특징",
         "bodyKo": "템플 기장 13.5cm · 렌즈 너비 5.5cm · 노즈 브릿지 너비 1.9cm · 아세테이트 프레임 · 오버사이즈 프레임 · N/ 렌즈 · 스모크 렌즈 · 차단 UVA UVB · 트리옹프 시그니처 템플",
-        "image": ""
+        "image": "https://image.celine.com/asset/0801f5ce-8377-4a98-b782-9b94c2639ef5/4S226CPLB-19RH_2_FALL22.jpg?V2",
+        "imageAlt": "트리옹프 06 아세테이트 선글라스"
       },
       {
         "titleKo": "케어 & 관리",
         "bodyKo": "셀린느 선글라스는 고급 소재로 제작됩니다. 용제·강한 세제는 사용하지 마시고, 미지근한 물과 중성 비누로 닦은 뒤 부드러운 천으로 건조하세요. 케이스에 -10°C~+35°C의 건조한 곳에 보관하세요.",
-        "image": "",
-        "reverse": true
+        "image": "https://image.celine.com/asset/6f373580-dd71-460b-864e-2b85e571d01a/4S226CPLB-19RH_3_FALL22.jpg?V2",
+        "reverse": true,
+        "imageAlt": "트리옹프 06 아세테이트 선글라스"
       },
       {
         "titleKo": "착용 & 스타일",
         "bodyKo": "Sunglasses 플라스틱",
-        "image": ""
+        "image": "https://image.celine.com/asset/a9bdebfd-56ec-4e98-b6d9-97cd8be0bf71/4S226CPLB-19RH_4_FALL22.jpg?V2",
+        "imageAlt": "트리옹프 06 아세테이트 선글라스"
       }
     ],
     "techSpecs": [
@@ -418801,6 +418816,7 @@
       "Sunglasses 플라스틱"
     ],
     "sizeChart": null,
-    "updatedAt": "2026-10-09T19:16:22.033226+00:00"
+    "updatedAt": "2026-10-14T14:00:00.000Z",
+    "hoverImage": "https://image.celine.com/asset/0801f5ce-8377-4a98-b782-9b94c2639ef5/4S226CPLB-19RH_2_FALL22.jpg?V2"
   }
 ]
