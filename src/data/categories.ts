@@ -5589,7 +5589,7 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "mc-shoes-women": [...MC_W_SHOE_LEAF_IDS],
   "moncler-accessories": ["mc-acc-men", ...MC_ACC_LEAF_IDS, "mc-acc-women", ...MC_W_ACC_LEAF_IDS],
   "mc-acc-men": [...MC_ACC_LEAF_IDS],
-  "mc-acc-women": [...MC_W_ACC_LEAF_IDS],
+  "mc-acc-women": ["mc-acc-women", ...MC_W_ACC_LEAF_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */

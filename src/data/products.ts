@@ -604,6 +604,16 @@ export function getProductsByCategory(
         c === "mb-gifts-him" ||
         c === "mb-gifts-her",
     ) ?? false;
+  // Moncler women's Grenoble and accessories PLPs include shoes and clothing
+  // that stay filed under their own category.
+  const isMcWomenMixed =
+    expanded?.some(
+      (c) =>
+        c === "mc-women-grenoble" ||
+        c.startsWith("mc-w-gren-") ||
+        c === "mc-acc-women" ||
+        c.startsWith("mc-w-acc-"),
+    ) ?? false;
   if (
     category &&
     category !== "all" &&
@@ -611,7 +621,8 @@ export function getProductsByCategory(
     !isGcGifts &&
     !isBvGifts &&
     !isDiDiorIcons &&
-    !isMbMixedHub
+    !isMbMixedHub &&
+    !isMcWomenMixed
   ) {
     list = list.filter((p) => p.category === category);
   }
