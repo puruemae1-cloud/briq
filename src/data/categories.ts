@@ -1528,7 +1528,40 @@ export type SubcategoryId =
   | "mc-acc-sunglasses"
   | "mc-acc-perfume"
   | "mc-acc-helmets"
-  | "mc-acc-bags";
+  | "mc-acc-bags"
+  | "mc-women"
+  | "mc-women-outerwear"
+  | "mc-w-outer-short-down"
+  | "mc-w-outer-long-down"
+  | "mc-w-outer-gilets"
+  | "mc-w-outer-shirt"
+  | "mc-w-outer-lightweight"
+  | "mc-w-outer-wind"
+  | "mc-w-outer-capes"
+  | "mc-women-rtw"
+  | "mc-w-rtw-knit"
+  | "mc-w-rtw-padded"
+  | "mc-w-rtw-tops"
+  | "mc-w-rtw-sweatshirts"
+  | "mc-w-rtw-skirts"
+  | "mc-w-rtw-dresses"
+  | "mc-w-rtw-pants"
+  | "mc-women-grenoble"
+  | "mc-w-gren-jackets"
+  | "mc-w-gren-layers"
+  | "mc-w-gren-trousers"
+  | "mc-w-gren-accessories"
+  | "mc-shoes-women"
+  | "mc-w-shoes-sneakers"
+  | "mc-w-shoes-boots"
+  | "mc-w-shoes-sandals"
+  | "mc-acc-women"
+  | "mc-w-acc-hats"
+  | "mc-w-acc-scarves"
+  | "mc-w-acc-sunglasses"
+  | "mc-w-acc-perfume"
+  | "mc-w-acc-helmets"
+  | "mc-w-acc-bags";
 
 /** Bottega Veneta men's bags leaves. */
 export const BV_MEN_BAG_LEAF_IDS: SubcategoryId[] = [
@@ -1793,6 +1826,55 @@ export const MC_ACC_LEAF_IDS: SubcategoryId[] = [
   "mc-acc-perfume",
   "mc-acc-helmets",
   "mc-acc-bags",
+];
+
+/** Moncler women's outerwear leaves (official /women/outerwear). */
+export const MC_W_OUTER_LEAF_IDS: SubcategoryId[] = [
+  "mc-w-outer-short-down",
+  "mc-w-outer-long-down",
+  "mc-w-outer-gilets",
+  "mc-w-outer-shirt",
+  "mc-w-outer-lightweight",
+  "mc-w-outer-wind",
+  "mc-w-outer-capes",
+];
+
+/** Moncler women's ready-to-wear leaves (official /women/ready-to-wear). */
+export const MC_W_RTW_LEAF_IDS: SubcategoryId[] = [
+  "mc-w-rtw-knit",
+  "mc-w-rtw-padded",
+  "mc-w-rtw-tops",
+  "mc-w-rtw-sweatshirts",
+  "mc-w-rtw-skirts",
+  "mc-w-rtw-dresses",
+  "mc-w-rtw-pants",
+];
+
+/** Moncler women's Grenoble leaves (official /women/grenoble). */
+export const MC_W_GREN_LEAF_IDS: SubcategoryId[] = [
+  "mc-w-gren-jackets",
+  "mc-w-gren-layers",
+  "mc-w-gren-trousers",
+  "mc-w-gren-accessories",
+];
+
+/** Moncler women's shoe leaves (official /women/shoes). */
+export const MC_W_SHOE_LEAF_IDS: SubcategoryId[] = [
+  "mc-w-shoes-sneakers",
+  "mc-w-shoes-boots",
+  "mc-w-shoes-sandals",
+];
+
+/** Moncler women's accessory leaves (official /women/accessories).
+ * Bags stay on mc-w-acc-bags. The official site has no separate bags department.
+ */
+export const MC_W_ACC_LEAF_IDS: SubcategoryId[] = [
+  "mc-w-acc-hats",
+  "mc-w-acc-scarves",
+  "mc-w-acc-sunglasses",
+  "mc-w-acc-perfume",
+  "mc-w-acc-helmets",
+  "mc-w-acc-bags",
 ];
 
 /** Chanel Ready-to-Wear official GB fashion leaves. */
@@ -5470,6 +5552,14 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...MC_RTW_LEAF_IDS,
     "mc-men-grenoble",
     ...MC_GREN_LEAF_IDS,
+    "mc-women",
+    "mc-women-outerwear",
+    ...MC_W_OUTER_LEAF_IDS,
+    "mc-w-gren-jackets",
+    "mc-women-rtw",
+    ...MC_W_RTW_LEAF_IDS,
+    "mc-women-grenoble",
+    ...MC_W_GREN_LEAF_IDS,
   ],
   "mc-men": [
     "mc-men-outerwear",
@@ -5482,10 +5572,24 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "mc-men-outerwear": [...MC_OUTER_LEAF_IDS],
   "mc-men-rtw": [...MC_RTW_LEAF_IDS],
   "mc-men-grenoble": [...MC_GREN_LEAF_IDS],
-  "moncler-shoes": ["mc-shoes-men", ...MC_SHOE_LEAF_IDS],
+  "mc-women": [
+    "mc-women-outerwear",
+    ...MC_W_OUTER_LEAF_IDS,
+    "mc-w-gren-jackets",
+    "mc-women-rtw",
+    ...MC_W_RTW_LEAF_IDS,
+    "mc-women-grenoble",
+    ...MC_W_GREN_LEAF_IDS,
+  ],
+  "mc-women-outerwear": [...MC_W_OUTER_LEAF_IDS, "mc-w-gren-jackets"],
+  "mc-women-rtw": [...MC_W_RTW_LEAF_IDS],
+  "mc-women-grenoble": [...MC_W_GREN_LEAF_IDS],
+  "moncler-shoes": ["mc-shoes-men", ...MC_SHOE_LEAF_IDS, "mc-shoes-women", ...MC_W_SHOE_LEAF_IDS],
   "mc-shoes-men": [...MC_SHOE_LEAF_IDS],
-  "moncler-accessories": ["mc-acc-men", ...MC_ACC_LEAF_IDS],
+  "mc-shoes-women": [...MC_W_SHOE_LEAF_IDS],
+  "moncler-accessories": ["mc-acc-men", ...MC_ACC_LEAF_IDS, "mc-acc-women", ...MC_W_ACC_LEAF_IDS],
   "mc-acc-men": [...MC_ACC_LEAF_IDS],
+  "mc-acc-women": [...MC_W_ACC_LEAF_IDS],
 };
 
 /** Top nav order: Shop first (handled separately), then these left→right, sports last */
@@ -5795,6 +5899,53 @@ export const navCategories: NavCategory[] = [
                   { id: "mc-gren-layers", labelKo: "미드 & 베이스 레이어", href: "/shop?category=luxury&sub=mc-gren-layers" },
                   { id: "mc-gren-trousers", labelKo: "스키 트라우저", href: "/shop?category=luxury&sub=mc-gren-trousers" },
                   { id: "mc-gren-accessories", labelKo: "스키 액세서리", href: "/shop?category=luxury&sub=mc-gren-accessories" },
+                ],
+              },
+            ],
+          },
+          {
+            id: "mc-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=mc-women",
+            children: [
+              {
+                id: "mc-women-outerwear",
+                labelKo: "아우터웨어",
+                href: "/shop?category=luxury&sub=mc-women-outerwear",
+                children: [
+                  { id: "mc-w-outer-short-down", labelKo: "숏 다운 재킷", href: "/shop?category=luxury&sub=mc-w-outer-short-down" },
+                  { id: "mc-w-outer-long-down", labelKo: "롱 다운 코트 & 파카", href: "/shop?category=luxury&sub=mc-w-outer-long-down" },
+                  { id: "mc-w-outer-gilets", labelKo: "질레", href: "/shop?category=luxury&sub=mc-w-outer-gilets" },
+                  { id: "mc-w-outer-shirt", labelKo: "셔츠 재킷", href: "/shop?category=luxury&sub=mc-w-outer-shirt" },
+                  { id: "mc-w-outer-lightweight", labelKo: "라이트웨이트 재킷", href: "/shop?category=luxury&sub=mc-w-outer-lightweight" },
+                  { id: "mc-w-outer-wind", labelKo: "윈드브레이커 & 레인코트", href: "/shop?category=luxury&sub=mc-w-outer-wind" },
+                  { id: "mc-w-outer-capes", labelKo: "케이프", href: "/shop?category=luxury&sub=mc-w-outer-capes" },
+                  { id: "mc-w-gren-jackets", labelKo: "스키 재킷", href: "/shop?category=luxury&sub=mc-w-gren-jackets" },
+                ],
+              },
+              {
+                id: "mc-women-rtw",
+                labelKo: "의류",
+                href: "/shop?category=luxury&sub=mc-women-rtw",
+                children: [
+                  { id: "mc-w-rtw-knit", labelKo: "스웨터 & 카디건", href: "/shop?category=luxury&sub=mc-w-rtw-knit" },
+                  { id: "mc-w-rtw-padded", labelKo: "패딩 카디건", href: "/shop?category=luxury&sub=mc-w-rtw-padded" },
+                  { id: "mc-w-rtw-tops", labelKo: "탑 & 티셔츠", href: "/shop?category=luxury&sub=mc-w-rtw-tops" },
+                  { id: "mc-w-rtw-sweatshirts", labelKo: "스웻셔츠", href: "/shop?category=luxury&sub=mc-w-rtw-sweatshirts" },
+                  { id: "mc-w-rtw-skirts", labelKo: "스커트", href: "/shop?category=luxury&sub=mc-w-rtw-skirts" },
+                  { id: "mc-w-rtw-dresses", labelKo: "드레스", href: "/shop?category=luxury&sub=mc-w-rtw-dresses" },
+                  { id: "mc-w-rtw-pants", labelKo: "트라우저 & 쇼츠", href: "/shop?category=luxury&sub=mc-w-rtw-pants" },
+                ],
+              },
+              {
+                id: "mc-women-grenoble",
+                labelKo: "스키 & 아웃도어",
+                href: "/shop?category=luxury&sub=mc-women-grenoble",
+                children: [
+                  { id: "mc-w-gren-jackets", labelKo: "스키 재킷", href: "/shop?category=luxury&sub=mc-w-gren-jackets" },
+                  { id: "mc-w-gren-layers", labelKo: "미드 & 베이스 레이어", href: "/shop?category=luxury&sub=mc-w-gren-layers" },
+                  { id: "mc-w-gren-trousers", labelKo: "스키 트라우저", href: "/shop?category=luxury&sub=mc-w-gren-trousers" },
+                  { id: "mc-w-gren-accessories", labelKo: "스키 액세서리", href: "/shop?category=luxury&sub=mc-w-gren-accessories" },
                 ],
               },
             ],
@@ -7811,6 +7962,16 @@ export const navCategories: NavCategory[] = [
               { id: "mc-shoes-sandals", labelKo: "샌들 & 슬라이더", href: "/shop?category=shoes&sub=mc-shoes-sandals" },
             ],
           },
+          {
+            id: "mc-shoes-women",
+            labelKo: "여성용",
+            href: "/shop?category=shoes&sub=mc-shoes-women",
+            children: [
+              { id: "mc-w-shoes-sneakers", labelKo: "트레이너", href: "/shop?category=shoes&sub=mc-w-shoes-sneakers" },
+              { id: "mc-w-shoes-boots", labelKo: "부츠", href: "/shop?category=shoes&sub=mc-w-shoes-boots" },
+              { id: "mc-w-shoes-sandals", labelKo: "샌들 & 슬라이드", href: "/shop?category=shoes&sub=mc-w-shoes-sandals" },
+            ],
+          },
         ],
       },
       {
@@ -8557,6 +8718,19 @@ export const navCategories: NavCategory[] = [
               { id: "mc-acc-perfume", labelKo: "향수", href: "/shop?category=accessories&sub=mc-acc-perfume" },
               { id: "mc-acc-helmets", labelKo: "스키 헬멧", href: "/shop?category=accessories&sub=mc-acc-helmets" },
               { id: "mc-acc-bags", labelKo: "백 & 스몰 액세서리", href: "/shop?category=accessories&sub=mc-acc-bags" },
+            ],
+          },
+          {
+            id: "mc-acc-women",
+            labelKo: "여성용",
+            href: "/shop?category=accessories&sub=mc-acc-women",
+            children: [
+              { id: "mc-w-acc-hats", labelKo: "햇 & 비니", href: "/shop?category=accessories&sub=mc-w-acc-hats" },
+              { id: "mc-w-acc-scarves", labelKo: "스카프 & 장갑", href: "/shop?category=accessories&sub=mc-w-acc-scarves" },
+              { id: "mc-w-acc-sunglasses", labelKo: "선글라스", href: "/shop?category=accessories&sub=mc-w-acc-sunglasses" },
+              { id: "mc-w-acc-perfume", labelKo: "향수", href: "/shop?category=accessories&sub=mc-w-acc-perfume" },
+              { id: "mc-w-acc-helmets", labelKo: "헬멧 & 고글", href: "/shop?category=accessories&sub=mc-w-acc-helmets" },
+              { id: "mc-w-acc-bags", labelKo: "백 & 스몰 액세서리", href: "/shop?category=accessories&sub=mc-w-acc-bags" },
             ],
           },
         ],

@@ -44,18 +44,19 @@ def moncler_bag_misfile(product: dict) -> str | None:
     if not MONCLER_BAG_RE.search(text):
         return None
     cols = product.get("mcCollections") or []
+    leaf = product.get("subcategory")
     official = (
         product.get("category") == "accessories"
-        and product.get("subcategory") == "mc-acc-bags"
+        and leaf in ("mc-acc-bags", "mc-w-acc-bags")
         and "moncler-accessories" in cols
-        and "mc-acc-bags" in cols
+        and leaf in cols
         and not any(c == "moncler-bags" or str(c).startswith("mc-bags-") for c in cols)
     )
     if official:
         return None
     return (
         f"{product.get('id')} is a Moncler bag and must stay on the official "
-        "accessories nav (category 'accessories', subcategory 'mc-acc-bags')"
+        "accessories nav (category 'accessories', subcategory 'mc-acc-bags' or 'mc-w-acc-bags')"
     )
 
 

@@ -170,7 +170,7 @@ function normalizeMonclerSunglasses(rel, products) {
   if (rel !== "mc/mc-catalog.json") return 0;
   let fixed = 0;
   for (const p of products) {
-    if (p.subcategory !== "mc-acc-sunglasses") continue;
+    if (p.subcategory !== "mc-acc-sunglasses" && p.subcategory !== "mc-w-acc-sunglasses") continue;
     const variants = Array.isArray(p.variants) ? p.variants : [];
     const byColor = new Map();
     for (const v of variants) {
@@ -239,16 +239,17 @@ function assertMonclerOfficialNav(rel, products) {
     const text = `${p.name ?? ""} ${p.nameKo ?? ""}`;
     if (!MC_BAG_RE.test(text)) continue;
     const cols = Array.isArray(p.mcCollections) ? p.mcCollections : [];
+    const bagLeaf = p.subcategory === "mc-acc-bags" || p.subcategory === "mc-w-acc-bags";
     const official =
       p.category === "accessories" &&
-      p.subcategory === "mc-acc-bags" &&
+      bagLeaf &&
       cols.includes("moncler-accessories") &&
-      cols.includes("mc-acc-bags") &&
+      cols.includes(p.subcategory) &&
       !cols.some((c) => c === "moncler-bags" || String(c).startsWith("mc-bags-"));
     if (!official) {
       console.error(
         `[catalog-dist] ${p.id} is a Moncler bag. Keep the official site nav: ` +
-          `category "accessories", subcategory "mc-acc-bags". Do not use Briq's bags category.`,
+          `category "accessories", subcategory "mc-acc-bags" or "mc-w-acc-bags". Do not use Briq's bags category.`,
       );
       process.exit(1);
     }

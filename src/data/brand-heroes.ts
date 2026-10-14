@@ -65,7 +65,10 @@ export type BrandKey =
   | "all-saints-shoes"
   | "all-saints-bags"
   | "all-saints-accessories"
-  | "london-undercover";
+  | "london-undercover"
+  | "moncler"
+  | "moncler-shoes"
+  | "moncler-accessories";
 
 export type BrandHeroDef = {
   key: BrandKey;
@@ -564,6 +567,27 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameKo: "런던언더커버",
     // Locked homepage hero (tube handrail + crook umbrella) — top of frame, left backdrop widened for PC.
     images: ["/banners/brand-london-undercover-tube-crook.jpg"],
+  },
+  moncler: {
+    key: "moncler",
+    nameEn: "Moncler",
+    nameKo: "몽클레어",
+    logoSrc: "/brands/moncler.svg",
+    images: ["/banners/brand-moncler.jpg"],
+  },
+  "moncler-shoes": {
+    key: "moncler-shoes",
+    nameEn: "Moncler",
+    nameKo: "몽클레어",
+    logoSrc: "/brands/moncler.svg",
+    images: ["/banners/brand-moncler-shoes.jpg"],
+  },
+  "moncler-accessories": {
+    key: "moncler-accessories",
+    nameEn: "Moncler",
+    nameKo: "몽클레어",
+    logoSrc: "/brands/moncler.svg",
+    images: ["/banners/brand-moncler-accessories.jpg"],
   },
 };
 
@@ -1099,4 +1123,7 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "al-men-wallets": "all-saints-accessories",
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
+  moncler: "moncler",
+  "moncler-shoes": "moncler-shoes",
+  "moncler-accessories": "moncler-accessories",
 };

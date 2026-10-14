@@ -65,6 +65,9 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   },
   { re: /^(all-saints|al-(men|women))/i, key: "all-saints" },
   { re: /^(lu-|london-undercover|umbrellas)/i, key: "london-undercover" },
+  { re: /^(moncler-shoes|mc-shoes)/i, key: "moncler-shoes" },
+  { re: /^(moncler-accessories|mc-acc)/i, key: "moncler-accessories" },
+  { re: /^(moncler|mc-)/i, key: "moncler" },
 ];
 
 /**
