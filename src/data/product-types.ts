@@ -55,6 +55,8 @@ export type ProductVariant = {
   psCollections?: SubcategoryId[];
   /** Belstaff PLP memberships. */
   bsCollections?: SubcategoryId[];
+  /** Moncler PLP memberships. */
+  mcCollections?: SubcategoryId[];
   /** Gucci PLP memberships. */
   gcCollections?: SubcategoryId[];
   /** Bottega Veneta PLP memberships. */
@@ -131,6 +133,8 @@ export type Product = {
   psCollections?: SubcategoryId[];
   /** Belstaff PLP memberships. */
   bsCollections?: SubcategoryId[];
+  /** Moncler PLP memberships. */
+  mcCollections?: SubcategoryId[];
   /** Gucci PLP memberships. */
   gcCollections?: SubcategoryId[];
   /** Bottega Veneta PLP memberships. */

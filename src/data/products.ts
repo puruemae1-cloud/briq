@@ -625,6 +625,7 @@ export function getProductsByCategory(
       if (p.luCollections?.some((c) => expanded.includes(c))) return true;
       if (p.psCollections?.some((c) => expanded.includes(c))) return true;
       if (p.bsCollections?.some((c) => expanded.includes(c))) return true;
+      if (p.mcCollections?.some((c) => expanded.includes(c))) return true;
       if (p.gcCollections?.some((c) => expanded.includes(c))) return true;
       if (p.bvCollections?.some((c) => expanded.includes(c))) return true;
       if (p.chCollections?.some((c) => expanded.includes(c))) return true;
@@ -647,6 +648,8 @@ export function getProductsByCategory(
       if (p.variants?.some((v) => v.psCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bsCollections?.some((c) => expanded.includes(c))))
+        return true;
+      if (p.variants?.some((v) => v.mcCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.gcCollections?.some((c) => expanded.includes(c))))
         return true;

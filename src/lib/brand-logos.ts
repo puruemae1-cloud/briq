@@ -26,6 +26,7 @@ const FAMILY_DISPLAY: Record<string, string> = {
   "galvin-green": "Galvin Green",
   prada: "Prada",
   "all-saints": "AllSaints",
+  moncler: "Moncler",
   hermes: "Hermès",
 };
 

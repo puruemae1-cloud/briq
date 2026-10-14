@@ -31,6 +31,7 @@ const FAMILY_RANK: Record<string, number> = {
   mulberry: 260,
   prada: 265,
   "all-saints": 270,
+  moncler: 272,
   "galvin-green": 275,
   /** Slot for newly added brands — always after known houses, before Burberry. */
   _new: 280,
@@ -106,6 +107,9 @@ function brandFamily(id: string): string | null {
   }
   if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) {
     return "galvin-green";
+  }
+  if (x === "moncler" || x.startsWith("moncler-") || x.startsWith("mc-")) {
+    return "moncler";
   }
   return null;
 }
