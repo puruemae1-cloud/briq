@@ -45,12 +45,16 @@ export function stockSortRank(product: Product): number {
   return isProductInStock(product) ? 0 : 1;
 }
 
-/** Newest first by `updatedAt ?? registeredAt` (ISO). Missing dates sort last. */
+/**
+ * 최신등록순: newest `registeredAt` first, `updatedAt` only breaks ties.
+ * Weekly syncs re-stamp `updatedAt` on every existing row, so ranking by it
+ * would float whichever brand synced last above genuinely new products.
+ */
 export function compareProductsByNewest(a: Product, b: Product): number {
-  const diff = updatedAtMs(b) - updatedAtMs(a);
-  if (diff !== 0) return diff;
   const registeredDiff = registeredAtMs(b) - registeredAtMs(a);
   if (registeredDiff !== 0) return registeredDiff;
+  const diff = updatedAtMs(b) - updatedAtMs(a);
+  if (diff !== 0) return diff;
   return a.id.localeCompare(b.id);
 }
 
@@ -280,7 +284,7 @@ export function sortProducts(list: Product[], sort: ProductSort): Product[] {
 }
 
 /**
- * Homepage lookbook rails — newest catalogue update first.
+ * Homepage lookbook rails — newest registered first.
  * Prefers in-stock styles so OOS newest items don't occupy the rail.
  *
  * Prefer ``assignHomepageCategoryRails`` / ``getHomepageRailProductsExclusive``

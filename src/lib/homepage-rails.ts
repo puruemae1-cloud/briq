@@ -16,6 +16,11 @@ const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
   luxury: new Set(["arcteryx", "belstaff"]),
 };
 
+/** Minimum distinct brands on a rail, so one new launch cannot fill every slot. */
+const RAIL_MIN_BRANDS: Record<string, number> = {
+  luxury: 3,
+};
+
 /** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
 export const HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases";
 export const HOMEPAGE_WATCHES_BRAND = "christopher-ward";
@@ -50,6 +55,7 @@ const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "ps-", brand: "paul-smith" },
   { prefix: "cw-", brand: "christopher-ward" },
   { prefix: "lu-", brand: "london-undercover" },
+  { prefix: "mc-", brand: "moncler" },
 ];
 
 const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
@@ -69,6 +75,7 @@ const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
   { re: /paul\s*smith|폴\s*스미스/i, brand: "paul-smith" },
   { re: /christopher\s*ward|크리스토퍼/i, brand: "christopher-ward" },
   { re: /london\s*undercover|런던언더커버/i, brand: "london-undercover" },
+  { re: /moncler|몽클레/i, brand: "moncler" },
 ];
 
 /** Stable brand key for homepage cross-rail exclusivity. */
@@ -94,11 +101,16 @@ export function homepageBrandKey(product: Product): string {
  * Pick up to `limit` newest in-stock products, skipping brands in `excludeBrands`.
  * Does not soft-fill with excluded brands — empty slots stay empty so another
  * brand can surface rather than repeating a brand already on an earlier rail.
+ *
+ * With `minBrands`, a repeat of an already-picked brand is skipped while the
+ * remaining slots are needed to reach that many brands; skipped products only
+ * back-fill when the pool has too few brands.
  */
 export function getHomepageRailProductsExclusive(
   list: Product[],
   limit = 4,
   excludeBrands: ReadonlySet<string> = new Set(),
+  minBrands = 1,
 ): Product[] {
   const inStock = list.filter((p) => isProductInStock(p));
   const eligible = (inStock.length >= limit ? inStock : list).filter(
@@ -106,13 +118,27 @@ export function getHomepageRailProductsExclusive(
   );
   const pool = sortProducts(eligible, "new");
   const out: Product[] = [];
+  const brands = new Set<string>();
+  const skipped: Product[] = [];
   for (const product of pool) {
     const key = homepageBrandKey(product);
     if (excludeBrands.has(key)) continue;
+    if (brands.has(key)) {
+      const slotsAfter = limit - out.length - 1;
+      if (minBrands - brands.size > slotsAfter) {
+        skipped.push(product);
+        continue;
+      }
+    }
     out.push(product);
+    brands.add(key);
     if (out.length >= limit) break;
   }
-  return out;
+  for (const product of skipped) {
+    if (out.length >= limit) break;
+    out.push(product);
+  }
+  return sortProducts(out, "new");
 }
 
 /**
@@ -149,6 +175,7 @@ export function assignHomepageCategoryRails(
       pool,
       limit,
       railExclude,
+      RAIL_MIN_BRANDS[rail.railId] ?? 1,
     );
     result[rail.railId] = picked;
     for (const product of picked) {
