@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-14T19:59:47Z",
+  "generatedAt": "2026-10-15T17:41:38Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "mc-w-guyane-hooded-insulated-ski-jacket",
-        "mc-w-danses-insulated-ski-jacket",
-        "mc-w-larosiere-insulated-ski-jacket",
-        "mc-w-lamouras-hooded-down-ski-jacket"
+        "bv-a003brv6zf02201",
+        "bv-875133v6ib02188",
+        "bv-871198v6or01010",
+        "bv-875219v6oe01010"
       ],
       "brands": [
-        "몽클레어",
-        "몽클레어",
-        "몽클레어",
-        "몽클레어"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -32,44 +32,44 @@
     },
     "bags": {
       "productIds": [
-        "bv-857931v2hl03123",
-        "bv-855504v2hl12166",
-        "bv-855504v2hl11913",
-        "bv-857931v2hl08803"
+        "mb-xl-delilah",
+        "mb-woven-tote",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "mc-w-vera-high-suede-shearling-lace-up-boots",
+        "mc-w-vera-edge-leather-ankle-boots",
+        "mc-w-vera-high-suede-lace-up-boots",
+        "mc-w-vera-high-nubuck-lace-up-boots"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "몽클레어",
+        "몽클레어",
+        "몽클레어",
+        "몽클레어"
       ]
     },
     "accessories": {
       "productIds": [
-        "ce-4s226cplb-19rh",
-        "mb-zipped-flat-pouch",
-        "mb-zipped-credit-card-slip",
-        "mb-wine-carrier"
+        "ps-paul-smith-for-manchester-united-dark-red-signature-stripe-lambswool-blend-scarf",
+        "ps-brown-merino-wool-twisted-stripe-scarf",
+        "ps-pistachio-green-velvet-pre-tied-bow-tie",
+        "ps-dark-brown-velvet-pre-tied-bow-tie"
       ],
       "brands": [
-        "celine",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "sports": {
@@ -88,9 +88,6 @@
     }
   },
   "brands": {
-    "celine": [
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -104,26 +101,28 @@
       "sports"
     ],
     "mulberry": [
-      "accessories",
-      "accessories",
-      "accessories"
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ],
     "paul-smith": [
+      "accessories",
       "accessories",
       "accessories",
       "accessories"
     ],
     "몽클레어": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
+    ],
+    "보테가-베네타": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
-    ],
-    "보테가-베네타": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
     ]
   },
   "overlaps": {},
