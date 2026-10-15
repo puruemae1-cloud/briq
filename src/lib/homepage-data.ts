@@ -6,10 +6,7 @@ import {
   toProductCardProduct,
 } from "@/data/products";
 import { curateCollectionEdit } from "@/lib/collection-edit";
-import {
-  assignHomepageCategoryRails,
-  HOMEPAGE_WATCHES_COLLECTION,
-} from "@/lib/homepage-rails";
+import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
 
 /**
  * Builds the homepage product cards from the full brand catalogues.
@@ -35,10 +32,7 @@ export function buildHomepageData(): HomepageData {
     .filter((b) => b.categoryId)
     .map((b) => ({
       railId: b.id,
-      products:
-        b.id === "watches"
-          ? getHomepageCategoryProducts("watches", HOMEPAGE_WATCHES_COLLECTION)
-          : getHomepageCategoryProducts(b.categoryId),
+      products: getHomepageCategoryProducts(b.categoryId),
     }));
   const rails = assignHomepageCategoryRails(categoryRails, 4);
   const curated = curateCollectionEdit(getCollection100());

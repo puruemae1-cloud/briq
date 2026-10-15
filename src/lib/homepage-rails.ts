@@ -1,3 +1,4 @@
+import { HOME_FEATURED, HOME_FEATURED_DAYS } from "@/data/home-featured";
 import type { Product } from "@/data/product-types";
 import { isProductInStock } from "@/data/product-utils";
 import { isHomepageSwimwearProduct } from "@/lib/homepage-product-filters";
@@ -25,9 +26,36 @@ const RAIL_MIN_BRANDS: Record<string, number> = {
 export const HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases";
 export const HOMEPAGE_WATCHES_BRAND = "christopher-ward";
 
+/**
+ * `featuredAt` ms for products in `HOME_FEATURED` that are still within
+ * `HOME_FEATURED_DAYS` and in stock; otherwise null.
+ */
+export function homepageFeaturedAt(product: Product, now = Date.now()): number | null {
+  const entry = HOME_FEATURED.find((e) => e.id === product.id);
+  if (!entry) return null;
+  const at = Date.parse(entry.featuredAt);
+  if (!Number.isFinite(at)) return null;
+  if (now - at > HOME_FEATURED_DAYS * 24 * 60 * 60 * 1000) return null;
+  return isProductInStock(product) ? at : null;
+}
+
+/** Featured products first (newest `featuredAt`), the rest newest registered. */
+function sortWithFeaturedFirst(list: Product[]): Product[] {
+  const featured: Array<{ product: Product; at: number }> = [];
+  const rest: Product[] = [];
+  for (const product of list) {
+    const at = homepageFeaturedAt(product);
+    if (at == null) rest.push(product);
+    else featured.push({ product, at });
+  }
+  featured.sort((a, b) => b.at - a.at);
+  return [...featured.map((f) => f.product), ...sortProducts(rest, "new")];
+}
+
 /** True when a product belongs on the homepage watches lookbook rail. */
 export function isHomepageWatchesRailProduct(product: Product): boolean {
   if (homepageBrandKey(product) !== HOMEPAGE_WATCHES_BRAND) return false;
+  if (homepageFeaturedAt(product) != null) return true;
   if (product.subcategory === HOMEPAGE_WATCHES_COLLECTION) return true;
   if (product.cwCollections?.some((c) => c === HOMEPAGE_WATCHES_COLLECTION)) {
     return true;
@@ -116,13 +144,13 @@ export function getHomepageRailProductsExclusive(
   const eligible = (inStock.length >= limit ? inStock : list).filter(
     (p) => !isHomepageSwimwearProduct(p),
   );
-  const pool = sortProducts(eligible, "new");
+  const pool = sortWithFeaturedFirst(eligible);
   const out: Product[] = [];
   const brands = new Set<string>();
   const skipped: Product[] = [];
   for (const product of pool) {
     const key = homepageBrandKey(product);
-    if (excludeBrands.has(key)) continue;
+    if (excludeBrands.has(key) && homepageFeaturedAt(product) == null) continue;
     if (brands.has(key)) {
       const slotsAfter = limit - out.length - 1;
       if (minBrands - brands.size > slotsAfter) {
@@ -138,7 +166,7 @@ export function getHomepageRailProductsExclusive(
     if (out.length >= limit) break;
     out.push(product);
   }
-  return sortProducts(out, "new");
+  return sortWithFeaturedFirst(out);
 }
 
 /**
@@ -146,7 +174,8 @@ export function getHomepageRailProductsExclusive(
  * earlier rail are excluded from later rails.
  *
  * Watches is special-cased: always Christopher Ward New Releases (newest
- * in-stock), independent of other brands' `registeredAt` stamps.
+ * in-stock), independent of other brands' `registeredAt` stamps. On every
+ * rail, `HOME_FEATURED` entries lead.
  */
 export function assignHomepageCategoryRails(
   rails: HomepageRailSpec[],

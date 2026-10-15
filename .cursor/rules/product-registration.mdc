@@ -32,3 +32,8 @@ When adding products:
 8. **Always ship end-to-end on product-registration requests** — catalogue + nav/categories +
    Korean check + `product-images` CDN push/verify + **commit + push to `main`**.
    Do not stop at local WIP or ask “배포할까요?”. See `auto-deploy.mdc`.
+9. **Manual add / restock / update requests must lead the homepage rail.** Append
+   `{ id, featuredAt: now, note }` to `HOME_FEATURED` in `src/data/home-featured.ts`.
+   Rails (incl. the CW-New-Releases-only watches rail) put these first for
+   `HOME_FEATURED_DAYS` while in stock. Do not re-stamp `registeredAt` for
+   existing ids, and do not rely on catalogue fields — brand syncs regenerate them.
