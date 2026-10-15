@@ -8,8 +8,9 @@ import type { HomepageData } from "@/lib/homepage-data";
  * import `@/lib/homepage-data` or `@/data/products`.
  *
  * At build time the production host is still the previous deployment, so the
- * prerendered cards can be one deploy behind. Responses carry `deployKey`;
- * `/api/home-data/refresh` (called after every deploy) re-fetches when stale.
+ * prerendered cards can be one deploy behind. Responses carry `deployKey`
+ * (rendered as `data-cards-deploy`); `/api/home-data/refresh`, called after
+ * every deploy, re-renders the homepage when it doesn't match.
  */
 export const HOMEPAGE_DEPLOY_KEY =
   process.env.VERCEL_DEPLOYMENT_ID ||
@@ -18,11 +19,6 @@ export const HOMEPAGE_DEPLOY_KEY =
 export const HOMEPAGE_DATA_TAG = "home-data";
 const TTL_SECONDS = 3600;
 const EMPTY: HomepageData = { rails: {}, signature: [], newItems: [] };
-
-/** True when the cards were built by this deployment's code. */
-export function isCurrentHomepageData(data: HomepageData): boolean {
-  return data.deployKey === HOMEPAGE_DEPLOY_KEY;
-}
 
 function feedUrl(): string | null {
   const host = process.env.VERCEL_PROJECT_PRODUCTION_URL;

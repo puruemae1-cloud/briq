@@ -23,8 +23,8 @@ export default async function HomePage() {
   const heroFocal = bannerFocalForSrc(heroImage, "50% 50%");
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
-  // Watches rail is locked to Christopher Ward New Releases on every device.
-  const { rails: railProducts } = await getHomepageData();
+  // Watches rail is locked to Christopher Ward New Releases (+ HOME_FEATURED).
+  const { rails: railProducts, deployKey } = await getHomepageData();
 
   return (
     <>
@@ -54,7 +54,11 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <div className="lookbook" aria-label="Briq lookbook">
+      <div
+        className="lookbook"
+        aria-label="Briq lookbook"
+        data-cards-deploy={deployKey ?? "none"}
+      >
         {homeLookBanners.map((banner) => {
           const products = banner.categoryId
             ? railProducts[banner.id] || []
