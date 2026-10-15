@@ -35,6 +35,19 @@ jobs:
       LIMIT: "8"
       ROUNDS: ${{ github.event_name == 'schedule' && '3' || '1' }}
     steps:
+      - name: Refresh stale homepage cards
+        run: |
+          # The homepage prerender reads cards from the previous deployment
+          # (production host isn't switched yet), so new rail picks would wait
+          # up to an hour. The route only revalidates when the cache is stale.
+          for i in 1 2 3; do
+            out=$(curl -s -m 90 -H "User-Agent: briq-speed-guard" "$SITE/api/home-data/refresh" || true)
+            echo "refresh$i $out"
+            case "$out" in *'"stale":true'*) ;; *) break ;; esac
+            curl -s -o /dev/null -m 90 "$SITE/" || true
+            sleep 10
+          done
+
       - name: Fill cache after deploy
         if: github.event_name == 'deployment_status'
         run: |

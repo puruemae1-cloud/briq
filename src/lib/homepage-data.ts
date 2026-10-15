@@ -20,6 +20,8 @@ export type HomepageData = {
   rails: Record<string, Product[]>;
   signature: Product[];
   newItems: Product[];
+  /** Deployment that built these cards (set by `/api/home-data`). */
+  deployKey?: string;
 };
 
 let memo: HomepageData | null = null;
