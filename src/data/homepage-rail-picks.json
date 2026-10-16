@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-15T18:05:13Z",
+  "generatedAt": "2026-10-16T17:28:26Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
         "bv-a003brv6zf02201",
+        "bv-874364v6n602112",
         "bv-875133v6ib02188",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010"
+        "bv-871198v6or01010"
       ],
       "brands": [
         "보테가-베네타",
@@ -18,10 +18,10 @@
     },
     "watches": {
       "productIds": [
+        "cw-c01-41h6d1-s00b1-b1",
         "cw-c01-39ajh5-s00w0-mt",
         "cw-c63-41ach4-s0kk0-b0",
-        "cw-c60-39agm1-s0rk0-b1",
-        "cw-c60-39c3h1-b0kk0-vt1"
+        "cw-c60-39agm1-s0rk0-b1"
       ],
       "brands": [
         "christopher-ward",
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "mc-w-vera-high-suede-shearling-lace-up-boots",
-        "mc-w-vera-edge-leather-ankle-boots",
-        "mc-w-vera-high-suede-lace-up-boots",
-        "mc-w-vera-high-nubuck-lace-up-boots"
-      ],
-      "brands": [
-        "몽클레어",
-        "몽클레어",
-        "몽클레어",
-        "몽클레어"
-      ]
-    },
-    "accessories": {
-      "productIds": [
-        "ps-paul-smith-for-manchester-united-dark-red-signature-stripe-lambswool-blend-scarf",
-        "ps-brown-merino-wool-twisted-stripe-scarf",
-        "ps-pistachio-green-velvet-pre-tied-bow-tie",
-        "ps-dark-brown-velvet-pre-tied-bow-tie"
+        "ps-black-rye-trainers",
+        "ps-black-sidney-chelsea-boots",
+        "ps-blue-suede-minky-trainers",
+        "ps-dark-navy-como-trainers"
       ],
       "brands": [
         "paul-smith",
         "paul-smith",
         "paul-smith",
         "paul-smith"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "mc-w-new-trick-water-repellent-tote-bag",
+        "mc-w-makaio-crossbody-bag",
+        "mc-w-caradoc-mini-tote-bag",
+        "mc-w-very-micro-tote-bag"
+      ],
+      "brands": [
+        "몽클레어",
+        "몽클레어",
+        "몽클레어",
+        "몽클레어"
       ]
     },
     "sports": {
@@ -107,16 +107,16 @@
       "bags"
     ],
     "paul-smith": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "몽클레어": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
+    ],
+    "몽클레어": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "보테가-베네타": [
       "luxury",
