@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-15T18:27:19.971140+00:00",
+  "scrapedAt": "2026-10-16T17:56:06.046516+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -2309,7 +2309,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-travel-pouch-midnight-taxi-729295V6UF04161.html",
       "gbpPrice": 1440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Hardware: Silver finish",
         "Colour: Midnight/Taxi",
@@ -2346,7 +2346,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1440.0,
           "listGbpPrice": null
         }

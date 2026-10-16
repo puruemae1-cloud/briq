@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-10-15T18:26:20.718029+00:00",
+  "scrapedAt": "2026-10-16T17:55:04.519500+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -3929,7 +3929,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-zip-around-wallet-black-796967V4LQ18803.html",
       "gbpPrice": 770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -3964,7 +3964,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 770.0,
           "listGbpPrice": null
         }
@@ -4960,7 +4960,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-long-wallet-black-749436VCPQ51005.html",
       "gbpPrice": 700.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black"
@@ -4992,7 +4992,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         }
@@ -6598,7 +6598,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-barolo-814091VCPP32247.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Barolo",
@@ -6633,7 +6633,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -9522,7 +9522,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-travel-pouch-midnight-taxi-729295V6UF04161.html",
       "gbpPrice": 1440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Hardware: Silver finish",
         "Colour: Midnight/Taxi",
@@ -9559,7 +9559,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1440.0,
           "listGbpPrice": null
         }
@@ -11047,8 +11047,42 @@
       "material": "",
       "productCare": "• Protect from direct light, heat and rain. Should it become wet, dry it immediately with a soft cloth. \n• Store in the provided flannel bag or case. \n• Clean with a soft, dry cloth. \n• For additional information please contact our Customer care .",
       "sizeModel": "• Height: 10.5 cm | 4.1” \n\n• Width: 7 cm | 2.8” \n\n• Depth: 0.5 cm | 0.2” \n\n• Strap drop: 45 cm | 17.7”",
-      "sizeChartId": "",
-      "sizeGuide": null,
+      "sizeChartId": "default-W-GLOVES",
+      "sizeGuide": {
+        "id": "default-W-GLOVES",
+        "titleKo": "Women's Gloves",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "6",
+            "XS"
+          ],
+          [
+            "6.5",
+            "S"
+          ],
+          [
+            "7",
+            "S"
+          ],
+          [
+            "7.5",
+            "M"
+          ],
+          [
+            "8",
+            "L"
+          ],
+          [
+            "8.5",
+            "L"
+          ]
+        ]
+      },
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/3e484fc5-5aab-4514-8e87-38586eae3ddb/eCom/785985VCPQ38803_A.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/3bfdc151-24c2-4e9d-a177-a369ad131c93/eCom/785985VCPQ38803_B.jpg?v=5",

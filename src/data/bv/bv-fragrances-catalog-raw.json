@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-15T19:41:44.011636+00:00",
+  "scrapedAt": "2026-10-16T19:18:21.671862+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -366,7 +366,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/montebello---eau-de-parfum-100-ml-%7C-3.3-fl.-oz.-montebello-A006YWVV5709980.html",
       "gbpPrice": 230.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -405,7 +405,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 230.0,
           "listGbpPrice": null
         }
