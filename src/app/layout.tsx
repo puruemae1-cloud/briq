@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Fraunces, Nanum_Myeongjo, Outfit } from "next/font/google";
 import { BackToTop } from "@/components/BackToTop";
 import { JsonLd } from "@/components/JsonLd";
@@ -111,6 +112,7 @@ export default async function RootLayout({
         </div>
         <BackToTop />
         <NaverWcsScript />
+        <Analytics />
       </body>
     </html>
   );
