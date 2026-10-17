@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-16T17:17:23.465889+00:00",
+  "scrapedAt": "2026-10-17T16:09:31.372730+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -46,8 +46,8 @@
       "scraped": 69
     },
     "bv-men-bags-tote": {
-      "official": 58,
-      "scraped": 58
+      "official": 60,
+      "scraped": 60
     },
     "bv-men-bags-backpack": {
       "official": 13,
@@ -3585,7 +3585,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-belt-bag-belt-bag-bark-green-805773V4FV13770.html",
       "gbpPrice": 1710.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Bark Green",
@@ -3626,7 +3626,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1710.0,
           "listGbpPrice": null
         }
@@ -13432,6 +13432,149 @@
       ],
       "leafId": "bv-men-bags-crossbody",
       "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A006KIV74W03348",
+      "sku": "A006KIV74W03348",
+      "internalId": "814398286",
+      "name": "Large Triangolo Bucket",
+      "brand": "bottega veneta",
+      "color": "Olive oil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/large-triangolo-bucket-olive-oil-A006KIV74W03348.html",
+      "url": "https://www.bottegaveneta.com/en-gb/large-triangolo-bucket-olive-oil-A006KIV74W03348.html",
+      "gbpPrice": 6680.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Wool bonded Intreccio",
+        "Colour: Olive Oil",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Large Intrecciato leather bucket bag with handle",
+        "Single interior zipped pocket",
+        "Hook closure"
+      ],
+      "compactedLongDesc": "Bucket bag with geometric silhouette in supple Intrecciato leather.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "USE AND CARE\n\nThis item is the product of artisanal craftsmanship and made with our finest materials. Any variations or irregularities are normal characteristics that make each piece unique. \n\nStore and handle with care. We recommend using the fabric bag provided. Avoid contact with any liquids, moisture, direct sunlight, sources of heat and abrasive surfaces.",
+      "sizeModel": "• Height: 48 cm | 18.9”\n\n• Width: 32 cm | 12.6”\n\n• Depth: 32 cm | 12.6”\n\n• Handle drop: 25 cm | 9.8”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/f01e4b5d-c635-44b1-94d6-73e9fc475f5b/eCom/A006KIV74W03348_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/687eb409-6d0d-48bf-9dcc-6167d809a0a6/eCom/A006KIV74W03348_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3064279b-65aa-4642-9674-3e87233b5517/eCom/A006KIV74W03348_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6c24ab2c-9ef1-4c99-bb2c-7b098ac98a84/eCom/A006KIV74W03348_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ff61d9fa-1b23-4d39-8be1-60aa9c137e45/eCom/A006KIV74W03348_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e3d87948-988d-4b4d-a48b-1a176954d68d/eCom/A006KIV74W03348_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5d5b454a-ebed-46ef-bc17-be9590031035/eCom/A006KIV74W03348_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6f3b063d-bae7-45e6-b49f-f3e4e63a0f0b/eCom/A006KIV74W03348_I.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f01e4b5d-c635-44b1-94d6-73e9fc475f5b/Small/A006KIV74W03348_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006kiv74w03348/1.jpg",
+        "/products/bv-pdp/a006kiv74w03348/2.jpg",
+        "/products/bv-pdp/a006kiv74w03348/3.jpg",
+        "/products/bv-pdp/a006kiv74w03348/4.jpg",
+        "/products/bv-pdp/a006kiv74w03348/5.jpg",
+        "/products/bv-pdp/a006kiv74w03348/6.jpg",
+        "/products/bv-pdp/a006kiv74w03348/7.jpg",
+        "/products/bv-pdp/a006kiv74w03348/8.jpg",
+        "/products/bv-pdp/a006kiv74w03348/9.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 6680.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A006JSV74U08803",
+      "sku": "A006JSV74U08803",
+      "internalId": "814398283",
+      "name": "Triangolo Bucket",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/triangolo-bucket-black-A006JSV74U08803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/triangolo-bucket-black-A006JSV74U08803.html",
+      "gbpPrice": 4900.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede bonded Intreccio",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather bucket bag with a single handle",
+        "Single interior zipped pocket and a hook closure"
+      ],
+      "compactedLongDesc": "Bucket bag with geometric silhouette in supple Intrecciato leather.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 37 cm | 14.6”\n\n• Width: 23 cm | 9”\n\n• Depth: 23 cm | 9”\n\n• Handle drop: 30 cm | 11.8”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/99d203a4-69e3-4ef1-aa62-d520de9cb58e/eCom/A006JSV74U08803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8f4308f7-31e6-49b7-94d6-372e7d248f77/eCom/A006JSV74U08803_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/94f886e8-0652-4926-b55d-f21436e27ad2/eCom/A006JSV74U08803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/07c292e3-7b70-47fb-a6a1-a5d379692fd8/eCom/A006JSV74U08803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9148e985-bcf7-4b85-a19b-63d3f7965f8b/eCom/A006JSV74U08803_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/23ded21d-13fc-4dee-8307-a407b8ee5587/eCom/A006JSV74U08803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/12a7e9b5-bae9-4a9d-89d6-4a2e49a609b5/eCom/A006JSV74U08803_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/99d203a4-69e3-4ef1-aa62-d520de9cb58e/Small/A006JSV74U08803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006jsv74u08803/1.jpg",
+        "/products/bv-pdp/a006jsv74u08803/2.jpg",
+        "/products/bv-pdp/a006jsv74u08803/3.jpg",
+        "/products/bv-pdp/a006jsv74u08803/4.jpg",
+        "/products/bv-pdp/a006jsv74u08803/5.jpg",
+        "/products/bv-pdp/a006jsv74u08803/6.jpg",
+        "/products/bv-pdp/a006jsv74u08803/7.jpg",
+        "/products/bv-pdp/a006jsv74u08803/8.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4900.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
       "hubCategory": "bags"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-16T18:17:52.951293+00:00",
+  "scrapedAt": "2026-10-17T17:07:01.223191+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -32,8 +32,8 @@
       "scraped": 59
     },
     "bv-women-bags-shoulder": {
-      "official": 65,
-      "scraped": 65
+      "official": 66,
+      "scraped": 66
     },
     "bv-women-bags-top-handle": {
       "official": 68,
@@ -6157,8 +6157,8 @@
         "bv-women-bags-mini",
         "bv-women-bags-shoulder"
       ],
-      "leafId": "bv-women-bags-shoulder",
-      "cgid": "women-shoulder-bags",
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
       "hubCategory": "bags"
     },
     {
@@ -9500,7 +9500,7 @@
         "https://bottega-veneta.dam.kering.com/asset/eff23c8e-8ef0-4560-a330-15e5aeb662d5/eCom/A008QVV6JG01019_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/0a0ec919-eca5-432d-8eca-250d7e2787ee/eCom/A008QVV6JG01019_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/76e9302d-00b4-4b74-9982-60b04398bb3a/eCom/A008QVV6JG01019_D.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/3b8a3156-6c63-4848-b985-15196361f212/eCom/A008QVV6JG01019_E.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/3b8a3156-6c63-4848-b985-15196361f212/eCom/A008QVV6JG01019_E.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/asset/f2fae7bf-cc10-468e-9a2a-e07d0a717a36/eCom/A008QVV6JG01019_G.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/eff23c8e-8ef0-4560-a330-15e5aeb662d5/Small/A008QVV6JG01019_A.jpg?v=3"
       ],
@@ -10947,7 +10947,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-jodie-travertine-690225VCPP02916.html",
       "gbpPrice": 3120.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Travertine",
@@ -10988,7 +10988,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
@@ -14286,7 +14286,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-top-handle",
-        "bv-women-bags-sardine"
+        "bv-women-bags-sardine",
+        "bv-women-bags-shoulder"
       ],
       "leafId": "bv-women-bags-sardine",
       "cgid": "women-sardine",
@@ -17446,7 +17447,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/lauren-1979-midnight-871206V0HW04346.html",
       "gbpPrice": 3460.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Midnight",
@@ -17492,7 +17493,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3460.0,
           "listGbpPrice": null
         }
@@ -22538,7 +22539,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-madison"
+        "bv-women-bags-madison",
+        "bv-women-bags-shoulder"
       ],
       "leafId": "bv-women-bags-madison",
       "cgid": "women-madison",
@@ -23961,14 +23963,14 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/83c00d0a-6406-4021-a3b3-8437e10b4a22/eCom/766016V5ZZ19910_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/83c00d0a-6406-4021-a3b3-8437e10b4a22/eCom/766016V5ZZ19910_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/94fd503f-6c3b-4ef8-9c86-4ddc759c8847/eCom/766016V5ZZ19910_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/69bd1e39-7b30-4e70-8e66-725ce8d973ea/eCom/766016V5ZZ19910_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/d5ccd838-2704-4fec-9a0a-61e7003cec31/eCom/766016V5ZZ19910_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/d5ccd838-2704-4fec-9a0a-61e7003cec31/eCom/766016V5ZZ19910_D.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/9400c277-d46e-4bd3-bd71-8bd48ba87301/eCom/766016V5ZZ19910_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/0169ca7d-c7bb-47ec-bd5c-6fb7756be2f5/eCom/766016V5ZZ19910_G.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3d0b2870-7afc-46f2-9560-3320378224bb/eCom/766016V5ZZ19910_H.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/83c00d0a-6406-4021-a3b3-8437e10b4a22/Small/766016V5ZZ19910_A.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/83c00d0a-6406-4021-a3b3-8437e10b4a22/Small/766016V5ZZ19910_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/766016v5zz19910/1.jpg",

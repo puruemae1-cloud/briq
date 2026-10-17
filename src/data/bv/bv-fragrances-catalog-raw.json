@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-16T19:18:21.671862+00:00",
+  "scrapedAt": "2026-10-17T17:57:25.696738+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -1787,7 +1787,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/hinoki---parfum-100-ml-deep-blue-863880VV5709980.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -1827,7 +1827,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -1854,7 +1854,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/lantern-glaze-candle-yellow-white-black-788704VV5709980.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Fragrance notes: incense essence, suede rose, vetiver essence",
         "Volcanic glazes are high temperature glazes. Artisans have studied and developed them to be able to apply them to the low temperature clays, following two years of research",
@@ -1898,7 +1898,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -1994,7 +1994,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/raintree-glaze-candle-green-white-black-788735VV5709980.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Fragrance notes: fig leaves, thyme essence, lavender absolute",
         "Volcanic glazes are high temperature glazes. Artisans have studied and developed them to be able to apply them to the low temperature clays, following two years of research",
@@ -2038,7 +2038,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
