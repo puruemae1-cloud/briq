@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Briq",
+    "slug": "briq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "briq",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b1210"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.richmond.briq"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0b1210",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.richmond.briq",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router"]
+  }
+}
