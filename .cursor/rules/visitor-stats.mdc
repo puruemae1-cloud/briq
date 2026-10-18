@@ -1,0 +1,17 @@
+---
+description: When asked about Briq visitors, report South Korea separately from Vercel Web Analytics
+alwaysApply: true
+---
+
+# Visitor counts
+
+Web Analytics is already enabled and the site loads the Vercel script. Country is recorded from the visitor's IP. When the user asks about visitors, traffic, or 방문자수, answer from the Web Analytics API (`visits/count` and `visits/aggregate`) for project `briq`.
+
+Always include South Korea (`filter`: `country eq 'KR'`), not only the worldwide total:
+
+- Today in Asia/Seoul
+- Last 7 days
+- Last 30 days (or since tracking started, 2026-10-17, if shorter)
+- Worldwide total beside the Korea number, plus the country breakdown
+
+UK and US hits are often our own checks. Say so when those countries dominate and Korea is the figure they asked for. Do not print Vercel tokens.
