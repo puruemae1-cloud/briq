@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-17T16:49:47.807484+00:00",
+  "scrapedAt": "2026-10-18T17:03:24.707108+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -7218,7 +7218,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7777,7 +7777,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -13176,7 +13176,7 @@
           "id": "9_5",
           "value": "9_5",
           "displayValue": "9.5",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         }
@@ -13560,7 +13560,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 180.0,
           "listGbpPrice": null
         }
@@ -14254,7 +14254,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         },

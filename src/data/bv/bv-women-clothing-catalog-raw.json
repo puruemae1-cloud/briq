@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-17T17:46:06.105515+00:00",
+  "scrapedAt": "2026-10-18T17:59:06.580438+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -47052,7 +47052,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2410.0,
           "listGbpPrice": null
         },

@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-17T16:09:31.372730+00:00",
+  "scrapedAt": "2026-10-18T16:22:31.384432+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -5172,7 +5172,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-espresso-lava-red-815796V56A12008.html",
       "gbpPrice": 2850.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Espresso/Lava Red",
@@ -5215,7 +5215,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2850.0,
           "listGbpPrice": null
         }
