@@ -14,4 +14,4 @@ Always include South Korea (`filter`: `country eq 'KR'`), not only the worldwide
 - Last 30 days (or since tracking started, 2026-10-17, if shorter)
 - Worldwide total beside the Korea number, plus the country breakdown
 
-UK and US hits are often our own checks. Say so when those countries dominate and Korea is the figure they asked for. Do not print Vercel tokens.
+Country is the IP Vercel saw (`X-Vercel-IP-Country`), not an account. UK and US hits are often our own checks. The owner's browsers that opened `/?briq-staff=7f3c9a2e1b6d4c80` are excluded going forward (`briq-no-track` in localStorage). Already recorded visits cannot be removed. Do not print Vercel tokens.
