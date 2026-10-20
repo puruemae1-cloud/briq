@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T12:21:53Z",
+  "generatedAt": "2026-10-20T12:58:24Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,10 +32,10 @@
     },
     "bags": {
       "productIds": [
+        "mb-mini-heritage-backpack",
         "mb-xl-delilah",
         "mb-woven-tote",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote"
+        "mb-tree-tote-raffia"
       ],
       "brands": [
         "mulberry",
