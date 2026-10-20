@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-19T15:09:57.537697+00:00",
+  "scrapedAt": "2026-10-20T13:16:18.789277+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -24,12 +24,12 @@
   ],
   "leafCounts": {
     "bv-women-bags-mini": {
-      "official": 91,
-      "scraped": 91
+      "official": 87,
+      "scraped": 87
     },
     "bv-women-bags-crossbody": {
-      "official": 59,
-      "scraped": 59
+      "official": 60,
+      "scraped": 60
     },
     "bv-women-bags-shoulder": {
       "official": 66,
@@ -56,8 +56,8 @@
       "scraped": 63
     },
     "bv-women-bags-barbara": {
-      "official": 17,
-      "scraped": 17
+      "official": 16,
+      "scraped": 16
     },
     "bv-women-bags-campana": {
       "official": 22,
@@ -10947,7 +10947,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-jodie-travertine-690225VCPP02916.html",
       "gbpPrice": 3120.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Travertine",
@@ -10988,7 +10988,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
@@ -13194,7 +13194,8 @@
         "bv-women-bags",
         "bv-women-bags-top-handle",
         "bv-women-bags-andiamo",
-        "bv-women-bags-tote"
+        "bv-women-bags-tote",
+        "bv-women-bags-crossbody"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -15147,8 +15148,8 @@
         "bv-women-bags-tote",
         "bv-women-bags-barbara"
       ],
-      "leafId": "bv-women-bags-barbara",
-      "cgid": "women-barbara",
+      "leafId": "bv-women-bags-tote",
+      "cgid": "women-tote-bags",
       "hubCategory": "bags"
     },
     {
@@ -25279,7 +25280,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-deep-mahogany-A005POV0HW06147.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Deep Mahogany",
@@ -25319,7 +25320,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2580.0,
           "listGbpPrice": null
         }

@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-19T14:44:58.111391+00:00",
+  "scrapedAt": "2026-10-20T12:55:02.165003+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -497,7 +497,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/odyssey-garment-bag-black-867428V60G08803.html",
       "gbpPrice": 5230.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Black",
@@ -535,7 +535,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5230.0,
           "listGbpPrice": null
         }
