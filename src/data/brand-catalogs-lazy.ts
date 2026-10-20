@@ -29,6 +29,7 @@ export type BrandCatalogKey =
   | "lv"
   | "di"
   | "mb"
+  | "ms"
   | "mc";
 
 const ALL_KEYS: BrandCatalogKey[] = [
@@ -49,6 +50,7 @@ const ALL_KEYS: BrandCatalogKey[] = [
   "lv",
   "di",
   "mb",
+  "ms",
   "mc",
 ];
 
@@ -74,6 +76,7 @@ const BAGS_BRAND_KEYS: BrandCatalogKey[] = [
   "pr",
   "di",
   "mb",
+  "ms",
 ];
 
 /** Brands with a shoes-only JSON slice (shoes PLPs must not parse full catalogues). */
@@ -185,6 +188,9 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
   mb: () => {
     return readCatalogJson("mb/mb-catalog.json");
   },
+  ms: () => {
+    return readCatalogJson("ms/ms-catalog.json");
+  },
   mc: () => {
     return readCatalogJson("mc/mc-catalog.json");
   },
@@ -228,6 +234,9 @@ const BAGS_LOADERS: Partial<Record<BrandCatalogKey, Loader>> = {
   },
   mb: () => {
     return readCatalogJson("mb/mb-bags-catalog.json");
+  },
+  ms: () => {
+    return readCatalogJson("ms/ms-catalog.json");
   },
 };
 
@@ -369,6 +378,7 @@ export function brandCatalogKeyFromNavId(
   if (x.startsWith("lv-") || x.includes("louis-vuitton")) return "lv";
   if (x.startsWith("di-") || x.includes("dior")) return "di";
   if (x.startsWith("mb-") || x.includes("mulberry")) return "mb";
+  if (x === "mismo" || x.startsWith("ms-") || x.includes("mismo")) return "ms";
   if (x.startsWith("mc-") || x.includes("moncler")) return "mc";
   return null;
 }
@@ -402,6 +412,7 @@ export function brandCatalogKeyFromProductId(
   if (x.startsWith("lv-")) return "lv";
   if (x.startsWith("di-")) return "di";
   if (x.startsWith("mb-")) return "mb";
+  if (x.startsWith("ms-")) return "ms";
   if (x.startsWith("mc-")) return "mc";
   return null;
 }

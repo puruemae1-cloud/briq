@@ -21,4 +21,24 @@ export const HOME_FEATURED: HomeFeaturedEntry[] = [
     featuredAt: "2026-10-14T21:50:42Z",
     note: "C60 Trident Lumière black bracelet restock",
   },
+  {
+    id: "ms-m-s-tour-army-dark-brown",
+    featuredAt: "2026-10-20T22:40:03Z",
+    note: "Mismo weekend bag",
+  },
+  {
+    id: "ms-aspire-leather-black-black",
+    featuredAt: "2026-10-20T22:40:02Z",
+    note: "Mismo briefcase",
+  },
+  {
+    id: "ms-m-s-mega-tote-tall-army-canvas-tote-bag-for-men-danish-design",
+    featuredAt: "2026-10-20T22:40:01Z",
+    note: "Mismo tote",
+  },
+  {
+    id: "ms-backpack-into-the-deep-black",
+    featuredAt: "2026-10-20T22:40:00Z",
+    note: "Mismo backpack",
+  },
 ];

@@ -1081,6 +1081,18 @@ export type SubcategoryId =
   | "vivienne-westwood-accessories"
   | "vivienne-westwood-watches"
   | "vivienne-westwood-mens-rtw"
+  | "mismo"
+  | "ms-backpacks"
+  | "ms-briefcases"
+  | "ms-weekend"
+  | "ms-totes"
+  | "ms-crossbody"
+  | "ms-suit-carriers"
+  | "ms-washbags"
+  | "ms-home-storage"
+  | "ms-pouches"
+  | "ms-cardholders"
+  | "ms-belts"
   | "mulberry-bags"
   | "mb-women-bags"
   | "mb-women-bags-all"
@@ -4301,6 +4313,21 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
     ...CE_MEN_ACCESSORIES_LEAF_IDS,
   ],
 
+  mismo: [
+    "mismo",
+    "ms-backpacks",
+    "ms-briefcases",
+    "ms-weekend",
+    "ms-totes",
+    "ms-crossbody",
+    "ms-suit-carriers",
+    "ms-washbags",
+    "ms-home-storage",
+    "ms-pouches",
+    "ms-cardholders",
+    "ms-belts",
+  ],
+
   "mulberry-bags": [
     "mulberry-bags",
     "mb-women-bags",
@@ -7489,6 +7516,24 @@ export const navCategories: NavCategory[] = [
         ],
       },
 
+      {
+        id: "mismo",
+        labelKo: "미스모",
+        href: "/shop?category=bags&sub=mismo",
+        children: [
+          { id: "ms-backpacks", labelKo: "백팩", href: "/shop?category=bags&sub=ms-backpacks" },
+          { id: "ms-briefcases", labelKo: "브리프케이스", href: "/shop?category=bags&sub=ms-briefcases" },
+          { id: "ms-weekend", labelKo: "위켄드백", href: "/shop?category=bags&sub=ms-weekend" },
+          { id: "ms-totes", labelKo: "토트백", href: "/shop?category=bags&sub=ms-totes" },
+          { id: "ms-crossbody", labelKo: "크로스바디", href: "/shop?category=bags&sub=ms-crossbody" },
+          { id: "ms-suit-carriers", labelKo: "수트 캐리어", href: "/shop?category=bags&sub=ms-suit-carriers" },
+          { id: "ms-washbags", labelKo: "워시백", href: "/shop?category=bags&sub=ms-washbags" },
+          { id: "ms-home-storage", labelKo: "홈 스토리지", href: "/shop?category=bags&sub=ms-home-storage" },
+          { id: "ms-pouches", labelKo: "파우치 & 커버", href: "/shop?category=bags&sub=ms-pouches" },
+          { id: "ms-cardholders", labelKo: "카드홀더", href: "/shop?category=bags&sub=ms-cardholders" },
+          { id: "ms-belts", labelKo: "벨트 & 액세서리", href: "/shop?category=bags&sub=ms-belts" },
+        ],
+      },
       {
         id: "mulberry-bags",
         labelKo: "멀버리",

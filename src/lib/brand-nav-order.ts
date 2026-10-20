@@ -29,6 +29,7 @@ const FAMILY_RANK: Record<string, number> = {
   "saint-laurent": 250,
   "vivienne-westwood": 255,
   mulberry: 260,
+  mismo: 262,
   prada: 265,
   "all-saints": 270,
   moncler: 272,
@@ -104,6 +105,9 @@ function brandFamily(id: string): string | null {
   }
   if (x === "mulberry" || x.startsWith("mulberry-") || x.startsWith("mb-")) {
     return "mulberry";
+  }
+  if (x === "mismo" || x.startsWith("ms-")) {
+    return "mismo";
   }
   if (x === "galvin-green" || x.startsWith("galvin-green") || x.startsWith("gg-")) {
     return "galvin-green";
@@ -182,6 +186,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "louis-vuitton",
   "dior",
   "mulberry",
+  "mismo",
   "bottega-veneta",
   // new brands insert here
   "prada",

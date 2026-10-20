@@ -23,6 +23,7 @@ const FAMILY_DISPLAY: Record<string, string> = {
   "saint-laurent": "Saint Laurent",
   "vivienne-westwood": "Vivienne Westwood",
   mulberry: "Mulberry",
+  mismo: "Mismo",
   "galvin-green": "Galvin Green",
   prada: "Prada",
   "all-saints": "AllSaints",

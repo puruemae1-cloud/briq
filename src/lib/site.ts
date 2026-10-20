@@ -83,6 +83,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "멀버리 가방·액세서리를 Briq 영국 셀렉션으로 만나보세요.",
   },
+  mismo: {
+    slug: "mismo",
+    nameEn: "Mismo",
+    nameKo: "미스모",
+    shopHref: "/shop?category=bags&sub=mismo",
+    keywords: ["미스모", "Mismo", "미스모 가방", "미스모 직구"],
+    blurb:
+      "덴마크 미스모의 캔버스 백팩·브리프케이스·토트·위켄드백을 Briq 영국 셀렉션으로 만나보세요.",
+  },
   "bottega-veneta": {
     slug: "bottega-veneta",
     nameEn: "Bottega Veneta",
