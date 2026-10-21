@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 
 const HIDE_KEY = "briq-welcome-hide-until";
+const SEEN_KEY = "briq-welcome-seen";
 
 const POINTS = [
   {
@@ -20,6 +21,16 @@ const POINTS = [
     body: "네이버페이 결제로 포인트 적립부터 100% 정품 보장까지",
   },
 ] as const;
+
+function hiddenForNow(): boolean {
+  try {
+    const until = Number(localStorage.getItem(HIDE_KEY) || 0);
+    if (until > Date.now()) return true;
+    return sessionStorage.getItem(SEEN_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
 
 function seoulMidnightStamp(): number {
   const now = new Date();
@@ -46,12 +57,27 @@ function PopupPhoto() {
   );
 }
 
+function rememberSeen() {
+  try {
+    sessionStorage.setItem(SEEN_KEY, "1");
+  } catch {
+    /* private mode */
+  }
+}
+
 function WelcomeDialog({ onClose }: { onClose: () => void }) {
+  const close = () => {
+    rememberSeen();
+    onClose();
+  };
+
   useEffect(() => {
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
+      if (event.key !== "Escape") return;
+      rememberSeen();
+      onClose();
     };
     window.addEventListener("keydown", onKey);
     return () => {
@@ -66,11 +92,11 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
     } catch {
       /* private mode */
     }
-    onClose();
+    close();
   };
 
   return createPortal(
-    <div className="welcome-popup" role="presentation" onClick={onClose}>
+    <div className="welcome-popup" role="presentation" onClick={close}>
       <div
         className="welcome-popup__panel"
         role="dialog"
@@ -86,7 +112,7 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
             type="button"
             className="welcome-popup__close"
             aria-label="안내 닫기"
-            onClick={onClose}
+            onClick={close}
           >
             <svg viewBox="0 0 16 16" aria-hidden>
               <path d="M3 3l10 10M13 3L3 13" />
@@ -105,7 +131,7 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
               </li>
             ))}
           </ul>
-          <button type="button" className="welcome-popup__cta" onClick={onClose}>
+          <button type="button" className="welcome-popup__cta" onClick={close}>
             쇼핑 계속하기
           </button>
           <button
@@ -122,14 +148,13 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
   );
 }
 
-/** Preview only. Opens on `?welcome=preview`, not for ordinary visits. */
+/** Opens on arrival. Hidden until Seoul midnight after “오늘 하루 보지 않기”, and for the rest of the tab after a close. `?welcome=preview` always opens it. */
 export function WelcomePopupGate() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("welcome") !== "preview") return;
-    setOpen(true);
+    if (params.get("welcome") === "preview" || !hiddenForNow()) setOpen(true);
   }, []);
 
   if (!open) return null;
