@@ -8210,3 +8210,208 @@ body:has(.pdp-dock) .back-to-top {
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Entry notice — centered maison split: campaign still + ivory type panel. */
+.welcome-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(11, 18, 16, 0.56);
+}
+
+.welcome-popup__panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.82fr) minmax(280px, 1.18fr);
+  width: min(880px, 100%);
+  max-height: min(640px, calc(100vh - 2.5rem));
+  background: #f7f5f0;
+  color: var(--ink);
+  overflow: hidden;
+  animation: welcome-popup-in 0.45s ease;
+}
+
+.welcome-popup__visual {
+  position: relative;
+  min-height: 100%;
+  background: #d5cfc4;
+}
+
+.welcome-popup__visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 64%;
+  display: block;
+}
+
+.welcome-popup__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 2.4rem 2.15rem 1.45rem;
+  overflow: auto;
+}
+
+.welcome-popup__close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.welcome-popup__close svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  stroke: currentColor;
+  stroke-width: 1;
+  fill: none;
+}
+
+.welcome-popup__close:focus-visible,
+.welcome-popup__cta:focus-visible,
+.welcome-popup__later:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.welcome-popup__eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(11, 18, 16, 0.62);
+}
+
+.welcome-popup__title {
+  margin: 0 2rem 1.25rem 0;
+  font-family: var(--font-classic), "Nanum Myeongjo", serif;
+  font-size: clamp(1.45rem, 2.1vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: -0.02em;
+}
+
+.welcome-popup__title span {
+  display: block;
+}
+
+.welcome-popup__points {
+  margin: 0 0 1.35rem;
+  padding: 0;
+  list-style: none;
+}
+
+.welcome-popup__points li {
+  display: grid;
+  gap: 0.28rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(11, 18, 16, 0.12);
+}
+
+.welcome-popup__points li:last-child {
+  border-bottom: 1px solid rgba(11, 18, 16, 0.12);
+}
+
+.welcome-popup__points strong {
+  font-family: var(--font-pretendard);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.welcome-popup__points span {
+  font-family: var(--font-pretendard);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: rgba(11, 18, 16, 0.72);
+}
+
+.welcome-popup__cta {
+  margin-top: auto;
+  min-height: 2.9rem;
+  border: 0;
+  background: #0b1210;
+  color: #f7f5f0;
+  font-family: var(--font-pretendard);
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
+
+.welcome-popup__cta:hover {
+  background: #1a2420;
+}
+
+.welcome-popup__later {
+  align-self: center;
+  margin-top: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border: 0;
+  background: transparent;
+  color: rgba(11, 18, 16, 0.55);
+  font-family: var(--font-pretendard);
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  cursor: pointer;
+}
+
+@keyframes welcome-popup-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .welcome-popup {
+    padding: 0.75rem;
+  }
+
+  .welcome-popup__panel {
+    grid-template-columns: 1fr;
+    width: min(440px, 100%);
+    max-height: calc(100vh - 1.5rem);
+    overflow: auto;
+  }
+
+  .welcome-popup__visual {
+    height: 11.5rem;
+    min-height: 0;
+  }
+
+  .welcome-popup__body {
+    padding: 1.35rem 1.2rem 1.15rem;
+  }
+
+  .welcome-popup__title {
+    margin-right: 1.5rem;
+    font-size: 1.38rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-popup__panel {
+    animation: none;
+  }
+}

@@ -7,6 +7,7 @@ import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { WelcomePopupGate } from "@/components/WelcomePopup";
 import { KEEP_SCROLL_RESTORE_SCRIPT } from "@/lib/keep-scroll";
 import { rootMetadata } from "@/lib/seo-metadata";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
@@ -111,6 +112,7 @@ export default async function RootLayout({
           <SiteFooter />
         </div>
         <BackToTop />
+        <WelcomePopupGate />
         <NaverWcsScript />
         <BriqAnalytics />
       </body>
