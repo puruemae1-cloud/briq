@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { BannerImage } from "@/components/BannerImage";
+import { BannerCarousel, type CarouselSlide } from "@/components/BannerCarousel";
 import { BrandWordmark } from "@/components/BrandWordmark";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { ShopNavLink } from "@/components/ShopNavLink";
@@ -28,6 +29,40 @@ import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
+
+/** Official mismo.dk homepage slider, in the same order. */
+const MISMO_HERO_SLIDES: Omit<CarouselSlide, "image">[] = [
+  {
+    id: "ms-hero-brief",
+    labelKo: "브리프케이스",
+    href: "/shop?category=bags&sub=ms-briefcases",
+  },
+  {
+    id: "ms-hero-jacquard",
+    labelKo: "자카드",
+    href: "/shop?category=bags&sub=mismo",
+  },
+  {
+    id: "ms-hero-tote",
+    labelKo: "토트백",
+    href: "/shop?category=bags&sub=ms-totes",
+  },
+  {
+    id: "ms-hero-storage",
+    labelKo: "홈 스토리지",
+    href: "/shop?category=bags&sub=ms-home-storage",
+  },
+  {
+    id: "ms-hero-small",
+    labelKo: "파우치와 소품",
+    href: "/shop?category=bags&sub=ms-pouches",
+  },
+  {
+    id: "ms-hero-navy",
+    labelKo: "네이비 나일론",
+    href: "/shop?category=bags&sub=mismo",
+  },
+];
 import {
   NEW_ARRIVALS_LIMIT,
   PRODUCT_SORTS,
@@ -188,6 +223,13 @@ export default async function ShopPage({ searchParams }: Props) {
   const shopBrand = !isNewArrivals && !isAllCatalogue
     ? resolveShopBrand(category, sub)
     : null;
+  const mismoSlides: CarouselSlide[] | null =
+    shopBrand?.key === "mismo" && shopBrand.images.length > 1
+      ? shopBrand.images.slice(0, MISMO_HERO_SLIDES.length).map((image, i) => ({
+          ...MISMO_HERO_SLIDES[i],
+          image,
+        }))
+      : null;
   const heroImage = isNewArrivals
     ? pickBanner(NEW_ARRIVALS_HERO_IMAGES)
     : isAllCatalogue
@@ -233,6 +275,8 @@ export default async function ShopPage({ searchParams }: Props) {
     <>
       <section
         className={`shop-hero${shopBrand ? " shop-hero--brand" : ""}${
+          mismoSlides ? " shop-hero--carousel" : ""
+        }${
           heroVideoSrc ? " shop-hero--video" : ""
         }${isChanelShoesHero ? " shop-hero--chanel-shoes" : ""}${
           isTallWideHero ? " shop-hero--tall-wide" : ""
@@ -254,6 +298,13 @@ export default async function ShopPage({ searchParams }: Props) {
             playsInline
             preload="metadata"
             aria-hidden
+          />
+        ) : mismoSlides ? (
+          <BannerCarousel
+            slides={mismoSlides}
+            autoplay="always"
+            showLabels={false}
+            dotsLabel="미스모 배너"
           />
         ) : (
           <BannerImage

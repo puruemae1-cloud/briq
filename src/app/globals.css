@@ -590,6 +590,50 @@ a.chip[href*="sub=gg-sale"].is-active {
   );
 }
 
+/* Mismo homepage slider: keep the photograph, shade only the title edge. */
+.shop-hero.shop-hero--brand.shop-hero--carousel {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 3 / 2;
+  max-height: min(82vh, 56rem);
+}
+
+.shop-hero--carousel .shop-hero__shade {
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 8, 7, 0.08) 42%,
+    rgba(6, 8, 7, 0.62) 100%
+  );
+}
+
+.shop-hero--carousel .shop-hero__content {
+  pointer-events: none;
+}
+
+.shop-hero--carousel .shop-hero__share,
+.shop-hero--carousel .shop-hero__share * {
+  pointer-events: auto;
+}
+
+.shop-hero--carousel .banner-slide::after {
+  display: none;
+}
+
+.shop-hero--carousel .banner-slide img {
+  object-position: center center;
+}
+
+.shop-hero--carousel .banner-carousel__viewport {
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+}
+
+.shop-hero--carousel .banner-slide {
+  scroll-snap-align: start !important;
+  scroll-snap-stop: always;
+}
+
 .shop-hero__logo {
   display: block;
   width: max-content;
@@ -2061,6 +2105,12 @@ body:has(.nav-drawer-toggle:checked) {
 
   .shop-hero--brand {
     min-height: 15.5rem;
+  }
+
+  .shop-hero.shop-hero--brand.shop-hero--carousel {
+    aspect-ratio: 4 / 5;
+    max-height: 88vh;
+    min-height: 0;
   }
 
   .shop-hero--brand.shop-hero--moncler {

@@ -51,6 +51,7 @@ const PREFIX_RULES: { re: RegExp; key: BrandKey }[] = [
   { re: /^(lv-|louis-vuitton)/i, key: "louis-vuitton" },
   { re: /^(di-|dior)/i, key: "dior" },
   { re: /^(mb-|mulberry)/i, key: "mulberry" },
+  { re: /^(ms-|mismo)/i, key: "mismo" },
   {
     re: /^(all-saints-accessori|al-(men|women)-(accessori|acc-|sunglass|belt|hat|jewell|wallet|scarf))/i,
     key: "all-saints-accessories",

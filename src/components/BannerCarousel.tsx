@@ -20,9 +20,16 @@ export type CarouselSlide = {
 
 export function BannerCarousel({
   slides,
+  autoplay = "desktop",
+  showLabels = true,
+  dotsLabel = "스포츠 배너",
 }: {
   slides: CarouselSlide[];
   name?: string;
+  /** desktop: fine pointer only. always: every device except reduced motion. */
+  autoplay?: "desktop" | "always";
+  showLabels?: boolean;
+  dotsLabel?: string;
 }) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
@@ -69,7 +76,7 @@ export function BannerCarousel({
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(sync);
     };
-    if (fine.matches) {
+    if (fine.matches || autoplay === "always") {
       el.addEventListener("scroll", onScroll, { passive: true });
     }
 
@@ -78,13 +85,14 @@ export function BannerCarousel({
       el.removeEventListener("scrollend", onScrollEnd);
       el.removeEventListener("scroll", onScroll);
     };
-  }, [slides.length]);
+  }, [slides.length, autoplay]);
 
   useEffect(() => {
     if (slides.length < 2) return;
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (!fine.matches || reduce.matches) return;
+    if (reduce.matches) return;
+    if (autoplay !== "always" && !fine.matches) return;
 
     const id = window.setInterval(() => {
       if (Date.now() < pausedUntil.current) return;
@@ -98,7 +106,7 @@ export function BannerCarousel({
     }, 5000);
 
     return () => clearInterval(id);
-  }, [slides.length, goTo]);
+  }, [slides.length, goTo, autoplay]);
 
   /**
    * PC: overflow-x carousels trap the mouse wheel. Forward vertical wheel
@@ -148,6 +156,8 @@ export function BannerCarousel({
     return () => io.disconnect();
   }, [slides]);
 
+  const drag = useRef({ x: 0, moved: false });
+
   if (slides.length === 0) return null;
 
   return (
@@ -159,7 +169,19 @@ export function BannerCarousel({
       <div
         ref={viewportRef}
         className="banner-carousel__viewport"
-        onPointerDown={pause}
+        onPointerDown={(e) => {
+          pause();
+          drag.current = { x: e.clientX, moved: false };
+        }}
+        onPointerMove={(e) => {
+          if (Math.abs(e.clientX - drag.current.x) > 8) drag.current.moved = true;
+        }}
+        onClickCapture={(e) => {
+          if (!drag.current.moved) return;
+          e.preventDefault();
+          e.stopPropagation();
+          drag.current.moved = false;
+        }}
         onTouchStart={pause}
       >
         {slides.map((slide, i) => (
@@ -174,6 +196,7 @@ export function BannerCarousel({
               alt={slide.labelKo}
               style={slide.focal ? { objectPosition: slide.focal } : undefined}
               loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "low"}
             />
             {slide.video ? (
               <video
@@ -187,12 +210,14 @@ export function BannerCarousel({
                 style={slide.focal ? { objectPosition: slide.focal } : undefined}
               />
             ) : null}
-            <span className="banner-slide__label">{slide.labelKo}</span>
+            {showLabels ? (
+              <span className="banner-slide__label">{slide.labelKo}</span>
+            ) : null}
           </ShopFastLink>
         ))}
       </div>
 
-      <div className="banner-carousel__dots" aria-label="스포츠 배너">
+      <div className="banner-carousel__dots" aria-label={dotsLabel}>
         {slides.map((slide, i) => (
           <button
             key={`dot-${slide.id}`}

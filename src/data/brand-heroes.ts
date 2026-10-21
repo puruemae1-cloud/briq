@@ -68,7 +68,8 @@ export type BrandKey =
   | "london-undercover"
   | "moncler"
   | "moncler-shoes"
-  | "moncler-accessories";
+  | "moncler-accessories"
+  | "mismo";
 
 export type BrandHeroDef = {
   key: BrandKey;
@@ -591,6 +592,21 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/moncler.svg",
     // Locked FW26 men's clothing hero.
     images: ["/banners/brand-moncler-accessories.jpg"],
+  },
+  mismo: {
+    key: "mismo",
+    nameEn: "Mismo",
+    nameKo: "미스모",
+    logoSrc: "",
+    // Official homepage slider, desktop masters. Mobile uses /banners/m/.
+    images: [
+      "/banners/brand-mismo-1.jpg",
+      "/banners/brand-mismo-2.jpg",
+      "/banners/brand-mismo-3.jpg",
+      "/banners/brand-mismo-4.jpg",
+      "/banners/brand-mismo-5.jpg",
+      "/banners/brand-mismo-6.jpg",
+    ],
   },
 };
 
@@ -1129,4 +1145,16 @@ export const brandRootToKey: Record<string, BrandKey> = {
   moncler: "moncler",
   "moncler-shoes": "moncler-shoes",
   "moncler-accessories": "moncler-accessories",
+  mismo: "mismo",
+  "ms-backpacks": "mismo",
+  "ms-briefcases": "mismo",
+  "ms-weekend": "mismo",
+  "ms-totes": "mismo",
+  "ms-crossbody": "mismo",
+  "ms-suit-carriers": "mismo",
+  "ms-washbags": "mismo",
+  "ms-home-storage": "mismo",
+  "ms-pouches": "mismo",
+  "ms-cardholders": "mismo",
+  "ms-belts": "mismo",
 };
