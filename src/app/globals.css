@@ -592,10 +592,22 @@ a.chip[href*="sub=gg-sale"].is-active {
 
 /* Mismo homepage slider: keep the photograph, shade only the title edge. */
 .shop-hero.shop-hero--brand.shop-hero--carousel {
+  width: 100%;
   height: auto;
   min-height: 0;
   aspect-ratio: 3 / 2;
   max-height: min(82vh, 56rem);
+}
+
+/* Wide screens: a capped height must not shrink the box and leave a blank side. */
+@media (min-width: 900px) {
+  .shop-hero.shop-hero--brand.shop-hero--carousel {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+    height: clamp(22rem, 42vw, 78vh);
+    max-height: none;
+  }
 }
 
 .shop-hero--carousel .shop-hero__shade {
