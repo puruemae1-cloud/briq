@@ -8,10 +8,10 @@
     "cw-atelier": 143,
     "cw-dive": 153,
     "cw-integrated-sports": 39,
-    "cw-adventure-field": 38,
+    "cw-adventure-field": 47,
     "cw-military": 4,
     "cw-bel-canto": 11,
-    "cw-sealander": 142,
+    "cw-sealander": 151,
     "cw-twelve": 55,
     "cw-trident": 65,
     "cw-moonphase": 7
@@ -1062,7 +1062,16 @@
       "C63-36ADA4-S00B0-B0",
       "C65-38A3H4-S00G0-VG",
       "C63-39QCC3-S00K0-RK",
-      "C63-36ADA4-S00P0-B2"
+      "C63-36ADA4-S00P0-B2",
+      "C63-36ADA4-S00B0-B2",
+      "C63-36ADA4-S00K0-B2",
+      "C63-36ADA4-S00V0-B2",
+      "C63-36ADA4-S00W0-B2",
+      "C63-36AGM4-S00B0-B2",
+      "C63-36AGM4-S00K0-B2",
+      "C63-36AGM4-S00P0-B2",
+      "C63-36AGM4-S00V0-B2",
+      "C63-36AGM4-S00W0-B2"
     ],
     "cw-military": [
       "C65-38A3H3-S00K0-B0",
@@ -1225,7 +1234,16 @@
       "C63-41ACH4-S0KW0-B0",
       "C63-41ACH4-S0KV0-RK",
       "C63-41ACH4-S0KP0-B0",
-      "C63-36ADA4-S00P0-B2"
+      "C63-36ADA4-S00P0-B2",
+      "C63-36ADA4-S00B0-B2",
+      "C63-36ADA4-S00K0-B2",
+      "C63-36ADA4-S00V0-B2",
+      "C63-36ADA4-S00W0-B2",
+      "C63-36AGM4-S00B0-B2",
+      "C63-36AGM4-S00K0-B2",
+      "C63-36AGM4-S00P0-B2",
+      "C63-36AGM4-S00V0-B2",
+      "C63-36AGM4-S00W0-B2"
     ],
     "cw-twelve": [
       "C12-36AHC1-T00V1-B0R",
@@ -1477,7 +1495,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-39ADA4-S00P0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa239c91c/images/WATCHES/C63-39ADA4-S00P0-B1/C63-39ADA4-S00P0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1495,7 +1513,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-36ADA4-S00V0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4b26bbc1/images/WATCHES/C63-36ADA4-S00V0-B0/C63-36ADA4-S00V0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1513,7 +1531,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-39AGM4-S00P0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb855579b/images/WATCHES/C63-39AGM4-S00P0-B0/C63-39AGM4-S00P0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1531,7 +1549,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-36AGM4-S00V0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwbff3acd5/images/WATCHES/C63-36AGM4-S00V0-RK/C63-36AGM4-S00V0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1549,7 +1567,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-36AGM4-S00K0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwec6667ac/images/WATCHES/C63-36AGM4-S00K0-RW/C63-36AGM4-S00K0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1567,7 +1585,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-36AGM4-S00P0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw38acf5ca/images/WATCHES/C63-36AGM4-S00P0-VK/C63-36AGM4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1585,7 +1603,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-42AGM4-S00V0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb2dc3504/images/WATCHES/C63-42AGM4-S00V0-B0/C63-42AGM4-S00V0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1603,7 +1621,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-42AGM4-S00P0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb9e01648/images/WATCHES/C63-42AGM4-S00P0-RW/C63-42AGM4-S00P0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1692,7 +1710,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-42AGM4-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwed1536ec/images/WATCHES/C63-42AGM4-S00W0-B0/C63-42AGM4-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1711,7 +1729,7 @@
       "url": "https://www.christopherward.com/sealander/c63-sealander-automatic/C63-36ADA4-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw803e1272/images/WATCHES/C63-36ADA4-S00K0-B0/C63-36ADA4-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1730,7 +1748,7 @@
       "url": "https://www.christopherward.com/sealander/c63-sealander-gmt/C63-39AGM4-S00V0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd44827f7/images/WATCHES/C63-39AGM4-S00V0-B1/C63-39AGM4-S00V0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1748,7 +1766,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-36ADA4-S00P0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5a6583d1/images/WATCHES/C63-36ADA4-S00P0-B1/C63-36ADA4-S00P0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1766,7 +1784,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-36AGM4-S00B0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw47980794/images/WATCHES/C63-36AGM4-S00B0-B0/C63-36AGM4-S00B0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1784,7 +1802,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-39ADA4-S00W0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2ea7cc03/images/WATCHES/C63-39ADA4-S00W0-VC/C63-39ADA4-S00W0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1803,7 +1821,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-gmt/C63-39AGM4-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw32e4647c/images/WATCHES/C63-39AGM4-S00K0-RK/C63-39AGM4-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1821,7 +1839,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-39ADA4-S00B0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb7cbc0c6/images/WATCHES/C63-39ADA4-S00B0-RK/C63-39ADA4-S00B0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1838,7 +1856,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-sealander-automatic/C63-39ADA4-S00V0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw74ba8396/images/WATCHES/C63-39ADA4-S00V0-VK/C63-39ADA4-S00V0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1872,7 +1890,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-true-gmt/C63-40APG3-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw770b40d7/images/WATCHES/C63-40APG3-S00K0-B0/C63-40APG3-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 4135.0,
+      "gbpPrice": 2995.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -1892,7 +1910,7 @@
       "url": "https://www.christopherward.com/new-watches/c63-true-gmt/C63-40APG3-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw790f08ef/images/WATCHES/C63-40APG3-S00W0-B0/C63-40APG3-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 4135.0,
+      "gbpPrice": 2995.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -2199,7 +2217,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw9601ac9e/images/WATCHES/C63-39AGM4-S00W0-B0/C63-39AGM4-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-bestsellers",
@@ -2235,7 +2253,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa574905e/images/WATCHES/C63-39ADA4-S00K0-B1/C63-39ADA4-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-bestsellers",
@@ -2341,7 +2359,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00B0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw6685533f/images/WATCHES/C63-42AGM4-S00B0-B0/C63-42AGM4-S00B0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-bestsellers",
@@ -2518,7 +2536,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KK0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw61619570/images/WATCHES/C63-41AGM4-S0KK0-B0/C63-41AGM4-S0KK0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 2075.0,
+      "gbpPrice": 1515.0,
       "gbpListPrice": null,
       "collections": [
         "cw-bestsellers",
@@ -2626,7 +2644,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5f5ccae9/images/WATCHES/C63-36AGM4-S00W0-B0/C63-36AGM4-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-bestsellers",
@@ -2697,7 +2715,7 @@
       "url": "https://www.christopherward.com/this-years-best-watches/c63-valour/C63-39QCC3-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw259096f6/images/WATCHES/C63-39QCC3-S00K0-RK/C63-39QCC3-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 825.0,
+      "gbpPrice": 595.0,
       "gbpListPrice": null,
       "collections": [
         "cw-hidden-gems",
@@ -6041,7 +6059,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00B0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4f5f06a7/images/WATCHES/C63-39AGM4-S00B0-B0/C63-39AGM4-S00B0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6058,7 +6076,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KV0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw52cc3e7e/images/WATCHES/C63-41AGM4-S0KV0-B0/C63-41AGM4-S0KV0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 2075.0,
+      "gbpPrice": 1515.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6107,7 +6125,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw48f514d0/images/WATCHES/C63-36ADA4-S00W0-B0/C63-36ADA4-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6124,7 +6142,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwebf1837f/images/WATCHES/C63-42AGM4-S00K0-B0/C63-42AGM4-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6157,7 +6175,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00B0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw6af352c2/images/WATCHES/C63-36ADA4-S00B0-B0/C63-36ADA4-S00B0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6303,7 +6321,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00P0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4f6b5587/images/WATCHES/C63-39ADA4-S00P0-B0/C63-39ADA4-S00P0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6319,7 +6337,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00W0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5636c047/images/WATCHES/C63-39ADA4-S00W0-RW/C63-39ADA4-S00W0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6335,7 +6353,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00V0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4eb8eab5/images/WATCHES/C63-36AGM4-S00V0-B1/C63-36AGM4-S00V0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -6350,7 +6368,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb49934e4/images/WATCHES/C63-36AGM4-S00K0-B0/C63-36AGM4-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6366,7 +6384,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00P0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe1e3cad5/images/WATCHES/C63-39ADA4-S00P0-RK/C63-39ADA4-S00P0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6382,7 +6400,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00P0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwcc77b337/images/WATCHES/C63-42AGM4-S00P0-B0/C63-42AGM4-S00P0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6398,7 +6416,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00W0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa20f0179/images/WATCHES/C63-39AGM4-S00W0-RW/C63-39AGM4-S00W0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6414,7 +6432,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00B0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8edf5f1c/images/WATCHES/C63-39ADA4-S00B0-RW/C63-39ADA4-S00B0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6430,7 +6448,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00P0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw3745edef/images/WATCHES/C63-39ADA4-S00P0-VK/C63-39ADA4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6446,7 +6464,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00P0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwdf3f3fae/images/WATCHES/C63-39AGM4-S00P0-B1/C63-39AGM4-S00P0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6462,7 +6480,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00V0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw73a112d8/images/WATCHES/C63-36AGM4-S00V0-RW/C63-36AGM4-S00V0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6478,7 +6496,7 @@
       "url": "https://www.christopherward.com/watches/c63-sealander-gmt/C63-42AGM4-S00V0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwdb832b66/images/WATCHES/C63-42AGM4-S00V0-B1/C63-42AGM4-S00V0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6494,7 +6512,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00V0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0e085502/images/WATCHES/C63-42AGM4-S00V0-RW/C63-42AGM4-S00V0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6510,7 +6528,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00P0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw9c6baec3/images/WATCHES/C63-42AGM4-S00P0-B1/C63-42AGM4-S00P0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6526,7 +6544,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00V0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw794c1e38/images/WATCHES/C63-36ADA4-S00V0-B1/C63-36ADA4-S00V0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -6541,7 +6559,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00P0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2343ef38/images/WATCHES/C63-36AGM4-S00P0-B0/C63-36AGM4-S00P0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6557,7 +6575,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00B0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw3de44f4a/images/WATCHES/C63-42AGM4-S00B0-RW/C63-42AGM4-S00B0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6573,7 +6591,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00V0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwf9e9b410/images/WATCHES/C63-36ADA4-S00V0-RW/C63-36ADA4-S00V0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6589,7 +6607,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00K0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw696843c2/images/WATCHES/C63-39ADA4-S00K0-RW/C63-39ADA4-S00K0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6605,7 +6623,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00W0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dweaf3af20/images/WATCHES/C63-39AGM4-S00W0-B1/C63-39AGM4-S00W0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6621,7 +6639,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe3e615b0/images/WATCHES/C63-39ADA4-S00K0-B0/C63-39ADA4-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6637,7 +6655,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00P0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwf4764855/images/WATCHES/C63-36ADA4-S00P0-B0/C63-36ADA4-S00P0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6653,7 +6671,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-gmt/C63-42AGM4-S00B0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8544c436/images/WATCHES/C63-42AGM4-S00B0-B1/C63-42AGM4-S00B0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6669,7 +6687,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-gmt/C63-39AGM4-S00K0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4ca383f8/images/WATCHES/C63-39AGM4-S00K0-B0/C63-39AGM4-S00K0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6685,7 +6703,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00W0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw08cbeabb/images/WATCHES/C63-39ADA4-S00W0-B0/C63-39ADA4-S00W0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1375.0,
+      "gbpPrice": 1015.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6701,7 +6719,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00B0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5c53377b/images/WATCHES/C63-36AGM4-S00B0-RW/C63-36AGM4-S00B0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6733,7 +6751,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00B0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw814b0f18/images/WATCHES/C63-39AGM4-S00B0-RW/C63-39AGM4-S00B0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6749,7 +6767,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KK0-NO.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb91ab855/images/WATCHES/C63-41AGM4-S0KK0-NO/C63-41AGM4-S0KK0-NO_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6780,7 +6798,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00P0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2e037dce/images/WATCHES/C63-36AGM4-S00P0-B1/C63-36AGM4-S00P0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -6795,7 +6813,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00B0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8edf5f1c/images/WATCHES/C63-39ADA4-S00B0-RW/C63-39ADA4-S00B0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6827,7 +6845,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw6959c507/images/WATCHES/C63-36AGM4-S00K0-B1/C63-36AGM4-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -6889,7 +6907,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00V0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw11bb178e/images/WATCHES/C63-42AGM4-S00V0-VK/C63-42AGM4-S00V0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6921,7 +6939,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00V0-B0.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw965ca3bb/images/WATCHES/C63-36AGM4-S00V0-B0/C63-36AGM4-S00V0-B0_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1620.0,
+      "gbpPrice": 1190.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6937,7 +6955,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00K0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw55cc884c/images/WATCHES/C63-36AGM4-S00K0-VK/C63-36AGM4-S00K0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -6985,7 +7003,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00W0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw13f9a763/images/WATCHES/C63-36AGM4-S00W0-B1/C63-36AGM4-S00W0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -7000,7 +7018,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00B0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwc8ed3677/images/WATCHES/C63-39AGM4-S00B0-B1/C63-39AGM4-S00B0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7032,7 +7050,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00B0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe754d84a/images/WATCHES/C63-39ADA4-S00B0-VK/C63-39ADA4-S00B0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7048,7 +7066,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd734d847/images/WATCHES/C63-36ADA4-S00K0-B1/C63-36ADA4-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -7063,7 +7081,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00P0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwdf0eddde/images/WATCHES/C63-39AGM4-S00P0-RW/C63-39AGM4-S00P0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7079,7 +7097,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00V0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa89a36c3/images/WATCHES/C63-36ADA4-S00V0-VK/C63-36ADA4-S00V0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7095,7 +7113,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KV0-NO.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwec99d97a/images/WATCHES/C63-41AGM4-S0KV0-NO/C63-41AGM4-S0KV0-NO_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7111,7 +7129,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00W0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwee7c83c2/images/WATCHES/C63-42AGM4-S00W0-B1/C63-42AGM4-S00W0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7127,7 +7145,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00P0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0f1bebba/images/WATCHES/C63-39ADA4-S00P0-RW/C63-39ADA4-S00P0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7159,7 +7177,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00W0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw1aa993d6/images/WATCHES/C63-42AGM4-S00W0-RW/C63-42AGM4-S00W0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7237,7 +7255,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00P0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwc17f0ab8/images/WATCHES/C63-36ADA4-S00P0-RW/C63-36ADA4-S00P0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7285,7 +7303,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00V0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5fd8abee/images/WATCHES/C63-36AGM4-S00V0-VK/C63-36AGM4-S00V0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7301,7 +7319,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00B0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb0421914/images/WATCHES/C63-36AGM4-S00B0-B1/C63-36AGM4-S00B0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -7316,7 +7334,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00W0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw72ee313b/images/WATCHES/C63-36ADA4-S00W0-RW/C63-36ADA4-S00W0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7332,7 +7350,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00K0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwbec502f2/images/WATCHES/C63-42AGM4-S00K0-RW/C63-42AGM4-S00K0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7363,7 +7381,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00W0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw95b23279/images/WATCHES/C63-36ADA4-S00W0-VC/C63-36ADA4-S00W0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7379,7 +7397,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2f637cd1/images/WATCHES/C63-42AGM4-S00K0-B1/C63-42AGM4-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7411,7 +7429,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00P0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd5ed735d/images/WATCHES/C63-36AGM4-S00P0-RW/C63-36AGM4-S00P0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7505,7 +7523,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00P0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw6c4bf525/images/WATCHES/C63-42AGM4-S00P0-VK/C63-42AGM4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7521,7 +7539,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00P0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw3ff381d7/images/WATCHES/C63-36AGM4-S00P0-RK/C63-36AGM4-S00P0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7537,7 +7555,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00V0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe488b333/images/WATCHES/C63-39AGM4-S00V0-RW/C63-39AGM4-S00V0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7553,7 +7571,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00V0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw1e3b59e4/images/WATCHES/C63-39ADA4-S00V0-RW/C63-39ADA4-S00V0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7569,7 +7587,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00B0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2f847058/images/WATCHES/C63-36ADA4-S00B0-VK/C63-36ADA4-S00B0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7633,7 +7651,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00W0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw9895e5e2/images/WATCHES/C63-39AGM4-S00W0-VC/C63-39AGM4-S00W0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7649,7 +7667,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00K0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw522df9db/images/WATCHES/C63-39ADA4-S00K0-VC/C63-39ADA4-S00K0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7665,7 +7683,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00V0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4e86b076/images/WATCHES/C63-39AGM4-S00V0-VK/C63-39AGM4-S00V0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7681,7 +7699,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00P0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4c21c0ec/images/WATCHES/C63-36ADA4-S00P0-VK/C63-36ADA4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7697,7 +7715,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00B0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0363a43c/images/WATCHES/C63-42AGM4-S00B0-VK/C63-42AGM4-S00B0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7713,7 +7731,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa330220e/images/WATCHES/C63-39AGM4-S00K0-B1/C63-39AGM4-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7729,7 +7747,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00W0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw06784b25/images/WATCHES/C63-39ADA4-S00W0-B1/C63-39ADA4-S00W0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7745,7 +7763,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00V0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe9c0b0b0/images/WATCHES/C63-39ADA4-S00V0-B1/C63-39ADA4-S00V0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7761,7 +7779,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00W0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw80487994/images/WATCHES/C63-36AGM4-S00W0-RW/C63-36AGM4-S00W0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7777,7 +7795,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00P0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8a4168b7/images/WATCHES/C63-39AGM4-S00P0-RK/C63-39AGM4-S00P0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7793,7 +7811,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00V0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0ac62ace/images/WATCHES/C63-36ADA4-S00V0-RK/C63-36ADA4-S00V0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7809,7 +7827,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KK0-NK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw74df6948/images/WATCHES/C63-41AGM4-S0KK0-NK/C63-41AGM4-S0KK0-NK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7825,7 +7843,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00P0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw94a5c61d/images/WATCHES/C63-39AGM4-S00P0-VK/C63-39AGM4-S00P0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7841,7 +7859,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00V0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0f1eaec2/images/WATCHES/C63-42AGM4-S00V0-RK/C63-42AGM4-S00V0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7905,7 +7923,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwdf8d6042/images/WATCHES/C63-36AGM4-S00K0-RK/C63-36AGM4-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7953,7 +7971,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00K0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwa6e56fc6/images/WATCHES/C63-39AGM4-S00K0-RW/C63-39AGM4-S00K0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -7985,7 +8003,7 @@
       "url": "https://www.christopherward.com/chronograph-watches/c63-valour/C63-39QCC3-S00K0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb58131b0/images/WATCHES/C63-39QCC3-S00K0-B1/C63-39QCC3-S00K0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1105.0,
+      "gbpPrice": 800.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8001,7 +8019,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00W0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw94dae591/images/WATCHES/C63-36AGM4-S00W0-VC/C63-36AGM4-S00W0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8017,7 +8035,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00B0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw77b505a0/images/WATCHES/C63-39AGM4-S00B0-VK/C63-39AGM4-S00B0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8033,7 +8051,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00B0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd5ec48ec/images/WATCHES/C63-39ADA4-S00B0-B1/C63-39ADA4-S00B0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8065,7 +8083,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00K0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw910cee75/images/WATCHES/C63-36ADA4-S00K0-VC/C63-36ADA4-S00K0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1150.0,
+      "gbpPrice": 850.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8081,7 +8099,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KV0-NOX.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw7ff3a6aa/images/WATCHES/C63-41AGM4-S0KV0-NOX/C63-41AGM4-S0KV0-NOX_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8097,7 +8115,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00W0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw200310e3/images/WATCHES/C63-42AGM4-S00W0-VC/C63-42AGM4-S00W0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8160,7 +8178,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00P0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5a69a136/images/WATCHES/C63-42AGM4-S00P0-RK/C63-42AGM4-S00P0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New Size",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8208,7 +8226,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00B0-VK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw89b4b27d/images/WATCHES/C63-36AGM4-S00B0-VK/C63-36AGM4-S00B0-VK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8240,7 +8258,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00W0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw7939348f/images/WATCHES/C63-36ADA4-S00W0-B1/C63-36ADA4-S00W0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -8255,7 +8273,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00K0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw1d6b66db/images/WATCHES/C63-42AGM4-S00K0-VC/C63-42AGM4-S00K0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8319,7 +8337,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00K0-RW.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw83dd6b26/images/WATCHES/C63-36ADA4-S00K0-RW/C63-36ADA4-S00K0-RW_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8335,7 +8353,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00B0-B1.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd849e9fb/images/WATCHES/C63-36ADA4-S00B0-B1/C63-36ADA4-S00B0-B1_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-sealander"
@@ -8366,7 +8384,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00W0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw45782c07/images/WATCHES/C63-39AGM4-S00W0-RK/C63-39AGM4-S00W0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8382,7 +8400,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4601446f/images/WATCHES/C63-39ADA4-S00K0-RK/C63-39ADA4-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8398,7 +8416,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00V0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd428d38d/images/WATCHES/C63-39AGM4-S00V0-RK/C63-39AGM4-S00V0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8414,7 +8432,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00P0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0ea83071/images/WATCHES/C63-36ADA4-S00P0-RK/C63-36ADA4-S00P0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8430,7 +8448,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00B0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwce678d71/images/WATCHES/C63-42AGM4-S00B0-RK/C63-42AGM4-S00B0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8446,7 +8464,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00K0-VC.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw06b2b5f7/images/WATCHES/C63-39AGM4-S00K0-VC/C63-39AGM4-S00K0-VC_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1395.0,
+      "gbpPrice": 1025.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8462,7 +8480,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00W0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0b7898c0/images/WATCHES/C63-39ADA4-S00W0-RK/C63-39ADA4-S00W0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8478,7 +8496,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-39ADA4-S00V0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw9d716d86/images/WATCHES/C63-39ADA4-S00V0-RK/C63-39ADA4-S00V0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8510,7 +8528,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KK0-NOX.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8e072c10/images/WATCHES/C63-41AGM4-S0KK0-NOX/C63-41AGM4-S0KK0-NOX_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8541,7 +8559,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00W0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwc02e428b/images/WATCHES/C63-36AGM4-S00W0-RK/C63-36AGM4-S00W0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8557,7 +8575,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-39AGM4-S00B0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw01dbe737/images/WATCHES/C63-39AGM4-S00B0-RK/C63-39AGM4-S00B0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8589,7 +8607,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw9f0c0d4c/images/WATCHES/C63-36ADA4-S00K0-RK/C63-36ADA4-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8605,7 +8623,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KV0-NK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4ab82383/images/WATCHES/C63-41AGM4-S0KV0-NK/C63-41AGM4-S0KV0-NK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8621,7 +8639,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00W0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4d45b65b/images/WATCHES/C63-42AGM4-S00W0-RK/C63-42AGM4-S00W0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8653,7 +8671,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-36AGM4-S00B0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe776fe93/images/WATCHES/C63-36AGM4-S00B0-RK/C63-36AGM4-S00B0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8669,7 +8687,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00W0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8adea42c/images/WATCHES/C63-36ADA4-S00W0-RK/C63-36ADA4-S00W0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8685,7 +8703,7 @@
       "url": "https://www.christopherward.com/gmt-watches/c63-sealander-gmt/C63-42AGM4-S00K0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw899711d0/images/WATCHES/C63-42AGM4-S00K0-RK/C63-42AGM4-S00K0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1535.0,
+      "gbpPrice": 1125.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8733,7 +8751,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-automatic/C63-36ADA4-S00B0-RK.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwebc205cc/images/WATCHES/C63-36ADA4-S00B0-RK/C63-36ADA4-S00B0-RK_Picture_1.jpg?sw=1000&sh=1250",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 950.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8765,7 +8783,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KK0-NKX.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw07f041eb/images/WATCHES/C63-41AGM4-S0KK0-NKX/C63-41AGM4-S0KK0-NKX_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -8781,7 +8799,7 @@
       "url": "https://www.christopherward.com/mechanical-watches/c63-sealander-extreme-gmt/C63-41AGM4-S0KV0-NKX.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw0c66a99a/images/WATCHES/C63-41AGM4-S0KV0-NKX/C63-41AGM4-S0KV0-NKX_Picture_1.jpg?sw=1000&sh=1250",
       "badge": null,
-      "gbpPrice": 1850.0,
+      "gbpPrice": 1350.0,
       "gbpListPrice": null,
       "collections": [
         "cw-clearance",
@@ -9847,7 +9865,7 @@
       "url": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw8607e560/images/WATCHES/C63-41ACH4-S0KB0-RW/C63-41ACH4-S0KB0-RW_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 2625.0,
+      "gbpPrice": 1895.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -9864,7 +9882,7 @@
       "url": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwe6b63909/images/WATCHES/C63-41ACH4-S0KK0-B0/C63-41ACH4-S0KK0-B0_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 2765.0,
+      "gbpPrice": 1995.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -9881,7 +9899,7 @@
       "url": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw61df068a/images/WATCHES/C63-41ACH4-S0KP0-B0/C63-41ACH4-S0KP0-B0_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 2765.0,
+      "gbpPrice": 1995.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -9898,7 +9916,7 @@
       "url": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw7f28544d/images/WATCHES/C63-41ACH4-S0KV0-RK/C63-41ACH4-S0KV0-RK_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 2625.0,
+      "gbpPrice": 1895.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -9915,7 +9933,7 @@
       "url": "https://www.christopherward.com/c63-sealander-chronograph/C6344.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd2adc91f/images/WATCHES/C63-41ACH4-S0KW0-B0/C63-41ACH4-S0KW0-B0_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 2765.0,
+      "gbpPrice": 1995.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -11209,10 +11227,12 @@
       "url": "https://www.christopherward.com/int/C63-Sealander-Automatic/C6343.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd849e9fb/images/WATCHES/C63-36ADA4-S00B0-B1/C63-36ADA4-S00B0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11224,10 +11244,12 @@
       "url": "https://www.christopherward.com/int/C63-Sealander-Automatic/C6343.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwd734d847/images/WATCHES/C63-36ADA4-S00K0-B1/C63-36ADA4-S00K0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11239,7 +11261,7 @@
       "url": "https://www.christopherward.com/int/C63-Sealander-Automatic/C6343.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw5a6583d1/images/WATCHES/C63-36ADA4-S00P0-B1/C63-36ADA4-S00P0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
@@ -11258,10 +11280,12 @@
       "url": "https://www.christopherward.com/int/C63-Sealander-Automatic/C6343.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw794c1e38/images/WATCHES/C63-36ADA4-S00V0-B1/C63-36ADA4-S00V0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11273,10 +11297,12 @@
       "url": "https://www.christopherward.com/int/C63-Sealander-Automatic/C6343.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw7939348f/images/WATCHES/C63-36ADA4-S00W0-B1/C63-36ADA4-S00W0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1430.0,
+      "gbpPrice": 1055.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11288,10 +11314,12 @@
       "url": "https://www.christopherward.com/int/watches/C63-Sealander-GMT/C6342.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dwb0421914/images/WATCHES/C63-36AGM4-S00B0-B1/C63-36AGM4-S00B0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11303,10 +11331,12 @@
       "url": "https://www.christopherward.com/int/watches/C63-Sealander-GMT/C6342.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw6959c507/images/WATCHES/C63-36AGM4-S00K0-B1/C63-36AGM4-S00K0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11318,10 +11348,12 @@
       "url": "https://www.christopherward.com/int/watches/C63-Sealander-GMT/C6342.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw2e037dce/images/WATCHES/C63-36AGM4-S00P0-B1/C63-36AGM4-S00P0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11333,10 +11365,12 @@
       "url": "https://www.christopherward.com/int/watches/C63-Sealander-GMT/C6342.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw4eb8eab5/images/WATCHES/C63-36AGM4-S00V0-B1/C63-36AGM4-S00V0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
@@ -11348,10 +11382,12 @@
       "url": "https://www.christopherward.com/int/watches/C63-Sealander-GMT/C6342.html",
       "image": "https://www.christopherward.com/dw/image/v2/BDWD_PRD/on/demandware.static/-/Sites-cw-master-catalog/default/dw13f9a763/images/WATCHES/C63-36AGM4-S00W0-B1/C63-36AGM4-S00W0-B1_Picture_1.jpg?sw=600&sh=600",
       "badge": null,
-      "gbpPrice": 1675.0,
+      "gbpPrice": 1230.0,
       "gbpListPrice": null,
       "collections": [
-        "cw-clearance"
+        "cw-clearance",
+        "cw-adventure-field",
+        "cw-sealander"
       ],
       "primaryCollection": "cw-clearance",
       "inStock": true
