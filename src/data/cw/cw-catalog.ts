@@ -16768,7 +16768,7 @@ export const cwCatalogProducts: Product[] = [
   {
     id: "cw-c63-36ada4-s00p0-b2",
     name: "C63 Sealander Automatic",
-    nameKo: "C63 시랜더 오토매틱 · 36mm",
+    nameKo: "시랜더 36콘솔트",
     brand: "Christopher Ward",
     price: 2404000,
     gbpPrice: 1055.0,

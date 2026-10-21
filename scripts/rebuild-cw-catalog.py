@@ -820,7 +820,13 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
     if g.get("colour") and not multi_dial:
         sub_bits.append(g["colour"])
     sub_en = " · ".join(sub_bits)
-    name_ko = to_ko(name_en) + (f" · {to_ko(sub_en)}" if sub_en else "")
+    override = ""
+    for m in members:
+        saved = (ENR.get(m.get("sku") or "") or {}).get("nameKo")
+        if isinstance(saved, str) and saved.strip():
+            override = saved.strip()
+            break
+    name_ko = override or (to_ko(name_en) + (f" · {to_ko(sub_en)}" if sub_en else ""))
 
     # Category membership comes from PLP scrape (raw), not enrich — enrich often
     # mis-tags Nearly New as atelier/bel-canto and hides them from Clearance.
