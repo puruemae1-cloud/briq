@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { mediaUrl } from "@/lib/product-image";
+import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 
 const HIDE_KEY = "briq-welcome-hide-until";
 
@@ -27,6 +27,23 @@ function seoulMidnightStamp(): number {
   const end = new Date(seoulNow);
   end.setHours(24, 0, 0, 0);
   return Date.now() + (end.getTime() - seoulNow.getTime());
+}
+
+function PopupPhoto() {
+  const primary = mediaUrl("/banners/hero-london.jpg");
+  const [src, setSrc] = useState(primary);
+  return (
+    <img
+      src={src}
+      alt=""
+      draggable={false}
+      referrerPolicy="no-referrer"
+      onError={() => {
+        const next = mediaUrlFallback("/banners/hero-london.jpg");
+        if (next && next !== src) setSrc(next);
+      }}
+    />
+  );
 }
 
 function WelcomeDialog({ onClose }: { onClose: () => void }) {
@@ -62,11 +79,7 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
         onClick={(event) => event.stopPropagation()}
       >
         <div className="welcome-popup__visual" aria-hidden>
-          <img
-            src={mediaUrl("/banners/hero-london.jpg")}
-            alt=""
-            draggable={false}
-          />
+          <PopupPhoto />
         </div>
         <div className="welcome-popup__body">
           <button
