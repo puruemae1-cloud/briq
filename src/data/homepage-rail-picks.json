@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T12:58:24Z",
+  "generatedAt": "2026-10-21T08:26:05Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -32,24 +32,24 @@
     },
     "bags": {
       "productIds": [
-        "mb-mini-heritage-backpack",
-        "mb-xl-delilah",
-        "mb-woven-tote",
-        "mb-tree-tote-raffia"
+        "ms-aspire-leather-black-black",
+        "ms-aspire-leather-tabac-cuoio",
+        "ms-belt-bag-black-black",
+        "ms-belt-bag-tabac-cuoio"
       ],
       "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
+        "mismo",
+        "mismo",
+        "mismo",
+        "mismo"
       ]
     },
     "shoes": {
       "productIds": [
-        "ps-black-campbell-boots",
-        "ps-black-chilly-trainers",
-        "ps-black-zebra-zed-slides",
-        "ps-chocolate-brown-leather-bari-shoes"
+        "ps-black-leather-xenon-boots",
+        "ps-black-suede-buster-shoes",
+        "ps-burgundy-connor-shoes",
+        "ps-cream-chilly-trainers"
       ],
       "brands": [
         "paul-smith",
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "mc-w-new-trick-water-repellent-tote-bag",
-        "mc-w-makaio-crossbody-bag",
-        "mc-w-caradoc-mini-tote-bag",
-        "mc-w-very-micro-tote-bag"
+        "mb-zipped-flat-pouch",
+        "mb-zipped-credit-card-slip",
+        "mb-wine-carrier",
+        "mb-waxed-baseball-cap"
       ],
       "brands": [
-        "몽클레어",
-        "몽클레어",
-        "몽클레어",
-        "몽클레어"
+        "mulberry",
+        "mulberry",
+        "mulberry",
+        "mulberry"
       ]
     },
     "sports": {
@@ -100,23 +100,23 @@
       "sports",
       "sports"
     ],
-    "mulberry": [
+    "mismo": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "mulberry": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "paul-smith": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
-    ],
-    "몽클레어": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
     ],
     "보테가-베네타": [
       "luxury",
