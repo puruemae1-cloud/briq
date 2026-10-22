@@ -87,12 +87,14 @@ export async function POST(req: Request) {
         ? `${Number(body.subtotalKrw).toLocaleString("ko-KR")}원`
         : "-",
     },
-    {
-      label: "쿠폰할인",
-      value: Number.isFinite(Number(body.discountKrw))
-        ? `-${Number(body.discountKrw).toLocaleString("ko-KR")}원`
-        : "-",
-    },
+    ...(Number(body.discountKrw) > 0
+      ? [
+          {
+            label: "쿠폰할인",
+            value: `-${Number(body.discountKrw).toLocaleString("ko-KR")}원`,
+          },
+        ]
+      : []),
     { label: "배송비", value: `${shippingFeeLabel} · ${shippingNote}` },
     { label: "결제금액", value: `${totalKrw.toLocaleString("ko-KR")}원` },
     { label: "수취인", value: customerName },

@@ -13,6 +13,7 @@ import { SizeChartControl } from "@/components/SizeChartControl";
 import { ShareLinkButton } from "@/components/ShareLinkButton";
 import { NaverPayOrderButton } from "@/components/NaverPayOrderButton";
 import type { Product, ProductVariant } from "@/data/product-types";
+import type { QaItem } from "@/lib/qa-store";
 import {
   formatKrw,
   isProductInStock,
@@ -136,10 +137,12 @@ export function ProductDetail({
   product,
   colorId,
   sizeId,
+  initialInquiries = [],
 }: {
   product: Product;
   colorId?: string;
   sizeId?: string;
+  initialInquiries?: QaItem[];
 }) {
   const allVariants = product.variants ?? [];
   const hasSizes = allVariants.some((v) => Boolean(v.size));
@@ -565,7 +568,11 @@ export function ProductDetail({
 
       <ProductPurchaseNotice />
 
-      <ProductEngagement productId={product.id} productName={product.nameKo} />
+      <ProductEngagement
+        productId={product.id}
+        productName={product.nameKo}
+        initialItems={initialInquiries}
+      />
 
       <div className="pdp-dock" aria-label="구매 옵션">
         <input

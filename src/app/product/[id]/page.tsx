@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
 import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
+import { listQa } from "@/lib/qa-inbox";
 import { mediaUrl } from "@/lib/product-image";
 import { getSiteUrl } from "@/lib/site";
 
@@ -76,6 +77,20 @@ export default async function ProductPage({ params, searchParams }: Props) {
   const site = getSiteUrl();
   const name = product.nameKo || product.name;
   const image = mediaUrl(product.image || product.images?.[0] || "");
+  const initialInquiries = (await listQa())
+    .filter((item) => item.productId === product.id && item.visibility !== "private")
+    .map((item) => ({
+      id: item.id,
+      productId: item.productId,
+      productName: item.productName,
+      authorName: item.authorName,
+      question: item.question,
+      visibility: "public" as const,
+      createdAt: item.createdAt,
+      answer: item.answer,
+      answeredAt: item.answeredAt,
+      answeredBy: item.answeredBy,
+    }));
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -105,7 +120,12 @@ export default async function ProductPage({ params, searchParams }: Props) {
   return (
     <>
       <JsonLd data={productLd} />
-      <ProductDetail product={product} colorId={colorId} sizeId={sizeId} />
+      <ProductDetail
+        product={product}
+        colorId={colorId}
+        sizeId={sizeId}
+        initialInquiries={initialInquiries}
+      />
     </>
   );
 }

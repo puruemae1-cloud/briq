@@ -1,13 +1,13 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
 import { formatKrw } from "@/data/product-utils";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
 import { SHIPPING_STAGE_COPY } from "@/lib/orders";
 import { useOrderStore } from "@/lib/order-store";
-import { useQaStore } from "@/lib/qa-store";
+import { refreshQa, useQaStore } from "@/lib/qa-store";
 
 export function AccountHome() {
   const sessionUserId = useAuthStore((s) => s.sessionUserId);
@@ -21,9 +21,14 @@ export function AccountHome() {
     () => (user ? allOrders.filter((o) => o.userId === user.id) : []),
     [allOrders, user],
   );
-  const pendingQa = useQaStore(
-    (s) => s.items.reduce((n, i) => (i.answer ? n : n + 1), 0),
+  const pendingQa = useQaStore((s) =>
+    s.items.reduce((n, i) => (i.answer ? n : n + 1), 0),
   );
+  const admin = isAdminUser(user);
+
+  useEffect(() => {
+    void refreshQa(undefined, { staff: admin });
+  }, [admin]);
 
   if (!user) {
     return (
@@ -50,7 +55,6 @@ export function AccountHome() {
 
   const latest = orders[0];
   const hasCustoms = Boolean(user.profile?.customsCode);
-  const admin = isAdminUser(user);
 
   return (
     <section className="section account-shell">
@@ -100,13 +104,6 @@ export function AccountHome() {
                   {latest
                     ? `최근: ${SHIPPING_STAGE_COPY[latest.status].title}`
                     : "아직 주문이 없습니다"}
-                </p>
-              </Link>
-              <Link href="/account/coupons" className="account-card">
-                <p className="account-card__label">쿠폰함</p>
-                <p className="account-card__value">리뷰 혜택</p>
-                <p className="account-card__hint">
-                  텍스트 3,000원 · 포토·영상 5,000원
                 </p>
               </Link>
               <Link href="/account/profile" className="account-card">

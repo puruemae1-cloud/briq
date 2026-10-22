@@ -5259,6 +5259,12 @@ body:has(.pdp-dock) .back-to-top {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 900px) {
+  .product-engage__head {
+    max-width: none;
+  }
+}
+
 .product-engage__eyebrow {
   margin: 0 0 0.4rem;
   font-size: 0.7rem;
@@ -5280,6 +5286,16 @@ body:has(.pdp-dock) .back-to-top {
   color: rgba(11, 18, 16, 0.68);
   line-height: 1.65;
   font-size: 0.95rem;
+  /* Break at spaces, so 담당자만 is not split as 담 / 당자만. */
+  word-break: keep-all;
+  line-break: strict;
+  overflow-wrap: normal;
+}
+
+@media (min-width: 900px) {
+  .product-engage__lead {
+    white-space: nowrap;
+  }
 }
 
 .product-engage__tabs {
@@ -5403,6 +5419,25 @@ body:has(.pdp-dock) .back-to-top {
   font-size: 0.82rem;
   line-height: 1.5;
   color: rgba(11, 18, 16, 0.55);
+}
+
+.engage-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.engage-check input {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0.15rem 0 0;
+  accent-color: var(--accent);
+  flex: none;
 }
 
 .engage-form__grid {

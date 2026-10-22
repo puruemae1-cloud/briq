@@ -2,19 +2,20 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Eye, EyeOff, Lock, MessageCircleQuestion } from "lucide-react";
+import { MessageCircleQuestion } from "lucide-react";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
-import { useQaStore, type QaVisibility } from "@/lib/qa-store";
+import { qaStaffHeaders, refreshQa, useQaStore, type QaItem } from "@/lib/qa-store";
 
 export function ProductQA({
   productId,
   productName,
+  initialItems = [],
 }: {
   productId: string;
   productName: string;
+  initialItems?: QaItem[];
 }) {
   const items = useQaStore((s) => s.items);
-  const add = useQaStore((s) => s.add);
   const answerQa = useQaStore((s) => s.answer);
   const ensureAdminSeeded = useAuthStore((s) => s.ensureAdminSeeded);
   const user = useAuthStore((s) => s.currentUser());
@@ -22,84 +23,115 @@ export function ProductQA({
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [secret, setSecret] = useState(false);
   const [question, setQuestion] = useState("");
-  const [visibility, setVisibility] = useState<QaVisibility>("public");
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [open, setOpen] = useState(false);
+  const [synced, setSynced] = useState(false);
   const [drafts, setDrafts] = useState<Record<string, string>>({});
   const [replyingId, setReplyingId] = useState<string | null>(null);
 
   useEffect(() => {
     ensureAdminSeeded();
-  }, [ensureAdminSeeded]);
+    let cancel = false;
+    void refreshQa(productId, { staff: isAdmin }).finally(() => {
+      if (!cancel) setSynced(true);
+    });
+    return () => {
+      cancel = true;
+    };
+  }, [ensureAdminSeeded, productId, isAdmin]);
 
   useEffect(() => {
     if (user && !isAdmin) {
       setName(user.name || "");
-      setEmail(user.email || "");
-      setPhone(user.phone || "");
     }
   }, [user, isAdmin]);
 
   const list = useMemo(() => {
-    const mineKey = (email.trim() || user?.email || "").toLowerCase();
-    return items
-      .filter((i) => i.productId === productId)
-      .filter((i) => {
-        if (isAdmin) return true;
-        if (i.visibility === "public") return true;
-        if (!mineKey) return false;
-        return (i.authorEmail || "").toLowerCase() === mineKey;
-      });
-  }, [items, productId, email, user?.email, isAdmin]);
+    const fromStore = items.filter((i) => i.productId === productId);
+    if (!synced && fromStore.length === 0) return initialItems;
+    return fromStore;
+  }, [items, productId, initialItems, synced]);
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
     setError(null);
     setNotice(null);
 
-    const authorName = name.trim();
+    const authorName = name.trim() || "고객";
     const q = question.trim();
-    if (!authorName || !q) {
-      setError("이름과 질문을 입력해 주세요.");
+    const authorEmail = email.trim();
+    if (!q) {
+      setError("문의 내용을 입력해 주세요.");
+      return;
+    }
+    if (secret && authorEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(authorEmail)) {
+      setError("이메일 형식을 확인해 주세요.");
       return;
     }
 
     setBusy(true);
-    add({
-      id: `qa-${Date.now()}`,
-      productId,
-      productName,
-      authorName,
-      authorEmail: email.trim() || undefined,
-      authorPhone: phone.trim() || undefined,
-      question: q,
-      visibility,
-      createdAt: new Date().toISOString(),
-    });
-
-    setQuestion("");
-    setOpen(false);
-    setBusy(false);
-    setNotice(
-      visibility === "private"
-        ? "비밀 질문이 등록되었습니다. Briq 담당자가 확인 후 답변드립니다."
-        : "질문이 등록되었습니다. Briq 담당자가 확인 후 답변드립니다.",
-    );
+    try {
+      const res = await fetch("/api/qa", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          productId,
+          productName,
+          authorName,
+          authorEmail: secret ? authorEmail : undefined,
+          question: q,
+          visibility: secret ? "private" : "public",
+        }),
+      });
+      const data = (await res.json()) as { ok?: boolean; message?: string };
+      if (!res.ok || !data.ok) {
+        setError(data.message || "문의를 등록하지 못했습니다.");
+        return;
+      }
+      setQuestion("");
+      setSecret(false);
+      setEmail("");
+      await refreshQa(productId, { staff: isAdmin });
+      setNotice(
+        secret
+          ? "비밀 문의로 등록되었습니다. 다른 고객에게는 보이지 않고 Briq만 확인합니다."
+          : "질문이 등록되었습니다. 이 페이지를 보는 누구나 확인할 수 있습니다.",
+      );
+    } catch {
+      setError("문의를 등록하지 못했습니다.");
+    } finally {
+      setBusy(false);
+    }
   }
 
-  function onReply(e: FormEvent, qaId: string) {
+  async function onReply(e: FormEvent, qaId: string) {
     e.preventDefault();
     if (!isAdmin || !user) return;
     setError(null);
-    const result = answerQa(qaId, drafts[qaId] || "", user.name);
+    const text = (drafts[qaId] || "").trim();
+    if (!text) {
+      setError("답변 내용을 입력해 주세요.");
+      return;
+    }
+    const res = await fetch("/api/qa", {
+      method: "PATCH",
+      headers: qaStaffHeaders(),
+      body: JSON.stringify({ id: qaId, answer: text, answeredBy: user.name }),
+    });
+    const data = (await res.json()) as { ok?: boolean; message?: string };
+    if (!res.ok || !data.ok) {
+      setError(data.message || "답변을 저장하지 못했습니다.");
+      return;
+    }
+    const result = answerQa(qaId, text, user.name);
     if (!result.ok) {
       setError(result.message);
       return;
     }
+    await refreshQa(productId, { staff: true });
     setDrafts((d) => {
       const next = { ...d };
       delete next[qaId];
@@ -121,96 +153,69 @@ export function ProductQA({
             </Link>
           ) : null}
         </p>
-        {!isAdmin ? (
-          <button
-            type="button"
-            className="btn btn-outline engage-panel__cta"
-            onClick={() => setOpen((v) => !v)}
-          >
-            {open ? "작성 닫기" : "문의 작성"}
-          </button>
-        ) : (
+        {isAdmin ? (
           <span className="engage-admin-badge">관리자 · 답변 모드</span>
-        )}
+        ) : null}
       </div>
 
       {notice ? <p className="engage-banner engage-banner--ok">{notice}</p> : null}
       {error ? <p className="engage-banner engage-banner--err">{error}</p> : null}
 
-      {open && !isAdmin ? (
+      {!isAdmin ? (
         <form className="engage-form" onSubmit={onSubmit}>
-          <div className="engage-visibility" role="radiogroup" aria-label="공개 설정">
-            <button
-              type="button"
-              className={`engage-visibility__btn${visibility === "public" ? " is-active" : ""}`}
-              aria-pressed={visibility === "public"}
-              onClick={() => setVisibility("public")}
-            >
-              <Eye size={15} aria-hidden />
-              공개
-            </button>
-            <button
-              type="button"
-              className={`engage-visibility__btn${visibility === "private" ? " is-active" : ""}`}
-              aria-pressed={visibility === "private"}
-              onClick={() => setVisibility("private")}
-            >
-              <Lock size={15} aria-hidden />
-              비밀글
-            </button>
-          </div>
-          <p className="engage-form__hint">
-            {visibility === "private"
-              ? "비밀글은 본인(동일 이메일)과 Briq 관리자만 확인할 수 있습니다. 일반 고객은 답글을 달 수 없습니다."
-              : "공개 문의는 상품 페이지에 노출됩니다. 답변은 Briq 관리자만 작성할 수 있습니다."}
-          </p>
-
-          <div className="engage-form__grid">
-            <label className="engage-field">
-              <span>이름</span>
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                placeholder="홍길동"
-                autoComplete="name"
-              />
-            </label>
-            <label className="engage-field">
-              <span>이메일 (비밀글 확인용)</span>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@email.com"
-                autoComplete="email"
-              />
-            </label>
-            <label className="engage-field">
-              <span>연락처 (선택)</span>
-              <input
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                placeholder="010-0000-0000"
-                autoComplete="tel"
-              />
-            </label>
-          </div>
-
           <label className="engage-field">
             <span>문의 내용</span>
             <textarea
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               required
-              rows={5}
+              rows={4}
               maxLength={2000}
               placeholder="사이즈, 배송, 구성품 등 궁금한 점을 남겨 주세요."
             />
           </label>
 
+          <label className="engage-check">
+            <input
+              type="checkbox"
+              checked={secret}
+              onChange={(e) => setSecret(e.target.checked)}
+            />
+            <span>비밀 문의로 남기기. 다른 고객에게는 보이지 않습니다.</span>
+          </label>
+
+          <div className="engage-form__grid">
+            <label className="engage-field">
+              <span>이름 (선택)</span>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="비워 두면 고객으로 표시됩니다"
+                autoComplete="name"
+              />
+            </label>
+            {secret ? (
+              <label className="engage-field">
+                <span>이메일 (선택)</span>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="답변을 메일로 받으려면 입력"
+                  autoComplete="email"
+                />
+              </label>
+            ) : null}
+          </div>
+
+          {secret ? (
+            <p className="engage-form__hint">
+              비밀 문의는 상품 페이지에 공개되지 않습니다. Briq이 확인하고, 이메일을 남기면 그 주소로 답장을 드릴 수 있습니다.
+            </p>
+          ) : null}
+
           <button type="submit" className="btn btn-solid" disabled={busy}>
-            {busy ? "등록 중…" : "문의 등록"}
+            {busy ? "등록 중…" : "문의 남기기"}
           </button>
         </form>
       ) : null}
@@ -231,13 +236,9 @@ export function ProductQA({
                 <time dateTime={item.createdAt}>
                   {formatDate(item.createdAt)}
                 </time>
-                {item.visibility === "private" ? (
-                  <span className="engage-pill">
-                    <EyeOff size={12} aria-hidden /> 비밀
-                  </span>
-                ) : (
-                  <span className="engage-pill engage-pill--public">공개</span>
-                )}
+                {isAdmin && item.visibility === "private" ? (
+                  <span className="engage-pill">비밀</span>
+                ) : null}
               </div>
               {isAdmin && (item.authorEmail || item.authorPhone) ? (
                 <p className="engage-item__contact">

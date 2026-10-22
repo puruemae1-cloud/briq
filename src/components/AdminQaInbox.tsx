@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AccountNav } from "@/components/AccountNav";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
-import { useQaStore } from "@/lib/qa-store";
+import { qaStaffHeaders, refreshQa, useQaStore } from "@/lib/qa-store";
 
 export function AdminQaInbox() {
   const ensureAdminSeeded = useAuthStore((s) => s.ensureAdminSeeded);
@@ -18,6 +18,7 @@ export function AdminQaInbox() {
 
   useEffect(() => {
     ensureAdminSeeded();
+    void refreshQa(undefined, { staff: true });
   }, [ensureAdminSeeded]);
 
   const list = useMemo(() => {
@@ -59,15 +60,31 @@ export function AdminQaInbox() {
     );
   }
 
-  function onReply(e: FormEvent, qaId: string) {
+  async function onReply(e: FormEvent, qaId: string) {
     e.preventDefault();
     setError(null);
     setNotice(null);
-    const result = answerQa(qaId, drafts[qaId] || "", user!.name);
-    if (!result.ok) {
-      setError(result.message);
+    const text = (drafts[qaId] || "").trim();
+    if (!text) {
+      setError("답변 내용을 입력해 주세요.");
       return;
     }
+    const res = await fetch("/api/qa", {
+      method: "PATCH",
+      headers: qaStaffHeaders(),
+      body: JSON.stringify({
+        id: qaId,
+        answer: text,
+        answeredBy: user!.name,
+      }),
+    });
+    const data = (await res.json()) as { ok?: boolean; message?: string };
+    if (!res.ok || !data.ok) {
+      setError(data.message || "답변을 저장하지 못했습니다.");
+      return;
+    }
+    answerQa(qaId, text, user!.name);
+    await refreshQa(undefined, { staff: true });
     setDrafts((d) => {
       const next = { ...d };
       delete next[qaId];

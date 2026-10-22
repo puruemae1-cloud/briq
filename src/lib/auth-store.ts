@@ -3,6 +3,9 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { CheckoutProfile } from "@/lib/checkout-profile";
+import { hashPassword } from "@/lib/password-hash";
+
+export { hashPassword };
 
 export type UserRole = "member" | "admin";
 
@@ -47,16 +50,6 @@ export const ADMIN_PASSWORD =
   (typeof process !== "undefined" &&
     process.env.NEXT_PUBLIC_ADMIN_PASSWORD?.trim()) ||
   "BriqAdmin2026!";
-
-/** Lightweight client hash for demo accounts only — not for production. */
-export function hashPassword(password: string) {
-  let h = 2166136261;
-  for (let i = 0; i < password.length; i++) {
-    h ^= password.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return `demo_${(h >>> 0).toString(16)}`;
-}
 
 export function isAdminUser(user: BriqUser | null | undefined): boolean {
   return user?.role === "admin";
