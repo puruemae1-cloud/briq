@@ -77,6 +77,13 @@ function ColorSwatches({
   );
 }
 
+function sizeTrack(labels: string[]) {
+  const longest = labels.reduce((n, label) => Math.max(n, label.trim().length), 0);
+  // 5.75rem fits labels such as "IT 38.5" and "One Size". Longer copy grows
+  // every box on that product together so they stay the same size.
+  return `repeat(auto-fill, max(5.75rem, ${longest}ch + 1.15rem))`;
+}
+
 function SizePicker({
   productId,
   colorKey,
@@ -91,8 +98,9 @@ function SizePicker({
   /** Chip label override — defaults to variant.size / name. */
   sizeLabel?: (v: ProductVariant) => string;
 }) {
+  const labels = sizes.map((v) => (sizeLabel ? sizeLabel(v) : v.size || v.name));
   return (
-    <div className="size-grid" role="list">
+    <div className="size-grid" role="list" style={{ gridTemplateColumns: sizeTrack(labels) }}>
       {sizes.map((v) => {
         const size = v.size || v.name;
         const label = sizeLabel ? sizeLabel(v) : size;
