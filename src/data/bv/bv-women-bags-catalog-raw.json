@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-21T09:25:45.064216+00:00",
+  "scrapedAt": "2026-10-22T06:17:07.594229+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -345,7 +345,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/baby-barbara-tote-petroleum-A0062ZV5KD04271.html",
       "gbpPrice": 3390.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Petroleum",
@@ -393,7 +393,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         }
@@ -16084,7 +16084,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-deep-mahogany-844249V4SC06147.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Deep mahogany",
@@ -16122,7 +16122,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
@@ -20448,7 +20448,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-fondant-844249V4SC02190.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Fondant",
@@ -20486,7 +20486,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
@@ -22761,7 +22761,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mini-andiamo-blue-royal-874957V5ZZ14303.html",
       "gbpPrice": 3120.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede bonded Intrecciato",
         "Colour: Blue Royal",
@@ -22804,7 +22804,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3120.0,
           "listGbpPrice": null
         }

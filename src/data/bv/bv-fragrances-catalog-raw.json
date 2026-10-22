@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-21T10:26:10.611896+00:00",
+  "scrapedAt": "2026-10-22T07:11:09.338382+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -1787,7 +1787,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/hinoki---parfum-100-ml-deep-blue-863880VV5709980.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -1827,7 +1827,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }

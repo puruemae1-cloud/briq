@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-21T08:19:59.384745+00:00",
+  "scrapedAt": "2026-10-22T05:21:25.406209+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -3937,7 +3937,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-briefcase-black-A006APV4FV08803.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -3976,7 +3976,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -4386,7 +4386,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1860.0,
           "listGbpPrice": null
         }

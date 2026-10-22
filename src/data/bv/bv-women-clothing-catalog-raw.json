@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-21T10:12:26.819290+00:00",
+  "scrapedAt": "2026-10-22T06:58:14.195614+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -1087,7 +1087,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         },
@@ -2121,7 +2121,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6110.0,
           "listGbpPrice": null
         },
@@ -4132,7 +4132,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-and-nylon-twill-puffer-jacket-wenge-A00AF6V6YS02789.html",
       "gbpPrice": 3390.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Wenge"
       ],
@@ -4223,7 +4223,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         },
@@ -4664,7 +4664,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2850.0,
           "listGbpPrice": null
         },
@@ -6715,7 +6715,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-blouson-sahara-852425V6KO02549.html",
       "gbpPrice": 2570.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Sahara"
       ],
@@ -6834,7 +6834,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2570.0,
           "listGbpPrice": null
         },
@@ -42228,7 +42228,7 @@
         "Relaxed fit"
       ],
       "compactedLongDesc": "Top in mohair wool and mikado silk.",
-      "composition": "• Material: 45% Viscose, 25% silk, 20% mohair, 9% polyamide, 1% Wool",
+      "composition": "• Material: 45% viscose, 25% silk, 20% mohair, 9% polyamide, 1% wool",
       "material": "",
       "productCare": "#N/A",
       "sizeModel": "",
