@@ -231,7 +231,7 @@
         "variantSku": "X000010184006",
         "color": "Lt Renegade / Renegade",
         "size": "NA",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 36,
         "gbpListPrice": 36
@@ -898,8 +898,8 @@
         "variantSku": "X000010468005",
         "color": "White",
         "size": "S",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 23,
         "gbpListPrice": 23
       }
@@ -956,9 +956,9 @@
       "Blurple / Kasumi",
       "Lt Renegade / Rose",
       "Ultima / Aquaculture",
-      "24K Black",
       "Orca",
-      "Solitude / Arctic Silk"
+      "Solitude / Arctic Silk",
+      "24K Black"
     ],
     "sizes": [
       "NA"
@@ -992,13 +992,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Ultima-Aquaculture-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Ultima-Aquaculture-Back-View.jpg"
       ],
-      "24K Black": [
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Hover.jpg"
-      ],
       "Orca": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Orca-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Orca-Front-View.jpg",
@@ -1012,6 +1005,13 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Side-View.jpg"
+      ],
+      "24K Black": [
+        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Hover.jpg"
       ]
     },
     "variants": [
@@ -1019,8 +1019,8 @@
         "variantSku": "X000006756042",
         "color": "Nucleus / Mongoose",
         "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 55,
         "gbpListPrice": 55
       },
@@ -1052,15 +1052,6 @@
         "gbpListPrice": 55
       },
       {
-        "variantSku": "X000006756029",
-        "color": "24K Black",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
         "variantSku": "X000006756004",
         "color": "Orca",
         "size": "NA",
@@ -1073,7 +1064,16 @@
         "variantSku": "X000006756024",
         "color": "Solitude / Arctic Silk",
         "size": "NA",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 55,
+        "gbpListPrice": 55
+      },
+      {
+        "variantSku": "X000006756029",
+        "color": "24K Black",
+        "size": "NA",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 55,
         "gbpListPrice": 55
@@ -1161,8 +1161,8 @@
         "variantSku": "X000009782002",
         "color": "24K Black",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       }
@@ -1400,7 +1400,7 @@
         "variantSku": "X000010465004",
         "color": "Black",
         "size": "XL",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 20,
         "gbpListPrice": 20
@@ -2061,8 +2061,8 @@
         "variantSku": "X000009936011",
         "color": "Mongoose / Black",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2070,8 +2070,8 @@
         "variantSku": "X000009936002",
         "color": "Black / Arctic Silk",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2206,7 +2206,7 @@
       },
       {
         "title": "Materials",
-        "body": "Body: Aequora AirPerm™ - Recycled Nylon/Spandex Stretch Plain Weave, FC0 DWR, 138 gsm - 86% Nylon, 14% Elastane · Origin of fabric: TAIWAN, CHINA · Origin of dyeing: TAIWAN, CHINA · Origin of Manufacture: CHINA · May release plastic microfibres into the environment when washing"
+        "body": "Body: Nylon/Spandex Stretch Plain Weave, FC0 DWR, 138 gsm - 86% Nylon, 14% Elastane · Origin of fabric: TAIWAN, CHINA · Origin of dyeing: TAIWAN, CHINA · Origin of Manufacture: CHINA · May release plastic microfibres into the environment when washing"
       },
       {
         "title": "Care",
@@ -2272,8 +2272,8 @@
         "variantSku": "X000009463035",
         "color": "Mongoose",
         "size": "LXL",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2290,8 +2290,8 @@
         "variantSku": "X000009463034",
         "color": "Mongoose",
         "size": "SM",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2449,51 +2449,6 @@
         "gbpListPrice": 25
       },
       {
-        "variantSku": "X000010464010",
-        "color": "White",
-        "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 25,
-        "gbpListPrice": 25
-      },
-      {
-        "variantSku": "X000010464001",
-        "color": "Black",
-        "size": "S",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 25,
-        "gbpListPrice": 25
-      },
-      {
-        "variantSku": "X000010464003",
-        "color": "Black",
-        "size": "L",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 25,
-        "gbpListPrice": 25
-      },
-      {
-        "variantSku": "X000010464012",
-        "color": "White",
-        "size": "XL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 25,
-        "gbpListPrice": 25
-      },
-      {
-        "variantSku": "X000010464002",
-        "color": "Black",
-        "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 25,
-        "gbpListPrice": 25
-      },
-      {
         "variantSku": "X000010464021",
         "color": "Mongoose",
         "size": "S",
@@ -2512,6 +2467,24 @@
         "gbpListPrice": 25
       },
       {
+        "variantSku": "X000010464010",
+        "color": "White",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 25,
+        "gbpListPrice": 25
+      },
+      {
+        "variantSku": "X000010464001",
+        "color": "Black",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 25,
+        "gbpListPrice": 25
+      },
+      {
         "variantSku": "X000010464013",
         "color": "Kasumi",
         "size": "S",
@@ -2521,9 +2494,27 @@
         "gbpListPrice": 25
       },
       {
+        "variantSku": "X000010464003",
+        "color": "Black",
+        "size": "L",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 25,
+        "gbpListPrice": 25
+      },
+      {
         "variantSku": "X000010464014",
         "color": "Kasumi",
         "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 25,
+        "gbpListPrice": 25
+      },
+      {
+        "variantSku": "X000010464012",
+        "color": "White",
+        "size": "XL",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 25,
@@ -2541,6 +2532,15 @@
       {
         "variantSku": "X000010464022",
         "color": "Mongoose",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 25,
+        "gbpListPrice": 25
+      },
+      {
+        "variantSku": "X000010464002",
+        "color": "Black",
         "size": "M",
         "stockStatus": "InStock",
         "inStock": true,
@@ -2820,7 +2820,7 @@
         "variantSku": "X000009934022",
         "color": "Black",
         "size": "XXL",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 70,
         "gbpListPrice": 70
@@ -2984,8 +2984,8 @@
         "variantSku": "X000009491027",
         "color": "Mongoose / Black",
         "size": "LXL",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 36,
         "gbpListPrice": 36
       },
@@ -3496,8 +3496,8 @@
         "variantSku": "X000010178007",
         "color": "Black",
         "size": "XXL",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 110,
         "gbpListPrice": 110
       }
@@ -3645,8 +3645,8 @@
         "variantSku": "X000010463005",
         "color": "White/Pearl Gray",
         "size": "S",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 27,
         "gbpListPrice": 27
       },
@@ -3919,7 +3919,7 @@
         "variantSku": "X000009935031",
         "color": "Dk Stratus / Black",
         "size": "XS",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
@@ -4180,8 +4180,8 @@
         "variantSku": "X000007397024",
         "color": "Lt Renegade",
         "size": "SM",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 32,
         "gbpListPrice": 32
       },
@@ -4189,8 +4189,8 @@
         "variantSku": "X000007397003",
         "color": "Black",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 32,
         "gbpListPrice": 32
       },
@@ -4514,7 +4514,7 @@
         "variantSku": "X000010467004",
         "color": "Black",
         "size": "XL",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 22,
         "gbpListPrice": 22
@@ -6741,8 +6741,8 @@
         "variantSku": "X000010358010",
         "color": "Dark Jade",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 70,
         "gbpListPrice": 70
       },
@@ -6750,8 +6750,8 @@
         "variantSku": "X000010358006",
         "color": "Black",
         "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 70,
         "gbpListPrice": 70
       },
@@ -9630,8 +9630,8 @@
       "Aquaculture / Black Sapphire",
       "Orca",
       "Dark Jade / Mantis",
-      "24K Black",
-      "Lt Renegade / Renegade"
+      "Lt Renegade / Renegade",
+      "24K Black"
     ],
     "sizes": [
       "NA"
@@ -9665,19 +9665,19 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Dark-Jade-Mantis-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Dark-Jade-Mantis-Back-View.jpg"
       ],
-      "24K Black": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010065-Bird-Word-Toque-24K-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010065-Bird-Word-Toque-24K-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010065-Bird-Word-Toque-24K-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010065-Bird-Word-Toque-24K-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010065-Bird-Word-Toque-24K-Black-Back-View.jpg"
-      ],
       "Lt Renegade / Renegade": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Back-View.jpg"
+      ],
+      "24K Black": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Back-View.jpg"
       ]
     },
     "variants": [
@@ -9718,8 +9718,8 @@
         "gbpListPrice": 55
       },
       {
-        "variantSku": "X000010979001",
-        "color": "24K Black",
+        "variantSku": "X000010979004",
+        "color": "Lt Renegade / Renegade",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -9727,8 +9727,8 @@
         "gbpListPrice": 55
       },
       {
-        "variantSku": "X000010979004",
-        "color": "Lt Renegade / Renegade",
+        "variantSku": "X000010979001",
+        "color": "24K Black",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -9970,17 +9970,8 @@
         "variantSku": "X000007254003",
         "color": "Black",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 40,
-        "gbpListPrice": 40
-      },
-      {
-        "variantSku": "X000007254014",
-        "color": "Dark Jade",
-        "size": "SM",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       },
@@ -9990,6 +9981,15 @@
         "size": "SM",
         "stockStatus": "OutOfStock",
         "inStock": false,
+        "gbpPrice": 40,
+        "gbpListPrice": 40
+      },
+      {
+        "variantSku": "X000007254014",
+        "color": "Dark Jade",
+        "size": "SM",
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 40,
         "gbpListPrice": 40
       },
@@ -10638,8 +10638,9 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Back.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Front-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Internal-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010708-Axios-20-Tote-Black-Detail-1.jpg",
@@ -11195,8 +11196,9 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Back.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Front-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Internal-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Detail-1.jpg",

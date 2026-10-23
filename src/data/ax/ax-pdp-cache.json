@@ -889,7 +889,7 @@
         "variantSku": "X000010504039",
         "color": "Neptune/Black",
         "size": "12.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
@@ -1465,8 +1465,8 @@
         "variantSku": "X000010023043",
         "color": "Black/Yukon",
         "size": "8",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -1591,7 +1591,7 @@
         "variantSku": "X000010023046",
         "color": "Black/Yukon",
         "size": "9.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 160,
         "gbpListPrice": 160
@@ -1627,8 +1627,8 @@
         "variantSku": "X000010023111",
         "color": "Stratus/Passport Grey",
         "size": "6.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -1663,8 +1663,8 @@
         "variantSku": "X000010023120",
         "color": "Stratus/Passport Grey",
         "size": "11",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 160,
         "gbpListPrice": 160
       },
@@ -3854,7 +3854,7 @@
         "variantSku": "X000010397062",
         "color": "Arctic Silk/Arctic Silk",
         "size": "9.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -4088,8 +4088,8 @@
         "variantSku": "X000010397063",
         "color": "Arctic Silk/Arctic Silk",
         "size": "10",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4160,8 +4160,8 @@
         "variantSku": "X000010397059",
         "color": "Arctic Silk/Arctic Silk",
         "size": "8",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -4178,7 +4178,7 @@
         "variantSku": "X000010397066",
         "color": "Arctic Silk/Arctic Silk",
         "size": "11.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -4646,8 +4646,8 @@
         "variantSku": "X000010397125",
         "color": "Mid Bracken/Mid Bracken",
         "size": "8.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -5019,7 +5019,7 @@
         "variantSku": "X000010398340",
         "color": "Fogstone/Neptune",
         "size": "6.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 150,
         "gbpListPrice": 150
@@ -5172,7 +5172,7 @@
         "variantSku": "X000010398349",
         "color": "Fogstone/Neptune",
         "size": "11",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 150,
         "gbpListPrice": 150
@@ -6018,8 +6018,8 @@
         "variantSku": "X000010155144",
         "color": "SL Forage/SL Forage",
         "size": "7",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -6054,7 +6054,7 @@
         "variantSku": "X000010155154",
         "color": "SL Forage/SL Forage",
         "size": "12",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
@@ -6126,8 +6126,8 @@
         "variantSku": "X000010155092",
         "color": "Atmos/Atmos",
         "size": "10",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -6144,8 +6144,8 @@
         "variantSku": "X000010155093",
         "color": "Atmos/Atmos",
         "size": "10.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -6225,7 +6225,7 @@
         "variantSku": "X000010155145",
         "color": "SL Forage/SL Forage",
         "size": "7.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
@@ -6306,8 +6306,8 @@
         "variantSku": "X000010155091",
         "color": "Atmos/Atmos",
         "size": "9.5",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -6315,8 +6315,8 @@
         "variantSku": "X000010155089",
         "color": "Atmos/Atmos",
         "size": "8.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 200,
         "gbpListPrice": 200
       },
@@ -6369,7 +6369,7 @@
         "variantSku": "X000010155138",
         "color": "Lt Oakmoss/Lt Oakmoss",
         "size": "12.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
@@ -6396,7 +6396,7 @@
         "variantSku": "X000010155136",
         "color": "Lt Oakmoss/Lt Oakmoss",
         "size": "11.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 200,
         "gbpListPrice": 200
@@ -6655,7 +6655,8 @@
       "Black/Black",
       "Dark Jade/Dark Jade",
       "Oakmoss/Oakmoss",
-      "Sea Salt/Sea Salt"
+      "Sea Salt/Sea Salt",
+      "Dk Mongoose/Tatsu"
     ],
     "sizes": [
       "6.5",
@@ -6709,6 +6710,13 @@
         "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Sea-Salt-Sea-Salt-Sole.jpg",
         "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Sea-Salt-Sea-Salt-Side.jpg",
         "https://images.arcteryx.com/details/1350x1710/S26-X000010078-Kragg-Shoe-Sea-Salt-Sea-Salt-Drop-Heel.jpg"
+      ],
+      "Dk Mongoose/Tatsu": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dk-Mongoose-Tatsu-Profile.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dk-Mongoose-Tatsu-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dk-Mongoose-Tatsu-Pair.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dk-Mongoose-Tatsu-Sole.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010078-Kragg-Shoe-Dk-Mongoose-Tatsu-Drop-Heel.jpg"
       ]
     },
     "variants": [
@@ -7292,6 +7300,123 @@
         "variantSku": "X000010078061",
         "color": "Sea Salt/Sea Salt",
         "size": "7",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078196",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "6.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078204",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "10.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078197",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "7",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078202",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "9.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078201",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "9",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078203",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "10",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078198",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "7.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078199",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "8",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078207",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "12",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078200",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "8.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078205",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "11",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078208",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "12.5",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 130,
+        "gbpListPrice": 130
+      },
+      {
+        "variantSku": "X000010078206",
+        "color": "Dk Mongoose/Tatsu",
+        "size": "11.5",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 130,
@@ -7891,8 +8016,8 @@
         "variantSku": "X000010502069",
         "color": "Mid Bracken/Void",
         "size": "7.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -7990,8 +8115,8 @@
         "variantSku": "X000010502062",
         "color": "Mid Bracken/Void",
         "size": "4",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
         "gbpPrice": 260,
         "gbpListPrice": 260
       },
@@ -8472,7 +8597,7 @@
         "variantSku": "X000010031073",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "8.5",
-        "stockStatus": "LowStock",
+        "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 180,
         "gbpListPrice": 180
@@ -8553,8 +8678,8 @@
         "variantSku": "X000010031063",
         "color": "Alpine Blue Grey/Lt Forage",
         "size": "3.5",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 180,
         "gbpListPrice": 180
       },
@@ -11400,7 +11525,7 @@
         "variantSku": "X000010400202",
         "color": "SL Larch/Lt Bracken",
         "size": "3.5",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 150,
         "gbpListPrice": 150

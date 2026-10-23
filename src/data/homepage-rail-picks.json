@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-23T07:38:00Z",
+  "generatedAt": "2026-10-23T11:07:34Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-washed-navy-cotton-linen-double-pleat-trousers",
-        "ps-men-s-standard-fit-crosshatch-stretch-blue-over-dye-jeans",
-        "ps-ecru-cotton-linen-double-pleat-trousers",
-        "ps-black-single-pleat-wool-mohair-evening-trousers"
+        "bv-a003brv6zf02201",
+        "bv-874364v6n602112",
+        "bv-875133v6ib02188",
+        "bv-871198v6or01010"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -46,16 +46,16 @@
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "ax-x000010504",
+        "ax-x000010502",
+        "ps-brown-suede-augustus-boots",
+        "ps-navy-leather-albany-trainers"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "arcteryx",
+        "arcteryx",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "accessories": {
@@ -74,10 +74,10 @@
     },
     "sports": {
       "productIds": [
-        "gg-dwayne",
-        "gg-dayton",
-        "gg-arissa",
-        "gg-murdoch"
+        "gg-marty-tour",
+        "gg-don-tour",
+        "gg-darryl-tour",
+        "gg-stanley"
       ],
       "brands": [
         "galvin-green",
@@ -88,6 +88,10 @@
     }
   },
   "brands": {
+    "arcteryx": [
+      "shoes",
+      "shoes"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -107,10 +111,8 @@
       "bags"
     ],
     "paul-smith": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
+      "shoes",
+      "shoes"
     ],
     "몽클레어": [
       "accessories",
@@ -119,10 +121,10 @@
       "accessories"
     ],
     "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ]
   },
   "overlaps": {},
