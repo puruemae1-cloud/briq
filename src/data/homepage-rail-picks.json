@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-23T11:07:34Z",
+  "generatedAt": "2026-10-23T19:56:43Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-875133v6ib02188",
-        "bv-871198v6or01010"
+        "gc-854224xjhna4794",
+        "gc-872686xuapp1000",
+        "gc-873625zavau1210",
+        "gc-a003vjzavof1000"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "gucci",
+        "gucci",
+        "gucci",
+        "gucci"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
+        "ps-smoke-grey-suede-buster-shoes",
         "ax-x000010504",
         "ax-x000010502",
-        "ps-brown-suede-augustus-boots",
-        "ps-navy-leather-albany-trainers"
+        "bb-two-piece-cotton-blend-socks-set"
       ],
       "brands": [
-        "arcteryx",
-        "arcteryx",
         "paul-smith",
-        "paul-smith"
+        "arcteryx",
+        "arcteryx",
+        "burberry"
       ]
     },
     "accessories": {
       "productIds": [
-        "mc-w-new-trick-water-repellent-tote-bag",
-        "mc-w-makaio-crossbody-bag",
-        "mc-w-caradoc-mini-tote-bag",
-        "mc-w-very-micro-tote-bag"
+        "lu-city-gent-umbrella",
+        "lu-london-undercover-e-gift-card",
+        "lu-city-lux-umbrella",
+        "lu-toyo-steel-y350-toolbox-silver"
       ],
       "brands": [
-        "몽클레어",
-        "몽클레어",
-        "몽클레어",
-        "몽클레어"
+        "london-undercover",
+        "london-undercover",
+        "london-undercover",
+        "london-undercover"
       ]
     },
     "sports": {
@@ -92,6 +92,9 @@
       "shoes",
       "shoes"
     ],
+    "burberry": [
+      "shoes"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -104,6 +107,18 @@
       "sports",
       "sports"
     ],
+    "gucci": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
+    "london-undercover": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
     "mulberry": [
       "bags",
       "bags",
@@ -111,20 +126,7 @@
       "bags"
     ],
     "paul-smith": [
-      "shoes",
       "shoes"
-    ],
-    "몽클레어": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},
