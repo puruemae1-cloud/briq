@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-10-09T19:47:23.836673+00:00",
+  "scrapedAt": "2026-10-23T18:39:23.152095+00:00",
   "brand": "Saint Laurent",
   "hub": "women-rtw",
   "category": "luxury",
   "family": "ys-women-rtw",
-  "officialNbAlgoliaHits": 257,
-  "officialUnionCount": 277,
+  "officialNbAlgoliaHits": 258,
+  "officialUnionCount": 278,
   "leaves": [
     "ys-women-rtw-all",
     "ys-women-shirts-tops",
@@ -23488,6 +23488,88 @@
         "/products/ys-pdp/a009tjyf2au2514/2.jpg",
         "/products/ys-pdp/a009tjyf2au2514/3.jpg",
         "/products/ys-pdp/a009tjyf2au2514/4.jpg"
+      ]
+    },
+    {
+      "id": "832489Y7E631000",
+      "sku": "832489Y7E631000",
+      "masterId": "832489Y7E63",
+      "name": "bermuda shorts in grain de poudre",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/bermuda-shorts-in-grain-de-poudre-832489Y7E631000.html",
+      "path": "pr/bermuda-shorts-in-grain-de-poudre-832489Y7E631000.html",
+      "collections": [
+        "saint-laurent",
+        "ys-women",
+        "ys-women-rtw-all",
+        "ys-women-jackets-pants"
+      ],
+      "leafId": "ys-women-jackets-pants",
+      "gbpPrice": 860.0,
+      "inStock": true,
+      "compositions": "T 100% WOOLFP  97% COTTON FP   3% ELASTAN",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/3aa6418c-57d7-4f5e-a280-261e8fedc05e/eCom/832489Y7E631000_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/13d3f2e5-59ec-46be-807c-26c2260b38cd/Original-Ecom/832489Y7E631000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/25278d48-9157-469a-bf78-40d6c2754278/eCom/832489Y7E631000_B.jpg?v=2"
+      ],
+      "description": "high-waisted tailored bermuda shorts made with certified wool, featuring a wide leg with a center crease and double pleat.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED WOOL </u></a>",
+        "concealed front button and hook closure",
+        "zip fly",
+        "two slash pockets at the front",
+        "two welt pockets with button at the back",
+        "waistband with belt loops",
+        "this product can also be shipped under code A000BDY7E631000"
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_rtw",
+        "microCategory": "ysl_micro_women_pants",
+        "superMicroCategory": "ysl_super_micro_women_pants"
+      },
+      "sizes": [
+        {
+          "id": "813861385",
+          "value": "F34",
+          "displayValue": "YSL F34 / GB 6",
+          "inStock": true
+        },
+        {
+          "id": "813861386",
+          "value": "F36",
+          "displayValue": "YSL F36 / GB 8",
+          "inStock": true
+        },
+        {
+          "id": "813861387",
+          "value": "F38",
+          "displayValue": "YSL F38 / GB 10",
+          "inStock": true
+        },
+        {
+          "id": "813861388",
+          "value": "F40",
+          "displayValue": "YSL F40 / GB 12",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "832489Y7E631000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/bermuda-shorts-in-grain-de-poudre-832489Y7E631000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/832489y7e631000/1.jpg",
+        "/products/ys-pdp/832489y7e631000/2.jpg",
+        "/products/ys-pdp/832489y7e631000/3.jpg"
       ]
     }
   ]
