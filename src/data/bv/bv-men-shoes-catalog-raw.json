@@ -1,7 +1,7 @@
 {
   "hub": "men-shoes",
   "category": "shoes",
-  "scrapedAt": "2026-10-22T05:35:26.495329+00:00",
+  "scrapedAt": "2026-10-23T05:34:09.162366+00:00",
   "leaves": [
     "bv-men-shoes-shot",
     "bv-men-shoes-orbit-flash",
@@ -6180,7 +6180,7 @@
         "https://bottega-veneta.dam.kering.com/asset/2bbbb8a4-9869-4198-a6b9-a8137d486912/eCom/855198V5U211000_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/8837f3b8-57d4-40a0-af6e-2eea8fc13fac/eCom/855198V5U211000_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/463a782a-9a0d-4a8d-b8c6-64ad6d2cbb72/eCom/855198V5U211000_E.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/767318cd-50a6-4806-a107-929baba44543/eCom/855198V5U211000_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/767318cd-50a6-4806-a107-929baba44543/eCom/855198V5U211000_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/9e843bff-3070-4db4-9785-81026c596fca/Small/855198V5U211000_A.jpg?v=2"
       ],
       "localImages": [
@@ -9382,7 +9382,7 @@
           "id": "47",
           "value": "47",
           "displayValue": "47",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -12414,7 +12414,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -12422,7 +12422,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -12430,7 +12430,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -12446,7 +12446,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -12462,7 +12462,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -12669,25 +12669,9 @@
           "listGbpPrice": null
         },
         {
-          "id": "41_5",
-          "value": "41_5",
-          "displayValue": "41.5",
-          "inStock": false,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "42_5",
-          "value": "42_5",
-          "displayValue": "42.5",
           "inStock": false,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
@@ -12701,25 +12685,9 @@
           "listGbpPrice": null
         },
         {
-          "id": "43_5",
-          "value": "43_5",
-          "displayValue": "43.5",
-          "inStock": false,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "44_5",
-          "value": "44_5",
-          "displayValue": "44.5",
           "inStock": false,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
@@ -12729,14 +12697,6 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "45_5",
-          "value": "45_5",
-          "displayValue": "45.5",
-          "inStock": false,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         },
@@ -13429,26 +13389,10 @@
           "listGbpPrice": null
         },
         {
-          "id": "42_5",
-          "value": "42_5",
-          "displayValue": "42.5",
-          "inStock": false,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "43",
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "43_5",
-          "value": "43_5",
-          "displayValue": "43.5",
-          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -13461,26 +13405,10 @@
           "listGbpPrice": null
         },
         {
-          "id": "44_5",
-          "value": "44_5",
-          "displayValue": "44.5",
-          "inStock": false,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "45",
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "45_5",
-          "value": "45_5",
-          "displayValue": "45.5",
-          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -13703,26 +13631,10 @@
           "listGbpPrice": null
         },
         {
-          "id": "41_5",
-          "value": "41_5",
-          "displayValue": "41.5",
-          "inStock": false,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "42",
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "42_5",
-          "value": "42_5",
-          "displayValue": "42.5",
-          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -13735,26 +13647,10 @@
           "listGbpPrice": null
         },
         {
-          "id": "43_5",
-          "value": "43_5",
-          "displayValue": "43.5",
-          "inStock": false,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "44",
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 890.0,
-          "listGbpPrice": null
-        },
-        {
-          "id": "44_5",
-          "value": "44_5",
-          "displayValue": "44.5",
-          "inStock": false,
           "gbpPrice": 890.0,
           "listGbpPrice": null
         },
@@ -18281,7 +18177,7 @@
         "Intrecciato leather slipper"
       ],
       "compactedLongDesc": "Slipper realised in soft nappa leather with all-over Intrecciato craft.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made with our finest materials. Any variations or irregularities are unique characteristics we embrace. Contact a specialist for specific care instructions.\n\nStore and handle with care. Use your protective bag. Avoid contact with any liquids, moisture, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "",
@@ -18770,7 +18666,7 @@
         "Intrecciato leather slipper"
       ],
       "compactedLongDesc": "Slipper realised in soft nappa leather with all-over Intrecciato craft.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
       "sizeModel": "",
@@ -19743,7 +19639,7 @@
           "id": "45",
           "value": "45",
           "displayValue": "45",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 860.0,
           "listGbpPrice": null
         },
@@ -20298,7 +20194,7 @@
         "Intrecciato leather slipper"
       ],
       "compactedLongDesc": "Slipper realised in soft nappa leather with all-over Intrecciato craft.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made with our finest materials. Any variations or irregularities are unique characteristics we embrace. Contact a specialist for specific care instructions.\n\nStore and handle with care. Use your protective bag. Avoid contact with any liquids, moisture, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "",
@@ -20531,7 +20427,7 @@
         "Intrecciato leather slipper"
       ],
       "compactedLongDesc": "Slipper realised in soft nappa leather with all-over Intrecciato craft.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made with our finest materials. Any variations or irregularities are unique characteristics we embrace. Contact a specialist for specific care instructions.\n\nStore and handle with care. Use your protective bag. Avoid contact with any liquids, moisture, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "",
@@ -21600,7 +21496,7 @@
         "https://bottega-veneta.dam.kering.com/asset/a4ddb66f-ad05-4445-98df-021821732e19/eCom/776576V2WT23264_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/284ae27b-3974-49c6-b615-e5b7ed1c9def/eCom/776576V2WT23264_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/284c916e-4b7f-4b69-ab6b-779636e1d2c6/eCom/776576V2WT23264_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/150a705a-5db4-4338-a028-9a6e6b888d73/eCom/776576V2WT23264_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/150a705a-5db4-4338-a028-9a6e6b888d73/eCom/776576V2WT23264_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/e9a84153-53db-4c45-a1c3-69109c10911e/Small/776576V2WT23264_A.jpg?v=1"
       ],
       "localImages": [
@@ -23282,7 +23178,7 @@
         "https://bottega-veneta.dam.kering.com/asset/b0a56962-82a0-40f0-a5ef-6450c913a721/eCom/876113V3QE09866_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e8dae24d-5596-4dcc-b552-c90f48030c32/eCom/876113V3QE09866_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/5b96ffbb-c03f-408e-be27-4f5ead0917a8/eCom/876113V3QE09866_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/53861023-ef8e-41a9-be70-83addace0799/eCom/876113V3QE09866_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/53861023-ef8e-41a9-be70-83addace0799/eCom/876113V3QE09866_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/230dba97-e3aa-4a81-bb01-045a18893ec6/Small/876113V3QE09866_A.jpg?v=1"
       ],
       "localImages": [
@@ -24799,7 +24695,7 @@
         "https://bottega-veneta.dam.kering.com/asset/30645d63-b707-4c9f-a77c-bda1f8837253/eCom/867864V6IJ19197_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e4110b7d-3de3-4129-84e2-33b0e66af67e/eCom/867864V6IJ19197_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/bd07514a-97bb-4f65-9dae-1b7e84a9ba1f/eCom/867864V6IJ19197_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/9f20584a-7c6f-4ac2-87ae-343500641835/eCom/867864V6IJ19197_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9f20584a-7c6f-4ac2-87ae-343500641835/eCom/867864V6IJ19197_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/94241db2-90db-4e8b-950f-ae45e4e75011/Small/867864V6IJ19197_A.jpg?v=1"
       ],
       "localImages": [
@@ -25959,7 +25855,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1290.0,
           "listGbpPrice": null
         },
@@ -25975,7 +25871,7 @@
           "id": "43",
           "value": "43",
           "displayValue": "43",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1290.0,
           "listGbpPrice": null
         },
@@ -26172,7 +26068,7 @@
         "https://bottega-veneta.dam.kering.com/asset/4521b676-60fd-4a0f-ae8e-ae13c6dd0c81/eCom/876065V4QN02388_E.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/711a5ecf-a6d8-4faa-9846-95427aaf1246/eCom/876065V4QN02388_F.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/941b0be2-793b-4a18-93d4-6fab3e066627/eCom/876065V4QN02388_G.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/275264b7-270c-4b15-8916-0e95dbe1c8f6/eCom/876065V4QN02388_H.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/275264b7-270c-4b15-8916-0e95dbe1c8f6/eCom/876065V4QN02388_H.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/5c13097c-94d6-4a50-bc82-434140ed4d75/Small/876065V4QN02388_A.jpg?v=3"
       ],
       "localImages": [
@@ -26410,7 +26306,7 @@
         "https://bottega-veneta.dam.kering.com/asset/4cfac117-7879-4f69-a8fb-78c0935184cd/eCom/876072V6TG12006_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/080f4bce-d450-406f-a84b-e7d4e22b0e77/eCom/876072V6TG12006_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/138a38ef-d4da-4949-8372-20b1782e80fc/eCom/876072V6TG12006_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/830928a3-e8b9-44fe-9b6e-cd41f0359e29/eCom/876072V6TG12006_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/830928a3-e8b9-44fe-9b6e-cd41f0359e29/eCom/876072V6TG12006_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/38690393-6b22-4aa5-9abf-5e4f4d2c4a43/Small/876072V6TG12006_A.jpg?v=1"
       ],
       "localImages": [
@@ -27363,7 +27259,7 @@
         "https://bottega-veneta.dam.kering.com/asset/9ed28079-21cd-4274-bbd8-951ddc318ce4/eCom/876078V6X201315_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/00c9ed9c-6716-4941-9b71-82bfa7c0e0e5/eCom/876078V6X201315_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1c309d66-da26-43d2-98c9-cbf6d4285cec/eCom/876078V6X201315_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/72d6b372-4de4-41ad-80cd-422cc671f732/eCom/876078V6X201315_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/72d6b372-4de4-41ad-80cd-422cc671f732/eCom/876078V6X201315_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/c07b7262-7294-4ae7-93d5-f21345ae6ab0/Small/876078V6X201315_A.jpg?v=2"
       ],
       "localImages": [
@@ -27388,7 +27284,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -28973,7 +28869,7 @@
         "https://bottega-veneta.dam.kering.com/asset/3743bf3c-2f72-4ac4-860a-024dd4aaa5f9/eCom/876067V4QN09677_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d9bd3874-3e50-4075-9da6-143e3944b321/eCom/876067V4QN09677_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/7ad98c7e-5eeb-4d1b-9af6-187a0cddf299/eCom/876067V4QN09677_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/44dc9956-08f6-4f97-90dd-7b678af3e417/eCom/876067V4QN09677_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/44dc9956-08f6-4f97-90dd-7b678af3e417/eCom/876067V4QN09677_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/5d8d60b1-7249-4143-a7fa-d108c8123823/Small/876067V4QN09677_A.jpg?v=1"
       ],
       "localImages": [
@@ -29210,7 +29106,7 @@
         "https://bottega-veneta.dam.kering.com/asset/d43cfe0a-47f2-4971-a4f6-83b8fe14a45e/eCom/876097V6X211315_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b12c2370-b509-4060-9852-72b0acdaa737/eCom/876097V6X211315_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/edecbf29-417f-4139-bc30-9a3774c34e36/eCom/876097V6X211315_G.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/ac2e9728-a872-4bc2-a079-d5ae3311e072/eCom/876097V6X211315_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ac2e9728-a872-4bc2-a079-d5ae3311e072/eCom/876097V6X211315_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/79aa4f03-25b4-4925-89fb-611b2e573eb0/Small/876097V6X211315_A.jpg?v=1"
       ],
       "localImages": [
@@ -29457,7 +29353,7 @@
         "https://bottega-veneta.dam.kering.com/asset/7abb636f-617c-4eea-b5a6-95a9f6f01c88/eCom/876097V6X212027_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/5f7d4e4c-21b7-4bbb-bffb-2dbda958cc36/eCom/876097V6X212027_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e29a8835-2d89-4648-bc9c-843c0d2ec094/eCom/876097V6X212027_G.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/69eef2f0-ecc1-4e6d-88a2-6f388c86f760/eCom/876097V6X212027_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/69eef2f0-ecc1-4e6d-88a2-6f388c86f760/eCom/876097V6X212027_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/e8a1568d-30d0-4779-8006-5be40cd5e690/Small/876097V6X212027_A.jpg?v=1"
       ],
       "localImages": [
@@ -30167,7 +30063,7 @@
         "https://bottega-veneta.dam.kering.com/asset/7c47cc64-4d0f-4d20-8e22-00a1a396e2c9/eCom/876067V6TG02006_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/9a26a496-543d-4e2a-8d61-b069cb57baca/eCom/876067V6TG02006_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/70fbffa4-b4ee-4b38-bdff-fc10b89a62ac/eCom/876067V6TG02006_G.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/861cec97-ead9-419a-baa5-26b85abe2924/eCom/876067V6TG02006_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/861cec97-ead9-419a-baa5-26b85abe2924/eCom/876067V6TG02006_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/9376b10c-cf45-4614-aff4-6b94b7635021/Small/876067V6TG02006_A.jpg?v=1"
       ],
       "localImages": [
@@ -35270,7 +35166,7 @@
         "https://bottega-veneta.dam.kering.com/asset/ab838bfb-0d5a-4fad-b6d1-ded2304c914b/eCom/876100V2ED01000_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/8eb4dc66-faf6-4804-bef5-915622ab6a33/eCom/876100V2ED01000_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/0ad9b385-be83-492c-bb92-fbadb57ee537/eCom/876100V2ED01000_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/5f9759f4-e5c1-4ce1-8708-a172cc625de3/eCom/876100V2ED01000_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5f9759f4-e5c1-4ce1-8708-a172cc625de3/eCom/876100V2ED01000_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/6f3974c8-f690-449c-93a4-a0e5221afefc/Small/876100V2ED01000_A.jpg?v=1"
       ],
       "localImages": [
@@ -35513,7 +35409,7 @@
         "https://bottega-veneta.dam.kering.com/asset/4685dbf6-cfd9-43c5-a10c-621c555c517b/eCom/867559V00P51000_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c972a735-0fe8-42d5-ab10-e19f5324f6bb/eCom/867559V00P51000_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/dfd5c4b4-7f87-4eb9-b155-df9025b6e2f8/eCom/867559V00P51000_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/be13d81d-a53a-4e06-b44a-c4b917a1c4a8/eCom/867559V00P51000_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/be13d81d-a53a-4e06-b44a-c4b917a1c4a8/eCom/867559V00P51000_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/b20d09ca-a4dd-4a94-bacc-fd53c7e25888/Small/867559V00P51000_A.jpg?v=1"
       ],
       "localImages": [
@@ -35756,7 +35652,7 @@
         "https://bottega-veneta.dam.kering.com/asset/f684e78a-9127-401f-8467-0bdb4dc4412e/eCom/867559V00P53791_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b9146f3d-fe63-4ddb-803c-520687b124fd/eCom/867559V00P53791_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/fc0ecb07-a0d5-41f9-8142-30e4ffff34d1/eCom/867559V00P53791_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/8a5e971e-3f67-4397-bb34-15143d8ee992/eCom/867559V00P53791_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8a5e971e-3f67-4397-bb34-15143d8ee992/eCom/867559V00P53791_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/ece80b0b-b273-4879-86e2-3e3ba46df9c0/Small/867559V00P53791_A.jpg?v=1"
       ],
       "localImages": [
@@ -36069,7 +35965,7 @@
         "Ergonomic leather insole"
       ],
       "compactedLongDesc": "Mule sandal in padded Intrecciato leather with ergonomic leather insole.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made with our finest materials. Any variations or irregularities are unique characteristics we embrace. Contact a specialist for specific care instructions.\n\nStore and handle with care. Use your protective bag. Avoid contact with any liquids, moisture, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "",
@@ -36303,7 +36199,7 @@
         "Ergonomic leather insole"
       ],
       "compactedLongDesc": "Mule sandal in padded Intrecciato leather with ergonomic leather insole.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "",
       "sizeModel": "",
@@ -36435,7 +36331,7 @@
         "https://bottega-veneta.dam.kering.com/asset/feac9f26-98e1-4a8a-b748-de424694830a/eCom/786883V3HB04128_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/62728db1-f557-4d91-ab85-71c2ca38e1e1/eCom/786883V3HB04128_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1b3c5782-e184-4358-b6ba-f6b605286bac/eCom/786883V3HB04128_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/0ef6ab2d-af81-4ecd-8e31-aae6ef1a28ba/eCom/786883V3HB04128_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0ef6ab2d-af81-4ecd-8e31-aae6ef1a28ba/eCom/786883V3HB04128_H.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/13d6b60b-3f41-4e59-8028-833c75e550cb/Small/786883V3HB04128_A.jpg?v=1"
       ],
       "localImages": [
@@ -36547,7 +36443,7 @@
         "Ergonomic leather insole"
       ],
       "compactedLongDesc": "Mule sandal in padded Intrecciato leather with ergonomic leather insole.",
-      "composition": "• Material: Calfskin leather",
+      "composition": "• Material: calfskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made with our finest materials. Any variations or irregularities are unique characteristics we embrace. Contact a specialist for specific care instructions.\n\nStore and handle with care. Use your protective bag. Avoid contact with any liquids, moisture, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "",

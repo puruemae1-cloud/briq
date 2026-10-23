@@ -1,14 +1,14 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-22T05:57:33.446884+00:00",
+  "scrapedAt": "2026-10-23T05:53:45.031102+00:00",
   "leaves": [
     "bv-men-travel"
   ],
   "leafCounts": {
     "bv-men-travel": {
-      "official": 75,
-      "scraped": 75
+      "official": 77,
+      "scraped": 77
     }
   },
   "products": [
@@ -3187,7 +3187,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato--passport-case-black-749441VCPQ48803.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calf leather",
         "Colour: Black"
@@ -3218,7 +3218,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -4396,7 +4396,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -4438,7 +4438,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -5154,6 +5154,146 @@
           "displayValue": "U",
           "inStock": true,
           "gbpPrice": 6640.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-travel"
+      ],
+      "leafId": "bv-men-travel",
+      "cgid": "men-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "867428VCQGH2008",
+      "sku": "867428VCQGH2008",
+      "internalId": "814425098",
+      "name": "Odyssey Garment Bag",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/odyssey-garment-bag-espresso-867428VCQGH2008.html",
+      "url": "https://www.bottegaveneta.com/en-gb/odyssey-garment-bag-espresso-867428VCQGH2008.html",
+      "gbpPrice": 3120.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Nylon",
+        "Colour: Espresso",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Nylon and Intrecciato nappa supple garment bag",
+        "Metal loop for hangers",
+        "Single exterior back zipped pocket",
+        "Full-length zip and snap-button closure for folded shoulder carry"
+      ],
+      "compactedLongDesc": "Garment bag in nylon and supple Intrecciato nappa leather, featuring an exterior zipped pocket at the back.",
+      "composition": "• Material: polyamide, lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 46 cm | 18.1\"\n\n• Width: 59.5 cm | 23.4\"\n\n• Depth: 4 cm | 1.6\"\n\n• Handle drop: 20 cm | 7.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ecd1458c-16d8-4a67-9323-585a2bfd21c7/eCom/867428VCQGH2008_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/42026589-dc7e-4f40-a647-fa4c433962d7/eCom/867428VCQGH2008_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ce0399fd-597c-4fb5-a9fc-3fa3394e3dae/eCom/867428VCQGH2008_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0483bad6-7f5a-4227-9f0e-f3314410391d/eCom/867428VCQGH2008_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a9d6eda3-49a6-4fee-b2e0-62d6fe97afdc/eCom/867428VCQGH2008_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/317fc4f9-4baf-40c4-8496-b97cafebe824/eCom/867428VCQGH2008_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ecd1458c-16d8-4a67-9323-585a2bfd21c7/Small/867428VCQGH2008_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/867428vcqgh2008/1.jpg",
+        "/products/bv-pdp/867428vcqgh2008/2.jpg",
+        "/products/bv-pdp/867428vcqgh2008/3.jpg",
+        "/products/bv-pdp/867428vcqgh2008/4.jpg",
+        "/products/bv-pdp/867428vcqgh2008/5.jpg",
+        "/products/bv-pdp/867428vcqgh2008/6.jpg",
+        "/products/bv-pdp/867428vcqgh2008/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3120.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-travel"
+      ],
+      "leafId": "bv-men-travel",
+      "cgid": "men-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "867428VCQGH8803",
+      "sku": "867428VCQGH8803",
+      "internalId": "814425099",
+      "name": "Odyssey Garment Bag",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/odyssey-garment-bag-black-867428VCQGH8803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/odyssey-garment-bag-black-867428VCQGH8803.html",
+      "gbpPrice": 3120.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Nylon",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Nylon and Intrecciato nappa supple garment bag",
+        "Metal loop for hangers",
+        "Single exterior back zipped pocket",
+        "Full-length zip and snap-button closure for folded shoulder carry"
+      ],
+      "compactedLongDesc": "Garment bag in nylon and supple Intrecciato nappa leather, featuring an exterior zipped pocket at the back.",
+      "composition": "• Material: polyamide, lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 46 cm | 18.1\"\n\n• Width: 59.5 cm | 23.4\"\n\n• Depth: 4 cm | 1.6\"\n\n• Handle drop: 20 cm | 7.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/36c3614e-6f87-45d3-9db2-bd2634695719/eCom/867428VCQGH8803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5b64dff2-49ca-44c4-b769-f1e90e55441b/eCom/867428VCQGH8803_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/37f7c18e-51ab-4769-9cb1-4d7953465819/eCom/867428VCQGH8803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ab9b08fa-e53a-4d6e-899c-c0604e245a26/eCom/867428VCQGH8803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3abdbd61-931a-48f5-93d6-03c18d1da51d/eCom/867428VCQGH8803_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7d166027-69b8-4a34-ad98-ca39dd094c9b/eCom/867428VCQGH8803_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6096c7f8-562d-4663-acd7-d788577cbe1f/eCom/867428VCQGH8803_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/36c3614e-6f87-45d3-9db2-bd2634695719/Small/867428VCQGH8803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/867428vcqgh8803/1.jpg",
+        "/products/bv-pdp/867428vcqgh8803/2.jpg",
+        "/products/bv-pdp/867428vcqgh8803/3.jpg",
+        "/products/bv-pdp/867428vcqgh8803/4.jpg",
+        "/products/bv-pdp/867428vcqgh8803/5.jpg",
+        "/products/bv-pdp/867428vcqgh8803/6.jpg",
+        "/products/bv-pdp/867428vcqgh8803/7.jpg",
+        "/products/bv-pdp/867428vcqgh8803/8.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
       ],

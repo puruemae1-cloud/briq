@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-22T06:00:41.445029+00:00",
+  "scrapedAt": "2026-10-23T05:56:35.469520+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -712,7 +712,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/woven-mycelium-key-ring-mineral-A003A7V6U301674.html",
       "gbpPrice": 290.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Hardware: Silver finish",
         "Colour: Mineral"
@@ -745,7 +745,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 290.0,
           "listGbpPrice": null
         }
@@ -7745,7 +7745,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -7785,7 +7785,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -9483,7 +9483,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -12010,7 +12010,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-intrecciato-foulard-barolo-872858V6AR02240.html",
       "gbpPrice": 1330.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Barolo"
       ],
@@ -12074,7 +12074,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1330.0,
           "listGbpPrice": null
         }
@@ -13481,7 +13481,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 180.0,
           "listGbpPrice": null
         }

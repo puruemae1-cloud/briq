@@ -1,7 +1,7 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-22T07:01:06.722006+00:00",
+  "scrapedAt": "2026-10-23T06:49:46.847484+00:00",
   "leaves": [
     "bv-women-travel"
   ],
@@ -1138,7 +1138,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1180,7 +1180,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -3853,7 +3853,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato--passport-case-black-749441VCPQ48803.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calf leather",
         "Colour: Black"
@@ -3884,7 +3884,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
