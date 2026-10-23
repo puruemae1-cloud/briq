@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T19:47:49.602206+00:00",
+  "scrapedAt": "2026-10-23T18:34:59.656090+00:00",
   "brand": "Vivienne Westwood",
   "hub": "https://www.viviennewestwood.com/en-gb/men/clothing/",
   "family": "vw-men-rtw",
@@ -16895,6 +16895,361 @@
         "Clothing",
         "T-Shirts and Polos",
         "Classic Polo"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "27010012-Y001V--BLACK",
+      "sku": "27010012-Y001V--BLACK",
+      "title": "Alex Round Neck Sweater",
+      "gbpPrice": 460.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/knitwear-and-sweatshirts/alex-round-neck-sweater-black/27010012-Y001V--BLACK.html",
+      "leafId": "vw-men-knitwear",
+      "leafLabel": "Knitwear",
+      "leafLabelKo": "니트웨어",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Alex Round Neck sweater has been revisited this season, offered in a soft cotton-cashmere finish. The piece features the house's multi-coloured orb motif on the left-hand side of the chest, inspired by our house's orb-shaped emblem, recalling Vivienne's vision of taking tradition into the future. Features a straight hemlineFits true to size, take your normal sizeExtra-fine knitRound necklineLong-sleeve silhouetteRibbed trims Orb embroideryModel is 6’0/183cm and is wearing a size MMade in Italy Code: 27010012-Y001V--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Alex Round Neck sweater has been revisited this season, offered in a soft cotton-cashmere finish. The piece features the house's multi-coloured orb motif on the left-hand side of the chest, inspired by our house's orb-shaped emblem, recalling Vivienne's vision of taking tradition into the future.</p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a straight hemline</li><li><span data-teams=\"true\"><span dir=\"ltr\">Fits true to size, take your normal size</span></span></li><li>Extra-fine knit</li><li>Round neckline</li><li>Long-sleeve silhouette</li><li>Ribbed trims&nbsp;</li><li>Orb embroidery</li><li>Model is 6’0/183cm and is wearing a size M</li><li>Made in Italy</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">27010012-Y001V--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "85% Organic cotton 15% CashmereOrganic fibres are natural fibres grown with strict rules concerning the use of synthetic pesticides, insecticides, or herbicides and GMOs (Genetic Modified Organisms).",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>85% Organic cotton&nbsp;</li><li>15% Cashmere</li><li>Organic fibres are natural fibres grown with strict rules concerning the use of synthetic pesticides, insecticides, or herbicides and GMOs (Genetic Modified Organisms).</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash the garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash the garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeStock": {
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": false
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-sweatshirts.html",
+      "sizeChart": {
+        "id": "size-guide-mens-sweatshirts",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "SWEATSHIRTS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "가슴 (cm)",
+            "108",
+            "112",
+            "116",
+            "120",
+            "124",
+            "128",
+            "132",
+            "136"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "92",
+            "96",
+            "100",
+            "104",
+            "108",
+            "112",
+            "116"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-sweatshirts.html"
+      },
+      "images": [
+        "/products/vw-pdp/27010012-y001v-black/1.jpg",
+        "/products/vw-pdp/27010012-y001v-black/2.jpg",
+        "/products/vw-pdp/27010012-y001v-black/3.jpg",
+        "/products/vw-pdp/27010012-y001v-black/4.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw3f25db67/images/27010012-Y001V-_BLACK_000_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwec43e289/images/27010012-Y001V-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwbfd10c68/images/27010012-Y001V-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwcbea7a34/images/27010012-Y001V-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "Knitwear and Sweatshirts",
+        "Alex Round Neck Sweater"
+      ],
+      "categoryLabel": ""
+    },
+    {
+      "id": "3G010013-J00BL--BLACK",
+      "sku": "3G010013-J00BL--BLACK",
+      "title": "Classic T-shirt Multicolour Orb",
+      "gbpPrice": 240.0,
+      "url": "https://www.viviennewestwood.com/en-us/men/clothing/t-shirts-and-polos/classic-t-shirt-multicolour-orb-black/3G010013-J00BL--BLACK.html",
+      "leafId": "vw-men-tees",
+      "leafLabel": "T-shirts & Polos",
+      "leafLabelKo": "티셔츠/폴로",
+      "collections": [
+        "vivienne-westwood",
+        "vw-men",
+        "vw-men-rtw",
+        "vw-men-rtw-all"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "Description",
+          "body": "Our Classic t-shirt is crafted from soft cotton, complete with short sleeves and a round neckline before falling into a clean, straight-hem silhouette. Embroidered with the house's multicoloured orb motif at the chest, the design reflects Vivienne's vision of launching tradition into the future. Features a ribbed necklineOrb embroideryShort sleevesRound necklineStraight hemlineTonal stitchingNon-stretch fabricThe model is 6’0/183cm and is wearing a size M Code: 3G010013-J00BL--BLACK",
+          "html": "\n                <div class=\"b-product_accordion-content_inner\" data-ref=\"accordionItemPanelInner\" data-tau=\"product_accordion_content\">\n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_short_description\">\n                            <p>Our Classic t-shirt is crafted from soft cotton, complete with short sleeves and a round neckline before falling into a clean, straight-hem silhouette. Embroidered with the house's multicoloured orb motif at the chest, the design reflects Vivienne's vision of launching tradition into the future. </p>\n                        </div>\n                    \n                    \n                        <div class=\"b-pdp_user_content\" data-tau=\"product_long_description\">\n                            <ul><li>Features a ribbed neckline</li><li>Orb embroidery</li><li>Short sleeves</li><li>Round neckline</li><li>Straight hemline</li><li>Tonal stitching</li><li>Non-stretch fabric</li><li>The model is 6’0/183cm and is wearing a size M</li></ul>\n                        </div>\n                    \n                    <p class=\"b-product_details-skn\">\n                        Code:\n                        <span data-tau=\"product_details_id\">3G010013-J00BL--BLACK</span>\n                    </p>\n                    \n                </div>\n            "
+        },
+        {
+          "label": "Composition",
+          "body": "100% Cotton",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>100% Cotton</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        },
+        {
+          "label": "Care Instructions",
+          "body": "Please wash each garment separately – and do not use bleach.Avoid over-exposure to direct sunlight or heat.Avoid tumble drying – and follow the temperature instructions strictly.Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.Please protect metal accessories when washing by hand or by dry-cleaning. If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.",
+          "html": "\n                    <div class=\"b-product_accordion-content_inner\" data-tau=\"product_accordion_content\" data-ref=\"accordionItemPanelInner\">\n                        \n                            <div class=\"b-pdp_user_content\">\n                                <ul><li>Please wash each garment separately – and do not use bleach.</li><li>Avoid over-exposure to direct sunlight or heat.</li><li>Avoid tumble drying – and follow the temperature instructions strictly.</li><li>Please follow the ironing technique, as written on the label. Iron the garments inside out, or with a cloth.</li><li>Please protect metal accessories when washing by hand or by dry-cleaning.&nbsp;</li><li>If professional dry cleaning is permitted, please proceed with a trusted dry cleaner.</li></ul>\n                            </div>\n                        \n                    </div>\n                "
+        }
+      ],
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "sizeStock": {
+        "XXS": false,
+        "XS": true,
+        "S": true,
+        "M": true,
+        "L": true,
+        "XL": true,
+        "XXL": true,
+        "XXXL": true
+      },
+      "sizeGuideUrl": "/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html",
+      "sizeChart": {
+        "id": "size-guide-mens-tshirts-and-polos",
+        "titleKo": "비비안 웨스트우드 남성 사이즈 가이드",
+        "noteKo": "비비안 웨스트우드 공식 사이즈 가이드 기준입니다.",
+        "headers": [
+          "구분",
+          "XXS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "3XL"
+        ],
+        "rows": [
+          [
+            "UK",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "US",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "IT / EU",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54",
+            "56"
+          ],
+          [
+            "AU",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          [
+            "T-SHIRTS & POLOS",
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "3XL"
+          ],
+          [
+            "Shoulders",
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50",
+            "52",
+            "54"
+          ],
+          [
+            "가슴 (cm)",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118",
+            "122"
+          ],
+          [
+            "밑단 (cm)",
+            "88",
+            "94",
+            "98",
+            "102",
+            "106",
+            "110",
+            "114",
+            "118"
+          ]
+        ],
+        "sourceUrl": "https://www.viviennewestwood.com/en-us/size-charts-assets/size-guide-mens-tshirts-and-polos.html"
+      },
+      "images": [
+        "/products/vw-pdp/3g010013-j00bl-black/1.jpg",
+        "/products/vw-pdp/3g010013-j00bl-black/2.jpg",
+        "/products/vw-pdp/3g010013-j00bl-black/3.jpg",
+        "/products/vw-pdp/3g010013-j00bl-black/4.jpg",
+        "/products/vw-pdp/3g010013-j00bl-black/5.jpg"
+      ],
+      "remoteImages": [
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw259a28e1/images/3G010013-J00BL-_BLACK_001_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw58310a13/images/3G010013-J00BL-_BLACK_002_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwa88a0f83/images/3G010013-J00BL-_BLACK_003_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwfb1e641a/images/3G010013-J00BL-_BLACK_004_large.jpg?sw=1200&sh=1600&sm=fit&q=85",
+        "https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw85ae0863/images/3G010013-J00BL-_BLACK_005_large.jpg?sw=1200&sh=1600&sm=fit&q=85"
+      ],
+      "availability": true,
+      "breadcrumb": [
+        "Home",
+        "Men",
+        "Clothing",
+        "T-Shirts and Polos",
+        "Classic T-shirt Multicolour Orb"
       ],
       "categoryLabel": ""
     }
