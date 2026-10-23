@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T16:31:19Z",
+  "scrapedAt": "2026-10-23T14:44:38Z",
   "products": [
     {
       "id": "14874104922489",
@@ -7,9 +7,19 @@
       "title": "London Undercover Black Auto-Compact Umbrella"
     },
     {
-      "id": "15062569058681",
-      "handle": "light-olive-green-auto-compact-umbrella",
-      "title": "London Undercover Light Olive Green Auto-Compact Umbrella"
+      "id": "15062573810041",
+      "handle": "navy-auto-compact-umbrella",
+      "title": "London Undercover Navy Auto-Compact Umbrella"
+    },
+    {
+      "id": "15062567190905",
+      "handle": "olive-green-auto-compact-umbrella",
+      "title": "London Undercover Olive Green Auto-Compact Umbrella"
+    },
+    {
+      "id": "15271729791353",
+      "handle": "london-map-auto-compact-umbrella",
+      "title": "London Undercover London Map Auto-compact umbrella"
     },
     {
       "id": "15062570238329",
@@ -22,9 +32,14 @@
       "title": "London Undercover Yellow Auto-Compact Umbrella"
     },
     {
-      "id": "15062566338937",
-      "handle": "dark-grey-auto-compact-umbrella",
-      "title": "London Undercover Dark Grey Auto-Compact Umbrella"
+      "id": "15062569058681",
+      "handle": "light-olive-green-auto-compact-umbrella",
+      "title": "London Undercover Light Olive Green Auto-Compact Umbrella"
+    },
+    {
+      "id": "15062560604537",
+      "handle": "black-watch-tartan-auto-compact-umbrella",
+      "title": "London Undercover Black Watch Tartan Auto-Compact Umbrella"
     },
     {
       "id": "15062551953785",
@@ -42,19 +57,14 @@
       "title": "London Undercover Dark Roast Auto-Compact Umbrella"
     },
     {
-      "id": "15062560604537",
-      "handle": "black-watch-tartan-auto-compact-umbrella",
-      "title": "London Undercover Black Watch Tartan Auto-Compact Umbrella"
-    },
-    {
       "id": "15062576529785",
       "handle": "black-coffee-auto-compact-umbrella",
       "title": "London Undercover Black Coffee Auto-Compact Umbrella"
     },
     {
-      "id": "15062563553657",
-      "handle": "zebra-print-auto-compact-umbrella",
-      "title": "London Undercover Zebra Print Auto-Compact Umbrella"
+      "id": "15062566338937",
+      "handle": "dark-grey-auto-compact-umbrella",
+      "title": "London Undercover Dark Grey Auto-Compact Umbrella"
     },
     {
       "id": "15062562374009",
@@ -72,6 +82,11 @@
       "title": "London Undercover Neon Pink Auto-Compact Umbrella"
     },
     {
+      "id": "15062563553657",
+      "handle": "zebra-print-auto-compact-umbrella",
+      "title": "London Undercover Zebra Print Auto-Compact Umbrella"
+    },
+    {
       "id": "15062565159289",
       "handle": "giraffe-print-auto-compact-umbrella",
       "title": "London Undercover Giraffe Print Auto-Compact Umbrella"
@@ -80,21 +95,6 @@
       "id": "15062559162745",
       "handle": "british-woodland-camouflage-auto-compact-umbrella",
       "title": "London Undercover British Woodland Camouflage Auto-Compact Umbrella"
-    },
-    {
-      "id": "15062567190905",
-      "handle": "olive-green-auto-compact-umbrella",
-      "title": "London Undercover Olive Green Auto-Compact Umbrella"
-    },
-    {
-      "id": "15062573810041",
-      "handle": "navy-auto-compact-umbrella",
-      "title": "London Undercover Navy Auto-Compact Umbrella"
-    },
-    {
-      "id": "15271729791353",
-      "handle": "london-map-auto-compact-umbrella",
-      "title": "London Undercover London Map Auto-compact umbrella"
     },
     {
       "id": "15062540124537",
@@ -162,14 +162,14 @@
       "title": "London Undercover British Woodland Camouflage Whangee Telescopic Umbrella"
     },
     {
-      "id": "15062516695417",
-      "handle": "yellow-maple-telescopic-umbrella",
-      "title": "London Undercover Yellow Maple Telescopic Umbrella"
-    },
-    {
       "id": "15062542877049",
       "handle": "yellow-whangee-telescopic-umbrella",
       "title": "London Undercover Yellow Whangee Telescopic Umbrella"
+    },
+    {
+      "id": "15062516695417",
+      "handle": "yellow-maple-telescopic-umbrella",
+      "title": "London Undercover Yellow Maple Telescopic Umbrella"
     },
     {
       "id": "15062512238969",
@@ -227,14 +227,14 @@
       "title": "London Undercover Navy Pinstripe Orange Classic Umbrella"
     },
     {
-      "id": "9432428511539",
-      "handle": "navy-e1-city-gent-umbrella",
-      "title": "London Undercover Navy E1 City Gent Umbrella"
-    },
-    {
       "id": "9462103638323",
       "handle": "london-map-double-cg-umbrella",
       "title": "London Undercover London Map Double CG Umbrella"
+    },
+    {
+      "id": "9432428511539",
+      "handle": "navy-e1-city-gent-umbrella",
+      "title": "London Undercover Navy E1 City Gent Umbrella"
     },
     {
       "id": "15062410789241",
@@ -252,14 +252,14 @@
       "title": "London Undercover Navy and Orange Double CG Umbrella"
     },
     {
-      "id": "15062303998329",
-      "handle": "yellow-e1-city-gent-umbrella",
-      "title": "London Undercover Yellow E1 City Gent Umbrella"
-    },
-    {
       "id": "15062255370617",
       "handle": "navy-and-yellow-double-cg-umbrella",
       "title": "London Undercover Navy and Yellow Double CG Umbrella"
+    },
+    {
+      "id": "15062303998329",
+      "handle": "yellow-e1-city-gent-umbrella",
+      "title": "London Undercover Yellow E1 City Gent Umbrella"
     },
     {
       "id": "15062348169593",
@@ -277,6 +277,21 @@
       "title": "London Undercover Black City Lux Umbrella"
     },
     {
+      "id": "15062265528697",
+      "handle": "olive-green-and-orange-double-cg-umbrella",
+      "title": "London Undercover Olive Green and Orange Double CG Umbrella"
+    },
+    {
+      "id": "15062247604601",
+      "handle": "tan-and-yellow-double-cg-umbrella",
+      "title": "London Undercover Tan and Yellow Double CG Umbrella"
+    },
+    {
+      "id": "15062420259193",
+      "handle": "black-oak-solid-stick-umbrella",
+      "title": "London Undercover Black Oak Solid Stick Umbrella"
+    },
+    {
       "id": "15062412755321",
       "handle": "brown-city-lux-umbrella",
       "title": "London Undercover Brown City Lux Umbrella"
@@ -287,29 +302,14 @@
       "title": "London Undercover Constellation Double CG Umbrella"
     },
     {
-      "id": "15062265528697",
-      "handle": "olive-green-and-orange-double-cg-umbrella",
-      "title": "London Undercover Olive Green and Orange Double CG Umbrella"
-    },
-    {
       "id": "15062433071481",
       "handle": "olive-green-oak-solid-stick-umbrella",
       "title": "London Undercover Olive Green Oak Solid Stick Umbrella"
     },
     {
-      "id": "15062247604601",
-      "handle": "tan-and-yellow-double-cg-umbrella",
-      "title": "London Undercover Tan and Yellow Double CG Umbrella"
-    },
-    {
       "id": "15062426550649",
       "handle": "navy-oak-solid-stick-umbrella",
       "title": "London Undercover Navy Oak Solid Stick Umbrella"
-    },
-    {
-      "id": "15062420259193",
-      "handle": "black-oak-solid-stick-umbrella",
-      "title": "London Undercover Black Oak Solid Stick Umbrella"
     },
     {
       "id": "15062341812601",
@@ -367,6 +367,11 @@
       "title": "London Undercover E-Gift Card"
     },
     {
+      "id": "15062192390521",
+      "handle": "navy-multibraid-city-gent-umbrella",
+      "title": "London Undercover Navy Multibraid City Gent Umbrella"
+    },
+    {
       "id": "9432432050483",
       "handle": "prince-of-wales-check-oak-solid-stick-umbrella",
       "title": "London Undercover Prince of Wales Check Oak Solid Stick Umbrella"
@@ -387,11 +392,6 @@
       "title": "London Undercover Tan and Orange Double CG Umbrella"
     },
     {
-      "id": "15062192390521",
-      "handle": "navy-multibraid-city-gent-umbrella",
-      "title": "London Undercover Navy Multibraid City Gent Umbrella"
-    },
-    {
       "id": "15062186590585",
       "handle": "orange-lifesaver-city-gent-umbrella",
       "title": "London Undercover Orange Lifesaver City Gent Umbrella"
@@ -402,14 +402,14 @@
       "title": "London Undercover Black Multibraid City Gent Umbrella"
     },
     {
-      "id": "15372575342969",
-      "handle": "london-undercover-tan-oak-solid-stick-umbrella",
-      "title": "London Undercover Tan Oak Solid Stick Umbrella"
-    },
-    {
       "id": "15062232039801",
       "handle": "navy-w1-city-gent-umbrella",
       "title": "London Undercover Navy W1 City Gent Umbrella"
+    },
+    {
+      "id": "15372575342969",
+      "handle": "london-undercover-tan-oak-solid-stick-umbrella",
+      "title": "London Undercover Tan Oak Solid Stick Umbrella"
     },
     {
       "id": "15062274408825",
@@ -422,14 +422,14 @@
       "title": "London Undercover Black and British Woodland Camouflage Double CG Umbrella"
     },
     {
-      "id": "15062199009657",
-      "handle": "multicam-camouflage-city-gent-umbrella",
-      "title": "London Undercover Multicam Camouflage City Gent Umbrella"
-    },
-    {
       "id": "9462036529459",
       "handle": "orange-w1-city-gent-umbrella",
       "title": "London Undercover Orange W1 City Gent Umbrella"
+    },
+    {
+      "id": "15062199009657",
+      "handle": "multicam-camouflage-city-gent-umbrella",
+      "title": "London Undercover Multicam Camouflage City Gent Umbrella"
     },
     {
       "id": "15062331752825",
@@ -466,7 +466,13 @@
     "14874104922489": [
       "auto-compact"
     ],
-    "15062569058681": [
+    "15062573810041": [
+      "auto-compact"
+    ],
+    "15062567190905": [
+      "auto-compact"
+    ],
+    "15271729791353": [
       "auto-compact"
     ],
     "15062570238329": [
@@ -475,7 +481,10 @@
     "15062571876729": [
       "auto-compact"
     ],
-    "15062566338937": [
+    "15062569058681": [
+      "auto-compact"
+    ],
+    "15062560604537": [
       "auto-compact"
     ],
     "15062551953785": [
@@ -487,13 +496,10 @@
     "15062556672377": [
       "auto-compact"
     ],
-    "15062560604537": [
-      "auto-compact"
-    ],
     "15062576529785": [
       "auto-compact"
     ],
-    "15062563553657": [
+    "15062566338937": [
       "auto-compact"
     ],
     "15062562374009": [
@@ -505,19 +511,13 @@
     "15062561948025": [
       "auto-compact"
     ],
+    "15062563553657": [
+      "auto-compact"
+    ],
     "15062565159289": [
       "auto-compact"
     ],
     "15062559162745": [
-      "auto-compact"
-    ],
-    "15062567190905": [
-      "auto-compact"
-    ],
-    "15062573810041": [
-      "auto-compact"
-    ],
-    "15271729791353": [
       "auto-compact"
     ],
     "15062540124537": [
@@ -559,10 +559,10 @@
     "15062526132601": [
       "telescopic"
     ],
-    "15062516695417": [
+    "15062542877049": [
       "telescopic"
     ],
-    "15062542877049": [
+    "15062516695417": [
       "telescopic"
     ],
     "15062512238969": [
@@ -598,10 +598,10 @@
     "15062369272185": [
       "full-length"
     ],
-    "9432428511539": [
+    "9462103638323": [
       "full-length"
     ],
-    "9462103638323": [
+    "9432428511539": [
       "full-length"
     ],
     "15062410789241": [
@@ -613,10 +613,10 @@
     "15062261793145": [
       "full-length"
     ],
-    "15062303998329": [
+    "15062255370617": [
       "full-length"
     ],
-    "15062255370617": [
+    "15062303998329": [
       "full-length"
     ],
     "15062348169593": [
@@ -628,25 +628,25 @@
     "15275274076537": [
       "full-length"
     ],
+    "15062265528697": [
+      "full-length"
+    ],
+    "15062247604601": [
+      "full-length"
+    ],
+    "15062420259193": [
+      "full-length"
+    ],
     "15062412755321": [
       "full-length"
     ],
     "15062272442745": [
       "full-length"
     ],
-    "15062265528697": [
-      "full-length"
-    ],
     "15062433071481": [
       "full-length"
     ],
-    "15062247604601": [
-      "full-length"
-    ],
     "15062426550649": [
-      "full-length"
-    ],
-    "15062420259193": [
       "full-length"
     ],
     "15062341812601": [
@@ -682,6 +682,9 @@
     "15068479816057": [
       "full-length"
     ],
+    "15062192390521": [
+      "full-length"
+    ],
     "9432432050483": [
       "full-length"
     ],
@@ -694,19 +697,16 @@
     "15062251929977": [
       "full-length"
     ],
-    "15062192390521": [
-      "full-length"
-    ],
     "15062186590585": [
       "full-length"
     ],
     "15062195732857": [
       "full-length"
     ],
-    "15372575342969": [
+    "15062232039801": [
       "full-length"
     ],
-    "15062232039801": [
+    "15372575342969": [
       "full-length"
     ],
     "15062274408825": [
@@ -715,10 +715,10 @@
     "15065533743481": [
       "full-length"
     ],
-    "15062199009657": [
+    "9462036529459": [
       "full-length"
     ],
-    "9462036529459": [
+    "15062199009657": [
       "full-length"
     ],
     "15062331752825": [
