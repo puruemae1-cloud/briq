@@ -1,7 +1,12 @@
 import type { MetadataRoute } from "next";
 import { navCategories } from "@/data/categories";
 import { products } from "@/data/products";
-import { PRODUCT_CHUNK, sitemapCount } from "@/lib/sitemap-chunks";
+import {
+  PRODUCT_CHUNK,
+  newestProductLastmod,
+  productLastmod,
+  sitemapCount,
+} from "@/lib/sitemap-chunks";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
 
 export async function generateSitemaps() {
@@ -16,61 +21,61 @@ export default async function sitemap(props: {
   // silently produced empty sitemaps.
   const id = Number(await props.id);
   const site = getSiteUrl();
-  const now = new Date();
+  const catalogUpdated = newestProductLastmod();
 
   if (id === 0) {
     const staticUrls: MetadataRoute.Sitemap = [
       {
         url: site,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "daily",
         priority: 1,
       },
       {
         url: `${site}/shop`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "daily",
         priority: 0.95,
       },
       {
         url: `${site}/shop?sort=new`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "daily",
         priority: 0.9,
       },
       {
         url: `${site}/brands`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "weekly",
         priority: 0.9,
       },
       {
         url: `${site}/guide/luxury-direct`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "monthly",
         priority: 0.85,
       },
       {
         url: `${site}/guide/buying-agency`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "monthly",
         priority: 0.85,
       },
       {
         url: `${site}/guide/luxury-apparel`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "monthly",
         priority: 0.85,
       },
       {
         url: `${site}/terms`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "yearly",
         priority: 0.2,
       },
       {
         url: `${site}/privacy`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "yearly",
         priority: 0.2,
       },
@@ -79,7 +84,7 @@ export default async function sitemap(props: {
     for (const cat of navCategories) {
       staticUrls.push({
         url: `${site}${cat.href}`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "daily",
         priority: 0.85,
       });
@@ -88,13 +93,13 @@ export default async function sitemap(props: {
     for (const brand of SEO_BRANDS) {
       staticUrls.push({
         url: `${site}/brands/${brand.slug}`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "weekly",
         priority: 0.8,
       });
       staticUrls.push({
         url: `${site}${brand.shopHref}`,
-        lastModified: now,
+        lastModified: catalogUpdated,
         changeFrequency: "daily",
         priority: 0.75,
       });
@@ -109,7 +114,7 @@ export default async function sitemap(props: {
 
   return slice.map((p) => ({
     url: `${site}/product/${encodeURIComponent(p.id)}`,
-    lastModified: p.registeredAt ? new Date(p.registeredAt) : now,
+    lastModified: productLastmod(p.registeredAt),
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));

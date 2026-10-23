@@ -26,24 +26,33 @@ function locs(xml) {
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 }
 
+function urlEntries(xml) {
+  return [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => {
+    const block = match[1];
+    const loc = block.match(/<loc>([^<]+)<\/loc>/);
+    const mod = block.match(/<lastmod>([^<]+)<\/lastmod>/);
+    return {
+      url: loc ? loc[1] : "",
+      at: Date.parse(mod ? mod[1] : ""),
+    };
+  });
+}
+
 async function loadUrls(cutoff) {
   const index = await (await fetch(`${SITE}/sitemap-index.xml`)).text();
   const products = [];
   const pages = [];
   for (const mapUrl of locs(index)) {
     const xml = await (await fetch(mapUrl)).text();
-    const urls = locs(xml);
-    const mods = [...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
-    urls.forEach((url, i) => {
-      if (!url.startsWith(`${SITE}/`) && url !== SITE) return;
-      if (url.includes("?")) return;
+    for (const { url, at } of urlEntries(xml)) {
+      if (!url.startsWith(`${SITE}/`) && url !== SITE) continue;
+      if (url.includes("?")) continue;
       if (url.includes("/product/")) {
-        const at = Date.parse(mods[i] || "");
         if (Number.isFinite(at) && at >= cutoff) products.push({ url, at });
       } else {
         pages.push(url);
       }
-    });
+    }
   }
   products.sort((a, b) => b.at - a.at);
   const chosen = products.slice(0, CAP).map((row) => row.url);

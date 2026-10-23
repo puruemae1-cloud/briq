@@ -30,7 +30,7 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: `${site}/sitemap-index.xml`,
+    sitemap: [`${site}/sitemap-recent.xml`, `${site}/sitemap-index.xml`],
     host: site,
   };
 }
