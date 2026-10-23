@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-23T06:18:12Z",
+  "generatedAt": "2026-10-23T07:38:00Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-875133v6ib02188",
-        "bv-871198v6or01010"
+        "ps-washed-navy-cotton-linen-double-pleat-trousers",
+        "ps-men-s-standard-fit-crosshatch-stretch-blue-over-dye-jeans",
+        "ps-ecru-cotton-linen-double-pleat-trousers",
+        "ps-black-single-pleat-wool-mohair-evening-trousers"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -46,16 +46,16 @@
     },
     "shoes": {
       "productIds": [
-        "ps-black-campbell-boots",
-        "ps-black-rye-trainers",
-        "ps-men-s-black-leather-rex-trainers",
-        "ps-brown-leather-albany-trainers"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "accessories": {
@@ -107,10 +107,10 @@
       "bags"
     ],
     "paul-smith": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "몽클레어": [
       "accessories",
@@ -119,10 +119,10 @@
       "accessories"
     ],
     "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
