@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T18:56:46.694513+00:00",
+  "scrapedAt": "2026-10-23T18:49:44.279561+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/jewellery/?nav=A005-VIEW-ALL",
   "family": "ce-women-jewellery",
@@ -1241,7 +1241,7 @@
         "https://image.celine.com/asset/b179c9c5-dd80-4c78-beaa-7e0cb9004c6b/B10E94V03-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d4444b20-6227-4487-af60-1682d21ead0f/B10E94V03-35OR_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1250,7 +1250,7 @@
         "CHUNKY TRIOMPHE EARRINGS IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10EB4V05.35OR",
@@ -1529,7 +1529,7 @@
         "https://image.celine.com/asset/64502830-b55a-405a-b9b3-90e0f2792354/460RD6BRA-35OR_2_FW23_W.jpg?V2",
         "https://image.celine.com/asset/3d6527c0-f311-4b54-90be-e9ab7d039bd4/460RD6BRA-35OR_3_FW23_W.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1538,7 +1538,7 @@
         "Triomphe Asymmetric Hoops in Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461EZ6BZI.36SI",
@@ -3440,7 +3440,7 @@
         "https://image.celine.com/asset/63537829-e996-4cb5-92cd-a9391fd9e0f3/461CZ6BZI-35OR_2_FW24_P2_W.tif?V2",
         "https://image.celine.com/asset/6c64a39b-ea4f-46bf-93ca-b1c3134c52b1/461CZ6BZI-35OR_3_FW24_P2_W.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -3449,11 +3449,11 @@
         "Triomphe Articulated Sparkle Bracelet in Strass and Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4106,10 +4106,7 @@
       "sizes": [
         "C1",
         "C2",
-        "C3",
-        "C4",
-        "C5",
-        "C6"
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -4171,18 +4168,6 @@
         {
           "size": "C3",
           "inStock": true
-        },
-        {
-          "size": "C4",
-          "inStock": false
-        },
-        {
-          "size": "C5",
-          "inStock": false
-        },
-        {
-          "size": "C6",
-          "inStock": false
         }
       ]
     },
@@ -4223,10 +4208,7 @@
       "sizes": [
         "C1",
         "C2",
-        "C3",
-        "C4",
-        "C5",
-        "C6"
+        "C3"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=X06&sgContent=&sgImage=",
       "sizeGuide": {
@@ -4288,18 +4270,6 @@
         {
           "size": "C3",
           "inStock": true
-        },
-        {
-          "size": "C4",
-          "inStock": false
-        },
-        {
-          "size": "C5",
-          "inStock": false
-        },
-        {
-          "size": "C6",
-          "inStock": false
         }
       ]
     },
@@ -5622,7 +5592,7 @@
         "https://image.celine.com/asset/adca8c84-3a17-4614-ae10-dc3b26ec6bff/B10E84V02-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/5c1116a7-9fcf-4c0a-be7c-2d79ef640f30/B10E84V02-35OR_2_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5631,7 +5601,7 @@
         "CHUNKY TRIOMPHE NECKLACE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "461VJ6BRS.35OR",
@@ -5682,7 +5652,7 @@
         "https://image.celine.com/asset/e7e7cb16-74ac-4974-8d85-b0436a4327dd/461VJ6BRS-35OR_2_WIN25_W_V1.tif?V2",
         "https://image.celine.com/asset/c26301dd-5e7a-4618-94e8-a314cb51b216/461VJ6BRS-35OR_3_WIN25_W_V1.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5691,11 +5661,11 @@
         "Triomphe Twinkle Necklace in Strass and Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -7110,7 +7080,7 @@
         },
         {
           "size": "54",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -7531,7 +7501,7 @@
         },
         {
           "size": "52",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "54",

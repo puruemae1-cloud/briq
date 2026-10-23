@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T18:43:51.514299+00:00",
+  "scrapedAt": "2026-10-23T18:36:42.321982+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/shoes/?nav=E002-VIEW-ALL",
   "family": "ce-men-shoes",
@@ -1663,7 +1663,7 @@
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -1868,7 +1868,7 @@
         "https://image.celine.com/asset/ca664292-4fa6-4149-bd8f-a317e416c749/365555278C-01CK_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/dc28f731-d5be-4b27-89fe-8b3b45adf1f6/365555278C-01CK_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1877,7 +1877,7 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "39",
@@ -1901,7 +1901,7 @@
         },
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "45",
@@ -3357,7 +3357,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -3848,11 +3848,11 @@
         },
         {
           "size": "46",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "47",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -4296,7 +4296,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -5223,7 +5223,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -5702,7 +5702,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
@@ -5710,7 +5710,7 @@
         },
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "45",
@@ -6618,7 +6618,7 @@
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -7947,7 +7947,7 @@
         },
         {
           "size": "46",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "46,5",
@@ -9810,7 +9810,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "45",
@@ -10235,7 +10235,7 @@
         "https://image.celine.com/asset/48e3a8a0-86f5-4e8b-8a55-fdb4d92ad4c7/364577032C-33VI_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ca4e3018-314c-4aae-b720-955c37cb66eb/364577032C-33VI_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -10244,7 +10244,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -10252,15 +10252,15 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -10268,7 +10268,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "45",
@@ -11436,7 +11436,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -13075,7 +13075,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -13326,7 +13326,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -14043,7 +14043,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -15686,7 +15686,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -15698,11 +15698,11 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -15714,7 +15714,7 @@
         },
         {
           "size": "46",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "47",
@@ -15764,7 +15764,8 @@
         "43",
         "44",
         "45",
-        "46"
+        "46",
+        "47"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D07&sgContent=cel-sizeguide-shoesmennormal&sgImage=",
       "sizeGuide": {
@@ -15953,6 +15954,10 @@
         {
           "size": "46",
           "inStock": true
+        },
+        {
+          "size": "47",
+          "inStock": false
         }
       ]
     },
@@ -17301,7 +17306,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -17762,7 +17767,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T18:54:58.873390+00:00",
+  "scrapedAt": "2026-10-23T18:48:10.103867+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/accessories/?nav=A007-VIEW-ALL",
   "family": "ce-women-accessories",
@@ -193,7 +193,7 @@
         "https://image.celine.com/asset/82d5c7c3-2999-4647-9eff-04ba66bd20de/B10HM3A01-GHQ8_4_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/4d1ff992-b3e2-4835-8447-6afa2e893d8b/B10HM3A01-GHQ8_6_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -202,7 +202,7 @@
         "MINI MAISON CELINE BELT IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "70",
@@ -222,11 +222,11 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -484,7 +484,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -627,7 +627,7 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "90",
@@ -639,11 +639,11 @@
         },
         {
           "size": "100",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "105",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -830,7 +830,7 @@
         "https://image.celine.com/asset/60b818f7-09e5-4787-a618-32078d97761b/B10A73APD-04NR-B10A96ATZ-36SI_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/eb29d3c9-5411-421b-938a-378f103c5e96/B10A73APD-04NR-B10A96ATZ-36SI_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -839,7 +839,7 @@
         "CELINE DISC BUCKLE 18MM IN METAL & Reversible Strap 18MM IN TAURILLON"
       ],
       "categoryLabel": "LA BOUCLE CELINE",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10A73APD.28YR.B10A96ATZ.36SI",
@@ -2804,7 +2804,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -3388,7 +3388,7 @@
       "sizeStock": [
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -3808,7 +3808,7 @@
         "https://image.celine.com/asset/768b254d-f05e-4eb3-943d-99e174aab05f/B10AD3A01-38NO_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/be00ebf8-81eb-4c28-84f5-f3d3cd84f23a/B10AD3A01-38NO_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -3817,7 +3817,7 @@
         "TRIOMPHE CORE BELT 25 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "75",
@@ -3825,7 +3825,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -3967,7 +3967,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -4121,7 +4121,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -4281,7 +4281,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -4446,7 +4446,7 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -5163,7 +5163,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -5786,7 +5786,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -6372,7 +6372,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "70",
@@ -6400,7 +6400,7 @@
         },
         {
           "size": "100",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "105",
@@ -6412,7 +6412,7 @@
         },
         {
           "size": "115",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -6544,7 +6544,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "70",
@@ -6552,7 +6552,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -6564,7 +6564,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -6704,7 +6704,7 @@
       "sizeStock": [
         {
           "size": "70",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "75",
@@ -7317,7 +7317,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -7325,11 +7325,11 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "90",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "95",
@@ -7637,7 +7637,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -7794,7 +7794,7 @@
         },
         {
           "size": "80",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "85",
@@ -10770,7 +10770,7 @@
         "https://image.celine.com/asset/98d96ca3-6a1c-4374-9bc6-2e55f4ce76dc/AA0OS5O95-GPO8_2_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/11bec682-f8ef-473e-94ff-c056fea846f4/AA0OS5O95-GPO8_3_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -10779,11 +10779,11 @@
         "OCELOT PADDED TUBULAR SILK STOLE"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -10943,7 +10943,7 @@
         "https://image.celine.com/asset/1537c6ae-d9cf-47d4-9c09-728d3b78b1e5/AA0OS4O53-GKC4_3_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/40caa920-e501-4ad8-abb0-caeb3a951c4f/AA0OS4O53-GKC4_4_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -10952,11 +10952,11 @@
         "PADDED TUBULAR SILK STOLE"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -12636,7 +12636,7 @@
         },
         {
           "size": "59",
-          "inStock": true
+          "inStock": false
         }
       ]
     },

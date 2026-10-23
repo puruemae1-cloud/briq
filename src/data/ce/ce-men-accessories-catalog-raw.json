@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T18:44:36.223124+00:00",
+  "scrapedAt": "2026-10-23T18:37:30.356398+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/accessories/?nav=E007-VIEW-ALL",
   "family": "ce-men-accessories",
@@ -580,7 +580,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -588,7 +588,7 @@
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -722,7 +722,7 @@
         "https://image.celine.com/asset/e5791ae2-4cdd-432b-b1d1-b4a142f4f152/B10A73APD-GHI4-B10A96ATZ-36SI_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/07ab9391-5d7c-4947-8905-b46e587bd189/B10A73APD-GHI4-B10A96ATZ-36SI_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -731,7 +731,7 @@
         "CELINE DISC BUCKLE 18MM IN METAL & Reversible Strap 18MM IN TAURILLON"
       ],
       "categoryLabel": "LA BOUCLE CELINE",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10CX3A01.38SI",
@@ -3458,7 +3458,7 @@
         },
         {
           "size": "105",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -3593,7 +3593,7 @@
       "sizeStock": [
         {
           "size": "80",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "85",
@@ -3601,7 +3601,7 @@
         },
         {
           "size": "90",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "95",
@@ -3609,7 +3609,7 @@
         },
         {
           "size": "100",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "105",
@@ -3754,7 +3754,7 @@
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "100",
@@ -4045,7 +4045,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "70",
@@ -4073,7 +4073,7 @@
         },
         {
           "size": "100",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "105",
@@ -4085,7 +4085,7 @@
         },
         {
           "size": "115",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4372,7 +4372,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "70",
@@ -4380,7 +4380,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -4392,7 +4392,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",

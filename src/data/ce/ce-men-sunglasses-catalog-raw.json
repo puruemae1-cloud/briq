@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T18:46:40.808854+00:00",
+  "scrapedAt": "2026-10-23T18:39:39.549123+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/sunglasses/?nav=E006-VIEW-ALL",
   "family": "ce-men-sunglasses",
@@ -850,7 +850,7 @@
         "https://image.celine.com/asset/802dbb20-84d3-43cb-a695-dfd69bd3e67c/4S335CPLB-38BL_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/d59020d2-b597-4d6f-847d-f9efc29d884a/4S335CPLB-38BL_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -859,11 +859,11 @@
         "Triomphe Men 01 sunglasses in Acetate"
       ],
       "categoryLabel": "RECTANGULAR",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "Adjusted fit",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "International fit",
