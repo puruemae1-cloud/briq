@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-23T19:56:43Z",
+  "generatedAt": "2026-10-24T05:11:18Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "gc-854224xjhna4794",
-        "gc-872686xuapp1000",
-        "gc-873625zavau1210",
-        "gc-a003vjzavof1000"
+        "ce-ry13h5590-28bl",
+        "ce-ry1365593-07rd",
+        "ce-ry11m0x73-38no",
+        "ce-rr0in106z-38no"
       ],
       "brands": [
-        "gucci",
-        "gucci",
-        "gucci",
-        "gucci"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "ps-smoke-grey-suede-buster-shoes",
-        "ax-x000010504",
-        "ax-x000010502",
-        "bb-two-piece-cotton-blend-socks-set"
+        "vw-72030040-41671-am-black",
+        "vw-71010061-11010-am-red",
+        "vw-72030040-41454-am-beige",
+        "vw-72010006-41671-am-black"
       ],
       "brands": [
-        "paul-smith",
-        "arcteryx",
-        "arcteryx",
-        "burberry"
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood"
       ]
     },
     "accessories": {
       "productIds": [
-        "lu-city-gent-umbrella",
-        "lu-london-undercover-e-gift-card",
-        "lu-city-lux-umbrella",
-        "lu-toyo-steel-y350-toolbox-silver"
+        "gc-443123aaf9k1000",
+        "gc-527390j84408184",
+        "gc-5861689plp79115",
+        "gc-5861689plp79203"
       ],
       "brands": [
-        "london-undercover",
-        "london-undercover",
-        "london-undercover",
-        "london-undercover"
+        "gucci",
+        "gucci",
+        "gucci",
+        "gucci"
       ]
     },
     "sports": {
@@ -88,12 +88,11 @@
     }
   },
   "brands": {
-    "arcteryx": [
-      "shoes",
-      "shoes"
-    ],
-    "burberry": [
-      "shoes"
+    "celine": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "christopher-ward": [
       "watches",
@@ -108,12 +107,6 @@
       "sports"
     ],
     "gucci": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "london-undercover": [
       "accessories",
       "accessories",
       "accessories",
@@ -125,7 +118,10 @@
       "bags",
       "bags"
     ],
-    "paul-smith": [
+    "vivienne-westwood": [
+      "shoes",
+      "shoes",
+      "shoes",
       "shoes"
     ]
   },
