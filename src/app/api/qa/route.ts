@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { mailDocument, sendMail } from "@/lib/email";
 import { addQa, answerQa, listQa } from "@/lib/qa-inbox";
-import { soldOutReplyFor } from "@/lib/qa-soldout-reply";
 import { isStaffRequest } from "@/lib/qa-staff";
 import type { QaItem, QaVisibility } from "@/lib/qa-store";
 import { getSiteUrl } from "@/lib/site";
@@ -102,16 +101,6 @@ export async function POST(req: Request) {
     createdAt: new Date().toISOString(),
   };
   await addQa(item);
-
-  try {
-    const autoAnswer = await soldOutReplyFor(productId, question);
-    if (autoAnswer) {
-      const answered = await answerQa(item.id, autoAnswer, "Briq");
-      if (answered) Object.assign(item, answered);
-    }
-  } catch {
-    // A stock check that fails leaves the question for a person to answer.
-  }
 
   const productUrl = `${getSiteUrl()}/product/${encodeURIComponent(productId)}`;
   const rows = [

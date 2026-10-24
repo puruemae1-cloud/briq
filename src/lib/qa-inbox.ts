@@ -125,10 +125,12 @@ export async function answerQa(
   id: string,
   answer: string,
   answeredBy: string,
+  options?: { onlyIfEmpty?: boolean },
 ): Promise<QaItem | null> {
   const current = await listQa();
   const idx = current.findIndex((item) => item.id === id);
   if (idx < 0) return null;
+  if (options?.onlyIfEmpty && current[idx].answer?.trim()) return null;
   const now = new Date().toISOString();
   const updated: QaItem = {
     ...current[idx],

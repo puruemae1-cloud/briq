@@ -8,6 +8,15 @@
     },
     "src/app/api/products/by-ids/route.ts": {
       "maxDuration": 60
+    },
+    "src/app/api/qa/auto-reply/route.ts": {
+      "maxDuration": 60
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/qa/auto-reply",
+      "schedule": "* * * * *"
+    }
+  ]
 }

@@ -90,6 +90,19 @@ export function soldOutReplyText(sizeLabel: string, brandEn: string): string {
   ].join("\n");
 }
 
+/** Wait this long after the question is posted before an automatic reply. */
+export const AUTO_REPLY_DELAY_MS = 10 * 60 * 1000;
+
+/** Keep trying through this window if the official page could not be read. */
+const AUTO_REPLY_WINDOW_MS = 30 * 60 * 1000;
+
+export function isAutoReplyDue(createdAt: string, now = Date.now()): boolean {
+  const created = Date.parse(createdAt);
+  if (!Number.isFinite(created)) return false;
+  const age = now - created;
+  return age >= AUTO_REPLY_DELAY_MS && age <= AUTO_REPLY_DELAY_MS + AUTO_REPLY_WINDOW_MS;
+}
+
 /**
  * The sold-out reply, or null when the size is available, a restock date is
  * published, or the official page cannot be checked.
