@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T23:34:02.404957+00:00",
+  "scrapedAt": "2026-10-24T03:57:27.259044+00:00",
   "hub": "https://www.chanel.com/gb/fragrance/",
   "note": "Chanel GB fragrance hub — Women + Men + Les Exclusifs + Les Eaux under Accessories→샤넬→향수.",
   "leaves": [
@@ -11,7 +11,7 @@
     }
   ],
   "leafCounts": {
-    "ch-fragrance": 315
+    "ch-fragrance": 333
   },
   "skipped": [],
   "failed": [],
@@ -639,6 +639,75 @@
       "localHover": "/products/ch-pdp/101258/2.jpg"
     },
     {
+      "id": "101269",
+      "productCode": "101269",
+      "sku": "101269",
+      "title": "LES EXCLUSIFS DE CHANEL – DISCOVERY SET FIVE EAUX DE PARFUM 35 ML",
+      "titleShort": "LES EXCLUSIFS DE CHANEL – DISCOVERY SET",
+      "subtitle": "FIVE EAUX DE PARFUM 35 ML",
+      "priceLabel": "£600",
+      "gbpPrice": 600.0,
+      "categoryLabel": "Les Exclusifs de CHANEL",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101269/les-exclusifs-de-chanel-discovery-set-five-eaux-de-parfum-35-ml/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Les Exclusifs de CHANEL",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "FIVE EAUX DE PARFUM 35 ML"
+          },
+          {
+            "label": "Reference",
+            "value": "101269"
+          }
+        ],
+        "subtitle": "FIVE EAUX DE PARFUM 35 ML",
+        "editorial": "FIVE EAUX DE PARFUM 35 ML",
+        "reference": "101269"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/les-exclusifs-de-chanel-discovery-set-5-eaux-de-parfum-35-ml-5-x1-2-fl-oz--packshot-default-101269-9591387062302.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/les-exclusifs-de-chanel-discovery-set-5-eaux-de-parfum-35-ml-5-x1-2-fl-oz--packshot-alternative-v1-101269-9591387815966.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101269",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101269/1.jpg",
+        "/products/ch-pdp/101269/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101269/1.jpg",
+      "localHover": "/products/ch-pdp/101269/2.jpg"
+    },
+    {
       "id": "101270",
       "productCode": "101270",
       "sku": "101270",
@@ -728,6 +797,150 @@
       "localHover": "/products/ch-pdp/101270/2.jpg"
     },
     {
+      "id": "101280",
+      "productCode": "101280",
+      "sku": "101280",
+      "title": "LES EXCLUSIFS DE CHANEL – DUO SET 1957 AND GARDÉNIA EAUX DE PARFUM",
+      "titleShort": "LES EXCLUSIFS DE CHANEL – DUO SET",
+      "subtitle": "1957 AND GARDÉNIA EAUX DE PARFUM",
+      "priceLabel": "£250",
+      "gbpPrice": 250.0,
+      "categoryLabel": "Les Exclusifs de CHANEL",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101280/les-exclusifs-de-chanel-duo-set-1957-and-gardenia-eaux-de-parfum/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Les Exclusifs de CHANEL",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "1957 AND GARDÉNIA EAUX DE PARFUM"
+          },
+          {
+            "label": "Reference",
+            "value": "101280"
+          }
+        ],
+        "subtitle": "1957 AND GARDÉNIA EAUX DE PARFUM",
+        "editorial": "1957 AND GARDÉNIA EAUX DE PARFUM",
+        "reference": "101280"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/les-exclusifs-de-chanel-duo-set-eaux-de-parfum-1957-and-gardenia-2-x-1-2fl-oz--packshot-default-101280-9591874486302.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/les-exclusifs-de-chanel-duo-set-eaux-de-parfum-1957-and-gardenia-2-x-1-2fl-oz--packshot-alternative-v1-101280-9591874519070.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101280",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101280/1.jpg",
+        "/products/ch-pdp/101280/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101280/1.jpg",
+      "localHover": "/products/ch-pdp/101280/2.jpg"
+    },
+    {
+      "id": "101282",
+      "productCode": "101282",
+      "sku": "101282",
+      "title": "BLEU DE CHANEL L'EXCLUSIF LE COFFRET L'EXCLUSIF PARFUM 100 ML AND L'HUILE 50 ML",
+      "titleShort": "BLEU DE CHANEL L'EXCLUSIF LE COFFRET",
+      "subtitle": "L'EXCLUSIF PARFUM 100 ML AND L'HUILE 50 ML",
+      "priceLabel": "£347",
+      "gbpPrice": 347.0,
+      "categoryLabel": "Les Exclusifs de CHANEL",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101282/bleu-de-chanel-lexclusif-le-coffret-lexclusif-parfum-100-ml-and-lhuile-50-ml/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Les Exclusifs de CHANEL",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "L'EXCLUSIF PARFUM 100 ML AND L'HUILE 50 ML"
+          },
+          {
+            "label": "Reference",
+            "value": "101282"
+          }
+        ],
+        "subtitle": "L'EXCLUSIF PARFUM 100 ML AND L'HUILE 50 ML",
+        "editorial": "L'EXCLUSIF PARFUM 100 ML AND L'HUILE 50 ML",
+        "reference": "101282"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-l-exclusif-le-coffret-3-4-fl-oz-parfum-l-huile-set-1pce-packshot-default-101282-9594650886174.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-l-exclusif-le-coffret-3-4-fl-oz-parfum-l-huile-set-1pce-packshot-alternative-101282-9594650787870.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-l-exclusif-le-coffret-3-4-fl-oz-parfum-l-huile-set-1pce-packshot-alternative-v1-101282-9594650820638.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-l-exclusif-le-coffret-3-4-fl-oz-parfum-l-huile-set-1pce-packshot-alternative-v2-101282-9594650853406.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-l-exclusif-le-coffret-3-4-fl-oz-parfum-l-huile-set-1pce-packshot-other-101282-9594650918942.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101282",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101282/1.jpg",
+        "/products/ch-pdp/101282/2.jpg",
+        "/products/ch-pdp/101282/3.jpg",
+        "/products/ch-pdp/101282/4.jpg",
+        "/products/ch-pdp/101282/5.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101282/1.jpg",
+      "localHover": "/products/ch-pdp/101282/2.jpg"
+    },
+    {
       "id": "101565",
       "productCode": "101565",
       "sku": "101565",
@@ -815,6 +1028,279 @@
       ],
       "localImage": "/products/ch-pdp/101565/1.jpg",
       "localHover": "/products/ch-pdp/101565/2.jpg"
+    },
+    {
+      "id": "101645",
+      "productCode": "101645",
+      "sku": "101645",
+      "title": "COCO MADEMOISELLE DUO COCO MADEMOISELLE EAU DE PARFUM INTENSE 50 ML, ROUGE COCO HYDRA GLOSS 445 BIJOU AND POUCH",
+      "titleShort": "COCO MADEMOISELLE DUO",
+      "subtitle": "COCO MADEMOISELLE EAU DE PARFUM INTENSE 50 ML, ROUGE COCO HYDRA GLOSS 445 BIJOU AND POUCH",
+      "priceLabel": "£208",
+      "gbpPrice": 208.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101645/coco-mademoiselle-duo-coco-mademoiselle-eau-de-parfum-intense-50-ml-rouge-coco-hydra-gloss-445-bijou-and-pouch/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "COCO MADEMOISELLE EAU DE PARFUM INTENSE 50 ML, ROUGE COCO HYDRA GLOSS 445 BIJOU AND POUCH"
+          },
+          {
+            "label": "Reference",
+            "value": "101645"
+          }
+        ],
+        "subtitle": "COCO MADEMOISELLE EAU DE PARFUM INTENSE 50 ML, ROUGE COCO HYDRA GLOSS 445 BIJOU AND POUCH",
+        "editorial": "COCO MADEMOISELLE EAU DE PARFUM INTENSE 50 ML, ROUGE COCO HYDRA GLOSS 445 BIJOU AND POUCH",
+        "reference": "101645"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-duo-coco-mademoiselle-eau-de-parfum-intense-50-ml-rouge-coco-hydra-gloss-445-bijou-and-pouch-1pce-packshot-default-101645-9599929155614.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101645",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101645/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101645/1.jpg"
+    },
+    {
+      "id": "101653",
+      "productCode": "101653",
+      "sku": "101653",
+      "title": "BLEU DE CHANEL EAU DE PARFUM",
+      "titleShort": "BLEU DE CHANEL",
+      "subtitle": "EAU DE PARFUM",
+      "priceLabel": "£128",
+      "gbpPrice": 128.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101653/bleu-de-chanel-eau-de-parfum/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM"
+          },
+          {
+            "label": "Reference",
+            "value": "101653"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM",
+        "editorial": "EAU DE PARFUM",
+        "reference": "101653"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-eau-de-parfum-100ml-packshot-default-101653-9600789413918.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/bleu-de-chanel-eau-de-parfum-100ml-packshot-alternative-v1-101653-9600789315614.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101653",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101653/1.jpg",
+        "/products/ch-pdp/101653/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101653/1.jpg",
+      "localHover": "/products/ch-pdp/101653/2.jpg"
+    },
+    {
+      "id": "101654",
+      "productCode": "101654",
+      "sku": "101654",
+      "title": "COCO MADEMOISELLE EAU DE PARFUM",
+      "titleShort": "COCO MADEMOISELLE",
+      "subtitle": "EAU DE PARFUM",
+      "priceLabel": "£152",
+      "gbpPrice": 152.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101654/coco-mademoiselle-eau-de-parfum/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM"
+          },
+          {
+            "label": "Reference",
+            "value": "101654"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM",
+        "editorial": "EAU DE PARFUM",
+        "reference": "101654"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-100ml-packshot-default-101654-9600789479454.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-100ml-packshot-alternative-v1-101654-9600789381150.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101654",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101654/1.jpg",
+        "/products/ch-pdp/101654/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101654/1.jpg",
+      "localHover": "/products/ch-pdp/101654/2.jpg"
+    },
+    {
+      "id": "101656",
+      "productCode": "101656",
+      "sku": "101656",
+      "title": "N°5 EAU DE PARFUM",
+      "titleShort": "N°5",
+      "subtitle": "EAU DE PARFUM",
+      "priceLabel": "£156",
+      "gbpPrice": 156.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101656/n5-eau-de-parfum/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM"
+          },
+          {
+            "label": "Reference",
+            "value": "101656"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM",
+        "editorial": "EAU DE PARFUM",
+        "reference": "101656"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-parfum-100ml-packshot-default-101656-9600789544990.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-parfum-100ml-packshot-alternative-v1-101656-9600789577758.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101656",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101656/1.jpg",
+        "/products/ch-pdp/101656/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101656/1.jpg",
+      "localHover": "/products/ch-pdp/101656/2.jpg"
     },
     {
       "id": "101715",
@@ -4207,6 +4693,75 @@
       "localHover": "/products/ch-pdp/105490/2.jpg"
     },
     {
+      "id": "105496",
+      "productCode": "105496",
+      "sku": "105496",
+      "title": "N°5 L'EAU MINI TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "MINI TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "priceLabel": "£80",
+      "gbpPrice": 80.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105496/n5-leau-mini-twist-and-spray-refill-set-eau-de-toilette/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "MINI TWIST AND SPRAY REFILL SET – EAU DE TOILETTE"
+          },
+          {
+            "label": "Reference",
+            "value": "105496"
+          }
+        ],
+        "subtitle": "MINI TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "editorial": "MINI TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "reference": "105496"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-mini-twist-and-spray-refill-set-eau-de-toilette-3x0-2fl-oz--packshot-default-105496-9578407100446.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-mini-twist-and-spray-refill-set-eau-de-toilette-3x0-2fl-oz--packshot-alternative-v1-105496-9578406707230.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105496",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105496/1.jpg",
+        "/products/ch-pdp/105496/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105496/1.jpg",
+      "localHover": "/products/ch-pdp/105496/2.jpg"
+    },
+    {
       "id": "105500",
       "productCode": "105500",
       "sku": "105500",
@@ -4383,6 +4938,144 @@
       "localHover": "/products/ch-pdp/105505/2.jpg"
     },
     {
+      "id": "105506",
+      "productCode": "105506",
+      "sku": "105506",
+      "title": "N°5 L'EAU TWIST AND SPRAY REFILLABLE BOTTLE – EAU DE TOILETTE",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "TWIST AND SPRAY REFILLABLE BOTTLE – EAU DE TOILETTE",
+      "priceLabel": "£135",
+      "gbpPrice": 135.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105506/n5-leau-twist-and-spray-refillable-bottle-eau-de-toilette/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "TWIST AND SPRAY REFILLABLE BOTTLE – EAU DE TOILETTE"
+          },
+          {
+            "label": "Reference",
+            "value": "105506"
+          }
+        ],
+        "subtitle": "TWIST AND SPRAY REFILLABLE BOTTLE – EAU DE TOILETTE",
+        "editorial": "TWIST AND SPRAY REFILLABLE BOTTLE – EAU DE TOILETTE",
+        "reference": "105506"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-twist-and-spray-refillable-bottle-eau-de-toilette-3x0-7fl-oz--packshot-default-105506-9578406674462.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-twist-and-spray-refillable-bottle-eau-de-toilette-3x0-7fl-oz--packshot-alternative-v1-105506-9596612640798.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105506",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105506/1.jpg",
+        "/products/ch-pdp/105506/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105506/1.jpg",
+      "localHover": "/products/ch-pdp/105506/2.jpg"
+    },
+    {
+      "id": "105509",
+      "productCode": "105509",
+      "sku": "105509",
+      "title": "N°5 L'EAU TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+      "priceLabel": "£112",
+      "gbpPrice": 112.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105509/n5-leau-twist-and-spray-refill-set-eau-de-toilette/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE"
+          },
+          {
+            "label": "Reference",
+            "value": "105509"
+          }
+        ],
+        "subtitle": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "editorial": "TWIST AND SPRAY REFILL SET – EAU DE TOILETTE",
+        "reference": "105509"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-twist-and-spray-refill-set-eau-de-toilette-3x0-7fl-oz--packshot-default-105509-9578406805534.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-twist-and-spray-refill-set-eau-de-toilette-3x0-7fl-oz--packshot-alternative-v1-105509-9578407198750.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105509",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105509/1.jpg",
+        "/products/ch-pdp/105509/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105509/1.jpg",
+      "localHover": "/products/ch-pdp/105509/2.jpg"
+    },
+    {
       "id": "105510",
       "productCode": "105510",
       "sku": "105510",
@@ -4470,6 +5163,75 @@
       ],
       "localImage": "/products/ch-pdp/105510/1.jpg",
       "localHover": "/products/ch-pdp/105510/2.jpg"
+    },
+    {
+      "id": "105516",
+      "productCode": "105516",
+      "sku": "105516",
+      "title": "N°5 L'EAU EAU DE TOILETTE SPRAY",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "EAU DE TOILETTE SPRAY",
+      "priceLabel": "£80",
+      "gbpPrice": 80.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105516/n5-leau-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "105516"
+          }
+        ],
+        "subtitle": "EAU DE TOILETTE SPRAY",
+        "editorial": "EAU DE TOILETTE SPRAY",
+        "reference": "105516"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-1-2fl-oz--packshot-default-105516-9578406903838.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-1-2fl-oz--packshot-alternative-v1-105516-9578406739998.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105516",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105516/1.jpg",
+        "/products/ch-pdp/105516/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105516/1.jpg",
+      "localHover": "/products/ch-pdp/105516/2.jpg"
     },
     {
       "id": "105520",
@@ -4561,6 +5323,75 @@
       "localHover": "/products/ch-pdp/105520/2.jpg"
     },
     {
+      "id": "105526",
+      "productCode": "105526",
+      "sku": "105526",
+      "title": "N°5 L'EAU EAU DE TOILETTE SPRAY",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "EAU DE TOILETTE SPRAY",
+      "priceLabel": "£112",
+      "gbpPrice": 112.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105526/n5-leau-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "105526"
+          }
+        ],
+        "subtitle": "EAU DE TOILETTE SPRAY",
+        "editorial": "EAU DE TOILETTE SPRAY",
+        "reference": "105526"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-1-7fl-oz--packshot-default-105526-9578407133214.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-1-7fl-oz--packshot-alternative-v1-105526-9578406871070.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105526",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105526/1.jpg",
+        "/products/ch-pdp/105526/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105526/1.jpg",
+      "localHover": "/products/ch-pdp/105526/2.jpg"
+    },
+    {
       "id": "105530",
       "productCode": "105530",
       "sku": "105530",
@@ -4648,6 +5479,75 @@
       ],
       "localImage": "/products/ch-pdp/105530/1.jpg",
       "localHover": "/products/ch-pdp/105530/2.jpg"
+    },
+    {
+      "id": "105536",
+      "productCode": "105536",
+      "sku": "105536",
+      "title": "N°5 L'EAU EAU DE TOILETTE SPRAY",
+      "titleShort": "N°5 L'EAU",
+      "subtitle": "EAU DE TOILETTE SPRAY",
+      "priceLabel": "£152",
+      "gbpPrice": 152.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105536/n5-leau-eau-de-toilette-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE TOILETTE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "105536"
+          }
+        ],
+        "subtitle": "EAU DE TOILETTE SPRAY",
+        "editorial": "EAU DE TOILETTE SPRAY",
+        "reference": "105536"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-3-4fl-oz--packshot-default-105536-9590491021342.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-l-eau-eau-de-toilette-spray-3-4fl-oz--packshot-alternative-v1-105536-9578406936606.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105536",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105536/1.jpg",
+        "/products/ch-pdp/105536/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105536/1.jpg",
+      "localHover": "/products/ch-pdp/105536/2.jpg"
     },
     {
       "id": "105571",
@@ -5536,6 +6436,77 @@
       ],
       "localImage": "/products/ch-pdp/105798/1.jpg",
       "localHover": "/products/ch-pdp/105798/2.jpg"
+    },
+    {
+      "id": "105808",
+      "productCode": "105808",
+      "sku": "105808",
+      "title": "N°5 THE STARRY BODY OIL",
+      "titleShort": "N°5",
+      "subtitle": "THE STARRY BODY OIL",
+      "priceLabel": "£114",
+      "gbpPrice": 114.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/105808/n5-the-starry-body-oil/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "THE STARRY BODY OIL"
+          },
+          {
+            "label": "Reference",
+            "value": "105808"
+          }
+        ],
+        "subtitle": "THE STARRY BODY OIL",
+        "editorial": "THE STARRY BODY OIL",
+        "reference": "105808"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-starry-body-oil-8-4fl-oz--packshot-default-105808-9591387258910.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-starry-body-oil-8-4fl-oz--packshot-alternative-v1-105808-9591386505246.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-the-starry-body-oil-8-4fl-oz--basic-texture-105808-9588570030110.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "105808",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/105808/1.jpg",
+        "/products/ch-pdp/105808/2.jpg",
+        "/products/ch-pdp/105808/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/105808/1.jpg",
+      "localHover": "/products/ch-pdp/105808/2.jpg"
     },
     {
       "id": "105820",
@@ -10368,6 +11339,77 @@
       "localHover": "/products/ch-pdp/116410/2.jpg"
     },
     {
+      "id": "116418",
+      "productCode": "116418",
+      "sku": "116418",
+      "title": "COCO MADEMOISELLE EAU DE PARFUM PURSE SPRAY",
+      "titleShort": "COCO MADEMOISELLE",
+      "subtitle": "EAU DE PARFUM PURSE SPRAY",
+      "priceLabel": "£170",
+      "gbpPrice": 170.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116418/coco-mademoiselle-eau-de-parfum-purse-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM PURSE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "116418"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM PURSE SPRAY",
+        "editorial": "EAU DE PARFUM PURSE SPRAY",
+        "reference": "116418"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-default-116418-9601146716190.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-alternative-v1-116418-9591388569630.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-alternative-v2-116418-9591388045342.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116418",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116418/1.jpg",
+        "/products/ch-pdp/116418/2.jpg",
+        "/products/ch-pdp/116418/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116418/1.jpg",
+      "localHover": "/products/ch-pdp/116418/2.jpg"
+    },
+    {
       "id": "116420",
       "productCode": "116420",
       "sku": "116420",
@@ -11771,6 +12813,77 @@
       ],
       "localImage": "/products/ch-pdp/116900/1.jpg",
       "localHover": "/products/ch-pdp/116900/2.jpg"
+    },
+    {
+      "id": "116938",
+      "productCode": "116938",
+      "sku": "116938",
+      "title": "COCO MADEMOISELLE THE SHIMMERING BODY OIL",
+      "titleShort": "COCO MADEMOISELLE",
+      "subtitle": "THE SHIMMERING BODY OIL",
+      "priceLabel": "£114",
+      "gbpPrice": 114.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/116938/coco-mademoiselle-the-shimmering-body-oil/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "THE SHIMMERING BODY OIL"
+          },
+          {
+            "label": "Reference",
+            "value": "116938"
+          }
+        ],
+        "subtitle": "THE SHIMMERING BODY OIL",
+        "editorial": "THE SHIMMERING BODY OIL",
+        "reference": "116938"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-the-shimmering-body-oil-8-4fl-oz--packshot-default-116938-9591387357214.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-the-shimmering-body-oil-8-4fl-oz--packshot-alternative-v1-116938-9591386275870.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/coco-mademoiselle-the-shimmering-body-oil-8-4fl-oz--basic-texture-116938-9588569997342.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "116938",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/116938/1.jpg",
+        "/products/ch-pdp/116938/2.jpg",
+        "/products/ch-pdp/116938/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/116938/1.jpg",
+      "localHover": "/products/ch-pdp/116938/2.jpg"
     },
     {
       "id": "116945",
@@ -22569,6 +23682,75 @@
       "localHover": "/products/ch-pdp/124700/2.jpg"
     },
     {
+      "id": "125008",
+      "productCode": "125008",
+      "sku": "125008",
+      "title": "N°5 THE WINTER CASE",
+      "titleShort": "N°5",
+      "subtitle": "THE WINTER CASE",
+      "priceLabel": "£287",
+      "gbpPrice": 287.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/125008/n5-the-winter-case/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "THE WINTER CASE"
+          },
+          {
+            "label": "Reference",
+            "value": "125008"
+          }
+        ],
+        "subtitle": "THE WINTER CASE",
+        "editorial": "THE WINTER CASE",
+        "reference": "125008"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-winter-case-6-8fl-oz--packshot-default-125008-9591388274718.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-winter-case-6-8fl-oz--packshot-alternative-v1-125008-9591386144798.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "125008",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/125008/1.jpg",
+        "/products/ch-pdp/125008/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/125008/1.jpg",
+      "localHover": "/products/ch-pdp/125008/2.jpg"
+    },
+    {
       "id": "125110",
       "productCode": "125110",
       "sku": "125110",
@@ -22651,6 +23833,77 @@
       ],
       "localImage": "/products/ch-pdp/125110/1.jpg",
       "localHover": "/products/ch-pdp/125110/2.jpg"
+    },
+    {
+      "id": "125118",
+      "productCode": "125118",
+      "sku": "125118",
+      "title": "N°5 EAU DE PARFUM PURSE SPRAY",
+      "titleShort": "N°5",
+      "subtitle": "EAU DE PARFUM PURSE SPRAY",
+      "priceLabel": "£170",
+      "gbpPrice": 170.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/125118/n5-eau-de-parfum-purse-spray/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "EAU DE PARFUM PURSE SPRAY"
+          },
+          {
+            "label": "Reference",
+            "value": "125118"
+          }
+        ],
+        "subtitle": "EAU DE PARFUM PURSE SPRAY",
+        "editorial": "EAU DE PARFUM PURSE SPRAY",
+        "reference": "125118"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-default-125118-9591387193374.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-alternative-v1-125118-9591385980958.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/n-5-eau-de-parfum-refillable-purse-spray-3x0-2fl-oz--packshot-alternative-v2-125118-9591385948190.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "125118",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/125118/1.jpg",
+        "/products/ch-pdp/125118/2.jpg",
+        "/products/ch-pdp/125118/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/125118/1.jpg",
+      "localHover": "/products/ch-pdp/125118/2.jpg"
     },
     {
       "id": "125230",

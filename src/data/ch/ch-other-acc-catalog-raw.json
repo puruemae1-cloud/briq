@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-10T01:05:20.008751+00:00",
+  "scrapedAt": "2026-10-24T05:55:19.005553+00:00",
   "hub": "https://www.chanel.com/gb/fashion/other-accessories/c/1x1x4/",
   "note": "Chanel GB other accessories by official PLP leaves (Headwear / Belts / Scarves / Camellias / Winter / Summer).",
   "leaves": [
@@ -41,15 +41,41 @@
     }
   ],
   "leafCounts": {
-    "ch-women-belts": 16,
+    "ch-women-belts": 17,
     "ch-women-summer-accessories": 5,
-    "ch-women-headwear": 26,
-    "ch-women-scarves": 40,
-    "ch-women-winter-accessories": 8,
+    "ch-women-headwear": 30,
+    "ch-women-scarves": 43,
+    "ch-women-winter-accessories": 12,
     "ch-women-camellias": 13
   },
-  "skipped": [],
-  "failed": [],
+  "skipped": [
+    {
+      "_skip": true,
+      "sku": "AAC375B26093UD795",
+      "reason": "unmapped leaf (ld+json)",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC375B26093UD795/earmuffs-shearling-lambskin/"
+    },
+    {
+      "_skip": true,
+      "sku": "AAC390B26128UE202",
+      "reason": "unmapped leaf (ld+json)",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC390B26128UE202/mittens-lambskin/"
+    }
+  ],
+  "failed": [
+    {
+      "sku": "AAC359B26091UD760",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC359B26091UD760/fur-hat-shearling-lambskin/",
+      "status": 504,
+      "reason": "akamai"
+    },
+    {
+      "sku": "AAC376B26096UD764",
+      "url": "https://www.chanel.com/gb/fashion/p/AAC376B26096UD764/mittens-shearling-lambskin/",
+      "status": 524,
+      "reason": "akamai"
+    }
+  ],
   "products": [
     {
       "id": "A73462Y10673U0969",
@@ -225,7 +251,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -423,7 +449,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -537,7 +563,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -1051,7 +1077,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -1181,7 +1207,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -1586,7 +1612,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -1722,7 +1748,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -1858,7 +1884,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -3938,6 +3964,282 @@
       "subtitle": "Silk Pongee"
     },
     {
+      "id": "AAC075B25063UB310",
+      "productCode": "AAC075B25063UB310",
+      "sku": "AAC075B25063UB310",
+      "title": "Beanie",
+      "priceLabel": "£650",
+      "gbpPrice": 650.0,
+      "categoryLabel": "ch-women-headwear",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC075B25063UB310/beanie-cashmere-alpaca/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Black",
+        "description": null,
+        "fabrics": "Cashmere & Alpaca",
+        "reference": "AAC075B25063UB310",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/beanie-ecru-black-cashmere-alpaca-cashmere-alpaca-packshot-artistique-vue2-aac075b25063ub310-9597156229150.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156229150.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+        "https://www.chanel.com/images/f_auto/-9591839260702.jpg",
+        "https://www.chanel.com/images/f_auto/-9591837556766.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156392990.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500031006.jpg",
+        "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155639326.jpg",
+        "https://www.chanel.com/images/f_auto/-9592227856414.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+        "https://www.chanel.com/images/f_auto/-9601419771934.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/beanie-ecru-black-cashmere-alpaca-cashmere-alpaca-packshot-artistique-vue2-aac075b25063ub310-9597156229150.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156229150.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591839260702.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591837556766.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156392990.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500031006.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155639326.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9592227856414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601419771934.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC075B25063UB310",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC075B25063UB310",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac075b25063ub310/1.jpg",
+        "/products/ch-pdp/aac075b25063ub310/2.jpg",
+        "/products/ch-pdp/aac075b25063ub310/3.jpg",
+        "/products/ch-pdp/aac075b25063ub310/4.jpg",
+        "/products/ch-pdp/aac075b25063ub310/5.jpg",
+        "/products/ch-pdp/aac075b25063ub310/6.jpg",
+        "/products/ch-pdp/aac075b25063ub310/7.jpg",
+        "/products/ch-pdp/aac075b25063ub310/8.jpg",
+        "/products/ch-pdp/aac075b25063ub310/9.jpg",
+        "/products/ch-pdp/aac075b25063ub310/10.jpg",
+        "/products/ch-pdp/aac075b25063ub310/11.jpg",
+        "/products/ch-pdp/aac075b25063ub310/12.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac075b25063ub310/1.jpg",
+      "localHover": "/products/ch-pdp/aac075b25063ub310/2.jpg"
+    },
+    {
+      "id": "AAC076B25062UB310",
+      "productCode": "AAC076B25062UB310",
+      "sku": "AAC076B25062UB310",
+      "title": "Mittens",
+      "priceLabel": "£650",
+      "gbpPrice": 650.0,
+      "categoryLabel": "ch-women-winter-accessories",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC076B25062UB310/mittens-cashmere-alpaca/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Black",
+        "description": null,
+        "fabrics": "Cashmere & Alpaca",
+        "reference": "AAC076B25062UB310",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/mittens-ecru-black-cashmere-alpaca-cashmere-alpaca-packshot-artistique-vue2-aac076b25062ub310-9597155573790.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155573790.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155639326.jpg",
+        "https://www.chanel.com/images/f_auto/-9591842177054.jpg",
+        "https://www.chanel.com/images/f_auto/-9591838081054.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156261918.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+        "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+        "https://www.chanel.com/images/f_auto/-9592227856414.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+        "https://www.chanel.com/images/f_auto/-9601419771934.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/mittens-ecru-black-cashmere-alpaca-cashmere-alpaca-packshot-artistique-vue2-aac076b25062ub310-9597155573790.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155573790.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155639326.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591842177054.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591838081054.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156261918.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9592227856414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601419771934.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC076B25062UB310",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC076B25062UB310",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac076b25062ub310/1.jpg",
+        "/products/ch-pdp/aac076b25062ub310/2.jpg",
+        "/products/ch-pdp/aac076b25062ub310/3.jpg",
+        "/products/ch-pdp/aac076b25062ub310/4.jpg",
+        "/products/ch-pdp/aac076b25062ub310/5.jpg",
+        "/products/ch-pdp/aac076b25062ub310/6.jpg",
+        "/products/ch-pdp/aac076b25062ub310/7.jpg",
+        "/products/ch-pdp/aac076b25062ub310/8.jpg",
+        "/products/ch-pdp/aac076b25062ub310/9.jpg",
+        "/products/ch-pdp/aac076b25062ub310/10.jpg",
+        "/products/ch-pdp/aac076b25062ub310/11.jpg",
+        "/products/ch-pdp/aac076b25062ub310/12.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac076b25062ub310/1.jpg",
+      "localHover": "/products/ch-pdp/aac076b25062ub310/2.jpg"
+    },
+    {
       "id": "AAC082B25075UB361",
       "productCode": "AAC082B25075UB361",
       "sku": "AAC082B25075UB361",
@@ -4027,7 +4329,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4141,7 +4443,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4271,7 +4573,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4401,7 +4703,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4531,7 +4833,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4663,7 +4965,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -4865,7 +5167,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5067,7 +5369,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5269,7 +5571,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5471,7 +5773,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5617,7 +5919,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5763,7 +6065,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -5909,7 +6211,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6044,7 +6346,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6180,7 +6482,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6318,7 +6620,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6454,7 +6756,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6590,7 +6892,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6726,7 +7028,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6862,7 +7164,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -6998,7 +7300,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7127,7 +7429,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7242,7 +7544,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7377,7 +7679,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7576,7 +7878,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7774,7 +8076,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -7892,7 +8194,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8010,7 +8312,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8124,7 +8426,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8259,7 +8561,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8455,7 +8757,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8478,6 +8780,511 @@
       "localHover": "/products/ch-pdp/aac241b25571uc517/2.jpg",
       "titleShort": "Camellia",
       "subtitle": "Velvet & Diamanté"
+    },
+    {
+      "id": "AAC252B25674UC794",
+      "productCode": "AAC252B25674UC794",
+      "sku": "AAC252B25674UC794",
+      "title": "Scarf",
+      "priceLabel": "£1,200",
+      "gbpPrice": 1200.0,
+      "categoryLabel": "ch-women-scarves",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC252B25674UC794/scarf-alpaca-silk/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru, Black & Red",
+        "description": null,
+        "fabrics": "Alpaca & Silk",
+        "reference": "AAC252B25674UC794",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/scarf-ecru-black-red-alpaca-silk-alpaca-silk-packshot-artistique-vue1-aac252b25674uc794-9599534759966.jpg",
+        "https://www.chanel.com/images/f_auto/-9599534759966.jpg",
+        "https://www.chanel.com/images/f_auto/-9599534661662.jpg",
+        "https://www.chanel.com/images/f_auto/-9599534727198.jpg",
+        "https://www.chanel.com/images/f_auto/-9591838900254.jpg",
+        "https://www.chanel.com/images/f_auto/-9591837261854.jpg",
+        "https://www.chanel.com/images/f_auto/-9599536398366.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500129310.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+        "https://www.chanel.com/images/f_auto/-9601726054430.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/scarf-ecru-black-red-alpaca-silk-alpaca-silk-packshot-artistique-vue1-aac252b25674uc794-9599534759966.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599534759966.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599534661662.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599534727198.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591838900254.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591837261854.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599536398366.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500129310.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601726054430.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC252B25674UC794",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC252B25674UC794",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac252b25674uc794/1.jpg",
+        "/products/ch-pdp/aac252b25674uc794/2.jpg",
+        "/products/ch-pdp/aac252b25674uc794/3.jpg",
+        "/products/ch-pdp/aac252b25674uc794/4.jpg",
+        "/products/ch-pdp/aac252b25674uc794/5.jpg",
+        "/products/ch-pdp/aac252b25674uc794/6.jpg",
+        "/products/ch-pdp/aac252b25674uc794/7.jpg",
+        "/products/ch-pdp/aac252b25674uc794/8.jpg",
+        "/products/ch-pdp/aac252b25674uc794/9.jpg",
+        "/products/ch-pdp/aac252b25674uc794/10.jpg",
+        "/products/ch-pdp/aac252b25674uc794/11.jpg",
+        "/products/ch-pdp/aac252b25674uc794/12.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac252b25674uc794/1.jpg",
+      "localHover": "/products/ch-pdp/aac252b25674uc794/2.jpg"
+    },
+    {
+      "id": "AAC253B25674UC794",
+      "productCode": "AAC253B25674UC794",
+      "sku": "AAC253B25674UC794",
+      "title": "Beanie",
+      "priceLabel": "£670",
+      "gbpPrice": 670.0,
+      "categoryLabel": "ch-women-headwear",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC253B25674UC794/beanie-alpaca-silk/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru, Black & Red",
+        "description": null,
+        "fabrics": "Alpaca & Silk",
+        "reference": "AAC253B25674UC794",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/beanie-ecru-black-red-alpaca-silk-alpaca-silk-packshot-artistique-vue1-aac253b25674uc794-9597155409950.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155409950.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155377182.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500817438.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+        "https://www.chanel.com/images/f_auto/-9601726054430.jpg",
+        "https://www.chanel.com/images/f_auto/-9599534759966.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/beanie-ecru-black-red-alpaca-silk-alpaca-silk-packshot-artistique-vue1-aac253b25674uc794-9597155409950.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155409950.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155377182.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500817438.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601726054430.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599534759966.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC253B25674UC794",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC253B25674UC794",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac253b25674uc794/1.jpg",
+        "/products/ch-pdp/aac253b25674uc794/2.jpg",
+        "/products/ch-pdp/aac253b25674uc794/3.jpg",
+        "/products/ch-pdp/aac253b25674uc794/4.jpg",
+        "/products/ch-pdp/aac253b25674uc794/5.jpg",
+        "/products/ch-pdp/aac253b25674uc794/6.jpg",
+        "/products/ch-pdp/aac253b25674uc794/7.jpg",
+        "/products/ch-pdp/aac253b25674uc794/8.jpg",
+        "/products/ch-pdp/aac253b25674uc794/9.jpg",
+        "/products/ch-pdp/aac253b25674uc794/10.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac253b25674uc794/1.jpg",
+      "localHover": "/products/ch-pdp/aac253b25674uc794/2.jpg"
+    },
+    {
+      "id": "AAC254B25675UC797",
+      "productCode": "AAC254B25675UC797",
+      "sku": "AAC254B25675UC797",
+      "title": "Fur Hat",
+      "priceLabel": "£730",
+      "gbpPrice": 730.0,
+      "categoryLabel": "ch-women-headwear",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC254B25675UC797/fur-hat-cashmere/",
+      "hierarchy": [],
+      "details": {
+        "color": "White & Black",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC254B25675UC797",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fur-hat-white-black-cashmere-cashmere-packshot-artistique-vue2-aac254b25675uc797-9597156491294.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156491294.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156524062.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499637790.jpg",
+        "https://www.chanel.com/images/f_auto/-9597194698782.jpg",
+        "https://www.chanel.com/images/f_auto/-9597192208414.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965265950.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156720670.jpg",
+        "https://www.chanel.com/images/f_auto/-9597158522910.jpg",
+        "https://www.chanel.com/images/f_auto/-9597700210718.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fur-hat-white-black-cashmere-cashmere-packshot-artistique-vue2-aac254b25675uc797-9597156491294.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156491294.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156524062.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499637790.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597194698782.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597192208414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965265950.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156720670.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597158522910.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597700210718.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC254B25675UC797",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC254B25675UC797",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac254b25675uc797/1.jpg",
+        "/products/ch-pdp/aac254b25675uc797/2.jpg",
+        "/products/ch-pdp/aac254b25675uc797/3.jpg",
+        "/products/ch-pdp/aac254b25675uc797/4.jpg",
+        "/products/ch-pdp/aac254b25675uc797/5.jpg",
+        "/products/ch-pdp/aac254b25675uc797/6.jpg",
+        "/products/ch-pdp/aac254b25675uc797/7.jpg",
+        "/products/ch-pdp/aac254b25675uc797/8.jpg",
+        "/products/ch-pdp/aac254b25675uc797/9.jpg",
+        "/products/ch-pdp/aac254b25675uc797/10.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac254b25675uc797/1.jpg",
+      "localHover": "/products/ch-pdp/aac254b25675uc797/2.jpg"
+    },
+    {
+      "id": "AAC256B25710UC801",
+      "productCode": "AAC256B25710UC801",
+      "sku": "AAC256B25710UC801",
+      "title": "Fur Hat",
+      "priceLabel": "£1,290",
+      "gbpPrice": 1290.0,
+      "categoryLabel": "ch-women-headwear",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC256B25710UC801/fur-hat-cotton-cashmere/",
+      "hierarchy": [],
+      "details": {
+        "color": "Red, Ecru & Multicolor",
+        "description": null,
+        "fabrics": "Cotton & Cashmere",
+        "reference": "AAC256B25710UC801",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fur-hat-red-ecru-multicolor-cotton-cashmere-cotton-cashmere-packshot-artistique-vue1-aac256b25710uc801-9597155016734.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155016734.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155049502.jpg",
+        "https://www.chanel.com/images/f_auto/-9597498621982.jpg",
+        "https://www.chanel.com/images/f_auto/-9597192372254.jpg",
+        "https://www.chanel.com/images/f_auto/-9597191618590.jpg",
+        "https://www.chanel.com/images/f_auto/-9597192699934.jpg",
+        "https://www.chanel.com/images/f_auto/-9592227397662.jpg",
+        "https://www.chanel.com/images/f_auto/-9597511663646.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fur-hat-red-ecru-multicolor-cotton-cashmere-cotton-cashmere-packshot-artistique-vue1-aac256b25710uc801-9597155016734.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155016734.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155049502.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597498621982.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597192372254.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597191618590.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597192699934.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9592227397662.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597511663646.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC256B25710UC801",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC256B25710UC801",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-headwear",
+      "leaves": [
+        "ch-women-headwear",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-headwear",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac256b25710uc801/1.jpg",
+        "/products/ch-pdp/aac256b25710uc801/2.jpg",
+        "/products/ch-pdp/aac256b25710uc801/3.jpg",
+        "/products/ch-pdp/aac256b25710uc801/4.jpg",
+        "/products/ch-pdp/aac256b25710uc801/5.jpg",
+        "/products/ch-pdp/aac256b25710uc801/6.jpg",
+        "/products/ch-pdp/aac256b25710uc801/7.jpg",
+        "/products/ch-pdp/aac256b25710uc801/8.jpg",
+        "/products/ch-pdp/aac256b25710uc801/9.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac256b25710uc801/1.jpg",
+      "localHover": "/products/ch-pdp/aac256b25710uc801/2.jpg"
     },
     {
       "id": "AAC289B25954UD470",
@@ -8590,7 +9397,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8723,7 +9530,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8746,6 +9553,138 @@
       "localHover": "/products/ch-pdp/aac305b25898ud283/2.jpg",
       "titleShort": "Beret",
       "subtitle": "Felt & Metal"
+    },
+    {
+      "id": "AAC321B25937UD366",
+      "productCode": "AAC321B25937UD366",
+      "sku": "AAC321B25937UD366",
+      "title": "Scarf",
+      "priceLabel": "£1,120",
+      "gbpPrice": 1120.0,
+      "categoryLabel": "ch-women-scarves",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC321B25937UD366/scarf-cashmere/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Multicolour",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC321B25937UD366",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/scarf-ecru-multicolor-cashmere-cashmere-packshot-artistique-vue1-aac321b25937ud366-9599536005150.jpg",
+        "https://www.chanel.com/images/f_auto/-9599536005150.jpg",
+        "https://www.chanel.com/images/f_auto/-9599536103454.jpg",
+        "https://www.chanel.com/images/f_auto/-9599536136222.jpg",
+        "https://www.chanel.com/images/f_auto/-9597498916894.jpg",
+        "https://www.chanel.com/images/f_auto/-9597193748510.jpg",
+        "https://www.chanel.com/images/f_auto/-9597193879582.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155213342.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965921310.jpg",
+        "https://www.chanel.com/images/f_auto/-9599966052382.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965724702.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/scarf-ecru-multicolor-cashmere-cashmere-packshot-artistique-vue1-aac321b25937ud366-9599536005150.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599536005150.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599536103454.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599536136222.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597498916894.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597193748510.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597193879582.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155213342.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965921310.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599966052382.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965724702.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC321B25937UD366",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC321B25937UD366",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac321b25937ud366/1.jpg",
+        "/products/ch-pdp/aac321b25937ud366/2.jpg",
+        "/products/ch-pdp/aac321b25937ud366/3.jpg",
+        "/products/ch-pdp/aac321b25937ud366/4.jpg",
+        "/products/ch-pdp/aac321b25937ud366/5.jpg",
+        "/products/ch-pdp/aac321b25937ud366/6.jpg",
+        "/products/ch-pdp/aac321b25937ud366/7.jpg",
+        "/products/ch-pdp/aac321b25937ud366/8.jpg",
+        "/products/ch-pdp/aac321b25937ud366/9.jpg",
+        "/products/ch-pdp/aac321b25937ud366/10.jpg",
+        "/products/ch-pdp/aac321b25937ud366/11.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac321b25937ud366/1.jpg",
+      "localHover": "/products/ch-pdp/aac321b25937ud366/2.jpg"
     },
     {
       "id": "AAC326B25944UE186",
@@ -8845,7 +9784,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -8869,6 +9808,143 @@
       "localHover": "/products/ch-pdp/aac326b25944ue186/2.jpg",
       "titleShort": "Cloche Hat",
       "subtitle": "Shearling Lambskin"
+    },
+    {
+      "id": "AAC327B25947UD462",
+      "productCode": "AAC327B25947UD462",
+      "sku": "AAC327B25947UD462",
+      "title": "Socks",
+      "priceLabel": "£760",
+      "gbpPrice": 760.0,
+      "categoryLabel": "ch-women-winter-accessories",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC327B25947UD462/socks-cashmere/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Black",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC327B25947UD462",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/socks-ecru-black-cashmere-cashmere-packshot-artistique-vue1-aac327b25947ud462-9597155344414.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155278878.jpg",
+        "https://www.chanel.com/images/f_auto/-9591838539806.jpg",
+        "https://www.chanel.com/images/f_auto/-9591842799646.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155901470.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499408414.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500162078.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500031006.jpg",
+        "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155639326.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/socks-ecru-black-cashmere-cashmere-packshot-artistique-vue1-aac327b25947ud462-9597155344414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155344414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155278878.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591838539806.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591842799646.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155901470.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499408414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500162078.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500031006.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597191979038.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156163614.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155639326.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC327B25947UD462",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC327B25947UD462",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac327b25947ud462/1.jpg",
+        "/products/ch-pdp/aac327b25947ud462/2.jpg",
+        "/products/ch-pdp/aac327b25947ud462/3.jpg",
+        "/products/ch-pdp/aac327b25947ud462/4.jpg",
+        "/products/ch-pdp/aac327b25947ud462/5.jpg",
+        "/products/ch-pdp/aac327b25947ud462/6.jpg",
+        "/products/ch-pdp/aac327b25947ud462/7.jpg",
+        "/products/ch-pdp/aac327b25947ud462/8.jpg",
+        "/products/ch-pdp/aac327b25947ud462/9.jpg",
+        "/products/ch-pdp/aac327b25947ud462/10.jpg",
+        "/products/ch-pdp/aac327b25947ud462/11.jpg",
+        "/products/ch-pdp/aac327b25947ud462/12.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac327b25947ud462/1.jpg",
+      "localHover": "/products/ch-pdp/aac327b25947ud462/2.jpg"
     },
     {
       "id": "AAC335B25975UD551",
@@ -8981,7 +10057,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9081,7 +10157,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9102,6 +10178,115 @@
       ],
       "localImage": "/products/ch-pdp/aac343b26034ud683/1.jpg",
       "localHover": "/products/ch-pdp/aac343b26034ud683/2.jpg"
+    },
+    {
+      "id": "AAC347B26049UD722",
+      "productCode": "AAC347B26049UD722",
+      "sku": "AAC347B26049UD722",
+      "title": "Square Scarf",
+      "priceLabel": "£460",
+      "gbpPrice": 460.0,
+      "categoryLabel": "ch-women-scarves",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC347B26049UD722/square-scarf-silk-twill/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru, Blue & Multicolor",
+        "description": null,
+        "fabrics": "Silk Twill",
+        "reference": "AAC347B26049UD722",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-scarf-ecru-blue-multicolor-silk-twill-silk-twill-packshot-artistique-vue1-aac347b26049ud722-9601726054430.jpg",
+        "https://www.chanel.com/images/f_auto/-9601726054430.jpg",
+        "https://www.chanel.com/images/f_auto/-9601726087198.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+        "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+        "https://www.chanel.com/images/f_auto/-9599534759966.jpg",
+        "https://www.chanel.com/images/f_auto/-9597155409950.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-scarf-ecru-blue-multicolor-silk-twill-silk-twill-packshot-artistique-vue1-aac347b26049ud722-9601726054430.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601726054430.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9601726087198.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197352990.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197287454.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597197516830.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599534759966.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597155409950.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC347B26049UD722",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC347B26049UD722",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-scarves",
+      "leaves": [
+        "ch-women-scarves"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-scarves",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac347b26049ud722/1.jpg",
+        "/products/ch-pdp/aac347b26049ud722/2.jpg",
+        "/products/ch-pdp/aac347b26049ud722/3.jpg",
+        "/products/ch-pdp/aac347b26049ud722/4.jpg",
+        "/products/ch-pdp/aac347b26049ud722/5.jpg",
+        "/products/ch-pdp/aac347b26049ud722/6.jpg",
+        "/products/ch-pdp/aac347b26049ud722/7.jpg",
+        "/products/ch-pdp/aac347b26049ud722/8.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac347b26049ud722/1.jpg",
+      "localHover": "/products/ch-pdp/aac347b26049ud722/2.jpg"
     },
     {
       "id": "AAC353B26070UD737",
@@ -9194,7 +10379,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9408,7 +10593,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9543,7 +10728,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9679,7 +10864,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9794,7 +10979,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -9908,7 +11093,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10022,7 +11207,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10136,7 +11321,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10271,7 +11456,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10373,7 +11558,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10485,7 +11670,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10687,7 +11872,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -10801,7 +11986,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11120,7 +12305,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11219,7 +12404,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11240,6 +12425,131 @@
       ],
       "localImage": "/products/ch-pdp/aac406b26613uf048/1.jpg",
       "localHover": "/products/ch-pdp/aac406b26613uf048/2.jpg"
+    },
+    {
+      "id": "AAC407B26172UD822",
+      "productCode": "AAC407B26172UD822",
+      "sku": "AAC407B26172UD822",
+      "title": "Headband",
+      "priceLabel": "£650",
+      "gbpPrice": 650.0,
+      "categoryLabel": "ch-women-winter-accessories",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC407B26172UD822/headband-cashmere-mohair/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Black",
+        "description": null,
+        "fabrics": "Cashmere & Mohair",
+        "reference": "AAC407B26172UD822",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/headband-ecru-black-cashmere-mohair-cashmere-mohair-packshot-artistique-vue2-aac407b26172ud822-9597156098078.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156098078.jpg",
+        "https://www.chanel.com/images/f_auto/-9597156130846.jpg",
+        "https://www.chanel.com/images/f_auto/-9597498818590.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499932702.jpg",
+        "https://www.chanel.com/images/f_auto/-9597188112414.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965593630.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965823006.jpg",
+        "https://www.chanel.com/images/f_auto/-9597234315294.jpg",
+        "https://www.chanel.com/images/f_auto/-9597545283614.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/headband-ecru-black-cashmere-mohair-cashmere-mohair-packshot-artistique-vue2-aac407b26172ud822-9597156098078.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156098078.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597156130846.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597498818590.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499932702.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597188112414.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965593630.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965823006.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597234315294.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597545283614.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC407B26172UD822",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC407B26172UD822",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-summer-accessories",
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-summer-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac407b26172ud822/1.jpg",
+        "/products/ch-pdp/aac407b26172ud822/2.jpg",
+        "/products/ch-pdp/aac407b26172ud822/3.jpg",
+        "/products/ch-pdp/aac407b26172ud822/4.jpg",
+        "/products/ch-pdp/aac407b26172ud822/5.jpg",
+        "/products/ch-pdp/aac407b26172ud822/6.jpg",
+        "/products/ch-pdp/aac407b26172ud822/7.jpg",
+        "/products/ch-pdp/aac407b26172ud822/8.jpg",
+        "/products/ch-pdp/aac407b26172ud822/9.jpg",
+        "/products/ch-pdp/aac407b26172ud822/10.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac407b26172ud822/1.jpg",
+      "localHover": "/products/ch-pdp/aac407b26172ud822/2.jpg"
     },
     {
       "id": "AAC425B26193UD908",
@@ -11358,6 +12668,347 @@
       "subtitle": "Acetate & Metal"
     },
     {
+      "id": "AAC432B26199UD963",
+      "productCode": "AAC432B26199UD963",
+      "sku": "AAC432B26199UD963",
+      "title": "Stocking",
+      "priceLabel": "£1,260",
+      "gbpPrice": 1260.0,
+      "categoryLabel": "ch-women-winter-accessories",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC432B26199UD963/stocking-cashmere/",
+      "hierarchy": [],
+      "details": {
+        "color": "Ecru & Multicolour",
+        "description": null,
+        "fabrics": "Cashmere",
+        "reference": "AAC432B26199UD963",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/stocking-ecru-multicolor-cashmere-cashmere-packshot-artistique-vue2-aac432b26199ud963-9597158883358.jpg",
+        "https://www.chanel.com/images/f_auto/-9597158883358.jpg",
+        "https://www.chanel.com/images/f_auto/-9597154918430.jpg",
+        "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+        "https://www.chanel.com/images/f_auto/-9597193289758.jpg",
+        "https://www.chanel.com/images/f_auto/-9597188407326.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965462558.jpg",
+        "https://www.chanel.com/images/f_auto/-9599965397022.jpg",
+        "https://www.chanel.com/images/f_auto/-9597702438942.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/stocking-ecru-multicolor-cashmere-cashmere-packshot-artistique-vue2-aac432b26199ud963-9597158883358.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597158883358.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597154918430.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597499768862.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597193289758.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597188407326.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965462558.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599965397022.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597702438942.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC432B26199UD963",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "AAC432B26199UD963",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-winter-accessories",
+      "leaves": [
+        "ch-women-winter-accessories"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-winter-accessories",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac432b26199ud963/1.jpg",
+        "/products/ch-pdp/aac432b26199ud963/2.jpg",
+        "/products/ch-pdp/aac432b26199ud963/3.jpg",
+        "/products/ch-pdp/aac432b26199ud963/4.jpg",
+        "/products/ch-pdp/aac432b26199ud963/5.jpg",
+        "/products/ch-pdp/aac432b26199ud963/6.jpg",
+        "/products/ch-pdp/aac432b26199ud963/7.jpg",
+        "/products/ch-pdp/aac432b26199ud963/8.jpg",
+        "/products/ch-pdp/aac432b26199ud963/9.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac432b26199ud963/1.jpg",
+      "localHover": "/products/ch-pdp/aac432b26199ud963/2.jpg"
+    },
+    {
+      "id": "AAC436B26279UE197",
+      "productCode": "AAC436B26279UE197",
+      "sku": "AAC436B26279UE197",
+      "title": "Fabric Belt",
+      "priceLabel": "£560",
+      "gbpPrice": 560.0,
+      "categoryLabel": "ch-women-belts",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fashion/p/AAC436B26279UE197/fabric-belt-mixed-fibers-metal/",
+      "hierarchy": [],
+      "details": {
+        "color": "Red, white, blue & silver",
+        "description": null,
+        "fabrics": "Mixed Fibers & Metal",
+        "reference": "AAC436B26279UE197",
+        "dimensions": null
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fabric-belt-red-white-blue-silver-mixed-fibers-metal-mixed-fibers-metal-packshot-artistique-vue2-aac436b26279ue197-9597158555678.jpg",
+        "https://www.chanel.com/images/f_auto/-9597158555678.jpg",
+        "https://www.chanel.com/images/f_auto/-9597158621214.jpg",
+        "https://www.chanel.com/images/f_auto/-9591841619998.jpg",
+        "https://www.chanel.com/images/f_auto/-9591838146590.jpg",
+        "https://www.chanel.com/images/f_auto/-9597158522910.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500817438.jpg",
+        "https://www.chanel.com/images/f_auto/-9597500489758.jpg",
+        "https://www.chanel.com/images/f_auto/-9597498589214.jpg",
+        "https://www.chanel.com/images/f_auto/-9597191159838.jpg",
+        "https://www.chanel.com/images/f_auto/-9599541116958.jpg",
+        "https://www.chanel.com/images/f_auto/-9599536398366.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/fabric-belt-red-white-blue-silver-mixed-fibers-metal-mixed-fibers-metal-packshot-artistique-vue2-aac436b26279ue197-9597158555678.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597158555678.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597158621214.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591841619998.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9591838146590.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597158522910.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500817438.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597500489758.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597498589214.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9597191159838.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599541116958.jpg",
+          "id": null
+        },
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/f_auto/-9599536398366.jpg",
+          "id": null
+        }
+      ],
+      "sizes": [
+        {
+          "id": "AAC436B26279UE19765",
+          "size": "65",
+          "orliSize": "65",
+          "sku": "AAC436B26279UE19765",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19770",
+          "size": "70",
+          "orliSize": "70",
+          "sku": "AAC436B26279UE19770",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19775",
+          "size": "75",
+          "orliSize": "75",
+          "sku": "AAC436B26279UE19775",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19780",
+          "size": "80",
+          "orliSize": "80",
+          "sku": "AAC436B26279UE19780",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19785",
+          "size": "85",
+          "orliSize": "85",
+          "sku": "AAC436B26279UE19785",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19790",
+          "size": "90",
+          "orliSize": "90",
+          "sku": "AAC436B26279UE19790",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE19795",
+          "size": "95",
+          "orliSize": "95",
+          "sku": "AAC436B26279UE19795",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE197100",
+          "size": "100",
+          "orliSize": "100",
+          "sku": "AAC436B26279UE197100",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE197105",
+          "size": "105",
+          "orliSize": "105",
+          "sku": "AAC436B26279UE197105",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE197110",
+          "size": "110",
+          "orliSize": "110",
+          "sku": "AAC436B26279UE197110",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE197115",
+          "size": "115",
+          "orliSize": "115",
+          "sku": "AAC436B26279UE197115",
+          "inStock": true,
+          "sellableOnline": true
+        },
+        {
+          "id": "AAC436B26279UE197120",
+          "size": "120",
+          "orliSize": "120",
+          "sku": "AAC436B26279UE197120",
+          "inStock": true,
+          "sellableOnline": true
+        }
+      ],
+      "inStock": true,
+      "availabilityStatus": "IN_STOCK",
+      "leaf": "ch-women-belts",
+      "leaves": [
+        "ch-women-belts"
+      ],
+      "collections": [
+        "ch-other-accessories",
+        "ch-women-belts",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "kind": "other-acc",
+      "new": false,
+      "_via": "ld+json",
+      "localImages": [
+        "/products/ch-pdp/aac436b26279ue197/1.jpg",
+        "/products/ch-pdp/aac436b26279ue197/2.jpg",
+        "/products/ch-pdp/aac436b26279ue197/3.jpg",
+        "/products/ch-pdp/aac436b26279ue197/4.jpg",
+        "/products/ch-pdp/aac436b26279ue197/5.jpg",
+        "/products/ch-pdp/aac436b26279ue197/6.jpg",
+        "/products/ch-pdp/aac436b26279ue197/7.jpg",
+        "/products/ch-pdp/aac436b26279ue197/8.jpg",
+        "/products/ch-pdp/aac436b26279ue197/9.jpg",
+        "/products/ch-pdp/aac436b26279ue197/10.jpg",
+        "/products/ch-pdp/aac436b26279ue197/11.jpg",
+        "/products/ch-pdp/aac436b26279ue197/12.jpg"
+      ],
+      "localImage": "/products/ch-pdp/aac436b26279ue197/1.jpg",
+      "localHover": "/products/ch-pdp/aac436b26279ue197/2.jpg"
+    },
+    {
       "id": "AAC439B2623094305",
       "productCode": "AAC439B2623094305",
       "sku": "AAC439B2623094305",
@@ -11432,7 +13083,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11531,7 +13182,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11630,7 +13281,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11763,7 +13414,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -11899,7 +13550,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12035,7 +13686,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12135,7 +13786,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12243,7 +13894,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12342,7 +13993,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12426,7 +14077,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12544,7 +14195,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12660,7 +14311,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12783,7 +14434,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -12899,7 +14550,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13022,7 +14673,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13209,7 +14860,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13323,7 +14974,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13438,7 +15089,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13561,7 +15212,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13669,7 +15320,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13777,7 +15428,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13876,7 +15527,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -13973,7 +15624,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -14070,7 +15721,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",
@@ -14167,7 +15818,7 @@
         }
       ],
       "availabilityStatus": "OUT_OF_STOCK",
-      "inStock": true,
+      "inStock": false,
       "new": false,
       "collections": [
         "ch-other-accessories",

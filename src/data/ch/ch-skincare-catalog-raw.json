@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-09T23:33:58.076767+00:00",
+  "scrapedAt": "2026-10-24T03:54:48.321828+00:00",
   "hub": "https://www.chanel.com/gb/skincare/",
   "note": "Chanel GB skincare hub — official product-type PLPs under Accessories→샤넬→스킨케어.",
   "leaves": [
@@ -75,14 +75,14 @@
     }
   ],
   "leafCounts": {
+    "ch-skincare-cleansers": 10,
+    "ch-skincare-serums": 23,
     "ch-skincare-oils": 6,
-    "ch-skincare-body": 9,
+    "ch-skincare-body": 11,
     "ch-skincare-toners": 9,
-    "ch-skincare-moisturisers": 42,
+    "ch-skincare-moisturisers": 44,
     "ch-skincare-eyes-lips": 17,
     "ch-skincare-masks": 9,
-    "ch-skincare-cleansers": 9,
-    "ch-skincare-serums": 22,
     "ch-skincare-mists": 3,
     "ch-skincare-protection": 9,
     "ch-skincare": 28
@@ -90,6 +90,75 @@
   "skipped": [],
   "failed": [],
   "products": [
+    {
+      "id": "101267",
+      "productCode": "101267",
+      "sku": "101267",
+      "title": "CLEANSING AND HYDRATING DUO LA MOUSSE 150 ML, HYDRA BEAUTY MICRO SÉRUM 30 ML AND POUCH",
+      "titleShort": "CLEANSING AND HYDRATING DUO",
+      "subtitle": "LA MOUSSE 150 ML, HYDRA BEAUTY MICRO SÉRUM 30 ML AND POUCH",
+      "priceLabel": "£149",
+      "gbpPrice": 149.0,
+      "categoryLabel": "Cleansers & Makeup Removers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/101267/cleansing-and-hydrating-duo-la-mousse-150-ml-hydra-beauty-micro-serum-30-ml-and-pouch/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Cleansers & Makeup Removers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "LA MOUSSE 150 ML, HYDRA BEAUTY MICRO SÉRUM 30 ML AND POUCH"
+          },
+          {
+            "label": "Reference",
+            "value": "101267"
+          }
+        ],
+        "subtitle": "LA MOUSSE 150 ML, HYDRA BEAUTY MICRO SÉRUM 30 ML AND POUCH",
+        "editorial": "LA MOUSSE 150 ML, HYDRA BEAUTY MICRO SÉRUM 30 ML AND POUCH",
+        "reference": "101267"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/fresh-start-1pce-packshot-default-101267-9598817304606.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101267",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-cleansers",
+        "ch-skincare-serums",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-cleansers",
+      "leaves": [
+        "ch-skincare-cleansers",
+        "ch-skincare-serums"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/101267/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101267/1.jpg"
+    },
     {
       "id": "102000",
       "productCode": "102000",
@@ -2978,6 +3047,80 @@
       "localHover": "/products/ch-pdp/133569/2.jpg"
     },
     {
+      "id": "133620",
+      "productCode": "133620",
+      "sku": "133620",
+      "title": "SUBLIMAGE LA CRÈME CORPS ET DÉCOLLETÉ ULTIMATE BODY CREAM : REJUVENATES AND ILLUMINATES",
+      "titleShort": "SUBLIMAGE LA CRÈME CORPS ET DÉCOLLETÉ",
+      "subtitle": "ULTIMATE BODY CREAM : REJUVENATES AND ILLUMINATES",
+      "priceLabel": "£275",
+      "gbpPrice": 275.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133620/sublimage-la-creme-corps-et-decollete-ultimate-body-cream-rejuvenates-and-illuminates/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "ULTIMATE BODY CREAM : REJUVENATES AND ILLUMINATES"
+          },
+          {
+            "label": "Reference",
+            "value": "133620"
+          }
+        ],
+        "subtitle": "ULTIMATE BODY CREAM : REJUVENATES AND ILLUMINATES",
+        "editorial": "ULTIMATE BODY CREAM : REJUVENATES AND ILLUMINATES",
+        "reference": "133620"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-la-creme-corps-et-decollete-the-radiance-fresh-body-cream-5-29oz--packshot-default-133620-9564942499870.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-la-creme-corps-et-decollete-the-radiance-fresh-body-cream-5-29oz--packshot-alternative-v1-133620-9564203745310.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-la-creme-corps-et-decollete-the-radiance-fresh-body-cream-5-29oz--basic-texture-133620-9565096640542.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133620",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-body",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-body",
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133620/1.jpg",
+        "/products/ch-pdp/133620/2.jpg",
+        "/products/ch-pdp/133620/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133620/1.jpg",
+      "localHover": "/products/ch-pdp/133620/2.jpg"
+    },
+    {
       "id": "133630",
       "productCode": "133630",
       "sku": "133630",
@@ -3903,6 +4046,76 @@
       ],
       "localImage": "/products/ch-pdp/133850/1.jpg",
       "localHover": "/products/ch-pdp/133850/2.jpg"
+    },
+    {
+      "id": "133858",
+      "productCode": "133858",
+      "sku": "133858",
+      "title": "LA CRÈME MAIN LIMITED EDITION NOURISH – SOFTEN – ILLUMINATE",
+      "titleShort": "LA CRÈME MAIN LIMITED EDITION",
+      "subtitle": "NOURISH – SOFTEN – ILLUMINATE",
+      "priceLabel": "£75",
+      "gbpPrice": 75.0,
+      "categoryLabel": "Body Care",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/133858/la-creme-main-limited-edition-nourish-soften-illuminate/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Body Care",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "NOURISH – SOFTEN – ILLUMINATE"
+          },
+          {
+            "label": "Reference",
+            "value": "133858"
+          }
+        ],
+        "subtitle": "NOURISH – SOFTEN – ILLUMINATE",
+        "editorial": "NOURISH – SOFTEN – ILLUMINATE",
+        "reference": "133858"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/la-creme-main-nourish-soften-illuminate-1-7fl-oz--packshot-default-133858-9591387750430.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/la-creme-main-nourish-soften-illuminate-1-7fl-oz--packshot-alternative-v1-133858-9591385751582.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "133858",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-body",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-body",
+      "leaves": [
+        "ch-skincare-body"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/133858/1.jpg",
+        "/products/ch-pdp/133858/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/133858/1.jpg",
+      "localHover": "/products/ch-pdp/133858/2.jpg"
     },
     {
       "id": "133860",
@@ -10535,6 +10748,78 @@
       ],
       "localImage": "/products/ch-pdp/144865/1.jpg",
       "localHover": "/products/ch-pdp/144865/2.jpg"
+    },
+    {
+      "id": "144869",
+      "productCode": "144869",
+      "sku": "144869",
+      "title": "SUBLIMAGE L’EXTRAIT DE CRÈME L’ÉCRIN DE VOYAGE ULTIMATE REPAIR CREAM",
+      "titleShort": "SUBLIMAGE L’EXTRAIT DE CRÈME L’ÉCRIN DE VOYAGE",
+      "subtitle": "ULTIMATE REPAIR CREAM",
+      "priceLabel": "£1,517",
+      "gbpPrice": 1517.0,
+      "categoryLabel": "Moisturisers",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/skincare/p/144869/sublimage-lextrait-de-creme-lecrin-de-voyage-ultimate-repair-cream/",
+      "hierarchy": [
+        {
+          "label": "Skincare",
+          "url": "/gb/skincare/"
+        },
+        {
+          "label": "Moisturisers",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "ULTIMATE REPAIR CREAM"
+          },
+          {
+            "label": "Reference",
+            "value": "144869"
+          }
+        ],
+        "subtitle": "ULTIMATE REPAIR CREAM",
+        "editorial": "ULTIMATE REPAIR CREAM",
+        "reference": "144869"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-de-creme-l-ecrin-de-voyage-ultimate-repair-cream-1pce-packshot-default-144869-9591384178718.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-de-creme-l-ecrin-de-voyage-ultimate-repair-cream-1pce-packshot-alternative-144869-9591388504094.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/sublimage-l-extrait-de-creme-l-ecrin-de-voyage-ultimate-repair-cream-1pce-packshot-alternative-v1-144869-9591385358366.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "144869",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-skincare",
+        "ch-skincare-moisturisers",
+        "chanel",
+        "chanel-accessories"
+      ],
+      "leaf": "ch-skincare-moisturisers",
+      "leaves": [
+        "ch-skincare-moisturisers"
+      ],
+      "kind": "skincare",
+      "localImages": [
+        "/products/ch-pdp/144869/1.jpg",
+        "/products/ch-pdp/144869/2.jpg",
+        "/products/ch-pdp/144869/3.jpg"
+      ],
+      "localImage": "/products/ch-pdp/144869/1.jpg",
+      "localHover": "/products/ch-pdp/144869/2.jpg"
     },
     {
       "id": "144870",

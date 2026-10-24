@@ -1,9 +1,9 @@
 {
-  "scrapedAt": "2026-10-10T01:05:56.949103+00:00",
+  "scrapedAt": "2026-10-24T06:02:54.178921+00:00",
   "hub": "https://www.chanel.com/gb/watches/",
   "note": "Chanel GB Watches from official Collections PLPs + sitemap (J12 / Première / BOY·FRIEND / Monsieur / Code Coco).",
   "leafCounts": {
-    "ch-watches-j12": 44,
+    "ch-watches-j12": 47,
     "ch-watches-premiere": 26,
     "ch-watches-boy-friend": 14,
     "ch-watches-code-coco": 6,
@@ -3111,6 +3111,72 @@
       "subtitle": "Highly resistant matte black ceramic, steel with black coating and diamonds"
     },
     {
+      "id": "H11090",
+      "productCode": "H11090",
+      "sku": "H11090",
+      "title": "PREMIÈRE GALON DIAMONDS WATCH",
+      "priceLabel": "£62,000",
+      "gbpPrice": 62000.0,
+      "categoryLabel": "J12",
+      "collection": "Premiere",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/watches/p/H11090/premiere-galon-diamonds-watch/",
+      "hierarchy": [
+        {
+          "label": "Watches",
+          "url": "/gb/watches/"
+        },
+        {
+          "label": "J12",
+          "url": "https://www.chanel.com/gb/watches/j12/c/4x2x1/"
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "White gold and diamonds, white gold dial, rigid braid-motif bracelet",
+        "fabrics": "White gold",
+        "reference": "H11090",
+        "dimensions": "white/19.7 x 15.2 x 7.5 mm"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-diamonds-watch-white-white-gold-diamond-packshot-default-h11090-9599134105630.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-diamonds-watch-white-white-gold-diamond-packshot-default-h11090-9599134105630.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "H11090",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "H11090",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-watches",
+        "ch-watches-j12",
+        "chanel-watches"
+      ],
+      "leaf": "ch-watches-j12",
+      "leaves": [
+        "ch-watches-j12"
+      ],
+      "shape": "ch-watches-j12",
+      "kind": "watches",
+      "localImages": [
+        "/products/ch-pdp/h11090/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/h11090/1.jpg"
+    },
+    {
       "id": "H11096",
       "productCode": "H11096",
       "sku": "H11096",
@@ -3512,6 +3578,152 @@
       ],
       "localImage": "/products/ch-pdp/h11152/1.jpg",
       "localHover": "/products/ch-pdp/h11152/2.jpg"
+    },
+    {
+      "id": "H11154",
+      "productCode": "H11154",
+      "sku": "H11154",
+      "title": "Première Galon Watch",
+      "priceLabel": "£28,400",
+      "gbpPrice": 28400.0,
+      "categoryLabel": "J12",
+      "collection": "Premiere",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/watches/p/H11154/premiere-galon-watch/",
+      "hierarchy": [
+        {
+          "label": "Watches",
+          "url": "/gb/watches/"
+        },
+        {
+          "label": "J12",
+          "url": "https://www.chanel.com/gb/watches/j12/c/4x2x1/"
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "White gold and diamonds, black-lacquered dial, rigid braid-motif bracelet",
+        "fabrics": "White gold",
+        "reference": "H11154",
+        "dimensions": "white/19.7 x 15.2 x 7.5 mm"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-default-h11154-9590632513566.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-portee-h11154-9595478212638.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-default-h11154-9590632513566.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-portee-h11154-9595478212638.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "H11154",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "H11154",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-watches",
+        "ch-watches-j12",
+        "chanel-watches"
+      ],
+      "leaf": "ch-watches-j12",
+      "leaves": [
+        "ch-watches-j12"
+      ],
+      "shape": "ch-watches-j12",
+      "kind": "watches",
+      "localImages": [
+        "/products/ch-pdp/h11154/1.jpg",
+        "/products/ch-pdp/h11154/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/h11154/1.jpg",
+      "localHover": "/products/ch-pdp/h11154/2.jpg"
+    },
+    {
+      "id": "H11155",
+      "productCode": "H11155",
+      "sku": "H11155",
+      "title": "Première Galon Watch",
+      "priceLabel": "£19,500",
+      "gbpPrice": 19500.0,
+      "categoryLabel": "J12",
+      "collection": "Premiere",
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/watches/p/H11155/premiere-galon-watch/",
+      "hierarchy": [
+        {
+          "label": "Watches",
+          "url": "/gb/watches/"
+        },
+        {
+          "label": "J12",
+          "url": "https://www.chanel.com/gb/watches/j12/c/4x2x1/"
+        }
+      ],
+      "details": {
+        "color": "White",
+        "description": "White gold and diamonds, black-lacquered dial, rigid braid-motif bracelet",
+        "fabrics": "White gold",
+        "reference": "H11155",
+        "dimensions": "white/19.7 x 15.2 x 7.5 mm"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-default-h11155-9590632677406.jpg",
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-portee-h11155-9595478048798.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-default-h11155-9590632677406.jpg"
+        },
+        {
+          "typology": "PACKSHOT_OTHER",
+          "source": "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/premiere-galon-watch-white-white-gold-diamond-packshot-portee-h11155-9595478048798.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "id": "H11155",
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "H11155",
+          "inStock": true,
+          "sellableOnline": false
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "ch-watches",
+        "ch-watches-j12",
+        "chanel-watches"
+      ],
+      "leaf": "ch-watches-j12",
+      "leaves": [
+        "ch-watches-j12"
+      ],
+      "shape": "ch-watches-j12",
+      "kind": "watches",
+      "localImages": [
+        "/products/ch-pdp/h11155/1.jpg",
+        "/products/ch-pdp/h11155/2.jpg"
+      ],
+      "localImage": "/products/ch-pdp/h11155/1.jpg",
+      "localHover": "/products/ch-pdp/h11155/2.jpg"
     },
     {
       "id": "H11683",
