@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-23T05:20:33.103023+00:00",
+  "scrapedAt": "2026-10-24T05:20:34.939942+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -2648,7 +2648,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-north-south-tote-fondant-815783V2HL12145.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -2687,7 +2687,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -3585,7 +3585,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-belt-bag-belt-bag-bark-green-805773V4FV13770.html",
       "gbpPrice": 1710.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Bark Green",
@@ -3626,7 +3626,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1710.0,
           "listGbpPrice": null
         }
@@ -11588,7 +11588,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-espresso-868114V6G102094.html",
       "gbpPrice": 5580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Espresso",
@@ -11632,7 +11632,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5580.0,
           "listGbpPrice": null
         }
