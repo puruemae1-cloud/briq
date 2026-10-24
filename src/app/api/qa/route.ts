@@ -170,16 +170,14 @@ export async function PATCH(req: Request) {
       { status: 404 },
     );
   }
+  let customerMail: { ok: boolean; message?: string } = { ok: false, message: "고객 이메일이 없습니다." };
   if (updated.authorEmail && updated.answer) {
-    try {
-      await mailCustomerReply(updated, updated.answer);
-    } catch {
-      // The reply is already saved on the product page.
-    }
+    const mailed = await mailCustomerReply(updated, updated.answer);
+    customerMail = mailed.ok ? { ok: true } : { ok: false, message: mailed.message };
   }
   const items = (await listQa()).flatMap((row) => {
     const view = viewItem(row, true);
     return view ? [view] : [];
   });
-  return NextResponse.json({ ok: true, item: viewItem(updated, true), items });
+  return NextResponse.json({ ok: true, item: viewItem(updated, true), items, customerMail });
 }

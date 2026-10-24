@@ -1,0 +1,14 @@
+---
+description: 상품 문의 답글은 저장 API로 남기고 고객 메일 발송 결과까지 확인한다
+alwaysApply: true
+---
+
+# 상품 문의 답글
+
+사용자가 브릭 상품 문의에 답글을 남겨 달라고 하면 이 순서만 따른다.
+
+1. 답글은 `PATCH https://www.briq.kr/api/qa` 로 저장한다. 헤더는 사이트와 같은 `x-briq-staff` 이고, 본문은 `id`, `answer`, `answeredBy` 이다.
+2. `qa/inbox.json` 이나 Blob을 직접 수정하지 않는다. 직접 쓰면 페이지에는 답글이 보여도 고객 메일은 나가지 않는다.
+3. 응답의 `customerMail.ok` 가 true일 때만 고객이 메일을 받았다고 말한다.
+4. `customerMail.ok` 가 false이면 응답의 `message` 를 그대로 알리고, 발송에 성공했다고 말하지 않는다. 도메인 인증 오류이면 Resend에서 발신 도메인을 인증하고 `MAIL_FROM` 을 그 도메인 주소로 둔 뒤, 같은 API로 답글을 다시 저장해 메일을 재발송한다.
+5. 고객 이메일, API 키, 관리자 비밀번호, 직원 헤더 값은 출력하지 않는다.
